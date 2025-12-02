@@ -1,9 +1,9 @@
 <p>
   Celebrate the season with our Shop exclusive winter collection! From
-  <strong>December 1, 2025 (</strong><strong>9AM PT</strong
-  ><strong>) </strong>to<strong> December 11, 2025 (</strong
-  ><strong>9AM PT</strong><strong>)</strong>, collect four festive decorations
-  at discounted prices and unlock an exclusive gift!
+  <strong>December 1, 2025 (9AM PT) </strong>to<strong>
+    December 11, 2025 (9AM PT)</strong
+  >, collect four festive decorations at discounted prices and unlock an
+  exclusive gift!
 </p>
 <div class="toc-box">
   <p>
@@ -13,56 +13,42 @@
   </p>
   <ul>
     <li data-list-item-id="e71d2652f04ba304469927bc15a0f94ec">
-      <a
-        href="https://support.discord.com/hc/en-us/articles/36295114388119#h_01KAVWPNEM9WXMTEB889TJB7HN"
-        >What is 10 Days of Discord?</a
-      >
+      <a href="#h_01KAVWPNEM9WXMTEB889TJB7HN">What is 10 Days of Discord?</a>
     </li>
     <li data-list-item-id="e9fd999515711b536d101915b7249ddee">
-      <a
-        href="https://support.discord.com/hc/en-us/articles/36295114388119#h_01KAVWPNESA7W3AZMYCA7W5ZXQ"
-        >How to Access the Winter Collection</a
+      <a href="#h_01KAVWPNESA7W3AZMYCA7W5ZXQ"
+        >How to Access 10 Days of Discord</a
       >
     </li>
     <li data-list-item-id="e85ab7029ad8b178c35c77de74a67e977">
-      <a
-        href="https://support.discord.com/hc/en-us/articles/36295114388119#h_01KAVWPNF54V2TRV200TT0A1EX"
+      <a href="#h_01KAVWPNF54V2TRV200TT0A1EX"
         >How to Unlock the Exclusive Gift</a
       >
       <ul>
         <li data-list-item-id="e0b4e67f67740db57f215da2dd3618861">
-          <a
-            href="https://support.discord.com/hc/en-us/articles/36295114388119#h_01KAVWPNF5Q1QEAY5RTJGD0WTD"
+          <a href="#h_01KAVWPNF5Q1QEAY5RTJGD0WTD"
             >Collecting Winter Shop Items</a
           >
         </li>
         <li data-list-item-id="effae37e7b300c7813bc6d22216a20e3a">
-          <a
-            href="https://support.discord.com/hc/en-us/articles/36295114388119#h_01KAVWPNF75XH0V3SSTM3NAXH9"
+          <a href="#h_01KAVWPNF75XH0V3SSTM3NAXH9"
             >Claiming Your Exclusive Gift</a
           >
         </li>
       </ul>
     </li>
     <li data-list-item-id="e767ef9104ec5a02391a3b80724661c52">
-      <a
-        href="https://support.discord.com/hc/en-us/articles/36295114388119#h_01KAVWPNFAT8369WC92HK6D1RH"
+      <a href="#h_01KAVWPNFAT8369WC92HK6D1RH"
         >Managing Your Winter Collection</a
       >
       <ul>
         <li data-list-item-id="e18f4f4804acdf688a6274eb1936fbfd3">
-          <a
-            href="https://support.discord.com/hc/en-us/articles/36295114388119#h_01KAVWPNFAPNXE6JYP8RKRZKX2"
-            >Using Your Decorations</a
-          >
+          <a href="#h_01KAVWPNFAPNXE6JYP8RKRZKX2">Using Your Decorations</a>
         </li>
       </ul>
     </li>
     <li data-list-item-id="e14c5fc819934623c7ca76421c3719098">
-      <a
-        href="https://support.discord.com/hc/en-us/articles/36295114388119#h_01KAVWPNFE3WVGK5779GZCTFVJ"
-        >Frequently Asked Questions</a
-      >
+      <a href="#h_01KAVWPNFE3WVGK5779GZCTFVJ">Frequently Asked Questions</a>
     </li>
   </ul>
 </div>
