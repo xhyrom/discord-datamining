@@ -3900,12 +3900,12 @@
 }
 .side_aa8da2 .destructive_aa8da2.item_aa8da2:not(.disabled_aa8da2),
 .topPill_aa8da2 .destructive_aa8da2.item_aa8da2:not(.disabled_aa8da2) {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .side_aa8da2 .destructive_aa8da2.item_aa8da2:hover:not(.disabled_aa8da2),
 .topPill_aa8da2 .destructive_aa8da2.item_aa8da2:hover:not(.disabled_aa8da2) {
   background-color: var(--background-feedback-critical);
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .side_aa8da2 .destructive_aa8da2.item_aa8da2:active:not(.disabled_aa8da2),
 .side_aa8da2
@@ -4257,17 +4257,17 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   background-color: var(--red-400);
 }
 .lookLink__201d5.colorRed__201d5 {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .lookLink__201d5.colorRed__201d5:hover .contents__201d5 {
-  --button--underline-color: var(--text-danger);
+  --button--underline-color: var(--text-feedback-critical);
 }
 .lookLink__201d5.colorRed__201d5:disabled .contents__201d5,
 .lookLink__201d5.colorRed__201d5[aria-disabled="true"] .contents__201d5 {
   background-image: none;
 }
 .lookLink__201d5.colorRed__201d5 .spinnerItem__201d5 {
-  background-color: var(--text-danger);
+  background-color: var(--text-feedback-critical);
 }
 .lookFilled__201d5.colorGreen__201d5 {
   background-color: var(--button-positive-background);
@@ -4804,9 +4804,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   border-color: var(--text-link);
 }
 .input__0ed4f.error__0ed4f {
-  border-color: var(--text-danger);
+  border-color: var(--text-feedback-critical);
   border-width: 2px;
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .input__0ed4f.success__0ed4f {
   border-color: var(--green-360);
@@ -5506,7 +5506,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   position: absolute;
 }
 .errorOverflow__5a092 {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .errorMessage__5a092 {
   margin-top: 1px;
@@ -5699,7 +5699,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   position: absolute;
 }
 .errorOverflow__89a34 {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .errorMessage__89a34 {
   margin-top: 1px;
@@ -5955,7 +5955,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   color: var(--text-muted);
 }
 .error_ddd181 {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .error_ddd181,
 .success_ddd181 {
@@ -6606,7 +6606,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   opacity: 0.5;
 }
 .required_b717a1 {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
   -webkit-padding-start: 4px;
   padding-inline-start: 4px;
 }
@@ -6632,7 +6632,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   opacity: 0.8;
 }
 .error_b717a1 {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .enable-forced-colors .disabled_b717a1 {
   color: GrayText;
@@ -11071,7 +11071,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   height: 86px;
 }
 .sectionDivider_b4f99f {
-  background-color: var(--divider-subtle);
+  background-color: var(--border-subtle);
   border: 0;
   height: 1px;
   margin: 0 -12px;
@@ -13325,6 +13325,20 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .centerIcon_f1ceac.themeable_f1ceac:hover {
   color: var(--interactive-active);
 }
+.colorable_f1ceac {
+  transition:
+    background-color 50ms ease-in,
+    color 50ms ease-in,
+    border-color 50ms ease-in,
+    opacity 50ms ease-in;
+}
+.colorable_f1ceac:hover {
+  transition:
+    background-color 0.15s ease-out,
+    color 0.15s ease-out,
+    border-color 0.15s ease-out,
+    opacity 0.15s ease-out;
+}
 .colorable_f1ceac.red_f1ceac,
 .colorable_f1ceac.red_f1ceac .centerIcon_f1ceac {
   color: var(--red-400);
@@ -13334,14 +13348,18 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   background: hsla(0, 0%, 100%, 0.1);
 }
 .colorable_f1ceac.disconnect_f1ceac {
-  background: var(--status-danger-background);
+  background: var(--control-background-critical-primary-default);
+  transition: background 0.15s ease-in-out;
 }
 .colorable_f1ceac.disconnect_f1ceac,
 .colorable_f1ceac.disconnect_f1ceac .centerIcon_f1ceac {
   color: var(--status-danger-text);
 }
 .colorable_f1ceac.disconnect_f1ceac:hover {
-  background: var(--red-500);
+  background: var(--control-background-critical-primary-hover);
+}
+.colorable_f1ceac.disconnect_f1ceac:active {
+  background: var(--control-background-critical-primary-active);
 }
 .colorable_f1ceac.redGlow_f1ceac {
   background: var(--opacity-red-12);
@@ -13490,7 +13508,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   background-color: var(--green-360);
 }
 .fullRegionDropdownButton_f1ceac.disconnect_f1ceac {
-  background-color: var(--status-danger-background);
+  background-color: var(--button-danger-background);
 }
 .fullRegionIcon_f1ceac {
   padding: 4px 12px;
@@ -27843,7 +27861,7 @@ div.mobilePushContainer__3d3b0 {
   display: flex;
 }
 .activityNewBadge__44107 {
-  background-color: var(--status-danger-background);
+  background-color: var(--background-feedback-critical);
 }
 .activityUpdatedBadge__44107 {
   align-items: center;
@@ -31467,7 +31485,7 @@ div.mobilePushContainer__3d3b0 {
   transition: box-shadow 0.2s ease;
 }
 .channelTextArea__74017.error__74017:not(:hover):not(:focus-within) {
-  box-shadow: 0 0 0 2px var(--text-danger);
+  box-shadow: 0 0 0 2px var(--text-feedback-critical);
 }
 .channelTextArea__74017.highlighted__74017 {
   border: 1px solid var(--border-faint);
@@ -39182,7 +39200,7 @@ body .headerAnimation_b54a5b {
   margin-top: 10px;
 }
 .subtextError_cd2ff7 {
-  color: var(--text-danger) !important;
+  color: var(--text-feedback-critical) !important;
 }
 .header_cd2ff7 {
   margin-top: 20px;
@@ -39209,7 +39227,7 @@ body .headerAnimation_b54a5b {
   margin-inline-end: 8px;
 }
 .giftRecipientInputError_cd2ff7 {
-  border-color: var(--text-danger) !important;
+  border-color: var(--text-feedback-critical) !important;
 }
 .giftRecipientRowAvatar_cd2ff7 {
   -webkit-margin-end: 8px;
@@ -39694,7 +39712,7 @@ body .headerAnimation_b54a5b {
   border-color: var(--checkbox-border-checked);
 }
 .previewContainerError__50f14 {
-  border-color: var(--status-danger-background);
+  border-color: var(--background-feedback-critical);
 }
 .previewTextContainer__50f14 {
   display: flex;
@@ -43103,11 +43121,11 @@ h3.added__1689b:after {
 }
 .fixed__1689b,
 h3.fixed__1689b {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .fixed__1689b:after,
 h3.fixed__1689b:after {
-  background-color: var(--text-danger);
+  background-color: var(--text-feedback-critical);
 }
 .progress__1689b,
 h3.progress__1689b {
@@ -43462,7 +43480,7 @@ h3.improved__1689b:after {
   );
 }
 .automodMessage__5126c:before {
-  background: var(--text-danger);
+  background: var(--text-feedback-critical);
 }
 .potioned__5126c:before {
   background: linear-gradient(
@@ -44187,7 +44205,7 @@ h3.improved__1689b:after {
   padding: 16px;
 }
 .sectionDivider_fec5bf {
-  background-color: var(--divider-subtle);
+  background-color: var(--border-subtle);
   border: 0;
   height: 1px;
   width: 100%;
@@ -44899,6 +44917,14 @@ h3.improved__1689b:after {
 .actions__16719 > * {
   pointer-events: auto;
 }
+.button__16719 {
+  opacity: 1;
+  transition: opacity 0.1s linear;
+}
+.disabled__16719 {
+  opacity: 0;
+  pointer-events: none;
+}
 .child_bc529d {
   align-items: center;
   background: pink;
@@ -45266,7 +45292,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -45640,7 +45666,7 @@ h2.title_feb59c {
 .colorDanger_c1e9c4 {
 }
 .colorDanger_c1e9c4 {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .colorDanger_c1e9c4 .checkbox_c1e9c4,
 .colorDanger_c1e9c4 .radioSelection_c1e9c4 {
@@ -45662,7 +45688,7 @@ h2.title_feb59c {
   color: var(--text-feedback-critical);
 }
 .colorDanger_c1e9c4 .label_c1e9c4 {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .colorPremium_c1e9c4 {
 }
@@ -47560,7 +47586,7 @@ svg.radioIcon_c1e9c4 {
   padding: 8px;
 }
 .row__5e1cf {
-  border-bottom: 1px solid var(--divider-subtle);
+  border-bottom: 1px solid var(--border-subtle);
   outline: none;
   transition: background-color 0.1s ease;
   white-space: nowrap;
@@ -50220,7 +50246,7 @@ svg.radioIcon_c1e9c4 {
   line-height: 18px;
 }
 .error__37475 {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
   font-weight: var(--font-weight-medium);
 }
 .benefits__25f6c {
@@ -51311,9 +51337,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -55187,7 +55213,7 @@ html .progress__61462 {
   margin-bottom: 12px;
 }
 .threadRoleMentionFailure_b7e1cb {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
   font-size: 12px;
   line-height: 16px;
 }
@@ -70019,7 +70045,7 @@ div.nagbar_d74ef8 {
   padding: var(--space-12);
 }
 .divider_de8069 {
-  background-color: var(--divider-subtle);
+  background-color: var(--border-subtle);
   height: 1px;
   width: 100%;
 }
@@ -75982,7 +76008,7 @@ html .invoiceCancelRow__968a4 {
 }
 .inputDisabledWarning_ac7648,
 .inputDisabledWarning_ac7648 a {
-  color: var(--text-danger);
+  color: var(--text-feedback-critical);
 }
 .inputDisabledWarning_ac7648 a {
   font-weight: var(--font-weight-bold);
@@ -80292,8 +80318,6 @@ html.disable-forced-colors * {
   --deprecated-text-input-border: hsl(var(--black-hsl) / 0.3);
   --deprecated-text-input-border-disabled: var(--primary-700);
   --deprecated-text-input-border-hover: var(--primary-900);
-  --divider-strong: hsl(var(--white-hsl) / 0.16);
-  --divider-subtle: hsl(var(--white-hsl) / 0.08);
   --embed-background: var(--primary-630);
   --embed-background-alternate: var(--primary-600);
   --embed-title: var(--neutral-1);
@@ -80402,7 +80426,7 @@ html.disable-forced-colors * {
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-260);
   --input-focused-border: hsl(var(--white-hsl) / 0.04);
-  --input-foreground-critical: var(--red-345);
+  --input-foreground-critical: var(--red-new-22);
   --input-foreground-default: var(--neutral-9);
   --input-foreground-icon: var(--neutral-16);
   --input-foreground-placeholder: var(--neutral-32);
@@ -80573,7 +80597,6 @@ html.disable-forced-colors * {
   --spoiler-hidden-background-hover: var(--neutral-27);
   --spoiler-revealed-background: var(--primary-660);
   --status-danger: var(--red-400);
-  --status-danger-background: var(--red-430);
   --status-danger-text: var(--white);
   --status-dnd: var(--red-400);
   --status-idle: var(--yellow-300);
@@ -80622,7 +80645,6 @@ html.disable-forced-colors * {
   --text-code-tag: var(--green-new-12);
   --text-code-title: var(--blurple-9);
   --text-code-variable: var(--blue-new-10);
-  --text-danger: var(--red-345);
   --text-default: var(--neutral-9);
   --text-feedback-critical: var(--red-new-22);
   --text-feedback-info: var(--blue-new-24);
@@ -81651,18 +81673,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --divider-strong: color-mix(
-      in oklab,
-      hsl(var(--white-hsl) / 0.16) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.16)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --divider-subtle: color-mix(
-      in oklab,
-      hsl(var(--white-hsl) / 0.08) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.08)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --embed-background: color-mix(
       in oklab,
       var(--primary-630) 100%,
@@ -82097,7 +82107,7 @@ html.disable-forced-colors * {
     );
     --input-foreground-critical: color-mix(
       in oklab,
-      var(--red-345) 100%,
+      var(--red-new-22) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -82794,12 +82804,6 @@ html.disable-forced-colors * {
     --text-code-variable: color-mix(
       in oklab,
       var(--blue-new-10) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-danger: color-mix(
-      in oklab,
-      var(--red-345) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -83622,8 +83626,6 @@ html.disable-forced-colors * {
   --deprecated-text-input-border: hsl(var(--primary-500-hsl) / 0.3);
   --deprecated-text-input-border-disabled: var(--primary-200);
   --deprecated-text-input-border-hover: var(--primary-300);
-  --divider-strong: hsl(var(--black-hsl) / 0.16);
-  --divider-subtle: hsl(var(--black-hsl) / 0.08);
   --embed-background: var(--primary-130);
   --embed-background-alternate: var(--primary-200);
   --embed-title: var(--neutral-71);
@@ -83736,7 +83738,7 @@ html.disable-forced-colors * {
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-700);
   --input-focused-border: hsl(var(--black-hsl) / 0.04);
-  --input-foreground-critical: var(--red-500);
+  --input-foreground-critical: var(--red-new-54);
   --input-foreground-default: var(--neutral-69);
   --input-foreground-icon: var(--neutral-44);
   --input-foreground-placeholder: var(--neutral-44);
@@ -83901,7 +83903,6 @@ html.disable-forced-colors * {
   --spoiler-hidden-background-hover: var(--neutral-39);
   --spoiler-revealed-background: var(--primary-160);
   --status-danger: var(--red-430);
-  --status-danger-background: var(--red-430);
   --status-danger-text: var(--white);
   --status-dnd: var(--red-430);
   --status-idle: var(--yellow-400);
@@ -83952,7 +83953,6 @@ html.disable-forced-colors * {
   --text-code-tag: var(--green-new-68);
   --text-code-title: var(--blurple-68);
   --text-code-variable: var(--blue-new-68);
-  --text-danger: var(--red-500);
   --text-default: var(--neutral-69);
   --text-feedback-critical: var(--red-new-54);
   --text-feedback-info: var(--blue-new-56);
@@ -84981,18 +84981,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --divider-strong: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.16) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.16)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --divider-subtle: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.08) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.08)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --embed-background: color-mix(
       in oklab,
       var(--primary-130) 100%,
@@ -85427,7 +85415,7 @@ html.disable-forced-colors * {
     );
     --input-foreground-critical: color-mix(
       in oklab,
-      var(--red-500) 100%,
+      var(--red-new-54) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -86124,12 +86112,6 @@ html.disable-forced-colors * {
     --text-code-variable: color-mix(
       in oklab,
       var(--blue-new-68) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-danger: color-mix(
-      in oklab,
-      var(--red-500) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -86970,8 +86952,6 @@ html.disable-forced-colors * {
   --deprecated-text-input-border: hsl(var(--black-hsl) / 0.3);
   --deprecated-text-input-border-disabled: var(--primary-700);
   --deprecated-text-input-border-hover: var(--primary-900);
-  --divider-strong: hsl(var(--plum-11-hsl) / 0.24);
-  --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
   --embed-background: var(--plum-23);
   --embed-background-alternate: var(--plum-23);
   --embed-title: var(--neutral-8);
@@ -87084,7 +87064,7 @@ html.disable-forced-colors * {
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-260);
   --input-focused-border: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
-  --input-foreground-critical: var(--red-345);
+  --input-foreground-critical: var(--red-new-37);
   --input-foreground-default: var(--neutral-10);
   --input-foreground-icon: var(--neutral-27);
   --input-foreground-placeholder: var(--neutral-38);
@@ -87259,7 +87239,6 @@ html.disable-forced-colors * {
   --spoiler-hidden-background-hover: var(--neutral-36);
   --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
   --status-danger: var(--red-400);
-  --status-danger-background: var(--red-430);
   --status-danger-text: var(--white);
   --status-dnd: var(--red-400);
   --status-idle: var(--yellow-300);
@@ -87308,7 +87287,6 @@ html.disable-forced-colors * {
   --text-code-tag: var(--green-new-28);
   --text-code-title: var(--blurple-27);
   --text-code-variable: var(--blue-new-28);
-  --text-danger: var(--red-345);
   --text-default: var(--neutral-10);
   --text-feedback-critical: var(--red-new-37);
   --text-feedback-info: var(--blue-new-40);
@@ -88339,18 +88317,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --divider-strong: color-mix(
-      in oklab,
-      hsl(var(--plum-11-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --divider-subtle: color-mix(
-      in oklab,
-      hsl(var(--plum-11-hsl) / 0.12) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --embed-background: color-mix(
       in oklab,
       var(--plum-23) 100%,
@@ -88785,7 +88751,7 @@ html.disable-forced-colors * {
     );
     --input-foreground-critical: color-mix(
       in oklab,
-      var(--red-345) 100%,
+      var(--red-new-37) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -89482,12 +89448,6 @@ html.disable-forced-colors * {
     --text-code-variable: color-mix(
       in oklab,
       var(--blue-new-28) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-danger: color-mix(
-      in oklab,
-      var(--red-345) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -90324,8 +90284,6 @@ html.disable-forced-colors * {
   --deprecated-text-input-border: hsl(var(--black-hsl) / 0.3);
   --deprecated-text-input-border-disabled: var(--primary-700);
   --deprecated-text-input-border-hover: var(--primary-900);
-  --divider-strong: hsl(var(--plum-11-hsl) / 0.22);
-  --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
   --embed-background: var(--plum-18);
   --embed-background-alternate: var(--plum-18);
   --embed-title: var(--neutral-2);
@@ -90438,7 +90396,7 @@ html.disable-forced-colors * {
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-260);
   --input-focused-border: hsl(var(--plum-11-hsl) / 0.32);
-  --input-foreground-critical: var(--red-345);
+  --input-foreground-critical: var(--red-new-32);
   --input-foreground-default: var(--neutral-5);
   --input-foreground-icon: var(--neutral-23);
   --input-foreground-placeholder: var(--neutral-36);
@@ -90611,7 +90569,6 @@ html.disable-forced-colors * {
   --spoiler-hidden-background-hover: var(--neutral-33);
   --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
   --status-danger: var(--red-400);
-  --status-danger-background: var(--red-430);
   --status-danger-text: var(--white);
   --status-dnd: var(--red-400);
   --status-idle: var(--yellow-300);
@@ -90660,7 +90617,6 @@ html.disable-forced-colors * {
   --text-code-tag: var(--green-new-23);
   --text-code-title: var(--blurple-21);
   --text-code-variable: var(--blue-new-22);
-  --text-danger: var(--red-345);
   --text-default: var(--neutral-5);
   --text-feedback-critical: var(--red-new-32);
   --text-feedback-info: var(--blue-new-34);
@@ -91689,18 +91645,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --divider-strong: color-mix(
-      in oklab,
-      hsl(var(--plum-11-hsl) / 0.22) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.22)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --divider-subtle: color-mix(
-      in oklab,
-      hsl(var(--plum-11-hsl) / 0.12) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --embed-background: color-mix(
       in oklab,
       var(--plum-18) 100%,
@@ -92135,7 +92079,7 @@ html.disable-forced-colors * {
     );
     --input-foreground-critical: color-mix(
       in oklab,
-      var(--red-345) 100%,
+      var(--red-new-32) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -92835,12 +92779,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-danger: color-mix(
-      in oklab,
-      var(--red-345) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --text-default: color-mix(
       in oklab,
       var(--neutral-5) 100%,
@@ -93062,15 +93000,11 @@ html.disable-forced-colors * {
   --background-mod-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --background-modifier-accent: var(--neutral-12);
   --background-modifier-active: hsl(var(--opacity-20-hsl) / 0.2);
   --background-modifier-hover: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --background-modifier-selected: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
-  --bg-mod-faint: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-  --bg-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-  --bg-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --border-faint: var(--neutral-25);
   --border-normal: var(--neutral-5);
   --border-strong: var(--neutral-1);
@@ -93211,6 +93145,7 @@ html.disable-forced-colors * {
   --input-border-critical-hover: var(--red-new-6);
   --input-border-default: var(--neutral-5);
   --input-border-default-hover: var(--neutral-5);
+  --input-foreground-critical: var(--red-new-6);
   --input-foreground-default: var(--neutral-1);
   --input-foreground-icon: var(--neutral-2);
   --input-foreground-placeholder: var(--neutral-29);
@@ -93264,11 +93199,9 @@ html.disable-forced-colors * {
   --text-link: var(--blue-new-18);
   --text-muted: var(--neutral-12);
   --text-normal: var(--neutral-1);
-  --text-positive: var(--green-new-10);
   --text-primary: var(--white);
   --text-secondary: var(--neutral-2);
   --text-tertiary: var(--neutral-12);
-  --text-warning: var(--yellow-new-7);
   --thread-channel-spine: var(--neutral-27);
   --user-profile-background-hover: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
@@ -93358,24 +93291,6 @@ html.disable-forced-colors * {
         var(--custom-theme-base-color-amount, 0%)
     );
     --background-message-hover: color-mix(
-      in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-faint: color-mix(
-      in oklab,
-      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-strong: color-mix(
-      in oklab,
-      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-subtle: color-mix(
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
@@ -93651,6 +93566,12 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--red-new-6) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --input-foreground-default: color-mix(
       in oklab,
       var(--neutral-1) 100%,
@@ -93891,12 +93812,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-positive: color-mix(
-      in oklab,
-      var(--green-new-10) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --text-primary: color-mix(
       in oklab,
       var(--white) 100%,
@@ -93912,12 +93827,6 @@ html.disable-forced-colors * {
     --text-tertiary: color-mix(
       in oklab,
       var(--neutral-12) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-warning: color-mix(
-      in oklab,
-      var(--yellow-new-7) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -93990,15 +93899,11 @@ html.disable-forced-colors * {
   --background-mod-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-strong: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --background-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
-  --background-modifier-accent: var(--neutral-49);
   --background-modifier-active: hsl(var(--opacity-20-hsl) / 0.2);
   --background-modifier-hover: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-modifier-selected: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
   );
-  --bg-mod-faint: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --bg-mod-strong: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
-  --bg-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --border-faint: var(--neutral-38);
   --border-normal: var(--neutral-59);
   --border-strong: var(--neutral-72);
@@ -94139,6 +94044,7 @@ html.disable-forced-colors * {
   --input-border-critical-hover: var(--red-new-63);
   --input-border-default: var(--neutral-59);
   --input-border-default-hover: var(--neutral-59);
+  --input-foreground-critical: var(--red-new-63);
   --input-foreground-default: var(--neutral-76);
   --input-foreground-icon: var(--neutral-64);
   --input-foreground-placeholder: var(--neutral-46);
@@ -94190,11 +94096,9 @@ html.disable-forced-colors * {
   --text-link: var(--blue-new-63);
   --text-muted: var(--neutral-49);
   --text-normal: var(--neutral-76);
-  --text-positive: var(--green-new-64);
   --text-primary: var(--black);
   --text-secondary: var(--neutral-64);
   --text-tertiary: var(--neutral-49);
-  --text-warning: var(--yellow-new-64);
   --thread-channel-spine: var(--neutral-39);
   --user-profile-background-hover: hsl(
     var(--opacity-16-hsl) / 0.1607843137254902
@@ -94284,24 +94188,6 @@ html.disable-forced-colors * {
         var(--custom-theme-base-color-amount, 0%)
     );
     --background-message-hover: color-mix(
-      in oklab,
-      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-faint: color-mix(
-      in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-strong: color-mix(
-      in oklab,
-      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-subtle: color-mix(
       in oklab,
       hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
@@ -94577,6 +94463,12 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--red-new-63) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --input-foreground-default: color-mix(
       in oklab,
       var(--neutral-76) 100%,
@@ -94817,12 +94709,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-positive: color-mix(
-      in oklab,
-      var(--green-new-64) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --text-primary: color-mix(
       in oklab,
       var(--black) 100%,
@@ -94838,12 +94724,6 @@ html.disable-forced-colors * {
     --text-tertiary: color-mix(
       in oklab,
       var(--neutral-49) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-warning: color-mix(
-      in oklab,
-      var(--yellow-new-64) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -94916,7 +94796,6 @@ html.disable-forced-colors * {
   --background-mod-normal: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-mod-strong: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --background-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
-  --background-modifier-accent: var(--neutral-23);
   --background-modifier-active: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
@@ -94924,9 +94803,6 @@ html.disable-forced-colors * {
   --background-modifier-selected: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
   );
-  --bg-mod-faint: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --bg-mod-strong: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
-  --bg-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --border-faint: var(--neutral-35);
   --border-normal: var(--neutral-17);
   --border-strong: var(--neutral-10);
@@ -95071,6 +94947,7 @@ html.disable-forced-colors * {
   --input-border-critical-hover: var(--red-new-22);
   --input-border-default: var(--neutral-17);
   --input-border-default-hover: var(--neutral-17);
+  --input-foreground-critical: var(--red-new-22);
   --input-foreground-default: var(--neutral-6);
   --input-foreground-icon: var(--neutral-15);
   --input-foreground-placeholder: var(--neutral-36);
@@ -95124,11 +95001,9 @@ html.disable-forced-colors * {
   --text-link: var(--blue-new-27);
   --text-muted: var(--neutral-23);
   --text-normal: var(--neutral-6);
-  --text-positive: var(--green-new-25);
   --text-primary: var(--white);
   --text-secondary: var(--neutral-15);
   --text-tertiary: var(--neutral-23);
-  --text-warning: var(--yellow-new-24);
   --thread-channel-spine: var(--neutral-37);
   --user-profile-background-hover: hsl(
     var(--opacity-16-hsl) / 0.1607843137254902
@@ -95218,24 +95093,6 @@ html.disable-forced-colors * {
         var(--custom-theme-base-color-amount, 0%)
     );
     --background-message-hover: color-mix(
-      in oklab,
-      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-faint: color-mix(
-      in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-strong: color-mix(
-      in oklab,
-      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-subtle: color-mix(
       in oklab,
       hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
@@ -95511,6 +95368,12 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --input-foreground-default: color-mix(
       in oklab,
       var(--neutral-6) 100%,
@@ -95751,12 +95614,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-positive: color-mix(
-      in oklab,
-      var(--green-new-25) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --text-primary: color-mix(
       in oklab,
       var(--white) 100%,
@@ -95772,12 +95629,6 @@ html.disable-forced-colors * {
     --text-tertiary: color-mix(
       in oklab,
       var(--neutral-23) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-warning: color-mix(
-      in oklab,
-      var(--yellow-new-24) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -95846,15 +95697,11 @@ html.disable-forced-colors * {
   --background-mod-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --background-modifier-accent: var(--neutral-19);
   --background-modifier-active: hsl(var(--opacity-20-hsl) / 0.2);
   --background-modifier-hover: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --background-modifier-selected: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
-  --bg-mod-faint: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-  --bg-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-  --bg-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --border-faint: var(--neutral-32);
   --border-normal: var(--neutral-13);
   --border-strong: var(--neutral-5);
@@ -95995,6 +95842,7 @@ html.disable-forced-colors * {
   --input-border-critical-hover: var(--red-new-16);
   --input-border-default: var(--neutral-13);
   --input-border-default-hover: var(--neutral-13);
+  --input-foreground-critical: var(--red-new-16);
   --input-foreground-default: var(--neutral-1);
   --input-foreground-icon: var(--neutral-10);
   --input-foreground-placeholder: var(--neutral-34);
@@ -96048,11 +95896,9 @@ html.disable-forced-colors * {
   --text-link: var(--blue-new-21);
   --text-muted: var(--neutral-19);
   --text-normal: var(--neutral-1);
-  --text-positive: var(--green-new-19);
   --text-primary: var(--white);
   --text-secondary: var(--neutral-10);
   --text-tertiary: var(--neutral-19);
-  --text-warning: var(--yellow-new-17);
   --thread-channel-spine: var(--neutral-34);
   --user-profile-background-hover: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
@@ -96142,24 +95988,6 @@ html.disable-forced-colors * {
         var(--custom-theme-base-color-amount, 0%)
     );
     --background-message-hover: color-mix(
-      in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-faint: color-mix(
-      in oklab,
-      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-strong: color-mix(
-      in oklab,
-      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-mod-subtle: color-mix(
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
@@ -96435,6 +96263,12 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--red-new-16) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --input-foreground-default: color-mix(
       in oklab,
       var(--neutral-1) 100%,
@@ -96675,12 +96509,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-positive: color-mix(
-      in oklab,
-      var(--green-new-19) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --text-primary: color-mix(
       in oklab,
       var(--white) 100%,
@@ -96696,12 +96524,6 @@ html.disable-forced-colors * {
     --text-tertiary: color-mix(
       in oklab,
       var(--neutral-19) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-warning: color-mix(
-      in oklab,
-      var(--yellow-new-17) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -102461,4 +102283,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.651be13a676621dd.css.map*/
+/*# sourceMappingURL=12633.9deb5107e478ca1b.css.map*/

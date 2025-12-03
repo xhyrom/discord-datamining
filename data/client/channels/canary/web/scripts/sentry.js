@@ -6853,7 +6853,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1c9ce7ae366d9e73e4e479fc646c1da24d57a2f4",
+            release: "discord_web-57ea2797f36e771fbdaf601399555a1c47ac1899",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6919,8 +6919,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "474857"),
-            o.YA("builtAt", String("1764778513812"));
+            o.YA("buildNumber", "474869"),
+            o.YA("builtAt", String("1764779726738"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.YA(t, e[t]);
           return _;
@@ -7147,19 +7147,10 @@
               },
               BACKGROUND_FEEDBACK_CRITICAL: {
                 category: "background",
-                [n.DARK]: { raw: "OPACITY_RED_8", opacity: 0.0784313725490196 },
-                [n.LIGHT]: {
-                  raw: "OPACITY_RED_8",
-                  opacity: 0.0784313725490196,
-                },
-                [n.MIDNIGHT]: {
-                  raw: "OPACITY_RED_8",
-                  opacity: 0.0784313725490196,
-                },
-                [n.DARKER]: {
-                  raw: "OPACITY_RED_8",
-                  opacity: 0.0784313725490196,
-                },
+                [n.DARK]: { raw: "RED_430", opacity: 1 },
+                [n.LIGHT]: { raw: "RED_430", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "RED_430", opacity: 1 },
+                [n.DARKER]: { raw: "RED_430", opacity: 1 },
               },
               BACKGROUND_FEEDBACK_INFO: {
                 category: "background",
@@ -7217,13 +7208,6 @@
                   raw: "OPACITY_YELLOW_8",
                   opacity: 0.0784313725490196,
                 },
-              },
-              BACKGROUND_FLOATING: {
-                category: "background",
-                [n.DARK]: { raw: "PRIMARY_800", opacity: 1 },
-                [n.LIGHT]: { raw: "WHITE", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "PLUM_23", opacity: 1 },
-                [n.DARKER]: { raw: "PLUM_18", opacity: 1 },
               },
               BACKGROUND_MENTIONED: {
                 category: "background",
@@ -7292,12 +7276,38 @@
                   dark: { color: "BLACK_500", opacity: 0.4 },
                 },
               },
-              BACKGROUND_MODIFIER_ACCENT: {
+              BACKGROUND_MOD_FAINT: {
+                category: "background",
+                [n.DARK]: { raw: "PRIMARY_500", opacity: 0.3 },
+                [n.LIGHT]: { raw: "PRIMARY_400", opacity: 0.08 },
+                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.16 },
+                [n.DARKER]: { raw: "PLUM_11", opacity: 0.12 },
+                gradient: {
+                  light: { color: "BLACK_500", opacity: 0.05 },
+                  dark: { color: "WHITE_500", opacity: 0.05 },
+                },
+              },
+              BACKGROUND_MOD_STRONG: {
+                category: "background",
+                [n.DARK]: { raw: "PRIMARY_500", opacity: 0.54 },
+                [n.LIGHT]: { raw: "PRIMARY_400", opacity: 0.24 },
+                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.18 },
+                [n.DARKER]: { raw: "PLUM_11", opacity: 0.24 },
+                gradient: {
+                  light: { color: "BLACK_500", opacity: 0.1 },
+                  dark: { color: "WHITE_500", opacity: 0.1 },
+                },
+              },
+              BACKGROUND_MOD_SUBTLE: {
                 category: "background",
                 [n.DARK]: { raw: "PRIMARY_500", opacity: 0.48 },
-                [n.LIGHT]: { raw: "PRIMARY_400", opacity: 0.24 },
-                [n.MIDNIGHT]: { raw: "PLUM_23_ALPHA", opacity: 0.1 },
-                [n.DARKER]: { raw: "PLUM_11", opacity: 0.12 },
+                [n.LIGHT]: { raw: "PRIMARY_400", opacity: 0.16 },
+                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.12 },
+                [n.DARKER]: { raw: "PLUM_11", opacity: 0.16 },
+                gradient: {
+                  light: { color: "BLACK_500", opacity: 0.075 },
+                  dark: { color: "WHITE_500", opacity: 0.075 },
+                },
               },
               BACKGROUND_MODIFIER_ACTIVE: {
                 category: "background",
@@ -7341,6 +7351,13 @@
                   light: { color: "WHITE_500", opacity: 0.5 },
                   dark: { color: "BLACK_500", opacity: 0.5 },
                 },
+              },
+              BACKGROUND_SURFACE_HIGH: {
+                category: "background",
+                [n.DARK]: { raw: "PRIMARY_800", opacity: 1 },
+                [n.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "PLUM_23", opacity: 1 },
+                [n.DARKER]: { raw: "PLUM_18", opacity: 1 },
               },
               BACKGROUND_TILE_GRADIENT_PINK_END: {
                 category: "background",
@@ -7411,39 +7428,6 @@
                 [n.LIGHT]: { raw: "BRAND_500", opacity: 1 },
                 [n.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
                 [n.DARKER]: { raw: "BRAND_500", opacity: 1 },
-              },
-              BG_MOD_FAINT: {
-                category: "background",
-                [n.DARK]: { raw: "PRIMARY_500", opacity: 0.3 },
-                [n.LIGHT]: { raw: "PRIMARY_400", opacity: 0.08 },
-                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.16 },
-                [n.DARKER]: { raw: "PLUM_11", opacity: 0.12 },
-                gradient: {
-                  light: { color: "BLACK_500", opacity: 0.05 },
-                  dark: { color: "WHITE_500", opacity: 0.05 },
-                },
-              },
-              BG_MOD_STRONG: {
-                category: "background",
-                [n.DARK]: { raw: "PRIMARY_500", opacity: 0.54 },
-                [n.LIGHT]: { raw: "PRIMARY_400", opacity: 0.24 },
-                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.18 },
-                [n.DARKER]: { raw: "PLUM_11", opacity: 0.24 },
-                gradient: {
-                  light: { color: "BLACK_500", opacity: 0.1 },
-                  dark: { color: "WHITE_500", opacity: 0.1 },
-                },
-              },
-              BG_MOD_SUBTLE: {
-                category: "background",
-                [n.DARK]: { raw: "PRIMARY_500", opacity: 0.48 },
-                [n.LIGHT]: { raw: "PRIMARY_400", opacity: 0.16 },
-                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.12 },
-                [n.DARKER]: { raw: "PLUM_11", opacity: 0.16 },
-                gradient: {
-                  light: { color: "BLACK_500", opacity: 0.075 },
-                  dark: { color: "WHITE_500", opacity: 0.075 },
-                },
               },
               BG_SURFACE_OVERLAY: {
                 category: "background",
@@ -9545,20 +9529,6 @@
                 [n.MIDNIGHT]: { raw: "PLUM_20", opacity: 0.5 },
                 [n.DARKER]: { raw: "PLUM_20", opacity: 0.5 },
               },
-              DIVIDER_STRONG: {
-                category: "border",
-                [n.DARK]: { raw: "WHITE", opacity: 0.16 },
-                [n.LIGHT]: { raw: "BLACK", opacity: 0.16 },
-                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.24 },
-                [n.DARKER]: { raw: "PLUM_11", opacity: 0.22 },
-              },
-              DIVIDER_SUBTLE: {
-                category: "border",
-                [n.DARK]: { raw: "WHITE", opacity: 0.08 },
-                [n.LIGHT]: { raw: "BLACK", opacity: 0.08 },
-                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.12 },
-                [n.DARKER]: { raw: "PLUM_11", opacity: 0.12 },
-              },
               EMBED_BACKGROUND: {
                 category: "generic",
                 [n.DARK]: { raw: "PRIMARY_630", opacity: 1 },
@@ -9990,10 +9960,10 @@
               },
               INPUT_BORDER_CRITICAL_HOVER: {
                 category: "background",
-                [n.DARK]: { raw: "RED_NEW_24", opacity: 1 },
-                [n.LIGHT]: { raw: "RED_NEW_54", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "RED_NEW_40", opacity: 1 },
-                [n.DARKER]: { raw: "RED_NEW_32", opacity: 1 },
+                [n.DARK]: { raw: "RED_345", opacity: 1 },
+                [n.LIGHT]: { raw: "RED_500", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "RED_345", opacity: 1 },
+                [n.DARKER]: { raw: "RED_345", opacity: 1 },
               },
               INPUT_ERROR_BACKGROUND: {
                 category: "background",
@@ -10034,8 +10004,8 @@
                 category: "background",
                 [n.DARK]: { raw: "NEUTRAL_12", opacity: 1 },
                 [n.LIGHT]: { raw: "NEUTRAL_72", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "NEUTRAL_12", opacity: 1 },
-                [n.DARKER]: { raw: "NEUTRAL_5", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "NEUTRAL_10", opacity: 1 },
+                [n.DARKER]: { raw: "NEUTRAL_4", opacity: 1 },
               },
               INPUT_PLACEHOLDER_TEXT: {
                 category: "background",
@@ -10173,10 +10143,10 @@
               },
               NOTICE_BACKGROUND_POSITIVE: {
                 category: "generic",
-                [n.DARK]: { raw: "GREEN_NEW_78", opacity: 1 },
+                [n.DARK]: { raw: "GREEN_NEW_96", opacity: 1 },
                 [n.LIGHT]: { raw: "GREEN_NEW_1", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "GREEN_NEW_99", opacity: 1 },
-                [n.DARKER]: { raw: "GREEN_NEW_88", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "GREEN_NEW_96", opacity: 1 },
+                [n.DARKER]: { raw: "GREEN_NEW_85", opacity: 1 },
               },
               OVERLAY_BACKDROP_DEFAULT: {
                 category: "generic",
@@ -10849,13 +10819,6 @@
                 [n.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
                 [n.DARKER]: { raw: "RED_400", opacity: 1 },
               },
-              STATUS_DANGER_BACKGROUND: {
-                category: "generic",
-                [n.DARK]: { raw: "RED_430", opacity: 1 },
-                [n.LIGHT]: { raw: "RED_430", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "RED_430", opacity: 1 },
-                [n.DARKER]: { raw: "RED_430", opacity: 1 },
-              },
               STATUS_DANGER_TEXT: {
                 category: "text",
                 [n.DARK]: { raw: "WHITE", opacity: 1 },
@@ -10947,12 +10910,26 @@
                 [n.MIDNIGHT]: { raw: "BRAND_400", opacity: 1 },
                 [n.DARKER]: { raw: "BRAND_360", opacity: 1 },
               },
-              TEXT_DANGER: {
+              TEXT_FEEDBACK_CRITICAL: {
                 category: "text",
                 [n.DARK]: { raw: "RED_345", opacity: 1 },
                 [n.LIGHT]: { raw: "RED_500", opacity: 1 },
                 [n.MIDNIGHT]: { raw: "RED_345", opacity: 1 },
                 [n.DARKER]: { raw: "RED_345", opacity: 1 },
+              },
+              TEXT_FEEDBACK_POSITIVE: {
+                category: "text",
+                [n.DARK]: { raw: "GREEN_330", opacity: 1 },
+                [n.LIGHT]: { raw: "GREEN_430", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "GREEN_330", opacity: 1 },
+                [n.DARKER]: { raw: "GREEN_330", opacity: 1 },
+              },
+              TEXT_FEEDBACK_WARNING: {
+                category: "text",
+                [n.DARK]: { raw: "YELLOW_300", opacity: 1 },
+                [n.LIGHT]: { raw: "YELLOW_430", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "YELLOW_300", opacity: 1 },
+                [n.DARKER]: { raw: "YELLOW_300", opacity: 1 },
               },
               TEXT_LINK: {
                 category: "generic",
@@ -11003,13 +10980,6 @@
                 [n.MIDNIGHT]: { raw: "PLUM_4", opacity: 1 },
                 [n.DARKER]: { raw: "PLUM_6", opacity: 1 },
               },
-              TEXT_POSITIVE: {
-                category: "text",
-                [n.DARK]: { raw: "GREEN_330", opacity: 1 },
-                [n.LIGHT]: { raw: "GREEN_430", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "GREEN_330", opacity: 1 },
-                [n.DARKER]: { raw: "GREEN_330", opacity: 1 },
-              },
               TEXT_PRIMARY: {
                 category: "text",
                 [n.DARK]: { raw: "PRIMARY_230", opacity: 1 },
@@ -11023,13 +10993,6 @@
                 [n.LIGHT]: { raw: "PRIMARY_500", opacity: 1 },
                 [n.MIDNIGHT]: { raw: "PLUM_8", opacity: 1 },
                 [n.DARKER]: { raw: "PLUM_9", opacity: 1 },
-              },
-              TEXT_WARNING: {
-                category: "text",
-                [n.DARK]: { raw: "YELLOW_300", opacity: 1 },
-                [n.LIGHT]: { raw: "YELLOW_430", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "YELLOW_300", opacity: 1 },
-                [n.DARKER]: { raw: "YELLOW_300", opacity: 1 },
               },
               THEME_LOCKED_BLUR_FALLBACK: {
                 category: "generic",
@@ -40199,4 +40162,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.d4e6ed7b8be23cf5.js.map
+//# sourceMappingURL=sentry.b1e9e117cb44895e.js.map
