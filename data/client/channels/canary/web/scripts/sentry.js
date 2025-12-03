@@ -6852,7 +6852,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-627d50fa288856c8509874e141048c9b2210ac81",
+            release: "discord_web-6904223f5aabd8fd3c7ac15b4af3411e6e6b901c",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6918,8 +6918,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "475186"),
-            o.YA("builtAt", String("1764798560656"));
+            o.YA("buildNumber", "475201"),
+            o.YA("builtAt", String("1764799311628"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.YA(t, e[t]);
           return _;
@@ -9813,13 +9813,6 @@
                 [n.MIDNIGHT]: { raw: "PLUM_2", opacity: 1 },
                 [n.DARKER]: { raw: "PLUM_3", opacity: 1 },
               },
-              HEADER_SECONDARY: {
-                category: "text",
-                [n.DARK]: { raw: "PRIMARY_330", opacity: 1 },
-                [n.LIGHT]: { raw: "PRIMARY_500", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "PLUM_8", opacity: 1 },
-                [n.DARKER]: { raw: "PLUM_9", opacity: 1 },
-              },
               ICON_MUTED: {
                 category: "generic",
                 [n.DARK]: { raw: "PRIMARY_400", opacity: 1 },
@@ -10001,10 +9994,10 @@
               },
               INPUT_FOREGROUND_DEFAULT: {
                 category: "background",
-                [n.DARK]: { raw: "NEUTRAL_12", opacity: 1 },
-                [n.LIGHT]: { raw: "NEUTRAL_72", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "NEUTRAL_10", opacity: 1 },
-                [n.DARKER]: { raw: "NEUTRAL_4", opacity: 1 },
+                [n.DARK]: { raw: "PRIMARY_230", opacity: 1 },
+                [n.LIGHT]: { raw: "PRIMARY_600", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "PLUM_4", opacity: 1 },
+                [n.DARKER]: { raw: "PLUM_6", opacity: 1 },
               },
               INPUT_PLACEHOLDER_TEXT: {
                 category: "background",
@@ -10909,6 +10902,13 @@
                 [n.MIDNIGHT]: { raw: "BRAND_400", opacity: 1 },
                 [n.DARKER]: { raw: "BRAND_360", opacity: 1 },
               },
+              TEXT_DEFAULT: {
+                category: "text",
+                [n.DARK]: { raw: "PRIMARY_230", opacity: 1 },
+                [n.LIGHT]: { raw: "PRIMARY_600", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "PLUM_4", opacity: 1 },
+                [n.DARKER]: { raw: "PLUM_6", opacity: 1 },
+              },
               TEXT_FEEDBACK_CRITICAL: {
                 category: "text",
                 [n.DARK]: { raw: "RED_345", opacity: 1 },
@@ -10972,21 +10972,14 @@
                 [n.MIDNIGHT]: { raw: "PRIMARY_330", opacity: 1 },
                 [n.DARKER]: { raw: "PRIMARY_330", opacity: 1 },
               },
-              TEXT_NORMAL: {
+              TEXT_STRONG: {
                 category: "text",
                 [n.DARK]: { raw: "PRIMARY_230", opacity: 1 },
                 [n.LIGHT]: { raw: "PRIMARY_600", opacity: 1 },
                 [n.MIDNIGHT]: { raw: "PLUM_4", opacity: 1 },
                 [n.DARKER]: { raw: "PLUM_6", opacity: 1 },
               },
-              TEXT_PRIMARY: {
-                category: "text",
-                [n.DARK]: { raw: "PRIMARY_230", opacity: 1 },
-                [n.LIGHT]: { raw: "PRIMARY_600", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "PLUM_4", opacity: 1 },
-                [n.DARKER]: { raw: "PLUM_6", opacity: 1 },
-              },
-              TEXT_SECONDARY: {
+              TEXT_SUBTLE: {
                 category: "text",
                 [n.DARK]: { raw: "PRIMARY_330", opacity: 1 },
                 [n.LIGHT]: { raw: "PRIMARY_500", opacity: 1 },
@@ -40161,4 +40154,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.6dcd291c1b5fbb04.js.map
+//# sourceMappingURL=sentry.e23e4e4f028b7998.js.map
