@@ -2,48 +2,53 @@
   <span style="font-weight: 400"
     >Want your friends to express themselves on Discord with unique emojis,
     custom profiles, and more? You can, by gifting monthly &amp; yearly
-    subscriptions of
-    <a
-      href="https://support.discord.com/hc/en-us/articles/115000435108"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Nitro &amp; Nitro Basic</a
-    >
+    subscriptions of </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/115000435108"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span style="font-weight: 400">Nitro &amp; Nitro Basic</span></a
+  ><span style="font-weight: 400">
     to your friends, whether you’re on desktop or mobile devices.</span
   >
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
-      <strong
-        ><a href="#h_01JF85KBBN81QWNATTG0MMWX5F"
-          >How to Purchase a Nitro Gift in Discord</a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e9f65c7d5ff2c512a26dfcfd9b77740d6"
+    >
+      <a href="#h_01JF85KBBN81QWNATTG0MMWX5F"
+        ><strong>How to Purchase a Nitro Gift in Discord</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01JF85HYSDTS1VC2ZHTE1ZVW6Y"
-          >Discord Nitro Digital Gift Cards on Amazon.com</a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e6f9d69bb4d05510227889991112426bf"
+    >
+      <a href="#h_01JF85HYSDTS1VC2ZHTE1ZVW6Y"
+        ><strong>Discord Nitro Digital Gift Cards on Amazon.com</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01JF85KZAD305B0145QSMC1B86"
-          >Managing Your Nitro Gift</a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e920fc30820bfd6fe10ff496a9f187927"
+    >
+      <a href="#h_01JF85KZAD305B0145QSMC1B86"
+        ><strong>Managing Your Nitro Gift</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01GCCGE3DAMHY7BX0JVY04JYSR"
-          >Purchasing a Gift on Mobile</a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="ea7ff4fb5acb79796720666bc85f98b35"
+    >
+      <a href="#h_01GCCGE3DAMHY7BX0JVY04JYSR"
+        ><strong>Purchasing a Gift on Mobile</strong></a
       >
     </li>
   </ul>
@@ -84,18 +89,23 @@
   />
 </p>
 <h4
-  id="docs-internal-guid-45d59bdd-7fff-19ed-4a23-16243ed0f0d0"
   class="wysiwyg-text-align-center"
+  id="docs-internal-guid-45d59bdd-7fff-19ed-4a23-16243ed0f0d0"
 >
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Customizing your gift is currently only available within direct messages
-    (DMs)</span
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Customizing your gift is currently only available within direct messages
+      (DMs)</span
+    ></span
   >
 </h4>
 <h3 id="docs-internal-guid-941b55c9-7fff-5bed-b27c-b912d99c6086">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If your Discord account does not have a previously saved payment method,
-    you will need to add your payment method details before proceeding.  </span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >If your Discord account does not have a previously saved payment method,
+      you will need to add your payment method details before
+      proceeding.  </span
+    ></span
   >
 </h3>
 <p>
@@ -144,52 +154,71 @@
   This is currently only available in the United States and the EU.
 </h3>
 <p>
-  <span style="color: #4f545c" data-darkreader-inline-color=""
-    >1. To purchase a gift card for Nitro on Amazon, you can visit the </span
+  <span style="color: #4f545c"
+    ><span data-darkreader-inline-color=""
+      >1. To purchase a gift card for Nitro on Amazon, you can visit the
+    </span></span
   ><a
     href="https://www.amazon.com/dp/B0CF4J58QK/?th=1"
     target="_blank"
     rel="noopener noreferrer"
     >Discord Nitro gift card page</a
-  ><span style="color: #4f545c" data-darkreader-inline-color="">
-    or use Amazon Search to find Nitro gift cards.</span
+  ><span style="color: #4f545c"
+    ><span data-darkreader-inline-color="">
+      or use Amazon Search to find Nitro gift cards.</span
+    ></span
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #4f545c" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/28000238663831"
-      alt="image1.png"
-      width="609"
-      height="300"
-  /></span>
+  <span style="color: #4f545c"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/28000238663831"
+        alt="image1.png"
+        width="609"
+        height="300" /></span
+  ></span>
 </p>
 <p id="docs-internal-guid-dec96d88-7fff-de15-e40f-acc4469a3ad7">
-  <span style="color: #4f545c" data-darkreader-inline-color="">2. </span
-  ><span style="color: #4f545c" data-darkreader-inline-color=""
-    >Once you have navigated to the page, you can purchase the following
-    subscriptions: </span
+  <span style="color: #4f545c"
+    ><span data-darkreader-inline-color="">2. </span
+    ><span data-darkreader-inline-color=""
+      >Once you have navigated to the page, you can purchase the following
+      subscriptions: </span
+    ></span
   >
 </p>
 <ul>
-  <li>
-    <span style="color: #4f545c" data-darkreader-inline-color=""
-      >1 month of Nitro </span
+  <li
+    class="ck-list-marker-color"
+    data-list-item-id="e50f8e14d4afeadda9f1fe107d183c510"
+  >
+    <span style="color: #4f545c"
+      ><span data-darkreader-inline-color="">1 month of Nitro </span></span
     >
   </li>
-  <li>
-    <span style="color: #4f545c" data-darkreader-inline-color=""
-      >3 months of Nitro </span
+  <li
+    class="ck-list-marker-color"
+    data-list-item-id="ea504c46405d2b6562faf5e74fa739dd5"
+  >
+    <span style="color: #4f545c"
+      ><span data-darkreader-inline-color="">3 months of Nitro </span></span
     >
   </li>
-  <li>
-    <span style="color: #4f545c" data-darkreader-inline-color=""
-      >6 months of Nitro </span
+  <li
+    class="ck-list-marker-color"
+    data-list-item-id="e16bec7c982aeff73f6bfb21951bdd3c7"
+  >
+    <span style="color: #4f545c"
+      ><span data-darkreader-inline-color="">6 months of Nitro </span></span
     >
   </li>
-  <li>
-    <span style="color: #4f545c" data-darkreader-inline-color=""
-      >12 months of Nitro</span
+  <li
+    class="ck-list-marker-color"
+    data-list-item-id="e51206d0a20a06444997c0aa17906b9a7"
+  >
+    <span style="color: #4f545c"
+      ><span data-darkreader-inline-color="">12 months of Nitro</span></span
     >
   </li>
 </ul>
@@ -198,34 +227,36 @@
   Amazon gift card page. 
 </h3>
 <p>
-  <span style="color: #4f545c" data-darkreader-inline-color=""
-    >3. Once you have completed your Amazon purchase, the gift card will be sent
-    as a digital code to your email address associated with your Amazon account.
-    You can also access your digital code within </span
-  ><strong
-    ><span style="color: #4f545c" data-darkreader-inline-color=""
-      >Your Games Library page</span
-    ></strong
-  ><span style="color: #4f545c" data-darkreader-inline-color="">
-    via Amazon. </span
+  <span style="color: #4f545c"
+    ><span data-darkreader-inline-color=""
+      >3. Once you have completed your Amazon purchase, the gift card will be
+      sent as a digital code to your email address associated with your Amazon
+      account. You can also access your digital code within </span
+    ><span data-darkreader-inline-color=""
+      ><strong>Your Games Library page</strong></span
+    ><span data-darkreader-inline-color=""> via Amazon. </span></span
   >
 </p>
 <p>
-  <span style="color: #4f545c" data-darkreader-inline-color=""
-    >Now you can apply the digital code through Discord to activate your
-    subscription or send it to a lucky somebody as a gift!</span
+  <span style="color: #4f545c"
+    ><span data-darkreader-inline-color=""
+      >Now you can apply the digital code through Discord to activate your
+      subscription or send it to a lucky somebody as a gift!</span
+    ></span
   >
 </p>
 <h3 id="h_01HZN75KTVHT4QRZAKVGK8N72C">
-  <span style="color: #4f545c" data-darkreader-inline-color=""
-    >Note: If you have any questions regarding your Nitro digital gift card
-    purchase through Amazon, please be sure to reach out to Amazon support for
-    further assistance.</span
+  <span style="color: #4f545c"
+    ><span data-darkreader-inline-color=""
+      >Note: If you have any questions regarding your Nitro digital gift card
+      purchase through Amazon, please be sure to reach out to Amazon support for
+      further assistance.</span
+    ></span
   >
 </h3>
 <h1 id="h_01JF85KZAD305B0145QSMC1B86">
-  <span style="color: #4f545c" data-darkreader-inline-color=""
-    >Managing Your Nitro Gift</span
+  <span style="color: #4f545c"
+    ><span data-darkreader-inline-color="">Managing Your Nitro Gift</span></span
   >
 </h1>
 <p>
@@ -270,9 +301,11 @@
   <span style="font-weight: 400">Purchasing a Gift On Mobile</span>
 </h1>
 <h3 id="docs-internal-guid-ea923b20-7fff-71e0-99c6-fee170d58883">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >You can now customize your Nitro and Nitro Basic gift on iOS and Android
-    devices in DMs, group chats, and channels!</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >You can now customize your Nitro and Nitro Basic gift on iOS and Android
+      devices in DMs, group chats, and channels!</span
+    ></span
   >
 </h3>
 <p id="docs-internal-guid-d0ff829b-7fff-a90f-0e7b-1141243883da">
@@ -298,13 +331,12 @@
   gift by selecting a gift card style.  
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-3810a2ac-7fff-a139-dbd3-5757e1bece67"
-    ><span id="docs-internal-guid-b2cd606e-7fff-2f01-c1ae-56d70130486d"
-      ><img
-        src="https://support.discord.com/hc/article_attachments/28000238680471"
-        width="233"
-        height="611" /></span
-  ></span>
+  <span id="docs-internal-guid-b2cd606e-7fff-2f01-c1ae-56d70130486d"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/28000238680471"
+      width="233"
+      height="611"
+  /></span>
 </p>
 <p id="docs-internal-guid-25d46aca-7fff-e4ca-4274-fe210fdfc7e6">
   4. If you are sending the gift through DMs, you can add a custom message and
