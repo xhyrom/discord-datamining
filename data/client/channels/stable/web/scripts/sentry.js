@@ -2705,7 +2705,7 @@
       },
       981631: function (e, t, r) {
         "use strict";
-        r.d(t, { rMx: () => p }),
+        r.d(t, { rMx: () => R }),
           r(388685),
           r(743606),
           r(106351),
@@ -2718,10 +2718,11 @@
           o = r(860911),
           _ = r(70956),
           s = r(188785),
-          c = r(979007),
-          E = r(688357),
-          l = r(526761),
-          u = r(231338);
+          c = r(930955),
+          E = r(979007),
+          l = r(688357),
+          u = r(526761),
+          d = r(231338);
         r(334431),
           Object.freeze({
             SUPPRESS_JOIN_NOTIFICATIONS: 1,
@@ -2737,7 +2738,7 @@
           a.u.THREAD_STARTER_MESSAGE,
           a.u.CONTEXT_MENU_COMMAND,
           Object.freeze({ ACCOUNT_AGE: 5, MEMBER_AGE: 10 });
-        let d = Object.freeze({
+        let I = Object.freeze({
             USER: (e) => "/users/".concat(e),
             USER_RELATIONSHIPS: function () {
               let e =
@@ -3003,6 +3004,7 @@
                   : "png";
               return "/avatar-decoration-presets/".concat(e, ".").concat(t);
             },
+            USER_PROFILE_EFFECTS: "/user-profile-effects",
             COLLECTIBLES_CATEGORIES: "/collectibles-categories",
             COLLECTIBLES_CATEGORIES_V2: "/collectibles-categories/v2",
             COLLECTIBLES_SEARCH: "/shop/search",
@@ -4139,9 +4141,10 @@
             GUILD_MIGRATE_SLOWMODE_PERMISSION: (e) =>
               "/guilds/".concat(e, "/migrate-bypass-slowmode-permission"),
             QUEST_PLACEMENT: "/quests/placement-alpha",
-            GAME_UPDATE: (e, t) => "/games/".concat(e, "/updates/").concat(t),
+            GAME_UPDATE: (e) =>
+              "/game-updates/".concat(e.gopGameId, "/").concat(e.startDate),
           }),
-          I = Object.freeze({
+          p = Object.freeze({
             INDEX: "/",
             APP: "/app",
             APP_WITH_INVITE_AND_GUILD_ONBOARDING: (e) =>
@@ -4273,7 +4276,7 @@
             GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU: (e, t) =>
               "/discovery/applications/"
                 .concat(e, "/")
-                .concat(c.GlobalDiscoveryAppsSections.STORE, "/")
+                .concat(E.GlobalDiscoveryAppsSections.STORE, "/")
                 .concat(t),
             GLOBAL_DISCOVERY_APPS_SEARCH: "/discovery/applications/search",
             GUILD_MEMBER_VERIFICATION: (e) => "/member-verification/".concat(e),
@@ -4335,7 +4338,7 @@
             APPLICATION_DIRECTORY_PROFILE_STORE_SKU: (e, t) =>
               "/application-directory/"
                 .concat(e, "/")
-                .concat(E.c.STORE, "/")
+                .concat(l.c.STORE, "/")
                 .concat(t),
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
@@ -4380,8 +4383,8 @@
               "/quest-home?tab=preview_tool&quest_id=".concat(e),
             ICYMI: "/icymi",
           });
-        (0, o.Ft)(d),
-          (0, o.Ft)(I, [":", "?", "@"]),
+        (0, o.Ft)(I),
+          (0, o.Ft)(p, [":", "?", "@"]),
           _.Z.Seconds.HOUR,
           _.Z.Seconds.MINUTE,
           _.Z.Seconds.MINUTE,
@@ -4593,7 +4596,7 @@
             GUILD_ROLE_SUBSCRIPTIONS_CANCEL: "Guild Role Subscription Cancel",
             GUILD_BOOSTING: "Nitro Server Boost",
             WEBAUTHN_VIEW: "View Security Keys",
-            [l.cP]: "Guild Role Subscription",
+            [u.cP]: "Guild Role Subscription",
             BILLING: "Billing",
             EXPERIMENTS: "Experiments",
             DEVELOPER_OPTIONS: "Developer Options",
@@ -4687,7 +4690,7 @@
             ZOOM_MAX: 200,
             ZOOM_SCALES: [50, 67, 75, 80, 90, 100, 110, 125, 150, 175, 200],
           });
-        var p =
+        var R =
           (((n = {}).APP_OPENED = "app_opened"),
           (n.APP_CRASHED = "app_crashed"),
           (n.APP_BACKGROUND = "app_background"),
@@ -5271,7 +5274,6 @@
           (n.SEARCH_HISTORY_CLICKED = "search_history_clicked"),
           (n.SEARCH_BAR_VIEWED = "search_bar_viewed"),
           (n.SEARCH_CROSS_DM_SETTING_UPDATE = "search_cross_dm_setting_update"),
-          (n.SEARCH_FILTERS_MODAL_OPENED = "search_filters_modal_opened"),
           (n.MESSAGES_SEARCH_STARTED = "messages_search_started"),
           (n.SEARCH_V2_OPENED = "search_v2_opened"),
           (n.SEARCH_V2_CLOSED = "search_v2_closed"),
@@ -5907,6 +5909,7 @@
           (n.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED =
             "iar_deauthorize_app_button_clicked"),
           (n.IAR_REMOVE_APP_BUTTON_CLICKED = "iar_remove_app_button_clicked"),
+          (n.DM_MUTE_FEEDBACK_SUBMITTED = "dm_mute_feedback_submitted"),
           (n.BLOCK_USER_FEEDBACK_SUBMITTED = "block_user_feedback_submitted"),
           (n.IGNORE_USER_FEEDBACK_SUBMITTED = "ignore_user_feedback_submitted"),
           (n.AGE_VERIFICATION_FEEDBACK_SUBMITTED =
@@ -6743,16 +6746,16 @@
             nvidia_gdn_app: "NVIDIA Cloud Gaming Application",
             roblox: "Roblox",
           }),
-          u.pK.USD,
-          u.pK.CAD,
-          u.pK.EUR,
-          u.pK.AUD,
-          u.pK.GBP,
-          u.pK.PHP,
-          u.pK.MYR,
-          u.pK.VND,
-          u.pK.KRW,
-          u.pK.IDR,
+          d.pK.USD,
+          d.pK.CAD,
+          d.pK.EUR,
+          d.pK.AUD,
+          d.pK.GBP,
+          d.pK.PHP,
+          d.pK.MYR,
+          d.pK.VND,
+          d.pK.KRW,
+          d.pK.IDR,
           Object.freeze({
             APPLICATIONS: (e) => (null != e ? "applications/".concat(e) : null),
             APP_PREMIUM_BUTTON: (e) =>
@@ -6775,8 +6778,8 @@
               "user-application-identities/".concat(e),
             ACTIVITIES_DISCORD_CONFIG: (e) =>
               "activities-discord-config/".concat(e),
-            GAME_UPDATE: (e, t) =>
-              null != t ? "games/".concat(e, "/updates/").concat(t) : null,
+            GAME_UPDATE: (e) =>
+              null != e ? "game-update/".concat((0, c.t)(e)) : null,
             __DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU: (e) =>
               null != e ? "useParentSkuData/".concat(e) : null,
           });
@@ -6852,7 +6855,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-12-03-21cd9fa46d979dbbae20d6c3e1251f9471ec98d3-discord_web",
+              "2025-12-02-05f94041b1d43e8eb00b61189191810ec327964c-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6918,12 +6921,19 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "474802"),
-            o.YA("builtAt", String("1764749943846"));
+            o.YA("buildNumber", "474172"),
+            o.YA("builtAt", String("1764682173009"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.YA(t, e[t]);
           return _;
         }
+      },
+      930955: function (e, t, r) {
+        "use strict";
+        function n(e) {
+          return "".concat(e.gopGameId, "|").concat(e.startDate);
+        }
+        r.d(t, { t: () => n });
       },
       979007: function (e, t, r) {
         "use strict";
@@ -40198,4 +40208,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.a7dd0f29a0d78ef4.js.map
+//# sourceMappingURL=sentry.d2fa2b5a6930d041.js.map
