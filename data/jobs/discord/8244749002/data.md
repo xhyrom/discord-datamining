@@ -1,6 +1,6 @@
 # Job Listing
 
-## Staff Software Engineer, Player Experience
+## Staff Software Engineer, New Gaming Features
 
 **Location:** San Francisco Bay Area
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8244749002](https://discord.com/jobs/8244749002)
 
-**Updated At:** Fri, 14 Nov 2025 21:13:49 GMT
+**Updated At:** Wed, 03 Dec 2025 21:03:15 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.People come to Discord before, during, and after gaming, and we want to make that experience even better. Working directly with our developer partners and communities, we are building brand new ways for users on Discord to connect, engage and have a great time while gaming. We believe that gaming is better when playing with friends, and aim to provide the features and tooling for developers to help us enrich those experiences. This is also reflected in how we work! Our engineering culture values collaboration and building great teams. Come and join us!
@@ -26,6 +26,7 @@ What you should have
 
 You have 8+ years of experience as a software engineer.
 You have experience with React/TS, Python or other modern programming languages.
+You have a track-record of shipping incremental + delightful features that improve the overall user experience.
 You are comfortable switching between different technical stacks and learning new ones.
 You enjoy collaborating with product, design and other stakeholders. We don’t operate in silos, and you’ll be working closely with cross-functional peers. You should be able to express opinions and stay aligned.
 You take a holistic approach to problem solving. You believe in solving a problem from first principles rather than simply shipping a solution. You learn from your mistakes and work through obstacles with the rest of the team.
