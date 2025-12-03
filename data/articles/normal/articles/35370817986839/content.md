@@ -346,6 +346,10 @@
 <h1 id="h_01K7Q3ATDJ3AX6DW3QPYTM9QKN">
   How to Modify a Game Server as a Server Owner/Admin
 </h1>
+<div class="tip-box">
+  <strong>Tip:</strong> To modify or make changes to a Game Server’s settings,
+  you will need Administrator permissions in that server.
+</div>
 <p>
   1. Navigate to the server that has the game server you want to modify and
   press on <strong>Game Servers</strong>.
