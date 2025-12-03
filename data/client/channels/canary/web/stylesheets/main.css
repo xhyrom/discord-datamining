@@ -32797,6 +32797,12 @@ div.mobilePushContainer__3d3b0 {
   justify-content: start;
   padding: var(--space-8) var(--space-16);
 }
+.error_d90114 {
+  color: var(--red-400);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .small__258ba {
   height: 16px;
   width: 16px;
@@ -102317,4 +102323,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.023e16bda392e8ce.css.map*/
+/*# sourceMappingURL=12633.58ee36336b63b10e.css.map*/
