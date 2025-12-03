@@ -16210,10 +16210,29 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   z-index: 9999;
 }
 .unavailableTooltip__9be63 {
+  align-items: center;
+  display: flex;
   height: 40px;
   position: absolute;
   top: 0;
-  width: 150px;
+  inset-inline: 0;
+  inset-inline-end: 0;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+.unavailableTooltip__9be63:hover .unavailableTooltipActions__9be63 {
+  opacity: 1;
+  visibility: visible;
+}
+.unavailableTooltipActions__9be63 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  pointer-events: auto;
+  transition: opacity 0.2s ease;
+  visibility: hidden;
+  width: 100%;
 }
 .icon__14ad3 {
   height: 16px;
@@ -30375,7 +30394,7 @@ div.mobilePushContainer__3d3b0 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10000;
 }
 .sectionContainerNitroLocked__61424 {
   position: relative;
@@ -102442,4 +102461,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.7cf767aec1a9d139.css.map*/
+/*# sourceMappingURL=12633.651be13a676621dd.css.map*/
