@@ -52356,6 +52356,24 @@ svg.radioIcon_c1e9c4 {
 .card__6df1a.withGiftBanner__6df1a {
   padding-bottom: 90px;
 }
+.card__6df1a.borderGradient__6df1a {
+  background: var(--background-surface-high);
+  border: none;
+  position: relative;
+}
+.card__6df1a.borderGradient__6df1a:after {
+  background: linear-gradient(
+    to bottom,
+    var(--illo-pink-50) 0,
+    var(--illo-nitro-blue) 100%
+  );
+  border-radius: calc(var(--radius-sm) + 1px);
+  content: "";
+  inset: -1px;
+  opacity: 0.8;
+  position: absolute;
+  z-index: -1;
+}
 .tier0__6df1a.pillMargin__6df1a {
   margin-top: var(--space-24);
 }
@@ -52477,6 +52495,22 @@ svg.radioIcon_c1e9c4 {
   .tier2CardOrder__6df1a {
     order: 0;
   }
+}
+.cardTitle__6df1a {
+  font-size: 32px;
+  font-style: italic;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+.betaPill__6df1a,
+.cardTitle__6df1a {
+  margin-bottom: 8px;
+}
+.cardHeader__6df1a {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .root_e4ef5c {
   display: flex;
@@ -102283,4 +102317,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.a82cb76a42749ad6.css.map*/
+/*# sourceMappingURL=12633.ab93b545097357a1.css.map*/
