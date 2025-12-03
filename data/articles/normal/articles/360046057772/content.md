@@ -1,38 +1,41 @@
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
   <ul>
-    <li style="list-style-type: none">
-      <ul>
-        <li>
-          <strong
-            ><a href="#h_01K640AM1QZAXZ8H7P8Y58MEAM">What is a Bug?</a></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01K640AM1R2FBHC54GQQA58TFT"
-              >How do I Report a Bug?</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01K640AM1RCFQFREHSFKQRDNFC"
-              >What is Discord Testers?</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01GB8VR2A607B1TXP5CX4MF7CF"
-              >Discord Testers FAQ</a
-            ></strong
-          >
-        </li>
-      </ul>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e2248cf5342de0afb67a34fbd2d462c70"
+    >
+      <a href="#h_01K640AM1QZAXZ8H7P8Y58MEAM"
+        ><strong>What is a Bug?</strong></a
+      >
+    </li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e0c1a21cd00a836439405a12310ed9c5f"
+    >
+      <a href="#h_01K640AM1R2FBHC54GQQA58TFT"
+        ><strong>How do I Report a Bug?</strong></a
+      >
+    </li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="eee468a256e71cfd016cd266d0df1270a"
+    >
+      <a href="#h_01K640AM1RCFQFREHSFKQRDNFC"
+        ><strong>What is Discord Testers?</strong></a
+      >
+    </li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e5cf7228f931414b46a6c80fc14291136"
+    >
+      <a href="#h_01GB8VR2A607B1TXP5CX4MF7CF"
+        ><strong>Discord Testers FAQ</strong></a
+      >
     </li>
   </ul>
 </div>
@@ -60,12 +63,24 @@
 </p>
 <p>The most helpful bug reports include:</p>
 <ul>
-  <li>A concise description of the bug, generally one sentence  </li>
-  <li>Simple step by step direction on how to make the bug occur</li>
-  <li>Explanation of what you believe the behavior should be</li>
-  <li>What is actually happening</li>
-  <li>What version of Discord this occurs on</li>
-  <li>What device the bug occurs on</li>
+  <li data-list-item-id="e08f48db87d2a6968279460da82f9988d">
+    A concise description of the bug, generally one sentence  
+  </li>
+  <li data-list-item-id="e2bdb04aa2f2f4490f199a32135eab406">
+    Simple step by step direction on how to make the bug occur
+  </li>
+  <li data-list-item-id="e35b5804b8d95ec26d5f7f598711c69c5">
+    Explanation of what you believe the behavior should be
+  </li>
+  <li data-list-item-id="ecea38cafb57e45aaabd9f1ce63671c34">
+    What is actually happening
+  </li>
+  <li data-list-item-id="ee2a24bfffa09d08de6c3b656a9039a62">
+    What version of Discord this occurs on
+  </li>
+  <li data-list-item-id="eb2aa1741594665635ee413f7eebc5595">
+    What device the bug occurs on
+  </li>
 </ul>
 <p>
   There are some bug reports that are not currently supported. We ask that you
@@ -88,8 +103,11 @@
 </p>
 <h1 id="h_01K640AM1RCFQFREHSFKQRDNFC">What is Discord Testers?</h1>
 <div class="warn-box">
-  <strong>Important:</strong> We’re excited to announce that the opportunity to
-  be considered for the Discord Testers server will be available soon!
+  <strong>Important:</strong>
+  <span style="color: #434343"
+    >We’re excited to announce that the opportunity to be considered for the
+    Discord Testers server is currently available for a limited time! </span
+  >
 </div>
 <p>
   <strong>Discord Testers</strong> (also known as DTesters) is an official,
@@ -97,21 +115,42 @@
   identify, reproduce, and provide high-quality bug reports. 
 </p>
 <p>
-  Great news for aspiring Discord Testers! We expect to be opening up the
-  Discord Testers Consideration Quiz for a limited time before the end of 2025,
-  in preparation to add new members to the community in 2026.  Want to maximize
-  your chances of success? We've got you covered! Here are some valuable tips to
-  help you prepare and shine on the quiz:
+  Great news for aspiring Discord Testers! The Discord Testers Consideration
+  Quiz is currently open for a limited time, in preparation to add new members
+  to the community in 2026. Want to maximize your chances of success? We've got
+  you covered! Here are some valuable tips to help you prepare and shine on the
+  quiz:
 </p>
 <ul>
-  <li>Make sure to follow the quiz directions carefully</li>
-  <li>Become familiar with Discord and it’s features</li>
-  <li>Utilize Discord support articles in the Help Center</li>
+  <li data-list-item-id="ec2b3ebeddf04944b0e04bda839ec820d">
+    Make sure to follow the quiz directions carefully
+  </li>
+  <li data-list-item-id="e8346b778aae50158941a52e268ba83d5">
+    Become familiar with Discord and it’s features
+  </li>
+  <li data-list-item-id="eae05baf61f322429741f6391a2c9386a">
+    Utilize Discord support articles in the Help Center
+  </li>
 </ul>
 <p>
-  When the opportunity arises, it will be announced here, and a link to the
-  Discord Testers Consideration Quiz will be available on this article.
+  The Discord Testers Consideration Quiz will be available until December 12th.
+  Find the quiz here:
+  <a
+    href="https://forms.gle/dhjEejTdQMbWKang8"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline"
+      >https://forms.gle/dhjEejTdQMbWKang8</span
+    ></a
+  > 
 </p>
+<p>
+  What happens next? We expect a high volume of applications and will need time
+  to review them. We'll contact top performers in early 2026. Due to the number
+  of applicants, we won't be able to reply to everyone individually, but we'll
+  update this post once all invitations have been sent.
+</p>
+<p>Thanks for your interest and patience!</p>
 <h2 id="h_01GB8VR2A607B1TXP5CX4MF7CF">
   <span style="font-weight: 400">Discord Tester FAQ</span>
 </h2>
