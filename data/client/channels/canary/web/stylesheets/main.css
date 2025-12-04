@@ -13990,6 +13990,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   position: relative;
 }
 .volumeButton__2d263 {
+  cursor: pointer;
   line-height: 0;
 }
 .volumeButtonSlider__2d263 {
@@ -103251,4 +103252,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.ff9932b8c5bc63fd.css.map*/
+/*# sourceMappingURL=12633.a69e28a3aed581cd.css.map*/
