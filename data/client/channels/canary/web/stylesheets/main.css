@@ -61096,26 +61096,29 @@ html .progress__61462 {
   z-index: 1;
 }
 .container_b7f4b4 {
-  flex: 0 0 auto;
+  display: flex;
   flex-direction: row;
-  height: 440px;
-  width: 500px;
+  height: 100vh;
+  min-height: 1px;
+  -webkit-padding-start: var(--space-24);
+  padding-inline-start: var(--space-24);
+}
+.spacer_b7f4b4 {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-top: var(--custom-modal-padding-md);
 }
 .scroller_b7f4b4 {
-  background: var(--background-mod-subtle);
-  border-end-start-radius: var(--radius-sm);
-  border-start-start-radius: var(--radius-sm);
   flex: 0 0 auto;
-  padding: 8px;
   width: 90px;
+  -webkit-border-end: 1px solid var(--border-subtle);
+  border-inline-end: 1px solid var(--border-subtle);
+  margin-top: var(--custom-modal-padding-md);
 }
 .reactorsContainer_b7f4b4 {
   display: flex;
   flex-direction: column;
-}
-.reactors_b7f4b4 {
-  flex: 1;
-  width: 410px;
+  flex-grow: 1;
+  min-width: 1px;
 }
 .reactionDefault_b7f4b4,
 .reactionSelected_b7f4b4 {
@@ -61165,32 +61168,31 @@ html .progress__61462 {
   width: 32px;
 }
 .spinner_b7f4b4 {
-  height: 440px;
-  width: 100%;
-}
-.spinnerMore_b7f4b4 {
-  height: 44px;
+  height: 52px;
   width: 100%;
 }
 .reactor_b7f4b4 {
   box-sizing: border-box;
-  height: 44px;
-  margin-inline: 10px 2px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  height: 52px;
+  margin-inline: 12px 2px;
   white-space: nowrap;
 }
-.reactorDefault_b7f4b4,
-.reactorFinal_b7f4b4 {
+.name_b7f4b4,
+.reactor_b7f4b4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .name_b7f4b4 {
   display: flex;
   flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
+}
+.ellipsized_b7f4b4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .nickname_b7f4b4 {
   line-height: 17px;
@@ -61199,6 +61201,7 @@ html .progress__61462 {
   font-weight: var(--font-weight-medium);
 }
 .tagFaded_b7f4b4 {
+  flex-shrink: 10;
   -webkit-padding-start: 6px;
   opacity: 0.6;
   padding-inline-start: 6px;
@@ -61207,30 +61210,25 @@ html .progress__61462 {
   color: var(--text-muted);
 }
 .remove_b7f4b4 {
-  border-radius: 3px;
-  color: var(--icon-secondary);
-  cursor: pointer;
-  display: none;
-  font-size: 16px;
-  opacity: 1;
-  padding: 3px;
+  opacity: 0;
 }
-.remove_b7f4b4:hover {
-  color: var(--icon-primary);
+.remove_b7f4b4:focus-within {
   opacity: 1;
 }
 .reactor_b7f4b4:hover .remove_b7f4b4 {
-  display: inline-block;
+  opacity: 1;
 }
-.container_b7f4b4,
 .reactors_b7f4b4 {
-  background-color: var(--modal-background);
+  --custom-list-scrollbar-top-padding: 12px;
   border-radius: var(--radius-sm);
+  flex: 1;
+  -webkit-padding-end: var(--space-24);
+  padding-inline-end: var(--space-24);
+  padding-top: var(--custom-list-scrollbar-top-padding);
 }
-.scroller_b7f4b4 {
-  background: var(--background-base-lower);
-  border-end-start-radius: 4px;
-  border-start-start-radius: 4px;
+.reactors_b7f4b4::-webkit-scrollbar-thumb,
+.reactors_b7f4b4::-webkit-scrollbar-track {
+  margin-top: var(--custom-list-scrollbar-top-padding);
 }
 .reactionSelected_b7f4b4 {
   background-color: var(--background-mod-normal);
@@ -61240,27 +61238,6 @@ html .progress__61462 {
 }
 .reactionDefault_b7f4b4:hover {
   background-color: var(--background-modifier-hover);
-}
-.theme-dark .remove_b7f4b4:hover {
-  background-color: hsl(var(--primary-300-hsl) / 0.1);
-}
-.theme-dark .reactorDefault_b7f4b4 {
-  box-shadow: inset 0 -1px 0 hsl(var(--primary-500-hsl) / 0.3);
-}
-.theme-light .remove_b7f4b4:hover {
-  background-color: hsl(var(--primary-400-hsl) / 0.1);
-}
-.theme-light .reactorDefault_b7f4b4 {
-  box-shadow: inset 0 -1px 0 hsl(var(--primary-300-hsl) / 0.3);
-}
-.reactionSeparator_b7f4b4 {
-  background-color: var(--border-subtle);
-  border: none;
-  display: inline-block;
-  height: 1px;
-  margin-bottom: 4px;
-  margin-top: 4px;
-  width: 100%;
 }
 .effect__263e4 {
   margin-bottom: -2px;
@@ -103386,4 +103363,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.b6c27a17eada3883.css.map*/
+/*# sourceMappingURL=12633.1b756e27f4dcd06c.css.map*/
