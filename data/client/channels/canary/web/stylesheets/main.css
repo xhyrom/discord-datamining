@@ -601,13 +601,54 @@
 .defaultColor__5345c {
   color: var(--header-primary);
 }
+:root {
+  --expand-structural-duration: 100ms;
+  --expand-fade-duration: 200ms;
+  --expand-easing-function: ease-out;
+  --collapse-structural-duration: 150ms;
+  --collapse-fade-duration: 150ms;
+  --collapse-easing-function: ease-in;
+}
 .container__35859 {
   border-radius: var(--radius-sm);
   box-sizing: border-box;
-  display: flex;
+  display: grid;
   font-weight: 500;
+  grid-template-rows: 1fr;
   padding: 8px;
+  transition-duration: var(--expand-structural-duration);
+  transition-property: grid-template-rows, padding-bottom, padding-top,
+    border-width;
+  transition-timing-function: var(--expand-easing-function);
   width: 100%;
+}
+.container__35859.hidden__35859 {
+  border-width: 0;
+  grid-template-rows: 0fr;
+  padding-bottom: 0;
+  padding-top: 0;
+  transition-delay: var(--collapse-fade-duration);
+  transition-duration: var(--collapse-structural-duration);
+  transition-property: grid-template-rows, padding-bottom, padding-top,
+    border-width;
+  transition-timing-function: var(--collapse-easing-function);
+}
+.innerContainer__35859 {
+  display: flex;
+  min-height: 0;
+  opacity: 1;
+  overflow: hidden;
+  transition-delay: var(--expand-structural-duration);
+  transition-duration: var(--expand-fade-duration);
+  transition-property: opacity;
+  transition-timing-function: var(--expand-easing-function);
+}
+.container__35859.hidden__35859 .innerContainer__35859 {
+  opacity: 0;
+  transition-delay: 0s;
+  transition-duration: var(--collapse-fade-duration);
+  transition-property: opacity;
+  transition-timing-function: var(--collapse-easing-function);
 }
 .icon__35859 {
   flex-shrink: 0;
@@ -2061,6 +2102,16 @@
   flex-shrink: 0;
   padding: var(--custom-modal-padding-md) var(--custom-modal-padding)
     var(--custom-modal-padding-sm);
+  transition-duration: var(--expand-structural-duration);
+  transition-property: padding;
+  transition-timing-function: var(--expand-easing-function);
+}
+.sectionHidden__8a031 {
+  overflow: hidden;
+  padding: 0 var(--custom-modal-padding) 0;
+  transition-delay: var(--collapse-fade-duration);
+  transition-duration: var(--collapse-structural-duration);
+  transition-timing-function: var(--collapse-easing-function);
 }
 .header__8a031 {
   position: relative;
@@ -103335,4 +103386,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.334b915939361846.css.map*/
+/*# sourceMappingURL=12633.b6c27a17eada3883.css.map*/
