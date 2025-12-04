@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8322441002](https://discord.com/jobs/8322441002)
 
-**Updated At:** Thu, 04 Dec 2025 17:22:17 GMT
+**Updated At:** Thu, 04 Dec 2025 17:50:06 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Working at Discord is like working with an exciting, motivated, and talented community. Coming to work every day is like a family reunion, except you actually want to be there. Finding the right people to add to this unique mix is a difficult endeavor. We're looking for somebody to join our talent team and help us maintain a smooth and positive experience for remarkable candidates.
@@ -48,4 +48,5 @@ Please see our Applicant and Candidate Privacy Policy for details regarding Disc
 
 **Offices:**
 - Remote (U.S.)
+- San Francisco, CA in San Francisco, California, United States
     
