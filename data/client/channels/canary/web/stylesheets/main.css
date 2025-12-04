@@ -73674,9 +73674,9 @@ div.nagbar_d74ef8 {
   background-color: var(--background-mod-faint);
   border-radius: var(--radius-sm);
   display: flex;
-  height: 40px;
+  height: 48px;
   justify-content: center;
-  width: 40px;
+  width: 48px;
 }
 .triggerButton__64c86 {
   all: unset;
@@ -73802,6 +73802,10 @@ div.nagbar_d74ef8 {
   padding: var(--space-16);
   position: absolute;
   z-index: 2;
+}
+.title__28f6b {
+  margin-inline: var(--space-12);
+  margin-bottom: var(--space-4);
 }
 .split__678d3 {
   align-items: start;
@@ -103331,4 +103335,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.a969b7a57a66dfc3.css.map*/
+/*# sourceMappingURL=12633.334b915939361846.css.map*/
