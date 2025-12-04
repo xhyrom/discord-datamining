@@ -44,29 +44,44 @@
     >
   </p>
   <ul>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e594b9151ba55a1e8e1b398339ed99a46"
+    >
       <a href="#h_01K0FX0JKDCJ8NS9FZSEP4CQE0"
         ><strong>Privacy-Forward Age Verification</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e1b59ab19ee427d94643ba7309971609f"
+    >
       <a href="#h_01K0FX0JKJG6BHXBJ3BZGDB5FC"
         ><strong>Default Safety Settings</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="eb1e77654173372a28347ef0b2422a70e"
+        >
           <a href="#h_01K0FX0JKKY7P5B5NCJ2AQ1N24"
             ><strong>Content Default Settings Changes</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e2a65910b639f0b1662569c9642f1916e"
+        >
           <a href="#h_01K0FX0JKPNKP0TTDAM2KSFC1B"
             ><strong>Social Default Settings Changes</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e192585ae5bfb188923fcfc030430a041"
+    >
       <a href="#h_01K0FX0JKT59GVYYQ1NSVT1DRQ"
         ><strong>Frequently Asked Questions</strong></a
       >
@@ -84,23 +99,23 @@
   is the backbone of this new experience for all new and existing UK users.  
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ea5919d028ebc068c615f9c4dbde617d2">
     <strong>Privacy-protecting process. </strong>Discord and k-ID do not
     permanently store personal identity documents or your video selfies. Images
     of your identity documents and ID match selfies are deleted directly after
     your age group is confirmed, and the video selfie used for facial age
     estimation never leaves your device.
   </li>
-  <li>
+  <li data-list-item-id="ea34920cf8d8e32b2a1f727df12a6af92">
     <strong>Verify once.</strong> After completing verification, your Discord
     experience is tailored to your verified age group, and you won't be prompted
     again.
   </li>
-  <li>
+  <li data-list-item-id="e79dc1013fd81fd1d6952057e16868449">
     <strong>You can always re-verify. </strong>If you believe you’ve been
     incorrectly verified into the teen age group, you can attempt to re-verify.
   </li>
-  <li>
+  <li data-list-item-id="e9404a93a9b3059c2310ef7a638cc6628">
     <strong>Visible only to you.</strong> Other users can’t see your
     verification status or verified age group. That information is private to
     you.
@@ -111,7 +126,7 @@
   verify if you attempt to:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e2ae7b622113299ef2a70f3386943debd">
     Unblur sensitive content flagged by our
     <a
       href="https://support.discord.com/hc/articles/18210995019671/"
@@ -120,7 +135,7 @@
       ><span class="wysiwyg-underline">Sensitive Content Filter</span></a
     >.
   </li>
-  <li>
+  <li data-list-item-id="e7a66203bc314b9f1ac28e909da536be4">
     Change any of the default
     <a
       href="https://support.discord.com/hc/articles/18210995019671/"
@@ -133,7 +148,7 @@
     to “<strong>Show</strong>” sensitive content that’s blurred by the Sensitive
     Content Filter.
   </li>
-  <li>
+  <li data-list-item-id="eea32cfe93abb4c55e28da3cf0ce2ae02">
     Turn off
     <a
       href="https://support.discord.com/hc/en-us/articles/7924992471191-Message-Requests"
@@ -143,7 +158,7 @@
     >they are enabled by default to help you screen out unwanted DMs from your
     DM list).
   </li>
-  <li>
+  <li data-list-item-id="ee57fea087f053ecc8a0ae70a5d651877">
     Access
     <a
       href="https://support.discord.com/hc/en-us/articles/115000084051-Age-Restricted-Channels-and-Content"
@@ -172,7 +187,7 @@
 </p>
 <h2 id="h_01K0FX0JKKY7P5B5NCJ2AQ1N24">Content Default Settings Changes</h2>
 <ul>
-  <li>
+  <li data-list-item-id="e19e2a9952a9c36e1c2d7cd4dd41cf3ef">
     Like before, the
     <a
       href="https://support.discord.com/hc/en-us/articles/18210995019671-Discord-Sensitive-Content-Filters"
@@ -191,8 +206,8 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/333; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/333; width: 100%"
     src="https://support.discord.com/hc/article_attachments/33573773306391"
     width="624"
     height="333"
@@ -204,18 +219,18 @@
   >
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="e41acbae607a1fd23a47b887ce9903f8a">
     <strong>Unblurring content flagged by our content filters</strong> will
     require age verification.
   </li>
-  <li>
+  <li data-list-item-id="e041607dff8067609ea9edbe89cfe23cd">
     <strong>Attempting to enter an age-restricted (18+) channel </strong>will
     require age verification.
   </li>
 </ul>
 <h2 id="h_01K0FX0JKPNKP0TTDAM2KSFC1B">Social Default Settings Changes</h2>
 <ul>
-  <li>
+  <li data-list-item-id="e8da71210948af66e61b27f8f1eb19b68">
     <strong>Message Requests</strong> are enabled by default to help you screen
     out unwanted DMs from your DM list. Turning off Message Requests will
     require age verification.
@@ -223,8 +238,8 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/315; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/315; width: 100%"
     src="https://support.discord.com/hc/article_attachments/33573758782359"
     width="624"
     height="315"
@@ -237,7 +252,7 @@
   >
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="ed9501d2ea70d283d4514f0c31697644a">
     <strong>Your activity status </strong>by default will not be shared to large
     servers with 200+ members. You can update this setting at any time — age
     verification is not required to do so.
@@ -248,8 +263,8 @@
     ><strong
       ><span class="wysiwyg-underline"
         ><img
-          style="aspect-ratio: 624/329; width: 100%"
           class="wysiwyg-image-resized"
+          style="aspect-ratio: 624/329; width: 100%"
           src="https://support.discord.com/hc/article_attachments/33573758783127"
           width="624"
           height="329" /></span></strong
@@ -262,7 +277,7 @@
   >
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="e922ed03b47956f292089968e10ae7446">
     <strong
       >You will be alerted before accepting a friend request from an unfamiliar
       user. You will receive the alert</strong
@@ -278,8 +293,8 @@
     ><strong
       ><span class="wysiwyg-underline"
         ><img
-          style="aspect-ratio: 624/331; width: 100%"
           class="wysiwyg-image-resized"
+          style="aspect-ratio: 624/331; width: 100%"
           src="https://support.discord.com/hc/article_attachments/33573773310359"
           width="624"
           height="331" /></span></strong
@@ -311,8 +326,12 @@
 <p><strong>Q: What age verification methods are available?</strong></p>
 <p>A: There are two primary verification methods available:</p>
 <ol>
-  <li>Face Scan: Uses your device's camera to verify your age group</li>
-  <li>ID Scan: Allows you to scan an identification document</li>
+  <li data-list-item-id="e61eb507d7c5e793c2cea419a6737d9e9">
+    Face Scan: Uses your device's camera to verify your age group
+  </li>
+  <li data-list-item-id="e9b311039566057b0b9d37f068e475025">
+    ID Scan: Allows you to scan an identification document
+  </li>
 </ol>
 <p>
   You can also request a manual review with our
@@ -355,11 +374,13 @@
   A: If verification fails or shows incorrect results, you have two options:
 </p>
 <ol>
-  <li>
+  <li data-list-item-id="e5a0435d157388eb352cc250849f54724">
     Retry the verification through Discord system messages by selecting
     "<strong>Retry</strong>".
   </li>
-  <li>Request a manual review through our support system.</li>
+  <li data-list-item-id="ecb3dd75206e4bb3706ccf2956b01f121">
+    Request a manual review through our support system.
+  </li>
 </ol>
 <div class="book-box">
   For more information on handling verification issues, visit our

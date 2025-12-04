@@ -6,7 +6,7 @@
   need to verify again. 
 </p>
 <div class="exp-box">
-  <strong>Important: UK Online Safety Act Implementation<br /></strong>The age
+  <strong>Important: UK Online Safety Act Implementation</strong><br />The age
   verification features described in this article are fully available only to
   users in the United Kingdom and apply to all new and existing UK accounts.<br />To
   learn more about changes for UK users due to the UK Online Safety Act
@@ -19,64 +19,98 @@
   >.
 </div>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e574e471ee5d4560a10794db4c8ecd1f7"
+    >
       <a href="#h_01K0FTZNQP54390T6Z7FPCSPF6"
         ><strong>How to Complete Age Verification</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e705a4de69dfa47723c12693b86a9a0d1"
+        >
           <a href="#h_01K0FV1BTH7SC4GC0RERPXTB5H"
             ><strong>Step 1: Start Verification</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ef1a5990ac9ec2da435d8e2c0ffc2bef4"
+        >
           <a href="#h_01K0FV2KATHST9R5JKG8MF5GB1"
             ><strong>Step 2: Choose Your Verification Method</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e26fb06d475c7ec00c8cb484379bb5174"
+        >
           <a href="#h_01K0FV5AFM794S8HJQM8J64P9N"
             ><strong>Step 3: Confirmation</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e863c0a0bfe9d165598d5c603cbdfbf45"
+        >
           <a href="#h_01K0FV5XA6N17WJ23RRMFJMCNX"
             ><strong>If Verification Fails</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="eac22148fc4740952ab49517c79215ba2"
+    >
       <a href="#h_01K0FV7GVZZV6G4F3TX1QDKDD5"
         ><strong>How to See Your Verified Age Group</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="eddebb732fce1625f35e4798845d1d0a3"
+    >
       <a href="#h_01JQ4N9Y8E96WFDRN01KC81VTP"
         ><strong>Frequently Asked Questions</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ecb65245da633899ea75b28ea929aaccc"
+        >
           <a href="#h_01K0FVFH1KWK3TDGFXBBSDQBM0"
             ><strong>Getting Started with Age Verification</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e8c5d11c6f5faa7f91ac1dae77096d7a9"
+        >
           <a href="#h_01K0FVFWCZSB00VPNFDCXKZ1Y0"
             ><strong>Content Filtering and Age Verification</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="edf15981c6060f35b85df2a30b75a49f2"
+        >
           <a href="#h_01K0FVFWCZ5VY3BDA2FK9HKAMX"
             ><strong>Privacy and Data Security</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ea2f72fa32a2bbc142d76f0ef0f1621de"
+        >
           <a href="#h_01K0FVFWCZ2RPRVJYGYETMVVSY"
             ><strong>Troubleshooting and Support</strong></a
           >
@@ -87,11 +121,13 @@
 </div>
 <h1 id="h_01K0FTZNQP54390T6Z7FPCSPF6">How to Complete Age Verification</h1>
 <div class="info-box">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Discord and k-ID do not permanently store personal identity documents or
-    your video selfies. Images of your identity documents and ID match selfies
-    are deleted directly after your age group is confirmed, and the video selfie
-    used for facial age estimation never leaves your device.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Discord and k-ID do not permanently store personal identity documents or
+      your video selfies. Images of your identity documents and ID match selfies
+      are deleted directly after your age group is confirmed, and the video
+      selfie used for facial age estimation never leaves your device.</span
+    ></span
   >
 </div>
 <p>
@@ -111,9 +147,11 @@
     height="453"
   />
 </p>
-<h4 id="h_01JQWGJ3G5ABA5507MQD0M3RTC" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of <strong>Verify age group</strong> window</span
+<h4 class="wysiwyg-text-align-center" id="h_01JQWGJ3G5ABA5507MQD0M3RTC">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of <strong>Verify age group</strong> window</span
+    ></span
   >
 </h4>
 <h2 id="h_01K0FV2KATHST9R5JKG8MF5GB1">
@@ -129,10 +167,18 @@
   >
 </p>
 <ul>
-  <li>Select <strong>Face Scan</strong> on the verification page. </li>
-  <li>Allow access to your camera when prompted.</li>
-  <li>Follow the on-screen instructions to complete the scan. </li>
-  <li>Press <strong>Done</strong> to submit.</li>
+  <li data-list-item-id="e4e2ea985f851f107058577f5a8110b6a">
+    Select <strong>Face Scan</strong> on the verification page. 
+  </li>
+  <li data-list-item-id="e985558fbc13a7946fc1d5bfd83fc7e83">
+    Allow access to your camera when prompted.
+  </li>
+  <li data-list-item-id="ef91289d4d4500bb39f6abb5ff56bdd02">
+    Follow the on-screen instructions to complete the scan. 
+  </li>
+  <li data-list-item-id="e42bbc288ef553d454c039f94653bb9ac">
+    Press <strong>Done</strong> to submit.
+  </li>
 </ul>
 <p>
   <span class="wysiwyg-font-size-x-large"
@@ -140,29 +186,46 @@
   >
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="eac662c429954465d79d097b61eca2072">
+    <p> </p>
     <ul>
-      <li>Select <strong>Scan ID</strong> on the verification page. </li>
-      <li>Use your mobile device to scan the QR code.</li>
-      <li>
+      <li data-list-item-id="ed26da5f03da2df627714c59217f7ecb1">
+        Select <strong>Scan ID</strong> on the verification page. 
+      </li>
+      <li data-list-item-id="e684c1a6a87e0618ca7934e1c51f1b674">
+        Use your mobile device to scan the QR code.
+      </li>
+      <li data-list-item-id="e3d9cfa97f65778619bde0b6d755dde28">
         Take a clear photo of your ID following the guidelines on screen:
         <ul>
-          <li>Make sure you are in a well-lit area</li>
-          <li>Place ID on flat dark surface</li>
-          <li>Make sure all corners of the ID are visible</li>
+          <li data-list-item-id="e9bd6d43637eda23b80eb34f1e95e40d7">
+            Make sure you are in a well-lit area
+          </li>
+          <li data-list-item-id="e2869719ffa276092457b36cb2cd33c0c">
+            Place ID on flat dark surface
+          </li>
+          <li data-list-item-id="e138a1df7d0c74330a0bc1089beed2088">
+            Make sure all corners of the ID are visible
+          </li>
         </ul>
       </li>
-      <li>
+      <li data-list-item-id="ebbc17e35748017faf03bed99dc3a5e72">
         Complete selfie to match the ID document by following the guidelines on
         screen:
         <ul>
-          <li>Make sure you are in a well-lit area</li>
-          <li>Remove any headwear</li>
-          <li>Keep your glasses on</li>
+          <li data-list-item-id="e484fe0edd57ed7bdeb0b3c9fb9a25d85">
+            Make sure you are in a well-lit area
+          </li>
+          <li data-list-item-id="ec492aa9aa52074ddb035e99f9fbfd16a">
+            Remove any headwear
+          </li>
+          <li data-list-item-id="e82442a577a2205e3151c4ef174200ee7">
+            Keep your glasses on
+          </li>
         </ul>
       </li>
     </ul>
-    Press <strong>Done</strong> to submit.
+    <p>Press <strong>Done</strong> to submit.</p>
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
@@ -172,10 +235,12 @@
     height="372"
   />
 </p>
-<h4 id="h_01JQ4N6GRJ6E6KJ7JY6GVXM6EX" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    ><strong>Face </strong>Scan and <strong>Scan ID</strong> options in the
-    <strong>Age</strong> <strong>Verification</strong> window</span
+<h4 class="wysiwyg-text-align-center" id="h_01JQ4N6GRJ6E6KJ7JY6GVXM6EX">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><strong>Face </strong>Scan and <strong>Scan ID</strong> options in the
+      <strong>Age</strong> <strong>Verification</strong> window</span
+    ></span
   >
 </h4>
 <h2 id="h_01K0FV5AFM794S8HJQM8J64P9N">Step 3: Confirmation</h2>
@@ -184,12 +249,7 @@
   process and a Direct Message from
   <a
     href="https://support.discord.com/hc/en-us/articles/360036118732-Discord-Official-Messages"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Discord's official profile</span
-    ></a
+    ><span class="wysiwyg-underline">Discord's official profile</span></a
   >
   confirming your verified age group. 
 </p>
@@ -200,11 +260,13 @@
     height="342"
   />
 </p>
-<h4 id="h_01JQ4N8SR3X27YZ5PB2SJW14XS" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of <strong>direct message</strong> (<strong>DM</strong>)
-    <strong>notification</strong> from Discord confirming your age verification
-    status</span
+<h4 class="wysiwyg-text-align-center" id="h_01JQ4N8SR3X27YZ5PB2SJW14XS">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of <strong>direct message</strong> (<strong>DM</strong>)
+      <strong>notification</strong> from Discord confirming your age
+      verification status</span
+    ></span
   >
 </h4>
 <h2 id="h_01K0FV5XA6N17WJ23RRMFJMCNX">If Verification Fails</h2>
@@ -238,37 +300,46 @@
       height="786"
   /></strong>
 </p>
-<h4 id="h_01K0FVDR6P7BKB62DVF71JSTM8" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Age Group</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color=""> field in </span
-  ><strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Account Settings</span
-    ></strong
+<h4 class="wysiwyg-text-align-center" id="h_01K0FVDR6P7BKB62DVF71JSTM8">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""><strong>Age Group</strong></span
+    ><span data-darkreader-inline-color=""> field in </span
+    ><span data-darkreader-inline-color=""
+      ><strong>Account Settings</strong></span
+    ></span
   >
 </h4>
 <h1 id="h_01JQ4N9Y8E96WFDRN01KC81VTP">Frequently Asked Questions</h1>
 <p>In this FAQ section: </p>
 <ul>
-  <li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e3a88e96df1e85fed5f75be7adf2c98fd"
+  >
     <a href="#h_01K0FVFH1KWK3TDGFXBBSDQBM0"
       ><strong>Getting Started with Age Verification</strong></a
     >
   </li>
-  <li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e7d3cdaa11a7a174da2cbbab9ffa3282d"
+  >
     <a href="#h_01K0FVFWCZSB00VPNFDCXKZ1Y0"
       ><strong>Content Filtering and Age Verification</strong></a
     >
   </li>
-  <li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e1fb7568b395594aa5b04e99654a21cea"
+  >
     <a href="#h_01K0FVFWCZ5VY3BDA2FK9HKAMX"
       ><strong>Privacy and Data Security</strong></a
     >
   </li>
-  <li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="edcee0783f68050643263e318b7ca142d"
+  >
     <a href="#h_01K0FVFWCZ2RPRVJYGYETMVVSY"
       ><strong>Troubleshooting and Support</strong></a
     >
@@ -338,9 +409,15 @@
 </p>
 <p>A: Yes. Sensitive content filter settings are set by default to:</p>
 <ul>
-  <li>Direct Messages From Friends: <strong>Blur</strong></li>
-  <li>Direct Messages from Others: <strong>Block</strong></li>
-  <li>Direct Messages in Server Channels: <strong>Blur</strong></li>
+  <li data-list-item-id="e6ef1c8ebe21fc27b381911cb6340ee0d">
+    Direct Messages From Friends: <strong>Blur</strong>
+  </li>
+  <li data-list-item-id="e37aedbf1ae10fa47bf3b1e83611959d4">
+    Direct Messages from Others: <strong>Block</strong>
+  </li>
+  <li data-list-item-id="e76707266bfb1d46d050ff8872e8b89a9">
+    Direct Messages in Server Channels: <strong>Blur</strong>
+  </li>
 </ul>
 <p>
   Changing any of these to “<strong>Show</strong>” will require age
@@ -394,7 +471,7 @@
 </p>
 <p>A: You have two options:</p>
 <ol>
-  <li>
+  <li data-list-item-id="e4fe1610d0bf746b460e34e53986fa153">
     If you believe you were incorrectly verified into the teen age group, you
     may retry verification through your chat with Discord system messages where
     you can select <strong>Retry </strong>to enter the verification flow again.
@@ -402,7 +479,7 @@
     press <strong>Retry</strong> located to the right of the
     <strong>Age Group </strong>field.
   </li>
-  <li>
+  <li data-list-item-id="e452e0c6e25c71985bfa203bc401db43f">
     You can retry by opting for a <strong>manual review </strong
     ><a
       href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000029731"
@@ -425,10 +502,12 @@
     height="360"
   />
 </p>
-<h4 id="h_01K0FVFWCZY3A0TZ8SKE1MQTE4" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of <strong>DM notification</strong> from Discord confirming your
-    age verification status</span
+<h4 class="wysiwyg-text-align-center" id="h_01K0FVFWCZY3A0TZ8SKE1MQTE4">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of <strong>DM notification</strong> from Discord confirming your
+      age verification status</span
+    ></span
   >
 </h4>
 <p><strong>Q: What happens if I’m banned after age verification?</strong></p>

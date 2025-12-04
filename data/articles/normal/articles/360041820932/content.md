@@ -1,48 +1,63 @@
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >If you are over the minimum age required for your country and have been
-    locked out of the app due to an underage report, you can appeal by following
-    the instructions below.</span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >If you are over the minimum age required for your country and have been
+      locked out of the app due to an underage report, you can appeal by
+      following the instructions below.</span
+    ></span
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><span style="color: #2e3338; background-color: #ffffff"
+  <span style="background-color: #ffffff; color: #2e3338"
+    ><span data-darkreader-inline-color=""
       ><img
         src="https://support.discord.com/hc/article_attachments/28664470368919"
         width="624"
         height="332" /></span
   ></span>
 </p>
-<h4 id="h_01JFGDZACNEJSS5XC811189A3T" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JFGDZACNEJSS5XC811189A3T">
   <span style="color: #666666"
     >Example of Banned Account due to Minimum Age Requirements</span
   >
 </h4>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e6b1e286d184e08ae734b6a3a68f8e93f"
+    >
       <a href="#h_01JFGE70ZKFMH45WD5C3KYSQ4N"
         ><strong>How to Verify Your Age to Unlock Your Account</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="eddc33c2f180ba3ff06be625c0d909f7d"
+        >
           <a href="#h_01JFGEDJSB8FYFQW9Q22ZVW0BQ"
             ><strong>Unlock Your Account with Automatic Age Check</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e5b9de2712cb9666327ff301e995fef0e"
+        >
           <a href="#h_01JFGEKCPV8EYV2AY0KAE6DS93"
             ><strong>Unlock Your Account with Photo ID</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="eeb6621cd7b88fbc1acf4665b2c375adf"
+    >
       <a href="#h_01JFGEWWVRA7ZD4HVBAJJ9B182"
         ><strong>Frequently Asked Questions</strong></a
       >
@@ -58,56 +73,62 @@
 </p>
 <h2 id="h_01JFGEDJSB8FYFQW9Q22ZVW0BQ">Unlock Your Account with Photo ID </h2>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color="">1.  </span
-  ><span style="color: #2e3338" data-darkreader-inline-color=""
-    >Take a photo of yourself that includes yourself holding the following
-    items:</span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color="">1.  </span
+    ><span data-darkreader-inline-color=""
+      >Take a photo of yourself that includes yourself holding the following
+      items:</span
+    ></span
   >
 </p>
 <ul>
-  <li>
-    <span style="color: #2e3338; background-color: #ffffff">A </span
-    ><strong><span style="background-color: #ffffff">photo ID</span></strong
-    ><span style="color: #2e3338; background-color: #ffffff">
+  <li data-list-item-id="e12bd28ce83b38d068b7f44f381c86a15">
+    <span style="background-color: #ffffff; color: #2e3338">A </span
+    ><span style="background-color: #ffffff"><strong>photo ID</strong></span
+    ><span style="background-color: #ffffff; color: #2e3338">
       showing your date of birth</span
     >
   </li>
-  <li>
-    <span style="color: #2e3338; background-color: #ffffff"
+  <li data-list-item-id="e2942f530ab6c240e3ce3a94315eb2113">
+    <span style="background-color: #ffffff; color: #2e3338"
       >A piece of paper with your </span
-    ><span style="background-color: #ffffff">full </span
-    ><strong
-      ><span style="background-color: #ffffff">Discord Username</span></strong
+    ><span style="background-color: #ffffff"
+      >full <strong>Discord Username</strong></span
     >
-    <em
-      ><span style="color: #2e3338; background-color: #ffffff"
-        >(ex: Wumpus)</span
-      ></em
+    <span style="background-color: #ffffff; color: #2e3338"
+      ><em>(ex: Wumpus)</em></span
     >
   </li>
 </ul>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color="">2. </span
-  ><span style="color: #2e3338" data-darkreader-inline-color=""
-    >Submit your photo to our Trust &amp; Safety team at:
-    <a href="https://dis.gd/request" target="_blank" rel="noopener noreferrer"
-      >https://dis.gd/request</a
-    >. Select <strong>Appeals &amp; Age Update Requests</strong> under the
-    <strong>What can we help you with?</strong> option. Fill out the form
-    completely before submitting your request to help our Trust &amp; Safety
-    team assist you more effectively.</span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color="">2. </span
+    ><span data-darkreader-inline-color=""
+      >Submit your photo to our Trust &amp; Safety team at:
+    </span></span
+  ><a href="https://dis.gd/request" target="_blank" rel="noopener noreferrer"
+    ><span style="color: #2e3338"
+      ><span data-darkreader-inline-color="">https://dis.gd/request</span></span
+    ></a
+  ><span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >. Select <strong>Appeals &amp; Age Update Requests</strong> under the
+      <strong>What can we help you with?</strong> option. Fill out the form
+      completely before submitting your request to help our Trust &amp; Safety
+      team assist you more effectively.</span
+    ></span
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><span style="color: #2e3338; background-color: #ffffff"
+  <span style="background-color: #ffffff; color: #2e3338"
+    ><span data-darkreader-inline-color=""
       ><img
         src="https://support.discord.com/hc/article_attachments/28664470372887"
         width="469"
         height="355" /></span
   ></span>
 </p>
-<h4 id="h_01JFGEHP0A8K5X3J99R9KVHJQS" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JFGEHP0A8K5X3J99R9KVHJQS">
   <span style="color: #666666"
     >Example of Submitting a Request for Age Verification</span
   >
@@ -142,16 +163,16 @@
   />
 </p>
 <h4
+  class="wysiwyg-text-align-center info-box"
   id="h_01JFGEQK0YCCXSF6WPKNAN8SV6"
-  class="info-box wysiwyg-text-align-center"
 >
   <span style="color: #666666">“Minimum Age Requirements” Violation Card</span>
 </h4>
 <p>
   <span style="color: #666666"
     >4. Press the <strong>Let us know</strong> button to start the appeal
-    process.<br
-  /></span>
+    process.</span
+  ><br /> 
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #666666"
@@ -161,7 +182,7 @@
       height="436"
   /></span>
 </p>
-<h4 id="h_01JFGERXGDRRXT5MD3Q32E23ZQ" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JFGERXGDRRXT5MD3Q32E23ZQ">
   <span style="color: #666666">“Let Us Know” Button</span>
 </h4>
 <p>
@@ -171,14 +192,14 @@
   >
 </p>
 <p class="wysiwyg-indent1">
-  <span style="color: #666666"
-    >a. We partner with
-    <a href="https://www.k-id.com/" target="_blank" rel="noopener noreferrer"
-      >k-ID</a
-    >
+  <span style="color: #666666">a. We partner with </span
+  ><a href="https://www.k-id.com/" target="_blank" rel="noopener noreferrer"
+    ><span style="color: #666666">k-ID</span></a
+  ><span style="color: #666666">
     for the age verification processing. Neither Discord nor its vendor keeps
-    the facial scans submitted during the age verification process.<br />b. The
-    age check results typically process within seconds.</span
+    the facial scans submitted during the age verification process.</span
+  ><br /><span style="color: #666666"
+    >b. The age check results typically process within seconds.</span
   >
 </p>
 <p>
@@ -189,12 +210,12 @@
   >
 </p>
 <p class="wysiwyg-indent1">
-  <span style="color: #666666"
-    >a. You can now log back into your account.<br />b. Your full access will be
-    restored.</span
+  <span style="color: #666666">a. You can now log back into your account.</span
+  ><br /><span style="color: #666666"
+    >b. Your full access will be restored.</span
   >
 </p>
-<p class="wysiwyg-indent1 wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center wysiwyg-indent1">
   <span style="color: #666666"
     ><img
       src="https://support.discord.com/hc/article_attachments/28664455935511"
@@ -202,7 +223,7 @@
       height="368"
   /></span>
 </p>
-<h4 id="h_01JFGEWFCN6CFE63PSC9C3QMVT" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JFGEWFCN6CFE63PSC9C3QMVT">
   <span style="color: #666666">Age Check Complete Notification</span>
 </h4>
 <h1 id="h_01JFGEWWVRA7ZD4HVBAJJ9B182">Frequently Asked Questions</h1>
