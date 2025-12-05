@@ -1,7 +1,7 @@
 <div class="warn-box">
   <strong>Important:</strong> The old permissions (Manage Messages, Manage
   Channel, and Manage Threads) will continue to bypass Slowmode until February
-  23, 2025. Server admins can migrate to the new permission now by going to
+  23, 2026. Server admins can migrate to the new permission now by going to
   <strong>Server Settings</strong> &gt; <strong>Roles</strong> to update their
   role settings before this deadline.
 </div>
