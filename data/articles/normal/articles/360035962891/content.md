@@ -19,81 +19,78 @@
 </p>
 <p>
   <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong>
-  </span>
+    ><strong>What this article covers:</strong></span
+  >
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e17eb134b8773f103b9af4d6e4174016f">
     <a href="#h_01GM67J1C84KT7YPDK0GP3M2PC" target="_self"
       >Common Profile Badges</a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e28bf83c4c26f7798bd2fe9f541e933e3">
         <a href="#h_01GM67J796MR95BNQZJRWZ7M34" target="_self"
           >Discord Nitro Badge</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e9953e42857f6fcf4021bb1e5c4c064bd">
         <a href="#h_01GM67JCR4414HZK1NBA6TH0GA" target="_self"
           >Server Booster Badge</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e10c0fd7bc4a1638fb3cdaf4b188d77fc">
         <a href="#h_01GM67JJ4M3FD4FR71E69MND1S" target="_self"
           >HypeSquad House Badges</a
         >
       </li>
     </ul>
   </li>
-  <li>
-    <a href="#h_01GM67JVQ0MCMWA9MFD9FVF9F6" target="_self">Rare Badges</a><br />
+  <li data-list-item-id="e16ebb52789a4b12d7b41c060567052e0">
+    <a href="#h_01GM67JVQ0MCMWA9MFD9FVF9F6" target="_self">Rare Badges</a>
     <ul>
-      <li>
+      <li data-list-item-id="e2e0ef4b23ee6850168e0a2af94972fc0">
         <a href="#h_01GM67KDR7R5H2J7E6R2KMBKMG" target="_self"
           >Bug Hunter Badge</a
         >
       </li>
-      <li>
-        <a href="#h_01GM67KMVMM4PVVWVWCFZKQYV8" target="_self"
-          >Active Developer Badge</a
-        >
+      <li data-list-item-id="e35ef8f83f3b67e348f198ba4e8f36d66">
+        <a href="#01HWDTKCYQ51461S8YEZ2XJFBN">Discord Quests Badge</a>
       </li>
-      <li><a href="#01HWDTKCYQ51461S8YEZ2XJFBN">Discord Quests Badge</a></li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="e80c9f8644c19257e4da674c1f99f134c">
     <a href="#h_01GM67MDR37JXG1VQWPGH60N59" target="_self">Mythic Badge</a>
     <ul>
-      <li>
+      <li data-list-item-id="e599156dae0f14e93dd95fe51f93a415b">
         <a href="#h_01GM67MNYEVR6445C38JC4V3DS" target="_self"
           >Discord Staff Badge</a
         >
       </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="e92296664afa47cd1b6cc6ad09b827b1d">
     <a href="#h_01GM67MVZKEMD2HPM30YEQ7SER" target="_self">Legacy Badges</a>
     <ul>
-      <li>
+      <li data-list-item-id="e35923610d909b9044351327a62243aca">
         <a href="#h_01GM67K5EJ16ZHYZQ5MPRW3JT3">HypeSquad Events Badge</a>
       </li>
-      <li>
+      <li data-list-item-id="e38e478f316dbe53da1c09b3eb094bd8f">
         <a href="#h_01GM67N1ZDEHN3M496072Z1QZD" target="_self"
           >Moderator Program Alumni Badge</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e655467bd97427b2cfa7079ebd7ffdffd">
         <a href="#h_01GM67N878RGKPHPB525K0GF4C" target="_self"
           >Early Supporter Badge</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e21ca5e8f5e7997d8890af0ac609d7b27">
         <a href="#h_01HNZPM3VGJHJHG24F6KG7TVGV">Partnered Server Owner Badge</a>
       </li>
     </ul>
   </li>
 </ul>
-<h1 id="h_01GM67J1C84KT7YPDK0GP3M2PC" class="wysiwyg-text-align-left">
+<h1 class="wysiwyg-text-align-left" id="h_01GM67J1C84KT7YPDK0GP3M2PC">
   <strong>Common Profile Badges</strong>
 </h1>
 <h2 id="h_01GM67J796MR95BNQZJRWZ7M34"><strong>Discord Nitro Badge</strong></h2>
@@ -159,9 +156,9 @@
   evolve and the design will change over time. 
 </p>
 <div class="info-box">
-  <strong>Note:</strong> <br />- If you stop boosting servers, or you are no
+  <strong>Note:</strong> <br />- If you stop boosting servers, or you are no
   longer boosting any servers at any time, your boosting streak and badge will
-  reset to the first level! <br />- If you have multiple boosted servers, the
+  reset to the first level! <br />- If you have multiple boosted servers, the
   badge will always be whichever is your longest Server Boost streak (or the
   longest milestone of time achieved for your Server Boost).
 </div>
@@ -184,7 +181,7 @@
 <h2 id="h_01GM67JJ4M3FD4FR71E69MND1S">
   <strong>HypeSquad House Badges  </strong>
 </h2>
-<p id="h_01HHJ38E13QFP87JEZFZ4JH020" class="wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center" id="h_01HHJ38E13QFP87JEZFZ4JH020">
   <strong
     ><img
       src="https://support.discord.com/hc/article_attachments/19813392718615"
@@ -239,7 +236,7 @@
     >here</a
   >. 
 </p>
-<h1 id="h_01GM67JVQ0MCMWA9MFD9FVF9F6" class="wysiwyg-text-align-left">
+<h1 class="wysiwyg-text-align-left" id="h_01GM67JVQ0MCMWA9MFD9FVF9F6">
   <strong>Rare Badges</strong>
 </h1>
 <h2 id="h_01GM67KDR7R5H2J7E6R2KMBKMG"><strong>Bug Hunter Badge</strong></h2>
@@ -251,19 +248,19 @@
   /></strong>
 </p>
 <p>
-  A mastermind of QA testing and detective work, the <strong>Bug Hunter </strong
-  ><strong>badge</strong> is awarded to the most hard-working of those in the
-  Bug Hunter community. There’s even a <strong>Golden Bug Hunter </strong
-  ><strong>badge</strong> for those who reach the highest hunter level by going
-  above and beyond!
+  A mastermind of QA testing and detective work, the
+  <strong>Bug Hunter badge</strong> is awarded to the most hard-working of those
+  in the Bug Hunter community. There’s even a
+  <strong>Golden Bug Hunter badge</strong> for those who reach the highest
+  hunter level by going above and beyond!
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/23085044393111"
-      alt="image12.png"
-    />
-  </span>
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/23085044393111"
+        alt="image12.png" /></span
+  ></span>
 </p>
 <p>
   Those interested in earning this badge will have to actively participate in
@@ -282,34 +279,6 @@
     rel="noopener noreferrer"
     >here</a
   >. 
-</p>
-<h2 id="h_01GM67KMVMM4PVVWVWCFZKQYV8">
-  <strong>Active Developer Badge</strong>
-</h2>
-<p class="wysiwyg-text-align-center">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/23085044398231"
-      alt="image16.png"
-  /></strong>
-</p>
-<p>
-  Those delightful apps in your server were crafted with love by our incredible
-  developer community. They may be helping you and your server automate tasks,
-  play games, get to know each other better, or create your most treasured
-  memes. App developers who are actively bringing more joy to your Discord
-  experience may have an <strong>Active Developer badge</strong> on their
-  profiles. 
-</p>
-<p>
-  If you're an active app developer on Discord, find out more on how you can
-  grab your badge
-  <a
-    href="https://support-dev.discord.com/hc/en-us/articles/10113997751447"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
 </p>
 <h2 id="01HWDTKCYQ51461S8YEZ2XJFBN"><strong>Discord Quests Badge</strong></h2>
 <p class="wysiwyg-text-align-center">
@@ -338,7 +307,7 @@
   Profile. However, the team will consider this feature as a potential update in
   the future.
 </div>
-<h1 id="h_01GM67MDR37JXG1VQWPGH60N59" class="wysiwyg-text-align-left">
+<h1 class="wysiwyg-text-align-left" id="h_01GM67MDR37JXG1VQWPGH60N59">
   <strong>Mythic Badges</strong>
 </h1>
 <h2 id="h_01GM67MNYEVR6445C38JC4V3DS"><strong>Discord Staff Badge</strong></h2>
@@ -356,13 +325,13 @@
   and dreaming of when the office is going to get a soft-serve machine. (When
   are we getting that soft-serve machine, btw?)
 </p>
-<h1 id="h_01GM67MVZKEMD2HPM30YEQ7SER" class="wysiwyg-text-align-left">
+<h1 class="wysiwyg-text-align-left" id="h_01GM67MVZKEMD2HPM30YEQ7SER">
   <strong>Legacy Badges </strong>
 </h1>
 <h2 id="h_01GM67K5EJ16ZHYZQ5MPRW3JT3">
   <strong>Hypesquad Events Badge</strong>
 </h2>
-<p id="h_01HHJ38E13205SBHQQAMYFFZ2E" class="wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center" id="h_01HHJ38E13205SBHQQAMYFFZ2E">
   <strong
     ><img
       src="https://support.discord.com/hc/article_attachments/23085036475159"
@@ -444,7 +413,7 @@
 <h2 id="h_01HNZPM3VGJHJHG24F6KG7TVGV">
   <strong>Partnered Server Owner Badge</strong>
 </h2>
-<p id="h_01HNZPKQT5EE5ZY2SH7FM9Y51M" class="wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center" id="h_01HNZPKQT5EE5ZY2SH7FM9Y51M">
   <strong
     ><img
       src="https://support.discord.com/hc/article_attachments/23085036500759"
