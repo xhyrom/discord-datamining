@@ -63875,6 +63875,10 @@ html .progress__61462 {
   position: absolute;
   top: var(--space-8);
 }
+.buttonContainer_e8b59c {
+  background-color: var(--background-surface-high);
+  border-radius: var(--radius-sm);
+}
 .messageGroupWrapper_e8b59c:focus-within .actionButtons_e8b59c,
 .messageGroupWrapper_e8b59c:hover .actionButtons_e8b59c {
   display: flex;
@@ -103502,4 +103506,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.332fe6963e695797.css.map*/
+/*# sourceMappingURL=12633.f2536ef5f8fd6db1.css.map*/
