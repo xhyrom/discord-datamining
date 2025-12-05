@@ -3439,6 +3439,9 @@
             BILLING_LOCALIZED_PROMO:
               "/users/@me/billing/localized-pricing-promo",
             PREMIUM_GROUP_MEMBERSHIP: "/users/@me/premium-group/membership",
+            PREMIUM_GROUP_INVITES: "/users/@me/premium-group/invites",
+            PREMIUM_GROUP_INVITE: (e) =>
+              "/users/@me/premium-group/invites/".concat(e),
             VERIFY_PURCHASE: "/google-play/verify-purchase-token",
             DOWNGRADE_SUBSCRIPTION: "/google-play/downgrade-subscription",
             GOOGLE_PLAY_VALIDATE_PURCHASE: "/google-play/validate-purchase",
@@ -6866,7 +6869,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bbd60c6c63ed603fb4855e172a8ce860b04690a4",
+            release: "discord_web-ede1b77cf210340977fbadf7646a0ff3fc1ccdea",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6932,8 +6935,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "476295"),
-            o.YA("builtAt", String("1764954263714"));
+            o.YA("buildNumber", "476313"),
+            o.YA("builtAt", String("1764955666006"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.YA(t, e[t]);
           return _;
@@ -40372,4 +40375,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.6814afa65a448d85.js.map
+//# sourceMappingURL=sentry.c2198fd01e0e8112.js.map
