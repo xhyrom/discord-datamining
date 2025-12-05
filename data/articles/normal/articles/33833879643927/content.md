@@ -91,12 +91,6 @@
   </ul>
 </div>
 <h1 id="h_01K32B6G8X63N9WNDYHK1J6CVG">What are Display Name Styles?</h1>
-<div class="exp-box">
-  <span style="color: #434343"
-    ><strong>Important</strong>: Display Name Styles will be gradually rolled
-    out, with all Nitro members gaining access by early December. </span
-  >
-</div>
 <p>
   Display Name Styles allow Discord Nitro users to customize how their display
   names appear on Discord. With this feature, you can personalize your display
