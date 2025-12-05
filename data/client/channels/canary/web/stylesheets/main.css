@@ -73859,8 +73859,6 @@ div.nagbar_d74ef8 {
   cursor: pointer;
 }
 .panel__64c86 {
-  contain: layout;
-  container-type: inline-size;
   height: var(--disclosure-panel-height);
   overflow: clip;
 }
@@ -73936,8 +73934,6 @@ div.nagbar_d74ef8 {
   opacity: 0;
 }
 .pane__3e84f {
-  contain: layout;
-  container-type: inline-size;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -103511,4 +103507,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.3d1e72eb715d9087.css.map*/
+/*# sourceMappingURL=12633.61e599ff38e959a2.css.map*/
