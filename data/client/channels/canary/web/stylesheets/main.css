@@ -45416,7 +45416,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -51468,9 +51468,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  line-height: 1.25rem;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -52635,9 +52635,9 @@ svg.radioIcon_c1e9c4 {
   }
 }
 .cardTitle__6df1a {
-  font-size: 2rem;
+  font-size: 32px;
   font-style: italic;
-  line-height: 1.6875rem;
+  line-height: 27px;
   text-transform: uppercase;
 }
 .betaPill__6df1a,
@@ -103404,4 +103404,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.7b2ecf0a037b24d6.css.map*/
+/*# sourceMappingURL=12633.0afd8d47686630bd.css.map*/
