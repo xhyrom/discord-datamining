@@ -83,10 +83,6 @@
   />] in the top-right corner to access your Checkpoint.
 </p>
 <h2 id="h_01KAVYAE7V886N7NV5SMV75TE8">Mobile</h2>
-<div class="warn-box">
-  <strong>Important:</strong> Checkpoint has been temporarily disabled for
-  mobile. Checkpoint continues to be available on desktop and browser.
-</div>
 <p>1. Check that you have the latest version of the app. </p>
 <p>2. Tap on the <strong>You tab</strong> in the bottom-right corner.</p>
 <p>3. Press on the Checkpoint banner to view your Checkpoint.</p>
@@ -229,10 +225,5 @@
   it felt like the perfect time to give you a personalized look back at your
   year with us. Plans for Checkpoint beyond 2025 are still unfolding. Stay
   tuned! 
-</p>
-<p><strong>Q: Why is Checkpoint not showing on the mobile app? </strong></p>
-<p>
-  A: Checkpoint has been temporarily been disabled for mobile, but continues to
-  be available on desktop and browser.
 </p>
 <p><br /> </p>
