@@ -83,6 +83,10 @@
   />] in the top-right corner to access your Checkpoint.
 </p>
 <h2 id="h_01KAVYAE7V886N7NV5SMV75TE8">Mobile</h2>
+<div class="info-box">
+  <strong>Important:</strong> Checkpoint has been temporarily disabled for
+  Android. Checkpoint continues to be available on iOS, desktop and browser.
+</div>
 <p>1. Check that you have the latest version of the app. </p>
 <p>2. Tap on the <strong>You tab</strong> in the bottom-right corner.</p>
 <p>3. Press on the Checkpoint banner to view your Checkpoint.</p>
