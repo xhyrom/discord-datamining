@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 44,
+  "subdomain_count": 42,
   "subdomains": [
     "o12.ptr5556",
     "staging-invite",
@@ -35,10 +35,8 @@
     "smite-anti-abuse-prd",
     "staging",
     "us-east10002",
-    "smite-rules-api-prd",
     "updates",
     "admin",
-    "smite-rules-api-stg",
     "staging-streamkit",
     "remote-auth-gateway",
     "staging-gateway-us-east1-d",
