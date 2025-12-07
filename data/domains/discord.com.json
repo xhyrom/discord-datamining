@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 70,
+  "subdomain_count": 71,
   "subdomains": [
     "support",
     "blog",
@@ -40,6 +40,7 @@
     "o20.ptr1353",
     "www",
     "o18.ptr2300",
+    "ads",
     "snowsgiving-tale-2022-it",
     "l",
     "crawl-35-237-4-214.ptr",
@@ -59,8 +60,8 @@
     "snowsgiving-tale-2022-sv-se",
     "seo",
     "support-apps",
-    "prod-wf3",
     "rtc-sfu-finder",
+    "prod-wf3",
     "o24.ptr4166",
     "crawl-35-196-132-85.ptr",
     "updates",
