@@ -21,7 +21,7 @@
   <ul>
     <li
       class="ck-list-marker-bold"
-      data-list-item-id="e9f65c7d5ff2c512a26dfcfd9b77740d6"
+      data-list-item-id="e8b91f0ecfd696241bc453452bdfc6d1a"
     >
       <a href="#h_01JF85KBBN81QWNATTG0MMWX5F"
         ><strong>How to Purchase a Nitro Gift in Discord</strong></a
@@ -29,7 +29,7 @@
     </li>
     <li
       class="ck-list-marker-bold"
-      data-list-item-id="e6f9d69bb4d05510227889991112426bf"
+      data-list-item-id="e0327a62626d586d4bb15f56caf74d20f"
     >
       <a href="#h_01JF85HYSDTS1VC2ZHTE1ZVW6Y"
         ><strong>Discord Nitro Digital Gift Cards on Amazon.com</strong></a
@@ -37,7 +37,7 @@
     </li>
     <li
       class="ck-list-marker-bold"
-      data-list-item-id="e920fc30820bfd6fe10ff496a9f187927"
+      data-list-item-id="eb86b7225decffa8aee9de0dc80fca2e3"
     >
       <a href="#h_01JF85KZAD305B0145QSMC1B86"
         ><strong>Managing Your Nitro Gift</strong></a
@@ -45,7 +45,7 @@
     </li>
     <li
       class="ck-list-marker-bold"
-      data-list-item-id="ea7ff4fb5acb79796720666bc85f98b35"
+      data-list-item-id="e229f29ff502ca9895daaee6612c0edf6"
     >
       <a href="#h_01GCCGE3DAMHY7BX0JVY04JYSR"
         ><strong>Purchasing a Gift on Mobile</strong></a
@@ -56,6 +56,83 @@
 <h1 id="h_01JF85KBBN81QWNATTG0MMWX5F">
   How to Purchase a Nitro Gift in Discord
 </h1>
+<div class="mega-box">
+  <p>
+    <strong>Offer: </strong>It's time to celebrate the holiday season! Starting
+    <strong>December 8, 2025</strong>, gift a 1-month or 1-year Nitro
+    subscription and pick one of three popular cosmetics from 2025 to keep. This
+    seasonal promotion will roll out gradually, with all users gaining access by
+    mid-December.
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01KBE0KCQMY61FATGYPYTPVQ8K">
+    <img
+      src="https://support.discord.com/hc/article_attachments/36738084328343"
+      width="624"
+      height="249"
+    /><br />Holiday season gifting collection
+  </h4>
+  <p>
+    Collect a new cosmetic from this season’s promotion each time you send a
+    Nitro gift. Offer ends <strong>January 6, 2026</strong>
+    <strong>(5:00PM PT)</strong>. Look for the promotion banner before making
+    your purchase. If this promotion is available to you, you will see a
+    <strong>banner</strong> like the one below during purchase that will confirm
+    that you'll get a decoration. If you do not see the offer banner, it means
+    you are not currently eligible for the promotion. Not all users will be
+    eligible for this promotion. You can check back in mid-December to determine
+    if you are then eligible for the promotion.
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01KBDP3YP6MJWCQYJ9G7WYE6FN">
+    <span style="color: #666666"
+      ><img
+        src="https://support.discord.com/hc/article_attachments/36738084331799"
+        width="281"
+        height="350" /></span
+    ><br />Holiday Promotion Banner in Select Plan Window
+  </h4>
+  <p>
+    <strong>Please note</strong>: This offer is only valid for Nitro gifts (not
+    Nitro Basic gifts). While any decoration you receive is yours to keep, it
+    will be removed if you refund your Nitro gift purchase.
+  </p>
+  <p>
+    If eligible, you can select a decoration from the following list to keep
+    each time you gift Nitro:
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01KBE052BAKS91RFVNF8APNVV8">
+    <img
+      src="https://support.discord.com/hc/article_attachments/36738096935319"
+      width="324"
+      height="325"
+    /><br />Mirage Avatar Decoration
+  </h4>
+  <h4 class="wysiwyg-text-align-center" id="h_01KBE052BETTE68J3A3M8QMCZK">
+    <img
+      src="https://support.discord.com/hc/article_attachments/36738084333079"
+      width="324"
+      height="325"
+    /> <br />Head In the clouds Avatar Decoration
+  </h4>
+  <h4 class="wysiwyg-text-align-center" id="h_01KBE0B9BQZ7XAEEG26F9YRHDM">
+    <br /><img
+      src="https://support.discord.com/hc/article_attachments/36738084334487"
+      width="326"
+      height="152"
+    /><br />Starfall Tides Nameplate
+  </h4>
+  <p>
+    Want to learn more about
+    <a
+      href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
+      >Avatar Decorations</a
+    >
+    and
+    <a
+      href="https://support.discord.com/hc/en-us/articles/30408457944215-Nameplates-FAQ"
+      >Nameplates</a
+    >? Check out our article for more details.
+  </p>
+</div>
 <p>
   <strong>Discord Nitro gifts</strong> can be purchased within
   <strong>direct messages (DMs)</strong>,<strong> group chats</strong>,
@@ -191,7 +268,7 @@
 <ul>
   <li
     class="ck-list-marker-color"
-    data-list-item-id="e50f8e14d4afeadda9f1fe107d183c510"
+    data-list-item-id="ecfcaae55adc3e107036a4501be1b5019"
   >
     <span style="color: #4f545c"
       ><span data-darkreader-inline-color="">1 month of Nitro </span></span
@@ -199,7 +276,7 @@
   </li>
   <li
     class="ck-list-marker-color"
-    data-list-item-id="ea504c46405d2b6562faf5e74fa739dd5"
+    data-list-item-id="ee700f617757d9ef7bcf825788b5616db"
   >
     <span style="color: #4f545c"
       ><span data-darkreader-inline-color="">3 months of Nitro </span></span
@@ -207,7 +284,7 @@
   </li>
   <li
     class="ck-list-marker-color"
-    data-list-item-id="e16bec7c982aeff73f6bfb21951bdd3c7"
+    data-list-item-id="e8edfc1d31c51927ae9b017afaf23759e"
   >
     <span style="color: #4f545c"
       ><span data-darkreader-inline-color="">6 months of Nitro </span></span
@@ -215,7 +292,7 @@
   </li>
   <li
     class="ck-list-marker-color"
-    data-list-item-id="e51206d0a20a06444997c0aa17906b9a7"
+    data-list-item-id="e191e1a0cc15613ba3b43a7d8d92820f6"
   >
     <span style="color: #4f545c"
       ><span data-darkreader-inline-color="">12 months of Nitro</span></span
