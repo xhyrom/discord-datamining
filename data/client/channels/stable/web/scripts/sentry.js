@@ -3238,6 +3238,8 @@
             USER_GUILD_SETTINGS: (e) =>
               "/users/@me/guilds/".concat(e, "/settings"),
             GAMES_DETECTABLE: "/games/detectable",
+            GAMES_BLOCKLIST: "/games/detectable/exclusions",
+            NON_GAMES_DETECTABLE: "/applications/non-games/detectable",
             APPLICATIONS_GAMES_SUPPLEMENTAL: "/applications/games-supplemental",
             APPLICATION_ICON: (e, t) =>
               "/applications/".concat(e, "/app-icons/").concat(t, ".png"),
@@ -3438,6 +3440,9 @@
             BILLING_LOCALIZED_PROMO:
               "/users/@me/billing/localized-pricing-promo",
             PREMIUM_GROUP_MEMBERSHIP: "/users/@me/premium-group/membership",
+            PREMIUM_GROUP_INVITES: "/users/@me/premium-group/invites",
+            PREMIUM_GROUP_INVITE: (e) =>
+              "/users/@me/premium-group/invites/".concat(e),
             VERIFY_PURCHASE: "/google-play/verify-purchase-token",
             DOWNGRADE_SUBSCRIPTION: "/google-play/downgrade-subscription",
             GOOGLE_PLAY_VALIDATE_PURCHASE: "/google-play/validate-purchase",
@@ -4513,8 +4518,6 @@
             HARMFUL_LINKS: "https://dis.gd/phish",
             SLASH_COMMANDS:
               "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps",
-            ACTIVE_DEVELOPER:
-              "https://support-dev.discord.com/hc/en-us/articles/10113997751447",
             GUILD_ONBOARDING_EXAMPLES:
               "https://support.discord.com/hc/en-us/articles/10394859532823",
             ROLE_SUBSCRIPTION_STORE_PAGE: (e) =>
@@ -5076,6 +5079,8 @@
           (n.ORBS_ENTRYPOINT_CLICKED = "orbs_entrypoint_clicked"),
           (n.PAYMENT_SOURCE_CREATION_FAILED = "payment_source_creation_failed"),
           (n.PREMIUM_UPGRADE_STARTED = "premium_upgrade_started"),
+          (n.PREMIUM_RESUBSCRIBE_FLOW_STARTED =
+            "premium_resubscribe_flow_started"),
           (n.PREMIUM_RESUBSCRIBE_COMPLETED = "premium_resubscribe_completed"),
           (n.APPLE_PAYMENT_LINK_DISCOUNT_OFFER_PROMPT_VIEWED =
             "apple_payment_link_discount_offer_prompt_viewed"),
@@ -5871,6 +5876,9 @@
           (n.FEED_SESSION_COMPLETED = "feed_session_completed"),
           (n.FEED_ITEM_1S_DWELLED = "feed_item_1s_dwelled"),
           (n.FEED_ITEM_DWELLED = "feed_item_dwelled"),
+          (n.FEED_ITEM_ACTIONED = "feed_item_actioned"),
+          (n.FEED_FILTER_ACTIONED = "feed_filter_actioned"),
+          (n.FEED_PAGE_ACTIONED = "feed_page_actioned"),
           (n.MOBILE_WEB_HANDOFF_FAILURE = "mobile_web_handoff_failure"),
           (n.PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED =
             "premium_uncancel_winback_modal_viewed"),
@@ -6866,7 +6874,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-12-05-2e4eeb32b949b3b7b90470f79c7ee8523e21d192-discord_web",
+              "2025-12-08-dc55b69d98dea52c6cf75866a03836121303f658-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6932,8 +6940,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "476179"),
-            o.YA("builtAt", String("1764922735089"));
+            o.YA("buildNumber", "476797"),
+            o.YA("builtAt", String("1765181915614"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.YA(t, e[t]);
           return _;
@@ -13692,6 +13700,7 @@
             4: "Google",
             5: "Adyen",
             6: "Apple Partner",
+            9: "Apple ACOM",
           }),
           Object.freeze({
             BRAINTREE: {
@@ -40372,4 +40381,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.b2861bd36ab3acf1.js.map
+//# sourceMappingURL=sentry.1a227dab9246a3f9.js.map
