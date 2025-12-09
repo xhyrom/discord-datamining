@@ -26046,38 +26046,6 @@ img.thumbnail__0f2e8 {
   border-radius: inherit;
   object-fit: cover;
 }
-.coachtip_b61b37 {
-  max-height: 92px;
-  max-width: 330px;
-  min-height: 92px;
-  min-width: 330px;
-  -webkit-margin-end: 16px;
-  filter: drop-shadow(0 8px 8px var(--opacity-black-32));
-  margin-inline-end: 16px;
-  margin-bottom: 16px;
-}
-.coachtip_b61b37,
-.coachtipContent_b61b37 {
-  display: flex;
-}
-.coachtipInner_b61b37 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  position: relative;
-}
-.coachtipAsset_b61b37 {
-  height: 117px;
-  position: relative;
-  width: 130px;
-}
-.coachtipTextContainer_b61b37 {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  max-width: 160px;
-}
 .loadingSpinner__5b1b2 {
   -webkit-margin-end: 8px;
   height: 24px;
@@ -45515,7 +45483,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -51579,9 +51547,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -52746,9 +52714,9 @@ svg.radioIcon_c1e9c4 {
   }
 }
 .cardTitle__6df1a {
-  font-size: 32px;
+  font-size: 2rem;
   font-style: italic;
-  line-height: 27px;
+  line-height: 1.6875rem;
   text-transform: uppercase;
 }
 .betaPill__6df1a,
@@ -103517,4 +103485,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.3c165fe8acb9ddf5.css.map*/
+/*# sourceMappingURL=12633.e91fba0e70f758fd.css.map*/
