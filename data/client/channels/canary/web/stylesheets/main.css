@@ -64644,8 +64644,6 @@ html .progress__61462 {
 }
 .channelPillIcon__1bb32 {
   color: var(--text-default);
-  height: 14px;
-  width: 14px;
 }
 .container_f1c5c9 {
   background-color: var(--background-surface-high);
@@ -103531,4 +103529,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.66bad3ee5893344b.css.map*/
+/*# sourceMappingURL=12633.85f3dd54dd89e4a0.css.map*/
