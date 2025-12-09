@@ -62251,11 +62251,12 @@ html .progress__61462 {
   color: var(--button-outline-primary-text);
 }
 .buttonContainer__75e8e {
-  align-items: center;
   display: flex;
+  -webkit-padding-end: 16px;
+  align-items: center;
   flex-shrink: 0;
-  gap: 8px;
-  padding: 0 16px;
+  gap: 16px;
+  padding-inline-end: 16px;
 }
 .connector__75e8e {
   background-color: var(--background-surface-high);
@@ -103513,4 +103514,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.4f64f51be66b5a22.css.map*/
+/*# sourceMappingURL=12633.29b2d63d8a6b6272.css.map*/
