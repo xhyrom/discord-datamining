@@ -61267,10 +61267,12 @@ html .progress__61462 {
 }
 .scroller_b7f4b4 {
   flex: 0 0 auto;
-  width: 90px;
+  width: 106px;
   -webkit-border-end: 1px solid var(--border-subtle);
   border-inline-end: 1px solid var(--border-subtle);
   margin-top: var(--custom-modal-padding-md);
+  -webkit-padding-end: var(--space-24);
+  padding-inline-end: var(--space-24);
 }
 .reactorsContainer_b7f4b4 {
   display: flex;
@@ -61332,7 +61334,7 @@ html .progress__61462 {
 .reactor_b7f4b4 {
   box-sizing: border-box;
   height: 52px;
-  margin-inline: 12px 2px;
+  margin-inline: 24px 2px;
   white-space: nowrap;
 }
 .name_b7f4b4,
@@ -73643,18 +73645,8 @@ div.nagbar_d74ef8 {
   outline: 2px solid Highlight;
   outline-offset: -2px;
 }
-.container__25eff {
-  height: 400px;
-}
 .channelIdSection__25eff {
   margin-top: 8px;
-}
-.inputWrapper__25eff {
-  padding: 16px 16px 0;
-}
-.voiceChannelList__25eff {
-  height: 340px;
-  padding: 0 16px;
 }
 .guildName__25eff {
   flex-shrink: 1;
@@ -73979,6 +73971,9 @@ div.nagbar_d74ef8 {
   overflow-x: visible;
   scroll-padding-top: 24px;
   scrollbar-gutter: stable both-edges;
+}
+.tabBar__6131a {
+  margin-bottom: var(--space-24);
 }
 .notice__6131a {
   bottom: 0;
@@ -103522,4 +103517,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.fa4c60a2aacd5826.css.map*/
+/*# sourceMappingURL=12633.3c165fe8acb9ddf5.css.map*/
