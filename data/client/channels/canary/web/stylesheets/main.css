@@ -51220,7 +51220,7 @@ svg.radioIcon_c1e9c4 {
 }
 .container__8f41e {
   display: flex;
-  padding-block: var(--space-4);
+  padding-block: var(--space-8);
   -webkit-padding-start: var(--space-4);
   padding-inline-start: var(--space-4);
   -webkit-padding-end: var(--space-8);
@@ -51276,6 +51276,13 @@ svg.radioIcon_c1e9c4 {
   -webkit-margin-start: var(--space-12);
   margin-inline-start: var(--space-12);
 }
+.logoHeader_f1578d {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 23.643px;
+  text-transform: uppercase;
+}
 .container_f1578d {
   background: var(--background-surface-high);
   border-radius: var(--radius-sm);
@@ -51309,9 +51316,14 @@ svg.radioIcon_c1e9c4 {
   padding-top: var(--space-24);
   -webkit-padding-end: var(--space-32);
   box-sizing: border-box;
-  gap: var(--space-10);
   padding-inline-end: var(--space-32);
   padding-bottom: var(--space-24);
+}
+.descriptionContainer_f1578d {
+  margin-bottom: var(--space-10);
+}
+.buttonContainer_f1578d {
+  margin-top: var(--space-12);
 }
 .usersListHeader_f1578d,
 .usersListHeaderContainer_f1578d {
@@ -103519,4 +103531,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.96753064990940b4.css.map*/
+/*# sourceMappingURL=12633.66bad3ee5893344b.css.map*/
