@@ -12,46 +12,34 @@
   account warnings or other penalties.
 </p>
 <p>
-  <strong
-    ><span class="wysiwyg-font-size-large"
-      >What this article covers: </span
-    ></strong
+  <span class="wysiwyg-font-size-large"
+    ><strong>What this article covers: </strong></span
   >
 </p>
 <ul>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/undefined#h_01HER6WT6HJYEV9DAGAPEDAF8G"
+  <li data-list-item-id="e12a92612565225eddcd35ae62e2267b4">
+    <a href="#h_01HER6WT6HJYEV9DAGAPEDAF8G"
       >Where to file a copyright or trademark claim</a
     >
   </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/undefined#h_01HER6WT6HXHBVHR0GT5ZSNJ8R"
+  <li data-list-item-id="e220719143b0da5d63322a32643262fdd">
+    <a href="#h_01HER6WT6HXHBVHR0GT5ZSNJ8R"
       >How to report a user profile or server element</a
     >
   </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/undefined#h_01HER6WT6H8V7NJ7V0TB7B8HRT"
-      >How to report a live stream</a
-    >
+  <li data-list-item-id="e7a3745764a9054c7f70ff6ca0164a9f7">
+    <a href="#h_01HER6WT6H8V7NJ7V0TB7B8HRT">How to report a live stream</a>
   </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/undefined#h_01HER6WT6HP1ATV8HX7J2Y4G4F"
-      >How to report a message</a
-    >
+  <li data-list-item-id="e9ab73eaba01d4d9ebf039645b3811df8">
+    <a href="#h_01HER6WT6HP1ATV8HX7J2Y4G4F">How to report a message</a>
   </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/undefined#h_01HER6WT6H3GETNPP5T9D5QB1H"
+  <li data-list-item-id="e92b5915292387b3ae8759aead8344190">
+    <a href="#h_01HER6WT6H3GETNPP5T9D5QB1H"
       >How to report a message attachment</a
     >
   </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/undefined#h_01HER6WT6HF2X0DNVVTYWRN883"
+  <li data-list-item-id="e9de11adc1ca7e60e44f7a160a3c65f03">
+    <a href="#h_01HER6WT6HF2X0DNVVTYWRN883"
       >How to report an emoji or sticker</a
     >
   </li>
@@ -88,11 +76,15 @@
 <p>1. The User or Server ID number</p>
 <p>2. Identify the specific allegedly infringing element(s), for example:</p>
 <ul>
-  <li>Profile avatar</li>
-  <li>Server icon</li>
-  <li>Server banner</li>
-  <li>Server discovery splash</li>
-  <li>Server invite splash</li>
+  <li data-list-item-id="e81707eecb699782f6e6cf4279f17095a">Profile avatar</li>
+  <li data-list-item-id="e8db06f4ce71b4b1d81c1ceff764b2849">Server icon</li>
+  <li data-list-item-id="ed914e708b0dec18519e55cdec2558ee5">Server banner</li>
+  <li data-list-item-id="e03823516990027bf58786a06ff0345fd">
+    Server discovery splash
+  </li>
+  <li data-list-item-id="eb81961f7e741ef4a321838453f911e74">
+    Server invite splash
+  </li>
 </ul>
 <h1 id="h_01HER6WT6H8V7NJ7V0TB7B8HRT">How to report a live stream</h1>
 <p>
@@ -101,10 +93,7 @@
 </p>
 <p>
   <a href="https://discordapp.com/channels/serverID/channelID/messageID"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
+    ><span class="wysiwyg-underline"
       >https://discordapp.com/channels/server-ID/channel-ID</span
     ></a
   >/
@@ -121,10 +110,7 @@
 </p>
 <p>
   <a href="https://discordapp.com/channels/serverID/channelID/messageID"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
+    ><span class="wysiwyg-underline"
       >https://discordapp.com/channels/server-ID/channel-ID/message-ID</span
     ></a
   >
@@ -137,10 +123,7 @@
 <p>
   <a
     href="https://cdn.discordapp.com/attachments/###################/###################"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
+    ><span class="wysiwyg-underline"
       >https://cdn.discordapp.com/attachments/###################/###################</span
     ></a
   >
@@ -163,10 +146,7 @@
 </p>
 <p>
   <a href="https://cdn.discordapp.com/emojis/################.png?v=1"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
+    ><span class="wysiwyg-underline"
       >https://cdn.discordapp.com/emojis/################.png?v=</span
     ></a
   >#
@@ -174,10 +154,7 @@
 <p>
   <a
     href="https://media.discordapp.net/stickers/##################.png?size=###"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
+    ><span class="wysiwyg-underline"
       >https://media.discordapp.net/stickers/##################.png?size=###</span
     ></a
   >
