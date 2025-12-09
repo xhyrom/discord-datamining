@@ -19,23 +19,23 @@
     >
   </p>
   <ul>
-    <li data-list-item-id="eb36db58fb70af8d01c36a4bfa4aa2844">
+    <li data-list-item-id="e6f01b7f3643f5ab34cdf50924c5328c6">
       <a href="#h_01KBFMHB632K2QFEGD1SKQXCJZ"
         >What is the Nitro Privacy Perk?</a
       >
     </li>
-    <li data-list-item-id="e29a0e24181c07c3a8e2710ff5a3357d1">
+    <li data-list-item-id="e5bf9ed6acf11e8b954666f46bcc07ee4">
       <a href="#h_01KBFMHB6E2S5NHGGCB506M5V6">How to Access the Privacy Perk</a>
     </li>
-    <li data-list-item-id="e8ee4dca3a799b45862b454886aeab3ed">
+    <li data-list-item-id="ed47d7cd655858a502d83afc9cf72dca3">
       <a href="#h_01KBFMHB6S2KJHTEES372G1S6D">How to Use the Privacy Perk</a>
       <ul>
-        <li data-list-item-id="efa7b49522f4094225853073aeb86e003">
+        <li data-list-item-id="e3cf567e1b65ba7e7f031e8cec374e001">
           <a href="#h_01KBFMHB6T8HMD6B8CT0AFMG55">Turning WARP+ On and Off</a>
         </li>
       </ul>
     </li>
-    <li data-list-item-id="e8c64c6e88a62e962500b5d2ac384247d">
+    <li data-list-item-id="e05dcfa149eafb1b37863c9467398feda">
       <a href="#h_01KBFMHB70SJT5R9MTB23SATWY">Frequently Asked Question</a>
     </li>
   </ul>
@@ -64,13 +64,13 @@
 </p>
 <p>To access the Nitro Privacy Perk, you need:</p>
 <ul>
-  <li data-list-item-id="ef096842a2148d7dff5a2515fca6a10e3">
+  <li data-list-item-id="e2ed6ff5c38168d9f7289a9a34c2e16dc">
     Part of the experiment, which is available to select users only 
   </li>
-  <li data-list-item-id="efcc644c9ff3c41aea74321f4a8c8676f">
+  <li data-list-item-id="e9f80c25e74904c322aa497d2a52ad0ba">
     An active, paid Nitro subscription
   </li>
-  <li data-list-item-id="e20f7616f9c79d24d516686bd1a2a2aa5">
+  <li data-list-item-id="e7b63e60e9ffe903ed76edb8257893540">
     Discord desktop app installed on Windows or Mac
   </li>
 </ul>
@@ -88,7 +88,7 @@
 <p>1. Open the Discord desktop app. </p>
 <p>
   2. Press <strong>User Settings</strong> icon [<img
-    src="https://support.discord.com/hc/article_attachments/36718934653207"
+    src="https://support.discord.com/hc/article_attachments/36899683670295"
     width="24"
     height="24"
   />] in the bottom-left corner of the app located next to your username.
@@ -96,7 +96,7 @@
 <p>3. In the left sidebar, select <strong>WARP+</strong>. </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/36718923069719"
+    src="https://support.discord.com/hc/article_attachments/36899675128599"
     width="624"
     height="383"
   />
@@ -111,8 +111,8 @@
 </p>
 <div class="info-box">
   <strong>Note:</strong> You will also need to grant admin permissions. If you
-  are on Windows, look for the <strong>Microsoft Admin icon</strong>[<img
-    src="https://support.discord.com/hc/article_attachments/36784748843671"
+  are on Windows, look for the <strong>Microsoft Admin icon </strong>[<img
+    src="https://support.discord.com/hc/article_attachments/36899683671319"
     width="28"
     height="28"
   />] on the icons bar. Click on this icon to accept admin permissions.
@@ -120,7 +120,7 @@
 <p>6. After installing, you can then toggle WARP+ on.</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/36718934655767"
+    src="https://support.discord.com/hc/article_attachments/36899675130135"
     width="624"
     height="172"
   />
@@ -150,7 +150,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/36784748845847"
+    src="https://support.discord.com/hc/article_attachments/36899683672727"
     width="221"
     height="48"
   />
@@ -163,11 +163,11 @@
 <p>3. Press the <strong>WARP+</strong> icon and toggle it on or off.</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/36718923073175"
+    src="https://support.discord.com/hc/article_attachments/36899675132695"
     width="551"
     height="392"
   /><img
-    src="https://support.discord.com/hc/article_attachments/36718923074327"
+    src="https://support.discord.com/hc/article_attachments/36899683675543"
     width="547"
     height="355"
   />
@@ -262,5 +262,3 @@
   A: No. WARP+ will assign you a Cloudflare IP address corresponding to the
   region in which you are connecting from. 
 </p>
-<p><br /> </p>
-<p> </p>
