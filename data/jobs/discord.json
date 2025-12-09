@@ -3088,7 +3088,7 @@
         }
       ],
       "id": 8244749002,
-      "updated_at": "2025-12-03T16:03:15-05:00",
+      "updated_at": "2025-12-08T19:26:54-05:00",
       "requisition_id": "R-101071",
       "title": "Staff Software Engineer, New Gaming Features",
       "company_name": "Discord",
@@ -3184,7 +3184,7 @@
       ],
       "internal_job_id": 6209095002,
       "location": {
-        "name": "San Francisco Bay Area"
+        "name": "San Francisco Bay Area or Remote (U.S.)"
       },
       "metadata": [
         {
@@ -3201,7 +3201,7 @@
         }
       ],
       "id": 8101803002,
-      "updated_at": "2025-11-20T13:46:14-05:00",
+      "updated_at": "2025-12-08T19:30:03-05:00",
       "requisition_id": "R-101007",
       "title": "Staff Software Engineer, Quest Experiences",
       "company_name": "Discord",
@@ -3218,9 +3218,9 @@
       ],
       "offices": [
         {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
           "child_ids": [],
           "parent_id": null
         }
