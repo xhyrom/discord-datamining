@@ -20163,20 +20163,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .iconTierThree__97677 {
   color: var(--guild-boosting-pink);
 }
-.guildIconContainer__85d16 {
-  -webkit-margin-end: 4px;
-  margin-inline-end: 4px;
-}
-.guildIconV2Container__85d16 {
-  -webkit-margin-end: 8px;
-  margin-inline-end: 8px;
-}
 .guildIconContainer__85d16,
 .guildIconV2Container__85d16 {
-  -webkit-margin-end: var(--space-xs);
   display: flex;
   justify-content: center;
-  margin-inline-end: var(--space-xs);
   min-width: 20px;
 }
 .guildBadge__85d16 .boostedGuildIconGem__85d16 {
@@ -20199,11 +20189,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
   color: var(--interactive-text-active);
-}
-.invitesRefresh__85d16.guildIconContainer__85d16,
-.invitesRefresh__85d16.guildIconV2Container__85d16 {
-  -webkit-margin-end: 0;
-  margin-inline-end: 0;
 }
 .header__6e500 {
   align-items: flex-start;
@@ -102619,4 +102604,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.904d14959bac2c2b.css.map*/
+/*# sourceMappingURL=12633.13b7c9ff8713939c.css.map*/
