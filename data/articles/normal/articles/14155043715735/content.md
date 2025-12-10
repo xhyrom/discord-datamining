@@ -32,37 +32,42 @@
   <a href="https://discord.com/safety-parents">Parent Hub</a>.
 </div>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li data-list-item-id="e33fe0405f822f991d5cf1ef778ee56af">
       <a href="#h_01K8RVK0P7P8ZSKK6529CXNMV0">How to set up Family Center</a>
       <ul>
-        <li><a href="#h_01K8RVK0P7XKYRFZ60XS9C0FZ6">Desktop/Browser </a></li>
-        <li><a href="#h_01K8RVK0P7QY86BTE6QCX3NHAV">Mobile</a></li>
+        <li data-list-item-id="ee6bdae7207547cc0574380302cb59795">
+          <a href="#h_01K8RVK0P7XKYRFZ60XS9C0FZ6">Desktop/Browser </a>
+        </li>
+        <li data-list-item-id="ea97e8bfe950e37aefeb7eabc9c314e00">
+          <a href="#h_01K8RVK0P7QY86BTE6QCX3NHAV">Mobile</a>
+        </li>
       </ul>
     </li>
-    <li>
+    <li data-list-item-id="e11699f7b0553ee9af37b7d9719a68cbd">
       <a href="#h_01K8RVK0P79RP13G7C9AYADRZ9">How to use Family Center</a>
       <ul>
-        <li>
+        <li data-list-item-id="e043d881f82d6fa5642c41ef5303d6841">
           <a href="#h_01K8RVK0P7GSJGADV3MY0CHPVR"
             >Your Teen’s Recent Activity</a
           >
         </li>
-        <li>
+        <li data-list-item-id="e7e92a2e01e4f5f6dcb6a6d35320648a2">
           <a href="#h_01K8RVK0P72Z9V25C64NJNF1Q8">Teen Account Settings</a>
         </li>
-        <li>
+        <li data-list-item-id="ed05be7d2362cac36b0338cfe2a03402c">
           <a href="#h_01K8RVK0P72Y66J1DJCC8G69Q7"
             >Your Teen’s Submitted Reports</a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li data-list-item-id="e8f5df7973783387d555a6d65a8c5f7ea">
       <a href="#h_01K8RVK0P7Z7D9BK67J9G8P2EQ">Frequently Asked Questions</a>
     </li>
   </ul>
@@ -72,12 +77,7 @@
 <p>
   To connect your account with your teen, you’ll first need to have the
   <a href="https://discord.com/download"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Discord app</span
-    ></a
+    ><span class="wysiwyg-underline">Discord app</span></a
   >
   installed on your mobile device. While you can get started with and access
   Family Center through Discord on browser, you can only complete the connection
@@ -93,9 +93,9 @@
     height="551"
   />
 </p>
-<h4 id="h_01K8RVK0P7DV95EP9FFA2H5YGA" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Enable Family Center tab</span
+<h4 class="wysiwyg-text-align-center" id="h_01K8RVK0P7DV95EP9FFA2H5YGA">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Enable Family Center tab</span></span
   >
 </h4>
 <p>
@@ -112,9 +112,9 @@
     height="563"
   />
 </p>
-<h4 id="h_01K8RVK0P7H0YVC054WTAGWTT0" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Reveal QR Code button</span
+<h4 class="wysiwyg-text-align-center" id="h_01K8RVK0P7H0YVC054WTAGWTT0">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Reveal QR Code button</span></span
   >
 </h4>
 <p>
@@ -140,9 +140,11 @@
     height="907"
   />
 </p>
-<h4 id="h_01K8RVK0P73AHC0WS3FH6MJBHA" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Avatar in the right-hand corner</span
+<h4 class="wysiwyg-text-align-center" id="h_01K8RVK0P73AHC0WS3FH6MJBHA">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Avatar in the right-hand corner</span
+    ></span
   >
 </h4>
 <p>
@@ -160,9 +162,11 @@
     height="864"
   />
 </p>
-<h4 id="h_01K8RVK0P7PZNXT3RXDXQD13AA" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of sending a connection request to a teen</span
+<h4 class="wysiwyg-text-align-center" id="h_01K8RVK0P7PZNXT3RXDXQD13AA">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of sending a connection request to a teen</span
+    ></span
   >
 </h4>
 <h1 id="h_01K8RVK0P79RP13G7C9AYADRZ9">How to use Family Center</h1>
@@ -174,34 +178,34 @@
   tab:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ebe2877907c1bf45e73b22b9c36835604">
     <strong>New Friends:</strong> Your teen's recently added friends, including
     the display names and avatars of those friends
   </li>
-  <li>
+  <li data-list-item-id="e3601127f59e1d7437f5cc1865555a3c2">
     <strong>Users Messaged &amp; Called:</strong> Users your teen has messaged
     or called in Direct or Group messages, including their display names and
     avatars.
   </li>
-  <li>
+  <li data-list-item-id="e3a3c01d853781e07f822811b67e86702">
     <strong>Total Call Minutes in Voice &amp; Video:</strong> Your teen's total
     call minutes, including voice and video calls in Direct Messages, Group
     Messages, and Voice Channels (these support voice and video communication)
     in servers
   </li>
-  <li>
+  <li data-list-item-id="e14522fb3d36e173deea841366dc707af">
     <strong>Top Users and Servers: </strong>Teens’ top five users and servers in
     the last week, in order of message and call frequency
   </li>
-  <li>
+  <li data-list-item-id="eb8ee02102e5db4b78f4ab226271b044a">
     <strong>New Servers:</strong> Servers your teen joined or created, including
     server names, server icons, and server member counts
   </li>
-  <li>
+  <li data-list-item-id="e7fcd862cdfc7a69c5963fddb9b6f828d">
     <strong>Active Servers:</strong> Servers where your teen joined a Voice
     Channel (these support voice and video communication) or sent a message
   </li>
-  <li>
+  <li data-list-item-id="e97def81a140f864f1b1a2ebc31bd76f2">
     <strong>Total Purchases:</strong> Your teen's purchases (total amount
     spent), including Shop purchases and Nitro subscriptions. Nitro
     subscriptions are shown in the week when they are billed to your teen’s
@@ -225,9 +229,11 @@
     height="714"
   />
 </p>
-<h4 id="h_01K8RVK0P7X0VAQ0QVPAZPAA66" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Your teen’s activity summary</span
+<h4 class="wysiwyg-text-align-center" id="h_01K8RVK0P7X0VAQ0QVPAZPAA66">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Your teen’s activity summary</span
+    ></span
   >
 </h4>
 <div class="tip-box">
@@ -237,28 +243,15 @@
 <h2 id="h_01K8RVK0P72Z9V25C64NJNF1Q8">Teen Account Settings</h2>
 <p>
   You will also be able to see and adjust some of your teen’s settings,
-  including:<span style="color: #434343" data-darkreader-inline-color=""
-    ><br
-  /></span>
+  including:<br /> 
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e11026cea3dd13315472262178269d829">
     <a
       href="https://support.discord.com/hc/en-us/articles/18210995019671-Discord-Sensitive-Content-Filters"
       target="_blank"
       rel="noopener noreferrer"
-      ><span
-        class="wysiwyg-underline"
-        style="color: #1155cc"
-        data-darkreader-inline-color=""
-        >Sensitive content</span
-      ><span
-        class="wysiwyg-underline"
-        style="color: #1155cc"
-        data-darkreader-inline-color=""
-      >
-        filter</span
-      >s</a
+      ><span class="wysiwyg-underline">Sensitive content filter</span>s</a
     >: Adjust if the content flagged by our sensitive media filters are blurred,
     blocked, or shown by default to your teen.
     <em
@@ -266,33 +259,21 @@
       due to </em
     ><a
       href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
-      ><em
-        ><span
-          class="wysiwyg-underline"
-          style="color: #1155cc"
-          data-darkreader-inline-color=""
-          >regional restrictions</span
-        ></em
-      ></a
+      ><em><span class="wysiwyg-underline">regional restrictions</span></em></a
     ><em>.</em> 
   </li>
-  <li>
+  <li data-list-item-id="e0073b382f335a1f3cfdd5bb1208b8444">
     Friend Requests: Adjust who can send your teen a friend request (Everyone,
     friends of friends, Server members)
   </li>
-  <li>
+  <li data-list-item-id="e5e0dd1a093fb74adec35f89f5a63dda4">
     Server Direct Messages: Adjust if server members can send your teen Direct
     Messages
   </li>
-  <li>
+  <li data-list-item-id="eba0a8070ec1706dcad5a68567ef419aa">
     <a
       href="https://support.discord.com/hc/en-us/articles/7924992471191-Message-Requests#:~:text=If%20someone%20you%20are%20not,more%20hidden%20%E2%80%9CSpam%E2%80%9D%20folder."
-      ><span
-        class="wysiwyg-underline"
-        style="color: #1155cc"
-        data-darkreader-inline-color=""
-        >Message Requests</span
-      ></a
+      ><span class="wysiwyg-underline">Message Requests</span></a
     >: Adjust if your teen has message requests turned on. Message requests is
     on by default for teen users. When it’s on, messages from users who aren’t
     friends with your teen are filtered into a separate “Message Requests”
@@ -301,77 +282,77 @@
   </li>
 </ul>
 <div class="exp-box">
-  <strong>Important:</strong> Due to the
-  <a
+  <strong>Important:</strong>
+  <span style="color: #434343">Due to the regional regulations like the </span
+  ><a
     href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
-    target="_blank"
-    rel="noopener noreferrer"
-    >UK Online Safety Act</a
-  >, guardians in the UK must be age assured adults (18+) and will be required
-  to age verify before updating their teen's message request setting due to
-  <a
+    ><span class="wysiwyg-underline">UK Online Safety Act</span></a
+  ><span style="color: #434343"
+    >, guardians in the UK and Australia must be age assured adults (18+) and
+    will be required to complete age assurance before updating their teen's
+    message request setting due to </span
+  ><a
     href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
-    target="_blank"
-    rel="noopener noreferrer"
-    >region-specific settings</a
-  >.
+    ><span class="wysiwyg-underline">region-specific settings</span></a
+  ><span style="color: #434343">.</span>
 </div>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><em
-      ><span
-        class="wysiwyg-underline"
-        style="color: #ff0000"
-        data-darkreader-inline-color=""
+  <em
+    ><strong
+      ><span class="wysiwyg-underline"
         ><img
           src="https://support.discord.com/hc/article_attachments/36027356121239"
           width="606"
-          height="663" /></span></em
-  ></strong>
+          height="663" /></span></strong
+  ></em>
 </p>
 <h4 id="h_01K8RVK0P76TBPB9VZBRHH2RY3">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Content, Social permissions, and Friend requests settings in Family
-    Center</span
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Content, Social permissions, and Friend requests settings in Family
+      Center</span
+    ></span
   >
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="e4a0870ef456fabc2176f94bc85e226f5">
     <a
       href="https://support.discord.com/hc/en-us/articles/360004109911-Data-Privacy-Controls"
-      ><span
-        class="wysiwyg-underline"
-        style="color: #1155cc"
-        data-darkreader-inline-color=""
-        >Data &amp; Privacy Settings</span
-      ></a
+      ><span class="wysiwyg-underline">Data &amp; Privacy Settings</span></a
     >: This includes a suite of data &amp; privacy settings, like allowing users
     to use their data to improve Discord or personalize their Discord
     experience.
     <ul>
-      <li>Use data to improve Discord</li>
-      <li>Use teen’s Discord activity to personalize Sponsored Content</li>
-      <li>Use third-party data to personalize Sponsored Content</li>
-      <li>Use data to personalize my Discord experience</li>
+      <li data-list-item-id="ea0393b07a40048468467da90089fce82">
+        Use data to improve Discord
+      </li>
+      <li data-list-item-id="ed8f46ef93033646384c8f68d386f1d8b">
+        Use teen’s Discord activity to personalize Sponsored Content
+      </li>
+      <li data-list-item-id="eb20c5444e17f181996696f4966d1f3bd">
+        Use third-party data to personalize Sponsored Content
+      </li>
+      <li data-list-item-id="ee06db39573d50710e584855ed133811e">
+        Use data to personalize my Discord experience
+      </li>
     </ul>
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><em
-      ><span
-        class="wysiwyg-underline"
-        style="color: #ff0000"
-        data-darkreader-inline-color=""
+  <em
+    ><strong
+      ><span class="wysiwyg-underline"
         ><img
           src="https://support.discord.com/hc/article_attachments/36027365648535"
           width="740"
-          height="534" /></span></em
-  ></strong>
+          height="534" /></span></strong
+  ></em>
 </p>
-<h4 id="h_01K8RVK0P7A56K957C6A4X4KZW" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Data &amp; Privacy settings in Family Center</span
+<h4 class="wysiwyg-text-align-center" id="h_01K8RVK0P7A56K957C6A4X4KZW">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Data &amp; Privacy settings in Family Center</span
+    ></span
   >
 </h4>
 <div class="tip-box">
@@ -426,7 +407,7 @@
   >
 </p>
 <p>
-  A: When a user signs up for Discord, we ask for their age to verify that they
+  A: When a user signs up for Discord, we ask for their age to assure that they
   meet the minimum age requirement in their country. It sounds like your teen
   may have made an error when inputting their date of birth. To correct this,
   please have your teen contact Discord at<a
@@ -499,12 +480,7 @@
   To do this, please have your teen contact Discord at<a
     href="http://dis.gd/request"
   >
-    <span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >dis.gd/request</span
-    ></a
+    <span class="wysiwyg-underline">dis.gd/request</span></a
   >
   &gt; <strong>Update My Age Information</strong>. Be sure to have them include
   their actual age in their request.
@@ -600,8 +576,7 @@
   >.
 </p>
 <p>
-  <strong><br /></strong
-  ><strong
+  <br /><strong
     >Q: If I accidentally remove my teen’s connection, do they need to re-allow
     me to connect?</strong
   >

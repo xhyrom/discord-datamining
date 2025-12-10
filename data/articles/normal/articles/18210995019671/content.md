@@ -4,38 +4,39 @@
   to support our users as they connect and hang out together online.
 </p>
 <div class="info-box">
-  Due to the UK Online Safety Act, new and existing UK users may have different
-  settings to ensure an age-appropriate experience. They may also need to
-  <a
-    href="https://support.discord.com/hc/articles/30326565624343"
-    target="_blank"
-    rel="noopener noreferrer"
-    >age verify</a
-  >
-  before disabling sensitive content filters. Learn more about what’s different
-  for UK users
-  <a
+  <span style="color: #434343"
+    >Due to regional regulations like the UK Online Safety Act, new and existing
+    UK and Australian users may have different settings to ensure an
+    age-appropriate experience. They may also need to complete age assurance
+    before disabling sensitive content filters. Learn more about what’s
+    different for UK and Australian users </span
+  ><a
     href="https://support.discord.com/hc/en-us/articles/33362401287959/"
     target="_blank"
     rel="noopener noreferrer"
-    >here</a
-  >.
+    ><span class="wysiwyg-underline">here</span></a
+  ><span style="color: #434343">. </span>
 </div>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li><a href="#h_01JYHERYDMJ5QZ7M5VMRGY8MGN">Types of Filters</a></li>
-    <li>
+    <li data-list-item-id="ef6dae755d55e3d7cec9b54ac9463916b">
+      <a href="#h_01JYHERYDMJ5QZ7M5VMRGY8MGN">Types of Filters</a>
+    </li>
+    <li data-list-item-id="e1efc7b91f12cdfe558c22ac9f8de4259">
       <a href="#h_01JYHERYDNKTTJB699BYK2AAMP">How Teens Experience Filters</a>
     </li>
-    <li>
+    <li data-list-item-id="e6446bd2d561bb7e4d93512337c57a700">
       <a href="#h_01JYHERYDNZZEWP95PQRADJ755">How Adults Experience Filters</a>
     </li>
-    <li><a href="#h_01JYHERYDP1G72PM7PXR03EZST">Future Updates</a></li>
-    <li>
+    <li data-list-item-id="ebcff8d89bb619f8e20000bff8308c888">
+      <a href="#h_01JYHERYDP1G72PM7PXR03EZST">Future Updates</a>
+    </li>
+    <li data-list-item-id="e527524c950527402657da4fd59a76868">
       <a href="#h_01JYHERYDP38EM688KJ12AVD3H">Frequently Asked Questions</a>
     </li>
   </ul>
@@ -46,20 +47,20 @@
   certain categories of potentially sensitive content:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e1fb1edc30bfa352e3ccf99a62dc4504b">
     <strong>Mature Sexual Media Filter</strong>: Helps detect image-based media
     that may contain sexually explicit or suggestive material involving adults
   </li>
-  <li>
+  <li data-list-item-id="e7df50adfd03552a8698b8ccf71bfa6e2">
     <strong>Graphic Media Filter</strong>: Helps detect image-based media that
     may contain violent or potentially disturbing visual material
   </li>
 </ul>
 <div class="info-box">
-  These filters currently can detect sensitive content in image-based media.They
-  do not detect sensitive content in videos. No automated system is perfect, and
-  some content that you consider sexually explicit or graphic in nature may not
-  be caught by the filters. 
+  These filters currently can detect sensitive content in image-based media.
+  They do not detect sensitive content in videos. No automated system is
+  perfect, and some content that you consider sexually explicit or graphic in
+  nature may not be caught by the filters. 
 </div>
 <p>
   You can report image-based media that you think should have been blocked by
@@ -83,11 +84,11 @@
   media that may fall into two categories:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e517c401acb27ff89448113dce734446f">
     <strong>Mature Sexual Media Filter</strong>: Detects image-based media that
     may contain sexually explicit or suggestive material involving adults
   </li>
-  <li>
+  <li data-list-item-id="efac6c52b5c82eb05394a8bc123df37eb">
     <strong>Graphic Media Filter</strong>: Detects image-based media that may
     contain violent or potentially disturbing visual content
   </li>
@@ -104,7 +105,7 @@
   from seeing potentially inappropriate image-based media. 
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="eb77f60075f60ef0a9ceb2a2dd9995b09">
     In some countries, users can press on the<strong> eye icon</strong> to
     unblur the media. Users can always re-blur the unblurred media again if
     desired by pressing on the <strong>eye icon</strong> again.<del> </del>
@@ -120,13 +121,15 @@
         height="298" /></del
   ></a>
 </p>
-<h4 id="h_01JYHERYDN19H6WXCB8RS32VX4" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of a blurred image</span
+<h4 class="wysiwyg-text-align-center" id="h_01JYHERYDN19H6WXCB8RS32VX4">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of a blurred image</span
+    ></span
   >
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="e088662ea8be7acf80f91689c9ed1ef0d">
     For multiple images sent in one message, the blurring or blocking will only
     be applied to the specific images that are detected by the filters.
   </li>
@@ -138,10 +141,12 @@
     height="415"
   />
 </p>
-<h4 id="h_01JYHERYDN2HM09NG18SKCKQC2" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of only one image being blurred</span
-  ><span style="color: #666666" data-darkreader-inline-color=""><br /></span>
+<h4 class="wysiwyg-text-align-center" id="h_01JYHERYDN2HM09NG18SKCKQC2">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of only one image being blurred</span
+    ></span
+  ><br /> 
 </h4>
 <p>
   Teens can press on <strong>Why we hide some media</strong> below the blurred
@@ -155,21 +160,19 @@
     height="378"
   />
 </p>
-<h4 id="h_01JYHERYDNB8HJHCJTW23SR233" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Why we hide some media</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color="">
-    additional info</span
+<h4 class="wysiwyg-text-align-center" id="h_01JYHERYDNB8HJHCJTW23SR233">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><strong>Why we hide some media</strong></span
+    ><span data-darkreader-inline-color=""> additional info</span></span
   >
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="eb9f0da87d5f4b344a50f14a61392abfe">
     If teens press on <strong>Learn More</strong> they will be brought to this
     article for details on our sensitive content filters.
   </li>
-  <li>
+  <li data-list-item-id="e2e7a98c04740412300c5e154d2a0f27c">
     In some countries, users can press on <strong>Let us know</strong> if the
     media we blurred should not be considered as sensitive. Pressing this will
     forward that media to our team in order to help us improve our sensitive
@@ -191,13 +194,13 @@
   friends and DMs from others.
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e33db3eb454c9863b3f46bf921b471011">
     <strong>For DMs from friends:</strong> The default selection will be set to
     blur potentially sensitive image-based media for teens. This selection
     creates the blurred media experience shown above. If the block selection is
     made, this media will be blocked at upload and not shown at all.
   </li>
-  <li>
+  <li data-list-item-id="e15c82f27f9910b95b1d796359f219970">
     <strong>For DMs from non-friends:</strong> The default selection will be set
     to block sensitive image-based media for teens. This means the media will be
     blocked at upload and not shown at all.
@@ -209,19 +212,20 @@
   can block sensitive image-based media from being shared.
 </div>
 <p class="wysiwyg-text-align-center">
-  <span style="background-color: #93c47d" data-darkreader-inline-bgcolor=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/33022810120727"
-      width="384"
-      height="264"
-  /></span>
+  <span style="background-color: #93c47d"
+    ><span data-darkreader-inline-bgcolor=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/33022810120727"
+        width="384"
+        height="264" /></span
+  ></span>
 </p>
-<h4 id="h_01JYHERYDNSJY7R1GJQHSW2BDT" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Sensitive-content filters
-    </span></strong
-  ><span style="color: #666666" data-darkreader-inline-color="">setting</span>
+<h4 class="wysiwyg-text-align-center" id="h_01JYHERYDNSJY7R1GJQHSW2BDT">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><strong>Sensitive-content filters </strong></span
+    ><span data-darkreader-inline-color="">setting</span></span
+  >
 </h4>
 <h1 id="h_01JYHERYDNZZEWP95PQRADJ755">How Adults Experience Filters</h1>
 <p>
@@ -231,11 +235,11 @@
   filter categories:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ea54e387a83e2b5baf6b03ee4b2c887fd">
     <strong>Mature Sexual Media Filter</strong>: Detects image-based media that
     may contain sexually explicit or suggestive material involving adults
   </li>
-  <li>
+  <li data-list-item-id="eed4404570a9ece9e540c04c7717bbd5e">
     <strong>Graphic Media Filter</strong>: Detects image-based media that may
     contain violent or potentially disturbing visual content
   </li>
@@ -248,15 +252,27 @@
   Graphic Media) has separate controls:
 </p>
 <ul>
-  <li>Direct messages from friends</li>
-  <li>Direct messages from others</li>
-  <li>Messages in server channels</li>
+  <li data-list-item-id="e4b91510ee7ee1c2c1b9457184649453c">
+    Direct messages from friends
+  </li>
+  <li data-list-item-id="e6191aa138ef2567388b3323fc6018667">
+    Direct messages from others
+  </li>
+  <li data-list-item-id="e58f3d1dcac898be4b1b18a6b93a8cc64">
+    Messages in server channels
+  </li>
 </ul>
 <p><strong>Default settings for Adults:</strong></p>
 <ul>
-  <li>DMs from friends: Show sensitive image-based media</li>
-  <li>DMs from non-friends: Block sensitive image-based media</li>
-  <li>Server channels: Show sensitive image-based media</li>
+  <li data-list-item-id="ee683cbcba5473794b891debe70ae3deb">
+    DMs from friends: Show sensitive image-based media
+  </li>
+  <li data-list-item-id="e5fa309ac58a71e42357a4e641939aada">
+    DMs from non-friends: Block sensitive image-based media
+  </li>
+  <li data-list-item-id="e27901f6709de82d286f5047c2ce40fca">
+    Server channels: Show sensitive image-based media
+  </li>
 </ul>
 <div class="info-box">
   In servers, you can only choose to "show" or "blur" image-based media detected
@@ -280,9 +296,9 @@
       height="298"
   /></del>
 </p>
-<h4 id="h_01JYHERYDNJNY37JQAQTAZGWRY" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Blur example</span
+<h4 class="wysiwyg-text-align-center" id="h_01JYHERYDNJNY37JQAQTAZGWRY">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Blur example</span></span
   >
 </h4>
 <p>
@@ -296,9 +312,11 @@
     height="387"
   />
 </p>
-<h4 id="h_01JYHERYDPH2X6TJ6A7AT8VM1H" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of some images being blurred</span
+<h4 class="wysiwyg-text-align-center" id="h_01JYHERYDPH2X6TJ6A7AT8VM1H">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of some images being blurred</span
+    ></span
   >
 </h4>
 <h2 id="h_01JYHERYDP9NTSXD5G1AE5P250">Why We Hide Some Media?</h2>
@@ -321,13 +339,11 @@
     height="487"
   />
 </p>
-<h4 id="h_01JYHERYDPFWQKY8807199XQNX" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Why we hide some media</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color="">
-    additional info</span
+<h4 class="wysiwyg-text-align-center" id="h_01JYHERYDPFWQKY8807199XQNX">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><strong>Why we hide some media</strong></span
+    ><span data-darkreader-inline-color=""> additional info</span></span
   >
 </h4>
 <h2 id="h_01JYHERYDP72XWVK8CJ9XJ570J">What If Media is Incorrectly Flagged?</h2>
@@ -344,12 +360,12 @@
     height="632"
   />
 </p>
-<h4 id="h_01JYHERYDPAEGZY8AZYS0JF2Y7" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Mark as not sensitive</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color=""> message</span>
+<h4 class="wysiwyg-text-align-center" id="h_01JYHERYDPAEGZY8AZYS0JF2Y7">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><strong>Mark as not sensitive</strong></span
+    ><span data-darkreader-inline-color=""> message</span></span
+  >
 </h4>
 <div class="info-box">
   Once these filter preferences are changed to show or blur all historic and new
@@ -380,20 +396,19 @@
   <strong
     >Q: What is the difference between “blur”, “block”, and “show” when it comes
     to sensitive media?</strong
-  ><strong><br /></strong>A: There are a few important differences between these
-  options, namely:
+  ><br />A: There are a few important differences between these options, namely:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ec05f44c55356efaa3f049c273f69994e">
     <strong>Block: </strong>This option prevents potentially sensitive content
     from appearing in your Discord experience.
   </li>
-  <li>
+  <li data-list-item-id="e7d9248deaf93c304f7291595a87ecd87">
     <strong>Blur: </strong>This option conceals content behind a cover that
     adult users and teen users in some countries can press to reveal when they
     choose to view it.
   </li>
-  <li>
+  <li data-list-item-id="e4f609d84aabb8421881029f46aa4ff0b">
     <strong>Show:</strong> This option displays potentially sensitive content. 
   </li>
 </ul>
@@ -406,9 +421,8 @@
   <strong
     >Q: What's the difference between the Mature Sexual Media and Graphic Media
     filters?</strong
-  ><strong><br /></strong>A: The <strong>Adult Sexual Media</strong> filter
-  detects content that may contain sexually explicit or suggestive material
-  involving adults.
+  ><br />A: The <strong>Adult Sexual Media</strong> filter detects content that
+  may contain sexually explicit or suggestive material involving adults.
 </p>
 <p>
   The <strong>Graphic Media</strong> filter detects content that may contain
@@ -419,20 +433,19 @@
   image-based media.
 </p>
 <p>
-  <strong>Q: How does Discord detect sensitive media?</strong
-  ><strong><br /></strong>A: When these filters are enabled, messages containing
-  image-based media are processed by our automated systems to identify content
-  that may fall under either filter category. While our technology continues to
-  improve, no automated system is perfect, which is why we provide ways for
-  users to
+  <strong>Q: How does Discord detect sensitive media?</strong><br />A: When
+  these filters are enabled, messages containing image-based media are processed
+  by our automated systems to identify content that may fall under either filter
+  category. While our technology continues to improve, no automated system is
+  perfect, which is why we provide ways for users to
   <a href="#h_01JYHERYDP72XWVK8CJ9XJ570J">report incorrect detections</a>.
 </p>
 <p>
   <strong
     >Q: Does Discord review all the content detected by the filters?</strong
-  ><strong><br /></strong>A: No. These filters have been developed to help
-  improve the user experience on Discord by limiting exposure to image-based
-  media that users may find sensitive or inappropriate. 
+  ><br />A: No. These filters have been developed to help improve the user
+  experience on Discord by limiting exposure to image-based media that users may
+  find sensitive or inappropriate. 
 </p>
 <p>
   Users can always

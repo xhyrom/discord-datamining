@@ -9,55 +9,79 @@
     >Community Guidelines</a
   >. Servers can either be self-designated as 18+ by their owners or classified
   as age-restricted by Discord when they focus primarily on mature themes or
-  content. Users who need to update their age information can submit an appeal
-  through Trust &amp; Safety.
+  content. 
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e76ee65492f4be9987e816f41a9c05221"
+    >
       <a href="#h_01K728TD6X96J3KCNSSCM8DNDM"
         ><strong>What is classified as an age-restricted server? </strong></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e8f6a87916023a7b5ac811357c451796c"
+        >
           <a href="#h_01K728TD6X4BTPF5J0XK8FBF0G"
             ><strong
               >What does this mean for age-restricted server members? </strong
             ></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ebd1f9672057954575ee36b0217d28095"
+        >
           <a href="#h_01K728TD6X8AC6VVV52MTH15R0"
             ><strong>What about age-restricted Channels? </strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="eab487cd87baa9d5447ac64e6bf8c7e8e"
+    >
       <a href="#h_01K7299DYP72QN2QEQKQ01BZ4X"
         ><strong>How Do I Mark My Server as Age-Restricted?</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ec84abcb594241fe22aa588a34f6206a2"
+        >
           <a href="#h_01K7299DYPRP9RT2MWCYRVHGP5"
             ><strong>On Desktop/Browser</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ed03e943d8b1d67ee91de332362bcb141"
+        >
           <a href="#h_01K7299DYPGTQNDHBQNA9080J9"><strong>On Mobile</strong></a>
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="ee4c9b93a5a1116873c1aac9783c334e1"
+    >
       <a href="#h_01K728TD6XTBJT9R3578YTRHTF"
         ><strong>Appealing an Age-restricted Server Designation</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e06551fb94abf57995119c0a485f97eb2"
+    >
       <a href="#h_01K728TD6X7B16M2WFZF9GB8CW"
         ><strong>Updating User’s Age Information</strong></a
       >
@@ -65,16 +89,14 @@
   </ul>
 </div>
 <div class="book-box">
-  <strong>Want to learn more? <br /></strong>Check out our support article
+  <strong>Want to learn more? </strong><br />Check out our support article
   <a
     href="https://support.discord.com/hc/en-us/articles/1500005292701"
     target="_blank"
     rel="noopener noreferrer"
     >here</a
   >
-  to learn more about how to access age-restricted servers.<strong
-    ><br
-  /></strong>
+  to learn more about how to access age-restricted servers.<br /> 
 </div>
 <h1 id="h_01K728TD6X96J3KCNSSCM8DNDM">
   <span style="font-weight: 400"
@@ -98,11 +120,10 @@
 </p>
 <div class="info-box">
   <strong>Note</strong>:
-  <span style="color: #434343">Server owners or admins with the </span
-  ><span style="color: #434343">Manage Server</span
-  ><span style="color: #434343">
-    permission who are 18+ can mark their server as age-restricted.
-  </span>
+  <span style="color: #434343"
+    >Server owners or admins with the Manage Server permission who are 18+ can
+    mark their server as age-restricted.</span
+  >
 </div>
 <h2 id="h_01K728TD6X4BTPF5J0XK8FBF0G">
   <span style="font-weight: 400"
@@ -116,20 +137,20 @@
   >
 </p>
 <div class="info-box">
-  <strong><span style="color: #2f3941">Note</span></strong
-  ><span style="color: #2f3941"
-    >: Users in regions with age verification requirements (e.g. the UK) need to
-    complete age verification in order to view or enter </span
+  <span style="color: #2f3941"
+    ><strong>Note</strong>: Users in regions with age assurance requirements
+    (e.g. UK and Australia) need to complete age assurance in order to view or
+    enter </span
   ><span style="color: #434343"
     >servers marked as age-restricted by their server owner</span
   ><span style="color: #2f3941"
-    >. Learn more about age verification on Discord </span
+    >. Learn more about age assurance on Discord </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Verification-on-Discord"
     target="_blank"
     rel="noopener noreferrer"
-    >here</a
-  ><span style="color: #2f3941">. </span>
+    ><span class="wysiwyg-underline">here</span></a
+  ><span style="color: #2f3941">.</span>
 </div>
 <p>
   Users aged 18+ that are attempting to join or access new age-restricted
@@ -150,7 +171,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  ><span style="color: #434343">. </span>
+  ><span style="color: #434343">.</span>
 </div>
 <h2 id="h_01K728TD6X8AC6VVV52MTH15R0">
   <span style="font-weight: 400">What about age-restricted Channels? </span>
@@ -192,7 +213,7 @@
     height="498"
   />
 </p>
-<h4 id="h_01K7299DYPN3HFMX48MAZWY5PY" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K7299DYPN3HFMX48MAZWY5PY">
   <span style="color: #666666">Age-Restricted Server Setting on Desktop</span>
 </h4>
 <h2 id="h_01K7299DYPGTQNDHBQNA9080J9">On Mobile</h2>
@@ -208,7 +229,7 @@
     height="624"
   />
 </p>
-<h4 id="h_01K7299DYP2C969XEV0R13CQ8A" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K7299DYP2C969XEV0R13CQ8A">
   <span style="color: #666666">Age-Restricted Server Setting on Mobile</span>
 </h4>
 <h1 id="h_01K728TD6XTBJT9R3578YTRHTF">
@@ -234,14 +255,23 @@
   ><span style="font-weight: 400">:</span>
 </p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Select<strong>
-        <span style="color: #2f3941">NSFW Server Owner Appeals</span></strong
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ec81e93bd01acdb7b139003be8f81f8a5"
+  >
+    <span style="font-weight: 400">Select<strong> </strong></span
+    ><span style="color: #2f3941"
+      ><span style="font-weight: 400"
+        ><strong>NSFW Server Owner Appeals</strong></span
       ></span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e10de1439faa59ce1eb14cb8476be240e"
+  >
     <span style="font-weight: 400"
       >Enter the required details of the server</span
     >
@@ -264,55 +294,17 @@
   <span style="font-weight: 400">Updating User’s Age Information</span>
 </h1>
 <p>
-  <span style="font-weight: 400"
-    >Users who identified as being between the ages of 13 and 17 during the
-    age-verification process will not be allowed to join age-restricted servers.
-    18+ users who have mistakenly identified as being between 13 and 17 can
-    write in to Trust &amp; Safety to have their age information updated. </span
-  >
+  Note for users in regions where age assurance is required: You will have to
+  age assure into the adult age group in order to join age-restricted servers. 
 </p>
 <p>
-  <span style="font-weight: 400"
-    >Users should submit requests through this form: </span
-  ><a href="https://dis.gd/request" target="_blank" rel="noopener noreferrer"
-    >https://dis.gd/request</a
-  ><span style="font-weight: 400"> </span>
-</p>
-<ul>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Select “<span style="color: #2f3941">A</span
-      ><span style="color: #2f3941">ppeals &amp; Age Update Requests</span
-      >”</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Choose the subcategory “Update my age information”</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Enter date of birth and submit the requested materials</span
-    >
-  </li>
-</ul>
-<p>
-  <span style="font-weight: 400"
-    >Trust &amp; Safety will not be able to update a user’s age without </span
-  ><em><span style="font-weight: 400">all</span></em
-  ><span style="font-weight: 400">
-    the requested pieces of information. Additional details on updating age
-    information can be found </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/360041820932-Help-I-m-old-enough-to-use-Discord-in-my-country-but-I-got-locked-out-"
+  If you are over the age of 18 and have been locked out of an age-restricted
+  channel, or are unable to use age-restricted commands in DMs, you can appeal
+  by following the instructions in this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360041820932-Help-I-m-old-enough-to-use-Discord-in-my-country-but-I-got-locked-out"
     target="_blank"
     rel="noopener noreferrer"
-    >here</a
-  ><span style="font-weight: 400">.</span>
+    ><span class="wysiwyg-underline">Help Center article</span></a
+  >.
 </p>
-<div class="info-box">
-  <strong>Note: </strong>All users looking to appeal an action at both the
-  account and server levels must have a verified email in order to correspond
-  with our support teams.
-</div>

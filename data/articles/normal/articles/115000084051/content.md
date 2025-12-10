@@ -6,15 +6,16 @@
   out despite being over 18 years old.
 </p>
 <div class="info-box">
-  Due to the UK Online Safety Act, new and existing UK users may need to
+  <strong>Note:</strong> Due to regional regulations, new and existing UK and
+  Australian users may need to
   <a
     href="https://support.discord.com/hc/articles/30326565624343"
     target="_blank"
     rel="noopener noreferrer"
-    >age verify</a
+    >assure their age</a
   >
   before accessing age-restricted channels or servers. Learn more about what’s
-  different for UK users
+  different for UK and Australian users
   <a
     href="https://support.discord.com/hc/en-us/articles/33362401287959/"
     target="_blank"
@@ -23,35 +24,30 @@
   >.
 </div>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
-      <strong
-        ><a href="#h_01K0G0KP8ZDMVTXQV8FZ87PH08"
-          >How to Set Up an Age-Restricted Channel</a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e6d461341092b9de2750843a16c725cdc"
+    >
+      <a href="#h_01K0G0KP8ZDMVTXQV8FZ87PH08"
+        ><strong>How to Set Up an Age-Restricted Channel</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01K0G0SS22WX8R353SNXNQ72VB"
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="ed5390369ea70b9d686edea6d0569caf6"
+    >
+      <a href="#h_01K0G0SS22WX8R353SNXNQ72VB"
+        ><strong
           >Help! I'm over 18 years old, but got locked out of an age-restricted
-          Channel!</a
-        ></strong
+          Channel!</strong
+        ></a
       >
-      <ul>
-        <li>
-          <strong
-            ><a href="#h_01K0G0TNQPZ2R7YE68B78P1N3T"
-              >What do we need to unlock access to the age-restricted
-              channel?</a
-            ></strong
-          >
-        </li>
-      </ul>
     </li>
   </ul>
 </div>
@@ -86,7 +82,7 @@
       height="516"
   /></span>
 </p>
-<h4 id="h_01K0G0JZ3ZXPT8EH6Y0JKXCART" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K0G0JZ3ZXPT8EH6Y0JKXCART">
   <span style="color: #666666">Age-Restricted Channel in a Server</span>
 </h4>
 <h1 id="h_01K0G0KP8ZDMVTXQV8FZ87PH08">
@@ -97,7 +93,7 @@
 </div>
 <p id="h_01K0G0MVH66ZX505CSFDW9PVBT">
   1. To designate a channel as age-restricted on desktop or browser, start by
-  pressing g the <strong>Edit Channel icon</strong> [<img
+  pressing the <strong>Edit Channel icon</strong> [<img
     src="https://support.discord.com/hc/article_attachments/33574724084375"
     width="24"
     height="24"
@@ -111,7 +107,7 @@
       height="293"
   /></span>
 </p>
-<h4 id="h_01K0G0P9MF5GKA1N1H0S94SG4M" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K0G0P9MF5GKA1N1H0S94SG4M">
   <span style="color: #2e3338">Edit Channel Icon </span>
 </h4>
 <p>
@@ -137,53 +133,14 @@
   Help! I'm over 18 years old, but got locked out of an age-restricted Channel!
 </h1>
 <p>
-  If you are over the age of 18 and have been locked out of an age-restricted
-  channel, you can appeal by following the instructions below! 
+  <span style="color: #2e3338"
+    >If you are over the age of 18 and have been locked out of an age-restricted
+    channel, or are unable to use age-restricted commands in DMs, you can appeal
+    by following the instructions in this </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/360041820932-Help-I-m-old-enough-to-use-Discord-in-my-country-but-I-got-locked-out"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Help Center article</span></a
+  ><span style="color: #2e3338">.</span>
 </p>
-<h2 id="h_01K0G0TNQPZ2R7YE68B78P1N3T">
-  What do we need to unlock access to the age-restricted channel?
-</h2>
-<p>
-  <span class="wysiwyg-font-size-x-large"
-    ><strong>Step 1: <br /></strong></span
-  >Take a <strong>photo of yourself</strong> that includes yourself holding the
-  following items:
-</p>
-<ol>
-  <li>
-    A <span class="wysiwyg-color-blue"><strong>photo ID</strong></span> that
-    contains your date of birth
-  </li>
-  <li>
-    A piece of paper that shows your
-    <span class="wysiwyg-color-blue"><strong>full Discord Tag</strong> </span
-    ><em
-      >(including your username and the last 4 digits following your username -
-      ex: Wumpus#1234)</em
-    >
-  </li>
-</ol>
-<p>
-  <span class="wysiwyg-font-size-x-large"
-    ><strong>Step 2: <br /></strong></span
-  ><span style="font-weight: 400"
-    >Once you have taken the photo, submit a request to the Trust &amp; Safety
-    team here: </span
-  ><a href="https://dis.gd/request"
-    ><span style="font-weight: 400">https://dis.gd/request</span></a
-  ><span style="font-weight: 400">
-    and select <strong>“Appeals, age update, other questions”</strong> and then
-    <strong>"Update my age information"</strong>.</span
-  >
-</p>
-<h3 id="h_01K0G0DENRENM9YAY0B41E1SC9">
-  <strong>Note:</strong><br />- All of the required information needs to be
-  visible and readable in ONE photo.<br />- You must send the photo with the
-  email address associated with your Discord account<br /><span
-    class="wysiwyg-color-orange"
-    ><strong
-      >The information you provide will only be used to verify your age and will
-      not be used for any other purpose.
-    </strong></span
-  >
-</h3>

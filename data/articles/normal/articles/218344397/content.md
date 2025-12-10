@@ -7,115 +7,153 @@
   online.
 </p>
 <div class="info-box">
-  Due to the UK Online Safety Act, new and existing UK users will receive safety
-  alerts before accepting friend requests from unfamiliar accounts. Learn more
-  about what’s different for UK users
-  <a
+  <span style="color: #434343"
+    >Due to regional regulations like the UK Online Safety Act, new and existing
+    UK and Australian users will receive safety alerts before accepting friend
+    requests from unfamiliar accounts. Learn more about what’s different for UK
+    and Australian users </span
+  ><a
     href="https://support.discord.com/hc/en-us/articles/33362401287959/"
     target="_blank"
     rel="noopener noreferrer"
-    >here</a
-  >.
+    ><span class="wysiwyg-underline">here</span></a
+  ><span style="color: #434343">. </span>
 </div>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
-      <strong
-        ><a
-          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGYND0G6C0645SK6K1"
-          >How to Add a Friend</a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e9a406c0b1d8a48525ddb0e84cd1213a5"
+    >
+      <a
+        href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGYND0G6C0645SK6K1"
+        ><strong>How to Add a Friend</strong></a
       >
       <ul>
-        <li>
-          <strong
-            ><a
-              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27DP54JNAYPH0R1S"
-              >Username</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e2eb822be755d1ee638f33a0f2971b512"
+        >
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27DP54JNAYPH0R1S"
+            ><strong>Username</strong></a
           >
           <ul>
-            <li><strong>Desktop/Browser</strong></li>
-            <li><strong>Mobile</strong></li>
+            <li
+              class="ck-list-marker-bold"
+              data-list-item-id="e8b72eb9865e7afed9f7c56580d4d71d6"
+            >
+              <strong>Desktop/Browser</strong>
+            </li>
+            <li
+              class="ck-list-marker-bold"
+              data-list-item-id="e669ee55e021fd3bfaaa1b771fe633449"
+            >
+              <strong>Mobile</strong>
+            </li>
           </ul>
         </li>
-        <li>
-          <strong
-            ><a
-              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG0WA6RQS7DCRQ2NNF"
-              >Profile</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e3681ec9fcbfb2857228ba91f19a2a859"
+        >
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG0WA6RQS7DCRQ2NNF"
+            ><strong>Profile</strong></a
           >
           <ul>
-            <li><strong>Desktop/Browser</strong></li>
-            <li><strong>Mobile</strong></li>
+            <li
+              class="ck-list-marker-bold"
+              data-list-item-id="e472ce7dcce4470411cf5952eb9558e93"
+            >
+              <strong>Desktop/Browser</strong>
+            </li>
+            <li
+              class="ck-list-marker-bold"
+              data-list-item-id="e9de01f907852fe52475e9b0f08a74bc3"
+            >
+              <strong>Mobile</strong>
+            </li>
           </ul>
         </li>
-        <li>
-          <strong
-            ><a
-              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGCQM07TYSXSHZZH1X"
-              >Server Member’s Lis</a
-            >t</strong
-          >
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ef57c09a6791d95ae4180e66ba899e55b"
+        >
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGCQM07TYSXSHZZH1X"
+            ><strong>Server Member’s Lis</strong></a
+          ><strong>t</strong>
           <ul>
-            <li><strong>Desktop/Browser</strong></li>
+            <li
+              class="ck-list-marker-bold"
+              data-list-item-id="e965c36c9749621a0034a6220efeaaa50"
+            >
+              <strong>Desktop/Browser</strong>
+            </li>
           </ul>
         </li>
       </ul>
     </li>
-    <li>
-      <strong
-        ><a
-          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27E6NZ2EYYF9DJ20"
-          >How to Cancel a Pending Friend Request</a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e6ed54c381f3b83b85b5563e077d1f8b8"
+    >
+      <a
+        href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27E6NZ2EYYF9DJ20"
+        ><strong>How to Cancel a Pending Friend Request</strong></a
       >
       <ul>
-        <li>
-          <strong
-            ><a
-              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGGMKB7H5WZRJR7EBM"
-              >Desktop/Browser</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ec1a2376bc5a11271c5e5094f27c44aa9"
+        >
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGGMKB7H5WZRJR7EBM"
+            ><strong>Desktop/Browser</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a
-              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH3MANJA1XZ3YV9WS9"
-              >Mobile</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ed4cc6954537b028fdae6a12f56a3bfd3"
+        >
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH3MANJA1XZ3YV9WS9"
+            ><strong>Mobile</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
-      <strong
-        ><a
-          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH03TTM70T93RS6Z2S"
-          >Common Errors When Adding a Friend</a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e5a5e161b8b9ea431f85529436174c620"
+    >
+      <a
+        href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH03TTM70T93RS6Z2S"
+        ><strong>Common Errors When Adding a Friend</strong></a
       >
       <ul>
-        <li>
-          <strong
-            ><a
-              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHKDDP0F9B2G3NR36T"
-              >Friend Request Failed</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e24a5a16a282fc25ede1f43da45d61687"
+        >
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHKDDP0F9B2G3NR36T"
+            ><strong>Friend Request Failed</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a
-              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHDFV75FZMEZ4D5MJA"
-              >Double Check that the Username is Correct</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e64e9ef62153f087bbad46b3c0e49978e"
+        >
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHDFV75FZMEZ4D5MJA"
+            ><strong>Double Check that the Username is Correct</strong></a
           >
         </li>
       </ul>
@@ -238,10 +276,12 @@
 </p>
 <h2 id="h_01J0KH7RTGCQM07TYSXSHZZH1X">Server Member’s List</h2>
 <h3 id="h_01J0KH7RTGS0AY8A5VVSZ6NSR1">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >There is not an option to add a friend through this right-click method in
-    the server member’s list on mobile - you can only add them by tapping on
-    their profile.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >There is not an option to add a friend through this right-click method in
+      the server member’s list on mobile - you can only add them by tapping on
+      their profile.</span
+    ></span
   >
 </h3>
 <p><strong>Desktop/Browser</strong></p>
@@ -266,9 +306,11 @@
   How to Cancel a Pending Friend Request
 </h1>
 <h3 id="h_01J0KH7RTGQ0PZKDM4W6D16HBS">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If the friend request has already been accepted, you won’t be able to
-    remove the pending request any longer.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >If the friend request has already been accepted, you won’t be able to
+      remove the pending request any longer.</span
+    ></span
   >
 </h3>
 <h2 id="h_01J0KH7RTGGMKB7H5WZRJR7EBM">Desktop/Browser</h2>
@@ -351,8 +393,10 @@
   />
 </p>
 <h3 id="h_01J0KH7RTHNZ6BN0ACM24WBCCH">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >The Discord Support team is not able to manually add a friend for a
-    user.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >The Discord Support team is not able to manually add a friend for a
+      user.</span
+    ></span
   >
 </h3>
