@@ -512,11 +512,7 @@
   },
   "GUILD_ANALYTICS_OVERVIEW": {
     "url": "/guilds/:param/analytics/overview",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW": {
     "url": "/guilds/:param/analytics/engagement/overview",
