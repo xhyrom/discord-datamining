@@ -27471,9 +27471,9 @@ div.mobilePushContainer__3d3b0 {
   border-radius: 3px;
   color: var(--white-500);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: var(--font-weight-bold);
-  line-height: 29px;
+  line-height: 1.8125rem;
   margin-top: 20px;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -39145,10 +39145,10 @@ body .headerAnimation_b54a5b {
   width: 52px;
 }
 .bundleMiniProfileEffectContainer__0b5ea {
-  height: 40px;
-  inset-inline-start: 0;
+  height: 44px;
+  inset-inline-start: 6px;
   position: absolute;
-  top: 0;
+  top: 2px;
   transform: rotate(-8deg);
   width: 36px;
 }
@@ -39158,7 +39158,7 @@ body .headerAnimation_b54a5b {
 }
 .bundleMiniAvatarDecorationContainer__0b5ea {
   height: 26px;
-  inset-inline-end: 3px;
+  inset-inline-end: 0;
   position: absolute;
   top: 5px;
   transform: rotate(8deg);
@@ -39170,12 +39170,12 @@ body .headerAnimation_b54a5b {
 }
 .bundleMiniNameplateContainer__0b5ea {
   border-radius: var(--radius-xs);
-  bottom: 0;
+  bottom: 10px;
   height: 12px;
   inset-inline-start: 0;
   overflow: hidden;
   position: absolute;
-  width: 46px;
+  width: 100%;
 }
 .bundleMiniNameplateContainer__0b5ea .nameplateContainer__0b5ea {
   height: 100%;
@@ -102619,4 +102619,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.425c82e369fbcff2.css.map*/
+/*# sourceMappingURL=12633.5484b0cbf55fd268.css.map*/
