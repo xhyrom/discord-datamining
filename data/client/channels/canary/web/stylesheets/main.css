@@ -51246,7 +51246,7 @@ svg.radioIcon_c1e9c4 {
 .contentGrid_f1578d {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 292px;
+  min-height: 320px;
 }
 .contentGrid_f1578d > * {
   min-width: 0;
@@ -73900,15 +73900,6 @@ div.nagbar_d74ef8 {
 .collapsibleContainer_a5d75d:hover .hoverDivider_a5d75d {
   opacity: 0;
 }
-.pane__3e84f {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-.divider__3e84f {
-  margin-bottom: var(--space-48);
-  margin-top: var(--space-48);
-}
 .panel__6131a {
   margin-block: var(--space-64) var(--space-64);
   margin-inline: auto;
@@ -73944,6 +73935,15 @@ div.nagbar_d74ef8 {
   padding: var(--space-16);
   position: absolute;
   z-index: 2;
+}
+.categories__6131a {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.divider__6131a {
+  margin-bottom: var(--space-48);
+  margin-top: var(--space-48);
 }
 .title__28f6b {
   margin-inline: var(--space-12);
@@ -102604,4 +102604,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.13b7c9ff8713939c.css.map*/
+/*# sourceMappingURL=12633.4a1b18c1cdbab69a.css.map*/
