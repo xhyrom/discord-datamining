@@ -20163,20 +20163,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .iconTierThree__97677 {
   color: var(--guild-boosting-pink);
 }
-.guildIconContainer__85d16 {
-  -webkit-margin-end: 4px;
-  margin-inline-end: 4px;
-}
-.guildIconV2Container__85d16 {
-  -webkit-margin-end: 8px;
-  margin-inline-end: 8px;
-}
 .guildIconContainer__85d16,
 .guildIconV2Container__85d16 {
-  -webkit-margin-end: var(--space-xs);
   display: flex;
   justify-content: center;
-  margin-inline-end: var(--space-xs);
   min-width: 20px;
 }
 .guildBadge__85d16 .boostedGuildIconGem__85d16 {
@@ -20199,11 +20189,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
   color: var(--interactive-text-active);
-}
-.invitesRefresh__85d16.guildIconContainer__85d16,
-.invitesRefresh__85d16.guildIconV2Container__85d16 {
-  -webkit-margin-end: 0;
-  margin-inline-end: 0;
 }
 .header__6e500 {
   align-items: flex-start;
@@ -22470,9 +22455,9 @@ span.clanTag__5d473 {
     var(--profile-gradient-button-color) 80%,
     var(--black)
   );
-  --control-secondary-background-default: var(--opacity-white-24);
-  --control-secondary-background-hover: var(--opacity-white-36);
-  --control-secondary-background-active: var(--opacity-white-32);
+  --control-secondary-background-default: var(--opacity-white-8);
+  --control-secondary-background-hover: var(--opacity-white-16);
+  --control-secondary-background-active: var(--opacity-white-12);
 }
 :root .custom-user-profile-theme.theme-light {
   --control-primary-background-default: var(--profile-gradient-button-color);
@@ -39145,10 +39130,10 @@ body .headerAnimation_b54a5b {
   width: 52px;
 }
 .bundleMiniProfileEffectContainer__0b5ea {
-  height: 40px;
-  inset-inline-start: 0;
+  height: 44px;
+  inset-inline-start: 6px;
   position: absolute;
-  top: 0;
+  top: 2px;
   transform: rotate(-8deg);
   width: 36px;
 }
@@ -39158,7 +39143,7 @@ body .headerAnimation_b54a5b {
 }
 .bundleMiniAvatarDecorationContainer__0b5ea {
   height: 26px;
-  inset-inline-end: 3px;
+  inset-inline-end: 0;
   position: absolute;
   top: 5px;
   transform: rotate(8deg);
@@ -39170,12 +39155,12 @@ body .headerAnimation_b54a5b {
 }
 .bundleMiniNameplateContainer__0b5ea {
   border-radius: var(--radius-xs);
-  bottom: 0;
+  bottom: 10px;
   height: 12px;
   inset-inline-start: 0;
   overflow: hidden;
   position: absolute;
-  width: 46px;
+  width: 100%;
 }
 .bundleMiniNameplateContainer__0b5ea .nameplateContainer__0b5ea {
   height: 100%;
@@ -43236,6 +43221,435 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .displayCountTextColor_c2a763 {
   color: var(--neutral-9);
+}
+.card__6d190 {
+  background: var(
+    --scoped-control-background-secondary-default,
+    hsla(240, 4%, 61%, 0.08)
+  );
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+  cursor: pointer;
+  flex-shrink: 0;
+  height: 87px;
+  overflow: hidden;
+  position: relative;
+  width: 65px;
+}
+.card__6d190:focus-visible,
+.card__6d190:hover {
+  background: var(
+    --scoped-control-background-secondary-hover,
+    hsla(240, 4%, 61%, 0.16)
+  );
+}
+.cardSmall__6d190 {
+  height: 73px;
+  width: 55px;
+}
+.cardSingle__6d190 {
+  height: 80px;
+  width: 60px;
+}
+.cardPreview__6d190,
+.cardPreviewNoScale__6d190 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.cardPreview__6d190 > div {
+  height: 136px;
+  transform: scale(0.613);
+  width: 106px;
+}
+.cardPreview__6d190 > .bundlePreview__6d190 {
+  transform: scale(0.42);
+  -webkit-margin-start: -19px;
+  margin-inline-start: -19px;
+}
+.cardPreviewNoScale__6d190 > div {
+  height: 100%;
+  width: 100%;
+}
+.moreOverlay__6d190 {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+}
+.card__6d190:focus-visible .moreOverlay__6d190,
+.moreOverlay__6d190 .card__6d190:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.card__46c9e {
+  border-radius: none;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.cardBackgroundImage__46c9e {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  top: 0;
+  transform: scale(105%);
+}
+.cardBackgroundImage__46c9e,
+.cardImage__46c9e {
+  inset-inline: 0;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.cardImage__46c9e {
+  object-fit: cover;
+  object-position: center;
+  top: 4px;
+}
+.singleItemContainer__4af00 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.singleItemInfo__4af00 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+.singleItemName__4af00 {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.singleItemName__4af00:focus-visible,
+.singleItemName__4af00:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--text-default);
+  text-decoration-color: var(--text-default);
+}
+.clickable_c906e8 {
+  cursor: pointer;
+}
+.full-motion .clickable_c906e8 .icon_c906e8 {
+  transition: transform 0.15s ease-in-out;
+}
+.full-motion .clickable_c906e8:hover .icon_c906e8 {
+  transform: scale(1.125);
+}
+.full-motion .clickable_c906e8:active .icon_c906e8 {
+  transform: scale(0.875);
+}
+.card__39b32,
+.container__39b32 {
+  position: relative;
+}
+.card__39b32 {
+  background-color: var(--background-surface-highest);
+  border-radius: var(--radius-md);
+  box-shadow:
+    inset 0 0 0 1px var(--border-muted),
+    0 1px 4px 0 hsl(none 0% 0%/0.04);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 173px;
+  overflow: hidden;
+  top: 0;
+  width: 133px;
+}
+.custom-user-profile-theme .card__39b32 {
+  background-color: var(--user-profile-overlay-background);
+}
+.full-motion .card__39b32 {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.smallCard__39b32 {
+  height: 136px;
+  width: 106px;
+}
+.largeCard__39b32 {
+  height: 173px;
+  width: 133px;
+}
+.card__39b32:focus-within,
+.card__39b32:hover {
+  transform: scale(1.025);
+}
+.card__39b32.isOwned__39b32 {
+  cursor: default;
+  opacity: 0.8;
+}
+.card__39b32.isOwned__39b32:focus-within,
+.card__39b32.isOwned__39b32:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.cardPreview__39b32 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+.card__39b32.isOwned__39b32 .cardPreview__39b32 {
+  opacity: 0.5;
+}
+.card__39b32.isOwned__39b32:focus-within .cardPreview__39b32,
+.card__39b32.isOwned__39b32:hover .cardPreview__39b32 {
+  opacity: 1;
+}
+.cardStateIconWrapper__39b32 {
+  align-items: center;
+  display: flex;
+  inset-inline: 0;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.cardStateIcon__39b32 {
+  color: var(--status-positive);
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+  height: 38px;
+  transition: opacity 0.3s ease;
+  width: 38px;
+}
+.card__39b32:focus-within .checkmark__39b32,
+.card__39b32:hover .checkmark__39b32 {
+  opacity: 0;
+}
+.profileEffectPreview__39b32 {
+  align-items: flex-start;
+}
+.bundlePreview__39b32,
+.profileEffectPreview__39b32 {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.bundlePreview__39b32 {
+  align-items: center;
+  transform: scale(0.65);
+  transform-origin: center;
+}
+.full-motion .bundlePreview__39b32 {
+  transition: transform 0.2s ease;
+}
+.card__39b32:focus-within .bundlePreview__39b32,
+.card__39b32:hover .bundlePreview__39b32 {
+  transform: scale(0.65) translateY(-18px);
+}
+.smallCard__39b32 .bundlePreview__39b32 {
+  height: 175px;
+  transform: scale(0.5);
+  width: 300px;
+}
+.card__39b32.smallCard__39b32:focus-within .bundlePreview__39b32,
+.card__39b32.smallCard__39b32:hover .bundlePreview__39b32 {
+  transform: scale(0.5);
+}
+.avatarDecorationPreview__39b32 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.full-motion .avatarDecorationPreview__39b32 {
+  transition: transform 0.2s ease;
+}
+.card__39b32:focus-within .avatarDecorationPreview__39b32,
+.card__39b32:hover .avatarDecorationPreview__39b32 {
+  transform: translateY(-18px);
+}
+.card__39b32.smallCard__39b32:focus-within .avatarDecorationPreview__39b32,
+.card__39b32.smallCard__39b32:hover .avatarDecorationPreview__39b32 {
+  transform: none;
+}
+.nameplatePreview__39b32 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.full-motion .nameplatePreview__39b32 {
+  transition: transform 0.2s ease;
+}
+.card__39b32:focus-within .nameplatePreview__39b32,
+.card__39b32:hover .nameplatePreview__39b32 {
+  transform: translateY(-18px);
+}
+.card__39b32.smallCard__39b32:focus-within .nameplatePreview__39b32,
+.card__39b32.smallCard__39b32:hover .nameplatePreview__39b32 {
+  transform: none;
+}
+.nameplateTopLeft__39b32 {
+  inset-inline-start: 33px;
+  position: absolute;
+  top: 37px;
+}
+.nameplateBottomRight__39b32 {
+  bottom: 33px;
+  inset-inline-end: 33px;
+  position: absolute;
+}
+.smallCard__39b32 .nameplateTopLeft__39b32 {
+  inset-inline-start: 22px;
+  top: 22px;
+}
+.smallCard__39b32 .nameplateBottomRight__39b32 {
+  bottom: 22px;
+  inset-inline-end: 22px;
+}
+.removeItemButton__39b32 {
+  align-items: center;
+  background: var(--background-surface-high);
+  border: 1px solid var(--border-muted);
+  border-radius: 100px;
+  box-shadow: var(--shadow-low);
+  display: flex;
+  inset-inline-end: -6px;
+  justify-content: center;
+  opacity: 0;
+  padding: 4px;
+  position: absolute;
+  top: -6px;
+  transition: opacity 50ms ease-in;
+  z-index: 10;
+}
+.removeItemButton__39b32:after {
+  background-color: transparent;
+  border-radius: var(--radius-round);
+  content: "";
+  height: 100%;
+  inset-inline-start: 0;
+  position: absolute;
+  top: 0;
+  transition: background-color 50ms ease-in;
+  width: 100%;
+}
+.removeItemButton__39b32:hover:after {
+  background-color: var(--opacity-red-8);
+  transition: background-color 0.15s ease-out;
+}
+.removeItemButton__39b32:focus {
+  transition: none;
+}
+.container__39b32:hover .removeItemButton__39b32,
+.removeItemButton__39b32:focus-visible,
+.keyboard-mode .container__39b32:focus-within .removeItemButton__39b32 {
+  opacity: 1;
+  transition: opacity 0.15s ease-out;
+}
+.overlay__39b32 {
+  align-items: flex-end;
+  bottom: 0;
+  display: flex;
+  inset-inline: 0;
+  justify-content: center;
+  opacity: 0;
+  padding: 12px;
+  position: absolute;
+  transition: opacity 50ms ease-in;
+  z-index: 5;
+}
+.card__39b32:focus-within .overlay__39b32,
+.card__39b32:hover .overlay__39b32 {
+  opacity: 1;
+  transition: opacity 0.15s ease-out;
+}
+.itemIcon__39b32 {
+  align-items: center;
+  display: flex;
+  inset-inline-end: 8px;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  top: 8px;
+}
+.itemIconHeart__39b32 {
+  fill: var(--control-critical-primary-background-default);
+}
+.itemIconShop__39b32 {
+  fill: var(--icon-strong);
+}
+@keyframes placeholderPulse__39b32 {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+.placeholderCard__39b32 {
+  animation: placeholderPulse__39b32 1.3s ease-in-out infinite;
+}
+.placeholderAvatar__39b32 {
+  opacity: 0.5;
+}
+.seeMoreCard__39b32 {
+  height: 173px;
+  width: 133px;
+}
+.seeMoreCard__39b32.smallCard__39b32 {
+  height: 136px;
+  width: 105px;
+}
+.seeMoreCard__39b32:focus-within,
+.seeMoreCard__39b32:hover {
+  transform: scale(1.025);
+}
+.seeMoreCardPreview__39b32 {
+  opacity: 0.5;
+}
+.seeMoreOverlay__39b32 {
+  align-items: center;
+  background-color: var(--background-scrim);
+  border-radius: inherit;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+.container__06b03 {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+.header__06b03 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.cardsContainer__06b03 {
+  display: flex;
+  gap: 8px;
 }
 .roleDot__57082 {
   margin-inline: -2px 2px;
@@ -51261,7 +51675,7 @@ svg.radioIcon_c1e9c4 {
 .contentGrid_f1578d {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 292px;
+  min-height: 320px;
 }
 .contentGrid_f1578d > * {
   min-width: 0;
@@ -73915,15 +74329,6 @@ div.nagbar_d74ef8 {
 .collapsibleContainer_a5d75d:hover .hoverDivider_a5d75d {
   opacity: 0;
 }
-.pane__3e84f {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-.divider__3e84f {
-  margin-bottom: var(--space-48);
-  margin-top: var(--space-48);
-}
 .panel__6131a {
   margin-block: var(--space-64) var(--space-64);
   margin-inline: auto;
@@ -73959,6 +74364,15 @@ div.nagbar_d74ef8 {
   padding: var(--space-16);
   position: absolute;
   z-index: 2;
+}
+.categories__6131a {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.divider__6131a {
+  margin-bottom: var(--space-48);
+  margin-top: var(--space-48);
 }
 .title__28f6b {
   margin-inline: var(--space-12);
@@ -80186,433 +80600,415 @@ html.disable-forced-colors * {
     calc(var(--saturation-factor, 1) * 10.924%) 46.667%;
   --bungie: hsl(var(--bungie-hsl) / 1);
   --bungie-hsl: 196.916 calc(var(--saturation-factor, 1) * 100%) 44.51%;
-  --checkpoint-emojis-gradient-end-raw: hsl(
-    var(--checkpoint-emojis-gradient-end-raw-hsl) / 1
+  --checkpoint-emojis-gradient-end: hsl(
+    var(--checkpoint-emojis-gradient-end-hsl) / 1
   );
-  --checkpoint-emojis-gradient-end-raw-hsl: 283.2
+  --checkpoint-emojis-gradient-end-hsl: 283.2
     calc(var(--saturation-factor, 1) * 53.191%) 9.216%;
-  --checkpoint-emojis-gradient-start-raw: hsl(
-    var(--checkpoint-emojis-gradient-start-raw-hsl) / 1
+  --checkpoint-emojis-gradient-start: hsl(
+    var(--checkpoint-emojis-gradient-start-hsl) / 1
   );
-  --checkpoint-emojis-gradient-start-raw-hsl: 260.114
+  --checkpoint-emojis-gradient-start-hsl: 260.114
     calc(var(--saturation-factor, 1) * 87.129%) 60.392%;
-  --checkpoint-emojis-primary-raw: hsl(
-    var(--checkpoint-emojis-primary-raw-hsl) / 1
-  );
-  --checkpoint-emojis-primary-raw-hsl: 269.011
+  --checkpoint-emojis-primary: hsl(var(--checkpoint-emojis-primary-hsl) / 1);
+  --checkpoint-emojis-primary-hsl: 269.011
     calc(var(--saturation-factor, 1) * 88.35%) 79.804%;
-  --checkpoint-emojis-secondary-raw: hsl(
-    var(--checkpoint-emojis-secondary-raw-hsl) / 1
+  --checkpoint-emojis-secondary: hsl(
+    var(--checkpoint-emojis-secondary-hsl) / 1
   );
-  --checkpoint-emojis-secondary-raw-hsl: 268.837
+  --checkpoint-emojis-secondary-hsl: 268.837
     calc(var(--saturation-factor, 1) * 72.067%) 64.902%;
-  --checkpoint-end-gradient-end-raw: hsl(
-    var(--checkpoint-end-gradient-end-raw-hsl) / 1
+  --checkpoint-end-gradient-end: hsl(
+    var(--checkpoint-end-gradient-end-hsl) / 1
   );
-  --checkpoint-end-gradient-end-raw-hsl: 149.333
+  --checkpoint-end-gradient-end-hsl: 149.333
     calc(var(--saturation-factor, 1) * 56.962%) 15.49%;
-  --checkpoint-end-gradient-start-raw: hsl(
-    var(--checkpoint-end-gradient-start-raw-hsl) / 1
+  --checkpoint-end-gradient-start: hsl(
+    var(--checkpoint-end-gradient-start-hsl) / 1
   );
-  --checkpoint-end-gradient-start-raw-hsl: 149.302
+  --checkpoint-end-gradient-start-hsl: 149.302
     calc(var(--saturation-factor, 1) * 50.588%) 50%;
-  --checkpoint-end-primary-raw: hsl(var(--checkpoint-end-primary-raw-hsl) / 1);
-  --checkpoint-end-primary-raw-hsl: 143.316
+  --checkpoint-end-primary: hsl(var(--checkpoint-end-primary-hsl) / 1);
+  --checkpoint-end-primary-hsl: 143.316
     calc(var(--saturation-factor, 1) * 83.55%) 54.706%;
-  --checkpoint-end-secondary-raw: hsl(
-    var(--checkpoint-end-secondary-raw-hsl) / 1
-  );
-  --checkpoint-end-secondary-raw-hsl: 143.673
+  --checkpoint-end-secondary: hsl(var(--checkpoint-end-secondary-hsl) / 1);
+  --checkpoint-end-secondary-hsl: 143.673
     calc(var(--saturation-factor, 1) * 78.61%) 36.667%;
-  --checkpoint-friends-gradient-end-raw: hsl(
-    var(--checkpoint-friends-gradient-end-raw-hsl) / 1
+  --checkpoint-friends-gradient-end: hsl(
+    var(--checkpoint-friends-gradient-end-hsl) / 1
   );
-  --checkpoint-friends-gradient-end-raw-hsl: 259.481
+  --checkpoint-friends-gradient-end-hsl: 259.481
     calc(var(--saturation-factor, 1) * 79.381%) 19.02%;
-  --checkpoint-friends-gradient-start-raw: hsl(
-    var(--checkpoint-friends-gradient-start-raw-hsl) / 1
+  --checkpoint-friends-gradient-start: hsl(
+    var(--checkpoint-friends-gradient-start-hsl) / 1
   );
-  --checkpoint-friends-gradient-start-raw-hsl: 256.018
+  --checkpoint-friends-gradient-start-hsl: 256.018
     calc(var(--saturation-factor, 1) * 96.507%) 55.098%;
-  --checkpoint-friends-primary-raw: hsl(
-    var(--checkpoint-friends-primary-raw-hsl) / 1
+  --checkpoint-friends-primary: hsl(var(--checkpoint-friends-primary-hsl) / 1);
+  --checkpoint-friends-primary-hsl: 234 calc(var(--saturation-factor, 1) * 90%)
+    80.392%;
+  --checkpoint-friends-secondary: hsl(
+    var(--checkpoint-friends-secondary-hsl) / 1
   );
-  --checkpoint-friends-primary-raw-hsl: 234
-    calc(var(--saturation-factor, 1) * 90%) 80.392%;
-  --checkpoint-friends-secondary-raw: hsl(
-    var(--checkpoint-friends-secondary-raw-hsl) / 1
-  );
-  --checkpoint-friends-secondary-raw-hsl: 234
+  --checkpoint-friends-secondary-hsl: 234
     calc(var(--saturation-factor, 1) * 39.823%) 55.686%;
-  --checkpoint-gaming-gradient-end-raw: hsl(
-    var(--checkpoint-gaming-gradient-end-raw-hsl) / 1
+  --checkpoint-gaming-gradient-end: hsl(
+    var(--checkpoint-gaming-gradient-end-hsl) / 1
   );
-  --checkpoint-gaming-gradient-end-raw-hsl: 28.8
+  --checkpoint-gaming-gradient-end-hsl: 28.8
     calc(var(--saturation-factor, 1) * 53.191%) 9.216%;
-  --checkpoint-gaming-gradient-start-raw: hsl(
-    var(--checkpoint-gaming-gradient-start-raw-hsl) / 1
+  --checkpoint-gaming-gradient-start: hsl(
+    var(--checkpoint-gaming-gradient-start-hsl) / 1
   );
-  --checkpoint-gaming-gradient-start-raw-hsl: 27.595
+  --checkpoint-gaming-gradient-start-hsl: 27.595
     calc(var(--saturation-factor, 1) * 100%) 53.529%;
-  --checkpoint-gaming-primary-raw: hsl(
-    var(--checkpoint-gaming-primary-raw-hsl) / 1
-  );
-  --checkpoint-gaming-primary-raw-hsl: 34.699
+  --checkpoint-gaming-primary: hsl(var(--checkpoint-gaming-primary-hsl) / 1);
+  --checkpoint-gaming-primary-hsl: 34.699
     calc(var(--saturation-factor, 1) * 100%) 51.176%;
-  --checkpoint-gaming-secondary-raw: hsl(
-    var(--checkpoint-gaming-secondary-raw-hsl) / 1
+  --checkpoint-gaming-secondary: hsl(
+    var(--checkpoint-gaming-secondary-hsl) / 1
   );
-  --checkpoint-gaming-secondary-raw-hsl: 26.809
+  --checkpoint-gaming-secondary-hsl: 26.809
     calc(var(--saturation-factor, 1) * 86.239%) 42.745%;
-  --checkpoint-guilds-gradient-end-raw: hsl(
-    var(--checkpoint-guilds-gradient-end-raw-hsl) / 1
+  --checkpoint-guilds-gradient-end: hsl(
+    var(--checkpoint-guilds-gradient-end-hsl) / 1
   );
-  --checkpoint-guilds-gradient-end-raw-hsl: 170.4
+  --checkpoint-guilds-gradient-end-hsl: 170.4
     calc(var(--saturation-factor, 1) * 53.191%) 9.216%;
-  --checkpoint-guilds-gradient-start-raw: hsl(
-    var(--checkpoint-guilds-gradient-start-raw-hsl) / 1
+  --checkpoint-guilds-gradient-start: hsl(
+    var(--checkpoint-guilds-gradient-start-hsl) / 1
   );
-  --checkpoint-guilds-gradient-start-raw-hsl: 169.589
+  --checkpoint-guilds-gradient-start-hsl: 169.589
     calc(var(--saturation-factor, 1) * 90.123%) 47.647%;
-  --checkpoint-guilds-primary-raw: hsl(
-    var(--checkpoint-guilds-primary-raw-hsl) / 1
-  );
-  --checkpoint-guilds-primary-raw-hsl: 169.811
+  --checkpoint-guilds-primary: hsl(var(--checkpoint-guilds-primary-hsl) / 1);
+  --checkpoint-guilds-primary-hsl: 169.811
     calc(var(--saturation-factor, 1) * 97.546%) 68.039%;
-  --checkpoint-guilds-secondary-raw: hsl(
-    var(--checkpoint-guilds-secondary-raw-hsl) / 1
+  --checkpoint-guilds-secondary: hsl(
+    var(--checkpoint-guilds-secondary-hsl) / 1
   );
-  --checkpoint-guilds-secondary-raw-hsl: 169.672
+  --checkpoint-guilds-secondary-hsl: 169.672
     calc(var(--saturation-factor, 1) * 68.539%) 34.902%;
-  --checkpoint-messages-gradient-end-raw: hsl(
-    var(--checkpoint-messages-gradient-end-raw-hsl) / 1
+  --checkpoint-messages-gradient-end: hsl(
+    var(--checkpoint-messages-gradient-end-hsl) / 1
   );
-  --checkpoint-messages-gradient-end-raw-hsl: 7.2
+  --checkpoint-messages-gradient-end-hsl: 7.2
     calc(var(--saturation-factor, 1) * 53.191%) 9.216%;
-  --checkpoint-messages-gradient-start-raw: hsl(
-    var(--checkpoint-messages-gradient-start-raw-hsl) / 1
+  --checkpoint-messages-gradient-start: hsl(
+    var(--checkpoint-messages-gradient-start-hsl) / 1
   );
-  --checkpoint-messages-gradient-start-raw-hsl: 308.75
+  --checkpoint-messages-gradient-start-hsl: 308.75
     calc(var(--saturation-factor, 1) * 98.969%) 61.961%;
-  --checkpoint-messages-primary-raw: hsl(
-    var(--checkpoint-messages-primary-raw-hsl) / 1
+  --checkpoint-messages-primary: hsl(
+    var(--checkpoint-messages-primary-hsl) / 1
   );
-  --checkpoint-messages-primary-raw-hsl: 315.084
+  --checkpoint-messages-primary-hsl: 315.084
     calc(var(--saturation-factor, 1) * 100%) 64.902%;
-  --checkpoint-messages-secondary-raw: hsl(
-    var(--checkpoint-messages-secondary-raw-hsl) / 1
+  --checkpoint-messages-secondary: hsl(
+    var(--checkpoint-messages-secondary-hsl) / 1
   );
-  --checkpoint-messages-secondary-raw-hsl: 315.319
+  --checkpoint-messages-secondary-hsl: 315.319
     calc(var(--saturation-factor, 1) * 70.854%) 39.02%;
-  --checkpoint-persona-eight-background-overlay-raw: hsl(
-    var(--checkpoint-persona-eight-background-overlay-raw-hsl) / 1
+  --checkpoint-persona-eight-background-overlay: hsl(
+    var(--checkpoint-persona-eight-background-overlay-hsl) / 1
   );
-  --checkpoint-persona-eight-background-overlay-raw-hsl: 32
+  --checkpoint-persona-eight-background-overlay-hsl: 32
     calc(var(--saturation-factor, 1) * 60%) 9.804%;
-  --checkpoint-persona-eight-gradient-end-raw: hsl(
-    var(--checkpoint-persona-eight-gradient-end-raw-hsl) / 1
+  --checkpoint-persona-eight-gradient-end: hsl(
+    var(--checkpoint-persona-eight-gradient-end-hsl) / 1
   );
-  --checkpoint-persona-eight-gradient-end-raw-hsl: 31.154
+  --checkpoint-persona-eight-gradient-end-hsl: 31.154
     calc(var(--saturation-factor, 1) * 55.319%) 18.431%;
-  --checkpoint-persona-eight-gradient-start-raw: hsl(
-    var(--checkpoint-persona-eight-gradient-start-raw-hsl) / 1
+  --checkpoint-persona-eight-gradient-start: hsl(
+    var(--checkpoint-persona-eight-gradient-start-hsl) / 1
   );
-  --checkpoint-persona-eight-gradient-start-raw-hsl: 39.184
+  --checkpoint-persona-eight-gradient-start-hsl: 39.184
     calc(var(--saturation-factor, 1) * 56.322%) 65.882%;
-  --checkpoint-persona-eight-primary-raw: hsl(
-    var(--checkpoint-persona-eight-primary-raw-hsl) / 1
+  --checkpoint-persona-eight-primary: hsl(
+    var(--checkpoint-persona-eight-primary-hsl) / 1
   );
-  --checkpoint-persona-eight-primary-raw-hsl: 39.184
+  --checkpoint-persona-eight-primary-hsl: 39.184
     calc(var(--saturation-factor, 1) * 56.322%) 65.882%;
-  --checkpoint-persona-eight-secondary-raw: hsl(
-    var(--checkpoint-persona-eight-secondary-raw-hsl) / 1
+  --checkpoint-persona-eight-secondary: hsl(
+    var(--checkpoint-persona-eight-secondary-hsl) / 1
   );
-  --checkpoint-persona-eight-secondary-raw-hsl: 39.612
+  --checkpoint-persona-eight-secondary-hsl: 39.612
     calc(var(--saturation-factor, 1) * 42.387%) 47.647%;
-  --checkpoint-persona-five-background-overlay-raw: hsl(
-    var(--checkpoint-persona-five-background-overlay-raw-hsl) / 1
+  --checkpoint-persona-five-background-overlay: hsl(
+    var(--checkpoint-persona-five-background-overlay-hsl) / 1
   );
-  --checkpoint-persona-five-background-overlay-raw-hsl: 339.545
+  --checkpoint-persona-five-background-overlay-hsl: 339.545
     calc(var(--saturation-factor, 1) * 66.667%) 12.941%;
-  --checkpoint-persona-five-gradient-end-raw: hsl(
-    var(--checkpoint-persona-five-gradient-end-raw-hsl) / 1
+  --checkpoint-persona-five-gradient-end: hsl(
+    var(--checkpoint-persona-five-gradient-end-hsl) / 1
   );
-  --checkpoint-persona-five-gradient-end-raw-hsl: 339.231
+  --checkpoint-persona-five-gradient-end-hsl: 339.231
     calc(var(--saturation-factor, 1) * 67.241%) 22.745%;
-  --checkpoint-persona-five-gradient-start-raw: hsl(
-    var(--checkpoint-persona-five-gradient-start-raw-hsl) / 1
+  --checkpoint-persona-five-gradient-start: hsl(
+    var(--checkpoint-persona-five-gradient-start-hsl) / 1
   );
-  --checkpoint-persona-five-gradient-start-raw-hsl: 339.114
+  --checkpoint-persona-five-gradient-start-hsl: 339.114
     calc(var(--saturation-factor, 1) * 90.805%) 65.882%;
-  --checkpoint-persona-five-primary-raw: hsl(
-    var(--checkpoint-persona-five-primary-raw-hsl) / 1
+  --checkpoint-persona-five-primary: hsl(
+    var(--checkpoint-persona-five-primary-hsl) / 1
   );
-  --checkpoint-persona-five-primary-raw-hsl: 339.114
+  --checkpoint-persona-five-primary-hsl: 339.114
     calc(var(--saturation-factor, 1) * 90.805%) 65.882%;
-  --checkpoint-persona-five-secondary-raw: hsl(
-    var(--checkpoint-persona-five-secondary-raw-hsl) / 1
+  --checkpoint-persona-five-secondary: hsl(
+    var(--checkpoint-persona-five-secondary-hsl) / 1
   );
-  --checkpoint-persona-five-secondary-raw-hsl: 338.983
+  --checkpoint-persona-five-secondary-hsl: 338.983
     calc(var(--saturation-factor, 1) * 71.66%) 48.431%;
-  --checkpoint-persona-four-background-overlay-raw: hsl(
-    var(--checkpoint-persona-four-background-overlay-raw-hsl) / 1
+  --checkpoint-persona-four-background-overlay: hsl(
+    var(--checkpoint-persona-four-background-overlay-hsl) / 1
   );
-  --checkpoint-persona-four-background-overlay-raw-hsl: 312.222
+  --checkpoint-persona-four-background-overlay-hsl: 312.222
     calc(var(--saturation-factor, 1) * 93.103%) 11.373%;
-  --checkpoint-persona-four-gradient-end-raw: hsl(
-    var(--checkpoint-persona-four-gradient-end-raw-hsl) / 1
+  --checkpoint-persona-four-gradient-end: hsl(
+    var(--checkpoint-persona-four-gradient-end-hsl) / 1
   );
-  --checkpoint-persona-four-gradient-end-raw-hsl: 7.2
+  --checkpoint-persona-four-gradient-end-hsl: 7.2
     calc(var(--saturation-factor, 1) * 53.191%) 9.216%;
-  --checkpoint-persona-four-gradient-start-raw: hsl(
-    var(--checkpoint-persona-four-gradient-start-raw-hsl) / 1
+  --checkpoint-persona-four-gradient-start: hsl(
+    var(--checkpoint-persona-four-gradient-start-hsl) / 1
   );
-  --checkpoint-persona-four-gradient-start-raw-hsl: 308.75
+  --checkpoint-persona-four-gradient-start-hsl: 308.75
     calc(var(--saturation-factor, 1) * 98.969%) 61.961%;
-  --checkpoint-persona-four-primary-raw: hsl(
-    var(--checkpoint-persona-four-primary-raw-hsl) / 1
+  --checkpoint-persona-four-primary: hsl(
+    var(--checkpoint-persona-four-primary-hsl) / 1
   );
-  --checkpoint-persona-four-primary-raw-hsl: 312.083
+  --checkpoint-persona-four-primary-hsl: 312.083
     calc(var(--saturation-factor, 1) * 84.706%) 66.667%;
-  --checkpoint-persona-four-secondary-raw: hsl(
-    var(--checkpoint-persona-four-secondary-raw-hsl) / 1
+  --checkpoint-persona-four-secondary: hsl(
+    var(--checkpoint-persona-four-secondary-hsl) / 1
   );
-  --checkpoint-persona-four-secondary-raw-hsl: 315.319
+  --checkpoint-persona-four-secondary-hsl: 315.319
     calc(var(--saturation-factor, 1) * 70.854%) 39.02%;
-  --checkpoint-persona-nine-background-overlay-raw: hsl(
-    var(--checkpoint-persona-nine-background-overlay-raw-hsl) / 1
+  --checkpoint-persona-nine-background-overlay: hsl(
+    var(--checkpoint-persona-nine-background-overlay-hsl) / 1
   );
-  --checkpoint-persona-nine-background-overlay-raw-hsl: 0
+  --checkpoint-persona-nine-background-overlay-hsl: 0
     calc(var(--saturation-factor, 1) * 0%) 14.902%;
-  --checkpoint-persona-nine-gradient-end-raw: hsl(
-    var(--checkpoint-persona-nine-gradient-end-raw-hsl) / 1
+  --checkpoint-persona-nine-gradient-end: hsl(
+    var(--checkpoint-persona-nine-gradient-end-hsl) / 1
   );
-  --checkpoint-persona-nine-gradient-end-raw-hsl: 0
+  --checkpoint-persona-nine-gradient-end-hsl: 0
     calc(var(--saturation-factor, 1) * 0%) 24.706%;
-  --checkpoint-persona-nine-gradient-start-raw: hsl(
-    var(--checkpoint-persona-nine-gradient-start-raw-hsl) / 1
+  --checkpoint-persona-nine-gradient-start: hsl(
+    var(--checkpoint-persona-nine-gradient-start-hsl) / 1
   );
-  --checkpoint-persona-nine-gradient-start-raw-hsl: 0
+  --checkpoint-persona-nine-gradient-start-hsl: 0
     calc(var(--saturation-factor, 1) * 0%) 93.333%;
-  --checkpoint-persona-nine-primary-raw: hsl(
-    var(--checkpoint-persona-nine-primary-raw-hsl) / 1
+  --checkpoint-persona-nine-primary: hsl(
+    var(--checkpoint-persona-nine-primary-hsl) / 1
   );
-  --checkpoint-persona-nine-primary-raw-hsl: 0
+  --checkpoint-persona-nine-primary-hsl: 0
     calc(var(--saturation-factor, 1) * 0%) 93.333%;
-  --checkpoint-persona-nine-secondary-raw: hsl(
-    var(--checkpoint-persona-nine-secondary-raw-hsl) / 1
+  --checkpoint-persona-nine-secondary: hsl(
+    var(--checkpoint-persona-nine-secondary-hsl) / 1
   );
-  --checkpoint-persona-nine-secondary-raw-hsl: 0
+  --checkpoint-persona-nine-secondary-hsl: 0
     calc(var(--saturation-factor, 1) * 0%) 66.275%;
-  --checkpoint-persona-one-background-overlay-raw: hsl(
-    var(--checkpoint-persona-one-background-overlay-raw-hsl) / 1
+  --checkpoint-persona-one-background-overlay: hsl(
+    var(--checkpoint-persona-one-background-overlay-hsl) / 1
   );
-  --checkpoint-persona-one-background-overlay-raw-hsl: 169.5
+  --checkpoint-persona-one-background-overlay-hsl: 169.5
     calc(var(--saturation-factor, 1) * 76.923%) 10.196%;
-  --checkpoint-persona-one-gradient-end-raw: hsl(
-    var(--checkpoint-persona-one-gradient-end-raw-hsl) / 1
+  --checkpoint-persona-one-gradient-end: hsl(
+    var(--checkpoint-persona-one-gradient-end-hsl) / 1
   );
-  --checkpoint-persona-one-gradient-end-raw-hsl: 168.98
+  --checkpoint-persona-one-gradient-end-hsl: 168.98
     calc(var(--saturation-factor, 1) * 59.036%) 16.275%;
-  --checkpoint-persona-one-gradient-start-raw: hsl(
-    var(--checkpoint-persona-one-gradient-start-raw-hsl) / 1
+  --checkpoint-persona-one-gradient-start: hsl(
+    var(--checkpoint-persona-one-gradient-start-hsl) / 1
   );
-  --checkpoint-persona-one-gradient-start-raw-hsl: 169.811
+  --checkpoint-persona-one-gradient-start-hsl: 169.811
     calc(var(--saturation-factor, 1) * 97.546%) 68.039%;
-  --checkpoint-persona-one-primary-raw: hsl(
-    var(--checkpoint-persona-one-primary-raw-hsl) / 1
+  --checkpoint-persona-one-primary: hsl(
+    var(--checkpoint-persona-one-primary-hsl) / 1
   );
-  --checkpoint-persona-one-primary-raw-hsl: 169.811
+  --checkpoint-persona-one-primary-hsl: 169.811
     calc(var(--saturation-factor, 1) * 97.546%) 68.039%;
-  --checkpoint-persona-one-secondary-raw: hsl(
-    var(--checkpoint-persona-one-secondary-raw-hsl) / 1
+  --checkpoint-persona-one-secondary: hsl(
+    var(--checkpoint-persona-one-secondary-hsl) / 1
   );
-  --checkpoint-persona-one-secondary-raw-hsl: 169.672
+  --checkpoint-persona-one-secondary-hsl: 169.672
     calc(var(--saturation-factor, 1) * 68.539%) 34.902%;
-  --checkpoint-persona-seven-background-overlay-raw: hsl(
-    var(--checkpoint-persona-seven-background-overlay-raw-hsl) / 1
+  --checkpoint-persona-seven-background-overlay: hsl(
+    var(--checkpoint-persona-seven-background-overlay-hsl) / 1
   );
-  --checkpoint-persona-seven-background-overlay-raw-hsl: 44.516
+  --checkpoint-persona-seven-background-overlay-hsl: 44.516
     calc(var(--saturation-factor, 1) * 100%) 6.078%;
-  --checkpoint-persona-seven-gradient-end-raw: hsl(
-    var(--checkpoint-persona-seven-gradient-end-raw-hsl) / 1
+  --checkpoint-persona-seven-gradient-end: hsl(
+    var(--checkpoint-persona-seven-gradient-end-hsl) / 1
   );
-  --checkpoint-persona-seven-gradient-end-raw-hsl: 30.361
+  --checkpoint-persona-seven-gradient-end-hsl: 30.361
     calc(var(--saturation-factor, 1) * 85.567%) 19.02%;
-  --checkpoint-persona-seven-gradient-start-raw: hsl(
-    var(--checkpoint-persona-seven-gradient-start-raw-hsl) / 1
+  --checkpoint-persona-seven-gradient-start: hsl(
+    var(--checkpoint-persona-seven-gradient-start-hsl) / 1
   );
-  --checkpoint-persona-seven-gradient-start-raw-hsl: 49.891
+  --checkpoint-persona-seven-gradient-start-hsl: 49.891
     calc(var(--saturation-factor, 1) * 100%) 63.922%;
-  --checkpoint-persona-seven-primary-raw: hsl(
-    var(--checkpoint-persona-seven-primary-raw-hsl) / 1
+  --checkpoint-persona-seven-primary: hsl(
+    var(--checkpoint-persona-seven-primary-hsl) / 1
   );
-  --checkpoint-persona-seven-primary-raw-hsl: 49.891
+  --checkpoint-persona-seven-primary-hsl: 49.891
     calc(var(--saturation-factor, 1) * 100%) 63.922%;
-  --checkpoint-persona-seven-secondary-raw: hsl(
-    var(--checkpoint-persona-seven-secondary-raw-hsl) / 1
+  --checkpoint-persona-seven-secondary: hsl(
+    var(--checkpoint-persona-seven-secondary-hsl) / 1
   );
-  --checkpoint-persona-seven-secondary-raw-hsl: 49.935
+  --checkpoint-persona-seven-secondary-hsl: 49.935
     calc(var(--saturation-factor, 1) * 74.163%) 40.98%;
-  --checkpoint-persona-six-background-overlay-raw: hsl(
-    var(--checkpoint-persona-six-background-overlay-raw-hsl) / 1
+  --checkpoint-persona-six-background-overlay: hsl(
+    var(--checkpoint-persona-six-background-overlay-hsl) / 1
   );
-  --checkpoint-persona-six-background-overlay-raw-hsl: 27
+  --checkpoint-persona-six-background-overlay-hsl: 27
     calc(var(--saturation-factor, 1) * 80%) 9.804%;
-  --checkpoint-persona-six-gradient-end-raw: hsl(
-    var(--checkpoint-persona-six-gradient-end-raw-hsl) / 1
+  --checkpoint-persona-six-gradient-end: hsl(
+    var(--checkpoint-persona-six-gradient-end-hsl) / 1
   );
-  --checkpoint-persona-six-gradient-end-raw-hsl: 28.8
+  --checkpoint-persona-six-gradient-end-hsl: 28.8
     calc(var(--saturation-factor, 1) * 53.191%) 9.216%;
-  --checkpoint-persona-six-gradient-start-raw: hsl(
-    var(--checkpoint-persona-six-gradient-start-raw-hsl) / 1
+  --checkpoint-persona-six-gradient-start: hsl(
+    var(--checkpoint-persona-six-gradient-start-hsl) / 1
   );
-  --checkpoint-persona-six-gradient-start-raw-hsl: 27.595
+  --checkpoint-persona-six-gradient-start-hsl: 27.595
     calc(var(--saturation-factor, 1) * 100%) 53.529%;
-  --checkpoint-persona-six-primary-raw: hsl(
-    var(--checkpoint-persona-six-primary-raw-hsl) / 1
+  --checkpoint-persona-six-primary: hsl(
+    var(--checkpoint-persona-six-primary-hsl) / 1
   );
-  --checkpoint-persona-six-primary-raw-hsl: 26.834
+  --checkpoint-persona-six-primary-hsl: 26.834
     calc(var(--saturation-factor, 1) * 100%) 60.98%;
-  --checkpoint-persona-six-secondary-raw: hsl(
-    var(--checkpoint-persona-six-secondary-raw-hsl) / 1
+  --checkpoint-persona-six-secondary: hsl(
+    var(--checkpoint-persona-six-secondary-hsl) / 1
   );
-  --checkpoint-persona-six-secondary-raw-hsl: 26.809
+  --checkpoint-persona-six-secondary-hsl: 26.809
     calc(var(--saturation-factor, 1) * 86.239%) 42.745%;
-  --checkpoint-persona-three-background-overlay-raw: hsl(
-    var(--checkpoint-persona-three-background-overlay-raw-hsl) / 1
+  --checkpoint-persona-three-background-overlay: hsl(
+    var(--checkpoint-persona-three-background-overlay-hsl) / 1
   );
-  --checkpoint-persona-three-background-overlay-raw-hsl: 262.105
+  --checkpoint-persona-three-background-overlay-hsl: 262.105
     calc(var(--saturation-factor, 1) * 80.282%) 13.922%;
-  --checkpoint-persona-three-gradient-end-raw: hsl(
-    var(--checkpoint-persona-three-gradient-end-raw-hsl) / 1
+  --checkpoint-persona-three-gradient-end: hsl(
+    var(--checkpoint-persona-three-gradient-end-hsl) / 1
   );
-  --checkpoint-persona-three-gradient-end-raw-hsl: 283.2
+  --checkpoint-persona-three-gradient-end-hsl: 283.2
     calc(var(--saturation-factor, 1) * 53.191%) 9.216%;
-  --checkpoint-persona-three-gradient-start-raw: hsl(
-    var(--checkpoint-persona-three-gradient-start-raw-hsl) / 1
+  --checkpoint-persona-three-gradient-start: hsl(
+    var(--checkpoint-persona-three-gradient-start-hsl) / 1
   );
-  --checkpoint-persona-three-gradient-start-raw-hsl: 260.114
+  --checkpoint-persona-three-gradient-start-hsl: 260.114
     calc(var(--saturation-factor, 1) * 87.129%) 60.392%;
-  --checkpoint-persona-three-primary-raw: hsl(
-    var(--checkpoint-persona-three-primary-raw-hsl) / 1
+  --checkpoint-persona-three-primary: hsl(
+    var(--checkpoint-persona-three-primary-hsl) / 1
   );
-  --checkpoint-persona-three-primary-raw-hsl: 269.011
+  --checkpoint-persona-three-primary-hsl: 269.011
     calc(var(--saturation-factor, 1) * 88.35%) 79.804%;
-  --checkpoint-persona-three-secondary-raw: hsl(
-    var(--checkpoint-persona-three-secondary-raw-hsl) / 1
+  --checkpoint-persona-three-secondary: hsl(
+    var(--checkpoint-persona-three-secondary-hsl) / 1
   );
-  --checkpoint-persona-three-secondary-raw-hsl: 268.837
+  --checkpoint-persona-three-secondary-hsl: 268.837
     calc(var(--saturation-factor, 1) * 72.067%) 64.902%;
-  --checkpoint-persona-two-background-overlay-raw: hsl(
-    var(--checkpoint-persona-two-background-overlay-raw-hsl) / 1
+  --checkpoint-persona-two-background-overlay: hsl(
+    var(--checkpoint-persona-two-background-overlay-hsl) / 1
   );
-  --checkpoint-persona-two-background-overlay-raw-hsl: 260.426
+  --checkpoint-persona-two-background-overlay-hsl: 260.426
     calc(var(--saturation-factor, 1) * 70.149%) 13.137%;
-  --checkpoint-persona-two-gradient-end-raw: hsl(
-    var(--checkpoint-persona-two-gradient-end-raw-hsl) / 1
+  --checkpoint-persona-two-gradient-end: hsl(
+    var(--checkpoint-persona-two-gradient-end-hsl) / 1
   );
-  --checkpoint-persona-two-gradient-end-raw-hsl: 259.481
+  --checkpoint-persona-two-gradient-end-hsl: 259.481
     calc(var(--saturation-factor, 1) * 79.381%) 19.02%;
-  --checkpoint-persona-two-gradient-start-raw: hsl(
-    var(--checkpoint-persona-two-gradient-start-raw-hsl) / 1
+  --checkpoint-persona-two-gradient-start: hsl(
+    var(--checkpoint-persona-two-gradient-start-hsl) / 1
   );
-  --checkpoint-persona-two-gradient-start-raw-hsl: 256.018
+  --checkpoint-persona-two-gradient-start-hsl: 256.018
     calc(var(--saturation-factor, 1) * 96.507%) 55.098%;
-  --checkpoint-persona-two-primary-raw: hsl(
-    var(--checkpoint-persona-two-primary-raw-hsl) / 1
+  --checkpoint-persona-two-primary: hsl(
+    var(--checkpoint-persona-two-primary-hsl) / 1
   );
-  --checkpoint-persona-two-primary-raw-hsl: 217.982
+  --checkpoint-persona-two-primary-hsl: 217.982
     calc(var(--saturation-factor, 1) * 93.162%) 77.059%;
-  --checkpoint-persona-two-secondary-raw: hsl(
-    var(--checkpoint-persona-two-secondary-raw-hsl) / 1
+  --checkpoint-persona-two-secondary: hsl(
+    var(--checkpoint-persona-two-secondary-hsl) / 1
   );
-  --checkpoint-persona-two-secondary-raw-hsl: 234
+  --checkpoint-persona-two-secondary-hsl: 234
     calc(var(--saturation-factor, 1) * 39.823%) 55.686%;
-  --checkpoint-persona-zero-background-overlay-raw: hsl(
-    var(--checkpoint-persona-zero-background-overlay-raw-hsl) / 1
+  --checkpoint-persona-zero-background-overlay: hsl(
+    var(--checkpoint-persona-zero-background-overlay-hsl) / 1
   );
-  --checkpoint-persona-zero-background-overlay-raw-hsl: 148.8
+  --checkpoint-persona-zero-background-overlay-hsl: 148.8
     calc(var(--saturation-factor, 1) * 60.976%) 8.039%;
-  --checkpoint-persona-zero-gradient-end-raw: hsl(
-    var(--checkpoint-persona-zero-gradient-end-raw-hsl) / 1
+  --checkpoint-persona-zero-gradient-end: hsl(
+    var(--checkpoint-persona-zero-gradient-end-hsl) / 1
   );
-  --checkpoint-persona-zero-gradient-end-raw-hsl: 149.333
+  --checkpoint-persona-zero-gradient-end-hsl: 149.333
     calc(var(--saturation-factor, 1) * 56.962%) 15.49%;
-  --checkpoint-persona-zero-gradient-start-raw: hsl(
-    var(--checkpoint-persona-zero-gradient-start-raw-hsl) / 1
+  --checkpoint-persona-zero-gradient-start: hsl(
+    var(--checkpoint-persona-zero-gradient-start-hsl) / 1
   );
-  --checkpoint-persona-zero-gradient-start-raw-hsl: 149.302
+  --checkpoint-persona-zero-gradient-start-hsl: 149.302
     calc(var(--saturation-factor, 1) * 50.588%) 50%;
-  --checkpoint-persona-zero-primary-raw: hsl(
-    var(--checkpoint-persona-zero-primary-raw-hsl) / 1
+  --checkpoint-persona-zero-primary: hsl(
+    var(--checkpoint-persona-zero-primary-hsl) / 1
   );
-  --checkpoint-persona-zero-primary-raw-hsl: 143.804
+  --checkpoint-persona-zero-primary-hsl: 143.804
     calc(var(--saturation-factor, 1) * 83.636%) 56.863%;
-  --checkpoint-persona-zero-secondary-raw: hsl(
-    var(--checkpoint-persona-zero-secondary-raw-hsl) / 1
+  --checkpoint-persona-zero-secondary: hsl(
+    var(--checkpoint-persona-zero-secondary-hsl) / 1
   );
-  --checkpoint-persona-zero-secondary-raw-hsl: 143.673
+  --checkpoint-persona-zero-secondary-hsl: 143.673
     calc(var(--saturation-factor, 1) * 78.61%) 36.667%;
-  --checkpoint-quests-gradient-end-raw: hsl(
-    var(--checkpoint-quests-gradient-end-raw-hsl) / 1
+  --checkpoint-quests-gradient-end: hsl(
+    var(--checkpoint-quests-gradient-end-hsl) / 1
   );
-  --checkpoint-quests-gradient-end-raw-hsl: 283.2
+  --checkpoint-quests-gradient-end-hsl: 283.2
     calc(var(--saturation-factor, 1) * 53.191%) 9.216%;
-  --checkpoint-quests-gradient-start-raw: hsl(
-    var(--checkpoint-quests-gradient-start-raw-hsl) / 1
+  --checkpoint-quests-gradient-start: hsl(
+    var(--checkpoint-quests-gradient-start-hsl) / 1
   );
-  --checkpoint-quests-gradient-start-raw-hsl: 260.114
+  --checkpoint-quests-gradient-start-hsl: 260.114
     calc(var(--saturation-factor, 1) * 87.129%) 60.392%;
-  --checkpoint-quests-primary-raw: hsl(
-    var(--checkpoint-quests-primary-raw-hsl) / 1
-  );
-  --checkpoint-quests-primary-raw-hsl: 269.011
+  --checkpoint-quests-primary: hsl(var(--checkpoint-quests-primary-hsl) / 1);
+  --checkpoint-quests-primary-hsl: 269.011
     calc(var(--saturation-factor, 1) * 88.35%) 79.804%;
-  --checkpoint-quests-secondary-raw: hsl(
-    var(--checkpoint-quests-secondary-raw-hsl) / 1
+  --checkpoint-quests-secondary: hsl(
+    var(--checkpoint-quests-secondary-hsl) / 1
   );
-  --checkpoint-quests-secondary-raw-hsl: 268.837
+  --checkpoint-quests-secondary-hsl: 268.837
     calc(var(--saturation-factor, 1) * 72.067%) 64.902%;
-  --checkpoint-voice-gradient-end-raw: hsl(
-    var(--checkpoint-voice-gradient-end-raw-hsl) / 1
+  --checkpoint-voice-gradient-end: hsl(
+    var(--checkpoint-voice-gradient-end-hsl) / 1
   );
-  --checkpoint-voice-gradient-end-raw-hsl: 30.361
+  --checkpoint-voice-gradient-end-hsl: 30.361
     calc(var(--saturation-factor, 1) * 85.567%) 19.02%;
-  --checkpoint-voice-gradient-start-raw: hsl(
-    var(--checkpoint-voice-gradient-start-raw-hsl) / 1
+  --checkpoint-voice-gradient-start: hsl(
+    var(--checkpoint-voice-gradient-start-hsl) / 1
   );
-  --checkpoint-voice-gradient-start-raw-hsl: 49.891
+  --checkpoint-voice-gradient-start-hsl: 49.891
     calc(var(--saturation-factor, 1) * 100%) 63.922%;
-  --checkpoint-voice-primary-raw: hsl(
-    var(--checkpoint-voice-primary-raw-hsl) / 1
-  );
-  --checkpoint-voice-primary-raw-hsl: 49.891
+  --checkpoint-voice-primary: hsl(var(--checkpoint-voice-primary-hsl) / 1);
+  --checkpoint-voice-primary-hsl: 49.891
     calc(var(--saturation-factor, 1) * 100%) 63.922%;
-  --checkpoint-voice-secondary-raw: hsl(
-    var(--checkpoint-voice-secondary-raw-hsl) / 1
-  );
-  --checkpoint-voice-secondary-raw-hsl: 49.935
+  --checkpoint-voice-secondary: hsl(var(--checkpoint-voice-secondary-hsl) / 1);
+  --checkpoint-voice-secondary-hsl: 49.935
     calc(var(--saturation-factor, 1) * 74.163%) 40.98%;
-  --checkpoint-welcome-gradient-end-raw: hsl(
-    var(--checkpoint-welcome-gradient-end-raw-hsl) / 1
+  --checkpoint-welcome-gradient-end: hsl(
+    var(--checkpoint-welcome-gradient-end-hsl) / 1
   );
-  --checkpoint-welcome-gradient-end-raw-hsl: 149.333
+  --checkpoint-welcome-gradient-end-hsl: 149.333
     calc(var(--saturation-factor, 1) * 56.962%) 15.49%;
-  --checkpoint-welcome-gradient-start-raw: hsl(
-    var(--checkpoint-welcome-gradient-start-raw-hsl) / 1
+  --checkpoint-welcome-gradient-start: hsl(
+    var(--checkpoint-welcome-gradient-start-hsl) / 1
   );
-  --checkpoint-welcome-gradient-start-raw-hsl: 149.302
+  --checkpoint-welcome-gradient-start-hsl: 149.302
     calc(var(--saturation-factor, 1) * 50.588%) 50%;
-  --checkpoint-welcome-primary-raw: hsl(
-    var(--checkpoint-welcome-primary-raw-hsl) / 1
-  );
-  --checkpoint-welcome-primary-raw-hsl: 143.316
+  --checkpoint-welcome-primary: hsl(var(--checkpoint-welcome-primary-hsl) / 1);
+  --checkpoint-welcome-primary-hsl: 143.316
     calc(var(--saturation-factor, 1) * 83.55%) 54.706%;
-  --checkpoint-welcome-secondary-raw: hsl(
-    var(--checkpoint-welcome-secondary-raw-hsl) / 1
+  --checkpoint-welcome-secondary: hsl(
+    var(--checkpoint-welcome-secondary-hsl) / 1
   );
-  --checkpoint-welcome-secondary-raw-hsl: 143.673
+  --checkpoint-welcome-secondary-hsl: 143.673
     calc(var(--saturation-factor, 1) * 78.61%) 36.667%;
   --crunchyroll: hsl(var(--crunchyroll-hsl) / 1);
   --crunchyroll-hsl: 29.289 calc(var(--saturation-factor, 1) * 92.952%) 55.49%;
@@ -81074,194 +81470,6 @@ html.disable-forced-colors * {
     var(--opacity-12-hsl) / 0.12156862745098039
   );
   --checkbox-icon-active: var(--neutral-1);
-  --checkpoint-emojis-gradient-end: var(--checkpoint-emojis-gradient-end-raw);
-  --checkpoint-emojis-gradient-start: var(
-    --checkpoint-emojis-gradient-start-raw
-  );
-  --checkpoint-emojis-primary: var(--checkpoint-emojis-primary-raw);
-  --checkpoint-emojis-secondary: var(--checkpoint-emojis-secondary-raw);
-  --checkpoint-end-gradient-end: var(--checkpoint-end-gradient-end-raw);
-  --checkpoint-end-gradient-start: var(--checkpoint-end-gradient-start-raw);
-  --checkpoint-end-primary: var(--checkpoint-end-primary-raw);
-  --checkpoint-end-secondary: var(--checkpoint-end-secondary-raw);
-  --checkpoint-friends-gradient-end: var(--checkpoint-friends-gradient-end-raw);
-  --checkpoint-friends-gradient-start: var(
-    --checkpoint-friends-gradient-start-raw
-  );
-  --checkpoint-friends-primary: var(--checkpoint-friends-primary-raw);
-  --checkpoint-friends-secondary: var(--checkpoint-friends-secondary-raw);
-  --checkpoint-gaming-gradient-end: var(--checkpoint-gaming-gradient-end-raw);
-  --checkpoint-gaming-gradient-start: var(
-    --checkpoint-gaming-gradient-start-raw
-  );
-  --checkpoint-gaming-primary: var(--checkpoint-gaming-primary-raw);
-  --checkpoint-gaming-secondary: var(--checkpoint-gaming-secondary-raw);
-  --checkpoint-guilds-gradient-end: var(--checkpoint-guilds-gradient-end-raw);
-  --checkpoint-guilds-gradient-start: var(
-    --checkpoint-guilds-gradient-start-raw
-  );
-  --checkpoint-guilds-primary: var(--checkpoint-guilds-primary-raw);
-  --checkpoint-guilds-secondary: var(--checkpoint-guilds-secondary-raw);
-  --checkpoint-messages-gradient-end: var(
-    --checkpoint-messages-gradient-end-raw
-  );
-  --checkpoint-messages-gradient-start: var(
-    --checkpoint-messages-gradient-start-raw
-  );
-  --checkpoint-messages-primary: var(--checkpoint-messages-primary-raw);
-  --checkpoint-messages-secondary: var(--checkpoint-messages-secondary-raw);
-  --checkpoint-persona-eight-background-overlay: var(
-    --checkpoint-persona-eight-background-overlay-raw
-  );
-  --checkpoint-persona-eight-gradient-end: var(
-    --checkpoint-persona-eight-gradient-end-raw
-  );
-  --checkpoint-persona-eight-gradient-start: var(
-    --checkpoint-persona-eight-gradient-start-raw
-  );
-  --checkpoint-persona-eight-primary: var(
-    --checkpoint-persona-eight-primary-raw
-  );
-  --checkpoint-persona-eight-secondary: var(
-    --checkpoint-persona-eight-secondary-raw
-  );
-  --checkpoint-persona-five-background-overlay: var(
-    --checkpoint-persona-five-background-overlay-raw
-  );
-  --checkpoint-persona-five-gradient-end: var(
-    --checkpoint-persona-five-gradient-end-raw
-  );
-  --checkpoint-persona-five-gradient-start: var(
-    --checkpoint-persona-five-gradient-start-raw
-  );
-  --checkpoint-persona-five-primary: var(--checkpoint-persona-five-primary-raw);
-  --checkpoint-persona-five-secondary: var(
-    --checkpoint-persona-five-secondary-raw
-  );
-  --checkpoint-persona-four-background-overlay: var(
-    --checkpoint-persona-four-background-overlay-raw
-  );
-  --checkpoint-persona-four-gradient-end: var(
-    --checkpoint-persona-four-gradient-end-raw
-  );
-  --checkpoint-persona-four-gradient-start: var(
-    --checkpoint-persona-four-gradient-start-raw
-  );
-  --checkpoint-persona-four-primary: var(--checkpoint-persona-four-primary-raw);
-  --checkpoint-persona-four-secondary: var(
-    --checkpoint-persona-four-secondary-raw
-  );
-  --checkpoint-persona-nine-background-overlay: var(
-    --checkpoint-persona-nine-background-overlay-raw
-  );
-  --checkpoint-persona-nine-gradient-end: var(
-    --checkpoint-persona-nine-gradient-end-raw
-  );
-  --checkpoint-persona-nine-gradient-start: var(
-    --checkpoint-persona-nine-gradient-start-raw
-  );
-  --checkpoint-persona-nine-primary: var(--checkpoint-persona-nine-primary-raw);
-  --checkpoint-persona-nine-secondary: var(
-    --checkpoint-persona-nine-secondary-raw
-  );
-  --checkpoint-persona-one-background-overlay: var(
-    --checkpoint-persona-one-background-overlay-raw
-  );
-  --checkpoint-persona-one-gradient-end: var(
-    --checkpoint-persona-one-gradient-end-raw
-  );
-  --checkpoint-persona-one-gradient-start: var(
-    --checkpoint-persona-one-gradient-start-raw
-  );
-  --checkpoint-persona-one-primary: var(--checkpoint-persona-one-primary-raw);
-  --checkpoint-persona-one-secondary: var(
-    --checkpoint-persona-one-secondary-raw
-  );
-  --checkpoint-persona-seven-background-overlay: var(
-    --checkpoint-persona-seven-background-overlay-raw
-  );
-  --checkpoint-persona-seven-gradient-end: var(
-    --checkpoint-persona-seven-gradient-end-raw
-  );
-  --checkpoint-persona-seven-gradient-start: var(
-    --checkpoint-persona-seven-gradient-start-raw
-  );
-  --checkpoint-persona-seven-primary: var(
-    --checkpoint-persona-seven-primary-raw
-  );
-  --checkpoint-persona-seven-secondary: var(
-    --checkpoint-persona-seven-secondary-raw
-  );
-  --checkpoint-persona-six-background-overlay: var(
-    --checkpoint-persona-six-background-overlay-raw
-  );
-  --checkpoint-persona-six-gradient-end: var(
-    --checkpoint-persona-six-gradient-end-raw
-  );
-  --checkpoint-persona-six-gradient-start: var(
-    --checkpoint-persona-six-gradient-start-raw
-  );
-  --checkpoint-persona-six-primary: var(--checkpoint-persona-six-primary-raw);
-  --checkpoint-persona-six-secondary: var(
-    --checkpoint-persona-six-secondary-raw
-  );
-  --checkpoint-persona-three-background-overlay: var(
-    --checkpoint-persona-three-background-overlay-raw
-  );
-  --checkpoint-persona-three-gradient-end: var(
-    --checkpoint-persona-three-gradient-end-raw
-  );
-  --checkpoint-persona-three-gradient-start: var(
-    --checkpoint-persona-three-gradient-start-raw
-  );
-  --checkpoint-persona-three-primary: var(
-    --checkpoint-persona-three-primary-raw
-  );
-  --checkpoint-persona-three-secondary: var(
-    --checkpoint-persona-three-secondary-raw
-  );
-  --checkpoint-persona-two-background-overlay: var(
-    --checkpoint-persona-two-background-overlay-raw
-  );
-  --checkpoint-persona-two-gradient-end: var(
-    --checkpoint-persona-two-gradient-end-raw
-  );
-  --checkpoint-persona-two-gradient-start: var(
-    --checkpoint-persona-two-gradient-start-raw
-  );
-  --checkpoint-persona-two-primary: var(--checkpoint-persona-two-primary-raw);
-  --checkpoint-persona-two-secondary: var(
-    --checkpoint-persona-two-secondary-raw
-  );
-  --checkpoint-persona-zero-background-overlay: var(
-    --checkpoint-persona-zero-background-overlay-raw
-  );
-  --checkpoint-persona-zero-gradient-end: var(
-    --checkpoint-persona-zero-gradient-end-raw
-  );
-  --checkpoint-persona-zero-gradient-start: var(
-    --checkpoint-persona-zero-gradient-start-raw
-  );
-  --checkpoint-persona-zero-primary: var(--checkpoint-persona-zero-primary-raw);
-  --checkpoint-persona-zero-secondary: var(
-    --checkpoint-persona-zero-secondary-raw
-  );
-  --checkpoint-quests-gradient-end: var(--checkpoint-quests-gradient-end-raw);
-  --checkpoint-quests-gradient-start: var(
-    --checkpoint-quests-gradient-start-raw
-  );
-  --checkpoint-quests-primary: var(--checkpoint-quests-primary-raw);
-  --checkpoint-quests-secondary: var(--checkpoint-quests-secondary-raw);
-  --checkpoint-voice-gradient-end: var(--checkpoint-voice-gradient-end-raw);
-  --checkpoint-voice-gradient-start: var(--checkpoint-voice-gradient-start-raw);
-  --checkpoint-voice-primary: var(--checkpoint-voice-primary-raw);
-  --checkpoint-voice-secondary: var(--checkpoint-voice-secondary-raw);
-  --checkpoint-welcome-gradient-end: var(--checkpoint-welcome-gradient-end-raw);
-  --checkpoint-welcome-gradient-start: var(
-    --checkpoint-welcome-gradient-start-raw
-  );
-  --checkpoint-welcome-primary: var(--checkpoint-welcome-primary-raw);
-  --checkpoint-welcome-secondary: var(--checkpoint-welcome-secondary-raw);
   --chip-blurple-dark-background: var(--blurple-70);
   --chip-blurple-dark-text: var(--blurple-1);
   --chip-blurple-light-background: var(--blurple-20);
@@ -82203,522 +82411,6 @@ html.disable-forced-colors * {
       var(--neutral-27) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
-    );
-    --checkpoint-emojis-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-primary: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-end-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-end-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-primary: color-mix(
-      in oklab,
-      var(--checkpoint-end-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-end-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-friends-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-friends-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-primary: color-mix(
-      in oklab,
-      var(--checkpoint-friends-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-friends-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-primary: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-primary: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-messages-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-messages-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-primary: color-mix(
-      in oklab,
-      var(--checkpoint-messages-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-messages-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-quests-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-quests-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-primary: color-mix(
-      in oklab,
-      var(--checkpoint-quests-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-quests-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-voice-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-voice-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-primary: color-mix(
-      in oklab,
-      var(--checkpoint-voice-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-voice-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-primary: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
     );
     --content-inventory-media-seekbar-container: color-mix(
       in oklab,
@@ -84225,194 +83917,6 @@ html.disable-forced-colors * {
     var(--opacity-28-hsl) / 0.2784313725490196
   );
   --checkbox-icon-active: var(--neutral-1);
-  --checkpoint-emojis-gradient-end: var(--checkpoint-emojis-gradient-end-raw);
-  --checkpoint-emojis-gradient-start: var(
-    --checkpoint-emojis-gradient-start-raw
-  );
-  --checkpoint-emojis-primary: var(--checkpoint-emojis-primary-raw);
-  --checkpoint-emojis-secondary: var(--checkpoint-emojis-secondary-raw);
-  --checkpoint-end-gradient-end: var(--checkpoint-end-gradient-end-raw);
-  --checkpoint-end-gradient-start: var(--checkpoint-end-gradient-start-raw);
-  --checkpoint-end-primary: var(--checkpoint-end-primary-raw);
-  --checkpoint-end-secondary: var(--checkpoint-end-secondary-raw);
-  --checkpoint-friends-gradient-end: var(--checkpoint-friends-gradient-end-raw);
-  --checkpoint-friends-gradient-start: var(
-    --checkpoint-friends-gradient-start-raw
-  );
-  --checkpoint-friends-primary: var(--checkpoint-friends-primary-raw);
-  --checkpoint-friends-secondary: var(--checkpoint-friends-secondary-raw);
-  --checkpoint-gaming-gradient-end: var(--checkpoint-gaming-gradient-end-raw);
-  --checkpoint-gaming-gradient-start: var(
-    --checkpoint-gaming-gradient-start-raw
-  );
-  --checkpoint-gaming-primary: var(--checkpoint-gaming-primary-raw);
-  --checkpoint-gaming-secondary: var(--checkpoint-gaming-secondary-raw);
-  --checkpoint-guilds-gradient-end: var(--checkpoint-guilds-gradient-end-raw);
-  --checkpoint-guilds-gradient-start: var(
-    --checkpoint-guilds-gradient-start-raw
-  );
-  --checkpoint-guilds-primary: var(--checkpoint-guilds-primary-raw);
-  --checkpoint-guilds-secondary: var(--checkpoint-guilds-secondary-raw);
-  --checkpoint-messages-gradient-end: var(
-    --checkpoint-messages-gradient-end-raw
-  );
-  --checkpoint-messages-gradient-start: var(
-    --checkpoint-messages-gradient-start-raw
-  );
-  --checkpoint-messages-primary: var(--checkpoint-messages-primary-raw);
-  --checkpoint-messages-secondary: var(--checkpoint-messages-secondary-raw);
-  --checkpoint-persona-eight-background-overlay: var(
-    --checkpoint-persona-eight-background-overlay-raw
-  );
-  --checkpoint-persona-eight-gradient-end: var(
-    --checkpoint-persona-eight-gradient-end-raw
-  );
-  --checkpoint-persona-eight-gradient-start: var(
-    --checkpoint-persona-eight-gradient-start-raw
-  );
-  --checkpoint-persona-eight-primary: var(
-    --checkpoint-persona-eight-primary-raw
-  );
-  --checkpoint-persona-eight-secondary: var(
-    --checkpoint-persona-eight-secondary-raw
-  );
-  --checkpoint-persona-five-background-overlay: var(
-    --checkpoint-persona-five-background-overlay-raw
-  );
-  --checkpoint-persona-five-gradient-end: var(
-    --checkpoint-persona-five-gradient-end-raw
-  );
-  --checkpoint-persona-five-gradient-start: var(
-    --checkpoint-persona-five-gradient-start-raw
-  );
-  --checkpoint-persona-five-primary: var(--checkpoint-persona-five-primary-raw);
-  --checkpoint-persona-five-secondary: var(
-    --checkpoint-persona-five-secondary-raw
-  );
-  --checkpoint-persona-four-background-overlay: var(
-    --checkpoint-persona-four-background-overlay-raw
-  );
-  --checkpoint-persona-four-gradient-end: var(
-    --checkpoint-persona-four-gradient-end-raw
-  );
-  --checkpoint-persona-four-gradient-start: var(
-    --checkpoint-persona-four-gradient-start-raw
-  );
-  --checkpoint-persona-four-primary: var(--checkpoint-persona-four-primary-raw);
-  --checkpoint-persona-four-secondary: var(
-    --checkpoint-persona-four-secondary-raw
-  );
-  --checkpoint-persona-nine-background-overlay: var(
-    --checkpoint-persona-nine-background-overlay-raw
-  );
-  --checkpoint-persona-nine-gradient-end: var(
-    --checkpoint-persona-nine-gradient-end-raw
-  );
-  --checkpoint-persona-nine-gradient-start: var(
-    --checkpoint-persona-nine-gradient-start-raw
-  );
-  --checkpoint-persona-nine-primary: var(--checkpoint-persona-nine-primary-raw);
-  --checkpoint-persona-nine-secondary: var(
-    --checkpoint-persona-nine-secondary-raw
-  );
-  --checkpoint-persona-one-background-overlay: var(
-    --checkpoint-persona-one-background-overlay-raw
-  );
-  --checkpoint-persona-one-gradient-end: var(
-    --checkpoint-persona-one-gradient-end-raw
-  );
-  --checkpoint-persona-one-gradient-start: var(
-    --checkpoint-persona-one-gradient-start-raw
-  );
-  --checkpoint-persona-one-primary: var(--checkpoint-persona-one-primary-raw);
-  --checkpoint-persona-one-secondary: var(
-    --checkpoint-persona-one-secondary-raw
-  );
-  --checkpoint-persona-seven-background-overlay: var(
-    --checkpoint-persona-seven-background-overlay-raw
-  );
-  --checkpoint-persona-seven-gradient-end: var(
-    --checkpoint-persona-seven-gradient-end-raw
-  );
-  --checkpoint-persona-seven-gradient-start: var(
-    --checkpoint-persona-seven-gradient-start-raw
-  );
-  --checkpoint-persona-seven-primary: var(
-    --checkpoint-persona-seven-primary-raw
-  );
-  --checkpoint-persona-seven-secondary: var(
-    --checkpoint-persona-seven-secondary-raw
-  );
-  --checkpoint-persona-six-background-overlay: var(
-    --checkpoint-persona-six-background-overlay-raw
-  );
-  --checkpoint-persona-six-gradient-end: var(
-    --checkpoint-persona-six-gradient-end-raw
-  );
-  --checkpoint-persona-six-gradient-start: var(
-    --checkpoint-persona-six-gradient-start-raw
-  );
-  --checkpoint-persona-six-primary: var(--checkpoint-persona-six-primary-raw);
-  --checkpoint-persona-six-secondary: var(
-    --checkpoint-persona-six-secondary-raw
-  );
-  --checkpoint-persona-three-background-overlay: var(
-    --checkpoint-persona-three-background-overlay-raw
-  );
-  --checkpoint-persona-three-gradient-end: var(
-    --checkpoint-persona-three-gradient-end-raw
-  );
-  --checkpoint-persona-three-gradient-start: var(
-    --checkpoint-persona-three-gradient-start-raw
-  );
-  --checkpoint-persona-three-primary: var(
-    --checkpoint-persona-three-primary-raw
-  );
-  --checkpoint-persona-three-secondary: var(
-    --checkpoint-persona-three-secondary-raw
-  );
-  --checkpoint-persona-two-background-overlay: var(
-    --checkpoint-persona-two-background-overlay-raw
-  );
-  --checkpoint-persona-two-gradient-end: var(
-    --checkpoint-persona-two-gradient-end-raw
-  );
-  --checkpoint-persona-two-gradient-start: var(
-    --checkpoint-persona-two-gradient-start-raw
-  );
-  --checkpoint-persona-two-primary: var(--checkpoint-persona-two-primary-raw);
-  --checkpoint-persona-two-secondary: var(
-    --checkpoint-persona-two-secondary-raw
-  );
-  --checkpoint-persona-zero-background-overlay: var(
-    --checkpoint-persona-zero-background-overlay-raw
-  );
-  --checkpoint-persona-zero-gradient-end: var(
-    --checkpoint-persona-zero-gradient-end-raw
-  );
-  --checkpoint-persona-zero-gradient-start: var(
-    --checkpoint-persona-zero-gradient-start-raw
-  );
-  --checkpoint-persona-zero-primary: var(--checkpoint-persona-zero-primary-raw);
-  --checkpoint-persona-zero-secondary: var(
-    --checkpoint-persona-zero-secondary-raw
-  );
-  --checkpoint-quests-gradient-end: var(--checkpoint-quests-gradient-end-raw);
-  --checkpoint-quests-gradient-start: var(
-    --checkpoint-quests-gradient-start-raw
-  );
-  --checkpoint-quests-primary: var(--checkpoint-quests-primary-raw);
-  --checkpoint-quests-secondary: var(--checkpoint-quests-secondary-raw);
-  --checkpoint-voice-gradient-end: var(--checkpoint-voice-gradient-end-raw);
-  --checkpoint-voice-gradient-start: var(--checkpoint-voice-gradient-start-raw);
-  --checkpoint-voice-primary: var(--checkpoint-voice-primary-raw);
-  --checkpoint-voice-secondary: var(--checkpoint-voice-secondary-raw);
-  --checkpoint-welcome-gradient-end: var(--checkpoint-welcome-gradient-end-raw);
-  --checkpoint-welcome-gradient-start: var(
-    --checkpoint-welcome-gradient-start-raw
-  );
-  --checkpoint-welcome-primary: var(--checkpoint-welcome-primary-raw);
-  --checkpoint-welcome-secondary: var(--checkpoint-welcome-secondary-raw);
   --chip-blurple-dark-background: var(--blurple-70);
   --chip-blurple-dark-text: var(--blurple-1);
   --chip-blurple-light-background: var(--blurple-20);
@@ -85332,522 +84836,6 @@ html.disable-forced-colors * {
       var(--neutral-39) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
-    );
-    --checkpoint-emojis-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-primary: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-end-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-end-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-primary: color-mix(
-      in oklab,
-      var(--checkpoint-end-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-end-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-friends-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-friends-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-primary: color-mix(
-      in oklab,
-      var(--checkpoint-friends-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-friends-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-primary: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-primary: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-messages-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-messages-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-primary: color-mix(
-      in oklab,
-      var(--checkpoint-messages-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-messages-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-quests-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-quests-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-primary: color-mix(
-      in oklab,
-      var(--checkpoint-quests-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-quests-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-voice-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-voice-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-primary: color-mix(
-      in oklab,
-      var(--checkpoint-voice-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-voice-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-primary: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
     );
     --content-inventory-media-seekbar-container: color-mix(
       in oklab,
@@ -87354,194 +86342,6 @@ html.disable-forced-colors * {
     var(--opacity-24-hsl) / 0.23921568627450981
   );
   --checkbox-icon-active: var(--neutral-1);
-  --checkpoint-emojis-gradient-end: var(--checkpoint-emojis-gradient-end-raw);
-  --checkpoint-emojis-gradient-start: var(
-    --checkpoint-emojis-gradient-start-raw
-  );
-  --checkpoint-emojis-primary: var(--checkpoint-emojis-primary-raw);
-  --checkpoint-emojis-secondary: var(--checkpoint-emojis-secondary-raw);
-  --checkpoint-end-gradient-end: var(--checkpoint-end-gradient-end-raw);
-  --checkpoint-end-gradient-start: var(--checkpoint-end-gradient-start-raw);
-  --checkpoint-end-primary: var(--checkpoint-end-primary-raw);
-  --checkpoint-end-secondary: var(--checkpoint-end-secondary-raw);
-  --checkpoint-friends-gradient-end: var(--checkpoint-friends-gradient-end-raw);
-  --checkpoint-friends-gradient-start: var(
-    --checkpoint-friends-gradient-start-raw
-  );
-  --checkpoint-friends-primary: var(--checkpoint-friends-primary-raw);
-  --checkpoint-friends-secondary: var(--checkpoint-friends-secondary-raw);
-  --checkpoint-gaming-gradient-end: var(--checkpoint-gaming-gradient-end-raw);
-  --checkpoint-gaming-gradient-start: var(
-    --checkpoint-gaming-gradient-start-raw
-  );
-  --checkpoint-gaming-primary: var(--checkpoint-gaming-primary-raw);
-  --checkpoint-gaming-secondary: var(--checkpoint-gaming-secondary-raw);
-  --checkpoint-guilds-gradient-end: var(--checkpoint-guilds-gradient-end-raw);
-  --checkpoint-guilds-gradient-start: var(
-    --checkpoint-guilds-gradient-start-raw
-  );
-  --checkpoint-guilds-primary: var(--checkpoint-guilds-primary-raw);
-  --checkpoint-guilds-secondary: var(--checkpoint-guilds-secondary-raw);
-  --checkpoint-messages-gradient-end: var(
-    --checkpoint-messages-gradient-end-raw
-  );
-  --checkpoint-messages-gradient-start: var(
-    --checkpoint-messages-gradient-start-raw
-  );
-  --checkpoint-messages-primary: var(--checkpoint-messages-primary-raw);
-  --checkpoint-messages-secondary: var(--checkpoint-messages-secondary-raw);
-  --checkpoint-persona-eight-background-overlay: var(
-    --checkpoint-persona-eight-background-overlay-raw
-  );
-  --checkpoint-persona-eight-gradient-end: var(
-    --checkpoint-persona-eight-gradient-end-raw
-  );
-  --checkpoint-persona-eight-gradient-start: var(
-    --checkpoint-persona-eight-gradient-start-raw
-  );
-  --checkpoint-persona-eight-primary: var(
-    --checkpoint-persona-eight-primary-raw
-  );
-  --checkpoint-persona-eight-secondary: var(
-    --checkpoint-persona-eight-secondary-raw
-  );
-  --checkpoint-persona-five-background-overlay: var(
-    --checkpoint-persona-five-background-overlay-raw
-  );
-  --checkpoint-persona-five-gradient-end: var(
-    --checkpoint-persona-five-gradient-end-raw
-  );
-  --checkpoint-persona-five-gradient-start: var(
-    --checkpoint-persona-five-gradient-start-raw
-  );
-  --checkpoint-persona-five-primary: var(--checkpoint-persona-five-primary-raw);
-  --checkpoint-persona-five-secondary: var(
-    --checkpoint-persona-five-secondary-raw
-  );
-  --checkpoint-persona-four-background-overlay: var(
-    --checkpoint-persona-four-background-overlay-raw
-  );
-  --checkpoint-persona-four-gradient-end: var(
-    --checkpoint-persona-four-gradient-end-raw
-  );
-  --checkpoint-persona-four-gradient-start: var(
-    --checkpoint-persona-four-gradient-start-raw
-  );
-  --checkpoint-persona-four-primary: var(--checkpoint-persona-four-primary-raw);
-  --checkpoint-persona-four-secondary: var(
-    --checkpoint-persona-four-secondary-raw
-  );
-  --checkpoint-persona-nine-background-overlay: var(
-    --checkpoint-persona-nine-background-overlay-raw
-  );
-  --checkpoint-persona-nine-gradient-end: var(
-    --checkpoint-persona-nine-gradient-end-raw
-  );
-  --checkpoint-persona-nine-gradient-start: var(
-    --checkpoint-persona-nine-gradient-start-raw
-  );
-  --checkpoint-persona-nine-primary: var(--checkpoint-persona-nine-primary-raw);
-  --checkpoint-persona-nine-secondary: var(
-    --checkpoint-persona-nine-secondary-raw
-  );
-  --checkpoint-persona-one-background-overlay: var(
-    --checkpoint-persona-one-background-overlay-raw
-  );
-  --checkpoint-persona-one-gradient-end: var(
-    --checkpoint-persona-one-gradient-end-raw
-  );
-  --checkpoint-persona-one-gradient-start: var(
-    --checkpoint-persona-one-gradient-start-raw
-  );
-  --checkpoint-persona-one-primary: var(--checkpoint-persona-one-primary-raw);
-  --checkpoint-persona-one-secondary: var(
-    --checkpoint-persona-one-secondary-raw
-  );
-  --checkpoint-persona-seven-background-overlay: var(
-    --checkpoint-persona-seven-background-overlay-raw
-  );
-  --checkpoint-persona-seven-gradient-end: var(
-    --checkpoint-persona-seven-gradient-end-raw
-  );
-  --checkpoint-persona-seven-gradient-start: var(
-    --checkpoint-persona-seven-gradient-start-raw
-  );
-  --checkpoint-persona-seven-primary: var(
-    --checkpoint-persona-seven-primary-raw
-  );
-  --checkpoint-persona-seven-secondary: var(
-    --checkpoint-persona-seven-secondary-raw
-  );
-  --checkpoint-persona-six-background-overlay: var(
-    --checkpoint-persona-six-background-overlay-raw
-  );
-  --checkpoint-persona-six-gradient-end: var(
-    --checkpoint-persona-six-gradient-end-raw
-  );
-  --checkpoint-persona-six-gradient-start: var(
-    --checkpoint-persona-six-gradient-start-raw
-  );
-  --checkpoint-persona-six-primary: var(--checkpoint-persona-six-primary-raw);
-  --checkpoint-persona-six-secondary: var(
-    --checkpoint-persona-six-secondary-raw
-  );
-  --checkpoint-persona-three-background-overlay: var(
-    --checkpoint-persona-three-background-overlay-raw
-  );
-  --checkpoint-persona-three-gradient-end: var(
-    --checkpoint-persona-three-gradient-end-raw
-  );
-  --checkpoint-persona-three-gradient-start: var(
-    --checkpoint-persona-three-gradient-start-raw
-  );
-  --checkpoint-persona-three-primary: var(
-    --checkpoint-persona-three-primary-raw
-  );
-  --checkpoint-persona-three-secondary: var(
-    --checkpoint-persona-three-secondary-raw
-  );
-  --checkpoint-persona-two-background-overlay: var(
-    --checkpoint-persona-two-background-overlay-raw
-  );
-  --checkpoint-persona-two-gradient-end: var(
-    --checkpoint-persona-two-gradient-end-raw
-  );
-  --checkpoint-persona-two-gradient-start: var(
-    --checkpoint-persona-two-gradient-start-raw
-  );
-  --checkpoint-persona-two-primary: var(--checkpoint-persona-two-primary-raw);
-  --checkpoint-persona-two-secondary: var(
-    --checkpoint-persona-two-secondary-raw
-  );
-  --checkpoint-persona-zero-background-overlay: var(
-    --checkpoint-persona-zero-background-overlay-raw
-  );
-  --checkpoint-persona-zero-gradient-end: var(
-    --checkpoint-persona-zero-gradient-end-raw
-  );
-  --checkpoint-persona-zero-gradient-start: var(
-    --checkpoint-persona-zero-gradient-start-raw
-  );
-  --checkpoint-persona-zero-primary: var(--checkpoint-persona-zero-primary-raw);
-  --checkpoint-persona-zero-secondary: var(
-    --checkpoint-persona-zero-secondary-raw
-  );
-  --checkpoint-quests-gradient-end: var(--checkpoint-quests-gradient-end-raw);
-  --checkpoint-quests-gradient-start: var(
-    --checkpoint-quests-gradient-start-raw
-  );
-  --checkpoint-quests-primary: var(--checkpoint-quests-primary-raw);
-  --checkpoint-quests-secondary: var(--checkpoint-quests-secondary-raw);
-  --checkpoint-voice-gradient-end: var(--checkpoint-voice-gradient-end-raw);
-  --checkpoint-voice-gradient-start: var(--checkpoint-voice-gradient-start-raw);
-  --checkpoint-voice-primary: var(--checkpoint-voice-primary-raw);
-  --checkpoint-voice-secondary: var(--checkpoint-voice-secondary-raw);
-  --checkpoint-welcome-gradient-end: var(--checkpoint-welcome-gradient-end-raw);
-  --checkpoint-welcome-gradient-start: var(
-    --checkpoint-welcome-gradient-start-raw
-  );
-  --checkpoint-welcome-primary: var(--checkpoint-welcome-primary-raw);
-  --checkpoint-welcome-secondary: var(--checkpoint-welcome-secondary-raw);
   --chip-blurple-dark-background: var(--blurple-70);
   --chip-blurple-dark-text: var(--blurple-1);
   --chip-blurple-light-background: var(--blurple-20);
@@ -88493,522 +87293,6 @@ html.disable-forced-colors * {
       var(--neutral-37) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
-    );
-    --checkpoint-emojis-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-primary: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-end-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-end-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-primary: color-mix(
-      in oklab,
-      var(--checkpoint-end-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-end-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-friends-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-friends-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-primary: color-mix(
-      in oklab,
-      var(--checkpoint-friends-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-friends-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-primary: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-primary: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-messages-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-messages-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-primary: color-mix(
-      in oklab,
-      var(--checkpoint-messages-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-messages-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-quests-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-quests-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-primary: color-mix(
-      in oklab,
-      var(--checkpoint-quests-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-quests-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-voice-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-voice-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-primary: color-mix(
-      in oklab,
-      var(--checkpoint-voice-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-voice-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-primary: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
     );
     --content-inventory-media-seekbar-container: color-mix(
       in oklab,
@@ -90513,194 +88797,6 @@ html.disable-forced-colors * {
     var(--opacity-12-hsl) / 0.12156862745098039
   );
   --checkbox-icon-active: var(--neutral-1);
-  --checkpoint-emojis-gradient-end: var(--checkpoint-emojis-gradient-end-raw);
-  --checkpoint-emojis-gradient-start: var(
-    --checkpoint-emojis-gradient-start-raw
-  );
-  --checkpoint-emojis-primary: var(--checkpoint-emojis-primary-raw);
-  --checkpoint-emojis-secondary: var(--checkpoint-emojis-secondary-raw);
-  --checkpoint-end-gradient-end: var(--checkpoint-end-gradient-end-raw);
-  --checkpoint-end-gradient-start: var(--checkpoint-end-gradient-start-raw);
-  --checkpoint-end-primary: var(--checkpoint-end-primary-raw);
-  --checkpoint-end-secondary: var(--checkpoint-end-secondary-raw);
-  --checkpoint-friends-gradient-end: var(--checkpoint-friends-gradient-end-raw);
-  --checkpoint-friends-gradient-start: var(
-    --checkpoint-friends-gradient-start-raw
-  );
-  --checkpoint-friends-primary: var(--checkpoint-friends-primary-raw);
-  --checkpoint-friends-secondary: var(--checkpoint-friends-secondary-raw);
-  --checkpoint-gaming-gradient-end: var(--checkpoint-gaming-gradient-end-raw);
-  --checkpoint-gaming-gradient-start: var(
-    --checkpoint-gaming-gradient-start-raw
-  );
-  --checkpoint-gaming-primary: var(--checkpoint-gaming-primary-raw);
-  --checkpoint-gaming-secondary: var(--checkpoint-gaming-secondary-raw);
-  --checkpoint-guilds-gradient-end: var(--checkpoint-guilds-gradient-end-raw);
-  --checkpoint-guilds-gradient-start: var(
-    --checkpoint-guilds-gradient-start-raw
-  );
-  --checkpoint-guilds-primary: var(--checkpoint-guilds-primary-raw);
-  --checkpoint-guilds-secondary: var(--checkpoint-guilds-secondary-raw);
-  --checkpoint-messages-gradient-end: var(
-    --checkpoint-messages-gradient-end-raw
-  );
-  --checkpoint-messages-gradient-start: var(
-    --checkpoint-messages-gradient-start-raw
-  );
-  --checkpoint-messages-primary: var(--checkpoint-messages-primary-raw);
-  --checkpoint-messages-secondary: var(--checkpoint-messages-secondary-raw);
-  --checkpoint-persona-eight-background-overlay: var(
-    --checkpoint-persona-eight-background-overlay-raw
-  );
-  --checkpoint-persona-eight-gradient-end: var(
-    --checkpoint-persona-eight-gradient-end-raw
-  );
-  --checkpoint-persona-eight-gradient-start: var(
-    --checkpoint-persona-eight-gradient-start-raw
-  );
-  --checkpoint-persona-eight-primary: var(
-    --checkpoint-persona-eight-primary-raw
-  );
-  --checkpoint-persona-eight-secondary: var(
-    --checkpoint-persona-eight-secondary-raw
-  );
-  --checkpoint-persona-five-background-overlay: var(
-    --checkpoint-persona-five-background-overlay-raw
-  );
-  --checkpoint-persona-five-gradient-end: var(
-    --checkpoint-persona-five-gradient-end-raw
-  );
-  --checkpoint-persona-five-gradient-start: var(
-    --checkpoint-persona-five-gradient-start-raw
-  );
-  --checkpoint-persona-five-primary: var(--checkpoint-persona-five-primary-raw);
-  --checkpoint-persona-five-secondary: var(
-    --checkpoint-persona-five-secondary-raw
-  );
-  --checkpoint-persona-four-background-overlay: var(
-    --checkpoint-persona-four-background-overlay-raw
-  );
-  --checkpoint-persona-four-gradient-end: var(
-    --checkpoint-persona-four-gradient-end-raw
-  );
-  --checkpoint-persona-four-gradient-start: var(
-    --checkpoint-persona-four-gradient-start-raw
-  );
-  --checkpoint-persona-four-primary: var(--checkpoint-persona-four-primary-raw);
-  --checkpoint-persona-four-secondary: var(
-    --checkpoint-persona-four-secondary-raw
-  );
-  --checkpoint-persona-nine-background-overlay: var(
-    --checkpoint-persona-nine-background-overlay-raw
-  );
-  --checkpoint-persona-nine-gradient-end: var(
-    --checkpoint-persona-nine-gradient-end-raw
-  );
-  --checkpoint-persona-nine-gradient-start: var(
-    --checkpoint-persona-nine-gradient-start-raw
-  );
-  --checkpoint-persona-nine-primary: var(--checkpoint-persona-nine-primary-raw);
-  --checkpoint-persona-nine-secondary: var(
-    --checkpoint-persona-nine-secondary-raw
-  );
-  --checkpoint-persona-one-background-overlay: var(
-    --checkpoint-persona-one-background-overlay-raw
-  );
-  --checkpoint-persona-one-gradient-end: var(
-    --checkpoint-persona-one-gradient-end-raw
-  );
-  --checkpoint-persona-one-gradient-start: var(
-    --checkpoint-persona-one-gradient-start-raw
-  );
-  --checkpoint-persona-one-primary: var(--checkpoint-persona-one-primary-raw);
-  --checkpoint-persona-one-secondary: var(
-    --checkpoint-persona-one-secondary-raw
-  );
-  --checkpoint-persona-seven-background-overlay: var(
-    --checkpoint-persona-seven-background-overlay-raw
-  );
-  --checkpoint-persona-seven-gradient-end: var(
-    --checkpoint-persona-seven-gradient-end-raw
-  );
-  --checkpoint-persona-seven-gradient-start: var(
-    --checkpoint-persona-seven-gradient-start-raw
-  );
-  --checkpoint-persona-seven-primary: var(
-    --checkpoint-persona-seven-primary-raw
-  );
-  --checkpoint-persona-seven-secondary: var(
-    --checkpoint-persona-seven-secondary-raw
-  );
-  --checkpoint-persona-six-background-overlay: var(
-    --checkpoint-persona-six-background-overlay-raw
-  );
-  --checkpoint-persona-six-gradient-end: var(
-    --checkpoint-persona-six-gradient-end-raw
-  );
-  --checkpoint-persona-six-gradient-start: var(
-    --checkpoint-persona-six-gradient-start-raw
-  );
-  --checkpoint-persona-six-primary: var(--checkpoint-persona-six-primary-raw);
-  --checkpoint-persona-six-secondary: var(
-    --checkpoint-persona-six-secondary-raw
-  );
-  --checkpoint-persona-three-background-overlay: var(
-    --checkpoint-persona-three-background-overlay-raw
-  );
-  --checkpoint-persona-three-gradient-end: var(
-    --checkpoint-persona-three-gradient-end-raw
-  );
-  --checkpoint-persona-three-gradient-start: var(
-    --checkpoint-persona-three-gradient-start-raw
-  );
-  --checkpoint-persona-three-primary: var(
-    --checkpoint-persona-three-primary-raw
-  );
-  --checkpoint-persona-three-secondary: var(
-    --checkpoint-persona-three-secondary-raw
-  );
-  --checkpoint-persona-two-background-overlay: var(
-    --checkpoint-persona-two-background-overlay-raw
-  );
-  --checkpoint-persona-two-gradient-end: var(
-    --checkpoint-persona-two-gradient-end-raw
-  );
-  --checkpoint-persona-two-gradient-start: var(
-    --checkpoint-persona-two-gradient-start-raw
-  );
-  --checkpoint-persona-two-primary: var(--checkpoint-persona-two-primary-raw);
-  --checkpoint-persona-two-secondary: var(
-    --checkpoint-persona-two-secondary-raw
-  );
-  --checkpoint-persona-zero-background-overlay: var(
-    --checkpoint-persona-zero-background-overlay-raw
-  );
-  --checkpoint-persona-zero-gradient-end: var(
-    --checkpoint-persona-zero-gradient-end-raw
-  );
-  --checkpoint-persona-zero-gradient-start: var(
-    --checkpoint-persona-zero-gradient-start-raw
-  );
-  --checkpoint-persona-zero-primary: var(--checkpoint-persona-zero-primary-raw);
-  --checkpoint-persona-zero-secondary: var(
-    --checkpoint-persona-zero-secondary-raw
-  );
-  --checkpoint-quests-gradient-end: var(--checkpoint-quests-gradient-end-raw);
-  --checkpoint-quests-gradient-start: var(
-    --checkpoint-quests-gradient-start-raw
-  );
-  --checkpoint-quests-primary: var(--checkpoint-quests-primary-raw);
-  --checkpoint-quests-secondary: var(--checkpoint-quests-secondary-raw);
-  --checkpoint-voice-gradient-end: var(--checkpoint-voice-gradient-end-raw);
-  --checkpoint-voice-gradient-start: var(--checkpoint-voice-gradient-start-raw);
-  --checkpoint-voice-primary: var(--checkpoint-voice-primary-raw);
-  --checkpoint-voice-secondary: var(--checkpoint-voice-secondary-raw);
-  --checkpoint-welcome-gradient-end: var(--checkpoint-welcome-gradient-end-raw);
-  --checkpoint-welcome-gradient-start: var(
-    --checkpoint-welcome-gradient-start-raw
-  );
-  --checkpoint-welcome-primary: var(--checkpoint-welcome-primary-raw);
-  --checkpoint-welcome-secondary: var(--checkpoint-welcome-secondary-raw);
   --chip-blurple-dark-background: var(--blurple-70);
   --chip-blurple-dark-text: var(--blurple-1);
   --chip-blurple-light-background: var(--blurple-20);
@@ -91648,522 +89744,6 @@ html.disable-forced-colors * {
       var(--neutral-34) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
-    );
-    --checkpoint-emojis-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-primary: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-emojis-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-emojis-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-end-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-end-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-primary: color-mix(
-      in oklab,
-      var(--checkpoint-end-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-end-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-end-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-friends-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-friends-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-primary: color-mix(
-      in oklab,
-      var(--checkpoint-friends-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-friends-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-friends-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-primary: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-gaming-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-gaming-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-primary: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-guilds-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-guilds-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-messages-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-messages-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-primary: color-mix(
-      in oklab,
-      var(--checkpoint-messages-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-messages-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-messages-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-eight-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-eight-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-five-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-five-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-four-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-four-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-nine-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-nine-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-one-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-one-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-seven-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-seven-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-six-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-six-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-three-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-three-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-two-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-two-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-background-overlay: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-background-overlay-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-primary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-persona-zero-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-persona-zero-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-quests-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-quests-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-primary: color-mix(
-      in oklab,
-      var(--checkpoint-quests-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-quests-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-quests-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-voice-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-voice-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-primary: color-mix(
-      in oklab,
-      var(--checkpoint-voice-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-voice-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-voice-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-gradient-end: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-gradient-end-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-gradient-start: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-gradient-start-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-primary: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-primary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --checkpoint-welcome-secondary: color-mix(
-      in oklab,
-      var(--checkpoint-welcome-secondary-raw) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
     );
     --content-inventory-media-seekbar-container: color-mix(
       in oklab,
@@ -102619,4 +100199,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.425c82e369fbcff2.css.map*/
+/*# sourceMappingURL=12633.026a8568273a166a.css.map*/
