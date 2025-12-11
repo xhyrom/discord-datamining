@@ -33652,11 +33652,6 @@ div._3d3b08df7e9aa942-mobilePushContainer {
 ._183e81c0d76dd7cd-completed {
   color: var(--status-positive);
 }
-._69c6ca6ee136d546-customConfetti {
-  inset-inline-end: -75px;
-  pointer-events: none;
-  top: -120px;
-}
 .b7b2cf04dd1b67d3-container {
   align-items: center;
   display: flex;
@@ -40003,6 +39998,11 @@ body .b54a5b2f01b57ad8-headerAnimation {
 ._4485d15a92eb534f-reload {
   margin-top: 24px;
 }
+._69c6ca6ee136d546-customConfetti {
+  inset-inline-end: -75px;
+  pointer-events: none;
+  top: -120px;
+}
 ._57a8750a60d28276-headerContainerGift {
   align-items: center;
   background-image: linear-gradient(
@@ -40768,6 +40768,78 @@ div._34eac30af6a687c5-modalOverrideBody {
   -webkit-margin-start: -1px;
   margin-inline-start: -1px;
   margin-top: -2px;
+}
+.e3bd55d6b00f17df-checkoutModalFooter {
+  align-items: center;
+}
+._852008bcf94f9917-orbIconSVG {
+  height: 18px;
+}
+.full-motion ._852008bcf94f9917-loading {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: _852008bcf94f9917-spin;
+  animation-timing-function: linear;
+}
+@keyframes _852008bcf94f9917-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+._8373460925eae9cd-stepBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding-top: var(--space-16);
+}
+._8373460925eae9cd-warningContainer {
+  align-items: center;
+  background-color: var(--background-feedback-warning);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-10);
+  padding: var(--space-8);
+}
+._8373460925eae9cd-paymentSourceWrapper {
+  margin: 16px 0;
+}
+._8373460925eae9cd-paymentSourceItem {
+  align-items: center;
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 14px 16px;
+}
+._8373460925eae9cd-purchaseDetailsSpinner {
+  height: 20px;
+}
+._8373460925eae9cd-orbAmountTag {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+._8373460925eae9cd-displayFlex {
+  display: flex;
+}
+.a3d32e1830eb460c-stepBody {
+  display: flex;
+  flex-direction: row;
+  padding-top: 12px;
+}
+.a3d32e1830eb460c-stepBody > * {
+  width: 50%;
+}
+.bb544939949865b0-stepBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding-top: var(--space-16);
 }
 ._0f18af7a8ae229e2-modal {
   align-self: stretch;
@@ -46314,78 +46386,6 @@ h3._1689b6e8323d95c2-improved:after {
   justify-content: center;
   width: 100px;
 }
-.e3bd55d6b00f17df-checkoutModalFooter {
-  align-items: center;
-}
-._852008bcf94f9917-orbIconSVG {
-  height: 18px;
-}
-.full-motion ._852008bcf94f9917-loading {
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-name: _852008bcf94f9917-spin;
-  animation-timing-function: linear;
-}
-@keyframes _852008bcf94f9917-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-._8373460925eae9cd-stepBody {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
-  padding-top: var(--space-16);
-}
-._8373460925eae9cd-warningContainer {
-  align-items: center;
-  background-color: var(--background-feedback-warning);
-  border-radius: var(--radius-sm);
-  display: flex;
-  flex-direction: row;
-  gap: var(--space-10);
-  padding: var(--space-8);
-}
-._8373460925eae9cd-paymentSourceWrapper {
-  margin: 16px 0;
-}
-._8373460925eae9cd-paymentSourceItem {
-  align-items: center;
-  cursor: default;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 14px 16px;
-}
-._8373460925eae9cd-purchaseDetailsSpinner {
-  height: 20px;
-}
-._8373460925eae9cd-orbAmountTag {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-}
-._8373460925eae9cd-displayFlex {
-  display: flex;
-}
-.a3d32e1830eb460c-stepBody {
-  display: flex;
-  flex-direction: row;
-  padding-top: 12px;
-}
-.a3d32e1830eb460c-stepBody > * {
-  width: 50%;
-}
-.bb544939949865b0-stepBody {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
-  padding-top: var(--space-16);
-}
 .feb59c8c6ec00ad9-title {
   margin-bottom: 8px;
 }
@@ -48017,11 +48017,13 @@ svg.c1e9c47c23f12ca3-radioIcon {
   width: 100%;
 }
 ._44b0c28be7879b7b-avatar,
-._44b0c28be7879b7b-avatarLatched,
-._44b0c28be7879b7b-avatarSpeaking {
+._44b0c28be7879b7b-avatarBorder {
   grid-area: 1/1;
   height: 100%;
   width: 100%;
+}
+._44b0c28be7879b7b-avatarBorder {
+  border-radius: 50%;
 }
 ._44b0c28be7879b7b-avatar {
   display: block;
@@ -48034,18 +48036,6 @@ svg.c1e9c47c23f12ca3-radioIcon {
   display: block;
   height: 100%;
   width: 100%;
-}
-._44b0c28be7879b7b-avatarSpeaking {
-  border-radius: 50%;
-  box-shadow:
-    inset 0 0 0 2px var(--status-speaking),
-    inset 0 0 0 3px var(--background-base-lower);
-}
-._44b0c28be7879b7b-avatarLatched {
-  border-radius: 50%;
-  box-shadow:
-    inset 0 0 0 2px var(--yellow-360),
-    inset 0 0 0 3px var(--background-base-lower);
 }
 ._44b0c28be7879b7b-pointerEvents {
   pointer-events: auto;
@@ -76029,16 +76019,6 @@ div.d74ef86df6475678-nagbar {
   height: 30px;
   width: 30px;
 }
-._07f9193042954787-avatarSpeaking {
-  box-shadow:
-    inset 0 0 0 2px var(--green-360),
-    inset 0 0 0 3px var(--background-base-lower);
-}
-._07f9193042954787-avatarLatched {
-  box-shadow:
-    inset 0 0 0 2px var(--yellow-360),
-    inset 0 0 0 3px var(--background-base-lower);
-}
 ._07f9193042954787-username {
   flex: 1 1 auto;
   overflow: hidden;
@@ -80351,16 +80331,6 @@ html ._968a4b9cecf98b8c-invoiceCancelRow {
   border-radius: 50%;
   inset: 0;
   position: absolute;
-}
-.f910d08f42c82225-border.f910d08f42c82225-speaking {
-  box-shadow:
-    inset 0 0 0 2px var(--status-speaking),
-    inset 0 0 0 3px var(--background-surface-high);
-}
-.f910d08f42c82225-border.f910d08f42c82225-latched {
-  box-shadow:
-    inset 0 0 0 2px var(--yellow-360),
-    inset 0 0 0 3px var(--background-surface-high);
 }
 .app-focused .f910d08f42c82225-border {
   transition: box-shadow 0.1s ease-out;
@@ -101235,4 +101205,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.dfac0f66df69b07f.css.map*/
+/*# sourceMappingURL=web.77fc69d335212ddf.css.map*/
