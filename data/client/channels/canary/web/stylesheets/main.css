@@ -70529,9 +70529,6 @@ div:hover
   grid-auto-flow: column;
   margin-inline-start: 8px;
 }
-._5d148ffac19e7fb1-ttsPreviewWrapper {
-  margin-bottom: 24px;
-}
 ._5d148ffac19e7fb1-ttsSliderMarker {
   text-transform: uppercase;
 }
@@ -70543,6 +70540,9 @@ div:hover
 }
 .custom-theme-background ._5d148ffac19e7fb1-preview {
   background: var(--background-gradient-chat-preview);
+}
+._5d148ffac19e7fb1-appearanceUpsell {
+  padding-top: 24px;
 }
 .eb2508e5fd9f2b15-avatarBackground {
   align-items: center;
@@ -99433,4 +99433,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.fd017a54286b51f5.css.map*/
+/*# sourceMappingURL=web.12df5338a4dd9c73.css.map*/
