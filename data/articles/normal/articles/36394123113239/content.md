@@ -238,24 +238,6 @@
 </p>
 <p>
   <strong
-    >Q: I play on PlayStation or Xbox, how can I get access to the Marvel Rivals
-    Shop items I purchased on Discord on my Steam account?</strong
-  >
-</p>
-<p>
-  A: Link your Steam account with your PlayStation or Xbox account through
-  Marvel Rivals’ cross-progression system, then set your Steam account as the
-  primary account. Once linked, your purchased items will be accessible on
-  Consoles. For full instructions, see the
-  <a
-    href="https://www.marvelrivals.com/announcements/20250924/40955_1261246.html"
-    ><span class="wysiwyg-underline"
-      >Marvel Rivals Cross-Progression support page</span
-    ></a
-  >.
-</p>
-<p>
-  <strong
     >Q: What happens if I purchase or receive a gift of an item I already own in
     the game?</strong
   >
