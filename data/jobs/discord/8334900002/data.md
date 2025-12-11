@@ -1,16 +1,16 @@
 # Job Listing
 
-## Product Marketing Manager, Ads
+## Product Marketing Manager, Ads 
 
 **Location:** San Francisco Bay Area
 
-**Id:** 8233748002 <br/>
+**Id:** 8334900002 <br/>
 **Internal Job Id:** 6204940002 <br/>
 **Requisition Id:** R-100992 <br/>
 
-**Discord Jobs:** [https://discord.com/jobs/8233748002](https://discord.com/jobs/8233748002)
+**Discord Jobs:** [https://discord.com/jobs/8334900002](https://discord.com/jobs/8334900002)
 
-**Updated At:** Thu, 04 Dec 2025 17:26:40 GMT
+**Updated At:** Thu, 11 Dec 2025 18:24:10 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're seeking a strategic founding Product Marketing Manager to build and lead the go-to-market strategy for our emerging advertising solutions, focusing on Gaming clients. You’ll drive product activation by developing robust sales enablement programs, setting activation goals, and partnering closely with Sales to bring our solutions to market. This role will play a key part in accelerating our offering within the must-win Gaming vertical.&amp;nbsp;
