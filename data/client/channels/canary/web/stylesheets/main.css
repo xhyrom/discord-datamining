@@ -599,7 +599,7 @@
   font-size: 0.75rem;
 }
 ._5345c24c6249bc5b-defaultColor {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 :root {
   --expand-structural-duration: 100ms;
@@ -4220,9 +4220,6 @@
   -webkit-text-decoration: var(--link-decoration);
   text-decoration: var(--link-decoration);
 }
-.low-saturation .edefb8e22d63c542-anchor {
-  color: var(--text-link-low-saturation);
-}
 .edefb8e22d63c542-anchorUnderlineOnHover:hover {
   text-decoration: underline;
 }
@@ -5205,7 +5202,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   user-select: none;
 }
 ._0ed4fc708cdbac0d-input:hover {
-  border-color: var(--deprecated-text-input-border-hover);
+  border-color: var(--input-border-hover);
 }
 ._0ed4fc708cdbac0d-input._0ed4fc708cdbac0d-focused,
 ._0ed4fc708cdbac0d-input:focus {
@@ -6990,7 +6987,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
 }
 .b717a15017b82443-h5,
 .b717a15017b82443-legend {
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 8px;
@@ -7028,7 +7025,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   padding-inline: 4px;
 }
 .b717a15017b82443-defaultColor {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .b717a15017b82443-label,
 .b717a15017b82443-legend {
@@ -10684,7 +10681,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
 }
 .d27f17593b8064c5-calendarPicker .react-datepicker__current-month {
   border-bottom: 1px solid;
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-size: 13px;
   font-weight: var(--font-weight-semibold);
   line-height: 20px;
@@ -10770,16 +10767,16 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   width: 40px;
 }
 .d27f17593b8064c5-calendarPicker .react-datepicker__day {
-  border-top: 1px solid var(--deprecated-text-input-border-disabled);
+  border-top: 1px solid var(--border-subtle);
   box-sizing: border-box;
   height: 40px;
   line-height: 40px;
   margin: 0;
   position: relative;
   width: 40px;
-  -webkit-border-start: 1px solid var(--deprecated-text-input-border-disabled);
-  border-inline-start: 1px solid var(--deprecated-text-input-border-disabled);
-  color: var(--header-primary);
+  -webkit-border-start: 1px solid var(--border-subtle);
+  border-inline-start: 1px solid var(--border-subtle);
+  color: var(--text-strong);
 }
 .d27f17593b8064c5-calendarPicker
   .react-datepicker__day.react-datepicker__day--keyboard-selected,
@@ -11652,7 +11649,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   margin-inline-start: 2px;
 }
 ._98f64ec6d51f9c4a-balanceCounterText {
-  color: var(--header-primary);
+  color: var(--text-strong);
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -12005,7 +12002,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   text-align: center;
 }
 ._4328fa68abd40855-header strong {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._4328fa68abd40855-divider {
   background-color: var(--border-subtle);
@@ -12360,7 +12357,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   color: var(--white-500);
 }
 .c19a557985eb7793-executedCommand .c19a557985eb7793-applicationName {
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-weight: var(--font-weight-medium);
 }
 .c19a557985eb7793-executedCommand
@@ -12419,7 +12416,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
 }
 .c19a557985eb7793-repliedTextPreview.c19a557985eb7793-clickable:hover,
 .c19a557985eb7793-repliedTextPreview.c19a557985eb7793-repliedMessageClickableSpineHovered {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .c19a557985eb7793-repliedMessage
   .c19a557985eb7793-repliedTextPreview
@@ -12737,7 +12734,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   opacity: 1;
 }
 .c19a557985eb7793-username {
-  color: var(--header-primary);
+  color: var(--text-strong);
   display: inline;
   flex-shrink: 0;
   font-size: 1rem;
@@ -13965,7 +13962,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
 .f1ceaca61b18918e-colorable.f1ceaca61b18918e-disconnect,
 .f1ceaca61b18918e-colorable.f1ceaca61b18918e-disconnect
   .f1ceaca61b18918e-centerIcon {
-  color: var(--status-danger-text);
+  color: var(--control-critical-primary-text-default);
 }
 .f1ceaca61b18918e-colorable.f1ceaca61b18918e-disconnect:hover {
   background: var(--control-critical-primary-background-hover);
@@ -15376,7 +15373,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   position: absolute;
   width: 8px;
   -webkit-margin-start: -4px;
-  background-color: var(--header-primary);
+  background-color: var(--text-strong);
   margin-inline-start: -4px;
 }
 .enable-forced-colors ._581051df43c5ebb6-item {
@@ -16900,7 +16897,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   padding: 8px;
 }
 ._9be63f0b86033228-soundName {
-  color: var(--header-primary);
+  color: var(--text-strong);
   display: -webkit-box;
   flex-grow: 0;
   -webkit-line-clamp: 2;
@@ -17429,7 +17426,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
 ._752971923a1e6683-markup h4,
 ._752971923a1e6683-markup h5,
 ._752971923a1e6683-markup h6 {
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-family: var(--font-display);
   font-weight: var(--font-weight-bold);
   line-height: 1.375em;
@@ -17787,7 +17784,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
 ._124c842e1d810007-buildDetails,
 ._124c842e1d810007-copyLink:hover,
 ._124c842e1d810007-infoLink:hover {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._124c842e1d810007-copyLink._124c842e1d810007-copied,
 ._124c842e1d810007-copyLink._124c842e1d810007-copied:hover {
@@ -19114,7 +19111,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
 }
 .d28ae02ba7d77116-acronym {
   align-items: center;
-  color: var(--header-primary);
+  color: var(--text-strong);
   display: flex;
   font-size: 14px;
   font-weight: 500;
@@ -20458,7 +20455,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   margin: 0 auto;
 }
 ._686cf09df72934da-booleanValueTrue {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._686cf09df72934da-recommendedTierHighlight {
   bottom: -16px;
@@ -24690,7 +24687,7 @@ input[type="checkbox"]:focus-visible + ._0d242e583d6053f6-label {
   margin-inline: 8px 16px;
 }
 ._0b69f200eb3bf411-lockIcon {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .b3fb5fe9675b4b4d-nitroTopDividerContainer {
   display: flex;
@@ -26667,7 +26664,7 @@ img._0f2e83213c878a13-thumbnail {
   border: 1px solid var(--border-normal);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-high);
-  color: var(--header-primary);
+  color: var(--text-strong);
   display: flex;
   line-height: 24px;
   margin-bottom: 12px;
@@ -26692,7 +26689,7 @@ img._0f2e83213c878a13-thumbnail {
   width: 16px;
 }
 ._3fde7e375925af75-clipIcon {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .af3b89684c536957-popout {
   filter: drop-shadow(0 8px 8px var(--opacity-black-32));
@@ -28682,7 +28679,7 @@ div._3d3b08df7e9aa942-mobilePushContainer {
 }
 ._44107ae91bae52ad-activityUpdatedBadge {
   align-items: center;
-  background-color: var(--text-link-low-saturation);
+  background-color: var(--badge-background-default);
   box-shadow: var(--elevation-low);
   display: flex;
 }
@@ -32201,9 +32198,6 @@ div._3d3b08df7e9aa942-mobilePushContainer {
   -webkit-text-decoration: var(--link-decoration);
   text-decoration: var(--link-decoration);
 }
-.low-saturation .ada32f6ad5a36c58-fakeLink {
-  color: var(--text-link-low-saturation);
-}
 .ada32f6ad5a36c58-after_inlineCode,
 .ada32f6ad5a36c58-before_inlineCode,
 .ada32f6ad5a36c58-inlineCode {
@@ -33921,7 +33915,7 @@ div._3d3b08df7e9aa942-mobilePushContainer {
   z-index: 1;
 }
 .b66356d2eff474d5-closeIcon {
-  color: var(--header-primary);
+  color: var(--text-strong);
   opacity: 1;
 }
 .b66356d2eff474d5-headerTop {
@@ -34280,7 +34274,7 @@ body .b54a5b2f01b57ad8-headerAnimation {
   margin-inline-end: 8px;
 }
 ._92b20028694bb7d2-allPaymentsToggleButton {
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-size: 14px;
   font-weight: var(--font-weight-medium);
   line-height: 18px;
@@ -39070,7 +39064,7 @@ body .b54a5b2f01b57ad8-headerAnimation {
   font-weight: var(--font-weight-medium);
 }
 ._3d62f5ba2345de8d-subscriptionCostRow {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._3d62f5ba2345de8d-invoiceItemLabelWithIcon {
   align-items: center;
@@ -39292,7 +39286,7 @@ body .b54a5b2f01b57ad8-headerAnimation {
   -webkit-user-drag: none;
   background-size: 100%;
   border-radius: var(--radius-sm);
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .b52e4f70d11a5ca2-intersectionContainer {
   position: relative;
@@ -39937,6 +39931,11 @@ body .b54a5b2f01b57ad8-headerAnimation {
   height: 48px;
   width: 48px;
 }
+._257663d4c4e80a6b-rentalDescription {
+  color: var(--text-muted);
+  display: block;
+  margin-top: 4px;
+}
 .b4496190fad054cc-stepBody {
   padding-top: var(--space-8);
 }
@@ -40030,7 +40029,7 @@ body .b54a5b2f01b57ad8-headerAnimation {
   text-align: center;
 }
 .cd2ff7fa467efa57-giftSentMessage {
-  color: var(--header-primary);
+  color: var(--text-strong);
   margin-bottom: 8px;
   margin-top: 16px;
 }
@@ -40392,7 +40391,7 @@ body .b54a5b2f01b57ad8-headerAnimation {
   column-gap: 6px;
 }
 ._63ed30c16c7151f2-userTag {
-  font-family: var(--header-primary);
+  font-family: var(--text-strong);
   font-size: 14px;
   font-weight: var(--font-weight-normal);
   line-height: 18px;
@@ -40415,7 +40414,7 @@ body .b54a5b2f01b57ad8-headerAnimation {
 }
 ._63ed30c16c7151f2-userTagDiscriminator,
 ._63ed30c16c7151f2-userTagUsername {
-  color: var(--header-primary);
+  color: var(--text-strong);
   vertical-align: top;
 }
 ._63ed30c16c7151f2-dotSpacer {
@@ -44731,7 +44730,7 @@ h3._1689b6e8323d95c2-improved:after {
   padding: 10px;
 }
 ._86331cbd99f88226-popoutHeaderText strong {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._86331cbd99f88226-buttonContainer {
   padding: 8px;
@@ -45344,7 +45343,7 @@ h3._1689b6e8323d95c2-improved:after {
   text-align: center;
 }
 .e64651eead4ab80e-confirmationHeader strong {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .e64651eead4ab80e-confirmationSubtitle {
   text-align: center;
@@ -45463,7 +45462,7 @@ h3._1689b6e8323d95c2-improved:after {
   text-align: center;
 }
 ._4dd8e2a894da0af9-confirmationHeader strong {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._4dd8e2a894da0af9-confirmationSubtitle {
   margin-bottom: 32px;
@@ -45946,7 +45945,7 @@ h3._1689b6e8323d95c2-improved:after {
   padding-top: 22px;
 }
 ._649887ccbedc7c32-churnFooterCopy {
-  color: var(--header-primary);
+  color: var(--text-strong);
   margin-bottom: 14px;
 }
 ._649887ccbedc7c32-churnFooterCTAs {
@@ -46142,7 +46141,7 @@ h3._1689b6e8323d95c2-improved:after {
   overflow: hidden;
 }
 ._89307899cb638aba-boostCardTitle {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._89307899cb638aba-boostCardSubtitle {
   align-items: center;
@@ -46157,7 +46156,7 @@ h3._1689b6e8323d95c2-improved:after {
   margin-inline-end: 4px;
 }
 ._89307899cb638aba-boostCardCount {
-  color: var(--header-primary);
+  color: var(--text-strong);
   opacity: 0.5;
 }
 ._89307899cb638aba-nonPersonalizedGraphic {
@@ -47019,7 +47018,7 @@ h2.feb59c8c6ec00ad9-title {
 .c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused {
   background-color: var(--background-mod-subtle);
   border-radius: 4px;
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused .c1e9c47c23f12ca3-caret,
 .c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused
@@ -47050,7 +47049,7 @@ h2.feb59c8c6ec00ad9-title {
   color: var(--white);
 }
 .c1e9c47c23f12ca3-colorDefault .c1e9c47c23f12ca3-label {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .c1e9c47c23f12ca3-colorBrand,
 .c1e9c47c23f12ca3-colorDanger {
@@ -47615,7 +47614,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   cursor: pointer;
 }
 ._9293f6b2fc12398a-titleClickable:hover {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._36dee59b8fa89219-themeSelectionContainer {
   box-sizing: border-box;
@@ -48076,7 +48075,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 ._06eda958b510be67-primary {
   background-color: var(--background-base-low);
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._06eda958b510be67-primary:hover:not(._06eda958b510be67-disabled) {
   color: var(--interactive-text-active);
@@ -48624,7 +48623,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 .c1521037ef09de7e-pageButton {
   box-sizing: border-box;
-  color: var(--header-primary);
+  color: var(--text-strong);
   cursor: pointer;
   font-weight: var(--font-weight-semibold);
   height: var(--custom-paginator-round-button-size);
@@ -48711,7 +48710,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   margin: 2px 0;
   padding: 8px 10px;
   -webkit-margin-end: 4px;
-  color: var(--header-primary);
+  color: var(--text-strong);
   cursor: pointer;
   margin-inline-end: 4px;
 }
@@ -48746,7 +48745,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 ._92efc8f0d8abb645-popoutListEmpty {
   box-sizing: border-box;
-  color: var(--header-primary);
+  color: var(--text-strong);
   cursor: default;
   margin-block: 2px;
   margin-inline: 0 4px;
@@ -48788,7 +48787,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   width: 12px;
 }
 ._4f569b8941af22d1-dotBorderBase {
-  fill: var(--header-primary);
+  fill: var(--text-strong);
 }
 ._703b91fc872193e8-roleDotRight {
   -webkit-margin-start: 0.25rem;
@@ -48873,7 +48872,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   border-bottom: 2px solid var(--primary-500);
 }
 ._9e06aaa5aecd6e3e-tabItemSelected {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._9e06aaa5aecd6e3e-icon {
   height: 16px;
@@ -50009,7 +50008,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 .ebaca56eb4bb23eb-quickSelectPopout {
   border-radius: 3px;
-  color: var(--header-primary);
+  color: var(--text-strong);
   overflow: hidden;
 }
 .ebaca56eb4bb23eb-quickSelectPopoutScroll {
@@ -50768,7 +50767,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 .f89b2c40b824acaf-input {
   border: none;
   box-sizing: border-box;
-  color: var(--header-primary);
+  color: var(--text-strong);
   flex: 1 1 auto;
   min-width: 0;
   position: relative;
@@ -50951,7 +50950,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   cursor: pointer;
 }
 ._8a969186fc6052b2-name {
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-size: 16px;
   font-weight: var(--font-weight-bold);
   line-height: 20px;
@@ -51661,7 +51660,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   margin-inline-start: 8px;
 }
 ._0ab43688537c1d7f-infoCardValue {
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-weight: var(--font-weight-normal);
 }
 ._0ab43688537c1d7f-rowButton {
@@ -52536,7 +52535,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   margin-top: var(--space-12);
 }
 .f1578d037d12d3a8-premiumGroupIcon {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._32fe3b4969edae3a-churnDiscountBanner {
   border-radius: var(--radius-md);
@@ -52838,7 +52837,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 ._4c1e4c295670eb1a-premiumTrialBadge {
   align-items: center;
   border-radius: var(--radius-md);
-  color: var(--header-primary);
+  color: var(--text-strong);
   display: flex;
   -webkit-margin-start: auto;
   gap: 4px;
@@ -53485,7 +53484,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   margin-inline: -24px;
 }
 ._9d295a6cf67970b4-titleIcon {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._9d295a6cf67970b4-floatingUpsell {
   background: var(--background-secondary-alt);
@@ -53522,7 +53521,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   white-space: nowrap;
   width: 100%;
   -webkit-margin-end: 4px;
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-size: 16px;
   font-weight: var(--font-weight-semibold);
   line-height: 20px;
@@ -53667,7 +53666,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   text-align: center;
 }
 ._61a6bac39bf12a0c-title {
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-size: 24px;
   font-weight: var(--font-weight-semibold);
   line-height: 8px;
@@ -54484,7 +54483,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   width: 16px;
 }
 .a61c561e7be40d05-expandedProgressBarHeader {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .a61c561e7be40d05-unsentTooltipContent {
   text-align: center;
@@ -54807,7 +54806,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   flex: 0 0 305px;
 }
 ._72090deda6ab7f6d-description {
-  color: var(--header-primary);
+  color: var(--text-strong);
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -55095,7 +55094,7 @@ html ._614623a0ca8129b8-progress {
 }
 ._614623a0ca8129b8-disabledButtonColor {
   background-color: hsl(var(--primary-800-hsl) / 0.5);
-  color: var(--header-primary);
+  color: var(--text-strong);
   opacity: 1;
 }
 .c7dbcbc778d32dec-row {
@@ -56112,7 +56111,7 @@ html ._614623a0ca8129b8-progress {
 ._623de82e76ad7f82-embedAuthorNameLink {
 }
 ._623de82e76ad7f82-embed ._623de82e76ad7f82-embedAuthorNameLink {
-  color: var(--embed-title);
+  color: var(--mobile-text-heading-primary);
 }
 ._623de82e76ad7f82-embedAuthorIcon {
   -webkit-margin-end: 8px;
@@ -56355,7 +56354,7 @@ html ._614623a0ca8129b8-progress {
 ._623de82e76ad7f82-embedAuthorName,
 ._623de82e76ad7f82-embedFieldName,
 ._623de82e76ad7f82-embedTitle {
-  color: var(--embed-title);
+  color: var(--mobile-text-heading-primary);
 }
 ._623de82e76ad7f82-embedAuthor,
 ._623de82e76ad7f82-embedDescription,
@@ -57004,7 +57003,7 @@ html ._614623a0ca8129b8-progress {
   align-items: center;
   align-self: flex-start;
   border-radius: 4px;
-  color: var(--text-low-contrast);
+  color: var(--text-muted);
   cursor: pointer;
   display: flex;
   gap: 4px;
@@ -58067,7 +58066,7 @@ html ._614623a0ca8129b8-progress {
   overflow: hidden;
 }
 ._28e94c6a8a731ead-label {
-  color: var(--header-primary);
+  color: var(--text-strong);
   margin-bottom: 4px;
 }
 ._28e94c6a8a731ead-description {
@@ -59997,7 +59996,7 @@ html ._614623a0ca8129b8-progress {
   cursor: pointer;
 }
 ._419e35bf04c2f56b-channelName:hover {
-  color: var(--header-primary);
+  color: var(--text-strong);
   text-decoration: underline;
 }
 ._419e35bf04c2f56b-spoiler {
@@ -60744,7 +60743,7 @@ html ._614623a0ca8129b8-progress {
   align-items: center;
   align-self: flex-start;
   border-radius: 4px;
-  color: var(--text-low-contrast);
+  color: var(--text-muted);
   cursor: pointer;
   display: flex;
   gap: var(--space-4);
@@ -61457,7 +61456,7 @@ html ._614623a0ca8129b8-progress {
   display: flex;
 }
 ._9271d23503a01b50-name {
-  color: var(--header-primary);
+  color: var(--text-strong);
   -webkit-margin-end: 8px;
   margin-inline-end: 8px;
   overflow: hidden;
@@ -63405,7 +63404,7 @@ html ._614623a0ca8129b8-progress {
   background: url(/assets/eb40cc3e32c7e70f.svg) 100% no-repeat;
 }
 ._076c1e9e7f8f918a-description {
-  color: var(--header-primary);
+  color: var(--text-strong);
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -64719,7 +64718,7 @@ html ._614623a0ca8129b8-progress {
   vertical-align: middle;
 }
 .e9ab2f5e4e7d625b-stageSystemMessage {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .e9ab2f5e4e7d625b-iconContainer {
   color: var(--text-muted);
@@ -65047,7 +65046,7 @@ html ._614623a0ca8129b8-progress {
   gap: 8px;
 }
 .e8b59c4b335dd2fc-title {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .e8b59c4b335dd2fc-footer {
   background-color: var(--background-mod-subtle);
@@ -65148,7 +65147,7 @@ html ._614623a0ca8129b8-progress {
   margin-top: 24px;
 }
 .e8b59c4b335dd2fc-channelName {
-  color: var(--header-primary);
+  color: var(--text-strong);
   cursor: pointer;
   font-size: 16px;
   font-weight: var(--font-weight-medium);
@@ -65369,7 +65368,7 @@ html ._614623a0ca8129b8-progress {
   background-color: var(--background-surface-highest);
   border: 1px solid var(--border-muted);
   border-radius: var(--radius-xs);
-  color: var(--header-primary);
+  color: var(--text-strong);
   display: inline-block;
   -webkit-margin-start: unset;
   height: 22px;
@@ -66010,10 +66009,10 @@ html ._614623a0ca8129b8-progress {
 ._55c999adcf6db265-queryContainer {
   background-color: var(--background-base-low);
   border-bottom-color: var(--border-muted);
-  color: var(--text-strong);
 }
+._55c999adcf6db265-queryContainer,
 ._55c999adcf6db265-queryContainer strong {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._55c999adcf6db265-focused {
   background-color: var(--background-base-lowest);
@@ -66502,7 +66501,7 @@ html ._614623a0ca8129b8-progress {
   ._0920e02cc8fc7b7b-categoryHeader,
   ._0920e02cc8fc7b7b-premiumApplicationsHeader {
     align-content: center;
-    color: var(--header-primary);
+    color: var(--text-strong);
     flex-direction: row;
     justify-content: space-between;
   }
@@ -66513,7 +66512,7 @@ html ._614623a0ca8129b8-progress {
   }
 }
 ._0920e02cc8fc7b7b-viewAllGames {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._0920e02cc8fc7b7b-headerBarV2LightBackground {
   background: var(--white) !important;
@@ -69394,7 +69393,7 @@ div:hover
 .b5493bb5330ab072-cardHeading {
   background-clip: text;
   -webkit-background-clip: text !important;
-  background-color: var(--header-primary);
+  background-color: var(--text-strong);
   color: transparent;
   display: inline-block;
   margin-bottom: 8px;
@@ -70641,7 +70640,7 @@ div:hover
   max-width: 325px;
 }
 ._6f73d43f1235b2bf-marketingRefreshTitle {
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-size: 24px;
   font-weight: var(--font-weight-semibold);
   line-height: 30px;
@@ -70684,7 +70683,7 @@ div:hover
   }
 }
 ._6f73d43f1235b2bf-marketingRefreshTier1Logo {
-  color: var(--header-primary);
+  color: var(--text-strong);
   display: block;
   height: 20px;
   margin-bottom: 8px;
@@ -70810,7 +70809,7 @@ div:hover
 }
 ._6f73d43f1235b2bf-tier1Banner {
   background-color: var(--background-base-lower);
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._6f73d43f1235b2bf-tier1ProfilePerk {
   color: #4087ed;
@@ -71167,7 +71166,7 @@ div.d74ef86df6475678-nagbar {
   border: 1px solid var(--input-border-default);
   border-radius: var(--radius-sm);
   box-sizing: border-box;
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-size: 17px;
   height: 48px;
   margin-inline: var(--space-4);
@@ -71198,7 +71197,7 @@ div.d74ef86df6475678-nagbar {
   inset-inline: 130px;
 }
 .db41ea5ef0e22091-phoneVerificationModal .db41ea5ef0e22091-title {
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-size: 20px;
   font-weight: var(--font-weight-bold);
   margin-top: auto;
@@ -71359,7 +71358,7 @@ div.d74ef86df6475678-nagbar {
   position: relative;
 }
 ._2666bc68709e8a16-nitroIcon {
-  color: var(--header-primary);
+  color: var(--text-strong);
   -webkit-margin-end: 6px;
   margin-inline-end: 6px;
   position: relative;
@@ -71420,7 +71419,7 @@ div.d74ef86df6475678-nagbar {
   color: var(--interactive-text-default);
 }
 ._1fed1dd06c7aabf7-userTag {
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-family: var(--font-display);
   font-size: 20px;
   font-weight: var(--font-weight-semibold);
@@ -71454,7 +71453,7 @@ div.d74ef86df6475678-nagbar {
   overflow: hidden;
 }
 ._1fed1dd06c7aabf7-detailsInner {
-  color: var(--header-primary);
+  color: var(--text-strong);
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -71536,7 +71535,7 @@ div.d74ef86df6475678-nagbar {
   overflow: hidden;
 }
 ._1fed1dd06c7aabf7-usernameInnerRow {
-  color: var(--header-primary);
+  color: var(--text-strong);
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -71970,7 +71969,7 @@ div.d74ef86df6475678-nagbar {
   padding: 20px;
 }
 .e9cb00d6250845ad-summaryInfo {
-  color: var(--header-primary);
+  color: var(--text-strong);
   cursor: pointer;
   padding: var(--space-16);
   transition: background-color 0.2s ease;
@@ -72246,7 +72245,7 @@ div.d74ef86df6475678-nagbar {
   background-color: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  color: var(--header-primary);
+  color: var(--text-strong);
   overflow: hidden;
 }
 ._01014d2e38bd7c76-paymentRow {
@@ -72528,7 +72527,7 @@ div.d74ef86df6475678-nagbar {
   position: relative;
 }
 .c7f964e7e0fc8b47-connectionHeader .c7f964e7e0fc8b47-connectionAccountValue {
-  color: var(--header-primary);
+  color: var(--text-strong);
   -webkit-margin-start: 16px;
   margin-inline-start: 16px;
   overflow: hidden;
@@ -73279,7 +73278,7 @@ div.d74ef86df6475678-nagbar {
   margin-inline-start: 10px;
 }
 ._7b869fd0e7b8e91a-username {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._7b869fd0e7b8e91a-discriminator {
   color: var(--text-muted);
@@ -73760,7 +73759,7 @@ div.d74ef86df6475678-nagbar {
   overflow: hidden;
 }
 ._1327d744f38d9aa4-username {
-  color: var(--header-primary);
+  color: var(--text-strong);
   flex-grow: 0;
   flex-shrink: 1;
   font-weight: var(--font-weight-semibold);
@@ -73985,14 +73984,14 @@ div.d74ef86df6475678-nagbar {
 ._74f9030597917893-enableCard {
   background-color: var(--background-base-lower);
   border: 1px solid var(--border-muted);
-  color: var(--header-primary);
+  color: var(--text-strong);
   padding: 12px 16px;
 }
 ._74f9030597917893-toggleSection {
   margin-bottom: 30px;
 }
 ._74f9030597917893-arrow {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .dc2e0e7839a6713a-sideNavContent {
   max-width: 800px;
@@ -74189,7 +74188,7 @@ div.d74ef86df6475678-nagbar {
   margin-inline-start: 8px;
 }
 .cc46f0f859f26200-gameName {
-  color: var(--header-primary);
+  color: var(--text-strong);
   font-size: 16px;
   font-weight: var(--font-weight-semibold);
   line-height: 22px;
@@ -74411,7 +74410,7 @@ div.d74ef86df6475678-nagbar {
   margin-top: 48px;
 }
 ._9ed462a7751afeb2-maybeLaterButton {
-  color: var(--header-primary);
+  color: var(--text-strong);
   -webkit-margin-end: 8px;
   margin-inline-end: 8px;
 }
@@ -74469,7 +74468,7 @@ div.d74ef86df6475678-nagbar {
 .fedaccd022fb5126-card {
   border-radius: 5px;
   box-sizing: border-box;
-  color: var(--header-primary);
+  color: var(--text-strong);
   cursor: default;
   overflow: hidden;
   transform: translateZ(0);
@@ -74516,7 +74515,7 @@ div.d74ef86df6475678-nagbar {
 }
 .fedaccd022fb5126-header {
   background-color: var(--background-base-lowest);
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 .fedaccd022fb5126-header:hover {
   background-color: var(--interactive-background-hover);
@@ -74874,7 +74873,7 @@ div.d74ef86df6475678-nagbar {
   color: var(--interactive-text-default);
 }
 ._71961da99d37ac57-contentUnread {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._71961da99d37ac57-voiceSummaryContainer {
   align-self: center;
@@ -75189,7 +75188,7 @@ div.d74ef86df6475678-nagbar {
   justify-content: center;
 }
 .dbfbe01105eb2897-secondaryTitle:before {
-  color: var(--text-low-contrast);
+  color: var(--text-muted);
   content: "•";
   margin: 0 var(--space-8);
 }
@@ -75687,7 +75686,7 @@ div.d74ef86df6475678-nagbar {
 ._2ef4989efde1f4e4-activityVoiceChannel ._2ef4989efde1f4e4-name,
 ._2ef4989efde1f4e4-activityVoiceChannel ._2ef4989efde1f4e4-nameNormal,
 ._2ef4989efde1f4e4-activityVoiceChannel ._2ef4989efde1f4e4-nameWrap {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._2ef4989efde1f4e4-activityVoiceChannel ._2ef4989efde1f4e4-content,
 ._2ef4989efde1f4e4-activityVoiceChannel ._2ef4989efde1f4e4-details,
@@ -75725,7 +75724,7 @@ div.d74ef86df6475678-nagbar {
 ._2ef4989efde1f4e4-activityStreamPreview ._2ef4989efde1f4e4-details,
 ._2ef4989efde1f4e4-activityStreamPreview ._2ef4989efde1f4e4-name,
 ._2ef4989efde1f4e4-activityStreamPreview ._2ef4989efde1f4e4-nameNormal {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._65bb62b5135fffa1-buttonsWrapper {
   flex: 0 1 auto;
@@ -76464,7 +76463,7 @@ span._07f9193042954787-clanTag._07f9193042954787-isOverlay {
 ._6d7919faa2dc3ac6-button {
   align-items: center;
   border-radius: 50%;
-  color: var(--header-primary);
+  color: var(--text-strong);
   cursor: pointer;
   display: flex;
   height: 24px;
@@ -77026,7 +77025,7 @@ span._07f9193042954787-clanTag._07f9193042954787-isOverlay {
   transform: translate(-50%, -50%);
 }
 ._8e08ce7f1f1b7f5a-heading {
-  color: var(--header-primary);
+  color: var(--text-strong);
   position: relative;
   text-align: center;
   z-index: 2;
@@ -77154,7 +77153,7 @@ span._07f9193042954787-clanTag._07f9193042954787-isOverlay {
   background-color: var(--background-base-low);
 }
 .d970dab3554a9582-guildName {
-  color: var(--header-primary);
+  color: var(--text-strong);
   flex: 1;
   font-size: 16px;
   font-weight: var(--font-weight-bold);
@@ -77369,7 +77368,7 @@ span._07f9193042954787-clanTag._07f9193042954787-isOverlay {
   display: block;
 }
 ._884d1a68e0616619-animationContainer {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._884d1a68e0616619-shine {
   color: var(--opacity-white-48);
@@ -78212,7 +78211,7 @@ html ._968a4b9cecf98b8c-invoiceCancelRow {
   gap: 4px;
 }
 ._50e6814668c72ffe-nitroWheel {
-  color: var(--header-primary);
+  color: var(--text-strong);
 }
 ._50e6814668c72ffe-close {
   cursor: pointer;
@@ -80031,7 +80030,7 @@ html ._968a4b9cecf98b8c-invoiceCancelRow {
   height: 185px;
 }
 ._2920920e101e0994-header {
-  color: var(--header-primary);
+  color: var(--text-strong);
   margin-bottom: var(--space-24);
   text-align: center;
 }
@@ -80443,7 +80442,7 @@ html ._968a4b9cecf98b8c-invoiceCancelRow {
 }
 ._2dbe1dc734ff26a5-previewChannelHeader ._2dbe1dc734ff26a5-subtitle,
 ._2dbe1dc734ff26a5-previewChannelHeader ._2dbe1dc734ff26a5-title {
-  color: var(--header-primary);
+  color: var(--text-strong);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -80587,7 +80586,7 @@ html.disable-forced-colors * {
   flex: 1;
 }
 ._2a8914fa6869f3ad-title ._2a8914fa6869f3ad-premiumIcon {
-  color: var(--header-primary);
+  color: var(--text-strong);
   -webkit-margin-start: 8px;
   height: 18px;
   margin-inline-start: 8px;
@@ -82410,7 +82409,6 @@ html.disable-forced-colors * {
   --background-feedback-warning: hsl(
     var(--opacity-yellow-8-hsl) / 0.0784313725490196
   );
-  --background-mobile-secondary: var(--primary-630);
   --background-mod-muted: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-20-hsl) / 0.2);
@@ -82438,11 +82436,8 @@ html.disable-forced-colors * {
   --border-strong: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --border-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --button-danger-background-disabled: var(--red-new-50);
-  --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-hover: var(--brand-500);
   --button-outline-brand-border-active: var(--brand-560);
-  --button-outline-positive-background: hsl(var(--white-hsl) / 0);
-  --button-outline-primary-background: hsl(var(--white-hsl) / 0);
   --button-outline-primary-text: var(--white);
   --card-background-default: var(--neutral-64);
   --card-primary-pressed-bg: var(--primary-645);
@@ -82524,33 +82519,8 @@ html.disable-forced-colors * {
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
-  --content-inventory-overlay-ui-mod: hsl(var(--white-hsl) / 0.7);
-  --content-inventory-overlay-ui-mod-bg: hsl(var(--black-hsl) / 0.1);
   --context-menu-backdrop-background: hsl(
     var(--opacity-black-72-hsl) / 0.7215686274509804
-  );
-  --control-background-active-loading: var(--green-new-50);
-  --control-background-critical-primary-loading: var(--red-new-50);
-  --control-background-critical-secondary-loading: hsl(
-    var(--opacity-8-hsl) / 0.0784313725490196
-  );
-  --control-background-expressive-loading: var(--neutral-1);
-  --control-background-overlay-primary-loading: var(--neutral-1);
-  --control-background-overlay-secondary-loading: hsl(
-    var(--opacity-black-52-hsl) / 0.5215686274509804
-  );
-  --control-background-primary-loading: var(--blurple-50);
-  --control-background-secondary-loading: hsl(
-    var(--opacity-8-hsl) / 0.0784313725490196
-  );
-  --control-border-active-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-critical-primary-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-critical-secondary-loading: hsl(
-    var(--opacity-4-hsl) / 0.0392156862745098
   );
   --control-border-expressive-active: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
@@ -82560,21 +82530,6 @@ html.disable-forced-colors * {
   );
   --control-border-expressive-hover: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-border-expressive-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-border-overlay-primary-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-border-overlay-secondary-loading: hsl(
-    var(--opacity-4-hsl) / 0.0392156862745098
-  );
-  --control-border-primary-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-secondary-loading: hsl(
-    var(--opacity-4-hsl) / 0.0392156862745098
   );
   --control-brand-foreground: var(--brand-360);
   --control-brand-foreground-new: var(--brand-360);
@@ -82647,11 +82602,6 @@ html.disable-forced-colors * {
   --control-expressive-text-active: var(--black);
   --control-expressive-text-default: var(--black);
   --control-expressive-text-hover: var(--black);
-  --control-icon-active-loading: var(--white);
-  --control-icon-critical-primary-loading: var(--white);
-  --control-icon-critical-secondary-loading: var(--red-new-22);
-  --control-icon-expressive-loading: var(--black);
-  --control-icon-icon-only-loading: var(--neutral-1);
   --control-icon-only-background-active: hsl(var(--opacity-20-hsl) / 0.2);
   --control-icon-only-background-hover: hsl(
     var(--opacity-16-hsl) / 0.1607843137254902
@@ -82665,10 +82615,6 @@ html.disable-forced-colors * {
   --control-icon-only-icon-active: var(--neutral-1);
   --control-icon-only-icon-default: var(--neutral-16);
   --control-icon-only-icon-hover: var(--neutral-1);
-  --control-icon-overlay-primary-loading: var(--black);
-  --control-icon-overlay-secondary-loading: var(--white);
-  --control-icon-primary-loading: var(--white);
-  --control-icon-secondary-loading: var(--neutral-1);
   --control-overlay-primary-background-active: var(--neutral-17);
   --control-overlay-primary-background-default: var(--neutral-1);
   --control-overlay-primary-background-hover: var(--neutral-9);
@@ -82751,33 +82697,17 @@ html.disable-forced-colors * {
   --control-secondary-text-active: var(--neutral-1);
   --control-secondary-text-default: var(--neutral-1);
   --control-secondary-text-hover: var(--neutral-1);
-  --control-text-active-loading: var(--white);
-  --control-text-critical-primary-loading: var(--white);
-  --control-text-critical-secondary-loading: var(--red-new-22);
-  --control-text-expressive-loading: var(--black);
-  --control-text-overlay-primary-loading: var(--black);
-  --control-text-overlay-secondary-loading: var(--white);
-  --control-text-primary-loading: var(--white);
-  --control-text-secondary-loading: var(--neutral-1);
   --creator-revenue-icon-gradient-end: var(--teal-430);
   --creator-revenue-icon-gradient-start: var(--teal-360);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-345);
   --creator-revenue-progress-bar: var(--teal-400);
-  --deprecated-card-bg: hsl(var(--primary-700-hsl) / 0.6);
-  --deprecated-card-editable-bg: hsl(var(--primary-700-hsl) / 0.3);
-  --deprecated-text-input-bg: var(--primary-700);
-  --deprecated-text-input-border: hsl(var(--black-hsl) / 0.3);
-  --deprecated-text-input-border-disabled: var(--primary-700);
-  --deprecated-text-input-border-hover: var(--primary-900);
   --embed-background: var(--primary-630);
   --embed-background-alternate: var(--primary-600);
-  --embed-title: var(--neutral-1);
   --experimental-avatar-embed-bg: hsl(
     var(--opacity-black-52-hsl) / 0.5215686274509804
   );
-  --expression-picker-bg: var(--neutral-69);
   --expressive-gradient-blue-end: hsl(var(--illo-blue-60-hsl) / 0.45);
   --expressive-gradient-blue-start: hsl(var(--illo-blue-40-hsl) / 0.45);
   --expressive-gradient-green-end: hsl(var(--illo-green-70-hsl) / 0.45);
@@ -82837,7 +82767,6 @@ html.disable-forced-colors * {
     var(--neutral-12-hsl) / 0.3
   );
   --gradient-progress-pill-background: var(--neutral-45);
-  --header-primary: var(--neutral-1);
   --home-background: var(--primary-645);
   --icon-default: var(--neutral-9);
   --icon-feedback-critical: var(--red-new-22);
@@ -82881,17 +82810,11 @@ html.disable-forced-colors * {
   --interactive-text-active: var(--neutral-1);
   --interactive-text-default: var(--neutral-16);
   --interactive-text-hover: var(--neutral-1);
-  --leaderboard-league-brand-text: var(--lol-text-light);
-  --live-stage-tile-border: hsl(var(--primary-500-hsl) / 0.6);
   --logo-primary: var(--white);
   --mention-background: hsl(
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-8);
-  --menu-item-danger-active-bg: var(--red-new-62);
-  --menu-item-danger-hover-bg: var(--red-new-50);
-  --menu-item-default-active-bg: var(--brand-560);
-  --menu-item-default-hover-bg: var(--brand-500);
   --message-automod-background-default: hsl(var(--red-400-hsl) / 0.05);
   --message-automod-background-hover: hsl(var(--red-400-hsl) / 0.1);
   --message-background-hover: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
@@ -82912,6 +82835,8 @@ html.disable-forced-colors * {
   );
   --message-reacted-text-default: var(--blurple-3);
   --mobile-background-scrim-opaque: var(--black);
+  --mobile-expression-picker-background-default: var(--neutral-69);
+  --mobile-text-heading-primary: var(--neutral-1);
   --modal-background: var(--neutral-64);
   --modal-footer-background: var(--neutral-64);
   --navigator-header-tint: var(--white);
@@ -82923,14 +82848,10 @@ html.disable-forced-colors * {
   --notice-text-info: var(--blue-new-1);
   --notice-text-positive: var(--green-new-2);
   --notice-text-warning: var(--yellow-new-1);
-  --overlay-backdrop-default: hsl(
-    var(--opacity-black-72-hsl) / 0.7215686274509804
-  );
   --overlay-backdrop-lightbox: hsl(
     var(--opacity-black-92-hsl) / 0.9215686274509803
   );
   --panel-bg: var(--neutral-66);
-  --polls-normal-fill-hover: var(--primary-600);
   --polls-normal-image-background: var(--primary-660);
   --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
   --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
@@ -82973,8 +82894,6 @@ html.disable-forced-colors * {
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
   --redesign-button-danger-background: var(--red-430);
-  --redesign-button-danger-pressed-background: var(--red-460);
-  --redesign-button-danger-text: var(--white);
   --redesign-button-destructive-background: var(--red-430);
   --redesign-button-destructive-pressed-background: var(--red-460);
   --redesign-button-destructive-text: var(--white);
@@ -82983,14 +82902,7 @@ html.disable-forced-colors * {
     var(--black-hsl) / 0.64
   );
   --redesign-button-overlay-alpha-text: var(--white);
-  --redesign-button-overlay-background: var(--white);
-  --redesign-button-overlay-text: var(--primary-860);
   --redesign-button-positive-background: var(--green-430);
-  --redesign-button-positive-pressed-background: var(--green-460);
-  --redesign-button-positive-text: var(--white);
-  --redesign-button-premium-primary-blue-for-gradient: var(
-    --premium-tier-0-blue-for-gradients-2
-  );
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
   );
@@ -83003,23 +82915,8 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
   );
-  --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl) / 0);
   --redesign-button-primary-alt-border: var(--blurple-26);
-  --redesign-button-primary-alt-on-blurple-background: hsl(
-    var(--brand-530-hsl) / 0
-  );
-  --redesign-button-primary-alt-on-blurple-border: var(--white);
-  --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
-  --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand-360);
-  --redesign-button-primary-alt-on-blurple-text: var(--white);
-  --redesign-button-primary-alt-pressed-background: hsl(
-    var(--brand-700-hsl) / 0.16
-  );
-  --redesign-button-primary-alt-pressed-border: hsl(var(--brand-400-hsl) / 0.5);
-  --redesign-button-primary-alt-pressed-text: var(--brand-360);
-  --redesign-button-primary-alt-text: var(--blurple-26);
   --redesign-button-primary-background: var(--brand-500);
-  --redesign-button-primary-on-blurple-pressed-text: var(--brand-530);
   --redesign-button-primary-overlay-background: var(--white);
   --redesign-button-primary-overlay-pressed-background: var(--primary-230);
   --redesign-button-primary-overlay-text: var(--primary-860);
@@ -83057,7 +82954,6 @@ html.disable-forced-colors * {
   --spoiler-hidden-background-hover: var(--neutral-27);
   --spoiler-revealed-background: var(--primary-660);
   --status-danger: var(--red-400);
-  --status-danger-text: var(--white);
   --status-online: var(--green-360);
   --status-positive: var(--green-360);
   --status-positive-background: var(--green-430);
@@ -83075,7 +82971,6 @@ html.disable-forced-colors * {
   );
   --switch-background-selected-default: var(--blurple-50);
   --switch-background-selected-hover: var(--blurple-60);
-  --switch-border-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --switch-border-default: hsl(var(--opacity-20-hsl) / 0.2);
   --switch-border-hover: hsl(var(--opacity-40-hsl) / 0.4);
   --switch-border-selected-default: hsl(
@@ -83086,7 +82981,6 @@ html.disable-forced-colors * {
   );
   --switch-thumb-background-default: var(--neutral-1);
   --switch-thumb-background-selected-default: var(--neutral-1);
-  --switch-thumb-foreground-hover: var(--neutral-71);
   --switch-thumb-icon-active: var(--blurple-50);
   --switch-thumb-icon-default: var(--neutral-71);
   --text-brand: var(--blurple-26);
@@ -83109,10 +83003,9 @@ html.disable-forced-colors * {
   --text-feedback-warning: var(--yellow-new-22);
   --text-invert: var(--neutral-71);
   --text-link: var(--blue-new-26);
-  --text-link-low-saturation: var(--blue-330);
-  --text-low-contrast: var(--primary-360);
-  --text-message-preview-low-sat: var(--primary-360);
   --text-muted: var(--neutral-22);
+  --text-overlay-dark: var(--neutral-71);
+  --text-overlay-light: var(--neutral-2);
   --text-status-dnd: var(--red-400);
   --text-status-idle: var(--yellow-300);
   --text-status-offline: var(--primary-360);
@@ -83221,12 +83114,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --background-mobile-secondary: color-mix(
-      in oklab,
-      var(--primary-630) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --background-scrim: color-mix(
@@ -83433,18 +83320,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --content-inventory-overlay-ui-mod: color-mix(
-      in oklab,
-      hsl(var(--white-hsl) / 0.7) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --content-inventory-overlay-ui-mod-bg: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.1) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --context-menu-backdrop-background: color-mix(
       in oklab,
       hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
@@ -83499,42 +83374,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --deprecated-card-bg: color-mix(
-      in oklab,
-      hsl(var(--primary-700-hsl) / 0.6) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-card-editable-bg: color-mix(
-      in oklab,
-      hsl(var(--primary-700-hsl) / 0.3) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-bg: color-mix(
-      in oklab,
-      var(--primary-700) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.3) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border-disabled: color-mix(
-      in oklab,
-      var(--primary-700) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border-hover: color-mix(
-      in oklab,
-      var(--primary-900) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --embed-background: color-mix(
       in oklab,
       var(--primary-630) 100%,
@@ -83547,22 +83386,10 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --embed-title: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --experimental-avatar-embed-bg: color-mix(
       in oklab,
       hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --expression-picker-bg: color-mix(
-      in oklab,
-      var(--neutral-69) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-blue-end: color-mix(
@@ -83738,12 +83565,6 @@ html.disable-forced-colors * {
       var(--neutral-45) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --header-primary: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --home-background: color-mix(
       in oklab,
@@ -83979,18 +83800,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --leaderboard-league-brand-text: color-mix(
-      in oklab,
-      var(--lol-text-light) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --live-stage-tile-border: color-mix(
-      in oklab,
-      hsl(var(--primary-500-hsl) / 0.6) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --logo-primary: color-mix(
       in oklab,
       var(--white) 100%,
@@ -84008,30 +83817,6 @@ html.disable-forced-colors * {
       var(--blurple-8) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
-    );
-    --menu-item-danger-active-bg: color-mix(
-      in oklab,
-      var(--red-new-62) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-danger-hover-bg: color-mix(
-      in oklab,
-      var(--red-new-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-default-active-bg: color-mix(
-      in oklab,
-      var(--brand-560) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-default-hover-bg: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
     );
     --message-automod-background-default: color-mix(
       in oklab,
@@ -84093,6 +83878,18 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --mobile-expression-picker-background-default: color-mix(
+      in oklab,
+      var(--neutral-69) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --mobile-text-heading-primary: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --modal-background: color-mix(
       in oklab,
       var(--neutral-64) 100%,
@@ -84111,12 +83908,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --overlay-backdrop-default: color-mix(
-      in oklab,
-      hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7215686274509804)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --overlay-backdrop-lightbox: color-mix(
       in oklab,
       hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
@@ -84126,12 +83917,6 @@ html.disable-forced-colors * {
     --panel-bg: color-mix(
       in oklab,
       var(--neutral-66) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --polls-normal-fill-hover: color-mix(
-      in oklab,
-      var(--primary-600) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -84219,18 +84004,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-danger-pressed-background: color-mix(
-      in oklab,
-      var(--red-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-danger-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-destructive-background: color-mix(
       in oklab,
       var(--red-430) 100%,
@@ -84267,39 +84040,9 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --redesign-button-overlay-background: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-text: color-mix(
-      in oklab,
-      var(--primary-860) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-positive-background: color-mix(
       in oklab,
       var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-pressed-background: color-mix(
-      in oklab,
-      var(--green-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-premium-primary-blue-for-gradient: color-mix(
-      in oklab,
-      var(--premium-tier-0-blue-for-gradients-2) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -84327,83 +84070,17 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--blurple-26) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-on-blurple-background: color-mix(
-      in oklab,
-      hsl(var(--brand-530-hsl) / 0) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-border: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-pressed-background: color-mix(
-      in oklab,
-      var(--brand-530) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-pressed-border: color-mix(
-      in oklab,
-      var(--brand-360) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--brand-700-hsl) / 0.16) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.16)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-border: color-mix(
-      in oklab,
-      hsl(var(--brand-400-hsl) / 0.5) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.5)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-text: color-mix(
-      in oklab,
-      var(--brand-360) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-text: color-mix(
-      in oklab,
-      var(--blurple-26) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-primary-background: color-mix(
       in oklab,
       var(--brand-500) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-on-blurple-pressed-text: color-mix(
-      in oklab,
-      var(--brand-530) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-primary-overlay-background: color-mix(
       in oklab,
@@ -84705,27 +84382,21 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-link-low-saturation: color-mix(
-      in oklab,
-      var(--blue-330) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-low-contrast: color-mix(
-      in oklab,
-      var(--primary-360) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-message-preview-low-sat: color-mix(
-      in oklab,
-      var(--primary-360) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --text-muted: color-mix(
       in oklab,
       var(--neutral-22) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-overlay-dark: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-overlay-light: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -84855,7 +84526,6 @@ html.disable-forced-colors * {
   --background-feedback-warning: hsl(
     var(--opacity-yellow-8-hsl) / 0.0784313725490196
   );
-  --background-mobile-secondary: var(--white);
   --background-mod-muted: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
@@ -84885,11 +84555,8 @@ html.disable-forced-colors * {
   --border-strong: hsl(var(--opacity-48-hsl) / 0.47843137254901963);
   --border-subtle: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --button-danger-background-disabled: var(--red-new-50);
-  --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-hover: var(--brand-500);
   --button-outline-brand-border-active: var(--brand-560);
-  --button-outline-positive-background: hsl(var(--white-hsl) / 0);
-  --button-outline-primary-background: hsl(var(--white-hsl) / 0);
   --button-outline-primary-text: var(--black);
   --card-background-default: var(--neutral-1);
   --card-primary-pressed-bg: var(--primary-160);
@@ -84971,32 +84638,9 @@ html.disable-forced-colors * {
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
-  --content-inventory-overlay-ui-mod: hsl(var(--white-hsl) / 0.7);
-  --content-inventory-overlay-ui-mod-bg: hsl(var(--black-hsl) / 0.1);
   --context-menu-backdrop-background: hsl(
     var(--opacity-black-52-hsl) / 0.5215686274509804
   );
-  --control-background-active-loading: var(--green-new-50);
-  --control-background-critical-primary-loading: var(--red-new-50);
-  --control-background-critical-secondary-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-background-expressive-loading: var(--blurple-50);
-  --control-background-overlay-primary-loading: var(--neutral-1);
-  --control-background-overlay-secondary-loading: hsl(
-    var(--opacity-black-52-hsl) / 0.5215686274509804
-  );
-  --control-background-primary-loading: var(--blurple-50);
-  --control-background-secondary-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-border-active-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-critical-primary-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-critical-secondary-loading: hsl(var(--opacity-20-hsl) / 0.2);
   --control-border-expressive-active: hsl(
     var(--opacity-white-8-hsl) / 0.0784313725490196
   );
@@ -85006,17 +84650,6 @@ html.disable-forced-colors * {
   --control-border-expressive-hover: hsl(
     var(--opacity-white-8-hsl) / 0.0784313725490196
   );
-  --control-border-expressive-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-overlay-primary-loading: hsl(
-    var(--opacity-28-hsl) / 0.2784313725490196
-  );
-  --control-border-overlay-secondary-loading: hsl(var(--opacity-20-hsl) / 0.2);
-  --control-border-primary-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-secondary-loading: hsl(var(--opacity-20-hsl) / 0.2);
   --control-brand-foreground: var(--brand-500);
   --control-brand-foreground-new: var(--brand-500);
   --control-connect-background-active: var(--green-new-62);
@@ -85082,11 +84715,6 @@ html.disable-forced-colors * {
   --control-expressive-text-active: var(--white);
   --control-expressive-text-default: var(--white);
   --control-expressive-text-hover: var(--white);
-  --control-icon-active-loading: var(--white);
-  --control-icon-critical-primary-loading: var(--white);
-  --control-icon-critical-secondary-loading: var(--red-new-54);
-  --control-icon-expressive-loading: var(--white);
-  --control-icon-icon-only-loading: var(--neutral-71);
   --control-icon-only-background-active: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
@@ -85098,10 +84726,6 @@ html.disable-forced-colors * {
   --control-icon-only-icon-active: var(--neutral-71);
   --control-icon-only-icon-default: var(--neutral-44);
   --control-icon-only-icon-hover: var(--neutral-71);
-  --control-icon-overlay-primary-loading: var(--black);
-  --control-icon-overlay-secondary-loading: var(--white);
-  --control-icon-primary-loading: var(--white);
-  --control-icon-secondary-loading: var(--neutral-71);
   --control-overlay-primary-background-active: var(--neutral-17);
   --control-overlay-primary-background-default: var(--neutral-1);
   --control-overlay-primary-background-hover: var(--neutral-9);
@@ -85174,33 +84798,17 @@ html.disable-forced-colors * {
   --control-secondary-text-active: var(--neutral-71);
   --control-secondary-text-default: var(--neutral-71);
   --control-secondary-text-hover: var(--neutral-71);
-  --control-text-active-loading: var(--white);
-  --control-text-critical-primary-loading: var(--white);
-  --control-text-critical-secondary-loading: var(--red-new-54);
-  --control-text-expressive-loading: var(--white);
-  --control-text-overlay-primary-loading: var(--black);
-  --control-text-overlay-secondary-loading: var(--white);
-  --control-text-primary-loading: var(--white);
-  --control-text-secondary-loading: var(--neutral-71);
   --creator-revenue-icon-gradient-end: var(--teal-400);
   --creator-revenue-icon-gradient-start: var(--teal-345);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-400);
   --creator-revenue-progress-bar: var(--teal-345);
-  --deprecated-card-bg: var(--primary-100);
-  --deprecated-card-editable-bg: hsl(var(--primary-100-hsl) / 0.6);
-  --deprecated-text-input-bg: var(--primary-200);
-  --deprecated-text-input-border: hsl(var(--primary-500-hsl) / 0.3);
-  --deprecated-text-input-border-disabled: var(--primary-200);
-  --deprecated-text-input-border-hover: var(--primary-300);
   --embed-background: var(--primary-130);
   --embed-background-alternate: var(--primary-200);
-  --embed-title: var(--neutral-71);
   --experimental-avatar-embed-bg: hsl(
     var(--opacity-black-52-hsl) / 0.5215686274509804
   );
-  --expression-picker-bg: var(--neutral-2);
   --expressive-gradient-blue-end: hsl(var(--illo-blue-30-hsl) / 0.8);
   --expressive-gradient-blue-start: hsl(var(--illo-blue-10-hsl) / 0.8);
   --expressive-gradient-green-end: hsl(var(--illo-green-30-hsl) / 0.8);
@@ -85260,7 +84868,6 @@ html.disable-forced-colors * {
     var(--neutral-12-hsl) / 0.3
   );
   --gradient-progress-pill-background: var(--neutral-18);
-  --header-primary: var(--neutral-71);
   --home-background: var(--primary-100);
   --icon-default: var(--neutral-69);
   --icon-feedback-critical: var(--red-new-54);
@@ -85310,17 +84917,11 @@ html.disable-forced-colors * {
   --interactive-text-active: var(--neutral-71);
   --interactive-text-default: var(--neutral-44);
   --interactive-text-hover: var(--neutral-71);
-  --leaderboard-league-brand-text: var(--lol-text-dark);
-  --live-stage-tile-border: hsl(var(--primary-430-hsl) / 0.15);
   --logo-primary: var(--brand-500);
   --mention-background: hsl(
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-71);
-  --menu-item-danger-active-bg: var(--red-new-62);
-  --menu-item-danger-hover-bg: var(--red-new-50);
-  --menu-item-default-active-bg: var(--brand-560);
-  --menu-item-default-hover-bg: var(--brand-500);
   --message-automod-background-default: hsl(var(--red-400-hsl) / 0.05);
   --message-automod-background-hover: hsl(var(--red-400-hsl) / 0.1);
   --message-background-hover: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
@@ -85341,6 +84942,8 @@ html.disable-forced-colors * {
   );
   --message-reacted-text-default: var(--blurple-75);
   --mobile-background-scrim-opaque: var(--black);
+  --mobile-expression-picker-background-default: var(--neutral-2);
+  --mobile-text-heading-primary: var(--neutral-71);
   --modal-background: var(--neutral-1);
   --modal-footer-background: var(--neutral-1);
   --navigator-header-tint: var(--primary-500);
@@ -85352,14 +84955,10 @@ html.disable-forced-colors * {
   --notice-text-info: var(--blue-new-76);
   --notice-text-positive: var(--green-new-75);
   --notice-text-warning: var(--yellow-new-76);
-  --overlay-backdrop-default: hsl(
-    var(--opacity-black-52-hsl) / 0.5215686274509804
-  );
   --overlay-backdrop-lightbox: hsl(
     var(--opacity-black-92-hsl) / 0.9215686274509803
   );
   --panel-bg: var(--neutral-2);
-  --polls-normal-fill-hover: var(--primary-230);
   --polls-normal-image-background: var(--white);
   --polls-victor-fill: hsl(var(--green-400-hsl) / 0.2);
   --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
@@ -85396,8 +84995,6 @@ html.disable-forced-colors * {
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
   --redesign-button-danger-background: var(--red-430);
-  --redesign-button-danger-pressed-background: var(--red-460);
-  --redesign-button-danger-text: var(--white);
   --redesign-button-destructive-background: var(--red-430);
   --redesign-button-destructive-pressed-background: var(--red-460);
   --redesign-button-destructive-text: var(--white);
@@ -85406,14 +85003,7 @@ html.disable-forced-colors * {
     var(--black-hsl) / 0.64
   );
   --redesign-button-overlay-alpha-text: var(--white);
-  --redesign-button-overlay-background: var(--white);
-  --redesign-button-overlay-text: var(--primary-860);
   --redesign-button-positive-background: var(--green-430);
-  --redesign-button-positive-pressed-background: var(--green-460);
-  --redesign-button-positive-text: var(--white);
-  --redesign-button-premium-primary-blue-for-gradient: var(
-    --premium-tier-0-blue-for-gradients-2
-  );
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
   );
@@ -85426,23 +85016,8 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
   );
-  --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl) / 0);
   --redesign-button-primary-alt-border: var(--blurple-49);
-  --redesign-button-primary-alt-on-blurple-background: hsl(
-    var(--brand-530-hsl) / 0
-  );
-  --redesign-button-primary-alt-on-blurple-border: var(--white);
-  --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
-  --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand-360);
-  --redesign-button-primary-alt-on-blurple-text: var(--white);
-  --redesign-button-primary-alt-pressed-background: hsl(
-    var(--brand-500-hsl) / 0.06
-  );
-  --redesign-button-primary-alt-pressed-border: var(--brand-330);
-  --redesign-button-primary-alt-pressed-text: var(--brand-560);
-  --redesign-button-primary-alt-text: var(--blurple-49);
   --redesign-button-primary-background: var(--brand-500);
-  --redesign-button-primary-on-blurple-pressed-text: var(--brand-530);
   --redesign-button-primary-overlay-background: var(--white);
   --redesign-button-primary-overlay-pressed-background: var(--primary-230);
   --redesign-button-primary-overlay-text: var(--primary-860);
@@ -85480,7 +85055,6 @@ html.disable-forced-colors * {
   --spoiler-hidden-background-hover: var(--neutral-39);
   --spoiler-revealed-background: var(--primary-160);
   --status-danger: var(--red-430);
-  --status-danger-text: var(--white);
   --status-online: var(--green-400);
   --status-positive: var(--green-400);
   --status-positive-background: var(--green-430);
@@ -85498,7 +85072,6 @@ html.disable-forced-colors * {
   );
   --switch-background-selected-default: var(--blurple-50);
   --switch-background-selected-hover: var(--blurple-60);
-  --switch-border-active: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --switch-border-default: hsl(
     var(--opacity-black-16-hsl) / 0.1607843137254902
   );
@@ -85511,7 +85084,6 @@ html.disable-forced-colors * {
   );
   --switch-thumb-background-default: var(--neutral-44);
   --switch-thumb-background-selected-default: var(--neutral-1);
-  --switch-thumb-foreground-hover: var(--neutral-1);
   --switch-thumb-icon-active: var(--blurple-50);
   --switch-thumb-icon-default: var(--neutral-1);
   --text-brand: var(--blurple-49);
@@ -85534,10 +85106,9 @@ html.disable-forced-colors * {
   --text-feedback-warning: var(--yellow-new-54);
   --text-invert: var(--neutral-1);
   --text-link: var(--blue-new-49);
-  --text-link-low-saturation: var(--blue-430);
-  --text-low-contrast: var(--primary-460);
-  --text-message-preview-low-sat: var(--primary-460);
   --text-muted: var(--neutral-40);
+  --text-overlay-dark: var(--neutral-71);
+  --text-overlay-light: var(--neutral-2);
   --text-status-dnd: var(--red-430);
   --text-status-idle: var(--yellow-400);
   --text-status-offline: var(--primary-460);
@@ -85646,12 +85217,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --background-mobile-secondary: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --background-scrim: color-mix(
@@ -85858,18 +85423,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --content-inventory-overlay-ui-mod: color-mix(
-      in oklab,
-      hsl(var(--white-hsl) / 0.7) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --content-inventory-overlay-ui-mod-bg: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.1) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --context-menu-backdrop-background: color-mix(
       in oklab,
       hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
@@ -85924,42 +85477,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --deprecated-card-bg: color-mix(
-      in oklab,
-      var(--primary-100) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-card-editable-bg: color-mix(
-      in oklab,
-      hsl(var(--primary-100-hsl) / 0.6) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-bg: color-mix(
-      in oklab,
-      var(--primary-200) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border: color-mix(
-      in oklab,
-      hsl(var(--primary-500-hsl) / 0.3) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border-disabled: color-mix(
-      in oklab,
-      var(--primary-200) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border-hover: color-mix(
-      in oklab,
-      var(--primary-300) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --embed-background: color-mix(
       in oklab,
       var(--primary-130) 100%,
@@ -85972,22 +85489,10 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --embed-title: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --experimental-avatar-embed-bg: color-mix(
       in oklab,
       hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --expression-picker-bg: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-blue-end: color-mix(
@@ -86163,12 +85668,6 @@ html.disable-forced-colors * {
       var(--neutral-18) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --header-primary: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --home-background: color-mix(
       in oklab,
@@ -86404,18 +85903,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --leaderboard-league-brand-text: color-mix(
-      in oklab,
-      var(--lol-text-dark) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --live-stage-tile-border: color-mix(
-      in oklab,
-      hsl(var(--primary-430-hsl) / 0.15) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.15)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --logo-primary: color-mix(
       in oklab,
       var(--brand-500) 100%,
@@ -86433,30 +85920,6 @@ html.disable-forced-colors * {
       var(--blurple-71) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
-    );
-    --menu-item-danger-active-bg: color-mix(
-      in oklab,
-      var(--red-new-62) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-danger-hover-bg: color-mix(
-      in oklab,
-      var(--red-new-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-default-active-bg: color-mix(
-      in oklab,
-      var(--brand-560) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-default-hover-bg: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
     );
     --message-automod-background-default: color-mix(
       in oklab,
@@ -86518,6 +85981,18 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --mobile-expression-picker-background-default: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --mobile-text-heading-primary: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --modal-background: color-mix(
       in oklab,
       var(--neutral-1) 100%,
@@ -86536,12 +86011,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --overlay-backdrop-default: color-mix(
-      in oklab,
-      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --overlay-backdrop-lightbox: color-mix(
       in oklab,
       hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
@@ -86551,12 +86020,6 @@ html.disable-forced-colors * {
     --panel-bg: color-mix(
       in oklab,
       var(--neutral-2) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --polls-normal-fill-hover: color-mix(
-      in oklab,
-      var(--primary-230) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -86644,18 +86107,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-danger-pressed-background: color-mix(
-      in oklab,
-      var(--red-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-danger-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-destructive-background: color-mix(
       in oklab,
       var(--red-430) 100%,
@@ -86692,39 +86143,9 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --redesign-button-overlay-background: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-text: color-mix(
-      in oklab,
-      var(--primary-860) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-positive-background: color-mix(
       in oklab,
       var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-pressed-background: color-mix(
-      in oklab,
-      var(--green-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-premium-primary-blue-for-gradient: color-mix(
-      in oklab,
-      var(--premium-tier-0-blue-for-gradients-2) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -86752,83 +86173,17 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--blurple-49) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-on-blurple-background: color-mix(
-      in oklab,
-      hsl(var(--brand-530-hsl) / 0) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-border: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-pressed-background: color-mix(
-      in oklab,
-      var(--brand-530) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-pressed-border: color-mix(
-      in oklab,
-      var(--brand-360) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0.06) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.06)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-border: color-mix(
-      in oklab,
-      var(--brand-330) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-text: color-mix(
-      in oklab,
-      var(--brand-560) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-text: color-mix(
-      in oklab,
-      var(--blurple-49) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-primary-background: color-mix(
       in oklab,
       var(--brand-500) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-on-blurple-pressed-text: color-mix(
-      in oklab,
-      var(--brand-530) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-primary-overlay-background: color-mix(
       in oklab,
@@ -87130,27 +86485,21 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-link-low-saturation: color-mix(
-      in oklab,
-      var(--blue-430) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-low-contrast: color-mix(
-      in oklab,
-      var(--primary-460) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-message-preview-low-sat: color-mix(
-      in oklab,
-      var(--primary-460) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --text-muted: color-mix(
       in oklab,
       var(--neutral-40) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-overlay-dark: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-overlay-light: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -87280,7 +86629,6 @@ html.disable-forced-colors * {
   --background-feedback-warning: hsl(
     var(--opacity-yellow-8-hsl) / 0.0784313725490196
   );
-  --background-mobile-secondary: var(--black);
   --background-mod-muted: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --background-mod-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
@@ -87310,11 +86658,8 @@ html.disable-forced-colors * {
   --border-strong: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --border-subtle: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --button-danger-background-disabled: var(--red-new-50);
-  --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-hover: var(--brand-500);
   --button-outline-brand-border-active: var(--brand-560);
-  --button-outline-positive-background: hsl(var(--white-hsl) / 0);
-  --button-outline-primary-background: hsl(var(--white-hsl) / 0);
   --button-outline-primary-text: var(--white);
   --card-background-default: var(--neutral-91);
   --card-primary-pressed-bg: var(--plum-25);
@@ -87396,32 +86741,7 @@ html.disable-forced-colors * {
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
-  --content-inventory-overlay-ui-mod: hsl(var(--white-hsl) / 0.7);
-  --content-inventory-overlay-ui-mod-bg: hsl(var(--black-hsl) / 0.1);
   --context-menu-backdrop-background: hsl(var(--black-hsl) / 0.7);
-  --control-background-active-loading: var(--green-new-50);
-  --control-background-critical-primary-loading: var(--red-new-50);
-  --control-background-critical-secondary-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-background-expressive-loading: var(--neutral-1);
-  --control-background-overlay-primary-loading: var(--neutral-1);
-  --control-background-overlay-secondary-loading: hsl(
-    var(--opacity-black-52-hsl) / 0.5215686274509804
-  );
-  --control-background-primary-loading: var(--blurple-50);
-  --control-background-secondary-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-border-active-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-critical-primary-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-critical-secondary-loading: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
-  );
   --control-border-expressive-active: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
@@ -87430,21 +86750,6 @@ html.disable-forced-colors * {
   );
   --control-border-expressive-hover: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
-  );
-  --control-border-expressive-loading: hsl(
-    var(--opacity-24-hsl) / 0.23921568627450981
-  );
-  --control-border-overlay-primary-loading: hsl(
-    var(--opacity-24-hsl) / 0.23921568627450981
-  );
-  --control-border-overlay-secondary-loading: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
-  );
-  --control-border-primary-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-secondary-loading: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
   );
   --control-brand-foreground: var(--brand-360);
   --control-brand-foreground-new: var(--brand-360);
@@ -87517,11 +86822,6 @@ html.disable-forced-colors * {
   --control-expressive-text-active: var(--black);
   --control-expressive-text-default: var(--black);
   --control-expressive-text-hover: var(--black);
-  --control-icon-active-loading: var(--white);
-  --control-icon-critical-primary-loading: var(--white);
-  --control-icon-critical-secondary-loading: var(--red-new-37);
-  --control-icon-expressive-loading: var(--black);
-  --control-icon-icon-only-loading: var(--neutral-8);
   --control-icon-only-background-active: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
@@ -87535,10 +86835,6 @@ html.disable-forced-colors * {
   --control-icon-only-icon-active: var(--neutral-8);
   --control-icon-only-icon-default: var(--neutral-27);
   --control-icon-only-icon-hover: var(--neutral-8);
-  --control-icon-overlay-primary-loading: var(--black);
-  --control-icon-overlay-secondary-loading: var(--white);
-  --control-icon-primary-loading: var(--white);
-  --control-icon-secondary-loading: var(--neutral-8);
   --control-overlay-primary-background-active: var(--neutral-17);
   --control-overlay-primary-background-default: var(--neutral-1);
   --control-overlay-primary-background-hover: var(--neutral-9);
@@ -87621,33 +86917,17 @@ html.disable-forced-colors * {
   --control-secondary-text-active: var(--neutral-8);
   --control-secondary-text-default: var(--neutral-8);
   --control-secondary-text-hover: var(--neutral-8);
-  --control-text-active-loading: var(--white);
-  --control-text-critical-primary-loading: var(--white);
-  --control-text-critical-secondary-loading: var(--red-new-37);
-  --control-text-expressive-loading: var(--black);
-  --control-text-overlay-primary-loading: var(--black);
-  --control-text-overlay-secondary-loading: var(--white);
-  --control-text-primary-loading: var(--white);
-  --control-text-secondary-loading: var(--neutral-8);
   --creator-revenue-icon-gradient-end: var(--teal-430);
   --creator-revenue-icon-gradient-start: var(--teal-360);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-345);
   --creator-revenue-progress-bar: var(--teal-400);
-  --deprecated-card-bg: hsl(var(--primary-700-hsl) / 0.6);
-  --deprecated-card-editable-bg: hsl(var(--primary-700-hsl) / 0.3);
-  --deprecated-text-input-bg: var(--primary-700);
-  --deprecated-text-input-border: hsl(var(--black-hsl) / 0.3);
-  --deprecated-text-input-border-disabled: var(--primary-700);
-  --deprecated-text-input-border-hover: var(--primary-900);
   --embed-background: var(--plum-23);
   --embed-background-alternate: var(--plum-23);
-  --embed-title: var(--neutral-8);
   --experimental-avatar-embed-bg: hsl(
     var(--opacity-black-52-hsl) / 0.5215686274509804
   );
-  --expression-picker-bg: var(--neutral-97);
   --expressive-gradient-blue-end: hsl(var(--illo-blue-60-hsl) / 0.25);
   --expressive-gradient-blue-start: hsl(var(--illo-blue-40-hsl) / 0.25);
   --expressive-gradient-green-end: hsl(var(--illo-green-70-hsl) / 0.25);
@@ -87707,7 +86987,6 @@ html.disable-forced-colors * {
     var(--neutral-12-hsl) / 0.3
   );
   --gradient-progress-pill-background: var(--neutral-63);
-  --header-primary: var(--neutral-8);
   --home-background: var(--plum-18);
   --icon-default: var(--neutral-10);
   --icon-feedback-critical: var(--red-new-37);
@@ -87757,17 +87036,11 @@ html.disable-forced-colors * {
   --interactive-text-active: var(--neutral-8);
   --interactive-text-default: var(--neutral-27);
   --interactive-text-hover: var(--neutral-8);
-  --leaderboard-league-brand-text: var(--lol-text-light);
-  --live-stage-tile-border: hsl(var(--plum-13-hsl) / 0.6);
   --logo-primary: var(--white);
   --mention-background: hsl(
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-26);
-  --menu-item-danger-active-bg: var(--red-new-62);
-  --menu-item-danger-hover-bg: var(--red-new-50);
-  --menu-item-default-active-bg: var(--brand-560);
-  --menu-item-default-hover-bg: var(--brand-500);
   --message-automod-background-default: hsl(var(--red-345-hsl) / 0.08);
   --message-automod-background-hover: hsl(var(--red-400-hsl) / 0.1);
   --message-background-hover: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
@@ -87788,6 +87061,8 @@ html.disable-forced-colors * {
   );
   --message-reacted-text-default: var(--blurple-21);
   --mobile-background-scrim-opaque: var(--plum-19);
+  --mobile-expression-picker-background-default: var(--neutral-97);
+  --mobile-text-heading-primary: var(--neutral-8);
   --modal-background: var(--neutral-91);
   --modal-footer-background: var(--neutral-91);
   --navigator-header-tint: var(--white);
@@ -87799,14 +87074,10 @@ html.disable-forced-colors * {
   --notice-text-info: var(--blue-new-19);
   --notice-text-positive: var(--green-new-20);
   --notice-text-warning: var(--yellow-new-18);
-  --overlay-backdrop-default: hsl(
-    var(--opacity-black-72-hsl) / 0.7215686274509804
-  );
   --overlay-backdrop-lightbox: hsl(
     var(--opacity-black-92-hsl) / 0.9215686274509803
   );
   --panel-bg: var(--plum-24);
-  --polls-normal-fill-hover: var(--primary-600);
   --polls-normal-image-background: var(--primary-660);
   --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
   --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
@@ -87849,8 +87120,6 @@ html.disable-forced-colors * {
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
   --redesign-button-danger-background: var(--red-430);
-  --redesign-button-danger-pressed-background: var(--red-460);
-  --redesign-button-danger-text: var(--white);
   --redesign-button-destructive-background: var(--red-430);
   --redesign-button-destructive-pressed-background: var(--red-460);
   --redesign-button-destructive-text: var(--white);
@@ -87859,14 +87128,7 @@ html.disable-forced-colors * {
     var(--black-hsl) / 0.64
   );
   --redesign-button-overlay-alpha-text: var(--white);
-  --redesign-button-overlay-background: var(--white);
-  --redesign-button-overlay-text: var(--primary-860);
   --redesign-button-positive-background: var(--green-430);
-  --redesign-button-positive-pressed-background: var(--green-460);
-  --redesign-button-positive-text: var(--white);
-  --redesign-button-premium-primary-blue-for-gradient: var(
-    --premium-tier-0-blue-for-gradients-2
-  );
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
   );
@@ -87879,23 +87141,8 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
   );
-  --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl) / 0);
   --redesign-button-primary-alt-border: var(--blurple-41);
-  --redesign-button-primary-alt-on-blurple-background: hsl(
-    var(--brand-530-hsl) / 0
-  );
-  --redesign-button-primary-alt-on-blurple-border: var(--white);
-  --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
-  --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand-360);
-  --redesign-button-primary-alt-on-blurple-text: var(--white);
-  --redesign-button-primary-alt-pressed-background: hsl(
-    var(--brand-700-hsl) / 0.16
-  );
-  --redesign-button-primary-alt-pressed-border: hsl(var(--brand-400-hsl) / 0.5);
-  --redesign-button-primary-alt-pressed-text: var(--brand-360);
-  --redesign-button-primary-alt-text: var(--blurple-41);
   --redesign-button-primary-background: var(--brand-500);
-  --redesign-button-primary-on-blurple-pressed-text: var(--brand-530);
   --redesign-button-primary-overlay-background: var(--white);
   --redesign-button-primary-overlay-pressed-background: var(--plum-4);
   --redesign-button-primary-overlay-text: var(--plum-25);
@@ -87937,7 +87184,6 @@ html.disable-forced-colors * {
   --spoiler-hidden-background-hover: var(--neutral-36);
   --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
   --status-danger: var(--red-400);
-  --status-danger-text: var(--white);
   --status-online: var(--green-360);
   --status-positive: var(--green-360);
   --status-positive-background: var(--green-430);
@@ -87955,7 +87201,6 @@ html.disable-forced-colors * {
   );
   --switch-background-selected-default: var(--blurple-50);
   --switch-background-selected-hover: var(--blurple-60);
-  --switch-border-active: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --switch-border-default: hsl(var(--opacity-20-hsl) / 0.2);
   --switch-border-hover: hsl(var(--opacity-40-hsl) / 0.4);
   --switch-border-selected-default: hsl(
@@ -87966,7 +87211,6 @@ html.disable-forced-colors * {
   );
   --switch-thumb-background-default: var(--neutral-1);
   --switch-thumb-background-selected-default: var(--neutral-1);
-  --switch-thumb-foreground-hover: var(--neutral-71);
   --switch-thumb-icon-active: var(--blurple-50);
   --switch-thumb-icon-default: var(--neutral-71);
   --text-brand: var(--blurple-41);
@@ -87989,10 +87233,9 @@ html.disable-forced-colors * {
   --text-feedback-warning: var(--yellow-new-38);
   --text-invert: var(--neutral-71);
   --text-link: var(--blue-new-42);
-  --text-link-low-saturation: var(--blue-330);
-  --text-low-contrast: var(--plum-12);
-  --text-message-preview-low-sat: var(--plum-9);
   --text-muted: var(--neutral-33);
+  --text-overlay-dark: var(--neutral-71);
+  --text-overlay-light: var(--neutral-2);
   --text-status-dnd: var(--red-400);
   --text-status-idle: var(--yellow-300);
   --text-status-offline: var(--plum-9);
@@ -88103,12 +87346,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --background-mobile-secondary: color-mix(
-      in oklab,
-      var(--black) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --background-scrim: color-mix(
@@ -88315,18 +87552,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --content-inventory-overlay-ui-mod: color-mix(
-      in oklab,
-      hsl(var(--white-hsl) / 0.7) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --content-inventory-overlay-ui-mod-bg: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.1) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --context-menu-backdrop-background: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.7) 100%,
@@ -88381,42 +87606,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --deprecated-card-bg: color-mix(
-      in oklab,
-      hsl(var(--primary-700-hsl) / 0.6) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-card-editable-bg: color-mix(
-      in oklab,
-      hsl(var(--primary-700-hsl) / 0.3) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-bg: color-mix(
-      in oklab,
-      var(--primary-700) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.3) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border-disabled: color-mix(
-      in oklab,
-      var(--primary-700) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border-hover: color-mix(
-      in oklab,
-      var(--primary-900) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --embed-background: color-mix(
       in oklab,
       var(--plum-23) 100%,
@@ -88429,22 +87618,10 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --embed-title: color-mix(
-      in oklab,
-      var(--neutral-8) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --experimental-avatar-embed-bg: color-mix(
       in oklab,
       hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --expression-picker-bg: color-mix(
-      in oklab,
-      var(--neutral-97) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-blue-end: color-mix(
@@ -88620,12 +87797,6 @@ html.disable-forced-colors * {
       var(--neutral-63) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --header-primary: color-mix(
-      in oklab,
-      var(--neutral-8) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --home-background: color-mix(
       in oklab,
@@ -88861,18 +88032,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --leaderboard-league-brand-text: color-mix(
-      in oklab,
-      var(--lol-text-light) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --live-stage-tile-border: color-mix(
-      in oklab,
-      hsl(var(--plum-13-hsl) / 0.6) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --logo-primary: color-mix(
       in oklab,
       var(--white) 100%,
@@ -88890,30 +88049,6 @@ html.disable-forced-colors * {
       var(--blurple-26) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
-    );
-    --menu-item-danger-active-bg: color-mix(
-      in oklab,
-      var(--red-new-62) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-danger-hover-bg: color-mix(
-      in oklab,
-      var(--red-new-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-default-active-bg: color-mix(
-      in oklab,
-      var(--brand-560) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-default-hover-bg: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
     );
     --message-automod-background-default: color-mix(
       in oklab,
@@ -88975,6 +88110,18 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --mobile-expression-picker-background-default: color-mix(
+      in oklab,
+      var(--neutral-97) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --mobile-text-heading-primary: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --modal-background: color-mix(
       in oklab,
       var(--neutral-91) 100%,
@@ -88993,12 +88140,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --overlay-backdrop-default: color-mix(
-      in oklab,
-      hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7215686274509804)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --overlay-backdrop-lightbox: color-mix(
       in oklab,
       hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
@@ -89008,12 +88149,6 @@ html.disable-forced-colors * {
     --panel-bg: color-mix(
       in oklab,
       var(--plum-24) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --polls-normal-fill-hover: color-mix(
-      in oklab,
-      var(--primary-600) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -89101,18 +88236,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-danger-pressed-background: color-mix(
-      in oklab,
-      var(--red-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-danger-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-destructive-background: color-mix(
       in oklab,
       var(--red-430) 100%,
@@ -89149,39 +88272,9 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --redesign-button-overlay-background: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-text: color-mix(
-      in oklab,
-      var(--primary-860) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-positive-background: color-mix(
       in oklab,
       var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-pressed-background: color-mix(
-      in oklab,
-      var(--green-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-premium-primary-blue-for-gradient: color-mix(
-      in oklab,
-      var(--premium-tier-0-blue-for-gradients-2) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -89209,83 +88302,17 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--blurple-41) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-on-blurple-background: color-mix(
-      in oklab,
-      hsl(var(--brand-530-hsl) / 0) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-border: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-pressed-background: color-mix(
-      in oklab,
-      var(--brand-530) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-pressed-border: color-mix(
-      in oklab,
-      var(--brand-360) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--brand-700-hsl) / 0.16) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.16)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-border: color-mix(
-      in oklab,
-      hsl(var(--brand-400-hsl) / 0.5) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.5)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-text: color-mix(
-      in oklab,
-      var(--brand-360) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-text: color-mix(
-      in oklab,
-      var(--blurple-41) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-primary-background: color-mix(
       in oklab,
       var(--brand-500) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-on-blurple-pressed-text: color-mix(
-      in oklab,
-      var(--brand-530) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-primary-overlay-background: color-mix(
       in oklab,
@@ -89587,27 +88614,21 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-link-low-saturation: color-mix(
-      in oklab,
-      var(--blue-330) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-low-contrast: color-mix(
-      in oklab,
-      var(--plum-12) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-message-preview-low-sat: color-mix(
-      in oklab,
-      var(--plum-9) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --text-muted: color-mix(
       in oklab,
       var(--neutral-33) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-overlay-dark: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-overlay-light: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -89737,7 +88758,6 @@ html.disable-forced-colors * {
   --background-feedback-warning: hsl(
     var(--opacity-yellow-8-hsl) / 0.0784313725490196
   );
-  --background-mobile-secondary: var(--plum-20);
   --background-mod-muted: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-20-hsl) / 0.2);
@@ -89765,11 +88785,8 @@ html.disable-forced-colors * {
   --border-strong: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --border-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --button-danger-background-disabled: var(--red-new-50);
-  --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-hover: var(--brand-500);
   --button-outline-brand-border-active: var(--brand-560);
-  --button-outline-positive-background: hsl(var(--white-hsl) / 0);
-  --button-outline-primary-background: hsl(var(--white-hsl) / 0);
   --button-outline-primary-text: var(--white);
   --card-background-default: var(--neutral-79);
   --card-primary-pressed-bg: var(--plum-19);
@@ -89851,33 +88868,8 @@ html.disable-forced-colors * {
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
-  --content-inventory-overlay-ui-mod: hsl(var(--white-hsl) / 0.7);
-  --content-inventory-overlay-ui-mod-bg: hsl(var(--black-hsl) / 0.1);
   --context-menu-backdrop-background: hsl(
     var(--opacity-black-72-hsl) / 0.7215686274509804
-  );
-  --control-background-active-loading: var(--green-new-50);
-  --control-background-critical-primary-loading: var(--red-new-50);
-  --control-background-critical-secondary-loading: hsl(
-    var(--opacity-8-hsl) / 0.0784313725490196
-  );
-  --control-background-expressive-loading: var(--neutral-1);
-  --control-background-overlay-primary-loading: var(--neutral-1);
-  --control-background-overlay-secondary-loading: hsl(
-    var(--opacity-black-52-hsl) / 0.5215686274509804
-  );
-  --control-background-primary-loading: var(--blurple-50);
-  --control-background-secondary-loading: hsl(
-    var(--opacity-8-hsl) / 0.0784313725490196
-  );
-  --control-border-active-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-critical-primary-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-critical-secondary-loading: hsl(
-    var(--opacity-4-hsl) / 0.0392156862745098
   );
   --control-border-expressive-active: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
@@ -89887,21 +88879,6 @@ html.disable-forced-colors * {
   );
   --control-border-expressive-hover: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-border-expressive-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-border-overlay-primary-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-border-overlay-secondary-loading: hsl(
-    var(--opacity-4-hsl) / 0.0392156862745098
-  );
-  --control-border-primary-loading: hsl(
-    var(--opacity-white-8-hsl) / 0.0784313725490196
-  );
-  --control-border-secondary-loading: hsl(
-    var(--opacity-4-hsl) / 0.0392156862745098
   );
   --control-brand-foreground: var(--brand-360);
   --control-brand-foreground-new: var(--brand-360);
@@ -89974,11 +88951,6 @@ html.disable-forced-colors * {
   --control-expressive-text-active: var(--black);
   --control-expressive-text-default: var(--black);
   --control-expressive-text-hover: var(--black);
-  --control-icon-active-loading: var(--white);
-  --control-icon-critical-primary-loading: var(--white);
-  --control-icon-critical-secondary-loading: var(--red-new-32);
-  --control-icon-expressive-loading: var(--black);
-  --control-icon-icon-only-loading: var(--neutral-2);
   --control-icon-only-background-active: hsl(var(--opacity-20-hsl) / 0.2);
   --control-icon-only-background-hover: hsl(
     var(--opacity-16-hsl) / 0.1607843137254902
@@ -89992,10 +88964,6 @@ html.disable-forced-colors * {
   --control-icon-only-icon-active: var(--neutral-2);
   --control-icon-only-icon-default: var(--neutral-23);
   --control-icon-only-icon-hover: var(--neutral-2);
-  --control-icon-overlay-primary-loading: var(--black);
-  --control-icon-overlay-secondary-loading: var(--white);
-  --control-icon-primary-loading: var(--white);
-  --control-icon-secondary-loading: var(--neutral-2);
   --control-overlay-primary-background-active: var(--neutral-17);
   --control-overlay-primary-background-default: var(--neutral-1);
   --control-overlay-primary-background-hover: var(--neutral-9);
@@ -90078,33 +89046,17 @@ html.disable-forced-colors * {
   --control-secondary-text-active: var(--neutral-2);
   --control-secondary-text-default: var(--neutral-2);
   --control-secondary-text-hover: var(--neutral-2);
-  --control-text-active-loading: var(--white);
-  --control-text-critical-primary-loading: var(--white);
-  --control-text-critical-secondary-loading: var(--red-new-32);
-  --control-text-expressive-loading: var(--black);
-  --control-text-overlay-primary-loading: var(--black);
-  --control-text-overlay-secondary-loading: var(--white);
-  --control-text-primary-loading: var(--white);
-  --control-text-secondary-loading: var(--neutral-2);
   --creator-revenue-icon-gradient-end: var(--teal-430);
   --creator-revenue-icon-gradient-start: var(--teal-360);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-345);
   --creator-revenue-progress-bar: var(--teal-400);
-  --deprecated-card-bg: hsl(var(--primary-700-hsl) / 0.6);
-  --deprecated-card-editable-bg: hsl(var(--primary-700-hsl) / 0.3);
-  --deprecated-text-input-bg: var(--primary-700);
-  --deprecated-text-input-border: hsl(var(--black-hsl) / 0.3);
-  --deprecated-text-input-border-disabled: var(--primary-700);
-  --deprecated-text-input-border-hover: var(--primary-900);
   --embed-background: var(--plum-18);
   --embed-background-alternate: var(--plum-18);
-  --embed-title: var(--neutral-2);
   --experimental-avatar-embed-bg: hsl(
     var(--opacity-black-52-hsl) / 0.5215686274509804
   );
-  --expression-picker-bg: var(--neutral-86);
   --expressive-gradient-blue-end: hsl(var(--illo-blue-60-hsl) / 0.3);
   --expressive-gradient-blue-start: hsl(var(--illo-blue-40-hsl) / 0.3);
   --expressive-gradient-green-end: hsl(var(--illo-green-70-hsl) / 0.3);
@@ -90164,7 +89116,6 @@ html.disable-forced-colors * {
     var(--neutral-12-hsl) / 0.3
   );
   --gradient-progress-pill-background: var(--neutral-56);
-  --header-primary: var(--neutral-2);
   --home-background: var(--plum-18);
   --icon-default: var(--neutral-5);
   --icon-feedback-critical: var(--red-new-32);
@@ -90212,17 +89163,11 @@ html.disable-forced-colors * {
   --interactive-text-active: var(--neutral-2);
   --interactive-text-default: var(--neutral-23);
   --interactive-text-hover: var(--neutral-2);
-  --leaderboard-league-brand-text: var(--lol-text-light);
-  --live-stage-tile-border: hsl(var(--plum-13-hsl) / 0.6);
   --logo-primary: var(--white);
   --mention-background: hsl(
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-19);
-  --menu-item-danger-active-bg: var(--red-new-62);
-  --menu-item-danger-hover-bg: var(--red-new-50);
-  --menu-item-default-active-bg: var(--brand-560);
-  --menu-item-default-hover-bg: var(--brand-500);
   --message-automod-background-default: hsl(var(--red-345-hsl) / 0.08);
   --message-automod-background-hover: hsl(var(--red-400-hsl) / 0.1);
   --message-background-hover: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
@@ -90243,6 +89188,8 @@ html.disable-forced-colors * {
   );
   --message-reacted-text-default: var(--blurple-14);
   --mobile-background-scrim-opaque: var(--black);
+  --mobile-expression-picker-background-default: var(--neutral-86);
+  --mobile-text-heading-primary: var(--neutral-2);
   --modal-background: var(--neutral-79);
   --modal-footer-background: var(--neutral-79);
   --navigator-header-tint: var(--white);
@@ -90254,14 +89201,10 @@ html.disable-forced-colors * {
   --notice-text-info: var(--blue-new-12);
   --notice-text-positive: var(--green-new-14);
   --notice-text-warning: var(--yellow-new-12);
-  --overlay-backdrop-default: hsl(
-    var(--opacity-black-72-hsl) / 0.7215686274509804
-  );
   --overlay-backdrop-lightbox: hsl(
     var(--opacity-black-92-hsl) / 0.9215686274509803
   );
   --panel-bg: var(--neutral-82);
-  --polls-normal-fill-hover: var(--primary-600);
   --polls-normal-image-background: var(--primary-660);
   --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
   --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
@@ -90304,8 +89247,6 @@ html.disable-forced-colors * {
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
   --redesign-button-danger-background: var(--red-430);
-  --redesign-button-danger-pressed-background: var(--red-460);
-  --redesign-button-danger-text: var(--white);
   --redesign-button-destructive-background: var(--red-430);
   --redesign-button-destructive-pressed-background: var(--red-460);
   --redesign-button-destructive-text: var(--white);
@@ -90314,14 +89255,7 @@ html.disable-forced-colors * {
     var(--black-hsl) / 0.64
   );
   --redesign-button-overlay-alpha-text: var(--white);
-  --redesign-button-overlay-background: var(--white);
-  --redesign-button-overlay-text: var(--primary-860);
   --redesign-button-positive-background: var(--green-430);
-  --redesign-button-positive-pressed-background: var(--green-460);
-  --redesign-button-positive-text: var(--white);
-  --redesign-button-premium-primary-blue-for-gradient: var(
-    --premium-tier-0-blue-for-gradients-2
-  );
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
   );
@@ -90334,23 +89268,8 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
   );
-  --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl) / 0);
   --redesign-button-primary-alt-border: var(--blurple-35);
-  --redesign-button-primary-alt-on-blurple-background: hsl(
-    var(--brand-530-hsl) / 0
-  );
-  --redesign-button-primary-alt-on-blurple-border: var(--white);
-  --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
-  --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand-360);
-  --redesign-button-primary-alt-on-blurple-text: var(--white);
-  --redesign-button-primary-alt-pressed-background: hsl(
-    var(--brand-700-hsl) / 0.16
-  );
-  --redesign-button-primary-alt-pressed-border: hsl(var(--brand-400-hsl) / 0.5);
-  --redesign-button-primary-alt-pressed-text: var(--brand-360);
-  --redesign-button-primary-alt-text: var(--blurple-35);
   --redesign-button-primary-background: var(--brand-500);
-  --redesign-button-primary-on-blurple-pressed-text: var(--brand-530);
   --redesign-button-primary-overlay-background: var(--white);
   --redesign-button-primary-overlay-pressed-background: var(--plum-4);
   --redesign-button-primary-overlay-text: var(--plum-25);
@@ -90390,7 +89309,6 @@ html.disable-forced-colors * {
   --spoiler-hidden-background-hover: var(--neutral-33);
   --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
   --status-danger: var(--red-400);
-  --status-danger-text: var(--white);
   --status-online: var(--green-360);
   --status-positive: var(--green-360);
   --status-positive-background: var(--green-430);
@@ -90408,7 +89326,6 @@ html.disable-forced-colors * {
   );
   --switch-background-selected-default: var(--blurple-50);
   --switch-background-selected-hover: var(--blurple-60);
-  --switch-border-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --switch-border-default: hsl(var(--opacity-20-hsl) / 0.2);
   --switch-border-hover: hsl(var(--opacity-40-hsl) / 0.4);
   --switch-border-selected-default: hsl(
@@ -90419,7 +89336,6 @@ html.disable-forced-colors * {
   );
   --switch-thumb-background-default: var(--neutral-1);
   --switch-thumb-background-selected-default: var(--neutral-1);
-  --switch-thumb-foreground-hover: var(--neutral-71);
   --switch-thumb-icon-active: var(--blurple-50);
   --switch-thumb-icon-default: var(--neutral-71);
   --text-brand: var(--blurple-35);
@@ -90442,10 +89358,9 @@ html.disable-forced-colors * {
   --text-feedback-warning: var(--yellow-new-32);
   --text-invert: var(--neutral-71);
   --text-link: var(--blue-new-36);
-  --text-link-low-saturation: var(--blue-330);
-  --text-low-contrast: var(--plum-11);
-  --text-message-preview-low-sat: var(--plum-11);
   --text-muted: var(--neutral-29);
+  --text-overlay-dark: var(--neutral-71);
+  --text-overlay-light: var(--neutral-2);
   --text-status-dnd: var(--red-400);
   --text-status-idle: var(--yellow-300);
   --text-status-offline: var(--plum-9);
@@ -90554,12 +89469,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --background-mobile-secondary: color-mix(
-      in oklab,
-      var(--plum-20) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --background-scrim: color-mix(
@@ -90766,18 +89675,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --content-inventory-overlay-ui-mod: color-mix(
-      in oklab,
-      hsl(var(--white-hsl) / 0.7) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --content-inventory-overlay-ui-mod-bg: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.1) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --context-menu-backdrop-background: color-mix(
       in oklab,
       hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
@@ -90832,42 +89729,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --deprecated-card-bg: color-mix(
-      in oklab,
-      hsl(var(--primary-700-hsl) / 0.6) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-card-editable-bg: color-mix(
-      in oklab,
-      hsl(var(--primary-700-hsl) / 0.3) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-bg: color-mix(
-      in oklab,
-      var(--primary-700) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.3) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border-disabled: color-mix(
-      in oklab,
-      var(--primary-700) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-border-hover: color-mix(
-      in oklab,
-      var(--primary-900) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --embed-background: color-mix(
       in oklab,
       var(--plum-18) 100%,
@@ -90880,22 +89741,10 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --embed-title: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --experimental-avatar-embed-bg: color-mix(
       in oklab,
       hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --expression-picker-bg: color-mix(
-      in oklab,
-      var(--neutral-86) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-blue-end: color-mix(
@@ -91071,12 +89920,6 @@ html.disable-forced-colors * {
       var(--neutral-56) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --header-primary: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --home-background: color-mix(
       in oklab,
@@ -91312,18 +90155,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --leaderboard-league-brand-text: color-mix(
-      in oklab,
-      var(--lol-text-light) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --live-stage-tile-border: color-mix(
-      in oklab,
-      hsl(var(--plum-13-hsl) / 0.6) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --logo-primary: color-mix(
       in oklab,
       var(--white) 100%,
@@ -91341,30 +90172,6 @@ html.disable-forced-colors * {
       var(--blurple-19) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
-    );
-    --menu-item-danger-active-bg: color-mix(
-      in oklab,
-      var(--red-new-62) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-danger-hover-bg: color-mix(
-      in oklab,
-      var(--red-new-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-default-active-bg: color-mix(
-      in oklab,
-      var(--brand-560) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --menu-item-default-hover-bg: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
     );
     --message-automod-background-default: color-mix(
       in oklab,
@@ -91426,6 +90233,18 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --mobile-expression-picker-background-default: color-mix(
+      in oklab,
+      var(--neutral-86) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --mobile-text-heading-primary: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --modal-background: color-mix(
       in oklab,
       var(--neutral-79) 100%,
@@ -91444,12 +90263,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --overlay-backdrop-default: color-mix(
-      in oklab,
-      hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7215686274509804)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --overlay-backdrop-lightbox: color-mix(
       in oklab,
       hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
@@ -91459,12 +90272,6 @@ html.disable-forced-colors * {
     --panel-bg: color-mix(
       in oklab,
       var(--neutral-82) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --polls-normal-fill-hover: color-mix(
-      in oklab,
-      var(--primary-600) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -91552,18 +90359,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-danger-pressed-background: color-mix(
-      in oklab,
-      var(--red-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-danger-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-destructive-background: color-mix(
       in oklab,
       var(--red-430) 100%,
@@ -91600,39 +90395,9 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --redesign-button-overlay-background: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-text: color-mix(
-      in oklab,
-      var(--primary-860) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-positive-background: color-mix(
       in oklab,
       var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-pressed-background: color-mix(
-      in oklab,
-      var(--green-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-premium-primary-blue-for-gradient: color-mix(
-      in oklab,
-      var(--premium-tier-0-blue-for-gradients-2) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -91660,83 +90425,17 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--blurple-35) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-on-blurple-background: color-mix(
-      in oklab,
-      hsl(var(--brand-530-hsl) / 0) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-border: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-pressed-background: color-mix(
-      in oklab,
-      var(--brand-530) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-pressed-border: color-mix(
-      in oklab,
-      var(--brand-360) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-on-blurple-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--brand-700-hsl) / 0.16) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.16)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-border: color-mix(
-      in oklab,
-      hsl(var(--brand-400-hsl) / 0.5) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.5)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-pressed-text: color-mix(
-      in oklab,
-      var(--brand-360) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-text: color-mix(
-      in oklab,
-      var(--blurple-35) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-primary-background: color-mix(
       in oklab,
       var(--brand-500) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-on-blurple-pressed-text: color-mix(
-      in oklab,
-      var(--brand-530) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-primary-overlay-background: color-mix(
       in oklab,
@@ -92038,27 +90737,21 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-link-low-saturation: color-mix(
-      in oklab,
-      var(--blue-330) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-low-contrast: color-mix(
-      in oklab,
-      var(--plum-11) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --text-message-preview-low-sat: color-mix(
-      in oklab,
-      var(--plum-11) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --text-muted: color-mix(
       in oklab,
       var(--neutral-29) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-overlay-dark: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-overlay-light: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -92231,19 +90924,6 @@ html.disable-forced-colors * {
   --checkbox-border-hover: var(--neutral-12);
   --checkbox-border-selected-default: var(--neutral-12);
   --checkbox-border-selected-hover: var(--neutral-12);
-  --control-background-critical-secondary-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-background-secondary-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-border-active-loading: var(--green-new-20);
-  --control-border-critical-primary-loading: var(--red-new-16);
-  --control-border-critical-secondary-loading: var(--red-new-16);
-  --control-border-overlay-primary-loading: var(--neutral-12);
-  --control-border-overlay-secondary-loading: var(--neutral-25);
-  --control-border-primary-loading: var(--blurple-18);
-  --control-border-secondary-loading: var(--neutral-25);
   --control-connect-border-active: var(--green-new-20);
   --control-connect-border-default: var(--green-new-20);
   --control-connect-border-hover: var(--green-new-20);
@@ -92268,8 +90948,6 @@ html.disable-forced-colors * {
   --control-critical-secondary-text-active: var(--red-new-6);
   --control-critical-secondary-text-default: var(--red-new-6);
   --control-critical-secondary-text-hover: var(--red-new-6);
-  --control-icon-critical-secondary-loading: var(--red-new-6);
-  --control-icon-icon-only-loading: var(--white);
   --control-icon-only-background-active: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
@@ -92279,7 +90957,6 @@ html.disable-forced-colors * {
   --control-icon-only-icon-active: var(--white);
   --control-icon-only-icon-default: var(--neutral-2);
   --control-icon-only-icon-hover: var(--white);
-  --control-icon-secondary-loading: var(--white);
   --control-overlay-primary-border-active: var(--neutral-12);
   --control-overlay-primary-border-default: var(--neutral-12);
   --control-overlay-primary-border-hover: var(--neutral-12);
@@ -92305,11 +90982,7 @@ html.disable-forced-colors * {
   --control-secondary-text-active: var(--white);
   --control-secondary-text-default: var(--white);
   --control-secondary-text-hover: var(--white);
-  --control-text-critical-secondary-loading: var(--red-new-6);
-  --control-text-secondary-loading: var(--white);
-  --embed-title: var(--white);
   --gradient-progress-pill-background: var(--neutral-34);
-  --header-primary: var(--white);
   --icon-default: var(--neutral-1);
   --icon-feedback-critical: var(--red-new-6);
   --icon-feedback-info: var(--blue-new-8);
@@ -92370,13 +91043,13 @@ html.disable-forced-colors * {
   --message-mentioned-background-hover: hsl(
     var(--opacity-yellow-24-hsl) / 0.23921568627450981
   );
+  --mobile-text-heading-primary: var(--white);
   --radio-border-active: var(--neutral-12);
   --radio-border-default: var(--neutral-12);
   --radio-border-default-selected: var(--neutral-12);
   --radio-border-hover: var(--neutral-12);
   --radio-border-hover-selected: var(--neutral-12);
   --redesign-button-primary-alt-border: var(--brand-300);
-  --redesign-button-primary-alt-text: var(--brand-300);
   --redesign-button-secondary-border: var(--neutral-12);
   --redesign-button-secondary-text: var(--neutral-1);
   --redesign-button-tertiary-text: var(--neutral-1);
@@ -92385,7 +91058,6 @@ html.disable-forced-colors * {
   --spine-default: var(--neutral-1);
   --stage-card-pill-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --status-danger: var(--red-new-28);
-  --switch-border-active: var(--neutral-12);
   --switch-border-default: var(--neutral-12);
   --switch-border-hover: var(--neutral-12);
   --switch-border-selected-default: var(--neutral-12);
@@ -92539,23 +91211,11 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --embed-title: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --gradient-progress-pill-background: color-mix(
       in oklab,
       var(--neutral-34) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --header-primary: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --icon-default: color-mix(
       in oklab,
@@ -92797,17 +91457,17 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --mobile-text-heading-primary: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-300) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-text: color-mix(
-      in oklab,
-      var(--brand-300) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-secondary-border: color-mix(
       in oklab,
@@ -93050,19 +91710,6 @@ html.disable-forced-colors * {
   --checkbox-border-hover: var(--neutral-49);
   --checkbox-border-selected-default: var(--neutral-49);
   --checkbox-border-selected-hover: var(--neutral-49);
-  --control-background-critical-secondary-loading: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
-  );
-  --control-background-secondary-loading: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
-  );
-  --control-border-active-loading: var(--green-new-59);
-  --control-border-critical-primary-loading: var(--red-new-58);
-  --control-border-critical-secondary-loading: var(--red-new-58);
-  --control-border-overlay-primary-loading: var(--neutral-49);
-  --control-border-overlay-secondary-loading: var(--neutral-38);
-  --control-border-primary-loading: var(--blurple-59);
-  --control-border-secondary-loading: var(--neutral-38);
   --control-connect-border-active: var(--green-new-59);
   --control-connect-border-default: var(--green-new-59);
   --control-connect-border-hover: var(--green-new-59);
@@ -93087,8 +91734,6 @@ html.disable-forced-colors * {
   --control-critical-secondary-text-active: var(--red-new-63);
   --control-critical-secondary-text-default: var(--red-new-63);
   --control-critical-secondary-text-hover: var(--red-new-63);
-  --control-icon-critical-secondary-loading: var(--red-new-63);
-  --control-icon-icon-only-loading: var(--black);
   --control-icon-only-background-active: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
   );
@@ -93098,7 +91743,6 @@ html.disable-forced-colors * {
   --control-icon-only-icon-active: var(--black);
   --control-icon-only-icon-default: var(--neutral-64);
   --control-icon-only-icon-hover: var(--black);
-  --control-icon-secondary-loading: var(--black);
   --control-overlay-primary-border-active: var(--neutral-49);
   --control-overlay-primary-border-default: var(--neutral-49);
   --control-overlay-primary-border-hover: var(--neutral-49);
@@ -93124,11 +91768,7 @@ html.disable-forced-colors * {
   --control-secondary-text-active: var(--black);
   --control-secondary-text-default: var(--black);
   --control-secondary-text-hover: var(--black);
-  --control-text-critical-secondary-loading: var(--red-new-63);
-  --control-text-secondary-loading: var(--black);
-  --embed-title: var(--black);
   --gradient-progress-pill-background: var(--neutral-30);
-  --header-primary: var(--black);
   --icon-default: var(--neutral-76);
   --icon-feedback-critical: var(--red-new-63);
   --icon-feedback-info: var(--blue-new-65);
@@ -93189,13 +91829,13 @@ html.disable-forced-colors * {
   --message-mentioned-background-hover: hsl(
     var(--opacity-yellow-16-hsl) / 0.1607843137254902
   );
+  --mobile-text-heading-primary: var(--black);
   --radio-border-active: var(--neutral-49);
   --radio-border-default: var(--neutral-49);
   --radio-border-default-selected: var(--neutral-49);
   --radio-border-hover: var(--neutral-49);
   --radio-border-hover-selected: var(--neutral-49);
   --redesign-button-primary-alt-border: var(--brand-600);
-  --redesign-button-primary-alt-text: var(--brand-600);
   --redesign-button-secondary-border: var(--neutral-49);
   --redesign-button-secondary-text: var(--neutral-76);
   --redesign-button-tertiary-text: var(--neutral-76);
@@ -93204,7 +91844,6 @@ html.disable-forced-colors * {
   --spine-default: var(--neutral-72);
   --stage-card-pill-bg: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --status-danger: var(--red-new-47);
-  --switch-border-active: var(--neutral-49);
   --switch-border-default: var(--neutral-49);
   --switch-border-hover: var(--neutral-49);
   --switch-border-selected-default: var(--neutral-49);
@@ -93358,23 +91997,11 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --embed-title: color-mix(
-      in oklab,
-      var(--black) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --gradient-progress-pill-background: color-mix(
       in oklab,
       var(--neutral-30) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --header-primary: color-mix(
-      in oklab,
-      var(--black) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --icon-default: color-mix(
       in oklab,
@@ -93616,17 +92243,17 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --mobile-text-heading-primary: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-600) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-text: color-mix(
-      in oklab,
-      var(--brand-600) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-secondary-border: color-mix(
       in oklab,
@@ -93869,19 +92496,6 @@ html.disable-forced-colors * {
   --checkbox-border-hover: var(--neutral-23);
   --checkbox-border-selected-default: var(--neutral-23);
   --checkbox-border-selected-hover: var(--neutral-23);
-  --control-background-critical-secondary-loading: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
-  );
-  --control-background-secondary-loading: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
-  );
-  --control-border-active-loading: var(--green-new-26);
-  --control-border-critical-primary-loading: var(--red-new-22);
-  --control-border-critical-secondary-loading: var(--red-new-22);
-  --control-border-overlay-primary-loading: var(--neutral-23);
-  --control-border-overlay-secondary-loading: var(--neutral-35);
-  --control-border-primary-loading: var(--blurple-24);
-  --control-border-secondary-loading: var(--neutral-35);
   --control-connect-border-active: var(--green-new-26);
   --control-connect-border-default: var(--green-new-26);
   --control-connect-border-hover: var(--green-new-26);
@@ -93906,8 +92520,6 @@ html.disable-forced-colors * {
   --control-critical-secondary-text-active: var(--red-new-22);
   --control-critical-secondary-text-default: var(--red-new-22);
   --control-critical-secondary-text-hover: var(--red-new-22);
-  --control-icon-critical-secondary-loading: var(--red-new-22);
-  --control-icon-icon-only-loading: var(--white);
   --control-icon-only-background-active: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
   );
@@ -93919,7 +92531,6 @@ html.disable-forced-colors * {
   --control-icon-only-icon-active: var(--white);
   --control-icon-only-icon-default: var(--neutral-15);
   --control-icon-only-icon-hover: var(--white);
-  --control-icon-secondary-loading: var(--white);
   --control-overlay-primary-border-active: var(--neutral-23);
   --control-overlay-primary-border-default: var(--neutral-23);
   --control-overlay-primary-border-hover: var(--neutral-23);
@@ -93947,11 +92558,7 @@ html.disable-forced-colors * {
   --control-secondary-text-active: var(--white);
   --control-secondary-text-default: var(--white);
   --control-secondary-text-hover: var(--white);
-  --control-text-critical-secondary-loading: var(--red-new-22);
-  --control-text-secondary-loading: var(--white);
-  --embed-title: var(--white);
   --gradient-progress-pill-background: var(--neutral-44);
-  --header-primary: var(--white);
   --icon-default: var(--neutral-6);
   --icon-feedback-critical: var(--red-new-22);
   --icon-feedback-info: var(--blue-new-25);
@@ -94016,13 +92623,13 @@ html.disable-forced-colors * {
   --message-mentioned-background-hover: hsl(
     var(--opacity-yellow-28-hsl) / 0.2784313725490196
   );
+  --mobile-text-heading-primary: var(--white);
   --radio-border-active: var(--neutral-23);
   --radio-border-default: var(--neutral-23);
   --radio-border-default-selected: var(--neutral-23);
   --radio-border-hover: var(--neutral-23);
   --radio-border-hover-selected: var(--neutral-23);
   --redesign-button-primary-alt-border: var(--brand-345);
-  --redesign-button-primary-alt-text: var(--brand-345);
   --redesign-button-secondary-border: var(--neutral-23);
   --redesign-button-secondary-text: var(--neutral-6);
   --redesign-button-tertiary-text: var(--neutral-6);
@@ -94031,7 +92638,6 @@ html.disable-forced-colors * {
   --spine-default: var(--neutral-10);
   --stage-card-pill-bg: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --status-danger: var(--red-new-44);
-  --switch-border-active: var(--neutral-23);
   --switch-border-default: var(--neutral-23);
   --switch-border-hover: var(--neutral-23);
   --switch-border-selected-default: var(--neutral-23);
@@ -94185,23 +92791,11 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --embed-title: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --gradient-progress-pill-background: color-mix(
       in oklab,
       var(--neutral-44) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --header-primary: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --icon-default: color-mix(
       in oklab,
@@ -94443,17 +93037,17 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --mobile-text-heading-primary: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-345) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-text: color-mix(
-      in oklab,
-      var(--brand-345) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-secondary-border: color-mix(
       in oklab,
@@ -94696,19 +93290,6 @@ html.disable-forced-colors * {
   --checkbox-border-hover: var(--neutral-19);
   --checkbox-border-selected-default: var(--neutral-19);
   --checkbox-border-selected-hover: var(--neutral-19);
-  --control-background-critical-secondary-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-background-secondary-loading: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-border-active-loading: var(--green-new-22);
-  --control-border-critical-primary-loading: var(--red-new-19);
-  --control-border-critical-secondary-loading: var(--red-new-19);
-  --control-border-overlay-primary-loading: var(--neutral-19);
-  --control-border-overlay-secondary-loading: var(--neutral-32);
-  --control-border-primary-loading: var(--blurple-20);
-  --control-border-secondary-loading: var(--neutral-32);
   --control-connect-border-active: var(--green-new-22);
   --control-connect-border-default: var(--green-new-22);
   --control-connect-border-hover: var(--green-new-22);
@@ -94733,8 +93314,6 @@ html.disable-forced-colors * {
   --control-critical-secondary-text-active: var(--red-new-16);
   --control-critical-secondary-text-default: var(--red-new-16);
   --control-critical-secondary-text-hover: var(--red-new-16);
-  --control-icon-critical-secondary-loading: var(--red-new-16);
-  --control-icon-icon-only-loading: var(--white);
   --control-icon-only-background-active: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
@@ -94744,7 +93323,6 @@ html.disable-forced-colors * {
   --control-icon-only-icon-active: var(--white);
   --control-icon-only-icon-default: var(--neutral-10);
   --control-icon-only-icon-hover: var(--white);
-  --control-icon-secondary-loading: var(--white);
   --control-overlay-primary-border-active: var(--neutral-19);
   --control-overlay-primary-border-default: var(--neutral-19);
   --control-overlay-primary-border-hover: var(--neutral-19);
@@ -94770,11 +93348,7 @@ html.disable-forced-colors * {
   --control-secondary-text-active: var(--white);
   --control-secondary-text-default: var(--white);
   --control-secondary-text-hover: var(--white);
-  --control-text-critical-secondary-loading: var(--red-new-16);
-  --control-text-secondary-loading: var(--white);
-  --embed-title: var(--white);
   --gradient-progress-pill-background: var(--neutral-41);
-  --header-primary: var(--white);
   --icon-default: var(--neutral-1);
   --icon-feedback-critical: var(--red-new-16);
   --icon-feedback-info: var(--blue-new-18);
@@ -94835,13 +93409,13 @@ html.disable-forced-colors * {
   --message-mentioned-background-hover: hsl(
     var(--opacity-yellow-24-hsl) / 0.23921568627450981
   );
+  --mobile-text-heading-primary: var(--white);
   --radio-border-active: var(--neutral-19);
   --radio-border-default: var(--neutral-19);
   --radio-border-default-selected: var(--neutral-19);
   --radio-border-hover: var(--neutral-19);
   --radio-border-hover-selected: var(--neutral-19);
   --redesign-button-primary-alt-border: var(--brand-330);
-  --redesign-button-primary-alt-text: var(--brand-330);
   --redesign-button-secondary-border: var(--neutral-19);
   --redesign-button-secondary-text: var(--neutral-1);
   --redesign-button-tertiary-text: var(--neutral-1);
@@ -94850,7 +93424,6 @@ html.disable-forced-colors * {
   --spine-default: var(--neutral-5);
   --stage-card-pill-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --status-danger: var(--red-new-38);
-  --switch-border-active: var(--neutral-19);
   --switch-border-default: var(--neutral-19);
   --switch-border-hover: var(--neutral-19);
   --switch-border-selected-default: var(--neutral-19);
@@ -95004,23 +93577,11 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --embed-title: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --gradient-progress-pill-background: color-mix(
       in oklab,
       var(--neutral-41) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --header-primary: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --icon-default: color-mix(
       in oklab,
@@ -95262,17 +93823,17 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --mobile-text-heading-primary: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-330) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-text: color-mix(
-      in oklab,
-      var(--brand-330) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-secondary-border: color-mix(
       in oklab,
@@ -101202,4 +99763,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.5411d346cb806ff0.css.map*/
+/*# sourceMappingURL=web.235caa2582f8da57.css.map*/
