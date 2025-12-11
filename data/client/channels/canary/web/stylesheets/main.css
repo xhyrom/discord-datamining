@@ -75161,10 +75161,8 @@ div.d74ef86df6475678-nagbar {
   padding: var(--space-12);
   transition: background-color 0.15s ease;
 }
-.dbfbe01105eb2897-baseControlItem:hover {
-  background-color: var(--interactive-background-hover);
-}
 .dbfbe01105eb2897-baseControlItem:hover.dbfbe01105eb2897-clickable {
+  background-color: var(--interactive-background-hover);
   cursor: pointer;
 }
 .dbfbe01105eb2897-baseControlItemDescription {
@@ -101205,4 +101203,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.77fc69d335212ddf.css.map*/
+/*# sourceMappingURL=web.5243e531c3a169f5.css.map*/
