@@ -22455,9 +22455,9 @@ span.clanTag__5d473 {
     var(--profile-gradient-button-color) 80%,
     var(--black)
   );
-  --control-secondary-background-default: var(--opacity-white-24);
-  --control-secondary-background-hover: var(--opacity-white-36);
-  --control-secondary-background-active: var(--opacity-white-32);
+  --control-secondary-background-default: var(--opacity-white-8);
+  --control-secondary-background-hover: var(--opacity-white-16);
+  --control-secondary-background-active: var(--opacity-white-12);
 }
 :root .custom-user-profile-theme.theme-light {
   --control-primary-background-default: var(--profile-gradient-button-color);
@@ -100199,4 +100199,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.986061c59d458533.css.map*/
+/*# sourceMappingURL=12633.026a8568273a166a.css.map*/
