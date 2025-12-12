@@ -19397,9 +19397,6 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
 ._83f66f9a8c7c74ec-responsiveText {
   color: var(--text-default);
 }
-._83f66f9a8c7c74ec-text {
-  color: var(--control-primary-text-default);
-}
 ._3add81a1a1ae9da9-wrapper {
   text-align: center;
 }
@@ -99545,4 +99542,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.1f2c7240338adba2.css.map*/
+/*# sourceMappingURL=web.f3f9272a984335e9.css.map*/
