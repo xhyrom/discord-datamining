@@ -42384,23 +42384,23 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
 .ab86098b36386ff7-statusText {
   color: var(--text-default);
 }
-.ab86098b36386ff7-statusEmoji:not(:has(+ .ab86098b36386ff7-statusText)) {
+.ab86098b36386ff7-statusEmoji:not(:has(~ .ab86098b36386ff7-statusText)) {
   max-height: 32px;
   max-width: 32px;
   min-height: 32px;
   min-width: 32px;
 }
-.ab86098b36386ff7-statusEmoji:has(+ .ab86098b36386ff7-statusText) {
+.ab86098b36386ff7-statusEmoji:has(~ .ab86098b36386ff7-statusText) {
   height: 16px;
   width: 16px;
   -webkit-margin-end: 4px;
   margin-inline-end: 4px;
 }
-.ab86098b36386ff7-statusEmoji + .ab86098b36386ff7-statusText {
+.ab86098b36386ff7-statusEmoji ~ .ab86098b36386ff7-statusText {
   display: inline;
 }
 .ab86098b36386ff7-labelRow
-  + .ab86098b36386ff7-statusEmoji:not(:has(+ .ab86098b36386ff7-statusText)) {
+  ~ .ab86098b36386ff7-statusEmoji:not(:has(~ .ab86098b36386ff7-statusText)) {
   display: block;
   margin-inline: auto;
 }
@@ -73980,10 +73980,12 @@ div.d74ef86df6475678-nagbar {
   border-radius: 8px;
   box-sizing: border-box;
   height: 208px;
-  margin: 32px 0;
   min-width: 660px;
   padding: 24px 32px 32px;
   position: relative;
+}
+.c501831bd1d46894-container.c501831bd1d46894-withMargin {
+  margin: 32px 0;
 }
 .theme-dark .c501831bd1d46894-container {
   background-color: #0b1320;
@@ -99543,4 +99545,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.56a94c9cd7cf9ce7.css.map*/
+/*# sourceMappingURL=web.f2afd705ab561f95.css.map*/
