@@ -105,8 +105,13 @@
 <div class="warn-box">
   <strong>Important:</strong>
   <span style="color: #434343"
-    >We’re excited to announce that the opportunity to be considered for the
-    Discord Testers server is currently available for a limited time! </span
+    >We’re sorry to say that the opportunity to be considered for the Discord
+    Testers server is currently unavailable. When the opportunity is available
+    again, it will be announced here.</span
+  ><br /><br /><span style="color: #434343"
+    >Recent applications are being reviewed, and those believed to be a good fit
+    will receive an invitation in early 2026.  Keep an eye on this article for
+    more information.</span
   >
 </div>
 <p>
@@ -115,42 +120,24 @@
   identify, reproduce, and provide high-quality bug reports. 
 </p>
 <p>
-  Great news for aspiring Discord Testers! The Discord Testers Consideration
-  Quiz is currently open for a limited time, in preparation to add new members
-  to the community in 2026. Want to maximize your chances of success? We've got
-  you covered! Here are some valuable tips to help you prepare and shine on the
-  quiz:
+  For those interested in joining Discord Testers in the future, here are some
+  valuable tips to help you prepare and shine on the quiz in the future:
 </p>
 <ul>
-  <li data-list-item-id="ec2b3ebeddf04944b0e04bda839ec820d">
+  <li data-list-item-id="e8f4531500d0f6284292769cce69f3e71">
     Make sure to follow the quiz directions carefully
   </li>
-  <li data-list-item-id="e8346b778aae50158941a52e268ba83d5">
+  <li data-list-item-id="e5d05aca9116815456ab6158c82d991a3">
     Become familiar with Discord and it’s features
   </li>
-  <li data-list-item-id="eae05baf61f322429741f6391a2c9386a">
+  <li data-list-item-id="e9fcd748b7a804df5a3395262679b2f70">
     Utilize Discord support articles in the Help Center
   </li>
 </ul>
 <p>
-  The Discord Testers Consideration Quiz will be available until December 12th.
-  Find the quiz here:
-  <a
-    href="https://forms.gle/dhjEejTdQMbWKang8"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline"
-      >https://forms.gle/dhjEejTdQMbWKang8</span
-    ></a
-  > 
+  Periodically, new testers will be added and more information will be provided
+  here as these opportunities arise.
 </p>
-<p>
-  What happens next? We expect a high volume of applications and will need time
-  to review them. We'll contact top performers in early 2026. Due to the number
-  of applicants, we won't be able to reply to everyone individually, but we'll
-  update this post once all invitations have been sent.
-</p>
-<p>Thanks for your interest and patience!</p>
 <h2 id="h_01GB8VR2A607B1TXP5CX4MF7CF">
   <span style="font-weight: 400">Discord Tester FAQ</span>
 </h2>
