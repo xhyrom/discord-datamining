@@ -27,21 +27,28 @@
     <meta name="twitter:creator" content="@discord" />
     <!-- endsection -->
 
-    <script nonce="MTcyLDg2LDE4NSwyNCwxMzQsMjQ1LDEzMiw1Ng==">
+    <!-- plugin:globalConstants -->
+    <!-- plugin:meticulous -->
+    <!-- plugin:fastConnect -->
+
+    <!-- section:title -->
+    <title>Discord</title>
+    <!-- endsection -->
+    <script nonce="NjAsNDcsMjgsMTA3LDMsMTMsMjIwLDEwOQ==">
       window.GLOBAL_ENV = {
         NODE_ENV: "production",
-        BUILT_AT: "1765568553622",
+        BUILT_AT: "1765569889008",
         HTML_TIMESTAMP: Date.now(),
-        BUILD_NUMBER: "479568",
+        BUILD_NUMBER: "479588",
         PROJECT_ENV: "production",
         RELEASE_CHANNEL: "canary",
-        VERSION_HASH: "1a19b33b881adc57925b821d1b12f5020d1414c3",
+        VERSION_HASH: "edbfc2b08f504ab9b6bf26c33c2356e50e4443c1",
         PRIMARY_DOMAIN: "discord.com",
         SENTRY_TAGS: {
-          buildId: "1a19b33b881adc57925b821d1b12f5020d1414c3",
+          buildId: "edbfc2b08f504ab9b6bf26c33c2356e50e4443c1",
           buildType: "normal",
         },
-        SENTRY_RELEASE: "discord_web-1a19b33b881adc57925b821d1b12f5020d1414c3",
+        SENTRY_RELEASE: "discord_web-edbfc2b08f504ab9b6bf26c33c2356e50e4443c1",
         PUBLIC_PATH: "/assets/",
         LOCATION: "history",
         API_VERSION: 9,
@@ -76,8 +83,19 @@
         DEV_SESSION_KEY: "undefined",
       };
     </script>
-
-    <script nonce="MTcyLDg2LDE4NSwyNCwxMzQsMjQ1LDEzMiw1Ng==">
+    <script nonce="NjAsNDcsMjgsMTA3LDMsMTMsMjIwLDEwOQ==">
+      window.__OVERLAY__ = /overlay/.test(location.pathname);
+      window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname);
+    </script>
+    <link as="script" href="/assets/web.c19a9c7eca788857.js" rel="preload" />
+    <link as="script" href="/assets/sentry.cb1d8bea01314cdc.js" rel="preload" />
+    <link
+      as="script"
+      href="/assets/libdiscore-wasm-fetch.a727cc7e765dcbe2.js"
+      rel="preload"
+    />
+    <link href="/assets/favicon.ico" rel="icon" />
+    <script nonce="NjAsNDcsMjgsMTA3LDMsMTMsMjIwLDEwOQ==">
       !(function () {
         if (null != window.WebSocket) {
           var n = function (n) {
@@ -136,43 +154,27 @@
         }
       })();
     </script>
-
-    <!-- section:title -->
-    <title>Discord</title>
-    <!-- endsection -->
-    <script nonce="MTcyLDg2LDE4NSwyNCwxMzQsMjQ1LDEzMiw1Ng==">
-      window.__OVERLAY__ = /overlay/.test(location.pathname);
-      window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname);
-    </script>
-    <link
-      rel="preload"
-      as="script"
-      href="/assets/libdiscoreWasmFetch.66f649fba32cc0b0.js"
-    />
-    <link rel="preload" as="script" href="/assets/sentry.93e6bbbe4ab103f7.js" />
-    <link rel="preload" as="script" href="/assets/web.92dc281bc1be6c04.js" />
-    <link href="/assets/favicon.ico" rel="icon" />
-    <link href="/assets/12633.150afb1b86fa736f.css" rel="stylesheet" />
+    <script
+      defer
+      src="/assets/libdiscore-wasm-fetch.a727cc7e765dcbe2.js"
+    ></script>
+    <script defer src="/assets/sentry.cb1d8bea01314cdc.js"></script>
+    <script defer src="/assets/web.c19a9c7eca788857.js"></script>
+    <link href="/assets/web.1f2c7240338adba2.css" rel="stylesheet" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="app-mount"></div>
 
-    <script
-      defer
-      src="/assets/libdiscoreWasmFetch.66f649fba32cc0b0.js"
-    ></script>
-    <script defer src="/assets/sentry.93e6bbbe4ab103f7.js"></script>
-    <script defer src="/assets/web.92dc281bc1be6c04.js"></script>
-    <script nonce="MTcyLDg2LDE4NSwyNCwxMzQsMjQ1LDEzMiw1Ng==">
+    <script nonce="NjAsNDcsMjgsMTA3LDMsMTMsMjIwLDEwOQ==">
       (function () {
         function c() {
           var b = a.contentDocument || a.contentWindow.document;
           if (b) {
             var d = b.createElement("script");
-            d.nonce = "MTcyLDg2LDE4NSwyNCwxMzQsMjQ1LDEzMiw1Ng==";
+            d.nonce = "NjAsNDcsMjgsMTA3LDMsMTMsMjIwLDEwOQ==";
             d.innerHTML =
-              "window.__CF$cv$params={r:'9acfc2105b91b76a',t:'MTc2NTU2OTEwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='MTcyLDg2LDE4NSwyNCwxMzQsMjQ1LDEzMiw1Ng==';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+              "window.__CF$cv$params={r:'9acfe766d9bced37',t:'MTc2NTU3MDYzMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='NjAsNDcsMjgsMTA3LDMsMTMsMjIwLDEwOQ==';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
             b.getElementsByTagName("head")[0].appendChild(d);
           }
         }
