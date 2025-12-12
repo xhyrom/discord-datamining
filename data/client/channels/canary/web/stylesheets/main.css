@@ -2364,6 +2364,10 @@
   ._8a031a135bfcb9ba-actionButtonWrapper {
   flex: 1;
 }
+._8a031a135bfcb9ba-actionBarCheckbox {
+  -webkit-padding-end: var(--space-8);
+  padding-inline-end: var(--space-8);
+}
 ._8a031a135bfcb9ba-actionBarLayoutChatInput {
   align-items: flex-start;
 }
@@ -80799,10 +80803,7 @@ html.disable-forced-colors * {
   display: flex;
   flex-direction: column;
 }
-._5a2dfc677f2b8493-coachmarkHeaderTextContainer {
-  margin-top: var(--space-4);
-}
-._5a2dfc677f2b8493-badgeAndCloseRow {
+._5a2dfc677f2b8493-headerAndCloseRow {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -99542,4 +99543,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.25e689c662c5072c.css.map*/
+/*# sourceMappingURL=web.56a94c9cd7cf9ce7.css.map*/
