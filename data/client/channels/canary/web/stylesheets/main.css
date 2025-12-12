@@ -55919,7 +55919,7 @@ html ._614623a0ca8129b8-progress {
 ._623de82e76ad7f82-embedAuthorNameLink {
 }
 ._623de82e76ad7f82-embed ._623de82e76ad7f82-embedAuthorNameLink {
-  color: var(--mobile-text-heading-primary);
+  color: var(--text-strong);
 }
 ._623de82e76ad7f82-embedAuthorIcon {
   -webkit-margin-end: 8px;
@@ -56162,7 +56162,7 @@ html ._614623a0ca8129b8-progress {
 ._623de82e76ad7f82-embedAuthorName,
 ._623de82e76ad7f82-embedFieldName,
 ._623de82e76ad7f82-embedTitle {
-  color: var(--mobile-text-heading-primary);
+  color: var(--text-strong);
 }
 ._623de82e76ad7f82-embedAuthor,
 ._623de82e76ad7f82-embedDescription,
@@ -99542,4 +99542,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f3f9272a984335e9.css.map*/
+/*# sourceMappingURL=web.25e689c662c5072c.css.map*/
