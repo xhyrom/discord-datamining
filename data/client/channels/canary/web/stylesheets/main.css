@@ -10246,9 +10246,15 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .react-datepicker__portal .react-datepicker__day-name,
 .react-datepicker__portal .react-datepicker__time-name {
   line-height: 3rem;
-  line-height: 2rem;
   width: 3rem;
-  width: 2rem;
+}
+@media (max-height: 550px), (max-width: 400px) {
+  .react-datepicker__portal .react-datepicker__day,
+  .react-datepicker__portal .react-datepicker__day-name,
+  .react-datepicker__portal .react-datepicker__time-name {
+    line-height: 2rem;
+    width: 2rem;
+  }
 }
 .react-datepicker__portal .react-datepicker-time__header,
 .react-datepicker__portal .react-datepicker__current-month {
@@ -98596,4 +98602,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.ed2ff491ebd912d4.css.map*/
+/*# sourceMappingURL=12633.f7e10bc0f9103751.css.map*/
