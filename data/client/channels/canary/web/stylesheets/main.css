@@ -64652,6 +64652,8 @@ html .progress__61462 {
   color: var(--text-default);
   height: 14px;
   width: 14px;
+  -webkit-margin-end: 4px;
+  margin-inline-end: 4px;
 }
 .divider__1bb32 {
   background-color: var(--border-subtle);
@@ -64711,6 +64713,8 @@ html .progress__61462 {
 }
 .channelPillIcon__1bb32 {
   color: var(--text-default);
+  -webkit-margin-end: 2px;
+  margin-inline-end: 2px;
 }
 .container_f1c5c9 {
   background-color: var(--background-surface-high);
@@ -98602,4 +98606,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.f7e10bc0f9103751.css.map*/
+/*# sourceMappingURL=12633.150afb1b86fa736f.css.map*/
