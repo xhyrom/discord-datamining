@@ -40432,7 +40432,7 @@ div.modalOverrideBody__34eac {
   position: relative;
 }
 .container_c0c49a:before {
-  background: linear-gradient(180deg, #151263, #5b6cf2, #b1bafd);
+  background: linear-gradient(180deg, rgba(88, 101, 242, 0), #5865f2);
   border-radius: 8px;
   content: "";
   inset: 0;
@@ -98596,4 +98596,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.acbfe0e3650de931.css.map*/
+/*# sourceMappingURL=12633.ed2ff491ebd912d4.css.map*/
