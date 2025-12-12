@@ -43256,6 +43256,13 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
 .enable-forced-colors .dfa8b6b94cddb191-roleRemoveIcon path {
   fill: ButtonText !important;
 }
+._50e22d8b0c6ff6cb-container {
+  background-color: var(--modal-background);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  width: 250px;
+}
 ._50e22d8b0c6ff6cb-popoutRoleDot {
   -webkit-margin-end: 4px;
   margin-inline-end: 4px;
@@ -52738,15 +52745,19 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 ._44061dfca5514945-baseLayout {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   gap: 35px;
   position: relative;
 }
 ._44061dfca5514945-previewsContainer {
-  align-self: flex-start;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 24px;
+  align-self: flex-end;
+}
+@media (min-width: 937px) {
+  ._44061dfca5514945-previewsContainer {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 24px;
+  }
 }
 ._44061dfca5514945-preview,
 ._44061dfca5514945-previewItem {
@@ -99545,4 +99556,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f2afd705ab561f95.css.map*/
+/*# sourceMappingURL=web.13726b97a260574f.css.map*/
