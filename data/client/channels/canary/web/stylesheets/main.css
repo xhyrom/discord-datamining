@@ -18645,7 +18645,6 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
     gg sans,
     Arial,
     sans-serif;
-  letter-spacing: 0.05em;
 }
 ._89a318b9387eda06-museoModerno {
   font-family:
@@ -18709,12 +18708,6 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: var(--custom-display-name-styles-wrap);
-}
-.dfb989b3f435152a-innerContainer.dfb989b3f435152a-chicle.dfb989b3f435152a-gradient,
-.dfb989b3f435152a-innerContainer.dfb989b3f435152a-chicle.dfb989b3f435152a-pop,
-.dfb989b3f435152a-innerContainer.dfb989b3f435152a-chicle.dfb989b3f435152a-solid {
-  margin: -0.05em;
-  padding: 0.05em;
 }
 .dfb989b3f435152a-underlineOnHover:not(.dfb989b3f435152a-pop):hover {
   text-decoration: underline;
@@ -98310,7 +98303,7 @@ html.disable-forced-colors * {
   font-family: Chicle;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/800fa3603bbb65c3.woff2) format("woff2");
+  src: url(/assets/75128ea3f06f2281.woff2) format("woff2");
   unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
@@ -99556,4 +99549,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.13726b97a260574f.css.map*/
+/*# sourceMappingURL=web.1e7a3c52e0156ec9.css.map*/
