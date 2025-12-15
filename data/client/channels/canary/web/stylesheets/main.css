@@ -60788,6 +60788,9 @@ html ._614623a0ca8129b8-progress {
   display: flex;
   margin-inline-end: 4px;
 }
+.abfd909f61de9fdf-cardContainer {
+  display: contents;
+}
 .abfd909f61de9fdf-card {
   background: var(--background-base-low);
   border: 2px solid var(--border-subtle);
@@ -99574,4 +99577,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.662d9a7f822dc991.css.map*/
+/*# sourceMappingURL=web.fbc3f863e92e1b16.css.map*/
