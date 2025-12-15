@@ -73768,6 +73768,7 @@ div.d74ef86df6475678-nagbar {
   position: relative;
 }
 .cc46f0f859f26200-game .cc46f0f859f26200-removeGame {
+  cursor: pointer;
   inset-inline-end: -15px;
   opacity: 0;
   position: absolute;
@@ -99573,4 +99574,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.83743ddb34d26676.css.map*/
+/*# sourceMappingURL=web.662d9a7f822dc991.css.map*/
