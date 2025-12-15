@@ -46372,7 +46372,7 @@ h2.feb59c8c6ec00ad9-title {
   color: var(--text-code-deletion);
 }
 .d285a61ed580c689-markdown {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -50925,9 +50925,9 @@ svg.c1e9c47c23f12ca3-radioIcon {
   border-radius: 3px;
   color: var(--white-500);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: var(--font-weight-bold);
-  line-height: 29px;
+  line-height: 1.8125rem;
   margin-top: 20px;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -53776,9 +53776,9 @@ svg.c1e9c47c23f12ca3-radioIcon {
   }
 }
 ._6df1abcb56d96feb-cardTitle {
-  font-size: 32px;
+  font-size: 2rem;
   font-style: italic;
-  line-height: 27px;
+  line-height: 1.6875rem;
   text-transform: uppercase;
 }
 ._6df1abcb56d96feb-betaPill,
@@ -99549,4 +99549,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.1e7a3c52e0156ec9.css.map*/
+/*# sourceMappingURL=web.a0d0eb5d945aac65.css.map*/
