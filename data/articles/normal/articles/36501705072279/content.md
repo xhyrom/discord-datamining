@@ -162,7 +162,7 @@
 <h4 class="wysiwyg-text-align-center" id="h_01KBKA8040P3D06SQGVR72GE05">
   <span style="color: #666666">Rent for button</span>
 </h4>
-<p>6. Select <strong>Rent and Use</strong> to confirm the rental. </p>
+<p>6. Select <strong>Rent for [#] days</strong> to confirm the rental. </p>
 <h2 id="h_01KBKA8041KFKTK1HAESQQCXWN">Navigate to the Shop via Shop Banner</h2>
 <p>
   1. To access your <strong>User Settings, </strong>select the
