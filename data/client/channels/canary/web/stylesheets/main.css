@@ -19636,7 +19636,26 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
 ._4d7bb356d058f441-iconImage {
   filter: saturate(var(--saturation-factor, 1));
 }
+._0c507a672a52b3e0-guildBoostUnavailableNotice {
+  align-self: center;
+  background-color: hsl(var(--white-500-hsl) / 0.1);
+  border: 2px solid var(--white-500);
+  border-radius: 9999px;
+  justify-self: center;
+  margin-bottom: 32px;
+  padding: 8px 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+._0c507a672a52b3e0-guildBoostUnavailableNoticeText {
+  font-size: 16px;
+}
 .f9f04c96ff5e7a45-guildStatus {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -77544,6 +77563,10 @@ html ._968a4b9cecf98b8c-invoiceCancelRow {
 ._744fffb886c6f25b-FPPill {
   background-color: var(--background-accent);
 }
+._744fffb886c6f25b-guildBoostingSettings {
+  display: flex;
+  flex-direction: column;
+}
 ._39fd057adac5d09c-container {
   box-sizing: border-box;
   display: flex;
@@ -99522,4 +99545,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.3b05cb9c15827ddd.css.map*/
+/*# sourceMappingURL=web.9b469775c5d38700.css.map*/
