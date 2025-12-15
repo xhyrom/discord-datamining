@@ -6876,7 +6876,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1429f491c5ef15ba6d99dbdb0a7e8ee83c6ed919",
+            release: "discord_web-9deac8e3b7d2164c2c18feb07a98493cd3c5d7ff",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6942,8 +6942,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "480183"),
-            o.YA("builtAt", String("1765834376639"));
+            o.YA("buildNumber", "480197"),
+            o.YA("builtAt", String("1765835096206"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.YA(t, e[t]);
           return _;
@@ -13251,18 +13251,18 @@
             },
             e4 = _.unpack,
             e8 = _.unpack,
-            e9 = _.type,
-            e7 = function () {
+            e7 = _.type,
+            e9 = function () {
               for (var e = [], t = arguments.length; t--; ) e[t] = arguments[t];
               var n = eZ(e, "rgb"),
                 r = eB(n[0], n[1], n[2]);
               return eJ(r[0], r[1], r[2]);
             };
           (u.prototype.lch = function () {
-            return e7(this._rgb);
+            return e9(this._rgb);
           }),
             (u.prototype.hcl = function () {
-              return e7(this._rgb).reverse();
+              return e9(this._rgb).reverse();
             }),
             (d.lch = function () {
               for (var e = [], t = arguments.length; t--; ) e[t] = arguments[t];
@@ -13290,7 +13290,7 @@
                 test: function () {
                   for (var t = [], n = arguments.length; n--; )
                     t[n] = arguments[n];
-                  if ("array" === e9((t = e8(t, e))) && 3 === t.length)
+                  if ("array" === e7((t = e8(t, e))) && 3 === t.length)
                     return e;
                 },
               });
@@ -14424,8 +14424,8 @@
             ));
           for (
             var t8 = _.type,
-              t9 = _.clip_rgb,
-              t7 = _.TWOPI,
+              t7 = _.clip_rgb,
+              t9 = _.TWOPI,
               ne = Math.pow,
               nt = Math.sin,
               nn = Math.cos,
@@ -15064,13 +15064,13 @@
                 o = 0;
               "array" === t8(i) ? (a = i[1] - i[0]) : ((a = 0), (i = [i, i]));
               var _ = function (_) {
-                var s = t7 * ((e + 120) / 360 + t * _),
+                var s = t9 * ((e + 120) / 360 + t * _),
                   c = ne(i[0] + a * _, r),
                   E = ((0 !== o ? n[0] + _ * o : n) * c * (1 - c)) / 2,
                   l = nn(s),
                   u = nt(s);
                 return d(
-                  t9([
+                  t7([
                     255 * (c + E * (-0.14861 * l + 1.78277 * u)),
                     255 * (c + E * (-0.29227 * l - 0.90649 * u)),
                     255 * (c + 1.97294 * l * E),
@@ -33064,11 +33064,11 @@ ${eZ}
                 for (; this.mapRemoves.length; )
                   this.mirror.removeNodeFromMap(this.mapRemoves.shift());
                 for (let e of this.movedSet)
-                  (!e7(this.removes, e, this.mirror) ||
+                  (!e9(this.removes, e, this.mirror) ||
                     this.movedSet.has(e.parentNode)) &&
                     i(e);
                 for (let e of this.addedSet)
-                  te(this.droppedSet, e) || e7(this.removes, e, this.mirror)
+                  te(this.droppedSet, e) || e9(this.removes, e, this.mirror)
                     ? te(this.movedSet, e)
                       ? i(e)
                       : this.droppedSet.add(e)
@@ -33310,7 +33310,7 @@ ${eZ}
                             eF(t, this.mirror) ||
                             -1 === this.mirror.getId(t) ||
                             (this.addedSet.has(t)
-                              ? (e9(this.addedSet, t), this.droppedSet.add(t))
+                              ? (e7(this.addedSet, t), this.droppedSet.add(t))
                               : (this.addedSet.has(e.target) && -1 === n) ||
                                 (function e(t, n) {
                                   if (z(t)) return !1;
@@ -33324,7 +33324,7 @@ ${eZ}
                                   );
                                 })(e.target, this.mirror) ||
                                 (this.movedSet.has(t) && this.movedMap[e4(n, r)]
-                                  ? e9(this.movedSet, t)
+                                  ? e7(this.movedSet, t)
                                   : this.removes.push({
                                       parentId: r,
                                       id: n,
@@ -33417,10 +33417,10 @@ ${eZ}
             this.shadowDomManager.reset(), this.canvasManager.reset();
           }
         }
-        function e9(e, t) {
-          e.delete(t), t.childNodes.forEach((t) => e9(e, t));
+        function e7(e, t) {
+          e.delete(t), t.childNodes.forEach((t) => e7(e, t));
         }
-        function e7(e, t, n) {
+        function e9(e, t, n) {
           return (
             0 !== e.length &&
             (function e(t, n, r) {
@@ -36118,7 +36118,7 @@ ${eZ}
               V.sessionStorage.setItem(j, JSON.stringify(e));
             } catch (e) {}
         }
-        function t9(
+        function t7(
           { sessionSampleRate: e, allowBuffering: t, stickySession: n = !1 },
           { previousSessionId: r } = {},
         ) {
@@ -36128,7 +36128,7 @@ ${eZ}
           });
           return n && t8(i), i;
         }
-        function t7(e, t, n = +new Date()) {
+        function t9(e, t, n = +new Date()) {
           return null === e || void 0 === t || t < 0 || (0 !== t && e + t <= n);
         }
         function ne(
@@ -36139,7 +36139,7 @@ ${eZ}
             targetTime: r = Date.now(),
           },
         ) {
-          return t7(e.started, t, r) || t7(e.lastActivity, n, r);
+          return t9(e.started, t, r) || t9(e.lastActivity, n, r);
         }
         function nt(e, { sessionIdleExpire: t, maxReplayDuration: n }) {
           return (
@@ -36170,10 +36170,10 @@ ${eZ}
                   tP.infoTick(
                     "Session in sessionStorage is expired, creating new one...",
                   ),
-                t9(r, { previousSessionId: i.id }))
+                t7(r, { previousSessionId: i.id }))
               : i
             : (tm && tP.infoTick("Creating new session"),
-              t9(r, { previousSessionId: n }));
+              t7(r, { previousSessionId: n }));
         }
         function nr(e, t, n) {
           return !!na(e, t) && (ni(e, t, n), !0);
@@ -37255,7 +37255,7 @@ ${eZ}
           }
           checkAndHandleExpiredSession() {
             return this._lastActivity &&
-              t7(this._lastActivity, this.timeouts.sessionIdlePause) &&
+              t9(this._lastActivity, this.timeouts.sessionIdlePause) &&
               this.session &&
               "session" === this.session.sampled
               ? void this.pause()
@@ -38302,4 +38302,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.e28da8434a7ca4ca.js.map
+//# sourceMappingURL=sentry.29b5ac3fb20a5019.js.map
