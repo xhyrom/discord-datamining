@@ -53799,6 +53799,31 @@ svg.c1e9c47c23f12ca3-radioIcon {
   flex-direction: row;
   justify-content: space-between;
 }
+._3f0b787cf26e4691-container {
+  align-items: flex-start;
+  background: linear-gradient(
+    90deg,
+    rgba(180, 115, 245, 0.1),
+    rgba(226, 146, 170, 0.1)
+  );
+  border: 2px solid var(--redesign-button-premium-primary-purple-for-gradient-2);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+._3f0b787cf26e4691-header {
+  margin-bottom: var(--space-4);
+}
+._3f0b787cf26e4691-wordmark {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+._3f0b787cf26e4691-subheader {
+  margin-bottom: var(--space-16);
+}
 .e4ef5cb9eb007591-root {
   display: flex;
   flex-direction: column;
@@ -53988,6 +54013,14 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 .e4ef5cb9eb007591-brandShineDark {
   color: var(--opacity-white-8);
+}
+.e4ef5cb9eb007591-premiumGroupCard {
+  margin-bottom: 50px;
+}
+.e4ef5cb9eb007591-textLogo {
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;
 }
 .c1b44fee7182c296-circleContainer {
   overflow: visible;
@@ -54560,6 +54593,12 @@ svg.c1e9c47c23f12ca3-radioIcon {
 .a45ed3bc8a11b547-fractionalPremiumSubheader a {
   color: #fff;
   text-decoration: underline;
+}
+.a45ed3bc8a11b547-premiumGroupHeader {
+  font-size: 32px;
+  font-style: italic;
+  line-height: 23.643px;
+  text-transform: uppercase;
 }
 .a1443c28bb4b5d23-normalStylesDefault {
   --custom-poll-style-vote-background: var(--background-base-lowest);
@@ -99534,4 +99573,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f92927e54fa31972.css.map*/
+/*# sourceMappingURL=web.83743ddb34d26676.css.map*/
