@@ -27,22 +27,29 @@
     <meta name="twitter:creator" content="@discord" />
     <!-- endsection -->
 
-    <script nonce="MjU0LDUsMTQ2LDk0LDg0LDk2LDI0NSwxMzc=">
+    <!-- plugin:globalConstants -->
+    <!-- plugin:meticulous -->
+    <!-- plugin:fastConnect -->
+
+    <!-- section:title -->
+    <title>Discord</title>
+    <!-- endsection -->
+    <script nonce="MzIsMTQ3LDcxLDIzLDEyLDUwLDEsMjQ1">
       window.GLOBAL_ENV = {
         NODE_ENV: "production",
-        BUILT_AT: "1765585849928",
+        BUILT_AT: "1765909263822",
         HTML_TIMESTAMP: Date.now(),
-        BUILD_NUMBER: "479793",
+        BUILD_NUMBER: "480524",
         PROJECT_ENV: "production",
         RELEASE_CHANNEL: "stable",
-        VERSION_HASH: "83d195eb1c65ba73b1c4dcbc22aba7d9ac25c8fa",
+        VERSION_HASH: "acd11149a3b778367d21ccb0ef029ac9ba3da839",
         PRIMARY_DOMAIN: "discord.com",
         SENTRY_TAGS: {
-          buildId: "83d195eb1c65ba73b1c4dcbc22aba7d9ac25c8fa",
+          buildId: "acd11149a3b778367d21ccb0ef029ac9ba3da839",
           buildType: "normal",
         },
         SENTRY_RELEASE:
-          "2025-12-12-83d195eb1c65ba73b1c4dcbc22aba7d9ac25c8fa-discord_web",
+          "2025-12-16-acd11149a3b778367d21ccb0ef029ac9ba3da839-discord_web",
         PUBLIC_PATH: "/assets/",
         LOCATION: "history",
         API_VERSION: 9,
@@ -77,8 +84,19 @@
         DEV_SESSION_KEY: "undefined",
       };
     </script>
-
-    <script nonce="MjU0LDUsMTQ2LDk0LDg0LDk2LDI0NSwxMzc=">
+    <script nonce="MzIsMTQ3LDcxLDIzLDEyLDUwLDEsMjQ1">
+      window.__OVERLAY__ = /overlay/.test(location.pathname);
+      window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname);
+    </script>
+    <link as="script" href="/assets/web.aac558de9c34ffe0.js" rel="preload" />
+    <link as="script" href="/assets/sentry.af5661ea2ceb6746.js" rel="preload" />
+    <link
+      as="script"
+      href="/assets/libdiscore-wasm-fetch.a727cc7e765dcbe2.js"
+      rel="preload"
+    />
+    <link href="/assets/favicon.ico" rel="icon" />
+    <script nonce="MzIsMTQ3LDcxLDIzLDEyLDUwLDEsMjQ1">
       !(function () {
         if (null != window.WebSocket) {
           var n = function (n) {
@@ -137,43 +155,27 @@
         }
       })();
     </script>
-
-    <!-- section:title -->
-    <title>Discord</title>
-    <!-- endsection -->
-    <script nonce="MjU0LDUsMTQ2LDk0LDg0LDk2LDI0NSwxMzc=">
-      window.__OVERLAY__ = /overlay/.test(location.pathname);
-      window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname);
-    </script>
-    <link
-      rel="preload"
-      as="script"
-      href="/assets/libdiscoreWasmFetch.66f649fba32cc0b0.js"
-    />
-    <link rel="preload" as="script" href="/assets/sentry.45375ef43bfc20e5.js" />
-    <link rel="preload" as="script" href="/assets/web.5f01b58279d446f3.js" />
-    <link href="/assets/favicon.ico" rel="icon" />
-    <link href="/assets/12633.22d5e2ff2069842d.css" rel="stylesheet" />
+    <script
+      defer
+      src="/assets/libdiscore-wasm-fetch.a727cc7e765dcbe2.js"
+    ></script>
+    <script defer src="/assets/sentry.af5661ea2ceb6746.js"></script>
+    <script defer src="/assets/web.aac558de9c34ffe0.js"></script>
+    <link href="/assets/web.74334d545cfd6b42.css" rel="stylesheet" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="app-mount"></div>
 
-    <script
-      defer
-      src="/assets/libdiscoreWasmFetch.66f649fba32cc0b0.js"
-    ></script>
-    <script defer src="/assets/sentry.45375ef43bfc20e5.js"></script>
-    <script defer src="/assets/web.5f01b58279d446f3.js"></script>
-    <script nonce="MjU0LDUsMTQ2LDk0LDg0LDk2LDI0NSwxMzc=">
+    <script nonce="MzIsMTQ3LDcxLDIzLDEyLDUwLDEsMjQ1">
       (function () {
         function c() {
           var b = a.contentDocument || a.contentWindow.document;
           if (b) {
             var d = b.createElement("script");
-            d.nonce = "MjU0LDUsMTQ2LDk0LDg0LDk2LDI0NSwxMzc=";
+            d.nonce = "MzIsMTQ3LDcxLDIzLDEyLDUwLDEsMjQ1";
             d.innerHTML =
-              "window.__CF$cv$params={r:'9aea47c9dac8d67f',t:'MTc2NTg0NzIxMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='MjU0LDUsMTQ2LDk0LDg0LDk2LDI0NSwxMzc=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+              "window.__CF$cv$params={r:'9af061365f895730',t:'MTc2NTkxMTE2Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='MzIsMTQ3LDcxLDIzLDEyLDUwLDEsMjQ1';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
             b.getElementsByTagName("head")[0].appendChild(d);
           }
         }
