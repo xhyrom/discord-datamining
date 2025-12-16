@@ -40441,6 +40441,131 @@ div._34eac30af6a687c5-modalOverrideBody {
   margin-inline-start: -1px;
   margin-top: -2px;
 }
+._9baa5181130937c5-confirmation {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+  text-align: center;
+  width: 394px;
+}
+._9baa5181130937c5-confirmationHeader {
+  margin-bottom: 8px;
+}
+._9baa5181130937c5-confirmationDescription {
+  margin-bottom: 64px;
+}
+._9baa5181130937c5-skuImage {
+  aspect-ratio: 1;
+  margin-bottom: 24px;
+  width: 150px;
+}
+.eb2ea2a5783fab20-headerContainerGift {
+  align-items: center;
+  background-color: var(--background-base-low);
+  background-size: 100% calc(100% - 20px);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+.eb2ea2a5783fab20-closeButtonGift {
+  -webkit-margin-start: auto;
+  margin-inline-start: auto;
+  -webkit-margin-end: -8px;
+  margin-inline-end: -8px;
+}
+._7b8d0ed55756837a-stepBody {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-32);
+  margin: var(--size-32) var(--size-16);
+  min-height: 400px;
+}
+._7b8d0ed55756837a-bodyColumnLeft {
+  align-items: center;
+}
+._7b8d0ed55756837a-bodyColumnLeft,
+._7b8d0ed55756837a-bodyColumnRight {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--size-16);
+  justify-content: center;
+}
+._7b8d0ed55756837a-bodyColumnRight {
+  min-width: 0;
+}
+._7b8d0ed55756837a-skuCardImage {
+  aspect-ratio: 1;
+  max-width: 280px;
+  width: 100%;
+}
+._7b8d0ed55756837a-customGiftMessageWrapper {
+  margin: 0;
+}
+._7b8d0ed55756837a-customGiftMessage {
+  background-color: var(--background-base-lower);
+  border-radius: var(--size-8);
+  padding: var(--size-12);
+}
+._7b8d0ed55756837a-giftEffectsContainer,
+._7b8d0ed55756837a-giftPreviewContainer {
+  display: flex;
+  gap: var(--size-8);
+}
+._7b8d0ed55756837a-giftPreviewContainer {
+  flex-direction: column;
+}
+._7b8d0ed55756837a-giftPreviewTitle {
+  margin: 0;
+}
+._7b8d0ed55756837a-giftPreviewContent {
+  align-items: center;
+  background-color: color-mix(
+    in srgb,
+    var(--background-brand) 10%,
+    transparent
+  );
+  border: 1px solid var(--background-brand);
+  border-radius: var(--radius-md);
+  display: flex;
+  gap: 16px;
+  padding: 12px 16px;
+}
+._7b8d0ed55756837a-giftPreviewImageContainer {
+  flex-shrink: 0;
+}
+._7b8d0ed55756837a-giftPreviewCardContainer {
+  aspect-ratio: 1;
+  width: 48px;
+}
+._7b8d0ed55756837a-giftPreviewImage {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+._7b8d0ed55756837a-giftPreviewTextContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+._7b8d0ed55756837a-guildNameContainer {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+._7b8d0ed55756837a-recipientPickerSelectWrapper {
+  background-color: var(--background-base-lower);
+}
+._7b8d0ed55756837a-footer {
+  background-color: var(--background-base-low);
+}
+._7b8d0ed55756837a-viewItemButton {
+  max-width: 100%;
+  width: 100%;
+}
 .e3bd55d6b00f17df-checkoutModalFooter {
   align-items: center;
 }
@@ -60967,11 +61092,41 @@ html ._614623a0ca8129b8-progress {
   top: 16px;
   z-index: 1;
 }
-.abfd909f61de9fdf-wishlistButtonContainer {
+.abfd909f61de9fdf-cardButtonsContainer {
+  color: var(--primary-100);
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
   inset-inline-end: 8px;
   position: absolute;
   top: 8px;
   z-index: 1;
+}
+.abfd909f61de9fdf-wishlistButton {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  border-width: 0;
+  padding: 0;
+}
+.abfd909f61de9fdf-forwardButton {
+  visibility: hidden;
+}
+.abfd909f61de9fdf-cardButtonContainer {
+  align-items: center;
+  background-color: color-mix(in srgb, var(--black-500) 20%, transparent);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+  width: 40px;
+}
+.abfd909f61de9fdf-cardButtonContainer:hover {
+  background: color-mix(in srgb, var(--black-500) 60%, transparent);
+}
+.abfd909f61de9fdf-cardButtonContainerHovered {
+  visibility: visible;
 }
 @keyframes abfd909f61de9fdf-pulse {
   0% {
@@ -99549,4 +99704,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.a446a5499d14dc96.css.map*/
+/*# sourceMappingURL=web.8b14849b3b26463b.css.map*/
