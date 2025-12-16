@@ -25532,28 +25532,13 @@ img._0f2e83213c878a13-thumbnail {
 ._04eede68d145ae81-active {
   opacity: 1;
 }
-._04eede68d145ae81-premiumTooltip {
-  border-radius: 4px;
-  max-width: 316px;
-}
-._04eede68d145ae81-premiumTooltipContainer {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  overflow: visible;
-  padding: 8px 4px;
-  position: relative;
-}
 ._04eede68d145ae81-premiumUnlockAnimation {
   position: absolute;
   z-index: 100;
 }
 ._04eede68d145ae81-premiumUnlockAnimation._04eede68d145ae81-reducedMotion {
-  height: 40px;
-  inset-inline-start: 0;
-  top: 6px;
-  width: 40px;
+  height: 48px;
+  width: 48px;
 }
 ._04eede68d145ae81-premiumUnlockAnimation:not(
     ._04eede68d145ae81-reducedMotion
@@ -25562,27 +25547,17 @@ img._0f2e83213c878a13-thumbnail {
 }
 @keyframes _04eede68d145ae81-shrink {
   0% {
-    height: 76px;
-    inset-inline-start: -26px;
-    top: -26px;
-    width: 76px;
+    height: 60px;
+    width: 60px;
   }
   75% {
-    height: 76px;
-    inset-inline-start: -26px;
-    top: -26px;
-    width: 76px;
+    height: 60px;
+    width: 60px;
   }
   to {
-    height: 40px;
-    inset-inline-start: 0;
-    top: 6px;
-    width: 40px;
+    height: 48px;
+    width: 48px;
   }
-}
-._04eede68d145ae81-premiumTooltipText {
-  -webkit-padding-start: 32px;
-  padding-inline-start: 32px;
 }
 .enable-forced-colors ._04eede68d145ae81-spriteGreyscale {
   background-color: ButtonText;
@@ -99574,4 +99549,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.07fd03828c535def.css.map*/
+/*# sourceMappingURL=web.a446a5499d14dc96.css.map*/
