@@ -3238,6 +3238,7 @@
             USER_GUILD_SETTINGS: (e) =>
               "/users/@me/guilds/".concat(e, "/settings"),
             GAMES_DETECTABLE: "/games/detectable",
+            GAMES_BLOCKLIST: "/games/detectable/exclusions",
             NON_GAMES_DETECTABLE: "/applications/non-games/detectable",
             APPLICATIONS_GAMES_SUPPLEMENTAL: "/applications/games-supplemental",
             APPLICATION_ICON: (e, t) =>
@@ -4591,7 +4592,7 @@
             APPEARANCE_THEME_PICKER: "Appearance Theme Picker",
             ACCESSIBILITY: "Accessibility",
             OVERLAY: "Overlay",
-            LANGUAGE: "Language",
+            LOCALE: "Language",
             STREAMER_MODE: "Streamer Mode",
             SUBSCRIPTIONS: "Subscriptions",
             PREMIUM: "Discord Nitro",
@@ -6877,7 +6878,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-12-15-0692669138c00fd3f388ac9336179c45afa128e7-discord_web",
+              "2025-12-12-83d195eb1c65ba73b1c4dcbc22aba7d9ac25c8fa-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6943,8 +6944,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "480131"),
-            o.YA("builtAt", String("1765831198019"));
+            o.YA("buildNumber", "479793"),
+            o.YA("builtAt", String("1765585849928"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.YA(t, e[t]);
           return _;
@@ -7229,7 +7230,7 @@
                   dark: {
                     color: "gradient.start",
                     saturation: 0.25,
-                    lightness: 0.05,
+                    lightness: 0.1,
                     opacity: 0.7,
                   },
                 },
@@ -7259,8 +7260,8 @@
                 [r.MIDNIGHT]: { raw: "PLUM_23", opacity: 1 },
                 [r.DARKER]: { raw: "PLUM_18", opacity: 1 },
                 gradient: {
-                  light: { color: "gradient.mid", lightness: 0.9 },
-                  dark: { color: "gradient.mid", lightness: 0.1 },
+                  light: { color: "BLACK_500", opacity: 0.1 },
+                  dark: { color: "WHITE_500", opacity: 0.1 },
                 },
               },
               BACKGROUND_SURFACE_HIGHEST: {
@@ -13252,18 +13253,18 @@
             },
             e4 = _.unpack,
             e8 = _.unpack,
-            e7 = _.type,
-            e9 = function () {
+            e9 = _.type,
+            e7 = function () {
               for (var e = [], t = arguments.length; t--; ) e[t] = arguments[t];
               var n = eZ(e, "rgb"),
                 r = eB(n[0], n[1], n[2]);
               return eJ(r[0], r[1], r[2]);
             };
           (u.prototype.lch = function () {
-            return e9(this._rgb);
+            return e7(this._rgb);
           }),
             (u.prototype.hcl = function () {
-              return e9(this._rgb).reverse();
+              return e7(this._rgb).reverse();
             }),
             (d.lch = function () {
               for (var e = [], t = arguments.length; t--; ) e[t] = arguments[t];
@@ -13291,7 +13292,7 @@
                 test: function () {
                   for (var t = [], n = arguments.length; n--; )
                     t[n] = arguments[n];
-                  if ("array" === e7((t = e8(t, e))) && 3 === t.length)
+                  if ("array" === e9((t = e8(t, e))) && 3 === t.length)
                     return e;
                 },
               });
@@ -14425,8 +14426,8 @@
             ));
           for (
             var t8 = _.type,
-              t7 = _.clip_rgb,
-              t9 = _.TWOPI,
+              t9 = _.clip_rgb,
+              t7 = _.TWOPI,
               ne = Math.pow,
               nt = Math.sin,
               nn = Math.cos,
@@ -15065,13 +15066,13 @@
                 o = 0;
               "array" === t8(i) ? (a = i[1] - i[0]) : ((a = 0), (i = [i, i]));
               var _ = function (_) {
-                var s = t9 * ((e + 120) / 360 + t * _),
+                var s = t7 * ((e + 120) / 360 + t * _),
                   c = ne(i[0] + a * _, r),
                   E = ((0 !== o ? n[0] + _ * o : n) * c * (1 - c)) / 2,
                   l = nn(s),
                   u = nt(s);
                 return d(
-                  t7([
+                  t9([
                     255 * (c + E * (-0.14861 * l + 1.78277 * u)),
                     255 * (c + E * (-0.29227 * l - 0.90649 * u)),
                     255 * (c + 1.97294 * l * E),
@@ -17178,7 +17179,7 @@
       350171: function (e, t, n) {
         "use strict";
         n.d(t, { GJ: () => c, ME: () => f, aB: () => p, dr: () => d });
-        var r = n(454207),
+        var r = n(509440),
           i = n(847572),
           a = n(661822),
           o = n(431660),
@@ -17401,7 +17402,7 @@
               return s;
             },
         });
-        var r = n(454207),
+        var r = n(509440),
           i = n(771560),
           a = n(606093),
           o = n(886649),
@@ -17530,7 +17531,7 @@
         var r = n(864523),
           i = n(8062),
           a = n(910316),
-          o = n(911340),
+          o = n(481386),
           _ = n(771560),
           s = n(688560),
           c = n(404959),
@@ -17543,7 +17544,7 @@
           I = n(834593),
           T = n(209260),
           R = n(82255),
-          A = n(454207),
+          A = n(509440),
           N = n(494677),
           h = n(366e3),
           O = n(721890),
@@ -17551,7 +17552,7 @@
           L = n(201403),
           g = n(333192),
           m = n(600400),
-          D = n(511107),
+          D = n(638008),
           C = n(876385),
           y = n(932205),
           P = n(21410),
@@ -17592,8 +17593,8 @@
           i = n(568538),
           a = n(106260),
           o = n(688560),
-          _ = n(454207),
-          s = n(911340),
+          _ = n(509440),
+          s = n(481386),
           c = n(533353),
           E = n(545146),
           l = n(431660),
@@ -18021,7 +18022,7 @@
         "use strict";
         n.d(t, { k: () => f });
         var r = n(688560),
-          i = n(454207),
+          i = n(509440),
           a = n(771560),
           o = n(294181),
           _ = n(320372),
@@ -18135,7 +18136,7 @@
         var r = n(568538),
           i = n(688560),
           a = n(771560),
-          o = n(454207),
+          o = n(509440),
           _ = n(918456),
           s = n(98076),
           c = n(635196),
@@ -18372,7 +18373,7 @@
       903574: function (e, t, n) {
         "use strict";
         n.d(t, { y: () => E });
-        var r = n(454207),
+        var r = n(509440),
           i = n(771560),
           a = n(688560),
           o = n(606093),
@@ -18494,7 +18495,7 @@
         "use strict";
         n.d(t, { v: () => l });
         var r = n(82255),
-          i = n(454207),
+          i = n(509440),
           a = n(343573),
           o = n(98076),
           _ = n(431660),
@@ -18582,7 +18583,7 @@
         });
         var r = n(180932),
           i = n(82255),
-          a = n(454207),
+          a = n(509440),
           o = n(98076),
           _ = n(343573),
           s = n(431660),
@@ -18946,7 +18947,7 @@
           a = n(976155),
           o = n(688560),
           _ = n(932205),
-          s = n(454207),
+          s = n(509440),
           c = n(771560),
           E = n(250962),
           l = n(98076),
@@ -19260,7 +19261,7 @@
           o = n(192990),
           _ = n(600400),
           s = n(8062),
-          c = n(454207),
+          c = n(509440),
           E = n(82255),
           l = n(464338),
           u = n(606093),
@@ -19517,7 +19518,7 @@
           c = n(700868),
           E = n(8062),
           l = n(25855),
-          u = n(454207),
+          u = n(509440),
           d = n(464338),
           p = n(545146),
           f = n(840247),
@@ -19887,7 +19888,7 @@
       920950: function (e, t, n) {
         "use strict";
         n.d(t, { R: () => s });
-        var r = n(454207),
+        var r = n(509440),
           i = n(864523),
           a = n(889929);
         let o = {
@@ -20085,7 +20086,7 @@
           E = n(43696),
           l = n(852891),
           u = n(250962),
-          d = n(454207),
+          d = n(509440),
           p = n(4757),
           f = n(235450),
           I = n(688560),
@@ -20509,12 +20510,12 @@ Reason: ${e}`))
           return "transaction" === e.type;
         }
       },
-      911340: function (e, t, n) {
+      481386: function (e, t, n) {
         "use strict";
         n.d(t, { n: () => o });
         var r = n(343573),
           i = n(98076),
-          a = n(454207);
+          a = n(509440);
         function o(e, t) {
           let n = (0, a.s3)(),
             o = (0, a.aF)();
@@ -20547,7 +20548,7 @@ Reason: ${e}`))
         n.d(t, { J: () => r });
         let r = "production";
       },
-      454207: function (e, t, n) {
+      509440: function (e, t, n) {
         "use strict";
         n.d(t, {
           $e: () => E,
@@ -20723,7 +20724,7 @@ Reason: ${e}`))
         var r = n(98076),
           i = n(606093),
           a = n(180932),
-          o = n(454207),
+          o = n(509440),
           _ = n(4757),
           s = n(180710),
           c = n(392841);
@@ -20826,7 +20827,7 @@ Reason: ${e}`))
         "use strict";
         n.d(t, { N: () => a });
         var r = n(886649),
-          i = n(454207);
+          i = n(509440);
         function a(e, t = {}, n = (0, i.nZ)()) {
           let {
               message: o,
@@ -20863,7 +20864,7 @@ Reason: ${e}`))
           i = n(490990),
           a = n(288101),
           o = n(661822),
-          _ = n(454207),
+          _ = n(509440),
           s = n(8062),
           c = n(451542),
           E = n(82255),
@@ -20980,8 +20981,8 @@ Reason: ${e}`))
       494677: function (e, t, n) {
         "use strict";
         n.d(t, { G: () => o });
-        var r = n(911340),
-          i = n(454207),
+        var r = n(481386),
+          i = n(509440),
           a = n(771560);
         let o = function () {
           return {
@@ -21030,7 +21031,7 @@ Reason: ${e}`))
         });
         var r = n(431660),
           i = n(98076),
-          a = n(454207),
+          a = n(509440),
           o = n(4757);
         let _ = [];
         function s(e) {
@@ -21126,7 +21127,7 @@ Reason: ${e}`))
           o = n(463725),
           _ = n(431660),
           s = n(1693),
-          c = n(454207),
+          c = n(509440),
           E = n(771560);
         let l = (0, n(688560)._I)((e = {}) => {
           let t = e.levels || r.RU;
@@ -21371,7 +21372,7 @@ Reason: ${e}`))
         let r;
         n.d(t, { C: () => s });
         var i = n(886649),
-          a = n(454207),
+          a = n(509440),
           o = n(688560);
         let _ = new WeakMap(),
           s = (0, o._I)(() => ({
@@ -21572,7 +21573,7 @@ Event: ${(0, i.jH)(c)}`),
           },
         }));
       },
-      511107: function (e, t, n) {
+      638008: function (e, t, n) {
         "use strict";
         n.d(t, { v: () => a });
         var r = n(606093),
@@ -21924,7 +21925,7 @@ Event: ${(0, i.jH)(c)}`),
         var r = n(606093),
           i = n(98076),
           a = n(343573),
-          o = n(454207),
+          o = n(509440),
           _ = n(4757),
           s = n(82255),
           c = n(700868),
@@ -22494,7 +22495,7 @@ Event: ${(0, i.jH)(c)}`),
         "use strict";
         n.d(t, { K: () => _, M: () => o });
         var r = n(98076),
-          i = n(454207),
+          i = n(509440),
           a = n(4757);
         function o(e, t) {
           !0 === t.debug &&
@@ -22628,7 +22629,7 @@ Event: ${(0, i.jH)(c)}`),
         var r = n(886649),
           i = n(288101),
           a = n(180932),
-          o = n(454207),
+          o = n(509440),
           _ = n(8062),
           s = n(82255);
         let c = "_frozenDsc";
@@ -22713,7 +22714,7 @@ Event: ${(0, i.jH)(c)}`),
         n.d(t, { A: () => p, R: () => f });
         var r = n(343573),
           i = n(98076),
-          a = n(454207),
+          a = n(509440),
           o = n(4757),
           _ = n(8062),
           s = n(451542),
@@ -23015,7 +23016,7 @@ Event: ${(0, i.jH)(c)}`),
           i = n(343573),
           a = n(886649),
           o = n(98076),
-          _ = n(454207),
+          _ = n(509440),
           s = n(4757),
           c = n(235450),
           E = n(608692),
@@ -23288,7 +23289,7 @@ Event: ${(0, i.jH)(c)}`),
           i = n(974352),
           a = n(98076),
           o = n(732418),
-          _ = n(454207),
+          _ = n(509440),
           s = n(805666),
           c = n(4757),
           E = n(8062),
@@ -23886,7 +23887,7 @@ Event: ${(0, i.jH)(c)}`),
       451542: function (e, t, n) {
         "use strict";
         n.d(t, { z: () => i });
-        var r = n(454207);
+        var r = n(509440);
         function i(e) {
           if ("boolean" == typeof __SENTRY_TRACING__ && !__SENTRY_TRACING__)
             return !1;
@@ -23957,7 +23958,7 @@ Event: ${(0, i.jH)(c)}`),
           o = n(606093),
           _ = n(847572),
           s = n(180932),
-          c = n(454207),
+          c = n(509440),
           E = n(161877),
           l = n(910316),
           u = n(841122);
@@ -24177,7 +24178,7 @@ Event: ${(0, i.jH)(c)}`),
           a = n(343573),
           o = n(805666),
           _ = n(732418),
-          s = n(454207),
+          s = n(509440),
           c = n(608692),
           E = n(8062),
           l = n(366e3),
@@ -26770,7 +26771,7 @@ Error:`,
         "use strict";
         n.d(t, { H: () => f });
         var r = n(990681),
-          i = n(454207),
+          i = n(509440),
           a = n(82255),
           o = n(8062),
           _ = n(98076),
@@ -26890,7 +26891,7 @@ Error:`,
         n.d(t, { D: () => I, N: () => p });
         var r = n(990681),
           i = n(82255),
-          a = n(454207),
+          a = n(509440),
           o = n(8062),
           _ = n(343573),
           s = n(309063),
@@ -27138,7 +27139,7 @@ Error:`,
         });
         var r = n(82255),
           i = n(700868),
-          a = n(454207),
+          a = n(509440),
           o = n(514962);
         function _(e) {
           return "number" == typeof e && isFinite(e);
@@ -27655,7 +27656,7 @@ Error:`,
           qm: () => G,
           rp: () => U,
         });
-        var r = n(454207),
+        var r = n(509440),
           i = n(293798),
           a = n(606093),
           o = n(309063),
@@ -31457,9 +31458,9 @@ ${eZ}
           I,
           T = n(857609),
           R = n(990681),
-          A = n(911340),
+          A = n(481386),
           N = n(771560),
-          h = n(454207),
+          h = n(509440),
           O = n(918456),
           S = n(392841),
           L = n(82255),
@@ -33065,11 +33066,11 @@ ${eZ}
                 for (; this.mapRemoves.length; )
                   this.mirror.removeNodeFromMap(this.mapRemoves.shift());
                 for (let e of this.movedSet)
-                  (!e9(this.removes, e, this.mirror) ||
+                  (!e7(this.removes, e, this.mirror) ||
                     this.movedSet.has(e.parentNode)) &&
                     i(e);
                 for (let e of this.addedSet)
-                  te(this.droppedSet, e) || e9(this.removes, e, this.mirror)
+                  te(this.droppedSet, e) || e7(this.removes, e, this.mirror)
                     ? te(this.movedSet, e)
                       ? i(e)
                       : this.droppedSet.add(e)
@@ -33311,7 +33312,7 @@ ${eZ}
                             eF(t, this.mirror) ||
                             -1 === this.mirror.getId(t) ||
                             (this.addedSet.has(t)
-                              ? (e7(this.addedSet, t), this.droppedSet.add(t))
+                              ? (e9(this.addedSet, t), this.droppedSet.add(t))
                               : (this.addedSet.has(e.target) && -1 === n) ||
                                 (function e(t, n) {
                                   if (z(t)) return !1;
@@ -33325,7 +33326,7 @@ ${eZ}
                                   );
                                 })(e.target, this.mirror) ||
                                 (this.movedSet.has(t) && this.movedMap[e4(n, r)]
-                                  ? e7(this.movedSet, t)
+                                  ? e9(this.movedSet, t)
                                   : this.removes.push({
                                       parentId: r,
                                       id: n,
@@ -33418,10 +33419,10 @@ ${eZ}
             this.shadowDomManager.reset(), this.canvasManager.reset();
           }
         }
-        function e7(e, t) {
-          e.delete(t), t.childNodes.forEach((t) => e7(e, t));
+        function e9(e, t) {
+          e.delete(t), t.childNodes.forEach((t) => e9(e, t));
         }
-        function e9(e, t, n) {
+        function e7(e, t, n) {
           return (
             0 !== e.length &&
             (function e(t, n, r) {
@@ -36119,7 +36120,7 @@ ${eZ}
               V.sessionStorage.setItem(j, JSON.stringify(e));
             } catch (e) {}
         }
-        function t7(
+        function t9(
           { sessionSampleRate: e, allowBuffering: t, stickySession: n = !1 },
           { previousSessionId: r } = {},
         ) {
@@ -36129,7 +36130,7 @@ ${eZ}
           });
           return n && t8(i), i;
         }
-        function t9(e, t, n = +new Date()) {
+        function t7(e, t, n = +new Date()) {
           return null === e || void 0 === t || t < 0 || (0 !== t && e + t <= n);
         }
         function ne(
@@ -36140,7 +36141,7 @@ ${eZ}
             targetTime: r = Date.now(),
           },
         ) {
-          return t9(e.started, t, r) || t9(e.lastActivity, n, r);
+          return t7(e.started, t, r) || t7(e.lastActivity, n, r);
         }
         function nt(e, { sessionIdleExpire: t, maxReplayDuration: n }) {
           return (
@@ -36171,10 +36172,10 @@ ${eZ}
                   tP.infoTick(
                     "Session in sessionStorage is expired, creating new one...",
                   ),
-                t7(r, { previousSessionId: i.id }))
+                t9(r, { previousSessionId: i.id }))
               : i
             : (tm && tP.infoTick("Creating new session"),
-              t7(r, { previousSessionId: n }));
+              t9(r, { previousSessionId: n }));
         }
         function nr(e, t, n) {
           return !!na(e, t) && (ni(e, t, n), !0);
@@ -37256,7 +37257,7 @@ ${eZ}
           }
           checkAndHandleExpiredSession() {
             return this._lastActivity &&
-              t9(this._lastActivity, this.timeouts.sessionIdlePause) &&
+              t7(this._lastActivity, this.timeouts.sessionIdlePause) &&
               this.session &&
               "session" === this.session.sampled
               ? void this.pause()
@@ -38303,4 +38304,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.1533ffd1cac2a111.js.map
+//# sourceMappingURL=sentry.45375ef43bfc20e5.js.map
