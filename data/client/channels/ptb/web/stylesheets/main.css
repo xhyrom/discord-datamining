@@ -20913,7 +20913,6 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   border-radius: 8px;
   display: block;
   height: 94px;
-  object-fit: cover;
   width: 73px;
 }
 .e0f8aee83741c888-closeButton {
@@ -99607,4 +99606,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.74334d545cfd6b42.css.map*/
+/*# sourceMappingURL=web.49e45a6671f8e952.css.map*/
