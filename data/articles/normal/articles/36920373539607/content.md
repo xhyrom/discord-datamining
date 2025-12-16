@@ -22,16 +22,14 @@
   this Nitro promotion.
 </p>
 <div class="info-box">
-  <strong>Note:</strong> This promotion is only available in the US and Puerto
-  Rico where Discord Nitro and eligible Best Buy products are available. If you
-  receive an "Unknown Gift Code" error during the claim/redemption process, you
-  are not eligible to redeem this promotion. You can learn more at this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/4708041338391"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Help Center article</a
-  >.
+  <strong>Note:</strong>
+  <span style="color: #434343"
+    >This promotion is not eligible in the following regions: Syria, Russia,
+    Turkey, Iran, North Korea, Zaporizhzhia, Kherson, Donetsk, and Luhansk. You
+    can learn more at this </span
+  ><a href="https://support.discord.com/hc/en-us/articles/4708041338391"
+    ><span class="wysiwyg-underline">Help Center article</span></a
+  ><span style="color: #434343">.</span>
 </div>
 <p>
   Users who have had a Discord Nitro subscription at any point on their accounts
@@ -53,21 +51,18 @@
   claim further gifts from this promotion.
 </p>
 <p>
-  This promotion is only available in the US and Puerto Rico where Discord Nitro
-  and eligible Best Buy products are available. If you receive an "Unknown Gift
-  Code" error during the claim/redemption process, you are not eligible to
-  redeem this promotion. You can learn more at this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/4708041338391"
-    target="_blank"
-    rel="noopener noreferrer"
+  <span style="color: #434343"
+    >This promotion is not eligible in the following regions: Syria, Russia,
+    Turkey, Iran, North Korea, Zaporizhzhia, Kherson, Donetsk, and Luhansk. You
+    can learn more at this </span
+  ><a href="https://support.discord.com/hc/en-us/articles/4708041338391"
     ><span class="wysiwyg-underline">Help Center article</span></a
-  >.
+  ><span style="color: #434343">.</span>
 </p>
 <p>
-  <strong>Requirements:</strong> Claim the promo by purchasing eligible Best Buy
-  products starting <strong>December 11, 2025</strong>, and redeem it in your
-  Discord account by <strong>February 7, 2026 (11:59M PT)</strong>.
+  <strong>Requirements:</strong> Epic Game Store members can claim the 1 month
+  of Nitro starting <strong>December 11, 2025</strong>, and redeem it in your
+  Discord account by <strong>February 7, 2026 (11:59pm PT)</strong>.
 </p>
 <p>
   <strong>Subscription:</strong> After the 1 month trial period, your Nitro
@@ -239,10 +234,11 @@
   Eligibility for Redeeming the Nitro Trial
 </h2>
 <div class="info-box">
-  <strong>Note:</strong> This promotion is only available in the US and Puerto
-  Rico where Discord Nitro and eligible Best Buy products are available. If you
-  receive an "Unknown Gift Code" error during the claim/redemption process, you
-  are not eligible to redeem this promotion. You can learn more at this
+  <strong>Note:</strong> This promotion is not eligible in the following
+  regions: Syria, Russia, Turkey, Iran, North Korea, Zaporizhzhia, Kherson,
+  Donetsk, and Luhansk.  If you receive an "Unknown Gift Code" error during the
+  claim/redemption process, you are not eligible to redeem this promotion. You
+  can learn more at this
   <a
     href="https://support.discord.com/hc/en-us/articles/4708041338391"
     target="_blank"
@@ -502,10 +498,10 @@
   ineligible.
 </p>
 <p>
-  This promotion is only available in the US and Puerto Rico where Discord Nitro
-  and eligible Best Buy products are available. If you receive an "Unknown Gift
-  Code" error during the claim/redemption process, you are not eligible to
-  redeem this promotion. You can learn more at this
+  This promotion is not eligible in the following regions: Syria, Russia,
+  Turkey, Iran, North Korea, Zaporizhzhia, Kherson, Donetsk, and Luhansk. If you
+  receive an "Unknown Gift Code" error during the claim/redemption process, you
+  are not eligible to redeem this promotion. You can learn more at this
   <a
     href="https://support.discord.com/hc/en-us/articles/4708041338391"
     target="_blank"
