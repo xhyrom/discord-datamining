@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8338009002](https://discord.com/jobs/8338009002)
 
-**Updated At:** Fri, 12 Dec 2025 20:58:54 GMT
+**Updated At:** Tue, 16 Dec 2025 19:19:39 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As Group Product Marketing Manager for Developer Commerce Solutions, you will drive go-to-market execution for Discord's commerce solutions that enable game developers to sell, gift, and monetize digital goods directly within Discord's platform. You'll execute comprehensive go-to-market strategies for commerce products and features, lead developer education and enablement initiatives, and ensure alignment between Discord's commerce objectives and the needs of game developers and players. This role requires both strategic thinking and hands-on execution to translate commerce initiatives into measurable developer adoption, revenue growth, and player engagement outcomes.
