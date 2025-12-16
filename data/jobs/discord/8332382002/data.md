@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8332382002](https://discord.com/jobs/8332382002)
 
-**Updated At:** Thu, 11 Dec 2025 01:25:52 GMT
+**Updated At:** Tue, 16 Dec 2025 16:42:38 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is about giving people the power to create space to find belonging in their lives. Trusted by millions of people to keep their communications secure, private, and out of the hands of evildoers, security and privacy are necessary to Discord's success.
@@ -18,7 +18,7 @@ We're looking for a Senior Detection and Response Engineer to join our Detection
 What you’ll do:
 
 Build detection systems at scale. Design and implement detections across cloud infrastructure, applications, and enterprise systems using large-scale log analysis and behavioral signals.
-Engineer response automation. Develop tooling and workflows that reduce mean time to detection and respondse - turning manual playbooks into code.
+Engineer response automation. Develop tooling and workflows that reduce mean time to detection and response - turning manual playbooks into code.
 Lead incident response. Serve as a subject matter expert during security incidents, driving investigations from initial triage through root cause analysis and remediation.
 Architect observability. Partner with internal teams to identify new telemetry sources, improve log coverage, and ensure we have visibility where it matters.
 Hunt proactively. Use threat intelligence and behavioral analysis to find malicious activity before alerts fire - then turn those hunts into production detections.
