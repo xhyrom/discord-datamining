@@ -39022,14 +39022,14 @@ body .b54a5b2f01b57ad8-headerAnimation {
   border-radius: var(--radius-sm);
   color: var(--text-strong);
 }
-.b52e4f70d11a5ca2-intersectionContainer {
-  position: relative;
+.b52e4f70d11a5ca2-intersectionContainer,
+.b52e4f70d11a5ca2-intersectionRef {
+  position: absolute;
 }
 .b52e4f70d11a5ca2-intersectionRef {
   background: transparent;
   height: 1px;
   inset-inline-start: 0;
-  position: absolute;
   top: 0;
   width: 1px;
 }
@@ -99575,4 +99575,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.97c0829d4368fde9.css.map*/
+/*# sourceMappingURL=web.866ea9086bfa99da.css.map*/
