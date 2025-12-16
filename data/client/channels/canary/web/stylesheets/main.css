@@ -82667,6 +82667,13 @@ html.disable-forced-colors * {
   --radio-border-selected-hover: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
+  --radio-foreground-active: var(--blurple-50);
+  --radio-foreground-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-foreground-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
   --radio-thumb-background-active: var(--neutral-1);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
@@ -83072,7 +83079,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-700) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --chat-text-muted: color-mix(
       in oklab,
@@ -83090,13 +83100,13 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--white-hsl) / 0.85) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.85)
-        var(--custom-theme-base-color-amount, 0%)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --content-inventory-overlay-text-secondary: color-mix(
       in oklab,
       hsl(var(--white-hsl) / 0.7) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--custom-theme-base-color-amount, 0%)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --context-menu-backdrop-background: color-mix(
       in oklab,
@@ -83119,14 +83129,14 @@ html.disable-forced-colors * {
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
       var(--teal-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --creator-revenue-icon-gradient-start: color-mix(
       in oklab,
       var(--teal-360) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --creator-revenue-info-box-background: color-mix(
       in oklab,
@@ -83138,7 +83148,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--teal-400) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --creator-revenue-locked-channel-icon: color-mix(
       in oklab,
@@ -83533,26 +83546,26 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--red-new-22) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --interactive-background-active: color-mix(
       in oklab,
       hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-selected: color-mix(
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-icon-active: color-mix(
       in oklab,
@@ -83599,8 +83612,8 @@ html.disable-forced-colors * {
     --logo-primary: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --mention-background: color-mix(
       in oklab,
@@ -83683,8 +83696,8 @@ html.disable-forced-colors * {
     --mobile-text-heading-primary: color-mix(
       in oklab,
       var(--neutral-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --modal-background: color-mix(
       in oklab,
@@ -83701,8 +83714,8 @@ html.disable-forced-colors * {
     --navigator-header-tint: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --overlay-backdrop-lightbox: color-mix(
       in oklab,
@@ -83768,7 +83781,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--white-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --profile-gradient-section-box: color-mix(
       in oklab,
@@ -83870,7 +83886,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--blurple-26) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-primary-background: color-mix(
       in oklab,
@@ -83918,7 +83937,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-overlay-background: color-mix(
       in oklab,
@@ -83948,7 +83970,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--transparent-hsl) / 0) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-text: color-mix(
       in oklab,
@@ -84038,7 +84063,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-44-hsl) / 0.4392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4392156862745098)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --spoiler-hidden-background: color-mix(
       in oklab,
@@ -84242,7 +84270,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-500) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-activity-toolbar-background: color-mix(
       in oklab,
@@ -84260,7 +84291,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-note-background-focus: color-mix(
       in oklab,
@@ -84290,7 +84324,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
   }
 }
@@ -84783,6 +84820,9 @@ html.disable-forced-colors * {
   --radio-border-selected-hover: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
   );
+  --radio-foreground-active: var(--blurple-50);
+  --radio-foreground-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --radio-foreground-hover: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --radio-thumb-background-active: var(--neutral-1);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
@@ -84837,8 +84877,8 @@ html.disable-forced-colors * {
   --redesign-button-tertiary-pressed-background: hsl(var(--black-hsl) / 0.16);
   --redesign-button-tertiary-pressed-text: var(--primary-500);
   --redesign-button-tertiary-text: var(--neutral-69);
-  --scrollbar-auto-scrollbar-color-thumb: var(--neutral-31);
-  --scrollbar-auto-scrollbar-color-track: var(--neutral-3);
+  --scrollbar-auto-scrollbar-color-thumb: var(--neutral-33);
+  --scrollbar-auto-scrollbar-color-track: var(--neutral-5);
   --scrollbar-auto-thumb: var(--neutral-30);
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
   --scrollbar-thin-thumb: var(--neutral-32);
@@ -85190,7 +85230,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-200) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --chat-text-muted: color-mix(
       in oklab,
@@ -85208,13 +85251,13 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--white-hsl) / 0.85) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.85)
-        var(--custom-theme-base-color-amount, 0%)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --content-inventory-overlay-text-secondary: color-mix(
       in oklab,
       hsl(var(--white-hsl) / 0.7) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--custom-theme-base-color-amount, 0%)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --context-menu-backdrop-background: color-mix(
       in oklab,
@@ -85237,14 +85280,14 @@ html.disable-forced-colors * {
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
       var(--teal-400) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --creator-revenue-icon-gradient-start: color-mix(
       in oklab,
       var(--teal-345) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --creator-revenue-info-box-background: color-mix(
       in oklab,
@@ -85256,7 +85299,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--teal-400) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --creator-revenue-locked-channel-icon: color-mix(
       in oklab,
@@ -85651,26 +85697,26 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--red-new-54) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --interactive-background-active: color-mix(
       in oklab,
       hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-selected: color-mix(
       in oklab,
       hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-icon-active: color-mix(
       in oklab,
@@ -85717,8 +85763,8 @@ html.disable-forced-colors * {
     --logo-primary: color-mix(
       in oklab,
       var(--brand-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --mention-background: color-mix(
       in oklab,
@@ -85801,8 +85847,8 @@ html.disable-forced-colors * {
     --mobile-text-heading-primary: color-mix(
       in oklab,
       var(--neutral-71) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --modal-background: color-mix(
       in oklab,
@@ -85819,8 +85865,8 @@ html.disable-forced-colors * {
     --navigator-header-tint: color-mix(
       in oklab,
       var(--primary-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --overlay-backdrop-lightbox: color-mix(
       in oklab,
@@ -85886,7 +85932,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--primary-660-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --profile-gradient-section-box: color-mix(
       in oklab,
@@ -85988,7 +86037,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--blurple-49) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-primary-background: color-mix(
       in oklab,
@@ -86036,7 +86088,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-overlay-background: color-mix(
       in oklab,
@@ -86066,7 +86121,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-text: color-mix(
       in oklab,
@@ -86118,13 +86176,13 @@ html.disable-forced-colors * {
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
       in oklab,
-      var(--neutral-31) 100%,
+      var(--neutral-33) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-track: color-mix(
       in oklab,
-      var(--neutral-3) 100%,
+      var(--neutral-5) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -86156,7 +86214,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-48-hsl) / 0.47843137254901963) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.47843137254901963)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --spoiler-hidden-background: color-mix(
       in oklab,
@@ -86360,7 +86421,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-300) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-activity-toolbar-background: color-mix(
       in oklab,
@@ -86378,7 +86442,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-note-background-focus: color-mix(
       in oklab,
@@ -86408,7 +86475,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
   }
 }
@@ -86919,6 +86989,13 @@ html.disable-forced-colors * {
   --radio-border-selected-hover: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
+  --radio-foreground-active: var(--blurple-50);
+  --radio-foreground-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-foreground-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
   --radio-thumb-background-active: var(--neutral-1);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
@@ -86977,8 +87054,8 @@ html.disable-forced-colors * {
   --redesign-button-tertiary-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
   --redesign-button-tertiary-pressed-text: var(--plum-6);
   --redesign-button-tertiary-text: var(--neutral-10);
-  --scrollbar-auto-scrollbar-color-thumb: var(--neutral-45);
-  --scrollbar-auto-scrollbar-color-track: var(--neutral-98);
+  --scrollbar-auto-scrollbar-color-thumb: var(--neutral-46);
+  --scrollbar-auto-scrollbar-color-track: var(--neutral-100);
   --scrollbar-auto-thumb: var(--neutral-45);
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
   --scrollbar-thin-thumb: var(--neutral-46);
@@ -87330,7 +87407,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-20) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --chat-text-muted: color-mix(
       in oklab,
@@ -87348,13 +87428,13 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--white-hsl) / 0.85) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.85)
-        var(--custom-theme-base-color-amount, 0%)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --content-inventory-overlay-text-secondary: color-mix(
       in oklab,
       hsl(var(--white-hsl) / 0.7) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--custom-theme-base-color-amount, 0%)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --context-menu-backdrop-background: color-mix(
       in oklab,
@@ -87377,14 +87457,14 @@ html.disable-forced-colors * {
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
       var(--teal-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --creator-revenue-icon-gradient-start: color-mix(
       in oklab,
       var(--teal-360) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --creator-revenue-info-box-background: color-mix(
       in oklab,
@@ -87396,7 +87476,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--teal-400) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --creator-revenue-locked-channel-icon: color-mix(
       in oklab,
@@ -87791,26 +87874,26 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--red-new-37) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --interactive-background-active: color-mix(
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-selected: color-mix(
       in oklab,
       hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-icon-active: color-mix(
       in oklab,
@@ -87857,8 +87940,8 @@ html.disable-forced-colors * {
     --logo-primary: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --mention-background: color-mix(
       in oklab,
@@ -87941,8 +88024,8 @@ html.disable-forced-colors * {
     --mobile-text-heading-primary: color-mix(
       in oklab,
       var(--neutral-8) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --modal-background: color-mix(
       in oklab,
@@ -87959,8 +88042,8 @@ html.disable-forced-colors * {
     --navigator-header-tint: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --overlay-backdrop-lightbox: color-mix(
       in oklab,
@@ -88026,7 +88109,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--white-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --profile-gradient-section-box: color-mix(
       in oklab,
@@ -88128,7 +88214,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--blurple-41) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-primary-background: color-mix(
       in oklab,
@@ -88176,7 +88265,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-overlay-background: color-mix(
       in oklab,
@@ -88206,7 +88298,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-text: color-mix(
       in oklab,
@@ -88258,13 +88353,13 @@ html.disable-forced-colors * {
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
       in oklab,
-      var(--neutral-45) 100%,
+      var(--neutral-46) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-track: color-mix(
       in oklab,
-      var(--neutral-98) 100%,
+      var(--neutral-100) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -88296,7 +88391,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-44-hsl) / 0.4392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4392156862745098)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --spoiler-hidden-background: color-mix(
       in oklab,
@@ -88500,7 +88598,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-13) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-activity-toolbar-background: color-mix(
       in oklab,
@@ -88518,7 +88619,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-note-background-focus: color-mix(
       in oklab,
@@ -88548,7 +88652,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
   }
 }
@@ -89057,6 +89164,13 @@ html.disable-forced-colors * {
   --radio-border-selected-hover: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
+  --radio-foreground-active: var(--blurple-50);
+  --radio-foreground-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-foreground-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
   --radio-thumb-background-active: var(--neutral-1);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
@@ -89113,8 +89227,8 @@ html.disable-forced-colors * {
   --redesign-button-tertiary-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
   --redesign-button-tertiary-pressed-text: var(--plum-5);
   --redesign-button-tertiary-text: var(--neutral-5);
-  --scrollbar-auto-scrollbar-color-thumb: var(--neutral-43);
-  --scrollbar-auto-scrollbar-color-track: var(--neutral-90);
+  --scrollbar-auto-scrollbar-color-thumb: var(--neutral-44);
+  --scrollbar-auto-scrollbar-color-track: var(--neutral-94);
   --scrollbar-auto-thumb: var(--neutral-42);
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
   --scrollbar-thin-thumb: var(--neutral-44);
@@ -89464,7 +89578,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-20) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --chat-text-muted: color-mix(
       in oklab,
@@ -89482,13 +89599,13 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--white-hsl) / 0.85) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.85)
-        var(--custom-theme-base-color-amount, 0%)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --content-inventory-overlay-text-secondary: color-mix(
       in oklab,
       hsl(var(--white-hsl) / 0.7) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--custom-theme-base-color-amount, 0%)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --context-menu-backdrop-background: color-mix(
       in oklab,
@@ -89511,14 +89628,14 @@ html.disable-forced-colors * {
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
       var(--teal-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --creator-revenue-icon-gradient-start: color-mix(
       in oklab,
       var(--teal-360) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --creator-revenue-info-box-background: color-mix(
       in oklab,
@@ -89530,7 +89647,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--teal-400) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --creator-revenue-locked-channel-icon: color-mix(
       in oklab,
@@ -89925,26 +90045,26 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--red-new-32) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --interactive-background-active: color-mix(
       in oklab,
       hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-selected: color-mix(
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-icon-active: color-mix(
       in oklab,
@@ -89991,8 +90111,8 @@ html.disable-forced-colors * {
     --logo-primary: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --mention-background: color-mix(
       in oklab,
@@ -90075,8 +90195,8 @@ html.disable-forced-colors * {
     --mobile-text-heading-primary: color-mix(
       in oklab,
       var(--neutral-2) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --modal-background: color-mix(
       in oklab,
@@ -90093,8 +90213,8 @@ html.disable-forced-colors * {
     --navigator-header-tint: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --overlay-backdrop-lightbox: color-mix(
       in oklab,
@@ -90160,7 +90280,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--white-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --profile-gradient-section-box: color-mix(
       in oklab,
@@ -90262,7 +90385,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--blurple-35) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-primary-background: color-mix(
       in oklab,
@@ -90310,7 +90436,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-overlay-background: color-mix(
       in oklab,
@@ -90340,7 +90469,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-text: color-mix(
       in oklab,
@@ -90392,13 +90524,13 @@ html.disable-forced-colors * {
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
       in oklab,
-      var(--neutral-43) 100%,
+      var(--neutral-44) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-track: color-mix(
       in oklab,
-      var(--neutral-90) 100%,
+      var(--neutral-94) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -90430,7 +90562,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-44-hsl) / 0.4392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4392156862745098)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --spoiler-hidden-background: color-mix(
       in oklab,
@@ -90634,7 +90769,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-13) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-activity-toolbar-background: color-mix(
       in oklab,
@@ -90652,7 +90790,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-note-background-focus: color-mix(
       in oklab,
@@ -90682,7 +90823,10 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
   }
 }
@@ -91188,26 +91332,26 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--red-new-6) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --interactive-background-active: color-mix(
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-selected: color-mix(
       in oklab,
       hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-icon-active: color-mix(
       in oklab,
@@ -91308,20 +91452,26 @@ html.disable-forced-colors * {
     --mobile-text-heading-primary: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-300) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-border: color-mix(
       in oklab,
       var(--neutral-12) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-text: color-mix(
       in oklab,
@@ -91351,7 +91501,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-1) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --stage-card-pill-bg: color-mix(
       in oklab,
@@ -91495,7 +91648,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-27) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-background-hover: color-mix(
       in oklab,
@@ -91507,7 +91663,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-12) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-overlay-background-hover: color-mix(
       in oklab,
@@ -91519,7 +91678,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-25) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
   }
 }
@@ -91989,26 +92151,26 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--red-new-63) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --interactive-background-active: color-mix(
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-selected: color-mix(
       in oklab,
       hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-icon-active: color-mix(
       in oklab,
@@ -92109,20 +92271,26 @@ html.disable-forced-colors * {
     --mobile-text-heading-primary: color-mix(
       in oklab,
       var(--black) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-600) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-border: color-mix(
       in oklab,
       var(--neutral-49) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-text: color-mix(
       in oklab,
@@ -92152,7 +92320,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-72) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --stage-card-pill-bg: color-mix(
       in oklab,
@@ -92296,7 +92467,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-39) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-background-hover: color-mix(
       in oklab,
@@ -92308,7 +92482,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-49) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-overlay-background-hover: color-mix(
       in oklab,
@@ -92320,7 +92497,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-38) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
   }
 }
@@ -92798,26 +92978,26 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--red-new-22) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --interactive-background-active: color-mix(
       in oklab,
       hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-selected: color-mix(
       in oklab,
       hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-icon-active: color-mix(
       in oklab,
@@ -92918,20 +93098,26 @@ html.disable-forced-colors * {
     --mobile-text-heading-primary: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-345) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-border: color-mix(
       in oklab,
       var(--neutral-23) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-text: color-mix(
       in oklab,
@@ -92961,7 +93147,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-10) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --stage-card-pill-bg: color-mix(
       in oklab,
@@ -93105,7 +93294,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-37) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-background-hover: color-mix(
       in oklab,
@@ -93117,7 +93309,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-23) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-overlay-background-hover: color-mix(
       in oklab,
@@ -93129,7 +93324,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-35) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
   }
 }
@@ -93599,26 +93797,26 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--red-new-16) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --interactive-background-active: color-mix(
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-background-selected: color-mix(
       in oklab,
       hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
-        var(--custom-theme-text-color-amount, 0%)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --interactive-icon-active: color-mix(
       in oklab,
@@ -93719,20 +93917,26 @@ html.disable-forced-colors * {
     --mobile-text-heading-primary: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-330) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-border: color-mix(
       in oklab,
       var(--neutral-19) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --redesign-button-secondary-text: color-mix(
       in oklab,
@@ -93762,7 +93966,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-5) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --stage-card-pill-bg: color-mix(
       in oklab,
@@ -93906,7 +94113,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-34) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-background-hover: color-mix(
       in oklab,
@@ -93918,7 +94128,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-19) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --user-profile-overlay-background-hover: color-mix(
       in oklab,
@@ -93930,7 +94143,10 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-32) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
   }
 }
@@ -97754,8 +97970,8 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--neutral-9) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
   }
 }
@@ -97827,8 +98043,8 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--neutral-69) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
   }
 }
@@ -97900,8 +98116,8 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--neutral-10) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
   }
 }
@@ -97973,8 +98189,8 @@ html.disable-forced-colors * {
     --input-text-error-default: color-mix(
       in oklab,
       var(--neutral-5) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
   }
 }
@@ -99704,4 +99920,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.8b14849b3b26463b.css.map*/
+/*# sourceMappingURL=web.33a6073a5798f851.css.map*/
