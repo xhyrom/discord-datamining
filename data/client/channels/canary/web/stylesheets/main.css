@@ -70814,86 +70814,6 @@ div.d74ef86df6475678-nagbar {
   border-radius: 0 0 10px 10px;
   margin-top: -24px;
 }
-._6aefd1a8b680587b-card,
-._6aefd1a8b680587b-spacing {
-  margin-bottom: 20px;
-}
-._6aefd1a8b680587b-card {
-  padding: 10px;
-}
-._6aefd1a8b680587b-error {
-  margin-top: 8px;
-}
-.a959b15304ce5719-spacing {
-  margin-bottom: 20px;
-}
-.a959b15304ce5719-error {
-  margin-top: 8px;
-}
-.a959b15304ce5719-card {
-  padding: 10px;
-}
-.a959b15304ce5719-warning {
-  color: var(--white-500);
-}
-._5ecaae3e0bfab122-spacer {
-  width: 8px;
-}
-._5ecaae3e0bfab122-input {
-  background-color: var(--input-background-default);
-  border: 1px solid var(--input-border-default);
-  border-radius: var(--radius-sm);
-  box-sizing: border-box;
-  color: var(--text-strong);
-  font-size: 17px;
-  height: 48px;
-  margin-inline: var(--space-4);
-  text-align: center;
-  width: 48px;
-}
-.enable-forced-colors ._5ecaae3e0bfab122-input {
-  border: 1px solid ButtonText;
-}
-.enable-forced-colors ._5ecaae3e0bfab122-input:focus {
-  border-color: Highlight;
-}
-.a0c54f499c2e5848-phoneField {
-  display: grid;
-  gap: var(--space-8);
-  grid-template-columns: 5fr 6fr;
-  position: relative;
-}
-.db41ea5ef0e22091-phoneVerificationModal {
-  min-height: 252px;
-  padding: 16px;
-  position: relative;
-  width: 440px;
-}
-.db41ea5ef0e22091-phoneVerificationModal .db41ea5ef0e22091-animationContainer {
-  position: absolute;
-  top: -150px;
-  inset-inline: 130px;
-}
-.db41ea5ef0e22091-phoneVerificationModal .db41ea5ef0e22091-title {
-  color: var(--text-strong);
-  font-size: 20px;
-  font-weight: var(--font-weight-bold);
-  margin-top: auto;
-  padding-top: 80px;
-}
-.db41ea5ef0e22091-phoneVerificationModal .db41ea5ef0e22091-description {
-  color: var(--text-default);
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-}
-.db41ea5ef0e22091-phoneVerificationModal
-  .db41ea5ef0e22091-description.db41ea5ef0e22091-error {
-  color: var(--status-danger);
-}
-.db41ea5ef0e22091-phoneVerificationModal .db41ea5ef0e22091-field {
-  align-self: stretch;
-}
 ._6c75d92c128c46b0-header {
   align-items: center;
   display: flex;
@@ -70951,6 +70871,28 @@ div.d74ef86df6475678-nagbar {
 }
 ._6c75d92c128c46b0-footer {
   justify-content: space-between;
+}
+.a959b15304ce5719-spacing {
+  margin-bottom: 20px;
+}
+.a959b15304ce5719-error {
+  margin-top: 8px;
+}
+.a959b15304ce5719-card {
+  padding: 10px;
+}
+.a959b15304ce5719-warning {
+  color: var(--white-500);
+}
+._6aefd1a8b680587b-card,
+._6aefd1a8b680587b-spacing {
+  margin-bottom: 20px;
+}
+._6aefd1a8b680587b-card {
+  padding: 10px;
+}
+._6aefd1a8b680587b-error {
+  margin-top: 8px;
 }
 ._2666bc68709e8a16-lockIcon {
   filter: saturate(var(--saturation-factor, 1));
@@ -71056,6 +70998,64 @@ div.d74ef86df6475678-nagbar {
 }
 ._2666bc68709e8a16-tabPanel {
   margin-top: var(--space-32);
+}
+._5ecaae3e0bfab122-spacer {
+  width: 8px;
+}
+._5ecaae3e0bfab122-input {
+  background-color: var(--input-background-default);
+  border: 1px solid var(--input-border-default);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  color: var(--text-strong);
+  font-size: 17px;
+  height: 48px;
+  margin-inline: var(--space-4);
+  text-align: center;
+  width: 48px;
+}
+.enable-forced-colors ._5ecaae3e0bfab122-input {
+  border: 1px solid ButtonText;
+}
+.enable-forced-colors ._5ecaae3e0bfab122-input:focus {
+  border-color: Highlight;
+}
+.a0c54f499c2e5848-phoneField {
+  display: grid;
+  gap: var(--space-8);
+  grid-template-columns: 5fr 6fr;
+  position: relative;
+}
+.db41ea5ef0e22091-phoneVerificationModal {
+  min-height: 252px;
+  padding: 16px;
+  position: relative;
+  width: 440px;
+}
+.db41ea5ef0e22091-phoneVerificationModal .db41ea5ef0e22091-animationContainer {
+  position: absolute;
+  top: -150px;
+  inset-inline: 130px;
+}
+.db41ea5ef0e22091-phoneVerificationModal .db41ea5ef0e22091-title {
+  color: var(--text-strong);
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  margin-top: auto;
+  padding-top: 80px;
+}
+.db41ea5ef0e22091-phoneVerificationModal .db41ea5ef0e22091-description {
+  color: var(--text-default);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+.db41ea5ef0e22091-phoneVerificationModal
+  .db41ea5ef0e22091-description.db41ea5ef0e22091-error {
+  color: var(--status-danger);
+}
+.db41ea5ef0e22091-phoneVerificationModal .db41ea5ef0e22091-field {
+  align-self: stretch;
 }
 .d286c531be04f3d2-description {
   margin-bottom: 16px;
@@ -99574,4 +99574,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.02ca07815ea27af2.css.map*/
+/*# sourceMappingURL=web.07fd03828c535def.css.map*/
