@@ -56630,17 +56630,6 @@ html ._614623a0ca8129b8-progress {
   font-size: 12px;
   line-height: 16px;
 }
-.b7e1cb0370c2dd0e-nitroFileSizeUpsell {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.b7e1cb0370c2dd0e-nitroBadgeSvg {
-  -webkit-margin-end: 0.25rem;
-  height: 18px;
-  margin-inline-end: 0.25rem;
-  width: 18px;
-}
 .b7e1cb0370c2dd0e-ctaButtonContainer {
   margin-bottom: 6px;
   margin-top: 6px;
@@ -99586,4 +99575,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.7c49e3f9fc13d9cd.css.map*/
+/*# sourceMappingURL=web.97c0829d4368fde9.css.map*/
