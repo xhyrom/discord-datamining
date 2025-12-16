@@ -60821,6 +60821,10 @@ html ._614623a0ca8129b8-progress {
   display: flex;
   margin-inline-end: 4px;
 }
+.abfd909f61de9fdf-card,
+.abfd909f61de9fdf-cardContainer {
+  overflow: hidden;
+}
 .abfd909f61de9fdf-card {
   background: var(--background-base-low);
   border: 2px solid var(--border-subtle);
@@ -60830,7 +60834,6 @@ html ._614623a0ca8129b8-progress {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  overflow: hidden;
   position: relative;
   transform: translateY(0);
   width: 100%;
@@ -99607,4 +99610,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.74334d545cfd6b42.css.map*/
+/*# sourceMappingURL=web.3fb87326ad49da0f.css.map*/
