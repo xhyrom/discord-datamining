@@ -73971,6 +73971,10 @@ div.d74ef86df6475678-nagbar {
   overflow-y: auto;
   position: relative;
 }
+.dc2e0e7839a6713a-userSettingsContentPanel {
+  overflow-x: unset;
+  overflow-y: unset;
+}
 .dc2e0e7839a6713a-item {
   align-items: center;
   display: flex;
@@ -100066,4 +100070,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f5109a5e3151b6a4.css.map*/
+/*# sourceMappingURL=web.129e3848503ca404.css.map*/
