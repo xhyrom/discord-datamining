@@ -38,11 +38,6 @@
           >Server Booster Badge</a
         >
       </li>
-      <li data-list-item-id="e10c0fd7bc4a1638fb3cdaf4b188d77fc">
-        <a href="#h_01GM67JJ4M3FD4FR71E69MND1S" target="_self"
-          >HypeSquad House Badges</a
-        >
-      </li>
     </ul>
   </li>
   <li data-list-item-id="e16ebb52789a4b12d7b41c060567052e0">
@@ -73,6 +68,11 @@
     <ul>
       <li data-list-item-id="e35923610d909b9044351327a62243aca">
         <a href="#h_01GM67K5EJ16ZHYZQ5MPRW3JT3">HypeSquad Events Badge</a>
+      </li>
+      <li data-list-item-id="e47fbf1c71996113fdfe4a53f75166dd7">
+        <a href="#h_01GM67JJ4M3FD4FR71E69MND1S" target="_self"
+          >HypeSquad House Badges</a
+        >
       </li>
       <li data-list-item-id="e38e478f316dbe53da1c09b3eb094bd8f">
         <a href="#h_01GM67N1ZDEHN3M496072Z1QZD" target="_self"
@@ -177,64 +177,6 @@
     rel="noopener noreferrer"
     >Server Boosting FAQ. </a
   >
-</p>
-<h2 id="h_01GM67JJ4M3FD4FR71E69MND1S">
-  <strong>HypeSquad House Badges  </strong>
-</h2>
-<p class="wysiwyg-text-align-center" id="h_01HHJ38E13QFP87JEZFZ4JH020">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/19813392718615"
-      width="624"
-      height="232"
-  /></strong>
-</p>
-<p>
-  Have you ever wondered how to obtain one of these three badges? Each one
-  represents a HypeSquad you can join by taking the quick five-question
-  personality test on the desktop or app. 
-</p>
-<p>If you would like to take the test:</p>
-<p>
-  1. Head into your <strong>User Settings</strong> by pressing the cog wheel
-  button [<img
-    src="https://support.discord.com/hc/article_attachments/10929374329495"
-    alt="Cog.png"
-  />] located near your username. 
-</p>
-<p>
-  2. Then, select the <strong>HypeSquad tab</strong> and press the
-  <strong>Join HypeSquad button</strong> to start the test. 
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/11594635893271"
-    alt="newhypesquad_finalized.gif"
-  />
-</p>
-<p class="wysiwyg-text-align-left">
-  Once you have completed the test, you will be assigned to the House of
-  Bravery, the House of Brilliance, or the House of Balance. You can also click
-  on your profile to take a look at your new
-  <strong>HypeSquad House badge</strong>.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/10928530381847"
-    alt="hypesquadicon_finalized.png"
-    width="350"
-    height="315"
-  />
-</p>
-<p>
-  If you’d like to learn more about the HypeSquad Houses, you can take a look at
-  our <strong>HypeSquad House Breakdown</strong> article
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360007553672"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >. 
 </p>
 <h1 class="wysiwyg-text-align-left" id="h_01GM67JVQ0MCMWA9MFD9FVF9F6">
   <strong>Rare Badges</strong>
@@ -378,6 +320,22 @@
     rel="noopener noreferrer"
     >Safety Center's Moderation page</a
   >.
+</p>
+<h2 id="h_01GM67JJ4M3FD4FR71E69MND1S">
+  <strong>HypeSquad House Badges  </strong>
+</h2>
+<p class="wysiwyg-text-align-center" id="h_01HHJ38E13QFP87JEZFZ4JH020">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/19813392718615"
+      width="624"
+      height="232"
+  /></strong>
+</p>
+<p id="h_01HHJ38E13QFP87JEZFZ4JH020">
+  In the past, you could earn a HypeSquad House Badge by taking a quiz in
+  Discord that sorted you into one of the three houses. Unfortunately, this quiz
+  is no longer available.
 </p>
 <h2 id="h_01GM67N878RGKPHPB525K0GF4C">
   <strong>Early Supporter Badge</strong>

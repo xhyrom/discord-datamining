@@ -131,6 +131,24 @@
 <h4 class="wysiwyg-text-align-center" id="h_01K6GXYZYABDBDD7YQ0A8D8ESP">
   <span style="color: #666666">Widgets in Your Profile Board</span>
 </h4>
+<div class="exp-box">
+  <p>
+    <strong>Important:</strong> We're currently testing a Marvel Rivals Widget
+    that shows your game stats! This is currently only available to a limited
+    number of users. If available to you, navigate to your Widgets and link your
+    Marvel Rivals account to set it up.
+  </p>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/37098032322839"
+      width="624"
+      height="527"
+    />
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01KCPV545VB4Q1YWF6JT0AFMZ7">
+    Marvel Rivals stats
+  </h4>
+</div>
 <h1 id="h_01K6GXYZYAKWV5FTZ017YRKEMR">
   How to Add Widgets to Your Profile Board
 </h1>
