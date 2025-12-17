@@ -24497,14 +24497,6 @@ input[type="checkbox"]:focus-visible + ._0d242e583d6053f6-label {
 .enable-forced-colors ._14245bb948377a25-interactive:hover {
   color: ButtonText;
 }
-._0b69f200eb3bf411-upsellButton {
-  -webkit-margin-start: auto;
-  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
-  background-clip: padding-box;
-  border-radius: 3px;
-  flex-shrink: 0;
-  margin-inline-start: auto;
-}
 ._0b69f200eb3bf411-upsellContainer {
   align-items: center;
   background:
@@ -24515,8 +24507,19 @@ input[type="checkbox"]:focus-visible + ._0d242e583d6053f6-label {
   display: flex;
   padding: 12px;
 }
-._0b69f200eb3bf411-upsellContainerShadow {
-  filter: drop-shadow(0 0 10px rgba(184, 69, 193, 0.5));
+._0b69f200eb3bf411-upsellContainer._0b69f200eb3bf411-upsellRedesignEnabled {
+  background: radial-gradient(
+    #000 0,
+    #000 60%,
+    var(--background-surface-high) 100%
+  );
+  border: 1px solid var(--border-subtle);
+  padding: 0;
+}
+._0b69f200eb3bf411-expressiveGradientBg {
+  display: flex;
+  flex: 1 1;
+  padding: 12px;
 }
 ._0b69f200eb3bf411-upsellContainerFloating {
   inset-block: auto var(--space-8);
@@ -100070,4 +100073,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.129e3848503ca404.css.map*/
+/*# sourceMappingURL=web.19c9babe192be555.css.map*/
