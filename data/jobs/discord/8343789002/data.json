@@ -1,0 +1,56 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8343789002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": true
+    }
+  ],
+  "internal_job_id": 6332419002,
+  "location": {
+    "name": "San Francisco Bay Area"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": "Data Science & Data Engineering",
+      "value_type": "single_select"
+    }
+  ],
+  "id": 8343789002,
+  "updated_at": "2025-12-17T13:41:23-05:00",
+  "requisition_id": "R-107105",
+  "title": "Data Scientist, Analytics - Ads Reporting",
+  "company_name": "Discord",
+  "first_published": "2025-12-17T13:41:23-05:00",
+  "language": "en",
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p class=&quot;font-claude-response-body break-words whitespace-normal leading-[1.7]&quot;&gt;At Discord, we&#39;re building something special - a place where hundreds of millions of people connect, play, and belong. Our ads business is entering an exciting growth phase, and we need a Data Scientist who&#39;s passionate about building the reporting infrastructure that powers insights across our entire ads organization. You&#39;ll be instrumental in establishing the operational backbone that enables hundreds of stakeholders to make data-driven decisions with confidence and speed.&lt;/p&gt;\n&lt;p class=&quot;font-claude-response-body break-words whitespace-normal leading-[1.7]&quot;&gt;You&#39;ll be embedded within our Ads organization, working closely with Data Engineering and cross-functional partners to build robust reporting systems that scale. This role reports to the Director of Data Science, Analytics for Ads. If creating clear, actionable insights that directly impact advertiser success and product development sounds exciting, we&#39;d love to hear from you!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Build and scale comprehensive campaign performance reporting that enables advertisers and internal teams to track ROI, attribution, and key performance metrics with confidence&lt;/li&gt;\n&lt;li&gt;Design executive dashboards that provide clear visibility into marketplace health, inventory utilization, and fill rate trends for leadership decision-making&lt;/li&gt;\n&lt;li&gt;Partner closely with Data Engineering to define new metrics, ensure data quality, and develop robust pipelines that support reporting at scale&lt;/li&gt;\n&lt;li&gt;Build automated monitoring and alerting systems that catch performance issues and campaign pacing anomalies before they impact revenue&lt;/li&gt;\n&lt;li&gt;Empower Sales, Account Management, and Product teams by creating self-serve data assets in BigQuery and Looker that drive faster, better decisions&lt;/li&gt;\n&lt;li&gt;Develop comprehensive documentation and training materials that enable analytics self-service across 100+ internal stakeholders&lt;/li&gt;\n&lt;li&gt;Contribute to weekly business and metric reviews with clear visualizations of performance trends, anomalies, and actionable insights that drive optimization&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;3+ years of data science analytics experience in ads tech, digital marketing analytics, or business intelligence&lt;/strong&gt;&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Excellent SQL skills&lt;/strong&gt; with experience writing complex queries against large-scale datasets and optimizing for performance&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;3+ years building production dashboards&lt;/strong&gt; in Looker, Tableau, or similar BI tools with focus on usability and performance&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Deep familiarity with campaign reporting metrics: &lt;/strong&gt;CPM, CTR, conversion rates, attribution windows, and ROAS&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Understanding of ads delivery fundamentals:&lt;/strong&gt; impression tracking, fill rates, inventory management, and pacing algorithms&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Strong attention to detail with ability to QA your own work&lt;/strong&gt; and identify data anomalies before they reach stakeholders&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Clear communication skills&lt;/strong&gt; for documenting metric definitions, training users, and translating business needs into reporting solutions&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Proven ability to manage multiple priorities&lt;/strong&gt; while maintaining consistent delivery timelines&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Collaborative mindset &lt;/strong&gt;with track record of supporting cross-functional teams effectively&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Proficiency in Excel/Sheets&lt;/strong&gt; for ad-hoc analysis and rapid prototyping&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;whitespace-normal break-words pl-2&quot;&gt;&lt;strong&gt;Discord passion: &lt;/strong&gt;You&#39;re an active Discord user or have deep knowledge of gaming and creator communities&lt;/li&gt;\n&lt;li class=&quot;whitespace-normal break-words pl-2&quot;&gt;Experience with &lt;strong&gt;marketing analytics platforms and ads serving infrastructure&lt;/strong&gt;&lt;/li&gt;\n&lt;li class=&quot;whitespace-normal break-words pl-2&quot;&gt;Background in &lt;strong&gt;marketplace/inventory analytics or supply-side platform reporting&lt;/strong&gt;&lt;/li&gt;\n&lt;li class=&quot;whitespace-normal break-words pl-2&quot;&gt;&lt;strong&gt;Python/R skills&lt;/strong&gt; for data manipulation and automation&lt;/li&gt;\n&lt;li class=&quot;whitespace-normal break-words pl-2&quot;&gt;&lt;strong&gt;Knowledge of privacy regulations&lt;/strong&gt; (GDPR, CCPA) and their impact on ads measurement&lt;/li&gt;\n&lt;li class=&quot;whitespace-normal break-words pl-2&quot;&gt;Experience with &lt;strong&gt;attribution methodologies and conversion tracking systems&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $160,000 to $180,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4022531002,
+      "name": "Data Science & Engineering",
+      "child_ids": [],
+      "parent_id": 4094266002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
