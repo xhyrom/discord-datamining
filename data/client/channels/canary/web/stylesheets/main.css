@@ -3000,6 +3000,10 @@
 ._5a8382cf5c9d77df-label[data-interactive="true"] {
   cursor: pointer;
 }
+._5a8382cf5c9d77df-container[data-disabled="true"]
+  ._5a8382cf5c9d77df-label[data-interactive="true"] {
+  cursor: not-allowed;
+}
 ._5a8382cf5c9d77df-required {
   display: inline-block;
   margin-left: var(--space-4);
@@ -3210,20 +3214,24 @@
   fill: var(--radio-thumb-background-active);
   animation: _64e6155a0667273d-dotOut 0.25s cubic-bezier(0.33, 0, 0.25, 1) both;
 }
-._64e6155a0667273d-radioGroupOption:not([data-selected]):hover {
+._64e6155a0667273d-radioGroupOption:not([data-selected]):not(
+    [data-disabled]
+  ):hover {
   cursor: pointer;
 }
-._64e6155a0667273d-radioGroupOption:not([data-selected]):hover
+._64e6155a0667273d-radioGroupOption:not([data-selected]):not(
+    [data-disabled]
+  ):hover
   ._64e6155a0667273d-outerRadioBase {
   fill: var(--radio-background-hover);
   stroke: var(--radio-border-hover);
 }
-._64e6155a0667273d-radioGroupOption[data-selected]:hover {
+._64e6155a0667273d-radioGroupOption[data-selected]:not([data-disabled]):hover {
   cursor: pointer;
 }
-._64e6155a0667273d-radioGroupOption[data-selected]:hover
+._64e6155a0667273d-radioGroupOption[data-selected]:not([data-disabled]):hover
   ._64e6155a0667273d-outerRadioBase,
-._64e6155a0667273d-radioGroupOption[data-selected]:hover
+._64e6155a0667273d-radioGroupOption[data-selected]:not([data-disabled]):hover
   ._64e6155a0667273d-outerRadioFill {
   fill: var(--radio-background-selected-hover);
   stroke: var(--radio-border-selected-hover);
@@ -100073,4 +100081,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.19c9babe192be555.css.map*/
+/*# sourceMappingURL=web.7eb8c33b9bd1ee0a.css.map*/
