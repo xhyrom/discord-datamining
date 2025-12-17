@@ -61112,6 +61112,10 @@ html ._614623a0ca8129b8-progress {
 .abfd909f61de9fdf-cardDarkHighlighted {
   box-shadow: 0 0 15px 1px var(--primary-700);
 }
+.abfd909f61de9fdf-cardNotLoaded {
+  cursor: default;
+  pointer-events: none;
+}
 .abfd909f61de9fdf-cardAnimation {
   transform: scale(100%);
 }
@@ -61304,16 +61308,15 @@ html ._614623a0ca8129b8-progress {
   cursor: default;
   pointer-events: none;
 }
-.full-motion .abfd909f61de9fdf-placeholderCard {
-  animation: abfd909f61de9fdf-pulse 2s ease-in-out infinite alternate;
-  animation-fill-mode: backwards;
-}
-.abfd909f61de9fdf-placeholderDescription,
-.abfd909f61de9fdf-placeholderTitle {
+.abfd909f61de9fdf-placeholderText {
   background-color: var(--icon-muted);
   border-radius: var(--radius-xs);
   height: var(--space-24);
   opacity: 0.1;
+}
+.full-motion .abfd909f61de9fdf-placeholderCard {
+  animation: abfd909f61de9fdf-pulse 2s ease-in-out infinite alternate;
+  animation-fill-mode: backwards;
 }
 .e95ba0bb7b0945f9-container {
   display: flex;
@@ -100082,4 +100085,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.efbf0ce145f17ce3.css.map*/
+/*# sourceMappingURL=web.c9d5bc5a3bf783ea.css.map*/
