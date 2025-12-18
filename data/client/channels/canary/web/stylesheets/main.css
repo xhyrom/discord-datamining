@@ -26697,6 +26697,30 @@ img._0f2e83213c878a13-thumbnail {
 ._20585df30caf32ab-itemIconShop {
   fill: var(--icon-strong);
 }
+._5291b48d0754c572-container {
+  margin-top: 8px;
+  position: relative;
+}
+._5291b48d0754c572-contextContainer {
+  background-color: var(--background-surface-high);
+  border-radius: 12px;
+  color: var(--interactive-text-active);
+  inset-inline-end: -4px;
+  padding: 2px;
+  position: absolute;
+  top: -8px;
+  z-index: 2;
+}
+._5291b48d0754c572-contextContainer,
+._5291b48d0754c572-contextIcon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+._5291b48d0754c572-contextIcon {
+  height: 20px;
+  width: 20px;
+}
 ._3a590bee48558ff9-container {
   background: var(--background-mod-muted);
   border-radius: 12px;
@@ -100215,4 +100239,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.866085ed9adc43c8.css.map*/
+/*# sourceMappingURL=web.f19d2fff7d7f6640.css.map*/
