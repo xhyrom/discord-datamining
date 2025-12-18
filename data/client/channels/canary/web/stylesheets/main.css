@@ -44433,6 +44433,36 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
 ._6d1908c48c1f2850-moreOverlay ._6d1908c48c1f2850-card:hover {
   background: rgba(0, 0, 0, 0.6);
 }
+._6d1908c48c1f2850-wrapperContainer {
+  margin-top: 8px;
+  position: relative;
+}
+._6d1908c48c1f2850-contextContainer {
+  background-color: var(--background-surface-high);
+  border-radius: 12px;
+  color: var(--interactive-text-active);
+  inset-inline-end: -4px;
+  padding: 2px;
+  position: absolute;
+  top: -6px;
+  z-index: 2;
+}
+._6d1908c48c1f2850-contextContainer,
+._6d1908c48c1f2850-contextIcon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+._6d1908c48c1f2850-contextIcon {
+  height: 12px;
+  width: 12px;
+}
+._6d1908c48c1f2850-fireIcon {
+  color: var(--icon-strong);
+}
+._6d1908c48c1f2850-heartIcon {
+  color: var(--control-critical-primary-background-default);
+}
 ._46c9ea21482a065d-card {
   border-radius: none;
   display: flex;
@@ -100252,4 +100282,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f5fcacda623adfc0.css.map*/
+/*# sourceMappingURL=web.c81fd259dc4727f0.css.map*/
