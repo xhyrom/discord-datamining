@@ -3000,6 +3000,10 @@
 ._5a8382cf5c9d77df-label[data-interactive="true"] {
   cursor: pointer;
 }
+._5a8382cf5c9d77df-container[data-disabled="true"]
+  ._5a8382cf5c9d77df-label[data-interactive="true"] {
+  cursor: not-allowed;
+}
 ._5a8382cf5c9d77df-required {
   display: inline-block;
   margin-left: var(--space-4);
@@ -3210,20 +3214,24 @@
   fill: var(--radio-thumb-background-active);
   animation: _64e6155a0667273d-dotOut 0.25s cubic-bezier(0.33, 0, 0.25, 1) both;
 }
-._64e6155a0667273d-radioGroupOption:not([data-selected]):hover {
+._64e6155a0667273d-radioGroupOption:not([data-selected]):not(
+    [data-disabled]
+  ):hover {
   cursor: pointer;
 }
-._64e6155a0667273d-radioGroupOption:not([data-selected]):hover
+._64e6155a0667273d-radioGroupOption:not([data-selected]):not(
+    [data-disabled]
+  ):hover
   ._64e6155a0667273d-outerRadioBase {
   fill: var(--radio-background-hover);
   stroke: var(--radio-border-hover);
 }
-._64e6155a0667273d-radioGroupOption[data-selected]:hover {
+._64e6155a0667273d-radioGroupOption[data-selected]:not([data-disabled]):hover {
   cursor: pointer;
 }
-._64e6155a0667273d-radioGroupOption[data-selected]:hover
+._64e6155a0667273d-radioGroupOption[data-selected]:not([data-disabled]):hover
   ._64e6155a0667273d-outerRadioBase,
-._64e6155a0667273d-radioGroupOption[data-selected]:hover
+._64e6155a0667273d-radioGroupOption[data-selected]:not([data-disabled]):hover
   ._64e6155a0667273d-outerRadioFill {
   fill: var(--radio-background-selected-hover);
   stroke: var(--radio-border-selected-hover);
@@ -24497,14 +24505,6 @@ input[type="checkbox"]:focus-visible + ._0d242e583d6053f6-label {
 .enable-forced-colors ._14245bb948377a25-interactive:hover {
   color: ButtonText;
 }
-._0b69f200eb3bf411-upsellButton {
-  -webkit-margin-start: auto;
-  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
-  background-clip: padding-box;
-  border-radius: 3px;
-  flex-shrink: 0;
-  margin-inline-start: auto;
-}
 ._0b69f200eb3bf411-upsellContainer {
   align-items: center;
   background:
@@ -24515,8 +24515,19 @@ input[type="checkbox"]:focus-visible + ._0d242e583d6053f6-label {
   display: flex;
   padding: 12px;
 }
-._0b69f200eb3bf411-upsellContainerShadow {
-  filter: drop-shadow(0 0 10px rgba(184, 69, 193, 0.5));
+._0b69f200eb3bf411-upsellContainer._0b69f200eb3bf411-upsellRedesignEnabled {
+  background: radial-gradient(
+    #000 0,
+    #000 60%,
+    var(--background-surface-high) 100%
+  );
+  border: 1px solid var(--border-subtle);
+  padding: 0;
+}
+._0b69f200eb3bf411-expressiveGradientBg {
+  display: flex;
+  flex: 1 1;
+  padding: 12px;
 }
 ._0b69f200eb3bf411-upsellContainerFloating {
   inset-block: auto var(--space-8);
@@ -39541,17 +39552,23 @@ body .b54a5b2f01b57ad8-headerAnimation {
   color: var(--text-strong);
 }
 ._20a53846fe2e8513-layout {
+  align-items: center;
   border-radius: 4px;
+  display: flex;
   height: 42px;
   min-width: 0;
   padding: 0;
 }
-._20a53846fe2e8513-avatar,
-._20a53846fe2e8513-layout {
-  align-items: center;
-  display: flex;
+._20a53846fe2e8513-layout._20a53846fe2e8513-fullWidth,
+._20a53846fe2e8513-layout._20a53846fe2e8513-fullWidth
+  ._20a53846fe2e8513-content,
+._20a53846fe2e8513-layout._20a53846fe2e8513-fullWidth
+  ._20a53846fe2e8513-nameAndDecorators {
+  width: 100%;
 }
 ._20a53846fe2e8513-avatar {
+  align-items: center;
+  display: flex;
   flex: 0 0 auto;
   justify-content: center;
   -webkit-margin-end: 12px;
@@ -39578,10 +39595,17 @@ body .b54a5b2f01b57ad8-headerAnimation {
 ._20a53846fe2e8513-highlighted ._20a53846fe2e8513-name {
   font-weight: var(--font-weight-semibold-1x-light-theme, 500);
 }
+._20a53846fe2e8513-leftName {
+  justify-content: flex-start;
+  overflow: hidden;
+}
+._20a53846fe2e8513-leftName,
 ._20a53846fe2e8513-nameAndDecorators {
   align-items: center;
   display: flex;
-  justify-content: flex-start;
+}
+._20a53846fe2e8513-nameAndDecorators {
+  justify-content: space-between;
 }
 ._20a53846fe2e8513-subText {
   margin-top: -2px;
@@ -46841,6 +46865,7 @@ h2.feb59c8c6ec00ad9-title {
 }
 .c1e9c47c23f12ca3-menu {
   --custom-menu-viewport-padding: 16px;
+  --custom-menu-separator-margin: 8px;
   background: var(--background-surface-high);
   background-color: var(--background-surface-higher);
   border: 1px solid var(--border-subtle);
@@ -46962,7 +46987,7 @@ h2.feb59c8c6ec00ad9-title {
   border-bottom-color: var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
   box-sizing: border-box;
-  margin: 8px;
+  margin: var(--custom-menu-separator-margin, 8px);
 }
 .c1e9c47c23f12ca3-submenuPaddingContainer {
   padding: 0 8px;
@@ -61100,6 +61125,10 @@ html ._614623a0ca8129b8-progress {
 .abfd909f61de9fdf-cardDarkHighlighted {
   box-shadow: 0 0 15px 1px var(--primary-700);
 }
+.abfd909f61de9fdf-cardNotLoaded {
+  cursor: default;
+  pointer-events: none;
+}
 .abfd909f61de9fdf-cardAnimation {
   transform: scale(100%);
 }
@@ -61292,16 +61321,15 @@ html ._614623a0ca8129b8-progress {
   cursor: default;
   pointer-events: none;
 }
-.full-motion .abfd909f61de9fdf-placeholderCard {
-  animation: abfd909f61de9fdf-pulse 2s ease-in-out infinite alternate;
-  animation-fill-mode: backwards;
-}
-.abfd909f61de9fdf-placeholderDescription,
-.abfd909f61de9fdf-placeholderTitle {
+.abfd909f61de9fdf-placeholderText {
   background-color: var(--icon-muted);
   border-radius: var(--radius-xs);
   height: var(--space-24);
   opacity: 0.1;
+}
+.full-motion .abfd909f61de9fdf-placeholderCard {
+  animation: abfd909f61de9fdf-pulse 2s ease-in-out infinite alternate;
+  animation-fill-mode: backwards;
 }
 .e95ba0bb7b0945f9-container {
   display: flex;
@@ -73970,6 +73998,10 @@ div.d74ef86df6475678-nagbar {
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
+}
+.dc2e0e7839a6713a-userSettingsContentPanel {
+  overflow-x: unset;
+  overflow-y: unset;
 }
 .dc2e0e7839a6713a-item {
   align-items: center;
@@ -100066,4 +100098,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f5109a5e3151b6a4.css.map*/
+/*# sourceMappingURL=web.9c241cdb01372ceb.css.map*/
