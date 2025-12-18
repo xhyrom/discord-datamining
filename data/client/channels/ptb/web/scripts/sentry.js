@@ -3509,6 +3509,11 @@
               "/partner-sdk/guilds/"
                 .concat(e, "/application-storefront/skus/")
                 .concat(t),
+            SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT: (e) =>
+              "/partner-sdk/guilds/".concat(
+                e,
+                "/application-storefront/announcement",
+              ),
             ORDER_GET: (e) => "/billing/orders/".concat(e),
             ORDER_CREATE: "/billing/orders",
             ORDER_LIST: "/billing/orders",
@@ -4908,6 +4913,7 @@
           (r.GAME_NEWS_OPENED = "game_news_opened"),
           (r.APPLICATION_OPENED = "application_opened"),
           (r.LAUNCH_GAME = "launch_game"),
+          (r.LAUNCH_NON_GAME_APPLICATION = "launch_non_game_application"),
           (r.GAME_DETECTED = "game_detected"),
           (r.ROBLOX_SUBGAME_DETECTED = "roblox_subgame_detected"),
           (r.RUNNING_GAME_HEARTBEAT = "running_game_heartbeat"),
@@ -6888,7 +6894,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-12-17-9e841c0c3c7d6a6bfb15144f83d13f1c3c690965-discord_web",
+              "2025-12-18-edfe34c29b1b4cc24ab6693804eb00c8746a0028-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6954,8 +6960,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "481287"),
-            a.YA("builtAt", String("1766012967934"));
+            a.YA("buildNumber", "481399"),
+            a.YA("builtAt", String("1766045937919"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -38293,4 +38299,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.16b8cac20c3148c3.js.map
+//# sourceMappingURL=sentry.5aac0e433b619ae4.js.map
