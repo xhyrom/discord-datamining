@@ -46660,7 +46660,7 @@ h2.feb59c8c6ec00ad9-title {
   color: var(--text-code-deletion);
 }
 .d285a61ed580c689-markdown {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -52893,9 +52893,9 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 ._9a9f981d3524e20f-message {
   color: var(--text-default);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  line-height: 1.25rem;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -79017,6 +79017,7 @@ html ._968a4b9cecf98b8c-invoiceCancelRow {
 ._94748c73ac5ff785-videoHeight._94748c73ac5ff785-minimum {
   height: 275px;
 }
+._94748c73ac5ff785-videoHeight._94748c73ac5ff785-haven,
 ._94748c73ac5ff785-videoHeight._94748c73ac5ff785-noChat {
   height: 100vh;
 }
@@ -100091,4 +100092,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.86b0c2a3c0c8221c.css.map*/
+/*# sourceMappingURL=web.41e5e150c8ebc4d0.css.map*/
