@@ -39595,10 +39595,17 @@ body .b54a5b2f01b57ad8-headerAnimation {
 ._20a53846fe2e8513-highlighted ._20a53846fe2e8513-name {
   font-weight: var(--font-weight-semibold-1x-light-theme, 500);
 }
+._20a53846fe2e8513-leftName {
+  justify-content: flex-start;
+  overflow: hidden;
+}
+._20a53846fe2e8513-leftName,
 ._20a53846fe2e8513-nameAndDecorators {
   align-items: center;
   display: flex;
-  justify-content: flex-start;
+}
+._20a53846fe2e8513-nameAndDecorators {
+  justify-content: space-between;
 }
 ._20a53846fe2e8513-subText {
   margin-top: -2px;
@@ -100189,4 +100196,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.9b0c26eb52daa8bc.css.map*/
+/*# sourceMappingURL=web.11e192d0c6e2f0dc.css.map*/
