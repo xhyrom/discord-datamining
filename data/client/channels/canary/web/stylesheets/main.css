@@ -39323,7 +39323,7 @@ body .b54a5b2f01b57ad8-headerAnimation {
   padding-bottom: 0;
 }
 .e4d8037328efe0da-header {
-  flex-shrink: 0;
+  margin-bottom: 12px;
 }
 .e4d8037328efe0da-headerAnimation {
   bottom: -20px;
@@ -52550,19 +52550,21 @@ svg.c1e9c47c23f12ca3-radioIcon {
   margin-inline-end: var(--space-12);
 }
 ._8f41e1f9d50dd427-username {
-  -webkit-margin-end: var(--space-4);
   flex-shrink: 1;
-  margin-inline-end: var(--space-4);
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-._8f41e1f9d50dd427-label,
-._8f41e1f9d50dd427-username {
   white-space: nowrap;
+}
+._8f41e1f9d50dd427-separator {
+  -webkit-margin-end: var(--space-4);
+  margin-inline-end: var(--space-4);
+  -webkit-margin-start: var(--space-4);
+  margin-inline-start: var(--space-4);
 }
 ._8f41e1f9d50dd427-label {
   flex-shrink: 0;
+  white-space: nowrap;
 }
 ._8f41e1f9d50dd427-userIconCircle {
   align-items: center;
@@ -100092,4 +100094,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.41e5e150c8ebc4d0.css.map*/
+/*# sourceMappingURL=web.c8b46f4a38128274.css.map*/
