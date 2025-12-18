@@ -41,7 +41,7 @@
     alt="Screenshot 2024-12-20 at 13.11.03.png"
   />
 </p>
-<h4 id="h_01JFJZ9HNDMQE7D19YDCXB654K" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JFJZ9HNDMQE7D19YDCXB654K">
   Winter Event Sound Pack in Notifications Settings
 </h4>
 <p><strong>Q: Will this be available on all devices and clients?</strong></p>
@@ -69,7 +69,7 @@
     alt="Screenshot 2024-12-20 at 13.28.27.png"
   />
 </p>
-<h4 id="h_01JFJZ9D8RGN7CJJGTYYW8Y3EE" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JFJZ9D8RGN7CJJGTYYW8Y3EE">
   How to Revert Event Sound Pack to Discord Default in Notifications Settings
 </h4>
 <div class="info-box">
