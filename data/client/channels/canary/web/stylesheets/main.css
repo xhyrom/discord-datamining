@@ -67241,12 +67241,14 @@ html ._614623a0ca8129b8-progress {
     width: 100%;
   }
 }
+.abac7bf510fef1f8-badgeContainer {
+  margin-bottom: var(--space-8);
+}
 .abac7bf510fef1f8-badge {
   align-items: center;
   background: linear-gradient(90deg, #db00a4, #5968f0);
   border-radius: 19px;
   justify-content: center;
-  margin-bottom: var(--space-8);
   padding: 0 var(--space-4);
   text-transform: uppercase;
   width: -webkit-fit-content;
@@ -67286,12 +67288,14 @@ html ._614623a0ca8129b8-progress {
 .b0db003538002d93-boxesSubHeader {
   margin-bottom: 10px;
 }
+.b0db003538002d93-badgeContainer {
+  margin-bottom: var(--space-8);
+}
 .b0db003538002d93-badge {
   align-items: center;
   background: linear-gradient(90deg, #db00a4, #5968f0);
   border-radius: 19px;
   justify-content: center;
-  margin-bottom: var(--space-8);
   padding: 0 var(--space-4);
   text-transform: uppercase;
   width: -webkit-fit-content;
@@ -100248,4 +100252,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.6ca686e1592d44b7.css.map*/
+/*# sourceMappingURL=web.f5fcacda623adfc0.css.map*/
