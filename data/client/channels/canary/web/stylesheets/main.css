@@ -39552,17 +39552,23 @@ body .b54a5b2f01b57ad8-headerAnimation {
   color: var(--text-strong);
 }
 ._20a53846fe2e8513-layout {
+  align-items: center;
   border-radius: 4px;
+  display: flex;
   height: 42px;
   min-width: 0;
   padding: 0;
 }
-._20a53846fe2e8513-avatar,
-._20a53846fe2e8513-layout {
-  align-items: center;
-  display: flex;
+._20a53846fe2e8513-layout._20a53846fe2e8513-fullWidth,
+._20a53846fe2e8513-layout._20a53846fe2e8513-fullWidth
+  ._20a53846fe2e8513-content,
+._20a53846fe2e8513-layout._20a53846fe2e8513-fullWidth
+  ._20a53846fe2e8513-nameAndDecorators {
+  width: 100%;
 }
 ._20a53846fe2e8513-avatar {
+  align-items: center;
+  display: flex;
   flex: 0 0 auto;
   justify-content: center;
   -webkit-margin-end: 12px;
@@ -100085,4 +100091,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.c9d5bc5a3bf783ea.css.map*/
+/*# sourceMappingURL=web.78e60a959bd2d51a.css.map*/
