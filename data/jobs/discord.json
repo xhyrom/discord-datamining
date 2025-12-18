@@ -661,7 +661,7 @@
         }
       ],
       "id": 8187999002,
-      "updated_at": "2025-11-21T14:49:19-05:00",
+      "updated_at": "2025-12-18T16:56:48-05:00",
       "requisition_id": "R-107020",
       "title": "Director of Engineering, Developer Ecosystem",
       "company_name": "Discord",
@@ -1282,7 +1282,7 @@
         }
       ],
       "id": 7966411002,
-      "updated_at": "2025-12-18T13:20:26-05:00",
+      "updated_at": "2025-12-18T16:56:27-05:00",
       "requisition_id": "R-100885",
       "title": "Rust/C++ Senior Software Engineer",
       "company_name": "Discord",
@@ -2105,63 +2105,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8101842002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "education": "education_optional",
-      "internal_job_id": 6209115002,
-      "location": {
-        "name": "San Francisco Bay Area"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8101842002,
-      "updated_at": "2025-11-03T19:18:20-05:00",
-      "requisition_id": "R-101010",
-      "title": "Senior Software Engineer, Ads",
-      "company_name": "Discord",
-      "first_published": "2025-08-08T11:05:31-04:00",
-      "language": "en",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We are looking for a highly technical, creative, hands-on, and impact-focused Senior Software Engineer to join our growing Ads team.&lt;/p&gt;\n&lt;p&gt;Our team is revolutionizing the way users interact with our platform through innovative ad formats (including &lt;a href=&quot;https://discord.com/quests&quot;&gt;Quests&lt;/a&gt;). We are driven by a passion for delivering exceptional user experiences while scaling our platform to new heights. These products enable us to generate revenue by building a win-win-win suite of distribution tools for game developers, players, and Discord. Join us in shaping the future of digital advertising and marketplace interactions!&lt;/p&gt;\n&lt;p&gt;To learn more about Discord Engineering, take a look at our&amp;nbsp;&lt;a href=&quot;https://blog.discord.com/tagged/engineering&quot;&gt;engineering blog!&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design, build and maintain new Ads products and infrastructure from the backend to frontend. Collaborate with both engineers on and off the team - from Revenue Infrastructure, to Core Tech, to Machine Learning, to Data Science.&lt;/li&gt;\n&lt;li&gt;Be a strategic partner with engineering, product, and cross functional leadership in designing, developing and scaling digital advertising features that drive revenue growth and enhance user engagement.&lt;/li&gt;\n&lt;li&gt;Architect simple and maintainable systems to enable us to launch quickly and iterate while sustaining a high product and technical quality bar.&lt;/li&gt;\n&lt;li&gt;Model strong ownership by acting autonomously when possible and looping in others to build confidence on critical questions. Introduce coding and operational best practices to the team; always be learning &amp;amp; teaching.&lt;/li&gt;\n&lt;li&gt;Own projects end to end — you’ll be responsible for working with Product and other stakeholders to refine requirements, creating technical designs and specs, implementing changes, and seeing projects through to launch and maintenance.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;A focus on impact.&lt;/strong&gt; You have a sharp eye for what changes can bring a product from good to great. You collaborate closely with product managers, designers, analysts, and other engineers to define great solutions to business problems.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A sense of ownership.&lt;/strong&gt; You believe in solving a problem completely rather than simply shipping a solution. You operate autonomously and follow through on your commitments.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A growth mindset.&lt;/strong&gt; You view mistakes as learning opportunities and build upon your successes. You challenge yourself and those around you to continuously improve.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A love of mentorship.&lt;/strong&gt; Helping fellow engineers, providing feedback and guidance on system architecture, API design, data modeling, and tradeoffs.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Domain knowledge.&lt;/strong&gt; We’re looking for engineers with experience in the ad delivery space.&lt;/li&gt;\n&lt;li&gt;4+ years of experience, with 2 years in relevant roles.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Expertise with Python and/or Rust, Typescript, React, React Native&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Familiarity with experimentation and analysis&lt;/li&gt;\n&lt;li&gt;Contributions to open-source projects&lt;/li&gt;\n&lt;li&gt;Interest or passion for the Discord platform&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&lt;br&gt;&lt;/em&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4074054002,
-          "name": "Product Engineering",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8177757002",
       "data_compliance": [
         {
@@ -2200,6 +2143,63 @@
       "first_published": "2025-10-15T14:00:39-04:00",
       "language": "en",
       "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We are looking for a highly technical, creative, hands-on, and impact-focused Senior Software Engineer to join our growing Ads team.&lt;/p&gt;\n&lt;p&gt;Our team is revolutionizing the way users interact with our platform through innovative ad formats (including &lt;a href=&quot;https://discord.com/quests&quot;&gt;Quests&lt;/a&gt;). We are driven by a passion for delivering exceptional user experiences while scaling our platform to new heights. These products enable us to generate revenue by building a win-win-win suite of distribution tools for game developers, players, and Discord. Join us in shaping the future of digital advertising and marketplace interactions!&lt;/p&gt;\n&lt;p&gt;To learn more about Discord Engineering, take a look at our&amp;nbsp;&lt;a href=&quot;https://blog.discord.com/tagged/engineering&quot;&gt;engineering blog!&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design, build and maintain new Ads products and infrastructure from the backend to frontend. Collaborate with both engineers on and off the team - from Revenue Infrastructure, to Core Tech, to Machine Learning, to Data Science.&lt;/li&gt;\n&lt;li&gt;Be a strategic partner with engineering, product, and cross functional leadership in designing, developing and scaling digital advertising features that drive revenue growth and enhance user engagement.&lt;/li&gt;\n&lt;li&gt;Architect simple and maintainable systems to enable us to launch quickly and iterate while sustaining a high product and technical quality bar.&lt;/li&gt;\n&lt;li&gt;Model strong ownership by acting autonomously when possible and looping in others to build confidence on critical questions. Introduce coding and operational best practices to the team; always be learning &amp;amp; teaching.&lt;/li&gt;\n&lt;li&gt;Own projects end to end — you’ll be responsible for working with Product and other stakeholders to refine requirements, creating technical designs and specs, implementing changes, and seeing projects through to launch and maintenance.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;A focus on impact.&lt;/strong&gt; You have a sharp eye for what changes can bring a product from good to great. You collaborate closely with product managers, designers, analysts, and other engineers to define great solutions to business problems.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A sense of ownership.&lt;/strong&gt; You believe in solving a problem completely rather than simply shipping a solution. You operate autonomously and follow through on your commitments.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A growth mindset.&lt;/strong&gt; You view mistakes as learning opportunities and build upon your successes. You challenge yourself and those around you to continuously improve.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A love of mentorship.&lt;/strong&gt; Helping fellow engineers, providing feedback and guidance on system architecture, API design, data modeling, and tradeoffs.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Domain knowledge.&lt;/strong&gt; We’re looking for engineers with experience in the ad delivery space.&lt;/li&gt;\n&lt;li&gt;4+ years of experience, with 2 years in relevant roles.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Expertise with Typescript, React, React Native, Python and/or Rust&lt;/li&gt;\n&lt;li&gt;Familiarity with experimentation and analysis&lt;/li&gt;\n&lt;li&gt;Contributions to open-source projects&lt;/li&gt;\n&lt;li&gt;Interest or passion for the Discord platform&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&lt;br&gt;&lt;/em&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4074054002,
+          "name": "Product Engineering",
+          "child_ids": [],
+          "parent_id": 4094266002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8101842002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "education": "education_optional",
+      "internal_job_id": 6209115002,
+      "location": {
+        "name": "San Francisco Bay Area"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 8101842002,
+      "updated_at": "2025-11-03T19:18:20-05:00",
+      "requisition_id": "R-101010",
+      "title": "Senior Software Engineer, Ads",
+      "company_name": "Discord",
+      "first_published": "2025-08-08T11:05:31-04:00",
+      "language": "en",
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We are looking for a highly technical, creative, hands-on, and impact-focused Senior Software Engineer to join our growing Ads team.&lt;/p&gt;\n&lt;p&gt;Our team is revolutionizing the way users interact with our platform through innovative ad formats (including &lt;a href=&quot;https://discord.com/quests&quot;&gt;Quests&lt;/a&gt;). We are driven by a passion for delivering exceptional user experiences while scaling our platform to new heights. These products enable us to generate revenue by building a win-win-win suite of distribution tools for game developers, players, and Discord. Join us in shaping the future of digital advertising and marketplace interactions!&lt;/p&gt;\n&lt;p&gt;To learn more about Discord Engineering, take a look at our&amp;nbsp;&lt;a href=&quot;https://blog.discord.com/tagged/engineering&quot;&gt;engineering blog!&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design, build and maintain new Ads products and infrastructure from the backend to frontend. Collaborate with both engineers on and off the team - from Revenue Infrastructure, to Core Tech, to Machine Learning, to Data Science.&lt;/li&gt;\n&lt;li&gt;Be a strategic partner with engineering, product, and cross functional leadership in designing, developing and scaling digital advertising features that drive revenue growth and enhance user engagement.&lt;/li&gt;\n&lt;li&gt;Architect simple and maintainable systems to enable us to launch quickly and iterate while sustaining a high product and technical quality bar.&lt;/li&gt;\n&lt;li&gt;Model strong ownership by acting autonomously when possible and looping in others to build confidence on critical questions. Introduce coding and operational best practices to the team; always be learning &amp;amp; teaching.&lt;/li&gt;\n&lt;li&gt;Own projects end to end — you’ll be responsible for working with Product and other stakeholders to refine requirements, creating technical designs and specs, implementing changes, and seeing projects through to launch and maintenance.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;A focus on impact.&lt;/strong&gt; You have a sharp eye for what changes can bring a product from good to great. You collaborate closely with product managers, designers, analysts, and other engineers to define great solutions to business problems.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A sense of ownership.&lt;/strong&gt; You believe in solving a problem completely rather than simply shipping a solution. You operate autonomously and follow through on your commitments.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A growth mindset.&lt;/strong&gt; You view mistakes as learning opportunities and build upon your successes. You challenge yourself and those around you to continuously improve.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A love of mentorship.&lt;/strong&gt; Helping fellow engineers, providing feedback and guidance on system architecture, API design, data modeling, and tradeoffs.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Domain knowledge.&lt;/strong&gt; We’re looking for engineers with experience in the ad delivery space.&lt;/li&gt;\n&lt;li&gt;4+ years of experience, with 2 years in relevant roles.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Expertise with Python and/or Rust, Typescript, React, React Native&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Familiarity with experimentation and analysis&lt;/li&gt;\n&lt;li&gt;Contributions to open-source projects&lt;/li&gt;\n&lt;li&gt;Interest or passion for the Discord platform&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&lt;br&gt;&lt;/em&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
       "departments": [
         {
           "id": 4074054002,
@@ -2419,13 +2419,70 @@
         }
       ],
       "id": 8245138002,
-      "updated_at": "2025-11-21T14:50:42-05:00",
+      "updated_at": "2025-12-18T16:57:13-05:00",
       "requisition_id": "R-107059",
       "title": "Senior Software Engineer, Mobile Architecture",
       "company_name": "Discord",
       "first_published": "2025-11-06T19:29:37-05:00",
       "language": "en",
       "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We&#39;re looking for a Senior Software Engineer to join our Mobile Architecture team to help build the technical foundation that powers Discord&#39;s mobile experience for millions of users worldwide.&lt;/p&gt;\n&lt;p&gt;You&#39;ll work on performance-critical systems using React Native, focusing on delivering an exceptional mobile experience that feels instantaneous. Our goal is to build products that our customers absolutely love, products that are functional, reliable, usable, and delightful, with performance as a core feature.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Build and optimize foundational mobile libraries and infrastructure that power Discord&#39;s mobile apps on iOS and Android&lt;/li&gt;\n&lt;li&gt;Work on challenging performance problems including Time-to-Interactive (TTI), memory optimization, crash reduction, and jank elimination&lt;/li&gt;\n&lt;li&gt;Contribute to React Native infrastructure and upgrades, helping maintain Discord&#39;s position at the forefront of RN adoption&lt;/li&gt;\n&lt;li&gt;Design and implement mobile features using React Native, TypeScript/JavaScript, with occasional native development in Swift/Kotlin when needed&lt;/li&gt;\n&lt;li&gt;Collaborate with cross-functional teams to deliver high-quality mobile experiences&lt;/li&gt;\n&lt;li&gt;Participate in code reviews, technical design discussions, and help establish best practices for the team&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;3+ years experience as a software engineer working on large, cross-platform software projects.&lt;/li&gt;\n&lt;li&gt;1+ years experience as a software engineer working on a production React Native application at scale, and/or React Native foundational libraries.&lt;/li&gt;\n&lt;li&gt;Experience writing clean, maintainable code and collaborating effectively in a team environment&lt;/li&gt;\n&lt;li&gt;Problem-solving mindset with ability to debug complex issues across the stack&lt;/li&gt;\n&lt;li&gt;Passion for creating excellent user experiences and attention to performance details&lt;/li&gt;\n&lt;li&gt;Strong communication skills and ability to work collaboratively&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Native mobile development experience (iOS with Swift/Objective-C or Android with Kotlin/Java)&lt;/li&gt;\n&lt;li&gt;Experience with mobile performance optimization and profiling tools&lt;/li&gt;\n&lt;li&gt;Background in build and release processes for mobile apps&lt;/li&gt;\n&lt;li&gt;Active participation in the React or React Native communities&lt;/li&gt;\n&lt;li&gt;Experience optimizing applications for varying network conditions or international markets&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4074059002,
+          "name": "Core Tech Engineering",
+          "child_ids": [],
+          "parent_id": 4094266002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8200328002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "education": "education_optional",
+      "internal_job_id": 6250163002,
+      "location": {
+        "name": "San Francisco Bay Area "
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 8200328002,
+      "updated_at": "2025-12-18T16:56:03-05:00",
+      "requisition_id": "R-107038",
+      "title": "Senior Software Engineer- Persistence Infrastructure",
+      "company_name": "Discord",
+      "first_published": "2025-10-07T00:30:00-04:00",
+      "language": "en",
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The Database Infrastructure team develops and operates all of Discord’s databases and data services. Those systems store the data of Discord&#39;s 200M+ monthly active users—including trillions of messages! We work across multiple areas: databases, disk storage and Rust-based data access services. We&#39;re a small team whose work has a huge impact on our company&#39;s success and ability to grow!&lt;/p&gt;\n&lt;p&gt;Some blog posts from the team:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-indexes-trillions-of-messages&quot;&gt;How Discord Indexes Trillions of Messages&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-stores-trillions-of-messages&quot;&gt;How Discord Stores Trillions of Messages&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-supercharges-network-disks-for-extreme-low-latency&quot;&gt;How Discord Supercharges Network Disks for Extreme Low-Latency&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;You will:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Build and operate large-scale, reliable and performant data systems with ScyllaDB, PostgreSQL, ElasticSearch, Linux and Rust.&lt;/li&gt;\n&lt;li&gt;Collaborate with product and infrastructure teams to develop storage primitives enabling all of Discord.&lt;/li&gt;\n&lt;li&gt;Exercise &quot;First Principles Thinking&quot; to always deliver what matters most to our users.&lt;/li&gt;\n&lt;li&gt;Work with a talented team of engineers who have built one of the largest communication platforms in the world.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;You have:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4+ years of experience with building distributed systems and datastore infrastructure&lt;/li&gt;\n&lt;li&gt;Experience with highly-available and distributed databases: e.g. ScyllaDB, Cassandra, BigTable, DynamoDB, CockroachDB, Postgres w/HA, etc.&lt;/li&gt;\n&lt;li&gt;Proficiency with at least one statically-typed programming language: e.g. Rust, Go, Java, C, C++&lt;/li&gt;\n&lt;li&gt;Strong operating systems, distributed systems and concurrency control fundamentals&lt;/li&gt;\n&lt;li&gt;Familiarity with Linux internals&lt;/li&gt;\n&lt;li&gt;Comfortable working in fast paced environments.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience with Cassandra or Scylla&lt;/li&gt;\n&lt;li&gt;Experience with Rust&lt;/li&gt;\n&lt;li&gt;Knowledge of DevOps tools like Salt, Terraform or Kubernetes.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;More things that might interest you:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;We’ve tackled a lot of fascinating technical challenges over the years, and blogged about it regularly:\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-stores-trillions-of-messages&quot;&gt;How Discord Stores Trillions of Messages&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/authentication-outage&quot;&gt;25% or 6 to 4: The 11/6/23 Authentication Outage&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-supercharges-network-disks-for-extreme-low-latency&quot;&gt;How Discord Supercharges Network Disks for Extreme Low Latency&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/why-discord-is-switching-from-go-to-rust&quot;&gt;Why Discord is switching from Go to Rust&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-indexes-billions-of-messages&quot;&gt;How Discord Indexes Billions of Messages&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-stores-billions-of-messages&quot;&gt;How Discord Stores Billions of Messages&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-indexes-trillions-of-messages&quot;&gt;How Discord Indexes Trillions of Messages &lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;One of our team members even wrote a&amp;nbsp;&lt;a href=&quot;https://www.manning.com/books/scylladb-in-action&quot; target=&quot;_blank&quot;&gt;book on ScyllaDB&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;We present at conferences:\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=k8PCBbt9j-o&quot;&gt;How Discord Indexes Trillions of Messages by Vicki Niu&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=mVMudIEEXeQ&quot;&gt;How Discord Performs Database Upgrades at Scale by Ethan Donowitz&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
       "departments": [
         {
           "id": 4074059002,
@@ -2502,7 +2559,7 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8200328002",
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8324819002",
       "data_compliance": [
         {
           "type": "gdpr",
@@ -2514,9 +2571,9 @@
         }
       ],
       "education": "education_optional",
-      "internal_job_id": 6250163002,
+      "internal_job_id": 6323636002,
       "location": {
-        "name": "San Francisco Bay Area "
+        "name": "San Francisco Bay Area"
       },
       "metadata": [
         {
@@ -2532,18 +2589,18 @@
           "value_type": "single_select"
         }
       ],
-      "id": 8200328002,
-      "updated_at": "2025-11-26T16:01:16-05:00",
-      "requisition_id": "R-107038",
-      "title": "Senior Software Engineer- Storage Platform",
+      "id": 8324819002,
+      "updated_at": "2025-12-18T17:23:42-05:00",
+      "requisition_id": "R-107090",
+      "title": "Senior Technical Program Manager, Safety Compliance",
       "company_name": "Discord",
-      "first_published": "2025-10-07T00:30:00-04:00",
+      "first_published": "2025-12-18T17:20:25-05:00",
       "language": "en",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The Database Infrastructure team develops and operates all of Discord’s databases and data services. Those systems store the data of Discord&#39;s 200M+ monthly active users—including trillions of messages! We work across multiple areas: databases, disk storage and Rust-based data access services. We&#39;re a small team whose work has a huge impact on our company&#39;s success and ability to grow!&lt;/p&gt;\n&lt;p&gt;Some blog posts from the team:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-indexes-trillions-of-messages&quot;&gt;How Discord Indexes Trillions of Messages&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-stores-trillions-of-messages&quot;&gt;How Discord Stores Trillions of Messages&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-supercharges-network-disks-for-extreme-low-latency&quot;&gt;How Discord Supercharges Network Disks for Extreme Low-Latency&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;You will:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Build and operate large-scale, reliable and performant data systems with ScyllaDB, PostgreSQL, ElasticSearch, Linux and Rust.&lt;/li&gt;\n&lt;li&gt;Collaborate with product and infrastructure teams to develop storage primitives enabling all of Discord.&lt;/li&gt;\n&lt;li&gt;Exercise &quot;First Principles Thinking&quot; to always deliver what matters most to our users.&lt;/li&gt;\n&lt;li&gt;Work with a talented team of engineers who have built one of the largest communication platforms in the world.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;You have:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4+ years of experience with building distributed systems and datastore infrastructure&lt;/li&gt;\n&lt;li&gt;Experience with highly-available and distributed databases: e.g. ScyllaDB, Cassandra, BigTable, DynamoDB, CockroachDB, Postgres w/HA, etc.&lt;/li&gt;\n&lt;li&gt;Proficiency with at least one statically-typed programming language: e.g. Rust, Go, Java, C, C++&lt;/li&gt;\n&lt;li&gt;Strong operating systems, distributed systems and concurrency control fundamentals&lt;/li&gt;\n&lt;li&gt;Familiarity with Linux internals&lt;/li&gt;\n&lt;li&gt;Comfortable working in fast paced environments.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience with Cassandra or Scylla&lt;/li&gt;\n&lt;li&gt;Experience with Rust&lt;/li&gt;\n&lt;li&gt;Knowledge of DevOps tools like Salt, Terraform or Kubernetes.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;More things that might interest you:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;We’ve tackled a lot of fascinating technical challenges over the years, and blogged about it regularly:\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-stores-trillions-of-messages&quot;&gt;How Discord Stores Trillions of Messages&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/authentication-outage&quot;&gt;25% or 6 to 4: The 11/6/23 Authentication Outage&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-supercharges-network-disks-for-extreme-low-latency&quot;&gt;How Discord Supercharges Network Disks for Extreme Low Latency&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/why-discord-is-switching-from-go-to-rust&quot;&gt;Why Discord is switching from Go to Rust&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-indexes-billions-of-messages&quot;&gt;How Discord Indexes Billions of Messages&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-stores-billions-of-messages&quot;&gt;How Discord Stores Billions of Messages&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://discord.com/blog/how-discord-indexes-trillions-of-messages&quot;&gt;How Discord Indexes Trillions of Messages &lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;One of our team members even wrote a&amp;nbsp;&lt;a href=&quot;https://www.manning.com/books/scylladb-in-action&quot; target=&quot;_blank&quot;&gt;book on ScyllaDB&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;We present at conferences:\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=k8PCBbt9j-o&quot;&gt;How Discord Indexes Trillions of Messages by Vicki Niu&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=mVMudIEEXeQ&quot;&gt;How Discord Performs Database Upgrades at Scale by Ethan Donowitz&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Technical Program Managers operate within the Engineering organization and have technical knowledge that enables them to manage company-wide programs, guide cross-team projects, and accelerate the execution of a team&#39;s roadmap. This is a Senior TPM role, reporting to the Senior Manager of TPM, responsible for developing and driving Safety programs, especially focused on compliance. If you are a productive, first-principles thinker, who develops strong relationships between partners we&#39;d encourage you to apply!&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Please note - this position is based in the San Francisco Bay Area.&lt;/em&gt;&lt;/p&gt;\n&lt;h5&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/h5&gt;\n&lt;ul&gt;\n&lt;li&gt;Leverage your strong customer-centric mindset to help build and run our Safety compliance program&lt;/li&gt;\n&lt;li&gt;Develop a holistic and enduring ownership model for our code, products, and programs that allows us to quickly meet compliance needs&lt;/li&gt;\n&lt;li&gt;Work closely Product and Platform Compliance, Safety Engineering, and other cross-functional engineering teams to implement solutions for compliance requirements&lt;/li&gt;\n&lt;li&gt;Partner with Safety leadership to identify, develop, and run programs that improve the safety and experience of our users&lt;/li&gt;\n&lt;li&gt;Manage multiple complex projects, often with competing timelines and resource needs&lt;/li&gt;\n&lt;li&gt;Partner with our Trust Operations teams to leverage existing processes and enact compliance changes&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experienced with Safety programs (e.g. Moderation, Detection, Age Verification, etc.) at a similarly-sized company&lt;/li&gt;\n&lt;li&gt;Worked with Engineering, Product, and Trust &amp;amp; Safety leadership to align on and implement Safety or Compliance related programs&lt;/li&gt;\n&lt;li&gt;5+ years of Technical Product/Program Management experience, Safety Engineering, or Safety TPM work&lt;/li&gt;\n&lt;li&gt;Knowledge and deep experience in technical program management methodologies&lt;/li&gt;\n&lt;li&gt;Experience moving technical or engineering programs from concept to completion and promoting the impact using metrics, growth examples, value etc&lt;/li&gt;\n&lt;li&gt;Can break down complex challenges into workable components and make continuous progress towards solving a problem vs. trying to boil the ocean&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;A love for helping &amp;amp; empowering others&lt;/li&gt;\n&lt;li&gt;BA/BS in Computer Science, Engineering, or relevant technical experience&lt;/li&gt;\n&lt;li&gt;Strong customer-empathy that ensures your preferred solutions take into account both Safety and company needs&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
       "departments": [
         {
-          "id": 4074059002,
-          "name": "Core Tech Engineering",
+          "id": 4105245002,
+          "name": "Office of the CTO",
           "child_ids": [],
           "parent_id": 4094266002
         }
@@ -2646,7 +2703,7 @@
         }
       ],
       "id": 8177727002,
-      "updated_at": "2025-11-21T14:50:10-05:00",
+      "updated_at": "2025-12-18T16:56:28-05:00",
       "requisition_id": "R-100885",
       "title": "Software Engineer, Mobile",
       "company_name": "Discord",
@@ -2928,7 +2985,7 @@
         }
       ],
       "id": 8245153002,
-      "updated_at": "2025-11-21T14:51:33-05:00",
+      "updated_at": "2025-12-18T16:57:35-05:00",
       "requisition_id": "R-107060",
       "title": "Staff Software Engineer, Mobile Architecture",
       "company_name": "Discord",
@@ -3041,7 +3098,7 @@
         }
       ],
       "id": 8177912002,
-      "updated_at": "2025-12-01T15:20:18-05:00",
+      "updated_at": "2025-12-18T16:55:36-05:00",
       "requisition_id": "R-101058",
       "title": "Staff Software Engineer, Platform Security",
       "company_name": "Discord",
@@ -3461,6 +3518,6 @@
     }
   ],
   "meta": {
-    "total": 61
+    "total": 62
   }
 }

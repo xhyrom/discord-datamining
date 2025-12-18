@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8245153002](https://discord.com/jobs/8245153002)
 
-**Updated At:** Fri, 21 Nov 2025 19:51:33 GMT
+**Updated At:** Thu, 18 Dec 2025 21:57:35 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a Staff Software Engineer to join our Mobile Architecture team to help lead the technical vision for Discord's mobile experience across iOS and Android.
