@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6248638002,
   "location": {
-    "name": "San Francisco Bay Area"
+    "name": "San Francisco Bay Area or Remote (U.S.)"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 8196805002,
-  "updated_at": "2025-11-03T19:18:20-05:00",
+  "updated_at": "2025-12-19T16:13:13-05:00",
   "requisition_id": "R-107034",
   "title": "Senior Product Design Manager, Growth & Safety",
   "company_name": "Discord",
@@ -46,6 +46,13 @@
     }
   ],
   "offices": [
+    {
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
+      "child_ids": [],
+      "parent_id": null
+    },
     {
       "id": 4000383002,
       "name": "San Francisco, CA",
