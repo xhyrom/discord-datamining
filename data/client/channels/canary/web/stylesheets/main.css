@@ -61476,7 +61476,7 @@ html ._614623a0ca8129b8-progress {
 }
 .abfd909f61de9fdf-cardButtonContainer {
   align-items: center;
-  background-color: color-mix(in srgb, var(--black-500) 20%, transparent);
+  background-color: color-mix(in srgb, var(--black-500) 40%, transparent);
   border-radius: var(--radius-sm);
   cursor: pointer;
   display: flex;
@@ -72638,9 +72638,6 @@ div.d74ef86df6475678-nagbar {
 }
 ._0d7935199308d4a9-textContainer {
   margin: 0 12px;
-}
-._0d7935199308d4a9-reconnectButton {
-  flex-shrink: 0;
 }
 ._0d7935199308d4a9-headerText {
   align-items: center;
@@ -100312,4 +100309,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.6e28069d9136580f.css.map*/
+/*# sourceMappingURL=web.9659e9b84c1f1760.css.map*/
