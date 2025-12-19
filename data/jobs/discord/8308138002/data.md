@@ -2,18 +2,19 @@
 
 ## Senior Data Scientist, Analytics
 
-**Location:** San Francisco Bay Area
+**Location:** San Francisco Bay Area 
 
-**Id:** 8089351002 <br/>
-**Internal Job Id:** 6203944002 <br/>
-**Requisition Id:** R-100989 <br/>
+**Id:** 8308138002 <br/>
+**Internal Job Id:** 6317360002 <br/>
+**Requisition Id:** R-107077 <br/>
 
-**Discord Jobs:** [https://discord.com/jobs/8089351002](https://discord.com/jobs/8089351002)
+**Discord Jobs:** [https://discord.com/jobs/8308138002](https://discord.com/jobs/8308138002)
 
-**Updated At:** Tue, 04 Nov 2025 00:18:20 GMT
+**Updated At:** Fri, 19 Dec 2025 17:00:50 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As a member of the Data Science &amp;amp; Analytics team, you will help Discord achieve its mission of making it easier and more fun for people to talk and hang out before, during, and after playing games. Analytics Data Scientists leverage their deep analytical skills and product intuition to solve a wide array of complex problems — from strategic analysis to dashboard creation and experimentation design and analysis. We are currently hiring across a number of different data science teams. If you’re passionate about data, impact, and working on an amazing team, read on!
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.
+As a member of the Data Science &amp;amp; Analytics team, you will help Discord achieve its mission of making it easier and more fun for people to talk and hang out before, during, and after playing games. Analytics Data Scientists leverage their deep analytical skills and product intuition to solve a wide array of complex problems - from strategic analysis to dashboard creation and experimentation design and analysis. We are currently hiring across a variety of data science verticals and teams. If you’re passionate about data, impact, and working on an amazing team, read on!
 What you'll be doing
 
 Partner with teams throughout Discord through the full lifecycle of data science analytics from ideation and exploratory analysis, to building dashboards and reports, and A/B testing
