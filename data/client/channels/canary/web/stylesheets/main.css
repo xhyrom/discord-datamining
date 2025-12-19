@@ -44468,13 +44468,15 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
   position: relative;
 }
 ._6d1908c48c1f2850-contextContainer {
-  background-color: var(--background-surface-high);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   color: var(--interactive-text-active);
-  inset-inline-end: -4px;
+  height: 14px;
+  inset-inline-end: -2px;
   padding: 2px;
   position: absolute;
-  top: -6px;
+  top: -4px;
+  width: 14px;
   z-index: 2;
 }
 ._6d1908c48c1f2850-contextContainer,
@@ -44484,14 +44486,15 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
   justify-content: center;
 }
 ._6d1908c48c1f2850-contextIcon {
+  color: var(--white);
+}
+._6d1908c48c1f2850-fireIcon {
   height: 12px;
   width: 12px;
 }
-._6d1908c48c1f2850-fireIcon {
-  color: var(--icon-strong);
-}
 ._6d1908c48c1f2850-heartIcon {
-  color: var(--control-critical-primary-background-default);
+  height: 10px;
+  width: 10px;
 }
 ._46c9ea21482a065d-card {
   border-radius: none;
@@ -100306,4 +100309,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.7c1f85523af13ed1.css.map*/
+/*# sourceMappingURL=web.b67947f10aecd40c.css.map*/
