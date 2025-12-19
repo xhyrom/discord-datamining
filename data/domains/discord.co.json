@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 42,
+  "subdomain_count": 41,
   "subdomains": [
     "o12.ptr5556",
     "staging-invite",
@@ -7,7 +7,6 @@
     "rtc-sfu-finder",
     "staging-images-2",
     "grafana-data-prd",
-    "us-east10004",
     "staging-gateway",
     "staging-media-2",
     "staging-media-1",
