@@ -46767,7 +46767,7 @@ h2.feb59c8c6ec00ad9-title {
   color: var(--text-code-deletion);
 }
 .d285a61ed580c689-markdown {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -100318,4 +100318,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.54b5279e377877dc.css.map*/
+/*# sourceMappingURL=web.6a369f3bf02d4270.css.map*/
