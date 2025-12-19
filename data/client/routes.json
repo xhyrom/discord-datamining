@@ -4746,8 +4746,7 @@
     "url": "/users/@me/avatars/discordify",
     "allowed_methods": [
       "DELETE",
-      "OPTIONS",
-      "POST"
+      "OPTIONS"
     ]
   },
   "BADGE_ICON": {
