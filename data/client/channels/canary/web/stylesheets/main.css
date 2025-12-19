@@ -75333,9 +75333,6 @@ div.d74ef86df6475678-nagbar {
   background-color: var(--interactive-background-hover);
   cursor: pointer;
 }
-.dbfbe01105eb2897-baseControlItemDescription {
-  max-width: 456px;
-}
 .dbfbe01105eb2897-baseControlItemLeadingElement,
 .dbfbe01105eb2897-baseControlItemTrailingElements {
   align-items: center;
@@ -100309,4 +100306,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.9659e9b84c1f1760.css.map*/
+/*# sourceMappingURL=web.7c1f85523af13ed1.css.map*/
