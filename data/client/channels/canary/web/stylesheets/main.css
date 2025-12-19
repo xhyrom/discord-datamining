@@ -66819,7 +66819,7 @@ html ._614623a0ca8129b8-progress {
 }
 @container premium-marketing-page-container (max-width: 960px) {
   ._62eb1df151d8bf49-bannerHeader {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
   }
   ._62eb1df151d8bf49-bannerHeader,
@@ -66828,19 +66828,19 @@ html ._614623a0ca8129b8-progress {
     line-height: 1.25;
   }
   ._62eb1df151d8bf49-bannerText {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
   }
 }
 @container premium-marketing-page-container (max-width: 960px) and (min-width: 720px) {
   ._62eb1df151d8bf49-bannerHeader {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 24px;
+    line-height: 1.5rem;
   }
   ._62eb1df151d8bf49-bannerText {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.2857142857142858;
@@ -66848,13 +66848,13 @@ html ._614623a0ca8129b8-progress {
 }
 @container premium-marketing-page-container (max-width: 720px) {
   ._62eb1df151d8bf49-bannerHeader {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 24px;
+    line-height: 1.5rem;
   }
   ._62eb1df151d8bf49-bannerText {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.2857142857142858;
@@ -72084,10 +72084,6 @@ div.d74ef86df6475678-nagbar {
   display: flex;
   justify-content: space-between;
 }
-._3e443c6b2569044a-title {
-  color: var(--text-strong);
-  flex: 1;
-}
 ._3e443c6b2569044a-formControl {
   position: relative;
 }
@@ -72132,6 +72128,7 @@ div.d74ef86df6475678-nagbar {
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
+  margin-bottom: var(--space-16);
 }
 ._3e443c6b2569044a-timeTitle {
   margin-bottom: var(--space-24);
@@ -76466,7 +76463,7 @@ span._07f9193042954787-clanTag._07f9193042954787-isOverlay {
 .adebbad0504cfbbb-speaking {
   opacity: 0.9;
 }
-.adebbad0504cfbbb-speaking .adebbad0504cfbbb-avatar {
+.adebbad0504cfbbb-speaking .adebbad0504cfbbb-avatarSpeakingOutline {
   outline: 1px solid var(--green-300);
   outline-offset: 2px;
 }
@@ -100321,4 +100318,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.ad1fa12c7f771b0e.css.map*/
+/*# sourceMappingURL=web.f6b76681838d9fc1.css.map*/
