@@ -46770,7 +46770,7 @@ h2.feb59c8c6ec00ad9-title {
   color: var(--text-code-deletion);
 }
 .d285a61ed580c689-markdown {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -53011,9 +53011,9 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 ._9a9f981d3524e20f-message {
   color: var(--text-default);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  line-height: 1.25rem;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -100321,4 +100321,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.7d3c6bc991b00294.css.map*/
+/*# sourceMappingURL=web.ad1fa12c7f771b0e.css.map*/
