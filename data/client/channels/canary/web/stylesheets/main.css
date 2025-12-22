@@ -19664,6 +19664,9 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   width: -moz-fit-content;
   width: fit-content;
 }
+._0c507a672a52b3e0-guildBoostUnavailableNotice._0c507a672a52b3e0-lightTheme {
+  border: 2px solid var(--black-500);
+}
 ._0c507a672a52b3e0-guildBoostUnavailableNoticeText {
   font-size: 16px;
 }
@@ -99638,4 +99641,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.e77638ff64b8ed90.css.map*/
+/*# sourceMappingURL=web.51222ea8c5b13c54.css.map*/
