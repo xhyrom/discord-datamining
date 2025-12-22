@@ -30,7 +30,7 @@
     }
   ],
   "id": 8196805002,
-  "updated_at": "2025-12-19T16:13:13-05:00",
+  "updated_at": "2025-12-22T13:57:44-05:00",
   "requisition_id": "R-107034",
   "title": "Senior Product Design Manager, Growth & Safety",
   "company_name": "Discord",
@@ -50,13 +50,6 @@
       "id": 4082816002,
       "name": "Remote (U.S.)",
       "location": null,
-      "child_ids": [],
-      "parent_id": null
-    },
-    {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
       "child_ids": [],
       "parent_id": null
     }
