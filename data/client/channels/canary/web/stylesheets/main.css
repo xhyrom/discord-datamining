@@ -43970,36 +43970,6 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
   transform: translateX(-50%);
   width: 221px;
 }
-._10737e29b0802a4f-shine {
-  color: var(--opacity-white-24);
-  pointer-events: none;
-}
-.full-motion ._10737e29b0802a4f-shine {
-  animation-delay: 0.3s;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-name: _10737e29b0802a4f-shineOnce;
-  animation-timing-function: ease-in-out;
-}
-.reduce-motion ._10737e29b0802a4f-shine {
-  opacity: 0.5;
-  transform: translate3d(68%, 0, 0);
-}
-.reduce-motion ._10737e29b0802a4f-shine > div {
-  justify-content: flex-start;
-}
-.reduce-motion ._10737e29b0802a4f-shine > div > div {
-  transform: translateX(calc(-100% - 6px));
-}
-@keyframes _10737e29b0802a4f-shineOnce {
-  0% {
-    transform: translate3d(-100%, 0, 0);
-  }
-  to {
-    transform: translate3d(300%, 0, 0);
-  }
-}
 ._10737e29b0802a4f-closeButton {
   inset-inline-end: 6px;
   position: absolute;
@@ -99627,4 +99597,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.3b54a96455aca0b2.css.map*/
+/*# sourceMappingURL=web.fef8d0e402d2d74d.css.map*/
