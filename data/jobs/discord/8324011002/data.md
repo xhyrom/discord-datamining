@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8324011002](https://discord.com/jobs/8324011002)
 
-**Updated At:** Thu, 04 Dec 2025 19:21:54 GMT
+**Updated At:** Tue, 23 Dec 2025 19:32:42 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a talented Software Engineer to join our Consumer Revenue organization. You'll be working on systems that power user expression, digital commerce, and revenue-generating features that serve Discord's community. This includes building platforms for digital goods, user customization features, profile surfaces, and specialty software that allows users to express themselves while generating value for the business.
