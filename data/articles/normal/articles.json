@@ -4322,14 +4322,14 @@
     "locale": "en-us",
     "outdated": false,
     "outdated_locales": [],
-    "edited_at": "2023-12-21T13:15:58Z",
+    "edited_at": "2025-12-23T00:34:23Z",
     "user_segment_id": null,
     "permission_group_id": 6449276657303,
     "content_tag_ids": [],
     "label_names": [
       "ZDpublicalertbanner"
     ],
-    "body": "<section class=\"article-info\">\n<div class=\"article-content\">\n<div class=\"article-body\">\n<p>Unfortunately, you may experience a delayed response from our team due to limited support during the holiday season! Rest assured that we're doing our best to respond to each and every person.</p>\n</div>\n</div>\n</section>",
+    "body": "<section class=\"article-info\"><div class=\"article-content\"><div class=\"article-body\"><p>Unfortunately, you may experience a delayed response from our team due to limited support during the holiday season! Rest assured that we're doing our best to respond to each and every person.</p></div></div></section>",
     "user_segment_ids": []
   },
   {
