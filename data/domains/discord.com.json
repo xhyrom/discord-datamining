@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 71,
+  "subdomain_count": 72,
   "subdomains": [
     "support",
     "blog",
@@ -14,6 +14,7 @@
     "events",
     "snowsgiving-tale-2022",
     "merch",
+    "adm-static",
     "zendesk1",
     "click",
     "newsletter",
@@ -60,8 +61,8 @@
     "snowsgiving-tale-2022-sv-se",
     "seo",
     "support-apps",
-    "rtc-sfu-finder",
     "prod-wf3",
+    "rtc-sfu-finder",
     "o24.ptr4166",
     "crawl-35-196-132-85.ptr",
     "updates",
