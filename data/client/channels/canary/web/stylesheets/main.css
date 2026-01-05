@@ -60677,18 +60677,6 @@ html ._614623a0ca8129b8-progress {
 .fbc6f7283f697ba7-questEnrollmentBlockedButton {
   flex: 1 0 auto;
 }
-.fbc6f7283f697ba7-fullWidthShinyCtaButtonWrapper {
-  flex: 1;
-  width: 100%;
-}
-.fbc6f7283f697ba7-ctaButtonWrapper {
-  flex: 1 0 auto;
-}
-.fbc6f7283f697ba7-outerContainerSm .fbc6f7283f697ba7-ctaButtonWrapper,
-.fbc6f7283f697ba7-outerContainerXs .fbc6f7283f697ba7-ctaButtonWrapper {
-  flex-grow: 1;
-}
-.fbc6f7283f697ba7-outerContainerXs .fbc6f7283f697ba7-ctaButtonWrapper,
 .fbc6f7283f697ba7-outerContainerXs
   .fbc6f7283f697ba7-questEnrollmentBlockedButton {
   width: 100%;
@@ -62162,8 +62150,6 @@ html ._614623a0ca8129b8-progress {
 ._373b58a5c752510b-root {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
-  padding: 0 16px;
 }
 ._373b58a5c752510b-rolesHeading {
   margin-bottom: 4px;
@@ -62252,6 +62238,10 @@ html ._614623a0ca8129b8-progress {
   overflow: hidden;
   padding: 8px 12px;
   text-overflow: ellipsis;
+}
+._083ae98ea5145b08-rolesList {
+  margin-bottom: 16px;
+  padding: 0 16px;
 }
 .d762d7a26da7a532-clipPill {
   align-items: center;
@@ -99608,4 +99598,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f4609b88ed6a5023.css.map*/
+/*# sourceMappingURL=web.174a14206f63ae5e.css.map*/
