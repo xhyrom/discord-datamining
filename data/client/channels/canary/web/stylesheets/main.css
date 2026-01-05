@@ -20609,6 +20609,165 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
 ._6fd0e42f91edfda6-tierComparisonTable {
   margin-bottom: 64px;
 }
+.bb27fe8315379bbd-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bb27fe8315379bbd-heading {
+  text-align: center;
+  width: 100%;
+}
+.bb27fe8315379bbd-list {
+  width: 100%;
+}
+.bb27fe8315379bbd-list,
+.bb27fe8315379bbd-listItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.bb27fe8315379bbd-listItem {
+  align-items: flex-start;
+  align-self: stretch;
+  background: var(--background-base-low);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  box-shadow: var(--shadow-low);
+  padding: var(--space-12);
+}
+.bb27fe8315379bbd-listItemExpanded {
+  background: var(--background-surface-highest);
+  border: 1px solid var(--border-strong);
+}
+.bb27fe8315379bbd-questionWrapper {
+  align-items: center;
+  align-self: stretch;
+  cursor: pointer;
+  display: flex;
+  gap: var(--space-12);
+}
+.bb27fe8315379bbd-question {
+  flex: 1 1 auto;
+}
+.bb27fe8315379bbd-questionIcon {
+  flex: 0 0 auto;
+}
+.full-motion .bb27fe8315379bbd-questionIcon {
+  transition: transform 0.2s ease-in-out;
+}
+.bb27fe8315379bbd-answer {
+  align-self: stretch;
+  padding-top: var(--space-8);
+}
+._008433eb23445478-closeIconWrapper {
+  margin: 0 auto;
+  max-width: 1060px;
+  mix-blend-mode: screen;
+  position: relative;
+  z-index: 2;
+}
+.theme-light ._008433eb23445478-closeIconWrapper {
+  mix-blend-mode: multiply;
+}
+._008433eb23445478-closeIcon {
+  inset-inline-end: 24px;
+  position: absolute;
+  top: 48px;
+  z-index: 2;
+}
+._008433eb23445478-scroller {
+  background: var(--background-base-low);
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+._008433eb23445478-content {
+  margin: 0 auto;
+  max-width: 1060px;
+}
+._008433eb23445478-headerContentWrapper {
+  padding: 100px 32px 32px;
+  position: relative;
+  z-index: 2;
+}
+._008433eb23445478-header {
+  background:
+    center 15%/90% auto url(/assets/ea2ad3ad1bfd2975.svg) no-repeat,
+    linear-gradient(
+      359.37deg,
+      rgba(0, 0, 0, 0.5) 12.68%,
+      hsla(0, 0%, 100%, 0) 50.4%
+    ),
+    linear-gradient(
+      159.15deg,
+      var(--premium-tier-0-header-gradient-1) 8.49%,
+      var(--premium-tier-0-header-gradient-2) 32.21%,
+      var(--premium-tier-0-header-gradient-3) 42.9%,
+      var(--premium-tier-0-header-gradient-4) 66.06%,
+      var(--premium-tier-0-header-gradient-5) 71.4%
+    );
+  position: relative;
+}
+.theme-light ._008433eb23445478-header {
+  background:
+    center 15%/90% auto url(/assets/ea2ad3ad1bfd2975.svg) no-repeat,
+    linear-gradient(
+      359.37deg,
+      hsla(0, 0%, 100%, 0.5) 12.68%,
+      hsla(0, 0%, 100%, 0) 50.4%
+    ),
+    linear-gradient(
+      159.15deg,
+      var(--premium-tier-0-header-gradient-1) 8.49%,
+      var(--premium-tier-0-header-gradient-2) 32.21%,
+      var(--premium-tier-0-header-gradient-3) 42.9%,
+      var(--premium-tier-0-header-gradient-4) 66.06%,
+      var(--premium-tier-0-header-gradient-5) 71.4%
+    );
+}
+._008433eb23445478-heading {
+  margin: 0 auto 48px;
+  max-width: 960px;
+  text-align: center;
+}
+._008433eb23445478-middleBodyContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-64);
+  padding: 32px;
+}
+._008433eb23445478-lowerBody {
+  position: relative;
+}
+._008433eb23445478-lowerBodyBackgroundImage {
+  background: right 285px no-repeat url(/assets/32b48278e7e6c908.svg);
+  filter: saturate(var(--saturation-factor, 1));
+  height: 100%;
+  inset-inline-start: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+@media (max-width: 1430px) {
+  ._008433eb23445478-lowerBodyBackgroundImage {
+    display: none;
+  }
+}
+._008433eb23445478-lowerBodyContentWrapper {
+  padding: 32px;
+  position: relative;
+  z-index: 2;
+}
+._008433eb23445478-persistentCtaSpacer {
+  height: 120px;
+}
+._008433eb23445478-tierComparisonTable {
+  margin-bottom: 64px;
+}
 ._7d7feb6bbfde0545-premiumTooltipFooterBackground {
   background: linear-gradient(90deg, #b473f5, #e292aa);
   width: "100%";
@@ -99888,4 +100047,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.93e7a13c25278d7e.css.map*/
+/*# sourceMappingURL=web.19924e7e3f2f0278.css.map*/
