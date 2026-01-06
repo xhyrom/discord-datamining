@@ -55626,13 +55626,14 @@ svg.c1e9c47c23f12ca3-radioIcon {
 ._0cb5674cd6f6750c-dropdownArrowHitbox:hover ._0cb5674cd6f6750c-dropdownArrow {
   opacity: 1;
 }
-._614623a0ca8129b8-button {
-  padding: 0;
+._614623a0ca8129b8-buttonWithProgress {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
-html ._614623a0ca8129b8-progress {
-  bottom: 0;
-  inset-inline-start: 0;
-  position: absolute;
+._614623a0ca8129b8-progress {
+  width: 100%;
 }
 ._614623a0ca8129b8-disabledButtonWrapper {
   position: relative;
@@ -100105,4 +100106,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.87d8042216e53222.css.map*/
+/*# sourceMappingURL=web.1715d69b687fb12b.css.map*/
