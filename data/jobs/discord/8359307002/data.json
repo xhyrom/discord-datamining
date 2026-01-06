@@ -1,0 +1,56 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8359307002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": true
+    }
+  ],
+  "internal_job_id": 6337921002,
+  "location": {
+    "name": "San Francisco Bay Area"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": "Data Science & Data Engineering",
+      "value_type": "single_select"
+    }
+  ],
+  "id": 8359307002,
+  "updated_at": "2026-01-06T17:49:09-05:00",
+  "requisition_id": "R-107117",
+  "title": "Senior Data Scientist, Analytics - Growth/SEO",
+  "company_name": "Discord",
+  "first_published": "2026-01-06T17:49:09-05:00",
+  "language": "en",
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;As a member of the Data Science &amp;amp; Analytics team, you will help Discord achieve its mission of making it easier and more fun for people to talk and hang out before, during, and after playing games. Data Scientists leverage their deep analytical skills and product intuition to solve a wide array of complex problems - from strategic analysis to dashboard creation and experimentation design and analysis.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Our Growth team is focused on helping more people discover Discord through organic channels, and we need a Senior Data Scientist who&#39;s passionate about turning data into strategies that drive sustainable user acquisition. You&#39;ll be the analytics partner shaping our SEO roadmap, using data to unlock growth opportunities that bring new communities to Discord. This role reports to the Senior Manager of Data Science, Analytics for Growth. If using data to optimize how millions discover and fall in love with Discord sounds exciting, we&#39;d love to hear from you!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead data science strategy for Discord&#39;s SEO and GEO initiatives, partnering with Product and Engineering to design experiments that optimize search visibility, landing page experiences, and organic conversion rates&lt;/li&gt;\n&lt;li&gt;Define the KPIs and metrics that drive growth strategy, building executive-level dashboards that provide clear, actionable insights into acquisition performance and funnel health&lt;/li&gt;\n&lt;li&gt;Design and analyze A/B tests that improve organic user acquisition, from search ranking experiments to landing page optimization and conversion rate improvements&lt;/li&gt;\n&lt;li&gt;Build comprehensive analyses of web traffic patterns, search-driven behavior, and organic acquisition funnels that directly inform product development and growth strategy&lt;/li&gt;\n&lt;li&gt;Champion experimentation best practices across Growth teams, ensuring rigorous test design, analysis, and interpretation for high-impact decision-making&lt;/li&gt;\n&lt;li&gt;Collaborate with Data Engineering to design scalable instrumentation that captures the right signals for measuring SEO/GEO performance and user journey quality&lt;/li&gt;\n&lt;li&gt;Proactively surface insights and recommendations to technical and non-technical stakeholders, translating complex findings into clear narratives that drive action&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4+ years of experience autonomously translating ambiguous business problems into deep informative insights through hands-on analytics&lt;/li&gt;\n&lt;li&gt;4+ years of experience building performant dashboards using Tableau, Looker, or similar software - with proficiency in designing clean crisp visualizations&lt;/li&gt;\n&lt;li&gt;4+ years experience writing excellent SQL&lt;/li&gt;\n&lt;li&gt;Excellent communication skills, with the ability to translate complicated findings or technical approaches in easy-to-understand ways&lt;/li&gt;\n&lt;li&gt;4+ years of experience in the design, analysis, and interpretation of A/B tests in a large data environment&lt;/li&gt;\n&lt;li&gt;Experience analyzing web traffic patterns, organic acquisition funnels, and search-driven user behavior&lt;/li&gt;\n&lt;li&gt;Strong communication skills with ability to translate technical approaches and complex findings for diverse audiences&lt;/li&gt;\n&lt;li&gt;Collaborative mindset and natural curiosity with passion for solving challenging problems alongside amazing teammates&lt;/li&gt;\n&lt;li&gt;Track record of working effectively in ambiguous environments and driving clarity through data&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Discord passion: &lt;/strong&gt;You&#39;re an active Discord user or have deep knowledge of gaming and creator communities&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;SEO analytics expertise:&lt;/strong&gt; Deep understanding of search engine behavior, organic traffic attribution, and measuring impact of technical/content SEO initiatives&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Growth experience:&lt;/strong&gt; Background in user acquisition, engagement, or retention analytics with familiarity in LTV analysis, funnel optimization, and cohort analysis&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Technical leadership: &lt;/strong&gt;Experience being the analytics point person for stakeholder groups and mentoring other data scientists&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Web analytics platforms: &lt;/strong&gt;Proficiency with Google Analytics, Search Console, and integrating external tools with internal data systems&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Landing page optimization:&lt;/strong&gt; Experience analyzing and improving conversion rates for organic traffic&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Social/community analytics:&lt;/strong&gt; Understanding of social graphs, viral mechanics, and community-driven growth&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;BigQuery expertise:&lt;/strong&gt; Experience writing performant production SQL and building scalable ETL pipelines&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4022531002,
+      "name": "Data Science & Engineering",
+      "child_ids": [],
+      "parent_id": 4094266002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8359170002](https://discord.com/jobs/8359170002)
 
-**Updated At:** Mon, 05 Jan 2026 17:31:07 GMT
+**Updated At:** Tue, 06 Jan 2026 23:09:37 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a Product Designer to join our Notifications squad and help us build the next generation of our notification experience. This is a high-impact role where your work will directly influence how millions of users stay connected to Discord every single day.
