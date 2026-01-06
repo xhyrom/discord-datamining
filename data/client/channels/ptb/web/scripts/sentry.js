@@ -4198,9 +4198,7 @@
               "/billing/partner-promotions/".concat(e, "/").concat(t),
             NOTIFICATIONS: "/notifications",
             FRIENDS: "/channels/@me",
-            ME_ACTIVITY: "/channels/@me/activity",
             ME: "/channels/@me",
-            ME_DMS: "/channels/@me/dms",
             MESSAGE_REQUESTS: "/message-requests",
             CHANNEL: (e, t, n) => {
               let r =
@@ -4834,6 +4832,7 @@
           (r.START_SPEAKING = "start_speaking"),
           (r.START_LISTENING = "start_listening"),
           (r.VOICE_WATCHDOG_TIMEOUT = "voice_watchdog_timeout"),
+          (r.DEVICE_ENUMERATION_TIMEOUT = "device_enumeration_timeout"),
           (r.VOICE_PROCESSING = "voice_processing"),
           (r.CALL_REPORT_PROBLEM = "call_report_problem"),
           (r.NOISE_CANCELLATION_LINK_CLICKED =
@@ -6900,7 +6899,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-01-05-8a1dbc1e79e3de4e372c7e4f1c7e2446b8f7f3c1-discord_web",
+              "2026-01-06-e74917bcac5da909e10c376a4e77b37bb96141da-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6966,8 +6965,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "482770"),
-            a.YA("builtAt", String("1767601099493"));
+            a.YA("buildNumber", "483115"),
+            a.YA("builtAt", String("1767687490328"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -38257,4 +38256,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.828d4af0e2a34a12.js.map
+//# sourceMappingURL=sentry.8063d4f624ef8d89.js.map
