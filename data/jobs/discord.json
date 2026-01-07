@@ -701,7 +701,7 @@
       "education": "education_optional",
       "internal_job_id": 6329850002,
       "location": {
-        "name": "San Francisco Bay Area"
+        "name": "San Francisco Bay Area or Remote (U.S.)"
       },
       "metadata": [
         {
@@ -718,7 +718,7 @@
         }
       ],
       "id": 8338009002,
-      "updated_at": "2025-12-16T14:19:39-05:00",
+      "updated_at": "2026-01-07T12:08:05-05:00",
       "requisition_id": "R-107102",
       "title": "Group Product Marketing Manager, Developer Commerce Solutions",
       "company_name": "Discord",
@@ -735,9 +735,9 @@
       ],
       "offices": [
         {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
           "child_ids": [],
           "parent_id": null
         }
@@ -2986,9 +2986,9 @@
         }
       ],
       "id": 8348158002,
-      "updated_at": "2025-12-19T18:09:06-05:00",
+      "updated_at": "2026-01-07T12:14:24-05:00",
       "requisition_id": "R-107110",
-      "title": "Staff Product Manager, Growth",
+      "title": "Staff Product Manager, Growth & SEO",
       "company_name": "Discord",
       "first_published": "2025-12-19T18:09:06-05:00",
       "language": "en",
