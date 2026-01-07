@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7966411002](https://discord.com/jobs/7966411002)
 
-**Updated At:** Thu, 18 Dec 2025 21:56:27 GMT
+**Updated At:** Wed, 07 Jan 2026 04:45:49 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for a Senior Software Engineer to build high-performance, cross-platform client software that powers experiences for 200+ million users worldwide. You'll work on core libraries that run across Windows, Mac, Linux, Android, and iOS—writing native code using platform-specific APIs to provide optimal experiences wherever people use Discord.
@@ -28,10 +28,10 @@ What you should have:
 4+ years building large-scale, cross-platform software (Windows, macOS, Android, iOS, or game console development)
 Strong Rust or C++ skills with deep understanding of memory management, multi-threading, and low-level optimization
 Experience building performance-critical applications where milliseconds matter
-Experience designing experiments that prove (not just suggest) improvements
 
 Bonus points:
 
+Experience designing experiments that prove (not just suggest) improvements
 Experience with real-time media applications (audio/video, game streaming, etc.)
 Hands-on experience with WebRTC, SDP, SRTP, or DTLS protocols
 Familiarity with audio/video codecs (Opus, H.264, AV1, etc.) and their corresponding quality measurements (POLQA, PSNR, VMAF, etc.)
