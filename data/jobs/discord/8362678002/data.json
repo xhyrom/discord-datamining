@@ -1,0 +1,57 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8362678002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": true
+    }
+  ],
+  "education": "education_optional",
+  "internal_job_id": 6338953002,
+  "location": {
+    "name": "San Francisco Bay Area"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": null,
+      "value_type": "single_select"
+    }
+  ],
+  "id": 8362678002,
+  "updated_at": "2026-01-06T18:36:47-05:00",
+  "requisition_id": "R-107120",
+  "title": "Staff Product Manager, Payments",
+  "company_name": "Discord",
+  "first_published": "2026-01-06T18:36:47-05:00",
+  "language": "en",
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Our &lt;strong&gt;Revenue Infrastructure&lt;/strong&gt; team is responsible for the systems, tooling, and capabilities that ensure the success of our monetization ecosystem. Establishing this platform is a crucial part of scaling our consumer, commerce, and advertising businesses globally.&lt;/p&gt;\n&lt;p&gt;We’re looking for a Staff Product Manager to lead our &lt;strong&gt;Payments&lt;/strong&gt; efforts. You will define the long-term vision of this space and drive the product &amp;amp; engineering roadmap that brings us there. You will own our company-wide goals around conversion, auth rates, and processing cost. You will partner extensively with our core businesses like Nitro, Boosting, Shop, Ads to build products that benefit everyone. And you will do all this while maintaining the quality and delight bar that our users expect from Discord.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Guide the product philosophy, vision, and roadmap for our payments architecture, integrations, and experiences, with the goal of supporting all our businesses in the most efficient manner.&lt;/li&gt;\n&lt;li&gt;Lead cross-functional execution with engineering, data science, design, marketing, partnerships teams to continually improve our payments platform as our businesses scale.&lt;/li&gt;\n&lt;li&gt;Partner with our risk, legal, policy, safety, accounting teams to ensure our system is secure, compliant, and easily understood. Do this while always prioritizing the protection of our users and partner businesses.&lt;/li&gt;\n&lt;li&gt;Clearly communicate roadmaps, priorities, experiments, and decisions across a wide spectrum of audiences from internal teams to executive levels, both internally and externally with payments partners.&lt;/li&gt;\n&lt;li&gt;Together with other product teams, evolve the in-app ecosystem for all monetizable products to ensure a coherent and delightful experience for anything a user pays for.&lt;/li&gt;\n&lt;li&gt;Empathize and relate to our users, especially those who are the most active on Discord.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;7+ years experience shipping great software, driving prioritization, setting timelines, with a track record of building durable monetization infrastructure.&lt;/li&gt;\n&lt;li&gt;Experience building and maintaining wallets, payment UX flows, payment tokenization, purchasing/billing infrastructure, tax/accounting compliance, PCI compliance, giftcards, payouts, and geo-based payments.&lt;/li&gt;\n&lt;li&gt;Experience partnering with processors/PSPs on consumer subscription businesses, consumer-based ecommerce businesses, integrations for new payment methods, and monetizing payments.&lt;/li&gt;\n&lt;li&gt;Experience with Apple and Google mobile app store integrations, limitations, and creating unified experiences for mobile and desktop users&lt;/li&gt;\n&lt;li&gt;Strong analytical ability to quickly organize and leverage data to make informed product decisions with cross-functional stakeholders. Experience making trade-offs related to achieving metric goals while maintaining stable infrastructure.&lt;/li&gt;\n&lt;li&gt;Demonstrated technical proficiency and effectiveness working closely with engineers. Comfortable discussing APIs, data models, and system behavior with infrastructure engineers.&lt;/li&gt;\n&lt;li&gt;Strong product sense for the consumer tech revenue space with deep understanding of how users go from free to paid.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;BA/BS in Computer Science, Engineering, or relevant technical experience.&lt;/li&gt;\n&lt;li&gt;Domain experience in payments, fintech, commerce, billing, or consumer subscriptions.&lt;/li&gt;\n&lt;li&gt;Experience building and growing consumer social and/or online communication products.&lt;/li&gt;\n&lt;li&gt;Experience working across or in multiple payment processors/PSPs in different regions of the world.&lt;/li&gt;\n&lt;li&gt;Experience with high-fraud payment environments, include risk analysis and interventions&lt;/li&gt;\n&lt;li&gt;Experience working with gift cards, especially for digital goods.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $248,000 to $279,000+ equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4074056002,
+      "name": "Product Management",
+      "child_ids": [],
+      "parent_id": 4094267002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
