@@ -952,15 +952,15 @@
           function G(e, t) {
             return (e = F(e)), (t = F(t)), e.greater(t) ? e : t;
           }
-          function H(e, t) {
+          function B(e, t) {
             return (e = F(e)), (t = F(t)), e.lesser(t) ? e : t;
           }
-          function B(e, t) {
+          function H(e, t) {
             if (((e = F(e).abs()), (t = F(t).abs()), e.equals(t))) return e;
             if (e.isZero()) return t;
             if (t.isZero()) return e;
             for (var n, r, i = o[1]; e.isEven() && t.isEven(); )
-              (n = H(U(e), U(t))),
+              (n = B(U(e), U(t))),
                 (e = e.divide(n)),
                 (t = t.divide(n)),
                 (i = i.multiply(n));
@@ -1201,13 +1201,13 @@
             (o.zero = o[0]),
             (o.minusOne = o[-1]),
             (o.max = G),
-            (o.min = H),
-            (o.gcd = B),
+            (o.min = B),
+            (o.gcd = H),
             (o.lcm = function (e, t) {
               return (
                 (e = F(e).abs()),
                 (t = F(t).abs()),
-                e.divide(B(e, t)).multiply(t)
+                e.divide(H(e, t)).multiply(t)
               );
             }),
             (o.isInstance = function (e) {
@@ -1216,7 +1216,7 @@
             (o.randBetween = function (e, t, n) {
               e = F(e);
               var r = n || Math.random,
-                i = H(e, (t = F(t))),
+                i = B(e, (t = F(t))),
                 a = G(e, t).subtract(i).add(1);
               if (a.isSmall) return i.add(Math.floor(r() * a));
               for (
@@ -4733,6 +4733,12 @@
           (r.MOBILE_OTA_ASSET_DOWNLOAD_ATTEMPT =
             "mobile_ota_asset_download_attempt"),
           (r.APP_DISK_USAGE_UPDATED = "app_disk_usage_updated"),
+          (r.DEVICE_EVENT = "device_event"),
+          (r.REACT_SOFT_EXCEPTION = "react_soft_exception"),
+          (r.NETWORK_CAPABILITIES_CHANGED = "network_capabilities_changed"),
+          (r.APP_LIFECYCLE = "app_lifecycle"),
+          (r.UI_LIFECYCLE = "ui_lifecycle"),
+          (r.FOREGROUND_SERVICE = "foreground_service"),
           (r.IOS_METRIC_KIT_PAYLOAD_RECEIVED =
             "ios_metric_kit_payload_received"),
           (r.ANDROID_JANK_STATS = "android_jank_stats"),
@@ -6223,6 +6229,20 @@
             "premium_group_member_cancellation_step"),
           (r.PREMIUM_GROUP_MEMBER_CANCELLATION_COMPLETED =
             "premium_group_member_cancellation_completed"),
+          (r.PREMIUM_GROUP_REMOVE_MEMBER_MODAL_VIEWED =
+            "premium_group_remove_member_modal_viewed"),
+          (r.PREMIUM_GROUP_REMOVE_MEMBER_CTA_CLICKED =
+            "premium_group_remove_member_cta_clicked"),
+          (r.PREMIUM_GROUP_SUBSCRIPTION_CARD_INVITE_CLICKED =
+            "premium_group_subscription_card_invite_clicked"),
+          (r.PREMIUM_GROUP_SUBSCRIPTION_CARD_REMOVE_MEMBER_CLICKED =
+            "premium_group_subscription_card_remove_member_clicked"),
+          (r.PREMIUM_GROUP_SUBSCRIPTION_CARD_CANCEL_INVITE_CLICKED =
+            "premium_group_subscription_card_cancel_invite_clicked"),
+          (r.PREMIUM_GROUP_CANCEL_INVITE_MODAL_VIEWED =
+            "premium_group_cancel_invite_modal_viewed"),
+          (r.PREMIUM_GROUP_CANCEL_INVITE_CTA_CLICKED =
+            "premium_group_cancel_invite_cta_clicked"),
           (r.FETCH_USER_OFFER_STARTED = "fetch_user_offer_started"),
           (r.SHARE_NITRO_FLOW_STEPS = "share_nitro_flow_steps"),
           (r.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED =
@@ -6920,7 +6940,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-8e7db38486b5ea49e9955469f78558fa9a5570ef",
+            release: "discord_web-7a0378305fd96c8556a6e6f098abb87b5ad3fc59",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6986,8 +7006,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "483479"),
-            a.YA("builtAt", String("1767805120602"));
+            a.YA("buildNumber", "483496"),
+            a.YA("builtAt", String("1767807404780"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -12619,9 +12639,9 @@
               /^rgba\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*,\s*([01]|[01]?\.\d+)\)$/,
             G =
               /^hsl\(\s*(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/,
-            H =
+            B =
               /^hsla\(\s*(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*,\s*([01]|[01]?\.\d+)\)$/,
-            B = Math.round,
+            H = Math.round,
             k = function (e) {
               if (((e = e.toLowerCase().trim()), s.format.named))
                 try {
@@ -12637,12 +12657,12 @@
               }
               if ((t = e.match(w))) {
                 for (var a = t.slice(1, 4), _ = 0; _ < 3; _++)
-                  a[_] = B(2.55 * a[_]);
+                  a[_] = H(2.55 * a[_]);
                 return (a[3] = 1), a;
               }
               if ((t = e.match(U))) {
                 for (var c = t.slice(1, 5), E = 0; E < 3; E++)
-                  c[E] = B(2.55 * c[E]);
+                  c[E] = H(2.55 * c[E]);
                 return (c[3] = +c[3]), c;
               }
               if ((t = e.match(G))) {
@@ -12651,7 +12671,7 @@
                 var u = v(l);
                 return (u[3] = 1), u;
               }
-              if ((t = e.match(H))) {
+              if ((t = e.match(B))) {
                 var d = t.slice(1, 4);
                 (d[1] *= 0.01), (d[2] *= 0.01);
                 var p = v(d);
@@ -12665,7 +12685,7 @@
               w.test(e) ||
               U.test(e) ||
               G.test(e) ||
-              H.test(e)
+              B.test(e)
             );
           };
           var K = _.type,
@@ -13105,10 +13125,10 @@
                 ? e / 12.92
                 : eU((e + 0.055) / 1.055, 2.4);
             },
-            eH = function (e) {
+            eB = function (e) {
               return e > eM ? eU(e, 1 / 3) : e / eb + eP;
             },
-            eB = function () {
+            eH = function () {
               for (var e, t, n, r = [], i = arguments.length; i--; )
                 r[i] = arguments[i];
               var o = ew(r, "rgb"),
@@ -13117,14 +13137,14 @@
                   (t = o[1]),
                   (n = o[2]),
                   [
-                    eH(
+                    eB(
                       (0.4124564 * (e = eG(e)) +
                         0.3575761 * (t = eG(t)) +
                         0.1804375 * (n = eG(n))) /
                         eD,
                     ),
-                    eH((0.2126729 * e + 0.7151522 * t + 0.072175 * n) / eC),
-                    eH((0.0193339 * e + 0.119192 * t + 0.9503041 * n) / ey),
+                    eB((0.2126729 * e + 0.7151522 * t + 0.072175 * n) / eC),
+                    eB((0.0193339 * e + 0.119192 * t + 0.9503041 * n) / ey),
                   ]),
                 _ = a[0],
                 s = a[1],
@@ -13170,7 +13190,7 @@
             eF = _.unpack,
             eV = _.type;
           (u.prototype.lab = function () {
-            return eB(this._rgb);
+            return eH(this._rgb);
           }),
             (d.lab = function () {
               for (var e = [], t = arguments.length; t--; ) e[t] = arguments[t];
@@ -13230,7 +13250,7 @@
             e7 = function () {
               for (var e = [], t = arguments.length; t--; ) e[t] = arguments[t];
               var n = eZ(e, "rgb"),
-                r = eB(n[0], n[1], n[2]);
+                r = eH(n[0], n[1], n[2]);
               return eJ(r[0], r[1], r[2]);
             };
           (u.prototype.lch = function () {
@@ -13781,19 +13801,19 @@
                 ? e / 12.92
                 : tw((e + 0.055) / 1.055, 2.4);
             },
-            tH = {},
-            tB = _.type,
+            tB = {},
+            tH = _.type,
             tk = function (e, t, n) {
               void 0 === n && (n = 0.5);
               for (var r = [], i = arguments.length - 3; i-- > 0; )
                 r[i] = arguments[i + 3];
               var o = r[0] || "lrgb";
-              if ((tH[o] || r.length || (o = Object.keys(tH)[0]), !tH[o]))
+              if ((tB[o] || r.length || (o = Object.keys(tB)[0]), !tB[o]))
                 throw Error("interpolation mode " + o + " is not defined");
               return (
-                "object" !== tB(e) && (e = new u(e)),
-                "object" !== tB(t) && (t = new u(t)),
-                tH[o](e, t, n).alpha(e.alpha() + n * (t.alpha() - e.alpha()))
+                "object" !== tH(e) && (e = new u(e)),
+                "object" !== tH(t) && (t = new u(t)),
+                tB[o](e, t, n).alpha(e.alpha() + n * (t.alpha() - e.alpha()))
               );
             };
           (u.prototype.mix = u.prototype.interpolate =
@@ -13856,7 +13876,7 @@
             }
             throw Error("unknown channel " + o + " in mode " + i);
           }),
-            (tH.rgb = function (e, t, n) {
+            (tB.rgb = function (e, t, n) {
               var r = e._rgb,
                 i = t._rgb;
               return new u(
@@ -13868,7 +13888,7 @@
             });
           var tW = Math.sqrt,
             tx = Math.pow;
-          (tH.lrgb = function (e, t, n) {
+          (tB.lrgb = function (e, t, n) {
             var r = e._rgb,
               i = r[0],
               o = r[1],
@@ -13884,7 +13904,7 @@
               "rgb",
             );
           }),
-            (tH.lab = function (e, t, n) {
+            (tB.lab = function (e, t, n) {
               var r = e.lab(),
                 i = t.lab();
               return new u(
@@ -13938,25 +13958,25 @@
             tF = function (e, t, n) {
               return tY(e, t, n, "lch");
             };
-          (tH.lch = tF),
-            (tH.hcl = tF),
-            (tH.num = function (e, t, n) {
+          (tB.lch = tF),
+            (tB.hcl = tF),
+            (tB.num = function (e, t, n) {
               var r = e.num();
               return new u(r + n * (t.num() - r), "num");
             }),
-            (tH.hcg = function (e, t, n) {
+            (tB.hcg = function (e, t, n) {
               return tY(e, t, n, "hcg");
             }),
-            (tH.hsi = function (e, t, n) {
+            (tB.hsi = function (e, t, n) {
               return tY(e, t, n, "hsi");
             }),
-            (tH.hsl = function (e, t, n) {
+            (tB.hsl = function (e, t, n) {
               return tY(e, t, n, "hsl");
             }),
-            (tH.hsv = function (e, t, n) {
+            (tB.hsv = function (e, t, n) {
               return tY(e, t, n, "hsv");
             }),
-            (tH.oklab = function (e, t, n) {
+            (tB.oklab = function (e, t, n) {
               var r = e.oklab(),
                 i = t.oklab();
               return new u(
@@ -13966,7 +13986,7 @@
                 "oklab",
               );
             }),
-            (tH.oklch = function (e, t, n) {
+            (tB.oklch = function (e, t, n) {
               return tY(e, t, n, "oklch");
             });
           var tV = _.clip_rgb,
@@ -14512,8 +14532,8 @@
                       }
                     (O = v), ++h > 200 && (N = !1);
                   }
-                  for (var G = {}, H = 0; H < n; H++) G[H] = [];
-                  for (var B = 0; B < T; B++) G[(I = R[B])].push(a[B]);
+                  for (var G = {}, B = 0; B < n; B++) G[B] = [];
+                  for (var H = 0; H < T; H++) G[(I = R[H])].push(a[H]);
                   for (var k = [], K = 0; K < n; K++)
                     k.push(G[K][0]), k.push(G[K][G[K].length - 1]);
                   (k = k.sort(function (e, t) {
@@ -17413,7 +17433,7 @@
             captureMessage: () => _.uT,
             captureSession: () => _.cg,
             captureUserFeedback: () => K.Jd,
-            chromeStackLineParser: () => H.$3,
+            chromeStackLineParser: () => B.$3,
             close: () => _.xv,
             contextLinesIntegration: () => q.S,
             continueTrace: () => u.yn,
@@ -17422,12 +17442,12 @@
             debugIntegration: () => p.s,
             dedupeIntegration: () => f.R,
             defaultRequestInstrumentationOptions: () => en.k3,
-            defaultStackLineParsers: () => H.d8,
-            defaultStackParser: () => H.Dt,
+            defaultStackLineParsers: () => B.d8,
+            defaultStackParser: () => B.Dt,
             endSession: () => _.TM,
-            eventFromException: () => B.dr,
-            eventFromMessage: () => B.aB,
-            exceptionFromError: () => B.GJ,
+            eventFromException: () => H.dr,
+            eventFromMessage: () => H.aB,
+            exceptionFromError: () => H.GJ,
             extraErrorDataIntegration: () => I.E,
             feedbackAsyncIntegration: () => Z.Q,
             feedbackIntegration: () => Q.r,
@@ -17435,7 +17455,7 @@
             flush: () => _.yl,
             forceLoad: () => K.Eg,
             functionToStringIntegration: () => T.C,
-            geckoStackLineParser: () => H.$Q,
+            geckoStackLineParser: () => B.$Q,
             getActiveSpan: () => R.HN,
             getClient: () => A.s3,
             getCurrentHub: () => N.G,
@@ -17464,8 +17484,8 @@
             metrics: () => et.q,
             moduleMetadataIntegration: () => m.w,
             onLoad: () => K.lA,
-            opera10StackLineParser: () => H.NP,
-            opera11StackLineParser: () => H.HH,
+            opera10StackLineParser: () => B.NP,
+            opera11StackLineParser: () => B.HH,
             parameterize: () => L.X,
             registerSpanErrorInstrumentation: () => g.a,
             replayCanvasIntegration: () => J.m,
@@ -17495,7 +17515,7 @@
             startSpan: () => u.GK,
             startSpanManual: () => u.V0,
             thirdPartyErrorFilterIntegration: () => b.L,
-            winjsStackLineParser: () => H.R2,
+            winjsStackLineParser: () => B.R2,
             withActiveSpan: () => u._d,
             withIsolationScope: () => A.wi,
             withScope: () => A.$e,
@@ -17535,8 +17555,8 @@
           w = n(889929),
           U = n(157119),
           G = n(235387),
-          H = n(202829),
-          B = n(350171),
+          B = n(202829),
+          H = n(350171),
           k = n(646866),
           K = n(767020),
           W = n(848576),
@@ -19278,9 +19298,9 @@
                 shouldCreateSpanForRequest: w,
                 enableHTTPTimings: U,
                 instrumentPageLoad: G,
-                instrumentNavigation: H,
+                instrumentNavigation: B,
               } = { ...O, ...e },
-              B = (0, r.PR)({ recordClsStandaloneSpans: S || !1 });
+              H = (0, r.PR)({ recordClsStandaloneSpans: S || !1 });
             t && (0, i.N)(),
               I &&
               u.n.PerformanceObserver &&
@@ -19305,7 +19325,7 @@
                 childSpanTimeout: P,
                 disableAutoFinish: n,
                 beforeSpanEnd: (e) => {
-                  B(), (0, r.f7)(e, { recordClsOnPageloadSpan: !S });
+                  H(), (0, r.f7)(e, { recordClsOnPageloadSpan: !S });
                 },
               });
               function c() {
@@ -19381,7 +19401,7 @@
                           [s.S3]: "auto.pageload.browser",
                         },
                       }),
-                    H &&
+                    B &&
                       (0, o.a)(({ to: t, from: n }) => {
                         if (void 0 === n && S && -1 !== S.indexOf(t)) {
                           S = void 0;
@@ -27780,8 +27800,8 @@ Error:`,
             isEmailRequired: v = !1,
             isNameRequired: U = !1,
             showEmail: G = !0,
-            showName: H = !0,
-            enableScreenshot: B = !0,
+            showName: B = !0,
+            enableScreenshot: H = !0,
             useSentryUser: k = { email: "email", name: "username" },
             tags: K,
             styleNonce: W,
@@ -27818,8 +27838,8 @@ Error:`,
                 isEmailRequired: v,
                 isNameRequired: U,
                 showEmail: G,
-                showName: H,
-                enableScreenshot: B,
+                showName: B,
+                enableScreenshot: H,
                 useSentryUser: k,
                 tags: K,
                 styleNonce: W,
@@ -28180,8 +28200,8 @@ ${
           let e = (0, r.s3)();
           return e && e.getIntegrationByName("Feedback");
         }
-        var H,
-          B,
+        var B,
+          H,
           k,
           K,
           W,
@@ -28209,7 +28229,7 @@ ${
             "key" == o ? (r = t[o]) : "ref" == o ? (i = t[o]) : (a[o] = t[o]);
           if (
             (arguments.length > 2 &&
-              (a.children = arguments.length > 3 ? H.call(arguments, 2) : n),
+              (a.children = arguments.length > 3 ? B.call(arguments, 2) : n),
             "function" == typeof e && null != e.defaultProps)
           )
             for (o in e.defaultProps)
@@ -28233,7 +28253,7 @@ ${
             __i: -1,
             __u: 0,
           };
-          return null == i && null != B.vnode && B.vnode(o), o;
+          return null == i && null != H.vnode && H.vnode(o), o;
         }
         function Z(e) {
           return e.children;
@@ -28249,8 +28269,8 @@ ${
         }
         function et(e) {
           ((!e.__d && (e.__d = !0) && K.push(e) && !en.__r++) ||
-            W !== B.debounceRendering) &&
-            ((W = B.debounceRendering) || x)(en);
+            W !== H.debounceRendering) &&
+            ((W = H.debounceRendering) || x)(en);
         }
         function en() {
           var e,
@@ -28270,7 +28290,7 @@ ${
                   if (a)
                     return (
                       ((r = $({}, i)).__v = i.__v + 1),
-                      B.vnode && B.vnode(r),
+                      H.vnode && H.vnode(r),
                       es(
                         a,
                         r,
@@ -28309,7 +28329,7 @@ ${
                   (i.length = r.length = 0),
                   (t = void 0),
                   K.sort(Y))
-                : t && B.__c && B.__c(t, V));
+                : t && H.__c && H.__c(t, V));
           t && ec(r, t, i), (en.__r = 0);
         }
         function er(e, t, n, r, i, o, a, _, s, c, E) {
@@ -28516,11 +28536,11 @@ ${
             if (e.t) {
               if (e.t <= t.u) return;
             } else e.t = Date.now();
-            return t(B.event ? B.event(e) : e);
+            return t(H.event ? H.event(e) : e);
           }
         }
         function e_(e) {
-          if (this.l) return this.l[e.type + !0](B.event ? B.event(e) : e);
+          if (this.l) return this.l[e.type + !0](H.event ? H.event(e) : e);
         }
         function es(e, t, n, r, i, o, a, _, s, c) {
           var E,
@@ -28541,7 +28561,7 @@ ${
             L = t.type;
           if (void 0 !== t.constructor) return null;
           128 & n.__u && ((s = !!(32 & n.__u)), (o = [(_ = t.__e = n.__e)])),
-            (E = B.__b) && E(t);
+            (E = H.__b) && E(t);
           t: if ("function" == typeof L)
             try {
               if (
@@ -28616,7 +28636,7 @@ ${
                 (l.props = T),
                 (l.__P = e),
                 (l.__e = !1),
-                (h = B.__r),
+                (h = H.__r),
                 (O = 0),
                 "prototype" in L && L.prototype.render)
               ) {
@@ -28675,7 +28695,7 @@ ${
                     (t.__u |= s ? 160 : 32),
                     (o[o.indexOf(_)] = null))
                   : ((t.__e = n.__e), (t.__k = n.__k)),
-                B.__e(e, t, n);
+                H.__e(e, t, n);
             }
           else
             null == o && t.__v === n.__v
@@ -28717,7 +28737,7 @@ ${
                     I === T || (_ && e.data === T) || (e.data = T);
                   else {
                     if (
-                      ((o = o && H.call(e.childNodes)),
+                      ((o = o && B.call(e.childNodes)),
                       (I = n.props || F),
                       !_ && null != o)
                     )
@@ -28780,11 +28800,11 @@ ${
                   }
                   return e;
                 })(n.__e, t, n, r, i, o, a, s, c));
-          (E = B.diffed) && E(t);
+          (E = H.diffed) && E(t);
         }
         function ec(e, t, n) {
           for (var r = 0; r < n.length; r++) eE(n[r], n[++r], n[++r]);
-          B.__c && B.__c(t, e),
+          H.__c && H.__c(t, e),
             e.some(function (t) {
               try {
                 (e = t.__h),
@@ -28793,7 +28813,7 @@ ${
                     e.call(t);
                   });
               } catch (e) {
-                B.__e(e, t.__v);
+                H.__e(e, t.__v);
               }
             });
         }
@@ -28801,13 +28821,13 @@ ${
           try {
             "function" == typeof e ? e(t) : (e.current = t);
           } catch (e) {
-            B.__e(e, n);
+            H.__e(e, n);
           }
         }
         function el(e, t, n) {
           var r, i;
           if (
-            (B.unmount && B.unmount(e),
+            (H.unmount && H.unmount(e),
             (r = e.ref) &&
               ((r.current && r.current !== e.__e) || eE(r, null, t)),
             null != (r = e.__c))
@@ -28816,7 +28836,7 @@ ${
               try {
                 r.componentWillUnmount();
               } catch (e) {
-                B.__e(e, t);
+                H.__e(e, t);
               }
             (r.base = r.__P = null), (e.__c = void 0);
           }
@@ -28828,8 +28848,8 @@ ${
         function eu(e, t, n) {
           return this.constructor(e, n);
         }
-        (H = V.slice),
-          (B = {
+        (B = V.slice),
+          (H = {
             __e: function (e, t, n, r) {
               for (var i, o, a; (t = t.__); )
                 if ((i = t.__c) && !i.__)
@@ -28881,7 +28901,7 @@ ${
           eT = 0,
           eR = [],
           eA = [],
-          eN = B,
+          eN = H,
           eh = eN.__b,
           eO = eN.__r,
           eS = eN.diffed,
@@ -28894,7 +28914,7 @@ ${
           return e >= n.__.length && n.__.push({ __V: eA }), n.__[e];
         }
         function eC(e) {
-          return (eT = 1), ey(eB, e);
+          return (eT = 1), ey(eH, e);
         }
         function ey(e, t, n) {
           var r = eD(ed++, 2);
@@ -28902,7 +28922,7 @@ ${
             ((r.t = e),
             !r.__c &&
               ((r.__ = [
-                n ? n(t) : eB(void 0, t),
+                n ? n(t) : eH(void 0, t),
                 function (e) {
                   var t = r.__N ? r.__N[0] : r.__[0],
                     n = r.t(t, e);
@@ -28950,11 +28970,11 @@ ${
         }
         function eP(e, t) {
           var n = eD(ed++, 4);
-          !eN.__s && eH(n.__H, t) && ((n.__ = e), (n.i = t), ep.__h.push(n));
+          !eN.__s && eB(n.__H, t) && ((n.__ = e), (n.i = t), ep.__h.push(n));
         }
         function ev(e, t) {
           var n = eD(ed++, 7);
-          return eH(n.__H, t)
+          return eB(n.__H, t)
             ? ((n.__V = e()), (n.i = t), (n.__h = e), n.__V)
             : n.__;
         }
@@ -29070,7 +29090,7 @@ ${
           var t = ep;
           (e.__c = e.__()), (ep = t);
         }
-        function eH(e, t) {
+        function eB(e, t) {
           return (
             !e ||
             e.length !== t.length ||
@@ -29079,7 +29099,7 @@ ${
             })
           );
         }
-        function eB(e, t) {
+        function eH(e, t) {
           return "function" == typeof t ? t(e) : t;
         }
         let ek = {
@@ -29101,7 +29121,7 @@ ${
             useEffect: function (e, t) {
               var n = eD(ed++, 3);
               !eN.__s &&
-                eH(n.__H, t) &&
+                eB(n.__H, t) &&
                 ((n.__ = e), (n.i = t), ep.__H.__h.push(n));
             },
             useErrorBoundary: function (e) {
@@ -30034,7 +30054,7 @@ ${eZ}
                       lineNumber: 67,
                     },
                   })),
-                    B.__ && B.__(r, _),
+                    H.__ && H.__(r, _),
                     (s = (i && i.__k) || _.__k),
                     (c = []),
                     (E = []),
@@ -30049,7 +30069,7 @@ ${eZ}
                         : s
                           ? null
                           : _.firstChild
-                            ? H.call(_.childNodes)
+                            ? B.call(_.childNodes)
                             : null,
                       c,
                       i ? i : s ? s.__e : _.firstChild,
@@ -31449,8 +31469,8 @@ ${eZ}
           w = n(431660),
           U = n(1693),
           G = n(690889),
-          H = n(959036),
-          B = n(896877),
+          B = n(959036),
+          H = n(896877),
           k = n(655913),
           K = n(67897),
           W = n(687566),
@@ -32584,7 +32604,7 @@ ${eZ}
                 }, _));
           };
         }
-        function eH(e, t, n) {
+        function eB(e, t, n) {
           try {
             if (!(t in e)) return () => {};
             let r = e[t],
@@ -32612,7 +32632,7 @@ ${eZ}
               "map" === t && console.error(ew), Reflect.get(e, t, n)
             ),
           }));
-        let eB = Date.now;
+        let eH = Date.now;
         function ek(e) {
           let t = e.document;
           return {
@@ -32735,7 +32755,7 @@ ${eZ}
           return !!eb([e, "optionalAccess", (e) => e.shadowRoot]);
         }
         /[1-9][0-9]{12}/.test(Date.now().toString()) ||
-          (eB = () => new Date().getTime());
+          (eH = () => new Date().getTime());
         class eq {
           constructor() {
             (this.id = 1),
@@ -33649,12 +33669,12 @@ ${eZ}
                         { clientX: n, clientY: o } = eV(e)
                           ? e.changedTouches[0]
                           : e;
-                      i || (i = eB()),
+                      i || (i = eH()),
                         _.push({
                           x: n,
                           y: o,
                           id: r.getId(t),
-                          timeOffset: eB() - i,
+                          timeOffset: eH() - i,
                         }),
                         s(
                           "undefined" != typeof DragEvent &&
@@ -34189,7 +34209,7 @@ ${eZ}
                     r
                   );
                 };
-                let a = eH(t.fonts, "add", function (t) {
+                let a = eB(t.fonts, "add", function (t) {
                   return function (n) {
                     return (
                       e0(
@@ -34256,7 +34276,7 @@ ${eZ}
             f = (function ({ doc: e, customElementCb: t }) {
               let n = e.defaultView;
               return n && n.customElements
-                ? eH(n.customElements, "define", function (e) {
+                ? eB(n.customElements, "define", function (e) {
                     return function (n, r, i) {
                       try {
                         t({ define: { name: n } });
@@ -34675,7 +34695,7 @@ ${eZ}
           patchAttachShadow(e, t) {
             let n = this;
             this.restoreHandlers.push(
-              eH(e.prototype, "attachShadow", function (e) {
+              eB(e.prototype, "attachShadow", function (e) {
                 return function (r) {
                   let i = e.call(this, r);
                   return (
@@ -34841,8 +34861,8 @@ ${eZ}
                 : "load",
               userTriggeredOnInput: U = !1,
               collectFonts: G = !1,
-              inlineImages: H = !1,
-              plugins: B,
+              inlineImages: B = !1,
+              plugins: H,
               keepIframeSrcFn: k = () => !1,
               ignoreCSSAttributes: K = new Set([]),
               errorHandler: W,
@@ -34918,13 +34938,13 @@ ${eZ}
           })();
           let $ = 0,
             q = (e) => {
-              for (let t of B || [])
+              for (let t of H || [])
                 t.eventProcessor && (e = t.eventProcessor(e));
               return D && !V && (e = D(e)), e;
             };
           a = (e, o) => {
             if (
-              ((e.timestamp = eB()),
+              ((e.timestamp = eH()),
               (0, R.x)([
                 tr,
                 "access",
@@ -34995,7 +35015,7 @@ ${eZ}
                     recordCrossOriginIframes: M,
                     wrappedEmit: a,
                   });
-          for (let e of B || [])
+          for (let e of H || [])
             e.getMirror &&
               e.getMirror({
                 nodeMirror: tm,
@@ -35052,7 +35072,7 @@ ${eZ}
                       maskTextFn: L,
                       maskInputFn: m,
                       recordCanvas: b,
-                      inlineImages: H,
+                      inlineImages: B,
                       sampling: C,
                       slimDOMOptions: X,
                       iframeManager: et,
@@ -35192,7 +35212,7 @@ ${eZ}
                 slimDOM: X,
                 dataURLOptions: y,
                 recordCanvas: b,
-                inlineImages: H,
+                inlineImages: B,
                 onSerialize: (e) => {
                   ej(e, tm) && et.addIframe(e),
                     eX(e, tm) && Q.trackLinkElement(e),
@@ -35296,7 +35316,7 @@ ${eZ}
                     sampling: C,
                     recordDOM: v,
                     recordCanvas: b,
-                    inlineImages: H,
+                    inlineImages: B,
                     userTriggeredOnInput: U,
                     collectFonts: G,
                     doc: e,
@@ -35317,7 +35337,7 @@ ${eZ}
                     ignoreCSSAttributes: K,
                     plugins:
                       (0, R.x)([
-                        B,
+                        H,
                         "optionalAccess",
                         (e) => e.filter,
                         "call",
@@ -35462,7 +35482,7 @@ ${eZ}
             ? e.target
             : e;
         }
-        let tH = new Set([
+        let tB = new Set([
           e2.Mutation,
           e2.StyleSheetRule,
           e2.StyleDeclaration,
@@ -35471,7 +35491,7 @@ ${eZ}
           e2.Selection,
           e2.MediaInteraction,
         ]);
-        class tB {
+        class tH {
           constructor(e, t, n = tM) {
             (this._lastMutation = 0),
               (this._lastScroll = 0),
@@ -36704,7 +36724,7 @@ ${eZ}
             p = (0, h.nZ)(),
             f = d && d.getTransport(),
             I = d && d.getDsn();
-          if (!d || !f || !I || !o.sampled) return (0, H.WD)({});
+          if (!d || !f || !I || !o.sampled) return (0, B.WD)({});
           let T = {
               type: "replay_event",
               replay_start_timestamp: u / 1e3,
@@ -36724,7 +36744,7 @@ ${eZ}
                 tP.info(
                   "An event processor returned `null`, will not send event.",
                 ),
-              (0, H.WD)({})
+              (0, B.WD)({})
             );
           delete R.sdkProcessingMetadata;
           let A =
@@ -36756,8 +36776,8 @@ ${eZ}
             (_.statusCode < 200 || _.statusCode >= 300)
           )
             throw new nM(_.statusCode);
-          let N = (0, B.WG)({}, _);
-          if ((0, B.Q)(N, "replay")) throw new nw(N);
+          let N = (0, H.WG)({}, _);
+          if ((0, H.Q)(N, "replay")) throw new nw(N);
           return _;
         }
         class nM extends Error {
@@ -36803,14 +36823,14 @@ ${eZ}
             }
         }
         let nG = "__THROTTLED";
-        class nH {
+        class nB {
           constructor({ options: e, recordingOptions: t }) {
-            nH.prototype.__init.call(this),
-              nH.prototype.__init2.call(this),
-              nH.prototype.__init3.call(this),
-              nH.prototype.__init4.call(this),
-              nH.prototype.__init5.call(this),
-              nH.prototype.__init6.call(this),
+            nB.prototype.__init.call(this),
+              nB.prototype.__init2.call(this),
+              nB.prototype.__init3.call(this),
+              nB.prototype.__init4.call(this),
+              nB.prototype.__init5.call(this),
+              nB.prototype.__init6.call(this),
               (this.eventBuffer = null),
               (this.performanceEntries = []),
               (this.replayPerformanceEntries = []),
@@ -36901,7 +36921,7 @@ ${eZ}
                     ignoreSelector: r ? r.join(",") : "",
                   }
                 : void 0;
-            if ((i && (this.clickDetector = new tB(this, i)), tg)) {
+            if ((i && (this.clickDetector = new tH(this, i)), tg)) {
               let t = e._experiments;
               tP.setConfig({
                 captureExceptions: !!t.captureExceptions,
@@ -37034,7 +37054,7 @@ ${eZ}
                             if (((n = t), 3 !== n.type)) return;
                             let { source: r } = t.data;
                             if (
-                              (tH.has(r) && e.registerMutation(t.timestamp),
+                              (tB.has(r) && e.registerMutation(t.timestamp),
                               r === e2.Scroll && e.registerScroll(t.timestamp),
                               t.data.source === e2.MouseInteraction)
                             ) {
@@ -38001,7 +38021,7 @@ ${eZ}
             };
           }
         }
-        function nB(e, t) {
+        function nH(e, t) {
           return [...e, ...t].join(",");
         }
         let nk =
@@ -38053,15 +38073,15 @@ ${eZ}
               ignore: i,
             }) {
               return {
-                maskTextSelector: nB(e, [".sentry-mask", "[data-sentry-mask]"]),
-                unmaskTextSelector: nB(t, []),
-                blockSelector: nB(n, [
+                maskTextSelector: nH(e, [".sentry-mask", "[data-sentry-mask]"]),
+                unmaskTextSelector: nH(t, []),
+                blockSelector: nH(n, [
                   ".sentry-block",
                   "[data-sentry-block]",
                   'base[href="/"]',
                 ]),
-                unblockSelector: nB(r, []),
-                ignoreSelector: nB(i, [
+                unblockSelector: nH(r, []),
+                ignoreSelector: nH(i, [
                   ".sentry-ignore",
                   "[data-sentry-ignore]",
                   'input[type="file"]',
@@ -38213,7 +38233,7 @@ ${eZ}
                 r
               );
             })(this._initialOptions, e);
-            this._replay = new nH({
+            this._replay = new nB({
               options: t,
               recordingOptions: this._recordingOptions,
             });
@@ -38277,4 +38297,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.277982224aff71b7.js.map
+//# sourceMappingURL=sentry.652ee0744855a5e6.js.map
