@@ -43528,7 +43528,7 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
 ._9dfff3600436b3c3-applicationIcon {
   border-radius: 2px;
 }
-._9dfff3600436b3c3-rankImage {
+._9dfff3600436b3c3-previewIcon {
   display: inline-block;
   height: 1lh;
   vertical-align: bottom;
@@ -43537,7 +43537,7 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
 ._9dfff3600436b3c3-textContent {
   padding-block: 2px;
 }
-._9dfff3600436b3c3-featuredCharacterImageContainer {
+._9dfff3600436b3c3-previewImageContainer {
   -webkit-mask: linear-gradient(
     90deg,
     transparent 0,
@@ -43578,7 +43578,7 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
   );
   position: relative;
 }
-._9dfff3600436b3c3-featuredCharacterImage {
+._9dfff3600436b3c3-previewImage {
   position: absolute;
 }
 .c2a7636633222ffa-breadcrumb {
@@ -100589,4 +100589,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.15f4da9706999b2a.css.map*/
+/*# sourceMappingURL=web.cc5014ac34dd47ac.css.map*/
