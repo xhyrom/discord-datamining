@@ -26978,6 +26978,9 @@ div._3d3b08df7e9aa942-mobilePushContainer {
 .fd297e0eff2da25e-marginBottom20 {
   margin-bottom: var(--custom-margin-margin-medium);
 }
+.fd297e0eff2da25e-marginBottom24 {
+  margin-bottom: var(--space-24);
+}
 .fd297e0eff2da25e-marginTop40 {
   margin-top: var(--custom-margin-margin-large);
 }
@@ -100589,4 +100592,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.cc5014ac34dd47ac.css.map*/
+/*# sourceMappingURL=web.aef32c18524fd946.css.map*/
