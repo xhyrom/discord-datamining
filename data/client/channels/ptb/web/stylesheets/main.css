@@ -2061,10 +2061,11 @@
   --custom-modal-padding-sm: var(--space-8);
   --custom-modal-padding-md: var(--space-16);
   --custom-modal-padding-top: var(--custom-modal-padding-sm);
+  --custom-modal-padding-bottom: var(--custom-modal-padding-md);
 }
 ._8a031a135bfcb9ba-padding-size-lg,
 ._8a031a135bfcb9ba-padding-size-sm {
-  padding-bottom: var(--custom-modal-padding-md);
+  padding-bottom: var(--custom-modal-padding-bottom);
   padding-top: var(--custom-modal-padding-top);
 }
 ._8a031a135bfcb9ba-padding-size-lg {
@@ -2074,6 +2075,7 @@
   --custom-modal-padding-top: calc(
     var(--space-24) - var(--custom-modal-padding-md)
   );
+  --custom-modal-padding-bottom: var(--custom-modal-padding-md);
 }
 ._8a031a135bfcb9ba-size-sm {
   max-width: 400px;
@@ -17894,12 +17896,6 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.e599633bf6c09eb3-icon {
-  margin-bottom: 0.2rem;
-  vertical-align: middle;
-  -webkit-margin-end: var(--space-4);
-  margin-inline-end: var(--space-4);
-}
 .hljs {
   border-radius: 4px;
   display: block;
@@ -26975,6 +26971,9 @@ div._3d3b08df7e9aa942-mobilePushContainer {
 }
 .fd297e0eff2da25e-marginBottom20 {
   margin-bottom: var(--custom-margin-margin-medium);
+}
+.fd297e0eff2da25e-marginBottom24 {
+  margin-bottom: var(--space-24);
 }
 .fd297e0eff2da25e-marginTop40 {
   margin-top: var(--custom-margin-margin-large);
@@ -37571,7 +37570,7 @@ body .b54a5b2f01b57ad8-headerAnimation {
   margin-bottom: 16px;
   margin-top: 16px;
 }
-.d947e68f3c652858-customGiftMessage {
+.d947e68f3c652858-customGiftMessage.d947e68f3c652858-customGiftMessage {
   background-color: var(--background-base-lowest);
 }
 .d947e68f3c652858-selectGiftTitle {
@@ -39045,7 +39044,7 @@ body .b54a5b2f01b57ad8-headerAnimation {
 .theme-dark.custom-user-profile-theme .a99829deaf601327-container {
   background: var(--opacity-white-12);
 }
-.a99829deaf601327-editor {
+.a99829deaf601327-editor.a99829deaf601327-editor {
   --channel-text-area-placeholder: var(--text-muted);
   font-size: 14px;
 }
@@ -41162,7 +41161,7 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
 .b1f01d03ecc7d736-input {
   border: none !important;
 }
-.b1f01d03ecc7d736-editor {
+.b1f01d03ecc7d736-editor.b1f01d03ecc7d736-editor {
   --channel-text-area-placeholder: var(--text-muted);
   font-size: 14px;
   min-height: 88px;
@@ -43526,7 +43525,7 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
 ._9dfff3600436b3c3-applicationIcon {
   border-radius: 2px;
 }
-._9dfff3600436b3c3-rankImage {
+._9dfff3600436b3c3-previewIcon {
   display: inline-block;
   height: 1lh;
   vertical-align: bottom;
@@ -43535,7 +43534,7 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
 ._9dfff3600436b3c3-textContent {
   padding-block: 2px;
 }
-._9dfff3600436b3c3-featuredCharacterImageContainer {
+._9dfff3600436b3c3-previewImageContainer {
   -webkit-mask: linear-gradient(
     90deg,
     transparent 0,
@@ -43576,7 +43575,7 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
   );
   position: relative;
 }
-._9dfff3600436b3c3-featuredCharacterImage {
+._9dfff3600436b3c3-previewImage {
   position: absolute;
 }
 .c2a7636633222ffa-breadcrumb {
@@ -48863,6 +48862,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   height: 100%;
   width: 100%;
 }
+._44b0c28be7879b7b-avatar,
 ._44b0c28be7879b7b-avatarBorder {
   border-radius: 50%;
 }
@@ -48881,12 +48881,19 @@ svg.c1e9c47c23f12ca3-radioIcon {
 ._44b0c28be7879b7b-pointerEvents {
   pointer-events: auto;
 }
-._44b0c28be7879b7b-avatarDecoration {
+._44b0c28be7879b7b-avatarDecorationContainer {
   contain: paint;
   inset-inline-start: var(--custom-avatar-avatar-decoration-border-position);
   pointer-events: none;
   position: absolute;
   top: var(--custom-avatar-avatar-decoration-border-position);
+}
+._44b0c28be7879b7b-avatarDecoration {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  width: 100%;
 }
 ._44b0c28be7879b7b-cutoutIcon {
   color: var(--icon-muted);
@@ -100587,4 +100594,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.73ded549b99c3e1b.css.map*/
+/*# sourceMappingURL=web.24eec8eedd820664.css.map*/
