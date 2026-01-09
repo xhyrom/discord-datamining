@@ -3219,6 +3219,7 @@
           USER_GUILD_SETTINGS: (e) =>
             "/users/@me/guilds/".concat(e, "/settings"),
           GAMES_DETECTABLE: "/games/detectable",
+          GAMES_BLOCKLIST: "/games/detectable/exclusions",
           NON_GAMES_DETECTABLE: "/applications/non-games/detectable",
           APPLICATIONS_GAMES_SUPPLEMENTAL: "/applications/games-supplemental",
           APPLICATION_ICON: (e, t) =>
@@ -4627,6 +4628,7 @@
           (r.RUNNING_GAME_HEARTBEAT = "running_game_heartbeat"),
           (r.GAME_DETECTION_COMPARISON = "game_detection_comparison"),
           (r.GAME_DETECTION_ERROR = "game_detection_error"),
+          (r.GAME_BLOCKLIST_TRIGGERED = "game_blocklist_triggered"),
           (r.ACTIVITY_UPDATED = "activity_updated"),
           (r.ACTIVITY_SESSION_JOINED = "activity_session_joined"),
           (r.ACTIVITY_SESSION_JOIN_FAILED = "activity_session_join_failed"),
@@ -6641,7 +6643,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-40572def2395bc869344c50e95c4a3e46de0019d",
+            release: "discord_web-11d875d643def71437756cce67276b305a8747e5",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6707,8 +6709,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "484240"),
-            a.YA("builtAt", String("1767971527329"));
+            a.YA("buildNumber", "484246"),
+            a.YA("builtAt", String("1767973726928"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -38253,4 +38255,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.63ff0e2fb23d681d.js.map
+//# sourceMappingURL=sentry.e1470067a26f4082.js.map
