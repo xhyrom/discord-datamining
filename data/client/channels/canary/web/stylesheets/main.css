@@ -48868,6 +48868,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   height: 100%;
   width: 100%;
 }
+._44b0c28be7879b7b-avatar,
 ._44b0c28be7879b7b-avatarBorder {
   border-radius: 50%;
 }
@@ -48886,12 +48887,19 @@ svg.c1e9c47c23f12ca3-radioIcon {
 ._44b0c28be7879b7b-pointerEvents {
   pointer-events: auto;
 }
-._44b0c28be7879b7b-avatarDecoration {
+._44b0c28be7879b7b-avatarDecorationContainer {
   contain: paint;
   inset-inline-start: var(--custom-avatar-avatar-decoration-border-position);
   pointer-events: none;
   position: absolute;
   top: var(--custom-avatar-avatar-decoration-border-position);
+}
+._44b0c28be7879b7b-avatarDecoration {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  width: 100%;
 }
 ._44b0c28be7879b7b-cutoutIcon {
   color: var(--icon-muted);
@@ -100592,4 +100600,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.aef32c18524fd946.css.map*/
+/*# sourceMappingURL=web.f5866924ed297b9b.css.map*/

@@ -6642,7 +6642,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bc8ff737f32fa62793fcc2561bf26a35e377f0fb",
+            release: "discord_web-a9389b9d76297bfcae713fa233dfdb9e89de60f8",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6708,8 +6708,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "484142"),
-            a.YA("builtAt", String("1767916089825"));
+            a.YA("buildNumber", "484161"),
+            a.YA("builtAt", String("1767918987860"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -6836,6 +6836,14 @@
             SETTINGS: (e, t) =>
               "/settings/".concat(e).concat(null != t ? "/".concat(t) : ""),
             SNOWSGIVING: "/snowsgiving",
+            PLAYGROUND: (e, t) => {
+              let n = "/playground";
+              return (
+                null != e &&
+                  ((n += "/".concat(e)), null != t && (n += "/".concat(t))),
+                n
+              );
+            },
             CHANGELOGS: (e) =>
               "/settings/changelogs".concat(null != e ? "/".concat(e) : ""),
             USERS: (e) => "/users/".concat(e),
@@ -38246,4 +38254,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.a001795ac642e768.js.map
+//# sourceMappingURL=sentry.d9a8d8d0275b8d4a.js.map
