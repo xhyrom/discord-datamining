@@ -9,35 +9,54 @@
   subscriber and automatically update to celebrate your membership milestones.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e1c0c64b065ea18475abe61fd365e6988"
+    >
       <a href="#h_01JHNGJHBTXHH3S33718SWJVV1"
         ><strong>What are Evolving Nitro Badges?</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="ed1c4c4b7f298c19d2b5ccb7d63747c2a"
+    >
       <a href="#h_01JHNGJHBTQMZBZ45XXCAX2ZK4"
         ><strong>How Evolving Badges Work</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="ed887f2b7583048e5ef29dd942f85170d"
+    >
       <a href="#h_01JHNGJHBTQTJP84DKAJHNDF82"
         ><strong>Checking Your Nitro Badge Progress</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e4922efa8b5555fa7d2c594e3eb6d88ea"
+        >
           <a href="#h_01JKC1W938CK485Z7ZHEYEN4JH"><strong>Desktop</strong></a>
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="eb27dfeb7efebd1714eb8eb677ff38d9d"
+        >
           <a href="#h_01JKC1NQW3A80RBC220FDMJMAZ"><strong>Mobile</strong></a>
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e1a3e9a2c96bc0ec30d144ca5589c8cc6"
+    >
       <a href="#h_01JHNGJHBTT494G1SJ1RFVKJ5E"
         ><strong>Frequently Asked Questions</strong></a
       >
@@ -67,7 +86,7 @@
     height="251"
   />
 </p>
-<h4 id="h_01JHNGJHBTFS0SVM3T9A72D4CF" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JHNGJHBTFS0SVM3T9A72D4CF">
   <span style="color: #666666">Nitro Milestone Badge Evolution</span>
 </h4>
 <div class="info-box">
@@ -91,16 +110,12 @@
     height="475"
   />
 </p>
-<h4 id="h_01JKC1MMX5490C43TYBNMZDWYT" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JKC1MMX5490C43TYBNMZDWYT">
   <span style="color: #666666"
     >On Desktop: Evolving Profile Badge Card in Nitro Tab</span
   >
 </h4>
 <h2 id="h_01JKC1NQW3A80RBC220FDMJMAZ">Mobile</h2>
-<div class="exp-box">
-  <strong>Important</strong>: Evolving Nitro Badges on mobile is currently an
-  experiment available to a limited number of users.
-</div>
 <p>
   1. To check your current badge level on mobile, tap your
   <strong>avatar</strong> in the bottom right corner.  
@@ -118,14 +133,14 @@
     src="https://support.discord.com/hc/article_attachments/29786348750103"
     width="213"
     height="461"
-  /> 
-  <img
+  />
+   <img
     src="https://support.discord.com/hc/article_attachments/29786364051735"
     width="215"
     height="461"
   /> 
 </p>
-<h4 id="h_01JKC1P2ESE3V84TTMWNPX0B4P" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JKC1P2ESE3V84TTMWNPX0B4P">
   <span style="color: #666666"
     >On Mobile: Avatar Icon and Settings Icon (Left), Manage Nitro Settings
     (Right)</span
@@ -142,14 +157,13 @@
     width="308"
     height="429"
   />
-   
-  <img
+    <img
     src="https://support.discord.com/hc/article_attachments/29786348760727"
     width="197"
     height="428"
   />
 </p>
-<h4 id="h_01JKC1QZNR9QYRS1Q0MT9BNJNS" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JKC1QZNR9QYRS1Q0MT9BNJNS">
   <span style="color: #666666"
     >On Mobile: Evolving Profile Badge Card (Left), Nitro Badge Milestones
     (Right)</span
