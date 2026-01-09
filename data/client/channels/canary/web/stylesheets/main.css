@@ -2143,7 +2143,18 @@
   display: flex;
 }
 ._8a031a135bfcb9ba-headerStepIndicator {
-  margin-bottom: var(--space-12);
+  background-color: var(--background-mod-subtle);
+  border-radius: var(--radius-xs);
+  height: var(--space-8);
+  margin-bottom: var(--space-24);
+  overflow: hidden;
+  width: 120px;
+}
+._8a031a135bfcb9ba-progressBar {
+  background-color: var(--brand-500);
+  border-radius: var(--radius-xs);
+  display: block;
+  height: 100%;
 }
 ._8a031a135bfcb9ba-headerGradient:before {
   border-radius: var(--custom-border-radius) var(--custom-border-radius) 0 0;
@@ -100594,4 +100605,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.24eec8eedd820664.css.map*/
+/*# sourceMappingURL=web.6096bf337f347b15.css.map*/
