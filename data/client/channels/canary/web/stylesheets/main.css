@@ -17896,12 +17896,6 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.e599633bf6c09eb3-icon {
-  margin-bottom: 0.2rem;
-  vertical-align: middle;
-  -webkit-margin-end: var(--space-4);
-  margin-inline-end: var(--space-4);
-}
 .hljs {
   border-radius: 4px;
   display: block;
@@ -100600,4 +100594,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f5866924ed297b9b.css.map*/
+/*# sourceMappingURL=web.24eec8eedd820664.css.map*/
