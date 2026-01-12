@@ -26756,13 +26756,10 @@ div._3d3b08df7e9aa942-mobilePushContainer {
   padding: 20px;
 }
 ._50a5493e9d9cc496-authedAppV2 {
-  background-color: var(--background-surface-high);
+  background-color: var(--background-mod-subtle);
   border-radius: var(--radius-sm);
   margin-bottom: 16px;
   overflow: hidden;
-}
-._50a5493e9d9cc496-authedAppV2UserSettingsRedesign {
-  background-color: var(--background-mod-subtle);
 }
 ._50a5493e9d9cc496-header,
 ._50a5493e9d9cc496-headerV2 {
@@ -73503,7 +73500,7 @@ div.d74ef86df6475678-nagbar {
   grid-gap: 24px;
 }
 .c7f964e7e0fc8b47-connection {
-  background-color: var(--background-surface-high);
+  background-color: var(--background-mod-subtle);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   display: flex;
@@ -73511,9 +73508,6 @@ div.d74ef86df6475678-nagbar {
   gap: var(--space-20);
   padding: var(--space-16);
   width: 100%;
-}
-.c7f964e7e0fc8b47-connectionUserSettingsRedesign {
-  background-color: var(--background-mod-subtle);
 }
 .c7f964e7e0fc8b47-connectionHeader {
   align-items: center;
@@ -100605,4 +100599,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.1017c1d1e70ce70c.css.map*/
+/*# sourceMappingURL=web.09142422826fb095.css.map*/
