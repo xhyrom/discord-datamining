@@ -90,14 +90,27 @@ export class Domains implements Module {
 
       const comment = await postToGithub(result?.update?.hash.to, diff);
 
-      // TODO: switch to senders strategy
+      // TODO: Switch to senders strategy
+      const hyromsWebhookUrl = getWebhookFromEnv("DISCORD_WEBHOOK_MISCELLANEOUS");
+      const wumpusWebhookUrl = getWebhookFromEnv("WUMPUS_UNI_DISCORD_WEBHOOK_POSTS");
+      const messageContent = `<@&1112738631615008818>\n${
+        diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
+      }`;
+
       await postToDiscord(
-        getWebhookFromEnv("DISCORD_WEBHOOK_MISCELLANEOUS"),
+        hyromsWebhookUrl,
         result?.update?.hash.to,
         {
-          content: `<@&1112738631615008818>\n${
-            diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
-          }`,
+          content: messageContent,
+        },
+        comment.data.html_url,
+      );
+
+      await postToDiscord(
+        wumpusWebhookUrl,
+        result?.update?.hash.to,
+        {
+          content: messageContent,
         },
         comment.data.html_url,
       );
