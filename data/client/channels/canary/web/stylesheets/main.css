@@ -47525,7 +47525,7 @@ h2.feb59c8c6ec00ad9-title {
   color: var(--text-code-deletion);
 }
 .d285a61ed580c689-markdown {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -68709,18 +68709,16 @@ svg.c1e9c47c23f12ca3-radioIcon {
   justify-content: center;
 }
 ._7137c5e977587553-bannerContent {
+  align-items: flex-start;
+  display: flex;
   flex: 1;
   flex-direction: column;
   gap: 2px;
   justify-content: flex;
   min-height: 62px;
 }
-._7137c5e977587553-bannerContent,
 ._7137c5e977587553-bannerDescription {
   align-items: flex-start;
-  display: flex;
-}
-._7137c5e977587553-bannerDescription {
   text-align: start;
 }
 ._7137c5e977587553-buttonContainer {
@@ -68743,6 +68741,16 @@ svg.c1e9c47c23f12ca3-radioIcon {
   ._7137c5e977587553-buttonContainer {
     -webkit-margin-start: 0;
     margin-inline-start: 0;
+  }
+  ._7137c5e977587553-termsApplyAnchor {
+    -webkit-margin-start: 2px;
+    color: var(--text-link);
+    margin-inline-start: 2px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  ._7137c5e977587553-termsApplyAnchor:hover {
+    text-decoration: none;
   }
 }
 .d0d75b32e1ab86de-timerContainer {
@@ -100652,4 +100660,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.327e70371342ea42.css.map*/
+/*# sourceMappingURL=web.4656fc3e53e38b9a.css.map*/
