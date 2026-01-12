@@ -3219,6 +3219,7 @@
           USER_GUILD_SETTINGS: (e) =>
             "/users/@me/guilds/".concat(e, "/settings"),
           GAMES_DETECTABLE: "/games/detectable",
+          GAMES_BLOCKLIST: "/games/detectable/exclusions",
           NON_GAMES_DETECTABLE: "/applications/non-games/detectable",
           APPLICATIONS_GAMES_SUPPLEMENTAL: "/applications/games-supplemental",
           APPLICATION_ICON: (e, t) =>
@@ -4627,6 +4628,7 @@
           (r.RUNNING_GAME_HEARTBEAT = "running_game_heartbeat"),
           (r.GAME_DETECTION_COMPARISON = "game_detection_comparison"),
           (r.GAME_DETECTION_ERROR = "game_detection_error"),
+          (r.GAME_BLOCKLIST_TRIGGERED = "game_blocklist_triggered"),
           (r.ACTIVITY_UPDATED = "activity_updated"),
           (r.ACTIVITY_SESSION_JOINED = "activity_session_joined"),
           (r.ACTIVITY_SESSION_JOIN_FAILED = "activity_session_join_failed"),
@@ -6642,7 +6644,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-01-09-dfd4757360c87046d1086572ae8518c2d66e7df7-discord_web",
+              "2026-01-12-72910138de01f2b38868dd620246719fa1bbef6f-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6708,8 +6710,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "484344"),
-            a.YA("builtAt", String("1767985903225"));
+            a.YA("buildNumber", "484664"),
+            a.YA("builtAt", String("1768205904071"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -38254,4 +38256,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.197a46037a7f68bf.js.map
+//# sourceMappingURL=sentry.55e52bfd519adc87.js.map
