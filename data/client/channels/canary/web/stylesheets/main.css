@@ -84388,12 +84388,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --background-feedback-notification: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --background-feedback-positive: color-mix(
       in oklab,
       hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
@@ -84452,12 +84446,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--illo-pink-50-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-notification-background: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --bg-surface-overlay-tmp: color-mix(
@@ -84889,12 +84877,6 @@ html.disable-forced-colors * {
     --icon-feedback-info: color-mix(
       in oklab,
       var(--blue-new-24) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --icon-feedback-notification: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -86548,12 +86530,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --background-feedback-notification: color-mix(
-      in oklab,
-      var(--red-new-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --background-feedback-positive: color-mix(
       in oklab,
       hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
@@ -86612,12 +86588,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--illo-pink-10-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-notification-background: color-mix(
-      in oklab,
-      var(--red-new-50) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --bg-surface-overlay-tmp: color-mix(
@@ -87049,12 +87019,6 @@ html.disable-forced-colors * {
     --icon-feedback-info: color-mix(
       in oklab,
       var(--blue-new-56) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --icon-feedback-notification: color-mix(
-      in oklab,
-      var(--red-new-50) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -88710,12 +88674,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --background-feedback-notification: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --background-feedback-positive: color-mix(
       in oklab,
       hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
@@ -88774,12 +88732,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--illo-pink-50-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-notification-background: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --bg-surface-overlay-tmp: color-mix(
@@ -89211,12 +89163,6 @@ html.disable-forced-colors * {
     --icon-feedback-info: color-mix(
       in oklab,
       var(--blue-new-41) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --icon-feedback-notification: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -90892,12 +90838,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --background-feedback-notification: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --background-feedback-positive: color-mix(
       in oklab,
       hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
@@ -90956,12 +90896,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--illo-pink-50-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-notification-background: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --bg-surface-overlay-tmp: color-mix(
@@ -91393,12 +91327,6 @@ html.disable-forced-colors * {
     --icon-feedback-info: color-mix(
       in oklab,
       var(--blue-new-35) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --icon-feedback-notification: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -100845,4 +100773,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.053103c53595a28d.css.map*/
+/*# sourceMappingURL=web.e36b22f7f7333757.css.map*/
