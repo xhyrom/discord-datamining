@@ -59,8 +59,8 @@
 <p>
   You'll also receive an exclusive
   <strong>Checkpoint Avatar Decoration</strong> that you can display on your
-  profile through <strong>January 15, 2026</strong>, as a thank you gift for
-  being part of the Discord community! 
+  profile until <strong>January 15, 2026</strong>, as a thank you gift for being
+  part of the Discord community! 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -173,7 +173,7 @@
 </p>
 <p><strong>Q: How long will Checkpoint be available?</strong></p>
 <p>
-  A: You'll be able to view your 2025 Checkpoint through
+  A: You'll be able to view your 2025 Checkpoint until
   <strong>January 15, 2026</strong>. 
 </p>
 <p><strong>Q: Who can see my Checkpoint? </strong></p>
