@@ -40154,7 +40154,7 @@ div._34eac30af6a687c5-modalOverrideBody {
   position: relative;
 }
 .c0c49a3e5c8626ac-container:before {
-  background: linear-gradient(180deg, rgba(88, 101, 242, 0), #5865f2);
+  background: var(--custom-promotion-gradient);
   border-radius: 8px;
   content: "";
   inset: 0;
@@ -100661,4 +100661,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.003e65f47f45efa9.css.map*/
+/*# sourceMappingURL=web.3fa9109874a2d8d5.css.map*/
