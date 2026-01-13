@@ -63805,12 +63805,13 @@ svg.c1e9c47c23f12ca3-radioIcon {
   box-sizing: border-box;
   height: 52px;
   margin-inline: 16px 2px;
-  white-space: nowrap;
-}
-.b7f4b43fe1b6e285-name,
-.b7f4b43fe1b6e285-reactor {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.b7f4b43fe1b6e285-reactorInfo {
+  margin-inline: 10px;
+  min-width: 0;
 }
 .b7f4b43fe1b6e285-name {
   display: flex;
@@ -63819,22 +63820,22 @@ svg.c1e9c47c23f12ca3-radioIcon {
   -moz-user-select: text;
   user-select: text;
 }
-.b7f4b43fe1b6e285-ellipsized {
+.b7f4b43fe1b6e285-ellipsized,
+.b7f4b43fe1b6e285-name {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.b7f4b43fe1b6e285-ellipsized {
   white-space: nowrap;
 }
-.b7f4b43fe1b6e285-nickname {
-  line-height: 17px;
-}
 .b7f4b43fe1b6e285-username {
+  font-size: 12px;
   font-weight: var(--font-weight-medium);
+  line-height: 14px;
 }
 .b7f4b43fe1b6e285-tagFaded {
   flex-shrink: 10;
-  -webkit-padding-start: 6px;
   opacity: 0.6;
-  padding-inline-start: 6px;
 }
 .b7f4b43fe1b6e285-discriminator {
   color: var(--text-muted);
@@ -100660,4 +100661,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.4656fc3e53e38b9a.css.map*/
+/*# sourceMappingURL=web.003e65f47f45efa9.css.map*/
