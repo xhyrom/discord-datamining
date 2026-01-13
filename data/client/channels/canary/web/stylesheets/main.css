@@ -11797,6 +11797,11 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   flex-direction: row;
   gap: 8px;
 }
+._5ed150ae1491f8f7-orderSummaryContainer {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
 .e5f3a99c23b47bde-shaker {
   align-items: center;
   display: flex;
@@ -47667,6 +47672,70 @@ h2.feb59c8c6ec00ad9-title {
 }
 ._1f91841aa61c9ba6-fullLengthPaymentElementContainer {
   min-height: 900px;
+}
+.e6ce07c5ce605ec1-trigger {
+  all: unset;
+}
+.e6ce07c5ce605ec1-triggerContent {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: var(--space-4);
+}
+.full-motion .e6ce07c5ce605ec1-chevron {
+  transition: transform 0.1s ease-in-out;
+}
+[data-expanded] .e6ce07c5ce605ec1-chevron {
+  transform: rotate(-180deg);
+}
+.e6ce07c5ce605ec1-panel {
+  height: var(--disclosure-panel-height);
+  overflow: clip;
+  width: 100%;
+}
+.full-motion .e6ce07c5ce605ec1-panel {
+  transition: height 0.1s ease-in-out;
+}
+.ad82d8ee077e9029-divider {
+  background-color: var(--border-muted);
+  height: 1px;
+  margin-bottom: var(--space-16);
+  width: 100%;
+}
+.ad82d8ee077e9029-header {
+  gap: var(--space-24);
+  justify-content: space-between;
+  width: 100%;
+}
+.ad82d8ee077e9029-header,
+.ad82d8ee077e9029-totalSavings {
+  align-items: center;
+  display: flex;
+}
+.ad82d8ee077e9029-totalSavings {
+  gap: var(--space-4);
+  white-space: nowrap;
+}
+.ad82d8ee077e9029-lineItemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+  width: 100%;
+}
+.ad82d8ee077e9029-lineItem {
+  align-items: flex-start;
+  gap: var(--space-24);
+  width: 100%;
+}
+.ad82d8ee077e9029-lineItem,
+.ad82d8ee077e9029-totalDue {
+  display: flex;
+  justify-content: space-between;
+}
+.ad82d8ee077e9029-totalDue {
+  gap: var(--space-12);
+  margin-top: var(--space-12);
 }
 .cc5dd25190031396-wrapper {
   position: relative;
@@ -100663,4 +100732,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.3228482ab564e81a.css.map*/
+/*# sourceMappingURL=web.5612e38230a76d5c.css.map*/
