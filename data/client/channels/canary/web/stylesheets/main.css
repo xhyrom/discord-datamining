@@ -84952,12 +84952,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --icon-voice-muted: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --input-background-default: color-mix(
       in oklab,
       hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
@@ -87093,12 +87087,6 @@ html.disable-forced-colors * {
       hsl(var(--transparent-hsl) / 0) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
         var(--custom-theme-text-color-amount, 0%)
-    );
-    --icon-voice-muted: color-mix(
-      in oklab,
-      var(--red-new-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
     );
     --input-background-default: color-mix(
       in oklab,
@@ -89237,12 +89225,6 @@ html.disable-forced-colors * {
       hsl(var(--transparent-hsl) / 0) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
         var(--custom-theme-text-color-amount, 0%)
-    );
-    --icon-voice-muted: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
     );
     --input-background-default: color-mix(
       in oklab,
@@ -91401,12 +91383,6 @@ html.disable-forced-colors * {
       hsl(var(--transparent-hsl) / 0) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
         var(--custom-theme-text-color-amount, 0%)
-    );
-    --icon-voice-muted: color-mix(
-      in oklab,
-      var(--red-new-46) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
     );
     --input-background-default: color-mix(
       in oklab,
@@ -100773,4 +100749,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.e36b22f7f7333757.css.map*/
+/*# sourceMappingURL=web.1e0594581ba70993.css.map*/
