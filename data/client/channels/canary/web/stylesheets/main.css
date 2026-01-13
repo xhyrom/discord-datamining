@@ -43907,6 +43907,11 @@ html:not(.chat-input) .b1f01d03ecc7d736-inputInner {
   height: 173px;
   width: 133px;
 }
+._39b322c2a73a9168-flexCard {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
 ._39b322c2a73a9168-card:focus-within,
 ._39b322c2a73a9168-card:hover {
   transform: scale(1.025);
@@ -100749,4 +100754,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.1e0594581ba70993.css.map*/
+/*# sourceMappingURL=web.91d8c7d0fdee52fa.css.map*/
