@@ -6650,7 +6650,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-ee533bf1e1d8325adfbe32e4166af13d1a356a93",
+            release: "discord_web-1e2b62ae4545522e3edec776c274cbc781db4990",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6716,8 +6716,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "485195"),
-            a.YA("builtAt", String("1768326465423"));
+            a.YA("buildNumber", "485219"),
+            a.YA("builtAt", String("1768328118007"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -7182,6 +7182,13 @@
                   opacity: 0.0784313725490196,
                 },
               },
+              BACKGROUND_FEEDBACK_NOTIFICATION: {
+                category: "background",
+                [r.DARK]: { raw: "RED_400", opacity: 1 },
+                [r.LIGHT]: { raw: "RED_430", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
+                [r.DARKER]: { raw: "RED_400", opacity: 1 },
+              },
               BACKGROUND_FEEDBACK_POSITIVE: {
                 category: "background",
                 [r.DARK]: {
@@ -7323,6 +7330,13 @@
                 [r.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
                 [r.DARKER]: { raw: "BRAND_500", opacity: 1 },
               },
+              BADGE_NOTIFICATION_BACKGROUND: {
+                category: "generic",
+                [r.DARK]: { raw: "RED_400", opacity: 1 },
+                [r.LIGHT]: { raw: "RED_430", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
+                [r.DARKER]: { raw: "RED_400", opacity: 1 },
+              },
               BG_SURFACE_OVERLAY_TMP: {
                 category: "background",
                 [r.DARK]: { raw: "PRIMARY_800", opacity: 1 },
@@ -7365,6 +7379,19 @@
                 [r.LIGHT]: { raw: "PRIMARY_560", opacity: 0.96 },
                 [r.MIDNIGHT]: { raw: "PLUM_20", opacity: 0.96 },
                 [r.DARKER]: { raw: "PLUM_18", opacity: 0.96 },
+              },
+              BORDER_FEEDBACK_CRITICAL: {
+                category: "border",
+                [r.DARK]: { raw: "OPACITY_RED_20", opacity: 0.2 },
+                [r.LIGHT]: {
+                  raw: "OPACITY_RED_24",
+                  opacity: 0.23921568627450981,
+                },
+                [r.MIDNIGHT]: {
+                  raw: "OPACITY_RED_24",
+                  opacity: 0.23921568627450981,
+                },
+                [r.DARKER]: { raw: "OPACITY_RED_20", opacity: 0.2 },
               },
               BORDER_FOCUS: {
                 category: "border",
@@ -7877,6 +7904,13 @@
                 [r.MIDNIGHT]: { raw: "BLUE_345", opacity: 1 },
                 [r.DARKER]: { raw: "BLUE_345", opacity: 1 },
               },
+              ICON_FEEDBACK_NOTIFICATION: {
+                category: "generic",
+                [r.DARK]: { raw: "RED_400", opacity: 1 },
+                [r.LIGHT]: { raw: "RED_430", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
+                [r.DARKER]: { raw: "RED_400", opacity: 1 },
+              },
               ICON_FEEDBACK_POSITIVE: {
                 category: "generic",
                 [r.DARK]: { raw: "GREEN_330", opacity: 1 },
@@ -7946,6 +7980,13 @@
                 [r.LIGHT]: { raw: "TRANSPARENT", opacity: 0 },
                 [r.MIDNIGHT]: { raw: "TRANSPARENT", opacity: 0 },
                 [r.DARKER]: { raw: "TRANSPARENT", opacity: 0 },
+              },
+              ICON_VOICE_MUTED: {
+                category: "generic",
+                [r.DARK]: { raw: "RED_400", opacity: 1 },
+                [r.LIGHT]: { raw: "RED_430", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
+                [r.DARKER]: { raw: "RED_400", opacity: 1 },
               },
               INPUT_BACKGROUND_DEFAULT: {
                 category: "background",
@@ -38262,4 +38303,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.ac9ba430bc34ef79.js.map
+//# sourceMappingURL=sentry.e1a67fabb011141c.js.map
