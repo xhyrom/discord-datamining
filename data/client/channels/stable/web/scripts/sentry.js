@@ -3007,11 +3007,6 @@
             "/users/@me/valid-collectibles-gift-recipients-batch",
           COLLECTIBLES_MARKETING: "/users/@me/collectibles-marketing",
           COLLECTIBLES_SHOP: "/collectibles-shop",
-          CONSUMABLE_FETCH_PRICE: (e) => "/store/consumable/pricing/".concat(e),
-          CONSUME_HD_STREAMING_POTION: "/users/@me/consumable/hd-streaming",
-          FETCH_HD_STREAMING_ENTITLEMENT: "/users/@me/consumable/hd-streaming",
-          CONSUME_MESSAGE_CONFETTI_POTION: "/users/@me/consumable/confetti",
-          FETCH_MESSAGE_CONFETTI_ENTITLEMENT: "/users/@me/consumable/confetti",
           GUILD_MEMBER_BANNER: function (e, t, n) {
             let r =
               arguments.length > 3 && void 0 !== arguments[3]
@@ -4459,6 +4454,8 @@
           (r.REGISTER_INPUT_BLUR = "register_input_blur"),
           (r.SESSION_START = "session_start"),
           (r.APP_BACK_FORWARD_NAVIGATED = "app_back_forward_navigated"),
+          (r.MAIN_VIEW_ACTION_SHEET_SELECTED =
+            "main_view_action_sheet_selected"),
           (r.EXTERNAL_FINGERPRINT_DROPPED = "external_fingerprint_dropped"),
           (r.EXTERNAL_DYNAMIC_LINK_RECEIVED = "external_dynamic_link_received"),
           (r.DEEP_LINK_CLICKED = "deep_link_clicked"),
@@ -6032,11 +6029,6 @@
             "collectibles_shop_feed_shuffle_clicked"),
           (r.COLLECTIBLES_SHOP_FEED_SORT_CHANGED =
             "collectibles_shop_feed_sort_changed"),
-          (r.CONSUMABLE_HD_STREAMING_ENTRYPOINT =
-            "consumable_hd_streaming_entrypoint"),
-          (r.CONFETTI_POTION_TRIGGERED = "confetti_potion_triggered"),
-          (r.CONFETTI_POTION_ENTRYPOINT_CLICKED =
-            "confetti_potion_entrypoint_clicked"),
           (r.SLIDE_CAROUSEL_ITEM_VIEWED = "slide_carousel_item_viewed"),
           (r.SLIDE_CAROUSEL_PAGINATION_CLICKED =
             "slide_carousel_pagination_clicked"),
@@ -6651,7 +6643,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-01-13-2e90b4ac69b6f6224659742343df6e1f574901f3-discord_web",
+              "2026-01-14-2cf631cc73fe8e45f5e47e8cea37628b381c5341-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6717,8 +6709,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "485097"),
-            a.YA("builtAt", String("1768292313302"));
+            a.YA("buildNumber", "485595"),
+            a.YA("builtAt", String("1768378713067"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -7183,6 +7175,13 @@
                   opacity: 0.0784313725490196,
                 },
               },
+              BACKGROUND_FEEDBACK_NOTIFICATION: {
+                category: "background",
+                [r.DARK]: { raw: "RED_400", opacity: 1 },
+                [r.LIGHT]: { raw: "RED_430", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
+                [r.DARKER]: { raw: "RED_400", opacity: 1 },
+              },
               BACKGROUND_FEEDBACK_POSITIVE: {
                 category: "background",
                 [r.DARK]: {
@@ -7324,6 +7323,13 @@
                 [r.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
                 [r.DARKER]: { raw: "BRAND_500", opacity: 1 },
               },
+              BADGE_NOTIFICATION_BACKGROUND: {
+                category: "generic",
+                [r.DARK]: { raw: "RED_400", opacity: 1 },
+                [r.LIGHT]: { raw: "RED_430", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
+                [r.DARKER]: { raw: "RED_400", opacity: 1 },
+              },
               BG_SURFACE_OVERLAY_TMP: {
                 category: "background",
                 [r.DARK]: { raw: "PRIMARY_800", opacity: 1 },
@@ -7366,6 +7372,19 @@
                 [r.LIGHT]: { raw: "PRIMARY_560", opacity: 0.96 },
                 [r.MIDNIGHT]: { raw: "PLUM_20", opacity: 0.96 },
                 [r.DARKER]: { raw: "PLUM_18", opacity: 0.96 },
+              },
+              BORDER_FEEDBACK_CRITICAL: {
+                category: "border",
+                [r.DARK]: { raw: "OPACITY_RED_20", opacity: 0.2 },
+                [r.LIGHT]: {
+                  raw: "OPACITY_RED_24",
+                  opacity: 0.23921568627450981,
+                },
+                [r.MIDNIGHT]: {
+                  raw: "OPACITY_RED_24",
+                  opacity: 0.23921568627450981,
+                },
+                [r.DARKER]: { raw: "OPACITY_RED_20", opacity: 0.2 },
               },
               BORDER_FOCUS: {
                 category: "border",
@@ -7878,6 +7897,13 @@
                 [r.MIDNIGHT]: { raw: "BLUE_345", opacity: 1 },
                 [r.DARKER]: { raw: "BLUE_345", opacity: 1 },
               },
+              ICON_FEEDBACK_NOTIFICATION: {
+                category: "generic",
+                [r.DARK]: { raw: "RED_400", opacity: 1 },
+                [r.LIGHT]: { raw: "RED_430", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
+                [r.DARKER]: { raw: "RED_400", opacity: 1 },
+              },
               ICON_FEEDBACK_POSITIVE: {
                 category: "generic",
                 [r.DARK]: { raw: "GREEN_330", opacity: 1 },
@@ -7948,14 +7974,18 @@
                 [r.MIDNIGHT]: { raw: "TRANSPARENT", opacity: 0 },
                 [r.DARKER]: { raw: "TRANSPARENT", opacity: 0 },
               },
+              ICON_VOICE_MUTED: {
+                category: "generic",
+                [r.DARK]: { raw: "RED_400", opacity: 1 },
+                [r.LIGHT]: { raw: "RED_430", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
+                [r.DARKER]: { raw: "RED_400", opacity: 1 },
+              },
               INPUT_BACKGROUND_DEFAULT: {
                 category: "background",
                 [r.DARK]: { raw: "PRIMARY_700", opacity: 1 },
                 [r.LIGHT]: { raw: "BLACK", opacity: 0.08 },
-                [r.MIDNIGHT]: {
-                  raw: "PLUM_23_ALPHA",
-                  opacity: 0.10196078431372549,
-                },
+                [r.MIDNIGHT]: { raw: "BRAND_300", opacity: 0.1 },
                 [r.DARKER]: { raw: "PLUM_24", opacity: 0.85 },
                 gradient: {
                   light: { color: "BLACK_500", opacity: 0.1 },
@@ -7971,7 +8001,7 @@
               },
               INPUT_PLACEHOLDER_TEXT_DEFAULT: {
                 category: "background",
-                [r.DARK]: { raw: "INPUT_PLACEHOLDER_TEXT_DARK", opacity: 1 },
+                [r.DARK]: { raw: "PRIMARY_400", opacity: 1 },
                 [r.LIGHT]: { raw: "PRIMARY_460", opacity: 1 },
                 [r.MIDNIGHT]: { raw: "PLUM_9", opacity: 1 },
                 [r.DARKER]: { raw: "PLUM_10", opacity: 1 },
@@ -8702,10 +8732,7 @@
                 category: "generic",
                 [r.DARK]: { raw: "PRIMARY_660", opacity: 1 },
                 [r.LIGHT]: { raw: "BLACK", opacity: 0.08 },
-                [r.MIDNIGHT]: {
-                  raw: "PLUM_23_ALPHA",
-                  opacity: 0.10196078431372549,
-                },
+                [r.MIDNIGHT]: { raw: "BRAND_300", opacity: 0.1 },
                 [r.DARKER]: { raw: "PLUM_11", opacity: 0.12 },
                 gradient: {
                   light: { color: "gradient.secondary", opacity: 0.4 },
@@ -8755,10 +8782,7 @@
                 category: "generic",
                 [r.DARK]: { raw: "PRIMARY_700", opacity: 1 },
                 [r.LIGHT]: { raw: "BLACK", opacity: 0.08 },
-                [r.MIDNIGHT]: {
-                  raw: "PLUM_23_ALPHA",
-                  opacity: 0.10196078431372549,
-                },
+                [r.MIDNIGHT]: { raw: "BRAND_300", opacity: 0.1 },
                 [r.DARKER]: { raw: "PLUM_11", opacity: 0.12 },
               },
               REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND: {
@@ -9627,7 +9651,6 @@
             ILLO_YELLOW_50: "#f3ba2f",
             ILLO_YELLOW_60: "#e79418",
             ILLO_YELLOW_70: "#db6e00",
-            INPUT_PLACEHOLDER_TEXT_DARK: "#87898c",
             LOL: "#021f25",
             LOL_TEXT_DARK: "#94620f",
             LOL_TEXT_LIGHT: "#cbaa62",
@@ -10235,7 +10258,6 @@
             PINK_98: "#210018",
             PINK_99: "#190011",
             PLAYSTATION: "#032f87",
-            PLUM_23_ALPHA: "#bcbcf01a",
             PLUM_0: "#f9f9fa",
             PLUM_1: "#f3f3f4",
             PLUM_10: "#818491",
@@ -38263,4 +38285,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.d5328620d259694c.js.map
+//# sourceMappingURL=sentry.3dc49617bba69f82.js.map
