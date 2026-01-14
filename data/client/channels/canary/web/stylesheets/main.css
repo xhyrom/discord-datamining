@@ -7910,6 +7910,9 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   width: auto;
   will-change: opacity, transform;
 }
+._4e35b986167c457d-tooltipLayer {
+  pointer-events: none;
+}
 ._4e35b986167c457d-richTooltip {
   max-width: none;
   padding: 0;
@@ -100402,4 +100405,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.69d5802e66b110d5.css.map*/
+/*# sourceMappingURL=web.bbfa2364db16ae4d.css.map*/
