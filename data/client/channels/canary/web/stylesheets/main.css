@@ -47530,6 +47530,9 @@ h2.feb59c8c6ec00ad9-title {
 .c1e9c47c23f12ca3-item.c1e9c47c23f12ca3-hideInteraction {
   cursor: default;
 }
+.c1e9c47c23f12ca3-item:hover {
+  background-color: var(--background-mod-subtle);
+}
 .c1e9c47c23f12ca3-customItem {
   border-color: var(--interactive-text-default);
   color: var(--interactive-text-default);
@@ -100398,4 +100401,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.24fff8fdf61ec54a.css.map*/
+/*# sourceMappingURL=web.ec73a7342e404008.css.map*/
