@@ -3275,16 +3275,6 @@
   gap: var(--space-4);
   width: 100%;
 }
-.high-contrast-mode ._64e6155a0667273d-container {
-  border: 1px solid var(--border-normal);
-  border-radius: var(--radius-sm);
-}
-.high-contrast-mode ._64e6155a0667273d-radioGroupOption {
-  border-bottom: 1px solid var(--border-subtle);
-  border-radius: 0;
-  box-sizing: border-box;
-  margin-bottom: 0;
-}
 .enable-forced-colors ._64e6155a0667273d-outerRadioBorderStroke {
   stroke: ButtonText;
   opacity: 1;
@@ -100408,4 +100398,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.435fc4bf656fe429.css.map*/
+/*# sourceMappingURL=web.24fff8fdf61ec54a.css.map*/
