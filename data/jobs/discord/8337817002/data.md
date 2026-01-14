@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8337817002](https://discord.com/jobs/8337817002)
 
-**Updated At:** Mon, 22 Dec 2025 19:44:50 GMT
+**Updated At:** Wed, 14 Jan 2026 21:30:07 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.People come to Discord before, during, and after gaming, and we want to make that experience even better. Working directly with our developer partners and communities, we are building brand new ways for users on Discord to connect, engage and have a great time while gaming. We believe that gaming is better when playing with friends, and aim to provide the features and tooling for developers to help us enrich those experiences. This is also reflected in how we work! Our engineering culture values collaboration and building great teams. Come and join us!

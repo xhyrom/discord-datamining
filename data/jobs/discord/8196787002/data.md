@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8196787002](https://discord.com/jobs/8196787002)
 
-**Updated At:** Tue, 04 Nov 2025 00:18:20 GMT
+**Updated At:** Wed, 14 Jan 2026 21:30:07 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is seeking an experienced and passionate Staff Data Scientist to join our world-class Data Science &amp;amp; Analytics team! In this role, you will play a key part in helping Discord fulfill its mission of creating a sense of belonging in online communities. You’ll work closely with the teams that design, build, and support Discord, providing insights that directly influence user growth and enhance the user experience. If you’re driven by data, eager to make a meaningful impact, and excited to collaborate with an amazing team, we want to hear from you! If you’re passionate about data, impact, and working on an amazing team, read on!

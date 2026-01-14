@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8324819002](https://discord.com/jobs/8324819002)
 
-**Updated At:** Thu, 18 Dec 2025 22:43:47 GMT
+**Updated At:** Wed, 14 Jan 2026 21:30:07 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Technical Program Managers operate within the Engineering organization and have technical knowledge that enables them to manage company-wide programs, guide cross-team projects, and accelerate the execution of a team's roadmap. This is a Senior TPM role, reporting to the Senior Manager of TPM, responsible for developing and driving Safety programs, especially focused on compliance. If you are a productive, first-principles thinker, who develops strong relationships between partners we'd encourage you to apply!

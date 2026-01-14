@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8101803002](https://discord.com/jobs/8101803002)
 
-**Updated At:** Tue, 09 Dec 2025 00:30:03 GMT
+**Updated At:** Wed, 14 Jan 2026 21:30:07 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re looking for a&amp;nbsp;highly technical, creative, hands-on, and impact-focused Staff Software Engineer to join our growing Ads team. In this role, you will lead the creation of beautiful, intuitive user interfaces across Discord’s web and mobile platforms and build the next generation of engaging, user-forward ads products.

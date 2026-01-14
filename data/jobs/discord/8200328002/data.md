@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8200328002](https://discord.com/jobs/8200328002)
 
-**Updated At:** Thu, 18 Dec 2025 21:56:03 GMT
+**Updated At:** Wed, 14 Jan 2026 21:30:07 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Database Infrastructure team develops and operates all of Discord’s databases and data services. Those systems store the data of Discord's 200M+ monthly active users—including trillions of messages! We work across multiple areas: databases, disk storage and Rust-based data access services. We're a small team whose work has a huge impact on our company's success and ability to grow!

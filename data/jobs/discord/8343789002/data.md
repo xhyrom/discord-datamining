@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8343789002](https://discord.com/jobs/8343789002)
 
-**Updated At:** Wed, 17 Dec 2025 18:41:23 GMT
+**Updated At:** Wed, 14 Jan 2026 21:30:07 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.At Discord, we're building something special - a place where hundreds of millions of people connect, play, and belong. Our ads business is entering an exciting growth phase, and we need a Data Scientist who's passionate about building the reporting infrastructure that powers insights across our entire ads organization. You'll be instrumental in establishing the operational backbone that enables hundreds of stakeholders to make data-driven decisions with confidence and speed.
