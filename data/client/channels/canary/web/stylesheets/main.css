@@ -46785,7 +46785,6 @@ h3._1689b6e8323d95c2-improved:after {
   --custom-gradient-glow: var(--orange-new-10);
 }
 ._9258b50a9ae8aedb-progressContainer {
-  --custom-expressive-progress-height: 4px;
   --custom-background: var(--background-mod-normal);
   background: var(--custom-background);
   border-radius: 5px;
@@ -46794,6 +46793,14 @@ h3._1689b6e8323d95c2-improved:after {
   pointer-events: none;
   position: relative;
   width: 100%;
+}
+._9258b50a9ae8aedb-progressContainer._9258b50a9ae8aedb-light {
+  --custom-expressive-progress-height: 4px;
+  --custom-expressive-progress-glow-offset: -6px;
+}
+._9258b50a9ae8aedb-progressContainer._9258b50a9ae8aedb-medium {
+  --custom-expressive-progress-height: 6px;
+  --custom-expressive-progress-glow-offset: -5px;
 }
 ._9258b50a9ae8aedb-progress {
   --custom-min-width: 10px;
@@ -46817,7 +46824,7 @@ h3._1689b6e8323d95c2-improved:after {
   inset-inline-end: -3px;
   max-width: min(100%, 120px);
   position: absolute;
-  top: -6px;
+  top: var(--custom-expressive-progress-glow-offset);
   transform: perspective(400px) rotateY(-30deg);
   transform-origin: left center;
   width: 100%;
@@ -47666,6 +47673,7 @@ h2.feb59c8c6ec00ad9-title {
   padding: 0 8px;
 }
 .c1e9c47c23f12ca3-submenu {
+  max-height: var(--custom-floating-layer-max-height);
   max-width: 320px;
   min-width: 188px;
 }
@@ -78660,20 +78668,23 @@ html ._968a4b9cecf98b8c-invoiceCancelRow {
 ._803f2f55621144fb-sessions {
   margin: 32px 0;
 }
-._803f2f55621144fb-otherSessions {
+._803f2f55621144fb-session {
   display: flex;
   flex-direction: column;
-  margin-top: 16px;
 }
-._803f2f55621144fb-session {
+._803f2f55621144fb-session:first-child {
+  padding-top: 16px;
+}
+._803f2f55621144fb-currentSession {
+  padding-bottom: 16px;
+}
+._803f2f55621144fb-sessionContent {
   align-items: center;
-  border-bottom: 1px solid var(--border-subtle);
   display: flex;
   gap: 24px;
-  padding: 16px 0;
 }
-._803f2f55621144fb-session._803f2f55621144fb-currentSession {
-  border-bottom: none;
+._803f2f55621144fb-sessionSeparator {
+  margin-top: 24px;
 }
 ._803f2f55621144fb-sessionIcon {
   align-items: center;
@@ -78733,6 +78744,9 @@ html ._968a4b9cecf98b8c-invoiceCancelRow {
 }
 ._803f2f55621144fb-toolsTitle {
   margin-bottom: 0.5rem;
+}
+._803f2f55621144fb-logOutAllButtonRedesign {
+  margin-top: 24px;
 }
 @media (max-width: 900px) {
   ._8ab7e4190786a9c3-noticeImage {
@@ -100401,4 +100415,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.ec73a7342e404008.css.map*/
+/*# sourceMappingURL=web.016da1ddf1d11898.css.map*/
