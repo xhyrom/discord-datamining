@@ -1,5 +1,5 @@
 <h3 id="h_01HAWQ8WVV5J3QJZB16HSA858S">
-  <strong>Note: <br /></strong>- Stage channels are only available within
+  <strong>Note: </strong><br />- Stage channels are only available within
   Community servers. For more details on enabling community, please check
   <a
     href="https://support.discord.com/hc/en-us/articles/360047132851"
@@ -9,96 +9,98 @@
   >!
 </h3>
 <h1 id="h_01HAWQ8WVVTTGMSAQXBYR18WDY">
-  <strong>What does this FAQ cover? </strong>
+  <strong>What does this FAQ cover?</strong>
 </h1>
 <ul>
-  <li>
+  <li data-list-item-id="e09cf6f6e13794a6b77bf865d9fb1457b">
     <a href="#h_01F22AKG1WM0JYC69N1JW22JBZ" target="_self"
       >What are Stage channels?</a
     >
     <ul>
-      <li>
+      <li data-list-item-id="ee767ffaae9a64ceb54931738f43b2c49">
         <a href="#h_01GS8FEFA0X79N7SM76VGPD25D" target="_self" rel="undefined"
           >How do they work?</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e69f5cad0a69cdc77b3e75bca4d3eeb92">
         <a href="#h_01F22AKYY4AFEK1JDWG2THSVY7" target="_self"
           >Who can speak in a Stage channel?</a
         >
       </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/1500005513722#h_01HAWQ8WVWAQZJN2PVRSACY5RX"
-          >How do you start a Stage?</a
-        >
+      <li data-list-item-id="e9251f6d760d4c7e52d4605202854ac0c">
+        <a href="#h_01HAWQ8WVWAQZJN2PVRSACY5RX">How do you start a Stage?</a>
       </li>
     </ul>
   </li>
-  <li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="ed1198df7f36fd6ffee9f52b93e7138da"
+  >
     <a href="#h_01F22MRH0EKN1DQ7B820N2HV03" target="_self"
       ><strong>For Community Server Owners and Administrators</strong></a
     >
     <ul>
-      <li>
+      <li data-list-item-id="eae02bd8acaecca94688614747c2103d1">
         <a href="#h_01F22AMCVKHQGQB8N3EF30B20C" target="_self"
           >How do I create a Stage channel?</a
         >
       </li>
-      <li>
+      <li data-list-item-id="eb9796412a7e4c3686b5f37798544dfe3">
         <a href="#h_01GS8E8E90VZRG935WC9V8YRTD" target="_self"
           >How do I Enable Video or Screen Share? </a
         >
       </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/1500005513722#h_01HAWQ8WVWV89JR3T5HSP6PPKF"
+      <li data-list-item-id="eb7f96af14172fcee4bd3c45f47ebacb4">
+        <a href="#h_01HAWQ8WVWV89JR3T5HSP6PPKF"
           >Stage Channel Capabilities and Limits</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e8fa95e91943d02df68ef5847406a8772">
         <a href="#h_01F22D3YHY5BBCWABT7PARJY7B" target="_self"
           >How do I add/remove Stage moderators? </a
         >
       </li>
-      <li>
+      <li data-list-item-id="eb9f137946a570f04789f787e35745c0e">
         <a href="#h_01F22AMKZ3EY6EPFFBSA1SV0A5" target="_self"
           >How do I modify the “topic”?</a
         >
       </li>
     </ul>
   </li>
-  <li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="ef3484ffbd4b02404a9baad2c38a0707d"
+  >
     <a href="#h_01F22MRRG3GX0ZK0F575KT4S4A" target="_self"
       ><strong>For Stage Moderators</strong></a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e2e628a0778c44bd22281b8003bd80d24">
         <a href="#h_01F22AMT97VZQGR6AWBM8J7JSW" target="_self"
           >What can I do as a Stage moderator?</a
         >
         <ul>
-          <li>
+          <li data-list-item-id="e7a6c5d62eb4e126284a1c729be797adb">
             <a href="#h_01F22AN1BD3APW4A3GXP51NDM9" target="_self"
               >How do I remove members from the channel?</a
             >
           </li>
-          <li>
+          <li data-list-item-id="ede0335a0d0d14066a5b92c17a1596b78">
             <a href="#h_01F22AN7AG26H5VF1KDXT6VGY7" target="_self"
               >How do I move a Speaker to the audience?</a
             >
           </li>
-          <li>
+          <li data-list-item-id="e4a3fc6cb4dbe48060f1df3f0a887e8fc">
             <a href="#h_01F22ANCGPGRB5QEYQP5SM799K" target="_self"
               >How do I move an audience member to Speaker?</a
             >
           </li>
-          <li>
+          <li data-list-item-id="e10a45e171aa0c2a47db13b416574d829">
             <a href="#h_01F22ANJNXK2ZT2J6BMF8GYG9A" target="_self"
               >How can I see who has raised their hands?</a
             >
           </li>
-          <li>
+          <li data-list-item-id="eb2efc9d2e83cb1944c776a22a2486976">
             <a href="#h_01F22ANT5ZKD1PXF1RWZ2KG0ZD" target="_self"
               >How do I end the event in a Stage channel?</a
             >
@@ -107,31 +109,37 @@
       </li>
     </ul>
   </li>
-  <li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e0b78ba7792ac4708968281c6b9ee380a"
+  >
     <a href="#h_01F22MS0G91K4N4Y5FTT6MJQTQ" target="_self"
       ><strong>For Audience Members</strong></a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e1e15c45d388c63e174b816066a37c92d">
         <a href="#h_01F22AP1EMFQ3AJKGYJPJTR5RS" target="_self"
           >How do I join a Stage channel in a server?</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e505020b6debe299dd9474e47f6f3382d">
         <a href="#h_01F22APA7B25N302H1TRD8RRME" target="_self"
           >How do I request to speak as an audience member?</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e94a12b16b302cc275bf80f19e9dedce0">
         <a href="#h_01F22APEP97GCFNR008YFZ9EEN" target="_self"
           >How do I leave the Stage channel?</a
         >
       </li>
     </ul>
   </li>
-  <li>
-    <strong
-      ><a href="#h_01F22APKTBKBC6FAMVS8Q2ST89" target="_self">FAQs</a></strong
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="eb88e52b22e7363e0c2b56afb90dda2fb"
+  >
+    <a href="#h_01F22APKTBKBC6FAMVS8Q2ST89" target="_self"
+      ><strong>FAQs</strong></a
     >
   </li>
 </ul>
@@ -142,7 +150,7 @@
   <span style="font-weight: 400"
     ><strong
       ><img
-        src="https://support.discord.com/hc/article_attachments/1500007546062"
+        src="https://support.discord.com/hc/article_attachments/37687092354327"
         alt="1_NtFr9IAUxLPuiKKlRTK1zQ.png"
         width="694"
         height="278" /></strong
@@ -207,7 +215,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414283808023"
+      src="https://support.discord.com/hc/article_attachments/37687077121559"
       alt="EN-stage-channel-banner.png"
   /></span>
 </p>
@@ -221,7 +229,11 @@
   >
 </p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e5e92f34d403eb853fcb4101b5380bbd8"
+  >
     <strong>Speakers </strong
     ><span style="font-weight: 400"
       >are people who can talk in the channel. Speakers can easily move
@@ -229,20 +241,32 @@
       button. </span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ef472070781427d9d4f53fad710f10bef"
+  >
     <strong>Stage moderators</strong
     ><span style="font-weight: 400">
       are special speakers who can set a topic on the Stage channel and open
       it.</span
     >
     <ul>
-      <li style="font-weight: 400" aria-level="1">
+      <li
+        style="font-weight: 400"
+        aria-level="1"
+        data-list-item-id="e3739778212a33fb58a4c371c44b5ea91"
+      >
         <span style="font-weight: 400"
           >They also have the power to add, mute, and remove other speakers. In
           short, they’re in charge of keeping the conversation flowing.</span
         >
       </li>
-      <li style="font-weight: 400" aria-level="2">
+      <li
+        style="font-weight: 400"
+        aria-level="2"
+        data-list-item-id="e4140ca58350a30ebce929e85978a96bd"
+      >
         <span style="font-weight: 400"
           >You can add entire roles or individual members to have Stage
           Moderator permissions.</span
@@ -250,7 +274,11 @@
       </li>
     </ul>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e4d5b9186a4c70f25ef2af0373e267adc"
+  >
     <span style="font-weight: 400"
       >All server members (with permission to view the channel) will join Stage
       channels as the </span
@@ -277,19 +305,39 @@
   >
 </p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ecd4f32bef6d13959e61f83477c520564"
+  >
     <span style="font-weight: 400">Manage Channel</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ec6410cc7e6ef111bc0dc2db8ea743dfe"
+  >
     <span style="font-weight: 400">Manage Permissions</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e85c98e85bd505479c69ec1d1a4188976"
+  >
     <span style="font-weight: 400">Move Members</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e1ae5fb94d651536e93d0555d2e9d15c6"
+  >
     <span style="font-weight: 400">Mention @ everyone when a Stage starts</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e8f942341b1112c62e676a0931abbbf16"
+  >
     <span style="font-weight: 400">Manage Events</span>
   </li>
 </ul>
@@ -301,21 +349,21 @@
   >
 </p>
 <ul>
-  <li aria-level="1">
+  <li aria-level="1" data-list-item-id="e7474c2bb2edeb5da351b531b9ebcb843">
     <strong>Start the Stage </strong
     ><span style="font-weight: 400"
       >will open up the Stage channel for server members to either join the
       audience. You will need to input a topic for discussion!</span
     >
   </li>
-  <li aria-level="1">
+  <li aria-level="1" data-list-item-id="eca0c1430debe0e67395b8fc919236e13">
     <strong>Create Event </strong
     ><span style="font-weight: 400"
       >will take you through the steps to set up and schedule an event that can
       take place in the Stage channel.</span
     >
   </li>
-  <li aria-level="1">
+  <li aria-level="1" data-list-item-id="eebe2ec52f4f966223479a03ca90f04d0">
     <strong>Continue without starting </strong
     ><span style="font-weight: 400"
       >will allow you to open the Stage channel without inputting a topic for
@@ -329,7 +377,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414343351703"
+      src="https://support.discord.com/hc/article_attachments/37687092357783"
       alt="EN-waiting-stage-to-start-options.png"
   /></span>
 </p>
@@ -350,7 +398,7 @@
   >
 </p>
 <h1 id="h_01F22MRH0EKN1DQ7B820N2HV03">
-  <strong>For Community Server Owners and Administrators<br /></strong>
+  <strong>For Community Server Owners and Administrators</strong>
 </h1>
 <p>
   If you're ready to start running your event in your community server, follow
@@ -375,21 +423,21 @@
 <p>
   In order to create a Stage Channel, you will need to have the “<strong
     >Manage Channels</strong
-  >” and “<strong>Manage Roles</strong>” enabled for you in the server.
+  >” permission enabled for you in the server.
 </p>
 <p>
   <span style="font-weight: 400"
     >If your server is already a Community server and you have the needed
-    permissions, follow these steps below:
-  </span>
+    permissions, follow these steps below:</span
+  >
 </p>
 <ol>
-  <li>
+  <li data-list-item-id="e36885c80da51dd4ef996e6a091a2fcf0">
     <span style="font-weight: 400"
-      ><strong>Start by creating a new channel.</strong>
-    </span>
+      ><strong>Start by creating a new channel.</strong> </span
+    >
     <ul>
-      <li>
+      <li data-list-item-id="e8f28ee311d760eaa023194504bc5d85a">
         <span style="font-weight: 400"
           >You can do this by pressing the “+” button in the sidebar channel
           list or by heading into the Server Settings menu and selecting "Create
@@ -398,18 +446,24 @@
       </li>
     </ul>
   </li>
-  <li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e4bb9ef1f194bc1ffecb8effd07b83b84"
+  >
     <strong>Select the “Stage Channel” option as the Channel Type</strong>
     <ul>
-      <li>
+      <li data-list-item-id="eb8afbc6a51d4632a6191e991af54e806">
         <span style="font-weight: 400"
-          >Note that currently only users with Manage Channels and Manage Roles
-          can create new Stage channels!</span
+          >Note that currently only users with Manage Channels can create new
+          Stage channels!</span
         >
       </li>
     </ul>
   </li>
-  <li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="edd05463660b3c2a4fc997519b95b3b75"
+  >
     <strong
       >Once you hit "Next", you will be prompted to add roles or members who you
       want to grant Stage moderator permission to. </strong
@@ -419,7 +473,7 @@
 <p class="wysiwyg-text-align-center">
   <strong
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414282993559"
+      src="https://support.discord.com/hc/article_attachments/37687092359063"
       alt="EN-create-stage-channel.gif"
   /></strong>
 </p>
@@ -435,7 +489,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414343193879"
+      src="https://support.discord.com/hc/article_attachments/37687077125399"
       alt="EN-Stage-Channel-video-button.png"
   /></span>
 </p>
@@ -448,7 +502,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414343100951"
+      src="https://support.discord.com/hc/article_attachments/37687092360215"
       alt="EN-Stage-Channel-go-live-button.png"
   /></span>
 </p>
@@ -466,7 +520,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414343225751"
+      src="https://support.discord.com/hc/article_attachments/37687092360983"
       alt="EN-video-permission-role-stage-channelrole.png"
   /></span>
 </p>
@@ -501,13 +555,21 @@
   >
 </p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e3f026cf847e1a81dc7599dcca2224dbf"
+  >
     <span style="font-weight: 400">There is </span><strong>no limit</strong
     ><span style="font-weight: 400">
       on how many people can be on stage and talking.</span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e7cdb411228ed97832e738d0c0f49f148"
+  >
     <span style="font-weight: 400">Audience Viewing Size: </span
     ><strong>Up to 10,000</strong>
   </li>
@@ -518,9 +580,17 @@
   >
 </p>
 <ul>
-  <li style="list-style-type: none">
+  <li
+    style="list-style-type: none"
+    data-list-item-id="ec41555f43ff8c51ebd00aeac282e920a"
+  >
+     
     <ul>
-      <li style="font-weight: 400" aria-level="1">
+      <li
+        style="font-weight: 400"
+        aria-level="1"
+        data-list-item-id="e78ffeb806ada5e8989fe51c30c7b24b4"
+      >
         <span style="font-weight: 400"
           >Stage moderators/server admins and Stage speakers with the proper
           permission can  </span
@@ -530,43 +600,56 @@
       </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="e8ac6dde9aa183069277cdc3b3c6e569f">
     <strong>Up to 5 people</strong
     ><span style="font-weight: 400">
       on Stage can enable their cameras and </span
     ><strong>Turn On Video</strong><span style="font-weight: 400">.</span>
     <ul>
-      <li>
+      <li data-list-item-id="e5f62447e190ca4f0c637004350fd1dc9">
         <span style="font-weight: 400"
           >Audience participants in a Stage automatically tune into both the
           screen share and the speakers’ videos.</span
         >
         <ul>
-          <li>
+          <li data-list-item-id="e4019aac7b537e386cefcb6e9da57cc37">
             <span style="font-weight: 400">Audiencing Viewing Size:</span>
           </li>
         </ul>
       </li>
-      <li> <strong>Free: 50 </strong></li>
-      <li><strong>Boosting Tier 2: 150</strong></li>
-      <li><strong>Boosting Tier 3: 300</strong></li>
+      <li data-list-item-id="e51c81768515541b02af4f19e282e3fa5">
+         <strong>Free: 50 </strong>
+      </li>
+      <li
+        class="ck-list-marker-bold"
+        data-list-item-id="e32dc17414307c103c60cc796b85a05c7"
+      >
+        <strong>Boosting Tier 2: 150</strong>
+      </li>
+      <li
+        class="ck-list-marker-bold"
+        data-list-item-id="ea28a4fe32850f7631fb56d88ff767f2f"
+      >
+        <strong>Boosting Tier 3: 300</strong>
+      </li>
     </ul>
   </li>
 </ul>
 <h3 id="docs-internal-guid-866baad7-7fff-0b59-53cc-4325dca33b60">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Once a server has reached the minimum 14 boosts for Tier 3, each additional
-    boost afterwards will give an additional 30 seats (up to a maximum of 10,000
-    seats) to Stages using video or screen share.<br /></span
-  ><span style="font-weight: 400"
-    >Want to learn more about Server Boosting? You can check out this article
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360028038352"
-      target="_blank"
-      rel="noopener noreferrer"
-      >here</a
-    >.</span
-  >
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Once a server has reached the minimum 14 boosts for Tier 3, each
+      additional boost afterwards will give an additional 30 seats (up to a
+      maximum of 10,000 seats) to Stages using video or screen share.</span
+    ></span
+  ><br /><span style="font-weight: 400"
+    >Want to learn more about Server Boosting? You can check out this article </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/360028038352"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span style="font-weight: 400">here</span></a
+  ><span style="font-weight: 400">.</span>
 </h3>
 <p>
   <strong
@@ -575,14 +658,22 @@
   >
 </p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e6d9cf71a286842e77af3090e17a6078b"
+  >
     <span style="font-weight: 400"
       >If video/Go Live has already started in the Stage channel and the
       audience viewing size has reached its maximum limit, no more users can
       join.</span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e8cd970d2a11b2c4c52301f9385bc65fe"
+  >
     <span style="font-weight: 400"
       >If video/Go Live has not started and the stage has more than 50 audience
       members (and is not Boosted to allow for a greater audience viewing size)
@@ -606,8 +697,8 @@
     ><strong>Note:</strong> In order to modify the Stage moderators, you will
     need to have the “<strong>Manage Channels</strong>” and “<strong
       >Manage Roles</strong
-    >” enabled in the server.
-  </span>
+    >” enabled in the server.</span
+  >
 </h3>
 <p>
   <span style="font-weight: 400"
@@ -625,15 +716,33 @@
   >
 </p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">Manage Channels</li>
-  <li style="font-weight: 400" aria-level="1">Mute Members</li>
-  <li style="font-weight: 400" aria-level="1">Move Members</li>
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="eeef7ccbefe28d6a2ddc40543867b74f6"
+  >
+    Manage Channels
+  </li>
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e00d7aeca87769712c8c2012c0f797b11"
+  >
+    Mute Members
+  </li>
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e7fb4b2481dba17aad7f354c3e28334ca"
+  >
+    Move Members
+  </li>
 </ul>
 <p>
   <span style="font-weight: 400"
     >You can also add or remove additional Stage moderators after you’ve created
-    the Stage channel by going into your Channel settings!
-  </span>
+    the Stage channel by going into your Channel settings!</span
+  >
 </p>
 <p>
   <span style="font-weight: 400">On the desktop app, once you press the</span
@@ -646,7 +755,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414282674199"
+      src="https://support.discord.com/hc/article_attachments/37687092363671"
       alt="EN-add-or-remove-stage-moderator-stage-channel.gif"
   /></span>
 </p>
@@ -674,7 +783,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414282691095"
+      src="https://support.discord.com/hc/article_attachments/37687077128087"
       alt="EN-change-topic-in-stage-channel.gif"
   /></span>
 </p>
@@ -692,30 +801,54 @@
   >
 </p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e1284bec7d33854362c864e19d0abd047"
+  >
     <span style="font-weight: 400"
       >Move yourself from Speaker to audience and vice versa.</span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ef6ebe3723862b099ba1b5b87c7ec4531"
+  >
     <span style="font-weight: 400"
       >Disconnect members (from Stage Channel)</span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e82ff7f857b1fe65641dc3fda3b2d2de2"
+  >
     <span style="font-weight: 400">Move members from Speakers to audience</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e54c03e9636a95ec9e0caf5da06e386c4"
+  >
     <span style="font-weight: 400"
       >Move members from audience to Speakers. </span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e59959c2b3efe215d346a78833f838a14"
+  >
     <span style="font-weight: 400"
       >View audience members who have requested to speak. </span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e5ce82e008e9cf22cb8b3b9cbc36b71fc"
+  >
     <span style="font-weight: 400">Enable or disable requests to speak.</span>
   </li>
 </ul>
@@ -723,20 +856,22 @@
   <strong>How do I remove members from the channel?</strong>
 </h2>
 <p>
-  <span class="wysiwyg-font-size-large" style="font-weight: 400"
-    ><strong>For Desktop/Browser:</strong></span
+  <span class="wysiwyg-font-size-large"
+    ><span style="font-weight: 400"
+      ><strong>For Desktop/Browser:</strong></span
+    ></span
   >
 </p>
 <p>
   <span style="font-weight: 400"
     >As a Stage moderator, you can right-click a specific audience member and
     then a menu will appear where you can press the “Disconnect from Stage”
-    button to remove (kick) that member from the Stage channel.
-  </span>
+    button to remove (kick) that member from the Stage channel.</span
+  >
 </p>
 <p>
-  <span class="wysiwyg-font-size-large" style="font-weight: 400"
-    ><strong>For Mobile:</strong></span
+  <span class="wysiwyg-font-size-large"
+    ><span style="font-weight: 400"><strong>For Mobile:</strong></span></span
   >
 </p>
 <p>
@@ -758,8 +893,8 @@
   can
   <span style="font-weight: 400"
     >select the “Move to Audience” button to move that speaker to a listener
-    role in the audience.
-  </span>
+    role in the audience.</span
+  >
 </p>
 <p>
   <span style="font-weight: 400"
@@ -770,7 +905,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414275676823"
+      src="https://support.discord.com/hc/article_attachments/37687077128471"
       alt="EN-move-speaker-to-audience-stage-channel.png"
   /></span>
 </p>
@@ -787,8 +922,10 @@
   <strong>How do I move an audience member to Speaker?</strong>
 </h2>
 <p>
-  <span class="wysiwyg-font-size-large" style="font-weight: 400"
-    ><strong>For Desktop/Browser:</strong></span
+  <span class="wysiwyg-font-size-large"
+    ><span style="font-weight: 400"
+      ><strong>For Desktop/Browser:</strong></span
+    ></span
   >
 </p>
 <p>
@@ -806,13 +943,13 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/12414275384855"
+    src="https://support.discord.com/hc/article_attachments/37687092364567"
     alt="EN-invite-to-speak-menu-option-stage-channel.png"
   />
 </p>
 <p>
-  <span class="wysiwyg-font-size-large" style="font-weight: 400"
-    ><strong>For Mobile:</strong></span
+  <span class="wysiwyg-font-size-large"
+    ><span style="font-weight: 400"><strong>For Mobile:</strong></span></span
   >
 </p>
 <p>
@@ -835,7 +972,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/12414275812887"
+    src="https://support.discord.com/hc/article_attachments/37687077131159"
     alt="EN-request-to-speak-icon.png"
   />
 </p>
@@ -846,10 +983,13 @@
   >
 </p>
 <ul>
-  <li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e88fca76a3d3c720a9c6121aec0e54042"
+  >
     <strong>Accept or Dismiss Requests to Speak</strong>
     <ul>
-      <li>
+      <li data-list-item-id="e3ff9ccad57324d70e285828ae99cff76">
         <span style="font-weight: 400"
           >Grant access to speak by clicking the Invite to Speak button or
           r</span
@@ -860,10 +1000,13 @@
       </li>
     </ul>
   </li>
-  <li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="ec33154c8712d5ed721273d3d4996e4e1"
+  >
     <strong>Allow Requests to Speak from @everyone</strong>
     <ul>
-      <li>
+      <li data-list-item-id="e537596815614e87b3d3d14aeeba8b6b3">
         <span style="font-weight: 400"
           >You can also turn off the ability for audience members to raise their
           hands by turning off the toggle next to “Allow requests to
@@ -876,7 +1019,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414283698583"
+      src="https://support.discord.com/hc/article_attachments/37687092367127"
       alt="EN-request-to-speak-menu.png"
   /></span>
 </p>
@@ -885,8 +1028,9 @@
 </h2>
 <p>
   <span style="font-weight: 400"
-    >The live event will end whenever the last moderator leaves the channel.
-  </span>
+    >The live event will end whenever the last moderator leaves the
+    channel.</span
+  >
 </p>
 <p>
   <span style="font-weight: 400"
@@ -932,7 +1076,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414275537815"
+      src="https://support.discord.com/hc/article_attachments/37687077133463"
       alt="EN-join-stage-disconnect-quietly.gif"
   /></span>
 </p>
@@ -948,7 +1092,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414950793111"
+      src="https://support.discord.com/hc/article_attachments/37687077133847"
       alt="EN-Request-To-Speak.png"
   /></span>
 </p>
@@ -969,7 +1113,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12414283119767"
+      src="https://support.discord.com/hc/article_attachments/37687092369687"
       alt="EN-invite-to-speak-banner-stage-channel.png"
   /></span>
 </p>
@@ -979,8 +1123,8 @@
 <p>
   <span style="font-weight: 400"
     >If you want to exit the Stage channel simply press the “Exit Quietly”
-    button in the bottom right of the action bar.
-  </span>
+    button in the bottom right of the action bar.</span
+  >
 </p>
 <p>
   <span style="font-weight: 400"
@@ -990,25 +1134,25 @@
 </p>
 <h1 id="h_01F22APKTBKBC6FAMVS8Q2ST89"><strong>FAQs</strong></h1>
 <p>
-  <strong
-    >Q: What version of the app will this feature be available on? <br /></strong
-  ><strong>A: </strong>All versions - desktop, browser, iOS and Android!
+  <strong>Q: What version of the app will this feature be available on? </strong
+  ><br /><strong>A: </strong>All versions - desktop, browser, iOS and Android!
 </p>
 <p id="docs-internal-guid-bba4ab1a-7fff-afff-cc6b-5f1ca13444e3">
   <strong>Q: How many people can be in a Stage channel at once?</strong
-  ><strong><br /></strong><strong>A:</strong> Stage Channels can currently
-  support up to 10,000 people. 
+  ><br /><strong>A:</strong> Stage Channels can currently support up to 10,000
+  people. 
 </p>
 <h3 id="h_01HAWQ8WVW3C50MC0J4RMKT9CZ">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Note: To video or screen share on stage up to 10,000 people, your server
-    will need to be boosted up to 338 boosts in total.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Note: To video or screen share on stage up to 10,000 people, your server
+      will need to be boosted up to 338 boosts in total.</span
+    ></span
   >
 </h3>
 <p>
-  <strong
-    >Q: Is there any limit to the amount of moderators I can have?<br /></strong
-  ><strong>A: </strong
+  <strong>Q: Is there any limit to the amount of moderators I can have?</strong
+  ><br /><strong>A: </strong
   ><span style="font-weight: 400"
     >No, but remember that the Stage moderators of the Stage channel have the
     ability to mute or remove any member from it.</span
@@ -1016,42 +1160,40 @@
 </p>
 <p>
   <strong
-    >Q: Is there any limit to the amount of speakers I can have at once?<br /></strong
-  ><span style="font-weight: 400"
+    >Q: Is there any limit to the amount of speakers I can have at once?</strong
+  ><br /><span style="font-weight: 400"
     ><strong>A:</strong> No limit on the number of audio-only Speakers! However,
     there is a limit of 1 Go Live stream and up to 5 video participants at a
     time.</span
   >
 </p>
 <p>
-  <strong>Q: Can I run multiple stage channels at a time?<br /></strong
-  ><strong>A: </strong>Y<span style="font-weight: 400"
+  <strong>Q: Can I run multiple stage channels at a time?</strong><br /><strong
+    >A: </strong
+  >Y<span style="font-weight: 400"
     >es, you can have multiple different active events within a server!</span
   >
 </p>
 <p>
   <strong
-    >Q: Are there limits to the amount of Stage channels I can have?<br /></strong
-  ><strong>A: </strong
+    >Q: Are there limits to the amount of Stage channels I can have?</strong
+  ><br /><strong>A: </strong
   ><span style="font-weight: 400"
     >There is no special limit for the amount of Stage channels you can have in
-    one server!<br
-  /></span>
-</p>
-<p>
-  <strong>Q: Is video or screen share in stages available?<br /></strong
-  ><strong>A: </strong
-  ><span style="font-weight: 400"
-    >Yes! Video and screen share are now available. Please refer to the
-    <a
-      href="https://support.discord.com/hc/en-us/articles/1500005513722#h_01GS8E8E90VZRG935WC9V8YRTD"
-      >section</a
-    >
-    above for details.</span
+    one server!</span
   >
 </p>
 <p>
-  <strong>Q: Is text chat in stage available?<br /></strong><strong>A: </strong
+  <strong>Q: Is video or screen share in stages available?</strong><br /><strong
+    >A: </strong
+  ><span style="font-weight: 400"
+    >Yes! Video and screen share are now available. Please refer to the </span
+  ><a href="#h_01GS8E8E90VZRG935WC9V8YRTD"
+    ><span style="font-weight: 400">section</span></a
+  ><span style="font-weight: 400"> above for details.</span>
+</p>
+<p>
+  <strong>Q: Is text chat in stage available?</strong><br /><strong>A: </strong
   ><span style="font-weight: 400"
     >Yes! We now have text chat in stage available so you can chat directly in
     your stage channel.</span
