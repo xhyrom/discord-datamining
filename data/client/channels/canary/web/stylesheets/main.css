@@ -45145,7 +45145,7 @@ strong {
 ._1689b6e8323d95c2-video {
   border-radius: 3px;
 }
-@media (max-width: 490px) {
+@media (max-width: 480px) {
   ._1689b6e8323d95c2-video {
     width: auto !important;
   }
@@ -54016,6 +54016,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 ._25879e61a07a0d84-section {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
 }
 ._25879e61a07a0d84-newBadge {
@@ -54545,6 +54546,12 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 .def11f7e777299ea-sectionsContainer {
   flex: 1;
+}
+@media (min-width: 937px) {
+  .def11f7e777299ea-sectionsContainer {
+    box-sizing: border-box;
+    max-width: 337px;
+  }
 }
 ._39749d1aeeec7c43-floatingNitroUpsell {
   inset: auto;
@@ -100434,4 +100441,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.35905ef2f91f8062.css.map*/
+/*# sourceMappingURL=web.0c9f297b918d57b5.css.map*/
