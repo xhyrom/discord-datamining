@@ -64317,12 +64317,12 @@ svg.c1e9c47c23f12ca3-radioIcon {
   flex-shrink: 0;
   position: relative;
 }
-._75e8ee170883da62-currentUserAvatar,
 ._75e8ee170883da62-recipientUserAvatar {
   background-color: var(--background-surface-high);
 }
 ._75e8ee170883da62-currentUserAvatar {
-  border: 2px solid var(--background-surface-high);
+  background-color: var(--background-mod-muted);
+  border: 2px solid var(--background-mod-muted);
   bottom: -3px;
   inset-inline-end: -2px;
   position: absolute;
@@ -64332,6 +64332,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
   flex-direction: column;
   -webkit-margin-start: 12px;
   margin-inline-start: 12px;
+  padding-top: var(--space-6);
 }
 ._75e8ee170883da62-subHeaderContainer {
   align-items: center;
@@ -64354,6 +64355,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 ._4ea495c7880c982f-messageContentContainer {
   padding-bottom: 8px;
   padding-top: 16px;
+  width: 100%;
 }
 ._4ea495c7880c982f-iconContainer {
   height: 100%;
@@ -100441,4 +100443,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.0c9f297b918d57b5.css.map*/
+/*# sourceMappingURL=web.6b2e6d55b53cce6b.css.map*/
