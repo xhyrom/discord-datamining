@@ -941,12 +941,7 @@
   },
   "FETCH_HD_STREAMING_ENTITLEMENT": {
     "url": "/users/@me/consumable/hd-streaming",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "CONSUME_MESSAGE_CONFETTI_POTION": {
     "url": "/users/@me/consumable/confetti",
