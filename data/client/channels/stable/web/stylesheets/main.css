@@ -3275,6 +3275,16 @@
   gap: var(--space-4);
   width: 100%;
 }
+.high-contrast-mode ._64e6155a0667273d-container {
+  border: 1px solid var(--border-normal);
+  border-radius: var(--radius-sm);
+}
+.high-contrast-mode ._64e6155a0667273d-radioGroupOption {
+  border-bottom: 1px solid var(--border-subtle);
+  border-radius: 0;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
 .enable-forced-colors ._64e6155a0667273d-outerRadioBorderStroke {
   stroke: ButtonText;
   opacity: 1;
@@ -11134,7 +11144,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   align-items: center;
   container: outer-container/inline-size;
   display: flex;
-  height: 100dvh;
+  height: 100vh;
   justify-content: center;
   width: calc(100vw - var(--devtools-sidebar-width, 0px));
 }
@@ -11168,9 +11178,6 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
     overflow-y: auto;
     padding-top: var(--custom-app-top-bar-height);
     width: 100%;
-  }
-  .is-mobile .e4491282b6a5364a-modal {
-    padding-top: 0;
   }
   .e4491282b6a5364a-modalContent {
     border-top: 1px solid var(--border-muted);
@@ -46785,6 +46792,7 @@ h3._1689b6e8323d95c2-improved:after {
   --custom-gradient-glow: var(--orange-new-10);
 }
 ._9258b50a9ae8aedb-progressContainer {
+  --custom-expressive-progress-height: 4px;
   --custom-background: var(--background-mod-normal);
   background: var(--custom-background);
   border-radius: 5px;
@@ -46793,14 +46801,6 @@ h3._1689b6e8323d95c2-improved:after {
   pointer-events: none;
   position: relative;
   width: 100%;
-}
-._9258b50a9ae8aedb-progressContainer._9258b50a9ae8aedb-light {
-  --custom-expressive-progress-height: 4px;
-  --custom-expressive-progress-glow-offset: -6px;
-}
-._9258b50a9ae8aedb-progressContainer._9258b50a9ae8aedb-medium {
-  --custom-expressive-progress-height: 6px;
-  --custom-expressive-progress-glow-offset: -5px;
 }
 ._9258b50a9ae8aedb-progress {
   --custom-min-width: 10px;
@@ -46824,7 +46824,7 @@ h3._1689b6e8323d95c2-improved:after {
   inset-inline-end: -3px;
   max-width: min(100%, 120px);
   position: absolute;
-  top: var(--custom-expressive-progress-glow-offset);
+  top: -6px;
   transform: perspective(400px) rotateY(-30deg);
   transform-origin: left center;
   width: 100%;
@@ -47537,9 +47537,6 @@ h2.feb59c8c6ec00ad9-title {
 .c1e9c47c23f12ca3-item.c1e9c47c23f12ca3-hideInteraction {
   cursor: default;
 }
-.c1e9c47c23f12ca3-item:hover {
-  background-color: var(--background-mod-subtle);
-}
 .c1e9c47c23f12ca3-customItem {
   border-color: var(--interactive-text-default);
   color: var(--interactive-text-default);
@@ -47673,7 +47670,6 @@ h2.feb59c8c6ec00ad9-title {
   padding: 0 8px;
 }
 .c1e9c47c23f12ca3-submenu {
-  max-height: var(--custom-floating-layer-max-height);
   max-width: 320px;
   min-width: 188px;
 }
@@ -78668,23 +78664,20 @@ html ._968a4b9cecf98b8c-invoiceCancelRow {
 ._803f2f55621144fb-sessions {
   margin: 32px 0;
 }
-._803f2f55621144fb-session {
+._803f2f55621144fb-otherSessions {
   display: flex;
   flex-direction: column;
+  margin-top: 16px;
 }
-._803f2f55621144fb-session:first-child {
-  padding-top: 16px;
-}
-._803f2f55621144fb-currentSession {
-  padding-bottom: 16px;
-}
-._803f2f55621144fb-sessionContent {
+._803f2f55621144fb-session {
   align-items: center;
+  border-bottom: 1px solid var(--border-subtle);
   display: flex;
   gap: 24px;
+  padding: 16px 0;
 }
-._803f2f55621144fb-sessionSeparator {
-  margin-top: 24px;
+._803f2f55621144fb-session._803f2f55621144fb-currentSession {
+  border-bottom: none;
 }
 ._803f2f55621144fb-sessionIcon {
   align-items: center;
@@ -78744,9 +78737,6 @@ html ._968a4b9cecf98b8c-invoiceCancelRow {
 }
 ._803f2f55621144fb-toolsTitle {
   margin-bottom: 0.5rem;
-}
-._803f2f55621144fb-logOutAllButtonRedesign {
-  margin-top: 24px;
 }
 @media (max-width: 900px) {
   ._8ab7e4190786a9c3-noticeImage {
@@ -100415,4 +100405,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.016da1ddf1d11898.css.map*/
+/*# sourceMappingURL=web.bbfa2364db16ae4d.css.map*/
