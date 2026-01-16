@@ -4088,6 +4088,7 @@
             "/conference-mode/channels/".concat(e),
           CONFERENCE_MODE_VOICE_CHANNEL_USERS: (e) =>
             "/conference-mode/channels/".concat(e, "/users"),
+          CONFERENCE_MODE_EVENTS: "/conference-mode/events",
           GUILD_MIGRATE_PIN_PERMISSION: (e) =>
             "/guilds/".concat(e, "/migrate-pin-permission"),
           GET_APPLICATION_TOKENS: (e) =>
@@ -6594,7 +6595,7 @@
       },
       188785: function (e, t, n) {
         "use strict";
-        n.d(t, { a: () => r });
+        n.d(t, { aA: () => r });
         let r = !1;
       },
       97145: function (e, t, n) {
@@ -6644,7 +6645,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-5f9e6b9594d539b5a04af7c65f9990cf65919178",
+            release: "discord_web-493ba49d978bb0277887ac6117ccaf0e4e535377",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6710,8 +6711,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "486924"),
-            a.YA("builtAt", String("1768604944045"));
+            a.YA("buildNumber", "486935"),
+            a.YA("builtAt", String("1768605698207"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -6804,7 +6805,7 @@
             LOGIN_HANDOFF: "/login/handoff",
             LOGIN_ONE_TIME: "/login/one-time",
             REGISTER: "/register",
-            DEFAULT_LOGGED_OUT: i.a ? "/register" : "/login",
+            DEFAULT_LOGGED_OUT: i.aA ? "/register" : "/login",
             INVITE: (e) => "/invite/".concat(e),
             INVITE_LOGIN: (e) => "/invite/".concat(e, "/login"),
             INVITE_REGISTER: (e) => "/invite/".concat(e, "/register"),
@@ -38314,4 +38315,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.94286f8cd7a87709.js.map
+//# sourceMappingURL=sentry.388b8f5150434f79.js.map
