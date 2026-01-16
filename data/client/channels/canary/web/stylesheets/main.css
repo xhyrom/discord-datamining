@@ -47780,9 +47780,13 @@ h2.feb59c8c6ec00ad9-title {
   color: var(--white);
 }
 .c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused {
-  background-color: var(--background-mod-subtle);
+  background-color: var(--interactive-background-hover);
   border-radius: 4px;
   color: var(--text-strong);
+}
+.keyboard-mode .c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused {
+  outline: 2px solid var(--border-focus);
+  outline-offset: -2px;
 }
 .c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused .c1e9c47c23f12ca3-caret,
 .c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused
@@ -100449,4 +100453,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.fc081fa7047df146.css.map*/
+/*# sourceMappingURL=web.9d9b98e6536f7b2f.css.map*/
