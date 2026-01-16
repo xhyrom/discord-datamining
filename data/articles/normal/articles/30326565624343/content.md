@@ -135,6 +135,11 @@
     </li>
   </ul>
 </div>
+<div class="info-box">
+  <strong>Note:</strong> Some users in regions outside the UK and Australia may
+  see age-assurance prompts when accessing certain features or settings as part
+  of ongoing experiments.
+</div>
 <h1 id="h_01KBKGJ94K9TJ3RPZ82G9JR1EE">How to Complete Age Assurance</h1>
 <div class="info-box">
   Discord and k-ID do not permanently store personal identity documents or your

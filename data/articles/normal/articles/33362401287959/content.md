@@ -48,6 +48,11 @@
   >is only available to UK and Australian users and is a one-time process. Once
   completed, you won't need to verify your age again.
 </p>
+<div class="info-box">
+  <strong>Note:</strong> Some users in regions outside the UK and Australia may
+  see age-assurance prompts when accessing certain features or settings as part
+  of ongoing experiments.
+</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
@@ -174,6 +179,17 @@
       >How to Complete Age Assurance on Discord</span
     ></a
   >
+</div>
+<div class="exp-box">
+  <strong>Important: </strong>If you're located in the UK, you may be part of an
+  experiment where your information will be processed by an age-assurance
+  vendor, Persona.
+  <strong
+    >The information you submit will be temporarily stored for up to 7 days,
+    then deleted.</strong
+  >
+  For ID document verification, all details are blurred except your photo and
+  date of birth, so only what's truly needed for age verification is used.
 </div>
 <h1 id="h_01KBKHG0B2D0MG2RZXBR6MKR1P">Default Safety Settings</h1>
 <p>
@@ -450,3 +466,4 @@
   has different needs, and we’re committed to building experiences that empower
   users as they continue to use our platform.
 </p>
+<p> </p>
