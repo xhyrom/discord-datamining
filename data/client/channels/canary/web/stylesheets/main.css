@@ -47251,7 +47251,7 @@ h2.feb59c8c6ec00ad9-title {
   color: var(--text-code-deletion);
 }
 .d285a61ed580c689-markdown {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -54964,9 +54964,9 @@ svg.c1e9c47c23f12ca3-radioIcon {
   }
 }
 ._6df1abcb56d96feb-cardTitle {
-  font-size: 2rem;
+  font-size: 32px;
   font-style: italic;
-  line-height: 1.6875rem;
+  line-height: 27px;
   text-transform: uppercase;
 }
 ._6df1abcb56d96feb-betaPill,
@@ -100525,4 +100525,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.1600767a8758c565.css.map*/
+/*# sourceMappingURL=web.19cc74a5898ff979.css.map*/
