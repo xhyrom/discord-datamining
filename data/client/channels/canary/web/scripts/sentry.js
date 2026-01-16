@@ -6644,7 +6644,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bc2d8a51c831d2f40792b70000bb852608095aec",
+            release: "discord_web-e80bd55f21454280986eb856ddfe10dc725e4a8c",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6710,8 +6710,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "486801"),
-            a.YA("builtAt", String("1768593905353"));
+            a.YA("buildNumber", "486819"),
+            a.YA("builtAt", String("1768594980920"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -7891,6 +7891,13 @@
                 [r.MIDNIGHT]: { raw: "PRIMARY_700", opacity: 1 },
                 [r.DARKER]: { raw: "PRIMARY_700", opacity: 1 },
               },
+              GUILD_PROFILE_BANNER_BACKGROUND_DEFAULT: {
+                category: "generic",
+                [r.DARK]: { raw: "PRIMARY_660", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_40", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
+                [r.DARKER]: { raw: "PLUM_23", opacity: 1 },
+              },
               ICON_FEEDBACK_CRITICAL: {
                 category: "generic",
                 [r.DARK]: { raw: "RED_400", opacity: 1 },
@@ -7932,6 +7939,20 @@
                 [r.LIGHT]: { raw: "PRIMARY_400", opacity: 1 },
                 [r.MIDNIGHT]: { raw: "PLUM_12", opacity: 1 },
                 [r.DARKER]: { raw: "PLUM_11", opacity: 1 },
+              },
+              ICON_OVERLAY_DARK: {
+                category: "generic",
+                [r.DARK]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_71", opacity: 1 },
+              },
+              ICON_OVERLAY_LIGHT: {
+                category: "generic",
+                [r.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_8", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_2", opacity: 1 },
               },
               ICON_STATUS_DND: {
                 category: "generic",
@@ -38293,4 +38314,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.9017d7f6d2fd3fdf.js.map
+//# sourceMappingURL=sentry.be3f20414b18b33e.js.map
