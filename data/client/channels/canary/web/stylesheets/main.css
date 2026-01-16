@@ -47427,45 +47427,44 @@ h2.feb59c8c6ec00ad9-title {
 .full-motion .e6ce07c5ce605ec1-panel {
   transition: height 0.1s ease-in-out;
 }
-.ad82d8ee077e9029-divider {
-  background-color: var(--border-muted);
-  height: 1px;
-  margin-bottom: var(--space-16);
-  width: 100%;
-}
-.ad82d8ee077e9029-header {
+.b963df4b95a4e5ce-header {
+  align-items: center;
+  display: flex;
   gap: var(--space-24);
   justify-content: space-between;
   width: 100%;
 }
-.ad82d8ee077e9029-header,
-.ad82d8ee077e9029-totalSavings {
-  align-items: center;
-  display: flex;
-}
-.ad82d8ee077e9029-totalSavings {
-  gap: var(--space-4);
-  white-space: nowrap;
-}
-.ad82d8ee077e9029-lineItemsContainer {
+.b963df4b95a4e5ce-lineItemsContainer {
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
   margin-top: var(--space-12);
   width: 100%;
 }
-.ad82d8ee077e9029-lineItem {
+.b963df4b95a4e5ce-lineItem {
   align-items: flex-start;
+  display: flex;
   gap: var(--space-24);
+  justify-content: space-between;
   width: 100%;
 }
-.ad82d8ee077e9029-lineItem,
-.ad82d8ee077e9029-totalDue {
+.b963df4b95a4e5ce-lineItemLabel {
+  align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex: 1;
+  gap: var(--space-4);
+  min-width: 0;
+}
+.ad82d8ee077e9029-divider {
+  background-color: var(--border-muted);
+  height: 1px;
+  margin-bottom: var(--space-16);
+  width: 100%;
 }
 .ad82d8ee077e9029-totalDue {
+  display: flex;
   gap: var(--space-12);
+  justify-content: space-between;
   margin-top: var(--space-12);
 }
 ._02e5035a3c510411-cardGroup {
@@ -47524,6 +47523,11 @@ h2.feb59c8c6ec00ad9-title {
 .eaab0b563fde0afe-text {
   font-style: italic;
   text-transform: uppercase;
+}
+.b776a7d050fd812f-separator {
+  background-color: var(--border-muted);
+  height: 1px;
+  width: 100%;
 }
 .cc5dd25190031396-wrapper {
   position: relative;
@@ -100445,4 +100449,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.8f6c1ca3ce5f5297.css.map*/
+/*# sourceMappingURL=web.fc081fa7047df146.css.map*/
