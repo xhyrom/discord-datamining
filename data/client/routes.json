@@ -949,12 +949,7 @@
   },
   "FETCH_MESSAGE_CONFETTI_ENTITLEMENT": {
     "url": "/users/@me/consumable/confetti",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
