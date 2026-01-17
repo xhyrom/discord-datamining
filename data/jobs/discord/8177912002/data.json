@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6240756002,
   "location": {
-    "name": "San Francisco Bay Area"
+    "name": "San Francisco Bay Area or Remote"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 8177912002,
-  "updated_at": "2026-01-14T16:30:07-05:00",
+  "updated_at": "2026-01-16T18:39:40-05:00",
   "requisition_id": "R-101058",
   "title": "Staff Software Engineer, Platform Security",
   "company_name": "Discord",

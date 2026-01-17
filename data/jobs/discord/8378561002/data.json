@@ -1,0 +1,57 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8378561002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": true
+    }
+  ],
+  "education": "education_optional",
+  "internal_job_id": 6345178002,
+  "location": {
+    "name": "Remote (U.S.)"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": null,
+      "value_type": "single_select"
+    }
+  ],
+  "id": 8378561002,
+  "updated_at": "2026-01-16T20:23:22-05:00",
+  "requisition_id": "R-107138",
+  "title": "Content Technologist",
+  "company_name": "Discord",
+  "first_published": "2026-01-16T20:23:22-05:00",
+  "language": "en",
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The Design Foundations team is looking for a Content Technologist to establish Discord&#39;s product voice and build the tools, guidance, and processes that help everyone write great copy. You&#39;ll define our copy standards, create an AI-powered writing assistant, build tools to catch issues before they ship, and partner with teams on high-stakes product moments. This role will report to the Design Foundations Product Design Director.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Your work will strengthen user trust, reduce product risk, and ensure the words our millions of users see every day are as intentional and polished as the product itself.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Define and document copy and tone guidance within Mana, our Design System, creating the foundation for consistent, inclusive, and accessible language across Discord&lt;/li&gt;\n&lt;li&gt;Collaborate with Brand, Legal, and Policy teams to align product language with company standards and values&lt;/li&gt;\n&lt;li&gt;Build an AI-powered tool that enables teams to write their own copy following established guidelines, scaling your impact across the organization&lt;/li&gt;\n&lt;li&gt;Build tools to catch non-compliant copy in code and suggests improvements, preventing issues before they reach users&lt;/li&gt;\n&lt;li&gt;Partner with design and product teams to write and review critical in-product copy for major initiatives&lt;/li&gt;\n&lt;li&gt;Establish a review process that catches copy-related risks before launch&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;7+ years of experience in UX writing, content design, or product copywriting&lt;/li&gt;\n&lt;li&gt;Portfolio demonstrating clear, user-centered product copy and systems thinking&lt;/li&gt;\n&lt;li&gt;Technical skills to build tools and implement linters—you&#39;re comfortable working with code and AI&lt;/li&gt;\n&lt;li&gt;Strong documentation skills with experience creating guidelines that multiple teams use&lt;/li&gt;\n&lt;li&gt;Understanding of accessibility and inclusive language practices&lt;/li&gt;\n&lt;li&gt;Understanding of localization and translation best practices&lt;/li&gt;\n&lt;li&gt;Track record of influencing and collaborating across design, product, engineering, and cross-functional partners&lt;/li&gt;\n&lt;li&gt;Experience working within or contributing to design systems or a guidelines team&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;em&gt;This position is temporary, US-based, and can be remote, but if you live in the Bay Area, you’re welcome to work from our beautiful SF office.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this &lt;/em&gt;&lt;em&gt;temporary&lt;/em&gt;&lt;em&gt; full-time position is&amp;nbsp;&lt;/em&gt;&lt;em&gt;$180,000&lt;/em&gt;&lt;em&gt; to $&lt;/em&gt;&lt;em&gt;202,500 + benefits. &lt;/em&gt;&lt;em&gt;Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include benefits.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;#LI-Remote&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4074055002,
+      "name": "Product Design",
+      "child_ids": [],
+      "parent_id": 4094266002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
