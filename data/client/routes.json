@@ -924,11 +924,7 @@
   },
   "CONSUMABLE_FETCH_PRICE": {
     "url": "/store/consumable/pricing/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "CONSUME_HD_STREAMING_POTION": {
     "url": "/users/@me/consumable/hd-streaming",
