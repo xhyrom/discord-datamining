@@ -10427,13 +10427,13 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   font-size: 1.44rem;
 }
 .d27f17593b8064c5-calendarPicker .react-datepicker {
-  background-color: var(--background-mod-normal);
-  border: none;
+  background-color: var(--background-surface-higher);
+  border: 1px solid var(--border-subtle);
   font-family: var(--font-primary);
   padding: 20px;
 }
 .d27f17593b8064c5-calendarPicker .react-datepicker__header {
-  background-color: var(--background-mod-normal);
+  background-color: var(--background-surface-higher);
   border-bottom: 0;
   padding-top: 0;
 }
@@ -24035,10 +24035,13 @@ img._0f2e83213c878a13-thumbnail {
   padding: 4px;
 }
 .f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous {
-  color: var(--icon-feedback-critical);
+  color: var(--control-critical-secondary-text-default);
 }
 .f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous:hover {
-  color: var(--red-400);
+  color: var(--control-critical-secondary-text-hover);
+}
+.f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous:active {
+  color: var(--control-critical-secondary-text-active);
 }
 .enable-forced-colors .f7ecaca5c80dbf3a-wrapper {
   border: 1px solid CanvasText;
@@ -100525,4 +100528,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.19cc74a5898ff979.css.map*/
+/*# sourceMappingURL=web.1ab4506c7e156c76.css.map*/
