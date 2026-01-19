@@ -6645,7 +6645,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-e70a570bb38db2057bb2ce2ea69342ce20557f24",
+            release: "discord_web-352fc7bde9e3d98d7aba571095115934c822eb73",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6711,8 +6711,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "487026"),
-            a.YA("builtAt", String("1768616154318"));
+            a.YA("buildNumber", "487050"),
+            a.YA("builtAt", String("1768835911492"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -7634,10 +7634,10 @@
               },
               CONTROL_SECONDARY_BACKGROUND_DEFAULT: {
                 category: "generic",
-                [r.DARK]: { raw: "PRIMARY_500", opacity: 1 },
+                [r.DARK]: { raw: "PRIMARY_460", opacity: 1 },
                 [r.LIGHT]: { raw: "PRIMARY_430", opacity: 1 },
-                [r.MIDNIGHT]: { raw: "PLUM_13", opacity: 1 },
-                [r.DARKER]: { raw: "PLUM_13", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "PLUM_17", opacity: 1 },
+                [r.DARKER]: { raw: "PLUM_15", opacity: 1 },
               },
               CONTROL_SECONDARY_BORDER_DEFAULT: {
                 category: "generic",
@@ -8838,10 +8838,10 @@
               },
               SPINE_DEFAULT: {
                 category: "generic",
-                [r.DARK]: { raw: "PRIMARY_500", opacity: 1 },
-                [r.LIGHT]: { raw: "PRIMARY_300", opacity: 1 },
-                [r.MIDNIGHT]: { raw: "PLUM_13", opacity: 1 },
-                [r.DARKER]: { raw: "PLUM_13", opacity: 1 },
+                [r.DARK]: { raw: "PRIMARY_530", opacity: 1 },
+                [r.LIGHT]: { raw: "PRIMARY_430", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "PLUM_17", opacity: 1 },
+                [r.DARKER]: { raw: "PLUM_15", opacity: 1 },
               },
               SPOILER_HIDDEN_BACKGROUND: {
                 category: "generic",
@@ -38315,4 +38315,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.9eaa9e2378754a3e.js.map
+//# sourceMappingURL=sentry.529afbf276c4d5c0.js.map
