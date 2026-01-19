@@ -4088,6 +4088,7 @@
             "/conference-mode/channels/".concat(e),
           CONFERENCE_MODE_VOICE_CHANNEL_USERS: (e) =>
             "/conference-mode/channels/".concat(e, "/users"),
+          CONFERENCE_MODE_EVENTS: "/conference-mode/events",
           GUILD_MIGRATE_PIN_PERMISSION: (e) =>
             "/guilds/".concat(e, "/migrate-pin-permission"),
           GET_APPLICATION_TOKENS: (e) =>
@@ -6594,7 +6595,7 @@
       },
       188785: function (e, t, n) {
         "use strict";
-        n.d(t, { a: () => r });
+        n.d(t, { aA: () => r });
         let r = !1;
       },
       97145: function (e, t, n) {
@@ -6645,7 +6646,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-01-16-759a93659fff0de0e524452964a0321b438b2c4d-discord_web",
+              "2026-01-19-7bff7b335257b216c0c6ca262b2b031f246e3bd6-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6711,8 +6712,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "486827"),
-            a.YA("builtAt", String("1768595456294"));
+            a.YA("buildNumber", "487047"),
+            a.YA("builtAt", String("1768835702896"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -6805,7 +6806,7 @@
             LOGIN_HANDOFF: "/login/handoff",
             LOGIN_ONE_TIME: "/login/one-time",
             REGISTER: "/register",
-            DEFAULT_LOGGED_OUT: i.a ? "/register" : "/login",
+            DEFAULT_LOGGED_OUT: i.aA ? "/register" : "/login",
             INVITE: (e) => "/invite/".concat(e),
             INVITE_LOGIN: (e) => "/invite/".concat(e, "/login"),
             INVITE_REGISTER: (e) => "/invite/".concat(e, "/register"),
@@ -7892,6 +7893,13 @@
                 [r.MIDNIGHT]: { raw: "PRIMARY_700", opacity: 1 },
                 [r.DARKER]: { raw: "PRIMARY_700", opacity: 1 },
               },
+              GUILD_PROFILE_BANNER_BACKGROUND_DEFAULT: {
+                category: "generic",
+                [r.DARK]: { raw: "PRIMARY_660", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_40", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
+                [r.DARKER]: { raw: "PLUM_23", opacity: 1 },
+              },
               ICON_FEEDBACK_CRITICAL: {
                 category: "generic",
                 [r.DARK]: { raw: "RED_400", opacity: 1 },
@@ -7933,6 +7941,20 @@
                 [r.LIGHT]: { raw: "PRIMARY_400", opacity: 1 },
                 [r.MIDNIGHT]: { raw: "PLUM_12", opacity: 1 },
                 [r.DARKER]: { raw: "PLUM_11", opacity: 1 },
+              },
+              ICON_OVERLAY_DARK: {
+                category: "generic",
+                [r.DARK]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_71", opacity: 1 },
+              },
+              ICON_OVERLAY_LIGHT: {
+                category: "generic",
+                [r.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_8", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_2", opacity: 1 },
               },
               ICON_STATUS_DND: {
                 category: "generic",
@@ -38294,4 +38316,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.22b03205e4ae2ab6.js.map
+//# sourceMappingURL=sentry.880439b363b60327.js.map
