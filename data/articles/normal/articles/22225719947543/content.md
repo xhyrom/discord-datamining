@@ -19,67 +19,104 @@
   /></strong>
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e68582506701bf14454ef674b9712b8bf"
+    >
       <a href="#h_01JFAW7EGYW1KQB4PEWKJ9MJ0G"
         ><strong>What are Discord Quests?</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e2e5a7b7a506d3264d64301de55e7eba5"
+    >
       <a href="#h_01JFAWB392Z58VMP5PDW63222E"
         ><strong>Accepting a Quest</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e8d240a9003a5afe753e722d6dbebc192"
+        >
           <a href="#h_01K81XCHEW2RZVY55ARAVP9CTX"
             ><strong>Through the Quest Bar on Desktop</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ed185dd4aff67dcda08855cd8249d4300"
+        >
           <a href="#h_01K81XC24B8XMAJC8DDYEV3T9S"
             ><strong>Through the Quest Home on Desktop</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e45accba77a6d050a4b35b7fffe5d1c6a"
+        >
           <a href="#h_01K81XEKNRJAKXDNZE2NNVQN03"><strong>On Mobile</strong></a>
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="eb04edaf4a37e8bb0511521a6383448d3"
+    >
       <a href="#h_01JHTXTYSDN5VK49DME9MSS03Z"><strong>Quest Types</strong></a>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="ecffebcb01d3cca492d35f2e81f0ce477"
+    >
       <a href="#h_01JCM0891G5K7DGK0GVCQ02EXS"
         ><strong>Claiming Your Quest Rewards</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="ea16cff2a23dcf6ac3f901abbfd05f372"
+    >
       <a href="#h_01HVPBZR5F0EKW79KK7RGEK1HG"
         ><strong>Controlling the Quest Promotions You See</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ece24e9ea8529a55f6cb0c864af5b6acd"
+        >
           <a href="#h_01HVPBZR5FP77BF55STCFXMRS9"
             ><strong>Hide an In-app Promotion of an Individual Quest</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="eac03f05460e406feca8a3f3225882387"
+        >
           <a href="#h_01HVPBZR5FZ4PEXTW08Q4RYP41"
             ><strong>Opting-out of Quests Promotions</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="ead2dde432ad6e20067b9e4c9aeba79f4"
+    >
       <a href="#h_01JVDE7SJ7RDVYTXVFDR73AQRG"
         ><strong>Quests Daily Caps</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e38e1effff7fb3a33d9c61f0a9cdd549a"
+    >
       <a href="#h_01HVPBZR5FBM7QBFR9KDBASXP5"
         ><strong>Frequently Asked Questions</strong></a
       >
@@ -112,10 +149,12 @@
     height="380"
   />
 </p>
-<h4 id="h_01JRDWBS9J2GM6H8RJSDCBWV47" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >“Start Video Quest” button in Quest bar for Video Quests </span
-  ><span style="color: #666666">on the Discord desktop/browser app</span>
+<h4 class="wysiwyg-text-align-center" id="h_01JRDWBS9J2GM6H8RJSDCBWV47">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >“Start Video Quest” button in Quest bar for Video Quests </span
+    >on the Discord desktop/browser app</span
+  >
 </h4>
 <h2 id="h_01K81XC24B8XMAJC8DDYEV3T9S">Through Quest Home on Desktop</h2>
 <p>
@@ -132,7 +171,7 @@
     height="380"
   />
 </p>
-<h4 id="h_01JRDW714VWHEG9G7VMGSWC0YE" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JRDW714VWHEG9G7VMGSWC0YE">
   <span style="color: #666666"
     >How to navigate to Discover page on the Discord desktop/browser app</span
   >
@@ -155,7 +194,7 @@
     height="380"
   />
 </p>
-<h4 id="h_01JRDW83SF6JNZ2S3YQQGR8XZB" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JRDW83SF6JNZ2S3YQQGR8XZB">
   <span style="color: #666666"
     >Quest Home in the Discover list within the Discord desktop/browser
     app</span
@@ -174,7 +213,7 @@
     height="379"
   />
 </p>
-<h4 id="h_01JRDW90WV43WNAS25F8CM2J3H" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JRDW90WV43WNAS25F8CM2J3H">
   <span style="color: #666666"
     >“Start Video Quest” button in Quest Home within the Discord desktop/browser
     app</span
@@ -196,77 +235,80 @@
     width="250"
     height="520"
   />
-   
-  <img
+    <img
     src="https://support.discord.com/hc/article_attachments/27784562582807"
     width="250"
     height="519"
   />
 </p>
-<h4 id="h_01JRDW9S27WNJ4DJ43WNZ8JYGC" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JRDW9S27WNJ4DJ43WNZ8JYGC">
   <span style="color: #666666"
     >Quest bar (Left) and Accept Quest button (Right) in the Discord mobile
     app</span
   >
 </h4>
 <div class="tip-box">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >If you dismiss the mobile <strong>Quest bar</strong>, you can still find
-    the Quest in <strong>Quest Home</strong> (<strong
-      >Settings &gt; Quest</strong
-    >) to accept the Quest.<br
-  /></span>
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >If you dismiss the mobile <strong>Quest bar</strong>, you can still find
+      the Quest in <strong>Quest Home</strong> (<strong
+        >Settings &gt; Quest</strong
+      >) to accept the Quest.</span
+    ></span
+  ><br /> 
 </div>
 <h1 id="h_01JHTXTYSDN5VK49DME9MSS03Z">Quest Types</h1>
 <p>Discord offers two types of Quests:</p>
 <div>
-  <table style="width: 100%">
-    <colgroup>
-      <col />
-      <col />
-    </colgroup>
-    <tbody>
-      <tr>
-        <td>
-          <p><strong>Quest Types</strong></p>
-        </td>
-        <td><strong>Description</strong></td>
-      </tr>
-      <tr>
-        <td>
-          <p>Play Quests</p>
-        </td>
-        <td>
-          <p>Play Quests have two possible completion requirements:</p>
-          <p>
-            1. <strong>Playing a Game:</strong> Play the game for a specified
-            time (e.g., 15 minutes). You must be logged into the Discord desktop
-            app to track your progress.
-          </p>
-          2. <strong>Streaming a Game:</strong> Use the desktop app to stream
-          the game to at least one friend in a Discord voice channel for a set
-          duration (e.g., 15 minutes). For detailed instructions on Go Live and
-          screen sharing, refer to the
-          <a
-            href="https://support.discord.com/hc/articles/360040816151-Go-Live-and-Screen-Share#h_01HFFJ28PJAY9AHGRQ85XRSF8G"
-            target="_blank"
-            rel="noopener noreferrer"
-            >support article</a
-          >.
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Video Quests</p>
-        </td>
-        <td>
-          Watch the required video or trailer in Discord's desktop app or
-          browser client. The video pauses if you switch windows, but don't
-          worry - your progress is saved and you can resume watching later.
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <figure class="wysiwyg-table wysiwyg-table-align-left" style="width: 100%">
+    <table class="wysiwyg-table-resized">
+      <colgroup>
+        <col style="width: 28.36%" />
+        <col style="width: 71.64%" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td><strong>Quest Types</strong></td>
+          <td><strong>Description</strong></td>
+        </tr>
+        <tr>
+          <td>
+            <em><strong>Play Quests</strong></em>
+          </td>
+          <td>
+            <p>Play Quests have two possible completion requirements:</p>
+            <p>
+              1. <strong>Playing a Game:</strong> Play the game for a specified
+              time (e.g., 15 minutes). You must be logged into the Discord
+              desktop app to track your progress.
+            </p>
+            <p>
+              2. <strong>Streaming a Game:</strong> Use the desktop app to
+              stream the game to at least one friend in a Discord voice channel
+              for a set duration (e.g., 15 minutes). For detailed instructions
+              on Go Live and screen sharing, refer to the
+              <a
+                href="https://support.discord.com/hc/articles/360040816151-Go-Live-and-Screen-Share#h_01HFFJ28PJAY9AHGRQ85XRSF8G"
+                target="_blank"
+                rel="noopener noreferrer"
+                >support article</a
+              >.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <em><strong>Video Quests</strong></em>
+          </td>
+          <td>
+            Watch the required video or trailer in Discord's desktop app or
+            browser client. The video pauses if you switch windows, but don't
+            worry - your progress is saved and you can resume watching later.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </figure>
 </div>
 <div class="info-box">
   To review a Quest's requirements and completion instructions, hover over the
@@ -282,16 +324,11 @@
 </div>
 <div class="exp-box">
   <p id="h_01K701J6TCSTZPNXF67XMYH7R6">
-    <strong><span style="color: #434343">Important</span></strong
-    ><span style="color: #434343"
-      >: Discord Quests is currently experimenting with </span
-    ><strong><span style="color: #434343">cloud play</span></strong
-    ><span style="color: #434343"
-      >. To participate, accept a Cloud Play Quest and follow the steps shown in
-      the </span
-    ><strong><span style="color: #434343">Quest</span></strong
-    ><span style="color: #434343">
-      card. Learn more about Cloud Play Quests </span
+    <span style="color: #434343"
+      ><strong>Important</strong>: Discord Quests is currently experimenting
+      with <strong>cloud play</strong>. To participate, accept a Cloud Play
+      Quest and follow the steps shown in the <strong>Quest</strong> card. Learn
+      more about Cloud Play Quests </span
     ><a
       href="https://support.discord.com/hc/en-us/articles/35372187686295"
       target="_blank"
@@ -303,59 +340,70 @@
 <h1 id="h_01JCM0891G5K7DGK0GVCQ02EXS">Claiming Your Quest Rewards </h1>
 <p>Once you have completed a Quest, you can claim the reward on Discord:</p>
 <div>
-  <table style="width: 100%">
-    <colgroup>
-      <col />
-      <col />
-    </colgroup>
-    <tbody>
-      <tr>
-        <td><strong>Reward Claiming Method</strong></td>
-        <td><strong>Steps</strong></td>
-      </tr>
-      <tr>
-        <td>Quest Bar on Desktop</td>
-        <td>
-          <p>1. Hover over the <strong>Quest bar</strong>.</p>
-          <p>2. Press the <strong>Claim Reward</strong> button.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>Quest Home on Desktop</td>
-        <td>
-          <p>1. Navigate to <strong>Discover</strong>.</p>
-          <p>2. Select <strong>Quests</strong>. </p>
-          <p>3. Find your completed Quest.</p>
-          <p>4. Press the <strong>Claim Reward</strong> button.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>Quest Home on Mobile</td>
-        <td>
-          <p>
-            1. Tap on the <strong>Quest bar</strong> to navigate to
-            <strong>Quest</strong> <strong>Home</strong> (<strong
-              >Settings &gt; Quest</strong
-            >). 
-          </p>
-          <p>2. Find you completed Quest.</p>
-          <p>3. Tap <strong>Claim</strong> <strong>Reward</strong>.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>Quest Bar on Mobile [Beta]</td>
-        <td>
-          <p>
-            1. Tap on the <strong>Mobile</strong> <strong>Quest</strong>
-            <strong>bar</strong>.
-          </p>
-          <p>
-            2. Press the <strong>Claim</strong> <strong>Reward</strong> button.
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <figure class="wysiwyg-table wysiwyg-table-align-left" style="width: 100%">
+    <table class="wysiwyg-table-resized">
+      <colgroup>
+        <col style="width: 33.66%" />
+        <col style="width: 66.34%" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td><strong>Reward Claiming Method</strong></td>
+          <td><strong>Steps</strong></td>
+        </tr>
+        <tr>
+          <td>
+            <em><strong>Quest Bar on Desktop</strong></em>
+          </td>
+          <td>
+            <p>1. Hover over the <strong>Quest bar</strong>.</p>
+            <p>2. Press the <strong>Claim Reward</strong> button.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <em><strong>Quest Home on Desktop</strong></em>
+          </td>
+          <td>
+            <p>1. Navigate to <strong>Discover</strong>.</p>
+            <p>2. Select <strong>Quests</strong>. </p>
+            <p>3. Find your completed Quest.</p>
+            <p>4. Press the <strong>Claim Reward</strong> button.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <em><strong>Quest Home on Mobile</strong></em>
+          </td>
+          <td>
+            <p>
+              1. Tap on the <strong>Quest bar</strong> to navigate to
+              <strong>Quest</strong> <strong>Home</strong> (<strong
+                >Settings &gt; Quest</strong
+              >). 
+            </p>
+            <p>2. Find you completed Quest.</p>
+            <p>3. Tap <strong>Claim</strong> <strong>Reward</strong>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <em><strong>Quest Bar on Mobile [Beta]</strong></em>
+          </td>
+          <td>
+            <p>
+              1. Tap on the <strong>Mobile</strong> <strong>Quest</strong>
+              <strong>bar</strong>.
+            </p>
+            <p>
+              2. Press the <strong>Claim</strong>
+              <strong>Reward</strong> button.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </figure>
 </div>
 <p class="wysiwyg-text-align-center">
   <img
@@ -364,7 +412,7 @@
     height="379"
   />
 </p>
-<h4 id="h_01JRDWAPACA2KR6REM6PF16547" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JRDWAPACA2KR6REM6PF16547">
   <span style="color: #666666"
     >Example of claiming a Quest reward on the Discord desktop/browser app</span
   >
@@ -451,7 +499,7 @@
     height="403"
   />
 </p>
-<h4 id="h_01JRDWE5B2EHBRQ2WP8NPC6YCA" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JRDWE5B2EHBRQ2WP8NPC6YCA">
   <span style="color: #666666"
     >“Hide This” option in the Quest in-app promotion on the Discord app</span
   >
@@ -483,7 +531,7 @@
     height="530"
   />
 </p>
-<h4 id="h_01K39N0JGCB23KG2VY0FQ8G95P" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K39N0JGCB23KG2VY0FQ8G95P">
   <span style="color: #666666"
     >Data &amp; Privacy settings under User Settings within the Discord
     desktop/browser app</span
@@ -520,7 +568,7 @@
     height="241"
   />
 </p>
-<h4 id="h_01JVDE8FZJH402NBRDVD6DYKBT" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JVDE8FZJH402NBRDVD6DYKBT">
   <span style="color: #666666"
     >Example of Quest Display When Daily Cap Is Reached on Desktop</span
   >
@@ -537,16 +585,15 @@
     height="241"
   />
 </p>
-<h4 id="h_01JVDE8FZJWP7GGD6FFCS2HN4F" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JVDE8FZJWP7GGD6FFCS2HN4F">
   <span style="color: #666666">Why? Button within a Quest Banner</span>
 </h4>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
-    >: The daily Quest timer begins counting down 24 hours from when you
-    complete your third Quest of the day. For example, if you complete your
-    third Quest at 2:00 PM, you'll be able to accept new Quests starting at 2:00
-    PM the next day.</span
+  <span style="color: #434343"
+    ><strong>Info</strong>: The daily Quest timer begins counting down 24 hours
+    from when you complete your third Quest of the day. For example, if you
+    complete your third Quest at 2:00 PM, you'll be able to accept new Quests
+    starting at 2:00 PM the next day.</span
   >
 </div>
 <p class="wysiwyg-text-align-center">
@@ -556,14 +603,13 @@
     height="248"
   />
 </p>
-<h4 id="h_01JVDE8FZKPJ2A43GBBR23DY2Z" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JVDE8FZKPJ2A43GBBR23DY2Z">
   <span style="color: #666666">Daily Quest Cap Detail View</span>
 </h4>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
-    >: While you cannot accept new Quests after reaching the cap, you can still
-    claim rewards for Quests completed beforehand.</span
+  <span style="color: #434343"
+    ><strong>Info</strong>: While you cannot accept new Quests after reaching
+    the cap, you can still claim rewards for Quests completed beforehand.</span
   >
 </div>
 <h1 id="h_01HVPBZR5FBM7QBFR9KDBASXP5">Frequently Asked Questions</h1>
@@ -583,8 +629,10 @@
   <strong>three</strong> Quests per day. When you reach this daily cap:
 </p>
 <ul>
-  <li>A countdown timer will display for when you can accept new Quests</li>
-  <li>
+  <li data-list-item-id="e9041d1adc0491fc093f42fce31e960ad">
+    A countdown timer will display for when you can accept new Quests
+  </li>
+  <li data-list-item-id="ebdc3fa3c504960d865e197e836341ba1">
     You'll be able to accept new Quests in Quest Home or via the Quest bar once
     the cap has been lifted
   </li>
@@ -670,4 +718,11 @@
   A: To ensure your progress bar accurately tracks your Quest, please restart
   the Discord app and check for any available updates. Once the app is restarted
   and up to date, your Quest progress bar should update as expected.
+</p>
+<p><strong>Q: Why can’t I view this Quest on my Meta VR headset?</strong></p>
+<p>
+  Quests are not supported on Meta VR headsets. To view and complete a Quest,
+  please open Discord on a supported platform, such as the mobile app or desktop
+  app. Some Quests are available on both mobile and desktop, while others may be
+  limited to one platform. 
 </p>
