@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8316122002](https://discord.com/jobs/8316122002)
 
-**Updated At:** Wed, 14 Jan 2026 21:30:07 GMT
+**Updated At:** Tue, 20 Jan 2026 19:23:57 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for a Senior Financial Reporting and Technical Accountant to join our growing team! This position will play a critical role in the preparation of the company’s financial statements and related disclosures, performing accounting research, preparing position papers, and accounting for some of the more complex areas of the business. We are looking for an individual who is excited to work both independently and collaboratively, demonstrates strong communication skills and attention to detail, and collaborates well cross-functionally.
