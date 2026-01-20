@@ -2978,6 +2978,7 @@
 ._5a8382cf5c9d77df-container[data-layout="horizontal"]
   ._5a8382cf5c9d77df-control {
   align-items: end;
+  align-self: flex-start;
 }
 ._5a8382cf5c9d77df-container[data-layout="horizontal-responsive"]
   ._5a8382cf5c9d77df-helperTextContainer,
@@ -3845,12 +3846,6 @@
     textarea:focus
   ) {
   --custom-input-border-color: var(--custom-input-focus-border-color);
-}
-.mana-text-inputs
-  ._72c3859781ebce8f-wrapper:not([data-read-only="true"]):has(
-    input:focus,
-    textarea:focus
-  ) {
   outline: 2px solid var(--custom-input-focus-border-color);
   outline-offset: -2px;
 }
@@ -3861,8 +3856,7 @@
   --custom-input-hover-border-color: var(--input-border-error-default);
   --custom-input-focus-border-color: var(--input-border-error-default);
 }
-.mana-text-inputs
-  ._72c3859781ebce8f-wrapper[data-error="true"]:not(
+._72c3859781ebce8f-wrapper[data-error="true"]:not(
     [data-read-only="true"],
     [data-disabled="true"],
     :focus-within
@@ -8969,7 +8963,7 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   font-size: inherit;
   height: 100%;
   min-width: 30%;
-  padding-inline: var(--custom-input-padding);
+  padding-inline: var(--space-12);
 }
 ._0f0849b61557225e-input:disabled {
   cursor: not-allowed;
@@ -8995,9 +8989,6 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   -webkit-padding-start: var(--space-8);
   height: calc(var(--custom-text-input-height) - 8px);
   padding-inline-start: var(--space-8);
-}
-.mana-text-inputs ._0f0849b61557225e-input {
-  --custom-input-padding: var(--space-12);
 }
 .ec77f26815e2ac33-option {
   align-items: center;
@@ -26283,25 +26274,8 @@ input[type="checkbox"]:focus-visible + ._0d242e583d6053f6-label {
   height: 18px;
   width: 18px;
 }
-.c248b6a39f5f76ed-selectorGroup:not(:first-child) {
-  padding-top: 24px;
-}
-.c248b6a39f5f76ed-selectorGroup:not(:last-child) {
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 24px;
-}
-.c248b6a39f5f76ed-select {
-  align-items: center;
-  height: 44px;
-}
-.c248b6a39f5f76ed-label,
-.c248b6a39f5f76ed-select {
-  margin-top: 8px;
-}
-.c248b6a39f5f76ed-sectionLabel {
-  color: var(--text-default);
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
+.c248b6a39f5f76ed-selector {
+  margin-top: var(--space-16);
 }
 ._036308083b4ebd1a-header {
   align-items: center;
@@ -46611,7 +46585,7 @@ h3._1689b6e8323d95c2-improved:after {
   width: 100%;
 }
 ._649887ccbedc7c32-churnFooterContent {
-  background: var(--bg-surface-overlay-tmp);
+  background: var(--background-mod-subtle);
   min-height: 132px;
   position: relative;
   width: 100%;
@@ -53834,6 +53808,59 @@ svg.c1e9c47c23f12ca3-radioIcon {
 .c7e9071ee8df9113-searchBar {
   margin-bottom: var(--space-12);
 }
+._44061dfca5514945-profileCustomizationSection {
+  position: relative;
+}
+._44061dfca5514945-profileCustomizationSection p {
+  margin-top: 0;
+}
+._44061dfca5514945-baseLayout {
+  align-items: start;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+._44061dfca5514945-previewsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 300px;
+}
+._44061dfca5514945-previewTitle {
+  margin-bottom: 8px;
+}
+@media (min-width: 1024px) {
+  ._44061dfca5514945-baseLayout {
+    gap: 36px;
+    grid-template-areas: "form preview";
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+  ._44061dfca5514945-formContent {
+    grid-area: form;
+  }
+  ._44061dfca5514945-previewsContainer {
+    grid-area: preview;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 24px;
+  }
+}
+._5273bfb3444331e4-topSpacing {
+  margin-top: 24px;
+}
+._5273bfb3444331e4-emptyState {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+._5273bfb3444331e4-emptyState,
+._5273bfb3444331e4-image {
+}
+._5273bfb3444331e4-image {
+  height: 162px;
+  width: 186px;
+}
 ._65c15724a894a2e0-featureBorder {
   border-radius: 8px;
 }
@@ -53926,47 +53953,6 @@ svg.c1e9c47c23f12ca3-radioIcon {
 .ace4f5a2d9b7fc28-customizationSectionBorder {
   margin: -12px -12px 0;
 }
-._44061dfca5514945-profileCustomizationSection {
-  position: relative;
-}
-._44061dfca5514945-profileCustomizationSection p {
-  margin-top: 0;
-}
-._44061dfca5514945-baseLayout {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  gap: 35px;
-  position: relative;
-}
-._44061dfca5514945-previewsContainer {
-  align-self: flex-end;
-}
-@media (min-width: 937px) {
-  ._44061dfca5514945-previewsContainer {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 24px;
-  }
-}
-._44061dfca5514945-preview,
-._44061dfca5514945-previewItem {
-  max-width: 348px;
-}
-._5273bfb3444331e4-topSpacing {
-  margin-top: 24px;
-}
-._5273bfb3444331e4-emptyState {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-._5273bfb3444331e4-emptyState,
-._5273bfb3444331e4-image {
-}
-._5273bfb3444331e4-image {
-  height: 162px;
-  width: 186px;
-}
 ._6a919231d4bdfd4f-bioTextArea {
   --channel-text-area-placeholder: var(--input-placeholder-text-default);
   border-radius: 3px;
@@ -53996,6 +53982,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 ._89253581b3e6feb0-buttonsContainer {
   display: flex;
+  flex-wrap: wrap;
 }
 ._89253581b3e6feb0-removeButton {
   -webkit-margin-start: 4px;
@@ -54017,6 +54004,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 ._28d5e0a2d38ee49c-buttonsContainer {
   display: flex;
+  flex-wrap: wrap;
 }
 ._28d5e0a2d38ee49c-removeButton {
   -webkit-margin-start: 4px;
@@ -54036,6 +54024,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 ._4962e7dd7cd2297c-buttonsContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
 }
 ._4962e7dd7cd2297c-newBadge {
@@ -54068,6 +54057,7 @@ svg.c1e9c47c23f12ca3-radioIcon {
 }
 .fd47aefbb9db0fe5-buttonsContainer {
   display: flex;
+  flex-wrap: wrap;
 }
 .fd47aefbb9db0fe5-removeButton {
   -webkit-margin-start: 4px;
@@ -75041,7 +75031,7 @@ div.d74ef86df6475678-nagbar {
   -webkit-margin-end: 10px;
   align-items: center;
   align-self: flex-start;
-  background-color: var(--bg-surface-overlay-tmp);
+  background-color: var(--background-mod-subtle);
   border-radius: var(--radius-xs);
   display: flex;
   flex-shrink: 0;
@@ -82949,7 +82939,6 @@ html.disable-forced-colors * {
   --badge-expressive-text-default: var(--neutral-71);
   --badge-notification-background: var(--red-new-46);
   --badge-text-brand: var(--neutral-1);
-  --bg-surface-overlay-tmp: var(--neutral-64);
   --bg-surface-raised: var(--primary-560);
   --border-feedback-critical: hsl(var(--opacity-red-20-hsl) / 0.2);
   --border-focus: var(--blue-new-30);
@@ -83692,12 +83681,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--illo-pink-50-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-surface-overlay-tmp: color-mix(
-      in oklab,
-      var(--neutral-64) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --bg-surface-raised: color-mix(
@@ -85130,7 +85113,6 @@ html.disable-forced-colors * {
   --badge-expressive-text-default: var(--neutral-1);
   --badge-notification-background: var(--red-new-50);
   --badge-text-brand: var(--neutral-1);
-  --bg-surface-overlay-tmp: var(--primary-130);
   --bg-surface-raised: var(--white);
   --border-feedback-critical: hsl(
     var(--opacity-red-24-hsl) / 0.23921568627450981
@@ -85853,12 +85835,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--illo-pink-10-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-surface-overlay-tmp: color-mix(
-      in oklab,
-      var(--primary-130) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --bg-surface-raised: color-mix(
@@ -87291,7 +87267,6 @@ html.disable-forced-colors * {
   --badge-expressive-text-default: var(--neutral-71);
   --badge-notification-background: var(--red-new-46);
   --badge-text-brand: var(--neutral-1);
-  --bg-surface-overlay-tmp: var(--plum-21);
   --bg-surface-raised: var(--plum-23);
   --border-feedback-critical: hsl(
     var(--opacity-red-24-hsl) / 0.23921568627450981
@@ -88016,12 +87991,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--illo-pink-50-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-surface-overlay-tmp: color-mix(
-      in oklab,
-      var(--plum-21) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --bg-surface-raised: color-mix(
@@ -89454,7 +89423,6 @@ html.disable-forced-colors * {
   --badge-expressive-text-default: var(--neutral-71);
   --badge-notification-background: var(--red-new-46);
   --badge-text-brand: var(--neutral-1);
-  --bg-surface-overlay-tmp: var(--neutral-73);
   --bg-surface-raised: var(--plum-18);
   --border-feedback-critical: hsl(var(--opacity-red-20-hsl) / 0.2);
   --border-focus: var(--blue-new-30);
@@ -90199,12 +90167,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--illo-pink-50-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --bg-surface-overlay-tmp: color-mix(
-      in oklab,
-      var(--neutral-73) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --bg-surface-raised: color-mix(
@@ -99041,7 +99003,7 @@ html.disable-forced-colors * {
   --chat-input-icon-size: 20px;
   --chat-markup-line-height: 1.375rem;
   --chat-resize-handle-width: 8px;
-  --control-input-height-md: 44px;
+  --control-input-height-md: 40px;
   --control-input-height-sm: 32px;
   --control-item-height-md: 40px;
   --control-item-height-sm: 32px;
@@ -99060,9 +99022,6 @@ html.disable-forced-colors * {
   --modal-width-small: 442px;
   --select-max-width: 248px;
   --select-option-height: 40px;
-}
-.mana-text-inputs {
-  --control-input-height-md: 40px;
 }
 .refresh-fast-follow-avatars.density-compact {
   --guildbar-avatar-size: 40px;
@@ -100079,4 +100038,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.c35ee669124ab103.css.map*/
+/*# sourceMappingURL=web.4cac7acca8d4807a.css.map*/
