@@ -51999,9 +51999,9 @@ svg.c1e9c47c23f12ca3-radioIcon {
   border-radius: 3px;
   color: var(--white);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: var(--font-weight-bold);
-  line-height: 29px;
+  line-height: 1.8125rem;
   margin-top: 20px;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -100528,4 +100528,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.fbfca8ac8b564679.css.map*/
+/*# sourceMappingURL=web.b1220559cd0a7354.css.map*/
