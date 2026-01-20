@@ -59303,6 +59303,22 @@ svg.c1e9c47c23f12ca3-radioIcon {
 .e21ed7b7001e2203-fileInput {
   display: none;
 }
+._6d62c75cec2c6d85-clearButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+  max-height: 100px;
+  opacity: 1;
+  overflow: hidden;
+}
+.full-motion ._6d62c75cec2c6d85-clearButtonContainer {
+  transition: all 0.2s ease-in-out;
+}
+._6d62c75cec2c6d85-clearButtonContainerHidden {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+}
 ._1b11bd49fe2d59c9-formItem {
   width: 100%;
 }
@@ -100224,4 +100240,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.34fa75b1a6ef4e43.css.map*/
+/*# sourceMappingURL=web.b6a122eec09231c4.css.map*/
