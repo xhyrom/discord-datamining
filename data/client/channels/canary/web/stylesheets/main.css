@@ -41831,6 +41831,16 @@ body .b54a5b2f01b57ad8-headerAnimation {
   -webkit-margin-end: var(--space-12);
   margin-inline-end: var(--space-12);
 }
+._0687d3d14ec42cbc-trialForAllHeader {
+  padding-bottom: 12px;
+}
+._0687d3d14ec42cbc-trialForAllSeparator {
+  background: var(--border-subtle);
+  border: 0;
+  height: 1px;
+  margin: 0 0 4px;
+  width: 100%;
+}
 .c93be2b49ef88d42-body {
   margin-bottom: 40px;
   margin-top: 40px;
@@ -54984,9 +54994,9 @@ svg.c1e9c47c23f12ca3-radioIcon {
   }
 }
 ._6df1abcb56d96feb-cardTitle {
-  font-size: 2rem;
+  font-size: 32px;
   font-style: italic;
-  line-height: 1.6875rem;
+  line-height: 27px;
   text-transform: uppercase;
 }
 ._6df1abcb56d96feb-betaPill,
@@ -100214,4 +100224,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.e9ee063d5dabe3ad.css.map*/
+/*# sourceMappingURL=web.34fa75b1a6ef4e43.css.map*/
