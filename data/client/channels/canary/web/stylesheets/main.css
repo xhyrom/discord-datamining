@@ -51999,9 +51999,9 @@ svg.c1e9c47c23f12ca3-radioIcon {
   border-radius: 3px;
   color: var(--white);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: var(--font-weight-bold);
-  line-height: 29px;
+  line-height: 1.8125rem;
   margin-top: 20px;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -54967,9 +54967,9 @@ svg.c1e9c47c23f12ca3-radioIcon {
   }
 }
 ._6df1abcb56d96feb-cardTitle {
-  font-size: 32px;
+  font-size: 2rem;
   font-style: italic;
-  line-height: 27px;
+  line-height: 1.6875rem;
   text-transform: uppercase;
 }
 ._6df1abcb56d96feb-betaPill,
@@ -100528,4 +100528,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.1ab4506c7e156c76.css.map*/
+/*# sourceMappingURL=web.882b145a76342f60.css.map*/
