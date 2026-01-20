@@ -11360,6 +11360,75 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   box-shadow: var(--shadow-high);
   padding: var(--space-16);
 }
+._4bbc6dc06e75ad52-container {
+  border-radius: inherit;
+  height: 100%;
+  inset-inline-start: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+._4bbc6dc06e75ad52-fitInAccount {
+  height: calc(100% + 2px);
+  inset-inline-start: 0;
+  top: -1px;
+  width: calc(100% + 1px);
+}
+._4bbc6dc06e75ad52-fadeIn {
+  animation: _4bbc6dc06e75ad52-fadeIn 0.12s ease-in forwards;
+  opacity: 0;
+}
+@keyframes _4bbc6dc06e75ad52-fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+._4bbc6dc06e75ad52-img {
+  height: 100%;
+  inset-inline-end: 0;
+  object-position: right;
+  pointer-events: none;
+  position: absolute;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  width: auto;
+}
+._4bbc6dc06e75ad52-img,
+._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-hover {
+  opacity: 0.6;
+}
+._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-selected {
+  opacity: 0.9;
+}
+._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-channel._4bbc6dc06e75ad52-hover {
+  opacity: 0.4;
+}
+._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-channel._4bbc6dc06e75ad52-selected {
+  opacity: 0.9;
+}
+._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-account,
+._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-account._4bbc6dc06e75ad52-hover {
+  opacity: 0.4;
+}
+._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-preview {
+  opacity: 0.8;
+}
+._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-mini_preview,
+._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-mini_preview._4bbc6dc06e75ad52-hover,
+._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-preview._4bbc6dc06e75ad52-hover {
+  opacity: 1;
+}
+._4bbc6dc06e75ad52-videoContainer {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
 .b4f99ff7fb9ad184-container {
   background: var(--background-surface-higher);
   box-sizing: border-box;
@@ -18374,75 +18443,6 @@ html.decorate-links ._41f68f5eee7f9abd-lowSaturationUnderline {
   mask-size: 100% 100%;
   -webkit-margin-end: -6px;
   margin-inline-end: -6px;
-}
-._4bbc6dc06e75ad52-container {
-  border-radius: inherit;
-  height: 100%;
-  inset-inline-start: 0;
-  overflow: hidden;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-._4bbc6dc06e75ad52-fitInAccount {
-  height: calc(100% + 2px);
-  inset-inline-start: 0;
-  top: -1px;
-  width: calc(100% + 1px);
-}
-._4bbc6dc06e75ad52-fadeIn {
-  animation: _4bbc6dc06e75ad52-fadeIn 0.12s ease-in forwards;
-  opacity: 0;
-}
-@keyframes _4bbc6dc06e75ad52-fadeIn {
-  0% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-._4bbc6dc06e75ad52-img {
-  height: 100%;
-  inset-inline-end: 0;
-  object-position: right;
-  pointer-events: none;
-  position: absolute;
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
-  width: auto;
-}
-._4bbc6dc06e75ad52-img,
-._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-hover {
-  opacity: 0.6;
-}
-._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-selected {
-  opacity: 0.9;
-}
-._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-channel._4bbc6dc06e75ad52-hover {
-  opacity: 0.4;
-}
-._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-channel._4bbc6dc06e75ad52-selected {
-  opacity: 0.9;
-}
-._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-account,
-._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-account._4bbc6dc06e75ad52-hover {
-  opacity: 0.4;
-}
-._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-preview {
-  opacity: 0.8;
-}
-._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-mini_preview,
-._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-mini_preview._4bbc6dc06e75ad52-hover,
-._4bbc6dc06e75ad52-img._4bbc6dc06e75ad52-preview._4bbc6dc06e75ad52-hover {
-  opacity: 1;
-}
-._4bbc6dc06e75ad52-videoContainer {
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
 }
 ._91a9d7f7e5248a56-container {
   border-radius: var(--radius-sm);
@@ -100528,4 +100528,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.1ab4506c7e156c76.css.map*/
+/*# sourceMappingURL=web.fbfca8ac8b564679.css.map*/
