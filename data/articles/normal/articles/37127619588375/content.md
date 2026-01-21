@@ -2,7 +2,15 @@
   Try two weeks of Nitro for $0 with our promotion valid through
   <strong>January 29, 2026</strong>! Read below to learn more.
 </p>
-<p> </p>
+<figure class="wysiwyg-image">
+  <img
+    style="aspect-ratio: 620/349"
+    src="https://support.discord.com/hc/article_attachments/37844328063895"
+    alt="Discord_Nitro4All_Hero_Marketing.gif"
+    width="620"
+    height="349"
+  />
+</figure>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-large"
