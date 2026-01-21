@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8377248002](https://discord.com/jobs/8377248002)
 
-**Updated At:** Wed, 21 Jan 2026 16:17:00 GMT
+**Updated At:** Wed, 21 Jan 2026 18:39:32 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Safety Processing team is responsible for the systems that power Discord's ability to detect, review, and enforce against harmful content at scale. We build the infrastructure and decision systems that enable accurate, efficient, and fair content moderation across all of Discord. We're looking for a Senior Software Engineer who can handle complex, multi-milestone projects and deliver high-quality systems that protect millions of users daily.

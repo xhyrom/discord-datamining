@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8378561002](https://discord.com/jobs/8378561002)
 
-**Updated At:** Wed, 21 Jan 2026 16:17:00 GMT
+**Updated At:** Wed, 21 Jan 2026 18:39:32 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Design Foundations team is looking for a Content Technologist to establish Discord's product voice and build the tools, guidance, and processes that help everyone write great copy. You'll define our copy standards, create an AI-powered writing assistant, build tools to catch issues before they ship, and partner with teams on high-stakes product moments. This role will report to the Design Foundations Product Design Director.&amp;nbsp;
