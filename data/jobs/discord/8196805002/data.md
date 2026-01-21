@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8196805002](https://discord.com/jobs/8196805002)
 
-**Updated At:** Tue, 20 Jan 2026 19:23:56 GMT
+**Updated At:** Wed, 21 Jan 2026 16:16:59 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our team's mission is to grow Discord's community responsibly while ensuring every user feels safe and empowered. We balance ambitious growth initiatives along with thoughtful safety measures, creating experiences that help new users discover Discord's value while protecting our community from harm. This includes designing onboarding experiences that spark joy and understanding, building tools that prevent abuse and harassment, creating systems that help users curate their own experience, and developing features that promote healthy community growth.

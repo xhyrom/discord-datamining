@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8346194002](https://discord.com/jobs/8346194002)
 
-**Updated At:** Tue, 20 Jan 2026 20:07:47 GMT
+**Updated At:** Wed, 21 Jan 2026 16:17:00 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord's Legal team is looking for a Senior Privacy Counsel to help deliver privacy to over 200 million monthly users who come to Discord to hang out with their friends. This role will be our first dedicated Privacy lawyer, joining a team of product counsel and privacy program managers who sit at the intersection of legal compliance, product development, and user trust. In this role, you will work closely with engineers, data governance, privacy compliance, and product counsel to scale privacy protections across our platform. This role will report to Discord’s Senior Director, Product Law.
