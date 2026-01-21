@@ -43730,14 +43730,14 @@ div._34eac30af6a687c5-modalOverrideBody {
   flex: 1;
   flex-direction: column;
   gap: var(--size-16);
-  justify-content: center;
 }
 ._7b8d0ed55756837a-bodyColumnRight {
+  justify-content: center;
   min-width: 0;
 }
 ._7b8d0ed55756837a-skuCardImage {
   aspect-ratio: 1;
-  max-width: 280px;
+  max-width: 352px;
   width: 100%;
 }
 ._7b8d0ed55756837a-customGiftMessageWrapper {
@@ -43757,7 +43757,7 @@ div._34eac30af6a687c5-modalOverrideBody {
   flex-direction: column;
 }
 ._7b8d0ed55756837a-giftPreviewTitle {
-  margin: 0;
+  margin: 0 !important;
 }
 ._7b8d0ed55756837a-giftPreviewContent {
   align-items: center;
@@ -100337,4 +100337,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.20c33f55461d3aad.css.map*/
+/*# sourceMappingURL=web.9b1f7a1351d4efe2.css.map*/
