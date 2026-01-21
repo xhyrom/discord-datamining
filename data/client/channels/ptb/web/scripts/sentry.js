@@ -5105,6 +5105,10 @@
             "experiment_user_evaluation_exposed"),
           (r.EXPERIMENT_USER_EXPOSURE_SUPPRESSED =
             "experiment_user_exposure_suppressed"),
+          (r.EXPERIMENT_INSTALLATION_EVALUATION_EXPOSED =
+            "experiment_installation_evaluation_exposed"),
+          (r.EXPERIMENT_INSTALLATION_EXPOSURE_SUPPRESSED =
+            "experiment_installation_exposure_suppressed"),
           (r.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED =
             "guild_insights_settings_cta_clicked"),
           (r.GUILD_SETTINGS_DISCOVERY_VIEWED =
@@ -6414,6 +6418,8 @@
           (r.CACHE_STATS_RECORDED = "cache_stats_recorded"),
           (r.CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM =
             "channel_latest_messages_loaded_clickstream"),
+          (r.CHANNEL_WITH_UNREAD_MENTIONS_LOADED =
+            "channel_with_unread_mentions_loaded"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (e, t) =>
@@ -6648,7 +6654,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-01-20-eb73d08b47a05c060ea85e023fb94068a681502e-discord_web",
+              "2026-01-21-81ce18d08f2c3531801d79edad17b001a1560f28-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6714,8 +6720,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", "487084"),
-            a.YA("builtAt", String("1768897107459"));
+            a.YA("buildNumber", "487565"),
+            a.YA("builtAt", String("1768983559075"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -7341,17 +7347,6 @@
                 [r.LIGHT]: { raw: "RED_430", opacity: 1 },
                 [r.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
                 [r.DARKER]: { raw: "RED_400", opacity: 1 },
-              },
-              BG_SURFACE_OVERLAY_TMP: {
-                category: "background",
-                [r.DARK]: { raw: "PRIMARY_800", opacity: 1 },
-                [r.LIGHT]: { raw: "PRIMARY_130", opacity: 1 },
-                [r.MIDNIGHT]: { raw: "PLUM_21", opacity: 1 },
-                [r.DARKER]: { raw: "PLUM_17", opacity: 1 },
-                gradient: {
-                  light: { color: "WHITE_500", opacity: 0.5 },
-                  dark: { color: "BLACK_500", opacity: 0.5 },
-                },
               },
               BG_SURFACE_RAISED: {
                 category: "background",
@@ -38318,4 +38313,4 @@ ${eZ}
       window.DiscordSentry = (0, e.j)();
     })();
 })();
-//# sourceMappingURL=sentry.ddbb01c4f1b4e7d0.js.map
+//# sourceMappingURL=sentry.2db8d764ab3a7ece.js.map
