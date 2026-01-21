@@ -75685,8 +75685,17 @@ div.d74ef86df6475678-nagbar {
   margin-inline-start: 12px;
 }
 ._75920c6a1d5deff1-container {
+  background: transparent;
+  border-radius: var(--radius-md);
+  margin: calc(var(--space-12) * -1) 0;
+  padding: var(--space-12) 0;
   scroll-margin-bottom: var(--space-16);
   scroll-margin-top: var(--space-16);
+  transition: background 0.4s ease-out 0.75s;
+}
+._75920c6a1d5deff1-flash {
+  background: var(--message-highlight-background-default);
+  transition: background 0s ease-in-out;
 }
 .dbfbe01105eb2897-baseControlItem {
   border-radius: var(--radius-lg);
@@ -100240,4 +100249,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.b6a122eec09231c4.css.map*/
+/*# sourceMappingURL=web.53320dd29d028eb3.css.map*/
