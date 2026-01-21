@@ -135,6 +135,14 @@
     you.
   </li>
 </ul>
+<div class="warn-box">
+  <strong>Important</strong>: If you're located in the UK, you may be part of an
+  experiment where your information will be processed by an age-assurance
+  vendor, Persona. The information you submit will be temporarily stored for up
+  to 7 days, then deleted. For ID document verification, all details are blurred
+  except your photo and date of birth, so only what's truly needed for age
+  verification is used.
+</div>
 <p>
   If you have not already verified your age group, you will be prompted to age
   verify if you attempt to:
