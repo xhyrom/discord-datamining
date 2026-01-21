@@ -47826,6 +47826,19 @@ h2.feb59c8c6ec00ad9-title {
   height: 100%;
   width: 100%;
 }
+.c1e9c47c23f12ca3-avatarAccessory,
+.c1e9c47c23f12ca3-imageAccessory {
+  flex: 0 0 auto;
+  -webkit-margin-end: 8px;
+  height: 18px;
+  margin-inline-end: 8px;
+  object-fit: contain;
+  width: 18px;
+}
+.c1e9c47c23f12ca3-avatarAccessory {
+  border-radius: var(--radius-round);
+  object-fit: cover;
+}
 .c1e9c47c23f12ca3-hintContainer {
   flex: 0 0 auto;
   max-height: 18px;
@@ -100324,4 +100337,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.0d55b00b533e65bd.css.map*/
+/*# sourceMappingURL=web.20c33f55461d3aad.css.map*/
