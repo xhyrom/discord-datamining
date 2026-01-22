@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8348129002](https://discord.com/jobs/8348129002)
 
-**Updated At:** Wed, 21 Jan 2026 18:39:32 GMT
+**Updated At:** Thu, 22 Jan 2026 01:51:55 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.More broadly, Discord is about empowering people to find belonging in all kinds of communities, and those people trust us to keep their communications safe. Our Platform Security Engineering team protects the systems we use to create Discord, making the “secure way” the “easy way.”
@@ -78,6 +78,7 @@ Built or operated a service mesh (e.g. Envoy, Istio)
 Managed and secured VMs or bare-metal hosts (e.g. Linux, Salt)
 Practices to discover industry tools and knowledge that can multiply your team’s impact
 
+Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). For this role, the hiring manager would like folks to be in the office 1 day a week. Relocation assistance may be available.&amp;nbsp;
 The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Discord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
