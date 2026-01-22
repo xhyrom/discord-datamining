@@ -79281,6 +79281,9 @@ html ._968a4b9cecf98b8c-invoiceCancelRow {
 .theme-dark .ac7648c9bd968881-sliderBar {
   background-color: var(--primary-400);
 }
+.ac7648c9bd968881-sliderBar.ac7648c9bd968881-disabled {
+  opacity: 0.6;
+}
 .ac7648c9bd968881-sliderBar.ac7648c9bd968881-speaking {
   background-color: var(--green-230);
 }
@@ -100358,4 +100361,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.5b8295a70b33a206.css.map*/
+/*# sourceMappingURL=web.2f2386b5c0044c88.css.map*/
