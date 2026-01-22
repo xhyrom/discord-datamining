@@ -6650,7 +6650,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-c93d23bd444913cc9de900dd41bcdab48197157a",
+            release: "discord_web-edfd4329e28379388dc8b61365e70511eb560a76",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6716,8 +6716,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "488204"),
-            o.NA("builtAt", String("1769107980909"));
+            o.NA("buildNumber", "488223"),
+            o.NA("builtAt", String("1769109221279"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return _;
@@ -9627,6 +9627,7 @@
             GUILD_BOOSTING_BLUE: "#3e70dd",
             GUILD_BOOSTING_BLUE_FOR_GRADIENTS: "#3442d9",
             GUILD_BOOSTING_PINK: "#ff73fa",
+            GUILD_BOOSTING_PINK_REFRESH: "#ff4cd2",
             GUILD_BOOSTING_PURPLE: "#b377f3",
             GUILD_BOOSTING_PURPLE_FOR_GRADIENTS: "#9b44f7",
             HYPESQUAD_HOUSE_1: "#9c84ef",
@@ -38269,4 +38270,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.ae4d4b6faf2379fb.js.map
+//# sourceMappingURL=sentry.b58922ceeaa829c8.js.map
