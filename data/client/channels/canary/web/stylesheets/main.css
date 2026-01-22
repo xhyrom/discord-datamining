@@ -42295,11 +42295,11 @@ body .b54a5b2f01b57ad8-headerAnimation {
   max-width: 176px;
   padding-bottom: 12px;
 }
-.b130855d8984d74e-discountPlanOptionSubtext {
+.b130855d8984d74e-planWithOfferOptionSubtext {
   max-width: 300px;
   text-align: end;
 }
-.b130855d8984d74e-discountPlanOptionSubtext p {
+.b130855d8984d74e-planWithOfferOptionSubtext p {
   margin: 0;
 }
 .b130855d8984d74e-planOptionClickableContainer {
@@ -100348,4 +100348,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.8a45de177f80e1e9.css.map*/
+/*# sourceMappingURL=web.20e4548f5d20d5b5.css.map*/
