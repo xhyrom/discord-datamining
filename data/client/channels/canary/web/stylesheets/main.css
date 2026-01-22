@@ -98197,50 +98197,43 @@ html.disable-forced-colors * {
   font-family: Cherry Bomb One;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/36b8ec02240b4a57.woff2) format("woff2");
-  unicode-range: u+0000-003f, u+0041-ffff;
+  src: url(/assets/27a6daf95bd8adde.woff2) format("woff2");
 }
 @font-face {
   font-family: Chicle;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/75128ea3f06f2281.woff2) format("woff2");
-  unicode-range: u+0000-003f, u+0041-ffff;
+  src: url(/assets/08d347453f57b1f5.woff2) format("woff2");
 }
 @font-face {
   font-family: Neo Castel;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/b002cee37c62600b.woff2) format("woff2");
-  unicode-range: u+0000-003f, u+0041-ffff;
+  src: url(/assets/b98eacfe1a3d06eb.woff2) format("woff2");
 }
 @font-face {
   font-family: Museo Moderno;
   font-style: normal;
   font-weight: 500;
-  src: url(/assets/df8d053a43eba015.woff2) format("woff2");
-  unicode-range: u+0000-003f, u+0041-ffff;
+  src: url(/assets/8b6d8d408e0e52a7.woff2) format("woff2");
 }
 @font-face {
   font-family: Pixelify Sans;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/ae8462614cb0ef23.woff2) format("woff2");
-  unicode-range: u+0000-003f, u+0041-ffff;
+  src: url(/assets/752009d1dc4553e8.woff2) format("woff2");
 }
 @font-face {
   font-family: Sinistre;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/7d62c7ec06cb13a4.woff2) format("woff2");
-  unicode-range: u+0000-003f, u+0041-ffff;
+  src: url(/assets/9b974db0b9197a22.woff2) format("woff2");
 }
 @font-face {
   font-family: Zilla Slab;
   font-style: normal;
   font-weight: 600;
-  src: url(/assets/4f94f359293a357d.woff2) format("woff2");
-  unicode-range: u+0000-003f, u+0041-ffff;
+  src: url(/assets/8698e980e38d61ed.woff2) format("woff2");
 }
 :root {
   --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
@@ -99447,4 +99440,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.3320a48afa4f1f2f.css.map*/
+/*# sourceMappingURL=web.f91e636c544b555e.css.map*/
