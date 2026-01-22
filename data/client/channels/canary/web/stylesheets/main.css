@@ -73551,11 +73551,8 @@ div._7d4bd3ed8d0f6117 {
   filter: grayscale(100%);
   opacity: 0.75;
 }
-.theme-light .f2a01c8db82694ed {
-  box-shadow: inset 0 -1px 0 hsl(var(--primary-300-hsl) / 0.3);
-}
-.theme-dark .f2a01c8db82694ed {
-  box-shadow: inset 0 -1px 0 hsl(var(--primary-400-hsl) / 0.3);
+.f2a01c8db82694ed {
+  border-bottom: 1px solid var(--border-subtle);
 }
 ._70f46465f7727a60 {
   display: flex;
@@ -100083,4 +100080,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.9d1c25f50f157ca6.css.map*/
+/*# sourceMappingURL=web.976c6e1deb4c9666.css.map*/
