@@ -27,6 +27,14 @@
       <a href="#h_01K32B6G8Y6YKGMMTV0J2YF8XX"
         ><strong>How to Access Display Name Styles</strong></a
       >
+      <ul>
+        <li data-list-item-id="e64d86db4fc8a1584a1317a9e2763f8d8">
+          <a href="#h_01KFKESBW2YTXP7F31J7C85JZY">Desktop/Browser</a>
+        </li>
+        <li data-list-item-id="e3ee54ba7879d57cda75f9f7681d86bb1">
+          <a href="#h_01KFKERGA3KXSQNEC162BXXXR0">Mobile</a>
+        </li>
+      </ul>
     </li>
     <li
       class="ck-list-marker-bold"
@@ -97,34 +105,18 @@
   name through various styling options including fonts, colors, and effects.
 </p>
 <h1 id="h_01K32B6G8Y6YKGMMTV0J2YF8XX">How to Access Display Name Styles</h1>
-<div class="info-box">
+<div class="tip-box">
   <p>
-    <strong>Note: </strong>Display Name Styles is a feature available to select
-    Nitro subscribers on desktop and browser only.
+    <span style="color: #434343"
+      ><strong>Tip:</strong> Some symbols may not display as expected with
+      custom fonts and will automatically fall back to
+      <strong>gg sans</strong> for optimal display. </span
+    >
   </p>
-  <ul>
-    <li
-      class="ck-list-marker-color"
-      data-list-item-id="eddcb4ab8b9309f3d4cbd2475e8db5db8"
-    >
-      <span style="color: #434343"
-        >Fonts only work for Nitro subscribers in the experiment who use
-        languages with the Latin alphabet and have set a Latin-based language in
-        their Discord app.</span
-      >
-    </li>
-    <li
-      class="ck-list-marker-color"
-      data-list-item-id="ea263dfe7f443598c100d84f21a4d569f"
-    >
-      <span style="color: #434343"
-        >Some symbols may not display as expected with custom fonts and will
-        automatically fall back to <strong>gg sans</strong> for optimal
-        display. </span
-      >
-    </li>
-  </ul>
 </div>
+<h2 id="h_01KFKESBW2YTXP7F31J7C85JZY">
+  <span style="color: #434343">Desktop/Browser</span>
+</h2>
 <p>
   1. Head into your <strong>User Settings</strong> by selecting the
   <strong>cogwheel</strong> [<img
@@ -154,12 +146,60 @@
     Styles</span
   >
 </h4>
-<h1 id="h_01K32B6G929Y4NZ8FH6X5WATNB">Where Display Name Styles Appear</h1>
+<h2 id="h_01KFKERGA3KXSQNEC162BXXXR0">Mobile</h2>
+<p>1. Tap your <strong>avatar</strong> in the bottom-right corner.  </p>
+<p>
+  2. Press on <strong>Edit Profile</strong>, then tap under
+  <strong>Display Name Styles </strong>to change your Display Name. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/37865131983255"
+    alt="image2.gif"
+    width="330"
+    height="718"
+  />
+</p>
+<h4 id="h_01KFKERGA57BYXKT1JZ76DKQCG">
+  <span style="color: #666666"
+    >Find Display Name Styles on mobile under You tab &gt; Edit Profile &gt;
+    Display Name Styles</span
+  >
+</h4>
 <div class="info-box">
-  <strong>Note: </strong>Display Name Styles appear in multiple locations
-  throughout Discord, with some visibility variations during the experimental
-  phase. Some users may only see Display Name Styles in profiles, while others
-  may see them in multiple locations.
+  <strong>Note:</strong> Discord users without Nitro can preview Display Name
+  Styles on mobile and desktop but won’t be able to save the style to their
+  profiles.
+</div>
+<div class="tip-box">
+  <strong>Tip: </strong>You can disable Display Name Styles on mobile by tapping
+  your avatar in the bottom right corner, then selecting the cogwheel icon to
+  access <strong>User Settings</strong>. From there, navigate to
+  <strong>Accessibility</strong> and scroll down to find
+  <strong>Display Name Styles</strong>. A checkmark indicates the feature is
+  enabled, while an X means it's disabled—just tap to toggle between them.
+</div>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/37864976945943"
+    width="309"
+    height="668"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KFKERGA889BQKD9HP1998T65">
+  <span style="color: #666666"
+    >Display Name Styles toggle located under Accessibility</span
+  >
+</h4>
+<h1 id="h_01K32B6G929Y4NZ8FH6X5WATNB">Where Display Name Styles Appear</h1>
+<div class="warn-box">
+  <strong>Important: </strong>Display Name Styles may appear differently
+  depending on where you're viewing them within the mobile app (chat lists,
+  member lists, profiles, etc.).<br /><br /><span style="color: #434343"
+    >Additionally, Display Name Styles do not include animations on mobile
+    devices—you will see the fonts, colors, and effects, but they will appear
+    static (without animation).</span
+  >
 </div>
 <p>Display Name Styles appear in the following locations:</p>
 <ul>
