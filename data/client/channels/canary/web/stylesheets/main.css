@@ -52896,11 +52896,19 @@ svg.c1e9c47c23f12ca3-radioIcon {
   gap: 4px;
 }
 ._4909b209943734bd-headerWrapper {
+  gap: 8px;
   height: 72px;
 }
 ._4909b209943734bd-headerContent {
   display: flex;
   gap: 16px;
+  min-width: 0;
+}
+._4909b209943734bd-headerContentText {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
 }
 ._4909b209943734bd-appIcon {
   border-radius: var(--radius-md);
@@ -64135,14 +64143,16 @@ svg.c1e9c47c23f12ca3-radioIcon {
   border-inline-start: 2px solid #fff;
   padding: 12px 16px;
   -webkit-margin-end: 40px;
+  display: block;
   margin-inline-end: 40px;
 }
 .c0ec5e504d1e3f46-embedContainer {
   background: var(--background-mod-subtle);
   border-radius: 16px;
   margin-top: 16px;
+  max-width: 800px;
   padding: 28px 24px !important;
-  width: 532px;
+  width: 100%;
 }
 .c0ec5e504d1e3f46-image {
   -webkit-margin-end: 24px;
@@ -100348,4 +100358,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.20e4548f5d20d5b5.css.map*/
+/*# sourceMappingURL=web.5b8295a70b33a206.css.map*/
