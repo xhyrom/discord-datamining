@@ -47332,7 +47332,7 @@ h2.ef8c3f0a5d2b8eb4 {
   color: var(--text-code-deletion);
 }
 ._1f8a48306eb95bf3 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -53730,9 +53730,9 @@ svg._8e275bfb0bba6f61 {
 }
 .c8a139be8105677a {
   color: var(--text-default);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  line-height: 1.25rem;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -55027,9 +55027,9 @@ svg._8e275bfb0bba6f61 {
   }
 }
 .bde36363c8dab496 {
-  font-size: 2rem;
+  font-size: 32px;
   font-style: italic;
-  line-height: 1.6875rem;
+  line-height: 27px;
   text-transform: uppercase;
 }
 ._6893d5c1b46a62bf,
@@ -100075,4 +100075,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.93cdd438f754fc48.css.map*/
+/*# sourceMappingURL=web.54cfa37471421da2.css.map*/
