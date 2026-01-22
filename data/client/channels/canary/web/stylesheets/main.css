@@ -47825,12 +47825,20 @@ h2.ef8c3f0a5d2b8eb4 {
 }
 ._00bd80b4b8d7a586,
 ._6a24532382a6cda9 {
-  flex: 0 0 auto;
-  -webkit-margin-end: 8px;
   height: 18px;
-  margin-inline-end: 8px;
   object-fit: contain;
   width: 18px;
+}
+._00bd80b4b8d7a586,
+._6a24532382a6cda9,
+._979c33118367c4d2 {
+  flex: 0 0 auto;
+  -webkit-margin-end: 8px;
+  margin-inline-end: 8px;
+}
+._979c33118367c4d2 {
+  align-items: center;
+  display: flex;
 }
 ._00bd80b4b8d7a586 {
   border-radius: var(--radius-round);
@@ -48085,6 +48093,38 @@ svg._8e275bfb0bba6f61 {
   ._03343d8d0995e19a[aria-checked="true"]
   ._009a9673919f2d53 {
   color: GrayText;
+}
+._95da797e2e07d9ea {
+  display: inline-block;
+  flex-shrink: 0;
+  forced-color-adjust: none;
+  height: 1.25em;
+  vertical-align: text-bottom;
+  width: 1.25em;
+}
+._17bc6ec9a4f568b4 {
+  fill: var(--background-mod-normal);
+}
+.ef5c144d480c54fc,
+._04c3f104612e7ebb {
+}
+._04c3f104612e7ebb {
+  opacity: 0.4;
+}
+._4db858e2b224b87c {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  forced-color-adjust: none;
+  height: 12px;
+  justify-content: center;
+  margin: 0 4px;
+  padding: 0;
+  width: 12px;
+}
+._035d27fe8837d3b0 {
+  fill: var(--text-strong);
 }
 ._5d753c9a77c6086a {
   cursor: pointer;
@@ -49602,38 +49642,6 @@ svg._8e275bfb0bba6f61 {
 }
 .enable-forced-colors ._9dc278c01e5e7a0d {
   border: 2px solid CanvasText;
-}
-._95da797e2e07d9ea {
-  display: inline-block;
-  flex-shrink: 0;
-  forced-color-adjust: none;
-  height: 1.25em;
-  vertical-align: text-bottom;
-  width: 1.25em;
-}
-._17bc6ec9a4f568b4 {
-  fill: var(--background-mod-normal);
-}
-.ef5c144d480c54fc,
-._04c3f104612e7ebb {
-}
-._04c3f104612e7ebb {
-  opacity: 0.4;
-}
-._4db858e2b224b87c {
-  align-items: center;
-  border-radius: 50%;
-  display: flex;
-  flex-shrink: 0;
-  forced-color-adjust: none;
-  height: 12px;
-  justify-content: center;
-  margin: 0 4px;
-  padding: 0;
-  width: 12px;
-}
-._035d27fe8837d3b0 {
-  fill: var(--text-strong);
 }
 ._718b8a3401822305 {
   -webkit-margin-start: 0.25rem;
@@ -100075,4 +100083,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.54cfa37471421da2.css.map*/
+/*# sourceMappingURL=web.9d1c25f50f157ca6.css.map*/
