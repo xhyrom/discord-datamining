@@ -106,13 +106,11 @@
 </p>
 <h1 id="h_01K32B6G8Y6YKGMMTV0J2YF8XX">How to Access Display Name Styles</h1>
 <div class="tip-box">
-  <p>
-    <span style="color: #434343"
-      ><strong>Tip:</strong> Some symbols may not display as expected with
-      custom fonts and will automatically fall back to
-      <strong>gg sans</strong> for optimal display. </span
-    >
-  </p>
+  <span style="color: #434343"
+    ><strong>Tip:</strong> Some symbols may not display as expected with custom
+    fonts and will automatically fall back to <strong>gg sans</strong> for
+    optimal display. </span
+  >
 </div>
 <h2 id="h_01KFKESBW2YTXP7F31J7C85JZY">
   <span style="color: #434343">Desktop/Browser</span>
@@ -171,26 +169,6 @@
   Styles on mobile and desktop but won’t be able to save the style to their
   profiles.
 </div>
-<div class="tip-box">
-  <strong>Tip: </strong>You can disable Display Name Styles on mobile by tapping
-  your avatar in the bottom right corner, then selecting the cogwheel icon to
-  access <strong>User Settings</strong>. From there, navigate to
-  <strong>Accessibility</strong> and scroll down to find
-  <strong>Display Name Styles</strong>. A checkmark indicates the feature is
-  enabled, while an X means it's disabled—just tap to toggle between them.
-</div>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/37864976945943"
-    width="309"
-    height="668"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01KFKERGA889BQKD9HP1998T65">
-  <span style="color: #666666"
-    >Display Name Styles toggle located under Accessibility</span
-  >
-</h4>
 <h1 id="h_01K32B6G929Y4NZ8FH6X5WATNB">Where Display Name Styles Appear</h1>
 <div class="warn-box">
   <strong>Important: </strong>Display Name Styles may appear differently
@@ -573,5 +551,25 @@
   <span style="color: #666666"
     >To Disable Display Name Styles, Go to User Settings &gt;
     Accessibility</span
+  >
+</h4>
+<p>
+  You can disable Display Name Styles on mobile by tapping your avatar in the
+  bottom right corner, then selecting the cogwheel icon to access
+  <strong>User Settings</strong>. From there, navigate to
+  <strong>Accessibility</strong> and scroll down to find
+  <strong>Display Name Styles</strong>. A checkmark indicates the feature is
+  enabled, while an X means it's disabled—just tap to toggle between them.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/37864976945943"
+    width="309"
+    height="668"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KFKERGA889BQKD9HP1998T65">
+  <span style="color: #666666"
+    >Display Name Styles toggle located under Accessibility</span
   >
 </h4>
