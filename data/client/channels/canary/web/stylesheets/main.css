@@ -27179,11 +27179,6 @@ img.thumbnail__0f2e8 {
   height: 16px;
   width: 16px;
 }
-.label__202d8 {
-  align-items: center;
-  display: flex;
-  gap: var(--space-4);
-}
 .bannerButton_fb7f94 {
   align-items: center;
   background: var(--redesign-button-overlay-alpha-background);
@@ -45075,12 +45070,9 @@ div.modalOverrideBody__34eac {
 }
 .videoBackground__58471 {
   border-radius: inherit;
-  height: 100%;
-  inset-inline-start: 0;
+  inset: 1px;
   object-fit: cover;
   position: absolute;
-  top: 0;
-  width: 100%;
   z-index: 0;
 }
 .content__58471 {
@@ -81505,10 +81497,6 @@ html .invoiceCancelRow__968a4 {
   height: 100%;
   position: relative;
 }
-.item__0c135 {
-  align-items: center;
-  display: flex;
-}
 .root__2dbe1 {
   align-items: center;
   background: var(--background-surface-high);
@@ -100662,4 +100650,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.aeaf9db439b3ac2a.css.map*/
+/*# sourceMappingURL=web.e5d7869108d0b1aa.css.map*/
