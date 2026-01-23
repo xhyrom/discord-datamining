@@ -1,0 +1,29 @@
+{
+  "id": 37866689137431,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/37866689137431.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/37866689137431-Advertising-Business-Service-Terms",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000344951,
+  "created_at": "2026-01-22T19:15:01Z",
+  "name": "Advertising Business Service Terms",
+  "title": "Advertising Business Service Terms",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2026-01-23T01:22:43Z",
+  "user_segment_id": null,
+  "permission_group_id": 6449276657303,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "terms",
+    "advertising",
+    "advertising business service terms"
+  ],
+  "user_segment_ids": []
+}
