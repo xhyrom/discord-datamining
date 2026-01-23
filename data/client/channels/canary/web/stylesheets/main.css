@@ -63945,20 +63945,6 @@ svg.radioIcon_c1e9c4 {
   margin-top: 8px;
   width: 100%;
 }
-.mainContainer_ceba9e.compact_ceba9e {
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-margin-start: -3.95rem;
-  margin-inline-start: -3.95rem;
-}
-.actions_ceba9e {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-.embed_ceba9e {
-  margin: 8px 0;
-}
 .mainContainer__844a1.compact__844a1 {
   -webkit-padding-start: 0;
   padding-inline-start: 0;
@@ -100147,4 +100133,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.68cfbe036dc09180.css.map*/
+/*# sourceMappingURL=web.2d5ae6ae5a2dafa1.css.map*/
