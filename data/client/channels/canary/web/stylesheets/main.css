@@ -64322,13 +64322,13 @@ svg.radioIcon_c1e9c4 {
   white-space: nowrap;
 }
 .username_b7f4b4 {
+  color: var(--text-muted);
   font-size: 12px;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-normal);
   line-height: 14px;
 }
 .tagFaded_b7f4b4 {
   flex-shrink: 10;
-  opacity: 0.6;
 }
 .discriminator_b7f4b4 {
   color: var(--text-muted);
@@ -100650,4 +100650,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.e5d7869108d0b1aa.css.map*/
+/*# sourceMappingURL=web.59d857877cfb3e09.css.map*/
