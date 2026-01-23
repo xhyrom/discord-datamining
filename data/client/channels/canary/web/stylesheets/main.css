@@ -2747,6 +2747,7 @@
   --custom-gradient-color-start: var(--blurple-50);
   --custom-gradient-color-end: var(--blurple-50);
   --custom-gradient-offset-bottom: 0%;
+  isolation: isolate;
   position: relative;
 }
 :where(.container_a62383):before {
@@ -2773,9 +2774,7 @@
   position: absolute;
   right: 0;
   top: 0;
-}
-:where(.container_a62383 > *) {
-  position: relative;
+  z-index: -1;
 }
 .purple_a62383 {
   --custom-gradient-color-start: var(--expressive-gradient-purple-start);
@@ -8730,12 +8729,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   outline: 2px solid var(--custom-input-focus-border-color);
   outline-offset: -2px;
 }
-.selectField__5fa2f[data-read-only="true"],
-.selectField__5fa2f[data-read-only="true"] * {
+.selectField__5fa2f[data-read-only="true"] {
   cursor: default !important;
 }
-.selectField__5fa2f[data-disabled="true"],
-.selectField__5fa2f[data-disabled="true"] * {
+.selectField__5fa2f[data-disabled="true"] {
   cursor: not-allowed !important;
 }
 .selectButton__5fa2f,
@@ -10777,14 +10774,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
-}
-.actionsFullWidth_d6f39b {
-  flex-direction: column;
-  width: 100%;
-}
-.actionsFullWidth_d6f39b > * {
-  min-width: 0;
-  width: 100%;
 }
 .multistepIndicator_d6f39b {
   -webkit-margin-start: var(--space-4);
@@ -21722,16 +21711,10 @@ body .headerAnimation_b54a5b {
 .badgeContainer__635ed svg {
   flex-shrink: 0;
 }
-.badgeContainer__635ed div {
-  overflow: hidden;
-}
-.badgeContainer__635ed div,
-.badgeLabel__635ed {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 .badgeLabel__635ed {
   overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 :where(.badgesContainer__635ed) {
   align-items: center;
@@ -22314,14 +22297,14 @@ img.thumbnail__0f2e8 {
 .enable-forced-colors .spoilerMarkdownContent__299eb ul li > span {
   border: 1px solid var(--__current--spoiler-border-color);
 }
-.spoilerMarkdownContent__299eb h1 > span > *,
-.spoilerMarkdownContent__299eb h2 > span > *,
-.spoilerMarkdownContent__299eb h3 > span > *,
-.spoilerMarkdownContent__299eb h4 > span > *,
-.spoilerMarkdownContent__299eb h5 > span > *,
-.spoilerMarkdownContent__299eb ol li > span > *,
-.spoilerMarkdownContent__299eb small > span > *,
-.spoilerMarkdownContent__299eb ul li > span > * {
+.spoilerMarkdownContent__299eb h1 > span > span,
+.spoilerMarkdownContent__299eb h2 > span > span,
+.spoilerMarkdownContent__299eb h3 > span > span,
+.spoilerMarkdownContent__299eb h4 > span > span,
+.spoilerMarkdownContent__299eb h5 > span > span,
+.spoilerMarkdownContent__299eb ol li > span > span,
+.spoilerMarkdownContent__299eb small > span > span,
+.spoilerMarkdownContent__299eb ul li > span > span {
   pointer-events: var(--__current--spoiler-pointer-events);
 }
 .obscureButtonContainer__299eb {
@@ -23155,12 +23138,12 @@ img.thumbnail__0f2e8 {
   -webkit-app-region: no-drag;
   pointer-events: none;
 }
-.volumeButtonSlider__2d263 > div {
-  overflow: hidden;
-  pointer-events: auto;
-}
 .volumeButtonSlider__2d263.sliderVisible__2d263 {
   display: initial;
+}
+.mediaBar__2d263 {
+  overflow: hidden;
+  pointer-events: auto;
 }
 .wrapper_cf09d8 {
   background-color: var(--background-base-lower);
@@ -25829,9 +25812,6 @@ img.thumbnail__0f2e8 {
   position: absolute;
   top: 8px;
 }
-.markup__75297 .codeActions__75297 > div {
-  cursor: pointer;
-}
 .markup__75297 .codeContainer__75297:hover .codeActions__75297 {
   display: block;
 }
@@ -27181,7 +27161,7 @@ img.thumbnail__0f2e8 {
 }
 .bannerButton_fb7f94 {
   align-items: center;
-  background: var(--redesign-button-overlay-alpha-background);
+  background: var(--control-overlay-secondary-background-default);
   border: 1px solid var(--opacity-white-8);
   border-radius: 50%;
   box-sizing: border-box;
@@ -27195,7 +27175,7 @@ img.thumbnail__0f2e8 {
 }
 .bannerButton_fb7f94:active,
 .bannerButton_fb7f94:hover {
-  background: var(--redesign-button-overlay-alpha-pressed-background);
+  background: var(--control-overlay-secondary-background-active);
   transition: background 0.15s ease-out;
 }
 .bannerButton_fb7f94.disabled_fb7f94 {
@@ -29534,8 +29514,6 @@ html:not(.chat-input) .inputInner_b1f01d {
   margin-top: var(--space-16);
 }
 .actions__2ee1b {
-}
-.actionsFullWidth__2ee1b {
 }
 .multistepIndicator__2ee1b {
 }
@@ -42326,9 +42304,6 @@ div.mobilePushContainer__3d3b0 {
 .uploadArea_b78547 strong {
   font-weight: var(--font-weight-bold);
 }
-.uploadArea_b78547 * {
-  pointer-events: none;
-}
 .uploadArea_b78547.droppable_b78547 {
   visibility: visible;
 }
@@ -42339,6 +42314,7 @@ div.mobilePushContainer__3d3b0 {
   animation: uploadIconAnimateIn_b78547 0.25s ease-in-out 0s normal forwards;
   display: flex;
   height: 170px;
+  pointer-events: none;
   position: relative;
   width: 310px;
 }
@@ -57390,7 +57366,7 @@ svg.radioIcon_c1e9c4 {
 .description__1f7ec {
   margin-top: var(--custom-app-message-embed-base-info-top);
 }
-.description__1f7ec * {
+.description__1f7ec strong {
   font-weight: 500;
 }
 .tagline__1f7ec {
@@ -58235,7 +58211,9 @@ svg.radioIcon_c1e9c4 {
   height: -moz-fit-content;
   height: fit-content;
   grid-row-gap: 0.25rem;
+  align-items: start;
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  justify-items: start;
   min-height: 0;
   min-width: 0;
   padding-bottom: 0.125rem;
@@ -58245,10 +58223,6 @@ svg.radioIcon_c1e9c4 {
 }
 .container_b7e1cb:empty {
   display: none;
-}
-.container_b7e1cb > * {
-  align-self: start;
-  justify-self: start;
 }
 .gifFavoriteButton_b7e1cb {
   box-sizing: border-box;
@@ -60898,7 +60872,6 @@ svg.radioIcon_c1e9c4 {
 }
 .removeMosaicItemButton__6c706 {
   align-self: flex-start;
-  color: var(--interactive-text-default);
   cursor: pointer;
   flex: 0 0 auto;
   opacity: 0;
@@ -60943,8 +60916,7 @@ svg.radioIcon_c1e9c4 {
   overflow: hidden;
 }
 .removeMosaicItemButton__6c706:focus-within,
-.removeMosaicItemButton__6c706:hover,
-:hover + .removeMosaicItemButton__6c706 {
+.removeMosaicItemButton__6c706:hover {
   color: var(--interactive-text-hover);
 }
 .nonMediaMosaicItem__6c706 {
@@ -60954,8 +60926,10 @@ svg.radioIcon_c1e9c4 {
 }
 .removeMosaicItemHoverButton__6c706:hover,
 .keyboard-mode .removeMosaicItemHoverButton__6c706:focus {
-  background-color: var(--control-critical-primary-background-default);
-  color: var(--white);
+  background-color: var(
+    --control-critical-primary-background-default
+  ) !important;
+  color: var(--control-critical-primary-text-default) !important;
 }
 .removeMosaicItemHoverButton__6c706:active {
   background-color: var(--control-critical-primary-background-active);
@@ -61793,7 +61767,7 @@ svg.radioIcon_c1e9c4 {
   cursor: pointer;
   padding-inline: 0;
 }
-.tertiaryAction__0be77 :hover {
+.tertiaryAction__0be77:hover {
   text-decoration: underline;
 }
 .theme-light .container__0be77 {
@@ -63435,7 +63409,7 @@ svg.radioIcon_c1e9c4 {
 .description__403f1 {
   margin-top: var(--custom-app-message-embed-base-info-top);
 }
-.description__403f1 * {
+.description__403f1 strong {
   font-weight: var(--font-weight-medium);
 }
 .info__403f1 {
@@ -75744,19 +75718,14 @@ div.nagbar_d74ef8 {
   opacity: 1;
 }
 .recorderContainer__2636e {
-  transition: border 0.15s ease;
-}
-.recorderContainer__2636e * {
   cursor: pointer;
+  transition: border 0.15s ease;
 }
 .recorderContainer__2636e:not(.containerDisabled__2636e):focus-within,
 .recorderContainer__2636e:not(.containerDisabled__2636e):hover {
   border-color: hsl(var(--red-400-hsl) / 0.3);
 }
 .containerDisabled__2636e {
-  cursor: not-allowed;
-}
-.containerDisabled__2636e * {
   cursor: not-allowed;
 }
 .recorderLayout__2636e {
@@ -84033,7 +84002,6 @@ html.disable-forced-colors * {
   --redesign-button-overlay-alpha-pressed-background: hsl(
     var(--black-hsl) / 0.64
   );
-  --redesign-button-overlay-alpha-text: var(--white);
   --redesign-button-positive-background: var(--green-430);
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
@@ -84047,17 +84015,10 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
   );
-  --redesign-button-primary-alt-border: var(--blurple-26);
-  --redesign-button-primary-background: var(--brand-500);
-  --redesign-button-primary-overlay-background: var(--white);
   --redesign-button-primary-overlay-pressed-background: var(--primary-230);
   --redesign-button-primary-overlay-text: var(--primary-860);
   --redesign-button-primary-pressed-background: var(--brand-560);
-  --redesign-button-primary-text: var(--white);
   --redesign-button-secondary-background: var(--primary-460);
-  --redesign-button-secondary-border: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
   --redesign-button-secondary-overlay-background: hsl(var(--black-hsl) / 0.54);
   --redesign-button-secondary-overlay-pressed-background: hsl(
     var(--black-hsl) / 0.64
@@ -84065,12 +84026,10 @@ html.disable-forced-colors * {
   --redesign-button-secondary-overlay-text: var(--white);
   --redesign-button-secondary-pressed-background: var(--primary-500);
   --redesign-button-secondary-pressed-border: hsl(var(--transparent-hsl) / 0);
-  --redesign-button-secondary-text: var(--neutral-10);
   --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
   --redesign-button-selected-pressed-background: hsl(
     var(--brand-500-hsl) / 0.28
   );
-  --redesign-button-selected-text: var(--blurple-50);
   --redesign-button-tertiary-background: var(--primary-660);
   --redesign-button-tertiary-pressed-background: var(--primary-560);
   --redesign-button-tertiary-pressed-text: var(--primary-330);
@@ -85191,12 +85150,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-overlay-alpha-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-positive-background: color-mix(
       in oklab,
       var(--green-430) 100%,
@@ -85227,27 +85180,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-border: color-mix(
-      in oklab,
-      var(--blurple-26) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-primary-background: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-background: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-primary-overlay-pressed-background: color-mix(
       in oklab,
       var(--primary-230) 100%,
@@ -85266,26 +85198,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-secondary-background: color-mix(
       in oklab,
       var(--primary-460) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-border: color-mix(
-      in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
     );
     --redesign-button-secondary-overlay-background: color-mix(
       in oklab,
@@ -85320,12 +85237,6 @@ html.disable-forced-colors * {
           var(--custom-theme-base-color-amount, 0%)
         )
     );
-    --redesign-button-secondary-text: color-mix(
-      in oklab,
-      var(--neutral-10) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-selected-background: color-mix(
       in oklab,
       hsl(var(--brand-500-hsl) / 0.24) 100%,
@@ -85337,12 +85248,6 @@ html.disable-forced-colors * {
       hsl(var(--brand-500-hsl) / 0.28) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.28)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-selected-text: color-mix(
-      in oklab,
-      var(--blurple-50) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-tertiary-background: color-mix(
       in oklab,
@@ -86185,7 +86090,6 @@ html.disable-forced-colors * {
   --redesign-button-overlay-alpha-pressed-background: hsl(
     var(--black-hsl) / 0.64
   );
-  --redesign-button-overlay-alpha-text: var(--white);
   --redesign-button-positive-background: var(--green-430);
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
@@ -86199,17 +86103,10 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
   );
-  --redesign-button-primary-alt-border: var(--blurple-50);
-  --redesign-button-primary-background: var(--brand-500);
-  --redesign-button-primary-overlay-background: var(--white);
   --redesign-button-primary-overlay-pressed-background: var(--primary-230);
   --redesign-button-primary-overlay-text: var(--primary-860);
   --redesign-button-primary-pressed-background: var(--brand-560);
-  --redesign-button-primary-text: var(--white);
   --redesign-button-secondary-background: var(--white);
-  --redesign-button-secondary-border: hsl(
-    var(--opacity-28-hsl) / 0.2784313725490196
-  );
   --redesign-button-secondary-overlay-background: hsl(var(--black-hsl) / 0.54);
   --redesign-button-secondary-overlay-pressed-background: hsl(
     var(--black-hsl) / 0.64
@@ -86217,12 +86114,10 @@ html.disable-forced-colors * {
   --redesign-button-secondary-overlay-text: var(--white);
   --redesign-button-secondary-pressed-background: var(--primary-130);
   --redesign-button-secondary-pressed-border: hsl(var(--opacity-20-hsl) / 0.2);
-  --redesign-button-secondary-text: var(--neutral-69);
   --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.16);
   --redesign-button-selected-pressed-background: hsl(
     var(--brand-500-hsl) / 0.24
   );
-  --redesign-button-selected-text: var(--blurple-50);
   --redesign-button-tertiary-background: hsl(var(--black-hsl) / 0.08);
   --redesign-button-tertiary-pressed-background: hsl(var(--black-hsl) / 0.16);
   --redesign-button-tertiary-pressed-text: var(--primary-500);
@@ -87345,12 +87240,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-overlay-alpha-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-positive-background: color-mix(
       in oklab,
       var(--green-430) 100%,
@@ -87381,27 +87270,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-border: color-mix(
-      in oklab,
-      var(--blurple-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-primary-background: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-background: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-primary-overlay-pressed-background: color-mix(
       in oklab,
       var(--primary-230) 100%,
@@ -87420,26 +87288,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-secondary-background: color-mix(
       in oklab,
       var(--white) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-border: color-mix(
-      in oklab,
-      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
     );
     --redesign-button-secondary-overlay-background: color-mix(
       in oklab,
@@ -87474,12 +87327,6 @@ html.disable-forced-colors * {
           var(--custom-theme-base-color-amount, 0%)
         )
     );
-    --redesign-button-secondary-text: color-mix(
-      in oklab,
-      var(--neutral-69) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-selected-background: color-mix(
       in oklab,
       hsl(var(--brand-500-hsl) / 0.16) 100%,
@@ -87491,12 +87338,6 @@ html.disable-forced-colors * {
       hsl(var(--brand-500-hsl) / 0.24) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-selected-text: color-mix(
-      in oklab,
-      var(--blurple-50) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-tertiary-background: color-mix(
       in oklab,
@@ -88343,7 +88184,6 @@ html.disable-forced-colors * {
   --redesign-button-overlay-alpha-pressed-background: hsl(
     var(--black-hsl) / 0.64
   );
-  --redesign-button-overlay-alpha-text: var(--white);
   --redesign-button-positive-background: var(--green-430);
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
@@ -88357,15 +88197,10 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
   );
-  --redesign-button-primary-alt-border: var(--blurple-42);
-  --redesign-button-primary-background: var(--brand-500);
-  --redesign-button-primary-overlay-background: var(--white);
   --redesign-button-primary-overlay-pressed-background: var(--plum-4);
   --redesign-button-primary-overlay-text: var(--plum-25);
   --redesign-button-primary-pressed-background: var(--brand-560);
-  --redesign-button-primary-text: var(--white);
   --redesign-button-secondary-background: var(--plum-17);
-  --redesign-button-secondary-border: hsl(var(--opacity-20-hsl) / 0.2);
   --redesign-button-secondary-overlay-background: hsl(var(--black-hsl) / 0.54);
   --redesign-button-secondary-overlay-pressed-background: hsl(
     var(--black-hsl) / 0.64
@@ -88375,12 +88210,10 @@ html.disable-forced-colors * {
   --redesign-button-secondary-pressed-border: hsl(
     var(--opacity-16-hsl) / 0.1607843137254902
   );
-  --redesign-button-secondary-text: var(--neutral-10);
   --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
   --redesign-button-selected-pressed-background: hsl(
     var(--brand-500-hsl) / 0.28
   );
-  --redesign-button-selected-text: var(--blurple-50);
   --redesign-button-tertiary-background: hsl(
     var(--opacity-black-12-hsl) / 0.12156862745098039
   );
@@ -89501,12 +89334,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-overlay-alpha-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-positive-background: color-mix(
       in oklab,
       var(--green-430) 100%,
@@ -89537,27 +89364,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-border: color-mix(
-      in oklab,
-      var(--blurple-42) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-primary-background: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-background: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-primary-overlay-pressed-background: color-mix(
       in oklab,
       var(--plum-4) 100%,
@@ -89576,26 +89382,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-secondary-background: color-mix(
       in oklab,
       var(--plum-17) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-border: color-mix(
-      in oklab,
-      hsl(var(--opacity-20-hsl) / 0.2) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
     );
     --redesign-button-secondary-overlay-background: color-mix(
       in oklab,
@@ -89630,12 +89421,6 @@ html.disable-forced-colors * {
           var(--custom-theme-base-color-amount, 0%)
         )
     );
-    --redesign-button-secondary-text: color-mix(
-      in oklab,
-      var(--neutral-10) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-selected-background: color-mix(
       in oklab,
       hsl(var(--brand-500-hsl) / 0.24) 100%,
@@ -89647,12 +89432,6 @@ html.disable-forced-colors * {
       hsl(var(--brand-500-hsl) / 0.28) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.28)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-selected-text: color-mix(
-      in oklab,
-      var(--blurple-50) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-tertiary-background: color-mix(
       in oklab,
@@ -90517,7 +90296,6 @@ html.disable-forced-colors * {
   --redesign-button-overlay-alpha-pressed-background: hsl(
     var(--black-hsl) / 0.64
   );
-  --redesign-button-overlay-alpha-text: var(--white);
   --redesign-button-positive-background: var(--green-430);
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
@@ -90531,17 +90309,10 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
   );
-  --redesign-button-primary-alt-border: var(--blurple-36);
-  --redesign-button-primary-background: var(--brand-500);
-  --redesign-button-primary-overlay-background: var(--white);
   --redesign-button-primary-overlay-pressed-background: var(--plum-4);
   --redesign-button-primary-overlay-text: var(--plum-25);
   --redesign-button-primary-pressed-background: var(--brand-560);
-  --redesign-button-primary-text: var(--white);
   --redesign-button-secondary-background: var(--plum-15);
-  --redesign-button-secondary-border: hsl(
-    var(--opacity-12-hsl) / 0.12156862745098039
-  );
   --redesign-button-secondary-overlay-background: hsl(var(--black-hsl) / 0.54);
   --redesign-button-secondary-overlay-pressed-background: hsl(
     var(--black-hsl) / 0.64
@@ -90551,12 +90322,10 @@ html.disable-forced-colors * {
   --redesign-button-secondary-pressed-border: hsl(
     var(--opacity-4-hsl) / 0.0392156862745098
   );
-  --redesign-button-secondary-text: var(--neutral-5);
   --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
   --redesign-button-selected-pressed-background: hsl(
     var(--brand-500-hsl) / 0.28
   );
-  --redesign-button-selected-text: var(--blurple-50);
   --redesign-button-tertiary-background: hsl(var(--plum-11-hsl) / 0.12);
   --redesign-button-tertiary-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
   --redesign-button-tertiary-pressed-text: var(--plum-5);
@@ -91677,12 +91446,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-overlay-alpha-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-positive-background: color-mix(
       in oklab,
       var(--green-430) 100%,
@@ -91713,27 +91476,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-alt-border: color-mix(
-      in oklab,
-      var(--blurple-36) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-primary-background: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-background: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-primary-overlay-pressed-background: color-mix(
       in oklab,
       var(--plum-4) 100%,
@@ -91752,26 +91494,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-primary-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-secondary-background: color-mix(
       in oklab,
       var(--plum-15) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-border: color-mix(
-      in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
     );
     --redesign-button-secondary-overlay-background: color-mix(
       in oklab,
@@ -91806,12 +91533,6 @@ html.disable-forced-colors * {
           var(--custom-theme-base-color-amount, 0%)
         )
     );
-    --redesign-button-secondary-text: color-mix(
-      in oklab,
-      var(--neutral-5) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-selected-background: color-mix(
       in oklab,
       hsl(var(--brand-500-hsl) / 0.24) 100%,
@@ -91823,12 +91544,6 @@ html.disable-forced-colors * {
       hsl(var(--brand-500-hsl) / 0.28) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.28)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-selected-text: color-mix(
-      in oklab,
-      var(--blurple-50) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --redesign-button-tertiary-background: color-mix(
       in oklab,
@@ -92352,9 +92067,6 @@ html.disable-forced-colors * {
   --radio-border-hover: var(--neutral-12);
   --radio-border-selected-default: var(--neutral-12);
   --radio-border-selected-hover: var(--neutral-12);
-  --redesign-button-primary-alt-border: var(--brand-300);
-  --redesign-button-secondary-border: var(--neutral-12);
-  --redesign-button-secondary-text: var(--neutral-1);
   --redesign-button-tertiary-text: var(--neutral-1);
   --redesign-channel-name-muted-text: var(--neutral-12);
   --redesign-channel-name-text: var(--neutral-1);
@@ -92751,30 +92463,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --redesign-button-primary-alt-border: color-mix(
-      in oklab,
-      var(--brand-300) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-secondary-border: color-mix(
-      in oklab,
-      var(--neutral-12) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-secondary-text: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-tertiary-text: color-mix(
       in oklab,
       var(--neutral-1) 100%,
@@ -93129,9 +92817,6 @@ html.disable-forced-colors * {
   --radio-border-hover: var(--neutral-50);
   --radio-border-selected-default: var(--neutral-50);
   --radio-border-selected-hover: var(--neutral-50);
-  --redesign-button-primary-alt-border: var(--brand-600);
-  --redesign-button-secondary-border: var(--neutral-50);
-  --redesign-button-secondary-text: var(--neutral-76);
   --redesign-button-tertiary-text: var(--neutral-76);
   --redesign-channel-name-muted-text: var(--neutral-50);
   --redesign-channel-name-text: var(--neutral-100);
@@ -93528,30 +93213,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --redesign-button-primary-alt-border: color-mix(
-      in oklab,
-      var(--brand-600) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-secondary-border: color-mix(
-      in oklab,
-      var(--neutral-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-secondary-text: color-mix(
-      in oklab,
-      var(--neutral-76) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-tertiary-text: color-mix(
       in oklab,
       var(--neutral-76) 100%,
@@ -93914,9 +93575,6 @@ html.disable-forced-colors * {
   --radio-border-hover: var(--neutral-24);
   --radio-border-selected-default: var(--neutral-24);
   --radio-border-selected-hover: var(--neutral-24);
-  --redesign-button-primary-alt-border: var(--brand-345);
-  --redesign-button-secondary-border: var(--neutral-24);
-  --redesign-button-secondary-text: var(--neutral-6);
   --redesign-button-tertiary-text: var(--neutral-6);
   --redesign-channel-name-muted-text: var(--neutral-24);
   --redesign-channel-name-text: var(--neutral-1);
@@ -94313,30 +93971,6 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --redesign-button-primary-alt-border: color-mix(
-      in oklab,
-      var(--brand-345) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-secondary-border: color-mix(
-      in oklab,
-      var(--neutral-24) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-secondary-text: color-mix(
-      in oklab,
-      var(--neutral-6) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --redesign-button-tertiary-text: color-mix(
       in oklab,
       var(--neutral-6) 100%,
@@ -94691,9 +94325,6 @@ html.disable-forced-colors * {
   --radio-border-hover: var(--neutral-19);
   --radio-border-selected-default: var(--neutral-19);
   --radio-border-selected-hover: var(--neutral-19);
-  --redesign-button-primary-alt-border: var(--brand-330);
-  --redesign-button-secondary-border: var(--neutral-19);
-  --redesign-button-secondary-text: var(--neutral-1);
   --redesign-button-tertiary-text: var(--neutral-1);
   --redesign-channel-name-muted-text: var(--neutral-19);
   --redesign-channel-name-text: var(--neutral-1);
@@ -95085,30 +94716,6 @@ html.disable-forced-colors * {
         var(--custom-theme-base-color-amount, 0%)
     );
     --mobile-text-heading-primary: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-alt-border: color-mix(
-      in oklab,
-      var(--brand-330) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-secondary-border: color-mix(
-      in oklab,
-      var(--neutral-19) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-secondary-text: color-mix(
       in oklab,
       var(--neutral-1) 100%,
       var(--custom-theme-text-color, #000)
@@ -100591,7 +100198,7 @@ img[alt] {
   visibility: hidden;
 }
 .enable-forced-colors:not(.platform-web) body:before,
-html:has(.enable-forced-colors:not(.platform-web)) body:before {
+html.enable-forced-colors:not(.platform-web) body:before {
   border: 6px solid #d3d3d3;
   border-top: 0 solid #d3d3d3;
   box-sizing: border-box;
@@ -100607,8 +100214,8 @@ html:has(.enable-forced-colors:not(.platform-web)) body:before {
 }
 .enable-forced-colors:not(.platform-web) #app-mount__51fd7,
 .enable-forced-colors:not(.platform-web) .appMount__51fd7,
-html:has(.enable-forced-colors:not(.platform-web)) #app-mount__51fd7,
-html:has(.enable-forced-colors:not(.platform-web)) .appMount__51fd7 {
+html.enable-forced-colors:not(.platform-web) #app-mount__51fd7,
+html.enable-forced-colors:not(.platform-web) .appMount__51fd7 {
   background-color: Canvas;
   box-sizing: border-box;
   height: calc(100% - 6px);
@@ -100616,20 +100223,20 @@ html:has(.enable-forced-colors:not(.platform-web)) .appMount__51fd7 {
   width: calc(100% - 12px);
 }
 .enable-forced-colors:not(.platform-web).theme-dark body:before,
-html:has(.enable-forced-colors:not(.platform-web)).theme-dark body:before {
+html.enable-forced-colors:not(.platform-web).theme-dark body:before {
   border-color: #d3d3d3;
 }
 .enable-forced-colors:not(.platform-web).theme-dark.app-focused body:before,
-html:has(.enable-forced-colors:not(.platform-web)).theme-dark.app-focused
+html.enable-forced-colors:not(.platform-web).theme-dark.app-focused
   body:before {
   border-color: gold;
 }
 .enable-forced-colors:not(.platform-web).theme-light body:before,
-html:has(.enable-forced-colors:not(.platform-web)).theme-light body:before {
+html.enable-forced-colors:not(.platform-web).theme-light body:before {
   border-color: gray;
 }
 .enable-forced-colors:not(.platform-web).theme-light.app-focused body:before,
-html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
+html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   body:before {
   border-color: #483d8b;
 }
@@ -100645,4 +100252,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.0d41973d3fc744bb.css.map*/
+/*# sourceMappingURL=web.54064bb686c88ffa.css.map*/
