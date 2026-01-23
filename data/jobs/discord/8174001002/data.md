@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8174001002](https://discord.com/jobs/8174001002)
 
-**Updated At:** Wed, 21 Jan 2026 18:39:32 GMT
+**Updated At:** Fri, 23 Jan 2026 01:14:32 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As a manager on the Safety Data Science &amp;amp; Analytics team, you will help Discord achieve its mission of making it easier and more fun for people to talk and hang out before, during, and after playing games, while ensuring a safe environment that minimally disrupts positive user experiences.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As a manager on the Safety Data Science &amp;amp; Analytics team, you will help Discord achieve its mission of making it easier and more fun for people to talk and hang out before, during, and after playing games, while ensuring a safe environment that minimally disrupts positive user experiences. This is a hands-on technical manager role that supervises a smaller, stable team of 6.
 What you'll be doing
 
 Directly manage a 6-person Analytics Data Science team across junior to senior levels, providing right-sized coaching, feedback, and development support.
