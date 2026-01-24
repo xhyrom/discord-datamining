@@ -48422,6 +48422,14 @@ h2.title_feb59c {
   height: 32px;
   width: 32px;
 }
+.badgeContainer_c1e9c4 {
+  flex: 0 0 auto;
+  -webkit-margin-start: 8px;
+  align-items: center;
+  display: flex;
+  height: 18px;
+  margin-inline-start: 8px;
+}
 .switchContainer_c1e9c4 {
   flex-shrink: 0;
 }
@@ -100254,4 +100262,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.6d2ce3c50d972461.css.map*/
+/*# sourceMappingURL=web.6d61de67181a5f7b.css.map*/
