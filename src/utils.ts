@@ -137,6 +137,7 @@ export const postToDiscord = async (
           allowed_mentions: {
             parse: ["roles"],
           },
+          auth: false,
         },
       });
     } catch (e) {
