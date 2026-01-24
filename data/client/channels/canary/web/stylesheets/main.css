@@ -48082,7 +48082,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -54163,9 +54163,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -84001,18 +84001,6 @@ html.disable-forced-colors * {
     var(--opacity-black-8-hsl) / 0.0784313725490196
   );
   --radio-thumb-background-active: var(--neutral-1);
-  --redesign-button-active-background: var(--green-430);
-  --redesign-button-active-pressed-background: var(--green-460);
-  --redesign-button-active-text: var(--white);
-  --redesign-button-danger-background: var(--red-430);
-  --redesign-button-destructive-background: var(--red-430);
-  --redesign-button-destructive-pressed-background: var(--red-460);
-  --redesign-button-destructive-text: var(--white);
-  --redesign-button-overlay-alpha-background: hsl(var(--black-hsl) / 0.54);
-  --redesign-button-overlay-alpha-pressed-background: hsl(
-    var(--black-hsl) / 0.64
-  );
-  --redesign-button-positive-background: var(--green-430);
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
   );
@@ -84024,21 +84012,6 @@ html.disable-forced-colors * {
   );
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
-  );
-  --redesign-button-primary-overlay-pressed-background: var(--primary-230);
-  --redesign-button-primary-overlay-text: var(--primary-860);
-  --redesign-button-primary-pressed-background: var(--brand-560);
-  --redesign-button-secondary-background: var(--primary-460);
-  --redesign-button-secondary-overlay-background: hsl(var(--black-hsl) / 0.54);
-  --redesign-button-secondary-overlay-pressed-background: hsl(
-    var(--black-hsl) / 0.64
-  );
-  --redesign-button-secondary-overlay-text: var(--white);
-  --redesign-button-secondary-pressed-background: var(--primary-500);
-  --redesign-button-secondary-pressed-border: hsl(var(--transparent-hsl) / 0);
-  --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
-  --redesign-button-selected-pressed-background: hsl(
-    var(--brand-500-hsl) / 0.28
   );
   --redesign-button-tertiary-background: var(--primary-660);
   --redesign-button-tertiary-pressed-background: var(--primary-560);
@@ -84436,6 +84409,24 @@ html.disable-forced-colors * {
       var(--brand-360) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
+    );
+    --control-secondary-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --control-secondary-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
@@ -85106,66 +85097,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-active-background: color-mix(
-      in oklab,
-      var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-active-pressed-background: color-mix(
-      in oklab,
-      var(--green-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-active-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-danger-background: color-mix(
-      in oklab,
-      var(--red-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-background: color-mix(
-      in oklab,
-      var(--red-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-pressed-background: color-mix(
-      in oklab,
-      var(--red-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-overlay-alpha-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.54) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.54)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-alpha-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.64) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-background: color-mix(
-      in oklab,
-      var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-premium-primary-pink-for-gradient: color-mix(
       in oklab,
       var(--premium-tier-2-pink-for-gradients) 100%,
@@ -85188,75 +85119,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--premium-tier-2-purple-for-gradients-2) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-pressed-background: color-mix(
-      in oklab,
-      var(--primary-230) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-text: color-mix(
-      in oklab,
-      var(--primary-860) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-pressed-background: color-mix(
-      in oklab,
-      var(--brand-560) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-background: color-mix(
-      in oklab,
-      var(--primary-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.54) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.54)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.64) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-secondary-pressed-background: color-mix(
-      in oklab,
-      var(--primary-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-pressed-border: color-mix(
-      in oklab,
-      hsl(var(--transparent-hsl) / 0) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-selected-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-selected-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0.28) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.28)
         var(--custom-theme-base-color-amount, 0%)
     );
     --redesign-button-tertiary-background: color-mix(
@@ -86089,18 +85951,6 @@ html.disable-forced-colors * {
   --radio-foreground-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --radio-foreground-hover: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --radio-thumb-background-active: var(--neutral-1);
-  --redesign-button-active-background: var(--green-430);
-  --redesign-button-active-pressed-background: var(--green-460);
-  --redesign-button-active-text: var(--white);
-  --redesign-button-danger-background: var(--red-430);
-  --redesign-button-destructive-background: var(--red-430);
-  --redesign-button-destructive-pressed-background: var(--red-460);
-  --redesign-button-destructive-text: var(--white);
-  --redesign-button-overlay-alpha-background: hsl(var(--black-hsl) / 0.54);
-  --redesign-button-overlay-alpha-pressed-background: hsl(
-    var(--black-hsl) / 0.64
-  );
-  --redesign-button-positive-background: var(--green-430);
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
   );
@@ -86112,21 +85962,6 @@ html.disable-forced-colors * {
   );
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
-  );
-  --redesign-button-primary-overlay-pressed-background: var(--primary-230);
-  --redesign-button-primary-overlay-text: var(--primary-860);
-  --redesign-button-primary-pressed-background: var(--brand-560);
-  --redesign-button-secondary-background: var(--white);
-  --redesign-button-secondary-overlay-background: hsl(var(--black-hsl) / 0.54);
-  --redesign-button-secondary-overlay-pressed-background: hsl(
-    var(--black-hsl) / 0.64
-  );
-  --redesign-button-secondary-overlay-text: var(--white);
-  --redesign-button-secondary-pressed-background: var(--primary-130);
-  --redesign-button-secondary-pressed-border: hsl(var(--opacity-20-hsl) / 0.2);
-  --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.16);
-  --redesign-button-selected-pressed-background: hsl(
-    var(--brand-500-hsl) / 0.24
   );
   --redesign-button-tertiary-background: hsl(var(--black-hsl) / 0.08);
   --redesign-button-tertiary-pressed-background: hsl(var(--black-hsl) / 0.16);
@@ -86526,6 +86361,24 @@ html.disable-forced-colors * {
       var(--brand-500) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
+    );
+    --control-secondary-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --control-secondary-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
@@ -87196,66 +87049,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-active-background: color-mix(
-      in oklab,
-      var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-active-pressed-background: color-mix(
-      in oklab,
-      var(--green-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-active-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-danger-background: color-mix(
-      in oklab,
-      var(--red-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-background: color-mix(
-      in oklab,
-      var(--red-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-pressed-background: color-mix(
-      in oklab,
-      var(--red-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-overlay-alpha-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.54) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.54)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-alpha-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.64) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-background: color-mix(
-      in oklab,
-      var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-premium-primary-pink-for-gradient: color-mix(
       in oklab,
       var(--premium-tier-2-pink-for-gradients) 100%,
@@ -87278,75 +87071,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--premium-tier-2-purple-for-gradients-2) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-pressed-background: color-mix(
-      in oklab,
-      var(--primary-230) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-text: color-mix(
-      in oklab,
-      var(--primary-860) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-pressed-background: color-mix(
-      in oklab,
-      var(--brand-560) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-background: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.54) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.54)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.64) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-secondary-pressed-background: color-mix(
-      in oklab,
-      var(--primary-130) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-pressed-border: color-mix(
-      in oklab,
-      hsl(var(--opacity-20-hsl) / 0.2) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-selected-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0.16) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.16)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-selected-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
         var(--custom-theme-base-color-amount, 0%)
     );
     --redesign-button-tertiary-background: color-mix(
@@ -88183,18 +87907,6 @@ html.disable-forced-colors * {
     var(--opacity-black-8-hsl) / 0.0784313725490196
   );
   --radio-thumb-background-active: var(--neutral-1);
-  --redesign-button-active-background: var(--green-430);
-  --redesign-button-active-pressed-background: var(--green-460);
-  --redesign-button-active-text: var(--white);
-  --redesign-button-danger-background: var(--red-430);
-  --redesign-button-destructive-background: var(--red-430);
-  --redesign-button-destructive-pressed-background: var(--red-460);
-  --redesign-button-destructive-text: var(--white);
-  --redesign-button-overlay-alpha-background: hsl(var(--black-hsl) / 0.54);
-  --redesign-button-overlay-alpha-pressed-background: hsl(
-    var(--black-hsl) / 0.64
-  );
-  --redesign-button-positive-background: var(--green-430);
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
   );
@@ -88206,23 +87918,6 @@ html.disable-forced-colors * {
   );
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
-  );
-  --redesign-button-primary-overlay-pressed-background: var(--plum-4);
-  --redesign-button-primary-overlay-text: var(--plum-25);
-  --redesign-button-primary-pressed-background: var(--brand-560);
-  --redesign-button-secondary-background: var(--plum-17);
-  --redesign-button-secondary-overlay-background: hsl(var(--black-hsl) / 0.54);
-  --redesign-button-secondary-overlay-pressed-background: hsl(
-    var(--black-hsl) / 0.64
-  );
-  --redesign-button-secondary-overlay-text: var(--white);
-  --redesign-button-secondary-pressed-background: var(--plum-15);
-  --redesign-button-secondary-pressed-border: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
-  );
-  --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
-  --redesign-button-selected-pressed-background: hsl(
-    var(--brand-500-hsl) / 0.28
   );
   --redesign-button-tertiary-background: hsl(
     var(--opacity-black-12-hsl) / 0.12156862745098039
@@ -88620,6 +88315,24 @@ html.disable-forced-colors * {
       var(--brand-360) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
+    );
+    --control-secondary-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --control-secondary-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
@@ -89290,66 +89003,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-active-background: color-mix(
-      in oklab,
-      var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-active-pressed-background: color-mix(
-      in oklab,
-      var(--green-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-active-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-danger-background: color-mix(
-      in oklab,
-      var(--red-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-background: color-mix(
-      in oklab,
-      var(--red-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-pressed-background: color-mix(
-      in oklab,
-      var(--red-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-overlay-alpha-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.54) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.54)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-alpha-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.64) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-background: color-mix(
-      in oklab,
-      var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-premium-primary-pink-for-gradient: color-mix(
       in oklab,
       var(--premium-tier-2-pink-for-gradients) 100%,
@@ -89372,75 +89025,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--premium-tier-2-purple-for-gradients-2) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-pressed-background: color-mix(
-      in oklab,
-      var(--plum-4) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-text: color-mix(
-      in oklab,
-      var(--plum-25) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-pressed-background: color-mix(
-      in oklab,
-      var(--brand-560) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-background: color-mix(
-      in oklab,
-      var(--plum-17) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.54) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.54)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.64) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-secondary-pressed-background: color-mix(
-      in oklab,
-      var(--plum-15) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-pressed-border: color-mix(
-      in oklab,
-      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-selected-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-selected-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0.28) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.28)
         var(--custom-theme-base-color-amount, 0%)
     );
     --redesign-button-tertiary-background: color-mix(
@@ -90295,18 +89879,6 @@ html.disable-forced-colors * {
     var(--opacity-black-8-hsl) / 0.0784313725490196
   );
   --radio-thumb-background-active: var(--neutral-1);
-  --redesign-button-active-background: var(--green-430);
-  --redesign-button-active-pressed-background: var(--green-460);
-  --redesign-button-active-text: var(--white);
-  --redesign-button-danger-background: var(--red-430);
-  --redesign-button-destructive-background: var(--red-430);
-  --redesign-button-destructive-pressed-background: var(--red-460);
-  --redesign-button-destructive-text: var(--white);
-  --redesign-button-overlay-alpha-background: hsl(var(--black-hsl) / 0.54);
-  --redesign-button-overlay-alpha-pressed-background: hsl(
-    var(--black-hsl) / 0.64
-  );
-  --redesign-button-positive-background: var(--green-430);
   --redesign-button-premium-primary-pink-for-gradient: var(
     --premium-tier-2-pink-for-gradients
   );
@@ -90318,23 +89890,6 @@ html.disable-forced-colors * {
   );
   --redesign-button-premium-primary-purple-for-gradient-2: var(
     --premium-tier-2-purple-for-gradients-2
-  );
-  --redesign-button-primary-overlay-pressed-background: var(--plum-4);
-  --redesign-button-primary-overlay-text: var(--plum-25);
-  --redesign-button-primary-pressed-background: var(--brand-560);
-  --redesign-button-secondary-background: var(--plum-15);
-  --redesign-button-secondary-overlay-background: hsl(var(--black-hsl) / 0.54);
-  --redesign-button-secondary-overlay-pressed-background: hsl(
-    var(--black-hsl) / 0.64
-  );
-  --redesign-button-secondary-overlay-text: var(--white);
-  --redesign-button-secondary-pressed-background: var(--plum-13);
-  --redesign-button-secondary-pressed-border: hsl(
-    var(--opacity-4-hsl) / 0.0392156862745098
-  );
-  --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
-  --redesign-button-selected-pressed-background: hsl(
-    var(--brand-500-hsl) / 0.28
   );
   --redesign-button-tertiary-background: hsl(var(--plum-11-hsl) / 0.12);
   --redesign-button-tertiary-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
@@ -90732,6 +90287,24 @@ html.disable-forced-colors * {
       var(--brand-360) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
+    );
+    --control-secondary-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --control-secondary-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
@@ -91402,66 +90975,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --redesign-button-active-background: color-mix(
-      in oklab,
-      var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-active-pressed-background: color-mix(
-      in oklab,
-      var(--green-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-active-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-danger-background: color-mix(
-      in oklab,
-      var(--red-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-background: color-mix(
-      in oklab,
-      var(--red-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-pressed-background: color-mix(
-      in oklab,
-      var(--red-460) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-destructive-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-overlay-alpha-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.54) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.54)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-alpha-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.64) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-positive-background: color-mix(
-      in oklab,
-      var(--green-430) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --redesign-button-premium-primary-pink-for-gradient: color-mix(
       in oklab,
       var(--premium-tier-2-pink-for-gradients) 100%,
@@ -91484,75 +90997,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--premium-tier-2-purple-for-gradients-2) 100%,
       var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-pressed-background: color-mix(
-      in oklab,
-      var(--plum-4) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-primary-overlay-text: color-mix(
-      in oklab,
-      var(--plum-25) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-primary-pressed-background: color-mix(
-      in oklab,
-      var(--brand-560) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-background: color-mix(
-      in oklab,
-      var(--plum-15) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.54) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.54)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.64) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.64)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-overlay-text: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
-    --redesign-button-secondary-pressed-background: color-mix(
-      in oklab,
-      var(--plum-13) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-secondary-pressed-border: color-mix(
-      in oklab,
-      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-    --redesign-button-selected-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --redesign-button-selected-pressed-background: color-mix(
-      in oklab,
-      hsl(var(--brand-500-hsl) / 0.28) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.28)
         var(--custom-theme-base-color-amount, 0%)
     );
     --redesign-button-tertiary-background: color-mix(
@@ -92235,6 +91679,24 @@ html.disable-forced-colors * {
       var(--neutral-17) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
+    );
+    --control-secondary-border-active: color-mix(
+      in oklab,
+      var(--neutral-22) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --control-secondary-border-default: color-mix(
+      in oklab,
+      var(--neutral-22) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --gradient-progress-pill-background: color-mix(
       in oklab,
@@ -92985,6 +92447,24 @@ html.disable-forced-colors * {
       var(--neutral-48) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
+    );
+    --control-secondary-border-active: color-mix(
+      in oklab,
+      var(--neutral-44) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --control-secondary-border-default: color-mix(
+      in oklab,
+      var(--neutral-44) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --gradient-progress-pill-background: color-mix(
       in oklab,
@@ -93744,6 +93224,24 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --control-secondary-border-active: color-mix(
+      in oklab,
+      var(--neutral-32) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --control-secondary-border-default: color-mix(
+      in oklab,
+      var(--neutral-32) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
     --gradient-progress-pill-background: color-mix(
       in oklab,
       var(--neutral-45) 100%,
@@ -94493,6 +93991,24 @@ html.disable-forced-colors * {
       var(--neutral-25) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
+    );
+    --control-secondary-border-active: color-mix(
+      in oklab,
+      var(--neutral-29) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --control-secondary-border-default: color-mix(
+      in oklab,
+      var(--neutral-29) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --gradient-progress-pill-background: color-mix(
       in oklab,
@@ -100262,4 +99778,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.6d61de67181a5f7b.css.map*/
+/*# sourceMappingURL=web.f5723498f92784cd.css.map*/
