@@ -137,6 +137,7 @@ export const postToDiscord = async (
           allowed_mentions: {
             parse: ["roles"],
           },
+          auth: false,
         },
       });
     } catch (e) {
@@ -431,8 +432,8 @@ function getChanges<T extends Record<string, any>>(
           );
         } else if (!deepEqual((oldObj[key] as unknown[])[index], item)) {
           changes[`${newPath}[${index}]`] = {
-            old: (oldObj[key] as unknown[])[index],
-            new: item,
+            old: (oldObj[key] as (string | number | boolean)[])[index] as unknown as string | boolean | number,
+            new: item as unknown as string | number | boolean,
           };
         }
       });
