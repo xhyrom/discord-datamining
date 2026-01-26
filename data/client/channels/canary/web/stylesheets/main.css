@@ -67596,6 +67596,10 @@ svg.radioIcon_c1e9c4 {
 .boxContainer_b0db00.overlayImageMode_b0db00 .boxVideo_b0db00 {
   object-fit: cover;
 }
+.boxContainer_b0db00.large_b0db00.overlayImageMode_b0db00 {
+  overflow: hidden;
+  padding: 0;
+}
 .textBox_b0db00.large_b0db00 {
   display: flex;
   flex: 1;
@@ -67623,6 +67627,7 @@ svg.radioIcon_c1e9c4 {
 }
 .overlayTextBox_b0db00 {
   inset-inline-start: var(--space-12);
+  z-index: 1;
 }
 .backgroundVideoContainer_b0db00 {
   border-radius: var(--radius-lg);
@@ -99821,4 +99826,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.bdc3001849784fdb.css.map*/
+/*# sourceMappingURL=web.6f10d9680d55b2f9.css.map*/
