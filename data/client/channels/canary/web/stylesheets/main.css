@@ -48529,7 +48529,10 @@ h2.title_feb59c {
   padding: 0 8px;
 }
 .submenu_c1e9c4 {
-  max-height: var(--custom-floating-layer-max-height);
+  max-height: var(
+    --custom-floating-layer-max-height,
+    var(--reference-position-layer-max-height)
+  );
   max-width: 320px;
   min-width: 188px;
 }
@@ -99841,4 +99844,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.27cca8098068b1c6.css.map*/
+/*# sourceMappingURL=web.32af1108103bca57.css.map*/
