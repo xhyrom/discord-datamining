@@ -31339,10 +31339,6 @@ div.modalHeader_c28af8 {
 .modalHeader_c28af8 {
   padding-bottom: 12px;
 }
-.hidden__7d7b6 {
-  opacity: 0;
-  transition: opacity 0.35s ease-in-out;
-}
 .image__7d7b6 {
   border-radius: inherit;
   height: 100%;
@@ -31351,9 +31347,6 @@ div.modalHeader_c28af8 {
   position: absolute;
   top: 0;
   width: 100%;
-}
-.video__7d7b6 {
-  transition: opacity 0.35s ease-in-out;
 }
 .nitroRewardTileAssetContainer_a92e89 {
   background-image: linear-gradient(
@@ -99828,4 +99821,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.255a7516d90e9101.css.map*/
+/*# sourceMappingURL=web.bdc3001849784fdb.css.map*/
