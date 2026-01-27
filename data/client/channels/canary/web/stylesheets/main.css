@@ -28594,6 +28594,11 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   flex: 1;
   margin: var(--space-8) var(--space-16);
 }
+.upsellContainerBottom__0b69f {
+  border-radius: 0;
+  padding-bottom: var(--space-12);
+  width: 100%;
+}
 .soundPreview__0b69f {
   flex-grow: 1;
 }
@@ -39293,6 +39298,9 @@ div.mobilePushContainer__3d3b0 {
 }
 .expressionPickerCategoryList_a1e0e0 {
   top: 53px;
+}
+.hasBottomBarUpsell_a1e0e0 {
+  bottom: 50px;
 }
 .category_a1e0e0 {
   cursor: pointer;
@@ -72830,4 +72838,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.1b58efe7ebef4edd.css.map*/
+/*# sourceMappingURL=web.5b3c89510596eb55.css.map*/
