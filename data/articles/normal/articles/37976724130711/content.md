@@ -111,7 +111,7 @@
 <p>
   To verify support, follow
   <a
-    href="https://apps.microsoft.com/detail/9PB0TRCNRHFX?"
+    href="https://apps.microsoft.com/detail/9mvzqvxjbq9v?"
     target="_blank"
     rel="noopener noreferrer"
     >this link</a
