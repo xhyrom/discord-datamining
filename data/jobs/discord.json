@@ -254,12 +254,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": "Data Science & Data Engineering",
+          "value": null,
           "value_type": "single_select"
         }
       ],
       "id": 8364479002,
-      "updated_at": "2026-01-21T13:39:32-05:00",
+      "updated_at": "2026-01-27T17:21:52-05:00",
       "requisition_id": "R-107122",
       "title": "Data Engineering Manager",
       "company_name": "Discord",
@@ -310,12 +310,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": "Data Science & Data Engineering",
+          "value": null,
           "value_type": "single_select"
         }
       ],
       "id": 8174001002,
-      "updated_at": "2026-01-22T20:14:32-05:00",
+      "updated_at": "2026-01-27T17:22:11-05:00",
       "requisition_id": "R-101053",
       "title": "Data Science Manager, Safety",
       "company_name": "Discord",
@@ -366,12 +366,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": "Data Science & Data Engineering",
+          "value": null,
           "value_type": "single_select"
         }
       ],
       "id": 8343789002,
-      "updated_at": "2026-01-21T13:39:32-05:00",
+      "updated_at": "2026-01-27T17:22:32-05:00",
       "requisition_id": "R-107105",
       "title": "Data Scientist, Analytics - Ads Reporting",
       "company_name": "Discord",
@@ -1220,12 +1220,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": "Data Science & Data Engineering",
+          "value": null,
           "value_type": "single_select"
         }
       ],
       "id": 8371252002,
-      "updated_at": "2026-01-21T13:39:32-05:00",
+      "updated_at": "2026-01-27T17:23:05-05:00",
       "requisition_id": "R-107131",
       "title": "Senior Data Engineer, Analytics",
       "company_name": "Discord",
@@ -1276,12 +1276,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": "Data Science & Data Engineering",
+          "value": null,
           "value_type": "single_select"
         }
       ],
       "id": 8308138002,
-      "updated_at": "2026-01-21T13:39:32-05:00",
+      "updated_at": "2026-01-27T17:24:01-05:00",
       "requisition_id": "R-107077",
       "title": "Senior Data Scientist, Analytics",
       "company_name": "Discord",
@@ -1332,12 +1332,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": "Data Science & Data Engineering",
+          "value": null,
           "value_type": "single_select"
         }
       ],
       "id": 8343795002,
-      "updated_at": "2026-01-21T13:39:32-05:00",
+      "updated_at": "2026-01-27T17:23:46-05:00",
       "requisition_id": "R-107106",
       "title": "Senior Data Scientist, Analytics - GTM Ads",
       "company_name": "Discord",
@@ -3147,12 +3147,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": "Data Science & Data Engineering",
+          "value": null,
           "value_type": "single_select"
         }
       ],
       "id": 8299493002,
-      "updated_at": "2026-01-26T18:39:10-05:00",
+      "updated_at": "2026-01-27T17:24:16-05:00",
       "requisition_id": "R-102056",
       "title": "Staff Data Engineer, Ads",
       "company_name": "Discord",
