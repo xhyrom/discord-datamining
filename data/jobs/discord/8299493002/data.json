@@ -10,10 +10,9 @@
       "demographic_data_consent_applies": true
     }
   ],
-  "education": "education_optional",
   "internal_job_id": 6220768002,
   "location": {
-    "name": "San Francisco Bay Area or Remote (U.S.)"
+    "name": "Remote (U.S.)"
   },
   "metadata": [
     {
@@ -30,7 +29,7 @@
     }
   ],
   "id": 8299493002,
-  "updated_at": "2026-01-21T13:39:32-05:00",
+  "updated_at": "2026-01-26T18:39:10-05:00",
   "requisition_id": "R-102056",
   "title": "Staff Data Engineer, Ads",
   "company_name": "Discord",
