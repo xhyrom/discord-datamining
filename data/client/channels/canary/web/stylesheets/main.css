@@ -28571,10 +28571,18 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   overflow: hidden;
   padding: 0;
 }
-.expressiveGradientBg__0b69f {
+.expressiveGradient__0b69f {
+  align-items: center;
   display: flex;
   flex: 1 1;
+  min-height: var(--space-32);
   padding: 12px;
+}
+.expressiveGradient__0b69f.radialMask__0b69f {
+  background: radial-gradient(100% 100% at 50% 100%, #000 60%);
+}
+.expressiveGradient__0b69f.hasPreviewSound__0b69f {
+  padding: 8px 12px;
 }
 .upsellContainerFloating__0b69f {
   inset-block: auto var(--space-8);
@@ -28584,6 +28592,20 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .upsellContainerInline__0b69f {
   flex: 1;
   margin: var(--space-8) var(--space-16);
+}
+.soundPreview__0b69f {
+  flex-grow: 1;
+}
+.soundPreviewName__0b69f {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  height: var(--space-24);
+}
+.soundPreviewText__0b69f {
+  -webkit-margin-end: 16px;
+  flex: 1;
+  margin-inline-end: 16px;
 }
 .upsellText__0b69f {
   flex: 1;
@@ -72758,4 +72780,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.cfef3d1e9a71f396.css.map*/
+/*# sourceMappingURL=web.89d55220254c0012.css.map*/
