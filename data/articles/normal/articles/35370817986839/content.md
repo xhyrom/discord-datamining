@@ -343,6 +343,85 @@
   3. Enter the <strong>IP</strong> before the colon, and the
   <strong>port</strong> after.
 </p>
+<p><strong>Terraria</strong></p>
+<p>
+  1. Launch Terraria, select the <strong>Multiplayer option</strong>, then
+  select the <strong>Join via IP</strong> option.
+</p>
+<p>
+  2. From the character selection screen, either select a character you have
+  previously made or make a new character.
+</p>
+<p>
+  3. Enter your Server's IP address (this is the part before the colon) and your
+  Server's Port (this is the part after the colon). (Example:
+  000.00.00.000:0000)
+</p>
+<p>
+  4. Press <strong>Accept</strong> (or the Enter Key) to connect to your server.
+</p>
+<p><strong>Valheim</strong></p>
+<p>
+  1. Launch <strong>Valheim</strong> and select <strong>Start Game</strong> in
+  the main menu.
+</p>
+<p>
+  2. Select the character you want to join your server on. If you haven't made
+  one yet, you'll need to do this before continuing.
+</p>
+<p>
+  3. After selecting or creating your character, press <strong>Start</strong>.
+</p>
+<p>
+  4. Change to the <strong>Join Game</strong> tab, and then press the
+  <strong>Add Server</strong> button.
+</p>
+<p>
+  5. Paste your server IP into the box that pops up, and press the
+  <strong>Connect </strong>button.
+</p>
+<p>
+  6. After a brief moment, you will be prompted for your server password. You
+  will need to get this password from your Discord Server Admin. Paste your
+  server password into the box, then press <strong>Enter</strong>.
+</p>
+<p><strong>Counter Strike 2</strong></p>
+<div class="tip-box">
+  <strong>Tip:</strong> Currently, the recommended method for joining your
+  Counter Strike 2 server is using the Steam favorites list.
+</div>
+<p>1. In the Steam client, navigate to View &gt; Game Servers.</p>
+<p>
+  2. Select <strong>Favorites</strong>, then press the
+  <strong>+</strong> button.
+</p>
+<p>3. Enter your server's IP &amp; port then press <strong>OK</strong>.</p>
+<p>4. Select your server, then press <strong>Connect</strong>.</p>
+<p><strong>Hytale</strong></p>
+<p>1. Open Hytale.</p>
+<p>2. Select on <strong>Servers</strong>.</p>
+<p>3. Press on <strong>Add Server</strong>.</p>
+<p>
+  4. Paste your server IP address, enter a server name and press<strong>
+    Add Server</strong
+  >.
+</p>
+<p>5. Double click your server in the list to join.</p>
+<p><strong>Stardew Valley</strong></p>
+<div class="tip-box">
+  <strong>Tip:</strong> You can learn more about connecting to Stardew Valley by
+  checking out this
+  <a
+    href="https://shockbyte.com/help/knowledgebase/articles/how-to-join-your-stardew-valley-server"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">guide by ShockByte</span></a
+  ><span style="color: #434343">.</span>
+</div>
+<p>1. Open Stardew Valley.</p>
+<p>2. Select the <strong>CO-OP</strong> button.</p>
+<p>3. Select <strong>Join LAN Game</strong>.</p>
+<p>4. Enter your Server IP and Port then click <strong>OK</strong>.</p>
 <h1 id="h_01K7Q3ATDJ3AX6DW3QPYTM9QKN">
   How to Modify a Game Server as a Server Owner/Admin
 </h1>
