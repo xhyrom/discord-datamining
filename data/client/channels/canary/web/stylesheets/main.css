@@ -48499,6 +48499,13 @@ h2.title_feb59c {
 }
 .statusAccessory_c1e9c4 {
 }
+.guildTagAccessory_c1e9c4 {
+  flex: 0 0 auto;
+  -webkit-margin-end: 8px;
+  align-items: center;
+  display: flex;
+  margin-inline-end: 8px;
+}
 .avatarAccessory_c1e9c4 {
   border-radius: var(--radius-round);
   object-fit: cover;
@@ -72667,4 +72674,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.d987ecef1c28b756.css.map*/
+/*# sourceMappingURL=web.e31c1d45eb7ad47a.css.map*/
