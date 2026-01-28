@@ -4016,13 +4016,7 @@
             "/quests/".concat(e, "/preview/complete"),
           QUESTS_RESET_RECENT_QUEST_COMPLETIONS:
             "/quests/reset-recent-quest-completions",
-          QUEST_FETCH_QUEST_TO_DELIVER: (e, t, r) =>
-            "/quests/decision?placement="
-              .concat(e)
-              .concat(
-                null != t ? "&client_heartbeat_session_id=".concat(t) : "",
-              )
-              .concat(null != r ? "&client_ad_session_id=".concat(r) : ""),
+          QUEST_FETCH_QUEST_TO_DELIVER: "/quests/decision",
           QUEST_EARNED_DECISION: (e, t, r) =>
             "/quests/earned-decision?quest_ids="
               .concat(e, "&content=")
@@ -6170,6 +6164,7 @@
             "desktop_perf_attributed_module_memory"),
           (n.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK =
             "desktop_perf_attributed_module_memory_callstack"),
+          (n.DESKTOP_PERF_CPU_PROFILE = "desktop_perf_cpu_profile"),
           (n.DESKTOP_PERF_HEARTBEAT = "desktop_perf_heartbeat"),
           (n.RTC_PANEL_VIEWED = "rtc_panel_viewed"),
           (n.E2EE_USER_VERIFICATION_VIEWED = "e2ee_user_verification_viewed"),
@@ -6654,7 +6649,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-01-27-1307c7345232c6ae3dd9393766a2830d710ff362-discord_web",
+              "2026-01-28-33332c7eded2b0ceafa5b713b4ed389a32638d48-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6720,8 +6715,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "489757"),
-            o.NA("builtAt", String("1769501928556"));
+            o.NA("buildNumber", "490370"),
+            o.NA("builtAt", String("1769588354575"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return _;
@@ -38197,4 +38192,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.fdb6a44dcdecfc53.js.map
+//# sourceMappingURL=sentry.2c9cef8c306d9cfd.js.map
