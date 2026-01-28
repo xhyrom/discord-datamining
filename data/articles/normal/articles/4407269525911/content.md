@@ -12,36 +12,37 @@
   have more fun on Discord.
   <span id="docs-internal-guid-b4647634-7fff-cbc6-0987-3a1a88dffbb6"
     >We offer localized pricing for certain subscriptions and Discord purchases
-    in some countries on the desktop, mobile, and web apps.
-  </span>
+    in some countries on the desktop, mobile, and web apps.</span
+  >
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li data-list-item-id="e871bedaf25dddb85b0d56f6bb23f94ee">
       <a href="#h_01GFV5SGYJM37SG12BRM7HQSCC" target="_self" rel="undefined"
         >How do I get local pricing?</a
       >
     </li>
-    <li>
+    <li data-list-item-id="ebe9098b45490cb7e5c73f1fae9559f9b">
       <a href="#h_01GFV5T14GW6CXF9VYAJRM04X9" target="_self" rel="undefined"
         >Localized Prices</a
       >
     </li>
-    <li>
+    <li data-list-item-id="e9c58fe21736fe8efe099ffee8bc3de83">
       <a href="#h_01GFV5T5AWPB202ZXZ3Z8MNJ9D" target="_self" rel="undefined"
         >Frequently Asked Questions</a
       >
       <ul>
-        <li>
+        <li data-list-item-id="eb16074f4b4fd80f4f0c1b3225df36832">
           <a href="#h_01JSQCTJ2K7BGDBJENQX1MZNKH"
             >General Localized Pricing Information</a
           >
         </li>
-        <li>
+        <li data-list-item-id="e486cf49ce7d34135c96cf7738083fab6">
           <a href="#h_01JSQCZJZWESYQXKBAD6PBP263"
             >Specific Location-Based Information</a
           >
@@ -52,21 +53,21 @@
 </div>
 <h1 id="h_01GFV5SGYJM37SG12BRM7HQSCC">How do I get local pricing?</h1>
 <ul>
-  <li>
+  <li data-list-item-id="ec7c6d862130b5b0af413de83b188444b">
     To get localized pricing, you must have a payment method based in a country
     where Discord offers localized pricing. 
   </li>
-  <li>
+  <li data-list-item-id="e2ae563c2bb540c75d72cb12ee00b279b">
     JCB, Discover, Diners Club, UnionPay, and AMEX currently do not support
     localized pricing.
     <em>Additionally, certain Brazilian banks do not support BRL.</em>
   </li>
-  <li>
+  <li data-list-item-id="e41219d88b708abf85562270f6d4cbbea">
     If you are using an eligible payment method, you will automatically switch
     to the new price + currency. The change will take effect at your next
     billing cycle.
   </li>
-  <li>
+  <li data-list-item-id="e091612a04b94cd1d320e057f6d88dba0">
     If you use a payment method that does not support, or are located in a
     region where Discord doesn't offer localized pricing, our system will
     automatically charge in USD instead.
@@ -94,7 +95,7 @@
   purchase, such as:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e964ca22a3b26e9ee57c2a061191ef5d6">
     <a
       href="https://support.discord.com/hc/articles/115000435108-What-are-Nitro-Nitro-Basic"
       target="_blank"
@@ -102,7 +103,7 @@
       >Nitro and Nitro Basic </a
     >subscriptions
   </li>
-  <li>
+  <li data-list-item-id="e2fd08a6b8a701139e99a90818f7dd3e6">
     <a
       href="https://support.discord.com/articles/360028038352-Server-Boosting-FAQ"
       target="_blank"
@@ -110,7 +111,7 @@
       >Server Boosts and Server Boosting </a
     >subscriptions
   </li>
-  <li>
+  <li data-list-item-id="ea7df15d1b74831b2ef0e19008dc2fb93">
     <a
       href="https://support.discord.com/hc/articles/17162747936663-Shop-FAQ"
       target="_blank"
@@ -121,21 +122,21 @@
   </li>
 </ul>
 <div class="info-box">
-  All types of gifts, including Nitro and Shop gifts, are not available at
-  localized prices. Select regions can pay in their local currency, but the cost
-  will still correspond to the standard USD price.
+  Some gifts, including Nitro and Shop gifts, are not available at localized
+  prices. Select regions can pay in their local currency, but the cost will
+  still correspond to the standard USD price.
 </div>
 <h1 id="h_01GFV5T5AWPB202ZXZ3Z8MNJ9D">
   <strong>Frequently Asked Questions</strong>
 </h1>
 <p>This FAQ is divided into two sections:</p>
 <ul>
-  <li>
+  <li data-list-item-id="e191329a7d83279ff9cf348db72b41675">
     <a href="#h_01JSQCTJ2K7BGDBJENQX1MZNKH"
       >General Localized Pricing Information</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e94756e4519d4c90bfa920c995988fb0a">
     <a href="#h_01JSQCZJZWESYQXKBAD6PBP263"
       >Specific Location-Based Information</a
     >
@@ -180,24 +181,22 @@
 </p>
 <p><strong>Q: When does the new price take effect?</strong></p>
 <p>A: At your next billing cycle. </p>
-<p><strong>Q: Do Nitro Gifts have localized pricing?</strong></p>
+<p><strong>Q: Do Nitro Gifts and Shop gifts have localized pricing?</strong></p>
 <p>
-  A: At this time - all gifted items, including items from the Shop and Nitro
-  gifts of all tiers, will be under the same prices as USD. However, you may be
-  eligible to pay the equivalent to the USD price in your local currency if the
-  option is available in your region.
+  A: Some gifted items, both Shop items and Nitro gifts of all tiers, are
+  available at localized prices.
 </p>
 <p>
-  If local currency options for a gift are not available for any reason, the
-  transaction will default to USD.
+  If paying in your local currency is unavailable, the purchase will default to
+  USD ($). You can see at the final checkout whether your purchase is in
+  localized pricing or USD ($) if you see the relevant currency symbol adjacent
+  to the price. A purchase in USD looks like: “$X.XX”.
 </p>
 <p>
   <strong
     >Q: I still can’t pay for my Discord purchases or subscriptions because [X]
     (e.g. you don’t accept my payment method).</strong
-  ><span class="wysiwyg-font-size-large"
-    ><strong><br /></strong
-  ></span>
+  >
 </p>
 <p>
   A: We’re trying to improve support for purchasing Discord subscriptions,
@@ -208,9 +207,7 @@
   <strong
     >Q: Why were there additional fees or taxes on my purchase in a localized
     pricing country?</strong
-  ><span class="wysiwyg-font-size-large"
-    ><strong><br /></strong
-  ></span>
+  ><br /> 
 </p>
 <p>
   A: When making a purchase in a country where localized pricing is available,
@@ -261,27 +258,27 @@
   in your region for any of the following reasons:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="edf2dd82a7d728f4a3a70b412734069f6">
     Your payment method on file does not originate from the proper region where
     localized pricing is available.
   </li>
-  <li>
+  <li data-list-item-id="ef43f2f52f45e0669fdefe23c710572c0">
     Your payment method does not support the currency you’re attempting to pay
     with (for example, PayPal.)
   </li>
-  <li>
+  <li data-list-item-id="e4605d74d490c2a628d3738975774cc57">
     You’re using a VPN, which may affect proper recognition of your location.
   </li>
-  <li>
+  <li data-list-item-id="e69070257c6108bf77c5b6328d7e96b11">
     You’re purchasing through a third party vendor, such as Google Play, that
     does not support transactions in all currencies.
   </li>
-  <li>
+  <li data-list-item-id="ecb56a4f66dea558527e4067a8ecc0a8a">
     You purchased a gift. Gifts are not currently available in all localized
     prices, and will cost the equivalent of the USD price, or default to USD,
     depending on your region.
   </li>
-  <li>
+  <li data-list-item-id="eefac519e9cc773072df9e11a206893ba">
     You manually selected USD as your currency in the “Pay for it with” menu
     during the checkout process.
   </li>
