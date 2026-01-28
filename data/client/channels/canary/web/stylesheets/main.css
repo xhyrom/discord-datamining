@@ -43730,10 +43730,38 @@ div.mobilePushContainer__3d3b0 {
   gap: var(--space-10);
   padding: var(--space-8);
 }
-.paymentMethodContainer_f630da {
+.checkoutModalFooter_e3bd55 {
+  align-items: center;
+}
+.stepBodyV1_bb5449 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding-top: var(--space-16);
+}
+.topSpacer_bb5449 {
+  height: var(--space-8);
+}
+.subscriptionDetailsContainer_bb5449 {
+  margin-top: var(--space-12);
+}
+.invoiceSummaryContainer_bb5449,
+.paymentMethodContainer_bb5449 {
   margin-top: var(--space-24);
 }
-.reviewStepBody_f630da {
+.invoiceSummaryContainer_bb5449 {
+  margin-bottom: var(--space-12);
+}
+.reviewStepBody_bb5449 {
+  min-height: 440px;
+}
+.checkoutInlineNoticeContainer_bb5449 {
+  margin-bottom: var(--space-24);
+}
+.loadingContainer_bb5449 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 440px;
 }
 .profileEffectContainer_a84142 {
@@ -44492,9 +44520,6 @@ div.modalOverrideBody__34eac {
   max-width: 100%;
   width: 100%;
 }
-.checkoutModalFooter_e3bd55 {
-  align-items: center;
-}
 .orbIconSVG__85200 {
   height: 18px;
 }
@@ -44557,12 +44582,6 @@ div.modalOverrideBody__34eac {
 }
 .stepBody_a3d32e > * {
   width: 50%;
-}
-.stepBody_bb5449 {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
-  padding-top: var(--space-16);
 }
 .orbIconAligned__18bf6 {
   margin-top: 1px;
@@ -72772,4 +72791,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.57e999199c18729a.css.map*/
+/*# sourceMappingURL=web.46bd9a05c26ae019.css.map*/
