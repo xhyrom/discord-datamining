@@ -77,16 +77,15 @@
   as described and completed in the “International Data Transfers” section
   below.
 </p>
-<p class="wysiwyg-indent1">f. “<strong>Parnter”</strong> means the </p>
 <p class="wysiwyg-indent1">
-  g. “<strong>Personal Data</strong>” means any Customer Data that qualifies as
+  f. “<strong>Personal Data</strong>” means any Customer Data that qualifies as
   “personal data,” “personal information,” and “personally identifiable
   information,” all as defined by the applicable Data Privacy Laws and is
   Processed by Discord as a Processor (or equivalent term in applicable Data
   Privacy Laws).
 </p>
 <p class="wysiwyg-indent1">
-  h. “<strong>Process</strong>” and “<strong>Processing</strong>” mean any
+  g. “<strong>Process</strong>” and “<strong>Processing</strong>” mean any
   operation or set of operations performed on Personal Data or on sets of
   Personal Data, whether or not by automated means, such as collection,
   recording, organization, creating, structuring, storage, adaptation or
@@ -95,29 +94,29 @@
   restriction, erasure, or destruction.
 </p>
 <p class="wysiwyg-indent1">
-  i. “<strong>Processor</strong>” has the meaning set out in the UK GDPR and/or
+  h. “<strong>Processor</strong>” has the meaning set out in the UK GDPR and/or
   EU GDPR, as applicable.
 </p>
 <p class="wysiwyg-indent1">
-  j. “<strong>Processor Services</strong>” means the Processing activities
+  i. “<strong>Processor Services</strong>” means the Processing activities
   carried out by Discord under the applicable Applicable Product Terms for which
   Discord is designated as a Processor (or equivalent term in applicable Data
   Privacy Laws).
 </p>
 <p class="wysiwyg-indent1">
-  k. “<strong>Restricted Transfer</strong>” means a transfer of Personal Data
+  j. “<strong>Restricted Transfer</strong>” means a transfer of Personal Data
   that is subject to Data Privacy Laws of another country or jurisdiction,
   including to a country that does not provide an adequate level of protection
   for Personal Data according to Data Privacy Laws.
 </p>
 <p class="wysiwyg-indent1">
-  l. “<strong>Personal Data Breach</strong>” means any breach of security
+  k. “<strong>Personal Data Breach</strong>” means any breach of security
   leading to the accidental or unlawful destruction, loss, alteration,
   unauthorised disclosure of, or access to, Personal Data transmitted, stored or
   otherwise processed.
 </p>
 <p class="wysiwyg-indent1">
-  m. “<strong>UK SCCs</strong>” means the International Data Transfer Agreement
+  l. “<strong>UK SCCs</strong>” means the International Data Transfer Agreement
   to the EU Commission Standard Contractual Clauses (available at
   <a
     href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/international-data-transfer-agreement-and-guidance/"
@@ -643,8 +642,9 @@
   <em
     ><strong
       >Data exporter(s): Partner who has elected to use the Business Services in
-      conjunction with the </strong
-    ><strong>applicable Insertion Order or other ordering document.</strong></em
+      conjunction with the applicable Insertion Order or other ordering
+      document.</strong
+    ></em
   ><br /> 
 </p>
 <p class="wysiwyg-text-align-justify">
