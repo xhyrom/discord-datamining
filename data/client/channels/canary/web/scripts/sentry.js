@@ -6419,6 +6419,8 @@
             "channel_latest_messages_loaded_clickstream"),
           (n.CHANNEL_WITH_UNREAD_MENTIONS_LOADED =
             "channel_with_unread_mentions_loaded"),
+          (n.REPLY_NUDGES_CREATED = "reply_nudges_created"),
+          (n.REPLY_NUDGE_OPENED = "reply_nudge_opened"),
           n);
         Object.freeze({
           STORAGE_MANIFEST: (e, t) =>
@@ -6648,7 +6650,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-27cb660b69f7900e3509c6ad574449558aec241b",
+            release: "discord_web-96c0930db92231a6ee794d8072684a7cf5dd77e5",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6714,8 +6716,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "490943"),
-            o.NA("builtAt", String("1769657482196"));
+            o.NA("buildNumber", "490958"),
+            o.NA("builtAt", String("1769662852385"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return _;
@@ -38191,4 +38193,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.c7a2aa94d6bd761b.js.map
+//# sourceMappingURL=sentry.a0fca9f1b1db16ba.js.map
