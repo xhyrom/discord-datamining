@@ -6421,6 +6421,7 @@
             "channel_with_unread_mentions_loaded"),
           (n.REPLY_NUDGES_CREATED = "reply_nudges_created"),
           (n.REPLY_NUDGE_OPENED = "reply_nudge_opened"),
+          (n.APP_TRANSACTION_ID_SYNCED = "app_transaction_id_synced"),
           n);
         Object.freeze({
           STORAGE_MANIFEST: (e, t) =>
@@ -6650,7 +6651,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-b8003e8d7899a6e89554804e7f096c620978c652",
+            release: "discord_web-c1455a4e0b6f4755b1e9e192494b032eadf704ab",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6716,8 +6717,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "491024"),
-            o.NA("builtAt", String("1769701152994"));
+            o.NA("buildNumber", "491062"),
+            o.NA("builtAt", String("1769705346213"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return _;
@@ -8603,6 +8604,20 @@
                 [n.LIGHT]: { raw: "WHITE", opacity: 0.45 },
                 [n.MIDNIGHT]: { raw: "BLACK", opacity: 0.45 },
                 [n.DARKER]: { raw: "BLACK", opacity: 0.45 },
+              },
+              PROGRESSBAR_INDICATOR_BACKGROUND: {
+                category: "generic",
+                [n.DARK]: { raw: "BRAND_500", opacity: 1 },
+                [n.LIGHT]: { raw: "BRAND_500", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
+                [n.DARKER]: { raw: "BRAND_500", opacity: 1 },
+              },
+              PROGRESSBAR_TRACK_BACKGROUND: {
+                category: "generic",
+                [n.DARK]: { raw: "PRIMARY_500", opacity: 0.54 },
+                [n.LIGHT]: { raw: "PRIMARY_400", opacity: 0.24 },
+                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.18 },
+                [n.DARKER]: { raw: "PLUM_11", opacity: 0.24 },
               },
               REDESIGN_ACTIVITY_CARD_BADGE_ICON: {
                 category: "generic",
@@ -38193,4 +38208,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.f7879bedc3111aae.js.map
+//# sourceMappingURL=sentry.2feae176e6362905.js.map
