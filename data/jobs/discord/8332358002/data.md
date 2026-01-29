@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8332358002](https://discord.com/jobs/8332358002)
 
-**Updated At:** Thu, 29 Jan 2026 22:19:28 GMT
+**Updated At:** Thu, 29 Jan 2026 22:35:21 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re building a new 3P Commerce platform that helps game studios bring their in-game items directly to players on Discord. From social shopping and group-driven discovery to seamless mobile buying experiences, we’re focused on making it easier and more fun for players to purchase the items they care about, together.
@@ -29,13 +29,13 @@ Contribute to shaping Discord’s long-term strategy for becoming a meaningful c
 
 What you should have
 
+Deep understanding of the gaming landscape, player behavior, and what game studios expect from platform partnerships
 Strong product experience building ecommerce, marketplace, or in-game purchasing experiences
 Experience owning mobile user experiences where simplicity, trust, and conversion are central
 Ability to break down ambiguity into simple, testable paths and drive fast-paced execution
 Demonstrated technical proficiency partnering with engineering on complex systems (payments, fulfillment, identity, account linking)
 Strong analytical skill set - able to design experiments, interpret data, and drive decisions with metrics
 5+ years experience shipping consumer-facing software with clear business impact
-Deep understanding of the gaming landscape, player behavior, and what game studios expect from platform partnerships
 
 Bonus Points
 
