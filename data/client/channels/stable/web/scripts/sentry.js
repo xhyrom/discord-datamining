@@ -6419,6 +6419,8 @@
             "channel_latest_messages_loaded_clickstream"),
           (n.CHANNEL_WITH_UNREAD_MENTIONS_LOADED =
             "channel_with_unread_mentions_loaded"),
+          (n.REPLY_NUDGES_CREATED = "reply_nudges_created"),
+          (n.REPLY_NUDGE_OPENED = "reply_nudge_opened"),
           n);
         Object.freeze({
           STORAGE_MANIFEST: (e, t) =>
@@ -6649,7 +6651,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-01-28-33332c7eded2b0ceafa5b713b4ed389a32638d48-discord_web",
+              "2026-01-29-031318ec995e4c7c4955f5d22a4e339e316bf2dd-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6715,8 +6717,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "490370"),
-            o.NA("builtAt", String("1769588354575"));
+            o.NA("buildNumber", "490986"),
+            o.NA("builtAt", String("1769674746059"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return _;
@@ -38192,4 +38194,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.2c9cef8c306d9cfd.js.map
+//# sourceMappingURL=sentry.9578c0123602f6f1.js.map
