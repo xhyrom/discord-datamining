@@ -23911,12 +23911,16 @@ img.thumbnail__0f2e8 {
   overflow: hidden;
   padding: 8px 8px 4px;
 }
-.languageIcon__4d95d,
-.overflowIcon__4d95d {
+.languageIcon__4d95d {
   cursor: pointer;
   display: flex;
 }
+.downloadAnchor__4d95d {
+  display: none;
+}
 .overflowIcon__4d95d {
+  cursor: pointer;
+  display: flex;
   -webkit-margin-start: var(--space-16);
   margin-inline-start: var(--space-16);
   -webkit-margin-end: var(--space-4);
@@ -72705,4 +72709,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.a2bd68b15c74d360.css.map*/
+/*# sourceMappingURL=web.44a4437f4249fc32.css.map*/
