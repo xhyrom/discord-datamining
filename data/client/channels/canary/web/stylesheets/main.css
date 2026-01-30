@@ -28598,7 +28598,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   display: flex;
   padding: 12px;
 }
-.upsellContainer__0b69f.upsellRedesignEnabled__0b69f {
+.upsellContainer__0b69f.withGradientBg__0b69f {
   background: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
   overflow: hidden;
@@ -72709,4 +72709,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.44a4437f4249fc32.css.map*/
+/*# sourceMappingURL=web.ba3bb4ce08c16d87.css.map*/
