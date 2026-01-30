@@ -3475,6 +3475,10 @@
             "/partner-sdk/guilds/"
               .concat(e, "/application-storefront/skus/")
               .concat(t),
+          SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU_ELIGIBILITY: (e, t) =>
+            "/partner-sdk/guilds/"
+              .concat(e, "/application-storefront/skus/")
+              .concat(t, "/eligibility"),
           SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT: (e) =>
             "/partner-sdk/guilds/".concat(
               e,
@@ -3802,6 +3806,8 @@
             "/guilds/".concat(e, "/profile/visibility"),
           USER_SET_GUILD_IDENTITY: "/users/@me/clan",
           TENOR_ASSET_PATH: "/tenor",
+          GIPHY_ASSET_PATH: "/giphy",
+          KLIPY_ASSET_PATH: "/klipy",
           EMAIL_SETTINGS: "/users/@me/email-settings",
           ACCOUNT_NOTIFICATION_SETTINGS: "/users/@me/notification-settings",
           VIDEO_FILTER_ASSETS: "/users/@me/video-filters/assets",
@@ -5294,8 +5300,6 @@
           (n.CLOUD_PLAY_CTA_CLICKED = "cloud_play_cta_clicked"),
           (n.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED =
             "channel_attach_menu_use_apps_clicked"),
-          (n.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED =
-            "channel_attach_menu_start_activity_clicked"),
           (n.FORTNITE_GFNJOIN_CLICKED = "fortnite_gfnjoin_clicked"),
           (n.FORTNITE_DOWNLOAD_CLICKED = "fortnite_download_clicked"),
           (n.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED =
@@ -6421,6 +6425,7 @@
             "channel_with_unread_mentions_loaded"),
           (n.REPLY_NUDGES_CREATED = "reply_nudges_created"),
           (n.REPLY_NUDGE_OPENED = "reply_nudge_opened"),
+          (n.APP_TRANSACTION_ID_SYNCED = "app_transaction_id_synced"),
           n);
         Object.freeze({
           STORAGE_MANIFEST: (e, t) =>
@@ -6651,7 +6656,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-01-29-496afea02c48235252834520aaadb3e9974379cf-discord_web",
+              "2026-01-30-17772308b47ae143ea04997c086d6ca3d0c1319e-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6717,8 +6722,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "491153"),
-            o.NA("builtAt", String("1769712360298"));
+            o.NA("buildNumber", "491574"),
+            o.NA("builtAt", String("1769761132738"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return _;
@@ -8604,6 +8609,20 @@
                 [n.LIGHT]: { raw: "WHITE", opacity: 0.45 },
                 [n.MIDNIGHT]: { raw: "BLACK", opacity: 0.45 },
                 [n.DARKER]: { raw: "BLACK", opacity: 0.45 },
+              },
+              PROGRESSBAR_INDICATOR_BACKGROUND: {
+                category: "generic",
+                [n.DARK]: { raw: "BRAND_500", opacity: 1 },
+                [n.LIGHT]: { raw: "BRAND_500", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
+                [n.DARKER]: { raw: "BRAND_500", opacity: 1 },
+              },
+              PROGRESSBAR_TRACK_BACKGROUND: {
+                category: "generic",
+                [n.DARK]: { raw: "PRIMARY_500", opacity: 0.54 },
+                [n.LIGHT]: { raw: "PRIMARY_400", opacity: 0.24 },
+                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.18 },
+                [n.DARKER]: { raw: "PLUM_11", opacity: 0.24 },
               },
               REDESIGN_ACTIVITY_CARD_BADGE_ICON: {
                 category: "generic",
@@ -38194,4 +38213,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.f7a23042bceb1262.js.map
+//# sourceMappingURL=sentry.ccc2bbd22845c3d1.js.map
