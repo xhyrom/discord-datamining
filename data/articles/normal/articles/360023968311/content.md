@@ -1,9 +1,7 @@
 <div class="exp-box">
-  The <strong>Discover</strong> <strong>tab</strong> is an experimental feature
-  that will be available on <strong>August 15, 2024</strong> to a limited number
-  of users. This new tab will include <strong>Server Discovery</strong>,
-  allowing users to explore and join various servers. You can learn more about
-  the Discover tab
+  <strong>Server Discovery</strong> was an experimental feature to a limited
+  number of users. The Server Discovery experiment has ended. <br />You can
+  learn more about the Discover tab
   <a
     href="https://support.discord.com/hc/articles/25323248535319"
     target="_blank"
@@ -17,14 +15,18 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="height: 325px; width: 624px"
     src="https://support.discord.com/hc/article_attachments/14997610867351"
+    width="624"
+    height="325"
   />
 </p>
 <h3 id="h_01J593HP3CV7FE4BX88AAWP6CQ">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Please note that only Community Servers are eligible to be on our Server
-    Discovery list.</span
+  <span data-darkreader-inline-color="">Please note: </span><br />- O<span
+    data-darkreader-inline-color=""
+    >nly Community Servers are eligible to be on our Server Discovery
+    list.</span
+  ><br /><span data-darkreader-inline-color=""
+    >- Additionally, Server Discovery is not personalized to each user. </span
   >
 </h3>
 <p>
@@ -33,22 +35,22 @@
   >
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e1ee31d457e91c9e306786344da8d8362">
     <a href="#h_01H1W2R84615E1YAKVZX1ZMYJF" target="_self"
       >Server Discovery Tab</a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e81e7bd16794000fbfbf8b027a13bba00">
         <a href="#h_01H1W2RDA8EEJF7KBEP3H7NFQJ" target="_self"
           >Browsing New Categories</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e918b2c79c9596798b4b025b806574eaf">
         <a href="#h_01H1W2RP90G0EY785APHTXP50R" target="_self"
           >Searching for New Communities</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e456d9133e405dffd4dea3e9954db479a">
         <a href="#h_01H1W2RTZE4BNXQ6PM70CEDM58" target="_self"
           >Learning More about the Community Before Joining</a
         >
@@ -64,8 +66,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="height: 266px; width: 297px"
     src="https://support.discord.com/hc/article_attachments/14997610828695"
+    width="297"
+    height="266"
   />
 </p>
 <p>
@@ -85,8 +88,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="height: 429px; width: 624px"
     src="https://support.discord.com/hc/article_attachments/14997593862423"
+    width="624"
+    height="429"
   />
 </p>
 <p>
@@ -94,12 +98,14 @@
   Discord that you can explore: 
 </p>
 <ul>
-  <li>Gaming</li>
-  <li>Music</li>
-  <li>Education</li>
-  <li>Science &amp; Tech</li>
-  <li>Entertainment</li>
-  <li>Student Hubs</li>
+  <li data-list-item-id="e036160f4751a7d803c50c431c911036b">Gaming</li>
+  <li data-list-item-id="ecc18ccbc99334126f416629373ceeea5">Music</li>
+  <li data-list-item-id="e360400ba0bd762f98409a2d7fafd6db9">Education</li>
+  <li data-list-item-id="e98e7bacf48dd5f8fa81148682c17f07e">
+    Science &amp; Tech
+  </li>
+  <li data-list-item-id="e9c58e4fb76e5887ae4e1e1fbb06a3cc7">Entertainment</li>
+  <li data-list-item-id="e778577eb4c15d830d1657859c2a333d7">Student Hubs</li>
 </ul>
 <h2 id="h_01H1W2RP90G0EY785APHTXP50R">Searching For New Communities</h2>
 <p>
@@ -108,8 +114,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="height: 178px; width: 606px"
     src="https://support.discord.com/hc/article_attachments/14997576924567"
+    width="606"
+    height="178"
   />
 </p>
 <p>
@@ -122,8 +129,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="height: 401px; width: 624px"
     src="https://support.discord.com/hc/article_attachments/14997576949015"
+    width="624"
+    height="401"
   />
 </p>
 <p>
@@ -133,8 +141,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="height: 515px; width: 624px"
     src="https://support.discord.com/hc/article_attachments/14997589368087"
+    width="624"
+    height="515"
   />
 </p>
 <p>
@@ -159,8 +168,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="height: 388px; width: 624px"
     src="https://support.discord.com/hc/article_attachments/14997616473751"
+    width="624"
+    height="388"
   />
 </p>
 <p class="wysiwyg-text-align-left">
@@ -174,7 +184,8 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="height: 67px; width: 624px"
     src="https://support.discord.com/hc/article_attachments/14997576918167"
+    width="624"
+    height="67"
   />
 </p>
