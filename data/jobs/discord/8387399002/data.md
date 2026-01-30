@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8387399002](https://discord.com/jobs/8387399002)
 
-**Updated At:** Wed, 28 Jan 2026 18:10:05 GMT
+**Updated At:** Fri, 30 Jan 2026 20:16:58 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord's Legal team is looking for a Senior Security GRC Manager to help build and scale our security compliance program. This role will own our Security Compliance function within GRC, driving certification readiness, policy development, and control documentation and review that keep pace with Discord's growth. You'll work closely with Security, Engineering, IT, and Legal to build systems that make compliance efficient and sustainable—not a box-checking exercise. This role reports to Discord's Senior Director, Product Law.

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8326060002](https://discord.com/jobs/8326060002)
 
-**Updated At:** Wed, 21 Jan 2026 18:39:32 GMT
+**Updated At:** Fri, 30 Jan 2026 20:16:58 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking an accomplished and experienced Staff Machine Learning Engineer – Safety ML to join our dynamic team. As a technical lead of the Safety ML team, you will be responsible for designing, developing, and maintaining our data and AI/ML infrastructure and services. You will collaborate with cross-functional teams, including data scientists, software engineers, MLEs and product managers, to deliver modern and cutting-edge solutions that improve safety on the platform. This role reports to the Senior Manager of Machine Learning, Safety.

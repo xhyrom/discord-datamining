@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8250803002](https://discord.com/jobs/8250803002)
 
-**Updated At:** Wed, 21 Jan 2026 18:39:32 GMT
+**Updated At:** Fri, 30 Jan 2026 20:16:58 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're seeking a Director of Account Management to transform our Account Management team into an independent revenue-driving organization within Discord's Advertising Solutions business. You'll lead a team of Account Managers who own the complete post-sale customer journey, driving expansion revenue, optimizing customer outcomes, and acting as executive sponsors to our largest accounts. Reporting to the VP of Sales, this is a peer role to our Sales Directors with a goal to build scalable growth processes as we transition to self-serve advertising products and expand globally.&amp;nbsp;
