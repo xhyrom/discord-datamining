@@ -24180,6 +24180,8 @@ img.thumbnail__0f2e8 {
   font-size: 0.875rem;
   line-height: 1rem;
   min-height: 100px;
+  -moz-tab-size: 4;
+  tab-size: 4;
 }
 .codeView__4d95d::-webkit-scrollbar-track {
   margin: 0 0.5em;
@@ -40849,6 +40851,8 @@ div.mobilePushContainer__3d3b0 {
   min-height: var(--custom-channel-textarea-text-area-height);
   padding-inline: 0 10px;
   resize: none;
+  -moz-tab-size: 4;
+  tab-size: 4;
   width: 100%;
 }
 .textArea__74017::-moz-placeholder {
@@ -72714,4 +72718,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f8ea8eda2ca87db3.css.map*/
+/*# sourceMappingURL=web.5f27fa3ee6b2d2aa.css.map*/
