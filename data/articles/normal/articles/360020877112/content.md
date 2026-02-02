@@ -56,11 +56,106 @@
 <h1 id="h_01JF85KBBN81QWNATTG0MMWX5F">
   How to Purchase a Nitro Gift in Discord
 </h1>
-<p>
-  <strong>Discord Nitro gifts</strong> can be purchased within
-  <strong>direct messages (DMs)</strong>,<strong> group chats</strong>,
-  <strong>server channels</strong>, and the <strong>Nitro page</strong>.
-</p>
+<div class="mega-box">
+  <p>
+    <span style="color: #434343"
+      ><strong>Offer: </strong>It's time to celebrate Valentine’s Day! Starting
+      <strong>February 2, 2026</strong>, gift a 1-month or 1-year Nitro
+      subscription and pick one of two exclusive heart-themed decorations to
+      keep. This promotion will roll out gradually, with all users gaining
+      access by mid-February.</span
+    >
+  </p>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/38105924136727"
+      width="624"
+      height="249"
+    />
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01KG8BSCF17238CHD1JWQSWANW">
+    <span style="color: #666666">Holiday season gifting collection</span>
+  </h4>
+  <p>
+    <span style="color: #434343"
+      >Collect a new cosmetic from this season’s promotion each time you send a
+      Nitro gift. Offer ends <strong>February 18, 2026</strong>
+      <strong>(5:00PM PT)</strong>. Look for the promotion banner before making
+      your purchase. If this promotion is available to you, you will see a
+      <strong>banner</strong> like the one below during purchase that will
+      confirm that you'll get a decoration. If you do not see the offer banner,
+      it means you are not currently eligible for the promotion. Not all users
+      will be eligible for this promotion. You can check back in mid-February to
+      determine if you are then eligible for the promotion. </span
+    >
+  </p>
+  <p class="wysiwyg-text-align-center">
+    <span style="color: #666666"
+      ><img
+        class="wysiwyg-image-resized"
+        style="aspect-ratio: 754/875; width: 59.25%"
+        src="https://support.discord.com/hc/article_attachments/38105924140311"
+        width="754"
+        height="875"
+    /></span>
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01KG8BT3XBXMTVNPGWDBX5P5R9">
+    <span style="color: #666666">Promotion Banner in Select Plan Window</span>
+  </h4>
+  <p>
+    <span style="color: #434343"
+      ><strong>Please note</strong>: This offer is only valid for Nitro gifts
+      (not Nitro Basic gifts). While any decoration you receive is yours to
+      keep, it will be removed if you refund your Nitro gift purchase.</span
+    >
+  </p>
+  <p>
+    <span style="color: #434343"
+      >If eligible, you can select a decoration from the following list to keep
+      each time you gift Nitro:</span
+    ><br /> 
+  </p>
+  <p class="wysiwyg-text-align-center">
+    <span style="color: #434343"
+      ><img
+        src="https://support.discord.com/hc/article_attachments/38105905246487"
+        width="324"
+        height="325"
+    /></span>
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01KG8BT3XE2S38RDB617K4WVCC">
+    <span style="color: #666666">Full HP Avatar Decoration</span><br /> 
+  </h4>
+  <p class="wysiwyg-text-align-center">
+    <span style="color: #666666"
+      ><img
+        src="https://support.discord.com/hc/article_attachments/38105924144791"
+        width="324"
+        height="324"
+    /></span>
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01KG8BT3XG21YJG0BT9KKE4CB8">
+    <span style="color: #666666">Full Heart Nameplate</span>
+  </h4>
+  <p>
+    <span style="color: #666666">Want to learn more about </span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
+      ><span class="wysiwyg-underline">Avatar Decorations</span></a
+    ><span style="color: #666666"> and </span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/30408457944215-Nameplates-FAQ"
+      ><span class="wysiwyg-underline">Nameplates</span></a
+    ><span style="color: #666666"
+      >? Check out our article for more details.</span
+    >
+  </p>
+  <p>
+    <strong>Discord Nitro gifts</strong> can be purchased within
+    <strong>direct messages (DMs)</strong>,<strong> group chats</strong>,
+    <strong>server channels</strong>, and the <strong>Nitro page</strong>.
+  </p>
+</div>
 <div class="info-box">
   Gifts purchased within a DM on desktop or browser will allow you to customize
   your gift by selecting a card design, adding a personal note, a soundboard
