@@ -2858,6 +2858,7 @@
           GUILD_VANITY_URL: (e) => "/guilds/".concat(e, "/vanity-url"),
           GUILD_MFA: (e) => "/guilds/".concat(e, "/mfa"),
           GUILD_PRUNE: (e) => "/guilds/".concat(e, "/prune"),
+          GUILD_PRUNE_V2: (e) => "/guilds/".concat(e, "/prune/v2"),
           GUILD_ICON: function (e, t) {
             let r =
               arguments.length > 2 && void 0 !== arguments[2]
@@ -3592,6 +3593,8 @@
               .concat(r, "/leave"),
           ACTIVITIES_DISCORD_CONFIG: (e) =>
             "/activities/discord-config/".concat(e),
+          ACTIVITIES_TRUSTED_LINKS: (e) =>
+            "/applications/".concat(e, "/trusted-links/check"),
           APPLICATION_UPLOAD_ATTACHMENT: (e) =>
             "/applications/".concat(e, "/attachment"),
           APPLICATION_PROXY_TICKET: (e) =>
@@ -6656,7 +6659,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-01-30-714695a3f4cd3d1bcf4d7920352e7ddc196e736c-discord_web",
+              "2026-02-02-1cd091090088004bb5ee5dc11c9ecd6fa08e991d-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6722,8 +6725,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "492022"),
-            o.NA("builtAt", String("1769994600682"));
+            o.NA("buildNumber", "492031"),
+            o.NA("builtAt", String("1770020318566"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return _;
@@ -38213,4 +38216,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.a5fe29f63231c441.js.map
+//# sourceMappingURL=sentry.4ebb8626634d7bc5.js.map
