@@ -39,12 +39,9 @@
   purchase Marvel Rivals in-game items directly through Discord. 
 </p>
 <div class="info-box">
-  <strong>Note:</strong> The Marvel Rivals Shop is currently an experiment and
-  available to a limited number of users in select regions, including the United
-  States, Australia, New Zealand, Ireland, United Kingdom, and Canada. All
-  prices in the Marvel Rivals Shop are shown in U.S. dollars (USD). Your
-  selected payment method will automatically handle any necessary currency
-  conversion.
+  <strong>Note:</strong> All prices in the Marvel Rivals Shop are shown in U.S.
+  dollars (USD). Your selected payment method will automatically handle any
+  necessary currency conversion.
 </div>
 <h1 id="h_01KBDWQWVJH5YH3WB1KW0EZ6VS">How to Access the Marvel Rivals Shop</h1>
 <div class="info-box">
