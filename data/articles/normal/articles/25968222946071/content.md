@@ -1,29 +1,43 @@
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li data-list-item-id="ecce90e6c957b92c7d3b19cee1ce11339">
       <a href="#h_01J7M034G4F57TT88E7MHVTS47"
         >How to Verify that a Call is End-to-End Encrypted</a
       >
     </li>
-    <li>
+    <li data-list-item-id="ec7577b4c8087ae1447a2b9bae7935bfd">
       <a href="#h_01J7M034G4RGNV5D9YRX2G30VM"
         >How to Verify Participants on a Call</a
       >
     </li>
-    <li>
+    <li data-list-item-id="ee6a7ad2fb9d4c7667c316b182e4ea16a">
       <a href="#h_01J7M034G47PAKXTQQTJ9QDZ40">Persistent Verification Keys</a>
     </li>
-    <li>
+    <li data-list-item-id="e91803ceb0fd73e3e14b280a74bb1d460">
       <a href="#h_01J7M034G4ED1HCVY5NX29CJ58">Managing Verified Devices</a>
     </li>
-    <li>
+    <li data-list-item-id="ec0ff273ed8b99117c73e371f8dc6f6fa">
       <a href="#h_01J7M034G4ZJCDD1Y31ZXN24HB">Frequently Asked Questions</a>
     </li>
   </ul>
+</div>
+<div class="warn-box">
+  <strong>Important:</strong> All audio and video conversations in direct
+  messages (DMs), group messages (GDMs), voice channels, and Go Live streams on
+  Discord will require end-to-end encryption starting on March 1st, 2026. You
+  must ensure that your Discord app is on the latest version to support the
+  end-to-end encryption requirement. Learn more about the minimum requirements
+  <a
+    href="https://support.discord.com/hc/en-us/articles/38025123604631/"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >.
 </div>
 <p>
   End-to-end encryption for audio and video (E2EE A/V) on Discord makes your
@@ -32,13 +46,6 @@
   listen in on your calls or watch your stream besides the intended
   participants/viewers.
 </p>
-<div class="mega-box">
-  <strong>Note:</strong> All audio and video conversations in direct messages
-  (DMs), group messages (GDMs), voice channels, and Go Live streams on Discord
-  will require end-to-end encryption starting on March 1st, 2026. You must
-  ensure that your Discord app is on the latest version to support the
-  end-to-end encryption requirement.
-</div>
 <p>
   Below explains how to verify that a call is end-to-end encrypted and how to
   confirm that the people who you are on a call with are verified too.
@@ -113,12 +120,12 @@
 </p>
 <p>1. Navigate to “View Verification Code”. </p>
 <ol>
-  <li>
+  <li data-list-item-id="e904791c10233dab050115aa67a3efc5b">
     On Desktop, right click on the user in the voice call members list or right
     click on their tile in the call view and select
     <strong>View Verification Code</strong> from the dropdown menu.
   </li>
-  <li>
+  <li data-list-item-id="ee535072b9361901dcff0727b93ca77c7">
     On Mobile, open the user's profile either from the call member list or by
     long pressing on their call tile and then select
     <strong>View Verification Code</strong>.
@@ -200,18 +207,18 @@
 </p>
 <p>Considerations for setup: </p>
 <ul>
-  <li>
+  <li data-list-item-id="e47909d6d1737525c3fe7ff698be631f1">
     For you to save a persistent verification key for the person you’re speaking
     with, they’ll need to have the
     <strong>Enable persistent verification codes</strong> setting enabled as
     well.
   </li>
-  <li>
+  <li data-list-item-id="e2266459dd76c2489503cbef0fe25ad52">
     Persistent verification keys are tied to your device, not your user account.
     This means that if both you and a friend enable this setting, you’ll remain
     verified to each other every time you join a voice call from those devices.
   </li>
-  <li>
+  <li data-list-item-id="e2b556be5fa758eee76ad4c1a669dbd7a">
     If you log out and back in again on your device, you will lose access to any
     previously used persistent verification key on that device and others who
     previously persistently verified your device will see that you are
@@ -222,14 +229,18 @@
 </ul>
 <p>Someone you previously persistently verified may appear unverified when:</p>
 <ul>
-  <li>
+  <li data-list-item-id="e839056961fef90ca3a8d97d8cfdbad49">
     They’re using a different device than the one you persistently verified
   </li>
-  <li>They had to log in again on the device you persistently verified</li>
-  <li>
+  <li data-list-item-id="ee42b9252859c5a5f908f290378cd59d2">
+    They had to log in again on the device you persistently verified
+  </li>
+  <li data-list-item-id="ec888b81dd1ef55bcdd584f7cbf31acd3">
     Their persistent verification key was removed from local device storage
   </li>
-  <li>They are being impersonated by someone else</li>
+  <li data-list-item-id="e33a12d00f9eb2383f84a0b30a2489425">
+    They are being impersonated by someone else
+  </li>
 </ul>
 <h1 id="h_01J7M034G4ED1HCVY5NX29CJ58">Managing Verified Devices</h1>
 <p>
