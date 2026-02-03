@@ -6659,7 +6659,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-6fedc58ccb9ea8067912a09a45cd5957b40c2810",
+            release: "discord_web-2cfdddd3312a85ab898a432de3ba3597ab28b7fe",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6725,8 +6725,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "492607"),
-            o.NA("builtAt", String("1770138660494"));
+            o.NA("buildNumber", "492696"),
+            o.NA("builtAt", String("1770145326589"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return _;
@@ -7346,12 +7346,26 @@
                 [n.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
                 [n.DARKER]: { raw: "BRAND_500", opacity: 1 },
               },
+              BADGE_BACKGROUND_DEFAULT: {
+                category: "generic",
+                [n.DARK]: { raw: "PRIMARY_500", opacity: 0.16 },
+                [n.LIGHT]: { raw: "PRIMARY_400", opacity: 0.16 },
+                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.2 },
+                [n.DARKER]: { raw: "PLUM_11", opacity: 0.16 },
+              },
               BADGE_NOTIFICATION_BACKGROUND: {
                 category: "generic",
                 [n.DARK]: { raw: "RED_400", opacity: 1 },
                 [n.LIGHT]: { raw: "RED_430", opacity: 1 },
                 [n.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
                 [n.DARKER]: { raw: "RED_400", opacity: 1 },
+              },
+              BADGE_TEXT_DEFAULT: {
+                category: "generic",
+                [n.DARK]: { raw: "PRIMARY_230", opacity: 1 },
+                [n.LIGHT]: { raw: "PRIMARY_600", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "PLUM_4", opacity: 1 },
+                [n.DARKER]: { raw: "PLUM_6", opacity: 1 },
               },
               BG_SURFACE_RAISED: {
                 category: "background",
@@ -38216,4 +38230,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.43631e7cc6c0c4e7.js.map
+//# sourceMappingURL=sentry.3380545b6f0a6c46.js.map
