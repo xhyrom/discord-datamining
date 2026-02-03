@@ -2,7 +2,7 @@
 
 ## Product Design Manager, Engagement
 
-**Location:** San Francisco Bay Area
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 8401077002 <br/>
 **Internal Job Id:** 6353974002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8401077002](https://discord.com/jobs/8401077002)
 
-**Updated At:** Mon, 02 Feb 2026 23:29:33 GMT
+**Updated At:** Tue, 03 Feb 2026 01:48:12 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Engagement organization at Discord is focused on deepening user engagement and retention—ensuring that as we bring in new users, they stick around and make Discord an irreplaceable part of their daily lives. We work on Discord's core social systems: voice and messaging. Our mission is to drive repeatable mechanisms that increase engagement across both our core desktop gaming audience and emerging segments like mobile gamers.
