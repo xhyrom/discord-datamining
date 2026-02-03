@@ -30,7 +30,7 @@
     }
   ],
   "id": 8338009002,
-  "updated_at": "2026-01-30T15:16:58-05:00",
+  "updated_at": "2026-02-03T12:46:35-05:00",
   "requisition_id": "R-107102",
   "title": "Group Product Marketing Manager, Developer Commerce Solutions",
   "company_name": "Discord",
@@ -42,7 +42,7 @@
       "id": 4074063002,
       "name": "Product Marketing",
       "child_ids": [],
-      "parent_id": 4094264002
+      "parent_id": 4094267002
     }
   ],
   "offices": [

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8401063002](https://discord.com/jobs/8401063002)
 
-**Updated At:** Mon, 02 Feb 2026 22:53:50 GMT
+**Updated At:** Tue, 03 Feb 2026 17:46:35 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a Sales Operations Manager to serve as a strategic partner to our sales leadership team. In this role, you'll own the systems, processes, and analytics that enable our sales organization to operate efficiently and hit ambitious revenue targets. You'll work cross-functionally to drive forecasting accuracy, optimize territory and account strategies, and ensure our teams have the insights they need to succeed.

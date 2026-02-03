@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8352070002](https://discord.com/jobs/8352070002)
 
-**Updated At:** Fri, 30 Jan 2026 20:16:58 GMT
+**Updated At:** Tue, 03 Feb 2026 17:46:35 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a highly motivated, mission-focused Senior Software Engineer to join the Notifications team at Discord. Notifications are a business critical function for helping users remain connected on our platform. The Notifications squad is a multidiscipline group of engineers that work across user experiences, infrastructure, and machine learning problems to ensure notifications from Discord are high signal and high value at all times.&amp;nbsp;

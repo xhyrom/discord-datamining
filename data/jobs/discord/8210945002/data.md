@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8210945002](https://discord.com/jobs/8210945002)
 
-**Updated At:** Fri, 30 Jan 2026 22:16:50 GMT
+**Updated At:** Tue, 03 Feb 2026 17:46:35 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As Director of Data and Analytics Engineering, you'll build the data products and systems that powers how Discord accesses data—from self-service analytics and dashboards to AI-powered experiences that let anyone query data naturally. You'll lead a team of talented engineers and engineering managers through a critical growth phase, enabling rapid decision making across our subscription, advertising and commerce businesses.

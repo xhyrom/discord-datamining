@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8299401002](https://discord.com/jobs/8299401002)
 
-**Updated At:** Fri, 30 Jan 2026 20:16:58 GMT
+**Updated At:** Tue, 03 Feb 2026 17:46:35 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for an Account Manager to join our growing APAC Gaming Advertising Solutions team, reporting to our Director of Gaming Sales, APAC. This role is based in Japan and is perfect for someone passionate about managing and growing relationships with Japanese gaming clients while helping them achieve their marketing goals on Discord.

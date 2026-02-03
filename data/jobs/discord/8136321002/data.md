@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8136321002](https://discord.com/jobs/8136321002)
 
-**Updated At:** Fri, 30 Jan 2026 20:16:58 GMT
+**Updated At:** Tue, 03 Feb 2026 17:46:35 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our Platform Infrastructure teams are responsible for building and maintaining the critical systems that power Discord's core services. These systems handle hundreds of thousands of requests per second, process tens of billions of transactions daily, and enable millions of users to connect seamlessly. Through developing and operating foundational platform components, our work allows internal developers to rapidly and safely deliver new features to production while ensuring Discord remains reliable, efficient, and scalable.
