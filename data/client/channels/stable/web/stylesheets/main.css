@@ -44805,6 +44805,9 @@ div.modalOverrideBody__34eac {
   display: flex;
   flex-direction: row;
 }
+.productVariantsContainer__2c397.wrap__2c397 {
+  flex-wrap: wrap;
+}
 .full-motion .productVariantsContainer__2c397 {
   transition: gap 0.25s ease;
 }
@@ -72707,4 +72710,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.1ac3bf08ea740f34.css.map*/
+/*# sourceMappingURL=web.6aaa3fca48df8a94.css.map*/
