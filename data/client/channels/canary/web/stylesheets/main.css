@@ -21648,6 +21648,12 @@ body .headerAnimation_b54a5b {
 .error_f38e43 {
   color: var(--red-400);
 }
+.dropdownLoadingContainer_f38e43 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
 .formTitle__553e7 {
   margin-bottom: 8px;
 }
@@ -72887,4 +72893,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.a72bc461593bd052.css.map*/
+/*# sourceMappingURL=web.62514fbfc940fee7.css.map*/
