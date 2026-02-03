@@ -30,7 +30,7 @@
     }
   ],
   "id": 8401077002,
-  "updated_at": "2026-02-03T12:46:35-05:00",
+  "updated_at": "2026-02-03T14:45:39-05:00",
   "requisition_id": "R-107161",
   "title": "Product Design Manager, Engagement",
   "company_name": "Discord",
@@ -47,9 +47,9 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }
