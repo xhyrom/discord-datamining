@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8177757002](https://discord.com/jobs/8177757002)
 
-**Updated At:** Tue, 03 Feb 2026 17:46:35 GMT
+**Updated At:** Wed, 04 Feb 2026 18:32:12 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a highly technical, creative, hands-on, and impact-focused Senior Software Engineer to join our growing Ads team.
@@ -18,7 +18,7 @@ Our team is revolutionizing the way users interact with our platform through inn
 To learn more about Discord Engineering, take a look at our&amp;nbsp;engineering blog!
 What you'll be doing
 
-Design, build and maintain new Ads products and infrastructure from the backend to frontend. Collaborate with both engineers on and off the team - from Revenue Infrastructure, to Core Tech, to Machine Learning, to Data Science.
+Design, build and maintain new Ads products from the backend to frontend. Collaborate with both engineers on and off the team - from Revenue Infrastructure, to Core Tech, to Machine Learning, to Data Science.
 Be a strategic partner with engineering, product, and cross functional leadership in designing, developing and scaling digital advertising features that drive revenue growth and enhance user engagement.
 Architect simple and maintainable systems to enable us to launch quickly and iterate while sustaining a high product and technical quality bar.
 Model strong ownership by acting autonomously when possible and looping in others to build confidence on critical questions. Introduce coding and operational best practices to the team; always be learning &amp;amp; teaching.
@@ -26,16 +26,15 @@ Own projects end to end — you’ll be responsible for working with Product and
 
 What you should have
 
-A focus on impact. You have a sharp eye for what changes can bring a product from good to great. You collaborate closely with product managers, designers, analysts, and other engineers to define great solutions to business problems.
-A sense of ownership. You believe in solving a problem completely rather than simply shipping a solution. You operate autonomously and follow through on your commitments.
-A growth mindset. You view mistakes as learning opportunities and build upon your successes. You challenge yourself and those around you to continuously improve.
-A love of mentorship. Helping fellow engineers, providing feedback and guidance on system architecture, API design, data modeling, and tradeoffs.
-Domain knowledge. We’re looking for engineers with experience in the ad delivery space.
-4+ years of experience, with 2 years in relevant roles.
+A focus on impact.&amp;nbsp;You have a sharp eye for what changes can bring a product from good to great. You collaborate closely with product managers, designers, analysts, and other engineers to define great solutions to business problems.
+A sense of ownership.&amp;nbsp;You believe in solving a problem completely rather than simply shipping a solution. You operate autonomously and follow through on your commitments.
+A growth mindset.&amp;nbsp;You view mistakes as learning opportunities and build upon your successes. You challenge yourself and those around you to continuously improve.
+A love of mentorship.&amp;nbsp;Helping fellow engineers, providing feedback and guidance on system architecture, API design, data modeling, and tradeoffs.
+4+ years of experience
 
 Bonus Points
 
-Expertise with Typescript, React, React Native, Python and/or Rust
+Expertise with Typescript, React, React Native, and Python
 Familiarity with experimentation and analysis
 Contributions to open-source projects
 Interest or passion for the Discord platform
