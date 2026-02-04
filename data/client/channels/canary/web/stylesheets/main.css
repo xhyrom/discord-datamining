@@ -22114,6 +22114,11 @@ body .headerAnimation_b54a5b {
 .icon_da8ac7 .nitroCredit_da8ac7 svg {
   filter: drop-shadow(0 4px 10px var(--shadow-low-hover));
 }
+.container_e7911b {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
 .container__33980 {
   display: flex;
   gap: 8px;
@@ -73058,4 +73063,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.64d41dfb35523170.css.map*/
+/*# sourceMappingURL=web.5f52bf1066b5051f.css.map*/
