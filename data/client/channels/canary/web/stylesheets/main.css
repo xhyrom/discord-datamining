@@ -35689,6 +35689,171 @@ div.mobilePushContainer__3d3b0 {
 .skuImage__47729.square__47729 {
   aspect-ratio: 1;
 }
+.socialLayerCardHover__517e1 .socialLayerCardBackgroundImage__517e1 {
+  transform: scale(100%);
+}
+.socialLayerCardHover__517e1 .socialLayerCardImage__517e1 {
+  transform: scale(105%);
+}
+.socialLayerCard__517e1 {
+  border-radius: none;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.socialLayerCardBackgroundImage__517e1 {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  inset-inline: 0;
+  bottom: 0;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: scale(105%);
+  width: 100%;
+}
+.full-motion .socialLayerCardBackgroundImage__517e1 {
+  transition: transform 0.5s;
+}
+.socialLayerCardImage__517e1 {
+  inset-inline: 0;
+  bottom: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 4px;
+  transform: scale(100%);
+  width: 100%;
+}
+.full-motion .socialLayerCardImage__517e1 {
+  transition: transform 0.5s;
+}
+.profileEffectPreview__517e1 {
+  align-items: flex-start;
+  display: flex;
+  height: 100%;
+}
+.nameplatePreview__517e1 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.full-motion .nameplatePreview__517e1 {
+  transition: transform 0.2s ease;
+}
+.nameplateTopLeft__517e1 {
+  inset-inline-start: 33px;
+  position: absolute;
+  top: 37px;
+}
+.nameplateBottomRight__517e1 {
+  bottom: 33px;
+  inset-inline-end: 33px;
+  position: absolute;
+}
+.bundlePreview__517e1 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  transform: scale(0.65);
+  transform-origin: center;
+  width: 100%;
+}
+.card__9ed47 {
+  background-color: var(--background-surface-highest);
+  border-radius: var(--radius-md);
+  box-shadow:
+    inset 0 0 0 1px var(--border-muted),
+    0 1px 4px 0 hsl(none 0% 0%/0.04);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+}
+.custom-user-profile-theme .card__9ed47 {
+  background-color: var(--user-profile-overlay-background);
+}
+.full-motion .card__9ed47 {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.skuPreview__9ed47 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.overlay_f5504d {
+  align-items: flex-end;
+  bottom: 0;
+  display: flex;
+  inset-inline: 0;
+  justify-content: center;
+  opacity: 0;
+  padding: 12px;
+  position: absolute;
+  transition: opacity 50ms ease-in;
+  z-index: 5;
+}
+.overlayHoverOrFocus_f5504d {
+  opacity: 1;
+  transition: opacity 0.15s ease-out;
+}
+.container__96168 {
+  height: 136px;
+  margin-top: 8px;
+  position: relative;
+  width: 106px;
+}
+.full-motion .container__96168 {
+  transition: transform 0.2s ease;
+}
+.container__96168:focus-within,
+.container__96168:hover {
+  transform: scale(1.025);
+}
+.cardContainer__96168 {
+  height: 100%;
+  width: 100%;
+}
+.contextContainer__96168 {
+  background-color: var(--background-surface-high);
+  border-radius: 12px;
+  color: var(--interactive-text-active);
+  inset-inline-end: -4px;
+  padding: 2px;
+  position: absolute;
+  top: -8px;
+  z-index: 2;
+}
+.contextContainer__96168,
+.contextIcon__96168 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.contextIcon__96168 {
+  height: 20px;
+  width: 20px;
+  -webkit-margin-start: -1px;
+  margin-inline-start: -1px;
+}
+.contextIcon__96168,
+.fireIcon__96168 {
+  margin-top: -1px;
+}
 .card__20585:focus-within .cardBackgroundImage__20585,
 .card__20585:hover .cardBackgroundImage__20585 {
   transform: scale(100%);
@@ -35812,6 +35977,10 @@ div.mobilePushContainer__3d3b0 {
 }
 .contextContainer__3a590 {
   background-color: var(--background-surface-highest);
+}
+.smallSquareCard__3a590 {
+  height: 136px;
+  width: 136px;
 }
 @value maxWidth: 498px;
 .container__0800c {
@@ -72889,4 +73058,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.5e6352eaff3c82a3.css.map*/
+/*# sourceMappingURL=web.64d41dfb35523170.css.map*/
