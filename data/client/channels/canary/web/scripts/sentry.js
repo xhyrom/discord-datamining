@@ -5658,6 +5658,8 @@
           (n.DCF_CAP_EXCEEDED = "dcf_cap_exceeded"),
           (n.ACK_COMMUNITY_MESSAGES = "ack_community_messages"),
           (n.VOICE_PANEL_TAB_OPENED = "voice_panel_tab_opened"),
+          (n.VOICE_PANEL_SCREENSHARE_BUTTON_TAPPED =
+            "voice_panel_screenshare_button_tapped"),
           (n.ANNOUNCEMENT_MESSAGE_LINK_CLICKED =
             "announcement_message_link_clicked"),
           (n.ANNOUNCEMENT_MESSAGE_VIEWED = "announcement_message_viewed"),
@@ -6285,7 +6287,16 @@
           n.HAw.NOTIFICATION_CLICKED,
           n.HAw.EXPERIMENT_USER_TRIGGERED,
           n.HAw.EXPERIMENT_DM_TRIGGERED,
-          n.HAw.EXPERIMENT_GUILD_TRIGGERED;
+          n.HAw.EXPERIMENT_GUILD_TRIGGERED,
+          n.HAw.DEVICE_EVENT,
+          n.HAw.REACT_SOFT_EXCEPTION,
+          n.HAw.NETWORK_CAPABILITIES_CHANGED,
+          n.HAw.FOREGROUND_SERVICE,
+          n.HAw.APP_LIFECYCLE,
+          n.HAw.UI_LIFECYCLE,
+          n.HAw.TOUCH_EVENT,
+          n.HAw.HTTP_REQUEST,
+          n.HAw.WEBSOCKET_MESSAGE_RECEIVED;
       },
       168769(e, t, r) {
         "use strict";
@@ -6305,7 +6316,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-751f8582fb44158534adec8ce11990701d00aafc",
+            release: "discord_web-6901b0f8f2af3e97ceb3ad98d4917488836ecbdf",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6371,8 +6382,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "493330"),
-            _.NA("builtAt", String("1770238695613"));
+            _.NA("buildNumber", "493472"),
+            _.NA("builtAt", String("1770247143027"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -35904,4 +35915,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.8d7c3420a9e3e2d5.js.map
+//# sourceMappingURL=sentry.bcd2a026c96454f6.js.map

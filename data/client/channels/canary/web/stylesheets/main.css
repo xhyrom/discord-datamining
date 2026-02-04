@@ -45184,9 +45184,12 @@ div.modalOverrideBody__34eac {
   flex-direction: column;
   gap: var(--space-4);
 }
+.videoBackground__58471,
+.videoContainer__58471 {
+  border-radius: inherit;
+}
 .videoBackground__58471 {
   border: 1px solid var(--border-subtle);
-  border-radius: inherit;
   height: 100%;
   inset: 0;
   -o-object-fit: cover;
@@ -47890,7 +47893,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -53783,9 +53786,6 @@ svg.radioIcon_c1e9c4 {
 .wrapper_f910d0.ringingOutgoing_f910d0:after {
   animation: outgoing-call-pulse_f910d0
     var(--custom-call-avatar-outgoing-duration) infinite ease-out;
-}
-.wrapper_f910d0.ringingIncoming_f910d0:after,
-.wrapper_f910d0.ringingOutgoing_f910d0:after {
   background: transparent;
   border: 3px solid var(--interactive-text-active);
   border-radius: 100%;
@@ -53798,9 +53798,25 @@ svg.radioIcon_c1e9c4 {
   transform-origin: center;
   width: 100%;
 }
+.wrapper_f910d0.small_f910d0.ringingOutgoing_f910d0:after {
+  border: 1px solid var(--interactive-text-active);
+  inset-inline-start: -1px;
+  top: -1px;
+}
 .wrapper_f910d0.ringingIncoming_f910d0:after {
   animation: incoming-call-pulse_f910d0
     var(--custom-call-avatar-incoming-duration) infinite ease-out;
+  background: transparent;
+  border: 3px solid var(--interactive-text-active);
+  border-radius: 100%;
+  content: "";
+  height: 100%;
+  inset-inline-start: -3px;
+  pointer-events: none;
+  position: absolute;
+  top: -3px;
+  transform-origin: center;
+  width: 100%;
 }
 .statusContainer_f910d0 {
   background-color: var(--red-400);
@@ -72383,4 +72399,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.fab8289917e4a3f7.css.map*/
+/*# sourceMappingURL=web.14ddbb95c0c3b4b2.css.map*/
