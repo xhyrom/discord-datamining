@@ -4826,6 +4826,8 @@
           (n.SCREENSHARE_FAILED = "screenshare_failed"),
           (n.PERK_DISCOVERABILITY_CARD_CTA_CLICKED =
             "perk_discoverability_card_cta_clicked"),
+          (n.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED =
+            "premium_tenure_rewards_orbs_cta_clicked"),
           (n.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED =
             "premium_whats_new_box_cta_clicked"),
           (n.PREMIUM_WHATS_NEW_VIEW_TIME = "premium_whats_new_view_time"),
@@ -5067,6 +5069,7 @@
             "game_display_mode_adjustment_response"),
           (n.GIF_FAVORITED = "gif_favorited"),
           (n.GIF_UNFAVORITED = "gif_unfavorited"),
+          (n.MESSAGE_SENT_WITH_GIF = "message_sent_with_gif"),
           (n.GUILD_DISCOVERY_VIEWED = "guild_discovery_viewed"),
           (n.GUILD_DISCOVERY_SEARCH_FAILED = "guild_discovery_search_failed"),
           (n.GUILD_DISCOVERY_SEARCH_START = "guild_discovery_search_start"),
@@ -5960,6 +5963,12 @@
             "premium_group_cancel_invite_modal_viewed"),
           (n.PREMIUM_GROUP_CANCEL_INVITE_CTA_CLICKED =
             "premium_group_cancel_invite_cta_clicked"),
+          (n.PREMIUM_GROUP_PURCHASE_CONFIRMATION_VIEWED =
+            "premium_group_purchase_confirmation_viewed"),
+          (n.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_OPENED =
+            "premium_group_purchase_friend_selector_opened"),
+          (n.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_SKIPPED =
+            "premium_group_purchase_friend_selector_skipped"),
           (n.FETCH_USER_OFFER_STARTED = "fetch_user_offer_started"),
           (n.SHARE_NITRO_FLOW_STEPS = "share_nitro_flow_steps"),
           (n.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED =
@@ -6660,7 +6669,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-02-03-aaf02769929835e5fdfcf0a9da7fa1339638fa7e-discord_web",
+              "2026-02-04-ea1c733807228a5f157485e4a8392c1a9c6a79bf-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6726,8 +6735,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "492536"),
-            o.NA("builtAt", String("1770106739882"));
+            o.NA("buildNumber", "493063"),
+            o.NA("builtAt", String("1770193110248"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return _;
@@ -7347,12 +7356,26 @@
                 [n.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
                 [n.DARKER]: { raw: "BRAND_500", opacity: 1 },
               },
+              BADGE_BACKGROUND_DEFAULT: {
+                category: "generic",
+                [n.DARK]: { raw: "PRIMARY_500", opacity: 0.16 },
+                [n.LIGHT]: { raw: "PRIMARY_400", opacity: 0.16 },
+                [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.2 },
+                [n.DARKER]: { raw: "PLUM_11", opacity: 0.16 },
+              },
               BADGE_NOTIFICATION_BACKGROUND: {
                 category: "generic",
                 [n.DARK]: { raw: "RED_400", opacity: 1 },
                 [n.LIGHT]: { raw: "RED_430", opacity: 1 },
                 [n.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
                 [n.DARKER]: { raw: "RED_400", opacity: 1 },
+              },
+              BADGE_TEXT_DEFAULT: {
+                category: "generic",
+                [n.DARK]: { raw: "PRIMARY_230", opacity: 1 },
+                [n.LIGHT]: { raw: "PRIMARY_600", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "PLUM_4", opacity: 1 },
+                [n.DARKER]: { raw: "PLUM_6", opacity: 1 },
               },
               BG_SURFACE_RAISED: {
                 category: "background",
@@ -38217,4 +38240,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.052b95ab923c0697.js.map
+//# sourceMappingURL=sentry.11b82476802bb5e7.js.map
