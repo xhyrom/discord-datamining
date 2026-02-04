@@ -45416,20 +45416,20 @@ div.modalOverrideBody__34eac {
 .bar__9258b.empty__9258b {
   background: var(--custom-gradient-end);
 }
-.container__60cb4 {
+.container_e93594 {
   align-items: center;
   display: flex;
   padding-top: var(--space-12);
   width: 100%;
 }
-.icon__60cb4 {
+.icon_e93594 {
   color: var(--text-default);
   -webkit-margin-start: -2px;
   margin-inline-start: -2px;
   z-index: 10;
 }
 @container premium-marketing-page-container (min-width: 720px) {
-  .icon__60cb4 {
+  .icon_e93594 {
     color: #fff;
   }
 }
@@ -72889,4 +72889,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.d977947ba7286dcb.css.map*/
+/*# sourceMappingURL=web.5e6352eaff3c82a3.css.map*/

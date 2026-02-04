@@ -4826,6 +4826,8 @@
           (n.SCREENSHARE_FAILED = "screenshare_failed"),
           (n.PERK_DISCOVERABILITY_CARD_CTA_CLICKED =
             "perk_discoverability_card_cta_clicked"),
+          (n.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED =
+            "premium_tenure_rewards_orbs_cta_clicked"),
           (n.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED =
             "premium_whats_new_box_cta_clicked"),
           (n.PREMIUM_WHATS_NEW_VIEW_TIME = "premium_whats_new_view_time"),
@@ -5067,6 +5069,7 @@
             "game_display_mode_adjustment_response"),
           (n.GIF_FAVORITED = "gif_favorited"),
           (n.GIF_UNFAVORITED = "gif_unfavorited"),
+          (n.MESSAGE_SENT_WITH_GIF = "message_sent_with_gif"),
           (n.GUILD_DISCOVERY_VIEWED = "guild_discovery_viewed"),
           (n.GUILD_DISCOVERY_SEARCH_FAILED = "guild_discovery_search_failed"),
           (n.GUILD_DISCOVERY_SEARCH_START = "guild_discovery_search_start"),
@@ -6665,7 +6668,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-c5be52e1c5e99844f924ccbd6aecbfe0f9e8885c",
+            release: "discord_web-26c5ac0f483289783b302372ac8573d76afe7b37",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6731,8 +6734,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "493001"),
-            o.NA("builtAt", String("1770168671847"));
+            o.NA("buildNumber", "493046"),
+            o.NA("builtAt", String("1770177048983"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return _;
@@ -38236,4 +38239,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.aa46c71ae4cc818e.js.map
+//# sourceMappingURL=sentry.209ed80664af1782.js.map
