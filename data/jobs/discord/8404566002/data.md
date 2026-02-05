@@ -2,7 +2,7 @@
 
 ## Senior Product Creative Illustrator
 
-**Location:** San Francisco Bay Are
+**Location:** San Francisco Bay Area
 
 **Id:** 8404566002 <br/>
 **Internal Job Id:** 6355274002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8404566002](https://discord.com/jobs/8404566002)
 
-**Updated At:** Wed, 04 Feb 2026 20:47:18 GMT
+**Updated At:** Thu, 05 Feb 2026 17:24:52 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Discord Creative Systems Team is seeking a versatile systems illustrator with strong technical craft and conceptual ideation skills. The ideal candidate combines illustration expertise with systematic thinking and precision in designing for product environments. You'll enhance the user experience by creating cohesive iconography, illustrations, and abstracted UI graphics that bring consistency and delight to Discord's visual language. We're looking for someone who can independently craft thoughtful graphics, establish and document design guidelines, and collaborate with cross-functional teams to align creative work with product goals.
