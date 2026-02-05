@@ -44141,6 +44141,73 @@ div.mobilePushContainer__3d3b0 {
 .closeButtonGift__57a87 {
   margin-inline-start: auto;
 }
+.headerContainer__9abb9 {
+  background-color: var(--background-base-low);
+  border-start-end-radius: 4px;
+  border-start-start-radius: 4px;
+  box-sizing: border-box;
+  height: 146px;
+  margin-inline-start: -1px;
+  margin-top: -2px;
+  min-height: 146px;
+  position: relative;
+  width: calc(100% + 2px);
+}
+.closeButton__9abb9 {
+  inset-inline-end: 16px;
+  position: absolute;
+  top: 16px;
+}
+.headerImage__9abb9,
+.headerImageContainer__9abb9 {
+  height: 100%;
+  width: 100%;
+}
+.headerImage__9abb9 {
+  border-start-end-radius: var(--radius-md);
+  border-start-start-radius: var(--radius-md);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.orbCheckoutHeaderVideo__9abb9 {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: left top;
+  object-position: left top;
+}
+div.modalOverrideBody__34eac {
+  background-color: transparent;
+  border-radius: 8px;
+  overflow: visible;
+  padding: 0;
+}
+.modalOverrideBody__34eac::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.modalOverrideSliderBody__34eac {
+  padding: 0;
+  width: 440px;
+}
+.confettiCanvas__34eac {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.customConfetti__34eac {
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+.customConfetti__34eac.hidden__34eac {
+  opacity: 0;
+}
+.modalOverrideBody__34eac {
+  margin-inline-start: -1px;
+  margin-top: -2px;
+  padding: 0;
+  width: calc(100% + 2px);
+}
 .blurb_cd2ff7 {
   color: var(--text-default);
   margin-top: 10px;
@@ -44438,73 +44505,6 @@ div.mobilePushContainer__3d3b0 {
   height: 42px;
   justify-content: center;
   width: 42px;
-}
-.headerContainer__9abb9 {
-  background-color: var(--background-base-low);
-  border-start-end-radius: 4px;
-  border-start-start-radius: 4px;
-  box-sizing: border-box;
-  height: 146px;
-  margin-inline-start: -1px;
-  margin-top: -2px;
-  min-height: 146px;
-  position: relative;
-  width: calc(100% + 2px);
-}
-.closeButton__9abb9 {
-  inset-inline-end: 16px;
-  position: absolute;
-  top: 16px;
-}
-.headerImage__9abb9,
-.headerImageContainer__9abb9 {
-  height: 100%;
-  width: 100%;
-}
-.headerImage__9abb9 {
-  border-start-end-radius: var(--radius-md);
-  border-start-start-radius: var(--radius-md);
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.orbCheckoutHeaderVideo__9abb9 {
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: left top;
-  object-position: left top;
-}
-div.modalOverrideBody__34eac {
-  background-color: transparent;
-  border-radius: 8px;
-  overflow: visible;
-  padding: 0;
-}
-.modalOverrideBody__34eac::-webkit-scrollbar {
-  height: 0;
-  width: 0;
-}
-.modalOverrideSliderBody__34eac {
-  padding: 0;
-  width: 440px;
-}
-.confettiCanvas__34eac {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-.customConfetti__34eac {
-  opacity: 1;
-  pointer-events: none;
-  transition: opacity 0.5s ease-in-out;
-}
-.customConfetti__34eac.hidden__34eac {
-  opacity: 0;
-}
-.modalOverrideBody__34eac {
-  margin-inline-start: -1px;
-  margin-top: -2px;
-  padding: 0;
-  width: calc(100% + 2px);
 }
 .confirmation__9baa5 {
   align-items: center;
@@ -72750,4 +72750,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.fc3651f9f7fd61cb.css.map*/
+/*# sourceMappingURL=web.cf1abc4e5994931f.css.map*/
