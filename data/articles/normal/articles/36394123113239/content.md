@@ -48,7 +48,7 @@
   <strong>Note:</strong> The Marvel Rivals Shop is currently available on the
   Discord desktop app only, within the official Marvel Rivals server. Items
   purchased through the Marvel Rivals Shop can only be redeemed in Marvel Rivals
-  on PC.
+  on PC or Xbox.
 </div>
 <p>
   You can access the Marvel Rivals Shop from the official
@@ -187,7 +187,7 @@
     If the in-game item is already owned by the user within Marvel Rivals 
   </li>
   <li data-list-item-id="e8f6874083ed5a473930fb633676b23f9">
-    If the user is unable to claim the in-game item on their PC 
+    If the user is unable to claim the in-game item on their PC or Xbox
   </li>
 </ul>
 <p>
@@ -229,9 +229,9 @@
 </p>
 <p>
   A: Currently only supported on desktop platforms (Steam, Epic, Loading Bay).
-  If your connected account is on Xbox or PlayStation therefore unable to
-  receive the item, we may offer a refund, provided that you or the gift
-  recipient attempted to claim the item within 14 days of purchase.
+  If your connected account is on PlayStation therefore unable to receive the
+  item, we may offer a refund, provided that you or the gift recipient attempted
+  to claim the item within 14 days of purchase.
 </p>
 <p>
   <strong
