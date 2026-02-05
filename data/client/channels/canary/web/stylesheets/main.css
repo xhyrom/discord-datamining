@@ -12489,9 +12489,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   width: 8px;
 }
 .topRimPill_ac86f6 {
-  inset-inline-end: 4px;
+  inset-inline-start: 50%;
   position: absolute;
   top: -15px;
+  transform: translateX(-50%);
   z-index: 2;
 }
 .rimGlowTier0_ac86f6 {
@@ -72399,4 +72400,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.14ddbb95c0c3b4b2.css.map*/
+/*# sourceMappingURL=web.c9c307f5d14c4286.css.map*/
