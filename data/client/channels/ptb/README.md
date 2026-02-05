@@ -3,30 +3,30 @@
 ### Info
 Build number: 493648  
 Version hash: 2ffb4c281983976c6f86449ad024f11f9306dea4  
-Host version: 1.0.1176  
+Host version: 1.0.1177  
 Built at: 2/5/2026, 8:19:01 AM  
 
 ### Modules
 | Module                  | Version | Package sha256                                                   | URL                                                                                                  |
 | ----------------------- | ------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| discord_utils           | 1       | 19df8abded096ba1dae1737548e448bea218e5ad7b8e8c5e8e9e6c41f860620c | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_utils/1/full.distro           |
-| discord_voice           | 3       | a61da88c3ce22c963f31b479b9b87479c164a96a515e15c2cac6cc644356fa8a | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_voice/3/full.distro           |
-| discord_sekrit          | 1       | d748ada6e51a5d727915e4a46e6058475a5b8abb99a3e42514c0543566deefab | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_sekrit/1/full.distro          |
-| discord_desktop_overlay | 1       | f9ed692ef28629a428a28ae81f290b43b1b1b8891445c9ef22f62511a0923c88 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_desktop_overlay/1/full.distro |
-| discord_ml              | 1       | df3bc6166bebabeacd3f6464b516dce94716a08ed08e8053063074d5c7317586 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_ml/1/full.distro              |
-| discord_desktop_core    | 1       | e95e76c539ec2bcd109edcdc07a069ae2b2c9633dd33910ec0b2d463395d39ea | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_desktop_core/1/full.distro    |
-| discord_vigilante       | 1       | 9ce1a3feaaeee4e9f940db438ea432c2cdfbf20ec5a4488a084482a2339b4fbf | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_vigilante/1/full.distro       |
-| discord_rpc             | 1       | 8a659c1fa0ffd1c4d181480027adf95e57be9e928d0bf509caff66cc9ec812ec | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_rpc/1/full.distro             |
-| discord_media           | 1       | 23fbfd1410b0da93bd55bd6a0ada6a8f40f3b6394147acee40007659b0fba0bd | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_media/1/full.distro           |
-| discord_modules         | 1       | 6820a2b5b58787061577ac8a9299b56c6572fc64573547aae2e251bab12e33c5 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_modules/1/full.distro         |
-| discord_notifications   | 1       | f0df0145ee211c510a9c3cd24999c8d22c7673a8988a007aa7059a08cd59c56b | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_notifications/1/full.distro   |
-| discord_cloudsync       | 1       | ba93b7488ef6cf1c98cff61e8f53996f139665318e61566a9ddc36825876a896 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_cloudsync/1/full.distro       |
-| discord_zstd            | 1       | 5a8d7d9d96457bcf1767026f77eb717cca8c476b3dcc3ea5b0f9f7c40ece718e | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_zstd/1/full.distro            |
-| discord_spellcheck      | 1       | 3499f8f5dbf2d33269da0c37c730c81613ce7f77f72aee70fe933955dc4967b0 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_spellcheck/1/full.distro      |
-| discord_overlay2        | 1       | cf256f476c21150f143172aa27386e7bfa6f32066cf9c6111c8620d1e0a50630 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_overlay2/1/full.distro        |
-| discord_voice_filters   | 1       | 7c06dd71a0332177803e2d770ad0ccf71502263c7ba52265d23ac9234f6e21b9 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_voice_filters/1/full.distro   |
-| discord_hook            | 1       | ea59249ed3e89ffc8fea514e59c6ff04e657d2f3becfdec6ab8f3b318d8fd43d | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_hook/1/full.distro            |
-| discord_krisp           | 1       | e501383b4e73ffa0d53a532e52e9b7bd385a6f1a31ea060c76da85b38eaa986b | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_krisp/1/full.distro           |
-| discord_game_utils      | 1       | 939b842d6f73d618644641421b1d54f290384e8354e6fd5adc0fa6e9972f91a3 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_game_utils/1/full.distro      |
-| discord_dispatch        | 1       | d177d72d40d120353c2643f62ae02759d14a3fa91599b6eba30df5e5f80acf80 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_dispatch/1/full.distro        |
-| discord_erlpack         | 1       | 955ab5793e2cf01ef05aeb28575d59fd0ae8203a752a8991f588a1e2284006d6 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1176/discord_erlpack/1/full.distro         |
+| discord_media           | 1       | 099d3286ca88a6d3b3fc128408dd982a1ea74f3e59e8af9c087e6607eddf1aaa | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_media/1/full.distro           |
+| discord_voice           | 1       | fb3d29727bbd677712f6e723a8c37a2490f30fae800232ad71d7abb3c82082ab | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_voice/1/full.distro           |
+| discord_rpc             | 1       | bc587183088944aed9cb100462cd11a25175350df2851d25d06f3065e8977913 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_rpc/1/full.distro             |
+| discord_hook            | 1       | 1c1f36abea1c17a1be6f1f7909c2a1b987e140cbcaaa367d10516d7e7ff0688e | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_hook/1/full.distro            |
+| discord_game_utils      | 1       | 7ce2fd9636b5600e5a41d8b367a85163dd709661d15540ed0c3a70915f3c2b9f | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_game_utils/1/full.distro      |
+| discord_desktop_core    | 1       | 14a91653ba6c60e18bf66f2db92b773e505f73fb2f96abc23bda14c14981cbcc | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_desktop_core/1/full.distro    |
+| discord_overlay2        | 1       | a5f2f0e521d6f487345762d2daabf100043da9a2b921ca5d4256e7b3b9ef1d68 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_overlay2/1/full.distro        |
+| discord_vigilante       | 1       | 695f52efeabaeec5dff096079e7350508bb464ed91636eb9000c186e14d3ed4c | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_vigilante/1/full.distro       |
+| discord_desktop_overlay | 1       | 6dc96e766805740d8ff4c952945d9e8af740aeea35f95d6f641549e6f0806bca | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_desktop_overlay/1/full.distro |
+| discord_zstd            | 1       | b7d57df238344afd1105a4531ca15c4ab3b38e2d4d3de6c4678e187b899ffa64 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_zstd/1/full.distro            |
+| discord_sekrit          | 1       | df16b3b65114f2e0f5e91eec2b8150d3b013e17807662c3684fc84b4faf93c47 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_sekrit/1/full.distro          |
+| discord_utils           | 1       | c754b756a03fec6482707999ccd7d928ac87555322861fa4397c1bdcdcf0f03c | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_utils/1/full.distro           |
+| discord_krisp           | 1       | f1cd84db96e4bc999d3f86d0ed8354f8b3c3744bb948fe0de1da586c0af21512 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_krisp/1/full.distro           |
+| discord_ml              | 1       | 8005edc16dcd5fbf5fdbbd4d11bb477bdc1e5ea24f24446826999e156196f943 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_ml/1/full.distro              |
+| discord_dispatch        | 1       | 3f52d93e51cfe523d51b9890f0a0a103aa435b4a69ca76ce169e0d5e05861752 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_dispatch/1/full.distro        |
+| discord_voice_filters   | 1       | e633a2d1412bfb61721138df9bbf715b7d836acf39eee2ec306eede405864b26 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_voice_filters/1/full.distro   |
+| discord_notifications   | 1       | 5b353dea051f7c9dacfcb00a565481ad88c707a46a455a2b0f6d617f9bcfb5d7 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_notifications/1/full.distro   |
+| discord_cloudsync       | 1       | 04ebae7b83d65e42973383a9597e31b081390a072bb39bde89c018fec93c4a91 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_cloudsync/1/full.distro       |
+| discord_modules         | 1       | 9a954a6ebfba4ae2ec1e5ff4bde40b90ab51383cce088854208a508521c541b6 | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_modules/1/full.distro         |
+| discord_erlpack         | 1       | e0d07b33cde98c3035ee1a48d0ab6f8119acbd2f79a747f7dfb9f8ddfac6a01f | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_erlpack/1/full.distro         |
+| discord_spellcheck      | 1       | 509fe2c95db76938583ba61a1b72883f7f9a4228ae9f305e25fd2c0ecfe5820f | https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1177/discord_spellcheck/1/full.distro      |
