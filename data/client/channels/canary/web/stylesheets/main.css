@@ -28766,8 +28766,8 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   padding: 0;
 }
 .upsellContainer__0b69f.updatedStyling__0b69f {
-  background: var(--background-surface-high);
-  border: 1px solid var(--border-muted);
+  background: var(--background-surface-highest);
+  border: 1px solid var(--border-subtle);
 }
 .expressiveGradient__0b69f {
   align-items: center;
@@ -44697,11 +44697,7 @@ div.modalOverrideBody__34eac {
   margin-top: 1px;
   vertical-align: top;
 }
-.productVariantsOuterContainer__2c397 {
-  gap: var(--space-12);
-}
-.productVariantsContainer__2c397,
-.productVariantsOuterContainer__2c397 {
+.productVariantsContainer__2c397 {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -44723,6 +44719,13 @@ div.modalOverrideBody__34eac {
   display: flex;
   justify-content: center;
 }
+.productVariant__2c397.productVariantOverflow__2c397 {
+  background-color: var(--control-overlay-secondary-background-default);
+  box-shadow:
+    inset 0 0 0 0 transparent,
+    0 0 0 1px var(--control-overlay-secondary-border-hover),
+    0 0 0 2px var(--background-base-low);
+}
 .full-motion .productVariant__2c397 {
   transition:
     box-shadow 0.25s ease,
@@ -44730,7 +44733,8 @@ div.modalOverrideBody__34eac {
     margin-inline-start 0.25s ease,
     width 0.25s ease;
 }
-.full-motion .productVariantCheckmark__2c397 {
+.full-motion .productVariantCheckmark__2c397,
+.full-motion .productVariantOverflowIcon__2c397 {
   transition:
     height 0.25s ease,
     width 0.25s ease;
@@ -44755,6 +44759,10 @@ div.modalOverrideBody__34eac {
   height: 16px;
   width: 16px;
 }
+.expanded__2c397 .productVariantOverflowIcon__2c397 {
+  height: 18px;
+  width: 18px;
+}
 .collapsed__2c397.productVariantsContainer__2c397 {
   gap: 0;
 }
@@ -44778,6 +44786,10 @@ div.modalOverrideBody__34eac {
 .collapsed__2c397 .productVariantCheckmark__2c397 {
   height: 12px;
   width: 12px;
+}
+.collapsed__2c397 .productVariantOverflowIcon__2c397 {
+  height: 14px;
+  width: 14px;
 }
 .wishlistButton__979b1 {
   align-items: center;
@@ -48008,7 +48020,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -72514,4 +72526,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.ddadfcb47a4ab5a1.css.map*/
+/*# sourceMappingURL=web.0ad65c9ae42fd247.css.map*/
