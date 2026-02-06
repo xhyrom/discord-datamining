@@ -6320,7 +6320,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9353ee7add07ab077ce7e2f75b2f88e508fc3efa",
+            release: "discord_web-b1822c267957ff4fc143c3d1c4eb8c8d720304f3",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6386,8 +6386,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "494407"),
-            _.NA("builtAt", String("1770403535791"));
+            _.NA("buildNumber", "494548"),
+            _.NA("builtAt", String("1770412955936"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -11240,6 +11240,7 @@
             6: "Apple Partner",
             8: "Virtual Currency",
             9: "Apple ACOM",
+            10: "TDS",
           }),
           Object.freeze({
             BRAINTREE: {
@@ -35962,4 +35963,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.c7a8d0f91966506f.js.map
+//# sourceMappingURL=sentry.4b7313a102b2f111.js.map
