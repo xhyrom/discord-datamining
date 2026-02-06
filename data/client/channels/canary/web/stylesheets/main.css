@@ -13579,9 +13579,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   gap: 4px;
   width: 100%;
 }
-.gameIconWrapper__4e338 {
-  cursor: pointer;
-}
 .gameIcon__4e338 {
   flex-shrink: 0;
   height: 26px;
@@ -72750,4 +72747,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.cf1abc4e5994931f.css.map*/
+/*# sourceMappingURL=web.b46a3e49474d0c9d.css.map*/
