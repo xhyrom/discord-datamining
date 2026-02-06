@@ -2947,6 +2947,7 @@
                 : "png";
             return `/avatar-decoration-presets/${e}.${t}`;
           },
+          CMS_LAYOUT: (e, t) => `/layouts/${e}/${t}`,
           COLLECTIBLES_CATEGORIES: "/collectibles-categories",
           COLLECTIBLES_CATEGORIES_V2: "/collectibles-categories/v2",
           COLLECTIBLES_SEARCH: "/shop/search",
@@ -6320,7 +6321,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-fabf5e3304f5922c9e77c5124f36a49387548647",
+            release: "discord_web-1c7e7f610988e074f1094c852867e832574bc6c9",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6386,8 +6387,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "494591"),
-            _.NA("builtAt", String("1770416160288"));
+            _.NA("buildNumber", "494651"),
+            _.NA("builtAt", String("1770419998760"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -6604,7 +6605,7 @@
             COLLECTIBLES_SHOP: "/shop",
             COLLECTIBLES_SHOP_WITH_TAB: (e) => `/shop?tab=${e}`,
             COLLECTIBLES_SHOP_PRODUCT_DETAIL: (e) => `/shop/product/${e}`,
-            COLLECTIBLES_SHOP_COLLECTION_DETAIL: (e) => `/shop/collection/${e}`,
+            COLLECTIBLES_SHOP_LAYOUT: (e) => `/shop/layout/${e}`,
             NITRO_HOME: "/store",
             ACCOUNT_STANDING: "/account-standing",
             CHANNEL_SUMMARIES: (e) => `/channels/${e}/summaries`,
@@ -35963,4 +35964,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.8598e9d3e1fba31f.js.map
+//# sourceMappingURL=sentry.566ca8e04ea38b10.js.map
