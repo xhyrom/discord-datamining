@@ -2068,6 +2068,9 @@
   max-height: min(800px, 100%);
   max-width: 480px;
 }
+.maxHeightViewport__8a031 {
+  max-height: 100%;
+}
 .size-lg__8a031 {
   max-width: 680px;
 }
@@ -72920,4 +72923,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.75a2ff116e496e56.css.map*/
+/*# sourceMappingURL=web.d36548737f8db16e.css.map*/
