@@ -3089,6 +3089,8 @@
           AGE_ASSURANCE_TEST: "/age-verification/test",
           VERIFY_AGE: "/age-verification/verify",
           AGE_VERIFICATION_METHODS: "/age-verification/methods",
+          AGE_VERIFICATION_REACTIVE_CHECK: "/users/@me/age-verification/check",
+          AGE_VERIFICATION_RESET: "/users/@me/age-verification/reset",
           EXPERIMENTS: "/experiments",
           LOGIN: "/auth/login",
           LOGIN_GENERATED_USER: (e) => `/auth/login/generated-user/${e}`,
@@ -6319,7 +6321,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-02-05-2ffb4c281983976c6f86449ad024f11f9306dea4-discord_web",
+              "2026-02-06-1e3226d203dc81b00041a615ecf11f3abc22fbf9-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6385,8 +6387,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "493648"),
-            _.NA("builtAt", String("1770279541203"));
+            _.NA("buildNumber", "494219"),
+            _.NA("builtAt", String("1770365922482"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -7755,12 +7757,33 @@
                 [n.MIDNIGHT]: { raw: "TRANSPARENT", opacity: 0 },
                 [n.DARKER]: { raw: "TRANSPARENT", opacity: 0 },
               },
+              ICON_VOICE_CONNECTED: {
+                category: "generic",
+                [n.DARK]: { raw: "GREEN_NEW_25", opacity: 1 },
+                [n.LIGHT]: { raw: "GREEN_NEW_55", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "GREEN_NEW_40", opacity: 1 },
+                [n.DARKER]: { raw: "GREEN_NEW_34", opacity: 1 },
+              },
+              ICON_VOICE_DISCONNECTED: {
+                category: "generic",
+                [n.DARK]: { raw: "RED_345", opacity: 1 },
+                [n.LIGHT]: { raw: "RED_500", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "RED_345", opacity: 1 },
+                [n.DARKER]: { raw: "RED_345", opacity: 1 },
+              },
               ICON_VOICE_MUTED: {
                 category: "generic",
                 [n.DARK]: { raw: "RED_400", opacity: 1 },
                 [n.LIGHT]: { raw: "RED_430", opacity: 1 },
                 [n.MIDNIGHT]: { raw: "RED_400", opacity: 1 },
                 [n.DARKER]: { raw: "RED_400", opacity: 1 },
+              },
+              ICON_VOICE_SPEAKING: {
+                category: "generic",
+                [n.DARK]: { raw: "GREEN_NEW_40", opacity: 1 },
+                [n.LIGHT]: { raw: "GREEN_NEW_45", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "GREEN_NEW_40", opacity: 1 },
+                [n.DARKER]: { raw: "GREEN_NEW_40", opacity: 1 },
               },
               INPUT_BACKGROUND_DEFAULT: {
                 category: "background",
@@ -8609,6 +8632,27 @@
                 [n.LIGHT]: { raw: "PRIMARY_500", opacity: 1 },
                 [n.MIDNIGHT]: { raw: "PLUM_8", opacity: 1 },
                 [n.DARKER]: { raw: "PLUM_9", opacity: 1 },
+              },
+              TEXT_VOICE_CONNECTED: {
+                category: "text",
+                [n.DARK]: { raw: "GREEN_NEW_25", opacity: 1 },
+                [n.LIGHT]: { raw: "GREEN_NEW_55", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "GREEN_NEW_40", opacity: 1 },
+                [n.DARKER]: { raw: "GREEN_NEW_34", opacity: 1 },
+              },
+              TEXT_VOICE_DISCONNECTED: {
+                category: "text",
+                [n.DARK]: { raw: "RED_345", opacity: 1 },
+                [n.LIGHT]: { raw: "RED_500", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "RED_345", opacity: 1 },
+                [n.DARKER]: { raw: "RED_345", opacity: 1 },
+              },
+              TEXT_VOICE_SPEAKING: {
+                category: "text",
+                [n.DARK]: { raw: "GREEN_NEW_40", opacity: 1 },
+                [n.LIGHT]: { raw: "GREEN_NEW_45", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "GREEN_NEW_40", opacity: 1 },
+                [n.DARKER]: { raw: "GREEN_NEW_40", opacity: 1 },
               },
               THEME_LOCKED_BLUR_FALLBACK: {
                 category: "generic",
@@ -35918,4 +35962,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.3ac17c925653a1f5.js.map
+//# sourceMappingURL=sentry.8cd8dc48243c31fa.js.map
