@@ -6024,6 +6024,7 @@
           (n.PREMIUM_FEATURE_ERROR = "premium_feature_error"),
           (n.EMOJI_STUDIO_ENDED = "emoji_studio_ended"),
           (n.PASSWORD_RESET_ACTION = "password_reset_action"),
+          (n.HARDWARE_MUTE_GUESSED = "hardware_mute_guessed"),
           (n.GUILD_CHANNEL_RESYNC_REQUESTED = "guild_channel_resync_requested"),
           (n.GUILD_CHANNEL_RESYNC_EXECUTED = "guild_channel_resync_executed"),
           (n.GUILD_CHANNEL_RESYNC_COMPLETED = "guild_channel_resync_completed"),
@@ -6321,7 +6322,7 @@
             tunnel: "/error-reporting-proxy/web",
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-d21c2f529e84f3febe494d88ed8c41654afcdc38",
+            release: "discord_web-be5cccdbcc38a6902bfcfa58133f8de659d2f8c2",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6388,8 +6389,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "494937"),
-            o.NA("builtAt", String("1770659649606"));
+            o.NA("buildNumber", "494988"),
+            o.NA("builtAt", String("1770663086066"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -40998,4 +40999,4 @@ ${eZ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.58cb9be1d23e5368.js.map
+//# sourceMappingURL=sentry.2c5c456eaff034f7.js.map

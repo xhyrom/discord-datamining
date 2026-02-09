@@ -43057,9 +43057,6 @@ div.mobilePushContainer__3d3b0 {
 .upsell__795fb {
   margin-top: 8px;
 }
-.container_be506c {
-  margin: 8px 8px 0;
-}
 .toolbar_bba883 {
   align-items: center;
   background-color: var(--primary-800);
@@ -45236,7 +45233,6 @@ div.modalOverrideBody__34eac {
 .container_e93594 {
   align-items: center;
   display: flex;
-  padding-top: var(--space-12);
   width: 100%;
 }
 .icon_e93594 {
@@ -72835,4 +72831,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.ea83246b8a69cc61.css.map*/
+/*# sourceMappingURL=web.6a350858eb1ccad4.css.map*/
