@@ -2240,6 +2240,16 @@
           countries.
         </p>
         <p>
+          In compliance with the EU-U.S. DPF and the UK Extension to the EU-U.S.
+          DPF and the Swiss-U.S. DPF, Discord commits to cooperate and comply
+          respectively with the advice of the panel established by the EU data
+          protection authorities (DPAs) and the UK Information Commissioner’s
+          Office (ICO) and the Swiss Federal Data Protection and Information
+          Commissioner (FDPIC) with regard to unresolved complaints concerning
+          our handling of personal data received in reliance on the EU-U.S. DPF
+          and the UK Extension to the EU-U.S. DPF and the Swiss-U.S. DPF.
+        </p>
+        <p>
           For more information about the Data Privacy Framework principles and
           to view our certification, please visit the U.S. Department of
           Commerce’s
