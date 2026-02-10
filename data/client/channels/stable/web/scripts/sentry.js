@@ -2947,6 +2947,7 @@
                 : "png";
             return `/avatar-decoration-presets/${e}.${t}`;
           },
+          CMS_LAYOUT: (e, t) => `/layouts/${e}/${t}`,
           COLLECTIBLES_CATEGORIES: "/collectibles-categories",
           COLLECTIBLES_CATEGORIES_V2: "/collectibles-categories/v2",
           COLLECTIBLES_SEARCH: "/shop/search",
@@ -6022,6 +6023,7 @@
           (n.PREMIUM_FEATURE_ERROR = "premium_feature_error"),
           (n.EMOJI_STUDIO_ENDED = "emoji_studio_ended"),
           (n.PASSWORD_RESET_ACTION = "password_reset_action"),
+          (n.HARDWARE_MUTE_GUESSED = "hardware_mute_guessed"),
           (n.GUILD_CHANNEL_RESYNC_REQUESTED = "guild_channel_resync_requested"),
           (n.GUILD_CHANNEL_RESYNC_EXECUTED = "guild_channel_resync_executed"),
           (n.GUILD_CHANNEL_RESYNC_COMPLETED = "guild_channel_resync_completed"),
@@ -6321,7 +6323,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-02-06-b0a87eb349bc0142f22aaaee2190c1383145c99f-discord_web",
+              "2026-02-10-94044035d59dc802e27ce5b9c1944a515fa41a5b-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6387,8 +6389,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "494673"),
-            _.NA("builtAt", String("1770421451780"));
+            _.NA("buildNumber", "495347"),
+            _.NA("builtAt", String("1770711522390"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -6605,6 +6607,7 @@
             COLLECTIBLES_SHOP: "/shop",
             COLLECTIBLES_SHOP_WITH_TAB: (e) => `/shop?tab=${e}`,
             COLLECTIBLES_SHOP_PRODUCT_DETAIL: (e) => `/shop/product/${e}`,
+            COLLECTIBLES_SHOP_LAYOUT: (e) => `/shop/layout/${e}`,
             NITRO_HOME: "/store",
             ACCOUNT_STANDING: "/account-standing",
             CHANNEL_SUMMARIES: (e) => `/channels/${e}/summaries`,
@@ -7759,10 +7762,10 @@
               },
               ICON_VOICE_CONNECTED: {
                 category: "generic",
-                [n.DARK]: { raw: "GREEN_NEW_25", opacity: 1 },
-                [n.LIGHT]: { raw: "GREEN_NEW_55", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "GREEN_NEW_40", opacity: 1 },
-                [n.DARKER]: { raw: "GREEN_NEW_34", opacity: 1 },
+                [n.DARK]: { raw: "GREEN_330", opacity: 1 },
+                [n.LIGHT]: { raw: "GREEN_430", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "GREEN_345", opacity: 1 },
+                [n.DARKER]: { raw: "GREEN_345", opacity: 1 },
               },
               ICON_VOICE_DISCONNECTED: {
                 category: "generic",
@@ -7780,10 +7783,10 @@
               },
               ICON_VOICE_SPEAKING: {
                 category: "generic",
-                [n.DARK]: { raw: "GREEN_NEW_40", opacity: 1 },
-                [n.LIGHT]: { raw: "GREEN_NEW_45", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "GREEN_NEW_40", opacity: 1 },
-                [n.DARKER]: { raw: "GREEN_NEW_40", opacity: 1 },
+                [n.DARK]: { raw: "GREEN_345", opacity: 1 },
+                [n.LIGHT]: { raw: "GREEN_400", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "GREEN_345", opacity: 1 },
+                [n.DARKER]: { raw: "GREEN_345", opacity: 1 },
               },
               INPUT_BACKGROUND_DEFAULT: {
                 category: "background",
@@ -8635,24 +8638,24 @@
               },
               TEXT_VOICE_CONNECTED: {
                 category: "text",
-                [n.DARK]: { raw: "GREEN_NEW_25", opacity: 1 },
-                [n.LIGHT]: { raw: "GREEN_NEW_55", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "GREEN_NEW_40", opacity: 1 },
-                [n.DARKER]: { raw: "GREEN_NEW_34", opacity: 1 },
+                [n.DARK]: { raw: "GREEN_330", opacity: 1 },
+                [n.LIGHT]: { raw: "GREEN_430", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "GREEN_345", opacity: 1 },
+                [n.DARKER]: { raw: "GREEN_345", opacity: 1 },
               },
               TEXT_VOICE_DISCONNECTED: {
                 category: "text",
-                [n.DARK]: { raw: "RED_345", opacity: 1 },
-                [n.LIGHT]: { raw: "RED_500", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "RED_345", opacity: 1 },
+                [n.DARK]: { raw: "RED_330", opacity: 1 },
+                [n.LIGHT]: { raw: "RED_530", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "RED_360", opacity: 1 },
                 [n.DARKER]: { raw: "RED_345", opacity: 1 },
               },
               TEXT_VOICE_SPEAKING: {
                 category: "text",
-                [n.DARK]: { raw: "GREEN_NEW_40", opacity: 1 },
-                [n.LIGHT]: { raw: "GREEN_NEW_45", opacity: 1 },
-                [n.MIDNIGHT]: { raw: "GREEN_NEW_40", opacity: 1 },
-                [n.DARKER]: { raw: "GREEN_NEW_40", opacity: 1 },
+                [n.DARK]: { raw: "GREEN_345", opacity: 1 },
+                [n.LIGHT]: { raw: "GREEN_400", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "GREEN_345", opacity: 1 },
+                [n.DARKER]: { raw: "GREEN_345", opacity: 1 },
               },
               THEME_LOCKED_BLUR_FALLBACK: {
                 category: "generic",
@@ -11240,6 +11243,7 @@
             6: "Apple Partner",
             8: "Virtual Currency",
             9: "Apple ACOM",
+            10: "TDS",
           }),
           Object.freeze({
             BRAINTREE: {
@@ -35962,4 +35966,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.f2821a312883679d.js.map
+//# sourceMappingURL=sentry.fc57a4e891f34e3b.js.map
