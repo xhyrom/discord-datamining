@@ -858,8 +858,8 @@
           for (var P = [1]; 2 * P[P.length - 1] <= 1e7; )
             P.push(2 * P[P.length - 1]);
           var v = P.length,
-            b = P[v - 1];
-          function M(e) {
+            M = P[v - 1];
+          function b(e) {
             return 1e7 >= Math.abs(e);
           }
           function w(e, t, r) {
@@ -877,10 +877,10 @@
               !_.isZero() || !o.isZero();
 
             )
-              (s = (c = g(_, b))[1].toJSNumber()),
-                i && (s = b - 1 - s),
-                (E = (l = g(o, b))[1].toJSNumber()),
-                a && (E = b - 1 - E),
+              (s = (c = g(_, M))[1].toJSNumber()),
+                i && (s = M - 1 - s),
+                (E = (l = g(o, M))[1].toJSNumber()),
+                a && (E = M - 1 - E),
                 (_ = c[0]),
                 (o = l[0]),
                 d.push(r(s, E));
@@ -889,16 +889,16 @@
               p >= 0;
               p -= 1
             )
-              u = u.multiply(b).add(n(d[p]));
+              u = u.multiply(M).add(n(d[p]));
             return u;
           }
           (_.prototype.shiftLeft = function (e) {
             var t = F(e).toJSNumber();
-            if (!M(t)) throw Error(String(t) + " is too large for shifting.");
+            if (!b(t)) throw Error(String(t) + " is too large for shifting.");
             if (t < 0) return this.shiftRight(-t);
             var r = this;
             if (r.isZero()) return r;
-            for (; t >= v; ) (r = r.multiply(b)), (t -= v - 1);
+            for (; t >= v; ) (r = r.multiply(M)), (t -= v - 1);
             return r.multiply(P[t]);
           }),
             (s.prototype.shiftLeft = o.prototype.shiftLeft =
@@ -906,11 +906,11 @@
             (_.prototype.shiftRight = function (e) {
               var t,
                 r = F(e).toJSNumber();
-              if (!M(r)) throw Error(String(r) + " is too large for shifting.");
+              if (!b(r)) throw Error(String(r) + " is too large for shifting.");
               if (r < 0) return this.shiftLeft(-r);
               for (var n = this; r >= v; ) {
                 if (n.isZero() || (n.isNegative() && n.isUnit())) return n;
-                (n = (t = g(n, b))[1].isNegative() ? t[0].prev() : t[0]),
+                (n = (t = g(n, M))[1].isNegative() ? t[0].prev() : t[0]),
                   (r -= v - 1);
               }
               return (t = g(n, P[r]))[1].isNegative() ? t[0].prev() : t[0];
@@ -2704,16 +2704,17 @@
       },
       652215(e, t, r) {
         "use strict";
-        r.d(t, { HAw: () => d }), r(890245), r(478437), r(508602), r(762230);
+        r.d(t, { HAw: () => u }), r(890245), r(478437), r(508602), r(762230);
         var n,
           i = r(448761);
         r(122817);
-        var a = r(317097),
-          _ = r(323125),
-          o = r(927813),
-          s = r(901123),
-          E = r(355097),
-          c = r(818348);
+        var a = r(136722),
+          _ = r(317097),
+          o = r(323125),
+          s = r(927813),
+          E = r(901123),
+          c = r(355097),
+          l = r(818348);
         r(100544),
           Object.freeze({
             SUPPRESS_JOIN_NOTIFICATIONS: 1,
@@ -2730,13 +2731,13 @@
           i.l.THREAD_STARTER_MESSAGE,
           i.l.CONTEXT_MENU_COMMAND,
           Object.freeze({ ACCOUNT_AGE: 5, MEMBER_AGE: 10 });
-        let l = Object.freeze({
+        let d = Object.freeze({
           USER: (e) => `/users/${e}`,
           USER_RELATIONSHIPS: function () {
             let e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
-                : s.ME;
+                : E.ME;
             return `/users/${e}/relationships`;
           },
           USER_RELATIONSHIP: (e) => `/users/@me/relationships/${e}`,
@@ -2913,7 +2914,7 @@
             let t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
-                : s.ME;
+                : E.ME;
             return `/channels/${e}/thread-members/${t}`;
           },
           THREAD_MEMBER_SETTINGS: (e) =>
@@ -3838,16 +3839,16 @@
           HAVEN_UPDATE: (e) => `/haven/${e}/update`,
           HAVEN_GET_ASSETS: "/haven/assets",
         });
-        (0, _.dN)(l),
-          o.A.Seconds.HOUR,
-          o.A.Seconds.MINUTE,
-          o.A.Seconds.MINUTE,
-          o.A.Seconds.MINUTE,
-          o.A.Seconds.MINUTE,
-          o.A.Seconds.MINUTE,
-          o.A.Seconds.MINUTE,
-          o.A.Seconds.HOUR,
-          o.A.Seconds.HOUR,
+        (0, o.dN)(d),
+          s.A.Seconds.HOUR,
+          s.A.Seconds.MINUTE,
+          s.A.Seconds.MINUTE,
+          s.A.Seconds.MINUTE,
+          s.A.Seconds.MINUTE,
+          s.A.Seconds.MINUTE,
+          s.A.Seconds.MINUTE,
+          s.A.Seconds.HOUR,
+          s.A.Seconds.HOUR,
           Object.freeze({
             API_DOCS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/developers/docs/intro`,
             API_DOCS_GAME_AND_SERVER_MANAGEMENT: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/developers/docs/game-and-server-management/alpha-and-beta-testing`,
@@ -3961,7 +3962,7 @@
             GUILD_ROLE_SUBSCRIPTIONS_CANCEL: "Guild Role Subscription Cancel",
             GUILD_BOOSTING: "Nitro Server Boost",
             WEBAUTHN_VIEW: "View Security Keys",
-            [E.nR]: "Guild Role Subscription",
+            [c.nR]: "Guild Role Subscription",
             BILLING: "Billing",
             EXPERIMENTS: "Experiments",
             DEVELOPER_OPTIONS: "Developer Options",
@@ -4029,7 +4030,7 @@
             ANDROID:
               "https://play.google.com/store/apps/details?id=com.discord",
           }),
-          (0, a.Hl)(0x99aab5),
+          (0, _.Hl)(0x99aab5),
           Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
           Object.freeze({
             fonts: [
@@ -4053,7 +4054,7 @@
             ZOOM_MAX: 200,
             ZOOM_SCALES: [50, 67, 75, 80, 90, 100, 110, 125, 150, 175, 200],
           });
-        var d =
+        var u =
           (((n = {}).APP_OPENED = "app_opened"),
           (n.APP_CRASHED = "app_crashed"),
           (n.APP_BACKGROUND = "app_background"),
@@ -6093,17 +6094,40 @@
           (n.PARENTAL_CONSENT_CHECKED = "parental_consent_checked"),
           n);
         Object.freeze({
-          STORAGE_MANIFEST: (e, t) => `${e}/storage/${t}/MANIFEST`,
-          INSTALL_DIR: (e) => `${e}/content`,
-          ROOT_PATTERN: ["**/*"],
-          ROOT_STORAGE_PATH: (e, t) => `${e}/storage/${t}/content`,
-          ROOT_ID: "sdk",
-          ROOT_PLATFORMS: {
-            macos: "macos",
-            windows: "windows",
-            linux: "linux",
-          },
+          EMBEDDED_RELEASED: a.jB(1),
+          EMBEDDED_IAP: a.jB(3),
+          APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE: a.jB(6),
+          GAME_PROFILE_DISABLED: a.jB(7),
+          CONTEXTLESS_ACTIVITY: a.jB(9),
+          SOCIAL_LAYER_INTEGRATION_LIMITED: a.jB(10),
+          CLOUD_GAMING_DEMO: a.jB(11),
+          GATEWAY_PRESENCE: a.jB(12),
+          GATEWAY_PRESENCE_LIMITED: a.jB(13),
+          GATEWAY_GUILD_MEMBERS: a.jB(14),
+          GATEWAY_GUILD_MEMBERS_LIMITED: a.jB(15),
+          EMBEDDED: a.jB(17),
+          GATEWAY_MESSAGE_CONTENT: a.jB(18),
+          GATEWAY_MESSAGE_CONTENT_LIMITED: a.jB(19),
+          EMBEDDED_FIRST_PARTY: a.jB(20),
+          APPLICATION_COMMAND_BADGE: a.jB(23),
+          SOCIAL_LAYER_INTEGRATION: a.jB(27),
+          PROMOTED: a.jB(29),
+          PARTNER: a.jB(30),
+          PARENT: a.jB(33),
+          DISABLE_RELATIONSHIPS_ACCESS: a.jB(34),
         }),
+          Object.freeze({
+            STORAGE_MANIFEST: (e, t) => `${e}/storage/${t}/MANIFEST`,
+            INSTALL_DIR: (e) => `${e}/content`,
+            ROOT_PATTERN: ["**/*"],
+            ROOT_STORAGE_PATH: (e, t) => `${e}/storage/${t}/content`,
+            ROOT_ID: "sdk",
+            ROOT_PLATFORMS: {
+              macos: "macos",
+              windows: "windows",
+              linux: "linux",
+            },
+          }),
           Object.freeze({
             ALL: null,
             GUILD_UPDATE: 1,
@@ -6212,16 +6236,16 @@
             nvidia_gdn_app: "NVIDIA Cloud Gaming Application",
             roblox: "Roblox",
           }),
-          c.Yr.USD,
-          c.Yr.CAD,
-          c.Yr.EUR,
-          c.Yr.AUD,
-          c.Yr.GBP,
-          c.Yr.PHP,
-          c.Yr.MYR,
-          c.Yr.VND,
-          c.Yr.KRW,
-          c.Yr.IDR,
+          l.Yr.USD,
+          l.Yr.CAD,
+          l.Yr.EUR,
+          l.Yr.AUD,
+          l.Yr.GBP,
+          l.Yr.PHP,
+          l.Yr.MYR,
+          l.Yr.VND,
+          l.Yr.KRW,
+          l.Yr.IDR,
           Object.freeze({
             APPLICATIONS: (e) => (null != e ? `applications/${e}` : null),
             APP_PREMIUM_BUTTON: (e) =>
@@ -6322,7 +6346,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-a6daa265e38b3895601a934f96066084c34cdfdc",
+            release: "discord_web-feee215b6037cb45b61b3747daca25e54f2ce33d",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6388,8 +6412,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "495415"),
-            _.NA("builtAt", String("1770741137145"));
+            _.NA("buildNumber", "495452"),
+            _.NA("builtAt", String("1770743520689"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -12210,8 +12234,8 @@
               }
               return i.length > 3 ? [t, r, n, i[3]] : [t, r, n, 1];
             },
-            b = /^rgb\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*\)$/,
-            M =
+            M = /^rgb\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*\)$/,
+            b =
               /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/,
             w =
               /^rgb\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/,
@@ -12227,11 +12251,11 @@
                 try {
                   return s.format.named(e);
                 } catch (e) {}
-              if ((t = e.match(b))) {
+              if ((t = e.match(M))) {
                 for (var t, r = t.slice(1, 4), n = 0; n < 3; n++) r[n] = +r[n];
                 return (r[3] = 1), r;
               }
-              if ((t = e.match(M))) {
+              if ((t = e.match(b))) {
                 for (var i = t.slice(1, 5), a = 0; a < 4; a++) i[a] = +i[a];
                 return i;
               }
@@ -12260,8 +12284,8 @@
             };
           k.test = function (e) {
             return (
-              b.test(e) ||
               M.test(e) ||
+              b.test(e) ||
               w.test(e) ||
               U.test(e) ||
               G.test(e) ||
@@ -12696,8 +12720,8 @@
             ey = 1.08883,
             eP = 0.137931034,
             ev = 0.206896552,
-            eb = 0.12841855,
-            eM = 0.008856452,
+            eM = 0.12841855,
+            eb = 0.008856452,
             ew = o.unpack,
             eU = Math.pow,
             eG = function (e) {
@@ -12706,7 +12730,7 @@
                 : eU((e + 0.055) / 1.055, 2.4);
             },
             eB = function (e) {
-              return e > eM ? eU(e, 1 / 3) : e / eb + eP;
+              return e > eb ? eU(e, 1 / 3) : e / eM + eP;
             },
             eH = function () {
               for (var e, t, r, n = [], i = arguments.length; i--; )
@@ -12741,7 +12765,7 @@
               );
             },
             eY = function (e) {
-              return e > ev ? e * e * e : eb * (e - eP);
+              return e > ev ? e * e * e : eM * (e - eP);
             },
             ex = function () {
               for (var e, t, r, n, i = [], a = arguments.length; a--; )
@@ -13312,10 +13336,10 @@
                   return "oklch";
               },
             });
-          var tb = o.type;
+          var tM = o.type;
           (d.prototype.alpha = function (e, t) {
             return (void 0 === t && (t = !1),
-            void 0 !== e && "number" === tb(e))
+            void 0 !== e && "number" === tM(e))
               ? t
                 ? ((this._rgb[3] = e), this)
                 : new d([this._rgb[0], this._rgb[1], this._rgb[2], e], "rgb")
@@ -13344,10 +13368,10 @@
               if (a > -1) return i[a];
               throw Error("unknown channel " + n + " in mode " + r);
             });
-          var tM = o.type,
+          var tb = o.type,
             tw = Math.pow;
           d.prototype.luminance = function (e) {
-            if (void 0 !== e && "number" === tM(e)) {
+            if (void 0 !== e && "number" === tb(e)) {
               if (0 === e) return new d([0, 0, 0, this._rgb[3]], "rgb");
               if (1 === e) return new d([255, 255, 255, this._rgb[3]], "rgb");
               var t = this.luminance(),
@@ -14099,9 +14123,9 @@
                         var P = rs(O[y] - g);
                         P < D && ((D = P), (C = y)), A[C]++, (R[m] = C);
                       }
-                    for (var v = Array(r), b = 0; b < r; b++) v[b] = null;
-                    for (var M = 0; M < f; M++)
-                      null === v[(T = R[M])] ? (v[T] = _[M]) : (v[T] += _[M]);
+                    for (var v = Array(r), M = 0; M < r; M++) v[M] = null;
+                    for (var b = 0; b < f; b++)
+                      null === v[(T = R[b])] ? (v[T] = _[b]) : (v[T] += _[b]);
                     for (var w = 0; w < r; w++) v[w] *= 1 / A[w];
                     N = !1;
                     for (var U = 0; U < r; U++)
@@ -14741,8 +14765,8 @@
               (P = 180 >= rT(P) ? P : D <= g ? P + 360 : P - 360),
                 (P = 2 * rl(h * O) * rR(_(P) / 2));
               var v = O - h,
-                b = 1 + (0.015 * rd(T - 50, 2)) / rl(20 + rd(T - 50, 2)),
-                M = 1 + 0.045 * L,
+                M = 1 + (0.015 * rd(T - 50, 2)) / rl(20 + rd(T - 50, 2)),
+                b = 1 + 0.045 * L,
                 w = 1 + 0.015 * L * y,
                 U = 30 * rA(-rd((C - 275) / 25, 2)),
                 G = -(2 * rl(rd(L, 7) / (rd(L, 7) + rd(25, 7)))) * rR(2 * _(U));
@@ -14751,10 +14775,10 @@
                 ru(
                   100,
                   rl(
-                    rd((u - s) / (r * b), 2) +
-                      rd(v / (n * M), 2) +
+                    rd((u - s) / (r * M), 2) +
+                      rd(v / (n * b), 2) +
                       rd(P / (i * w), 2) +
-                      (v / (n * M)) * G * (P / (i * w)),
+                      (v / (n * b)) * G * (P / (i * w)),
                   ),
                 ),
               );
@@ -15109,7 +15133,7 @@
             SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE: () => n.sy,
             SEMANTIC_ATTRIBUTE_SENTRY_SOURCE: () => n.i_,
             Scope: () => i.H,
-            WINDOW: () => M.jf,
+            WINDOW: () => b.jf,
             addBreadcrumb: () => a.Z,
             addEventProcessor: () => _.SA,
             addIntegration: () => o.Q8,
@@ -15211,7 +15235,7 @@
             withActiveSpan: () => l.hb,
             withIsolationScope: () => R.rB,
             withScope: () => R.v4,
-            zodErrorsIntegration: () => b.r,
+            zodErrorsIntegration: () => M.r,
           });
         var n = r(22462),
           i = r(282179),
@@ -15242,8 +15266,8 @@
           y = r(880654),
           P = r(999503),
           v = r(234034),
-          b = r(915717),
-          M = r(599106),
+          M = r(915717),
+          b = r(599106),
           w = r(722732),
           U = r(904074),
           G = r(759970),
@@ -16263,7 +16287,7 @@
         "use strict";
         r.d(t, {
           Bj: () => y,
-          DE: () => M,
+          DE: () => b,
           Dg: () => D,
           TD: () => g,
           WK: () => L,
@@ -16271,7 +16295,7 @@
           c4: () => h,
           ex: () => v,
           lV: () => O,
-          ws: () => b,
+          ws: () => M,
         });
         var n = r(890694),
           i = r(145080),
@@ -16624,11 +16648,11 @@
         function v() {
           return P.size;
         }
-        function b(e) {
+        function M(e) {
           let t = P.get(e);
           return t && P.delete(e), t;
         }
-        function M(e, t) {
+        function b(e, t) {
           if ((P.set(e, t), P.size > 30)) {
             let e = P.keys().next().value;
             P.delete(e);
@@ -17002,8 +17026,8 @@
                 finalTimeout: y,
                 childSpanTimeout: P,
                 markBackgroundSpan: v,
-                traceFetch: b,
-                traceXHR: M,
+                traceFetch: M,
+                traceXHR: b,
                 shouldCreateSpanForRequest: w,
                 enableHTTPTimings: U,
                 instrumentPageLoad: G,
@@ -17179,8 +17203,8 @@
                       )),
                   t && (0, i.B)(),
                   (0, h.Qb)(e, {
-                    traceFetch: b,
-                    traceXHR: M,
+                    traceFetch: M,
+                    traceXHR: b,
                     tracePropagationTargets:
                       e.getOptions().tracePropagationTargets,
                     shouldCreateSpanForRequest: w,
@@ -20447,12 +20471,12 @@ Event: ${(0, i.$X)(E)}`),
                 !R && 0 === f.size && N && ((A = "idleTimeout"), y.end(e));
               }, O));
           }
-          function b(e) {
+          function M(e) {
             T = setTimeout(() => {
               !R && N && ((A = "heartbeatFailed"), y.end(e));
             }, S);
           }
-          function M(e) {
+          function b(e) {
             (R = !0), f.clear(), h.forEach((e) => e()), (0, E.r)(D, C);
             let t = (0, c.et)(y),
               { start_timestamp: r } = t;
@@ -20498,7 +20522,7 @@ Event: ${(0, i.$X)(E)}`),
                   _ = i || (0, n.zf)(),
                   o = (0, c.cI)(_),
                   s = (0, c.xO)(y).filter((e) => e !== y);
-                if (!s.length) return M(o), Reflect.apply(e, t, [o, ...a]);
+                if (!s.length) return b(o), Reflect.apply(e, t, [o, ...a]);
                 let E = s.map((e) => (0, c.et)(e).timestamp).filter((e) => !!e),
                   l = E.length ? Math.max(...E) : void 0,
                   d = (0, c.et)(y).start_timestamp,
@@ -20506,7 +20530,7 @@ Event: ${(0, i.$X)(E)}`),
                     d ? d + L / 1e3 : 1 / 0,
                     Math.max(d || -1 / 0, Math.min(o, l || 1 / 0)),
                   );
-                return M(u), Reflect.apply(e, t, [u, ...a]);
+                return b(u), Reflect.apply(e, t, [u, ...a]);
               },
             })),
             h.push(
@@ -20519,7 +20543,7 @@ Event: ${(0, i.$X)(E)}`),
                     ((t = e.spanContext().spanId),
                     P(),
                     f.set(t, !0),
-                    b((0, n.zf)() + S / 1e3)));
+                    M((0, n.zf)() + S / 1e3)));
               }),
             ),
             h.push(
@@ -20534,7 +20558,7 @@ Event: ${(0, i.$X)(E)}`),
             ),
             h.push(
               g.on("idleSpanEnableAutoFinish", (e) => {
-                e === y && ((N = !0), v(), f.size && b());
+                e === y && ((N = !0), v(), f.size && M());
               }),
             ),
             t.disableAutoFinish || v(),
@@ -20990,9 +21014,9 @@ Event: ${(0, i.$X)(E)}`),
           let n = y(e),
             { forceTransaction: i, parentSpan: a } = e;
           return (0, o.v4)(e.scope, () =>
-            M(a)(() => {
+            b(a)(() => {
               let r = (0, o.o5)(),
-                a = b(r),
+                a = M(r),
                 _ =
                   e.onlyIfParent && !a
                     ? new R.w()
@@ -21024,9 +21048,9 @@ Event: ${(0, i.$X)(E)}`),
           let n = y(e),
             { forceTransaction: i, parentSpan: a } = e;
           return (0, o.v4)(e.scope, () =>
-            M(a)(() => {
+            b(a)(() => {
               let r = (0, o.o5)(),
-                a = b(r),
+                a = M(r),
                 _ =
                   e.onlyIfParent && !a
                     ? new R.w()
@@ -21067,7 +21091,7 @@ Event: ${(0, i.$X)(E)}`),
                 : (e) => e()
           )(() => {
             let t = (0, o.o5)(),
-              i = b(t);
+              i = M(t);
             return e.onlyIfParent && !i
               ? new R.w()
               : C({
@@ -21182,7 +21206,7 @@ Event: ${(0, i.$X)(E)}`),
             l
           );
         }
-        function b(e) {
+        function M(e) {
           let t = (0, u.f)(e);
           if (!t) return;
           let r = (0, o.KU)();
@@ -21190,7 +21214,7 @@ Event: ${(0, i.$X)(E)}`),
             ? (0, p.zU)(t)
             : t;
         }
-        function M(e) {
+        function b(e) {
           return void 0 !== e ? (t) => g(e, t) : (e) => e();
         }
       },
@@ -24709,7 +24733,7 @@ Error:`,
           var r;
           let n;
           return (
-            b(e, t),
+            M(e, t),
             R[e] ||
               ((n = {}),
               "event" === (r = e) && (n.durationThreshold = 0),
@@ -24721,7 +24745,7 @@ Error:`,
                 n,
               ),
               (R[e] = !0)),
-            M(e, t)
+            b(e, t)
           );
         }
         function m(e, t) {
@@ -24775,16 +24799,16 @@ Error:`,
         function v(e, t, r, n, i = !1) {
           let a;
           return (
-            b(e, t),
+            M(e, t),
             R[e] || ((a = r()), (R[e] = !0)),
             n && t({ metric: n }),
-            M(e, t, i ? a : void 0)
+            b(e, t, i ? a : void 0)
           );
         }
-        function b(e, t) {
+        function M(e, t) {
           (f[e] = f[e] || []), f[e].push(t);
         }
-        function M(e, t, r) {
+        function b(e, t, r) {
           return () => {
             r && r();
             let n = f[e];
@@ -25424,7 +25448,7 @@ Error:`,
           );
         }
         let v = "rgba(88, 74, 192, 1)",
-          b = {
+          M = {
             foreground: "#2b2233",
             background: "#ffffff",
             accentForeground: "white",
@@ -25436,7 +25460,7 @@ Error:`,
             outline: "1px auto var(--accent-background)",
             interactiveFilter: "brightness(95%)",
           },
-          M = {
+          b = {
             foreground: "#ebe6ef",
             background: "#29232f",
             accentForeground: "white",
@@ -25575,7 +25599,7 @@ Error:`,
 
   ${"system" !== e ? "color-scheme: only light;" : ""}
 
-  ${w("dark" === e ? { ...M, ...t } : { ...b, ...r })}
+  ${w("dark" === e ? { ...b, ...t } : { ...M, ...r })}
 }
 
 ${
@@ -25583,7 +25607,7 @@ ${
     ? `
 @media (prefers-color-scheme: dark) {
   :host {
-    ${w({ ...M, ...t })}
+    ${w({ ...b, ...t })}
   }
 }`
     : ""
@@ -26655,7 +26679,7 @@ ${
             ? ((r.__V = e()), (r.i = t), (r.__h = e), r.__V)
             : r.__;
         }
-        function eb(e, t) {
+        function eM(e, t) {
           return (
             (ef = 8),
             ev(function () {
@@ -26663,7 +26687,7 @@ ${
             }, t)
           );
         }
-        function eM() {
+        function eb() {
           for (var e; (e = eR.shift()); )
             if (e.__P && e.__H)
               try {
@@ -26715,7 +26739,7 @@ ${
                         n = setTimeout(r, 100);
                       ew && (t = requestAnimationFrame(r));
                     }
-                  )(eM)),
+                  )(eb)),
               t.__H.__.forEach(function (e) {
                 e.i && (e.__H = e.i),
                   e.__V !== eA && (e.__ = e.__V),
@@ -26781,7 +26805,7 @@ ${
         }
         let ek = {
             __proto__: null,
-            useCallback: eb,
+            useCallback: eM,
             useContext: function (e) {
               var t = ep.context[e.__c],
                 r = eD(eu++, 9);
@@ -26942,11 +26966,11 @@ ${
             [m, g] = eC(null),
             [D, y] = eC(!1),
             P = c && c.input,
-            [v, b] = eC(null),
-            M = eb((e) => {
-              b(e), y(!1);
+            [v, M] = eC(null),
+            b = eM((e) => {
+              M(e), y(!1);
             }, []),
-            w = eb(
+            w = eM(
               (e) => {
                 var t;
                 let r,
@@ -26979,7 +27003,7 @@ ${
             "form",
             {
               class: "form",
-              onSubmit: eb(
+              onSubmit: eM(
                 async (e) => {
                   try {
                     if (
@@ -27020,7 +27044,7 @@ ${
             },
             P && D
               ? q(P, {
-                  onError: M,
+                  onError: b,
                   __self: this,
                   __source: { fileName: eY, lineNumber: 146 },
                 })
@@ -27165,7 +27189,7 @@ ${
                           class: "btn btn--default",
                           type: "button",
                           onClick: () => {
-                            b(null), y((e) => !e);
+                            M(null), y((e) => !e);
                           },
                           __self: this,
                           __source: { fileName: eY, lineNumber: 202 },
@@ -27284,10 +27308,10 @@ ${
               };
             }, []),
             [a, _] = eC(null),
-            o = eb(() => {
+            o = eM(() => {
               a && (clearTimeout(a), _(null)), t();
             }, [a]),
-            s = eb(
+            s = eM(
               (e) => {
                 r.onSubmitSuccess(e),
                   _(
@@ -28643,7 +28667,7 @@ ${eQ}
               }
           return s;
         }
-        class b {
+        class M {
           reset() {
             this.pendingCanvasMutations.clear(),
               this.restoreHandlers.forEach((e) => {
@@ -29045,7 +29069,7 @@ ${eQ}
               this.pendingCanvasMutations.delete(e);
           }
         }
-        let M = {
+        let b = {
             low: {
               sampling: { canvas: 1 },
               dataURLOptions: { type: "image/webp", quality: 0.25 },
@@ -29083,7 +29107,7 @@ ${eQ}
                   enableManualSnapshot: r,
                   recordCanvas: !0,
                   getCanvasManager: (e) => {
-                    let i = new b({
+                    let i = new M({
                       ...e,
                       enableManualSnapshot: r,
                       maxCanvasSize: n,
@@ -29095,7 +29119,7 @@ ${eQ}
                     });
                     return t(i), i;
                   },
-                  ...(M[e || "medium"] || M.medium),
+                  ...(b[e || "medium"] || b.medium),
                 };
               },
               async snapshot(e) {
@@ -29128,8 +29152,8 @@ ${eQ}
           y = r(1594),
           P = r(588522),
           v = r(478681),
-          b = r(417590),
-          M = r(770250),
+          M = r(417590),
+          b = r(770250),
           w = r(630610),
           U = r(552137),
           G = r(745768),
@@ -29481,7 +29505,7 @@ ${eQ}
             }
           };
         }
-        function eb(e, t, r, n, i, a) {
+        function eM(e, t, r, n, i, a) {
           try {
             let _ = e.nodeType === e.ELEMENT_NODE ? e : e.parentElement;
             if (null === _) return !1;
@@ -29513,7 +29537,7 @@ ${eQ}
           } catch (e) {}
           return !!a;
         }
-        function eM(e) {
+        function eb(e) {
           return null == e ? "" : e.toLowerCase();
         }
         function ew(e, t) {
@@ -29545,9 +29569,9 @@ ${eQ}
               onStylesheetLoad: y,
               stylesheetLoadTimeout: P = 5e3,
               keepIframeSrcFn: v = () => !1,
-              newlyAddedElement: b = !1,
+              newlyAddedElement: M = !1,
             } = t,
-            { preserveWhiteSpace: M = !0 } = t,
+            { preserveWhiteSpace: b = !0 } = t,
             w = (function (e, t) {
               let {
                   doc: r,
@@ -29673,7 +29697,7 @@ ${eQ}
                         r = ec(e, eo(g), t),
                         n = e.checked;
                       if ("submit" !== t && "button" !== t && r) {
-                        let n = eb(
+                        let n = eM(
                           e,
                           h,
                           L,
@@ -29850,7 +29874,7 @@ ${eQ}
                       d = eL(d, eD());
                     }
                     p && (d = "SCRIPT_PLACEHOLDER");
-                    let T = eb(e, n, a, i, _, r);
+                    let T = eM(e, n, a, i, _, r);
                     return (
                       u ||
                         p ||
@@ -29867,7 +29891,7 @@ ${eQ}
                       "OPTION" === l &&
                         d &&
                         (d = ea({
-                          isMasked: eb(
+                          isMasked: eM(
                             e,
                             n,
                             a,
@@ -29928,7 +29952,7 @@ ${eQ}
               inlineImages: S,
               recordCanvas: m,
               keepIframeSrcFn: v,
-              newlyAddedElement: b,
+              newlyAddedElement: M,
             });
           if (!w) return console.warn(e, "not serialized"), null;
           r = _.hasNode(e)
@@ -29954,33 +29978,33 @@ ${eQ}
                       (("link" === e.tagName &&
                         "shortcut icon" === e.attributes.rel) ||
                         ("meta" === e.tagName &&
-                          (eM(e.attributes.name).match(
+                          (eb(e.attributes.name).match(
                             /^msapplication-tile(image|color)$/,
                           ) ||
-                            "application-name" === eM(e.attributes.name) ||
-                            "icon" === eM(e.attributes.rel) ||
-                            "apple-touch-icon" === eM(e.attributes.rel) ||
-                            "shortcut icon" === eM(e.attributes.rel))))
+                            "application-name" === eb(e.attributes.name) ||
+                            "icon" === eb(e.attributes.rel) ||
+                            "apple-touch-icon" === eb(e.attributes.rel) ||
+                            "shortcut icon" === eb(e.attributes.rel))))
                     )
                       return !0;
                     else if ("meta" === e.tagName) {
                       if (
                         t.headMetaDescKeywords &&
-                        eM(e.attributes.name).match(/^description|keywords$/)
+                        eb(e.attributes.name).match(/^description|keywords$/)
                       )
                         return !0;
                       else if (
                         t.headMetaSocial &&
-                        (eM(e.attributes.property).match(/^(og|twitter|fb):/) ||
-                          eM(e.attributes.name).match(/^(og|twitter):/) ||
-                          "pinterest" === eM(e.attributes.name))
+                        (eb(e.attributes.property).match(/^(og|twitter|fb):/) ||
+                          eb(e.attributes.name).match(/^(og|twitter):/) ||
+                          "pinterest" === eb(e.attributes.name))
                       )
                         return !0;
                       else if (
                         t.headMetaRobots &&
-                        ("robots" === eM(e.attributes.name) ||
-                          "googlebot" === eM(e.attributes.name) ||
-                          "bingbot" === eM(e.attributes.name))
+                        ("robots" === eb(e.attributes.name) ||
+                          "googlebot" === eb(e.attributes.name) ||
+                          "bingbot" === eb(e.attributes.name))
                       )
                         return !0;
                       else if (
@@ -29990,32 +30014,32 @@ ${eQ}
                         return !0;
                       else if (
                         t.headMetaAuthorship &&
-                        ("author" === eM(e.attributes.name) ||
-                          "generator" === eM(e.attributes.name) ||
-                          "framework" === eM(e.attributes.name) ||
-                          "publisher" === eM(e.attributes.name) ||
-                          "progid" === eM(e.attributes.name) ||
-                          eM(e.attributes.property).match(/^article:/) ||
-                          eM(e.attributes.property).match(/^product:/))
+                        ("author" === eb(e.attributes.name) ||
+                          "generator" === eb(e.attributes.name) ||
+                          "framework" === eb(e.attributes.name) ||
+                          "publisher" === eb(e.attributes.name) ||
+                          "progid" === eb(e.attributes.name) ||
+                          eb(e.attributes.property).match(/^article:/) ||
+                          eb(e.attributes.property).match(/^product:/))
                       )
                         return !0;
                       else if (
                         t.headMetaVerification &&
-                        ("google-site-verification" === eM(e.attributes.name) ||
-                          "yandex-verification" === eM(e.attributes.name) ||
-                          "csrf-token" === eM(e.attributes.name) ||
-                          "p:domain_verify" === eM(e.attributes.name) ||
-                          "verify-v1" === eM(e.attributes.name) ||
-                          "verification" === eM(e.attributes.name) ||
+                        ("google-site-verification" === eb(e.attributes.name) ||
+                          "yandex-verification" === eb(e.attributes.name) ||
+                          "csrf-token" === eb(e.attributes.name) ||
+                          "p:domain_verify" === eb(e.attributes.name) ||
+                          "verify-v1" === eb(e.attributes.name) ||
+                          "verification" === eb(e.attributes.name) ||
                           "shopify-checkout-api-token" ===
-                            eM(e.attributes.name))
+                            eb(e.attributes.name))
                       )
                         return !0;
                     }
                   }
                   return !1;
                 })(w, O) &&
-                (M ||
+                (b ||
                   w.type !== R.Text ||
                   w.isStyle ||
                   w.textContent.replace(/^\s+|\s+$/gm, "").length)
@@ -30034,7 +30058,7 @@ ${eQ}
             O.headWhitespace &&
               U.type === R.Element &&
               "head" === U.tagName &&
-              (M = !1);
+              (b = !1);
             let t = {
               doc: a,
               mirror: _,
@@ -30056,7 +30080,7 @@ ${eQ}
               dataURLOptions: L,
               inlineImages: S,
               recordCanvas: m,
-              preserveWhiteSpace: M,
+              preserveWhiteSpace: b,
               onSerialize: g,
               onIframeLoad: D,
               iframeLoadTimeout: C,
@@ -30131,7 +30155,7 @@ ${eQ}
                       dataURLOptions: L,
                       inlineImages: S,
                       recordCanvas: m,
-                      preserveWhiteSpace: M,
+                      preserveWhiteSpace: b,
                       onSerialize: g,
                       onIframeLoad: D,
                       iframeLoadTimeout: C,
@@ -30191,7 +30215,7 @@ ${eQ}
                       dataURLOptions: L,
                       inlineImages: S,
                       recordCanvas: m,
-                      preserveWhiteSpace: M,
+                      preserveWhiteSpace: b,
                       onSerialize: g,
                       onIframeLoad: D,
                       iframeLoadTimeout: C,
@@ -30832,7 +30856,7 @@ ${eQ}
                         t === e.oldValue ||
                         this.texts.push({
                           value:
-                            eb(
+                            eM(
                               e.target,
                               this.maskTextClass,
                               this.maskTextSelector,
@@ -30862,7 +30886,7 @@ ${eQ}
                           type: r,
                         });
                         n = ea({
-                          isMasked: eb(
+                          isMasked: eM(
                             e.target,
                             this.maskTextClass,
                             this.maskTextSelector,
@@ -31502,7 +31526,7 @@ ${eQ}
                   N = ec(R, T, A),
                   h = !1,
                   O = ei({ maskInputOptions: s, tagName: T, type: A }),
-                  L = eb(r, d, p, u, I, O);
+                  L = eM(r, d, p, u, I, O);
                 ("radio" === A || "checkbox" === A) && (h = r.checked),
                   (N = ea({
                     isMasked: L,
@@ -32520,8 +32544,8 @@ ${eQ}
               dataURLOptions: y = {},
               mousemoveWait: P,
               recordDOM: v = !0,
-              recordCanvas: b = !1,
-              recordCrossOriginIframes: M = !1,
+              recordCanvas: M = !1,
+              recordCrossOriginIframes: b = !1,
               recordAfter: w = "DOMContentLoaded" === e.recordAfter
                 ? e.recordAfter
                 : "load",
@@ -32536,7 +32560,7 @@ ${eQ}
               getCanvasManager: x,
             } = e;
           a = W;
-          let F = !M || window.parent === window,
+          let F = !b || window.parent === window,
             V = !1;
           if (!F)
             try {
@@ -32678,7 +32702,7 @@ ${eQ}
                     mirror: tD,
                     mutationCb: q,
                     stylesheetManager: Z,
-                    recordCrossOriginIframes: M,
+                    recordCrossOriginIframes: b,
                     wrappedEmit: _,
                   });
           for (let e of H || [])
@@ -32705,7 +32729,7 @@ ${eQ}
                   type: e5.IncrementalSnapshot,
                   data: { source: e4.CanvasMutation, ...e },
                 }),
-              recordCanvas: b,
+              recordCanvas: M,
               blockClass: s,
               blockSelector: E,
               unblockSelector: c,
@@ -32737,7 +32761,7 @@ ${eQ}
                       maskAttributeFn: L,
                       maskTextFn: m,
                       maskInputFn: S,
-                      recordCanvas: b,
+                      recordCanvas: M,
                       inlineImages: B,
                       sampling: C,
                       slimDOMOptions: j,
@@ -32877,7 +32901,7 @@ ${eQ}
                 maskTextFn: m,
                 slimDOM: j,
                 dataURLOptions: y,
-                recordCanvas: b,
+                recordCanvas: M,
                 inlineImages: B,
                 onSerialize: (e) => {
                   ez(e, tD) && ee.addIframe(e),
@@ -32981,7 +33005,7 @@ ${eQ}
                     inlineStylesheet: R,
                     sampling: C,
                     recordDOM: v,
-                    recordCanvas: b,
+                    recordCanvas: M,
                     inlineImages: B,
                     userTriggeredOnInput: U,
                     collectFonts: G,
@@ -33071,7 +33095,7 @@ ${eQ}
         let ty = "u" < typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__,
           tP = ["info", "warn", "error", "log"],
           tv = "[Replay] ";
-        function tb(e, t = "info") {
+        function tM(e, t = "info") {
           (0, O.Z)(
             {
               category: "console",
@@ -33082,7 +33106,7 @@ ${eQ}
             { level: t },
           );
         }
-        let tM =
+        let tb =
           ((E = !1),
           (c = !1),
           (l = {
@@ -33095,16 +33119,16 @@ ${eQ}
           ty
             ? (tP.forEach((e) => {
                 l[e] = (...t) => {
-                  v.vF[e](tv, ...t), c && tb(t.join(""), (0, b.t)(e));
+                  v.vF[e](tv, ...t), c && tM(t.join(""), (0, M.t)(e));
                 };
               }),
               (l.exception = (e, ...t) => {
                 t.length && l.error && l.error(...t),
                   v.vF.error(tv, e),
-                  E ? (0, L.Cp)(e) : c && tb(e, "error");
+                  E ? (0, L.Cp)(e) : c && tM(e, "error");
               }),
               (l.infoTick = (...e) => {
-                v.vF.info(tv, ...e), c && setTimeout(() => tb(e[0]), 0);
+                v.vF.info(tv, ...e), c && setTimeout(() => tM(e[0]), 0);
               }))
             : tP.forEach((e) => {
                 l[e] = () => void 0;
@@ -33126,7 +33150,7 @@ ${eQ}
                 e.throttledAddEvent({
                   type: e5.Custom,
                   timestamp: 1e3 * (t.timestamp || 0),
-                  data: { tag: "breadcrumb", payload: (0, M.S8)(t, 10, 1e3) },
+                  data: { tag: "breadcrumb", payload: (0, b.S8)(t, 10, 1e3) },
                 }),
                 "console" === t.category
               ),
@@ -33599,7 +33623,7 @@ ${eQ}
             );
           }
           destroy() {
-            ty && tM.info("Destroying compression worker"),
+            ty && tb.info("Destroying compression worker"),
               this._worker.terminate();
           }
           postMessage(e, t) {
@@ -33610,7 +33634,7 @@ ${eQ}
                   if (
                     (this._worker.removeEventListener("message", a), !t.success)
                   ) {
-                    ty && tM.error("Error in compression worker: ", t.response),
+                    ty && tb.error("Error in compression worker: ", t.response),
                       i(Error("Error in compression worker"));
                     return;
                   }
@@ -33662,7 +33686,7 @@ ${eQ}
               (this.hasCheckout = !1),
               this._worker.postMessage("clear").then(null, (e) => {
                 ty &&
-                  tM.exception(
+                  tb.exception(
                     e,
                     'Sending "clear" message to worker failed',
                     e,
@@ -33723,7 +33747,7 @@ ${eQ}
               await this._compression.ensureReady();
             } catch (e) {
               ty &&
-                tM.exception(
+                tb.exception(
                   e,
                   "Failed to load the compression worker, falling back to simple buffer",
                 );
@@ -33741,7 +33765,7 @@ ${eQ}
               await Promise.all(r);
             } catch (e) {
               ty &&
-                tM.exception(e, "Failed to add events when switching buffers.");
+                tb.exception(e, "Failed to add events when switching buffers.");
             }
           }
         }
@@ -33817,7 +33841,7 @@ ${eQ}
                 let e = X.sessionStorage.getItem(z);
                 if (!e) return null;
                 let t = JSON.parse(e);
-                return ty && tM.infoTick("Loading existing session"), t9(t);
+                return ty && tb.infoTick("Loading existing session"), t9(t);
               } catch (e) {
                 return null;
               }
@@ -33825,12 +33849,12 @@ ${eQ}
           return i
             ? ri(i, { sessionIdleExpire: e, maxReplayDuration: t })
               ? (ty &&
-                  tM.infoTick(
+                  tb.infoTick(
                     "Session in sessionStorage is expired, creating new one...",
                   ),
                 rt(n, { previousSessionId: i.id }))
               : i
-            : (ty && tM.infoTick("Creating new session"),
+            : (ty && tb.infoTick("Creating new session"),
               rt(n, { previousSessionId: r }));
         }
         function r_(e, t, r) {
@@ -33849,7 +33873,7 @@ ${eQ}
                 } catch (e) {
                   return (
                     ty &&
-                      tM.exception(
+                      tb.exception(
                         e,
                         "An error occured in the `beforeAddRecordingEvent` callback, skipping the event...",
                       ),
@@ -33877,7 +33901,7 @@ ${eQ}
               e.getContext().initialTimestamp + e.getOptions().maxReplayDuration
             ) ||
               (ty &&
-                tM.infoTick(
+                tb.infoTick(
                   `Skipping event with timestamp ${r} because it is after maxReplayDuration`,
                 ),
               !1))
@@ -33948,12 +33972,12 @@ ${eQ}
             if (!e) return [void 0];
           } catch (t) {
             return (
-              ty && tM.exception(t, "Failed to serialize body", e),
+              ty && tb.exception(t, "Failed to serialize body", e),
               [void 0, "BODY_PARSE_ERROR"]
             );
           }
           return (
-            ty && tM.info("Skipping network body because of body type", e),
+            ty && tb.info("Skipping network body because of body type", e),
             [void 0, "UNPARSEABLE_BODY_TYPE"]
           );
         }
@@ -34051,7 +34075,7 @@ ${eQ}
               i = rR("resource.fetch", n);
             ru(r.replay, i);
           } catch (e) {
-            ty && tM.exception(e, "Failed to capture fetch breadcrumb");
+            ty && tb.exception(e, "Failed to capture fetch breadcrumb");
           }
         }
         async function rm(e, t, r) {
@@ -34124,7 +34148,7 @@ ${eQ}
                 return rN(i, a, void 0);
               } catch (e) {
                 return (
-                  ty && tM.exception(e, "Failed to serialize response body"),
+                  ty && tb.exception(e, "Failed to serialize response body"),
                   rN(i, r, void 0)
                 );
               }
@@ -34141,7 +34165,7 @@ ${eQ}
             try {
               return e.clone();
             } catch (e) {
-              ty && tM.exception(e, "Failed to clone response body");
+              ty && tb.exception(e, "Failed to clone response body");
             }
           })(e);
           if (!t) return [void 0, "BODY_PARSE_ERROR"];
@@ -34164,7 +34188,7 @@ ${eQ}
             ];
           } catch (e) {
             return (
-              ty && tM.exception(e, "Failed to get text body from response"),
+              ty && tb.exception(e, "Failed to get text body from response"),
               [void 0, "BODY_PARSE_ERROR"]
             );
           }
@@ -34195,7 +34219,7 @@ ${eQ}
         async function rv(e) {
           return await e.text();
         }
-        async function rb(e, t, r) {
+        async function rM(e, t, r) {
           try {
             let n = (function (e, t, r) {
                 let n,
@@ -34263,13 +34287,13 @@ ${eQ}
                           } catch (e) {
                             return (
                               ty &&
-                                tM.exception(e, "Failed to serialize body", r),
+                                tb.exception(e, "Failed to serialize body", r),
                               [void 0, "BODY_PARSE_ERROR"]
                             );
                           }
                           return (
                             ty &&
-                              tM.info(
+                              tb.info(
                                 "Skipping network body because of body type",
                                 r,
                               ),
@@ -34280,7 +34304,7 @@ ${eQ}
                         }
                         return (
                           ty &&
-                            tM.warn("Failed to get xhr response body", ...t),
+                            tb.warn("Failed to get xhr response body", ...t),
                           [void 0]
                         );
                       })(s)
@@ -34300,10 +34324,10 @@ ${eQ}
               i = rR("resource.xhr", n);
             ru(r.replay, i);
           } catch (e) {
-            ty && tM.exception(e, "Failed to capture xhr breadcrumb");
+            ty && tb.exception(e, "Failed to capture xhr breadcrumb");
           }
         }
-        async function rM(e) {
+        async function rb(e) {
           try {
             return Promise.all(
               rd(e, [
@@ -34403,7 +34427,7 @@ ${eQ}
             return (
               u.recordDroppedEvent("event_processor", "replay", f),
               ty &&
-                tM.info(
+                tb.info(
                   "An event processor returned `null`, will not send event.",
                 ),
               (0, K.XW)({})
@@ -34584,7 +34608,7 @@ ${eQ}
                 : void 0;
             if ((i && (this.clickDetector = new tW(this, i)), ty)) {
               const t = e._experiments;
-              tM.setConfig({
+              tb.setConfig({
                 captureExceptions: !!t.captureExceptions,
                 traceInternals: !!t.traceInternals,
               });
@@ -34606,7 +34630,7 @@ ${eQ}
             return this._options;
           }
           handleException(e) {
-            ty && tM.exception(e),
+            ty && tb.exception(e),
               this._options.onError && this._options.onError(e);
           }
           initializeSampling(e) {
@@ -34615,7 +34639,7 @@ ${eQ}
             if (((this._requiresManualStart = n), !n)) {
               if ((this._initializeSessionForSampling(e), !this.session)) {
                 ty &&
-                  tM.exception(
+                  tb.exception(
                     Error("Unable to initialize and create session"),
                   );
                 return;
@@ -34627,23 +34651,23 @@ ${eQ}
                     ? "buffer"
                     : "session"),
                 ty &&
-                  tM.infoTick(`Starting replay in ${this.recordingMode} mode`),
+                  tb.infoTick(`Starting replay in ${this.recordingMode} mode`),
                 this._initializeRecording());
             }
           }
           start() {
             if (this._isEnabled && "session" === this.recordingMode) {
-              ty && tM.info("Recording is already in progress");
+              ty && tb.info("Recording is already in progress");
               return;
             }
             if (this._isEnabled && "buffer" === this.recordingMode) {
               ty &&
-                tM.info(
+                tb.info(
                   "Buffering is in progress, call `flush()` to save the replay",
                 );
               return;
             }
-            ty && tM.infoTick("Starting replay in session mode"),
+            ty && tb.infoTick("Starting replay in session mode"),
               this._updateUserActivity();
             let e = ra(
               {
@@ -34661,12 +34685,12 @@ ${eQ}
           startBuffering() {
             if (this._isEnabled) {
               ty &&
-                tM.info(
+                tb.info(
                   "Buffering is in progress, call `flush()` to save the replay",
                 );
               return;
             }
-            ty && tM.infoTick("Starting replay in buffer mode");
+            ty && tb.infoTick("Starting replay in buffer mode");
             let e = ra(
               {
                 sessionIdleExpire: this.timeouts.sessionIdleExpire,
@@ -34703,7 +34727,7 @@ ${eQ}
                   (r, n) => {
                     if (!e.checkAndHandleExpiredSession()) {
                       ty &&
-                        tM.warn("Received replay event after session expired.");
+                        tb.warn("Received replay event after session expired.");
                       return;
                     }
                     let i = n || !t;
@@ -34786,7 +34810,7 @@ ${eQ}
                           let r = e.eventBuffer.getEarliestTimestamp();
                           r &&
                             (ty &&
-                              tM.info(
+                              tb.info(
                                 `Updating session start time to earliest event in buffer to ${new Date(r)}`,
                               ),
                             (t.started = r),
@@ -34825,7 +34849,7 @@ ${eQ}
               this._isEnabled = !1;
               try {
                 ty &&
-                  tM.info(`Stopping Replay${t ? ` triggered by ${t}` : ""}`),
+                  tb.info(`Stopping Replay${t ? ` triggered by ${t}` : ""}`),
                   this._removeListeners(),
                   this.stopRecording(),
                   this._debouncedFlush.cancel(),
@@ -34848,19 +34872,19 @@ ${eQ}
             !this._isPaused &&
               ((this._isPaused = !0),
               this.stopRecording(),
-              ty && tM.info("Pausing replay"));
+              ty && tb.info("Pausing replay"));
           }
           resume() {
             this._isPaused &&
               this._checkSession() &&
               ((this._isPaused = !1),
               this.startRecording(),
-              ty && tM.info("Resuming replay"));
+              ty && tb.info("Resuming replay"));
           }
           async sendBufferedReplayOrFlush({ continueRecording: e = !0 } = {}) {
             if ("session" === this.recordingMode) return this.flushImmediate();
             let t = Date.now();
-            ty && tM.info("Converting buffer to session"),
+            ty && tb.info("Converting buffer to session"),
               await this.flushImmediate();
             let r = this.stopRecording();
             e &&
@@ -34975,19 +34999,19 @@ ${eQ}
                         })();
                       if (!t) return;
                       ty &&
-                        tM.info(
+                        tb.info(
                           `Using compression worker${e ? ` from ${e}` : ""}`,
                         );
                       let r = new Worker(t);
                       return new t6(r);
                     } catch (e) {
                       ty &&
-                        tM.exception(e, "Failed to create compression worker");
+                        tb.exception(e, "Failed to create compression worker");
                     }
                   })(t);
                   if (e) return e;
                 }
-                return ty && tM.info("Using simple buffer"), new t3();
+                return ty && tb.info("Using simple buffer"), new t3();
               })({
                 useCompression: this._options.useCompression,
                 workerUrl: this._options.workerUrl,
@@ -35128,7 +35152,7 @@ ${eQ}
                                               : e;
                                           if ("object" == typeof e)
                                             try {
-                                              let t = (0, M.S8)(e, 7);
+                                              let t = (0, b.S8)(e, 7);
                                               if (
                                                 JSON.stringify(t).length > 5e3
                                               )
@@ -35218,7 +35242,7 @@ ${eQ}
                                         void 0 !== a &&
                                           (e.data.response_body_size = a);
                                     })(t, r),
-                                    rb(t, r, e)),
+                                    rM(t, r, e)),
                                   (a = t),
                                   "fetch" === a.category &&
                                     (_ = r) &&
@@ -35237,7 +35261,7 @@ ${eQ}
                                     rS(t, r, e));
                               } catch (e) {
                                 ty &&
-                                  tM.exception(
+                                  tb.exception(
                                     e,
                                     "Error when enriching network breadcrumb",
                                   );
@@ -35285,7 +35309,7 @@ ${eQ}
                                     !e.getOptions()._experiments
                                       .captureExceptions
                                   ? (ty &&
-                                      tM.log(
+                                      tb.log(
                                         "Ignoring error from rrweb internals",
                                         t,
                                       ),
@@ -35514,7 +35538,7 @@ ${eQ}
             if (this.session) {
               if (!this.checkAndHandleExpiredSession()) {
                 ty &&
-                  tM.info(
+                  tb.info(
                     "Document has become active, but session has expired",
                   );
                 return;
@@ -35575,7 +35599,7 @@ ${eQ}
           async _runFlush() {
             let e = this.getSessionId();
             if (!this.session || !this.eventBuffer || !e) {
-              ty && tM.error("No session or eventBuffer found to flush.");
+              ty && tb.error("No session or eventBuffer found to flush.");
               return;
             }
             if (
@@ -35583,7 +35607,7 @@ ${eQ}
               this.eventBuffer && this.eventBuffer.hasEvents)
             ) {
               if (
-                (await rM(this), this.eventBuffer) &&
+                (await rb(this), this.eventBuffer) &&
                 e === this.getSessionId()
               )
                 try {
@@ -35623,7 +35647,7 @@ ${eQ}
               if (!this._isEnabled && !e) return;
               if (!this.checkAndHandleExpiredSession()) {
                 ty &&
-                  tM.error(
+                  tb.error(
                     "Attempting to finish replay event after session expired.",
                   );
                 return;
@@ -35636,7 +35660,7 @@ ${eQ}
                 i = r > this._options.maxReplayDuration + 5e3;
               if (n || i) {
                 ty &&
-                  tM.info(
+                  tb.info(
                     `Session duration (${Math.floor(r / 1e3)}s) is too ${n ? "short" : "long"}, not sending replay.`,
                   ),
                   n && this._debouncedFlush();
@@ -35647,7 +35671,7 @@ ${eQ}
                 0 === this.session.segmentId &&
                 !a.hasCheckout &&
                 ty &&
-                tM.info("Flushing initial segment without checkout.");
+                tb.info("Flushing initial segment without checkout.");
               let _ = !!this._flushLock;
               this._flushLock || (this._flushLock = this._runFlush());
               try {
@@ -35965,4 +35989,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.72337006e555495a.js.map
+//# sourceMappingURL=sentry.3b1c8579d26ca9ec.js.map
