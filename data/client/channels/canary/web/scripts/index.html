@@ -34,21 +34,21 @@
     <!-- section:title -->
     <title>Discord</title>
     <!-- endsection -->
-    <script nonce="MjI1LDgyLDIzOCwxMDIsMjEsMjQ5LDE0MSwyMzE=">
+    <script nonce="MTMxLDE5NSwyMzcsMTg4LDE2NCwyMjIsMTA1LDY=">
       window.GLOBAL_ENV = {
         NODE_ENV: "production",
-        BUILT_AT: "1770697880688",
+        BUILT_AT: "1770703274180",
         HTML_TIMESTAMP: Date.now(),
-        BUILD_NUMBER: "495326",
+        BUILD_NUMBER: "495333",
         PROJECT_ENV: "production",
         RELEASE_CHANNEL: "canary",
-        VERSION_HASH: "360ecdee45e01437b912f2bc35cfb2364f70d33b",
+        VERSION_HASH: "82e1c4d421506b03cb690c0d567bf45f8b25a35f",
         PRIMARY_DOMAIN: "discord.com",
         SENTRY_TAGS: {
-          buildId: "360ecdee45e01437b912f2bc35cfb2364f70d33b",
+          buildId: "82e1c4d421506b03cb690c0d567bf45f8b25a35f",
           buildType: "normal",
         },
-        SENTRY_RELEASE: "discord_web-360ecdee45e01437b912f2bc35cfb2364f70d33b",
+        SENTRY_RELEASE: "discord_web-82e1c4d421506b03cb690c0d567bf45f8b25a35f",
         PUBLIC_PATH: "/assets/",
         LOCATION: "history",
         API_VERSION: 9,
@@ -83,15 +83,15 @@
         DEV_SESSION_KEY: "undefined",
       };
     </script>
-    <script nonce="MjI1LDgyLDIzOCwxMDIsMjEsMjQ5LDE0MSwyMzE=">
+    <script nonce="MTMxLDE5NSwyMzcsMTg4LDE2NCwyMjIsMTA1LDY=">
       window.__OVERLAY__ = /overlay/.test(location.pathname);
       window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname);
     </script>
-    <link as="script" href="/assets/web.4b79cb81858b1326.js" rel="preload" />
-    <link as="script" href="/assets/sentry.3c08bc57e4e3bb07.js" rel="preload" />
+    <link as="script" href="/assets/web.bbce0dfc1ff19e0b.js" rel="preload" />
+    <link as="script" href="/assets/sentry.311fa6fe1fc0cc7f.js" rel="preload" />
     <link
       as="script"
-      href="/assets/fast-connect.352e4e469f3dbeea.js"
+      href="/assets/fast-connect.a54771d5b0382c9c.js"
       rel="preload"
     />
     <link
@@ -100,7 +100,7 @@
       rel="preload"
     />
     <link href="/assets/favicon.ico" rel="icon" />
-    <script nonce="MjI1LDgyLDIzOCwxMDIsMjEsMjQ5LDE0MSwyMzE=">
+    <script nonce="MTMxLDE5NSwyMzcsMTg4LDE2NCwyMjIsMTA1LDY=">
       !(function () {
         if (null != window.WebSocket) {
           var n = function (n) {
@@ -163,13 +163,50 @@
       defer
       src="/assets/libdiscore-wasm-fetch.684eb44f2f935120.js"
     ></script>
-    <script defer src="/assets/fast-connect.352e4e469f3dbeea.js"></script>
-    <script defer src="/assets/sentry.3c08bc57e4e3bb07.js"></script>
-    <script defer src="/assets/web.4b79cb81858b1326.js"></script>
+    <script defer src="/assets/fast-connect.a54771d5b0382c9c.js"></script>
+    <script defer src="/assets/sentry.311fa6fe1fc0cc7f.js"></script>
+    <script defer src="/assets/web.bbce0dfc1ff19e0b.js"></script>
     <link href="/assets/web.6a350858eb1ccad4.css" rel="stylesheet" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="app-mount"></div>
+
+    <script nonce="MTMxLDE5NSwyMzcsMTg4LDE2NCwyMjIsMTA1LDY=">
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.nonce = "MTMxLDE5NSwyMzcsMTg4LDE2NCwyMjIsMTA1LDY=";
+            d.innerHTML =
+              "window.__CF$cv$params={r:'9cb999db7eaf104e',t:'MTc3MDcwNTQ3OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='MTMxLDE5NSwyMzcsMTg4LDE2NCwyMjIsMTA1LDY=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
   </body>
 </html>
