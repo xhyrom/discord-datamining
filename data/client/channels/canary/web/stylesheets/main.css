@@ -43237,10 +43237,6 @@ div.mobilePushContainer__3d3b0 {
   justify-content: center;
   position: relative;
 }
-.adjustedGiftMainAnimation_d54fab {
-  height: 230px;
-  margin-inline-start: -20px;
-}
 .soundEmojiContainer_d54fab {
   bottom: 16px;
   display: flex;
@@ -43272,9 +43268,6 @@ div.mobilePushContainer__3d3b0 {
   gap: 9px;
   margin: 25px auto auto;
   max-width: 85%;
-}
-.adjustedGiftBoxOptionContainer_d54fab {
-  margin-inline-start: 15px;
 }
 .planOption_b13085 {
   align-items: center;
@@ -43406,9 +43399,6 @@ div.mobilePushContainer__3d3b0 {
   justify-content: center;
   margin-inline-end: 30px;
 }
-.bodyColumnLeft_d947e6 {
-  margin-inline: var(--space-24) 60px;
-}
 .bodyColumnRight_d947e6 {
   margin-inline-end: 10px;
 }
@@ -43493,9 +43483,6 @@ div.mobilePushContainer__3d3b0 {
 }
 .customGiftMessage_d947e6.customGiftMessage_d947e6 {
   background-color: var(--background-base-lowest);
-}
-.selectGiftTitle_d947e6 {
-  margin-top: 16px;
 }
 .compactSendGiftToUser_d947e6 {
   margin: 16px 0;
@@ -44345,41 +44332,6 @@ div.modalOverrideBody__34eac {
 .selectGiftTitle_bf1b4a {
   margin-bottom: 16px;
   margin-top: 24px;
-}
-.recommendedGiftPreview_bf1b4a {
-  cursor: pointer;
-  margin-bottom: 12px;
-}
-.navigateToShopButton_bf1b4a {
-  align-items: center;
-  background: var(--background-base-low);
-  border: 1px solid var(--border-muted);
-  border-radius: var(--radius-xs);
-  cursor: pointer;
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  padding: 12px 16px;
-}
-.navigateToShopBody_bf1b4a {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-.navigateToShopTextWrapper_bf1b4a {
-  display: flex;
-  flex-direction: column;
-}
-.shopIcon_bf1b4a {
-  align-items: center;
-  background-color: var(--interactive-background-hover);
-  border-radius: var(--radius-round);
-  display: flex;
-  flex-shrink: 0;
-  height: 42px;
-  justify-content: center;
-  width: 42px;
 }
 .offerNoticeContainerShared__005bd {
   background: linear-gradient(
@@ -74432,4 +74384,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.6d177e2f083dd0bc.css.map*/
+/*# sourceMappingURL=web.7346c975ae90b72e.css.map*/
