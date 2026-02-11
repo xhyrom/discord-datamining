@@ -57322,6 +57322,27 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--primary-430);
   --channels-default: var(--neutral-28);
   --channeltextarea-background: var(--primary-560);
+  --chart-brand: var(--blurple-45);
+  --chart-categorical-1: var(--blue-new-45);
+  --chart-categorical-10: var(--yellow-new-60);
+  --chart-categorical-2: var(--orange-new-45);
+  --chart-categorical-3: var(--pink-50);
+  --chart-categorical-4: var(--teal-new-45);
+  --chart-categorical-5: var(--green-new-45);
+  --chart-categorical-6: var(--pink-35);
+  --chart-categorical-7: var(--yellow-new-50);
+  --chart-categorical-8: var(--red-new-40);
+  --chart-categorical-9: var(--blurple-45);
+  --chart-mono-1: var(--blue-new-15);
+  --chart-mono-2: var(--blue-new-25);
+  --chart-mono-3: var(--blue-new-35);
+  --chart-mono-4: var(--blue-new-45);
+  --chart-mono-5: var(--blue-new-50);
+  --chart-mono-6: var(--blue-new-60);
+  --chart-mono-7: var(--blue-new-65);
+  --chart-negative: var(--red-new-40);
+  --chart-neutral: var(--neutral-40);
+  --chart-positive: var(--green-new-45);
   --chat-background: var(--primary-600);
   --chat-background-default: var(--neutral-64);
   --chat-border: var(--primary-700);
@@ -58123,6 +58144,132 @@ html.disable-forced-colors * {
     --channeltextarea-background: color-mix(
       in oklab,
       var(--primary-560) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-brand: color-mix(
+      in oklab,
+      var(--blurple-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-1: color-mix(
+      in oklab,
+      var(--blue-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-10: color-mix(
+      in oklab,
+      var(--yellow-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-2: color-mix(
+      in oklab,
+      var(--orange-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-3: color-mix(
+      in oklab,
+      var(--pink-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-4: color-mix(
+      in oklab,
+      var(--teal-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-5: color-mix(
+      in oklab,
+      var(--green-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-6: color-mix(
+      in oklab,
+      var(--pink-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-7: color-mix(
+      in oklab,
+      var(--yellow-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-8: color-mix(
+      in oklab,
+      var(--red-new-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-9: color-mix(
+      in oklab,
+      var(--blurple-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-1: color-mix(
+      in oklab,
+      var(--blue-new-15) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2: color-mix(
+      in oklab,
+      var(--blue-new-25) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-3: color-mix(
+      in oklab,
+      var(--blue-new-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4: color-mix(
+      in oklab,
+      var(--blue-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-5: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-6: color-mix(
+      in oklab,
+      var(--blue-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7: color-mix(
+      in oklab,
+      var(--blue-new-65) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-negative: color-mix(
+      in oklab,
+      var(--red-new-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-neutral: color-mix(
+      in oklab,
+      var(--neutral-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-positive: color-mix(
+      in oklab,
+      var(--green-new-45) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -59342,6 +59489,27 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--primary-400);
   --channels-default: var(--neutral-43);
   --channeltextarea-background: var(--primary-160);
+  --chart-brand: var(--blurple-50);
+  --chart-categorical-1: var(--blue-new-50);
+  --chart-categorical-10: var(--yellow-new-60);
+  --chart-categorical-2: var(--orange-new-50);
+  --chart-categorical-3: var(--pink-55);
+  --chart-categorical-4: var(--teal-new-50);
+  --chart-categorical-5: var(--green-new-50);
+  --chart-categorical-6: var(--pink-55);
+  --chart-categorical-7: var(--yellow-new-60);
+  --chart-categorical-8: var(--red-new-50);
+  --chart-categorical-9: var(--blurple-50);
+  --chart-mono-1: var(--blue-new-15);
+  --chart-mono-2: var(--blue-new-25);
+  --chart-mono-3: var(--blue-new-35);
+  --chart-mono-4: var(--blue-new-45);
+  --chart-mono-5: var(--blue-new-50);
+  --chart-mono-6: var(--blue-new-60);
+  --chart-mono-7: var(--blue-new-70);
+  --chart-negative: var(--red-new-50);
+  --chart-neutral: var(--neutral-40);
+  --chart-positive: var(--green-new-50);
   --chat-background: var(--white);
   --chat-background-default: var(--neutral-1);
   --chat-border: var(--primary-200);
@@ -60123,6 +60291,132 @@ html.disable-forced-colors * {
     --channeltextarea-background: color-mix(
       in oklab,
       var(--primary-160) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-brand: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-1: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-10: color-mix(
+      in oklab,
+      var(--yellow-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-2: color-mix(
+      in oklab,
+      var(--orange-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-3: color-mix(
+      in oklab,
+      var(--pink-55) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-4: color-mix(
+      in oklab,
+      var(--teal-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-5: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-6: color-mix(
+      in oklab,
+      var(--pink-55) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-7: color-mix(
+      in oklab,
+      var(--yellow-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-8: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-9: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-1: color-mix(
+      in oklab,
+      var(--blue-new-15) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2: color-mix(
+      in oklab,
+      var(--blue-new-25) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-3: color-mix(
+      in oklab,
+      var(--blue-new-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4: color-mix(
+      in oklab,
+      var(--blue-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-5: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-6: color-mix(
+      in oklab,
+      var(--blue-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7: color-mix(
+      in oklab,
+      var(--blue-new-70) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-negative: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-neutral: color-mix(
+      in oklab,
+      var(--neutral-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-positive: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -61342,6 +61636,27 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--plum-11);
   --channels-default: var(--neutral-37);
   --channeltextarea-background: var(--plum-23);
+  --chart-brand: var(--blurple-50);
+  --chart-categorical-1: var(--blue-new-50);
+  --chart-categorical-10: var(--yellow-new-60);
+  --chart-categorical-2: var(--orange-new-50);
+  --chart-categorical-3: var(--pink-50);
+  --chart-categorical-4: var(--teal-new-50);
+  --chart-categorical-5: var(--green-new-50);
+  --chart-categorical-6: var(--pink-35);
+  --chart-categorical-7: var(--yellow-new-50);
+  --chart-categorical-8: var(--red-new-50);
+  --chart-categorical-9: var(--blurple-50);
+  --chart-mono-1: var(--blue-new-15);
+  --chart-mono-2: var(--blue-new-25);
+  --chart-mono-3: var(--blue-new-35);
+  --chart-mono-4: var(--blue-new-45);
+  --chart-mono-5: var(--blue-new-50);
+  --chart-mono-6: var(--blue-new-60);
+  --chart-mono-7: var(--blue-new-70);
+  --chart-negative: var(--red-new-50);
+  --chart-neutral: var(--neutral-40);
+  --chart-positive: var(--green-new-50);
   --chat-background: var(--black);
   --chat-background-default: var(--neutral-91);
   --chat-border: var(--plum-20);
@@ -62125,6 +62440,132 @@ html.disable-forced-colors * {
     --channeltextarea-background: color-mix(
       in oklab,
       var(--plum-23) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-brand: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-1: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-10: color-mix(
+      in oklab,
+      var(--yellow-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-2: color-mix(
+      in oklab,
+      var(--orange-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-3: color-mix(
+      in oklab,
+      var(--pink-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-4: color-mix(
+      in oklab,
+      var(--teal-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-5: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-6: color-mix(
+      in oklab,
+      var(--pink-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-7: color-mix(
+      in oklab,
+      var(--yellow-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-8: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-9: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-1: color-mix(
+      in oklab,
+      var(--blue-new-15) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2: color-mix(
+      in oklab,
+      var(--blue-new-25) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-3: color-mix(
+      in oklab,
+      var(--blue-new-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4: color-mix(
+      in oklab,
+      var(--blue-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-5: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-6: color-mix(
+      in oklab,
+      var(--blue-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7: color-mix(
+      in oklab,
+      var(--blue-new-70) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-negative: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-neutral: color-mix(
+      in oklab,
+      var(--neutral-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-positive: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -63342,6 +63783,27 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--plum-11);
   --channels-default: var(--neutral-35);
   --channeltextarea-background: var(--plum-15);
+  --chart-brand: var(--blurple-50);
+  --chart-categorical-1: var(--blue-new-50);
+  --chart-categorical-10: var(--yellow-new-60);
+  --chart-categorical-2: var(--orange-new-50);
+  --chart-categorical-3: var(--pink-50);
+  --chart-categorical-4: var(--teal-new-50);
+  --chart-categorical-5: var(--green-new-50);
+  --chart-categorical-6: var(--pink-35);
+  --chart-categorical-7: var(--yellow-new-50);
+  --chart-categorical-8: var(--red-new-50);
+  --chart-categorical-9: var(--blurple-50);
+  --chart-mono-1: var(--blue-new-15);
+  --chart-mono-2: var(--blue-new-25);
+  --chart-mono-3: var(--blue-new-35);
+  --chart-mono-4: var(--blue-new-45);
+  --chart-mono-5: var(--blue-new-50);
+  --chart-mono-6: var(--blue-new-60);
+  --chart-mono-7: var(--blue-new-70);
+  --chart-negative: var(--red-new-50);
+  --chart-neutral: var(--neutral-40);
+  --chart-positive: var(--green-new-50);
   --chat-background: var(--plum-16);
   --chat-background-default: var(--neutral-80);
   --chat-border: var(--plum-20);
@@ -64143,6 +64605,132 @@ html.disable-forced-colors * {
     --channeltextarea-background: color-mix(
       in oklab,
       var(--plum-15) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-brand: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-1: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-10: color-mix(
+      in oklab,
+      var(--yellow-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-2: color-mix(
+      in oklab,
+      var(--orange-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-3: color-mix(
+      in oklab,
+      var(--pink-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-4: color-mix(
+      in oklab,
+      var(--teal-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-5: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-6: color-mix(
+      in oklab,
+      var(--pink-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-7: color-mix(
+      in oklab,
+      var(--yellow-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-8: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-9: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-1: color-mix(
+      in oklab,
+      var(--blue-new-15) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2: color-mix(
+      in oklab,
+      var(--blue-new-25) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-3: color-mix(
+      in oklab,
+      var(--blue-new-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4: color-mix(
+      in oklab,
+      var(--blue-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-5: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-6: color-mix(
+      in oklab,
+      var(--blue-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7: color-mix(
+      in oklab,
+      var(--blue-new-70) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-negative: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-neutral: color-mix(
+      in oklab,
+      var(--neutral-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-positive: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -73837,4 +74425,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.a3548bd57dbccb12.css.map*/
+/*# sourceMappingURL=web.1e0768da0cd762d4.css.map*/
