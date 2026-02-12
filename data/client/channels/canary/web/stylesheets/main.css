@@ -31639,6 +31639,10 @@ div.modalHeader_c28af8 {
   position: relative;
   width: 64px;
 }
+.fullWidth__28141 {
+  height: 100%;
+  width: 100%;
+}
 .rewardHighlight__28141 {
   border-radius: 8px;
   overflow: hidden;
@@ -45919,6 +45923,7 @@ div.modalOverrideBody__34eac {
 }
 .outer__146e2 {
   align-items: center;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   position: relative;
@@ -45938,10 +45943,13 @@ div.modalOverrideBody__34eac {
   transition: stroke-dashoffset 0.35s;
 }
 .inner__146e2 {
+  align-items: center;
   border-radius: 50%;
-  margin: 5px;
-  overflow: visible;
-  position: relative;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
 }
 .coverContent__146e2 {
   border-radius: 50%;
@@ -45982,16 +45990,6 @@ div.modalOverrideBody__34eac {
   display: flex;
   flex-direction: column;
   margin-inline-start: auto;
-}
-.questProgressRewardTile__4264a {
-  box-shadow: var(--shadow-high);
-  display: block;
-  flex: 1;
-}
-.questProgressRewardTile__4264a.questProgressRewardTile__4264a {
-  border-radius: 50%;
-  height: 39px;
-  width: 39px;
 }
 .cont_b256a2 {
   position: relative;
@@ -75072,4 +75070,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.481fcd0ff7d834c1.css.map*/
+/*# sourceMappingURL=web.fce30b93677ffede.css.map*/
