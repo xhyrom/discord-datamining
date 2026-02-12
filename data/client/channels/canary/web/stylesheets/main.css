@@ -21841,10 +21841,10 @@ body .headerAnimation_b54a5b {
 .container_da8ac7 {
   align-items: center;
   display: flex;
-  gap: var(--space-12);
   width: 100%;
 }
 .content_da8ac7 {
+  margin-inline-start: var(--space-12);
   width: 100%;
 }
 .header_da8ac7 {
@@ -21860,24 +21860,24 @@ body .headerAnimation_b54a5b {
 }
 .details_da8ac7 {
   align-self: center;
-  display: flex;
   flex: 1;
-  gap: var(--space-24);
   min-width: 0;
+}
+.details_da8ac7,
+.text_da8ac7 {
+  display: flex;
+  justify-content: space-between;
 }
 .text_da8ac7 {
   align-items: flex-start;
   flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-}
-.giftMessage_da8ac7,
-.text_da8ac7 {
-  display: flex;
   gap: var(--space-4);
+  width: 100%;
 }
 .giftMessage_da8ac7 {
   align-items: center;
+  display: flex;
+  gap: var(--space-4);
 }
 .giftAvatar_da8ac7 {
   border-radius: var(--radius-round);
@@ -43764,7 +43764,10 @@ div.mobilePushContainer__3d3b0 {
   min-height: 440px;
 }
 .checkoutInlineNoticeContainer_bb5449 {
+  display: flex;
+  flex-direction: column;
   margin-bottom: var(--space-24);
+  row-gap: var(--space-12);
 }
 .loadingContainer_bb5449 {
   display: flex;
@@ -58053,14 +58056,16 @@ html.disable-forced-colors * {
   --chat-border: var(--primary-700);
   --chat-text-muted: var(--neutral-27);
   --checkbox-background-active: var(--blurple-65);
-  --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --checkbox-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
   --checkbox-background-hover: hsl(
     var(--opacity-black-8-hsl) / 0.0784313725490196
   );
   --checkbox-background-selected-default: var(--blurple-50);
   --checkbox-background-selected-hover: var(--blurple-60);
   --checkbox-border-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --checkbox-border-default: var(--neutral-34);
+  --checkbox-border-default: hsl(var(--opacity-64-hsl) / 0.6392156862745098);
   --checkbox-border-hover: hsl(var(--opacity-80-hsl) / 0.8);
   --checkbox-border-selected-default: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
@@ -60220,14 +60225,16 @@ html.disable-forced-colors * {
   --chat-border: var(--primary-200);
   --chat-text-muted: var(--neutral-40);
   --checkbox-background-active: var(--blurple-65);
-  --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --checkbox-background-default: hsl(
+    var(--opacity-black-4-hsl) / 0.0392156862745098
+  );
   --checkbox-background-hover: hsl(
     var(--opacity-black-4-hsl) / 0.0392156862745098
   );
   --checkbox-background-selected-default: var(--blurple-50);
   --checkbox-background-selected-hover: var(--blurple-60);
   --checkbox-border-active: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
-  --checkbox-border-default: var(--neutral-30);
+  --checkbox-border-default: var(--neutral-34);
   --checkbox-border-hover: var(--neutral-46);
   --checkbox-border-selected-default: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
@@ -62367,14 +62374,16 @@ html.disable-forced-colors * {
   --chat-border: var(--plum-20);
   --chat-text-muted: var(--neutral-38);
   --checkbox-background-active: var(--blurple-65);
-  --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --checkbox-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
   --checkbox-background-hover: hsl(
     var(--opacity-black-8-hsl) / 0.0784313725490196
   );
   --checkbox-background-selected-default: var(--blurple-50);
   --checkbox-background-selected-hover: var(--blurple-60);
   --checkbox-border-active: hsl(var(--opacity-20-hsl) / 0.2);
-  --checkbox-border-default: var(--neutral-44);
+  --checkbox-border-default: hsl(var(--opacity-64-hsl) / 0.6392156862745098);
   --checkbox-border-hover: hsl(var(--opacity-80-hsl) / 0.8);
   --checkbox-border-selected-default: hsl(var(--opacity-20-hsl) / 0.2);
   --checkbox-border-selected-hover: hsl(var(--opacity-20-hsl) / 0.2);
@@ -64514,14 +64523,16 @@ html.disable-forced-colors * {
   --chat-border: var(--plum-20);
   --chat-text-muted: var(--neutral-35);
   --checkbox-background-active: var(--blurple-65);
-  --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --checkbox-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
   --checkbox-background-hover: hsl(
     var(--opacity-black-8-hsl) / 0.0784313725490196
   );
   --checkbox-background-selected-default: var(--blurple-50);
   --checkbox-background-selected-hover: var(--blurple-60);
   --checkbox-border-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --checkbox-border-default: var(--neutral-41);
+  --checkbox-border-default: hsl(var(--opacity-64-hsl) / 0.6392156862745098);
   --checkbox-border-hover: hsl(var(--opacity-80-hsl) / 0.8);
   --checkbox-border-selected-default: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
@@ -73317,101 +73328,6 @@ html.disable-forced-colors * {
   --yellow-900: var(--yellow-new-100);
   --yellow-900-hsl: var(--yellow-new-100-hsl);
 }
-.refresh-fast-follow-distinct-borders .theme-dark,
-.refresh-fast-follow-distinct-borders.theme-dark {
-  --app-frame-border: var(--neutral-52);
-}
-@supports (color: color-mix(in lch, red, blue)) {
-  .refresh-fast-follow-distinct-borders .theme-dark,
-  .refresh-fast-follow-distinct-borders.theme-dark {
-    --app-frame-border: color-mix(
-      in oklab,
-      var(--neutral-52) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-  }
-}
-.refresh-fast-follow-distinct-borders .theme-light,
-.refresh-fast-follow-distinct-borders.theme-light {
-  --app-frame-border: var(--neutral-12);
-}
-@supports (color: color-mix(in lch, red, blue)) {
-  .refresh-fast-follow-distinct-borders .theme-light,
-  .refresh-fast-follow-distinct-borders.theme-light {
-    --app-frame-border: color-mix(
-      in oklab,
-      var(--neutral-12) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-  }
-}
-.refresh-fast-follow-distinct-borders .theme-midnight,
-.refresh-fast-follow-distinct-borders.theme-midnight {
-  --app-frame-border: var(--neutral-73);
-}
-@supports (color: color-mix(in lch, red, blue)) {
-  .refresh-fast-follow-distinct-borders .theme-midnight,
-  .refresh-fast-follow-distinct-borders.theme-midnight {
-    --app-frame-border: color-mix(
-      in oklab,
-      var(--neutral-73) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-  }
-}
-.refresh-fast-follow-distinct-borders .theme-darker,
-.refresh-fast-follow-distinct-borders.theme-darker {
-  --app-frame-border: var(--neutral-65);
-}
-@supports (color: color-mix(in lch, red, blue)) {
-  .refresh-fast-follow-distinct-borders .theme-darker,
-  .refresh-fast-follow-distinct-borders.theme-darker {
-    --app-frame-border: color-mix(
-      in oklab,
-      var(--neutral-65) 100%,
-      var(--custom-theme-base-color, #000)
-        var(
-          --custom-theme-border-color-amount,
-          var(--custom-theme-base-color-amount, 0%)
-        )
-    );
-  }
-}
-.mana-toggle-inputs .theme-dark,
-.mana-toggle-inputs.theme-dark {
-  --checkbox-background-default: hsl(
-    var(--opacity-black-8-hsl) / 0.0784313725490196
-  );
-  --checkbox-border-default: hsl(var(--opacity-64-hsl) / 0.6392156862745098);
-}
-.mana-toggle-inputs .theme-light,
-.mana-toggle-inputs.theme-light {
-  --checkbox-background-default: hsl(
-    var(--opacity-black-4-hsl) / 0.0392156862745098
-  );
-  --checkbox-border-default: var(--neutral-34);
-}
-.mana-toggle-inputs .theme-darker,
-.mana-toggle-inputs .theme-midnight,
-.mana-toggle-inputs.theme-darker,
-.mana-toggle-inputs.theme-midnight {
-  --checkbox-background-default: hsl(
-    var(--opacity-black-8-hsl) / 0.0784313725490196
-  );
-  --checkbox-border-default: hsl(var(--opacity-64-hsl) / 0.6392156862745098);
-}
 .theme-dark {
   --shadow-border: 0 0 0 1px hsl(none 0% 100%/0.08);
   --shadow-border-filter: drop-shadow(0 0 1px hsl(none 0% 100%/0.08));
@@ -75130,4 +75046,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.346a01ff9767b940.css.map*/
+/*# sourceMappingURL=web.e5cfc35e0bca46ad.css.map*/
