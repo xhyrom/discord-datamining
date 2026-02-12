@@ -10939,6 +10939,8 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   -webkit-mask-image: none;
   mask-image: none;
   overflow-x: scroll;
+  scroll-padding: 12px;
+  scroll-snap-type: x mandatory;
   scrollbar-width: none;
   transition: -webkit-mask-image 0.3s linear;
   transition: mask-image 0.3s linear;
@@ -10994,6 +10996,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .children__28842 > * {
   flex-shrink: 0;
+  scroll-snap-align: start;
 }
 .actions__28842 {
   align-items: center;
@@ -17930,8 +17933,12 @@ body .headerAnimation_b54a5b {
   height: 243px;
   justify-content: center;
 }
+.container_ceece4 {
+  --custom-payment-element-min-height: 430px;
+}
 .body_ceece4 {
-  margin: var(--space-16) 0;
+  margin-top: var(--space-12);
+  min-height: var(--custom-payment-element-min-height);
   padding: 0 4px;
 }
 .addressElementContainer_ceece4,
@@ -17941,8 +17948,7 @@ body .headerAnimation_b54a5b {
 .loadingContainer_ceece4 {
   display: flex;
   justify-content: center;
-  margin: var(--space-16) 0;
-  min-height: 240px;
+  min-height: var(--custom-payment-element-min-height);
 }
 .visible_ceece4 {
   transform: translateX(0);
@@ -17965,7 +17971,7 @@ body .headerAnimation_b54a5b {
 }
 .cardElementContainer_ceece4.visible_ceece4,
 .defaultPaymentElementContainer_ceece4.visible_ceece4 {
-  min-height: 240px;
+  min-height: var(--custom-payment-element-min-height);
 }
 .customPaymentElementContainer_ceece4.visible_ceece4 {
   min-height: 160px;
@@ -43231,10 +43237,6 @@ div.mobilePushContainer__3d3b0 {
   justify-content: center;
   position: relative;
 }
-.adjustedGiftMainAnimation_d54fab {
-  height: 230px;
-  margin-inline-start: -20px;
-}
 .soundEmojiContainer_d54fab {
   bottom: 16px;
   display: flex;
@@ -43266,9 +43268,6 @@ div.mobilePushContainer__3d3b0 {
   gap: 9px;
   margin: 25px auto auto;
   max-width: 85%;
-}
-.adjustedGiftBoxOptionContainer_d54fab {
-  margin-inline-start: 15px;
 }
 .planOption_b13085 {
   align-items: center;
@@ -43400,9 +43399,6 @@ div.mobilePushContainer__3d3b0 {
   justify-content: center;
   margin-inline-end: 30px;
 }
-.bodyColumnLeft_d947e6 {
-  margin-inline: var(--space-24) 60px;
-}
 .bodyColumnRight_d947e6 {
   margin-inline-end: 10px;
 }
@@ -43487,9 +43483,6 @@ div.mobilePushContainer__3d3b0 {
 }
 .customGiftMessage_d947e6.customGiftMessage_d947e6 {
   background-color: var(--background-base-lowest);
-}
-.selectGiftTitle_d947e6 {
-  margin-top: 16px;
 }
 .compactSendGiftToUser_d947e6 {
   margin: 16px 0;
@@ -44340,41 +44333,6 @@ div.modalOverrideBody__34eac {
   margin-bottom: 16px;
   margin-top: 24px;
 }
-.recommendedGiftPreview_bf1b4a {
-  cursor: pointer;
-  margin-bottom: 12px;
-}
-.navigateToShopButton_bf1b4a {
-  align-items: center;
-  background: var(--background-base-low);
-  border: 1px solid var(--border-muted);
-  border-radius: var(--radius-xs);
-  cursor: pointer;
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  padding: 12px 16px;
-}
-.navigateToShopBody_bf1b4a {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-.navigateToShopTextWrapper_bf1b4a {
-  display: flex;
-  flex-direction: column;
-}
-.shopIcon_bf1b4a {
-  align-items: center;
-  background-color: var(--interactive-background-hover);
-  border-radius: var(--radius-round);
-  display: flex;
-  flex-shrink: 0;
-  height: 42px;
-  justify-content: center;
-  width: 42px;
-}
 .offerNoticeContainerShared__005bd {
   background: linear-gradient(
     90deg,
@@ -45024,42 +44982,28 @@ div.modalOverrideBody__34eac {
   overflow: hidden;
 }
 .shimmer__2d717 {
-  background: var(--background-mod-strong);
+  background: var(--background-base-lowest);
   border-radius: var(--radius-lg);
   inset: 0;
+  opacity: 0.84;
   position: absolute;
 }
 .full-motion .shimmer__2d717 {
   animation: pulse__2d717 2s ease-in-out infinite alternate;
   animation-fill-mode: backwards;
 }
-.shimmer__2d717.index-0__2d717 {
-  animation-delay: 0s;
-}
-.shimmer__2d717.index-1__2d717 {
-  animation-delay: 0.2s;
-}
-.shimmer__2d717.index-2__2d717 {
-  animation-delay: 0.4s;
-}
-.shimmer__2d717.index-3__2d717 {
-  animation-delay: 0.6s;
-}
-.shimmer__2d717.index-4__2d717 {
-  animation-delay: 0.8s;
-}
 @keyframes pulse__2d717 {
   0% {
-    background: var(--background-mod-strong);
+    opacity: 0.84;
   }
   30% {
-    background: var(--background-mod-normal);
+    opacity: 0.72;
   }
   70% {
-    background: var(--background-mod-normal);
+    opacity: 0.72;
   }
   to {
-    background: var(--background-mod-strong);
+    opacity: 0.84;
   }
 }
 .chip__3bb21 {
@@ -46257,6 +46201,268 @@ div.modalOverrideBody__34eac {
     color: #fff;
   }
 }
+.container__76394 {
+  border-radius: 20px;
+  filter: saturate(var(--saturation-factor, 1));
+  overflow: visible;
+  position: relative;
+  width: 100%;
+}
+.glowAnimation__76394 {
+  filter: blur(var(--custom-blur-amount)) saturate(var(--saturation-factor, 1))
+    hue-rotate(var(--custom-hue-rotate, 0deg));
+  height: calc(100% + var(--custom-glow-amount) * 2 + 2px);
+  inset-inline-start: calc(var(--custom-glow-amount) * -1 - 1px);
+  pointer-events: none;
+  position: absolute;
+  top: calc(var(--custom-glow-amount) * -1 - 1px);
+  width: calc(100% + var(--custom-glow-amount) * 2 + 2px);
+}
+.baseContainer__40d5b {
+  container-name: premium-marketing-page-container;
+  container-type: inline-size;
+  filter: saturate(var(--saturation-factor, 1));
+  max-width: var(--custom-premium-home-max-width);
+  overflow: visible;
+}
+.baseContainer__40d5b,
+.card__40d5b {
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+}
+.card__40d5b {
+  border-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.video__40d5b {
+  height: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+.betaBadge__40d5b {
+  margin-bottom: 12px;
+}
+.progressContainer__40d5b {
+  padding-top: var(--space-12);
+  width: 75%;
+}
+.bannerImageContainer__40d5b {
+  flex: 0 0 auto;
+  height: 250px;
+  overflow: visible;
+  position: relative;
+}
+.bannerImage__40d5b,
+.bannerImageContainer__40d5b {
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+}
+.bannerImage__40d5b {
+  height: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  transform: scaleX(-1);
+}
+.textContainer__40d5b {
+  align-items: flex-start;
+  background-color: var(--card-background-default);
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-48) var(--space-24);
+  position: relative;
+  z-index: 1;
+}
+.heading__40d5b {
+  margin-bottom: var(--space-12);
+}
+.actionButtonContainer__40d5b {
+  margin-top: var(--space-24);
+}
+.totalLifetimeRewardsContainer__40d5b {
+  align-items: center;
+  color: var(--text-muted);
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-12);
+}
+.stackedGradientOverlay__40d5b {
+  background: linear-gradient(
+    to bottom,
+    transparent 0,
+    color-mix(in srgb, var(--card-background-default) 70%, transparent) 50%,
+    var(--card-background-default) 100%
+  );
+  position: absolute;
+  top: auto;
+  inset-inline: 0;
+  bottom: 0;
+  height: 100px;
+}
+@container premium-marketing-page-container (min-width: 720px) {
+  .card__40d5b {
+    flex-direction: row;
+    height: 350px;
+  }
+  .bannerImageContainer__40d5b {
+    height: auto;
+    margin-inline-end: 0;
+    min-width: 0;
+    width: 50%;
+    z-index: 0;
+  }
+  .bannerImage__40d5b {
+    -o-object-position: center;
+    object-position: center;
+  }
+  .textContainer__40d5b {
+    background-color: transparent;
+    padding-block: var(--space-48);
+    padding-inline: var(--space-32);
+    width: 50%;
+    z-index: auto;
+  }
+  .heading__40d5b,
+  .textContainer__40d5b {
+    color: var(--white);
+  }
+  .bodyText__40d5b,
+  .totalLifetimeRewardsContainer__40d5b {
+    color: hsl(var(--white-hsl) / 0.6);
+  }
+  .bodyText__40d5b a {
+    color: var(--blue-new-27);
+  }
+  .bodyText__40d5b a:hover {
+    color: var(--blue-new-31);
+  }
+  .stackedGradientOverlay__40d5b {
+    display: none;
+  }
+}
+@container premium-marketing-page-container (min-width: 960px) {
+  .textContainer__40d5b {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-inline: var(--space-24);
+  }
+  .bannerImage__40d5b {
+    -o-object-position: calc(100% + 250px) center;
+    object-position: calc(100% + 250px) center;
+  }
+  .bannerImageContainer__40d5b {
+    margin-inline-end: 0;
+  }
+}
+.section__3af27 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: var(--custom-premium-home-max-width);
+  width: calc(100% - 32px);
+}
+.heading__3af27 {
+  margin: 0 24px 16px;
+  text-align: center;
+}
+.sectionHeader__3af27 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.sectionHeaderSeeAll__3af27 {
+  flex-grow: 1;
+  text-align: center;
+}
+.confettiCanvas__3af27 {
+  height: 100%;
+  inset-inline-start: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.container__3af27 {
+  display: flex;
+}
+.sectionHeader__3af27 .heading__3af27 {
+  flex-grow: 1;
+  text-align: start;
+}
+.subtitle__3af27 {
+  margin: 0 24px 24px;
+  max-width: 544px;
+}
+.subtitleWithButton__3af27 {
+  margin: 0 24px 16px;
+  max-width: 544px;
+}
+.centerAlignSubtitle__3af27,
+.leftAlignSection__3af27 {
+  position: relative;
+}
+.leftAlignSubtitle__3af27 {
+  text-align: start;
+}
+.centerAlignSubtitle__3af27 {
+  text-align: center;
+}
+.moreSubtitleMargin__3af27 {
+  margin-bottom: 32px;
+}
+.section__3af27.noBackground__3af27 .subtitle__3af27 {
+  max-width: unset;
+}
+.fullWidth__3af27 {
+  max-width: 100%;
+}
+.cardContainer__3af27,
+.cardContainerNarrowWidth__3af27 {
+  display: grid;
+  gap: 16px;
+  justify-content: center;
+  min-height: 380px;
+  width: 100%;
+}
+.cardContainer__3af27 {
+  grid-template-columns: 1fr;
+}
+.cardContainerNarrowWidth__3af27 {
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 960px) {
+  .cardContainer__3af27 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.centerAlignSection__3af27 {
+  align-items: center;
+}
+.leftAlignSection__3af27 {
+  align-items: start;
+}
+.showAllPerksButton__3af27 {
+  margin-inline-start: auto;
+  z-index: 9;
+}
+.showAllPerksButtonCenter__3af27 {
+  align-items: center;
+  margin-bottom: 24px;
+  z-index: 9;
+}
+.footer__3af27 {
+  margin-bottom: 64px;
+}
 .container__58471 {
   align-items: center;
   background: var(--background-surface-higher);
@@ -47389,7 +47595,7 @@ div.modalOverrideBody__34eac {
 }
 @value maxModalWidth from "./MarkdownModal.module.css";
 .video__1689b {
-  border-radius: 3px;
+  border-radius: var(--radius-xs);
 }
 @media (max-width: 480px) {
   .video__1689b {
@@ -47397,20 +47603,29 @@ div.modalOverrideBody__34eac {
   }
 }
 .container__1689b {
-  padding-bottom: 20px;
+  padding-bottom: var(--space-20);
 }
-.container__1689b p > img,
+.paragraph__1689b {
+  margin: var(--space-8) 0;
+}
+.paragraph__1689b > img {
+  border-radius: var(--radius-xs);
+}
+.list__1689b {
+  margin: var(--space-4) 0 var(--space-4) var(--space-20);
+  padding: 0;
+}
+.listItem__1689b {
+  margin-bottom: var(--space-16);
+}
 .image__1689b {
-  border-radius: 5px;
+  border-radius: var(--radius-xs);
 }
 .title__1689b {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
   text-transform: uppercase;
 }
 .lead__1689b {
-  border-radius: 5px;
+  border-radius: var(--radius-xs);
   margin-bottom: 20px;
 }
 .added__1689b,
@@ -47419,13 +47634,13 @@ div.modalOverrideBody__34eac {
 .progress__1689b {
   align-items: center;
   display: flex;
-  margin-top: 40px;
+  margin-top: var(--space-24);
 }
 .added__1689b.marginTop__1689b,
 .fixed__1689b.marginTop__1689b,
 .improved__1689b.marginTop__1689b,
 .progress__1689b.marginTop__1689b {
-  margin-top: 20px;
+  margin-top: var(--space-32);
 }
 .added__1689b:after,
 .fixed__1689b:after,
@@ -47485,8 +47700,6 @@ h3.improved__1689b:after {
   border-radius: 5px;
   color: var(--white);
   display: flex;
-  font-size: 16px;
-  line-height: 18px;
   padding: 16px;
 }
 .premiumBanner__1689b .premiumIcon__1689b {
@@ -48735,44 +48948,9 @@ h3.improved__1689b:after {
   padding-block: 0 var(--space-6);
   padding-inline: 0;
 }
-.container__76394 {
-  border-radius: 20px;
-  container-name: animated-border-card-container;
-  container-type: inline-size;
-  filter: saturate(var(--saturation-factor, 1));
-  overflow: visible;
-  position: relative;
-  width: 100%;
-}
-.glowAnimation__76394 {
-  filter: blur(var(--custom-blur-amount)) saturate(var(--saturation-factor, 1))
-    hue-rotate(var(--custom-hue-rotate, 0deg));
-  height: calc(100% + var(--custom-glow-amount) * 2 + 2px);
-  inset-inline-start: calc(var(--custom-glow-amount) * -1 - 1px);
-  pointer-events: none;
-  position: absolute;
-  top: calc(var(--custom-glow-amount) * -1 - 1px);
-  width: calc(100% + var(--custom-glow-amount) * 2 + 2px);
-}
-.card__76394 {
-  border-radius: 20px;
-  border-width: 0;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-@container animated-border-card-container (min-width: 960px) {
-  .card__76394 {
-    flex-direction: row;
-  }
-}
 .card_cf5b44 {
   border: 1px solid var(--border-subtle);
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   height: 380px;
   overflow: hidden;
   position: relative;
@@ -48787,15 +48965,24 @@ h3.improved__1689b:after {
   top: var(--space-24);
   z-index: 1;
 }
-.content_cf5b44 {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: 0 var(--space-24) var(--space-24);
-  position: relative;
-}
 .description_cf5b44 {
   margin-top: var(--space-4);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card_cf5b44.featured_cf5b44 .description_cf5b44,
+.card_cf5b44:focus-within .description_cf5b44,
+.card_cf5b44:hover .description_cf5b44 {
+  overflow: visible;
+  white-space: normal;
+}
+.card_cf5b44.featured_cf5b44 .ctaButton_cf5b44,
+.card_cf5b44:focus-within .ctaButton_cf5b44,
+.card_cf5b44:hover .ctaButton_cf5b44 {
+  height: auto;
+  margin-top: var(--space-12);
+  opacity: 1;
 }
 .captionWrapper_cf5b44 {
   margin-bottom: var(--space-4);
@@ -48803,7 +48990,6 @@ h3.improved__1689b:after {
 .primaryAssetWrapper_cf5b44 {
   align-items: center;
   display: flex;
-  flex: 1;
   justify-content: center;
   margin: var(--space-16) auto;
   max-width: 400px;
@@ -48815,14 +49001,71 @@ h3.improved__1689b:after {
   object-fit: contain;
   width: 100%;
 }
+.contentContainer_cf5b44 {
+  bottom: 0;
+  inset-inline: 0;
+  position: absolute;
+  z-index: 2;
+}
+.featured_cf5b44 .contentContainer_cf5b44 {
+  inset-inline-end: auto;
+  max-width: 300px;
+}
+.blurOverlay_cf5b44 {
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  filter: saturate(1.5) brightness(0.9);
+  inset: -16px 0 0;
+  -webkit-mask-composite: source-in, xor;
+  mask-composite: intersect;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(0, 0, 0, 0.35) 12px,
+    rgba(0, 0, 0, 0.7) 24px,
+    rgba(0, 0, 0, 0.92) 36px,
+    #000 48px
+  );
+  mask-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(0, 0, 0, 0.35) 12px,
+    rgba(0, 0, 0, 0.7) 24px,
+    rgba(0, 0, 0, 0.92) 36px,
+    #000 48px
+  );
+  position: absolute;
+}
+.featured_cf5b44 .blurOverlay_cf5b44 {
+  height: 185%;
+  inset: auto 0 0;
+  -webkit-mask-image: radial-gradient(
+    110% 110% at 0 100%,
+    #000 55%,
+    rgba(0, 0, 0, 0.4) 72%,
+    rgba(0, 0, 0, 0.08) 88%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    110% 110% at 0 100%,
+    #000 55%,
+    rgba(0, 0, 0, 0.4) 72%,
+    rgba(0, 0, 0, 0.08) 88%,
+    transparent 100%
+  );
+  width: 185%;
+}
 .textContent_cf5b44 {
-  flex-shrink: 0;
+  padding: var(--space-24);
+  position: relative;
 }
 .progressBarWrapper_cf5b44 {
   margin-top: var(--space-8);
 }
 .ctaButton_cf5b44 {
-  margin-top: var(--space-12);
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 .title_feb59c {
   margin-bottom: 8px;
@@ -55092,6 +55335,433 @@ svg.radioIcon_c1e9c4 {
   height: 100%;
   position: relative;
 }
+.container__394db {
+  align-items: center;
+  display: block;
+  flex: 1 1 auto;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.container__394db .chipletContainer__394db {
+  display: inline-block;
+  overflow: hidden;
+}
+.container__394db .chipletParent__394db {
+  display: inline;
+  overflow: hidden;
+  padding-inline-start: 4px;
+  position: relative;
+}
+.container__394db .usernameContainer__394db {
+  display: inline-block;
+  flex: 1;
+  margin-top: 2px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.container__394db.isOverlayContainer__394db {
+  align-content: center;
+  background: var(--background-base-low);
+  border-radius: 4px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  height: 20px;
+}
+.container__394db.isOverlayContainer__394db .usernameContainer__394db {
+  margin-top: 0;
+}
+.container__394db.isOverlayContainer__394db .chipletContainer__394db,
+.container__394db.isOverlayContainer__394db .chipletParent__394db {
+  align-content: center;
+  align-items: center;
+  display: flex;
+}
+.container__394db.isOverlayContainer__394db .chipletContainer__394db {
+  margin: 0;
+  padding: 1.5px;
+}
+.container__394db.isOverlayContainer__394db
+  .chipletContainer__394db.noPadding__394db {
+  padding: 0;
+}
+.isOverlayTag__394db {
+  margin: 0;
+}
+.avatarWrapper_d8a370 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  position: relative;
+}
+.ring_d8a370 {
+  border-radius: 50%;
+  inset: -3px;
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 2px),
+    #000 calc(100% - 1px)
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 2px),
+    #000 calc(100% - 1px)
+  );
+  pointer-events: none;
+  position: absolute;
+  transform: rotate(-90deg);
+}
+@keyframes outgoing-call-pulse__07f91 {
+  0% {
+    opacity: 0.3;
+  }
+  11.56% {
+    opacity: 0.9;
+  }
+  39.02% {
+    opacity: 0.3;
+  }
+  39.04% {
+    opacity: 0.9;
+  }
+  66.48% {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+.list__07f91 {
+  display: flex;
+  justify-content: flex-start;
+}
+.listDefault__07f91 {
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.listCollapse__07f91 {
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.voiceUser__07f91 {
+  position: relative;
+}
+.clickable__07f91 {
+  cursor: pointer;
+}
+.content__07f91 {
+  align-items: center;
+  border-radius: var(--radius-sm);
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  padding-block: 4px;
+  padding-inline: var(--space-xs) var(--space-xs);
+}
+.flipped__07f91 {
+  flex-direction: row-reverse;
+}
+.userLarge__07f91 {
+  height: 38px;
+}
+.userSmall__07f91 {
+  height: 32px;
+}
+.listCollapse__07f91 .content__07f91 {
+  margin-inline-start: 8px;
+  padding: 0;
+}
+.listCollapse__07f91 .content__07f91.flipped__07f91 {
+  margin-inline: 0 8px;
+}
+.listDefault__07f91 .avatarContainer__07f91 {
+  margin-inline: 8px;
+}
+.overlap__07f91 {
+  margin-inline: -8px -4px;
+  margin-bottom: -4px;
+  margin-top: -1px;
+}
+.overlap__07f91 .content__07f91 {
+  margin-inline-start: 0;
+}
+.overlap__07f91 .avatar__07f91 {
+  border: 4px solid var(--background-base-lower);
+  border-color: var(--background-base-lowest);
+  margin: 0;
+}
+.avatar__07f91 {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+.avatarSmall__07f91 {
+  height: 24px;
+  width: 24px;
+}
+.avatarLarge__07f91 {
+  height: 30px;
+  width: 30px;
+}
+.username__07f91 {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.voiceUser__07f91:hover .selfHangStatus__07f91 {
+  background-color: transparent;
+  border-color: transparent;
+}
+div.clanTagBadgeContainer__07f91 {
+  margin-inline-start: 0;
+}
+.clanTagBadge__07f91 {
+  height: 16px;
+  width: 16px;
+}
+.usernameFont__07f91 {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  line-height: 18px;
+}
+.icons__07f91 {
+  flex: 0 0 auto;
+  margin-inline-end: 0;
+}
+.iconGroup__07f91,
+.icons__07f91 {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+.iconGroup__07f91 {
+  margin: 0;
+}
+.iconGroup__07f91:empty {
+  display: none;
+}
+.flipped__07f91 .icons__07f91 {
+  margin-inline: 8px 0;
+}
+.icon__07f91 {
+  height: 16px;
+  width: 16px;
+}
+.hoverableIcon__07f91:hover {
+  color: var(--icon-subtle);
+}
+.iconTooltipContainer__07f91 {
+  line-height: 0;
+}
+.iconTooltip__07f91 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.iconPriortySpeaker__07f91 {
+  border-radius: 8px;
+  height: 6px;
+  inset-inline-start: -16px;
+  position: absolute;
+  width: 6px;
+}
+.icon__07f91,
+.username__07f91 {
+  color: var(--channels-default);
+}
+.iconServer__07f91,
+.strikethrough__07f91 {
+  color: var(--icon-feedback-critical);
+}
+.listDefault__07f91 .clickable__07f91:hover .content__07f91 {
+  background: var(--interactive-background-hover);
+}
+.listDefault__07f91 .clickable__07f91:active .content__07f91 {
+  background: var(--interactive-background-active);
+}
+.listDefault__07f91 .clickable__07f91.selected__07f91 .content__07f91 {
+  background: var(--interactive-background-selected);
+}
+.listDefault__07f91 .clickable__07f91:hover .username__07f91 {
+  color: var(--interactive-text-hover);
+}
+.optionsButton__07f91 {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  flex-shrink: 0;
+  height: 24px;
+  inset-inline-end: 5px;
+  justify-content: center;
+  width: 24px;
+}
+.optionsActive__07f91,
+.optionsButton__07f91:hover {
+  background: var(--interactive-background-active);
+}
+.voiceUser__07f91:not(:hover, :focus-within)
+  .optionsButton__07f91:not(.optionsActive__07f91) {
+  width: 0;
+}
+.voiceUser__07f91:not(:hover, :focus-within)
+  .optionsButtonContainer__07f91:not(.optionsContainerActive__07f91) {
+  display: none;
+}
+span.clanTag__07f91 {
+  background: var(--background-mod-subtle);
+  flex: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+span.clanTag__07f91.isOverlay__07f91 {
+  background: var(--background-base-lowest);
+}
+.listDefault__07f91 .clickable__07f91:hover .clanTag__07f91 {
+  background: var(--interactive-background-hover);
+}
+.theme-light .listDefault__07f91 .clickable__07f91:hover .clanTag__07f91 {
+  background: var(--background-mod-strong);
+}
+.listDefault__07f91 .clickable__07f91.selected__07f91 .username__07f91,
+.usernameSpeaking__07f91 {
+  color: var(--interactive-text-active);
+}
+.liveIcon__07f91 {
+  background-color: var(--background-feedback-notification);
+  color: var(--white);
+}
+.iconPriortySpeakerSpeaking__07f91 {
+  background-color: var(--green-360);
+}
+.iconPriortySpeaker__07f91 {
+  background-color: var(--text-muted);
+}
+.disabled__07f91 {
+  opacity: 0.5;
+}
+.disabled__07f91:hover {
+  opacity: 1;
+}
+.ringing__07f91 {
+  animation: outgoing-call-pulse__07f91
+    var(--custom-call-avatar-outgoing-duration) infinite ease-out;
+  opacity: 0.3;
+}
+.guestSuffix__07f91 {
+  color: var(--text-feedback-positive);
+}
+.userAvatar__07f91 {
+  margin: 0;
+}
+.gameIcon__07f91 {
+  border-radius: var(--radius-xs);
+}
+.enable-forced-colors .clickable__07f91:hover .username__07f91,
+.enable-forced-colors .username__07f91 {
+  background-color: ButtonFace;
+  color: ButtonText;
+  forced-color-adjust: none;
+  text-decoration: underline;
+}
+.enable-forced-colors .icon__07f91 {
+  color: CanvasText;
+}
+.wrapper__83a0c {
+  pointer-events: all;
+  z-index: 1001;
+}
+.root__83a0c {
+  align-items: stretch;
+  background: var(--background-surface-high);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-high);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-width: 475px;
+  padding: var(--space-xl);
+  position: relative;
+}
+.title__83a0c {
+  padding-bottom: var(--space-md);
+  padding-top: var(--space-md);
+}
+.location__83a0c {
+  background: var(--background-mod-subtle);
+  border-radius: var(--radius-sm);
+  display: flex;
+  gap: var(--space-sm);
+  padding: var(--space-sm);
+}
+.locationIcon__83a0c {
+  flex-shrink: 0;
+}
+.locationInfo__83a0c {
+  overflow: hidden;
+}
+.channelName__83a0c {
+  align-items: center;
+  display: flex;
+  gap: var(--space-xxs);
+  justify-content: flex-start;
+}
+.locationName__83a0c {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+}
+.acronymContainer__83a0c {
+  align-items: center;
+  background-color: var(--background-mod-normal);
+  color: var(--text-default);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.acronym__83a0c {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.scroller__83a0c {
+  border-bottom: 1px solid var(--border-subtle);
+  border-top: 1px solid var(--border-subtle);
+  margin-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+  padding-top: var(--space-sm);
+}
+.voiceUsers__83a0c {
+  display: flex;
+  gap: var(--space-md);
+  padding-top: var(--space-xs);
+}
+.voiceUser__83a0c {
+  align-items: center;
+  display: flex;
+  gap: var(--space-sm);
+}
+.actions__83a0c {
+  display: flex;
+  gap: var(--space-xs);
+  margin-top: var(--space-xl);
+}
+.center__83a0c {
+  align-self: center;
+  text-align: center;
+}
 .root__2dbe1 {
   align-items: center;
   background: var(--background-surface-high);
@@ -57330,6 +58000,27 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--primary-430);
   --channels-default: var(--neutral-28);
   --channeltextarea-background: var(--primary-560);
+  --chart-brand: var(--blurple-45);
+  --chart-categorical-1: var(--blue-new-45);
+  --chart-categorical-10: var(--yellow-new-60);
+  --chart-categorical-2: var(--orange-new-45);
+  --chart-categorical-3: var(--pink-50);
+  --chart-categorical-4: var(--teal-new-45);
+  --chart-categorical-5: var(--green-new-45);
+  --chart-categorical-6: var(--pink-35);
+  --chart-categorical-7: var(--yellow-new-50);
+  --chart-categorical-8: var(--red-new-40);
+  --chart-categorical-9: var(--blurple-45);
+  --chart-mono-1: var(--blue-new-15);
+  --chart-mono-2: var(--blue-new-25);
+  --chart-mono-3: var(--blue-new-35);
+  --chart-mono-4: var(--blue-new-45);
+  --chart-mono-5: var(--blue-new-50);
+  --chart-mono-6: var(--blue-new-60);
+  --chart-mono-7: var(--blue-new-65);
+  --chart-negative: var(--red-new-40);
+  --chart-neutral: var(--neutral-40);
+  --chart-positive: var(--green-new-45);
   --chat-background: var(--primary-600);
   --chat-background-default: var(--neutral-64);
   --chat-border: var(--primary-700);
@@ -58131,6 +58822,132 @@ html.disable-forced-colors * {
     --channeltextarea-background: color-mix(
       in oklab,
       var(--primary-560) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-brand: color-mix(
+      in oklab,
+      var(--blurple-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-1: color-mix(
+      in oklab,
+      var(--blue-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-10: color-mix(
+      in oklab,
+      var(--yellow-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-2: color-mix(
+      in oklab,
+      var(--orange-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-3: color-mix(
+      in oklab,
+      var(--pink-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-4: color-mix(
+      in oklab,
+      var(--teal-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-5: color-mix(
+      in oklab,
+      var(--green-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-6: color-mix(
+      in oklab,
+      var(--pink-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-7: color-mix(
+      in oklab,
+      var(--yellow-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-8: color-mix(
+      in oklab,
+      var(--red-new-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-9: color-mix(
+      in oklab,
+      var(--blurple-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-1: color-mix(
+      in oklab,
+      var(--blue-new-15) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2: color-mix(
+      in oklab,
+      var(--blue-new-25) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-3: color-mix(
+      in oklab,
+      var(--blue-new-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4: color-mix(
+      in oklab,
+      var(--blue-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-5: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-6: color-mix(
+      in oklab,
+      var(--blue-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7: color-mix(
+      in oklab,
+      var(--blue-new-65) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-negative: color-mix(
+      in oklab,
+      var(--red-new-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-neutral: color-mix(
+      in oklab,
+      var(--neutral-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-positive: color-mix(
+      in oklab,
+      var(--green-new-45) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -59350,6 +60167,27 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--primary-400);
   --channels-default: var(--neutral-43);
   --channeltextarea-background: var(--primary-160);
+  --chart-brand: var(--blurple-50);
+  --chart-categorical-1: var(--blue-new-50);
+  --chart-categorical-10: var(--yellow-new-60);
+  --chart-categorical-2: var(--orange-new-50);
+  --chart-categorical-3: var(--pink-55);
+  --chart-categorical-4: var(--teal-new-50);
+  --chart-categorical-5: var(--green-new-50);
+  --chart-categorical-6: var(--pink-55);
+  --chart-categorical-7: var(--yellow-new-60);
+  --chart-categorical-8: var(--red-new-50);
+  --chart-categorical-9: var(--blurple-50);
+  --chart-mono-1: var(--blue-new-15);
+  --chart-mono-2: var(--blue-new-25);
+  --chart-mono-3: var(--blue-new-35);
+  --chart-mono-4: var(--blue-new-45);
+  --chart-mono-5: var(--blue-new-50);
+  --chart-mono-6: var(--blue-new-60);
+  --chart-mono-7: var(--blue-new-70);
+  --chart-negative: var(--red-new-50);
+  --chart-neutral: var(--neutral-40);
+  --chart-positive: var(--green-new-50);
   --chat-background: var(--white);
   --chat-background-default: var(--neutral-1);
   --chat-border: var(--primary-200);
@@ -60131,6 +60969,132 @@ html.disable-forced-colors * {
     --channeltextarea-background: color-mix(
       in oklab,
       var(--primary-160) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-brand: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-1: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-10: color-mix(
+      in oklab,
+      var(--yellow-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-2: color-mix(
+      in oklab,
+      var(--orange-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-3: color-mix(
+      in oklab,
+      var(--pink-55) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-4: color-mix(
+      in oklab,
+      var(--teal-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-5: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-6: color-mix(
+      in oklab,
+      var(--pink-55) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-7: color-mix(
+      in oklab,
+      var(--yellow-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-8: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-9: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-1: color-mix(
+      in oklab,
+      var(--blue-new-15) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2: color-mix(
+      in oklab,
+      var(--blue-new-25) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-3: color-mix(
+      in oklab,
+      var(--blue-new-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4: color-mix(
+      in oklab,
+      var(--blue-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-5: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-6: color-mix(
+      in oklab,
+      var(--blue-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7: color-mix(
+      in oklab,
+      var(--blue-new-70) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-negative: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-neutral: color-mix(
+      in oklab,
+      var(--neutral-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-positive: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -61350,6 +62314,27 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--plum-11);
   --channels-default: var(--neutral-37);
   --channeltextarea-background: var(--plum-23);
+  --chart-brand: var(--blurple-50);
+  --chart-categorical-1: var(--blue-new-50);
+  --chart-categorical-10: var(--yellow-new-60);
+  --chart-categorical-2: var(--orange-new-50);
+  --chart-categorical-3: var(--pink-50);
+  --chart-categorical-4: var(--teal-new-50);
+  --chart-categorical-5: var(--green-new-50);
+  --chart-categorical-6: var(--pink-35);
+  --chart-categorical-7: var(--yellow-new-50);
+  --chart-categorical-8: var(--red-new-50);
+  --chart-categorical-9: var(--blurple-50);
+  --chart-mono-1: var(--blue-new-15);
+  --chart-mono-2: var(--blue-new-25);
+  --chart-mono-3: var(--blue-new-35);
+  --chart-mono-4: var(--blue-new-45);
+  --chart-mono-5: var(--blue-new-50);
+  --chart-mono-6: var(--blue-new-60);
+  --chart-mono-7: var(--blue-new-70);
+  --chart-negative: var(--red-new-50);
+  --chart-neutral: var(--neutral-40);
+  --chart-positive: var(--green-new-50);
   --chat-background: var(--black);
   --chat-background-default: var(--neutral-91);
   --chat-border: var(--plum-20);
@@ -62133,6 +63118,132 @@ html.disable-forced-colors * {
     --channeltextarea-background: color-mix(
       in oklab,
       var(--plum-23) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-brand: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-1: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-10: color-mix(
+      in oklab,
+      var(--yellow-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-2: color-mix(
+      in oklab,
+      var(--orange-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-3: color-mix(
+      in oklab,
+      var(--pink-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-4: color-mix(
+      in oklab,
+      var(--teal-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-5: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-6: color-mix(
+      in oklab,
+      var(--pink-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-7: color-mix(
+      in oklab,
+      var(--yellow-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-8: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-9: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-1: color-mix(
+      in oklab,
+      var(--blue-new-15) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2: color-mix(
+      in oklab,
+      var(--blue-new-25) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-3: color-mix(
+      in oklab,
+      var(--blue-new-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4: color-mix(
+      in oklab,
+      var(--blue-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-5: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-6: color-mix(
+      in oklab,
+      var(--blue-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7: color-mix(
+      in oklab,
+      var(--blue-new-70) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-negative: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-neutral: color-mix(
+      in oklab,
+      var(--neutral-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-positive: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -63350,6 +64461,27 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--plum-11);
   --channels-default: var(--neutral-35);
   --channeltextarea-background: var(--plum-15);
+  --chart-brand: var(--blurple-50);
+  --chart-categorical-1: var(--blue-new-50);
+  --chart-categorical-10: var(--yellow-new-60);
+  --chart-categorical-2: var(--orange-new-50);
+  --chart-categorical-3: var(--pink-50);
+  --chart-categorical-4: var(--teal-new-50);
+  --chart-categorical-5: var(--green-new-50);
+  --chart-categorical-6: var(--pink-35);
+  --chart-categorical-7: var(--yellow-new-50);
+  --chart-categorical-8: var(--red-new-50);
+  --chart-categorical-9: var(--blurple-50);
+  --chart-mono-1: var(--blue-new-15);
+  --chart-mono-2: var(--blue-new-25);
+  --chart-mono-3: var(--blue-new-35);
+  --chart-mono-4: var(--blue-new-45);
+  --chart-mono-5: var(--blue-new-50);
+  --chart-mono-6: var(--blue-new-60);
+  --chart-mono-7: var(--blue-new-70);
+  --chart-negative: var(--red-new-50);
+  --chart-neutral: var(--neutral-40);
+  --chart-positive: var(--green-new-50);
   --chat-background: var(--plum-16);
   --chat-background-default: var(--neutral-80);
   --chat-border: var(--plum-20);
@@ -64151,6 +65283,132 @@ html.disable-forced-colors * {
     --channeltextarea-background: color-mix(
       in oklab,
       var(--plum-15) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-brand: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-1: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-10: color-mix(
+      in oklab,
+      var(--yellow-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-2: color-mix(
+      in oklab,
+      var(--orange-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-3: color-mix(
+      in oklab,
+      var(--pink-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-4: color-mix(
+      in oklab,
+      var(--teal-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-5: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-6: color-mix(
+      in oklab,
+      var(--pink-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-7: color-mix(
+      in oklab,
+      var(--yellow-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-8: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-categorical-9: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-1: color-mix(
+      in oklab,
+      var(--blue-new-15) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2: color-mix(
+      in oklab,
+      var(--blue-new-25) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-3: color-mix(
+      in oklab,
+      var(--blue-new-35) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4: color-mix(
+      in oklab,
+      var(--blue-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-5: color-mix(
+      in oklab,
+      var(--blue-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-6: color-mix(
+      in oklab,
+      var(--blue-new-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7: color-mix(
+      in oklab,
+      var(--blue-new-70) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-negative: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-neutral: color-mix(
+      in oklab,
+      var(--neutral-40) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-positive: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -73845,4 +75103,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.56a02a8195e54d4c.css.map*/
+/*# sourceMappingURL=web.1d29cb7b06da3753.css.map*/
