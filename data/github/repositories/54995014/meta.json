@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/discord-api-docs",
   "created_at": "2016-03-29T17:11:53Z",
   "homepage": "https://discord.com/developers/docs/intro",
-  "size": 237622,
+  "size": 237766,
   "language": "MDX",
   "has_issues": true,
   "has_projects": false,
@@ -50,6 +50,8 @@
   "allow_forking": true,
   "is_template": false,
   "web_commit_signoff_required": false,
+  "has_pull_requests": true,
+  "pull_request_creation_policy": "all",
   "topics": [
     "discord",
     "discord-api",
