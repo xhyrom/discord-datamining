@@ -3998,6 +3998,7 @@
             DESIGN_SYSTEM_PILE: "Design Systems (Pile)",
             DESIGN_SYSTEM_SHEETS: "Design Systems (Sheets)",
             DESIGN_SYSTEM_FORM_PRIMITIVES: "Design Systems (Form Primitives)",
+            DESIGN_SYSTEM_LEGACY_BUTTON: "Design System (Legacy Button)",
             ADVANCED: "Advanced",
             PROFILE_CUSTOMIZATION: "Profile Customization",
             PROFILE_CUSTOMIZATION_TRY_IT_OUT:
@@ -6353,7 +6354,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-23a66a60e0ddae8168ebbaa9a5b42dba7becb051",
+            release: "discord_web-a216b3d001ac8ea6351826c038905a40d7e518f6",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6419,8 +6420,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "497824"),
-            _.NA("builtAt", String("1771337745683"));
+            _.NA("buildNumber", "497894"),
+            _.NA("builtAt", String("1771349562360"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -37125,4 +37126,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.9326c579e26fcfe6.js.map
+//# sourceMappingURL=sentry.5e031809eca8ead4.js.map
