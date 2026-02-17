@@ -46385,6 +46385,11 @@ div.mobilePushContainer__3d3b0 {
   margin: 0 24px 16px;
   text-align: center;
 }
+.newPerkCardsEnabled__3af27 .heading__3af27 {
+  font-style: italic;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
 .sectionHeader__3af27 {
   display: flex;
   justify-content: space-between;
@@ -46412,6 +46417,9 @@ div.mobilePushContainer__3d3b0 {
 .subtitle__3af27 {
   margin: 0 24px 24px;
   max-width: 544px;
+}
+.newPerkCardsEnabled__3af27 .subtitle__3af27 {
+  margin: 0 0 16px;
 }
 .subtitleWithButton__3af27 {
   margin: 0 24px 16px;
@@ -75061,4 +75069,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.0569fe4d1bf0cac4.css.map*/
+/*# sourceMappingURL=web.3278c8395c007f76.css.map*/
