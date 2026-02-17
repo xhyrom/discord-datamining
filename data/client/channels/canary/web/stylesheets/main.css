@@ -34389,6 +34389,20 @@ div.mobilePushContainer__3d3b0 {
   position: relative;
   z-index: var(--custom-user-profile-top-layer-z-index);
 }
+.custom-user-profile-theme .banner__43147 {
+  background: linear-gradient(
+    color-mix(
+      in oklab,
+      var(--profile-gradient-overlay-color) 65%,
+      var(--profile-gradient-primary-color)
+    ),
+    color-mix(
+      in oklab,
+      var(--profile-gradient-overlay-color) 60%,
+      var(--profile-gradient-primary-color)
+    )
+  );
+}
 .user-profile-popout .banner__43147 {
   margin-bottom: -8px;
 }
@@ -75035,4 +75049,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.aa29cc1c081977d9.css.map*/
+/*# sourceMappingURL=web.b59e4b2678bbcf4a.css.map*/
