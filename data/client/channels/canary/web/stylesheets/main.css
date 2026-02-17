@@ -16676,6 +16676,33 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   font-weight: var(--font-weight-semibold);
   line-height: 18px;
 }
+.paymentModalLockIcon__9a648 {
+  color: var(--primary-500);
+  padding: 0 var(--space-16);
+}
+.theme-dark .paymentModalLockIcon__9a648 {
+  color: var(--primary-300);
+}
+.lockIcon__9a648 {
+  margin-inline-end: 2px;
+}
+.lockIconText__9a648 {
+  white-space: nowrap;
+}
+.checkoutModalFooter_e3bd55 {
+  align-items: center;
+}
+.checkoutModalFooterContent_e3bd55 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.justifyBetween_e3bd55 {
+  justify-content: space-between;
+}
+.justifyEnd_e3bd55 {
+  justify-content: flex-end;
+}
 .checkoutFooter_ebbc17 {
   padding: var(--space-16) var(--space-24) var(--space-24);
 }
@@ -17134,19 +17161,6 @@ body .headerAnimation_b54a5b {
 .headerAnimation_b54a5b {
   border-start-end-radius: calc(var(--radius-md) - 1px);
   border-start-start-radius: calc(var(--radius-md) - 1px);
-}
-.paymentModalLockIcon__9a648 {
-  color: var(--primary-500);
-  padding: 0 var(--space-16);
-}
-.theme-dark .paymentModalLockIcon__9a648 {
-  color: var(--primary-300);
-}
-.lockIcon__9a648 {
-  margin-inline-end: 2px;
-}
-.lockIconText__9a648 {
-  white-space: nowrap;
 }
 .primaryIcon__962c6 {
   height: 16px;
@@ -21706,6 +21720,7 @@ body .headerAnimation_b54a5b {
   flex: 1;
   gap: var(--space-4);
   min-width: 0;
+  text-transform: capitalize;
 }
 .divider_ad82d8 {
   background-color: var(--border-muted);
@@ -21863,6 +21878,9 @@ body .headerAnimation_b54a5b {
   flex-direction: column;
   gap: var(--space-4);
   width: 100%;
+}
+.capitalizedText_da8ac7 {
+  text-transform: capitalize;
 }
 .giftMessage_da8ac7 {
   align-items: center;
@@ -43710,15 +43728,6 @@ div.mobilePushContainer__3d3b0 {
 .premiumGroupNotice_e4d803 {
   margin: 12px 0;
 }
-.renewalInvoiceDate_d313e6 {
-  color: var(--text-default);
-  margin-bottom: 16px;
-}
-.paymentNote__56a21 {
-  background-color: var(--modal-background);
-  margin: 0;
-  padding: 16px 16px 0;
-}
 .warningContainer__98bed {
   align-items: center;
   background-color: var(--background-feedback-warning);
@@ -43728,27 +43737,13 @@ div.mobilePushContainer__3d3b0 {
   gap: var(--space-10);
   padding: var(--space-8);
 }
-.checkoutModalFooter_e3bd55 {
-  align-items: center;
-}
-.checkoutModalFooterContent_e3bd55 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
-.justifyBetween_e3bd55 {
-  justify-content: space-between;
-}
-.justifyEnd_e3bd55 {
-  justify-content: flex-end;
-}
 .stepBodyV1_bb5449 {
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
   padding-top: var(--space-16);
 }
-.topSpacer_bb5449 {
+.topInBetweenSpacer_bb5449 {
   height: var(--space-8);
 }
 .subscriptionDetailsContainer_bb5449 {
@@ -43778,6 +43773,19 @@ div.mobilePushContainer__3d3b0 {
 }
 .giftRedemptionLink_bb5449 {
   margin-top: var(--space-8);
+}
+.totalDueReviewStep_bb5449 {
+  margin-bottom: var(--space-12);
+  margin-top: 0;
+}
+.renewalInvoiceDate_d313e6 {
+  color: var(--text-default);
+  margin-bottom: 16px;
+}
+.paymentNote__56a21 {
+  background-color: var(--modal-background);
+  margin: 0;
+  padding: 16px 16px 0;
 }
 .offerNoticeContainerShared__005bd {
   background: linear-gradient(
@@ -75027,4 +75035,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.d6be795d67fb9196.css.map*/
+/*# sourceMappingURL=web.aa29cc1c081977d9.css.map*/
