@@ -3353,6 +3353,7 @@
             `/partner-sdk/guilds/${e}/application-storefront/skus/${t}/eligibility`,
           SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT: (e) =>
             `/partner-sdk/guilds/${e}/application-storefront/announcement`,
+          SOCIAL_LAYER_STOREFRONT_CONFIG: "/partner-sdk/storefront-config",
           ORDER_GET: (e) => `/billing/orders/${e}`,
           ORDER_CREATE: "/billing/orders",
           ORDER_LIST: "/billing/orders",
@@ -4477,6 +4478,8 @@
             "perk_discoverability_card_cta_clicked"),
           (n.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED =
             "premium_tenure_rewards_orbs_cta_clicked"),
+          (n.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION =
+            "premium_tenure_rewards_orbs_section_impression"),
           (n.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED =
             "premium_whats_new_box_cta_clicked"),
           (n.PREMIUM_WHATS_NEW_VIEW_TIME = "premium_whats_new_view_time"),
@@ -6095,6 +6098,7 @@
           (n.REPLY_NUDGES_SHOWN = "reply_nudges_shown"),
           (n.APP_TRANSACTION_ID_SYNCED = "app_transaction_id_synced"),
           (n.PARENTAL_CONSENT_CHECKED = "parental_consent_checked"),
+          (n.SEO_PAGE_CWV_MEASURED = "seo_page_cwv_measured"),
           n);
         Object.freeze({
           EMBEDDED_RELEASED: a.jB(1),
@@ -6350,7 +6354,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-02-13-c92f456e5a0d4980960f9845cbf829a0de16f979-discord_web",
+              "2026-02-17-e28cb2e80a3bc39c3c8151b3f1d02e9f6773425d-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6416,8 +6420,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "497254"),
-            _.NA("builtAt", String("1770970721935"));
+            _.NA("buildNumber", "497814"),
+            _.NA("builtAt", String("1771316320974"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -12890,6 +12894,7 @@
             (n[(n.EMOJI_ADDED = 63)] = "EMOJI_ADDED"),
             (n[(n.PREMIUM_GROUP_INVITE = 64)] = "PREMIUM_GROUP_INVITE"),
             (n[(n.VOICE_SESSION = 65)] = "VOICE_SESSION"),
+            (n[(n.GUILD_BOOST_UPSELL = 66)] = "GUILD_BOOST_UPSELL"),
             n);
       },
       122817() {},
@@ -37121,4 +37126,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.d0ff2252b811d464.js.map
+//# sourceMappingURL=sentry.85b0ba337a0d74d0.js.map
