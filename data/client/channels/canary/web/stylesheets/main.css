@@ -55717,17 +55717,22 @@ span.clanTag__07f91.isOverlay__07f91 {
   z-index: 1001;
 }
 .root__83a0c {
-  align-items: stretch;
   background: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-high);
   box-sizing: border-box;
+  max-width: 475px;
+  position: relative;
+}
+.header__83a0c,
+.root__83a0c {
   display: flex;
   flex-direction: column;
-  max-width: 475px;
+}
+.header__83a0c {
+  align-items: stretch;
   padding: var(--space-xl);
-  position: relative;
 }
 .title__83a0c {
   padding-bottom: var(--space-md);
@@ -55737,8 +55742,9 @@ span.clanTag__07f91.isOverlay__07f91 {
   background: var(--background-mod-subtle);
   border-radius: var(--radius-sm);
   display: flex;
+  flex-grow: 1;
   gap: var(--space-sm);
-  padding: var(--space-sm);
+  padding: var(--space-xs);
 }
 .locationIcon__83a0c {
   flex-shrink: 0;
@@ -55775,16 +55781,22 @@ span.clanTag__07f91.isOverlay__07f91 {
 .scroller__83a0c {
   border-bottom: 1px solid var(--border-subtle);
   border-top: 1px solid var(--border-subtle);
-  margin-top: var(--space-sm);
-  padding-bottom: var(--space-sm);
-  padding-top: var(--space-sm);
+  padding: var(--space-sm);
+}
+.scrollerTitle__83a0c {
+  margin-inline-start: var(--space-sm);
 }
 .voiceUsers__83a0c {
   display: flex;
-  gap: var(--space-md);
-  padding-top: var(--space-xs);
+  flex-direction: column;
 }
 .voiceUser__83a0c {
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: var(--space-xs) var(--space-sm);
+}
+.voiceUser__83a0c,
+.voiceUserInfo__83a0c {
   align-items: center;
   display: flex;
   gap: var(--space-sm);
@@ -55792,7 +55804,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 .actions__83a0c {
   display: flex;
   gap: var(--space-xs);
-  margin-top: var(--space-xl);
+  padding: var(--space-xl);
 }
 .center__83a0c {
   align-self: center;
@@ -75049,4 +75061,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.b59e4b2678bbcf4a.css.map*/
+/*# sourceMappingURL=web.0569fe4d1bf0cac4.css.map*/
