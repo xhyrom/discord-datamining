@@ -2758,6 +2758,7 @@
           USER_WISHLIST_ITEM: (e, t) => `/users/@me/wishlists/${e}/items/${t}`,
           USER_APPLICATION_IDENTITIES: (e) =>
             `/users/${e}/application-identities`,
+          USER_WISHLIST_RECOMMENDATIONS: "/wishlist/gift-recommendations",
           DM_CHANNEL: (e) => `/users/@me/dms/${e}`,
           USER_SETTINGS_PROTO: (e) => `/users/@me/settings-proto/${e}`,
           USER_ACTIVITY_METADATA: (e, t, r) =>
@@ -3066,6 +3067,7 @@
           RESEND_PHONE: "/phone-verifications/resend",
           RECENT_AVATARS: "/users/@me/avatars",
           RECENT_AVATARS_DELETE: (e) => `/users/@me/avatars/${e}`,
+          UNCLAIMED_GAMES: "/users/@me/unclaimed-games",
           USERS_ME_CUSTOM_THEMES: "/users/@me/custom-themes",
           CONNECTIONS: "/users/@me/connections",
           CONNECTIONS_AUTHORIZE: (e) => `/connections/${e}/authorize`,
@@ -3998,6 +4000,7 @@
             DESIGN_SYSTEM_PILE: "Design Systems (Pile)",
             DESIGN_SYSTEM_SHEETS: "Design Systems (Sheets)",
             DESIGN_SYSTEM_FORM_PRIMITIVES: "Design Systems (Form Primitives)",
+            DESIGN_SYSTEM_LEGACY_BUTTON: "Design System (Legacy Button)",
             ADVANCED: "Advanced",
             PROFILE_CUSTOMIZATION: "Profile Customization",
             PROFILE_CUSTOMIZATION_TRY_IT_OUT:
@@ -5088,7 +5091,6 @@
             "forum_channel_grid_upsell_viewed"),
           (n.MESSAGE_DISPATCH_SESSION_METADATA_FOUND =
             "message_dispatch_session_metadata_found"),
-          (n.MEDIA_CHANNEL_UPSELL_CLICKED = "media_channel_upsell_clicked"),
           (n.MEDIA_POST_PREVIEW_EMBED_CLICKED =
             "media_post_preview_embed_clicked"),
           (n.MEDIA_POST_SHARE_PROMPT_CLICKED =
@@ -5810,6 +5812,12 @@
             "slayer_storefront_page_element_clicked"),
           (n.SLAYER_STOREFRONT_FORWARD_MODAL_ELEMENT_CLICKED =
             "slayer_storefront_forward_modal_element_clicked"),
+          (n.SLAYER_STOREFRONT_PURCHASE_ELIGIBILITY_STARTED =
+            "slayer_storefront_purchase_eligibility_started"),
+          (n.SLAYER_STOREFRONT_PURCHASE_ELIGIBILITY_SKIPPED =
+            "slayer_storefront_purchase_eligibility_skipped"),
+          (n.SLAYER_STOREFRONT_PURCHASE_ELIGIBILITY_COMPLETED =
+            "slayer_storefront_purchase_eligibility_completed"),
           (n.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED =
             "commerce_shop_vc_gift_button_viewed"),
           (n.COMMERCE_SHOP_GIFTING_BREADCRUMB_VIEWED =
@@ -6354,7 +6362,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-02-17-1bd83914e01fc862eb5b7fe54e1d7adf9fe0f635-discord_web",
+              "2026-02-18-69127590e28b8b0b1874c8c330d4d117822d174d-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6420,8 +6428,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "498109"),
-            _.NA("builtAt", String("1771364481645"));
+            _.NA("buildNumber", "498386"),
+            _.NA("builtAt", String("1771402741024"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -37126,4 +37134,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.836979e22935a8ad.js.map
+//# sourceMappingURL=sentry.5db37d89ed88d3c0.js.map
