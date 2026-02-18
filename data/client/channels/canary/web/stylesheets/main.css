@@ -38808,9 +38808,10 @@ body .headerAnimation_b54a5b {
   align-self: stretch;
   display: flex;
   flex-direction: column;
+  max-width: 394px;
   padding-bottom: 16px;
   text-align: center;
-  width: 394px;
+  width: 100%;
 }
 .confirmationHeader__9baa5 {
   margin-bottom: 8px;
@@ -69337,4 +69338,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.68735d56d90b2291.css.map*/
+/*# sourceMappingURL=web.701b7fe734b2decc.css.map*/
