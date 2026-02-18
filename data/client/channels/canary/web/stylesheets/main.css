@@ -49970,6 +49970,24 @@ span.clanTag__07f91.isOverlay__07f91 {
 .enable-forced-colors .icon__07f91 {
   color: CanvasText;
 }
+.container__8d3d9 {
+  align-items: stretch;
+  display: flex;
+  gap: 1px;
+}
+.button__8d3d9 {
+  border-end-end-radius: 0;
+  border-start-end-radius: 0;
+  flex-grow: 1;
+  max-height: unset;
+}
+.caretButton__8d3d9 {
+  border-end-start-radius: 0;
+  border-start-start-radius: 0;
+  flex-shrink: 0;
+  max-height: unset;
+  padding-inline: 2px;
+}
 .wrapper__83a0c {
   pointer-events: all;
   z-index: 1001;
@@ -69319,4 +69337,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.a45cd63104fe8340.css.map*/
+/*# sourceMappingURL=web.68735d56d90b2291.css.map*/
