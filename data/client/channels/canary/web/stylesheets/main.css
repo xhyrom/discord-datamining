@@ -15447,11 +15447,19 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   position: relative;
   z-index: 2;
 }
+.ctaBarReducedMargin__00843 {
+  margin-bottom: var(--space-40);
+}
 .persistentCtaSpacer__00843 {
   height: 120px;
 }
 .perksTable__00843 {
   margin-bottom: var(--space-80);
+}
+.videoHeading__00843 {
+  margin-bottom: var(--space-32);
+  text-align: center;
+  width: 100%;
 }
 .wrapper_c50892 {
   display: flex;
@@ -16031,6 +16039,43 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .theme-light .guildName__9ed0b {
   color: var(--primary-800);
+}
+.container__040eb {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-high);
+  cursor: pointer;
+  display: grid;
+  margin: 0 auto var(--space-32);
+  max-width: 770px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.thumbnail__040eb {
+  display: block;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.overlay__040eb {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(25, 22, 58, 0.2) 0,
+    rgba(25, 22, 58, 0.9) 100%
+  );
+}
+.overlay__040eb,
+.playButton__040eb {
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.playButton__040eb {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .premiumTooltipFooterBackground__7d7fe {
   background: linear-gradient(90deg, #b473f5, #e292aa);
@@ -75069,4 +75114,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.3278c8395c007f76.css.map*/
+/*# sourceMappingURL=web.a7e1c2f81b8c86b6.css.map*/
