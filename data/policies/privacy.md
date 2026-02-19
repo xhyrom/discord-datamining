@@ -1772,7 +1772,7 @@
           Privacy Laws page located
           <a href="https://discord.com/terms/local-laws">here</a>.
         </p>
-        <p>‍<strong>To fulfill our contract with you</strong></p>
+        <p><strong>To fulfill our contract with you</strong></p>
         <ul role="list">
           <li>
             <strong>To provide you with the services</strong>. We use your
@@ -1902,7 +1902,7 @@
           additional information from you for the purpose of confirming your
           identity.
         </p>
-        <p>‍<strong>With your consent</strong></p>
+        <p><strong>With your consent</strong></p>
         <p>
           ‍We may also collect and use personal information with your consent,
           such as to send you marketing communications and personalize sponsored
@@ -1911,7 +1911,7 @@
           might not be able to use any service or feature that requires
           collection or use of that personal information.
         </p>
-        <p>‍<strong>To protect someone’s vital interests</strong></p>
+        <p><strong>To protect someone’s vital interests</strong></p>
         <p>
           We may collect or share personal data if we think someone’s life is in
           danger—for example, to help resolve an urgent medical situation.
@@ -1921,26 +1921,26 @@
         <h2>How we disclose your information</h2>
         <ul role="list">
           <li>
-            <strong>When you tell us to</strong>. When you add your content to
-            the services, you are telling us to make that content available to
-            certain people or communities. Who can access that information is
-            determined by who can access a particular space. For servers, those
-            permissions are set by server owners or admins. They control whether
-            a server requires an invite link or is open and accessible to
-            anyone. And these permissions, like the size of the server, may
-            change over time. Similarly, if you link your Discord account with a
-            third-party service (like a music-streaming service or gaming
-            platform), embed content, interact with third-party content posted
-            on Discord, interact with users on other services who have linked
-            their account, or participate in a server that has third-party
-            features like bots enabled, we may provide certain information to
-            that service or to other Discord users to operate that content,
-            service, or feature. Additionally, if you purchase goods or services
-            from other users on Discord, we may disclose certain information to
-            these users in order to facilitate the delivery of the goods or
-            services purchased or help them understand and improve their
-            business. We may also disclose your information as you otherwise
-            instruct us or provide us your consent to do so.
+            <strong>When you tell us to</strong>.<strong> </strong>When you add
+            your content to the services, you are telling us to make that
+            content available to certain people or communities. Who can access
+            that information is determined by who can access a particular space.
+            For servers, those permissions are set by server owners or admins.
+            They control whether a server requires an invite link or is open and
+            accessible to anyone. And these permissions, like the size of the
+            server, may change over time. Similarly, if you link your Discord
+            account with a third-party service (like a music-streaming service
+            or gaming platform), embed content, interact with third-party
+            content posted on Discord, interact with users on other services who
+            have linked their account, or participate in a server that has
+            third-party features like bots enabled, we may provide certain
+            information to that service or to other Discord users to operate
+            that content, service, or feature. Additionally, if you purchase
+            goods or services from other users on Discord, we may disclose
+            certain information to these users in order to facilitate the
+            delivery of the goods or services purchased or help them understand
+            and improve their business. We may also disclose your information as
+            you otherwise instruct us or provide us your consent to do so.
           </li>
           <li>
             <strong>With our vendors</strong>. We may provide information to
@@ -2061,7 +2061,7 @@
           >.
         </p>
         <p>
-          ‍<strong
+          <strong
             >Be aware of the Discord spaces you choose to participate in</strong
           >
         </p>
@@ -2075,7 +2075,7 @@
           spaces, such as servers listed in Server Discovery or with public
           invite links, your content may be accessed by anyone.
         </p>
-        <p>‍<strong>Customize your personal Discord settings</strong></p>
+        <p><strong>Customize your personal Discord settings</strong></p>
         <p>
           We offer a number of settings that allow you to tailor your experience
           within Discord. Some of these relate to specific features: for
