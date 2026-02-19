@@ -38187,6 +38187,9 @@ body .headerAnimation_b54a5b {
   color: var(--text-default);
   margin-bottom: 16px;
 }
+.unifiedCheckoutInvoicePreviewLoader_d313e6 {
+  margin-top: 60px;
+}
 .paymentNote__56a21 {
   background-color: var(--modal-background);
   margin: 0;
@@ -69806,4 +69809,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f7ef3c20cd671cf4.css.map*/
+/*# sourceMappingURL=web.f353c381b2f1c0a6.css.map*/
