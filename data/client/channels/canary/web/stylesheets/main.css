@@ -6366,6 +6366,11 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   max-width: 272px;
   padding: var(--space-8) var(--space-12);
 }
+.richTooltipContentLg_a89985 {
+  gap: var(--space-16);
+  max-width: 372px;
+  padding: var(--space-16);
+}
 .assetContainer_a89985 {
   align-items: center;
   display: flex;
@@ -29600,17 +29605,20 @@ html:not(.chat-input) .inputInner_b1f01d {
   );
 }
 .usernameRow__63ed3 {
-  gap: 8px;
-}
-.tags__63ed3,
-.usernameRow__63ed3 {
   align-items: center;
   display: flex;
   flex-direction: row;
+  gap: 8px;
+}
+.usernameRow__63ed3 .botTag__63ed3 {
+  vertical-align: middle;
 }
 .tags__63ed3 {
+  align-items: center;
   -moz-column-gap: 9.33px;
   column-gap: 9.33px;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .user-profile-popout .tags__63ed3,
@@ -69798,4 +69806,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.70717ec40929c341.css.map*/
+/*# sourceMappingURL=web.56b6369511550e8a.css.map*/
