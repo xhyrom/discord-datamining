@@ -38127,7 +38127,7 @@ body .headerAnimation_b54a5b {
 .invoiceSummaryContainer_bb5449 {
   margin-bottom: var(--space-12);
 }
-.reviewStepBody_bb5449 {
+.stepBodyMinHeight_bb5449 {
   min-height: 300px;
 }
 .checkoutInlineNoticeContainer_bb5449 {
@@ -38140,7 +38140,6 @@ body .headerAnimation_b54a5b {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 300px;
 }
 .giftRedemptionLink_bb5449 {
   margin-top: var(--space-8);
@@ -69344,4 +69343,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.ba582f1a471f971a.css.map*/
+/*# sourceMappingURL=web.4a2c69aa56533d8e.css.map*/

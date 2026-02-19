@@ -1462,7 +1462,7 @@
   "subscriptionDetailsContainer": "subscriptionDetailsContainer_bb5449",
   "invoiceSummaryContainer": "invoiceSummaryContainer_bb5449",
   "paymentMethodContainer": "paymentMethodContainer_bb5449",
-  "reviewStepBody": "reviewStepBody_bb5449",
+  "stepBodyMinHeight": "stepBodyMinHeight_bb5449",
   "checkoutInlineNoticeContainer": "checkoutInlineNoticeContainer_bb5449",
   "giftRedemptionLink": "giftRedemptionLink_bb5449",
   "totalDueReviewStep": "totalDueReviewStep_bb5449",
