@@ -3410,6 +3410,8 @@
           USER_PERKS_DEMOS_ACTIVATE: (e) =>
             `/users/@me/activate-perk-demo/${e}`,
           GUILD_DISCOVERY: "/discoverable-guilds",
+          MOBILE_GAME_COMMUNITIES:
+            "/discoverable-guilds/mobile-game-communities",
           GUILD_DISCOVERY_SEARCH: "/discoverable-guilds/search",
           GUILD_DISCOVERY_CATEGORIES: "/discovery/categories",
           GUILD_DISCOVERY_SLUG: (e) => `/discovery/${e}`,
@@ -3542,7 +3544,6 @@
           HUB_EMAIL_VERIFY: "/guilds/automations/email-domain-lookup/verify",
           HUB_EMAIL_VERIFY_CODE:
             "/guilds/automations/email-domain-lookup/verify-code",
-          OUTBOUND_PROMOTIONS: "/outbound-promotions",
           PROMOTIONS: "/promotions",
           BOGO_PROMOTIONS: "/bogo-promotions",
           CLAIMED_OUTBOUND_PROMOTION_CODES:
@@ -5631,8 +5632,6 @@
           (n.REFERRAL_PROGRAM_SHARE_CTA_CLICKED =
             "referral_program_share_cta_clicked"),
           (n.CACHE_STORE_CACHE_SKIPPED = "cache_store_cache_skipped"),
-          (n.GATEWAY_CONNECT_SKIPPED = "gateway_connect_skipped"),
-          (n.POST_GATEWAY_CONNECT_SKIPPED = "post_gateway_connect_skipped"),
           (n.GATEWAY_BRIDGE_TIMEOUT = "gateway_bridge_timeout"),
           (n.GATEWAY_SOCKET_RESET = "gateway_socket_reset"),
           (n.SESSION_START_CLIENT = "session_start_client"),
@@ -6085,7 +6084,6 @@
           (n.ORB_BALANCE_ACTION_SHEET_ACTION =
             "orb_balance_action_sheet_action"),
           (n.SESSION_START_PAGE_VIEWED = "session_start_page_viewed"),
-          (n.LOW_PERFORMANCE_MODE_OPT_OUT = "low_performance_mode_opt_out"),
           (n.IMPRESSION_GIFT_OPTION_WISHLIST_BANNER_VIEWED =
             "impression_gift_option_wishlist_banner_viewed"),
           (n.GAME_COMMUNITY_UPSELL_VIEWED = "game_community_upsell_viewed"),
@@ -6362,7 +6360,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-02-18-69127590e28b8b0b1874c8c330d4d117822d174d-discord_web",
+              "2026-02-19-1e0a7fd5201fc45cd80deec09db0cdd1103a51fe-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6428,8 +6426,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "498386"),
-            _.NA("builtAt", String("1771402741024"));
+            _.NA("buildNumber", "499123"),
+            _.NA("builtAt", String("1771489134054"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -37134,4 +37132,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.5db37d89ed88d3c0.js.map
+//# sourceMappingURL=sentry.000625dd66c36405.js.map
