@@ -50538,6 +50538,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 .scroller__83a0c {
   border-bottom: 1px solid var(--border-subtle);
   border-top: 1px solid var(--border-subtle);
+  max-height: 156px;
   padding: var(--space-sm);
 }
 .scrollerTitle__83a0c {
@@ -69818,4 +69819,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.fe2a4ff07a3087ca.css.map*/
+/*# sourceMappingURL=web.0cf5429da0060da2.css.map*/
