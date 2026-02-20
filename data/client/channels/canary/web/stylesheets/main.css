@@ -38177,8 +38177,11 @@ body .headerAnimation_b54a5b {
   margin-top: var(--space-8);
 }
 .totalDueReviewStep_bb5449 {
-  margin-bottom: var(--space-12);
   margin-top: 0;
+}
+.promotionalNoticeContainer_bb5449,
+.totalDueReviewStep_bb5449 {
+  margin-bottom: var(--space-12);
 }
 .previewTotalSectionContainer_b41cc5 {
   margin-top: var(--space-16);
@@ -38195,7 +38198,7 @@ body .headerAnimation_b54a5b {
   margin: 0;
   padding: 16px 16px 0;
 }
-.offerNoticeContainerShared__005bd {
+.offerNoticeContainerShared__3e43f {
   background: linear-gradient(
     90deg,
     rgba(88, 101, 242, 0.24),
@@ -38204,27 +38207,27 @@ body .headerAnimation_b54a5b {
   box-sizing: border-box;
   color: var(--text-strong);
 }
-.offerNoticeContainer__005bd {
+.offerNoticeContainer__3e43f {
   align-items: center;
   border-radius: var(--radius-md);
   display: flex;
   gap: var(--space-8);
 }
-.offerNoticeContainer__005bd.standard__005bd {
+.offerNoticeContainer__3e43f.standard__3e43f {
   min-width: 200px;
   padding: var(--space-8) var(--space-12);
   width: 100%;
 }
-.offerNoticeContent__005bd {
+.offerNoticeContent__3e43f {
   display: flex;
   flex-direction: column;
 }
-.offerNoticeBody__005bd {
+.offerNoticeBody__3e43f {
   align-items: center;
   display: flex;
   gap: var(--space-4);
 }
-.offerNoticeOneLineContainer__005bd {
+.offerNoticeOneLineContainer__3e43f {
   align-items: center;
   align-self: stretch;
   border-radius: var(--radius-md);
@@ -38233,7 +38236,7 @@ body .headerAnimation_b54a5b {
   padding: var(--space-8) var(--space-16);
   width: 100%;
 }
-.offerNoticeOneLineText__005bd {
+.offerNoticeOneLineText__3e43f {
   text-align: start;
 }
 .profileEffectContainer_a84142 {
@@ -38449,7 +38452,7 @@ body .headerAnimation_b54a5b {
 .socialLayerGameItemDisclaimer_b44961 {
   margin-top: 16px;
 }
-.orbsRewardNotice_b44961 {
+.oneTimePurchaseRewardNotice_b44961 {
   margin-top: var(--space-16);
 }
 .back_e125f1 {
@@ -69809,4 +69812,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f353c381b2f1c0a6.css.map*/
+/*# sourceMappingURL=web.766a5061ec02d5ca.css.map*/
