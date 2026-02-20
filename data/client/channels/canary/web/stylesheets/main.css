@@ -50479,8 +50479,8 @@ span.clanTag__07f91.isOverlay__07f91 {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-high);
   box-sizing: border-box;
-  max-width: 475px;
   position: relative;
+  width: var(--custom-modal-width);
 }
 .header__83a0c,
 .root__83a0c {
@@ -69819,4 +69819,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.0cf5429da0060da2.css.map*/
+/*# sourceMappingURL=web.e1b790ad6a0873ab.css.map*/
