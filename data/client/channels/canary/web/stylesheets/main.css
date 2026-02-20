@@ -37654,18 +37654,23 @@ body .headerAnimation_b54a5b {
 }
 .priceContainer_da8ac7 {
   align-items: flex-end;
-  display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  justify-content: space-between;
+}
+.currentPrice_da8ac7,
+.priceContainer_da8ac7 {
+  display: flex;
+  gap: var(--space-4);
 }
 .currentPrice_da8ac7 {
   align-items: center;
-  display: flex;
-  gap: var(--space-4);
   white-space: nowrap;
 }
-.originalPrice_da8ac7 {
+.strikethroughPrice_da8ac7 {
   text-decoration: line-through;
+}
+.originalPrice_da8ac7 {
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
   white-space: nowrap;
@@ -37931,6 +37936,10 @@ body .headerAnimation_b54a5b {
 .compactSelectGiftTitle_d947e6 {
   margin-top: 16px;
 }
+.currencyWrapper_b41cc5,
+.previewTotalSectionContainer_b41cc5 {
+  margin-top: var(--space-16);
+}
 .subscriptionCostRowAmount__3d62f {
   font-weight: var(--font-weight-medium);
 }
@@ -38182,9 +38191,6 @@ body .headerAnimation_b54a5b {
 .promotionalNoticeContainer_bb5449,
 .totalDueReviewStep_bb5449 {
   margin-bottom: var(--space-12);
-}
-.previewTotalSectionContainer_b41cc5 {
-  margin-top: var(--space-16);
 }
 .renewalInvoiceDate_d313e6 {
   color: var(--text-default);
@@ -69812,4 +69818,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.766a5061ec02d5ca.css.map*/
+/*# sourceMappingURL=web.fe2a4ff07a3087ca.css.map*/
