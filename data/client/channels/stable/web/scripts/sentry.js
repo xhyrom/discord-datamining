@@ -5435,6 +5435,7 @@
           (n.IN_APP_NOTIFICATION_SHOWN = "in_app_notification_shown"),
           (n.IN_APP_NOTIFICATION_DISMISSED = "in_app_notification_dismissed"),
           (n.IN_APP_NOTIFICATION_SUPPRESSED = "in_app_notification_suppressed"),
+          (n.IN_APP_NOTIFICATION_CREATED = "in_app_notification_created"),
           (n.PASSPORT_CHALLENGE_VIEWED = "passport_challenge_viewed"),
           (n.PASSPORT_CHALLENGE_STARTED = "passport_challenge_started"),
           (n.PASSPORT_CHALLENGE_FINISHED = "passport_challenge_finished"),
@@ -5567,6 +5568,10 @@
             "nsfw_space_warning_modal_clicked"),
           (n.BOOSTING_UPSELL_VIEWED = "boosting_upsell_viewed"),
           (n.BOOSTING_UPSELL_CLICKED = "boosting_upsell_clicked"),
+          (n.BOOSTING_MARKETING_VIDEO_PLAYED =
+            "boosting_marketing_video_played"),
+          (n.BOOSTING_MARKETING_VIDEO_COMPLETED =
+            "boosting_marketing_video_completed"),
           (n.TNS_SKU_REPORT_SUBMITTED = "tns_sku_report_submitted"),
           (n.TNS_USER_REPORT_SUBMITTED = "tns_user_report_submitted"),
           (n.MJ_CHAT_BAR_CTA_CLICKED = "mj_chat_bar_cta_clicked"),
@@ -6360,7 +6365,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-02-19-1e0a7fd5201fc45cd80deec09db0cdd1103a51fe-discord_web",
+              "2026-02-20-c55be3eb78c9a333f3561538bd57d8e566dcdeeb-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6426,8 +6431,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "499123"),
-            _.NA("builtAt", String("1771489134054"));
+            _.NA("buildNumber", "499788"),
+            _.NA("builtAt", String("1771575557601"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -37132,4 +37137,4 @@ ${eQ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.000625dd66c36405.js.map
+//# sourceMappingURL=sentry.82a0517e5a4ad4b9.js.map
