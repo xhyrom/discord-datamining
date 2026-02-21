@@ -4586,10 +4586,7 @@
   },
   "SHARED_CANVAS_EMOJI_HOSES": {
     "url": "/channels/:param/:param/shared-canvas/emoji-hose",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "SHARED_CANVAS_EMOJI_HOSE": {
     "url": "/channels/:param/:param/shared-canvas/emoji-hose/:param",
