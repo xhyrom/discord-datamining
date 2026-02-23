@@ -6354,23 +6354,24 @@
       },
       168769(e, t, r) {
         "use strict";
-        r.d(t, { i: () => u });
+        r.d(t, { i: () => d });
         var n = r(501661),
           i = r(774099),
           a = r(122343),
-          _ = r(871186),
-          o = r(502513),
-          s = r(70298),
-          E = r(790171);
-        let c = ["oppobrowser", "realmebrowser", "heytapbrowser"],
-          l = (0, E.p)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
-        function u() {
+          _ = r(883950),
+          o = r(871186),
+          s = r(502513),
+          E = r(70298),
+          c = r(790171);
+        let l = ["oppobrowser", "realmebrowser", "heytapbrowser"],
+          u = (0, c.p)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
+        function d() {
           n.Ts({
             tunnel: "/error-reporting-proxy/web",
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-8dadf6e24767c8e6b98cbd972b1e7b5e90a0b7fd",
+            release: "discord_web-e56d96b28a96df1d2511fffacc8f018770475a26",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6382,15 +6383,15 @@
                         1 === e.stacktrace.frames.length),
                   ) &&
                   "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL) ||
-                c.some(
+                l.some(
                   (e) =>
                     window.navigator.appVersion.toLowerCase().indexOf(e) >= 0,
                 )
               ) &&
-                !(0, s.b)() &&
+                !(0, E.b)() &&
                 "Aborted" !== e.message &&
                 "cancel captcha" !== e.message &&
-                l()
+                u()
                 ? e
                 : null;
             },
@@ -6404,6 +6405,7 @@
                 sentry: !0,
                 xhr: !0,
               }),
+              _.S(),
             ],
             ignoreErrors: [
               "EADDRINUSE",
@@ -6436,11 +6438,11 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "500570"),
-            _.NA("builtAt", String("1771869025087"));
+            o.NA("buildNumber", "500630"),
+            o.NA("builtAt", String("1771872686633"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
-          if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
-          return o;
+          if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
+          return s;
         }
       },
       435220(e, t, r) {
@@ -37566,4 +37568,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.294ab1a5865f7bc1.js.map
+//# sourceMappingURL=sentry.75c35765fd17e551.js.map
