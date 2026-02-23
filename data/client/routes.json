@@ -4579,10 +4579,7 @@
   },
   "SHARED_CANVAS_LINES": {
     "url": "/channels/:param/:param/shared-canvas/lines",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "SHARED_CANVAS_EMOJI_HOSES": {
     "url": "/channels/:param/:param/shared-canvas/emoji-hose",
@@ -4590,10 +4587,7 @@
   },
   "SHARED_CANVAS_EMOJI_HOSE": {
     "url": "/channels/:param/:param/shared-canvas/emoji-hose/:param",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "BURST_CREDIT_BALANCE": {
     "url": "/users/@me/burst-credits",
@@ -4843,17 +4837,11 @@
   },
   "SEND_GAMING_STATS": {
     "url": "/:param/gaming-stats",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "UPDATE_GAMING_STATS": {
     "url": "/:param/:param/update-gaming-stats",
-    "allowed_methods": [
-      "OPTIONS",
-      "PATCH"
-    ]
+    "allowed_methods": null
   },
   "BULK_GUILD_BAN": {
     "url": "/guilds/:param/bulk-ban",
