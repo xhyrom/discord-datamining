@@ -1283,6 +1283,7 @@
   "breadcrumbsWrapper": "breadcrumbsWrapper_a8c622",
   "breadcrumbsWrapperManaModal": "breadcrumbsWrapperManaModal_a8c622",
   "errorBlockWrapper": "errorBlockWrapper_a8c622",
+  "errorBlockWrapperLegacy": "errorBlockWrapperLegacy_a8c622",
   "paymentNote": "paymentNote_a8c622",
   "loadingBlock": "loadingBlock_a8c622",
   "sequencer": "sequencer_a8c622",

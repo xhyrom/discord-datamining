@@ -3877,7 +3877,7 @@
             TERMS_SUMMARY: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/safety/important-policy-updates`,
             PAID_TERMS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/terms/paid-services-terms`,
             PAID_TERMS_VIRTUAL_GOODS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/terms/paid-services-terms#6`,
-            PAID_TERMS_ORBS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/terms/paid-services-terms#13`,
+            PAID_TERMS_ORBS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/terms/paid-services-terms#14`,
             PRIVACY: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/privacy`,
             GUIDELINES: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/guidelines`,
             ACKNOWLEDGEMENTS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/acknowledgements`,
@@ -6371,7 +6371,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-d69dd975cab0b3a92f8b81c753812881ed6a4751",
+            release: "discord_web-d066d966e3b3b4386018fb122ce678589f768cd5",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6438,8 +6438,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "500691"),
-            o.NA("builtAt", String("1771875447308"));
+            o.NA("buildNumber", "500745"),
+            o.NA("builtAt", String("1771877922595"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -37568,4 +37568,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.32d842cde8868917.js.map
+//# sourceMappingURL=sentry.f8b02afd8b05434d.js.map

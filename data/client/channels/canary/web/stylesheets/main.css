@@ -32773,7 +32773,10 @@ body .headerAnimation_b54a5b {
   padding: 0 16px 16px;
 }
 .errorBlockWrapper_a8c622 {
-  padding: 16px 16px 0;
+  padding-bottom: 16px;
+}
+.errorBlockWrapperLegacy_a8c622 {
+  padding: 16px;
 }
 .paymentNote_a8c622 {
   padding: 0 16px;
@@ -36331,9 +36334,6 @@ body .headerAnimation_b54a5b {
 .connectionInstructions_d2b05e {
   margin-top: 8px;
   text-align: center;
-}
-.body_b25217 {
-  margin: var(--space-16) 0;
 }
 .flexColumn_b25217 {
   display: flex;
@@ -69862,4 +69862,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.db95c254e8f1fb02.css.map*/
+/*# sourceMappingURL=web.c1cb705bb3d115b9.css.map*/
