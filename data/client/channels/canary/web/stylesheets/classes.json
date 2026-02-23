@@ -1760,6 +1760,7 @@
   "keyCombo": "keyCombo_cbf20c",
   "keyComboKey": "keyComboKey_cbf20c",
   "animationWrapper": "animationWrapper_e8d31f",
+  "animationWrapperStacked": "animationWrapperStacked_e8d31f",
   "clickZone": "clickZone_e8d31f",
   "overflowWrapper": "overflowWrapper_e8d31f",
   "iconAndDetails": "iconAndDetails_e8d31f",

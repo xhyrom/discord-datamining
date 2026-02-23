@@ -47972,6 +47972,10 @@ svg.radioIcon_c1e9c4 {
   transform-origin: 50% 100%;
   width: 100%;
 }
+.animationWrapperStacked_e8d31f {
+  min-width: unset !important;
+  width: unset !important;
+}
 .clickZone_e8d31f {
   position: absolute;
   top: 0;
@@ -69862,4 +69866,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.c1cb705bb3d115b9.css.map*/
+/*# sourceMappingURL=web.27700503b295876f.css.map*/
