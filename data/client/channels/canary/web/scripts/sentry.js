@@ -4037,6 +4037,8 @@
             IOS: "https://itunes.apple.com/app/discord/id985746746",
             ANDROID:
               "https://play.google.com/store/apps/details?id=com.discord",
+            META_QUEST:
+              "https://www.meta.com/experiences/discord-talk-play-hang-out/25956082250713643/?require_login=true",
           }),
           (0, _.Hl)(0x99aab5),
           Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
@@ -6366,7 +6368,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-069858873e9e4dc3e859f949d6fe6d9e858fddc7",
+            release: "discord_web-4fc23ef3c120573ac97be690015807ac3364cd78",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6432,8 +6434,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "500490"),
-            _.NA("builtAt", String("1771861488644"));
+            _.NA("buildNumber", "500517"),
+            _.NA("builtAt", String("1771864533967"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
           return o;
@@ -37562,4 +37564,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.ebd77107025527ca.js.map
+//# sourceMappingURL=sentry.57efb29fed99e511.js.map
