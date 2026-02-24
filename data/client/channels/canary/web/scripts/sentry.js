@@ -6375,7 +6375,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-28036bc7e683f2919d8ee69b381b2ebaacea6f6a",
+            release: "discord_web-965bb8c2fab935c6508a888d10fc2d961cf68ff4",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6442,8 +6442,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "501202"),
-            o.NA("builtAt", String("1771947663217"));
+            o.NA("buildNumber", "501239"),
+            o.NA("builtAt", String("1771952817306"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6741,7 +6741,8 @@
             null == window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT &&
             null == window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST &&
             null == window.GLOBAL_ENV.PUBLIC_PATH &&
-            null == window.GLOBAL_ENV.MUX_ENV_KEY)
+            null == window.GLOBAL_ENV.MUX_ENV_KEY &&
+            null == window.GLOBAL_ENV.WEBAUTHN_ORIGIN)
         )
           throw (
             (window.alert("Global environment variables not set!"),
@@ -37572,4 +37573,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.bc5693de9468554e.js.map
+//# sourceMappingURL=sentry.14762c297323e9a6.js.map
