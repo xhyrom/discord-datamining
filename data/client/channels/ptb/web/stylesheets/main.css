@@ -24023,7 +24023,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   border-radius: var(
     --custom-stickers-constants-sticker-picker-preview-border-radius
   );
-  padding: var(--custom-stickers-constants-sticker-picker-preview-padding);
 }
 .sticker_c6367b:after {
   border: 3px solid var(--yellow-300);
@@ -31585,6 +31584,7 @@ html:not(.chat-input) .inputInner_b1f01d {
   width: 100%;
 }
 .card__9ed47 {
+  aspect-ratio: 1/1;
   background-color: var(--background-surface-highest);
   border-radius: var(--radius-md);
   box-shadow:
@@ -31609,14 +31609,6 @@ html:not(.chat-input) .inputInner_b1f01d {
 .card__9ed47:focus-within,
 .card__9ed47:hover {
   transform: scale(1.025);
-}
-.card__9ed47.sizeSmall__9ed47 {
-  height: 90px;
-  width: 90px;
-}
-.card__9ed47.sizeLarge__9ed47 {
-  height: 133px;
-  width: 133px;
 }
 .cardPreview__9ed47 {
   align-items: center;
@@ -32757,6 +32749,9 @@ body .headerAnimation_b54a5b {
   margin: 0 16px;
   padding: 16px 0;
 }
+.breadcrumbsWrapperManaModal_a8c622 {
+  margin: 0;
+}
 .bodyWrapper_a8c622 {
   display: flex;
   flex: 1 1 auto;
@@ -32770,7 +32765,10 @@ body .headerAnimation_b54a5b {
   padding: 0 16px 16px;
 }
 .errorBlockWrapper_a8c622 {
-  padding: 16px 16px 0;
+  padding-bottom: 16px;
+}
+.errorBlockWrapperLegacy_a8c622 {
+  padding: 16px;
 }
 .paymentNote_a8c622 {
   padding: 0 16px;
@@ -36329,9 +36327,6 @@ body .headerAnimation_b54a5b {
   margin-top: 8px;
   text-align: center;
 }
-.body_b25217 {
-  margin: var(--space-16) 0;
-}
 .flexColumn_b25217 {
   display: flex;
   flex-direction: column;
@@ -37694,7 +37689,6 @@ body .headerAnimation_b54a5b {
   align-items: flex-end;
   flex-direction: column;
   flex-shrink: 0;
-  justify-content: space-between;
 }
 .currentPrice_da8ac7,
 .priceContainer_da8ac7 {
@@ -37753,6 +37747,26 @@ body .headerAnimation_b54a5b {
   gap: var(--space-4);
   width: -moz-max-content;
   width: max-content;
+}
+.paymentSourceItem__48a20 {
+  background-color: var(--background-mod-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  cursor: default;
+  justify-content: space-between;
+  padding: 18px var(--space-12);
+}
+.paymentSourceBalanceTag__48a20,
+.paymentSourceItem__48a20 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.paymentSourceBalanceTag__48a20 {
+  gap: 4px;
+}
+.displayFlex__48a20 {
+  display: flex;
 }
 .planOption_b13085 {
   align-items: center;
@@ -39062,6 +39076,9 @@ body .headerAnimation_b54a5b {
 .displayFlex__83734 {
   display: flex;
 }
+.orbUnifiedReviewStepBody_a22556 {
+  min-height: 200px;
+}
 .stepBody_a3d32e {
   display: flex;
   flex-direction: row;
@@ -39201,12 +39218,9 @@ body .headerAnimation_b54a5b {
   margin-top: -1px;
 }
 .container__3a590 {
-  background: var(--background-surface-highest);
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 12px;
 }
 .header__3a590 {
   align-items: center;
@@ -39682,6 +39696,8 @@ body .headerAnimation_b54a5b {
   display: flex;
 }
 .popoutGiftingBreadcrumb_af3b89 {
+  background: var(--background-surface-highest);
+  border-radius: 12px;
   margin-top: 16px;
   padding: 16px;
 }
@@ -47969,6 +47985,10 @@ svg.radioIcon_c1e9c4 {
   position: absolute;
   transform-origin: 50% 100%;
   width: 100%;
+}
+.animationWrapperStacked_e8d31f {
+  min-width: unset !important;
+  width: unset !important;
 }
 .clickZone_e8d31f {
   position: absolute;
@@ -69105,7 +69125,6 @@ code {
   --custom-stickers-constants-stickers-shop-list-section-footer-stacked-margin: 8px;
   --custom-stickers-constants-sticker-picker-preview-dimensions: 96px;
   --custom-stickers-constants-sticker-picker-preview-dimensions-small: 80px;
-  --custom-stickers-constants-sticker-picker-preview-padding: 2px;
   --custom-stickers-constants-sticker-shop-modal-preview-dimensions: 72px;
   --custom-stickers-constants-sticker-picker-preview-margin: 12px;
   --custom-stickers-constants-sticker-picker-preview-margin-small: 4px;
@@ -69860,4 +69879,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.191c74a55f2fe684.css.map*/
+/*# sourceMappingURL=web.bb3e393afaee7be4.css.map*/
