@@ -3877,7 +3877,7 @@
             TERMS_SUMMARY: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/safety/important-policy-updates`,
             PAID_TERMS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/terms/paid-services-terms`,
             PAID_TERMS_VIRTUAL_GOODS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/terms/paid-services-terms#6`,
-            PAID_TERMS_ORBS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/terms/paid-services-terms#13`,
+            PAID_TERMS_ORBS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/terms/paid-services-terms#14`,
             PRIVACY: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/privacy`,
             GUIDELINES: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/guidelines`,
             ACKNOWLEDGEMENTS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/acknowledgements`,
@@ -3906,6 +3906,8 @@
             DEVELOPER_PORTAL_TEAMS: "/developers/teams",
             DEVELOPER_PORTAL_EDIT_PAYOUTS: (e) =>
               `/developers/teams/${e}/payout-settings`,
+            DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY:
+              "/developers/applications/select/game-identity",
           }),
           Object.freeze({
             TEXT_PLAYGROUND: "Text Playground",
@@ -4037,6 +4039,8 @@
             IOS: "https://itunes.apple.com/app/discord/id985746746",
             ANDROID:
               "https://play.google.com/store/apps/details?id=com.discord",
+            META_QUEST:
+              "https://www.meta.com/experiences/discord-talk-play-hang-out/25956082250713643/?require_login=true",
           }),
           (0, _.Hl)(0x99aab5),
           Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
@@ -6350,24 +6354,25 @@
       },
       168769(e, t, r) {
         "use strict";
-        r.d(t, { i: () => u });
+        r.d(t, { i: () => d });
         var n = r(501661),
           i = r(774099),
           a = r(122343),
-          _ = r(871186),
-          o = r(502513),
-          s = r(70298),
-          E = r(790171);
-        let c = ["oppobrowser", "realmebrowser", "heytapbrowser"],
-          l = (0, E.p)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
-        function u() {
+          _ = r(883950),
+          o = r(871186),
+          s = r(502513),
+          E = r(70298),
+          c = r(790171);
+        let l = ["oppobrowser", "realmebrowser", "heytapbrowser"],
+          u = (0, c.p)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
+        function d() {
           n.Ts({
             tunnel: "/error-reporting-proxy/web",
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-02-23-66413e7c3c25a24ae8a1d0d75b276d98b488ce4a-discord_web",
+              "2026-02-24-dd72d28d9cd26eb09b201e0178d40be4016a42ee-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6379,15 +6384,15 @@
                         1 === e.stacktrace.frames.length),
                   ) &&
                   "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL) ||
-                c.some(
+                l.some(
                   (e) =>
                     window.navigator.appVersion.toLowerCase().indexOf(e) >= 0,
                 )
               ) &&
-                !(0, s.b)() &&
+                !(0, E.b)() &&
                 "Aborted" !== e.message &&
                 "cancel captcha" !== e.message &&
-                l()
+                u()
                 ? e
                 : null;
             },
@@ -6401,6 +6406,7 @@
                 sentry: !0,
                 xhr: !0,
               }),
+              _.S(),
             ],
             ignoreErrors: [
               "EADDRINUSE",
@@ -6433,11 +6439,11 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.NA("buildNumber", "500870"),
-            _.NA("builtAt", String("1771884432692"));
+            o.NA("buildNumber", "501144"),
+            o.NA("builtAt", String("1771921131397"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
-          if (null != e && "object" == typeof e) for (let t in e) _.NA(t, e[t]);
-          return o;
+          if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
+          return s;
         }
       },
       435220(e, t, r) {
@@ -37563,4 +37569,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.2d7f046dffe6817d.js.map
+//# sourceMappingURL=sentry.8ce76f5bcc415f69.js.map
