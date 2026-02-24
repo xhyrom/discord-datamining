@@ -31114,9 +31114,7 @@ html:not(.chat-input) .inputInner_b1f01d {
 .itemIconHeart__39b32 {
   fill: var(--control-critical-primary-background-default);
 }
-.itemIconHeartWhite__39b32 {
-  fill: var(--white);
-}
+.itemIconHeartGreyscale__39b32,
 .itemIconShop__39b32 {
   fill: var(--icon-strong);
 }
@@ -39182,9 +39180,7 @@ body .headerAnimation_b54a5b {
 .itemIconHeart__20585 {
   fill: var(--control-critical-primary-background-default);
 }
-.itemIconHeartWhite__20585 {
-  fill: var(--white);
-}
+.itemIconHeartGreyscale__20585,
 .itemIconShop__20585 {
   fill: var(--icon-strong);
 }
@@ -69879,4 +69875,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.bb3e393afaee7be4.css.map*/
+/*# sourceMappingURL=web.7c267b0babf982fd.css.map*/
