@@ -1365,30 +1365,6 @@
 .theme-light .path3__46696 {
   opacity: 0.3;
 }
-.xxs__899bb {
-  height: 12px;
-  width: 12px;
-}
-.xs__899bb {
-  height: 16px;
-  width: 16px;
-}
-.sm__899bb {
-  height: 18px;
-  width: 18px;
-}
-.md__899bb {
-  height: 24px;
-  width: 24px;
-}
-.lg__899bb {
-  height: 32px;
-  width: 32px;
-}
-.refresh_sm__899bb {
-  height: 20px;
-  width: 20px;
-}
 .combo__61c93 {
   box-sizing: border-box;
   display: flex;
@@ -26030,6 +26006,21 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   flex: 0 0 auto;
   margin-inline-end: var(--space-4);
 }
+.lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
+  fill: var(--__lottieIconColor, var(--interactive-text-default));
+}
+.lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity] {
+  stroke: var(--__lottieIconColor, var(--interactive-text-default));
+}
+.lottieIcon__5eb9b svg {
+  transform: none !important;
+}
+.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
+  fill: currentColor;
+}
+.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[stroke][stroke-opacity] {
+  stroke: currentColor;
+}
 .buttonContainer_e6e74f {
   border-radius: 8px;
   margin-top: unset;
@@ -30080,21 +30071,6 @@ html:not(.chat-input) .inputInner_b1f01d {
   border: 2px solid var(--background-mod-normal);
   margin-inline: -4px;
   margin-inline-end: 4px;
-}
-.lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
-  fill: var(--__lottieIconColor, var(--interactive-text-default));
-}
-.lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity] {
-  stroke: var(--__lottieIconColor, var(--interactive-text-default));
-}
-.lottieIcon__5eb9b svg {
-  transform: none !important;
-}
-.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
-  fill: currentColor;
-}
-.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[stroke][stroke-opacity] {
-  stroke: currentColor;
 }
 .custom-user-profile-theme .container_a99829 {
   border: none;
@@ -69903,4 +69879,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.9e8dcafbb05e30c3.css.map*/
+/*# sourceMappingURL=web.bb3e393afaee7be4.css.map*/
