@@ -17,7 +17,7 @@
   * **/
 
 import { xml2js } from "xml-js";
-import { JSDOM } from "jsdom";
+import { JSDOM, VirtualConsole } from "jsdom";
 import {
   DATA_DIR,
   writeFile,
@@ -231,7 +231,15 @@ export class Blog implements Module {
       if (!response.ok) continue; // skip if not ok
 
       const body = await response.text();
-      const dom = new JSDOM(body);
+
+      const virtualConsole = new VirtualConsole();
+      virtualConsole.on("error", () => {
+        // Ignore CSS parsing errors
+      });
+
+      const dom = new JSDOM(body, {
+        virtualConsole,
+      });
 
       let querySelector: string | undefined = "";
 
