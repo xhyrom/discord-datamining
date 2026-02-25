@@ -3719,6 +3719,10 @@
           FAMILY_CENTER_TEEN_CONSENTS: (e) => `/family-center/${e}/consents`,
           FAMILY_CENTER_SHARE_IAR_WITH_PARENTS:
             "/family-center/share-iar-with-parents",
+          FAMILY_CENTER_RESTRICTED_SCHEDULE_RULE: (e) =>
+            `/family-center/${e}/restricted-schedule/rule`,
+          FAMILY_CENTER_RESTRICTED_SCHEDULE_RULES: (e, t) =>
+            `/family-center/${e}/restricted-schedule/rules/${t}`,
           REFERRAL_OFFER_ID_RESOLVE: (e) => `/referrals/${e}`,
           APPLICATIONS_SHELF: "/applications/shelf",
           BADGE_ICON: (e) => `/badge-icons/${e}.png`,
@@ -6372,7 +6376,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-02-24-aa3080489ead2b323c153c8656e515190658d08b-discord_web",
+              "2026-02-25-70d9b77e73868171ad26351e849a3f398fdd2465-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6439,8 +6443,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "501669"),
-            o.NA("builtAt", String("1771975642211"));
+            o.NA("buildNumber", "501798"),
+            o.NA("builtAt", String("1772007536020"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6503,7 +6507,6 @@
             BILLING_PROMOTION_REDEMPTION_GENERIC: "/billing/promotions",
             BILLING_PROMOTION_DIRECT_FULFILLMENT_REDEMPTION: (e, t) =>
               `/billing/partner-promotions/${e}/${t}`,
-            NOTIFICATIONS: "/notifications",
             FRIENDS: "/channels/@me",
             ME: "/channels/@me",
             MESSAGE_REQUESTS: "/message-requests",
@@ -6738,7 +6741,8 @@
             null == window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT &&
             null == window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST &&
             null == window.GLOBAL_ENV.PUBLIC_PATH &&
-            null == window.GLOBAL_ENV.MUX_ENV_KEY)
+            null == window.GLOBAL_ENV.MUX_ENV_KEY &&
+            null == window.GLOBAL_ENV.WEBAUTHN_ORIGIN)
         )
           throw (
             (window.alert("Global environment variables not set!"),
@@ -37569,4 +37573,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.92718c27dfc427d5.js.map
+//# sourceMappingURL=sentry.c2955d5a51c4b25e.js.map
