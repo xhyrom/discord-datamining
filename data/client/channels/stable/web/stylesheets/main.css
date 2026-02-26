@@ -45678,10 +45678,6 @@ svg.radioIcon_c1e9c4 {
   width: 100%;
 }
 @media screen and (max-height: 550px), screen and (max-width: 485px) {
-  .outerAnimatedDivDynamicSizing__59d99 {
-    min-height: 100% !important;
-    min-width: 100% !important;
-  }
   .innerAnimatedDivDynamicSizing__59d99 {
     width: 100% !important;
   }
@@ -69897,4 +69893,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.1ea46d258fe06f19.css.map*/
+/*# sourceMappingURL=web.973fba0348b53d2c.css.map*/
