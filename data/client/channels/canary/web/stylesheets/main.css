@@ -31429,12 +31429,20 @@ html:not(.chat-input) .inputInner_b1f01d {
   width: inherit;
 }
 .previewContainer__1e458 {
+  background-color: var(--background-mod-subtle);
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px var(--border-muted);
   display: flex;
+  height: 100%;
   justify-content: center;
   overflow: hidden;
   position: relative;
   width: 100%;
   z-index: 0;
+}
+.previewContainer__1e458.hideBackground__1e458 {
+  background-color: transparent;
+  box-shadow: unset;
 }
 .previewContainerSetHeight__1e458 {
   height: 390px;
@@ -38386,16 +38394,12 @@ body .headerAnimation_b54a5b {
   text-align: start;
 }
 .profileEffectContainer_a84142 {
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   height: 296px;
-  margin: 16px auto 0;
+  margin: var(--space-16) auto 0;
   overflow: hidden;
   position: relative;
   width: 200px;
-}
-.profileEffectBackground_a84142 {
-  position: absolute;
-  width: 100%;
 }
 .nameplateContainer_a84142 {
   margin: var(--space-40) auto var(--space-48);
@@ -69935,4 +69939,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.2b1a14b3301e7273.css.map*/
+/*# sourceMappingURL=web.1e36a9a6059ffe21.css.map*/
