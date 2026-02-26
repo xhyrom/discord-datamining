@@ -1628,6 +1628,8 @@
   "marqueeContainer": "marqueeContainer_c1e9c4",
   "marqueeText": "marqueeText_c1e9c4",
   "switchItem": "switchItem_c1e9c4",
+  "textInputItem": "textInputItem_c1e9c4",
+  "textInputWrapper": "textInputWrapper_c1e9c4",
   "subtextLineClamp": "subtextLineClamp_c1e9c4",
   "iconContainerLeft": "iconContainerLeft_c1e9c4",
   "iconContainerLarge": "iconContainerLarge_c1e9c4",

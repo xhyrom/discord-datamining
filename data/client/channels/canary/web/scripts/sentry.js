@@ -5957,6 +5957,7 @@
           (n.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED =
             "invite_accept_join_settings_expanded"),
           (n.INVITE_ACCEPT_DISMISSED = "invite_accept_dismissed"),
+          (n.INVITE_ACCEPT_DETAILS_VIEWED = "invite_accept_details_viewed"),
           (n.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED =
             "voice_filter_limited_time_voice_selected"),
           (n.VOICE_FILTER_FEEDBACK = "voice_filter_feedback"),
@@ -6105,7 +6106,6 @@
           (n.IMPRESSION_GAME_SERVERS_TAB_VIEWED =
             "impression_game_servers_tab_viewed"),
           (n.MEDIA_PICKER_ASSETS_DEBUG = "media_picker_assets_debug"),
-          (n.DEBUG_MISSING_STRING = "debug_missing_string"),
           (n.ORB_BALANCE_ACTION_SHEET_ACTION =
             "orb_balance_action_sheet_action"),
           (n.SESSION_START_PAGE_VIEWED = "session_start_page_viewed"),
@@ -6389,7 +6389,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-d6923fd2522a5f0a0295660861edb03f89c93245",
+            release: "discord_web-3dd0dd2d5952747289eda012319d308fb70c2b3c",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6456,8 +6456,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "502861"),
-            o.NA("builtAt", String("1772143824594"));
+            o.NA("buildNumber", "502918"),
+            o.NA("builtAt", String("1772145840235"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -37586,4 +37586,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.32667a355a3fad75.js.map
+//# sourceMappingURL=sentry.873a7cff2d9ff929.js.map
