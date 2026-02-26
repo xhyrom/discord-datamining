@@ -6115,6 +6115,10 @@
           (n.GAME_COMMUNITY_UPSELL_DISMISSED =
             "game_community_upsell_dismissed"),
           (n.GAME_COMMUNITY_UPSELL_ACCEPTED = "game_community_upsell_accepted"),
+          (n.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_JOINED =
+            "game_community_multi_guild_upsell_card_joined"),
+          (n.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_DISMISSED =
+            "game_community_multi_guild_upsell_card_dismissed"),
           (n.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED =
             "on_platform_account_link_flow_started"),
           (n.CONNECTION_INDICATOR_SHOWN = "connection_indicator_shown"),
@@ -6385,7 +6389,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1861cfb49a4122cc20033926567a7087faeecf99",
+            release: "discord_web-d6923fd2522a5f0a0295660861edb03f89c93245",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6452,8 +6456,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "502790"),
-            o.NA("builtAt", String("1772141510185"));
+            o.NA("buildNumber", "502861"),
+            o.NA("builtAt", String("1772143824594"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -37582,4 +37586,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.f0f9ba82c0a5e49c.js.map
+//# sourceMappingURL=sentry.32667a355a3fad75.js.map
