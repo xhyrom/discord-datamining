@@ -31777,11 +31777,10 @@ html:not(.chat-input) .inputInner_b1f01d {
 .itemIcon_d9866f.hasTooltip_d9866f {
   pointer-events: auto;
 }
-.itemIconHeart_d9866f {
-  fill: var(--control-critical-primary-background-default);
-}
-.itemIconShop_d9866f {
-  fill: var(--icon-strong);
+.itemIconBackground_d9866f {
+  background-color: var(--control-overlay-secondary-background-default);
+  border-radius: var(--radius-round);
+  padding: 2px;
 }
 .container_b7b2cf {
   align-items: center;
@@ -39168,17 +39167,6 @@ body .headerAnimation_b54a5b {
 }
 .stepBody_a3d32e > * {
   width: 50%;
-}
-.container__96168 {
-  margin-top: 8px;
-  position: relative;
-}
-.full-motion .container__96168 {
-  transition: transform 0.2s ease;
-}
-.cardContainer__96168 {
-  height: 100%;
-  width: 100%;
 }
 .card__20585:focus-within .cardBackgroundImage__20585,
 .card__20585:hover .cardBackgroundImage__20585 {
@@ -70041,4 +70029,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.77124d83accb8a3b.css.map*/
+/*# sourceMappingURL=web.f526f66a522d00a0.css.map*/
