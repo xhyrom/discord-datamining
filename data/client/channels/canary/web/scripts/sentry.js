@@ -6390,7 +6390,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-4ee1dba3f2f324cd074935516de486404f20a07b",
+            release: "discord_web-4695260f26b1b384c28a6230975a2c0439555479",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6457,8 +6457,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "503013"),
-            o.NA("builtAt", String("1772149844548"));
+            o.NA("buildNumber", "503170"),
+            o.NA("builtAt", String("1772157688509"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -9703,6 +9703,27 @@
                 [n.LIGHT]: { raw: "WHITE", opacity: 1 },
                 [n.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
                 [n.DARKER]: { raw: "BLACK", opacity: 1 },
+              },
+              STEAM_REVIEW_TEXT_MIXED: {
+                category: "generic",
+                [n.DARK]: { raw: "YELLOW_NEW_56", opacity: 1 },
+                [n.LIGHT]: { raw: "YELLOW_NEW_75", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "YELLOW_NEW_55", opacity: 1 },
+                [n.DARKER]: { raw: "YELLOW_NEW_51", opacity: 1 },
+              },
+              STEAM_REVIEW_TEXT_NEGATIVE: {
+                category: "generic",
+                [n.DARK]: { raw: "RED_NEW_40", opacity: 1 },
+                [n.LIGHT]: { raw: "RED_NEW_50", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "RED_NEW_40", opacity: 1 },
+                [n.DARKER]: { raw: "RED_NEW_33", opacity: 1 },
+              },
+              STEAM_REVIEW_TEXT_POSITIVE: {
+                category: "generic",
+                [n.DARK]: { raw: "BLUE_NEW_43", opacity: 1 },
+                [n.LIGHT]: { raw: "BLUE_NEW_53", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "BLUE_NEW_43", opacity: 1 },
+                [n.DARKER]: { raw: "BLUE_NEW_36", opacity: 1 },
               },
               TEXT_BRAND: {
                 category: "text",
@@ -37587,4 +37608,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.8d9f752fabaaf1f4.js.map
+//# sourceMappingURL=sentry.c03760c86a0dd543.js.map
