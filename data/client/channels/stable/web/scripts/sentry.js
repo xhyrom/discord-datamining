@@ -3291,6 +3291,8 @@
           BILLING_SUBSCRIPTION_MEMBERS: (e) =>
             `/users/@me/billing/subscriptions/${e}/members`,
           BILLING_COUNTRY_CODE: "/users/@me/billing/country-code",
+          BILLING_PAYMENT_SOURCE_CREATION_CONTEXT:
+            "/users/@me/billing/payment-source-creation-context",
           BILLING_LOCATION: "/users/@me/billing/location-info",
           BILLING_LOCALIZED_PROMO: "/users/@me/billing/localized-pricing-promo",
           BILLING_GIFT_CARD_VIEW: "/billing/gift-card/view",
@@ -3326,6 +3328,7 @@
             `/applications/storefront/interactions/premium-button/${e}`,
           COLLECTION_PUBLISHED_LISTINGS_SKU: (e) =>
             `/storefront/collections/${e}`,
+          PRODUCT_WITH_SKUS: (e) => `/storefront/products/${e}`,
           PRODUCT_FOR_SKU: (e) => `/storefront/products/sku/${e}`,
           STORE_DIRECTORY_LAYOUT: (e) => `/store/directory-layouts/${e}`,
           STORE_DIRECTORY: (e) => `/store/directory/${e}`,
@@ -4499,6 +4502,8 @@
             "premium_tenure_rewards_orbs_cta_clicked"),
           (n.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION =
             "premium_tenure_rewards_orbs_section_impression"),
+          (n.PREMIUM_MARKETING_BENTO_BOX_IMPRESSION =
+            "premium_marketing_bento_box_impression"),
           (n.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED =
             "premium_whats_new_box_cta_clicked"),
           (n.PREMIUM_WHATS_NEW_VIEW_TIME = "premium_whats_new_view_time"),
@@ -5953,6 +5958,7 @@
           (n.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED =
             "invite_accept_join_settings_expanded"),
           (n.INVITE_ACCEPT_DISMISSED = "invite_accept_dismissed"),
+          (n.INVITE_ACCEPT_DETAILS_VIEWED = "invite_accept_details_viewed"),
           (n.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED =
             "voice_filter_limited_time_voice_selected"),
           (n.VOICE_FILTER_FEEDBACK = "voice_filter_feedback"),
@@ -6101,7 +6107,6 @@
           (n.IMPRESSION_GAME_SERVERS_TAB_VIEWED =
             "impression_game_servers_tab_viewed"),
           (n.MEDIA_PICKER_ASSETS_DEBUG = "media_picker_assets_debug"),
-          (n.DEBUG_MISSING_STRING = "debug_missing_string"),
           (n.ORB_BALANCE_ACTION_SHEET_ACTION =
             "orb_balance_action_sheet_action"),
           (n.SESSION_START_PAGE_VIEWED = "session_start_page_viewed"),
@@ -6111,6 +6116,10 @@
           (n.GAME_COMMUNITY_UPSELL_DISMISSED =
             "game_community_upsell_dismissed"),
           (n.GAME_COMMUNITY_UPSELL_ACCEPTED = "game_community_upsell_accepted"),
+          (n.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_JOINED =
+            "game_community_multi_guild_upsell_card_joined"),
+          (n.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_DISMISSED =
+            "game_community_multi_guild_upsell_card_dismissed"),
           (n.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED =
             "on_platform_account_link_flow_started"),
           (n.CONNECTION_INDICATOR_SHOWN = "connection_indicator_shown"),
@@ -6382,7 +6391,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-02-26-5280a2d54174ca4b5ce8df75ee2f9cd6a4de1bd2-discord_web",
+              "2026-02-27-b04be921fbb69f3dc433ca40d660a3e18162e7dd-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6449,8 +6458,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "502980"),
-            o.NA("builtAt", String("1772148466801"));
+            o.NA("buildNumber", "503231"),
+            o.NA("builtAt", String("1772180331325"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -9695,6 +9704,27 @@
                 [n.LIGHT]: { raw: "WHITE", opacity: 1 },
                 [n.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
                 [n.DARKER]: { raw: "BLACK", opacity: 1 },
+              },
+              STEAM_REVIEW_TEXT_MIXED: {
+                category: "generic",
+                [n.DARK]: { raw: "YELLOW_NEW_56", opacity: 1 },
+                [n.LIGHT]: { raw: "YELLOW_NEW_75", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "YELLOW_NEW_55", opacity: 1 },
+                [n.DARKER]: { raw: "YELLOW_NEW_51", opacity: 1 },
+              },
+              STEAM_REVIEW_TEXT_NEGATIVE: {
+                category: "generic",
+                [n.DARK]: { raw: "RED_NEW_40", opacity: 1 },
+                [n.LIGHT]: { raw: "RED_NEW_50", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "RED_NEW_40", opacity: 1 },
+                [n.DARKER]: { raw: "RED_NEW_33", opacity: 1 },
+              },
+              STEAM_REVIEW_TEXT_POSITIVE: {
+                category: "generic",
+                [n.DARK]: { raw: "BLUE_NEW_43", opacity: 1 },
+                [n.LIGHT]: { raw: "BLUE_NEW_53", opacity: 1 },
+                [n.MIDNIGHT]: { raw: "BLUE_NEW_43", opacity: 1 },
+                [n.DARKER]: { raw: "BLUE_NEW_36", opacity: 1 },
               },
               TEXT_BRAND: {
                 category: "text",
@@ -37579,4 +37609,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.3d62437117f773d1.js.map
+//# sourceMappingURL=sentry.326b8e376f098d48.js.map
