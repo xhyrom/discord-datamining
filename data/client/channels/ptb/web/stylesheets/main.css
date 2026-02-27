@@ -1253,7 +1253,6 @@
   width: 32px;
 }
 .wanderingCubes__46696 .item__46696 {
-  animation: spinner-wandering-cubes__46696 1.8s ease-in-out infinite;
   background-color: var(--brand-400);
   height: 10px;
   left: 0;
@@ -1261,14 +1260,16 @@
   top: 0;
   width: 10px;
 }
-.wanderingCubes__46696 .item__46696:last-child {
+.app-focused .wanderingCubes__46696 .item__46696 {
+  animation: spinner-wandering-cubes__46696 1.8s ease-in-out infinite;
+}
+.app-focused .wanderingCubes__46696 .item__46696:last-child {
   animation-delay: -0.9s;
 }
-.chasingDots__46696 {
+.app-focused .chasingDots__46696 {
   animation: spinner-chasing-dots-rotate__46696 2s linear infinite;
 }
 .chasingDots__46696 .item__46696 {
-  animation: spinner-chasing-dots-bounce__46696 2s ease-in-out infinite;
   background-color: var(--brand-500);
   border-radius: 100%;
   display: inline-block;
@@ -1278,9 +1279,14 @@
   width: 60%;
 }
 .chasingDots__46696 .item__46696:last-child {
-  animation-delay: -1s;
   bottom: 0;
   top: auto;
+}
+.app-focused .chasingDots__46696 .item__46696 {
+  animation: spinner-chasing-dots-bounce__46696 2s ease-in-out infinite;
+}
+.app-focused .chasingDots__46696 .item__46696:last-child {
+  animation-delay: -1s;
 }
 .pulsingEllipsis__46696 {
   display: flex;
@@ -1290,7 +1296,6 @@
   width: 28px;
 }
 .pulsingEllipsis__46696 .item__46696 {
-  animation: spinner-pulsing-ellipsis__46696 1.4s ease-in-out infinite;
   background-color: var(--primary-100);
   border-radius: 3px;
   display: inline-block;
@@ -1299,14 +1304,16 @@
   opacity: 0.3;
   width: 6px;
 }
-.pulsingEllipsis__46696 .item__46696:nth-of-type(2) {
+.app-focused .pulsingEllipsis__46696 .item__46696 {
+  animation: spinner-pulsing-ellipsis__46696 1.4s ease-in-out infinite;
+}
+.app-focused .pulsingEllipsis__46696 .item__46696:nth-of-type(2) {
   animation-delay: 0.2s;
 }
-.pulsingEllipsis__46696 .item__46696:nth-of-type(3) {
+.app-focused .pulsingEllipsis__46696 .item__46696:nth-of-type(3) {
   animation-delay: 0.4s;
 }
 .lowMotion__46696 .item__46696 {
-  animation: spinner-low-motion__46696 1.4s ease-in-out infinite;
   background-color: var(--interactive-text-default);
   border-radius: 3px;
   display: inline-block;
@@ -1315,20 +1322,14 @@
   opacity: 0.3;
   width: 6px;
 }
-.lowMotion__46696 .item__46696:nth-of-type(2) {
+.app-focused .lowMotion__46696 .item__46696 {
+  animation: spinner-low-motion__46696 1.4s ease-in-out infinite;
+}
+.app-focused .lowMotion__46696 .item__46696:nth-of-type(2) {
   animation-delay: 0.2s;
 }
-.lowMotion__46696 .item__46696:nth-of-type(3) {
+.app-focused .lowMotion__46696 .item__46696:nth-of-type(3) {
   animation-delay: 0.4s;
-}
-.stop-animation .pulsingEllipsis__46696 .item__46696 {
-  animation: none;
-}
-.stopAnimation__46696 .chasingDots__46696,
-.stopAnimation__46696 .circular__46696,
-.stopAnimation__46696 .item__46696,
-.stopAnimation__46696 .path__46696 {
-  animation: none;
 }
 .spinningCircle__46696 {
   width: 100%;
@@ -1337,12 +1338,13 @@
   transform: rotate(280deg);
 }
 .circular__46696 {
-  animation: spinner-spinning-circle-rotate__46696 2s linear infinite;
   height: 100%;
   width: 100%;
 }
+.app-focused .circular__46696 {
+  animation: spinner-spinning-circle-rotate__46696 2s linear infinite;
+}
 .path__46696 {
-  animation: spinner-spinning-circle-dash__46696 2s ease-in-out infinite;
   stroke-dasharray: 1, 200;
   stroke-dashoffset: 0;
   fill: none;
@@ -1351,19 +1353,33 @@
   stroke-linecap: round;
   stroke: var(--brand-500);
 }
+.app-focused .path__46696 {
+  animation: spinner-spinning-circle-dash__46696 2s ease-in-out infinite;
+}
 .path2__46696 {
-  animation-delay: 0.15s;
+  stroke: var(--text-brand);
   opacity: 0.6;
 }
-.path2__46696,
+.app-focused .path2__46696 {
+  animation-delay: 0.15s;
+}
 .path3__46696 {
   stroke: var(--text-brand);
 }
-.path3__46696 {
+.app-focused .path3__46696 {
   animation-delay: 0.23s;
 }
 .theme-light .path3__46696 {
   opacity: 0.3;
+}
+.app-focused .stop-animation .pulsingEllipsis__46696 .item__46696 {
+  animation: none;
+}
+.app-focused .stopAnimation__46696 .chasingDots__46696,
+.app-focused .stopAnimation__46696 .circular__46696,
+.app-focused .stopAnimation__46696 .item__46696,
+.app-focused .stopAnimation__46696 .path__46696 {
+  animation: none;
 }
 .combo__61c93 {
   box-sizing: border-box;
@@ -7828,6 +7844,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   display: block;
   position: absolute;
   top: 0;
+  transition: none;
+}
+.full-motion .imagePlaceholder_af017a {
+  transition: opacity 0.2s ease;
 }
 .imageErrorWrapper_af017a {
   align-items: center;
@@ -7839,6 +7859,17 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   max-height: 100%;
   max-width: 200px;
   width: 100%;
+}
+.full-motion .imagePlaceholderFastFade_af017a {
+  transition: opacity 50ms ease;
+}
+.imagePlaceholderVisible_af017a {
+  opacity: 1;
+}
+.imageLoadingOverlay_af017a,
+.imagePlaceholderHidden_af017a {
+  opacity: 0;
+  pointer-events: none;
 }
 .imageLoadingOverlay_af017a {
   background-color: var(--opacity-black-48);
@@ -7852,7 +7883,18 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   padding: 3px;
   position: absolute;
   top: 0;
+  transition: none;
   width: 24px;
+}
+.full-motion .imageLoadingOverlay_af017a {
+  transition: opacity 0.2s ease;
+}
+.imageLoadingOverlayVisible_af017a {
+  opacity: 1;
+  pointer-events: auto;
+}
+.full-motion .imageLoadingOverlayVisible_af017a {
+  transition: opacity 0.8s ease;
 }
 .cornerLoadingSpinner_af017a {
   height: 100%;
@@ -31387,12 +31429,20 @@ html:not(.chat-input) .inputInner_b1f01d {
   width: inherit;
 }
 .previewContainer__1e458 {
+  background-color: var(--background-mod-subtle);
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px var(--border-muted);
   display: flex;
+  height: 100%;
   justify-content: center;
   overflow: hidden;
   position: relative;
   width: 100%;
   z-index: 0;
+}
+.previewContainer__1e458.hideBackground__1e458 {
+  background-color: transparent;
+  box-shadow: unset;
 }
 .previewContainerSetHeight__1e458 {
   height: 390px;
@@ -38344,16 +38394,12 @@ body .headerAnimation_b54a5b {
   text-align: start;
 }
 .profileEffectContainer_a84142 {
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   height: 296px;
-  margin: 16px auto 0;
+  margin: var(--space-16) auto 0;
   overflow: hidden;
   position: relative;
   width: 200px;
-}
-.profileEffectBackground_a84142 {
-  position: absolute;
-  width: 100%;
 }
 .nameplateContainer_a84142 {
   margin: var(--space-40) auto var(--space-48);
@@ -40505,12 +40551,29 @@ div.mobilePushContainer__3d3b0 {
   min-height: 0;
   padding: 0;
 }
-.subtext_c1e9c4,
 .switchItem_c1e9c4 .label_c1e9c4 {
   white-space: normal;
 }
+.textInputItem_c1e9c4 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: var(--space-8);
+}
+.textInputItem_c1e9c4 .labelContainer_c1e9c4 {
+  min-height: 0;
+  padding: 0;
+}
+.textInputItem_c1e9c4 .label_c1e9c4 {
+  white-space: normal;
+}
+.textInputItem_c1e9c4 .textInputWrapper_c1e9c4 {
+  min-width: 0;
+  width: 100%;
+}
 .subtext_c1e9c4 {
   margin-top: 2px;
+  white-space: normal;
 }
 .subtextLineClamp_c1e9c4 {
   white-space: pre;
@@ -40606,6 +40669,9 @@ div.mobilePushContainer__3d3b0 {
   );
   max-width: 320px;
   min-width: 188px;
+}
+.submenuLayer_c1e9c4 {
+  z-index: 1;
 }
 .colorDefault_c1e9c4 {
   border-color: var(--interactive-text-default);
@@ -53402,6 +53468,9 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-300);
   --status-warning-background: var(--yellow-300);
   --status-warning-text: var(--black);
+  --steam-review-text-mixed: var(--yellow-new-29);
+  --steam-review-text-negative: var(--red-new-24);
+  --steam-review-text-positive: var(--blue-new-26);
   --switch-background-active: var(--blurple-65);
   --switch-background-default: hsl(
     var(--opacity-black-12-hsl) / 0.12156862745098039
@@ -54735,6 +54804,24 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --steam-review-text-mixed: color-mix(
+      in oklab,
+      var(--yellow-new-29) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --steam-review-text-negative: color-mix(
+      in oklab,
+      var(--red-new-24) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --steam-review-text-positive: color-mix(
+      in oklab,
+      var(--blue-new-26) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-brand: color-mix(
       in oklab,
       var(--blurple-26) 100%,
@@ -55549,6 +55636,9 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-400);
   --status-warning-background: var(--yellow-400);
   --status-warning-text: var(--white);
+  --steam-review-text-mixed: var(--yellow-new-75);
+  --steam-review-text-negative: var(--red-new-50);
+  --steam-review-text-positive: var(--blue-new-53);
   --switch-background-active: var(--blurple-65);
   --switch-background-default: hsl(
     var(--opacity-black-1-hsl) / 0.0196078431372549
@@ -56884,6 +56974,24 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --steam-review-text-mixed: color-mix(
+      in oklab,
+      var(--yellow-new-75) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --steam-review-text-negative: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --steam-review-text-positive: color-mix(
+      in oklab,
+      var(--blue-new-53) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-brand: color-mix(
       in oklab,
       var(--blurple-50) 100%,
@@ -57704,6 +57812,9 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-300);
   --status-warning-background: var(--yellow-300);
   --status-warning-text: var(--black);
+  --steam-review-text-mixed: var(--yellow-new-55);
+  --steam-review-text-negative: var(--red-new-40);
+  --steam-review-text-positive: var(--blue-new-43);
   --switch-background-active: var(--blurple-65);
   --switch-background-default: hsl(
     var(--opacity-black-12-hsl) / 0.12156862745098039
@@ -59035,6 +59146,24 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.16)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --steam-review-text-mixed: color-mix(
+      in oklab,
+      var(--yellow-new-55) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --steam-review-text-negative: color-mix(
+      in oklab,
+      var(--red-new-40) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --steam-review-text-positive: color-mix(
+      in oklab,
+      var(--blue-new-43) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-brand: color-mix(
       in oklab,
       var(--blurple-42) 100%,
@@ -59869,6 +59998,9 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-300);
   --status-warning-background: var(--yellow-300);
   --status-warning-text: var(--black);
+  --steam-review-text-mixed: var(--yellow-new-51);
+  --steam-review-text-negative: var(--red-new-34);
+  --steam-review-text-positive: var(--blue-new-37);
   --switch-background-active: var(--blurple-65);
   --switch-background-default: hsl(
     var(--opacity-black-12-hsl) / 0.12156862745098039
@@ -61201,6 +61333,24 @@ html.disable-forced-colors * {
       hsl(var(--plum-11-hsl) / 0.16) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.16)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --steam-review-text-mixed: color-mix(
+      in oklab,
+      var(--yellow-new-51) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --steam-review-text-negative: color-mix(
+      in oklab,
+      var(--red-new-34) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --steam-review-text-positive: color-mix(
+      in oklab,
+      var(--blue-new-37) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --text-brand: color-mix(
       in oklab,
@@ -69893,4 +70043,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.973fba0348b53d2c.css.map*/
+/*# sourceMappingURL=web.26898023ff1056f2.css.map*/
