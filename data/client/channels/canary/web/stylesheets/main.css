@@ -7708,6 +7708,45 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .svg__2338f {
   contain: paint;
 }
+.shaker_e5f3a9 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: center;
+  max-height: inherit;
+}
+.root_e5f3a9 > :last-child {
+  border-end-end-radius: var(--radius-sm);
+  border-end-start-radius: var(--radius-sm);
+}
+.root_e5f3a9.withHeader_e5f3a9 > :first-child {
+  background-color: transparent;
+}
+@media (max-width: 485px) {
+  .shaker_e5f3a9 {
+    position: absolute;
+    top: 0;
+    inset-inline: 0;
+    bottom: 0;
+    max-height: none;
+  }
+  .root_e5f3a9,
+  .shaker_e5f3a9 {
+    justify-content: center;
+  }
+  .root_e5f3a9 {
+    border-radius: 0;
+    width: 100vw;
+  }
+}
+.halloweenModalHeight_e5f3a9 {
+  max-height: 800px;
+}
+.premiumBrandRefreshBackground_e5f3a9 {
+  background-color: var(--background-surface-high) !important;
+}
 .staticGlow__1bd8a,
 .videoContainer__1bd8a {
   transform: translate(calc(-50% + 4px), calc(-50% + 4px));
@@ -31877,45 +31916,6 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .checkoutModalBodyPadding_ebbc17 {
   padding-bottom: 0;
-}
-.shaker_e5f3a9 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  height: 100%;
-  justify-content: center;
-  max-height: inherit;
-}
-.root_e5f3a9 > :last-child {
-  border-end-end-radius: var(--radius-sm);
-  border-end-start-radius: var(--radius-sm);
-}
-.root_e5f3a9.withHeader_e5f3a9 > :first-child {
-  background-color: transparent;
-}
-@media (max-width: 485px) {
-  .shaker_e5f3a9 {
-    position: absolute;
-    top: 0;
-    inset-inline: 0;
-    bottom: 0;
-    max-height: none;
-  }
-  .root_e5f3a9,
-  .shaker_e5f3a9 {
-    justify-content: center;
-  }
-  .root_e5f3a9 {
-    border-radius: 0;
-    width: 100vw;
-  }
-}
-.halloweenModalHeight_e5f3a9 {
-  max-height: 800px;
-}
-.premiumBrandRefreshBackground_e5f3a9 {
-  background-color: var(--background-surface-high) !important;
 }
 .breadcrumbs__0f692 {
   display: flex;
@@ -70041,4 +70041,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.6f9eab3bf507f23e.css.map*/
+/*# sourceMappingURL=web.77124d83accb8a3b.css.map*/
