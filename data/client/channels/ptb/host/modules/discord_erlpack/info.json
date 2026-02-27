@@ -1,16 +1,16 @@
 {
   "full": {
-    "host_version": "1.0.1180",
+    "host_version": "1.0.1181",
     "module_version": 1,
-    "package_sha256": "e4fac26fad923af5cd10f0e149c6e54e87946de15e1dbb738ff0db1b83bf43cc",
-    "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1180/discord_erlpack/1/full.distro"
+    "package_sha256": "ad85367ae21e42204cc3e982966661ff5c8a9f82c732a9bb9cce9ca901ed80f9",
+    "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1181/discord_erlpack/1/full.distro"
   },
   "deltas": [
     {
-      "host_version": "1.0.1179",
+      "host_version": "1.0.1180",
       "module_version": 1,
-      "package_sha256": "36d1f74e760f30eddaceb15878c93b45386e880fa8c2c7321dbfb36b3eccaa6e",
-      "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1180/discord_erlpack/1/from/1.0.1179/1"
+      "package_sha256": "b484de3c015f1f602df189ed6643038c7e1e96bccdfcc3e34c8ab53cf599cee6",
+      "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1181/discord_erlpack/1/from/1.0.1180/1"
     }
   ]
 }
