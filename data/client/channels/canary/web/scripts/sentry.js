@@ -6390,7 +6390,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-099bf0f8864ea1366234c2dea1a044671fcec19e",
+            release: "discord_web-7efd27269a2f7aaf75b825d3dc35c6e0182096f7",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6457,8 +6457,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "503421"),
-            o.NA("builtAt", String("1772218575252"));
+            o.NA("buildNumber", "503475"),
+            o.NA("builtAt", String("1772220981852"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6600,7 +6600,7 @@
             OAUTH2_WHITELIST_ACCEPT: "/oauth2/allowlist/accept",
             GUILD_DISCOVERY: "/guild-discovery",
             GLOBAL_DISCOVERY: "/discovery",
-            QUEST_HOME: "/discovery/quests",
+            QUEST_HOME_DEPRECATED: "/discovery/quests",
             QUEST_HOME_V2: "/quest-home",
             GLOBAL_DISCOVERY_SERVERS: "/discovery/servers",
             GLOBAL_DISCOVERY_APPS: "/discovery/applications",
@@ -37608,4 +37608,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.1d5e31f26e095985.js.map
+//# sourceMappingURL=sentry.ed792cfc87332864.js.map

@@ -18640,6 +18640,9 @@ img.thumbnail__0f2e8 {
   -webkit-backdrop-filter: blur(24px);
   backdrop-filter: blur(24px);
 }
+.has-animated-banner .popover__2d0ab {
+  background-color: var(--background-surface-high);
+}
 .popover__2d0ab.visible__2d0ab,
 .popover__2d0ab:hover {
   opacity: 1;
@@ -70038,4 +70041,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.61791a466608c86f.css.map*/
+/*# sourceMappingURL=web.6f9eab3bf507f23e.css.map*/
