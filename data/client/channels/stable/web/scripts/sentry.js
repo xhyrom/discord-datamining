@@ -5959,6 +5959,8 @@
             "invite_accept_join_settings_expanded"),
           (n.INVITE_ACCEPT_DISMISSED = "invite_accept_dismissed"),
           (n.INVITE_ACCEPT_DETAILS_VIEWED = "invite_accept_details_viewed"),
+          (n.INVITE_ACCEPT_SOCIAL_LINK_CLICKED =
+            "invite_accept_social_link_clicked"),
           (n.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED =
             "voice_filter_limited_time_voice_selected"),
           (n.VOICE_FILTER_FEEDBACK = "voice_filter_feedback"),
@@ -6391,7 +6393,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-02-27-b04be921fbb69f3dc433ca40d660a3e18162e7dd-discord_web",
+              "2026-03-02-bc94bf7df3d282fcb8e7d32447805b322d06b893-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6458,8 +6460,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "503231"),
-            o.NA("builtAt", String("1772180331325"));
+            o.NA("buildNumber", "503937"),
+            o.NA("builtAt", String("1772439519534"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6601,8 +6603,8 @@
             OAUTH2_WHITELIST_ACCEPT: "/oauth2/allowlist/accept",
             GUILD_DISCOVERY: "/guild-discovery",
             GLOBAL_DISCOVERY: "/discovery",
-            QUEST_HOME: "/discovery/quests",
-            QUEST_HOME_V2: "/quest-home",
+            QUEST_HOME_DEPRECATED: "/discovery/quests",
+            QUEST_HOME: "/quest-home",
             GLOBAL_DISCOVERY_SERVERS: "/discovery/servers",
             GLOBAL_DISCOVERY_APPS: "/discovery/applications",
             GLOBAL_DISCOVERY_APPS_CATEGORY: (e) =>
@@ -37609,4 +37611,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.326b8e376f098d48.js.map
+//# sourceMappingURL=sentry.957068a7804bc963.js.map
