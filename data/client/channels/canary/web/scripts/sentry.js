@@ -6392,7 +6392,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-66722bab9a97c367dca95365aa8f3b105d4af5e9",
+            release: "discord_web-d4443d00c524f5be4a9dd1669443f4888a24ac9a",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6459,8 +6459,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "504140"),
-            o.NA("builtAt", String("1772480858453"));
+            o.NA("buildNumber", "504202"),
+            o.NA("builtAt", String("1772483404350"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -12427,6 +12427,7 @@
           i,
           a = r(136722),
           _ = r(323125);
+        r(346699);
         let o = location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT,
           s = location.protocol + "//discord.gg";
         Object.freeze({
@@ -12861,6 +12862,7 @@
       },
       812743() {},
       478437() {},
+      346699() {},
       508602() {},
       762230() {},
       448761(e, t, r) {
@@ -37610,4 +37612,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.19f5da6b1ebd31f9.js.map
+//# sourceMappingURL=sentry.fec9512f23e28f73.js.map
