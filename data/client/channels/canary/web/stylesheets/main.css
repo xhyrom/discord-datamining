@@ -28366,6 +28366,9 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .link_d9ba3e {
   border-radius: inherit;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .link_d9ba3e:hover {
   text-decoration-color: var(--text-default);
@@ -70022,4 +70025,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.2dc668d07f9be877.css.map*/
+/*# sourceMappingURL=web.c6dec12bbe8712fa.css.map*/
