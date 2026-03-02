@@ -3326,10 +3326,10 @@
             `/users/@me/library/${e}/${t}/installed`,
           STOREFRONT_PREMIUM_BUTTON: (e) =>
             `/applications/storefront/interactions/premium-button/${e}`,
-          COLLECTION_PUBLISHED_LISTINGS_SKU: (e) =>
+          STOREFRONT_COLLECTION_WITH_PRODUCTS: (e) =>
             `/storefront/collections/${e}`,
-          PRODUCT_WITH_SKUS: (e) => `/storefront/products/${e}`,
-          PRODUCT_FOR_SKU: (e) => `/storefront/products/sku/${e}`,
+          STOREFRONT_PRODUCT_WITH_SKUS: (e) => `/storefront/products/${e}`,
+          STOREFRONT_PRODUCT_BY_SKU_ID: (e) => `/storefront/products/sku/${e}`,
           STORE_DIRECTORY_LAYOUT: (e) => `/store/directory-layouts/${e}`,
           STORE_DIRECTORY: (e) => `/store/directory/${e}`,
           STORE_EMAIL_RESEND_PAYMENT_VERIFICATION:
@@ -6392,7 +6392,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-18829d04b5424c32bab56b68235e89ce5b0a4988",
+            release: "discord_web-7cb01d2fa77dcceda8b777022011b659b9789423",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6459,8 +6459,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "504412"),
-            o.NA("builtAt", String("1772493260406"));
+            o.NA("buildNumber", "504444"),
+            o.NA("builtAt", String("1772494729804"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -37612,4 +37612,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.f0a41be6c47c5677.js.map
+//# sourceMappingURL=sentry.1172d2e22bfcf67f.js.map
