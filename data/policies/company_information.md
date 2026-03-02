@@ -799,6 +799,9 @@
           class="nav_burger_button"
         >
           <div
+            aria-label="Menu"
+            tabindex="0"
+            role="button"
             data-w-id="67393616-e5e7-814a-4677-1dbdb5d2d584"
             class="nav_burger_trigger"
           >
