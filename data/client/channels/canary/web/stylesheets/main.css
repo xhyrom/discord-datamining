@@ -28706,7 +28706,7 @@ html:not(.chat-input) .inputInner_b1f01d {
   font-family: var(--font-code);
 }
 .bar__8e51c {
-  background-color: var(--background-mod-muted);
+  background-color: var(--background-mod-normal);
   border-radius: 2px;
   flex: 1;
   height: 2px;
@@ -70041,4 +70041,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.3413c78c112b365e.css.map*/
+/*# sourceMappingURL=web.53c1ccacc38b92c8.css.map*/
