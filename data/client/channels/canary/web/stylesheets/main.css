@@ -37617,6 +37617,21 @@ body .headerAnimation_b54a5b {
   min-width: 0;
   text-transform: capitalize;
 }
+.strikethroughText_b963df {
+  text-decoration: line-through;
+}
+.valueColumnContainer_b963df {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.valueTextItem_b963df {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+}
 .divider_ad82d8 {
   background-color: var(--border-muted);
   height: 1px;
@@ -70029,4 +70044,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.9f856d71a69fa674.css.map*/
+/*# sourceMappingURL=web.79b04d78891141ec.css.map*/
