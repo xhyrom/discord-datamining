@@ -3874,11 +3874,7 @@
   },
   "OUTBOUND_PROMOTIONS_PREVIEW": {
     "url": "/outbound-promotions/preview",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "BOGO_PROMOTIONS": {
     "url": "/bogo-promotions",
