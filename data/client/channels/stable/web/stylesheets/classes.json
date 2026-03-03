@@ -471,6 +471,8 @@
   "animateGradient": "animateGradient_e5de78",
   "gradientDotAnimation": "gradientDotAnimation_e5de78",
   "inProfile": "inProfile_dfb989",
+  "hasAppendedInlineContent": "hasAppendedInlineContent_dfb989",
+  "userNameAndAppendedInlineContentContainer": "userNameAndAppendedInlineContentContainer_dfb989",
   "innerContainer": "innerContainer_c2a763",
   "underlineOnHover": "underlineOnHover_dfb989",
   "pop": "pop_dfb989",
