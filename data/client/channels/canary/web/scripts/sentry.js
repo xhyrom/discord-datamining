@@ -3330,6 +3330,8 @@
             `/storefront/collections/${e}`,
           STOREFRONT_PRODUCT_WITH_SKUS: (e) => `/storefront/products/${e}`,
           STOREFRONT_PRODUCT_BY_SKU_ID: (e) => `/storefront/products/sku/${e}`,
+          STOREFRONT_PRODUCTS_BY_SKU_IDS: "/storefront/products/skus",
+          STOREFRONT_SKU_PRICES: "/storefront/skus/prices",
           STORE_DIRECTORY_LAYOUT: (e) => `/store/directory-layouts/${e}`,
           STORE_DIRECTORY: (e) => `/store/directory/${e}`,
           STORE_EMAIL_RESEND_PAYMENT_VERIFICATION:
@@ -6108,6 +6110,12 @@
             "game_server_view_game_panel_clicked"),
           (n.IMPRESSION_GAME_SERVERS_TAB_VIEWED =
             "impression_game_servers_tab_viewed"),
+          (n.IMPRESSION_GAME_SERVER_ACTIVITY_BUTTON =
+            "impression_game_server_activity_button"),
+          (n.GAME_SERVER_ACTIVITY_BUTTON_CLICKED =
+            "game_server_activity_button_clicked"),
+          (n.GAME_SERVER_ACTIVITY_BUTTON_GUILD_SELECTED =
+            "game_server_activity_button_guild_selected"),
           (n.MEDIA_PICKER_ASSETS_DEBUG = "media_picker_assets_debug"),
           (n.ORB_BALANCE_ACTION_SHEET_ACTION =
             "orb_balance_action_sheet_action"),
@@ -6392,7 +6400,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-7cb01d2fa77dcceda8b777022011b659b9789423",
+            release: "discord_web-b025d7038c9ee2ace586dff99ca19dbc1d8b0d77",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6459,8 +6467,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "504444"),
-            o.NA("builtAt", String("1772494729804"));
+            o.NA("buildNumber", "504587"),
+            o.NA("builtAt", String("1772503380049"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -37612,4 +37620,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.1172d2e22bfcf67f.js.map
+//# sourceMappingURL=sentry.a5fe78fbdf58c036.js.map
