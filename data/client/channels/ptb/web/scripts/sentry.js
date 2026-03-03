@@ -3326,10 +3326,12 @@
             `/users/@me/library/${e}/${t}/installed`,
           STOREFRONT_PREMIUM_BUTTON: (e) =>
             `/applications/storefront/interactions/premium-button/${e}`,
-          COLLECTION_PUBLISHED_LISTINGS_SKU: (e) =>
+          STOREFRONT_COLLECTION_WITH_PRODUCTS: (e) =>
             `/storefront/collections/${e}`,
-          PRODUCT_WITH_SKUS: (e) => `/storefront/products/${e}`,
-          PRODUCT_FOR_SKU: (e) => `/storefront/products/sku/${e}`,
+          STOREFRONT_PRODUCT_WITH_SKUS: (e) => `/storefront/products/${e}`,
+          STOREFRONT_PRODUCT_BY_SKU_ID: (e) => `/storefront/products/sku/${e}`,
+          STOREFRONT_PRODUCTS_BY_SKU_IDS: "/storefront/products/skus",
+          STOREFRONT_SKU_PRICES: "/storefront/skus/prices",
           STORE_DIRECTORY_LAYOUT: (e) => `/store/directory-layouts/${e}`,
           STORE_DIRECTORY: (e) => `/store/directory/${e}`,
           STORE_EMAIL_RESEND_PAYMENT_VERIFICATION:
@@ -6108,6 +6110,12 @@
             "game_server_view_game_panel_clicked"),
           (n.IMPRESSION_GAME_SERVERS_TAB_VIEWED =
             "impression_game_servers_tab_viewed"),
+          (n.IMPRESSION_GAME_SERVER_ACTIVITY_BUTTON =
+            "impression_game_server_activity_button"),
+          (n.GAME_SERVER_ACTIVITY_BUTTON_CLICKED =
+            "game_server_activity_button_clicked"),
+          (n.GAME_SERVER_ACTIVITY_BUTTON_GUILD_SELECTED =
+            "game_server_activity_button_guild_selected"),
           (n.MEDIA_PICKER_ASSETS_DEBUG = "media_picker_assets_debug"),
           (n.ORB_BALANCE_ACTION_SHEET_ACTION =
             "orb_balance_action_sheet_action"),
@@ -6393,7 +6401,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-03-02-bc94bf7df3d282fcb8e7d32447805b322d06b893-discord_web",
+              "2026-03-03-9da02fc42612838c68064be79db1448546a727e3-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6460,8 +6468,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "503937"),
-            o.NA("builtAt", String("1772439519534"));
+            o.NA("buildNumber", "504649"),
+            o.NA("builtAt", String("1772525958537"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -12428,6 +12436,7 @@
           i,
           a = r(136722),
           _ = r(323125);
+        r(346699);
         let o = location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT,
           s = location.protocol + "//discord.gg";
         Object.freeze({
@@ -12862,6 +12871,7 @@
       },
       812743() {},
       478437() {},
+      346699() {},
       508602() {},
       762230() {},
       448761(e, t, r) {
@@ -37611,4 +37621,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.957068a7804bc963.js.map
+//# sourceMappingURL=sentry.0f403b29f6cf1abb.js.map
