@@ -37716,14 +37716,14 @@ body .headerAnimation_b54a5b {
   position: absolute;
   top: var(--space-8);
 }
-.headingSubText__220d4,
-.radioGroupContainer__220d4 {
-  margin-top: var(--space-12);
+.headingSubText__220d4 {
+  margin-top: var(--space-8);
 }
 .radioGroupContainer__220d4 {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
+  margin-top: var(--space-12);
 }
 .radioItemNameContainer__220d4 {
   display: flex;
@@ -37788,6 +37788,9 @@ body .headerAnimation_b54a5b {
 .content_da8ac7 {
   flex: 1;
   min-width: 0;
+}
+.bottomSubText_da8ac7 {
+  margin-top: var(--space-12);
 }
 .header_da8ac7 {
   align-items: center;
@@ -38130,6 +38133,9 @@ body .headerAnimation_b54a5b {
 .currencyWrapper_b41cc5,
 .previewTotalSectionContainer_b41cc5 {
   margin-top: var(--space-16);
+}
+.premiumSwitchPlanSelectText_b41cc5 {
+  margin-bottom: var(--space-24);
 }
 .subscriptionCostRowAmount__3d62f {
   font-weight: var(--font-weight-medium);
@@ -41327,10 +41333,8 @@ svg.radioIcon_c1e9c4 {
   color: var(--text-strong);
 }
 .nitroWheel_c5f0dc {
-  height: 16px;
   margin-inline: 2px 4px;
   vertical-align: sub;
-  width: 16px;
 }
 .themeSelectionContainer__36dee {
   box-sizing: border-box;
@@ -51027,11 +51031,6 @@ html.disable-forced-colors * {
   display: flex;
   flex: 1;
 }
-.premiumIcon_a00e6e {
-  color: var(--icon-strong);
-  height: 20px;
-  width: 20px;
-}
 .titleText_a00e6e {
   color: var(--text-strong);
 }
@@ -51146,10 +51145,7 @@ html.disable-forced-colors * {
   flex: 1;
 }
 .title__2a891 .premiumIcon__2a891 {
-  color: var(--text-strong);
-  height: 18px;
   margin-inline-start: 8px;
-  width: 18px;
 }
 .editor__2a891 {
   background: var(--background-base-low);
@@ -51201,6 +51197,47 @@ html.disable-forced-colors * {
 .closeCircle__2a891:hover {
   color: var(--interactive-text-hover);
 }
+.categoryContainer__3a0cf {
+  background-color: var(--background-mod-subtle);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: var(--space-16);
+}
+.categoryHeader__3a0cf {
+  align-items: center;
+}
+.categoryHeader__3a0cf,
+.statusRow__3a0cf {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+}
+.statusRow__3a0cf {
+  align-items: start;
+}
+.statusTextContainer__3a0cf {
+  align-items: flex-start;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+.statusIcon__3a0cf {
+  flex-shrink: 0;
+}
+.calloutBox__3a0cf {
+  align-items: center;
+  align-self: stretch;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  padding: var(--space-8);
+}
 .debugToolsPanel__50163 {
   background: var(--background-base-low);
   box-sizing: border-box;
@@ -51239,56 +51276,10 @@ html.disable-forced-colors * {
 }
 .footer__50163 {
   border-top: 1px solid var(--border-normal);
-}
-.categoryContainer__50163,
-.footer__50163 {
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
   padding: var(--space-16);
-}
-.categoryContainer__50163 {
-  background-color: var(--background-mod-subtle);
-  border-radius: var(--radius-sm);
-}
-.categoryHeader__50163 {
-  align-items: center;
-}
-.categoryHeader__50163,
-.statusRow__50163 {
-  display: flex;
-  flex-direction: row;
-  gap: var(--space-4);
-}
-.statusRow__50163 {
-  align-items: start;
-}
-.statusTextContainer__50163 {
-  align-items: flex-start;
-  display: flex;
-  flex: 1 0 0;
-  flex-direction: column;
-  gap: 4px;
-  justify-content: center;
-}
-.iconGood__50163 {
-  fill: var(--icon-feedback-positive);
-}
-.iconBad__50163 {
-  fill: var(--icon-feedback-critical);
-}
-.statusIcon__50163 {
-  flex-shrink: 0;
-}
-.calloutBox__50163 {
-  align-items: center;
-  align-self: stretch;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  display: flex;
-  gap: var(--space-4);
-  justify-content: center;
-  padding: var(--space-8);
 }
 .tabBar__50163 {
   border-bottom: 1px solid var(--border-subtle);
@@ -51428,9 +51419,7 @@ html.disable-forced-colors * {
 .bannerUpsell_cf6da1 .premiumIcon_cf6da1 {
   color: var(--white);
   flex-shrink: 0;
-  height: 24px;
   margin-inline-end: 10px;
-  width: 24px;
 }
 .container__247cf {
   flex-direction: column;
@@ -70123,4 +70112,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.d2f1645bda070b63.css.map*/
+/*# sourceMappingURL=web.cd310394c9f1844e.css.map*/
