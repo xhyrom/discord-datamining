@@ -53249,6 +53249,10 @@ html.disable-forced-colors * {
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-345);
   --creator-revenue-progress-bar: var(--teal-400);
+  --datepicker-range-background-default: hsl(
+    var(--opacity-blurple-40-hsl) / 0.4
+  );
+  --datepicker-range-background-hover: hsl(var(--opacity-blurple-60-hsl) / 0.6);
   --embed-background: var(--primary-630);
   --embed-background-alternate: var(--primary-600);
   --experimental-avatar-embed-bg: hsl(
@@ -54044,6 +54048,18 @@ html.disable-forced-colors * {
       in oklab,
       var(--teal-400) 100%,
       var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --datepicker-range-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-40-hsl) / 0.4) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --datepicker-range-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-60-hsl) / 0.6) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6)
         var(--custom-theme-base-color-amount, 0%)
     );
     --embed-background: color-mix(
@@ -55421,6 +55437,10 @@ html.disable-forced-colors * {
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-400);
   --creator-revenue-progress-bar: var(--teal-345);
+  --datepicker-range-background-default: hsl(
+    var(--opacity-blurple-40-hsl) / 0.4
+  );
+  --datepicker-range-background-hover: hsl(var(--opacity-blurple-60-hsl) / 0.6);
   --embed-background: var(--primary-130);
   --embed-background-alternate: var(--primary-200);
   --experimental-avatar-embed-bg: hsl(
@@ -56214,6 +56234,18 @@ html.disable-forced-colors * {
       in oklab,
       var(--teal-345) 100%,
       var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --datepicker-range-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-40-hsl) / 0.4) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --datepicker-range-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-60-hsl) / 0.6) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6)
         var(--custom-theme-base-color-amount, 0%)
     );
     --embed-background: color-mix(
@@ -57591,6 +57623,10 @@ html.disable-forced-colors * {
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-345);
   --creator-revenue-progress-bar: var(--teal-400);
+  --datepicker-range-background-default: hsl(
+    var(--opacity-blurple-40-hsl) / 0.4
+  );
+  --datepicker-range-background-hover: hsl(var(--opacity-blurple-60-hsl) / 0.6);
   --embed-background: var(--plum-23);
   --embed-background-alternate: var(--plum-23);
   --experimental-avatar-embed-bg: hsl(
@@ -58386,6 +58422,18 @@ html.disable-forced-colors * {
       in oklab,
       var(--teal-400) 100%,
       var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --datepicker-range-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-40-hsl) / 0.4) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --datepicker-range-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-60-hsl) / 0.6) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6)
         var(--custom-theme-base-color-amount, 0%)
     );
     --embed-background: color-mix(
@@ -59779,6 +59827,10 @@ html.disable-forced-colors * {
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-345);
   --creator-revenue-progress-bar: var(--teal-400);
+  --datepicker-range-background-default: hsl(
+    var(--opacity-blurple-40-hsl) / 0.4
+  );
+  --datepicker-range-background-hover: hsl(var(--opacity-blurple-60-hsl) / 0.6);
   --embed-background: var(--plum-18);
   --embed-background-alternate: var(--plum-18);
   --experimental-avatar-embed-bg: hsl(
@@ -60574,6 +60626,18 @@ html.disable-forced-colors * {
       in oklab,
       var(--teal-400) 100%,
       var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --datepicker-range-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-40-hsl) / 0.4) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --datepicker-range-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-60-hsl) / 0.6) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6)
         var(--custom-theme-base-color-amount, 0%)
     );
     --embed-background: color-mix(
@@ -70059,4 +70123,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.232f2e03936be486.css.map*/
+/*# sourceMappingURL=web.d2f1645bda070b63.css.map*/

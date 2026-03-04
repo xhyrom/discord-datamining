@@ -6404,7 +6404,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-e479986f069cb000dcb6805ecc5773438bf73a2e",
+            release: "discord_web-f044da7f387bb23f274ed76b7c84c395c5e98b4b",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6471,8 +6471,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "505745"),
-            o.NA("builtAt", String("1772650951759"));
+            o.NA("buildNumber", "505764"),
+            o.NA("builtAt", String("1772652010307"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -8609,6 +8609,20 @@
                 [n.LIGHT]: { raw: "WHITE", opacity: 1 },
                 [n.MIDNIGHT]: { raw: "PLUM_19", opacity: 1 },
                 [n.DARKER]: { raw: "PLUM_17", opacity: 1 },
+              },
+              DATEPICKER_RANGE_BACKGROUND_DEFAULT: {
+                category: "generic",
+                [n.DARK]: { raw: "OPACITY_BLURPLE_40", opacity: 0.4 },
+                [n.LIGHT]: { raw: "OPACITY_BLURPLE_40", opacity: 0.4 },
+                [n.MIDNIGHT]: { raw: "OPACITY_BLURPLE_40", opacity: 0.4 },
+                [n.DARKER]: { raw: "OPACITY_BLURPLE_40", opacity: 0.4 },
+              },
+              DATEPICKER_RANGE_BACKGROUND_HOVER: {
+                category: "generic",
+                [n.DARK]: { raw: "OPACITY_BLURPLE_60", opacity: 0.6 },
+                [n.LIGHT]: { raw: "OPACITY_BLURPLE_60", opacity: 0.6 },
+                [n.MIDNIGHT]: { raw: "OPACITY_BLURPLE_60", opacity: 0.6 },
+                [n.DARKER]: { raw: "OPACITY_BLURPLE_60", opacity: 0.6 },
               },
               EMBED_BACKGROUND: {
                 category: "generic",
@@ -37624,4 +37638,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.8c152fc96e73e635.js.map
+//# sourceMappingURL=sentry.060a8c1ef032d49e.js.map
