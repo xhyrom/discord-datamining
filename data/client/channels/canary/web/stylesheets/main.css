@@ -39321,7 +39321,7 @@ body .headerAnimation_b54a5b {
 .items__3a590 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .spinner__3a590 {
   align-items: center;
@@ -70056,4 +70056,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.31b7d0932bcff9e2.css.map*/
+/*# sourceMappingURL=web.80a19dd99092e960.css.map*/
