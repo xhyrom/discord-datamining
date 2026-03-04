@@ -12097,11 +12097,14 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .container_c9d15c:empty {
   display: none;
 }
-.activityContainer_c9d15c {
+.activityContainer_c9d15c,
+.containerWithoutTruncatedText_c9d15c {
   align-items: center;
   display: flex;
-  flex-shrink: 0;
   gap: 4px;
+}
+.activityContainer_c9d15c {
+  flex-shrink: 0;
   max-width: 100%;
   overflow: hidden;
 }
@@ -70056,4 +70059,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.80a19dd99092e960.css.map*/
+/*# sourceMappingURL=web.232f2e03936be486.css.map*/
