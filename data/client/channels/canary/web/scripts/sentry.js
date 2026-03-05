@@ -6406,7 +6406,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1e838a41009e316b6a3a95767ab28969a56f4054",
+            release: "discord_web-03dc93b6e914bf70198e55b914b35497d0b22717",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6473,8 +6473,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "506556"),
-            o.NA("builtAt", String("1772737833258"));
+            o.NA("buildNumber", "506625"),
+            o.NA("builtAt", String("1772741886297"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -7354,25 +7354,25 @@
               CONTROL_SECONDARY_TEXT_DEFAULT: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_76", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_8", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_2", opacity: 1 },
                 },
               },
               ICON_FEEDBACK_CRITICAL: {
                 "mobile-visual-refresh": {
-                  [n.DARK]: { raw: "RED_NEW_22", opacity: 1 },
-                  [n.LIGHT]: { raw: "RED_NEW_53", opacity: 1 },
-                  [n.MIDNIGHT]: { raw: "RED_NEW_38", opacity: 1 },
-                  [n.DARKER]: { raw: "RED_NEW_32", opacity: 1 },
+                  [n.DARK]: { raw: "RED_NEW_18", opacity: 1 },
+                  [n.LIGHT]: { raw: "RED_NEW_56", opacity: 1 },
+                  [n.MIDNIGHT]: { raw: "RED_NEW_34", opacity: 1 },
+                  [n.DARKER]: { raw: "RED_NEW_28", opacity: 1 },
                 },
               },
               ICON_FEEDBACK_INFO: {
                 "mobile-visual-refresh": {
-                  [n.DARK]: { raw: "BLUE_NEW_24", opacity: 1 },
-                  [n.LIGHT]: { raw: "BLUE_NEW_56", opacity: 1 },
-                  [n.MIDNIGHT]: { raw: "BLUE_NEW_41", opacity: 1 },
-                  [n.DARKER]: { raw: "BLUE_NEW_35", opacity: 1 },
+                  [n.DARK]: { raw: "BLUE_NEW_21", opacity: 1 },
+                  [n.LIGHT]: { raw: "BLUE_NEW_58", opacity: 1 },
+                  [n.MIDNIGHT]: { raw: "BLUE_NEW_37", opacity: 1 },
+                  [n.DARKER]: { raw: "BLUE_NEW_31", opacity: 1 },
                 },
               },
               ICON_FEEDBACK_NOTIFICATION: {
@@ -7385,10 +7385,10 @@
               },
               ICON_FEEDBACK_WARNING: {
                 "mobile-visual-refresh": {
-                  [n.DARK]: { raw: "YELLOW_NEW_46", opacity: 1 },
-                  [n.LIGHT]: { raw: "YELLOW_NEW_70", opacity: 1 },
-                  [n.MIDNIGHT]: { raw: "YELLOW_NEW_60", opacity: 1 },
-                  [n.DARKER]: { raw: "YELLOW_NEW_56", opacity: 1 },
+                  [n.DARK]: { raw: "YELLOW_NEW_38", opacity: 1 },
+                  [n.LIGHT]: { raw: "YELLOW_NEW_72", opacity: 1 },
+                  [n.MIDNIGHT]: { raw: "YELLOW_NEW_57", opacity: 1 },
+                  [n.DARKER]: { raw: "YELLOW_NEW_53", opacity: 1 },
                 },
               },
               ICON_MUTED: {
@@ -7402,7 +7402,7 @@
               ICON_STRONG: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_76", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_8", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_2", opacity: 1 },
                 },
@@ -7410,7 +7410,7 @@
               ICON_SUBTLE: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_16", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_44", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_47", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_27", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_23", opacity: 1 },
                 },
@@ -7456,10 +7456,10 @@
               },
               INPUT_PLACEHOLDER_TEXT_DEFAULT: {
                 "mobile-visual-refresh": {
-                  [n.DARK]: { raw: "NEUTRAL_31", opacity: 1 },
+                  [n.DARK]: { raw: "NEUTRAL_25", opacity: 1 },
                   [n.LIGHT]: { raw: "NEUTRAL_42", opacity: 1 },
-                  [n.MIDNIGHT]: { raw: "NEUTRAL_39", opacity: 1 },
-                  [n.DARKER]: { raw: "NEUTRAL_37", opacity: 1 },
+                  [n.MIDNIGHT]: { raw: "NEUTRAL_34", opacity: 1 },
+                  [n.DARKER]: { raw: "NEUTRAL_31", opacity: 1 },
                 },
               },
               INTERACTIVE_BACKGROUND_ACTIVE: {
@@ -7504,7 +7504,7 @@
               INTERACTIVE_ICON_ACTIVE: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_76", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_8", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_2", opacity: 1 },
                 },
@@ -7512,7 +7512,7 @@
               INTERACTIVE_ICON_DEFAULT: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_16", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_44", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_47", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_27", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_23", opacity: 1 },
                 },
@@ -7520,7 +7520,7 @@
               INTERACTIVE_ICON_HOVER: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_76", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_8", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_2", opacity: 1 },
                 },
@@ -7528,7 +7528,7 @@
               INTERACTIVE_TEXT_ACTIVE: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_76", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_8", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_2", opacity: 1 },
                 },
@@ -7536,7 +7536,7 @@
               INTERACTIVE_TEXT_DEFAULT: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_16", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_44", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_47", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_27", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_23", opacity: 1 },
                 },
@@ -7544,7 +7544,7 @@
               INTERACTIVE_TEXT_HOVER: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_76", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_8", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_2", opacity: 1 },
                 },
@@ -7699,7 +7699,7 @@
               MOBILE_TEXT_HEADING_PRIMARY: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_76", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_8", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_2", opacity: 1 },
                 },
@@ -7755,55 +7755,55 @@
               TEXT_BRAND: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "BLURPLE_26", opacity: 1 },
-                  [n.LIGHT]: { raw: "BLURPLE_50", opacity: 1 },
+                  [n.LIGHT]: { raw: "BLURPLE_53", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "BLURPLE_42", opacity: 1 },
                   [n.DARKER]: { raw: "BLURPLE_36", opacity: 1 },
                 },
               },
               TEXT_DEFAULT: {
                 "mobile-visual-refresh": {
-                  [n.DARK]: { raw: "NEUTRAL_10", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_69", opacity: 1 },
+                  [n.DARK]: { raw: "NEUTRAL_4", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_72", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_10", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_5", opacity: 1 },
                 },
               },
               TEXT_FEEDBACK_CRITICAL: {
                 "mobile-visual-refresh": {
-                  [n.DARK]: { raw: "RED_NEW_22", opacity: 1 },
-                  [n.LIGHT]: { raw: "RED_NEW_53", opacity: 1 },
-                  [n.MIDNIGHT]: { raw: "RED_NEW_38", opacity: 1 },
-                  [n.DARKER]: { raw: "RED_NEW_32", opacity: 1 },
+                  [n.DARK]: { raw: "RED_NEW_18", opacity: 1 },
+                  [n.LIGHT]: { raw: "RED_NEW_56", opacity: 1 },
+                  [n.MIDNIGHT]: { raw: "RED_NEW_34", opacity: 1 },
+                  [n.DARKER]: { raw: "RED_NEW_28", opacity: 1 },
                 },
               },
               TEXT_FEEDBACK_INFO: {
                 "mobile-visual-refresh": {
-                  [n.DARK]: { raw: "BLUE_NEW_24", opacity: 1 },
-                  [n.LIGHT]: { raw: "BLUE_NEW_56", opacity: 1 },
-                  [n.MIDNIGHT]: { raw: "BLUE_NEW_41", opacity: 1 },
-                  [n.DARKER]: { raw: "BLUE_NEW_35", opacity: 1 },
+                  [n.DARK]: { raw: "BLUE_NEW_21", opacity: 1 },
+                  [n.LIGHT]: { raw: "BLUE_NEW_58", opacity: 1 },
+                  [n.MIDNIGHT]: { raw: "BLUE_NEW_37", opacity: 1 },
+                  [n.DARKER]: { raw: "BLUE_NEW_31", opacity: 1 },
                 },
               },
               TEXT_FEEDBACK_POSITIVE: {
                 "mobile-visual-refresh": {
-                  [n.DARK]: { raw: "GREEN_NEW_25", opacity: 1 },
-                  [n.LIGHT]: { raw: "GREEN_NEW_55", opacity: 1 },
-                  [n.MIDNIGHT]: { raw: "GREEN_NEW_40", opacity: 1 },
-                  [n.DARKER]: { raw: "GREEN_NEW_35", opacity: 1 },
+                  [n.DARK]: { raw: "GREEN_NEW_22", opacity: 1 },
+                  [n.LIGHT]: { raw: "GREEN_NEW_58", opacity: 1 },
+                  [n.MIDNIGHT]: { raw: "GREEN_NEW_37", opacity: 1 },
+                  [n.DARKER]: { raw: "GREEN_NEW_31", opacity: 1 },
                 },
               },
               TEXT_FEEDBACK_WARNING: {
                 "mobile-visual-refresh": {
-                  [n.DARK]: { raw: "YELLOW_NEW_46", opacity: 1 },
-                  [n.LIGHT]: { raw: "YELLOW_NEW_70", opacity: 1 },
-                  [n.MIDNIGHT]: { raw: "YELLOW_NEW_60", opacity: 1 },
-                  [n.DARKER]: { raw: "YELLOW_NEW_56", opacity: 1 },
+                  [n.DARK]: { raw: "YELLOW_NEW_38", opacity: 1 },
+                  [n.LIGHT]: { raw: "YELLOW_NEW_72", opacity: 1 },
+                  [n.MIDNIGHT]: { raw: "YELLOW_NEW_57", opacity: 1 },
+                  [n.DARKER]: { raw: "YELLOW_NEW_53", opacity: 1 },
                 },
               },
               TEXT_LINK: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "BLUE_NEW_27", opacity: 1 },
-                  [n.LIGHT]: { raw: "BLUE_NEW_50", opacity: 1 },
+                  [n.LIGHT]: { raw: "BLUE_NEW_53", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "BLUE_NEW_42", opacity: 1 },
                   [n.DARKER]: { raw: "BLUE_NEW_37", opacity: 1 },
                 },
@@ -7843,7 +7843,7 @@
               TEXT_STATUS_ONLINE: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "GREEN_NEW_40", opacity: 1 },
-                  [n.LIGHT]: { raw: "GREEN_160", opacity: 1 },
+                  [n.LIGHT]: { raw: "GREEN_NEW_55", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "GREEN_NEW_40", opacity: 1 },
                   [n.DARKER]: { raw: "GREEN_NEW_40", opacity: 1 },
                 },
@@ -7851,7 +7851,7 @@
               TEXT_STRONG: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_76", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_8", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_2", opacity: 1 },
                 },
@@ -7859,7 +7859,7 @@
               TEXT_SUBTLE: {
                 "mobile-visual-refresh": {
                   [n.DARK]: { raw: "NEUTRAL_16", opacity: 1 },
-                  [n.LIGHT]: { raw: "NEUTRAL_44", opacity: 1 },
+                  [n.LIGHT]: { raw: "NEUTRAL_47", opacity: 1 },
                   [n.MIDNIGHT]: { raw: "NEUTRAL_27", opacity: 1 },
                   [n.DARKER]: { raw: "NEUTRAL_23", opacity: 1 },
                 },
@@ -7874,10 +7874,10 @@
               },
               TEXT_VOICE_DISCONNECTED: {
                 "mobile-visual-refresh": {
-                  [n.DARK]: { raw: "RED_NEW_22", opacity: 1 },
-                  [n.LIGHT]: { raw: "RED_NEW_53", opacity: 1 },
-                  [n.MIDNIGHT]: { raw: "RED_NEW_38", opacity: 1 },
-                  [n.DARKER]: { raw: "RED_NEW_32", opacity: 1 },
+                  [n.DARK]: { raw: "RED_NEW_18", opacity: 1 },
+                  [n.LIGHT]: { raw: "RED_NEW_56", opacity: 1 },
+                  [n.MIDNIGHT]: { raw: "RED_NEW_34", opacity: 1 },
+                  [n.DARKER]: { raw: "RED_NEW_28", opacity: 1 },
                 },
               },
               TEXT_VOICE_SPEAKING: {
@@ -37640,4 +37640,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.b0244de241e2c8d1.js.map
+//# sourceMappingURL=sentry.64c3cc7482769d84.js.map
