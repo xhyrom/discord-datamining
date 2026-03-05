@@ -4150,8 +4150,15 @@
 .listBoxItemContent__2e223.inInput__2e223 {
   min-height: calc(var(--select-option-height) - 2px);
 }
+.listBoxItemContent__2e223[data-has-description="true"] {
+  align-items: flex-start;
+  flex-direction: column;
+}
 .listBoxItemLabel__2e223 {
   flex-grow: 1;
+  flex-shrink: 1;
+}
+.listBoxItemDescription__2e223 {
   flex-shrink: 1;
 }
 .selectedIcon__2e223 {
@@ -4182,6 +4189,10 @@
   gap: var(--space-4);
   grid-template-columns: auto 1fr auto;
   grid-template-rows: 1fr;
+}
+.option__56a50[data-has-description="true"] {
+  align-items: start;
+  grid-template-rows: auto auto;
 }
 .leading__56a50 {
   box-sizing: border-box;
@@ -70062,4 +70073,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.b666779c19db9701.css.map*/
+/*# sourceMappingURL=web.db26874862862a8c.css.map*/
