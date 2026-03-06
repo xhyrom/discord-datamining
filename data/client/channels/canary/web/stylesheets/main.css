@@ -31450,6 +31450,65 @@ html:not(.chat-input) .inputInner_b1f01d {
 .theme-light .avatar__6d099 {
   background: #a8a9aa;
 }
+.nameplatePlaceholderUserRow_e75aa6 {
+  align-items: center;
+  display: flex;
+  height: 42px;
+  padding: 0 8px;
+}
+.nameplatePlaceholderAvatar_e75aa6,
+.nameplatePlaceholderBar_e75aa6 {
+  background-color: var(--background-mod-subtle);
+}
+.nameplatePlaceholderBar_e75aa6 {
+  border-radius: 8px;
+  flex-grow: 1;
+  height: 14px;
+  margin-inline-start: 12px;
+}
+.smallRow_e75aa6 {
+  height: 28px;
+}
+.smallBar_e75aa6 {
+  height: 10px;
+}
+.nameplatePreviewContainer_f7b5db {
+  align-items: center;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0,
+    #000 30%,
+    #000 70%,
+    rgba(0, 0, 0, 0.2)
+  );
+  mask-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0,
+    #000 30%,
+    #000 70%,
+    rgba(0, 0, 0, 0.2)
+  );
+  max-height: 100%;
+  max-width: 252px;
+}
+.nameplatePreviewContainer_f7b5db,
+.nameplatePreviewList_f7b5db {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.nameplatePreviewList_f7b5db {
+  flex-direction: column;
+  gap: var(--space-4);
+  justify-content: center;
+}
+.nameplatePreviewSampleItem_f7b5db {
+  align-items: center;
+  display: flex;
+  height: 42px;
+  width: 100%;
+}
 .cardContainer__47729 {
   align-items: center;
   background-position: 50%;
@@ -31539,29 +31598,27 @@ html:not(.chat-input) .inputInner_b1f01d {
   display: flex;
   height: 100%;
   justify-content: center;
+  margin: var(--space-4);
   position: relative;
   width: 100%;
 }
 .full-motion .nameplatePreview__517e1 {
   transition: transform 0.2s ease;
 }
-.nameplateTopLeft__517e1 {
-  inset-inline-start: 33px;
-  position: absolute;
-  top: 37px;
-}
-.nameplateBottomRight__517e1 {
-  bottom: 33px;
-  inset-inline-end: 33px;
+.nameplatePreviewRescaler__517e1 {
+  inset: -12.5%;
   position: absolute;
 }
-.bundlePreview__517e1 {
+.bundlePreview__517e1,
+.nameplatePreviewRescaler__517e1 {
   align-items: center;
   display: flex;
-  height: 100%;
   justify-content: center;
   transform: scale(0.8);
   transform-origin: center;
+}
+.bundlePreview__517e1 {
+  height: 100%;
   width: 100%;
 }
 .itemIcon_a647f7 {
@@ -70011,4 +70068,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.d6462ad1acbe95f7.css.map*/
+/*# sourceMappingURL=web.714a468fa2400c71.css.map*/
