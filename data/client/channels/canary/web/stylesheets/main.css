@@ -37768,6 +37768,18 @@ body .headerAnimation_b54a5b {
 .displayFlex__48a20 {
   display: flex;
 }
+.row__8a8df {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin-bottom: var(--space-16);
+}
+.flag__8a8df {
+  flex-shrink: 0;
+  height: 18px;
+  width: auto;
+}
 .planOption_b13085 {
   align-items: center;
   color: var(--interactive-text-default);
@@ -69959,4 +69971,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.32b5b23d2eca979c.css.map*/
+/*# sourceMappingURL=web.4bfb6f96db109904.css.map*/
