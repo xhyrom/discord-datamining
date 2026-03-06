@@ -15636,7 +15636,20 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   display: inline-flex;
   line-height: 16px !important;
   padding: 0 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   vertical-align: middle;
+}
+span.messageChipletContainerInner__10651,
+span.messageText__10651 {
+  display: inline;
+  line-height: 2px !important;
+  vertical-align: middle;
+}
+img.messageBadge__10651 {
+  margin-bottom: -3px;
+  margin-top: -6px;
 }
 .chipletContainerInline__10651 {
   margin-top: -2px;
@@ -15653,10 +15666,37 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   display: inline-flex;
   line-height: 16px !important;
   max-width: 70px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.copyOnlyText__10651 {
+  font-size: 0;
+  height: 1px;
+  line-height: 0;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+  width: 1px;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: normal;
 }
 .badge__10651 {
   margin-inline-end: 2px;
   margin-top: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+}
+.badgePlaceholder__10651 {
+  display: inline;
+  vertical-align: middle;
 }
 .tooltip__10651 {
   background: var(--background-surface-highest);
@@ -69971,4 +70011,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.4bfb6f96db109904.css.map*/
+/*# sourceMappingURL=web.db2a3e56be578a9c.css.map*/
