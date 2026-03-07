@@ -1215,11 +1215,7 @@
   },
   "CHANNEL_INTEGRATIONS": {
     "url": "/channels/:param/integrations",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "CHANNEL_INTEGRATION": {
     "url": "/channels/:param/integrations/:param",
