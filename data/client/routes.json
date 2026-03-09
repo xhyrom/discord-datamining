@@ -4748,11 +4748,7 @@
   },
   "EMOJI_CAPTIONS_GET": {
     "url": "/users/@me/emoji-captions",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "SAFETY_HUB": {
     "url": "/safety-hub/@me",
