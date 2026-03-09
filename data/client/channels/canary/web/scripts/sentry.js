@@ -6407,7 +6407,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-aad1f128b5e03cfaf359c880064c56ebba7f573d",
+            release: "discord_web-ae13caa118e0fc340f2baf8b65575c011080d56d",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6474,8 +6474,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "508078"),
-            o.NA("builtAt", String("1773086789236"));
+            o.NA("buildNumber", "508133"),
+            o.NA("builtAt", String("1773088889963"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6690,6 +6690,7 @@
             REPORT_SECOND_LOOK: "/report-review",
             COLLECTIBLES_SHOP: "/shop",
             COLLECTIBLES_SHOP_WITH_TAB: (e) => `/shop?tab=${e}`,
+            COLLECTIBLES_SHOP_COLLECTION_DETAIL: (e) => `/shop/collection/${e}`,
             COLLECTIBLES_SHOP_PRODUCT_DETAIL: (e) => `/shop/product/${e}`,
             COLLECTIBLES_SHOP_LAYOUT: (e) => `/shop/layout/${e}`,
             NITRO_HOME: "/store",
@@ -37641,4 +37642,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.edf53b4a04e720ca.js.map
+//# sourceMappingURL=sentry.a8894d1ba18580b8.js.map
