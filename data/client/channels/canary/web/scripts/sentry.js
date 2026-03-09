@@ -3019,7 +3019,6 @@
           CHANNEL_FOLLOWER_STATS: (e) => `/channels/${e}/follower-stats`,
           CHANNEL_FOLLOWER_MESSAGE_STATS: (e) =>
             `/channels/${e}/follower-message-stats`,
-          CHANNEL_INTEGRATIONS: (e) => `/channels/${e}/integrations`,
           CHANNEL_INTEGRATION: (e, t) => `/channels/${e}/integrations/${t}`,
           CHANNEL_SAFETY_WARNINGS_ACK: (e) =>
             `/channels/${e}/safety-warnings/ack`,
@@ -3729,7 +3728,6 @@
           FAMILY_CENTER_RESTRICTED_SCHEDULE_RULES: (e, t) =>
             `/family-center/${e}/restricted-schedule/rules/${t}`,
           REFERRAL_OFFER_ID_RESOLVE: (e) => `/referrals/${e}`,
-          APPLICATIONS_SHELF: "/applications/shelf",
           BADGE_ICON: (e) => `/badge-icons/${e}.png`,
           FINISH_MFA_CHECK: "/mfa/finish",
           CREATE_REVERSE_TRIAL: "/user-offers/reverse-trial",
@@ -6409,7 +6407,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-842ec2df78af8ee8a0d265872717226ca4962e8d",
+            release: "discord_web-8c1355ae967fd4d4bd22f336b82c9d3861dafe5d",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6476,8 +6474,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "507971"),
-            o.NA("builtAt", String("1773078433584"));
+            o.NA("buildNumber", "507983"),
+            o.NA("builtAt", String("1773080027735"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -37643,4 +37641,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.624565adf68eb7a2.js.map
+//# sourceMappingURL=sentry.80a60324636b9a79.js.map
