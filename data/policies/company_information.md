@@ -772,6 +772,135 @@
                       class="nav-dd-decor is-build"
                     />
                   </div>
+                  <div class="nav_dd_content-wr isnew hide">
+                    <div class="nav_dd_content_layout top-none _2-col">
+                      <div class="nav_dd_link-group">
+                        <div class="nav_dd_link_list">
+                          <div class="nav_dd_link_title">Learn</div>
+                          <a
+                            href="https://discord.com/developers"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Discord for Game Developers</div></a
+                          ><a
+                            href="https://discord.com/developers/social-sdk"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Integration</div></a
+                          ><a
+                            href="https://discord.com/developers/social-commerce"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Social Commerce</div></a
+                          ><a
+                            href="https://discord.com/developers/build"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Apps &amp;&nbsp;Activities</div></a
+                          ><a
+                            href="https://discord.com/developers/developer-newsletter"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Developer Newsletter</div></a
+                          ><a
+                            href="https://discord.com/developers/success-stories"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Developer Case Studies</div></a
+                          >
+                        </div>
+                        <div class="nav_dd_link_line is-n"></div>
+                        <div class="nav_dd_link_list">
+                          <div class="nav_dd_link_title">Build</div>
+                          <a
+                            href="https://discord.com/community"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Official Game Communities</div>
+                            <div class="nav_dd_link_arrow w-embed">
+                              <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M5 4H12M12 4V11M12 4L4 12"
+                                  stroke="white"
+                                  stroke-opacity="0.5"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg></div></a
+                          ><a
+                            href="https://discord.com/developers/home"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Developer Portal</div>
+                            <div class="nav_dd_link_arrow w-embed">
+                              <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M5 4H12M12 4V11M12 4L4 12"
+                                  stroke="white"
+                                  stroke-opacity="0.5"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg></div></a
+                          ><a
+                            href="https://discord.com/developers/docs/intro"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Documentation</div>
+                            <div class="nav_dd_link_arrow w-embed">
+                              <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M5 4H12M12 4V11M12 4L4 12"
+                                  stroke="white"
+                                  stroke-opacity="0.5"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg></div></a
+                          ><a
+                            href="https://support-dev.discord.com/hc/en-us"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Developer Help Center</div>
+                            <div class="nav_dd_link_arrow w-embed">
+                              <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M5 4H12M12 4V11M12 4L4 12"
+                                  stroke="white"
+                                  stroke-opacity="0.5"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg></div
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      loading="eager"
+                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4aae3ee9f2e87506de82_Clyde%20(1).webp"
+                      alt=""
+                      class="nav-dd-decor is-build"
+                    />
+                  </div>
                 </nav>
               </div>
             </li>
@@ -1316,6 +1445,134 @@
                                 class="dd_nav-link is-new w-inline-block"
                                 ><div>Developer Newsletter</div></a
                               >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="nav_dd_content_layout hide">
+                          <div class="nav_dd_link-group">
+                            <a
+                              href="https://discord.com/developers"
+                              class="nav_dd_link-group_title is-new"
+                              >Developers</a
+                            >
+                            <div class="nav_dd_link_list">
+                              <div class="nav_dd_link_title is-new">Learn</div>
+                              <a
+                                href="https://discord.com/developers"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Discord for Game Developers</div></a
+                              ><a
+                                href="https://discord.com/developers/social-sdk"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Integration</div></a
+                              ><a
+                                href="https://discord.com/developers/social-commerce"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Social Commerce</div></a
+                              ><a
+                                href="https://discord.com/developers/build"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Apps and Activities</div></a
+                              ><a
+                                href="https://discord.com/developers/developer-newsletter"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Developer Newsletter</div></a
+                              ><a
+                                href="https://discord.com/developers/success-stories"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Developer Case Studies</div></a
+                              >
+                            </div>
+                            <div class="nav_dd_link_line"></div>
+                            <div class="nav_dd_link_list">
+                              <div class="nav_dd_link_title is-new">
+                                Documentation
+                              </div>
+                              <a
+                                href="https://discord.com/community"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Official Game Communities</div>
+                                <div class="nav_dd_link_arrow w-embed">
+                                  <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M5 4H12M12 4V11M12 4L4 12"
+                                      stroke="white"
+                                      stroke-opacity="0.5"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    ></path>
+                                  </svg></div></a
+                              ><a
+                                href="https://discord.com/developers/home"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Developer Portal</div>
+                                <div class="nav_dd_link_arrow w-embed">
+                                  <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M5 4H12M12 4V11M12 4L4 12"
+                                      stroke="white"
+                                      stroke-opacity="0.5"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    ></path>
+                                  </svg></div></a
+                              ><a
+                                href="https://discord.com/developers/docs/intro"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Documentation</div>
+                                <div class="nav_dd_link_arrow w-embed">
+                                  <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M5 4H12M12 4V11M12 4L4 12"
+                                      stroke="white"
+                                      stroke-opacity="0.5"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    ></path>
+                                  </svg></div></a
+                              ><a
+                                href="https://support-dev.discord.com/hc/en-us"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Developer Help Center</div>
+                                <div class="nav_dd_link_arrow w-embed">
+                                  <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M5 4H12M12 4V11M12 4L4 12"
+                                      stroke="white"
+                                      stroke-opacity="0.5"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    ></path>
+                                  </svg></div
+                              ></a>
                             </div>
                           </div>
                         </div>
