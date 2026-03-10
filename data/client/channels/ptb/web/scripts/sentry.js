@@ -3019,7 +3019,6 @@
           CHANNEL_FOLLOWER_STATS: (e) => `/channels/${e}/follower-stats`,
           CHANNEL_FOLLOWER_MESSAGE_STATS: (e) =>
             `/channels/${e}/follower-message-stats`,
-          CHANNEL_INTEGRATIONS: (e) => `/channels/${e}/integrations`,
           CHANNEL_INTEGRATION: (e, t) => `/channels/${e}/integrations/${t}`,
           CHANNEL_SAFETY_WARNINGS_ACK: (e) =>
             `/channels/${e}/safety-warnings/ack`,
@@ -3729,7 +3728,6 @@
           FAMILY_CENTER_RESTRICTED_SCHEDULE_RULES: (e, t) =>
             `/family-center/${e}/restricted-schedule/rules/${t}`,
           REFERRAL_OFFER_ID_RESOLVE: (e) => `/referrals/${e}`,
-          APPLICATIONS_SHELF: "/applications/shelf",
           BADGE_ICON: (e) => `/badge-icons/${e}.png`,
           FINISH_MFA_CHECK: "/mfa/finish",
           CREATE_REVERSE_TRIAL: "/user-offers/reverse-trial",
@@ -3739,7 +3737,6 @@
           USER_OFFER_IDS: "/user-offer-ids",
           GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY: (e) =>
             `/guilds/${e}/members/unusual-dm-activity`,
-          EMOJI_CAPTIONS_GET: "/users/@me/emoji-captions",
           SAFETY_HUB: "/safety-hub/@me",
           SAFETY_HUB_REQUEST_REVIEW: (e) => `/safety-hub/request-review/${e}`,
           SAFETY_HUB_REQUEST_SUSPENDED_USER_REVIEW: (e) =>
@@ -4120,6 +4117,10 @@
           (n.LIBDISCORE_KV_DUAL_READ_ERROR = "libdiscore_kv_dual_read_error"),
           (n.LIBDISCORE_DISPATCH_BRIDGE_TELEMETRY =
             "libdiscore_dispatch_bridge_telemetry"),
+          (n.APP_STORE_OVERLAY_OPEN_SUCCEEDED =
+            "app_store_overlay_open_succeeded"),
+          (n.APP_STORE_OVERLAY_OPEN_FAILED = "app_store_overlay_open_failed"),
+          (n.APP_STORE_OVERLAY_CLOSED = "app_store_overlay_closed"),
           (n.LIBDISCORE_SLOW_TIMERS = "libdiscore_slow_timers"),
           (n.REGISTER_INPUT_FOCUS = "register_input_focus"),
           (n.REGISTER_INPUT_BLUR = "register_input_blur"),
@@ -6411,7 +6412,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-03-09-9fcfc7472dd5ecc7070b96b97d1300c7f1f263e3-discord_web",
+              "2026-03-10-91618b7d85fa43a9d91ab3c524986505b7294c67-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6478,8 +6479,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "507841"),
-            o.NA("builtAt", String("1773041083995"));
+            o.NA("buildNumber", "508471"),
+            o.NA("builtAt", String("1773127111067"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6694,6 +6695,7 @@
             REPORT_SECOND_LOOK: "/report-review",
             COLLECTIBLES_SHOP: "/shop",
             COLLECTIBLES_SHOP_WITH_TAB: (e) => `/shop?tab=${e}`,
+            COLLECTIBLES_SHOP_COLLECTION_DETAIL: (e) => `/shop/collection/${e}`,
             COLLECTIBLES_SHOP_PRODUCT_DETAIL: (e) => `/shop/product/${e}`,
             COLLECTIBLES_SHOP_LAYOUT: (e) => `/shop/layout/${e}`,
             NITRO_HOME: "/store",
@@ -37645,4 +37647,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.65aeaabe92d06a81.js.map
+//# sourceMappingURL=sentry.58bf3e464f8392a6.js.map
