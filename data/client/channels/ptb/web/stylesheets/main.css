@@ -10206,7 +10206,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .barBase__0f481 {
   align-items: center;
   border: 1px solid var(--border-subtle);
-  cursor: pointer;
   display: flex;
   inset-inline: var(--space-8) var(--space-16);
   min-height: 24px;
@@ -10226,6 +10225,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   appearance: none;
   background: none;
   color: inherit;
+  cursor: pointer;
   display: flex;
   font-size: 14px;
   font-weight: var(--font-weight-medium);
@@ -10250,6 +10250,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   bottom: calc(var(--custom-channel-textarea-text-area-height) + 28px);
   box-shadow: var(--shadow-medium);
   box-sizing: border-box;
+  cursor: pointer;
   inset-inline: 0;
   margin-block: 0 var(--space-8);
   margin-inline: auto;
@@ -10428,6 +10429,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .barButtonMain__0f481 {
   display: block;
   flex: 1 1 auto;
+  height: 100%;
   position: relative;
 }
 .barButtonMain__0f481,
@@ -10437,7 +10439,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   white-space: nowrap;
 }
 .barButtonAlt__0f481 {
-  background-color: var(--control-secondary-background-default);
   border-radius: var(--radius-sm);
   flex: 0 0 auto;
   font-weight: var(--font-weight-semibold);
@@ -10446,6 +10447,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .barButtonAlt__0f481:hover {
   background-color: var(--control-secondary-background-hover);
+}
+.errorLoadingBarAlt__0f481 {
+  background-color: var(--control-secondary-background-default);
 }
 .loadingMore__0f481 {
   align-items: center;
@@ -10767,6 +10771,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .newTopicsBarTopicSection__0f481 {
   align-items: center;
+  cursor: pointer;
   display: flex;
   margin-inline-start: 8px;
   max-width: 33%;
@@ -10796,6 +10801,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   min-width: 16px;
 }
 .newTopicsBarInitial__0f481 {
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
   overflow: hidden;
   text-overflow: ellipsis;
   text-transform: none;
@@ -18068,8 +18077,11 @@ img.thumbnail__0f2e8 {
   top: -68px;
 }
 .user-profile-modal-v2 :where(.avatar__75742) {
-  inset-inline-start: 32px;
-  top: 80px;
+  inset-block-start: calc(
+    var(--custom-user-profile-banner-height) -
+      var(--custom-user-profile-avatar-size) / 2
+  );
+  inset-inline-start: var(--custom-modal-profile-card-padding);
 }
 .user-profile-sidebar :where(.avatar__75742) {
   inset-inline-start: 16px;
@@ -18163,6 +18175,11 @@ img.thumbnail__0f2e8 {
 }
 :root .user-profile-modal-v2 {
   --custom-user-profile-banner-height: 140px;
+  --custom-user-profile-avatar-size: 120px;
+  --custom-modal-v2-padding: var(--space-48);
+  --custom-modal-v2-gutter: var(--space-32);
+  --custom-modal-v2-tabpanel-scrollbar-offset: var(--space-16);
+  --custom-modal-profile-card-padding: var(--space-32);
 }
 :root .user-profile-sidebar {
   --custom-user-profile-banner-height: 120px;
@@ -18223,18 +18240,38 @@ img.thumbnail__0f2e8 {
 }
 :where(.outer_c0bea0).user-profile-modal-v2 {
   background: var(--background-base-lower);
-  border-radius: var(--radius-lg);
   box-sizing: border-box;
-  height: 800px;
-  max-width: 100%;
-  min-height: 500px;
-  outline: 1px solid var(--border-normal);
-  outline-offset: -1px;
-  width: 960px;
+  container-type: inline-size;
+  height: 100vh;
+  width: 100vw;
 }
-@media (max-height: 900px) {
+@media (min-width: 929px) {
   :where(.outer_c0bea0).user-profile-modal-v2 {
-    height: calc(100vh - var(--space-24) * 2);
+    max-width: calc(100vw - var(--space-48) * 2);
+    width: 962px;
+  }
+}
+@media (min-height: 785px) {
+  :where(.outer_c0bea0).user-profile-modal-v2 {
+    height: 800px;
+    max-height: calc(100vh - var(--space-48) * 2);
+  }
+}
+@media (min-height: 785px) and (min-width: 929px) {
+  :where(.outer_c0bea0).user-profile-modal-v2 {
+    border-radius: var(--radius-lg);
+  }
+}
+@media (min-width: 929px) {
+  :where(.outer_c0bea0).user-profile-modal-v2 {
+    border-inline-end: 1px solid var(--border-normal);
+    border-inline-start: 1px solid var(--border-normal);
+  }
+}
+@media (min-height: 785px) {
+  :where(.outer_c0bea0).user-profile-modal-v2 {
+    border-bottom: 1px solid var(--border-normal);
+    border-top: 1px solid var(--border-normal);
   }
 }
 :where(.outer_c0bea0).user-profile-sidebar {
@@ -18282,13 +18319,17 @@ img.thumbnail__0f2e8 {
   flex-direction: row;
   gap: 0;
   height: 100%;
-  padding-block: 48px 0;
-  padding-inline: 48px 32px;
-}
-@media (max-width: 960px) {
-  .user-profile-modal-v2 .inner_c0bea0 {
-    padding-block: 48px 0;
-    padding-inline: 16px 4px;
+  padding-block: var(--custom-modal-v2-padding) 0;
+  padding-inline-end: calc(
+    var(--custom-modal-v2-padding) -
+      var(--custom-modal-v2-tabpanel-scrollbar-offset)
+  );
+  padding-inline-start: var(--custom-modal-v2-padding);
+  @container (min-width: 714px) {
+    --custom-modal-v2-padding: var(--space-32);
+  }
+  @container (min-width: 929px) {
+    --custom-modal-v2-padding: var(--space-48);
   }
 }
 .user-profile-sidebar .inner_c0bea0 {
@@ -27809,8 +27850,14 @@ html:not(.chat-input) .inputInner_b1f01d {
   top: -10px;
 }
 .user-profile-modal-v2 .container_ab8609 {
-  inset-inline-start: 172px;
-  top: calc(var(--custom-user-profile-banner-height) - 8px);
+  inset-block-start: calc(
+    var(--custom-user-profile-banner-height) - var(--space-8)
+  );
+  inset-inline-end: var(--space-16);
+  inset-inline-start: calc(
+    var(--custom-modal-profile-card-padding) +
+      var(--custom-user-profile-avatar-size) + var(--space-20)
+  );
 }
 .user-profile-sidebar .container_ab8609 {
   inset-inline-start: 109px;
@@ -27843,7 +27890,11 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .user-profile-modal-v2 .referenceContainer_ab8609 {
   margin-top: -10px;
-  margin-inline: 144px 12px;
+  margin-inline: calc(
+      var(--custom-modal-profile-card-padding) +
+        var(--custom-user-profile-avatar-size) - var(--space-8)
+    )
+    12px;
 }
 .user-profile-modal-v2 .referenceContainer_ab8609.withLabel_ab8609 {
   margin-top: -24px;
@@ -70043,4 +70094,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.7a78f0853a0dd1ab.css.map*/
+/*# sourceMappingURL=web.8a91f5787f6d78a6.css.map*/
