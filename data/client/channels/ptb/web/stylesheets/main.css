@@ -38387,6 +38387,9 @@ body .headerAnimation_b54a5b {
 .totalDueReviewStep_bb5449 {
   margin-bottom: var(--space-12);
 }
+.footerInlineNoticeContainer_bb5449 {
+  margin-top: var(--space-12);
+}
 .paymentNote__56a21 {
   background-color: var(--modal-background);
   margin: 0;
@@ -70094,4 +70097,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.8a91f5787f6d78a6.css.map*/
+/*# sourceMappingURL=web.1713eaae9e6794dd.css.map*/
