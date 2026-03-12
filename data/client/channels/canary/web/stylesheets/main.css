@@ -32187,6 +32187,11 @@ body .headerAnimation_b54a5b {
   margin: var(--modal-vertical-padding) var(--modal-horizontal-padding);
   margin-inline-start: auto;
 }
+.fullWidthGraphicHeaderForManaModal_ae16b8.fullWidthGraphicHeaderForManaModal_ae16b8 {
+  margin-top: calc(var(--custom-modal-padding-top, 24px) * -1 - 2px);
+  margin-inline-start: -1px;
+  width: calc(100% + 2px);
+}
 .spinner_ca0af2 {
   border-radius: 4px;
   max-height: 720px;
@@ -38309,7 +38314,7 @@ body .headerAnimation_b54a5b {
   height: 48px;
   width: 48px;
 }
-.applicationProductPreview__25766 {
+.invoiceProductPreviewImage__25766 {
   max-height: 64px;
   max-width: 64px;
 }
@@ -38404,11 +38409,8 @@ body .headerAnimation_b54a5b {
   border-start-start-radius: calc(var(--custom-border-radius) + 2px);
   box-sizing: border-box;
   height: 146px;
-  margin-inline-start: -1px;
-  margin-top: calc(var(--custom-modal-padding-top) * -1 - 2px);
   min-height: 146px;
   position: relative;
-  width: calc(100% + 2px);
 }
 .closeButton__9abb9 {
   inset-inline-end: 16px;
@@ -71252,4 +71254,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.79f8ad386fddc4eb.css.map*/
+/*# sourceMappingURL=web.14db445061c35585.css.map*/
