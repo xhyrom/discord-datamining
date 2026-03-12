@@ -6412,7 +6412,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-58006d9eea7d543ebe32ece84173f6e8623e092a",
+            release: "discord_web-ffe85fc364ed614a28cc4aa572e184853e4a7103",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6479,8 +6479,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "510263"),
-            o.NA("builtAt", String("1773341740658"));
+            o.NA("buildNumber", "510307"),
+            o.NA("builtAt", String("1773343434597"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -8553,6 +8553,25 @@
                 [a.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
                 [a.DARKER]: { raw: "BRAND_500", opacity: 1 },
               },
+              BACKGROUND_CODE: {
+                category: "background",
+                [a.DARK]: {
+                  raw: "OPACITY_BLURPLE_8",
+                  opacity: 0.0784313725490196,
+                },
+                [a.LIGHT]: {
+                  raw: "OPACITY_BLURPLE_4",
+                  opacity: 0.0392156862745098,
+                },
+                [a.MIDNIGHT]: {
+                  raw: "OPACITY_BLURPLE_8",
+                  opacity: 0.0784313725490196,
+                },
+                [a.DARKER]: {
+                  raw: "OPACITY_BLURPLE_8",
+                  opacity: 0.0784313725490196,
+                },
+              },
               BACKGROUND_FEEDBACK_CRITICAL: {
                 category: "background",
                 [a.DARK]: { raw: "RED_430", opacity: 1 },
@@ -8813,6 +8832,16 @@
                 [a.LIGHT]: { raw: "BLACK", opacity: 0.04 },
                 [a.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.08 },
                 [a.DARKER]: { raw: "PLUM_11", opacity: 0.06 },
+              },
+              BORDER_NORMAL: {
+                category: "border",
+                [a.DARK]: { raw: "OPACITY_20", opacity: 0.2 },
+                [a.LIGHT]: { raw: "OPACITY_36", opacity: 0.3607843137254902 },
+                [a.MIDNIGHT]: {
+                  raw: "OPACITY_24",
+                  opacity: 0.23921568627450981,
+                },
+                [a.DARKER]: { raw: "OPACITY_20", opacity: 0.2 },
               },
               BORDER_STRONG: {
                 category: "border",
@@ -39211,4 +39240,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.f11b2939ff7e7ca1.js.map
+//# sourceMappingURL=sentry.4e41a1452b9e6cc8.js.map
