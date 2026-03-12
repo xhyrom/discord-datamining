@@ -17338,36 +17338,13 @@ img.thumbnail__0f2e8 {
   background: var(--background-base-lower);
   box-sizing: border-box;
   container-type: inline-size;
+  flex: 1;
   height: 100vh;
-  width: 100vw;
-}
-@media (min-width: 929px) {
-  :where(.outer_c0bea0).user-profile-modal-v2 {
-    max-width: calc(100vw - var(--space-48) * 2);
-    width: 962px;
-  }
 }
 @media (min-height: 785px) {
   :where(.outer_c0bea0).user-profile-modal-v2 {
     height: 800px;
     max-height: calc(100vh - var(--space-48) * 2);
-  }
-}
-@media (min-height: 785px) and (min-width: 929px) {
-  :where(.outer_c0bea0).user-profile-modal-v2 {
-    border-radius: var(--radius-lg);
-  }
-}
-@media (min-width: 929px) {
-  :where(.outer_c0bea0).user-profile-modal-v2 {
-    border-inline-end: 1px solid var(--border-normal);
-    border-inline-start: 1px solid var(--border-normal);
-  }
-}
-@media (min-height: 785px) {
-  :where(.outer_c0bea0).user-profile-modal-v2 {
-    border-bottom: 1px solid var(--border-normal);
-    border-top: 1px solid var(--border-normal);
   }
 }
 :where(.outer_c0bea0).user-profile-sidebar {
@@ -71258,4 +71235,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.9c9b006864197e7d.css.map*/
+/*# sourceMappingURL=web.84d8c18d210b6720.css.map*/
