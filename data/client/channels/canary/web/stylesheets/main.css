@@ -36778,6 +36778,13 @@ body .headerAnimation_b54a5b {
   box-sizing: border-box;
   color: var(--text-strong);
 }
+.nitroPinkGradient__3e43f {
+  background: linear-gradient(
+    90deg,
+    var(--expressive-gradient-nitro-pink-start) 0,
+    var(--expressive-gradient-nitro-pink-end) 100%
+  );
+}
 .offerNoticeContainer__3e43f {
   align-items: center;
   display: flex;
@@ -71235,4 +71242,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.84d8c18d210b6720.css.map*/
+/*# sourceMappingURL=web.c1bea9f3cf39833f.css.map*/
