@@ -6499,6 +6499,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .iconInactive_f34534 {
   border-radius: 50%;
 }
+.iconActiveSmol_f34534 {
+  border-radius: 4px;
+}
 .iconActiveMini_f34534 {
   border-radius: 6px;
 }
@@ -37544,7 +37547,8 @@ body .headerAnimation_b54a5b {
 .targetIcon_da8ac7 {
   display: inline-block;
   height: 16px;
-  vertical-align: top;
+  margin-inline: 2px 1px;
+  vertical-align: text-bottom;
   width: 16px;
 }
 .priceContainer_da8ac7 {
@@ -71254,4 +71258,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.14db445061c35585.css.map*/
+/*# sourceMappingURL=web.9c9b006864197e7d.css.map*/
