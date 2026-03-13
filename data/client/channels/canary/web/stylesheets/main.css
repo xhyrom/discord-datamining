@@ -30320,6 +30320,9 @@ html:not(.chat-input) .inputInner_b1f01d {
 .gameIcon__43a4b {
   vertical-align: bottom;
 }
+.banner__24928 {
+  padding: var(--space-12);
+}
 .container__581dd {
   align-items: center;
   display: flex;
@@ -71495,4 +71498,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.d625f059dceff942.css.map*/
+/*# sourceMappingURL=web.45ae66d77d137f50.css.map*/
