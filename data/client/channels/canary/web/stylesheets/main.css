@@ -30044,6 +30044,17 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .custom-user-profile-theme .banner__43147 {
   background: linear-gradient(
+    var(--profile-gradient-primary-color),
+    var(--profile-gradient-secondary-color)
+  );
+  background-size: 100% 600px;
+  border-radius: 0;
+}
+.user-profile-popout .banner__43147 {
+  margin-bottom: -8px;
+}
+.custom-user-profile-theme.user-profile-modal-v2 .banner__43147 {
+  background: linear-gradient(
     color-mix(
       in oklab,
       var(--profile-gradient-overlay-color) 65%,
@@ -30055,9 +30066,7 @@ html:not(.chat-input) .inputInner_b1f01d {
       var(--profile-gradient-primary-color)
     )
   );
-}
-.user-profile-popout .banner__43147 {
-  margin-bottom: -8px;
+  background-size: auto;
 }
 .user-profile-modal-v2 .banner__43147 {
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
@@ -30067,6 +30076,9 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .user-profile-sidebar .banner__43147 {
   border-radius: 0;
+}
+.text__43147 {
+  line-height: 2px;
 }
 .gameIcon_b52e4f {
   filter: saturate(var(--saturation-factor, 1));
@@ -71498,4 +71510,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.45ae66d77d137f50.css.map*/
+/*# sourceMappingURL=web.c4f7cac5e1163aa4.css.map*/
