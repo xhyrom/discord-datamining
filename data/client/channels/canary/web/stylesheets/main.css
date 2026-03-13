@@ -23894,6 +23894,63 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .enable-forced-colors .header__8ef02 {
   border-bottom: 1px solid CanvasText;
 }
+.layout__81b99 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+.header__81b99 {
+  align-items: center;
+  background-color: var(--background-surface-high);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  flex-shrink: 0;
+  padding: var(--custom-gif-picker-gutter-size);
+}
+.kaomojiContainer__81b99 {
+  border-end-end-radius: 8px;
+  border-end-start-radius: 8px;
+  flex: 1;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 16px;
+  position: relative;
+}
+.kaomojiList__81b99 {
+  gap: 16px;
+}
+.kaomojiCategory__81b99,
+.kaomojiList__81b99 {
+  display: flex;
+  flex-direction: column;
+}
+.kaomojiCategory__81b99 {
+  gap: 8px;
+}
+.categoryLabel__81b99 {
+  margin: 0;
+}
+.kaomojiGrid__81b99 {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+}
+.kaomojiGridItem__81b99 {
+  border-radius: var(--radius-sm);
+  min-width: 0;
+}
+.emptyState__81b99 {
+  margin: 0;
+}
+.wrapper__81b99 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
 .positionLayer__08434 {
   pointer-events: none;
   z-index: 0;
@@ -71438,4 +71495,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.827944ab4564fe61.css.map*/
+/*# sourceMappingURL=web.d625f059dceff942.css.map*/
