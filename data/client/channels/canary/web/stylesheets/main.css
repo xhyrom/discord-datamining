@@ -36857,6 +36857,9 @@ body .headerAnimation_b54a5b {
     var(--expressive-gradient-nitro-pink-end) 100%
   );
 }
+.customGraphicContainer__3e43f {
+  flex-shrink: 0;
+}
 .offerNoticeContainer__3e43f {
   align-items: center;
   display: flex;
@@ -71510,4 +71513,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.c4f7cac5e1163aa4.css.map*/
+/*# sourceMappingURL=web.86388f9d09cd1aa7.css.map*/
