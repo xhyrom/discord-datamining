@@ -12,7 +12,7 @@
   </p>
   <ul>
     <li
-      class="wysiwyg-list-bold"
+      class="ck-list-marker-bold"
       data-list-item-id="efa57d3979b4f64dbb204169948784a71"
     >
       <a href="#h_01K6GXYZY6Z3JTZ1EE09GHRS9V"
@@ -20,7 +20,7 @@
       >
     </li>
     <li
-      class="wysiwyg-list-bold"
+      class="ck-list-marker-bold"
       data-list-item-id="e3e6efb1932fac8efb16e37ebfa6e1b81"
     >
       <a href="#h_01K6GXYZYAKWV5FTZ017YRKEMR"
@@ -28,7 +28,7 @@
       >
       <ul>
         <li
-          class="wysiwyg-list-bold"
+          class="ck-list-marker-bold"
           data-list-item-id="e391f21977ee2348802a4f66997235964"
         >
           <a href="#h_01K6GXYZYC7W03Y0Z70E7G87C7"
@@ -36,7 +36,7 @@
           >
         </li>
         <li
-          class="wysiwyg-list-bold"
+          class="ck-list-marker-bold"
           data-list-item-id="e36482faf99f30e7c3bfc66f6e5b79cca"
         >
           <a href="#h_01K6GXYZYFTDPKR9R4D0F48SK2"
@@ -46,7 +46,7 @@
       </ul>
     </li>
     <li
-      class="wysiwyg-list-bold"
+      class="ck-list-marker-bold"
       data-list-item-id="ee452456301a72754c33ff33e93a5dd16"
     >
       <a href="#h_01K6GXYZYRS85BQERKFHC0SGEJ"
@@ -54,7 +54,7 @@
       >
       <ul>
         <li
-          class="wysiwyg-list-bold"
+          class="ck-list-marker-bold"
           data-list-item-id="ec324b053cfc4809b9d7baf7ae57109df"
         >
           <a href="#h_01K6GXYZYRBSFE0ZQGX660TTP3"
@@ -62,7 +62,7 @@
           >
         </li>
         <li
-          class="wysiwyg-list-bold"
+          class="ck-list-marker-bold"
           data-list-item-id="e7692cdecef75b1d6cad847c5f349cfd0"
         >
           <a href="#h_01K6GXYZYSDAJE5C7SHHP33BB7"
@@ -70,7 +70,7 @@
           >
         </li>
         <li
-          class="wysiwyg-list-bold"
+          class="ck-list-marker-bold"
           data-list-item-id="eb3eb427e04003c6f8cf9302d40c60bef"
         >
           <a href="#h_01K6GXYZYT738GTCZA0WD118JN"
@@ -80,7 +80,7 @@
       </ul>
     </li>
     <li
-      class="wysiwyg-list-bold"
+      class="ck-list-marker-bold"
       data-list-item-id="ec436458ed621d8a7cc4c7e2083c15108"
     >
       <a href="#h_01K6GXYZYWTDKR68JAX4TK7RPK"
@@ -97,27 +97,23 @@
   interests to other users, enabling you to express your identity in different
   ways.
 </p>
-<p>There are currently five types of Widgets you can add to the Board: </p>
+<p>There are currently four types of Widgets you can add to the Board: </p>
 <ul>
-  <li data-list-item-id="ec431ddfb49f911c10ffb9a17cad60a40">
+  <li data-list-item-id="e99b6a32b62fc5f09b8b622601459e2c1">
     <strong>Favorite Game:</strong> Highlight your ultimate favorite game with
     an optional short description about why you love it.
   </li>
-  <li data-list-item-id="e50a5e8ebec4265fe0d2d33688be69508">
-    <strong>Currently Playing:</strong> Share up to 5 games you're currently
-    playing, with optional tags to give more information about how you play. 
+  <li data-list-item-id="ed90f2b07d4f2c53f56860e1f628dc118">
+    <strong>Games in Rotation:</strong> Share up to 5 games you're currently
+    playing, with optional tags to give more information about how you play.
   </li>
-  <li data-list-item-id="e10158559457de0ada93f2b16d0160b1e">
+  <li data-list-item-id="eda5a2e275d51d2a984c6a48f2667fe2a">
     <strong>Want to Play:</strong> Display up to 20 games on your wishlist that
     you're interested in trying in the future.
   </li>
-  <li data-list-item-id="e037939aebac266543ae28fd021a327a2">
-    <strong>Games I've Played:</strong> Showcase up to 20 games from your gaming
+  <li data-list-item-id="e52fc2d31fed2b5c2e94bc9ada01e553a">
+    <strong>Games I like:</strong> Showcase up to 20 games from your gaming
     history.
-  </li>
-  <li data-list-item-id="eb0f8144fe94bef340a665ed13588747c">
-    <strong>Game Stats: </strong>Showcase your stats, achievements, and progress
-    from supported games. Currently available for select games.
   </li>
 </ul>
 <p>
@@ -137,12 +133,10 @@
 </h4>
 <div class="exp-box">
   <p>
-    <strong>Important:</strong>
-    <span style="color: #434343"
-      >We're testing the Game Stats Widget with Marvel Rivals and Wuthering
-      Waves. To use it, navigate to your Widgets and connect your game account.
-      Currently, not all users will have access.</span
-    >
+    <strong>Important:</strong> We're currently testing a Marvel Rivals Widget
+    that shows your game stats! This is currently only available to a limited
+    number of users. If available to you, navigate to your Widgets and link your
+    Marvel Rivals account to set it up.
   </p>
   <p class="wysiwyg-text-align-center">
     <img

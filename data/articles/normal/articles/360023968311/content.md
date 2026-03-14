@@ -146,6 +146,11 @@
     height="515"
   />
 </p>
+<p>
+  To help you find servers that are most relevant and interesting to you, you
+  might see personalized server recommendations based on your activity,
+  interests, friends, and more.
+</p>
 <h2 id="h_01H1W2RTZE4BNXQ6PM70CEDM58">Learn More Before Joining</h2>
 <p>
   Still a bit shy? No worries, we got you! With Lurker Mode, you can learn more

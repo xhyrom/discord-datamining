@@ -1,33 +1,5 @@
 [
   {
-    "id": 38338398970263,
-    "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/38338398970263.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/38338398970263-Upcoming-Discord-Age-Assurance-Changes-What-You-Need-To-Know",
-    "author_id": 5630494357399,
-    "comments_disabled": true,
-    "draft": false,
-    "promoted": true,
-    "position": 0,
-    "section_id": 360001637571,
-    "created_at": "2026-02-11T21:11:11Z",
-    "name": "Upcoming Discord Age Assurance Changes: What You Need To Know",
-    "title": "Upcoming Discord Age Assurance Changes: What You Need To Know",
-    "source_locale": "en-us",
-    "locale": "en-us",
-    "outdated": false,
-    "outdated_locales": [],
-    "edited_at": "2026-02-24T19:04:42Z",
-    "user_segment_id": null,
-    "permission_group_id": 1720972,
-    "content_tag_ids": [
-      "01KH2E0916ZFEVZKG8FMH38NB5",
-      "01KH78N6KWDQ0M5C31EPRPR6BM"
-    ],
-    "label_names": [],
-    "body": "<h4 id=\"h_01KJ8FSJ5CX3D5DQKF2JH2B0H1\">Our CTO and Co-founder released a <a href=\"https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing\" tabindex=\"0\" data-token-index=\"1\" rel=\"noopener noreferrer\">blog post</a> <span data-token-index=\"5\">to share, recognize, </span>and address feedback from Discord users about our Global Age Assurance approach.</h4><p>You may have seen recent news about Discord’s upcoming teen-by-default experience and age assurance updates, which will begin rolling out globally in<span data-token-index=\"0\"> the <strong>second half of 2026</strong>.</span></p><p><strong>TLDR: We do not expect any action to be required from developers.</strong> As part of this rollout, Discord is not requiring everyone to complete age verification (such as a face scan or ID upload) to use Discord. The vast majority of people can continue using Discord as they do today without ever being asked to confirm their age.</p><p>Age verification is only one part of Discord’s broader age assurance approach. For the majority of adult users, we can assign their age group using information we already have (and this does not use message content), using age inference to determine whether an account belongs to an adult and allowing access to age-restricted experiences without completing an explicit age assurance flow.</p><p>Here are the key points most relevant to you:</p><ul>\n<li data-list-item-id=\"e1f276b9f2a4c84035f69708788d707e1\">\n<strong>Most users won’t be asked to complete an age check.</strong> Age assurance is only prompted when someone tries to access age-restricted experiences or change certain safety settings.</li>\n<li data-list-item-id=\"ed1b58c4a54a135f8d5dff79512ee6d86\">\n<strong>No expected SDK or integration changes.</strong> We do not expect developers to change how their Discord integrations work. Our goal is to handle age assurance on Discord’s side while ensuring common in-game features powered by the Social SDK, such as Linked Channels, DMs, Deeplink Game Invites, and Account Linking, continue to work as expected.</li>\n<li data-list-item-id=\"e8a98abf34b99e00eabad5ebc0bcf1395\">\n<strong>Teen-by-default affects Discord UI behavior, not your game logic.</strong> Some users may see updated defaults in Discord (for example, message requests from unfamiliar users will now go to a separate inbox), but this does not prevent players from using your game or its social features.</li>\n<li data-list-item-id=\"ea16a0de7f6bd2964f9854051f53f4a77\">\n<strong>No new developer responsibility for age assurance.</strong> Developers will continue to manage age-related requirements for their own games and applications.</li>\n</ul><p>Thanks for partnering with us as we continue to invest in safer, age-appropriate experiences for our shared community members.</p>",
-    "user_segment_ids": []
-  },
-  {
     "id": 34905563063703,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/34905563063703.json",
     "html_url": "https://support-dev.discord.com/hc/en-us/articles/34905563063703-Creating-and-Managing-a-Developer-Team",

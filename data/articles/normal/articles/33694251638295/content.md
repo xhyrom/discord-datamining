@@ -16,34 +16,22 @@
     >
   </p>
   <ul>
-    <li data-list-item-id="e554d6756a5d3cba890ab1f47d42164e2">
-      <a href="#h_01K0YRW1WNXGTMED3AZE0K6JBE">Account Caps</a>
-    </li>
-    <li data-list-item-id="e92fa499b0e08a6dc65a6b3fe782d7c0d">
-      <a href="#h_01K0YRW1XP13WNJE84D7J97VN7">Server Caps</a>
-    </li>
-    <li data-list-item-id="ecbf5c0db1fdd1c942db97d450f8f0a60">
-      <a href="#h_01K0YRW1ZBEDTTW88PQ4V0BFA1">Stage Channel Caps</a>
-    </li>
-    <li data-list-item-id="ec31b96c2de90d5898d529120c977adb1">
-      <a href="#h_01K0YRW1ZN6KR7W393C52FETPG">Server Thread Caps</a>
-    </li>
+    <li><a href="#h_01K0YRW1WNXGTMED3AZE0K6JBE">Account Caps</a></li>
+    <li><a href="#h_01K0YRW1XP13WNJE84D7J97VN7">Server Caps</a></li>
+    <li><a href="#h_01K0YRW1ZBEDTTW88PQ4V0BFA1">Stage Channel Caps</a></li>
+    <li><a href="#h_01K0YRW1ZN6KR7W393C52FETPG">Server Thread Caps</a></li>
   </ul>
 </div>
 <div class="tip-box">
-  <strong>Tip:</strong>
-  <span style="color: #2e3338"
-    >In the tables below, <strong>Same</strong> means the limit is identical to
-    the Base tier, and <strong>N/A</strong> means that feature isn't available
-    for that tier.</span
-  >
+  <strong>Tip:</strong> N/A in each chart means it’s Not Applicable as it
+  doesn’t apply or it's not available.
 </div>
 <h1 id="h_01K0YRW1WNXGTMED3AZE0K6JBE">Account Caps</h1>
 <div>
   <figure class="wysiwyg-table">
     <table
-      class="wysiwyg-table-resized"
       style="margin-left: 0px; margin-right: auto"
+      class="wysiwyg-table-resized"
     >
       <colgroup>
         <col style="width: 25%" />
@@ -69,7 +57,7 @@
         <tr>
           <td><span style="color: #2e3338">Number of servers</span></td>
           <td><span style="color: #2e3338">100</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
           <td><span style="color: #2e3338">200</span></td>
         </tr>
         <tr>
@@ -80,8 +68,8 @@
             >
           </td>
           <td><span style="color: #2e3338">1000 </span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td><span style="color: #2e3338">File Sharing Limit</span></td>
@@ -94,25 +82,25 @@
             <span style="color: #2e3338">Length of Uploaded File Name</span>
           </td>
           <td><span style="color: #2e3338">100</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td><span style="color: #2e3338">Users in a DM</span></td>
           <td><span style="color: #2e3338">10</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td><span style="color: #2e3338">Minimum password length</span></td>
           <td><span style="color: #2e3338">6 characters</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td><span style="color: #2e3338">Message length</span></td>
           <td><span style="color: #2e3338">2000 character</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
           <td><span style="color: #2e3338">4000 character</span></td>
         </tr>
         <tr>
@@ -122,8 +110,8 @@
             >
           </td>
           <td><span style="color: #2e3338">15,000</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td>
@@ -132,8 +120,8 @@
             >
           </td>
           <td><span style="color: #2e3338">1,024</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td>
@@ -142,7 +130,7 @@
               ><span class="wysiwyg-underline">Screenshare </span></a
             ><span style="color: #2e3338">(DMs)</span>
           </td>
-          <td><span style="color: #2e3338">720p @ 30fps</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
           <td>
             <span style="color: #2e3338">720p @ 60fps / 1080p @30fps</span>
           </td>
@@ -154,35 +142,35 @@
         </tr>
         <tr>
           <td><span style="color: #2e3338">Go Live (DMs)</span></td>
-          <td><span style="color: #2e3338">730p @ 30fps</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
           <td><span style="color: #2e3338">1080p @ 60fps</span></td>
           <td><span style="color: #2e3338">Source @ 60 fps</span></td>
         </tr>
         <tr>
           <td><span style="color: #2e3338"># of DMs in Sidebar</span></td>
           <td><span style="color: #2e3338">100</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td><span style="color: #2e3338">Max # of Blocked Users</span></td>
           <td><span style="color: #2e3338">5,000</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td><span style="color: #2e3338">Max Characters user notes</span></td>
           <td><span style="color: #2e3338">500</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td>
             <span style="color: #2e3338">Maximum User Notes Per Account</span>
           </td>
           <td><span style="color: #2e3338">1,500</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td>
@@ -196,8 +184,8 @@
               >5000 individual results or 200 pages</span
             >
           </td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
       </tbody>
     </table>
@@ -215,8 +203,8 @@
 </div>
 <figure class="wysiwyg-table">
   <table
-    class="wysiwyg-table-resized"
     style="margin-left: 0px; margin-right: auto"
+    class="wysiwyg-table-resized"
   >
     <colgroup>
       <col style="width: 27%" />
@@ -260,7 +248,7 @@
       <tr>
         <td><span style="color: #2e3338">Upload</span></td>
         <td><span style="color: #2e3338">10MB</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
         <td><span style="color: #2e3338">50MB for all members</span></td>
         <td><span style="color: #2e3338">100MB for all members</span></td>
       </tr>
@@ -275,8 +263,8 @@
         <td><span style="color: #2e3338">Stream Quality</span></td>
         <td><span style="color: #2e3338">720p @ 30fps</span></td>
         <td><span style="color: #2e3338">720p @ 60fps</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td><span style="color: #2e3338">Audio Quality</span></td>
@@ -293,9 +281,9 @@
           >
         </td>
         <td><span style="color: #2e3338">720p @ 60fps</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
         <td><span style="color: #2e3338">1080p @ 60fps</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -305,9 +293,9 @@
           >
         </td>
         <td><span style="color: #2e3338">50 members</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -319,16 +307,16 @@
           >
         </td>
         <td><span style="color: #2e3338">50 members</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td><span style="color: #2e3338">Voice Channel with video</span></td>
         <td><span style="color: #2e3338">25 members</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td><span style="color: #2e3338">Vanity URL</span></td>
@@ -342,7 +330,7 @@
         <td><span style="color: #2e3338">No</span></td>
         <td><span style="color: #2e3338">Yes</span></td>
         <td><span style="color: #2e3338">Yes</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">Yes</span></td>
       </tr>
       <tr>
         <td><span style="color: #2e3338">Server Banner</span></td>
@@ -355,8 +343,8 @@
         <td><span style="color: #2e3338">Custom Role Icons</span></td>
         <td><span style="color: #2e3338">No</span></td>
         <td><span style="color: #2e3338">No</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">Yes</span></td>
+        <td><span style="color: #2e3338">Yes</span></td>
       </tr>
       <tr>
         <td>
@@ -373,9 +361,9 @@
       <tr>
         <td><span style="color: #2e3338">Total Member Count</span></td>
         <td><span style="color: #2e3338">25 million</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -384,9 +372,9 @@
           >
         </td>
         <td><span style="color: #2e3338">3 minutes</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -395,18 +383,18 @@
           >
         </td>
         <td><span style="color: #2e3338">Servers over 2,500 members</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
           <span style="color: #2e3338">Character limit for role name</span>
         </td>
         <td><span style="color: #2e3338">100</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -416,18 +404,18 @@
           >
         </td>
         <td><span style="color: #2e3338">50</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
           <span style="color: #2e3338">Unique invite codes per server</span>
         </td>
         <td><span style="color: #2e3338">999</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -437,9 +425,9 @@
           >
         </td>
         <td><span style="color: #2e3338">250</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -448,9 +436,9 @@
           >
         </td>
         <td><span style="color: #2e3338">500</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -459,9 +447,9 @@
           >
         </td>
         <td><span style="color: #2e3338">50</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -470,9 +458,9 @@
           >
         </td>
         <td><span style="color: #2e3338">45 days</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -481,9 +469,9 @@
           >
         </td>
         <td><span style="color: #2e3338">10</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -492,9 +480,9 @@
           >
         </td>
         <td><span style="color: #2e3338">Under 1,000</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
       <tr>
         <td>
@@ -504,9 +492,9 @@
           >
         </td>
         <td><span style="color: #2e3338">Under 800</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
-        <td><span style="color: #2e3338">Same</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
       </tr>
     </tbody>
   </table>
@@ -525,8 +513,8 @@
 <div>
   <figure class="wysiwyg-table">
     <table
-      class="wysiwyg-table-resized"
       style="margin-left: 0px; margin-right: auto"
+      class="wysiwyg-table-resized"
     >
       <colgroup>
         <col style="width: 31%" />
@@ -548,9 +536,9 @@
             <span style="color: #2e3338">Users (Without Streaming/Video)</span>
           </td>
           <td><span style="color: #2e3338">10k</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td><span style="color: #2e3338">Activities on Stages</span></td>
@@ -577,18 +565,18 @@
             >
           </td>
           <td><span style="color: #2e3338">No Limit</span></td>
-          <td><span style="color: #2e3338">No limit</span></td>
-          <td><span style="color: #2e3338">No limit</span></td>
-          <td><span style="color: #2e3338">No limit</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td>
             <span style="color: #2e3338">Number of Hands Raised at Once </span>
           </td>
           <td><span style="color: #2e3338">No Limit</span></td>
-          <td><span style="color: #2e3338">No limit</span></td>
-          <td><span style="color: #2e3338">No limit</span></td>
-          <td><span style="color: #2e3338">No limit</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td>
@@ -636,8 +624,8 @@
 <div>
   <figure class="wysiwyg-table">
     <table
-      class="wysiwyg-table-resized"
       style="margin-left: 0px; margin-right: auto"
+      class="wysiwyg-table-resized"
     >
       <colgroup>
         <col style="width: 20%" />
@@ -656,10 +644,10 @@
         </tr>
         <tr>
           <td><span style="color: #2e3338">Threads</span></td>
-          <td><span style="color: #2e3338">3 days archive (default)</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td>
@@ -668,9 +656,9 @@
             >
           </td>
           <td><span style="color: #2e3338">1000</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
           <td>
@@ -678,10 +666,10 @@
               >Max # of roles mentioned in a private thread</span
             >
           </td>
-          <td>250</td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
-          <td><span style="color: #2e3338">Same</span></td>
+          <td><span style="color: #2e3338">10</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
         </tr>
       </tbody>
     </table>

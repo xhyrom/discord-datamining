@@ -1,69 +1,56 @@
 <div class="toc-box">
-  <p>
-    <span class="wysiwyg-font-size-x-large"
-      ><strong>What this article covers:</strong></span
-    ><br /> 
-  </p>
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
   <ul>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="ef4cd4d868391b415d33dcae2d0ea3b38"
-    >
-      <a href="#h_01GWJJPDWA7210GPEJB5Z4R5WC" target="_self"
-        ><strong>What are Avatar Decorations?</strong></a
+    <li>
+      <strong
+        ><a href="#h_01GWJJPDWA7210GPEJB5Z4R5WC" target="_self"
+          >What are Avatar Decorations?</a
+        ></strong
       >
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="efc03c334420c4da66dec08d3ee729233"
-    >
-      <a href="#h_01J4SC8K91558197MD0K9V444M"
-        ><strong>How can I collect an Avatar Decoration?</strong></a
-      >
+    <li>
+      <strong
+        ><a href="#h_01J4SC8K91558197MD0K9V444M"
+          >How can I collect an Avatar Decoration?</a
+        ></strong
+      ><br />
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e07afa69e7d0269390ebc6f261d11194f"
-        >
-          <a href="#h_01J4SAQP8EPQ2H8195FW4EB8W1"
-            ><strong>Desktop/Browser</strong></a
+        <li>
+          <strong
+            ><a href="#h_01J4SAQP8EPQ2H8195FW4EB8W1">Desktop/Browser</a></strong
           >
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e56265cbd9b7e8a2c786430bdeb74ed82"
-        >
-          <a href="#h_01J4SBJWG1NX44NS285X62330B"><strong>Mobile</strong></a>
+        <li>
+          <strong><a href="#h_01J4SBJWG1NX44NS285X62330B">Mobile</a></strong>
         </li>
       </ul>
     </li>
-    <li data-list-item-id="e5dfe0fd8328b9c7f127b8b157afa4968">
-      <a href="#h_01J4SCH0SP77EJ2328CYGRS05Y"
-        ><strong>How to Apply an Avatar Decoration to My Profile</strong></a
-      ><br /> 
+    <li>
+      <strong
+        ><a href="#h_01J4SCH0SP77EJ2328CYGRS05Y"
+          >How to Apply an Avatar Decoration to My Profile</a
+        ><a href="https://support.discord.com/hc/en-us/articles/13410113109911"
+          ><br /></a
+      ></strong>
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="efb5a3e8cd32c2e93dfd6f18b3916f464"
-        >
-          <a href="#h_01GWJJPTV8YQ3C3BDW7Q93ARGX"
-            ><strong>Desktop/Browser</strong></a
+        <li>
+          <strong
+            ><a href="#h_01GWJJPTV8YQ3C3BDW7Q93ARGX">Desktop/Browser</a></strong
           >
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e7df357fbec9e18caeb047c223fec666e"
-        >
-          <a href="#h_01GWJJPZTY0EKDJJSAHPBA6VWN"><strong>Mobile</strong></a>
+        <li>
+          <strong><a href="#h_01GWJJPZTY0EKDJJSAHPBA6VWN">Mobile</a></strong>
         </li>
       </ul>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e833b77d52259762df23b6f48de5e296c"
-    >
-      <a href="#h_01GWJJX4GZDK1QJAXZBB7N4RNG"
-        ><strong>Frequently Asked Questions</strong></a
+    <li>
+      <strong
+        ><a href="#h_01GWJJX4GZDK1QJAXZBB7N4RNG"
+          >Frequently Asked Questions</a
+        ></strong
       >
     </li>
   </ul>
@@ -101,7 +88,7 @@
     >Nitro Quest Perks article</a
   >.
 </div>
-<h1 class="wysiwyg-text-align-left" id="h_01J4SC8K91558197MD0K9V444M">
+<h1 id="h_01J4SC8K91558197MD0K9V444M" class="wysiwyg-text-align-left">
   How can I collect an Avatar Decoration?
 </h1>
 <h2 id="h_01J4SAQP8EPQ2H8195FW4EB8W1">Desktop/Browser</h2>
@@ -177,8 +164,9 @@
 </p>
 <p id="docs-internal-guid-3e542f33-7fff-1af5-0df0-3783196af3dd">
   3. Once directed to the Shop, you can preview and buy Avatar Decorations to
-  add to your collection and wear whenever you’d like.
-  <span id="docs-internal-guid-e8990bb0-7fff-a6f2-9d87-19267439ca31"></span>
+  add to your collection and wear whenever you’d like. <span
+    id="docs-internal-guid-e8990bb0-7fff-a6f2-9d87-19267439ca31"
+  ></span>
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -310,13 +298,12 @@
   tapping your avatar. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #4f545c"
-    ><span data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/27897516530839"
-        width="284"
-        height="590" /></span
-  ></span>
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/27897516530839"
+      width="284"
+      height="590"
+  /></span>
 </p>
 <p>
   2. From here, select <strong>Edit</strong> <strong>Profile</strong>. This will
@@ -326,13 +313,12 @@
   select the <strong>Change Decoration </strong>option instead.  
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #4f545c"
-    ><span data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/27897516531607"
-        width="277"
-        height="576" /></span
-  ></span>
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/27897516531607"
+      width="277"
+      height="576"
+  /></span>
 </p>
 <p>
   3.  After arriving at the <strong>Change Decoration</strong> page and select
@@ -392,13 +378,9 @@
   <strong>Q: Is localized pricing available for Avatar Decorations?</strong>
 </p>
 <p id="docs-internal-guid-3e30ce7c-7fff-5b92-9301-1944a349ce05">
-  A: Localized pricing is available for some Avatar Decorations purchases and
-  gifts.
-  <span id="docs-internal-guid-9efbc083-7fff-adae-f880-1810788983da"
-    >You should see at checkout whether localized pricing is available.
-    Otherwise, the purchase will default to USD ($).</span
-  >
-  You can learn more about localized pricing
+  A: Localized pricing is available for Avatar Decorations in some countries.
+  You should see localized pricing options in the Shop if you are eligible. You
+  can learn more about localized pricing
   <a
     href="https://support.discord.com/hc/articles/4407269525911"
     target="_blank"
@@ -406,6 +388,11 @@
     >here</a
   >. 
 </p>
+<div class="info-box">
+  <strong>Note</strong>: Avatar Decoration gifts are not available at localized
+  prices. Depending on a user’s region, they may be able to pay for a gift in
+  their local currency, but the price will still be equivalent to the USD price.
+</div>
 <p><strong>Q: Do I keep the Avatar Decorations I’ve purchased? </strong></p>
 <p>
   A: Yes, any decorations you’ve purchased are yours to keep and use anytime,

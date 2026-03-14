@@ -1,47 +1,36 @@
 <p>
-  Make your name stand out with <strong>Nameplates</strong>! These special
-  designs customize how your name appears in your direct messages
+  Make your name stand out with <strong>N</strong><strong>ameplates</strong>!
+  These special designs customize how your name appears in your direct messages
   (<strong>DMs</strong>), group chats and servers, giving your name that extra
   fun and flair wherever you go on Discord.
 </p>
 <div class="toc-box">
-  <p>
-    <span class="wysiwyg-font-size-x-large"
-      ><strong>What this article covers:</strong></span
-    ><br /> 
-  </p>
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
   <ul>
-    <li data-list-item-id="e37b5c31cb66d797eee22242a1e9cc39c">
-      <a href="#h_01JPWZHHA3AV3DDVEF35WSHKWP">What are Nameplates?</a>
-    </li>
-    <li data-list-item-id="eb9f1b802e4960092ad7c71eacafd38c4">
+    <li><a href="#h_01JPWZHHA3AV3DDVEF35WSHKWP">What are Nameplates?</a></li>
+    <li>
       <a href="#h_01JPX01QP2C4H4PQCMMD4Y8R9P"
         >How can I purchase a Nameplate?</a
       >
       <ul>
-        <li data-list-item-id="e029685db211d32268f7e283c9607a650">
-          <a href="#h_01JPX02BD1CZAG3J0VG150AS89">Desktop/Browser</a>
-        </li>
-        <li data-list-item-id="e094472c53874334064751eb3179b5e28">
-          <a href="#h_01JYMFGJH3KRYC6KY4E3JE6AHD">Mobile</a>
-        </li>
+        <li><a href="#h_01JPX02BD1CZAG3J0VG150AS89">Desktop/Browser</a></li>
+        <li><a href="#h_01JYMFGJH3KRYC6KY4E3JE6AHD">Mobile</a></li>
       </ul>
     </li>
-    <li data-list-item-id="e995842e4726f7a329b939f52b0b7db91">
+    <li>
       <a href="#h_01JPX0BTK2HGNNAM1YSK29YQWT">How do I apply a Nameplate?</a>
       <ul>
-        <li data-list-item-id="e2d7e9bf3c72f80a98b7b4dbc490f0d65">
-          <a href="#h_01JPX0CAAY58H37ZX42WSF1XYA">Desktop/Browser</a>
-        </li>
-        <li data-list-item-id="e85a5204d11cb4fca8ee0bb307704a88b">
-          <a href="#h_01JYMFN7VJV63R0D4224VD2XCN">Mobile</a>
-        </li>
+        <li><a href="#h_01JPX0CAAY58H37ZX42WSF1XYA">Desktop/Browser</a></li>
+        <li><a href="#h_01JYMFN7VJV63R0D4224VD2XCN">Mobile</a></li>
       </ul>
     </li>
-    <li data-list-item-id="ecc15f4caac76a4c7b2585ced91a8ab2a">
+    <li>
       <a href="#h_01JPX0PS9Q4QRZWW1FK8SXSV42">Where do Nameplates appear?</a>
     </li>
-    <li data-list-item-id="e03a301fd8a7d60349b40ca074f4f6083">
+    <li>
       <a href="#h_01JPX0WK8GHNC71DWGTMCMRQXX">Frequently Asked Questions</a>
     </li>
   </ul>
@@ -51,12 +40,16 @@
   Nameplates are unique designs that let you customize how your display name
   appears on Discord. While
   <a href="https://support.discord.com/hc/en-us/articles/13410113109911"
-    ><span class="wysiwyg-underline">Avatar Decorations</span></a
+    ><span class="wysiwyg-underline" style="color: #1155cc"
+      >Avatar Decorations</span
+    ></a
   >
   and
   <a
     href="https://support.discord.com/hc/en-us/articles/17828465914263-Profile-Effects"
-    ><span class="wysiwyg-underline">Profile Effects</span></a
+    ><span class="wysiwyg-underline" style="color: #1155cc"
+      >Profile Effects</span
+    ></a
   >
   let you personalize your profile, Nameplates let you add more flair to your
   name so it stands out with style in your DMs, group chats, and servers.
@@ -68,7 +61,7 @@
     height="340"
   />
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPX017456EV62EJGYWTKGNSA">
+<h4 id="h_01JPX017456EV62EJGYWTKGNSA" class="wysiwyg-text-align-center">
   <span style="color: #666666">Example of a Nameplate</span>
 </h4>
 <h1 id="h_01JPX01QP2C4H4PQCMMD4Y8R9P">How can I purchase a Nameplate?</h1>
@@ -95,16 +88,20 @@
       height="331"
   /></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPX05NRE545V748HXM1WQAC9">
+<h4 id="h_01JPX05NRE545V748HXM1WQAC9" class="wysiwyg-text-align-center">
   <span style="color: #666666">Direct Messages Icon</span>
 </h4>
 <p>
-  <span style="color: #2e3338"
-    >2. Then, press the <strong>Shop tab</strong> [<img
+  <span style="color: #2e3338">2. Then, press the </span
+  ><strong><span style="color: #2e3338">Shop tab</span></strong
+  ><span style="color: #2e3338"> [</span
+  ><span style="color: #2e3338"
+    ><img
       src="https://support.discord.com/hc/article_attachments/30831023552279"
       width="24"
-      height="24"
-    />] to the right of the server list to enter the Shop! </span
+      height="24" /></span
+  ><span style="color: #2e3338"
+    >] to the right of the server list to enter the Shop! </span
   >
 </p>
 <p class="wysiwyg-text-align-center">
@@ -115,7 +112,7 @@
       height="334"
   /></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPX06GQ7HPZ81RDT76SPRA8W">
+<h4 id="h_01JPX06GQ7HPZ81RDT76SPRA8W" class="wysiwyg-text-align-center">
   <span style="color: #666666">Shop tab</span>
 </h4>
 <p>
@@ -130,7 +127,7 @@
       height="387"
   /></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPX07B3B27E5WKC4SFAEFV45">
+<h4 id="h_01JPX07B3B27E5WKC4SFAEFV45" class="wysiwyg-text-align-center">
   <span style="color: #666666">Example of Nameplates in the Shop</span>
 </h4>
 <p>
@@ -154,7 +151,7 @@
     height="60"
   />
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPX08XZPESGAAX8G8Z9T1ZGC">
+<h4 id="h_01JPX08XZPESGAAX8G8Z9T1ZGC" class="wysiwyg-text-align-center">
   <span style="color: #666666">Cogwheel Icon</span>
 </h4>
 <p>
@@ -175,7 +172,7 @@
       height="387"
   /></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPX0A320P7ZEXWAJY9WCTHXB">
+<h4 id="h_01JPX0A320P7ZEXWAJY9WCTHXB" class="wysiwyg-text-align-center">
   <span style="color: #666666">Access Shop via User Settings</span>
 </h4>
 <p>
@@ -207,21 +204,24 @@
     height="504"
   />
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JYMFK8MGHG8ZMRS2TT6N2XG1">
+<h4 id="h_01JYMFK8MGHG8ZMRS2TT6N2XG1" class="wysiwyg-text-align-center">
   <span style="color: #666666">Accessing the Shop on Mobile</span>
 </h4>
 <h1 id="h_01JPX0BTK2HGNNAM1YSK29YQWT">How do I apply a Nameplate?</h1>
 <h2 id="h_01JPX0CAAY58H37ZX42WSF1XYA">Desktop/Browser</h2>
 <p>
   <span style="color: #2e3338"
-    >1. On the desktop app or browser, head into your
-    <strong>User Settings</strong> by selecting the
-    <strong>cogwheel</strong> [<img
+    >1. On the desktop app or browser, head into your </span
+  ><strong><span style="color: #2e3338">User Settings</span></strong
+  ><span style="color: #2e3338"> by selecting the </span
+  ><strong><span style="color: #2e3338">cogwheel</span></strong
+  ><span style="color: #2e3338"> [</span
+  ><span style="color: #2e3338"
+    ><img
       src="https://support.discord.com/hc/article_attachments/30830984974615"
       width="20"
-      height="20"
-    />]. </span
-  >
+      height="20" /></span
+  ><span style="color: #2e3338">]. </span>
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
@@ -231,37 +231,42 @@
       height="60"
   /></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPX0H9VDDX5NCS36NQNBTEG4">
+<h4 id="h_01JPX0H9VDDX5NCS36NQNBTEG4" class="wysiwyg-text-align-center">
   <span style="color: #666666">Cogwheel Icon</span>
 </h4>
 <p>
-  <span style="color: #2e3338"
-    >2. Once directed to your <strong>User Settings</strong>, select the
-    <strong>Profiles</strong> tab to view your profile settings. </span
-  >
+  <span style="color: #2e3338">2. Once directed to your </span
+  ><strong><span style="color: #2e3338">User Settings</span></strong
+  ><span style="color: #2e3338">, select the </span
+  ><strong><span style="color: #2e3338">Profiles</span></strong
+  ><span style="color: #2e3338"> tab to view your profile settings. </span>
 </p>
 <p>
-  <span style="color: #2e3338"
-    >3. Then, press the <strong>Change Nameplate</strong> button to open the
-    Nameplate selection menu. </span
+  <span style="color: #666666"
+    ><span style="color: #2e3338">3. Then, press the </span
+    ><strong><span style="color: #2e3338">Change Nameplate</span></strong
+    ><span style="color: #2e3338">
+      button to open the Nameplate selection menu. 
+    </span></span
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/30830984977047"
-      width="594"
-      height="426"
-  /></span>
+  <span style="color: #666666"
+    ><span style="color: #2e3338"
+      ><img
+        src="https://support.discord.com/hc/article_attachments/30830984977047"
+        width="594"
+        height="426" /></span
+  ></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPX0M0R5924DBN4846SRHPRA">
+<h4 id="h_01JPX0M0R5924DBN4846SRHPRA" class="wysiwyg-text-align-center">
   <span style="color: #666666">Change Nameplate Button</span>
 </h4>
 <p>
   <span style="color: #2e3338"
-    >4. Once you have chosen the Nameplate you would like, select
-    <strong>Apply</strong>.</span
-  >
+    >4. Once you have chosen the Nameplate you would like, select </span
+  ><strong><span style="color: #2e3338">Apply</span></strong
+  ><span style="color: #2e3338">.</span>
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
@@ -271,7 +276,7 @@
       height="448"
   /></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPXB4KAS47H2E422W239DGEA">
+<h4 id="h_01JPXB4KAS47H2E422W239DGEA" class="wysiwyg-text-align-center">
   <span style="color: #666666">Selecting a Nameplate</span>
 </h4>
 <p>
@@ -285,7 +290,7 @@
     height="48"
   />
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPX0PWRXNY78Y63ETP1GC4N7">
+<h4 id="h_01JPX0PWRXNY78Y63ETP1GC4N7" class="wysiwyg-text-align-center">
   <span style="color: #666666">Save Changes Button</span>
 </h4>
 <h2 id="h_01JYMFN7VJV63R0D4224VD2XCN">Mobile</h2>
@@ -304,13 +309,14 @@
     width="266"
     height="554"
   />
-    <img
+   
+  <img
     src="https://support.discord.com/hc/article_attachments/33057423403671"
     width="266"
     height="554"
   />
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JYMFPKTM13MZZGR4AYHJ7821">
+<h4 id="h_01JYMFPKTM13MZZGR4AYHJ7821" class="wysiwyg-text-align-center">
   <span style="color: #666666"
     >Avatar icon (Left), Edit Profile Button (Right)</span
   >
@@ -335,10 +341,10 @@
       height="558"
   /></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JYMFS01WCQHH2K0EY6WN75FX">
+<h4 id="h_01JYMFS01WCQHH2K0EY6WN75FX" class="wysiwyg-text-align-center">
   <span style="color: #434343">Applying a Nameplate on Mobile</span>
 </h4>
-<h1 class="wysiwyg-text-align-left" id="h_01JPX0PS9Q4QRZWW1FK8SXSV42">
+<h1 id="h_01JPX0PS9Q4QRZWW1FK8SXSV42" class="wysiwyg-text-align-left">
   Where do Nameplates appear?
 </h1>
 <p>
@@ -346,30 +352,22 @@
   Discord:
 </p>
 <ul>
-  <li
-    class="wysiwyg-list-color"
-    style="--wysiwyg-list-marker-color: #2e3338"
-    data-list-item-id="ee3354ef3ac44986e6cbb77730dbc8f09"
-  >
-    <span style="color: #2e3338">User Settings bar</span>
-  </li>
+  <li><span style="color: #2e3338">User Settings bar</span></li>
 </ul>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338"
-    ><strong
+  <strong
+    ><span style="color: #2e3338"
       ><img
         src="https://support.discord.com/hc/article_attachments/30836679224215"
         width="494"
-        height="374" /></strong
-  ></span>
+        height="374" /></span
+  ></strong>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPXB5Y1H4R1PQ599CR6GAMP9">
+<h4 id="h_01JPXB5Y1H4R1PQ599CR6GAMP9" class="wysiwyg-text-align-center">
   <span style="color: #666666">Example of Nameplate in User Settings Bar</span>
 </h4>
 <ul>
-  <li data-list-item-id="e041ad51457a0c0c589f2d22981b3e014">
-    Your DMs and Group Chats
-  </li>
+  <li>Your DMs and Group Chats</li>
 </ul>
 <div class="info-box">
   When hovering or selected, the Nameplate will appear for the DM/Group Chat
@@ -383,15 +381,11 @@
       height="302"
   /></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPXB6JDGC5Y2ZSE747E1JJFQ">
+<h4 id="h_01JPXB6JDGC5Y2ZSE747E1JJFQ" class="wysiwyg-text-align-center">
   <span style="color: #666666">Example of Nameplate in DMs</span>
 </h4>
 <ul>
-  <li
-    class="wysiwyg-list-color"
-    style="--wysiwyg-list-marker-color: #2e3338"
-    data-list-item-id="e4a01050f93ea7dc4e294e1409c284379"
-  >
+  <li>
     <span style="color: #2e3338"
       >Members Lists within Servers, Channels, and Threads</span
     >
@@ -405,7 +399,7 @@
       height="370"
   /></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JPXB7VXEJ0YNAGPMSDX55BR5">
+<h4 id="h_01JPXB7VXEJ0YNAGPMSDX55BR5" class="wysiwyg-text-align-center">
   <span style="color: #666666">Example of Nameplate in Members List </span>
 </h4>
 <h1 id="h_01JPX0WK8GHNC71DWGTMCMRQXX">Frequently Asked Questions</h1>
@@ -433,18 +427,20 @@
     rel="noopener noreferrer"
     >Refund Policy</a
   ><span style="color: #2e3338"
-    >, if you purchased one during our experimental phase (before
-    <strong>April 21, 2025</strong>), you can submit a refund request to Discord
-    support</span
+    >, if you purchased one during our experimental phase (before </span
+  ><strong><span style="color: #2e3338">April 21, 2025</span></strong
+  ><span style="color: #2e3338"
+    >), you can submit a refund request to Discord support</span
   ><a
     href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000118612"
     target="_blank"
     rel="noopener noreferrer"
   >
     here</a
-  ><span style="color: #2e3338">
-    by <strong>May 5th, 2025</strong>. Otherwise, all Nameplate purchases are
-    final and non-refundable.</span
+  ><span style="color: #2e3338"> by </span
+  ><strong><span style="color: #2e3338">May 5th, 2025</span></strong
+  ><span style="color: #2e3338"
+    >. Otherwise, all Nameplate purchases are final and non-refundable.</span
   >
 </p>
 <p><strong>Q: Can I refund Nitro after buying a Nameplate?</strong></p>
@@ -470,19 +466,4 @@
 <p>
   A: Currently, Nameplates show when you are active on Discord—so make sure you
   are not in invisible mode or offline.
-</p>
-<p><strong>Q: Is localized pricing available for nameplates?</strong></p>
-<p>
-  A:  Localized pricing is available for some nameplate purchases and gifts.
-  <span id="docs-internal-guid-9eebbae3-7fff-d865-807c-6cd5ff3a1064"
-    >You should see at checkout whether localized pricing is available.
-    Otherwise, the purchase will default to USD ($).</span
-  >
-  You can learn more about localized pricing
-  <a
-    href="https://support.discord.com/hc/articles/4407269525911"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
 </p>

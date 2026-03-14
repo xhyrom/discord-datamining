@@ -4,37 +4,37 @@
   >
 </p>
 <ul>
-  <li data-list-item-id="ebf4c1f9e2bc3960a9d7f256bcfd22ab9">
-    <a href="#h_01HBVVFMX6PNR9Z7QH216V2WBN">What are profile effects?</a>
+  <li>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX6PNR9Z7QH216V2WBN"
+      >What are profile effects?</a
+    >
   </li>
-  <li data-list-item-id="e5622331f57b6e24ab869c1601d5e7178">
-    <a href="#h_01HBVVFMX6SF10DY6CCGC7Y9MH"
+  <li>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX6SF10DY6CCGC7Y9MH"
       >How can I collect a profile effect? </a
     >
     <ul>
-      <li data-list-item-id="ea2f919be20f3521922a637bdbdac3551">
-        <a href="#h_01J4QG17ZP65H4KR7MHPKMGVKH">Desktop/Browser</a>
-      </li>
-      <li data-list-item-id="e12e2af45c20fcad387c82f5ffc3d6231">
-        <a href="#h_01J4QGGYQCHNP6P6RDASSRWS1B">Mobile</a>
-      </li>
+      <li><a href="#h_01J4QG17ZP65H4KR7MHPKMGVKH">Desktop/Browser</a></li>
+      <li><a href="#h_01J4QGGYQCHNP6P6RDASSRWS1B">Mobile</a></li>
     </ul>
   </li>
-  <li data-list-item-id="ec4096648af6c10d0574df7e8f2ec2ee3">
-    <a href="#h_01HBVVFMX6VDPBCGPY25WKK6TN"
+  <li>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX6VDPBCGPY25WKK6TN"
       >How do I apply a profile effect to my profile?</a
     >
     <ul>
-      <li data-list-item-id="e1067d4c93911c871d5ac1e16f765bde3">
-        <a href="#h_01J4QG17ZP65H4KR7MHPKMGVKH">Desktop/Browser</a>
-      </li>
-      <li data-list-item-id="e0e2cbaa9c901825991cc3ee05adff328">
-        <a href="#h_01HQY9V1GJ98FMQCWRJA1V58TC">Mobile</a>
-      </li>
+      <li><a href="#h_01J4QG17ZP65H4KR7MHPKMGVKH">Desktop/Browser</a></li>
+      <li><a href="#h_01HQY9V1GJ98FMQCWRJA1V58TC">Mobile</a></li>
     </ul>
   </li>
-  <li data-list-item-id="ea174c9f66fd57c8a12247a107c94bf8d">
-    <a href="#h_01HBVVFMX68ZV93YHYX7P3JMSK">Frequently Asked Questions</a>
+  <li>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX68ZV93YHYX7P3JMSK"
+      >Frequently Asked Questions</a
+    >
   </li>
 </ul>
 <h1 id="h_01HBVVFMX6PNR9Z7QH216V2WBN">What Are Profile Effects?</h1>
@@ -178,9 +178,8 @@
   1. On the desktop app or web app, head into your
   <strong>User Settings </strong>by selecting the
   <strong>cogwheel</strong> [<img
+    style="height: 20px; width: 20px"
     src="https://support.discord.com/hc/article_attachments/19432529510039"
-    width="20"
-    height="20"
   />]. 
 </p>
 <p class="wysiwyg-text-align-center">
@@ -242,10 +241,8 @@
   >.
 </div>
 <h2 id="h_01HQY9V1GJ98FMQCWRJA1V58TC">
-  <span style="color: #434343"
-    ><span
-      id="docs-internal-guid-b896025e-7fff-51be-4fbf-c446dd915769"
-      data-darkreader-inline-color=""
+  <span style="color: #434343" data-darkreader-inline-color=""
+    ><span id="docs-internal-guid-b896025e-7fff-51be-4fbf-c446dd915769"
       >Mobile</span
     ></span
   >
@@ -255,13 +252,12 @@
   tapping your avatar. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #4f545c"
-    ><span data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/24862900851607"
-        width="284"
-        height="590" /></span
-  ></span>
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/24862900851607"
+      width="284"
+      height="590"
+  /></span>
 </p>
 <p id="docs-internal-guid-eb4cc00e-7fff-8601-9200-9d675554973e">
   2. From here, select <strong>Edit Profile</strong>. This will navigate you to
@@ -270,13 +266,12 @@
   <strong>Add Profile Effect </strong>page.  
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #4f545c"
-    ><span data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/24862900855447"
-        width="277"
-        height="576" /></span
-  ></span>
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/24862900855447"
+      width="277"
+      height="576"
+  /></span>
 </p>
 <p id="docs-internal-guid-1ed00245-7fff-ebf6-d251-8d9853d24721">
   3. In the <strong>Add Profile Effect</strong> menu, select the desired profile
@@ -337,12 +332,9 @@
   <strong>Q: Is localized pricing available for profile effects?</strong>
 </p>
 <p>
-  A: Localized pricing is available for some profile effect purchases and gifts.
-  <span id="docs-internal-guid-b437dc7f-7fff-8887-d646-e221de7cb843"
-    >You should see at checkout whether localized pricing is available.
-    Otherwise, the purchase will default to USD ($).</span
-  >
-  You can learn more about localized pricing
+  A: Localized pricing is available for profile effects in some countries. You
+  should see localized pricing options in the Shop if you are eligible. You can
+  learn more about localized pricing
   <a
     href="https://support.discord.com/hc/articles/4407269525911"
     target="_blank"
@@ -350,6 +342,11 @@
     >here</a
   >. 
 </p>
+<div class="info-box">
+  <strong>Note: </strong> Profile effect gifts are not available at localized
+  prices. Depending on a user’s region, they may be able to pay for a gift in
+  their local currency, but the price will still be equivalent to the USD price.
+</div>
 <p><strong>Q: Do I keep the profile effects I’ve purchased? </strong></p>
 <p>
   A: Yes, any profile effects you’ve purchased are yours to keep and use

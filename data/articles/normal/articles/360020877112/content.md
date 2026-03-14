@@ -20,7 +20,7 @@
   </p>
   <ul>
     <li
-      class="wysiwyg-list-bold"
+      class="ck-list-marker-bold"
       data-list-item-id="e8b91f0ecfd696241bc453452bdfc6d1a"
     >
       <a href="#h_01JF85KBBN81QWNATTG0MMWX5F"
@@ -28,7 +28,7 @@
       >
     </li>
     <li
-      class="wysiwyg-list-bold"
+      class="ck-list-marker-bold"
       data-list-item-id="e0327a62626d586d4bb15f56caf74d20f"
     >
       <a href="#h_01JF85HYSDTS1VC2ZHTE1ZVW6Y"
@@ -36,7 +36,7 @@
       >
     </li>
     <li
-      class="wysiwyg-list-bold"
+      class="ck-list-marker-bold"
       data-list-item-id="eb86b7225decffa8aee9de0dc80fca2e3"
     >
       <a href="#h_01JF85KZAD305B0145QSMC1B86"
@@ -44,7 +44,7 @@
       >
     </li>
     <li
-      class="wysiwyg-list-bold"
+      class="ck-list-marker-bold"
       data-list-item-id="e229f29ff502ca9895daaee6612c0edf6"
     >
       <a href="#h_01GCCGE3DAMHY7BX0JVY04JYSR"
@@ -198,18 +198,6 @@
   4. Afterwards, you will be able to review your gift and select
   <strong>Buy Gift</strong> to complete your purchase. 
 </p>
-<div class="info-box">
-  <strong>Note:</strong> Some Nitro gifts are available at localized prices.
-  Depending on a user’s region, they may be able to pay for a gift in their
-  local currency, but the price will still be equivalent to the USD price. You
-  can learn more about localized pricing
-  <a
-    href="https://support.discord.com/hc/articles/4407269525911"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
-</div>
 <h3 id="h_01HGBW8TQPB2WCDH6A4EGR5M66">
   If you have shared a gift within a group chat or server channel, anyone can
   claim it. If you would like to share the private gift link to a specific
@@ -288,8 +276,7 @@
 </p>
 <ul>
   <li
-    class="wysiwyg-list-color"
-    style="--wysiwyg-list-marker-color: #4f545c"
+    class="ck-list-marker-color"
     data-list-item-id="ecfcaae55adc3e107036a4501be1b5019"
   >
     <span style="color: #4f545c"
@@ -297,8 +284,7 @@
     >
   </li>
   <li
-    class="wysiwyg-list-color"
-    style="--wysiwyg-list-marker-color: #4f545c"
+    class="ck-list-marker-color"
     data-list-item-id="ee700f617757d9ef7bcf825788b5616db"
   >
     <span style="color: #4f545c"
@@ -306,8 +292,7 @@
     >
   </li>
   <li
-    class="wysiwyg-list-color"
-    style="--wysiwyg-list-marker-color: #4f545c"
+    class="ck-list-marker-color"
     data-list-item-id="e8edfc1d31c51927ae9b017afaf23759e"
   >
     <span style="color: #4f545c"
@@ -315,8 +300,7 @@
     >
   </li>
   <li
-    class="wysiwyg-list-color"
-    style="--wysiwyg-list-marker-color: #4f545c"
+    class="ck-list-marker-color"
     data-list-item-id="e191e1a0cc15613ba3b43a7d8d92820f6"
   >
     <span style="color: #4f545c"
