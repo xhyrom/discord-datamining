@@ -1,6 +1,6 @@
 # Job Listing
 
-## Full-Stack Software Engineer, Ads
+## Software Engineer, Ads
 
 **Location:** San Francisco Bay Area
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8362007002](https://discord.com/jobs/8362007002)
 
-**Updated At:** Wed, 11 Mar 2026 17:32:20 GMT
+**Updated At:** Tue, 03 Feb 2026 17:46:35 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a highly technical, creative, hands-on, and impact-focused Software Engineer to join our growing Ads team.&amp;nbsp;
@@ -18,8 +18,8 @@ Our team is revolutionizing the way users interact with our platform through inn
 To learn more about Discord Engineering, take a look at our&amp;nbsp;engineering blog!
 What You'll Be Doing
 
-Build new ads products from the backend to the frontend that deliver direct value to users through rewards
 Build a platform that enable advertisers and operations teams to manage their ad campaigns
+Build new ads products from the backend to the frontend that deliver direct value to users through rewards
 Make architectural improvements to improve the long term maintenance of our products and systems
 Collaborate with engineers, product managers and designers to create delightful products that people love
 Work with our analytics and experimentation frameworks to help optimize our ads products
@@ -27,7 +27,6 @@ Stay up-to-date on the latest industry technologies
 
 What you should have
 
-Full-stack experience with hands on experience with Typescript, React, Python or equivalents
 Strive for excellence mentality.&amp;nbsp;You believe in solving a problem completely rather than simply shipping a solution. You have high attention to detail, and can deliver on building beautiful products.
 Collaboration. Your updates are transparent and highlight both everything that’s going great and going wrong with a project - bringing your team along for the ride. In addition, you can build strong relationships with your teammates around you.
 A growth mindset.&amp;nbsp;You view mistakes as learning opportunities and build upon your successes. You challenge yourself and those around you to continuously improve.
@@ -35,8 +34,8 @@ A growth mindset.&amp;nbsp;You view mistakes as learning opportunities and build
 
 Bonus Points
 
+Hands on experience with Typescript, React, Python and/or Rust, React Native
 Familiarity with experimentation tooling and analysis
-React Native and Mobile development (iOS/Android)
 Contributions to open-source projects
 Interest or passion for the Discord platform
 

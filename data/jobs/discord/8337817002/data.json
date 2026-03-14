@@ -12,7 +12,7 @@
   ],
   "internal_job_id": 6268576002,
   "location": {
-    "name": "San Francisco Bay Area or Remote (U.S.)"
+    "name": "San Francisco Bay Area"
   },
   "metadata": [
     {
@@ -29,7 +29,7 @@
     }
   ],
   "id": 8337817002,
-  "updated_at": "2026-02-24T16:26:07-05:00",
+  "updated_at": "2026-02-03T12:46:35-05:00",
   "requisition_id": "R-101071",
   "title": "Staff Software Engineer, Player Experience",
   "company_name": "Discord",
@@ -46,9 +46,9 @@
   ],
   "offices": [
     {
-      "id": 4082816002,
-      "name": "Remote (U.S.)",
-      "location": null,
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
       "child_ids": [],
       "parent_id": null
     }

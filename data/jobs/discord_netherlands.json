@@ -1,4 +1,6 @@
 {
-  "status": 404,
-  "error": "Job not found"
+  "jobs": [],
+  "meta": {
+    "total": 0
+  }
 }

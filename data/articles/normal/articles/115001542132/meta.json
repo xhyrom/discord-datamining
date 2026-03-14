@@ -1,0 +1,32 @@
+{
+  "id": 115001542132,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/115001542132.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/115001542132-Custom-Invite-Link",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 5,
+  "section_id": 201131298,
+  "created_at": "2017-09-12T21:11:12Z",
+  "name": "Custom Invite Link",
+  "title": "Custom Invite Link",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2025-11-10T15:25:55Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "invite",
+    "Vanity",
+    "Custom",
+    "answer-bot",
+    "custom invite link",
+    "vanity URL",
+    "custom url"
+  ],
+  "user_segment_ids": []
+}

@@ -1,8 +1,8 @@
 # Job Listing
 
-## Staff Product Marketing Manager, Nitro
+## Senior Product Marketing Manager, Nitro
 
-**Location:** San Francisco Bay Area or Remote (U.S.)
+**Location:** San Francisco Bay Area
 
 **Id:** 8323992002 <br/>
 **Internal Job Id:** 6323201002 <br/>
@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8323992002](https://discord.com/jobs/8323992002)
 
-**Updated At:** Mon, 09 Mar 2026 20:16:30 GMT
+**Updated At:** Tue, 03 Feb 2026 17:46:35 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking a visionary Staff Product Marketing Manager to shape and drive the future of the Discord Nitro third-party benefits ecosystem.&amp;nbsp;
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking a visionary Senior Product Marketing Manager to shape and drive the future of the Discord Nitro third-party benefits ecosystem.&amp;nbsp;
 In this high-impact role, you will define the strategic roadmap for our growing portfolio of partner perks, collaborating closely with the Strategic Partnerships team to identify and secure the right partners, craft compelling, data-driven value propositions, and equip partner-facing teams with the narratives and enablement materials they need to succeed. Additionally, you will own the end-to-end consumer go-to-market strategy for the entire program and all new perk launches, working in lockstep with both our partners and Discord’s cross-functional marketing teams.
 If you’re a strategic marketer who loves building value narratives, crafting go-to-market strategies, and driving complex cross-functional programs from concept to execution, this is an opportunity to make a major impact on one of Discord’s most beloved products.
 What You'll Be Doing
@@ -26,14 +26,13 @@ Measure and optimize program performance, running partner reviews, producing cas
 What you should have
 
 You have 6+ years of experience in product marketing, partner marketing, or related fields, ideally with consumer subscription or platform products.
-You use Discord personally and have a passion for gaming or community platforms
 You’re both a strategic storyteller and operator, able to connect high-level brand value to detailed GTM execution.
 You have experience partnering with Sales or Business Development teams, supporting pitch development, building enablement materials, and influencing partner decision-making.
 You excel at cross-functional leadership, bringing together cross functional teams to successfully deliver high complexity launches.
 You’re deeply familiar with gaming, digital entertainment, or consumer tech ecosystems — you understand what motivates users and what makes value propositions resonate.
 You love combining data, creativity, and partnerships to deliver programs that delight users and move the business.
 
-Bonus Points
+What you should have
 
 Experience in subscription marketing, loyalty or membership programs, or consumer partnership development.
 Background in gaming, entertainment, or digital lifestyle brands.

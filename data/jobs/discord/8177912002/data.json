@@ -30,7 +30,7 @@
     }
   ],
   "id": 8177912002,
-  "updated_at": "2026-03-11T21:19:26-04:00",
+  "updated_at": "2026-02-03T12:46:35-05:00",
   "requisition_id": "R-101058",
   "title": "Staff Software Engineer, Platform Security",
   "company_name": "Discord",
@@ -47,9 +47,9 @@
   ],
   "offices": [
     {
-      "id": 4082816002,
-      "name": "Remote (U.S.)",
-      "location": null,
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
       "child_ids": [],
       "parent_id": null
     }
