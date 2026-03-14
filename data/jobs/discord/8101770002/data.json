@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6209092002,
   "location": {
-    "name": "San Francisco Bay Area"
+    "name": "San Francisco Bay Area or Remote (U.S.)"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 8101770002,
-  "updated_at": "2026-02-03T12:46:35-05:00",
+  "updated_at": "2026-02-24T16:26:30-05:00",
   "requisition_id": "R-101006",
   "title": "Engineering Manager, Ads Formats",
   "company_name": "Discord",
@@ -47,9 +47,9 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }
