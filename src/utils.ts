@@ -246,7 +246,7 @@ export const writeFile = async (path: string, data: string) => {
 
   await mkdir(dirs.join("/"), { recursive: true });
 
-  await nodeWriteFile(path, data);
+  await nodeWriteFile(path, data.replace(/\r\n/g, "\n"));
 };
 
 export const rm = async (path: string) => {
