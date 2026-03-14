@@ -4,68 +4,92 @@
   elements to create a unique identity.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
-      <strong
-        ><a href="#h_01JPQMQ4G923BPTQNFBM7DETJV"
-          >How to Navigate to the Profiles Tab</a
-        ></strong
-      ><br />
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e46956fa3777548142643b0dec98d25e5"
+    >
+      <a href="#h_01JPQMQ4G923BPTQNFBM7DETJV"
+        ><strong>How to Navigate to the Profiles Tab</strong></a
+      >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01H3MBQYKRKWTZNXSM1ZDKKQPG" target="_self"
-              >Desktop</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e254b0bdac777e119112fc20d6fdb7278"
+        >
+          <a href="#h_01H3MBQYKRKWTZNXSM1ZDKKQPG" target="_self"
+            ><strong>Desktop</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01H3MBR26H5GM5N8B6ZQB44Y29" target="_self"
-              >Mobile</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ea1af83775c71bbcbb74987237a678d24"
+        >
+          <a href="#h_01H3MBR26H5GM5N8B6ZQB44Y29" target="_self"
+            ><strong>Mobile</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
-      <strong
-        ><a href="#h_01JPQMW5K368G5FEM7NWNRMW01"
-          >How to Customize your Profile</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e952c3b4f415fcbcb75e0ff18533b6ca0"
+    >
+      <a href="#h_01JPQMW5K368G5FEM7NWNRMW01"
+        ><strong>How to Customize your Profile</strong></a
       >
       <ul>
-        <li>
-          <strong><a href="#h_01JPQMW9V6R6PZ7PFR83CNT7N7">Avatar</a></strong>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e378ee4433b1ca174a167f50891d8ca94"
+        >
+          <a href="#h_01JPQMW9V6R6PZ7PFR83CNT7N7"><strong>Avatar</strong></a>
         </li>
-        <li>
-          <strong
-            ><a href="#h_01K1EQK6F3684EESBMWYEQYXQY"
-              >Avatar Decorations</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e4f41c2cd7c524242ac4004df14ef35f8"
+        >
+          <a href="#h_01K1EQK6F3684EESBMWYEQYXQY"
+            ><strong>Avatar Decorations</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01K1EQMG3EN5R11CC5CQ1T0VTK">Profile Effects</a></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e911ff3bdc0227701da953ea95133f5ee"
+        >
+          <a href="#h_01K1EQMG3EN5R11CC5CQ1T0VTK"
+            ><strong>Profile Effects</strong></a
           >
         </li>
-        <li>
-          <strong><a href="#h_01JPQN9NPYA0WYFGRDMEYPMF44">About Me</a></strong>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="eb92deca9f8130db69c5232b4165bb06b"
+        >
+          <a href="#h_01JPQP6BJ39T32PXXYQKMZ7DF1"><strong>About Me</strong></a>
         </li>
-        <li>
-          <strong><a href="#h_01JPQNFP3QYS72FPXX4HR6W1VZ">Pronouns</a></strong>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e8e06cf5c8540441f6ed9e55aec6486a2"
+        >
+          <a href="#h_01JPQNFP3QYS72FPXX4HR6W1VZ"><strong>Pronouns</strong></a>
         </li>
-        <li>
-          <strong><a href="#h_01JPQNH7CRX2642S6Q3ES5QZK1">Banner</a></strong>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e7bd1c8f22ff902a929e04de2133f7be7"
+        >
+          <a href="#h_01JPQNH7CRX2642S6Q3ES5QZK1"><strong>Banner</strong></a>
         </li>
-        <li>
-          <strong
-            ><a href="#h_01JPQNPP4YWK7G12JPC8PSHWZ3">Profile Theme</a></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e39378c123424369a594f229326ba505b"
+        >
+          <a href="#h_01JPQNPP4YWK7G12JPC8PSHWZ3"
+            ><strong>Profile Theme</strong></a
           >
         </li>
       </ul>
@@ -112,7 +136,7 @@
     height="68"
   />
 </p>
-<h4 id="h_01JPQMTBD48JXYMM9RVDBK5BG8" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPQMTBD48JXYMM9RVDBK5BG8">
   <span style="color: #666666">Cogwheel Icon</span>
 </h4>
 <p>
@@ -126,7 +150,7 @@
     height="566"
   />
 </p>
-<h4 id="h_01JPQMTZP8EKP3XBR9FHE95J5Z" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPQMTZP8EKP3XBR9FHE95J5Z">
   <span style="color: #666666">Profiles tab in User Settings</span>
 </h4>
 <h2 id="h_01H3MBR26H5GM5N8B6ZQB44Y29">Mobile</h2>
@@ -141,12 +165,10 @@
       height="654"
   /></span>
 </p>
-<h4 id="h_01JPQMVQN0QWTNHRH96BKVVWKN" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPQMVQN0QWTNHRH96BKVVWKN">
   <span style="color: #4f545c">To customize your User Profile and </span
   ><a href="https://support.discord.com/hc/en-us/articles/4409388345495"
-    ><span class="wysiwyg-underline" style="color: #1155cc"
-      >per-server profiles</span
-    ></a
+    ><span class="wysiwyg-underline">per-server profiles</span></a
   ><span style="color: #4f545c"
     >, tap your avatar and Edit Profile on mobile</span
   >
@@ -155,7 +177,7 @@
 <h2 id="h_01JPQMW9V6R6PZ7PFR83CNT7N7">Avatar</h2>
 <div class="info-box">
   <a href="https://support.discord.com/hc/en-us/articles/115000435108"
-    ><span class="wysiwyg-underline" style="color: #1155cc">Nitro</span></a
+    ><span class="wysiwyg-underline">Nitro</span></a
   ><span style="color: #434343">
     subscribers can upload animated GIFs as their profile avatar.</span
   >
@@ -169,7 +191,7 @@
   You can upload your own image (or choose a GIF if you're a<a
     href="https://support.discord.com/hc/en-us/articles/115000435108"
   >
-    <span class="wysiwyg-underline" style="color: #1155cc">Nitro</span></a
+    <span class="wysiwyg-underline">Nitro</span></a
   >
   subscriber) as your avatar. Supported file types are PNG and GIF.
 </p>
@@ -184,12 +206,15 @@
     height="558"
   />
 </p>
-<h4 id="h_01JPQMZKP3G9E3X0TYW6HEGJRG" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPQMZKP3G9E3X0TYW6HEGJRG">
   <span style="color: #666666">How to Add a GIF as Your Profile Picture</span>
 </h4>
 <div class="tip-box">
-  To use a previously uploaded avatar, press <strong>Change Avatar</strong> and
-  select one from the <strong>Recent Avatars section</strong>.
+  <p>
+    To use a previously uploaded avatar, press
+    <strong>Change Avatar</strong> and select one from the
+    <strong>Recent Avatars section</strong>.
+  </p>
   <p class="wysiwyg-text-align-center">
     <img
       src="https://support.discord.com/hc/article_attachments/33835248167831"
@@ -197,7 +222,7 @@
       height="539"
     />
   </p>
-  <h4 id="h_01JPQP3XE2TC8EDAK0VZM6M1R5" class="wysiwyg-text-align-center">
+  <h4 class="wysiwyg-text-align-center" id="h_01JPQP3XE2TC8EDAK0VZM6M1R5">
     <span style="color: #666666">Selecting a recent avatar on Desktop</span>
   </h4>
 </div>
@@ -219,7 +244,7 @@
     height="224"
   />
 </p>
-<h4 id="h_01K1EQK6F330TDAWTJZFEPFRPT" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K1EQK6F330TDAWTJZFEPFRPT">
   <span style="color: #666666">Shop Banner in Profiles on Desktop</span>
 </h4>
 <p>
@@ -238,7 +263,7 @@
     height="399"
   />
 </p>
-<h4 id="h_01K1EQK6F379ST7EKJFJD40EKN" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K1EQK6F379ST7EKJFJD40EKN">
   <span style="color: #666666">Select Apply to set your avatar decoration</span>
 </h4>
 <h2 id="h_01K1EQMG3EN5R11CC5CQ1T0VTK">Profile Effects</h2>
@@ -263,7 +288,7 @@
     height="538"
   />
 </p>
-<h4 id="h_01K1EQMZJXM22SA38D8BF39WZ7" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K1EQMZJXM22SA38D8BF39WZ7">
   <span style="color: #666666">Change Effect in Profiles</span>
 </h4>
 <p>
@@ -286,7 +311,7 @@
     height="480"
   />
 </p>
-<h4 id="h_01K1EQP6RJF16PSJ71E5427075" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K1EQP6RJF16PSJ71E5427075">
   <span style="color: #666666">Select Apply to set your profile effect</span>
 </h4>
 <h2 id="h_01JPQP6BJ39T32PXXYQKMZ7DF1">About Me</h2>
@@ -297,20 +322,22 @@
 </p>
 <p>The <strong>About Me</strong> section can contain the following:</p>
 <ul>
-  <li>Up to 190 characters (this includes emojis, markdown text, and links)</li>
-  <li>
+  <li data-list-item-id="ea7b3d81aee60e723c5de8c17ecc2e1df">
+    Up to 190 characters (this includes emojis, markdown text, and links)
+  </li>
+  <li data-list-item-id="e681fcbddf49d9c5d6b0bdfa1e9a5fe88">
     <a
       href="https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-"
       target="_blank"
       rel="noopener noreferrer"
-      ><span class="wysiwyg-underline" style="color: #1155cc"
-        >Markdown text</span
-      ></a
+      ><span class="wysiwyg-underline">Markdown text</span></a
     >
     and links
   </li>
-  <li>Emojis</li>
-  <li>Unicode characters</li>
+  <li data-list-item-id="e6e0bac5045a9346963b3d2d5f368a4f7">Emojis</li>
+  <li data-list-item-id="e03c3e94742c73842f2ea301afb92882a">
+    Unicode characters
+  </li>
 </ul>
 <div class="info-box">
   <a
@@ -329,7 +356,7 @@
       height="248"
   /></span>
 </p>
-<h4 id="h_01JPQNEK2Z0WS4Y34XCR27GQAC" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPQNEK2Z0WS4Y34XCR27GQAC">
   <span style="color: #666666">About Me in Profiles</span>
 </h4>
 <p>
@@ -345,10 +372,10 @@
     height="588"
   />
 </p>
-<h4 id="h_01K1EQR1PQ01XD57FD32VBRNMH" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K1EQR1PQ01XD57FD32VBRNMH">
   <span style="color: #666666">Example of About Me in a profile</span>
 </h4>
-<h2 id="h_01JPQNFP3QYS72FPXX4HR6W1VZ" class="wysiwyg-text-align-left">
+<h2 class="wysiwyg-text-align-left" id="h_01JPQNFP3QYS72FPXX4HR6W1VZ">
   Pronouns
 </h2>
 <p class="wysiwyg-text-align-left">
@@ -362,8 +389,8 @@
   />
 </p>
 <h4
+  class="wysiwyg-text-align-center info-box"
   id="h_01JPQNGWB2B32GJAPQ3DA9ETQK"
-  class="info-box wysiwyg-text-align-center"
 >
   <span style="color: #666666">Pronouns section in Profiles</span>
 </h4>
@@ -395,7 +422,7 @@
     height="83"
   />
 </p>
-<h4 id="h_01JPQNMBY9654CVR7CFA2YKS5C" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPQNMBY9654CVR7CFA2YKS5C">
   <span style="color: #666666">Change Banner button under Profile Banner</span>
 </h4>
 <p>
@@ -416,7 +443,7 @@
     height="318"
   />
 </p>
-<h4 id="h_01JPQNNCJBNJY2K2F4TAWX6CJB" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPQNNCJBNJY2K2F4TAWX6CJB">
   <span style="color: #666666">Select an Image menu</span>
 </h4>
 <p>
@@ -432,7 +459,7 @@
     height="598"
   />
 </p>
-<h4 id="h_01JPQNP8RET3MDCEWG9ZQNHFBP" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPQNP8RET3MDCEWG9ZQNHFBP">
   <span style="color: #666666"
     >Example of Edit Image window for Profile Banner</span
   >
@@ -451,7 +478,7 @@
       height="582"
   /></span>
 </p>
-<h4 id="h_01JPQNRVMGPK5QZ2P25W58DMCY" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPQNRVMGPK5QZ2P25W58DMCY">
   <span style="color: #666666"
     >Select Profile Theme Colors: Choose a primary and accent color on
     desktop</span

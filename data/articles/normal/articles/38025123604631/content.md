@@ -1,5 +1,5 @@
 <div class="warn-box">
-  <strong>Important:</strong> Starting March 1st, 2026, all audio and video
+  <strong>Important:</strong> Starting March 2nd, 2026, all audio and video
   conversations in direct messages (DMs), group messages (GDMs), voice channels,
   and Go Live streams on Discord will require
   <a
@@ -190,11 +190,11 @@
 </p>
 <ul>
   <li data-list-item-id="ef542c0ddd6f59e098be546ea2eb56d88">
-    <strong>Before March 1, 2026:</strong> You can still join calls with no
+    <strong>Before March 2, 2026:</strong> You can still join calls with no
     issues
   </li>
   <li data-list-item-id="efe3c9c05927f5e6d13ddd5f355ea5c7e">
-    <strong>After March 1, 2026:</strong> You will be unable to join voice
+    <strong>After March 2, 2026:</strong> You will be unable to join voice
     calls, video calls, or Go Live streams until you update to a supported
     version.
   </li>
@@ -236,7 +236,7 @@
 </p>
 <p>
   A: Third-party applications and bots that connect to Discord voice must
-  implement DAVE support to continue functioning after March 1, 2026. Developers
+  implement DAVE support to continue functioning after March 2, 2026. Developers
   should consult Discord's updated voice documentation and the open-source DAVE
   implementation examples.
 </p>

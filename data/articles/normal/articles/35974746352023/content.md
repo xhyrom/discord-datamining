@@ -12,6 +12,10 @@
   access to a larger network. It applies to all internet traffic outside of
   Discord, covering browsing and any other online applications.
 </p>
+<div class="warn-box">
+  <strong>Important: </strong>This experiment has concluded and is no longer
+  available as of 3/04/2026
+</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"

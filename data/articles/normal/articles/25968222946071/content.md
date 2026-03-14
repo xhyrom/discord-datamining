@@ -29,7 +29,7 @@
 <div class="warn-box">
   <strong>Important:</strong> All audio and video conversations in direct
   messages (DMs), group messages (GDMs), voice channels, and Go Live streams on
-  Discord will require end-to-end encryption starting on March 1st, 2026. You
+  Discord will require end-to-end encryption starting on March 2nd, 2026. You
   must ensure that your Discord app is on the latest version to support the
   end-to-end encryption requirement. Learn more about the minimum requirements
   <a
@@ -295,7 +295,7 @@
 </p>
 <p>
   A: Your call may not be end-to-end encrypted because you may be on a call with
-  someone who is not on an updated Discord app. On March 1st 2026, all DMs,
+  someone who is not on an updated Discord app. On March 2nd 2026, all DMs,
   GDMs, voice channels, and Go Live streams will require updated clients that
   support end-to-end encryption.
 </p>
@@ -304,7 +304,7 @@
   A: E2EE A/V is enabled by default and cannot be turned off. E2EE A/V currently
   won’t apply to calls where an unsupported client (i.e., web and consoles) is
   being used by at least one user. Unsupported clients will no longer be able to
-  connect to calls from March 1, 2026. Stage channels also will not be
+  connect to calls from March 2, 2026. Stage channels also will not be
   end-to-end encrypted.
 </p>
 <p>

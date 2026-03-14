@@ -7,98 +7,138 @@
   all the essential features and functions.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large"
-      >What this article covers:</span
-    ></strong
-  >
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
   <ul>
-    <li>
-      <strong
-        ><a href="#h_01HDME17HJE3D9N3DWY2QYGF07"
-          >What will I find in the Shop?</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e589f77950cd022c41f8e10b489ba9b12"
+    >
+      <a href="#h_01HDME17HJE3D9N3DWY2QYGF07"
+        ><strong>What will I find in the Shop?</strong></a
       >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01J4T4BWARG55JA5T9T9CGJRFW">Shop Bundles</a></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e00dd837a2729d480d10a78de3022c206"
+        >
+          <a href="#h_01J4T4BWARG55JA5T9T9CGJRFW"
+            ><strong>Shop Bundles</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ef3d0b28856eea07ee6ebbd0ddc807a24"
+        >
           <a href="#h_01JZ9CB0KZ0NZB7ECSAFY6DEW2"
             ><strong>Orbs Exclusives</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
-      <strong
-        ><a href="#h_01HDME17HJX40G92JC7V3Q0WD6"
-          >How do I find the Shop?</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="eefbf3fcdc070f61ef98c4ca2cd5dd43f"
+    >
+      <a href="#h_01HDME17HJX40G92JC7V3Q0WD6"
+        ><strong>How do I find the Shop?</strong></a
       >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01HVHE1RAM3Y86Y72M182775GF">Desktop/Browser</a></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e55d72635543e7533ec1c6f0896776107"
+        >
+          <a href="#h_01HVHE1RAM3Y86Y72M182775GF"
+            ><strong>Desktop/Browser</strong></a
           >
         </li>
-        <li>
-          <strong><a href="#h_01J4T4TY98TVE2FGXE2HW9YTPH">Mobile</a></strong>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e250435a63862a58f3115a8a582b0e7fe"
+        >
+          <a href="#h_01J4T4TY98TVE2FGXE2HW9YTPH"><strong>Mobile</strong></a>
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="ec90888cbd6a82e99f9251ea14d57262f"
+    >
       <a href="#h_01K058KRRWBGD0CMR2FVTDXMQJ"
         ><strong>Browsing in the Shop</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e3ae300390d099cbf732911766fdfd2e6"
+        >
           <a href="#h_01K058PPFEC3CEJ2VF5XA8QNAD"><strong>Sort By</strong></a>
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ed7a1572b47c41b508aeb7c405e8d7f66"
+        >
           <a href="#h_01K058PPFEZ57GPXW9AEM49RCV"
             ><strong>Show Filters</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01K058PPFENDQRWK2WH629A9ZT">Search the Shop</a></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e49f8bcd79aad25d00a27606063fbf922"
+        >
+          <a href="#h_01K058PPFENDQRWK2WH629A9ZT"
+            ><strong>Search the Shop</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
-      <strong
-        ><a href="#h_01J4T4Z6G3GCXP9S76GKGBR98G"
-          >Gifting from the Shop</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="eac4e4c89175d3bdeed28412fccdb39b4"
+    >
+      <a href="#h_01J4T4Z6G3GCXP9S76GKGBR98G"
+        ><strong>Gifting from the Shop</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01HDME17HJ58CYGM3WYGQF0ZMN"
-          >Frequently Asked Questions</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e2cca935c6694791c67c9e770ce1c36d3"
+    >
+      <a href="#h_01HDME17HJ58CYGM3WYGQF0ZMN"
+        ><strong>Frequently Asked Questions</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e70348def4db5fa58715d1ef7c4821fbb"
+        >
           <a href="#h_01JZ9CVVGE6NXPYTCVV3PAM5QF"
             ><strong>Refunds and Account-related</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ef04d66fd361f532ad9fe2c84faca4489"
+        >
           <a href="#h_01JZ9CVVGE6SHSPCED6NRRNP4J"
             ><strong>Pricing and Discounts</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e060589122cfb61096c996b672c37312c"
+        >
           <a href="#h_01JZ9CVVGEV9VX1ZQGVC30E94F"
             ><strong>Bundles and Items</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="eea9ce24df41afa13c84249e64fd41038"
+        >
           <a href="#h_01JZ9CVVGEN1C6Z0ADK3H43J4K"><strong>Gifting</strong></a>
         </li>
       </ul>
@@ -141,7 +181,7 @@
     height="453"
   />
 </p>
-<h4 id="h_01JZ9C62ZE17DJ1RA6PM0V2RBV" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9C62ZE17DJ1RA6PM0V2RBV">
   <span style="color: #666666">Mallow Jump Avatar Decoration in the Shop</span>
 </h4>
 <div class="book-box">
@@ -167,7 +207,7 @@
     height="473"
   />
 </p>
-<h4 id="h_01JZ9C7TH17BMCK6R3MW7XDZW6" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9C7TH17BMCK6R3MW7XDZW6">
   <span style="color: #666666">Am I Getting Hacked? Bundle in the Shop</span>
 </h4>
 <div class="warn-box">
@@ -195,10 +235,13 @@
   such as: 
 </p>
 <ul>
-  <li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="ed7647c6b6117b2370aa7a74e2d02478e"
+  >
     <strong>Orbs-exclusives: </strong>
     <ul>
-      <li>
+      <li data-list-item-id="eea187ae7141713afc96ce6c10e65b5c8">
         <strong>Nitro credits</strong> - Spend your Orbs to purchase
         <a
           href="https://support.discord.com/hc/en-us/articles/26362805097623"
@@ -208,26 +251,30 @@
         >
         for temporary access to Nitro benefits
       </li>
-      <li>
+      <li data-list-item-id="e3b5f5e3f779d48ef8e00b051b071a60c">
         <strong>Exclusive Avatar Decorations and Profile Effects</strong> -
         Unique items available only through Orbs 
       </li>
-      <li>
+      <li data-list-item-id="e5401691c6fa11e73058d6a355e36bb63">
         <strong>Orbs Profile badge</strong> - a unique badge to add to your
         collection
       </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="e6c4f1a0f7b444df09638f9745e5509fd">
     <strong>Select items from main collections</strong> - Access popular Shop
     items without spending money
   </li>
 </ul>
 <p>You <em>cannot</em> purchase the following items with Orbs: </p>
 <ul>
-  <li>Gifts</li>
-  <li>Partner-branded Shop items</li>
-  <li>Recurring Nitro or Boosting subscriptions</li>
+  <li data-list-item-id="e9aa9a97a18f5465ea6f122e44118022a">Gifts</li>
+  <li data-list-item-id="e748a3ca66effecefdc68be1981f21cf7">
+    Partner-branded Shop items
+  </li>
+  <li data-list-item-id="e8042bc7a109f987a518966ef89667bcb">
+    Recurring Nitro or Boosting subscriptions
+  </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
@@ -236,13 +283,15 @@
     height="453"
   />
 </p>
-<h4 id="h_01JZ9CCJZX6H6DQS7PCM7TAH38" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9CCJZX6H6DQS7PCM7TAH38">
   <span style="color: #666666">Orb Exclusive Items in the Shop</span>
 </h4>
 <p><strong>How pricing works:</strong></p>
 <ul>
-  <li>Eligible items show both real-world money and Orb prices</li>
-  <li>
+  <li data-list-item-id="e4f7d13dcb8b9f678776e0b93e0a7b8d9">
+    Eligible items show both real-world money and Orb prices
+  </li>
+  <li data-list-item-id="ef82efaf25f2449bc41ab6276a4a5ec1e">
     When you have enough Orbs, we automatically display the Orbs price first
   </li>
 </ul>
@@ -257,7 +306,7 @@
     height="472"
   />
 </p>
-<h4 id="h_01JZ9CDHPD3FJ9B5TGXK3WWEF9" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9CDHPD3FJ9B5TGXK3WWEF9">
   <span style="color: #666666">Pricing Options for a Shop Item</span>
 </h4>
 <h1 id="h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</h1>
@@ -291,7 +340,7 @@
     height="447"
   />
 </p>
-<h4 id="h_01JZ9CG35B7734EZ4M7ANZZQ42" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9CG35B7734EZ4M7ANZZQ42">
   <span style="color: #666666">Navigating to the Shop via Shop Tab</span>
 </h4>
 <p>
@@ -310,9 +359,9 @@
 </p>
 <p>
   2. Once there, you will see the <strong>banner</strong> to the Shop. You can
-  also select <strong>Change Effect, </strong> <strong>Change Decoration</strong
-  >, or <strong>Change Nameplate </strong>and press the
-  <strong>Shop icon</strong> [<img
+  also select <strong>Change Effect, </strong>
+  <strong>Change Decoration</strong>, or <strong>Change Nameplate </strong>and
+  press the <strong>Shop icon</strong> [<img
     src="https://support.discord.com/hc/article_attachments/33244580986135"
     width="24"
     height="24"
@@ -329,7 +378,7 @@
     height="447"
   />
 </p>
-<h4 id="h_01JZ9CHZRQJ29B2ZXSKXW0NQXG" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9CHZRQJ29B2ZXSKXW0NQXG">
   <span style="color: #666666">Navigating to the Shop via Shop Banner</span>
 </h4>
 <div class="tip-box">
@@ -346,10 +395,10 @@
       height="421"
   /></span>
 </p>
-<h4 id="h_01JZ9CK78KQMWY6QHVTA21E0RE" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9CK78KQMWY6QHVTA21E0RE">
   <span style="color: #666666">Orbs Exclusives Tab in the Shop Page</span>
 </h4>
-<h2 id="h_01J4T4TY98TVE2FGXE2HW9YTPH" class="wysiwyg-text-align-left">
+<h2 class="wysiwyg-text-align-left" id="h_01J4T4TY98TVE2FGXE2HW9YTPH">
   Mobile
 </h2>
 <p>
@@ -375,7 +424,7 @@
     height="538"
   />
 </p>
-<h4 id="h_01JZ9CNH48JC0ATN72GJJG514J" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9CNH48JC0ATN72GJJG514J">
   <span style="color: #666666">Navigating to the Shop on Mobile</span>
 </h4>
 <h1 id="h_01K058KRRWBGD0CMR2FVTDXMQJ">Browsing the Shop</h1>
@@ -394,7 +443,7 @@
     height="345"
   />
 </p>
-<h4 id="h_01K058NTXS07G98DKHX4EDG860" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K058NTXS07G98DKHX4EDG860">
   <span style="color: #666666">Browse Tab in the Shop</span>
 </h4>
 <p>
@@ -415,7 +464,7 @@
     height="353"
   />
 </p>
-<h4 id="h_01K058PPFE9X4MVQ0V3EN6CHAY" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K058PPFE9X4MVQ0V3EN6CHAY">
   <span style="color: #666666">Sort by Dropdown in the Shop</span>
 </h4>
 <h2 id="h_01K058PPFEZ57GPXW9AEM49RCV">Show Filters</h2>
@@ -434,16 +483,16 @@
     height="396"
   />
 </p>
-<h4 id="h_01K058PPFEZHEBJEFCFPP6R0C8" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K058PPFEZHEBJEFCFPP6R0C8">
   <span style="color: #666666">Filtering in the Shop</span>
 </h4>
 <div class="tip-box">
-  <strong><span style="color: #434343">Tip</span></strong
-  ><span style="color: #434343">: Select </span
-  ><strong><span style="color: #434343">Clear all filters</span></strong
-  ><span style="color: #434343">
-    in the filters sidebar to reset your selection.</span
-  >
+  <p>
+    <span style="color: #434343"
+      ><strong>Tip</strong>: Select <strong>Clear all filters</strong> in the
+      filters sidebar to reset your selection.</span
+    >
+  </p>
   <p class="wysiwyg-text-align-center">
     <img
       src="https://support.discord.com/hc/article_attachments/33465773706263"
@@ -451,7 +500,7 @@
       height="539"
     />
   </p>
-  <h4 id="h_01K058PPFEWVYQP78MGCG7HAH1" class="wysiwyg-text-align-center">
+  <h4 class="wysiwyg-text-align-center" id="h_01K058PPFEWVYQP78MGCG7HAH1">
     <span style="color: #666666">Clear all filters Button</span>
   </h4>
 </div>
@@ -468,10 +517,10 @@
     height="488"
   />
 </p>
-<h4 id="h_01K058PPFEFS0SC692MSHHEEEM" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K058PPFEFS0SC692MSHHEEEM">
   <span style="color: #666666">Search Bar in the Shop</span>
 </h4>
-<h1 id="h_01J4T4Z6G3GCXP9S76GKGBR98G" class="wysiwyg-text-align-left">
+<h1 class="wysiwyg-text-align-left" id="h_01J4T4Z6G3GCXP9S76GKGBR98G">
   Gifting from the Shop
 </h1>
 <p>
@@ -517,22 +566,34 @@
 <h1 id="h_01JZ9CVVGEJ6JZEYKQPGVH9XJF">Frequently Asked Questions </h1>
 <p>This FAQ is divided into sections:</p>
 <ul>
-  <li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="ea2bde67b31b11701f130017d42ddb5e8"
+  >
     <a href="#h_01JZ9CVVGE6NXPYTCVV3PAM5QF"
       ><strong>Refunds and Account-related</strong></a
     >
   </li>
-  <li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e6146166a8c20f454affa1b67f6822519"
+  >
     <a href="#h_01JZ9CVVGE6SHSPCED6NRRNP4J"
       ><strong>Pricing and Discounts</strong></a
     >
   </li>
-  <li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e41b732ba3d707a04713e654c387fc2ca"
+  >
     <a href="#h_01JZ9CVVGEV9VX1ZQGVC30E94F"
       ><strong>Bundles and Items</strong></a
     >
   </li>
-  <li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e77a9f3bd828b49386141dc493c23c973"
+  >
     <a href="#h_01JZ9CVVGEN1C6Z0ADK3H43J4K"><strong>Gifting</strong></a>
   </li>
 </ul>
@@ -583,20 +644,15 @@
 </p>
 <p><strong>Q: Is localized pricing available for Shop purchases?</strong></p>
 <p>
-  A: Localized pricing is available for Shop purchases in some countries. You
-  should see localized pricing options in the Shop if you are eligible. You can
-  learn more about localized pricing
+  A: Localized pricing is available for some Shop purchases and gifts. You
+  should see at checkout whether localized pricing is available. Otherwise, the
+  purchase will default to USD ($). You can learn more about localized pricing
   <a
     href="https://support.discord.com/hc/articles/4407269525911"
     target="_blank"
     rel="noopener noreferrer"
     >here</a
   >. 
-</p>
-<p>
-  Shop gifts are not available at localized prices. Depending on a user’s
-  region, they may be able to pay for a gift in their local currency, but the
-  price will still be equivalent to the USD price.
 </p>
 <h2 id="h_01JZ9CVVGEV9VX1ZQGVC30E94F">Bundles and Items</h2>
 <p>

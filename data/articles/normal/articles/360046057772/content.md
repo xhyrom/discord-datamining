@@ -6,7 +6,7 @@
   </p>
   <ul>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e2248cf5342de0afb67a34fbd2d462c70"
     >
       <a href="#h_01K640AM1QZAXZ8H7P8Y58MEAM"
@@ -14,7 +14,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e0c1a21cd00a836439405a12310ed9c5f"
     >
       <a href="#h_01K640AM1R2FBHC54GQQA58TFT"
@@ -22,7 +22,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="eee468a256e71cfd016cd266d0df1270a"
     >
       <a href="#h_01K640AM1RCFQFREHSFKQRDNFC"
@@ -30,7 +30,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e5cf7228f931414b46a6c80fc14291136"
     >
       <a href="#h_01GB8VR2A607B1TXP5CX4MF7CF"
@@ -103,16 +103,9 @@
 </p>
 <h1 id="h_01K640AM1RCFQFREHSFKQRDNFC">What is Discord Testers?</h1>
 <div class="warn-box">
-  <strong>Important:</strong>
-  <span style="color: #434343"
-    >We’re sorry to say that the opportunity to be considered for the Discord
-    Testers server is currently unavailable. When the opportunity is available
-    again, it will be announced here.</span
-  ><br /><br /><span style="color: #434343"
-    >Recent applications are being reviewed, and those believed to be a good fit
-    will receive an invitation in early 2026.  Keep an eye on this article for
-    more information.</span
-  >
+  <strong>Important:</strong> We're sorry to say that the opportunity to be
+  considered for the Discord Testers server is currently unavailable. When the
+  possibility arises again, we will announce it here!
 </div>
 <p>
   <strong>Discord Testers</strong> (also known as DTesters) is an official,
@@ -120,17 +113,30 @@
   identify, reproduce, and provide high-quality bug reports. 
 </p>
 <p>
+  We wanted to say a big thank you to those that took the time to fill out the
+  recent Discord Testers Consideration Quiz. Your interest and participation
+  means a lot to us. If you were one of the top performers, we have sent you an
+  email with more information on what to do next.  Don't forget to check your
+  spam folder for messages from @discordapp.com, just in case our email ended up
+  there.
+</p>
+<p>
+  If you have not been contacted, we are sorry to say that you were not chosen
+  this time around.  We understand that this is likely disappointing, but wanted
+  to offer some guidance for the future.
+</p>
+<p>
   For those interested in joining Discord Testers in the future, here are some
   valuable tips to help you prepare and shine on the quiz in the future:
 </p>
 <ul>
-  <li data-list-item-id="e8f4531500d0f6284292769cce69f3e71">
+  <li data-list-item-id="e6de3efe324b57d683615fa21936291d0">
     Make sure to follow the quiz directions carefully
   </li>
-  <li data-list-item-id="e5d05aca9116815456ab6158c82d991a3">
-    Become familiar with Discord and it’s features
+  <li data-list-item-id="e36a705def5b4c6e5333c9e1bfecf9a6c">
+    Become familiar with Discord and its features
   </li>
-  <li data-list-item-id="e9fcd748b7a804df5a3395262679b2f70">
+  <li data-list-item-id="eb0470fe9b1e024d4470b2a4f74f957bd">
     Utilize Discord support articles in the Help Center
   </li>
 </ul>

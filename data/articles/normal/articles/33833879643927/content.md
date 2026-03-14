@@ -13,7 +13,7 @@
   </p>
   <ul>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="ebdd68e3b24842cc27251a2c218aba09e"
     >
       <a href="#h_01K32B6G8X63N9WNDYHK1J6CVG"
@@ -21,7 +21,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="eb2ec6c4e7e5449d9cd2cdfa07040a7cc"
     >
       <a href="#h_01K32B6G8Y6YKGMMTV0J2YF8XX"
@@ -37,7 +37,7 @@
       </ul>
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e4fd00c85e52b487df5652b80b1e8d217"
     >
       <a href="#h_01K32B6G929Y4NZ8FH6X5WATNB"
@@ -45,7 +45,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="ea5a4daeeb75cb913606e4b197456d9ac"
     >
       <a href="#h_01K32B6G984P3THJEWREKWJF3C"
@@ -53,25 +53,25 @@
       >
       <ul>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="eb33ab1221a1a0160b014911ba7d9d1a4"
         >
           <a href="#h_01K32B6G98V14GP2G300KV0CRN"><strong>Fonts</strong></a>
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="ea88e7150183e60eff77bff005c0cfbc9"
         >
           <a href="#h_01K32B6G9A1GE7G6WT8MQ0FA7G"><strong>Effects</strong></a>
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="ea661b6041ad39ee7139f77a06a37831f"
         >
           <a href="#h_01K32B6G9DNXGZEKRYNVS1C1XJ"><strong>Colors</strong></a>
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e20a7ffa2bb9277b3133075d5293438f7"
         >
           <a href="#h_01K32B6G9HK2AV2VMQ19KWV0XS"
@@ -79,7 +79,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="ef27f30919cc354c07d35014c0beb8f7e"
         >
           <a href="#h_01K32B6G9J87QZ86QM2ZD5F46C"
@@ -89,7 +89,7 @@
       </ul>
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e936ba95e4acf2e688149ae532b9d9938"
     >
       <a href="#h_01K32B6G9KZBMH4K3SW6GZ15XH"
@@ -99,6 +99,10 @@
   </ul>
 </div>
 <h1 id="h_01K32B6G8X63N9WNDYHK1J6CVG">What are Display Name Styles?</h1>
+<div class="warn-box">
+  <strong>Important:</strong> Display Name Styles on mobile is available to most
+  users, with full access rolling out in the coming months.
+</div>
 <p>
   Display Name Styles allow Discord Nitro users to customize how their display
   names appear on Discord. With this feature, you can personalize your display
@@ -315,49 +319,49 @@
 <p>Choose from 8 unique fonts:</p>
 <ul>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="eabbd389340a9e19aef5fd1aeeb3a22fc"
   >
     <strong>gg sans (Discord's default font)</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="eac349002c4cab677883c72e1a38c77df"
   >
     <strong>Tempo</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e05de1c074727163766b114b653572dca"
   >
     <strong>Sakura</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e7231e164b8dcde13040e482892f12384"
   >
     <strong>Jellybean</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e3700cb255963a59d78c659a9bad30fe4"
   >
     <strong>Modern</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e7d4b57b023a13ef8484dba5804737d79"
   >
     <strong>Medieval</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e268a578bf3471dc01625017c5c8383a1"
   >
     <strong>8Bit</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e6440a0256c4614ca39f43fdc8286aee9"
   >
     <strong>Vampyre</strong>
@@ -379,31 +383,31 @@
 <p>Select from 5 effect options:</p>
 <ul>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="ef1911a3a6fe990ed66f248d37523888d"
   >
     <strong>Solid</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e66e4f7c6d7c0a8c6ef526dde27a12b03"
   >
     <strong>Gradient</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="ef0c1f5c1689ac12023a5404a003b0339"
   >
     <strong>Neon</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e8bf89dd55b52925447ff27da5b6637ea"
   >
     <strong>Toon</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e2c5fdb51a12ee164c325c8ecd3dedc7c"
   >
     <strong>Pop</strong>

@@ -58,8 +58,9 @@
 </div>
 <h1 id="h_01K9ZW6HMK4H3VR4NJATMS5YTQ">What is Wishlist?</h1>
 <div class="exp-box">
-  <strong>Important</strong>: Wishlist is currently an experimental feature
-  limited to a number of users on desktop and browser.
+  <strong>Important</strong>: Wishlist is available to all users on desktop and
+  browser. On mobile, it's currently an experimental feature available to a
+  limited number of users.
 </div>
 <p>
   Wishlist helps you curate a collection of Shop items you'd love to receive

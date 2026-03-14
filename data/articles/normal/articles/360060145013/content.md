@@ -3,17 +3,19 @@
   from Clyde that states the following:
 </p>
 <blockquote>
-  <strong
-    >Your message could not be delivered. This is usually because you don't
-    share a server with the recipient or the recipient is only accepting direct
-    messages from friends.</strong
-  >
+  <p>
+    <strong
+      >Your message could not be delivered. This is usually because you don't
+      share a server with the recipient or the recipient is only accepting
+      direct messages from friends.</strong
+    >
+  </p>
 </blockquote>
 <p>Clyde’s message will look something like this:</p>
 <p class="wysiwyg-text-align-center">
   <strong
     ><img
-      src="https://support.discord.com/hc/article_attachments/14290580613911"
+      src="https://support.discord.com/hc/article_attachments/38971509168663"
       alt="Screen_Shot_2023-04-10_at_8.34.54_AM.png"
   /></strong>
 </p>
@@ -27,7 +29,7 @@
   >Here are possible reasons for the error that you may be encountering:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ef95bfccb813965378e6d55a089751669">
     You don't share a<a
       href="https://support.discord.com/hc/en-us/articles/360034842871"
       target="_blank"
@@ -37,7 +39,7 @@
     >
     with the DM recipient.
   </li>
-  <li>
+  <li data-list-item-id="e1e0375dca681dd2e1177f92772ce5b80">
     You've<a
       href="https://support.discord.com/hc/en-us/articles/217916488"
       target="_blank"
@@ -47,7 +49,7 @@
     >
     on your shared server.
   </li>
-  <li>
+  <li data-list-item-id="ea3a1fbd16ad3289732a022c1fa44ba2b">
     You have not completed the required<a
       href="https://support.discord.com/hc/en-us/articles/1500000466882"
       target="_blank"
@@ -57,7 +59,7 @@
     >
     steps in your shared server.
   </li>
-  <li>
+  <li data-list-item-id="e6fc421f579e6733e1d9bc2538a0bff9f">
     The DM recipient is<a
       href="https://support.discord.com/hc/en-us/articles/217916488"
       target="_blank"
@@ -66,7 +68,7 @@
       only accepting direct messages from friends</a
     >.
   </li>
-  <li>
+  <li data-list-item-id="ece1add40d2c48ae090c7344c1c81176c">
     You were
     <a
       href="https://support.discord.com/hc/en-us/articles/217916488"
@@ -75,6 +77,11 @@
       >blocked</a
     >
     by the DM recipient.
+  </li>
+  <li data-list-item-id="e4aa8aacb3ab2b95a1bc1758c429c876a">
+    This error may also appear if the content you're trying to share has been
+    identified as violating Discord's Community Guidelines and cannot be
+    uploaded
   </li>
 </ul>
 <div class="form-box">

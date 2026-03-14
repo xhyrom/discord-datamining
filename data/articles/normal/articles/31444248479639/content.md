@@ -3,44 +3,51 @@
   identifiers that members can display proudly on their profiles, anywhere.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li><a href="#h_01JT6VKRAB9C1PW9Z7TAT24AAA">What are Server Tags?</a></li>
-    <li>
+    <li data-list-item-id="e918a3c5f0c69a5f6622794cb08521a56">
+      <a href="#h_01JT6VKRAB9C1PW9Z7TAT24AAA">What are Server Tags?</a>
+    </li>
+    <li data-list-item-id="ec5484c72582dd95335b0dd54e6a89855">
       <a href="#h_01JT6VKRABXV1EVR1GMVE34WHY"
         >How to Use Server Boosts for Server Tags as a Server Owner/Admin</a
       >
     </li>
-    <li>
+    <li data-list-item-id="e341b0296181a0c3d9fb5a6fab6fd0670">
       <a href="#h_01JT6VKRAC5SKDJ42FYMXW8AXS"
         >How to Select or Customize Your Server Tag as a Server Owner/Admin</a
       >
     </li>
-    <li>
+    <li data-list-item-id="e3e3fd98920159aa1ca94fee3528f5410">
       <a href="#h_01JT6VKRACHQADX7EBXR84QTAQ"
         >How to Set or Remove a Server Tag as a Server Member</a
       >
       <ul>
-        <li><a href="#h_01JT6VKRACJ3XRZBQTQP4G50EV">Desktop/Browser</a></li>
-        <li><a href="#h_01JT6VKRAC46AR20P1M6BV61A8">Mobile</a></li>
+        <li data-list-item-id="eab19464246417196f32b70aab9970513">
+          <a href="#h_01JT6VKRACJ3XRZBQTQP4G50EV">Desktop/Browser</a>
+        </li>
+        <li data-list-item-id="e5672442b7923bf10908a862dafe22203">
+          <a href="#h_01JT6VKRAC46AR20P1M6BV61A8">Mobile</a>
+        </li>
       </ul>
     </li>
-    <li>
+    <li data-list-item-id="e6fbb7835c51cb619774238063426ef59">
       <a href="#h_01K577R7QDNKACJGKN4F0K3YE4"
         >What are Server Tag Badge Packs?</a
       >
       <ul>
-        <li>
+        <li data-list-item-id="eff0696cd5789f1ad3e61c7294abccca0">
           <a href="#h_01K577R7QD8J6EKRVKB11BACMM"
             >How to Purchase Server Tag Badge Packs</a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li data-list-item-id="e3c4217a51b5cd06ef52ebb281e48a2d8">
       <a href="#h_01JT6VKRACYDW17M1H41J169AW">Frequently Asked Questions</a>
     </li>
   </ul>
@@ -53,49 +60,40 @@
     height="62"
   />
 </p>
-<h4 id="h_01JT6VKRAB4WBQF408R5A2GDKV" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of a Server Tag</span
+<h4 class="wysiwyg-text-align-center" id="h_01JT6VKRAB4WBQF408R5A2GDKV">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Example of a Server Tag</span></span
   >
 </h4>
 <p>
   A <strong>Server Tag </strong>allows members of a server to represent that
   server everywhere on Discord!
-  <span style="color: #0e0e0e" data-darkreader-inline-color="">A </span
-  ><strong
-    ><span style="color: #0e0e0e" data-darkreader-inline-color=""
-      >Server Tag</span
-    ></strong
-  ><span style="color: #0e0e0e" data-darkreader-inline-color="">
-    is a custom, 4-character label paired with an icon. While not unique to each
-    server, it lets members proudly display a shared identity on their</span
+  <span style="color: #0e0e0e"
+    ><span data-darkreader-inline-color="">A </span
+    ><span data-darkreader-inline-color=""><strong>Server Tag</strong></span
+    ><span data-darkreader-inline-color="">
+      is a custom, 4-character label paired with an icon. While not unique to
+      each server, it lets members proudly display a shared identity on
+      their</span
+    ></span
   >
   <a href="https://support.discord.com/hc/en-us/articles/4403147417623"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Custom Profile</span
-    ></a
+    ><span class="wysiwyg-underline">Custom Profile</span></a
   >.
-  <span style="color: #0e0e0e" data-darkreader-inline-color=""
-    >A server owner or admin can use 3 </span
+  <span style="color: #0e0e0e"
+    ><span data-darkreader-inline-color=""
+      >A server owner or admin can use 3
+    </span></span
   ><a href="https://support.discord.com/hc/en-us/articles/360028038352"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Server Boosts</span
-    ></a
-  ><span style="color: #0e0e0e" data-darkreader-inline-color=""> to </span
-  ><strong
-    ><span style="color: #0e0e0e" data-darkreader-inline-color=""
-      >unlock</span
-    ></strong
-  ><span style="color: #0e0e0e" data-darkreader-inline-color="">
-    a Server Tag for their community. This additional perk is separate from
-    Boost Levels, so your server doesn’t need to reach a specific Boost Level to
-    access it.</span
+    ><span class="wysiwyg-underline">Server Boosts</span></a
+  ><span style="color: #0e0e0e"
+    ><span data-darkreader-inline-color=""> to </span
+    ><span data-darkreader-inline-color=""><strong>unlock</strong></span
+    ><span data-darkreader-inline-color="">
+      a Server Tag for their community. This additional perk is separate from
+      Boost Levels, so your server doesn’t need to reach a specific Boost Level
+      to access it.</span
+    ></span
   >
 </p>
 <h1 id="h_01JT6VKRABXV1EVR1GMVE34WHY">
@@ -117,9 +115,11 @@
     height="400"
   />
 </p>
-<h4 id="h_01JT6VKRABM05NMG98CJKPTGPQ" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Server Boosts tab in a server</span
+<h4 class="wysiwyg-text-align-center" id="h_01JT6VKRABM05NMG98CJKPTGPQ">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of Server Boosts tab in a server</span
+    ></span
   >
 </h4>
 <p>
@@ -134,9 +134,11 @@
     height="424"
   />
 </p>
-<h4 id="h_01JT6VKRABJ49445TS7PATJ8QQ" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Available Server Boosts</span
+<h4 class="wysiwyg-text-align-center" id="h_01JT6VKRABJ49445TS7PATJ8QQ">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of Available Server Boosts</span
+    ></span
   >
 </h4>
 <p>
@@ -144,17 +146,18 @@
   press <strong>Enable Perk</strong>. A window will appear where you can
   configure your newly unlocked perk!
 </p>
-<p id="h_01JT6VKRACP0ZEQ4WQTBV9750E" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/31809665347479"
-      width="624"
-      height="351"
-  /></span>
+<p class="wysiwyg-text-align-center" id="h_01JT6VKRACP0ZEQ4WQTBV9750E">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/31809665347479"
+        width="624"
+        height="351" /></span
+  ></span>
 </p>
-<h4 id="h_01JT6VTBA0A7MQQ6ZW03Y5HGHD" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Enable Perk Server Tag</span
+<h4 class="wysiwyg-text-align-center" id="h_01JT6VTBA0A7MQQ6ZW03Y5HGHD">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Enable Perk Server Tag</span></span
   >
 </h4>
 <h1 id="h_01JT6VKRAC5SKDJ42FYMXW8AXS">
@@ -179,9 +182,9 @@
     height="579"
   />
 </p>
-<h4 id="h_01JT6VKRACR4P6ARG403HKZ1E2" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Server Settings option</span
+<h4 class="wysiwyg-text-align-center" id="h_01JT6VKRACR4P6ARG403HKZ1E2">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Server Settings option</span></span
   >
 </h4>
 <p>
@@ -189,22 +192,24 @@
   you can edit the following:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ec4b6d939c63ddb588f1a8657e6d537ea">
     Server Tag name (can use up to 4 characters that are alphanumeric and
     certain special characters)
   </li>
-  <li>Badge</li>
-  <li>Color </li>
+  <li data-list-item-id="e193b9fad29ea570dced942a3f47fecaf">Badge</li>
+  <li data-list-item-id="e50b4044ddecd99aa0567b7646a1dae4a">Color </li>
 </ul>
-<p id="h_01JT6VKRACZ8EGBV3JHXYVNJ9T" class="wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center" id="h_01JT6VKRACZ8EGBV3JHXYVNJ9T">
   <img
     src="https://support.discord.com/hc/article_attachments/31809639376151"
     alt="server_tag_enable.gif"
   />
 </p>
-<h4 id="h_01JT6VTBA1ZMM2F44ATAMXQ7KM" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Setting or customizing your server’s Server Tag</span
+<h4 class="wysiwyg-text-align-center" id="h_01JT6VTBA1ZMM2F44ATAMXQ7KM">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Setting or customizing your server’s Server Tag</span
+    ></span
   >
 </h4>
 <h1 id="h_01JT6VKRACHQADX7EBXR84QTAQ">
@@ -234,16 +239,13 @@
     height="468"
   />
 </p>
-<h4 id="h_01JT6VKRACX2VJNPBBCN6VB5Z0" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Profiles
-    </span></strong
-  ><span style="color: #666666" data-darkreader-inline-color="">tab under </span
-  ><strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >User Settings</span
-    ></strong
+<h4 class="wysiwyg-text-align-center" id="h_01JT6VKRACX2VJNPBBCN6VB5Z0">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""><strong>Profiles </strong></span
+    ><span data-darkreader-inline-color="">tab under </span
+    ><span data-darkreader-inline-color=""
+      ><strong>User Settings</strong></span
+    ></span
   >
 </h4>
 <p>
@@ -258,9 +260,11 @@
     height="135"
   />
 </p>
-<h4 id="h_01JT6VKRACEPT0BD0M6P6107DG" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Server Tag selection box on desktop/browser</span
+<h4 class="wysiwyg-text-align-center" id="h_01JT6VKRACEPT0BD0M6P6107DG">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Server Tag selection box on desktop/browser</span
+    ></span
   >
 </h4>
 <p>
@@ -274,9 +278,11 @@
     height="144"
   />
 </p>
-<h4 id="h_01JT6VKRACRTV6519GSK0M3962" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    > X button located next to Server Tag on desktop/browser</span
+<h4 class="wysiwyg-text-align-center" id="h_01JT6VKRACRTV6519GSK0M3962">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      > X button located next to Server Tag on desktop/browser</span
+    ></span
   >
 </h4>
 <h1 id="h_01JT6VKRAC46AR20P1M6BV61A8">Mobile</h1>
@@ -289,15 +295,11 @@
     height="853"
   />
 </p>
-<h4 id="h_01JT6VKRACGXRB7DYY1TS4X5GT" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of where to find the </span
-  ><strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Edit Profile</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color="">
-    option on mobile</span
+<h4 class="wysiwyg-text-align-center" id="h_01JT6VKRACGXRB7DYY1TS4X5GT">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Example of where to find the </span
+    ><span data-darkreader-inline-color=""><strong>Edit Profile</strong></span
+    ><span data-darkreader-inline-color=""> option on mobile</span></span
   >
 </h4>
 <p>
@@ -312,9 +314,11 @@
       height="140"
   /></strong>
 </p>
-<h4 id="h_01JT6VKRAC8K12KB7RV0D10QYH" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Currently set Server Tag under User Profile on mobile</span
+<h4 class="wysiwyg-text-align-center" id="h_01JT6VKRAC8K12KB7RV0D10QYH">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Currently set Server Tag under User Profile on mobile</span
+    ></span
   >
 </h4>
 <h1 id="h_01JT6VKRACW2EK866RBN9Z6T2D">
@@ -352,22 +356,37 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34953637676183"
-    width="466"
-    height="383"
+    src="https://support.discord.com/hc/article_attachments/38967770304663"
+    width="464"
+    height="601"
   />
 </p>
-<h4 id="h_01K577R7QDBKQV2A7X21XAMDMS" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Server Tag badge Packs</span
+<h4 class="wysiwyg-text-align-center" id="h_01K577R7QDBKQV2A7X21XAMDMS">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Server Tag badge Packs</span></span
   >
 </h4>
 <p>
   Server Tag Badge Packs allow you to unlock additional badges for your server.
-  You can choose between the Pet Badge Pack (3 Server Boosts) and Flex Badge
-  Pack (5 Server Boosts), or purchase both. Please keep in mind that while you
-  can unlock both badge packs using Boosts, only one badge can be applied to
-  your Server Tag at a time.
+  You can choose between the following:
+</p>
+<ul>
+  <li data-list-item-id="ecab7b5621cc65699cb626e4a69d495cb">
+    Creepy Crawlies Badge Pack (2 Server Boosts)
+  </li>
+  <li data-list-item-id="ee9e811e978ba35b3b4efc9a4249591a9">
+    Pet Badge Pack (3 Server Boosts)
+  </li>
+  <li data-list-item-id="e88a1158c1ea3a39e8db2111554771e1d">
+    Plant Badge Pack (3 Server Boosts)
+  </li>
+  <li data-list-item-id="e6fdf4be821eee5e2d035c296e6f49af6">
+    Flex Badge Pack (5 Server Boosts)
+  </li>
+</ul>
+<p>
+  Please keep in mind that while you can unlock both badge packs using Boosts,
+  only one badge can be applied to your Server Tag at a time.
 </p>
 <h1 id="h_01K577R7QD8J6EKRVKB11BACMM">
   How to Purchase Server Tag Badge Packs
@@ -388,9 +407,11 @@
     height="400"
   />
 </p>
-<h4 id="h_01K577R7QD5P949PT5P2J6SZX3" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Server Boosts tab in a server</span
+<h4 class="wysiwyg-text-align-center" id="h_01K577R7QD5P949PT5P2J6SZX3">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of Server Boosts tab in a server</span
+    ></span
   >
 </h4>
 <p>
@@ -405,9 +426,11 @@
     height="400"
   />
 </p>
-<h4 id="h_01K577R7QETZS8N414Y9H5DBVN" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Available Server Boosts</span
+<h4 class="wysiwyg-text-align-center" id="h_01K577R7QETZS8N414Y9H5DBVN">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of Available Server Boosts</span
+    ></span
   >
 </h4>
 <p>
@@ -422,9 +445,9 @@
     alt="image3.gif"
   />
 </p>
-<h4 id="h_01K577R7QEN66BR3SSSBF5VEVS" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Enable Perk Server Tag</span
+<h4 class="wysiwyg-text-align-center" id="h_01K577R7QEN66BR3SSSBF5VEVS">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Enable Perk Server Tag</span></span
   >
 </h4>
 <h1 id="h_01JT6VKRACYDW17M1H41J169AW">Frequently Asked Questions</h1>
