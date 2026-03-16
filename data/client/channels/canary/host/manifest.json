@@ -1,29 +1,5 @@
 {
   "modules": {
-    "discord_desktop_core": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          857
-        ],
-        "module_version": 1,
-        "package_sha256": "813f8b2c8fb80896c34f6dda5ecae21d05ae2eaacb92bbc7012e4eaf1c941533",
-        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_desktop_core/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            856
-          ],
-          "module_version": 1,
-          "package_sha256": "75688770925736e28beb980a0add003633a90ec73388bdeaf519e90483c8f5fb",
-          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_desktop_core/1/from/1.0.856/1"
-        }
-      ]
-    },
     "discord_hook": {
       "full": {
         "host_version": [
@@ -45,6 +21,126 @@
           "module_version": 1,
           "package_sha256": "12746ba6d9a3f50211e2fb63ca7b04daf8098edbd52cf225718d4e9de8e44218",
           "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_hook/1/from/1.0.856/1"
+        }
+      ]
+    },
+    "discord_media": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          857
+        ],
+        "module_version": 1,
+        "package_sha256": "69fc6f9dbb97147192879ec83e4a2280a9b80c114d0d29e061d00a6267fc504c",
+        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_media/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            856
+          ],
+          "module_version": 1,
+          "package_sha256": "d01857694c7f3c40c394cb2addf0f3a51dbb3e3906955a2bd28ab8ee76d13605",
+          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_media/1/from/1.0.856/1"
+        }
+      ]
+    },
+    "discord_game_utils": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          857
+        ],
+        "module_version": 1,
+        "package_sha256": "72368c8af95bbe55c07c97653d887f30dd66ea3914a890ac5f7bf190c45cacfd",
+        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_game_utils/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            856
+          ],
+          "module_version": 1,
+          "package_sha256": "31f631ace99c6138ff7d1e05299ecf0bfdba0aa2c6ac24a7906196823c60f46c",
+          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_game_utils/1/from/1.0.856/1"
+        }
+      ]
+    },
+    "discord_cloudsync": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          857
+        ],
+        "module_version": 1,
+        "package_sha256": "afa8220bf24e0a105a014d17c00a10903030d1d1db7a8c9d4f3b81aee69ef6c6",
+        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_cloudsync/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            856
+          ],
+          "module_version": 1,
+          "package_sha256": "93b05736e98e77639a2fbaa081f055db8ab6caaef4fd734a09b053e6f588f815",
+          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_cloudsync/1/from/1.0.856/1"
+        }
+      ]
+    },
+    "discord_rpc": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          857
+        ],
+        "module_version": 1,
+        "package_sha256": "c48d1a1faf579851b4d09b106270facc99bae6e8360b3b6ead55f1c90fd3210b",
+        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_rpc/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            856
+          ],
+          "module_version": 1,
+          "package_sha256": "1a9004078b384187f7b665139f18f26f0d8d1cf875b54d5b1b1f36985be09768",
+          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_rpc/1/from/1.0.856/1"
+        }
+      ]
+    },
+    "discord_ml": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          857
+        ],
+        "module_version": 1,
+        "package_sha256": "dcae8390f31f04ffc7ad1594e65844716faa3a3db73cca0b9835cf93708ed777",
+        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_ml/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            856
+          ],
+          "module_version": 1,
+          "package_sha256": "b9dabdcac089baffc970fe24c6e05a08f5c15430cf5062aef76ec8837e3e10af",
+          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_ml/1/from/1.0.856/1"
         }
       ]
     },
@@ -144,123 +240,27 @@
         }
       ]
     },
-    "discord_erlpack": {
+    "discord_voice": {
       "full": {
         "host_version": [
           1,
           0,
           857
         ],
-        "module_version": 1,
-        "package_sha256": "da1a18fd48cd60f154b0859b09b3e7340141c92eee1934286a69e3080a07e2b7",
-        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_erlpack/1/full.distro"
+        "module_version": 3,
+        "package_sha256": "d71faeaf0766216ab2ee8bc351e101c357d98fb316a9d8ba00e676a131298c23",
+        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_voice/3/full.distro"
       },
       "deltas": [
         {
           "host_version": [
             1,
             0,
-            856
+            857
           ],
-          "module_version": 1,
-          "package_sha256": "dc26bcc2d4ec2f93e43d111b2b08ab537b964d0e38e47e0282848d6c0db93c04",
-          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_erlpack/1/from/1.0.856/1"
-        }
-      ]
-    },
-    "discord_overlay2": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          857
-        ],
-        "module_version": 1,
-        "package_sha256": "4bc3abb7e9dec477ca5dcdfddda2cd66752698d9c1bd3e0a28a24cdc0288ce49",
-        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_overlay2/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            856
-          ],
-          "module_version": 1,
-          "package_sha256": "d33eb83d03b1c6487d7fd969580c012197a515a0ba533d6e41500f1d9d536034",
-          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_overlay2/1/from/1.0.856/1"
-        }
-      ]
-    },
-    "discord_media": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          857
-        ],
-        "module_version": 1,
-        "package_sha256": "69fc6f9dbb97147192879ec83e4a2280a9b80c114d0d29e061d00a6267fc504c",
-        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_media/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            856
-          ],
-          "module_version": 1,
-          "package_sha256": "d01857694c7f3c40c394cb2addf0f3a51dbb3e3906955a2bd28ab8ee76d13605",
-          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_media/1/from/1.0.856/1"
-        }
-      ]
-    },
-    "discord_cloudsync": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          857
-        ],
-        "module_version": 1,
-        "package_sha256": "afa8220bf24e0a105a014d17c00a10903030d1d1db7a8c9d4f3b81aee69ef6c6",
-        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_cloudsync/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            856
-          ],
-          "module_version": 1,
-          "package_sha256": "93b05736e98e77639a2fbaa081f055db8ab6caaef4fd734a09b053e6f588f815",
-          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_cloudsync/1/from/1.0.856/1"
-        }
-      ]
-    },
-    "discord_rpc": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          857
-        ],
-        "module_version": 1,
-        "package_sha256": "c48d1a1faf579851b4d09b106270facc99bae6e8360b3b6ead55f1c90fd3210b",
-        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_rpc/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            856
-          ],
-          "module_version": 1,
-          "package_sha256": "1a9004078b384187f7b665139f18f26f0d8d1cf875b54d5b1b1f36985be09768",
-          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_rpc/1/from/1.0.856/1"
+          "module_version": 2,
+          "package_sha256": "25a289675b7939d7ebc4eba054c8c8c80381292fb472fbf9355987a2b4bc2d4c",
+          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_voice/3/from/1.0.857/2"
         }
       ]
     },
@@ -288,7 +288,7 @@
         }
       ]
     },
-    "discord_ml": {
+    "discord_erlpack": {
       "full": {
         "host_version": [
           1,
@@ -296,8 +296,8 @@
           857
         ],
         "module_version": 1,
-        "package_sha256": "dcae8390f31f04ffc7ad1594e65844716faa3a3db73cca0b9835cf93708ed777",
-        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_ml/1/full.distro"
+        "package_sha256": "da1a18fd48cd60f154b0859b09b3e7340141c92eee1934286a69e3080a07e2b7",
+        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_erlpack/1/full.distro"
       },
       "deltas": [
         {
@@ -307,12 +307,12 @@
             856
           ],
           "module_version": 1,
-          "package_sha256": "b9dabdcac089baffc970fe24c6e05a08f5c15430cf5062aef76ec8837e3e10af",
-          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_ml/1/from/1.0.856/1"
+          "package_sha256": "dc26bcc2d4ec2f93e43d111b2b08ab537b964d0e38e47e0282848d6c0db93c04",
+          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_erlpack/1/from/1.0.856/1"
         }
       ]
     },
-    "discord_dispatch": {
+    "discord_desktop_core": {
       "full": {
         "host_version": [
           1,
@@ -320,8 +320,8 @@
           857
         ],
         "module_version": 1,
-        "package_sha256": "e6ecc3214a86ba7d0b3cd9c0fca8a538c801bc5cee00ff5df49a6227fc979f87",
-        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_dispatch/1/full.distro"
+        "package_sha256": "813f8b2c8fb80896c34f6dda5ecae21d05ae2eaacb92bbc7012e4eaf1c941533",
+        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_desktop_core/1/full.distro"
       },
       "deltas": [
         {
@@ -331,12 +331,12 @@
             856
           ],
           "module_version": 1,
-          "package_sha256": "2ebc165cde6e959259db9f1898bd16720a0cd658a0599b6da2181420f72921e8",
-          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_dispatch/1/from/1.0.856/1"
+          "package_sha256": "75688770925736e28beb980a0add003633a90ec73388bdeaf519e90483c8f5fb",
+          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_desktop_core/1/from/1.0.856/1"
         }
       ]
     },
-    "discord_game_utils": {
+    "discord_overlay2": {
       "full": {
         "host_version": [
           1,
@@ -344,8 +344,8 @@
           857
         ],
         "module_version": 1,
-        "package_sha256": "72368c8af95bbe55c07c97653d887f30dd66ea3914a890ac5f7bf190c45cacfd",
-        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_game_utils/1/full.distro"
+        "package_sha256": "4bc3abb7e9dec477ca5dcdfddda2cd66752698d9c1bd3e0a28a24cdc0288ce49",
+        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_overlay2/1/full.distro"
       },
       "deltas": [
         {
@@ -355,56 +355,8 @@
             856
           ],
           "module_version": 1,
-          "package_sha256": "31f631ace99c6138ff7d1e05299ecf0bfdba0aa2c6ac24a7906196823c60f46c",
-          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_game_utils/1/from/1.0.856/1"
-        }
-      ]
-    },
-    "discord_utils": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          857
-        ],
-        "module_version": 2,
-        "package_sha256": "8bf3524779787f540958ea2140897784ce62c46fa07d689d12d0163253e5d138",
-        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_utils/2/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            857
-          ],
-          "module_version": 1,
-          "package_sha256": "6766f961441135cc343179ed9c21b81b693820e3bd1ffe1659d1a3f3348e47d8",
-          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_utils/2/from/1.0.857/1"
-        }
-      ]
-    },
-    "discord_voice": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          857
-        ],
-        "module_version": 2,
-        "package_sha256": "5206c1046a940e92782ba7e008c4df772159b819cacfc8069890548e94b12f94",
-        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_voice/2/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            857
-          ],
-          "module_version": 1,
-          "package_sha256": "b50e5c92d1abd32368e8a182f7f8a8d66d18131a87ae319c8de0ebf7a8df78b4",
-          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_voice/2/from/1.0.857/1"
+          "package_sha256": "d33eb83d03b1c6487d7fd969580c012197a515a0ba533d6e41500f1d9d536034",
+          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_overlay2/1/from/1.0.856/1"
         }
       ]
     },
@@ -432,6 +384,30 @@
         }
       ]
     },
+    "discord_utils": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          857
+        ],
+        "module_version": 2,
+        "package_sha256": "8bf3524779787f540958ea2140897784ce62c46fa07d689d12d0163253e5d138",
+        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_utils/2/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            857
+          ],
+          "module_version": 1,
+          "package_sha256": "6766f961441135cc343179ed9c21b81b693820e3bd1ffe1659d1a3f3348e47d8",
+          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_utils/2/from/1.0.857/1"
+        }
+      ]
+    },
     "discord_voice_filters": {
       "full": {
         "host_version": [
@@ -453,6 +429,30 @@
           "module_version": 1,
           "package_sha256": "ec50fbea3531049f010ad0d7426fab8ce7477bda0ef02d664cd06704f1a19cda",
           "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_voice_filters/1/from/1.0.856/1"
+        }
+      ]
+    },
+    "discord_dispatch": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          857
+        ],
+        "module_version": 1,
+        "package_sha256": "e6ecc3214a86ba7d0b3cd9c0fca8a538c801bc5cee00ff5df49a6227fc979f87",
+        "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_dispatch/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            856
+          ],
+          "module_version": 1,
+          "package_sha256": "2ebc165cde6e959259db9f1898bd16720a0cd658a0599b6da2181420f72921e8",
+          "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.857/discord_dispatch/1/from/1.0.856/1"
         }
       ]
     }
