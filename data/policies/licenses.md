@@ -36086,6 +36086,51 @@ IN THE SOFTWARE.</code></pre>
                   copied and put under another distribution licence * [including
                   the GNU Public Licence.] */</span
                 >
+                <h2 id="cisco-openh264">
+                  Cisco OpenH264<a class="hyperlink" href="#cisco-openh264"
+                    ><div name="cisco-openh264"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright © 2014 Cisco Systems, Inc.</span
+                ><span class="paragraph-3ckiht">All rights reserved.</span
+                ><span class="paragraph-3ckiht"
+                  >Redistribution and use in source and binary forms, with or
+                  without modification, are permitted provided that the
+                  following conditions are met:</span
+                >
+                <ol>
+                  <li>
+                    <span class="paragraph-3ckiht"
+                      >Redistributions of source code must retain the above
+                      copyright notice, this list of conditions and the
+                      following disclaimer.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="paragraph-3ckiht"
+                      >Redistributions in binary form must reproduce the above
+                      copyright notice, this list of conditions and the
+                      following disclaimer in the documentation and/or other
+                      materials provided with the distribution.</span
+                    >
+                  </li>
+                </ol>
+                <span class="paragraph-3ckiht"
+                  >THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+                  CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES,
+                  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+                  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+                  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+                  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+                  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+                  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+                  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+                  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+                  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+                  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+                  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span
+                >
                 <h2 id="abglyphrasterizer-v018">
                   ab_glyph_rasterizer v0.1.8<a
                     class="hyperlink"
