@@ -6419,7 +6419,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-c8e77a3ad1c29912033f70998730fb4e4093cacc",
+            release: "discord_web-66e005aa351a9a45b0b7dd4a8948cf17faf3e5f5",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6486,8 +6486,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "511823"),
-            o.NA("builtAt", String("1773697742923"));
+            o.NA("buildNumber", "511881"),
+            o.NA("builtAt", String("1773700903739"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6809,20 +6809,20 @@
               },
               APP_FRAME_BORDER: {
                 "mobile-visual-refresh": {
-                  [a.DARK]: { raw: "OPACITY_12", opacity: 0.12156862745098039 },
-                  [a.LIGHT]: { raw: "OPACITY_28", opacity: 0.2784313725490196 },
-                  [a.MIDNIGHT]: { raw: "OPACITY_20", opacity: 0.2 },
-                  [a.DARKER]: {
-                    raw: "OPACITY_12",
-                    opacity: 0.12156862745098039,
+                  [a.DARK]: { raw: "OPACITY_20", opacity: 0.2 },
+                  [a.LIGHT]: { raw: "OPACITY_36", opacity: 0.3607843137254902 },
+                  [a.MIDNIGHT]: {
+                    raw: "OPACITY_24",
+                    opacity: 0.23921568627450981,
                   },
+                  [a.DARKER]: { raw: "OPACITY_20", opacity: 0.2 },
                 },
               },
               BACKGROUND_BASE_LOW: {
                 "mobile-visual-refresh": {
                   [a.DARK]: { raw: "NEUTRAL_66", opacity: 1 },
                   [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
-                  [a.MIDNIGHT]: { raw: "NEUTRAL_95", opacity: 1 },
+                  [a.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
                   [a.DARKER]: { raw: "NEUTRAL_82", opacity: 1 },
                 },
               },
@@ -6830,7 +6830,7 @@
                 "mobile-visual-refresh": {
                   [a.DARK]: { raw: "NEUTRAL_69", opacity: 1 },
                   [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
-                  [a.MIDNIGHT]: { raw: "NEUTRAL_97", opacity: 1 },
+                  [a.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
                   [a.DARKER]: { raw: "NEUTRAL_86", opacity: 1 },
                 },
               },
@@ -7087,6 +7087,14 @@
                     opacity: 0.12156862745098039,
                   },
                   [a.DARKER]: { raw: "OPACITY_8", opacity: 0.0784313725490196 },
+                },
+              },
+              CHANNEL_BACKGROUND_DEFAULT: {
+                "mobile-visual-refresh": {
+                  [a.DARK]: { raw: "NEUTRAL_69", opacity: 1 },
+                  [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
+                  [a.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
+                  [a.DARKER]: { raw: "NEUTRAL_86", opacity: 1 },
                 },
               },
               CHANNEL_ICON: {
@@ -7861,7 +7869,7 @@
                 "mobile-visual-refresh": {
                   [a.DARK]: { raw: "NEUTRAL_66", opacity: 1 },
                   [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
-                  [a.MIDNIGHT]: { raw: "NEUTRAL_95", opacity: 1 },
+                  [a.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
                   [a.DARKER]: { raw: "NEUTRAL_82", opacity: 1 },
                 },
               },
@@ -7935,7 +7943,7 @@
                 "mobile-visual-refresh": {
                   [a.DARK]: { raw: "NEUTRAL_69", opacity: 1 },
                   [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
-                  [a.MIDNIGHT]: { raw: "NEUTRAL_97", opacity: 1 },
+                  [a.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
                   [a.DARKER]: { raw: "NEUTRAL_86", opacity: 1 },
                 },
               },
@@ -7965,10 +7973,10 @@
               },
               PANEL_BG: {
                 "mobile-visual-refresh": {
-                  [a.DARK]: { raw: "NEUTRAL_69", opacity: 1 },
-                  [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
-                  [a.MIDNIGHT]: { raw: "NEUTRAL_97", opacity: 1 },
-                  [a.DARKER]: { raw: "NEUTRAL_86", opacity: 1 },
+                  [a.DARK]: { raw: "NEUTRAL_73", opacity: 1 },
+                  [a.LIGHT]: { raw: "NEUTRAL_4", opacity: 1 },
+                  [a.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
+                  [a.DARKER]: { raw: "NEUTRAL_92", opacity: 1 },
                 },
               },
               PREMIUM_NITRO_PINK_TEXT: {
@@ -8126,7 +8134,7 @@
                 "mobile-visual-refresh": {
                   [a.DARK]: { raw: "NEUTRAL_69", opacity: 1 },
                   [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
-                  [a.MIDNIGHT]: { raw: "NEUTRAL_97", opacity: 1 },
+                  [a.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
                   [a.DARKER]: { raw: "NEUTRAL_86", opacity: 1 },
                 },
               },
@@ -8195,7 +8203,7 @@
                 "mobile-visual-refresh": {
                   [a.DARK]: { raw: "NEUTRAL_66", opacity: 1 },
                   [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
-                  [a.MIDNIGHT]: { raw: "NEUTRAL_95", opacity: 1 },
+                  [a.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
                   [a.DARKER]: { raw: "NEUTRAL_82", opacity: 1 },
                 },
               },
@@ -8435,7 +8443,7 @@
                 "mobile-visual-refresh": {
                   [a.DARK]: { raw: "NEUTRAL_66", opacity: 1 },
                   [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
-                  [a.MIDNIGHT]: { raw: "NEUTRAL_95", opacity: 1 },
+                  [a.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
                   [a.DARKER]: { raw: "NEUTRAL_82", opacity: 1 },
                 },
               },
@@ -8949,6 +8957,13 @@
                   light: { color: "WHITE_500", opacity: 0.75 },
                   dark: { color: "WHITE_500", opacity: 0.05 },
                 },
+              },
+              CHANNEL_BACKGROUND_DEFAULT: {
+                category: "generic",
+                [a.DARK]: { raw: "PRIMARY_600", opacity: 1 },
+                [a.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
+                [a.DARKER]: { raw: "PLUM_20", opacity: 1 },
               },
               CHANNEL_ICON: {
                 category: "generic",
@@ -13068,6 +13083,14 @@
                   return "row";
                 },
               },
+              MESSAGES_HEADER_PADDING_BOTTOM: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 16;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 12;
+                  return 16;
+                },
+              },
               MESSAGES_ITEM_CHANNEL_AVATAR_SIZE: {
                 resolve(e) {
                   let { enabledExperiments: t } = e;
@@ -13084,6 +13107,14 @@
                     if ("mobile-visual-refresh" === e)
                       return "text-md/semibold";
                   return "redesign/channel-title/semibold";
+                },
+              },
+              MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 8;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 16;
+                  return 8;
                 },
               },
               SEGMENTED_CONTROL_BORDER_RADIUS: {
@@ -39247,4 +39278,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.ed3ca0f5f294bfd9.js.map
+//# sourceMappingURL=sentry.2121b35c9fdcdd9a.js.map
