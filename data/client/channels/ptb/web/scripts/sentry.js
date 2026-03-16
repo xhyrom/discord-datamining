@@ -4124,6 +4124,10 @@
           (a.QUEST_APP_STORE_OVERLAY_OPEN_FAILED =
             "quest_app_store_overlay_open_failed"),
           (a.QUEST_APP_STORE_OVERLAY_CLOSED = "quest_app_store_overlay_closed"),
+          (a.QUEST_APP_STORE_OVERLAY_RETURNED =
+            "quest_app_store_overlay_returned"),
+          (a.QUEST_APP_STORE_OVERLAY_BACKGROUNDED =
+            "quest_app_store_overlay_backgrounded"),
           (a.LIBDISCORE_SLOW_TIMERS = "libdiscore_slow_timers"),
           (a.REGISTER_INPUT_FOCUS = "register_input_focus"),
           (a.REGISTER_INPUT_BLUR = "register_input_blur"),
@@ -4803,6 +4807,10 @@
             "experiment_installation_evaluation_exposed"),
           (a.EXPERIMENT_INSTALLATION_EXPOSURE_SUPPRESSED =
             "experiment_installation_exposure_suppressed"),
+          (a.EXPERIMENT_GUILD_EVALUATION_EXPOSED =
+            "experiment_guild_evaluation_exposed"),
+          (a.EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED =
+            "experiment_guild_exposure_suppressed"),
           (a.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED =
             "guild_insights_settings_cta_clicked"),
           (a.GUILD_SETTINGS_DISCOVERY_VIEWED =
@@ -5503,7 +5511,6 @@
           (a.MESSAGE_MENU_TIME_TO_SELECT = "message_menu_time_to_select"),
           (a.EVENT_RINGTONE_TOGGLED = "event_ringtone_toggled"),
           (a.USER_PROFILE_ACTION = "user_profile_action"),
-          (a.USER_PROFILE_UI_VIEWED = "user_profile_ui_viewed"),
           (a.USER_PROFILE_ACTIVITY_JOINED = "user_profile_activity_joined"),
           (a.USER_PROFILE_ACTIVITY_ACTION = "user_profile_activity_action"),
           (a.USER_PROFILE_BADGE_PRESSED = "user_profile_badge_pressed"),
@@ -6413,7 +6420,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-03-13-2fcef2abc770637abb6413c16e81aa7400c70c91-discord_web",
+              "2026-03-16-2376a8643cb5e004257413dd8d850469e2ceaab7-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6480,8 +6487,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "510733"),
-            o.NA("builtAt", String("1773386344946"));
+            o.NA("buildNumber", "511379"),
+            o.NA("builtAt", String("1773645522009"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -39241,4 +39248,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.0c7d02df18658200.js.map
+//# sourceMappingURL=sentry.da140b22e3d33927.js.map
