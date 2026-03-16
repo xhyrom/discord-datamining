@@ -23894,6 +23894,63 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .enable-forced-colors .header__8ef02 {
   border-bottom: 1px solid CanvasText;
 }
+.layout__81b99 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+.header__81b99 {
+  align-items: center;
+  background-color: var(--background-surface-high);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  flex-shrink: 0;
+  padding: var(--custom-gif-picker-gutter-size);
+}
+.kaomojiContainer__81b99 {
+  border-end-end-radius: 8px;
+  border-end-start-radius: 8px;
+  flex: 1;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 16px;
+  position: relative;
+}
+.kaomojiList__81b99 {
+  gap: 16px;
+}
+.kaomojiCategory__81b99,
+.kaomojiList__81b99 {
+  display: flex;
+  flex-direction: column;
+}
+.kaomojiCategory__81b99 {
+  gap: 8px;
+}
+.categoryLabel__81b99 {
+  margin: 0;
+}
+.kaomojiGrid__81b99 {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+}
+.kaomojiGridItem__81b99 {
+  border-radius: var(--radius-sm);
+  min-width: 0;
+}
+.emptyState__81b99 {
+  margin: 0;
+}
+.wrapper__81b99 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
 .positionLayer__08434 {
   pointer-events: none;
   z-index: 0;
@@ -29987,6 +30044,17 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .custom-user-profile-theme .banner__43147 {
   background: linear-gradient(
+    var(--profile-gradient-primary-color),
+    var(--profile-gradient-secondary-color)
+  );
+  background-size: 100% 600px;
+  border-radius: 0;
+}
+.user-profile-popout .banner__43147 {
+  margin-bottom: -8px;
+}
+.custom-user-profile-theme.user-profile-modal-v2 .banner__43147 {
+  background: linear-gradient(
     color-mix(
       in oklab,
       var(--profile-gradient-overlay-color) 65%,
@@ -29998,9 +30066,7 @@ html:not(.chat-input) .inputInner_b1f01d {
       var(--profile-gradient-primary-color)
     )
   );
-}
-.user-profile-popout .banner__43147 {
-  margin-bottom: -8px;
+  background-size: auto;
 }
 .user-profile-modal-v2 .banner__43147 {
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
@@ -30010,6 +30076,9 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .user-profile-sidebar .banner__43147 {
   border-radius: 0;
+}
+.text__43147 {
+  line-height: 2px;
 }
 .gameIcon_b52e4f {
   filter: saturate(var(--saturation-factor, 1));
@@ -30262,6 +30331,9 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .gameIcon__43a4b {
   vertical-align: bottom;
+}
+.banner__24928 {
+  padding: var(--space-12);
 }
 .container__581dd {
   align-items: center;
@@ -36784,6 +36856,9 @@ body .headerAnimation_b54a5b {
     var(--expressive-gradient-nitro-pink-start) 0,
     var(--expressive-gradient-nitro-pink-end) 100%
   );
+}
+.customGraphicContainer__3e43f {
+  flex-shrink: 0;
 }
 .offerNoticeContainer__3e43f {
   align-items: center;
@@ -52683,12 +52758,19 @@ html.disable-forced-colors * {
   --chart-categorical-8: var(--red-new-45);
   --chart-categorical-9: var(--blue-new-70);
   --chart-mono-1: var(--blurple-1);
+  --chart-mono-1-text: var(--neutral-71);
   --chart-mono-2: var(--blurple-15);
+  --chart-mono-2-text: var(--neutral-71);
   --chart-mono-3: var(--blurple-30);
+  --chart-mono-3-text: var(--neutral-71);
   --chart-mono-4: var(--blurple-45);
+  --chart-mono-4-text: var(--neutral-2);
   --chart-mono-5: var(--blurple-60);
+  --chart-mono-5-text: var(--neutral-2);
   --chart-mono-6: var(--blurple-75);
+  --chart-mono-6-text: var(--neutral-2);
   --chart-mono-7: var(--blurple-90);
+  --chart-mono-7-text: var(--neutral-2);
   --chart-negative: var(--red-new-40);
   --chart-neutral: var(--neutral-29);
   --chart-positive: var(--green-new-30);
@@ -53597,11 +53679,23 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-1-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-2: color-mix(
       in oklab,
       var(--blurple-15) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-3: color-mix(
       in oklab,
@@ -53609,11 +53703,23 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-3-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-4: color-mix(
       in oklab,
       var(--blurple-45) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-5: color-mix(
       in oklab,
@@ -53621,17 +53727,35 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-5-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-6: color-mix(
       in oklab,
       var(--blurple-75) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-6-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-7: color-mix(
       in oklab,
       var(--blurple-90) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-negative: color-mix(
       in oklab,
@@ -55017,12 +55141,19 @@ html.disable-forced-colors * {
   --chart-categorical-8: var(--red-new-45);
   --chart-categorical-9: var(--blue-new-70);
   --chart-mono-1: var(--blurple-1);
+  --chart-mono-1-text: var(--neutral-71);
   --chart-mono-2: var(--blurple-15);
+  --chart-mono-2-text: var(--neutral-71);
   --chart-mono-3: var(--blurple-30);
+  --chart-mono-3-text: var(--neutral-71);
   --chart-mono-4: var(--blurple-45);
+  --chart-mono-4-text: var(--neutral-2);
   --chart-mono-5: var(--blurple-60);
+  --chart-mono-5-text: var(--neutral-2);
   --chart-mono-6: var(--blurple-75);
+  --chart-mono-6-text: var(--neutral-2);
   --chart-mono-7: var(--blurple-90);
+  --chart-mono-7-text: var(--neutral-2);
   --chart-negative: var(--red-new-50);
   --chart-neutral: var(--neutral-29);
   --chart-positive: var(--green-new-30);
@@ -55915,11 +56046,23 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-1-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-2: color-mix(
       in oklab,
       var(--blurple-15) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-3: color-mix(
       in oklab,
@@ -55927,11 +56070,23 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-3-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-4: color-mix(
       in oklab,
       var(--blurple-45) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-5: color-mix(
       in oklab,
@@ -55939,17 +56094,35 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-5-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-6: color-mix(
       in oklab,
       var(--blurple-75) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-6-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-7: color-mix(
       in oklab,
       var(--blurple-90) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-negative: color-mix(
       in oklab,
@@ -57335,12 +57508,19 @@ html.disable-forced-colors * {
   --chart-categorical-8: var(--red-new-45);
   --chart-categorical-9: var(--blue-new-70);
   --chart-mono-1: var(--blurple-1);
+  --chart-mono-1-text: var(--neutral-71);
   --chart-mono-2: var(--blurple-15);
+  --chart-mono-2-text: var(--neutral-71);
   --chart-mono-3: var(--blurple-30);
+  --chart-mono-3-text: var(--neutral-71);
   --chart-mono-4: var(--blurple-45);
+  --chart-mono-4-text: var(--neutral-2);
   --chart-mono-5: var(--blurple-60);
+  --chart-mono-5-text: var(--neutral-2);
   --chart-mono-6: var(--blurple-75);
+  --chart-mono-6-text: var(--neutral-2);
   --chart-mono-7: var(--blurple-90);
+  --chart-mono-7-text: var(--neutral-2);
   --chart-negative: var(--red-new-50);
   --chart-neutral: var(--neutral-29);
   --chart-positive: var(--green-new-30);
@@ -58235,11 +58415,23 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-1-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-2: color-mix(
       in oklab,
       var(--blurple-15) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-3: color-mix(
       in oklab,
@@ -58247,11 +58439,23 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-3-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-4: color-mix(
       in oklab,
       var(--blurple-45) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-5: color-mix(
       in oklab,
@@ -58259,17 +58463,35 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-5-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-6: color-mix(
       in oklab,
       var(--blurple-75) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-6-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-7: color-mix(
       in oklab,
       var(--blurple-90) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-negative: color-mix(
       in oklab,
@@ -59653,12 +59875,19 @@ html.disable-forced-colors * {
   --chart-categorical-8: var(--red-new-45);
   --chart-categorical-9: var(--blue-new-70);
   --chart-mono-1: var(--blurple-1);
+  --chart-mono-1-text: var(--neutral-71);
   --chart-mono-2: var(--blurple-15);
+  --chart-mono-2-text: var(--neutral-71);
   --chart-mono-3: var(--blurple-30);
+  --chart-mono-3-text: var(--neutral-71);
   --chart-mono-4: var(--blurple-45);
+  --chart-mono-4-text: var(--neutral-2);
   --chart-mono-5: var(--blurple-60);
+  --chart-mono-5-text: var(--neutral-2);
   --chart-mono-6: var(--blurple-75);
+  --chart-mono-6-text: var(--neutral-2);
   --chart-mono-7: var(--blurple-90);
+  --chart-mono-7-text: var(--neutral-2);
   --chart-negative: var(--red-new-50);
   --chart-neutral: var(--neutral-29);
   --chart-positive: var(--green-new-30);
@@ -60567,11 +60796,23 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-1-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-2: color-mix(
       in oklab,
       var(--blurple-15) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-2-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-3: color-mix(
       in oklab,
@@ -60579,11 +60820,23 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-3-text: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-4: color-mix(
       in oklab,
       var(--blurple-45) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-4-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-5: color-mix(
       in oklab,
@@ -60591,17 +60844,35 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-5-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-6: color-mix(
       in oklab,
       var(--blurple-75) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --chart-mono-6-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --chart-mono-7: color-mix(
       in oklab,
       var(--blurple-90) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --chart-mono-7-text: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-negative: color-mix(
       in oklab,
@@ -71242,4 +71513,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.c1bea9f3cf39833f.css.map*/
+/*# sourceMappingURL=web.86388f9d09cd1aa7.css.map*/
