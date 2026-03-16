@@ -37363,6 +37363,226 @@ body .headerAnimation_b54a5b {
   margin: 25px auto auto;
   max-width: 85%;
 }
+.planOption_b13085 {
+  align-items: center;
+  color: var(--interactive-text-default);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+.planOneTimeCost_b13085 {
+  margin-top: 8px;
+}
+.selectionBox_b13085 {
+  border-radius: var(--radius-lg);
+  margin-bottom: 12px;
+  outline: 1px solid var(--border-normal);
+  padding: var(--space-12);
+}
+.selectedPlan_b13085 {
+  background-color: var(--background-surface-high);
+  outline: 2px solid var(--brand-500);
+  outline-color: var(--checkbox-border-default);
+}
+.planOptionDisabled_b13085 {
+  opacity: 0.6;
+}
+.planOptionClickable_b13085 {
+  align-items: center;
+  display: flex;
+}
+.planOptionDisabled_b13085 .planOptionClickable_b13085 {
+  cursor: not-allowed;
+}
+.planOptionCheckbox_b13085 {
+  margin-inline-end: 10px;
+}
+.planOptionInterval_b13085 {
+  color: var(--interactive-text-default);
+  font-weight: var(--font-weight-medium);
+}
+.optionSelected_b13085 {
+  color: var(--interactive-text-active);
+}
+.planOptionCurrentPlan_b13085,
+.planOptionMonthsFree_b13085 {
+  margin-inline-start: 4px;
+}
+.planOptionDiscount_b13085 {
+  border-radius: 16px;
+  margin-inline-start: 8px;
+  padding: 2px 8px;
+}
+.annualPlanOptionDiscount_b13085,
+.planOptionDiscount_b13085 {
+  background-color: var(--green-360);
+  font-weight: var(--font-weight-semibold);
+}
+.annualPlanOptionDiscount_b13085 {
+  align-content: center;
+  border-radius: 8px;
+  margin-top: 3px;
+  margin-inline-end: 8px;
+  padding: 0 6px;
+  position: relative;
+}
+.planOptionSubtextContainer_b13085 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.planOptionSubtext_b13085 {
+  max-width: 176px;
+  padding-bottom: 12px;
+}
+.planWithOfferOptionSubtext_b13085 {
+  max-width: 300px;
+  text-align: end;
+}
+.planWithOfferOptionSubtext_b13085 p {
+  margin: 0;
+}
+.planOptionClickableContainer_b13085 {
+  cursor: pointer;
+}
+.optionPriceSelected_b13085,
+.updatedOptionSelected_b13085 {
+  font-weight: var(--font-weight-semibold);
+}
+.optionPriceSelected_b13085 {
+  color: var(--interactive-text-active);
+}
+.giftRecipientInfo__57118 {
+  align-items: center;
+  display: flex;
+}
+.giftRecipientInfo__57118 > * {
+  margin-inline-end: 8px;
+}
+.content__57118 {
+  margin: 24px 0;
+}
+.giftRecipientName__57118,
+.giftRecipientTag__57118 {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.giftRecipientTag__57118 {
+  color: GrayText;
+}
+.stepBody_d947e6 {
+  padding-top: 12px;
+}
+.giftOptions_d947e6 {
+  justify-content: center;
+  max-width: 75%;
+}
+.stepBodyCustomGift_d947e6 {
+  display: flex;
+  flex-direction: row;
+}
+.bodyColumnMiddle_d947e6 {
+  margin-inline-end: 30px;
+}
+.bodyColumnMiddleCentered_d947e6 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-inline-end: 30px;
+}
+.bodyColumnRight_d947e6 {
+  margin-inline-end: 10px;
+}
+.stepBodyCustomGift_d947e6 > * {
+  width: 50%;
+}
+.bodyText_d947e6 {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.bodyText_d947e6,
+.interactiveColor_d947e6 {
+  color: var(--interactive-text-default);
+}
+.clickable_d947e6 {
+  cursor: pointer;
+}
+.selectPlanDivider_d947e6 {
+  background-color: var(--border-subtle);
+  height: 1px;
+  margin: 8px 0 16px;
+}
+.giftRecipientName_d947e6 {
+  color: GrayText;
+}
+.giftRecipientInfo_d947e6 {
+  align-items: center;
+  display: flex;
+}
+.giftRecipientInfo_d947e6 > * {
+  margin-inline-end: 8px;
+}
+.giftNitroInfo_d947e6 {
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.giftNitroInfo_d947e6 hr {
+  background-color: var(--border-subtle);
+  border: none;
+  height: 1px;
+}
+.selectPlanChooseSubtitle_d947e6,
+.selectPlanChooseTitle_d947e6 {
+  color: var(--interactive-text-active);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.selectPlanChooseTitle_d947e6 {
+  font-weight: var(--font-weight-semibold);
+}
+.selectPlanChooseSubtitle_d947e6 {
+  margin-bottom: 18px;
+}
+.selectPlanTotalRow_d947e6 {
+  margin-top: 8px;
+}
+.seasonalGiftBoxHeaderIcon_d947e6 {
+  align-self: center;
+  position: absolute;
+  top: -131px;
+  width: 260px;
+}
+.planSelectSeparator_d947e6 {
+  background: var(--border-subtle);
+  border: 0;
+  height: 1px;
+  margin: 0 0 4px;
+  width: 100%;
+}
+.trialPlanSelectHeader_d947e6 {
+  padding-bottom: 12px;
+}
+.legacyPricingNotice_d947e6 {
+  margin-bottom: 16px;
+}
+.customGiftMessageWrapper_d947e6 {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.customGiftMessage_d947e6.customGiftMessage_d947e6 {
+  background-color: var(--background-base-lowest);
+}
+.compactSendGiftToUser_d947e6 {
+  margin: 16px 0;
+}
+.compactSelectGiftTitle_d947e6 {
+  margin-top: 16px;
+}
 .trigger_e6ce07 {
   all: unset;
 }
@@ -37703,226 +37923,6 @@ body .headerAnimation_b54a5b {
   flex-shrink: 0;
   height: 18px;
   width: auto;
-}
-.planOption_b13085 {
-  align-items: center;
-  color: var(--interactive-text-default);
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 0;
-}
-.planOneTimeCost_b13085 {
-  margin-top: 8px;
-}
-.selectionBox_b13085 {
-  border-radius: var(--radius-lg);
-  margin-bottom: 12px;
-  outline: 1px solid var(--border-normal);
-  padding: var(--space-12);
-}
-.selectedPlan_b13085 {
-  background-color: var(--background-surface-high);
-  outline: 2px solid var(--brand-500);
-  outline-color: var(--checkbox-border-default);
-}
-.planOptionDisabled_b13085 {
-  opacity: 0.6;
-}
-.planOptionClickable_b13085 {
-  align-items: center;
-  display: flex;
-}
-.planOptionDisabled_b13085 .planOptionClickable_b13085 {
-  cursor: not-allowed;
-}
-.planOptionCheckbox_b13085 {
-  margin-inline-end: 10px;
-}
-.planOptionInterval_b13085 {
-  color: var(--interactive-text-default);
-  font-weight: var(--font-weight-medium);
-}
-.optionSelected_b13085 {
-  color: var(--interactive-text-active);
-}
-.planOptionCurrentPlan_b13085,
-.planOptionMonthsFree_b13085 {
-  margin-inline-start: 4px;
-}
-.planOptionDiscount_b13085 {
-  border-radius: 16px;
-  margin-inline-start: 8px;
-  padding: 2px 8px;
-}
-.annualPlanOptionDiscount_b13085,
-.planOptionDiscount_b13085 {
-  background-color: var(--green-360);
-  font-weight: var(--font-weight-semibold);
-}
-.annualPlanOptionDiscount_b13085 {
-  align-content: center;
-  border-radius: 8px;
-  margin-top: 3px;
-  margin-inline-end: 8px;
-  padding: 0 6px;
-  position: relative;
-}
-.planOptionSubtextContainer_b13085 {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-.planOptionSubtext_b13085 {
-  max-width: 176px;
-  padding-bottom: 12px;
-}
-.planWithOfferOptionSubtext_b13085 {
-  max-width: 300px;
-  text-align: end;
-}
-.planWithOfferOptionSubtext_b13085 p {
-  margin: 0;
-}
-.planOptionClickableContainer_b13085 {
-  cursor: pointer;
-}
-.optionPriceSelected_b13085,
-.updatedOptionSelected_b13085 {
-  font-weight: var(--font-weight-semibold);
-}
-.optionPriceSelected_b13085 {
-  color: var(--interactive-text-active);
-}
-.giftRecipientInfo__57118 {
-  align-items: center;
-  display: flex;
-}
-.giftRecipientInfo__57118 > * {
-  margin-inline-end: 8px;
-}
-.content__57118 {
-  margin: 24px 0;
-}
-.giftRecipientName__57118,
-.giftRecipientTag__57118 {
-  max-width: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.giftRecipientTag__57118 {
-  color: GrayText;
-}
-.stepBody_d947e6 {
-  padding-top: 12px;
-}
-.giftOptions_d947e6 {
-  justify-content: center;
-  max-width: 75%;
-}
-.stepBodyCustomGift_d947e6 {
-  display: flex;
-  flex-direction: row;
-}
-.bodyColumnMiddle_d947e6 {
-  margin-inline-end: 30px;
-}
-.bodyColumnMiddleCentered_d947e6 {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-inline-end: 30px;
-}
-.bodyColumnRight_d947e6 {
-  margin-inline-end: 10px;
-}
-.stepBodyCustomGift_d947e6 > * {
-  width: 50%;
-}
-.bodyText_d947e6 {
-  font-size: 16px;
-  font-weight: var(--font-weight-medium);
-  line-height: 20px;
-  margin-bottom: 16px;
-}
-.bodyText_d947e6,
-.interactiveColor_d947e6 {
-  color: var(--interactive-text-default);
-}
-.clickable_d947e6 {
-  cursor: pointer;
-}
-.selectPlanDivider_d947e6 {
-  background-color: var(--border-subtle);
-  height: 1px;
-  margin: 8px 0 16px;
-}
-.giftRecipientName_d947e6 {
-  color: GrayText;
-}
-.giftRecipientInfo_d947e6 {
-  align-items: center;
-  display: flex;
-}
-.giftRecipientInfo_d947e6 > * {
-  margin-inline-end: 8px;
-}
-.giftNitroInfo_d947e6 {
-  margin-bottom: 20px;
-  margin-top: 15px;
-}
-.giftNitroInfo_d947e6 hr {
-  background-color: var(--border-subtle);
-  border: none;
-  height: 1px;
-}
-.selectPlanChooseSubtitle_d947e6,
-.selectPlanChooseTitle_d947e6 {
-  color: var(--interactive-text-active);
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 8px;
-}
-.selectPlanChooseTitle_d947e6 {
-  font-weight: var(--font-weight-semibold);
-}
-.selectPlanChooseSubtitle_d947e6 {
-  margin-bottom: 18px;
-}
-.selectPlanTotalRow_d947e6 {
-  margin-top: 8px;
-}
-.seasonalGiftBoxHeaderIcon_d947e6 {
-  align-self: center;
-  position: absolute;
-  top: -131px;
-  width: 260px;
-}
-.planSelectSeparator_d947e6 {
-  background: var(--border-subtle);
-  border: 0;
-  height: 1px;
-  margin: 0 0 4px;
-  width: 100%;
-}
-.trialPlanSelectHeader_d947e6 {
-  padding-bottom: 12px;
-}
-.legacyPricingNotice_d947e6 {
-  margin-bottom: 16px;
-}
-.customGiftMessageWrapper_d947e6 {
-  margin-bottom: 16px;
-  margin-top: 16px;
-}
-.customGiftMessage_d947e6.customGiftMessage_d947e6 {
-  background-color: var(--background-base-lowest);
-}
-.compactSendGiftToUser_d947e6 {
-  margin: 16px 0;
-}
-.compactSelectGiftTitle_d947e6 {
-  margin-top: 16px;
 }
 .currencyWrapper_b41cc5,
 .previewTotalSectionContainer_b41cc5 {
@@ -71513,4 +71513,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.86388f9d09cd1aa7.css.map*/
+/*# sourceMappingURL=web.446957c3dcec0276.css.map*/
