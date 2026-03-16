@@ -6163,6 +6163,18 @@
           (a.PARENTAL_CONSENT_CHECKED = "parental_consent_checked"),
           (a.SEO_PAGE_CWV_MEASURED = "seo_page_cwv_measured"),
           (a.UI_SETTING_INTERACTED = "ui_setting_interacted"),
+          (a.FAVORITES_GUILD_VIEWED = "favorites_guild_viewed"),
+          (a.FAVORITES_GUILD_ADD_TO_FAVORITES =
+            "favorites_guild_add_to_favorites"),
+          (a.FAVORITES_GUILD_REMOVE_FROM_FAVORITES =
+            "favorites_guild_remove_from_favorites"),
+          (a.FAVORITES_GUILD_ORDER_UPDATED = "favorites_guild_order_updated"),
+          (a.FAVORITES_GUILD_SETTING_TOGGLED =
+            "favorites_guild_setting_toggled"),
+          (a.FAVORITES_GUILD_UPSELL_MODAL_OPENED =
+            "favorites_guild_upsell_modal_opened"),
+          (a.FAVORITES_GUILD_ADD_MODAL_OPENED =
+            "favorites_guild_add_modal_opened"),
           a);
         Object.freeze({
           EMBEDDED_RELEASED: n.jB(1),
@@ -6419,7 +6431,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-66e005aa351a9a45b0b7dd4a8948cf17faf3e5f5",
+            release: "discord_web-db4d8d06e8d818c5785910367415b86a154f46f1",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6486,8 +6498,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "511881"),
-            o.NA("builtAt", String("1773700903739"));
+            o.NA("buildNumber", "511917"),
+            o.NA("builtAt", String("1773702638888"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -39278,4 +39290,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.2121b35c9fdcdd9a.js.map
+//# sourceMappingURL=sentry.b91160f46c138fbb.js.map
