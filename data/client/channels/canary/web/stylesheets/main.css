@@ -31293,6 +31293,18 @@ html:not(.chat-input) .inputInner_b1f01d {
   position: absolute;
   width: 96%;
 }
+.staticPreview__6d099 {
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: auto;
+}
+.full-motion .staticPreview__6d099 {
+  transition: transform 0.25s ease;
+}
+.staticPreviewHighlighted__6d099 {
+  transform: scale(0.85);
+}
 .theme-dark .avatar__6d099 {
   background: #0c0e0e;
 }
@@ -38321,6 +38333,12 @@ body .headerAnimation_b54a5b {
 }
 .externalProductAsset__0b5ea {
   height: 42px;
+}
+.bundleMiniStaticPreview__0b5ea {
+  height: 52px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 52px;
 }
 .bundleMiniPreview__0b5ea {
   align-items: center;
@@ -71565,4 +71583,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.95fbe6587961a16f.css.map*/
+/*# sourceMappingURL=web.bcb77c9448c883f4.css.map*/
