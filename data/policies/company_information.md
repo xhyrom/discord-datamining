@@ -1385,6 +1385,7 @@
                   >
                 </li>
               </ul>
+              <div class="nav-sider"></div>
               <div class="nav_burger_bottom">
                 <a
                   href="https://discord.com/app"
