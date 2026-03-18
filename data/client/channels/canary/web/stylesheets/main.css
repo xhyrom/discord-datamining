@@ -29901,16 +29901,26 @@ html:not(.chat-input) .inputInner_b1f01d {
   width: 100%;
 }
 .friendRequestToast__5be3e {
-  align-items: center;
   background-color: var(--background-surface-highest);
   border: 1px solid var(--border-normal);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-medium);
-  display: flex;
   flex-direction: row;
   gap: 8px;
-  justify-content: center;
   padding: 12px;
+}
+.friendRequestToast__5be3e,
+.xIcon__5be3e {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.xIcon__5be3e {
+  background-color: var(--background-code-deletion);
+  border-radius: 8px;
+  flex-shrink: 0;
+  height: 36px;
+  width: 36px;
 }
 .container__10737 {
   background-color: var(--background-mod-normal);
@@ -71886,4 +71896,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.d1826c88f23591c1.css.map*/
+/*# sourceMappingURL=web.7443863f207ca206.css.map*/
