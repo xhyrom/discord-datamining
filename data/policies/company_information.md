@@ -680,27 +680,44 @@
                           <a
                             href="https://discord.com/developers"
                             class="dd_nav-link w-inline-block"
-                            ><div>Discord for Game Developers</div></a
+                            ><div>
+                              Discord for Game Developers
+                              <span class="sr-only">1 of 10</span>
+                            </div></a
                           ><a
                             href="https://discord.com/developers/social-sdk"
                             class="dd_nav-link w-inline-block"
-                            ><div>Integration</div></a
+                            ><div>
+                              Integration <span class="sr-only">2 of 10</span>
+                            </div></a
                           ><a
                             href="https://discord.com/developers/social-commerce"
                             class="dd_nav-link w-inline-block"
-                            ><div>Social Commerce</div></a
+                            ><div>
+                              Social Commerce
+                              <span class="sr-only">3 of 10</span>
+                            </div></a
                           ><a
                             href="https://discord.com/developers/build"
                             class="dd_nav-link w-inline-block"
-                            ><div>Apps &amp;&nbsp;Activities</div></a
+                            ><div>
+                              Apps &amp;&nbsp;Activities
+                              <span class="sr-only">4 of 10</span>
+                            </div></a
                           ><a
                             href="https://discord.com/developers/developer-newsletter"
                             class="dd_nav-link w-inline-block"
-                            ><div>Developer Newsletter</div></a
+                            ><div>
+                              Developer Newsletter
+                              <span class="sr-only">5 of 10</span>
+                            </div></a
                           ><a
                             href="https://discord.com/developers/success-stories"
                             class="dd_nav-link w-inline-block"
-                            ><div>Developer Case Studies</div></a
+                            ><div>
+                              Developer Case Studies
+                              <span class="sr-only">6 of 10</span>
+                            </div></a
                           >
                         </div>
                         <div class="nav_dd_link_line is-n"></div>
@@ -709,7 +726,10 @@
                           <a
                             href="https://discord.com/community"
                             class="dd_nav-link w-inline-block"
-                            ><div>Official Game Communities</div>
+                            ><div>
+                              Official Game Communities
+                              <span class="sr-only">7 of 10</span>
+                            </div>
                             <div class="nav_dd_link_arrow w-embed">
                               <svg
                                 width="16"
@@ -730,7 +750,10 @@
                           ><a
                             href="https://discord.com/developers/home"
                             class="dd_nav-link w-inline-block"
-                            ><div>Developer Portal</div>
+                            ><div>
+                              Developer Portal
+                              <span class="sr-only">8 of 10</span>
+                            </div>
                             <div class="nav_dd_link_arrow w-embed">
                               <svg
                                 width="16"
@@ -751,7 +774,9 @@
                           ><a
                             href="https://discord.com/developers/docs/intro"
                             class="dd_nav-link w-inline-block"
-                            ><div>Documentation</div>
+                            ><div>
+                              Documentation <span class="sr-only">9 of 10</span>
+                            </div>
                             <div class="nav_dd_link_arrow w-embed">
                               <svg
                                 width="16"
@@ -772,7 +797,10 @@
                           ><a
                             href="https://support-dev.discord.com/hc/en-us"
                             class="dd_nav-link w-inline-block"
-                            ><div>Developer Help Center</div>
+                            ><div>
+                              Developer Help Center
+                              <span class="sr-only">10 of 10</span>
+                            </div>
                             <div class="nav_dd_link_arrow w-embed">
                               <svg
                                 width="16"
