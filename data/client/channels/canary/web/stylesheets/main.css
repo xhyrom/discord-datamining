@@ -19472,8 +19472,11 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   min-height: var(--space-32);
   padding: 12px;
 }
-.expressiveGradient__0b69f.radialMask__0b69f {
+.theme-dark .expressiveGradient__0b69f {
   background: radial-gradient(100% 100% at 50% 100%, #000 60%);
+}
+.theme-light .expressiveGradient__0b69f:before {
+  opacity: 0.2;
 }
 .expressiveGradient__0b69f.hasPreviewSound__0b69f {
   padding: 8px 12px;
@@ -19511,7 +19514,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .legacyUpsellButton__0b69f {
   background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
   background-clip: padding-box;
-  border-radius: 3px;
+  border-radius: 4px;
   flex-shrink: 0;
   height: 2lh;
   margin-inline-start: auto;
@@ -71901,4 +71904,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.b6cf8e43447e9e82.css.map*/
+/*# sourceMappingURL=web.b9da8c6e30300bc9.css.map*/
