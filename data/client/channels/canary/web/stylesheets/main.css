@@ -31675,6 +31675,11 @@ html:not(.chat-input) .inputInner_b1f01d {
   background: var(--control-overlay-secondary-background-active);
   transition: background-color 0.15s ease-out;
 }
+.xs__979b1 {
+  border-radius: 6px;
+  height: 24px;
+  width: 24px;
+}
 .sm__979b1 {
   height: 32px;
   width: 32px;
@@ -71896,4 +71901,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.7443863f207ca206.css.map*/
+/*# sourceMappingURL=web.e61cd6369e251c33.css.map*/
