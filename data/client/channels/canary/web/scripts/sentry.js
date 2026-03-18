@@ -6436,7 +6436,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-0550f9398a022ddb02def6c932429036db5d85ad",
+            release: "discord_web-bbbe3017ccd81989a9d4e01f6419d4eeeb930ac2",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6503,8 +6503,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "512796"),
-            o.NA("builtAt", String("1773851725721"));
+            o.NA("buildNumber", "512846"),
+            o.NA("builtAt", String("1773855486844"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -8981,6 +8981,10 @@
                 [a.LIGHT]: { raw: "WHITE", opacity: 1 },
                 [a.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
                 [a.DARKER]: { raw: "PLUM_20", opacity: 1 },
+                gradient: {
+                  light: { color: "WHITE_500", opacity: 0.8 },
+                  dark: { color: "BLACK_500", opacity: 0.7 },
+                },
               },
               CHANNEL_ICON: {
                 category: "generic",
@@ -10066,8 +10070,8 @@
                 [a.MIDNIGHT]: { raw: "PLUM_23", opacity: 1 },
                 [a.DARKER]: { raw: "PLUM_18", opacity: 1 },
                 gradient: {
-                  light: { color: "gradient.mid", lightness: 0.9 },
-                  dark: { color: "gradient.mid", lightness: 0.1 },
+                  light: { color: "BLACK_500", opacity: 0.1 },
+                  dark: { color: "WHITE_500", opacity: 0.1 },
                 },
               },
               MOBILE_GUILDBAR_ICON_DEFAULT: {
@@ -39345,4 +39349,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.a638eb87363ed440.js.map
+//# sourceMappingURL=sentry.b05bbf593ed37193.js.map
