@@ -12953,6 +12953,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   justify-content: center;
   position: relative;
 }
+.extraGameItem__4e338.clickable__4e338 {
+  cursor: pointer;
+}
 .extraGameIconImage__4e338 {
   position: absolute;
   z-index: 1;
@@ -12992,6 +12995,27 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   align-items: center;
   display: flex;
   gap: 8px;
+}
+.gameCoverArt__4e338 {
+  flex-shrink: 0;
+  height: 76px;
+  position: relative;
+  width: 56px;
+}
+.gameCoverArtImage__4e338 {
+  border: 1px solid var(--border-muted);
+  border-radius: 4px;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.gameCoverArtActivityLevelInner__4e338 {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
 }
 @value traitMaxWidth: 268px;
 .container_a2b4d3 {
@@ -70031,6 +70055,10 @@ html.disable-forced-colors * {
   --shadow-low-hover-filter: drop-shadow(0 4px 10px hsl(none 0% 0%/0.14));
   --shadow-medium: 0 4px 8px 0 hsl(none 0% 0%/0.16);
   --shadow-medium-filter: drop-shadow(0 4px 8px hsl(none 0% 0%/0.16));
+  --shadow-mobile-chatinput: 0 -1px 4px 0 rgba(26, 26, 30, 0.5);
+  --shadow-mobile-chatinput-filter: drop-shadow(
+    0 -1px 4px rgba(26, 26, 30, 0.5)
+  );
   --shadow-mobile-navigator-x: 0 0 10px 0 hsl(none 0% 0%/0.22);
   --shadow-mobile-navigator-x-filter: drop-shadow(
     0 0 10px hsl(none 0% 0%/0.22)
@@ -70061,6 +70089,10 @@ html.disable-forced-colors * {
   --shadow-low-hover-filter: drop-shadow(0 4px 8px hsl(none 0% 0%/0.08));
   --shadow-medium: 0 4px 8px 0 hsl(none 0% 0%/0.08);
   --shadow-medium-filter: drop-shadow(0 4px 8px hsl(none 0% 0%/0.08));
+  --shadow-mobile-chatinput: 0 -1px 4px 0 rgba(26, 26, 30, 0.5);
+  --shadow-mobile-chatinput-filter: drop-shadow(
+    0 -1px 4px rgba(26, 26, 30, 0.5)
+  );
   --shadow-mobile-navigator-x: 0 0 9px 0 hsl(none 0% 0%/0.13);
   --shadow-mobile-navigator-x-filter: drop-shadow(0 0 9px hsl(none 0% 0%/0.13));
   --shadow-top-high: 0 -12px 36px 0 hsl(none 0% 0%/0.12);
@@ -70090,6 +70122,10 @@ html.disable-forced-colors * {
   --shadow-low-hover-filter: drop-shadow(0 4px 10px hsl(none 0% 0%/0.14));
   --shadow-medium: 0 4px 8px 0 hsl(none 0% 0%/0.16);
   --shadow-medium-filter: drop-shadow(0 4px 8px hsl(none 0% 0%/0.16));
+  --shadow-mobile-chatinput: 0 -1px 4px 0 rgba(26, 26, 30, 0.5);
+  --shadow-mobile-chatinput-filter: drop-shadow(
+    0 -1px 4px rgba(26, 26, 30, 0.5)
+  );
   --shadow-mobile-navigator-x: 0 0 10px 0 hsl(none 0% 0%/0.22);
   --shadow-mobile-navigator-x-filter: drop-shadow(
     0 0 10px hsl(none 0% 0%/0.22)
@@ -70794,7 +70830,7 @@ html.disable-forced-colors * {
   --mobile-channel-name-channel-border-width: 0px;
   --mobile-channel-name-channel-icon-radius: 8px;
   --mobile-chat-input-action-button-margin: 0px;
-  --mobile-chat-input-action-button-size: 44px;
+  --mobile-chat-input-action-button-size: 32px;
   --mobile-chat-input-border-radius: 8px;
   --mobile-chat-input-expression-offset-left: 12px;
   --mobile-chat-input-expression-offset-top: 10px;
@@ -71850,4 +71886,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.be8e243c1701ffe6.css.map*/
+/*# sourceMappingURL=web.6ad48b00932a6bbf.css.map*/
