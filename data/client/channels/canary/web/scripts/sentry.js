@@ -3331,10 +3331,8 @@
             `/applications/storefront/interactions/premium-button/${e}`,
           STOREFRONT_COLLECTION_WITH_PRODUCTS: (e) =>
             `/storefront/collections/${e}`,
-          STOREFRONT_PRODUCT_WITH_SKUS: (e) => `/storefront/products/${e}`,
           STOREFRONT_PRODUCT_BY_SKU_ID: (e) => `/storefront/products/sku/${e}`,
           STOREFRONT_PRODUCTS_BY_SKU_IDS: "/storefront/products/skus",
-          STOREFRONT_SKU_PRICES: "/storefront/skus/prices",
           STORE_DIRECTORY_LAYOUT: (e) => `/store/directory-layouts/${e}`,
           STORE_DIRECTORY: (e) => `/store/directory/${e}`,
           STORE_EMAIL_RESEND_PAYMENT_VERIFICATION:
@@ -6449,7 +6447,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-3bc92595aceacf5e0b9b70bbcfe39c1817da2a52",
+            release: "discord_web-7e309673e5a28a0e7163089702444ae4d898187e",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6516,8 +6514,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "514427"),
-            o.NA("builtAt", String("1774036527687"));
+            o.NA("buildNumber", "514467"),
+            o.NA("builtAt", String("1774038679908"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -39485,4 +39483,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.4ebdcbc74baaee6d.js.map
+//# sourceMappingURL=sentry.d53fdd384f6af04c.js.map

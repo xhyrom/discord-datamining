@@ -7730,10 +7730,18 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   width: var(--custom-emoji-size-jumbo-emoji);
 }
 .overflow_b0dfc2 {
-  overflow: hidden;
-  position: relative;
+  min-width: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.lineClamp2Plus_b0dfc2,
+.overflow_b0dfc2 {
+  overflow: hidden;
+  position: relative;
+}
+.lineClamp2Plus_b0dfc2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 .svg__2338f {
   contain: paint;
@@ -71907,4 +71915,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.34827d1d27d2cb1c.css.map*/
+/*# sourceMappingURL=web.4081f9d11de233dc.css.map*/
