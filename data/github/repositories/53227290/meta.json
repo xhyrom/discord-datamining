@@ -47,7 +47,8 @@
   "has_pull_requests": true,
   "pull_request_creation_policy": "all",
   "topics": [
-    "bot"
+    "bot",
+    "samples"
   ],
   "visibility": "public",
   "default_branch": "main",
