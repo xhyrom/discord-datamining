@@ -65,6 +65,17 @@
 <h1 id="h_01KBDWQWVNTGEWQMS07RVN8HNT">
   How to Purchase Items in the Marvel Rivals Shop
 </h1>
+<div class="warn-box">
+  <strong>Important:</strong> We’re currently running an experiment to a limited
+  number of users, where you can get Discord Orbs when you purchase or gift an
+  in-game item from the Marvel Rivals Shop as displayed on the item card. If you
+  purchase or gift an eligible item, you’ll receive the Orbs once it has been
+  successfully claimed in-game.<br /><br />Learn more about Orbs and where you
+  can spend them in
+  <a href="https://support.discord.com/hc/en-us/articles/30593690165783"
+    >this Help Center article</a
+  >.
+</div>
 <div class="info-box">
   <strong>Note:</strong> The items available in the shop will refresh
   periodically, so check back periodically to see what's new.
@@ -183,9 +194,6 @@
   Rivals in-game item purchase: 
 </p>
 <ul>
-  <li data-list-item-id="e63a37379b7f175976a0813668fa59352">
-    If the in-game item is already owned by the user within Marvel Rivals 
-  </li>
   <li data-list-item-id="e8f6874083ed5a473930fb633676b23f9">
     If the user is unable to claim the in-game item on their PC or Xbox
   </li>
@@ -193,13 +201,6 @@
 <p>
   In these instances, if the user attempts to claim the item within the 14-day
   claim period, Discord will attempt to automatically process a refund. 
-</p>
-<p>
-  <strong>Q: Are Marvel Rivals Shop items available in all regions?</strong>
-</p>
-<p>
-  A: The Marvel Rivals Shop items are available in the United States, Canada,
-  UK, Ireland, and Oceania.
 </p>
 <p><strong>Q: What currency does the Marvel Rivals Shop support?</strong></p>
 <p>
@@ -235,16 +236,14 @@
 </p>
 <p>
   <strong
-    >Q: What happens if I purchase or receive a gift of an item I already own in
-    the game?</strong
+    >Q: What happens if I receive a gift of an item I already own in the
+    game?</strong
   >
 </p>
 <p>
-  A: Where a user purchases an item that they already own in Rivals, we will
-  issue a refund for duplicate items that can’t be claimed in-game. If you
-  attempt to claim a gifted item that you already own in-game, the gift sender
-  will be refunded. Note that purchasers and gift receivers must attempt to
-  claim items within 14 days to ensure Discord can issue any eligible refunds. 
+  A: If you attempt to claim a gifted item that you already own in-game, the
+  gift sender will be refunded. Note that gift receivers must attempt to claim
+  items within 14 days to ensure Discord can issue any eligible refunds.
 </p>
 <p>
   <strong
@@ -259,3 +258,25 @@
   <strong>Billing</strong> <strong>&gt;</strong> navigate to the item you
   purchased <strong>&gt;</strong> <strong>Connect Account</strong>.
 </p>
+<p>
+  <strong
+    >Q: Why does an item show as Item Unavailable when trying to make a
+    purchase?</strong
+  >
+</p>
+<p>
+  A: If you see <strong>Item Unavailable </strong>under a purchase, it means
+  you’re unable to purchase the item as you already own it or your Marvel Rivals
+  account that is linked is on an unsupported platform. If an item is already
+  owned by you, you’ll only be able to purchase it as a gift for someone else.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/38610210039063"
+    width="522"
+    height="271"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KJ8B7P7Y8NJR8Q49V1F9FSBX">
+  <strong>Item Unavailable</strong> for a shop item
+</h4>

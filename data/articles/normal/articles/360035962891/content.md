@@ -1,10 +1,12 @@
 <div class="info-box">
-  <strong>Note</strong>: Profile badges are non-transferable and cannot be moved
-  to another account.
+  <strong>Important</strong>: Profile badges are non-transferable and cannot be
+  moved to another account.
 </div>
 <p>
   Have you ever wondered how to get one of those little icons you see on your
-  friend’s profile?
+  friend’s profile? Those little icons are also known as profile badges! Below
+  you’ll find the lowdown on every profile badge you’ll see. Some are easily
+  obtainable, while some have a few more requirements.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -17,79 +19,89 @@
   you’ll find the lowdown on every profile badge you’ll see. Some are easily
   obtainable, while some have a few more requirements.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul>
-  <li data-list-item-id="e17eb134b8773f103b9af4d6e4174016f">
-    <a href="#h_01GM67J1C84KT7YPDK0GP3M2PC" target="_self"
-      >Common Profile Badges</a
+<div class="toc-box">
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
     >
-    <ul>
-      <li data-list-item-id="e28bf83c4c26f7798bd2fe9f541e933e3">
-        <a href="#h_01GM67J796MR95BNQZJRWZ7M34" target="_self"
-          >Discord Nitro Badge</a
-        >
-      </li>
-      <li data-list-item-id="e9953e42857f6fcf4021bb1e5c4c064bd">
-        <a href="#h_01GM67JCR4414HZK1NBA6TH0GA" target="_self"
-          >Server Booster Badge</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li data-list-item-id="e16ebb52789a4b12d7b41c060567052e0">
-    <a href="#h_01GM67JVQ0MCMWA9MFD9FVF9F6" target="_self">Rare Badges</a>
-    <ul>
-      <li data-list-item-id="e2e0ef4b23ee6850168e0a2af94972fc0">
-        <a href="#h_01GM67KDR7R5H2J7E6R2KMBKMG" target="_self"
-          >Bug Hunter Badge</a
-        >
-      </li>
-      <li data-list-item-id="e35ef8f83f3b67e348f198ba4e8f36d66">
-        <a href="#01HWDTKCYQ51461S8YEZ2XJFBN">Discord Quests Badge</a>
-      </li>
-    </ul>
-  </li>
-  <li data-list-item-id="e80c9f8644c19257e4da674c1f99f134c">
-    <a href="#h_01GM67MDR37JXG1VQWPGH60N59" target="_self">Mythic Badge</a>
-    <ul>
-      <li data-list-item-id="e599156dae0f14e93dd95fe51f93a415b">
-        <a href="#h_01GM67MNYEVR6445C38JC4V3DS" target="_self"
-          >Discord Staff Badge</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li data-list-item-id="e92296664afa47cd1b6cc6ad09b827b1d">
-    <a href="#h_01GM67MVZKEMD2HPM30YEQ7SER" target="_self">Legacy Badges</a>
-    <ul>
-      <li data-list-item-id="e35923610d909b9044351327a62243aca">
-        <a href="#h_01GM67K5EJ16ZHYZQ5MPRW3JT3">HypeSquad Events Badge</a>
-      </li>
-      <li data-list-item-id="e47fbf1c71996113fdfe4a53f75166dd7">
-        <a href="#h_01GM67JJ4M3FD4FR71E69MND1S" target="_self"
-          >HypeSquad House Badges</a
-        >
-      </li>
-      <li data-list-item-id="e38e478f316dbe53da1c09b3eb094bd8f">
-        <a href="#h_01GM67N1ZDEHN3M496072Z1QZD" target="_self"
-          >Moderator Program Alumni Badge</a
-        >
-      </li>
-      <li data-list-item-id="e655467bd97427b2cfa7079ebd7ffdffd">
-        <a href="#h_01GM67N878RGKPHPB525K0GF4C" target="_self"
-          >Early Supporter Badge</a
-        >
-      </li>
-      <li data-list-item-id="e21ca5e8f5e7997d8890af0ac609d7b27">
-        <a href="#h_01HNZPM3VGJHJHG24F6KG7TVGV">Partnered Server Owner Badge</a>
-      </li>
-    </ul>
-  </li>
-</ul>
+  </p>
+  <ul>
+    <li data-list-item-id="e04ce101c723f331ec7bea7c045bd68e6">
+      <a href="#h_01GM67J1C84KT7YPDK0GP3M2PC" target="_self"
+        >Common Profile Badges</a
+      >
+      <ul>
+        <li data-list-item-id="e5dfd2e97cc0becc1f922292f7a6e7a36">
+          <a href="#h_01GM67J796MR95BNQZJRWZ7M34" target="_self"
+            >Discord Nitro Badge</a
+          >
+        </li>
+        <li data-list-item-id="ec0d515f23d58d4533fdb7b556692780c">
+          <a href="#h_01GM67JCR4414HZK1NBA6TH0GA" target="_self"
+            >Server Booster Badge</a
+          >
+        </li>
+        <li data-list-item-id="e5b3350f4fea2dbf26f28ce778094a87c">
+          <a href="#h_01KKFEK9AXHY0GKXHNZCXGQNPG">Discord Quest Badge</a>
+        </li>
+        <li data-list-item-id="e9314a7261d6509bcb5e84f4fae7765c5">
+          <a href="#h_01KKFEK9B0VYMZ512MCDDSYBVY">Orbs Badge</a>
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="e7d9c7059a9a88c6bbc478837b71afe60">
+      <a href="#h_01GM67JVQ0MCMWA9MFD9FVF9F6" target="_self">Rare Badges</a>
+      <ul>
+        <li data-list-item-id="ef9da21170e0857ceb6ff38ab92b3070e">
+          <a href="#h_01GM67KDR7R5H2J7E6R2KMBKMG" target="_self"
+            >Bug Hunter Badge</a
+          >
+        </li>
+        <li data-list-item-id="e49cf02b75b2905bcd1d6e771b860ff8a">
+          <a href="#01HWDTKCYQ51461S8YEZ2XJFBN">Discord Quests Badge</a>
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="ecb6b7e1a199d09bf0118efa2cb656368">
+      <a href="#h_01GM67MDR37JXG1VQWPGH60N59" target="_self">Mythic Badge</a>
+      <ul>
+        <li data-list-item-id="e20cd5dedb4b58ab77b9ddf09c304bf61">
+          <a href="#h_01GM67MNYEVR6445C38JC4V3DS" target="_self"
+            >Discord Staff Badge</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="eb68a1a261ebb0f6b55bf625d7d0ccd05">
+      <a href="#h_01GM67MVZKEMD2HPM30YEQ7SER" target="_self">Legacy Badges</a>
+      <ul>
+        <li data-list-item-id="e48211ccdd04de268f03f24978bb4b7c3">
+          <a href="#h_01GM67K5EJ16ZHYZQ5MPRW3JT3">HypeSquad Events Badge</a>
+        </li>
+        <li data-list-item-id="e0d487e2080475a114cd4967c254a0de5">
+          <a href="#h_01KKH598PJMFDYBVFYYTGSBCYT" target="_self"
+            >HypeSquad House Badge</a
+          ><a href="#h_01KKH598PJMFDYBVFYYTGSBCYT">s</a>
+        </li>
+        <li data-list-item-id="e8eb479515300852ab6b1fd4813aaa3dc">
+          <a href="#h_01GM67N1ZDEHN3M496072Z1QZD" target="_self"
+            >Moderator Program Alumni Badge</a
+          >
+        </li>
+        <li data-list-item-id="e9962271710da0b831b438466abbe5caa">
+          <a href="#h_01GM67N878RGKPHPB525K0GF4C" target="_self"
+            >Early Supporter Badge</a
+          >
+        </li>
+        <li data-list-item-id="e9cd83415e6c11555c4ef15ee3adabcd1">
+          <a href="#h_01HNZPM3VGJHJHG24F6KG7TVGV"
+            >Partnered Server Owner Badge</a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
 <h1 class="wysiwyg-text-align-left" id="h_01GM67J1C84KT7YPDK0GP3M2PC">
   <strong>Common Profile Badges</strong>
 </h1>
@@ -176,6 +188,54 @@
     target="_blank"
     rel="noopener noreferrer"
     >Server Boosting FAQ. </a
+  >
+</p>
+<h2 id="h_01KKFEK9AXHY0GKXHNZCXGQNPG"><strong>Discord Quests Badge</strong></h2>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/38975135541143"
+    width="624"
+    height="175"
+  />
+</p>
+<p>
+  The Discord Quests badge is for those who have completed a Quests! Quests
+  allow players to discover games, earn rewards, and stream the gameplay to
+  friends. Upon completing a quest, the Discord Quests Badge will be bestowed to
+  your profile. For more information about Discord Quests and how it works,
+  visit our
+  <a href="https://support.discord.com/hc/articles/22225719947543"
+    ><span class="wysiwyg-underline"
+      >Discord Quests FAQ Help Center article</span
+    ></a
+  >.
+</p>
+<div class="tip-box">
+  <strong>Tip:</strong> At this time, we are unable to remove the Discord Quests
+  Badge from your Profile. However, the team will consider this feature as a
+  potential update in the future.
+</div>
+<h2 id="h_01KKFEK9B0VYMZ512MCDDSYBVY">Orbs Badge</h2>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/38975135543063"
+    width="568"
+    height="176"
+  />
+</p>
+<p>
+  The Orbs badge can be purchased from the Orbs shop to display on your profile.
+  For more information about Discord Orbs and how they work, visit our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline"
+      >Discord Quests FAQ Help Center article</span
+    ></a
+  >.<br /><span style="color: #434343"
+    ><strong>Tip: </strong>Once purchased with Orbs, the Orbs badge cannot be
+    removed. </span
   >
 </p>
 <h1 class="wysiwyg-text-align-left" id="h_01GM67JVQ0MCMWA9MFD9FVF9F6">
@@ -287,6 +347,22 @@
   organizing a university club or planning a LAN event.
 </p>
 <p><strong>This badge is no longer obtainable.</strong></p>
+<h2 id="h_01KKH598PJMFDYBVFYYTGSBCYT">HypeSquad House Badges</h2>
+<h2 id="h_01KKH598PJ8XP1WYGRZ44K0VSF">
+  <span style="color: #ae6607"
+    ><strong
+      ><img
+        src="https://support.discord.com/hc/article_attachments/38986777357335"
+        width="624"
+        height="232" /></strong
+  ></span>
+</h2>
+<p>
+  In the past, you could earn a HypeSquad House badge by taking a quiz in
+  Discord that sorted you into one of the three houses. Unfortunately, this quiz
+  is no longer available and it’s not possible to remove the badge from your
+  profile.
+</p>
 <h2 id="h_01GM67N1ZDEHN3M496072Z1QZD">
   <strong>Moderator Program Alumni Badge</strong>
 </h2>
@@ -320,22 +396,6 @@
     rel="noopener noreferrer"
     >Safety Center's Moderation page</a
   >.
-</p>
-<h2 id="h_01GM67JJ4M3FD4FR71E69MND1S">
-  <strong>HypeSquad House Badges  </strong>
-</h2>
-<p class="wysiwyg-text-align-center" id="h_01HHJ38E13QFP87JEZFZ4JH020">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/19813392718615"
-      width="624"
-      height="232"
-  /></strong>
-</p>
-<p id="h_01HHJ38E13QFP87JEZFZ4JH020">
-  In the past, you could earn a HypeSquad House Badge by taking a quiz in
-  Discord that sorted you into one of the three houses. Unfortunately, this quiz
-  is no longer available.
 </p>
 <h2 id="h_01GM67N878RGKPHPB525K0GF4C">
   <strong>Early Supporter Badge</strong>

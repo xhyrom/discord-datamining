@@ -1,3 +1,30 @@
+<div class="warn-box">
+  <p>
+    <strong>Important:</strong> As part of strengthening teen safety and
+    supporting age-appropriate experiences on Discord, we’re continuing to add
+    more to our global age assurance package and delaying broader global
+    expansion until the second half of 2026. Read more in our latest blog post
+    <a
+      href="https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing"
+      target="_blank"
+      rel="noopener noreferrer"
+      >here</a
+    >.
+  </p>
+</div>
+<p>
+  <span style="color: #434343"
+    >We currently only prompt users to age-assure when they are in the Discord
+    app and trying to access age-restricted servers, channels, blurred sensitive
+    content or to update specific safety settings.</span
+  >
+</p>
+<p>
+  <span style="color: #434343"
+    >We do not send emails or text messages about our age assurance process or
+    results.</span
+  >
+</p>
 <p>
   Age assurance helps Discord provide you with an age-appropriate experience,
   such as managing default settings and controlling what sensitive content you
@@ -27,7 +54,6 @@
       ><span class="wysiwyg-underline">Safety Center article.</span></a
     >
   </p>
-  <p> </p>
 </div>
 <div class="toc-box">
   <p>
@@ -37,7 +63,7 @@
   </p>
   <ul>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e137e2982ad114fa14e498d4ab97315d7"
     >
       <a href="#h_01KBKGJ94K9TJ3RPZ82G9JR1EE"
@@ -45,7 +71,7 @@
       >
       <ul>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e5d25a9f7444fef04fb8c9fd0b65da79b"
         >
           <a href="#h_01KBKGJ94MPJS9SGFC1H4Z4FZQ"
@@ -53,7 +79,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e2b049a8d397c47f3308137a063352497"
         >
           <a href="#h_01KBKGJ94P37NG33SC7PAFTVKS"
@@ -61,7 +87,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e7b3e0fbc8b4a83484e35eeda273e1b55"
         >
           <a href="#h_01KBKGJ94ZQVW62DH0TS4JJFSF"
@@ -69,7 +95,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e19a68688dd6f93b34aec31eeb8f3520a"
         >
           <a href="#h_01KBKGJ952JJA2H0A6W9NR2V7C"
@@ -84,7 +110,7 @@
       </ul>
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e331eb9bb7a3907de066617a6b8dbf21f"
     >
       <a href="#h_01KBKGJ956VESBGSEF3NS13M0P"
@@ -92,7 +118,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e19cc8814e9cdd6d4629d7b6e593bed99"
     >
       <a href="#h_01KBKGJ959H89JWV88BSHP9ETZ"
@@ -100,7 +126,7 @@
       >
       <ul>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="eadc23794fc5d078e5f1711751b11a1f3"
         >
           <a href="#h_01KBKGJ95KGYRBN11B92Q29YM9"
@@ -108,7 +134,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="ea9ada9a27ac078439289716190e4b831"
         >
           <a href="#h_01KBKGJ95NBKA9TYFGMPWCTSTA"
@@ -116,7 +142,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="ea8f05dab10a1661472516991478d8dc2"
         >
           <a href="#h_01KBKGJ95RC306NFRAZMM427EM"
@@ -124,7 +150,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e3ce460e9a51b642af8ddb60dd99853b2"
         >
           <a href="#h_01KBKGJ95SYC3YAS45CA02ZCC2"
@@ -134,17 +160,6 @@
       </ul>
     </li>
   </ul>
-</div>
-<div class="warn-box">
-  <strong>Important</strong>: If you're located in the UK, you may be part of an
-  experiment where your information will be processed by an age-assurance
-  vendor, Persona.
-  <strong
-    >The information you submit will be temporarily stored for up to 7 days,
-    then deleted.</strong
-  >
-  For ID document verification, all details are blurred except your photo and
-  date of birth, so only what's truly needed for age verification is used.
 </div>
 <div class="info-box">
   <strong>Note:</strong> Some users in regions outside the UK and Australia may
@@ -366,25 +381,25 @@
 <p>In this FAQ section, we’ll cover: </p>
 <ul>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e671bc5592221f39dd4389efefc76d67c"
   >
     <strong>Getting Started with Age Assurance</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="eeb019cd14df4dfd56fd52fd7820d76b6"
   >
     <strong>Content Filtering and Age Assurance</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e35e53cdef9dba2f2ee5034ff871ea8a2"
   >
     <strong>Privacy and Data Security</strong>
   </li>
   <li
-    class="ck-list-marker-bold"
+    class="wysiwyg-list-bold"
     data-list-item-id="e1c53d34c9d37e937c940bd6e4fdc46e6"
   >
     <strong>Troubleshooting and Support</strong>

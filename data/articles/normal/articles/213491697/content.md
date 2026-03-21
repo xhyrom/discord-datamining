@@ -14,44 +14,46 @@
     >Unsupported Bug Reports Help Center article</a
   >.
 </div>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
-</p>
-<ul>
-  <li data-list-item-id="e13b9fd619f808a791f3aa51a8861e2df">
-    <a
-      href="#docs-internal-guid-09be9a94-7fff-2c2f-1ad4-48886516463f"
-      target="_self"
-      >Desktop</a
+<div class="toc-box">
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
     >
-  </li>
-  <li data-list-item-id="ed3d510e9469b9b010bebeb1152f9425f">
-    <a href="#h_01H30Q0N5QCNK259ATR3BR4A41" target="_self">Mobile</a>
-  </li>
-  <li data-list-item-id="e9a83a6bcc45b5cae80c497cde185b6e9">
-    <a href="#h_01H30Q0T863H0VTGBN9BY653ZD" target="_self">Browser</a>
-  </li>
-  <li data-list-item-id="ee82716a46620ea97e393c981b8d1c10f">
-    <a href="#h_01JCP4A30YP25B3WPNVWWZJ95A">What is Not Supported? </a>
-  </li>
-  <li data-list-item-id="e2c4f530659c3f9d630963cad760a9d3f">
-    <a href="#h_01JWVBE959FTG48S905H9T7AZY">How to Fix Lag on Discord</a>
-    <ul>
-      <li data-list-item-id="ec2e45f8691ac004cc445abebfb2792fa">
-        <a href="#h_01JWVBK7F1AQZ7CPHFX7W9WNE7"
-          >Are you experiencing a bug on Discord?</a
-        >
-      </li>
-      <li data-list-item-id="edf1556cfee6ff53758e88526f306df30">
-        <a href="#h_01JWVBN790J8MRFY5MR57P0QPB"
-          >Are you experiencing an outage on Discord?</a
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
+  </p>
+  <ul>
+    <li data-list-item-id="eddeb2847b401950ee283986294d70a67">
+      <a
+        href="#docs-internal-guid-09be9a94-7fff-2c2f-1ad4-48886516463f"
+        target="_self"
+        >Desktop</a
+      >
+    </li>
+    <li data-list-item-id="e9790128db2072167f3795769eb1dec6e">
+      <a href="#h_01H30Q0N5QCNK259ATR3BR4A41" target="_self">Mobile</a>
+    </li>
+    <li data-list-item-id="ef2159ba492dd9eb6d7d038e959d1906d">
+      <a href="#h_01H30Q0T863H0VTGBN9BY653ZD" target="_self">Browser</a>
+    </li>
+    <li data-list-item-id="eb229af55119b15ca34075c7f7f73707d">
+      <a href="#h_01JCP4A30YP25B3WPNVWWZJ95A">What is Not Supported? </a>
+    </li>
+    <li data-list-item-id="e85c314c72b08f769ba8dbbedfe8b7e8f">
+      <a href="#h_01JWVBE959FTG48S905H9T7AZY">How to Fix Lag on Discord</a>
+      <ul>
+        <li data-list-item-id="ea234b158b1533efe87e5db885297f137">
+          <a href="#h_01JWVBK7F1AQZ7CPHFX7W9WNE7"
+            >Are you experiencing a bug on Discord?</a
+          >
+        </li>
+        <li data-list-item-id="e866775d602fed81d9f75891ab764ac0c">
+          <a href="#h_01JWVBN790J8MRFY5MR57P0QPB"
+            >Are you experiencing an outage on Discord?</a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
 <h1 id="docs-internal-guid-09be9a94-7fff-2c2f-1ad4-48886516463f">
   <strong>Desktop</strong>
 </h1>
@@ -144,8 +146,8 @@
         </tr>
         <tr>
           <td>iOS</td>
-          <td>iOS 15.1+</td>
-          <td>iOS 15.1+</td>
+          <td>iOS 16.0+</td>
+          <td>iOS 16.0+</td>
         </tr>
       </tbody>
     </table>
@@ -162,16 +164,16 @@
 <ul>
   <li data-list-item-id="eaa2d589ad38e0a7fc8931ac880131167">
     <strong>For iOS: </strong>You can find iPhones and iPads supported by iOS
-    15.1+
+    16.0+
     <a
-      href="https://support.apple.com/en-au/guide/iphone/iphe3fa5df43/14.0/ios/14.0"
+      href="https://support.apple.com/en-au/guide/iphone/iphe3fa5df43/16.0/ios/16.0"
       target="_blank"
       rel="noopener noreferrer"
       >here</a
     >
     and
     <a
-      href="https://support.apple.com/en-au/guide/ipad/ipad213a25b2/14.0/ipados/14.0"
+      href="https://support.apple.com/en-au/guide/ipad/ipad213a25b2/16.0/ipados/16.0"
       target="_blank"
       rel="noopener noreferrer"
       >here</a

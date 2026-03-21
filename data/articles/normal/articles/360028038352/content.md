@@ -1,24 +1,19 @@
 <div class="mega-box">
-  <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >What’s New:</span
-    ></strong
-  >
-  <span style="color: #434343" data-darkreader-inline-color=""><br /></span
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >Server Boosting just got more flexible! You can now use your available
-    Boosts to unlock additional perks like </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Server Tags</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""> and </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Enhanced Role Styles</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    without needing to reach higher server levels.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      ><strong>What’s New:</strong></span
+    ></span
+  > <br /><span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Server Boosting just got more flexible! You can now use your available
+      Boosts to unlock additional perks like </span
+    ><span data-darkreader-inline-color=""><strong>Server Tags</strong></span
+    ><span data-darkreader-inline-color=""> and </span
+    ><span data-darkreader-inline-color=""
+      ><strong>Enhanced Role Styles</strong></span
+    ><span data-darkreader-inline-color="">
+      without needing to reach higher server levels.</span
+    ></span
   >
 </div>
 <p>
@@ -28,157 +23,178 @@
   month, you can unlock some epic perks to the rest of your server community! 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/19576232968855"
-      width="624"
-      height="281"
-  /></span>
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/19576232968855"
+        width="624"
+        height="281" /></span
+  ></span>
 </p>
 <h4 id="h_01HGX7DJ33H4R7S6A31PSZZGCH">
-  <strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >Start your engines and get ready to ✨B  O  O  S  T✨!</span
-    ></strong
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      ><strong
+        >Start your engines and get ready to ✨B  O  O  S  T✨!</strong
+      ></span
+    ></span
   >
 </h4>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
-      <strong
-        ><a
-          href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ33W4WY3FYVPRZ2CK02"
-          >What are the levels and perks for Server Boosting? </a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="ef47d2209033e3ebdabb1742f55d1ff45"
+    >
+      <a href="#h_01HGX7DJ33W4WY3FYVPRZ2CK02"
+        ><strong>What are the levels and perks for Server Boosting? </strong></a
       >
       <ul>
-        <li>
-          <strong
-            ><a
-              href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ33Z5HGWCXJ6NKR2FTZ"
-              >Server Level Perks</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e76c4a356d9619c9f81cd1ae9c606e71b"
+        >
+          <a href="#h_01HGX7DJ33Z5HGWCXJ6NKR2FTZ"
+            ><strong>Server Level Perks</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01JT6SH1QBD1XZKK4KEAD64GXS"
-              >Additional Perks</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e92890ae78311442a0c315e030125023b"
+        >
+          <a href="#h_01JT6SH1QBD1XZKK4KEAD64GXS"
+            ><strong>Additional Perks</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a
-              href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ33YD3AP7K0E0GYSMYM"
-              >Boosting Badge Perks</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ed306d678a769c86f8d745f7e3e07ee5c"
+        >
+          <a href="#h_01HGX7DJ33YD3AP7K0E0GYSMYM"
+            ><strong>Boosting Badge Perks</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a
-              href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ332WE7WX2XH0FEN6H9"
-              >Nitro Subscription Perks </a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ee88a3c553b2265847f59d5edc6e6e1c7"
+        >
+          <a href="#h_01HGX7DJ332WE7WX2XH0FEN6H9"
+            ><strong>Nitro Subscription Perks </strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
-      <strong
-        ><a
-          href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ331AJ25MPQRD6R83KJ"
-          >How do I Boost a Server?</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e1397ff32187b3474dffae6b74b53fa41"
+    >
+      <a href="#h_01HGX7DJ331AJ25MPQRD6R83KJ"
+        ><strong>How do I Boost a Server?</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01JXWRENPDXWD623DT9NTY70R1"
-          >How do Additional Perks work?</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e2d3434e60dde3394ac12ded03c19558e"
+    >
+      <a href="#h_01JXWRENPDXWD623DT9NTY70R1"
+        ><strong>How do Additional Perks work?</strong></a
       >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01JXWRENPD3N35RBKMS1YR1538"
-              >How do I apply Server Boosts to Additional Perks</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ee7d4877770b57c9b9ea194b5db819487"
+        >
+          <a href="#h_01JXWRENPD3N35RBKMS1YR1538"
+            ><strong
+              >How do I apply Server Boosts to Additional Perks</strong
+            ></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01JXWRENPDE8PJ41K82SM9CSNX"
-              >How Do Server Boosts Work for Levels vs Additional Perks?</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e4811005bc621c14519495440938c0fa4"
+        >
+          <a href="#h_01JXWRENPDE8PJ41K82SM9CSNX"
+            ><strong
+              >How Do Server Boosts Work for Levels vs Additional Perks?</strong
+            ></a
           >
         </li>
       </ul>
     </li>
-    <li>
-      <strong
-        ><a
-          href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ34QP27HTRJCM5JQ783"
-          >How to maintain your Boosting Streak</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e0d54b6de32cf376ad127c65954662a2f"
+    >
+      <a href="#h_01HGX7DJ34QP27HTRJCM5JQ783"
+        ><strong>How to maintain your Boosting Streak</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a
-          href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ3486SXSGHT99XVMNFN"
-          >How do I Transfer my Server Boost?</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e735c869cf685b614a8a362c0764e0490"
+    >
+      <a href="#h_01HGX7DJ3486SXSGHT99XVMNFN"
+        ><strong>How do I Transfer my Server Boost?</strong></a
       >
     </li>
-    <li>
+    <li data-list-item-id="edf0cb0ff2597aec26bb1115328e10b80">
       <a href="#h_01K0Z1N8S2B4NM1ZPQWAR243BR"
         >Server Boosting for Server Owner/Admin</a
       >
       <ul>
-        <li>
+        <li data-list-item-id="eebc9d0b344dc75bdea16885976a4865e">
           <a href="#h_01K0Z1N8S2J1NEDP1C4ECPND7X"
             >Server Boosting Server Role</a
           >
         </li>
-        <li>
+        <li data-list-item-id="e6b4dce8bcb16a4845f81f81049acd3fd">
           <a href="#h_01K0Z1N8S20H13HJBAGCR0FWVH"
             >Server Owner/Admin View Of Server Boosts</a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01JXWRKHF311JQS7ZB7ERSKWNW"
-              >Grace Period for Server Boost Loss</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ee11030f239145f77b61256386bf9343c"
+        >
+          <a href="#h_01JXWRKHF311JQS7ZB7ERSKWNW"
+            ><strong>Grace Period for Server Boost Loss</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
-      <strong
-        ><a href="#h_01JXWRM6K7KF6GMB6XRGJFKQD8"
-          >FAQs for Additional Perks</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e619fe69b3fc0c54d87911e52964f258c"
+    >
+      <a href="#h_01JXWRM6K7KF6GMB6XRGJFKQD8"
+        ><strong>FAQs for Additional Perks</strong></a
       >
     </li>
   </ul>
 </div>
 <div class="book-box">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Looking to cancel your Server Boost? Please check out our article on
-    <a
-      href="https://support.discord.com/hc/en-us/articles/19580873036695"
-      target="_blank"
-      rel="noopener noreferrer"
-      >how to cancel a subscription</a
-    >.
-  </span>
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Looking to cancel your Server Boost? Please check out our article on
+    </span></span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/19580873036695"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span style="color: #434343"
+      ><span data-darkreader-inline-color=""
+        >how to cancel a subscription</span
+      ></span
+    ></a
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
 </div>
 <h1 id="h_01HGX7DJ33W4WY3FYVPRZ2CK02">
   What are the levels and perks for Server Boosting
@@ -190,7 +206,7 @@
 <h2 id="h_01HGX7DJ33Z5HGWCXJ6NKR2FTZ">Server Level Perks</h2>
 <p><strong>Level 1 Perks (2 Server Boosts)</strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="e1bc00ad1fec0324fdb88c9899b266c96">
     +50
     <a
       href="https://support.discord.com/hc/en-us/articles/360041139231"
@@ -200,7 +216,7 @@
     >
     Slots (for a total of 100)
   </li>
-  <li>
+  <li data-list-item-id="e6210430014f1a6ac65e2799a25eb6e5f">
     +10
     <a
       href="https://support.discord.com/hc/en-us/articles/4403089981975"
@@ -210,7 +226,7 @@
     >
     slots (for a total of 15)
   </li>
-  <li>
+  <li data-list-item-id="e6b8c02e0edb8a2d91a657263ca653470">
     +16
     <a
       href="https://support.discord.com/hc/en-us/articles/12612888127767"
@@ -220,8 +236,10 @@
     >
     slots (for a total of 24)
   </li>
-  <li>128 Kbps Audio Quality</li>
-  <li>
+  <li data-list-item-id="e4dab25b4e0fd1b7697bfebfd62301c32">
+    128 Kbps Audio Quality
+  </li>
+  <li data-list-item-id="ec0436b59f06d4b10b8fa00088b9f6e26">
     <a
       href="https://support.discord.com/hc/en-us/articles/360040816151"
       target="_blank"
@@ -230,7 +248,7 @@
     >
     streams Boosted to 720P 60FPS
   </li>
-  <li>
+  <li data-list-item-id="e6ae12e6033a3491310067015570a3b89">
     <a
       href="https://support.discord.com/hc/en-us/articles/4415841146391"
       target="_blank"
@@ -238,17 +256,31 @@
       >Custom Server Invite Background</a
     >
   </li>
-  <li>Animated Server Icon</li>
+  <li data-list-item-id="e8aee787e3c75eb2484243d7dfcd689eb">
+    Animated Server Icon
+  </li>
 </ul>
 <p><strong>Level 2 Perks (7 Server Boosts)</strong></p>
 <ul>
-  <li>Everything in Level 1 and…..</li>
-  <li>+50 Emoji Slots (for a total of 150)</li>
-  <li>+15 custom sticker slots (for a total of 30)</li>
-  <li>+12 Soundboard slots (for a total of 36)</li>
-  <li>256 Kbps Audio Quality</li>
-  <li>Go Live streams Boosted to 1080P 60FPS</li>
-  <li>
+  <li data-list-item-id="ecc9cc6df54b02cf0e9ee43cfae8bc229">
+    Everything in Level 1 and…..
+  </li>
+  <li data-list-item-id="e7d841c4ec749b113ca0e7e8ecce85b08">
+    +50 Emoji Slots (for a total of 150)
+  </li>
+  <li data-list-item-id="e76bbc6a7493edc11a31e8eb7fcae5bc6">
+    +15 custom sticker slots (for a total of 30)
+  </li>
+  <li data-list-item-id="e8fb80b20526edb30c291f2f644efd309">
+    +12 Soundboard slots (for a total of 36)
+  </li>
+  <li data-list-item-id="e48043210e991cfef022cc755b39469fe">
+    256 Kbps Audio Quality
+  </li>
+  <li data-list-item-id="e4b87ac415ece1d023bd9286100a7dd3f">
+    Go Live streams Boosted to 1080P 60FPS
+  </li>
+  <li data-list-item-id="eccf774d2232c5778872f60c29346cdc2">
     Audience capacity for
     <a
       href="https://support.discord.com/hc/en-us/articles/1500005513722"
@@ -258,20 +290,40 @@
     >
     with Video/Go Live: 150
   </li>
-  <li>50MB Upload Limit for all members (server only)</li>
-  <li>Custom Role Icons</li>
-  <li>Static Server Banner</li>
+  <li data-list-item-id="e101bb3fb41eaa5a114ece9e0ece85463">
+    50MB Upload Limit for all members (server only)
+  </li>
+  <li data-list-item-id="ef9c88d01537dd3362f8b96a9f4734ff9">
+    Custom Role Icons
+  </li>
+  <li data-list-item-id="efd5f8e1efc157357c8c5dab242de7ac7">
+    Static Server Banner
+  </li>
 </ul>
 <p><strong>Level 3 Perks (14 Server Boosts)</strong></p>
 <ul>
-  <li>Everything in Level 1 AND Level 2 AND…..</li>
-  <li>+100 Emoji Slots (for a total of 250)</li>
-  <li>+30 custom sticker slots (for a total of 60)</li>
-  <li>+12 Soundboard slots (for a total of 48)</li>
-  <li>384Kbps Audio Quality</li>
-  <li>Audience capacity for Stage Channels with Video/Go Live: 300</li>
-  <li>100MB Upload Limit for all members (server only)</li>
-  <li>
+  <li data-list-item-id="e6926aac250260c49f9d596d16456a5d3">
+    Everything in Level 1 AND Level 2 AND…..
+  </li>
+  <li data-list-item-id="ea0ca1a387e4ebc947e90a4effe29da82">
+    +100 Emoji Slots (for a total of 250)
+  </li>
+  <li data-list-item-id="e577261c78586b2120fcc211654f1bb54">
+    +30 custom sticker slots (for a total of 60)
+  </li>
+  <li data-list-item-id="e0a5a652d313ad622c3509d0939d181fc">
+    +12 Soundboard slots (for a total of 48)
+  </li>
+  <li data-list-item-id="e4968f40cdf2be3646b7b249bac3b4de4">
+    384Kbps Audio Quality
+  </li>
+  <li data-list-item-id="e95de262b682ee6aef66b5e22a54f85f5">
+    Audience capacity for Stage Channels with Video/Go Live: 300
+  </li>
+  <li data-list-item-id="eab10ddcaffcdc3d03d087f60e66ae8fa">
+    100MB Upload Limit for all members (server only)
+  </li>
+  <li data-list-item-id="e30e4c65727cc4f15622961d80c22d7dd">
     <a
       href="https://support.discord.com/hc/en-us/articles/115001542132"
       target="_blank"
@@ -279,19 +331,50 @@
       >Custom Invite Link</a
     >
   </li>
-  <li>Animated Server Banner</li>
+  <li data-list-item-id="e2b411cd8493404b6eba335b6dd5e7fb5">
+    Animated Server Banner
+  </li>
 </ul>
 <h2 id="h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</h2>
 <ul>
-  <li>
-    <strong>Server Tags (3 Boosts)</strong> - Give your members a custom
-    4-character tag they can display on their profiles everywhere on Discord,
-    helping them represent your community across the platform
+  <li data-list-item-id="e2342d8df247479aa8a06ad2289fe20e3">
+    <a
+      href="https://support.discord.com/hc/en-us/articles/31444248479639"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong
+        ><span class="wysiwyg-underline">Server Tags (3 Boosts)</span></strong
+      ></a
+    >
+    - Give your members a custom 4-character tag they can display on their
+    profiles everywhere on Discord, helping them represent your community across
+    the platform
   </li>
-  <li>
-    <strong>Enhanced Role Styles (3 Boosts)</strong> - Make certain roles stand
-    out with animated gradient and holographic effects that go beyond standard
-    solid colors
+  <li data-list-item-id="e36efbbdf76a6f18fbe3d3cfca3a93319">
+    <a
+      href="https://support.discord.com/hc/en-us/articles/31444213087255"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong
+        ><span class="wysiwyg-underline"
+          >Enhanced Role Styles (3 Boosts)</span
+        ></strong
+      ></a
+    >
+    - Make certain roles stand out with animated gradient and holographic
+    effects that go beyond standard solid colors
+  </li>
+  <li data-list-item-id="e58400ff3a12b9a8535520b1ab3b92231">
+    <a
+      href="https://support.discord.com/hc/en-us/articles/35370817986839-Game-Server-Hosting"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong
+        ><span class="wysiwyg-underline"
+          >Game Server Hosting (3+ Boosts)</span
+        ></strong
+      ></a
+    ><strong> </strong>- Set up a custom game server for you and your community.
   </li>
 </ul>
 <h2 id="h_01HGX7DJ33YD3AP7K0E0GYSMYM">Boosting Badge Perks</h2>
@@ -302,9 +385,9 @@
     height="231"
   />
 </p>
-<h4 id="h_01K0Z1J0H0RE0VKFYB1Y6MCAV2" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Server Boosting badge</span
+<h4 class="wysiwyg-text-align-center" id="h_01K0Z1J0H0RE0VKFYB1Y6MCAV2">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Server Boosting badge</span></span
   >
 </h4>
 <p>
@@ -320,45 +403,49 @@
   evolve while you reach extra levels.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/19576208158615"
-      width="624"
-      height="159"
-  /></span>
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/19576208158615"
+        width="624"
+        height="159" /></span
+  ></span>
 </p>
-<h4 id="h_01K0Z1J8WTZR0M707PK87P1SPT" class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Server Boosting badge progress</span
+<h4 class="wysiwyg-text-align-center" id="h_01K0Z1J8WTZR0M707PK87P1SPT">
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >Server Boosting badge progress</span
+    ></span
   >
 </h4>
 <h2 id="h_01HGX7DJ332WE7WX2XH0FEN6H9">Nitro Subscription Perks</h2>
 <p>Subscribers get to enjoy Server Boosting perks depending on the plan!</p>
 <ul>
-  <li>
+  <li data-list-item-id="e095d391f27fe54cccbbc2b1e9ce43a8a">
     Nitro subscribers get 2 server boosts that they can apply to any server,
     plus a 30% discount on any future Boost purchases.
   </li>
-  <li>Nitro Classic subscribers also get a 30% discount.</li>
-  <li>Nitro Basic subscribers do not get a discount or Boost perks. </li>
+  <li data-list-item-id="e213fc17847f50117c6659992a3fabfb7">
+    Nitro Classic subscribers also get a 30% discount.
+  </li>
+  <li data-list-item-id="e75cbf09be26cfdc9be1b0d362b59eb01">
+    Nitro Basic subscribers do not get a discount or Boost perks. 
+  </li>
 </ul>
 <p>
   To see the full list of perks in all plans, head
   <a href="https://support.discord.com/hc/en-us/articles/115000435108"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >here</span
-    ></a
+    ><span class="wysiwyg-underline">here</span></a
   >. 
 </p>
 <h1 id="h_01HGX7DJ331AJ25MPQRD6R83KJ">How do I Boost a Server?</h1>
 <h3 id="h_01HGX7DJ348880BZ80W52VNAB5">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you're still on the fence of which server you want to boost, just
-    remember that while you can move your boost from one server to another,
-    there's just a 7 day cool-down period to make that change. </span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >If you're still on the fence of which server you want to boost, just
+      remember that while you can move your boost from one server to another,
+      there's just a 7 day cool-down period to make that change. </span
+    ></span
   >
 </h3>
 <p>
@@ -384,40 +471,49 @@
   Once finished, you’ll receive a final pop-up that says your boost has been
   activated.
 </p>
-<p id="h_01HGX7DJ344FN50A4GM9VPAV52" class="wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center" id="h_01HGX7DJ344FN50A4GM9VPAV52">
   <img
     src="https://support.discord.com/hc/article_attachments/19576232983959"
     width="624"
     height="351"
   />
 </p>
-<h4 id="h_01K0Z1JM8PC72535KXMAEXAK0H" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >How to Boost a server</span
+<h4 class="wysiwyg-text-align-center" id="h_01K0Z1JM8PC72535KXMAEXAK0H">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">How to Boost a server</span></span
   >
 </h4>
 <div class="book-box">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you'd like to Boost your server directly to the next Level in one button
-    click and save your brain from any extra math problems, check out this
-    support article </span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >If you'd like to Boost your server directly to the next Level in one
+      button click and save your brain from any extra math problems, check out
+      this support article
+    </span></span
   ><a href="https://support.discord.com/hc/en-us/articles/360039337992"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >here</span
-    ></a
-  ><span style="color: #434343" data-darkreader-inline-color="">! </span>
+    ><span class="wysiwyg-underline">here</span></a
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">! </span></span
+  >
 </div>
 <h1 id="h_01JXWRENPDXWD623DT9NTY70R1">How do Additional Perks Work?</h1>
 <p>Here’s a quick summary of how additional perks work in servers:</p>
 <ul>
-  <li>Cost: 3 Boosts per perk </li>
-  <li>Independent from server level perks </li>
-  <li>Need Boosts that are not allocated to server level perks</li>
-  <li>Can only be enabled and configured on the Discord desktop app </li>
-  <li>Disabled immediately if Boosts are removed from the perk</li>
+  <li data-list-item-id="e0e3b0b4c8134ec23cb43d135ab05bafc">
+    Cost: 3 Boosts per perk 
+  </li>
+  <li data-list-item-id="e6f06c7673f34a73f1c0afdf706b48fcd">
+    Independent from server level perks 
+  </li>
+  <li data-list-item-id="ec9d057402aa5e18ef33ab729d8047747">
+    Need Boosts that are not allocated to server level perks
+  </li>
+  <li data-list-item-id="e6866d2d22851f477b0e3f7cec5ab0381">
+    Can only be enabled and configured on the Discord desktop app 
+  </li>
+  <li data-list-item-id="ebb6b91a1c0850cb6dd56f53407373917">
+    Disabled immediately if Boosts are removed from the perk
+  </li>
 </ul>
 <p id="h_01JXWRENPDR7Q2TJ8XQ9DE116Q">
   <strong>Server Tags</strong> and <strong>Enhanced Role Styles</strong> are
@@ -427,21 +523,18 @@
   available Server Boosts—no specific level required!
 </p>
 <div class="warn-box">
-  <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Important:</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    Additional perks use dedicated Boosts that are separate from those
-    maintaining your server level. You'll need </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >available (unallocated) Boosts</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    to unlock them—Boosts already allocated to your server level won't count
-    toward additional perks. Each perk requires ongoing Boosts to remain active,
-    similar to how server levels require ongoing Boosts.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""><strong>Important:</strong></span
+    ><span data-darkreader-inline-color="">
+      Additional perks use dedicated Boosts that are separate from those
+      maintaining your server level. You'll need </span
+    ><span data-darkreader-inline-color=""
+      ><strong>available (unallocated) Boosts</strong></span
+    ><span data-darkreader-inline-color="">
+      to unlock them—Boosts already allocated to your server level won't count
+      toward additional perks. Each perk requires ongoing Boosts to remain
+      active, similar to how server levels require ongoing Boosts.</span
+    ></span
   >
 </div>
 <h2 id="h_01JXWRENPD3N35RBKMS1YR1538">
@@ -459,9 +552,11 @@
     height="400"
   />
 </p>
-<h4 id="h_01JXWRENPDKMVMVFMWFR3YENFC" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Server Boosts tab in a server</span
+<h4 class="wysiwyg-text-align-center" id="h_01JXWRENPDKMVMVFMWFR3YENFC">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of Server Boosts tab in a server</span
+    ></span
   >
 </h4>
 <p>
@@ -475,9 +570,11 @@
     height="424"
   />
 </p>
-<h4 id="h_01JXWRENPDTXQBAJTP217V0VPK" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Available Server Boosts</span
+<h4 class="wysiwyg-text-align-center" id="h_01JXWRENPDTXQBAJTP217V0VPK">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of Available Server Boosts</span
+    ></span
   >
 </h4>
 <p>
@@ -492,18 +589,17 @@
       height="255"
   /></strong>
 </p>
-<h4 id="h_01JXWRENPDHNAM5CBB3V6V563V" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Enable Perk option for purchasing additional perks</span
+<h4 class="wysiwyg-text-align-center" id="h_01JXWRENPDHNAM5CBB3V6V563V">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Enable Perk option for purchasing additional perks</span
+    ></span
   >
 </h4>
 <div class="warn-box">
-  <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Important:</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    ><span style="color: #434343" data-darkreader-inline-color="">
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""><strong>Important:</strong></span
+    ><span data-darkreader-inline-color="">
       If your server's Boost count drops and you no longer have enough Boosts
       allocated to a perk, that perk will be disabled. Enhanced Role Styles will
       automatically revert to solid colors, and Server Tags will be removed from
@@ -512,29 +608,27 @@
     ></span
   >
 </div>
-<p id="h_01JXWRENPDYDYCHZA7QV4KYTVR" class="wysiwyg-text-align-center">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/32847285274903"
-      width="272"
-      height="395"
-  /></span>
+<p class="wysiwyg-text-align-center" id="h_01JXWRENPDYDYCHZA7QV4KYTVR">
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/32847285274903"
+        width="272"
+        height="395" /></span
+  ></span>
 </p>
-<h4 id="h_01K0Z1K222SJFCVVMEAR11KJ09" class="wysiwyg-text-align-center">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Server Tag</span
-    ></span
+<h4 class="wysiwyg-text-align-center" id="h_01K0Z1K222SJFCVVMEAR11KJ09">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Server Tag</span></span
   >
 </h4>
 <div class="info-box">
-  <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Info:
-    </span></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >Additional perks can currently only be unlocked and configured on desktop
-    at this time.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""><strong>Info: </strong></span
+    ><span data-darkreader-inline-color=""
+      >Additional perks can currently only be unlocked and configured on desktop
+      at this time.</span
+    ></span
   >
 </div>
 <h2 id="h_01JXWRENPDE8PJ41K82SM9CSNX">
@@ -544,20 +638,26 @@
   Your server's Server Boosts can now be strategically allocated in two ways:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e64532ef5b9a0adfb74d3b2ca7a4fc966">
     <strong>For server levels: </strong>Boosts that count toward your server's
     level progression (2, 7, or 14)
   </li>
-  <li>
+  <li data-list-item-id="e0e6e0d84e5b66d4e2ec8d00fa78e6ecb">
     <strong>For additional perks</strong>: Separate allocations of 3 Boosts per
     perk
   </li>
 </ul>
 <p>This means if your server has 10 total Boosts, you could: </p>
 <ul>
-  <li>Use 7 for Level 2 and 3 for one additional perk  </li>
-  <li>Use 2 for Level 1 and 6 for two additional perks (3 each)</li>
-  <li>Use 7 for Level 2 and save up for more Boosts to get to Level 3 later</li>
+  <li data-list-item-id="ecb3cf0be4d51190cc5a0b83174118e9b">
+    Use 7 for Level 2 and 3 for one additional perk  
+  </li>
+  <li data-list-item-id="e2419852360489c4ef62843545e03c063">
+    Use 2 for Level 1 and 6 for two additional perks (3 each)
+  </li>
+  <li data-list-item-id="e4de14025eae02eee83c4a7dc9201e90b">
+    Use 7 for Level 2 and save up for more Boosts to get to Level 3 later
+  </li>
 </ul>
 <p>
   When new Boosts are added to your server, they're automatically applied toward
@@ -568,32 +668,43 @@
   mind: 
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e828c09d77900ff463764b7e6f73a2242">
     Moving Boosts away from your level requirements will cause you to lose those
     level perks after the grace period
   </li>
-  <li>
+  <li data-list-item-id="ee3dfa4ffd24afe29ba8abc3fcacd3e99">
     Moving Boosts away from additional perks will immediately disable those
     perks 
   </li>
-  <li>
+  <li data-list-item-id="e1f26f0e1b03f815de7340f0c3b313d76">
     You need enough total Boosts to maintain both your desired level AND any
     additional perks you want active
   </li>
 </ul>
 <h1 id="h_01HGX7DJ34QP27HTRJCM5JQ783">How to maintain your Boosting Streak</h1>
 <div class="info-box">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you have been removed from a server that you were boosting, you will
-    have a 7 day cooldown before you can use your boost again. Learn more about
-    transferring a boost
-    <a href="#h_01HGX7DJ3486SXSGHT99XVMNFN">below</a>.</span
-  >
+  <p>
+    <span style="color: #434343"
+      ><span data-darkreader-inline-color=""
+        >If you have been removed from a server that you were boosting, you will
+        have a 7 day cooldown before you can use your boost again. Learn more
+        about transferring a boost
+      </span></span
+    ><a href="#h_01HGX7DJ3486SXSGHT99XVMNFN"
+      ><span style="color: #434343"
+        ><span data-darkreader-inline-color="">below</span></span
+      ></a
+    ><span style="color: #434343"
+      ><span data-darkreader-inline-color="">.</span></span
+    >
+  </p>
   <p id="h_01HGX7DJ34DAP2TT1A6C015STQ">
-    <span style="color: #434343" data-darkreader-inline-color=""
-      >If you are also switching your purchase from desktop to mobile or vice
-      versa, you have 72 hours to manually reactivate your Server Boosts in
-      order to not lose your streak.</span
+    <span style="color: #434343"
+      ><span data-darkreader-inline-color=""
+        >If you are also switching your purchase from desktop to mobile or vice
+        versa, you have 72 hours to manually reactivate your Server Boosts in
+        order to not lose your streak.</span
+      ></span
     >
   </p>
 </div>
@@ -604,9 +715,11 @@
     height="247"
   />
 </p>
-<h4 id="h_01K0Z1KCHX0078YP0HJPZRX1V4" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Server Boosting badge and length of boosting</span
+<h4 class="wysiwyg-text-align-center" id="h_01K0Z1KCHX0078YP0HJPZRX1V4">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Server Boosting badge and length of boosting</span
+    ></span
   >
 </h4>
 <p>
@@ -618,27 +731,37 @@
 </p>
 <p>You can lose your boosting streak for any of the following reasons:</p>
 <ul>
-  <li>You cancel your Server Boost(s)</li>
-  <li>
+  <li data-list-item-id="ee012b81a5bf77eeee8647af4749f73db">
+    You cancel your Server Boost(s)
+  </li>
+  <li data-list-item-id="e351fffe009634e7f8f258d6f25232712">
     Your Nitro (with 2 included Server Boosts) or your Server Boost(s)
     subscription has ended
   </li>
-  <li>The server you have been boosting has been deleted </li>
-  <li>You’ve been removed from the server by an admin or moderator</li>
+  <li data-list-item-id="eb4dcd7875185c35c95cab78373dbb901">
+    The server you have been boosting has been deleted 
+  </li>
+  <li data-list-item-id="eb3cee0ee7e7984e13623b2a672429347">
+    You’ve been removed from the server by an admin or moderator
+  </li>
 </ul>
 <div class="info-box">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you stop boosting a server for any of the listed reasons, you have 72
-    hours to reapply your boosts to a new server in order to maintain your
-    streak. If you do not boost another server within 72 hours, you will lose
-    your streak and our Support Team can not adjust your streak.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >If you stop boosting a server for any of the listed reasons, you have 72
+      hours to reapply your boosts to a new server in order to maintain your
+      streak. If you do not boost another server within 72 hours, you will lose
+      your streak and our Support Team can not adjust your streak.</span
+    ></span
   >
 </div>
 <h1 id="h_01HGX7DJ3486SXSGHT99XVMNFN">How do I Transfer my Server Boosts? </h1>
 <div class="info-box">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >After using your Server Boost, you’ll need to wait 7 days for the cooldown
-    before transferring it to another server.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >After using your Server Boost, you’ll need to wait 7 days for the
+      cooldown before transferring it to another server.</span
+    ></span
   >
 </div>
 <p>
@@ -679,9 +802,11 @@
     height="351"
   />
 </p>
-<h4 id="h_01K0Z1KR0RQHS6QBGHHH00M9X3" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >How to Transfer a Server Boost</span
+<h4 class="wysiwyg-text-align-center" id="h_01K0Z1KR0RQHS6QBGHHH00M9X3">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >How to Transfer a Server Boost</span
+    ></span
   >
 </h4>
 <h1 id="h_01K0Z1N8S2B4NM1ZPQWAR243BR">
@@ -710,9 +835,11 @@
     >Enhanced Role Style</a
   >
   by default, even if your server doesn’t have this Additional Perk unlocked.
-  <span style="color: #0e0e0e" data-darkreader-inline-color=""
-    >This special role helps incentivize members to Boost your server by
-    enhancing how they appear in the server.</span
+  <span style="color: #0e0e0e"
+    ><span data-darkreader-inline-color=""
+      >This special role helps incentivize members to Boost your server by
+      enhancing how they appear in the server.</span
+    ></span
   >
   You can change the color or style at any time. To change the style of this
   role:
@@ -728,12 +855,12 @@
     height="385"
   /> 
 </p>
-<h4 id="h_01K0Z1N8S2A8Y2ACWEEX5F96NJ" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Server Settings</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color=""> option </span>
+<h4 class="wysiwyg-text-align-center" id="h_01K0Z1N8S2A8Y2ACWEEX5F96NJ">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><strong>Server Settings</strong></span
+    ><span data-darkreader-inline-color=""> option </span></span
+  >
 </h4>
 <p>
   2. Navigate to the <strong>Roles</strong> tab and then press the
@@ -757,9 +884,11 @@
     height="636"
   />
 </p>
-<h4 id="h_01K0Z1N8S23S881BJGK094HVDB" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >All Role Styles that are available for the Server Booster role</span
+<h4 class="wysiwyg-text-align-center" id="h_01K0Z1N8S23S881BJGK094HVDB">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >All Role Styles that are available for the Server Booster role</span
+    ></span
   >
 </h4>
 <p>
@@ -774,15 +903,16 @@
   enabled, you’ll see a message in your designated text channel that states
   someone has Boosted the server.
 </p>
-<p id="h_01K0Z1N8S2BZ4BJR4BSMXZZQYW" class="wysiwyg-text-align-center">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/33699329520663"
-      width="380"
-      height="47"
-  /></span>
+<p class="wysiwyg-text-align-center" id="h_01K0Z1N8S2BZ4BJR4BSMXZZQYW">
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/33699329520663"
+        width="380"
+        height="47" /></span
+  ></span>
 </p>
-<h4 id="h_01K0Z1VREWR60TW3NJZ6BHF3JS" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K0Z1VREWR60TW3NJZ6BHF3JS">
   Server Boosting feed showing who boosted the server
 </h4>
 <p>
@@ -805,17 +935,20 @@
   3. Here you can change where the system message is sent to and can also enable
   or disable <strong>Send a message when someone Boosts this server.</strong>
 </p>
-<p id="h_01K0Z1N8S20CHYE1MEVTGV6KFX" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/33699329522071"
-      width="624"
-      height="268"
-  /></span>
+<p class="wysiwyg-text-align-center" id="h_01K0Z1N8S20CHYE1MEVTGV6KFX">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/33699329522071"
+        width="624"
+        height="268" /></span
+  ></span>
 </p>
-<h4 id="h_01K0Z1N8S2VYXV6DTFCWMA053J" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Send a message when someone Boosts this server option</span
+<h4 class="wysiwyg-text-align-center" id="h_01K0Z1N8S2VYXV6DTFCWMA053J">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Send a message when someone Boosts this server option</span
+    ></span
   >
 </h4>
 <h2 id="h_01K0Z1N8S289SF4YTQ6V93G516">
@@ -827,11 +960,19 @@
   your channel list. This powerful management interface lets you:
 </p>
 <ul>
-  <li>View your total available Boosts and how they're currently allocated</li>
-  <li>See your server's current level and active perks</li>
-  <li>Enable new perks if you have available Boosts </li>
-  <li>Reallocate Boosts between levels and additional perks as needed</li>
-  <li>
+  <li data-list-item-id="e50cdc4f68109e7342dcd5b5433ef3b0c">
+    View your total available Boosts and how they're currently allocated
+  </li>
+  <li data-list-item-id="e1c0ac1c8d295000336f4281816639297">
+    See your server's current level and active perks
+  </li>
+  <li data-list-item-id="ed572575ebe1adbc0aaf1f69e5c784b00">
+    Enable new perks if you have available Boosts 
+  </li>
+  <li data-list-item-id="e0cbd961d3e886789058ac2172dc56abe">
+    Reallocate Boosts between levels and additional perks as needed
+  </li>
+  <li data-list-item-id="eee25fb6f0484a661604c387512cfd9cf">
     Configure settings for Enhanced Role Styles and Server Tags once enabled
   </li>
 </ul>
@@ -842,9 +983,13 @@
   <strong>Server Settings </strong>and see:
 </p>
 <ul>
-  <li>Your server’s current level + perks</li>
-  <li>How many people blessed the server with Boosts</li>
-  <li>
+  <li data-list-item-id="e888da19096cbd8c8590ccbaff93a00cb">
+    Your server’s current level + perks
+  </li>
+  <li data-list-item-id="e434623ecfe35fe736abbc07ccbb6d9df">
+    How many people blessed the server with Boosts
+  </li>
+  <li data-list-item-id="e3846261283eea272f4ef0b459355356b">
     And how many more Boosts you need before your server reaches the next level
   </li>
 </ul>
@@ -855,12 +1000,12 @@
     height="488"
   />
 </p>
-<h4 id="h_01K0Z1W2CA0HNERW2YXAJ6R4S4" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Server Boost Status</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color=""> tab</span>
+<h4 class="wysiwyg-text-align-center" id="h_01K0Z1W2CA0HNERW2YXAJ6R4S4">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><strong>Server Boost Status</strong></span
+    ><span data-darkreader-inline-color=""> tab</span></span
+  >
 </h4>
 <h2 id="h_01JXWRKHF311JQS7ZB7ERSKWNW">Grace Periods for Server Boost Loss</h2>
 <p>

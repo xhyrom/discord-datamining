@@ -28,52 +28,23 @@
 </p>
 <h1 id="h_01KG0JPD3XRHYW20YKE1ATKGAB">How To Install the Media Feature Pack</h1>
 <p>
-  The Media Feature Pack can be downloaded for free from
+  The Media Feature Pack can be installed by following the instructions on
+  Microsoft’s
   <a
-    href="https://www.microsoft.com/en-us/download/details.aspx?id=48231"
+    href="https://support.microsoft.com/windows/media-feature-pack-for-windows-10-11-n-february-2023-2aaf89b8-f9d3-4322-98d0-612c9bea9c01"
     target="_blank"
     rel="noopener noreferrer"
-    >Microsoft’s Download Center</a
+    >help page</a
   >.
 </p>
 <p>
-  1. Choose the appropriate language and file to download for your system. Most
-  users will need the x64 file. 
+  1. Choose the appropriate steps for your Windows version. If you are on
+  Windows 10 (N or KN), follow the Windows 10N flow. Otherwise, if you are on
+  Windows 11 (N or KN), follow the Windows 11 N flow.
 </p>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 1396/351"
-    src="https://support.discord.com/hc/article_attachments/37976093732119"
-    alt="Media Feature Pack for Windows N and KN.png"
-    width="1396"
-    height="351"
-  />
-</figure>
-<h4 class="wysiwyg-text-align-center" id="h_01KG0MJTBC4XZZRGQ9Y7DDR17T">
-  <span id="docs-internal-guid-4f853f96-7fff-8ec3-f5dd-f060cb0da7f1"
-    >The language selection page when downloading the Media Feature Pack for
-    Windows N and KN.</span
-  >
-</h4>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 840/291"
-    src="https://support.discord.com/hc/article_attachments/37976093734039"
-    alt="Media Feature Pack download page.png"
-    width="840"
-    height="291"
-  />
-</figure>
-<h4 class="wysiwyg-text-align-center" id="h_01KG0MJJ2VWNHFD344HV5QYW7Q">
-  <span id="docs-internal-guid-4f853f96-7fff-8ec3-f5dd-f060cb0da7f1"
-    >A list of the two file options to download for the Media Feature
-    Pack.</span
-  >
-</h4>
 <p>
   <span id="docs-internal-guid-4f853f96-7fff-8ec3-f5dd-f060cb0da7f1"
-    >2. Once downloaded, launch the installer and go through the installation
-    process.</span
+    >2. Once installed, restart your system.</span
   >
 </p>
 <h1 id="h_01KG0JVBC0DWVH1WFQR70Q69DE">
@@ -94,5 +65,19 @@
     >A: If you are on Windows N or KN, we recommend installing this free feature
     pack as it may improve Discord video quality depending on what hardware you
     have and who’s in the video call. </span
+  >
+</p>
+<p>
+  <span id="docs-internal-guid-4f853f96-7fff-8ec3-f5dd-f060cb0da7f1"
+    ><strong
+      >Q: I don’t have Windows KN, but the instructions are for Windows N. Will
+      this feature pack work on my operating system? </strong
+    ></span
+  >
+</p>
+<p>
+  <span id="docs-internal-guid-4f853f96-7fff-8ec3-f5dd-f060cb0da7f1"
+    >A: The Windows N instructions should work on both Windows N and KN
+    versions. </span
   ><br /> 
 </p>

@@ -26,7 +26,7 @@
   </p>
   <ul>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e68582506701bf14454ef674b9712b8bf"
     >
       <a href="#h_01JFAW7EGYW1KQB4PEWKJ9MJ0G"
@@ -34,7 +34,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e2e5a7b7a506d3264d64301de55e7eba5"
     >
       <a href="#h_01JFAWB392Z58VMP5PDW63222E"
@@ -42,7 +42,7 @@
       >
       <ul>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e8d240a9003a5afe753e722d6dbebc192"
         >
           <a href="#h_01K81XCHEW2RZVY55ARAVP9CTX"
@@ -50,7 +50,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="ed185dd4aff67dcda08855cd8249d4300"
         >
           <a href="#h_01K81XC24B8XMAJC8DDYEV3T9S"
@@ -58,7 +58,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e45accba77a6d050a4b35b7fffe5d1c6a"
         >
           <a href="#h_01K81XEKNRJAKXDNZE2NNVQN03"><strong>On Mobile</strong></a>
@@ -66,13 +66,13 @@
       </ul>
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="eb04edaf4a37e8bb0511521a6383448d3"
     >
       <a href="#h_01JHTXTYSDN5VK49DME9MSS03Z"><strong>Quest Types</strong></a>
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="ecffebcb01d3cca492d35f2e81f0ce477"
     >
       <a href="#h_01JCM0891G5K7DGK0GVCQ02EXS"
@@ -80,7 +80,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="ea16cff2a23dcf6ac3f901abbfd05f372"
     >
       <a href="#h_01HVPBZR5F0EKW79KK7RGEK1HG"
@@ -88,7 +88,7 @@
       >
       <ul>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="ece24e9ea8529a55f6cb0c864af5b6acd"
         >
           <a href="#h_01HVPBZR5FP77BF55STCFXMRS9"
@@ -96,7 +96,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="eac03f05460e406feca8a3f3225882387"
         >
           <a href="#h_01HVPBZR5FZ4PEXTW08Q4RYP41"
@@ -106,7 +106,7 @@
       </ul>
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="ead2dde432ad6e20067b9e4c9aeba79f4"
     >
       <a href="#h_01JVDE7SJ7RDVYTXVFDR73AQRG"
@@ -114,7 +114,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e38e1effff7fb3a33d9c61f0a9cdd549a"
     >
       <a href="#h_01HVPBZR5FBM7QBFR9KDBASXP5"
@@ -261,10 +261,13 @@
 <p>Discord offers two types of Quests:</p>
 <div>
   <figure class="wysiwyg-table wysiwyg-table-align-left" style="width: 100%">
-    <table class="wysiwyg-table-resized">
+    <table
+      class="wysiwyg-table-resized"
+      style="margin-left: 0px; margin-right: auto"
+    >
       <colgroup>
-        <col style="width: 28.36%" />
-        <col style="width: 71.64%" />
+        <col style="width: 28%" />
+        <col style="width: 72%" />
       </colgroup>
       <tbody>
         <tr>
@@ -341,10 +344,13 @@
 <p>Once you have completed a Quest, you can claim the reward on Discord:</p>
 <div>
   <figure class="wysiwyg-table wysiwyg-table-align-left" style="width: 100%">
-    <table class="wysiwyg-table-resized">
+    <table
+      class="wysiwyg-table-resized"
+      style="margin-left: 0px; margin-right: auto"
+    >
       <colgroup>
-        <col style="width: 33.66%" />
-        <col style="width: 66.34%" />
+        <col style="width: 34%" />
+        <col style="width: 66%" />
       </colgroup>
       <tbody>
         <tr>
@@ -726,3 +732,12 @@
   app. Some Quests are available on both mobile and desktop, while others may be
   limited to one platform. 
 </p>
+<p><strong>Q: How are Quests’ Orbs reward amounts determined?</strong></p>
+<p>
+  A: We regularly review the Quests program to ensure it continues to deliver a
+  great experience for our community. Orbs reward amounts are set to provide
+  meaningful value and may vary depending on the type of Quest. As the program
+  evolves, reward amounts can be updated, but Orbs will continue to unlock the
+  same premium Discord features and items.
+</p>
+<p><br /> </p>
