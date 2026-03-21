@@ -25,12 +25,12 @@
     {
       "id": 96196709002,
       "name": "Careers Site Department",
-      "value": null,
+      "value": "Product Engineering",
       "value_type": "single_select"
     }
   ],
   "id": 8187999002,
-  "updated_at": "2026-02-03T12:46:35-05:00",
+  "updated_at": "2026-03-20T12:09:33-04:00",
   "requisition_id": "R-107020",
   "title": "Director of Engineering, Developer Ecosystem",
   "company_name": "Discord",
