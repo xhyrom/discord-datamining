@@ -86,34 +86,40 @@ export class Jobs implements Module {
     const oldDiscord = JSON.parse(
       (await readFile(join(this.baseDir, "discord.json"))) ?? "{}",
     );
-    const oldDiscordNetherlands = JSON.parse(
-      (await readFile(join(this.baseDir, "discord_netherlands.json"))) ?? "{}",
-    );
+    // const oldDiscordNetherlands = JSON.parse(
+    //   (await readFile(join(this.baseDir, "discord_netherlands.json"))) ?? "{}",
+    // );
     const discord = await this.getJobs("discord");
-    const discordNetherlands = await this.getJobs("discordnetherlands");
+    //const discordNetherlands = await this.getJobs("discordnetherlands");
 
     await writeFile(
       join(this.baseDir, "discord.json"),
       JSON.stringify(discord, null, 2),
     );
 
-    await writeFile(
-      join(this.baseDir, "discord_netherlands.json"),
-      JSON.stringify(discordNetherlands, null, 2),
-    );
+    // await writeFile(
+    //   join(this.baseDir, "discord_netherlands.json"),
+    //   JSON.stringify(discordNetherlands, null, 2),
+    // );
 
     await this.writeJobs("discord", discord.jobs);
-    await this.writeJobs("discord_netherlands", discordNetherlands.jobs);
+    // await this.writeJobs("discord_netherlands", discordNetherlands.jobs);
 
     const result = await pushToGit("💼 Jobs has been updated");
 
     if (!result?.update?.hash) return;
+    // await wumpusCentralSend(
+    //   mergeDiffs<GreenHouseJob>(
+    //     createDiff(oldDiscord.jobs, discord.jobs, "id", ["updated_at"]),
+    //     createDiff(oldDiscordNetherlands.jobs, discordNetherlands.jobs, "id", [
+    //       "updated_at",
+    //     ]),
+    //   ),
+    //   `https://github.com/xhyrom/discord-datamining/commit/${result.update.hash.to}`,
+    // );
     await wumpusCentralSend(
       mergeDiffs<GreenHouseJob>(
         createDiff(oldDiscord.jobs, discord.jobs, "id", ["updated_at"]),
-        createDiff(oldDiscordNetherlands.jobs, discordNetherlands.jobs, "id", [
-          "updated_at",
-        ]),
       ),
       `https://github.com/xhyrom/discord-datamining/commit/${result.update.hash.to}`,
     );
