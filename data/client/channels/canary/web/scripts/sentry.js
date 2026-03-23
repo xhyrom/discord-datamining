@@ -6447,7 +6447,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-a3df0608767fa90b11cca5efd2614ea5841dbb1f",
+            release: "discord_web-d9e453f6aa9db59680317c946dee06f43be30531",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6514,8 +6514,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "515047"),
-            o.NA("builtAt", String("1774298992739"));
+            o.NA("buildNumber", "515074"),
+            o.NA("builtAt", String("1774300016198"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -10281,7 +10281,7 @@
               MOBILE_UNREADBAR_TEXT_DEFAULT: {
                 category: "generic",
                 [a.DARK]: { raw: "BRAND_360", opacity: 1 },
-                [a.LIGHT]: { raw: "BRAND_500", opacity: 1 },
+                [a.LIGHT]: { raw: "BRAND_530", opacity: 1 },
                 [a.MIDNIGHT]: { raw: "BRAND_400", opacity: 1 },
                 [a.DARKER]: { raw: "BRAND_360", opacity: 1 },
               },
@@ -10842,7 +10842,7 @@
               TEXT_BRAND: {
                 category: "text",
                 [a.DARK]: { raw: "BRAND_360", opacity: 1 },
-                [a.LIGHT]: { raw: "BRAND_500", opacity: 1 },
+                [a.LIGHT]: { raw: "BRAND_530", opacity: 1 },
                 [a.MIDNIGHT]: { raw: "BRAND_400", opacity: 1 },
                 [a.DARKER]: { raw: "BRAND_360", opacity: 1 },
               },
@@ -39483,4 +39483,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.357871f3322d6bbb.js.map
+//# sourceMappingURL=sentry.aeedaf71bc27a8e8.js.map
