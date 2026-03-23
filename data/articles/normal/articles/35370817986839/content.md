@@ -75,6 +75,12 @@
   The server owner or admin can use any available applied Server Boosts to
   unlock Game Servers.
 </p>
+<div class="info-box">
+  <strong>Note:</strong> We regularly review and adjust the Boost requirements
+  for perks, including Game Servers. If you remove a Boosting perk, the amount
+  of Boosts required may be different if you want to reactivate it. The amount
+  of Boosts required will always be clear before you activate a perk.
+</div>
 <p>
   1. With the correct server selected, navigate to the
   <strong>Server Boosts </strong>tab in the upper-left corner. Only server
