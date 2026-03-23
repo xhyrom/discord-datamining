@@ -14765,6 +14765,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   border: 1px solid var(--border-subtle);
   border-radius: 8px;
   box-shadow: var(--shadow-low);
+  cursor: pointer;
   padding: var(--space-12);
 }
 .listItemExpanded_bb27fe {
@@ -71915,4 +71916,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.4081f9d11de233dc.css.map*/
+/*# sourceMappingURL=web.a3b19b95824d9d5a.css.map*/
