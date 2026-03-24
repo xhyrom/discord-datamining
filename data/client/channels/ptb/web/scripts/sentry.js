@@ -5721,6 +5721,7 @@
           (a.VOICE_PANEL_TAB_OPENED = "voice_panel_tab_opened"),
           (a.VOICE_PANEL_SCREENSHARE_BUTTON_TAPPED =
             "voice_panel_screenshare_button_tapped"),
+          (a.VOICE_PANEL_LAYOUT_DESYNC = "voice_panel_layout_desync"),
           (a.ANNOUNCEMENT_MESSAGE_LINK_CLICKED =
             "announcement_message_link_clicked"),
           (a.ANNOUNCEMENT_MESSAGE_VIEWED = "announcement_message_viewed"),
@@ -6448,7 +6449,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-03-23-8812d412319846940158fb008f76d0055e3c7022-discord_web",
+              "2026-03-24-c9da999332f5450aeeb34159b6b6a51472f7908e-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6515,8 +6516,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "514705"),
-            o.NA("builtAt", String("1774250357348"));
+            o.NA("buildNumber", "515425"),
+            o.NA("builtAt", String("1774336736816"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -10282,7 +10283,7 @@
               MOBILE_UNREADBAR_TEXT_DEFAULT: {
                 category: "generic",
                 [a.DARK]: { raw: "BRAND_360", opacity: 1 },
-                [a.LIGHT]: { raw: "BRAND_500", opacity: 1 },
+                [a.LIGHT]: { raw: "BRAND_530", opacity: 1 },
                 [a.MIDNIGHT]: { raw: "BRAND_400", opacity: 1 },
                 [a.DARKER]: { raw: "BRAND_360", opacity: 1 },
               },
@@ -10843,7 +10844,7 @@
               TEXT_BRAND: {
                 category: "text",
                 [a.DARK]: { raw: "BRAND_360", opacity: 1 },
-                [a.LIGHT]: { raw: "BRAND_500", opacity: 1 },
+                [a.LIGHT]: { raw: "BRAND_530", opacity: 1 },
                 [a.MIDNIGHT]: { raw: "BRAND_400", opacity: 1 },
                 [a.DARKER]: { raw: "BRAND_360", opacity: 1 },
               },
@@ -39484,4 +39485,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.e98a7f3579284c90.js.map
+//# sourceMappingURL=sentry.8209fab2abe6da28.js.map
