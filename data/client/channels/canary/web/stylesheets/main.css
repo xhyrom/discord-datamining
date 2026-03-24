@@ -70359,6 +70359,12 @@ html.disable-forced-colors * {
   src: url(/assets/b4099c935ba38494.woff2) format("woff2");
 }
 @font-face {
+  font-family: Delicious Handrawn;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/54ea0efe31f53f3c.woff2) format("woff2");
+}
+@font-face {
   font-family: Cherry Bomb One;
   font-style: normal;
   font-weight: 400;
@@ -71726,4 +71732,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f22531514202094e.css.map*/
+/*# sourceMappingURL=web.a483c1e0919a1ab3.css.map*/
