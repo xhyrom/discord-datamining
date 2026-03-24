@@ -16068,7 +16068,7 @@ div.modalHeader_c28af8 {
   object-fit: cover;
   width: 100%;
 }
-.questRewardTileAssetLazyVideo__28141 {
+.questRewardTileAbsolutePosition__28141 {
   position: absolute;
 }
 .questRewardTileAssetStatic__28141 {
@@ -52832,8 +52832,6 @@ html.disable-forced-colors * {
   --spotify-hsl: 141.154 calc(var(--saturation-factor, 1) * 72.897%) 41.961%;
   --steam: hsl(var(--steam-hsl) / 1);
   --steam-hsl: 214.615 calc(var(--saturation-factor, 1) * 35.135%) 14.51%;
-  --transparent: hsl(var(--transparent-hsl) / 0);
-  --transparent-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
   --twitch: hsl(var(--twitch-hsl) / 1);
   --twitch-hsl: 264.13 calc(var(--saturation-factor, 1) * 100%) 63.922%;
   --twitch-secondary: hsl(var(--twitch-secondary-hsl) / 1);
@@ -68922,6 +68920,8 @@ html.disable-forced-colors * {
   --opacity-black-92-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
   --opacity-black-96: hsl(var(--opacity-black-96-hsl) / 0.9607843137254902);
   --opacity-black-96-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
+  --transparent: hsl(var(--transparent-hsl) / 0);
+  --transparent-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
   --red-100: hsl(var(--red-100-hsl) / 1);
   --red-100-hsl: 350 calc(var(--saturation-factor, 1) * 75%) 98.431%;
   --red-130: hsl(var(--red-130-hsl) / 1);
@@ -71732,4 +71732,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.a483c1e0919a1ab3.css.map*/
+/*# sourceMappingURL=web.2658ce632eee72fb.css.map*/
