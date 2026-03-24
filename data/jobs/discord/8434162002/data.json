@@ -26,6 +26,18 @@
       "name": "Careers Site Department",
       "value": null,
       "value_type": "single_select"
+    },
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": null,
+      "value_type": "single_select"
     }
   ],
   "id": 8434162002,
