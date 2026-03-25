@@ -30,7 +30,7 @@
     }
   ],
   "id": 8323992002,
-  "updated_at": "2026-03-23T18:57:04-04:00",
+  "updated_at": "2026-03-25T15:31:28-04:00",
   "requisition_id": "R-107087",
   "title": "Staff Product Marketing Manager, Nitro",
   "company_name": "Discord",
@@ -47,9 +47,9 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }
