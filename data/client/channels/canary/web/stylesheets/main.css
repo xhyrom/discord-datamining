@@ -19522,6 +19522,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   margin-block: auto;
   margin-inline: 8px 16px;
 }
+.leadingAction__0b69f {
+  margin-inline-end: 8px;
+}
 .lockIcon__0b69f {
   color: var(--text-strong);
 }
@@ -19692,6 +19695,161 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   to {
     max-width: 200px;
     opacity: 1;
+  }
+}
+.wishlistButton__979b1 {
+  align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: var(--control-overlay-secondary-background-default);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  transition: background-color 50ms ease-in;
+}
+.wishlistButton__979b1.disabled__979b1 {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.wishlistButton__979b1:not(.disabled__979b1):hover {
+  background: var(--control-overlay-secondary-background-hover);
+  transition: background-color 0.15s ease-out;
+}
+.wishlistButton__979b1:not(.disabled__979b1):active {
+  background: var(--control-overlay-secondary-background-active);
+  transition: background-color 0.15s ease-out;
+}
+.xs__979b1 {
+  border-radius: 6px;
+  height: 24px;
+  width: 24px;
+}
+.sm__979b1 {
+  height: 32px;
+  width: 32px;
+}
+.md__979b1 {
+  height: 40px;
+  width: 40px;
+}
+.theme-light .wishlistButton__979b1.variantDefault__979b1 {
+  background: hsl(var(--primary-100-hsl) / 0.66);
+  border: 1px solid var(--border-subtle);
+}
+.theme-light
+  .wishlistButton__979b1.variantDefault__979b1:not(.disabled__979b1):hover {
+  background: hsl(var(--primary-100-hsl) / 1);
+}
+.theme-light
+  .wishlistButton__979b1.variantDefault__979b1:not(.disabled__979b1):active {
+  background: hsl(var(--primary-100-hsl) / 0.52);
+}
+.normalIconColor__979b1 {
+  fill: var(--icon-strong);
+  transition: fill 50ms ease-in;
+}
+.variantSecondaryOverlay__979b1 .normalIconColor__979b1 {
+  fill: var(--white);
+}
+.normalIconColor__979b1.wishlistedOrAnimating__979b1 {
+  fill: #ec1060;
+  transition: fill 0.15s ease-out;
+}
+.disabled__979b1 .normalIconColor__979b1 {
+  fill: var(--icon-subtle);
+}
+.toastIcon__979b1 {
+  flex-shrink: 0;
+  margin-inline-end: 4px;
+}
+.iconContainer__979b1,
+.toastIcon__979b1 {
+  align-items: center;
+  display: flex;
+}
+.iconContainer__979b1 {
+  justify-content: center;
+  position: relative;
+}
+.iconWrapper__979b1 {
+  display: flex;
+}
+.animationOverlay__979b1 {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(0);
+  transform-origin: center;
+}
+.animationOverlay__979b1 path {
+  fill: var(--white);
+}
+.full-motion
+  .wishlistButton__979b1:active
+  .canAnimate__979b1
+  .animationOverlay__979b1 {
+  animation: holdScale__979b1 0.1s cubic-bezier(0.67, 0, 0.26, 1) forwards;
+  animation-delay: 50ms;
+}
+.full-motion .clickAnimation__979b1 {
+  animation: clickScale__979b1 0.4s cubic-bezier(0.67, 0, 0.26, 1) forwards;
+}
+.full-motion .clickAnimation__979b1 path {
+  animation: clickColor__979b1 0.4s cubic-bezier(0.67, 0, 0.26, 1) forwards;
+}
+.full-motion .wishlistButton__979b1:focus-visible .canHover__979b1,
+.full-motion .wishlistButton__979b1:hover .canHover__979b1 {
+  animation: hoverPulse__979b1 1.25s cubic-bezier(0.23, 0, 0.58, 1) infinite;
+}
+@keyframes holdScale__979b1 {
+  0% {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(0.25);
+  }
+}
+@keyframes clickScale__979b1 {
+  0% {
+    transform: scale(0);
+  }
+  62.5% {
+    transform: scale(1.35);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes clickColor__979b1 {
+  0%,
+  20% {
+    fill: var(--white);
+  }
+  70%,
+  to {
+    fill: #ec1060;
+  }
+}
+@keyframes hoverPulse__979b1 {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  80%,
+  to {
+    transform: scale(1);
   }
 }
 .rowContainer__1e702 {
@@ -20077,6 +20235,12 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   border-radius: 3px;
   flex-shrink: 0;
   margin-inline-start: auto;
+}
+.wishlistButton_c656ac {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: var(--control-secondary-background-hover);
+  border: 1px solid var(--control-secondary-border-hover);
 }
 .soundmojiViewMore_c656ac {
   align-self: center;
@@ -23290,6 +23454,12 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 }
 .disabled_da9eb2 {
   pointer-events: none;
+}
+.wishlistButton__61424 {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: var(--control-secondary-background-hover);
+  border: 1px solid var(--control-secondary-border-hover);
 }
 .sectionContainer__61424 {
   align-items: center;
@@ -31666,161 +31836,6 @@ html:not(.chat-input) .inputInner_b1f01d {
   height: 100%;
   justify-content: center;
   width: 100%;
-}
-.wishlistButton__979b1 {
-  align-items: center;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  background: var(--control-overlay-secondary-background-default);
-  border: 1px solid var(--border-muted);
-  border-radius: var(--radius-sm);
-  box-sizing: border-box;
-  cursor: pointer;
-  display: flex;
-  flex-shrink: 0;
-  justify-content: center;
-  transition: background-color 50ms ease-in;
-}
-.wishlistButton__979b1.disabled__979b1 {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-.wishlistButton__979b1:not(.disabled__979b1):hover {
-  background: var(--control-overlay-secondary-background-hover);
-  transition: background-color 0.15s ease-out;
-}
-.wishlistButton__979b1:not(.disabled__979b1):active {
-  background: var(--control-overlay-secondary-background-active);
-  transition: background-color 0.15s ease-out;
-}
-.xs__979b1 {
-  border-radius: 6px;
-  height: 24px;
-  width: 24px;
-}
-.sm__979b1 {
-  height: 32px;
-  width: 32px;
-}
-.md__979b1 {
-  height: 40px;
-  width: 40px;
-}
-.theme-light .wishlistButton__979b1.variantDefault__979b1 {
-  background: hsl(var(--primary-100-hsl) / 0.66);
-  border: 1px solid var(--border-subtle);
-}
-.theme-light
-  .wishlistButton__979b1.variantDefault__979b1:not(.disabled__979b1):hover {
-  background: hsl(var(--primary-100-hsl) / 1);
-}
-.theme-light
-  .wishlistButton__979b1.variantDefault__979b1:not(.disabled__979b1):active {
-  background: hsl(var(--primary-100-hsl) / 0.52);
-}
-.normalIconColor__979b1 {
-  fill: var(--icon-strong);
-  transition: fill 50ms ease-in;
-}
-.variantSecondaryOverlay__979b1 .normalIconColor__979b1 {
-  fill: var(--white);
-}
-.normalIconColor__979b1.wishlistedOrAnimating__979b1 {
-  fill: #ec1060;
-  transition: fill 0.15s ease-out;
-}
-.disabled__979b1 .normalIconColor__979b1 {
-  fill: var(--icon-subtle);
-}
-.toastIcon__979b1 {
-  flex-shrink: 0;
-  margin-inline-end: 4px;
-}
-.iconContainer__979b1,
-.toastIcon__979b1 {
-  align-items: center;
-  display: flex;
-}
-.iconContainer__979b1 {
-  justify-content: center;
-  position: relative;
-}
-.iconWrapper__979b1 {
-  display: flex;
-}
-.animationOverlay__979b1 {
-  align-items: center;
-  display: flex;
-  inset: 0;
-  justify-content: center;
-  pointer-events: none;
-  position: absolute;
-  transform: scale(0);
-  transform-origin: center;
-}
-.animationOverlay__979b1 path {
-  fill: var(--white);
-}
-.full-motion
-  .wishlistButton__979b1:active
-  .canAnimate__979b1
-  .animationOverlay__979b1 {
-  animation: holdScale__979b1 0.1s cubic-bezier(0.67, 0, 0.26, 1) forwards;
-  animation-delay: 50ms;
-}
-.full-motion .clickAnimation__979b1 {
-  animation: clickScale__979b1 0.4s cubic-bezier(0.67, 0, 0.26, 1) forwards;
-}
-.full-motion .clickAnimation__979b1 path {
-  animation: clickColor__979b1 0.4s cubic-bezier(0.67, 0, 0.26, 1) forwards;
-}
-.full-motion .wishlistButton__979b1:focus-visible .canHover__979b1,
-.full-motion .wishlistButton__979b1:hover .canHover__979b1 {
-  animation: hoverPulse__979b1 1.25s cubic-bezier(0.23, 0, 0.58, 1) infinite;
-}
-@keyframes holdScale__979b1 {
-  0% {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(0.25);
-  }
-}
-@keyframes clickScale__979b1 {
-  0% {
-    transform: scale(0);
-  }
-  62.5% {
-    transform: scale(1.35);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@keyframes clickColor__979b1 {
-  0%,
-  20% {
-    fill: var(--white);
-  }
-  70%,
-  to {
-    fill: #ec1060;
-  }
-}
-@keyframes hoverPulse__979b1 {
-  0% {
-    transform: scale(1);
-  }
-  20% {
-    transform: scale(1.1);
-  }
-  60% {
-    transform: scale(0.9);
-  }
-  80%,
-  to {
-    transform: scale(1);
-  }
 }
 .buttonContainer__9ce99 {
   position: absolute;
@@ -51365,6 +51380,15 @@ html.disable-forced-colors * {
 .closeCircle_cf6da1:hover {
   color: var(--interactive-text-hover);
 }
+.footerUpsellRow_cf6da1 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.footerWishlistButton_cf6da1 {
+  background: var(--control-secondary-background-hover);
+  border: 1px solid var(--control-secondary-border-hover);
+}
 .bannerUpsell_cf6da1 {
   align-items: center;
   background-image: var(--custom-premium-colors-premium-gradient-tier-2);
@@ -51724,6 +51748,16 @@ html.disable-forced-colors * {
 }
 .controlLabelInput__5a2df::placeholder {
   color: var(--input-placeholder-text-default);
+}
+.footerUpsellRow__5a2df {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+.footerWishlistButton__5a2df {
+  background: var(--control-secondary-background-hover);
+  border: 1px solid var(--control-secondary-border-hover);
 }
 .mobileContainer__26f4a {
   position: absolute;
@@ -71733,4 +71767,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.a8a67a47ffe50e3f.css.map*/
+/*# sourceMappingURL=web.70785aeed78e1a3f.css.map*/
