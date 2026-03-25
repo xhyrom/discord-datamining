@@ -4136,6 +4136,8 @@
           (a.EXTERNAL_FINGERPRINT_DROPPED = "external_fingerprint_dropped"),
           (a.EXTERNAL_DYNAMIC_LINK_RECEIVED = "external_dynamic_link_received"),
           (a.DEEP_LINK_CLICKED = "deep_link_clicked"),
+          (a.EXTERNAL_INSTALLATION_ID_RECEIVED =
+            "external_installation_id_received"),
           (a.VOICE_CHANNEL_INVITE_SENT = "voice_channel_invite_sent"),
           (a.INVITE_OPENED = "invite_opened"),
           (a.INVITE_VIEWED = "invite_viewed"),
@@ -6449,7 +6451,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-03-24-c9da999332f5450aeeb34159b6b6a51472f7908e-discord_web",
+              "2026-03-25-9b0dc42dea4ce905c514e5bdd729f8063e73f46f-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6516,8 +6518,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "515425"),
-            o.NA("builtAt", String("1774336736816"));
+            o.NA("buildNumber", "516242"),
+            o.NA("builtAt", String("1774423151534"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6816,7 +6818,8 @@
             null == window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST &&
             null == window.GLOBAL_ENV.PUBLIC_PATH &&
             null == window.GLOBAL_ENV.MUX_ENV_KEY &&
-            null == window.GLOBAL_ENV.WEBAUTHN_ORIGIN)
+            null == window.GLOBAL_ENV.WEBAUTHN_ORIGIN &&
+            null == window.GLOBAL_ENV.NATIVE_WEBSOCKET_ORIGIN)
         )
           throw (
             (window.alert("Global environment variables not set!"),
@@ -39485,4 +39488,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.8209fab2abe6da28.js.map
+//# sourceMappingURL=sentry.11cb1e25a82c6abd.js.map

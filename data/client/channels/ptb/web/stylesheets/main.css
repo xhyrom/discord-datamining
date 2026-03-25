@@ -16068,7 +16068,7 @@ div.modalHeader_c28af8 {
   object-fit: cover;
   width: 100%;
 }
-.questRewardTileAssetLazyVideo__28141 {
+.questRewardTileAbsolutePosition__28141 {
   position: absolute;
 }
 .questRewardTileAssetStatic__28141 {
@@ -22852,6 +22852,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   transition: background 0.15s ease-out;
   transition-property: box-shadow, background;
 }
+.result__2dc39:focus-within .favButton__2dc39,
 .result__2dc39:hover .favButton__2dc39 {
   opacity: 1;
   transform: none;
@@ -52832,8 +52833,6 @@ html.disable-forced-colors * {
   --spotify-hsl: 141.154 calc(var(--saturation-factor, 1) * 72.897%) 41.961%;
   --steam: hsl(var(--steam-hsl) / 1);
   --steam-hsl: 214.615 calc(var(--saturation-factor, 1) * 35.135%) 14.51%;
-  --transparent: hsl(var(--transparent-hsl) / 0);
-  --transparent-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
   --twitch: hsl(var(--twitch-hsl) / 1);
   --twitch-hsl: 264.13 calc(var(--saturation-factor, 1) * 100%) 63.922%;
   --twitch-secondary: hsl(var(--twitch-secondary-hsl) / 1);
@@ -68922,6 +68921,8 @@ html.disable-forced-colors * {
   --opacity-black-92-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
   --opacity-black-96: hsl(var(--opacity-black-96-hsl) / 0.9607843137254902);
   --opacity-black-96-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
+  --transparent: hsl(var(--transparent-hsl) / 0);
+  --transparent-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
   --red-100: hsl(var(--red-100-hsl) / 1);
   --red-100-hsl: 350 calc(var(--saturation-factor, 1) * 75%) 98.431%;
   --red-130: hsl(var(--red-130-hsl) / 1);
@@ -70359,6 +70360,12 @@ html.disable-forced-colors * {
   src: url(/assets/b4099c935ba38494.woff2) format("woff2");
 }
 @font-face {
+  font-family: Delicious Handrawn;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/54ea0efe31f53f3c.woff2) format("woff2");
+}
+@font-face {
   font-family: Cherry Bomb One;
   font-style: normal;
   font-weight: 400;
@@ -71726,4 +71733,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f22531514202094e.css.map*/
+/*# sourceMappingURL=web.a8a67a47ffe50e3f.css.map*/
