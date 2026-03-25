@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Software Engineer, Developer Success
+## Senior Full-Stack Engineer, Developer Success
 
 **Location:** San Francisco Bay Area
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8402906002](https://discord.com/jobs/8402906002)
 
-**Updated At:** Fri, 20 Mar 2026 16:11:08 GMT
+**Updated At:** Wed, 25 Mar 2026 18:18:30 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.People come to Discord before, during, and after gaming, and we want to make that experience even better. The Developer Success team is building the tools for game developers to make that happen by harnessing the power of Discord from right within their games. We believe that gaming is better when playing with your friends and aim to foster better and deeper relationships through that. This is also reflected in how we work! Our engineering culture believes that great teams are built through collaboration and trust. Come and join us!
