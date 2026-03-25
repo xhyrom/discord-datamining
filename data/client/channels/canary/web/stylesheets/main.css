@@ -19370,7 +19370,7 @@ img.thumbnail__0f2e8 {
 }
 .wishlistButton__979b1.disabled__979b1 {
   cursor: not-allowed;
-  opacity: 0.5;
+  filter: brightness(110%);
 }
 .wishlistButton__979b1:not(.disabled__979b1):hover {
   background: var(--control-overlay-secondary-background-hover);
@@ -19417,6 +19417,7 @@ img.thumbnail__0f2e8 {
   transition: fill 0.15s ease-out;
 }
 .disabled__979b1 .normalIconColor__979b1 {
+  opacity: 0.5;
   fill: var(--icon-subtle);
 }
 .toastIcon__979b1 {
@@ -71426,4 +71427,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.c39ad8ff4a3bcc4b.css.map*/
+/*# sourceMappingURL=web.5a6c556e203c63a0.css.map*/
