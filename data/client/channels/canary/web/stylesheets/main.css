@@ -22852,6 +22852,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   transition: background 0.15s ease-out;
   transition-property: box-shadow, background;
 }
+.result__2dc39:focus-within .favButton__2dc39,
 .result__2dc39:hover .favButton__2dc39 {
   opacity: 1;
   transform: none;
@@ -71732,4 +71733,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.2658ce632eee72fb.css.map*/
+/*# sourceMappingURL=web.a8a67a47ffe50e3f.css.map*/
