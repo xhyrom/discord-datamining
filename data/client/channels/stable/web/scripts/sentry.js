@@ -3200,7 +3200,6 @@
           REACTION_WITH_TYPE: (e, t, r, a, i) =>
             `/channels/${e}/messages/${t}/reactions/${r}/${i}/${a}`,
           SEARCH_GUILD: (e) => `/guilds/${e}/messages/search`,
-          SEARCH_FAVORITES: "/search/favorites",
           SEARCH_TABS_GUILD: (e) => `/guilds/${e}/messages/search/tabs`,
           SEARCH_TABS_DMS: "/users/@me/messages/search/tabs",
           CHANGELOG_MESSAGES: "/changelogs/@me/messages",
@@ -4136,6 +4135,8 @@
           (a.EXTERNAL_FINGERPRINT_DROPPED = "external_fingerprint_dropped"),
           (a.EXTERNAL_DYNAMIC_LINK_RECEIVED = "external_dynamic_link_received"),
           (a.DEEP_LINK_CLICKED = "deep_link_clicked"),
+          (a.EXTERNAL_INSTALLATION_ID_RECEIVED =
+            "external_installation_id_received"),
           (a.VOICE_CHANNEL_INVITE_SENT = "voice_channel_invite_sent"),
           (a.INVITE_OPENED = "invite_opened"),
           (a.INVITE_VIEWED = "invite_viewed"),
@@ -4470,6 +4471,7 @@
           (a.PAYMENT_FLOW_FAILED = "payment_flow_failed"),
           (a.PAYMENT_FLOW_CANCELED = "payment_flow_canceled"),
           (a.PAYMENT_FLOW_LOADED = "payment_flow_loaded"),
+          (a.PAYMENT_FLOW_ERROR = "payment_flow_error"),
           (a.PAYMENT_REQUEST_LOADED = "payment_request_loaded"),
           (a.PAYMENT_REQUEST_COMPLETED = "payment_request_completed"),
           (a.GIFT_CATEGORY_SELECT_MODAL_OPENED =
@@ -4531,10 +4533,12 @@
           (a.STREAM_SETTINGS_UPDATE = "stream_settings_update"),
           (a.VIDEO_INPUT_INITIALIZED = "video_input_initialized"),
           (a.AUDIO_INPUT_INITIALIZED = "audio_input_initialized"),
+          (a.AUDIO_EFFECTS_PROBE_COMPLETED = "audio_effects_probe_completed"),
           (a.NOTIFY_STREAM_SETTING_UPDATE = "notify_stream_setting_update"),
           (a.SECURE_FRAMES_TRANSITION = "secure_frames_transition"),
           (a.MLS_FAILURES = "mls_failures"),
           (a.AV_ERROR_REPORTED = "av_error_reported"),
+          (a.DEBUG_LOG_UPLOADED = "debug_log_uploaded"),
           (a.VIDEO_CALL_ENDED = "video_call_ended"),
           (a.VIDEO_SPINNER_SHOWN_V2 = "video_spinner_shown_v2"),
           (a.VIDEO_TOGGLED = "video_toggled"),
@@ -6449,7 +6453,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-03-24-c9da999332f5450aeeb34159b6b6a51472f7908e-discord_web",
+              "2026-03-26-dcd02800a2baace9d76446bfbd1421c5ee359df9-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6516,8 +6520,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "515425"),
-            o.NA("builtAt", String("1774336736816"));
+            o.NA("buildNumber", "517296"),
+            o.NA("builtAt", String("1774544982531"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6816,7 +6820,8 @@
             null == window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST &&
             null == window.GLOBAL_ENV.PUBLIC_PATH &&
             null == window.GLOBAL_ENV.MUX_ENV_KEY &&
-            null == window.GLOBAL_ENV.WEBAUTHN_ORIGIN)
+            null == window.GLOBAL_ENV.WEBAUTHN_ORIGIN &&
+            null == window.GLOBAL_ENV.NATIVE_WEBSOCKET_ORIGIN)
         )
           throw (
             (window.alert("Global environment variables not set!"),
@@ -39485,4 +39490,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.8209fab2abe6da28.js.map
+//# sourceMappingURL=sentry.265cc375e79bfa05.js.map
