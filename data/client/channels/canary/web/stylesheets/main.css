@@ -17321,7 +17321,8 @@ img.thumbnail__0f2e8 {
   forced-color-adjust: none;
 }
 :root {
-  --custom-user-profile-banner-height: 0;
+  --custom-user-profile-banner-height: 0px;
+  --custom-user-profile-footer-height: 0px;
   --custom-user-profile-theme-padding: 0;
   --custom-user-profile-base-layer-z-index: 0;
   --custom-user-profile-bottom-layer-z-index: 1;
@@ -17346,6 +17347,7 @@ img.thumbnail__0f2e8 {
 }
 :root .user-profile-sidebar {
   --custom-user-profile-banner-height: 120px;
+  --custom-user-profile-footer-height: 44px;
 }
 :root .custom-user-profile-theme.user-profile-modal,
 :root .custom-user-profile-theme.user-profile-popout {
@@ -17419,8 +17421,10 @@ img.thumbnail__0f2e8 {
 }
 :where(.outer_c0bea0).custom-user-profile-theme {
   background: linear-gradient(
-    var(--profile-gradient-primary-color),
+    var(--profile-gradient-primary-color)
+      var(--custom-user-profile-banner-height),
     var(--profile-gradient-secondary-color)
+      calc(100% - var(--custom-user-profile-footer-height))
   );
   padding: var(--custom-user-profile-theme-padding);
 }
@@ -71427,4 +71431,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.5a6c556e203c63a0.css.map*/
+/*# sourceMappingURL=web.9681651a8f3469bb.css.map*/
