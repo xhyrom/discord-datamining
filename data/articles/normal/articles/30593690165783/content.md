@@ -16,84 +16,138 @@
   for exciting perks like Nitro credits and Orbs-exclusive items.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e295cae71505bf683ea9935dc0860ce2e"
+    >
       <a href="#h_01JVN9B6E5CEK0KRXD7T6S6G6M"
         ><strong>What are Discord Orbs? </strong></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="eb4f8f76febfd6d7737e4d1178f2e06f6"
+    >
       <a href="#h_01JVN9BXVA54DT1W6C0NAHSM73"
         ><strong>How do I earn Discord Orbs?</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e8969846cc2db79e64a0ba42085000591"
+        >
           <a href="#h_01K86MYX6G5E72C8NTS0JPPEFV"
             ><strong>Desktop/Browser</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ea8f00fda31a39278357466e9a963a33d"
+        >
           <a href="#h_01K86N2KDQDBN7FAKKK70H3PNZ"><strong>Mobile</strong></a>
+        </li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e750ba3c4d6271ca0d8a963e8b848a9da"
+        >
+          <a href="#h_01KKYTZQ8C3VZN6SPPHS7ZPGHQ"
+            ><strong>Earning Discord Orbs as a Nitro Member</strong></a
+          >
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e4f6f4ac4db7610ce6da239372e8b8f74"
+    >
       <a href="#h_01JVN9C8T6GAJ4V009G09TZ6A0"
         ><strong>Spending Your Discord Orbs</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="eae203b13a04e9938c2e575e1892e8495"
+        >
           <a href="#h_01JVN9C8T66JFD60SBTAW2FPXD"
             ><strong>Where can I spend Orbs?</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ecaccaa31b5c0b85d25e1662e4ee10416"
+        >
           <a href="#h_01JVN9C8T7QS6SMHNPSE97MYZP"
             ><strong>What can I buy with Orbs?</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e4df198a0e5a9e28437773bbcd9996c72"
+        >
           <a href="#h_01JVN9C8T7EDJC0CT3DKGW8DJ6"
             ><strong>How to Spend Orbs</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e70f8dbd4d64b756814635f6933ac29d7"
+    >
       <a href="#h_01JVN9C8T730VEP0NXKG44GKHV"
         ><strong>Important Discord Orbs Information</strong></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e5ae499baea6490922e2c17ecd4f53744"
+    >
       <a href="#h_01JVN9C8T7BJ54A4DWBYKRXC6F"
         ><strong>Frequently Asked Questions</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ebb02b62734aa212e61919ebe803606c9"
+        >
           <a href="#h_01JZ9AY4XRS43ZEP3GPWRJTYM8"
             ><strong>General Orbs Information</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e70c57ecd0517219d0eedf23644d6f5d7"
+        >
           <a href="#h_01JZ9AY4XRNS4GA22J5GPD7XBF"
             ><strong>Earning and Obtaining Orbs</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e5297fc5d4a96e39c9abd3d1a64e9e54b"
+        >
           <a href="#h_01JZ9AY4XRM4JH1FDGDDHKVMCZ"
             ><strong>Spending Orbs</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e04ebdb97f1977a9ee835d208916e786f"
+        >
           <a href="#h_01JZ9AY4XRXM6YWSVB8TA2AARX"
             ><strong>Sharing and Transferring Orbs</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="eac165bfac63cfe16097930d3614f3ca0"
+        >
           <a href="#h_01JZ9AY4XRE0VH4X2KR6Y4CATC"
             ><strong>Support and Issues</strong></a
           >
@@ -113,23 +167,34 @@
   >.
 </div>
 <p>
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Discord Orbs are rewards you earn by completing
-    <a
-      href="https://support.discord.com/hc/articles/22225719947543"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Quests</a
-    >. You can use them in the
-    <a
-      href="https://support.discord.com/hc/en-us/articles/17162747936663"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Shop</a
-    >
-    to get Nitro credits, items from the main collections, and more. It’s an
-    easy way to unlock Discord upgrades, no payment method required.
-  </span>
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Discord Orbs are rewards you earn by completing
+    </span></span
+  ><a
+    href="https://support.discord.com/hc/articles/22225719947543"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span style="color: #434343"
+      ><span data-darkreader-inline-color="">Quests</span></span
+    ></a
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >. You can use them in the
+    </span></span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/17162747936663"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span style="color: #434343"
+      ><span data-darkreader-inline-color="">Shop</span></span
+    ></a
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">
+      to get Nitro credits, items from the main collections, and more. It’s an
+      easy way to unlock Discord upgrades, no payment method required.</span
+    ></span
+  >
 </p>
 <h1 id="h_01JVN9BXVA54DT1W6C0NAHSM73">How do I earn Discord Orbs?</h1>
 <h2 id="h_01K86MYX6G5E72C8NTS0JPPEFV">Desktop/Browser</h2>
@@ -145,7 +210,7 @@
   app and browser client:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e7c761e366b9d24c9a1ddbd67a6ca5682">
     <a
       href="https://support.discord.com/hc/en-us/articles/22225719947543-Discord-Quests-FAQ#h_01JFAWB392Z58VMP5PDW63222E"
       target="_blank"
@@ -153,7 +218,7 @@
       >Through the Quest Bar</a
     >
     <ul>
-      <li>
+      <li data-list-item-id="efa89ed7f1c553936a18c956813ad5e64">
         You will occasionally see the <strong>Quest bar</strong> pop up in the
         bottom-left of the app when you're eligible for a Quest. Hover over it
         to learn more about the Quest details and get started.
@@ -168,13 +233,17 @@
     height="475"
   />
 </p>
-<h4 id="h_01JVN9C8T6MGA2732NBEB8QP3H" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Quest Bar in Discord Desktop App</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVN9C8T6MGA2732NBEB8QP3H">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Quest Bar in Discord Desktop App</span
+    ></span
   >
 </h4>
 <ul>
-  <li>Through Quest Home (<strong>Discover &gt; Quests</strong>)</li>
+  <li data-list-item-id="e00cc7d6419e4109ba095ffabbeffe3ed">
+    Through Quest Home (<strong>Discover &gt; Quests</strong>)
+  </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
@@ -183,9 +252,11 @@
     height="480"
   />
 </p>
-<h4 id="h_01JVN9C8T6ZHY4NDP8HQZC7A4K" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Navigating to Quest Home through Discover Tab</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVN9C8T6ZHY4NDP8HQZC7A4K">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Navigating to Quest Home through Discover Tab</span
+    ></span
   >
 </h4>
 <p>
@@ -204,9 +275,11 @@
     height="486"
   />
 </p>
-<h4 id="h_01JVN9C8T6ECTMTDGH8SNS8CQZ" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Claiming Discord Orbs from a Quest</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVN9C8T6ECTMTDGH8SNS8CQZ">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of Claiming Discord Orbs from a Quest</span
+    ></span
   >
 </h4>
 <p>
@@ -220,7 +293,7 @@
     height="555"
   />
 </p>
-<h4 id="h_01JZ9AKNM6PTF4AKG7FP94KP3H" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9AKNM6PTF4AKG7FP94KP3H">
   <span style="color: #666666">Orbs Balance</span>
 </h4>
 <h2 id="h_01K86N2KDQDBN7FAKKK70H3PNZ">Mobile</h2>
@@ -251,7 +324,7 @@
     height="619"
   />
 </p>
-<h4 id="h_01K86N2KDQCXXA0T44ZXBQGHFS" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K86N2KDQCXXA0T44ZXBQGHFS">
   <span style="color: #666666"
     >Navigating to Settings &gt; Quest Home (Left) or Tap Orbs Balance in Your
     Profile (Right) to find Quests</span
@@ -274,25 +347,25 @@
     height="579"
   />
 </p>
-<h4 id="h_01K86N2KDQ01XRPYZR6YDM63CX" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K86N2KDQ01XRPYZR6YDM63CX">
   <span style="color: #666666"
     >Example of Claiming Discord Orbs from a Quest</span
   >
 </h4>
+<h2 id="h_01KKYTZQ8C3VZN6SPPHS7ZPGHQ">
+  Earning Discord Orbs as a Nitro Member
+</h2>
+<p>[text]</p>
 <h1 id="h_01JVN9C8T6GAJ4V009G09TZ6A0">Spending Your Discord Orbs</h1>
 <h2 id="h_01JVN9C8T66JFD60SBTAW2FPXD">Where can I spend Orbs?</h2>
 <p>
   Head to the
-  <strong
-    ><a
-      href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Shop</a
-    >
-    tab</strong
-  >
-  to begin spending your Discord Orbs!
+  <a
+    href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong>Shop</strong></a
+  ><strong> tab</strong> to begin spending your Discord Orbs!
 </p>
 <p>
   <span class="wysiwyg-font-size-x-large"
@@ -310,8 +383,8 @@
     height="297"
   />
 </p>
-<h4 id="h_01JZ9AN7W4HR2TF7EZW7H8FAWX" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Discord App Icon </span>
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9AN7W4HR2TF7EZW7H8FAWX">
+  <span style="color: #666666">Discord App Icon</span>
 </h4>
 <p>
   2. Then, press the <strong>Shop tab</strong> [<img
@@ -327,7 +400,7 @@
     height="292"
   />
 </p>
-<h4 id="h_01JZ9AP29Y93J4767D5EBEP0FF" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9AP29Y93J4767D5EBEP0FF">
   <span style="color: #666666">Shop Tab</span>
 </h4>
 <p>
@@ -342,7 +415,7 @@
       height="652"
   /></span>
 </p>
-<h4 id="h_01JZ9APQ8PJEG56K5J553BDZER" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9APQ8PJEG56K5J553BDZER">
   <span style="color: #666666">Orbs Exclusives Tab in the Shop</span>
 </h4>
 <p>
@@ -374,7 +447,7 @@
     height="589"
   />
 </p>
-<h4 id="h_01K86N58VTMDEHXKBGX9T322D6" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K86N58VTMDEHXKBGX9T322D6">
   <span style="color: #666666"
     >Navigate to the Shop to Find Orb Exclusive Items</span
   >
@@ -382,8 +455,10 @@
 <h2 id="h_01JVN9C8T7QS6SMHNPSE97MYZP">What can I buy with Orbs? </h2>
 <p>Here’s what you <em>can</em> purchase with Orbs in the Shop: </p>
 <ul>
-  <li>Shop items from the main collections</li>
-  <li>
+  <li data-list-item-id="ebb1f765f08081cd7cb417cfe33b463ad">
+    Shop items from the main collections
+  </li>
+  <li data-list-item-id="e96be3d6507fb0923df9a905adf69add8">
     Orbs-exclusives:
     <a
       href="https://support.discord.com/hc/en-us/articles/26362805097623-Nitro-Credits-FAQ"
@@ -395,9 +470,13 @@
 </ul>
 <p>You <em>cannot</em> purchase these items with Orbs: </p>
 <ul>
-  <li>Gifts</li>
-  <li>Partner-branded Shop items</li>
-  <li>Recurring Nitro or Boosting subscriptions</li>
+  <li data-list-item-id="e0fe50d50db011b431ca25ac02f5505ad">Gifts</li>
+  <li data-list-item-id="e2330ace07161f0e792d66e556f311662">
+    Partner-branded Shop items
+  </li>
+  <li data-list-item-id="efe4610c7fc52973441e6896ffd35ba72">
+    Recurring Nitro or Boosting subscriptions
+  </li>
 </ul>
 <div class="info-box">
   Nitro credits are considered an Orbs-exclusive item within the Shop. However,
@@ -423,10 +502,9 @@
   with Orbs. 
 </p>
 <div class="info-box">
-  <strong><span style="color: #434343">Note</span></strong
-  ><span style="color: #434343"
-    >: If you don’t see an Orbs price on an item, it means it’s not eligible to
-    be claimed with Orbs. </span
+  <span style="color: #434343"
+    ><strong>Note</strong>: If you don’t see an Orbs price on an item, it means
+    it’s not eligible to be claimed with Orbs. </span
   >
 </div>
 <p>
@@ -434,10 +512,12 @@
   make your purchase. Select an item to view both pricing options. 
 </p>
 <div class="info-box">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >For eligible items, the Shop automatically displays the Orbs price if you
-    have enough Orbs. If you don’t have enough Orbs for an item, the regular
-    monetary price will be displayed instead.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >For eligible items, the Shop automatically displays the Orbs price if you
+      have enough Orbs. If you don’t have enough Orbs for an item, the regular
+      monetary price will be displayed instead.</span
+    ></span
   >
 </div>
 <p>
@@ -445,12 +525,11 @@
   <strong>Claim</strong> in the <strong>Shop</strong> <strong>window</strong>.
 </p>
 <div class="warn-box">
-  <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Important</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >: Discord Orb purchases are final and cannot be refunded.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""><strong>Important</strong></span
+    ><span data-darkreader-inline-color=""
+      >: Discord Orb purchases are final and cannot be refunded.</span
+    ></span
   >
 </div>
 <p class="wysiwyg-text-align-center">
@@ -460,26 +539,24 @@
     height="451"
   />
 </p>
-<h4 id="h_01JVN9C8T7N1TY4WR71F55X55B" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Orbs Exclusives Shop Items </span
+<h4 class="wysiwyg-text-align-center" id="h_01JVN9C8T7N1TY4WR71F55X55B">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Orbs Exclusives Shop Items </span
+    ></span
   >
 </h4>
 <div class="tip-box">
-  <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Tip</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >: To switch from Orbs to regular payment during purchase confirmation, exit
-    and select the </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Buy</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    button instead. </span
-  >
+  <p>
+    <span style="color: #434343"
+      ><span data-darkreader-inline-color=""><strong>Tip</strong></span
+      ><span data-darkreader-inline-color=""
+        >: To switch from Orbs to regular payment during purchase confirmation,
+        exit and select the </span
+      ><span data-darkreader-inline-color=""><strong>Buy</strong></span
+      ><span data-darkreader-inline-color=""> button instead. </span></span
+    >
+  </p>
   <p class="wysiwyg-text-align-center">
     <img
       src="https://support.discord.com/hc/article_attachments/33244216877719"
@@ -487,9 +564,11 @@
       height="509"
     />
   </p>
-  <h4 id="h_01JVN9C8T73C7JHJVS73QAMEM0" class="wysiwyg-text-align-center">
-    <span style="color: #666666" data-darkreader-inline-color=""
-      >Buy Option in Shop Window</span
+  <h4 class="wysiwyg-text-align-center" id="h_01JVN9C8T73C7JHJVS73QAMEM0">
+    <span style="color: #666666"
+      ><span data-darkreader-inline-color=""
+        >Buy Option in Shop Window</span
+      ></span
     >
   </h4>
 </div>
@@ -518,28 +597,28 @@
     height="589"
   />
 </p>
-<h4 id="h_01K86NB6GZHY7NC0827668ZAPY" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K86NB6GZHY7NC0827668ZAPY">
   <span style="color: #666666"
     >Purchasing an Orbs Exclusive Shop Item on Mobile</span
   >
 </h4>
 <h1 id="h_01JVN9C8T730VEP0NXKG44GKHV">Important Discord Orbs Information</h1>
 <ul>
-  <li>
+  <li data-list-item-id="eae2cb9a378561b5688159439096beb08">
     Switch between earning and spending Orbs by selecting the buttons in the
     Shop banner (<strong>Orbs Exclusives </strong>tab,
     <strong>Quest Home</strong> or through your <strong>Orbs balance</strong>). 
      
   </li>
-  <li>
+  <li data-list-item-id="ea6e66ef73233fb5bd61de78578355583">
     Orbs can only be used within Discord–they cannot be converted to real
     money. 
   </li>
-  <li>
+  <li data-list-item-id="e54575586d9add22714ae59dfe40105bf">
     Earned Orbs do not expire once earned, and they remain in your account until
     you spend them.
   </li>
-  <li>
+  <li data-list-item-id="ed818ea4e0830d1b0d65b5b2f9baae7c9">
     Orbs are attached to your account and cannot be shared or transferred
     between users. 
   </li>
@@ -547,25 +626,40 @@
 <h1 id="h_01JVN9C8T7BJ54A4DWBYKRXC6F">Frequently Asked Questions</h1>
 <p>This FAQ is divided into sections:</p>
 <ul>
-  <li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e18dce8fe34d0ec1110debf3d050bea8e"
+  >
     <a href="#h_01JZ9AY4XRS43ZEP3GPWRJTYM8"
       ><strong>General Orbs Information</strong></a
     >
   </li>
-  <li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e55207c699f202f9daccd8d8258700339"
+  >
     <a href="#h_01JZ9AY4XRNS4GA22J5GPD7XBF"
       ><strong>Earning and Obtaining Orbs</strong></a
     >
   </li>
-  <li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e4a49e3f851e7da92000754da21dda9f7"
+  >
     <a href="#h_01JZ9AY4XRM4JH1FDGDDHKVMCZ"><strong>Spending Orbs</strong></a>
   </li>
-  <li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e2e904d567bf134782f74d10d420464ff"
+  >
     <a href="#h_01JZ9AY4XRXM6YWSVB8TA2AARX"
       ><strong>Sharing and Transferring Orbs</strong></a
     >
   </li>
-  <li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e8404ad2276d81d93a9969508f793e96c"
+  >
     <a href="#h_01JZ9AY4XRE0VH4X2KR6Y4CATC"
       ><strong>Support and Issues</strong></a
     >
