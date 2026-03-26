@@ -3200,7 +3200,6 @@
           REACTION_WITH_TYPE: (e, t, r, a, i) =>
             `/channels/${e}/messages/${t}/reactions/${r}/${i}/${a}`,
           SEARCH_GUILD: (e) => `/guilds/${e}/messages/search`,
-          SEARCH_FAVORITES: "/search/favorites",
           SEARCH_TABS_GUILD: (e) => `/guilds/${e}/messages/search/tabs`,
           SEARCH_TABS_DMS: "/users/@me/messages/search/tabs",
           CHANGELOG_MESSAGES: "/changelogs/@me/messages",
@@ -4472,6 +4471,7 @@
           (a.PAYMENT_FLOW_FAILED = "payment_flow_failed"),
           (a.PAYMENT_FLOW_CANCELED = "payment_flow_canceled"),
           (a.PAYMENT_FLOW_LOADED = "payment_flow_loaded"),
+          (a.PAYMENT_FLOW_ERROR = "payment_flow_error"),
           (a.PAYMENT_REQUEST_LOADED = "payment_request_loaded"),
           (a.PAYMENT_REQUEST_COMPLETED = "payment_request_completed"),
           (a.GIFT_CATEGORY_SELECT_MODAL_OPENED =
@@ -4533,10 +4533,12 @@
           (a.STREAM_SETTINGS_UPDATE = "stream_settings_update"),
           (a.VIDEO_INPUT_INITIALIZED = "video_input_initialized"),
           (a.AUDIO_INPUT_INITIALIZED = "audio_input_initialized"),
+          (a.AUDIO_EFFECTS_PROBE_COMPLETED = "audio_effects_probe_completed"),
           (a.NOTIFY_STREAM_SETTING_UPDATE = "notify_stream_setting_update"),
           (a.SECURE_FRAMES_TRANSITION = "secure_frames_transition"),
           (a.MLS_FAILURES = "mls_failures"),
           (a.AV_ERROR_REPORTED = "av_error_reported"),
+          (a.DEBUG_LOG_UPLOADED = "debug_log_uploaded"),
           (a.VIDEO_CALL_ENDED = "video_call_ended"),
           (a.VIDEO_SPINNER_SHOWN_V2 = "video_spinner_shown_v2"),
           (a.VIDEO_TOGGLED = "video_toggled"),
@@ -6451,7 +6453,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-03-25-9b0dc42dea4ce905c514e5bdd729f8063e73f46f-discord_web",
+              "2026-03-26-d1607d59f6060fde161dd4822d28f397ea5ab878-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6518,8 +6520,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "516242"),
-            o.NA("builtAt", String("1774423151534"));
+            o.NA("buildNumber", "517084"),
+            o.NA("builtAt", String("1774509550309"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -39488,4 +39490,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.11cb1e25a82c6abd.js.map
+//# sourceMappingURL=sentry.b892d57410a231c4.js.map
