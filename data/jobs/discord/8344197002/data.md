@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8344197002](https://discord.com/jobs/8344197002)
 
-**Updated At:** Mon, 23 Mar 2026 21:09:13 GMT
+**Updated At:** Fri, 27 Mar 2026 22:37:34 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As a Staff Engineer on the Safety Experience team, you'll be a technical leader who autonomously delivers real business impact on large, ambiguous projects. You'll design and build product features and systems that prevent harmful activities at scale while ensuring regulatory compliance. This role requires both deep technical expertise and the ability to be a force multiplier for your team: driving engineering excellence, making solid technical decisions, and remaining a top code contributor. You'll work cross-functionally to shape the technical direction of safety initiatives that protect hundreds of millions of Discord users. This role reports to the Engineering Manager of Safety Experience.
@@ -35,9 +35,9 @@ Experience driving engineering excellence: setting quality standards, conducting
 Strong communication skills with ability to provide high-quality technical feedback, drive alignment across stakeholders, and facilitate productive debates that lead to clear decisions.
 Experience using metrics and dashboards (e.g., Datadog, Mode, Faros) to make data-driven decisions and monitor system health.
 Ability to be a force multiplier for your team by mentoring others, establishing best practices, and helping teammates grow their skills.
+Experience utilizing AI tools like Claude Code and Cursor to supercharge dev workflows
 
 Bonus Points
-
 
 Familiarity with databases such as Cassandra, Postgres, or ScyllaDB.
 Experience with real-time streaming systems like Kafka or Pub-Sub.

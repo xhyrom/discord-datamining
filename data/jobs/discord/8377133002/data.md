@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8377133002](https://discord.com/jobs/8377133002)
 
-**Updated At:** Mon, 23 Mar 2026 21:03:45 GMT
+**Updated At:** Fri, 27 Mar 2026 22:39:43 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As a&amp;nbsp;Senior Engineer on the Safety Experience team, you'll lead the charge in making Discord's platform safer for hundreds of millions of users. You'll design, build, and maintain product features and systems that prevent harmful activities while ensuring regulatory compliance. Keeping users safe is essential for Discord's growth, making your team's work critical. This role reports to the Engineering Manager of Safety Experience.
@@ -31,6 +31,7 @@ Demonstrated success leading end‑to‑end delivery of complex projects: breaki
 Demonstrated ability to troubleshoot, debug, and test complex systems in a live, production environment.
 Exceptional communication and collaboration skills, with the ability to work well with cross-functional partners, designers, and other engineers.
 Experience using metrics and dashboards to make data-driven decisions and develop insightful reports.
+Experience utilizing AI tools like Claude Code and Cursor to supercharge dev workflows
 
 Bonus Points
 
