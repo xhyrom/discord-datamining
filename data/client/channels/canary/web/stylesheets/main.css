@@ -15321,7 +15321,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .button__65e57 {
   flex: 1 1 0;
 }
-.newBadge__65e57 {
+.typeBadge__65e57 {
   inset-inline-end: 16px;
   position: absolute;
   top: 16px;
@@ -71534,4 +71534,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.d7c2bda2426efcf4.css.map*/
+/*# sourceMappingURL=web.5a3480756c9503de.css.map*/
