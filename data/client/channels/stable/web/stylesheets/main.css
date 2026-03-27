@@ -29853,7 +29853,7 @@ html:not(.chat-input) .inputInner_b1f01d {
   flex-direction: row;
   padding-block-start: var(--space-6);
 }
-.profileEffects__01370 {
+.profileEffects__0dd08 {
   border-radius: inherit;
   height: 100%;
   inset-inline-start: 0;
@@ -29865,10 +29865,10 @@ html:not(.chat-input) .inputInner_b1f01d {
   width: 100%;
   z-index: var(--custom-user-profile-middle-layer-z-index, 2);
 }
-.hovered__01370 {
+.hovered__0dd08 {
   opacity: 0.35;
 }
-.inner__01370 {
+.inner__0dd08 {
   height: 100%;
   inset-inline-start: 0;
   pointer-events: none;
@@ -29876,13 +29876,13 @@ html:not(.chat-input) .inputInner_b1f01d {
   top: 0;
   width: 100%;
 }
-.user-profile-popout .inner__01370 {
+.user-profile-popout .inner__0dd08 {
   border-radius: var(--radius-sm);
 }
-.user-profile-modal-v2 .inner__01370 {
+.user-profile-modal-v2 .inner__0dd08 {
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
-.effect__01370 {
+.effect__0dd08 {
   border-radius: inherit;
   inset-inline-start: 0;
   position: absolute;
@@ -29939,6 +29939,105 @@ html:not(.chat-input) .inputInner_b1f01d {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
+}
+:root {
+  --custom-profile-frame-overflow-top: 77px;
+  --custom-profile-frame-overflow-bottom: 53px;
+  --custom-profile-frame-overflow-left: 12px;
+  --custom-profile-frame-popout-width: 332;
+}
+:root .user-profile-modal-v2 {
+  --custom-profile-frame-overflow-left: 16px;
+}
+.profileFrame__7d80f {
+  container-type: size;
+  height: 100%;
+  inset-inline-start: calc(var(--custom-profile-frame-overflow-left) * -1);
+  max-height: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: calc(100% + var(--custom-profile-frame-overflow-left) * 2);
+}
+.user-profile-modal-v2 .profileFrame__7d80f {
+  height: calc(100% - var(--custom-modal-v2-padding));
+  inset-inline-start: calc(
+    var(--custom-profile-frame-overflow-left) * -1 +
+      var(--custom-modal-v2-padding)
+  );
+  margin-top: var(--custom-modal-v2-padding);
+  max-width: calc(400px + var(--custom-profile-frame-overflow-left) * 2);
+  min-width: calc(300px + var(--custom-profile-frame-overflow-left) * 2);
+  width: calc(45.5% + var(--custom-profile-frame-overflow-left) * 2);
+}
+.profileFrameLayer__7d80f {
+  max-height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.profileFrameLayer__7d80f > img {
+  width: 100%;
+}
+.profileFrameLayer__7d80f.front__7d80f {
+  z-index: var(--custom-user-profile-hoist-z-index, 4);
+}
+.profileFrameLayer__7d80f.back__7d80f {
+  z-index: -1;
+}
+.profileFrameLayer__7d80f.staple__7d80f.top__7d80f {
+  top: calc(var(--custom-profile-frame-overflow-top) * -1);
+}
+.user-profile-modal-v2 .profileFrameLayer__7d80f.staple__7d80f.top__7d80f {
+  top: calc(
+    var(--custom-profile-frame-overflow-top) * -1 * 432 /
+      var(--custom-profile-frame-popout-width)
+  );
+}
+.user-profile-sidebar .profileFrameLayer__7d80f.staple__7d80f.top__7d80f {
+  top: calc(
+    var(--custom-profile-frame-overflow-top) * -1 * 364 /
+      var(--custom-profile-frame-popout-width)
+  );
+}
+.profileFrameLayer__7d80f.staple__7d80f.bottom__7d80f {
+  bottom: calc(var(--custom-profile-frame-overflow-bottom) * -1);
+}
+.user-profile-modal-v2 .profileFrameLayer__7d80f.staple__7d80f.bottom__7d80f {
+  bottom: calc(
+    var(--custom-profile-frame-overflow-bottom) * -1 * 432 /
+      var(--custom-profile-frame-popout-width)
+  );
+}
+.user-profile-sidebar .profileFrameLayer__7d80f.staple__7d80f.bottom__7d80f {
+  top: calc(
+    var(--custom-profile-frame-overflow-bottom) * -1 * 364 /
+      var(--custom-profile-frame-popout-width)
+  );
+}
+.profileFrameLayer__7d80f.rail__7d80f {
+  height: 100%;
+  @container (max-height: 480px) {
+    &.responsive__7d80f {
+      display: none;
+    }
+  }
+}
+.profileFrameLayer__7d80f.rail__7d80f > img {
+  bottom: 0;
+  margin: auto;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+}
+.profileFrameLayer__7d80f.rail__7d80f.left__7d80f > img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.profileFrameLayer__7d80f.rail__7d80f.top__7d80f {
+  top: -60px;
+}
+.profileFrameLayer__7d80f.rail__7d80f.bottom__7d80f {
+  bottom: -60px;
 }
 .toastContainer_a35754 {
   border-radius: 32px;
@@ -30928,6 +31027,45 @@ html:not(.chat-input) .inputInner_b1f01d {
   position: absolute;
   z-index: 2;
 }
+.previewContainer_ebb2cf {
+  background-color: var(--background-mod-subtle);
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px var(--border-muted);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+.previewContainer_ebb2cf.hideBackground_ebb2cf {
+  background-color: transparent;
+  box-shadow: unset;
+}
+.previewContainerSetHeight_ebb2cf {
+  height: 390px;
+}
+.full-motion .previewContainerAnimation_ebb2cf {
+  animation: scaleIn_ebb2cf 0.5s;
+}
+.preview_ebb2cf {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+  position: relative;
+  width: 100%;
+}
+@keyframes scaleIn_ebb2cf {
+  0% {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .fadeInAvatarImg_d71c71 {
   animation: fadeIn_d71c71 1.5s;
 }
@@ -30940,45 +31078,6 @@ html:not(.chat-input) .inputInner_b1f01d {
   }
   to {
     opacity: 1;
-  }
-}
-.previewContainer__1e458 {
-  background-color: var(--background-mod-subtle);
-  border-radius: inherit;
-  box-shadow: inset 0 0 0 1px var(--border-muted);
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  z-index: 0;
-}
-.previewContainer__1e458.hideBackground__1e458 {
-  background-color: transparent;
-  box-shadow: unset;
-}
-.previewContainerSetHeight__1e458 {
-  height: 390px;
-}
-.full-motion .previewContainerAnimation__1e458 {
-  animation: scaleIn__1e458 0.5s;
-}
-.preview__1e458 {
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: top;
-  object-position: top;
-  position: relative;
-  width: 100%;
-}
-@keyframes scaleIn__1e458 {
-  0% {
-    transform: scale(0.7);
-  }
-  to {
-    transform: scale(1);
   }
 }
 .muted__20a53 .avatar__20a53 {
@@ -37764,6 +37863,160 @@ body .headerAnimation_b54a5b {
   height: 1px;
   width: 100%;
 }
+.externalProductWrapper__320c6 {
+  align-items: center;
+  display: flex;
+  height: 252px;
+  justify-content: center;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+}
+.orbProfileBadgeAsset__320c6 {
+  height: 120px;
+}
+.profileEffectContainer__0b5ea {
+  height: 52px;
+  position: relative;
+  width: 42px;
+}
+.profileEffect__0b5ea,
+.profileEffectBackground__0b5ea {
+  border-radius: var(--radius-xs);
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+  position: absolute;
+  width: 100%;
+}
+.avatarDecoration__0b5ea,
+.nameplateContainer__0b5ea {
+  height: 42px;
+  width: 42px;
+}
+.nameplateContainer__0b5ea {
+  background-color: var(--modal-background);
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+  position: relative;
+}
+.externalProductAsset__0b5ea {
+  height: 42px;
+}
+.bundleMiniStaticPreview__0b5ea {
+  height: 52px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 52px;
+}
+.bundleMiniPreview__0b5ea {
+  align-items: center;
+  display: flex;
+  height: 52px;
+  justify-content: center;
+  position: relative;
+  width: 52px;
+}
+.bundleMiniProfileEffectContainer__0b5ea {
+  height: 44px;
+  inset-inline-start: 6px;
+  position: absolute;
+  top: 2px;
+  transform: rotate(-8deg);
+  width: 36px;
+}
+.bundleMiniProfileEffectContainer__0b5ea .profileEffectContainer__0b5ea {
+  height: 100%;
+  width: 100%;
+}
+.bundleMiniAvatarDecorationContainer__0b5ea {
+  height: 26px;
+  inset-inline-end: 0;
+  position: absolute;
+  top: 5px;
+  transform: rotate(8deg);
+  width: 26px;
+}
+.bundleMiniAvatarDecorationContainer__0b5ea .avatarDecoration__0b5ea {
+  height: 100%;
+  width: 100%;
+}
+.bundleMiniNameplateContainer__0b5ea {
+  border-radius: var(--radius-xs);
+  bottom: 10px;
+  height: 12px;
+  inset-inline-start: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.bundleMiniNameplateContainer__0b5ea .nameplateContainer__0b5ea {
+  height: 100%;
+  width: 100%;
+}
+.applicationIcon__6dec9 {
+  border-radius: 6px;
+}
+.container__42d0d {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.invoiceTable__25766 {
+  margin-bottom: 16px;
+}
+.invoiceRow__25766 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  gap: 10px;
+  line-height: 20px;
+}
+.invoiceRow__25766:not(:last-child) {
+  margin-bottom: 8px;
+}
+.invoiceTagColumn__25766 {
+  flex: 1;
+}
+.invoiceDescriptionColumn__25766 {
+  flex: 5;
+}
+.invoiceRegularText__25766 {
+  color: var(--text-strong);
+}
+.invoiceDiscountText__25766 {
+  color: var(--text-feedback-positive);
+}
+.invoiceDiscountTag__25766 {
+  background-color: var(--green-360);
+  border-radius: 12px;
+  display: inline-block;
+  padding: 2px 6px;
+  position: relative;
+  text-align: center;
+}
+.totalRow__25766 {
+  font-weight: 700;
+}
+.slayerStorefrontProductPreview__25766 {
+  box-sizing: border-box;
+  height: 48px;
+  width: 48px;
+}
+.invoiceProductPreviewImage__25766 {
+  max-height: 64px;
+  max-width: 64px;
+}
+.rentalDescription__25766 {
+  color: var(--text-muted);
+  display: block;
+  margin-top: 4px;
+}
 .container_da8ac7 {
   align-items: center;
   display: flex;
@@ -37862,6 +38115,12 @@ body .headerAnimation_b54a5b {
 .icon_da8ac7 .nitroCredit_da8ac7 svg {
   filter: drop-shadow(0 4px 10px var(--shadow-low-hover));
 }
+.purchaseItemImage_da8ac7 {
+  height: 64px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 64px;
+}
 .container_e7911b {
   display: flex;
   flex-direction: column;
@@ -37927,10 +38186,6 @@ body .headerAnimation_b54a5b {
 }
 .premiumSwitchPlanSelectText_b41cc5 {
   margin-bottom: var(--space-24);
-}
-.purchaseItemImage_b41cc5 {
-  max-height: 64px;
-  max-width: 64px;
 }
 .subscriptionCostRowAmount__3d62f {
   font-weight: var(--font-weight-medium);
@@ -38235,160 +38490,6 @@ body .headerAnimation_b54a5b {
   max-width: 180px;
   width: 100%;
 }
-.externalProductWrapper__320c6 {
-  align-items: center;
-  display: flex;
-  height: 252px;
-  justify-content: center;
-  -o-object-fit: contain;
-  object-fit: contain;
-  width: 100%;
-}
-.orbProfileBadgeAsset__320c6 {
-  height: 120px;
-}
-.profileEffectContainer__0b5ea {
-  height: 52px;
-  position: relative;
-  width: 42px;
-}
-.profileEffect__0b5ea,
-.profileEffectBackground__0b5ea {
-  border-radius: var(--radius-xs);
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: top;
-  object-position: top;
-  position: absolute;
-  width: 100%;
-}
-.avatarDecoration__0b5ea,
-.nameplateContainer__0b5ea {
-  height: 42px;
-  width: 42px;
-}
-.nameplateContainer__0b5ea {
-  background-color: var(--modal-background);
-  border-radius: var(--radius-xs);
-  overflow: hidden;
-  position: relative;
-}
-.externalProductAsset__0b5ea {
-  height: 42px;
-}
-.bundleMiniStaticPreview__0b5ea {
-  height: 52px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 52px;
-}
-.bundleMiniPreview__0b5ea {
-  align-items: center;
-  display: flex;
-  height: 52px;
-  justify-content: center;
-  position: relative;
-  width: 52px;
-}
-.bundleMiniProfileEffectContainer__0b5ea {
-  height: 44px;
-  inset-inline-start: 6px;
-  position: absolute;
-  top: 2px;
-  transform: rotate(-8deg);
-  width: 36px;
-}
-.bundleMiniProfileEffectContainer__0b5ea .profileEffectContainer__0b5ea {
-  height: 100%;
-  width: 100%;
-}
-.bundleMiniAvatarDecorationContainer__0b5ea {
-  height: 26px;
-  inset-inline-end: 0;
-  position: absolute;
-  top: 5px;
-  transform: rotate(8deg);
-  width: 26px;
-}
-.bundleMiniAvatarDecorationContainer__0b5ea .avatarDecoration__0b5ea {
-  height: 100%;
-  width: 100%;
-}
-.bundleMiniNameplateContainer__0b5ea {
-  border-radius: var(--radius-xs);
-  bottom: 10px;
-  height: 12px;
-  inset-inline-start: 0;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
-.bundleMiniNameplateContainer__0b5ea .nameplateContainer__0b5ea {
-  height: 100%;
-  width: 100%;
-}
-.applicationIcon__6dec9 {
-  border-radius: 6px;
-}
-.container__42d0d {
-  align-items: center;
-  display: flex;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-.invoiceTable__25766 {
-  margin-bottom: 16px;
-}
-.invoiceRow__25766 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  font-size: 16px;
-  font-weight: var(--font-weight-medium);
-  gap: 10px;
-  line-height: 20px;
-}
-.invoiceRow__25766:not(:last-child) {
-  margin-bottom: 8px;
-}
-.invoiceTagColumn__25766 {
-  flex: 1;
-}
-.invoiceDescriptionColumn__25766 {
-  flex: 5;
-}
-.invoiceRegularText__25766 {
-  color: var(--text-strong);
-}
-.invoiceDiscountText__25766 {
-  color: var(--text-feedback-positive);
-}
-.invoiceDiscountTag__25766 {
-  background-color: var(--green-360);
-  border-radius: 12px;
-  display: inline-block;
-  padding: 2px 6px;
-  position: relative;
-  text-align: center;
-}
-.totalRow__25766 {
-  font-weight: 700;
-}
-.slayerStorefrontProductPreview__25766 {
-  box-sizing: border-box;
-  height: 48px;
-  width: 48px;
-}
-.invoiceProductPreviewImage__25766 {
-  max-height: 64px;
-  max-width: 64px;
-}
-.rentalDescription__25766 {
-  color: var(--text-muted);
-  display: block;
-  margin-top: 4px;
-}
 .stepBody_b44961 {
   padding-top: var(--space-8);
 }
@@ -38426,10 +38527,6 @@ body .headerAnimation_b54a5b {
 }
 .oneTimePurchaseRewardNotice_b44961 {
   margin-top: var(--space-16);
-}
-.slayerProductPreview_a9f4c8 {
-  height: 64px;
-  width: 64px;
 }
 .back_e125f1 {
   margin-inline-end: auto;
@@ -52625,19 +52722,19 @@ html.disable-forced-colors * {
   --chart-categorical-8: var(--red-new-45);
   --chart-categorical-9: var(--blue-new-70);
   --chart-mono-1: var(--blurple-1);
-  --chart-mono-1-text: var(--neutral-71);
   --chart-mono-2: var(--blurple-15);
-  --chart-mono-2-text: var(--neutral-71);
   --chart-mono-3: var(--blurple-30);
-  --chart-mono-3-text: var(--neutral-71);
-  --chart-mono-4: var(--blurple-45);
-  --chart-mono-4-text: var(--neutral-2);
+  --chart-mono-4: var(--blurple-50);
   --chart-mono-5: var(--blurple-60);
-  --chart-mono-5-text: var(--neutral-2);
   --chart-mono-6: var(--blurple-75);
-  --chart-mono-6-text: var(--neutral-2);
   --chart-mono-7: var(--blurple-90);
-  --chart-mono-7-text: var(--neutral-2);
+  --chart-mono-text-1: var(--neutral-43);
+  --chart-mono-text-2: var(--neutral-49);
+  --chart-mono-text-3: var(--neutral-65);
+  --chart-mono-text-4: var(--neutral-99);
+  --chart-mono-text-5: var(--neutral-12);
+  --chart-mono-text-6: var(--neutral-25);
+  --chart-mono-text-7: var(--neutral-34);
   --chart-negative: var(--red-new-40);
   --chart-neutral: var(--neutral-29);
   --chart-positive: var(--green-new-30);
@@ -53552,23 +53649,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-1-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-2: color-mix(
       in oklab,
       var(--blurple-15) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-2-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-3: color-mix(
       in oklab,
@@ -53576,23 +53661,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-3-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-4: color-mix(
       in oklab,
-      var(--blurple-45) 100%,
+      var(--blurple-50) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-4-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-5: color-mix(
       in oklab,
@@ -53600,23 +53673,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-5-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-6: color-mix(
       in oklab,
       var(--blurple-75) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-6-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-7: color-mix(
       in oklab,
@@ -53624,9 +53685,45 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-7-text: color-mix(
+    --chart-mono-text-1: color-mix(
       in oklab,
-      var(--neutral-2) 100%,
+      var(--neutral-43) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-2: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-3: color-mix(
+      in oklab,
+      var(--neutral-65) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-4: color-mix(
+      in oklab,
+      var(--neutral-99) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-5: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-6: color-mix(
+      in oklab,
+      var(--neutral-25) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-7: color-mix(
+      in oklab,
+      var(--neutral-34) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -55015,19 +55112,19 @@ html.disable-forced-colors * {
   --chart-categorical-8: var(--red-new-45);
   --chart-categorical-9: var(--blue-new-70);
   --chart-mono-1: var(--blurple-1);
-  --chart-mono-1-text: var(--neutral-71);
   --chart-mono-2: var(--blurple-15);
-  --chart-mono-2-text: var(--neutral-71);
   --chart-mono-3: var(--blurple-30);
-  --chart-mono-3-text: var(--neutral-71);
-  --chart-mono-4: var(--blurple-45);
-  --chart-mono-4-text: var(--neutral-2);
+  --chart-mono-4: var(--blurple-50);
   --chart-mono-5: var(--blurple-60);
-  --chart-mono-5-text: var(--neutral-2);
   --chart-mono-6: var(--blurple-75);
-  --chart-mono-6-text: var(--neutral-2);
   --chart-mono-7: var(--blurple-90);
-  --chart-mono-7-text: var(--neutral-2);
+  --chart-mono-text-1: var(--neutral-43);
+  --chart-mono-text-2: var(--neutral-49);
+  --chart-mono-text-3: var(--neutral-65);
+  --chart-mono-text-4: var(--neutral-99);
+  --chart-mono-text-5: var(--neutral-12);
+  --chart-mono-text-6: var(--neutral-25);
+  --chart-mono-text-7: var(--neutral-34);
   --chart-negative: var(--red-new-50);
   --chart-neutral: var(--neutral-29);
   --chart-positive: var(--green-new-30);
@@ -55926,23 +56023,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-1-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-2: color-mix(
       in oklab,
       var(--blurple-15) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-2-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-3: color-mix(
       in oklab,
@@ -55950,23 +56035,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-3-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-4: color-mix(
       in oklab,
-      var(--blurple-45) 100%,
+      var(--blurple-50) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-4-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-5: color-mix(
       in oklab,
@@ -55974,23 +56047,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-5-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-6: color-mix(
       in oklab,
       var(--blurple-75) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-6-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-7: color-mix(
       in oklab,
@@ -55998,9 +56059,45 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-7-text: color-mix(
+    --chart-mono-text-1: color-mix(
       in oklab,
-      var(--neutral-2) 100%,
+      var(--neutral-43) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-2: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-3: color-mix(
+      in oklab,
+      var(--neutral-65) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-4: color-mix(
+      in oklab,
+      var(--neutral-99) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-5: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-6: color-mix(
+      in oklab,
+      var(--neutral-25) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-7: color-mix(
+      in oklab,
+      var(--neutral-34) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -57389,19 +57486,19 @@ html.disable-forced-colors * {
   --chart-categorical-8: var(--red-new-45);
   --chart-categorical-9: var(--blue-new-70);
   --chart-mono-1: var(--blurple-1);
-  --chart-mono-1-text: var(--neutral-71);
   --chart-mono-2: var(--blurple-15);
-  --chart-mono-2-text: var(--neutral-71);
   --chart-mono-3: var(--blurple-30);
-  --chart-mono-3-text: var(--neutral-71);
-  --chart-mono-4: var(--blurple-45);
-  --chart-mono-4-text: var(--neutral-2);
+  --chart-mono-4: var(--blurple-50);
   --chart-mono-5: var(--blurple-60);
-  --chart-mono-5-text: var(--neutral-2);
   --chart-mono-6: var(--blurple-75);
-  --chart-mono-6-text: var(--neutral-2);
   --chart-mono-7: var(--blurple-90);
-  --chart-mono-7-text: var(--neutral-2);
+  --chart-mono-text-1: var(--neutral-43);
+  --chart-mono-text-2: var(--neutral-49);
+  --chart-mono-text-3: var(--neutral-65);
+  --chart-mono-text-4: var(--neutral-99);
+  --chart-mono-text-5: var(--neutral-12);
+  --chart-mono-text-6: var(--neutral-25);
+  --chart-mono-text-7: var(--neutral-34);
   --chart-negative: var(--red-new-50);
   --chart-neutral: var(--neutral-29);
   --chart-positive: var(--green-new-30);
@@ -58302,23 +58399,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-1-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-2: color-mix(
       in oklab,
       var(--blurple-15) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-2-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-3: color-mix(
       in oklab,
@@ -58326,23 +58411,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-3-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-4: color-mix(
       in oklab,
-      var(--blurple-45) 100%,
+      var(--blurple-50) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-4-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-5: color-mix(
       in oklab,
@@ -58350,23 +58423,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-5-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-6: color-mix(
       in oklab,
       var(--blurple-75) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-6-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-7: color-mix(
       in oklab,
@@ -58374,9 +58435,45 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-7-text: color-mix(
+    --chart-mono-text-1: color-mix(
       in oklab,
-      var(--neutral-2) 100%,
+      var(--neutral-43) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-2: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-3: color-mix(
+      in oklab,
+      var(--neutral-65) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-4: color-mix(
+      in oklab,
+      var(--neutral-99) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-5: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-6: color-mix(
+      in oklab,
+      var(--neutral-25) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-7: color-mix(
+      in oklab,
+      var(--neutral-34) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -59763,19 +59860,19 @@ html.disable-forced-colors * {
   --chart-categorical-8: var(--red-new-45);
   --chart-categorical-9: var(--blue-new-70);
   --chart-mono-1: var(--blurple-1);
-  --chart-mono-1-text: var(--neutral-71);
   --chart-mono-2: var(--blurple-15);
-  --chart-mono-2-text: var(--neutral-71);
   --chart-mono-3: var(--blurple-30);
-  --chart-mono-3-text: var(--neutral-71);
-  --chart-mono-4: var(--blurple-45);
-  --chart-mono-4-text: var(--neutral-2);
+  --chart-mono-4: var(--blurple-50);
   --chart-mono-5: var(--blurple-60);
-  --chart-mono-5-text: var(--neutral-2);
   --chart-mono-6: var(--blurple-75);
-  --chart-mono-6-text: var(--neutral-2);
   --chart-mono-7: var(--blurple-90);
-  --chart-mono-7-text: var(--neutral-2);
+  --chart-mono-text-1: var(--neutral-43);
+  --chart-mono-text-2: var(--neutral-49);
+  --chart-mono-text-3: var(--neutral-65);
+  --chart-mono-text-4: var(--neutral-99);
+  --chart-mono-text-5: var(--neutral-12);
+  --chart-mono-text-6: var(--neutral-25);
+  --chart-mono-text-7: var(--neutral-34);
   --chart-negative: var(--red-new-50);
   --chart-neutral: var(--neutral-29);
   --chart-positive: var(--green-new-30);
@@ -60690,23 +60787,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-1-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-2: color-mix(
       in oklab,
       var(--blurple-15) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-2-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-3: color-mix(
       in oklab,
@@ -60714,23 +60799,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-3-text: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-4: color-mix(
       in oklab,
-      var(--blurple-45) 100%,
+      var(--blurple-50) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-4-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-5: color-mix(
       in oklab,
@@ -60738,23 +60811,11 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-5-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
-    );
     --chart-mono-6: color-mix(
       in oklab,
       var(--blurple-75) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
-    );
-    --chart-mono-6-text: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--custom-theme-text-color, #000)
-        var(--custom-theme-text-color-amount, 0%)
     );
     --chart-mono-7: color-mix(
       in oklab,
@@ -60762,9 +60823,45 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --chart-mono-7-text: color-mix(
+    --chart-mono-text-1: color-mix(
       in oklab,
-      var(--neutral-2) 100%,
+      var(--neutral-43) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-2: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-3: color-mix(
+      in oklab,
+      var(--neutral-65) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-4: color-mix(
+      in oklab,
+      var(--neutral-99) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-5: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-6: color-mix(
+      in oklab,
+      var(--neutral-25) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chart-mono-text-7: color-mix(
+      in oklab,
+      var(--neutral-34) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -71431,4 +71528,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.4311c185e29e34bd.css.map*/
+/*# sourceMappingURL=web.7b58e212cddbae56.css.map*/
