@@ -30114,9 +30114,11 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .user-profile-modal-v2 .banner__43147 {
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  height: 48px;
   position: absolute;
   top: 0;
   inset-inline: 0;
+  padding: 0;
 }
 .user-profile-sidebar .banner__43147 {
   border-radius: 0;
@@ -71534,4 +71536,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.5a3480756c9503de.css.map*/
+/*# sourceMappingURL=web.ccd2d6139f9cf7f4.css.map*/
