@@ -70414,6 +70414,7 @@ html.disable-forced-colors * {
   --mobile-guild-bar-item-padding: 8px;
   --mobile-guild-bar-item-size: 48px;
   --mobile-guild-folder-background-left: 12px;
+  --mobile-guild-folder-background-radius: 2147483647px;
   --mobile-guild-folder-background-width-offset: 0px;
   --mobile-guild-folder-color-opacity: 0.15px;
   --mobile-guild-folder-padding: 8px;
@@ -70449,6 +70450,8 @@ html.disable-forced-colors * {
   --mobile-table-row-icon-size: 32px;
   --mobile-table-row-padding: 12px;
   --mobile-user-profile-about-me-heading-text-style: text-sm/semibold;
+  --mobile-user-row-label-line-height-android: 16px;
+  --mobile-user-row-label-line-height-ios: 22px;
   --mobile-voice-channel-user-limit-border-width: 0px;
   --mobile-voice-panel-controls-border-radius: 32px;
   --mobile-voice-panel-controls-padding: 16px;
@@ -70488,6 +70491,7 @@ html.disable-forced-colors * {
   --mobile-group-avatar-size: 64px;
   --mobile-guild-bar-item-margin: 6px;
   --mobile-guild-folder-background-left: 8px;
+  --mobile-guild-folder-background-radius: 16px;
   --mobile-guild-folder-background-width-offset: 8px;
   --mobile-guild-item-selected-border-radius: 12px;
   --mobile-header-title-text-style: heading-lg/semibold;
@@ -70516,6 +70520,7 @@ html.disable-forced-colors * {
   --mobile-table-row-content-height: 32px;
   --mobile-table-row-height: 56px;
   --mobile-user-profile-about-me-heading-text-style: text-sm/medium;
+  --mobile-user-row-label-line-height-ios: 20px;
   --mobile-voice-channel-user-limit-border-width: 1px;
   --mobile-voice-panel-controls-border-radius: 16px;
   --mobile-voice-panel-controls-padding: 4px;
@@ -71528,4 +71533,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.b38aea173e49f22f.css.map*/
+/*# sourceMappingURL=web.4f0336625e170347.css.map*/

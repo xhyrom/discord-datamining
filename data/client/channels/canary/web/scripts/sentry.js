@@ -6455,7 +6455,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-e2f2cd33afd6eb06fc20ec11215e708d2b7c4337",
+            release: "discord_web-cb39339cde0c1c2f055b7bd0ddfdfdda5bce380e",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6522,8 +6522,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "518443"),
-            o.NA("builtAt", String("1774640458158"));
+            o.NA("buildNumber", "518499"),
+            o.NA("builtAt", String("1774642987447"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -13099,6 +13099,14 @@
                   return 12;
                 },
               },
+              GUILD_FOLDER_BACKGROUND_RADIUS: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 0x7fffffff;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 16;
+                  return 0x7fffffff;
+                },
+              },
               GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET: {
                 resolve(e) {
                   let { enabledExperiments: t } = e;
@@ -13338,6 +13346,15 @@
                   for (let e of t)
                     if ("mobile-visual-refresh" === e) return "text-sm/medium";
                   return "text-sm/semibold";
+                },
+              },
+              USER_ROW_LABEL_LINE_HEIGHT_ANDROID: { resolve: () => 16 },
+              USER_ROW_LABEL_LINE_HEIGHT_IOS: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 22;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 20;
+                  return 22;
                 },
               },
               VOICE_CHANNEL_USER_LIMIT_BORDER_WIDTH: {
@@ -39494,4 +39511,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.ac90424644398079.js.map
+//# sourceMappingURL=sentry.43b04ed9f5838df9.js.map
