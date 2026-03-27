@@ -19209,6 +19209,7 @@ img.thumbnail__0f2e8 {
 }
 .nitroTopDividerShadow_b3fb5f {
   box-shadow: 0 -5px 30px 4px var(--premium-tier-2-purple);
+  opacity: 0;
 }
 .glow_b3fb5f.reducedMotion_b3fb5f {
   opacity: 0;
@@ -19235,16 +19236,17 @@ img.thumbnail__0f2e8 {
   display: flex;
 }
 .nitroTopDividerLockBorder_b3fb5f {
-  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  background: var(--border-normal);
   height: 1px;
   width: 100%;
 }
-.nitroTopDividerLockBorder_b3fb5f.brandRefresh_b3fb5f {
-  background: var(--border-normal);
+.trialNUX_b3fb5f .nitroTopDividerLockBorder_b3fb5f {
+  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
 }
 .nitroTopDividerLockCircle_b3fb5f {
   align-items: center;
-  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  background: var(--background-surface-highest);
+  border: 1px solid var(--border-normal);
   border-radius: 50%;
   display: flex;
   height: 28px;
@@ -19255,32 +19257,26 @@ img.thumbnail__0f2e8 {
   width: 28px;
   z-index: 9999;
 }
-.nitroTopDividerLockCircle_b3fb5f.brandRefresh_b3fb5f {
-  background: var(--background-surface-highest);
-  border: 1px solid var(--border-normal);
-}
 .nitroTopDividerLockBorderReversed_b3fb5f {
-  background: var(
-    --custom-premium-colors-premium-gradient-tier-2-tri-color-reverse
-  );
+  background: var(--border-normal);
   height: 1px;
   width: 100%;
 }
-.nitroTopDividerLockBorderReversed_b3fb5f.brandRefresh_b3fb5f {
-  background: var(--border-normal);
+.trialNUX_b3fb5f .nitroTopDividerLockBorderReversed_b3fb5f {
+  background: var(
+    --custom-premium-colors-premium-gradient-tier-2-tri-color-reverse
+  );
 }
 .nitroTopDividerLower_b3fb5f {
-  background-color: var(--premium-tier-2-purple);
-  height: 12px;
-}
-.nitroTopDividerLower_b3fb5f.brandRefresh_b3fb5f {
   background: linear-gradient(
     90deg,
     var(--expressive-gradient-nitro-pink-start) 0,
     var(--expressive-gradient-nitro-pink-end) 100%
   );
+  height: 12px;
+  opacity: 1;
 }
-.theme-light .nitroTopDividerLower_b3fb5f.brandRefresh_b3fb5f {
+.theme-light .nitroTopDividerLower_b3fb5f {
   background: linear-gradient(
     90deg,
     color-mix(
@@ -19810,16 +19806,13 @@ img.thumbnail__0f2e8 {
   padding-bottom: 0;
 }
 .categorySectionNitroLocked_c656ac {
-  background-color: hsl(var(--premium-tier-2-purple-hsl) / 0.2);
-}
-.categorySectionNitroLocked_c656ac.brandRefresh_c656ac {
   background: linear-gradient(
     90deg,
     var(--expressive-gradient-nitro-pink-start) 0,
     var(--expressive-gradient-nitro-pink-end) 100%
   );
 }
-.theme-light .categorySectionNitroLocked_c656ac.brandRefresh_c656ac {
+.theme-light .categorySectionNitroLocked_c656ac {
   background: linear-gradient(
     90deg,
     color-mix(
@@ -19861,13 +19854,10 @@ img.thumbnail__0f2e8 {
   margin-top: 0;
 }
 .nitroBottomDivider_c656ac {
-  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  background: var(--border-normal);
   height: 1px;
   margin: var(--custom-emoji-picker-constants-emoji-premium-upsell-margin-top) 0;
   width: 100%;
-}
-.nitroBottomDivider_c656ac.brandRefresh_c656ac {
-  background: var(--border-normal);
 }
 .upsellContainer_c656ac {
   align-items: center;
@@ -23140,16 +23130,13 @@ img.thumbnail__0f2e8 {
   position: relative;
 }
 .sectionContainerNitroLockedBackground__61424 {
-  background-color: hsl(var(--premium-tier-2-purple-hsl) / 0.35);
-}
-.sectionContainerNitroLockedBackground__61424.brandRefresh__61424 {
   background: linear-gradient(
     90deg,
     var(--expressive-gradient-nitro-pink-start) 0,
     var(--expressive-gradient-nitro-pink-end) 100%
   );
 }
-.theme-light .sectionContainerNitroLockedBackground__61424.brandRefresh__61424 {
+.theme-light .sectionContainerNitroLockedBackground__61424 {
   background: linear-gradient(
     90deg,
     color-mix(
@@ -23188,18 +23175,14 @@ img.thumbnail__0f2e8 {
 }
 .nitroLocked__61424.lastSectionFooter__61424,
 .nitroLocked__61424.smallPaddingFooter__61424 {
-  background-color: hsl(var(--premium-tier-2-purple-hsl) / 0.35);
-}
-.nitroLocked__61424.lastSectionFooter__61424.brandRefresh__61424,
-.nitroLocked__61424.smallPaddingFooter__61424.brandRefresh__61424 {
   background: linear-gradient(
     90deg,
     var(--expressive-gradient-nitro-pink-start) 0,
     var(--expressive-gradient-nitro-pink-end) 100%
   );
 }
-.theme-light .nitroLocked__61424.lastSectionFooter__61424.brandRefresh__61424,
-.theme-light .nitroLocked__61424.smallPaddingFooter__61424.brandRefresh__61424 {
+.theme-light .nitroLocked__61424.lastSectionFooter__61424,
+.theme-light .nitroLocked__61424.smallPaddingFooter__61424 {
   background: linear-gradient(
     90deg,
     color-mix(
@@ -23231,16 +23214,13 @@ img.thumbnail__0f2e8 {
   padding-inline-start: 8px;
 }
 .soundRowNitroLocked__61424 {
-  background-color: hsl(var(--premium-tier-2-purple-hsl) / 0.35);
-}
-.soundRowNitroLocked__61424.brandRefresh__61424 {
   background: linear-gradient(
     90deg,
     var(--expressive-gradient-nitro-pink-start) 0,
     var(--expressive-gradient-nitro-pink-end) 100%
   );
 }
-.theme-light .soundRowNitroLocked__61424.brandRefresh__61424 {
+.theme-light .soundRowNitroLocked__61424 {
   background: linear-gradient(
     90deg,
     color-mix(
@@ -30270,6 +30250,26 @@ html:not(.chat-input) .inputInner_b1f01d {
 .icon__9f71b {
   color: var(--text-default);
   flex-shrink: 0;
+}
+.container_db1863 {
+  align-items: flex-start;
+  background: var(--background-feedback-info);
+  border: 1px solid var(--icon-feedback-info);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-12);
+}
+.text_db1863 {
+  flex: 1;
+}
+.closeButton_db1863 {
+  color: var(--icon-subtle);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.closeButton_db1863:hover {
+  color: var(--icon-default);
 }
 .upsellContainer__5997d {
   border-radius: var(--radius-sm);
@@ -71528,4 +71528,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.7b58e212cddbae56.css.map*/
+/*# sourceMappingURL=web.b38aea173e49f22f.css.map*/
