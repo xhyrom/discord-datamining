@@ -4033,6 +4033,7 @@
   background-color: var(--background-mod-muted);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
+  box-sizing: border-box;
   width: 100%;
 }
 .footer__2fba1,
@@ -71533,4 +71534,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.4f0336625e170347.css.map*/
+/*# sourceMappingURL=web.d7c2bda2426efcf4.css.map*/
