@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8323992002](https://discord.com/jobs/8323992002)
 
-**Updated At:** Wed, 25 Mar 2026 19:31:28 GMT
+**Updated At:** Fri, 27 Mar 2026 20:45:59 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking a visionary Staff Product Marketing Manager to shape and drive the future of the Discord Nitro third-party benefits ecosystem.&amp;nbsp;
@@ -25,7 +25,7 @@ Measure and optimize program performance, running partner reviews, producing cas
 
 What you should have
 
-You have 6+ years of experience in product marketing, partner marketing, or related fields, ideally with consumer subscription or platform products.
+You have 6+ years of experience in product marketing, ideally with consumer subscription or platform products.
 You use Discord personally and have a passion for gaming or community platforms
 You’re both a strategic storyteller and operator, able to connect high-level brand value to detailed GTM execution.
 You have experience partnering with Sales or Business Development teams, supporting pitch development, building enablement materials, and influencing partner decision-making.
@@ -35,7 +35,7 @@ You love combining data, creativity, and partnerships to deliver programs that d
 
 Bonus Points
 
-Experience in subscription marketing, loyalty or membership programs, or consumer partnership development.
+Experience in partner marketing, subscription marketing, loyalty or membership programs, or consumer partnership development.
 Background in gaming, entertainment, or digital lifestyle brands.
 Experience running global co-marketing or partner programs.
 

@@ -10,44 +10,41 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8373431002](https://discord.com/jobs/8373431002)
 
-**Updated At:** Tue, 17 Mar 2026 22:22:03 GMT
+**Updated At:** Fri, 27 Mar 2026 21:25:53 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for experienced and passionate Senior Data Engineers to join our Data team! Our data infrastructure powers insights across the entire company, and we need Senior Data Engineers who are passionate about building the foundational datasets and pipelines that enable data-driven decision making at scale. You'll be building the analytical backbone that supports everything from product development to experimentation to machine learning - the systems that help us understand and improve how people experience Discord.
-Data Engineers at Discord collaborate with data science and engineering teams to build and support foundational high-leverage data sets that power tools, analyses, and models. The data sets built by DE directly inform how we identify opportunities, measure success, and make decisions. We're hiring for multiple verticals on our Data Engineering team, including Engagement, Growth, and Safety. If building elegant data systems that power insights for hundreds of millions of users sounds exciting, we'd love to hear from you!
-What You'll Be Doing
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for an experienced and passionate Senior Data Engineer, Analytics to join our data team! You will be owning the transformation and semantic layer that turns data into clean, tested, well-documented tables and dashboards that data scientists, product managers, and business stakeholders can trust and self-serve from. You'll define and operationalize the metrics that inform how we identify opportunities, measure success, and make decisions. If this sounds exciting to you and you’re passionate about data modeling, metric design, and empowering teams to move faster with reliable data, read on!
+We're hiring for multiple verticals on our Data Engineering team, including Engagement and Performance.
+What you will be doing:
 
-Create and maintain data pipelines and foundational datasets to support analytics, modeling, experimentation, and product/business needs
-Design and build database architectures with massive and complex data, balancing ergonomic benefits with computational load and cost
-Partner closely with data science and engineering teams to improve instrumentation coverage, accuracy, and reliability across Discord's products
-Build scalable data quality audits, implementing automated alerting and anomaly detection systems that catch issues before they impact downstream consumers
-Proactively identify and execute opportunities to improve ETL performance, reduce costs, and enhance the overall data platform experience
-Create dashboards and reporting infrastructure that enable self-serve analytics and support key business objectives across functional teams
-Champion data engineering best practices including documentation, testing, and maintainable code that scales with Discord's growth
+Design, build, and maintain curated analytical datasets and data models that serve as canonical sources for metrics, dashboards, and analyses
+Own metric definitions end to end, from partnering with data science and product team to define what we should measure, to implementing it in production, to surfacing it in visualization tools
+Build and maintain executive-level dashboards and self-serve reporting tools that enable business stakeholders to answer their own questions
+Partner closely with data science, product manager, and engineering teams to translate business questions into well modeled, performant, and discoverable data assets
+Establish and enforce data quality standards through testing frameworks, documentation, and monitoring for the datasets you own
+Drive adoption of consistent data modeling patterns, naming conventions, and documentation norms across the data organization
 
 What you should have
 
-4+ years of experience building data pipelines in production environments with high volumes of consumer data
+4+ years of experience in analytics or data engineering with a strong focus on building curated, consumer-facing datasets
 4+ years of experience in designing, developing, and maintaining robust data models from structured and unstructured sources
-4+ years of experience writing accurate and effective code in SQL and Python
-Experience implementing and monitoring audits for data quality with massive data sets (e.g. billions of rows)
-Experience proactively identifying opportunities to improve ETL &amp;amp; dashboard performance and cost
-Experience leveraging your excellent communication and stakeholder management skills to thrive in ambiguous environments where problems are not well-defined and evolve quickly
-Experience collaborating directly with data science, machine learning, and product engineering teams
-A desire to work with amazing, passionate people who care deeply about solving challenging problems to improve Discord
-Last but not least - a collaborative attitude and a healthy dose of natural curiosity!
+4+ years of experience writing accurate and effective code in SQL
+Experience with designing data model to power a variety of use cases, including experimentation
+Fluency in Python or another programming language, with solid fundamentals in version control and CI/CD practices
+Experience building and owning executive-level dashboards and reports using BI tools (e.g., Looker, Tableau, or similar)
+Strong business acumen, you will partner with data scientists and product managers to translate ambiguous business questions into concrete metric definitions and data models
+Excellent communication, comfortable being the connective tissue between technical and business teams
+Last but not least, desire to work with amazing, passionate people who care deeply about solving challenging problems to improve Discord
 
-Bonus Points
+Bonus Points:
 
-Discord passion: You're an active Discord user or have deep knowledge of gaming and creator communities
-Data architecture expertise: Experience owning data models for functional areas with deep knowledge of performant, scalable design patterns
-Modern data stack: Hands-on experience with BigQuery, Airflow, DBT, or similar technologies in production environments
-Visualization platforms: Proficiency with Looker, Tableau, or similar BI tools and understanding of how data architecture impacts dashboard performance
-Experimentation infrastructure: Experience designing data systems that power A/B testing and statistical analysis at scale
-Cross-functional collaboration: Experience working with compliance, legal, or litigation teams on data-related initiatives
-For Engagement: Experience working on analytics for core features (i.e. messaging, video/voice call etc) in communication app.
-For Growth analytics: Experience working on SEO, GEO, or top-of-funnel growth features
-For Safety: Background promoting best practices in data security, compliance, and governance standards
+Passion for Discord or online communities
+Experience building or contributing to a semantic layer or metrics store
+Experience with modern analytics and data engineering tools and workflows (dbt, BigQuery, or similar)
+Experience defining and governing metric standards across a data organization
+Experience working on analytics for core features (i.e. messaging, video/voice call etc) in communication app.
+Experience working on analytics for performance and reliability of communication app
+Background in analytics for core communication features (messaging, video/voice) or platform reliability and performance.
 
 The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Discord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.
