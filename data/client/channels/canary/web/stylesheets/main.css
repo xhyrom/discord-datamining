@@ -69184,7 +69184,9 @@ html.disable-forced-colors * {
   --mobile-tab-label-margin-top: -6px;
   --mobile-tab-label-text-style: text-xxs/semibold;
   --mobile-table-row-arrow-margin-end: 0px;
+  --mobile-table-row-arrow-margin-start: 14px;
   --mobile-table-row-arrow-width: 8px;
+  --mobile-table-row-border-radius: 8px;
   --mobile-table-row-content-height: 36px;
   --mobile-table-row-divider-padding: 56px;
   --mobile-table-row-height: 60px;
@@ -69256,8 +69258,10 @@ html.disable-forced-colors * {
   --mobile-tab-bar-unread-badge-size: 12px;
   --mobile-tab-label-margin-top: -4px;
   --mobile-tab-label-text-style: text-xs/medium;
-  --mobile-table-row-arrow-margin-end: 12px;
+  --mobile-table-row-arrow-margin-end: 8px;
+  --mobile-table-row-arrow-margin-start: 8px;
   --mobile-table-row-arrow-width: 12px;
+  --mobile-table-row-border-radius: 16px;
   --mobile-table-row-content-height: 32px;
   --mobile-table-row-height: 56px;
   --mobile-user-profile-about-me-heading-text-style: text-sm/medium;
@@ -70274,4 +70278,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.53a0833c7037762e.css.map*/
+/*# sourceMappingURL=web.209bbe5a5a1a3390.css.map*/

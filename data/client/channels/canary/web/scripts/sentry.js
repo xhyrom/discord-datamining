@@ -6455,7 +6455,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-51811cd0182e3a60f2a1285173642e270393822b",
+            release: "discord_web-eff2be850d28489bb7a38d0926bb73b5a9b109e2",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6522,8 +6522,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "519723"),
-            o.NA("builtAt", String("1774909367907"));
+            o.NA("buildNumber", "519754"),
+            o.NA("builtAt", String("1774910030052"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -8296,6 +8296,14 @@
                     raw: "OPACITY_12",
                     opacity: 0.12156862745098039,
                   },
+                },
+              },
+              SWITCH_THUMB_BACKGROUND_DEFAULT: {
+                "mobile-visual-refresh": {
+                  [a.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
+                  [a.LIGHT]: { raw: "NEUTRAL_44", opacity: 1 },
+                  [a.MIDNIGHT]: { raw: "NEUTRAL_1", opacity: 1 },
+                  [a.DARKER]: { raw: "NEUTRAL_1", opacity: 1 },
                 },
               },
               TAB_BAR_BACKGROUND: {
@@ -10807,6 +10815,13 @@
                 [a.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.2 },
                 [a.DARKER]: { raw: "PLUM_11", opacity: 0.16 },
               },
+              SWITCH_THUMB_BACKGROUND_DEFAULT: {
+                category: "generic",
+                [a.DARK]: { raw: "WHITE", opacity: 1 },
+                [a.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "WHITE", opacity: 1 },
+                [a.DARKER]: { raw: "WHITE", opacity: 1 },
+              },
               TAB_BAR_BACKGROUND: {
                 category: "generic",
                 [a.DARK]: { raw: "PRIMARY_800", opacity: 1 },
@@ -13282,8 +13297,16 @@
                 resolve(e) {
                   let { enabledExperiments: t } = e;
                   if (0 === t.length) return 0;
-                  for (let e of t) if ("mobile-visual-refresh" === e) return 12;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 8;
                   return 0;
+                },
+              },
+              TABLE_ROW_ARROW_MARGIN_START: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 14;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 8;
+                  return 14;
                 },
               },
               TABLE_ROW_ARROW_WIDTH: {
@@ -13291,6 +13314,14 @@
                   let { enabledExperiments: t } = e;
                   if (0 === t.length) return 8;
                   for (let e of t) if ("mobile-visual-refresh" === e) return 12;
+                  return 8;
+                },
+              },
+              TABLE_ROW_BORDER_RADIUS: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 8;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 16;
                   return 8;
                 },
               },
@@ -39511,4 +39542,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.423ec96a5571f3c8.js.map
+//# sourceMappingURL=sentry.09bbc30d389ae87e.js.map
