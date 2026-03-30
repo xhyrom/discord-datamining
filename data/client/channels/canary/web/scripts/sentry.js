@@ -6455,7 +6455,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1e60584d3cb2a977f4385816200be21cb25ad5fa",
+            release: "discord_web-e3e30a48d383b75221ae39eaadd6ca5ae62c2b47",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6522,8 +6522,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "519480"),
-            o.NA("builtAt", String("1774902310907"));
+            o.NA("buildNumber", "519542"),
+            o.NA("builtAt", String("1774903985514"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -14855,6 +14855,7 @@
             (a[(a.PREMIUM_GROUP_INVITE = 64)] = "PREMIUM_GROUP_INVITE"),
             (a[(a.VOICE_SESSION = 65)] = "VOICE_SESSION"),
             (a[(a.GUILD_BOOST_UPSELL = 66)] = "GUILD_BOOST_UPSELL"),
+            (a[(a.FRIEND_REQUEST_ACCEPTED = 67)] = "FRIEND_REQUEST_ACCEPTED"),
             a);
       },
       122817() {},
@@ -39510,4 +39511,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.631d6b9665fc318c.js.map
+//# sourceMappingURL=sentry.ef16cf9138377f03.js.map

@@ -36918,13 +36918,6 @@ body .headerAnimation_b54a5b {
 .container__63de2:hover {
   background-color: var(--background-mod-muted);
 }
-.currencyWrapper_b41cc5,
-.previewTotalSectionContainer_b41cc5 {
-  margin-top: var(--space-16);
-}
-.premiumSwitchPlanSelectText_b41cc5 {
-  margin-bottom: var(--space-24);
-}
 .subscriptionCostRowAmount__3d62f {
   font-weight: var(--font-weight-medium);
 }
@@ -37124,6 +37117,13 @@ body .headerAnimation_b54a5b {
 }
 .premiumGroupNotice_e4d803 {
   margin: 12px 0;
+}
+.currencyWrapper_b41cc5,
+.previewTotalSectionContainer_b41cc5 {
+  margin-top: var(--space-16);
+}
+.premiumSwitchPlanSelectText_b41cc5 {
+  margin-bottom: var(--space-24);
 }
 .renewalInvoiceDate_d313e6 {
   color: var(--text-default);
@@ -70274,4 +70274,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.d494260990484996.css.map*/
+/*# sourceMappingURL=web.53a0833c7037762e.css.map*/
