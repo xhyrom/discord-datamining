@@ -17876,6 +17876,9 @@ img.thumbnail__0f2e8 {
   background: var(--background-surface-highest);
   border: 1px solid var(--border-subtle);
 }
+.upsellContainer__0b69f:not(.withGradientBg__0b69f).hasPreviewSound__0b69f {
+  padding: 8px 12px;
+}
 .expressiveGradient__0b69f {
   align-items: center;
   display: flex;
@@ -70278,4 +70281,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.209bbe5a5a1a3390.css.map*/
+/*# sourceMappingURL=web.a8716b28b74a833d.css.map*/
