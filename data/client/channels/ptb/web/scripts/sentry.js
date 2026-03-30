@@ -3333,6 +3333,7 @@
             `/storefront/collections/${e}`,
           STOREFRONT_PRODUCT_BY_SKU_ID: (e) => `/storefront/products/sku/${e}`,
           STOREFRONT_PRODUCTS_BY_SKU_IDS: "/storefront/products/skus",
+          STOREFRONT_PROMOTIONS: "/storefront/promotions",
           STORE_DIRECTORY_LAYOUT: (e) => `/store/directory-layouts/${e}`,
           STORE_DIRECTORY: (e) => `/store/directory/${e}`,
           STORE_EMAIL_RESEND_PAYMENT_VERIFICATION:
@@ -6455,7 +6456,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-03-27-5da9ced40b17f75f5c1f8b6dd9b48fea65eddafc-discord_web",
+              "2026-03-30-817ed0c3d2ce0770b66515e9005c2a2b45eaeea8-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6522,8 +6523,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "518551"),
-            o.NA("builtAt", String("1774645127894"));
+            o.NA("buildNumber", "519006"),
+            o.NA("builtAt", String("1774855138109"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -12975,7 +12976,7 @@
                 resolve(e) {
                   let { enabledExperiments: t } = e;
                   if (0 === t.length) return 24;
-                  for (let e of t) if ("mobile-visual-refresh" === e) return 8;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 16;
                   return 24;
                 },
               },
@@ -13097,6 +13098,14 @@
                   if (0 === t.length) return 12;
                   for (let e of t) if ("mobile-visual-refresh" === e) return 8;
                   return 12;
+                },
+              },
+              GUILD_FOLDER_BACKGROUND_RADIUS: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 0x7fffffff;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 16;
+                  return 0x7fffffff;
                 },
               },
               GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET: {
@@ -13338,6 +13347,15 @@
                   for (let e of t)
                     if ("mobile-visual-refresh" === e) return "text-sm/medium";
                   return "text-sm/semibold";
+                },
+              },
+              USER_ROW_LABEL_LINE_HEIGHT_ANDROID: { resolve: () => 16 },
+              USER_ROW_LABEL_LINE_HEIGHT_IOS: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 22;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 20;
+                  return 22;
                 },
               },
               VOICE_CHANNEL_USER_LIMIT_BORDER_WIDTH: {
@@ -39494,4 +39512,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.61d27b69ea927e43.js.map
+//# sourceMappingURL=sentry.dc5ffa92f55f8f48.js.map
