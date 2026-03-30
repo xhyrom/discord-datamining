@@ -1426,7 +1426,7 @@
     <div class="nav_blur"></div>
   </header>
   <div class="padding-menu"></div>
-  <div class="global_section guidlines">
+  <main id="main" class="global_section guidlines">
     <div class="container780 left-vert">
       <div class="rich-text-block w-richtext">
         <h3>Discord Company Information - Impressum</h3>
@@ -1476,7 +1476,7 @@
         <p>‍</p>
       </div>
     </div>
-  </div>
+  </main>
   <div class="footer_new">
     <div class="footer-styles w-embed"></div>
     <div class="container-1762">
