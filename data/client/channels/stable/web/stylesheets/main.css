@@ -4033,6 +4033,7 @@
   background-color: var(--background-mod-muted);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
+  box-sizing: border-box;
   width: 100%;
 }
 .footer__2fba1,
@@ -15320,7 +15321,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .button__65e57 {
   flex: 1 1 0;
 }
-.newBadge__65e57 {
+.typeBadge__65e57 {
   inset-inline-end: 16px;
   position: absolute;
   top: 16px;
@@ -19209,6 +19210,7 @@ img.thumbnail__0f2e8 {
 }
 .nitroTopDividerShadow_b3fb5f {
   box-shadow: 0 -5px 30px 4px var(--premium-tier-2-purple);
+  opacity: 0;
 }
 .glow_b3fb5f.reducedMotion_b3fb5f {
   opacity: 0;
@@ -19235,16 +19237,17 @@ img.thumbnail__0f2e8 {
   display: flex;
 }
 .nitroTopDividerLockBorder_b3fb5f {
-  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  background: var(--border-normal);
   height: 1px;
   width: 100%;
 }
-.nitroTopDividerLockBorder_b3fb5f.brandRefresh_b3fb5f {
-  background: var(--border-normal);
+.trialNUX_b3fb5f .nitroTopDividerLockBorder_b3fb5f {
+  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
 }
 .nitroTopDividerLockCircle_b3fb5f {
   align-items: center;
-  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  background: var(--background-surface-highest);
+  border: 1px solid var(--border-normal);
   border-radius: 50%;
   display: flex;
   height: 28px;
@@ -19255,32 +19258,26 @@ img.thumbnail__0f2e8 {
   width: 28px;
   z-index: 9999;
 }
-.nitroTopDividerLockCircle_b3fb5f.brandRefresh_b3fb5f {
-  background: var(--background-surface-highest);
-  border: 1px solid var(--border-normal);
-}
 .nitroTopDividerLockBorderReversed_b3fb5f {
-  background: var(
-    --custom-premium-colors-premium-gradient-tier-2-tri-color-reverse
-  );
+  background: var(--border-normal);
   height: 1px;
   width: 100%;
 }
-.nitroTopDividerLockBorderReversed_b3fb5f.brandRefresh_b3fb5f {
-  background: var(--border-normal);
+.trialNUX_b3fb5f .nitroTopDividerLockBorderReversed_b3fb5f {
+  background: var(
+    --custom-premium-colors-premium-gradient-tier-2-tri-color-reverse
+  );
 }
 .nitroTopDividerLower_b3fb5f {
-  background-color: var(--premium-tier-2-purple);
-  height: 12px;
-}
-.nitroTopDividerLower_b3fb5f.brandRefresh_b3fb5f {
   background: linear-gradient(
     90deg,
     var(--expressive-gradient-nitro-pink-start) 0,
     var(--expressive-gradient-nitro-pink-end) 100%
   );
+  height: 12px;
+  opacity: 1;
 }
-.theme-light .nitroTopDividerLower_b3fb5f.brandRefresh_b3fb5f {
+.theme-light .nitroTopDividerLower_b3fb5f {
   background: linear-gradient(
     90deg,
     color-mix(
@@ -19810,16 +19807,13 @@ img.thumbnail__0f2e8 {
   padding-bottom: 0;
 }
 .categorySectionNitroLocked_c656ac {
-  background-color: hsl(var(--premium-tier-2-purple-hsl) / 0.2);
-}
-.categorySectionNitroLocked_c656ac.brandRefresh_c656ac {
   background: linear-gradient(
     90deg,
     var(--expressive-gradient-nitro-pink-start) 0,
     var(--expressive-gradient-nitro-pink-end) 100%
   );
 }
-.theme-light .categorySectionNitroLocked_c656ac.brandRefresh_c656ac {
+.theme-light .categorySectionNitroLocked_c656ac {
   background: linear-gradient(
     90deg,
     color-mix(
@@ -19861,13 +19855,10 @@ img.thumbnail__0f2e8 {
   margin-top: 0;
 }
 .nitroBottomDivider_c656ac {
-  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  background: var(--border-normal);
   height: 1px;
   margin: var(--custom-emoji-picker-constants-emoji-premium-upsell-margin-top) 0;
   width: 100%;
-}
-.nitroBottomDivider_c656ac.brandRefresh_c656ac {
-  background: var(--border-normal);
 }
 .upsellContainer_c656ac {
   align-items: center;
@@ -23140,16 +23131,13 @@ img.thumbnail__0f2e8 {
   position: relative;
 }
 .sectionContainerNitroLockedBackground__61424 {
-  background-color: hsl(var(--premium-tier-2-purple-hsl) / 0.35);
-}
-.sectionContainerNitroLockedBackground__61424.brandRefresh__61424 {
   background: linear-gradient(
     90deg,
     var(--expressive-gradient-nitro-pink-start) 0,
     var(--expressive-gradient-nitro-pink-end) 100%
   );
 }
-.theme-light .sectionContainerNitroLockedBackground__61424.brandRefresh__61424 {
+.theme-light .sectionContainerNitroLockedBackground__61424 {
   background: linear-gradient(
     90deg,
     color-mix(
@@ -23188,18 +23176,14 @@ img.thumbnail__0f2e8 {
 }
 .nitroLocked__61424.lastSectionFooter__61424,
 .nitroLocked__61424.smallPaddingFooter__61424 {
-  background-color: hsl(var(--premium-tier-2-purple-hsl) / 0.35);
-}
-.nitroLocked__61424.lastSectionFooter__61424.brandRefresh__61424,
-.nitroLocked__61424.smallPaddingFooter__61424.brandRefresh__61424 {
   background: linear-gradient(
     90deg,
     var(--expressive-gradient-nitro-pink-start) 0,
     var(--expressive-gradient-nitro-pink-end) 100%
   );
 }
-.theme-light .nitroLocked__61424.lastSectionFooter__61424.brandRefresh__61424,
-.theme-light .nitroLocked__61424.smallPaddingFooter__61424.brandRefresh__61424 {
+.theme-light .nitroLocked__61424.lastSectionFooter__61424,
+.theme-light .nitroLocked__61424.smallPaddingFooter__61424 {
   background: linear-gradient(
     90deg,
     color-mix(
@@ -23231,16 +23215,13 @@ img.thumbnail__0f2e8 {
   padding-inline-start: 8px;
 }
 .soundRowNitroLocked__61424 {
-  background-color: hsl(var(--premium-tier-2-purple-hsl) / 0.35);
-}
-.soundRowNitroLocked__61424.brandRefresh__61424 {
   background: linear-gradient(
     90deg,
     var(--expressive-gradient-nitro-pink-start) 0,
     var(--expressive-gradient-nitro-pink-end) 100%
   );
 }
-.theme-light .soundRowNitroLocked__61424.brandRefresh__61424 {
+.theme-light .soundRowNitroLocked__61424 {
   background: linear-gradient(
     90deg,
     color-mix(
@@ -30133,9 +30114,11 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .user-profile-modal-v2 .banner__43147 {
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  height: 48px;
   position: absolute;
   top: 0;
   inset-inline: 0;
+  padding: 0;
 }
 .user-profile-sidebar .banner__43147 {
   border-radius: 0;
@@ -30270,6 +30253,26 @@ html:not(.chat-input) .inputInner_b1f01d {
 .icon__9f71b {
   color: var(--text-default);
   flex-shrink: 0;
+}
+.container_db1863 {
+  align-items: flex-start;
+  background: var(--background-feedback-info);
+  border: 1px solid var(--icon-feedback-info);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-12);
+}
+.text_db1863 {
+  flex: 1;
+}
+.closeButton_db1863 {
+  color: var(--icon-subtle);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.closeButton_db1863:hover {
+  color: var(--icon-default);
 }
 .upsellContainer__5997d {
   border-radius: var(--radius-sm);
@@ -70414,6 +70417,7 @@ html.disable-forced-colors * {
   --mobile-guild-bar-item-padding: 8px;
   --mobile-guild-bar-item-size: 48px;
   --mobile-guild-folder-background-left: 12px;
+  --mobile-guild-folder-background-radius: 2147483647px;
   --mobile-guild-folder-background-width-offset: 0px;
   --mobile-guild-folder-color-opacity: 0.15px;
   --mobile-guild-folder-padding: 8px;
@@ -70449,6 +70453,8 @@ html.disable-forced-colors * {
   --mobile-table-row-icon-size: 32px;
   --mobile-table-row-padding: 12px;
   --mobile-user-profile-about-me-heading-text-style: text-sm/semibold;
+  --mobile-user-row-label-line-height-android: 16px;
+  --mobile-user-row-label-line-height-ios: 22px;
   --mobile-voice-channel-user-limit-border-width: 0px;
   --mobile-voice-panel-controls-border-radius: 32px;
   --mobile-voice-panel-controls-padding: 16px;
@@ -70488,6 +70494,7 @@ html.disable-forced-colors * {
   --mobile-group-avatar-size: 64px;
   --mobile-guild-bar-item-margin: 6px;
   --mobile-guild-folder-background-left: 8px;
+  --mobile-guild-folder-background-radius: 16px;
   --mobile-guild-folder-background-width-offset: 8px;
   --mobile-guild-item-selected-border-radius: 12px;
   --mobile-header-title-text-style: heading-lg/semibold;
@@ -70516,6 +70523,7 @@ html.disable-forced-colors * {
   --mobile-table-row-content-height: 32px;
   --mobile-table-row-height: 56px;
   --mobile-user-profile-about-me-heading-text-style: text-sm/medium;
+  --mobile-user-row-label-line-height-ios: 20px;
   --mobile-voice-channel-user-limit-border-width: 1px;
   --mobile-voice-panel-controls-border-radius: 16px;
   --mobile-voice-panel-controls-padding: 4px;
@@ -71528,4 +71536,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.7b58e212cddbae56.css.map*/
+/*# sourceMappingURL=web.ccd2d6139f9cf7f4.css.map*/
