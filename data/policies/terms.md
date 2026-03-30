@@ -1435,7 +1435,7 @@
     </div>
     <div class="nav_blur"></div>
   </header>
-  <div class="section-rich">
+  <main id="main" class="section-rich">
     <div class="padding-menu"></div>
     <div class="container780 left-vert">
       <a href="/archive" class="archived-link is_new w-inline-block"
@@ -2885,7 +2885,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </main>
   <div class="footer_new">
     <div class="footer-styles w-embed"></div>
     <div class="container-1762">
