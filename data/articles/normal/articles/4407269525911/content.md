@@ -1,8 +1,7 @@
 <div class="exp-box">
-  <strong>NOTE</strong>:<br />We are currently rolling out Euro as a payment
-  option in select regions. Euro is available in the following countries on
-  Desktop only at this time: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech
-  Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary,
+  <strong>NOTE</strong>:<br />The Euro is available in the following countries
+  on Desktop only at this time: Austria, Belgium, Bulgaria, Croatia, Cyprus,
+  Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary,
   Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta,
   Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, and
   Switzerland.
@@ -19,7 +18,7 @@
   <p>
     <span class="wysiwyg-font-size-x-large"
       ><strong>What this article covers:</strong></span
-    ><br /> 
+    >
   </p>
   <ul>
     <li data-list-item-id="e871bedaf25dddb85b0d56f6bb23f94ee">
@@ -88,7 +87,7 @@
   Discord periodically adjusts prices to ensure alignment with local markets. We
   offer localized pricing in a variety of currencies within Brazil, Turkey,
   Poland, Australia, Peru, Philippines, Colombia, Chile, Japan, Indonesia,
-  Malaysia, Thailand, Vietnam, Mexico, and Korea.
+  Malaysia, Thailand, Vietnam, Mexico, Great Britain, Canada, and Korea.
 </div>
 <p>
   If localized pricing is available in your region, it may apply to certain
@@ -207,7 +206,7 @@
   <strong
     >Q: Why were there additional fees or taxes on my purchase in a localized
     pricing country?</strong
-  ><br /> 
+  >
 </p>
 <p>
   A: When making a purchase in a country where localized pricing is available,
@@ -241,9 +240,10 @@
 </p>
 <p><strong>Q: How do I know if a price is in my local currency?</strong></p>
 <p>
-  A: Each currency displays with its specific currency code (for example, CAD,
-  AUD, JPY). If you’re in a region with localized pricing, any USD-denominated
-  pricing will be presented with USD beside the price.
+  A: Each currency displays with its specific currency code (for example, €, ฿,
+  ¥) or in format CA$X.XX. If you’re in a region with localized pricing, any
+  USD-denominated pricing will be presented with $, USD, or US$. beside the
+  price. 
 </p>
 <h2 id="h_01JSQCZJZWESYQXKBAD6PBP263">Specific Location-Based Information</h2>
 <p>
@@ -375,4 +375,15 @@
   through the Apple App Store or the Google Play Store and you are based in
   Turkey with the TRY pricing, you will maintain the legacy subscription prices
   so long as you are still subscribed through the mobile app.
+</p>
+<p>
+  <strong
+    >Q: I’m in Great Britain or Canada and I see my price is now localized. When
+    did this happen?</strong
+  >
+</p>
+<p>
+  A: As of April 2026, we transitioned pricing in Great Britain and Canada to
+  local currencies. This change standardizes pricing across these regions and
+  provides a more consistent and simplified purchasing experience.<br /> 
 </p>
