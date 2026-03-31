@@ -6458,7 +6458,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-96efeba8e860272b82b6d93550bd98a58f001574",
+            release: "discord_web-fbafda23d3e4d4356e800ba4e3517508e7bbd47c",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6525,8 +6525,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "520475"),
-            o.NA("builtAt", String("1774986752240"));
+            o.NA("buildNumber", "520554"),
+            o.NA("builtAt", String("1774989997343"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6534,31 +6534,29 @@
       },
       435220(e, t, r) {
         "use strict";
-        r.d(t, { GlobalDiscoveryAppsSections: () => i });
+        r.d(t, {
+          ApplicationDirectoryProfileSections: () => _,
+          GlobalDiscoveryAppsSections: () => n,
+        });
         var a,
-          i = (((a = {}).ABOUT = "about"), (a.STORE = "store"), a);
-      },
-      162157(e, t, r) {
-        "use strict";
-        r.d(t, { h: () => i });
-        var a,
-          i =
-            (((a = {}).GENERAL = "general"),
-            (a.IMAGES = "images"),
-            (a.PREMIUM_DEPRECATED = "premium"),
-            (a.STORE = "store"),
-            (a.PRIVACY = "privacy"),
-            a);
+          i,
+          n = (((a = {}).ABOUT = "about"), (a.STORE = "store"), a),
+          _ =
+            (((i = {}).GENERAL = "general"),
+            (i.IMAGES = "images"),
+            (i.PREMIUM_DEPRECATED = "premium"),
+            (i.STORE = "store"),
+            (i.PRIVACY = "privacy"),
+            i);
       },
       901123(e, t, r) {
         "use strict";
-        r.d(t, { ME: () => _ });
+        r.d(t, { ME: () => n });
         var a = r(323125);
         r(436317);
-        var i = r(435220),
-          n = r(162157);
-        let _ = "@me",
-          o = Object.freeze({
+        var i = r(435220);
+        let n = "@me",
+          _ = Object.freeze({
             INDEX: "/",
             APP: "/app",
             APP_WITH_INVITE_AND_GUILD_ONBOARDING: (e) =>
@@ -6594,7 +6592,7 @@
             MESSAGE_REQUESTS: "/message-requests",
             CHANNEL: (e, t, r) => {
               let a =
-                null == t ? `/channels/${e || _}` : `/channels/${e || _}/${t}`;
+                null == t ? `/channels/${e || n}` : `/channels/${e || n}/${t}`;
               return null == r ? a : `${a}/${r}`;
             },
             CHANNEL_THREAD_VIEW: (e, t, r, a) => {
@@ -6619,7 +6617,7 @@
             GIFT_CODE: (e) => `/gifts/${e}`,
             GIFT_CODE_LOGIN: (e) => `/gifts/${e}/login`,
             WELCOME: (e, t) =>
-              null != t ? `/welcome/${e ?? _}/${t}` : `/welcome/${e ?? _}`,
+              null != t ? `/welcome/${e ?? n}/${t}` : `/welcome/${e ?? n}`,
             VERIFY: "/verify",
             VERIFY_REQUEST: "/verify-request",
             RESET: "/reset",
@@ -6720,7 +6718,7 @@
             APPLICATION_DIRECTORY_PROFILE_SECTION: (e, t) =>
               `/application-directory/${e}/${t}`,
             APPLICATION_DIRECTORY_PROFILE_STORE_SKU: (e, t) =>
-              `/application-directory/${e}/${n.h.STORE}/${t}`,
+              `/application-directory/${e}/${i.ApplicationDirectoryProfileSections.STORE}/${t}`,
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
             SERVER_SHOP: (e) => `/channels/${e}/shop`,
@@ -6761,7 +6759,7 @@
               `/quest-home?tab=preview_tool&quest_id=${e}`,
             ICYMI: "/icymi",
           });
-        (0, a.dN)(o, [":", "?", "@"]);
+        (0, a.dN)(_, [":", "?", "@"]);
       },
       355097(e, t, r) {
         "use strict";
@@ -39596,4 +39594,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.a53f2f691feb084c.js.map
+//# sourceMappingURL=sentry.cf6c40f0be608545.js.map
