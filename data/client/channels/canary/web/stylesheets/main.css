@@ -28631,6 +28631,18 @@ html:not(.chat-input) .inputInner_b1f01d {
 :root .user-profile-modal-v2 {
   --custom-profile-frame-overflow-left: 16px;
 }
+:root .theme-midnight {
+  --custom-profile-frame-drop-shadow-opacity: 0.6;
+}
+:root .theme-darker {
+  --custom-profile-frame-drop-shadow-opacity: 0.4;
+}
+:root .theme-dark {
+  --custom-profile-frame-drop-shadow-opacity: 0.2;
+}
+:root .theme-light {
+  --custom-profile-frame-drop-shadow-opacity: 0.13;
+}
 .profileFrame__7d80f {
   container-type: size;
   height: 100%;
@@ -28659,6 +28671,12 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .profileFrameLayer__7d80f > img {
   width: 100%;
+}
+.user-profile-popout .profileFrameLayer__7d80f > img {
+  filter: drop-shadow(
+    20px 20px 30px
+      rgba(0, 0, 0, var(--custom-profile-frame-drop-shadow-opacity))
+  );
 }
 .profileFrameLayer__7d80f.front__7d80f {
   z-index: var(--custom-user-profile-hoist-z-index, 4);
@@ -70227,4 +70245,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.28cac217592da71b.css.map*/
+/*# sourceMappingURL=web.355ca2abc7d7b395.css.map*/
