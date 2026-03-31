@@ -13448,11 +13448,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .perksTable__00843 {
   margin-bottom: var(--space-80);
 }
-.videoHeading__00843 {
-  margin-bottom: var(--space-32);
-  text-align: center;
-  width: 100%;
-}
 .wrapper_c50892 {
   display: flex;
   gap: var(--space-24);
@@ -13638,38 +13633,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   .card_c50892 {
     flex: 1 1 auto;
   }
-}
-.container__52d93 {
-  align-items: center;
-  background-color: rgba(26, 26, 30, 0.5);
-  border-radius: 16px;
-  display: flex;
-  gap: var(--space-24);
-  justify-content: center;
-  margin-block-end: var(--space-48);
-  margin-block-start: 0;
-  margin-inline: auto;
-  padding-block-end: var(--space-12);
-  padding-block-start: var(--space-12);
-  padding-inline-end: var(--space-12);
-  padding-inline-start: var(--space-24);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.theme-light .container__52d93 {
-  background-color: hsla(0, 0%, 100%, 0.5);
-}
-.description__52d93 {
-  color: hsla(0, 0%, 100%, 0.6);
-}
-.theme-light .description__52d93 {
-  color: var(--text-muted);
-}
-.highlight__52d93 {
-  color: var(--white);
-}
-.theme-light .highlight__52d93 {
-  color: var(--text-default);
 }
 .wrapper__65e57 {
   gap: 32px;
@@ -70281,4 +70244,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.a8716b28b74a833d.css.map*/
+/*# sourceMappingURL=web.c073e8619c64f636.css.map*/
