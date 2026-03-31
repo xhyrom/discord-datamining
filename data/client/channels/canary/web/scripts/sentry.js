@@ -2751,6 +2751,9 @@
           USER_PROFILE_SUGGESTED_GAMES: "/users/@me/widgets/suggested-games",
           USER_PROFILE_APPLICATION_WIDGET_APPLICATION_IDS:
             "/users/@me/widgets/application-widget-application-ids",
+          WIDGET_CONFIGS_FEATURED: "/widget-configs/featured",
+          APPLICATION_WIDGET_CONFIGS: (e) =>
+            `/applications/${e}/widget-configs`,
           USER_GUILD_PROFILE: (e, t) => `/guilds/${e}/profile/${t}`,
           USER_CHANNELS: "/users/@me/channels",
           USER_WISHLIST: (e) => `/wishlists/${e}`,
@@ -6455,7 +6458,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-2b1b7aa9bdf3ac1436a3e2e9d8184bf1cb2bb490",
+            release: "discord_web-da3f4a03731f3c685e048e10dc68ac61f42e358b",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6522,8 +6525,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "520286"),
-            o.NA("builtAt", String("1774978278133"));
+            o.NA("buildNumber", "520332"),
+            o.NA("builtAt", String("1774981132816"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -13371,9 +13374,9 @@
               TABLE_ROW_BORDER_RADIUS: {
                 resolve(e) {
                   let { enabledExperiments: t } = e;
-                  if (0 === t.length) return 8;
-                  for (let e of t) if ("mobile-visual-refresh" === e) return 16;
-                  return 8;
+                  if (0 === t.length) return 16;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 12;
+                  return 16;
                 },
               },
               TABLE_ROW_CONTENT_HEIGHT: {
@@ -39593,4 +39596,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.16ca23e1f1d61083.js.map
+//# sourceMappingURL=sentry.ad508d304c102d64.js.map
