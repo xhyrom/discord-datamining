@@ -1,16 +1,14 @@
 <div class="warn-box">
-  <p>
-    <strong>Important:</strong> As part of strengthening teen safety and
-    supporting age-appropriate experiences on Discord, we’re continuing to add
-    more to our global age assurance package and delaying broader global
-    expansion until the second half of 2026. Read more in our latest blog post
-    <a
-      href="https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing"
-      target="_blank"
-      rel="noopener noreferrer"
-      >here</a
-    >.
-  </p>
+  <strong>Important:</strong> As part of strengthening teen safety and
+  supporting age-appropriate experiences on Discord, we’re continuing to add
+  more to our global age assurance package and delaying broader global expansion
+  until the second half of 2026. Read more in our latest blog post
+  <a
+    href="https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.
 </div>
 <p>
   <span style="color: #434343"
@@ -32,29 +30,6 @@
   one-time process, so once we have your verified age group, you don’t need to
   verify again.
 </p>
-<div class="warn-box">
-  <p>
-    <strong>Important:</strong> <br />UK Online Safety Act Implementation and
-    updated Australian User Experience. The age assurance features described in
-    this article are fully available to users in the United Kingdom and
-    Australia only. They apply to all new and existing UK and Australian
-    accounts. 
-  </p>
-  <p>
-    To learn more about changes for UK users due to the UK Online Safety Act
-    requirements, please visit our detailed
-    <a href="https://support.discord.com/hc/en-us/articles/33362401287959/"
-      ><span class="wysiwyg-underline">Help Center article</span></a
-    ><span style="color: #434343">. </span>
-  </p>
-  <p>
-    To learn more about changes for Australian users, please visit our
-    <a
-      href="http://discord.com/safety/introducing-new-teen-by-default-experiences-for-australian-users"
-      ><span class="wysiwyg-underline">Safety Center article.</span></a
-    >
-  </p>
-</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
@@ -75,7 +50,7 @@
           data-list-item-id="e5d25a9f7444fef04fb8c9fd0b65da79b"
         >
           <a href="#h_01KBKGJ94MPJS9SGFC1H4Z4FZQ"
-            ><strong>Step 1: Start Verification</strong></a
+            ><strong>Step 1: Start Age Assurance</strong></a
           >
         </li>
         <li
@@ -83,7 +58,7 @@
           data-list-item-id="e2b049a8d397c47f3308137a063352497"
         >
           <a href="#h_01KBKGJ94P37NG33SC7PAFTVKS"
-            ><strong>Step 2: Choose Your Verification Method</strong></a
+            ><strong>Step 2: Choose Your Age Assurance Method</strong></a
           >
         </li>
         <li
@@ -114,7 +89,7 @@
       data-list-item-id="e331eb9bb7a3907de066617a6b8dbf21f"
     >
       <a href="#h_01KBKGJ956VESBGSEF3NS13M0P"
-        ><strong>How to See Your Verified Age Group</strong></a
+        ><strong>How to See Your Confirmed Age Group</strong></a
       >
     </li>
     <li
@@ -167,23 +142,57 @@
   of ongoing experiments.
 </div>
 <h1 id="h_01KBKGJ94K9TJ3RPZ82G9JR1EE">How to Complete Age Assurance</h1>
-<div class="info-box">
-  Discord and k-ID do not permanently store personal identity documents or your
-  video selfies. Images of your identity documents and ID match selfies are
-  deleted directly after your age group is confirmed, and the video selfie used
-  for facial age estimation never leaves your device.
+<div class="warn-box">
+  <p>
+    <strong>Important:</strong> Users in regions with regional restrictions may
+    have to complete age assurance before accessing certain features or content.
+    Please refer to the article below that corresponds to your region for
+    further details.
+  </p>
+  <ul>
+    <li data-list-item-id="eb6696fe319a96f5ce4ea722ac8c12d46">
+      <a
+        href="https://support.discord.com/hc/en-us/articles/33362401287959"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><span class="wysiwyg-underline">United Kingdom</span></a
+      >
+    </li>
+    <li data-list-item-id="ea9af42f7f11e410e4c47f87ee74aa0ef">
+      <a
+        href="https://support.discord.com/hc/en-us/articles/38832004637207"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><span class="wysiwyg-underline">Australia</span></a
+      >
+    </li>
+    <li data-list-item-id="e2dc949ece8c3bec7ba768cedba5a2821">
+      <a
+        href="https://support.discord.com/hc/en-us/articles/38860612202775"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><span class="wysiwyg-underline">Brazil</span></a
+      >
+    </li>
+  </ul>
 </div>
+<p>
+  Discord and its trusted partners do not permanently store personal identity
+  documents or your video selfies. Identity documents submitted to our vendors
+  are deleted quickly, and the video selfie used for facial age estimation never
+  leaves your device.
+</p>
 <p>The age assurance process is the same, regardless of how it's triggered:</p>
-<h2 id="h_01KBKGJ94MPJS9SGFC1H4Z4FZQ">Step 1: Start Verification</h2>
+<h2 id="h_01KBKGJ94MPJS9SGFC1H4Z4FZQ">Step 1: Start Age Assurance</h2>
 <p>
   You'll see a prompt asking you to verify your age if you haven't done so
   already.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/36768961079703"
-    width="488"
-    height="434"
+    src="https://support.discord.com/hc/article_attachments/39423279630743"
+    width="544"
+    height="750"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01KBKGJ94N5EY53TDWY1D888TC">
@@ -192,11 +201,12 @@
   >
 </h4>
 <h2 id="h_01KBKGJ94P37NG33SC7PAFTVKS">
-  Step 2: Choose Your Verification Method
+  Step 2: Choose Your Age Assurance Method
 </h2>
 <p>
   A "<strong>We need to verify your age</strong>" window will appear with two
-  options: 
+  options (this is a growing toolkit and we are working to include more ways for
+  you to confirm your age: 
 </p>
 <p>
   <span class="wysiwyg-font-size-large"
@@ -278,13 +288,13 @@
 </h4>
 <h2 id="h_01KBKGJ94ZQVW62DH0TS4JJFSF">Step 3: Confirmation</h2>
 <p>
-  After verification, you'll receive system messages about the verification
-  process and a Direct Message from
+  After completing the age check, you'll receive system messages about the
+  confirmation process and a Direct Message from
   <a
     href="https://support.discord.com/hc/en-us/articles/360036118732-Discord-Official-Messages"
     ><span class="wysiwyg-underline">Discord's official profile</span></a
   >
-  confirming your verified age group. 
+  confirming your determined age group. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -296,7 +306,7 @@
 <h4 class="wysiwyg-text-align-center" id="h_01KBKGJ9517JV91D1R00F7QPZS">
   <span style="color: #666666"
     >Example of <strong>direct message</strong> (<strong>DM</strong>)
-    <strong>notification</strong> from Discord confirming your age verification
+    <strong>notification</strong> from Discord confirming your age group
     status</span
   >
 </h4>
@@ -310,7 +320,7 @@
   time. 
 </p>
 <p>
-  If you are verified as under the
+  If you are confirmed as under the
   <a
     href="https://support.discord.com/hc/en-us/community/posts/360050817374-Age-restriction"
     ><span class="wysiwyg-underline">minimum required age</span></a
@@ -324,34 +334,28 @@
   to go through the ID scan option to verify your date of birth. 
 </p>
 <h2 id="h_01KBKGZ257XG53B7EQSCKG9PWR">Privacy-Forward Age Assurance Process</h2>
-<p>
-  Age assurance verification is the backbone of this experience for all new and
-  existing UK and Australian users.  
-</p>
+<p>Key privacy protections of our age-assurance approach include:</p>
 <ul>
-  <li data-list-item-id="eae1ac9a00b196c96d4f3536b0d5bd06e">
-    <strong>Privacy-protecting process. </strong>Discord and k-ID do not
-    permanently store personal identity documents or your video selfies. Images
-    of your identity documents and ID match selfies are deleted directly after
-    your age group is confirmed, and the video selfie used for facial age
-    estimation never leaves your device.
+  <li data-list-item-id="ecee6b48c98385ae4c4f6abee06900247">
+    <strong>On-device processing: </strong>Video selfies for facial age
+    estimation never leave a user’s device
   </li>
-  <li data-list-item-id="e5868fe5a703b82cbccb0f9e7246bb363">
-    <strong>Verify once.</strong> After completing the age assurance process,
-    your Discord experience is tailored to your verified age group, and you
-    won't be prompted again.
+  <li data-list-item-id="ed7627c2f58160f2ae17966ed6323984f">
+    <strong>Quick deletion: </strong>Identity documents submitted to our vendors
+    are deleted quickly—in most cases, immediately after age confirmation.
   </li>
-  <li data-list-item-id="e0c0624bc60ed1c1501f2f4df9230ba13">
-    <strong>You can always re-verify. </strong>If you believe you’ve been
-    incorrectly verified into the teen age group, you can attempt to re-verify. 
+  <li data-list-item-id="ef77eb772d5108f3c9391995198d7fc88">
+    <strong>Straightforward age assurance:</strong> In most cases, users
+    complete the process once and their Discord experience adapts to their
+    verified age group. Users may be asked to use multiple methods only when
+    more information is needed to assign an age group.
   </li>
-  <li data-list-item-id="e8c49c9a40b379a614473946f158343c3">
-    <strong>Visible only to you.</strong> Other users can’t see your
-    verification status or verified age group. That information is private to
-    you.
+  <li data-list-item-id="e362ce313678d4132406627b3c6321fb7">
+    <strong>Private status: </strong>A user's age assurance status is only
+    available to that user and cannot be seen by others.
   </li>
 </ul>
-<h1 id="h_01KBKGJ956VESBGSEF3NS13M0P">How to See Your Verified Age Group</h1>
+<h1 id="h_01KBKGJ956VESBGSEF3NS13M0P">How to See Your Confirmed Age Group</h1>
 <p>
   If you’ve already completed age assurance, you can go to your
   <strong>My Account</strong> page in your <strong>User Settings</strong> to see
@@ -365,12 +369,13 @@
   <strong>Verify </strong>button. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/36768944680599"
-      width="624"
-      height="575"
-  /></strong>
+  <span style="color: #666666"
+    ><strong
+      ><img
+        src="https://support.discord.com/hc/article_attachments/39423293762071"
+        width="624"
+        height="500" /></strong
+  ></span>
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01KBKGJ958JH3J51TVQ709PD2C">
   <span style="color: #666666"
@@ -403,6 +408,12 @@
     data-list-item-id="e1c53d34c9d37e937c940bd6e4fdc46e6"
   >
     <strong>Troubleshooting and Support</strong>
+  </li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e81cf97545f77b78177e8d9d85b41d75e"
+  >
+    <strong>Age Prediction</strong>
   </li>
 </ul>
 <h2 id="h_01KBKGJ95KGYRBN11B92Q29YM9">
@@ -490,7 +501,8 @@
   > 
 </p>
 <p>
-  A: Yes. Age assurance is required before entering channels marked as
+  A: Yes. Age assurance is required before entering channels or servers marked
+  as
   <a
     href="https://support.discord.com/hc/en-us/articles/115000084051-Age-Restricted-Channels-and-Content"
     ><span class="wysiwyg-underline">age-restricted</span></a
@@ -503,10 +515,41 @@
   >
 </p>
 <p>
-  A: Discord and k-ID do not permanently store personal identity documents or
-  your video selfies. The image of your identity document and the ID face match
-  selfie are deleted directly after  your age group is confirmed, and the video
-  selfie used for facial age estimation never leaves your device.
+  A: Discord and its trusted partners do not permanently store personal identity
+  documents or your video selfies. Identity documents submitted to our vendors
+  are deleted quickly, and the video selfie used for facial age estimation never
+  leaves your device.
+</p>
+<p><strong>Q: How does Discord use this data?</strong></p>
+<p>
+  A: We only get your age from the ID verification process and an estimated age
+  range from Facial Age Estimation. We use this information for safety purposes
+  and to help us deliver age appropriate experiences on Discord. We will not use
+  your age assurance information to target you with advertisements, and we don't
+  sell your data. You can control
+  <a href="https://discord.com/privacy#4"
+    ><span class="wysiwyg-underline">how we use your data</span></a
+  >.
+</p>
+<p>
+  <strong>Q: How is my age group data safe on Discord?</strong><br />A:
+  Discord’s age assurance experience was designed to respect user privacy. We
+  are partnering with dedicated age assurance vendors who specialize in
+  performing these age checks in a privacy-forward way. These vendors were not
+  involved in the September 2025 data breach of our customer service agent.
+</p>
+<p>
+  Our vendors perform these age checks in a way to minimize the data collected
+  and stored. For FAE, the video selfie is processed on device and never stored.
+  IDs are processed to get your age only and then deleted. Your identity is
+  never associated with your Discord account.
+</p>
+<p>
+  <strong
+    >Q: What are you getting from my ID or facial age estimation? What personal
+    information do you receive?</strong
+  ><br />A: Discord only gets your age. That’s it. Your identity is never
+  associated with your account.
 </p>
 <h2 id="h_01KBKGJ95SYC3YAS45CA02ZCC2">Troubleshooting and Support</h2>
 <p><strong>Q: What if my age group is incorrect?</strong> </p>
@@ -517,19 +560,19 @@
 <p>
   <strong
     >Q: What happens if my age group is verified incorrectly or it fails to
-    verify?</strong
+    confirm?</strong
   >
 </p>
 <p>
-  A: If you believe you were incorrectly verified into the teen age group, you
-  may retry verification through your chat with Discord system messages where
-  you can select <strong>Retry </strong>to enter the verification flow again.
-  You can also go to your <strong>User Settings &gt; My Account</strong> and
-  press <strong>Retry</strong> located to the right of the
+  A: If you believe you were incorrectly confirmed as a teen, you may retry the
+  age check through your chat with Discord system messages where you can select
+  <strong>Retry </strong>to enter the verification flow again. You can also go
+  to your <strong>User Settings &gt; My Account</strong> and press
+  <strong>Retry</strong> located to the right of the
   <strong>Age Group </strong>field.
 </p>
 <p>
-  If you were banned after being incorrectly verified as under the
+  If you were banned after being incorrectly confirmed as under the
   <a href="https://support.discord.com/hc/en-us/articles/360040724612"
     ><span class="wysiwyg-underline">minimum age requirement</span></a
   >
@@ -577,3 +620,15 @@
   >
   to use the ID scan option to verify your date of birth.
 </p>
+<h2 id="h_01KN21EQPSD99AQYRVRXQ2ENAT">Age Prediction</h2>
+<p><strong>Q: How does the age inference model work?</strong></p>
+<p>
+  A: We leverage an advanced machine learning model developed at Discord to
+  predict whether a user falls into a particular age group based on patterns of
+  user behavior and several other signals associated with their account on
+  Discord. We only use these signals to assign users to an age group when our
+  confidence level is high; when it isn't, users go through our standard age
+  assurance flow to confirm their age. We do not use your message content in the
+  age estimation model.
+</p>
+<p><br /> </p>

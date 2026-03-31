@@ -6,7 +6,7 @@
   </p>
   <ul>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e583c4c02edd6e00c5db5cea3e1d2eebc"
     >
       <a href="#h_01HTJA8QV5YFRR10TQ9RBZM8SS"
@@ -14,7 +14,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e125a92c1fade458930d40e14a7df99ae"
     >
       <a href="#h_01HTJA8QV5TNKJRY98GXQSHJQQ"
@@ -22,7 +22,7 @@
       >
       <ul>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e8481b0f8fa5e41fae830489ee813aed1"
         >
           <a href="#h_01HTJA8QV5GP22NWFTXYNKW3GX"
@@ -30,7 +30,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e194f2661a739b4249fedeb30ae08f5f2"
         >
           <a href="#h_01HTJA8QV59M70ZB3DY4THZM27"
@@ -38,7 +38,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e89ea067a5c090809056aebd9da685ad8"
         >
           <a href="#h_01HTJA8QV5ZFGKBM8QNZA4S4JZ"
@@ -48,7 +48,7 @@
       </ul>
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="eb644d39a110ddd404676e4d6fb733fe7"
     >
       <a href="#h_01HTJA8QV5EZK2YFH8G4T6JD9D"
@@ -56,7 +56,7 @@
       >
       <ul>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e2ac1b20c8210c184401fa9f8344b46c2"
         >
           <a href="#h_01HTJA8QV5H72HKXSNDXME2NAS"
@@ -64,7 +64,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e97566ce52446ee285f521b211b6673dc"
         >
           <a href="#h_01HTJA8QV57FRX82WP3T41Z3G8"
@@ -72,7 +72,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e99318197d20feeb25433bd02644fb79e"
         >
           <a href="#h_01HTJA8QV5M1VHRW89M024JHDT"
@@ -80,7 +80,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="ee696a97cbcbb82732babddbe906d90df"
         >
           <a href="#h_01HTJA8QV5ABSA6FY6GEPMA946"
@@ -88,7 +88,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e0a6bcedf3f4d020fa1a0e034780f7f8b"
         >
           <a href="#h_01J5NNZS153N6H9V1S5A6WMMPK"
@@ -96,7 +96,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e033b81961239a2665766e20cf1044cb5"
         >
           <a href="#h_01K2JEV10ZY89CHQ5JXCSQPM10"
@@ -262,25 +262,34 @@
 <h1 id="h_01HTJA8QV5EZK2YFH8G4T6JD9D">
   How do I control who sees my activity?
 </h1>
-<div class="info-box">
-  <span style="color: #434343"
-    >Due to the regional regulations like the UK Online Safety Act, new and
-    existing UK and Australian users may have different settings to ensure an
-    age-appropriate experience. They may also need to complete </span
-  ><a
-    href="https://support.discord.com/hc/articles/30326565624343"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">age assurance</span></a
-  ><span style="color: #434343">
-    before sharing their activity. Learn more about what’s different for UK and
-    Australian users </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">here</span></a
-  ><span style="color: #434343">. </span>
+<div class="warn-box">
+  <p>
+    <strong>Important:</strong> Users in regions with regional restrictions may
+    have different settings to ensure an age-appropriate experience. They may
+    also need to complete
+    <a href="https://support.discord.com/hc/articles/30326565624343"
+      ><span class="wysiwyg-underline">age assurance</span></a
+    >
+    before sharing their activity. Please refer to the article below that
+    corresponds to your region for further details.
+  </p>
+  <ul>
+    <li data-list-item-id="e60657bf45ee3147da7f6226fc48c14e1">
+      <a href="https://support.discord.com/hc/en-us/articles/33362401287959"
+        ><span class="wysiwyg-underline">United Kingdom</span></a
+      >
+    </li>
+    <li data-list-item-id="e3cc03d20625957b939b87f27f67af5a0">
+      <a href="https://support.discord.com/hc/en-us/articles/38832004637207"
+        ><span class="wysiwyg-underline">Australia</span></a
+      >
+    </li>
+    <li data-list-item-id="eba18e8fb953c95a3fe9666b3b03d16bf">
+      <a href="https://support.discord.com/hc/en-us/articles/38860612202775"
+        ><span class="wysiwyg-underline">Brazil</span></a
+      >
+    </li>
+  </ul>
 </div>
 <p>
   By default in most regions, your current and recent activity can be viewed by

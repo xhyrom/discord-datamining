@@ -3,19 +3,34 @@
   everyone in our community. Our sensitive content filters are one way we work
   to support our users as they connect and hang out together online.
 </p>
-<div class="info-box">
-  <span style="color: #434343"
-    >Due to regional regulations like the UK Online Safety Act, new and existing
-    UK and Australian users may have different settings to ensure an
-    age-appropriate experience. They may also need to complete age assurance
-    before disabling sensitive content filters. Learn more about what’s
-    different for UK and Australian users </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/33362401287959/"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">here</span></a
-  ><span style="color: #434343">. </span>
+<div class="warn-box">
+  <p>
+    <strong>Important:</strong> Users in regions with regional restrictions may
+    have different settings to ensure an age-appropriate experience. They may
+    also have to complete age assurance before accessing certain features or
+    content.
+    <span style="color: #434343"
+      >Please refer to the article below that corresponds to your region for
+      further details.</span
+    >
+  </p>
+  <ul>
+    <li data-list-item-id="e4248f0e1e3ba08c51737431ab567741a">
+      <a href="https://support.discord.com/hc/en-us/articles/33362401287959"
+        ><span class="wysiwyg-underline">United Kingdom</span></a
+      >
+    </li>
+    <li data-list-item-id="e96364620163d50ea6954dbe6a9d3650b">
+      <a href="https://support.discord.com/hc/en-us/articles/38832004637207"
+        ><span class="wysiwyg-underline">Australia</span></a
+      >
+    </li>
+    <li data-list-item-id="e1e439201460aeb4f3db00b9b18fef414">
+      <a href="https://support.discord.com/hc/en-us/articles/38860612202775"
+        ><span class="wysiwyg-underline">Brazil</span></a
+      >
+    </li>
+  </ul>
 </div>
 <div class="toc-box">
   <p>

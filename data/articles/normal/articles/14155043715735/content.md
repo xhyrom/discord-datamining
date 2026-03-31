@@ -253,14 +253,22 @@
       rel="noopener noreferrer"
       ><span class="wysiwyg-underline">Sensitive content filter</span>s</a
     >: Adjust if the content flagged by our sensitive media filters are blurred,
-    blocked, or shown by default to your teen.
-    <em
-      >Note: For UK teens, your guardian can only choose between blur and block
-      due to </em
+    blocked, or shown by default to your teen. <em>Note: For </em
     ><a
-      href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
-      ><em><span class="wysiwyg-underline">regional restrictions</span></em></a
-    ><em>.</em> 
+      href="https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users"
+      ><em><span class="wysiwyg-underline">UK</span></em></a
+    ><em>, and </em
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/38832004637207-Age-Assurance-for-Australian-Users"
+      ><em><span class="wysiwyg-underline">Australian</span></em></a
+    ><em> and </em
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/38860612202775-Age-Assurance-for-Brazilian-Users"
+      ><em><span class="wysiwyg-underline">Brazilian</span></em></a
+    ><em>
+      teens, your guardian can only choose between blur and block due to
+      regional restrictions.</em
+    > 
   </li>
   <li data-list-item-id="e0073b382f335a1f3cfdd5bb1208b8444">
     Friend Requests: Adjust who can send your teen a friend request (Everyone,
@@ -281,20 +289,31 @@
     message inbox. 
   </li>
 </ul>
-<div class="exp-box">
-  <strong>Important:</strong>
-  <span style="color: #434343">Due to the regional regulations like the </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
-    ><span class="wysiwyg-underline">UK Online Safety Act</span></a
-  ><span style="color: #434343"
-    >, guardians in the UK and Australia must be age assured adults (18+) and
-    will be required to complete age assurance before updating their teen's
-    message request setting due to </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
-    ><span class="wysiwyg-underline">region-specific settings</span></a
-  ><span style="color: #434343">.</span>
+<div class="warn-box">
+  <p>
+    <strong>Important: </strong>Guardians and parents in regions with regional
+    restrictions must be age assured adults (18+) and will be required to
+    complete age assurance before updating their teen's message request
+    setting.. Please refer to the article below that corresponds to your region
+    for further details.
+  </p>
+  <ul>
+    <li data-list-item-id="e4a8cdc7907fd8cca0dfdd4438db77cf5">
+      <a href="https://support.discord.com/hc/en-us/articles/33362401287959"
+        ><span class="wysiwyg-underline">United Kingdom</span></a
+      >
+    </li>
+    <li data-list-item-id="e4c9d6aa8b009214d581edf5ae266debe">
+      <a href="https://support.discord.com/hc/en-us/articles/38832004637207"
+        ><span class="wysiwyg-underline">Australia</span></a
+      >
+    </li>
+    <li data-list-item-id="ed73fbc0d81bb6e86c6d1ac1a7227013b">
+      <a href="https://support.discord.com/hc/en-us/articles/38860612202775"
+        ><span class="wysiwyg-underline">Brazil</span></a
+      >
+    </li>
+  </ul>
 </div>
 <p class="wysiwyg-text-align-center">
   <em

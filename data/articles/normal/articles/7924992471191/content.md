@@ -1,43 +1,42 @@
-<p id="docs-internal-guid-b704be2a-7fff-fb55-ecd5-5a1e169dd64f">
-  <span style="color: #4f545c"
-    ><span data-darkreader-inline-color=""
-      >If someone you are not friends with sends you a direct message (DM),
-      Discord may filter that DM into a separate “Message Requests” folder to
-      help you screen out unwanted DMs from your DM list. If Discord
-      thinks</span
-    ><span data-darkreader-inline-color="">
-      a direct message is from a spam bot, we may filter that DM into a more
-      hidden “Spam” folder.    </span
-    ></span
-  >
+<p>
+  If someone you are not friends with sends you a direct message (DM), Discord
+  may filter that DM into a separate “Message Requests” folder to help you
+  screen out unwanted DMs from your DM list. If Discord thinks a direct message
+  is from a spam bot, we may filter that DM into a more hidden “Spam” folder.
 </p>
 <p>
-  <span style="color: #4f545c"
-    ><span data-darkreader-inline-color=""
-      >You will need to approve the message request before being able to chat
-      directly with the message requestor. </span
-    ></span
-  >
+  You will need to approve the message request before being able to chat
+  directly with the message requestor.
 </p>
-<div class="info-box">
-  <span style="color: #434343"
-    >Due to the regional regulations like the UK Online Safety Act, new and
-    existing UK and Australian users may have different settings to ensure an
-    age-appropriate experience. They may also need to complete </span
-  ><a
-    href="https://support.discord.com/hc/articles/30326565624343"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">age assurance</span></a
-  ><span style="color: #434343">
-    before disabling Message Requests. Learn more about what’s different for UK
-    and Australian users </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/33362401287959/"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">here</span></a
-  ><span style="color: #434343">. </span>
+<div class="warn-box">
+  <p>
+    <strong>Important:</strong> Users in regions with regional restrictions may
+    have different settings to ensure an age-appropriate experience. They may
+    also need to complete
+    <a href="https://support.discord.com/hc/articles/30326565624343"
+      ><span class="wysiwyg-underline">age assurance</span></a
+    ><span style="color: #434343">
+      before disabling Message Requests. Please refer to the article below that
+      corresponds to your region for further details.</span
+    >
+  </p>
+  <ul>
+    <li data-list-item-id="ea8e994dbe58a36fb0c8ae5d48f106f06">
+      <a href="https://support.discord.com/hc/en-us/articles/33362401287959"
+        ><span class="wysiwyg-underline">United Kingdom</span></a
+      >
+    </li>
+    <li data-list-item-id="e270b0d0352a224ef5d14458e75fb4403">
+      <a href="https://support.discord.com/hc/en-us/articles/38832004637207"
+        ><span class="wysiwyg-underline">Australia</span></a
+      >
+    </li>
+    <li data-list-item-id="e0d6b1b2246be073430fee617317f3dad">
+      <a href="https://support.discord.com/hc/en-us/articles/38860612202775"
+        ><span class="wysiwyg-underline">Brazil</span></a
+      >
+    </li>
+  </ul>
 </div>
 <div class="toc-box">
   <p>
@@ -47,7 +46,7 @@
   </p>
   <ul>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="eb9b6c9fec48850ae00d43bb9ef57ca44"
     >
       <a href="#h_01GSGQB3C28RSFRFMYYV6KWM42"
@@ -55,7 +54,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e8d5b1e1cf4c186bc77693d33378723c9"
     >
       <a href="#h_01GSGQB9DMM2Q45BPS23N6D9NE"
@@ -63,7 +62,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e0b57ce833a0e891358c8b4579516b58c"
     >
       <a href="#h_01GSGQBGSZ42G3ZDVBD1ZV40R3"
@@ -71,7 +70,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e63a46255a73141ee84d7d903ff666a94"
     >
       <a href="#h_01K0FZPWZH3M20A9ZJK0N89KW1"

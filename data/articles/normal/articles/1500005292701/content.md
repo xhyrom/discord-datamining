@@ -6,7 +6,7 @@
   </p>
   <ul>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e95971d1e96caac5d479fcda339e574fc"
     >
       <a href="#h_01H4RH0TQ9QG1NWKD08MVCTS4K"
@@ -14,7 +14,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="ef84f27a22bf588581eaa31e6bc3f35bf"
     >
       <a href="#h_01H4RH13HQJNMSFPDA9KGDVJB5"
@@ -25,7 +25,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="ec97d48a0cf57fb253fb4da89ebe6624c"
     >
       <a href="#h_01H4RH1GSQF4689C1VVX9CGHGV"
@@ -96,13 +96,25 @@
 <div class="info-box">
   <span style="color: #434343"
     ><strong>Note</strong>: Users in regions where age assurance is required
-    (e.g. the UK and Australia) will need to complete age assurance in order to
-    view or enter servers marked as age-restricted by their server owner. Learn
-    more about age assurance on Discord </span
+    (e.g. </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users"
+    ><span class="wysiwyg-underline">the UK</span></a
+  ><span style="color: #434343">, </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/38832004637207-Age-Assurance-for-Australian-Users"
+    ><span class="wysiwyg-underline">Australia</span></a
+  ><span style="color: #434343"> and </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/38860612202775-Age-Assurance-for-Brazilian-Users/"
+    ><span class="wysiwyg-underline">Brazil</span></a
+  ><span style="color: #434343"
+    >) will need to complete age assurance in order to view or enter servers
+    marked as age-restricted by their server owner. This applies to the server
+    owners and moderators as well. Learn more about how to complete age
+    assurance on Discord </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Verification-on-Discord"
-    target="_blank"
-    rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
   ><span style="color: #434343">. </span>
 </div>

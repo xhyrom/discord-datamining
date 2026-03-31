@@ -19,7 +19,7 @@
   </p>
   <ul>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e76ee65492f4be9987e816f41a9c05221"
     >
       <a href="#h_01K728TD6X96J3KCNSSCM8DNDM"
@@ -27,7 +27,7 @@
       >
       <ul>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="e8f6a87916023a7b5ac811357c451796c"
         >
           <a href="#h_01K728TD6X4BTPF5J0XK8FBF0G"
@@ -37,7 +37,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="ebd1f9672057954575ee36b0217d28095"
         >
           <a href="#h_01K728TD6X8AC6VVV52MTH15R0"
@@ -47,7 +47,7 @@
       </ul>
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="eab487cd87baa9d5447ac64e6bf8c7e8e"
     >
       <a href="#h_01K7299DYP72QN2QEQKQ01BZ4X"
@@ -55,7 +55,7 @@
       >
       <ul>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="ec84abcb594241fe22aa588a34f6206a2"
         >
           <a href="#h_01K7299DYPRP9RT2MWCYRVHGP5"
@@ -63,7 +63,7 @@
           >
         </li>
         <li
-          class="ck-list-marker-bold"
+          class="wysiwyg-list-bold"
           data-list-item-id="ed03e943d8b1d67ee91de332362bcb141"
         >
           <a href="#h_01K7299DYPGTQNDHBQNA9080J9"><strong>On Mobile</strong></a>
@@ -71,7 +71,7 @@
       </ul>
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="ee4c9b93a5a1116873c1aac9783c334e1"
     >
       <a href="#h_01K728TD6XTBJT9R3578YTRHTF"
@@ -79,7 +79,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e06551fb94abf57995119c0a485f97eb2"
     >
       <a href="#h_01K728TD6X7B16M2WFZF9GB8CW"
@@ -136,21 +136,30 @@
     content in age-restricted servers. </span
   >
 </p>
-<div class="info-box">
-  <span style="color: #2f3941"
-    ><strong>Note</strong>: Users in regions with age assurance requirements
-    (e.g. UK and Australia) need to complete age assurance in order to view or
-    enter </span
-  ><span style="color: #434343"
-    >servers marked as age-restricted by their server owner</span
-  ><span style="color: #2f3941"
-    >. Learn more about age assurance on Discord </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Verification-on-Discord"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">here</span></a
-  ><span style="color: #2f3941">.</span>
+<div class="warn-box">
+  <p>
+    <strong>Important:</strong> Users in regions with regional restrictions may
+    have to complete age assurance in order to view or enter servers marked as
+    age-restricted by their server owner. Please refer to the article below that
+    corresponds to your region for further details.
+  </p>
+  <ul>
+    <li data-list-item-id="e0b0d56279ceeb9b660cd3b89443674c9">
+      <a href="https://support.discord.com/hc/en-us/articles/33362401287959"
+        ><span class="wysiwyg-underline">United Kingdom</span></a
+      >
+    </li>
+    <li data-list-item-id="e8be03c32f0403aafb20707395032a359">
+      <a href="https://support.discord.com/hc/en-us/articles/38832004637207"
+        ><span class="wysiwyg-underline">Australia</span></a
+      >
+    </li>
+    <li data-list-item-id="e0fafd8d5ac33f8b45e9e6d0bc4414b24">
+      <a href="https://support.discord.com/hc/en-us/articles/38860612202775"
+        ><span class="wysiwyg-underline">Brazil</span></a
+      >
+    </li>
+  </ul>
 </div>
 <p>
   Users aged 18+ that are attempting to join or access new age-restricted
@@ -190,6 +199,10 @@
     content is focused on 18+ content.</span
   >
 </p>
+<div class="info-box">
+  <strong>Note:</strong> Users who have not confirmed their age need to complete
+  age assurance in order to view or enter channels marked as age-restricted.
+</div>
 <h1 id="h_01K7299DYP72QN2QEQKQ01BZ4X">
   How Do I Mark My Server as Age-Restricted?
 </h1>

@@ -24,7 +24,7 @@
   </p>
   <ul>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e53aa2b30888e9cb21e7003879b88128a"
     >
       <a href="#h_01KBKHTYAZ6BA7DZWF7GCP2J60"
@@ -32,7 +32,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e197dc443099a82d46854e09541617340"
     >
       <a href="#h_01KBKHTYB92NAQ9CXXD0A1BZKP"
@@ -124,20 +124,14 @@
   <span style="color: #666666">Scan your ID</span>
 </h4>
 <div class="info-box">
-  <strong>Note:</strong> We currently partner with<a
-    href="https://www.k-id.com/"
-    ><span class="wysiwyg-underline"> k-ID</span></a
-  ><span style="color: #434343">
-    to power our age assurance experience. Neither Discord nor its vendor keeps
-    the identity documents or selfies submitted during the age assurance
-    process.</span
-  >
+  <strong>Note:</strong> Identity documents submitted to our vendors are deleted
+  quickly—in most cases, immediately after age confirmation.
 </div>
 <p>
-  5. If the k-ID age assurance is successful (which is typically processed
-  within seconds), you’ll see <strong>Age Check Complete</strong> at the top of
-  your <strong>Active Violations</strong> screen, and you can now log back into
-  your account as your access should be fully restored.
+  5. If age assurance is successful (which is typically processed within
+  seconds), you’ll see <strong>Age Check Complete</strong> at the top of your
+  <strong>Active Violations</strong> screen, and you can now log back into your
+  account as your access should be fully restored.
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #666666"
@@ -159,10 +153,10 @@
   >
 </p>
 <p>
-  A: Discord and k-ID do not permanently store personal identity documents or
-  your video selfies. The image of your identity document and the ID face match
-  selfie are deleted directly after your age group is confirmed, and the video
-  selfie used for facial age estimation never leaves your device.
+  A: Discord and its trusted partners do not permanently store personal identity
+  documents or your video selfies. Identity documents submitted to our vendors
+  are deleted quickly, and the video selfie used for facial age estimation never
+  leaves your device.
 </p>
 <p><strong>Q: How will Discord use my age assurance information?</strong></p>
 <p>

@@ -25,46 +25,62 @@
   content.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
-      <strong><a href="#h_01HD4SVGAFKAQKYVGEBHS14HSQ">Violations</a></strong>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="eeb3620a2f7b4a10558273f114342b1f2"
+    >
+      <a href="#h_01HD4SVGAFKAQKYVGEBHS14HSQ"><strong>Violations</strong></a>
     </li>
-    <li>
-      <strong
-        ><a href="#h_01HD4SVGAF2KT4AG7NH8BJBFKV">Account Standing</a></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="ea56ab99301048783ca7f7a21d8bb8317"
+    >
+      <a href="#h_01HD4SVGAF2KT4AG7NH8BJBFKV"
+        ><strong>Account Standing</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01HPJBJPEYPM7318PH5XWN1PEY"
-          >Suspensions (aka Bans)</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="ea240c4fb5f566ea02de718a2b884bc1a"
+    >
+      <a href="#h_01HPJBJPEYPM7318PH5XWN1PEY"
+        ><strong>Suspensions (aka Bans)</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01HPJBYFH5KX4Z657CF7N12FZ0">Server Violations</a></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e304c52305386863cf81d275c2d35adb9"
+    >
+      <a href="#h_01HPJBYFH5KX4Z657CF7N12FZ0"
+        ><strong>Server Violations</strong></a
       >
     </li>
-    <li>
-      <strong><a href="#h_01HD4SVGAFZKN50P6BHNPPFFR0">Warnings</a></strong>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e63d4fd7c30522b3f285080285d6c7771"
+    >
+      <a href="#h_01HD4SVGAFZKN50P6BHNPPFFR0"><strong>Warnings</strong></a>
     </li>
-    <li>
-      <strong
-        ><a href="#docs-internal-guid-67e7f335-7fff-ea44-0bad-0eb97db61ffb"
-          >Requesting a Review</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e6edc7a886603a00579e07450718a2acf"
+    >
+      <a href="#docs-internal-guid-67e7f335-7fff-ea44-0bad-0eb97db61ffb"
+        ><strong>Requesting a Review</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01HD4SVGAF50M8WFGS4W75W34E"
-          >Frequently Asked Questions</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e339d351a62203865f81597a4bf826f59"
+    >
+      <a href="#h_01HD4SVGAF50M8WFGS4W75W34E"
+        ><strong>Frequently Asked Questions</strong></a
       >
     </li>
   </ul>
@@ -81,10 +97,16 @@
 </p>
 <p>The card will go over the following with the user: </p>
 <ul>
-  <li>which specific policy they violated </li>
-  <li>it may include detail about which content broke our rules </li>
-  <li>it lists any actions that Discord has taken on the user </li>
-  <li>
+  <li data-list-item-id="e529a7077cb2c807251396d950b31627f">
+    which specific policy they violated 
+  </li>
+  <li data-list-item-id="ec29a01fa8323fc67b4de19a42e2432fd">
+    it may include detail about which content broke our rules 
+  </li>
+  <li data-list-item-id="ed0227020e3668f86095c617094dd2b55">
+    it lists any actions that Discord has taken on the user 
+  </li>
+  <li data-list-item-id="ebba90c000e374559b6b2c1c222677825">
     a link to a policy explanation for the relevant Discord
     <a
       href="https://discord.com/guidelines"
@@ -105,14 +127,16 @@
   temporarily lose the ability to post images. If the violation was not
   particularly severe, they may lose these features for a few hours. If it was a
   repeated violation or higher severity violation, they may lose some features
-  for a few days or up to one year. 
+  for a few days or up to one year. Similarly, violations related to specific
+  Discord features, such as Quests may result in loss of eligibility for that
+  feature or removal of rewards obtained through prohibited behavior.
 </p>
 <p>
   For the most severe harms, users will be immediately subject to a permanent
   suspension and should look to their email inbox for more information from
   Discord.
 </p>
-<p id="h_01K45NP5VZ2JV7EQ4V4374B4VC" class="wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center" id="h_01K45NP5VZ2JV7EQ4V4374B4VC">
   <img
     src="https://support.discord.com/hc/article_attachments/34638129254679"
     width="410"
@@ -124,7 +148,7 @@
     height="548"
   />
 </p>
-<h4 id="h_01K45NP5VZMDQ1C28B8RSX9PGJ" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K45NP5VZMDQ1C28B8RSX9PGJ">
   <span style="color: #666666"
     >Suspension Notification on Desktop (Left) and Mobile (Right)</span
   >
@@ -136,7 +160,7 @@
     alt="image1.gif"
   />
 </p>
-<h4 id="h_01K45NQ157G0QHWQNY0TCFAY21" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K45NQ157G0QHWQNY0TCFAY21">
   <span style="color: #666666"
     >Reviewing Account Standing in User Settings on Desktop</span
   >
@@ -167,24 +191,24 @@
 </p>
 <p>Users will find themselves in one of the following standings:</p>
 <ul>
-  <li>
+  <li data-list-item-id="eac491fe449ac16d72ea7c6413768cc63">
     All good: The user has no active violations and has access to all Discord
     features
   </li>
-  <li>
+  <li data-list-item-id="e403949620056895e91effc3ed1f7227f">
     Limited: The user has an active violation that temporarily limited access to
     some features. Further violations will result in more or longer limits.
   </li>
-  <li>
+  <li data-list-item-id="eeb7dbf0fc35fbaed6658bbcc9fed1010">
     Very Limited: The user has one or more active violations that temporarily
     limited access to more features for a longer period of time. Further
     violations may put the account at risk.
   </li>
-  <li>
+  <li data-list-item-id="e5f4bdbb9c2d751922152de1c40d0e43d">
     At Risk: The user has one or more active violations. Any further violations
     may result in a permanent suspension.
   </li>
-  <li>
+  <li data-list-item-id="e8bf9c2f517064cdf03f104e64244a9a4">
     Permanent suspension: The user no longer has access to Discord due to severe
     or repeated violations.
   </li>
@@ -224,7 +248,7 @@
       height="626"
   /></span>
 </p>
-<h4 id="h_01K45NWZSWMY43YYSD6X0Z132S" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K45NWZSWMY43YYSD6X0Z132S">
   <span style="color: #666666">Suspended Account in Account Standing Page</span>
 </h4>
 <h1 id="h_01HPJBYFH5KX4Z657CF7N12FZ0">Server Violations</h1>
@@ -242,7 +266,7 @@
       height="576"
   /></span>
 </p>
-<h4 id="h_01K45NY2553C74QZSB54KTP54J" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K45NY2553C74QZSB54KTP54J">
   <span style="color: #666666">Example of a Server Violation Notification</span>
 </h4>
 <p id="docs-internal-guid-02dc1389-7fff-0229-8eed-c0ffaf10bb50">
@@ -278,7 +302,7 @@
     height="727"
   />
 </p>
-<h4 id="h_01K45P08FRHGK8RJ0W7F8ENCKD" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K45P08FRHGK8RJ0W7F8ENCKD">
   <span style="color: #666666">Warning Message Sent from Discord</span>
 </h4>
 <p id="docs-internal-guid-1f3fd613-7fff-b55c-aeee-9b9a83f37bd6">
@@ -432,9 +456,7 @@
     href="https://support.discord.com/hc/en-us/articles/18210977897239-Discord-Safety-Alerts"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline" style="color: #1155cc"
-      >our safety alerts</span
-    ></a
+    ><span class="wysiwyg-underline">our safety alerts</span></a
   >. 
 </p>
 <p> </p>

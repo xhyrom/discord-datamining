@@ -122,7 +122,8 @@
 </p>
 <ul>
   <li
-    class="ck-list-marker-color"
+    class="wysiwyg-list-color"
+    style="--wysiwyg-list-marker-color: #1f1f1f"
     data-list-item-id="ed2e70d4b3b8bde2c4d1f59064729a19d"
   >
     <span style="color: #1f1f1f"
@@ -134,7 +135,8 @@
     >
   </li>
   <li
-    class="ck-list-marker-color"
+    class="wysiwyg-list-color"
+    style="--wysiwyg-list-marker-color: #1f1f1f"
     data-list-item-id="e6df2525673b5f0912f757f190043723e"
   >
     <span style="color: #1f1f1f"
@@ -147,7 +149,8 @@
     >
   </li>
   <li
-    class="ck-list-marker-color"
+    class="wysiwyg-list-color"
+    style="--wysiwyg-list-marker-color: #1f1f1f"
     data-list-item-id="eaae5da2c8b71c83645a20aa75a74621c"
   >
     <span style="color: #1f1f1f"
@@ -161,7 +164,8 @@
     >
   </li>
   <li
-    class="ck-list-marker-color"
+    class="wysiwyg-list-color"
+    style="--wysiwyg-list-marker-color: #1f1f1f"
     data-list-item-id="e434487b371848228adc1d80481aaf7ee"
   >
     <span style="color: #1f1f1f"
@@ -174,7 +178,8 @@
     >
   </li>
   <li
-    class="ck-list-marker-color"
+    class="wysiwyg-list-color"
+    style="--wysiwyg-list-marker-color: #1f1f1f"
     data-list-item-id="e07be9df00ec0094521f5d40d404db5e7"
   >
     <span style="color: #1f1f1f"
@@ -187,7 +192,8 @@
     >
   </li>
   <li
-    class="ck-list-marker-color"
+    class="wysiwyg-list-color"
+    style="--wysiwyg-list-marker-color: #1f1f1f"
     data-list-item-id="e00d20a6461294e53c6ff68edcbfeaafd"
   >
     <span style="color: #1f1f1f"
@@ -200,7 +206,8 @@
     >
   </li>
   <li
-    class="ck-list-marker-color"
+    class="wysiwyg-list-color"
+    style="--wysiwyg-list-marker-color: #1f1f1f"
     data-list-item-id="e397867ec01f4a63ff1b146d2298fb566"
   >
     <span style="color: #1f1f1f"
@@ -261,14 +268,22 @@
         ></strong
       ></a
     >: Adjust if the content flagged by our sensitive media filters are blurred,
-    blocked, or shown by default to your teen.
-    <em
-      >Note: For UK and Australian teens, your guardian can only choose between
-      blur and block due to </em
+    blocked, or shown by default to your teen. <em>Note: For </em
     ><a
-      href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
-      ><em><span class="wysiwyg-underline">regional restrictions</span></em></a
-    ><em>.</em> 
+      href="https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users"
+      ><em><span class="wysiwyg-underline">UK</span></em></a
+    ><em>, </em
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/38832004637207-Age-Assurance-for-Australian-Users"
+      ><em><span class="wysiwyg-underline">Australian</span></em></a
+    ><em> and </em
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/38860612202775-Age-Assurance-for-Brazilian-Users"
+      ><em><span class="wysiwyg-underline">Brazilian</span></em></a
+    ><em>
+      teens, your guardian can only choose between blur and block due to
+      regional restrictions.</em
+    > 
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
@@ -323,14 +338,29 @@
 </ul>
 <div class="warn-box">
   <strong>Important:</strong>
-  <span style="color: #434343"
-    >Guardians in the UK and Australia must be age assured adults (18+) and will
-    be required to age verify before updating their teen's message request
-    setting due to </span
+  <span style="color: #434343">Guardians in the </span
   ><a
-    href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
-    ><span class="wysiwyg-underline">region-specific settings</span></a
-  ><span style="color: #434343">.</span>
+    href="https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">UK</span></a
+  ><span style="color: #434343">, </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/38832004637207-Age-Assurance-for-Australian-Users"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Australia</span></a
+  ><span style="color: #434343"> and </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/38860612202775-Age-Assurance-for-Brazilian-Users"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Brazil</span></a
+  ><span style="color: #434343">
+    must be age assured adults (18+) and will be required to age verify before
+    updating their teen's message request setting due to region-specific
+    settings.</span
+  >
 </div>
 <ul>
   <li data-list-item-id="edc969b4da5fb9171aa35c17186d4b72e">

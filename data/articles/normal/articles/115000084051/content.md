@@ -5,33 +5,40 @@
   content, plus find out how to submit an appeal if you're incorrectly locked
   out despite being over 18 years old.
 </p>
-<div class="info-box">
-  <strong>Note:</strong> Due to regional regulations, new and existing UK and
-  Australian users may need to
-  <a
-    href="https://support.discord.com/hc/articles/30326565624343"
-    target="_blank"
-    rel="noopener noreferrer"
-    >assure their age</a
-  >
-  before accessing age-restricted channels or servers. Learn more about what’s
-  different for UK and Australian users
-  <a
-    href="https://support.discord.com/hc/en-us/articles/33362401287959/"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
+<div class="warn-box">
+  <p>
+    <strong>Important:</strong> Users in regions with regional restrictions may
+    have to complete age assurance before accessing age-restricted channels and
+    content. Please refer to the article below that corresponds to your region
+    for further details.
+  </p>
+  <ul>
+    <li data-list-item-id="eb43b28e094e905115a5cce286f56518c">
+      <a href="https://support.discord.com/hc/en-us/articles/33362401287959"
+        ><span class="wysiwyg-underline">United Kingdom</span></a
+      >
+    </li>
+    <li data-list-item-id="e92d2910f11400de2df62bbdcff74b97e">
+      <a href="https://support.discord.com/hc/en-us/articles/38832004637207"
+        ><span class="wysiwyg-underline">Australia</span></a
+      >
+    </li>
+    <li data-list-item-id="e59746b9f630f2ddb4fcb04fc860d9b2a">
+      <a href="https://support.discord.com/hc/en-us/articles/38860612202775"
+        ><span class="wysiwyg-underline">Brazil</span></a
+      >
+    </li>
+  </ul>
 </div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
       ><strong>What this article covers:</strong></span
-    ><br /> 
+    >
   </p>
   <ul>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="e6d461341092b9de2750843a16c725cdc"
     >
       <a href="#h_01K0G0KP8ZDMVTXQV8FZ87PH08"
@@ -39,7 +46,7 @@
       >
     </li>
     <li
-      class="ck-list-marker-bold"
+      class="wysiwyg-list-bold"
       data-list-item-id="ed5390369ea70b9d686edea6d0569caf6"
     >
       <a href="#h_01K0G0SS22WX8R353SNXNQ72VB"
