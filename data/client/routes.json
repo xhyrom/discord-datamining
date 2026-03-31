@@ -2008,13 +2008,7 @@
   },
   "APPLICATIONS_DETECTABLE": {
     "url": "/applications/detectable",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH",
-      "PUT"
-    ]
+    "allowed_methods": []
   },
   "APPLICATIONS_GAMES_SUPPLEMENTAL": {
     "url": "/applications/games-supplemental",
