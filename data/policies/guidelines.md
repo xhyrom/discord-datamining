@@ -228,7 +228,9 @@
     </div>
     <div class="nav_padding">
       <div class="nav_wrapper">
-        <a href="/" class="nav_brand w-nav-brand"
+        <a data-button-ally="skip" href="#main" class="skip-link w-inline-block"
+          ><div>Skip to main content</div></a
+        ><a href="/" class="nav_brand w-nav-brand"
           ><img
             width="146"
             loading="lazy"
@@ -257,9 +259,21 @@
         ></a>
         <div class="nav_menu_wr">
           <ul role="list" class="nav_menu">
-            <li><a href="/download" class="nav_link">Download</a></li>
-            <li><a href="/nitro" class="nav_link">Nitro</a></li>
-            <li><a href="/servers" class="nav_link">Discover</a></li>
+            <li>
+              <a href="/download" class="nav_link"
+                >Download<span class="sr-only">1 of 9</span></a
+              >
+            </li>
+            <li>
+              <a href="/nitro" class="nav_link"
+                >Nitro<span class="sr-only">2 of 9</span></a
+              >
+            </li>
+            <li>
+              <a href="/servers" class="nav_link"
+                >Discover<span class="sr-only">3 of 9</span></a
+              >
+            </li>
             <li>
               <div
                 data-delay="0"
@@ -267,7 +281,7 @@
                 class="nav_dd is-relative w-dropdown"
               >
                 <div class="nav_dd_trigger w-dropdown-toggle">
-                  <div>Safety</div>
+                  <div>Safety <span class="sr-only">4 of 9</span></div>
                   <div class="nav_dd_arrow-wr-white">
                     <div class="nav_dd_arrow w-embed">
                       <svg
@@ -321,15 +335,21 @@
                         <div class="nav_dd_link_list is-new">
                           <div class="nav_dd_link_title">Resources</div>
                           <a href="/safety-family-center" class="dd_nav-link"
-                            >Family Center</a
+                            >Family Center<span class="sr-only"
+                              >1 of 9</span
+                            > </a
                           ><a href="/safety-library" class="dd_nav-link"
-                            >Safety Library</a
+                            >Safety Library<span class="sr-only"
+                              >2 of 9</span
+                            ></a
                           ><a href="/safety-news" class="dd_nav-link"
-                            >Safety News</a
+                            >Safety News<span class="sr-only">3 of 9</span></a
                           ><a
                             href="/safety-teen-charter"
                             class="dd_nav-link w-inline-block"
-                            ><div>Teen Charter</div></a
+                            ><div>
+                              Teen Charter <span class="sr-only">4 of 9</span>
+                            </div></a
                           >
                         </div>
                       </div>
@@ -339,23 +359,34 @@
                           <a
                             href="/safety-parents"
                             class="dd_nav-link w-inline-block"
-                            ><div>Parent Hub</div></a
+                            ><div>
+                              Parent Hub <span class="sr-only">5 of 9</span>
+                            </div></a
                           ><a
                             href="/safety-policies"
                             class="dd_nav-link w-inline-block"
-                            ><div>Policy Hub</div></a
+                            ><div>
+                              Policy Hub <span class="sr-only">6 of 9</span>
+                            </div></a
                           ><a
                             href="/safety-privacy"
                             class="dd_nav-link w-inline-block"
-                            ><div>Privacy Hub</div></a
+                            ><div>
+                              Privacy Hub <span class="sr-only">7 of 9</span>
+                            </div></a
                           ><a
                             href="/safety-transparency"
                             class="dd_nav-link w-inline-block"
-                            ><div>Transparency Hub</div></a
+                            ><div>
+                              Transparency Hub
+                              <span class="sr-only">8 of 9</span>
+                            </div></a
                           ><a
                             href="/safety-wellbeing"
                             class="dd_nav-link w-inline-block"
-                            ><div>Wellbeing Hub</div></a
+                            ><div>
+                              Wellbeing Hub <span class="sr-only">9 of 9</span>
+                            </div></a
                           >
                         </div>
                       </div>
@@ -377,7 +408,7 @@
                 class="nav_dd is-relative w-dropdown"
               >
                 <div class="nav_dd_trigger w-dropdown-toggle">
-                  <div>Quests</div>
+                  <div>Quests <span class="sr-only">5 of 9</span></div>
                   <div class="nav_dd_arrow-wr-white">
                     <div class="nav_dd_arrow w-embed">
                       <svg
@@ -431,13 +462,15 @@
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Resources</div>
                           <a href="/ads/quests" class="dd_nav-link"
-                            >Advertising</a
+                            >Advertising<span class="sr-only">1 of 3</span></a
                           ><a
                             href="/ads/quests-success-stories"
                             class="dd_nav-link"
-                            >Success Stories</a
+                            >Success Stories<span class="sr-only"
+                              >2 of 3</span
+                            ></a
                           ><a href="/ads/quests-faq" class="dd_nav-link"
-                            >Quests FAQ</a
+                            >Quests FAQ <span class="sr-only">3 of 3</span></a
                           >
                         </div>
                       </div>
@@ -459,7 +492,7 @@
                 class="nav_dd is-relative w-dropdown"
               >
                 <div class="nav_dd_trigger w-dropdown-toggle">
-                  <div>Support</div>
+                  <div>Support <span class="sr-only">6 of 9</span></div>
                   <div class="nav_dd_arrow-wr-white">
                     <div class="nav_dd_arrow w-embed">
                       <svg
@@ -515,15 +548,17 @@
                           <a
                             href="https://support.discord.com/hc"
                             class="dd_nav-link"
-                            >Help Center</a
+                            >Help Center<span class="sr-only">1 of 3</span></a
                           ><a
                             href="https://support.discord.com/hc/en-us/community/topics"
                             class="dd_nav-link"
-                            >Feedback</a
+                            >Feedback<span class="sr-only">2 of 3</span></a
                           ><a
                             href="https://support.discord.com/hc/en-us/requests/new"
                             class="dd_nav-link"
-                            >Submit a Request</a
+                            >Submit a Request<span class="sr-only"
+                              >3 of 3</span
+                            ></a
                           >
                         </div>
                       </div>
@@ -545,7 +580,7 @@
                 class="nav_dd is-relative w-dropdown"
               >
                 <div class="nav_dd_trigger w-dropdown-toggle">
-                  <div>Blog</div>
+                  <div>Blog <span class="sr-only">7 of 9</span></div>
                   <div class="nav_dd_arrow-wr-white">
                     <div class="nav_dd_arrow w-embed">
                       <svg
@@ -598,21 +633,30 @@
                       <div class="nav_dd_link-group">
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Collections</div>
-                          <a href="/blog" class="dd_nav-link">Featured</a
+                          <a href="/blog" class="dd_nav-link"
+                            >Featured<span class="sr-only">1 of 7</span></a
                           ><a href="/category/community" class="dd_nav-link"
-                            >Community</a
+                            >Community<span class="sr-only">2 of 7</span></a
                           ><a href="/category/company" class="dd_nav-link"
-                            >Discord HQ</a
+                            >Discord HQ<span class="sr-only">3 of 7</span></a
                           ><a href="/category/engineering" class="dd_nav-link"
-                            >Engineering &amp; Developers</a
+                            >Engineering &amp; Developers<span class="sr-only"
+                              >4 of 7</span
+                            ></a
                           ><a
                             href="/category/how-to-discord"
                             class="dd_nav-link"
-                            >How to Discord</a
+                            >How to Discord<span class="sr-only"
+                              >5 of 7</span
+                            ></a
                           ><a href="/category/safety" class="dd_nav-link"
-                            >Policy &amp; Safety</a
+                            >Policy &amp; Safety<span class="sr-only"
+                              >6 of 7</span
+                            ></a
                           ><a href="/category/product" class="dd_nav-link"
-                            >Product &amp; Features</a
+                            >Product &amp; Features<span class="sr-only"
+                              >7 of 7</span
+                            ></a
                           >
                         </div>
                       </div>
@@ -634,7 +678,7 @@
                 class="nav_dd is-relative w-dropdown"
               >
                 <div class="nav_dd_trigger w-dropdown-toggle">
-                  <div>Developers</div>
+                  <div>Developers <span class="sr-only">8 of 9</span></div>
                   <div class="nav_dd_arrow-wr-white">
                     <div class="nav_dd_arrow w-embed">
                       <svg
@@ -690,27 +734,45 @@
                           <a
                             href="https://discord.com/developers"
                             class="dd_nav-link w-inline-block"
-                            ><div>Discord for Game Developers</div></a
+                            ><div>
+                              Discord for Game Developers
+                              <span class="sr-only">1 of 10</span>
+                            </div></a
                           ><a
                             href="https://discord.com/developers/social-sdk"
                             class="dd_nav-link w-inline-block"
-                            ><div>Integration</div></a
+                            ><div>
+                              Integration <span class="sr-only">2 of 10</span>
+                            </div></a
                           ><a
                             href="https://discord.com/developers/social-commerce"
                             class="dd_nav-link w-inline-block"
-                            ><div>Social Commerce</div></a
+                            ><div>
+                              Social Commerce
+                              <span class="sr-only">3 of 10</span>
+                            </div></a
                           ><a
                             href="https://discord.com/developers/build"
                             class="dd_nav-link w-inline-block"
-                            ><div>Apps &amp;&nbsp;Activities</div></a
+                            ><div>
+                              Apps &amp;&nbsp;Activities
+                              <span class="sr-only">4 of 10</span>
+                            </div></a
                           ><a
                             href="https://discord.com/developers/developer-newsletter"
                             class="dd_nav-link w-inline-block"
-                            ><div>Developer Newsletter</div></a
+                            ><div>
+                              Developer Newsletter<span class="sr-only">
+                                5 of 10
+                              </span>
+                            </div></a
                           ><a
                             href="https://discord.com/developers/success-stories"
                             class="dd_nav-link w-inline-block"
-                            ><div>Developer Case Studies</div></a
+                            ><div>
+                              Developer Case Studies
+                              <span class="sr-only">6 of 10</span>
+                            </div></a
                           >
                         </div>
                         <div class="nav_dd_link_line is-n"></div>
@@ -719,7 +781,11 @@
                           <a
                             href="https://discord.com/community"
                             class="dd_nav-link w-inline-block"
-                            ><div>Official Game Communities</div>
+                            ><div>
+                              Official Game Communities 7<span class="sr-only">
+                                of 10</span
+                              >
+                            </div>
                             <div class="nav_dd_link_arrow w-embed">
                               <svg
                                 width="16"
@@ -740,7 +806,10 @@
                           ><a
                             href="https://discord.com/developers/home"
                             class="dd_nav-link w-inline-block"
-                            ><div>Developer Portal</div>
+                            ><div>
+                              Developer Portal
+                              <span class="sr-only">8 of 10</span>
+                            </div>
                             <div class="nav_dd_link_arrow w-embed">
                               <svg
                                 width="16"
@@ -761,7 +830,9 @@
                           ><a
                             href="https://discord.com/developers/docs/intro"
                             class="dd_nav-link w-inline-block"
-                            ><div>Documentation</div>
+                            ><div>
+                              Documentation <span class="sr-only">9 of 10</span>
+                            </div>
                             <div class="nav_dd_link_arrow w-embed">
                               <svg
                                 width="16"
@@ -782,7 +853,10 @@
                           ><a
                             href="https://support-dev.discord.com/hc/en-us"
                             class="dd_nav-link w-inline-block"
-                            ><div>Developer Help Center</div>
+                            ><div>
+                              Developer Help Center
+                              <span class="sr-only">10 of 10</span>
+                            </div>
                             <div class="nav_dd_link_arrow w-embed">
                               <svg
                                 width="16"
@@ -814,7 +888,11 @@
                 </nav>
               </div>
             </li>
-            <li><a href="/careers" class="nav_link is_careers">Careers</a></li>
+            <li>
+              <a href="/careers" class="nav_link is_careers"
+                >Careers<span class="sr-only">9 of 9</span></a
+              >
+            </li>
           </ul>
         </div>
         <div class="nav_buttons-wr_new">
@@ -2128,32 +2206,38 @@
     </div>
   </main>
   <div class="footer_new">
-    <div class="footer-styles w-embed"></div>
+    <div class="footer-styles w-embed">
+      <style>
+        .p-footer {
+          color: #ffffffb3 !important;
+        }
+      </style>
+    </div>
     <div class="container-1762">
       <div class="w-layout-grid grid-footer is-new-com">
         <div
-          id="w-node-_93d0322f-4184-d118-cde0-447042a4716e-42a4716b"
+          id="w-node-_7f02ccc2-4de0-9fe4-5350-2bcb84a209ed-42a4716b"
           class="vertical-flex mobile-left is_new"
         >
           <a href="/" class="footer-logo-link w-inline-block"
             ><img
-              src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg"
               loading="lazy"
-              alt="Home page"
+              src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg"
+              alt="Discord Home"
           /></a>
-          <div class="p-footer">Language</div>
+          <div class="p-footer is_2026">Language</div>
           <div class="padding-16px"></div>
           <div
-            data-hover="false"
             data-delay="0"
-            data-w-id="93d0322f-4184-d118-cde0-447042a47174"
+            data-hover="false"
+            data-w-id="7f02ccc2-4de0-9fe4-5350-2bcb84a209f3"
             class="dropdown-language-wr w-dropdown"
           >
             <div class="dropdown-language-btn w-dropdown-toggle">
               <div class="dropdown-language-name">English (US)</div>
               <img
-                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e2c5a476e29535c2465b24_Chevron%20Down.svg"
                 loading="lazy"
+                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e2c5a476e29535c2465b24_Chevron%20Down.svg"
                 alt=""
                 class="dropdown-language-arrow"
               />
@@ -2391,8 +2475,8 @@
                 target="_blank"
                 class="link-s w-inline-block"
                 ><img
-                  src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4237b6a1c4fa714f76_x.svg"
                   loading="lazy"
+                  src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4237b6a1c4fa714f76_x.svg"
                   alt="Twitter"
                   class="image" /></a
               ><a
@@ -2401,8 +2485,8 @@
                 target="_blank"
                 class="link-s w-inline-block"
                 ><img
-                  src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe42d907d27f3dead7a0_instagram.svg"
                   loading="lazy"
+                  src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe42d907d27f3dead7a0_instagram.svg"
                   alt="Instagram"
                   class="image" /></a
               ><a
@@ -2411,8 +2495,8 @@
                 target="_blank"
                 class="link-s w-inline-block"
                 ><img
-                  src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4173c1df8be608c8a2_facebook.svg"
                   loading="lazy"
+                  src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4173c1df8be608c8a2_facebook.svg"
                   alt="Facebook"
                   class="image" /></a
               ><a
@@ -2421,8 +2505,8 @@
                 target="_blank"
                 class="link-s w-inline-block"
                 ><img
-                  src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe42d907d27f3dead7ad_youtube.svg"
                   loading="lazy"
+                  src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe42d907d27f3dead7ad_youtube.svg"
                   alt="Youtube"
                   class="image" /></a
               ><a
@@ -2431,27 +2515,28 @@
                 target="_blank"
                 class="link-s w-inline-block"
                 ><img
-                  src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4152ae5860036dadf1_tiktok.svg"
                   loading="lazy"
+                  src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4152ae5860036dadf1_tiktok.svg"
                   alt="Tiktok"
                   class="image"
               /></a>
             </div>
           </div>
         </div>
-        <div id="w-node-_93d0322f-4184-d118-cde0-447042a471e6-42a4716b">
+        <div id="w-node-_7f02ccc2-4de0-9fe4-5350-2bcb84a20a65-42a4716b">
           <div class="footer-h-link show-landscape">Menu</div>
+          <h3 class="desktop-only-footer-title">Product</h3>
           <div
-            data-hover="false"
             data-delay="0"
-            data-w-id="93d0322f-4184-d118-cde0-447042a471e9"
+            data-hover="false"
+            data-w-id="7f02ccc2-4de0-9fe4-5350-2bcb84a20a6a"
             class="dropdown-footer w-dropdown"
           >
-            <div class="dropdown-toggle-footer w-dropdown-toggle">
+            <div class="dropdown-toggle-footer is_2026 w-dropdown-toggle">
               <div>Product</div>
               <img
-                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e15958db56b5a91218f5e9_Chevron%20Down.svg"
                 loading="lazy"
+                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e15958db56b5a91218f5e9_Chevron%20Down.svg"
                 alt=""
                 class="arrow-drop show-landscape"
               />
@@ -2482,18 +2567,19 @@
             </nav>
           </div>
         </div>
-        <div id="w-node-_93d0322f-4184-d118-cde0-447042a471fa-42a4716b">
+        <div id="w-node-_7f02ccc2-4de0-9fe4-5350-2bcb84a20a79-42a4716b">
+          <h3 class="desktop-only-footer-title">Company</h3>
           <div
-            data-hover="false"
             data-delay="0"
-            data-w-id="93d0322f-4184-d118-cde0-447042a471fb"
+            data-hover="false"
+            data-w-id="7f02ccc2-4de0-9fe4-5350-2bcb84a20a7c"
             class="dropdown-footer w-dropdown"
           >
-            <div class="dropdown-toggle-footer w-dropdown-toggle">
+            <div class="dropdown-toggle-footer is_2026 w-dropdown-toggle">
               <div>Company</div>
               <img
-                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e15958db56b5a91218f5e9_Chevron%20Down.svg"
                 loading="lazy"
+                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e15958db56b5a91218f5e9_Chevron%20Down.svg"
                 alt=""
                 class="arrow-drop show-landscape"
               />
@@ -2524,18 +2610,19 @@
             </nav>
           </div>
         </div>
-        <div id="w-node-_93d0322f-4184-d118-cde0-447042a4720a-42a4716b">
+        <div id="w-node-_7f02ccc2-4de0-9fe4-5350-2bcb84a20a8b-42a4716b">
+          <h3 class="desktop-only-footer-title">Resources</h3>
           <div
-            data-hover="false"
             data-delay="0"
-            data-w-id="93d0322f-4184-d118-cde0-447042a4720b"
+            data-hover="false"
+            data-w-id="7f02ccc2-4de0-9fe4-5350-2bcb84a20a8e"
             class="dropdown-footer w-dropdown"
           >
-            <div class="dropdown-toggle-footer w-dropdown-toggle">
+            <div class="dropdown-toggle-footer is_2026 w-dropdown-toggle">
               <div>Resources</div>
               <img
-                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e15958db56b5a91218f5e9_Chevron%20Down.svg"
                 loading="lazy"
+                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e15958db56b5a91218f5e9_Chevron%20Down.svg"
                 alt=""
                 class="arrow-drop show-landscape"
               />
@@ -2592,18 +2679,19 @@
             </nav>
           </div>
         </div>
-        <div id="w-node-_93d0322f-4184-d118-cde0-447042a4722a-42a4716b">
+        <div id="w-node-_7f02ccc2-4de0-9fe4-5350-2bcb84a20aa7-42a4716b">
+          <h3 class="desktop-only-footer-title">Policies</h3>
           <div
-            data-hover="false"
             data-delay="0"
-            data-w-id="93d0322f-4184-d118-cde0-447042a4722b"
+            data-hover="false"
+            data-w-id="7f02ccc2-4de0-9fe4-5350-2bcb84a20aaa"
             class="dropdown-footer line-none w-dropdown"
           >
-            <div class="dropdown-toggle-footer w-dropdown-toggle">
+            <div class="dropdown-toggle-footer is_2026 w-dropdown-toggle">
               <div>Policies</div>
               <img
-                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e15958db56b5a91218f5e9_Chevron%20Down.svg"
                 loading="lazy"
+                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e15958db56b5a91218f5e9_Chevron%20Down.svg"
                 alt=""
                 class="arrow-drop show-landscape"
               />
@@ -2650,10 +2738,10 @@
           </div>
         </div>
         <div
-          id="w-node-_93d0322f-4184-d118-cde0-447042a47240-42a4716b"
+          id="w-node-_7f02ccc2-4de0-9fe4-5350-2bcb84a20abf-42a4716b"
           class="show-soc"
         >
-          <div class="p-footer">Social</div>
+          <div class="p-footer is_2026">Social</div>
           <div class="flex-horizontal top-soc-new">
             <a
               data-track="twitter"
@@ -2661,8 +2749,8 @@
               target="_blank"
               class="link-s w-inline-block"
               ><img
-                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4237b6a1c4fa714f76_x.svg"
                 loading="lazy"
+                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4237b6a1c4fa714f76_x.svg"
                 alt="Twitter"
                 class="image" /></a
             ><a
@@ -2671,8 +2759,8 @@
               target="_blank"
               class="link-s w-inline-block"
               ><img
-                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe42d907d27f3dead7a0_instagram.svg"
                 loading="lazy"
+                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe42d907d27f3dead7a0_instagram.svg"
                 alt="Instagram"
                 class="image" /></a
             ><a
@@ -2681,8 +2769,8 @@
               target="_blank"
               class="link-s w-inline-block"
               ><img
-                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4173c1df8be608c8a2_facebook.svg"
                 loading="lazy"
+                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4173c1df8be608c8a2_facebook.svg"
                 alt="Facebook"
                 class="image" /></a
             ><a
@@ -2691,8 +2779,8 @@
               target="_blank"
               class="link-s w-inline-block"
               ><img
-                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe42d907d27f3dead7ad_youtube.svg"
                 loading="lazy"
+                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe42d907d27f3dead7ad_youtube.svg"
                 alt="Youtube"
                 class="image" /></a
             ><a
@@ -2701,8 +2789,8 @@
               target="_blank"
               class="link-s w-inline-block"
               ><img
-                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4152ae5860036dadf1_tiktok.svg"
                 loading="lazy"
+                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4152ae5860036dadf1_tiktok.svg"
                 alt="Tiktok"
                 class="image"
             /></a>
