@@ -28173,6 +28173,7 @@ html:not(.chat-input) .inputInner_b1f01d {
   display: flex;
   flex-direction: column;
   gap: var(--space-16);
+  min-width: 200px;
   padding: var(--space-12);
 }
 .listItem_f000ba {
@@ -71974,4 +71975,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.cc9f864d2b29948a.css.map*/
+/*# sourceMappingURL=web.5b7bf9e8a0ad21e0.css.map*/
