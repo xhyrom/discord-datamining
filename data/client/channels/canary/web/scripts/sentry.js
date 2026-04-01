@@ -3829,7 +3829,6 @@
           SAFETY_FLOWS_TASK: "/safety-flows/task",
           SAFETY_FLOWS_RESEND_VERIFICATION_CODE:
             "/safety-flows/resend/email/reverification/pincode",
-          VOICE_FILTERS_CATALOG: "/voice-filters/catalog",
           APEX_EXPERIMENTS_METADATA: "/apex/experiments/metadata",
           APEX_EXPERIMENTS: "/apex/experiments",
           CONFERENCE_MODE_GUILDS: "/conference-mode/guilds",
@@ -3913,7 +3912,6 @@
             INVITES_HELP:
               "https://support.discord.com/hc/en-us/articles/208866998-Invites-101",
             SAFETY_CENTER: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/safetycenter`,
-            VOICE_FILTERS_BLOG: "https://discord.com/blog/voice-filters",
           }),
           Object.freeze({
             DEVELOPER_PORTAL: "/developers",
@@ -6006,25 +6004,6 @@
           (a.INVITE_ACCEPT_DETAILS_VIEWED = "invite_accept_details_viewed"),
           (a.INVITE_ACCEPT_SOCIAL_LINK_CLICKED =
             "invite_accept_social_link_clicked"),
-          (a.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED =
-            "voice_filter_limited_time_voice_selected"),
-          (a.VOICE_FILTER_FEEDBACK = "voice_filter_feedback"),
-          (a.VOICE_FILTER_PICKER_OPENED = "voice_filter_picker_opened"),
-          (a.VOICE_FILTER_ENABLED = "voice_filter_enabled"),
-          (a.VOICE_FILTER_ERROR = "voice_filter_error"),
-          (a.VOICE_FILTER_DISABLED = "voice_filter_disabled"),
-          (a.VOICE_FILTER_DOWNLOAD_ATTEMPTED =
-            "voice_filter_download_attempted"),
-          (a.VOICE_FILTER_ACTIVATE_FAILED = "voice_filter_activate_failed"),
-          (a.VOICE_FILTER_PLAYBACK_TOGGLED = "voice_filter_playback_toggled"),
-          (a.VOICE_FILTER_PREVIEW_PLAYED = "voice_filter_preview_played"),
-          (a.VOICE_FILTER_PICKER_SCROLLED = "voice_filter_picker_scrolled"),
-          (a.VOICE_FILTER_MIC_SELECTOR_OPENED =
-            "voice_filter_mic_selector_opened"),
-          (a.VOICE_FILTER_MIC_SELECTOR_INPUT_SELECTED =
-            "voice_filter_mic_selector_input_selected"),
-          (a.VOICE_FILTER_VOICE_SETTINGS_CLICKED =
-            "voice_filter_voice_settings_clicked"),
           (a.ACTIVITY_PANEL_GAME_CARD_ACTIVITY_POPOUT_REFOCUS_CLICKED =
             "activity_panel_game_card_activity_popout_refocus_clicked"),
           (a.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED =
@@ -6466,7 +6445,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-de00b94cf7d8681a5591913448b7a216e0e2329b",
+            release: "discord_web-7ecc905777a04cb9ec68c60bc85adffea664f1fb",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6533,8 +6512,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "521264"),
-            o.NA("builtAt", String("1775068888684"));
+            o.NA("buildNumber", "521326"),
+            o.NA("builtAt", String("1775072352293"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -39603,4 +39582,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.20fac15f18fedf76.js.map
+//# sourceMappingURL=sentry.e0f67588546a8a7c.js.map
