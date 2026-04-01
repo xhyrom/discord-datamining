@@ -3841,6 +3841,10 @@
             `/conference-mode/channels/${e}/users`,
           CONFERENCE_MODE_EVENTS: "/conference-mode/events",
           CONFERENCE_MODE_CONFERENCES: "/conference-mode/conference",
+          GORILLA_COUNTERS: "/gorilla/counters",
+          GORILLA_USER_DATA: "/gorilla/user-data/@me",
+          GORILLA_START_ACTIVITY: (e) => `/gorilla/activity/${e}/start`,
+          GORILLA_COMPLETE_ACTIVITY: (e) => `/gorilla/activity/${e}/complete`,
           GUILD_MIGRATE_PIN_PERMISSION: (e) =>
             `/guilds/${e}/migrate-pin-permission`,
           GET_APPLICATION_TOKENS: (e) => `/oauth2/applications/${e}/tokens`,
@@ -5255,6 +5259,8 @@
           (a.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED =
             "premium_uncancel_winback_cta_clicked"),
           (a.EASTER_EGG_INTERACTED = "easter_egg_interacted"),
+          (a.APRIL_FOOLS_2026_OPENED = "april_fools_2026_opened"),
+          (a.APRIL_FOOLS_2026_VIDEO_CLICKED = "april_fools_2026_video_clicked"),
           (a.RPC_COMMAND_SENT = "rpc_command_sent"),
           (a.RPC_SERVER_ERROR_CAUGHT = "rpc_server_error_caught"),
           (a.RPC_SUBSCRIPTION_REQUESTED = "rpc_subscription_requested"),
@@ -6459,7 +6465,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-04-01-767e285d394378d8d3f43af2a910c03731700d26-discord_web",
+              "2026-04-01-d06285ab18cb892d43c67948e6d4549bbcd71aa5-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6526,8 +6532,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "520959"),
-            o.NA("builtAt", String("1775027968089"));
+            o.NA("buildNumber", "521120"),
+            o.NA("builtAt", String("1775061454431"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6758,6 +6764,7 @@
             QUEST_PREVIEW: (e) => `/quest-preview/${e}`,
             QUEST_PREVIEW_TOOL_2: (e) =>
               `/quest-home?tab=preview_tool&quest_id=${e}`,
+            GORILLA: "/last-meadow-online",
             ICYMI: "/icymi",
           });
         (0, a.dN)(_, [":", "?", "@"]);
@@ -39595,4 +39602,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.5baca4495ffeb903.js.map
+//# sourceMappingURL=sentry.f5d9f424b053e2dd.js.map
