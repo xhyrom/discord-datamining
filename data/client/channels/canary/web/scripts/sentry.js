@@ -3841,6 +3841,10 @@
             `/conference-mode/channels/${e}/users`,
           CONFERENCE_MODE_EVENTS: "/conference-mode/events",
           CONFERENCE_MODE_CONFERENCES: "/conference-mode/conference",
+          GORILLA_COUNTERS: "/gorilla/counters",
+          GORILLA_USER_DATA: "/gorilla/user-data/@me",
+          GORILLA_START_ACTIVITY: (e) => `/gorilla/activity/${e}/start`,
+          GORILLA_COMPLETE_ACTIVITY: (e) => `/gorilla/activity/${e}/complete`,
           GUILD_MIGRATE_PIN_PERMISSION: (e) =>
             `/guilds/${e}/migrate-pin-permission`,
           GET_APPLICATION_TOKENS: (e) => `/oauth2/applications/${e}/tokens`,
@@ -4159,6 +4163,8 @@
             "guild_permanent_links_community_upsell_clicked"),
           (a.INVITE_SERVER_CLICKED = "invite_server_clicked"),
           (a.INVITE_EMBED_ACTIONED = "invite_embed_actioned"),
+          (a.VOICE_INVITE_EMBED_BREADCRUMB_CLICKED =
+            "voice_invite_embed_breadcrumb_clicked"),
           (a.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED =
             "voice_invite_suggestions_entrypoint_closed"),
           (a.INVITE_CTA_CLICKED = "invite_cta_clicked"),
@@ -5255,6 +5261,8 @@
           (a.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED =
             "premium_uncancel_winback_cta_clicked"),
           (a.EASTER_EGG_INTERACTED = "easter_egg_interacted"),
+          (a.APRIL_FOOLS_2026_OPENED = "april_fools_2026_opened"),
+          (a.APRIL_FOOLS_2026_VIDEO_CLICKED = "april_fools_2026_video_clicked"),
           (a.RPC_COMMAND_SENT = "rpc_command_sent"),
           (a.RPC_SERVER_ERROR_CAUGHT = "rpc_server_error_caught"),
           (a.RPC_SUBSCRIPTION_REQUESTED = "rpc_subscription_requested"),
@@ -6458,7 +6466,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-8d70501bc7f3229cb2fae4bb073aabcc45d474e0",
+            release: "discord_web-de00b94cf7d8681a5591913448b7a216e0e2329b",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6525,8 +6533,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "521091"),
-            o.NA("builtAt", String("1775059144589"));
+            o.NA("buildNumber", "521264"),
+            o.NA("builtAt", String("1775068888684"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6757,6 +6765,7 @@
             QUEST_PREVIEW: (e) => `/quest-preview/${e}`,
             QUEST_PREVIEW_TOOL_2: (e) =>
               `/quest-home?tab=preview_tool&quest_id=${e}`,
+            GORILLA: "/last-meadow-online",
             ICYMI: "/icymi",
           });
         (0, a.dN)(_, [":", "?", "@"]);
@@ -39594,4 +39603,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.f8b856bf10fd60ad.js.map
+//# sourceMappingURL=sentry.20fac15f18fedf76.js.map
