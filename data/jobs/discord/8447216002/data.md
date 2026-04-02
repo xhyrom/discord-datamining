@@ -1,6 +1,6 @@
 # Job Listing
 
-## Data Scientist, Analytics - Performance
+## Data Scientist, Analytics
 
 **Location:** San Francisco Bay Area
 
@@ -10,14 +10,15 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8447216002](https://discord.com/jobs/8447216002)
 
-**Updated At:** Mon, 16 Mar 2026 22:54:37 GMT
+**Updated At:** Thu, 02 Apr 2026 22:18:21 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for a Data Scientist to join the Performance Data Science team, where you’ll play a critical role in making sure that Discord just works for our users. You’ll partner closely with the teams that design, build, and support Discord - improving app performance, enhancing the user experience, and driving user growth. If you’re passionate about data and eager to make a real impact, we’d love to hear from you!
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.
+As a member of the Data Science &amp;amp; Analytics team, you will help Discord achieve its mission of making it easier and more fun for people to talk and hang out before, during, and after playing games. Data Scientists for Analytics leverage their deep analytical skills and product intuition to solve a wide array of complex problems - from strategic analysis to dashboard creation and experimentation design and analysis. We are currently hiring across a variety of data science verticals and teams including revenue and performance. If you’re passionate about data, impact, and working on an amazing team, read on!
 What you'll be doing
 
-Partner with teams throughout Discord through the full lifecycle of data analytics from ideation and exploratory analysis, to building dashboards and reports, and A/B testing
-Define KPIs and diagnostic metrics that help improve the user experience, encapsulating these measures in clean crisp dashboards that provide the company with timely and actionable information
+Partner with teams throughout Discord through the full lifecycle of data science analytics from ideation and exploratory analysis, to building dashboards and reports, and A/B testing
+Define KPIs and metrics that help improve the user experience, encapsulating these measures in clean crisp dashboards that provide the company with timely and actionable information
 Use our amazing infrastructure to quickly and easily build custom data sets to monitor novel product features and processes
 Proactively socialize insights, dashboards, and reports with technical and non-technical audiences, soliciting feedback on where to improve
 Be a champion of A/B testing and help groups throughout the company design, analyze, and interpret A/B tests correctly
@@ -36,9 +37,8 @@ Last but not least - a collaborative attitude and a healthy dose of natural curi
 Bonus Points
 
 Passion for Discord or online communities
-Experience with technical leadership, being the point person for one or more stakeholder groups
 Experience with analytics for social media or international subscription-based online services, including familiarity with concepts such as social graphs, LTV analysis, funnel analysis, etc.
-Experience in the performance and reliability space of online applications
+Experience in the user engagement and growth problems
 Experience writing performant code in BigQuery SQL
 Experience with writing production ETL
 Experience leveraging AI for data science
