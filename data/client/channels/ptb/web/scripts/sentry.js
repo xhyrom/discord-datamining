@@ -3337,6 +3337,7 @@
           STOREFRONT_PRODUCT_BY_SKU_ID: (e) => `/storefront/products/sku/${e}`,
           STOREFRONT_PRODUCTS_BY_SKU_IDS: "/storefront/products/skus",
           STOREFRONT_PROMOTIONS: "/storefront/promotions",
+          STOREFRONT_PRICES: "/storefront/prices",
           STORE_DIRECTORY_LAYOUT: (e) => `/store/directory-layouts/${e}`,
           STORE_DIRECTORY: (e) => `/store/directory/${e}`,
           STORE_EMAIL_RESEND_PAYMENT_VERIFICATION:
@@ -3435,6 +3436,7 @@
           USER_AFFINITIES_V2: "/users/@me/affinities/v2/users",
           GUILD_AFFINITIES: "/users/@me/affinities/guilds",
           CHANNEL_AFFINITIES: "/users/@me/affinities/channels",
+          CHANNEL_AFFINITIES_V2: "/users/@me/affinities/v2/channels",
           PARTNERS_CONNECTIONS: "/partners/connections",
           PARTNERS_APPLY: "/partners/apply",
           STICKER_PACK: (e) => `/sticker-packs/${e}`,
@@ -3829,7 +3831,6 @@
           SAFETY_FLOWS_TASK: "/safety-flows/task",
           SAFETY_FLOWS_RESEND_VERIFICATION_CODE:
             "/safety-flows/resend/email/reverification/pincode",
-          VOICE_FILTERS_CATALOG: "/voice-filters/catalog",
           APEX_EXPERIMENTS_METADATA: "/apex/experiments/metadata",
           APEX_EXPERIMENTS: "/apex/experiments",
           CONFERENCE_MODE_GUILDS: "/conference-mode/guilds",
@@ -3913,7 +3914,6 @@
             INVITES_HELP:
               "https://support.discord.com/hc/en-us/articles/208866998-Invites-101",
             SAFETY_CENTER: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/safetycenter`,
-            VOICE_FILTERS_BLOG: "https://discord.com/blog/voice-filters",
           }),
           Object.freeze({
             DEVELOPER_PORTAL: "/developers",
@@ -4163,6 +4163,8 @@
             "guild_permanent_links_community_upsell_clicked"),
           (a.INVITE_SERVER_CLICKED = "invite_server_clicked"),
           (a.INVITE_EMBED_ACTIONED = "invite_embed_actioned"),
+          (a.VOICE_INVITE_EMBED_BREADCRUMB_CLICKED =
+            "voice_invite_embed_breadcrumb_clicked"),
           (a.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED =
             "voice_invite_suggestions_entrypoint_closed"),
           (a.INVITE_CTA_CLICKED = "invite_cta_clicked"),
@@ -6004,25 +6006,6 @@
           (a.INVITE_ACCEPT_DETAILS_VIEWED = "invite_accept_details_viewed"),
           (a.INVITE_ACCEPT_SOCIAL_LINK_CLICKED =
             "invite_accept_social_link_clicked"),
-          (a.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED =
-            "voice_filter_limited_time_voice_selected"),
-          (a.VOICE_FILTER_FEEDBACK = "voice_filter_feedback"),
-          (a.VOICE_FILTER_PICKER_OPENED = "voice_filter_picker_opened"),
-          (a.VOICE_FILTER_ENABLED = "voice_filter_enabled"),
-          (a.VOICE_FILTER_ERROR = "voice_filter_error"),
-          (a.VOICE_FILTER_DISABLED = "voice_filter_disabled"),
-          (a.VOICE_FILTER_DOWNLOAD_ATTEMPTED =
-            "voice_filter_download_attempted"),
-          (a.VOICE_FILTER_ACTIVATE_FAILED = "voice_filter_activate_failed"),
-          (a.VOICE_FILTER_PLAYBACK_TOGGLED = "voice_filter_playback_toggled"),
-          (a.VOICE_FILTER_PREVIEW_PLAYED = "voice_filter_preview_played"),
-          (a.VOICE_FILTER_PICKER_SCROLLED = "voice_filter_picker_scrolled"),
-          (a.VOICE_FILTER_MIC_SELECTOR_OPENED =
-            "voice_filter_mic_selector_opened"),
-          (a.VOICE_FILTER_MIC_SELECTOR_INPUT_SELECTED =
-            "voice_filter_mic_selector_input_selected"),
-          (a.VOICE_FILTER_VOICE_SETTINGS_CLICKED =
-            "voice_filter_voice_settings_clicked"),
           (a.ACTIVITY_PANEL_GAME_CARD_ACTIVITY_POPOUT_REFOCUS_CLICKED =
             "activity_panel_game_card_activity_popout_refocus_clicked"),
           (a.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED =
@@ -6465,7 +6448,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-04-01-0a85fd49b14e52a3d91f07fe4d6d4e0d0d5abff9-discord_web",
+              "2026-04-02-28e88794a456db3009a13291890351afe7fcf655-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6532,8 +6515,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "521447"),
-            o.NA("builtAt", String("1775078411660"));
+            o.NA("buildNumber", "521835"),
+            o.NA("builtAt", String("1775114337876"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -39602,4 +39585,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.e97f400397346ab5.js.map
+//# sourceMappingURL=sentry.0fcbd781b0b01788.js.map
