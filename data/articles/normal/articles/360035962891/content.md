@@ -282,33 +282,6 @@
     >here</a
   >. 
 </p>
-<h2 id="01HWDTKCYQ51461S8YEZ2XJFBN"><strong>Discord Quests Badge</strong></h2>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/23084843300887"
-    alt="image15.png"
-  />
-</p>
-<p>
-  The Discord Quests badge is for those who have completed a Quest! Quests allow
-  players to discover games, earn rewards, and stream the gameplay to friends.
-  Upon completing a quest, the Discord Quests Badge will be bestowed to your
-  profile.
-</p>
-<p>
-  For more information about Discord Quests and how it works, visit our<a
-    href="https://support.discord.com/hc/articles/22225719947543"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Discord Quests FAQ Help Center article</a
-  >.
-</p>
-<div class="info-box">
-  At the moment, we are unable to remove the Discord Quests Badge from your
-  Profile. However, the team will consider this feature as a potential update in
-  the future.
-</div>
 <h1 class="wysiwyg-text-align-left" id="h_01GM67MDR37JXG1VQWPGH60N59">
   <strong>Mythic Badges</strong>
 </h1>
