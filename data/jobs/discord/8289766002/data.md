@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8289766002](https://discord.com/jobs/8289766002)
 
-**Updated At:** Thu, 19 Mar 2026 22:41:31 GMT
+**Updated At:** Thu, 02 Apr 2026 18:11:22 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for an Account Executive to join our growing APAC Gaming Advertising Solutions team, reporting to our Director of Gaming Sales, APAC. This role is based in Japan and is perfect for someone passionate about the Japanese gaming market who wants to help game companies connect with their most dedicated player communities on Discord.
@@ -24,7 +24,7 @@ Demonstrate expertise around gaming, media, and advertising to clients, within D
 
 What you should have
 
-6+ years of direct experience in media buying, brand marketing, digital advertising, or ad sales in the Japanese gaming industry
+4+ years of direct experience in media buying, brand marketing, digital advertising, or ad sales in the Japanese gaming industry
 Native or business-level fluency in Japanese and professional proficiency in English
 Proven experience delivering against account and revenue goals, with deep understanding of Japanese gaming clients' challenges and objectives
 Strong understanding of Japanese business culture, relationship-building practices (including Nemawashi), and marketing/ad tech ecosystem
