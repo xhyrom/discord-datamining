@@ -38638,6 +38638,9 @@ body .headerAnimation_b54a5b {
 .container__63de2:hover {
   background-color: var(--background-mod-muted);
 }
+.giftCardCreditsCheckbox_b90acf {
+  margin-bottom: var(--space-8);
+}
 .subscriptionCostRowAmount__3d62f {
   font-weight: var(--font-weight-medium);
 }
@@ -71980,4 +71983,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.4b3c35ce88aa838a.css.map*/
+/*# sourceMappingURL=web.54ce6d7ac4bef6b8.css.map*/
