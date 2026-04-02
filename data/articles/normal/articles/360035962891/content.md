@@ -95,6 +95,9 @@
             >Partnered Server Owner Badge</a
           >
         </li>
+        <li data-list-item-id="ed8e21c12ab332aea443819f49a99e863">
+          <a href="#h_01KN7RXRGYQE7W60S3XCPVB7ED">Last Meadow Online Badge</a>
+        </li>
       </ul>
     </li>
   </ul>
@@ -417,3 +420,25 @@
   enthusiasm for Discord.
 </p>
 <p><strong>This badge is no longer obtainable.</strong></p>
+<h2 id="h_01KN7RXRGYQE7W60S3XCPVB7ED">Last Meadow Online Badge</h2>
+<p class="wysiwyg-text-align-center">
+  <img
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 647/201; width: 86.86%"
+    src="https://support.discord.com/hc/article_attachments/39481135346583"
+    width="647"
+    height="201"
+  />
+</p>
+<p>
+  From April 1, 2026 to April 7, 2026 you can play Last Meadow Online to earn
+  the Last Meadow Online badge. Hovering over the badge displays your level
+  progression in the game. You can learn more about the game through this
+  <a
+    href="https://discord.com/blog/last-meadow-online-announcement/"
+    target="_blank"
+    rel="noopener noreferrer"
+    >blog post</a
+  >.
+</p>
+<p><br /> </p>
