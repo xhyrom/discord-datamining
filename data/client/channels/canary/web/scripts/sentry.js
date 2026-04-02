@@ -6447,7 +6447,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-ab7b4ef324ee7dc238cdb744bacfacc61a30f85d",
+            release: "discord_web-914accbdf3b3322efdd33b76431a77e9f5ed2f3a",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6514,8 +6514,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "521969"),
-            o.NA("builtAt", String("1775146774658"));
+            o.NA("buildNumber", "522038"),
+            o.NA("builtAt", String("1775149985933"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6839,13 +6839,13 @@
               },
               APP_FRAME_BORDER: {
                 "mobile-visual-refresh": {
-                  [a.DARK]: { raw: "OPACITY_20", opacity: 0.2 },
-                  [a.LIGHT]: { raw: "OPACITY_36", opacity: 0.3607843137254902 },
-                  [a.MIDNIGHT]: {
-                    raw: "OPACITY_24",
-                    opacity: 0.23921568627450981,
+                  [a.DARK]: { raw: "OPACITY_12", opacity: 0.12156862745098039 },
+                  [a.LIGHT]: { raw: "OPACITY_28", opacity: 0.2784313725490196 },
+                  [a.MIDNIGHT]: { raw: "OPACITY_20", opacity: 0.2 },
+                  [a.DARKER]: {
+                    raw: "OPACITY_12",
+                    opacity: 0.12156862745098039,
                   },
-                  [a.DARKER]: { raw: "OPACITY_20", opacity: 0.2 },
                 },
               },
               BACKGROUND_BASE_LOW: {
@@ -7032,6 +7032,26 @@
                   [a.LIGHT]: { raw: "NEUTRAL_1", opacity: 1 },
                   [a.MIDNIGHT]: { raw: "NEUTRAL_83", opacity: 1 },
                   [a.DARKER]: { raw: "NEUTRAL_73", opacity: 1 },
+                },
+              },
+              BACKGROUND_VOICE_MUTED: {
+                "mobile-visual-refresh": {
+                  [a.DARK]: {
+                    raw: "OPACITY_RED_12",
+                    opacity: 0.12156862745098039,
+                  },
+                  [a.LIGHT]: {
+                    raw: "OPACITY_RED_12",
+                    opacity: 0.12156862745098039,
+                  },
+                  [a.MIDNIGHT]: {
+                    raw: "OPACITY_RED_12",
+                    opacity: 0.12156862745098039,
+                  },
+                  [a.DARKER]: {
+                    raw: "OPACITY_RED_12",
+                    opacity: 0.12156862745098039,
+                  },
                 },
               },
               BADGE_NOTIFICATION_BACKGROUND: {
@@ -8064,6 +8084,14 @@
                   [a.DARKER]: { raw: "NEUTRAL_23", opacity: 1 },
                 },
               },
+              MOBILE_VOICE_PANEL_BADGE_BACKGROUND: {
+                "mobile-visual-refresh": {
+                  [a.DARK]: { raw: "TRANSPARENT", opacity: 0 },
+                  [a.LIGHT]: { raw: "TRANSPARENT", opacity: 0 },
+                  [a.MIDNIGHT]: { raw: "TRANSPARENT", opacity: 0 },
+                  [a.DARKER]: { raw: "TRANSPARENT", opacity: 0 },
+                },
+              },
               MODAL_BACKGROUND: {
                 "mobile-visual-refresh": {
                   [a.DARK]: { raw: "NEUTRAL_64", opacity: 1 },
@@ -8082,10 +8110,10 @@
               },
               PANEL_BG: {
                 "mobile-visual-refresh": {
-                  [a.DARK]: { raw: "NEUTRAL_73", opacity: 1 },
-                  [a.LIGHT]: { raw: "NEUTRAL_4", opacity: 1 },
+                  [a.DARK]: { raw: "NEUTRAL_69", opacity: 1 },
+                  [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
                   [a.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
-                  [a.DARKER]: { raw: "NEUTRAL_92", opacity: 1 },
+                  [a.DARKER]: { raw: "NEUTRAL_86", opacity: 1 },
                 },
               },
               PREMIUM_NITRO_PINK_TEXT: {
@@ -8312,6 +8340,14 @@
                 "mobile-visual-refresh": {
                   [a.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
                   [a.LIGHT]: { raw: "NEUTRAL_44", opacity: 1 },
+                  [a.MIDNIGHT]: { raw: "NEUTRAL_1", opacity: 1 },
+                  [a.DARKER]: { raw: "NEUTRAL_1", opacity: 1 },
+                },
+              },
+              SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT: {
+                "mobile-visual-refresh": {
+                  [a.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
+                  [a.LIGHT]: { raw: "NEUTRAL_1", opacity: 1 },
                   [a.MIDNIGHT]: { raw: "NEUTRAL_1", opacity: 1 },
                   [a.DARKER]: { raw: "NEUTRAL_1", opacity: 1 },
                 },
@@ -8870,6 +8906,13 @@
                 [a.MIDNIGHT]: { raw: "ILLO_PINK_50", opacity: 0.3 },
                 [a.DARKER]: { raw: "ILLO_PINK_50", opacity: 0.3 },
               },
+              BACKGROUND_VOICE_MUTED: {
+                category: "background",
+                [a.DARK]: { raw: "WHITE", opacity: 1 },
+                [a.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "WHITE", opacity: 1 },
+                [a.DARKER]: { raw: "WHITE", opacity: 1 },
+              },
               BADGE_BACKGROUND_BRAND: {
                 category: "generic",
                 [a.DARK]: { raw: "BRAND_500", opacity: 1 },
@@ -8980,6 +9023,13 @@
                 [a.LIGHT]: { raw: "BLACK", opacity: 0.08 },
                 [a.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.14 },
                 [a.DARKER]: { raw: "PLUM_11", opacity: 0.12 },
+              },
+              BORDER_VOICE_MUTED: {
+                category: "border",
+                [a.DARK]: { raw: "WHITE", opacity: 1 },
+                [a.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "WHITE", opacity: 1 },
+                [a.DARKER]: { raw: "WHITE", opacity: 1 },
               },
               BUTTON_DANGER_BACKGROUND_DISABLED: {
                 category: "generic",
@@ -10313,6 +10363,13 @@
                 [a.MIDNIGHT]: { raw: "BRAND_400", opacity: 1 },
                 [a.DARKER]: { raw: "BRAND_360", opacity: 1 },
               },
+              MOBILE_VOICE_PANEL_BADGE_BACKGROUND: {
+                category: "generic",
+                [a.DARK]: { raw: "PRIMARY_800", opacity: 1 },
+                [a.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "PLUM_23", opacity: 1 },
+                [a.DARKER]: { raw: "PLUM_18", opacity: 1 },
+              },
               MODAL_BACKGROUND: {
                 category: "generic",
                 [a.DARK]: { raw: "PRIMARY_600", opacity: 1 },
@@ -10833,6 +10890,13 @@
                 [a.DARKER]: { raw: "PLUM_11", opacity: 0.16 },
               },
               SWITCH_THUMB_BACKGROUND_DEFAULT: {
+                category: "generic",
+                [a.DARK]: { raw: "WHITE", opacity: 1 },
+                [a.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "WHITE", opacity: 1 },
+                [a.DARKER]: { raw: "WHITE", opacity: 1 },
+              },
+              SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT: {
                 category: "generic",
                 [a.DARK]: { raw: "WHITE", opacity: 1 },
                 [a.LIGHT]: { raw: "WHITE", opacity: 1 },
@@ -12970,6 +13034,16 @@
                   return 12;
                 },
               },
+              CHANNEL_LIST_TITLE_TEXT_STYLE: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return "redesign/heading-18/bold";
+                  for (let e of t)
+                    if ("mobile-visual-refresh" === e)
+                      return "heading-lg/semibold";
+                  return "redesign/heading-18/bold";
+                },
+              },
               CHANNEL_NAME_CHANNEL_BORDER_WIDTH: {
                 resolve(e) {
                   let { enabledExperiments: t } = e;
@@ -13307,7 +13381,7 @@
                   if (0 === t.length) return "redesign/channel-title/semibold";
                   for (let e of t)
                     if ("mobile-visual-refresh" === e)
-                      return "text-md/semibold";
+                      return "redesign/heading-18/semibold";
                   return "redesign/channel-title/semibold";
                 },
               },
@@ -13453,6 +13527,14 @@
                   return 16;
                 },
               },
+              VOICE_PANEL_DISCONNECT_BUTTON_MIN_WIDTH: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 0;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 64;
+                  return 0;
+                },
+              },
               VOICE_PANEL_GUTTER: {
                 resolve(e) {
                   let { enabledExperiments: t } = e;
@@ -13467,6 +13549,14 @@
                   if (0 === t.length) return 12;
                   for (let e of t) if ("mobile-visual-refresh" === e) return 16;
                   return 12;
+                },
+              },
+              VOICE_TILE_BORDER_RADIUS: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 24;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 12;
+                  return 24;
                 },
               },
             },
@@ -39584,4 +39674,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.8e68c0ab23b3766e.js.map
+//# sourceMappingURL=sentry.8fc5406ac9dbfc72.js.map

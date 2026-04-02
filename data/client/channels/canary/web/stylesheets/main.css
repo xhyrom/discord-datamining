@@ -18973,34 +18973,34 @@ img.thumbnail__0f2e8 {
   border-radius: var(--radius-round);
   padding: var(--space-8);
 }
-.root_e3f97f {
+.root__102a4 {
   align-items: center;
   border-radius: var(--radius-xs);
   display: flex;
   padding: 8px;
 }
-.icon_e3f97f {
+.icon__102a4 {
   flex-shrink: 0;
   height: 24px;
   margin-inline-end: 10px;
   width: 24px;
 }
-.text_e3f97f {
+.text__102a4 {
   flex: 1;
   text-align: start;
 }
-.info_e3f97f {
+.info__102a4 {
   background-color: var(--background-feedback-info);
   border: 1px solid var(--icon-feedback-info);
 }
-.info_e3f97f .icon_e3f97f {
+.info__102a4 .icon__102a4 {
   color: var(--icon-feedback-info);
 }
-.warning_e3f97f {
+.warning__102a4 {
   background-color: var(--background-feedback-warning);
   border: 1px solid var(--icon-feedback-warning);
 }
-.warning_e3f97f .icon_e3f97f {
+.warning__102a4 .icon__102a4 {
   box-sizing: border-box;
   color: var(--icon-feedback-warning);
   height: 20px;
@@ -30383,6 +30383,9 @@ html:not(.chat-input) .inputInner_b1f01d {
 :root .user-profile-modal-v2 {
   --custom-profile-frame-overflow-left: 16px;
 }
+:root .user-profile-sidebar {
+  --custom-profile-frame-overflow-left: 42px;
+}
 :root .theme-midnight {
   --custom-profile-frame-drop-shadow-opacity: 0.6;
 }
@@ -30447,7 +30450,7 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .user-profile-sidebar .profileFrameLayer__7d80f.staple__7d80f.top__7d80f {
   top: calc(
-    var(--custom-profile-frame-overflow-top) * -1 * 364 /
+    var(--custom-profile-frame-overflow-top) * -1 * 424 /
       var(--custom-profile-frame-popout-width)
   );
 }
@@ -30462,7 +30465,7 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .user-profile-sidebar .profileFrameLayer__7d80f.staple__7d80f.bottom__7d80f {
   top: calc(
-    var(--custom-profile-frame-overflow-bottom) * -1 * 364 /
+    var(--custom-profile-frame-overflow-bottom) * -1 * 424 /
       var(--custom-profile-frame-popout-width)
   );
 }
@@ -53123,6 +53126,9 @@ html.disable-forced-colors * {
   --background-surface-highest: var(--neutral-60);
   --background-tile-gradient-pink-end: hsl(var(--illo-pink-70-hsl) / 0.3);
   --background-tile-gradient-pink-start: hsl(var(--illo-pink-50-hsl) / 0.3);
+  --background-voice-muted: hsl(
+    var(--opacity-red-12-hsl) / 0.12156862745098039
+  );
   --badge-background-brand: var(--blurple-50);
   --badge-background-default: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --badge-expressive-background-default: var(--neutral-1);
@@ -53137,6 +53143,7 @@ html.disable-forced-colors * {
   --border-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --border-strong: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --border-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --border-voice-muted: hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
   --button-danger-background-disabled: var(--red-new-50);
   --button-outline-brand-background-hover: var(--brand-500);
   --button-outline-brand-border-active: var(--brand-560);
@@ -55511,6 +55518,9 @@ html.disable-forced-colors * {
   --background-surface-highest: var(--neutral-1);
   --background-tile-gradient-pink-end: hsl(var(--illo-pink-30-hsl) / 0.3);
   --background-tile-gradient-pink-start: hsl(var(--illo-pink-10-hsl) / 0.3);
+  --background-voice-muted: hsl(
+    var(--opacity-red-12-hsl) / 0.12156862745098039
+  );
   --badge-background-brand: var(--blurple-50);
   --badge-background-default: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --badge-expressive-background-default: var(--blurple-50);
@@ -55527,6 +55537,7 @@ html.disable-forced-colors * {
   --border-normal: hsl(var(--opacity-36-hsl) / 0.3607843137254902);
   --border-strong: hsl(var(--opacity-48-hsl) / 0.47843137254901963);
   --border-subtle: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
+  --border-voice-muted: hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
   --button-danger-background-disabled: var(--red-new-50);
   --button-outline-brand-background-hover: var(--brand-500);
   --button-outline-brand-border-active: var(--brand-560);
@@ -57885,6 +57896,9 @@ html.disable-forced-colors * {
   --background-surface-highest: var(--neutral-83);
   --background-tile-gradient-pink-end: hsl(var(--illo-pink-70-hsl) / 0.3);
   --background-tile-gradient-pink-start: hsl(var(--illo-pink-50-hsl) / 0.3);
+  --background-voice-muted: hsl(
+    var(--opacity-red-12-hsl) / 0.12156862745098039
+  );
   --badge-background-brand: var(--blurple-50);
   --badge-background-default: hsl(var(--opacity-20-hsl) / 0.2);
   --badge-expressive-background-default: var(--neutral-1);
@@ -57901,6 +57915,7 @@ html.disable-forced-colors * {
   --border-normal: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --border-strong: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --border-subtle: hsl(var(--opacity-20-hsl) / 0.2);
+  --border-voice-muted: hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
   --button-danger-background-disabled: var(--red-new-50);
   --button-outline-brand-background-hover: var(--brand-500);
   --button-outline-brand-border-active: var(--brand-560);
@@ -60261,6 +60276,9 @@ html.disable-forced-colors * {
   --background-surface-highest: var(--neutral-73);
   --background-tile-gradient-pink-end: hsl(var(--illo-pink-70-hsl) / 0.3);
   --background-tile-gradient-pink-start: hsl(var(--illo-pink-50-hsl) / 0.3);
+  --background-voice-muted: hsl(
+    var(--opacity-red-12-hsl) / 0.12156862745098039
+  );
   --badge-background-brand: var(--blurple-50);
   --badge-background-default: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --badge-expressive-background-default: var(--neutral-1);
@@ -60275,6 +60293,7 @@ html.disable-forced-colors * {
   --border-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --border-strong: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --border-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --border-voice-muted: hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
   --button-danger-background-disabled: var(--red-new-50);
   --button-outline-brand-background-hover: var(--brand-500);
   --button-outline-brand-border-active: var(--brand-560);
@@ -70830,6 +70849,7 @@ html.disable-forced-colors * {
   --mobile-channel-details-nav-icon-button-size: sm;
   --mobile-channel-details-nav-icon-button-variant: tertiary;
   --mobile-channel-item-radius: 12px;
+  --mobile-channel-list-title-text-style: redesign/heading-18/bold;
   --mobile-channel-name-channel-border-width: 1px;
   --mobile-channel-name-channel-icon-radius: 12px;
   --mobile-chat-input-action-button-margin: 4px;
@@ -70900,8 +70920,10 @@ html.disable-forced-colors * {
   --mobile-voice-channel-user-limit-border-width: 0px;
   --mobile-voice-panel-controls-border-radius: 32px;
   --mobile-voice-panel-controls-padding: 16px;
+  --mobile-voice-panel-disconnect-button-min-width: 0px;
   --mobile-voice-panel-gutter: 12px;
   --mobile-voice-panel-padding: 12px;
+  --mobile-voice-tile-border-radius: 24px;
   --modal-horizontal-padding: 24px;
   --modal-vertical-padding: 16px;
   --modal-width-large: 800px;
@@ -70917,6 +70939,7 @@ html.disable-forced-colors * {
   --mobile-channel-details-nav-icon-button-size: lg;
   --mobile-channel-details-nav-icon-button-variant: icon-only;
   --mobile-channel-item-radius: 8px;
+  --mobile-channel-list-title-text-style: heading-lg/semibold;
   --mobile-channel-name-channel-border-width: 0px;
   --mobile-channel-name-channel-icon-radius: 8px;
   --mobile-chat-input-action-button-margin: 0px;
@@ -70956,7 +70979,7 @@ html.disable-forced-colors * {
   --mobile-messages-header-button-layout: row-reverse;
   --mobile-messages-header-padding-bottom: 12px;
   --mobile-messages-item-channel-avatar-size: 40px;
-  --mobile-messages-item-channel-name-text-style: text-md/semibold;
+  --mobile-messages-item-channel-name-text-style: redesign/heading-18/semibold;
   --mobile-messages-item-happening-now-padding-bottom: 16px;
   --mobile-segmented-control-border-radius: 8px;
   --mobile-settings-padding-top: 24px;
@@ -70974,8 +70997,10 @@ html.disable-forced-colors * {
   --mobile-voice-channel-user-limit-border-width: 1px;
   --mobile-voice-panel-controls-border-radius: 16px;
   --mobile-voice-panel-controls-padding: 4px;
+  --mobile-voice-panel-disconnect-button-min-width: 64px;
   --mobile-voice-panel-gutter: 16px;
   --mobile-voice-panel-padding: 16px;
+  --mobile-voice-tile-border-radius: 12px;
 }
 .refresh-fast-follow-avatars.density-compact {
   --guildbar-avatar-size: 40px;
@@ -71983,4 +72008,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.54ce6d7ac4bef6b8.css.map*/
+/*# sourceMappingURL=web.cc8f947e97e906ac.css.map*/
