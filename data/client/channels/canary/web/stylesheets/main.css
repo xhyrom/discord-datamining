@@ -38644,6 +38644,11 @@ body .headerAnimation_b54a5b {
 .giftCardCreditsCheckbox_b90acf {
   margin-bottom: var(--space-8);
 }
+.content_d60bcd ul {
+  list-style: disc;
+  margin: var(--space-4) 0 0;
+  padding-inline-start: var(--space-16);
+}
 .subscriptionCostRowAmount__3d62f {
   font-weight: var(--font-weight-medium);
 }
@@ -72008,4 +72013,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.cc8f947e97e906ac.css.map*/
+/*# sourceMappingURL=web.902435d50a4247ab.css.map*/
