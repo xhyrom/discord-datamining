@@ -28160,6 +28160,10 @@ html:not(.chat-input) .inputInner_b1f01d {
   display: flex;
   gap: var(--space-8);
 }
+.xpGain_f61205,
+.xpGainTextContainer_f61205 {
+  background-color: var(--white);
+}
 .xpGainAsset_f61205 {
   height: 32px;
   width: 32px;
@@ -71976,4 +71980,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.6e344fa8d2ae8fe7.css.map*/
+/*# sourceMappingURL=web.4b3c35ce88aa838a.css.map*/
