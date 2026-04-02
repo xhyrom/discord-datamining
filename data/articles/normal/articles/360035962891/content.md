@@ -57,9 +57,6 @@
             >Bug Hunter Badge</a
           >
         </li>
-        <li data-list-item-id="e49cf02b75b2905bcd1d6e771b860ff8a">
-          <a href="#01HWDTKCYQ51461S8YEZ2XJFBN">Discord Quests Badge</a>
-        </li>
       </ul>
     </li>
     <li data-list-item-id="ecb6b7e1a199d09bf0118efa2cb656368">
