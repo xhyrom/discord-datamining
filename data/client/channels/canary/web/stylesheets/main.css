@@ -10270,6 +10270,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .barButtonIcon__0f481 {
   display: block;
+  flex-shrink: 0;
   height: 16px;
   margin-inline-start: 8px;
   position: relative;
@@ -10473,13 +10474,26 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .barButtonAlt__0f481 {
   border-radius: var(--radius-sm);
-  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
   font-weight: var(--font-weight-semibold);
+  overflow: hidden;
   padding: var(--space-4) var(--space-8);
   position: relative;
 }
 .barButtonAlt__0f481:hover {
   background-color: var(--control-secondary-background-hover);
+}
+.buttonWrapper__0f481 {
+  display: flex;
+  flex: 0 1 auto;
+  overflow: hidden;
+}
+.markAsReadText__0f481 {
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .errorLoadingBarAlt__0f481 {
   background-color: var(--control-secondary-background-default);
@@ -72106,4 +72120,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.d758efa5c4e207f3.css.map*/
+/*# sourceMappingURL=web.88b896510225d87f.css.map*/
