@@ -52,14 +52,6 @@
         >
           <a href="#h_01K86N2KDQDBN7FAKKK70H3PNZ"><strong>Mobile</strong></a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e750ba3c4d6271ca0d8a963e8b848a9da"
-        >
-          <a href="#h_01KKYTZQ8C3VZN6SPPHS7ZPGHQ"
-            ><strong>Earning Discord Orbs as a Nitro Member</strong></a
-          >
-        </li>
       </ul>
     </li>
     <li
@@ -352,10 +344,6 @@
     >Example of Claiming Discord Orbs from a Quest</span
   >
 </h4>
-<h2 id="h_01KKYTZQ8C3VZN6SPPHS7ZPGHQ">
-  Earning Discord Orbs as a Nitro Member
-</h2>
-<p>[text]</p>
 <h1 id="h_01JVN9C8T6GAJ4V009G09TZ6A0">Spending Your Discord Orbs</h1>
 <h2 id="h_01JVN9C8T66JFD60SBTAW2FPXD">Where can I spend Orbs?</h2>
 <p>
