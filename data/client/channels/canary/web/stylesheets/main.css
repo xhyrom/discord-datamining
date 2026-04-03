@@ -62688,6 +62688,9 @@ html.disable-forced-colors * {
   }
 }
 .custom-user-profile-theme.theme-dark {
+  --text-default: hsl(var(--opacity-white-96-hsl) / 0.9607843137254902);
+  --text-muted: hsl(var(--opacity-white-76-hsl) / 0.7607843137254902);
+  --text-subtle: hsl(var(--opacity-white-88-hsl) / 0.8784313725490196);
   --user-profile-activity-toolbar-background: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
@@ -62706,6 +62709,9 @@ html.disable-forced-colors * {
   --user-profile-toolbar-border: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
 }
 .custom-user-profile-theme.theme-light {
+  --text-default: hsl(var(--opacity-black-96-hsl) / 0.9607843137254902);
+  --text-muted: hsl(var(--opacity-black-76-hsl) / 0.7607843137254902);
+  --text-subtle: hsl(var(--opacity-black-88-hsl) / 0.8784313725490196);
   --user-profile-activity-toolbar-background: hsl(
     var(--opacity-white-48-hsl) / 0.47843137254901963
   );
@@ -70956,6 +70962,21 @@ html.disable-forced-colors * {
   --mobile-input-field-text-style-lg: text-md/medium;
   --mobile-input-field-text-style-md: text-sm/medium;
   --mobile-input-field-text-style-sm: text-xs/medium;
+  --mobile-media-keyboard-bar-border-radius: 2147483647px;
+  --mobile-media-keyboard-bar-border-width: 0px;
+  --mobile-media-keyboard-bar-buttons-margin-horizontal: 24px;
+  --mobile-media-keyboard-bar-gap: 16px;
+  --mobile-media-keyboard-bar-margin-horizontal: 16px;
+  --mobile-media-keyboard-bar-padding-horizontal: 0px;
+  --mobile-media-keyboard-button-border-radius: 0px;
+  --mobile-media-keyboard-button-icon-color-active: text-default;
+  --mobile-media-keyboard-button-icon-color-disabled: text-muted;
+  --mobile-media-keyboard-button-icon-color-inactive: text-default;
+  --mobile-media-keyboard-button-padding: 0px;
+  --mobile-media-keyboard-button-text-color-active: text-default;
+  --mobile-media-keyboard-button-text-color-disabled: text-muted;
+  --mobile-media-keyboard-button-text-color-inactive: text-default;
+  --mobile-media-keyboard-button-text-variant: text-xs/semibold;
   --mobile-messages-header-button-gap: 8px;
   --mobile-messages-header-button-layout: row;
   --mobile-messages-header-padding-bottom: 16px;
@@ -71037,6 +71058,19 @@ html.disable-forced-colors * {
   --mobile-input-field-text-style-lg: text-md/normal;
   --mobile-input-field-text-style-md: text-md/normal;
   --mobile-input-field-text-style-sm: text-xs/normal;
+  --mobile-media-keyboard-bar-border-radius: 16px;
+  --mobile-media-keyboard-bar-border-width: 1px;
+  --mobile-media-keyboard-bar-buttons-margin-horizontal: 0px;
+  --mobile-media-keyboard-bar-gap: 4px;
+  --mobile-media-keyboard-bar-margin-horizontal: 12px;
+  --mobile-media-keyboard-bar-padding-horizontal: 8px;
+  --mobile-media-keyboard-button-border-radius: 8px;
+  --mobile-media-keyboard-button-icon-color-active: icon-strong;
+  --mobile-media-keyboard-button-icon-color-inactive: icon-subtle;
+  --mobile-media-keyboard-button-padding: 4px;
+  --mobile-media-keyboard-button-text-color-active: text-strong;
+  --mobile-media-keyboard-button-text-color-inactive: text-subtle;
+  --mobile-media-keyboard-button-text-variant: text-xs/medium;
   --mobile-messages-header-button-gap: 12px;
   --mobile-messages-header-button-layout: row-reverse;
   --mobile-messages-header-padding-bottom: 12px;
@@ -72070,4 +72104,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.b6175b81fd4b35d1.css.map*/
+/*# sourceMappingURL=web.f33c3492db23e705.css.map*/
