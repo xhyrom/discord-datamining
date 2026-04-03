@@ -281,7 +281,10 @@
                 class="nav_dd is-relative w-dropdown"
               >
                 <div class="nav_dd_trigger w-dropdown-toggle">
-                  <div><span class="menu-title">Safety</span></div>
+                  <div>
+                    <span class="menu-title">Safety</span>
+                    <span class="sr-only">4 of 9</span>
+                  </div>
                   <div class="nav_dd_arrow-wr-white">
                     <div class="nav_dd_arrow w-embed">
                       <svg
@@ -408,7 +411,10 @@
                 class="nav_dd is-relative w-dropdown"
               >
                 <div class="nav_dd_trigger w-dropdown-toggle">
-                  <div><span class="menu-title">Quests</span></div>
+                  <div>
+                    <span class="menu-title">Quests</span>
+                    <span class="sr-only">5 of 9</span>
+                  </div>
                   <div class="nav_dd_arrow-wr-white">
                     <div class="nav_dd_arrow w-embed">
                       <svg
@@ -492,7 +498,10 @@
                 class="nav_dd is-relative w-dropdown"
               >
                 <div class="nav_dd_trigger w-dropdown-toggle">
-                  <div><span class="menu-title">Support</span></div>
+                  <div>
+                    <span class="menu-title">Support</span>
+                    <span class="sr-only">6 of 9</span>
+                  </div>
                   <div class="nav_dd_arrow-wr-white">
                     <div class="nav_dd_arrow w-embed">
                       <svg
@@ -580,7 +589,10 @@
                 class="nav_dd is-relative w-dropdown"
               >
                 <div class="nav_dd_trigger w-dropdown-toggle">
-                  <div><span class="menu-title">Blog</span></div>
+                  <div>
+                    <span class="menu-title">Blog </span
+                    ><span class="sr-only">7 of 9</span>
+                  </div>
                   <div class="nav_dd_arrow-wr-white">
                     <div class="nav_dd_arrow w-embed">
                       <svg
@@ -678,7 +690,10 @@
                 class="nav_dd is-relative w-dropdown"
               >
                 <div class="nav_dd_trigger w-dropdown-toggle">
-                  <div><span class="menu-title">Developers </span></div>
+                  <div>
+                    <span class="menu-title">Developers</span>
+                    <span class="sr-only">8 of 9</span> &nbsp;
+                  </div>
                   <div class="nav_dd_arrow-wr-white">
                     <div class="nav_dd_arrow w-embed">
                       <svg
