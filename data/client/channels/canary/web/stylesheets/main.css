@@ -9671,6 +9671,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .container__4d95d {
   display: grid;
   max-width: 50vw;
+  min-width: 302px;
   width: 100%;
 }
 .textContainer__4d95d {
@@ -9768,6 +9769,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .languageIcon__4d95d {
   cursor: pointer;
   display: flex;
+  flex-shrink: 0;
 }
 .downloadAnchor__4d95d {
   display: none;
@@ -72104,4 +72106,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f33c3492db23e705.css.map*/
+/*# sourceMappingURL=web.d758efa5c4e207f3.css.map*/
