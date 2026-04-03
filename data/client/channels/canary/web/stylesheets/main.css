@@ -13724,6 +13724,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   transition: box-shadow 0.2s ease-out;
   will-change: transform;
 }
+.card__65e57:focus-within,
 .card__65e57:hover {
   box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.24);
 }
@@ -13732,6 +13733,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
     box-shadow 0.2s ease-out,
     transform 0.2s ease-out;
 }
+.full-motion .card__65e57:focus-within,
 .full-motion .card__65e57:hover {
   transform: translate3d(0, -4px, 0);
 }
@@ -13836,6 +13838,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   pointer-events: none;
   position: absolute;
 }
+.card__65e57:focus-within .buttonsContainer__65e57,
 .card__65e57:hover .buttonsContainer__65e57 {
   pointer-events: auto;
 }
@@ -72120,4 +72123,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.88b896510225d87f.css.map*/
+/*# sourceMappingURL=web.30bbe2bb386e8f3e.css.map*/
