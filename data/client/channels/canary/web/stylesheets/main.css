@@ -53635,6 +53635,9 @@ html.disable-forced-colors * {
   --modal-background: var(--neutral-64);
   --modal-footer-background: var(--neutral-64);
   --navigator-header-tint: var(--white);
+  --nitro-tab-gradient-center: var(--illo-pink-40);
+  --nitro-tab-gradient-inner-ring: hsl(var(--illo-blue-40-hsl) / 0.5);
+  --nitro-tab-gradient-outer-ring: hsl(var(--illo-blue-40-hsl) / 0);
   --notice-background-critical: var(--red-new-75);
   --notice-background-info: var(--blue-new-76);
   --notice-background-positive: var(--green-new-77);
@@ -53731,6 +53734,9 @@ html.disable-forced-colors * {
   --spoiler-hidden-background: var(--neutral-36);
   --spoiler-hidden-background-hover: var(--neutral-27);
   --spoiler-revealed-background: var(--primary-660);
+  --standard-tab-gradient-center: var(--illo-blue-40);
+  --standard-tab-gradient-inner-ring: hsl(var(--illo-blue-40-hsl) / 0.5);
+  --standard-tab-gradient-outer-ring: hsl(var(--illo-blue-40-hsl) / 0);
   --status-danger: var(--red-400);
   --status-online: var(--green-360);
   --status-positive: var(--green-360);
@@ -56013,6 +56019,9 @@ html.disable-forced-colors * {
   --modal-background: var(--neutral-1);
   --modal-footer-background: var(--neutral-1);
   --navigator-header-tint: var(--primary-500);
+  --nitro-tab-gradient-center: var(--illo-pink-30);
+  --nitro-tab-gradient-inner-ring: hsl(var(--illo-blue-30-hsl) / 0.25);
+  --nitro-tab-gradient-outer-ring: hsl(var(--white-hsl) / 0);
   --notice-background-critical: var(--red-new-1);
   --notice-background-info: var(--blue-new-1);
   --notice-background-positive: var(--green-new-1);
@@ -56107,6 +56116,9 @@ html.disable-forced-colors * {
   --spoiler-hidden-background: var(--neutral-31);
   --spoiler-hidden-background-hover: var(--neutral-40);
   --spoiler-revealed-background: var(--primary-160);
+  --standard-tab-gradient-center: var(--illo-blue-30);
+  --standard-tab-gradient-inner-ring: hsl(var(--illo-blue-20-hsl) / 0.25);
+  --standard-tab-gradient-outer-ring: hsl(var(--illo-blue-20-hsl) / 0);
   --status-danger: var(--red-430);
   --status-online: var(--green-400);
   --status-positive: var(--green-400);
@@ -58391,6 +58403,9 @@ html.disable-forced-colors * {
   --modal-background: var(--neutral-91);
   --modal-footer-background: var(--neutral-91);
   --navigator-header-tint: var(--white);
+  --nitro-tab-gradient-center: var(--illo-pink-40);
+  --nitro-tab-gradient-inner-ring: hsl(var(--illo-blue-40-hsl) / 0.5);
+  --nitro-tab-gradient-outer-ring: hsl(var(--illo-blue-40-hsl) / 0);
   --notice-background-critical: var(--red-new-95);
   --notice-background-info: var(--blue-new-95);
   --notice-background-positive: var(--green-new-98);
@@ -58491,6 +58506,9 @@ html.disable-forced-colors * {
   --spoiler-hidden-background: var(--neutral-46);
   --spoiler-hidden-background-hover: var(--neutral-37);
   --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
+  --standard-tab-gradient-center: var(--illo-blue-40);
+  --standard-tab-gradient-inner-ring: hsl(var(--illo-blue-40-hsl) / 0.5);
+  --standard-tab-gradient-outer-ring: hsl(var(--illo-blue-40-hsl) / 0);
   --status-danger: var(--red-400);
   --status-online: var(--green-360);
   --status-positive: var(--green-360);
@@ -60785,6 +60803,9 @@ html.disable-forced-colors * {
   --modal-background: var(--neutral-79);
   --modal-footer-background: var(--neutral-79);
   --navigator-header-tint: var(--white);
+  --nitro-tab-gradient-center: var(--illo-pink-40);
+  --nitro-tab-gradient-inner-ring: hsl(var(--illo-blue-40-hsl) / 0.5);
+  --nitro-tab-gradient-outer-ring: hsl(var(--illo-blue-40-hsl) / 0);
   --notice-background-critical: var(--red-new-86);
   --notice-background-info: var(--blue-new-86);
   --notice-background-positive: var(--green-new-88);
@@ -60881,6 +60902,9 @@ html.disable-forced-colors * {
   --spoiler-hidden-background: var(--neutral-43);
   --spoiler-hidden-background-hover: var(--neutral-34);
   --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
+  --standard-tab-gradient-center: var(--illo-blue-40);
+  --standard-tab-gradient-inner-ring: hsl(var(--illo-blue-40-hsl) / 0.5);
+  --standard-tab-gradient-outer-ring: hsl(var(--illo-blue-40-hsl) / 0);
   --status-danger: var(--red-400);
   --status-online: var(--green-360);
   --status-positive: var(--green-360);
@@ -72046,4 +72070,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.cec5ebbb66dc742c.css.map*/
+/*# sourceMappingURL=web.b6175b81fd4b35d1.css.map*/
