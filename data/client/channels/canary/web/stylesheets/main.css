@@ -16058,7 +16058,7 @@ img.thumbnail__0f2e8 {
 :root .user-profile-modal-v2 {
   --custom-user-profile-banner-height: 140px;
   --custom-user-profile-avatar-size: 120px;
-  --custom-modal-v2-padding: var(--space-48);
+  --custom-modal-v2-padding: var(--space-32);
   --custom-modal-v2-gutter: var(--space-32);
   --custom-modal-v2-tabpanel-scrollbar-offset: var(--space-16);
   --custom-modal-profile-card-padding: var(--space-32);
@@ -72130,4 +72130,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.3437b212d32338b6.css.map*/
+/*# sourceMappingURL=web.82ced5129443283c.css.map*/
