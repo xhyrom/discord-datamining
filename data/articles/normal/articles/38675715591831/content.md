@@ -36,55 +36,55 @@
     >
   </p>
   <ul>
-    <li data-list-item-id="ed3f89b191bdbab66373def171dbdee20">
+    <li data-list-item-id="ef24b4bcd0e75923e17e6e971452ed4aa">
       <a href="#h_01KN36BPD89BP2W555FFP1P8CX">What Can Be Reported</a>
     </li>
-    <li data-list-item-id="e124df21a981433cffbd1845037fd4160">
+    <li data-list-item-id="eb4f47e256638aa201c9d6d6888f182e0">
       <a href="#h_01KN36EW7CHQ1AA0YCMZCCMH7B">How to Submit a Report</a>
       <ul>
-        <li data-list-item-id="efc1927c9ebd6ce1c451103b4013dd45d">
+        <li data-list-item-id="e6881c1c0a002a74ed72259e097539b39">
           <a href="#h_01KN36HN2JEVBZE4XZW5M8KV6S">Accessing the Report Form</a>
         </li>
-        <li data-list-item-id="e39caaadf85c591b9f6434d8119acd584">
+        <li data-list-item-id="e23e81def37c201392be6a1f5815f873e">
           <a href="#h_01KN36N6A2A5B1Z2KJWYN8GX7R">Required Information</a>
         </li>
-        <li data-list-item-id="ea9e1190f9d0fdee641cdfd825d1ee13c">
+        <li data-list-item-id="effe02cc9a08870c713853839c0772b3b">
           <a href="#h_01KN36QETS6VCQ3SQ4D1K4DKNP"
             >How to Find Content Links for Your Report</a
           >
         </li>
-        <li data-list-item-id="eb138ef4cc795830122bc4e0ffcd9ca15">
+        <li data-list-item-id="e93828f9801eae233442a9c7197626a10">
           <a href="#h_01KN38RKCQ0CCKRNNFZDT5ETC2">Message Attachments</a>
         </li>
-        <li data-list-item-id="ec5876ec5e44f5c3117546b737cd16f48">
+        <li data-list-item-id="eac7ddc36e372dcf40f958a16e4aa756e">
           <a href="#h_01KN36XWWTCQ9V456DE4FERMM1"
             >Third Party Links / Embedded Media in Messages</a
           >
         </li>
-        <li data-list-item-id="ec3f39d99d920d28beabf4e115848e8b8">
+        <li data-list-item-id="e9421c41afbe7d2e631dc43255cdb7d2a">
           <a href="#h_01KN372XE03D01SC39VEF4NV6S">Emojis</a>
         </li>
-        <li data-list-item-id="e6f0c793d9805d8a6382f4ccc94ebb339">
+        <li data-list-item-id="e262f7adff37c873f8cdf9f14567e9bc4">
           <a href="#h_01KN37E42YDK8QDJM0CRK837Z7">Stickers</a>
         </li>
-        <li data-list-item-id="e82dc6333b9dc6605b67d5f91f1782fb5">
+        <li data-list-item-id="e7717a650d48513d801a28a833e161157">
           <a href="#h_01KN37KAB1H7B4Y86QFWY19CJD"
             >User Profiles (Avatars, Banners)</a
           >
         </li>
-        <li data-list-item-id="eaed954f4e29cb622ba2aab52d12a0f32">
+        <li data-list-item-id="ef372f9b1cd7039c147b3a3307dae8a5a">
           <a href="#h_01KN37ZQX2S6E1HJGYV600X91T"
             >Server-related Images (Avatars, Banners)</a
           >
         </li>
       </ul>
     </li>
-    <li data-list-item-id="e72b7bfb775d300eb9935e734cab11025">
+    <li data-list-item-id="ecd9a9e2a4e10aa187d9f5ce078538931">
       <a href="#h_01KN38EBRRGZ66F96RYPKGFCE3"
         >What to Expect After You Submit a Removal Request Under TIDA</a
       >
     </li>
-    <li data-list-item-id="e9dac80fe3aef6eab38c627de663b5e0c">
+    <li data-list-item-id="e83b644777665f8bb59aed630534a6c3d">
       <a href="#h_01KN38F71KQ5X44B9A8CYNTDY3">Frequently Asked Questions</a>
     </li>
   </ul>
@@ -97,15 +97,15 @@
 <h1 id="h_01KN36BPD89BP2W555FFP1P8CX">What Can Be Reported</h1>
 <p>If you are in the United States you can report content under TIDA that:</p>
 <ul>
-  <li data-list-item-id="e1e9b41ab1f6073bf6cc1851b392f1873">
+  <li data-list-item-id="eb68003c0f21e748d9e910bb36d3bf936">
     Shows you (or someone you're authorized to represent) nude or engaged in
     sexually explicit conduct
   </li>
-  <li data-list-item-id="e3da7c78d050574aeb16a92b02d30889f">
+  <li data-list-item-id="e5f792597663870fc7a0774d2b1a055ac">
     Was shared without your consent, or was captured when you had a reasonable
     expectation of privacy
   </li>
-  <li data-list-item-id="e0c8e0ed2cbc9dfe5203e6cc73f4f55b1">
+  <li data-list-item-id="ea4e737e5d1c6815d10a72f5529e25a2e">
     Is either authentic, AI-generated, or digitally manipulated depicting you
   </li>
 </ul>
@@ -155,7 +155,7 @@
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 480/324"
-    src="https://support.discord.com/hc/article_attachments/39511138384535"
+    src="https://support.discord.com/hc/article_attachments/39550461432983"
     width="480"
     height="324"
   />
@@ -179,29 +179,29 @@
   required by law:
 </p>
 <ul>
-  <li data-list-item-id="e13f77cc5c4799235ceca0030d7735afd">
+  <li data-list-item-id="e43975c8e06e2bfa230d099e9900b4275">
     Legal name of the person that is depicted in the reported content
   </li>
-  <li data-list-item-id="e6347579c3957968e620c528eefb52466">
+  <li data-list-item-id="e924c690d8af674ff4afe2ed599b93a7f">
     Email address where you wish to receive updates on your report
   </li>
-  <li data-list-item-id="e8a97f78a5993bd4395c21ce5cf74c614">
+  <li data-list-item-id="ec1799ce33832461489a545ae375540c6">
     Country of residence
   </li>
-  <li data-list-item-id="e1aae749276ff517c3f65cfe835807970">
+  <li data-list-item-id="e56b4e07d27f86749fceae065caca79cc">
     Link to the content you are reporting (see the instructions in the next
     section on how to get the content link)
   </li>
-  <li data-list-item-id="ec1a93dad712aaf3cd0009b210fdd40cc">
+  <li data-list-item-id="ecb6f970c272c933bfbc7bde217e77e21">
     Your relationship to the content
   </li>
-  <li data-list-item-id="e312942e2183f982b95f34877aea87c66">
+  <li data-list-item-id="e45d8b80dd13900abecc11915402d7786">
     Content type (what is depicted and the age of the depicted individual)
   </li>
-  <li data-list-item-id="ef89cedce4ddf8dcf689987a38f1fbe85">
+  <li data-list-item-id="ef51f0cac2fbe02d1bdd59518cb7cb92d">
     A good faith statement that the content was distributed without consent
   </li>
-  <li data-list-item-id="ebc26ab77d011bbac5e9d803fe41b7cd6">
+  <li data-list-item-id="eeceb397022570751e8293d84642cea52">
     Electronic signature 
   </li>
 </ul>
@@ -220,7 +220,7 @@
 <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 38.26%">
   <img
     style="aspect-ratio: 705/1380"
-    src="https://support.discord.com/hc/article_attachments/39511138385303"
+    src="https://support.discord.com/hc/article_attachments/39550452560535"
     width="705"
     height="1380"
   />
@@ -239,7 +239,7 @@
 <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 73.71%">
   <img
     style="aspect-ratio: 822/1079"
-    src="https://support.discord.com/hc/article_attachments/39511138385687"
+    src="https://support.discord.com/hc/article_attachments/39550461436567"
     width="822"
     height="1079"
   />
@@ -267,7 +267,7 @@
 <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 55.29%">
   <img
     style="aspect-ratio: 548/991"
-    src="https://support.discord.com/hc/article_attachments/39511165823127"
+    src="https://support.discord.com/hc/article_attachments/39550452568343"
     width="548"
     height="991"
   />
@@ -293,7 +293,7 @@
 <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 90.86%">
   <img
     style="aspect-ratio: 822/1079"
-    src="https://support.discord.com/hc/article_attachments/39511165823639"
+    src="https://support.discord.com/hc/article_attachments/39550452570903"
     width="822"
     height="1079"
   />
@@ -321,7 +321,7 @@
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 1444/1002"
-    src="https://support.discord.com/hc/article_attachments/39511138386327"
+    src="https://support.discord.com/hc/article_attachments/39550461450263"
     width="1444"
     height="1002"
   />
@@ -333,7 +333,7 @@
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 519/498"
-    src="https://support.discord.com/hc/article_attachments/39511165824663"
+    src="https://support.discord.com/hc/article_attachments/39550452577815"
     width="519"
     height="498"
   />
@@ -360,7 +360,7 @@
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 1253/892"
-    src="https://support.discord.com/hc/article_attachments/39511165825559"
+    src="https://support.discord.com/hc/article_attachments/39550461455639"
     width="1253"
     height="892"
   />
@@ -380,7 +380,7 @@
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 1253/892"
-    src="https://support.discord.com/hc/article_attachments/39511138388119"
+    src="https://support.discord.com/hc/article_attachments/39550452581911"
     width="1253"
     height="892"
   />
@@ -399,7 +399,7 @@
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 1444/1002"
-    src="https://support.discord.com/hc/article_attachments/39511165826455"
+    src="https://support.discord.com/hc/article_attachments/39550461461015"
     width="1444"
     height="1002"
   />
@@ -411,7 +411,7 @@
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 424/448"
-    src="https://support.discord.com/hc/article_attachments/39511165827351"
+    src="https://support.discord.com/hc/article_attachments/39550452586135"
     width="424"
     height="448"
   />
@@ -433,7 +433,7 @@
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 1253/892"
-    src="https://support.discord.com/hc/article_attachments/39511138389399"
+    src="https://support.discord.com/hc/article_attachments/39550452587799"
     width="1253"
     height="892"
   />
@@ -466,13 +466,13 @@
 <ul>
   <li
     class="wysiwyg-list-bold"
-    data-list-item-id="e328964a6464ae855933ebf5cb8c46142"
+    data-list-item-id="ed78aaf2df7ea9a0f0469b5fe6d1f9b97"
   >
     <strong>Copy Avatar Image Link</strong>
   </li>
   <li
     class="wysiwyg-list-bold"
-    data-list-item-id="eb45acb88dfff256a900b645723a71baa"
+    data-list-item-id="e32d580debe6886b2d1a218d1a65c77d3"
   >
     <strong>Copy Banner Image Link</strong>
   </li>
@@ -480,7 +480,7 @@
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 817/466"
-    src="https://support.discord.com/hc/article_attachments/39511165827607"
+    src="https://support.discord.com/hc/article_attachments/39550452590487"
     width="817"
     height="466"
   />
@@ -512,13 +512,13 @@
 <ul>
   <li
     class="wysiwyg-list-bold"
-    data-list-item-id="ebf5c4f4395ad9fe29579ac6720b08238"
+    data-list-item-id="ef67a4776f091e69ffc1a24771dc8c448"
   >
     <strong>Copy Avatar Image Link</strong>
   </li>
   <li
     class="wysiwyg-list-bold"
-    data-list-item-id="ed7f0bb745aac1b788f273fa76a4a852f"
+    data-list-item-id="ee18c7870c855562a968c02c67acabd7b"
   >
     <strong>Copy Banner Image Link</strong>
   </li>
@@ -526,7 +526,7 @@
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 1253/892"
-    src="https://support.discord.com/hc/article_attachments/39511138390423"
+    src="https://support.discord.com/hc/article_attachments/39550461472023"
     width="1253"
     height="892"
   />
@@ -573,7 +573,7 @@
 <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 64.93%">
   <img
     style="aspect-ratio: 632/1072"
-    src="https://support.discord.com/hc/article_attachments/39511138390935"
+    src="https://support.discord.com/hc/article_attachments/39550461475351"
     width="632"
     height="1072"
   />
@@ -586,7 +586,7 @@
 <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 72.58%">
   <img
     style="aspect-ratio: 837/1024"
-    src="https://support.discord.com/hc/article_attachments/39511165828887"
+    src="https://support.discord.com/hc/article_attachments/39550461477143"
     width="837"
     height="1024"
   />
@@ -620,7 +620,7 @@
 <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 70.86%">
   <img
     style="aspect-ratio: 854/1316"
-    src="https://support.discord.com/hc/article_attachments/39511165829015"
+    src="https://support.discord.com/hc/article_attachments/39550452607127"
     width="854"
     height="1316"
   />
@@ -633,7 +633,7 @@
 <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 71.44%">
   <img
     style="aspect-ratio: 854/1316"
-    src="https://support.discord.com/hc/article_attachments/39511138392087"
+    src="https://support.discord.com/hc/article_attachments/39550461478679"
     width="854"
     height="1316"
   />
