@@ -6453,7 +6453,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-04-03-3c725f0bacb15f816b997bf360ad61cf70fa37a4-discord_web",
+              "2026-04-06-1012902fbdc88bc619922220836f5c80aeba089a-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6520,8 +6520,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "523061"),
-            o.NA("builtAt", String("1775242779517"));
+            o.NA("buildNumber", "523497"),
+            o.NA("builtAt", String("1775459930728"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -10966,6 +10966,10 @@
                 [a.LIGHT]: { raw: "PRIMARY_600", opacity: 1 },
                 [a.MIDNIGHT]: { raw: "PLUM_4", opacity: 1 },
                 [a.DARKER]: { raw: "PLUM_6", opacity: 1 },
+                userProfileThemes: {
+                  dark: { raw: "OPACITY_WHITE_96", opacity: 0.96 },
+                  light: { raw: "OPACITY_BLACK_96", opacity: 0.96 },
+                },
               },
               TEXT_FEEDBACK_CRITICAL: {
                 category: "text",
@@ -11008,6 +11012,10 @@
                 [a.LIGHT]: { raw: "PRIMARY_460", opacity: 1 },
                 [a.MIDNIGHT]: { raw: "PLUM_10", opacity: 1 },
                 [a.DARKER]: { raw: "PLUM_10", opacity: 1 },
+                userProfileThemes: {
+                  dark: { raw: "OPACITY_WHITE_76", opacity: 0.76 },
+                  light: { raw: "OPACITY_BLACK_76", opacity: 0.76 },
+                },
               },
               TEXT_OVERLAY_DARK: {
                 category: "text",
@@ -11064,6 +11072,10 @@
                 [a.LIGHT]: { raw: "PRIMARY_500", opacity: 1 },
                 [a.MIDNIGHT]: { raw: "PLUM_8", opacity: 1 },
                 [a.DARKER]: { raw: "PLUM_9", opacity: 1 },
+                userProfileThemes: {
+                  dark: { raw: "OPACITY_WHITE_88", opacity: 0.88 },
+                  light: { raw: "OPACITY_BLACK_88", opacity: 0.88 },
+                },
               },
               TEXT_VOICE_CONNECTED: {
                 category: "text",
@@ -13350,6 +13362,121 @@
                   return "text-xs/medium";
                 },
               },
+              MEDIA_KEYBOARD_BAR_BORDER_RADIUS: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 0x7fffffff;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 16;
+                  return 0x7fffffff;
+                },
+              },
+              MEDIA_KEYBOARD_BAR_BORDER_WIDTH: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 0;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 1;
+                  return 0;
+                },
+              },
+              MEDIA_KEYBOARD_BAR_BUTTONS_MARGIN_HORIZONTAL: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 24;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 0;
+                  return 24;
+                },
+              },
+              MEDIA_KEYBOARD_BAR_GAP: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 16;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 4;
+                  return 16;
+                },
+              },
+              MEDIA_KEYBOARD_BAR_MARGIN_HORIZONTAL: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 16;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 12;
+                  return 16;
+                },
+              },
+              MEDIA_KEYBOARD_BAR_PADDING_HORIZONTAL: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 0;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 8;
+                  return 0;
+                },
+              },
+              MEDIA_KEYBOARD_BUTTON_BORDER_RADIUS: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 0;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 8;
+                  return 0;
+                },
+              },
+              MEDIA_KEYBOARD_BUTTON_ICON_COLOR_ACTIVE: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return "text-default";
+                  for (let e of t)
+                    if ("mobile-visual-refresh" === e) return "icon-strong";
+                  return "text-default";
+                },
+              },
+              MEDIA_KEYBOARD_BUTTON_ICON_COLOR_DISABLED: {
+                resolve: () => "text-muted",
+              },
+              MEDIA_KEYBOARD_BUTTON_ICON_COLOR_INACTIVE: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return "text-default";
+                  for (let e of t)
+                    if ("mobile-visual-refresh" === e) return "icon-subtle";
+                  return "text-default";
+                },
+              },
+              MEDIA_KEYBOARD_BUTTON_PADDING: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 0;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 4;
+                  return 0;
+                },
+              },
+              MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_ACTIVE: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return "text-default";
+                  for (let e of t)
+                    if ("mobile-visual-refresh" === e) return "text-strong";
+                  return "text-default";
+                },
+              },
+              MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_DISABLED: {
+                resolve: () => "text-muted",
+              },
+              MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_INACTIVE: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return "text-default";
+                  for (let e of t)
+                    if ("mobile-visual-refresh" === e) return "text-subtle";
+                  return "text-default";
+                },
+              },
+              MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return "text-xs/semibold";
+                  for (let e of t)
+                    if ("mobile-visual-refresh" === e) return "text-xs/medium";
+                  return "text-xs/semibold";
+                },
+              },
               MESSAGES_HEADER_BUTTON_GAP: {
                 resolve(e) {
                   let { enabledExperiments: t } = e;
@@ -13674,7 +13801,12 @@
                       }
                     }
                 }
-                if (r?.gradient != null && "gradient" in a) {
+                if (r?.isProfileTheme && "userProfileThemes" in a) {
+                  let e = a.userProfileThemes,
+                    t = r?.gradient?.theme,
+                    i = null != t ? e[t] : null;
+                  null != i && ((o = f[i.raw]), (s = i.opacity));
+                } else if (r?.gradient != null && "gradient" in a) {
                   let e = a.gradient[r?.gradient.theme];
                   if (null != e) {
                     let t = i()(
@@ -14561,6 +14693,7 @@
             SEND_POLLS: n.jB(49),
             PIN_MESSAGES: n.jB(51),
             BYPASS_SLOWMODE: n.jB(52),
+            MANAGE_OFFICIAL_MESSAGES: n.jB(53),
             CONNECT: n.jB(20),
             SPEAK: n.jB(21),
             MUTE_MEMBERS: n.jB(22),
@@ -39682,4 +39815,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.7ed0e6717b8f6bee.js.map
+//# sourceMappingURL=sentry.e5c4b2fe9d8a294a.js.map
