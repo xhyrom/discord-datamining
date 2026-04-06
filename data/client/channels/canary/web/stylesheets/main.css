@@ -12215,9 +12215,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   object-position: right;
   pointer-events: none;
   position: absolute;
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
+  transition: opacity 0.3s ease;
   width: auto;
 }
 .img_df39b2,
@@ -72130,4 +72128,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.82ced5129443283c.css.map*/
+/*# sourceMappingURL=web.9a3bcb6dce5d7455.css.map*/
