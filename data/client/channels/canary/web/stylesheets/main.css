@@ -49551,6 +49551,7 @@ svg.radioIcon_c1e9c4 {
       (var(--custom-guild-list-width) + var(--space-md))
   );
 }
+.platform-linux .bar_c38106,
 .platform-win .bar_c38106 {
   padding-inline-end: 0;
 }
@@ -72174,4 +72175,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.39c8b4990252e1af.css.map*/
+/*# sourceMappingURL=web.f7e644ea7ab36c4b.css.map*/
