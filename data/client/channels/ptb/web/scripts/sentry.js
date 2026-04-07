@@ -2752,6 +2752,7 @@
           USER_PROFILE_APPLICATION_WIDGET_APPLICATION_IDS:
             "/users/@me/widgets/application-widget-application-ids",
           WIDGET_CONFIGS_FEATURED: "/widget-configs/featured",
+          WIDGET_CONFIGS_DEVELOPER: "/widget-configs/developer",
           APPLICATION_WIDGET_CONFIGS: (e) =>
             `/applications/${e}/widget-configs`,
           USER_GUILD_PROFILE: (e, t) => `/guilds/${e}/profile/${t}`,
@@ -3101,6 +3102,8 @@
           AGE_ASSURANCE_TEST: "/age-verification/test",
           VERIFY_AGE: "/age-verification/verify",
           AGE_VERIFICATION_METHODS: "/age-verification/methods",
+          GOOGLE_WALLET_REQUEST: "/age-verification/google-wallet/request",
+          GOOGLE_WALLET_VERIFY: "/age-verification/google-wallet/verify",
           AGE_VERIFICATION_REACTIVE_CHECK: "/users/@me/age-verification/check",
           AGE_VERIFICATION_RESET: "/users/@me/age-verification/reset",
           EXPERIMENTS: "/experiments",
@@ -6453,7 +6456,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-04-06-1012902fbdc88bc619922220836f5c80aeba089a-discord_web",
+              "2026-04-07-d00a0c7698dccb6c8a2773d2f20e8fd052feb110-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6520,8 +6523,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "523497"),
-            o.NA("builtAt", String("1775459930728"));
+            o.NA("buildNumber", "524111"),
+            o.NA("builtAt", String("1775546338850"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -39815,4 +39818,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.e5c4b2fe9d8a294a.js.map
+//# sourceMappingURL=sentry.1529829037fe0f74.js.map
