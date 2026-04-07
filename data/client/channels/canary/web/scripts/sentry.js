@@ -5554,6 +5554,9 @@
           (a.DM_PROFILE_TOGGLED = "dm_profile_toggled"),
           (a.USER_PROFILE_WISHLIST_ACTION = "user_profile_wishlist_action"),
           (a.WISHLIST_UPDATED = "wishlist_updated"),
+          (a.WISHLIST_ITEM_CLICKED = "wishlist_item_clicked"),
+          (a.WISHLIST_ITEM_HOVERED = "wishlist_item_hovered"),
+          (a.WISHLIST_ITEM_PURCHASED = "wishlist_item_purchased"),
           (a.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed"),
           (a.PREMIUM_WOW_MOMENT_MEDIA_PREFETCH_TRIGGER =
             "premium_wow_moment_media_prefetch_trigger"),
@@ -6152,6 +6155,7 @@
           (a.SESSION_START_PAGE_VIEWED = "session_start_page_viewed"),
           (a.IMPRESSION_GIFT_OPTION_WISHLIST_BANNER_VIEWED =
             "impression_gift_option_wishlist_banner_viewed"),
+          (a.IMPRESSION_WISHLIST_ITEM = "impression_wishlist_item"),
           (a.GAME_COMMUNITY_UPSELL_VIEWED = "game_community_upsell_viewed"),
           (a.GAME_COMMUNITY_UPSELL_DISMISSED =
             "game_community_upsell_dismissed"),
@@ -6455,7 +6459,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-84f4a958f43db05cccadb455f22aaa169ed41d8d",
+            release: "discord_web-6127f59a243e8c8827f6d573db5be191a1af3712",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6522,8 +6526,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "524338"),
-            o.NA("builtAt", String("1775582645417"));
+            o.NA("buildNumber", "524408"),
+            o.NA("builtAt", String("1775585451714"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6584,6 +6588,7 @@
             BILLING_PROMOTION_REDEMPTION_GENERIC: "/billing/promotions",
             BILLING_PROMOTION_DIRECT_FULFILLMENT_REDEMPTION: (e, t) =>
               `/billing/partner-promotions/${e}/${t}`,
+            GIFT_CARD_REDEEM: "/redeem",
             FRIENDS: "/channels/@me",
             ME: "/channels/@me",
             MESSAGE_REQUESTS: "/message-requests",
@@ -39817,4 +39822,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.63c8cc4bd8f1ea01.js.map
+//# sourceMappingURL=sentry.a4e8ae8e7567ec67.js.map
