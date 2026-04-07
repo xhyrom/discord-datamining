@@ -38,11 +38,6 @@
   The Marvel Rivals Shop is a shop in the Marvel Rivals server that lets you
   purchase Marvel Rivals in-game items directly through Discord. 
 </p>
-<div class="info-box">
-  <strong>Note:</strong> All prices in the Marvel Rivals Shop are shown in U.S.
-  dollars (USD). Your selected payment method will automatically handle any
-  necessary currency conversion.
-</div>
 <h1 id="h_01KBDWQWVJH5YH3WB1KW0EZ6VS">How to Access the Marvel Rivals Shop</h1>
 <div class="info-box">
   <strong>Note:</strong> The Marvel Rivals Shop is currently available on the
@@ -202,11 +197,21 @@
   In these instances, if the user attempts to claim the item within the 14-day
   claim period, Discord will attempt to automatically process a refund. 
 </p>
-<p><strong>Q: What currency does the Marvel Rivals Shop support?</strong></p>
 <p>
-  A: All prices in the Marvel Rivals Shop are shown in U.S. dollars (USD). Your
-  selected payment method will automatically handle any necessary currency
-  conversion.
+  <strong
+    >Q: Is localized pricing available for Marvel Rivals purchases?</strong
+  >
+</p>
+<p>
+  A: Localized pricing is available for some purchases and gifts. You should see
+  at checkout whether localized pricing is available. Otherwise, the purchase
+  will default to USD ($). You can learn more about localized pricing
+  <a
+    href="https://support.discord.com/hc/en-us/articles/4407269525911-Localized-Pricing-on-Discord"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >. 
 </p>
 <p><strong>Q: How do I see what items I've purchased?</strong></p>
 <p>
