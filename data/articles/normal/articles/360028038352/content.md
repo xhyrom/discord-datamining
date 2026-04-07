@@ -336,6 +336,11 @@
   </li>
 </ul>
 <h2 id="h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</h2>
+<div class="exp-box">
+  <strong>Important:</strong> We're currently running an experiment that gives
+  some servers the option to upgrade the file limit to 250MB by purchasing
+  Larger File Uploads (5 Boosts) with Server Boosts.
+</div>
 <ul>
   <li data-list-item-id="e2342d8df247479aa8a06ad2289fe20e3">
     <a
