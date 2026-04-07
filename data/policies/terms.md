@@ -1753,7 +1753,7 @@
         <p>
           Users create servers, and users choose which servers to join and who
           their “friends” are. All users must follow our
-          <a href="http://discord.com/guidelines">Community Guidelines</a> and
+          <a href="https://discord.com/guidelines">Community Guidelines</a> and
           other policies, but in servers, the server owners and admins control
           the server permissions and additional rules, including establishing
           membership requirements and creating custom roles and what those roles
