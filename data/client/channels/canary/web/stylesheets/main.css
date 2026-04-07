@@ -31982,15 +31982,17 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .staticPreview__6d099 {
   height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-  width: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: bottom;
+  object-position: bottom;
+  width: 100%;
 }
 .full-motion .staticPreview__6d099 {
-  transition: transform 0.25s ease;
+  transition: transform 0.3s ease-in-out;
 }
 .staticPreviewHighlighted__6d099 {
-  transform: scale(0.85);
+  transform: scale(1.08);
 }
 .theme-dark .avatar__6d099 {
   background: #0c0e0e;
@@ -72182,4 +72184,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.413be66cef39daed.css.map*/
+/*# sourceMappingURL=web.bb82ce43b580423f.css.map*/
