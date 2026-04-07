@@ -2140,7 +2140,7 @@
           <li>
             <strong>To enforce our policies and rights</strong>. We may disclose
             information if needed to enforce our
-            <a href="http://www.discord.com/terms">Terms of Service</a>,
+            <a href="https://discord.com/terms">Terms of Service</a>,
             <a href="https://discord.com/guidelines">Community Guidelines</a>,
             any of our other policies, or to protect the rights, property, and
             safety of ourselves and others.
