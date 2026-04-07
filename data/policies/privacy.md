@@ -1951,7 +1951,7 @@
             We work hard to try to make Discord a safe, positive, and inclusive
             place. To do so, we use your information to monitor for and take
             action against users and content that violate our
-            <a href="http://discord.com/terms">Terms of Service</a>,
+            <a href="https://discord.com/terms">Terms of Service</a>,
             <a href="https://discord.com/guidelines">Community Guidelines</a>,
             and
             <a
@@ -1963,10 +1963,10 @@
             content for illegal or harmful activity. We also use certain
             information, which may include content reported to us, content that
             violates our
-            <a href="http://discord.com/terms">Terms of Service</a>, and certain
-            other content widely available on the service (such as public posts,
-            usernames, avatars, banners, user profiles, server names, server
-            icons, and server banners),
+            <a href="https://discord.com/terms">Terms of Service</a>, and
+            certain other content widely available on the service (such as
+            public posts, usernames, avatars, banners, user profiles, server
+            names, server icons, and server banners),
             <a href="https://discord.com/privacy#2"
               >to create systems and models</a
             >
@@ -2141,9 +2141,9 @@
             <strong>To enforce our policies and rights</strong>. We may disclose
             information if needed to enforce our
             <a href="http://www.discord.com/terms">Terms of Service</a>,
-            <a href="http://www.discord.com/guidelines">Community Guidelines</a
-            >, any of our other policies, or to protect the rights, property,
-            and safety of ourselves and others.
+            <a href="https://discord.com/guidelines">Community Guidelines</a>,
+            any of our other policies, or to protect the rights, property, and
+            safety of ourselves and others.
           </li>
           <li>
             <strong>With our related companies</strong>. We may provide
