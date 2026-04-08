@@ -18128,6 +18128,18 @@ img.thumbnail__0f2e8 {
   .wishlistButton__979b1.variantDefault__979b1:not(.disabled__979b1):active {
   background: hsl(var(--primary-100-hsl) / 0.52);
 }
+.theme-dark .wishlistButton__979b1.variantDefault__979b1 {
+  background: var(--control-overlay-secondary-background-default);
+  border: 1px solid var(--border-muted);
+}
+.theme-dark
+  .wishlistButton__979b1.variantDefault__979b1:not(.disabled__979b1):hover {
+  background: var(--control-overlay-secondary-background-hover);
+}
+.theme-dark
+  .wishlistButton__979b1.variantDefault__979b1:not(.disabled__979b1):active {
+  background: var(--control-overlay-secondary-background-active);
+}
 .normalIconColor__979b1 {
   fill: var(--icon-strong);
   transition: fill 50ms ease-in;
@@ -72175,4 +72187,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.ae1ecdf70ccd8c75.css.map*/
+/*# sourceMappingURL=web.ef11a8e8b40e446e.css.map*/
