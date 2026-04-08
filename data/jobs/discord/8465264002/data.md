@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Program Manager, Ads Policy Operations
+## Senior Program Manager, Ads Integrity
 
 **Location:** San Francisco Bay Area
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8465264002](https://discord.com/jobs/8465264002)
 
-**Updated At:** Tue, 24 Mar 2026 21:48:47 GMT
+**Updated At:** Wed, 08 Apr 2026 18:17:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord's ads business is growing fast — and we're building it the right way. A critical part of doing that is making sure the right integrity infrastructure grows alongside it, and that's where Trust &amp;amp; Safety Strategy &amp;amp; Operations comes in. We're hiring a founding member of Ads Policy Operations to help us get it right from the start. This is a zero-to-1 role: you won't be inheriting a playbook, you'll be writing it.
