@@ -52,6 +52,14 @@
         >
           <a href="#h_01K86N2KDQDBN7FAKKK70H3PNZ"><strong>Mobile</strong></a>
         </li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e750ba3c4d6271ca0d8a963e8b848a9da"
+        >
+          <a href="#h_01KKYTZQ8C3VZN6SPPHS7ZPGHQ"
+            ><strong>Discord Orbs Multiplier for Nitro Members</strong></a
+          >
+        </li>
       </ul>
     </li>
     <li
@@ -344,6 +352,41 @@
     >Example of Claiming Discord Orbs from a Quest</span
   >
 </h4>
+<h2 id="h_01KKYTZQ8C3VZN6SPPHS7ZPGHQ">
+  Discord Orbs Multiplier for Nitro Members
+</h2>
+<div class="exp-box">
+  <strong>Important:</strong> This Nitro perk is currently an experiment.
+</div>
+<p>
+  For eligible Nitro subscribers, you can claim bonus Orbs through Quests! When
+  you complete a Quest with Orb rewards as a Nitro subscriber, your Orb rewards
+  have a 1.2x multiplier applied. The Orbs Multiplier perk is currently
+  available for Quests that have Orbs as the reward.
+</p>
+<figure class="wysiwyg-image">
+  <img
+    style="aspect-ratio: 391/329"
+    src="https://support.discord.com/hc/article_attachments/39325608843415"
+    alt="Discord Orbs Multiplier detail in a Discord Quest with Orbs Rewards"
+    width="391"
+    height="329"
+  />
+</figure>
+<h4 class="wysiwyg-text-align-center" id="h_01KMK74V9CA4V5V7AGD4QB79YB">
+  Discord Orbs Multiplier detail in a Discord Quest with Orbs rewards
+</h4>
+<p><strong>Eligibility Requirements:</strong></p>
+<ul>
+  <li data-list-item-id="ee5051890ab5d9c58b8e675c5bc608d34">
+    This perk is available to Nitro subscribers, including those on trial or
+    gifted Nitro subscriptions.
+  </li>
+  <li data-list-item-id="e81fa5d79fbcd8fd9b02a696013baab0c">
+    This perk is not available to Nitro subscribers through Nitro Credits or
+    Nitro Basic.
+  </li>
+</ul>
 <h1 id="h_01JVN9C8T6GAJ4V009G09TZ6A0">Spending Your Discord Orbs</h1>
 <h2 id="h_01JVN9C8T66JFD60SBTAW2FPXD">Where can I spend Orbs?</h2>
 <p>

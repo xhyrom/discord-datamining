@@ -463,6 +463,23 @@
     >Nitro Quest Perks</a
   ><span style="color: #434343"> article.</span>
 </div>
+<div class="exp-box">
+  <strong>Important:</strong>
+  <a
+    href="https://support.discord.com/hc/articles/115000435108"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Nitro subscribers</a
+  >
+  can claim 1.2x more Orbs when they complete Quests with Orb rewards! Learn
+  more in our
+  <a
+    href="https://support.discord.com/hc/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Orbs FAQ </a
+  >article. This perk is currently in Beta.
+</div>
 <h1 id="h_01HVPBZR5F0EKW79KK7RGEK1HG">
   Controlling the Quest Promotions You See
 </h1>
