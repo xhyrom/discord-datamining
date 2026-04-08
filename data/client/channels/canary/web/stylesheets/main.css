@@ -53390,6 +53390,9 @@ html.disable-forced-colors * {
   --chip-yellow-light-text: var(--yellow-new-87);
   --chip-yellow-medium-background: var(--yellow-new-45);
   --chip-yellow-medium-text: var(--yellow-new-80);
+  --collectibles-tab-gradient-center: var(--illo-pink-40);
+  --collectibles-tab-gradient-inner: hsl(var(--illo-pink-30-hsl) / 0.5);
+  --collectibles-tab-gradient-outer: hsl(var(--illo-pink-30-hsl) / 0);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
@@ -55790,6 +55793,9 @@ html.disable-forced-colors * {
   --chip-yellow-light-text: var(--yellow-new-87);
   --chip-yellow-medium-background: var(--yellow-new-45);
   --chip-yellow-medium-text: var(--yellow-new-80);
+  --collectibles-tab-gradient-center: var(--illo-pink-40);
+  --collectibles-tab-gradient-inner: hsl(var(--illo-pink-30-hsl) / 0.5);
+  --collectibles-tab-gradient-outer: hsl(var(--illo-pink-30-hsl) / 0);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
@@ -58170,6 +58176,9 @@ html.disable-forced-colors * {
   --chip-yellow-light-text: var(--yellow-new-87);
   --chip-yellow-medium-background: var(--yellow-new-45);
   --chip-yellow-medium-text: var(--yellow-new-80);
+  --collectibles-tab-gradient-center: var(--illo-pink-40);
+  --collectibles-tab-gradient-inner: hsl(var(--illo-pink-30-hsl) / 0.5);
+  --collectibles-tab-gradient-outer: hsl(var(--illo-pink-30-hsl) / 0);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
@@ -60558,6 +60567,9 @@ html.disable-forced-colors * {
   --chip-yellow-light-text: var(--yellow-new-87);
   --chip-yellow-medium-background: var(--yellow-new-45);
   --chip-yellow-medium-text: var(--yellow-new-80);
+  --collectibles-tab-gradient-center: var(--illo-pink-40);
+  --collectibles-tab-gradient-inner: hsl(var(--illo-pink-30-hsl) / 0.5);
+  --collectibles-tab-gradient-outer: hsl(var(--illo-pink-30-hsl) / 0);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
@@ -72194,4 +72206,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.b4c633250ece9d12.css.map*/
+/*# sourceMappingURL=web.04875855139d48bc.css.map*/
