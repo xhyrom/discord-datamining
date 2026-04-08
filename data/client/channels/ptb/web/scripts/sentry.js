@@ -4280,6 +4280,8 @@
           (a.PREMIUM_PROMOTION_OPENED = "premium_promotion_opened"),
           (a.RECURRING_PROMOTION_MODAL_OPENED =
             "recurring_promotion_modal_opened"),
+          (a.THIRD_PARTY_PROMOTION_MODAL_OPENED =
+            "third_party_promotion_modal_opened"),
           (a.RECURRING_PROMOTION_CLAIMED = "recurring_promotion_claimed"),
           (a.OUTBOUND_PROMOTION_CLAIMED = "outbound_promotion_claimed"),
           (a.PREMIUM_GUILD_PROMOTION_OPENED = "premium_guild_promotion_opened"),
@@ -5554,6 +5556,9 @@
           (a.DM_PROFILE_TOGGLED = "dm_profile_toggled"),
           (a.USER_PROFILE_WISHLIST_ACTION = "user_profile_wishlist_action"),
           (a.WISHLIST_UPDATED = "wishlist_updated"),
+          (a.WISHLIST_ITEM_CLICKED = "wishlist_item_clicked"),
+          (a.WISHLIST_ITEM_HOVERED = "wishlist_item_hovered"),
+          (a.WISHLIST_ITEM_PURCHASED = "wishlist_item_purchased"),
           (a.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed"),
           (a.PREMIUM_WOW_MOMENT_MEDIA_PREFETCH_TRIGGER =
             "premium_wow_moment_media_prefetch_trigger"),
@@ -5782,6 +5787,8 @@
           (a.COLLECTIBLES_SHOP_FEED_SORT_CHANGED =
             "collectibles_shop_feed_sort_changed"),
           (a.SHOP_CARD_HOVERED = "shop_card_hovered"),
+          (a.SHOP_PRODUCT_DETAIL_PAGE_CLICKED =
+            "shop_product_detail_page_clicked"),
           (a.SLIDE_CAROUSEL_ITEM_VIEWED = "slide_carousel_item_viewed"),
           (a.SLIDE_CAROUSEL_PAGINATION_CLICKED =
             "slide_carousel_pagination_clicked"),
@@ -5917,6 +5924,7 @@
           (a.CDM_LOAD_STATUS = "cdm_load_status"),
           (a.CDM_READY_COMPLETE = "cdm_ready_complete"),
           (a.DESKTOP_TTI = "desktop_tti"),
+          (a.DESKTOP_TTI_V2 = "desktop_tti_v2"),
           (a.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY =
             "desktop_perf_attributed_module_memory"),
           (a.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK =
@@ -6152,6 +6160,7 @@
           (a.SESSION_START_PAGE_VIEWED = "session_start_page_viewed"),
           (a.IMPRESSION_GIFT_OPTION_WISHLIST_BANNER_VIEWED =
             "impression_gift_option_wishlist_banner_viewed"),
+          (a.IMPRESSION_WISHLIST_ITEM = "impression_wishlist_item"),
           (a.GAME_COMMUNITY_UPSELL_VIEWED = "game_community_upsell_viewed"),
           (a.GAME_COMMUNITY_UPSELL_DISMISSED =
             "game_community_upsell_dismissed"),
@@ -6456,7 +6465,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-04-07-d00a0c7698dccb6c8a2773d2f20e8fd052feb110-discord_web",
+              "2026-04-08-3dfd4dcd6f662b8f84502a512f84bc35ddf8f12a-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6523,8 +6532,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "524111"),
-            o.NA("builtAt", String("1775546338850"));
+            o.NA("buildNumber", "524923"),
+            o.NA("builtAt", String("1775632749577"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6585,6 +6594,7 @@
             BILLING_PROMOTION_REDEMPTION_GENERIC: "/billing/promotions",
             BILLING_PROMOTION_DIRECT_FULFILLMENT_REDEMPTION: (e, t) =>
               `/billing/partner-promotions/${e}/${t}`,
+            GIFT_CARD_REDEEM: "/redeem",
             FRIENDS: "/channels/@me",
             ME: "/channels/@me",
             MESSAGE_REQUESTS: "/message-requests",
@@ -39818,4 +39828,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.1529829037fe0f74.js.map
+//# sourceMappingURL=sentry.851ae8637dcaad9b.js.map
