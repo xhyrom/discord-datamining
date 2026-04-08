@@ -37592,9 +37592,13 @@ body .headerAnimation_b54a5b {
   padding: var(--space-12) var(--space-16);
 }
 .container__63de2[aria-disabled="true"] {
-  cursor: default;
+  background: var(--background-mod-muted);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-md, 12px);
+  cursor: not-allowed;
+  opacity: 0.5;
 }
-.container__63de2:hover {
+.container__63de2:not([aria-disabled="true"]):hover {
   background-color: var(--background-mod-muted);
 }
 .full-motion .translate_faf9c0.animatorTop_faf9c0 {
@@ -38109,8 +38113,11 @@ body .headerAnimation_b54a5b {
   justify-content: center;
   padding: 8px;
 }
-.giftCardCreditsCheckbox_b90acf {
+.giftCardCreditsCheckboxAbove_b90acf {
   margin-bottom: var(--space-8);
+}
+.giftCardCreditsCheckboxBelow_b90acf {
+  margin-top: var(--space-8);
 }
 .content_d60bcd ul {
   list-style: disc;
@@ -72187,4 +72194,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.ef11a8e8b40e446e.css.map*/
+/*# sourceMappingURL=web.b4c633250ece9d12.css.map*/
