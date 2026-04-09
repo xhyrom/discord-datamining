@@ -31,27 +31,40 @@
   console is updated to the latest version.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e5c2b69f62b9cc9dce1e81d3263532e67"
+    >
       <a href="#h_01JWW0XJY184XBXFR0HH4JGGRM"
         ><strong>How to Link Your Discord and Xbox Accounts</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e80ad333df1961477409706fa2bd5ff3e"
+        >
           <a href="#h_01JWW0XJY1HWKTQMAR48915H6F"
             ><strong>How to Connect My Xbox Account from Discord</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="eca3cb4d737af7df081b669ebff70de84"
+        >
           <a href="#h_01JWW0XJY1YDK08F3FM6CNT2BB"
             ><strong>How to Connect My Discord Account from Xbox</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="edc6c1b84b7555b8f51ebc959e5ca0898"
+        >
           <a href="#h_01JWW0XJY1YEHDG4FMSHRE9A7A"
             ><strong
               >How Do I Remove the Xbox Connection from My Discord
@@ -61,14 +74,20 @@
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e85c35a374538bba093bfa651ca6807b6"
+    >
       <a href="#h_01JWW0XJY24QKA6QNYZXA26GDE"
         ><strong
           >How to Display Connection &amp; Game Activity on My Profile</strong
         ></a
       >
       <ul>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e925d43df5fe96d54aa1c906d88c94ba6"
+        >
           <a href="#h_01JWW0XJY2SRM47NE4R69MZCH6"
             ><strong
               >On Desktop - Display Your Connected Account on Your User
@@ -76,12 +95,18 @@
             ></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ef9ce71eb70d04aafc17c8dc80d3feaef"
+        >
           <a href="#h_01JWW0XJY2NTXEH4DN4Z1ZCSJZ"
             ><strong>Display Your Xbox Activity as Your Status</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ef8577598000f65bc7d751e587cd02913"
+        >
           <a href="#h_01JWW0XJY2PKER17DXKNNGHD93"
             ><strong
               >On Mobile - Display Your Xbox Connected Account and Activity as
@@ -91,39 +116,60 @@
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="ebb58046a35a80889442a3ca4cc316b5f"
+    >
       <a href="#h_01JWW0XJY20Y1J2JXR7WKMJVB4"
         ><strong>How to Use Discord Voice Chat on Your Xbox Console</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="efb4c104a4c1e87d9264aff1e92bfc6b5"
+        >
           <a href="#h_01JWW0XJY2WH6V518R7KAVR2FH"
             ><strong>On Xbox Console</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e875f3eb5d804dde210e8d72d4cb4bded"
+        >
           <a href="#h_01JWW0XJY2AEWCXC44QT9KYRPW"
             ><strong>On Discord Mobile App</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="eea2e5519986856e555b5bab6a71c2d9c"
+        >
           <a href="#h_01JWW0XJY2R52030V204HV0SAS"
             ><strong>On Discord Desktop Client</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e321d38bcdd013410bb7c5bb4ab4381e2"
+    >
       <a href="#h_01JWW0XJY27GVD7SBFTSWHJEEN"
         ><strong>How to Complete Discord Quests on Your Xbox</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e473ea11a91fa47281d043de11fa851b3"
+        >
           <a href="#h_01JWW0XJY2DYEB5Z7CA1QZSNCE"
             ><strong>Verify Your Privacy Settings via Xbox Website</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e178bd37e6f8fa204dfad17bfb6e24ab7"
+        >
           <a href="#h_01JWW0XJY28PS2TNM8BXW0X2XA"
             ><strong
               >Verify Your Privacy Settings on Xbox Series X/S Console</strong
@@ -132,22 +178,34 @@
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e70771c6c8e024287949f552b6f9727e2"
+    >
       <a href="#h_01JWW0XJY23HJJZDC0N098FPHG"
         ><strong>Stream Gameplay to Discord from Xbox</strong></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e953d594324bc35961a883f18021c32a5"
+    >
       <a href="#h_01JWW0XJY232QP1XSS3F5VYY1M"
         ><strong>How to View Your Discord Friend’s List on Your Xbox</strong></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e13256e02933c7f43d7654708e09086a1"
+    >
       <a href="#h_01JWW0XJY250E1RXAC50DDT3S0"
         ><strong>How to Watch a Stream on Your Xbox</strong></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="eb75b0056f554f584d265d2bcb07d021b"
+    >
       <a href="#h_01JWW0XJY273PRZCJFHB1XSKRJ"
         ><strong>Frequently Asked Questions</strong></a
       >
@@ -157,33 +215,43 @@
 <h1 id="h_01JWW0XJY184XBXFR0HH4JGGRM">
   How To Link Your Discord And Xbox Accounts
 </h1>
+<div class="tip-box">
+  <strong>Tip:</strong> Each Discord account supports one linked Xbox account at
+  a time. If you'd like to connect a different Xbox account, simply remove your
+  current connection first.
+</div>
 <p>
   To take full advantage of an Xbox connection for your Discord experience, you
   will need to connect your Discord and Xbox accounts. Connecting your Xbox
   account to your Discord account means you can:
 </p>
 <ul>
-  <li>Display your Xbox GamerTag</li>
-  <li>Display your Xbox game activity</li>
-  <li>Display how long you’ve been playing on your Xbox console</li>
-  <li>Use Discord voice chat on your Xbox console</li>
+  <li data-list-item-id="e03a1900868d9c26c9dd62e67b94f94da">
+    Display your Xbox GamerTag
+  </li>
+  <li data-list-item-id="e198723b6b51ac16224bce6a54e4b8a34">
+    Display your Xbox game activity
+  </li>
+  <li data-list-item-id="e34b9154d2f66ceefc60e9194cc50d517">
+    Display how long you’ve been playing on your Xbox console
+  </li>
+  <li data-list-item-id="ef51fa3d9176cc3a07f07cd467e900e23">
+    Use Discord voice chat on your Xbox console
+  </li>
 </ul>
 <h2 id="h_01JWW0XJY1HWKTQMAR48915H6F">
   How To Connect My Xbox Account From Discord
 </h2>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
-    >: If you connect your Discord and Xbox accounts prior to Discord Voice on
-    Xbox becoming available to you, you'll have to relink your accounts again to
-    use  Discord voice chat on Xbox.</span
+  <span style="color: #434343"
+    ><strong>Info</strong>: If you connect your Discord and Xbox accounts prior
+    to Discord Voice on Xbox becoming available to you, you'll have to relink
+    your accounts again to use  Discord voice chat on Xbox.</span
   >
 </div>
 <p>
-  <span class="wysiwyg-font-size-x-large"
-    ><strong
-      ><span style="color: #2e3338">On Desktop/Browser </span></strong
-    ></span
+  <span class="wysiwyg-font-size-x-large" style="color: #2e3338"
+    ><strong>On Desktop/Browser </strong></span
   >
 </p>
 <p>
@@ -207,7 +275,7 @@
       height="569"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY1RS1AGE9XA30XSQQ5" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY1RS1AGE9XA30XSQQ5">
   <span style="color: #666666"
     >Navigating to Connections to Connect to Xbox</span
   >
@@ -229,7 +297,7 @@
       height="586"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY1X5M4G2ND8YEW2PDN" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY1X5M4G2ND8YEW2PDN">
   <span style="color: #666666"
     >Authorize and Continue Button in Connection Window</span
   >
@@ -246,12 +314,12 @@
       height="569"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY1YKTWVZVVQ8750PFB" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY1YKTWVZVVQ8750PFB">
   <span style="color: #666666">Example of Successful Xbox Connection</span>
 </h4>
 <p>
-  <span class="wysiwyg-font-size-x-large"
-    ><strong><span style="color: #2e3338">On Mobile </span></strong></span
+  <span class="wysiwyg-font-size-x-large" style="color: #2e3338"
+    ><strong>On Mobile </strong></span
   >
 </p>
 <p>
@@ -275,7 +343,7 @@
       height="544"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY1XHQHWQQQF82KT2T4" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY1XHQHWQQQF82KT2T4">
   <span style="color: #666666">Navigating to Settings &gt; Connections</span>
 </h4>
 <p>
@@ -287,16 +355,14 @@
     ><img
       src="https://support.discord.com/hc/article_attachments/32569741457175"
       width="257"
-      height="536" /></span
-  ><span style="color: #2e3338">   </span
-  ><span style="color: #2e3338"
-    ><img
+      height="536" />
+      <img
       src="https://support.discord.com/hc/article_attachments/32569765904279"
       width="256"
       height="533"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY1FMHJWSVXZA9BXXN5" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY1FMHJWSVXZA9BXXN5">
   <span style="color: #666666"
     >Xbox Icon (Left), Add Button to Add New Connection (Right)</span
   >
@@ -314,7 +380,7 @@
       height="583"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY1WCB0DANBTZ92F4BJ" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY1WCB0DANBTZ92F4BJ">
   <span style="color: #666666">Get Started Button in Connection Window</span>
 </h4>
 <p>
@@ -334,7 +400,7 @@
       height="572"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY1G3RMRVEWYDSDR7K7" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY1G3RMRVEWYDSDR7K7">
   <span style="color: #666666"
     >Authorize and Continue Button in Connection Window</span
   >
@@ -353,15 +419,15 @@
       height="565"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY109FMF7BFF4QH3KPW" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY109FMF7BFF4QH3KPW">
   <span style="color: #666666">Example of Successful Xbox Connection</span>
 </h4>
 <h2 id="h_01JWW0XJY1YDK08F3FM6CNT2BB">
   How To Connect My Discord Account From Xbox
 </h2>
 <p>
-  <span class="wysiwyg-font-size-x-large"
-    ><strong><span style="color: #2e3338">On Xbox app</span></strong></span
+  <span class="wysiwyg-font-size-x-large" style="color: #2e3338"
+    ><strong>On Xbox app</strong></span
   >
 </p>
 <p>
@@ -376,7 +442,7 @@
       height="618"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY15P982SWB0SPNHFDR" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY15P982SWB0SPNHFDR">
   <span style="color: #666666">Discord Spotlight in Xbox App</span>
 </h4>
 <p>
@@ -392,7 +458,7 @@
       height="598"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY1C1WZ00BRB005H4RK" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY1C1WZ00BRB005H4RK">
   <span style="color: #666666">Continue Button</span>
 </h4>
 <p>
@@ -409,8 +475,8 @@
   profile.
 </p>
 <p>
-  <span class="wysiwyg-font-size-x-large"
-    ><strong><span style="color: #2e3338">On Xbox Console</span></strong></span
+  <span class="wysiwyg-font-size-x-large" style="color: #2e3338"
+    ><strong>On Xbox Console</strong></span
   >
 </p>
 <p>
@@ -426,7 +492,7 @@
       height="378"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY146JZVXB8CK3BGXYZ" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY146JZVXB8CK3BGXYZ">
   <span style="color: #666666">Example of Xbox Console Guide View</span>
 </h4>
 <p>
@@ -444,7 +510,7 @@
       height="380"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY1D7Q4CA0XCT42HVDM" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY1D7Q4CA0XCT42HVDM">
   <span style="color: #666666">Settings Button in Xbox Console Guide</span>
 </h4>
 <p class="wysiwyg-text-align-center">
@@ -454,7 +520,7 @@
     height="380"
   />
 </p>
-<h4 id="h_01JWW0XJY1DHM7QDN9PS9VWMH8" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY1DHM7QDN9PS9VWMH8">
   <span style="color: #666666">Linked social accounts Button in Account </span>
 </h4>
 <p>
@@ -466,8 +532,8 @@
   How Do I Remove The Xbox Connection From My Discord Account?
 </h2>
 <p>
-  <span class="wysiwyg-font-size-x-large"
-    ><strong><span style="color: #2e3338">On Desktop App</span></strong></span
+  <span class="wysiwyg-font-size-x-large" style="color: #2e3338"
+    ><strong>On Desktop App</strong></span
   >
 </p>
 <p>
@@ -491,7 +557,7 @@
       height="432"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY1QFSAGAJPSAV390MX" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY1QFSAGAJPSAV390MX">
   <span style="color: #666666">X Icon in Xbox Connection</span>
 </h4>
 <p>
@@ -506,14 +572,14 @@
       height="218"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY2H4N1HCJ8KDJG6BB3" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY2H4N1HCJ8KDJG6BB3">
   <span style="color: #666666"
     >Disconnect Button in Disconnect Xbox Window</span
   >
 </h4>
 <p>
-  <span class="wysiwyg-font-size-x-large"
-    ><strong><span style="color: #2e3338">On Mobile App</span></strong></span
+  <span class="wysiwyg-font-size-x-large" style="color: #2e3338"
+    ><strong>On Mobile App</strong></span
   >
 </p>
 <p>
@@ -532,7 +598,7 @@
       height="580"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY2DJJJQ9TSDA951C27" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY2DJJJQ9TSDA951C27">
   <span style="color: #666666">X Icon in Xbox Connection</span>
 </h4>
 <p>
@@ -547,7 +613,7 @@
       height="318"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY2S902TARY9Q4R7AH8" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY2S902TARY9Q4R7AH8">
   <span style="color: #666666"
     >Disconnect Button in Disconnect Xbox Window</span
   >
@@ -584,7 +650,7 @@
       height="314"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY2BH3YJJVMGWR1NR2G" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY2BH3YJJVMGWR1NR2G">
   <span style="color: #666666">Display on profile Toggle</span>
 </h4>
 <h2 id="h_01JWW0XJY2NTXEH4DN4Z1ZCSJZ">
@@ -611,7 +677,7 @@
       height="323"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY2XAXPY5305KV0SHEG" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY2XAXPY5305KV0SHEG">
   <span style="color: #666666">Display Xbox as your status Toggle</span>
 </h4>
 <h2 id="h_01JWW0XJY2PKER17DXKNNGHD93">
@@ -634,7 +700,7 @@
       height="569"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY21A7T9706S20R8W5H" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY21A7T9706S20R8W5H">
   <span style="color: #666666"
     >Display on profile and Display Xbox as your status Toggles</span
   >
@@ -716,25 +782,25 @@
   console.
 </p>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
-    >: You will not be able to communicate outside of your Xbox console if your </span
-  ><strong><span style="color: #434343">Privacy Settings</span></strong
-  ><span style="color: #434343"> in the Xbox mobile app is set to “</span
-  ><strong><span style="color: #434343">In-game friends</span></strong
-  ><span style="color: #434343">” or “</span
-  ><strong><span style="color: #434343">Blocked</span></strong
-  ><span style="color: #434343">”.</span>
   <p>
     <span style="color: #434343"
-      >- To join cross-network play &gt; set this to </span
-    ><strong><span style="color: #434343">Allow</span></strong>
+      ><strong>Info</strong>: You will not be able to communicate outside of
+      your Xbox console if your <strong>Privacy Settings</strong> in the Xbox
+      mobile app is set to “<strong>In-game friends</strong>” or
+      “<strong>Blocked</strong>”.</span
+    >
   </p>
   <p>
     <span style="color: #434343"
-      >- To communicate outside of Xbox with voice &amp; text &gt; set this to </span
-    ><strong><span style="color: #434343">Everybody</span></strong
-    ><span style="color: #434343">.</span>
+      >- To join cross-network play &gt; set this to
+      <strong>Allow</strong></span
+    >
+  </p>
+  <p>
+    <span style="color: #434343"
+      >- To communicate outside of Xbox with voice &amp; text &gt; set this to
+      <strong>Everybody</strong>.</span
+    >
   </p>
 </div>
 <h2 id="h_01JWW0XJY2R52030V204HV0SAS">On Discord Desktop Client</h2>
@@ -823,7 +889,7 @@
       height="400"
   /></span>
 </p>
-<h4 id="h_01JWW0XJY20EC41NTRQ5NPDA62" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY20EC41NTRQ5NPDA62">
   <span style="color: #666666"
     >Other can Settings in Xbox Privacy Settings</span
   >
@@ -851,30 +917,28 @@
   to “<strong>Everybody</strong>”. 
 </p>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
-    >: Make sure your online status is not hidden:</span
-  >
   <p>
-    <span style="color: #434343">- On your Xbox console, go to </span
-    ><strong><span style="color: #434343">Xbox home screen</span></strong
-    ><span style="color: #434343"> and open your </span
-    ><strong><span style="color: #434343">Xbox profile</span></strong
-    ><span style="color: #434343">.</span>
+    <span style="color: #434343"
+      ><strong>Info</strong>: Make sure your online status is not hidden:</span
+    >
   </p>
   <p>
-    <span style="color: #434343">- Your </span
-    ><strong><span style="color: #434343">Xbox status</span></strong
-    ><span style="color: #434343"> should be “</span
-    ><strong><span style="color: #434343">Appear online</span></strong
-    ><span style="color: #434343">” and not “</span
-    ><strong><span style="color: #434343">Appear offline</span></strong
-    ><span style="color: #434343">”.</span>
+    <span style="color: #434343"
+      >- On your Xbox console, go to <strong>Xbox home screen</strong> and open
+      your <strong>Xbox profile</strong>.</span
+    >
+  </p>
+  <p>
+    <span style="color: #434343"
+      >- Your <strong>Xbox status</strong> should be “<strong
+        >Appear online</strong
+      >” and not “<strong>Appear offline</strong>”.</span
+    >
   </p>
 </div>
 <h1 id="h_01JWW0XJY23HJJZDC0N098FPHG">Stream Gameplay To Discord From Xbox</h1>
 <div class="book-box">
-  <strong><span style="color: #434343">Want to learn more?</span></strong
+  <span style="color: #434343"><strong>Want to learn more?</strong></span
   ><br /><span style="color: #434343">Check out our </span
   ><a
     href="https://dis.gd/xbox-stream-to-discord"
@@ -884,15 +948,15 @@
   ><span style="color: #434343"> on Streaming to Discord from Xbox!</span>
 </div>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #434343"
+  <span style="color: #434343"
+    ><strong
       ><img
         src="https://support.discord.com/hc/article_attachments/32569765919127"
         width="788"
-        height="443" /></span
-  ></strong>
+        height="443" /></strong
+  ></span>
 </p>
-<h4 id="h_01JWW0XJY2FA5JTVDZTXR0M0AH" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JWW0XJY2FA5JTVDZTXR0M0AH">
   <span style="color: #666666"
     >Stream your game option in Xbox Console Guide</span
   >
@@ -948,9 +1012,8 @@
   <strong>Start stream</strong>.
 </p>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
-    >: The 60 FPS option is unavailable on Xbox One.</span
+  <span style="color: #434343"
+    ><strong>Info</strong>: The 60 FPS option is unavailable on Xbox One.</span
   >
 </div>
 <p>
@@ -960,9 +1023,11 @@
   chat on Xbox.
 </p>
 <div class="form-box">
-  <strong><span style="color: #434343">Contact Support</span></strong
-  ><span style="color: #434343">:</span
-  ><strong><span style="color: #434343"> </span></strong>
+  <p>
+    <span style="color: #434343"
+      ><strong>Contact Support</strong>:<strong> </strong></span
+    >
+  </p>
   <p id="h_01JWW0XJY2KMDFPKADHDQWNWDD">
     <span style="color: #434343"
       >If you are experiencing issues with streaming from the Xbox console,
