@@ -71401,15 +71401,18 @@ body {
   background: transparent;
   font-family: var(--font-primary);
   line-height: 1;
-  margin: 0;
   overflow: hidden;
   padding: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
+body,
 p {
-  margin: 14px 0;
+  margin: 0;
+}
+p + p {
+  margin-top: 14px;
 }
 ol,
 ul {
@@ -72301,4 +72304,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.19a3ee2726ca5e67.css.map*/
+/*# sourceMappingURL=web.a19f2bcbce13372b.css.map*/
