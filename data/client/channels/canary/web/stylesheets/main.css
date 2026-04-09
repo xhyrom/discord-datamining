@@ -43105,8 +43105,8 @@ svg.radioIcon_c1e9c4 {
   justify-content: center;
 }
 .image__0f084 {
-  height: 100%;
-  padding: 0 var(--space-4);
+  height: calc(100% - var(--space-4) * 2);
+  padding: var(--space-4);
 }
 .iconButton__0f084 {
   color: var(--icon-strong);
@@ -72206,4 +72206,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.04875855139d48bc.css.map*/
+/*# sourceMappingURL=web.9034b6ee398edc1f.css.map*/
