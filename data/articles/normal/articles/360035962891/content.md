@@ -431,14 +431,13 @@
   />
 </p>
 <p>
-  From April 1, 2026 to April 7, 2026 you can play Last Meadow Online to earn
+  From April 1, 2026 to April 7, 2026 you could play Last Meadow Online to earn
   the Last Meadow Online badge. Hovering over the badge displays your level
   progression in the game. You can learn more about the game through this
-  <a
-    href="https://discord.com/blog/last-meadow-online-announcement/"
-    target="_blank"
-    rel="noopener noreferrer"
+  <a href="https://discord.com/blog/last-meadow-online-announcement/"
     >blog post</a
   >.
 </p>
+<p><strong>This badge is no longer obtainable.</strong></p>
+<p> </p>
 <p><br /> </p>
