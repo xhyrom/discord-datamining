@@ -6464,7 +6464,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-80feed3fa0b726b897ac5d859dab81737a14b192",
+            release: "discord_web-135f8490f0077680e6a4b6f4924a78a4ad857d1a",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6531,8 +6531,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "525839"),
-            o.NA("builtAt", String("1775747901724"));
+            o.NA("buildNumber", "525919"),
+            o.NA("builtAt", String("1775753161776"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -13247,7 +13247,12 @@
                 resolve(e) {
                   let { enabledExperiments: t } = e;
                   if (0 === t.length) return 4;
-                  for (let e of t) if ("mobile-visual-refresh" === e) return 6;
+                  for (let e of t)
+                    switch (e) {
+                      case "mobile-visual-refresh":
+                      case "guild-item-spacing":
+                        return 6;
+                    }
                   return 4;
                 },
               },
@@ -13540,6 +13545,7 @@
                   return 8;
                 },
               },
+              PROMO_SHEET_GRAPHIC_MAX_WIDTH: { resolve: () => 288 },
               SEGMENTED_CONTROL_BORDER_RADIUS: {
                 resolve(e) {
                   let { enabledExperiments: t } = e;
@@ -13553,6 +13559,39 @@
                   let { enabledExperiments: t } = e;
                   if (0 === t.length) return 16;
                   for (let e of t) if ("mobile-visual-refresh" === e) return 24;
+                  return 16;
+                },
+              },
+              SHEET_HANDLE_HEIGHT: { resolve: () => 4 },
+              SHEET_HANDLE_MARGIN_BOTTOM: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 12;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 24;
+                  return 12;
+                },
+              },
+              SHEET_HANDLE_MARGIN_TOP: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 4;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 8;
+                  return 4;
+                },
+              },
+              SHEET_HANDLE_WIDTH: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 32;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 36;
+                  return 32;
+                },
+              },
+              SHEET_HEADER_PADDING_HORIZONTAL: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return 16;
+                  for (let e of t) if ("mobile-visual-refresh" === e) return 0;
                   return 16;
                 },
               },
@@ -39827,4 +39866,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.4b3b6a8983a00563.js.map
+//# sourceMappingURL=sentry.1c70db31033a46ae.js.map
