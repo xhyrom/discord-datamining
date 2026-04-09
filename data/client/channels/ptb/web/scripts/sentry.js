@@ -3595,8 +3595,6 @@
             `/guilds/${e}/role-subscriptions/subscription-listings/${t}/trial/${r}/eligibility`,
           CREATOR_MONETIZATION_MARKETING_ONBOARDING: (e) =>
             `/guilds/${e}/creator-monetization/marketing/onboarding`,
-          CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY:
-            "/creator-monetization/marketing/nag-activate/eligibility",
           CREATOR_MONETIZATION_OWNERSHIP_TRANSFER_ONBOARD: (e) =>
             `/guilds/${e}/creator-monetization/ownership-transfer/onboarding`,
           CREATOR_MONETIZATION_ACCEPT_NEW_TERMS: (e) =>
@@ -4438,6 +4436,8 @@
           (a.FRIEND_FINDER_INITIAL_LOADED = "friend_finder_initial_loaded"),
           (a.USERNAME_SEARCH_TAPPED = "username_search_tapped"),
           (a.NOW_PLAYING_CARD_HOVERED = "now_playing_card_hovered"),
+          (a.FRIEND_REQUEST_ACCEPT_MESSAGE_CLICKED =
+            "friend_request_accept_message_clicked"),
           (a.CONNECTIONS_XBOX_RELINK_COACHMARK_VIEWED =
             "connections_xbox_relink_coachmark_viewed"),
           (a.CONNECTIONS_XBOX_RELINK_COACHMARK_CLICKED =
@@ -6465,7 +6465,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-04-08-63bcfc0d84fa2a50b01f6c7ba58b618bc2eef9de-discord_web",
+              "2026-04-09-6ead76b625dc0e918ce24e4acff435eaf4ce7f54-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6532,8 +6532,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "525145"),
-            o.NA("builtAt", String("1775669540418"));
+            o.NA("buildNumber", "525755"),
+            o.NA("builtAt", String("1775719241431"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -39828,4 +39828,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.9e346ffec71142ed.js.map
+//# sourceMappingURL=sentry.9a58f1c79c41f918.js.map
