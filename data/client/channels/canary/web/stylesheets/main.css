@@ -32253,8 +32253,9 @@ html:not(.chat-input) .inputInner_b1f01d {
       var(--expressive-gradient-nitro-pink-start) 0,
       var(--expressive-gradient-nitro-pink-end) 100%
     );
-  inset: 0;
-  opacity: 0.5;
+  border-radius: var(--radius-md);
+  inset: var(--custom-premium-backdrop-inset, 1px);
+  opacity: var(--custom-premium-backdrop-opacity, 0.5);
   position: absolute;
 }
 .premiumRive__517e1 {
@@ -72300,4 +72301,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.cc25e16731a09342.css.map*/
+/*# sourceMappingURL=web.19a3ee2726ca5e67.css.map*/
