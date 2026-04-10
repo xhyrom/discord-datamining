@@ -6362,7 +6362,8 @@
             [i.D.IGDB]: "IGDB",
             [i.D.NVIDIA_GDN_APP]: "NVIDIA Cloud Gaming Application",
             [i.D.ROBLOX]: "Roblox",
-            [i.D.XBOX]: "Xbox",
+            [i.D.XBOX_STORE]: "Xbox Store",
+            [i.D.XBOX_TITLE]: "Xbox Title",
             [i.D.XBOX_GAME_PASS]: "Xbox Game Pass",
             [i.D.GOP]: "GOP",
             [i.D.GDCO]: "GDCO",
@@ -6480,7 +6481,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-344dcc134f8047797ee6f56a450160fb9a8750e8",
+            release: "discord_web-d22281b3c4a7b64a6857dd73e624fda0fd321f25",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6547,8 +6548,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "526705"),
-            o.NA("builtAt", String("1775832604635"));
+            o.NA("buildNumber", "526747"),
+            o.NA("builtAt", String("1775836145928"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -15123,7 +15124,8 @@
             (a.IGDB = "igdb"),
             (a.NVIDIA_GDN_APP = "nvidia_gdn_app"),
             (a.ROBLOX = "roblox"),
-            (a.XBOX = "xbox"),
+            (a.XBOX_STORE = "xbox"),
+            (a.XBOX_TITLE = "xbox_title"),
             (a.XBOX_GAME_PASS = "xbox_game_pass"),
             (a.GOP = "gop"),
             (a.GDCO = "gdco"),
@@ -39882,4 +39884,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.7b2407beaea2b6d9.js.map
+//# sourceMappingURL=sentry.ee93cf373f003db0.js.map
