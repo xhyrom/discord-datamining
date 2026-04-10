@@ -2987,6 +2987,10 @@
           MESSAGE_ACK: (e, t) => `/channels/${e}/messages/${t}/ack`,
           MESSAGE_CREATE_ATTACHMENT_UPLOAD: (e) => `/channels/${e}/attachments`,
           UPDATE_VOICE_CHANNEL_STATUS: (e) => `/channels/${e}/voice-status`,
+          CHANNEL_VOICE_HANGOUT: (e) => `/channels/${e}/voice-hangout`,
+          VOICE_HANGOUT_BANNER: (e, t) => `/voice-hangouts/${e}/${t}`,
+          GUILD_VOICE_HANGOUT_RECENT_IMAGES: (e) =>
+            `/guilds/${e}/voice-hangout/recent-images`,
           MESSAGE_DELETE_UPLOAD: (e) => `/attachments/${e}`,
           MESSAGE_CROSSPOST: (e, t) => `/channels/${e}/messages/${t}/crosspost`,
           AI_TITLE: "/ai/title",
@@ -6473,7 +6477,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9c86973e8b6caf02b908b1987fd96a4442a03fd7",
+            release: "discord_web-2ea5ffb2087cfbdbed31c4852cfb87a7044c71c2",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6540,8 +6544,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "526619"),
-            o.NA("builtAt", String("1775800075920"));
+            o.NA("buildNumber", "526628"),
+            o.NA("builtAt", String("1775803157729"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -39875,4 +39879,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.78362bfa2fb7427c.js.map
+//# sourceMappingURL=sentry.779d2e12be9f82ef.js.map
