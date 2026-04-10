@@ -16071,6 +16071,33 @@ img.thumbnail__0f2e8 {
 .enable-forced-colors .banner__68edb {
   forced-color-adjust: none;
 }
+@property --profile-gradient-primary-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+@property --profile-gradient-secondary-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+@property --profile-gradient-modal-background-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+@property --profile-gradient-overlay-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+.full-motion .custom-user-profile-theme {
+  transition:
+    --profile-gradient-primary-color 0.15s ease,
+    --profile-gradient-secondary-color 0.15s ease,
+    --profile-gradient-modal-background-color 0.15s ease,
+    --profile-gradient-overlay-color 0.15s ease;
+}
 :root {
   --custom-user-profile-banner-height: 0px;
   --custom-user-profile-footer-height: 0px;
@@ -72312,4 +72339,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.67b78d5eb02b297a.css.map*/
+/*# sourceMappingURL=web.543f35ed0cf89786.css.map*/
