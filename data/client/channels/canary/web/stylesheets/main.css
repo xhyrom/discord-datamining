@@ -32087,13 +32087,20 @@ html:not(.chat-input) .inputInner_b1f01d {
   position: absolute;
   width: 96%;
 }
-.staticPreview__6d099 {
+.staticPreviewContainer__6d099 {
+  overflow: hidden;
+}
+.staticPreview__6d099,
+.staticPreviewContainer__6d099 {
   height: 100%;
+  position: relative;
+  width: 100%;
+}
+.staticPreview__6d099 {
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: bottom;
   object-position: bottom;
-  width: 100%;
 }
 .full-motion .staticPreview__6d099 {
   transition: transform 0.3s ease-in-out;
@@ -72363,4 +72370,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.346e74d8ee2cf31c.css.map*/
+/*# sourceMappingURL=web.99a8a4479f031cf2.css.map*/
