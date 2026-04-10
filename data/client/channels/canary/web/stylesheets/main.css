@@ -13494,7 +13494,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   width: 100%;
 }
 .card_c50892 {
-  background: var(--background-base-lowest);
+  background: var(--background-mod-subtle);
   border: 1px solid;
   border-radius: 16px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
@@ -13647,9 +13647,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .theme-light .andMoreText_c50892 {
   color: var(--text-muted);
-}
-.theme-light .card_c50892 {
-  background: var(--background-base-lowest);
 }
 .perksContainer_c50892 {
   display: flex;
@@ -72352,4 +72349,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.ee8abcd88fd4b6bb.css.map*/
+/*# sourceMappingURL=web.4fad627ca9efd2e9.css.map*/
