@@ -37619,6 +37619,10 @@ body .headerAnimation_b54a5b {
 .icon_da8ac7 .nitroCredit_da8ac7 svg {
   filter: drop-shadow(0 4px 10px var(--shadow-low-hover));
 }
+.bundleMiniStaticPreview_da8ac7 {
+  height: 100%;
+  width: 100%;
+}
 .purchaseItemImage_da8ac7 {
   height: 64px;
   -o-object-fit: cover;
@@ -72370,4 +72374,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.99a8a4479f031cf2.css.map*/
+/*# sourceMappingURL=web.e9b979f05d054fdc.css.map*/
