@@ -32294,22 +32294,6 @@ html:not(.chat-input) .inputInner_b1f01d {
   overflow: hidden;
   position: relative;
 }
-.premiumBackdrop__517e1 {
-  background: radial-gradient(
-      101.36% 100% at 50% 100%,
-      var(--background-surface-high) 60%,
-      transparent 100%
-    ),
-    linear-gradient(
-      90deg,
-      var(--expressive-gradient-nitro-pink-start) 0,
-      var(--expressive-gradient-nitro-pink-end) 100%
-    );
-  border-radius: var(--radius-md);
-  inset: var(--custom-premium-backdrop-inset, 1px);
-  opacity: var(--custom-premium-backdrop-opacity, 0.5);
-  position: absolute;
-}
 .premiumRive__517e1 {
   height: 100%;
   position: relative;
@@ -72374,4 +72358,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.e9b979f05d054fdc.css.map*/
+/*# sourceMappingURL=web.535b4c480f49e88f.css.map*/
