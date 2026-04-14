@@ -2764,6 +2764,8 @@
           USER_APPLICATION_IDENTITIES: (e) =>
             `/users/${e}/application-identities`,
           USER_WISHLIST_RECOMMENDATIONS: "/wishlist/gift-recommendations",
+          SELF_APPLICATION_IDENTITY_CONFIG: (e, t) =>
+            `/users/@me/application-identities/${e}/${t}/config`,
           DM_CHANNEL: (e) => `/users/@me/dms/${e}`,
           USER_SETTINGS_PROTO: (e) => `/users/@me/settings-proto/${e}`,
           USER_ACTIVITY_METADATA: (e, t, r) =>
@@ -3858,7 +3860,6 @@
           GORILLA_COMPLETE_ACTIVITY: (e) => `/gorilla/activity/${e}/complete`,
           GUILD_MIGRATE_PIN_PERMISSION: (e) =>
             `/guilds/${e}/migrate-pin-permission`,
-          GET_APPLICATION_TOKENS: (e) => `/oauth2/applications/${e}/tokens`,
           GUILD_MIGRATE_SLOWMODE_PERMISSION: (e) =>
             `/guilds/${e}/migrate-bypass-slowmode-permission`,
           QUEST_PLACEMENT: "/quests/placement-alpha",
@@ -4429,6 +4430,8 @@
           (a.WAVE_CTA_CLICKED = "wave_cta_clicked"),
           (a.FRIENDS_LIST_CLICKED = "friends_list_clicked"),
           (a.FRIENDS_LIST_ITEM_CLICKED = "friends_list_item_clicked"),
+          (a.FRIENDS_LIST_ITEM_CONTEXT_MENU_INTERACTED =
+            "friends_list_item_context_menu_interacted"),
           (a.FRIENDS_LIST_ITEM_MESSAGE_CLICKED =
             "friends_list_item_message_clicked"),
           (a.FRIENDS_LIST_ITEM_REMOVE_FRIEND_CLICKED =
@@ -5809,6 +5812,7 @@
           (a.SHOP_CARD_HOVERED = "shop_card_hovered"),
           (a.SHOP_PRODUCT_DETAIL_PAGE_CLICKED =
             "shop_product_detail_page_clicked"),
+          (a.SHOP_CARD_CLICKED = "shop_card_clicked"),
           (a.SLIDE_CAROUSEL_ITEM_VIEWED = "slide_carousel_item_viewed"),
           (a.SLIDE_CAROUSEL_PAGINATION_CLICKED =
             "slide_carousel_pagination_clicked"),
@@ -6486,7 +6490,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-04-13-24058b0ac9f9038e2bc72265b31b72e54f323c1d-discord_web",
+              "2026-04-14-2ae4025a82a291d43d62b122bde5e2a3d5b04853-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6553,8 +6557,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "527409"),
-            o.NA("builtAt", String("1776064759743"));
+            o.NA("buildNumber", "528151"),
+            o.NA("builtAt", String("1776151158969"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -39945,4 +39949,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.d125eccdfa81fd14.js.map
+//# sourceMappingURL=sentry.070287964a4f2b48.js.map
