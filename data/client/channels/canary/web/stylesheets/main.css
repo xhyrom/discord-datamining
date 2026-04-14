@@ -11929,10 +11929,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .questsIcon_c9d15c {
   flex-shrink: 0;
 }
-.hangStatusIcon_c9d15c {
-  height: 14px;
-  width: 14px;
-}
 .customStatusLabel_c9d15c {
   white-space: nowrap;
 }
@@ -28761,19 +28757,9 @@ html:not(.chat-input) .inputInner_b1f01d {
 .clickableContainer__39ec2:hover > .card__39ec2 {
   background: var(--user-profile-overlay-background-hover);
 }
-.image__39ec2 {
-  border-radius: var(--radius-sm);
-}
-.hangStatusIcon__39ec2 {
-  height: 100px;
-  width: 100px;
-}
-.hangStatusIcon__39ec2.small__39ec2 {
-  height: 60px;
-  width: 60px;
-}
 .clickableImage__39ec2,
-.clickableImage__39ec2:after {
+.clickableImage__39ec2:after,
+.image__39ec2 {
   border-radius: var(--radius-sm);
 }
 .clickableImage__39ec2:after {
@@ -50731,10 +50717,6 @@ svg.radioIcon_c1e9c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.voiceUser__07f91:hover .selfHangStatus__07f91 {
-  background-color: transparent;
-  border-color: transparent;
-}
 div.clanTagBadgeContainer__07f91 {
   margin-inline-start: 0;
 }
@@ -72246,4 +72228,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.c181417991955c14.css.map*/
+/*# sourceMappingURL=web.25371f69b8eeadb1.css.map*/

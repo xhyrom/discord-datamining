@@ -5824,14 +5824,6 @@
           (i.UPDATER_METRICS_COMBINED = "updater_metrics_combined"),
           (i.UPDATER_METRICS_TRANSITION_STATUS =
             "updater_metrics_transition_status"),
-          (i.SET_HANG_STATUS = "set_hang_status"),
-          (i.CLEAR_HANG_STATUS = "clear_hang_status"),
-          (i.SWIPE_HANG_STATUS = "swipe_hang_status"),
-          (i.HANG_STATUS_PICKER_OPENED = "hang_status_picker_opened"),
-          (i.VIEW_HANG_STATUS = "view_hang_status"),
-          (i.HANG_STATUS_FAVORITE_CLICKED = "hang_status_favorite_clicked"),
-          (i.HANG_STATUS_CTA_CLICKED = "hang_status_cta_clicked"),
-          (i.HANG_STATUS_RANDOMIZER_CLICKED = "hang_status_randomizer_clicked"),
           (i.HANGOUT_WINDOW_CLICKED = "hangout_window_clicked"),
           (i.HANGOUT_WINDOW_CONTENT_CLEARED = "hangout_window_content_cleared"),
           (i.HANGOUT_WINDOW_CONTENT_SET = "hangout_window_content_set"),
@@ -6490,7 +6482,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-378fa9800d3937740caed74fa0b075659b3ec4ef",
+            release: "discord_web-ae0d9b290a60c2e7a1558e5f5f81e92c979c0311",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6557,8 +6549,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "528627"),
-            o.NA("builtAt", String("1776201452207"));
+            o.NA("buildNumber", "528680"),
+            o.NA("builtAt", String("1776203893166"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -40021,4 +40013,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.93d8520d265a722c.js.map
+//# sourceMappingURL=sentry.be0126816ab55280.js.map
