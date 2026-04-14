@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Software Engineer, Developer Journey
+## Senior Software Engineer, Developer Success
 
 **Location:** San Francisco Bay Area
 
@@ -10,13 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8506485002](https://discord.com/jobs/8506485002)
 
-**Updated At:** Tue, 14 Apr 2026 18:00:45 GMT
+**Updated At:** Tue, 14 Apr 2026 21:59:31 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.People come to Discord before, during, and after gaming, and we want to make that experience even better. The Developer Success team is building the tools for game developers to make that happen by harnessing the power of Discord from right within their games. We believe that gaming is better when playing with your friends and aim to foster better and deeper relationships through that. This is also reflected in how we work! Our engineering culture believes that great teams are built through collaboration and trust. Come and join us!
 What You’ll Be Doing
 
-Delivering high-quality, high-impact projects that unlock new capabilities for game developers. This could include anything from our APIs, realtime infrastructure, C++ SDKs, developer portal, or even in the UI. Whatever it takes to get the important thing done.
+Delivering high-quality, high-impact projects that unlock new capabilities for game developers. This could include anything from our web APIs, realtime infrastructure, C++ SDKs, developer portal, or even in the UI. Whatever it takes to get the important thing done.
 Collaborating with the other engineers on your team to write, review, and ship elegant and scalable code. You take pride in the fact that your code will be used by millions and millions of people!
 Leading projects through the whole life cycle: including gathering requirements, breaking down milestones into smaller pieces, building, then shipping the thing.
 Listening and working with our game developer partners to better understand their needs in order to improve our tools. This could mean hopping into partner meetings as a technical expert or working with our DevReal team to answer their questions.
@@ -26,7 +26,7 @@ Using your attention to detail to continually raise the quality bar of the softw
 What you should have:
 
 4-5 years experience as a software engineer.
-Experience with some parts of our tech stack: Python, Typescript/React, Elixir, Rust, or C++. You are comfortable switching across stacks or learning new ones.
+Experience with some parts of our tech stack: Python, Typescript/React, or Elixir. You are comfortable switching across stacks or learning new ones.
 You have a sense for product and design. We don’t operate in silos, and you’ll be collaborating closely with cross-functional peers. You should be able to express opinions and collaborate to make something great.
 You take a holistic approach to problem solving. You believe in solving a problem from first principles rather than simply shipping a solution. You learn from your mistakes and work through obstacles with the rest of the team.
 You actively leverage AI coding tools to accelerate your productivity.
