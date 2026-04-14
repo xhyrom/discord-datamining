@@ -34,21 +34,21 @@
     <!-- section:title -->
     <title>Discord</title>
     <!-- endsection -->
-    <script nonce="MjEwLDksMTI3LDc4LDQyLDM3LDE2LDE0">
+    <script nonce="MTcyLDEzMywxNjksMTg2LDE0LDM5LDI0NywyMjU=">
       window.GLOBAL_ENV = {
         NODE_ENV: "production",
-        BUILT_AT: "1776180322203",
+        BUILT_AT: "1776184611576",
         HTML_TIMESTAMP: Date.now(),
-        BUILD_NUMBER: "528244",
+        BUILD_NUMBER: "528289",
         PROJECT_ENV: "production",
         RELEASE_CHANNEL: "canary",
-        VERSION_HASH: "04574f3ac607bf131942edeabd5f89c93805a3b0",
+        VERSION_HASH: "dd4a4f0484a07518a11d2355f1bed619db766fbe",
         PRIMARY_DOMAIN: "discord.com",
         SENTRY_TAGS: {
-          buildId: "04574f3ac607bf131942edeabd5f89c93805a3b0",
+          buildId: "dd4a4f0484a07518a11d2355f1bed619db766fbe",
           buildType: "normal",
         },
-        SENTRY_RELEASE: "discord_web-04574f3ac607bf131942edeabd5f89c93805a3b0",
+        SENTRY_RELEASE: "discord_web-dd4a4f0484a07518a11d2355f1bed619db766fbe",
         PUBLIC_PATH: "/assets/",
         LOCATION: "history",
         API_VERSION: 9,
@@ -85,15 +85,15 @@
         NATIVE_WEBSOCKET_ORIGIN: "undefined",
       };
     </script>
-    <script nonce="MjEwLDksMTI3LDc4LDQyLDM3LDE2LDE0">
+    <script nonce="MTcyLDEzMywxNjksMTg2LDE0LDM5LDI0NywyMjU=">
       window.__OVERLAY__ = /overlay/.test(location.pathname);
       window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname);
     </script>
-    <link as="script" href="/assets/web.1ba70c4613d62886.js" rel="preload" />
-    <link as="script" href="/assets/sentry.b00c8d671e9f4107.js" rel="preload" />
+    <link as="script" href="/assets/web.9d966a4e7fb4cb08.js" rel="preload" />
+    <link as="script" href="/assets/sentry.affcc9eca72628bc.js" rel="preload" />
     <link
       as="script"
-      href="/assets/fast-connect.78389de3299acc0a.js"
+      href="/assets/fast-connect.5623ace5988dd4ea.js"
       rel="preload"
     />
     <link
@@ -102,10 +102,11 @@
       rel="preload"
     />
     <link href="/assets/favicon.ico" rel="icon" />
-    <script nonce="MjEwLDksMTI3LDc4LDQyLDM3LDE2LDE0">
+    <script nonce="MTcyLDEzMywxNjksMTg2LDE0LDM5LDI0NywyMjU=">
       !(function () {
-        if (null != window.WebSocket) {
-          var n = function (n) {
+        if (
+          null != window.WebSocket &&
+          (function (n) {
             try {
               var o = localStorage.getItem(n);
               if (null == o) return null;
@@ -113,51 +114,50 @@
             } catch (e) {
               return null;
             }
-          };
-          if (n("token") && !window.__OVERLAY__) {
-            var o =
-                n("gateway_encoding_override") ||
-                (null != window.DiscordNative || null != window.require
-                  ? "etf"
-                  : "json"),
-              e =
-                window.GLOBAL_ENV.GATEWAY_ENDPOINT +
-                "/?encoding=" +
+          })("token") &&
+          !window.__OVERLAY__
+        ) {
+          var n =
+              null != window.DiscordNative || null != window.require
+                ? "etf"
+                : "json",
+            o =
+              window.GLOBAL_ENV.GATEWAY_ENDPOINT +
+              "/?encoding=" +
+              n +
+              "&v=" +
+              window.GLOBAL_ENV.API_VERSION;
+          null != window.DiscordNative &&
+          void 0 !== window.Uint8Array &&
+          void 0 !== window.TextDecoder
+            ? (o += "&compress=zstd-stream")
+            : void 0 !== window.Uint8Array && (o += "&compress=zlib-stream"),
+            console.log(
+              "[FAST CONNECT] " +
                 o +
-                "&v=" +
-                window.GLOBAL_ENV.API_VERSION;
-            null != window.DiscordNative &&
-            void 0 !== window.Uint8Array &&
-            void 0 !== window.TextDecoder
-              ? (e += "&compress=zstd-stream")
-              : void 0 !== window.Uint8Array && (e += "&compress=zlib-stream"),
-              console.log(
-                "[FAST CONNECT] " +
-                  e +
-                  ", encoding: " +
-                  o +
-                  ", version: " +
-                  window.GLOBAL_ENV.API_VERSION,
-              );
-            var i = new WebSocket(e);
-            i.binaryType = "arraybuffer";
-            var r = Date.now(),
-              w = { open: !1, identify: !1, gateway: e, messages: [] };
-            (i.onopen = function () {
-              console.log(
-                "[FAST CONNECT] connected in " + (Date.now() - r) + "ms",
-              ),
-                (w.open = !0);
-            }),
-              (i.onclose = i.onerror =
-                function () {
-                  window._ws = null;
-                }),
-              (i.onmessage = function (n) {
-                w.messages.push(n);
+                ", encoding: " +
+                n +
+                ", version: " +
+                window.GLOBAL_ENV.API_VERSION,
+            );
+          var e = new WebSocket(o);
+          e.binaryType = "arraybuffer";
+          var i = Date.now(),
+            r = { open: !1, identify: !1, gateway: o, messages: [] };
+          (e.onopen = function () {
+            console.log(
+              "[FAST CONNECT] connected in " + (Date.now() - i) + "ms",
+            ),
+              (r.open = !0);
+          }),
+            (e.onclose = e.onerror =
+              function () {
+                window._ws = null;
               }),
-              (window._ws = { ws: i, state: w });
-          }
+            (e.onmessage = function (n) {
+              r.messages.push(n);
+            }),
+            (window._ws = { ws: e, state: r });
         }
       })();
     </script>
@@ -165,24 +165,24 @@
       defer
       src="/assets/libdiscore-wasm-fetch.b0c160428febe877.js"
     ></script>
-    <script defer src="/assets/fast-connect.78389de3299acc0a.js"></script>
-    <script defer src="/assets/sentry.b00c8d671e9f4107.js"></script>
-    <script defer src="/assets/web.1ba70c4613d62886.js"></script>
-    <link href="/assets/web.5dffbf579b3250f0.css" rel="stylesheet" />
+    <script defer src="/assets/fast-connect.5623ace5988dd4ea.js"></script>
+    <script defer src="/assets/sentry.affcc9eca72628bc.js"></script>
+    <script defer src="/assets/web.9d966a4e7fb4cb08.js"></script>
+    <link href="/assets/web.b55e4aa60a3f6b88.css" rel="stylesheet" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="app-mount"></div>
 
-    <script nonce="MjEwLDksMTI3LDc4LDQyLDM3LDE2LDE0">
+    <script nonce="MTcyLDEzMywxNjksMTg2LDE0LDM5LDI0NywyMjU=">
       (function () {
         function c() {
           var b = a.contentDocument || a.contentWindow.document;
           if (b) {
             var d = b.createElement("script");
-            d.nonce = "MjEwLDksMTI3LDc4LDQyLDM3LDE2LDE0";
+            d.nonce = "MTcyLDEzMywxNjksMTg2LDE0LDM5LDI0NywyMjU=";
             d.innerHTML =
-              "window.__CF$cv$params={r:'9ec3d4caae1223cc',t:'MTc3NjE4MTQ1OQ=='};var a=document.createElement('script');a.nonce='MjEwLDksMTI3LDc4LDQyLDM3LDE2LDE0';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+              "window.__CF$cv$params={r:'9ec42d744d5a5397',t:'MTc3NjE4NTA5MQ=='};var a=document.createElement('script');a.nonce='MTcyLDEzMywxNjksMTg2LDE0LDM5LDI0NywyMjU=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
             b.getElementsByTagName("head")[0].appendChild(d);
           }
         }
