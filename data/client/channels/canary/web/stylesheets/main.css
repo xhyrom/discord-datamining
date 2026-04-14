@@ -12481,8 +12481,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   --custom-pop-stroke-width: calc(1.2px + 0.04em);
   --custom-pop-bottom-translate_3d: 0.08em;
   color: var(--white);
+  display: inline-block;
   paint-order: stroke fill;
   position: relative;
+  vertical-align: top;
   -webkit-text-stroke-color: var(--custom-display-name-styles-dark-2-color);
   margin-bottom: calc(
     var(--custom-pop-stroke-width) * -1 - var(--custom-pop-bottom-translate_3d)
@@ -72244,4 +72246,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.bbd118d58b541956.css.map*/
+/*# sourceMappingURL=web.c181417991955c14.css.map*/
