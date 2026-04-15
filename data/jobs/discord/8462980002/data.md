@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8462980002](https://discord.com/jobs/8462980002)
 
-**Updated At:** Tue, 17 Mar 2026 21:27:29 GMT
+**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for an exceptional Trust &amp;amp; Safety Counsel to join our growing legal team.&amp;nbsp; This is a high-impact role at one of the most interesting companies on the planet!&amp;nbsp; As our second Trust &amp;amp; Safety counsel, you will support our Trust &amp;amp; Safety organiztion as it seeks to respond to law enforcement data requests, identify and remove harmful content and actors from the Discord platform, and comply with obligations under global laws and regulations.&amp;nbsp;&amp;nbsp;

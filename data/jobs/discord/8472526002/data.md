@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8472526002](https://discord.com/jobs/8472526002)
 
-**Updated At:** Wed, 25 Mar 2026 20:52:28 GMT
+**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Social Commerce team is building a storefront for game developers to sell directly to their players in Discord. This is a new initiative that has seen a lot of early success, and we're expanding it to support more games and platforms. But we're not just building a shop — Discord is where friends already hang out, play together, and share the things they love. We are building commerce experiences that no other platform can: purchasing that's social, contextual, and embedded in the games people already play and places they already spend time. If you are excited to get in on the ground floor of this new product, then this role is for you.

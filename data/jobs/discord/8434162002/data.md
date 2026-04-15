@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8434162002](https://discord.com/jobs/8434162002)
 
-**Updated At:** Wed, 11 Mar 2026 16:26:33 GMT
+**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord's Legal team is looking for an Associate Product Counsel to join its Product Legal team to provide dedicated support for our Consumer Revenue products. Discord's Product Legal team partners directly with Product, Engineering, Data Science, and cross-functional teams to provide legal guidance and strategy that helps Discord launch new products and grow our user base. We help teams navigate complex legal landscapes while achieving their product goals by seeing around corners to identify risks and opportunities before they become roadblocks.&amp;nbsp;

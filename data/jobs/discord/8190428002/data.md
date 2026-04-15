@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8190428002](https://discord.com/jobs/8190428002)
 
-**Updated At:** Tue, 07 Apr 2026 20:28:08 GMT
+**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our team’s mission is to create win-win-win solutions that drive success for players, game businesses, and Discord. We do this by building intuitive, scalable experiences that balance user needs with business goals, and by empowering teams to solve complex problems thoughtfully and effectively.

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8490430002](https://discord.com/jobs/8490430002)
 
-**Updated At:** Wed, 01 Apr 2026 20:58:48 GMT
+**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is seeking a seasoned Commercial Counsel to join our Legal team to drive complex, high-impact transactions that drive our platform's revenue and growth. You'll be a strategic legal partner for our most sophisticated commercial initiatives, from ad sales and major partnerships to novel revenue streams and product launches.&amp;nbsp; This role offers exceptional opportunity to help Discord scale its commercial relationships globally, working at the forefront of gaming, advertising and community engagement.

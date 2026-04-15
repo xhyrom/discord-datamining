@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8438033002](https://discord.com/jobs/8438033002)
 
-**Updated At:** Fri, 06 Mar 2026 18:20:44 GMT
+**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a Senior Machine Learning Engineer to join our Revenue ML team at Discord. This role sits at the intersection of Discord's two most strategic revenue pillars — our growing 1P Shop and our newly launched Game Commerce platform, which connects players to in-game items from major publishers like Marvel Rivals, Fortnite, Valorant, and more. You'll be the founding ML voice for commerce discovery and personalization, building systems from the ground up that power recommendations, social commerce mechanics, and marketing targeting across both first-party and third-party storefronts.
