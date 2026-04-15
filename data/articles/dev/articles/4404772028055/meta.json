@@ -2,7 +2,7 @@
   "id": 4404772028055,
   "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/4404772028055.json",
   "html_url": "https://support-dev.discord.com/hc/en-us/articles/4404772028055-Message-Content-Privileged-Intent-FAQ",
-  "author_id": 4749086327,
+  "author_id": 17347533772439,
   "comments_disabled": true,
   "draft": false,
   "promoted": false,
@@ -21,7 +21,9 @@
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
-    "bots"
+    "bots",
+    "Message Content Intent",
+    "Privileged Intents"
   ],
   "user_segment_ids": []
 }
