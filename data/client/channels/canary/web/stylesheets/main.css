@@ -17984,6 +17984,16 @@ img.thumbnail__0f2e8 {
   .wishlistButton__979b1.variantDefault__979b1:not(.disabled__979b1):active {
   background: var(--control-overlay-secondary-background-active);
 }
+.wishlistButton__979b1.variantSecondary__979b1 {
+  background: var(--control-secondary-background-default);
+  border: 1px solid var(--control-secondary-border-default);
+}
+.wishlistButton__979b1.variantSecondary__979b1:not(.disabled__979b1):hover {
+  background: var(--control-secondary-background-hover);
+}
+.wishlistButton__979b1.variantSecondary__979b1:not(.disabled__979b1):active {
+  background: var(--control-secondary-background-active);
+}
 .normalIconColor__979b1 {
   fill: var(--icon-strong);
   transition: fill 50ms ease-in;
@@ -31197,119 +31207,6 @@ body .headerAnimation_b54a5b {
   margin-top: 8px;
   text-align: center;
 }
-.row__06c2b {
-  padding-top: 20px;
-}
-.row__06c2b:first-child {
-  padding-top: 0;
-}
-.section__06c2b {
-  box-sizing: border-box;
-  flex: 0 1 auto;
-  padding-inline-start: 20px;
-}
-.section__06c2b:first-child {
-  padding-inline-start: 0;
-}
-.width100__06c2b {
-  width: 100%;
-}
-.width75__06c2b {
-  width: 75%;
-}
-.width60__06c2b {
-  width: 60%;
-}
-.width40__06c2b {
-  width: 40%;
-}
-.width30__06c2b {
-  width: 30%;
-}
-.width50__06c2b {
-  width: 50%;
-}
-.width25__06c2b {
-  width: 25%;
-}
-.modal__6181b {
-  overflow-x: hidden;
-  transform: translateZ(0);
-}
-.planSelector__6181b {
-  margin-top: 20px;
-}
-.form__6181b {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  max-height: 660px;
-}
-.divider__6181b {
-  border-top: 1px solid;
-  margin: 0 20px;
-  position: relative;
-}
-.content__6181b {
-  margin-bottom: 20px;
-}
-.giftToggle__6181b {
-  margin-top: var(--space-8);
-}
-.formTitle__6181b {
-  margin: 20px 0 10px;
-}
-.errorBlock__6181b,
-.purchaseTerms__6181b {
-  margin-top: 20px;
-}
-.invalidIcon__6181b {
-  height: 18px;
-  padding: 0 1px;
-  width: 18px;
-}
-.choosePaymentSourceType__6181b {
-  margin-top: 20px;
-}
-.buyButtonTooltipWrapper__6181b {
-  position: relative;
-}
-.buyButtonTooltipTarget__6181b {
-  cursor: not-allowed;
-  inset: 0;
-  position: absolute;
-  z-index: 1;
-}
-.backButtonSize__6181b {
-  height: 38px;
-  width: auto;
-}
-.backButton__6181b {
-  padding: 0;
-}
-.backButton__6181b:hover {
-  text-decoration: underline;
-}
-.modalContent__6181b {
-  -webkit-overflow-scrolling: touch;
-}
-@media (max-width: 485px) and (max-height: 550px) {
-  .form__6181b {
-    display: block;
-  }
-  .modalContent__6181b {
-    height: auto;
-  }
-}
-.theme-dark .divider__6181b {
-  border-color: var(--primary-630);
-}
-.theme-light .divider__6181b {
-  border-color: hsl(var(--primary-200-hsl) / 0.6);
-}
-.backButtonColor__6181b {
-  color: var(--text-default);
-}
 .note__2ef07 {
   font-size: 12px;
   margin-top: 20px;
@@ -31402,6 +31299,41 @@ body .headerAnimation_b54a5b {
   flex: 1 1 auto;
   flex-direction: column;
   min-height: 0;
+}
+.row__06c2b {
+  padding-top: 20px;
+}
+.row__06c2b:first-child {
+  padding-top: 0;
+}
+.section__06c2b {
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  padding-inline-start: 20px;
+}
+.section__06c2b:first-child {
+  padding-inline-start: 0;
+}
+.width100__06c2b {
+  width: 100%;
+}
+.width75__06c2b {
+  width: 75%;
+}
+.width60__06c2b {
+  width: 60%;
+}
+.width40__06c2b {
+  width: 40%;
+}
+.width30__06c2b {
+  width: 30%;
+}
+.width50__06c2b {
+  width: 50%;
+}
+.width25__06c2b {
+  width: 25%;
 }
 .cardNumberWrapper__8b579 {
   position: relative;
@@ -31540,6 +31472,84 @@ body .headerAnimation_b54a5b {
 }
 .theme-light .cardFormHeader__3e8d5.unionpay_monochrome__3e8d5:before {
   background-image: url(/assets/d1fe91ba5e5f4702.svg);
+}
+.modal__6181b {
+  overflow-x: hidden;
+  transform: translateZ(0);
+}
+.planSelector__6181b {
+  margin-top: 20px;
+}
+.form__6181b {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-height: 660px;
+}
+.divider__6181b {
+  border-top: 1px solid;
+  margin: 0 20px;
+  position: relative;
+}
+.content__6181b {
+  margin-bottom: 20px;
+}
+.giftToggle__6181b {
+  margin-top: var(--space-8);
+}
+.formTitle__6181b {
+  margin: 20px 0 10px;
+}
+.errorBlock__6181b,
+.purchaseTerms__6181b {
+  margin-top: 20px;
+}
+.invalidIcon__6181b {
+  height: 18px;
+  padding: 0 1px;
+  width: 18px;
+}
+.choosePaymentSourceType__6181b {
+  margin-top: 20px;
+}
+.buyButtonTooltipWrapper__6181b {
+  position: relative;
+}
+.buyButtonTooltipTarget__6181b {
+  cursor: not-allowed;
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+.backButtonSize__6181b {
+  height: 38px;
+  width: auto;
+}
+.backButton__6181b {
+  padding: 0;
+}
+.backButton__6181b:hover {
+  text-decoration: underline;
+}
+.modalContent__6181b {
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 485px) and (max-height: 550px) {
+  .form__6181b {
+    display: block;
+  }
+  .modalContent__6181b {
+    height: auto;
+  }
+}
+.theme-dark .divider__6181b {
+  border-color: var(--primary-630);
+}
+.theme-light .divider__6181b {
+  border-color: hsl(var(--primary-200-hsl) / 0.6);
+}
+.backButtonColor__6181b {
+  color: var(--text-default);
 }
 .body_af4c15 {
   padding-bottom: 16px;
@@ -70274,4 +70284,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.c709bd372a6cf839.css.map*/
+/*# sourceMappingURL=web.72ad849db66c1b61.css.map*/
