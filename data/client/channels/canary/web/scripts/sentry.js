@@ -857,8 +857,8 @@
             });
           for (var P = [1]; 2 * P[P.length - 1] <= 1e7; )
             P.push(2 * P[P.length - 1]);
-          var v = P.length,
-            w = P[v - 1];
+          var w = P.length,
+            v = P[w - 1];
           function M(e) {
             return 1e7 >= Math.abs(e);
           }
@@ -877,10 +877,10 @@
               !n.isZero() || !o.isZero();
 
             )
-              (s = (c = C(n, w))[1].toJSNumber()),
-                a && (s = w - 1 - s),
-                (E = (l = C(o, w))[1].toJSNumber()),
-                _ && (E = w - 1 - E),
+              (s = (c = C(n, v))[1].toJSNumber()),
+                a && (s = v - 1 - s),
+                (E = (l = C(o, v))[1].toJSNumber()),
+                _ && (E = v - 1 - E),
                 (n = c[0]),
                 (o = l[0]),
                 u.push(r(s, E));
@@ -889,7 +889,7 @@
               I >= 0;
               I -= 1
             )
-              d = d.multiply(w).add(i(u[I]));
+              d = d.multiply(v).add(i(u[I]));
             return d;
           }
           (n.prototype.shiftLeft = function (e) {
@@ -898,7 +898,7 @@
             if (t < 0) return this.shiftRight(-t);
             var r = this;
             if (r.isZero()) return r;
-            for (; t >= v; ) (r = r.multiply(w)), (t -= v - 1);
+            for (; t >= w; ) (r = r.multiply(v)), (t -= w - 1);
             return r.multiply(P[t]);
           }),
             (s.prototype.shiftLeft = o.prototype.shiftLeft =
@@ -908,10 +908,10 @@
                 r = x(e).toJSNumber();
               if (!M(r)) throw Error(String(r) + " is too large for shifting.");
               if (r < 0) return this.shiftLeft(-r);
-              for (var i = this; r >= v; ) {
+              for (var i = this; r >= w; ) {
                 if (i.isZero() || (i.isNegative() && i.isUnit())) return i;
-                (i = (t = C(i, w))[1].isNegative() ? t[0].prev() : t[0]),
-                  (r -= v - 1);
+                (i = (t = C(i, v))[1].isNegative() ? t[0].prev() : t[0]),
+                  (r -= w - 1);
               }
               return (t = C(i, P[r]))[1].isNegative() ? t[0].prev() : t[0];
             }),
@@ -6484,7 +6484,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-cc159bc5f2bee367fd21c6de7be2d2ca51dbb15a",
+            release: "discord_web-06a49401419577251ea65d89160c87b864e87a1e",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6551,8 +6551,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "528981"),
-            o.NA("builtAt", String("1776248261749"));
+            o.NA("buildNumber", "529010"),
+            o.NA("builtAt", String("1776261904459"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -8114,6 +8114,14 @@
                   [i.LIGHT]: { raw: "NEUTRAL_76", opacity: 1 },
                   [i.MIDNIGHT]: { raw: "NEUTRAL_8", opacity: 1 },
                   [i.DARKER]: { raw: "NEUTRAL_2", opacity: 1 },
+                },
+              },
+              MOBILE_THREAD_EMBED_BACKGROUND: {
+                "mobile-visual-refresh": {
+                  [i.DARK]: { raw: "NEUTRAL_64", opacity: 1 },
+                  [i.LIGHT]: { raw: "NEUTRAL_1", opacity: 1 },
+                  [i.MIDNIGHT]: { raw: "NEUTRAL_91", opacity: 1 },
+                  [i.DARKER]: { raw: "NEUTRAL_79", opacity: 1 },
                 },
               },
               MOBILE_TYPING_INDICATOR_BACKGROUND_DEFAULT: {
@@ -10376,6 +10384,13 @@
                 [i.MIDNIGHT]: { raw: "PLUM_2", opacity: 1 },
                 [i.DARKER]: { raw: "PLUM_3", opacity: 1 },
               },
+              MOBILE_THREAD_EMBED_BACKGROUND: {
+                category: "generic",
+                [i.DARK]: { raw: "PRIMARY_500", opacity: 0.48 },
+                [i.LIGHT]: { raw: "PRIMARY_400", opacity: 0.16 },
+                [i.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.12 },
+                [i.DARKER]: { raw: "PLUM_11", opacity: 0.16 },
+              },
               MOBILE_TOAST_BACKGROUND_DEFAULT: {
                 category: "generic",
                 [i.DARK]: { raw: "PRIMARY_800", opacity: 1 },
@@ -11013,6 +11028,13 @@
                 [i.LIGHT]: { raw: "BRAND_530", opacity: 1 },
                 [i.MIDNIGHT]: { raw: "BRAND_400", opacity: 1 },
                 [i.DARKER]: { raw: "BRAND_360", opacity: 1 },
+              },
+              TEXT_CODE: {
+                category: "text",
+                [i.DARK]: { raw: "BLUE_NEW_16", opacity: 1 },
+                [i.LIGHT]: { raw: "BLUE_NEW_68", opacity: 1 },
+                [i.MIDNIGHT]: { raw: "BLUE_NEW_23", opacity: 1 },
+                [i.DARKER]: { raw: "BLUE_NEW_19", opacity: 1 },
               },
               TEXT_DEFAULT: {
                 category: "text",
@@ -13248,14 +13270,6 @@
                   return 0;
                 },
               },
-              COACHMARK_BODY_BORDER_RADIUS: {
-                resolve(e) {
-                  let { enabledExperiments: t } = e;
-                  if (0 === t.length) return 16;
-                  for (let e of t) if ("mobile-visual-refresh" === e) return 12;
-                  return 16;
-                },
-              },
               COACHMARK_BODY_WIDTH: {
                 resolve(e) {
                   let { enabledExperiments: t } = e;
@@ -13824,7 +13838,7 @@
                   let { enabledExperiments: t } = e;
                   if (0 === t.length) return "text-sm/semibold";
                   for (let e of t)
-                    if ("mobile-visual-refresh" === e) return "text-sm/medium";
+                    if ("mobile-visual-refresh" === e) return "text-md/medium";
                   return "text-sm/semibold";
                 },
               },
@@ -15806,7 +15820,7 @@
             g = Math.round,
             y = o.unpack,
             P = Math.round,
-            v = function () {
+            w = function () {
               for (var e, t, r, i, a = [], _ = arguments.length; _--; )
                 a[_] = arguments[_];
               var n = (a = y(a, "hsl"))[0],
@@ -15836,7 +15850,7 @@
               }
               return a.length > 3 ? [t, r, i, a[3]] : [t, r, i, 1];
             },
-            w = /^rgb\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*\)$/,
+            v = /^rgb\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*\)$/,
             M =
               /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/,
             U =
@@ -15853,7 +15867,7 @@
                 try {
                   return s.format.named(e);
                 } catch (e) {}
-              if ((t = e.match(w))) {
+              if ((t = e.match(v))) {
                 for (var t, r = t.slice(1, 4), i = 0; i < 3; i++) r[i] = +r[i];
                 return (r[3] = 1), r;
               }
@@ -15874,19 +15888,19 @@
               if ((t = e.match(b))) {
                 var l = t.slice(1, 4);
                 (l[1] *= 0.01), (l[2] *= 0.01);
-                var u = v(l);
+                var u = w(l);
                 return (u[3] = 1), u;
               }
               if ((t = e.match(H))) {
                 var d = t.slice(1, 4);
                 (d[1] *= 0.01), (d[2] *= 0.01);
-                var I = v(d);
+                var I = w(d);
                 return (I[3] = +t[4]), I;
               }
             };
           K.test = function (e) {
             return (
-              w.test(e) ||
+              v.test(e) ||
               M.test(e) ||
               U.test(e) ||
               G.test(e) ||
@@ -16218,7 +16232,7 @@
                 [null].concat(e, ["hsl"]),
               ))();
             }),
-            (s.format.hsl = v),
+            (s.format.hsl = w),
             s.autodetect.push({
               p: 2,
               test: function () {
@@ -16321,8 +16335,8 @@
             eg = 1,
             ey = 1.08883,
             eP = 0.137931034,
-            ev = 0.206896552,
-            ew = 0.12841855,
+            ew = 0.206896552,
+            ev = 0.12841855,
             eM = 0.008856452,
             eU = o.unpack,
             eG = Math.pow,
@@ -16332,7 +16346,7 @@
                 : eG((e + 0.055) / 1.055, 2.4);
             },
             eH = function (e) {
-              return e > eM ? eG(e, 1 / 3) : e / ew + eP;
+              return e > eM ? eG(e, 1 / 3) : e / ev + eP;
             },
             eB = function () {
               for (var e, t, r, i = [], a = arguments.length; a--; )
@@ -16367,7 +16381,7 @@
               );
             },
             ek = function (e) {
-              return e > ev ? e * e * e : ew * (e - eP);
+              return e > ew ? e * e * e : ev * (e - eP);
             },
             eF = function () {
               for (var e, t, r, i, a = [], _ = arguments.length; _--; )
@@ -16907,14 +16921,14 @@
             tg = o.unpack,
             ty = o.unpack,
             tP = o.type,
-            tv = function () {
+            tw = function () {
               for (var e = [], t = arguments.length; t--; ) e[t] = arguments[t];
               var r = tm(e, "rgb"),
                 i = tA(r[0], r[1], r[2]);
               return eJ(i[0], i[1], i[2]);
             };
           (u.prototype.oklch = function () {
-            return tv(this._rgb);
+            return tw(this._rgb);
           }),
             (d.oklch = function () {
               for (var e = [], t = arguments.length; t--; ) e[t] = arguments[t];
@@ -16938,10 +16952,10 @@
                   return "oklch";
               },
             });
-          var tw = o.type;
+          var tv = o.type;
           (u.prototype.alpha = function (e, t) {
             return (void 0 === t && (t = !1),
-            void 0 !== e && "number" === tw(e))
+            void 0 !== e && "number" === tv(e))
               ? t
                 ? ((this._rgb[3] = e), this)
                 : new u([this._rgb[0], this._rgb[1], this._rgb[2], e], "rgb")
@@ -17725,17 +17739,17 @@
                         var P = rs(L[y] - C);
                         P < m && ((m = P), (g = y)), f[g]++, (A[S] = g);
                       }
-                    for (var v = Array(r), w = 0; w < r; w++) v[w] = null;
+                    for (var w = Array(r), v = 0; v < r; v++) w[v] = null;
                     for (var M = 0; M < R; M++)
-                      null === v[(T = A[M])] ? (v[T] = n[M]) : (v[T] += n[M]);
-                    for (var U = 0; U < r; U++) v[U] *= 1 / f[U];
+                      null === w[(T = A[M])] ? (w[T] = n[M]) : (w[T] += n[M]);
+                    for (var U = 0; U < r; U++) w[U] *= 1 / f[U];
                     N = !1;
                     for (var G = 0; G < r; G++)
-                      if (v[G] !== L[G]) {
+                      if (w[G] !== L[G]) {
                         N = !0;
                         break;
                       }
-                    (L = v), ++O > 200 && (N = !1);
+                    (L = w), ++O > 200 && (N = !1);
                   }
                   for (var b = {}, H = 0; H < r; H++) b[H] = [];
                   for (var B = 0; B < R; B++) b[(T = A[B])].push(n[B]);
@@ -18366,8 +18380,8 @@
                 P = m - C;
               (P = 180 >= rT(P) ? P : m <= C ? P + 360 : P - 360),
                 (P = 2 * rl(O * L) * rA(n(P) / 2));
-              var v = L - O,
-                w = 1 + (0.015 * ru(T - 50, 2)) / rl(20 + ru(T - 50, 2)),
+              var w = L - O,
+                v = 1 + (0.015 * ru(T - 50, 2)) / rl(20 + ru(T - 50, 2)),
                 M = 1 + 0.045 * h,
                 U = 1 + 0.015 * h * y,
                 G = 30 * rf(-ru((g - 275) / 25, 2)),
@@ -18377,10 +18391,10 @@
                 rd(
                   100,
                   rl(
-                    ru((d - s) / (r * w), 2) +
-                      ru(v / (i * M), 2) +
+                    ru((d - s) / (r * v), 2) +
+                      ru(w / (i * M), 2) +
                       ru(P / (a * U), 2) +
-                      (v / (i * M)) * b * (P / (a * U)),
+                      (w / (i * M)) * b * (P / (a * U)),
                   ),
                 ),
               );
@@ -18857,14 +18871,14 @@
             startSpanManual: () => l.nV,
             statsigIntegration: () => el.I,
             suppressTracing: () => l.M1,
-            thirdPartyErrorFilterIntegration: () => v.y,
+            thirdPartyErrorFilterIntegration: () => w.y,
             unleashIntegration: () => ec.v,
             updateSpanName: () => R.zQ,
             winjsStackLineParser: () => b.$2,
             withActiveSpan: () => l.hb,
             withIsolationScope: () => A.rB,
             withScope: () => A.v4,
-            zodErrorsIntegration: () => w.rB,
+            zodErrorsIntegration: () => v.rB,
           });
         var i = r(92332),
           a = r(128377),
@@ -18894,8 +18908,8 @@
           g = r(779949),
           y = r(142080),
           P = r(411361),
-          v = r(30216),
-          w = r(709139),
+          w = r(30216),
+          v = r(709139),
           M = r(804524),
           U = r(313322),
           G = r(195588),
@@ -20125,7 +20139,7 @@
         "use strict";
         r.d(t, {
           Bj: () => g,
-          DE: () => w,
+          DE: () => v,
           Dg: () => C,
           TD: () => S,
           WK: () => h,
@@ -20133,7 +20147,7 @@
           c4: () => O,
           ex: () => P,
           lV: () => L,
-          ws: () => v,
+          ws: () => w,
         });
         var i = r(272469),
           a = r(83220),
@@ -20457,11 +20471,11 @@
         function P() {
           return y.size;
         }
-        function v(e) {
+        function w(e) {
           let t = y.get(e);
           return t && y.delete(e), t;
         }
-        function w(e, t) {
+        function v(e, t) {
           if ((y.set(e, t), y.size > 30)) {
             let e = y.keys().next().value;
             y.delete(e);
@@ -20816,8 +20830,8 @@
                 idleTimeout: g,
                 finalTimeout: y,
                 childSpanTimeout: P,
-                markBackgroundSpan: v,
-                traceFetch: w,
+                markBackgroundSpan: w,
+                traceFetch: v,
                 traceXHR: M,
                 trackFetchStreamPerformance: U,
                 shouldCreateSpanForRequest: G,
@@ -20938,7 +20952,7 @@
                             },
                           }));
                       })),
-                  v && (0, N.i)(),
+                  w && (0, N.i)(),
                   R &&
                     ((r = g),
                     (i = y),
@@ -20991,7 +21005,7 @@
                       )),
                   t && (0, a.B)(),
                   (0, O.Qb)(e, {
-                    traceFetch: w,
+                    traceFetch: v,
                     traceXHR: M,
                     trackFetchStreamPerformance: U,
                     tracePropagationTargets:
@@ -24409,13 +24423,13 @@ ${e.stack}`
           function P() {
             T && (clearTimeout(T), (T = void 0));
           }
-          function v(e) {
+          function w(e) {
             P(),
               (T = setTimeout(() => {
                 !A && 0 === R.size && N && ((f = "idleTimeout"), y.end(e));
               }, L));
           }
-          function w(e) {
+          function v(e) {
             T = setTimeout(() => {
               !A && N && ((f = "heartbeatFailed"), y.end(e));
             }, D);
@@ -24487,7 +24501,7 @@ ${e.stack}`
                     ((t = e.spanContext().spanId),
                     P(),
                     R.set(t, !0),
-                    w((0, o.zf)() + D / 1e3)));
+                    v((0, o.zf)() + D / 1e3)));
               }),
             ),
             O.push(
@@ -24496,16 +24510,16 @@ ${e.stack}`
                   var t;
                   (t = e.spanContext().spanId),
                     R.has(t) && R.delete(t),
-                    0 === R.size && v((0, o.zf)() + L / 1e3);
+                    0 === R.size && w((0, o.zf)() + L / 1e3);
                 }
               }),
             ),
             O.push(
               C.on("idleSpanEnableAutoFinish", (e) => {
-                e === y && ((N = !0), v(), R.size && w());
+                e === y && ((N = !0), w(), R.size && v());
               }),
             ),
-            t.disableAutoFinish || v(),
+            t.disableAutoFinish || w(),
             setTimeout(() => {
               A ||
                 (y.setStatus({ code: 2, message: "deadline_exceeded" }),
@@ -24965,7 +24979,7 @@ ${e.stack}`
           N = r(86361);
         let O = "__SENTRY_SUPPRESS_TRACING__";
         function L(e, t) {
-          let r = v();
+          let r = w();
           if (r.startSpan) return r.startSpan(e, t);
           let i = P(e),
             { forceTransaction: _, parentSpan: n } = e;
@@ -24999,7 +25013,7 @@ ${e.stack}`
           );
         }
         function h(e, t) {
-          let r = v();
+          let r = w();
           if (r.startSpanManual) return r.startSpanManual(e, t);
           let i = P(e),
             { forceTransaction: _, parentSpan: n } = e;
@@ -25035,7 +25049,7 @@ ${e.stack}`
           );
         }
         function D(e) {
-          let t = v();
+          let t = w();
           if (t.startInactiveSpan) return t.startInactiveSpan(e);
           let r = P(e),
             { forceTransaction: i, parentSpan: _ } = e;
@@ -25069,13 +25083,13 @@ ${e.stack}`
           });
         };
         function C(e, t) {
-          let r = v();
+          let r = w();
           return r.withActiveSpan
             ? r.withActiveSpan(e, t)
             : (0, a.v4)((r) => ((0, d.r)(r, e || void 0), t(r)));
         }
         function m(e) {
-          let t = v();
+          let t = w();
           return t.suppressTracing
             ? t.suppressTracing(e)
             : (0, a.v4)((t) => (t.setSDKProcessingMetadata({ [O]: !0 }), e()));
@@ -25122,7 +25136,7 @@ ${e.stack}`
             let r = (0, p.k1)(e),
               { traceId: a, spanId: n } = e.spanContext(),
               o = (0, I.pK)(e);
-            (_ = w({ traceId: a, parentSpanId: n, ...t }, i, o)),
+            (_ = v({ traceId: a, parentSpanId: n, ...t }, i, o)),
               (0, p.LZ)(_, r);
           } else {
             let {
@@ -25131,7 +25145,7 @@ ${e.stack}`
               parentSpanId: a,
               sampled: o,
             } = { ...n.getPropagationContext(), ...i.getPropagationContext() };
-            (_ = w({ traceId: e, parentSpanId: a, ...t }, i, o)),
+            (_ = v({ traceId: e, parentSpanId: a, ...t }, i, o)),
               r && (0, p.LZ)(_, r);
           }
           return (0, T.z)(_), (0, N.d)(_, i, n), _;
@@ -25146,11 +25160,11 @@ ${e.stack}`
           }
           return t;
         }
-        function v() {
+        function w() {
           let e = (0, i.E)();
           return (0, _.h)(e);
         }
-        function w(e, t, r) {
+        function v(e, t, r) {
           let i = (0, a.KU)(),
             _ = (i && i.getOptions()) || {},
             { name: n = "", attributes: s } = e,
@@ -27756,7 +27770,7 @@ Error:`,
       582102(e, t, r) {
         "use strict";
         r.d(t, {
-          Bk: () => v,
+          Bk: () => w,
           CC: () => I,
           Ck: () => R,
           Hu: () => m,
@@ -27767,7 +27781,7 @@ Error:`,
           et: () => L,
           kX: () => A,
           pK: () => h,
-          r2: () => w,
+          r2: () => v,
           xO: () => y,
           xl: () => M,
           yW: () => D,
@@ -27894,13 +27908,13 @@ Error:`,
         function P(e) {
           return e[C] || e;
         }
-        function v() {
+        function w() {
           let e = (0, a.E)(),
             t = (0, i.h)(e);
           return t.getActiveSpan ? t.getActiveSpan() : (0, d.f)((0, _.o5)());
         }
-        function w(e, t, r, i, a, _) {
-          let o = v();
+        function v(e, t, r, i, a, _) {
+          let o = w();
           o && (0, n.X)(o, e, t, r, i, a, _);
         }
         function M() {
@@ -28765,25 +28779,25 @@ Error:`,
         let R = {},
           A = {};
         function f(e, t = !1) {
-          return v("cls", e, C, i, t);
+          return w("cls", e, C, i, t);
         }
         function N(e, t = !1) {
-          return v("lcp", e, g, _, t);
+          return w("lcp", e, g, _, t);
         }
         function O(e) {
-          return v("fid", e, m, a);
+          return w("fid", e, m, a);
         }
         function L(e) {
-          return v("ttfb", e, y, n);
+          return w("ttfb", e, y, n);
         }
         function h(e) {
-          return v("inp", e, P, o);
+          return w("inp", e, P, o);
         }
         function D(e, t) {
           var r;
           let i;
           return (
-            w(e, t),
+            v(e, t),
             A[e] ||
               ((i = {}),
               "event" === (r = e) && (i.durationThreshold = 0),
@@ -28846,16 +28860,16 @@ Error:`,
             S("inp", { metric: e }), (o = e);
           });
         }
-        function v(e, t, r, i, a = !1) {
+        function w(e, t, r, i, a = !1) {
           let _;
           return (
-            w(e, t),
+            v(e, t),
             A[e] || ((_ = r()), (A[e] = !0)),
             i && t({ metric: i }),
             M(e, t, a ? _ : void 0)
           );
         }
-        function w(e, t) {
+        function v(e, t) {
           (R[e] = R[e] || []), R[e].push(t);
         }
         function M(e, t, r) {
@@ -29542,7 +29556,7 @@ Error:`,
             themeLight: { ...e.themeLight, ...t.themeLight },
           };
         }
-        function v(e, t) {
+        function w(e, t) {
           return (
             Object.entries(t).forEach(([t, r]) => {
               e.setAttributeNS(null, t, r);
@@ -29550,12 +29564,12 @@ Error:`,
             e
           );
         }
-        let w = "rgba(88, 74, 192, 1)",
+        let v = "rgba(88, 74, 192, 1)",
           M = {
             foreground: "#2b2233",
             background: "#ffffff",
             accentForeground: "white",
-            accentBackground: w,
+            accentBackground: v,
             successColor: "#268d75",
             errorColor: "#df3338",
             border: "1.5px solid rgba(41, 35, 47, 0.13)",
@@ -29567,7 +29581,7 @@ Error:`,
             foreground: "#ebe6ef",
             background: "#29232f",
             accentForeground: "white",
-            accentBackground: w,
+            accentBackground: v,
             successColor: "#2da98c",
             errorColor: "#f55459",
             border: "1.5px solid rgba(235, 230, 239, 0.15)",
@@ -29600,7 +29614,7 @@ Error:`,
             autoInject: a = !0,
             showBranding: _ = !0,
             isEmailRequired: n = !1,
-            isNameRequired: w = !1,
+            isNameRequired: v = !1,
             showEmail: b = !0,
             showName: H = !0,
             enableScreenshot: B = !0,
@@ -29638,7 +29652,7 @@ Error:`,
                 autoInject: a,
                 showBranding: _,
                 isEmailRequired: n,
-                isNameRequired: w,
+                isNameRequired: v,
                 showEmail: b,
                 showName: H,
                 enableScreenshot: B,
@@ -29842,7 +29856,7 @@ ${
                       (p.ariaHidden = "false"),
                       (p.ariaLabel = t || e || d),
                       p.appendChild(
-                        ((_ = v(
+                        ((_ = w(
                           (a = (e) =>
                             c.document.createElementNS(
                               "http://www.w3.org/2000/svg",
@@ -29855,16 +29869,16 @@ ${
                             fill: "var(--actor-color, var(--foreground))",
                           },
                         )),
-                        (n = v(a("g"), { clipPath: "url(#clip0_57_80)" })),
-                        (o = v(a("path"), {
+                        (n = w(a("g"), { clipPath: "url(#clip0_57_80)" })),
+                        (o = w(a("path"), {
                           "fill-rule": "evenodd",
                           "clip-rule": "evenodd",
                           d: "M15.6622 15H12.3997C12.2129 14.9959 12.031 14.9396 11.8747 14.8375L8.04965 12.2H7.49956V19.1C7.4875 19.3348 7.3888 19.5568 7.22256 19.723C7.05632 19.8892 6.83435 19.9879 6.59956 20H2.04956C1.80193 19.9968 1.56535 19.8969 1.39023 19.7218C1.21511 19.5467 1.1153 19.3101 1.11206 19.0625V12.2H0.949652C0.824431 12.2017 0.700142 12.1783 0.584123 12.1311C0.468104 12.084 0.362708 12.014 0.274155 11.9255C0.185602 11.8369 0.115689 11.7315 0.0685419 11.6155C0.0213952 11.4995 -0.00202913 11.3752 -0.00034808 11.25V3.75C-0.00900498 3.62067 0.0092504 3.49095 0.0532651 3.36904C0.0972798 3.24712 0.166097 3.13566 0.255372 3.04168C0.344646 2.94771 0.452437 2.87327 0.571937 2.82307C0.691437 2.77286 0.82005 2.74798 0.949652 2.75H8.04965L11.8747 0.1625C12.031 0.0603649 12.2129 0.00407221 12.3997 0H15.6622C15.9098 0.00323746 16.1464 0.103049 16.3215 0.278167C16.4966 0.453286 16.5964 0.689866 16.5997 0.9375V3.25269C17.3969 3.42959 18.1345 3.83026 18.7211 4.41679C19.5322 5.22788 19.9878 6.32796 19.9878 7.47502C19.9878 8.62209 19.5322 9.72217 18.7211 10.5333C18.1345 11.1198 17.3969 11.5205 16.5997 11.6974V14.0125C16.6047 14.1393 16.5842 14.2659 16.5395 14.3847C16.4948 14.5035 16.4268 14.6121 16.3394 14.7042C16.252 14.7962 16.147 14.8698 16.0307 14.9206C15.9144 14.9714 15.7891 14.9984 15.6622 15ZM1.89695 10.325H1.88715V4.625H8.33715C8.52423 4.62301 8.70666 4.56654 8.86215 4.4625L12.6872 1.875H14.7247V13.125H12.6872L8.86215 10.4875C8.70666 10.3835 8.52423 10.327 8.33715 10.325H2.20217C2.15205 10.3167 2.10102 10.3125 2.04956 10.3125C1.9981 10.3125 1.94708 10.3167 1.89695 10.325ZM2.98706 12.2V18.1625H5.66206V12.2H2.98706ZM16.5997 9.93612V5.01393C16.6536 5.02355 16.7072 5.03495 16.7605 5.04814C17.1202 5.13709 17.4556 5.30487 17.7425 5.53934C18.0293 5.77381 18.2605 6.06912 18.4192 6.40389C18.578 6.73866 18.6603 7.10452 18.6603 7.47502C18.6603 7.84552 18.578 8.21139 18.4192 8.54616C18.2605 8.88093 18.0293 9.17624 17.7425 9.41071C17.4556 9.64518 17.1202 9.81296 16.7605 9.90191C16.7072 9.91509 16.6536 9.9265 16.5997 9.93612Z",
                         })),
                         _.appendChild(n).appendChild(o),
                         (s = a("defs")),
-                        (E = v(a("clipPath"), { id: "clip0_57_80" })),
-                        (u = v(a("rect"), {
+                        (E = w(a("clipPath"), { id: "clip0_57_80" })),
+                        (u = w(a("rect"), {
                           width: "20",
                           height: "20",
                           fill: "white",
@@ -30768,11 +30782,11 @@ ${
           }
           return i.__N || i.__;
         }
-        function ev(e, t) {
+        function ew(e, t) {
           var r = eg(eI++, 4);
           !eO.__s && eB(r.__H, t) && ((r.__ = e), (r.i = t), ep.__h.push(r));
         }
-        function ew(e, t) {
+        function ev(e, t) {
           var r = eg(eI++, 7);
           return eB(r.__H, t)
             ? ((r.__V = e()), (r.i = t), (r.__h = e), r.__V)
@@ -30781,7 +30795,7 @@ ${
         function eM(e, t) {
           return (
             (eA = 8),
-            ew(function () {
+            ev(function () {
               return e;
             }, t)
           );
@@ -30953,7 +30967,7 @@ ${
           },
           useImperativeHandle: function (e, t, r) {
             (eA = 6),
-              ev(
+              ew(
                 function () {
                   return "function" == typeof e
                     ? (e(t()),
@@ -30970,13 +30984,13 @@ ${
                 null == r ? r : r.concat(e),
               );
           },
-          useLayoutEffect: ev,
-          useMemo: ew,
+          useLayoutEffect: ew,
+          useMemo: ev,
           useReducer: eP,
           useRef: function (e) {
             return (
               (eA = 5),
-              ew(function () {
+              ev(function () {
                 return { current: e };
               }, [])
             );
@@ -30984,10 +30998,10 @@ ${
           useState: ey,
         };
         function eW({ options: e }) {
-          let t = ew(() => {
+          let t = ev(() => {
             let e, t;
             return {
-              __html: ((e = v(
+              __html: ((e = w(
                 l.createElementNS("http://www.w3.org/2000/svg", "svg"),
                 {
                   width: "32",
@@ -30996,7 +31010,7 @@ ${
                   fill: "inherit",
                 },
               )),
-              (t = v(l.createElementNS("http://www.w3.org/2000/svg", "path"), {
+              (t = w(l.createElementNS("http://www.w3.org/2000/svg", "path"), {
                 transform: "translate(11, 11)",
                 d: "M29,2.26a4.67,4.67,0,0,0-8,0L14.42,13.53A32.21,32.21,0,0,1,32.17,40.19H27.55A27.68,27.68,0,0,0,12.09,17.47L6,28a15.92,15.92,0,0,1,9.23,12.17H4.62A.76.76,0,0,1,4,39.06l2.94-5a10.74,10.74,0,0,0-3.36-1.9l-2.91,5a4.54,4.54,0,0,0,1.69,6.24A4.66,4.66,0,0,0,4.62,44H19.15a19.4,19.4,0,0,0-8-17.31l2.31-4A23.87,23.87,0,0,1,23.76,44H36.07a35.88,35.88,0,0,0-16.41-31.8l4.67-8a.77.77,0,0,1,1.05-.27c.53.29,20.29,34.77,20.66,35.17a.76.76,0,0,1-.68,1.13H40.6q.09,1.91,0,3.81h4.78A4.59,4.59,0,0,0,50,39.43a4.49,4.49,0,0,0-.62-2.28Z",
               })),
@@ -31055,9 +31069,9 @@ ${
             [S, C] = ey(null),
             [m, g] = ey(!1),
             P = c && c.input,
-            [v, w] = ey(null),
+            [w, v] = ey(null),
             M = eM((e) => {
-              w(e), g(!1);
+              v(e), g(!1);
             }, []),
             U = eM(
               (e) => {
@@ -31203,16 +31217,16 @@ ${
                           class: "btn btn--default",
                           type: "button",
                           onClick: () => {
-                            w(null), g((e) => !e);
+                            v(null), g((e) => !e);
                           },
                         },
                         m ? d : u,
                       ),
-                      v
+                      w
                         ? J(
                             "div",
                             { class: "form__error-container" },
-                            v.message,
+                            w.message,
                           )
                         : null,
                     )
@@ -31241,10 +31255,10 @@ ${
         }
         function eV({ open: e, onFormSubmitted: t, ...r }) {
           let i = r.options,
-            a = ew(() => {
+            a = ev(() => {
               let e, t, r, i, a, _, n, o;
               return {
-                __html: ((t = v(
+                __html: ((t = w(
                   (e = (e) =>
                     c.document.createElementNS(
                       "http://www.w3.org/2000/svg",
@@ -31257,19 +31271,19 @@ ${
                     fill: "inherit",
                   },
                 )),
-                (r = v(e("g"), { clipPath: "url(#clip0_57_156)" })),
-                (i = v(e("path"), {
+                (r = w(e("g"), { clipPath: "url(#clip0_57_156)" })),
+                (i = w(e("path"), {
                   "fill-rule": "evenodd",
                   "clip-rule": "evenodd",
                   d: "M3.55544 15.1518C4.87103 16.0308 6.41775 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 6.91775 15.5308 5.37103 14.6518 4.05544C13.7727 2.73985 12.5233 1.71447 11.0615 1.10897C9.59966 0.503466 7.99113 0.34504 6.43928 0.653721C4.88743 0.962403 3.46197 1.72433 2.34315 2.84315C1.22433 3.96197 0.462403 5.38743 0.153721 6.93928C-0.15496 8.49113 0.00346625 10.0997 0.608967 11.5615C1.21447 13.0233 2.23985 14.2727 3.55544 15.1518ZM4.40546 3.1204C5.46945 2.40946 6.72036 2.03 8 2.03C9.71595 2.03 11.3616 2.71166 12.575 3.92502C13.7883 5.13838 14.47 6.78405 14.47 8.5C14.47 9.77965 14.0905 11.0306 13.3796 12.0945C12.6687 13.1585 11.6582 13.9878 10.476 14.4775C9.29373 14.9672 7.99283 15.0953 6.73777 14.8457C5.48271 14.596 4.32987 13.9798 3.42502 13.075C2.52018 12.1701 1.90397 11.0173 1.65432 9.76224C1.40468 8.50718 1.5328 7.20628 2.0225 6.02404C2.5122 4.8418 3.34148 3.83133 4.40546 3.1204Z",
                 })),
-                (a = v(e("path"), {
+                (a = w(e("path"), {
                   d: "M6.68775 12.4297C6.78586 12.4745 6.89218 12.4984 7 12.5C7.11275 12.4955 7.22315 12.4664 7.32337 12.4145C7.4236 12.3627 7.51121 12.2894 7.58 12.2L12 5.63999C12.0848 5.47724 12.1071 5.28902 12.0625 5.11098C12.0178 4.93294 11.9095 4.77744 11.7579 4.67392C11.6064 4.57041 11.4221 4.52608 11.24 4.54931C11.0579 4.57254 10.8907 4.66173 10.77 4.79999L6.88 10.57L5.13 8.56999C5.06508 8.49566 4.98613 8.43488 4.89768 8.39111C4.80922 8.34735 4.713 8.32148 4.61453 8.31498C4.51605 8.30847 4.41727 8.32147 4.32382 8.35322C4.23038 8.38497 4.14413 8.43484 4.07 8.49999C3.92511 8.63217 3.83692 8.81523 3.82387 9.01092C3.81083 9.2066 3.87393 9.39976 4 9.54999L6.43 12.24C6.50187 12.3204 6.58964 12.385 6.68775 12.4297Z",
                 })),
                 t.appendChild(r).append(a, i),
                 (_ = e("defs")),
-                (n = v(e("clipPath"), { id: "clip0_57_156" })),
-                (o = v(e("rect"), {
+                (n = w(e("clipPath"), { id: "clip0_57_156" })),
+                (o = w(e("rect"), {
                   width: "16",
                   height: "16",
                   fill: "white",
@@ -32532,7 +32546,7 @@ ${eq}
             _.forEach((e) => e());
           };
         }
-        function v(e, t, r, i, a, _, n, o) {
+        function w(e, t, r, i, a, _, n, o) {
           let s = [];
           for (let n of Object.getOwnPropertyNames(e))
             if (
@@ -32575,7 +32589,7 @@ ${eq}
               }
           return s;
         }
-        class w {
+        class v {
           reset() {
             this.pendingCanvasMutations.clear(),
               this.restoreHandlers.forEach((e) => {
@@ -32813,7 +32827,7 @@ ${eq}
                 ((a = this.processMutation.bind(this)),
                 (_ = this.mirror),
                 (n = []).push(
-                  ...v(
+                  ...w(
                     e.WebGLRenderingContext.prototype,
                     N.WebGL,
                     a,
@@ -32826,7 +32840,7 @@ ${eq}
                 ),
                 void 0 !== e.WebGL2RenderingContext &&
                   n.push(
-                    ...v(
+                    ...w(
                       e.WebGL2RenderingContext.prototype,
                       N.WebGL2,
                       a,
@@ -33011,7 +33025,7 @@ ${eq}
                   enableManualSnapshot: r,
                   recordCanvas: !0,
                   getCanvasManager: (e) => {
-                    let a = new w({
+                    let a = new v({
                       ...e,
                       enableManualSnapshot: r,
                       maxCanvasSize: i,
@@ -33055,8 +33069,8 @@ ${eq}
           g = r(690094),
           y = r(693037),
           P = r(83220),
-          v = r(984083),
-          w = r(272469),
+          w = r(984083),
+          v = r(272469),
           M = r(196010),
           U = r(871186),
           G = r(231577),
@@ -33345,14 +33359,14 @@ ${eq}
           });
         }
         let eP = /^[^ \t\n\r\u000c]+/,
-          ev = /^[, \t\n\r\u000c]+/,
-          ew = new WeakMap();
+          ew = /^[, \t\n\r\u000c]+/,
+          ev = new WeakMap();
         function eM(e, t) {
           return t && "" !== t.trim() ? eU(e, t) : t;
         }
         function eU(e, t) {
-          let r = ew.get(e);
-          if ((r || ((r = e.createElement("a")), ew.set(e, r)), t)) {
+          let r = ev.get(e);
+          if ((r || ((r = e.createElement("a")), ev.set(e, r)), t)) {
             if (t.startsWith("blob:") || t.startsWith("data:")) return t;
           } else t = "";
           return r.setAttribute("href", t), r.href;
@@ -33377,7 +33391,7 @@ ${eq}
                 return a ? ((i = a[0]), (r += i.length), i) : "";
               }
               let a = [];
-              for (; i(ev), !(r >= t.length); ) {
+              for (; i(ew), !(r >= t.length); ) {
                 let _ = i(eP);
                 if ("," === _.slice(-1))
                   (_ = eM(e, _.substring(0, _.length - 1))), a.push(_);
@@ -33504,8 +33518,8 @@ ${eq}
               iframeLoadTimeout: g = 5e3,
               onStylesheetLoad: y,
               stylesheetLoadTimeout: P = 5e3,
-              keepIframeSrcFn: v = () => !1,
-              newlyAddedElement: w = !1,
+              keepIframeSrcFn: w = () => !1,
+              newlyAddedElement: v = !1,
             } = t,
             { preserveWhiteSpace: M = !0 } = t,
             U = (function (e, t) {
@@ -33899,8 +33913,8 @@ ${eq}
               dataURLOptions: h,
               inlineImages: D,
               recordCanvas: S,
-              keepIframeSrcFn: v,
-              newlyAddedElement: w,
+              keepIframeSrcFn: w,
+              newlyAddedElement: v,
             });
           if (!U) return console.warn(e, "not serialized"), null;
           r = n.hasNode(e)
@@ -34033,7 +34047,7 @@ ${eq}
               iframeLoadTimeout: g,
               onStylesheetLoad: y,
               stylesheetLoadTimeout: P,
-              keepIframeSrcFn: v,
+              keepIframeSrcFn: w,
             };
             for (let r of Array.from(e.childNodes)) {
               let e = eW(r, t);
@@ -34108,7 +34122,7 @@ ${eq}
                       iframeLoadTimeout: g,
                       onStylesheetLoad: y,
                       stylesheetLoadTimeout: P,
-                      keepIframeSrcFn: v,
+                      keepIframeSrcFn: w,
                     });
                     r && m(e, r);
                   }
@@ -34168,7 +34182,7 @@ ${eq}
                       iframeLoadTimeout: g,
                       onStylesheetLoad: y,
                       stylesheetLoadTimeout: P,
-                      keepIframeSrcFn: v,
+                      keepIframeSrcFn: w,
                     });
                     t && y(e, t);
                   }
@@ -36296,7 +36310,7 @@ ${eq}
           observeAttachShadow() {}
           reset() {}
         }
-        class tv {
+        class tw {
           constructor(e) {
             (this.shadowDoms = new WeakSet()),
               (this.restoreHandlers = []),
@@ -36386,7 +36400,7 @@ ${eq}
               this.bypassOptions.canvasManager.resetShadowRoots();
           }
         }
-        class tw {
+        class tv {
           reset() {}
           freeze() {}
           unfreeze() {}
@@ -36513,8 +36527,8 @@ ${eq}
               sampling: g = {},
               dataURLOptions: y = {},
               mousemoveWait: P,
-              recordDOM: v = !0,
-              recordCanvas: w = !1,
+              recordDOM: w = !0,
+              recordCanvas: v = !1,
               recordCrossOriginIframes: M = !1,
               recordAfter: U = "DOMContentLoaded" === e.recordAfter
                 ? e.recordAfter
@@ -36686,10 +36700,10 @@ ${eq}
           let et = new tU(),
             er = (function (e, t) {
               try {
-                return e ? e(t) : new tw();
+                return e ? e(t) : new tv();
               } catch (e) {
                 return (
-                  console.warn("Unable to initialize CanvasManager"), new tw()
+                  console.warn("Unable to initialize CanvasManager"), new tv()
                 );
               }
             })(F, {
@@ -36700,7 +36714,7 @@ ${eq}
                   type: tt.IncrementalSnapshot,
                   data: { source: tr.CanvasMutation, ...e },
                 }),
-              recordCanvas: w,
+              recordCanvas: v,
               blockClass: s,
               blockSelector: E,
               unblockSelector: c,
@@ -36713,7 +36727,7 @@ ${eq}
               "boolean" == typeof __RRWEB_EXCLUDE_SHADOW_DOM__ &&
               __RRWEB_EXCLUDE_SHADOW_DOM__
                 ? new tP()
-                : new tv({
+                : new tw({
                     mutationCb: q,
                     scrollCb: J,
                     bypassOptions: {
@@ -36732,7 +36746,7 @@ ${eq}
                       maskAttributeFn: L,
                       maskTextFn: D,
                       maskInputFn: h,
-                      recordCanvas: w,
+                      recordCanvas: v,
                       inlineImages: H,
                       sampling: g,
                       slimDOMOptions: j,
@@ -36745,7 +36759,7 @@ ${eq}
                     mirror: tG,
                   }),
             ea = (e = !1) => {
-              if (!v) return;
+              if (!w) return;
               n(
                 {
                   type: tt.Meta,
@@ -36872,7 +36886,7 @@ ${eq}
                 maskTextFn: D,
                 slimDOM: j,
                 dataURLOptions: y,
-                recordCanvas: w,
+                recordCanvas: v,
                 inlineImages: H,
                 onSerialize: (e) => {
                   e2(e, tG) && ee.addIframe(e),
@@ -36975,8 +36989,8 @@ ${eq}
                     maskInputOptions: $,
                     inlineStylesheet: A,
                     sampling: g,
-                    recordDOM: v,
-                    recordCanvas: w,
+                    recordDOM: w,
+                    recordCanvas: v,
                     inlineImages: H,
                     userTriggeredOnInput: G,
                     collectFonts: b,
@@ -37492,7 +37506,7 @@ ${eq}
           t6 = ["info", "warn", "error", "log"],
           t8 = "[Replay] ";
         function t7(e, t = "info") {
-          (0, v.Z)(
+          (0, w.Z)(
             {
               category: "console",
               data: { logger: "replay" },
@@ -37515,16 +37529,16 @@ ${eq}
           t5
             ? (t6.forEach((e) => {
                 l[e] = (...t) => {
-                  w.vF[e](t8, ...t), c && t7(t.join(""), (0, M.t)(e));
+                  v.vF[e](t8, ...t), c && t7(t.join(""), (0, M.t)(e));
                 };
               }),
               (l.exception = (e, ...t) => {
                 t.length && l.error && l.error(...t),
-                  w.vF.error(t8, e),
+                  v.vF.error(t8, e),
                   E ? (0, U.Cp)(e) : c && t7(e, "error");
               }),
               (l.infoTick = (...e) => {
-                w.vF.info(t8, ...e), c && setTimeout(() => t7(e[0]), 0);
+                v.vF.info(t8, ...e), c && setTimeout(() => t7(e[0]), 0);
               }))
             : t6.forEach((e) => {
                 l[e] = () => void 0;
@@ -37951,7 +37965,7 @@ ${eq}
             if (e instanceof URLSearchParams)
               return t.encode(e.toString()).length;
             if (e instanceof FormData) {
-              let r = rv(e);
+              let r = rw(e);
               return t.encode(r).length;
             }
             if (e instanceof Blob) return e.size;
@@ -37967,7 +37981,7 @@ ${eq}
           try {
             if ("string" == typeof e) return [e];
             if (e instanceof URLSearchParams) return [e.toString()];
-            if (e instanceof FormData) return [rv(e)];
+            if (e instanceof FormData) return [rw(e)];
             if (!e) return [void 0];
           } catch (t) {
             return (
@@ -38050,10 +38064,10 @@ ${eq}
             return t.includes(_) && e[i] && (r[_] = a), r;
           }, {});
         }
-        function rv(e) {
+        function rw(e) {
           return new URLSearchParams(e).toString();
         }
-        function rw(e, t) {
+        function rv(e, t) {
           let r = (function (e, t = Z.document.baseURI) {
             if (
               e.startsWith("http://") ||
@@ -38088,8 +38102,8 @@ ${eq}
               response_body_size: c,
             } = e.data,
             l =
-              rw(n, r.networkDetailAllowUrls) &&
-              !rw(n, r.networkDetailDenyUrls);
+              rv(n, r.networkDetailAllowUrls) &&
+              !rv(n, r.networkDetailDenyUrls);
           return {
             startTimestamp: a,
             endTimestamp: _,
@@ -38244,8 +38258,8 @@ ${eq}
                 if (!E) return null;
                 if (
                   !s ||
-                  !rw(E, r.networkDetailAllowUrls) ||
-                  rw(E, r.networkDetailDenyUrls)
+                  !rv(E, r.networkDetailAllowUrls) ||
+                  rv(E, r.networkDetailDenyUrls)
                 ) {
                   let e = rg(u);
                   return {
@@ -39943,7 +39957,7 @@ ${eq}
                 (_ = (0, j.i)(r.replaysOnErrorSampleRate)),
                 null == a &&
                   null == _ &&
-                  (0, w.pq)(() => {
+                  (0, v.pq)(() => {
                     console.warn(
                       "Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set.",
                     );
@@ -40015,4 +40029,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.bb338372d384ac13.js.map
+//# sourceMappingURL=sentry.60850cfb4fe72055.js.map

@@ -63061,6 +63061,9 @@ html.disable-forced-colors * {
     var(--opacity-black-28-hsl) / 0.2784313725490196
   );
   --mobile-text-heading-primary: var(--neutral-1);
+  --mobile-thread-embed-background: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
   --mobile-unreadbar-text-default: var(--brand-230);
   --progressbar-track-background: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
@@ -63565,6 +63568,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --mobile-thread-embed-background: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --mobile-unreadbar-text-default: color-mix(
       in oklab,
       var(--brand-230) 100%,
@@ -64057,6 +64066,9 @@ html.disable-forced-colors * {
     var(--opacity-black-12-hsl) / 0.12156862745098039
   );
   --mobile-text-heading-primary: var(--neutral-100);
+  --mobile-thread-embed-background: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
   --mobile-unreadbar-text-default: var(--brand-600);
   --progressbar-track-background: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
@@ -64559,6 +64571,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --mobile-thread-embed-background: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --mobile-unreadbar-text-default: color-mix(
       in oklab,
       var(--brand-600) 100%,
@@ -65059,6 +65077,9 @@ html.disable-forced-colors * {
     var(--opacity-black-12-hsl) / 0.12156862745098039
   );
   --mobile-text-heading-primary: var(--neutral-1);
+  --mobile-thread-embed-background: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
   --mobile-unreadbar-text-default: var(--brand-345);
   --progressbar-track-background: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
@@ -65561,6 +65582,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --mobile-thread-embed-background: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --mobile-unreadbar-text-default: color-mix(
       in oklab,
       var(--brand-345) 100%,
@@ -66053,6 +66080,9 @@ html.disable-forced-colors * {
     var(--opacity-black-16-hsl) / 0.1607843137254902
   );
   --mobile-text-heading-primary: var(--neutral-1);
+  --mobile-thread-embed-background: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
   --mobile-unreadbar-text-default: var(--brand-330);
   --progressbar-track-background: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
@@ -66556,6 +66586,12 @@ html.disable-forced-colors * {
       var(--neutral-1) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
+    );
+    --mobile-thread-embed-background: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --mobile-unreadbar-text-default: color-mix(
       in oklab,
@@ -71137,7 +71173,6 @@ html.disable-forced-colors * {
   --mobile-chat-input-icon-size: medium;
   --mobile-chat-input-pill-padding: 2px;
   --mobile-chat-input-space-bottom: 0px;
-  --mobile-coachmark-body-border-radius: 16px;
   --mobile-coachmark-body-width: 260px;
   --mobile-coachmark-button-spacing: 12px;
   --mobile-control-checkbox-border-radius: 8px;
@@ -71261,7 +71296,6 @@ html.disable-forced-colors * {
   --mobile-chat-input-floating-typing-padding-top: 20px;
   --mobile-chat-input-icon-size: small20;
   --mobile-chat-input-space-bottom: 34px;
-  --mobile-coachmark-body-border-radius: 12px;
   --mobile-coachmark-body-width: 240px;
   --mobile-coachmark-button-spacing: 16px;
   --mobile-control-checkbox-border-radius: 4px;
@@ -71327,7 +71361,7 @@ html.disable-forced-colors * {
   --mobile-table-row-content-height: 32px;
   --mobile-table-row-group-helper-text-style: text-sm/normal;
   --mobile-table-row-height: 56px;
-  --mobile-user-profile-about-me-heading-text-style: text-sm/medium;
+  --mobile-user-profile-about-me-heading-text-style: text-md/medium;
   --mobile-user-row-label-line-height-ios: 20px;
   --mobile-voice-channel-user-limit-border-width: 1px;
   --mobile-voice-panel-controls-border-radius: 16px;
@@ -72343,4 +72377,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.dfa9fc6254c3f0de.css.map*/
+/*# sourceMappingURL=web.97c7de2663949ab1.css.map*/
