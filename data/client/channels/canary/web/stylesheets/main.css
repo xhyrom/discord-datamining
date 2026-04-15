@@ -36230,6 +36230,7 @@ body .headerAnimation_b54a5b {
 }
 .paymentModalError__9b260 {
   background-color: var(--modal-background);
+  margin-bottom: var(--space-16);
   padding-top: 12px;
 }
 .giftCardRedemptionLink__9b260 {
@@ -70284,4 +70285,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.72ad849db66c1b61.css.map*/
+/*# sourceMappingURL=web.db5565958f55ae89.css.map*/
