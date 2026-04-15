@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8472526002](https://discord.com/jobs/8472526002)
 
-**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
+**Updated At:** Wed, 15 Apr 2026 22:47:43 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Social Commerce team is building a storefront for game developers to sell directly to their players in Discord. This is a new initiative that has seen a lot of early success, and we're expanding it to support more games and platforms. But we're not just building a shop — Discord is where friends already hang out, play together, and share the things they love. We are building commerce experiences that no other platform can: purchasing that's social, contextual, and embedded in the games people already play and places they already spend time. If you are excited to get in on the ground floor of this new product, then this role is for you.
@@ -26,14 +26,14 @@ Raising the bar for the engineers around you through code review, technical desi
 What you should have
 
 8+ years of experience as a software engineer, including experience leading cross-functional projects as an individual contributor.
-Strong expertise in at least a couple of the major parts of our stack: Python, TypeScript/React, and mobile with React Native. You're comfortable switching between stacks and have a track record of picking up new ones quickly.
+Strong expertise in at least a couple of the major parts of our stack: Python and TypeScript/React. You're comfortable switching between stacks and have a track record of picking up new ones quickly.
 A product sense that goes beyond implementation. You'll be collaborating with PMs and designers daily, and we need someone who can push back, suggest alternatives, and help shape what we build.
 Comfort with ambiguity and experimentation. This team ships A/B tests, reads results, and changes direction. You should be someone who thrives in that environment rather than waiting for a fully-baked spec.
 A bias toward solving problems from first principles. You learn from what didn't work and help the team do the same.
 
 Bonus Points
 
-Extensive experience with React Native for mobile development.
+Experience with React Native for mobile development.
 Experience with game development or game platform ecosystems.
 Experience with cloud infrastructure (GCP, AWS, or Azure) for production backend systems.
 
