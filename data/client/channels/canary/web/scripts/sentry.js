@@ -3856,10 +3856,6 @@
             `/conference-mode/channels/${e}/users`,
           CONFERENCE_MODE_EVENTS: "/conference-mode/events",
           CONFERENCE_MODE_CONFERENCES: "/conference-mode/conference",
-          GORILLA_COUNTERS: "/gorilla/counters",
-          GORILLA_USER_DATA: "/gorilla/user-data/@me",
-          GORILLA_START_ACTIVITY: (e) => `/gorilla/activity/${e}/start`,
-          GORILLA_COMPLETE_ACTIVITY: (e) => `/gorilla/activity/${e}/complete`,
           GUILD_MIGRATE_PIN_PERMISSION: (e) =>
             `/guilds/${e}/migrate-pin-permission`,
           GUILD_MIGRATE_SLOWMODE_PERMISSION: (e) =>
@@ -6484,7 +6480,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-c2f9f577ac4ad06a0b60923eb00a9c6d20a11e6e",
+            release: "discord_web-b11350ee6dfd9aa65ee785c76d642d8fbcdb9f5b",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6551,8 +6547,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "529161"),
-            o.NA("builtAt", String("1776274237083"));
+            o.NA("buildNumber", "529252"),
+            o.NA("builtAt", String("1776277990409"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -6786,7 +6782,6 @@
             QUEST_PREVIEW: (e) => `/quest-preview/${e}`,
             QUEST_PREVIEW_TOOL_2: (e) =>
               `/quest-home?tab=preview_tool&quest_id=${e}`,
-            GORILLA: "/last-meadow-online",
             ICYMI: "/icymi",
           });
         (0, i.dN)(n, [":", "?", "@"]);
@@ -40029,4 +40024,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.70908ed4255b03f2.js.map
+//# sourceMappingURL=sentry.abc4207d54454dd4.js.map
