@@ -46496,6 +46496,83 @@ svg.radioIcon_c1e9c4 {
   font-size: 16px;
   font-weight: var(--font-weight-semibold);
 }
+@keyframes fadeIn_eff18d {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInContentFullMotion_eff18d {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.background_eff18d {
+  align-items: center;
+  animation: fadeIn_eff18d 3s cubic-bezier(0.24, 0.27, 0.58, 1) forwards;
+  background-color: #000328;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  inset-inline-start: 0;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+.sunbeamGradient_eff18d {
+  animation: fadeIn_eff18d 1.5s linear 1.5s forwards;
+  background: url(/assets/52432522457760d7.webp) 100% 0 / cover no-repeat;
+  inset-inline-start: 0;
+  opacity: 0;
+  width: 100%;
+}
+.gradientRive_eff18d,
+.sunbeamGradient_eff18d {
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+}
+.gradientRive_eff18d {
+  inset-inline-end: 0;
+  width: 50%;
+}
+.container_eff18d {
+  position: relative;
+  text-align: center;
+}
+.fadeInContent_eff18d {
+  animation: fadeIn_eff18d 1s cubic-bezier(0.1, 0.24, 0.32, 1) 2s forwards;
+  opacity: 0;
+}
+.full-motion .fadeInContent_eff18d {
+  animation-name: fadeInContentFullMotion_eff18d;
+}
+.riveIllustration_eff18d {
+  height: min(470px, 55vh);
+  padding-block-end: 0;
+  padding-block-start: 0;
+  padding-inline-end: 25.964px;
+  padding-inline-start: 27px;
+  width: min(523px, 90vw);
+}
+.description_eff18d,
+.footer_eff18d {
+  text-align: center;
+}
+.footer_eff18d {
+  bottom: var(--space-32);
+  position: absolute;
+}
 .titleBar__421ed {
   z-index: 3001;
   -webkit-app-region: drag;
@@ -70285,4 +70362,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.db5565958f55ae89.css.map*/
+/*# sourceMappingURL=web.f3c06ae1a8f75749.css.map*/
