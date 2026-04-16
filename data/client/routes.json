@@ -4005,11 +4005,7 @@
   },
   "CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY": {
     "url": "/creator-monetization/marketing/nag-activate/eligibility",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "CREATOR_MONETIZATION_OWNERSHIP_TRANSFER_ONBOARD": {
     "url": "/guilds/:param/creator-monetization/ownership-transfer/onboarding",
