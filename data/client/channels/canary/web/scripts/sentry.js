@@ -2,65 +2,65 @@
   var e = {
       824120(e, t, r) {
         e = r.nmd(e);
-        var i = (function (e) {
+        var i = (function () {
           "use strict";
-          var t = c(0x20000000000000),
-            r = "0123456789abcdefghijklmnopqrstuvwxyz",
-            a = "function" == typeof BigInt;
-          function _(e, t, r, i) {
+          var e = E(0x20000000000000),
+            t = "0123456789abcdefghijklmnopqrstuvwxyz",
+            r = "function" == typeof BigInt;
+          function a(e, t, r, i) {
             return void 0 === e
-              ? _[0]
+              ? a[0]
               : void 0 !== t && (10 != +t || r)
-                ? K(e, t, r, i)
-                : x(e);
+                ? B(e, t, r, i)
+                : F(e);
           }
-          function n(e, t) {
+          function _(e, t) {
             (this.value = e), (this.sign = t), (this.isSmall = !1);
           }
-          function o(e) {
+          function n(e) {
             (this.value = e), (this.sign = e < 0), (this.isSmall = !0);
           }
-          function s(e) {
+          function o(e) {
             this.value = e;
           }
-          function E(e) {
+          function s(e) {
             return -0x20000000000000 < e && e < 0x20000000000000;
           }
-          function c(e) {
+          function E(e) {
             return e < 1e7
               ? [e]
               : e < 1e14
                 ? [e % 1e7, Math.floor(e / 1e7)]
                 : [e % 1e7, Math.floor(e / 1e7) % 1e7, Math.floor(e / 1e14)];
           }
-          function l(e) {
-            u(e);
-            var r = e.length;
-            if (r < 4 && 0 > m(e, t))
+          function c(t) {
+            l(t);
+            var r = t.length;
+            if (r < 4 && 0 > C(t, e))
               switch (r) {
                 case 0:
                   return 0;
                 case 1:
-                  return e[0];
+                  return t[0];
                 case 2:
-                  return e[0] + 1e7 * e[1];
+                  return t[0] + 1e7 * t[1];
                 default:
-                  return e[0] + (e[1] + 1e7 * e[2]) * 1e7;
+                  return t[0] + (t[1] + 1e7 * t[2]) * 1e7;
               }
-            return e;
+            return t;
           }
-          function u(e) {
+          function l(e) {
             for (var t = e.length; 0 === e[--t]; );
             e.length = t + 1;
           }
-          function d(e) {
+          function u(e) {
             for (var t = Array(e), r = -1; ++r < e; ) t[r] = 0;
             return t;
           }
-          function I(e) {
+          function d(e) {
             return e > 0 ? Math.floor(e) : Math.ceil(e);
           }
-          function p(e, t) {
+          function I(e, t) {
             var r,
               i,
               a = e.length,
@@ -73,10 +73,10 @@
               (o = +(1e7 === (r = e[i] + o))), (n[i++] = r - 1e7 * o);
             return o > 0 && n.push(o), n;
           }
-          function T(e, t) {
-            return e.length >= t.length ? p(e, t) : p(t, e);
+          function p(e, t) {
+            return e.length >= t.length ? I(e, t) : I(t, e);
           }
-          function R(e, t) {
+          function T(e, t) {
             var r,
               i,
               a = e.length,
@@ -88,7 +88,7 @@
             for (; t > 0; ) (_[i++] = t % 1e7), (t = Math.floor(t / 1e7));
             return _;
           }
-          function A(e, t) {
+          function R(e, t) {
             var r,
               i,
               a = e.length,
@@ -107,30 +107,30 @@
               n[r] = i;
             }
             for (; r < a; r++) n[r] = e[r];
-            return u(n), n;
+            return l(n), n;
           }
-          function f(e, t, r) {
+          function A(e, t, r) {
             var i,
               a,
-              _ = e.length,
-              s = Array(_),
+              o = e.length,
+              s = Array(o),
               E = -t;
-            for (i = 0; i < _; i++)
+            for (i = 0; i < o; i++)
               (E = Math.floor((a = e[i] + E) / 1e7)),
                 (a %= 1e7),
                 (s[i] = a < 0 ? a + 1e7 : a);
-            return "number" == typeof (s = l(s))
-              ? (r && (s = -s), new o(s))
-              : new n(s, r);
+            return "number" == typeof (s = c(s))
+              ? (r && (s = -s), new n(s))
+              : new _(s, r);
           }
-          function N(e, t) {
+          function f(e, t) {
             var r,
               i,
               a,
               _,
               n = e.length,
               o = t.length,
-              s = d(n + o);
+              s = u(n + o);
             for (a = 0; a < n; ++a) {
               _ = e[a];
               for (var E = 0; E < o; ++E)
@@ -138,9 +138,9 @@
                   (s[a + E] = r - 1e7 * i),
                   (s[a + E + 1] += i);
             }
-            return u(s), s;
+            return l(s), s;
           }
-          function O(e, t) {
+          function N(e, t) {
             var r,
               i,
               a = e.length,
@@ -151,20 +151,20 @@
             for (; n > 0; ) (_[i++] = n % 1e7), (n = Math.floor(n / 1e7));
             return _;
           }
-          function L(e, t) {
+          function O(e, t) {
             for (var r = []; t-- > 0; ) r.push(0);
             return r.concat(e);
           }
-          function h(e, t, r) {
-            return e < 1e7 ? new n(O(t, e), r) : new n(N(t, c(e)), r);
+          function L(e, t, r) {
+            return e < 1e7 ? new _(N(t, e), r) : new _(f(t, E(e)), r);
           }
-          function D(e) {
+          function h(e) {
             var t,
               r,
               i,
               a,
               _ = e.length,
-              n = d(_ + _);
+              n = u(_ + _);
             for (i = 0; i < _; i++) {
               r = 0 - (a = e[i]) * a;
               for (var o = i; o < _; o++)
@@ -172,48 +172,48 @@
                   (n[i + o] = t - 1e7 * r);
               n[i + _] = r;
             }
-            return u(n), n;
+            return l(n), n;
           }
-          function S(e, t) {
+          function D(e, t) {
             var r,
               i,
               a,
               _,
               n = e.length,
-              o = d(n);
+              o = u(n);
             for (a = 0, r = n - 1; r >= 0; --r)
-              (i = I((_ = 1e7 * a + e[r]) / t)),
+              (i = d((_ = 1e7 * a + e[r]) / t)),
                 (a = _ - i * t),
                 (o[r] = 0 | i);
             return [o, 0 | a];
           }
-          function C(e, t) {
-            var r,
-              i,
-              E = x(t);
-            if (a) return [new s(e.value / E.value), new s(e.value % E.value)];
+          function S(e, t) {
+            var i,
+              s,
+              I = F(t);
+            if (r) return [new o(e.value / I.value), new o(e.value % I.value)];
             var p = e.value,
-              T = E.value;
+              T = I.value;
             if (0 === T) throw Error("Cannot divide by zero");
             if (e.isSmall)
-              return E.isSmall ? [new o(I(p / T)), new o(p % T)] : [_[0], e];
-            if (E.isSmall) {
-              if (1 === T) return [e, _[0]];
-              if (-1 == T) return [e.negate(), _[0]];
-              var R = Math.abs(T);
-              if (R < 1e7) {
-                r = l((i = S(p, R))[0]);
-                var f = i[1];
-                return (e.sign && (f = -f), "number" == typeof r)
-                  ? (e.sign !== E.sign && (r = -r), [new o(r), new o(f)])
-                  : [new n(r, e.sign !== E.sign), new o(f)];
+              return I.isSmall ? [new n(d(p / T)), new n(p % T)] : [a[0], e];
+            if (I.isSmall) {
+              if (1 === T) return [e, a[0]];
+              if (-1 == T) return [e.negate(), a[0]];
+              var A = Math.abs(T);
+              if (A < 1e7) {
+                i = c((s = D(p, A))[0]);
+                var f = s[1];
+                return (e.sign && (f = -f), "number" == typeof i)
+                  ? (e.sign !== I.sign && (i = -i), [new n(i), new n(f)])
+                  : [new _(i, e.sign !== I.sign), new n(f)];
               }
-              T = c(R);
+              T = E(A);
             }
-            var N = m(p, T);
-            if (-1 === N) return [_[0], e];
-            if (0 === N) return [_[e.sign === E.sign ? 1 : -1], _[0]];
-            r = (i =
+            var O = C(p, T);
+            if (-1 === O) return [a[0], e];
+            if (0 === O) return [a[e.sign === I.sign ? 1 : -1], a[0]];
+            i = (s =
               p.length + T.length <= 200
                 ? (function (e, t) {
                     var r,
@@ -224,25 +224,25 @@
                       o,
                       s,
                       E = e.length,
-                      c = t.length,
-                      u = d(t.length),
-                      I = t[c - 1],
+                      l = t.length,
+                      d = u(t.length),
+                      I = t[l - 1],
                       p = Math.ceil(1e7 / (2 * I)),
-                      T = O(e, p),
-                      R = O(t, p);
+                      T = N(e, p),
+                      R = N(t, p);
                     for (
                       T.length <= E && T.push(0),
                         R.push(0),
-                        I = R[c - 1],
-                        i = E - c;
+                        I = R[l - 1],
+                        i = E - l;
                       i >= 0;
                       i--
                     ) {
                       for (
                         r = 1e7 - 1,
-                          T[i + c] !== I &&
+                          T[i + l] !== I &&
                             (r = Math.floor(
-                              (1e7 * T[i + c] + T[i + c - 1]) / I,
+                              (1e7 * T[i + l] + T[i + l - 1]) / I,
                             )),
                           a = 0,
                           _ = 0,
@@ -265,9 +265,9 @@
                             : ((T[i + n] = a), (a = 1));
                         _ += a;
                       }
-                      u[i] = r;
+                      d[i] = r;
                     }
-                    return (T = S(T, p)[0]), [l(u), l(T)];
+                    return (T = D(T, p)[0]), [c(d), c(T)];
                   })(p, T)
                 : (function (e, t) {
                     for (
@@ -279,47 +279,47 @@
                         o = e.length,
                         s = t.length,
                         E = [],
-                        c = [];
+                        u = [];
                       o;
 
                     ) {
-                      if ((c.unshift(e[--o]), u(c), 0 > m(c, t))) {
+                      if ((u.unshift(e[--o]), l(u), 0 > C(u, t))) {
                         E.push(0);
                         continue;
                       }
-                      (i = c.length),
-                        (a = 1e7 * c[i - 1] + c[i - 2]),
+                      (i = u.length),
+                        (a = 1e7 * u[i - 1] + u[i - 2]),
                         (_ = 1e7 * t[s - 1] + t[s - 2]),
                         i > s && (a = (a + 1) * 1e7),
                         (r = Math.ceil(a / _));
                       do {
-                        if (0 >= m((n = O(t, r)), c)) break;
+                        if (0 >= C((n = N(t, r)), u)) break;
                         r--;
                       } while (r);
-                      E.push(r), (c = A(c, n));
+                      E.push(r), (u = R(u, n));
                     }
-                    return E.reverse(), [l(E), l(c)];
+                    return E.reverse(), [c(E), c(u)];
                   })(p, T))[0];
-            var L = e.sign !== E.sign,
-              h = i[1],
-              D = e.sign;
+            var L = e.sign !== I.sign,
+              h = s[1],
+              S = e.sign;
             return (
-              "number" == typeof r
-                ? (L && (r = -r), (r = new o(r)))
-                : (r = new n(r, L)),
+              "number" == typeof i
+                ? (L && (i = -i), (i = new n(i)))
+                : (i = new _(i, L)),
               "number" == typeof h
-                ? (D && (h = -h), (h = new o(h)))
-                : (h = new n(h, D)),
-              [r, h]
+                ? (S && (h = -h), (h = new n(h)))
+                : (h = new _(h, S)),
+              [i, h]
             );
           }
-          function m(e, t) {
+          function C(e, t) {
             if (e.length !== t.length) return e.length > t.length ? 1 : -1;
             for (var r = e.length - 1; r >= 0; r--)
               if (e[r] !== t[r]) return e[r] > t[r] ? 1 : -1;
             return 0;
           }
-          function g(e) {
+          function m(e) {
             var t = e.abs();
             return (
               !t.isUnit() &&
@@ -328,7 +328,7 @@
                   (!!t.lesser(49) || void 0)))
             );
           }
-          function y(e, t) {
+          function g(e, t) {
             for (var r, a, _, n = e.prev(), o = n, s = 0; o.isEven(); )
               (o = o.divide(2)), s++;
             e: for (a = 0; a < t.length; a++)
@@ -346,106 +346,106 @@
               }
             return !0;
           }
-          (n.prototype = Object.create(_.prototype)),
-            (o.prototype = Object.create(_.prototype)),
-            (s.prototype = Object.create(_.prototype)),
-            (n.prototype.add = function (e) {
-              var t = x(e);
+          (_.prototype = Object.create(a.prototype)),
+            (n.prototype = Object.create(a.prototype)),
+            (o.prototype = Object.create(a.prototype)),
+            (_.prototype.add = function (e) {
+              var t = F(e);
               if (this.sign !== t.sign) return this.subtract(t.negate());
               var r = this.value,
                 i = t.value;
               return t.isSmall
-                ? new n(R(r, Math.abs(i)), this.sign)
-                : new n(T(r, i), this.sign);
+                ? new _(T(r, Math.abs(i)), this.sign)
+                : new _(p(r, i), this.sign);
             }),
-            (n.prototype.plus = n.prototype.add),
-            (o.prototype.add = function (e) {
-              var t = x(e),
+            (_.prototype.plus = _.prototype.add),
+            (n.prototype.add = function (e) {
+              var t = F(e),
                 r = this.value;
               if (r < 0 !== t.sign) return this.subtract(t.negate());
               var i = t.value;
               if (t.isSmall) {
-                if (E(r + i)) return new o(r + i);
-                i = c(Math.abs(i));
+                if (s(r + i)) return new n(r + i);
+                i = E(Math.abs(i));
               }
-              return new n(R(i, Math.abs(r)), r < 0);
+              return new _(T(i, Math.abs(r)), r < 0);
+            }),
+            (n.prototype.plus = n.prototype.add),
+            (o.prototype.add = function (e) {
+              return new o(this.value + F(e).value);
             }),
             (o.prototype.plus = o.prototype.add),
-            (s.prototype.add = function (e) {
-              return new s(this.value + x(e).value);
-            }),
-            (s.prototype.plus = s.prototype.add),
-            (n.prototype.subtract = function (e) {
+            (_.prototype.subtract = function (e) {
               var t,
                 r,
-                i = x(e);
+                i = F(e);
               if (this.sign !== i.sign) return this.add(i.negate());
               var a = this.value,
-                _ = i.value;
+                o = i.value;
               return i.isSmall
-                ? f(a, Math.abs(_), this.sign)
+                ? A(a, Math.abs(o), this.sign)
                 : ((t = this.sign),
-                  (m(a, _) >= 0 ? (r = A(a, _)) : ((r = A(_, a)), (t = !t)),
-                  "number" == typeof (r = l(r)))
-                    ? (t && (r = -r), new o(r))
-                    : new n(r, t));
+                  (C(a, o) >= 0 ? (r = R(a, o)) : ((r = R(o, a)), (t = !t)),
+                  "number" == typeof (r = c(r)))
+                    ? (t && (r = -r), new n(r))
+                    : new _(r, t));
             }),
-            (n.prototype.minus = n.prototype.subtract),
-            (o.prototype.subtract = function (e) {
-              var t = x(e),
+            (_.prototype.minus = _.prototype.subtract),
+            (n.prototype.subtract = function (e) {
+              var t = F(e),
                 r = this.value;
               if (r < 0 !== t.sign) return this.add(t.negate());
               var i = t.value;
-              return t.isSmall ? new o(r - i) : f(i, Math.abs(r), r >= 0);
+              return t.isSmall ? new n(r - i) : A(i, Math.abs(r), r >= 0);
+            }),
+            (n.prototype.minus = n.prototype.subtract),
+            (o.prototype.subtract = function (e) {
+              return new o(this.value - F(e).value);
             }),
             (o.prototype.minus = o.prototype.subtract),
-            (s.prototype.subtract = function (e) {
-              return new s(this.value - x(e).value);
+            (_.prototype.negate = function () {
+              return new _(this.value, !this.sign);
             }),
-            (s.prototype.minus = s.prototype.subtract),
             (n.prototype.negate = function () {
-              return new n(this.value, !this.sign);
-            }),
-            (o.prototype.negate = function () {
               var e = this.sign,
-                t = new o(-this.value);
+                t = new n(-this.value);
               return (t.sign = !e), t;
             }),
-            (s.prototype.negate = function () {
-              return new s(-this.value);
+            (o.prototype.negate = function () {
+              return new o(-this.value);
+            }),
+            (_.prototype.abs = function () {
+              return new _(this.value, !1);
             }),
             (n.prototype.abs = function () {
-              return new n(this.value, !1);
+              return new n(Math.abs(this.value));
             }),
             (o.prototype.abs = function () {
-              return new o(Math.abs(this.value));
+              return new o(this.value >= 0 ? this.value : -this.value);
             }),
-            (s.prototype.abs = function () {
-              return new s(this.value >= 0 ? this.value : -this.value);
-            }),
-            (n.prototype.multiply = function (e) {
+            (_.prototype.multiply = function (e) {
               var t,
                 r,
                 i,
-                a = x(e),
+                n = F(e),
                 o = this.value,
-                s = a.value,
-                E = this.sign !== a.sign;
-              if (a.isSmall) {
-                if (0 === s) return _[0];
+                s = n.value,
+                c = this.sign !== n.sign;
+              if (n.isSmall) {
+                if (0 === s) return a[0];
                 if (1 === s) return this;
                 if (-1 === s) return this.negate();
-                if ((i = Math.abs(s)) < 1e7) return new n(O(o, i), E);
-                s = c(i);
+                if ((i = Math.abs(s)) < 1e7) return new _(N(o, i), c);
+                s = E(i);
               }
               return -0.012 * (t = o.length) -
                 0.012 * (r = s.length) +
                 15e-6 * t * r >
                 0
-                ? new n(
+                ? new _(
                     (function e(t, r) {
                       var i = Math.max(t.length, r.length);
-                      if (i <= 30) return N(t, r);
+                      if (i <= 30) return f(t, r);
                       i = Math.ceil(i / 2);
                       var a = t.slice(i),
                         _ = t.slice(0, i),
@@ -453,148 +453,148 @@
                         o = r.slice(0, i),
                         s = e(_, o),
                         E = e(a, n),
-                        c = e(T(_, a), T(o, n)),
-                        l = T(T(s, L(A(A(c, s), E), i)), L(E, 2 * i));
-                      return u(l), l;
+                        c = e(p(_, a), p(o, n)),
+                        u = p(p(s, O(R(R(c, s), E), i)), O(E, 2 * i));
+                      return l(u), u;
                     })(o, s),
-                    E,
+                    c,
                   )
-                : new n(N(o, s), E);
+                : new _(f(o, s), c);
             }),
-            (n.prototype.times = n.prototype.multiply),
-            (o.prototype._multiplyBySmall = function (e) {
-              return E(e.value * this.value)
-                ? new o(e.value * this.value)
-                : h(
+            (_.prototype.times = _.prototype.multiply),
+            (n.prototype._multiplyBySmall = function (e) {
+              return s(e.value * this.value)
+                ? new n(e.value * this.value)
+                : L(
                     Math.abs(e.value),
-                    c(Math.abs(this.value)),
+                    E(Math.abs(this.value)),
                     this.sign !== e.sign,
                   );
             }),
-            (n.prototype._multiplyBySmall = function (e) {
+            (_.prototype._multiplyBySmall = function (e) {
               return 0 === e.value
-                ? _[0]
+                ? a[0]
                 : 1 === e.value
                   ? this
                   : -1 === e.value
                     ? this.negate()
-                    : h(Math.abs(e.value), this.value, this.sign !== e.sign);
+                    : L(Math.abs(e.value), this.value, this.sign !== e.sign);
             }),
+            (n.prototype.multiply = function (e) {
+              return F(e)._multiplyBySmall(this);
+            }),
+            (n.prototype.times = n.prototype.multiply),
             (o.prototype.multiply = function (e) {
-              return x(e)._multiplyBySmall(this);
+              return new o(this.value * F(e).value);
             }),
             (o.prototype.times = o.prototype.multiply),
-            (s.prototype.multiply = function (e) {
-              return new s(this.value * x(e).value);
+            (_.prototype.square = function () {
+              return new _(h(this.value), !1);
             }),
-            (s.prototype.times = s.prototype.multiply),
             (n.prototype.square = function () {
-              return new n(D(this.value), !1);
-            }),
-            (o.prototype.square = function () {
               var e = this.value * this.value;
-              return E(e) ? new o(e) : new n(D(c(Math.abs(this.value))), !1);
+              return s(e) ? new n(e) : new _(h(E(Math.abs(this.value))), !1);
             }),
-            (s.prototype.square = function (e) {
-              return new s(this.value * this.value);
+            (o.prototype.square = function (e) {
+              return new o(this.value * this.value);
             }),
-            (n.prototype.divmod = function (e) {
-              var t = C(this, e);
+            (_.prototype.divmod = function (e) {
+              var t = S(this, e);
               return { quotient: t[0], remainder: t[1] };
             }),
-            (s.prototype.divmod = o.prototype.divmod = n.prototype.divmod),
-            (n.prototype.divide = function (e) {
-              return C(this, e)[0];
+            (o.prototype.divmod = n.prototype.divmod = _.prototype.divmod),
+            (_.prototype.divide = function (e) {
+              return S(this, e)[0];
             }),
-            (s.prototype.over = s.prototype.divide =
+            (o.prototype.over = o.prototype.divide =
               function (e) {
-                return new s(this.value / x(e).value);
+                return new o(this.value / F(e).value);
               }),
-            (o.prototype.over =
-              o.prototype.divide =
-              n.prototype.over =
-                n.prototype.divide),
-            (n.prototype.mod = function (e) {
-              return C(this, e)[1];
+            (n.prototype.over =
+              n.prototype.divide =
+              _.prototype.over =
+                _.prototype.divide),
+            (_.prototype.mod = function (e) {
+              return S(this, e)[1];
             }),
-            (s.prototype.mod = s.prototype.remainder =
+            (o.prototype.mod = o.prototype.remainder =
               function (e) {
-                return new s(this.value % x(e).value);
+                return new o(this.value % F(e).value);
               }),
-            (o.prototype.remainder =
-              o.prototype.mod =
-              n.prototype.remainder =
-                n.prototype.mod),
-            (n.prototype.pow = function (e) {
+            (n.prototype.remainder =
+              n.prototype.mod =
+              _.prototype.remainder =
+                _.prototype.mod),
+            (_.prototype.pow = function (e) {
               var t,
                 r,
                 i,
-                a = x(e),
-                n = this.value,
-                s = a.value;
-              if (0 === s) return _[1];
-              if (0 === n) return _[0];
-              if (1 === n) return _[1];
-              if (-1 === n) return a.isEven() ? _[1] : _[-1];
-              if (a.sign) return _[0];
-              if (!a.isSmall)
-                throw Error("The exponent " + a.toString() + " is too large.");
-              if (this.isSmall && E((t = Math.pow(n, s)))) return new o(I(t));
+                _ = F(e),
+                o = this.value,
+                E = _.value;
+              if (0 === E) return a[1];
+              if (0 === o) return a[0];
+              if (1 === o) return a[1];
+              if (-1 === o) return _.isEven() ? a[1] : a[-1];
+              if (_.sign) return a[0];
+              if (!_.isSmall)
+                throw Error("The exponent " + _.toString() + " is too large.");
+              if (this.isSmall && s((t = Math.pow(o, E)))) return new n(d(t));
               for (
-                r = this, i = _[1];
-                !0 & s && ((i = i.times(r)), --s), 0 !== s;
+                r = this, i = a[1];
+                !0 & E && ((i = i.times(r)), --E), 0 !== E;
 
               )
-                (s /= 2), (r = r.square());
+                (E /= 2), (r = r.square());
               return i;
             }),
-            (o.prototype.pow = n.prototype.pow),
-            (s.prototype.pow = function (e) {
-              var t = x(e),
+            (n.prototype.pow = _.prototype.pow),
+            (o.prototype.pow = function (e) {
+              var t = F(e),
                 r = this.value,
                 i = t.value,
-                a = BigInt(0),
+                _ = BigInt(0),
                 n = BigInt(1),
-                o = BigInt(2);
-              if (i === a) return _[1];
-              if (r === a) return _[0];
-              if (r === n) return _[1];
-              if (r === BigInt(-1)) return t.isEven() ? _[1] : _[-1];
-              if (t.isNegative()) return new s(a);
+                s = BigInt(2);
+              if (i === _) return a[1];
+              if (r === _) return a[0];
+              if (r === n) return a[1];
+              if (r === BigInt(-1)) return t.isEven() ? a[1] : a[-1];
+              if (t.isNegative()) return new o(_);
               for (
-                var E = this, c = _[1];
-                (i & n) === n && ((c = c.times(E)), --i), i !== a;
+                var E = this, c = a[1];
+                (i & n) === n && ((c = c.times(E)), --i), i !== _;
 
               )
-                (i /= o), (E = E.square());
+                (i /= s), (E = E.square());
               return c;
             }),
-            (n.prototype.modPow = function (e, t) {
-              if (((e = x(e)), (t = x(t)).isZero()))
+            (_.prototype.modPow = function (e, t) {
+              if (((e = F(e)), (t = F(t)).isZero()))
                 throw Error("Cannot take modPow with modulus 0");
-              var r = _[1],
+              var r = a[1],
                 i = this.mod(t);
               for (
-                e.isNegative() && ((e = e.multiply(_[-1])), (i = i.modInv(t)));
+                e.isNegative() && ((e = e.multiply(a[-1])), (i = i.modInv(t)));
                 e.isPositive();
 
               ) {
-                if (i.isZero()) return _[0];
+                if (i.isZero()) return a[0];
                 e.isOdd() && (r = r.multiply(i).mod(t)),
                   (e = e.divide(2)),
                   (i = i.square().mod(t));
               }
               return r;
             }),
-            (s.prototype.modPow = o.prototype.modPow = n.prototype.modPow),
-            (n.prototype.compareAbs = function (e) {
-              var t = x(e),
+            (o.prototype.modPow = n.prototype.modPow = _.prototype.modPow),
+            (_.prototype.compareAbs = function (e) {
+              var t = F(e),
                 r = this.value,
                 i = t.value;
-              return t.isSmall ? 1 : m(r, i);
+              return t.isSmall ? 1 : C(r, i);
             }),
-            (o.prototype.compareAbs = function (e) {
-              var t = x(e),
+            (n.prototype.compareAbs = function (e) {
+              var t = F(e),
                 r = Math.abs(this.value),
                 i = t.value;
               return t.isSmall
@@ -605,19 +605,19 @@
                     : -1
                 : -1;
             }),
-            (s.prototype.compareAbs = function (e) {
+            (o.prototype.compareAbs = function (e) {
               var t = this.value,
-                r = x(e).value;
+                r = F(e).value;
               return (t = t >= 0 ? t : -t) === (r = r >= 0 ? r : -r)
                 ? 0
                 : t > r
                   ? 1
                   : -1;
             }),
-            (n.prototype.compare = function (e) {
+            (_.prototype.compare = function (e) {
               if (e === 1 / 0) return -1;
               if (e === -1 / 0) return 1;
-              var t = x(e),
+              var t = F(e),
                 r = this.value,
                 i = t.value;
               return this.sign !== t.sign
@@ -628,13 +628,13 @@
                   ? this.sign
                     ? -1
                     : 1
-                  : m(r, i) * (this.sign ? -1 : 1);
+                  : C(r, i) * (this.sign ? -1 : 1);
             }),
-            (n.prototype.compareTo = n.prototype.compare),
-            (o.prototype.compare = function (e) {
+            (_.prototype.compareTo = _.prototype.compare),
+            (n.prototype.compare = function (e) {
               if (e === 1 / 0) return -1;
               if (e === -1 / 0) return 1;
-              var t = x(e),
+              var t = F(e),
                 r = this.value,
                 i = t.value;
               return t.isSmall
@@ -651,121 +651,121 @@
                     ? 1
                     : -1;
             }),
-            (o.prototype.compareTo = o.prototype.compare),
-            (s.prototype.compare = function (e) {
+            (n.prototype.compareTo = n.prototype.compare),
+            (o.prototype.compare = function (e) {
               if (e === 1 / 0) return -1;
               if (e === -1 / 0) return 1;
               var t = this.value,
-                r = x(e).value;
+                r = F(e).value;
               return t === r ? 0 : t > r ? 1 : -1;
             }),
-            (s.prototype.compareTo = s.prototype.compare),
-            (n.prototype.equals = function (e) {
+            (o.prototype.compareTo = o.prototype.compare),
+            (_.prototype.equals = function (e) {
               return 0 === this.compare(e);
             }),
-            (s.prototype.eq =
-              s.prototype.equals =
-              o.prototype.eq =
+            (o.prototype.eq =
               o.prototype.equals =
               n.prototype.eq =
-                n.prototype.equals),
-            (n.prototype.notEquals = function (e) {
+              n.prototype.equals =
+              _.prototype.eq =
+                _.prototype.equals),
+            (_.prototype.notEquals = function (e) {
               return 0 !== this.compare(e);
             }),
-            (s.prototype.neq =
-              s.prototype.notEquals =
-              o.prototype.neq =
+            (o.prototype.neq =
               o.prototype.notEquals =
               n.prototype.neq =
-                n.prototype.notEquals),
-            (n.prototype.greater = function (e) {
+              n.prototype.notEquals =
+              _.prototype.neq =
+                _.prototype.notEquals),
+            (_.prototype.greater = function (e) {
               return this.compare(e) > 0;
             }),
-            (s.prototype.gt =
-              s.prototype.greater =
-              o.prototype.gt =
+            (o.prototype.gt =
               o.prototype.greater =
               n.prototype.gt =
-                n.prototype.greater),
-            (n.prototype.lesser = function (e) {
+              n.prototype.greater =
+              _.prototype.gt =
+                _.prototype.greater),
+            (_.prototype.lesser = function (e) {
               return 0 > this.compare(e);
             }),
-            (s.prototype.lt =
-              s.prototype.lesser =
-              o.prototype.lt =
+            (o.prototype.lt =
               o.prototype.lesser =
               n.prototype.lt =
-                n.prototype.lesser),
-            (n.prototype.greaterOrEquals = function (e) {
+              n.prototype.lesser =
+              _.prototype.lt =
+                _.prototype.lesser),
+            (_.prototype.greaterOrEquals = function (e) {
               return this.compare(e) >= 0;
             }),
-            (s.prototype.geq =
-              s.prototype.greaterOrEquals =
-              o.prototype.geq =
+            (o.prototype.geq =
               o.prototype.greaterOrEquals =
               n.prototype.geq =
-                n.prototype.greaterOrEquals),
-            (n.prototype.lesserOrEquals = function (e) {
+              n.prototype.greaterOrEquals =
+              _.prototype.geq =
+                _.prototype.greaterOrEquals),
+            (_.prototype.lesserOrEquals = function (e) {
               return 0 >= this.compare(e);
             }),
-            (s.prototype.leq =
-              s.prototype.lesserOrEquals =
-              o.prototype.leq =
+            (o.prototype.leq =
               o.prototype.lesserOrEquals =
               n.prototype.leq =
-                n.prototype.lesserOrEquals),
-            (n.prototype.isEven = function () {
+              n.prototype.lesserOrEquals =
+              _.prototype.leq =
+                _.prototype.lesserOrEquals),
+            (_.prototype.isEven = function () {
               return (1 & this.value[0]) == 0;
             }),
-            (o.prototype.isEven = function () {
+            (n.prototype.isEven = function () {
               return (1 & this.value) == 0;
             }),
-            (s.prototype.isEven = function () {
+            (o.prototype.isEven = function () {
               return (this.value & BigInt(1)) === BigInt(0);
             }),
-            (n.prototype.isOdd = function () {
+            (_.prototype.isOdd = function () {
               return (1 & this.value[0]) == 1;
             }),
-            (o.prototype.isOdd = function () {
+            (n.prototype.isOdd = function () {
               return (1 & this.value) == 1;
             }),
-            (s.prototype.isOdd = function () {
+            (o.prototype.isOdd = function () {
               return (this.value & BigInt(1)) === BigInt(1);
             }),
-            (n.prototype.isPositive = function () {
+            (_.prototype.isPositive = function () {
               return !this.sign;
             }),
-            (o.prototype.isPositive = function () {
+            (n.prototype.isPositive = function () {
               return this.value > 0;
             }),
-            (s.prototype.isPositive = o.prototype.isPositive),
-            (n.prototype.isNegative = function () {
+            (o.prototype.isPositive = n.prototype.isPositive),
+            (_.prototype.isNegative = function () {
               return this.sign;
             }),
-            (o.prototype.isNegative = function () {
+            (n.prototype.isNegative = function () {
               return this.value < 0;
             }),
-            (s.prototype.isNegative = o.prototype.isNegative),
-            (n.prototype.isUnit = function () {
+            (o.prototype.isNegative = n.prototype.isNegative),
+            (_.prototype.isUnit = function () {
               return !1;
             }),
-            (o.prototype.isUnit = function () {
+            (n.prototype.isUnit = function () {
               return 1 === Math.abs(this.value);
             }),
-            (s.prototype.isUnit = function () {
+            (o.prototype.isUnit = function () {
               return this.abs().value === BigInt(1);
             }),
-            (n.prototype.isZero = function () {
+            (_.prototype.isZero = function () {
               return !1;
             }),
-            (o.prototype.isZero = function () {
+            (n.prototype.isZero = function () {
               return 0 === this.value;
             }),
-            (s.prototype.isZero = function () {
+            (o.prototype.isZero = function () {
               return this.value === BigInt(0);
             }),
-            (n.prototype.isDivisibleBy = function (e) {
-              var t = x(e);
+            (_.prototype.isDivisibleBy = function (e) {
+              var t = F(e);
               return (
                 !t.isZero() &&
                 (!!t.isUnit() ||
@@ -774,15 +774,15 @@
                     : this.mod(t).isZero()))
               );
             }),
-            (s.prototype.isDivisibleBy = o.prototype.isDivisibleBy =
-              n.prototype.isDivisibleBy),
-            (n.prototype.isPrime = function (e) {
-              var t = g(this);
+            (o.prototype.isDivisibleBy = n.prototype.isDivisibleBy =
+              _.prototype.isDivisibleBy),
+            (_.prototype.isPrime = function (e) {
+              var t = m(this);
               if (void 0 !== t) return t;
               var r = this.abs(),
                 a = r.bitLength();
               if (a <= 64)
-                return y(r, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
+                return g(r, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
               for (
                 var _ = Math.log(2) * a.toJSNumber(),
                   n = Math.ceil(!0 === e ? 2 * Math.pow(_, 2) : _),
@@ -792,11 +792,11 @@
                 s++
               )
                 o.push(i(s + 2));
-              return y(r, o);
+              return g(r, o);
             }),
-            (s.prototype.isPrime = o.prototype.isPrime = n.prototype.isPrime),
-            (n.prototype.isProbablePrime = function (e, t) {
-              var r = g(this);
+            (o.prototype.isPrime = n.prototype.isPrime = _.prototype.isPrime),
+            (_.prototype.isProbablePrime = function (e, t) {
+              var r = m(this);
               if (void 0 !== r) return r;
               for (
                 var a = this.abs(), _ = void 0 === e ? 5 : e, n = [], o = 0;
@@ -804,13 +804,13 @@
                 o++
               )
                 n.push(i.randBetween(2, a.minus(2), t));
-              return y(a, n);
+              return g(a, n);
             }),
-            (s.prototype.isProbablePrime = o.prototype.isProbablePrime =
-              n.prototype.isProbablePrime),
-            (n.prototype.modInv = function (e) {
+            (o.prototype.isProbablePrime = n.prototype.isProbablePrime =
+              _.prototype.isProbablePrime),
+            (_.prototype.modInv = function (e) {
               for (
-                var t, r, a, _ = i.zero, n = i.one, o = x(e), s = this.abs();
+                var t, r, a, _ = i.zero, n = i.one, o = F(e), s = this.abs();
                 !s.isZero();
 
               )
@@ -832,38 +832,38 @@
                 ? _.negate()
                 : _;
             }),
-            (s.prototype.modInv = o.prototype.modInv = n.prototype.modInv),
-            (n.prototype.next = function () {
+            (o.prototype.modInv = n.prototype.modInv = _.prototype.modInv),
+            (_.prototype.next = function () {
               var e = this.value;
-              return this.sign ? f(e, 1, this.sign) : new n(R(e, 1), this.sign);
+              return this.sign ? A(e, 1, this.sign) : new _(T(e, 1), this.sign);
+            }),
+            (n.prototype.next = function () {
+              var t = this.value;
+              return t + 1 < 0x20000000000000 ? new n(t + 1) : new _(e, !1);
             }),
             (o.prototype.next = function () {
-              var e = this.value;
-              return e + 1 < 0x20000000000000 ? new o(e + 1) : new n(t, !1);
+              return new o(this.value + BigInt(1));
             }),
-            (s.prototype.next = function () {
-              return new s(this.value + BigInt(1));
+            (_.prototype.prev = function () {
+              var e = this.value;
+              return this.sign ? new _(T(e, 1), !0) : A(e, 1, this.sign);
             }),
             (n.prototype.prev = function () {
-              var e = this.value;
-              return this.sign ? new n(R(e, 1), !0) : f(e, 1, this.sign);
+              var t = this.value;
+              return t - 1 > -0x20000000000000 ? new n(t - 1) : new _(e, !0);
             }),
             (o.prototype.prev = function () {
-              var e = this.value;
-              return e - 1 > -0x20000000000000 ? new o(e - 1) : new n(t, !0);
-            }),
-            (s.prototype.prev = function () {
-              return new s(this.value - BigInt(1));
+              return new o(this.value - BigInt(1));
             });
-          for (var P = [1]; 2 * P[P.length - 1] <= 1e7; )
-            P.push(2 * P[P.length - 1]);
-          var w = P.length,
-            v = P[w - 1];
-          function M(e) {
+          for (var y = [1]; 2 * y[y.length - 1] <= 1e7; )
+            y.push(2 * y[y.length - 1]);
+          var P = y.length,
+            w = y[P - 1];
+          function v(e) {
             return 1e7 >= Math.abs(e);
           }
-          function U(e, t, r) {
-            t = x(t);
+          function M(e, t, r) {
+            t = F(t);
             for (
               var a = e.isNegative(),
                 _ = t.isNegative(),
@@ -877,10 +877,10 @@
               !n.isZero() || !o.isZero();
 
             )
-              (s = (c = C(n, v))[1].toJSNumber()),
-                a && (s = v - 1 - s),
-                (E = (l = C(o, v))[1].toJSNumber()),
-                _ && (E = v - 1 - E),
+              (s = (c = S(n, w))[1].toJSNumber()),
+                a && (s = w - 1 - s),
+                (E = (l = S(o, w))[1].toJSNumber()),
+                _ && (E = w - 1 - E),
                 (n = c[0]),
                 (o = l[0]),
                 u.push(r(s, E));
@@ -889,57 +889,57 @@
               I >= 0;
               I -= 1
             )
-              d = d.multiply(v).add(i(u[I]));
+              d = d.multiply(w).add(i(u[I]));
             return d;
           }
-          (n.prototype.shiftLeft = function (e) {
-            var t = x(e).toJSNumber();
-            if (!M(t)) throw Error(String(t) + " is too large for shifting.");
+          (_.prototype.shiftLeft = function (e) {
+            var t = F(e).toJSNumber();
+            if (!v(t)) throw Error(String(t) + " is too large for shifting.");
             if (t < 0) return this.shiftRight(-t);
             var r = this;
             if (r.isZero()) return r;
-            for (; t >= w; ) (r = r.multiply(v)), (t -= w - 1);
-            return r.multiply(P[t]);
+            for (; t >= P; ) (r = r.multiply(w)), (t -= P - 1);
+            return r.multiply(y[t]);
           }),
-            (s.prototype.shiftLeft = o.prototype.shiftLeft =
-              n.prototype.shiftLeft),
-            (n.prototype.shiftRight = function (e) {
+            (o.prototype.shiftLeft = n.prototype.shiftLeft =
+              _.prototype.shiftLeft),
+            (_.prototype.shiftRight = function (e) {
               var t,
-                r = x(e).toJSNumber();
-              if (!M(r)) throw Error(String(r) + " is too large for shifting.");
+                r = F(e).toJSNumber();
+              if (!v(r)) throw Error(String(r) + " is too large for shifting.");
               if (r < 0) return this.shiftLeft(-r);
-              for (var i = this; r >= w; ) {
+              for (var i = this; r >= P; ) {
                 if (i.isZero() || (i.isNegative() && i.isUnit())) return i;
-                (i = (t = C(i, v))[1].isNegative() ? t[0].prev() : t[0]),
-                  (r -= w - 1);
+                (i = (t = S(i, w))[1].isNegative() ? t[0].prev() : t[0]),
+                  (r -= P - 1);
               }
-              return (t = C(i, P[r]))[1].isNegative() ? t[0].prev() : t[0];
+              return (t = S(i, y[r]))[1].isNegative() ? t[0].prev() : t[0];
             }),
-            (s.prototype.shiftRight = o.prototype.shiftRight =
-              n.prototype.shiftRight),
-            (n.prototype.not = function () {
+            (o.prototype.shiftRight = n.prototype.shiftRight =
+              _.prototype.shiftRight),
+            (_.prototype.not = function () {
               return this.negate().prev();
             }),
-            (s.prototype.not = o.prototype.not = n.prototype.not),
-            (n.prototype.and = function (e) {
-              return U(this, e, function (e, t) {
+            (o.prototype.not = n.prototype.not = _.prototype.not),
+            (_.prototype.and = function (e) {
+              return M(this, e, function (e, t) {
                 return e & t;
               });
             }),
-            (s.prototype.and = o.prototype.and = n.prototype.and),
-            (n.prototype.or = function (e) {
-              return U(this, e, function (e, t) {
+            (o.prototype.and = n.prototype.and = _.prototype.and),
+            (_.prototype.or = function (e) {
+              return M(this, e, function (e, t) {
                 return e | t;
               });
             }),
-            (s.prototype.or = o.prototype.or = n.prototype.or),
-            (n.prototype.xor = function (e) {
-              return U(this, e, function (e, t) {
+            (o.prototype.or = n.prototype.or = _.prototype.or),
+            (_.prototype.xor = function (e) {
+              return M(this, e, function (e, t) {
                 return e ^ t;
               });
             }),
-            (s.prototype.xor = o.prototype.xor = n.prototype.xor);
-          function G(e) {
+            (o.prototype.xor = n.prototype.xor = _.prototype.xor);
+          function U(e) {
             var t = e.value,
               r =
                 "number" == typeof t
@@ -949,29 +949,29 @@
                     : (t[0] + 1e7 * t[1]) | 0x40004000;
             return r & -r;
           }
+          function G(e, t) {
+            return (e = F(e)), (t = F(t)), e.greater(t) ? e : t;
+          }
           function b(e, t) {
-            return (e = x(e)), (t = x(t)), e.greater(t) ? e : t;
+            return (e = F(e)), (t = F(t)), e.lesser(t) ? e : t;
           }
           function H(e, t) {
-            return (e = x(e)), (t = x(t)), e.lesser(t) ? e : t;
-          }
-          function B(e, t) {
-            if (((e = x(e).abs()), (t = x(t).abs()), e.equals(t))) return e;
+            if (((e = F(e).abs()), (t = F(t).abs()), e.equals(t))) return e;
             if (e.isZero()) return t;
             if (t.isZero()) return e;
-            for (var r, i, a = _[1]; e.isEven() && t.isEven(); )
-              (r = H(G(e), G(t))),
+            for (var r, i, _ = a[1]; e.isEven() && t.isEven(); )
+              (r = b(U(e), U(t))),
                 (e = e.divide(r)),
                 (t = t.divide(r)),
-                (a = a.multiply(r));
-            for (; e.isEven(); ) e = e.divide(G(e));
+                (_ = _.multiply(r));
+            for (; e.isEven(); ) e = e.divide(U(e));
             do {
-              for (; t.isEven(); ) t = t.divide(G(t));
+              for (; t.isEven(); ) t = t.divide(U(t));
               e.greater(t) && ((i = t), (t = e), (e = i)), (t = t.subtract(e));
             } while (!t.isZero());
-            return a.isUnit() ? e : e.multiply(a);
+            return _.isUnit() ? e : e.multiply(_);
           }
-          (n.prototype.bitLength = function () {
+          (_.prototype.bitLength = function () {
             var e = this;
             return (0 > e.compareTo(i(0)) && (e = e.negate().subtract(i(1))),
             0 === e.compareTo(i(0)))
@@ -991,48 +991,48 @@
                   })(e, i(2)).e,
                 ).add(i(1));
           }),
-            (s.prototype.bitLength = o.prototype.bitLength =
-              n.prototype.bitLength);
-          var K = function (e, t, i, a) {
-            (i = i || r),
+            (o.prototype.bitLength = n.prototype.bitLength =
+              _.prototype.bitLength);
+          var B = function (e, r, i, a) {
+            (i = i || t),
               (e = String(e)),
               a || ((e = e.toLowerCase()), (i = i.toLowerCase()));
             var _,
               n = e.length,
-              o = Math.abs(t),
+              o = Math.abs(r),
               s = {};
             for (_ = 0; _ < i.length; _++) s[i[_]] = _;
             for (_ = 0; _ < n; _++) {
               var E = e[_];
               if ("-" !== E && E in s && s[E] >= o) {
                 if ("1" === E && 1 === o) continue;
-                throw Error(E + " is not a valid digit in base " + t + ".");
+                throw Error(E + " is not a valid digit in base " + r + ".");
               }
             }
-            t = x(t);
+            r = F(r);
             var c = [],
               l = "-" === e[0];
             for (_ = +!!l; _ < e.length; _++) {
               var E = e[_];
-              if (E in s) c.push(x(s[E]));
+              if (E in s) c.push(F(s[E]));
               else if ("<" === E) {
                 var u = _;
                 do _++;
                 while (">" !== e[_] && _ < e.length);
-                c.push(x(e.slice(u + 1, _)));
+                c.push(F(e.slice(u + 1, _)));
               } else throw Error(E + " is not a valid character");
             }
-            return Y(c, t, l);
+            return K(c, r, l);
           };
-          function Y(e, t, r) {
+          function K(e, t, r) {
             var i,
-              a = _[0],
-              n = _[1];
+              _ = a[0],
+              n = a[1];
             for (i = e.length - 1; i >= 0; i--)
-              (a = a.add(e[i].times(n))), (n = n.times(t));
-            return r ? a.negate() : a;
+              (_ = _.add(e[i].times(n))), (n = n.times(t));
+            return r ? _.negate() : _;
           }
-          function W(e, t) {
+          function Y(e, t) {
             if ((t = i(t)).isZero()) {
               if (e.isZero()) return { value: [0], isNegative: !1 };
               throw Error("Cannot convert nonzero numbers to base 0.");
@@ -1087,82 +1087,82 @@
               n.push(o.toJSNumber()), { value: n.reverse(), isNegative: a }
             );
           }
-          function k(e, t, i) {
-            var a = W(e, t);
+          function W(e, r, i) {
+            var a = Y(e, r);
             return (
               (a.isNegative ? "-" : "") +
               a.value
                 .map(function (e) {
-                  var t;
-                  return e < (t = (t = i) || r).length ? t[e] : "<" + e + ">";
+                  var r;
+                  return e < (r = (r = i) || t).length ? r[e] : "<" + e + ">";
                 })
                 .join("")
             );
           }
-          function F(e) {
-            if (E(+e)) {
+          function k(e) {
+            if (s(+e)) {
               var t = +e;
-              if (t === I(t)) return a ? new s(BigInt(t)) : new o(t);
+              if (t === d(t)) return r ? new o(BigInt(t)) : new n(t);
               throw Error("Invalid integer: " + e);
             }
-            var r = "-" === e[0];
-            r && (e = e.slice(1));
-            var i = e.split(/e/i);
-            if (i.length > 2) throw Error("Invalid integer: " + i.join("e"));
-            if (2 === i.length) {
-              var _ = i[1];
+            var i = "-" === e[0];
+            i && (e = e.slice(1));
+            var a = e.split(/e/i);
+            if (a.length > 2) throw Error("Invalid integer: " + a.join("e"));
+            if (2 === a.length) {
+              var E = a[1];
               if (
-                ("+" === _[0] && (_ = _.slice(1)), (_ *= 1) !== I(_) || !E(_))
+                ("+" === E[0] && (E = E.slice(1)), (E *= 1) !== d(E) || !s(E))
               )
                 throw Error(
-                  "Invalid integer: " + _ + " is not a valid exponent.",
+                  "Invalid integer: " + E + " is not a valid exponent.",
                 );
-              var c = i[0],
-                l = c.indexOf(".");
+              var c = a[0],
+                u = c.indexOf(".");
               if (
-                (l >= 0 &&
-                  ((_ -= c.length - l - 1),
-                  (c = c.slice(0, l) + c.slice(l + 1))),
-                _ < 0)
+                (u >= 0 &&
+                  ((E -= c.length - u - 1),
+                  (c = c.slice(0, u) + c.slice(u + 1))),
+                E < 0)
               )
                 throw Error(
                   "Cannot include negative exponent part for integers",
                 );
-              (c += Array(_ + 1).join("0")), (e = c);
+              (c += Array(E + 1).join("0")), (e = c);
             }
             if (!/^([0-9][0-9]*)$/.test(e))
               throw Error("Invalid integer: " + e);
-            if (a) return new s(BigInt(r ? "-" + e : e));
-            for (var d = [], p = e.length, T = p - 7; p > 0; )
-              d.push(+e.slice(T, p)), (T -= 7) < 0 && (T = 0), (p -= 7);
-            return u(d), new n(d, r);
+            if (r) return new o(BigInt(i ? "-" + e : e));
+            for (var I = [], p = e.length, T = p - 7; p > 0; )
+              I.push(+e.slice(T, p)), (T -= 7) < 0 && (T = 0), (p -= 7);
+            return l(I), new _(I, i);
           }
-          function x(e) {
+          function F(e) {
             if ("number" == typeof e) {
-              if (a) return new s(BigInt(e));
-              if (E(e)) {
-                if (e !== I(e)) throw Error(e + " is not an integer.");
-                return new o(e);
+              if (r) return new o(BigInt(e));
+              if (s(e)) {
+                if (e !== d(e)) throw Error(e + " is not an integer.");
+                return new n(e);
               }
-              return F(e.toString());
+              return k(e.toString());
             }
             return "string" == typeof e
-              ? F(e)
+              ? k(e)
               : "bigint" == typeof e
-                ? new s(e)
+                ? new o(e)
                 : e;
           }
-          (n.prototype.toArray = function (e) {
-            return W(this, e);
+          (_.prototype.toArray = function (e) {
+            return Y(this, e);
           }),
+            (n.prototype.toArray = function (e) {
+              return Y(this, e);
+            }),
             (o.prototype.toArray = function (e) {
-              return W(this, e);
+              return Y(this, e);
             }),
-            (s.prototype.toArray = function (e) {
-              return W(this, e);
-            }),
-            (n.prototype.toString = function (e, t) {
-              if ((void 0 === e && (e = 10), 10 !== e)) return k(this, e, t);
+            (_.prototype.toString = function (e, t) {
+              if ((void 0 === e && (e = 10), 10 !== e)) return W(this, e, t);
               for (
                 var r, i = this.value, a = i.length, _ = String(i[--a]);
                 --a >= 0;
@@ -1171,69 +1171,69 @@
                 (r = String(i[a])), (_ += "0000000".slice(r.length) + r);
               return (this.sign ? "-" : "") + _;
             }),
-            (o.prototype.toString = function (e, t) {
+            (n.prototype.toString = function (e, t) {
               return (void 0 === e && (e = 10), 10 != e)
-                ? k(this, e, t)
+                ? W(this, e, t)
                 : String(this.value);
             }),
-            (s.prototype.toString = o.prototype.toString),
-            (s.prototype.toJSON =
+            (o.prototype.toString = n.prototype.toString),
+            (o.prototype.toJSON =
+              _.prototype.toJSON =
               n.prototype.toJSON =
-              o.prototype.toJSON =
                 function () {
                   return this.toString();
                 }),
-            (n.prototype.valueOf = function () {
+            (_.prototype.valueOf = function () {
               return parseInt(this.toString(), 10);
             }),
-            (n.prototype.toJSNumber = n.prototype.valueOf),
-            (o.prototype.valueOf = function () {
+            (_.prototype.toJSNumber = _.prototype.valueOf),
+            (n.prototype.valueOf = function () {
               return this.value;
             }),
-            (o.prototype.toJSNumber = o.prototype.valueOf),
-            (s.prototype.valueOf = s.prototype.toJSNumber =
+            (n.prototype.toJSNumber = n.prototype.valueOf),
+            (o.prototype.valueOf = o.prototype.toJSNumber =
               function () {
                 return parseInt(this.toString(), 10);
               });
-          for (var V = 0; V < 1e3; V++) (_[V] = x(V)), V > 0 && (_[-V] = x(-V));
+          for (var x = 0; x < 1e3; x++) (a[x] = F(x)), x > 0 && (a[-x] = F(-x));
           return (
-            (_.one = _[1]),
-            (_.zero = _[0]),
-            (_.minusOne = _[-1]),
-            (_.max = b),
-            (_.min = H),
-            (_.gcd = B),
-            (_.lcm = function (e, t) {
+            (a.one = a[1]),
+            (a.zero = a[0]),
+            (a.minusOne = a[-1]),
+            (a.max = G),
+            (a.min = b),
+            (a.gcd = H),
+            (a.lcm = function (e, t) {
               return (
-                (e = x(e).abs()),
-                (t = x(t).abs()),
-                e.divide(B(e, t)).multiply(t)
+                (e = F(e).abs()),
+                (t = F(t).abs()),
+                e.divide(H(e, t)).multiply(t)
               );
             }),
-            (_.isInstance = function (e) {
-              return e instanceof n || e instanceof o || e instanceof s;
+            (a.isInstance = function (e) {
+              return e instanceof _ || e instanceof n || e instanceof o;
             }),
-            (_.randBetween = function (e, t, r) {
-              e = x(e);
+            (a.randBetween = function (e, t, r) {
+              e = F(e);
               var i = r || Math.random,
-                a = H(e, (t = x(t))),
-                n = b(e, t).subtract(a).add(1);
-              if (n.isSmall) return a.add(Math.floor(i() * n));
+                _ = b(e, (t = F(t))),
+                n = G(e, t).subtract(_).add(1);
+              if (n.isSmall) return _.add(Math.floor(i() * n));
               for (
-                var o = W(n, 1e7).value, s = [], E = !0, c = 0;
+                var o = Y(n, 1e7).value, s = [], E = !0, c = 0;
                 c < o.length;
                 c++
               ) {
                 var l = E ? o[c] : 1e7,
-                  u = I(i() * l);
+                  u = d(i() * l);
                 s.push(u), u < l && (E = !1);
               }
-              return a.add(_.fromArray(s, 1e7, !1));
+              return _.add(a.fromArray(s, 1e7, !1));
             }),
-            (_.fromArray = function (e, t, r) {
-              return Y(e.map(x), x(t || 10), r);
+            (a.fromArray = function (e, t, r) {
+              return K(e.map(F), F(t || 10), r);
             }),
-            _
+            a
           );
         })();
         e.hasOwnProperty("exports") && (e.exports = i),
@@ -2704,19 +2704,20 @@
       },
       652215(e, t, r) {
         "use strict";
-        r.d(t, { HAw: () => I }), r(890245);
+        r.d(t, { HAw: () => p }), r(890245);
         var i,
-          a = r(989441);
+          a,
+          _ = r(989441);
         r(478437), r(508602), r(762230);
-        var _ = r(448761);
+        var n = r(448761);
         r(122817);
-        var n = r(136722),
-          o = r(317097),
-          s = r(323125),
-          E = r(927813),
-          c = r(901123),
-          l = r(355097),
-          u = r(818348);
+        var o = r(136722),
+          s = r(317097),
+          E = r(323125),
+          c = r(927813),
+          l = r(901123),
+          u = r(355097),
+          d = r(818348);
         r(100544),
           Object.freeze({
             SUPPRESS_JOIN_NOTIFICATIONS: 1,
@@ -2729,17 +2730,17 @@
             SUPPRESS_UGC_ADDED_NOTIFICATIONS: 256,
             SUPPRESS_VOICE_SESSION_NOTIFICATIONS: 512,
           }),
-          _.l.REPLY,
-          _.l.THREAD_STARTER_MESSAGE,
-          _.l.CONTEXT_MENU_COMMAND,
+          n.l.REPLY,
+          n.l.THREAD_STARTER_MESSAGE,
+          n.l.CONTEXT_MENU_COMMAND,
           Object.freeze({ ACCOUNT_AGE: 5, MEMBER_AGE: 10 });
-        let d = Object.freeze({
+        let I = Object.freeze({
           USER: (e) => `/users/${e}`,
           USER_RELATIONSHIPS: function () {
             let e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
-                : c.ME;
+                : l.ME;
             return `/users/${e}/relationships`;
           },
           USER_RELATIONSHIP: (e) => `/users/@me/relationships/${e}`,
@@ -2922,7 +2923,7 @@
             let t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
-                : c.ME;
+                : l.ME;
             return `/channels/${e}/thread-members/${t}`;
           },
           THREAD_MEMBER_SETTINGS: (e) =>
@@ -3868,16 +3869,16 @@
           HAVEN_UPDATE: (e) => `/haven/${e}/update`,
           HAVEN_GET_ASSETS: "/haven/assets",
         });
-        (0, s.dN)(d),
-          E.A.Seconds.HOUR,
-          E.A.Seconds.MINUTE,
-          E.A.Seconds.MINUTE,
-          E.A.Seconds.MINUTE,
-          E.A.Seconds.MINUTE,
-          E.A.Seconds.MINUTE,
-          E.A.Seconds.MINUTE,
-          E.A.Seconds.HOUR,
-          E.A.Seconds.HOUR,
+        (0, E.dN)(I),
+          c.A.Seconds.HOUR,
+          c.A.Seconds.MINUTE,
+          c.A.Seconds.MINUTE,
+          c.A.Seconds.MINUTE,
+          c.A.Seconds.MINUTE,
+          c.A.Seconds.MINUTE,
+          c.A.Seconds.MINUTE,
+          c.A.Seconds.HOUR,
+          c.A.Seconds.HOUR,
           Object.freeze({
             API_DOCS: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/developers/docs/intro`,
             API_DOCS_GAME_AND_SERVER_MANAGEMENT: `${window.GLOBAL_ENV.MARKETING_ENDPOINT}/developers/docs/game-and-server-management/alpha-and-beta-testing`,
@@ -3993,7 +3994,7 @@
             GUILD_ROLE_SUBSCRIPTIONS_CANCEL: "Guild Role Subscription Cancel",
             GUILD_BOOSTING: "Nitro Server Boost",
             WEBAUTHN_VIEW: "View Security Keys",
-            [l.nR]: "Guild Role Subscription",
+            [u.nR]: "Guild Role Subscription",
             BILLING: "Billing",
             EXPERIMENTS: "Experiments",
             DEVELOPER_OPTIONS: "Developer Options",
@@ -4029,6 +4030,7 @@
             DESIGN_SYSTEM_SHEETS: "Design Systems (Sheets)",
             DESIGN_SYSTEM_FORM_PRIMITIVES: "Design Systems (Form Primitives)",
             DESIGN_SYSTEM_LEGACY_BUTTON: "Design System (Legacy Button)",
+            DESIGN_SYSTEM_HAPTICS: "Design Systems (Haptics)",
             ADVANCED: "Advanced",
             PROFILE_CUSTOMIZATION: "Profile Customization",
             PROFILE_CUSTOMIZATION_TRY_IT_OUT:
@@ -4066,7 +4068,7 @@
             META_QUEST:
               "https://www.meta.com/experiences/discord-talk-play-hang-out/25956082250713643/?require_login=true",
           }),
-          (0, o.Hl)(0x99aab5),
+          (0, s.Hl)(0x99aab5),
           Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
           Object.freeze({
             fonts: [
@@ -4090,7 +4092,7 @@
             ZOOM_MAX: 200,
             ZOOM_SCALES: [50, 67, 75, 80, 90, 100, 110, 125, 150, 175, 200],
           });
-        var I =
+        var p =
           (((i = {}).APP_OPENED = "app_opened"),
           (i.APP_CRASHED = "app_crashed"),
           (i.APP_BACKGROUND = "app_background"),
@@ -6215,29 +6217,53 @@
           (i.FAVORITES_GUILD_ADD_MODAL_OPENED =
             "favorites_guild_add_modal_opened"),
           i);
-        Object.freeze({
-          EMBEDDED_RELEASED: n.jB(1),
-          EMBEDDED_IAP: n.jB(3),
-          APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE: n.jB(6),
-          GAME_PROFILE_DISABLED: n.jB(7),
-          CONTEXTLESS_ACTIVITY: n.jB(9),
-          SOCIAL_LAYER_INTEGRATION_LIMITED: n.jB(10),
-          CLOUD_GAMING_DEMO: n.jB(11),
-          GATEWAY_PRESENCE: n.jB(12),
-          GATEWAY_PRESENCE_LIMITED: n.jB(13),
-          GATEWAY_GUILD_MEMBERS: n.jB(14),
-          GATEWAY_GUILD_MEMBERS_LIMITED: n.jB(15),
-          EMBEDDED: n.jB(17),
-          GATEWAY_MESSAGE_CONTENT: n.jB(18),
-          GATEWAY_MESSAGE_CONTENT_LIMITED: n.jB(19),
-          EMBEDDED_FIRST_PARTY: n.jB(20),
-          APPLICATION_COMMAND_BADGE: n.jB(23),
-          SOCIAL_LAYER_INTEGRATION: n.jB(27),
-          PROMOTED: n.jB(29),
-          PARTNER: n.jB(30),
-          PARENT: n.jB(33),
-          DISABLE_RELATIONSHIPS_ACCESS: n.jB(34),
-        }),
+        ((a = {})[(a.STAFF = 1)] = "STAFF"),
+          (a[(a.COLLABORATOR = 0x4000000000000)] = "COLLABORATOR"),
+          (a[(a.RESTRICTED_COLLABORATOR = 0x8000000000000)] =
+            "RESTRICTED_COLLABORATOR"),
+          (a[(a.PARTNER = 2)] = "PARTNER"),
+          (a[(a.HYPESQUAD = 4)] = "HYPESQUAD"),
+          (a[(a.BUG_HUNTER_LEVEL_1 = 8)] = "BUG_HUNTER_LEVEL_1"),
+          (a[(a.BUG_HUNTER_LEVEL_2 = 16384)] = "BUG_HUNTER_LEVEL_2"),
+          (a[(a.HYPESQUAD_ONLINE_HOUSE_1 = 64)] = "HYPESQUAD_ONLINE_HOUSE_1"),
+          (a[(a.HYPESQUAD_ONLINE_HOUSE_2 = 128)] = "HYPESQUAD_ONLINE_HOUSE_2"),
+          (a[(a.HYPESQUAD_ONLINE_HOUSE_3 = 256)] = "HYPESQUAD_ONLINE_HOUSE_3"),
+          (a[(a.PREMIUM_EARLY_SUPPORTER = 512)] = "PREMIUM_EARLY_SUPPORTER"),
+          (a[(a.VERIFIED_BOT = 65536)] = "VERIFIED_BOT"),
+          (a[(a.VERIFIED_DEVELOPER = 131072)] = "VERIFIED_DEVELOPER"),
+          (a[(a.CERTIFIED_MODERATOR = 262144)] = "CERTIFIED_MODERATOR"),
+          (a[(a.BOT_HTTP_INTERACTIONS = 524288)] = "BOT_HTTP_INTERACTIONS"),
+          (a[(a.SPAMMER = 1048576)] = "SPAMMER"),
+          (a[(a.DISABLE_PREMIUM = 2097152)] = "DISABLE_PREMIUM"),
+          (a[(a.PROVISIONAL_ACCOUNT = 8388608)] = "PROVISIONAL_ACCOUNT"),
+          (a[(a.MFA_SMS = 16)] = "MFA_SMS"),
+          (a[(a.PREMIUM_PROMO_DISMISSED = 32)] = "PREMIUM_PROMO_DISMISSED"),
+          (a[(a.HAS_UNREAD_URGENT_MESSAGES = 8192)] =
+            "HAS_UNREAD_URGENT_MESSAGES"),
+          (a[(a.QUARANTINED = 0x100000000000)] = "QUARANTINED"),
+          Object.freeze({
+            EMBEDDED_RELEASED: o.jB(1),
+            EMBEDDED_IAP: o.jB(3),
+            APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE: o.jB(6),
+            GAME_PROFILE_DISABLED: o.jB(7),
+            CONTEXTLESS_ACTIVITY: o.jB(9),
+            SOCIAL_LAYER_INTEGRATION_LIMITED: o.jB(10),
+            CLOUD_GAMING_DEMO: o.jB(11),
+            GATEWAY_PRESENCE: o.jB(12),
+            GATEWAY_PRESENCE_LIMITED: o.jB(13),
+            GATEWAY_GUILD_MEMBERS: o.jB(14),
+            GATEWAY_GUILD_MEMBERS_LIMITED: o.jB(15),
+            EMBEDDED: o.jB(17),
+            GATEWAY_MESSAGE_CONTENT: o.jB(18),
+            GATEWAY_MESSAGE_CONTENT_LIMITED: o.jB(19),
+            EMBEDDED_FIRST_PARTY: o.jB(20),
+            APPLICATION_COMMAND_BADGE: o.jB(23),
+            SOCIAL_LAYER_INTEGRATION: o.jB(27),
+            PROMOTED: o.jB(29),
+            PARTNER: o.jB(30),
+            PARENT: o.jB(33),
+            DISABLE_RELATIONSHIPS_ACCESS: o.jB(34),
+          }),
           Object.freeze({
             STORAGE_MANIFEST: (e, t) => `${e}/storage/${t}/MANIFEST`,
             INSTALL_DIR: (e) => `${e}/content`,
@@ -6347,39 +6373,39 @@
             },
           }),
           Object.freeze({
-            [a.D.DISCORD]: "Discord",
-            [a.D.STEAM]: "Steam",
-            [a.D.UPLAY]: "Uplay",
-            [a.D.BATTLENET]: "Battle.net",
-            [a.D.ORIGIN]: "Origin",
-            [a.D.GOG]: "GOG",
-            [a.D.GLYPH]: "Glyph",
-            [a.D.TWITCH]: "Twitch",
-            [a.D.EPIC]: "Epic",
-            [a.D.GOOGLE_PLAY]: "Google Play",
-            [a.D.SAMSUNG_GALAXY]: "Samsung Galaxy",
-            [a.D.MICROSOFT]: "Microsoft",
-            [a.D.PLAYSTATION]: "PlayStation",
-            [a.D.IGDB]: "IGDB",
-            [a.D.NVIDIA_GDN_APP]: "NVIDIA Cloud Gaming Application",
-            [a.D.ROBLOX]: "Roblox",
-            [a.D.XBOX_STORE]: "Xbox Store",
-            [a.D.XBOX_TITLE]: "Xbox Title",
-            [a.D.XBOX_GAME_PASS]: "Xbox Game Pass",
-            [a.D.GOP]: "GOP",
-            [a.D.GDCO]: "GDCO",
-            [a.D.OPENCRITIC]: "OpenCritic",
+            [_.D.DISCORD]: "Discord",
+            [_.D.STEAM]: "Steam",
+            [_.D.UPLAY]: "Uplay",
+            [_.D.BATTLENET]: "Battle.net",
+            [_.D.ORIGIN]: "Origin",
+            [_.D.GOG]: "GOG",
+            [_.D.GLYPH]: "Glyph",
+            [_.D.TWITCH]: "Twitch",
+            [_.D.EPIC]: "Epic",
+            [_.D.GOOGLE_PLAY]: "Google Play",
+            [_.D.SAMSUNG_GALAXY]: "Samsung Galaxy",
+            [_.D.MICROSOFT]: "Microsoft",
+            [_.D.PLAYSTATION]: "PlayStation",
+            [_.D.IGDB]: "IGDB",
+            [_.D.NVIDIA_GDN_APP]: "NVIDIA Cloud Gaming Application",
+            [_.D.ROBLOX]: "Roblox",
+            [_.D.XBOX_STORE]: "Xbox Store",
+            [_.D.XBOX_TITLE]: "Xbox Title",
+            [_.D.XBOX_GAME_PASS]: "Xbox Game Pass",
+            [_.D.GOP]: "GOP",
+            [_.D.GDCO]: "GDCO",
+            [_.D.OPENCRITIC]: "OpenCritic",
           }),
-          u.Yr.USD,
-          u.Yr.CAD,
-          u.Yr.EUR,
-          u.Yr.AUD,
-          u.Yr.GBP,
-          u.Yr.PHP,
-          u.Yr.MYR,
-          u.Yr.VND,
-          u.Yr.KRW,
-          u.Yr.IDR,
+          d.Yr.USD,
+          d.Yr.CAD,
+          d.Yr.EUR,
+          d.Yr.AUD,
+          d.Yr.GBP,
+          d.Yr.PHP,
+          d.Yr.MYR,
+          d.Yr.VND,
+          d.Yr.KRW,
+          d.Yr.IDR,
           Object.freeze({
             APPLICATIONS: (e) => (null != e ? `applications/${e}` : null),
             APP_PREMIUM_BUTTON: (e) =>
@@ -6482,7 +6508,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-fe3e9e995fa67840613a5dcc49e40c6eb89a0528",
+            release: "discord_web-497f0b70261851807783334ce64daa7bacfe8196",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6549,8 +6575,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "529985"),
-            o.NA("builtAt", String("1776358141014"));
+            o.NA("buildNumber", "530076"),
+            o.NA("builtAt", String("1776362241635"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -15397,15 +15423,15 @@
                 let t = _(e),
                   r = [, , , ,];
                 for (let e = 0; e < 4; e++)
-                  r[3 - e] = (function (e, t, r) {
-                    let i = 0;
-                    for (let r = 0; r < 4; r++) {
-                      let a = e[t + r];
+                  r[3 - e] = (function (e, t) {
+                    let r = 0;
+                    for (let i = 0; i < 4; i++) {
+                      let a = e[t + i];
                       if (void 0 === a) break;
-                      i += a * 16 ** r;
+                      r += a * 16 ** i;
                     }
-                    return i;
-                  })(t, 4 * e, 4);
+                    return r;
+                  })(t, 4 * e);
                 return r;
               })(e),
               e,
@@ -17426,18 +17452,18 @@
                   else if (t > 1) {
                     var _ = a[0],
                       n = a[1] - _;
-                    i = (function (e, t, r) {
+                    i = (function (e, t) {
                       for (
-                        var i = [],
-                          a = 0 < t,
-                          _ = r ? (a ? t + 1 : t - 1) : t,
-                          n = 0;
-                        a ? n < _ : n > _;
-                        a ? n++ : n--
+                        var r = [],
+                          i = 0 < e,
+                          a = t ? (i ? e + 1 : e - 1) : e,
+                          _ = 0;
+                        i ? _ < a : _ > a;
+                        i ? _++ : _--
                       )
-                        i.push(n);
-                      return i;
-                    })(0, t, !1).map(function (e) {
+                        r.push(_);
+                      return r;
+                    })(t, !1).map(function (e) {
                       return h(_ + (e / (t - 1)) * n);
                     });
                   } else {
@@ -21393,16 +21419,16 @@
         r.d(t, { L: () => _ });
         var i = r(608768),
           a = r(847745);
-        function _(e, { metadata: t, tunnel: r, dsn: _ }) {
-          let n = {
+        function _(e, { metadata: t, tunnel: r, dsn: n }) {
+          let o = {
               event_id: e.event_id,
               sent_at: new Date().toISOString(),
               ...(t &&
                 t.sdk && { sdk: { name: t.sdk.name, version: t.sdk.version } }),
-              ...(!!r && !!_ && { dsn: (0, i.SB)(_) }),
+              ...(!!r && !!n && { dsn: (0, i.SB)(n) }),
             },
-            o = [{ type: "user_report" }, e];
-          return (0, a.h4)(n, [o]);
+            s = [{ type: "user_report" }, e];
+          return (0, a.h4)(o, [s]);
         }
       },
       215570(e, t, r) {
@@ -38586,31 +38612,28 @@ ${eq}
               })(() => this._flush(), this._options.flushMinDelay, {
                 maxWait: this._options.flushMaxDelay,
               })),
-              (this._throttledAddEvent = (function (e, t, r) {
-                let i = new Map(),
-                  a = !1;
-                return (...t) => {
-                  let r,
+              (this._throttledAddEvent = (function (e) {
+                let t = new Map(),
+                  r = !1;
+                return (...i) => {
+                  let a,
                     _ = Math.floor(Date.now() / 1e3);
                   if (
-                    ((r = _ - 5),
-                    i.forEach((e, t) => {
-                      t < r && i.delete(t);
+                    ((a = _ - 5),
+                    t.forEach((e, r) => {
+                      r < a && t.delete(r);
                     }),
-                    [...i.values()].reduce((e, t) => e + t, 0) >= 300)
+                    [...t.values()].reduce((e, t) => e + t, 0) >= 300)
                   ) {
-                    let e = a;
-                    return (a = !0), e ? "__SKIPPED" : rz;
+                    let e = r;
+                    return (r = !0), e ? "__SKIPPED" : rz;
                   }
-                  a = !1;
-                  let n = i.get(_) || 0;
-                  return i.set(_, n + 1), e(...t);
+                  r = !1;
+                  let n = t.get(_) || 0;
+                  return t.set(_, n + 1), e(...i);
                 };
-              })(
-                (e, t) =>
-                  rT(this, e) ? rp(this, e, t) : Promise.resolve(null),
-                0,
-                0,
+              })((e, t) =>
+                rT(this, e) ? rp(this, e, t) : Promise.resolve(null),
               ));
             const { slowClickTimeout: r, slowClickIgnoreSelectors: i } =
                 this.getOptions(),
@@ -40018,12 +40041,12 @@ ${eq}
         Object.defineProperty(e, "__esModule", { value: !0 });
     }),
     (r.nmd = (e) => ((e.paths = []), e.children || (e.children = []), e)),
-    (r.rv = () => "1.7.3"),
-    (r.ruid = "bundler=rspack@1.7.3"),
+    (r.rv = () => "1.7.11"),
+    (r.ruid = "bundler=rspack@1.7.11"),
     (() => {
       "use strict";
       var e = r(168769);
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.023a32303b79a8ab.js.map
+//# sourceMappingURL=sentry.0ddb7b1f5f0a39df.js.map
