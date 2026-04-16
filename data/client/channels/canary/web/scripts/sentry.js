@@ -6510,7 +6510,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-84c6ba5ddb17019c5c9f934c42e0ccd1a71d43be",
+            release: "discord_web-aa21175f40669fc4d80ab01aa700477935fbdbd9",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6577,8 +6577,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "530375"),
-            o.NA("builtAt", String("1776375325308"));
+            o.NA("buildNumber", "530440"),
+            o.NA("builtAt", String("1776377704337"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -11383,7 +11383,6 @@
           RawColors: {
             APPLICATION_SUBSCRIPTION_END: "#0177a4",
             APPLICATION_SUBSCRIPTION_START: "#3442d9",
-            BATTLENET: "#009ae5",
             BG_ANIMATED_GRADIENT_BACKGROUND_INDIGO_1: "#201e6e",
             BG_ANIMATED_GRADIENT_BACKGROUND_INDIGO_2: "#1d0066",
             BG_ANIMATED_GRADIENT_BACKGROUND_NOT_BLACK: "#0d0d0f",
@@ -11706,7 +11705,6 @@
             BRAND_830: "#141738",
             BRAND_860: "#0d0f24",
             BRAND_900: "#04050c",
-            BUNGIE: "#00a3e3",
             CHECKPOINT_EMOJIS_GRADIENT_END: "#1d0b24",
             CHECKPOINT_EMOJIS_GRADIENT_START: "#7d42f2",
             CHECKPOINT_EMOJIS_PRIMARY: "#ca9ef9",
@@ -11793,12 +11791,6 @@
             CHECKPOINT_WELCOME_GRADIENT_START: "#3fc07e",
             CHECKPOINT_WELCOME_PRIMARY: "#2bec76",
             CHECKPOINT_WELCOME_SECONDARY: "#14a74e",
-            CRUNCHYROLL: "#f78b24",
-            EBAY: "#0064d2",
-            EPIC_GAMES: "#3c3935",
-            FACEBOOK: "#355089",
-            GITHUB: "#191717",
-            GOLD: "#ffc819",
             GREEN_100: "#ecfef1",
             GREEN_130: "#defee7",
             GREEN_160: "#bdfcd3",
@@ -11977,7 +11969,6 @@
             ILLO_YELLOW_50: "#f3ba2f",
             ILLO_YELLOW_60: "#e79418",
             ILLO_YELLOW_70: "#db6e00",
-            LOL: "#021f25",
             LOL_TEXT_DARK: "#94620f",
             LOL_TEXT_LIGHT: "#cbaa62",
             NEUTRAL_1: "#ffffff",
@@ -12481,8 +12472,6 @@
             ORANGE_NEW_97: "#290001",
             ORANGE_NEW_98: "#250002",
             ORANGE_NEW_99: "#1f0002",
-            PARTNER: "#4087ed",
-            PAYPAL: "#13216b",
             PINK_1: "#ffd7f4",
             PINK_10: "#ffbeef",
             PINK_100: "#0b0006",
@@ -12583,7 +12572,29 @@
             PINK_97: "#28001d",
             PINK_98: "#210018",
             PINK_99: "#190011",
-            PLAYSTATION: "#032f87",
+            PLATFORM_BATTLENET: "#009ae5",
+            PLATFORM_BUNGIE: "#00a3e3",
+            PLATFORM_CRUNCHYROLL: "#f78b24",
+            PLATFORM_EBAY: "#0064d2",
+            PLATFORM_EPIC_GAMES: "#3c3935",
+            PLATFORM_FACEBOOK: "#355089",
+            PLATFORM_GITHUB: "#191717",
+            PLATFORM_GOLD: "#ffc819",
+            PLATFORM_LOL: "#021f25",
+            PLATFORM_PARTNER: "#4087ed",
+            PLATFORM_PAYPAL: "#13216b",
+            PLATFORM_PLAYSTATION: "#032f87",
+            PLATFORM_REDDIT: "#ff4500",
+            PLATFORM_RIOT_GAMES: "#ea0029",
+            PLATFORM_SAMSUNG: "#1429a0",
+            PLATFORM_SKYPE: "#009dd7",
+            PLATFORM_SPOTIFY: "#1db954",
+            PLATFORM_STEAM: "#182332",
+            PLATFORM_TWITCH: "#9147ff",
+            PLATFORM_TWITCH_SECONDARY: "#772ce8",
+            PLATFORM_TWITTER: "#1da1f2",
+            PLATFORM_XBOX: "#107c10",
+            PLATFORM_YOUTUBE: "#cb2120",
             PLUM_0: "#f9f9fa",
             PLUM_1: "#f3f3f4",
             PLUM_10: "#818491",
@@ -12796,8 +12807,6 @@
             RED_NEW_97: "#290005",
             RED_NEW_98: "#230004",
             RED_NEW_99: "#1d0004",
-            REDDIT: "#ff4500",
-            RIOT_GAMES: "#ea0029",
             ROLE_BLUE: "#206694",
             ROLE_BROWN: "#a84300",
             ROLE_BURGUNDY: "#ad1457",
@@ -12820,10 +12829,6 @@
             ROLE_TEAL: "#1abc9c",
             ROLE_TERRACOTTA: "#992d22",
             ROLE_YELLOW: "#f1c40f",
-            SAMSUNG: "#1429a0",
-            SKYPE: "#009dd7",
-            SPOTIFY: "#1db954",
-            STEAM: "#182332",
             TEAL_100: "#f4fbfd",
             TEAL_130: "#e9f9fd",
             TEAL_160: "#d3f4fb",
@@ -12951,12 +12956,8 @@
             TEAL_NEW_98: "#00141c",
             TEAL_NEW_99: "#001119",
             TRANSPARENT: "#00000000",
-            TWITCH: "#9147ff",
-            TWITCH_SECONDARY: "#772ce8",
-            TWITTER: "#1da1f2",
             WHITE: "#ffffff",
             WHITE_500: "#ffffff",
-            XBOX: "#107c10",
             YELLOW_100: "#fff8ef",
             YELLOW_130: "#fff4e8",
             YELLOW_160: "#ffebd3",
@@ -13083,7 +13084,6 @@
             YELLOW_NEW_97: "#2f0100",
             YELLOW_NEW_98: "#2a0000",
             YELLOW_NEW_99: "#240000",
-            YOUTUBE: "#cb2120",
           },
         };
       },
@@ -40141,4 +40141,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.192779bf0cb789c7.js.map
+//# sourceMappingURL=sentry.fbcda5a8f4bec40c.js.map

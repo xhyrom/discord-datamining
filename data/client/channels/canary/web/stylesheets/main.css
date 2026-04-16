@@ -1399,6 +1399,30 @@
 .app-focused .stopAnimation__46696 .path__46696 {
   animation: none;
 }
+.xxs__899bb {
+  height: 12px;
+  width: 12px;
+}
+.xs__899bb {
+  height: 16px;
+  width: 16px;
+}
+.sm__899bb {
+  height: 18px;
+  width: 18px;
+}
+.md__899bb {
+  height: 24px;
+  width: 24px;
+}
+.lg__899bb {
+  height: 32px;
+  width: 32px;
+}
+.refresh_sm__899bb {
+  height: 20px;
+  width: 20px;
+}
 .combo__61c93 {
   box-sizing: border-box;
   display: flex;
@@ -24394,21 +24418,6 @@ img.thumbnail__0f2e8 {
   flex: 0 0 auto;
   margin-inline-end: var(--space-4);
 }
-.lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
-  fill: var(--__lottieIconColor, var(--interactive-text-default));
-}
-.lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity] {
-  stroke: var(--__lottieIconColor, var(--interactive-text-default));
-}
-.lottieIcon__5eb9b svg {
-  transform: none !important;
-}
-.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
-  fill: currentColor;
-}
-.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[stroke][stroke-opacity] {
-  stroke: currentColor;
-}
 .buttonContainer_e6e74f {
   border-radius: 8px;
   margin-top: unset;
@@ -24718,7 +24727,7 @@ img.thumbnail__0f2e8 {
   position: absolute;
 }
 .sparkleStar__24af7 {
-  color: var(--gold);
+  color: var(--platform-gold);
   inset-inline-start: 20px;
   top: -12px;
 }
@@ -28854,6 +28863,21 @@ html:not(.chat-input) .inputInner_b1f01d {
   border: 2px solid var(--background-mod-normal);
   margin-inline: -4px;
   margin-inline-end: 4px;
+}
+.lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
+  fill: var(--__lottieIconColor, var(--interactive-text-default));
+}
+.lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity] {
+  stroke: var(--__lottieIconColor, var(--interactive-text-default));
+}
+.lottieIcon__5eb9b svg {
+  transform: none !important;
+}
+.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
+  fill: currentColor;
+}
+.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[stroke][stroke-opacity] {
+  stroke: currentColor;
 }
 .custom-user-profile-theme .container_a99829 {
   border: none;
@@ -44768,14 +44792,14 @@ svg.radioIcon_c1e9c4 {
   --custom-notice-button-hover: var(--notice-text-positive);
 }
 .colorStreamerMode__6e2b9 {
-  --custom-notice-background: var(--twitch);
+  --custom-notice-background: var(--platform-twitch);
   --custom-notice-text: var(--white);
-  --custom-notice-button-hover: var(--twitch);
+  --custom-notice-button-hover: var(--platform-twitch);
 }
 .colorSpotify__6e2b9 {
-  --custom-notice-background: var(--spotify);
+  --custom-notice-background: var(--platform-spotify);
   --custom-notice-text: var(--white);
-  --custom-notice-button-hover: var(--spotify);
+  --custom-notice-button-hover: var(--platform-spotify);
   align-items: center;
   display: flex;
   justify-content: center;
@@ -44790,9 +44814,9 @@ svg.radioIcon_c1e9c4 {
   top: 0;
 }
 .colorPlayStation__6e2b9 {
-  --custom-notice-background: var(--playstation);
+  --custom-notice-background: var(--platform-playstation);
   --custom-notice-text: var(--white);
-  --custom-notice-button-hover: var(--playstation);
+  --custom-notice-button-hover: var(--platform-playstation);
   align-items: center;
   display: flex;
   justify-content: center;
@@ -50243,8 +50267,6 @@ html.disable-forced-colors * {
   );
   --application-subscription-start-hsl: 234.909
     calc(var(--saturation-factor, 1) * 68.465%) 52.745%;
-  --battlenet: hsl(var(--battlenet-hsl) / 1);
-  --battlenet-hsl: 199.651 calc(var(--saturation-factor, 1) * 100%) 44.902%;
   --bg-animated-gradient-background-indigo-1: hsl(
     var(--bg-animated-gradient-background-indigo-1-hsl) / 1
   );
@@ -50483,8 +50505,6 @@ html.disable-forced-colors * {
   );
   --bg-gradient-under-the-sea-3-hsl: 175.385
     calc(var(--saturation-factor, 1) * 10.924%) 46.667%;
-  --bungie: hsl(var(--bungie-hsl) / 1);
-  --bungie-hsl: 196.916 calc(var(--saturation-factor, 1) * 100%) 44.51%;
   --checkpoint-emojis-gradient-end: hsl(
     var(--checkpoint-emojis-gradient-end-hsl) / 1
   );
@@ -50895,18 +50915,6 @@ html.disable-forced-colors * {
   );
   --checkpoint-welcome-secondary-hsl: 143.673
     calc(var(--saturation-factor, 1) * 78.61%) 36.667%;
-  --crunchyroll: hsl(var(--crunchyroll-hsl) / 1);
-  --crunchyroll-hsl: 29.289 calc(var(--saturation-factor, 1) * 92.952%) 55.49%;
-  --ebay: hsl(var(--ebay-hsl) / 1);
-  --ebay-hsl: 211.429 calc(var(--saturation-factor, 1) * 100%) 41.176%;
-  --epic-games: hsl(var(--epic-games-hsl) / 1);
-  --epic-games-hsl: 34.286 calc(var(--saturation-factor, 1) * 6.195%) 22.157%;
-  --facebook: hsl(var(--facebook-hsl) / 1);
-  --facebook-hsl: 220.714 calc(var(--saturation-factor, 1) * 44.211%) 37.255%;
-  --github: hsl(var(--github-hsl) / 1);
-  --github-hsl: 0 calc(var(--saturation-factor, 1) * 4.167%) 9.412%;
-  --gold: hsl(var(--gold-hsl) / 1);
-  --gold-hsl: 45.652 calc(var(--saturation-factor, 1) * 100%) 54.902%;
   --guild-boosting-blue: hsl(var(--guild-boosting-blue-hsl) / 1);
   --guild-boosting-blue-hsl: 221.132 calc(var(--saturation-factor, 1) * 70.044%)
     55.49%;
@@ -51043,20 +51051,72 @@ html.disable-forced-colors * {
   --illo-yellow-60-hsl: 35.942 calc(var(--saturation-factor, 1) * 81.176%) 50%;
   --illo-yellow-70: hsl(var(--illo-yellow-70-hsl) / 1);
   --illo-yellow-70-hsl: 30.137 calc(var(--saturation-factor, 1) * 100%) 42.941%;
-  --lol: hsl(var(--lol-hsl) / 1);
-  --lol-hsl: 190.286 calc(var(--saturation-factor, 1) * 89.744%) 7.647%;
   --lol-text-dark: hsl(var(--lol-text-dark-hsl) / 1);
   --lol-text-dark-hsl: 37.444 calc(var(--saturation-factor, 1) * 81.595%)
     31.961%;
   --lol-text-light: hsl(var(--lol-text-light-hsl) / 1);
   --lol-text-light-hsl: 41.143 calc(var(--saturation-factor, 1) * 50.239%)
     59.02%;
-  --partner: hsl(var(--partner-hsl) / 1);
-  --partner-hsl: 215.376 calc(var(--saturation-factor, 1) * 82.775%) 59.02%;
-  --paypal: hsl(var(--paypal-hsl) / 1);
-  --paypal-hsl: 230.455 calc(var(--saturation-factor, 1) * 69.841%) 24.706%;
-  --playstation: hsl(var(--playstation-hsl) / 1);
-  --playstation-hsl: 220 calc(var(--saturation-factor, 1) * 95.652%) 27.059%;
+  --platform-battlenet: hsl(var(--platform-battlenet-hsl) / 1);
+  --platform-battlenet-hsl: 199.651 calc(var(--saturation-factor, 1) * 100%)
+    44.902%;
+  --platform-bungie: hsl(var(--platform-bungie-hsl) / 1);
+  --platform-bungie-hsl: 196.916 calc(var(--saturation-factor, 1) * 100%) 44.51%;
+  --platform-crunchyroll: hsl(var(--platform-crunchyroll-hsl) / 1);
+  --platform-crunchyroll-hsl: 29.289 calc(var(--saturation-factor, 1) * 92.952%)
+    55.49%;
+  --platform-ebay: hsl(var(--platform-ebay-hsl) / 1);
+  --platform-ebay-hsl: 211.429 calc(var(--saturation-factor, 1) * 100%) 41.176%;
+  --platform-epic-games: hsl(var(--platform-epic-games-hsl) / 1);
+  --platform-epic-games-hsl: 34.286 calc(var(--saturation-factor, 1) * 6.195%)
+    22.157%;
+  --platform-facebook: hsl(var(--platform-facebook-hsl) / 1);
+  --platform-facebook-hsl: 220.714 calc(var(--saturation-factor, 1) * 44.211%)
+    37.255%;
+  --platform-github: hsl(var(--platform-github-hsl) / 1);
+  --platform-github-hsl: 0 calc(var(--saturation-factor, 1) * 4.167%) 9.412%;
+  --platform-gold: hsl(var(--platform-gold-hsl) / 1);
+  --platform-gold-hsl: 45.652 calc(var(--saturation-factor, 1) * 100%) 54.902%;
+  --platform-lol: hsl(var(--platform-lol-hsl) / 1);
+  --platform-lol-hsl: 190.286 calc(var(--saturation-factor, 1) * 89.744%) 7.647%;
+  --platform-partner: hsl(var(--platform-partner-hsl) / 1);
+  --platform-partner-hsl: 215.376 calc(var(--saturation-factor, 1) * 82.775%)
+    59.02%;
+  --platform-paypal: hsl(var(--platform-paypal-hsl) / 1);
+  --platform-paypal-hsl: 230.455 calc(var(--saturation-factor, 1) * 69.841%)
+    24.706%;
+  --platform-playstation: hsl(var(--platform-playstation-hsl) / 1);
+  --platform-playstation-hsl: 220 calc(var(--saturation-factor, 1) * 95.652%)
+    27.059%;
+  --platform-reddit: hsl(var(--platform-reddit-hsl) / 1);
+  --platform-reddit-hsl: 16.235 calc(var(--saturation-factor, 1) * 100%) 50%;
+  --platform-riot-games: hsl(var(--platform-riot-games-hsl) / 1);
+  --platform-riot-games-hsl: 349.487 calc(var(--saturation-factor, 1) * 100%)
+    45.882%;
+  --platform-samsung: hsl(var(--platform-samsung-hsl) / 1);
+  --platform-samsung-hsl: 231 calc(var(--saturation-factor, 1) * 77.778%)
+    35.294%;
+  --platform-skype: hsl(var(--platform-skype-hsl) / 1);
+  --platform-skype-hsl: 196.186 calc(var(--saturation-factor, 1) * 100%) 42.157%;
+  --platform-spotify: hsl(var(--platform-spotify-hsl) / 1);
+  --platform-spotify-hsl: 141.154 calc(var(--saturation-factor, 1) * 72.897%)
+    41.961%;
+  --platform-steam: hsl(var(--platform-steam-hsl) / 1);
+  --platform-steam-hsl: 214.615 calc(var(--saturation-factor, 1) * 35.135%)
+    14.51%;
+  --platform-twitch: hsl(var(--platform-twitch-hsl) / 1);
+  --platform-twitch-hsl: 264.13 calc(var(--saturation-factor, 1) * 100%) 63.922%;
+  --platform-twitch-secondary: hsl(var(--platform-twitch-secondary-hsl) / 1);
+  --platform-twitch-secondary-hsl: 263.936
+    calc(var(--saturation-factor, 1) * 80.342%) 54.118%;
+  --platform-twitter: hsl(var(--platform-twitter-hsl) / 1);
+  --platform-twitter-hsl: 202.817 calc(var(--saturation-factor, 1) * 89.121%)
+    53.137%;
+  --platform-xbox: hsl(var(--platform-xbox-hsl) / 1);
+  --platform-xbox-hsl: 120 calc(var(--saturation-factor, 1) * 77.143%) 27.451%;
+  --platform-youtube: hsl(var(--platform-youtube-hsl) / 1);
+  --platform-youtube-hsl: 0.351 calc(var(--saturation-factor, 1) * 72.766%)
+    46.078%;
   --premium-nitro-pink-dark: hsl(var(--premium-nitro-pink-dark-hsl) / 1);
   --premium-nitro-pink-dark-hsl: 299.45
     calc(var(--saturation-factor, 1) * 43.083%) 50.392%;
@@ -51181,10 +51241,6 @@ html.disable-forced-colors * {
   );
   --premium-tier-2-purple-for-gradients-2-hsl: 295.645
     calc(var(--saturation-factor, 1) * 50%) 51.373%;
-  --reddit: hsl(var(--reddit-hsl) / 1);
-  --reddit-hsl: 16.235 calc(var(--saturation-factor, 1) * 100%) 50%;
-  --riot-games: hsl(var(--riot-games-hsl) / 1);
-  --riot-games-hsl: 349.487 calc(var(--saturation-factor, 1) * 100%) 45.882%;
   --role-blue: hsl(var(--role-blue-hsl) / 1);
   --role-blue-hsl: 203.793 calc(var(--saturation-factor, 1) * 64.444%) 35.294%;
   --role-brown: hsl(var(--role-brown-hsl) / 1);
@@ -51240,25 +51296,6 @@ html.disable-forced-colors * {
     36.667%;
   --role-yellow: hsl(var(--role-yellow-hsl) / 1);
   --role-yellow-hsl: 48.053 calc(var(--saturation-factor, 1) * 88.976%) 50.196%;
-  --samsung: hsl(var(--samsung-hsl) / 1);
-  --samsung-hsl: 231 calc(var(--saturation-factor, 1) * 77.778%) 35.294%;
-  --skype: hsl(var(--skype-hsl) / 1);
-  --skype-hsl: 196.186 calc(var(--saturation-factor, 1) * 100%) 42.157%;
-  --spotify: hsl(var(--spotify-hsl) / 1);
-  --spotify-hsl: 141.154 calc(var(--saturation-factor, 1) * 72.897%) 41.961%;
-  --steam: hsl(var(--steam-hsl) / 1);
-  --steam-hsl: 214.615 calc(var(--saturation-factor, 1) * 35.135%) 14.51%;
-  --twitch: hsl(var(--twitch-hsl) / 1);
-  --twitch-hsl: 264.13 calc(var(--saturation-factor, 1) * 100%) 63.922%;
-  --twitch-secondary: hsl(var(--twitch-secondary-hsl) / 1);
-  --twitch-secondary-hsl: 263.936 calc(var(--saturation-factor, 1) * 80.342%)
-    54.118%;
-  --twitter: hsl(var(--twitter-hsl) / 1);
-  --twitter-hsl: 202.817 calc(var(--saturation-factor, 1) * 89.121%) 53.137%;
-  --xbox: hsl(var(--xbox-hsl) / 1);
-  --xbox-hsl: 120 calc(var(--saturation-factor, 1) * 77.143%) 27.451%;
-  --youtube: hsl(var(--youtube-hsl) / 1);
-  --youtube-hsl: 0.351 calc(var(--saturation-factor, 1) * 72.766%) 46.078%;
 }
 .theme-dark {
   --app-frame-background: var(--neutral-78);
@@ -70362,4 +70399,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f3c06ae1a8f75749.css.map*/
+/*# sourceMappingURL=web.0a9d4b19ab0b1e29.css.map*/
