@@ -861,11 +861,7 @@
   },
   "USER_PROFILE_EFFECTS": {
     "url": "/user-profile-effects",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "COLLECTIBLES_CATEGORIES": {
     "url": "/collectibles-categories",
