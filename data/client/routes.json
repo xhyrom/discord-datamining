@@ -3177,18 +3177,11 @@
   },
   "USER_PERKS_DEMOS": {
     "url": "/users/@me/perks-demos",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "USER_PERKS_DEMOS_ACTIVATE": {
     "url": "/users/@me/activate-perk-demo/:param",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "GUILD_DISCOVERY": {
     "url": "/discoverable-guilds",
