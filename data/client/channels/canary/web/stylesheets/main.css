@@ -37201,81 +37201,9 @@ body .headerAnimation_b54a5b {
   margin: 0;
   padding: 16px 16px 0;
 }
-.profileEffectContainer_a84142 {
-  border-radius: var(--radius-md);
-  height: 296px;
-  margin: var(--space-16) auto 0;
-  overflow: hidden;
-  position: relative;
-  width: 200px;
-}
-.nameplateContainer_a84142 {
-  margin: var(--space-40) auto var(--space-48);
-  position: relative;
-  width: 324px;
-}
-.nameplate_a84142 {
-  width: 100%;
-}
-.giftMainAnimationWrapper_a84142 {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.avatar_a84142 {
-  margin-top: 24px;
-}
-.bundlePreviewWrapper_a84142 {
-  margin: 0 auto;
-  width: 224px;
-}
-.slayerStorefrontReviewImageWrapper_a84142 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 8px;
-  width: 100%;
-}
-.slayerStorefrontReviewImage_a84142 {
-  max-width: 180px;
-  width: 100%;
-}
-.stepBody_b44961 {
-  padding-top: var(--space-8);
-}
-.invoiceSpinner_b44961 {
-  height: 23px;
-}
-.errorBlock_b44961 {
-  margin: 5px 15px 15px;
-  position: relative;
-}
 .fineprint_b44961 {
   margin-bottom: 0;
   margin-top: 16px;
-}
-.skuHeading_b44961 {
-  display: flex;
-  gap: 25px;
-  margin-bottom: 20px;
-}
-.skuHeadingText_b44961 {
-  align-self: center;
-}
-.socialLayerGameItemDisclaimer_b44961 {
-  margin-top: 16px;
-}
-.paymentMethodContainer_b44961 {
-  display: flex;
-  flex-direction: column;
-}
-.giftCardCreditsCheckbox_b44961 {
-  margin-bottom: var(--space-8);
-}
-.giftCardRedemptionLink_b44961 {
-  margin-top: var(--space-8);
-}
-.oneTimePurchaseRewardNotice_b44961 {
-  margin-top: var(--space-16);
 }
 .back_e125f1 {
   margin-inline-end: auto;
@@ -60949,6 +60877,9 @@ html.disable-forced-colors * {
   --channel-icon: var(--neutral-19);
   --channel-text-area-placeholder: var(--neutral-25);
   --channels-default: var(--neutral-19);
+  --chat-input-action-button-icon-default-tint: var(--neutral-1);
+  --chat-input-action-icon-active-tint: var(--brand-230);
+  --chat-input-icon-default-tint: var(--neutral-2);
   --chat-text-muted: var(--neutral-17);
   --checkbox-border-active: var(--neutral-12);
   --checkbox-border-default: var(--neutral-1);
@@ -61272,6 +61203,24 @@ html.disable-forced-colors * {
     --channels-default: color-mix(
       in oklab,
       var(--neutral-19) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-action-button-icon-default-tint: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-action-icon-active-tint: color-mix(
+      in oklab,
+      var(--brand-230) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-icon-default-tint: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -61954,6 +61903,9 @@ html.disable-forced-colors * {
   --channel-icon: var(--neutral-50);
   --channel-text-area-placeholder: var(--neutral-39);
   --channels-default: var(--neutral-50);
+  --chat-input-action-button-icon-default-tint: var(--neutral-80);
+  --chat-input-action-icon-active-tint: var(--brand-600);
+  --chat-input-icon-default-tint: var(--neutral-64);
   --chat-text-muted: var(--neutral-48);
   --checkbox-border-active: var(--neutral-50);
   --checkbox-border-default: var(--neutral-72);
@@ -62275,6 +62227,24 @@ html.disable-forced-colors * {
     --channels-default: color-mix(
       in oklab,
       var(--neutral-50) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-action-button-icon-default-tint: color-mix(
+      in oklab,
+      var(--neutral-80) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-action-icon-active-tint: color-mix(
+      in oklab,
+      var(--brand-600) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-icon-default-tint: color-mix(
+      in oklab,
+      var(--neutral-64) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -62957,6 +62927,9 @@ html.disable-forced-colors * {
   --channel-icon: var(--neutral-29);
   --channel-text-area-placeholder: var(--neutral-36);
   --channels-default: var(--neutral-29);
+  --chat-input-action-button-icon-default-tint: var(--neutral-6);
+  --chat-input-action-icon-active-tint: var(--brand-345);
+  --chat-input-icon-default-tint: var(--neutral-15);
   --chat-text-muted: var(--neutral-28);
   --checkbox-border-active: var(--neutral-24);
   --checkbox-border-default: var(--neutral-10);
@@ -63286,6 +63259,24 @@ html.disable-forced-colors * {
     --channels-default: color-mix(
       in oklab,
       var(--neutral-29) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-action-button-icon-default-tint: color-mix(
+      in oklab,
+      var(--neutral-6) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-action-icon-active-tint: color-mix(
+      in oklab,
+      var(--brand-345) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-icon-default-tint: color-mix(
+      in oklab,
+      var(--neutral-15) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -63968,6 +63959,9 @@ html.disable-forced-colors * {
   --channel-icon: var(--neutral-27);
   --channel-text-area-placeholder: var(--neutral-33);
   --channels-default: var(--neutral-27);
+  --chat-input-action-button-icon-default-tint: var(--neutral-1);
+  --chat-input-action-icon-active-tint: var(--brand-330);
+  --chat-input-icon-default-tint: var(--neutral-10);
   --chat-text-muted: var(--neutral-25);
   --checkbox-border-active: var(--neutral-19);
   --checkbox-border-default: var(--neutral-5);
@@ -64291,6 +64285,24 @@ html.disable-forced-colors * {
     --channels-default: color-mix(
       in oklab,
       var(--neutral-27) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-action-button-icon-default-tint: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-action-icon-active-tint: color-mix(
+      in oklab,
+      var(--brand-330) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --chat-input-icon-default-tint: color-mix(
+      in oklab,
+      var(--neutral-10) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -69181,8 +69193,11 @@ html.disable-forced-colors * {
   --mobile-channel-list-title-text-style: redesign/heading-18/bold;
   --mobile-channel-name-channel-border-width: 1px;
   --mobile-channel-name-channel-icon-radius: 12px;
+  --mobile-chat-input-action-button-gap: 0px;
   --mobile-chat-input-action-button-margin: 4px;
   --mobile-chat-input-action-button-size: 40px;
+  --mobile-chat-input-action-icon-active-tint: text-brand;
+  --mobile-chat-input-action-icon-pixel-size: 24px;
   --mobile-chat-input-border-radius: 24px;
   --mobile-chat-input-container-horizontal-padding: 8px;
   --mobile-chat-input-expression-offset-left: 6px;
@@ -69192,7 +69207,10 @@ html.disable-forced-colors * {
   --mobile-chat-input-floating-scrim-gradient-height: 0px;
   --mobile-chat-input-floating-scrim-offset-top: 0px;
   --mobile-chat-input-floating-typing-padding-top: 0px;
+  --mobile-chat-input-icon-default-tint: interactive-text-default;
   --mobile-chat-input-icon-size: medium;
+  --mobile-chat-input-pill-border-width: 0px;
+  --mobile-chat-input-pill-margin-horizontal: 4px;
   --mobile-chat-input-pill-padding: 2px;
   --mobile-chat-input-space-bottom: 0px;
   --mobile-coachmark-body-width: 260px;
@@ -69305,8 +69323,11 @@ html.disable-forced-colors * {
   --mobile-channel-list-title-text-style: heading-lg/semibold;
   --mobile-channel-name-channel-border-width: 0px;
   --mobile-channel-name-channel-icon-radius: 8px;
+  --mobile-chat-input-action-button-gap: 8px;
   --mobile-chat-input-action-button-margin: 0px;
   --mobile-chat-input-action-button-size: 32px;
+  --mobile-chat-input-action-icon-active-tint: icon-strong;
+  --mobile-chat-input-action-icon-pixel-size: 20px;
   --mobile-chat-input-border-radius: 8px;
   --mobile-chat-input-container-horizontal-padding: 16px;
   --mobile-chat-input-expression-offset-left: 12px;
@@ -69316,7 +69337,11 @@ html.disable-forced-colors * {
   --mobile-chat-input-floating-scrim-gradient-height: 52px;
   --mobile-chat-input-floating-scrim-offset-top: 24px;
   --mobile-chat-input-floating-typing-padding-top: 20px;
+  --mobile-chat-input-icon-default-tint: interactive-icon-default;
   --mobile-chat-input-icon-size: small20;
+  --mobile-chat-input-pill-border-width: 1px;
+  --mobile-chat-input-pill-margin-horizontal: 8px;
+  --mobile-chat-input-pill-padding: 0px;
   --mobile-chat-input-space-bottom: 34px;
   --mobile-coachmark-body-width: 240px;
   --mobile-coachmark-button-spacing: 16px;
@@ -70399,4 +70424,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.d6dfb5d25527db98.css.map*/
+/*# sourceMappingURL=web.ee27fbf1bfe212e0.css.map*/
