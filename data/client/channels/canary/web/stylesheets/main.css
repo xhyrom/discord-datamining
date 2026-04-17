@@ -25696,7 +25696,7 @@ img.thumbnail__0f2e8 {
   background-image: url(/assets/94660b205108a49f.svg);
 }
 .overlayHeader__4774c {
-  border-radius: var(--radius-sm);
+  border-radius: 3px;
   flex: 1;
   overflow: hidden;
   position: relative;
@@ -70446,4 +70446,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f0afb296064c18d6.css.map*/
+/*# sourceMappingURL=web.a2346cac76b3d14a.css.map*/
