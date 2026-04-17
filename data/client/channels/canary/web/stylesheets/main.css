@@ -38890,16 +38890,20 @@ strong {
 .item_c1e9c4 {
   border-radius: 2px;
   box-sizing: border-box;
+  cursor: pointer;
   font-size: 14px;
   font-weight: var(--font-weight-medium);
   line-height: 18px;
   margin: 0;
 }
-.item_c1e9c4.interactive_c1e9c4 {
-  cursor: pointer;
-}
-.item_c1e9c4.interactive_c1e9c4:hover {
+.item_c1e9c4:hover {
   background-color: var(--background-mod-subtle);
+}
+.item_c1e9c4.nonInteractive_c1e9c4 {
+  cursor: default;
+}
+.item_c1e9c4.nonInteractive_c1e9c4:hover {
+  background-color: transparent;
 }
 .customItem_c1e9c4 {
   border-color: var(--interactive-text-default);
@@ -70442,4 +70446,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.7e984c6eb4c4730e.css.map*/
+/*# sourceMappingURL=web.f0afb296064c18d6.css.map*/
