@@ -32839,6 +32839,9 @@ body .headerAnimation_b54a5b {
   margin: var(--space-4) 0 0;
   padding-inline-start: var(--space-16);
 }
+.currencyWrapper__054b0 {
+  margin-top: var(--space-16);
+}
 .container__949a0 {
   flex-direction: row;
   justify-content: space-between;
@@ -37126,7 +37129,6 @@ body .headerAnimation_b54a5b {
 .premiumGroupNotice_e4d803 {
   margin: 12px 0;
 }
-.currencyWrapper_b41cc5,
 .previewTotalSectionContainer_b41cc5 {
   margin-top: var(--space-16);
 }
@@ -70424,4 +70426,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.ee27fbf1bfe212e0.css.map*/
+/*# sourceMappingURL=web.b1f48ff0070fc875.css.map*/
