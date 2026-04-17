@@ -10,13 +10,14 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8397385002](https://discord.com/jobs/8397385002)
 
-**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
+**Updated At:** Fri, 17 Apr 2026 21:47:21 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Every day, hundreds of millions of gamers gather on Discord to hang out, strategize their next raid, celebrate tournament victories, and build communities around the games they love. Behind every voice channel, every streamer Go Live, every Quest completed, there's data, petabytes of it, telling the story of how people connect through gaming.
 We're looking for an Engineering Manager who gets excited about building world-class teams and data infrastructure at massive scale. Someone who cares deeply about the communities we serve and is passionate about developing engineers who build lovable products for Discord users and Discord engineers alike. You'll lead a team building the next generation Data Platform that powers decisions for one of the most vibrant platforms in the world.
 If you're the kind of leader who lights up when coaching engineers, making tough technical decisions, and wants your team's work to directly impact millions worldwide, we want to talk to you.
 To learn more about Discord's Data Platform, read our engineering blog, including how we built our modern data stack leveraging open-source tools!
+This position is based in our San Francisco office.
 What You'll Be Doing
 
 Lead and grow one or more teams of engineers building data infrastructure that processes petabytes of data across millions of users

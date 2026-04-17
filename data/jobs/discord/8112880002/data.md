@@ -10,11 +10,12 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8112880002](https://discord.com/jobs/8112880002)
 
-**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
+**Updated At:** Fri, 17 Apr 2026 21:47:00 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking an accomplished and experienced Senior Software Engineer to join our dynamic team. In this role, you will be responsible for designing, developing, and maintaining our data infrastructure and services. You will collaborate with cross-functional teams, including data engineers, data scientists, software engineers, and product managers, to deliver modern and bleeding-edge solutions that drive business insights and innovation. This role reports to our Director of Engineering, Data Platform.
 To learn more about Discord’s Data Platform,&amp;nbsp;read our engineering blog — including how we built our modern data stack leveraging open-source tools!
+This position is based in our San Francisco office.
 What You'll Be Doing
 
 Define and execute the technical vision for Discord's data platform, enabling scalable, reliable, and performant data systems.
