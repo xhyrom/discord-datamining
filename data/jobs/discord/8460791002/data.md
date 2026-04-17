@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8460791002](https://discord.com/jobs/8460791002)
 
-**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
+**Updated At:** Fri, 17 Apr 2026 22:09:36 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for talented Senior Software Engineers to join our Consumer Revenue squads, the teams at the heart of premium experiences at Discord. You’ll be building out a premium Discord for millions of subscribers, focusing on surfaces such as Nitro, shop, boosting, user identity, and more. Your work will be vital in delivering a high-value premium experience, without compromising the core experience for our free users. You’ll be a key driver in generating the revenue that fuels Discord’s mission.

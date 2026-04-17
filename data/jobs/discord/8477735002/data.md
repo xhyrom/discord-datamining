@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8477735002](https://discord.com/jobs/8477735002)
 
-**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
+**Updated At:** Fri, 17 Apr 2026 22:09:37 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As an Administrative Business Partner, you will serve as a strategic and tactical partner to some of our leaders within our People/HR Organization. This role requires adaptability, strong organizational skills, and the ability to seamlessly integrate into various teams, ensuring continuity and efficiency in leadership support.

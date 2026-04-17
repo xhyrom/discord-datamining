@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8419048002](https://discord.com/jobs/8419048002)
 
-**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
+**Updated At:** Fri, 17 Apr 2026 22:09:36 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As a Public Policy Advisor on the Public Policy/Government Relations team, you will support Discord’s work by building trust and finding common ground with policymakers, regulators, and other stakeholders with a focus on the U.S. States. This role reports to the company’s Director of Americas Public Policy.

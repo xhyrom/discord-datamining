@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8463028002](https://discord.com/jobs/8463028002)
 
-**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
+**Updated At:** Fri, 17 Apr 2026 22:09:36 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for an experienced Senior Paralegal, Litigation &amp;amp; Regulatory to join our growing legal team. In this role, you will support the Litigation and Regulatory teams across a broad range of matters, including commercial litigation, pre-litigation disputes, arbitrations, and regulatory investigations. Core responsibilities include matter intake and tracking in our matter management system, supporting attorneys and the eDiscovery lead on discovery requests and legal hold administration. You will also help us manage outside counsel relationships, maintain legal knowledge resources, and help build the processes and tools that allow our legal function to scale. You will work closely with Discord's attorneys, Legal Operations, eDiscovery Lead, Trust &amp;amp; Safety, Data Science, Finance, and other cross-functional teams.

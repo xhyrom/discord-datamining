@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8502342002](https://discord.com/jobs/8502342002)
 
-**Updated At:** Wed, 15 Apr 2026 21:16:47 GMT
+**Updated At:** Fri, 17 Apr 2026 22:09:37 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re looking for a highly technical, hands-on, and empathetic Engineering Manager to lead one of our full stack squads in our Revenue organization. This is a high-impact role where you’ll be directly responsible for one of Discord’s major business lines, delivering premium experiences that create real value for users while driving company revenue.
