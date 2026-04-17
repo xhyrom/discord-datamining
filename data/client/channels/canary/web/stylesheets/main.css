@@ -29101,6 +29101,7 @@ html:not(.chat-input) .inputInner_b1f01d {
 }
 .profileFrameLayer__7d80f.rail__7d80f {
   height: 100%;
+  overflow: hidden;
   @container (max-height: 480px) {
     &.responsive__7d80f {
       display: none;
@@ -29108,11 +29109,24 @@ html:not(.chat-input) .inputInner_b1f01d {
   }
 }
 .profileFrameLayer__7d80f.rail__7d80f > img {
-  bottom: 0;
-  height: 100%;
-  margin: auto;
   position: absolute;
+}
+.profileFrameLayer__7d80f.rail__7d80f.center__7d80f > img {
+  bottom: 0;
+  margin: auto;
   top: 0;
+}
+.profileFrameLayer__7d80f.rail__7d80f.top__7d80f > img {
+  top: 0;
+}
+.profileFrameLayer__7d80f.rail__7d80f.bottom__7d80f > img {
+  bottom: 0;
+}
+.profileFrameLayer__7d80f.border__7d80f {
+  background-image: var(--custom-profile-frame-layer-src);
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  height: 100%;
 }
 @keyframes fadeIn__7d80f {
   0% {
@@ -69306,6 +69320,7 @@ html.disable-forced-colors * {
   --mobile-voice-panel-gutter: 12px;
   --mobile-voice-panel-padding: 12px;
   --mobile-voice-tile-border-radius: 24px;
+  --mobile-you-bar-border-radius: 28px;
   --modal-horizontal-padding: 24px;
   --modal-vertical-padding: 16px;
   --modal-width-large: 800px;
@@ -69419,6 +69434,7 @@ html.disable-forced-colors * {
   --mobile-voice-panel-gutter: 16px;
   --mobile-voice-panel-padding: 16px;
   --mobile-voice-tile-border-radius: 12px;
+  --mobile-you-bar-border-radius: 16px;
 }
 .guild-item-spacing {
   --mobile-guild-bar-item-margin: 6px;
@@ -70426,4 +70442,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.b1f48ff0070fc875.css.map*/
+/*# sourceMappingURL=web.7e984c6eb4c4730e.css.map*/
