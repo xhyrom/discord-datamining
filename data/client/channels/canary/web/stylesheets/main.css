@@ -17564,10 +17564,11 @@ img.thumbnail__0f2e8 {
   margin-bottom: -1px;
 }
 .badgeLabel_aeaaeb {
+  align-items: center;
   border-radius: 4px;
   display: flex;
   flex-direction: row;
-  gap: 4px;
+  gap: 6px;
   padding: 4px 8px;
   text-transform: uppercase;
 }
@@ -17580,8 +17581,6 @@ img.thumbnail__0f2e8 {
 .newlyAddedBadgeIcon_aeaaeb {
   color: #fff;
   height: 14px;
-  margin-block: 2px 0;
-  margin-inline: 0 2px;
   width: 14px;
 }
 .enable-forced-colors .inspector_aeaaeb {
@@ -70446,4 +70445,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.a2346cac76b3d14a.css.map*/
+/*# sourceMappingURL=web.a716fbdff227866f.css.map*/
