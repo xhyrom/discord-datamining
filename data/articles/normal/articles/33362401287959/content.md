@@ -191,7 +191,8 @@
     src="https://support.discord.com/hc/article_attachments/38909170379671"
     width="624"
     height="317"
-  />  
+  />
+   
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01KK9HG2K9ZR7N7ADC0KVQH5K4">
   <span style="color: #666666"
