@@ -47585,17 +47585,20 @@ svg.radioIcon_c1e9c4 {
   top: 0;
   inset-inline: 0 var(--devtools-sidebar-width);
 }
+.disablePointerEvents_c38106 {
+  pointer-events: none;
+}
+.disablePointerEvents_c38106 .winButtons_c38106 {
+  pointer-events: auto;
+}
 .title_c38106 {
+  align-items: center;
+  display: flex;
   justify-content: center;
   position: absolute;
   top: 0;
   inset-inline: 0;
   bottom: 0;
-}
-.leading_c38106,
-.title_c38106 {
-  align-items: center;
-  display: flex;
 }
 .leading_c38106 {
   box-sizing: border-box;
@@ -47603,6 +47606,8 @@ svg.radioIcon_c1e9c4 {
 }
 .leading_c38106,
 .trailing_c38106 {
+  align-items: center;
+  display: flex;
   gap: var(--space-12);
   position: relative;
   z-index: 1;
@@ -47610,12 +47615,12 @@ svg.radioIcon_c1e9c4 {
 }
 .trailing_c38106,
 .winButtons_c38106 {
-  align-items: center;
-  display: flex;
   justify-content: flex-end;
 }
 .winButtons_c38106 {
+  align-items: center;
   color: var(--interactive-text-default);
+  display: flex;
   gap: var(--space-4);
 }
 .winButtonsWithDivider_c38106:before {
@@ -70421,4 +70426,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.9d826aef17cc5cf5.css.map*/
+/*# sourceMappingURL=web.43bb9f84d0020cd3.css.map*/
