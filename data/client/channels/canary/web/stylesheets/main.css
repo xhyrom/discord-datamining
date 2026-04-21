@@ -25721,16 +25721,16 @@ html:not(.chat-input) .inputInner_b1f01d {
   width: 80%;
 }
 :root {
-  --custom-profile-frame-overflow-top: 77px;
-  --custom-profile-frame-overflow-bottom: 53px;
-  --custom-profile-frame-overflow-left: 12px;
+  --custom-profile-frame-overflow-top: 77;
+  --custom-profile-frame-overflow-bottom: 53;
+  --custom-profile-frame-overflow-left: 12;
   --custom-profile-frame-popout-width: 332;
 }
 :root .user-profile-modal-v2 {
-  --custom-profile-frame-overflow-left: 16px;
+  --custom-profile-frame-overflow-left: 16;
 }
 :root .user-profile-sidebar {
-  --custom-profile-frame-overflow-left: 16px;
+  --custom-profile-frame-overflow-left: 16;
 }
 :root .theme-midnight {
   --custom-profile-frame-drop-shadow-opacity: 0.6;
@@ -25747,12 +25747,12 @@ html:not(.chat-input) .inputInner_b1f01d {
 .profileFrame__7d80f {
   container-type: size;
   height: 100%;
-  inset-inline-start: calc(var(--custom-profile-frame-overflow-left) * -1);
+  inset-inline-start: calc(var(--custom-profile-frame-overflow-left) * -1px);
   max-height: 100%;
   pointer-events: none;
   position: absolute;
   top: 0;
-  width: calc(100% + var(--custom-profile-frame-overflow-left) * 2);
+  width: calc(100% + var(--custom-profile-frame-overflow-left) * 2px);
 }
 @media (max-height: 480px) {
   .user-profile-popout .profileFrame__7d80f {
@@ -25760,15 +25760,22 @@ html:not(.chat-input) .inputInner_b1f01d {
   }
 }
 .user-profile-modal-v2 .profileFrame__7d80f {
-  height: calc(100% - var(--custom-modal-v2-padding));
+  --custom-modal-v2-padding-block-start: calc(
+    var(--custom-modal-v2-padding) +
+      max(
+        var(--custom-modal-v2-system-bar-padding),
+        var(--custom-modal-v2-private-banner-height)
+      )
+  );
+  height: calc(100% - var(--custom-modal-v2-padding-block-start));
   inset-inline-start: calc(
-    var(--custom-profile-frame-overflow-left) * -1 +
+    var(--custom-profile-frame-overflow-left) * -1px +
       var(--custom-modal-v2-padding)
   );
-  margin-top: var(--custom-modal-v2-padding);
-  max-width: calc(400px + var(--custom-profile-frame-overflow-left) * 2);
-  min-width: calc(300px + var(--custom-profile-frame-overflow-left) * 2);
-  width: calc(45.5% + var(--custom-profile-frame-overflow-left) * 2);
+  margin-top: var(--custom-modal-v2-padding-block-start);
+  max-width: calc(400px + var(--custom-profile-frame-overflow-left) * 2px);
+  min-width: calc(300px + var(--custom-profile-frame-overflow-left) * 2px);
+  width: calc(45.5cqw + var(--custom-profile-frame-overflow-left) * 2px);
 }
 @media (max-height: 785px) {
   .user-profile-modal-v2 .profileFrame__7d80f {
@@ -25799,32 +25806,20 @@ html:not(.chat-input) .inputInner_b1f01d {
   z-index: -1;
 }
 .profileFrameLayer__7d80f.staple__7d80f.top__7d80f {
-  top: calc(var(--custom-profile-frame-overflow-top) * -1);
-}
-.user-profile-modal-v2 .profileFrameLayer__7d80f.staple__7d80f.top__7d80f {
   top: calc(
-    var(--custom-profile-frame-overflow-top) * -1 * 432 /
+    var(--custom-profile-frame-overflow-top) * -1 * 100cqw /
       var(--custom-profile-frame-popout-width)
   );
 }
 .user-profile-sidebar .profileFrameLayer__7d80f.staple__7d80f.top__7d80f {
   top: calc(
-    var(--custom-profile-frame-overflow-top) * -1 * 372 /
+    var(--custom-profile-frame-overflow-top) * -1 * 100cqw /
       var(--custom-profile-frame-popout-width) - 4px
   );
 }
 .profileFrameLayer__7d80f.staple__7d80f.bottom__7d80f {
-  bottom: calc(var(--custom-profile-frame-overflow-bottom) * -1);
-}
-.user-profile-modal-v2 .profileFrameLayer__7d80f.staple__7d80f.bottom__7d80f {
   bottom: calc(
-    var(--custom-profile-frame-overflow-bottom) * -1 * 432 /
-      var(--custom-profile-frame-popout-width)
-  );
-}
-.user-profile-sidebar .profileFrameLayer__7d80f.staple__7d80f.bottom__7d80f {
-  top: calc(
-    var(--custom-profile-frame-overflow-bottom) * -1 * 372 /
+    var(--custom-profile-frame-overflow-bottom) * -1 * 100cqw /
       var(--custom-profile-frame-popout-width)
   );
 }
@@ -70455,4 +70450,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.c7934050b567ff14.css.map*/
+/*# sourceMappingURL=web.5453c40529494e04.css.map*/
