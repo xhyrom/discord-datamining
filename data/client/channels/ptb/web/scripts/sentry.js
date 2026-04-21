@@ -3863,6 +3863,8 @@
             `/guilds/${e}/migrate-bypass-slowmode-permission`,
           QUEST_PLACEMENT: "/quests/placement-alpha",
           QUESTS_GET_DECISIONS: "/quests/get-decisions",
+          QUESTS_CREATIVES_CLAIM_REWARD: (e) =>
+            `/quests/creatives/${e}/claim-reward`,
           GAME_ANNOUNCEMENTS: (e) => `/games/${e}/announcements`,
           GAME_UPDATE: (e, t) => `/games/${e}/updates/${t}`,
           HAVEN_CONNECT: (e) => `/haven/${e}/connect`,
@@ -6474,10 +6476,7 @@
             );
           };
         }
-        a.HAw.START_SPEAKING,
-          a.HAw.START_LISTENING,
-          a.HAw.APP_OPENED,
-          a.HAw.NOTIFICATION_CLICKED,
+        a.HAw.NOTIFICATION_CLICKED,
           a.HAw.EXPERIMENT_USER_TRIGGERED,
           a.HAw.EXPERIMENT_DM_TRIGGERED,
           a.HAw.EXPERIMENT_GUILD_TRIGGERED,
@@ -6511,7 +6510,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-04-20-891b712d2703ad1f7380317fde540179247517f0-discord_web",
+              "2026-04-21-d09b198644904fb85fff1bd9e39727693e29738a-discord_web",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -6578,8 +6577,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.NA("buildNumber", "532042"),
-            o.NA("builtAt", String("1776712753156"));
+            o.NA("buildNumber", "532435"),
+            o.NA("builtAt", String("1776755951532"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) o.NA(t, e[t]);
           return s;
@@ -40333,4 +40332,4 @@ ${eq}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.23e7320c271acf50.js.map
+//# sourceMappingURL=sentry.f1f39ecc4b9d768e.js.map
