@@ -25202,6 +25202,12 @@ html:not(.chat-input) .inputInner_b1f01d {
 .maxBioHeight_f5f93a {
   max-height: 55px;
 }
+.row_e4172d {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+}
 .roleIcon_ee71ee {
   display: inline-block;
   -o-object-fit: contain;
@@ -25748,6 +25754,11 @@ html:not(.chat-input) .inputInner_b1f01d {
   top: 0;
   width: calc(100% + var(--custom-profile-frame-overflow-left) * 2);
 }
+@media (max-height: 480px) {
+  .user-profile-popout .profileFrame__7d80f {
+    display: none;
+  }
+}
 .user-profile-modal-v2 .profileFrame__7d80f {
   height: calc(100% - var(--custom-modal-v2-padding));
   inset-inline-start: calc(
@@ -25758,6 +25769,11 @@ html:not(.chat-input) .inputInner_b1f01d {
   max-width: calc(400px + var(--custom-profile-frame-overflow-left) * 2);
   min-width: calc(300px + var(--custom-profile-frame-overflow-left) * 2);
   width: calc(45.5% + var(--custom-profile-frame-overflow-left) * 2);
+}
+@media (max-height: 785px) {
+  .user-profile-modal-v2 .profileFrame__7d80f {
+    display: none;
+  }
 }
 .profileFrameLayer__7d80f {
   max-height: 100%;
@@ -70439,4 +70455,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.b992b0698b7809f3.css.map*/
+/*# sourceMappingURL=web.c7934050b567ff14.css.map*/
