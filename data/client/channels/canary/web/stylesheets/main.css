@@ -51315,6 +51315,7 @@ html.disable-forced-colors * {
   --button-outline-brand-border-active: var(--brand-560);
   --button-outline-primary-text: var(--white);
   --card-background-default: var(--neutral-64);
+  --card-border-default: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --card-primary-pressed-bg: var(--primary-645);
   --card-secondary-bg: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --card-secondary-pressed-bg: var(--primary-645);
@@ -52150,6 +52151,15 @@ html.disable-forced-colors * {
       var(--neutral-64) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --card-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --card-primary-pressed-bg: color-mix(
       in oklab,
@@ -53718,6 +53728,7 @@ html.disable-forced-colors * {
   --button-outline-brand-border-active: var(--brand-560);
   --button-outline-primary-text: var(--black);
   --card-background-default: var(--neutral-1);
+  --card-border-default: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --card-primary-pressed-bg: var(--primary-160);
   --card-secondary-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --card-secondary-pressed-bg: var(--primary-160);
@@ -54537,6 +54548,15 @@ html.disable-forced-colors * {
       var(--neutral-1) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --card-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --card-primary-pressed-bg: color-mix(
       in oklab,
@@ -56105,6 +56125,7 @@ html.disable-forced-colors * {
   --button-outline-brand-border-active: var(--brand-560);
   --button-outline-primary-text: var(--white);
   --card-background-default: var(--neutral-91);
+  --card-border-default: hsl(var(--opacity-20-hsl) / 0.2);
   --card-primary-pressed-bg: var(--plum-25);
   --card-secondary-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --card-secondary-pressed-bg: var(--plum-26);
@@ -56926,6 +56947,15 @@ html.disable-forced-colors * {
       var(--neutral-91) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --card-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --card-primary-pressed-bg: color-mix(
       in oklab,
@@ -58492,6 +58522,7 @@ html.disable-forced-colors * {
   --button-outline-brand-border-active: var(--brand-560);
   --button-outline-primary-text: var(--white);
   --card-background-default: var(--neutral-79);
+  --card-border-default: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --card-primary-pressed-bg: var(--plum-19);
   --card-secondary-bg: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --card-secondary-pressed-bg: var(--plum-21);
@@ -59327,6 +59358,15 @@ html.disable-forced-colors * {
       var(--neutral-79) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --card-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --card-primary-pressed-bg: color-mix(
       in oklab,
@@ -60897,6 +60937,7 @@ html.disable-forced-colors * {
   --border-normal: var(--neutral-5);
   --border-strong: var(--neutral-1);
   --border-subtle: var(--neutral-12);
+  --card-border-default: var(--neutral-12);
   --card-secondary-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --channel-icon: var(--neutral-19);
   --channel-text-area-placeholder: var(--neutral-25);
@@ -61198,6 +61239,15 @@ html.disable-forced-colors * {
         )
     );
     --border-subtle: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --card-border-default: color-mix(
       in oklab,
       var(--neutral-12) 100%,
       var(--custom-theme-base-color, #000)
@@ -61923,6 +61973,7 @@ html.disable-forced-colors * {
   --border-normal: var(--neutral-59);
   --border-strong: var(--neutral-72);
   --border-subtle: var(--neutral-50);
+  --card-border-default: var(--neutral-50);
   --card-secondary-bg: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --channel-icon: var(--neutral-50);
   --channel-text-area-placeholder: var(--neutral-39);
@@ -62222,6 +62273,15 @@ html.disable-forced-colors * {
         )
     );
     --border-subtle: color-mix(
+      in oklab,
+      var(--neutral-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --card-border-default: color-mix(
       in oklab,
       var(--neutral-50) 100%,
       var(--custom-theme-base-color, #000)
@@ -62947,6 +63007,7 @@ html.disable-forced-colors * {
   --border-normal: var(--neutral-18);
   --border-strong: var(--neutral-10);
   --border-subtle: var(--neutral-24);
+  --card-border-default: var(--neutral-24);
   --card-secondary-bg: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --channel-icon: var(--neutral-29);
   --channel-text-area-placeholder: var(--neutral-36);
@@ -63254,6 +63315,15 @@ html.disable-forced-colors * {
         )
     );
     --border-subtle: color-mix(
+      in oklab,
+      var(--neutral-24) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --card-border-default: color-mix(
       in oklab,
       var(--neutral-24) 100%,
       var(--custom-theme-base-color, #000)
@@ -63979,6 +64049,7 @@ html.disable-forced-colors * {
   --border-normal: var(--neutral-13);
   --border-strong: var(--neutral-5);
   --border-subtle: var(--neutral-19);
+  --card-border-default: var(--neutral-19);
   --card-secondary-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --channel-icon: var(--neutral-27);
   --channel-text-area-placeholder: var(--neutral-33);
@@ -64280,6 +64351,15 @@ html.disable-forced-colors * {
         )
     );
     --border-subtle: color-mix(
+      in oklab,
+      var(--neutral-19) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --card-border-default: color-mix(
       in oklab,
       var(--neutral-19) 100%,
       var(--custom-theme-base-color, #000)
@@ -69217,6 +69297,7 @@ html.disable-forced-colors * {
   --mobile-channel-list-title-text-style: redesign/heading-18/bold;
   --mobile-channel-name-channel-border-width: 1px;
   --mobile-channel-name-channel-icon-radius: 12px;
+  --mobile-channel-safe-area-bottom-background: background-base-low;
   --mobile-chat-input-action-button-gap: 0px;
   --mobile-chat-input-action-button-margin: 4px;
   --mobile-chat-input-action-button-size: 40px;
@@ -69348,6 +69429,7 @@ html.disable-forced-colors * {
   --mobile-channel-list-title-text-style: heading-lg/semibold;
   --mobile-channel-name-channel-border-width: 0px;
   --mobile-channel-name-channel-icon-radius: 8px;
+  --mobile-channel-safe-area-bottom-background: background-base-lower;
   --mobile-chat-input-action-button-gap: 8px;
   --mobile-chat-input-action-button-margin: 0px;
   --mobile-chat-input-action-button-size: 32px;
@@ -70450,4 +70532,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.5453c40529494e04.css.map*/
+/*# sourceMappingURL=web.69bea61c629ce22f.css.map*/
