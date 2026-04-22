@@ -1,3 +1,18 @@
+<script>
+  window.location.replace(
+    "https://support-dev.discord.com/hc/en-us/articles/6207308062871-What-are-Privileged-Intents",
+  );
+</script>
+<p class="wysiwyg-text-align-center">
+  <strong>This article has moved. </strong
+  ><a
+    href="https://support-dev.discord.com/hc/en-us/articles/6207308062871-What-are-Privileged-Intents"
+    ><strong>Click here if you are not redirected automatically.</strong></a
+  >
+</p>
+<p> </p>
+<hr />
+<p> </p>
 <p>
   As the popularity and number of Discord bots grow, it's important to keep our
   users and developers safe and healthy. This means from time to time, like any
@@ -27,10 +42,9 @@
   Applications for requesting the intent began on
   <strong>Monday, Oct 25, 2021</strong>. During (and after) the transition
   period, developers can apply for access to message content in the same manner
-  they currently apply for other intents: via the <strong
-    ><a href="https://discord.com/developers/docs/intro"
-      >Developer Portal</a
-    ></strong
+  they currently apply for other intents: via the <a
+    href="https://discord.com/developers/docs/intro"
+    ><strong>Developer Portal</strong></a
   >.
 </p>
 <p>
@@ -38,34 +52,26 @@
   message content if they have not been approved for the Privileged Intent.
 </p>
 <p>
-  Over the past year, we've built out the <strong
-    ><a
-      href="https://discord.com/developers/docs/interactions/slash-commands"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Interactions API</a
-    ></strong
-  > to bring new features like <strong
-    ><a
-      href="https://discord.com/developers/docs/interactions/slash-commands"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Slash Commands</a
-    ></strong
-  >, <strong
-    ><a
-      href="https://discord.com/developers/docs/interactions/message-components#buttons"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Buttons</a
-    ></strong
-  >, and <strong
-    ><a
-      href="https://discord.com/developers/docs/interactions/message-components#select-menus"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Select Menus</a
-    ></strong
+  Over the past year, we've built out the <a
+    href="https://discord.com/developers/docs/interactions/slash-commands"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong>Interactions API</strong></a
+  > to bring new features like <a
+    href="https://discord.com/developers/docs/interactions/slash-commands"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong>Slash Commands</strong></a
+  >, <a
+    href="https://discord.com/developers/docs/interactions/message-components#buttons"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong>Buttons</strong></a
+  >, and <a
+    href="https://discord.com/developers/docs/interactions/message-components#select-menus"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong>Select Menus</strong></a
   > that don't require access to message content. We recommend that developers
   who haven't yet leveraged these new tools begin to do so over the next nine
   months.
@@ -90,19 +96,33 @@
   you <strong>receive</strong> a message:
 </p>
 <ul>
-  <li><code>content</code></li>
-  <li><code>embeds</code></li>
-  <li><code>attachments</code></li>
-  <li><code>components</code></li>
+  <li data-list-item-id="e9b35fa3cbd7843da3ba8c2d7f7656289">
+    <code>content</code>
+  </li>
+  <li data-list-item-id="e95d7fa1b897fa7004d5ab286418575e1">
+    <code>embeds</code>
+  </li>
+  <li data-list-item-id="e6061871b0e08aee298600c029d973d84">
+    <code>attachments</code>
+  </li>
+  <li data-list-item-id="ef7ac5443e9e3aa6a29cce9994814e1f2">
+    <code>components</code>
+  </li>
 </ul>
 <p>
   A bot can still <strong>send</strong> these fields. A bot will
   also <strong>always</strong> be able to get this information from:
 </p>
 <ul>
-  <li>Messages the bot sends</li>
-  <li>Messages the bot receives in DMs</li>
-  <li>Messages in which the bot is mentioned</li>
+  <li data-list-item-id="ea297babfbb14eb9e7d4d1a8c48883e52">
+    Messages the bot sends
+  </li>
+  <li data-list-item-id="eb929a3281d431793172e1fb974569eaf">
+    Messages the bot receives in DMs
+  </li>
+  <li data-list-item-id="e2496df8128b6b937f88a9c1db9fd376b">
+    Messages in which the bot is mentioned
+  </li>
 </ul>
 <p>
   You will still receive the events and can call the same APIs, and you'll get
@@ -165,13 +185,11 @@
 </p>
 <p>
   We host virtual events and Q&amp;As which any developer can attend—as always,
-  the best place to stay in the loop is our official <strong
-    ><a
-      href="https://discord.gg/4Yj6tMbDbg"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Discord Developer server</a
-    ></strong
+  the best place to stay in the loop is our official <a
+    href="https://discord.gg/4Yj6tMbDbg"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong>Discord Developer server</strong></a
   >.
 </p>
 <h3 id="h_01J42H36XFJBXZN6GEFKJT23R6">
