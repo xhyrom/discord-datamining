@@ -10406,6 +10406,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .dotOnline__6e500 {
   background: var(--text-status-online);
 }
+.dotHighContrast__6e500 {
+  background: var(--text-default);
+}
 .established__6e500 {
   display: flex;
 }
@@ -25202,6 +25205,12 @@ html:not(.chat-input) .inputInner_b1f01d {
 .maxBioHeight_f5f93a {
   max-height: 55px;
 }
+.row_e4172d {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+}
 .roleIcon_ee71ee {
   display: inline-block;
   -o-object-fit: contain;
@@ -25715,16 +25724,16 @@ html:not(.chat-input) .inputInner_b1f01d {
   width: 80%;
 }
 :root {
-  --custom-profile-frame-overflow-top: 77px;
-  --custom-profile-frame-overflow-bottom: 53px;
-  --custom-profile-frame-overflow-left: 12px;
+  --custom-profile-frame-overflow-top: 77;
+  --custom-profile-frame-overflow-bottom: 53;
+  --custom-profile-frame-overflow-left: 12;
   --custom-profile-frame-popout-width: 332;
 }
 :root .user-profile-modal-v2 {
-  --custom-profile-frame-overflow-left: 16px;
+  --custom-profile-frame-overflow-left: 16;
 }
 :root .user-profile-sidebar {
-  --custom-profile-frame-overflow-left: 16px;
+  --custom-profile-frame-overflow-left: 16;
 }
 :root .theme-midnight {
   --custom-profile-frame-drop-shadow-opacity: 0.6;
@@ -25741,23 +25750,40 @@ html:not(.chat-input) .inputInner_b1f01d {
 .profileFrame__7d80f {
   container-type: size;
   height: 100%;
-  inset-inline-start: calc(var(--custom-profile-frame-overflow-left) * -1);
+  inset-inline-start: calc(var(--custom-profile-frame-overflow-left) * -1px);
   max-height: 100%;
   pointer-events: none;
   position: absolute;
   top: 0;
-  width: calc(100% + var(--custom-profile-frame-overflow-left) * 2);
+  width: calc(100% + var(--custom-profile-frame-overflow-left) * 2px);
+}
+@media (max-height: 480px) {
+  .user-profile-popout .profileFrame__7d80f {
+    display: none;
+  }
 }
 .user-profile-modal-v2 .profileFrame__7d80f {
-  height: calc(100% - var(--custom-modal-v2-padding));
+  --custom-modal-v2-padding-block-start: calc(
+    var(--custom-modal-v2-padding) +
+      max(
+        var(--custom-modal-v2-system-bar-padding),
+        var(--custom-modal-v2-private-banner-height)
+      )
+  );
+  height: calc(100% - var(--custom-modal-v2-padding-block-start));
   inset-inline-start: calc(
-    var(--custom-profile-frame-overflow-left) * -1 +
+    var(--custom-profile-frame-overflow-left) * -1px +
       var(--custom-modal-v2-padding)
   );
-  margin-top: var(--custom-modal-v2-padding);
-  max-width: calc(400px + var(--custom-profile-frame-overflow-left) * 2);
-  min-width: calc(300px + var(--custom-profile-frame-overflow-left) * 2);
-  width: calc(45.5% + var(--custom-profile-frame-overflow-left) * 2);
+  margin-top: var(--custom-modal-v2-padding-block-start);
+  max-width: calc(400px + var(--custom-profile-frame-overflow-left) * 2px);
+  min-width: calc(300px + var(--custom-profile-frame-overflow-left) * 2px);
+  width: calc(45.5cqw + var(--custom-profile-frame-overflow-left) * 2px);
+}
+@media (max-height: 785px) {
+  .user-profile-modal-v2 .profileFrame__7d80f {
+    display: none;
+  }
 }
 .profileFrameLayer__7d80f {
   max-height: 100%;
@@ -25783,32 +25809,20 @@ html:not(.chat-input) .inputInner_b1f01d {
   z-index: -1;
 }
 .profileFrameLayer__7d80f.staple__7d80f.top__7d80f {
-  top: calc(var(--custom-profile-frame-overflow-top) * -1);
-}
-.user-profile-modal-v2 .profileFrameLayer__7d80f.staple__7d80f.top__7d80f {
   top: calc(
-    var(--custom-profile-frame-overflow-top) * -1 * 432 /
+    var(--custom-profile-frame-overflow-top) * -1 * 100cqw /
       var(--custom-profile-frame-popout-width)
   );
 }
 .user-profile-sidebar .profileFrameLayer__7d80f.staple__7d80f.top__7d80f {
   top: calc(
-    var(--custom-profile-frame-overflow-top) * -1 * 372 /
+    var(--custom-profile-frame-overflow-top) * -1 * 100cqw /
       var(--custom-profile-frame-popout-width) - 4px
   );
 }
 .profileFrameLayer__7d80f.staple__7d80f.bottom__7d80f {
-  bottom: calc(var(--custom-profile-frame-overflow-bottom) * -1);
-}
-.user-profile-modal-v2 .profileFrameLayer__7d80f.staple__7d80f.bottom__7d80f {
   bottom: calc(
-    var(--custom-profile-frame-overflow-bottom) * -1 * 432 /
-      var(--custom-profile-frame-popout-width)
-  );
-}
-.user-profile-sidebar .profileFrameLayer__7d80f.staple__7d80f.bottom__7d80f {
-  top: calc(
-    var(--custom-profile-frame-overflow-bottom) * -1 * 372 /
+    var(--custom-profile-frame-overflow-bottom) * -1 * 100cqw /
       var(--custom-profile-frame-popout-width)
   );
 }
@@ -49352,88 +49366,10 @@ html.disable-forced-colors * {
 .titleText_a00e6e {
   color: var(--text-strong);
 }
-.preview__3ee45 {
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
-  height: 180px;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
-.preview__3ee45:after {
-  bottom: 0;
-  content: "";
-  cursor: default;
-  position: absolute;
-  top: 0;
-  inset-inline: 0;
-}
-.firstMessage__3ee45 {
-  margin-top: -0.8rem !important;
-}
-.compactPreview__3ee45 .firstMessage__3ee45 {
-  margin-top: 0 !important;
-}
-.forcedColorsWarning__3ee45 {
-  margin-bottom: 12px;
-}
-.themeTitle__3ee45 {
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-between;
-}
-.formControl__3ee45 {
-  position: relative;
-}
-.previewButton__3ee45 {
-  inset-inline-end: 0;
-  position: absolute;
-  top: 0;
-}
-.theme-dark.custom-theme-background .preview__3ee45 {
-  background: var(--background-gradient-chat-preview);
-}
-.theme-light.custom-theme-background .preview__3ee45 {
-  background: var(--background-gradient-higher);
-}
-.messageGroupingSpacing__3ee45 {
-  margin-top: var(--space-24);
-}
-.subtext__3ee45 {
+.subtext_a00e6e {
+  color: var(--text-subtle);
   margin-bottom: var(--space-16);
   text-transform: none;
-}
-.a11yCallout__3ee45,
-.subtext__3ee45 {
-  color: var(--text-subtle);
-}
-.a11yCallout__3ee45 {
-  margin-bottom: var(--space-32);
-  margin-top: var(--space-24);
-}
-.divider__3ee45 {
-  margin-bottom: var(--space-xl);
-  margin-top: var(--space-xxl);
-}
-.compactModeToggle__3ee45 {
-  display: flex;
-  height: 40px;
-  justify-content: center;
-  margin-bottom: 0;
-  margin-top: var(--space-24);
-}
-.themeTitleContainer__3ee45 {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
-  margin-bottom: var(--space-16);
-}
-.timeTitle__3ee45 {
-  margin-bottom: var(--space-24);
-}
-[role="radiogroup"] [role="radio"]:last-of-type {
-  margin-bottom: 0;
 }
 .editorAnimate__2a891 {
   animation: slidein__2a891 0.25s ease-in 1s forwards;
@@ -51304,6 +51240,7 @@ html.disable-forced-colors * {
   --button-outline-brand-border-active: var(--brand-560);
   --button-outline-primary-text: var(--white);
   --card-background-default: var(--neutral-64);
+  --card-border-default: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --card-primary-pressed-bg: var(--primary-645);
   --card-secondary-bg: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --card-secondary-pressed-bg: var(--primary-645);
@@ -52139,6 +52076,15 @@ html.disable-forced-colors * {
       var(--neutral-64) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --card-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --card-primary-pressed-bg: color-mix(
       in oklab,
@@ -53707,6 +53653,7 @@ html.disable-forced-colors * {
   --button-outline-brand-border-active: var(--brand-560);
   --button-outline-primary-text: var(--black);
   --card-background-default: var(--neutral-1);
+  --card-border-default: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --card-primary-pressed-bg: var(--primary-160);
   --card-secondary-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --card-secondary-pressed-bg: var(--primary-160);
@@ -54526,6 +54473,15 @@ html.disable-forced-colors * {
       var(--neutral-1) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --card-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --card-primary-pressed-bg: color-mix(
       in oklab,
@@ -56094,6 +56050,7 @@ html.disable-forced-colors * {
   --button-outline-brand-border-active: var(--brand-560);
   --button-outline-primary-text: var(--white);
   --card-background-default: var(--neutral-91);
+  --card-border-default: hsl(var(--opacity-20-hsl) / 0.2);
   --card-primary-pressed-bg: var(--plum-25);
   --card-secondary-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --card-secondary-pressed-bg: var(--plum-26);
@@ -56915,6 +56872,15 @@ html.disable-forced-colors * {
       var(--neutral-91) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --card-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --card-primary-pressed-bg: color-mix(
       in oklab,
@@ -58481,6 +58447,7 @@ html.disable-forced-colors * {
   --button-outline-brand-border-active: var(--brand-560);
   --button-outline-primary-text: var(--white);
   --card-background-default: var(--neutral-79);
+  --card-border-default: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --card-primary-pressed-bg: var(--plum-19);
   --card-secondary-bg: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --card-secondary-pressed-bg: var(--plum-21);
@@ -59316,6 +59283,15 @@ html.disable-forced-colors * {
       var(--neutral-79) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --card-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
     );
     --card-primary-pressed-bg: color-mix(
       in oklab,
@@ -60886,6 +60862,7 @@ html.disable-forced-colors * {
   --border-normal: var(--neutral-5);
   --border-strong: var(--neutral-1);
   --border-subtle: var(--neutral-12);
+  --card-border-default: var(--neutral-12);
   --card-secondary-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --channel-icon: var(--neutral-19);
   --channel-text-area-placeholder: var(--neutral-25);
@@ -61187,6 +61164,15 @@ html.disable-forced-colors * {
         )
     );
     --border-subtle: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --card-border-default: color-mix(
       in oklab,
       var(--neutral-12) 100%,
       var(--custom-theme-base-color, #000)
@@ -61912,6 +61898,7 @@ html.disable-forced-colors * {
   --border-normal: var(--neutral-59);
   --border-strong: var(--neutral-72);
   --border-subtle: var(--neutral-50);
+  --card-border-default: var(--neutral-50);
   --card-secondary-bg: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --channel-icon: var(--neutral-50);
   --channel-text-area-placeholder: var(--neutral-39);
@@ -62211,6 +62198,15 @@ html.disable-forced-colors * {
         )
     );
     --border-subtle: color-mix(
+      in oklab,
+      var(--neutral-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --card-border-default: color-mix(
       in oklab,
       var(--neutral-50) 100%,
       var(--custom-theme-base-color, #000)
@@ -62936,6 +62932,7 @@ html.disable-forced-colors * {
   --border-normal: var(--neutral-18);
   --border-strong: var(--neutral-10);
   --border-subtle: var(--neutral-24);
+  --card-border-default: var(--neutral-24);
   --card-secondary-bg: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --channel-icon: var(--neutral-29);
   --channel-text-area-placeholder: var(--neutral-36);
@@ -63243,6 +63240,15 @@ html.disable-forced-colors * {
         )
     );
     --border-subtle: color-mix(
+      in oklab,
+      var(--neutral-24) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --card-border-default: color-mix(
       in oklab,
       var(--neutral-24) 100%,
       var(--custom-theme-base-color, #000)
@@ -63968,6 +63974,7 @@ html.disable-forced-colors * {
   --border-normal: var(--neutral-13);
   --border-strong: var(--neutral-5);
   --border-subtle: var(--neutral-19);
+  --card-border-default: var(--neutral-19);
   --card-secondary-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --channel-icon: var(--neutral-27);
   --channel-text-area-placeholder: var(--neutral-33);
@@ -64269,6 +64276,15 @@ html.disable-forced-colors * {
         )
     );
     --border-subtle: color-mix(
+      in oklab,
+      var(--neutral-19) 100%,
+      var(--custom-theme-base-color, #000)
+        var(
+          --custom-theme-border-color-amount,
+          var(--custom-theme-base-color-amount, 0%)
+        )
+    );
+    --card-border-default: color-mix(
       in oklab,
       var(--neutral-19) 100%,
       var(--custom-theme-base-color, #000)
@@ -69206,6 +69222,7 @@ html.disable-forced-colors * {
   --mobile-channel-list-title-text-style: redesign/heading-18/bold;
   --mobile-channel-name-channel-border-width: 1px;
   --mobile-channel-name-channel-icon-radius: 12px;
+  --mobile-channel-safe-area-bottom-background: background-base-low;
   --mobile-chat-input-action-button-gap: 0px;
   --mobile-chat-input-action-button-margin: 4px;
   --mobile-chat-input-action-button-size: 40px;
@@ -69311,6 +69328,9 @@ html.disable-forced-colors * {
   --mobile-user-row-label-line-height-android: 16px;
   --mobile-user-row-label-line-height-ios: 22px;
   --mobile-voice-channel-user-limit-border-width: 0px;
+  --mobile-voice-message-duration-line-height-android: 14px;
+  --mobile-voice-message-duration-line-height-ios: 17px;
+  --mobile-voice-message-duration-text-style: text-sm/semibold;
   --mobile-voice-panel-controls-border-radius: 32px;
   --mobile-voice-panel-controls-padding: 16px;
   --mobile-voice-panel-disconnect-button-min-width: 0px;
@@ -69337,6 +69357,7 @@ html.disable-forced-colors * {
   --mobile-channel-list-title-text-style: heading-lg/semibold;
   --mobile-channel-name-channel-border-width: 0px;
   --mobile-channel-name-channel-icon-radius: 8px;
+  --mobile-channel-safe-area-bottom-background: background-base-lower;
   --mobile-chat-input-action-button-gap: 8px;
   --mobile-chat-input-action-button-margin: 0px;
   --mobile-chat-input-action-button-size: 32px;
@@ -69425,6 +69446,9 @@ html.disable-forced-colors * {
   --mobile-user-profile-about-me-heading-text-style: text-md/medium;
   --mobile-user-row-label-line-height-ios: 20px;
   --mobile-voice-channel-user-limit-border-width: 1px;
+  --mobile-voice-message-duration-line-height-android: 9px;
+  --mobile-voice-message-duration-line-height-ios: 12px;
+  --mobile-voice-message-duration-text-style: text-xs/semibold;
   --mobile-voice-panel-controls-border-radius: 16px;
   --mobile-voice-panel-controls-padding: 4px;
   --mobile-voice-panel-disconnect-button-min-width: 64px;
@@ -70439,4 +70463,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.b992b0698b7809f3.css.map*/
+/*# sourceMappingURL=web.4de403c3bba85220.css.map*/
