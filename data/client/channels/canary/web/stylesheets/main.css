@@ -12910,7 +12910,7 @@ html .tabBadge_e6b769 {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  z-index: 1;
+  z-index: 2;
 }
 .jumpButton_ed0c8c .text_ed0c8c {
   color: var(--text-default);
@@ -39389,4 +39389,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.f87cb91427b9d31d.css.map*/
+/*# sourceMappingURL=web.b173c7d7dfd72c19.css.map*/
