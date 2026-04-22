@@ -12687,7 +12687,6 @@ svg.radioIcon_c1e9c4 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 164px;
   padding: 0 40px;
   width: 100%;
 }
@@ -12701,6 +12700,15 @@ svg.radioIcon_c1e9c4 {
   justify-content: center;
   position: relative;
   width: 100%;
+}
+.whatsNewSectionContainer__02f2d {
+  margin-top: 80px;
+}
+.bestOfNitroSectionContainer__02f2d,
+.planComparisonTableContainer__02f2d,
+.premiumTierCardsContainer__02f2d,
+.promoBannerContainer__02f2d {
+  margin-top: 164px;
 }
 .promoBannerContainer__02f2d {
   max-width: 1052px;
@@ -39381,4 +39389,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.c8afa0ceb3743903.css.map*/
+/*# sourceMappingURL=web.f87cb91427b9d31d.css.map*/
