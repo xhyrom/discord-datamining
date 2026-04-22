@@ -146983,6 +146983,9 @@
               `/users/@me/library/${e}/${t}/installed`,
             STOREFRONT_PREMIUM_BUTTON: (e) =>
               `/applications/storefront/interactions/premium-button/${e}`,
+            STOREFRONT_COLLECTIONS_WITH_PRODUCTS: "/storefront/collections",
+            STOREFRONT_COLLECTIONS_FOR_APPLICATION:
+              "/storefront/collections/applications",
             STOREFRONT_COLLECTION_WITH_PRODUCTS: (e) =>
               `/storefront/collections/${e}`,
             STOREFRONT_PRODUCT_BY_SKU_ID: (e) =>
@@ -173844,7 +173847,7 @@ ${s}`),
           n.e("7451").then(n.t.bind(n, 121014, 19));
         let m = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new h.A().log(
-          `[BUILD INFO] Release Channel: ${m}, Build Number: 533631, Version Hash: 0dfcc4f186cb3d275fe27354720659ac266c46cc`,
+          `[BUILD INFO] Release Channel: ${m}, Build Number: 533690, Version Hash: 918b2afac6cfcfed6a9c6865ad68be275b514381`,
         ),
           r.A.setTags({ appContext: p.QCW }),
           _.A.initBasic(),
@@ -208306,7 +208309,7 @@ ${_.join(" +\n")}
                 (e) => {
                   if (
                     null == e.body ||
-                    "0dfcc4f186cb3d275fe27354720659ac266c46cc" === e.body.hash
+                    "918b2afac6cfcfed6a9c6865ad68be275b514381" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, o.kK)())
@@ -214367,11 +214370,11 @@ ${_.join(" +\n")}
         n.d(t, { $: () => i });
         var r = n(728458);
         function i() {
-          let e = parseInt("533631");
+          let e = parseInt("533690");
           return (
             Number.isNaN(e) &&
               (r.A.captureMessage(
-                "Trying to open a changelog for an invalid build number 533631",
+                "Trying to open a changelog for an invalid build number 533690",
               ),
               (e = 0)),
             e
@@ -215781,6 +215784,8 @@ ${_.join(" +\n")}
               invoiceOrderContext: null,
               invoiceOrderCheckoutSessionId: null,
               invoiceOrderPreviewPaymentSourceId: null,
+              entitlementsGranted: [],
+              setEntitlementsGranted: (t) => e({ entitlementsGranted: t }),
             }),
             i.x,
           );
@@ -229982,8 +229987,8 @@ ${_.join(" +\n")}
           return {
             logsUploaded: new Date().toISOString(),
             releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            buildNumber: "533631",
-            versionHash: "0dfcc4f186cb3d275fe27354720659ac266c46cc",
+            buildNumber: "533690",
+            versionHash: "918b2afac6cfcfed6a9c6865ad68be275b514381",
           };
         }
         n.d(t, { A: () => r });
@@ -282228,8 +282233,8 @@ ${s}`);
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1776894764733",
-                      build_number: "533631",
+                      built_at: "1776898457232",
+                      build_number: "533690",
                     },
                   },
                   retries: 1,
@@ -297691,57 +297696,56 @@ ${s}`);
             [eZ, e0] = i.useState(null),
             [e1, e2] = i.useState(void 0),
             [e3, e6] = i.useState([]),
-            [e4, e5] = i.useState([]),
-            e7 = i.useMemo(() => null == eH || (0, M.ys)(eH), [eH]),
-            e8 = i.useRef(null != a ? a.planId : null);
+            e4 = i.useMemo(() => null == eH || (0, M.ys)(eH), [eH]),
+            e5 = i.useRef(null != a ? a.planId : null);
           i.useEffect(() => {
-            null == e8.current && null != a && (e8.current = a.planId);
+            null == e5.current && null != a && (e5.current = a.planId);
           }, [a]);
-          let { endsAt: e9 } = (0, g.A)({
+          let { endsAt: e7 } = (0, g.A)({
               forceFetch: !1,
               excludeReverseTrial: !0,
             }),
-            te = i.useRef(e9.isSame(o()(0)) ? null : e9);
+            e8 = i.useRef(e7.isSame(o()(0)) ? null : e7);
           i.useEffect(() => {
-            null != te.current || e9.isSame(o()(0)) || (te.current = e9);
-          }, [e9]);
-          let tt = i.useMemo(
+            null != e8.current || e7.isSame(o()(0)) || (e8.current = e7);
+          }, [e7]);
+          let e9 = i.useMemo(
             () => ({ paymentSourceId: eg, paymentGateway: es, loadId: t }),
             [eg, es, t],
           );
-          (0, k.A)(ef, tt);
-          let tn = i.useMemo(
+          (0, k.A)(ef, e9);
+          let te = i.useMemo(
               () => J.filter((e) => !z.oz.includes(e)),
               [JSON.stringify(J)],
             ),
-            { previewErrorsById: tr } = (0, W.A)({
+            { previewErrorsById: tt } = (0, W.A)({
               applicationId: er ?? z.tv,
-              skuIDs: tn,
+              skuIDs: te,
               currentPaymentSourceId: eg,
               isGift: Z,
               excludeSKUPurchasePreviews: eo,
               loadId: eF.loadId,
               currency: eN.loaded ? eN.currency : void 0,
             }),
-            ti = null != eB ? tr[eB] : null,
-            [ts, ta] = i.useState(ti),
-            { paymentSourceRecords: to, hasCheckoutContextForSession: tl } = (0,
+            tn = null != eB ? tt[eB] : null,
+            [tr, ti] = i.useState(tn),
+            { paymentSourceRecords: ts, hasCheckoutContextForSession: ta } = (0,
             T.Fy)(),
-            { data: tu } = (0, h.YY)(er),
-            td = C.Q_.useSetting(),
-            tc = (0, u.bG)([c.A], () => c.A.getFetchState());
+            { data: to } = (0, h.YY)(er),
+            tl = C.Q_.useSetting(),
+            tu = (0, u.bG)([c.A], () => c.A.getFetchState());
           i.useEffect(() => {
-            null != tu &&
-              (0, p.n)(tu, $.gfo.EMBEDDED) &&
-              td &&
-              null == tc &&
+            null != to &&
+              (0, p.n)(to, $.gfo.EMBEDDED) &&
+              tl &&
+              null == tu &&
               (0, _.SE)();
-          }, [tu, td, tc]);
-          let t_ =
-              null != tu &&
-              (0, p.n)(tu, $.gfo.EMBEDDED) &&
-              (0, p.n)(tu, $.gfo.EMBEDDED_IAP),
-            tf = (0, u.bG)([f.Ay], () =>
+          }, [to, tl, tu]);
+          let td =
+              null != to &&
+              (0, p.n)(to, $.gfo.EMBEDDED) &&
+              (0, p.n)(to, $.gfo.EMBEDDED_IAP),
+            tc = (0, u.bG)([f.Ay], () =>
               Array.from(f.Ay.getSelfEmbeddedActivities().values()).find(
                 (e) => {
                   let { applicationId: t } = e;
@@ -297749,53 +297753,53 @@ ${s}`);
                 },
               ),
             ),
-            tE = tf?.compositeInstanceId,
-            th = (0, u.bG)(
+            t_ = tc?.compositeInstanceId,
+            tf = (0, u.bG)(
               [L.A],
               () => (null != eB ? L.A.getForSKU(eB) : null),
               [eB],
             ),
-            tp = (0, N.ds)() && !Z,
-            { isDisplayingWowMomentConfirmation: tm } = (0, u.cf)(
+            tE = (0, N.ds)() && !Z,
+            { isDisplayingWowMomentConfirmation: th } = (0, u.cf)(
               [O.A],
               () => ({
                 isDisplayingWowMomentConfirmation:
                   O.A.isDisplayingWowMomentConfirmation,
               }),
             ),
-            tg = e7 ? q.Ot : void 0,
-            { enabled: tA } = (0, A.Y)({ location: "PaymentContext" }),
-            tI = (0, U.$w)(),
-            tT = i.useMemo(
+            tp = e4 ? q.Ot : void 0,
+            { enabled: tm } = (0, A.Y)({ location: "PaymentContext" }),
+            tg = (0, U.$w)(),
+            tA = i.useMemo(
               () => null != eH && eH === z.gD.PREMIUM_GROUP_MONTH,
               [eH],
             ),
-            tS = (0, v.V)(eu ?? void 0),
-            ty =
-              !tT &&
+            tI = (0, v.V)(eu ?? void 0),
+            tT =
+              !tA &&
               !Z &&
-              null != tS &&
+              null != tI &&
               null != eB &&
-              z.TP[tS.trial_id].skus.includes(eB),
-            tN = (0, R.O)(),
-            tO = tN?.discount?.plan_ids.some((e) => z.hd[e].skuId === eB),
-            tR = !!(!tT && !Z && null != tN && null != eB && tO),
-            tv = null != eg && null != ep[eg] ? ep[eg]?.type : null,
-            tC = i.useMemo(
+              z.TP[tI.trial_id].skus.includes(eB),
+            tS = (0, R.O)(),
+            ty = tS?.discount?.plan_ids.some((e) => z.hd[e].skuId === eB),
+            tN = !!(!tA && !Z && null != tS && null != eB && ty),
+            tO = null != eg && null != ep[eg] ? ep[eg]?.type : null,
+            tR = i.useMemo(
               () => ({
                 payment_source_id: eg,
                 payment_gateway: es,
-                payment_source_type: tv,
+                payment_source_type: tO,
                 checkout_flow: y,
               }),
-              [eg, es, tv, y],
+              [eg, es, tO, y],
             ),
-            tb = (0, E.Db)();
+            tv = (0, E.Db)();
           return (0, r.jsx)(X.Provider, {
             value: {
               stripe: ed,
               unifiedCheckoutFlow: y,
-              paymentElementsEnabled: tA,
+              paymentElementsEnabled: tm,
               contextMetadata: eF,
               blockedPayments: ec,
               activeSubscription: a,
@@ -297824,8 +297828,8 @@ ${s}`);
               paymentError: eU,
               purchaseError: ex,
               setPurchaseError: eV,
-              purchasePreviewError: ts,
-              setPurchasePreviewError: ta,
+              purchasePreviewError: tr,
+              setPurchasePreviewError: ti,
               purchaseErrorBlockRef: eG,
               purchaseTokenAuthState: eY,
               purchaseTokenHash: eW,
@@ -297835,54 +297839,52 @@ ${s}`);
               setFooterNode: ez,
               modalOverlayNode: eq,
               setModalOverlayNode: eX,
-              selectedStoreListing: th,
+              selectedStoreListing: tf,
               readySlideId: e1,
               setReadySlideId: e2,
               defaultPlanId: et,
-              isPremium: e7,
+              isPremium: e4,
               isGift: Z,
-              startingFractionalPremiumEndsAtRef: te,
+              startingFractionalPremiumEndsAtRef: e8,
               startedPaymentFlowWithPaymentSourcesRef: eT,
-              startingPremiumSubscriptionPlanIdRef: e8,
-              defaultFetchableSkuIds: tn,
-              checkoutPaymentSources: to,
-              hasCheckoutContextLoaded: tl,
-              application: tu,
+              startingPremiumSubscriptionPlanIdRef: e5,
+              defaultFetchableSkuIds: te,
+              checkoutPaymentSources: ts,
+              hasCheckoutContextLoaded: ta,
+              application: to,
               purchaseType: en,
-              isEmbeddedIAP: t_,
-              activitySessionId: tE,
-              devShelfFetchState: tc,
-              entitlementsGranted: e3,
-              setEntitlementsGranted: e6,
-              appliedUserDiscounts: e4,
-              setAppliedUserDiscounts: e5,
+              isEmbeddedIAP: td,
+              activitySessionId: t_,
+              devShelfFetchState: tu,
+              appliedUserDiscounts: e3,
+              setAppliedUserDiscounts: e6,
               referralCode: ei,
-              inReverseTrial: tp,
-              enablePremiumBrandRefresh: e7,
-              isDisplayingWowMomentConfirmation: tm,
-              premiumBrandRefreshBackgroundClassName: tg,
+              inReverseTrial: tE,
+              enablePremiumBrandRefresh: e4,
+              isDisplayingWowMomentConfirmation: th,
+              premiumBrandRefreshBackgroundClassName: tp,
               wasTier2PremiumBeforePurchase: el,
-              customCheckoutFlow: tI,
-              isPremiumGroupPurchase: tT,
-              isEligibleForTrial: ty,
-              isEligibleForDiscount: tR,
-              userTrialOffer: tS,
+              customCheckoutFlow: tg,
+              isPremiumGroupPurchase: tA,
+              isEligibleForTrial: tT,
+              isEligibleForDiscount: tN,
+              userTrialOffer: tI,
               referralTrialOfferId: eu,
-              discountOffer: tN,
+              discountOffer: tS,
             },
             children: (0, r.jsx)(s.Elements, {
               options: $.XL8,
               stripe: ed,
               children: (0, r.jsx)(I.j, {
                 shouldRethrowError: w,
-                locationStack: tb,
+                locationStack: tv,
                 onUnhandledError: Q,
                 loadId: eF.loadId,
                 selectedSkuId: eB ?? null,
                 selectedPlanId: eH ?? null,
                 isGift: Z,
                 purchaseType: en,
-                additionalAnalyticsData: tC,
+                additionalAnalyticsData: tR,
                 children: ee,
               }),
             }),
@@ -315407,10 +315409,11 @@ ${s}`);
           IG: () => y,
           UR: () => g,
           W1: () => I,
-          b6: () => O,
+          _Q: () => R,
+          b6: () => v,
           bg: () => A,
-          pu: () => N,
-          se: () => R,
+          pu: () => O,
+          se: () => C,
           v0: () => S,
         }),
           n(321073),
@@ -315477,42 +315480,49 @@ ${s}`);
         function y(e) {
           return T(e) === p.fg2.XBOX ? m.t["mytEv+"] : m.t.iDiwby;
         }
-        function N(e, t) {
+        function N(e) {
+          if (
+            ((0, d.isIOS)() || "ios" === (0, d.getOS)()) &&
+            e.ios?.iosAppId != null
+          ) {
+            let t = e.ios.iosAppId.startsWith("id")
+              ? e.ios.iosAppId
+              : `id${e.ios.iosAppId}`;
+            return `https://apps.apple.com/app/${t}`;
+          }
+          return ((0, d.isAndroid)() || "android" === (0, d.getOS)()) &&
+            e.android?.androidAppId != null
+            ? `https://play.google.com/store/apps/details?id=${e.android.androidAppId}`
+            : null;
+        }
+        function O(e, t) {
           let n,
-            i = (0, f.Jx)(e.config),
-            s = (function (e) {
-              let t = e.config.ctaConfig;
-              if (null == t) return null;
-              if (
-                ((0, d.isIOS)() || "ios" === (0, d.getOS)()) &&
-                t.ios?.iosAppId != null
-              ) {
-                let e = t.ios.iosAppId.startsWith("id")
-                  ? t.ios.iosAppId
-                  : `id${t.ios.iosAppId}`;
-                return `https://apps.apple.com/app/${e}`;
-              }
-              return ((0, d.isAndroid)() || "android" === (0, d.getOS)()) &&
-                t.android?.androidAppId != null
-                ? `https://play.google.com/store/apps/details?id=${t.android.androidAppId}`
-                : null;
-            })(e);
-          null != s && (i = s),
+            i,
+            s = (0, f.Jx)(e.config),
+            o =
+              null == (n = e.config.ctaConfig)
+                ? null
+                : N({
+                    url: (0, f.Jx)(e.config),
+                    android: n.android,
+                    ios: n.ios,
+                  });
+          null != o && (s = o),
             (function (e) {
               try {
                 return new URL(e).searchParams.has("dclid");
               } catch {
                 return !1;
               }
-            })(i) &&
-              (i = (function (e, t) {
+            })(s) &&
+              (s = (function (e, t) {
                 try {
                   let n = new URL(e);
                   return n.searchParams.set("dclid", t), n.toString();
                 } catch {
                   return e;
                 }
-              })(i, (n = (0, r.A)()))),
+              })(s, (i = (0, r.A)()))),
             (0, _.Y5)({
               questId: e.id,
               questContent: t.content,
@@ -315520,13 +315530,30 @@ ${s}`);
               questContentPosition: t.position,
               impressionId: t.impressionId,
               sourceQuestContent: t.sourceQuestContent,
-              clickId: n,
+              clickId: i,
             }),
             u._.dispatch(p.jej.QUEST_GAME_LINK_OPENED),
             c.YX.getConfig({ location: "quest_open_game_link" }).enabled,
-            (0, a.A)(i);
+            (0, a.A)(s);
         }
-        function O(e, t) {
+        function R(e, t) {
+          let { adContentId: n, adCreativeType: r, cta: i } = e,
+            s = i.url,
+            o = N(i);
+          null != o && (s = o),
+            (0, _.vK)({
+              adContentId: n,
+              adCreativeType: r,
+              questContent: t.content,
+              questContentCTA: t.ctaContent,
+              questContentPosition: t.position,
+              impressionId: t.impressionId,
+              sourceQuestContent: t.sourceQuestContent,
+            }),
+            u._.dispatch(p.jej.QUEST_GAME_LINK_OPENED),
+            (0, a.A)(s);
+        }
+        function v(e, t) {
           let { quest: r } = e;
           (0, _.Y5)({
             questId: r.id,
@@ -315543,7 +315570,7 @@ ${s}`);
               }
             })();
         }
-        function R(e, t) {
+        function C(e, t) {
           let { quest: n } = e;
           (0, _.Y5)({
             questId: n.id,
@@ -381275,7 +381302,7 @@ ${s}`);
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "0dfcc4f186cb3d275fe27354720659ac266c46cc",
+                      "918b2afac6cfcfed6a9c6865ad68be275b514381",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", X),
@@ -389831,7 +389858,7 @@ ${s}`);
               ).then((e) => {
                 let r = {
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    build_number: "533631",
+                    build_number: "533690",
                   },
                   c = l.default.getCurrentUser();
                 null != c &&
@@ -399730,7 +399757,7 @@ ${s}`);
           (a = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == s.release_channel || "" === s.release_channel) &&
             (s.release_channel = a.split("-")[0]),
-          isNaN((o = parseInt("533631", 10))) || (s.client_build_number = o),
+          isNaN((o = parseInt("533690", 10))) || (s.client_build_number = o),
           null == (l = A?.app.getBuildNumber()) ||
             isNaN(l) ||
             (s.native_build_number = l),
@@ -497806,7 +497833,7 @@ color: purple;
         17936: "28162e66aba35f63",
         17965: "f16c73e020a9ac1e",
         17983: "3d91287f7a58d498",
-        18021: "ae50e4e79b975452",
+        18021: "0d6b1a7dc20048d5",
         18036: "0b1406698ec02345",
         18128: "efcd8afa52461665",
         18133: "3a64c324383bca25",
@@ -497840,7 +497867,7 @@ color: purple;
         19418: "2210cd2d1a48e737",
         19457: "656610f4188cae47",
         19469: "471802d0cd1d3572",
-        19482: "9f1db43496ade1c6",
+        19482: "05dd881a9889a3a7",
         1953: "0311fa1995eca942",
         19534: "55be38ce2fe57373",
         19677: "80cca696d3843a2c",
@@ -497867,9 +497894,9 @@ color: purple;
         20289: "8a5785f3b29b26f1",
         20320: "64a8eed7c107e1aa",
         20368: "9a8e9fc5c3dcdc3a",
-        20396: "389acd8cae129379",
+        20396: "5c82ba9c15b4498c",
         20438: "1bac7227dd9ebfac",
-        20455: "7c4730e2b87cbf8e",
+        20455: "2f59af9740c12809",
         20507: "eb2b6d08123cf52d",
         20532: "222ebaebfaff9655",
         20536: "b3bcd384b97e86af",
@@ -497903,7 +497930,7 @@ color: purple;
         21539: "9f9a5c951e9596a0",
         21595: "a0a9aa3fe45938c5",
         21616: "ac35bd31ee7723d1",
-        21738: "0b9b739f4ae58e0e",
+        21738: "bc7e522a0b5ba9b3",
         21740: "602f79b970051100",
         2179: "d789cb6ad2286cbb",
         219: "6ea321cb9a456269",
@@ -498053,7 +498080,7 @@ color: purple;
         27243: "8933a33b283110a7",
         27250: "bf9e9175639bd590",
         27299: "b648b14a19d10e8d",
-        27355: "d259b6c9188463c9",
+        27355: "4642466c61d8739b",
         2736: "9eb6e4ad8e54c479",
         27411: "51bde45121fe7299",
         27420: "0cf7a25622c92d94",
@@ -498108,7 +498135,7 @@ color: purple;
         29055: "31c446380c2a5bcc",
         29095: "c613ab94e4521908",
         29100: "24d2e330e32e324b",
-        29105: "a5889e18a1f20490",
+        29105: "8e7f83d016eef8d9",
         29118: "c4552c9585dbbc94",
         29143: "6e0b42c2633d24ea",
         29232: "61a4c435608f50b0",
@@ -498282,7 +498309,7 @@ color: purple;
         35313: "fa38b38930546696",
         3541: "ddab76ff9867747f",
         35432: "1f76cfd12d48b427",
-        35561: "752b10088755a688",
+        35561: "c31197f5f678685e",
         35583: "06a2faa078c6774d",
         35621: "b22e9f2642919be3",
         35624: "c83afbdbb41935d7",
@@ -498456,7 +498483,7 @@ color: purple;
         42070: "9edbdc7fb85f276c",
         42108: "75b5b122764f1a89",
         42128: "2df9b5d5d77d0b60",
-        42160: "9fa58afd63c8b892",
+        42160: "0c56bab30adbc82d",
         42207: "634cb3ade52b39d7",
         42235: "a85123b398dd8882",
         42241: "68f8c0a7cb73ffc5",
@@ -498857,7 +498884,7 @@ color: purple;
         56297: "39f9e3a085cf3b42",
         5639: "2bc2abd158e8b2b0",
         5640: "b4a7fb493f361744",
-        56403: "cabc51dd76a3d93f",
+        56403: "c8f0f5da731b6235",
         5642: "dc31b2127037afae",
         56446: "5650ff92f1d54b76",
         56518: "f375d814716a43a0",
@@ -499086,7 +499113,7 @@ color: purple;
         64676: "ebe7e3fb5d7e6ee9",
         64691: "984d686dac245c76",
         64692: "d1a363d824a51e27",
-        64764: "5ef6cad21e64a63b",
+        64764: "7b42db2679d353e5",
         64805: "6169b3be112cbbea",
         64811: "123fe558a51ba991",
         64850: "94d5f959c9ce89c2",
@@ -499563,7 +499590,7 @@ color: purple;
         80959: "b2ff23fba23fbab0",
         80966: "a8e5d62a571ddd04",
         80970: "990af82e8449a6bd",
-        81008: "a04de4335951cd03",
+        81008: "45af2f660cf04f3a",
         81009: "738fb8f3944999ac",
         81084: "e483ca1c9942ff14",
         81153: "746f2511199f55f1",
@@ -500448,4 +500475,4 @@ color: purple;
     }),
     A(329563);
 })();
-//# sourceMappingURL=web.e4481560e734fdb2.js.map
+//# sourceMappingURL=web.705c9225adbf75a0.js.map
