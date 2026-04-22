@@ -173844,7 +173844,7 @@ ${s}`),
           n.e("94459").then(n.t.bind(n, 868086, 19));
         let m = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new h.A().log(
-          `[BUILD INFO] Release Channel: ${m}, Build Number: 533526, Version Hash: 02d3782202dab7e2e9586fba1258789923f7aeb7`,
+          `[BUILD INFO] Release Channel: ${m}, Build Number: 533572, Version Hash: 3b6578ecc6ae7580777f25e800e7b3b28baebfe1`,
         ),
           r.A.setTags({ appContext: p.QCW }),
           _.A.initBasic(),
@@ -208306,7 +208306,7 @@ ${_.join(" +\n")}
                 (e) => {
                   if (
                     null == e.body ||
-                    "02d3782202dab7e2e9586fba1258789923f7aeb7" === e.body.hash
+                    "3b6578ecc6ae7580777f25e800e7b3b28baebfe1" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, o.kK)())
@@ -214367,11 +214367,11 @@ ${_.join(" +\n")}
         n.d(t, { $: () => i });
         var r = n(728458);
         function i() {
-          let e = parseInt("533526");
+          let e = parseInt("533572");
           return (
             Number.isNaN(e) &&
               (r.A.captureMessage(
-                "Trying to open a changelog for an invalid build number 533526",
+                "Trying to open a changelog for an invalid build number 533572",
               ),
               (e = 0)),
             e
@@ -229982,8 +229982,8 @@ ${_.join(" +\n")}
           return {
             logsUploaded: new Date().toISOString(),
             releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            buildNumber: "533526",
-            versionHash: "02d3782202dab7e2e9586fba1258789923f7aeb7",
+            buildNumber: "533572",
+            versionHash: "3b6578ecc6ae7580777f25e800e7b3b28baebfe1",
           };
         }
         n.d(t, { A: () => r });
@@ -282228,8 +282228,8 @@ ${s}`);
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1776889413863",
-                      build_number: "533526",
+                      built_at: "1776891743188",
+                      build_number: "533572",
                     },
                   },
                   retries: 1,
@@ -381255,7 +381255,7 @@ ${s}`);
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "02d3782202dab7e2e9586fba1258789923f7aeb7",
+                      "3b6578ecc6ae7580777f25e800e7b3b28baebfe1",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", X),
@@ -389811,7 +389811,7 @@ ${s}`);
               ).then((e) => {
                 let r = {
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    build_number: "533526",
+                    build_number: "533572",
                   },
                   c = l.default.getCurrentUser();
                 null != c &&
@@ -399710,7 +399710,7 @@ ${s}`);
           (a = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == s.release_channel || "" === s.release_channel) &&
             (s.release_channel = a.split("-")[0]),
-          isNaN((o = parseInt("533526", 10))) || (s.client_build_number = o),
+          isNaN((o = parseInt("533572", 10))) || (s.client_build_number = o),
           null == (l = A?.app.getBuildNumber()) ||
             isNaN(l) ||
             (s.native_build_number = l),
@@ -400134,13 +400134,12 @@ ${s}`);
             {
               let e = r ?? l.hR,
                 [t, a] = this.getEvaluationAndAssignmentInner("user", e, n);
-              return a?.isOverride
-                ? [i, a]
-                : s?.isOverride
-                  ? [i, s]
-                  : a?.useAsEligibility && s?.variantId != null
-                    ? [i, s]
-                    : [void 0, void 0];
+              if (null == a) return [void 0, void 0];
+              if (a.isOverride) return [i, a];
+              if (!a.useAsEligibility) return [void 0, void 0];
+              else if (null == s) return [void 0, void 0];
+              else if (null != s.variantId) return [i, s];
+              else return [void 0, void 0];
             }
           }
           trackExperimentExposure(e, t, n, r, i, s, a) {
@@ -497811,7 +497810,7 @@ color: purple;
         19457: "656610f4188cae47",
         19467: "7c0fa53a96fba984",
         19474: "63d857fd58ca522f",
-        19482: "1e99610e2c1d0b14",
+        19482: "46500552e13ddbcf",
         19534: "55be38ce2fe57373",
         1958: "c937e2cd4c27cafd",
         19590: "e4c4c43402f3ff76",
@@ -497877,7 +497876,7 @@ color: purple;
         21612: "b5fcba88feaf7198",
         21659: "7d6a59b8734010d3",
         21705: "0c331e8b42f44cbc",
-        21738: "bb2159083c8ff942",
+        21738: "5dc80beb878b14eb",
         21880: "0b340245a123dee3",
         219: "329fd338e790f068",
         21905: "1effccd4987d95e6",
@@ -497922,7 +497921,7 @@ color: purple;
         23252: "369385b34b462dcf",
         23291: "23bb28159123aca0",
         23316: "455afbc39a8aa2d9",
-        23353: "0a1da311dc9f5965",
+        23353: "f9891c473798a006",
         23397: "f68fd0e3664a8108",
         23425: "ce996027f666cc94",
         23436: "d484fa510acc92be",
@@ -498439,7 +498438,7 @@ color: purple;
         42048: "3c7299fd6fa4d47e",
         42081: "771f3425ccaa5f85",
         42128: "120bb30c9ff13e6a",
-        42160: "5a70a6640fd5d5c3",
+        42160: "ccf4a560be0b7af5",
         42162: "75e98c584743437c",
         42171: "7c988aa81d38e6c3",
         42208: "f13b59c571bcdc63",
@@ -499511,7 +499510,7 @@ color: purple;
         80959: "b2ff23fba23fbab0",
         80966: "25a8e0b78a7434dd",
         80974: "96d92dc7cb6acb0e",
-        81008: "a5ef89deb4623470",
+        81008: "d370118a7bfb6ba2",
         81009: "738fb8f3944999ac",
         81033: "d66249eb75f5810b",
         81042: "22791eb8397a6a9d",
@@ -499623,7 +499622,7 @@ color: purple;
         85183: "a337aecbd667067a",
         85207: "8d643d6c68bc3147",
         85221: "56314999c96a88d3",
-        85240: "8020469f3dd8cfb2",
+        85240: "b278313909a11157",
         85339: "24b5e9ae513d822c",
         85368: "441de32dc84e0af0",
         85389: "8585748af5ca99bb",
@@ -499645,7 +499644,7 @@ color: purple;
         86010: "d2c484677b1400dd",
         86026: "78595ccf460a8009",
         86108: "e24d8209d2c06e91",
-        86142: "5602d8e6fcd1945f",
+        86142: "267edd4c5e4a927a",
         86144: "5e6cd0942a674abc",
         8615: "1767b7fed716eb0c",
         86165: "946e2548ba0dcce2",
@@ -500424,4 +500423,4 @@ color: purple;
     }),
     A(329563);
 })();
-//# sourceMappingURL=web.a6150d2663265f3e.js.map
+//# sourceMappingURL=web.4b40a1c750373cae.js.map

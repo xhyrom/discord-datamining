@@ -37651,306 +37651,357 @@ html.disable-forced-colors * {
   --elevation-high: 0 8px 16px hsl(var(--black-hsl) / 0.16);
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Nord;
   font-style: normal;
   font-weight: 800;
   src: url(/assets/097b737553f77c92.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Nord;
   font-style: italic;
   font-weight: 800;
   src: url(/assets/d7f3d9317a5ff964.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Nord Discord;
   font-style: normal;
   font-weight: 700;
   src: url(/assets/bb673ee29d9d9269.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Nord Discord;
   font-style: italic;
   font-weight: 700;
   src: url(/assets/1a1e4ba0da23278e.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Normal;
   font-style: normal;
   font-weight: 300;
   src: url(/assets/2d538acdbc2eb6b8.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Normal;
   font-style: italic;
   font-weight: 300;
   src: url(/assets/6897c8395199e044.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Normal;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/89cc835cf102bf12.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Normal;
   font-style: italic;
   font-weight: 400;
   src: url(/assets/9e78b20620cb79ff.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Normal;
   font-style: normal;
   font-weight: 500;
   src: url(/assets/094adef82c637a3c.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Normal;
   font-style: italic;
   font-weight: 500;
   src: url(/assets/5b3d873665de628f.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Normal;
   font-style: normal;
   font-weight: 700;
   src: url(/assets/a893ac26791508c7.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Normal;
   font-style: italic;
   font-weight: 700;
   src: url(/assets/5a4f9cc740b6d92b.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Normal;
   font-style: normal;
   font-weight: 800;
   src: url(/assets/908064caebce5abe.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Normal;
   font-style: italic;
   font-weight: 800;
   src: url(/assets/f2d2cc13894d7060.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Discord;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/bd0f5c73464e9717.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: ABC Ginto Discord;
   font-style: normal;
   font-weight: 500;
   src: url(/assets/a47177db4e543b05.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg sans;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/66d715454104d24e.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg sans;
   font-style: italic;
   font-weight: 400;
   src: url(/assets/dd24010f3cf7def7.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg sans;
   font-style: normal;
   font-weight: 500;
   src: url(/assets/b272b33815319bae.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg sans;
   font-style: italic;
   font-weight: 500;
   src: url(/assets/6a1346ad3821ff3c.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg sans;
   font-style: normal;
   font-weight: 600;
   src: url(/assets/2df2c3ff74408972.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg sans;
   font-style: italic;
   font-weight: 600;
   src: url(/assets/d5d789aeb6282532.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg sans;
   font-style: normal;
   font-weight: 700;
   src: url(/assets/189422196a4f8b53.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg sans;
   font-style: italic;
   font-weight: 700;
   src: url(/assets/ce3b8055f5114434.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg sans;
   font-style: normal;
   font-weight: 800;
   src: url(/assets/b2fdbe507d6ce9ef.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg sans;
   font-style: italic;
   font-weight: 800;
   src: url(/assets/03dcf979852e8b8e.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg mono;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/249d0a057895c668.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: gg mono;
   font-style: normal;
   font-weight: 700;
   src: url(/assets/45efa6936fdfb918.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/f72b5ce64feb2086.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Noto Sans;
   font-style: italic;
   font-weight: 400;
   src: url(/assets/7a6a566c2e88a35d.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 500;
   src: url(/assets/a4a3d323feb11add.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Noto Sans;
   font-style: italic;
   font-weight: 500;
   src: url(/assets/1a9d6f15e3bade15.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 600;
   src: url(/assets/36e7b68ea0c05ae7.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Noto Sans;
   font-style: italic;
   font-weight: 600;
   src: url(/assets/7b652d8bbf885aea.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 700;
   src: url(/assets/cb2006dbced0e246.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Noto Sans;
   font-style: italic;
   font-weight: 700;
   src: url(/assets/e52f0cba712e2fb4.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Noto Sans;
   font-style: normal;
   font-weight: 800;
   src: url(/assets/772df2968ca0cf92.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Noto Sans;
   font-style: italic;
   font-weight: 800;
   src: url(/assets/19797abd0807f76b.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Source Code Pro;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/268aaee6b96a3789.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Source Code Pro;
   font-style: normal;
   font-weight: 700;
   src: url(/assets/c76eb070f0fcec44.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Corinthia;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/b598312a5e479904.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Fraunces;
   font-style: normal;
   font-weight: 300 800;
   src: url(/assets/943f151cdf1b637e.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Munro;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/b4099c935ba38494.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Delicious Handrawn;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/54ea0efe31f53f3c.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Cherry Bomb One;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/27a6daf95bd8adde.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Chicle;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/08d347453f57b1f5.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Neo Castel;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/b98eacfe1a3d06eb.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Museo Moderno;
   font-style: normal;
   font-weight: 500;
   src: url(/assets/8b6d8d408e0e52a7.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Pixelify Sans;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/752009d1dc4553e8.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Sinistre;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/9b974db0b9197a22.woff2) format("woff2");
 }
 @font-face {
+  font-display: swap;
   font-family: Zilla Slab;
   font-style: normal;
   font-weight: 600;
@@ -39389,4 +39440,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=web.b173c7d7dfd72c19.css.map*/
+/*# sourceMappingURL=web.4cf56f66eca970fa.css.map*/
