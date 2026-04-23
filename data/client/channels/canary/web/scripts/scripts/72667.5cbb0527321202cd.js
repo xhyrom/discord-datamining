@@ -33482,7 +33482,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534336, Version Hash: d2ed14861a9bc706bd2a3806e2eae00363aa5d82`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534381, Version Hash: 73908ebe6ade935c9a20801dfff813be5e0bc1c8`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -34280,6 +34280,7 @@ ${s}`);
           n.e("81863").then(n.bind(n, 705018)),
           n.e("14122").then(n.bind(n, 625265)),
           n.e("14304").then(n.bind(n, 710787)),
+          n.e("6565").then(n.bind(n, 366340)),
           n.e("47555").then(n.bind(n, 16590)),
           Promise.resolve().then(n.bind(n, 661023)),
           n.e("34409").then(n.bind(n, 412848)),
@@ -57466,7 +57467,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "d2ed14861a9bc706bd2a3806e2eae00363aa5d82" === e.body.hash
+                  "73908ebe6ade935c9a20801dfff813be5e0bc1c8" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -65334,10 +65335,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534336")),
+                ((e = parseInt("534381")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534336",
+                    "Trying to open a changelog for an invalid build number 534381",
                   ),
                   (e = 0)),
                 e),
@@ -98872,7 +98873,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534336", versionHash: "d2ed14861a9bc706bd2a3806e2eae00363aa5d82" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534381", versionHash: "73908ebe6ade935c9a20801dfff813be5e0bc1c8" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -100359,7 +100360,6 @@ ${O}`;
           i.M.GUILD_TAG_UPDATED_COACHMARK,
           i.M.GIFT_INTENT_MESSAGE,
           i.M.GAME_ACCOUNT_LINK_RECURRING_UPSELL,
-          i.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER,
           i.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS,
           i.M.FIRST_BOOSTER_UPSELL_OVERSEER,
           i.M.QUEST_HOME_NEW_QUEST_BADGE,
@@ -128999,7 +128999,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     837859(e, t, n) {
       "use strict";
-      n.d(t, { A: () => l });
+      n.d(t, { Ay: () => l });
       var i = n(250105),
         r = n(753070);
       let s = { videoPresetResolutionMax: r.on.RESOLUTION_1440 },
@@ -129030,6 +129030,15 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             ],
             [r.jQ.PRESET_AUTO]: [],
             [r.jQ.PRESET_CUSTOM]: [],
+            [r.jQ.PRESET_MOBILE_DEFAULT]: [
+              { resolution: r.on.RESOLUTION_720, fps: r.kn.FPS_30 },
+            ],
+            [r.jQ.PRESET_MOBILE_PERFORMANCE]: [
+              { resolution: r.on.RESOLUTION_480, fps: r.kn.FPS_30 },
+            ],
+            [r.jQ.PRESET_MOBILE_HIGH_QUALITY]: [
+              { resolution: r.on.RESOLUTION_1080, fps: r.kn.FPS_60 },
+            ],
           };
         })()[e];
         if (null == i) return null;
@@ -129317,11 +129326,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           if (null == a || a.numDatapoints < m) return;
           let T = E.default.getCurrentUser(),
             S = _.A.getGuild(e.guildId),
-            [N, C] = (0, g.A)(p.jQ.PRESET_DOCUMENTS, T, S?.premiumTier) ?? [
+            [N, C] = (0, g.Ay)(p.jQ.PRESET_DOCUMENTS, T, S?.premiumTier) ?? [
               p.on.RESOLUTION_SOURCE,
               p.kn.FPS_5,
             ],
-            [R, O] = (0, g.A)(p.jQ.PRESET_VIDEO, T, S?.premiumTier) ?? [
+            [R, O] = (0, g.Ay)(p.jQ.PRESET_VIDEO, T, S?.premiumTier) ?? [
               p.on.RESOLUTION_720,
               p.kn.FPS_30,
             ],
@@ -252947,7 +252956,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "d2ed14861a9bc706bd2a3806e2eae00363aa5d82",
+                    "73908ebe6ade935c9a20801dfff813be5e0bc1c8",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259177,7 +259186,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534336",
+                  build_number: "534381",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -298705,8 +298714,6 @@ Total Time: ${o}ms
             "DO_NOT_DISTURB_REMINDER_POPOVER"),
           (i[(i.ACCOUNT_LINK_INVITE_FRIENDS = 601)] =
             "ACCOUNT_LINK_INVITE_FRIENDS"),
-          (i[(i.POST_ACCOUNT_CONNECTION_RTC_POPOVER = 602)] =
-            "POST_ACCOUNT_CONNECTION_RTC_POPOVER"),
           (i[(i.HALLOWEEN_APP_ICONS_APPEARANCE_SETTINGS_WEB_BADGE = 603)] =
             "HALLOWEEN_APP_ICONS_APPEARANCE_SETTINGS_WEB_BADGE"),
           (i[(i.HALLOWEEN_APP_ICONS_APPEARANCE_SETTINGS_MOBILE_BADGE = 604)] =
@@ -327501,4 +327508,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=72667.59c861567a1f988d.js.map
+//# sourceMappingURL=72667.5cbb0527321202cd.js.map
