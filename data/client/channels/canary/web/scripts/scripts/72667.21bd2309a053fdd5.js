@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["75797"],
+  ["72667"],
   {
     714694(e, t, n) {
       var i = {
@@ -33482,7 +33482,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534185, Version Hash: b8c097db6ba1e9207f60f9e79bb0aefc00da8203`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534272, Version Hash: 156170a6d29374c0581ef5ff75c390cd5e2831ee`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -44441,18 +44441,19 @@ ${s}`);
     },
     407876(e, t, n) {
       "use strict";
-      n.d(t, { A: () => E });
+      n.d(t, { A: () => h });
       var i = n(143236),
         r = n(735438),
         s = n.n(r),
         a = n(626584),
-        o = n(509929),
-        l = n(787458),
-        d = n(972711),
-        _ = n(652215),
-        u = n(381941);
-      let c = new a.A("UploaderBase.tsx");
-      class E extends i.EventEmitter {
+        o = n(550642),
+        l = n(509929),
+        d = n(787458),
+        _ = n(972711),
+        u = n(652215),
+        c = n(381941);
+      let E = new a.A("UploaderBase.tsx");
+      class h extends i.EventEmitter {
         id;
         _file;
         _aborted = !1;
@@ -44483,23 +44484,24 @@ ${s}`);
           return this.files.reduce((e, t) => (e += t.currentSize ?? 0), 0);
         }
         async compressAndCheckFileSize() {
-          let e = (0, l.B)(this.files[0]?.item?.target);
+          let e = (0, d.B)(this.files[0]?.item?.target);
           return this.files.length > e.getMaxAttachmentsCount()
-            ? (c.log(`Too many attachments for ${this.id}`),
-              this._handleError({ code: _.t02.TOO_MANY_ATTACHMENTS }),
+            ? (E.log(`Too many attachments for ${this.id}`),
+              this._handleError({ code: u.t02.TOO_MANY_ATTACHMENTS }),
               !1)
-            : !(this._fileSize() > e.getMaxTotalAttachmentSize()) ||
+            : ((0, o.R8)({ location: "UploaderBase.compressAndCheckFileSize" }),
+              !(this._fileSize() > e.getMaxTotalAttachmentSize()) ||
                 (this._handleError({
-                  code: _.t02.ENTITY_TOO_LARGE,
-                  reason: { type: u.ty.POSTCOMPRESSION_SUM_TOO_LARGE },
+                  code: u.t02.ENTITY_TOO_LARGE,
+                  reason: { type: c.ty.POSTCOMPRESSION_SUM_TOO_LARGE },
                 }),
-                !1);
+                !1));
         }
         setUploadingTextForUI() {
           let e = this.files.some((e) => e.isImage),
             t = this.files.some((e) => e.isVideo),
             n = this._fileSize();
-          c.log(
+          E.log(
             `setUploadingTextForUI - total content: ${n} bytes and ${this.files.length} attachments for ${this.id}`,
           ),
             (this._file = {
@@ -44528,7 +44530,7 @@ ${s}`);
           let e = {};
           return (
             this.files.forEach((t) => {
-              e[t.id] = (0, d.YL)(t.loaded, t.currentSize);
+              e[t.id] = (0, _.YL)(t.loaded, t.currentSize);
             }),
             e
           );
@@ -44545,7 +44547,7 @@ ${s}`);
         };
         _handleProgress = (e, t, n) => {
           let i = Date.now(),
-            r = (0, d.YL)(e, t),
+            r = (0, _.YL)(e, t),
             s = Math.floor((e - this._loaded) / ((i - this._lastUpdate) / 1e3));
           null != n &&
             this._file.items?.forEach((e) => {
@@ -44563,7 +44565,7 @@ ${s}`);
         };
         _handleException = (e) => {
           this._handleError({
-            reason: { type: u.ty.ERROR_SOURCE_UNKNOWN, msg: e.toString() },
+            reason: { type: c.ty.ERROR_SOURCE_UNKNOWN, msg: e.toString() },
           });
         };
         _handleAborted = () => {
@@ -44574,13 +44576,13 @@ ${s}`);
           this.clearProcessingMessageInterval(),
             this._aborted ||
               ((this._errored = !0),
-              c.log(`_handleError: ${t} (${JSON.stringify(n)}) for ${this.id}`),
+              E.log(`_handleError: ${t} (${JSON.stringify(n)}) for ${this.id}`),
               this.emit("error", this._file, t, i, n),
               this.removeAllListeners());
         };
         _handleComplete = (e) => {
           this.clearProcessingMessageInterval(),
-            c.log(`_handleComplete for ${this.id}`),
+            E.log(`_handleComplete for ${this.id}`),
             this.emit("complete", this._file, e),
             this.removeAllListeners();
         };
@@ -44590,7 +44592,7 @@ ${s}`);
             (this.processingMessageChangeInterval = void 0));
         }
         cancel() {
-          c.log(`cancel() for ${this.id}`),
+          E.log(`cancel() for ${this.id}`),
             this._aborted ||
               ((this._aborted = !0),
               this._cancel?.(),
@@ -44598,7 +44600,7 @@ ${s}`);
               this._handleComplete());
         }
         async cancelItem(e) {
-          c.log(`Cancel called for ${this.id} for item ${e}`);
+          E.log(`Cancel called for ${this.id} for item ${e}`);
           let t = this.files.find((t) => t.id === e);
           if (null == t || t.isCancelled()) return;
           let n = this.files.indexOf(t);
@@ -44607,7 +44609,7 @@ ${s}`);
             ...this.files.slice(n + 1),
           ]),
             (this._file = { ...this._file, items: this.files }),
-            await (0, o.sm)(t),
+            await (0, l.sm)(t),
             t.cancel(),
             this.emit("cancel-upload-item", this._file),
             0 === this.files.length && this.cancel();
@@ -52456,22 +52458,29 @@ ${s}`);
     },
     975460(e, t, n) {
       "use strict";
-      n.d(t, { g: () => l, t: () => o });
+      n.d(t, { g: () => _, t: () => d });
       var i = n(64700),
         r = n(587895),
-        s = n(223273),
-        a = n(705751);
-      function o(e) {
+        s = n(429913),
+        a = n(223273),
+        o = n(395671),
+        l = n(705751);
+      function d(e) {
         if (null == e) return null;
-        if (e.type !== a.S7.GAME) return e;
-        for (let t of e.linkedGames ?? []) {
-          let e = r.A.getApplication(t.id);
-          if (null != e && t.type === s.Mh.OFFICIAL) return e;
-        }
-        return null;
+        if (e.type !== l.S7.GAME) return e;
+        let t = e.linkedGames?.find((e) => e.type === a.Mh.OFFICIAL);
+        return t?.application ?? r.A.getApplication(t?.id) ?? null;
       }
-      function l(e) {
-        return i.useMemo(() => o(e), [e]);
+      function _(e) {
+        let t =
+            null == e || e instanceof o.Ay
+              ? void 0
+              : e.getOfficialApplicationId(),
+          n = (0, s.h)(t);
+        return i.useMemo(
+          () => (null == e ? null : e instanceof o.Ay ? d(e) : (n ?? null)),
+          [e, n],
+        );
       }
     },
     46225(e, t, n) {
@@ -56942,65 +56951,6 @@ ${s}`);
         });
       }
     },
-    858177(e, t, n) {
-      "use strict";
-      n.d(t, { O: () => c }), n(321073);
-      var i = n(64700),
-        r = n(735438),
-        s = n.n(r),
-        a = n(17928),
-        o = n(451988),
-        l = n(627363),
-        d = n(587895);
-      class _ {
-        _lastFetchedAttempted = new Map();
-        _pending = new Set();
-        _flushHandler = new o.J_(32, () => this._flush());
-        request(e) {
-          if (this._pending.has(e)) return;
-          let t = this._lastFetchedAttempted.get(e);
-          (null != t && Date.now() - t < 6e4) ||
-            (this._pending.add(e), this._flushHandler.delay(!1));
-        }
-        _flush() {
-          let e = [];
-          this._pending.forEach((t) => {
-            this._lastFetchedAttempted.set(t, Date.now()), e.push(t);
-          }),
-            this._pending.clear();
-          let t = [],
-            n = [];
-          e.forEach((e) => {
-            d.A.didFetchingApplicationFail(e) ? n.push(e) : t.push(e);
-          }),
-            t.length > 0 &&
-              s()
-                .chunk(t, 20)
-                .forEach((e) => {
-                  l.Ay.fetchApplications(e, !1);
-                }),
-            n.length > 0 &&
-              s()
-                .chunk(n, 20)
-                .forEach((e) => {
-                  l.Ay.fetchApplications(e, !0);
-                });
-        }
-      }
-      let u = new _();
-      function c(e) {
-        return (
-          i.useEffect(() => {
-            null != e && "" !== e && u.request(e);
-          }, [e]),
-          (0, a.bG)(
-            [d.A],
-            () => (null != e && "" !== e ? d.A.getApplication(e) : null),
-            [e],
-          )
-        );
-      }
-    },
     429913(e, t, n) {
       "use strict";
       n.d(t, { A: () => u, h: () => c });
@@ -57516,7 +57466,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "b8c097db6ba1e9207f60f9e79bb0aefc00da8203" === e.body.hash
+                  "156170a6d29374c0581ef5ff75c390cd5e2831ee" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -65384,10 +65334,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534185")),
+                ((e = parseInt("534272")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534185",
+                    "Trying to open a changelog for an invalid build number 534272",
                   ),
                   (e = 0)),
                 e),
@@ -67340,7 +67290,7 @@ ${s}`);
     },
     383442(e, t, n) {
       "use strict";
-      n.d(t, { A: () => tq }), n(321073), n(323874), n(14289), n(35956);
+      n.d(t, { A: () => tX }), n(321073), n(323874), n(14289), n(35956);
       var i = n(627968),
         r = n(64700),
         s = n(503698),
@@ -68533,17 +68483,167 @@ ${s}`);
               ? `<@&${s}>`
               : s;
       }
-      var e8 = n(79719),
-        e9 = n(635377),
-        te = n.n(e9),
-        tt = n(927813),
-        tn = n(981776);
-      let ti = new Set(["line"]),
-        tr = /^[a-z0-9_+\-.#]+$/i,
-        ts = /(?:<span class="([^"]*)">)|(?:<\/span>)/g,
-        ta = { max: 1 / 0, maxAge: +tt.A.Millis.MINUTE, updateAgeOnGet: !0 },
-        to = new (te())(ta);
-      function tl(e, t) {
+      var e8 = n(635377),
+        e9 = n.n(e8),
+        te = n(927813);
+      let tt = new Set(["line"]),
+        tn = /^[a-z0-9_+\-.#]+$/i,
+        ti = null,
+        tr = null;
+      function ts(e) {
+        let t = (function (e) {
+          let t = [],
+            n = null;
+          for (let i of z.VW.blocks(e))
+            (n = (function (e, t, n, i, r) {
+              let s = (function (e) {
+                  let t,
+                    [n, i] = e;
+                  if (!tt.has(n.type)) return [];
+                  let r = [],
+                    s = /\\|```/g;
+                  for (let e = 0; e < n.children.length; e++) {
+                    let a = n.children[e];
+                    if (z.l5.isText(a))
+                      for (s.lastIndex = 0; null != (t = s.exec(a.text)); ) {
+                        if ("\\" === t[0]) {
+                          s.lastIndex += 1;
+                          continue;
+                        }
+                        r.push({ path: z.PW.child(i, e), offset: t.index });
+                      }
+                  }
+                  return r;
+                })(t),
+                a = s[0],
+                o = s[s.length - 1],
+                l = null;
+              if (null != o) {
+                let [t] = z.VW.node(e, o.path);
+                l = t.text.substring(o.offset + 3);
+              }
+              let d = n && null != a,
+                _ = n && 0 === s.length,
+                u = i && 0 === s.length,
+                c = (d ? s.slice(1) : s).length % 2 == 1,
+                E = c && (null == l || "" === l || null != l.match(tn)),
+                h = E && null != l && "" !== l ? l.toLowerCase() : null;
+              return {
+                blockEntry: t,
+                wasInCodeBlock: n,
+                isInCodeBlock: _,
+                isStyledCodeBlockLine: u,
+                lang: c || d ? h : r,
+                hljsTypes: null,
+                closesCodeBlock: d,
+                opensCodeBlock: c,
+                opensCodeBlockOnOwnLine: E,
+              };
+            })(
+              e,
+              i,
+              null != n && (n.isInCodeBlock || n.opensCodeBlock),
+              null != n &&
+                (n.isStyledCodeBlockLine || n.opensCodeBlockOnOwnLine),
+              null != n && (n.opensCodeBlock || !n.closesCodeBlock)
+                ? n.lang
+                : null,
+            )),
+              t.push(n);
+          return (
+            (function (e) {
+              let t = [],
+                n = !1;
+              for (let i of e) {
+                let r = i === e[e.length - 1];
+                if (
+                  (i.closesCodeBlock || r) &&
+                  (n && r && !i.closesCodeBlock && t.push(i),
+                  (n = !1),
+                  t.length > 0)
+                ) {
+                  let e = t.map((e) => (0, ex.IQ)(e.blockEntry[0])).join("\n"),
+                    n = t[0].lang;
+                  if (null == n || null == ti || ti.hasLanguage(n)) {
+                    if (null != n && null != ti && ti.hasLanguage(n)) {
+                      let i = (function (e, t) {
+                        if (null == ti) return null;
+                        let n = `${e}-${t}`,
+                          i = tl.get(n);
+                        if (null != i) return i;
+                        let r = ti.highlight(t, e, !1);
+                        if (null == r || r.illegal) return null;
+                        let s = r.value.split("\n");
+                        return tl.set(n, s), s;
+                      })(e, n);
+                      if (null != i && i.length === t.length) {
+                        let e = [];
+                        for (let n = 0; n < t.length; n++) {
+                          let r,
+                            s = i[n]
+                              .replace(/&amp;/g, "&")
+                              .replace(/&lt;/g, "<")
+                              .replace(/&gt;/g, ">")
+                              .replace(/&quot;/g, '"')
+                              .replace(/&#x27;/g, "'"),
+                            a = [],
+                            o = 0,
+                            l = 0;
+                          for (; null != (r = ta.exec(s)); ) {
+                            let t = r.index + r[0].length,
+                              n = r.index - l;
+                            r.index > l &&
+                              (e.length > 0 &&
+                                a.push({ types: [...e], start: o, end: o + n }),
+                              (o += n)),
+                              "</span>" === r[0] ? e.pop() : e.push(r[1]),
+                              (l = t);
+                          }
+                          if (e.length > 0) {
+                            let t = s.length - l;
+                            a.push({ types: [...e], start: o, end: o + t });
+                          }
+                          t[n].hljsTypes = a;
+                        }
+                      } else
+                        for (let e = 0; e < t.length; e++)
+                          t[e].hljsTypes = null;
+                    }
+                  } else for (let e = 0; e < t.length; e++) t[e].hljsTypes = [];
+                  t = [];
+                }
+                n && t.push(i), i.opensCodeBlock && (n = !0);
+              }
+            })(t),
+            t
+          );
+        })(e);
+        return (
+          (function (e, t) {
+            for (let i of t) {
+              var n;
+              let [t, r] = i.blockEntry,
+                s =
+                  (n = i).isStyledCodeBlockLine || n.wasInCodeBlock
+                    ? {
+                        lang: n.lang,
+                        wasInCodeBlock: n.wasInCodeBlock,
+                        isInCodeBlock: n.isInCodeBlock,
+                        isStyledCodeBlockLine: n.isStyledCodeBlockLine,
+                        hljsTypes: n.hljsTypes,
+                      }
+                    : null;
+              t?.codeBlockState != s &&
+                K.b.setNodes(e, { codeBlockState: s }, { at: r });
+            }
+          })(e, t),
+          t.some((e) => null != e.lang)
+        );
+      }
+      let ta = /(?:<span class="([^"]*)">)|(?:<\/span>)/g,
+        to = { max: 1 / 0, maxAge: +te.A.Millis.MINUTE, updateAgeOnGet: !0 },
+        tl = new (e9())(to);
+      function td(e, t) {
         let n = 0;
         for (let i of z.VW.nodes(e, {
           at: { anchor: { path: eQ.fP, offset: 0 }, focus: t },
@@ -68557,22 +68657,22 @@ ${s}`);
         }
         return n % 2 != 0;
       }
-      function td(e) {
+      function t_(e) {
         if (null == e.selection) return !1;
         let t = z.ZF.start(e.selection);
-        return tl(e, t);
+        return td(e, t);
       }
-      let t_ = new Set(["line", "blockQuote"]),
-        tu = ["applicationCommand"],
-        tc = ["timestampMentionInput"];
-      function tE(e) {
+      let tu = new Set(["line", "blockQuote"]),
+        tc = ["applicationCommand"],
+        tE = ["timestampMentionInput"];
+      function th(e) {
         let t = z.VW.getCurrentBlock(e),
           n = z.VW.getCurrentInline(e);
         return (
-          null != t && !tu.includes(t[0].type) && !tc.includes(n?.[0]?.type)
+          null != t && !tc.includes(t[0].type) && !tE.includes(n?.[0]?.type)
         );
       }
-      function th(e) {
+      function tm(e) {
         return {
           type: "other",
           mergeable: !1,
@@ -68581,12 +68681,12 @@ ${s}`);
           selection: e.selection,
         };
       }
-      var tm = n(877413),
-        tf = n.n(tm),
-        tg = n(284009),
-        tp = n.n(tg),
-        tA = n(339871);
-      function tI(e, t) {
+      var tf = n(877413),
+        tg = n.n(tf),
+        tp = n(284009),
+        tA = n.n(tp),
+        tI = n(339871);
+      function tT(e, t) {
         let { cmd: n = !1, ctrl: i = !1, alt: r = !1, shift: s = !1 } = t;
         return (
           (null == n || e.metaKey === n) &&
@@ -68595,7 +68695,7 @@ ${s}`);
           (null == s || e.shiftKey === s)
         );
       }
-      let tT = (e) => {
+      let tS = (e) => {
           let t = z.VW.getCurrentBlock(e);
           if (null != t) {
             let n = z.VW.start(e, t[1]);
@@ -68603,7 +68703,7 @@ ${s}`);
           }
           return !1;
         },
-        tS = (e) => {
+        tN = (e) => {
           let t = z.VW.getCurrentBlock(e);
           if (null != t) {
             let n = z.VW.end(e, t[1]);
@@ -68611,10 +68711,10 @@ ${s}`);
           }
           return !1;
         };
-      var tN = n(224868);
-      let tC =
+      var tC = n(224868);
+      let tR =
           /(@[^@#]+(?:#0|#\d{4}))|(@[^\s\t@#:]+)(?=[\s\t@:])|(:[a-zA-Z0-9_~]+:)|(#"(?:\ |\\\\|\\"|(?!")\w)+")|(#[^\s\t@#:]+(?=[\s\t@#:]))/g,
-        tR = new Set([
+        tO = new Set([
           "emoji",
           "customEmoji",
           "textMention",
@@ -68625,32 +68725,32 @@ ${s}`);
           "soundboard",
           "timestamp",
         ]),
-        tO = new Set(["timestampMentionInput"]),
-        ty = new Set(["line", "blockQuote"]),
-        tv = new Set(["applicationCommandOption"]);
-      function tD(e, t, n) {
+        ty = new Set(["timestampMentionInput"]),
+        tv = new Set(["line", "blockQuote"]),
+        tD = new Set(["applicationCommandOption"]);
+      function tL(e, t, n) {
         let i = z.VW.areStylesDisabled(e);
         for (let r of z.VW.blocks(e))
-          if (ty.has(r[0].type)) i ? tb(e, r, !0, null) : tL(e, r, t, n);
+          if (tv.has(r[0].type)) i ? tw(e, r, !0, null) : tb(e, r, t, n);
           else {
             let [s, a] = r;
             for (let r = s.children.length - 1; r >= 0; r--) {
               let o = s.children[r];
-              if (!z.l5.isText(o) && tv.has(o.type)) {
+              if (!z.l5.isText(o) && tD.has(o.type)) {
                 let s = [o, z.PW.child(a, r)];
-                i ? tb(e, s, !0, null) : tL(e, s, t, n);
+                i ? tw(e, s, !0, null) : tb(e, s, t, n);
               }
             }
           }
       }
-      function tL(e, t, n, i) {
+      function tb(e, t, n, i) {
         let r =
             "line" === t[0].type && t[0].codeBlockState?.isInCodeBlock === !0,
           s = z.cv.markdown(t[0], n);
-        tb(e, t, r, s) &&
+        tw(e, t, r, s) &&
           ((t = z.cv.updateElement(e, t)), (s = z.cv.markdown(t[0], n))),
           r ||
-            (tw(e, t, i, s) &&
+            (tP(e, t, i, s) &&
               ((t = z.cv.updateElement(e, t)), (s = z.cv.markdown(t[0], n))),
             (function (e, t, n, i, r) {
               let [s, a] = t;
@@ -68660,30 +68760,30 @@ ${s}`);
                 if (!z.l5.isText(d)) continue;
                 let _ = z.PW.child(a, o),
                   u = [];
-                for (tC.lastIndex = 0; null != (l = tC.exec(d.text)); ) {
+                for (tR.lastIndex = 0; null != (l = tR.exec(d.text)); ) {
                   if (
                     0 !== l.index &&
                     null == d.text.charAt(l.index - 1).match(/(\t|\s)/)
                   ) {
-                    tC.lastIndex = l.index + 1;
+                    tR.lastIndex = l.index + 1;
                     continue;
                   }
-                  if (tP(e, a, { path: _, offset: l.index }, r)) continue;
-                  let s = (0, tN.p)(l[0], n, i);
-                  null != s && tk(i, t[0], s)
+                  if (tk(e, a, { path: _, offset: l.index }, r)) continue;
+                  let s = (0, tC.p)(l[0], n, i);
+                  null != s && tM(i, t[0], s)
                     ? u.push({ index: l.index, length: l[0].length, node: s })
-                    : (tC.lastIndex = l.index + 1);
+                    : (tR.lastIndex = l.index + 1);
                 }
                 for (let t of u.reverse())
                   (function (e, t, n, i, r) {
                     let [s, a] = t,
                       o = { path: a, offset: n },
                       l = { path: a, offset: n + i };
-                    tp()(
+                    tA()(
                       o.offset >= 0 && o.offset <= s.text.length,
                       "Failed to find valid start position for raw mention replace",
                     ),
-                      tp()(
+                      tA()(
                         l.offset >= 0 && l.offset <= s.text.length,
                         "Failed to find valid end position for raw mention replace",
                       ),
@@ -68692,7 +68792,7 @@ ${s}`);
               }
             })(e, t, n, i, s));
       }
-      function tb(e, t, n, i) {
+      function tw(e, t, n, i) {
         let [r, s] = t,
           a = !1;
         for (let t = r.children.length - 1; t >= 0; t--) {
@@ -68723,7 +68823,7 @@ ${s}`);
           } else if (z.cv.isElement(o) && e.isVoid(o)) {
             let r = z.PW.child(s, t),
               l = { path: z.PW.child(r, 0), offset: 0 };
-            (n || (null != i && tP(e, s, l, i))) &&
+            (n || (null != i && tk(e, s, l, i))) &&
               (K.b.voidToText(
                 e,
                 (0, ex.IQ)(o, { mode: "plain", preventEmojiSurrogates: !0 }),
@@ -68734,7 +68834,7 @@ ${s}`);
         }
         return a;
       }
-      function tw(e, t, n, i) {
+      function tP(e, t, n, i) {
         let r = t[1],
           s = !1,
           a = [...i.entries].reverse();
@@ -68833,14 +68933,14 @@ ${s}`);
             default:
               continue;
           }
-          if (!tk(n, t[0], l)) continue;
+          if (!tM(n, t[0], l)) continue;
           let u = eG(e, r, i.serializedChildren, d.start),
             c = eG(e, r, i.serializedChildren, d.start + d.text.length);
           K.b.textToVoid(e, l, { anchor: u, focus: c }), (s = !0);
         }
         return s;
       }
-      function tP(e, t, n, i) {
+      function tk(e, t, n, i) {
         let r = 0;
         for (let [i, s] of z.VW.nodes(e, {
           at: { anchor: z.VW.start(e, t), focus: n },
@@ -68863,7 +68963,7 @@ ${s}`);
         }
         return !1;
       }
-      function tk(e, t, n) {
+      function tM(e, t, n) {
         if ("applicationCommandOption" !== t.type) return !0;
         switch (t.optionType) {
           case E.n4.CHANNEL:
@@ -68889,7 +68989,7 @@ ${s}`);
             return !1;
         }
       }
-      function tM(e, t, n) {
+      function tU(e, t, n) {
         let i = z.VW.getCurrentInline(e);
         if ("block" === t) return !0;
         let r = z.VW.getCurrentText(e);
@@ -68945,8 +69045,8 @@ ${s}`);
           }
         return K.b.delete(e, { at: d, unit: t, reverse: n, select: !0 }), !0;
       }
-      var tU = n(527214);
-      function tx(e, t) {
+      var tx = n(527214);
+      function tG(e, t) {
         let n = m.A.getActiveCommand(e.id),
           i = n?.options?.find((e) => e.name === t.optionName);
         return (
@@ -68954,15 +69054,15 @@ ${s}`);
           (i.type !== E.n4.STRING || i?.choices != null || i?.autocomplete)
         );
       }
-      function tG(e, t, n, i) {
+      function tV(e, t, n, i) {
         let r = z.VW.areStylesDisabled(e) || null == n ? t : n;
         B.o.withSingleEntry(e, () => {
           K.b.insertText(e, i ? r + " " : r);
         });
       }
-      var tV = n(770178);
-      let tF = { enabled: !0, fireOnMount: !0, fireOnDepsChange: !0 };
-      function tB(e) {
+      var tF = n(770178);
+      let tB = { enabled: !0, fireOnMount: !0, fireOnDepsChange: !0 };
+      function tH(e) {
         try {
           return z.VW.toDOMNode(e, e);
         } catch (t) {
@@ -68970,8 +69070,8 @@ ${s}`);
           return (e.stack = t.stack), W.A.captureException(e), null;
         }
       }
-      var tH = n(31717);
-      let tj = (e) => {
+      var tj = n(31717);
+      let tW = (e) => {
           let t,
             { channelId: n, element: s, attributes: o, children: l } = e,
             d = (0, H.f7)(),
@@ -68989,7 +69089,7 @@ ${s}`);
             ),
             f = (0, q.bG)(
               [g.A],
-              () => g.A.getUpload(n, s.optionName, tH.C.SlashCommand),
+              () => g.A.getUpload(n, s.optionName, tj.C.SlashCommand),
               [n, s.optionName],
             ),
             p = s.children[s.children.length - 1],
@@ -69043,7 +69143,7 @@ ${s}`);
             })
           );
         },
-        tW = (e) => {
+        tY = (e) => {
           let { element: t, attributes: n, children: r } = e,
             s = (0, H.f7)(),
             o = (0, H.zL)(),
@@ -69063,61 +69163,61 @@ ${s}`);
             ],
           });
         };
-      var tY = n(471910);
-      let tK = r.forwardRef(function (e, t) {
-        let n,
-          s,
+      var tK = n(471910);
+      let tz = r.forwardRef(function (e, t) {
+        let s,
           o,
           l,
           d,
           _,
+          u,
           {
-            value: u,
-            type: c,
-            channel: h,
-            className: f,
-            id: A,
-            disabled: I,
-            submitting: N,
-            placeholder: C,
-            required: R,
-            textAreaPaddingClassName: O,
-            onChange: y,
-            onPaste: v,
-            onResize: D,
-            onFocus: L,
-            onBlur: w,
-            onKeyDown: P,
-            onKeyUp: U,
-            onTab: x,
-            onEnter: W,
-            onSubmit: Y,
-            onSubmitFailure: $,
-            maybeShowAutocomplete: q,
-            hideAutocomplete: X,
-            moveSelection: Z,
-            spellcheckEnabled: Q,
-            canUseCommands: J,
-            canOnlyUseTextCommands: ee,
-            disableAutoFocus: et,
-            disableEnterToSubmit: en,
-            allowNewLines: ei,
-            "aria-owns": er,
-            "aria-expanded": es,
-            "aria-haspopup": ea,
-            "aria-activedescendant": eo,
-            "aria-controls": el,
-            "aria-invalid": ed,
-            "aria-describedby": e_,
-            "aria-labelledby": eu,
-            "aria-autocomplete": ec,
+            value: c,
+            type: h,
+            channel: f,
+            className: A,
+            id: I,
+            disabled: N,
+            submitting: C,
+            placeholder: R,
+            required: O,
+            textAreaPaddingClassName: y,
+            onChange: v,
+            onPaste: D,
+            onResize: L,
+            onFocus: w,
+            onBlur: P,
+            onKeyDown: U,
+            onKeyUp: x,
+            onTab: W,
+            onEnter: Y,
+            onSubmit: $,
+            onSubmitFailure: q,
+            maybeShowAutocomplete: X,
+            hideAutocomplete: Z,
+            moveSelection: Q,
+            spellcheckEnabled: J,
+            canUseCommands: ee,
+            canOnlyUseTextCommands: et,
+            disableAutoFocus: en,
+            disableEnterToSubmit: ei,
+            allowNewLines: er,
+            "aria-owns": es,
+            "aria-expanded": ea,
+            "aria-haspopup": eo,
+            "aria-activedescendant": el,
+            "aria-controls": ed,
+            "aria-invalid": e_,
+            "aria-describedby": eu,
+            "aria-labelledby": ec,
+            "aria-autocomplete": eE,
           } = e,
-          eE = r.useRef(null),
           eh = r.useRef(null),
-          em = r.useRef(!0),
+          em = r.useRef(null),
           ef = r.useRef(!0),
-          eg = I || N,
-          eA = r.useCallback(
+          eg = r.useRef(!0),
+          eA = N || C,
+          eI = r.useCallback(
             (e, t, n) => {
               let { value: i, selection: r } = n,
                 s = z.VW.richValue(e),
@@ -69131,11 +69231,11 @@ ${s}`);
                     e.chatInputType === T.oU.EDIT)
                 ) {
                   try {
-                    (e.previewMarkdown = !0), tD(e, h.guild_id, h.id);
+                    (e.previewMarkdown = !0), tL(e, f.guild_id, f.id);
                   } finally {
                     e.previewMarkdown = !1;
                   }
-                  tD(e, h.guild_id, h.id), (r = void 0);
+                  tL(e, f.guild_id, f.id), (r = void 0);
                 }
                 "undo" !== t &&
                   void 0 !== i &&
@@ -69151,7 +69251,7 @@ ${s}`);
                 r = { anchor: t, focus: t };
               }
               let l = null != r && !z.Ot.equals(r, a);
-              if ((o && !et && z.VW.focus(e), null != r && l)) {
+              if ((o && !en && z.VW.focus(e), null != r && l)) {
                 e.selection = r;
                 let t = B.o.currentEntry(e);
                 null != t && (t.selection = r), (o = !0);
@@ -69159,57 +69259,57 @@ ${s}`);
               let d = F.n$(e);
               if (
                 (null != d &&
-                  d[0].command.id !== m.A.getActiveCommand(h.id)?.id &&
+                  d[0].command.id !== m.A.getActiveCommand(f.id)?.id &&
                   B.o.withMergedEntry(e, () => {
-                    e2(e, h.id, null, !0);
+                    e2(e, f.id, null, !0);
                   }),
                 o)
               )
                 if ("parent" === t)
                   try {
-                    (ef.current = !1), e.onChange();
+                    (eg.current = !1), e.onChange();
                   } finally {
-                    ef.current = !0;
+                    eg.current = !0;
                   }
                 else e.onChange();
             },
-            [h.id, h.guild_id, et],
+            [f.id, f.guild_id, en],
           ),
-          eI = (function (e) {
+          eT = (function (e) {
             let t = r.useContext(j.Ay),
-              n = eW.SI.useSetting(),
-              [i] = r.useState(() => {
-                let i = (0, eH.ie)();
+              i = eW.SI.useSetting(),
+              [s] = r.useState(() => {
+                let r = (0, eH.ie)();
                 return (
-                  (i.children = (0, S.x7)("")),
-                  (i.selection = { anchor: eQ.K, focus: eQ.K }),
+                  (r.children = (0, S.x7)("")),
+                  (r.selection = { anchor: eQ.K, focus: eQ.K }),
                   (function (e) {
-                    var t, n;
+                    var t, i;
                     let {
-                        editor: i,
-                        chatInputType: r,
-                        channel: s,
-                        canUseCommands: a,
-                        canOnlyUseTextCommands: o,
-                        windowContext: l,
-                        previewMarkdown: d,
-                        forTests: _,
-                        onChangeStart: u,
-                        onChangeEnd: c,
-                        updateState: h,
+                        editor: r,
+                        chatInputType: s,
+                        channel: a,
+                        canUseCommands: o,
+                        canOnlyUseTextCommands: l,
+                        windowContext: d,
+                        previewMarkdown: _,
+                        forTests: u,
+                        onChangeStart: c,
+                        onChangeEnd: h,
+                        updateState: f,
                       } = e,
-                      f = i,
-                      { onChange: g } = f;
-                    (f.chatInputType = r),
-                      (f.windowContext = l),
-                      (f.previewMarkdown = d),
-                      (f.composition = null),
-                      (f.events = new eB.EventEmitter()),
-                      (f.isMac = "MacIntel" === navigator.platform),
-                      (f.onChange = () => {
-                        f.events.emit("onChange"), g();
+                      g = r,
+                      { onChange: p } = g;
+                    (g.chatInputType = s),
+                      (g.windowContext = d),
+                      (g.previewMarkdown = _),
+                      (g.composition = null),
+                      (g.events = new eB.EventEmitter()),
+                      (g.isMac = "MacIntel" === navigator.platform),
+                      (g.onChange = () => {
+                        g.events.emit("onChange"), p();
                       }),
-                      ((t = f =
+                      ((t = g =
                         ((e, t) => {
                           let {
                             addMark: n,
@@ -69270,7 +69370,7 @@ ${s}`);
                             }),
                             e
                           );
-                        })(f, !0 === _)).setFragmentData = (e) => {
+                        })(g, !0 === u)).setFragmentData = (e) => {
                         if (
                           null != t.selection &&
                           !z.Kh.equals(t.selection.anchor, t.selection.focus)
@@ -69295,8 +69395,8 @@ ${s}`);
                           z.ZF.isExpanded(t.selection)
                         ) {
                           let e = eH.KE.string(t, t.selection),
-                            i = (0, tU.W1)(n),
-                            r = (0, tU.W1)(e);
+                            i = (0, tx.W1)(n),
+                            r = (0, tx.W1)(e);
                           if (null != i && null == r) {
                             let [e, n] = z.ZF.edges(t.selection);
                             return (
@@ -69321,7 +69421,7 @@ ${s}`);
                         }
                         return t.insertText(n), !0;
                       }),
-                      (f = (function (e) {
+                      (g = (function (e) {
                         let {
                           apply: t,
                           deleteBackward: n,
@@ -69355,10 +69455,10 @@ ${s}`);
                               : s(t);
                           }),
                           (e.deleteBackward = (t) => {
-                            tM(e, t, !0) || n(t);
+                            tU(e, t, !0) || n(t);
                           }),
                           (e.deleteForward = (t) => {
-                            tM(e, t, !1) || i(t);
+                            tU(e, t, !1) || i(t);
                           }),
                           (e.deleteFragment = (t) => {
                             if (
@@ -69404,9 +69504,9 @@ ${s}`);
                           }),
                           e
                         );
-                      })((f = t))),
-                      r.commands?.enabled &&
-                        (f = (function (e, t, n, i) {
+                      })((g = t))),
+                      s.commands?.enabled &&
+                        (g = (function (e, t, n, i) {
                           let {
                             insertData: r,
                             isInline: s,
@@ -69863,12 +69963,12 @@ ${s}`);
                             }),
                             e
                           );
-                        })(f, s, !0 === a, !0 === o)),
-                      (f = (function (e, t, n) {
+                        })(g, a, !0 === o, !0 === l)),
+                      (g = (function (e, t, n) {
                         let { isInline: i, isVoid: r, onChange: s } = e;
-                        (e.isVoid = (e) => !!tR.has(e.type) || r(e)),
+                        (e.isVoid = (e) => !!tO.has(e.type) || r(e)),
                           (e.isInline = (e) =>
-                            !!(tR.has(e.type) || tO.has(e.type)) || i(e));
+                            !!(tO.has(e.type) || ty.has(e.type)) || i(e));
                         let a = null,
                           o = !0;
                         return (
@@ -69876,7 +69976,7 @@ ${s}`);
                             let i = z.VW.richValue(e);
                             (i !== a || e.previewMarkdown !== o) &&
                               (B.o.withMergedEntry(e, () => {
-                                z.VW.withoutNormalizing(e, () => tD(e, t, n));
+                                z.VW.withoutNormalizing(e, () => tL(e, t, n));
                               }),
                               (a = i),
                               (o = e.previewMarkdown)),
@@ -69884,9 +69984,9 @@ ${s}`);
                           }),
                           e
                         );
-                      })(f, s.guild_id, s.id)),
-                      r.markdown?.disableBlockQuotes ||
-                        (f = (function (e) {
+                      })(g, a.guild_id, a.id)),
+                      s.markdown?.disableBlockQuotes ||
+                        (g = (function (e) {
                           let {
                             deleteBackward: t,
                             deleteFragment: n,
@@ -69979,12 +70079,12 @@ ${s}`);
                                       let t = !1;
                                       for (let n of z.VW.blocks(e)) {
                                         let [i, r] = n;
-                                        if (!t_.has(i.type)) continue;
+                                        if (!tu.has(i.type)) continue;
                                         let s = {
                                           path: z.PW.child(r, 0),
                                           offset: 0,
                                         };
-                                        if (tl(e, s)) {
+                                        if (td(e, s)) {
                                           "blockQuote" === i.type &&
                                             (K.b.setNodes(
                                               e,
@@ -70035,265 +70135,54 @@ ${s}`);
                             }),
                             e
                           );
-                        })(f)),
-                      r.markdown?.disableCodeBlocks ||
-                        (f = (function (e) {
+                        })(g)),
+                      s.markdown?.disableCodeBlocks ||
+                        (g = (function (e) {
                           let { onChange: t } = e,
-                            n = null;
+                            i = null,
+                            r = !1;
                           return (
                             (e.onChange = () => {
-                              z.VW.richValue(e) !== n &&
+                              z.VW.richValue(e) !== i &&
                                 (B.o.withMergedEntry(e, () => {
-                                  z.VW.withoutNormalizing(e, () =>
-                                    (function (e) {
-                                      let t = (function (e) {
-                                        let t = [],
-                                          n = null;
-                                        for (let i of z.VW.blocks(e))
-                                          (n = (function (e, t, n, i, r) {
-                                            let s = (function (e) {
-                                                let t,
-                                                  [n, i] = e;
-                                                if (!ti.has(n.type)) return [];
-                                                let r = [],
-                                                  s = /\\|```/g;
-                                                for (
-                                                  let e = 0;
-                                                  e < n.children.length;
-                                                  e++
-                                                ) {
-                                                  let a = n.children[e];
-                                                  if (z.l5.isText(a))
-                                                    for (
-                                                      s.lastIndex = 0;
-                                                      null !=
-                                                      (t = s.exec(a.text));
-
-                                                    ) {
-                                                      if ("\\" === t[0]) {
-                                                        s.lastIndex += 1;
-                                                        continue;
-                                                      }
-                                                      r.push({
-                                                        path: z.PW.child(i, e),
-                                                        offset: t.index,
-                                                      });
-                                                    }
-                                                }
-                                                return r;
-                                              })(t),
-                                              a = s[0],
-                                              o = s[s.length - 1],
-                                              l = null;
-                                            if (null != o) {
-                                              let [t] = z.VW.node(e, o.path);
-                                              l = t.text.substring(
-                                                o.offset + 3,
+                                  z.VW.withoutNormalizing(e, () => {
+                                    ts(e) &&
+                                      null == ti &&
+                                      !r &&
+                                      ((r = !0),
+                                      (null == tr &&
+                                        (tr = Promise.resolve()
+                                          .then(n.bind(n, 981776))
+                                          .then((e) => {
+                                            ti = e.default;
+                                          })
+                                          .catch((e) => {
+                                            throw ((tr = null), e);
+                                          })),
+                                      tr)
+                                        .then(() => {
+                                          (i = null),
+                                            B.o.withMergedEntry(e, () => {
+                                              z.VW.withoutNormalizing(e, () =>
+                                                ts(e),
                                               );
-                                            }
-                                            let d = n && null != a,
-                                              _ = n && 0 === s.length,
-                                              u = i && 0 === s.length,
-                                              c =
-                                                (d ? s.slice(1) : s).length %
-                                                  2 ==
-                                                1,
-                                              E =
-                                                c &&
-                                                (null == l ||
-                                                  "" === l ||
-                                                  null != l.match(tr)),
-                                              h =
-                                                E && null != l
-                                                  ? (tn.default.resolveLanguageName(
-                                                      l,
-                                                    ) ?? null)
-                                                  : null;
-                                            return {
-                                              blockEntry: t,
-                                              wasInCodeBlock: n,
-                                              isInCodeBlock: _,
-                                              isStyledCodeBlockLine: u,
-                                              lang: c || d ? h : r,
-                                              hljsTypes: null,
-                                              closesCodeBlock: d,
-                                              opensCodeBlock: c,
-                                              opensCodeBlockOnOwnLine: E,
-                                            };
-                                          })(
-                                            e,
-                                            i,
-                                            null != n &&
-                                              (n.isInCodeBlock ||
-                                                n.opensCodeBlock),
-                                            null != n &&
-                                              (n.isStyledCodeBlockLine ||
-                                                n.opensCodeBlockOnOwnLine),
-                                            null != n &&
-                                              (n.opensCodeBlock ||
-                                                !n.closesCodeBlock)
-                                              ? n.lang
-                                              : null,
-                                          )),
-                                            t.push(n);
-                                        return (
-                                          (function (e) {
-                                            let t = [],
-                                              n = !1;
-                                            for (let i of e) {
-                                              let r = i === e[e.length - 1];
-                                              if (
-                                                (i.closesCodeBlock || r) &&
-                                                (n &&
-                                                  r &&
-                                                  !i.closesCodeBlock &&
-                                                  t.push(i),
-                                                (n = !1),
-                                                t.length > 0)
-                                              ) {
-                                                let e = t
-                                                    .map((e) =>
-                                                      (0, ex.IQ)(
-                                                        e.blockEntry[0],
-                                                      ),
-                                                    )
-                                                    .join("\n"),
-                                                  n = t[0].lang;
-                                                if (
-                                                  null != n &&
-                                                  null != e8.A.getLanguage(n)
-                                                ) {
-                                                  let i = (function (e, t) {
-                                                    let n = `${e}-${t}`,
-                                                      i = to.get(n);
-                                                    if (null != i) return i;
-                                                    let r =
-                                                      tn.default.highlight(
-                                                        t,
-                                                        e,
-                                                        !1,
-                                                      );
-                                                    if (null == r || r.illegal)
-                                                      return null;
-                                                    let s = r.value.split("\n");
-                                                    return to.set(n, s), s;
-                                                  })(e, n);
-                                                  if (
-                                                    null != i &&
-                                                    i.length === t.length
-                                                  ) {
-                                                    let e = [];
-                                                    for (
-                                                      let n = 0;
-                                                      n < t.length;
-                                                      n++
-                                                    ) {
-                                                      let r,
-                                                        s = i[n]
-                                                          .replace(
-                                                            /&amp;/g,
-                                                            "&",
-                                                          )
-                                                          .replace(/&lt;/g, "<")
-                                                          .replace(/&gt;/g, ">")
-                                                          .replace(
-                                                            /&quot;/g,
-                                                            '"',
-                                                          )
-                                                          .replace(
-                                                            /&#x27;/g,
-                                                            "'",
-                                                          ),
-                                                        a = [],
-                                                        o = 0,
-                                                        l = 0;
-                                                      for (
-                                                        ;
-                                                        null !=
-                                                        (r = ts.exec(s));
-
-                                                      ) {
-                                                        let t =
-                                                            r.index +
-                                                            r[0].length,
-                                                          n = r.index - l;
-                                                        r.index > l &&
-                                                          (e.length > 0 &&
-                                                            a.push({
-                                                              types: [...e],
-                                                              start: o,
-                                                              end: o + n,
-                                                            }),
-                                                          (o += n)),
-                                                          "</span>" === r[0]
-                                                            ? e.pop()
-                                                            : e.push(r[1]),
-                                                          (l = t);
-                                                      }
-                                                      if (e.length > 0) {
-                                                        let t = s.length - l;
-                                                        a.push({
-                                                          types: [...e],
-                                                          start: o,
-                                                          end: o + t,
-                                                        });
-                                                      }
-                                                      t[n].hljsTypes = a;
-                                                    }
-                                                  } else
-                                                    for (
-                                                      let e = 0;
-                                                      e < t.length;
-                                                      e++
-                                                    )
-                                                      t[e].hljsTypes = null;
-                                                }
-                                                t = [];
-                                              }
-                                              n && t.push(i),
-                                                i.opensCodeBlock && (n = !0);
-                                            }
-                                          })(t),
-                                          t
-                                        );
-                                      })(e);
-                                      var n,
-                                        i = e,
-                                        r = t;
-                                      for (let e of r) {
-                                        let [t, r] = e.blockEntry,
-                                          s =
-                                            (n = e).isStyledCodeBlockLine ||
-                                            n.wasInCodeBlock
-                                              ? {
-                                                  lang: n.lang,
-                                                  wasInCodeBlock:
-                                                    n.wasInCodeBlock,
-                                                  isInCodeBlock:
-                                                    n.isInCodeBlock,
-                                                  isStyledCodeBlockLine:
-                                                    n.isStyledCodeBlockLine,
-                                                  hljsTypes: n.hljsTypes,
-                                                }
-                                              : null;
-                                        t?.codeBlockState != s &&
-                                          K.b.setNodes(
-                                            i,
-                                            { codeBlockState: s },
-                                            { at: r },
-                                          );
-                                      }
-                                    })(e),
-                                  );
+                                            }),
+                                            (i = z.VW.richValue(e));
+                                        })
+                                        .catch(() => {})
+                                        .finally(() => {
+                                          r = !1;
+                                        }));
+                                  });
                                 }),
-                                (n = z.VW.richValue(e))),
+                                (i = z.VW.richValue(e))),
                                 t();
                             }),
                             e
                           );
-                        })(f)),
-                      _ &&
-                        (f = (function (e) {
+                        })(g)),
+                      u &&
+                        (g = (function (e) {
                           let { isInline: t, isVoid: n } = e;
                           return (
                             (e.isInline = (e) =>
@@ -70304,44 +70193,44 @@ ${s}`);
                               "testInlineVoid" === e.type || n(e)),
                             e
                           );
-                        })(f)),
-                      ((n = f).onKeyDown = (e) => {
-                        let t = n.isMac;
+                        })(g)),
+                      ((i = g).onKeyDown = (e) => {
+                        let t = i.isMac;
                         switch (e.which) {
                           case k.Ks6.B:
                             if (
-                              !z.VW.isEditorEmpty(n) &&
-                              tI(e, { ctrl: !t, cmd: t })
+                              !z.VW.isEditorEmpty(i) &&
+                              tT(e, { ctrl: !t, cmd: t })
                             )
-                              return (0, tA.Px)(n, "bold"), !0;
+                              return (0, tI.Px)(i, "bold"), !0;
                             break;
                           case k.Ks6.I:
                             if (
-                              !z.VW.isEditorEmpty(n) &&
-                              tI(e, { ctrl: !t, cmd: t })
+                              !z.VW.isEditorEmpty(i) &&
+                              tT(e, { ctrl: !t, cmd: t })
                             )
-                              return (0, tA.Px)(n, "italics"), !0;
+                              return (0, tI.Px)(i, "italics"), !0;
                             break;
                           case k.Ks6.U:
                             if (
-                              !z.VW.isEditorEmpty(n) &&
-                              tI(e, { ctrl: !t, cmd: t })
+                              !z.VW.isEditorEmpty(i) &&
+                              tT(e, { ctrl: !t, cmd: t })
                             )
-                              return (0, tA.Px)(n, "underline"), !0;
+                              return (0, tI.Px)(i, "underline"), !0;
                             break;
                           case k.Ks6.S:
                             if (
-                              !z.VW.isEditorEmpty(n) &&
-                              tI(e, { ctrl: !t, cmd: t, shift: !0 })
+                              !z.VW.isEditorEmpty(i) &&
+                              tT(e, { ctrl: !t, cmd: t, shift: !0 })
                             )
-                              return (0, tA.Px)(n, "strikethrough"), !0;
+                              return (0, tI.Px)(i, "strikethrough"), !0;
                             break;
                           case k.Ks6.TAB:
-                            if (null != n.selection && tI(e, { shift: null })) {
-                              let [t, i] = z.ZF.edges(n.selection),
-                                r = z.VW.blocks(n).slice(
+                            if (null != i.selection && tT(e, { shift: null })) {
+                              let [t, n] = z.ZF.edges(i.selection),
+                                r = z.VW.blocks(i).slice(
                                   t.path[0],
-                                  i.path[0] + 1,
+                                  n.path[0] + 1,
                                 ),
                                 s = !0;
                               for (let [e] of r)
@@ -70355,41 +70244,41 @@ ${s}`);
                               if (s) {
                                 if (
                                   !e.shiftKey &&
-                                  z.ZF.isCollapsed(n.selection)
+                                  z.ZF.isCollapsed(i.selection)
                                 )
-                                  return K.b.insertText(n, "  "), !0;
+                                  return K.b.insertText(i, "  "), !0;
                                 let t = !e.shiftKey;
                                 return (
-                                  B.o.withSingleEntry(n, () => {
+                                  B.o.withSingleEntry(i, () => {
                                     let e =
-                                        n.selection?.anchor ??
-                                        z.VW.start(n, []),
-                                      i = n.selection?.focus ?? z.VW.end(n, []);
+                                        i.selection?.anchor ??
+                                        z.VW.start(i, []),
+                                      n = i.selection?.focus ?? z.VW.end(i, []);
                                     for (let [s, a] of r) {
                                       let r = s.children[0];
                                       if (!z.l5.isText(r)) continue;
                                       let o = z.PW.child(a, 0),
                                         l = { path: o, offset: 0 };
                                       if (t)
-                                        K.b.insertText(n, "  ", { at: l }),
+                                        K.b.insertText(i, "  ", { at: l }),
                                           z.PW.equals(e.path, o) &&
                                             0 !== e.offset &&
                                             (e = {
                                               path: o,
                                               offset: e.offset + 2,
                                             }),
-                                          z.PW.equals(i.path, o) &&
-                                            0 !== i.offset &&
-                                            (i = {
+                                          z.PW.equals(n.path, o) &&
+                                            0 !== n.offset &&
+                                            (n = {
                                               path: o,
-                                              offset: i.offset + 2,
+                                              offset: n.offset + 2,
                                             });
                                       else if (r.text.startsWith("  ")) {
                                         let t = {
                                           path: z.PW.child(a, 0),
                                           offset: 2,
                                         };
-                                        K.b.delete(n, {
+                                        K.b.delete(i, {
                                           at: { anchor: l, focus: t },
                                         }),
                                           z.PW.equals(e.path, o) &&
@@ -70397,14 +70286,14 @@ ${s}`);
                                               path: o,
                                               offset: Math.max(0, e.offset - 2),
                                             }),
-                                          z.PW.equals(i.path, o) &&
-                                            (i = {
+                                          z.PW.equals(n.path, o) &&
+                                            (n = {
                                               path: o,
-                                              offset: Math.max(0, i.offset - 2),
+                                              offset: Math.max(0, n.offset - 2),
                                             });
                                       }
                                     }
-                                    K.b.select(n, { anchor: e, focus: i });
+                                    K.b.select(i, { anchor: e, focus: n });
                                   }),
                                   !0
                                 );
@@ -70413,79 +70302,79 @@ ${s}`);
                             break;
                           case k.Ks6.ARROW_LEFT:
                           case k.Ks6.ARROW_RIGHT: {
-                            let i;
-                            if (tI(e, { shift: null })) i = "character";
-                            else if (tI(e, { ctrl: !t, alt: t, shift: null }))
-                              i = "word";
-                            else if (t && tI(e, { cmd: !0, shift: null }))
+                            let n;
+                            if (tT(e, { shift: null })) n = "character";
+                            else if (tT(e, { ctrl: !t, alt: t, shift: null }))
+                              n = "word";
+                            else if (t && tT(e, { cmd: !0, shift: null }))
                               return !1;
                             else return !1;
                             let r =
-                                n.children[n.selection?.focus?.path[0] ?? 0],
-                              s = "rtl" === tf()(z.AS.string(r)),
+                                i.children[i.selection?.focus?.path[0] ?? 0],
+                              s = "rtl" === tg()(z.AS.string(r)),
                               a = (e.which === k.Ks6.ARROW_LEFT) == !s;
                             return (
-                              K.b.keyboardMove(n, {
+                              K.b.keyboardMove(i, {
                                 reverse: a,
-                                unit: i,
+                                unit: n,
                                 edge: e.shiftKey ? "focus" : void 0,
                               }),
                               !0
                             );
                           }
                           case k.Ks6.A:
-                            if (t && tI(e, { ctrl: !0 }) && tT(n)) return !0;
+                            if (t && tT(e, { ctrl: !0 }) && tS(i)) return !0;
                             break;
                           case k.Ks6.E:
-                            if (t && tI(e, { ctrl: !0 }) && tS(n)) return !0;
+                            if (t && tT(e, { ctrl: !0 }) && tN(i)) return !0;
                             break;
                           case k.Ks6.HOME:
-                            if (tI(e, { shift: !1, ctrl: !1 }) && tT(n))
+                            if (tT(e, { shift: !1, ctrl: !1 }) && tS(i))
                               return !0;
                             break;
                           case k.Ks6.END:
-                            if (tI(e, { shift: !1, ctrl: !1 }) && tS(n))
+                            if (tT(e, { shift: !1, ctrl: !1 }) && tN(i))
                               return !0;
                             break;
                           case k.Ks6.BACKSPACE:
                           case k.Ks6.DELETE:
                           case k.Ks6.K:
-                            let i = e.which === k.Ks6.BACKSPACE;
+                            let n = e.which === k.Ks6.BACKSPACE;
                             if (
                               ((!t &&
                                 e.which !== k.Ks6.K &&
-                                tI(e, { ctrl: !0, shift: !0 })) ||
+                                tT(e, { ctrl: !0, shift: !0 })) ||
                                 (t &&
                                   e.which !== k.Ks6.K &&
-                                  tI(e, { cmd: !0 })) ||
+                                  tT(e, { cmd: !0 })) ||
                                 (t &&
                                   e.which === k.Ks6.K &&
-                                  tI(e, { ctrl: !0 }))) &&
-                              null != n.selection
+                                  tT(e, { ctrl: !0 }))) &&
+                              null != i.selection
                             ) {
-                              let [e, t] = z.ZF.edges(n.selection),
-                                [r, s] = z.VW.node(n, [
-                                  i ? e.path[0] : t.path[0],
+                              let [e, t] = z.ZF.edges(i.selection),
+                                [r, s] = z.VW.node(i, [
+                                  n ? e.path[0] : t.path[0],
                                 ]);
                               if (
-                                (tp()(
-                                  z.VW.isBlock(n, r),
+                                (tA()(
+                                  z.VW.isBlock(i, r),
                                   "Top-most node of selection is not a block",
                                 ),
-                                (i && !z.Kh.isAtStart(e, [r, s])) ||
-                                  (!i && !z.Kh.isAtEnd(t, [r, s])))
+                                (n && !z.Kh.isAtStart(e, [r, s])) ||
+                                  (!n && !z.Kh.isAtEnd(t, [r, s])))
                               )
                                 return (
-                                  i
-                                    ? n.deleteBackward("line")
-                                    : n.deleteForward("line"),
+                                  n
+                                    ? i.deleteBackward("line")
+                                    : i.deleteForward("line"),
                                   !0
                                 );
                             }
                         }
                         return !1;
                       }),
-                      (f = (function (e, t) {
+                      (g = (function (e, t) {
                         let {
                           apply: n,
                           deleteBackward: i,
@@ -70510,7 +70399,7 @@ ${s}`);
                           (e.onChange = () => {
                             let { history: t } = e;
                             0 === t.stack.length &&
-                              ((t.stack = [th(e)]), (t.index = 0)),
+                              ((t.stack = [tm(e)]), (t.index = 0)),
                               null != e.selection &&
                                 (B.o.currentEntry(e).selection = e.selection),
                               (u = null),
@@ -70533,7 +70422,7 @@ ${s}`);
                             let r = z.VW.richValue(e);
                             r !== c &&
                               (0 === i.stack.length &&
-                                ((i.stack = [th(e)]), (i.index = 0)),
+                                ((i.stack = [tm(e)]), (i.index = 0)),
                               B.o.isSaving(e) &&
                                 ((function (e, t, n) {
                                   var i, r;
@@ -70605,7 +70494,7 @@ ${s}`);
                           e
                         );
                       })(
-                        (f = (function (e, t, n) {
+                        (g = (function (e, t, n) {
                           let { onChange: i } = e,
                             r = !1,
                             s = !1;
@@ -70634,7 +70523,7 @@ ${s}`);
                             e
                           );
                         })(
-                          (f = (function (e) {
+                          (g = (function (e) {
                             let { apply: t, onChange: n } = e;
                             return (
                               (e.apply = (n) => {
@@ -70691,11 +70580,11 @@ ${s}`);
                               e
                             );
                           })(
-                            (f = (function (e) {
+                            (g = (function (e) {
                               let { insertBreak: t, insertText: n } = e;
                               return (
                                 (e.insertBreak = () => {
-                                  tE(e) && t();
+                                  th(e) && t();
                                 }),
                                 (e.insertSoftBreak = () => {
                                   e.insertBreak();
@@ -70707,7 +70596,7 @@ ${s}`);
                                   )
                                     return void n(t);
                                   let i = t.split(/\r\n|\r|\n/);
-                                  tE(e)
+                                  th(e)
                                     ? B.o.withSingleEntry(e, () => {
                                         let t = !1;
                                         for (let r of i)
@@ -70720,23 +70609,23 @@ ${s}`);
                                 }),
                                 e
                               );
-                            })((f = n))),
+                            })((g = i))),
                           )),
-                          u,
                           c,
+                          h,
                         )),
                         (e) => {
                           let { newValue: t, newSelection: n } = e;
-                          return h(f, "undo", { value: t, selection: n });
+                          return f(g, "undo", { value: t, selection: n });
                         },
                       ));
-                  })({ ...e, editor: i, windowContext: t, previewMarkdown: n }),
-                  i
+                  })({ ...e, editor: r, windowContext: t, previewMarkdown: i }),
+                  r
                 );
               });
             return (
               r.useEffect(() => {
-                let e = () => i.onChange();
+                let e = () => s.onChange();
                 return (
                   m.A.addChangeListener(e),
                   ej.Ay.addChangeListener(e),
@@ -70744,53 +70633,53 @@ ${s}`);
                     m.A.removeChangeListener(e), ej.Ay.removeChangeListener(e);
                   }
                 );
-              }, [i]),
+              }, [s]),
               r.useEffect(() => {
-                i.previewMarkdown !== n &&
-                  ((i.previewMarkdown = n), i.onChange());
-              }, [i, n]),
-              i
+                s.previewMarkdown !== i &&
+                  ((s.previewMarkdown = i), s.onChange());
+              }, [s, i]),
+              s
             );
           })({
-            channel: h,
-            chatInputType: c,
-            canUseCommands: J,
-            canOnlyUseTextCommands: ee,
+            channel: f,
+            chatInputType: h,
+            canUseCommands: ee,
+            canOnlyUseTextCommands: et,
             onChangeStart: r.useCallback(() => {
-              em.current = !1;
+              ef.current = !1;
             }, []),
             onChangeEnd: r.useCallback(() => {
-              em.current = !0;
+              ef.current = !0;
             }, []),
-            updateState: eA,
+            updateState: eI,
           }),
-          eT = r.useCallback(
+          eS = r.useCallback(
             (e, t) => {
-              let n = F.SQ(eI, e, h.id),
-                i = F.cd(e, h.guild_id, h.id, n, t);
+              let n = F.SQ(eT, e, f.id),
+                i = F.cd(e, f.guild_id, f.id, n, t);
               return { values: n, results: i };
             },
-            [h.guild_id, h.id, eI],
+            [f.guild_id, f.id, eT],
           ),
-          eS = r.useCallback(() => {
+          eN = r.useCallback(() => {
             let e,
-              t = z.VW.getNodesOfType(eI, ["timestampMentionInput"]),
+              t = z.VW.getNodesOfType(eT, ["timestampMentionInput"]),
               n = null != t ? [...t] : null,
-              i = J ? m.A.getActiveCommand(h.id) : null,
+              i = ee ? m.A.getActiveCommand(f.id) : null,
               r = !1;
             if (null != i && null != i.options) {
-              let t = eT(i, !1);
+              let t = eS(i, !1);
               e = t.values;
-              let n = F.O7(eI)
+              let n = F.O7(eT)
                 .filter((e) => !t.results[e].success)
                 .map((e) => (i.options ?? []).find((t) => t.name === e));
               for (let e of i.options)
                 !e.required ||
                   e.name in t.values ||
-                  (K.b.insertCommandOption(eI, e), n.push(e));
+                  (K.b.insertCommandOption(eT, e), n.push(e));
               if (n.length > 0) {
                 let e = n[0];
-                K.b.selectCommandOption(eI, e.name),
+                K.b.selectCommandOption(eT, e.name),
                   (r = !0),
                   (0, G.zV)(k.HAw.APPLICATION_COMMAND_VALIDATION_FAILED, {
                     application_id: i?.applicationId,
@@ -70802,47 +70691,47 @@ ${s}`);
             }
             if (null != n)
               for (let [e, t] of n)
-                K.b.setNodes(eI, { error: !0 }, { at: t }),
-                  r || K.b.select(eI, z.VW.end(eI, t)),
+                K.b.setNodes(eT, { error: !0 }, { at: t }),
+                  r || K.b.select(eT, z.VW.end(eT, t)),
                   (r = !0);
             if (r) {
               V._.dispatch(k.jej.SHAKE_APP, { duration: 200, intensity: 2 }),
-                $?.();
+                q?.();
               return;
             }
-            Y?.(
-              (0, ex.WO)(z.VW.richValue(eI), {
+            $?.(
+              (0, ex.WO)(z.VW.richValue(eT), {
                 mode: "raw",
                 ignoreTrailingEmptyNodes: !0,
               }),
               i,
               e,
             );
-          }, [h.id, eI, Y, $, eT, J]);
+          }, [f.id, eT, $, q, eS, ee]);
         r.useImperativeHandle(
           t,
           () => ({
-            getSlateEditor: () => eI,
+            getSlateEditor: () => eT,
             submit(e) {
-              e?.preventDefault(), eS();
+              e?.preventDefault(), eN();
             },
             focus() {
-              z.VW.focus(eI);
+              z.VW.focus(eT);
             },
             blur() {
-              H.rL.blur(eI);
+              H.rL.blur(eT);
             },
             getCurrentWord() {
-              let e = eI.selection;
+              let e = eT.selection;
               if (
                 null == e ||
-                !z.Ot.isValid(eI, e) ||
+                !z.Ot.isValid(eT, e) ||
                 z.ZF.isExpanded(e) ||
-                td(eI)
+                t_(eT)
               )
                 return { word: null, isAtStart: !1 };
-              let [t, n] = z.VW.node(eI, z.PW.parent(e.anchor.path)),
-                [i, r] = z.VW.node(eI, e.anchor.path),
+              let [t, n] = z.VW.node(eT, z.PW.parent(e.anchor.path)),
+                [i, r] = z.VW.node(eT, e.anchor.path),
                 s = e.anchor.offset;
               if (!z.PW.hasPrevious(r) && z.l5.isText(i)) {
                 let e = i.text.substring(0, s);
@@ -70860,7 +70749,7 @@ ${s}`);
                     o = !0;
                     break;
                   }
-                  [i, r] = z.VW.node(eI, z.PW.previous(r));
+                  [i, r] = z.VW.node(eT, z.PW.previous(r));
                 }
                 if (!z.l5.isText(i)) break;
                 let e = i.text[s];
@@ -70869,7 +70758,7 @@ ${s}`);
               }
               let l = a,
                 d = e.anchor.offset,
-                [_] = z.VW.node(eI, e.anchor.path);
+                [_] = z.VW.node(eT, e.anchor.path);
               for (; z.l5.isText(_) && !(d >= _.text.length); ) {
                 let e = _.text[d];
                 if (eQ.ug.test(e)) break;
@@ -70881,21 +70770,21 @@ ${s}`);
                 isAtStart: o && z.PW.isFirstEditorBlock(n),
               };
             },
-            getFirstText: () => z.VW.getFirstText(eI)?.text ?? "",
+            getFirstText: () => z.VW.getFirstText(eT)?.text ?? "",
             getCurrentCommandOption() {
-              let e = F.M3(eI);
+              let e = F.M3(eT);
               return null == e ? null : e[0].optionName;
             },
             getCurrentCommandOptionValue() {
-              let e = F.M3(eI);
+              let e = F.M3(eT);
               if (null == e) return [];
-              let t = m.A.getActiveCommand(h.id),
+              let t = m.A.getActiveCommand(f.id),
                 n = t?.options?.find((t) => t.name === e[0].optionName);
-              return null == n ? [] : F.FV(eI, n, e[0], h.id);
+              return null == n ? [] : F.FV(eT, n, e[0], f.id);
             },
             getCommandOptionValues() {
-              let e = m.A.getActiveCommand(h.id);
-              return null == e ? {} : F.SQ(eI, e, h.id);
+              let e = m.A.getActiveCommand(f.id);
+              return null == e ? {} : F.SQ(eT, e, f.id);
             },
             insertText(e) {
               let t =
@@ -70906,23 +70795,23 @@ ${s}`);
                   arguments.length > 2 &&
                   void 0 !== arguments[2] &&
                   arguments[2];
-              B.o.withSingleEntry(eI, () => {
-                let i = F.M3(eI),
-                  r = null != i && tx(h, i[0]);
+              B.o.withSingleEntry(eT, () => {
+                let i = F.M3(eT),
+                  r = null != i && tG(f, i[0]);
                 if (
                   (null != t &&
                     r &&
-                    (K.b.removeInlineChildren(eI, i), (n = !1)),
-                  tG(eI, e, t, n),
+                    (K.b.removeInlineChildren(eT, i), (n = !1)),
+                  tV(eT, e, t, n),
                   null != t && r)
                 ) {
-                  let e = F.n$(eI);
-                  if (((i = z.cv.updateElement(eI, i)), null != e)) {
-                    let t = z.cv.markdown(e[0], h.guild_id);
-                    tw(eI, i, h.id, t) && (i = z.cv.updateElement(eI, i));
+                  let e = F.n$(eT);
+                  if (((i = z.cv.updateElement(eT, i)), null != e)) {
+                    let t = z.cv.markdown(e[0], f.guild_id);
+                    tP(eT, i, f.id, t) && (i = z.cv.updateElement(eT, i));
                   }
-                  F.ke(eI, h.guild_id, h.id, z.cv.updateElement(eI, i), !1),
-                    K.b.selectNextCommandOption(eI);
+                  F.ke(eT, f.guild_id, f.id, z.cv.updateElement(eT, i), !1),
+                    K.b.selectNextCommandOption(eT);
                 }
               });
             },
@@ -70935,15 +70824,15 @@ ${s}`);
                   arguments.length > 2 && void 0 !== arguments[2]
                     ? arguments[2]
                     : {};
-              B.o.withSingleEntry(eI, () => {
-                let r = F.M3(eI),
-                  s = null != r && tx(h, r[0]);
-                if (s) K.b.removeInlineChildren(eI, r), (n = !1);
+              B.o.withSingleEntry(eT, () => {
+                let r = F.M3(eT),
+                  s = null != r && tG(f, r[0]);
+                if (s) K.b.removeInlineChildren(eT, r), (n = !1);
                 else {
                   let { word: e, fullWord: t } = this.getCurrentWord();
                   null != e &&
                     e.length > 0 &&
-                    K.b.delete(eI, {
+                    K.b.delete(eT, {
                       distance: e.length,
                       unit: "character",
                       reverse: !0,
@@ -70952,45 +70841,45 @@ ${s}`);
                       null != e &&
                       null != t &&
                       t.length - e.length > 0 &&
-                      K.b.delete(eI, {
+                      K.b.delete(eT, {
                         distance: t.length - e.length,
                         unit: "character",
                       });
                 }
-                tG(eI, e, t, n), s && K.b.selectNextCommandOption(eI);
+                tV(eT, e, t, n), s && K.b.selectNextCommandOption(eT);
               });
             },
             insertInlineAutocompleteInput(e) {
-              B.o.withSingleEntry(eI, () => {
+              B.o.withSingleEntry(eT, () => {
                 let { word: t } = this.getCurrentWord();
                 null != t &&
                   t.length > 0 &&
-                  K.b.delete(eI, {
+                  K.b.delete(eT, {
                     distance: t.length,
                     unit: "character",
                     reverse: !0,
                   }),
-                  K.b.insertNodes(eI, [{ type: e, children: [{ text: "" }] }]);
+                  K.b.insertNodes(eT, [{ type: e, children: [{ text: "" }] }]);
               });
             },
             replaceInlineAutocompleteInput(e, t, n) {
-              B.o.withSingleEntry(eI, () => {
-                let i = z.VW.getSelectedParentOfType(eI, [e]);
-                tp()(
+              B.o.withSingleEntry(eT, () => {
+                let i = z.VW.getSelectedParentOfType(eT, [e]);
+                tA()(
                   null != i,
                   `Cannot replace inline input of type ${e} when none is selected`,
                 ),
-                  K.b.removeNodes(eI, { at: i[1] }),
-                  tG(eI, t, n, !0);
+                  K.b.removeNodes(eT, { at: i[1] }),
+                  tV(eT, t, n, !0);
               });
             },
             insertEmoji(e) {
               let { emoji: t, addSpace: n = !1 } = e;
-              B.o.withSingleEntry(eI, () => {
+              B.o.withSingleEntry(eT, () => {
                 let e = t.animated ? "a" : "",
                   i = t.originalName ?? t.name ?? "";
-                tG(
-                  eI,
+                tV(
+                  eT,
                   `:${t.name}:`,
                   null != t.id ? `<${e}:${i.replace(/:/g, "")}:${t.id}>` : null,
                   n,
@@ -70998,42 +70887,42 @@ ${s}`);
               });
             },
           }),
-          [eI, h, eS],
+          [eT, f, eN],
         ),
-          (n = r.useRef(null)),
           (s = r.useRef(null)),
           (o = r.useRef(null)),
+          (l = r.useRef(null)),
           r.useLayoutEffect(() => {
-            (s.current = tB(eI)),
-              null == s.current &&
-                null == o.current &&
-                (o.current = setTimeout(() => {
-                  s.current = tB(eI);
+            (o.current = tH(eT)),
+              null == o.current &&
+                null == l.current &&
+                (l.current = setTimeout(() => {
+                  o.current = tH(eT);
                 }, 100));
-          }, [eI]),
+          }, [eT]),
           r.useEffect(() => {
-            let e = o.current;
+            let e = l.current;
             return () => {
               null != e && clearTimeout(e);
             };
           }, []),
-          (l = r.useCallback(() => {
-            let e = s.current;
+          (d = r.useCallback(() => {
+            let e = o.current;
             if (null == e) return;
             let t = e.offsetHeight;
-            n.current !== t &&
-              (null != eE.current && (eE.current.style.height = `${t}px`),
-              (n.current = t),
-              D?.(t));
-          }, [eE, D])),
-          (0, tV.g)(s, l, [l, eI, D], tF),
+            s.current !== t &&
+              (null != eh.current && (eh.current.style.height = `${t}px`),
+              (s.current = t),
+              L?.(t));
+          }, [eh, L])),
+          (0, tF.g)(o, d, [d, eT, L], tB),
           r.useLayoutEffect(() => {
-            let e = H.rL.findDocumentOrShadowRoot(eI).defaultView;
+            let e = H.rL.findDocumentOrShadowRoot(eT).defaultView;
             if (e?.ResizeObserver == null) return;
-            let t = tB(eI);
-            null != t && ((n.current = t.offsetHeight), D?.(n.current));
-          }, [eE, eI, D]);
-        let { handleKeyDown: eN, handleKeyUp: eC } = (function (e) {
+            let t = tH(eT);
+            null != t && ((s.current = t.offsetHeight), L?.(s.current));
+          }, [eh, eT, L]);
+        let { handleKeyDown: eC, handleKeyUp: eR } = (function (e) {
             let {
               editor: t,
               channel: n,
@@ -71058,18 +70947,18 @@ ${s}`);
                       if (c(1)) return void e.preventDefault();
                       break;
                     case k.Ks6.P:
-                      if (tI(e, { ctrl: !0 }) && c(-1))
+                      if (tT(e, { ctrl: !0 }) && c(-1))
                         return void e.preventDefault();
                       break;
                     case k.Ks6.N:
-                      if (tI(e, { ctrl: !0 }) && c(1))
+                      if (tT(e, { ctrl: !0 }) && c(1))
                         return void e.preventDefault();
                       break;
                     case k.Ks6.ESCAPE:
                       u?.();
                       break;
                     case k.Ks6.TAB:
-                      if (tI(e, {}) && o?.()) {
+                      if (tT(e, {}) && o?.()) {
                         e.preventDefault(), e.stopPropagation();
                         return;
                       }
@@ -71083,7 +70972,7 @@ ${s}`);
                       }
                       break;
                     case k.Ks6.ENTER:
-                      if (tI(e, {}) && l?.(e)) {
+                      if (tT(e, {}) && l?.(e)) {
                         e.preventDefault(), e.stopPropagation();
                         return;
                       }
@@ -71093,7 +70982,7 @@ ${s}`);
                     return;
                   }
                   e.key !== M.dh.ENTER ||
-                    ((e.altKey || e.shiftKey || (i && !e.ctrlKey) || td(t)) &&
+                    ((e.altKey || e.shiftKey || (i && !e.ctrlKey) || t_(t)) &&
                       d) ||
                     (e.preventDefault(), e.stopPropagation(), _()),
                     s?.(e);
@@ -71108,65 +70997,65 @@ ${s}`);
               ),
             };
           })({
-            editor: eI,
-            channel: h,
-            disableEnterToSubmit: en,
-            onKeyDown: P,
-            onKeyUp: U,
-            onTab: x,
-            onEnter: W,
-            allowNewLines: ei,
-            submit: eS,
-            hideAutocomplete: X,
-            moveSelection: Z,
+            editor: eT,
+            channel: f,
+            disableEnterToSubmit: ei,
+            onKeyDown: U,
+            onKeyUp: x,
+            onTab: W,
+            onEnter: Y,
+            allowNewLines: er,
+            submit: eN,
+            hideAutocomplete: Z,
+            moveSelection: Q,
           }),
-          { handlePaste: eR, handleGlobalPaste: eO } =
-            ((d = r.useCallback(
+          { handlePaste: eO, handleGlobalPaste: ey } =
+            ((_ = r.useCallback(
               (e) => {
-                if (eg) return !0;
+                if (eA) return !0;
                 if (!0 === e.defaultPrevented) return !1;
-                let t = v(e);
+                let t = D(e);
                 return t && (e.preventDefault(), e.stopPropagation()), t;
               },
-              [eg, v],
+              [eA, D],
             )),
-            (_ = r.useCallback(
+            (u = r.useCallback(
               (e) => {
                 let { event: t } = e;
-                d(t) ||
+                _(t) ||
                   (t.preventDefault(),
                   t.stopPropagation(),
                   null != t.clipboardData &&
-                    (eI.insertData(t.clipboardData), z.VW.focus(eI)));
+                    (eT.insertData(t.clipboardData), z.VW.focus(eT)));
               },
-              [eI, d],
+              [eT, _],
             )),
-            { handlePaste: d, handleGlobalPaste: _ }),
-          ey = r.useCallback(
-            (e) => {
-              q?.();
-            },
-            [q],
-          ),
+            { handlePaste: _, handleGlobalPaste: u }),
           ev = r.useCallback(
             (e) => {
-              e !== eh.current
-                ? ef.current && y?.(null, (0, ex.WO)(e, { mode: "raw" }), e)
-                : ef.current && q();
+              X?.();
             },
-            [q, y],
+            [X],
+          ),
+          eD = r.useCallback(
+            (e) => {
+              e !== em.current
+                ? eg.current && v?.(null, (0, ex.WO)(e, { mode: "raw" }), e)
+                : eg.current && X();
+            },
+            [X, v],
           );
         r.useLayoutEffect(() => {
-          em.current && ((eh.current = u), eA(eI, "parent", { value: u }));
-        }, [eI, u, eA]),
+          ef.current && ((em.current = c), eI(eT, "parent", { value: c }));
+        }, [eT, c, eI]),
           r.useEffect(() => {
             let e = () => {
-              let e = m.A.getActiveCommand(h.id) ?? null;
-              null !== e && null != e.options && eT(e, !0);
+              let e = m.A.getActiveCommand(f.id) ?? null;
+              null !== e && null != e.options && eS(e, !0);
             };
             return g.A.addChangeListener(e), () => g.A.removeChangeListener(e);
-          }, [h, eI, eT]);
-        let eD = r.useCallback(
+          }, [f, eT, eS]);
+        let eb = r.useCallback(
             (e) => [
               ...(function (e, t, n) {
                 if (z.VW.areStylesDisabled(e)) return [];
@@ -71207,7 +71096,7 @@ ${s}`);
                   }
                 }
                 return o;
-              })(eI, e, h.guild_id),
+              })(eT, e, f.guild_id),
               ...(function (e, t) {
                 if (z.VW.areStylesDisabled(e)) return [];
                 let [n, i] = t,
@@ -71228,7 +71117,7 @@ ${s}`);
                   });
                 }
                 return r;
-              })(eI, e),
+              })(eT, e),
               ...(function (e, t) {
                 if (z.VW.areStylesDisabled(e)) return [];
                 let [n, i] = t,
@@ -71248,11 +71137,11 @@ ${s}`);
                     }),
                   r
                 );
-              })(eI, e),
+              })(eT, e),
             ],
-            [eI, h],
+            [eT, f],
           ),
-          eb = r.useCallback(
+          ew = r.useCallback(
             (e) => {
               let t = (function (e, t, n) {
                 let { attributes: r, children: s, element: a } = t;
@@ -71286,7 +71175,7 @@ ${s}`);
                       children: s,
                     });
                   case "applicationCommandOption":
-                    return (0, i.jsx)(tj, {
+                    return (0, i.jsx)(tW, {
                       attributes: r,
                       channelId: n,
                       element: a,
@@ -71295,13 +71184,13 @@ ${s}`);
                   default:
                     return null;
                 }
-              })(eI, e, h.id);
+              })(eT, e, f.id);
               return (
                 null == t &&
                   (t = (function (e) {
                     let { attributes: t, children: n, element: r } = e;
                     return "timestampMentionInput" === r.type
-                      ? (0, i.jsx)(tW, {
+                      ? (0, i.jsx)(tY, {
                           attributes: t,
                           element: r,
                           children: n,
@@ -71311,9 +71200,9 @@ ${s}`);
                 t
               );
             },
-            [h.id, eI],
+            [f.id, eT],
           ),
-          ew = r.useCallback(
+          eP = r.useCallback(
             (e) =>
               (function (e) {
                 let { attributes: t, children: n, leaf: r, text: s } = e;
@@ -71334,54 +71223,54 @@ ${s}`);
           children: [
             (0, i.jsx)(p.EG, {
               event: k.jej.GLOBAL_CLIPBOARD_PASTE,
-              handler: eO,
+              handler: ey,
             }),
             (0, i.jsx)("div", {
-              ref: eE,
-              className: a()(f, tY.pC),
+              ref: eh,
+              className: a()(A, tK.pC),
               children: (0, i.jsx)(eU, {
-                id: A,
-                editor: eI,
-                channelId: h.id,
-                guildId: h.guild_id,
-                className: a()(tY.gf, O),
-                placeholder: C,
-                readOnly: eg,
-                spellCheck: Q,
-                autoFocus: !et,
-                canFocus: !I,
-                onChange: ev,
-                onFocus: L,
-                onBlur: w,
-                onClick: ey,
-                onPaste: eR,
-                onKeyDown: eN,
-                onKeyUp: eC,
-                decorate: eD,
-                renderExtraElement: eb,
-                renderExtraLeaf: ew,
-                "aria-owns": er,
-                "aria-haspopup": ea,
-                "aria-expanded": es,
-                "aria-activedescendant": eo,
-                "aria-controls": el,
-                "aria-labelledby": eu,
-                "aria-describedby": e_,
-                "aria-invalid": ed,
-                "aria-autocomplete": ec,
-                "aria-required": R,
+                id: I,
+                editor: eT,
+                channelId: f.id,
+                guildId: f.guild_id,
+                className: a()(tK.gf, y),
+                placeholder: R,
+                readOnly: eA,
+                spellCheck: J,
+                autoFocus: !en,
+                canFocus: !N,
+                onChange: eD,
+                onFocus: w,
+                onBlur: P,
+                onClick: ev,
+                onPaste: eO,
+                onKeyDown: eC,
+                onKeyUp: eR,
+                decorate: eb,
+                renderExtraElement: ew,
+                renderExtraLeaf: eP,
+                "aria-owns": es,
+                "aria-haspopup": eo,
+                "aria-expanded": ea,
+                "aria-activedescendant": el,
+                "aria-controls": ed,
+                "aria-labelledby": ec,
+                "aria-describedby": eu,
+                "aria-invalid": e_,
+                "aria-autocomplete": eE,
+                "aria-required": O,
               }),
             }),
           ],
         });
       });
-      var tz = n(266599);
+      var t$ = n(266599);
       new f.A("ChannelEditor.tsx");
-      let t$ = function () {
+      let tq = function () {
         for (var e = arguments.length, t = Array(e), n = 0; n < e; n++)
           t[n] = arguments[n];
       };
-      class tq extends r.Component {
+      class tX extends r.Component {
         ref = r.createRef();
         _focusBlurQueue = Promise.resolve();
         _unsubscribe;
@@ -71616,7 +71505,7 @@ ${s}`);
             { submitting: D, popup: L } = this.state,
             b = {
               channel: u,
-              className: a()(g, tz.Tg, { [tz.w5]: E, [tz.Rr]: n || D }),
+              className: a()(g, t$.Tg, { [t$.w5]: E, [t$.Rr]: n || D }),
               id: A,
               placeholder: this.getPlaceholder(),
               required: I,
@@ -71638,10 +71527,10 @@ ${s}`);
               onKeyDown: s,
               onSubmit: l,
               textAreaPaddingClassName: a()({
-                [tz.H$]: c === T.oU.CREATE_FORUM_POST,
-                [tz.g_]: c === T.oU.CUSTOM_GIFT,
-                [tz.Yg]: c === T.oU.USER_PROFILE,
-                [tz.$$]: c === T.oU.OVERLAY_INLINE_REPLY,
+                [t$.H$]: c === T.oU.CREATE_FORUM_POST,
+                [t$.g_]: c === T.oU.CUSTOM_GIFT,
+                [t$.Yg]: c === T.oU.USER_PROFILE,
+                [t$.$$]: c === T.oU.OVERLAY_INLINE_REPLY,
               }),
               spellcheckEnabled: h,
               useNewSlashCommands: m,
@@ -71657,7 +71546,7 @@ ${s}`);
               "aria-autocomplete": "list",
             },
             w = E
-              ? (0, i.jsx)(tK, {
+              ? (0, i.jsx)(tz, {
                   ref: this.ref,
                   ...b,
                   type: c,
@@ -71790,7 +71679,7 @@ ${s}`);
             }
             return { files: [], errors: a };
           })(e.clipboardData, l.uploadLongMessages ? (s ?? o) : null);
-          return (t$(
+          return (tq(
             "onPaste",
             [...e.clipboardData.items].map((e) => {
               if ("file" !== e.kind) return { kind: e.kind, type: e.type };
@@ -76963,15 +76852,15 @@ ${s}`);
     820066(e, t, n) {
       "use strict";
       n.d(t, {
-        AS: () => W,
-        Ot: () => X,
-        cv: () => Y,
-        PW: () => z,
-        l5: () => K,
-        e0: () => ee,
-        ZF: () => q,
-        VW: () => j,
-        Kh: () => $,
+        AS: () => j,
+        Ot: () => q,
+        cv: () => W,
+        PW: () => K,
+        l5: () => Y,
+        e0: () => J,
+        ZF: () => $,
+        VW: () => H,
+        Kh: () => z,
       }),
         n(134528),
         n(947204);
@@ -76989,11 +76878,10 @@ ${s}`);
         E = n(29814),
         h = n(704726),
         m = n(551965),
-        f = n(927813),
-        g = n(981776);
-      let p = /^[a-z0-9_+\-.#]+$/i,
-        A = new u.A("MarkdownToSlate"),
-        I = {
+        f = n(927813);
+      let g = /^[a-z0-9_+\-.#]+$/i,
+        p = new u.A("MarkdownToSlate"),
+        A = {
           link: { type: "skip" },
           highlight: { type: "skip" },
           blockQuote: { type: "skip" },
@@ -77036,21 +76924,21 @@ ${s}`);
           inlineCode: { type: "inlineStyle", before: "`", after: "`" },
           subtext: { type: "inlineStyle", before: "-# ", after: "" },
         },
-        T = new Set(["*", "_", "\\"]),
-        S = {},
-        N = {};
+        I = new Set(["*", "_", "\\"]),
+        T = {},
+        S = {};
       for (let e in E.A.RULES) {
-        if (!(e in I))
+        if (!(e in A))
           throw Error(
             `Slate: Unknown markdown rule: ${e}.  If you have just added a new markdown rule then you probably need to add it to this file so that the rich chat box understands it.`,
           );
-        let t = I[e];
-        "skip" !== t.type && (S[e] = C(E.A.RULES[e])),
+        let t = A[e];
+        "skip" !== t.type && (T[e] = N(E.A.RULES[e])),
           "skip" !== t.type &&
             "inlineObject" !== t.type &&
-            (N[e] = C("text" === e ? h.Ay : E.A.RULES[e]));
+            (S[e] = N("text" === e ? h.Ay : E.A.RULES[e]));
       }
-      function C(e) {
+      function N(e) {
         r()(null != e.parse, "Slate: rule must have a parse function");
         let t = e.parse;
         return {
@@ -77061,10 +76949,10 @@ ${s}`);
           },
         };
       }
-      function R(e) {
+      function C(e) {
         return { type: "autolink", content: e[1], originalMatch: e };
       }
-      let O = {
+      let R = {
           url: {
             parse: (e) =>
               null == (0, c.W1)(e[1])
@@ -77075,15 +76963,15 @@ ${s}`);
             parse: (e) =>
               null == (0, c.W1)(e[1])
                 ? { type: "text", content: e[0], originalMatch: e }
-                : R(e),
+                : C(e),
           },
-          mailto: { parse: R },
-          tel: { parse: R },
+          mailto: { parse: C },
+          tel: { parse: C },
           codeBlockSyntax: {
             order: d.defaultRules.inlineCode.order - 0.1,
             match: (e) => /^(```)([a-z0-9_+\-.#]+$)?/.exec(e),
             parse: (e) =>
-              null != e[2] && "" !== e[2] && g.default.isKnownLanguage(e[2])
+              null != e[2] && "" !== e[2] && g.test(e[2])
                 ? [
                     {
                       type: "codeBlockSyntax",
@@ -77095,15 +76983,15 @@ ${s}`);
                 : { type: "codeBlockSyntax", content: e[0], originalMatch: e },
           },
         },
-        y = /(-# +)/,
-        v = (0, m.A)([S, O]),
-        D = (0, m.A)([N, O]),
+        O = /(-# +)/,
+        y = (0, m.A)([T, R]),
+        v = (0, m.A)([S, R]),
+        D = _.X(y),
         L = _.X(v),
-        b = _.X(D),
-        w = { max: 1 / 0, maxAge: +f.A.Millis.MINUTE, updateAgeOnGet: !0 },
-        P = new (l())(w),
-        k = new (l())(w);
-      function M(e, t, n, i, s) {
+        b = { max: 1 / 0, maxAge: +f.A.Millis.MINUTE, updateAgeOnGet: !0 },
+        w = new (l())(b),
+        P = new (l())(b);
+      function k(e, t, n, i, s) {
         let { content: a, type: o, originalMatch: l } = n;
         switch (
           (r()(
@@ -77117,16 +77005,16 @@ ${s}`);
           case "paragraph":
           case "text":
           case "emoticon":
-            return U(e, t, a || "", i, s);
+            return M(e, t, a || "", i, s);
           case "emoji":
           case "customEmoji": {
             let r = t.substring(i);
             if (
               (r.startsWith(l[0]) ||
-                ((i = B(e, t, i, t.length)), (r = t.substring(i))),
+                ((i = F(e, t, i, t.length)), (r = t.substring(i))),
               r.startsWith(l[0]))
             )
-              return G({
+              return x({
                 result: e,
                 sourceText: t,
                 text: l[0],
@@ -77137,7 +77025,7 @@ ${s}`);
             throw Error(`Slate: Unable to find emoji: ${l[0]} in ${t} at ${i}`);
           }
           case "soundboard":
-            return G({
+            return x({
               result: e,
               sourceText: t,
               text: l[0],
@@ -77158,7 +77046,7 @@ ${s}`);
                   s === l[0],
                   "Slate: text mentions must exactly match the regex match",
                 ),
-                G({
+                x({
                   result: e,
                   sourceText: t,
                   text: s,
@@ -77167,7 +77055,7 @@ ${s}`);
                   data: { text: s },
                 })
               );
-            return G({
+            return x({
               result: e,
               sourceText: t,
               text: l[0],
@@ -77178,7 +77066,7 @@ ${s}`);
           }
           case "staticRouteLink":
             let { id: d, itemId: _ } = n;
-            return G({
+            return x({
               result: e,
               sourceText: t,
               text: l[0],
@@ -77188,7 +77076,7 @@ ${s}`);
             });
           case "timestamp":
           case "timestampMentionInput":
-            return G({
+            return x({
               result: e,
               sourceText: t,
               text: l[0],
@@ -77211,34 +77099,34 @@ ${s}`);
           case "url":
           case "link":
           case "subtext": {
-            i = V(t, i);
+            i = G(t, i);
             let { before: n, after: r } = (function (e, t, n, i) {
               if ("inlineCode" === t) return { before: i[1], after: i[1] };
               if ("em" === t && "_" === e.substring(n, n + 1))
                 return { before: "_", after: "_" };
               if ("subtext" === t)
-                return { before: y.exec(i.input)[1], after: "" };
-              let r = I["link" === t ? "url" : t];
+                return { before: O.exec(i.input)[1], after: "" };
+              let r = A["link" === t ? "url" : t];
               if ("inlineStyle" === r.type) return r;
               throw Error("Slate: rule must be an inlineStyle");
             })(t, o, i, l);
             return (
-              (i = x(e, t, n, i, "syntaxBefore")),
+              (i = U(e, t, n, i, "syntaxBefore")),
               s.push(o),
-              (i = U(e, t, a ?? "", i, s)),
+              (i = M(e, t, a ?? "", i, s)),
               s.pop(),
-              (i = x(e, t, r, i, "syntaxAfter")),
-              V(t, i)
+              (i = U(e, t, r, i, "syntaxAfter")),
+              G(t, i)
             );
           }
           default:
             throw Error(`Slate: Unknown rule type: ${o}`);
         }
       }
-      function U(e, t, n, i, r) {
+      function M(e, t, n, i, r) {
         return (
           "string" == typeof n
-            ? (i = G({
+            ? (i = x({
                 result: e,
                 sourceText: t,
                 text: n,
@@ -77248,16 +77136,16 @@ ${s}`);
               }))
             : (n instanceof Array || (n = [n]),
               n.forEach((n) => {
-                i = M(e, t, n, i, r);
+                i = k(e, t, n, i, r);
               })),
-          V(t, i)
+          G(t, i)
         );
       }
-      function x(e, t, n, i, r) {
+      function U(e, t, n, i, r) {
         if (n.length > 0) {
           let s = t.indexOf(n, i);
           if (-1 === s)
-            return F(
+            return V(
               `Slate: Unable to find syntax characters "${n}" at position ${i}`,
               n,
               i,
@@ -77268,7 +77156,7 @@ ${s}`);
         }
         return i;
       }
-      function G(e) {
+      function x(e) {
         let {
             result: t,
             sourceText: n,
@@ -77277,17 +77165,17 @@ ${s}`);
             attributes: s,
             data: a,
           } = e,
-          o = V(n, r);
+          o = G(n, r);
         for (; "\n" === i.charAt(0) || " " === i.charAt(0); )
           i = i.substring(1);
         let l = n.indexOf(i, o);
         if (
           (l !== o
-            ? (o = r = B(t, n, o, l))
+            ? (o = r = F(t, n, o, l))
             : "\\" === i && "\\" === n.charAt(l + 1) && (l++, (r = ++o)),
           l !== o)
         )
-          return F(
+          return V(
             `Slate: Unable to find content in source text at start position ${o} for text position ${l}`,
             i,
             r,
@@ -77296,22 +77184,22 @@ ${s}`);
           _ = n.substring(r, d);
         return t.push({ text: _, attributes: s.slice(), start: r, data: a }), d;
       }
-      function V(e, t) {
+      function G(e, t) {
         for (; "\n" === e.charAt(t) || " " === e.charAt(t); ) t++;
         return t;
       }
-      function F(e, t, n) {
-        if (t.split("").some((e) => T.has(e))) return A.error(e), n;
+      function V(e, t, n) {
+        if (t.split("").some((e) => I.has(e))) return p.error(e), n;
         throw Error(e);
       }
-      function B(e, t, n, i) {
+      function F(e, t, n, i) {
         for (; n < i; )
-          if (T.has(t[n]))
-            (n = x(e, t, t[n], n, "syntaxBefore")), (n = V(t, n));
+          if (I.has(t[n]))
+            (n = U(e, t, t[n], n, "syntaxBefore")), (n = G(t, n));
           else break;
         return n;
       }
-      var H = n(551483);
+      var B = n(551483);
       if ((n(654821), !s.KE._addedDiscordOverrides)) {
         let e = s.KE.positions;
         s.KE.positions = function* (t) {
@@ -77332,13 +77220,13 @@ ${s}`);
             for (let n of e(t, r)) yield n;
             return;
           }
-          n = $.isPoint(a)
+          n = z.isPoint(a)
             ? l
-              ? { anchor: a, focus: j.start(t, []) }
-              : { anchor: a, focus: j.end(t, []) }
-            : j.range(t, a);
-          let [_, u] = q.edges(n),
-            c = j.blocks(t),
+              ? { anchor: a, focus: H.start(t, []) }
+              : { anchor: a, focus: H.end(t, []) }
+            : H.range(t, a);
+          let [_, u] = $.edges(n),
+            c = H.blocks(t),
             E = l ? -1 : 1,
             h = _.path[0] ?? 0,
             m = u.path[0] ?? c.length - 1,
@@ -77350,40 +77238,40 @@ ${s}`);
             for (let a of (function* n(a) {
               let [c, h] = a,
                 m = h.length,
-                f = z.isAncestor(h, _.path),
-                g = z.isAncestor(h, u.path),
+                f = K.isAncestor(h, _.path),
+                g = K.isAncestor(h, u.path),
                 A = f ? _.path[m] : 0,
                 I = g ? u.path[m] : c.children.length - 1,
                 T = l ? I : A,
                 S = l ? A : I;
               for (let a = T; !p && (!l ? a <= S : a >= S); a += E) {
                 let E = c.children[a],
-                  m = z.child(h, a);
-                if (Y.isElement(E)) {
+                  m = K.child(h, a);
+                if (W.isElement(E)) {
                   let e = l ? u.path : _.path;
-                  if (!(z.equals(m, e) || z.isAncestor(m, e))) {
+                  if (!(K.equals(m, e) || K.isAncestor(m, e))) {
                     let e = t.isVoid(E);
-                    if ("line" === o && Y.isElement(E) && !e) {
+                    if ("line" === o && W.isElement(E) && !e) {
                       null != i && (yield i, (i = void 0)), (p = !0);
                       return;
                     }
                     if (!d && e) continue;
                   }
                   for (let e of n([E, m])) yield e;
-                } else if (K.isText(E))
+                } else if (Y.isText(E))
                   if ("line" === o)
                     i = { path: m, offset: l ? 0 : E.text.length };
                   else if (0 === E.text.length) yield { path: m, offset: 0 };
                   else {
                     let n = s.KE.range(t, m);
-                    for (let i of (z.equals(m, _.path) && (n.anchor = _),
-                    z.equals(m, u.path) && (n.focus = u),
+                    for (let i of (K.equals(m, _.path) && (n.anchor = _),
+                    K.equals(m, u.path) && (n.focus = u),
                     e(t, { ...r, at: n })))
                       yield i;
                   }
               }
               "line" === o &&
-                Y.isElement(c) &&
+                W.isElement(c) &&
                 !t.isVoid(c) &&
                 (null != i && (yield i, (i = void 0)), (p = !0));
             })(c[n]))
@@ -77394,24 +77282,24 @@ ${s}`);
           e.windowContext?.renderWindow.document ?? t(e)),
           (s.KE._addedDiscordOverrides = !0);
       }
-      let j = {
+      let H = {
           ...s.KE,
           ...a.rL,
           richValue: (e) => e.children,
-          blocks: (e) => j.richValue(e).map((e, t) => [e, [t]]),
-          isBlock: (e, t) => Y.isElement(t) && s.KE.isBlock(e, t),
-          isInline: (e, t) => Y.isElement(t) && s.KE.isInline(e, t),
-          isVoid: (e, t) => Y.isElement(t) && s.KE.isVoid(e, t),
+          blocks: (e) => H.richValue(e).map((e, t) => [e, [t]]),
+          isBlock: (e, t) => W.isElement(t) && s.KE.isBlock(e, t),
+          isInline: (e, t) => W.isElement(t) && s.KE.isInline(e, t),
+          isVoid: (e, t) => W.isElement(t) && s.KE.isVoid(e, t),
           isEditorEmpty(e) {
-            let t = j.richValue(e);
+            let t = H.richValue(e);
             return (
               !(t.length > 1) &&
-              (0 === t.length || ("line" === t[0].type && Y.isEmpty(t[0])))
+              (0 === t.length || ("line" === t[0].type && W.isEmpty(t[0])))
             );
           },
           getFirstText(e) {
-            let t = j.node(e, H.fP);
-            return K.isText(t[0]) ? t[0] : null;
+            let t = H.node(e, B.fP);
+            return Y.isText(t[0]) ? t[0] : null;
           },
           getCurrentBlock(e) {
             return null == e.selection
@@ -77434,61 +77322,61 @@ ${s}`);
               : this.getParentVoid(e, e.selection);
           },
           getCurrentText(e) {
-            let t = null != e.selection ? q.toPoint(e.selection) : null;
-            return null == t ? null : j.node(e, t.path);
+            let t = null != e.selection ? $.toPoint(e.selection) : null;
+            return null == t ? null : H.node(e, t.path);
           },
           getParentBlock: (e, t) =>
-            j.above(e, {
+            H.above(e, {
               at: t,
-              match: (t) => Y.isElement(t) && j.isBlock(e, t),
+              match: (t) => W.isElement(t) && H.isBlock(e, t),
               mode: "lowest",
             }) ?? null,
           getParentElement: (e, t) =>
-            j.above(e, {
+            H.above(e, {
               at: t,
-              match: (e) => Y.isElement(e),
+              match: (e) => W.isElement(e),
               mode: "lowest",
             }) ?? null,
           getParentInline: (e, t) =>
-            j.above(e, {
+            H.above(e, {
               at: t,
-              match: (t) => j.isInline(e, t),
+              match: (t) => H.isInline(e, t),
               mode: "lowest",
             }) ?? null,
           getParentVoid: (e, t) =>
-            j.above(e, {
+            H.above(e, {
               at: t,
-              match: (t) => j.isVoid(e, t),
+              match: (t) => H.isVoid(e, t),
               mode: "lowest",
             }) ?? null,
           getParentOfType: (e, t, n) =>
-            j.above(e, {
+            H.above(e, {
               at: t,
-              match: (e) => Y.isElement(e) && n.includes(e.type),
+              match: (e) => W.isElement(e) && n.includes(e.type),
               mode: "lowest",
             }) ?? null,
           getSelectedParentOfType(e, t) {
             if (null == e.selection) return null;
-            let n = q.toPoint(e.selection);
-            return null == n ? null : j.getParentOfType(e, n, t);
+            let n = $.toPoint(e.selection);
+            return null == n ? null : H.getParentOfType(e, n, t);
           },
           getNodesOfType: (e, t) =>
-            j.nodes(e, {
-              at: H.Dl,
-              match: (e) => Y.isElement(e) && t.includes(e.type),
+            H.nodes(e, {
+              at: B.Dl,
+              match: (e) => W.isElement(e) && t.includes(e.type),
               mode: "highest",
             }),
           getSelectedVoid(e) {
             let t;
             if (null == e.selection) return null;
-            if (q.isExpanded(e.selection)) {
-              let [n, i] = q.edges(e.selection),
-                r = j.after(e, n, { unit: "offset" }),
-                s = j.before(e, i, { unit: "offset" });
-              if (null == r || null == s || !$.equals(r, s)) return null;
+            if ($.isExpanded(e.selection)) {
+              let [n, i] = $.edges(e.selection),
+                r = H.after(e, n, { unit: "offset" }),
+                s = H.before(e, i, { unit: "offset" });
+              if (null == r || null == s || !z.equals(r, s)) return null;
               t = r;
             } else t = e.selection.anchor;
-            return null == t ? null : j.getParentVoid(e, t);
+            return null == t ? null : H.getParentVoid(e, t);
           },
           getSelectedText(e, t) {
             let n = null;
@@ -77506,36 +77394,36 @@ ${s}`);
             return null == n ? "" : this.getTextFromRange(e, n);
           },
           getTextFromRange(e, t) {
-            let [n, i] = q.edges(t),
-              r = j.nodes(e, {
+            let [n, i] = $.edges(t),
+              r = H.nodes(e, {
                 at: t,
                 mode: "lowest",
-                match: (e) => K.isText(e),
+                match: (e) => Y.isText(e),
               }),
               s = "";
             for (let [e, t] of r) {
-              let r = z.equals(t, n.path) ? n.offset : 0,
-                a = z.equals(t, i.path) ? i.offset : 0;
+              let r = K.equals(t, n.path) ? n.offset : 0,
+                a = K.equals(t, i.path) ? i.offset : 0;
               s += e.text.substring(r, a);
             }
             return s;
           },
           withoutNormalizing(e, t) {
-            let n = j.isNormalizing(e);
-            j.setNormalizing(e, !1);
+            let n = H.isNormalizing(e);
+            H.setNormalizing(e, !1);
             try {
               t();
             } finally {
-              j.setNormalizing(e, n);
+              H.setNormalizing(e, n);
             }
-            !1 !== n && j.normalize(e);
+            !1 !== n && H.normalize(e);
           },
           areStylesDisabled(e) {
             if (!e.previewMarkdown) return !0;
-            let t = j.richValue(e),
+            let t = H.richValue(e),
               n = t[0],
               i = n?.type === "line" ? n.children[0] : null;
-            if (null == i || !K.isText(i)) return !1;
+            if (null == i || !Y.isText(i)) return !1;
             let r = e.chatInputType,
               s = i.text;
             return (
@@ -77550,47 +77438,47 @@ ${s}`);
           },
           getSelectionOverlap(e, t) {
             if (null == e.selection) return { anchor: null, focus: null };
-            if (z.isPath(t)) {
-              let n = j.range(e, t),
-                [i] = j.node(e, t);
-              if (Y.isElement(i)) {
-                let i = j.before(e, t),
-                  r = j.after(e, t);
+            if (K.isPath(t)) {
+              let n = H.range(e, t),
+                [i] = H.node(e, t);
+              if (W.isElement(i)) {
+                let i = H.before(e, t),
+                  r = H.after(e, t);
                 t = { anchor: i ?? n.anchor, focus: r ?? n.focus };
               } else t = n;
             }
-            let [n, i] = q.edges(t),
+            let [n, i] = $.edges(t),
               r = null,
               s = null;
             return (
-              $.equals(e.selection.anchor, n)
+              z.equals(e.selection.anchor, n)
                 ? (r = "start")
-                : $.equals(e.selection.anchor, i)
+                : z.equals(e.selection.anchor, i)
                   ? (r = "end")
-                  : q.includes(t, e.selection.anchor) && (r = "inside"),
-              $.equals(e.selection.focus, n)
+                  : $.includes(t, e.selection.anchor) && (r = "inside"),
+              z.equals(e.selection.focus, n)
                 ? (s = "start")
-                : $.equals(e.selection.focus, i)
+                : z.equals(e.selection.focus, i)
                   ? (s = "end")
-                  : q.includes(t, e.selection.focus) && (s = "inside"),
+                  : $.includes(t, e.selection.focus) && (s = "inside"),
               { anchor: r, focus: s }
             );
           },
         },
-        W = {
+        j = {
           ...s.bP,
           isType: (e, t) => s.Hg.isElement(e) && e.type === t,
           isInTypes: (e, t) => s.Hg.isElement(e) && t.has(e.type),
         },
-        Y = {
+        W = {
           ...s.Hg,
           updateElement(e, t) {
-            let n = j.node(e, t[1]);
+            let n = H.node(e, t[1]);
             return (
-              r()(!j.isEditor(t[0]), "Element is the root node"),
+              r()(!H.isEditor(t[0]), "Element is the root node"),
               r()(null != n, "Failed to find element"),
               r()(
-                Y.isElement(n[0]),
+                W.isElement(n[0]),
                 "Node at this path is no longer an element",
               ),
               r()(
@@ -77603,7 +77491,7 @@ ${s}`);
           markdown(e, t, n) {
             let i =
                 "line" === e.type && e.codeBlockState?.wasInCodeBlock === !0,
-              r = e.children.map((e) => (K.isText(e) ? e.text : "?"));
+              r = e.children.map((e) => (Y.isText(e) ? e.text : "?"));
             return {
               entries: (function (e, t) {
                 let n =
@@ -77641,12 +77529,12 @@ ${s}`);
                     });
                   else {
                     let a = n === r[r.length - 2] ? e.substring(n + 3) : "";
-                    n += 3 + (null != a.match(p) ? a : "").length;
+                    n += 3 + (null != a.match(g) ? a : "").length;
                     let l = e.substring(s, n);
                     "" !== l &&
                       (function (e, t, n) {
                         let i = [],
-                          r = n ? k : P,
+                          r = n ? P : w,
                           s = r.get(e);
                         if (null != s) return s;
                         let a =
@@ -77657,7 +77545,7 @@ ${s}`);
                           o = {
                             originalMatch: { index: 0, 0: "" },
                             type: "paragraph",
-                            content: (n ? b : L)(a, !0, {
+                            content: (n ? L : D)(a, !0, {
                               returnMentionIds: !0,
                               disableAutoBlockNewlines: !0,
                               guildId: t,
@@ -77665,7 +77553,7 @@ ${s}`);
                               allowTimeMentionInput: !0,
                             }),
                           };
-                        M(i, a, o, 0, []);
+                        k(i, a, o, 0, []);
                         let l = (function (e) {
                           if (
                             0 ===
@@ -77702,101 +77590,101 @@ ${s}`);
             if (e.children.length > 1) return !1;
             if (0 === e.children.length) return !0;
             let t = e.children[0];
-            return K.isText(t) && 0 === t.text.length;
+            return Y.isText(t) && 0 === t.text.length;
           },
         },
-        K = { ...s.EY },
-        z = {
+        Y = { ...s.EY },
+        K = {
           ...s.wA,
-          isFirstEditorBlock: (e) => z.equals(e, H.Xg),
-          isFirstEditorText: (e) => z.equals(e, H.fP),
-          isFirstChild: (e, t) => z.equals(t, z.child(e, 0)),
+          isFirstEditorBlock: (e) => K.equals(e, B.Xg),
+          isFirstEditorText: (e) => K.equals(e, B.fP),
+          isFirstChild: (e, t) => K.equals(t, K.child(e, 0)),
           child: (e, t) => [...e, t],
         },
-        $ = {
+        z = {
           ...s.bR,
           start(e) {
             let [, t] = e;
-            return { path: z.child(t, 0), offset: 0 };
+            return { path: K.child(t, 0), offset: 0 };
           },
           end(e) {
             let [t, n] = e,
               i = t.children[t.children.length - 1];
             return {
-              path: z.child(n, t.children.length - 1),
-              offset: K.isText(i) ? i.text.length : 0,
+              path: K.child(n, t.children.length - 1),
+              offset: Y.isText(i) ? i.text.length : 0,
             };
           },
           isAtStart(e, t) {
-            return $.equals(e, this.start(t));
+            return z.equals(e, this.start(t));
           },
           isAtEnd(e, t) {
-            return $.equals(e, this.end(t));
+            return z.equals(e, this.end(t));
           },
           clamp(e, t) {
-            let [n, i] = q.edges(t);
-            return $.isBefore(e, n) && (e = n), $.isAfter(e, i) && (e = i), e;
+            let [n, i] = $.edges(t);
+            return z.isBefore(e, n) && (e = n), z.isAfter(e, i) && (e = i), e;
           },
         },
-        q = {
+        $ = {
           ...s.Q6,
-          toPoint: (e) => (null == e || q.isExpanded(e) ? null : e.anchor),
+          toPoint: (e) => (null == e || $.isExpanded(e) ? null : e.anchor),
           children(e) {
             let [t, n] = e,
               i = t.children[t.children.length - 1];
             return {
-              anchor: { path: z.child(n, 0), offset: 0 },
+              anchor: { path: K.child(n, 0), offset: 0 },
               focus: {
-                path: z.child(n, t.children.length - 1),
-                offset: K.isText(i) ? i.text.length : 0,
+                path: K.child(n, t.children.length - 1),
+                offset: Y.isText(i) ? i.text.length : 0,
               },
             };
           },
           clamp(e, t) {
-            let [n, i] = q.edges(e),
-              [r, s] = q.edges(t);
-            return ($.isBefore(n, r) && (n = r),
-            $.isAfter(i, s) && (i = s),
-            q.isForward(e))
+            let [n, i] = $.edges(e),
+              [r, s] = $.edges(t);
+            return (z.isBefore(n, r) && (n = r),
+            z.isAfter(i, s) && (i = s),
+            $.isForward(e))
               ? { anchor: n, focus: i }
               : { anchor: i, focus: n };
           },
         },
-        X = {
+        q = {
           equals: (e, t) =>
             (null == e && null == t) ||
-            (null != e && null != t && q.equals(e, t)),
+            (null != e && null != t && $.equals(e, t)),
           isValid(e, t) {
             if (null == t) return !1;
             let { anchor: n, focus: i } = t;
-            if (!j.hasPath(e, n.path) || !j.hasPath(e, i.path)) return !1;
-            let [r] = j.node(e, n.path),
-              [s] = j.node(e, i.path);
+            if (!H.hasPath(e, n.path) || !H.hasPath(e, i.path)) return !1;
+            let [r] = H.node(e, n.path),
+              [s] = H.node(e, i.path);
             return (
-              K.isText(r) &&
-              K.isText(s) &&
+              Y.isText(r) &&
+              Y.isText(s) &&
               n.offset <= r.text.length &&
               i.offset <= s.text.length
             );
           },
         },
-        Z = (e, t) => {
+        X = (e, t) => {
           let n = (t.top + t.bottom) / 2;
           return e.top <= n && e.bottom >= n;
         },
-        Q = (e, t, n) => {
-          let i = j.toDOMRange(e, t).getBoundingClientRect(),
-            r = j.toDOMRange(e, n).getBoundingClientRect();
-          return Z(i, r) && Z(r, i);
+        Z = (e, t, n) => {
+          let i = H.toDOMRange(e, t).getBoundingClientRect(),
+            r = H.toDOMRange(e, n).getBoundingClientRect();
+          return X(i, r) && X(r, i);
         },
-        J = (e, t, n, i) => {
+        Q = (e, t, n, i) => {
           let r = { anchor: t, focus: t },
             s = 0,
             a = n.length,
             o = Math.floor((s + a) / 2);
           for (; o !== s; )
             if (
-              (Q(e, { anchor: n[o], focus: n[o] }, r)
+              (Z(e, { anchor: n[o], focus: n[o] }, r)
                 ? i
                   ? (a = o)
                   : (s = o)
@@ -77807,34 +77695,34 @@ ${s}`);
               !i && o === n.length - 2 && a === n.length - 1)
             ) {
               let t = n[n.length - 1];
-              Q(e, { anchor: t, focus: t }, r) && (o = a);
+              Z(e, { anchor: t, focus: t }, r) && (o = a);
             }
           return n[o];
         },
-        ee = {
+        J = {
           getLineStart(e, t, n) {
-            let i = j.getParentElement(e, t);
+            let i = H.getParentElement(e, t);
             if (null == i) return null;
-            let r = j.start(e, i[1]),
-              s = Array.from(j.positions(e, { at: { anchor: r, focus: t } })),
-              a = J(e, t, s, !0);
-            if (n && $.equals(t, a) && !$.isAtEnd(t, i)) {
-              let n = j.after(e, t);
+            let r = H.start(e, i[1]),
+              s = Array.from(H.positions(e, { at: { anchor: r, focus: t } })),
+              a = Q(e, t, s, !0);
+            if (n && z.equals(t, a) && !z.isAtEnd(t, i)) {
+              let n = H.after(e, t);
               if (null == n) return a;
-              a = J(e, n, s, !0);
+              a = Q(e, n, s, !0);
             }
             return a;
           },
           getLineEnd(e, t, n) {
-            let i = j.getParentElement(e, t);
+            let i = H.getParentElement(e, t);
             if (null == i) return null;
-            let r = j.end(e, i[1]),
-              s = Array.from(j.positions(e, { at: { anchor: t, focus: r } })),
-              a = J(e, t, s, !1);
-            if (n && $.equals(t, a) && !$.isAtEnd(t, i)) {
-              let n = j.after(e, t);
+            let r = H.end(e, i[1]),
+              s = Array.from(H.positions(e, { at: { anchor: t, focus: r } })),
+              a = Q(e, t, s, !1);
+            if (n && z.equals(t, a) && !z.isAtEnd(t, i)) {
+              let n = H.after(e, t);
               if (null == n) return a;
-              a = J(e, n, s, !1);
+              a = Q(e, n, s, !1);
             }
             return a;
           },
@@ -95276,7 +95164,7 @@ ${s}`);
             n.e("86546"),
             n.e("15373"),
             n.e("49319"),
-            n.e("96045"),
+            n.e("75720"),
             n.e("35614"),
             n.e("14875"),
             n.e("2736"),
@@ -98984,7 +98872,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534185", versionHash: "b8c097db6ba1e9207f60f9e79bb0aefc00da8203" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534272", versionHash: "156170a6d29374c0581ef5ff75c390cd5e2831ee" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -100466,10 +100354,12 @@ ${O}`;
           i.M.NAGBAR_NOTICE_OFFER_EXPIRING,
           i.M.NOTIFICATION_NUDGE_DM_HOME_BANNER,
           i.M.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER,
+          i.M.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER,
           i.M.NOTIFICATION_NUDGE_POST_REACTION_BANNER,
           i.M.GUILD_TAG_UPDATED_COACHMARK,
           i.M.GIFT_INTENT_MESSAGE,
           i.M.GAME_ACCOUNT_LINK_RECURRING_UPSELL,
+          i.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER,
           i.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS,
           i.M.FIRST_BOOSTER_UPSELL_OVERSEER,
           i.M.QUEST_HOME_NEW_QUEST_BADGE,
@@ -120887,7 +120777,7 @@ ${t.join("\n")}`);
       let d = {
         openGameProfileModal: function (e) {
           let {
-            applicationId: t,
+            gameId: t,
             gameProfileModalChecks: r,
             source: o,
             sourceUserId: l,
@@ -120899,8 +120789,8 @@ ${t.join("\n")}`);
             "Passed a false value for [gameProfileModalChecks]. Are you using the useShouldOpenGameProfile hook correctly?",
           ),
             s()(
-              r.applicationId === t,
-              "Passed an unexpected [applicationId]. Are you passing a different one than you passed to useShouldOpenGameProfileModal?",
+              r.gameId === t,
+              "Passed an unexpected [gameId]. Are you passing a different one than you passed to useShouldOpenGameProfileModal?",
             ),
             (0, a.openModalLazy)(
               async () => {
@@ -120914,7 +120804,7 @@ ${t.join("\n")}`);
                 ]).then(n.bind(n, 179985));
                 return (n) =>
                   (0, i.jsx)(e, {
-                    applicationId: t,
+                    gameId: t,
                     source: o,
                     sourceUserId: l,
                     ...n,
@@ -120942,7 +120832,7 @@ ${t.join("\n")}`);
               ]).then(n.bind(n, 179985));
               return (n) =>
                 (0, i.jsx)(e, {
-                  applicationId: t,
+                  gameId: t,
                   source: r,
                   initialScrollOffset: s,
                   ...n,
@@ -121055,7 +120945,7 @@ ${t.join("\n")}`);
             viewId: t,
             source: n,
             gameName: i,
-            applicationId: r,
+            gameId: r,
             authorId: s,
             profileType: a,
           } = e;
@@ -121076,7 +120966,7 @@ ${t.join("\n")}`);
           let {
             viewId: t,
             gameName: n,
-            applicationId: i,
+            gameId: i,
             playedFriendIds: r,
             playedFriendsData: s,
             similarGames: a,
@@ -121096,7 +120986,7 @@ ${t.join("\n")}`);
         g = (e) => {
           let {
             gameName: t,
-            applicationId: n,
+            gameId: n,
             action: i,
             recipientUserId: r,
             similarGameId: s,
@@ -121136,40 +121026,31 @@ ${t.join("\n")}`);
     },
     692969(e, t, n) {
       "use strict";
-      n.d(t, { A: () => d });
-      var i = n(64700),
-        r = n(858177),
-        s = n(227309),
-        a = n(871633),
-        o = n(60465),
-        l = n(80552);
-      function d(e) {
+      n.d(t, { A: () => s });
+      var i = n(60465),
+        r = n(713900);
+      function s(e) {
         let { onOpened: t } =
             arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-          { applicationId: n } = e,
-          d = (0, r.O)(n),
-          _ = i.useMemo(
-            () => (null == d ? n : (0, a.bB)(d) ? s.a7 : n),
-            [d, n],
-          ),
-          u = (0, l.Ay)({ ...e, applicationId: _ });
-        return u.shouldOpenGameProfile && null != _
-          ? (n) => {
-              n?.stopPropagation(),
-                n?.preventDefault(),
-                o.A.openGameProfileModal({
+          n = (0, r.Ay)(e),
+          { gameId: s } = n;
+        return n.shouldOpenGameProfile && null != s
+          ? (r) => {
+              r?.stopPropagation(),
+                r?.preventDefault(),
+                i.A.openGameProfileModal({
                   ...e,
-                  applicationId: u.applicationId ?? _,
-                  gameProfileModalChecks: u,
+                  gameId: s,
+                  gameProfileModalChecks: n,
                 }),
                 t?.();
             }
           : void 0;
       }
     },
-    80552(e, t, n) {
+    713900(e, t, n) {
       "use strict";
-      n.d(t, { oS: () => N, Ay: () => C }), n(321073);
+      n.d(t, { T_: () => S, oS: () => N, Ay: () => C }), n(321073);
       var i,
         r,
         s = n(64700),
@@ -121203,13 +121084,9 @@ ${t.join("\n")}`);
           r),
         _ = n(665260),
         u = n(574381),
-        c = n(17928),
-        E = n(587895),
-        h = n(429913),
-        m = n(311043),
-        f = n(569926),
-        g = n(954571);
-      let p = (0, n(945810).mj)({
+        c = n(311043),
+        E = n(954571);
+      let h = (0, n(945810).mj)({
         name: "2026-03-game-profiles-mobile",
         kind: "user",
         defaultConfig: { enabled: !1, storeLinksEnabled: !1 },
@@ -121218,14 +121095,18 @@ ${t.join("\n")}`);
           2: { enabled: !0, storeLinksEnabled: !0 },
         },
       });
-      var A = n(652215);
+      var m = n(429913),
+        f = n(569926),
+        g = n(227309),
+        p = n(871633),
+        A = n(652215);
       let I = function (e, t) {
           let n =
               arguments.length > 2 && void 0 !== arguments[2]
                 ? arguments[2]
                 : [],
             i = arguments.length > 3 ? arguments[3] : void 0;
-          g.default.track(A.HAw.GAME_PROFILE_ENTRY_POINT_AVAILABLE, {
+          E.default.track(A.HAw.GAME_PROFILE_ENTRY_POINT_AVAILABLE, {
             game_profile_available: e,
             application_id: t,
             rejection_reason: n,
@@ -121233,61 +121114,80 @@ ${t.join("\n")}`);
           });
         },
         T = (e) => {
+          if (null == e) return ["no match"];
           let t = [];
-          return null == e
-            ? ["no match"]
-            : (_.Lt(e.gameFlags, l.GAME_PROFILE_DISABLED) &&
-                t.push("profile disabled"),
-              e.themes.includes(d.EROTIC) && t.push("nsfw"),
-              (null == e.description || 0 === e.description.length) &&
-                t.push("no summary"),
-              t);
+          return (
+            _.Lt(e.gameFlags, l.GAME_PROFILE_DISABLED) &&
+              t.push("profile disabled"),
+            e.themes.includes(d.EROTIC) && t.push("nsfw"),
+            t
+          );
         },
         S = (e) => 0 === T(e).length,
-        N = (e) => S(m.A.getGame(e)),
+        N = (e) => S(c.A.getGame(e)),
         C = (e) => {
           let {
               applicationId: t = "",
-              source: n,
-              trackEntryPointImpression: i = !0,
+              gameId: n,
+              source: i,
+              trackEntryPointImpression: r = !0,
             } = e,
-            r = s.useRef(!1),
-            a =
-              (p.useConfig({ location: "useShouldOpenGameProfileModal" })
+            a = s.useRef(!1),
+            l =
+              (h.useConfig({ location: "useShouldOpenGameProfileModal" })
                 .enabled &&
                 ((0, u.m0)() || (0, u.un)())) ||
               (0, u.xl)() ||
               (0, u.HZ)(),
-            l = (0, c.bG)([E.A], () => E.A.getApplication(t)),
-            d = s.useMemo(
-              () =>
-                [t, ...(l?.linkedGames?.map((e) => e.id) ?? [])].filter(
-                  (e) => null != e && "" !== e,
-                ),
-              [t, l],
-            );
-          (0, h.A)(a ? d : []), (0, f.x)(a ? d : []);
-          let _ = (0, c.bG)([m.A], () => d.find((e) => S(m.A.getGame(e)))),
-            g = (0, c.bG)([m.A, E.A], () =>
-              d.every(
-                (e) => !m.A.isFetching(e) && !E.A.isFetchingApplication(e),
-              ),
-            );
+            {
+              gameId: d,
+              gameRecord: _,
+              isLoading: c,
+            } = (function (e) {
+              let { applicationId: t, gameId: n } = e,
+                i = (0, m.h)(null == n ? t : void 0),
+                r = (function (e) {
+                  let { applicationId: t, gameId: n } = e,
+                    i = (0, m.h)(null == n ? t : void 0),
+                    r = null == n && null != t && null == i,
+                    a = s.useMemo(
+                      () =>
+                        null != n
+                          ? n
+                          : null == i
+                            ? null
+                            : i.getCanonicalGameId(),
+                      [n, i],
+                    ),
+                    { data: o, isLoading: l } = (0, f.I)(a);
+                  return {
+                    gameId: a,
+                    gameRecord: o ?? null,
+                    isLoading: r || l,
+                  };
+                })({
+                  applicationId: t,
+                  gameId: null != i && (0, p.bB)(i) ? g.aX : n,
+                }),
+                a = null != r.gameRecord && (0, p.Zb)(r.gameRecord),
+                { data: o, isLoading: l } = (0, f.I)(a ? g.aX : void 0);
+              return a
+                ? { gameId: g.aX, gameRecord: o ?? null, isLoading: l }
+                : r;
+            })({ applicationId: l ? t : void 0, gameId: l ? n : void 0 }),
+            E = S(_);
           return (
             s.useEffect(() => {
-              if (!r.current && a && i && null != l && (g || null != _)) {
-                let e = null != _ ? m.A.getGame(_) : m.A.getGame(l.id);
-                if (null != e) {
-                  o()(
-                    null != n,
-                    "Cannot track a Game Profile Entry Point Impressions without a source.",
-                  );
-                  let t = T(e);
-                  I(null != _, e.applicationId, t, n), (r.current = !0);
-                }
+              if (!a.current && l && r && !c && null != _) {
+                o()(
+                  null != i,
+                  "Cannot track a Game Profile Entry Point Impressions without a source.",
+                );
+                let e = T(_);
+                I(E, _.id, e, i), (a.current = !0);
               }
-            }, [_, l, a, g, n, i]),
-            { shouldOpenGameProfile: a && null != _, applicationId: _ }
+            }, [l, _, E, c, i, r]),
+            { shouldOpenGameProfile: l && E, gameId: d }
           );
         };
     },
@@ -121345,39 +121245,39 @@ ${t.join("\n")}`);
           (i[(i.LARGE = 1)] = "LARGE"),
           i);
       function c(e) {
-        let { game: t, application: n, size: i, className: a } = e,
-          [u, c] = s.useState(!1),
-          E = n?.name ?? t.name,
-          h = null != t.firstReleaseDate ? new Date(t.firstReleaseDate) : null,
-          m = t.getCoverURL();
-        return null == m || u
+        let { game: t, size: n, className: i } = e,
+          [a, u] = s.useState(!1),
+          c = t.name,
+          E = null != t.firstReleaseDate ? new Date(t.firstReleaseDate) : null,
+          h = t.getCoverURL();
+        return null == h || a
           ? (0, r.jsxs)("div", {
-              className: o()(_.N, a),
+              className: o()(_.N, i),
               children: [
                 (0, r.jsx)("div", { className: _.j }),
                 (0, r.jsx)(l.E, {
-                  variant: 1 === i ? "text-md/medium" : "text-xs/medium",
+                  variant: 1 === n ? "text-md/medium" : "text-xs/medium",
                   color: "always-white",
-                  lineClamp: 1 === i ? 4 : 3,
-                  children: E,
+                  lineClamp: 1 === n ? 4 : 3,
+                  children: c,
                 }),
                 (0, r.jsx)("div", { className: _.j }),
                 (0, r.jsx)(l.E, {
-                  variant: 1 === i ? "text-sm/normal" : "text-xxs/normal",
+                  variant: 1 === n ? "text-sm/normal" : "text-xxs/normal",
                   color: "always-white",
-                  children: null != h ? `(${h?.getFullYear()})` : null,
+                  children: null != E ? `(${E?.getFullYear()})` : null,
                 }),
               ],
             })
           : (0, r.jsx)("img", {
-              className: a,
-              src: m,
-              alt: d.intl.formatToPlainString(d.t["3ev90U"], { game: E }),
+              className: i,
+              src: h,
+              alt: d.intl.formatToPlainString(d.t["3ev90U"], { game: c }),
               onError: () => {
-                c(!0);
+                u(!0);
               },
               onLoad: () => {
-                c(!1);
+                u(!1);
               },
               draggable: !1,
             });
@@ -137335,7 +137235,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("86546"),
               n.e("15373"),
               n.e("49319"),
-              n.e("96045"),
+              n.e("75720"),
               n.e("42749"),
               n.e("56026"),
               n.e("16301"),
@@ -150021,6 +149921,39 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       function r(e) {
         let { location: t } = e;
         return i.getConfig({ location: t });
+      }
+    },
+    550642(e, t, n) {
+      "use strict";
+      n.d(t, { H6: () => a, Jy: () => s, R8: () => r });
+      let i = (0, n(945810).mj)({
+        name: "2026-04-kestrel",
+        kind: "user",
+        defaultConfig: { enabled: !1, threshold: 0 },
+        variations: {
+          0: { enabled: !1, threshold: 0 },
+          1: { enabled: !0, threshold: 15 },
+          2: { enabled: !0, threshold: 20 },
+          3: { enabled: !0, threshold: 25 },
+        },
+      });
+      function r(e) {
+        let { location: t } = e;
+        return i.getConfig({ location: t });
+      }
+      function s(e, t) {
+        return e.enabled ? Math.max(1048576 * e.threshold, t) : t;
+      }
+      function a(e) {
+        return e.enabled
+          ? 15 === e.threshold
+            ? "kestrel_a"
+            : 20 === e.threshold
+              ? "kestrel_b"
+              : 25 === e.threshold
+                ? "kestrel_c"
+                : "unknown"
+          : "control";
       }
     },
     685408(e, t, n) {
@@ -164873,7 +164806,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("27752"),
               n.e("52338"),
               n.e("49319"),
-              n.e("96045"),
+              n.e("75720"),
               n.e("35614"),
               n.e("46277"),
               n.e("93764"),
@@ -192831,7 +192764,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     862611(e, t, n) {
       "use strict";
-      n.d(t, { A: () => H });
+      n.d(t, { A: () => B });
       var i,
         r = n(627968),
         s = n(64700),
@@ -192845,82 +192778,81 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         E = n(192308),
         h = n(922016),
         m = n(775602),
-        f = n(587895),
-        g = n(429913),
-        p = n(409626),
-        A = n(80552),
-        I = n(459746),
-        T = n(311043),
-        S = n(569926),
-        N = n(363195),
-        C = n(760751),
-        R = n(954571),
-        O = n(486020),
-        y = n(507107),
-        v = n(859387),
-        D = n(18437),
-        L = n(590202),
-        b = n(73473),
-        w =
+        f = n(429913),
+        g = n(409626),
+        p = n(713900),
+        A = n(459746),
+        I = n(311043),
+        T = n(569926),
+        S = n(363195),
+        N = n(760751),
+        C = n(954571),
+        R = n(486020),
+        O = n(507107),
+        y = n(859387),
+        v = n(18437),
+        D = n(590202),
+        L = n(73473),
+        b =
           (((i = {}).FETCH_FAILED = "FETCH_FAILED"),
           (i.NO_GAMES_AVAILABLE = "NO_GAMES_AVAILABLE"),
           i),
-        P = n(654487),
-        k = n(652215),
-        M = n(985018),
-        U = n(420298);
-      let x = (e) => {
+        w = n(654487),
+        P = n(652215),
+        k = n(985018),
+        M = n(420298);
+      let U = (e) => {
           let t,
             n,
             i,
             { quest: s, onClose: o } = e,
-            l = (0, a.bG)([N.A], () => N.A.getState().theme),
-            E = (0, d.M)(l) ? k.NJ8.DARK : k.NJ8.LIGHT;
+            l = (0, a.bG)([S.A], () => S.A.getState().theme),
+            E = (0, d.M)(l) ? P.NJ8.DARK : P.NJ8.LIGHT;
           return (0, r.jsxs)("div", {
-            className: U.N1,
+            className: M.N1,
             children: [
               (0, r.jsxs)("div", {
-                className: U.VW,
+                className: M.VW,
                 children: [
                   (0, r.jsx)("img", {
-                    className: U.rC,
+                    className: M.rC,
                     alt: s.config.messages.gameTitle,
-                    src: (0, v.tW)(s, v.fY.GAME_TILE, E).url,
+                    src: (0, y.tW)(s, y.fY.GAME_TILE, E).url,
                   }),
                   (0, r.jsxs)("div", {
-                    className: U.if,
+                    className: M.if,
                     children: [
                       (0, r.jsx)(_.E, {
                         variant: "text-sm/semibold",
                         color: "text-strong",
                         children:
                           ((t = {
-                            [P.Li.PACKAGE_ACTION_ADVENTURE]: M.t.PYFVdf,
-                            [P.Li.PACKAGE_RPG_MMO]: M.t.rFQo2F,
-                            [P.Li.PACKAGE_RACING_SPORTS]: M.t.zDRa6g,
-                            [P.Li.PACKAGE_SANDBOX_CREATIVE]: M.t.vz9U2Q,
-                            [P.Li.PACKAGE_FAMILY_FRIENDLY]: M.t.IOiAE0,
-                            [P.Li.PACKAGE_HOLIDAY_SEASON]: M.t.cJPqvD,
-                            [P.Li.PACKAGE_NEW_YEARS]: M.t.S0w2mv,
+                            [w.Li.PACKAGE_ACTION_ADVENTURE]: k.t.PYFVdf,
+                            [w.Li.PACKAGE_RPG_MMO]: k.t.rFQo2F,
+                            [w.Li.PACKAGE_RACING_SPORTS]: k.t.zDRa6g,
+                            [w.Li.PACKAGE_SANDBOX_CREATIVE]: k.t.vz9U2Q,
+                            [w.Li.PACKAGE_FAMILY_FRIENDLY]: k.t.IOiAE0,
+                            [w.Li.PACKAGE_HOLIDAY_SEASON]: k.t.cJPqvD,
+                            [w.Li.PACKAGE_NEW_YEARS]: k.t.S0w2mv,
                           }),
                           (i =
                             (null != (n = s.config.features.find((e) => e in t))
                               ? t[n]
-                              : null) ?? M.t["D+DkEH"]),
-                          M.intl.string(i)),
+                              : null) ?? k.t["D+DkEH"]),
+                          k.intl.string(i)),
                       }),
                       (0, r.jsx)(_.E, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: M.intl.string(M.t.VgN1Bn),
+                        children: k.intl.string(k.t.VgN1Bn),
                       }),
                     ],
                   }),
                 ],
               }),
               (0, r.jsx)(u.D, {
-                className: U.b,
-                "aria-label": M.intl.string(M.t.cpT0Cq),
+                className: M.b,
+                "aria-label": k.intl.string(k.t.cpT0Cq),
                 onClick: o,
                 children: (0, r.jsx)(c.P, {
                   size: "md",
@@ -192930,7 +192862,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             ],
           });
         },
-        G = (e) => {
+        x = (e) => {
           let {
               quest: t,
               game: i,
@@ -192938,25 +192870,24 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               onGameProfileModalOpen: d,
               onGameProfileModalClose: _,
             } = e,
-            c = (0, D.Ut)(),
-            h = (0, a.bG)([f.A], () => f.A.getApplication(i.applicationId)),
-            g = (0, a.bG)([m.A], () => m.A.useReducedMotion),
-            A = s.useRef(null),
-            T = null != i.gameRecord,
-            S = () => {
+            c = (0, v.Ut)(),
+            h = (0, a.bG)([m.A], () => m.A.useReducedMotion),
+            f = s.useRef(null),
+            p = null != i.gameRecord,
+            I = () => {
               c({
                 questId: t.id,
-                questContent: y.uF.SPONSORED_QUEST_SHEET,
-                questContentCTA: L.Cy.GAME_STORE_OPEN_GAME_LINK,
+                questContent: O.uF.SPONSORED_QUEST_SHEET,
+                questContentCTA: D.Cy.GAME_STORE_OPEN_GAME_LINK,
                 sourceQuestContent: o,
               });
             },
-            N = async () => {
-              T &&
+            T = async () => {
+              p &&
                 (c({
                   questId: t.id,
-                  questContent: y.uF.SPONSORED_QUEST_SHEET,
-                  questContentCTA: L.Cy.GAME_PROFILE_OPEN,
+                  questContent: O.uF.SPONSORED_QUEST_SHEET,
+                  questContentCTA: D.Cy.GAME_PROFILE_OPEN,
                   sourceQuestContent: o,
                 }),
                 await (0, E.openModalLazy)(
@@ -192971,9 +192902,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     ]).then(n.bind(n, 179985));
                     return (t) =>
                       (0, r.jsx)(e, {
-                        applicationId: i.applicationId,
-                        source: p.Ob.GameSheet,
-                        trackExternalAction: S,
+                        gameId: i.applicationId,
+                        source: g.Ob.GameSheet,
+                        trackExternalAction: I,
                         ...t,
                       });
                   },
@@ -192981,53 +192912,52 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 ),
                 d());
             },
-            C = s.useCallback(
+            S = s.useCallback(
               (e) => {
-                if (null == A.current || g) return;
-                let t = A.current.getBoundingClientRect(),
+                if (null == f.current || h) return;
+                let t = f.current.getBoundingClientRect(),
                   n = e.clientX - t.left,
                   i = e.clientY - t.top,
                   r = t.width / 2,
                   s = t.height / 2;
-                A.current.style.transform = `rotateX(${-(((i - s) / s) * 15)}deg) rotateY(${((n - r) / r) * 15}deg)`;
+                f.current.style.transform = `rotateX(${-(((i - s) / s) * 15)}deg) rotateY(${((n - r) / r) * 15}deg)`;
               },
-              [g],
+              [h],
             ),
-            R = s.useCallback(() => {
-              null == A.current ||
-                g ||
-                (A.current.style.transform = "rotateX(0deg) rotateY(0deg)");
-            }, [g]);
+            N = s.useCallback(() => {
+              null == f.current ||
+                h ||
+                (f.current.style.transform = "rotateX(0deg) rotateY(0deg)");
+            }, [h]);
           return (0, r.jsx)(l.m, {
             text: i.name,
             children: (0, r.jsx)(u.D, {
-              className: U.zR,
-              onClick: N,
-              onMouseMove: C,
-              onMouseLeave: R,
+              className: M.zR,
+              onClick: T,
+              onMouseMove: S,
+              onMouseLeave: N,
               children: (0, r.jsx)("div", {
-                ref: A,
-                className: U._M,
+                ref: f,
+                className: M._M,
                 children:
                   null != i.gameRecord
-                    ? (0, r.jsx)(I.A, {
+                    ? (0, r.jsx)(A.A, {
                         game: i.gameRecord,
-                        application: h,
-                        className: U.xe,
-                        size: I.w.SMALL,
+                        className: M.xe,
+                        size: A.w.SMALL,
                       })
                     : null != i.fallbackCoverImageUrl
                       ? (0, r.jsx)("img", {
                           src: i.fallbackCoverImageUrl,
                           alt: i.name,
-                          className: U.xe,
+                          className: M.xe,
                         })
                       : null,
               }),
             }),
           });
         },
-        V = () =>
+        G = () =>
           (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "75",
@@ -193059,7 +192989,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               }),
             ],
           });
-      function F(e) {
+      function V(e) {
         let {
           quest: t,
           applications: i,
@@ -193069,25 +192999,25 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           onGameProfileModalOpen: _,
           onGameProfileModalClose: u,
         } = e;
-        (0, g.A)(i), (0, S.x)(i);
-        let c = (0, a.bG)([T.A], () => i.some((e) => T.A.isFetching(e))),
-          h = (0, a.bG)([T.A], () => i.some((e) => T.A.didFetchingFail(e))),
-          m = (0, a.yK)([T.A], () =>
+        (0, f.A)(i), (0, T.x)(i);
+        let c = (0, a.bG)([I.A], () => i.some((e) => I.A.isFetching(e))),
+          h = (0, a.bG)([I.A], () => i.some((e) => I.A.didFetchingFail(e))),
+          m = (0, a.yK)([I.A], () =>
             i
-              .map((e) => T.A.getGame(e))
+              .map((e) => I.A.getGame(e))
               .filter((e) => null != e)
-              .filter((e) => (0, A.oS)(e.applicationId))
+              .filter((e) => (0, p.oS)(e.applicationId))
               .slice(0, 10),
           ),
-          f = (0, a.bG)([C.A, T.A], () => {
+          g = (0, a.bG)([N.A, I.A], () => {
             let e = new Set(m.map((e) => e.applicationId));
             return i
               .filter((t) => !e.has(t))
-              .filter((e) => null == T.A.getGame(e))
+              .filter((e) => null == I.A.getGame(e))
               .map((e) => {
-                let t = C.A.getDetectableGame(e);
+                let t = N.A.getDetectableGame(e);
                 if (t?.cover_image_hash == null) return null;
-                let n = O.Ay.getApplicationIconURL({
+                let n = R.Ay.getApplicationIconURL({
                   id: e,
                   icon: t.cover_image_hash,
                   size: 256,
@@ -193100,7 +193030,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               .filter((e) => null != e)
               .slice(0, 10);
           }),
-          p = s.useMemo(
+          A = s.useMemo(
             () =>
               [
                 ...m.map((e) => ({
@@ -193109,26 +193039,26 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   gameRecord: e,
                   fallbackCoverImageUrl: null,
                 })),
-                ...f.map((e) => ({
+                ...g.map((e) => ({
                   applicationId: e.applicationId,
                   name: e.name,
                   gameRecord: null,
                   fallbackCoverImageUrl: e.coverImageUrl,
                 })),
               ].slice(0, 10),
-            [m, f],
+            [m, g],
           ),
-          I = s.useMemo(() => {
-            let e = p.length;
+          S = s.useMemo(() => {
+            let e = A.length;
             return e <= 4 ? 4 - e : 5 === e ? 0 : e <= 8 ? 8 - e : 10 - e;
-          }, [p.length]),
-          N = !c && 0 === p.length,
-          y = h || N;
+          }, [A.length]),
+          O = !c && 0 === A.length,
+          y = h || O;
         if (
           (s.useEffect(() => {
             if (y) {
-              let e = h ? w.FETCH_FAILED : w.NO_GAMES_AVAILABLE;
-              R.default.track(k.HAw.QUEST_GAME_SHEET_ERROR, {
+              let e = h ? b.FETCH_FAILED : b.NO_GAMES_AVAILABLE;
+              C.default.track(P.HAw.QUEST_GAME_SHEET_ERROR, {
                 quest_id: t.id,
                 error_type: e,
               }),
@@ -193145,14 +193075,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         ) {
           let e = Math.min(i.length, 10);
           return (0, r.jsxs)("div", {
-            className: U.kL,
+            className: M.kL,
             children: [
-              (0, r.jsx)(x, { quest: t, onClose: o }),
+              (0, r.jsx)(U, { quest: t, onClose: o }),
               (0, r.jsx)("div", {
-                className: U.LA,
+                className: M.LA,
                 children: i
                   .slice(0, e)
-                  .map((e) => (0, r.jsx)("div", { className: U.Vj }, e)),
+                  .map((e) => (0, r.jsx)("div", { className: M.Vj }, e)),
               }),
             ],
           });
@@ -193163,15 +193093,15 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               ref: (e) => {
                 d.current = e;
               },
-              className: U.kL,
+              className: M.kL,
               children: [
-                (0, r.jsx)(x, { quest: t, onClose: o }),
+                (0, r.jsx)(U, { quest: t, onClose: o }),
                 (0, r.jsxs)("div", {
-                  className: U.LA,
+                  className: M.LA,
                   children: [
-                    p.map((e) =>
+                    A.map((e) =>
                       (0, r.jsx)(
-                        G,
+                        x,
                         {
                           quest: t,
                           game: e,
@@ -193182,15 +193112,15 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                         e.applicationId,
                       ),
                     ),
-                    Array.from({ length: I }, (e, t) =>
-                      (0, r.jsx)(V, {}, `placeholder-${t}`),
+                    Array.from({ length: S }, (e, t) =>
+                      (0, r.jsx)(G, {}, `placeholder-${t}`),
                     ),
                   ],
                 }),
               ],
             });
       }
-      function B(e) {
+      function F(e) {
         let {
             targetElementRef: t,
             applications: n,
@@ -193202,7 +193132,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             impressionRef: u,
           } = e,
           [c, E] = s.useState(!1),
-          m = (0, D.Ut)(),
+          m = (0, v.Ut)(),
           f = s.useRef(null),
           g = t?.current != null,
           p = g ? t : f,
@@ -193217,7 +193147,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           clickTrap: !0,
           renderPopout: (e) => {
             let { closePopout: t } = e;
-            return (0, r.jsx)(F, {
+            return (0, r.jsx)(V, {
               quest: d,
               applications: n,
               onClose: t,
@@ -193232,7 +193162,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               m({
                 questId: d.id,
                 questContent: _,
-                questContentCTA: L.Cy.SPONSORED_QUEST_SHEET,
+                questContentCTA: D.Cy.SPONSORED_QUEST_SHEET,
                 sourceQuestContent: _,
               });
           },
@@ -193248,14 +193178,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           children: (e) => i(e, f),
         });
       }
-      let H = function (e) {
+      let B = function (e) {
         return null == e.quest || e.applications.length <= 1
           ? null
-          : (0, r.jsx)(b.R, {
+          : (0, r.jsx)(L.R, {
               questOrQuests: e.quest,
-              questContent: y.uF.SPONSORED_QUEST_SHEET,
+              questContent: O.uF.SPONSORED_QUEST_SHEET,
               sourceQuestContent: e.sourceQuestContent,
-              children: (t) => (0, r.jsx)(B, { ...e, impressionRef: t }),
+              children: (t) => (0, r.jsx)(F, { ...e, impressionRef: t }),
             });
       };
     },
@@ -196056,13 +195986,15 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     227309(e, t, n) {
       "use strict";
-      n.d(t, { IO: () => r, a7: () => i });
+      n.d(t, { IO: () => s, a7: () => i, aX: () => r });
       let i = "363445589247131668",
-        r = { PLACE_ID: "placeId", ROBLOX_TIME_STARTED: "timeStarted" };
+        r = i,
+        s = { PLACE_ID: "placeId", ROBLOX_TIME_STARTED: "timeStarted" };
     },
     871633(e, t, n) {
       "use strict";
       n.d(t, {
+        Zb: () => _,
         MT: () => a,
         CO: () => o,
         n1: () => l,
@@ -196105,6 +196037,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       }
       function d(e) {
         return e.thirdPartySkus.some((e) => e.distributor === r.d3x.ROBLOX);
+      }
+      function _(e) {
+        return (
+          e.id !== i.aX &&
+          e.thirdPartySkus.some((e) => e.distributor === r.d3x.ROBLOX)
+        );
       }
     },
     901123(e, t, n) {
@@ -201190,6 +201128,20 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           S = { state: "error" };
         },
       });
+    },
+    271049(e, t, n) {
+      "use strict";
+      n.d(t, { N: () => r });
+      let i = (0, n(945810).mj)({
+        name: "2026-04-storefront-rust-launch",
+        kind: "user",
+        defaultConfig: { enabled: !1 },
+        variations: { 0: { enabled: !1 }, 1: { enabled: !0 } },
+      });
+      function r(e) {
+        let { location: t } = e;
+        return i.getConfig({ location: t }).enabled;
+      }
     },
     96203(e, t, n) {
       "use strict";
@@ -223029,7 +222981,7 @@ ${t}`;
                   n.e("52338"),
                   n.e("86546"),
                   n.e("49319"),
-                  n.e("96045"),
+                  n.e("75720"),
                   n.e("35614"),
                   n.e("14875"),
                   n.e("2736"),
@@ -253009,7 +252961,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "b8c097db6ba1e9207f60f9e79bb0aefc00da8203",
+                    "156170a6d29374c0581ef5ff75c390cd5e2831ee",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259239,7 +259191,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534185",
+                  build_number: "534272",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -299028,6 +298980,8 @@ Total Time: ${o}ms
             "PREMIUM_GROUP_GIFT_SELECTION_UPSELL"),
           (i[(i.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT = 745)] =
             "COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT"),
+          (i[(i.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER = 746)] =
+            "NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER"),
           i),
         a =
           (((r = {})[(r.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0)] =
@@ -327542,4 +327496,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=75797.5487e16011cfff49.js.map
+//# sourceMappingURL=72667.21bd2309a053fdd5.js.map
