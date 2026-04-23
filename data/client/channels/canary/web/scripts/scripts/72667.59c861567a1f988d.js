@@ -33482,7 +33482,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534272, Version Hash: 156170a6d29374c0581ef5ff75c390cd5e2831ee`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534336, Version Hash: d2ed14861a9bc706bd2a3806e2eae00363aa5d82`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -57466,7 +57466,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "156170a6d29374c0581ef5ff75c390cd5e2831ee" === e.body.hash
+                  "d2ed14861a9bc706bd2a3806e2eae00363aa5d82" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -65334,10 +65334,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534272")),
+                ((e = parseInt("534336")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534272",
+                    "Trying to open a changelog for an invalid build number 534336",
                   ),
                   (e = 0)),
                 e),
@@ -95156,7 +95156,7 @@ ${s}`);
             n.e("23297"),
             n.e("95752"),
             n.e("92754"),
-            n.e("51440"),
+            n.e("16903"),
             n.e("53668"),
             n.e("62092"),
             n.e("27752"),
@@ -95164,7 +95164,7 @@ ${s}`);
             n.e("86546"),
             n.e("15373"),
             n.e("49319"),
-            n.e("75720"),
+            n.e("98970"),
             n.e("35614"),
             n.e("14875"),
             n.e("2736"),
@@ -95177,7 +95177,7 @@ ${s}`);
             n.e("72564"),
             n.e("80388"),
             n.e("13988"),
-            n.e("67925"),
+            n.e("43616"),
             n.e("61763"),
             n.e("52803"),
             n.e("92630"),
@@ -95210,7 +95210,7 @@ ${s}`);
             n.e("83518"),
             n.e("84704"),
             n.e("67646"),
-            n.e("72649"),
+            n.e("9471"),
             n.e("71018"),
             n.e("92007"),
             n.e("39967"),
@@ -95226,7 +95226,7 @@ ${s}`);
             n.e("85216"),
             n.e("17965"),
             n.e("76053"),
-            n.e("39849"),
+            n.e("25525"),
             n.e("80119"),
             n.e("80683"),
             n.e("96975"),
@@ -98872,7 +98872,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534272", versionHash: "156170a6d29374c0581ef5ff75c390cd5e2831ee" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534336", versionHash: "d2ed14861a9bc706bd2a3806e2eae00363aa5d82" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -137229,13 +137229,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("95752"),
               n.e("92754"),
               n.e("68587"),
-              n.e("51440"),
+              n.e("16903"),
               n.e("62092"),
               n.e("22547"),
               n.e("86546"),
               n.e("15373"),
               n.e("49319"),
-              n.e("75720"),
+              n.e("98970"),
               n.e("42749"),
               n.e("56026"),
               n.e("16301"),
@@ -137253,7 +137253,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("41068"),
               n.e("32347"),
               n.e("8458"),
-              n.e("67925"),
+              n.e("43616"),
               n.e("61763"),
               n.e("15666"),
               n.e("11810"),
@@ -164800,13 +164800,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("23297"),
               n.e("95752"),
               n.e("92754"),
-              n.e("51440"),
+              n.e("16903"),
               n.e("53668"),
               n.e("62092"),
               n.e("27752"),
               n.e("52338"),
               n.e("49319"),
-              n.e("75720"),
+              n.e("98970"),
               n.e("35614"),
               n.e("46277"),
               n.e("93764"),
@@ -164815,7 +164815,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("42282"),
               n.e("72564"),
               n.e("13988"),
-              n.e("67925"),
+              n.e("43616"),
               n.e("61763"),
               n.e("64879"),
               n.e("8018"),
@@ -222974,14 +222974,14 @@ ${t}`;
                   n.e("23297"),
                   n.e("95752"),
                   n.e("92754"),
-                  n.e("51440"),
+                  n.e("16903"),
                   n.e("53668"),
                   n.e("62092"),
                   n.e("27752"),
                   n.e("52338"),
                   n.e("86546"),
                   n.e("49319"),
-                  n.e("75720"),
+                  n.e("98970"),
                   n.e("35614"),
                   n.e("14875"),
                   n.e("2736"),
@@ -222993,7 +222993,7 @@ ${t}`;
                   n.e("42282"),
                   n.e("72564"),
                   n.e("13988"),
-                  n.e("67925"),
+                  n.e("43616"),
                   n.e("61763"),
                   n.e("64879"),
                   n.e("8018"),
@@ -223018,7 +223018,7 @@ ${t}`;
                   n.e("83518"),
                   n.e("84704"),
                   n.e("67646"),
-                  n.e("72649"),
+                  n.e("9471"),
                   n.e("71018"),
                   n.e("92007"),
                   n.e("39967"),
@@ -223031,7 +223031,7 @@ ${t}`;
                   n.e("85216"),
                   n.e("17965"),
                   n.e("76053"),
-                  n.e("39849"),
+                  n.e("25525"),
                   n.e("80119"),
                   n.e("88109"),
                   n.e("81250"),
@@ -226983,30 +226983,16 @@ ${t}`;
         }
       }
     },
-    513985(e, t, n) {
+    557009(e, t, n) {
       "use strict";
-      n.d(t, { A: () => _ });
-      var i,
-        r =
-          (((i = {})[(i.UNKNOWN = 0)] = "UNKNOWN"),
-          (i[(i.FULFILLMENT_NOT_NEEDED = 1)] = "FULFILLMENT_NOT_NEEDED"),
-          (i[(i.FULFILLMENT_NEEDED = 2)] = "FULFILLMENT_NEEDED"),
-          (i[(i.FULFILLED = 3)] = "FULFILLED"),
-          (i[(i.FULFILLMENT_FAILED = 4)] = "FULFILLMENT_FAILED"),
-          (i[(i.UNFULFILLMENT_NEEDED = 5)] = "UNFULFILLMENT_NEEDED"),
-          (i[(i.UNFULFILLED = 6)] = "UNFULFILLED"),
-          (i[(i.UNFULFILLMENT_FAILED = 7)] = "UNFULFILLMENT_FAILED"),
-          (i[(i.UNFULFILLMENT_NEEDED_MANUAL = 8)] =
-            "UNFULFILLMENT_NEEDED_MANUAL"),
-          (i[(i.INITIAL_FULFILLMENT_NEEDED = 9)] =
-            "INITIAL_FULFILLMENT_NEEDED"),
-          i),
-        s = n(315069),
-        a = n(32731),
-        o = n(927578),
-        l = n(889227),
-        d = n(652215);
-      class _ extends s.A {
+      n.d(t, { A: () => d });
+      var i = n(913290),
+        r = n(315069),
+        s = n(32731),
+        a = n(927578),
+        o = n(889227),
+        l = n(652215);
+      class d extends r.A {
         id;
         skuId;
         applicationId;
@@ -227028,11 +227014,11 @@ ${t}`;
         sourceType;
         fulfillmentStatus;
         static createFromServer(e) {
-          return new _({
+          return new d({
             id: e.id,
             skuId: e.sku_id,
             applicationId: e.application_id,
-            user: null != e.user ? new l.A(e.user) : null,
+            user: null != e.user ? new o.A(e.user) : null,
             userId: e.user_id,
             gifterId: e.gifter_user_id,
             type: e.type,
@@ -227048,13 +227034,13 @@ ${t}`;
             giftStyle: e.gift_style,
             guildId: e.guild_id,
             deleted: e.deleted,
-            sku: null != e.sku ? a.A.createFromServer(e.sku) : null,
+            sku: null != e.sku ? s.A.createFromServer(e.sku) : null,
             sourceType: e.source_type ?? null,
             fulfillmentStatus: e.fulfillment_status ?? null,
           });
         }
         get isGiftable() {
-          return this.type === d.zF_.USER_GIFT && null == this.gifterId;
+          return this.type === l.zF_.USER_GIFT && null == this.gifterId;
         }
         constructor(e) {
           super(),
@@ -227085,11 +227071,11 @@ ${t}`;
               ? arguments[2]
               : null;
           if (this.isGiftable || this.deleted) return !1;
-          if (this.type === d.zF_.PREMIUM_SUBSCRIPTION) {
+          if (this.type === l.zF_.PREMIUM_SUBSCRIPTION) {
             let n = t.get(this.skuId);
             if (
               (null != n && !n.premium) ||
-              !o.Ay.canInstallPremiumApplications(e)
+              !a.Ay.canInstallPremiumApplications(e)
             )
               return !1;
           }
@@ -227107,7 +227093,7 @@ ${t}`;
           return !0;
         }
         isFulfilled() {
-          return this.fulfillmentStatus === r.FULFILLED;
+          return this.fulfillmentStatus === i.w.FULFILLED;
         }
       }
     },
@@ -227206,7 +227192,7 @@ ${t}`;
         s = n(665260),
         a = n(315069),
         o = n(587895),
-        l = n(513985),
+        l = n(557009),
         d = n(652215);
       class _ extends a.A {
         id;
@@ -249458,7 +249444,7 @@ ${t}`;
         s = n(334279),
         a = n(17928),
         o = n(228366),
-        l = n(513985),
+        l = n(557009),
         d = n(189081),
         _ = n(674378),
         u = n(67480),
@@ -252961,7 +252947,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "156170a6d29374c0581ef5ff75c390cd5e2831ee",
+                    "d2ed14861a9bc706bd2a3806e2eae00363aa5d82",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259191,7 +259177,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534272",
+                  build_number: "534336",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -319437,6 +319423,25 @@ Total Time: ${o}ms
           (i.QUEST_ORB_MULTIPLIER = "questOrbMultiplier"),
           i);
     },
+    913290(e, t, n) {
+      "use strict";
+      n.d(t, { w: () => r });
+      var i,
+        r =
+          (((i = {})[(i.UNKNOWN = 0)] = "UNKNOWN"),
+          (i[(i.FULFILLMENT_NOT_NEEDED = 1)] = "FULFILLMENT_NOT_NEEDED"),
+          (i[(i.FULFILLMENT_NEEDED = 2)] = "FULFILLMENT_NEEDED"),
+          (i[(i.FULFILLED = 3)] = "FULFILLED"),
+          (i[(i.FULFILLMENT_FAILED = 4)] = "FULFILLMENT_FAILED"),
+          (i[(i.UNFULFILLMENT_NEEDED = 5)] = "UNFULFILLMENT_NEEDED"),
+          (i[(i.UNFULFILLED = 6)] = "UNFULFILLED"),
+          (i[(i.UNFULFILLMENT_FAILED = 7)] = "UNFULFILLMENT_FAILED"),
+          (i[(i.UNFULFILLMENT_NEEDED_MANUAL = 8)] =
+            "UNFULFILLMENT_NEEDED_MANUAL"),
+          (i[(i.INITIAL_FULFILLMENT_NEEDED = 9)] =
+            "INITIAL_FULFILLMENT_NEEDED"),
+          i);
+    },
     622242(e, t, n) {
       "use strict";
       n.d(t, { k: () => r });
@@ -327496,4 +327501,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=72667.21bd2309a053fdd5.js.map
+//# sourceMappingURL=72667.59c861567a1f988d.js.map
