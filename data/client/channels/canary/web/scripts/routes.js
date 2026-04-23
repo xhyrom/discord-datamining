@@ -173827,7 +173827,7 @@ ${s}`),
           n.e("94459").then(n.t.bind(n, 868086, 19));
         let m = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new h.A().log(
-          `[BUILD INFO] Release Channel: ${m}, Build Number: 534017, Version Hash: a490179c5492f15b28e8c4e0f402df1a2a54d873`,
+          `[BUILD INFO] Release Channel: ${m}, Build Number: 534039, Version Hash: bff713578ce9ab88470aa2119345c5d5a12171c6`,
         ),
           r.A.setTags({ appContext: p.QCW }),
           _.A.initBasic(),
@@ -208311,7 +208311,7 @@ ${_.join(" +\n")}
                 (e) => {
                   if (
                     null == e.body ||
-                    "a490179c5492f15b28e8c4e0f402df1a2a54d873" === e.body.hash
+                    "bff713578ce9ab88470aa2119345c5d5a12171c6" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, o.kK)())
@@ -214372,11 +214372,11 @@ ${_.join(" +\n")}
         n.d(t, { $: () => i });
         var r = n(728458);
         function i() {
-          let e = parseInt("534017");
+          let e = parseInt("534039");
           return (
             Number.isNaN(e) &&
               (r.A.captureMessage(
-                "Trying to open a changelog for an invalid build number 534017",
+                "Trying to open a changelog for an invalid build number 534039",
               ),
               (e = 0)),
             e
@@ -229999,8 +229999,8 @@ ${_.join(" +\n")}
           return {
             logsUploaded: new Date().toISOString(),
             releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            buildNumber: "534017",
-            versionHash: "a490179c5492f15b28e8c4e0f402df1a2a54d873",
+            buildNumber: "534039",
+            versionHash: "bff713578ce9ab88470aa2119345c5d5a12171c6",
           };
         }
         n.d(t, { A: () => r });
@@ -276129,8 +276129,17 @@ ${s}`);
         }
         let O = {
           ...l().defaultRules.link,
-          match: (e, t, n) =>
-            t.allowLinks ? l().defaultRules.link.match(e, t, n) : null,
+          match(e, t, n) {
+            if (!t.allowLinks || -1 === e.indexOf("](")) return null;
+            let r = 0;
+            for (let t = 0; t < e.length; t++) {
+              let n = e[t];
+              if ("[" === n) {
+                if (++r > 10) return null;
+              } else "]" === n && r > 0 && r--;
+            }
+            return l().defaultRules.link.match(e, t, n);
+          },
           parse(e, t, n) {
             let [r, s, a, o] = e,
               c = () => ({ type: _.D.TEXT, content: r });
@@ -282246,8 +282255,8 @@ ${s}`);
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1776957019270",
-                      build_number: "534017",
+                      built_at: "1776959202370",
+                      build_number: "534039",
                     },
                   },
                   retries: 1,
@@ -381354,7 +381363,7 @@ ${s}`);
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "a490179c5492f15b28e8c4e0f402df1a2a54d873",
+                      "bff713578ce9ab88470aa2119345c5d5a12171c6",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", X),
@@ -389910,7 +389919,7 @@ ${s}`);
               ).then((e) => {
                 let r = {
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    build_number: "534017",
+                    build_number: "534039",
                   },
                   c = l.default.getCurrentUser();
                 null != c &&
@@ -399810,7 +399819,7 @@ ${s}`);
           (a = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == s.release_channel || "" === s.release_channel) &&
             (s.release_channel = a.split("-")[0]),
-          isNaN((o = parseInt("534017", 10))) || (s.client_build_number = o),
+          isNaN((o = parseInt("534039", 10))) || (s.client_build_number = o),
           null == (l = A?.app.getBuildNumber()) ||
             isNaN(l) ||
             (s.native_build_number = l),
@@ -497157,7 +497166,7 @@ color: purple;
         18467: "4b9ceefaef75aed5",
         18469: "ad030e7089f2c131",
         18489: "b3cd8b282f66346c",
-        18521: "98e344a76d357e8a",
+        18521: "cf469200d16d4952",
         18710: "f6af50fd31a7974d",
         18912: "431dc68d6b50b4f2",
         19452: "f323c0a6d2eaec55",
@@ -497616,7 +497625,7 @@ color: purple;
         92853: "da9b28356c5cecb6",
         92879: "850a4d9686974d93",
         9314: "18824b02661e5ad0",
-        93752: "5fdcd733e16fafac",
+        93752: "d866f519534bc531",
         93796: "9571b74cb1706ff2",
         93992: "b6292fc2039a63dd",
         94133: "68f949b74f0f3b13",
@@ -497890,7 +497899,7 @@ color: purple;
         18469: "05d4ab3198758e22",
         18489: "a8576d3f2b562533",
         18496: "7dab2cd57434cc53",
-        18521: "4059e7b45bcc9e79",
+        18521: "daa338d9d7a3c987",
         18629: "895aa71695b4f599",
         18630: "c931dd2187bb7900",
         18653: "68e570f5e351af1b",
@@ -497915,7 +497924,7 @@ color: purple;
         19457: "656610f4188cae47",
         19467: "7c0fa53a96fba984",
         19474: "63d857fd58ca522f",
-        19482: "615f3ddd3a672415",
+        19482: "a937702c8890b19d",
         19534: "55be38ce2fe57373",
         1958: "c937e2cd4c27cafd",
         19590: "e4c4c43402f3ff76",
@@ -497982,7 +497991,7 @@ color: purple;
         21612: "b5fcba88feaf7198",
         21659: "7d6a59b8734010d3",
         21705: "0c331e8b42f44cbc",
-        21738: "af5b29d7054ae58e",
+        21738: "b8d8ffbc789ffc37",
         21880: "0b340245a123dee3",
         219: "329fd338e790f068",
         21905: "1effccd4987d95e6",
@@ -498545,7 +498554,7 @@ color: purple;
         42048: "3c7299fd6fa4d47e",
         42081: "771f3425ccaa5f85",
         42128: "120bb30c9ff13e6a",
-        42160: "46a5285a1c429b1f",
+        42160: "1e0ab6f86d479f16",
         42162: "75e98c584743437c",
         42208: "f13b59c571bcdc63",
         42235: "212b7cced4b61090",
@@ -499307,7 +499316,7 @@ color: purple;
         69745: "47e4d03779312583",
         69752: "3af845350fd650ae",
         69791: "f7f52157d6beea7f",
-        69839: "86e951ea3fff26e0",
+        69839: "18af46bd330b1161",
         69842: "0e5e9252e80dfbc2",
         69845: "c269e255d627619e",
         699: "6c41aa4688af064d",
@@ -499385,7 +499394,7 @@ color: purple;
         7243: "ab751ae69fe0dcfc",
         72437: "d6d87c33c95e2924",
         72453: "19ba7b12b15261fd",
-        72570: "38408e36587118fe",
+        72570: "2586871c27a56fca",
         72578: "f57d7766036b0faa",
         72589: "9cb20c098e72b5fd",
         72694: "99cfcc98d2c53cec",
@@ -499621,7 +499630,7 @@ color: purple;
         80959: "b2ff23fba23fbab0",
         80966: "25a8e0b78a7434dd",
         80974: "96d92dc7cb6acb0e",
-        81008: "db9960174c0044d3",
+        81008: "62b7e06dacc81281",
         81009: "738fb8f3944999ac",
         81033: "d66249eb75f5810b",
         81042: "fc2dfb9917027f7b",
@@ -499735,7 +499744,7 @@ color: purple;
         85183: "a337aecbd667067a",
         85207: "8d643d6c68bc3147",
         85221: "56314999c96a88d3",
-        85240: "80ebc41f8ba38182",
+        85240: "81fca2b0fd1de4c5",
         85339: "24b5e9ae513d822c",
         85368: "28eb16370c624cd7",
         85389: "8585748af5ca99bb",
@@ -500533,4 +500542,4 @@ color: purple;
     }),
     A(329563);
 })();
-//# sourceMappingURL=web.6cee3f62e7b90054.js.map
+//# sourceMappingURL=web.cbbfcb1d302a4f0d.js.map
