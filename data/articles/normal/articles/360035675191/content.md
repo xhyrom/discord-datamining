@@ -1,29 +1,38 @@
 <div class="warn-box">🚧 Article under construction! 🚧</div>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li style="list-style-type: none">
+    <li data-list-item-id="ee3b6265509f703ba9bdf1bf43920bc31">
+      <a href="#h_01JZ8MW48MXW1D2PFBSDD3YYDC"
+        >Introduction to Testing Clients</a
+      >
+    </li>
+    <li data-list-item-id="e7e294bdedbcf9c341396fc9c603d08a8">
+      <a href="#h_01JZ8MGFQXEW9JWG0C37GY4KVT"
+        >Where can I download these clients?</a
+      >
       <ul>
-        <li>
-          <a href="#h_01JZ8MW48MXW1D2PFBSDD3YYDC"
-            >Introduction to Testing Clients</a
-          >
+        <li data-list-item-id="e412dd89c7e2800365f8d22328a92cca1">
+          <a href="#h_01JZ8MGFQXV698WKB72EC48PRJ">Browser</a>
         </li>
-        <li>
-          <a href="#h_01JZ8MGFQXEW9JWG0C37GY4KVT"
-            >Where can I download these clients?</a
-          >
-          <ul>
-            <li><a href="#h_01JZ8MGFQXV698WKB72EC48PRJ">Browser</a></li>
-            <li><a href="#h_01JZ8MGFQXZWQSTQDN0M2R2MPK">Windows</a></li>
-            <li><a href="#h_01JZ8MGFQXA70DDY5TYKMA7T5D">MacOS</a></li>
-            <li><a href="#h_01JZ8MGFQXN3ZKQ05W82XNC1R4">Linux</a></li>
-            <li><a href="#h_01JZ8MGFQXGKTZ04NYM5415AGT">iOS</a></li>
-            <li><a href="#h_01HT0CCGC6NZYJ4C7D6G0BAPAD">Android</a></li>
-          </ul>
+        <li data-list-item-id="e8237ddfcaaf2630b66f663f3d51d5aa5">
+          <a href="#h_01JZ8MGFQXZWQSTQDN0M2R2MPK">Windows</a>
+        </li>
+        <li data-list-item-id="e80ae94013622c5f63271ba64e9115ea8">
+          <a href="#h_01JZ8MGFQXA70DDY5TYKMA7T5D">MacOS</a>
+        </li>
+        <li data-list-item-id="e30ff4670b3b303527bb8ea1b3b2859c1">
+          <a href="#h_01JZ8MGFQXN3ZKQ05W82XNC1R4">Linux</a>
+        </li>
+        <li data-list-item-id="e58d39105868beb87194c6af7c3f9d748">
+          <a href="#h_01JZ8MGFQXGKTZ04NYM5415AGT">iOS</a>
+        </li>
+        <li data-list-item-id="e304a79bd7221ce107c6afe9410d896e5">
+          <a href="#h_01HT0CCGC6NZYJ4C7D6G0BAPAD">Android</a>
         </li>
       </ul>
     </li>
@@ -54,15 +63,15 @@
 <h1 id="h_01JZ8MGFQXEW9JWG0C37GY4KVT">Where can I download these clients?</h1>
 <h2 id="h_01JZ8MGFQXV698WKB72EC48PRJ"><strong>Browser</strong></h2>
 <ul>
-  <li>
+  <li data-list-item-id="ec8c33197949ba856fd8c7003ec15336b">
     Stable - <a href="https://discord.com/">https://discord.com/</a> and click
     open Discord.
   </li>
-  <li>
+  <li data-list-item-id="e3ed726d370f5e6956988aeb020cb4059">
     PTB- <a href="https://ptb.discord.com/">https://ptb.discord.com/</a> and
     click open Discord.
   </li>
-  <li>
+  <li data-list-item-id="edb51e1bca5d8b57333c8a6b34abb4353">
     Canary -
     <a href="https://canary.discord.com/">https://canary.discord.com/</a> and
     click open Discord.
@@ -79,11 +88,11 @@
 </p>
 <h2 id="h_01JZ8MGFQXZWQSTQDN0M2R2MPK"><strong>Windows</strong></h2>
 <ul>
-  <li>
+  <li data-list-item-id="e7e6979878044c27b88a410ff424b43f5">
     PTB - Can be found at
     <a href="https://discord.com/download">https://discord.com/download</a>
   </li>
-  <li>
+  <li data-list-item-id="e754b5cdb49b623b6551a07501ce24344">
     Canary 64-bit -
     <a
       href="https://discord.com/api/downloads/distributions/app/installers/latest?platform=win&amp;channel=canary&amp;arch=x64"
@@ -93,11 +102,11 @@
 </ul>
 <h2 id="h_01JZ8MGFQXA70DDY5TYKMA7T5D"><strong>MacOS</strong></h2>
 <ul>
-  <li>
+  <li data-list-item-id="eb9ab65b3659b9b55b85a035104e144d3">
     PTB - Can be found at
     <a href="https://discord.com/download">https://discord.com/download</a>
   </li>
-  <li>
+  <li data-list-item-id="e49d6fe8ee627d88e8db5811335c5b74f">
     Canary -
     <a href="https://discord.com/api/download/canary?platform=osx"
       >https://discord.com/api/download/canary?platform=osx</a
@@ -106,18 +115,32 @@
 </ul>
 <h2 id="h_01JZ8MGFQXN3ZKQ05W82XNC1R4"><strong>Linux</strong></h2>
 <ul>
-  <li>
+  <li data-list-item-id="ec2ef2a9911f4ca26a7453f90ac1c1beb">
     PTB - Can be found at
     <a href="https://discord.com/download">https://discord.com/download</a>
   </li>
-  <li>
+  <li data-list-item-id="edf810f9694c8a224ced05dc405c0d871">
     Canary - Linux deb:
     <a
       href="https://discord.com/api/download/canary?platform=linux&amp;format=deb"
       >https://discord.com/api/download/canary?platform=linux&amp;format=deb</a
     >
   </li>
-  <li>
+  <li data-list-item-id="eb2befe4d7937b04005289e51cfac5412">
+    Canary - Linux rpm:
+    <a
+      href="https://discord.com/api/download/canary?platform=linux&amp;format=rpm"
+      >https://discord.com/api/download/canary?platform=linux&amp;format=rpm</a
+    >
+  </li>
+  <li data-list-item-id="ec08b56c9df851b6aa4dbc0292dd67d75">
+    Canary - Linux pkg.tar.zst:
+    <a
+      href="https://discord.com/api/download/canary?platform=linux&amp;format=pkg.tar.zst"
+      >https://discord.com/api/download/canary?platform=linux&amp;format=pkg.tar.zst</a
+    > 
+  </li>
+  <li data-list-item-id="e8bc5d094a47b4fb18bb8d0b109dee787">
     Canary - Linux tar.gz:
     <a
       href="https://discord.com/api/download/canary?platform=linux&amp;format=tar.gz"
@@ -162,7 +185,7 @@
 </p>
 <h2 id="h_01HT0CCGC6NZYJ4C7D6G0BAPAD"><strong>Android</strong></h2>
 <ul>
-  <li>
+  <li data-list-item-id="eaedf290616f06816f1d15c1a9d8233fc">
     <span style="font-weight: 400"
       >Beta - Follow the steps under <strong>get beta versions</strong> of apps </span
     ><a
@@ -172,7 +195,9 @@
       >https://support.google.com/googleplay/answer/7003180?hl=en</a
     >
   </li>
-  <li><span style="font-weight: 400">Alpha:</span></li>
+  <li data-list-item-id="e4b82f8e8f54a8df1dc3aefa7d1458b2b">
+    <span style="font-weight: 400">Alpha:</span>
+  </li>
 </ul>
 <p><strong>Follow these steps to sign up for Android Alpha!</strong></p>
 <p>Firstly make sure you're logged into your Google account!</p>
@@ -197,11 +222,11 @@
   Once you have joined the group, head over to
   <a
     class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB"
-    tabindex="0"
-    title="https://play.google.com/apps/testing/com.discord"
     href="https://play.google.com/apps/testing/com.discord"
     target="_blank"
-    rel="noreferrer noopener"
+    rel="noopener noreferrer"
+    tabindex="0"
+    title="https://play.google.com/apps/testing/com.discord"
     >https://play.google.com/apps/testing/com.discord</a
   >
   to officially join the alpha program.
