@@ -13565,234 +13565,100 @@ svg.radioIcon_c1e9c4 {
   -moz-text-size-adjust: none;
   text-size-adjust: none;
   background: var(--background-base-lower);
-  color: var(--text-default);
-}
-.theme-dark .hljs-doctag,
-.theme-dark .hljs-keyword,
-.theme-dark .hljs-meta .hljs-keyword,
-.theme-dark .hljs-template-tag,
-.theme-dark .hljs-template-variable,
-.theme-dark .hljs-type,
-.theme-dark .hljs-variable.language_ {
-  color: #ff7b72;
-}
-.theme-dark .hljs-title,
-.theme-dark .hljs-title.class_,
-.theme-dark .hljs-title.class_.inherited__,
-.theme-dark .hljs-title.function_ {
-  color: #d2a8ff;
-}
-.theme-dark .hljs-attr,
-.theme-dark .hljs-attribute,
-.theme-dark .hljs-literal,
-.theme-dark .hljs-meta,
-.theme-dark .hljs-number,
-.theme-dark .hljs-operator,
-.theme-dark .hljs-selector-attr,
-.theme-dark .hljs-selector-class,
-.theme-dark .hljs-selector-id,
-.theme-dark .hljs-variable {
-  color: #79c0ff;
-}
-.theme-dark .hljs-meta .hljs-string,
-.theme-dark .hljs-regexp,
-.theme-dark .hljs-string {
-  color: #a5d6ff;
-}
-.theme-dark .hljs-built_in,
-.theme-dark .hljs-symbol {
-  color: #ffa657;
-}
-.theme-dark .hljs-code,
-.theme-dark .hljs-comment,
-.theme-dark .hljs-formula {
-  color: #8b949e;
-}
-.theme-dark .hljs-name,
-.theme-dark .hljs-quote,
-.theme-dark .hljs-selector-pseudo,
-.theme-dark .hljs-selector-tag {
-  color: #7ee787;
-}
-.theme-dark .hljs-subst {
-  color: #c9d1d9;
-}
-.theme-dark .hljs-section {
-  color: #1f6feb;
-  font-weight: 700;
-}
-.theme-dark .hljs-bullet {
-  color: #f2cc60;
-}
-.theme-dark .hljs-emphasis {
-  color: #c9d1d9;
-  font-style: italic;
-}
-.theme-dark .hljs-strong {
-  color: #c9d1d9;
-  font-weight: 700;
-}
-.theme-dark .hljs-addition {
-  background-color: #033a16;
-  color: #aff5b4;
-}
-.theme-dark .hljs-deletion {
-  background-color: #67060c;
-  color: #ffdcd7;
-}
-.theme-light .hljs-doctag,
-.theme-light .hljs-keyword,
-.theme-light .hljs-meta .hljs-keyword,
-.theme-light .hljs-template-tag,
-.theme-light .hljs-template-variable,
-.theme-light .hljs-type,
-.theme-light .hljs-variable.language_ {
-  color: #d73a49;
-}
-.theme-light .hljs-title,
-.theme-light .hljs-title.class_,
-.theme-light .hljs-title.class_.inherited__,
-.theme-light .hljs-title.function_ {
-  color: #6f42c1;
-}
-.theme-light .hljs-attr,
-.theme-light .hljs-attribute,
-.theme-light .hljs-literal,
-.theme-light .hljs-meta,
-.theme-light .hljs-number,
-.theme-light .hljs-operator,
-.theme-light .hljs-selector-attr,
-.theme-light .hljs-selector-class,
-.theme-light .hljs-selector-id,
-.theme-light .hljs-variable {
-  color: #005cc5;
-}
-.theme-light .hljs-meta .hljs-string,
-.theme-light .hljs-regexp,
-.theme-light .hljs-string {
-  color: #032f62;
-}
-.theme-light .hljs-built_in,
-.theme-light .hljs-symbol {
-  color: #e36209;
-}
-.theme-light .hljs-code,
-.theme-light .hljs-comment,
-.theme-light .hljs-formula {
-  color: #6a737d;
-}
-.theme-light .hljs-name,
-.theme-light .hljs-quote,
-.theme-light .hljs-selector-pseudo,
-.theme-light .hljs-selector-tag {
-  color: #22863a;
-}
-.theme-light .hljs-subst {
-  color: #24292e;
-}
-.theme-light .hljs-section {
-  color: #005cc5;
-  font-weight: 700;
-}
-.theme-light .hljs-bullet {
-  color: #735c0f;
-}
-.theme-light .hljs-emphasis {
-  color: #24292e;
-  font-style: italic;
-}
-.theme-light .hljs-strong {
-  color: #24292e;
-  font-weight: 700;
-}
-.theme-light .hljs-addition {
-  background-color: #f0fff4;
-  color: #22863a;
-}
-.theme-light .hljs-deletion {
-  background-color: #ffeef0;
-  color: #b31d28;
-}
-.hljs_cc310a {
-  border-radius: 4px;
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  text-size-adjust: none;
-  color: var(--text-default);
-}
-.hljs-doctag_cc310a,
-.hljs-keyword_cc310a,
-.hljs-meta_cc310a .hljs-keyword_cc310a,
-.hljs-template-tag_cc310a,
-.hljs-template-variable_cc310a,
-.hljs-type_cc310a,
-.hljs-variable_cc310a.language__cc310a {
-  color: var(--text-code-keyword);
-}
-.hljs-title_cc310a,
-.hljs-title_cc310a.class__cc310a,
-.hljs-title_cc310a.class__cc310a.inherited___cc310a,
-.hljs-title_cc310a.function__cc310a {
-  color: var(--text-code-title);
-}
-.hljs-attr_cc310a,
-.hljs-attribute_cc310a,
-.hljs-literal_cc310a,
-.hljs-meta_cc310a,
-.hljs-number_cc310a,
-.hljs-operator_cc310a,
-.hljs-selector-attr_cc310a,
-.hljs-selector-class_cc310a,
-.hljs-selector-id_cc310a,
-.hljs-variable_cc310a {
-  color: var(--text-code-variable);
-}
-.hljs-meta_cc310a .hljs-string_cc310a,
-.hljs-regexp_cc310a,
-.hljs-string_cc310a {
-  color: var(--text-code-string);
-}
-.hljs-built_in_cc310a,
-.hljs-symbol_cc310a {
-  color: var(--text-code-builtin);
-}
-.hljs-code_cc310a,
-.hljs-comment_cc310a,
-.hljs-formula_cc310a {
-  color: var(--text-code-comment);
-}
-.hljs-name_cc310a,
-.hljs-quote_cc310a,
-.hljs-selector-pseudo_cc310a,
-.hljs-selector-tag_cc310a {
-  color: var(--text-code-tag);
-}
-.hljs-subst_cc310a {
   color: var(--text-code);
 }
-.hljs-section_cc310a {
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-variable.language_ {
+  color: var(--text-code-keyword);
+}
+.hljs-type {
+  color: var(--text-code-type);
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  color: var(--text-code-title);
+}
+.hljs-literal,
+.hljs-params,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-variable {
+  color: var(--text-code-variable);
+}
+.hljs-attr,
+.hljs-attribute {
+  color: var(--text-code-attribute);
+}
+.hljs-meta {
+  color: var(--text-code-decorator);
+}
+.hljs-property {
+  color: var(--text-code-property);
+}
+.hljs-number {
+  color: var(--text-code-number);
+}
+.hljs-operator {
+  color: var(--text-code-operator);
+}
+.hljs-meta .hljs-string,
+.hljs-string {
+  color: var(--text-code-string);
+}
+.hljs-regexp {
+  color: var(--text-code-regexp);
+}
+.hljs-built_in {
+  color: var(--text-code-type);
+}
+.hljs-symbol {
+  color: var(--text-code-builtin);
+}
+.hljs-code,
+.hljs-comment,
+.hljs-formula {
+  color: var(--text-code-comment);
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-pseudo,
+.hljs-selector-tag {
+  color: var(--text-code-tag);
+}
+.hljs-subst {
+  color: var(--text-code);
+}
+.hljs-section {
   color: var(--text-code-section);
   font-weight: 700;
 }
-.hljs-bullet_cc310a {
+.hljs-bullet {
   color: var(--text-code-bullet);
 }
-.hljs-emphasis_cc310a {
+.hljs-emphasis {
   color: var(--text-code);
   font-style: italic;
 }
-.hljs-strong_cc310a {
+.hljs-strong {
   color: var(--text-code);
   font-weight: 700;
 }
-.hljs-addition_cc310a {
+.hljs-link {
+  color: var(--text-code-link);
+  text-decoration: underline;
+}
+.hljs-addition {
   background-color: var(--background-code-addition);
   color: var(--text-code-addition);
 }
-.hljs-deletion_cc310a {
+.hljs-deletion {
   background-color: var(--background-code-deletion);
   color: var(--text-code-deletion);
 }
@@ -28739,122 +28605,115 @@ html:not(.chat-input) .inputInner_b1f01d {
   height: 100%;
   width: 100%;
 }
-.container__63ed3 {
-  --custom-nickname-line-height: 24px;
-  --custom-nickname-icon-size: 16px;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  user-select: text;
-}
-.user-profile-modal .container__63ed3,
-.user-profile-modal-v2 .container__63ed3 {
-  --custom-nickname-line-height: 30px;
-  --custom-nickname-icon-size: 18px;
-}
-.container__63ed3.bot__63ed3 {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.clickableUsername__63ed3 {
-  cursor: pointer;
-}
-.clickableUsername__63ed3:focus-visible .nickname__63ed3,
-.clickableUsername__63ed3:focus-visible .userTagUsername__63ed3,
-.clickableUsername__63ed3:hover .nickname__63ed3,
-.clickableUsername__63ed3:hover .userTagUsername__63ed3 {
-  text-decoration: underline;
-}
-.nickname__63ed3 {
-  overflow: hidden;
-}
-.nickname__63ed3,
-.nicknameWithDisplayNameStyles__63ed3 {
-  max-height: calc(var(--custom-nickname-line-height) * 3);
-  word-break: break-word;
-}
-.nicknameIcons__63ed3 {
-  align-self: flex-start;
-  display: flex;
-  gap: 2px;
-  padding-top: calc(
-    (var(--custom-nickname-line-height) - var(--custom-nickname-icon-size)) / 2
-  );
-}
-.usernameRow__63ed3 {
+.displayNameRow__26b1f {
   align-items: center;
   display: flex;
   flex-direction: row;
   gap: 8px;
+  line-height: 24px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
 }
-.usernameRow__63ed3 .botTag__63ed3 {
+.displayNameRow__26b1f.lg__26b1f {
+  line-height: 30px;
+}
+.displayNameRow__26b1f .botTag__26b1f {
   vertical-align: baseline;
 }
-.tags__63ed3 {
+.displayNameTrailing__26b1f {
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  height: 1lh;
+}
+.clickable__26b1f {
+  cursor: pointer;
+}
+.displayName__26b1f {
+  max-height: 3lh;
+  word-break: break-word;
+}
+.displayName__26b1f.noStyles__26b1f {
+  overflow: hidden;
+}
+.clickable__26b1f:focus-visible .displayName__26b1f.noStyles__26b1f,
+.clickable__26b1f:hover .displayName__26b1f.noStyles__26b1f {
+  text-decoration: underline;
+}
+.usernameAndPronounsRow__26b1f {
   align-items: center;
   -moz-column-gap: 9.33px;
   column-gap: 9.33px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
 }
-.user-profile-popout .tags__63ed3,
-.user-profile-sidebar .tags__63ed3 {
+.user-profile-popout .usernameAndPronounsRow__26b1f,
+.user-profile-sidebar .usernameAndPronounsRow__26b1f {
   row-gap: 2px;
 }
-.user-profile-modal-v2 .tags__63ed3 {
+.user-profile-modal-v2 .usernameAndPronounsRow__26b1f {
   row-gap: 4px;
 }
-.user-profile-modal .tags__63ed3 {
+.user-profile-modal .usernameAndPronounsRow__26b1f {
   row-gap: 8px;
 }
-.tags__63ed3.bot__63ed3,
-.tags__63ed3.pronouns__63ed3 {
+.usernameAndPronounsRow__26b1f.hasPronouns__26b1f,
+.usernameAndPronounsRow__26b1f.isBot__26b1f {
   -moz-column-gap: 6px;
   column-gap: 6px;
 }
-.userTag__63ed3 {
+.usernameAndPronounsRow__26b1f.isBot__26b1f {
+  margin-block-start: 8px;
+}
+.userTag__26b1f {
   font-family: var(--text-strong);
   font-size: 14px;
   font-weight: var(--font-weight-normal);
   line-height: 18px;
 }
-.pronounsTooltip__63ed3 {
-  max-width: 100%;
-}
-.pronounsText__63ed3 {
+.pronouns__26b1f {
   margin-inline-end: 2px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.userTagUsername__63ed3 {
+.userTagUsername__26b1f {
+  color: var(--text-strong);
   display: inline;
   text-overflow: unset;
+  vertical-align: top;
   white-space: normal;
   word-break: break-all;
 }
-.userTagDiscriminator__63ed3,
-.userTagUsername__63ed3 {
+.clickable__26b1f:focus-visible .userTagUsername__26b1f,
+.clickable__26b1f:hover .userTagUsername__26b1f {
+  text-decoration: underline;
+}
+.userTagDiscriminator__26b1f {
   color: var(--text-strong);
   vertical-align: top;
 }
-.dotSpacer__63ed3 {
+.dotSpacer__26b1f {
   background-color: var(--text-default);
   border-radius: 50%;
   height: 4px;
   width: 4px;
 }
-.guildTagContainer__63ed3 {
+.guildTagContainer__26b1f {
   border: 1px solid var(--user-profile-border);
   border-radius: var(--radius-sm);
   box-sizing: border-box;
   height: 20px;
 }
-.guildTagContainer__63ed3:hover {
+.guildTagContainer__26b1f:hover {
   background-color: var(--user-profile-background-hover);
 }
-.guildTag__63ed3 {
+.guildTag__26b1f {
   background: unset;
   margin: 0 auto;
 }
@@ -33800,18 +33659,29 @@ html.disable-forced-colors * {
   --switch-thumb-icon-active: var(--blurple-50);
   --switch-thumb-icon-default: var(--neutral-71);
   --text-brand: var(--blurple-26);
-  --text-code: var(--blue-new-8);
-  --text-code-addition: var(--green-new-9);
-  --text-code-builtin: var(--orange-new-6);
-  --text-code-bullet: var(--yellow-new-15);
+  --text-code: var(--neutral-1);
+  --text-code-addition: var(--green-new-14);
+  --text-code-attribute: var(--blue-new-14);
+  --text-code-builtin: var(--yellow-new-29);
+  --text-code-bullet: var(--blue-new-14);
   --text-code-comment: var(--neutral-21);
-  --text-code-deletion: var(--red-new-5);
-  --text-code-keyword: var(--red-new-5);
-  --text-code-section: var(--blue-new-8);
-  --text-code-string: var(--teal-new-10);
-  --text-code-tag: var(--green-new-4);
-  --text-code-title: var(--blurple-1);
-  --text-code-variable: var(--blue-new-3);
+  --text-code-decorator: var(--yellow-new-29);
+  --text-code-deletion: var(--red-new-10);
+  --text-code-error: var(--red-new-10);
+  --text-code-escape: var(--pink-13);
+  --text-code-keyword: var(--red-new-10);
+  --text-code-link: var(--blue-new-14);
+  --text-code-namespace: var(--blue-new-14);
+  --text-code-number: var(--orange-new-12);
+  --text-code-operator: var(--red-new-5);
+  --text-code-property: var(--teal-new-15);
+  --text-code-regexp: var(--green-new-15);
+  --text-code-section: var(--red-new-10);
+  --text-code-string: var(--green-new-15);
+  --text-code-tag: var(--pink-13);
+  --text-code-title: var(--blurple-13);
+  --text-code-type: var(--pink-13);
+  --text-code-variable: var(--neutral-1);
   --text-default: var(--neutral-4);
   --text-feedback-critical: var(--red-new-18);
   --text-feedback-info: var(--blue-new-21);
@@ -35314,25 +35184,31 @@ html.disable-forced-colors * {
     );
     --text-code: color-mix(
       in oklab,
-      var(--blue-new-8) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-addition: color-mix(
       in oklab,
-      var(--green-new-9) 100%,
+      var(--green-new-14) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-attribute: color-mix(
+      in oklab,
+      var(--blue-new-14) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-builtin: color-mix(
       in oklab,
-      var(--orange-new-6) 100%,
+      var(--yellow-new-29) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-bullet: color-mix(
       in oklab,
-      var(--yellow-new-15) 100%,
+      var(--blue-new-14) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -35342,45 +35218,105 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-decorator: color-mix(
+      in oklab,
+      var(--yellow-new-29) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-deletion: color-mix(
       in oklab,
-      var(--red-new-5) 100%,
+      var(--red-new-10) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-error: color-mix(
+      in oklab,
+      var(--red-new-10) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-escape: color-mix(
+      in oklab,
+      var(--pink-13) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-keyword: color-mix(
       in oklab,
+      var(--red-new-10) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-link: color-mix(
+      in oklab,
+      var(--blue-new-14) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-namespace: color-mix(
+      in oklab,
+      var(--blue-new-14) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-number: color-mix(
+      in oklab,
+      var(--orange-new-12) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-operator: color-mix(
+      in oklab,
       var(--red-new-5) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-property: color-mix(
+      in oklab,
+      var(--teal-new-15) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-regexp: color-mix(
+      in oklab,
+      var(--green-new-15) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-section: color-mix(
       in oklab,
-      var(--blue-new-8) 100%,
+      var(--red-new-10) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-string: color-mix(
       in oklab,
-      var(--teal-new-10) 100%,
+      var(--green-new-15) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-tag: color-mix(
       in oklab,
-      var(--green-new-4) 100%,
+      var(--pink-13) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-title: color-mix(
       in oklab,
-      var(--blurple-1) 100%,
+      var(--blurple-13) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-type: color-mix(
+      in oklab,
+      var(--pink-13) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-variable: color-mix(
       in oklab,
-      var(--blue-new-3) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -36197,18 +36133,29 @@ html.disable-forced-colors * {
   --switch-thumb-icon-active: var(--blurple-50);
   --switch-thumb-icon-default: var(--neutral-1);
   --text-brand: var(--blurple-53);
-  --text-code: var(--blue-new-66);
-  --text-code-addition: var(--green-new-70);
-  --text-code-builtin: var(--orange-new-65);
-  --text-code-bullet: var(--yellow-new-78);
+  --text-code: var(--neutral-66);
+  --text-code-addition: var(--green-new-65);
+  --text-code-attribute: var(--blue-new-62);
+  --text-code-builtin: var(--yellow-new-75);
+  --text-code-bullet: var(--blue-new-62);
   --text-code-comment: var(--neutral-42);
-  --text-code-deletion: var(--red-new-68);
-  --text-code-keyword: var(--red-new-65);
-  --text-code-section: var(--blue-new-66);
-  --text-code-string: var(--teal-new-68);
-  --text-code-tag: var(--green-new-71);
-  --text-code-title: var(--blurple-70);
-  --text-code-variable: var(--blue-new-70);
+  --text-code-decorator: var(--yellow-new-75);
+  --text-code-deletion: var(--red-new-63);
+  --text-code-error: var(--red-new-60);
+  --text-code-escape: var(--pink-70);
+  --text-code-keyword: var(--red-new-60);
+  --text-code-link: var(--blue-new-62);
+  --text-code-namespace: var(--blue-new-62);
+  --text-code-number: var(--orange-new-61);
+  --text-code-operator: var(--red-new-65);
+  --text-code-property: var(--teal-new-63);
+  --text-code-regexp: var(--green-new-62);
+  --text-code-section: var(--red-new-60);
+  --text-code-string: var(--green-new-62);
+  --text-code-tag: var(--pink-70);
+  --text-code-title: var(--blurple-62);
+  --text-code-type: var(--pink-70);
+  --text-code-variable: var(--neutral-66);
   --text-default: var(--neutral-72);
   --text-feedback-critical: var(--red-new-56);
   --text-feedback-info: var(--blue-new-58);
@@ -37711,25 +37658,31 @@ html.disable-forced-colors * {
     );
     --text-code: color-mix(
       in oklab,
-      var(--blue-new-66) 100%,
+      var(--neutral-66) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-addition: color-mix(
       in oklab,
-      var(--green-new-70) 100%,
+      var(--green-new-65) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-attribute: color-mix(
+      in oklab,
+      var(--blue-new-62) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-builtin: color-mix(
       in oklab,
-      var(--orange-new-65) 100%,
+      var(--yellow-new-75) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-bullet: color-mix(
       in oklab,
-      var(--yellow-new-78) 100%,
+      var(--blue-new-62) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -37739,45 +37692,105 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-decorator: color-mix(
+      in oklab,
+      var(--yellow-new-75) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-deletion: color-mix(
       in oklab,
-      var(--red-new-68) 100%,
+      var(--red-new-63) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-error: color-mix(
+      in oklab,
+      var(--red-new-60) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-escape: color-mix(
+      in oklab,
+      var(--pink-70) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-keyword: color-mix(
       in oklab,
+      var(--red-new-60) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-link: color-mix(
+      in oklab,
+      var(--blue-new-62) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-namespace: color-mix(
+      in oklab,
+      var(--blue-new-62) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-number: color-mix(
+      in oklab,
+      var(--orange-new-61) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-operator: color-mix(
+      in oklab,
       var(--red-new-65) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-property: color-mix(
+      in oklab,
+      var(--teal-new-63) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-regexp: color-mix(
+      in oklab,
+      var(--green-new-62) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-section: color-mix(
       in oklab,
-      var(--blue-new-66) 100%,
+      var(--red-new-60) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-string: color-mix(
       in oklab,
-      var(--teal-new-68) 100%,
+      var(--green-new-62) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-tag: color-mix(
       in oklab,
-      var(--green-new-71) 100%,
+      var(--pink-70) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-title: color-mix(
       in oklab,
-      var(--blurple-70) 100%,
+      var(--blurple-62) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-type: color-mix(
+      in oklab,
+      var(--pink-70) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-variable: color-mix(
       in oklab,
-      var(--blue-new-70) 100%,
+      var(--neutral-66) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -38594,18 +38607,29 @@ html.disable-forced-colors * {
   --switch-thumb-icon-active: var(--blurple-50);
   --switch-thumb-icon-default: var(--neutral-71);
   --text-brand: var(--blurple-42);
-  --text-code: var(--blue-new-25);
-  --text-code-addition: var(--green-new-24);
-  --text-code-builtin: var(--orange-new-23);
-  --text-code-bullet: var(--yellow-new-51);
+  --text-code: var(--neutral-13);
+  --text-code-addition: var(--green-new-29);
+  --text-code-attribute: var(--blue-new-31);
+  --text-code-builtin: var(--yellow-new-55);
+  --text-code-bullet: var(--blue-new-31);
   --text-code-comment: var(--neutral-32);
-  --text-code-deletion: var(--red-new-21);
-  --text-code-keyword: var(--red-new-22);
-  --text-code-section: var(--blue-new-25);
-  --text-code-string: var(--teal-new-26);
-  --text-code-tag: var(--green-new-21);
-  --text-code-title: var(--blurple-19);
-  --text-code-variable: var(--blue-new-20);
+  --text-code-decorator: var(--yellow-new-55);
+  --text-code-deletion: var(--red-new-27);
+  --text-code-error: var(--red-new-28);
+  --text-code-escape: var(--pink-41);
+  --text-code-keyword: var(--red-new-28);
+  --text-code-link: var(--blue-new-31);
+  --text-code-namespace: var(--blue-new-31);
+  --text-code-number: var(--orange-new-29);
+  --text-code-operator: var(--red-new-22);
+  --text-code-property: var(--teal-new-31);
+  --text-code-regexp: var(--green-new-31);
+  --text-code-section: var(--red-new-28);
+  --text-code-string: var(--green-new-31);
+  --text-code-tag: var(--pink-41);
+  --text-code-title: var(--blurple-30);
+  --text-code-type: var(--pink-41);
+  --text-code-variable: var(--neutral-13);
   --text-default: var(--neutral-10);
   --text-feedback-critical: var(--red-new-34);
   --text-feedback-info: var(--blue-new-37);
@@ -40110,25 +40134,31 @@ html.disable-forced-colors * {
     );
     --text-code: color-mix(
       in oklab,
-      var(--blue-new-25) 100%,
+      var(--neutral-13) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-addition: color-mix(
       in oklab,
-      var(--green-new-24) 100%,
+      var(--green-new-29) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-attribute: color-mix(
+      in oklab,
+      var(--blue-new-31) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-builtin: color-mix(
       in oklab,
-      var(--orange-new-23) 100%,
+      var(--yellow-new-55) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-bullet: color-mix(
       in oklab,
-      var(--yellow-new-51) 100%,
+      var(--blue-new-31) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -40138,45 +40168,105 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-decorator: color-mix(
+      in oklab,
+      var(--yellow-new-55) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-deletion: color-mix(
       in oklab,
-      var(--red-new-21) 100%,
+      var(--red-new-27) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-error: color-mix(
+      in oklab,
+      var(--red-new-28) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-escape: color-mix(
+      in oklab,
+      var(--pink-41) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-keyword: color-mix(
       in oklab,
+      var(--red-new-28) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-link: color-mix(
+      in oklab,
+      var(--blue-new-31) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-namespace: color-mix(
+      in oklab,
+      var(--blue-new-31) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-number: color-mix(
+      in oklab,
+      var(--orange-new-29) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-operator: color-mix(
+      in oklab,
       var(--red-new-22) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-property: color-mix(
+      in oklab,
+      var(--teal-new-31) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-regexp: color-mix(
+      in oklab,
+      var(--green-new-31) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-section: color-mix(
       in oklab,
-      var(--blue-new-25) 100%,
+      var(--red-new-28) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-string: color-mix(
       in oklab,
-      var(--teal-new-26) 100%,
+      var(--green-new-31) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-tag: color-mix(
       in oklab,
-      var(--green-new-21) 100%,
+      var(--pink-41) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-title: color-mix(
       in oklab,
-      var(--blurple-19) 100%,
+      var(--blurple-30) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-type: color-mix(
+      in oklab,
+      var(--pink-41) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-variable: color-mix(
       in oklab,
-      var(--blue-new-20) 100%,
+      var(--neutral-13) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -41007,18 +41097,29 @@ html.disable-forced-colors * {
   --switch-thumb-icon-active: var(--blurple-50);
   --switch-thumb-icon-default: var(--neutral-71);
   --text-brand: var(--blurple-36);
-  --text-code: var(--blue-new-19);
-  --text-code-addition: var(--green-new-18);
-  --text-code-builtin: var(--orange-new-17);
-  --text-code-bullet: var(--yellow-new-40);
+  --text-code: var(--neutral-8);
+  --text-code-addition: var(--green-new-23);
+  --text-code-attribute: var(--blue-new-24);
+  --text-code-builtin: var(--yellow-new-51);
+  --text-code-bullet: var(--blue-new-24);
   --text-code-comment: var(--neutral-28);
-  --text-code-deletion: var(--red-new-14);
-  --text-code-keyword: var(--red-new-15);
-  --text-code-section: var(--blue-new-19);
-  --text-code-string: var(--teal-new-20);
-  --text-code-tag: var(--green-new-15);
-  --text-code-title: var(--blurple-12);
-  --text-code-variable: var(--blue-new-14);
+  --text-code-decorator: var(--yellow-new-51);
+  --text-code-deletion: var(--red-new-21);
+  --text-code-error: var(--red-new-21);
+  --text-code-escape: var(--pink-29);
+  --text-code-keyword: var(--red-new-21);
+  --text-code-link: var(--blue-new-24);
+  --text-code-namespace: var(--blue-new-24);
+  --text-code-number: var(--orange-new-22);
+  --text-code-operator: var(--red-new-15);
+  --text-code-property: var(--teal-new-25);
+  --text-code-regexp: var(--green-new-25);
+  --text-code-section: var(--red-new-21);
+  --text-code-string: var(--green-new-25);
+  --text-code-tag: var(--pink-29);
+  --text-code-title: var(--blurple-23);
+  --text-code-type: var(--pink-29);
+  --text-code-variable: var(--neutral-8);
   --text-default: var(--neutral-5);
   --text-feedback-critical: var(--red-new-28);
   --text-feedback-info: var(--blue-new-31);
@@ -42521,25 +42622,31 @@ html.disable-forced-colors * {
     );
     --text-code: color-mix(
       in oklab,
-      var(--blue-new-19) 100%,
+      var(--neutral-8) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-addition: color-mix(
       in oklab,
-      var(--green-new-18) 100%,
+      var(--green-new-23) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-attribute: color-mix(
+      in oklab,
+      var(--blue-new-24) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-builtin: color-mix(
       in oklab,
-      var(--orange-new-17) 100%,
+      var(--yellow-new-51) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-bullet: color-mix(
       in oklab,
-      var(--yellow-new-40) 100%,
+      var(--blue-new-24) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -42549,45 +42656,105 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-decorator: color-mix(
+      in oklab,
+      var(--yellow-new-51) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-deletion: color-mix(
       in oklab,
-      var(--red-new-14) 100%,
+      var(--red-new-21) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-error: color-mix(
+      in oklab,
+      var(--red-new-21) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-escape: color-mix(
+      in oklab,
+      var(--pink-29) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-keyword: color-mix(
       in oklab,
+      var(--red-new-21) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-link: color-mix(
+      in oklab,
+      var(--blue-new-24) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-namespace: color-mix(
+      in oklab,
+      var(--blue-new-24) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-number: color-mix(
+      in oklab,
+      var(--orange-new-22) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-operator: color-mix(
+      in oklab,
       var(--red-new-15) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-property: color-mix(
+      in oklab,
+      var(--teal-new-25) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-regexp: color-mix(
+      in oklab,
+      var(--green-new-25) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-section: color-mix(
       in oklab,
-      var(--blue-new-19) 100%,
+      var(--red-new-21) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-string: color-mix(
       in oklab,
-      var(--teal-new-20) 100%,
+      var(--green-new-25) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-tag: color-mix(
       in oklab,
-      var(--green-new-15) 100%,
+      var(--pink-29) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-title: color-mix(
       in oklab,
-      var(--blurple-12) 100%,
+      var(--blurple-23) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-type: color-mix(
+      in oklab,
+      var(--pink-29) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-variable: color-mix(
       in oklab,
-      var(--blue-new-14) 100%,
+      var(--neutral-8) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -43016,18 +43183,29 @@ html.disable-forced-colors * {
   --tab-label-text-focused: var(--neutral-1);
   --tablerow-icon-color-default: var(--neutral-2);
   --text-brand: var(--brand-230);
-  --text-code: var(--blue-new-1);
+  --text-code: var(--neutral-1);
   --text-code-addition: var(--green-new-2);
-  --text-code-builtin: var(--orange-new-1);
-  --text-code-bullet: var(--yellow-new-1);
+  --text-code-attribute: var(--blue-new-1);
+  --text-code-builtin: var(--yellow-new-1);
+  --text-code-bullet: var(--blue-new-1);
   --text-code-comment: var(--neutral-15);
+  --text-code-decorator: var(--yellow-new-1);
   --text-code-deletion: var(--red-new-1);
+  --text-code-error: var(--red-new-1);
+  --text-code-escape: var(--pink-1);
   --text-code-keyword: var(--red-new-1);
-  --text-code-section: var(--blue-new-1);
-  --text-code-string: var(--teal-new-3);
-  --text-code-tag: var(--green-new-3);
+  --text-code-link: var(--blue-new-1);
+  --text-code-namespace: var(--blue-new-1);
+  --text-code-number: var(--orange-new-1);
+  --text-code-operator: var(--red-new-1);
+  --text-code-property: var(--teal-new-3);
+  --text-code-regexp: var(--green-new-3);
+  --text-code-section: var(--red-new-1);
+  --text-code-string: var(--green-new-3);
+  --text-code-tag: var(--pink-1);
   --text-code-title: var(--blue-new-1);
-  --text-code-variable: var(--blue-new-1);
+  --text-code-type: var(--pink-1);
+  --text-code-variable: var(--neutral-1);
   --text-default: var(--neutral-1);
   --text-feedback-critical: var(--red-new-5);
   --text-feedback-info: var(--blue-new-8);
@@ -43653,7 +43831,7 @@ html.disable-forced-colors * {
     );
     --text-code: color-mix(
       in oklab,
-      var(--blue-new-1) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -43663,15 +43841,21 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-attribute: color-mix(
+      in oklab,
+      var(--blue-new-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-builtin: color-mix(
       in oklab,
-      var(--orange-new-1) 100%,
+      var(--yellow-new-1) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-bullet: color-mix(
       in oklab,
-      var(--yellow-new-1) 100%,
+      var(--blue-new-1) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -43681,9 +43865,27 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-decorator: color-mix(
+      in oklab,
+      var(--yellow-new-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-deletion: color-mix(
       in oklab,
       var(--red-new-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-error: color-mix(
+      in oklab,
+      var(--red-new-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-escape: color-mix(
+      in oklab,
+      var(--pink-1) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -43693,21 +43895,57 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-section: color-mix(
+    --text-code-link: color-mix(
       in oklab,
       var(--blue-new-1) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-string: color-mix(
+    --text-code-namespace: color-mix(
+      in oklab,
+      var(--blue-new-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-number: color-mix(
+      in oklab,
+      var(--orange-new-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-operator: color-mix(
+      in oklab,
+      var(--red-new-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-property: color-mix(
       in oklab,
       var(--teal-new-3) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-tag: color-mix(
+    --text-code-regexp: color-mix(
       in oklab,
       var(--green-new-3) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-section: color-mix(
+      in oklab,
+      var(--red-new-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-string: color-mix(
+      in oklab,
+      var(--green-new-3) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-tag: color-mix(
+      in oklab,
+      var(--pink-1) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -43717,9 +43955,15 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-type: color-mix(
+      in oklab,
+      var(--pink-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-variable: color-mix(
       in oklab,
-      var(--blue-new-1) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -44050,18 +44294,29 @@ html.disable-forced-colors * {
   --tab-label-text-focused: var(--neutral-100);
   --tablerow-icon-color-default: var(--neutral-64);
   --text-brand: var(--brand-600);
-  --text-code: var(--blue-new-74);
+  --text-code: var(--neutral-71);
   --text-code-addition: var(--green-new-79);
-  --text-code-builtin: var(--orange-new-74);
-  --text-code-bullet: var(--yellow-new-83);
+  --text-code-attribute: var(--blue-new-74);
+  --text-code-builtin: var(--yellow-new-83);
+  --text-code-bullet: var(--blue-new-74);
   --text-code-comment: var(--neutral-49);
+  --text-code-decorator: var(--yellow-new-83);
   --text-code-deletion: var(--red-new-77);
+  --text-code-error: var(--red-new-73);
+  --text-code-escape: var(--pink-80);
   --text-code-keyword: var(--red-new-73);
-  --text-code-section: var(--blue-new-74);
-  --text-code-string: var(--teal-new-76);
-  --text-code-tag: var(--green-new-76);
+  --text-code-link: var(--blue-new-74);
+  --text-code-namespace: var(--blue-new-74);
+  --text-code-number: var(--orange-new-74);
+  --text-code-operator: var(--red-new-73);
+  --text-code-property: var(--teal-new-76);
+  --text-code-regexp: var(--green-new-76);
+  --text-code-section: var(--red-new-73);
+  --text-code-string: var(--green-new-76);
+  --text-code-tag: var(--pink-80);
   --text-code-title: var(--blue-new-74);
-  --text-code-variable: var(--blue-new-74);
+  --text-code-type: var(--pink-80);
+  --text-code-variable: var(--neutral-71);
   --text-default: var(--neutral-80);
   --text-feedback-critical: var(--red-new-66);
   --text-feedback-info: var(--blue-new-68);
@@ -44687,7 +44942,7 @@ html.disable-forced-colors * {
     );
     --text-code: color-mix(
       in oklab,
-      var(--blue-new-74) 100%,
+      var(--neutral-71) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -44697,15 +44952,21 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-attribute: color-mix(
+      in oklab,
+      var(--blue-new-74) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-builtin: color-mix(
       in oklab,
-      var(--orange-new-74) 100%,
+      var(--yellow-new-83) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-bullet: color-mix(
       in oklab,
-      var(--yellow-new-83) 100%,
+      var(--blue-new-74) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -44715,9 +44976,27 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-decorator: color-mix(
+      in oklab,
+      var(--yellow-new-83) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-deletion: color-mix(
       in oklab,
       var(--red-new-77) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-error: color-mix(
+      in oklab,
+      var(--red-new-73) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-escape: color-mix(
+      in oklab,
+      var(--pink-80) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -44727,21 +45006,57 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-section: color-mix(
+    --text-code-link: color-mix(
       in oklab,
       var(--blue-new-74) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-string: color-mix(
+    --text-code-namespace: color-mix(
+      in oklab,
+      var(--blue-new-74) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-number: color-mix(
+      in oklab,
+      var(--orange-new-74) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-operator: color-mix(
+      in oklab,
+      var(--red-new-73) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-property: color-mix(
       in oklab,
       var(--teal-new-76) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-tag: color-mix(
+    --text-code-regexp: color-mix(
       in oklab,
       var(--green-new-76) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-section: color-mix(
+      in oklab,
+      var(--red-new-73) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-string: color-mix(
+      in oklab,
+      var(--green-new-76) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-tag: color-mix(
+      in oklab,
+      var(--pink-80) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -44751,9 +45066,15 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-type: color-mix(
+      in oklab,
+      var(--pink-80) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-variable: color-mix(
       in oklab,
-      var(--blue-new-74) 100%,
+      var(--neutral-71) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -45092,18 +45413,29 @@ html.disable-forced-colors * {
   --tab-label-text-focused: var(--neutral-1);
   --tablerow-icon-color-default: var(--neutral-15);
   --text-brand: var(--brand-345);
-  --text-code: var(--blue-new-20);
+  --text-code: var(--neutral-14);
   --text-code-addition: var(--green-new-20);
-  --text-code-builtin: var(--orange-new-19);
-  --text-code-bullet: var(--yellow-new-44);
+  --text-code-attribute: var(--blue-new-20);
+  --text-code-builtin: var(--yellow-new-44);
+  --text-code-bullet: var(--blue-new-20);
   --text-code-comment: var(--neutral-27);
+  --text-code-decorator: var(--yellow-new-44);
   --text-code-deletion: var(--red-new-16);
+  --text-code-error: var(--red-new-17);
+  --text-code-escape: var(--pink-23);
   --text-code-keyword: var(--red-new-17);
-  --text-code-section: var(--blue-new-20);
-  --text-code-string: var(--teal-new-22);
-  --text-code-tag: var(--green-new-21);
+  --text-code-link: var(--blue-new-20);
+  --text-code-namespace: var(--blue-new-20);
+  --text-code-number: var(--orange-new-19);
+  --text-code-operator: var(--red-new-17);
+  --text-code-property: var(--teal-new-22);
+  --text-code-regexp: var(--green-new-21);
+  --text-code-section: var(--red-new-17);
+  --text-code-string: var(--green-new-21);
+  --text-code-tag: var(--pink-23);
   --text-code-title: var(--blue-new-20);
-  --text-code-variable: var(--blue-new-20);
+  --text-code-type: var(--pink-23);
+  --text-code-variable: var(--neutral-14);
   --text-default: var(--neutral-6);
   --text-feedback-critical: var(--red-new-23);
   --text-feedback-info: var(--blue-new-25);
@@ -45729,7 +46061,7 @@ html.disable-forced-colors * {
     );
     --text-code: color-mix(
       in oklab,
-      var(--blue-new-20) 100%,
+      var(--neutral-14) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -45739,15 +46071,21 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-attribute: color-mix(
+      in oklab,
+      var(--blue-new-20) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-builtin: color-mix(
       in oklab,
-      var(--orange-new-19) 100%,
+      var(--yellow-new-44) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-bullet: color-mix(
       in oklab,
-      var(--yellow-new-44) 100%,
+      var(--blue-new-20) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -45757,9 +46095,27 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-decorator: color-mix(
+      in oklab,
+      var(--yellow-new-44) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-deletion: color-mix(
       in oklab,
       var(--red-new-16) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-error: color-mix(
+      in oklab,
+      var(--red-new-17) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-escape: color-mix(
+      in oklab,
+      var(--pink-23) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -45769,21 +46125,57 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-section: color-mix(
+    --text-code-link: color-mix(
       in oklab,
       var(--blue-new-20) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-string: color-mix(
+    --text-code-namespace: color-mix(
+      in oklab,
+      var(--blue-new-20) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-number: color-mix(
+      in oklab,
+      var(--orange-new-19) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-operator: color-mix(
+      in oklab,
+      var(--red-new-17) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-property: color-mix(
       in oklab,
       var(--teal-new-22) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-tag: color-mix(
+    --text-code-regexp: color-mix(
       in oklab,
       var(--green-new-21) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-section: color-mix(
+      in oklab,
+      var(--red-new-17) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-string: color-mix(
+      in oklab,
+      var(--green-new-21) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-tag: color-mix(
+      in oklab,
+      var(--pink-23) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -45793,9 +46185,15 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-type: color-mix(
+      in oklab,
+      var(--pink-23) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-variable: color-mix(
       in oklab,
-      var(--blue-new-20) 100%,
+      var(--neutral-14) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -46128,18 +46526,29 @@ html.disable-forced-colors * {
   --tab-label-text-focused: var(--neutral-1);
   --tablerow-icon-color-default: var(--neutral-10);
   --text-brand: var(--brand-330);
-  --text-code: var(--blue-new-14);
+  --text-code: var(--neutral-9);
   --text-code-addition: var(--green-new-14);
-  --text-code-builtin: var(--orange-new-12);
-  --text-code-bullet: var(--yellow-new-29);
+  --text-code-attribute: var(--blue-new-14);
+  --text-code-builtin: var(--yellow-new-29);
+  --text-code-bullet: var(--blue-new-14);
   --text-code-comment: var(--neutral-23);
+  --text-code-decorator: var(--yellow-new-29);
   --text-code-deletion: var(--red-new-9);
+  --text-code-error: var(--red-new-10);
+  --text-code-escape: var(--pink-13);
   --text-code-keyword: var(--red-new-10);
-  --text-code-section: var(--blue-new-14);
-  --text-code-string: var(--teal-new-15);
-  --text-code-tag: var(--green-new-15);
+  --text-code-link: var(--blue-new-14);
+  --text-code-namespace: var(--blue-new-14);
+  --text-code-number: var(--orange-new-12);
+  --text-code-operator: var(--red-new-10);
+  --text-code-property: var(--teal-new-15);
+  --text-code-regexp: var(--green-new-15);
+  --text-code-section: var(--red-new-10);
+  --text-code-string: var(--green-new-15);
+  --text-code-tag: var(--pink-13);
   --text-code-title: var(--blue-new-14);
-  --text-code-variable: var(--blue-new-14);
+  --text-code-type: var(--pink-13);
+  --text-code-variable: var(--neutral-9);
   --text-default: var(--neutral-1);
   --text-feedback-critical: var(--red-new-16);
   --text-feedback-info: var(--blue-new-19);
@@ -46765,7 +47174,7 @@ html.disable-forced-colors * {
     );
     --text-code: color-mix(
       in oklab,
-      var(--blue-new-14) 100%,
+      var(--neutral-9) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -46775,15 +47184,21 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-attribute: color-mix(
+      in oklab,
+      var(--blue-new-14) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-builtin: color-mix(
       in oklab,
-      var(--orange-new-12) 100%,
+      var(--yellow-new-29) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
     --text-code-bullet: color-mix(
       in oklab,
-      var(--yellow-new-29) 100%,
+      var(--blue-new-14) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -46793,9 +47208,27 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-decorator: color-mix(
+      in oklab,
+      var(--yellow-new-29) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-deletion: color-mix(
       in oklab,
       var(--red-new-9) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-error: color-mix(
+      in oklab,
+      var(--red-new-10) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-escape: color-mix(
+      in oklab,
+      var(--pink-13) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -46805,21 +47238,57 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-section: color-mix(
+    --text-code-link: color-mix(
       in oklab,
       var(--blue-new-14) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-string: color-mix(
+    --text-code-namespace: color-mix(
+      in oklab,
+      var(--blue-new-14) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-number: color-mix(
+      in oklab,
+      var(--orange-new-12) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-operator: color-mix(
+      in oklab,
+      var(--red-new-10) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-property: color-mix(
       in oklab,
       var(--teal-new-15) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
-    --text-code-tag: color-mix(
+    --text-code-regexp: color-mix(
       in oklab,
       var(--green-new-15) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-section: color-mix(
+      in oklab,
+      var(--red-new-10) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-string: color-mix(
+      in oklab,
+      var(--green-new-15) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --text-code-tag: color-mix(
+      in oklab,
+      var(--pink-13) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -46829,9 +47298,15 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --text-code-type: color-mix(
+      in oklab,
+      var(--pink-13) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-code-variable: color-mix(
       in oklab,
-      var(--blue-new-14) 100%,
+      var(--neutral-9) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
@@ -51508,4 +51983,4 @@ html.disable-forced-colors * {
   --channels-spine-offset-left: 28px;
 }
 
-/*# sourceMappingURL=72667.159be45d6ee861a7.css.map*/
+/*# sourceMappingURL=72667.596b4fa5bd4fe2ca.css.map*/

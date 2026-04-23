@@ -33482,7 +33482,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534403, Version Hash: 5b2ab1d2bfa15ab3394bcd0143cf10b2ef567707`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534481, Version Hash: 2722b4491c7918a1ca4fbd2563b25ef17360b1fc`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -57467,7 +57467,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "5b2ab1d2bfa15ab3394bcd0143cf10b2ef567707" === e.body.hash
+                  "2722b4491c7918a1ca4fbd2563b25ef17360b1fc" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -65335,10 +65335,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534403")),
+                ((e = parseInt("534481")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534403",
+                    "Trying to open a changelog for an invalid build number 534481",
                   ),
                   (e = 0)),
                 e),
@@ -98873,7 +98873,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534403", versionHash: "5b2ab1d2bfa15ab3394bcd0143cf10b2ef567707" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534481", versionHash: "2722b4491c7918a1ca4fbd2563b25ef17360b1fc" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -179542,13 +179542,20 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     99696(e, t, n) {
       "use strict";
-      n.d(t, { HF: () => _, Ng: () => l, Qp: () => o, cV: () => d });
+      n.d(t, {
+        HF: () => c,
+        Ng: () => d,
+        Qp: () => l,
+        cV: () => u,
+        tn: () => _,
+      });
       var i = n(627968);
       n(64700);
       var r = n(636537),
         s = n(192308),
-        a = n(652215);
-      async function o(e) {
+        a = n(652215),
+        o = n(985018);
+      async function l(e) {
         return (
           await r.Bo.post({
             url: a.Rsh.BILLING_GIFT_CARD_VIEW,
@@ -179558,7 +179565,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           })
         ).body;
       }
-      async function l(e, t, n) {
+      async function d(e, t, n) {
         try {
           let i = await r.Bo.post({
             url: a.Rsh.BILLING_GIFT_CARD_REDEEM,
@@ -179575,7 +179582,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           throw e;
         }
       }
-      function d(e) {
+      function _(e) {
+        return e?.body?.code === a.t02.GIFT_CARD_ALREADY_REDEEMED
+          ? o.intl.string(o.t.oLIl4o)
+          : o.intl.string(o.t.OBnXjv);
+      }
+      function u(e) {
         let { amountRedeemed: t, currencyCode: r, loadId: a, onClose: o } = e;
         (0, s.openModalLazy)(async () => {
           let { default: e } = await n.e("98399").then(n.bind(n, 367504));
@@ -179591,7 +179603,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             });
         });
       }
-      function _() {
+      function c() {
         let e =
             arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
           {
@@ -188206,7 +188218,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       }
       var j = n(685073),
         W = n(694720),
-        Y = n(586644),
+        Y = n(878555),
         K = n(442228),
         z = n(192867),
         $ = n(351906),
@@ -188245,20 +188257,20 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           className: q.rf,
           inert: !0,
           children: [
-            (0, i.jsx)(Y.A, {
+            (0, i.jsx)(Y.Ay, {
               user: t,
               guildId: r?.id,
+              displayName: S,
+              pendingDisplayNameStyles: E,
               usernameIcon: (() => {
                 if (null != p) {
                   if (null !== s && (null != p.avatar || null != s))
                     return (0, i.jsx)(z.A, { user: t, nickname: S });
                 }
               })(),
-              nickname: S,
-              pendingDisplayNameStyles: E,
               pronouns: T,
               primaryGuild: N,
-              tags: (0, i.jsx)(W.A, {
+              trailing: (0, i.jsx)(W.A, {
                 displayProfile: n,
                 themeType: F.d.POPOUT,
                 pendingLegacyUsernameDisabled: u,
@@ -199828,22 +199840,19 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 });
               let _ = null != t.animatePanelScroll ? t.animatePanelScroll : p,
                 u = null != t.animateSidebarScroll && t.animateSidebarScroll;
-              if (
-                (null != c
-                  ? (await this.scrollToOffset({
-                      scrollOffset: c.scrollOffset,
-                    }),
-                    this.deletePanelSnapshot(o))
-                  : await this.scrollToTarget({
-                      targetKey: e,
-                      targetPanelKey: o,
-                      targetAccordionKey: n.parentAccordionKey,
-                      scrollBlock: t.panelScrollBlock ?? "start",
-                      animatePanelScroll: _,
-                      animateSidebarScroll: u,
-                    }),
-                !p)
-              ) {
+              null != c
+                ? (await this.scrollToOffset({ scrollOffset: c.scrollOffset }),
+                  this.deletePanelSnapshot(o))
+                : await this.scrollToTarget({
+                    targetKey: e,
+                    targetPanelKey: o,
+                    targetAccordionKey: n.parentAccordionKey,
+                    scrollBlock: t.panelScrollBlock ?? "start",
+                    animatePanelScroll: _,
+                    animateSidebarScroll: u,
+                  });
+              let h = document.querySelector(`[data-nav-anchor-key="${e}"]`);
+              if ((h?.focus({ preventScroll: !0 }), !p)) {
                 let e = this.accessibleDirectory?.get(o),
                   t =
                     e?.type === r.Z6.PANEL && (0, r.zY)(e.layout)
@@ -218446,159 +218455,221 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       }
       let d = () => r.useContext(o);
     },
-    586644(e, t, n) {
+    878555(e, t, n) {
       "use strict";
-      n.d(t, { A: () => I });
+      n.d(t, { Ay: () => R });
       var i = n(627968);
       n(64700);
       var r = n(503698),
         s = n.n(r),
         a = n(990078),
-        o = n(939249),
-        l = n(834730),
+        o = n(834730),
+        l = n(939249),
         d = n(140735),
         _ = n(297413),
-        u = n(705751),
-        c = n(709066),
-        E = n(609425),
-        h = n(922301),
-        m = n(368919),
-        f = n(534400),
-        g = n(518477),
-        p = n(985018),
-        A = n(312663);
-      function I(e) {
-        let t,
-          {
-            user: n,
-            guildId: r,
-            usernameIcon: I,
-            tags: T,
-            nickname: S,
-            nicknameIcons: N,
-            pendingDisplayNameStyles: C,
-            pronouns: R,
-            primaryGuild: O,
-            className: y,
-            tagClassName: v,
-            onOpenProfile: D,
-            onClose: L,
-            nicknameVariant: b = "heading-lg/bold",
+        u = n(705751);
+      function c(e) {
+        let t;
+        return (
+          e.isSystemUser() ? (t = u.nu.SYSTEM_DM) : e.bot && (t = u.nu.BOT), t
+        );
+      }
+      var E = n(709066),
+        h = n(609425),
+        m = n(922301),
+        f = n(368919),
+        g = n(534400),
+        p = n(518477),
+        A = n(985018),
+        I = n(874644);
+      let T = { sm: "heading-lg/bold", lg: "heading-xl/semibold" };
+      function S(e) {
+        let {
+            user: t,
+            guildId: n,
+            displayName: r,
+            size: a = "sm",
+            pendingDisplayNameStyles: l,
+            shouldUnderlineOnHover: d = !1,
+            botTag: _,
+            className: u,
           } = e,
-          w = (e) =>
-            null == D
-              ? e
-              : (0, i.jsx)(o.D, { onClick: D, className: A.pt, children: e }),
-          P = null != R && R.length > 0,
-          k =
-            (n.isSystemUser() ? (t = u.nu.SYSTEM_DM) : n.bot && (t = u.nu.BOT),
-            t),
-          M = (0, E.A)({
-            userId: n.id,
-            guildId: r,
-            pendingDisplayNameStyles: C,
+          c = (0, h.A)({
+            userId: t.id,
+            guildId: n,
+            pendingDisplayNameStyles: l,
           }),
-          U = null != M,
-          x =
-            null != k
-              ? (0, i.jsx)(c.A, {
-                  type: k,
-                  verified: n.isVerifiedBot(),
-                  className: A.AO,
+          E = T[a];
+        return null != c
+          ? (0, i.jsx)(o.E, {
+              variant: E,
+              className: u,
+              children: (0, i.jsx)(f.A, {
+                userName: r,
+                displayNameStyles: c,
+                effectDisplayType: m.G.ANIMATED,
+                textClassName: I.QC,
+                shouldWrap: !0,
+                loop: !0,
+                inProfile: !0,
+                shouldUnderlineOnHover: d,
+                appendedInlineContent:
+                  null != _
+                    ? (0, i.jsxs)(i.Fragment, { children: [" ", _] })
+                    : null,
+              }),
+            })
+          : (0, i.jsxs)(o.E, {
+              className: s()(I.QC, I.O2, u),
+              variant: E,
+              children: [r, " ", _],
+            });
+      }
+      function N(e) {
+        let {
+            user: t,
+            guildId: n,
+            displayName: r,
+            trailing: a,
+            size: o = "sm",
+            pendingDisplayNameStyles: d,
+            onClickDisplayName: _,
+          } = e,
+          u = c(t),
+          h =
+            null != u
+              ? (0, i.jsx)(E.A, {
+                  type: u,
+                  verified: t.isVerifiedBot(),
+                  className: I.AO,
                 })
-              : null;
+              : null,
+          m = (0, i.jsx)(S, {
+            user: t,
+            guildId: n,
+            displayName: r,
+            size: o,
+            pendingDisplayNameStyles: d,
+            shouldUnderlineOnHover: null != _,
+            botTag: h,
+          });
         return (0, i.jsxs)("div", {
-          className: s()(A.kL, { [A.Od]: null != k }, y),
+          className: s()(I.K$, "lg" === o && I.lg),
           children: [
-            (0, i.jsxs)("div", {
-              className: A.Fj,
-              children: [
-                w(
-                  U
-                    ? (0, i.jsx)(l.E, {
-                        variant: b,
-                        children: (0, i.jsx)(m.A, {
-                          userName: S,
-                          displayNameStyles: M,
-                          effectDisplayType: h.G.ANIMATED,
-                          textClassName: A.iA,
-                          shouldWrap: !0,
-                          loop: !0,
-                          inProfile: !0,
-                          shouldUnderlineOnHover: null != D,
-                          appendedInlineContent:
-                            null != x
-                              ? (0, i.jsxs)(i.Fragment, { children: [" ", x] })
-                              : null,
+            null != _
+              ? (0, i.jsx)(l.D, { onClick: _, className: I.vk, children: m })
+              : m,
+            null != a &&
+              !1 !== a &&
+              (0, i.jsx)("div", { className: I.MU, children: a }),
+          ],
+        });
+      }
+      function C(e) {
+        let {
+            user: t,
+            usernameIcon: n,
+            onClickUsername: r,
+            pronouns: u,
+            primaryGuild: E,
+            trailing: h,
+            onClose: m,
+          } = e,
+          f = null != u && u.length > 0,
+          T = c(t),
+          S = t.isProvisional
+            ? null
+            : (0, i.jsx)(_.A, {
+                user: t,
+                usernameIcon: n,
+                forceUsername: !0,
+                className: I.a1,
+                usernameClass: I.eb,
+                discriminatorClass: I.sw,
+                hideBotTag: !0,
+              });
+        return (0, i.jsxs)("div", {
+          className: s()(I.AK, { [I.j6]: f, [I.w2]: null != T }),
+          children: [
+            null != S && null != r
+              ? (0, i.jsx)(l.D, { onClick: r, className: I.vk, children: S })
+              : S,
+            f &&
+              (0, i.jsxs)(i.Fragment, {
+                children: [
+                  (0, i.jsx)("div", { "aria-hidden": "true", className: I.SC }),
+                  (0, i.jsx)(a.m, {
+                    asContainer: !0,
+                    text: A.intl.string(A.t.GI2A8C),
+                    delay: p.In,
+                    ariaHidden: !0,
+                    children: (0, i.jsxs)(o.E, {
+                      className: I.hI,
+                      variant: "text-sm/medium",
+                      color: "text-strong",
+                      children: [
+                        (0, i.jsx)(d.A, {
+                          tag: "span",
+                          children: A.intl.formatToPlainString(A.t["DRI+T7"], {
+                            pronouns: u,
+                          }),
                         }),
-                      })
-                    : (0, i.jsxs)(l.E, {
-                        className: A.$R,
-                        variant: b,
-                        children: [S, " ", x],
-                      }),
-                ),
-                null != N &&
-                  (0, i.jsx)("div", { className: A.t4, children: N }),
-              ],
-            }),
-            (0, i.jsxs)("div", {
-              className: s()(A._A, { [A.hI]: P, [A.Od]: null != k }),
-              children: [
-                !n.isProvisional &&
-                  w(
-                    (0, i.jsx)(_.A, {
-                      user: n,
-                      usernameIcon: I,
-                      forceUsername: !0,
-                      className: s()(A.a1, v),
-                      usernameClass: A.eb,
-                      discriminatorClass: A.sw,
-                      hideBotTag: !0,
+                        (0, i.jsx)("span", {
+                          "aria-hidden": "true",
+                          children: u,
+                        }),
+                      ],
                     }),
-                  ),
-                P &&
-                  (0, i.jsxs)(i.Fragment, {
-                    children: [
-                      (0, i.jsx)("div", {
-                        "aria-hidden": "true",
-                        className: A.SC,
-                      }),
-                      (0, i.jsx)(a.m, {
-                        asContainer: !0,
-                        text: p.intl.string(p.t.GI2A8C),
-                        delay: g.In,
-                        ariaHidden: !0,
-                        children: (0, i.jsxs)(l.E, {
-                          className: s()(A.kc, v),
-                          variant: "text-sm/medium",
-                          color: "text-strong",
-                          children: [
-                            (0, i.jsx)(d.A, {
-                              tag: "span",
-                              children: p.intl.formatToPlainString(
-                                p.t["DRI+T7"],
-                                { pronouns: R },
-                              ),
-                            }),
-                            (0, i.jsx)("span", {
-                              "aria-hidden": "true",
-                              children: R,
-                            }),
-                          ],
-                        }),
-                      }),
-                    ],
                   }),
-                (0, i.jsx)(f.Ay, {
-                  primaryGuild: O,
-                  userId: n.id,
-                  onClose: L,
-                  containerClassName: A.L4,
-                  className: A.Mp,
-                }),
-                T,
-              ],
+                ],
+              }),
+            (0, i.jsx)(g.Ay, {
+              primaryGuild: E,
+              userId: t.id,
+              onClose: m,
+              containerClassName: I.L4,
+              className: I.Mp,
+            }),
+            h,
+          ],
+        });
+      }
+      function R(e) {
+        let {
+          user: t,
+          guildId: n,
+          className: r,
+          onClickName: s,
+          displayName: a,
+          displayNameSize: o,
+          pendingDisplayNameStyles: l,
+          displayNameTrailing: d,
+          usernameIcon: _,
+          pronouns: u,
+          primaryGuild: c,
+          trailing: E,
+          onClose: h,
+        } = e;
+        return (0, i.jsxs)("div", {
+          className: r,
+          children: [
+            (0, i.jsx)(N, {
+              user: t,
+              guildId: n,
+              displayName: a,
+              size: o,
+              pendingDisplayNameStyles: l,
+              onClickDisplayName: s,
+              trailing: d,
+            }),
+            (0, i.jsx)(C, {
+              user: t,
+              usernameIcon: _,
+              pronouns: u,
+              primaryGuild: c,
+              onClickUsername: s,
+              onClose: h,
+              trailing: E,
             }),
           ],
         });
@@ -218828,7 +218899,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             buttonRef: h,
             ...m
           } = e,
-          f = E({ action: t, onClick: n });
+          f = E({ action: t, onClick: n }),
+          g = o ?? l;
         return (0, i.jsx)(a.m, {
           asContainer: !0,
           targetElementRef: h,
@@ -218836,11 +218908,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           __unsupportedReactNodeAsText: _,
           position: u,
           align: c,
+          ariaHidden: g === l,
           children: (0, i.jsx)(d.K, {
             onClick: f,
             variant: r,
             size: s,
-            "aria-label": o ?? l,
+            "aria-label": g,
             ...m,
           }),
         });
@@ -218862,19 +218935,22 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             loading: I = !1,
             ...T
           } = e,
-          S = E({ action: h, onClick: m });
+          S = E({ action: h, onClick: m }),
+          N = u ?? n;
         return (0, i.jsx)(a.m, {
           asContainer: !0,
           text: n,
           __unsupportedReactNodeAsText: r,
           position: l,
           align: d,
+          ariaHidden: N === n,
           children: (0, i.jsx)(o.D, {
             innerRef: f,
             className: s()(c.Xc, { [c.r9]: g }),
             onClick: S,
-            "aria-label": u ?? n,
+            "aria-label": N,
             "aria-disabled": g,
+            "aria-busy": I,
             onMouseEnter: p,
             onMouseLeave: A,
             ...T,
@@ -252956,7 +253032,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "5b2ab1d2bfa15ab3394bcd0143cf10b2ef567707",
+                    "2722b4491c7918a1ca4fbd2563b25ef17360b1fc",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259186,7 +259262,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534403",
+                  build_number: "534481",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -311512,31 +311588,38 @@ Total Time: ${o}ms
           },
           TEXT_CODE: {
             category: "text",
-            [_.DARK]: { raw: "BLUE_NEW_8", opacity: 1 },
-            [_.LIGHT]: { raw: "BLUE_NEW_66", opacity: 1 },
-            [_.MIDNIGHT]: { raw: "BLUE_NEW_25", opacity: 1 },
-            [_.DARKER]: { raw: "BLUE_NEW_19", opacity: 1 },
+            [_.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
+            [_.LIGHT]: { raw: "NEUTRAL_66", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "NEUTRAL_13", opacity: 1 },
+            [_.DARKER]: { raw: "NEUTRAL_8", opacity: 1 },
           },
           TEXT_CODE_ADDITION: {
             category: "text",
-            [_.DARK]: { raw: "GREEN_NEW_9", opacity: 1 },
-            [_.LIGHT]: { raw: "GREEN_NEW_70", opacity: 1 },
-            [_.MIDNIGHT]: { raw: "GREEN_NEW_24", opacity: 1 },
-            [_.DARKER]: { raw: "GREEN_NEW_18", opacity: 1 },
+            [_.DARK]: { raw: "GREEN_NEW_14", opacity: 1 },
+            [_.LIGHT]: { raw: "GREEN_NEW_65", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "GREEN_NEW_29", opacity: 1 },
+            [_.DARKER]: { raw: "GREEN_NEW_23", opacity: 1 },
+          },
+          TEXT_CODE_ATTRIBUTE: {
+            category: "text",
+            [_.DARK]: { raw: "BLUE_NEW_14", opacity: 1 },
+            [_.LIGHT]: { raw: "BLUE_NEW_62", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "BLUE_NEW_31", opacity: 1 },
+            [_.DARKER]: { raw: "BLUE_NEW_24", opacity: 1 },
           },
           TEXT_CODE_BUILTIN: {
             category: "text",
-            [_.DARK]: { raw: "ORANGE_NEW_6", opacity: 1 },
-            [_.LIGHT]: { raw: "ORANGE_NEW_65", opacity: 1 },
-            [_.MIDNIGHT]: { raw: "ORANGE_NEW_23", opacity: 1 },
-            [_.DARKER]: { raw: "ORANGE_NEW_17", opacity: 1 },
+            [_.DARK]: { raw: "YELLOW_NEW_29", opacity: 1 },
+            [_.LIGHT]: { raw: "YELLOW_NEW_75", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "YELLOW_NEW_55", opacity: 1 },
+            [_.DARKER]: { raw: "YELLOW_NEW_51", opacity: 1 },
           },
           TEXT_CODE_BULLET: {
             category: "text",
-            [_.DARK]: { raw: "YELLOW_NEW_15", opacity: 1 },
-            [_.LIGHT]: { raw: "YELLOW_NEW_78", opacity: 1 },
-            [_.MIDNIGHT]: { raw: "YELLOW_NEW_51", opacity: 1 },
-            [_.DARKER]: { raw: "YELLOW_NEW_40", opacity: 1 },
+            [_.DARK]: { raw: "BLUE_NEW_14", opacity: 1 },
+            [_.LIGHT]: { raw: "BLUE_NEW_62", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "BLUE_NEW_31", opacity: 1 },
+            [_.DARKER]: { raw: "BLUE_NEW_24", opacity: 1 },
           },
           TEXT_CODE_COMMENT: {
             category: "text",
@@ -311545,54 +311628,124 @@ Total Time: ${o}ms
             [_.MIDNIGHT]: { raw: "NEUTRAL_32", opacity: 1 },
             [_.DARKER]: { raw: "NEUTRAL_28", opacity: 1 },
           },
+          TEXT_CODE_DECORATOR: {
+            category: "text",
+            [_.DARK]: { raw: "YELLOW_NEW_29", opacity: 1 },
+            [_.LIGHT]: { raw: "YELLOW_NEW_75", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "YELLOW_NEW_55", opacity: 1 },
+            [_.DARKER]: { raw: "YELLOW_NEW_51", opacity: 1 },
+          },
           TEXT_CODE_DELETION: {
             category: "text",
-            [_.DARK]: { raw: "RED_NEW_5", opacity: 1 },
-            [_.LIGHT]: { raw: "RED_NEW_68", opacity: 1 },
-            [_.MIDNIGHT]: { raw: "RED_NEW_21", opacity: 1 },
-            [_.DARKER]: { raw: "RED_NEW_14", opacity: 1 },
+            [_.DARK]: { raw: "RED_NEW_10", opacity: 1 },
+            [_.LIGHT]: { raw: "RED_NEW_63", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "RED_NEW_27", opacity: 1 },
+            [_.DARKER]: { raw: "RED_NEW_21", opacity: 1 },
+          },
+          TEXT_CODE_ERROR: {
+            category: "text",
+            [_.DARK]: { raw: "RED_NEW_10", opacity: 1 },
+            [_.LIGHT]: { raw: "RED_NEW_60", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "RED_NEW_28", opacity: 1 },
+            [_.DARKER]: { raw: "RED_NEW_21", opacity: 1 },
+          },
+          TEXT_CODE_ESCAPE: {
+            category: "text",
+            [_.DARK]: { raw: "PINK_13", opacity: 1 },
+            [_.LIGHT]: { raw: "PINK_70", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "PINK_41", opacity: 1 },
+            [_.DARKER]: { raw: "PINK_29", opacity: 1 },
           },
           TEXT_CODE_KEYWORD: {
+            category: "text",
+            [_.DARK]: { raw: "RED_NEW_10", opacity: 1 },
+            [_.LIGHT]: { raw: "RED_NEW_60", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "RED_NEW_28", opacity: 1 },
+            [_.DARKER]: { raw: "RED_NEW_21", opacity: 1 },
+          },
+          TEXT_CODE_LINK: {
+            category: "text",
+            [_.DARK]: { raw: "BLUE_NEW_14", opacity: 1 },
+            [_.LIGHT]: { raw: "BLUE_NEW_62", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "BLUE_NEW_31", opacity: 1 },
+            [_.DARKER]: { raw: "BLUE_NEW_24", opacity: 1 },
+          },
+          TEXT_CODE_NAMESPACE: {
+            category: "text",
+            [_.DARK]: { raw: "BLUE_NEW_14", opacity: 1 },
+            [_.LIGHT]: { raw: "BLUE_NEW_62", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "BLUE_NEW_31", opacity: 1 },
+            [_.DARKER]: { raw: "BLUE_NEW_24", opacity: 1 },
+          },
+          TEXT_CODE_NUMBER: {
+            category: "text",
+            [_.DARK]: { raw: "ORANGE_NEW_12", opacity: 1 },
+            [_.LIGHT]: { raw: "ORANGE_NEW_61", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "ORANGE_NEW_29", opacity: 1 },
+            [_.DARKER]: { raw: "ORANGE_NEW_22", opacity: 1 },
+          },
+          TEXT_CODE_OPERATOR: {
             category: "text",
             [_.DARK]: { raw: "RED_NEW_5", opacity: 1 },
             [_.LIGHT]: { raw: "RED_NEW_65", opacity: 1 },
             [_.MIDNIGHT]: { raw: "RED_NEW_22", opacity: 1 },
             [_.DARKER]: { raw: "RED_NEW_15", opacity: 1 },
           },
+          TEXT_CODE_PROPERTY: {
+            category: "text",
+            [_.DARK]: { raw: "TEAL_NEW_15", opacity: 1 },
+            [_.LIGHT]: { raw: "TEAL_NEW_63", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "TEAL_NEW_31", opacity: 1 },
+            [_.DARKER]: { raw: "TEAL_NEW_25", opacity: 1 },
+          },
+          TEXT_CODE_REGEXP: {
+            category: "text",
+            [_.DARK]: { raw: "GREEN_NEW_15", opacity: 1 },
+            [_.LIGHT]: { raw: "GREEN_NEW_62", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "GREEN_NEW_31", opacity: 1 },
+            [_.DARKER]: { raw: "GREEN_NEW_25", opacity: 1 },
+          },
           TEXT_CODE_SECTION: {
             category: "text",
-            [_.DARK]: { raw: "BLUE_NEW_8", opacity: 1 },
-            [_.LIGHT]: { raw: "BLUE_NEW_66", opacity: 1 },
-            [_.MIDNIGHT]: { raw: "BLUE_NEW_25", opacity: 1 },
-            [_.DARKER]: { raw: "BLUE_NEW_19", opacity: 1 },
+            [_.DARK]: { raw: "RED_NEW_10", opacity: 1 },
+            [_.LIGHT]: { raw: "RED_NEW_60", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "RED_NEW_28", opacity: 1 },
+            [_.DARKER]: { raw: "RED_NEW_21", opacity: 1 },
           },
           TEXT_CODE_STRING: {
             category: "text",
-            [_.DARK]: { raw: "TEAL_NEW_10", opacity: 1 },
-            [_.LIGHT]: { raw: "TEAL_NEW_68", opacity: 1 },
-            [_.MIDNIGHT]: { raw: "TEAL_NEW_26", opacity: 1 },
-            [_.DARKER]: { raw: "TEAL_NEW_20", opacity: 1 },
+            [_.DARK]: { raw: "GREEN_NEW_15", opacity: 1 },
+            [_.LIGHT]: { raw: "GREEN_NEW_62", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "GREEN_NEW_31", opacity: 1 },
+            [_.DARKER]: { raw: "GREEN_NEW_25", opacity: 1 },
           },
           TEXT_CODE_TAG: {
             category: "text",
-            [_.DARK]: { raw: "GREEN_NEW_4", opacity: 1 },
-            [_.LIGHT]: { raw: "GREEN_NEW_71", opacity: 1 },
-            [_.MIDNIGHT]: { raw: "GREEN_NEW_21", opacity: 1 },
-            [_.DARKER]: { raw: "GREEN_NEW_15", opacity: 1 },
+            [_.DARK]: { raw: "PINK_13", opacity: 1 },
+            [_.LIGHT]: { raw: "PINK_70", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "PINK_41", opacity: 1 },
+            [_.DARKER]: { raw: "PINK_29", opacity: 1 },
           },
           TEXT_CODE_TITLE: {
             category: "text",
-            [_.DARK]: { raw: "BLURPLE_1", opacity: 1 },
-            [_.LIGHT]: { raw: "BLURPLE_70", opacity: 1 },
-            [_.MIDNIGHT]: { raw: "BLURPLE_19", opacity: 1 },
-            [_.DARKER]: { raw: "BLURPLE_12", opacity: 1 },
+            [_.DARK]: { raw: "BLURPLE_13", opacity: 1 },
+            [_.LIGHT]: { raw: "BLURPLE_62", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "BLURPLE_30", opacity: 1 },
+            [_.DARKER]: { raw: "BLURPLE_23", opacity: 1 },
+          },
+          TEXT_CODE_TYPE: {
+            category: "text",
+            [_.DARK]: { raw: "PINK_13", opacity: 1 },
+            [_.LIGHT]: { raw: "PINK_70", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "PINK_41", opacity: 1 },
+            [_.DARKER]: { raw: "PINK_29", opacity: 1 },
           },
           TEXT_CODE_VARIABLE: {
             category: "text",
-            [_.DARK]: { raw: "BLUE_NEW_3", opacity: 1 },
-            [_.LIGHT]: { raw: "BLUE_NEW_70", opacity: 1 },
-            [_.MIDNIGHT]: { raw: "BLUE_NEW_20", opacity: 1 },
-            [_.DARKER]: { raw: "BLUE_NEW_14", opacity: 1 },
+            [_.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
+            [_.LIGHT]: { raw: "NEUTRAL_66", opacity: 1 },
+            [_.MIDNIGHT]: { raw: "NEUTRAL_13", opacity: 1 },
+            [_.DARKER]: { raw: "NEUTRAL_8", opacity: 1 },
           },
           TEXT_DEFAULT: {
             category: "text",
@@ -312717,10 +312870,10 @@ Total Time: ${o}ms
             [c.DARKER]: { raw: "BRAND_330", opacity: 1 },
           },
           TEXT_CODE: {
-            [c.DARK]: { raw: "BLUE_NEW_1", opacity: 1 },
-            [c.LIGHT]: { raw: "BLUE_NEW_74", opacity: 1 },
-            [c.MIDNIGHT]: { raw: "BLUE_NEW_20", opacity: 1 },
-            [c.DARKER]: { raw: "BLUE_NEW_14", opacity: 1 },
+            [c.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
+            [c.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "NEUTRAL_14", opacity: 1 },
+            [c.DARKER]: { raw: "NEUTRAL_9", opacity: 1 },
           },
           TEXT_CODE_ADDITION: {
             [c.DARK]: { raw: "GREEN_NEW_2", opacity: 1 },
@@ -312728,17 +312881,23 @@ Total Time: ${o}ms
             [c.MIDNIGHT]: { raw: "GREEN_NEW_20", opacity: 1 },
             [c.DARKER]: { raw: "GREEN_NEW_14", opacity: 1 },
           },
-          TEXT_CODE_BUILTIN: {
-            [c.DARK]: { raw: "ORANGE_NEW_1", opacity: 1 },
-            [c.LIGHT]: { raw: "ORANGE_NEW_74", opacity: 1 },
-            [c.MIDNIGHT]: { raw: "ORANGE_NEW_19", opacity: 1 },
-            [c.DARKER]: { raw: "ORANGE_NEW_12", opacity: 1 },
+          TEXT_CODE_ATTRIBUTE: {
+            [c.DARK]: { raw: "BLUE_NEW_1", opacity: 1 },
+            [c.LIGHT]: { raw: "BLUE_NEW_74", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "BLUE_NEW_20", opacity: 1 },
+            [c.DARKER]: { raw: "BLUE_NEW_14", opacity: 1 },
           },
-          TEXT_CODE_BULLET: {
+          TEXT_CODE_BUILTIN: {
             [c.DARK]: { raw: "YELLOW_NEW_1", opacity: 1 },
             [c.LIGHT]: { raw: "YELLOW_NEW_83", opacity: 1 },
             [c.MIDNIGHT]: { raw: "YELLOW_NEW_44", opacity: 1 },
             [c.DARKER]: { raw: "YELLOW_NEW_29", opacity: 1 },
+          },
+          TEXT_CODE_BULLET: {
+            [c.DARK]: { raw: "BLUE_NEW_1", opacity: 1 },
+            [c.LIGHT]: { raw: "BLUE_NEW_74", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "BLUE_NEW_20", opacity: 1 },
+            [c.DARKER]: { raw: "BLUE_NEW_14", opacity: 1 },
           },
           TEXT_CODE_COMMENT: {
             [c.DARK]: { raw: "NEUTRAL_15", opacity: 1 },
@@ -312746,11 +312905,29 @@ Total Time: ${o}ms
             [c.MIDNIGHT]: { raw: "NEUTRAL_27", opacity: 1 },
             [c.DARKER]: { raw: "NEUTRAL_23", opacity: 1 },
           },
+          TEXT_CODE_DECORATOR: {
+            [c.DARK]: { raw: "YELLOW_NEW_1", opacity: 1 },
+            [c.LIGHT]: { raw: "YELLOW_NEW_83", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "YELLOW_NEW_44", opacity: 1 },
+            [c.DARKER]: { raw: "YELLOW_NEW_29", opacity: 1 },
+          },
           TEXT_CODE_DELETION: {
             [c.DARK]: { raw: "RED_NEW_1", opacity: 1 },
             [c.LIGHT]: { raw: "RED_NEW_77", opacity: 1 },
             [c.MIDNIGHT]: { raw: "RED_NEW_16", opacity: 1 },
             [c.DARKER]: { raw: "RED_NEW_9", opacity: 1 },
+          },
+          TEXT_CODE_ERROR: {
+            [c.DARK]: { raw: "RED_NEW_1", opacity: 1 },
+            [c.LIGHT]: { raw: "RED_NEW_73", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "RED_NEW_17", opacity: 1 },
+            [c.DARKER]: { raw: "RED_NEW_10", opacity: 1 },
+          },
+          TEXT_CODE_ESCAPE: {
+            [c.DARK]: { raw: "PINK_1", opacity: 1 },
+            [c.LIGHT]: { raw: "PINK_80", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "PINK_23", opacity: 1 },
+            [c.DARKER]: { raw: "PINK_13", opacity: 1 },
           },
           TEXT_CODE_KEYWORD: {
             [c.DARK]: { raw: "RED_NEW_1", opacity: 1 },
@@ -312758,23 +312935,59 @@ Total Time: ${o}ms
             [c.MIDNIGHT]: { raw: "RED_NEW_17", opacity: 1 },
             [c.DARKER]: { raw: "RED_NEW_10", opacity: 1 },
           },
-          TEXT_CODE_SECTION: {
+          TEXT_CODE_LINK: {
             [c.DARK]: { raw: "BLUE_NEW_1", opacity: 1 },
             [c.LIGHT]: { raw: "BLUE_NEW_74", opacity: 1 },
             [c.MIDNIGHT]: { raw: "BLUE_NEW_20", opacity: 1 },
             [c.DARKER]: { raw: "BLUE_NEW_14", opacity: 1 },
           },
-          TEXT_CODE_STRING: {
+          TEXT_CODE_NAMESPACE: {
+            [c.DARK]: { raw: "BLUE_NEW_1", opacity: 1 },
+            [c.LIGHT]: { raw: "BLUE_NEW_74", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "BLUE_NEW_20", opacity: 1 },
+            [c.DARKER]: { raw: "BLUE_NEW_14", opacity: 1 },
+          },
+          TEXT_CODE_NUMBER: {
+            [c.DARK]: { raw: "ORANGE_NEW_1", opacity: 1 },
+            [c.LIGHT]: { raw: "ORANGE_NEW_74", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "ORANGE_NEW_19", opacity: 1 },
+            [c.DARKER]: { raw: "ORANGE_NEW_12", opacity: 1 },
+          },
+          TEXT_CODE_OPERATOR: {
+            [c.DARK]: { raw: "RED_NEW_1", opacity: 1 },
+            [c.LIGHT]: { raw: "RED_NEW_73", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "RED_NEW_17", opacity: 1 },
+            [c.DARKER]: { raw: "RED_NEW_10", opacity: 1 },
+          },
+          TEXT_CODE_PROPERTY: {
             [c.DARK]: { raw: "TEAL_NEW_3", opacity: 1 },
             [c.LIGHT]: { raw: "TEAL_NEW_76", opacity: 1 },
             [c.MIDNIGHT]: { raw: "TEAL_NEW_22", opacity: 1 },
             [c.DARKER]: { raw: "TEAL_NEW_15", opacity: 1 },
           },
-          TEXT_CODE_TAG: {
+          TEXT_CODE_REGEXP: {
             [c.DARK]: { raw: "GREEN_NEW_3", opacity: 1 },
             [c.LIGHT]: { raw: "GREEN_NEW_76", opacity: 1 },
             [c.MIDNIGHT]: { raw: "GREEN_NEW_21", opacity: 1 },
             [c.DARKER]: { raw: "GREEN_NEW_15", opacity: 1 },
+          },
+          TEXT_CODE_SECTION: {
+            [c.DARK]: { raw: "RED_NEW_1", opacity: 1 },
+            [c.LIGHT]: { raw: "RED_NEW_73", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "RED_NEW_17", opacity: 1 },
+            [c.DARKER]: { raw: "RED_NEW_10", opacity: 1 },
+          },
+          TEXT_CODE_STRING: {
+            [c.DARK]: { raw: "GREEN_NEW_3", opacity: 1 },
+            [c.LIGHT]: { raw: "GREEN_NEW_76", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "GREEN_NEW_21", opacity: 1 },
+            [c.DARKER]: { raw: "GREEN_NEW_15", opacity: 1 },
+          },
+          TEXT_CODE_TAG: {
+            [c.DARK]: { raw: "PINK_1", opacity: 1 },
+            [c.LIGHT]: { raw: "PINK_80", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "PINK_23", opacity: 1 },
+            [c.DARKER]: { raw: "PINK_13", opacity: 1 },
           },
           TEXT_CODE_TITLE: {
             [c.DARK]: { raw: "BLUE_NEW_1", opacity: 1 },
@@ -312782,11 +312995,17 @@ Total Time: ${o}ms
             [c.MIDNIGHT]: { raw: "BLUE_NEW_20", opacity: 1 },
             [c.DARKER]: { raw: "BLUE_NEW_14", opacity: 1 },
           },
+          TEXT_CODE_TYPE: {
+            [c.DARK]: { raw: "PINK_1", opacity: 1 },
+            [c.LIGHT]: { raw: "PINK_80", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "PINK_23", opacity: 1 },
+            [c.DARKER]: { raw: "PINK_13", opacity: 1 },
+          },
           TEXT_CODE_VARIABLE: {
-            [c.DARK]: { raw: "BLUE_NEW_1", opacity: 1 },
-            [c.LIGHT]: { raw: "BLUE_NEW_74", opacity: 1 },
-            [c.MIDNIGHT]: { raw: "BLUE_NEW_20", opacity: 1 },
-            [c.DARKER]: { raw: "BLUE_NEW_14", opacity: 1 },
+            [c.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
+            [c.LIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+            [c.MIDNIGHT]: { raw: "NEUTRAL_14", opacity: 1 },
+            [c.DARKER]: { raw: "NEUTRAL_9", opacity: 1 },
           },
           TEXT_DEFAULT: {
             [c.DARK]: { raw: "NEUTRAL_1", opacity: 1 },
@@ -326407,26 +326626,26 @@ Total Time: ${o}ms
         Lw: "overlay_c0bea0",
       };
     },
-    312663(e, t, n) {
+    874644(e, t, n) {
       "use strict";
       e.exports = {
-        kL: "container__63ed3",
-        Od: "bot__63ed3",
-        pt: "clickableUsername__63ed3",
-        $R: "nickname__63ed3",
-        eb: "userTagUsername__63ed3",
-        iA: "nicknameWithDisplayNameStyles__63ed3",
-        t4: "nicknameIcons__63ed3",
-        Fj: "usernameRow__63ed3",
-        AO: "botTag__63ed3",
-        _A: "tags__63ed3",
-        hI: "pronouns__63ed3",
-        a1: "userTag__63ed3",
-        kc: "pronounsText__63ed3 userTag__63ed3",
-        sw: "userTagDiscriminator__63ed3",
-        SC: "dotSpacer__63ed3",
-        L4: "guildTagContainer__63ed3",
-        Mp: "guildTag__63ed3",
+        K$: "displayNameRow__26b1f",
+        lg: "lg__26b1f",
+        AO: "botTag__26b1f",
+        MU: "displayNameTrailing__26b1f",
+        vk: "clickable__26b1f",
+        QC: "displayName__26b1f",
+        O2: "noStyles__26b1f",
+        AK: "usernameAndPronounsRow__26b1f",
+        j6: "hasPronouns__26b1f",
+        w2: "isBot__26b1f",
+        a1: "userTag__26b1f",
+        hI: "pronouns__26b1f userTag__26b1f",
+        eb: "userTagUsername__26b1f",
+        sw: "userTagDiscriminator__26b1f",
+        SC: "dotSpacer__26b1f",
+        L4: "guildTagContainer__26b1f",
+        Mp: "guildTag__26b1f",
       };
     },
     532786(e, t, n) {
@@ -327508,4 +327727,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=72667.04ea2acf601fe614.js.map
+//# sourceMappingURL=72667.2c76eff26deed2d3.js.map
