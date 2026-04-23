@@ -173827,7 +173827,7 @@ ${s}`),
           n.e("94459").then(n.t.bind(n, 868086, 19));
         let m = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new h.A().log(
-          `[BUILD INFO] Release Channel: ${m}, Build Number: 533964, Version Hash: 408d26059a87aced0563d3f77e9262a6f1853ca1`,
+          `[BUILD INFO] Release Channel: ${m}, Build Number: 533971, Version Hash: f8b0dfda82b8c281c05292819ac7030dbf7c00bc`,
         ),
           r.A.setTags({ appContext: p.QCW }),
           _.A.initBasic(),
@@ -208311,7 +208311,7 @@ ${_.join(" +\n")}
                 (e) => {
                   if (
                     null == e.body ||
-                    "408d26059a87aced0563d3f77e9262a6f1853ca1" === e.body.hash
+                    "f8b0dfda82b8c281c05292819ac7030dbf7c00bc" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, o.kK)())
@@ -214372,11 +214372,11 @@ ${_.join(" +\n")}
         n.d(t, { $: () => i });
         var r = n(728458);
         function i() {
-          let e = parseInt("533964");
+          let e = parseInt("533971");
           return (
             Number.isNaN(e) &&
               (r.A.captureMessage(
-                "Trying to open a changelog for an invalid build number 533964",
+                "Trying to open a changelog for an invalid build number 533971",
               ),
               (e = 0)),
             e
@@ -229999,8 +229999,8 @@ ${_.join(" +\n")}
           return {
             logsUploaded: new Date().toISOString(),
             releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            buildNumber: "533964",
-            versionHash: "408d26059a87aced0563d3f77e9262a6f1853ca1",
+            buildNumber: "533971",
+            versionHash: "f8b0dfda82b8c281c05292819ac7030dbf7c00bc",
           };
         }
         n.d(t, { A: () => r });
@@ -282246,8 +282246,8 @@ ${s}`);
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1776938302333",
-                      build_number: "533964",
+                      built_at: "1776949174420",
+                      build_number: "533971",
                     },
                   },
                   retries: 1,
@@ -323739,14 +323739,16 @@ ${s}`);
       771650(e, t, n) {
         "use strict";
         n.d(t, {
-          Ay: () => et,
-          G0: () => J,
-          If: () => Z,
-          WL: () => ee,
+          Ay: () => ea,
+          G0: () => er,
+          If: () => ei,
+          WL: () => es,
           Yd: () => F,
-          gU: () => Q,
+          gU: () => en,
+          lq: () => $,
+          ok: () => K,
           sC: () => G,
-          v1: () => z,
+          v1: () => Z,
         }),
           n(321073),
           n(667532);
@@ -323931,8 +323933,8 @@ ${s}`);
           }
           return !1;
         }
-        function B(e) {
-          let t = {
+        function B() {
+          return {
             [R.intl.string(R.t.ZNR2fi)]: "link",
             [R.intl.string(R.t["20uQR3"])]: "embed",
             [R.intl.string(R.t.L4lxyE)]: "poll",
@@ -323943,25 +323945,45 @@ ${s}`);
             [R.intl.string(R.t.F8Wf0e)]: "sound",
             [R.intl.string(R.t.PJgX2h)]: "sticker",
           };
-          return (0, N.d3)("has", t, e);
         }
-        function H(e) {
-          let t = {
+        function H() {
+          return {
             [R.intl.string(R.t.tPZo4p)]: "user",
             [R.intl.string(R.t.JL7sRS)]: "bot",
             [R.intl.string(R.t.WjkIKU)]: "webhook",
           };
-          return (0, N.d3)("author_type", t, e);
         }
-        function Y(e, t, n) {
-          return W(e, t, [
+        function Y(e, t) {
+          let n = e.startsWith("-"),
+            r = n ? e.slice(1) : e,
+            i =
+              Object.entries(t).find((e) => {
+                let [, t] = e;
+                return t === r;
+              })?.[0] ?? r;
+          return n ? `-${i}` : i;
+        }
+        function W(e) {
+          return (0, N.d3)("has", B(), e);
+        }
+        function j(e) {
+          return (0, N.d3)("author_type", H(), e);
+        }
+        function K(e) {
+          return Y(e, B());
+        }
+        function $(e) {
+          return Y(e, H());
+        }
+        function z(e, t, n) {
+          return q(e, t, [
             ...Array.from(v()),
             ...Array.from(C()),
             ...Array.from(b()),
             ...Object.keys(M()),
           ]).map((e) => ({ ...e, group: n, key: `${n}-${e.text}` }));
         }
-        function W(e, t, n) {
+        function q(e, t, n) {
           let r = e.toLocaleLowerCase();
           return o()(n)
             .filter((e) => s()(r, e.toLocaleLowerCase()))
@@ -323969,7 +323991,7 @@ ${s}`);
             .map((e) => ({ text: e }))
             .value();
         }
-        function j(e) {
+        function X(e) {
           let { query: t, searchContext: n, maxResults: r = 10, tokens: i } = e,
             s = {
               query: (t = t.trim().split("#")[0]),
@@ -324065,7 +324087,7 @@ ${s}`);
               });
           return c && f.unshift({ text: O.ME, user: l }), f;
         }
-        function K(e) {
+        function Q(e) {
           let { query: t, searchContext: n, maxResults: r } = e;
           return ((t = t.trim()).startsWith('"') && t.endsWith('"')
             ? (t = t
@@ -324168,10 +324190,10 @@ ${s}`);
                   return s.slice(0, t);
                 })(t, r, !0);
         }
-        let $ =
+        let J =
           /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
-        var z = (((r = {}).FILTER = "FILTER"), (r.ANSWER = "ANSWER"), r);
-        function q(e) {
+        var Z = (((r = {}).FILTER = "FILTER"), (r.ANSWER = "ANSWER"), r);
+        function ee(e) {
           let t = [
               R.intl.string(R.t.tPZo4p),
               R.intl.string(R.t.JL7sRS),
@@ -324195,11 +324217,11 @@ ${s}`);
               key: k(R.intl.string(R.t["1TUdFo"])),
               plainText: R.intl.string(R.t["1TUdFo"]),
               validator: () => (0, y.Q6)(),
-              getAutocompletions: j,
+              getAutocompletions: X,
             },
             [O.LWr.ANSWER_USERNAME_FROM]: {
               follows: [O.LWr.FILTER_FROM],
-              regex: $,
+              regex: J,
               validator: G,
               mutable: !0,
               componentType: "ANSWER",
@@ -324211,11 +324233,11 @@ ${s}`);
               key: k(R.intl.string(R.t["i96lO+"])),
               plainText: R.intl.string(R.t["i96lO+"]),
               validator: () => (0, y.tH)(),
-              getAutocompletions: j,
+              getAutocompletions: X,
             },
             [O.LWr.ANSWER_USERNAME_MENTIONS]: {
               follows: [O.LWr.FILTER_MENTIONS],
-              regex: $,
+              regex: J,
               validator: G,
               mutable: !0,
               componentType: "ANSWER",
@@ -324228,13 +324250,13 @@ ${s}`);
               plainText: R.intl.string(R.t.CqCvir),
               getAutocompletions(e) {
                 let { query: t, maxResults: r } = e;
-                return W(t, r, n);
+                return q(t, r, n);
               },
             },
             [O.LWr.ANSWER_HAS]: {
               regex: (0, N.er)(n),
               follows: [O.LWr.FILTER_HAS],
-              validator: B,
+              validator: W,
               componentType: "ANSWER",
               queryKey: "has",
             },
@@ -324284,7 +324306,7 @@ ${s}`);
               plainText: R.intl.string(R.t["qZ+7BA"]),
               getAutocompletions(e) {
                 let { query: t, maxResults: n } = e;
-                return Y(t, n, O.LWr.FILTER_BEFORE);
+                return z(t, n, O.LWr.FILTER_BEFORE);
               },
             },
             [O.LWr.FILTER_ON]: {
@@ -324296,7 +324318,7 @@ ${s}`);
               plainText: R.intl.string(R.t.h2NzSd),
               getAutocompletions(e) {
                 let { query: t, maxResults: n } = e;
-                return Y(t, n, O.LWr.FILTER_ON);
+                return z(t, n, O.LWr.FILTER_ON);
               },
             },
             [O.LWr.FILTER_AFTER]: {
@@ -324306,7 +324328,7 @@ ${s}`);
               plainText: R.intl.string(R.t.KSDx7M),
               getAutocompletions(e) {
                 let { query: t, maxResults: n } = e;
-                return Y(t, n, O.LWr.FILTER_AFTER);
+                return z(t, n, O.LWr.FILTER_AFTER);
               },
             },
             [O.LWr.ANSWER_BEFORE]: {
@@ -324339,7 +324361,7 @@ ${s}`);
                 let t = e ?? I.A.getSelectedSearchContext();
                 return null != t && (0, y.HM)(t);
               },
-              getAutocompletions: K,
+              getAutocompletions: Q,
             },
             [O.LWr.ANSWER_IN]: {
               regex: N.rI,
@@ -324378,29 +324400,29 @@ ${s}`);
               plainText: R.intl.string(R.t.us8IQi),
               getAutocompletions(e) {
                 let { query: n, maxResults: r } = e;
-                return W(n, r, t);
+                return q(n, r, t);
               },
             },
             [O.LWr.ANSWER_AUTHOR_TYPE]: {
               regex: (0, N.er)(t),
               follows: [O.LWr.FILTER_AUTHOR_TYPE],
-              validator: H,
+              validator: j,
               componentType: "ANSWER",
               queryKey: "author_type",
             },
           };
         }
-        let X = {};
-        function Q() {
-          return q({ type: O.I4_.DMS });
+        let et = {};
+        function en() {
+          return ee({ type: O.I4_.DMS });
         }
-        function J() {
-          Object.assign(X, q());
+        function er() {
+          Object.assign(et, ee());
         }
-        function Z(e) {
+        function ei(e) {
           return O.l90.test(e);
         }
-        function ee(e) {
+        function es(e) {
           if (0 === e.length) return !1;
           let t = e.toLowerCase().replace(/^@/, "");
           return (
@@ -324408,7 +324430,7 @@ ${s}`);
             O.ME.substring(1).startsWith(t)
           );
         }
-        let et = X;
+        let ea = et;
       },
       163179(e, t, n) {
         "use strict";
@@ -373886,25 +373908,23 @@ ${s}`);
       },
       628965(e, t, n) {
         "use strict";
-        n.d(t, { A: () => f });
+        n.d(t, { A: () => _ });
         var r = n(311907),
           i = n(73153),
           s = n(287809);
         let a = null,
           o = {},
-          l = null,
-          u = [];
-        function d(e) {
-          if (null == s.default.getCurrentUser()) return c();
+          l = [];
+        function u(e) {
+          if (null == s.default.getCurrentUser()) return d();
           (a = e.section ?? a),
             null != e.subsection && null != a && (o[a] = e.subsection),
-            (l = e.analyticsLocation ?? null),
-            (u = e.analyticsLocations ?? []);
+            (l = e.analyticsLocations ?? []);
         }
-        function c() {
-          (a = null), (o = {}), (l = null), (u = []);
+        function d() {
+          (a = null), (o = {}), (l = []);
         }
-        class _ extends r.Ay.Store {
+        class c extends r.Ay.Store {
           static displayName = "UserSettingsModalStore";
           initialize() {
             this.waitFor(s.default);
@@ -373915,24 +373935,20 @@ ${s}`);
           getSubsection() {
             return null != a ? o[a] : null;
           }
-          getAnalyticsLocation() {
+          getAnalyticsLocations() {
             return l;
           }
-          getAnalyticsLocations() {
-            return u;
-          }
         }
-        let f = new _(i.h, {
+        let _ = new c(i.h, {
           USER_SETTINGS_MODAL_OPEN: function (e) {
-            d(e);
+            u(e);
           },
-          USER_SETTINGS_MODAL_INIT: d,
-          USER_SETTINGS_MODAL_CLOSE: c,
-          LOGOUT: c,
+          USER_SETTINGS_MODAL_INIT: u,
+          USER_SETTINGS_MODAL_CLOSE: d,
+          LOGOUT: d,
           USER_SETTINGS_MODAL_SET_SECTION: function (e) {
             (a = e.section),
-              (l = null),
-              (u = e.analyticsLocations ?? []),
+              (l = e.analyticsLocations ?? []),
               null != e.subsection && (o[a] = e.subsection);
           },
           USER_SETTINGS_MODAL_CLEAR_SUBSECTION: function (e) {
@@ -373940,7 +373956,7 @@ ${s}`);
             null != t ? delete o[t] : null != a && delete o[a];
           },
           USER_SETTINGS_MODAL_CLEAR_LOCATION: function () {
-            (l = null), (u = []);
+            l = [];
           },
         });
       },
@@ -381337,7 +381353,7 @@ ${s}`);
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "408d26059a87aced0563d3f77e9262a6f1853ca1",
+                      "f8b0dfda82b8c281c05292819ac7030dbf7c00bc",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", X),
@@ -389893,7 +389909,7 @@ ${s}`);
               ).then((e) => {
                 let r = {
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    build_number: "533964",
+                    build_number: "533971",
                   },
                   c = l.default.getCurrentUser();
                 null != c &&
@@ -399793,7 +399809,7 @@ ${s}`);
           (a = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == s.release_channel || "" === s.release_channel) &&
             (s.release_channel = a.split("-")[0]),
-          isNaN((o = parseInt("533964", 10))) || (s.client_build_number = o),
+          isNaN((o = parseInt("533971", 10))) || (s.client_build_number = o),
           null == (l = A?.app.getBuildNumber()) ||
             isNaN(l) ||
             (s.native_build_number = l),
@@ -497725,7 +497741,7 @@ color: purple;
         12875: "25283f5b3f28fb3e",
         12925: "86595de33c875806",
         12963: "157980ba20000482",
-        12970: "919567fac1e1b345",
+        12970: "b9e59bad33e51559",
         12994: "95c6933cf036826f",
         13054: "35cc0f8eecd8813f",
         13141: "834e52922bb5612f",
@@ -497892,14 +497908,14 @@ color: purple;
         19207: "09979f5965cd2bb6",
         19281: "43136c142f4dde7f",
         19310: "eb3b82a23bcff85f",
-        19395: "5ac1f1575c993806",
+        19395: "3bbd86d11f686307",
         19412: "d7ecdc3ddfea9108",
         19418: "8c00706aa3d132e0",
         19452: "cfe8fd8d5565ea15",
         19457: "656610f4188cae47",
         19467: "7c0fa53a96fba984",
         19474: "63d857fd58ca522f",
-        19482: "7d88099756642e2d",
+        19482: "31c91b9a7eeba0da",
         19534: "55be38ce2fe57373",
         1958: "c937e2cd4c27cafd",
         19590: "e4c4c43402f3ff76",
@@ -497966,11 +497982,11 @@ color: purple;
         21612: "b5fcba88feaf7198",
         21659: "7d6a59b8734010d3",
         21705: "0c331e8b42f44cbc",
-        21738: "0245bf84feccbb2f",
+        21738: "202ef12d94343145",
         21880: "0b340245a123dee3",
         219: "329fd338e790f068",
         21905: "1effccd4987d95e6",
-        21908: "f07dae1c992ea4e9",
+        21908: "704a39f7faf4a942",
         21916: "a33377c4d1f4f0d3",
         21932: "238e96ab64a46c0d",
         21942: "180301ad435b0388",
@@ -498205,7 +498221,7 @@ color: purple;
         29721: "3c4ca1a081b94e7f",
         29789: "192db661c535f7bd",
         29824: "fc868ccd1674509e",
-        29864: "0d7ea90afd844715",
+        29864: "0342251e705dd9d6",
         29897: "a83b1a5638f5d2c9",
         29898: "df4e00d2866663dd",
         29909: "d48569728227f278",
@@ -498530,7 +498546,7 @@ color: purple;
         42048: "3c7299fd6fa4d47e",
         42081: "771f3425ccaa5f85",
         42128: "120bb30c9ff13e6a",
-        42160: "46934858205d2d4e",
+        42160: "17adc5ae2129eded",
         42162: "75e98c584743437c",
         42171: "7c988aa81d38e6c3",
         42208: "f13b59c571bcdc63",
@@ -498562,7 +498578,7 @@ color: purple;
         43224: "9716ae7c9933a942",
         43233: "e5c8939d44c46614",
         43258: "0748f2f0fb2a8cc6",
-        43264: "79aa596a2ade7334",
+        43264: "632862aad72a7163",
         43315: "c8151f90ab559119",
         43420: "45798fe39e8898a3",
         43555: "34a661d1298338fe",
@@ -498975,9 +498991,9 @@ color: purple;
         58252: "8e7baf748e9e115a",
         58283: "8f7dcacb4f8a7c48",
         58305: "e8e5e05b8b0d4c62",
-        58338: "89566ea3d8b8a7d6",
+        58338: "f4bc616c91f1c763",
         58364: "6f420e6714752176",
-        58380: "81ea9ecd1c4ebec3",
+        58380: "2bc5bfc9113d3369",
         58384: "e6f25e5e960c73c6",
         58387: "495e6d8e7357678a",
         58393: "e5584c46e7503e32",
@@ -499066,7 +499082,7 @@ color: purple;
         61376: "80b374df3bb120d5",
         61515: "42e04fedc0f1af14",
         61539: "c5d4c2a5b882ba0c",
-        61571: "22236da1d33be906",
+        61571: "dbce2bf353762202",
         61670: "0ff6ac6fe9627175",
         61778: "fae4eea4fdc83b08",
         61788: "b5f14954c5e52fe9",
@@ -499111,7 +499127,7 @@ color: purple;
         63057: "140b92f671d81e27",
         63070: "f45daf06967a84c5",
         63133: "57621709dd8bc7bd",
-        63143: "ea9b5d2074ea8541",
+        63143: "cc168c3624956ed9",
         6322: "ead219a90757f317",
         63320: "623126dd79c21f81",
         63340: "00edc1253131d185",
@@ -499149,7 +499165,7 @@ color: purple;
         64447: "1d7788fb941ae5f8",
         64501: "685832b018bdb888",
         64520: "78b66bf36ac41d50",
-        64526: "f712138aaf91bb1f",
+        64526: "db08e03900184090",
         6453: "453a62f4a51cfdf5",
         64581: "9f7a2f7ab95b021d",
         64618: "666fbbb012b71e6e",
@@ -499295,7 +499311,7 @@ color: purple;
         69845: "c269e255d627619e",
         699: "6c41aa4688af064d",
         69959: "71e4ebd6f03f3b1c",
-        70008: "fbf19e2c9536bcd9",
+        70008: "0bdeb7d5137f58ac",
         70052: "2d8907d985cd42d5",
         70104: "47600e0b0077231a",
         70107: "c57a7b15c7797e73",
@@ -499598,13 +499614,13 @@ color: purple;
         80630: "d6a94add454ce285",
         80644: "5a293b18d6e79f18",
         808: "69bac142b6e7fedf",
-        80845: "2d34364b5198038f",
+        80845: "fde6ccf2da87fee6",
         8087: "bc2f87a7df374b65",
         80939: "30e3d07d87d0c7a7",
         80959: "b2ff23fba23fbab0",
         80966: "25a8e0b78a7434dd",
         80974: "96d92dc7cb6acb0e",
-        81008: "50639ff2fb19e6ef",
+        81008: "8e801c7795781236",
         81009: "738fb8f3944999ac",
         81033: "d66249eb75f5810b",
         81042: "22791eb8397a6a9d",
@@ -499717,7 +499733,7 @@ color: purple;
         85183: "a337aecbd667067a",
         85207: "8d643d6c68bc3147",
         85221: "56314999c96a88d3",
-        85240: "1f7aa7c10606fb02",
+        85240: "6bc4674ae92d040e",
         85339: "24b5e9ae513d822c",
         85368: "28eb16370c624cd7",
         85389: "8585748af5ca99bb",
@@ -499731,7 +499747,7 @@ color: purple;
         85719: "ebab776949c0e926",
         85740: "9f2d3b15f9276eb4",
         85779: "6173cff46ea6b925",
-        85813: "3eb017de620c4f4e",
+        85813: "2a966fac4a05813e",
         85840: "b0312ba128ba9e21",
         85890: "a3a7d931012d382f",
         85905: "ed68c3575569bd35",
@@ -500121,7 +500137,7 @@ color: purple;
         9964: "d84d8e5bd0493f24",
         99681: "a70ff70822eab8a9",
         99709: "8710392ac86d2b38",
-        99725: "008f9c584ac30a4f",
+        99725: "5cc2d748ae3e4246",
         99813: "b04a19a5716b0a2e",
         99958: "c40d7e91b908bd3d",
         99969: "94825261c1f2e005",
@@ -500516,4 +500532,4 @@ color: purple;
     }),
     A(329563);
 })();
-//# sourceMappingURL=web.5f7f9cdab7fb6466.js.map
+//# sourceMappingURL=web.c602bd8586d453b5.js.map

@@ -155,7 +155,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-408d26059a87aced0563d3f77e9262a6f1853ca1",
+            release: "discord_web-f8b0dfda82b8c281c05292819ac7030dbf7c00bc",
             beforeSend: function (e, t) {
               return !(
                 (null != e.exception &&
@@ -222,8 +222,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.NA("buildNumber", "533964"),
-            a.NA("builtAt", String("1776938302333"));
+            a.NA("buildNumber", "533971"),
+            a.NA("builtAt", String("1776949174420"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.NA(t, e[t]);
           return l;
@@ -16252,7 +16252,7 @@ ${eJ}
             return this.id++;
           }
         }
-        function e5(e) {
+        function e4(e) {
           let t = null;
           return (
             ez([
@@ -16269,7 +16269,7 @@ ${eJ}
             t
           );
         }
-        function e4(e) {
+        function e5(e) {
           let t = e.ownerDocument;
           return (
             !!t &&
@@ -16280,7 +16280,7 @@ ${eJ}
                 let n = (function (e) {
                   let t,
                     n = e;
-                  for (; (t = e5(n)); ) n = t;
+                  for (; (t = e4(n)); ) n = t;
                   return n;
                 })(e);
                 return t.contains(n);
@@ -16476,9 +16476,9 @@ ${eJ}
                     return n;
                   },
                   i = (i) => {
-                    if (!i.parentNode || !e4(i)) return;
+                    if (!i.parentNode || !e5(i)) return;
                     let o = ei(i.parentNode)
-                        ? this.mirror.getId(e5(i))
+                        ? this.mirror.getId(e4(i))
                         : this.mirror.getId(i.parentNode),
                       s = r(i);
                     if (-1 === o || -1 === s) return n.addNode(i);
@@ -18192,7 +18192,7 @@ ${eJ}
                   let i = e.call(this, r);
                   return (
                     this.shadowRoot &&
-                      e4(this) &&
+                      e5(this) &&
                       n.addShadowRoot(this.shadowRoot, t),
                     i
                   );
@@ -19314,15 +19314,15 @@ ${eJ}
           };
         }
         let t8 = "u" < typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__,
-          t5 = ["info", "warn", "error", "log"],
-          t4 = "[Replay] ";
+          t4 = ["info", "warn", "error", "log"],
+          t5 = "[Replay] ";
         function t7(e, t = "info") {
           (0, D.Z)(
             {
               category: "console",
               data: { logger: "replay" },
               level: t,
-              message: `${t4}${e}`,
+              message: `${t5}${e}`,
             },
             { level: t },
           );
@@ -19338,20 +19338,20 @@ ${eJ}
             },
           }),
           t8
-            ? (t5.forEach((e) => {
+            ? (t4.forEach((e) => {
                 d[e] = (...t) => {
-                  R.vF[e](t4, ...t), u && t7(t.join(""), (0, A.t)(e));
+                  R.vF[e](t5, ...t), u && t7(t.join(""), (0, A.t)(e));
                 };
               }),
               (d.exception = (e, ...t) => {
                 t.length && d.error && d.error(...t),
-                  R.vF.error(t4, e),
+                  R.vF.error(t5, e),
                   c ? (0, N.Cp)(e) : u && t7(e, "error");
               }),
               (d.infoTick = (...e) => {
-                R.vF.info(t4, ...e), u && setTimeout(() => t7(e[0]), 0);
+                R.vF.info(t5, ...e), u && setTimeout(() => t7(e[0]), 0);
               }))
-            : t5.forEach((e) => {
+            : t4.forEach((e) => {
                 d[e] = () => void 0;
               }),
           d);
@@ -21824,4 +21824,4 @@ ${eJ}
       window.DiscordSentry = (0, e.i)();
     })();
 })();
-//# sourceMappingURL=sentry.0a4bdac662b0ac12.js.map
+//# sourceMappingURL=sentry.2789be6282694644.js.map
