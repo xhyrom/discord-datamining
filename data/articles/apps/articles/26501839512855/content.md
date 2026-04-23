@@ -5,7 +5,7 @@
 </p>
 <p>
   <img
-    src="https://support-apps.discord.com/hc/article_attachments/26501839512215"
+    src="https://support-apps.discord.com/hc/article_attachments/39970594969623"
     alt="mceclip0.png"
   />
 </p>
