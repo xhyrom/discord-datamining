@@ -65,7 +65,6 @@
 <p>The following details apply to this promotional offer:</p>
 <ul>
   <li data-list-item-id="e84616b73d071f2b2996784146970e048">
-    <strong>Minimum purchase requirements</strong>: You
     <strong>Code details and restrictions</strong>: Discount codes are valid on
     most items in each store, including sale items, with no blackout dates.
     Please note that the Logitech 30% off code excludes new products and PRO
