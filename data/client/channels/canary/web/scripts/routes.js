@@ -1657,7 +1657,7 @@
               fi: () => n.e("3541").then(n.t.bind(n, 799380, 19)),
               fr: () => n.e("89486").then(n.t.bind(n, 990429, 19)),
               hi: () => n.e("92735").then(n.t.bind(n, 471618, 19)),
-              hr: () => n.e("10404").then(n.t.bind(n, 980655, 19)),
+              hr: () => n.e("88023").then(n.t.bind(n, 980655, 19)),
               hu: () => n.e("30227").then(n.t.bind(n, 814974, 19)),
               id: () => n.e("73413").then(n.t.bind(n, 994468, 19)),
               it: () => n.e("76693").then(n.t.bind(n, 136276, 19)),
@@ -158217,7 +158217,7 @@
       },
       843472(e, t, n) {
         "use strict";
-        n.d(t, { A: () => ex }), n(801541), n(938796);
+        n.d(t, { A: () => eU }), n(801541), n(938796);
         var r = n(889137),
           i = n(696292),
           s = n(665260),
@@ -158235,82 +158235,80 @@
           m = n(909338),
           g = n(354287),
           A = n(695870),
-          I = n(734066),
-          T = n(372684),
-          S = n(167189),
-          y = n(833291),
-          N = n(626584),
-          O = n(390248),
-          R = n(885918),
-          v = n(142120),
-          C = n(992771),
-          b = n(834757),
-          D = n(753738),
-          L = n(51271),
-          w = n(844944),
-          M = n(122906),
-          P = n(21599),
-          U = n(346542),
-          k = n(279208),
-          x = n(917878),
-          G = n(586872),
-          V = n(99341),
-          F = n(925518),
-          B = n(521427),
-          H = n(141468),
-          Y = n(407580),
-          W = n(130201),
-          j = n(963852),
-          K = n(195880),
-          $ = n(488004),
-          z = n(491001),
-          q = n(928830),
-          X = n(3137),
-          Q = n(969632),
-          J = n(79911),
-          Z = n(561844),
-          ee = n(710969);
+          I = n(167189),
+          T = n(833291),
+          S = n(626584),
+          y = n(390248),
+          N = n(885918),
+          O = n(142120),
+          R = n(992771),
+          v = n(834757),
+          C = n(753738),
+          b = n(51271),
+          D = n(844944),
+          L = n(122906),
+          w = n(21599),
+          M = n(346542),
+          P = n(279208),
+          U = n(917878),
+          k = n(586872),
+          x = n(99341),
+          G = n(925518),
+          V = n(521427),
+          F = n(141468),
+          B = n(407580),
+          H = n(130201),
+          Y = n(963852),
+          W = n(195880),
+          j = n(488004),
+          K = n(491001),
+          $ = n(928830),
+          z = n(3137),
+          q = n(969632),
+          X = n(79911),
+          Q = n(561844),
+          J = n(710969);
         n(853145);
-        var et = n(9842),
-          en = n(679382),
-          er = n(677413),
-          ei = n(867455),
-          es = n(614792),
-          ea = n(616356),
-          eo = n(961350),
-          el = n(734057);
+        var Z = n(9842),
+          ee = n(679382),
+          et = n(677413),
+          en = n(867455),
+          er = n(614792),
+          ei = n(616356),
+          es = n(961350),
+          ea = n(734057);
         n(580745);
-        var eu = n(71393),
-          ed = n(299091),
-          ec = n(320501),
-          e_ = n(576705),
-          ef = n(290863),
-          eE = n(222823),
-          eh = n(101392),
-          ep = n(287809),
-          em = n(954571),
-          eg = n(927813),
-          eA = n(45938),
-          eI = n(975571),
-          eT = n(927578),
-          eS = n(661191),
-          ey = n(292348),
-          eN = n(157559),
-          eO = n(652215),
-          eR = n(768349),
-          ev = n(401755),
-          eC = n(381941),
-          eb = n(985018);
-        let eD = new N.A("MessageActionCreators"),
-          eL = new N.A("MessageQueue"),
-          ew = !1;
-        class eM {
+        var eo = n(71393),
+          el = n(299091),
+          eu = n(320501),
+          ed = n(576705),
+          ec = n(290863),
+          e_ = n(222823),
+          ef = n(101392),
+          eE = n(287809),
+          eh = n(954571),
+          ep = n(927813),
+          em = n(45938),
+          eg = n(975571),
+          eA = n(927578),
+          eI = n(661191),
+          eT = n(292348),
+          eS = n(157559),
+          ey = n(652215),
+          eN = n(768349),
+          eO = n(401755),
+          eR = n(381941),
+          ev = n(985018);
+        let eC = new S.A("MessageActionCreators"),
+          eb = new S.A("MessageQueue"),
+          eD = !1;
+        class eL {
           completed = !1;
           markComplete() {
             this.completed = !0;
           }
         }
-        function eP(e) {
+        function ew(e) {
           let {
               inviteKey: t,
               channelId: n,
@@ -158319,20 +158317,20 @@
               inviteAnalyticsMetadata: s,
               overrideProperties: a = {},
             } = e,
-            o = eo.default.getId(),
-            l = ed.A.getInvite(t),
-            u = (0, P.y$)(t),
-            d = null != l && (0, U.oK)(l),
+            o = es.default.getId(),
+            l = el.A.getInvite(t),
+            u = (0, w.y$)(t),
+            d = null != l && (0, M.oK)(l),
             c = l?.target_application?.id;
-          null != c && d && (0, g.KL)(c, eR.J.ACTIVITY_INVITE, o);
-          let f = el.A.getChannel(n);
+          null != c && d && (0, g.KL)(c, eN.J.ACTIVITY_INVITE, o);
+          let f = ea.A.getChannel(n);
           if (null != f) {
             let e = null;
             f.isMultiUserDM()
-              ? (e = eO.G2g.GDM_INVITE)
-              : f.isPrivate() || (e = eO.G2g.SERVER_INVITE);
+              ? (e = ey.G2g.GDM_INVITE)
+              : f.isPrivate() || (e = ey.G2g.SERVER_INVITE);
             let t = {};
-            if (null != l && l.state === eO.elq.RESOLVED && null != l.channel) {
+            if (null != l && l.state === ey.elq.RESOLVED && null != l.channel) {
               let n = l.channel;
               (t.invite_channel_id = n.id),
                 (t.invite_guild_id = l.guild?.id),
@@ -158340,10 +158338,10 @@
                 null != l.inviter && (t.invite_inviter_id = l.inviter.id),
                 null != l.target_application &&
                   (t.application_id = l.target_application.id);
-              let r = ea.A.getLastActiveStream();
+              let r = ei.A.getLastActiveStream();
               if (null != r && r.channelId === n.id) {
-                (e = eO.G2g.STREAM), (t.destination_user_id = r.ownerId);
-                let n = (0, b.Ee)(r, ef.A);
+                (e = ey.G2g.STREAM), (t.destination_user_id = r.ownerId);
+                let n = (0, v.Ee)(r, ec.A);
                 t.application_id = null != n ? n.id : null;
               }
             }
@@ -158364,16 +158362,16 @@
                 guild_id: f.getGuildId(),
                 channel_id: f.id,
                 message_id: r,
-                send_type: eO.gfq.DIRECT_MESSAGE,
+                send_type: ey.gfq.DIRECT_MESSAGE,
                 invite_guild_scheduled_event_id: u.guildScheduledEventId,
-                invite_instance_id: (0, P._U)(u.baseCode, r) ?? null,
+                invite_instance_id: (0, w._U)(u.baseCode, r) ?? null,
                 ...a,
               }),
-              _.Ay.trackWithMetadata(eO.HAw.INVITE_SENT, t);
+              _.Ay.trackWithMetadata(ey.HAw.INVITE_SENT, t);
           } else {
             let e = {};
             null != l &&
-              l.state === eO.elq.RESOLVED &&
+              l.state === ey.elq.RESOLVED &&
               null != l.inviter &&
               ((e.invite_inviter_id = l.inviter.id),
               null != l.target_application &&
@@ -158381,106 +158379,106 @@
               (e = {
                 ...e,
                 location: i,
-                invite_type: eO.G2g.FRIEND_INVITE,
+                invite_type: ey.G2g.FRIEND_INVITE,
                 invite_code: u.baseCode,
                 message_id: r,
-                send_type: eO.gfq.DIRECT_MESSAGE,
+                send_type: ey.gfq.DIRECT_MESSAGE,
                 invite_guild_scheduled_event_id: u.guildScheduledEventId,
-                invite_instance_id: (0, P._U)(u.baseCode, r) ?? null,
+                invite_instance_id: (0, w._U)(u.baseCode, r) ?? null,
                 ...a,
               }),
-              _.Ay.trackWithMetadata(eO.HAw.INVITE_SENT, e));
+              _.Ay.trackWithMetadata(ey.HAw.INVITE_SENT, e));
           }
         }
-        let eU = {
-            [eO.t02.SLOWMODE_RATE_LIMITED]: {
+        let eM = {
+            [ey.t02.SLOWMODE_RATE_LIMITED]: {
               messageName: "SLOWMODE_RATE_LIMITED",
               messageGetter: (e) =>
-                eb.intl.formatToPlainString(eb.t.IWntYg, {
+                ev.intl.formatToPlainString(ev.t.IWntYg, {
                   seconds: e.rateLimitPerUser,
                 }),
             },
-            [eO.t02.INVALID_MESSAGE_SEND_NO_MUTUAL_GUILDS]: {
+            [ey.t02.INVALID_MESSAGE_SEND_NO_MUTUAL_GUILDS]: {
               messageName: "INVALID_MESSAGE_SEND_NO_MUTUAL_GUILDS",
               messageGetter: () => {
-                let e = eI.A.getArticleURL(eO.MVz.DM_COULD_NOT_BE_DELIVERED),
-                  { enabled: t } = F.A.getConfig({
+                let e = eg.A.getArticleURL(ey.MVz.DM_COULD_NOT_BE_DELIVERED),
+                  { enabled: t } = G.A.getConfig({
                     location: "sendClydeError",
                   });
                 return t
-                  ? eb.intl.formatToPlainString(eb.t.llTkqr, { helpUrl: e })
-                  : eb.intl.formatToPlainString(eb.t.SkGL7l, { helpUrl: e });
+                  ? ev.intl.formatToPlainString(ev.t.llTkqr, { helpUrl: e })
+                  : ev.intl.formatToPlainString(ev.t.SkGL7l, { helpUrl: e });
               },
             },
-            [eO.t02.INVALID_MESSAGE_SEND_USER]: {
+            [ey.t02.INVALID_MESSAGE_SEND_USER]: {
               messageName: "INVALID_MESSAGE_SEND_USER",
               messageGetter: () =>
-                eb.intl.formatToPlainString(eb.t.SkGL7l, {
-                  helpUrl: eI.A.getArticleURL(eO.MVz.DM_COULD_NOT_BE_DELIVERED),
+                ev.intl.formatToPlainString(ev.t.SkGL7l, {
+                  helpUrl: eg.A.getArticleURL(ey.MVz.DM_COULD_NOT_BE_DELIVERED),
                 }),
             },
-            [eO.t02.TOO_MANY_THREADS]: {
+            [ey.t02.TOO_MANY_THREADS]: {
               messageName: "TOO_MANY_THREADS",
               messageGetter: (e) =>
                 e.isForumLikeChannel() || e.isForumPost()
-                  ? eb.intl.string(eb.t["/jUd2+"])
-                  : eb.intl.string(eb.t["5EMPA7"]),
+                  ? ev.intl.string(ev.t["/jUd2+"])
+                  : ev.intl.string(ev.t["5EMPA7"]),
             },
-            [eO.t02.TOO_MANY_ANNOUNCEMENT_THREADS]: {
+            [ey.t02.TOO_MANY_ANNOUNCEMENT_THREADS]: {
               messageName: "TOO_MANY_ANNOUNCEMENT_THREADS",
-              messageGetter: () => eb.intl.string(eb.t["aY+lLC"]),
+              messageGetter: () => ev.intl.string(ev.t["aY+lLC"]),
             },
-            [eO.t02.HARMFUL_LINK_MESSAGE_BLOCKED]: {
+            [ey.t02.HARMFUL_LINK_MESSAGE_BLOCKED]: {
               messageName: "HARMFUL_LINK_MESSAGE_BLOCKED",
               messageGetter: () =>
-                eb.intl.formatToPlainString(eb.t.zSG3Qy, {
-                  helpUrl: eO.X7G.HARMFUL_LINKS,
+                ev.intl.formatToPlainString(ev.t.zSG3Qy, {
+                  helpUrl: ey.X7G.HARMFUL_LINKS,
                 }),
             },
-            [eO.t02.HARMFUL_URL_BLOCKED]: {
+            [ey.t02.HARMFUL_URL_BLOCKED]: {
               messageName: "HARMFUL_URL_BLOCKED",
-              messageGetter: () => eb.intl.string(eb.t.WxX2Fd),
+              messageGetter: () => ev.intl.string(ev.t.WxX2Fd),
             },
-            [eO.t02.EMAIL_VERIFICATION_REQUIRED]: {
+            [ey.t02.EMAIL_VERIFICATION_REQUIRED]: {
               messageName: "BOT_REQUIRES_EMAIL_VERIFICATION",
-              messageGetter: () => eb.intl.string(eb.t.k1Cjqr),
+              messageGetter: () => ev.intl.string(ev.t.k1Cjqr),
             },
-            [eO.t02.GUILD_MESSAGE_UPDATE_RATE_LIMIT_EXCEEDED]: {
+            [ey.t02.GUILD_MESSAGE_UPDATE_RATE_LIMIT_EXCEEDED]: {
               messageName: "GUILD_MESSAGE_UPDATE_RATE_LIMIT_EXCEEDED",
-              messageGetter: () => eb.intl.string(eb.t.Z5SUuv),
+              messageGetter: () => ev.intl.string(ev.t.Z5SUuv),
             },
-            [eO.t02.RATE_LIMIT_DM_OPEN]: {
+            [ey.t02.RATE_LIMIT_DM_OPEN]: {
               messageName: "BOT_DM_RATE_LIMITED",
-              messageGetter: () => eb.intl.string(eb.t.E8nbNb),
+              messageGetter: () => ev.intl.string(ev.t.E8nbNb),
             },
-            [eO.t02.SEND_MESSAGE_TEMPORARILY_DISABLED]: {
+            [ey.t02.SEND_MESSAGE_TEMPORARILY_DISABLED]: {
               messageName: "BOT_DM_SEND_MESSAGE_TEMPORARILY_DISABLED",
-              messageGetter: () => eb.intl.string(eb.t.aRUbah),
+              messageGetter: () => ev.intl.string(ev.t.aRUbah),
             },
-            [eO.t02.INVALID_MESSAGE_SEND_GAME_FRIEND_DM]: {
+            [ey.t02.INVALID_MESSAGE_SEND_GAME_FRIEND_DM]: {
               messageName: "BOT_DM_SEND_MESSAGE_INVALID_FOR_GAME_FRIEND",
-              messageGetter: () => eb.intl.string(eb.t["/meGhR"]),
+              messageGetter: () => ev.intl.string(ev.t["/meGhR"]),
             },
-            [eO.t02.INVALID_MESSAGE_SEND_PROVISIONAL_ACCOUNT_OFFLINE]: {
+            [ey.t02.INVALID_MESSAGE_SEND_PROVISIONAL_ACCOUNT_OFFLINE]: {
               messageName:
                 "BOT_DM_SEND_MESSAGE_INVALID_OFFLINE_PROVISIONAL_ACCOUNT",
-              messageGetter: () => eb.intl.string(eb.t.Oc1Zjw),
+              messageGetter: () => ev.intl.string(ev.t.Oc1Zjw),
             },
-            [eO.t02.TOTAL_ATTACHMENT_SIZE_TOO_LARGE]: {
+            [ey.t02.TOTAL_ATTACHMENT_SIZE_TOO_LARGE]: {
               messageName: "TOTAL_ATTACHMENT_SIZE_TOO_LARGE",
               messageGetter: () =>
-                eb.intl.formatToPlainString(eb.t.DYFPg2, { maxSizeMb: ey.YK }),
+                ev.intl.formatToPlainString(ev.t.DYFPg2, { maxSizeMb: eT.YK }),
             },
-            [eO.t02.CLOUD_UPLOAD_NOT_FOUND]: {
+            [ey.t02.CLOUD_UPLOAD_NOT_FOUND]: {
               messageName: "CLOUD_UPLOAD_NOT_FOUND",
-              messageGetter: () => eb.intl.string(eb.t.bQldfH),
+              messageGetter: () => ev.intl.string(ev.t.bQldfH),
             },
-            [eO.t02.INVALID_PERMISSIONS]: {
+            [ey.t02.INVALID_PERMISSIONS]: {
               messageName: "INVALID_PERMISSIONS",
-              messageGetter: () => eb.intl.string(eb.t.zl4Weq),
+              messageGetter: () => ev.intl.string(ev.t.zl4Weq),
             },
           },
-          ek = {
+          eP = {
             receiveMessage(e, t) {
               let n =
                   arguments.length > 2 &&
@@ -158501,13 +158499,13 @@
             },
             sendBotMessage(e, t, n, r) {
               null != n &&
-                _.Ay.trackWithMetadata(eO.HAw.AUTOMATED_MESSAGE_RECEIVED, {
+                _.Ay.trackWithMetadata(ey.HAw.AUTOMATED_MESSAGE_RECEIVED, {
                   message_author: "Clyde",
                   message_name: n,
                 }),
-                ek.receiveMessage(
+                eP.receiveMessage(
                   e,
-                  (0, j.pO)({
+                  (0, Y.pO)({
                     messageId: r,
                     channelId: e,
                     content: t,
@@ -158516,103 +158514,103 @@
                 );
             },
             sendNitroSystemMessage(e, t, n) {
-              let r = (0, j.Ay)({
+              let r = (0, Y.Ay)({
                 channelId: e,
                 nonce: n,
-                type: eO.lAJ.NITRO_NOTIFICATION,
+                type: ey.lAJ.NITRO_NOTIFICATION,
                 content: t,
-                flags: eO.pr7.EPHEMERAL,
+                flags: ey.pr7.EPHEMERAL,
                 author: {
-                  id: eO.oIV,
+                  id: ey.oIV,
                   username: "Nitro Notification",
-                  discriminator: eO.h3J,
+                  discriminator: ey.h3J,
                   avatar: "nitro",
                   bot: !0,
                 },
               });
-              ek.receiveMessage(
+              eP.receiveMessage(
                 e,
-                { ...r, state: eO.cmJ.SENT, channel_id: e },
+                { ...r, state: ey.cmJ.SENT, channel_id: e },
                 !0,
               );
             },
             sendGiftingPromptSystemMessage(e, t) {
-              let n = (0, j.Ay)({
+              let n = (0, Y.Ay)({
                 channelId: e,
-                type: eO.lAJ.GIFTING_PROMPT,
+                type: ey.lAJ.GIFTING_PROMPT,
                 content: "",
-                flags: eO.pr7.EPHEMERAL,
+                flags: ey.pr7.EPHEMERAL,
                 author: {
-                  id: eO.oIV,
+                  id: ey.oIV,
                   username: "Gifting Prompt",
-                  discriminator: eO.h3J,
+                  discriminator: ey.h3J,
                   avatar: "gifting_prompt",
                   bot: !0,
                 },
                 giftingPrompt: t,
               });
-              ek.receiveMessage(e, { ...n, state: eO.cmJ.SENT }, !0);
+              eP.receiveMessage(e, { ...n, state: ey.cmJ.SENT }, !0);
             },
             sendGuildBoostUpsellSystemMessage(e, t) {
-              let n = (0, j.Ay)({
+              let n = (0, Y.Ay)({
                 channelId: e,
-                type: eO.lAJ.GUILD_BOOST_UPSELL,
+                type: ey.lAJ.GUILD_BOOST_UPSELL,
                 content: "",
-                flags: eO.pr7.EPHEMERAL,
+                flags: ey.pr7.EPHEMERAL,
                 author: {
-                  id: eO.oIV,
+                  id: ey.oIV,
                   username: "Guild Boost Upsell",
-                  discriminator: eO.h3J,
+                  discriminator: ey.h3J,
                   avatar: "guild_boost_upsell",
                   bot: !0,
                 },
                 boostingPrompt: t,
               });
-              ek.receiveMessage(e, { ...n, state: eO.cmJ.SENT }, !0);
+              eP.receiveMessage(e, { ...n, state: ey.cmJ.SENT }, !0);
             },
             sendClydeError(e) {
               let t =
                   arguments.length > 1 && void 0 !== arguments[1]
                     ? arguments[1]
                     : 0,
-                n = el.A.getChannel(e);
+                n = ea.A.getChannel(e);
               if (null == n) return;
-              let r = eU[t];
+              let r = eM[t];
               null == r
-                ? ek.sendBotMessage(
+                ? eP.sendBotMessage(
                     e,
-                    eb.intl.formatToPlainString(eb.t.SkGL7l, {
-                      helpUrl: eI.A.getArticleURL(
-                        eO.MVz.DM_COULD_NOT_BE_DELIVERED,
+                    ev.intl.formatToPlainString(ev.t.SkGL7l, {
+                      helpUrl: eg.A.getArticleURL(
+                        ey.MVz.DM_COULD_NOT_BE_DELIVERED,
                       ),
                     }),
                     `SEND_FAILED (${t})`,
                   )
-                : ek.sendBotMessage(e, r.messageGetter(n), r.messageName);
+                : eP.sendBotMessage(e, r.messageGetter(n), r.messageName);
             },
             sendExplicitMediaClydeError(e, t, n) {
-              let i = el.A.getChannel(e);
+              let i = ea.A.getChannel(e);
               if (null == i) return;
               let { message: s, messageName: a } = (0, r.YW)({
                   isDM: i.isDM(),
                   isGDM: i.isGroupDM(),
                 })
                   .with({ isDM: !0 }, () => ({
-                    message: eb.intl.string(eb.t["mktny/"]),
+                    message: ev.intl.string(ev.t["mktny/"]),
                     messageName: "BOT_DM_EXPLICIT_CONTENT",
                   }))
                   .with({ isDM: !1, isGDM: !0 }, () => ({
-                    message: eb.intl.string(eb.t["mktny/"]),
+                    message: ev.intl.string(ev.t["mktny/"]),
                     messageName: "BOT_GDM_EXPLICIT_CONTENT",
                   }))
                   .otherwise(() => ({
-                    message: eb.intl.string(eb.t.i4AbAS),
+                    message: ev.intl.string(ev.t.i4AbAS),
                     messageName: "BOT_GUILD_EXPLICIT_CONTENT",
                   })),
-                o = (0, K.m)();
-              ek.sendBotMessage(e, s, a, o),
-                (0, O.hv)({
-                  action: O.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT,
+                o = (0, W.m)();
+              eP.sendBotMessage(e, s, a, o),
+                (0, y.hv)({
+                  action: y.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT,
                   messageId: o,
                   channelId: e,
                   context: n,
@@ -158638,19 +158636,19 @@
               l.h.dispatch({ type: "CLEAR_MESSAGES", channelId: e });
             },
             jumpToPresent(e, t) {
-              ek.trackJump(e, null, "Present");
+              eP.trackJump(e, null, "Present");
               let n = { present: !0 };
-              ec.A.hasPresent(e)
+              eu.A.hasPresent(e)
                 ? l.h.dispatch({
                     type: "LOAD_MESSAGES_SUCCESS_CACHED",
                     jump: n,
                     channelId: e,
                     limit: t,
                   })
-                : ek.fetchMessages({ channelId: e, limit: t, jump: n });
+                : eP.fetchMessages({ channelId: e, limit: t, jump: n });
             },
             trackJump(e, t, n, r) {
-              _.Ay.trackWithMetadata(eO.HAw.JUMP, {
+              _.Ay.trackWithMetadata(ey.HAw.JUMP, {
                 context: n,
                 channel_id: e,
                 message_id: t,
@@ -158672,10 +158670,10 @@
                 avoidInitialScroll: c,
               } = e;
               return (
-                "string" == typeof s && ek.trackJump(t, n, s, a),
-                ek.fetchMessages({
+                "string" == typeof s && eP.trackJump(t, n, s, a),
+                eP.fetchMessages({
                   channelId: t,
-                  limit: eO.d7Q,
+                  limit: ey.d7Q,
                   jump: {
                     messageId: n,
                     flash: r,
@@ -158691,22 +158689,22 @@
             },
             focusMessage(e) {
               let { channelId: t, messageId: n } = e;
-              ek.fetchMessages({
+              eP.fetchMessages({
                 channelId: t,
-                limit: eO.d7Q,
+                limit: ey.d7Q,
                 focus: { messageId: n },
               });
             },
             async fetchMessage(e) {
               let { channelId: t, messageId: n } = e,
                 r = await a.Bo.get({
-                  url: eO.Rsh.MESSAGES(t),
+                  url: ey.Rsh.MESSAGES(t),
                   query: { limit: 1, around: n },
                   retries: 2,
                   oldFormErrors: !0,
                   rejectWithError: !1,
                 });
-              if (r.body.length > 0) return (0, H.rh)(r.body[0]);
+              if (r.body.length > 0) return (0, F.rh)(r.body[0]);
             },
             fetchMessages(e) {
               let {
@@ -158724,16 +158722,16 @@
                   feature: h,
                   fetchKey: p,
                 } = e,
-                m = el.A.getChannel(t),
-                g = v.A.isConnectedOrOverlay(),
+                m = ea.A.getChannel(t),
+                g = O.A.isConnectedOrOverlay(),
                 I = Date.now();
-              if (null != m && m.type === eO.rbe.GUILD_STORE) return !1;
+              if (null != m && m.type === ey.rbe.GUILD_STORE) return !1;
               if (
                 t === A.E ||
-                (eD.log(
+                (eC.log(
                   `Fetching messages for ${t} between ${r} and ${n}. jump=${JSON.stringify(s)}`,
                 ),
-                ek._tryFetchMessagesCached({
+                eP._tryFetchMessagesCached({
                   channelId: t,
                   before: n,
                   after: r,
@@ -158744,18 +158742,18 @@
                 }))
               )
                 return;
-              es.A.fetchMessages.recordStart(),
-                x.A.recordChannelFetchStart(t, p ?? I, n, r, i);
+              er.A.fetchMessages.recordStart(),
+                U.A.recordChannelFetchStart(t, p ?? I, n, r, i);
               let T = s ?? void 0;
               null == T && null != o && (T = { ...o });
               let S = d.A.getOrCreate(t).loadStart(T);
               d.A.commit(S), l.h.dispatch({ type: "LOAD_MESSAGES" });
               let y = T?.messageId,
-                N = new eM();
+                N = new eL();
               return (
                 c || this.fetchLocalMessages(t, p ?? I, n, r, i, N),
                 a.Bo.get({
-                  url: eO.Rsh.MESSAGES(t),
+                  url: ey.Rsh.MESSAGES(t),
                   query: {
                     before: n,
                     after: r,
@@ -158769,8 +158767,8 @@
                   rejectWithError: !1,
                 }).then(
                   (e) => (
-                    es.A.fetchMessages.recordEnd(),
-                    es.A.dispatchMessages.measure(() => {
+                    er.A.fetchMessages.recordEnd(),
+                    er.A.dispatchMessages.measure(() => {
                       let a = e.body,
                         o = null != n,
                         u = null != r,
@@ -158788,18 +158786,18 @@
                             }),
                           ]
                             .filter((e, t, n) => n.indexOf(e) === t)
-                            .sort(eS.default.compare)
+                            .sort(eI.default.compare)
                             .indexOf(y);
                         if (
                           (r < n - 1 && (c = !1),
                           a.length - r < e && (h = !1),
                           h && a.length > 0)
                         ) {
-                          let e = eE.Ay.lastMessageId(t);
+                          let e = e_.Ay.lastMessageId(t);
                           a[0].id === e && (h = !1);
                         }
                       }
-                      eD.log(
+                      eC.log(
                         `Fetched ${a.length} messages for ${t} isBefore:${o} isAfter:${u}`,
                       ),
                         N.markComplete(),
@@ -158814,16 +158812,16 @@
                           limit: i,
                           jump: s,
                           forICYMI: f,
-                          isStale: !g || v.A.lastTimeConnectedChanged() >= I,
+                          isStale: !g || O.A.lastTimeConnectedChanged() >= I,
                           truncate: _,
                           avoidInitialScroll: E,
                         }),
-                        x.A.recordChannelFetchedNetwork(t, p ?? I, n, r, i, a);
+                        U.A.recordChannelFetchedNetwork(t, p ?? I, n, r, i, a);
                     }),
                     !0
                   ),
                   () => (
-                    eD.log(`Failed to fetch messages for ${t}`),
+                    eC.log(`Failed to fetch messages for ${t}`),
                     l.h.dispatch({
                       type: "LOAD_MESSAGES_FAILURE",
                       channelId: t,
@@ -158834,26 +158832,26 @@
               );
             },
             async fetchLocalMessages(e, t, n, r, i, s) {
-              let a = el.A.getBasicChannel(e),
+              let a = ea.A.getBasicChannel(e),
                 o = d.A.getOrCreate(e),
                 u = f.A.database();
               if (null == u || null == a || null != n || null != r)
-                return void es.A.addLocalMessages(e, -1);
+                return void er.A.addLocalMessages(e, -1);
               if (o.ready && !o.cached)
-                return void es.A.addLocalMessages(e, -2);
+                return void er.A.addLocalMessages(e, -2);
               let c = await (0, E.kk)(() => h.Ay.load(u, e, i));
-              if (null == c) return void es.A.addLocalMessages(e, -3);
+              if (null == c) return void er.A.addLocalMessages(e, -3);
               if (
-                (eD.log(
+                (eC.log(
                   `fetched ${c.messages.length} messages from local database (channel_id: ${e}, remote_fetch_completed: ${s.completed})`,
                 ),
-                es.A.addLocalMessages(e, c.messages.length),
+                er.A.addLocalMessages(e, c.messages.length),
                 !s.completed && c.messages.length > 0)
               ) {
                 let s =
                   c.messages.length >= i &&
-                  c.connectionId === v.A.lastTimeConnectedChanged();
-                x.A.recordChannelFetchedLocal(e, t, n, r, i, c.messages),
+                  c.connectionId === O.A.lastTimeConnectedChanged();
+                U.A.recordChannelFetchedLocal(e, t, n, r, i, c.messages),
                   l.h.dispatch({
                     type: "LOCAL_MESSAGES_LOADED",
                     guildId: a.guild_id,
@@ -158866,7 +158864,7 @@
               }
             },
             async fetchNewLocalMessages(e, t) {
-              let n = el.A.getBasicChannel(e),
+              let n = ea.A.getBasicChannel(e),
                 r = f.A.database();
               if (null == r || null == n) return;
               let i = d.A.getOrCreate(e);
@@ -158878,8 +158876,8 @@
                 o =
                   null == a
                     ? s.messages
-                    : s.messages.filter((e) => eS.default.compare(e.id, a) > 0);
-              eD.log(
+                    : s.messages.filter((e) => eI.default.compare(e.id, a) > 0);
+              eC.log(
                 `Fetched ${s.messages.length} messages from the cache after foregrounding. ${o.length} are new`,
               ),
                 0 !== o.length &&
@@ -158891,7 +158889,7 @@
                     members: s.members,
                     messages: o,
                     stale: !0,
-                    isForegroundCacheLoad: (0, z.K)(),
+                    isForegroundCacheLoad: (0, K.K)(),
                   });
             },
             _tryFetchMessagesCached(e) {
@@ -158904,7 +158902,7 @@
                   focus: a,
                   truncate: o,
                 } = e,
-                u = ec.A.getMessages(t);
+                u = eu.A.getMessages(t);
               if (u.cached || !u.ready) return !1;
               if (s?.messageId != null || a?.messageId != null) {
                 if (s?.messageId != null && u.has(s.messageId, !1))
@@ -158933,28 +158931,28 @@
                   else s = { ...a };
                 let e =
                     s?.messageId != null
-                      ? eS.default.extractTimestamp(s?.messageId)
+                      ? eI.default.extractTimestamp(s?.messageId)
                       : 0,
                   n = u.first(),
                   r = u.last();
                 if (
                   (!u.hasMoreBefore &&
                     null != n &&
-                    eS.default.extractTimestamp(n.id) >= e) ||
+                    eI.default.extractTimestamp(n.id) >= e) ||
                   (!u.hasMoreAfter &&
                     null != r &&
-                    eS.default.extractTimestamp(r.id) <= e) ||
+                    eI.default.extractTimestamp(r.id) <= e) ||
                   (null != n &&
                     null != r &&
-                    eS.default.extractTimestamp(n.id) < e &&
-                    eS.default.extractTimestamp(r.id) > e)
+                    eI.default.extractTimestamp(n.id) < e &&
+                    eI.default.extractTimestamp(r.id) > e)
                 )
                   return (
                     l.h.dispatch({
                       type: "LOAD_MESSAGES_SUCCESS_CACHED",
                       channelId: t,
                       jump: s,
-                      limit: eO.d7Q,
+                      limit: ey.d7Q,
                     }),
                     !0
                   );
@@ -158989,23 +158987,23 @@
                   arguments[2],
                 r = arguments.length > 3 ? arguments[3] : void 0;
               if (t.reaction) return Promise.resolve();
-              let i = await (0, J.A)(e);
-              if (null != i) return ek.sendMessage(i, t, n, r);
-              let s = r.nonce ?? (0, K.m)();
+              let i = await (0, X.A)(e);
+              if (null != i) return eP.sendMessage(i, t, n, r);
+              let s = r.nonce ?? (0, W.m)();
               r = { ...r, nonce: s };
-              let a = V.Ay.backgroundify(
-                () => ek._sendMessage(e, t, r),
+              let a = x.Ay.backgroundify(
+                () => eP._sendMessage(e, t, r),
                 void 0,
               );
-              return (Y.A.recordMessageSendAttempt(e, s, r), ec.A.isReady(e))
+              return (B.A.recordMessageSendAttempt(e, s, r), eu.A.isReady(e))
                 ? a()
                 : n && e !== A.E
-                  ? (eL.info(
+                  ? (eb.info(
                       `Waiting for channel ${e} to be ready before sending.`,
                     ),
                     new Promise((t, n) => {
-                      ec.A.whenReady(e, () => {
-                        eL.info(`Channel ${e} is ready for sending now.`),
+                      eu.A.whenReady(e, () => {
+                        eb.info(`Channel ${e} is ready for sending now.`),
                           a().then(t, n);
                       });
                     }))
@@ -159022,7 +159020,7 @@
                     },
                     allowedMentions: e.shouldMention
                       ? void 0
-                      : { parse: Object.values(eO.uw8), replied_user: !1 },
+                      : { parse: Object.values(ey.uw8), replied_user: !1 },
                   },
             getSendMessageOptionsForStickers(e) {
               let { isGif: t, stickers: n } = e;
@@ -159036,19 +159034,19 @@
               alsoForwardToChannelId: e.alsoForwardToChannelId,
             }),
             getSendMessageOptions(e) {
-              let t = ek.getSendMessageOptionsForReply(e.pendingReply),
-                n = ek.getSendMessageOptionsForStickers({ ...e }),
-                r = ek.getSendMessageOptionsForScheduledMessage({ ...e }),
-                i = ek.getSendMessageOptionsForAlsoForwardToChannel({ ...e });
+              let t = eP.getSendMessageOptionsForReply(e.pendingReply),
+                n = eP.getSendMessageOptionsForStickers({ ...e }),
+                r = eP.getSendMessageOptionsForScheduledMessage({ ...e }),
+                i = eP.getSendMessageOptionsForAlsoForwardToChannel({ ...e });
               return { ...t, ...n, ...r, ...i };
             },
             sendInvite(e, t, n, r, i) {
-              let s = (0, k.A)(t);
+              let s = (0, P.A)(t);
               return (
                 null != i &&
                   (s = `${i}
 ${s}`),
-                ek._sendMessage(
+                eP._sendMessage(
                   e,
                   {
                     content: s,
@@ -159061,7 +159059,7 @@ ${s}`),
               );
             },
             sendActivityBookmark: (e, t, n, r) =>
-              ek._sendMessage(
+              eP._sendMessage(
                 e,
                 {
                   content: t,
@@ -159081,7 +159079,7 @@ ${s}`),
                   arguments.length > 4 &&
                   void 0 !== arguments[4] &&
                   arguments[4];
-              return ek._sendMessage(
+              return eP._sendMessage(
                 e,
                 {
                   content: n,
@@ -159099,7 +159097,7 @@ ${s}`),
                     : {},
                 { messageReference: r, allowedMentions: i } = n;
               return a.Bo.post({
-                url: eO.Rsh.MESSAGES_GREET(e),
+                url: ey.Rsh.MESSAGES_GREET(e),
                 body: {
                   sticker_ids: [t],
                   allowed_mentions: i,
@@ -159107,11 +159105,11 @@ ${s}`),
                 },
                 oldFormErrors: !0,
                 rejectWithError: !1,
-                context: { location: eC.Hx.GREET },
+                context: { location: eR.Hx.GREET },
               }).then(
                 (n) => (
-                  W.A.donateSentMessage(n.body.content, e),
-                  ek.receiveMessage(e, n.body),
+                  H.A.donateSentMessage(n.body.content, e),
+                  eP.receiveMessage(e, n.body),
                   l.h.dispatch({
                     type: "STICKER_TRACK_USAGE",
                     stickerIds: [t],
@@ -159120,8 +159118,8 @@ ${s}`),
                 ),
                 (t) => {
                   throw (
-                    (eD.log("Failed to send greeting"),
-                    429 !== t.status && ek.sendClydeError(e, t.body.code),
+                    (eC.log("Failed to send greeting"),
+                    429 !== t.status && eP.sendClydeError(e, t.body.code),
                     l.h.dispatch({
                       type: "MESSAGE_SEND_FAILED",
                       messageId: t.body.id,
@@ -159137,7 +159135,7 @@ ${s}`),
                 arguments.length > 2 && void 0 !== arguments[2]
                   ? arguments[2]
                   : {};
-              return ek._sendMessage(
+              return eP._sendMessage(
                 e,
                 {
                   content: "",
@@ -159145,34 +159143,34 @@ ${s}`),
                   validNonShortcutEmojis: [],
                   invalidEmojis: [],
                 },
-                { ...n, poll: t, location: eC.Hx.POLL_CREATION },
+                { ...n, poll: t, location: eR.Hx.POLL_CREATION },
               );
             },
             validateMessage(e, t, n) {
               let r, i;
               return (
-                e.some((e) => e.animated) && !eT.Ay.canUseAnimatedEmojis(t)
-                  ? ((r = eb.intl.string(eb.t.msFJy8)),
+                e.some((e) => e.animated) && !eA.Ay.canUseAnimatedEmojis(t)
+                  ? ((r = ev.intl.string(ev.t.msFJy8)),
                     (i = "INVALID_ANIMATED_EMOJI_BODY"))
-                  : e_.A.canWithPartialContext(eO.xBc.USE_EXTERNAL_EMOJIS, {
+                  : ed.A.canWithPartialContext(ey.xBc.USE_EXTERNAL_EMOJIS, {
                         channelId: n,
                       })
-                    ? ((r = eb.intl.string(eb.t.FzugNl)),
+                    ? ((r = ev.intl.string(ev.t.FzugNl)),
                       (i = "INVALID_EXTERNAL_EMOJI_BODY_UPGRADE"))
-                    : ((r = eb.intl.string(eb.t["Q87rI/"])),
+                    : ((r = ev.intl.string(ev.t["Q87rI/"])),
                       (i = "INVALID_EXTERNAL_EMOJI_BODY")),
                 { errorMessage: r, errorMessageName: i }
               );
             },
             async _sendMessage(e, t, n) {
               let r,
-                a = (0, J.A)(e);
+                a = (0, X.A)(e);
               if (null != a)
                 return (
-                  eL.info("Converting channel to a private channel"),
+                  eb.info("Converting channel to a private channel"),
                   a.then((e) => {
-                    eL.info("Finished converting channel to a private channel"),
-                      ek._sendMessage(e, t, n);
+                    eb.info("Finished converting channel to a private channel"),
+                      eP._sendMessage(e, t, n);
                   })
                 );
               let o = t.content,
@@ -159185,94 +159183,94 @@ ${s}`),
                   activityAction: E,
                   location: h,
                   inviteAnalyticsMetadata: A,
-                  stickerIds: N,
-                  messageReference: v,
-                  allowedMentions: b,
-                  poll: P,
-                  sharedCustomTheme: U,
-                  contentInventoryEntry: k,
-                  attachments: x,
-                  attachmentsToUpload: V,
-                  onAttachmentUploadError: F,
-                  announcementSendOptions: z,
-                  withCheckpoint: et,
+                  stickerIds: S,
+                  messageReference: O,
+                  allowedMentions: v,
+                  poll: w,
+                  sharedCustomTheme: M,
+                  contentInventoryEntry: P,
+                  attachments: U,
+                  attachmentsToUpload: x,
+                  onAttachmentUploadError: G,
+                  announcementSendOptions: K,
+                  withCheckpoint: Z,
                 } = n,
-                ei = n.flags ?? 0,
-                [es, ea] = (0, er.A)(o);
-              es &&
-                ((o = ea), (ei = (0, s.UI)(ei, eO.pr7.SUPPRESS_NOTIFICATIONS)));
-              let ed = el.A.getChannel(e),
-                ec = eu.A.getGuild(ed?.guild_id);
-              (0, B.Qz)(ec, ed, "_sendMessage") &&
-                (ei = (0, s.UI)(ei, eO.pr7.IS_GUILD_OFFICIAL));
-              let e_ = !1,
-                ef = n.messageReference?.type === eO.SH7.FORWARD;
+                en = n.flags ?? 0,
+                [er, ei] = (0, et.A)(o);
+              er &&
+                ((o = ei), (en = (0, s.UI)(en, ey.pr7.SUPPRESS_NOTIFICATIONS)));
+              let el = ea.A.getChannel(e),
+                eu = eo.A.getGuild(el?.guild_id);
+              (0, V.Qz)(eu, el, "_sendMessage") &&
+                (en = (0, s.UI)(en, ey.pr7.IS_GUILD_OFFICIAL));
+              let ed = !1,
+                ec = n.messageReference?.type === ey.SH7.FORWARD;
               if (
                 "" === o &&
                 null == E &&
-                null == N &&
+                null == S &&
+                null == w &&
+                null == M &&
                 null == P &&
-                null == U &&
-                null == k &&
-                !ef &&
-                (null == x || 0 === x.length) &&
-                !et &&
+                !ec &&
+                (null == U || 0 === U.length) &&
+                !Z &&
                 (null == t.components || 0 === t.components.length)
               )
-                if (null == V || !(V.length > 0)) return Promise.resolve();
-                else e_ = !0;
-              let eE = null != v ? eO.lAJ.REPLY : eO.lAJ.DEFAULT,
-                eI = n.nonce ?? (0, K.m)(),
-                eT = (0, j.Ay)({
+                if (null == x || !(x.length > 0)) return Promise.resolve();
+                else ed = !0;
+              let e_ = null != O ? ey.lAJ.REPLY : ey.lAJ.DEFAULT,
+                eg = n.nonce ?? (0, W.m)(),
+                eA = (0, Y.Ay)({
                   channelId: e,
                   content: o,
                   tts: f,
-                  type: eE,
-                  messageReference: v,
-                  allowedMentions: b,
-                  flags: 0 !== ei ? ei : void 0,
-                  nonce: eI,
-                  poll: (0, Q.G8)(P),
-                  sharedCustomTheme: U,
+                  type: e_,
+                  messageReference: O,
+                  allowedMentions: v,
+                  flags: 0 !== en ? en : void 0,
+                  nonce: eg,
+                  poll: (0, q.G8)(w),
+                  sharedCustomTheme: M,
                 });
               if (
                 (!1 !== n.eagerDispatch &&
-                  ((0, q.iq)(e, eT.id),
-                  null != N &&
-                    (eT.sticker_items = N.map((e) =>
-                      en.A.getStickerById(e),
+                  ((0, $.iq)(e, eA.id),
+                  null != S &&
+                    (eA.sticker_items = S.map((e) =>
+                      ee.A.getStickerById(e),
                     ).filter((e) => null != e)),
-                  ek.receiveMessage(e, eT, !0, n)),
-                !ew && null != u && u.length > 0)
+                  eP.receiveMessage(e, eA, !0, n)),
+                !eD && null != u && u.length > 0)
               ) {
-                ew = !0;
-                let t = ep.default.getCurrentUser(),
-                  { errorMessage: n, errorMessageName: r } = ek.validateMessage(
+                eD = !0;
+                let t = eE.default.getCurrentUser(),
+                  { errorMessage: n, errorMessageName: r } = eP.validateMessage(
                     u,
                     t,
                     e,
                   );
-                ek.sendBotMessage(e, n, r);
+                eP.sendBotMessage(e, n, r);
               }
-              let eN = {
-                type: null != z ? c.AZ.SEND_ANNOUNCEMENT : c.AZ.SEND,
+              let eS = {
+                type: null != K ? c.AZ.SEND_ANNOUNCEMENT : c.AZ.SEND,
                 message: {
                   channelId: e,
                   content: o,
-                  nonce: eI,
+                  nonce: eg,
                   tts: f,
-                  message_reference: v,
-                  allowed_mentions: b,
-                  flags: ei,
+                  message_reference: O,
+                  allowed_mentions: v,
+                  flags: en,
                   analyticsLocation: h,
                 },
               };
               if (
-                (null != t.components && (eN.message.components = t.components),
-                null != z &&
-                  ((eN.message.create_thread = z.createThread),
-                  (eN.message.title = z.threadName),
-                  (eN.message.publish = z.publish ?? !1)),
+                (null != t.components && (eS.message.components = t.components),
+                null != K &&
+                  ((eS.message.create_thread = K.createThread),
+                  (eS.message.title = K.threadName),
+                  (eS.message.publish = K.publish ?? !1)),
                 null != E)
               ) {
                 let e,
@@ -159280,11 +159278,11 @@ ${s}`),
                 if (
                   null !=
                   (e =
-                    E.type === eO.xL.JOIN_REQUEST ||
-                    E.type === eO.xL.STREAM_REQUEST ||
+                    E.type === ey.xL.JOIN_REQUEST ||
+                    E.type === ey.xL.STREAM_REQUEST ||
                     null != t
                       ? t
-                      : eo.default.getSessionId())
+                      : es.default.getSessionId())
                 ) {
                   let t = {
                       type: E.type,
@@ -159295,85 +159293,67 @@ ${s}`),
                   null != n.party &&
                     null != n.party.id &&
                     (t.party_id = n.party.id),
-                    (eN.message.application_id = n.application_id),
-                    (eN.message.activity = t);
+                    (eS.message.application_id = n.application_id),
+                    (eS.message.activity = t);
                 }
               }
               if (
-                (null != P && (eN.message.poll = P),
-                null != U && (eN.message.shared_client_theme = U),
-                null != N && (eN.message.sticker_ids = N),
-                X.A.isEnabled() && (eN.message.has_poggermode_enabled = !0),
-                et && (eN.message.with_checkpoint = !0),
-                null != k && (eN.message.content_inventory_entry = k),
-                null != x && x.length > 0 && (eN.message.attachments = x),
-                null != V && V.length > 0)
+                (null != w && (eS.message.poll = w),
+                null != M && (eS.message.shared_client_theme = M),
+                null != S && (eS.message.sticker_ids = S),
+                z.A.isEnabled() && (eS.message.has_poggermode_enabled = !0),
+                Z && (eS.message.with_checkpoint = !0),
+                null != P && (eS.message.content_inventory_entry = P),
+                null != U && U.length > 0 && (eS.message.attachments = U),
+                null != x && x.length > 0)
               )
                 try {
-                  let t = await (0, G.L)({
+                  let t = await (0, k.L)({
                     channelId: e,
-                    nonce: eI,
-                    items: V,
-                    message: eT,
+                    nonce: eg,
+                    items: x,
+                    message: eA,
                     shouldUploadFailureSendNotification:
                       !n.doNotNotifyOnError && void 0,
                   });
                   if (null == t) return;
                   let i = t.attachments;
-                  if (((r = t.uploader), e_ && (null == i || 0 === i.length)))
+                  if (((r = t.uploader), ed && (null == i || 0 === i.length)))
                     return;
-                  if (
-                    null != i &&
-                    ((eN.message.attachments = i.map((e, t) =>
-                      (0, ey.OW)(e, t),
-                    )),
-                    (0, I.J)())
-                  ) {
-                    for (let e of i)
-                      if (
-                        e.item?.clip?.decision?.signal?.type ===
-                        T.Gy.DISTRIBUTED
-                      ) {
-                        let t = {
-                            id: e.item.clip.id,
-                            remoteTriggerClipId:
-                              e.item.clip.decision?.signal?.remoteTriggerClipId,
-                          },
-                          n = `__CLIP_METADATA__${JSON.stringify(t)}`;
-                        eN.message.content = `${eN.message.content}${n}`;
-                        break;
-                      }
-                  }
+                  null != i &&
+                    (eS.message.attachments = i.map((e, t) =>
+                      (0, eT.OW)(e, t),
+                    ));
                 } catch (i) {
                   let { file: e, code: t, reason: n, responseBody: r } = i;
-                  (0, $.O)({
+                  (0, j.O)({
                     fileItems: e.items,
                     failureCode: t,
                     errorMessage: n?.msg,
                   }),
-                    F?.(e, t, n, r);
+                    G?.(e, t, n, r);
                   return;
                 }
               return new Promise((t, s) => {
                 let a = Date.now(),
                   u = c.Ay.length,
                   f = Math.floor(1e4 * Math.random());
-                eL.info(`Queueing message to be sent LogId:${f}`),
+                eb.info(`Queueing message to be sent LogId:${f}`),
                   c.Ay.enqueue(
-                    eN,
+                    eS,
                     (E) => {
-                      let I = Date.now() - a;
+                      let O = Date.now() - a;
                       if (E.ok) {
-                        var T, v, b, U, x, G, V;
+                        var v, M, U, k, x, G, V;
                         let s;
-                        W.A.donateSentMessage(o, e),
-                          ek.receiveMessage(e, E.body, !0, {
-                            sendAnalytics: { duration: I, queueSize: u },
-                            poll: P,
+                        H.A.donateSentMessage(o, e),
+                          eP.receiveMessage(e, E.body, !0, {
+                            sendAnalytics: { duration: O, queueSize: u },
+                            poll: w,
                           }),
                           null != n.alsoForwardToChannelId &&
-                            R.A.sendForward(
-                              (0, H.rh)(E.body),
+                            N.A.sendForward(
+                              (0, F.rh)(E.body),
                               n.alsoForwardToChannelId,
                             )
                               .then(() => {
@@ -159384,8 +159364,8 @@ ${s}`),
                                     channelId: r,
                                     destinationChannelId: i,
                                   } = e;
-                                  em.default.track(
-                                    eO.HAw.MESSAGE_ALSO_SEND_TO_CHANNEL_SENT,
+                                  eh.default.track(
+                                    ey.HAw.MESSAGE_ALSO_SEND_TO_CHANNEL_SENT,
                                     {
                                       referenced_message_id: t,
                                       guild_id: n,
@@ -159402,7 +159382,7 @@ ${s}`),
                                 });
                               })
                               .catch((t) => {
-                                eD.log(
+                                eC.log(
                                   `Failed to forward thread message to parent channel LogId:${f}`,
                                   {
                                     referencedMessageId: E.body?.id,
@@ -159413,15 +159393,15 @@ ${s}`),
                                   },
                                 );
                               });
-                        let a = eS.default.cast(e),
-                          c = w.A.getRequest(a);
+                        let a = eI.default.cast(e),
+                          c = D.A.getRequest(a);
                         if (null != c) {
                           let {
                             guildId: t,
                             userId: n,
                             applicationStatus: r,
                           } = c;
-                          (0, L.cK)({
+                          (0, b.cK)({
                             guildId: t,
                             channelId: e,
                             messageId: E.body.id,
@@ -159429,10 +159409,10 @@ ${s}`),
                             joinRequestUserId: n,
                           });
                         }
-                        Y.A.recordMessageSendApiResponse(eI),
+                        B.A.recordMessageSendApiResponse(eg),
                           l.h.dispatch({
                             type: "SLOWMODE_RESET_COOLDOWN",
-                            slowmodeType: eh.R.SendMessage,
+                            slowmodeType: ef.R.SendMessage,
                             channelId: e,
                           }),
                           l.h.dispatch({
@@ -159441,13 +159421,13 @@ ${s}`),
                           }),
                           l.h.dispatch({
                             type: "STICKER_TRACK_USAGE",
-                            stickerIds: N,
+                            stickerIds: S,
                           }),
                           l.h.dispatch({
                             type: "LOCAL_MESSAGE_CREATE",
                             message: {
                               channel_id: e,
-                              author: ep.default.getCurrentUser(),
+                              author: eE.default.getCurrentUser(),
                             },
                           }),
                           (function (e) {
@@ -159459,11 +159439,11 @@ ${s}`),
                                 inviteAnalyticsMetadata: a,
                                 overrideProperties: o = {},
                               } = e,
-                              l = eo.default.getId();
-                            (0, y.Ay)(t).forEach((e) => {
+                              l = es.default.getId();
+                            (0, T.Ay)(t).forEach((e) => {
                               let { type: t, code: u, url: d } = e;
-                              if (t === S.I.INVITE)
-                                eP({
+                              if (t === I.I.INVITE)
+                                ew({
                                   inviteKey: u,
                                   channelId: n,
                                   messageId: r,
@@ -159471,12 +159451,12 @@ ${s}`),
                                   inviteAnalyticsMetadata: a,
                                   overrideProperties: o,
                                 });
-                              else if (t === S.I.TEMPLATE) {
-                                let e = M.A.getGuildTemplate(u);
-                                if (null == e || e.state === ev.QB.RESOLVING)
+                              else if (t === I.I.TEMPLATE) {
+                                let e = L.A.getGuildTemplate(u);
+                                if (null == e || e.state === eO.QB.RESOLVING)
                                   return;
                                 _.Ay.trackWithMetadata(
-                                  eO.HAw.GUILD_TEMPLATE_LINK_SENT,
+                                  ey.HAw.GUILD_TEMPLATE_LINK_SENT,
                                   {
                                     guild_template_code: u,
                                     guild_template_name: e.name,
@@ -159484,51 +159464,51 @@ ${s}`),
                                     guild_template_guild_id: e.sourceGuildId,
                                   },
                                 );
-                              } else if (t === S.I.BUILD_OVERRIDE);
-                              else if (t === S.I.EXPERIMENT);
-                              else if (t === S.I.MANUAL_BUILD_OVERRIDE);
-                              else if (t === S.I.EVENT);
-                              else if (t === S.I.CHANNEL_LINK);
-                              else if (t === S.I.APP_DIRECTORY_PROFILE)
-                                (0, C.y)(u),
-                                  (0, g.KL)(u, eR.J.APP_DISCOVERY, l);
-                              else if (t === S.I.APP_DIRECTORY_STOREFRONT)
-                                (0, C.y)(u, "storefront");
-                              else if (t === S.I.APP_DIRECTORY_STOREFRONT_SKU) {
+                              } else if (t === I.I.BUILD_OVERRIDE);
+                              else if (t === I.I.EXPERIMENT);
+                              else if (t === I.I.MANUAL_BUILD_OVERRIDE);
+                              else if (t === I.I.EVENT);
+                              else if (t === I.I.CHANNEL_LINK);
+                              else if (t === I.I.APP_DIRECTORY_PROFILE)
+                                (0, R.y)(u),
+                                  (0, g.KL)(u, eN.J.APP_DISCOVERY, l);
+                              else if (t === I.I.APP_DIRECTORY_STOREFRONT)
+                                (0, R.y)(u, "storefront");
+                              else if (t === I.I.APP_DIRECTORY_STOREFRONT_SKU) {
                                 let e = (0, p.u)(u);
                                 null != e &&
-                                  (0, C.y)(e.applicationId, "storefront_sku");
-                              } else if (t === S.I.ACTIVITY_BOOKMARK) {
+                                  (0, R.y)(e.applicationId, "storefront_sku");
+                              } else if (t === I.I.ACTIVITY_BOOKMARK) {
                                 let e = (0, m.N)(d);
                                 (0, g.KL)(
                                   u,
-                                  eR.J.ACTIVITY,
+                                  eN.J.ACTIVITY,
                                   e.referrerId ?? l,
                                   e.customId,
                                 );
-                              } else if (t === S.I.EMBEDDED_ACTIVITY_INVITE)
-                                (0, g.KL)(u, eR.J.ACTIVITY_INVITE, l);
-                              else if (t === S.I.GUILD_PRODUCT);
-                              else if (t === S.I.SERVER_SHOP);
-                              else if (t === S.I.SOCIAL_LAYER_STOREFRONT);
-                              else if (t === S.I.QUESTS_EMBED) {
-                                let e = (0, ee.L4)(i.u.QUESTS_EMBED);
-                                (0, Z.av)({
+                              } else if (t === I.I.EMBEDDED_ACTIVITY_INVITE)
+                                (0, g.KL)(u, eN.J.ACTIVITY_INVITE, l);
+                              else if (t === I.I.GUILD_PRODUCT);
+                              else if (t === I.I.SERVER_SHOP);
+                              else if (t === I.I.SOCIAL_LAYER_STOREFRONT);
+                              else if (t === I.I.QUESTS_EMBED) {
+                                let e = (0, J.L4)(i.u.QUESTS_EMBED);
+                                (0, Q.av)({
                                   questId: u,
-                                  event: eO.HAw.QUEST_LINK_SHARED,
+                                  event: ey.HAw.QUEST_LINK_SHARED,
                                   properties: {
                                     metadata_sealed: null != e ? e : null,
                                   },
                                   trackGuildAndChannelMetadata: !0,
                                   sourceQuestContent: i.u.QUESTS_EMBED,
                                 });
-                              } else if (t === S.I.APP_OAUTH2_LINK)
+                              } else if (t === I.I.APP_OAUTH2_LINK)
                                 _.Ay.trackWithMetadata(
-                                  eO.HAw.APP_OAUTH2_LINK_EMBED_URL_SENT,
+                                  ey.HAw.APP_OAUTH2_LINK_EMBED_URL_SENT,
                                   { application_id: u },
                                 ),
-                                  (0, g.KL)(u, eR.J.OAUTH, l);
-                              else if (t === S.I.COLLECTIBLES_SHOP);
+                                  (0, g.KL)(u, eN.J.OAUTH, l);
+                              else if (t === I.I.COLLECTIBLES_SHOP);
                               else throw Error(`Unknown coded link type: ${t}`);
                             });
                           })({
@@ -159538,29 +159518,29 @@ ${s}`),
                             location: h ?? "chat_input",
                             inviteAnalyticsMetadata: A,
                           }),
-                          (T = o),
-                          (v = E.body.id),
-                          (b = h ?? "chat_input"),
-                          (U = !!n.isGiftLinkSentOnBehalfOfUser),
-                          (0, eA.e7)(T).forEach((t) => {
-                            let n = el.A.getChannel(e);
+                          (v = o),
+                          (M = E.body.id),
+                          (U = h ?? "chat_input"),
+                          (k = !!n.isGiftLinkSentOnBehalfOfUser),
+                          (0, em.e7)(v).forEach((t) => {
+                            let n = ea.A.getChannel(e);
                             null != n &&
-                              _.Ay.trackWithMetadata(eO.HAw.GIFT_CODE_SENT, {
-                                location: b,
+                              _.Ay.trackWithMetadata(ey.HAw.GIFT_CODE_SENT, {
+                                location: U,
                                 gift_code: t,
                                 guild_id: n.getGuildId(),
                                 channel_id: n.id,
                                 channel_type: n.type,
-                                message_id: v,
-                                automatic_send: U,
+                                message_id: M,
+                                automatic_send: k,
                               });
                           }),
                           null != n.gifMetadata &&
                             ((x = n.gifMetadata),
                             (G = E.body.id),
                             (V = h ?? "chat_input"),
-                            null != (s = el.A.getChannel(e)) &&
-                              em.default.track(eO.HAw.MESSAGE_SENT_WITH_GIF, {
+                            null != (s = ea.A.getChannel(e)) &&
+                              eh.default.track(ey.HAw.MESSAGE_SENT_WITH_GIF, {
                                 location: V,
                                 message_id: G,
                                 gif_provider: x.gif_provider,
@@ -159581,7 +159561,7 @@ ${s}`),
                           t(E);
                       } else {
                         let t;
-                        eD.log("Failed to send message", {
+                        eC.log("Failed to send message", {
                           hasErr: E.hasErr,
                           status: E.status,
                           code: E.body?.code,
@@ -159590,68 +159570,68 @@ ${s}`),
                         let i = !1;
                         if (E.hasErr) "ABORTED" === E.err.code && (i = !0);
                         else if (E.status >= 400 && E.status < 500 && E.body)
-                          if (E.body.code === eO.t02.SLOWMODE_RATE_LIMITED) {
+                          if (E.body.code === ey.t02.SLOWMODE_RATE_LIMITED) {
                             let t = E.body.retry_after;
                             null != t &&
                               t > 0 &&
                               l.h.dispatch({
                                 type: "SLOWMODE_SET_COOLDOWN",
                                 channelId: e,
-                                slowmodeType: eh.R.SendMessage,
-                                cooldownMs: t * eg.A.Millis.SECOND,
+                                slowmodeType: ef.R.SendMessage,
+                                cooldownMs: t * ep.A.Millis.SECOND,
                               });
                           } else
-                            D.yf.has(E.body.code)
+                            C.yf.has(E.body.code)
                               ? l.h.dispatch({
                                   type: "MESSAGE_SEND_FAILED_AUTOMOD",
-                                  messageData: eN,
+                                  messageData: eS,
                                   errorResponseBody: {
                                     code: E.body.code,
                                     message: E.body.message,
                                   },
                                 })
                               : E.body.code ===
-                                  eO.t02.POGGERMODE_TEMPORARILY_DISABLED
+                                  ey.t02.POGGERMODE_TEMPORARILY_DISABLED
                                 ? l.h.dispatch({
                                     type: "POGGERMODE_TEMPORARILY_DISABLED",
                                   })
-                                : E.body.code === eO.t02.EXPLICIT_CONTENT
-                                  ? (t = eC.ty.EXPLICIT_CONTENT)
-                                  : null != P ||
-                                    ef ||
-                                    null != k ||
-                                    ek.sendClydeError(e, E.body.code);
+                                : E.body.code === ey.t02.EXPLICIT_CONTENT
+                                  ? (t = eR.ty.EXPLICIT_CONTENT)
+                                  : null != w ||
+                                    ec ||
+                                    null != P ||
+                                    eP.sendClydeError(e, E.body.code);
                         i
-                          ? ek.deleteMessage(e, eI, !0)
+                          ? eP.deleteMessage(e, eg, !0)
                           : (null != r &&
                               l.h.dispatch({
                                 type: "UPLOAD_FAIL",
                                 channelId: e,
                                 file: r._file,
-                                messageId: eI,
+                                messageId: eg,
                                 reason: t,
                                 noSendFailed: !0,
                               }),
                             E.hasErr ||
-                              t !== eC.ty.EXPLICIT_CONTENT ||
-                              ek.sendExplicitMediaClydeError(
+                              t !== eR.ty.EXPLICIT_CONTENT ||
+                              eP.sendExplicitMediaClydeError(
                                 e,
                                 E.body?.attachments,
-                                O.SW.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED,
+                                y.SW.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED,
                               ),
                             l.h.dispatch({
                               type: "MESSAGE_SEND_FAILED",
-                              messageId: eI,
+                              messageId: eg,
                               channelId: e,
                               shouldNotify: !n.doNotNotifyOnError,
                               reason: t,
                             }),
-                            (0, $.O)({
+                            (0, j.O)({
                               failureCode: E.hasErr ? void 0 : E.status,
                               errorMessage: E.hasErr ? E.err.message : void 0,
                             }),
                             c.Ay.cancelPendingSendRequests(e).forEach((e) => {
-                              eD.log("Cancelling pending message", e.nonce),
+                              eC.log("Cancelling pending message", e.nonce),
                                 l.h.dispatch({
                                   type: "MESSAGE_SEND_FAILED",
                                   messageId: e.nonce,
@@ -159675,7 +159655,7 @@ ${s}`),
               });
             },
             startEditMessageRecord(e, t, n) {
-              if ((0, s.Lt)(t.flags, eO.pr7.IS_COMPONENTS_V2)) {
+              if ((0, s.Lt)(t.flags, ey.pr7.IS_COMPONENTS_V2)) {
                 let r = t.components.filter(
                   (e) => e.type === u.I5.TEXT_DISPLAY,
                 );
@@ -159717,20 +159697,20 @@ ${s}`),
             async editMessage(e, t, n) {
               let r,
                 { content: i, components: s } = n;
-              await ei.A.unarchiveThreadIfNecessary(e);
+              await en.A.unarchiveThreadIfNecessary(e);
               let a = (function (e, t) {
-                  let n = ec.A.getMessage(e, t);
-                  if (null == n || n.type !== eO.lAJ.REPLY) return;
-                  let r = et.A.getMessageByReference(n.messageReference);
+                  let n = eu.A.getMessage(e, t);
+                  if (null == n || n.type !== ey.lAJ.REPLY) return;
+                  let r = Z.A.getMessageByReference(n.messageReference);
                   if (
-                    r.state === et.a.LOADED &&
+                    r.state === Z.a.LOADED &&
                     !n.mentions.includes(r.message.author.id)
                   )
-                    return { parse: Object.values(eO.uw8), replied_user: !1 };
+                    return { parse: Object.values(ey.uw8), replied_user: !1 };
                 })(e, t),
                 u =
-                  null != (r = ec.A.getMessage(e, t)) &&
-                  r.hasFlag(eO.pr7.CROSSPOSTED),
+                  null != (r = eu.A.getMessage(e, t)) &&
+                  r.hasFlag(ey.pr7.CROSSPOSTED),
                 d = {
                   channelId: e,
                   messageId: t,
@@ -159740,7 +159720,7 @@ ${s}`),
                   components: s,
                 };
               c.Ay.enqueue({ type: c.AZ.EDIT, message: d }, (n) => {
-                let r = !n.hasErr && D.yf.has(n.body.code);
+                let r = !n.hasErr && C.yf.has(n.body.code);
                 if (r) {
                   let e = { type: c.AZ.EDIT, message: d };
                   l.h.dispatch({
@@ -159753,44 +159733,44 @@ ${s}`),
                   });
                 }
                 n.hasErr
-                  ? o.O.announce(eb.intl.string(eb.t.Atp7FP))
+                  ? o.O.announce(ev.intl.string(ev.t.Atp7FP))
                   : r
-                    ? o.O.announce(eb.intl.string(eb.t.Hym4ix))
-                    : o.O.announce(eb.intl.string(eb.t["0x1HBD"])),
-                  ek.endEditMessage(e, n.hasErr ? void 0 : n),
-                  ek.focusMessage({ channelId: e, messageId: t });
+                    ? o.O.announce(ev.intl.string(ev.t.Hym4ix))
+                    : o.O.announce(ev.intl.string(ev.t["0x1HBD"])),
+                  eP.endEditMessage(e, n.hasErr ? void 0 : n),
+                  eP.focusMessage({ channelId: e, messageId: t });
               });
             },
             async suppressEmbeds(e, t) {
-              await ei.A.unarchiveThreadIfNecessary(e);
-              let n = ec.A.getMessage(e, t);
+              await en.A.unarchiveThreadIfNecessary(e);
+              let n = eu.A.getMessage(e, t);
               null != n &&
                 a.Bo.patch({
-                  url: eO.Rsh.MESSAGE(e, t),
+                  url: ey.Rsh.MESSAGE(e, t),
                   body: {
-                    flags: (0, s.lA)(n.flags, eO.pr7.SUPPRESS_EMBEDS, !0),
+                    flags: (0, s.lA)(n.flags, ey.pr7.SUPPRESS_EMBEDS, !0),
                   },
                   oldFormErrors: !0,
                   rejectWithError: !1,
                 });
             },
             async patchMessageGuildOfficial(e, t, n) {
-              await ei.A.unarchiveThreadIfNecessary(e);
-              let r = ec.A.getMessage(e, t);
+              await en.A.unarchiveThreadIfNecessary(e);
+              let r = eu.A.getMessage(e, t);
               null != r &&
                 a.Bo.patch({
-                  url: eO.Rsh.MESSAGE(e, t),
+                  url: ey.Rsh.MESSAGE(e, t),
                   body: {
-                    flags: (0, s.lA)(r.flags, eO.pr7.IS_GUILD_OFFICIAL, n),
+                    flags: (0, s.lA)(r.flags, ey.pr7.IS_GUILD_OFFICIAL, n),
                   },
                   oldFormErrors: !0,
                   rejectWithError: !1,
                 });
             },
             async patchMessageAttachments(e, t, n) {
-              await ei.A.unarchiveThreadIfNecessary(e),
+              await en.A.unarchiveThreadIfNecessary(e),
                 a.Bo.patch({
-                  url: eO.Rsh.MESSAGE(e, t),
+                  url: ey.Rsh.MESSAGE(e, t),
                   body: { attachments: n },
                   oldFormErrors: !0,
                   rejectWithError: !1,
@@ -159805,14 +159785,14 @@ ${s}`),
                   l.h
                     .dispatch({ type: "MESSAGE_DELETE", id: t, channelId: e })
                     .then(() => {
-                      o.O.announce(eb.intl.string(eb.t.RYMs7s));
+                      o.O.announce(ev.intl.string(ev.t.RYMs7s));
                     });
                 };
               n
                 ? r()
-                : (await ei.A.unarchiveThreadIfNecessary(e),
+                : (await en.A.unarchiveThreadIfNecessary(e),
                   a.Bo.del({
-                    url: eO.Rsh.MESSAGE(e, t),
+                    url: ey.Rsh.MESSAGE(e, t),
                     oldFormErrors: !0,
                     rejectWithError: !1,
                   }).then(() => {
@@ -159821,7 +159801,7 @@ ${s}`),
             },
             dismissAutomatedMessage(e) {
               null != e.loggingName &&
-                _.Ay.trackWithMetadata(eO.HAw.AUTOMATED_MESSAGE_DISMISSED, {
+                _.Ay.trackWithMetadata(ey.HAw.AUTOMATED_MESSAGE_DISMISSED, {
                   message_name: e.loggingName,
                   message_author: e.author.username,
                 }),
@@ -159837,7 +159817,7 @@ ${s}`),
             async crosspostMessage(e, t) {
               try {
                 return await a.Bo.post({
-                  url: eO.Rsh.MESSAGE_CROSSPOST(e, t),
+                  url: ey.Rsh.MESSAGE_CROSSPOST(e, t),
                   oldFormErrors: !0,
                   failImmediatelyWhenRateLimited: !0,
                   rejectWithError: !1,
@@ -159846,20 +159826,20 @@ ${s}`),
                 let e;
                 (e =
                   429 === t.status
-                    ? eb.intl.formatToPlainString(eb.t["77cuqz"], {
+                    ? ev.intl.formatToPlainString(ev.t["77cuqz"], {
                         retryAfter: Math.floor(t.body.retry_after / 60),
                       })
-                    : eb.intl.string(eb.t.z2gyNF)),
-                  eN.A.show({
-                    title: eb.intl.string(eb.t.Vd1hs6),
+                    : ev.intl.string(ev.t.z2gyNF)),
+                  eS.A.show({
+                    title: ev.intl.string(ev.t.Vd1hs6),
                     body: e,
-                    confirmText: eb.intl.string(eb.t.BddRzS),
+                    confirmText: ev.intl.string(ev.t.BddRzS),
                   });
               }
             },
-            trackInvite: eP,
+            trackInvite: ew,
           },
-          ex = ek;
+          eU = eP;
       },
       630054(e, t, n) {
         "use strict";
@@ -173847,7 +173827,7 @@ ${s}`),
           n.e("7451").then(n.t.bind(n, 121014, 19));
         let m = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new h.A().log(
-          `[BUILD INFO] Release Channel: ${m}, Build Number: 533730, Version Hash: 4d98ce3166572d65a811fabe36a99e0e1cb42f98`,
+          `[BUILD INFO] Release Channel: ${m}, Build Number: 533774, Version Hash: 749c43af9e2a25c93f3806b25c221d203f3000b3`,
         ),
           r.A.setTags({ appContext: p.QCW }),
           _.A.initBasic(),
@@ -173984,7 +173964,7 @@ ${s}`),
                 n.e("48563"),
                 n.e("27355"),
                 n.e("53635"),
-                n.e("37457"),
+                n.e("25412"),
                 n.e("97278"),
                 n.e("374"),
                 n.e("8555"),
@@ -174001,8 +173981,8 @@ ${s}`),
                 n.e("92414"),
                 n.e("94857"),
                 n.e("16419"),
-                n.e("7034"),
-                n.e("51000"),
+                n.e("82561"),
+                n.e("37201"),
                 n.e("87306"),
                 n.e("37372"),
                 n.e("95752"),
@@ -174044,7 +174024,7 @@ ${s}`),
                 n.e("30024"),
                 n.e("28110"),
                 n.e("45445"),
-                n.e("68409"),
+                n.e("7234"),
                 n.e("25568"),
                 n.e("47620"),
                 n.e("44030"),
@@ -174164,7 +174144,7 @@ ${s}`),
                 n.e("48563"),
                 n.e("27355"),
                 n.e("53635"),
-                n.e("37457"),
+                n.e("25412"),
                 n.e("97278"),
                 n.e("374"),
                 n.e("8555"),
@@ -174181,8 +174161,8 @@ ${s}`),
                 n.e("92414"),
                 n.e("94857"),
                 n.e("16419"),
-                n.e("7034"),
-                n.e("51000"),
+                n.e("82561"),
+                n.e("37201"),
                 n.e("87306"),
                 n.e("37372"),
                 n.e("95752"),
@@ -174219,7 +174199,7 @@ ${s}`),
                 n.e("30024"),
                 n.e("32400"),
                 n.e("28110"),
-                n.e("68409"),
+                n.e("7234"),
                 n.e("25568"),
                 n.e("44030"),
                 n.e("34160"),
@@ -189038,6 +189018,7 @@ ${_.join(" +\n")}
                   null != e.clip ? (0, o.U)(e.clip.createdAt) : void 0,
                 clip_participant_ids:
                   null != e.clip ? (0, o.g)(e.clip.users) : void 0,
+                clip_remote_id: e.clip?.remoteClipId,
                 original_content_type: e.mimeType,
               }
             );
@@ -195036,6 +195017,24 @@ ${_.join(" +\n")}
               n.getWindowOpen(r.MLl.CHANNEL_CALL_POPOUT) ||
               n.getWindowOpen(r.MLl.ACTIVITY_POPOUT);
           return i && !s;
+        }
+      },
+      142828(e, t, n) {
+        "use strict";
+        n.d(t, { A: () => o });
+        var r = n(253932),
+          i = n(994500),
+          s = n(461213),
+          a = n(652215);
+        function o(e) {
+          if (!s.A.getActivities(!1).some((e) => e.type === a.$pd.PLAYING))
+            return !1;
+          if (e.isPrivate()) return e.recipients.every((e) => i.A.isFriend(e));
+          if (e.isGuildVocalOrThread()) {
+            let t = e.guild_id;
+            return !r.JG.getSetting().includes(t);
+          }
+          return !1;
         }
       },
       314329(e, t, n) {
@@ -208309,7 +208308,7 @@ ${_.join(" +\n")}
                 (e) => {
                   if (
                     null == e.body ||
-                    "4d98ce3166572d65a811fabe36a99e0e1cb42f98" === e.body.hash
+                    "749c43af9e2a25c93f3806b25c221d203f3000b3" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, o.kK)())
@@ -214370,11 +214369,11 @@ ${_.join(" +\n")}
         n.d(t, { $: () => i });
         var r = n(728458);
         function i() {
-          let e = parseInt("533730");
+          let e = parseInt("533774");
           return (
             Number.isNaN(e) &&
               (r.A.captureMessage(
-                "Trying to open a changelog for an invalid build number 533730",
+                "Trying to open a changelog for an invalid build number 533774",
               ),
               (e = 0)),
             e
@@ -214418,9 +214417,9 @@ ${_.join(" +\n")}
                   n.e("63070"),
                   n.e("25370"),
                   n.e("96313"),
-                  n.e("37457"),
+                  n.e("25412"),
                   n.e("40396"),
-                  n.e("11762"),
+                  n.e("13776"),
                 ]).then(n.bind(n, 88872));
                 return (t) => (0, r.jsx)(e, { ...t });
               },
@@ -217993,13 +217992,11 @@ ${_.join(" +\n")}
               return;
             }
           }
-          handleMessageCreate(e) {}
-          handleRemoteClipTrigger(e) {}
         }
       },
       274372(e, t, n) {
         "use strict";
-        n.d(t, { A: () => G }), n(321073), n(938796);
+        n.d(t, { A: () => V }), n(321073), n(938796);
         var r = n(665260),
           i = n(311907),
           s = n(73153),
@@ -218018,19 +218015,20 @@ ${_.join(" +\n")}
           m = [],
           g = {},
           A = {},
-          I = [],
+          I = {},
           T = [],
           S = [],
-          y = 0,
-          N = null,
+          y = [],
+          N = 0,
           O = null,
-          R = {},
-          v = null,
-          C = [],
-          b = null,
-          D = {},
-          L = new Map(),
-          w = {
+          R = null,
+          v = {},
+          C = null,
+          b = [],
+          D = null,
+          L = {},
+          w = new Map(),
+          M = {
             clipsEnabled: !1,
             storageLocation: h,
             clipsQuality: {
@@ -218057,8 +218055,8 @@ ${_.join(" +\n")}
             },
             autoClipPhrases: ["clip that", "clip it", "clip clip"],
           },
-          M = {
-            clipsSettings: w,
+          P = {
+            clipsSettings: M,
             hardwareClassification: null,
             hardwareClassificationForDecoupled: null,
             hardwareClassificationVersion: 0,
@@ -218071,39 +218069,35 @@ ${_.join(" +\n")}
               numberOfTimesDismissed: 0,
             },
           };
-        async function P() {
+        async function U() {
           if (
-            M.clipsSettings.storageLocation !== h ||
+            P.clipsSettings.storageLocation !== h ||
             null == a.A ||
             null == a.A.app
           )
             return;
           let e = await a.A.app.getPath("documents");
-          (M.clipsSettings.storageLocation = e), x.emitChange();
+          (P.clipsSettings.storageLocation = e), G.emitChange();
         }
-        function U(e, t, n) {
-          if (!(0, d.J)() || n !== u.default.getId() || null == t) return !1;
-          let r = "__CLIP_METADATA__",
-            i = t.indexOf(r);
-          if (-1 === i) return !1;
-          try {
-            let n = i + r.length,
-              s = t.substring(n),
-              a = JSON.parse(s);
-            if (null == a.id) return !1;
-            let o = L.get(e);
-            return null == o && ((o = new Set()), L.set(e, o)), o.add(a.id), !0;
-          } catch (e) {
-            return !1;
+        function k(e, t, n) {
+          if (!(0, d.J)() || n !== u.default.getId()) return !1;
+          let r = !1;
+          for (let n of t) {
+            if (null == n.clip_remote_id) continue;
+            let t = w.get(e);
+            null == t && ((t = new Set()), w.set(e, t)),
+              t.add(n.clip_remote_id),
+              (r = !0);
           }
+          return r;
         }
-        class k extends i.Ay.DeviceSettingsStore {
+        class x extends i.Ay.DeviceSettingsStore {
           static displayName = "ClipsStore";
           static persistKey = "ClipsStore";
           static migrations = [
-            (e) => ({ clipsSettings: null != e ? e : w, newClipsCount: 0 }),
+            (e) => ({ clipsSettings: null != e ? e : M, newClipsCount: 0 }),
             (e) => {
-              let t = { ...w, ...e.clipsSettings };
+              let t = { ...M, ...e.clipsSettings };
               return { ...e, clipsSettings: t };
             },
             (e) => ({ ...e, newClipIds: e.newClipIds ?? [] }),
@@ -218118,7 +218112,7 @@ ${_.join(" +\n")}
               ...e,
               clipsSettings: {
                 ...e.clipsSettings,
-                decoupledClipsEnabled: w.decoupledClipsEnabled,
+                decoupledClipsEnabled: M.decoupledClipsEnabled,
               },
             }),
             (e) => ({
@@ -218150,7 +218144,7 @@ ${_.join(" +\n")}
                 clipsQuality:
                   "number" == typeof e.clipsSettings.clipsQuality ||
                   null == e.clipsSettings.clipsQuality
-                    ? w.clipsQuality
+                    ? M.clipsQuality
                     : e.clipsSettings.clipsQuality,
               },
             }),
@@ -218159,7 +218153,7 @@ ${_.join(" +\n")}
               clipsSettings: {
                 ...e.clipsSettings,
                 remindersEnabled:
-                  e.clipsSettings.remindersEnabled ?? w.remindersEnabled,
+                  e.clipsSettings.remindersEnabled ?? M.remindersEnabled,
               },
             }),
             (e) => ({
@@ -218175,12 +218169,12 @@ ${_.join(" +\n")}
               ...e,
               clipsSettings: {
                 ...e.clipsSettings,
-                maxAutoClips: e.clipsSettings.maxAutoClips ?? w.maxAutoClips,
-                clipSignals: e.clipsSettings.clipSignals ?? w.clipSignals,
+                maxAutoClips: e.clipsSettings.maxAutoClips ?? M.maxAutoClips,
+                clipSignals: e.clipsSettings.clipSignals ?? M.clipSignals,
                 mlPipelinesEnabled:
-                  e.clipsSettings.mlPipelinesEnabled ?? w.mlPipelinesEnabled,
+                  e.clipsSettings.mlPipelinesEnabled ?? M.mlPipelinesEnabled,
                 autoClipPhrases:
-                  e.clipsSettings.autoClipPhrases ?? w.autoClipPhrases,
+                  e.clipsSettings.autoClipPhrases ?? M.autoClipPhrases,
               },
             }),
             (e) => ({
@@ -218189,16 +218183,16 @@ ${_.join(" +\n")}
                 ...e.clipsSettings,
                 autoClipPhrases:
                   0 === e.clipsSettings.autoClipPhrases.length
-                    ? w.autoClipPhrases
+                    ? M.autoClipPhrases
                     : e.clipsSettings.autoClipPhrases,
               },
             }),
           ];
           initialize(e) {
-            null != e && (M = e), P(), this.waitFor(o.Ay);
+            null != e && (P = e), U(), this.waitFor(o.Ay);
           }
           getClips() {
-            return m.map((e) => g[e]);
+            return m.map((e) => g[e] ?? null).filter((e) => null != e);
           }
           getClipIds() {
             return m;
@@ -218206,165 +218200,156 @@ ${_.join(" +\n")}
           getClipById(e) {
             return g[e];
           }
-          getPendingClips() {
-            return I;
+          getClipByRemoteId(e) {
+            let t = I[e];
+            if (null != t) return g[t];
           }
-          getPendingClipCandidates() {
+          getPendingClips() {
             return T;
           }
-          getClipCandidates() {
+          getPendingClipCandidates() {
             return S;
+          }
+          getClipCandidates() {
+            return y;
           }
           getClipCandidateById(e) {
             return A[e];
           }
           getUserAgnosticState() {
-            return M;
+            return P;
           }
           getSettings() {
-            return M.clipsSettings;
+            return P.clipsSettings;
           }
           getLastClipsSession() {
-            return O;
+            return R;
           }
           getClipsWarningShown(e) {
-            return N === e;
+            return O === e;
           }
           getActiveAnimation() {
-            return b;
+            return D;
           }
           getStreamClipAnimations(e) {
-            return D[e] ?? p;
+            return L[e] ?? p;
           }
           hasAnyClipAnimations() {
-            return Object.values(D).some((e) => e.length > 0);
+            return Object.values(L).some((e) => e.length > 0);
           }
           getHardwareClassification() {
-            return M.hardwareClassification;
+            return P.hardwareClassification;
           }
           getHardwareClassificationForDecoupled() {
-            return M.hardwareClassificationForDecoupled;
+            return P.hardwareClassificationForDecoupled;
           }
           getHardwareClassificationVersion() {
-            return M.hardwareClassificationVersion;
+            return P.hardwareClassificationVersion;
           }
           getIsAtMaxSaveClipOperations() {
-            return y >= _.VP;
+            return N >= _.VP;
           }
           getLastClipsError() {
-            return v;
-          }
-          isClipsEnabledForUser(e) {
-            return R[e]?.clipsEnabled ?? !1;
-          }
-          isVoiceRecordingAllowedForUser(e) {
-            return R[e]?.allowVoiceRecording ?? !1;
-          }
-          isViewerClippingAllowedForUser(e) {
-            return R[e]?.allowAnyViewerClips ?? !1;
-          }
-          hasClips() {
-            return M.hasClips;
-          }
-          hasTakenDecoupledClip() {
-            return M.hasTakenDecoupledClip;
-          }
-          getNewClipIds() {
-            return M.newClipIds;
-          }
-          isClipExporting(e) {
-            return C.includes(e);
-          }
-          getExportingClipIds() {
             return C;
           }
-          getMatchingGroupClip(e, t) {
-            if (null == e && null == t) return null;
-            for (let n of m) {
-              let r = g[n];
-              if (
-                (null != t && n === t) ||
-                (null != e &&
-                  r.decision?.signal?.type === c.Gy.DISTRIBUTED &&
-                  r.decision?.signal?.remoteTriggerClipId === e)
-              )
-                return r;
-            }
-            return null;
+          isClipsEnabledForUser(e) {
+            return v[e]?.clipsEnabled ?? !1;
+          }
+          isVoiceRecordingAllowedForUser(e) {
+            return v[e]?.allowVoiceRecording ?? !1;
+          }
+          isViewerClippingAllowedForUser(e) {
+            return v[e]?.allowAnyViewerClips ?? !1;
+          }
+          hasClips() {
+            return P.hasClips;
+          }
+          hasTakenDecoupledClip() {
+            return P.hasTakenDecoupledClip;
+          }
+          getNewClipIds() {
+            return P.newClipIds;
+          }
+          isClipExporting(e) {
+            return b.includes(e);
+          }
+          getExportingClipIds() {
+            return b;
           }
           wasClipSharedInChannel(e, t) {
-            let n = L.get(t);
+            let n = w.get(t);
             return n?.has(e) ?? !1;
           }
         }
-        let x = new k(s.h, {
+        let G = new x(s.h, {
             CLIPS_SETTINGS_UPDATE: function (e) {
               let { settings: t } = e;
-              M = { ...M, clipsSettings: { ...M.clipsSettings, ...t } };
+              P = { ...P, clipsSettings: { ...P.clipsSettings, ...t } };
             },
             CLIPS_SAVE_CLIP: function (e) {
               let { clip: t } = e;
-              if (((y = Math.max(y - 1, 0)), t.isCandidate)) {
-                (T = T.filter((e) => {
+              if (((N = Math.max(N - 1, 0)), t.isCandidate)) {
+                (S = S.filter((e) => {
                   let { id: n } = e;
                   return n !== t.id;
                 })),
-                  (S = [t, ...S]),
+                  (y = [t, ...y]),
                   (A[t.id] = t);
                 return;
               }
-              (O = {
+              (R = {
                 applicationName: t.applicationName,
                 ended: !1,
-                ...O,
-                newClipIds: [...(O?.newClipIds ?? []), t.id],
+                ...R,
+                newClipIds: [...(R?.newClipIds ?? []), t.id],
               }),
-                (M = { ...M, newClipIds: [...(M.newClipIds ?? []), t.id] }),
-                (I = I.filter((e) => {
+                (P = { ...P, newClipIds: [...(P.newClipIds ?? []), t.id] }),
+                (T = T.filter((e) => {
                   let { id: n } = e;
                   return n !== t.id;
                 })),
                 (m = m.filter((e) => e !== t.id)),
                 (g[t.id] = t),
+                null != t.remoteClipId && (I[t.remoteClipId] = t.id),
                 (m = [t.id, ...m]),
-                (M.hasClips = !0);
+                (P.hasClips = !0);
             },
             CLIPS_SAVE_CLIP_CANDIDATE: function (e) {
               let { clip: t } = e;
-              T = [t, ...T];
+              S = [t, ...S];
             },
             CLIPS_SAVE_CLIP_CANDIDATE_ERROR: function (e) {
               let { clipId: t } = e;
-              T = T.filter((e) => {
+              S = S.filter((e) => {
                 let { id: n } = e;
                 return n !== t;
               });
             },
             CLIPS_PROMOTE_CLIP_CANDIDATE: function (e) {
               let { clip: t } = e;
-              (O = {
+              (R = {
                 applicationName: t.applicationName,
-                ...O,
+                ...R,
                 ended: !0,
-                newClipIds: [...(O?.newClipIds ?? []), t.id],
+                newClipIds: [...(R?.newClipIds ?? []), t.id],
               }),
-                (M = { ...M, newClipIds: [...(M.newClipIds ?? []), t.id] }),
-                (S = S.filter((e) => {
+                (P = { ...P, newClipIds: [...(P.newClipIds ?? []), t.id] }),
+                (y = y.filter((e) => {
                   let { id: n } = e;
                   return n !== t.id;
                 })),
                 delete A[t.id],
                 (g[t.id] = t),
                 (m = [t.id, ...m]),
-                (M.hasClips = !0);
+                (P.hasClips = !0);
             },
             CLIPS_SAVE_CLIP_PLACEHOLDER: function (e) {
               let { clip: t } = e;
-              I = [t, ...I];
+              T = [t, ...T];
             },
             CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: function (e) {
               let { clipId: t } = e;
-              I = I.filter((e) => {
+              T = T.filter((e) => {
                 let { id: n } = e;
                 return n !== t;
               });
@@ -218372,77 +218357,84 @@ ${_.join(" +\n")}
             CLIPS_SAVE_CLIP_START: function (e) {
               let { clipType: t, streamKey: n, thumbnail: r } = e;
               if (
-                ((y += 1),
-                (M.hasTakenDecoupledClip =
-                  M.hasTakenDecoupledClip || t === _.Fv.DECOUPLED),
+                ((N += 1),
+                (P.hasTakenDecoupledClip =
+                  P.hasTakenDecoupledClip || t === _.Fv.DECOUPLED),
                 null != n && null != r)
               ) {
                 let e = Date.now();
-                (b = b ?? e),
-                  (D[n] = [...(D[n] ?? []), { timestamp: e, thumbnail: r }]);
+                (D = D ?? e),
+                  (L[n] = [...(L[n] ?? []), { timestamp: e, thumbnail: r }]);
               }
             },
             CLIPS_SAVE_CLIP_ERROR: function () {
-              y = Math.max(y - 1, 0);
+              N = Math.max(N - 1, 0);
             },
             CLIPS_SAVE_ANIMATION_END: function (e) {
               let { streamKey: t, timestamp: n } = e;
-              b === n && (b = null),
+              D === n && (D = null),
                 null == n
-                  ? (D[t] = [])
-                  : (D[t] = D[t].filter((e) => e.timestamp !== n));
+                  ? (L[t] = [])
+                  : (L[t] = L[t].filter((e) => e.timestamp !== n));
             },
             STREAM_START: function (e) {
               let { sourceName: t, pid: n } = e;
-              if (!M.clipsSettings.clipsEnabled) return !1;
+              if (!P.clipsSettings.clipsEnabled) return !1;
               let r = t;
               if (null != n) {
                 let e = o.Ay.getGameForPID(n);
                 r = e?.name ?? r;
               }
               if (null == r || "" === r) return !1;
-              O = { applicationName: r, newClipIds: [], ended: !1 };
+              R = { applicationName: r, newClipIds: [], ended: !1 };
             },
             STREAM_STOP: function (e) {
               let { streamKey: t } = e;
               if (
-                ((b = null),
-                (D[t] = []),
-                null == O || (0, l.Iy)(t).ownerId !== u.default.getId())
+                ((D = null),
+                (L[t] = []),
+                null == R || (0, l.Iy)(t).ownerId !== u.default.getId())
               )
                 return !1;
-              O = 0 === O.newClipIds.length ? null : { ...O, ended: !0 };
+              R = 0 === R.newClipIds.length ? null : { ...R, ended: !0 };
             },
             CLIPS_CLEAR_CLIPS_SESSION: function () {
-              if (null == O) return !1;
-              O = null;
+              if (null == R) return !1;
+              R = null;
             },
             CLIPS_CLEAR_NEW_CLIP_IDS: function () {
-              M.newClipIds = [];
+              P.newClipIds = [];
             },
             CLIPS_LOAD_DIRECTORY_SUCCESS: function (e) {
-              for (let t of ((m = []), (S = []), e.clips))
+              for (let t of ((m = []), (y = []), e.clips))
                 t.isCandidate
-                  ? ((A[t.id] = t), S.push(t))
-                  : ((g[t.id] = t), m.push(t.id));
-              M.hasClips = m.length > 0;
+                  ? ((A[t.id] = t), y.push(t))
+                  : ((g[t.id] = t),
+                    m.push(t.id),
+                    null != t.remoteClipId && (I[t.remoteClipId] = t.id));
+              P.hasClips = m.length > 0;
             },
             CLIPS_DELETE_CLIP: function (e) {
+              let t = g[e.id];
               (m = m.filter((t) => e.id !== t)),
-                (S = S.filter((t) => {
+                (y = y.filter((t) => {
                   let { id: n } = t;
                   return e.id !== n;
                 })),
                 delete A[e.id],
                 delete g[e.id],
-                0 === m.length && (M.hasClips = !1);
+                t?.remoteClipId != null && delete I[t.remoteClipId],
+                0 === m.length && (P.hasClips = !1);
             },
             CLIPS_UPDATE_METADATA: function (e) {
               let { clip: t } = e;
-              t.isCandidate ? (A[t.id] = t) : (g[t.id] = t);
+              t.isCandidate
+                ? (A[t.id] = t)
+                : ((g[t.id] = t),
+                  null != t.remoteClipId && (I[t.remoteClipId] = t.id));
             },
             RTC_CONNECTION_FLAGS: function (e) {
-              R[e.userId] = {
+              v[e.userId] = {
                 clipsEnabled: (0, r.Lt)(e.flags, f.Ajs.CLIPS_ENABLED),
                 allowVoiceRecording: (0, r.Lt)(
                   e.flags,
@@ -218456,70 +218448,74 @@ ${_.join(" +\n")}
             },
             CLIPS_SHOW_CALL_WARNING: function (e) {
               let { channelId: t } = e;
-              N = t;
+              O = t;
             },
             VOICE_CHANNEL_SELECT: function (e) {
               let { channelId: t } = e;
-              t !== N && (N = null);
+              t !== O && (O = null);
             },
             CLIPS_CLASSIFY_HARDWARE: function (e) {
               let { classification: t } = e,
-                n = M.hardwareClassification;
-              (M.hardwareClassificationVersion = _.V0),
-                (M.hardwareClassification = t),
-                M.hardwareClassification === c.k9.MEETS_AUTO_ENABLE &&
+                n = P.hardwareClassification;
+              (P.hardwareClassificationVersion = _.V0),
+                (P.hardwareClassification = t),
+                P.hardwareClassification === c.k9.MEETS_AUTO_ENABLE &&
                   n !== c.k9.MEETS_AUTO_ENABLE &&
-                  (M.clipsSettings.clipsEnabled = !0);
-              let r = M.hardwareClassificationForDecoupled;
-              (M.hardwareClassificationForDecoupled = t),
-                M.hardwareClassificationForDecoupled ===
+                  (P.clipsSettings.clipsEnabled = !0);
+              let r = P.hardwareClassificationForDecoupled;
+              (P.hardwareClassificationForDecoupled = t),
+                P.hardwareClassificationForDecoupled ===
                   c.k9.MEETS_AUTO_ENABLE &&
                   r !== c.k9.MEETS_AUTO_ENABLE &&
-                  M.clipsSettings.clipsEnabled &&
-                  (M.clipsSettings.decoupledClipsEnabled = !0);
+                  P.clipsSettings.clipsEnabled &&
+                  (P.clipsSettings.decoupledClipsEnabled = !0);
             },
             CLIPS_INIT: function (e) {
               let { applicationName: t } = e;
-              if (((v = null), !M.clipsSettings.clipsEnabled)) return !1;
-              O = { applicationName: t, newClipIds: [], ended: !1 };
+              if (((C = null), !P.clipsSettings.clipsEnabled)) return !1;
+              R = { applicationName: t, newClipIds: [], ended: !1 };
             },
             CLIPS_INIT_FAILURE: function (e) {
               let { errMsg: t } = e;
-              v = t;
+              C = t;
             },
             CLIPS_DISMISS_EDUCATION: function (e) {
               let { educationType: t } = e;
               switch (t) {
                 case _.P4.Error:
-                  v = null;
+                  C = null;
                   break;
                 case _.P4.Disabled:
                 case _.P4.Enabled:
-                  (M.clipsEducationState.dismissedAt = Date.now()),
-                    (M.clipsEducationState.numberOfGamesLaunchedSinceDismissal = 0),
-                    (M.clipsEducationState.numberOfTimesDismissed += 1);
+                  (P.clipsEducationState.dismissedAt = Date.now()),
+                    (P.clipsEducationState.numberOfGamesLaunchedSinceDismissal = 0),
+                    (P.clipsEducationState.numberOfTimesDismissed += 1);
               }
             },
             RUNNING_GAMES_CHANGE: function (e) {
               let { added: t } = e;
               t.length > 0 &&
-                (M.clipsEducationState.numberOfGamesLaunchedSinceDismissal += 1);
+                (P.clipsEducationState.numberOfGamesLaunchedSinceDismissal += 1);
             },
             CLIPS_SET_EXPORTING: function (e) {
               let { clipIds: t } = e;
-              C = t ?? [];
+              b = t ?? [];
             },
             MESSAGE_CREATE: function (e) {
-              return U(e.channelId, e.message.content, e.message.author?.id);
+              return k(
+                e.channelId,
+                e.message.attachments ?? [],
+                e.message.author?.id,
+              );
             },
             LOAD_MESSAGES_SUCCESS: function (e) {
               let t = !1;
               for (let n of e.messages)
-                t = t || U(e.channelId, n.content, n.author?.id);
+                t = t || k(e.channelId, n.attachments ?? [], n.author?.id);
               return t;
             },
           }),
-          G = x;
+          V = G;
       },
       661978(e, t, n) {
         "use strict";
@@ -218924,6 +218920,10 @@ ${_.join(" +\n")}
             channelId: y ?? void 0,
             timeline: n,
             decision: g,
+            remoteClipId:
+              g?.signal?.type === E.Gy.DISTRIBUTED
+                ? g.signal.remoteTriggerClipId
+                : void 0,
             length: 0,
             thumbnail: "",
             type: R,
@@ -218983,15 +218983,13 @@ ${_.join(" +\n")}
       },
       429195(e, t, n) {
         "use strict";
-        n.d(t, { A: () => c });
+        n.d(t, { A: () => u });
         var r = n(439372),
           i = n(15285),
           s = n(961350),
-          a = n(461213),
-          o = n(734066),
-          l = n(696016),
-          u = n(652215);
-        class d extends r.A {
+          a = n(734066),
+          o = n(696016);
+        class l extends r.A {
           callback = null;
           actions = {
             CLIPS_REMOTE_TRIGGER: (e) => this.handleRemoteClipTrigger(e),
@@ -219002,32 +219000,25 @@ ${_.join(" +\n")}
           unregisterCallback() {
             this.callback = null;
           }
-          handleRemoteClipTrigger(e, t) {
-            let { userId: n, applicationId: r, partyId: d } = e;
-            if (!(0, o.J)() || n === s.default.getId()) return;
-            l.nx.info("Received remote clip trigger", {
-              userId: n,
-              applicationId: r,
-              partyId: d,
-              triggerClipId: t,
-            });
-            let c = a.A.getActivities().find(
-                (e) =>
-                  e.type === u.$pd.PLAYING &&
-                  null != e.application_id &&
-                  e.application_id === r,
-              ),
-              _ = i.Ay.getVisibleGame(),
-              f = null != c,
-              E = _?.id === r;
-            (f || E) &&
-              (null == d || c?.party?.id === d) &&
-              null != this.callback &&
-              null != t &&
-              this.callback(n, t);
+          handleRemoteClipTrigger(e) {
+            let {
+              userId: t,
+              applicationId: n,
+              partyId: r,
+              remoteClipId: l,
+            } = e;
+            (0, a.J)() &&
+              t !== s.default.getId() &&
+              (o.nx.info("Received remote clip trigger", {
+                userId: t,
+                applicationId: n,
+                partyId: r,
+              }),
+              null == i.Ay.getVisibleRunningGames().find((e) => e.id === n) ||
+                (null != l && this.callback?.(t, l)));
           }
         }
-        let c = new d();
+        let u = new l();
       },
       64683(e, t, n) {
         "use strict";
@@ -219308,6 +219299,7 @@ ${_.join(" +\n")}
                       isFavorite: t.boolean(),
                       isTemporary: t.boolean(),
                       isCandidate: t.boolean(),
+                      remoteClipId: t.string(),
                       decision: t
                         .object()
                         .keys({
@@ -219365,33 +219357,33 @@ ${_.join(" +\n")}
       399925(e, t, n) {
         "use strict";
         n.d(t, {
-          $N: () => es,
-          Fb: () => q,
-          GS: () => G,
-          H1: () => Z,
-          HU: () => x,
-          K7: () => X,
-          MI: () => W,
-          Mt: () => k,
-          PW: () => et,
-          Su: () => z,
-          Ts: () => ei,
-          VO: () => J,
-          XK: () => K,
-          Yy: () => j,
-          dR: () => en,
-          e6: () => ee,
-          eQ: () => M,
-          fd: () => U,
-          h$: () => V,
-          jA: () => $,
-          l0: () => ea,
-          oH: () => Q,
-          pM: () => er,
-          w7: () => eo,
-          yO: () => P,
-          yT: () => Y,
-          yd: () => H,
+          $N: () => el,
+          Fb: () => J,
+          GS: () => F,
+          H1: () => en,
+          HU: () => V,
+          K7: () => Z,
+          MI: () => $,
+          Mt: () => G,
+          PW: () => ei,
+          Su: () => Q,
+          Ts: () => eo,
+          VO: () => et,
+          XK: () => q,
+          Yy: () => z,
+          dR: () => es,
+          e6: () => er,
+          eQ: () => U,
+          fd: () => x,
+          h$: () => B,
+          jA: () => X,
+          l0: () => eu,
+          oH: () => ee,
+          pM: () => ea,
+          w7: () => ed,
+          yO: () => k,
+          yT: () => K,
+          yd: () => j,
         }),
           n(321073);
         var r = n(562465),
@@ -219400,39 +219392,41 @@ ${_.join(" +\n")}
           a = n(73153),
           o = n(77729),
           l = n(166929),
-          u = n(15285),
-          d = n(652896),
-          c = n(400492),
-          _ = n(253932),
-          f = n(929921),
-          E = n(616356),
-          h = n(961350),
-          p = n(430452),
-          m = n(383501),
-          g = n(162605),
-          A = n(803301),
-          I = n(954571),
-          T = n(723702),
-          S = n(734066),
-          y = n(274372),
-          N = n(372684),
-          O = n(439818),
-          R = n(520165),
-          v = n(572164),
-          C = n(142135),
-          b = n(93532),
-          D = n(956050),
-          L = n(696016),
-          w = n(652215);
-        async function M(e) {
+          u = n(142828),
+          d = n(15285),
+          c = n(652896),
+          _ = n(400492),
+          f = n(253932),
+          E = n(929921),
+          h = n(616356),
+          p = n(961350),
+          m = n(734057),
+          g = n(430452),
+          A = n(383501),
+          I = n(162605),
+          T = n(803301),
+          S = n(954571),
+          y = n(723702),
+          N = n(734066),
+          O = n(274372),
+          R = n(372684),
+          v = n(439818),
+          C = n(520165),
+          b = n(572164),
+          D = n(142135),
+          L = n(93532),
+          w = n(956050),
+          M = n(696016),
+          P = n(652215);
+        async function U(e) {
           let { allowVoiceRecording: t } = e;
-          await _.Q$.updateSetting(t),
-            I.default.track(w.HAw.CLIPS_SETTINGS_UPDATED, {
+          await f.Q$.updateSetting(t),
+            S.default.track(P.HAw.CLIPS_SETTINGS_UPDATED, {
               allow_voice_recording: t,
             }),
             a.h.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
         }
-        async function P(e) {
+        async function k(e) {
           let { clipsEnabled: t, guildId: n, trackAnalytics: r = !1 } = e;
           await a.h.dispatch({
             type: "CLIPS_SETTINGS_UPDATE",
@@ -219442,13 +219436,13 @@ ${_.join(" +\n")}
             },
           }),
             r &&
-              I.default.track(w.HAw.CLIPS_SETTINGS_UPDATED, {
+              S.default.track(P.HAw.CLIPS_SETTINGS_UPDATED, {
                 clips_enabled: t,
                 guild_id: n,
                 ...(!t && { decoupled_clips_enabled: !1 }),
               });
         }
-        function U(e) {
+        function x(e) {
           let { enabled: t, trackAnalytics: n = !1 } = e;
           a.h.dispatch({
             type: "CLIPS_SETTINGS_UPDATE",
@@ -219458,39 +219452,39 @@ ${_.join(" +\n")}
             },
           }),
             n &&
-              I.default.track(w.HAw.CLIPS_SETTINGS_UPDATED, {
+              S.default.track(P.HAw.CLIPS_SETTINGS_UPDATED, {
                 ...(t && { clips_enabled: !0 }),
                 decoupled_clips_enabled: t,
               });
         }
-        function k(e) {
+        function G(e) {
           a.h.dispatch({
             type: "CLIPS_SETTINGS_UPDATE",
             settings: { remindersEnabled: e },
           }),
-            I.default.track(w.HAw.CLIPS_SETTINGS_UPDATED, {
+            S.default.track(P.HAw.CLIPS_SETTINGS_UPDATED, {
               reminders_enabled: e,
             });
         }
-        function x(e) {
+        function V(e) {
           a.h.dispatch({
             type: "CLIPS_SETTINGS_UPDATE",
             settings: { storageLocation: e },
           });
         }
-        function G(e) {
+        function F(e) {
           a.h.dispatch({
             type: "CLIPS_SETTINGS_UPDATE",
             settings: { clipsQuality: e },
           });
         }
-        function V(e) {
+        function B(e) {
           a.h.dispatch({
             type: "CLIPS_SETTINGS_UPDATE",
             settings: { clipsLength: e },
           });
         }
-        function F(e, t) {
+        function H(e, t) {
           let n = new Map();
           for (let e in t.framesEncodedByEncoder) {
             let r = t.framesEncodedByEncoder[e],
@@ -219516,19 +219510,43 @@ ${_.join(" +\n")}
             frames_encoded_during_clip: t.framesEncodedDuringClip,
             frames_dropped: t.framesDropped,
             frames_dropped_during_clip: t.framesDroppedDuringClip,
-            clip_duration_setting: y.A.getSettings().clipsLength,
+            clip_duration_setting: O.A.getSettings().clipsLength,
             clip_duration: t.clipDuration,
             clip_resolution_width: t.clipResolutionWidth,
             clip_resolution_height: t.clipResolutionHeight,
             min_fps: t.minFps,
             max_fps: t.maxFps,
             submitted_fps: t.submittedFps,
-            target_fps: f.A.getState().fps,
+            target_fps: E.A.getState().fps,
             audio_track_count: t.audioTrackCount,
             saved_at: t.savedAt,
           };
         }
-        async function B() {
+        async function Y(e) {
+          if (
+            !(0, N.J)() ||
+            e.isCandidate ||
+            null == e.applicationId ||
+            e.decision?.signal.type !== R.Gy.MANUAL
+          )
+            return;
+          let t = A.A.getChannelId(),
+            n = m.A.getChannel(t);
+          if (null != n && (0, u.A)(n))
+            try {
+              let {
+                body: { remote_clip_id: t },
+              } = await r.Bo.post({
+                url: P.Rsh.SEND_CLIPS_REMOTE_TRIGGER(n.id),
+                body: { application_id: e.applicationId },
+                rejectWithError: !0,
+              });
+              null != t && (await z(e.id, { remoteClipId: t }));
+            } catch (e) {
+              M.nx.warn("Failed to send remote clip trigger", e);
+            }
+        }
+        async function W() {
           let e,
             t,
             n =
@@ -219538,17 +219556,17 @@ ${_.join(" +\n")}
             r = arguments.length > 1 ? arguments[1] : void 0,
             i = arguments.length > 2 ? arguments[2] : void 0,
             s = arguments.length > 3 ? arguments[3] : void 0,
-            l = y.A.getSettings().storageLocation,
-            u = (0, R.A)(n, N.nQ.CLIP, r, i);
+            l = O.A.getSettings().storageLocation,
+            u = (0, C.A)(n, R.nQ.CLIP, r, i);
           u.isCandidate = s ?? !1;
-          let c = `${(0, O.A)(u.applicationName.substring(0, 20))}_${u.id}.mp4`,
-            _ = o.A.fileManager.join(l, c),
-            f = p.Ay.getMediaEngine(),
-            m = JSON.stringify(u),
-            A =
+          let d = `${(0, v.A)(u.applicationName.substring(0, 20))}_${u.id}.mp4`,
+            _ = o.A.fileManager.join(l, d),
+            f = g.Ay.getMediaEngine(),
+            E = JSON.stringify(u),
+            m =
               ((t =
-                null != (e = E.A.getCurrentUserActiveStream())
-                  ? g.A.getRTCConnection((0, d._z)(e))
+                null != (e = h.A.getCurrentUserActiveStream())
+                  ? I.A.getRTCConnection((0, c._z)(e))
                   : null),
               {
                 rtc_connection_id: t?.getRTCConnectionId(),
@@ -219566,10 +219584,10 @@ ${_.join(" +\n")}
             });
           try {
             let { duration: e, clipStats: t } = await (null !=
-              E.A.getCurrentUserActiveStream()
-                ? f.saveClipForUser(h.default.getId(), _, m)
-                : f.saveClip(_, m)),
-              n = F(A, t);
+              h.A.getCurrentUserActiveStream()
+                ? f.saveClipForUser(p.default.getId(), _, E)
+                : f.saveClip(_, E)),
+              n = H(m, t);
             (n.clip_save_time_ms = t.clipSaveTimeMs),
               (n.clip_size_bytes = t.clipSizeBytes),
               null != t.viewerDecodeFps &&
@@ -219578,15 +219596,15 @@ ${_.join(" +\n")}
                 (n.target_fps = null));
             let r = "";
             try {
-              r = await (0, D.m)(o.A.clips.getClipProtocolURLFromPath(_), 0);
+              r = await (0, w.m)(o.A.clips.getClipProtocolURLFromPath(_), 0);
             } catch (e) {
-              L.nx.warn("Failed to generate clip thumbnail:", e);
+              M.nx.warn("Failed to generate clip thumbnail:", e);
             }
             return (
               (u.thumbnail = r),
               (u.length = e),
-              I.default.track(w.HAw.CLIP_SAVED, n),
-              L.nx.info(
+              S.default.track(P.HAw.CLIP_SAVED, n),
+              M.nx.info(
                 `Clip save succeeded with ${e}ms and thumbnail ${r.length} bytes thumbnail.`,
               ),
               await f.updateClipMetadata(_, JSON.stringify(u)),
@@ -219601,130 +219619,118 @@ ${_.join(" +\n")}
                 }),
               !("errorMessage" in t))
             )
-              throw (I.default.track(w.HAw.CLIP_SAVE_FAILURE, A), t);
-            let e = F(A, t);
+              throw (S.default.track(P.HAw.CLIP_SAVE_FAILURE, m), t);
+            let e = H(m, t);
             throw (
               ((e.error_at = t.errorAt),
               (e.error_message = t.errorMessage),
-              I.default.track(w.HAw.CLIP_SAVE_FAILURE, e),
+              S.default.track(P.HAw.CLIP_SAVE_FAILURE, e),
               t.errorMessage)
             );
           }
         }
-        async function H() {
+        async function j() {
           let e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
                 : "manual",
             t = arguments.length > 1 ? arguments[1] : void 0,
             n = arguments.length > 2 ? arguments[2] : void 0,
-            o = arguments.length > 3 ? arguments[3] : void 0;
-          if (y.A.getIsAtMaxSaveClipOperations()) return;
-          let l = (0, v.TD)() && null != E.A.getCurrentUserActiveStream(),
-            _ =
-              (0, v.Ao)() &&
-              u.Ay.getVisibleGame()?.windowHandle != null &&
-              p.Ay.hasClipsSource(),
-            f =
-              (0, S.Vr)() &&
-              (0, v.TD)() &&
-              null == E.A.getCurrentUserActiveStream() &&
-              null != m.A.getChannelId();
-          if (!l && !_ && !f) return;
-          let h = E.A.getCurrentUserActiveStream(),
-            g = null != h ? (0, d._z)(h) : void 0,
-            I = null != h ? L.Fv.STREAMER : _ ? L.Fv.DECOUPLED : L.Fv.VOICE,
-            T = await (async () => {
-              if (null == g) return;
-              let { ownerId: e, guildId: t } = (0, d.Iy)(g),
-                n = A.A.getStreamId(e, t, i.x.STREAM);
+            r = arguments.length > 3 ? arguments[3] : void 0;
+          if (O.A.getIsAtMaxSaveClipOperations()) return;
+          let o = (0, b.TD)() && null != h.A.getCurrentUserActiveStream(),
+            l =
+              (0, b.Ao)() &&
+              d.Ay.getVisibleGame()?.windowHandle != null &&
+              g.Ay.hasClipsSource(),
+            u =
+              (0, N.Vr)() &&
+              (0, b.TD)() &&
+              null == h.A.getCurrentUserActiveStream() &&
+              null != A.A.getChannelId();
+          if (!o && !l && !u) return;
+          let f = h.A.getCurrentUserActiveStream(),
+            E = null != f ? (0, c._z)(f) : void 0,
+            p = null != f ? M.Fv.STREAMER : l ? M.Fv.DECOUPLED : M.Fv.VOICE,
+            m = await (async () => {
+              if (null == E) return;
+              let { ownerId: e, guildId: t } = (0, c.Iy)(E),
+                n = T.A.getStreamId(e, t, i.x.STREAM);
               if (null != n)
                 try {
                   let e = (0, s.lE)(),
                     t = await e.getNextVideoOutputFrame(n);
-                  return (0, D.n)(t);
+                  return (0, w.n)(t);
                 } catch (e) {
                   return;
                 }
             })();
           a.h.dispatch({
             type: "CLIPS_SAVE_CLIP_START",
-            clipType: I,
-            streamKey: g,
-            thumbnail: o ? void 0 : T,
+            clipType: p,
+            streamKey: E,
+            thumbnail: r ? void 0 : m,
             clipMethod: e,
           });
-          let N = "manual" === e ? (0, c.Ak)("clip_save", 0.5) : null,
-            O = performance.now();
+          let I = "manual" === e ? (0, _.Ak)("clip_save", 0.5) : null,
+            S = performance.now();
           try {
-            if ("auto" === e && !o) {
-              let e = y.A.getSettings().maxAutoClips,
-                t = y.A.getClips().filter((e) => !0 === e.isTemporary),
+            if ("auto" === e && !r) {
+              let e = O.A.getSettings().maxAutoClips,
+                t = O.A.getClips().filter((e) => !0 === e.isTemporary),
                 n = t.length - e + 1;
               if (n > 0) {
                 let r = t.sort((e, t) => e.createdAt - t.createdAt).slice(0, n);
-                for (let t of (L.nx.info(
+                for (let t of (M.nx.info(
                   `Deleting ${r.length} temporary clips to stay within limit of ${e}`,
                 ),
                 r))
                   try {
-                    await Q(t.filepath, t.id);
+                    await ee(t.filepath, t.id);
                   } catch (e) {
-                    L.nx.error("Failed to delete temporary clip", e);
+                    M.nx.error("Failed to delete temporary clip", e);
                   }
               }
             }
-            let i = await B(e, t, n, o);
+            let i = await W(e, t, n, r);
             if (
-              o &&
-              !y.A.getPendingClipCandidates().some((e) => {
+              r &&
+              !O.A.getPendingClipCandidates().some((e) => {
                 let { id: t } = e;
                 return t === i.id;
               })
             ) {
               a.h.dispatch({ type: "CLIPS_SAVE_CLIP_ERROR" }),
-                Q(i.filepath, i.id);
+                ee(i.filepath, i.id);
               return;
             }
-            if ((a.h.dispatch({ type: "CLIPS_SAVE_CLIP", clip: i }), !o)) {
-              let e = m.A.getChannelId();
-              null != e &&
-                null != i.applicationId &&
-                (0, S.J)() &&
-                r.Bo.post({
-                  url: w.Rsh.SEND_CLIPS_REMOTE_TRIGGER(e),
-                  body: { application_id: i.applicationId },
-                  rejectWithError: !0,
-                }).catch((e) => {
-                  L.nx.warn("Failed to send remote clip trigger", e);
-                });
-            }
+            a.h.dispatch({ type: "CLIPS_SAVE_CLIP", clip: i }), Y(i);
           } catch (e) {
-            L.nx.error("Clip Failed to Save", e),
-              N?.stop(),
-              o || (0, c.Ak)("clip_error", 0.5),
+            M.nx.error("Clip Failed to Save", e),
+              I?.stop(),
+              r || (0, _.Ak)("clip_error", 0.5),
               a.h.dispatch({ type: "CLIPS_SAVE_CLIP_ERROR" });
           }
-          L.nx.info(
-            `${y.A.getSettings().clipsLength / 1e3}s clip save took ${Math.round(performance.now() - O)}ms`,
+          M.nx.info(
+            `${O.A.getSettings().clipsLength / 1e3}s clip save took ${Math.round(performance.now() - S)}ms`,
           );
         }
-        async function Y(e) {
+        async function K(e) {
           let t, n;
-          if (y.A.getIsAtMaxSaveClipOperations()) return;
-          let r = E.A.getCurrentUserActiveStream(),
-            i = p.Ay.getMediaEngine(),
-            s = (0, R.A)(e, N.nQ.SCREENSHOT),
-            l = y.A.getSettings().storageLocation,
-            _ = `${(0, O.A)(s.applicationName.substring(0, 20))}_${s.id}.jpeg`,
-            f = o.A.fileManager.join(l, _);
+          if (O.A.getIsAtMaxSaveClipOperations()) return;
+          let r = h.A.getCurrentUserActiveStream(),
+            i = g.Ay.getMediaEngine(),
+            s = (0, C.A)(e, R.nQ.SCREENSHOT),
+            l = O.A.getSettings().storageLocation,
+            u = `${(0, v.A)(s.applicationName.substring(0, 20))}_${s.id}.jpeg`,
+            f = o.A.fileManager.join(l, u);
           if (
             (null != s.applicationId &&
               null !=
-                (n = u.Ay.getRunningGames().find(
+                (n = d.Ay.getRunningGames().find(
                   (e) => e.id === s.applicationId,
                 )) &&
-              L.nx.log(
+              M.nx.log(
                 "Matched application ID to running game:",
                 s.applicationId,
                 n.name,
@@ -219732,37 +219738,37 @@ ${_.join(" +\n")}
             null == n &&
               null != s.applicationName &&
               null !=
-                (n = u.Ay.getRunningGames().find(
+                (n = d.Ay.getRunningGames().find(
                   (e) => e.name === s.applicationName,
                 )) &&
-              L.nx.log(
+              M.nx.log(
                 "Matched application name to running game:",
                 s.applicationName,
               ),
             null == n &&
-              null != (n = u.Ay.getVisibleGame()) &&
-              L.nx.log("Using visible game for screenshot:", n.name),
+              null != (n = d.Ay.getVisibleGame()) &&
+              M.nx.log("Using visible game for screenshot:", n.name),
             n?.windowHandle != null)
           )
             (t = parseInt(n.windowHandle, 10)),
-              L.nx.log(
+              M.nx.log(
                 "Using window handle for full resolution screenshot:",
                 t,
               );
           else {
-            L.nx.error("Failed to save screenshot: No window handle available"),
-              (0, c.Ak)("clip_error", 0.5);
+            M.nx.error("Failed to save screenshot: No window handle available"),
+              (0, _.Ak)("clip_error", 0.5);
             return;
           }
           a.h.dispatch({
             type: "CLIPS_SAVE_CLIP_START",
-            clipType: L.Fv.STREAMER,
-            streamKey: null != r ? (0, d._z)(r) : void 0,
+            clipType: M.Fv.STREAMER,
+            streamKey: null != r ? (0, c._z)(r) : void 0,
             thumbnail: void 0,
             clipMethod: e ?? "manual",
           });
-          let h = (0, c.Ak)("clip_save", 0.5),
-            m = performance.now();
+          let E = (0, _.Ak)("clip_save", 0.5),
+            p = performance.now();
           try {
             let e = { ...s, filepath: f, length: 0, thumbnail: "" },
               n = JSON.stringify(e),
@@ -219771,76 +219777,76 @@ ${_.join(" +\n")}
               );
             (e.thumbnail = `data:image/jpeg;base64,${r}`),
               a.h.dispatch({ type: "CLIPS_SAVE_CLIP", clip: e }),
-              L.nx.info(
-                `Screenshot save took ${Math.round(performance.now() - m)}ms`,
+              M.nx.info(
+                `Screenshot save took ${Math.round(performance.now() - p)}ms`,
               ),
-              L.nx.log("Successfully saved screenshot to:", f);
+              M.nx.log("Successfully saved screenshot to:", f);
           } catch (e) {
             throw (
-              (L.nx.error("Failed to save screenshot:", e),
-              h?.stop(),
-              (0, c.Ak)("clip_error", 0.5),
+              (M.nx.error("Failed to save screenshot:", e),
+              E?.stop(),
+              (0, _.Ak)("clip_error", 0.5),
               a.h.dispatch({ type: "CLIPS_SAVE_CLIP_ERROR" }),
               e)
             );
           }
         }
-        function W(e, t) {
+        function $(e, t) {
           a.h.dispatch({
             type: "CLIPS_SAVE_ANIMATION_END",
             streamKey: e,
             timestamp: t,
           });
         }
-        async function j(e, t) {
-          let n = y.A.getClipById(e) ?? y.A.getClipCandidateById(e);
+        async function z(e, t) {
+          let n = O.A.getClipById(e) ?? O.A.getClipCandidateById(e);
           if (null == n) return;
           let r = { ...n, ...t };
-          null != (await (0, C.q)(r)) &&
-            (await p.Ay.getMediaEngine().updateClipMetadata(
+          null != (await (0, D.q)(r)) &&
+            (await g.Ay.getMediaEngine().updateClipMetadata(
               r.filepath,
               JSON.stringify(r),
             ),
-            I.default.track(w.HAw.CLIP_EDITED, { clip_id: r.id }),
+            S.default.track(P.HAw.CLIP_EDITED, { clip_id: r.id }),
             a.h.dispatch({ type: "CLIPS_UPDATE_METADATA", clip: r }));
         }
-        async function K(e) {
-          await j(e.id, { isFavorite: !e.isFavorite });
+        async function q(e) {
+          await z(e.id, { isFavorite: !e.isFavorite });
         }
-        function $() {
+        function X() {
           a.h.dispatch({ type: "CLIPS_CLEAR_CLIPS_SESSION" });
         }
-        function z() {
+        function Q() {
           a.h.dispatch({ type: "CLIPS_CLEAR_NEW_CLIP_IDS" });
         }
-        async function q(e) {
-          if (!(0, T.isDesktop)() || o.A.clips?.loadClipsDirectory == null)
+        async function J(e) {
+          if (!(0, y.isDesktop)() || o.A.clips?.loadClipsDirectory == null)
             return;
           let t = await o.A.clips.loadClipsDirectory(e),
             n = [];
           for (let e of t) {
-            let t = await (0, C.q)({ ...e.metadata, filepath: e.filepath });
+            let t = await (0, D.q)({ ...e.metadata, filepath: e.filepath });
             null != t && n.push(t);
           }
           a.h.dispatch({ type: "CLIPS_LOAD_DIRECTORY_SUCCESS", clips: n });
         }
-        function X(e) {
-          j(e.id, { isCandidate: !1 }),
+        function Z(e) {
+          z(e.id, { isCandidate: !1 }),
             a.h.dispatch({
               type: "CLIPS_PROMOTE_CLIP_CANDIDATE",
               clip: { ...e, isCandidate: !1 },
             });
         }
-        async function Q(e, t) {
-          (0, T.isDesktop)() &&
+        async function ee(e, t) {
+          (0, y.isDesktop)() &&
             o.A.clips?.deleteClip != null &&
             (await o.A.clips.deleteClip(e),
             a.h.dispatch({ type: "CLIPS_DELETE_CLIP", id: t, filepath: e }));
         }
-        async function J(e) {
-          let t = p.Ay.getMediaEngine(),
+        async function et(e) {
+          let t = g.Ay.getMediaEngine(),
             { filepath: n, ...r } = e;
-          await j(e.id, r);
+          await z(e.id, r);
           let i = await t.exportClip(
             e.filepath,
             e.editMetadata ?? {
@@ -219851,27 +219857,27 @@ ${_.join(" +\n")}
               soundboardAudio: !0,
             },
           );
-          return e.type === N.nQ.SCREENSHOT ? i : (0, b.A)(i);
+          return e.type === R.nQ.SCREENSHOT ? i : (0, L.A)(i);
         }
-        function Z(e) {
+        function en(e) {
           a.h.dispatch({ type: "CLIPS_SET_EXPORTING", clipIds: e });
         }
-        function ee(e) {
+        function er(e) {
           a.h.dispatch({
             type: "CLIPS_SETTINGS_UPDATE",
             settings: { maxAutoClips: e },
           });
         }
-        function et(e) {
+        function ei(e) {
           a.h.dispatch({
             type: "CLIPS_SETTINGS_UPDATE",
             settings: {
-              clipSignals: { ...y.A.getSettings().clipSignals, ...e },
+              clipSignals: { ...O.A.getSettings().clipSignals, ...e },
             },
           });
         }
-        function en(e) {
-          let t = p.Ay.getMediaEngine().setClipsMLPipelineTypeEnabled;
+        function es(e) {
+          let t = g.Ay.getMediaEngine().setClipsMLPipelineTypeEnabled;
           null != t &&
             (t("emotion_classifier", e.emotionClassifier),
             t("wake_word_detector", e.wakeWordDetector),
@@ -219882,33 +219888,33 @@ ${_.join(" +\n")}
               type: "CLIPS_SETTINGS_UPDATE",
               settings: {
                 mlPipelinesEnabled: {
-                  ...y.A.getSettings().mlPipelinesEnabled,
+                  ...O.A.getSettings().mlPipelinesEnabled,
                   ...e,
                 },
               },
             });
         }
-        function er(e) {
+        function ea(e) {
           a.h.dispatch({
             type: "CLIPS_SETTINGS_UPDATE",
             settings: { autoClipPhrases: e },
           });
         }
-        function ei(e, t) {
+        function eo(e, t) {
           a.h.dispatch({
             type: "CLIPS_SIGNAL_CREATED",
             signal: e,
             timestamp: t,
           });
         }
-        function es(e) {
+        function el(e) {
           a.h.dispatch({ type: "CLIPS_ML_DETECTION", detections: e });
         }
-        function ea() {
-          ei({ type: N.Gy.MANUAL });
+        function eu() {
+          eo({ type: R.Gy.MANUAL });
         }
-        async function eo(e) {
-          await j(e, { isTemporary: !1 });
+        async function ed(e) {
+          await z(e, { isTemporary: !1 });
         }
       },
       63389(e, t, n) {
@@ -229987,8 +229993,8 @@ ${_.join(" +\n")}
           return {
             logsUploaded: new Date().toISOString(),
             releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            buildNumber: "533730",
-            versionHash: "4d98ce3166572d65a811fabe36a99e0e1cb42f98",
+            buildNumber: "533774",
+            versionHash: "749c43af9e2a25c93f3806b25c221d203f3000b3",
           };
         }
         n.d(t, { A: () => r });
@@ -231356,7 +231362,7 @@ ${l}`;
               n.e("27355"),
               n.e("67876"),
               n.e("53635"),
-              n.e("37457"),
+              n.e("25412"),
               n.e("97278"),
               n.e("374"),
               n.e("8555"),
@@ -231377,8 +231383,8 @@ ${l}`;
               n.e("94857"),
               n.e("16419"),
               n.e("41353"),
-              n.e("7034"),
-              n.e("51000"),
+              n.e("82561"),
+              n.e("37201"),
               n.e("87306"),
               n.e("86546"),
               n.e("37372"),
@@ -231400,9 +231406,9 @@ ${l}`;
               n.e("38114"),
               n.e("6453"),
               n.e("58801"),
+              n.e("26730"),
               n.e("21075"),
               n.e("18496"),
-              n.e("17535"),
               n.e("21420"),
               n.e("93142"),
               n.e("77302"),
@@ -253121,6 +253127,7 @@ ${n}${t[i]}: ${t[i + 1].micros / 1e3}`),
               userId: e.user_id,
               applicationId: e.application_id,
               partyId: e.party_id ?? null,
+              remoteClipId: e.remote_clip_id,
             });
           }),
           W(["GUILD_SOUNDBOARD_SOUND_CREATE"], (e) => {
@@ -271737,14 +271744,14 @@ ${n}${t[i]}: ${t[i + 1].micros / 1e3}`),
             n.e("48563"),
             n.e("27355"),
             n.e("67876"),
-            n.e("37457"),
+            n.e("25412"),
             n.e("374"),
             n.e("8555"),
             n.e("28936"),
             n.e("92414"),
             n.e("16419"),
-            n.e("51000"),
-            n.e("80958"),
+            n.e("37201"),
+            n.e("99654"),
           ]).then(n.bind(n, 121338));
           if (
             (t(e),
@@ -282233,8 +282240,8 @@ ${s}`);
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1776900963829",
-                      build_number: "533730",
+                      built_at: "1776904423701",
+                      build_number: "533774",
                     },
                   },
                   retries: 1,
@@ -294298,7 +294305,7 @@ ${s}`);
                 n.e("48563"),
                 n.e("27355"),
                 n.e("67876"),
-                n.e("37457"),
+                n.e("25412"),
                 n.e("97278"),
                 n.e("374"),
                 n.e("8555"),
@@ -294315,8 +294322,8 @@ ${s}`);
                 n.e("92414"),
                 n.e("94857"),
                 n.e("16419"),
-                n.e("7034"),
-                n.e("51000"),
+                n.e("82561"),
+                n.e("37201"),
                 n.e("87306"),
                 n.e("37372"),
                 n.e("95752"),
@@ -294330,8 +294337,8 @@ ${s}`);
                 n.e("18207"),
                 n.e("18897"),
                 n.e("6453"),
+                n.e("26730"),
                 n.e("18496"),
-                n.e("17535"),
                 n.e("21420"),
                 n.e("93142"),
                 n.e("77302"),
@@ -299101,7 +299108,7 @@ ${s}`);
                 n.e("48563"),
                 n.e("27355"),
                 n.e("67876"),
-                n.e("37457"),
+                n.e("25412"),
                 n.e("374"),
                 n.e("8555"),
                 n.e("40396"),
@@ -299114,15 +299121,15 @@ ${s}`);
                 n.e("94857"),
                 n.e("16419"),
                 n.e("41353"),
-                n.e("7034"),
-                n.e("51000"),
+                n.e("82561"),
+                n.e("37201"),
                 n.e("37372"),
                 n.e("95752"),
                 n.e("55360"),
                 n.e("56403"),
                 n.e("93764"),
+                n.e("26730"),
                 n.e("21075"),
-                n.e("17535"),
                 n.e("79668"),
                 n.e("55839"),
                 n.e("91652"),
@@ -345761,7 +345768,7 @@ ${s}`);
                     n.e("48563"),
                     n.e("27355"),
                     n.e("67876"),
-                    n.e("37457"),
+                    n.e("25412"),
                     n.e("97278"),
                     n.e("374"),
                     n.e("8555"),
@@ -345780,8 +345787,8 @@ ${s}`);
                     n.e("92414"),
                     n.e("94857"),
                     n.e("16419"),
-                    n.e("7034"),
-                    n.e("51000"),
+                    n.e("82561"),
+                    n.e("37201"),
                     n.e("87306"),
                     n.e("86546"),
                     n.e("37372"),
@@ -345799,8 +345806,8 @@ ${s}`);
                     n.e("18207"),
                     n.e("18897"),
                     n.e("6453"),
+                    n.e("26730"),
                     n.e("18496"),
-                    n.e("17535"),
                     n.e("21420"),
                     n.e("93142"),
                     n.e("77302"),
@@ -381302,7 +381309,7 @@ ${s}`);
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "4d98ce3166572d65a811fabe36a99e0e1cb42f98",
+                      "749c43af9e2a25c93f3806b25c221d203f3000b3",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", X),
@@ -389858,7 +389865,7 @@ ${s}`);
               ).then((e) => {
                 let r = {
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    build_number: "533730",
+                    build_number: "533774",
                   },
                   c = l.default.getCurrentUser();
                 null != c &&
@@ -395120,7 +395127,8 @@ ${s}`);
               (a.title = e.clip.name),
               (a.application_id = e.clip.applicationId),
               (a.clip_created_at = (0, i.U)(e.clip.createdAt)),
-              (a.clip_participant_ids = (0, i.g)(e.clip.users))),
+              (a.clip_participant_ids = (0, i.g)(e.clip.users)),
+              (a.clip_remote_id = e.clip.remoteClipId)),
             "item" in e &&
               null != e.item &&
               e.item.platform === r.xz.WEB &&
@@ -399757,7 +399765,7 @@ ${s}`);
           (a = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == s.release_channel || "" === s.release_channel) &&
             (s.release_channel = a.split("-")[0]),
-          isNaN((o = parseInt("533730", 10))) || (s.client_build_number = o),
+          isNaN((o = parseInt("533774", 10))) || (s.client_build_number = o),
           null == (l = A?.app.getBuildNumber()) ||
             isNaN(l) ||
             (s.native_build_number = l),
@@ -497053,14 +497061,12 @@ color: purple;
       "" +
       {
         10046: "80c911760cad373a",
+        10404: "e945b890b3e42985",
         10416: "b8d3c6c6d4dd7c07",
-        10421: "1e322121bc15f8ac",
         10534: "b496c4ad586ab431",
         10919: "869d83574d6bb358",
-        1094: "616432e1e453890d",
         11015: "b4eb04e23fc91062",
         11228: "13fa8b5097c35276",
-        11762: "6bc366566c0dc4f0",
         12313: "e626822a99411067",
         12618: "478f5bcfea34fece",
         12925: "74246caae0d6f77e",
@@ -497070,6 +497076,7 @@ color: purple;
         13419: "2a9195af80b2d5b8",
         13492: "87effc96b7c4ebb6",
         13754: "5ce944adb384e987",
+        13776: "b35e269880802c82",
         13848: "bd429517cd703a0c",
         13902: "cc670e15b72d5fba",
         14078: "51ed117ec77600ea",
@@ -497081,6 +497088,7 @@ color: purple;
         14782: "c2e7c819254f3916",
         14833: "0c861572ead4b2f6",
         14912: "4492da683cf72db2",
+        14914: "d51b85d870162c42",
         15224: "663f97acbe310f89",
         15673: "2ae341592e5c03c4",
         15696: "f323c0a6d2eaec55",
@@ -497093,10 +497101,11 @@ color: purple;
         17259: "2aae2c06c3df10a5",
         17363: "6de511c93118bf9e",
         17882: "92f94fd036521699",
+        17981: "823679839ed96be0",
         18021: "83635db9f0294ffa",
         18128: "fd3d65f0748ec78e",
         18169: "504c52a23e5f504d",
-        18207: "00ce7de642b4b734",
+        18207: "7ae3b5565fd101c4",
         18467: "4b9ceefaef75aed5",
         18469: "ad030e7089f2c131",
         18710: "f6af50fd31a7974d",
@@ -497126,6 +497135,7 @@ color: purple;
         23425: "d5ae6e319f01b296",
         2347: "3b1d35f331fa5752",
         23816: "04e2ea5cd2a77588",
+        23965: "7501467de5cab7f6",
         2397: "6e9a4b0898fac27d",
         24123: "9cde9d9b1e650bce",
         24580: "72c82981abf6b1bc",
@@ -497148,7 +497158,6 @@ color: purple;
         27188: "e0520620043f9ffe",
         27209: "17a4727cbffabea4",
         27219: "daba19e84a06bf7b",
-        27243: "7501467de5cab7f6",
         27299: "171de205f53af770",
         27495: "b778b9a26eddc378",
         27606: "ea99e569f7c6c55c",
@@ -497204,6 +497213,7 @@ color: purple;
         36826: "a1e507c1d88a6d6f",
         36946: "cead6ec2b115f9d4",
         37153: "ff779272d884e884",
+        37201: "ad73b6892f0b6dd4",
         37214: "7e0190ee29c46070",
         37279: "f328f59fcc2a9fd7",
         37383: "3df30cc9f8e8950b",
@@ -497218,6 +497228,7 @@ color: purple;
         38672: "2086af4b8f4b7cbf",
         38842: "6c2b8299906fed83",
         38990: "3f7e1fb2da16e76e",
+        39251: "d73d2a7c3348e482",
         39253: "a7ddee6cb56745b8",
         39352: "022fd4d5af5a3890",
         39464: "0da4201f81e366ed",
@@ -497278,7 +497289,6 @@ color: purple;
         48574: "b15a8311af7bf878",
         48587: "5b882a8aac5351f7",
         48635: "28b5ea78a135ffca",
-        48775: "4c4b804de57c5b60",
         48944: "ec15243fcde0ad2b",
         49111: "aa2b753c555c51cc",
         49141: "1bb47e9559ae190e",
@@ -497294,7 +497304,6 @@ color: purple;
         50598: "e957392b69a9738e",
         50695: "159aaf78924009f8",
         50771: "2aab37847c818812",
-        51e3: "6f4e7da7d4fe6d69",
         51143: "277bfa20636935dc",
         51200: "2f07063a107cd1db",
         51205: "a806d2438ff28d8e",
@@ -497374,6 +497383,7 @@ color: purple;
         64082: "9265bf07676ace0c",
         64243: "c455c06833707c73",
         64251: "1248c83e5ead807a",
+        64618: "823679839ed96be0",
         64676: "818f11da459bcb5f",
         64692: "113f7ca58cfaa1f6",
         64764: "2144f19fa1f8b19b",
@@ -497410,14 +497420,13 @@ color: purple;
         68020: "564dc83fe9d21812",
         68040: "cd6ab7328353c871",
         68279: "7e5eb2a34c76045c",
-        68409: "046a0502ba5d8af7",
         68619: "feefd4d593b2e848",
         68823: "bb3a549543769e48",
         69079: "32f99b5a72306446",
         69119: "e363d6c4be6077d6",
         6916: "b6292fc2039a63dd",
         69430: "73e0608e4c9ca45a",
-        69570: "a87c189fd8963f73",
+        69570: "94ce11553c286f59",
         69612: "8ca6a4c1b626b1ff",
         69734: "b7925bfc6d492c4d",
         70008: "33de922e7aaf5e1b",
@@ -497435,15 +497444,15 @@ color: purple;
         71905: "dad9e3ec561cf15c",
         7200: "065b90eae17c32df",
         72165: "1e6972e88fc770c1",
+        7234: "046a0502ba5d8af7",
         72570: "f548829ee2d557bc",
         72747: "01dc2fcd8fe75740",
         72756: "482d9d1376b03dc7",
-        72849: "d51b85d870162c42",
         72875: "5d609e21d7555bc6",
         72970: "b99286ca8447d394",
         73140: "1f229a205134d0b5",
         73152: "36cd4761007563a0",
-        73169: "96594a19c9b66b2b",
+        73169: "a78c800966f94048",
         73380: "fc4099e2c3592ebb",
         73420: "b3cd8b282f66346c",
         73897: "96b9020c2798d792",
@@ -497456,6 +497465,7 @@ color: purple;
         7451: "6f7713d5b10d7cb3",
         75153: "91775bbc4802d7be",
         75165: "fcaf6e3ab7fd4a0a",
+        75316: "0103ad32c5cd26f8",
         75677: "01f6fd8def0f5ee3",
         75978: "895c16e938730967",
         76443: "2c77f6bfe0c2a3b9",
@@ -497484,7 +497494,6 @@ color: purple;
         80307: "230e4c7c62333de2",
         80347: "97e0192b87d2951a",
         80388: "f74de77c70f77c08",
-        80958: "c7f634286be30775",
         80966: "0cb63f697d433015",
         81008: "6ba063589d3849d8",
         81362: "cf3deb02137e5b54",
@@ -497568,7 +497577,6 @@ color: purple;
         94194: "1cf7f51f63b58150",
         94286: "dad9e3ec561cf15c",
         94390: "df2182b18d66739c",
-        94535: "8814c1b0ede41854",
         94544: "9983ed9237597292",
         95033: "1ff7539dda9309f0",
         95198: "3499fe8cb22ae7f3",
@@ -497601,6 +497609,7 @@ color: purple;
         99116: "1ea1587c9e95451b",
         9931: "b2410ae1e2ed3bab",
         99583: "999e1fda6e9bea54",
+        99654: "c7f634286be30775",
         99681: "9a0516dd4a79d053",
         99707: "6f8b567f5f430480",
       }[e] +
@@ -497618,10 +497627,9 @@ color: purple;
         10191: "a07832661732eb20",
         10264: "fb60959132cd6ce0",
         10289: "314d07e1218fa1d9",
-        10404: "873b667abb25c57a",
+        10404: "505d4b195670c520",
         10414: "f1a33adc42b9abc0",
         10416: "5e08db98ea98760d",
-        10421: "4b66aa0c027fe04c",
         10458: "4d1dbcb1d17770fe",
         10489: "c752bbd544ab253b",
         10534: "b66700a5e791b50d",
@@ -497636,7 +497644,6 @@ color: purple;
         10803: "bfc028c34220a3bc",
         10846: "67c02fa40eb671eb",
         10919: "d14f9ad85cdaff3b",
-        1094: "bb65f916bfd516dd",
         11015: "77ea9f77f6551bdc",
         11073: "a05c3054ed2ba686",
         11100: "215f0e98437b7d03",
@@ -497659,7 +497666,6 @@ color: purple;
         11653: "20042b2a7092538f",
         11664: "e2f6f12a1af36efc",
         11717: "2bc3466903d4079d",
-        11762: "c379ac064dae9782",
         11771: "4aed05fc093edfef",
         1180: "74914a59f8416039",
         11807: "4d4d524fd10a64fd",
@@ -497709,6 +497715,7 @@ color: purple;
         13754: "5fa1d6ec07b55aaf",
         13760: "a8a9237e03ce84e3",
         13762: "f209e1e7a9a06757",
+        13776: "ef0206729967bf8e",
         13802: "85115a20ee5b21a4",
         13848: "f3508322387043f5",
         13879: "75e22ba9bd7eb61c",
@@ -497745,6 +497752,7 @@ color: purple;
         14833: "81aebedb9ab556b0",
         14835: "fa1a879749bc107c",
         14912: "383fa6d79d24a905",
+        14914: "b6e5cd7ff9c1f7a3",
         14927: "105cd2b4c6d03bf3",
         14930: "b7fc356b4a6e8589",
         14995: "80b73268dbe725d7",
@@ -497820,7 +497828,6 @@ color: purple;
         17413: "da65b73b1d711c46",
         17422: "bddede1aed8523ec",
         17425: "fd11f5d7c891382e",
-        17535: "249de81751f44a89",
         17599: "65123e79305139f3",
         17601: "7341bfef0cceb8bb",
         17647: "814991bea9e2dd60",
@@ -497832,13 +497839,14 @@ color: purple;
         17913: "c42894f9050264dc",
         17936: "28162e66aba35f63",
         17965: "f16c73e020a9ac1e",
+        17981: "0cb5993b4d5e3e51",
         17983: "3d91287f7a58d498",
         18021: "0d6b1a7dc20048d5",
         18036: "0b1406698ec02345",
         18128: "efcd8afa52461665",
         18133: "3a64c324383bca25",
         18169: "3871a2d79b36c7d3",
-        18207: "c48717bb3542b190",
+        18207: "369fb00b3c99813f",
         18219: "a8881b8736d6f4df",
         18237: "e03b6d404c37e860",
         18446: "5d6f76e7a91748f9",
@@ -497867,10 +497875,10 @@ color: purple;
         19418: "2210cd2d1a48e737",
         19457: "656610f4188cae47",
         19469: "471802d0cd1d3572",
-        19482: "aab0814a50cdbdd9",
+        19482: "73291378ba091628",
         1953: "0311fa1995eca942",
         19534: "55be38ce2fe57373",
-        19677: "80cca696d3843a2c",
+        19677: "df0c3b8184072d8a",
         19683: "43aa2345df0c7791",
         19729: "055a27d0f9ceecb9",
         19750: "077fe9d800c19221",
@@ -497930,7 +497938,7 @@ color: purple;
         21539: "9f9a5c951e9596a0",
         21595: "a0a9aa3fe45938c5",
         21616: "ac35bd31ee7723d1",
-        21738: "84d37391c38eff5c",
+        21738: "b67229766f9dde5b",
         21740: "602f79b970051100",
         2179: "d789cb6ad2286cbb",
         219: "6ea321cb9a456269",
@@ -497994,6 +498002,7 @@ color: purple;
         2381: "f59b3178cb4353e0",
         23816: "97ea380ceb7a6333",
         23959: "47577ba016d6ed4e",
+        23965: "20a1948dc578d21d",
         2397: "28eb9d0bb1e95251",
         23997: "0b976245e090aedf",
         24093: "6aeb0ba742bbc30e",
@@ -498035,6 +498044,7 @@ color: purple;
         25371: "14979180c1c41a45",
         25394: "fd2c6ca952fc2101",
         25401: "1c1f34251b00ec6c",
+        25412: "a7be2a990cfd107c",
         25474: "251b45178d7ee6e5",
         25497: "0515f5c7b56a8a83",
         25505: "a797fa8089c7e1ef",
@@ -498062,6 +498072,7 @@ color: purple;
         26539: "3c9f83072f125a9b",
         26620: "42d4680f48f71cb0",
         26720: "40e638ab97984b64",
+        26730: "7018d3bd2dd6017c",
         26766: "bc2e60f79e275793",
         26802: "673404544159ddb4",
         26814: "a2c6bc475a33bfae",
@@ -498077,7 +498088,6 @@ color: purple;
         27204: "39b8c520d146f16f",
         27209: "61bde06046a6031c",
         27219: "cec9b5c26835533d",
-        27243: "8933a33b283110a7",
         27250: "bf9e9175639bd590",
         27299: "b648b14a19d10e8d",
         27355: "4642466c61d8739b",
@@ -498135,7 +498145,7 @@ color: purple;
         29055: "31c446380c2a5bcc",
         29095: "c613ab94e4521908",
         29100: "24d2e330e32e324b",
-        29105: "8e7f83d016eef8d9",
+        29105: "ea0955a1a987d42b",
         29118: "c4552c9585dbbc94",
         29143: "6e0b42c2633d24ea",
         29232: "61a4c435608f50b0",
@@ -498346,7 +498356,7 @@ color: purple;
         36622: "2eae93f29592879d",
         36647: "2fcc72550846f9f0",
         3666: "bf434ebd919f91ea",
-        36682: "bc7c9b1b2daee8e3",
+        36682: "82b71c69a608f8e4",
         3672: "f08c79a7d09fc678",
         36748: "dab65bd7d3676120",
         36780: "c8752ba31bb3a9e8",
@@ -498362,6 +498372,7 @@ color: purple;
         37046: "4ef70f962d1ebb2e",
         37153: "6437f33ee98ef6b4",
         37181: "d49f0511c28aa47d",
+        37201: "853fd274ae256795",
         37214: "ce836476f3202f3b",
         37237: "acce204d3d855720",
         37249: "5141258df0a64d0b",
@@ -498370,11 +498381,10 @@ color: purple;
         37316: "e3474f03483aa93f",
         37352: "3af358fdf51952e7",
         37372: "42ad6a722e30dc4c",
-        37383: "842095a557ce9808",
+        37383: "c57f40ca2f5baecf",
         374: "446bd080301cef9f",
         37415: "10524aff4fd8d783",
         37445: "3be449759f76578f",
-        37457: "936095d433f38c34",
         375: "c54d27879147450f",
         37548: "1c1eafd20d78819e",
         37689: "cd9419e9d8bc022e",
@@ -498394,7 +498404,7 @@ color: purple;
         38114: "2221f8b2043e523d",
         38143: "c1efc7e40efedb04",
         38167: "1b19e1e1045d6780",
-        38217: "cadc16fec970c2f0",
+        38217: "fdc8548120716c26",
         38332: "8a97b3298b596edb",
         38346: "39231c27f1abb160",
         38419: "f681f05cd6a045e0",
@@ -498414,6 +498424,7 @@ color: purple;
         39212: "b608105eea69da31",
         39225: "4e1a4627bb7b4343",
         39241: "71f84151c917ddee",
+        39251: "baa8cd9c8f0839e0",
         39253: "7dd64085f0e70de1",
         39352: "bca5b641737c8d2f",
         39459: "77c87149e4637619",
@@ -498483,7 +498494,7 @@ color: purple;
         42070: "9edbdc7fb85f276c",
         42108: "75b5b122764f1a89",
         42128: "2df9b5d5d77d0b60",
-        42160: "a3a23d41c42523f6",
+        42160: "cce38c2abe4feec6",
         42207: "81e6e3a112d3b1c4",
         42235: "a85123b398dd8882",
         42241: "68f8c0a7cb73ffc5",
@@ -498502,12 +498513,12 @@ color: purple;
         42512: "79f3cd16acfec8d6",
         42608: "555d208bc3a8da8b",
         42613: "c2d8b533c2fabc99",
-        42784: "4b4026a6855bae7e",
+        42784: "e44f304df1e43a91",
         42799: "e55ccba3ae29efa3",
         428: "5b1100a28147ef32",
         42829: "0f2e4125aa6b0c3f",
         4289: "96102f8a8d7f011a",
-        42891: "4f88eb400ccd5856",
+        42891: "7c88ab14c9b19c03",
         42905: "c906a52822c1eb70",
         42919: "2f26674ffa6e99d5",
         42945: "3875b1e24e6dd152",
@@ -498599,7 +498610,7 @@ color: purple;
         46200: "3c6b86cfefae1fd1",
         46216: "f9c86aae9933f430",
         46313: "05913509ea293b79",
-        46314: "16680664d7e8a2b3",
+        46314: "a8c4dd27664938bb",
         46391: "07858749d8e77dd6",
         46529: "a110bc41e723ecc4",
         46581: "f4177713067207af",
@@ -498631,7 +498642,7 @@ color: purple;
         47580: "ac41c9e5edc4932a",
         47620: "9ae0c32885e865fe",
         47669: "34c7907fad672fbc",
-        47742: "37639b2484c836b2",
+        47742: "10446d9137ae06eb",
         47771: "7c2e379233428e3f",
         47773: "de6d0d21ed492c11",
         47790: "34d994a8a7c46bc5",
@@ -498665,7 +498676,6 @@ color: purple;
         48614: "16e853a0258d5525",
         48635: "92bc3b67807e951a",
         48699: "1bf9b03338fec4fa",
-        48775: "15a4a7f2a2b87e28",
         48817: "ce74face3a3031bd",
         4885: "3c8aa3f93c336916",
         48870: "ae97e6167a8eb5dd",
@@ -498729,7 +498739,6 @@ color: purple;
         50899: "97b4e53c5051703f",
         50974: "1a00c8da8f7787a4",
         50997: "ea3a3516a159b967",
-        51e3: "a463ee8ae57169fe",
         5101: "5b7ddce192154e0d",
         51080: "250ff53f3e7bb01e",
         51090: "bcbcfc9cddc039eb",
@@ -498849,7 +498858,7 @@ color: purple;
         55180: "640eff9840cafa79",
         55197: "914022efeba37350",
         55336: "f295816870adf6c1",
-        55360: "d8a65b454d9d30b6",
+        55360: "3f839b63837bdcaf",
         55415: "7ee137f18e10ed87",
         55424: "6447906f241ff473",
         55436: "f8ea288814ee4af3",
@@ -498858,6 +498867,7 @@ color: purple;
         55524: "dd0261411d38ef9e",
         5554: "af980dea9c227753",
         55543: "bd50ea72a2a8f24a",
+        55558: "3855033e3d67f3cd",
         5560: "2efda9483981bb28",
         55631: "adbab9ce74f835bb",
         55657: "dea4eed767e3b6b8",
@@ -498881,10 +498891,10 @@ color: purple;
         56243: "9616366a5658b79f",
         56259: "4fc73dc2b3300ff2",
         56260: "df3b143fea861fb6",
-        56297: "39f9e3a085cf3b42",
+        56297: "21f8923b8b94b1b5",
         5639: "2bc2abd158e8b2b0",
         5640: "b4a7fb493f361744",
-        56403: "c8f0f5da731b6235",
+        56403: "08e6615920745150",
         5642: "dc31b2127037afae",
         56446: "5650ff92f1d54b76",
         56518: "f375d814716a43a0",
@@ -498931,12 +498941,12 @@ color: purple;
         58009: "cdb9cf0956400902",
         58037: "25677153cbcc2dd4",
         58048: "ea5bdb16ee64cc5c",
-        58068: "007a381c3e1b270b",
+        58068: "0406091fda830c14",
         58127: "f3cb0a2d6c80b69c",
         58133: "905db27f17bd0eb1",
         58142: "1026116df95d814b",
         58147: "cb4aeefbbce4fc1c",
-        58164: "c0aa3e50d9314dff",
+        58164: "3bdec617399834d9",
         5817: "7fb90aeaabb497fa",
         58182: "3c21362c1dc53c15",
         58186: "56a0bdd0d3bbc073",
@@ -499108,12 +499118,13 @@ color: purple;
         64520: "268fde6e305c2bf0",
         64522: "702582d2818dfb41",
         64526: "15948de2f29981c8",
-        6453: "2770fb33e78ece6a",
+        6453: "17603bedfe93e97e",
         64581: "9f7a2f7ab95b021d",
+        64618: "70a07b13067ecf94",
         64676: "ebe7e3fb5d7e6ee9",
         64691: "984d686dac245c76",
         64692: "d1a363d824a51e27",
-        64764: "0c39a5e8b7697e2c",
+        64764: "27d83dff90db7a8a",
         64805: "6169b3be112cbbea",
         64811: "123fe558a51ba991",
         64850: "94d5f959c9ce89c2",
@@ -499131,7 +499142,7 @@ color: purple;
         65235: "21dd9e4904d61702",
         65252: "9baa43299ecd1964",
         65281: "1b524afdf4f3487f",
-        65283: "746eb71b5744c4ae",
+        65283: "1838a7a6153a8def",
         653: "85ac06729b2dfa3b",
         65306: "c04f2c1882a1c6dd",
         65341: "56fd4c91eea81a19",
@@ -499157,7 +499168,7 @@ color: purple;
         66009: "4b582c8d792ed2f7",
         66015: "02615341b01be45c",
         66112: "2272cdf5d187bb82",
-        66139: "df2102df1428de0c",
+        66139: "0ced1f6b146803f9",
         66147: "53dcd792239e4d32",
         66162: "8307c16714190cec",
         66279: "257299af4665593f",
@@ -499229,11 +499240,10 @@ color: purple;
         68279: "13083a2d85b9dbb0",
         68379: "49ff7a27cc013665",
         68386: "04f5253fcb337327",
-        68409: "2200bc32517a8ac2",
         68432: "9eb8b8d0f4e13e42",
         68454: "95b8c514028b0bd4",
         68502: "ffdb1adae148f4ce",
-        68619: "205918ae09b67b86",
+        68619: "56fb69ab8eec2131",
         68790: "7f3e4b360c7d0577",
         68820: "7f117dbbb3b34edc",
         68823: "b4ebd4eb45e96899",
@@ -499254,15 +499264,15 @@ color: purple;
         69319: "fd998363e5915ff9",
         69331: "2edc1ea44514159e",
         69421: "3cb9ccc2424b955d",
-        69430: "3231fbd7690eaec4",
+        69430: "076f31f68a675ce9",
         69445: "f8a0db7b9ed3d145",
         6954: "e3f4802c8b68f90e",
-        69570: "5137fcb92d4ef119",
+        69570: "29e2a658abfed4b9",
         69595: "760d6d3f99bc3f72",
         69612: "924a4c6400619bca",
         69634: "d5b089d00076b4a0",
         69677: "6c8471ee8b0b563d",
-        6971: "39d66fc1b7e60362",
+        6971: "b60672fa6524719a",
         69734: "61f041253715bf7c",
         6975: "504d544114c4f4c2",
         69791: "f7f52157d6beea7f",
@@ -499283,7 +499293,6 @@ color: purple;
         70232: "26c5ca0bf8ef393f",
         70233: "5d9c81d86acccb5a",
         70276: "fccbcf05e5bf08fa",
-        7034: "c7d5fcf1fa18a0d2",
         70346: "82bbfa7661ecb448",
         70351: "3a122ac2527525a3",
         70365: "998dfa325fcae3e9",
@@ -499318,7 +499327,7 @@ color: purple;
         71307: "38a1a67b6a52e3db",
         7133: "f7416692cb0b4d46",
         71381: "5333915de812fec0",
-        71555: "bb17dc14c48ce8cc",
+        71555: "5c3fabdd6382544a",
         71678: "2b7360f1e168ae38",
         71694: "ba3df1aa997eece9",
         71695: "dc168b1678e49da9",
@@ -499341,6 +499350,7 @@ color: purple;
         72181: "377673f11387407b",
         72243: "2cfc4236640a3094",
         72253: "084507197314af29",
+        7234: "62d27a8480cf7e06",
         72362: "8da6908ee85b0a5b",
         72388: "8d6be95573185d99",
         72417: "2918555d07275c9e",
@@ -499354,7 +499364,6 @@ color: purple;
         72747: "e1efb4e73ec681a3",
         72752: "e39e804417fe17b8",
         72756: "89d23e4bb01d8609",
-        72849: "856009136a82cd6a",
         72872: "bf0448a57ead8a64",
         72874: "3ca8764da9a909cf",
         72875: "df53327efd21737a",
@@ -499368,7 +499377,7 @@ color: purple;
         73122: "6e3d1172dd3cd0e7",
         73140: "8bc8c07fbba2b9d7",
         73152: "ee763b2759775451",
-        73169: "90cc6d0806ede21a",
+        73169: "f6d868becc5ec7a3",
         73241: "49e6718e3f7b327f",
         73297: "4e181d49c5fdae9f",
         7330: "4e4cfdc2486a1b13",
@@ -499424,6 +499433,7 @@ color: purple;
         75169: "52f9c533044b833d",
         75199: "8c54042bf4a32896",
         75260: "ac01ef174ac42eea",
+        75316: "353d861ab29e8461",
         75378: "608a09d0e81978ee",
         75398: "64ffe08ec0ef1f21",
         75450: "0b4742cec3ec8fd9",
@@ -499453,7 +499463,7 @@ color: purple;
         76464: "c539c9eee51b54b2",
         76525: "cadcf333303ca958",
         76530: "8899424642000d26",
-        76593: "3fe5ab083545cea8",
+        76593: "10e614187052f77c",
         76599: "c95e26023ef87889",
         76601: "e6ec6c00969343d2",
         76626: "b3b73eda59624178",
@@ -499540,7 +499550,6 @@ color: purple;
         78888: "db4b6606ba9bc1e7",
         79067: "621c7b480a7aaa8e",
         79094: "d8ca4d395a8daf56",
-        79133: "1668a5b4000bd541",
         79134: "7c9748b7dbcd8010",
         79137: "eb18477bbd3debf2",
         79146: "9872ca0b661bdc25",
@@ -499586,11 +499595,10 @@ color: purple;
         80756: "8d80a14a2699c336",
         8087: "2ed9171aa3191327",
         80884: "a03c65b412e26709",
-        80958: "d66833863fa5cead",
         80959: "b2ff23fba23fbab0",
         80966: "a8e5d62a571ddd04",
         80970: "990af82e8449a6bd",
-        81008: "920ed63f94da6abd",
+        81008: "f9d9d389b1abd152",
         81009: "738fb8f3944999ac",
         81084: "e483ca1c9942ff14",
         81153: "746f2511199f55f1",
@@ -499605,7 +499613,7 @@ color: purple;
         81509: "12ee7ee3d589741d",
         81567: "af6079b886180e23",
         81619: "3012432d145000f1",
-        81645: "e1d6bb402f581cf8",
+        81645: "1eb94268d6c108f8",
         81647: "74de187f1a605e1d",
         81653: "0a6eba8f76f10a26",
         81657: "45c7ecc746e7bbf7",
@@ -499631,13 +499639,14 @@ color: purple;
         82486: "90763d3d0e9af3d9",
         82499: "f5e0df11a839e9a7",
         82500: "12e065bac6b04bce",
+        82561: "4ac973bc63174470",
         82583: "eaf56cb174704a0c",
         82655: "237ea45c239d6f3b",
         82666: "e836b557d2c71e98",
         82715: "e3223b8497525224",
         82733: "8122e9455839c9e6",
         82781: "902a25f42b711886",
-        82787: "d228bdfc55f81944",
+        82787: "19a8b447c15b2331",
         82840: "235ba4a2e90a1f05",
         82856: "d6cff798a6732421",
         82862: "473e81c6cf415110",
@@ -499676,7 +499685,7 @@ color: purple;
         83767: "852267e193db8be1",
         83792: "f895f4ebaafbd0d9",
         83813: "b5d7202874ad6b0b",
-        84018: "d29615bd7e91d960",
+        84018: "78b8554be4aeeaaa",
         84089: "9d1d0c6b9a4de6b7",
         84114: "1001dcf3c56ffaf9",
         84163: "fa9825a08847724d",
@@ -499776,6 +499785,7 @@ color: purple;
         8801: "69b5cfd8394ee9ac",
         88014: "0fa908398835cfc3",
         88017: "334a32f128348c76",
+        88023: "0d97c07f20eef3cf",
         88077: "35d7882c9cb326e4",
         88099: "351046844da4920b",
         881: "5d6bdaf8b2fd37ba",
@@ -499822,7 +499832,7 @@ color: purple;
         896: "58dbc193d6cd787b",
         89647: "3d1b703f8305ac43",
         89660: "5187a861d35c8ca9",
-        89825: "bba61238de3124b1",
+        89825: "3a3ffb55e2c8f19d",
         89941: "2eb28ab4ddb58d00",
         89994: "7d44581ac921d012",
         90037: "a15b43acdccbc2db",
@@ -499854,7 +499864,7 @@ color: purple;
         91069: "23b49270ef89a822",
         91071: "de63fe01a1038035",
         91081: "d7022ca02e9c5d31",
-        91124: "a4d27f7bbcdba19e",
+        91124: "8c73c6eb97985f8c",
         91211: "3a6dc951c5c72d3d",
         91221: "f4c418be5b4a892a",
         91227: "76dd5b010cd04439",
@@ -499862,7 +499872,7 @@ color: purple;
         91363: "ee5db3f15e4283ce",
         91373: "4585aba3056c4227",
         91446: "35fc527fa2d0a415",
-        91475: "ac73198a419a4ba0",
+        91475: "d4aeac9c8aff6ccc",
         91597: "43e946c697bc1935",
         91614: "80067908dfa95127",
         91646: "7fab375dc6bf06d0",
@@ -499943,7 +499953,6 @@ color: purple;
         9441: "23fbf1416194d912",
         94436: "2ff0a0bcec5e45b6",
         94483: "42dfde8cf0004296",
-        94535: "d29d53b717495340",
         94544: "a0b56e488665cbd7",
         94599: "6847e153db368c9e",
         94675: "ba0db55a62f3b5a6",
@@ -500018,7 +500027,7 @@ color: purple;
         97442: "8b02aaef4a5bb747",
         97473: "fd927fdb6b042c57",
         97510: "8aeca758115e2565",
-        97534: "7bb770678fc8f1a3",
+        97534: "8c2db0a484ec699d",
         97536: "094d344927a527a9",
         97557: "c71fdb2dac7e8631",
         97674: "72de8699c4f7bd36",
@@ -500080,6 +500089,7 @@ color: purple;
         99599: "8a68312ea5c419cd",
         9962: "2dc093f68dadd158",
         99653: "b6cb1c57dc349066",
+        99654: "071b1afbd314855e",
         99681: "ea76e11990737107",
         99707: "d2f6f2c56894e065",
         99709: "b0eadb6c1563ef6e",
@@ -500221,7 +500231,7 @@ color: purple;
       if (0 !== r)
         if (r) t.push(r[2]);
         else if (
-          /^(4(0(243|303|848|850)|4(447|801|900)|2(048|241|296|311|332|446|455|978)|5([17]99|105|314|421|457|937|990)|6(3(13|14|91)|[18]15|054|529|601|941)|1(031|469|529|865|981|996)|8(5(65|74|87)|635|775|944)|7(1(11|46|75)|230|326|948)|3(139|233|712|832|940)|9(2(08|51|92)|111|141|876|884))|2(0(061|320|396|455|536|667|835|978)|4(9(19|27|47)|123|580|832)|2(220|438|544|649)|5(04|142|252|280|846)|6((51|88|91)0|3|456|539|892)|1(054|122|473|539|552|738|905)|8(96[69]|090|109|386|429|515)|7(2([019]9|43)|188|495|606|672|759|818)|3([38]16|425|47|97)|9105|9514)|5(0((03|14|24)3|490|598|695|771)|4(191|508|68|857|90)|2(9(1|81|86)|(09|53|67)2|179|396|524|717|786)|5(336|360|524|926)|6(016|065|260|297|999)|1(20[05]|000|143|357|804)|8(4(05|07|30)|068|127|529|608|667)|7(05|222|742)|3(005|068|274|648|681|837)|9(27[56]|[18]39|450|773))|6(4(061|082|243|251|676|692|764|850|939)|2((62|68|75)4|156|241|368|507|765)|5(98[01]|2(25|81|83)|584|614|727)|6(00[39]|139|147|464|518|708|794|946|996)|1(059|156|376)|8((27|40|61)9|020|040|823)|7(5(|54|82|9)|6(10|70|96)|096|18|350)|3(8(32|93|95)|[47]52|178|258|401|786)|9(079|119|16|430|570|612|734)|0072|0222)|1(0(046|416|421|534|919|94)|4(078|171|289|360|383|577|782|833|912)|2(313|618|925)|5(224|673|696)|6(649|674|864|979)|1(015|228|762)|8(46[79]|021|128|169|207|710|897|912)|7(110|219|259|363|882)|3((|49|90)2|161|320|419|754|848)|9750|9807)|8(0(3(07|47|88)|123|958|966)|4(98[13]|018|268|55|811)|2(41[25]|8(56|62|88)|3|318|655|733|787)|5(157|19|221|46|830)|6(142|537|618)|1(88(|1)|008|362|567|657)|8((1|10|7)8|014|615|869)|7((16|31|68)0|591|874|98|997)|9(061|39|466|530)|3504)|7(0(008|104|232|276|661)|4(077|132|294|488|51)|2((0|57|97)0|165|747|756|849|875)|5(153|165|677|978)|6(443|530|593|895)|1((69|78|90)5|138|256|282|33|791)|8(8(11|67|70|88)|078|136|250|708|795)|7((41|64|82)1|147|743)|3(1(40|52|69)|380|420|897|987|991)|9(13[47]|889|939))|3(0(228|366|404|476|514|613)|2(4(11|35|82)|12|140|377)|5(023|125|265|561|852)|6((6|82|94)6|058|133|354|494|72|813)|1(294|385|77|815|824|916)|8((33|65|67|84)2|017|346|990)|7((15|38|80)3|214|279|445|548|691)|3(049|102|255|47|885|957)|9(253|352|464|522|579|694|903)|4070)|9(0(3(09|39|58)|(41|66|85)0|037|18|194|271|406|91|946)|4(194|286|390|535|544)|2(8(37|53|79)|013|461|720|970|998)|5(74[37]|033|198|481|501|86|959)|6((31|36|67)8|182|811)|1(081|124|373|475|597|699|803|926)|8(063|186|215|321|597|626|700|934)|7(442|534|76|95)|9(032|063|106|116|31|583|681|707)|346|3787))$/.test(
+          /^(4(0(243|303|848|850)|4(447|801|900)|2(048|241|296|311|332|446|455|978)|5([17]99|105|314|421|457|937|990)|6(3(13|14|91)|[18]15|054|529|601|941)|1(031|469|529|865|981|996)|8(5(65|74|87)|635|944)|7(1(11|46|75)|230|326|948)|3(139|233|712|832|940)|9(2(08|51|92)|111|141|876|884))|2(0(061|320|396|455|536|667|835|978)|4(9(19|27|47)|123|580|832)|2(220|438|544|649)|5(04|142|252|280|846)|6((51|88|91)0|3|456|539|892)|1(054|122|473|539|552|738|905)|8(96[69]|090|109|386|429|515)|7(2[019]9|188|495|606|672|759|818)|3([38]16|425|47|965|97)|9105|9514)|5(0((03|14|24)3|490|598|695|771)|4(191|508|68|857|90)|2(9(1|81|86)|(09|53|67)2|179|396|524|717|786)|5(336|360|524|926)|6(016|065|260|297|999)|1(20[05]|143|357|804)|8(4(05|07|30)|068|127|529|608|667)|7(05|222|742)|3(005|068|274|648|681|837)|9(27[56]|[18]39|450|773))|6(4(6(18|76|92)|061|082|243|251|764|850|939)|2((62|68|75)4|156|241|368|507|765)|5(98[01]|2(25|81|83)|584|614|727)|6(00[39]|139|147|464|518|708|794|946|996)|1(059|156|376)|8(020|040|279|619|823)|7(5(|54|82|9)|6(10|70|96)|096|18|350)|3(8(32|93|95)|[47]52|178|258|401|786)|9(079|119|16|430|570|612|734)|0072|0222)|1(0(046|404|416|534|919)|4(91[24]|078|171|289|360|383|577|782|833)|2(313|618|925)|5(224|673|696)|6(649|674|864|979)|8(46[79]|021|128|169|207|710|897|912)|7(110|219|259|363|882|981)|3((|49|90)2|161|320|419|754|776|848)|1015|1228|9750|9807)|8(0(3(07|47|88)|123|966)|4(98[13]|018|268|55|811)|2(41[25]|8(56|62|88)|3|318|655|733|787)|5(157|19|221|46|830)|6(142|537|618)|1(88(|1)|008|362|567|657)|8((1|10|7)8|014|615|869)|7((16|31|68)0|591|874|98|997)|9(061|39|466|530)|3504)|7(0(008|104|232|276|661)|4(077|132|294|488|51)|2((0|57|97)0|165|34|747|756|875)|5(153|165|316|677|978)|6(443|530|593|895)|1((69|78|90)5|138|256|282|33|791)|8(8(11|67|70|88)|078|136|250|708|795)|7((41|64|82)1|147|743)|3(1(40|52|69)|380|420|897|987|991)|9(13[47]|889|939))|3(0(228|366|404|476|514|613)|2(4(11|35|82)|12|140|377)|5(023|125|265|561|852)|6((6|82|94)6|058|133|354|494|72|813)|1(294|385|77|815|824|916)|8((33|65|67|84)2|017|346|990)|7(2(01|14|79)|(15|38|80)3|445|548|691)|3(049|102|255|47|885|957)|9(25[13]|352|464|522|579|694|903)|4070)|9(0(3(09|39|58)|(41|66|85)0|037|18|194|271|406|91|946)|4(194|286|390|544)|2(8(37|53|79)|013|461|720|970|998)|5(74[37]|033|198|481|501|86|959)|6((31|36|67)8|182|811)|1(081|124|373|475|597|699|803|926)|8(063|186|215|321|597|626|700|934)|7(442|534|76|95)|9(032|063|106|116|31|583|654|681|707)|346|3787))$/.test(
             e,
           )
         ) {
@@ -500322,7 +500332,7 @@ color: purple;
     (A.F.s = (e) => {
       if (
         (!A.o(d, e) || void 0 === d[e]) &&
-        /^(4(0(243|303|848|850)|4(447|801|900)|2(048|241|296|311|332|446|455|978)|5([17]99|105|314|421|457|937|990)|6(3(13|14|91)|[18]15|054|529|601|941)|1(031|469|529|865|981|996)|8(5(65|74|87)|635|775|944)|7(1(11|46|75)|230|326|948)|3(139|233|712|832|940)|9(2(08|51|92)|111|141|876|884))|2(0(061|320|396|455|536|667|835|978)|4(9(19|27|47)|123|580|832)|2(220|438|544|649)|5(04|142|252|280|846)|6((51|88|91)0|3|456|539|892)|1(054|122|473|539|552|738|905)|8(96[69]|090|109|386|429|515)|7(2([019]9|43)|188|495|606|672|759|818)|3([38]16|425|47|97)|9105|9514)|5(0((03|14|24)3|490|598|695|771)|4(191|508|68|857|90)|2(9(1|81|86)|(09|53|67)2|179|396|524|717|786)|5(336|360|524|926)|6(016|065|260|297|999)|1(20[05]|000|143|357|804)|8(4(05|07|30)|068|127|529|608|667)|7(05|222|742)|3(005|068|274|648|681|837)|9(27[56]|[18]39|450|773))|6(4(061|082|243|251|676|692|764|850|939)|2((62|68|75)4|156|241|368|507|765)|5(98[01]|2(25|81|83)|584|614|727)|6(00[39]|139|147|464|518|708|794|946|996)|1(059|156|376)|8((27|40|61)9|020|040|823)|7(5(|54|82|9)|6(10|70|96)|096|18|350)|3(8(32|93|95)|[47]52|178|258|401|786)|9(079|119|16|430|570|612|734)|0072|0222)|1(0(046|416|421|534|919|94)|4(078|171|289|360|383|577|782|833|912)|2(313|618|925)|5(224|673|696)|6(649|674|864|979)|1(015|228|762)|8(46[79]|021|128|169|207|710|897|912)|7(110|219|259|363|882)|3((|49|90)2|161|320|419|754|848)|9750|9807)|8(0(3(07|47|88)|123|958|966)|4(98[13]|018|268|55|811)|2(41[25]|8(56|62|88)|3|318|655|733|787)|5(157|19|221|46|830)|6(142|537|618)|1(88(|1)|008|362|567|657)|8((1|10|7)8|014|615|869)|7((16|31|68)0|591|874|98|997)|9(061|39|466|530)|3504)|7(0(008|104|232|276|661)|4(077|132|294|488|51)|2((0|57|97)0|165|747|756|849|875)|5(153|165|677|978)|6(443|530|593|895)|1((69|78|90)5|138|256|282|33|791)|8(8(11|67|70|88)|078|136|250|708|795)|7((41|64|82)1|147|743)|3(1(40|52|69)|380|420|897|987|991)|9(13[47]|889|939))|3(0(228|366|404|476|514|613)|2(4(11|35|82)|12|140|377)|5(023|125|265|561|852)|6((6|82|94)6|058|133|354|494|72|813)|1(294|385|77|815|824|916)|8((33|65|67|84)2|017|346|990)|7((15|38|80)3|214|279|445|548|691)|3(049|102|255|47|885|957)|9(253|352|464|522|579|694|903)|4070)|9(0(3(09|39|58)|(41|66|85)0|037|18|194|271|406|91|946)|4(194|286|390|535|544)|2(8(37|53|79)|013|461|720|970|998)|5(74[37]|033|198|481|501|86|959)|6((31|36|67)8|182|811)|1(081|124|373|475|597|699|803|926)|8(063|186|215|321|597|626|700|934)|7(442|534|76|95)|9(032|063|106|116|31|583|681|707)|346|3787))$/.test(
+        /^(4(0(243|303|848|850)|4(447|801|900)|2(048|241|296|311|332|446|455|978)|5([17]99|105|314|421|457|937|990)|6(3(13|14|91)|[18]15|054|529|601|941)|1(031|469|529|865|981|996)|8(5(65|74|87)|635|944)|7(1(11|46|75)|230|326|948)|3(139|233|712|832|940)|9(2(08|51|92)|111|141|876|884))|2(0(061|320|396|455|536|667|835|978)|4(9(19|27|47)|123|580|832)|2(220|438|544|649)|5(04|142|252|280|846)|6((51|88|91)0|3|456|539|892)|1(054|122|473|539|552|738|905)|8(96[69]|090|109|386|429|515)|7(2[019]9|188|495|606|672|759|818)|3([38]16|425|47|965|97)|9105|9514)|5(0((03|14|24)3|490|598|695|771)|4(191|508|68|857|90)|2(9(1|81|86)|(09|53|67)2|179|396|524|717|786)|5(336|360|524|926)|6(016|065|260|297|999)|1(20[05]|143|357|804)|8(4(05|07|30)|068|127|529|608|667)|7(05|222|742)|3(005|068|274|648|681|837)|9(27[56]|[18]39|450|773))|6(4(6(18|76|92)|061|082|243|251|764|850|939)|2((62|68|75)4|156|241|368|507|765)|5(98[01]|2(25|81|83)|584|614|727)|6(00[39]|139|147|464|518|708|794|946|996)|1(059|156|376)|8(020|040|279|619|823)|7(5(|54|82|9)|6(10|70|96)|096|18|350)|3(8(32|93|95)|[47]52|178|258|401|786)|9(079|119|16|430|570|612|734)|0072|0222)|1(0(046|404|416|534|919)|4(91[24]|078|171|289|360|383|577|782|833)|2(313|618|925)|5(224|673|696)|6(649|674|864|979)|8(46[79]|021|128|169|207|710|897|912)|7(110|219|259|363|882|981)|3((|49|90)2|161|320|419|754|776|848)|1015|1228|9750|9807)|8(0(3(07|47|88)|123|966)|4(98[13]|018|268|55|811)|2(41[25]|8(56|62|88)|3|318|655|733|787)|5(157|19|221|46|830)|6(142|537|618)|1(88(|1)|008|362|567|657)|8((1|10|7)8|014|615|869)|7((16|31|68)0|591|874|98|997)|9(061|39|466|530)|3504)|7(0(008|104|232|276|661)|4(077|132|294|488|51)|2((0|57|97)0|165|34|747|756|875)|5(153|165|316|677|978)|6(443|530|593|895)|1((69|78|90)5|138|256|282|33|791)|8(8(11|67|70|88)|078|136|250|708|795)|7((41|64|82)1|147|743)|3(1(40|52|69)|380|420|897|987|991)|9(13[47]|889|939))|3(0(228|366|404|476|514|613)|2(4(11|35|82)|12|140|377)|5(023|125|265|561|852)|6((6|82|94)6|058|133|354|494|72|813)|1(294|385|77|815|824|916)|8((33|65|67|84)2|017|346|990)|7(2(01|14|79)|(15|38|80)3|445|548|691)|3(049|102|255|47|885|957)|9(25[13]|352|464|522|579|694|903)|4070)|9(0(3(09|39|58)|(41|66|85)0|037|18|194|271|406|91|946)|4(194|286|390|544)|2(8(37|53|79)|013|461|720|970|998)|5(74[37]|033|198|481|501|86|959)|6((31|36|67)8|182|811)|1(081|124|373|475|597|699|803|926)|8(063|186|215|321|597|626|700|934)|7(442|534|76|95)|9(032|063|106|116|31|583|654|681|707)|346|3787))$/.test(
           e,
         )
       ) {
@@ -500475,4 +500485,4 @@ color: purple;
     }),
     A(329563);
 })();
-//# sourceMappingURL=web.43cea28bf0c65dc3.js.map
+//# sourceMappingURL=web.349bb4165b1d1bf8.js.map
