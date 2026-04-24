@@ -26101,7 +26101,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eL = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eL}, Build Number: 535076, Version Hash: e65bcb4abb170ec783c6c7b72d747ba43d6dcd2c`,
+        `[BUILD INFO] Release Channel: ${eL}, Build Number: 535131, Version Hash: 2a7f66772ce3a3c57a4bb0254dcc1b4c1c485070`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -48739,7 +48739,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "e65bcb4abb170ec783c6c7b72d747ba43d6dcd2c" === e.body.hash
+                  "2a7f66772ce3a3c57a4bb0254dcc1b4c1c485070" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53175,10 +53175,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("535076")),
+                ((e = parseInt("535131")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 535076",
+                    "Trying to open a changelog for an invalid build number 535131",
                   ),
                   (e = 0)),
                 e),
@@ -60288,8 +60288,8 @@ ${s}`);
             n.e("19119"),
             n.e("83518"),
             n.e("67646"),
-            n.e("61555"),
-            n.e("82707"),
+            n.e("51050"),
+            n.e("76477"),
             n.e("23536"),
             n.e("39967"),
             n.e("66636"),
@@ -60300,7 +60300,7 @@ ${s}`);
             n.e("85216"),
             n.e("96234"),
             n.e("6044"),
-            n.e("52753"),
+            n.e("9842"),
             n.e("13215"),
             n.e("18294"),
             n.e("24639"),
@@ -60312,12 +60312,12 @@ ${s}`);
             n.e("40962"),
             n.e("5536"),
             n.e("81161"),
-            n.e("12942"),
+            n.e("44395"),
             n.e("81250"),
             n.e("24805"),
             n.e("44846"),
             n.e("21595"),
-            n.e("76706"),
+            n.e("12729"),
             n.e("46454"),
             n.e("73985"),
             n.e("31294"),
@@ -63699,7 +63699,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535076", versionHash: "e65bcb4abb170ec783c6c7b72d747ba43d6dcd2c" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535131", versionHash: "2a7f66772ce3a3c57a4bb0254dcc1b4c1c485070" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -116097,12 +116097,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     852218(e, t, n) {
       "use strict";
       n.d(t, {
-        Cs: () => _,
-        KS: () => l,
-        XY: () => d,
+        Cs: () => l,
+        KS: () => o,
+        XY: () => _,
         pt: () => a,
         qn: () => s,
-        zw: () => o,
       });
       var i,
         r,
@@ -116120,10 +116119,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           (r[(r.THIRD_PARTY_OUTBOUND_RECURRING = 7)] =
             "THIRD_PARTY_OUTBOUND_RECURRING"),
           r);
-      let o = "2026-04-nitro-control",
-        l = "steelseries",
-        _ = "kontrolfreek",
-        d = "logitech";
+      let o = "steelseries",
+        l = "kontrolfreek",
+        _ = "logitech";
     },
     704591(e, t, n) {
       "use strict";
@@ -140119,8 +140117,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("90895"),
                   n.e("83518"),
                   n.e("67646"),
-                  n.e("61555"),
-                  n.e("82707"),
+                  n.e("51050"),
+                  n.e("76477"),
                   n.e("23536"),
                   n.e("39967"),
                   n.e("66636"),
@@ -140130,7 +140128,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("85216"),
                   n.e("96234"),
                   n.e("6044"),
-                  n.e("52753"),
+                  n.e("9842"),
                   n.e("18294"),
                   n.e("24639"),
                   n.e("19347"),
@@ -168138,7 +168136,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "e65bcb4abb170ec783c6c7b72d747ba43d6dcd2c",
+                    "2a7f66772ce3a3c57a4bb0254dcc1b4c1c485070",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -173961,7 +173959,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "535076",
+                  build_number: "535131",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -232897,4 +232895,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=64597.ba7dd9f61bc4eab5.js.map
+//# sourceMappingURL=64597.37c65c88a915681f.js.map

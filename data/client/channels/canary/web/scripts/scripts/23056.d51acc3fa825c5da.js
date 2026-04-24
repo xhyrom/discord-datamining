@@ -127,7 +127,7 @@
       };
     },
     907125(e, t, n) {
-      n.d(t, { x: () => M });
+      n.d(t, { x: () => m });
       var i = n(132500),
         r = n(192308),
         a = n(228366),
@@ -150,9 +150,9 @@
         R = n(834942),
         g = n(576705),
         h = n(977997),
-        m = n(147036);
-      let M = function (e, t) {
-        let M = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+        M = n(147036);
+      let m = function (e, t) {
+        let m = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
           L = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
           { lockVoiceStateForResume: D = !1, bypassIdleUpdate: y = !1 } =
             arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
@@ -164,7 +164,7 @@
           (null == P || P.canChat || (0, E.pC)(f))
         ) {
           if (null != f && !U) {
-            let e = (0, m.Pd)(f, h.A, p.A);
+            let e = (0, M.Pd)(f, h.A, p.A);
             if (e && f.isGuildStageVoice() && (0, _.xn)(f.id))
               return void (0, r.openModalLazy)(async () => {
                 let { default: e } = await Promise.all([
@@ -182,7 +182,7 @@
               });
             if (!(0, l.A)(f, g.A)) return;
           }
-          M && (0, o.PX)(),
+          m && (0, o.PX)(),
             (function (e, t, n) {
               let i = S.A.getVoiceChannelId(),
                 r = I.A.getChannel(i);
@@ -235,7 +235,7 @@
                   guildId: t,
                   channelId: e,
                   currentVoiceChannelId: S.A.getVoiceChannelId(),
-                  video: M,
+                  video: m,
                   stream: L,
                   lockVoiceStateForResume: D,
                   joinVoiceId: n,
@@ -243,7 +243,7 @@
                 });
               },
               e,
-              M,
+              m,
             );
         }
       };
@@ -282,8 +282,8 @@
             : g(e)
               ? e.message.messageId
               : e.message.data.id,
-        m = [+I.A.Millis.MINUTE, 5 * I.A.Millis.MINUTE];
-      class M extends N.A {
+        M = [+I.A.Millis.MINUTE, 5 * I.A.Millis.MINUTE];
+      class m extends N.A {
         maxSize;
         requests = new Map();
         analyticsTimeouts = new Map();
@@ -333,7 +333,7 @@
           );
         }
         startQueueMetricTimers(e) {
-          let t = m.map((e) =>
+          let t = M.map((e) =>
             setTimeout(() => {
               (0, E.zV)(C.HAw.SEND_MESSAGE_QUEUED, { queued_duration_ms: e });
             }, e),
@@ -520,7 +520,7 @@
           );
         }
       }
-      let L = new M();
+      let L = new m();
     },
     425059(e, t, n) {
       n.d(t, { A: () => s });
@@ -578,7 +578,7 @@
         FU: () => P,
         Gm: () => U,
         HU: () => O,
-        IX: () => M,
+        IX: () => m,
         Jb: () => g,
         LO: () => T,
         M1: () => y,
@@ -590,7 +590,7 @@
         YV: () => I,
         kI: () => h,
         qz: () => C,
-        ts: () => m,
+        ts: () => M,
         uS: () => d,
         uh: () => f,
       });
@@ -689,13 +689,13 @@
           alwaysShowLinkDecorations: e,
         });
       }
-      function m(e) {
+      function M(e) {
         i.h.dispatch({
           type: "ACCESSIBILITY_SET_ENABLE_CUSTOM_CURSOR",
           enableCustomCursor: e,
         });
       }
-      function M(e) {
+      function m(e) {
         i.h.dispatch({ type: "ACCESSIBILITY_SET_ROLE_STYLE", roleStyle: e }),
           a.default.track(s.HAw.ROLE_STYLE_SETTING_UPDATED, { role_style: e });
       }
@@ -1051,8 +1051,8 @@
         R = n(287809),
         g = n(927813),
         h = n(427262),
-        m = n(392054),
-        M = n(73510),
+        M = n(392054),
+        m = n(73510),
         L = n(652215),
         D = n(200700),
         y = n(381941),
@@ -1060,16 +1060,16 @@
       let U = n(743361).A,
         P = (e, t) => e.find((e) => e.name === t)?.value,
         G = {
-          [M.Ik.BUILT_IN]: {
-            id: M.Ik.BUILT_IN,
-            type: m.Hf.BUILT_IN,
+          [m.Ik.BUILT_IN]: {
+            id: m.Ik.BUILT_IN,
+            type: M.Hf.BUILT_IN,
             get name() {
               return f.intl.string(f.t.fI5MTa);
             },
           },
-          [M.Ik.FRECENCY]: {
-            id: M.Ik.FRECENCY,
-            type: m.Hf.BUILT_IN,
+          [m.Ik.FRECENCY]: {
+            id: m.Ik.FRECENCY,
+            type: M.Hf.BUILT_IN,
             get name() {
               return f.intl.string(f.t["+cGVV6"]);
             },
@@ -1082,8 +1082,8 @@
             untranslatedName: "shrug",
             displayName: "shrug",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN_TEXT,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN_TEXT,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t.j5xUSW);
             },
@@ -1113,8 +1113,8 @@
             untranslatedName: "tableflip",
             displayName: "tableflip",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN_TEXT,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN_TEXT,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t.nrQRce);
             },
@@ -1144,8 +1144,8 @@
             untranslatedName: "unflip",
             displayName: "unflip",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN_TEXT,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN_TEXT,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t.pnnn8e);
             },
@@ -1175,8 +1175,8 @@
             untranslatedName: "tts",
             displayName: "tts",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN_TEXT,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN_TEXT,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t.jZcIid);
             },
@@ -1213,8 +1213,8 @@
             untranslatedName: "me",
             displayName: "me",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN_TEXT,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN_TEXT,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t.UGO8fU);
             },
@@ -1245,8 +1245,8 @@
             untranslatedName: "spoiler",
             displayName: "spoiler",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN_TEXT,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN_TEXT,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t.v0eDdV);
             },
@@ -1277,8 +1277,8 @@
             untranslatedName: "nick",
             displayName: "nick",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t["jiHfS/"]);
             },
@@ -1320,8 +1320,8 @@
             untranslatedName: "thread",
             displayName: "thread",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t.t6ZAS0);
             },
@@ -1383,8 +1383,8 @@
             untranslatedName: "kick",
             displayName: "kick",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t["03N0UL"]);
             },
@@ -1447,8 +1447,8 @@
             untranslatedName: "ban",
             displayName: "ban",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t.HWuskv);
             },
@@ -1564,8 +1564,8 @@
             untranslatedName: "timeout",
             displayName: "timeout",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t.KkPcep);
             },
@@ -1658,8 +1658,8 @@
             untranslatedName: "msg",
             displayName: "msg",
             type: A.kc.CHAT,
-            inputType: m.y$.BUILT_IN,
-            applicationId: M.Ik.BUILT_IN,
+            inputType: M.y$.BUILT_IN,
+            applicationId: m.Ik.BUILT_IN,
             get untranslatedDescription() {
               return f.intl.string(f.t.Dg8XZw);
             },
@@ -1733,8 +1733,8 @@
             (t) =>
               e.includes(t.type) &&
               (!n ||
-                t.inputType === m.y$.BUILT_IN_TEXT ||
-                t.inputType === m.y$.BUILT_IN_INTEGRATION),
+                t.inputType === M.y$.BUILT_IN_TEXT ||
+                t.inputType === M.y$.BUILT_IN_INTEGRATION),
           );
         };
     },
@@ -2206,6 +2206,7 @@
         i.M.PREMIUM_MARKETING_MOMENT_USER_SETTINGS_OFFER_BADGE,
         i.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL,
         i.M.PIN_CHANNEL_NEW_BADGE,
+        i.M.PREMIUM_GROUP_GIFT_SELECTION_UPSELL,
         i.M.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT,
       ]);
     },
@@ -2339,8 +2340,8 @@
       n.d(t, {
         Fc: () => R,
         JS: () => p,
-        Jm: () => M,
-        Uc: () => m,
+        Jm: () => m,
+        Uc: () => M,
         VP: () => y,
         VR: () => g,
         ZG: () => O,
@@ -2443,7 +2444,7 @@
         }
         return e;
       }
-      async function m(e) {
+      async function M(e) {
         let t;
         l.h.dispatch({ type: "GAME_CONSOLE_FETCH_DEVICES_START", platform: e });
         try {
@@ -2471,7 +2472,7 @@
           n
         );
       }
-      function M(e, t) {
+      function m(e, t) {
         l.h.dispatch({
           type: "GAME_CONSOLE_SELECT_DEVICE",
           platform: e,
@@ -2824,7 +2825,7 @@
           Math.max(0, Math.min(Math.floor(e), Number.MAX_SAFE_INTEGER)),
         ).padStart(t, "0");
       }
-      let m = new r.J(
+      let M = new r.J(
           function (e) {
             return [
               e.isPrivateChannel ? g.B.PRIVATE_CHANNELS : g.B.GUILD_CHANNELS,
@@ -2844,7 +2845,7 @@
             return `${t}\0${i}\0${r}\0${a}\0${e.channelId}`;
           },
         ),
-        M = null,
+        m = null,
         L = null,
         D = !1,
         y = null,
@@ -2868,7 +2869,7 @@
         };
       }
       function G() {
-        m.clear(), (M = null), (L = null), (D = !1), (y = null);
+        M.clear(), (m = null), (L = null), (D = !1), (y = null);
       }
       function B() {
         let e = Date.now();
@@ -2878,11 +2879,11 @@
           (function (e) {
             let t = A.A.getChannelId();
             if (null != t && null != E.A.getChannel(t)) {
-              if (((M = t), !m.has(t))) {
+              if (((m = t), !M.has(t))) {
                 let n = U(t),
                   i = E.A.getChannel(t)?.lastMessageId ?? void 0,
                   r = P(t, S.B9.MANUAL, e, n, i);
-                m.set(t, r);
+                M.set(t, r);
               }
             }
           })(e),
@@ -2891,7 +2892,7 @@
               n = 0;
             for (let i of t) {
               if (n >= 3) return;
-              if (m.has(i)) continue;
+              if (M.has(i)) continue;
               let t = E.A.getChannel(i);
               if (
                 null == t ||
@@ -2905,7 +2906,7 @@
               let a = T.default.extractTimestamp(r);
               if (e - a > f) continue;
               let s = P(i, S.B9.MANUAL, e, a, r);
-              m.set(i, s), n++;
+              M.set(i, s), n++;
             }
           })(e),
           H();
@@ -2914,20 +2915,20 @@
         return o.A.getChannelId() ?? null;
       }
       function b(e) {
-        if (null == e) return m.values()[0]?.channelId ?? null;
-        for (let t of m.values()) if (t.channelId !== e) return t.channelId;
+        if (null == e) return M.values()[0]?.channelId ?? null;
+        for (let t of M.values()) if (t.channelId !== e) return t.channelId;
         return null;
       }
       function H() {
         let e = v();
-        return null != e && !D && null == M && ((M = e), !0);
+        return null != e && !D && null == m && ((m = e), !0);
       }
       function w() {
         let e,
           t = (function () {
-            if (null == M) return !1;
+            if (null == m) return !1;
             let e = v();
-            return e !== M && y === M && e !== M && ((M = b(y)), !0);
+            return e !== m && y === m && e !== m && ((m = b(y)), !0);
           })(),
           n =
             null == (e = v())
@@ -2937,13 +2938,13 @@
         return t || n || i;
       }
       function F(e) {
-        let t = m.get(e);
+        let t = M.get(e);
         if (null == t) return !1;
         let n = u.Ay.getMentionCount(e),
           i = u.Ay.hasUnread(e);
         return (
           (t.mentionCount !== n || t.hasUnread !== i) &&
-          (m.set(e, { ...t, mentionCount: n, hasUnread: i }), !0)
+          (M.set(e, { ...t, mentionCount: n, hasUnread: i }), !0)
         );
       }
       function V(e) {
@@ -2970,13 +2971,13 @@
             B();
         }
         isChannelTracked(e) {
-          return m.has(e);
+          return M.has(e);
         }
         getSessionEntries(e) {
-          return [null != e ? m.values(e) : m.values(), m.version];
+          return [null != e ? M.values(e) : M.values(), M.version];
         }
         getSelectedChannelId() {
-          return M;
+          return m;
         }
         getVoiceChatMinimized() {
           return D;
@@ -3012,17 +3013,17 @@
                   let { channelId: t, source: n } = e;
                   return (function (e, t) {
                     if (null == e) return !1;
-                    null == L && (L = Date.now()), M !== e && (M = e);
+                    null == L && (L = Date.now()), m !== e && (m = e);
                     let n = v();
                     if (
                       (null != n && e === n && D && (D = !1),
-                      null != M && !m.has(M))
+                      null != m && !M.has(m))
                     ) {
                       let e = Date.now(),
-                        n = U(M),
-                        i = E.A.getChannel(M)?.lastMessageId ?? void 0,
-                        r = P(M, t, e, n, i);
-                      m.set(M, r);
+                        n = U(m),
+                        i = E.A.getChannel(m)?.lastMessageId ?? void 0,
+                        r = P(m, t, e, n, i);
+                      M.set(m, r);
                     }
                     return !0;
                   })(t ?? null, n);
@@ -3035,11 +3036,11 @@
                           lastActivityAtMs: i,
                           lastMessageId: r,
                         } = e,
-                        a = m.get(t) ?? null,
+                        a = M.get(t) ?? null,
                         l = null == a ? i : Math.max(a.lastActivityAtMs, i),
                         s = r ?? a?.lastMessageId,
                         E = P(t, n, a?.addedOnMs ?? i, l, s);
-                      return m.set(t, E);
+                      return M.set(t, E);
                     })({
                       channelId: e.channelId,
                       source: e.source,
@@ -3047,29 +3048,29 @@
                       lastMessageId: e.lastMessageId,
                     }),
                     n = !1;
-                  return null == M && ((M = e.channelId), (n = !0)), t || n;
+                  return null == m && ((m = e.channelId), (n = !0)), t || n;
                 }),
                 OVERLAY_TEXT_CHAT_REMOVE_CHANNEL: W(function (e) {
-                  let t = m.delete(e.channelId),
+                  let t = M.delete(e.channelId),
                     n = !1;
-                  if (M === e.channelId) {
+                  if (m === e.channelId) {
                     let e = v();
-                    (M = b(e) ?? (D || null == e ? null : e)), (n = !0);
+                    (m = b(e) ?? (D || null == e ? null : e)), (n = !0);
                   }
                   return t || n;
                 }),
                 OVERLAY_TEXT_CHAT_REMOVE_ALL_CHANNELS: W(function () {
-                  let e = m.size() > 0;
-                  m.clear();
+                  let e = M.size() > 0;
+                  M.clear();
                   let t = v();
-                  return (M = D || null == t ? null : t), e;
+                  return (m = D || null == t ? null : t), e;
                 }),
                 OVERLAY_TEXT_CHAT_SET_VOICE_CHAT_MINIMIZED: W(function (e) {
                   let { minimized: t } = e;
                   if (D === t) return !1;
                   if (((D = t), !t)) return H(), !0;
                   let n = v();
-                  return null != n && M === n && (M = b(n)), !0;
+                  return null != n && m === n && (m = b(n)), !0;
                 }),
               },
         );
@@ -3714,13 +3715,13 @@
             }))
           : setInterval(g, 30 * u.A.Millis.SECOND);
         let e = a()(() => {
-          m({});
+          M({});
         }, 500);
         window.addEventListener("mouseup", e),
           window.addEventListener("wheel", e),
           window.addEventListener("keypress", e);
       }
-      function m(e) {
+      function M(e) {
         let { timestamp: t, type: n, bypassIdleUpdate: r } = e,
           a = "OVERLAY_SET_NOT_IDLE" === n && null != t;
         return (
@@ -3734,7 +3735,7 @@
           !1)
         );
       }
-      class M extends l.Ay.Store {
+      class m extends l.Ay.Store {
         initialize() {
           this.waitFor(d.default);
         }
@@ -3755,7 +3756,7 @@
           return C;
         }
       }
-      let L = new M(s.h, {
+      let L = new m(s.h, {
         IDLE: function (e) {
           N = e.idle;
         },
@@ -3764,7 +3765,7 @@
         },
         SPEAKING: function (e) {
           let { userId: t, speakingFlags: n } = e;
-          return n !== I.ME.NONE && t === d.default.getId() && m({}), !1;
+          return n !== I.ME.NONE && t === d.default.getId() && M({}), !1;
         },
         APP_STATE_UPDATE: function (e) {
           let { state: t } = e;
@@ -3772,12 +3773,12 @@
             (p = t === c.g6G.BACKGROUND), (i = null), (T = Date.now()), g(), !1
           );
         },
-        OVERLAY_SET_NOT_IDLE: m,
-        CHANNEL_SELECT: m,
-        VOICE_CHANNEL_SELECT: m,
-        WINDOW_FOCUS: m,
-        OVERLAY_INITIALIZE: m,
-        OVERLAY_SET_INPUT_LOCKED: m,
+        OVERLAY_SET_NOT_IDLE: M,
+        CHANNEL_SELECT: M,
+        VOICE_CHANNEL_SELECT: M,
+        WINDOW_FOCUS: M,
+        OVERLAY_INITIALIZE: M,
+        OVERLAY_SET_INPUT_LOCKED: M,
       });
     },
     351906(e, t, n) {
@@ -4119,7 +4120,7 @@
       let _ = new E();
     },
     861464(e, t, n) {
-      n.d(t, { A: () => m });
+      n.d(t, { A: () => M });
       var i = n(385244),
         r = n(718564),
         a = n(436857),
@@ -4171,7 +4172,7 @@
           }),
         );
       }
-      let m = {
+      let M = {
         stringify: function (e, t) {
           let n = (function (e) {
               let [t] = e.mentions ?? [];
@@ -4198,8 +4199,8 @@
               );
             case s.lAJ.RECIPIENT_REMOVE:
               if (null == n) return;
-              let m = e.author;
-              if (null == m || m.id === n.id)
+              let M = e.author;
+              if (null == M || M.id === n.id)
                 return (0, a.$)(
                   E.intl.formatToParts(E.t["Qn5+Lf"], {
                     username: R,
@@ -4215,8 +4216,8 @@
                 }),
               );
             case s.lAJ.CALL:
-              let { call: M } = e;
-              if (null != M && -1 === M.participants.indexOf(I.default.getId()))
+              let { call: m } = e;
+              if (null != m && -1 === m.participants.indexOf(I.default.getId()))
                 return (0, a.$)(
                   E.intl.formatToParts(E.t.DbgSA0, {
                     username: R,
@@ -5047,4 +5048,4 @@
     },
   },
 ]);
-//# sourceMappingURL=23056.13778bcd014f76fc.js.map
+//# sourceMappingURL=23056.d51acc3fa825c5da.js.map
