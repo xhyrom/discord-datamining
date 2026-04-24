@@ -5054,6 +5054,7 @@
               "quest_video_enrollment_retry_attempted"),
             (ev.ATT_PROMPT_RESULT = "att_prompt_result"),
             (ev.AD_VIDEO_MODAL_CLOSED = "ad_video_modal_closed"),
+            (ev.BOUNTY_CAROUSEL_SCROLL = "bounty_carousel_scroll"),
             (ev.USER_SETTINGS_KEYBIND_UPDATED =
               "user_settings_keybind_updated"),
             (ev.USER_ATTRIBUTION_RECEIVED = "user_attribution_received"),
@@ -33153,8 +33154,8 @@
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1777060201774",
-                      build_number: "534990",
+                      built_at: "1777061815574",
+                      build_number: "535024",
                     },
                   },
                   retries: 1,
@@ -61755,7 +61756,7 @@
           (s = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == a.release_channel || "" === a.release_channel) &&
             (a.release_channel = s.split("-")[0]),
-          isNaN((_ = parseInt("534990", 10))) || (a.client_build_number = _),
+          isNaN((_ = parseInt("535024", 10))) || (a.client_build_number = _),
           null == (l = O?.app.getBuildNumber()) ||
             isNaN(l) ||
             (a.native_build_number = l),
@@ -75429,7 +75430,7 @@ color: purple;
                                                                                                                                     21705:
                                                                                                                                       "0c331e8b42f44cbc",
                                                                                                                                     21738:
-                                                                                                                                      "335fcacf86b1bbec",
+                                                                                                                                      "12d5c6ce60db71dc",
                                                                                                                                     21880:
                                                                                                                                       "f5042380b4ecfdfc",
                                                                                                                                     21905:
@@ -76024,7 +76025,7 @@ color: purple;
                                                                                                                                     31876:
                                                                                                                                       "de76b4d72bedc9ae",
                                                                                                                                     31897:
-                                                                                                                                      "ccbf4068e0961ee7",
+                                                                                                                                      "9a937bf304409e22",
                                                                                                                                     31939:
                                                                                                                                       "acd8d3fa00e66ac3",
                                                                                                                                     31942:
@@ -76550,7 +76551,7 @@ color: purple;
                                                                                                                                     42455:
                                                                                                                                       "cb9f9abf6d414438",
                                                                                                                                     42516:
-                                                                                                                                      "b6c77f9a902c83ec",
+                                                                                                                                      "0e6e89c810879300",
                                                                                                                                     42549:
                                                                                                                                       "dbf83ad3de9699d4",
                                                                                                                                     42563:
@@ -77474,7 +77475,7 @@ color: purple;
                                                                                                                                       "5a7ee5f8a10b9714",
                                                                                                                                     6058: "80bf649e82cd633b",
                                                                                                                                     60649:
-                                                                                                                                      "e5df087d537cc309",
+                                                                                                                                      "bb18880483a49f6f",
                                                                                                                                     6065: "d2f9be547cd534de",
                                                                                                                                     60658:
                                                                                                                                       "7ac61a2649a3a38a",
@@ -77621,7 +77622,7 @@ color: purple;
                                                                                                                                     63401:
                                                                                                                                       "d6d8bc77fcc77d10",
                                                                                                                                     63434:
-                                                                                                                                      "1e33a27db8d6555d",
+                                                                                                                                      "e68ee9b527ce2157",
                                                                                                                                     63452:
                                                                                                                                       "e8e48fd4bba85a22",
                                                                                                                                     63480:
@@ -78312,7 +78313,7 @@ color: purple;
                                                                                                                                     77371:
                                                                                                                                       "bb83069373f11347",
                                                                                                                                     77375:
-                                                                                                                                      "27300c4e0325500b",
+                                                                                                                                      "631c2a2d0bb86bee",
                                                                                                                                     7739: "7c113b244ed1c95e",
                                                                                                                                     77415:
                                                                                                                                       "8a48bf1720b9637e",
@@ -79453,7 +79454,7 @@ color: purple;
                                                                                                                                     98955:
                                                                                                                                       "414cc0aa54c5871b",
                                                                                                                                     99011:
-                                                                                                                                      "0b8ab76be5960bc7",
+                                                                                                                                      "f20cbbed57b69d6c",
                                                                                                                                     99017:
                                                                                                                                       "0686261a1a74e68f",
                                                                                                                                     99018:
@@ -79918,4 +79919,4 @@ color: purple;
   );
   L = R.O(L);
 })();
-//# sourceMappingURL=web.060c72fbc5f0a81e.js.map
+//# sourceMappingURL=web.f95d31e943519647.js.map

@@ -51782,6 +51782,7 @@ html.disable-forced-colors * {
   --mobile-guild-folder-preview-icon-margin: 6px;
   --mobile-guild-folder-preview-opacity: 0.4px;
   --mobile-guild-item-selected-border-radius: 16px;
+  --mobile-header-icon-button-variant: secondary;
   --mobile-header-title-text-style: heading-md/bold;
   --mobile-input-field-border-width: 0px;
   --mobile-input-field-padding-vertical-sm-ios: 8px;
@@ -51908,6 +51909,7 @@ html.disable-forced-colors * {
   --mobile-guild-folder-background-radius: 16px;
   --mobile-guild-folder-background-width-offset: 8px;
   --mobile-guild-item-selected-border-radius: 12px;
+  --mobile-header-icon-button-variant: icon-only;
   --mobile-header-title-text-style: heading-lg/semibold;
   --mobile-input-field-border-width: 1px;
   --mobile-input-field-padding-vertical-sm-ios: 4px;
@@ -51995,4 +51997,4 @@ html.disable-forced-colors * {
   --channels-spine-offset-left: 28px;
 }
 
-/*# sourceMappingURL=72667.d8bf600441cd0b25.css.map*/
+/*# sourceMappingURL=72667.f2924cce77732a3a.css.map*/

@@ -27518,13 +27518,11 @@ ${s}`),
             a = [];
           switch (n) {
             case "horizontal":
-              (s = ["ArrowRight"]), (a = ["ArrowLeft"]);
-              break;
-            case "vertical":
-              (s = ["ArrowUp"]), (a = ["ArrowDown"]);
-              break;
             default:
               (s = ["ArrowRight", "ArrowUp"]), (a = ["ArrowLeft", "ArrowDown"]);
+              break;
+            case "vertical":
+              (s = ["ArrowUp", "ArrowRight"]), (a = ["ArrowDown", "ArrowLeft"]);
           }
           a.includes(r)
             ? (e.preventDefault(), e.stopPropagation(), this.moveGrabber(-i))
@@ -33489,7 +33487,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534990, Version Hash: ca5bafad84667ead4c1ba83ef62f43b785381646`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 535024, Version Hash: 09303b63e528e5f571b2c39d93cfd81f698f91f4`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -57473,7 +57471,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "ca5bafad84667ead4c1ba83ef62f43b785381646" === e.body.hash
+                  "09303b63e528e5f571b2c39d93cfd81f698f91f4" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -65402,10 +65400,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534990")),
+                ((e = parseInt("535024")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534990",
+                    "Trying to open a changelog for an invalid build number 535024",
                   ),
                   (e = 0)),
                 e),
@@ -98800,7 +98798,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534990", versionHash: "ca5bafad84667ead4c1ba83ef62f43b785381646" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535024", versionHash: "09303b63e528e5f571b2c39d93cfd81f698f91f4" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -253048,7 +253046,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "ca5bafad84667ead4c1ba83ef62f43b785381646",
+                    "09303b63e528e5f571b2c39d93cfd81f698f91f4",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259278,7 +259276,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534990",
+                  build_number: "535024",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -277938,6 +277936,8 @@ ${o.join(" +\n")}
       }
       function f() {
         return (0, i.jsxs)("svg", {
+          "aria-hidden": "true",
+          focusable: "false",
           className: h.radioIndicator,
           width: 20,
           height: 20,
@@ -278134,6 +278134,8 @@ ${o.join(" +\n")}
           className: h.C4,
           children: [
             (0, i.jsxs)("svg", {
+              "aria-hidden": "true",
+              focusable: "false",
               className: a()(h.$l, n, { [h.mn]: t, [h.Rk]: s }),
               viewBox: "0 0 24 24",
               children: [
@@ -280370,7 +280372,7 @@ ${o.join(" +\n")}
                 children: (0, i.jsx)(o.a, { size: n, color: "currentColor" }),
               }),
             })
-          : (0, i.jsx)("span", {});
+          : (0, i.jsx)("span", { "aria-hidden": !0 });
       }
       function h(e) {
         let { show: t, isOpen: n, onClick: r } = e;
@@ -316132,6 +316134,15 @@ Total Time: ${o}ms
                   return 16;
                 },
               },
+              HEADER_ICON_BUTTON_VARIANT: {
+                resolve(e) {
+                  let { enabledExperiments: t } = e;
+                  if (0 === t.length) return "secondary";
+                  for (let e of t)
+                    if ("mobile-visual-refresh" === e) return "icon-only";
+                  return "secondary";
+                },
+              },
               HEADER_TITLE_TEXT_STYLE: {
                 resolve(e) {
                   let { enabledExperiments: t } = e;
@@ -327831,4 +327842,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=72667.b854591ee96dea0a.js.map
+//# sourceMappingURL=72667.245dd2611590130d.js.map
