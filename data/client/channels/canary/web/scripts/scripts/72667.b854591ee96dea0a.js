@@ -33489,7 +33489,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534943, Version Hash: d8ebe43e6d175f5be91c1e2dc86d2274b22d610a`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534990, Version Hash: ca5bafad84667ead4c1ba83ef62f43b785381646`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -57473,7 +57473,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "d8ebe43e6d175f5be91c1e2dc86d2274b22d610a" === e.body.hash
+                  "ca5bafad84667ead4c1ba83ef62f43b785381646" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -65402,10 +65402,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534943")),
+                ((e = parseInt("534990")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534943",
+                    "Trying to open a changelog for an invalid build number 534990",
                   ),
                   (e = 0)),
                 e),
@@ -98800,7 +98800,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534943", versionHash: "d8ebe43e6d175f5be91c1e2dc86d2274b22d610a" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534990", versionHash: "ca5bafad84667ead4c1ba83ef62f43b785381646" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -109927,7 +109927,7 @@ ${t.join("\n")}`);
     },
     375441(e, t, n) {
       "use strict";
-      n.d(t, { ni: () => i.ni, sz: () => r });
+      n.d(t, { ag: () => i.ag, sz: () => r });
       var i = n(445397);
       let r = "__installation__";
     },
@@ -109973,7 +109973,7 @@ ${t.join("\n")}`);
                 for (let [t, i] of Object.entries(e))
                   n[t] = {
                     system: a.l5.APEX,
-                    kind: i.unitType === d.ni.User ? "user" : "guild",
+                    kind: d.ag[i.unitType],
                     name: i.name,
                     title: i.title,
                     variants: i.variants.map((e) => ({
@@ -253048,7 +253048,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "d8ebe43e6d175f5be91c1e2dc86d2274b22d610a",
+                    "ca5bafad84667ead4c1ba83ef62f43b785381646",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259278,7 +259278,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534943",
+                  build_number: "534990",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -327831,4 +327831,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=72667.6233b142b151fe76.js.map
+//# sourceMappingURL=72667.b854591ee96dea0a.js.map
