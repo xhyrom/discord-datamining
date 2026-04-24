@@ -1,55 +1,61 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["16572"],
+  ["74524"],
   {
+    207378(e, t, n) {
+      n.d(t, { A: () => r });
+      function r(e) {
+        return null;
+      }
+    },
     854378(e, t, n) {
       n.d(t, {
-        $v: () => I,
+        $v: () => b,
         Ay: () => F,
-        CK: () => D,
-        F4: () => L,
-        KE: () => P,
-        ME: () => K,
-        R1: () => O,
-        _V: () => M,
-        eB: () => N,
-        eu: () => T,
-        hE: () => v,
-        pd: () => b,
-        tK: () => k,
-        xt: () => x,
+        CK: () => P,
+        F4: () => T,
+        KE: () => R,
+        ME: () => N,
+        R1: () => x,
+        _V: () => k,
+        eB: () => I,
+        eu: () => L,
+        hE: () => w,
+        pd: () => K,
+        tK: () => M,
+        xt: () => D,
       });
       var r = n(627968);
       n(64700);
       var i = n(503698),
         a = n.n(i),
         l = n(97808),
-        o = n(534514),
-        s = n(834730),
+        s = n(534514),
+        o = n(834730),
         u = n(778712),
         d = n(292666),
         c = n(821609),
         h = n(43990),
-        p = n(571694),
-        y = n(902811),
+        y = n(571694),
+        p = n(902811),
         f = n(235986),
         m = n(915089),
-        _ = n(548118),
-        E = n(53505),
-        C = n(975571),
-        g = n(652215),
-        A = n(985018),
+        E = n(548118),
+        _ = n(53505),
+        g = n(975571),
+        C = n(652215),
+        v = n(985018),
         S = n(337321);
-      let w = l.eu;
-      null == w && (w = () => null);
-      let v = (e) => {
+      let A = l.eu;
+      null == A && (A = () => null);
+      let w = (e) => {
           let {
             className: t,
             id: n,
             children: i,
             variant: l = "heading-xl/semibold",
           } = e;
-          return (0, r.jsx)(o.D, {
+          return (0, r.jsx)(s.D, {
             variant: l,
             color: "text-strong",
             className: a()(S.DD, t),
@@ -57,16 +63,16 @@
             children: i,
           });
         },
-        k = (e) => {
+        M = (e) => {
           let { className: t, children: n } = e;
-          return (0, r.jsx)(s.E, {
+          return (0, r.jsx)(o.E, {
             variant: "text-md/normal",
             color: "text-default",
             className: t,
             children: n,
           });
         },
-        M = (e) => {
+        k = (e) => {
           let { className: t, src: n } = e;
           return (0, r.jsx)("img", {
             alt: "",
@@ -74,18 +80,18 @@
             className: a()(S.Sl, t),
           });
         },
-        T = (e) => {
+        L = (e) => {
           let { className: t, src: n, size: i } = e;
-          return (0, r.jsx)(w, {
+          return (0, r.jsx)(A, {
             src: n,
             size: i,
             className: a()(S.yt, t),
             "aria-hidden": !0,
           });
         },
-        I = (e) => {
+        b = (e) => {
           let { guild: t, size: n, animate: i = !1, className: a } = e;
-          return (0, r.jsx)(_.Ay, {
+          return (0, r.jsx)(E.Ay, {
             active: !0,
             guild: t,
             size: n,
@@ -93,112 +99,112 @@
             className: a,
           });
         };
-      I.Sizes = _.Ay.Sizes;
-      let L = (e) => {
+      b.Sizes = E.Ay.Sizes;
+      let T = (e) => {
         let { className: t, channel: n, size: i } = e;
-        return (0, r.jsx)(w, {
-          src: (0, p.Y)(n),
+        return (0, r.jsx)(A, {
+          src: (0, y.Y)(n),
           size: i,
           className: a()(S.TP, t),
           "aria-hidden": !0,
         });
       };
-      L.Sizes = u._3;
-      let b = (e) => {
+      T.Sizes = u._3;
+      let K = (e) => {
           let {
               label: t,
               error: n,
               placeholder: i,
               value: a,
               className: l,
-              setRef: o,
-              type: s = "text",
+              setRef: s,
+              type: o = "text",
               onChange: u,
               autoComplete: c,
               autoFocus: h,
-              maxLength: p,
-              spellCheck: y,
+              maxLength: y,
+              spellCheck: p,
               name: f,
-              description: _,
-              required: E,
-              onFocus: C,
-              onBlur: g,
+              description: E,
+              required: _,
+              onFocus: g,
+              onBlur: C,
             } = e,
-            A = (0, m.GV)(),
+            v = (0, m.GV)(),
             S = (0, r.jsx)(d.k, {
               name: f,
-              type: s,
+              type: o,
               value: a,
-              inputRef: o,
+              inputRef: s,
               placeholder: i,
               "aria-label": t,
               onChange: u,
               autoComplete: c,
               autoFocus: h,
-              maxLength: p,
-              spellCheck: y,
-              id: A,
-              onFocus: C,
-              onBlur: g,
+              maxLength: y,
+              spellCheck: p,
+              id: v,
+              onFocus: g,
+              onBlur: C,
               label: t,
               error: n,
-              required: E,
-              description: _,
+              required: _,
+              description: E,
             });
           return null != l
             ? (0, r.jsx)("div", { className: l, children: S })
             : S;
         },
-        N = (e) => {
+        I = (e) => {
           let { className: t, children: n } = e;
           return (0, r.jsx)("div", { className: a()(S.om, t), children: n });
         },
-        K = (e) => {
+        N = (e) => {
           let { className: t, children: n } = e;
-          return (0, r.jsx)(s.E, {
+          return (0, r.jsx)(o.E, {
             variant: "text-xs/normal",
             className: a()(S.Sv, t),
             children: n,
           });
         },
-        D = (e) => {
+        P = (e) => {
           let { className: t } = e;
           return (0, r.jsx)(f.A, {
             direction: f.A.Direction.VERTICAL,
             align: f.A.Align.CENTER,
             className: t,
-            children: (0, r.jsx)(y.A, { className: S.$$ }),
+            children: (0, r.jsx)(p.A, { className: S.$$ }),
           });
         },
-        R = (e) =>
-          (0, r.jsx)(s.E, {
+        O = (e) =>
+          (0, r.jsx)(o.E, {
             tag: "span",
             className: e?.className,
             variant: "text-sm/normal",
             color: "text-default",
             children: e?.children,
           }),
-        O = (e) => {
+        x = (e) => {
           let t,
             {
               online: n,
               total: i,
               className: l,
-              flat: o,
-              textClassName: s,
-              renderText: u = R,
+              flat: s,
+              textClassName: o,
+              renderText: u = O,
             } = e;
           return null == i
             ? null
             : (null != n &&
                 n > 0 &&
                 (t = (0, r.jsxs)("div", {
-                  className: a()(S.Io, S.L1, o && S.Z6),
+                  className: a()(S.Io, S.L1, s && S.Z6),
                   children: [
                     (0, r.jsx)("i", { className: S._o }),
                     u({
-                      className: s,
-                      children: A.intl.format(A.t["LC+S+m"], {
+                      className: o,
+                      children: v.intl.format(v.t["LC+S+m"], {
                         membersOnline: n,
                       }),
                     }),
@@ -210,38 +216,38 @@
                 children: [
                   t,
                   (0, r.jsxs)("div", {
-                    className: a()(S.Io, o && S.Z6),
+                    className: a()(S.Io, s && S.Z6),
                     children: [
                       (0, r.jsx)("i", { className: S.jk }),
                       u({
-                        className: s,
-                        children: A.intl.format(A.t.zRl6XR, { count: i }),
+                        className: o,
+                        children: v.intl.format(v.t.zRl6XR, { count: i }),
                       }),
                     ],
                   }),
                 ],
               }));
         },
-        x = (e) => {
+        D = (e) => {
           let { user: t } = e;
           return null == t
             ? null
             : (0, r.jsxs)("div", {
                 className: S.l1,
                 children: [
-                  (0, r.jsx)(s.E, {
+                  (0, r.jsx)(o.E, {
                     tag: "span",
                     variant: "text-md/normal",
                     color: "text-default",
-                    children: A.intl.string(A.t["/8WWvE"]),
+                    children: v.intl.string(v.t["/8WWvE"]),
                   }),
-                  (0, r.jsx)(T, {
+                  (0, r.jsx)(L, {
                     className: S.yj,
                     src: t.getAvatarURL(void 0, 24),
                     size: u._3.SIZE_24,
                     "aria-label": t.username,
                   }),
-                  (0, r.jsx)(s.E, {
+                  (0, r.jsx)(o.E, {
                     className: S.pp,
                     tag: "span",
                     variant: "text-md/semibold",
@@ -251,22 +257,22 @@
                 ],
               });
         },
-        P = (e) => {
+        R = (e) => {
           let { className: t } = e;
-          return (0, r.jsxs)(N, {
+          return (0, r.jsxs)(I, {
             className: t,
             children: [
               (0, r.jsx)(c.$, {
-                text: A.intl.format(A.t.JoS1i3, { platform: (0, E.Vf)() }),
+                text: v.intl.format(v.t.JoS1i3, { platform: (0, _.Vf)() }),
                 variant: "secondary",
                 fullWidth: !0,
-                onClick: () => window.open((0, E.SU)()),
+                onClick: () => window.open((0, _.SU)()),
               }),
-              (0, r.jsx)(K, {
+              (0, r.jsx)(N, {
                 className: S.UM,
-                children: A.intl.format(A.t.wO1VBk, {
-                  supportedBrowserURL: C.A.getArticleURL(
-                    g.MVz.SUPPORTED_BROWSERS,
+                children: v.intl.format(v.t.wO1VBk, {
+                  supportedBrowserURL: g.A.getArticleURL(
+                    C.MVz.SUPPORTED_BROWSERS,
                   ),
                 }),
               }),
@@ -279,9 +285,9 @@
             contentClassName: n,
             tag: i = "section",
             onSubmit: l,
-            children: o,
-            expanded: s = !1,
-            theme: u = g.NJ8.DARK,
+            children: s,
+            expanded: o = !1,
+            theme: u = C.NJ8.DARK,
             style: d,
           } = e;
           return (0, r.jsx)(h.N, {
@@ -292,10 +298,10 @@
                 "data-theme": u,
                 onSubmit: l,
                 style: d,
-                className: a()(s ? S.PR : S.sL, e, t),
+                className: a()(o ? S.PR : S.sL, e, t),
                 children: [
                   (0, r.jsx)("div", { className: S.ie }),
-                  (0, r.jsx)("div", { className: a()(S.f4, n), children: o }),
+                  (0, r.jsx)("div", { className: a()(S.f4, n), children: s }),
                 ],
               }),
           });
@@ -303,23 +309,23 @@
     },
     436317() {},
     713517(e, t, n) {
-      n.d(t, { A: () => l, M: () => o });
+      n.d(t, { A: () => l, M: () => s });
       var r = n(64700),
         i = n(17928),
         a = n(775602);
       function l(e) {
         let [t, n] = r.useState(!1),
-          [l, o] = r.useState(!1),
-          s = (0, i.bG)([a.A], () => a.A.keyboardModeEnabled);
+          [l, s] = r.useState(!1),
+          o = (0, i.bG)([a.A], () => a.A.keyboardModeEnabled);
         r.useEffect(() => {
           let t = e.current;
           if (null == t) return;
-          n(!1), o(!1);
+          n(!1), s(!1);
           let r = () => n(!0),
             i = () => n(!1),
-            a = () => o(!0),
+            a = () => s(!0),
             l = (e) => {
-              t.contains(e.relatedTarget) || o(!1);
+              t.contains(e.relatedTarget) || s(!1);
             };
           return (
             t.addEventListener("mouseenter", r),
@@ -334,10 +340,10 @@
             }
           );
         }, [e]);
-        let u = s && l;
+        let u = o && l;
         return { isHovering: t, isFocusing: u, isHoveringOrFocusing: t || u };
       }
-      function o(e) {
+      function s(e) {
         let [t, n] = r.useState(!1);
         return (
           r.useEffect(() => {
@@ -364,19 +370,19 @@
         i = n(228366),
         a = n(376728),
         l = n(439372),
-        o = n(495544),
-        s = n(723702),
+        s = n(495544),
+        o = n(723702),
         u = n(652215);
       let d = "guestInviteToAccept";
       class c extends l.A {
         actions = { POST_CONNECTION_OPEN: () => this.handleConnectionOpen() };
         handleConnectionOpen = async () => {
-          if ((0, s.isWeb)()) {
+          if ((0, o.isWeb)()) {
             let e = r.u.get(d);
             if (
               null != e &&
               "string" == typeof e &&
-              o.default.isAuthenticated()
+              s.default.isAuthenticated()
             ) {
               let { invite: t } = await a.Ay.resolveInvite(e, "Desktop Modal");
               null != t &&
@@ -393,260 +399,6 @@
       }
       let h = new c();
     },
-    454938(e, t, n) {
-      n.d(t, { A: () => l });
-      var r = n(426983),
-        i = n(176128);
-      let a = new Set([
-        r._.PARTNERED,
-        r._.VERIFIED,
-        r._.VERIFIED_AND_PARTNERED,
-        r._.COMMUNITY,
-        r._.DISCOVERABLE,
-      ]);
-      function l(e) {
-        if (null == e) return !1;
-        let t = (0, i.Jp)(e),
-          n = (0, r.K)(t);
-        return a.has(n);
-      }
-    },
-    57991(e, t, n) {
-      n.d(t, { A: () => x });
-      var r = n(627968),
-        i = n(64700),
-        a = n(503698),
-        l = n.n(a),
-        o = n(17928),
-        s = n(661531),
-        u = n(462887),
-        d = n(306471),
-        c = n(478016),
-        h = n(565787),
-        p = n(332837),
-        y = n(998445),
-        f = n(834730),
-        m = n(781696),
-        _ = n(939249),
-        E = n(404374),
-        C = n(509536),
-        g = n(496885),
-        A = n(363195),
-        S = n(696451),
-        w = n(287809),
-        v = n(816166),
-        k = n(813098),
-        M = n(473145),
-        T = n(426983),
-        I = n(176128),
-        L = n(981883),
-        b = n(652215),
-        N = n(985018),
-        K = n(40544);
-      let D = {
-        [T._.STAFF]: {
-          IconComponent: d.V,
-          foregroundDarkColor: s.A.unsafe_rawColors.WHITE.css,
-          foregroundLightColor: s.A.unsafe_rawColors.WHITE.css,
-          backgroundDarkColor: s.A.unsafe_rawColors.GREEN_360.css,
-          backgroundLightColor: s.A.unsafe_rawColors.GREEN_360.css,
-        },
-        [T._.VERIFIED_AND_PARTNERED]: {
-          IconComponent: c.U,
-          foregroundDarkColor: s.A.unsafe_rawColors.WHITE.css,
-          foregroundLightColor: s.A.unsafe_rawColors.WHITE.css,
-          backgroundDarkColor: s.A.unsafe_rawColors.GREEN_360.css,
-          backgroundLightColor: s.A.unsafe_rawColors.GREEN_360.css,
-        },
-        [T._.VERIFIED]: {
-          IconComponent: c.U,
-          foregroundDarkColor: s.A.unsafe_rawColors.WHITE.css,
-          foregroundLightColor: s.A.unsafe_rawColors.WHITE.css,
-          backgroundDarkColor: s.A.unsafe_rawColors.GREEN_360.css,
-          backgroundLightColor: s.A.unsafe_rawColors.GREEN_360.css,
-        },
-        [T._.PARTNERED]: {
-          IconComponent: (0, h.k)(v.A),
-          foregroundDarkColor: s.A.unsafe_rawColors.WHITE.css,
-          foregroundLightColor: s.A.unsafe_rawColors.WHITE.css,
-          backgroundDarkColor: s.A.unsafe_rawColors.BRAND_500.css,
-          backgroundLightColor: s.A.unsafe_rawColors.BRAND_500.css,
-        },
-        [T._.COMMUNITY]: {
-          IconComponent: p.f,
-          foregroundDarkColor: s.A.unsafe_rawColors.PRIMARY_500.css,
-          foregroundLightColor: s.A.unsafe_rawColors.WHITE.css,
-          backgroundDarkColor: s.A.unsafe_rawColors.WHITE.css,
-          backgroundLightColor: s.A.unsafe_rawColors.PRIMARY_500.css,
-          premiumBackgroundColor: E.k0.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
-          premiumForegroundColor: s.A.unsafe_rawColors.WHITE.css,
-          sizeAdjustment: 2,
-        },
-        [T._.DISCOVERABLE]: {
-          IconComponent: y.L,
-          foregroundDarkColor: s.A.unsafe_rawColors.PRIMARY_500.css,
-          foregroundLightColor: s.A.unsafe_rawColors.WHITE.css,
-          backgroundDarkColor: s.A.unsafe_rawColors.WHITE.css,
-          backgroundLightColor: s.A.unsafe_rawColors.PRIMARY_500.css,
-          premiumBackgroundColor: E.k0.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
-          premiumForegroundColor: s.A.unsafe_rawColors.WHITE.css,
-          sizeAdjustment: 2,
-        },
-        [T._.NONE]: {},
-      };
-      function R(e) {
-        let { guildTraits: t } = e;
-        return (0, r.jsxs)("div", {
-          className: K.V8,
-          children: [
-            (0, r.jsxs)("div", {
-              className: l()(K.f, K.N5),
-              children: [
-                (0, r.jsx)(k.A, { width: 18, height: 18, className: K.F8 }),
-                (0, r.jsx)(f.E, {
-                  variant: "text-xs/semibold",
-                  color: "always-white",
-                  children: M.gb(t.premiumTier),
-                }),
-              ],
-            }),
-            (0, r.jsx)("div", {
-              className: K.f,
-              children: (0, r.jsx)(f.E, {
-                variant: "text-xs/semibold",
-                color: "always-white",
-                children: N.intl.format(N.t["dR/SVH"], {
-                  count: t.premiumSubscriberCount,
-                }),
-              }),
-            }),
-          ],
-        });
-      }
-      function O(e) {
-        let { badgeType: t, guildTraits: n } = e,
-          {
-            tooltipTitle: i,
-            tooltipSubtitle: a,
-            tooltipDescription: l,
-          } = (0, L.V)(t, n.visibility);
-        return (0, r.jsxs)(r.Fragment, {
-          children: [
-            (0, r.jsxs)("div", {
-              className: K.Rf,
-              children: [
-                (0, r.jsx)(f.E, {
-                  color: "interactive-text-active",
-                  variant: "text-xs/bold",
-                  children: i,
-                }),
-                null != a
-                  ? (0, r.jsx)(f.E, {
-                      color: "text-muted",
-                      variant: "text-xs/medium",
-                      children: a,
-                    })
-                  : null,
-                null != l
-                  ? (0, r.jsx)(f.E, {
-                      color: "text-muted",
-                      variant: "text-xs/medium",
-                      children: l,
-                    })
-                  : null,
-              ],
-            }),
-            n.premium ? (0, r.jsx)(R, { guildTraits: n }) : null,
-          ],
-        });
-      }
-      function x(e) {
-        let t,
-          n,
-          {
-            guild: a,
-            tooltipColor: l = m.ST.Colors.BRAND,
-            tooltipPosition: s,
-            className: d,
-            flowerStarClassName: c,
-            iconClassName: h,
-            badgeStrokeColor: p,
-            badgeColor: y,
-            disableBoostClick: f,
-            "aria-label": E = !1,
-            ...v
-          } = e,
-          k = v.size ?? 18,
-          M = (0, o.bG)([w.default, S.Ay], () => {
-            let e = w.default.getCurrentUser();
-            return S.Ay.isMember(a?.id, e?.id);
-          }),
-          L = (0, o.bG)([A.A], () => A.A.theme),
-          N = (0, I.Jp)(a),
-          R = (0, T.K)(N),
-          x = i.useMemo(() => N.premium && M && !f, [f, N.premium, M]),
-          P = i.useCallback(
-            (e) => {
-              x &&
-                (e.stopPropagation(),
-                e.preventDefault(),
-                (0, C.K4)({
-                  guildId: a.id,
-                  location: {
-                    section: b.JJy.GUILD_HEADER,
-                    object: b.ZSU.BOOST_GEM_ICON,
-                  },
-                }));
-            },
-            [x, a.id],
-          );
-        if (R === T._.NONE) return null;
-        let {
-          IconComponent: F,
-          backgroundDarkColor: j,
-          backgroundLightColor: U,
-          foregroundDarkColor: B,
-          foregroundLightColor: G,
-          premiumBackgroundColor: z,
-          premiumForegroundColor: H,
-          sizeAdjustment: V,
-        } = D[R];
-        if (null == F) return null;
-        N.premium && ((t = H), (n = z));
-        let W = (0, u.M)(L) ? B : G,
-          $ = (0, u.M)(L) ? j : U;
-        (t = t ?? W), (n = n ?? $);
-        let Y = Math.floor(0.75 * k) - (V ?? 0);
-        return (0, r.jsx)(m.ST, {
-          color: l,
-          position: s,
-          "aria-label": E,
-          text: (0, r.jsx)(O, { badgeType: R, guildTraits: N }),
-          tooltipContentClassName: K.Hj,
-          children: (e) =>
-            (0, r.jsx)(_.D, {
-              onClick: P,
-              tabIndex: x ? 0 : -1,
-              children: (0, r.jsx)(g.A, {
-                ...e,
-                className: d,
-                flowerStarClassName: c,
-                allowFullSizedIcon: !0,
-                color: n ?? y,
-                stroke: p,
-                size: k,
-                children: (0, r.jsx)(F, {
-                  size: "custom",
-                  width: Y,
-                  height: Y,
-                  className: h,
-                  color: t ?? "currentColor",
-                }),
-              }),
-            }),
-        });
-      }
-    },
     470348(e, t, n) {
       n.d(t, { A: () => a, r: () => i });
       let r = (0, n(945810).mj)({
@@ -662,7 +414,7 @@
       let a = r;
     },
     172799(e, t, n) {
-      n.d(t, { QR: () => u, Xd: () => l, uR: () => o, yV: () => s });
+      n.d(t, { QR: () => u, Xd: () => l, uR: () => s, yV: () => o });
       var r,
         i,
         a,
@@ -671,8 +423,8 @@
           (r[(r.GROUP_DM = 1)] = "GROUP_DM"),
           (r[(r.FRIEND = 2)] = "FRIEND"),
           r);
-      let o = new Set([0, 1]);
-      var s =
+      let s = new Set([0, 1]);
+      var o =
           (((i = {})[(i.STREAM = 1)] = "STREAM"),
           (i[(i.EMBEDDED_APPLICATION = 2)] = "EMBEDDED_APPLICATION"),
           (i[(i.ROLE_SUBSCRIPTIONS_PURCHASE = 3)] =
@@ -681,7 +433,7 @@
         u = (((a = {}).MAIN = "main"), (a.SETTINGS = "settings"), a);
     },
     426620(e, t, n) {
-      n.d(t, { A: () => s });
+      n.d(t, { A: () => o });
       var r = n(17928),
         i = n(228366);
       let a = null;
@@ -698,30 +450,16 @@
           return { type: a };
         }
       }
-      let o = new l(i.h, {
+      let s = new l(i.h, {
           NUF_NEW_USER: function (e) {
             let { newUserType: t } = e;
-            (a = t), o.persist();
+            (a = t), s.persist();
           },
           NUF_COMPLETE: function () {
-            (a = null), o.persist();
+            (a = null), s.persist();
           },
         }),
-        s = o;
-    },
-    116891(e, t, n) {
-      n.d(t, { eT: () => l, fj: () => i });
-      var r = n(250105);
-      let i = "1080p",
-        a = (0, r.Ay)({
-          name: "2026-04-server-boost-copy-1440p",
-          kind: "user",
-          defaultConfig: { streamQualityMarketingResolution: i },
-          variations: { 1: { streamQualityMarketingResolution: "1440p" } },
-        });
-      function l(e) {
-        return a.getConfig({ location: e }).streamQualityMarketingResolution;
-      }
+        o = s;
     },
     658128(e, t, n) {
       n.d(t, { W: () => h });
@@ -729,15 +467,15 @@
         i = n(473529),
         a = n(871123),
         l = n(734057),
-        o = n(808728),
-        s = n(309010),
+        s = n(808728),
+        o = n(309010),
         u = n(567761),
         d = n(652215),
         c = n(746080);
       function h(e) {
-        let t = s.A.getChannelId(e),
+        let t = o.A.getChannelId(e),
           n =
-            o.Ay.getDefaultChannel(e)?.id ??
+            s.Ay.getDefaultChannel(e)?.id ??
             (function (e) {
               if (e !== d.ME) return;
               let t = u.default.getPrivateChannelIds();
@@ -753,174 +491,106 @@
           : n;
       }
     },
-    533406(e, t, n) {
-      n.d(t, {
-        B: () => m,
-        a: () =>
-          function e(t, n) {
-            let {
-                isGift: r,
-                giftRecipient: a,
-                giftingOrigin: u,
-                additionalUserIds: m,
-              } = n,
-              {
-                discoverySessionId: _,
-                analyticsLocations: E,
-                guildId: C,
-                isEligibilityCheckContinuation: g,
-                checkoutState: A,
-              } = arguments.length > 2 && void 0 !== arguments[2]
-                ? arguments[2]
-                : {},
-              S = h.A.getSKUEligibilityEntry(t.id),
-              w = S?.state,
-              v =
-                !r &&
-                null != C &&
-                (null == w || "checking" === w || "ineligible" === w);
-            if (!v && !g) {
-              let e = "none";
-              r
-                ? (e = "gift")
-                : null == C
-                  ? (e = "no_guild")
-                  : "eligible" === w
-                    ? (e = "already_eligible")
-                    : "error" === w && (e = "prior_error"),
-                c.default.track(
-                  y.HAw.SLAYER_STOREFRONT_PURCHASE_ELIGIBILITY_SKIPPED,
-                  {
-                    sku_id: t.id,
-                    guild_id: C ?? null,
-                    application_id: t.applicationId,
-                    is_gift: r,
-                    eligibility_state: w ?? "none",
-                    skip_reason: e,
-                    error_http_status:
-                      S?.state === "error" ? (S.httpStatus ?? null) : null,
-                    location_stack: E,
-                  },
-                );
-            }
-            let k = A ?? { hasFinished: !1 };
-            if (v)
-              return void (0, p.L)({
-                guildId: C,
-                skuId: t.id,
-                analyticsLocations: E ?? [],
-                onContinue: () => {
-                  if (!k.hasFinished)
-                    return e(
-                      t,
-                      {
-                        isGift: r,
-                        giftRecipient: a,
-                        giftingOrigin: u,
-                        additionalUserIds: m,
-                      },
-                      {
-                        discoverySessionId: _,
-                        analyticsLocations: E,
-                        guildId: C,
-                        isEligibilityCheckContinuation: !0,
-                        checkoutState: k,
-                      },
-                    );
-                },
-              });
-            let M = !1,
-              T = (0, i.A)();
-            f({
-              loadId: T,
-              discoverySessionId: _,
-              skuId: t.id,
-              applicationId: t.applicationId,
-              analyticsLocations: E ?? [],
-              isGift: r,
-              giftRecipient: a,
-              giftingOrigin: u,
-              additionalUserIds: m,
-              onCloseCallback: () => {
-                if (!M) {
-                  let e = (0, d.q1)({
-                    location: "SocialLayerStorefrontPaymentModal",
-                    unifiedCheckoutFlow: s.C.SLAYER_STOREFRONT_CHECKOUT,
-                  });
-                  c.default.track(y.HAw.PAYMENT_FLOW_CANCELED, {
-                    load_id: T,
-                    discovery_session_id: _,
-                    payment_type: y.frM[y.VVm.ONE_TIME],
-                    is_gift: r,
-                    sku_id: t.id,
-                    application_id: t.applicationId,
-                    location_stack: E,
-                    sku_product_line: t.productLine,
-                    checkout_design: e ? d.rS.UNIFIED : d.rS.LEGACY,
-                    checkout_flow: s.C.SLAYER_STOREFRONT_CHECKOUT,
-                  });
-                }
-                (0, l.ET)(), (0, o.z)(), (0, p.l)(), (k.hasFinished = !0);
-              },
-              onComplete: () => {
-                (M = !0), (k.hasFinished = !0);
-              },
-              modalKey: "slayer-payment-modal",
-            });
-          },
-      });
+    342296(e, t, n) {
+      n.d(t, { A: () => _, S: () => p });
       var r = n(627968),
-        i = n(132500),
-        a = n(192308),
-        l = n(391048),
-        o = n(636099),
-        s = n(120700),
-        u = n(226991),
-        d = n(742810),
-        c = n(954571),
-        h = n(832163),
-        p = n(556808),
-        y = n(652215);
-      let f = (e) => {
+        i = n(64700),
+        a = n(17928),
+        l = n(778712),
+        s = n(922016),
+        o = n(335180),
+        u = n(287809),
+        d = n(454719),
+        c = n(589022),
+        h = n(518477),
+        y = n(818348);
+      let p = (0, l.FT)(l._3.SIZE_80),
+        f = {
+          onMouseDown: y.tE,
+          onClick: y.tE,
+          onKeyDown: y.tE,
+          "aria-controls": void 0,
+          "aria-expanded": !1,
+        },
+        m = { isShown: !1, position: void 0 };
+      function E(e) {
         let {
-          loadId: t,
-          discoverySessionId: n,
-          applicationId: r,
-          skuId: i,
-          analyticsLocations: a,
-          isGift: l,
-          giftRecipient: o,
-          additionalUserIds: s,
-          giftingOrigin: d,
-          onCloseCallback: c,
-          onComplete: h,
-          modalKey: p,
-        } = e;
-        return (0, u.KY)().openCheckoutModal({
-          loadId: t,
-          discoverySessionId: n,
-          applicationId: r,
-          skuId: i,
-          analyticsLocations: a,
-          onComplete: h,
-          giftContextProps: {
-            isGift: l,
-            giftRecipient: o,
-            giftingOrigin: d,
-            additionalUserIds: s,
-          },
-          openModalOptions: { modalKey: p, onCloseCallback: c },
+            children: t,
+            user: n,
+            currentUser: a,
+            guildId: l,
+            channelId: u,
+            messageId: y,
+            roleId: f,
+            disableUserProfileLink: m,
+            newAnalyticsLocations: E,
+            appContext: _,
+            avatarUrl: g,
+            preload: C,
+            renderPopout: v,
+            onRequestOpen: S,
+            onRequestClose: A,
+            onClosePopout: w,
+            shouldShow: M,
+            shouldPreload: k = !0,
+            ...L
+          } = e,
+          b = i.useRef(void 0),
+          T = i.useCallback(
+            () =>
+              null != C
+                ? C()
+                : (0, d.A)(n.id, g ?? n.getAvatarURL(l, p), {
+                    type: "popout",
+                    withMutualGuilds: n.id !== a.id,
+                    withMutualFriends: !n.bot && n.id !== a.id,
+                    guildId: l,
+                    channelId: u,
+                  }),
+            [C, a, n, g, l, u],
+          ),
+          K = i.useCallback(
+            (e) =>
+              ((b.current = Date.now()), null != v)
+                ? v(e, b.current)
+                : (0, r.jsx)(c.A, {
+                    ...e,
+                    user: n,
+                    currentUser: a,
+                    guildId: l,
+                    channelId: u,
+                    roleId: f,
+                    messageId: y,
+                    disableUserProfileLink: m,
+                    newAnalyticsLocations: E,
+                    appContext: _,
+                    openedAt: b.current,
+                    closePopout: () => {
+                      e.closePopout(), w?.();
+                    },
+                  }),
+            [n, a, v, l, u, f, y, m, E, _, w],
+          );
+        return (0, r.jsx)(s.Y, {
+          popoutKey: h.KM,
+          shouldShow: M,
+          preload: k ? T : void 0,
+          loadingComponent: (0, o.Zm)(),
+          renderPopout: K,
+          onRequestOpen: S,
+          onRequestClose: A,
+          ...L,
+          children: t,
         });
-      };
-      function m() {
-        (0, a.openModalLazy)(
-          async () => {
-            let { default: e } = await n.e("26388").then(n.bind(n, 297187));
-            return (t) => (0, r.jsx)(e, { ...t });
-          },
-          { modalKey: "slayer-storefront-announcement-modal" },
-        );
       }
+      let _ = i.memo(function (e) {
+        let { children: t, userId: n, user: i, ...l } = e,
+          s = (0, a.bG)([u.default], () => u.default.getCurrentUser()),
+          o = (0, a.bG)([u.default], () => i ?? u.default.getUser(n));
+        return null == o || null == s
+          ? t(f, m)
+          : (0, r.jsx)(E, { ...l, user: o, currentUser: s, children: t });
+      });
     },
     284016(e, t, n) {
       n.d(t, { A: () => c });
@@ -928,8 +598,8 @@
         i = n.n(r),
         a = n(17928),
         l = n(506774),
-        o = n(228366),
-        s = n(652215);
+        s = n(228366),
+        o = n(652215);
       let u = {};
       class d extends a.Ay.PersistedStore {
         static displayName = "SelectivelySyncedUserSettingsStore";
@@ -941,7 +611,7 @@
             l.w.remove("UserSettingsSync");
             let n = {};
             return (
-              !1 === e[s.nc_.TEXT] &&
+              !1 === e[o.nc_.TEXT] &&
                 (n.text = {
                   shouldSync: !1,
                   settings: i().pick(t, [
@@ -955,7 +625,7 @@
                     "defaultReactionEmoji",
                   ]),
                 }),
-              !1 === e[s.nc_.APPEARANCE] &&
+              !1 === e[o.nc_.APPEARANCE] &&
                 (n.appearance = {
                   shouldSync: !1,
                   settings: i().pick(t, [
@@ -994,7 +664,7 @@
           return u.appearance?.settings;
         }
       }
-      let c = new d(o.h, {
+      let c = new d(s.h, {
         SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: function (e) {
           let { changes: t } = e;
           for (let e in t) {
@@ -1016,12 +686,12 @@
       });
     },
     383394(e, t, n) {
-      n.d(t, { A: () => s });
+      n.d(t, { A: () => o });
       var r = n(17928),
         i = n(228366),
         a = n(617617);
       let l = new Set();
-      class o extends r.Ay.PersistedStore {
+      class s extends r.Ay.PersistedStore {
         static displayName = "ExpandedGuildFolderStore";
         static persistKey = "ExpandedGuildFolderStore";
         initialize(e) {
@@ -1037,7 +707,7 @@
           return l.has(e);
         }
       }
-      let s = new o(i.h, {
+      let o = new s(i.h, {
         TOGGLE_GUILD_FOLDER_EXPAND: function (e) {
           let { folderId: t } = e;
           (l = new Set(l)).has(t) ? l.delete(t) : l.add(t);
@@ -1062,7 +732,7 @@
       });
     },
     970928(e, t, n) {
-      n.d(t, { RG: () => I, Di: () => v, uD: () => k, Y: () => M }),
+      n.d(t, { RG: () => b, Di: () => w, uD: () => M, Y: () => k }),
         n(323874),
         n(14289),
         n(35956);
@@ -1070,8 +740,8 @@
         i = n.n(r),
         a = n(636537),
         l = n(228366),
-        o = n(735438),
-        s = n.n(o),
+        s = n(735438),
+        o = n.n(s),
         u = n(17928);
       let d = {},
         c = {};
@@ -1082,13 +752,13 @@
           let r = t[e];
           (n[e] = 2),
             (c[e] = {
-              assets: s().keyBy(r, "name") ?? {},
+              assets: o().keyBy(r, "name") ?? {},
               lastUpdated: Date.now(),
             });
         }
         d = n;
       }
-      class p extends u.Ay.Store {
+      class y extends u.Ay.Store {
         static displayName = "ApplicationAssetsStore";
         getApplicationAssetFetchState(e) {
           return d[e] ?? 0;
@@ -1110,7 +780,7 @@
           return c[e];
         }
       }
-      let y = new p(l.h, {
+      let p = new y(l.h, {
         APPLICATION_ASSETS_FETCH: function (e) {
           let { applicationId: t } = e;
           d = { ...d, [t]: 1 };
@@ -1123,7 +793,7 @@
           let { applicationId: t, assets: n } = e;
           null != n
             ? (c[t] = {
-                assets: s().keyBy(n, "name") ?? {},
+                assets: o().keyBy(n, "name") ?? {},
                 lastUpdated: Date.now(),
               })
             : delete c[t];
@@ -1133,18 +803,18 @@
       });
       var f = n(626584),
         m = n(776231),
-        _ = n(652215);
-      let E = "https://i.scdn.co/image/",
-        C =
-          /https:\/\/static-cdn\.jtvnw\.net\/previews-ttv\/live_user_(.+)-\{width\}x\{height\}.jpg/,
+        E = n(652215);
+      let _ = "https://i.scdn.co/image/",
         g =
+          /https:\/\/static-cdn\.jtvnw\.net\/previews-ttv\/live_user_(.+)-\{width\}x\{height\}.jpg/,
+        C =
           /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/hqdefault_live\.jpg/,
-        A = {
-          [_.fg2.SPOTIFY]: {
-            deserialize: (e) => `${E}${encodeURIComponent(e)}`,
-            serialize: (e) => e.split(E)[1],
+        v = {
+          [E.fg2.SPOTIFY]: {
+            deserialize: (e) => `${_}${encodeURIComponent(e)}`,
+            serialize: (e) => e.split(_)[1],
           },
-          [_.fg2.TWITCH]: {
+          [E.fg2.TWITCH]: {
             deserialize: (e, t) => {
               let n, r, i;
               return (
@@ -1155,11 +825,11 @@
               );
             },
             serialize: (e) => {
-              let t = e.match(C);
+              let t = e.match(g);
               return null != t ? t[1] : null;
             },
           },
-          [_.fg2.YOUTUBE]: {
+          [E.fg2.YOUTUBE]: {
             deserialize: (e) => {
               let t;
               return (
@@ -1168,7 +838,7 @@
               );
             },
             serialize: (e) => {
-              let t = e.match(g);
+              let t = e.match(C);
               return null != t ? t[1] : null;
             },
           },
@@ -1195,9 +865,9 @@
           },
         },
         S = new Map();
-      async function w(e) {
+      async function A(e) {
         let { body: t } = await a.Bo.get({
-          url: _.Rsh.APPLICATION_ASSETS(e),
+          url: E.Rsh.APPLICATION_ASSETS(e),
           oldFormErrors: !0,
           rejectWithError: !1,
         });
@@ -1207,28 +877,28 @@
             applicationId: e,
             assets: t,
           }),
-          y.getApplicationAssets(e)
+          p.getApplicationAssets(e)
         );
       }
-      function v(e, t) {
-        let n = A[e].serialize(t);
+      function w(e, t) {
+        let n = v[e].serialize(t);
         return n ? `${e}:${n.toString()}` : null;
       }
-      function k(e, t, n) {
+      function M(e, t, n) {
         let r =
           arguments.length > 3 && void 0 !== arguments[3]
             ? arguments[3]
             : "png";
         if (null != t && t.includes(":")) {
           let [e, r] = t.split(":");
-          return e === _.fg2.TWITCH
+          return e === E.fg2.TWITCH
             ? null == n || "number" == typeof n
               ? void new f.A("ApplicationAssetUtils").warn(
                   "getAssetImage: size must === [number, number] for Twitch",
                 )
-              : A[_.fg2.TWITCH].deserialize(r, n)
-            : Object.prototype.hasOwnProperty.call(A, e)
-              ? A[e].deserialize(r)
+              : v[E.fg2.TWITCH].deserialize(r, n)
+            : Object.prototype.hasOwnProperty.call(v, e)
+              ? v[e].deserialize(r)
               : void 0;
         }
         if (null == e || null == t) return;
@@ -1238,27 +908,27 @@
           ? `${location.protocol}//${window.GLOBAL_ENV.CDN_HOST}/app-assets/${e}/${t}.${r}${l}`
           : `${(0, a.TP)()}/applications/${e}/app-assets/${t}.${r}${l}`;
       }
-      async function M(e) {
+      async function k(e) {
         var t;
         let n,
-          r = await (null == (n = y.getApplicationAssets(e)) ||
+          r = await (null == (n = p.getApplicationAssets(e)) ||
           ((t = n.lastUpdated), Date.now() - t > 36e5)
-            ? w(e)
+            ? A(e)
             : Promise.resolve(n));
         return r?.assets;
       }
-      async function T(e, t) {
+      async function L(e, t) {
         let n = t.filter((e) => null != e && null == S.get(e));
         if (0 === n.length) return;
         let { body: r } = await a.Bo.post({
-          url: _.Rsh.APPLICATION_EXTERNAL_ASSETS(e),
+          url: E.Rsh.APPLICATION_EXTERNAL_ASSETS(e),
           body: { urls: n },
           oldFormErrors: !0,
           rejectWithError: !1,
         });
         for (let { url: e, external_asset_path: t } of r) S.set(e, t);
       }
-      async function I(e, t) {
+      async function b(e, t) {
         let n =
           arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
         l.h.dispatch({ type: "APPLICATION_ASSETS_FETCH", applicationId: e });
@@ -1267,7 +937,7 @@
             (e) => e?.startsWith("http:") || e?.startsWith("https:"),
           );
         if (
-          (i.length > 0 && (await T(e, i)),
+          (i.length > 0 && (await L(e, i)),
           (function (e, t) {
             let n = 0;
             if (
@@ -1278,7 +948,7 @@
                 let i = e[r];
                 if (null == i) continue;
                 let a = S.get(i);
-                null != a && ((t[r] = v("mp", a)), n++);
+                null != a && ((t[r] = w("mp", a)), n++);
               }
             return n === e.length;
           })(t, r))
@@ -1290,7 +960,7 @@
             }),
             r
           );
-        let a = await M(e);
+        let a = await k(e);
         return (l.h.dispatch({
           type: "APPLICATION_ASSETS_UPDATE",
           applicationId: e,
@@ -1301,19 +971,19 @@
           for (let a = 0; a < e.length; a++) {
             let l = e[a];
             if (null == l || null != t[a]) continue;
-            let o = Object.prototype.hasOwnProperty.call(n, l) && n[l];
-            if (!o) {
+            let s = Object.prototype.hasOwnProperty.call(n, l) && n[l];
+            if (!s) {
               if (null == r || r <= 0) {
                 t[a] = null;
                 continue;
               }
               i = !0;
             }
-            t[a] = o.id;
+            t[a] = s.id;
           }
           return i;
         })(t, r, a, n))
-          ? w(e).then(() => I(e, t, n - 1))
+          ? A(e).then(() => b(e, t, n - 1))
           : (l.h.dispatch({
               type: "APPLICATION_ASSETS_FETCH_SUCCESS",
               applicationId: e,
@@ -1329,32 +999,32 @@
     },
     316501(e, t, n) {
       n.d(t, {
-        AD: () => T,
+        AD: () => L,
         Kh: () => h,
-        Pk: () => N,
-        Q_: () => b,
-        Ze: () => I,
-        pF: () => k,
-        sv: () => L,
+        Pk: () => I,
+        Q_: () => K,
+        Ze: () => b,
+        pF: () => M,
+        sv: () => T,
       }),
         n(321073);
       var r = n(695497),
         i = n.n(r),
         a = n(506774),
         l = n(626584),
-        o = n(111162),
-        s = n(723702),
+        s = n(111162),
+        o = n(723702),
         u = n(650583);
       let d = new l.A("KeyboardLayoutMapUtils"),
-        c = (0, s.isLinux)()
+        c = (0, o.isLinux)()
           ? u.C8
-          : (0, s.isMac)()
+          : (0, o.isMac)()
             ? u.V8
-            : (0, s.isWindows)() || __OVERLAY__
+            : (0, o.isWindows)() || __OVERLAY__
               ? u.Nu
               : i().codes,
         h = new Set([192, 220, 222, 223, 229]),
-        p = Object.freeze({
+        y = Object.freeze({
           KeyA: "a",
           KeyB: "b",
           KeyC: "c",
@@ -1404,16 +1074,16 @@
           BracketRight: "]",
           IntlBackslash: "\xa7",
         });
-      function y(e) {
+      function p(e) {
         return null == e ? e : e.toLocaleLowerCase();
       }
       class f {
         map;
-        constructor(e = p) {
+        constructor(e = y) {
           this.map = new Map(
             Object.entries(e).map((e) => {
               let [t, n] = e;
-              return [t, y(n)];
+              return [t, p(n)];
             }),
           );
         }
@@ -1443,7 +1113,7 @@
         }
       }
       let m = new f();
-      async function _() {
+      async function E() {
         if (__OVERLAY__) return (m = new f()), !1;
         if (navigator.keyboard?.getLayoutMap != null)
           try {
@@ -1454,11 +1124,11 @@
           }
         return !1;
       }
-      function E(e) {
+      function _(e) {
         let t = new Set(),
           n = {};
         for (let [r, i] of Object.entries(e)) {
-          let e = y(r);
+          let e = p(r);
           if (t.has(e) && null != n[e] && n[e] !== i) {
             d.error(`Seperate keyCode mappings found for: ${e}`);
             continue;
@@ -1467,15 +1137,15 @@
         }
         return n;
       }
-      function C(e) {
+      function g(e) {
         return {
           keyCode: e.keyCode,
-          key: null != e.key ? y(e.key) : void 0,
+          key: null != e.key ? p(e.key) : void 0,
           code: e.code,
         };
       }
-      let g = "keyboard-layout-map";
-      class A {
+      let C = "keyboard-layout-map";
+      class v {
         keyCodeMap;
         keyMap;
         _internalKeyLayoutMap = null;
@@ -1486,8 +1156,8 @@
         _cachedAllEvents = [];
         constructor(e = {}) {
           this._defaultKeyMap = e;
-          const t = a.w.get(g) ?? null;
-          null != t ? (this.keyMap = t) : (this.keyMap = E({ ...e })),
+          const t = a.w.get(C) ?? null;
+          null != t ? (this.keyMap = t) : (this.keyMap = _({ ...e })),
             this._initializeInternalLayoutMap(),
             (this.keyCodeMap = this._buildKeyCodeMapFromKeyMap()),
             this.updateCaches(),
@@ -1577,7 +1247,7 @@
           );
         }
         addEvent(e) {
-          let t = C(e);
+          let t = g(e);
           null == this._internalKeyLayoutMap &&
             this._initializeInternalLayoutMap(),
             this._hasExactMatch(t) ||
@@ -1586,7 +1256,7 @@
                 (null == this.keyMap[t.key]
                   ? (this.keyMap[t.key] = t.keyCode)
                   : this.keyMap[t.key] !== t.keyCode &&
-                    o.default.logKeyboardMismatches &&
+                    s.default.logKeyboardMismatches &&
                     d.error(
                       `KeyboardMapper - Key code mismatch for key ${t.key}: ${this.keyMap[t.key]} !== ${t.keyCode}`,
                     ),
@@ -1602,7 +1272,7 @@
         }
         reset() {
           (this._internalKeyLayoutMap = null),
-            (this.keyMap = E({ ...this._defaultKeyMap })),
+            (this.keyMap = _({ ...this._defaultKeyMap })),
             this._initializeInternalLayoutMap(),
             (this.keyCodeMap = this._buildKeyCodeMapFromKeyMap()),
             this.updateCaches(),
@@ -1610,7 +1280,7 @@
         }
         save() {
           var e;
-          (e = this.keyMap), a.w.set(g, e);
+          (e = this.keyMap), a.w.set(C, e);
         }
         getLayoutMap() {
           return null == this._internalKeyLayoutMap
@@ -1625,7 +1295,7 @@
               arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             n = this.cachedKeyLayoutMapEntries;
           t && (n = Array.from(m.entries()));
-          let r = y(e);
+          let r = p(e);
           return (
             n.find((e) => {
               let [t, n] = e;
@@ -1634,7 +1304,7 @@
           );
         }
       }
-      class S extends A {
+      class S extends v {
         getKeyString(e, t) {
           let n = this.getKeyCodeMapItem(e);
           return (
@@ -1659,20 +1329,20 @@
           );
         }
         findExactKeyboardEventMatch(e, t, n) {
-          let r = y(e);
+          let r = p(e);
           if (
             (null == t && (t = this.findCodeFromKeyboardLayoutMap(r)),
             null != n)
           ) {
             let e = this.keyCodeMap[n];
             if (null != e) {
-              let n = e.find((e) => y(e.key) === r && e.code === t);
+              let n = e.find((e) => p(e.key) === r && e.code === t);
               if (null != n) return n;
             }
           }
           if (null != n && null != t)
             return this.cachedAllEvents.find((e) => {
-              let i = y(e.key) === r,
+              let i = p(e.key) === r,
                 a = e.keyCode === n,
                 l = e.code === t;
               return a && i && l;
@@ -1681,7 +1351,7 @@
         getWeightedPossibleKeyStringMatches(e, t, n) {
           return this.cachedAllEvents
             .filter((r) => {
-              let i = y(r.key) === y(e),
+              let i = p(r.key) === p(e),
                 a = null == n || r.keyCode === n,
                 l = null == t || r.code === t;
               return a && i && l;
@@ -1690,7 +1360,7 @@
               let a = (r) => {
                   let i = 0;
                   return (
-                    y(r.key) === y(e) && (i += 0.5),
+                    p(r.key) === p(e) && (i += 0.5),
                     null != t && r.code === t && (i += 0.3),
                     null != n && r.keyCode === n && (i += 0.2),
                     i
@@ -1701,14 +1371,14 @@
             });
         }
         findKeyboardEventByKey(e, t, n) {
-          let r = y(e);
+          let r = p(e);
           if (
             (null == t && (t = this.findCodeFromKeyboardLayoutMap(r)),
             null != n)
           ) {
             let e = this.keyCodeMap[n];
             if (null != e) {
-              let n = e.find((e) => y(e.key) === r && e.code === t);
+              let n = e.find((e) => p(e.key) === r && e.code === t);
               if (null != n) return n;
             }
           }
@@ -1732,11 +1402,11 @@
             : this.findKeyboardEventByKey(n, t, e);
         }
         getDefaultKeyboardEventShape(e, t, n) {
-          let r = null != e ? y(e) : void 0;
+          let r = null != e ? p(e) : void 0;
           if (null != r) {
             let e = this.keyMap[r];
             if (null == e) return;
-            return C({
+            return g({
               keyCode: e,
               key: r,
               code: n ?? this.findCodeFromKeyboardLayoutMap(r),
@@ -1748,7 +1418,7 @@
               return r === t;
             })?.[0];
             if (null == e) return;
-            return C({
+            return g({
               keyCode: t,
               key: e,
               code: n ?? this.findCodeFromKeyboardLayoutMap(e),
@@ -1756,17 +1426,17 @@
           }
         }
       }
-      let w = null,
-        v = null;
-      function k() {
-        return null != v
-          ? v
-          : (v = new Promise(async (e) => {
-              await _(),
-                (w = new S(c)),
+      let A = null,
+        w = null;
+      function M() {
+        return null != w
+          ? w
+          : (w = new Promise(async (e) => {
+              await E(),
+                (A = new S(c)),
                 document.addEventListener("keydown", (e) => {
                   try {
-                    w?.addEvent(e);
+                    A?.addEvent(e);
                   } catch (t) {
                     d.error("KeyboardMapper - Error adding event", {
                       event: e,
@@ -1777,49 +1447,49 @@
                 e();
             }));
       }
-      function M() {
-        return null == w ? (k(), null) : w;
+      function k() {
+        return null == A ? (M(), null) : A;
       }
-      async function T() {
-        await _(), M()?.reset();
+      async function L() {
+        await E(), k()?.reset();
       }
-      function I() {
+      function b() {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-        return e ? m : (M()?.getLayoutMap() ?? m);
+        return e ? m : (k()?.getLayoutMap() ?? m);
       }
-      function L(e) {
-        let t = C(e);
+      function T(e) {
+        let t = g(e);
         return null != t.key
-          ? (M()?.findExactKeyboardEventMatch(t.key, t.code, t.keyCode) ?? null)
+          ? (k()?.findExactKeyboardEventMatch(t.key, t.code, t.keyCode) ?? null)
           : null;
       }
-      function b(e) {
-        let t = null != e ? y(e) : void 0;
+      function K(e) {
+        let t = null != e ? p(e) : void 0;
         if (null == t) return null;
         let n = (function (e) {
-            let t = null != e ? y(e) : void 0;
+            let t = null != e ? p(e) : void 0;
             if (null != t)
-              return M()?.findCodeFromKeyboardLayoutMap(t) ?? void 0;
+              return k()?.findCodeFromKeyboardLayoutMap(t) ?? void 0;
           })(t),
-          r = M()?.findKeyboardEventByKey(t, n) ?? null;
+          r = k()?.findKeyboardEventByKey(t, n) ?? null;
         if (null != r) return r;
         try {
-          let e = M()?.getDefaultKeyboardEventShape(t, void 0, n) ?? null;
+          let e = k()?.getDefaultKeyboardEventShape(t, void 0, n) ?? null;
           if (null == e) return null;
           let r = new KeyboardEvent("keydown", e);
-          return C({ keyCode: r.keyCode, key: r.key, code: r.code });
+          return g({ keyCode: r.keyCode, key: r.key, code: r.code });
         } catch (e) {
           return null;
         }
       }
-      function N(e) {
-        let t = M()?.findKeyboardEventByKeyCode(e) ?? null;
+      function I(e) {
+        let t = k()?.findKeyboardEventByKeyCode(e) ?? null;
         if (null != t) return t;
         try {
-          let t = M()?.getDefaultKeyboardEventShape(void 0, e) ?? null;
+          let t = k()?.getDefaultKeyboardEventShape(void 0, e) ?? null;
           if (null == t) return null;
           let n = new KeyboardEvent("keydown", t);
-          return C({ keyCode: n.keyCode, key: n.key, code: n.code });
+          return g({ keyCode: n.keyCode, key: n.key, code: n.code });
         } catch (e) {
           return null;
         }
@@ -1827,85 +1497,85 @@
     },
     502518(e, t, n) {
       let r, i;
-      n.d(t, { b: () => R, q: () => b }), n(142703), n(667532), n(321073);
+      n.d(t, { b: () => O, q: () => K }), n(142703), n(667532), n(321073);
       var a = n(132500);
       n(423034);
       var l = n(80703),
-        o = n(17928),
-        s = n(636537),
+        s = n(17928),
+        o = n(636537),
         u = n(187207),
         d = n(818348);
       let c = "x-science-test",
         h = 1500,
-        p = 0,
         y = 0,
+        p = 0,
         f = 0,
         m = 0,
-        _ = 0,
-        E = null,
-        C = 0,
-        g = Number.MAX_SAFE_INTEGER,
-        A = 0,
+        E = 0,
+        _ = null,
+        g = 0,
+        C = Number.MAX_SAFE_INTEGER,
+        v = 0,
         S = 0,
-        w = null,
-        v = !1,
-        k = null,
-        M = null;
-      function T(e) {
+        A = null,
+        w = !1,
+        M = null,
+        k = null;
+      function L(e) {
         let t =
           arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1;
         return e + t;
       }
-      let I = window.requestIdleCallback ?? ((e) => setImmediate(() => e())),
-        L = new u.n(),
-        b = {
+      let b = window.requestIdleCallback ?? ((e) => setImmediate(() => e())),
+        T = new u.n(),
+        K = {
           handleConnectionOpen: () => {},
           handleConnectionClosed: () => {},
           handleFingerprint: () => {},
           handleTrack: () => {},
           handleSetAnalyticsToken: () => {},
         },
-        N = [],
-        K = null,
-        D = () => Promise.resolve({ sessionId: void 0 }),
-        R = (e) => {
+        I = [],
+        N = null,
+        P = () => Promise.resolve({ sessionId: void 0 }),
+        O = (e) => {
           let {
             dispatcher: t,
             actionHandler: n,
             getFingerprint: u,
-            getSessionId: R = D,
-            TRACKING_URL: O,
-            drainTimeoutOverride: x,
-            waitFor: P,
-            scheduleWhenIdle: F = I,
-            getLaunchSignature: j = () => null,
+            getSessionId: O = P,
+            TRACKING_URL: x,
+            drainTimeoutOverride: D,
+            waitFor: R,
+            scheduleWhenIdle: F = b,
+            getLaunchSignature: U = () => null,
           } = e;
-          function U() {
-            return 0 !== N.length && (null != i ? null != r : null != u());
+          function j() {
+            return 0 !== I.length && (null != i ? null != r : null != u());
           }
-          function B(e) {
+          function z(e) {
             let { shouldFlushOnNextTick: t = !1 } = e;
-            null == K &&
-              U() &&
-              (K = t ? setTimeout(G, 0) : F(G, { timeout: h }));
+            null == N &&
+              j() &&
+              (N = t ? setTimeout(B, 0) : F(B, { timeout: h }));
           }
-          function G() {
-            if (((K = null), !U())) return Promise.resolve();
-            let e = N.slice();
-            (N = []), (C = T(C));
+          function B() {
+            if (((N = null), !j())) return Promise.resolve();
+            let e = I.slice();
+            (I = []), (g = L(g));
             let t = e.length;
-            (g = Math.min(g, t)), (A = Math.max(A, t)), (S = T(S, t));
-            let n = z(e);
+            (C = Math.min(C, t)), (v = Math.max(v, t)), (S = L(S, t));
+            let n = $(e);
             return (
               n.then(
                 () => {
                   e.forEach((e) => {
                     e.resolve?.();
                   }),
-                    (f = T(f));
+                    (f = L(f));
                 },
                 (t) => {
-                  N.unshift(...e), (m = T(m));
+                  I.unshift(...e), (m = L(m));
                   let { message: n } = t.body || t;
                   console.warn("[AnalyticsTrackingStore] Track:", n);
                 },
@@ -1913,11 +1583,11 @@
               n
             );
           }
-          function z(e) {
+          function $(e) {
             let t =
                 arguments.length > 1 && void 0 !== arguments[1]
                   ? arguments[1]
-                  : O,
+                  : x,
               n = Date.now(),
               i = e.map((e) => ({
                 ...e,
@@ -1925,65 +1595,65 @@
               })),
               l = {};
             return (
-              v || ((M = (0, a.A)()), (l[c] = M), (v = !0)),
-              s.Bo.post({
+              w || ((k = (0, a.A)()), (l[c] = k), (w = !0)),
+              o.Bo.post({
                 url: t,
                 headers: l,
                 body: { token: r, events: i },
                 retries: 3,
                 rejectWithError: !1,
-              }).then((e) => (l[c] && (k = e?.headers?.[c] ?? null), e))
+              }).then((e) => (l[c] && (M = e?.headers?.[c] ?? null), e))
             );
           }
-          function H() {
+          function G() {
             let e = {
               type: d.bZ.CLIENT_TELEMETRY,
               properties: {
                 client_track_timestamp: Date.now(),
                 rpc_success_count: f,
                 rpc_failure_count: m,
-                first_seen_event_sequence_number: _,
-                last_seen_event_sequence_number: p,
-                telemetry_period_start_timestamp: E,
+                first_seen_event_sequence_number: E,
+                last_seen_event_sequence_number: y,
+                telemetry_period_start_timestamp: _,
                 telemetry_period_end_timestamp: Date.now(),
-                event_queue_rejection_count: y,
-                event_queue_batch_count: C,
+                event_queue_rejection_count: p,
+                event_queue_batch_count: g,
                 event_queue_batch_min_size:
-                  g === Number.MAX_SAFE_INTEGER ? 0 : g,
-                event_queue_batch_max_size: A,
-                event_queue_batch_avg_size: C > 0 ? S / C : 0,
-                science_request_id: M,
-                science_response: k,
-                launch_signature: j(),
+                  C === Number.MAX_SAFE_INTEGER ? 0 : C,
+                event_queue_batch_max_size: v,
+                event_queue_batch_avg_size: g > 0 ? S / g : 0,
+                science_request_id: k,
+                science_response: M,
+                launch_signature: U(),
               },
             };
             return (
-              (y = 0),
+              (p = 0),
               (f = 0),
               (m = 0),
-              (C = 0),
-              (g = Number.MAX_SAFE_INTEGER),
-              (A = 0),
+              (g = 0),
+              (C = Number.MAX_SAFE_INTEGER),
+              (v = 0),
               (S = 0),
-              (E = Date.now()),
-              (_ = p),
-              z([e], d.mX.CLIENT_TELEMETRY)
+              (_ = Date.now()),
+              (E = y),
+              $([e], d.mX.CLIENT_TELEMETRY)
             );
           }
-          (h = x ?? 1500),
-            (b.handleConnectionOpen = function (e) {
+          (h = D ?? 1500),
+            (K.handleConnectionOpen = function (e) {
               let { analyticsToken: t, user: n } = e;
               return (
                 null != t && (r = t),
                 null != n.id && (i = n.id),
                 !(function () {
-                  if (null != w) return;
+                  if (null != A) return;
                   let e = () => {
-                    w = {
+                    A = {
                       type: "timeout",
                       id: setTimeout(
                         () => {
-                          H(), e();
+                          G(), e();
                         },
                         Math.max(
                           36e5 + (Math.floor(36e4 * Math.random() * 2) - 36e4),
@@ -1992,66 +1662,66 @@
                       ),
                     };
                   };
-                  w = {
+                  A = {
                     type: "timeout",
                     id: setTimeout(
                       () => {
-                        H(), e();
+                        G(), e();
                       },
                       Math.floor(354e4 * Math.random() + 6e4),
                     ),
                   };
                 })(),
-                B({ shouldFlushOnNextTick: !1 }),
+                z({ shouldFlushOnNextTick: !1 }),
                 !1
               );
             }),
-            (b.handleConnectionClosed = function () {
+            (K.handleConnectionClosed = function () {
               return (
-                G(),
+                B(),
                 (function () {
-                  if (null == w) return;
-                  switch (w.type) {
+                  if (null == A) return;
+                  switch (A.type) {
                     case "timeout":
-                      clearTimeout(w.id);
+                      clearTimeout(A.id);
                       break;
                     case "interval":
-                      clearInterval(w.id);
+                      clearInterval(A.id);
                       break;
                     default:
-                      w.type;
+                      A.type;
                   }
-                  w = null;
+                  A = null;
                 })(),
                 (r = null),
                 (i = null),
                 !1
               );
             }),
-            (b.handleFingerprint = function () {
-              return G(), !1;
+            (K.handleFingerprint = function () {
+              return B(), !1;
             }),
-            (b.handleTrack = function (e) {
+            (K.handleTrack = function (e) {
               let {
                 event: t,
                 properties: n,
                 flush: r,
                 fingerprint: a,
-                resolve: o,
+                resolve: s,
               } = e;
               return (
-                R().then((e) => {
-                  let { sessionId: s } = e,
+                O().then((e) => {
+                  let { sessionId: o } = e,
                     d = {
                       type: t,
                       fingerprint: a,
                       properties: {
                         client_track_timestamp: Date.now(),
-                        client_heartbeat_session_id: s,
-                        event_sequence_number: ++p,
+                        client_heartbeat_session_id: o,
+                        event_sequence_number: ++y,
                         ...n,
                       },
-                      resolve: o,
+                      resolve: s,
                     },
                     c = (function (e) {
                       if (null != i) return i;
@@ -2059,35 +1729,35 @@
                       return null != t ? (0, l.d)(t) : null;
                     })(d);
                   if (
-                    (null != c && (d.properties.client_uuid = L.generate(c)),
-                    N.push(d),
-                    N.length > 1e4)
+                    (null != c && (d.properties.client_uuid = T.generate(c)),
+                    I.push(d),
+                    I.length > 1e4)
                   ) {
-                    let e = N.length - 1e4;
-                    (y = T(y, e)), (N = N.slice(-1e4));
+                    let e = I.length - 1e4;
+                    (p = L(p, e)), (I = I.slice(-1e4));
                   }
                   r
-                    ? B({ shouldFlushOnNextTick: !0 })
-                    : B({ shouldFlushOnNextTick: !1 });
+                    ? z({ shouldFlushOnNextTick: !0 })
+                    : z({ shouldFlushOnNextTick: !1 });
                 }),
                 !1
               );
             }),
-            (b.handleSetAnalyticsToken = function (e) {
+            (K.handleSetAnalyticsToken = function (e) {
               let { analyticsToken: t, userId: n } = e;
               return (
                 null == r &&
                   null != t &&
-                  ((r = t), (i = n), B({ shouldFlushOnNextTick: !1 })),
+                  ((r = t), (i = n), z({ shouldFlushOnNextTick: !1 })),
                 !1
               );
             });
-          class V extends o.Ay.Store {
+          class V extends s.Ay.Store {
             static displayName = "AnalyticsTrackingStore";
             initialize() {
-              null != P && this.waitFor(...P);
+              null != R && this.waitFor(...R);
             }
-            submitEventsImmediately = z;
+            submitEventsImmediately = $;
           }
           return new V(t, n);
         };
@@ -2102,7 +1772,7 @@
       async function l(e) {
         let { createPromise: t, webpackId: a } = e,
           l = 500,
-          o = 0;
+          s = 0;
         for (;;)
           try {
             return await t();
@@ -2114,8 +1784,8 @@
                 ),
                 e)
               );
-            if (o >= 50) throw e;
-            await r(l), await i(), (l = Math.min(5e3, 2 * l)), o++;
+            if (s >= 50) throw e;
+            await r(l), await i(), (l = Math.min(5e3, 2 * l)), s++;
           }
       }
     },
@@ -2132,15 +1802,15 @@
       n.d(t, { BH: () => a, FH: () => i, jN: () => r });
     },
     279234(e, t, n) {
-      n.d(t, { P: () => h, x: () => p });
+      n.d(t, { P: () => h, x: () => y });
       var r = n(118356),
         i = n(31436);
       let a = null,
         l = new r.Vy("libdiscore");
-      function o(e) {
+      function s(e) {
         l.error(e);
       }
-      function s(e) {
+      function o(e) {
         l.warn(e);
       }
       function u(e) {
@@ -2158,19 +1828,19 @@
             (a = (async () => {
               await i.Bf();
               let e = i.vZ();
-              e.installLogCallback(o, s, u, d, c),
+              e.installLogCallback(s, o, u, d, c),
                 await e.initLibdiscore(),
                 (window._libdiscoreInitialized = !0);
             })()),
           a
         );
       }
-      function p() {
+      function y() {
         return !0 === window._libdiscoreInitialized;
       }
     },
     31436(e, t, n) {
-      n.d(t, { Ay: () => s, Bf: () => l, vZ: () => o });
+      n.d(t, { Ay: () => o, Bf: () => l, vZ: () => s });
       var r = n(841117);
       function i(e) {
         console.warn(`[libdiscore] ${e}`);
@@ -2193,10 +1863,10 @@
               e instanceof ReferenceError ||
               e instanceof WebAssembly.CompileError
             ) {
-              var o;
+              var s;
               throw (
-                ((o = !0),
-                (window._libdiscoreUnsupportedBrowser = o),
+                ((s = !0),
+                (window._libdiscoreUnsupportedBrowser = s),
                 i(
                   `Unsupported browser, skipping libdiscore, error: [${e.name}] ${e.message}`,
                 ),
@@ -2227,11 +1897,11 @@
           return (t = e), (window._libdiscoreInitPromise = t), e;
         }
       }
-      function o() {
+      function s() {
         if (void 0 !== window._libdiscoreWasm) return window._libdiscoreWasm;
         throw Error("libdiscoreWasm is not initialized");
       }
-      let s = o;
+      let o = s;
     },
     547830(e, t, n) {
       n.d(t, { FO: () => a, fL: () => r, u5: () => i }), n(724214);
@@ -2264,11 +1934,11 @@
     },
     396574(e, t, n) {
       n.d(t, {
-        Hz: () => s,
+        Hz: () => o,
         It: () => a,
-        LU: () => p,
+        LU: () => y,
         PF: () => d,
-        VP: () => o,
+        VP: () => s,
         fA: () => h,
         g7: () => u,
         zU: () => c,
@@ -2277,7 +1947,7 @@
         i = n.n(r);
       let a = parseInt(i().version ?? "0", 10),
         l = null != i().ua && i().ua.indexOf("OculusBrowser") > -1,
-        o = (() => {
+        s = (() => {
           if ("u" > typeof window && null == window.WebSocket) return !1;
           switch (i().name) {
             case "IE":
@@ -2287,7 +1957,7 @@
               return !0;
           }
         })(),
-        s =
+        o =
           l ||
           ("Firefox" === i().name && a >= 80) ||
           ("Chrome" === i().name && a >= 37) ||
@@ -2313,7 +1983,7 @@
           ("Chrome" === i().name && a >= 58) ||
           ("Safari" === i().name && a >= 15) ||
           ("Firefox" === i().name && a >= 108),
-        p =
+        y =
           ("Chrome" === i().name && a >= 72) ||
           ("Safari" === i().name && a >= 11) ||
           ("Opera" === i().name && a >= 60) ||
@@ -2321,4 +1991,4 @@
     },
   },
 ]);
-//# sourceMappingURL=16572.4525abf333192cce.js.map
+//# sourceMappingURL=74524.2841e1cab884dd31.js.map
