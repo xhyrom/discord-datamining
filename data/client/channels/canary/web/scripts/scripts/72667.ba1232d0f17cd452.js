@@ -33489,7 +33489,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534838, Version Hash: 02560c514465707a78aea7104cd09a7cb5469c8a`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534855, Version Hash: e8ffc92255d57d86edcc3f01828e4044db5d0e65`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -57473,7 +57473,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "02560c514465707a78aea7104cd09a7cb5469c8a" === e.body.hash
+                  "e8ffc92255d57d86edcc3f01828e4044db5d0e65" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -65402,10 +65402,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534838")),
+                ((e = parseInt("534855")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534838",
+                    "Trying to open a changelog for an invalid build number 534855",
                   ),
                   (e = 0)),
                 e),
@@ -98936,7 +98936,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534838", versionHash: "02560c514465707a78aea7104cd09a7cb5469c8a" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534855", versionHash: "e8ffc92255d57d86edcc3f01828e4044db5d0e65" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -253180,7 +253180,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "02560c514465707a78aea7104cd09a7cb5469c8a",
+                    "e8ffc92255d57d86edcc3f01828e4044db5d0e65",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259410,7 +259410,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534838",
+                  build_number: "534855",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -303586,6 +303586,7 @@ Total Time: ${o}ms
                 C,
               ],
             },
+            { no: 3, name: "banned_at", kind: "message", T: () => N.D },
           ]);
         }
         create(e) {
@@ -303619,6 +303620,14 @@ Total Time: ${o}ms
                     r.classificationTypes.push(e.int32());
                 else r.classificationTypes.push(e.int32());
                 break;
+              case 3:
+                r.bannedAt = N.D.internalBinaryRead(
+                  e,
+                  e.uint32(),
+                  n,
+                  r.bannedAt,
+                );
+                break;
               default:
                 let s = n.readUnknownField;
                 if ("throw" === s)
@@ -303647,6 +303656,12 @@ Total Time: ${o}ms
               t.int32(e.classificationTypes[n]);
             t.join();
           }
+          e.bannedAt &&
+            N.D.internalBinaryWrite(
+              e.bannedAt,
+              t.tag(3, p.O0.LengthDelimited).fork(),
+              n,
+            ).join();
           let i = n.writeUnknownFields;
           return (
             !1 !== i && (!0 == i ? p.f$.onWrite : i)(this.typeName, e, t), t
@@ -303667,6 +303682,7 @@ Total Time: ${o}ms
                 C,
               ],
             },
+            { no: 2, name: "banned_at", kind: "message", T: () => N.D },
           ]);
         }
         create(e) {
@@ -303685,20 +303701,30 @@ Total Time: ${o}ms
             s = e.pos + t;
           for (; e.pos < s; ) {
             let [t, i] = e.tag();
-            if (1 === t)
-              if (i === p.O0.LengthDelimited)
-                for (let t = e.int32() + e.pos; e.pos < t; )
-                  r.classificationTypes.push(e.int32());
-              else r.classificationTypes.push(e.int32());
-            else {
-              let s = n.readUnknownField;
-              if ("throw" === s)
-                throw new globalThis.Error(
-                  `Unknown field ${t} (wire type ${i}) for ${this.typeName}`,
+            switch (t) {
+              case 1:
+                if (i === p.O0.LengthDelimited)
+                  for (let t = e.int32() + e.pos; e.pos < t; )
+                    r.classificationTypes.push(e.int32());
+                else r.classificationTypes.push(e.int32());
+                break;
+              case 2:
+                r.bannedAt = N.D.internalBinaryRead(
+                  e,
+                  e.uint32(),
+                  n,
+                  r.bannedAt,
                 );
-              let a = e.skip(i);
-              !1 !== s &&
-                (!0 === s ? p.f$.onRead : s)(this.typeName, r, t, i, a);
+                break;
+              default:
+                let s = n.readUnknownField;
+                if ("throw" === s)
+                  throw new globalThis.Error(
+                    `Unknown field ${t} (wire type ${i}) for ${this.typeName}`,
+                  );
+                let a = e.skip(i);
+                !1 !== s &&
+                  (!0 === s ? p.f$.onRead : s)(this.typeName, r, t, i, a);
             }
           }
           return r;
@@ -303710,6 +303736,12 @@ Total Time: ${o}ms
               t.int32(e.classificationTypes[n]);
             t.join();
           }
+          e.bannedAt &&
+            N.D.internalBinaryWrite(
+              e.bannedAt,
+              t.tag(2, p.O0.LengthDelimited).fork(),
+              n,
+            ).join();
           let i = n.writeUnknownFields;
           return (
             !1 !== i && (!0 == i ? p.f$.onWrite : i)(this.typeName, e, t), t
@@ -327924,4 +327956,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=72667.dd6792cdf862a678.js.map
+//# sourceMappingURL=72667.ba1232d0f17cd452.js.map
