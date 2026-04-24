@@ -33482,7 +33482,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534481, Version Hash: 2722b4491c7918a1ca4fbd2563b25ef17360b1fc`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534527, Version Hash: 9f82cedc620e94a3edb708d839b7b34100c21902`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -52486,52 +52486,51 @@ ${s}`);
     },
     46225(e, t, n) {
       "use strict";
-      n.d(t, { _M: () => m, RD: () => g, U9: () => A }), n(321073);
-      var i,
-        r = n(64700),
-        s = n(868714),
-        a = n(975807),
-        o = n(289919),
-        l = n(954571),
-        d = n(76843),
-        _ = n(975460),
-        u = n(704824);
-      let c = Symbol();
-      var E = n(652215);
-      let h = "AUTHORIZE_REQUEST";
-      var m = (((i = {}).RPC = "rpc"), (i.WEB = "web"), i);
-      let f = ["rpc", "web"];
-      function g(e) {
+      n.d(t, { RD: () => f, U9: () => p }), n(321073);
+      var i = n(64700),
+        r = n(868714),
+        s = n(975807),
+        a = n(289919),
+        o = n(954571),
+        l = n(76843),
+        d = n(975460),
+        _ = n(704824);
+      let u = Symbol();
+      var c = n(942370),
+        E = n(652215);
+      let h = "AUTHORIZE_REQUEST",
+        m = [c._.RPC, c._.WEB];
+      function f(e) {
         var t, n;
-        let i,
+        let r,
           s =
             arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
           { debug: a = !1 } = s,
-          o = (0, _.g)(e),
+          o = (0, d.g)(e),
           l =
             ((t = o),
             (n = s),
-            (i = A(
-              r.useMemo(() => (null != t ? [t] : []), [t]),
+            (r = p(
+              i.useMemo(() => (null != t ? [t] : []), [t]),
               n,
             )).length > 0
-              ? i[0]
+              ? r[0]
               : null),
-          d = l?.preferredFlow,
-          c = null != d,
-          { token: E, fetched: h } = (0, u.U)(o?.parentId ?? o?.id, {
+          u = l?.preferredFlow,
+          c = null != u,
+          { token: E, fetched: h } = (0, _.U)(o?.parentId ?? o?.id, {
             disableFetch: s.disableFetch,
           });
         return {
           fetched: h,
           hasAlreadyLinked: h && null != E,
           canStartAuthorization: c,
-          startAuthorization: r.useCallback(
-            (e) => (null == d ? null : (d.initiate(e), d.type)),
-            [d],
+          startAuthorization: i.useCallback(
+            (e) => (null == u ? null : (u.initiate(e), u.type)),
+            [u],
           ),
           connectionApp: o,
-          chosenFlow: d?.type ?? null,
+          chosenFlow: u?.type ?? null,
           token: E,
           debug: a
             ? {
@@ -52544,87 +52543,87 @@ ${s}`);
             : void 0,
         };
       }
-      function p(e) {
-        return o.A.listenIsSubscribed(e);
+      function g(e) {
+        return a.A.listenIsSubscribed(e);
       }
-      function A(e, t) {
+      function p(e, t) {
         var n;
-        let i,
+        let d,
           _,
-          u = (0, s.A)(t?.allowedFlows ?? f),
-          m =
-            ((n = r.useCallback(
+          f = (0, r.A)(t?.allowedFlows ?? m),
+          p =
+            ((n = i.useCallback(
               () =>
                 e.map((e) => ({
                   application: e,
-                  isSubscribedToAuthorizeRequest: o.A.isSubscribed(e.id, h),
+                  isSubscribedToAuthorizeRequest: a.A.isSubscribed(e.id, h),
                 })),
               [e],
             )),
-            (i = r.useRef(c)),
-            (_ = r.useRef(n)),
-            r.useSyncExternalStore(
-              r.useCallback(
+            (d = i.useRef(u)),
+            (_ = i.useRef(n)),
+            i.useSyncExternalStore(
+              i.useCallback(
                 (e) =>
-                  p(() => {
-                    (i.current = c), e();
+                  g(() => {
+                    (d.current = u), e();
                   }),
-                [p],
+                [g],
               ),
-              r.useCallback(
+              i.useCallback(
                 () => (
-                  _.current !== n && ((_.current = n), (i.current = c)),
-                  i.current === c && (i.current = n()),
-                  i.current
+                  _.current !== n && ((_.current = n), (d.current = u)),
+                  d.current === u && (d.current = n()),
+                  d.current
                 ),
                 [n],
               ),
             ));
-        return r.useMemo(
+        return i.useMemo(
           () =>
-            m.map((e) => {
+            p.map((e) => {
               let t = [];
               if (
-                (u.includes("rpc") &&
+                (f.includes(c._.RPC) &&
                   e.isSubscribedToAuthorizeRequest &&
                   t.push({
-                    type: "rpc",
+                    type: c._.RPC,
                     initiate(t) {
-                      o.A.dispatchToSubscriptions(
+                      a.A.dispatchToSubscriptions(
                         h,
                         (t) => t.socket.application.id === e.application.id,
                         {},
                       ),
                         t.onConfirm?.(),
-                        l.default.track(
+                        o.default.track(
                           E.HAw.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED,
                           {
                             location_stack: t.analyticsLocations,
                             application_id: e.application.id,
-                            flow_type: "rpc",
+                            flow_type: c._.RPC,
                           },
                         );
                     },
                   }),
-                u.includes("web") &&
+                f.includes(c._.WEB) &&
                   null != e.application.connectionEntrypointUrl)
               ) {
                 let n = e.application.connectionEntrypointUrl;
                 t.push({
-                  type: "web",
+                  type: c._.WEB,
                   initiate(t) {
-                    (0, d.h)({
+                    (0, l.h)({
                       href: n,
                       onConfirm: () => {
-                        (0, a.A)(n), t?.onConfirm?.();
+                        (0, s.A)(n), t?.onConfirm?.();
                       },
                     }),
-                      l.default.track(
+                      o.default.track(
                         E.HAw.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED,
                         {
                           location_stack: t.analyticsLocations,
                           application_id: e.application.id,
-                          flow_type: "web",
+                          flow_type: c._.WEB,
                         },
                       );
                   },
@@ -52636,7 +52635,7 @@ ${s}`);
                 preferredFlow: t.length > 0 ? t[0] : null,
               };
             }),
-          [m, u],
+          [p, f],
         );
       }
     },
@@ -57467,7 +57466,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "2722b4491c7918a1ca4fbd2563b25ef17360b1fc" === e.body.hash
+                  "9f82cedc620e94a3edb708d839b7b34100c21902" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -60765,130 +60764,6 @@ ${s}`);
         );
       }
     },
-    918022(e, t, n) {
-      "use strict";
-      n.d(t, { Y: () => l });
-      var i = n(64700),
-        r = n(202613),
-        s = n(459357),
-        a = n(652215);
-      function o(e) {
-        let {
-          giftCardWallet: t,
-          dropdownPaymentSources: n,
-          subscriptionPaymentSourceId: i,
-        } = e;
-        if (null != t && (null == i || i === t.id)) return t.id;
-        if (null != i) {
-          let e = n.find((e) => e.id === i);
-          if (null != e && e.enabled) return i;
-        }
-        return n.find((e) => e.enabled)?.id ?? null;
-      }
-      function l(e) {
-        let {
-            checkoutPaymentSources: t,
-            paymentSourceId: n,
-            setPaymentSourceId: l,
-            location: d,
-            isReady: _ = !0,
-            subscriptionPaymentSourceId: u,
-            itemAmount: c,
-          } = e,
-          { enabled: E } = (0, s.c)({ location: d }),
-          { dropdownPaymentSources: h, giftCardWallet: m } = i.useMemo(() => {
-            let e = t.filter((e) => e.type !== a.hes.TDS_WALLET);
-            return E
-              ? {
-                  dropdownPaymentSources: e,
-                  giftCardWallet:
-                    t.find((e) => e.source instanceof r.LQ) ?? null,
-                }
-              : { dropdownPaymentSources: e, giftCardWallet: null };
-          }, [t, E]),
-          [f, g] = i.useState(null),
-          p = null != m && n === m.id,
-          A = i.useMemo(
-            () =>
-              null != f
-                ? f
-                : o({
-                    giftCardWallet: null,
-                    dropdownPaymentSources: h,
-                    subscriptionPaymentSourceId: u,
-                  }),
-            [h, u, f],
-          ),
-          I = i.useMemo(() => (p ? A : (n ?? null)), [A, p, n]),
-          T = i.useRef(!1);
-        i.useEffect(() => {
-          !_ ||
-            0 === t.length ||
-            (null != n &&
-              t.some((e) =>
-                ((e) => {
-                  let {
-                    paymentSource: t,
-                    paymentSourceId: n,
-                    giftCardsEnabled: i,
-                  } = e;
-                  return (
-                    (t.type !== a.hes.TDS_WALLET || !!i) &&
-                    null != n &&
-                    t.id === n &&
-                    t.enabled
-                  );
-                })({
-                  paymentSource: e,
-                  paymentSourceId: n,
-                  giftCardsEnabled: E,
-                }),
-              )) ||
-            T.current ||
-            ((T.current = !0),
-            l(
-              o({
-                giftCardWallet: m,
-                dropdownPaymentSources: h,
-                subscriptionPaymentSourceId: u,
-              }),
-            ));
-        }, [_, E, t, h, m, n, u, l]);
-        let S = i.useCallback(
-            (e) => {
-              l(null != e ? e.id : null);
-            },
-            [l],
-          ),
-          N = i.useCallback(
-            (e) => {
-              if (e && null != m) {
-                n !== m.id && g(n ?? null), l(m.id);
-                return;
-              }
-              l(A);
-            },
-            [l, m, n, A],
-          ),
-          C = i.useMemo(
-            () =>
-              null == m
-                ? null
-                : { giftCardWallet: m, checked: p, onChange: N, itemAmount: c },
-            [m, p, N, c],
-          );
-        return {
-          giftCardsEnabled: E,
-          dropdownPaymentSources: h,
-          dropdownPaymentSourceId: I,
-          giftCardWallet: m,
-          isGiftCardCreditsChecked: p,
-          handleGiftCardCreditsToggle: N,
-          handleDropdownPaymentSourceChange: S,
-          giftCardCheckboxProps: C,
-        };
-      }
-    },
     160946(e, t, n) {
       "use strict";
       n.d(t, { B: () => u, Y: () => _ });
@@ -60928,6 +60803,191 @@ ${s}`);
           if (!n.hasPaymentSourceForSKUIds(t, e))
             return d(`payment source ${t} not loaded for ${e}`), !1;
         return u;
+      }
+    },
+    606267(e, t, n) {
+      "use strict";
+      n.d(t, { Y0: () => h, iB: () => u });
+      var i = n(64700),
+        r = n(702841),
+        s = n(94420),
+        a = n(202613),
+        o = n(459357),
+        l = n(176095),
+        d = n(652215);
+      function _(e) {
+        let { giftCardsEnabled: t, checkoutPaymentSources: n } = e,
+          a = i.useMemo(() => c(n)?.id, [n]),
+          o = (0, s.sw)(),
+          d = o?.subtotal ?? o?.total,
+          _ = (0, r.bG)(
+            [l.A],
+            () => (t && null != a ? l.A.getBalance(a) : null),
+            [t, a],
+          );
+        return t && null != _
+          ? {
+              walletCoversSubtotal: null != d && _.amount >= d,
+              walletCoversTotal: null != o && _.amount >= o.total,
+              walletId: a,
+              isWalletBalanceLoaded: null != d,
+            }
+          : {
+              walletCoversSubtotal: !1,
+              walletCoversTotal: !1,
+              walletId: a,
+              isWalletBalanceLoaded: !1,
+            };
+      }
+      function u(e) {
+        let { checkoutPaymentSources: t, paymentSourceId: n, location: i } = e,
+          { enabled: r } = (0, o.c)({ location: i }),
+          {
+            walletCoversTotal: s,
+            walletId: a,
+            isWalletBalanceLoaded: l,
+          } = _({ giftCardsEnabled: r, checkoutPaymentSources: t });
+        return l && null != n && n === a && !s;
+      }
+      function c(e) {
+        return e.find((e) => e.source instanceof a.LQ) ?? null;
+      }
+      function E(e) {
+        let {
+          giftCardWallet: t,
+          dropdownPaymentSources: n,
+          subscriptionPaymentSourceId: i,
+          defaultPaymentSourceId: r,
+        } = e;
+        if (null != t && (null == i || i === t.id)) return t.id;
+        if (null != i) {
+          let e = n.find((e) => e.id === i);
+          if (null != e && e.enabled) return i;
+        }
+        if (null != r) {
+          let e = n.find((e) => e.id === r);
+          if (null != e && e.enabled) return r;
+        }
+        return n.find((e) => e.enabled)?.id ?? null;
+      }
+      function h(e) {
+        let {
+            checkoutPaymentSources: t,
+            paymentSourceId: n,
+            setPaymentSourceId: r,
+            location: s,
+            isReady: a = !0,
+            subscriptionPaymentSourceId: l,
+          } = e,
+          { enabled: u } = (0, o.c)({ location: s }),
+          { dropdownPaymentSources: h, giftCardWallet: m } = i.useMemo(() => {
+            let e = t.filter((e) => e.type !== d.hes.TDS_WALLET);
+            return u
+              ? { dropdownPaymentSources: e, giftCardWallet: c(t) }
+              : { dropdownPaymentSources: e, giftCardWallet: null };
+          }, [t, u]),
+          [f, g] = i.useState(null),
+          p = null != m && n === m.id,
+          A = i.useMemo(
+            () =>
+              null != f
+                ? f
+                : E({
+                    giftCardWallet: null,
+                    dropdownPaymentSources: h,
+                    subscriptionPaymentSourceId: l,
+                  }),
+            [h, l, f],
+          ),
+          I = i.useMemo(() => (p ? A : (n ?? null)), [A, p, n]),
+          T = i.useRef(!1);
+        i.useEffect(() => {
+          if (!a || 0 === t.length || T.current) return;
+          T.current = !0;
+          let e = E({
+            giftCardWallet: m,
+            dropdownPaymentSources: h,
+            subscriptionPaymentSourceId: l,
+            defaultPaymentSourceId: n,
+          });
+          e !== n && r(e);
+        }, [a, t, h, m, n, l, r]),
+          i.useEffect(() => {
+            a &&
+              0 !== t.length &&
+              null != n &&
+              T.current &&
+              (t.some((e) =>
+                ((e) => {
+                  let {
+                    paymentSource: t,
+                    paymentSourceId: n,
+                    giftCardsEnabled: i,
+                  } = e;
+                  return (
+                    (t.type !== d.hes.TDS_WALLET || !!i) &&
+                    null != n &&
+                    t.id === n &&
+                    t.enabled
+                  );
+                })({
+                  paymentSource: e,
+                  paymentSourceId: n,
+                  giftCardsEnabled: u,
+                }),
+              ) ||
+                r(
+                  E({
+                    giftCardWallet: m,
+                    dropdownPaymentSources: h,
+                    subscriptionPaymentSourceId: l,
+                    defaultPaymentSourceId: n,
+                  }),
+                ));
+          }, [a, u, t, h, m, n, l, r]);
+        let S = i.useCallback(
+            (e) => {
+              r(null != e ? e.id : null);
+            },
+            [r],
+          ),
+          N = i.useCallback(
+            (e) => {
+              if (e && null != m) {
+                n !== m.id && g(n ?? null), r(m.id);
+                return;
+              }
+              r(A);
+            },
+            [r, m, n, A],
+          ),
+          {
+            walletCoversSubtotal: C,
+            walletCoversTotal: R,
+            isWalletBalanceLoaded: O,
+          } = _({ giftCardsEnabled: u, checkoutPaymentSources: t });
+        i.useEffect(() => {
+          O && !C && p && r(A);
+        }, [O, C, p, r, A]);
+        let y = i.useMemo(
+          () =>
+            null == m
+              ? null
+              : { giftCardWallet: m, checked: p, onChange: N, disabled: !C },
+          [m, p, N, C],
+        );
+        return {
+          giftCardsEnabled: u,
+          dropdownPaymentSources: h,
+          dropdownPaymentSourceId: I,
+          giftCardWallet: m,
+          isGiftCardCreditsChecked: p,
+          handleGiftCardCreditsToggle: N,
+          handleDropdownPaymentSourceChange: S,
+          giftCardCheckboxProps: y,
+          walletCoversSubtotal: C,
+          walletCoversTotal: R,
+        };
       }
     },
     942340(e, t, n) {
@@ -65335,10 +65395,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534481")),
+                ((e = parseInt("534527")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534481",
+                    "Trying to open a changelog for an invalid build number 534527",
                   ),
                   (e = 0)),
                 e),
@@ -78050,106 +78110,95 @@ ${s}`);
         };
       }
     },
-    624055(e, t, n) {
+    61572(e, t, n) {
       "use strict";
-      n.d(t, { N: () => E });
+      n.d(t, { N: () => c });
       var i = n(627968),
         r = n(64700),
         s = n(17928),
-        a = n(918022),
+        a = n(606267),
         o = n(156312),
         l = n(351906),
-        d = n(826469),
-        _ = n(94420),
-        u = n(232467);
-      let c = (e) => {
+        d = n(935899),
+        _ = n(232467);
+      let u = (e) => {
           let {
               label: t,
               additionalPaymentSourceDropdownProps: n,
               disabled: o,
-              setPaymentSourceId: c,
-              location: E,
-              subscriptionPaymentSourceId: h,
-              onPaymentSourceAdd: m,
-              paymentSourceId: f,
+              setPaymentSourceId: u,
+              location: c,
+              subscriptionPaymentSourceId: E,
+              onPaymentSourceAdd: h,
+              paymentSourceId: m,
             } = e,
             {
-              giftCardsEnabled: g,
-              giftCardCheckboxProps: p,
+              giftCardsEnabled: f,
+              giftCardCheckboxProps: g,
+              walletCoversSubtotal: p,
               basePaymentSourceDropdownProps: A,
             } = ((e) => {
-              let t,
-                {
-                  paymentSourceId: n,
-                  setPaymentSourceId: i,
-                  location: o,
-                  subscriptionPaymentSourceId: u,
+              let {
+                  paymentSourceId: t,
+                  setPaymentSourceId: n,
+                  location: i,
+                  subscriptionPaymentSourceId: o,
                 } = e,
-                c =
-                  ((t = (0, _.t4)((e) => e.checkoutInvoicePreview)),
-                  r.useMemo(() => {
-                    if (null == t) return [];
-                    let e = t.checkoutContext;
-                    return null == e || null == e.payment_sources
-                      ? []
-                      : e.payment_sources.map(d.A.createFromCheckoutContext);
-                  }, [t])),
-                E = (0, _.t4)((e) => {
-                  let { checkoutInvoicePreview: t } = e;
-                  return null != t ? t.total : void 0;
-                }),
+                _ = (0, d.D)(),
                 {
-                  dropdownPaymentSources: h,
-                  giftCardsEnabled: m,
-                  dropdownPaymentSourceId: f,
-                  handleDropdownPaymentSourceChange: g,
-                  giftCardCheckboxProps: p,
-                } = (0, a.Y)({
-                  checkoutPaymentSources: c,
-                  paymentSourceId: n,
-                  setPaymentSourceId: i,
-                  location: o ?? "BaseStatefulPaymentSourceSelector",
-                  subscriptionPaymentSourceId: u,
-                  itemAmount: E,
+                  dropdownPaymentSources: u,
+                  giftCardsEnabled: c,
+                  dropdownPaymentSourceId: E,
+                  handleDropdownPaymentSourceChange: h,
+                  giftCardCheckboxProps: m,
+                  walletCoversSubtotal: f,
+                } = (0, a.Y0)({
+                  checkoutPaymentSources: _,
+                  paymentSourceId: t,
+                  setPaymentSourceId: n,
+                  location: i ?? "BaseStatefulPaymentSourceSelector",
+                  subscriptionPaymentSourceId: o,
                 }),
-                A = r.useMemo(() => {
-                  let e = h.find((e) => e.isDefault);
+                g = r.useMemo(() => {
+                  let e = u.find((e) => e.isDefault);
                   return null != e ? e.id : void 0;
-                }, [h]),
-                I = (0, s.bG)([l.A], () => l.A.hidePersonalInformation ?? !1);
+                }, [u]),
+                p = (0, s.bG)([l.A], () => l.A.hidePersonalInformation ?? !1);
               return {
-                giftCardsEnabled: m,
-                giftCardCheckboxProps: p,
+                giftCardsEnabled: c,
+                giftCardCheckboxProps: m,
+                walletCoversSubtotal: f,
                 basePaymentSourceDropdownProps: r.useMemo(
                   () => ({
-                    selectedPaymentSourceId: f,
-                    paymentSources: h,
-                    defaultPaymentSourceId: A,
-                    hidePersonalInformation: I,
-                    onChange: g,
+                    selectedPaymentSourceId: E,
+                    paymentSources: u,
+                    defaultPaymentSourceId: g,
+                    hidePersonalInformation: p,
+                    onChange: h,
                   }),
-                  [f, h, A, I, g],
+                  [E, u, g, p, h],
                 ),
               };
             })({
-              paymentSourceId: f,
-              setPaymentSourceId: c,
-              subscriptionPaymentSourceId: h,
-              location: E,
+              paymentSourceId: m,
+              setPaymentSourceId: u,
+              subscriptionPaymentSourceId: E,
+              location: c,
             }),
             I = r.useMemo(
-              () => ({ ...A, ...n, onPaymentSourceAdd: m }),
-              [A, m, n],
+              () => ({ ...A, ...n, onPaymentSourceAdd: h }),
+              [A, h, n],
             );
-          return (0, i.jsx)(u.nL, {
+          return (0, i.jsx)(_.nL, {
             label: t,
-            giftCardsEnabled: g,
-            giftCardCheckboxProps: p,
+            giftCardsEnabled: f,
+            giftCardCheckboxProps: g,
             paymentSourceDropdownProps: I,
+            showCheckboxAboveDropdown: p,
             disabled: o,
           });
         },
-        E = (e) => {
+        c = (e) => {
           let { setPaymentSourceId: t, paymentSourceId: n } = (0, o.P5)(),
             { setPaymentSourceId: s, paymentSourceId: a } = r.useMemo(
               () => ({
@@ -78158,7 +78207,7 @@ ${s}`);
               }),
               [e.setPaymentSourceId, e.paymentSourceId, t, n],
             );
-          return (0, i.jsx)(c, {
+          return (0, i.jsx)(u, {
             ...e,
             setPaymentSourceId: s,
             paymentSourceId: a,
@@ -78467,6 +78516,23 @@ ${s}`);
           );
         };
     },
+    935899(e, t, n) {
+      "use strict";
+      n.d(t, { D: () => a });
+      var i = n(64700),
+        r = n(826469),
+        s = n(94420);
+      let a = () => {
+        let e = (0, s.t4)((e) => e.checkoutInvoicePreview);
+        return i.useMemo(() => {
+          if (null == e) return [];
+          let t = e.checkoutContext;
+          return null == t || null == t.payment_sources
+            ? []
+            : t.payment_sources.map(r.A.createFromCheckoutContext);
+        }, [e]);
+      };
+    },
     558620(e, t, n) {
       "use strict";
       n.d(t, { A: () => a });
@@ -78687,7 +78753,7 @@ ${s}`);
       var z = n(17928),
         $ = n(123292),
         q = n(964486),
-        X = n(803375),
+        X = n(634927),
         Z = n(993408),
         Q = n(575593),
         J = n(452027),
@@ -80624,50 +80690,48 @@ ${s}`);
               giftCardWallet: t,
               checked: n,
               onChange: s,
-              itemAmount: p,
-              className: A,
-              disabled: I = !1,
+              className: p,
+              disabled: A = !1,
             } = e,
-            T = (0, o.bG)([c.A], () => c.A.getBalance(t.id), [t.id]),
-            S = (0, o.bG)([c.A], () => c.A.getIsFetching(t.id), [t.id]);
+            I = (0, o.bG)([c.A], () => c.A.getBalance(t.id), [t.id]),
+            T = (0, o.bG)([c.A], () => c.A.getIsFetching(t.id), [t.id]);
           r.useEffect(() => {
             (0, u.YP)(t.id);
           }, [t.id]);
-          let N = null == T && !S,
-            C = r.useMemo(() => {
-              if (null == T) return null;
-              let e = (0, E.$g)(T.amount, T.currency);
+          let S = null == I && !T,
+            N = r.useMemo(() => {
+              if (null == I) return null;
+              let e = (0, E.$g)(I.amount, I.currency);
               return m.intl.format(h.default["9Nb9Bz"], { amount: e });
-            }, [T]),
-            R = null != p && null != T && T.amount < p;
+            }, [I]);
           r.useEffect(() => {
-            (R || N) && n && s(!1);
-          }, [R, N, n, s]);
-          let O = I || S || R || N,
-            y = r.useCallback(() => {
-              O || s(!n);
-            }, [s, n, O]);
-          return N
+            S && n && s(!1);
+          }, [S, n, s]);
+          let C = A || T || S,
+            R = r.useCallback(() => {
+              C || s(!n);
+            }, [s, n, C]);
+          return S
             ? null
             : (0, i.jsxs)(l.D, {
-                className: a()(f.k, A),
-                onClick: y,
+                className: a()(f.k, p),
+                onClick: R,
                 role: "checkbox",
                 "aria-checked": n,
-                "aria-disabled": O,
+                "aria-disabled": C,
                 tabIndex: 0,
                 children: [
                   (0, i.jsx)(l.D, {
                     onClick: g,
                     children: (0, i.jsx)(d.S, {
-                      checked: n && !R && !N,
-                      onChange: y,
-                      disabled: O,
+                      checked: n && !S,
+                      onChange: R,
+                      disabled: C,
                       label: m.intl.string(h.default["febr+T"]),
-                      description: S ? void 0 : (C ?? void 0),
+                      description: T ? void 0 : (N ?? void 0),
                     }),
                   }),
-                  S && (0, i.jsx)(_.y, { type: _.y.Type.PULSING_ELLIPSIS }),
+                  T && (0, i.jsx)(_.y, { type: _.y.Type.PULSING_ELLIPSIS }),
                 ],
               });
         };
@@ -80707,47 +80771,39 @@ ${s}`);
     },
     70433(e, t, n) {
       "use strict";
-      n.d(t, { n: () => u });
+      n.d(t, { n: () => d });
       var i = n(627968),
         r = n(64700),
         s = n(452027),
-        a = n(702841),
-        o = n(637141),
-        l = n(176095),
-        d = n(87730),
-        _ = n(883296);
-      function u(e) {
+        a = n(637141),
+        o = n(87730),
+        l = n(883296);
+      function d(e) {
         let {
             label: t,
             giftCardsEnabled: n,
-            giftCardCheckboxProps: u,
-            paymentSourceDropdownProps: c,
-            disabled: E,
+            giftCardCheckboxProps: d,
+            paymentSourceDropdownProps: _,
+            showCheckboxAboveDropdown: u = !1,
+            disabled: c,
           } = e,
-          h = (0, a.bG)(
-            [l.A],
-            () => {
-              if (!n || null == u) return !1;
-              let e = l.A.getBalance(u.giftCardWallet.id);
-              return (
-                null != e && null != u.itemAmount && e.amount >= u.itemAmount
-              );
-            },
-            [n, u],
-          ),
-          m = r.useMemo(
+          E = r.useMemo(
             () =>
               n &&
-              null != u &&
-              (0, i.jsx)(d.o, { ...u, className: h ? _.r : _.K, disabled: E }),
-            [n, u, h, E],
+              null != d &&
+              (0, i.jsx)(o.o, {
+                ...d,
+                className: u ? l.r : l.K,
+                disabled: d.disabled || c,
+              }),
+            [n, d, u, c],
           );
         return (0, i.jsxs)(s.D, {
           label: t,
           children: [
-            h && m,
-            (0, i.jsx)(o.A, { ...c, disabled: E || (n && u?.checked === !0) }),
-            !h && m,
+            u && E,
+            (0, i.jsx)(a.A, { ..._, disabled: c || (n && d?.checked === !0) }),
+            !u && E,
           ],
         });
       }
@@ -85106,7 +85162,7 @@ ${s}`);
       var i = n(64700),
         r = n(702841),
         s = n(736056),
-        a = n(803375),
+        a = n(634927),
         o = n(4227),
         l = n(315949);
       function d() {
@@ -85205,7 +85261,7 @@ ${s}`);
         r = n(575593),
         s = n(702841),
         a = n(67480),
-        o = n(803375),
+        o = n(634927),
         l = n(590180),
         d = n(652215);
       function _(e, t) {
@@ -98873,7 +98929,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534481", versionHash: "2722b4491c7918a1ca4fbd2563b25ef17360b1fc" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534527", versionHash: "9f82cedc620e94a3edb708d839b7b34100c21902" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -165992,7 +166048,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       var i = n(636537),
         r = n(873298),
         s = n(228366),
-        a = n(803375),
+        a = n(634927),
         o = n(159201),
         l = n(761821),
         d = n(954571),
@@ -168939,7 +168995,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     623020(e, t, n) {
       "use strict";
-      n.d(t, { _: () => G });
+      n.d(t, { _: () => V });
       var i = n(627968),
         r = n(64700),
         s = n(284009),
@@ -168947,34 +169003,35 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         o = n(331322),
         l = n(304072),
         d = n(546605),
-        _ = n(742810),
-        u = n(558620),
-        c = n(427675),
-        E = n(94420),
-        h = n(810498),
-        m = n(367921),
-        f = n(209030),
-        g = n(427858),
-        p = n(45938),
-        A = n(927578),
-        I = n(937008),
-        T = n(156312),
-        S = n(166532),
-        N = n(615310),
-        C = n(50956),
-        R = n(921925),
-        O = n(520796),
-        y = n(800471),
-        v = n(367160),
-        D = n(971875),
-        L = n(216641),
-        b = n(69494),
-        w = n(871084),
-        P = n(482132),
-        k = n(788868),
-        M = n(818348),
-        U = n(985018);
-      let x = (e) => {
+        _ = n(606267),
+        u = n(742810),
+        c = n(558620),
+        E = n(427675),
+        h = n(94420),
+        m = n(810498),
+        f = n(367921),
+        g = n(209030),
+        p = n(427858),
+        A = n(45938),
+        I = n(927578),
+        T = n(937008),
+        S = n(156312),
+        N = n(166532),
+        C = n(615310),
+        R = n(50956),
+        O = n(921925),
+        y = n(520796),
+        v = n(800471),
+        D = n(367160),
+        L = n(971875),
+        b = n(216641),
+        w = n(69494),
+        P = n(871084),
+        k = n(482132),
+        M = n(788868),
+        U = n(818348),
+        x = n(985018);
+      let G = (e) => {
         let {
             isUnifiedCheckoutUIEnabled: t,
             openInvoiceId: n,
@@ -168983,22 +169040,22 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             onInvoiceError: l,
             onCurrencyChange: d,
             handleClose: _,
-            planGroup: c,
-            hasLegalTermsFlash: h,
+            planGroup: u,
+            hasLegalTermsFlash: E,
             legalTermsNodeRef: m,
-            handlePaymentSourceAdd: p,
+            handlePaymentSourceAdd: f,
             trialFooterMessageOverride: A,
-            reviewWarningMessage: S,
+            reviewWarningMessage: I,
             referralTrialOfferId: N,
             verifiedTrialId: C,
             originalTrialId: R,
           } = e,
-          O = (0, u.A)(),
-          { selectedPlanId: y, selectedSkuId: D } = (0, E.t4)((e) => ({
+          O = (0, c.A)(),
+          { selectedPlanId: y, selectedSkuId: v } = (0, h.t4)((e) => ({
             selectedPlanId: e.selectedPlanId,
             selectedSkuId: e.selectedSkuId,
           })),
-          { isGift: L } = (0, I.Pv)(),
+          { isGift: L } = (0, T.Pv)(),
           {
             hasFetchedSubscriptionPlans: b,
             unifiedCheckoutFlow: w,
@@ -169011,14 +169068,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             discountOffer: V,
             isEligibleForDiscount: F,
             isEligibleForTrial: B,
-          } = (0, T.P5)();
+          } = (0, S.P5)();
         a()(
           null != O,
           "Expected plan to be selected: flow=%s, planId=%s, hasFetchedPlans=%s, skuId=%s",
           w,
           y,
           b,
-          D,
+          v,
         );
         let H = r.useMemo(() => {
             let e = V?.discount?.plan_ids;
@@ -169028,12 +169085,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           W = {
             paymentSources: M,
             priceOptions: U,
-            planGroup: c,
+            planGroup: u,
             currencies: k,
             onCurrencyChange: d,
             setHasAcceptedTerms: G,
             legalTermsNodeRef: m,
-            hasLegalTermsFlash: h,
+            hasLegalTermsFlash: E,
             handleClose: _,
           },
           Y = O.id;
@@ -169041,15 +169098,15 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           let e = {
             ...W,
             selectedPlanId: Y,
-            handlePaymentSourceAdd: p,
+            handlePaymentSourceAdd: f,
             trialId: C,
             trialFooterMessageOverride: A,
-            reviewWarningMessage: S,
+            reviewWarningMessage: I,
             referralTrialOfferId: N,
             isTrial: j,
             isDiscount: H,
           };
-          return t ? (0, i.jsx)(v._, { ...e }) : (0, i.jsx)(f.A, { ...e });
+          return t ? (0, i.jsx)(D._, { ...e }) : (0, i.jsx)(g.A, { ...e });
         }
         {
           let e = {
@@ -169062,58 +169119,58 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             invoiceError: o,
             hasOpenInvoice: null != n,
           };
-          return (0, i.jsx)(g.A, { ...e, shouldUseUnifiedCheckoutUI: t });
+          return (0, i.jsx)(p.A, { ...e, shouldUseUnifiedCheckoutUI: t });
         }
       };
-      function G(e) {
+      function V(e) {
         let t,
           {
             handleStepChange: n,
             trialId: s,
-            trialFooterMessageOverride: f,
-            reviewWarningMessage: g,
-            planGroup: v,
-            openInvoiceId: G,
-            analyticsData: V,
-            analyticsLocation: F,
-            referralTrialOfferId: B,
-            initialPlanId: H,
-            subscriptionTier: j,
-            handleClose: W,
+            trialFooterMessageOverride: g,
+            reviewWarningMessage: p,
+            planGroup: D,
+            openInvoiceId: V,
+            analyticsData: F,
+            analyticsLocation: B,
+            referralTrialOfferId: H,
+            initialPlanId: j,
+            subscriptionTier: W,
+            handleClose: Y,
           } = e,
-          Y = (0, _.D7)({ location: "payment_modal_review_step" }),
-          { selectedSkuId: K, setEntitlementsGranted: z } = (0, E.t4)((e) => ({
+          K = (0, u.D7)({ location: "payment_modal_review_step" }),
+          { selectedSkuId: z, setEntitlementsGranted: $ } = (0, h.t4)((e) => ({
             selectedSkuId: e.selectedSkuId,
             setEntitlementsGranted: e.setEntitlementsGranted,
           })),
           {
-            activeSubscription: $,
-            setUpdatedSubscription: q,
-            contextMetadata: X,
-            purchaseError: Z,
-            setCurrency: Q,
-            setPurchaseState: J,
-            isPremium: ee,
-            purchaseType: et,
-            setAppliedUserDiscounts: en,
-            startedPaymentFlowWithPaymentSourcesRef: ei,
-            disablePurchasesForStorybook: er,
-            isPremiumGroupPurchase: es,
-            isEligibleForTrial: ea,
-            userTrialOffer: eo,
-          } = (0, T.P5)(),
-          el = (0, u.A)(),
-          ed = (0, N.bB)(),
+            activeSubscription: q,
+            setUpdatedSubscription: X,
+            contextMetadata: Z,
+            purchaseError: Q,
+            setCurrency: J,
+            setPurchaseState: ee,
+            isPremium: et,
+            purchaseType: en,
+            setAppliedUserDiscounts: ei,
+            startedPaymentFlowWithPaymentSourcesRef: er,
+            disablePurchasesForStorybook: es,
+            isPremiumGroupPurchase: ea,
+            isEligibleForTrial: eo,
+            userTrialOffer: el,
+          } = (0, S.P5)(),
+          ed = (0, c.A)(),
+          e_ = (0, C.bB)(),
           {
-            isGift: e_,
-            giftMessage: eu,
-            giftRecipient: ec,
-            claimableRewards: eE,
-          } = (0, I.Pv)();
-        a()(null != ed, "Step should be set");
-        let eh = r.useRef(null),
-          [em, ef] = (0, l.A)(!1, 500),
-          { planGroup: eg, disablePurchase: ep } = (function () {
+            isGift: eu,
+            giftMessage: ec,
+            giftRecipient: eE,
+            claimableRewards: eh,
+          } = (0, T.Pv)();
+        a()(null != e_, "Step should be set");
+        let em = r.useRef(null),
+          [ef, eg] = (0, l.A)(!1, 500),
+          { planGroup: ep, disablePurchase: eA } = (function () {
             let {
                 activeSubscription: e,
                 hasPaymentSources: t,
@@ -169123,66 +169180,72 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 purchasePreviewError: a,
                 purchaseType: o,
                 isEligibleForTrial: l,
-                checkoutPaymentSources: _,
-                hasCheckoutContextLoaded: h,
-              } = (0, T.P5)(),
-              f = (0, E.sw)(),
-              g = (0, u.A)(),
-              p = (0, c.Hf)(),
-              { isGift: S } = (0, I.Pv)(),
-              N = (0, L.W)(i, n),
-              C = r.useMemo(() => {
-                if (null == n) return !1;
-                if (!h) return !0;
-                let e = _.find((e) => e.id === n);
-                return null != e && !e.enabled;
-              }, [_, h, n]),
+                checkoutPaymentSources: u,
+                hasCheckoutContextLoaded: m,
+              } = (0, S.P5)(),
+              g = (0, h.sw)(),
+              p = (0, c.A)(),
+              A = (0, E.Hf)(),
+              { isGift: N } = (0, T.Pv)(),
+              C = (0, b.W)(i, n),
               R = r.useMemo(() => {
-                if (null != g) {
-                  if ((0, A.xq)(g.id)) return k.LE;
-                  if ((0, A.z4)(g.id)) return k.DA;
+                if (null == n) return !1;
+                if (!m) return !0;
+                let e = u.find((e) => e.id === n);
+                return null != e && !e.enabled;
+              }, [u, m, n]),
+              O = (0, _.iB)({
+                checkoutPaymentSources: u,
+                paymentSourceId: n,
+                location: "PaymentModalReviewStep",
+              }),
+              y = r.useMemo(() => {
+                if (null != p) {
+                  if ((0, I.xq)(p.id)) return M.LE;
+                  if ((0, I.z4)(p.id)) return M.DA;
                 }
                 return [];
-              }, [g]),
-              O = r.useMemo(
+              }, [p]),
+              v = r.useMemo(
                 () =>
-                  o === M.VV.ONE_TIME
-                    ? null == n || C || null == p || null != a
-                    : null == f ||
-                      (!S &&
-                        null != N &&
-                        o === M.VV.SUBSCRIPTION &&
+                  !!O ||
+                  (o === U.VV.ONE_TIME
+                    ? null == n || R || null == A || null != a
+                    : null == g ||
+                      (!N &&
+                        null != C &&
+                        o === U.VV.SUBSCRIPTION &&
                         l &&
-                        !N.canRedeemTrial()),
-                [o, p, n, a, f, S, N, l, C],
+                        !C.canRedeemTrial())),
+                [O, o, A, n, a, g, N, C, l, R],
               ),
-              y = (0, A.J$)(s.paymentSourceId),
-              v = (0, d.vg)("PaymentModalReviewStep"),
-              D = null != n ? _.find((e) => e.id === n) : null,
-              b =
-                o === M.VV.SUBSCRIPTION && null == g
-                  ? U.intl.string(U.t.YScQSF)
-                  : (0, m.Ro)({
+              D = (0, I.J$)(s.paymentSourceId),
+              L = (0, d.vg)("PaymentModalReviewStep"),
+              w = null != n ? u.find((e) => e.id === n) : null,
+              P =
+                o === U.VV.SUBSCRIPTION && null == p
+                  ? x.intl.string(x.t.YScQSF)
+                  : (0, f.Ro)({
                       purchaseType: o,
-                      plan: g,
+                      plan: p,
                       premiumSubscription: e,
-                      isGift: S,
-                      planGroup: R,
-                      isPrepaidPaymentSource: y,
+                      isGift: N,
+                      planGroup: y,
+                      isPrepaidPaymentSource: D,
                       paymentSourceId: n,
                       hasPaymentSources: t,
                       willRelocateStoreCountry:
-                        v && D?.relocationCountry != null,
+                        L && w?.relocationCountry != null,
                     });
             return {
-              paymentSource: N,
-              planGroup: R,
-              disablePurchase: O,
-              buttonText: b,
+              paymentSource: C,
+              planGroup: y,
+              disablePurchase: v,
+              buttonText: P,
             };
           })(),
-          eA = v ?? eg,
-          { verifiedTrialId: eI, originalTrialId: eT } = ((e) => {
+          eI = D ?? ep,
+          { verifiedTrialId: eT, originalTrialId: eS } = ((e) => {
             let {
                 trialId: t,
                 referralTrialOfferId: n,
@@ -169192,140 +169255,140 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               s = t ?? n ?? null;
             return {
               verifiedTrialId:
-                null != s && (!i || k.TP[s].skus.includes(r)) ? s : null,
+                null != s && (!i || M.TP[s].skus.includes(r)) ? s : null,
               originalTrialId: t,
             };
           })({
             trialId: s,
-            referralTrialOfferId: B,
-            isPremium: ee,
-            selectedSkuId: K,
+            referralTrialOfferId: H,
+            isPremium: et,
+            selectedSkuId: z,
           }),
-          eS = { user_trial_offer_id: eo?.id };
+          eN = { user_trial_offer_id: el?.id };
         r.useEffect(() => {
-          null != Z &&
-            null != eh.current &&
-            eh.current.scrollIntoView({ behavior: "smooth" });
-        }, [Z]);
-        let eN = r.useCallback(
+          null != Q &&
+            null != em.current &&
+            em.current.scrollIntoView({ behavior: "smooth" });
+        }, [Q]);
+        let eC = r.useCallback(
             (e, t, i) => {
-              q(e),
-                null != t && z(t),
-                null != i && en(i),
-                n(S.pn.CONFIRM, {
+              X(e),
+                null != t && $(t),
+                null != i && ei(i),
+                n(N.pn.CONFIRM, {
                   fulfillment: { subscription: e, entitlements: t },
                 });
             },
-            [n, q, z, en],
+            [n, X, $, ei],
           ),
-          eC = r.useRef(null),
-          [eR, eO] = r.useState(null),
-          ey = e_ && (0, p.Ik)(ec),
-          ev = null == H && null == j && et === M.VV.SUBSCRIPTION,
-          eD = (0, y.vT)({
-            isTrial: ea,
-            isGift: e_,
-            selectedSkuId: K,
-            startedPaymentFlowWithPaymentSources: ei.current,
+          eR = r.useRef(null),
+          [eO, ey] = r.useState(null),
+          ev = eu && (0, A.Ik)(eE),
+          eD = null == j && null == W && en === U.VV.SUBSCRIPTION,
+          eL = (0, v.vT)({
+            isTrial: eo,
+            isGift: eu,
+            selectedSkuId: z,
+            startedPaymentFlowWithPaymentSources: er.current,
           }),
-          eL = e_ && et === M.VV.ONE_TIME,
-          eb = eL || (eD ? ev && ee : ee),
-          ew = (0, h.px)(el, e_, eE),
-          eP = r.useCallback(
+          eb = eu && en === U.VV.ONE_TIME,
+          ew = eb || (eL ? eD && et : et),
+          eP = (0, m.px)(ed, eu, eh),
+          ek = r.useCallback(
             () =>
-              (Q(void 0), eD)
-                ? void n(S.pn.SKU_SELECT)
-                : es
-                  ? void n(S.pn.ADD_PAYMENT_STEPS)
-                  : ew
-                    ? void n(S.pn.SELECT_FREE_SKU)
-                    : eL
-                      ? n(S.pn.GIFT_CUSTOMIZATION)
-                      : n(S.pn.PLAN_SELECT),
-            [Q, n, eD, eL, ew, es],
+              (J(void 0), eL)
+                ? void n(N.pn.SKU_SELECT)
+                : ea
+                  ? void n(N.pn.ADD_PAYMENT_STEPS)
+                  : eP
+                    ? void n(N.pn.SELECT_FREE_SKU)
+                    : eb
+                      ? n(N.pn.GIFT_CUSTOMIZATION)
+                      : n(N.pn.PLAN_SELECT),
+            [J, n, eL, eb, eP, ea],
           ),
-          ek = () => {
-            n(S.pn.ADD_PAYMENT_STEPS);
+          eM = () => {
+            n(N.pn.ADD_PAYMENT_STEPS);
           },
-          eM = ep;
-        er && (eM = !0);
-        let eU = r.useCallback(() => {
-          n(S.pn.ADD_PAYMENT_STEPS);
+          eU = eA;
+        es && (eU = !0);
+        let ex = r.useCallback(() => {
+          n(N.pn.ADD_PAYMENT_STEPS);
         }, [n]);
         t =
-          et === M.VV.ONE_TIME
-            ? (0, i.jsx)(D.Ay, {
-                hasLegalTermsFlash: em,
-                legalTermsNodeRef: eC,
-                handlePaymentSourceAdd: eU,
+          en === U.VV.ONE_TIME
+            ? (0, i.jsx)(L.Ay, {
+                hasLegalTermsFlash: ef,
+                legalTermsNodeRef: eR,
+                handlePaymentSourceAdd: ex,
               })
-            : (0, i.jsx)(x, {
-                isUnifiedCheckoutUIEnabled: Y,
-                onCurrencyChange: (e) => Q(e),
-                onPaymentSourceAdd: ek,
-                onInvoiceError: eO,
-                invoiceError: eR,
-                handlePaymentSourceAdd: eU,
-                handleClose: W,
-                openInvoiceId: G,
-                trialFooterMessageOverride: f,
-                reviewWarningMessage: g,
-                referralTrialOfferId: B,
-                planGroup: eA,
-                originalTrialId: eT,
-                verifiedTrialId: eI,
-                hasLegalTermsFlash: em,
-                legalTermsNodeRef: eC,
+            : (0, i.jsx)(G, {
+                isUnifiedCheckoutUIEnabled: K,
+                onCurrencyChange: (e) => J(e),
+                onPaymentSourceAdd: eM,
+                onInvoiceError: ey,
+                invoiceError: eO,
+                handlePaymentSourceAdd: ex,
+                handleClose: Y,
+                openInvoiceId: V,
+                trialFooterMessageOverride: g,
+                reviewWarningMessage: p,
+                referralTrialOfferId: H,
+                planGroup: eI,
+                originalTrialId: eS,
+                verifiedTrialId: eT,
+                hasLegalTermsFlash: ef,
+                legalTermsNodeRef: eR,
               });
-        let ex = (0, i.jsx)(w.A, {
-            premiumSubscription: $ ?? null,
-            setPurchaseState: J,
-            invoiceError: eR,
-            onBack: eP,
-            onNext: eN,
-            legalTermsNodeRef: eC,
-            flashLegalTerms: () => ef(!0),
-            analyticsLocation: F,
-            baseAnalyticsData: V,
-            openInvoiceId: G,
-            flowStartTime: X.startTime,
-            isTrial: ea,
-            trialId: eI,
-            planGroup: eA,
-            backButtonEligible: eb,
-            metadata: eS,
-            disablePurchase: eM,
-            onPaymentSourceAdd: ek,
+        let eG = (0, i.jsx)(P.A, {
+            premiumSubscription: q ?? null,
+            setPurchaseState: ee,
+            invoiceError: eO,
+            onBack: ek,
+            onNext: eC,
+            legalTermsNodeRef: eR,
+            flashLegalTerms: () => eg(!0),
+            analyticsLocation: B,
+            baseAnalyticsData: F,
+            openInvoiceId: V,
+            flowStartTime: Z.startTime,
+            isTrial: eo,
+            trialId: eT,
+            planGroup: eI,
+            backButtonEligible: ew,
+            metadata: eN,
+            disablePurchase: eU,
+            onPaymentSourceAdd: eM,
           }),
-          eG = r.useMemo(
+          eV = r.useMemo(
             () =>
-              Y
+              K
                 ? null
                 : (0, i.jsxs)(i.Fragment, {
                     children: [
-                      (0, i.jsx)(C.Z, { giftMessage: eu }),
-                      !ey && (0, i.jsx)(b.A, { isEligibleForTrial: ea }),
+                      (0, i.jsx)(R.Z, { giftMessage: ec }),
+                      !ev && (0, i.jsx)(w.A, { isEligibleForTrial: eo }),
                     ],
                   }),
-            [eu, ey, ea, Y],
+            [ec, ev, eo, K],
           ),
-          eV = r.useMemo(
+          eF = r.useMemo(
             () =>
-              Y
+              K
                 ? null
                 : (0, i.jsxs)(o.B, {
                     direction: "vertical",
                     gap: 8,
                     padding: { bottom: 8 },
-                    children: [(0, i.jsx)(R.A, {}), (0, i.jsx)(O.A, {})],
+                    children: [(0, i.jsx)(O.A, {}), (0, i.jsx)(y.A, {})],
                   }),
-            [Y],
+            [K],
           );
         return (0, i.jsxs)(i.Fragment, {
           children: [
-            eG,
-            (0, i.jsxs)(P.dZ, { children: [eV, t] }),
-            (0, i.jsx)(P.UX, { children: ex }),
+            eV,
+            (0, i.jsxs)(k.dZ, { children: [eF, t] }),
+            (0, i.jsx)(k.UX, { children: eG }),
           ],
         });
       }
@@ -170382,7 +170445,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         u = n(636099),
         c = n(120700),
         E = n(742810),
-        h = n(803375),
+        h = n(634927),
         m = n(590180),
         f = n(61750),
         g = n(573359),
@@ -171290,7 +171353,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       n.d(t, { K: () => l });
       var i = n(627968),
         r = n(64700),
-        s = n(624055),
+        s = n(61572),
         a = n(232467),
         o = n(985018);
       let l = (e) => {
@@ -172066,7 +172129,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         O = n(10716),
         y = n(46225),
         v = n(20015),
-        D = n(918022),
+        D = n(606267),
         L = n(427675),
         b = n(94420),
         w = n(977445),
@@ -172307,7 +172370,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             warningAndErrorMessages: f,
             giftCardsEnabled: g,
             giftCardCheckboxProps: A,
-            disabled: N,
+            walletCoversSubtotal: N,
+            disabled: H,
           } = ((e) => {
             let {
                 hasLegalTermsFlash: t,
@@ -172353,70 +172417,70 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               dropdownPaymentSourceId: el,
               handleDropdownPaymentSourceChange: ed,
               giftCardCheckboxProps: e_,
-            } = (0, D.Y)({
+              walletCoversSubtotal: eu,
+            } = (0, D.Y0)({
               checkoutPaymentSources: g,
               paymentSourceId: d,
               setPaymentSourceId: _,
               location: "OneTimePurchaseReview",
               isReady: A,
-              itemAmount: ei?.amount,
             });
             I()(null != Q, "SKU must exist and be fetched."),
               I()(null != o, "Application must exist.");
-            let eu = (0, w.u)(o.id),
-              ec = (0, S.bG)([U.A], () => U.A.enabled),
-              eE = T.M.EEA_COUNTRIES.has(x.A.ipCountryCodeWithFallback),
-              eh = l === B.h.PURCHASING || l === B.h.COMPLETED,
-              em = g.find((e) => e.id === d) ?? null,
-              ef = null != em ? em.type : null,
-              eg =
-                null != J && J.length > 0 && (d === G.B || null === ef) && f
+            let ec = (0, w.u)(o.id),
+              eE = (0, S.bG)([U.A], () => U.A.enabled),
+              eh = T.M.EEA_COUNTRIES.has(x.A.ipCountryCodeWithFallback),
+              em = l === B.h.PURCHASING || l === B.h.COMPLETED,
+              ef = g.find((e) => e.id === d) ?? null,
+              eg = null != ef ? ef.type : null,
+              ep =
+                null != J && J.length > 0 && (d === G.B || null === eg) && f
                   ? k.fU.SELECT_PAYMENT_METHOD
                   : void 0,
-              ep = Q.productLine === W.EZt.SOCIAL_LAYER_GAME_ITEM,
-              eA = q && !ep,
-              eI = r.useMemo(
+              eA = Q.productLine === W.EZt.SOCIAL_LAYER_GAME_ITEM,
+              eI = q && !eA,
+              eT = r.useMemo(
                 () => ({
-                  testModeWarning: eu ? K.intl.string(K.t.OvMyMd) : null,
+                  testModeWarning: ec ? K.intl.string(K.t.OvMyMd) : null,
                   devShelfError:
                     (0, v.n)(o, W.gfo.EMBEDDED) && m === O.$.ERROR
                       ? K.intl.string(K.t.tAmECt)
                       : null,
                   socialLayerGameItemDisclaimer:
-                    ep && X && !Z && !j ? K.intl.string(K.t["3pLGHL"]) : null,
+                    eA && X && !Z && !j ? K.intl.string(K.t["3pLGHL"]) : null,
                 }),
-                [eu, o, m, ep, X, Z, j],
+                [ec, o, m, eA, X, Z, j],
               ),
-              eT = r.useMemo(
+              eS = r.useMemo(
                 () => ({
                   paymentSources: es,
                   selectedPaymentSourceId: el,
                   onChange: ed,
                   onPaymentSourceAdd: s,
-                  hidePersonalInformation: ec,
+                  hidePersonalInformation: eE,
                   paymentGatewayRestrictions: J,
                   defaultPaymentSourceId: es.find((e) => e.isDefault)?.id,
                 }),
-                [es, el, ed, s, ec, J],
+                [es, el, ed, s, eE, J],
               ),
-              eS = r.useMemo(
+              eN = r.useMemo(
                 () =>
                   Q.productLine === W.EZt.COLLECTIBLES
-                    ? (0, i.jsx)(Y, { paymentSourceType: ef })
+                    ? (0, i.jsx)(Y, { paymentSourceType: eg })
                     : (0, i.jsx)(P.A, {
                         isActive: t,
                         ref: n,
                         children: (0, i.jsx)(R.A, {
                           onChange: u,
                           forceShow: !0,
-                          showWithdrawalWaiver: eE,
-                          disabled: eh,
+                          showWithdrawalWaiver: eh,
+                          disabled: em,
                           subscriptionPlan: null,
                           finePrintClassname: z.i,
                           purchaseType: E,
                           isGift: j,
                           finePrint: (0, i.jsx)(C.A, {
-                            paymentSourceType: ef,
+                            paymentSourceType: eg,
                             isEmbeddedIAP: c,
                             purchaseType: E,
                             productLine: Q.productLine,
@@ -172426,7 +172490,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                           }),
                         }),
                       }),
-                [t, n, u, eE, eh, E, j, ef, c, Q.productLine, o.name, X, Z],
+                [t, n, u, eh, em, E, j, eg, c, Q.productLine, o.name, X, Z],
               );
             return {
               sku: Q,
@@ -172435,19 +172499,20 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               isGift: j,
               skuPricePreview: ei,
               isEmbeddedIAP: c,
-              shouldShowPurchaseReviewImage: eA,
-              paymentRestrictionBannerType: eg,
+              shouldShowPurchaseReviewImage: eI,
+              paymentRestrictionBannerType: ep,
               hasCheckoutContextLoaded: A,
               devShelfFetchState: m,
               isStepLoading: !A && null == h,
               purchasePreviewError: h,
-              warningAndErrorMessages: eI,
-              paymentSourceDropdownProps: eT,
-              purchaseTermsAndLegalContent: eS,
+              warningAndErrorMessages: eT,
+              paymentSourceDropdownProps: eS,
+              purchaseTermsAndLegalContent: eN,
               giftCardWallet: ea,
               giftCardsEnabled: eo,
               giftCardCheckboxProps: e_,
-              disabled: eh,
+              walletCoversSubtotal: eu,
+              disabled: em,
             };
           })({
             hasLegalTermsFlash: t,
@@ -172455,22 +172520,22 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             handlePaymentSourceAdd: s,
           }),
           {
-            currencies: H,
-            displayCurrency: j,
-            setCurrency: $,
-            priceOptions: q,
+            currencies: j,
+            displayCurrency: $,
+            setCurrency: q,
+            priceOptions: X,
           } = (0, p.P5)(),
-          X = r.useMemo(
+          Z = r.useMemo(
             () =>
               (0, i.jsx)(_.qX, {
                 label: K.intl.string(K.t["/AAR02"]),
-                selectedCurrency: q.currency ?? j,
-                currencies: H,
-                onChange: $,
+                selectedCurrency: X.currency ?? $,
+                currencies: j,
+                onChange: q,
               }),
-            [q.currency, j, H, $],
+            [X.currency, $, j, q],
           ),
-          Z = (0, i.jsxs)(i.Fragment, {
+          Q = (0, i.jsxs)(i.Fragment, {
             children: [
               (0, i.jsx)(_.nL, {
                 label: K.intl.string(K.t["u+Cw58"]),
@@ -172480,12 +172545,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   ...c,
                   shouldUseUnifiedCheckoutUI: !0,
                 },
-                disabled: N,
+                showCheckboxAboveDropdown: N,
+                disabled: H,
               }),
-              X,
+              Z,
             ],
           }),
-          Q = r.useMemo(() => {
+          ee = r.useMemo(() => {
             let e = [];
             return (
               null != f.testModeWarning &&
@@ -172503,7 +172569,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               e.length > 0 ? e : null
             );
           }, [f.testModeWarning, f.devShelfError]),
-          ee = r.useMemo(() => {
+          et = r.useMemo(() => {
             let e = [];
             return (
               null != f.socialLayerGameItemDisclaimer &&
@@ -172523,10 +172589,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               isGift: u,
               sku: a,
               skuPricePreview: l,
-              paymentSelectContent: Z,
+              paymentSelectContent: Q,
               legalContent: E,
-              upperInlineNoticeProps: Q,
-              footerInlineNoticeProps: ee,
+              upperInlineNoticeProps: ee,
+              footerInlineNoticeProps: et,
             });
       }
     },
@@ -181123,7 +181189,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         T = n(509536),
         S = n(361158),
         N = n(976860),
-        C = n(803375),
+        C = n(634927),
         R = n(652215),
         O = n(985018),
         y = n(456508);
@@ -185928,7 +185994,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         h = n(457287),
         m = n(821891),
         f = n(953689),
-        g = n(624055),
+        g = n(61572),
         p = n(232467),
         A = n(94420),
         I = n(937008),
@@ -217061,7 +217127,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       var i = n(228366),
         r = n(803306),
         s = n(654107),
-        a = n(803375),
+        a = n(634927),
         o = n(370480),
         l = n(734057),
         d = n(696451),
@@ -217433,7 +217499,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         d = n(464792),
         _ = n(793574),
         u = n(688810),
-        c = n(803375),
+        c = n(634927),
         E = n(459192);
       function h(e) {
         let {
@@ -253032,7 +253098,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "2722b4491c7918a1ca4fbd2563b25ef17360b1fc",
+                    "9f82cedc620e94a3edb708d839b7b34100c21902",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259262,7 +259328,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534481",
+                  build_number: "534527",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -279896,36 +279962,37 @@ ${o.join(" +\n")}
             onSelectionChange: U,
             value: x,
             wrapTags: G = !1,
-            ...V
+            variant: V = "default",
+            ...F
           } = e,
-          F = r.useRef(null),
-          { fieldProps: B } = (0, c.n)(V),
-          { id: H, required: j, label: W, disabled: Y } = B,
+          B = r.useRef(null),
+          { fieldProps: H } = (0, c.n)(F),
+          { id: j, required: W, label: Y, disabled: K } = H,
           {
-            isOpen: K,
-            setIsOpen: z,
-            refs: $,
-            floatingStyles: q,
-            getReferenceProps: X,
-            getFloatingProps: Z,
-            transitionStyles: Q,
+            isOpen: z,
+            setIsOpen: $,
+            refs: q,
+            floatingStyles: X,
+            getReferenceProps: Z,
+            getFloatingProps: Q,
+            transitionStyles: J,
           } = (0, S.G)(),
-          J = r.useId(),
-          { options: ee, loading: et } = (0, T.K)({
-            active: K,
+          ee = r.useId(),
+          { options: et, loading: en } = (0, T.K)({
+            active: z,
             options: k,
             renderOption: M,
           }),
-          en = r.useRef(null),
           ei = r.useRef(null),
-          [er, es] = r.useState(null),
-          ea = null != er ? (0, N.ZN)(J, er) : void 0,
-          eo = r.useRef(!1),
+          er = r.useRef(null),
+          [es, ea] = r.useState(null),
+          eo = null != es ? (0, N.ZN)(ee, es) : void 0,
           el = r.useRef(!1),
-          ed = y ?? "multiple" !== n,
-          e_ = Array.isArray(x) ? x.length > 0 : null != x,
-          eu = Y || s,
-          { measuredWidth: ec, itemsForMeasurement: eE } = (function (e, t) {
+          ed = r.useRef(!1),
+          e_ = y ?? "multiple" !== n,
+          eu = Array.isArray(x) ? x.length > 0 : null != x,
+          ec = K || s,
+          { measuredWidth: eE, itemsForMeasurement: eh } = (function (e, t) {
             let { ref: n, width: s } = (0, o.Ay)(),
               a = r.useId();
             return {
@@ -279955,75 +280022,75 @@ ${o.join(" +\n")}
                 [e, t, a, n],
               ),
             };
-          })(ee, n),
-          eh = r.useCallback(() => {
-            eu || z(!K);
-          }, [eu, z, K]),
+          })(et, n),
           em = r.useCallback(() => {
-            z(!1), en.current?.focus();
-          }, [z]),
+            ec || $(!z);
+          }, [ec, $, z]),
           ef = r.useCallback(() => {
+            $(!1), ei.current?.focus();
+          }, [$]),
+          eg = r.useCallback(() => {
             !1 !== g &&
-              ("multiple" === n ? U([]) : U(null), en.current?.focus());
+              ("multiple" === n ? U([]) : U(null), ei.current?.focus());
           }, [U, n, g]);
         r.useEffect(() => {
-          f && en.current?.focus();
+          f && ei.current?.focus();
         }, [f]);
-        let eg = r.useRef(null),
-          ep = r.useCallback(
+        let ep = r.useRef(null),
+          eA = r.useCallback(
             (e) => {
-              if (!eg.current?.contains(e.relatedTarget)) {
-                if (el.current) {
-                  el.current = !1;
+              if (!ep.current?.contains(e.relatedTarget)) {
+                if (ed.current) {
+                  ed.current = !1;
                   return;
                 }
-                if (K && "single" === n && null != er) {
-                  let e = ee[er];
+                if (z && "single" === n && null != es) {
+                  let e = et[es];
                   null != e && !0 !== e.disabled && U(e.value);
                 }
-                K && z(!1);
+                z && $(!1);
               }
             },
-            [K, n, er, ee, U, z],
+            [z, n, es, et, U, $],
           ),
-          eA = r.useMemo(() => {
+          eI = r.useMemo(() => {
             let e = Array.isArray(x) ? x : [x];
-            return ee.filter((t) => (0, N.fI)(t.value, e));
-          }, [x, ee]),
-          eI = r.useCallback(
+            return et.filter((t) => (0, N.fI)(t.value, e));
+          }, [x, et]),
+          eT = r.useCallback(
             (e) => {
-              if (eu) return;
+              if (ec) return;
               let t = Array.from(e);
               "multiple" === n && t.length < 1
                 ? U([])
                 : "multiple" === n
                   ? U(t.map((e) => e.value))
                   : U(t[0]?.value),
-                ed && K && em();
+                e_ && z && ef();
             },
-            [eu, n, U, ed, em, K],
+            [ec, n, U, e_, ef, z],
           ),
-          { activeIndex: eT, handleKeyDown: eS } = (0, h.l)(!0, ee),
-          eN = r.useRef(null);
+          { activeIndex: eS, handleKeyDown: eN } = (0, h.l)(!0, et),
+          eC = r.useRef(null);
         r.useEffect(() => {
-          let e = eT !== eN.current;
-          (eN.current = eT),
-            null != eT && e && (es(eT), K || ((eo.current = !0), z(!0)));
-        }, [eT, K, z]);
-        let eC = r.useCallback(
+          let e = eS !== eC.current;
+          (eC.current = eS),
+            null != eS && e && (ea(eS), z || ((el.current = !0), $(!0)));
+        }, [eS, z, $]);
+        let eR = r.useCallback(
             (e) => {
-              if (eu) return;
-              let t = ee.length;
+              if (ec) return;
+              let t = et.length;
               switch (e.key) {
                 case "ArrowDown":
                 case "PageDown": {
                   let n = "PageDown" === e.key ? 10 : 1;
                   if (0 === t) return;
-                  if ((e.preventDefault(), !K || e.altKey)) {
-                    K || z(!0);
+                  if ((e.preventDefault(), !z || e.altKey)) {
+                    z || $(!0);
                     return;
                   }
-                  es((e) => {
+                  ea((e) => {
                     if (null === e) return 0;
                     let i = e + n;
                     return i >= t && v ? 0 : Math.min(i, t - 1);
@@ -280034,19 +280101,19 @@ ${o.join(" +\n")}
                 case "PageUp": {
                   let n = "PageUp" === e.key ? 10 : 1;
                   if (0 === t) return;
-                  if ((e.preventDefault(), e.altKey && K)) {
-                    if (null != er) {
-                      let e = ee[er];
+                  if ((e.preventDefault(), e.altKey && z)) {
+                    if (null != es) {
+                      let e = et[es];
                       if (null != e && !0 !== e.disabled) {
-                        eI([e]);
+                        eT([e]);
                         break;
                       }
                     }
-                    em();
+                    ef();
                     break;
                   }
-                  if (!K) return void z(!0);
-                  es((e) => {
+                  if (!z) return void $(!0);
+                  ea((e) => {
                     if (null === e) return 0;
                     let i = e - n;
                     return i < 0 && v ? t - 1 : Math.max(i, 0);
@@ -280055,156 +280122,157 @@ ${o.join(" +\n")}
                 }
                 case "Enter":
                 case " ":
-                  if ((e.preventDefault(), e.stopPropagation(), !K))
-                    return void z(!0);
-                  if (null == er || er > t - 1) return;
+                  if ((e.preventDefault(), e.stopPropagation(), !z))
+                    return void $(!0);
+                  if (null == es || es > t - 1) return;
                   {
-                    let e = ee[er];
+                    let e = et[es];
                     if (null == e || !0 === e.disabled) return;
-                    eI("single" === n ? [e] : (0, N.qH)(n, eA, e));
+                    eT("single" === n ? [e] : (0, N.qH)(n, eI, e));
                   }
                   break;
                 case "Home":
                   if ((e.preventDefault(), 0 === t)) return;
-                  es(0), K || ((eo.current = !0), z(!0));
+                  ea(0), z || ((el.current = !0), $(!0));
                   break;
                 case "End":
                   if ((e.preventDefault(), 0 === t)) return;
-                  es(t - 1), K || ((eo.current = !0), z(!0));
+                  ea(t - 1), z || ((el.current = !0), $(!0));
                   break;
                 case "Tab":
-                  if (K && "single" === n && null != er) {
-                    let e = ee[er];
+                  if (z && "single" === n && null != es) {
+                    let e = et[es];
                     null != e && !0 !== e.disabled && U(e.value);
                   }
-                  (el.current = !0), z(!1);
+                  (ed.current = !0), $(!1);
                   break;
                 case "ArrowLeft":
-                  e.preventDefault(), F.current?.firstChild?.focus();
+                  e.preventDefault(), B.current?.firstChild?.focus();
                   break;
                 case "ArrowRight":
-                  e.preventDefault(), F.current?.lastChild?.focus();
+                  e.preventDefault(), B.current?.lastChild?.focus();
                   break;
                 case "Backspace":
-                  e_ && (e.preventDefault(), F.current?.lastChild?.focus());
+                  eu && (e.preventDefault(), B.current?.lastChild?.focus());
                   break;
                 case "Escape":
-                  K
-                    ? (e.preventDefault(), e.stopPropagation(), em())
-                    : e_ &&
+                  z
+                    ? (e.preventDefault(), e.stopPropagation(), ef())
+                    : eu &&
                       g &&
-                      (e.preventDefault(), e.stopPropagation(), ef());
+                      (e.preventDefault(), e.stopPropagation(), eg());
                   break;
                 default:
-                  eS(e);
+                  eN(e);
               }
             },
-            [eu, K, ee, v, n, eA, er, U, eI, em, ef, eS, e_, g, z],
+            [ec, z, et, v, n, eI, es, U, eT, ef, eg, eN, eu, g, $],
           ),
-          eR = r.useMemo(() => {
+          eO = r.useMemo(() => {
             if (!R)
-              return `${Math.max(ec ?? 200, 200) * ("multiple" === n ? 1.5 : 1) + 24 * !!g + 36 + 12}px`;
-          }, [R, ec, n, g]),
-          eO = "multiple" === n && eA.length > 0,
-          ey = r.useRef(null);
+              return `${Math.max(eE ?? 200, 200) * ("multiple" === n ? 1.5 : 1) + 24 * !!g + 36 + 12}px`;
+          }, [R, eE, n, g]),
+          ey = "multiple" === n && eI.length > 0,
+          ev = r.useRef(null);
         r.useEffect(() => {
-          clearTimeout(ey.current),
-            eO &&
+          clearTimeout(ev.current),
+            ey &&
               !G &&
-              (ey.current = setTimeout(() => {
-                F.current?.lastElementChild?.scrollIntoView({
+              (ev.current = setTimeout(() => {
+                B.current?.lastElementChild?.scrollIntoView({
                   behavior: "smooth",
                   inline: "end",
                   block: "end",
                 });
               }, 10));
-        }, [eA, eO, G]);
-        let ev = (0, l.A)(ei, $.setReference),
-          eD = r.useCallback(
+        }, [eI, ey, G]);
+        let eD = (0, l.A)(er, q.setReference),
+          eL = r.useCallback(
             (e) => {
-              if (eu) return;
+              if (ec) return;
               let t = Array.from(e)[0],
-                n = eA.filter((e) => e.id !== t);
-              eI(n), 0 === n.length && en.current?.focus();
+                n = eI.filter((e) => e.id !== t);
+              eT(n), 0 === n.length && ei.current?.focus();
             },
-            [eI, eA, eu],
+            [eT, eI, ec],
           ),
-          eL = Math.max(
-            ee.findIndex((e) => e.id === eA[eA.length - 1]?.id),
+          eb = Math.max(
+            et.findIndex((e) => e.id === eI[eI.length - 1]?.id),
             0,
           ),
-          eb = r.useRef(!1);
+          ew = r.useRef(!1);
         r.useEffect(() => {
-          et || !K || eb.current
-            ? K || ((eb.current = !1), es(null), (eo.current = !1))
-            : ((eb.current = !0),
-              eo.current || es(ee.length > 0 ? eL : null),
-              (eo.current = !1),
-              en.current?.focus());
-        }, [et, K, eL, ee.length]);
-        let ew = (0, _.r)(d.A.modules.select.MAX_WIDTH),
-          eP = r.useMemo(
-            () => ({ horizontalControlColumnWidth: `min(${ew}px, auto)` }),
-            [ew],
+          en || !z || ew.current
+            ? z || ((ew.current = !1), ea(null), (el.current = !1))
+            : ((ew.current = !0),
+              el.current || ea(et.length > 0 ? eb : null),
+              (el.current = !1),
+              ei.current?.focus());
+        }, [en, z, eb, et.length]);
+        let eP = (0, _.r)(d.A.modules.select.MAX_WIDTH),
+          ek = r.useMemo(
+            () => ({ horizontalControlColumnWidth: `min(${eP}px, auto)` }),
+            [eP],
           );
         return (0, i.jsx)(c.D, {
-          ...B,
+          ...H,
           "data-mana-component": "select",
-          layoutConfig: eP,
+          layoutConfig: ek,
           children: (e) =>
             (0, i.jsx)("div", {
-              ref: eg,
-              style: { width: R ? "100%" : `minmax(${eR}px, 100%)` },
+              ref: ep,
+              style: { width: R ? "100%" : `minmax(${eO}px, 100%)` },
               children: (0, i.jsxs)(i.Fragment, {
                 children: [
                   (0, i.jsx)(I.p, {
-                    ref: ev,
-                    disabled: Y,
+                    ref: eD,
+                    disabled: K,
                     readOnly: s,
-                    loading: et,
+                    loading: en,
                     clearable: g,
                     fullWidth: R,
-                    isOpen: K,
-                    isInert: eu,
-                    hasValue: e_,
+                    isOpen: z,
+                    isInert: ec,
+                    hasValue: eu,
                     hasError: e?.errorMessageId != null,
-                    handleToggle: eh,
-                    handleClear: ef,
-                    ...X(),
+                    handleToggle: em,
+                    handleClear: eg,
+                    variant: V,
+                    ...Z(),
                     children: (0, i.jsxs)(u.s, {
-                      "aria-label": W,
-                      buttonRef: en,
+                      "aria-label": Y,
+                      buttonRef: ei,
                       buttonProps: {
-                        ...(null != H ? { id: H } : {}),
+                        ...(null != j ? { id: j } : {}),
                         style: { marginLeft: -4 },
                         role: "combobox",
                         "aria-haspopup": "listbox",
-                        "aria-controls": K ? J : void 0,
-                        "aria-expanded": K,
-                        "aria-activedescendant": ea,
+                        "aria-controls": z ? ee : void 0,
+                        "aria-expanded": z,
+                        "aria-activedescendant": eo,
                         "aria-errormessage": e?.errorMessageId,
                         "aria-invalid": e?.errorMessageId != null,
                         children: (0, i.jsx)(E.A, {
-                          children: eA.map((e) => e.label).join(", "),
+                          children: eI.map((e) => e.label).join(", "),
                         }),
                       },
-                      focusProps: { ringTarget: ei },
+                      focusProps: { ringTarget: er },
                       className: a()(C.L5, {
                         [C.kj]: G,
                         [C.M8]: "multiple" === n,
                       }),
-                      onClick: eh,
-                      onKeyDown: eC,
-                      onBlur: ep,
+                      onClick: em,
+                      onKeyDown: eR,
+                      onBlur: eA,
                       "aria-describedby": e?.describedById,
                       children: [
-                        (0, i.jsxs)(E.A, { children: [W, ", "] }),
+                        (0, i.jsxs)(E.A, { children: [Y, ", "] }),
                         (0, i.jsx)(O, {
-                          tagGroupRef: F,
+                          tagGroupRef: B,
                           placeholder: D,
                           selectionMode: n,
-                          selectedItems: eA,
-                          onRemove: eD,
+                          selectedItems: eI,
+                          onRemove: eL,
                         }),
                       ],
                     }),
@@ -280212,34 +280280,34 @@ ${o.join(" +\n")}
                   (0, i.jsx)(p.H, {
                     name: L,
                     form: b,
-                    disabled: eu,
+                    disabled: ec,
                     autoComplete: w,
                     selectionMode: n,
-                    selectedItems: eA,
-                    onSelectionChange: eI,
-                    listItems: ee,
+                    selectedItems: eI,
+                    onSelectionChange: eT,
+                    listItems: et,
                   }),
-                  !R && eE,
-                  !eu &&
-                    K &&
+                  !R && eh,
+                  !ec &&
+                    z &&
                     (0, i.jsx)("div", {
-                      ref: $.setFloating,
+                      ref: q.setFloating,
                       className: C.S_,
-                      ...Z(),
-                      style: { ...q, ...Q },
+                      ...Q(),
+                      style: { ...X, ...J },
                       children: (0, i.jsx)(h.q, {
-                        id: J,
+                        id: ee,
                         tabIndex: -1,
-                        required: j,
-                        items: ee,
+                        required: W,
+                        items: et,
                         selectionMode: n,
-                        selectedItems: eA,
-                        onSelectionChange: eI,
+                        selectedItems: eI,
+                        onSelectionChange: eT,
                         shouldFocusWrap: v,
-                        activeDescendantIndex: er,
+                        activeDescendantIndex: es,
                         renderListItem: (e) => (0, i.jsx)(A.c, { ...e }),
                         maxVisibleItems: P,
-                        loading: et,
+                        loading: en,
                       }),
                     }),
                 ],
@@ -280306,11 +280374,16 @@ ${o.join(" +\n")}
           children: p,
           handleToggle: A,
           handleClear: I,
+          variant: T = "default",
         } = e;
         return (0, i.jsxs)(d.F, {
           ref: t,
           containerClassName: s()(u.cQ, { [u.Ij]: l }),
-          className: s()(u.Bd, { [u.ar]: _, [u.ND]: c }),
+          className: s()(u.Bd, {
+            [u.ar]: _,
+            [u.ND]: c,
+            [u.O_]: "unsupported_payment_modal_card" === T,
+          }),
           "data-mana-component": "select-input-field",
           disabled: n,
           readOnly: r,
@@ -289386,7 +289459,7 @@ Total Time: ${o}ms
     615061(e, t, n) {
       "use strict";
       let i;
-      n.d(t, { A: () => ti });
+      n.d(t, { A: () => tr });
       var r,
         s,
         a,
@@ -290280,14 +290353,17 @@ Total Time: ${o}ms
       function ec(e) {
         return { id: e.payloadType, name: e.mimeType.split("/").slice(1)[0] };
       }
-      var eE = n(396574),
-        eh =
+      class eE {
+        jitterStatsMap = new Map();
+      }
+      var eh = n(396574),
+        em =
           (((o = {})[(o.AUDIO_BITRATE = 0)] = "AUDIO_BITRATE"),
           (o[(o.VIDEO_RESOLUTION_SCALE = 1)] = "VIDEO_RESOLUTION_SCALE"),
           (o[(o.VIDEO_BITRATE = 2)] = "VIDEO_BITRATE"),
           (o[(o.VIDEO_FRAMERATE = 3)] = "VIDEO_FRAMERATE"),
           o);
-      class em extends S.A {
+      class ef extends S.A {
         input;
         silenced = !1;
         interacted = !1;
@@ -290297,6 +290373,7 @@ Total Time: ${o}ms
         outputs = {};
         webrtcStats = new eo();
         silenceThreshold = -100;
+        transformStatsState = new eE();
         canHavePriority = new Set();
         prioritySpeakers = new Set();
         audioContext;
@@ -290333,33 +290410,33 @@ Total Time: ${o}ms
           this.input.destroy(e);
         }
         async getStats() {
-          if (!eE.fA) return null;
+          if (!eh.fA) return null;
           let e = await this.getRawStats(),
             t = null !== this.input.getVideoStreamId();
-          return (function (e, t, n, i, r) {
-            let s = {},
-              a = {},
-              o = [],
-              l = [];
+          return (function (e, t, n, i, r, s) {
+            let a = {},
+              o = {},
+              l = [],
+              d = [];
             for (let t of e.values())
               switch (t.type) {
                 case "candidate-pair":
-                  s[t.id] = t;
-                  break;
-                case "codec":
                   a[t.id] = t;
                   break;
+                case "codec":
+                  o[t.id] = t;
+                  break;
                 case "inbound-rtp":
-                  o.push(t);
+                  l.push(t);
                   break;
                 case "outbound-rtp":
-                  l.push(t);
+                  d.push(t);
               }
-            let d = Object.values(s).find((e) => "succeeded" === e.state);
-            if (void 0 === d) return null;
-            let _ = [];
-            for (let e of l) {
-              let t = a[e.codecId];
+            let _ = Object.values(a).find((e) => "succeeded" === e.state);
+            if (void 0 === _) return null;
+            let u = [];
+            for (let e of d) {
+              let t = o[e.codecId];
               if (null == t) continue;
               let i = {
                 type: e.kind,
@@ -290372,14 +290449,14 @@ Total Time: ${o}ms
                 packetsSent: e.packetsSent,
                 bitrateTarget: e.targetBitrate,
               };
-              if ("audio" === e.kind) _.push({ ...i, type: "audio" });
+              if ("audio" === e.kind) u.push({ ...i, type: "audio" });
               else if ("video" === e.kind && r) {
-                var u;
+                var c;
                 let t =
                   null !== e.frameWidth
                     ? { width: e.frameWidth, height: e.frameHeight }
                     : void 0;
-                _.push({
+                u.push({
                   ...i,
                   framesEncoded: e.framesEncoded,
                   keyFramesEncoded: e.keyFramesEncoded,
@@ -290389,8 +290466,8 @@ Total Time: ${o}ms
                   qpSum: e.qpSum,
                   averageEncodeTime:
                     null == e.framesEncoded ||
-                    null === (u = e.totalEncodeTime) ||
-                    0 === u
+                    null === (c = e.totalEncodeTime) ||
+                    0 === c
                       ? void 0
                       : ((1e3 * e.totalEncodeTime) / e.framesEncoded).toFixed(
                           1,
@@ -290404,13 +290481,14 @@ Total Time: ${o}ms
                 });
               }
             }
-            let c = {};
-            for (let e of o) {
-              let r = a[e.codecId];
+            let E = {},
+              h = new Map();
+            for (let e of l) {
+              let r = o[e.codecId];
               if (null == r) continue;
-              let s = t(e.ssrc);
-              if (null == s) continue;
-              let o = {
+              let a = t(e.ssrc);
+              if (null == a) continue;
+              let l = {
                 type: e.kind,
                 ssrc: e.ssrc,
                 timestamp: e.timestamp,
@@ -290425,29 +290503,64 @@ Total Time: ${o}ms
                 nackCount: e.nackCount,
               };
               if ("audio" === e.kind) {
-                let t =
+                let t = null,
+                  n = null,
+                  i = s.jitterStatsMap.get(e.ssrc) ?? {
+                    lastJitterBufferDelay: 0,
+                    lastJitterBufferTargetDelay: 0,
+                    lastJitterBufferEmittedCount: 0,
+                    lastJitterBuffer: 0,
+                    lastJitterBufferTarget: 0,
+                  };
+                if (
+                  void 0 !== e.jitterBufferEmittedCount &&
+                  i.lastJitterBufferEmittedCount !== e.jitterBufferEmittedCount
+                ) {
+                  e.jitterBufferEmittedCount < i.lastJitterBufferEmittedCount &&
+                    ((i.lastJitterBufferDelay = 0),
+                    (i.lastJitterBufferTargetDelay = 0),
+                    (i.lastJitterBufferEmittedCount = 0));
+                  let r =
+                    e.jitterBufferEmittedCount - i.lastJitterBufferEmittedCount;
                   void 0 !== e.jitterBufferDelay &&
-                  void 0 !== e.jitterBufferEmittedCount
-                    ? Math.round(
-                        (1e3 * e.jitterBufferDelay) /
-                          e.jitterBufferEmittedCount,
-                      )
-                    : 0;
-                null == c[s] && (c[s] = []),
-                  c[s].push({
-                    ...o,
+                    ((t = Math.round(
+                      (1e3 * (e.jitterBufferDelay - i.lastJitterBufferDelay)) /
+                        r,
+                    )),
+                    (i.lastJitterBuffer = t),
+                    (i.lastJitterBufferDelay = e.jitterBufferDelay)),
+                    void 0 !== e.jitterBufferTargetDelay &&
+                      ((n = Math.round(
+                        (1e3 *
+                          (e.jitterBufferTargetDelay -
+                            i.lastJitterBufferTargetDelay)) /
+                          r,
+                      )),
+                      (i.lastJitterBufferTarget = n),
+                      (i.lastJitterBufferTargetDelay =
+                        e.jitterBufferTargetDelay)),
+                    (i.lastJitterBufferEmittedCount =
+                      e.jitterBufferEmittedCount);
+                }
+                h.set(e.ssrc, i),
+                  null == E[a] && (E[a] = []),
+                  E[a].push({
+                    ...l,
                     audioLevel: e.audioLevel,
                     jitter: 1e3 * e.jitter,
-                    jitterBuffer: t,
+                    jitterBuffer: t ?? i.lastJitterBuffer,
+                    jitterBufferPreferred: n ?? i.lastJitterBufferTarget,
+                    audioJitterBufferSamples: null != t ? [t] : [],
+                    audioJitterTargetSamples: null != n ? [n] : [],
                   });
               } else if ("video" === e.kind) {
-                null == c[s] && (c[s] = []);
+                null == E[a] && (E[a] = []);
                 let t =
                   null !== e.frameWidth
                     ? { width: e.frameWidth, height: e.frameHeight }
                     : void 0;
-                c[s].push({
-                  ...o,
+                E[a].push({
+                  ...l,
                   resolution: t,
                   framesDecoded: e.framesDecoded,
                   keyFramesDecoded: e.keyFramesDecoded,
@@ -290475,18 +290588,19 @@ Total Time: ${o}ms
                 });
               }
             }
-            let E =
+            s.jitterStatsMap = h;
+            let m =
                 "firefox" === (platform.name ?? "unknown").toLowerCase() &&
                 142 === parseInt(platform.version ?? "", 10),
-              h = (d.currentRoundTripTime ?? 0) * (E ? 1 : 1e3);
+              f = (_.currentRoundTripTime ?? 0) * (m ? 1 : 1e3);
             return {
               transport: {
-                availableOutgoingBitrate: d.availableOutgoingBitrate ?? 0,
-                bytesReceived: d.bytesReceived,
-                bytesSent: d.bytesSent,
-                ping: h,
+                availableOutgoingBitrate: _.availableOutgoingBitrate ?? 0,
+                bytesReceived: _.bytesReceived,
+                bytesSent: _.bytesSent,
+                ping: f,
               },
-              rtp: { inbound: c, outbound: _ },
+              rtp: { inbound: E, outbound: u },
             };
           })(
             e,
@@ -290494,6 +290608,7 @@ Total Time: ${o}ms
             this.remoteVideoSinkWants,
             this.localVideoSinkWants,
             t,
+            this.transformStatsState,
           );
         }
         setEchoCancellation = (e) => this.input.setEchoCancellation(e);
@@ -290828,20 +290943,20 @@ Total Time: ${o}ms
         getMLSPairwiseFingerprint(e, t, n) {}
       }
       n(775443);
-      var ef = n(267721),
-        eg = n.n(ef),
-        ep = n(909203),
-        eA = n.n(ep),
-        eI = n(316179);
-      let eT = new T.Vy("SDP");
-      var eS =
+      var eg = n(267721),
+        ep = n.n(eg),
+        eA = n(909203),
+        eI = n.n(eA),
+        eT = n(316179);
+      let eS = new T.Vy("SDP");
+      var eN =
         (((l = {}).SENDRECV = "sendrecv"),
         (l.SENDONLY = "sendonly"),
         (l.RECVONLY = "recvonly"),
         (l.INACTIVE = "inactive"),
         l);
-      let eN = "UDP/TLS/RTP/SAVPF";
-      function eC(e) {
+      let eC = "UDP/TLS/RTP/SAVPF";
+      function eR(e) {
         switch (e) {
           case "recvonly":
             return "sendonly";
@@ -290853,7 +290968,7 @@ Total Time: ${o}ms
             return "inactive";
         }
       }
-      function eR(e, t, n) {
+      function eO(e, t, n) {
         let i = `${e}-${t}`,
           r = `${n}${i}`;
         return [
@@ -290863,8 +290978,8 @@ Total Time: ${o}ms
           { attribute: "label", id: t, value: r },
         ];
       }
-      function eO(e) {
-        return eI.write({
+      function ey(e) {
+        return eT.write({
           version: 0,
           timing: { start: 0, stop: 0 },
           origin: {
@@ -290889,7 +291004,7 @@ Total Time: ${o}ms
           media: e,
         });
       }
-      function ey(e) {
+      function ev(e) {
         let {
           mid: t,
           type: n,
@@ -290905,24 +291020,24 @@ Total Time: ${o}ms
           sendingVideo: c,
           enableAudioNack: E,
         } = e;
-        if ("inactive" === r && !eE.PF)
+        if ("inactive" === r && !eh.PF)
           return {
             connection: { ip: "0.0.0.0", version: 4 },
             direction: "inactive",
             fmtp: [],
             payloads: o,
             port: 0,
-            protocol: eN,
+            protocol: eC,
             rtp: [{ codec: "NULL", payload: o, rate: 0 }],
             mid: void 0,
             type: n,
           };
         let {
           media: [m],
-        } = eI.parse(s);
+        } = eT.parse(s);
         if (
           ((m.type = n),
-          (m.protocol = eN),
+          (m.protocol = eC),
           (m.payloads = o),
           (m.setup = i),
           (m.mid = t),
@@ -290931,17 +291046,17 @@ Total Time: ${o}ms
           (m.ssrcs = d),
           d.length > 0 &&
             (null != u &&
-              ((m.ssrcGroups = eg()(d, 4).map((e) => {
+              ((m.ssrcGroups = ep()(d, 4).map((e) => {
                 let t = e[0].id;
                 return { semantics: "FID", ssrcs: `${t} ${t + 1}` };
               })),
-              (m.ssrcs = eg()(d, 4)
+              (m.ssrcs = ep()(d, 4)
                 .map((e) => {
                   let t = e.map((e) => ((e = { ...e }), (e.id += 1), e));
                   return [...e, ...t];
                 })
                 .flat())),
-            eE.PF || "Firefox" === h().name))
+            eh.PF || "Firefox" === h().name))
         ) {
           let e = d.find((e) => "msid" === e.attribute);
           if (null == e) throw Error("msid missing");
@@ -291005,7 +291120,7 @@ Total Time: ${o}ms
         }
         return m;
       }
-      function ev(e, t, n, i, r) {
+      function eD(e, t, n, i, r) {
         let s = e.find((e) => e.codec === i);
         if (null == s) return null;
         let a = t.find((e) => RegExp(`^apt=${s.payload}`).test(e.config)),
@@ -291024,8 +291139,8 @@ Total Time: ${o}ms
           rtxPayloadType: o,
         };
       }
-      function eD(e, t) {
-        let n = eI.parse(e).media.reduce(
+      function eL(e, t) {
+        let n = eT.parse(e).media.reduce(
           (e, n) => {
             let i,
               { type: r, rtp: s, ssrcs: a, fmtp: o, direction: l, mid: d } = n;
@@ -291034,7 +291149,7 @@ Total Time: ${o}ms
             ) {
               case "audio":
                 [w.UK.OPUS].forEach((t, n) => {
-                  let i = ev(s, o, r, t, n);
+                  let i = eD(s, o, r, t, n);
                   null != i && e.codecs.push(i);
                 }),
                   "sendrecv" === l &&
@@ -291046,7 +291161,7 @@ Total Time: ${o}ms
                   ? [w.UK.H265, w.UK.H264, w.UK.VP8, w.UK.VP9]
                   : [w.UK.H264, w.UK.VP8, w.UK.VP9]
                 ).forEach((t, n) => {
-                  let i = ev(s, o, r, t, n);
+                  let i = eD(s, o, r, t, n);
                   null != i && e.codecs.push(i);
                 }),
                   "sendrecv" === l &&
@@ -291054,7 +291169,7 @@ Total Time: ${o}ms
                       (e.videoSSRC = i.id),
                     null != (i = a?.findLast((e) => "cname" === e.attribute)) &&
                       (i.id === e.videoSSRC &&
-                        eT.warn("Unable to find a unique rtx SSRC!"),
+                        eS.warn("Unable to find a unique rtx SSRC!"),
                       (e.rtxSSRC = i.id)));
             }
             return e;
@@ -291067,10 +291182,10 @@ Total Time: ${o}ms
             rtxSSRC: 0,
           },
         );
-        return (n.codecs = eA()(n.codecs, Q())), n;
+        return (n.codecs = eI()(n.codecs, Q())), n;
       }
-      function eL(e, t) {
-        let { codecs: n } = eD(e, t),
+      function eb(e, t) {
+        let { codecs: n } = eL(e, t),
           i = n.find((e) => e.name === w.UK.VP8),
           r = RegExp(
             `^a=ice|a=extmap|a=fingerprint|opus|VP8|${i?.rtxPayloadType ?? 0} rtx`,
@@ -291083,27 +291198,27 @@ Total Time: ${o}ms
           codecs: n,
         };
       }
-      function eb(e) {
+      function ew(e) {
         if (!e.includes("a=fingerprint"))
-          return eT.error("Remote SDP does not include fingerprint!"), !1;
+          return eS.error("Remote SDP does not include fingerprint!"), !1;
         if (!e.includes("a=ice-ufrag"))
-          return eT.error("Remote SDP does not include ICE user name!"), !1;
+          return eS.error("Remote SDP does not include ICE user name!"), !1;
         if (!e.includes("a=ice-pwd"))
-          return eT.error("Remote SDP does not include ICE password!"), !1;
+          return eS.error("Remote SDP does not include ICE password!"), !1;
         if (!e.includes("a=candidate"))
-          return eT.error("Remote SDP does not include ICE candidate!"), !1;
+          return eS.error("Remote SDP does not include ICE candidate!"), !1;
         if (!e.includes("c="))
-          return eT.error("Remote SDP does not include c-line!"), !1;
+          return eS.error("Remote SDP does not include c-line!"), !1;
         let t = e
           .split("\n")
           .filter((e) => e.startsWith("c="))
           .join()
           .trim();
         return (
-          !(t.split(" ").length < 3) || (eT.error(`Incorrect c-line: ${t}`), !1)
+          !(t.split(" ").length < 3) || (eS.error(`Incorrect c-line: ${t}`), !1)
         );
       }
-      function ew(e) {
+      function eP(e) {
         return [
           ...new Set(e.split(/\r\n/).filter((e) => e.startsWith("a=extmap:"))),
         ].map((e) => {
@@ -291114,7 +291229,7 @@ Total Time: ${o}ms
           };
         });
       }
-      class eP extends D.EventEmitter {
+      class ek extends D.EventEmitter {
         audioCodec = null;
         audioPayloadType = null;
         videoCodec = null;
@@ -291170,7 +291285,7 @@ Total Time: ${o}ms
           return this._sdp;
         }
         set sdp(e) {
-          if (!eb(e))
+          if (!ew(e))
             throw Error(`Incorrect SDP received from rtc-worker: ${e}`);
           (this._sdp = e),
             this.createAnswer(),
@@ -291208,7 +291323,7 @@ Total Time: ${o}ms
               i,
               n,
               r,
-              s === i || a === i ? this.direction : eS.INACTIVE,
+              s === i || a === i ? this.direction : eN.INACTIVE,
               o,
             ];
           });
@@ -291217,7 +291332,7 @@ Total Time: ${o}ms
             0,
             "outbound",
             e.type,
-            eC(e.direction),
+            eR(e.direction),
             `${e.type}_outbound_${t}`,
           ]);
           if ("answer" !== e) return n.concat(t);
@@ -291233,7 +291348,7 @@ Total Time: ${o}ms
                   n,
                   i,
                   r,
-                  eC(this.outboundStreams[t].direction),
+                  eR(this.outboundStreams[t].direction),
                   this.outboundStreams[t].mid,
                 ];
               });
@@ -291275,7 +291390,7 @@ Total Time: ${o}ms
               } = e,
               E = [];
             if (
-              (eT.info(`generateSessionDescription: ${JSON.stringify(u)}`),
+              (eS.info(`generateSessionDescription: ${JSON.stringify(u)}`),
               "Firefox" === h().name)
             ) {
               let e = "answer" === t ? "passive" : "active";
@@ -291283,7 +291398,7 @@ Total Time: ${o}ms
                 let [i, u, h, m, f] = t;
                 ("video" === h && (0 === l || 0 === _)) ||
                   E.push(
-                    ey({
+                    ev({
                       mid: f,
                       type: h,
                       setup: e,
@@ -291292,7 +291407,7 @@ Total Time: ${o}ms
                       codec: "audio" === h ? r : o,
                       payload: "audio" === h ? s : l,
                       bitrate: "audio" === h ? a : d,
-                      ssrcs: eR(u, i, "audio" === h ? "a" : "v"),
+                      ssrcs: eO(u, i, "audio" === h ? "a" : "v"),
                       extensions: c,
                     }),
                   );
@@ -291306,11 +291421,11 @@ Total Time: ${o}ms
                   })
                   .map((e) => {
                     let [t, n] = e;
-                    return eR(n, t, "a");
+                    return eO(n, t, "a");
                   });
               if (
                 (E.push(
-                  ey({
+                  ev({
                     mid: "audio",
                     type: "audio",
                     setup: e,
@@ -291332,10 +291447,10 @@ Total Time: ${o}ms
                   })
                   .map((e) => {
                     let [t, n] = e;
-                    return eR(n, t, "v");
+                    return eO(n, t, "v");
                   });
                 E.push(
-                  ey({
+                  ev({
                     mid: "video",
                     type: "video",
                     setup: e,
@@ -291351,7 +291466,7 @@ Total Time: ${o}ms
                 );
               }
             }
-            return new RTCSessionDescription({ type: t, sdp: eO(E) });
+            return new RTCSessionDescription({ type: t, sdp: ey(E) });
           })({
             type: e,
             baseSDP: a,
@@ -291369,8 +291484,8 @@ Total Time: ${o}ms
           return this.emit(e, o), Promise.resolve(o);
         }
       }
-      let ek = new T.Vy("PeerConnection");
-      class eM extends D.EventEmitter {
+      let eM = new T.Vy("PeerConnection");
+      class eU extends D.EventEmitter {
         bitrate;
         pc;
         stream = null;
@@ -291382,7 +291497,7 @@ Total Time: ${o}ms
           const t = (this.pc = new RTCPeerConnection({
             sdpSemantics: "plan-b",
           }));
-          eE.LU
+          eh.LU
             ? ((t.onconnectionstatechange =
                 this.handlePeerConnectionStateChange),
               (t.oniceconnectionstatechange =
@@ -291392,13 +291507,13 @@ Total Time: ${o}ms
             (t.onsignalingstatechange = this.handleSignalingStateChange),
             (t.onicegatheringstatechange = this.handleIceGatheringStateChange),
             (t.ontrack = this.handleTrack.bind(this)),
-            ek.info("Constructed RTCPeerConnection");
+            eM.info("Constructed RTCPeerConnection");
         }
         setBitRate(e) {
           this.bitrate !== e && ((this.bitrate = e), this.negotiationNeeded());
         }
         close() {
-          ek.info("Close RTCPeerConnection"),
+          eM.info("Close RTCPeerConnection"),
             "closed" !== this.signalingState && this.pc.close(),
             this.removeAllListeners();
         }
@@ -291452,7 +291567,7 @@ Total Time: ${o}ms
             })
             .catch((t) => {
               if ("have-remote-offer" === e.signalingState)
-                return ek.error(t), this.createOffer();
+                return eM.error(t), this.createOffer();
               throw t;
             });
         }
@@ -291468,7 +291583,7 @@ Total Time: ${o}ms
             })
             .catch((t) => {
               throw (
-                (ek.warn(
+                (eM.warn(
                   `PeerConnection#createAnswer: Attempted to set local description in state: ${e.signalingState}`,
                 ),
                 t)
@@ -291493,7 +291608,7 @@ Total Time: ${o}ms
         makeOfferAnswerOptions() {
           return {
             offerToReceiveAudio: !0,
-            offerToReceiveVideo: eE.g7,
+            offerToReceiveVideo: eh.g7,
             iceRestart: !1,
           };
         }
@@ -291518,7 +291633,7 @@ Total Time: ${o}ms
         }
         handlePeerConnectionStateChange = () => {
           let e = this.peerConnectionState;
-          ek.info("peerConnectionState =>", e),
+          eM.info("peerConnectionState =>", e),
             "connecting" === e
               ? "connected" === this.iceConnectionState
                 ? this.emit(e)
@@ -291527,12 +291642,12 @@ Total Time: ${o}ms
         };
         handleIceConnectionStateChange = () => {
           let e = this.iceConnectionState;
-          ek.info("iceConnectionState =>", e),
+          eM.info("iceConnectionState =>", e),
             "completed" === e && (e = "connected"),
             this.emit(e);
         };
         handleSignalingStateChange = () => {
-          ek.info(
+          eM.info(
             `signalingState => ${this.signalingState}, negotiation needed: ${this._negotiationNeeded.toString()}`,
           ),
             "stable" === this.signalingState &&
@@ -291540,19 +291655,19 @@ Total Time: ${o}ms
               this._negotiationNeeded && this.negotiationNeeded());
         };
         handleIceGatheringStateChange = () => {
-          ek.info("iceGatheringState =>", this.iceGatheringState);
+          eM.info("iceGatheringState =>", this.iceGatheringState);
         };
         handleTrack = (e) => {
           this.emitTrack(e.streams[0].id, e.track);
         };
       }
       n(667532);
-      var eU = n(837385),
-        ex = n.n(eU),
-        eG = n(415955),
-        eV = n.n(eG);
+      var ex = n(837385),
+        eG = n.n(ex),
+        eV = n(415955),
+        eF = n.n(eV);
       n(323874), n(14289), n(35956);
-      var eF =
+      var eB =
           (((d = {})[(d.INITIALIZE = 0)] = "INITIALIZE"),
           (d[(d.RTC_TRANSFORM = 1)] = "RTC_TRANSFORM"),
           (d[(d.SET_KEY_RATCHET = 2)] = "SET_KEY_RATCHET"),
@@ -291560,16 +291675,16 @@ Total Time: ${o}ms
           (d[(d.UPDATE_CODECS = 4)] = "UPDATE_CODECS"),
           (d[(d.DESTROY_USER = 5)] = "DESTROY_USER"),
           d),
-        eB =
+        eH =
           (((_ = {})[(_.ENCRYPT = 0)] = "ENCRYPT"),
           (_[(_.DECRYPT = 1)] = "DECRYPT"),
           _),
-        eH =
+        ej =
           (((u = {})[(u.PROTOCOL_VERSION_CHANGED = 0)] =
             "PROTOCOL_VERSION_CHANGED"),
           u),
-        ej = n(264572).Buffer;
-      class eW extends p.A {
+        eW = n(264572).Buffer;
+      class eY extends p.A {
         logger;
         dave;
         transientKeys;
@@ -291597,26 +291712,26 @@ Total Time: ${o}ms
             this.setupKeyRatchetForUser(
               e,
               this.latestPreparedTransitionVersion,
-              eB.DECRYPT,
+              eH.DECRYPT,
             );
         }
         destroyUser(e) {
           this.recognizedUserIds.delete(e),
             this.encryptionWorker.postMessage({
-              type: eF.DESTROY_USER,
+              type: eB.DESTROY_USER,
               userId: e,
             });
         }
         updateLocalUserCodecs(e, t) {
           this.encryptionWorker.postMessage({
-            type: eF.UPDATE_CODECS,
+            type: eB.UPDATE_CODECS,
             audioCodec: e,
             videoCodec: t,
           });
         }
         updateSsrcs(e, t, n) {
           this.encryptionWorker.postMessage({
-            type: eF.UPDATE_SSRC,
+            type: eB.UPDATE_SSRC,
             userId: e,
             audioSsrc: t,
             videoSsrcs: n,
@@ -291646,7 +291761,7 @@ Total Time: ${o}ms
           let t = this.secureFramesTransitions.get(e);
           this.secureFramesTransitions.delete(e),
             t === this.dave.kDisabledVersion && this.mlsSession.Reset(),
-            this.setupKeyRatchetForUser(this.userId, t, eB.ENCRYPT),
+            this.setupKeyRatchetForUser(this.userId, t, eH.ENCRYPT),
             this.onSecureFramesStateChanged();
         }
         getMLSKeyPackage(e) {
@@ -291693,7 +291808,7 @@ Total Time: ${o}ms
           return (
             (e.onmessage = (e) => {
               let { data: t } = e;
-              t.type === eH.PROTOCOL_VERSION_CHANGED
+              t.type === ej.PROTOCOL_VERSION_CHANGED
                 ? ((this.currentEncryptorProtocolVersion = t.protocolVersion),
                   this.onSecureFramesStateChanged())
                 : this.logger.warn(
@@ -291707,7 +291822,7 @@ Total Time: ${o}ms
             (e.onmessageerror = (e) => {
               this.logger.error("Encryption worker message error", e);
             }),
-            e.postMessage({ type: eF.INITIALIZE }),
+            e.postMessage({ type: eB.INITIALIZE }),
             e
           );
         }
@@ -291725,7 +291840,7 @@ Total Time: ${o}ms
           else if ("createEncodedStreams" in e) {
             let { readable: t, writable: n } = e.createEncodedStreams();
             this.encryptionWorker.postMessage(
-              { type: eF.RTC_TRANSFORM, readable: t, writable: n },
+              { type: eB.RTC_TRANSFORM, readable: t, writable: n },
               [t, n],
             );
           } else throw Error("Encoded transforms not supported");
@@ -291733,7 +291848,7 @@ Total Time: ${o}ms
         setupKeyRatchetForUser(e, t, n) {
           let i = this.makeUserKeyRatchet(e, t);
           this.encryptionWorker.postMessage({
-            type: eF.SET_KEY_RATCHET,
+            type: eB.SET_KEY_RATCHET,
             userId: e,
             operation: n,
             protocolVersion: t,
@@ -291742,9 +291857,9 @@ Total Time: ${o}ms
         }
         prepareSecureFramesRatchets(e, t) {
           for (let e of this.getRecognizedUserIDs())
-            e !== this.userId && this.setupKeyRatchetForUser(e, t, eB.DECRYPT);
+            e !== this.userId && this.setupKeyRatchetForUser(e, t, eH.DECRYPT);
           e === this.dave.kInitTransitionId
-            ? (this.setupKeyRatchetForUser(this.userId, t, eB.ENCRYPT),
+            ? (this.setupKeyRatchetForUser(this.userId, t, eH.ENCRYPT),
               this.onSecureFramesStateChanged())
             : this.secureFramesTransitions.set(e, t),
             (this.latestPreparedTransitionVersion = t);
@@ -291758,7 +291873,7 @@ Total Time: ${o}ms
           };
           if (e.version !== this.dave.kDisabledVersion) {
             let t = this.mlsSession.GetLastEpochAuthenticator();
-            e.epochAuthenticator = ej.from(t).toString("base64");
+            e.epochAuthenticator = eW.from(t).toString("base64");
           }
           (null == this.lastSecureFramesStateUpdate ||
             this.lastSecureFramesStateUpdate.version !== e.version ||
@@ -291771,24 +291886,24 @@ Total Time: ${o}ms
             (this.lastSecureFramesStateUpdate = e));
         }
       }
-      let eY = new T.Vy("LibDaveManager"),
-        eK = null,
+      let eK = new T.Vy("LibDaveManager"),
         ez = null,
         e$ = null,
-        eq = {
+        eq = null,
+        eX = {
           onRuntimeInitialized: () => {
-            eY.info("DAVE loaded");
+            eK.info("DAVE loaded");
           },
         };
-      function eX() {
-        return ("Firefox" !== h().name || !(eE.It < 142)) && eE.PF && eE.zU;
+      function eZ() {
+        return ("Firefox" !== h().name || !(eh.It < 142)) && eh.PF && eh.zU;
       }
-      let eZ = h().name?.toLowerCase().includes("firefox");
-      function eQ(e, t) {
+      let eQ = h().name?.toLowerCase().includes("firefox");
+      function eJ(e, t) {
         e.sender.replaceTrack(t),
           (e.direction = null != t ? "sendrecv" : "recvonly");
       }
-      class eJ extends em {
+      class e0 extends ef {
         pc;
         sdp = null;
         negotiating = !1;
@@ -291815,13 +291930,13 @@ Total Time: ${o}ms
           super(e), (this.logger = new T.Vy(`UnifiedConnection(${e.context})`));
           let t = e.dave;
           null == t ||
-            eX() ||
+            eZ() ||
             (this.logger.warn(
               "DAVE is initialized but encoded transforms are not supported",
             ),
             (t = null)),
             null != t &&
-              ((this.daveSessionManager = new eW(
+              ((this.daveSessionManager = new eY(
                 t,
                 e.transientKeys,
                 this.userId,
@@ -291832,13 +291947,13 @@ Total Time: ${o}ms
               this.daveSessionManager.on(N.yq.SecureFramesUpdate, (e) => {
                 this.emit(N.yq.SecureFramesUpdate, e);
               })),
-            (this.videoSupported = eE.g7);
+            (this.videoSupported = eh.g7);
           const n = (this.pc = new RTCPeerConnection({
             bundlePolicy: "max-bundle",
             sdpSemantics: "unified-plan",
             encodedInsertableStreams: null != this.daveSessionManager,
           }));
-          eE.LU
+          eh.LU
             ? ((n.onconnectionstatechange =
                 this.handlePeerConnectionStateChange),
               (n.oniceconnectionstatechange =
@@ -291895,9 +292010,9 @@ Total Time: ${o}ms
           let t = "closed" === this.iceConnectionState;
           null != e &&
             !t &&
-            (eQ(this.audioTransceiver, e.getAudioTracks()[0]),
+            (eJ(this.audioTransceiver, e.getAudioTracks()[0]),
             this.videoSupported &&
-              eQ(this.videoTransceiver, e.getVideoTracks()[0])),
+              eJ(this.videoTransceiver, e.getVideoTracks()[0])),
             this.logger.info("Renegotiating: Streams changed"),
             this.handleNegotiationNeeded();
         }
@@ -291922,7 +292037,7 @@ Total Time: ${o}ms
           if (
             this.videoSupported &&
             void 0 !== n &&
-            (!eZ || void 0 === r.videoSSRC)
+            (!eQ || void 0 === r.videoSSRC)
           ) {
             let t = null != n && n.length > 0 ? n[0] : 0;
             if (t > 0) {
@@ -291962,14 +292077,14 @@ Total Time: ${o}ms
           this.voiceBitrate !== e &&
             (super.setBitRate(e),
             this.setAudioEncoderParameters([
-              { parameter: eh.AUDIO_BITRATE, value: e },
+              { parameter: em.AUDIO_BITRATE, value: e },
             ]));
         }
         setRemoteAudioHistory(e) {
           this.enableAudioNack = e > 0;
         }
         setSDP(e) {
-          if (!eb(e))
+          if (!ew(e))
             throw Error(`Incorrect SDP received from rtc-worker: ${e}`);
           if ("have-local-offer" !== this.signalingState)
             throw Error(`Invalid signaling state ${this.signalingState}`);
@@ -292043,7 +292158,7 @@ Total Time: ${o}ms
             .catch((e) => s(e));
         }
         setAudioEncoderParameters(e) {
-          let t = { [eh.AUDIO_BITRATE]: "maxBitrate" },
+          let t = { [em.AUDIO_BITRATE]: "maxBitrate" },
             n = [];
           for (let { parameter: i, value: r } of e) {
             let e = t[i];
@@ -292057,9 +292172,9 @@ Total Time: ${o}ms
         }
         setVideoEncoderParameters(e) {
           let t = {
-              [eh.VIDEO_BITRATE]: "maxBitrate",
-              [eh.VIDEO_RESOLUTION_SCALE]: "scaleResolutionDownBy",
-              [eh.VIDEO_FRAMERATE]: "maxFramerate",
+              [em.VIDEO_BITRATE]: "maxBitrate",
+              [em.VIDEO_RESOLUTION_SCALE]: "scaleResolutionDownBy",
+              [em.VIDEO_FRAMERATE]: "maxFramerate",
             },
             n = [];
           for (let { parameter: i, value: r } of e) {
@@ -292088,8 +292203,8 @@ Total Time: ${o}ms
               audioSSRC: r,
               videoSSRC: s,
               rtxSSRC: a,
-            } = eD(t, this.experimentFlags.has(w.fd.BROWSER_HEVC)),
-            o = ew(t);
+            } = eL(t, this.experimentFlags.has(w.fd.BROWSER_HEVC)),
+            o = eP(t);
           return {
             sdp: t,
             outboundStreams: n,
@@ -292142,7 +292257,7 @@ Total Time: ${o}ms
                   ssrc: o.ssrc,
                   cname: o.cname,
                   type: s,
-                  direction: eC(a),
+                  direction: eR(a),
                   mid: r,
                 }
               );
@@ -292203,13 +292318,13 @@ Total Time: ${o}ms
                   let t,
                     { ssrc: u, cname: f, type: g, direction: p, mid: A } = e;
                   "" !== f
-                    ? (t = eR(f, u, "audio" === g ? "a" : "v"))
+                    ? (t = eO(f, u, "audio" === g ? "a" : "v"))
                     : ((t = []),
                       "sendonly" === p
                         ? (p = "inactive")
                         : "sendrecv" === p && (p = "recvonly")),
                     h.push(
-                      ey({
+                      ev({
                         mid: A,
                         type: g,
                         setup: m,
@@ -292226,7 +292341,7 @@ Total Time: ${o}ms
                       }),
                     );
                 }),
-                new RTCSessionDescription({ type: t, sdp: eO(h) })
+                new RTCSessionDescription({ type: t, sdp: ey(h) })
               );
             })({
               type: "answer",
@@ -292290,9 +292405,9 @@ Total Time: ${o}ms
             return;
           }
           (this.negotiating = !0), (this.negotiationNeeded = !1);
-          let t = ex()(this.unassignedStreams.audio),
-            n = ex()(this.unassignedStreams.video),
-            i = eV()(this.users);
+          let t = eG()(this.unassignedStreams.audio),
+            n = eG()(this.unassignedStreams.video),
+            i = eF()(this.users);
           (this.unassignedStreams.audio = []),
             (this.unassignedStreams.video = []);
           let r = this.pc,
@@ -292347,7 +292462,7 @@ Total Time: ${o}ms
               ? this.emit(
                   N.yq.Connected,
                   "webrtc",
-                  eL(a, this.experimentFlags.has(w.fd.BROWSER_HEVC)),
+                  eb(a, this.experimentFlags.has(w.fd.BROWSER_HEVC)),
                 )
               : this.setRemoteAnswer(o, t, n, i);
         }
@@ -292417,17 +292532,17 @@ Total Time: ${o}ms
           }
         };
       }
-      function e0(e) {
+      function e1(e) {
         return e.split("-")[0];
       }
-      class e1 extends em {
+      class e2 extends ef {
         pc;
         fpc;
         codecs = [];
         logger;
         constructor(e) {
           super(e), (this.logger = new T.Vy(`Connection(${e.context})`));
-          const t = new eP();
+          const t = new ek();
           t.on("answer", (e) =>
             this.pc
               .setRemoteDescription(e)
@@ -292449,11 +292564,11 @@ Total Time: ${o}ms
                 );
             }),
             (t.direction =
-              null != this.input.stream ? eS.SENDRECV : eS.SENDONLY),
+              null != this.input.stream ? eN.SENDRECV : eN.SENDONLY),
             (this.fpc = t);
-          const n = new eM(this.voiceBitrate);
-          n.on("addtrack", (e, t) => this.createOutput(e0(e), t)),
-            n.on("removetrack", (e, t) => this.destroyOutput(e0(e), t)),
+          const n = new eU(this.voiceBitrate);
+          n.on("addtrack", (e, t) => this.createOutput(e1(e), t)),
+            n.on("removetrack", (e, t) => this.destroyOutput(e1(e), t)),
             n.once("connected", () => {
               this.input.reset(),
                 this.setConnectionState(w.$I.CONNECTED),
@@ -292477,9 +292592,9 @@ Total Time: ${o}ms
                   audioSSRC: s,
                   videoSSRC: a,
                   rtxSSRC: o,
-                } = eD(n, !1);
+                } = eL(n, !1);
               this.codecs = r;
-              let l = ew(n);
+              let l = eP(n);
               (t.outboundStreams = i),
                 (this.audioSSRC = s),
                 (t.extensions = l),
@@ -292501,7 +292616,7 @@ Total Time: ${o}ms
             }),
             n.once("offer", (e) => {
               let { sdp: t } = e;
-              this.emit(N.yq.Connected, "webrtc", eL(t, !1));
+              this.emit(N.yq.Connected, "webrtc", eb(t, !1));
             }),
             null != this.input.stream
               ? n.setStream(this.input.stream)
@@ -292526,7 +292641,7 @@ Total Time: ${o}ms
             this.pc.negotiationNeeded());
         }
         setStream(e) {
-          (this.fpc.direction = null != e ? eS.SENDRECV : eS.SENDONLY),
+          (this.fpc.direction = null != e ? eN.SENDRECV : eN.SENDONLY),
             this.pc.setStream(e ?? null);
         }
         createUser(e, t, n) {
@@ -292557,14 +292672,14 @@ Total Time: ${o}ms
         }
         setVideoEncoderParameters(e) {}
       }
-      let e2 = n.p + "worklet.8d84a64a97f8451a.js",
-        e3 = {
+      let e3 = n.p + "worklet.8d84a64a97f8451a.js",
+        e6 = {
           voiceActivityDetection: !0,
           offerToReceiveAudio: !0,
           offerToReceiveVideo: !1,
           iceRestart: !1,
         };
-      class e6 extends D.EventEmitter {
+      class e4 extends D.EventEmitter {
         userId;
         sinkId;
         input;
@@ -292627,7 +292742,7 @@ Total Time: ${o}ms
             (n.destroy(), delete this.outputs[e]);
         }
         handshake() {
-          this.pc1.createOffer(e3).then((e) => {
+          this.pc1.createOffer(e6).then((e) => {
             this.pc1
               .setLocalDescription(
                 ((e) => {
@@ -292667,7 +292782,7 @@ Total Time: ${o}ms
           });
         };
       }
-      class e4 extends D.EventEmitter {
+      class e7 extends D.EventEmitter {
         id;
         stream;
         pool;
@@ -292682,7 +292797,7 @@ Total Time: ${o}ms
             video: { ...e, frameRate: 30 },
           };
           if (navigator.mediaDevices?.getDisplayMedia != null)
-            return new e4(await navigator.mediaDevices.getDisplayMedia(i), n);
+            return new e7(await navigator.mediaDevices.getDisplayMedia(i), n);
           throw Error("UNKNOWN");
         }
         constructor(e, t) {
@@ -292718,10 +292833,10 @@ Total Time: ${o}ms
           );
         }
       }
-      class e7 {
+      class e5 {
         pool = {};
         async acquire(e, t) {
-          let n = await e4.get(e, t, this);
+          let n = await e7.get(e, t, this);
           return (this.pool[n.id] = n), n;
         }
         get(e) {
@@ -292734,10 +292849,10 @@ Total Time: ${o}ms
           this.pool[e.id] = e;
         }
       }
-      var e5 = n(935399),
-        e8 = n(503698),
-        e9 = n.n(e8);
-      function te(e) {
+      var e8 = n(935399),
+        e9 = n(503698),
+        te = n.n(e9);
+      function tt(e) {
         let {
             streamId: t,
             paused: n = !1,
@@ -292797,7 +292912,7 @@ Total Time: ${o}ms
             [n],
           );
         return (0, c.jsx)("video", {
-          className: e9()("media-engine-video", s),
+          className: te()("media-engine-video", s),
           ref: o,
           autoPlay: !0,
           onPause: u,
@@ -292806,7 +292921,7 @@ Total Time: ${o}ms
           ...a,
         });
       }
-      function tt(e) {
+      function tn(e) {
         let {
             deviceId: t = w.qe,
             width: n = 320,
@@ -292827,7 +292942,7 @@ Total Time: ${o}ms
             ),
             [l, s],
           ),
-          (0, e5.l0)(() => {
+          (0, e8.l0)(() => {
             l.destroy();
           }),
           m.useEffect(() => {
@@ -292844,14 +292959,14 @@ Total Time: ${o}ms
                 className: "media-engine-video",
                 style: { width: n, height: i },
               })
-            : (0, c.jsx)(te, { streamId: a, style: { width: n, height: i } })
+            : (0, c.jsx)(tt, { streamId: a, style: { width: n, height: i } })
         );
       }
-      let tn = new T.Vy("MediaEngineWebRTC");
-      class ti extends p.A {
-        Video = te;
+      let ti = new T.Vy("MediaEngineWebRTC");
+      class tr extends p.A {
+        Video = tt;
         Camera = (e) =>
-          (0, c.jsx)(tt, { ...e, onDeviceChange: this.handleDeviceChange });
+          (0, c.jsx)(tn, { ...e, onDeviceChange: this.handleDeviceChange });
         _audioContext = null;
         outputVolume = w.Hz;
         sourceId = w.dx;
@@ -292862,7 +292977,7 @@ Total Time: ${o}ms
         interacted = !1;
         loopback = null;
         voiceActivityInput = null;
-        desktopInputPool = new e7();
+        desktopInputPool = new e5();
         enablePromise = null;
         dave = null;
         transientKeys = null;
@@ -292894,11 +293009,11 @@ Total Time: ${o}ms
         static supported() {
           return (
             !__OVERLAY__ &&
-            (eE.Hz &&
+            (eh.Hz &&
             null != window.AudioContext &&
             null != window.RTCPeerConnection
               ? (n(528416), !0)
-              : (tn.info("WebRTC is not supported on", h().name, h().version),
+              : (ti.info("WebRTC is not supported on", h().name, h().version),
                 !1))
           );
         }
@@ -292912,14 +293027,14 @@ Total Time: ${o}ms
             case w.O5.AUDIO_OUTPUT_DEVICE:
               return k;
             case w.O5.VIDEO:
-              return eE.g7;
+              return eh.g7;
             case w.O5.DESKTOP_CAPTURE:
               return navigator.mediaDevices?.getDisplayMedia != null;
             case w.O5.VOICE_PROCESSING:
               return "Chrome" === h().name;
             case w.O5.NATIVE_PING:
             case w.O5.DIAGNOSTICS:
-              return eE.fA;
+              return eh.fA;
             case w.O5.DESKTOP_CAPTURE_APPLICATIONS:
             case w.O5.LOOPBACK:
             case w.O5.NOISE_SUPPRESSION:
@@ -292978,9 +293093,9 @@ Total Time: ${o}ms
               }),
               (r = `${null != h().name && "" !== h().name ? h().name : "unknown"} ${null != h().version && "" !== h().version ? h().version : "unknown"}`),
               (s = new T.Vy(`Connection(${i.context})`)),
-              eE.PF
-                ? (s.info(`Using Unified Plan (${r})`), new eJ(i))
-                : (s.info(`Using Plan B (${r})`), new e1(i)));
+              eh.PF
+                ? (s.info(`Using Unified Plan (${r})`), new e0(i))
+                : (s.info(`Using Plan B (${r})`), new e2(i)));
           return (
             (c.streamUserId = _),
             c.setOutputVolume(this.outputVolume),
@@ -293020,7 +293135,7 @@ Total Time: ${o}ms
         }
         async _enable() {
           if (this.enabled) return;
-          await this.getAudioContext().audioWorklet.addModule(e2);
+          await this.getAudioContext().audioWorklet.addModule(e3);
           let e = new $(this.getAudioContext());
           e.on("permission", this.handleAudioPermission);
           try {
@@ -293161,7 +293276,7 @@ Total Time: ${o}ms
         setLoopback(e, t) {
           e && null == this.loopback
             ? (this.enable(),
-              (this.loopback = new e6(
+              (this.loopback = new e4(
                 this.getAudioContext(),
                 this.sourceId,
                 this.sinkId,
@@ -293242,48 +293357,48 @@ Total Time: ${o}ms
         showSystemCaptureConfigurationUI(e) {}
         fetchAsyncResources(e) {
           return e.fetchDave
-            ? eX()
+            ? eZ()
               ? "object" != typeof WebAssembly
                 ? ((this.maxSupportedProtocolVersion = 0),
                   Promise.reject(
                     Error("WebAssembly is not supported on this platform."),
                   ))
                 : new Promise((e, t) => {
-                    (null != eK
-                      ? eK
-                      : (eK = new Promise((e, t) => {
+                    (null != ez
+                      ? ez
+                      : (ez = new Promise((e, t) => {
                           n.e("16566")
                             .then(n.bind(n, 22389))
                             .then((n) => {
                               let { DaveModuleFactory: i } = n;
-                              i(eq)
+                              i(eX)
                                 .then((t) => {
-                                  eY.info("Successfully initialized DAVE"),
-                                    (ez = t),
+                                  eK.info("Successfully initialized DAVE"),
+                                    (e$ = t),
                                     e(t);
                                 })
                                 .catch((e) => {
-                                  eY.error("Failed to initialize DAVE", e),
+                                  eK.error("Failed to initialize DAVE", e),
                                     t(e);
                                 });
                             })
                             .catch((e) => {
-                              eY.error("Failed to load DAVE module", e), t(e);
+                              eK.error("Failed to load DAVE module", e), t(e);
                             });
                         }))
                     )
                       .then((t) => {
                         (this.dave = t),
                           (this.transientKeys = (function () {
-                            if (null == ez)
+                            if (null == e$)
                               throw Error("DAVE module not loaded");
                             return (
-                              null == e$ && (e$ = new ez.TransientKeys()), e$
+                              null == eq && (eq = new e$.TransientKeys()), eq
                             );
                           })()),
                           (this.maxSupportedProtocolVersion =
                             t.MaxSupportedProtocolVersion()),
-                          tn.info(
+                          ti.info(
                             "Successfully initialized DAVE, version:",
                             this.maxSupportedProtocolVersion,
                           ),
@@ -293291,7 +293406,7 @@ Total Time: ${o}ms
                       })
                       .catch((e) => {
                         (this.maxSupportedProtocolVersion = 0),
-                          tn.error("Failed to initialize DAVE", e),
+                          ti.error("Failed to initialize DAVE", e),
                           t(e);
                       });
                   })
@@ -327324,6 +327439,7 @@ Total Time: ${o}ms
         mt: "clearButton__0edde",
         kK: "hiddenVisually__0edde",
         S_: "selectDropdown__0edde",
+        O_: "variantUnsupportedPaymentModalCard__0edde",
       };
     },
     165980(e, t, n) {
@@ -327727,4 +327843,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=72667.2c76eff26deed2d3.js.map
+//# sourceMappingURL=72667.ff25028529d3bcc5.js.map

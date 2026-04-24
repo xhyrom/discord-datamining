@@ -3171,12 +3171,13 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   --custom-input-background-color: var(--input-background-default);
   --custom-input-border-color: var(--input-border-default);
   --custom-input-text-color: var(--input-text-default);
+  --custom-input-border-radius: var(--radius-sm);
   --custom-input-hover-border-color: var(--input-border-hover);
   --custom-input-focus-border-color: var(--input-border-active);
   align-items: center;
   background-color: var(--custom-input-background-color);
   border: 1px solid var(--custom-input-border-color);
-  border-radius: var(--radius-sm);
+  border-radius: var(--custom-input-border-radius);
   box-sizing: border-box;
   color: var(--custom-input-text-color);
   display: flex;
@@ -5066,6 +5067,17 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   box-shadow: 0 2px 8px 0 var(--opacity-black-16);
   box-sizing: border-box;
   z-index: 10;
+}
+.variantUnsupportedPaymentModalCard__0edde {
+  --custom-input-background-color: var(--background-mod-subtle);
+  --custom-input-border-color: var(--border-subtle);
+  --custom-input-border-radius: var(--radius-md);
+}
+.variantUnsupportedPaymentModalCard__0edde .selectButton__0edde {
+  gap: var(--space-8);
+  min-height: 56px;
+  padding-block: var(--space-8);
+  padding-inline: var(--space-12) var(--space-4);
 }
 .selector_c248b6 {
   margin-top: var(--space-16);
@@ -51983,4 +51995,4 @@ html.disable-forced-colors * {
   --channels-spine-offset-left: 28px;
 }
 
-/*# sourceMappingURL=72667.596b4fa5bd4fe2ca.css.map*/
+/*# sourceMappingURL=72667.d8bf600441cd0b25.css.map*/
