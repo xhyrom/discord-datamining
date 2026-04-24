@@ -8965,6 +8965,7 @@
         suppress;
         requestToSpeakTimestamp;
         discoverable;
+        connectedAt;
         constructor(e) {
           super(),
             (this.userId = e.userId || ""),
@@ -8978,7 +8979,8 @@
             (this.selfStream = e.selfStream || !1),
             (this.suppress = e.suppress || !1),
             (this.requestToSpeakTimestamp = e.requestToSpeakTimestamp),
-            (this.discoverable = e.discoverable ?? !0);
+            (this.discoverable = e.discoverable ?? !0),
+            (this.connectedAt = e.connectedAt);
         }
         isVoiceMuted() {
           return (
@@ -11879,4 +11881,4 @@
     },
   },
 ]);
-//# sourceMappingURL=96888.6aa203a9e1cff1b5.js.map
+//# sourceMappingURL=96888.8d2ff518535c6e9c.js.map

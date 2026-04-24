@@ -33489,7 +33489,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534770, Version Hash: bf07475c21d577ce748e7789718b8b4055f5442b`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534838, Version Hash: 02560c514465707a78aea7104cd09a7cb5469c8a`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -57473,7 +57473,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "bf07475c21d577ce748e7789718b8b4055f5442b" === e.body.hash
+                  "02560c514465707a78aea7104cd09a7cb5469c8a" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -65402,10 +65402,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534770")),
+                ((e = parseInt("534838")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534770",
+                    "Trying to open a changelog for an invalid build number 534838",
                   ),
                   (e = 0)),
                 e),
@@ -78760,7 +78760,7 @@ ${s}`);
       var z = n(17928),
         $ = n(123292),
         q = n(964486),
-        X = n(634927),
+        X = n(29292),
         Z = n(993408),
         Q = n(575593),
         J = n(452027),
@@ -85169,7 +85169,7 @@ ${s}`);
       var i = n(64700),
         r = n(702841),
         s = n(736056),
-        a = n(634927),
+        a = n(29292),
         o = n(4227),
         l = n(315949);
       function d() {
@@ -85268,7 +85268,7 @@ ${s}`);
         r = n(575593),
         s = n(702841),
         a = n(67480),
-        o = n(634927),
+        o = n(29292),
         l = n(590180),
         d = n(652215);
       function _(e, t) {
@@ -95290,7 +95290,7 @@ ${s}`);
             n.e("85216"),
             n.e("17965"),
             n.e("76053"),
-            n.e("25525"),
+            n.e("58900"),
             n.e("80119"),
             n.e("80683"),
             n.e("96975"),
@@ -98936,7 +98936,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534770", versionHash: "bf07475c21d577ce748e7789718b8b4055f5442b" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534838", versionHash: "02560c514465707a78aea7104cd09a7cb5469c8a" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -124796,6 +124796,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               requestToSpeakTimestamp: n.request_to_speak_timestamp ?? null,
               discoverable: n.discoverable ?? !0,
               oldChannelId: tk.A.getUserVoiceChannelId(n.guild_id, n.user_id),
+              connectedAt: n.connected_at,
             });
         t3({ type: "VOICE_STATE_UPDATES", voiceStates: t });
       }
@@ -124947,6 +124948,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     requestToSpeakTimestamp:
                       e.request_to_speak_timestamp ?? null,
                     discoverable: e.discoverable ?? !0,
+                    connectedAt: e.connected_at,
                   })),
                 }),
                 tz.log(`Dispatched INITIAL_GUILD ${e.id}`));
@@ -125023,6 +125025,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     requestToSpeakTimestamp:
                       t.request_to_speak_timestamp ?? null,
                     discoverable: t.discoverable ?? !0,
+                    connectedAt: t.connected_at,
                   });
                 });
               }),
@@ -125516,6 +125519,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     requestToSpeakTimestamp:
                       e.request_to_speak_timestamp ?? null,
                     discoverable: e.discoverable ?? !0,
+                    connectedAt: e.connected_at,
                   })),
                 });
             }
@@ -125808,6 +125812,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 selfStream: e.self_stream || !1,
                 requestToSpeakTimestamp: e.request_to_speak_timestamp ?? null,
                 discoverable: e.discoverable ?? !0,
+                connectedAt: e.connected_at,
               })),
             });
         }),
@@ -126477,6 +126482,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 suppress: e.suppress,
                 userId: e.user_id,
                 discoverable: e.discoverable ?? !0,
+                connectedAt: e.connected_at,
               })),
               removedVoiceStateUsers: e.removed_voice_states,
             });
@@ -161368,55 +161374,56 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     321987(e, t, n) {
       "use strict";
-      n.d(t, { $: () => p, f: () => A });
-      var i = n(627968);
-      n(64700);
-      var r = n(503698),
-        s = n.n(r),
-        a = n(224640),
-        o = n(20742),
-        l = n(430993),
-        d = n(364840),
-        _ = n(696208),
-        u = n(17928),
-        c = n(43990),
-        E = n(726249),
-        h = n(540999),
-        m = n(652215),
-        f = n(985018),
-        g = n(966258);
-      function p(e) {
+      n.d(t, { $: () => A, f: () => I });
+      var i = n(627968),
+        r = n(64700),
+        s = n(503698),
+        a = n.n(s),
+        o = n(224640),
+        l = n(20742),
+        d = n(430993),
+        _ = n(364840),
+        u = n(696208),
+        c = n(17928),
+        E = n(43990),
+        h = n(726249),
+        m = n(540999),
+        f = n(652215),
+        g = n(985018),
+        p = n(966258);
+      function A(e) {
         let { children: t, removeChildWrapper: n, wrapperClassName: r } = e;
-        (0, E.HU)({ location: f.intl.string(f.t["3S2494"]) });
-        let a = (0, u.bG)([h.A], () => h.A.isDeveloper) ? "92px" : void 0;
-        return (0, i.jsx)(c.N, {
-          theme: m.NJ8.DARK,
+        (0, h.HU)({ location: g.intl.string(g.t["3S2494"]) });
+        let s = (0, c.bG)([m.A], () => m.A.isDeveloper) ? "92px" : void 0;
+        return (0, i.jsx)(E.N, {
+          theme: f.NJ8.DARK,
           children: (e) =>
             (0, i.jsx)("div", {
-              className: s()(e, g.Y, r),
-              style: { marginBottom: a },
+              className: a()(e, p.Y, r),
+              style: { marginBottom: s },
               children:
                 !0 === n
                   ? t
-                  : (0, i.jsx)("div", { className: g.Q, children: t }),
+                  : (0, i.jsx)("div", { className: p.Q, children: t }),
             }),
         });
       }
-      function A(e) {
-        let { hideHeader: t, ...n } = e;
-        return (0, i.jsxs)(a.d, {
+      function I(e) {
+        let { hideHeader: t, ...n } = e,
+          s = (0, i.jsx)(r.Fragment, {}, "controls");
+        return (0, i.jsxs)(o.d, {
           ...n,
           onClose: () => Promise.resolve(n.onClose?.()),
           children: [
             t
               ? null
-              : (0, i.jsx)(o.rQ, {
+              : (0, i.jsx)(l.rQ, {
                   title: n.title ?? "",
                   subtitle: n.subtitle,
                 }),
-            (0, i.jsx)(l.c, { controls: n.input, children: n.children }),
-            (0, i.jsx)(d.j, { children: n.preview }),
-            (0, i.jsx)(_.H, {
+            (0, i.jsx)(d.c, { controls: s, children: n.children }),
+            (0, i.jsx)(_.j, { children: n.preview }),
+            (0, i.jsx)(u.H, {
               leading: n.actionBarInput,
               actions: n.actions ?? [],
               actionsFullWidth: null == n.actionBarInput,
@@ -166120,7 +166127,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       var i = n(636537),
         r = n(873298),
         s = n(228366),
-        a = n(634927),
+        a = n(29292),
         o = n(159201),
         l = n(761821),
         d = n(954571),
@@ -170517,7 +170524,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         u = n(636099),
         c = n(120700),
         E = n(742810),
-        h = n(634927),
+        h = n(29292),
         m = n(590180),
         f = n(61750),
         g = n(573359),
@@ -181261,7 +181268,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         T = n(509536),
         S = n(361158),
         N = n(976860),
-        C = n(634927),
+        C = n(29292),
         R = n(652215),
         O = n(985018),
         y = n(456508);
@@ -217201,7 +217208,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       var i = n(228366),
         r = n(803306),
         s = n(654107),
-        a = n(634927),
+        a = n(29292),
         o = n(370480),
         l = n(734057),
         d = n(696451),
@@ -217573,7 +217580,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         d = n(464792),
         _ = n(793574),
         u = n(688810),
-        c = n(634927),
+        c = n(29292),
         E = n(459192);
       function h(e) {
         let {
@@ -223256,7 +223263,7 @@ ${t}`;
                   n.e("85216"),
                   n.e("17965"),
                   n.e("76053"),
-                  n.e("25525"),
+                  n.e("58900"),
                   n.e("80119"),
                   n.e("88109"),
                   n.e("81250"),
@@ -248049,6 +248056,7 @@ ${t}`;
               suppress: t.suppress,
               userId: t.userId,
               discoverable: t.discoverable,
+              connectedAt: t.connectedAt,
             };
             return null != e ? e.merge(n) : new _.A(n);
           }
@@ -253172,7 +253180,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "bf07475c21d577ce748e7789718b8b4055f5442b",
+                    "02560c514465707a78aea7104cd09a7cb5469c8a",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259402,7 +259410,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534770",
+                  build_number: "534838",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -320570,9 +320578,8 @@ Total Time: ${o}ms
           (i[(i.REWARD_HERO = 7)] = "REWARD_HERO"),
           (i[(i.SOCIAL_LAYER_STOREFRONT_PROMOTIONAL_BANNER = 9)] =
             "SOCIAL_LAYER_STOREFRONT_PROMOTIONAL_BANNER"),
-          (i[(i.FRAMES_EXPERIENCE = 10)] = "FRAMES_EXPERIENCE"),
-          (i[(i.FRAMES_BANNER = 11)] = "FRAMES_BANNER"),
-          (i[(i.FRAMES_PRODUCT_SHELF = 12)] = "FRAMES_PRODUCT_SHELF"),
+          (i[(i.FRAMES_BANNER = 10)] = "FRAMES_BANNER"),
+          (i[(i.FRAMES_PRODUCT_SHELF = 11)] = "FRAMES_PRODUCT_SHELF"),
           i);
     },
     635358(e, t, n) {
@@ -327917,4 +327924,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=72667.2b9095f84183bc96.js.map
+//# sourceMappingURL=72667.dd6792cdf862a678.js.map
