@@ -26101,7 +26101,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eL = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eL}, Build Number: 535131, Version Hash: 2a7f66772ce3a3c57a4bb0254dcc1b4c1c485070`,
+        `[BUILD INFO] Release Channel: ${eL}, Build Number: 535176, Version Hash: 795e045f53120e536eb5e1cf0af8a4b6a9b18265`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -40084,19 +40084,19 @@ ${s}`);
     847599(e, t, n) {
       "use strict";
       n.d(t, {
-        A5: () => f,
-        Bf: () => T,
-        Bs: () => I,
-        IY: () => g,
-        Im: () => m,
-        St: () => A,
-        UT: () => p,
-        Vh: () => O,
-        WU: () => E,
-        _7: () => h,
-        mU: () => S,
-        oQ: () => N,
-        q1: () => c,
+        A5: () => g,
+        Bf: () => S,
+        Bs: () => A,
+        IY: () => I,
+        Im: () => f,
+        St: () => p,
+        UT: () => T,
+        Vh: () => R,
+        WU: () => h,
+        _7: () => m,
+        mU: () => N,
+        oQ: () => O,
+        q1: () => E,
       });
       var i,
         r,
@@ -40105,9 +40105,10 @@ ${s}`);
         o,
         l,
         _,
-        d = n(954571),
-        u = n(652215),
-        c =
+        d = n(734057),
+        u = n(954571),
+        c = n(652215),
+        E =
           (((i = {}).GET_STARTED_MODAL = "get_started_modal"),
           (i.RETRY_MODAL = "retry_modal"),
           (i.NSFW_GUILD = "nsfw_guild"),
@@ -40137,13 +40138,13 @@ ${s}`);
           (i.AGE_RESTRICTED_SERVERS_ACCESS_SETTINGS =
             "age_restricted_servers_access_settings"),
           i),
-        E =
+        h =
           (((r = {})[(r.PRIMARY = 1)] = "PRIMARY"),
           (r[(r.RETRY = 2)] = "RETRY"),
           (r[(r.EXPRESSIVE_PRIMARY = 3)] = "EXPRESSIVE_PRIMARY"),
           (r[(r.SAFETY_FLOWS = 4)] = "SAFETY_FLOWS"),
           r),
-        h =
+        m =
           (((s = {}).MANUAL_REVIEW_REQUEST = "manual_review_request"),
           (s.LEARN_MORE = "learn_more"),
           (s.GET_STARTED = "get_started"),
@@ -40151,8 +40152,8 @@ ${s}`);
           (s.METHOD_SELECT = "method_select"),
           (s.LOG_OUT = "log_out"),
           s),
-        m = (((a = {}).RETRY = "retry"), a),
-        f =
+        f = (((a = {}).RETRY = "retry"), a),
+        g =
           (((o = {}).NSFW_CHANNEL_AGE_VERIFY = "nsfw_channel_age_verify"),
           (o.NSFW_CHANNEL_UNDERAGE = "nsfw_channel_underage"),
           (o.NSFW_CHANNEL_VERIFIED = "nsfw_channel_verified"),
@@ -40162,53 +40163,56 @@ ${s}`);
           (o.NSFW_APP_LISTING = "nsfw_app_listing"),
           (o.SPOILER_CHANNEL = "spoiler_channel"),
           o),
-        g =
+        I =
           (((l = {}).NSFW_CHANNEL_AGREE_CTA = "nsfw_channel_agree_cta"),
           (l.NSFW_CHANNEL_DISAGREE_CTA = "nsfw_channel_disagree_cta"),
           l);
-      function I(e, t, n) {
-        d.default.track(u.HAw.AGE_VERIFICATION_MODAL_VIEWED, {
+      function A(e, t, n) {
+        u.default.track(c.HAw.AGE_VERIFICATION_MODAL_VIEWED, {
           modal_session_id: e,
           modal_version: t,
           entry_point: n,
         });
       }
-      function A(e, t, n, i) {
-        d.default.track(u.HAw.AGE_VERIFICATION_MODAL_CLICKED, {
+      function p(e, t, n, i) {
+        u.default.track(c.HAw.AGE_VERIFICATION_MODAL_CLICKED, {
           modal_session_id: e,
           modal_version: t,
           cta: n,
           method: i,
         });
       }
-      function p(e, t) {
-        d.default.track(u.HAw.AGE_VERIFICATION_DM_CLICKED, {
+      function T(e, t) {
+        u.default.track(c.HAw.AGE_VERIFICATION_DM_CLICKED, {
           cta: e,
           channel_id: t,
         });
       }
-      function T(e, t, n) {
-        d.default.track(u.HAw.NSFW_SPACE_WARNING_MODAL_VIEWED, {
+      function S(e, t, n) {
+        u.default.track(c.HAw.NSFW_SPACE_WARNING_MODAL_VIEWED, {
           channel_id: t,
           guild_id: n,
           modal_type: e,
         });
       }
-      function S(e, t, n, i) {
-        d.default.track(u.HAw.NSFW_SPACE_WARNING_MODAL_CLICKED, {
+      function N(e, t, n, i) {
+        let r = null != n ? d.A.getChannel(n) : null,
+          s = r?.topic != null && "" !== r.topic.trim();
+        u.default.track(c.HAw.NSFW_SPACE_WARNING_MODAL_CLICKED, {
           cta: e,
           modal_type: t,
           channel_id: n,
           guild_id: i,
+          has_channel_topic: s,
         });
       }
-      var N =
+      var O =
         (((_ = {}).VERIFIED_TEEN = "verified_teen"),
         (_.VERIFIED_ADULT = "verified_adult"),
         (_.ERROR = "error"),
         _);
-      function O(e) {
-        d.default.track(u.HAw.AGE_VERIFICATION_TOAST_VIEWED, { toast_type: e });
+      function R(e) {
+        u.default.track(c.HAw.AGE_VERIFICATION_TOAST_VIEWED, { toast_type: e });
       }
     },
     40449(e, t, n) {
@@ -48739,7 +48743,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "2a7f66772ce3a3c57a4bb0254dcc1b4c1c485070" === e.body.hash
+                  "795e045f53120e536eb5e1cf0af8a4b6a9b18265" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53175,10 +53179,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("535131")),
+                ((e = parseInt("535176")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 535131",
+                    "Trying to open a changelog for an invalid build number 535176",
                   ),
                   (e = 0)),
                 e),
@@ -60301,8 +60305,8 @@ ${s}`);
             n.e("96234"),
             n.e("6044"),
             n.e("9842"),
-            n.e("13215"),
             n.e("18294"),
+            n.e("11848"),
             n.e("24639"),
             n.e("96975"),
             n.e("19347"),
@@ -63699,7 +63703,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535131", versionHash: "2a7f66772ce3a3c57a4bb0254dcc1b4c1c485070" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535176", versionHash: "795e045f53120e536eb5e1cf0af8a4b6a9b18265" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -65156,6 +65160,7 @@ ${C}`;
           i.M.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET,
           i.M.GIFTING_PROMOTION_REMINDER,
           i.M.PREMIUM_GROUP_PRIMARY_REMINDER_NAGBAR,
+          i.M.GAME_SERVER_NEW_GAMES_COACHMARK,
         ],
         o = [i.M.GAME_SHOP_NEW_BADGE, i.M.GAME_SHOP_NEW_DROP_POPOVER],
         l = [
@@ -114577,49 +114582,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         return u ?? E ?? c ?? t ?? n ?? l ?? _ ?? d;
       }
     },
-    817857(e, t, n) {
-      "use strict";
-      n.d(t, { Nh: () => a, c$: () => s });
-      var i = n(136722);
-      n(441574);
-      var r = n(142839);
-      function s(e) {
-        if (null == e) return null;
-        let t = {};
-        for (let [n, i] of Object.entries(e.config_by_perk))
-          t[n] = {
-            source: i.source,
-            kind: (function (e) {
-              if (null != e.kind)
-                switch (e.kind.type) {
-                  case r.D.INCREASED_FILE_UPLOAD_SIZE:
-                    return {
-                      type: r.D.INCREASED_FILE_UPLOAD_SIZE,
-                      maxSize: e.kind.max_size,
-                    };
-                  case r.D.INCREASED_GUILD_LIMIT:
-                    return {
-                      type: r.D.INCREASED_GUILD_LIMIT,
-                      maxGuilds: e.kind.max_guilds,
-                    };
-                  default:
-                    return;
-                }
-            })(i),
-          };
-        return {
-          activePerksBitmask: e.active_perks_bitmask,
-          configByPerk: t,
-          rulesVersion: e.rules_version,
-        };
-      }
-      function a(e, t) {
-        if (null == e) return !1;
-        let n = e.activePerksBitmask,
-          r = Math.floor(t / 64);
-        return !(r >= n.length) && i.zy(i.iu(n[r]), i.jB(t % 64));
-      }
-    },
     681637(e, t, n) {
       "use strict";
       n.d(t, { A: () => T });
@@ -144390,7 +144352,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         _ = n(945096),
         d = n(47537),
         u = n(244284),
-        c = n(817857),
+        c = n(349871),
         E = n(392737),
         h = n(486020),
         m = n(474090),
@@ -168136,7 +168098,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "2a7f66772ce3a3c57a4bb0254dcc1b4c1c485070",
+                    "795e045f53120e536eb5e1cf0af8a4b6a9b18265",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -173959,7 +173921,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "535131",
+                  build_number: "535176",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -208087,6 +208049,8 @@ Total Time: ${o}ms
             "COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT"),
           (i[(i.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER = 746)] =
             "NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER"),
+          (i[(i.GAME_SERVER_NEW_GAMES_COACHMARK = 747)] =
+            "GAME_SERVER_NEW_GAMES_COACHMARK"),
           i),
         a =
           (((r = {})[(r.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0)] =
@@ -211000,6 +210964,7 @@ Total Time: ${o}ms
       n.d(t, {
         ob: () => V,
         jK: () => $,
+        g$: () => X,
         qT: () => z,
         fE: () => j,
         bb: () => q,
@@ -232895,4 +232860,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=64597.37c65c88a915681f.js.map
+//# sourceMappingURL=64597.8d93fc286b2a202c.js.map
