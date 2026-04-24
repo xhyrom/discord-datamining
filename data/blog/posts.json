@@ -3252,5 +3252,16 @@
     "pubDate": "Thu, 16 Apr 2026 00:00:00 GMT",
     "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6853360f59d0d7fd18e594a6_image6.png",
     "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6853360f59d0d7fd18e594a6_image6.png"
+  },
+  {
+    "id": "measure-less-to-learn-more-using-fewer-higher-quality-metrics-to-capture-what-matters",
+    "body": "",
+    "title": "Measure Less to Learn More: Using Fewer, Higher-quality Metrics to Capture What Matters",
+    "link": "https://discord.com/blog/measure-less-to-learn-more-using-fewer-higher-quality-metrics-to-capture-what-matters",
+    "guid": "https://discord.com/blog/measure-less-to-learn-more-using-fewer-higher-quality-metrics-to-capture-what-matters",
+    "description": "Too many experiment metrics can make meaningful changes harder to detect. Learn how Discord used simulations and Principal Component Analysis to maximize signal and reduce noise.",
+    "pubDate": "Fri, 24 Apr 2026 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6806ad72843df60c11e54f23_image4.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6806ad72843df60c11e54f23_image4.png"
   }
 ]
