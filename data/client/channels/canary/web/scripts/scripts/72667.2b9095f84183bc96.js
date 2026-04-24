@@ -20187,11 +20187,12 @@ ${s}`),
           style: p,
           focusProps: A,
           ref: I,
-          ...T
+          role: T,
+          ...S
         } = e;
         null != t && null == n && (n = u.V.getDefaultLinkInterceptor(t));
-        let S = r.useContext(l.g),
-          N = {
+        let N = r.useContext(l.g),
+          C = {
             className: a()(c.Y, { [c.D]: f }, s),
             href: t,
             onClick: n,
@@ -20202,21 +20203,22 @@ ${s}`),
           };
         return (null == t ||
           (0, o.e)(t) ||
-          ((N.rel = "noreferrer noopener"), (N.target = "_blank")),
-        S && delete N.href,
+          ((C.rel = "noreferrer noopener"), (C.target = "_blank")),
+        N && delete C.href,
         null != n)
           ? (0, i.jsx)(d.D, {
               tag: "a",
-              ...T,
-              ...N,
+              ...S,
+              ...C,
               onClick: n,
               focusProps: A,
               innerRef: I,
+              role: "link",
               children: E,
             })
           : (0, i.jsx)(_.vN, {
               ...A,
-              children: (0, i.jsx)("a", { ...T, ...N, ref: I, children: E }),
+              children: (0, i.jsx)("a", { ...S, ...C, ref: I, children: E }),
             });
       }
     },
@@ -33487,7 +33489,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534725, Version Hash: 1f562c0453f1ffe29acef476c1c71954b2473289`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534770, Version Hash: bf07475c21d577ce748e7789718b8b4055f5442b`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -57471,7 +57473,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "1f562c0453f1ffe29acef476c1c71954b2473289" === e.body.hash
+                  "bf07475c21d577ce748e7789718b8b4055f5442b" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -65400,10 +65402,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534725")),
+                ((e = parseInt("534770")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534725",
+                    "Trying to open a changelog for an invalid build number 534770",
                   ),
                   (e = 0)),
                 e),
@@ -98934,7 +98936,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534725", versionHash: "1f562c0453f1ffe29acef476c1c71954b2473289" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534770", versionHash: "bf07475c21d577ce748e7789718b8b4055f5442b" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -193509,17 +193511,22 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                       ),
                       o))
                         s.add(e.channelId), r.push(e.record);
-                    let l = T.Ay.getMentionChannelIds()
-                      .filter((e) => e !== i && !s.has(e))
-                      .map((e) => H(e))
-                      .filter(O.Vq)
-                      .reverse();
-                    if (l.length > 0)
-                      for (let e of (r.push(
+                    let l = T.Ay.getMentionChannelIds().filter(
+                        (e) => e !== i && !s.has(e),
+                      ),
+                      _ = [];
+                    for (let e = l.length - 1; e >= 0; e--) {
+                      let t = l[e];
+                      if (null == t) continue;
+                      let n = H(t);
+                      null != n && _.push({ channelId: t, result: n });
+                    }
+                    if (_.length > 0)
+                      for (let { channelId: e, result: t } of (r.push(
                         (0, d.jF)(v.intl.string(v.t["61Df13"])),
                       ),
-                      l))
-                        s.add(e.record.id), r.push(e);
+                      _))
+                        s.add(t.record.id), s.add(e), r.push(t);
                     if (null != n) {
                       let e = g.Ay.getSelectableChannelIds(n)
                         .filter((e) => {
@@ -193549,9 +193556,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                           (r.push((0, d.jF)(v.intl.string(v.t.ieCAhD))),
                           (r = r.concat(e)));
                     }
-                    let _ = r.length > 0 ? 3 : 7;
+                    let E = r.length > 0 ? 3 : 7;
                     return (
-                      a.length > _ && a.splice(_),
+                      a.length > E && a.splice(E),
                       a.length > 0 &&
                         (r = [
                           (0, d.jF)(v.intl.string(v.t["80lOZ1"])),
@@ -253165,7 +253172,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "1f562c0453f1ffe29acef476c1c71954b2473289",
+                    "bf07475c21d577ce748e7789718b8b4055f5442b",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259395,7 +259402,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534725",
+                  build_number: "534770",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -327910,4 +327917,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=72667.e6449ccca107bc37.js.map
+//# sourceMappingURL=72667.2b9095f84183bc96.js.map
