@@ -33391,14 +33391,15 @@ ${s}`);
         }
       }
       let ev = new Set(["libdiscore", "typescript-libdiscore-dual-read"]);
-      new ey(
-        __OVERLAY__
-          ? (eC.verbose(
-              "Not enabling rust implementation because we're in the legacy overlay",
-            ),
-            [])
-          : eR.filter((e) => ev.has(e.getMode())),
-      ),
+      if (
+        (new ey(
+          __OVERLAY__
+            ? (eC.verbose(
+                "Not enabling rust implementation because we're in the legacy overlay",
+              ),
+              [])
+            : eR.filter((e) => ev.has(e.getMode())),
+        ),
         (n.p =
           (window.GLOBAL_ENV.STATIC_ENDPOINT ?? "") +
           window.GLOBAL_ENV.PUBLIC_PATH),
@@ -33407,43 +33408,47 @@ ${s}`);
             .e("3321")
             .then(n.bind(n, 342400))
             .then((e) => e.init()),
-        window.Meticulous?.isRunningAsTest === !0 &&
+        window.Meticulous?.isRunningAsTest === !0)
+      ) {
+        let { initWasmTracking: e } = n(474570);
+        e(),
           n
             .e("60649")
             .then(n.bind(n, 38896))
-            .then((e) => e.init()),
-        (0, k.Zs)(function (e) {
-          return (
-            (e.paragraph = {
-              ...e.paragraph,
-              react: function (e, t, n) {
-                return (0, x.jsx)("p", { children: t(e.content, n) }, n.key);
-              },
-            }),
-            (e.link = {
-              ...e.link,
-              react: function (e, t, n) {
-                let i = {};
-                if (null != e.context) {
-                  let t = e.context[e.target];
-                  t && t.onClick
-                    ? ((i.onClick = t.onClick),
-                      (i.onContextMenu = t.onContextMenu))
-                    : (i.onClick = t);
-                }
-                return (
-                  null == i.onClick && (i.href = V().sanitizeUrl(e.target)),
-                  (0, x.jsx)(
-                    F.Anchor,
-                    { title: e.title, ...i, children: t(e.content, n) },
-                    n.key,
-                  )
-                );
-              },
-            }),
-            e
-          );
-        }),
+            .then((e) => e.init());
+      }
+      (0, k.Zs)(function (e) {
+        return (
+          (e.paragraph = {
+            ...e.paragraph,
+            react: function (e, t, n) {
+              return (0, x.jsx)("p", { children: t(e.content, n) }, n.key);
+            },
+          }),
+          (e.link = {
+            ...e.link,
+            react: function (e, t, n) {
+              let i = {};
+              if (null != e.context) {
+                let t = e.context[e.target];
+                t && t.onClick
+                  ? ((i.onClick = t.onClick),
+                    (i.onContextMenu = t.onContextMenu))
+                  : (i.onClick = t);
+              }
+              return (
+                null == i.onClick && (i.href = V().sanitizeUrl(e.target)),
+                (0, x.jsx)(
+                  F.Anchor,
+                  { title: e.title, ...i, children: t(e.content, n) },
+                  n.key,
+                )
+              );
+            },
+          }),
+          e
+        );
+      }),
         (function (e, t) {
           if (null != t && "0.0.0" === t.app.getVersion()) return;
           let n = new v();
@@ -33482,7 +33487,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534527, Version Hash: 9f82cedc620e94a3edb708d839b7b34100c21902`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534630, Version Hash: 46ba4e647a849ee50e85d08f8eb668f281497b32`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -57466,7 +57471,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "9f82cedc620e94a3edb708d839b7b34100c21902" === e.body.hash
+                  "46ba4e647a849ee50e85d08f8eb668f281497b32" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -65395,10 +65400,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534527")),
+                ((e = parseInt("534630")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534527",
+                    "Trying to open a changelog for an invalid build number 534630",
                   ),
                   (e = 0)),
                 e),
@@ -98929,7 +98934,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534527", versionHash: "9f82cedc620e94a3edb708d839b7b34100c21902" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534630", versionHash: "46ba4e647a849ee50e85d08f8eb668f281497b32" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -157422,6 +157427,71 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         s = r.Provider;
       function a() {
         return i.useContext(r);
+      }
+    },
+    474570(e, t, n) {
+      "use strict";
+      n.r(t),
+        n.d(t, { collectNonHeapMetrics: () => a, initWasmTracking: () => s }),
+        n(321073);
+      let i = [],
+        r = !1;
+      function s() {
+        if (r) return;
+        r = !0;
+        let e = (e) => {
+            for (let t in e)
+              e[t] instanceof WebAssembly.Memory && i.push(new WeakRef(e[t]));
+          },
+          t = WebAssembly.instantiate;
+        if (
+          ((WebAssembly.instantiate = async function () {
+            for (var n = arguments.length, i = Array(n), r = 0; r < n; r++)
+              i[r] = arguments[r];
+            let s = await t(...i);
+            try {
+              "instance" in s && null != s.instance
+                ? e(s.instance.exports)
+                : "exports" in s && e(s.exports);
+            } catch {}
+            return s;
+          }),
+          "function" == typeof WebAssembly.instantiateStreaming)
+        ) {
+          let t = WebAssembly.instantiateStreaming;
+          WebAssembly.instantiateStreaming = async function () {
+            for (var n = arguments.length, i = Array(n), r = 0; r < n; r++)
+              i[r] = arguments[r];
+            let s = await t(...i);
+            try {
+              e(s.instance.exports);
+            } catch {}
+            return s;
+          };
+        }
+      }
+      function a() {
+        let e = (function () {
+            let e = document.querySelectorAll("canvas"),
+              t = 0;
+            for (let n of e) t += n.width * n.height * 4;
+            return { count: e.length, estimatedBytes: t };
+          })(),
+          t = (function () {
+            let e = 0;
+            for (let t = i.length - 1; t >= 0; t--) {
+              let n = i[t].deref();
+              null == n ? i.splice(t, 1) : (e += n.buffer.byteLength);
+            }
+            return e;
+          })(),
+          n = document.querySelectorAll("*").length;
+        return {
+          wasm_memory_bytes: t,
+          canvas_count: e.count,
+          canvas_estimated_bytes: e.estimatedBytes,
+          dom_node_count: n,
+        };
       }
     },
     697951(e, t, n) {
@@ -253098,7 +253168,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "9f82cedc620e94a3edb708d839b7b34100c21902",
+                    "46ba4e647a849ee50e85d08f8eb668f281497b32",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259328,7 +259398,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534527",
+                  build_number: "534630",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -327843,4 +327913,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=72667.ff25028529d3bcc5.js.map
+//# sourceMappingURL=72667.e7beef4120c8a962.js.map
