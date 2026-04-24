@@ -33489,7 +33489,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let eD = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534855, Version Hash: e8ffc92255d57d86edcc3f01828e4044db5d0e65`,
+        `[BUILD INFO] Release Channel: ${eD}, Build Number: 534943, Version Hash: d8ebe43e6d175f5be91c1e2dc86d2274b22d610a`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         H.A.initBasic(),
@@ -57473,7 +57473,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "e8ffc92255d57d86edcc3f01828e4044db5d0e65" === e.body.hash
+                  "d8ebe43e6d175f5be91c1e2dc86d2274b22d610a" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -65402,10 +65402,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("534855")),
+                ((e = parseInt("534943")),
                 Number.isNaN(e) &&
                   (d.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 534855",
+                    "Trying to open a changelog for an invalid build number 534943",
                   ),
                   (e = 0)),
                 e),
@@ -81176,142 +81176,6 @@ ${s}`);
         a = () => {
           i.h.dispatch({ type: "RESET_PREVIEW_CLIENT_THEME" });
         };
-    },
-    47671(e, t, n) {
-      "use strict";
-      let i, r;
-      n.d(t, { A: () => L });
-      var s = n(17928),
-        a = n(554146),
-        o = n(228366),
-        l = n(826673),
-        d = n(284016),
-        _ = n(973654),
-        u = n(363195),
-        c = n(964404),
-        E = n(253932),
-        h = n(617617),
-        m = n(95701),
-        f = n(734057),
-        g = n(287809),
-        p = n(927578),
-        A = n(427262),
-        I = n(644235),
-        T = n(385803),
-        S = n(185928);
-      let N = !0,
-        C = !1;
-      function R() {
-        N && (i = void 0), (C = !1);
-      }
-      let O = () => {
-          let e = !p.Ay.canUseClientThemes(g.default.getCurrentUser());
-          if (e === N) return !1;
-          N = e;
-        },
-        y = () => {
-          if (!d.A.shouldSync("appearance")) return !1;
-          let e = E.eh.getSetting().backgroundGradientPresetId;
-          if (null == e) {
-            if (null == i) return !1;
-            i = void 0;
-          } else {
-            let t = T.ag[e];
-            if (t === i) return !1;
-            i = t;
-          }
-        },
-        v = () => {
-          if (!d.A.shouldSync("appearance")) return !1;
-          let e = E.eh.getSetting().backgroundGradientPresetId;
-          if (
-            (c.Ay.useSystemTheme === S.Q_.ON &&
-              null != e &&
-              (0, _.k7)(S.Q_.OFF),
-            null == e)
-          ) {
-            null != i && (i = void 0);
-            return;
-          }
-          let t = T.ag[e],
-            n = i?.id === t?.id;
-          null == t || n || (i = t);
-        };
-      class D extends s.Ay.PersistedStore {
-        static displayName = "ClientThemesBackgroundStore";
-        static persistKey = "ClientThemesBackgroundStore";
-        migrations = [(e) => ({ gradientPresetId: e?.gradientPreset?.id })];
-        initialize(e) {
-          null != e &&
-            (i =
-              e?.gradientPresetId != null ? T.ag[e.gradientPresetId] : void 0),
-            this.waitFor(f.A, d.A, u.A, c.Ay, h.A, g.default),
-            this.syncWith([g.default], O),
-            this.syncWith([d.A], y);
-        }
-        getState() {
-          return N ? {} : { gradientPresetId: i?.id };
-        }
-        get gradientPreset() {
-          return i;
-        }
-        getLinearGradient() {
-          return null == this.gradientPreset
-            ? null
-            : (0, I.FK)(this.gradientPreset);
-        }
-        get isPreview() {
-          return N;
-        }
-        get isCoachmark() {
-          return C;
-        }
-        get mobilePendingThemeIndex() {
-          return r;
-        }
-      }
-      let L = new D(o.h, {
-        UPDATE_BACKGROUND_GRADIENT_PRESET: (e) => {
-          let { presetId: t } = e;
-          if (null == t) {
-            i = void 0;
-            return;
-          }
-          i = T.ag[t];
-        },
-        UPDATE_MOBILE_PENDING_THEME_INDEX: (e) => {
-          let { mobileThemesIndex: t } = e;
-          if (null == t) {
-            r = void 0;
-            return;
-          }
-          r = t;
-        },
-        RESET_PREVIEW_CLIENT_THEME: (e) => {
-          i = void 0;
-        },
-        CLIENT_THEMES_EDITOR_CLOSE: R,
-        CHANNEL_SELECT: (e) => {
-          let { channelId: t, guildId: n } = e,
-            i = g.default.getCurrentUser();
-          if (
-            null == t ||
-            null == n ||
-            (0, l.k8)(a.M.CLIENT_THEMES_COACHMARK) ||
-            !(0, A.G2)(i)
-          )
-            return;
-          let r = f.A.getChannel(t);
-          null != r && (0, m.ke)(r.type) && (C = !0);
-        },
-        LOGOUT: R,
-        CACHE_LOADED: v,
-        CONNECTION_OPEN: v,
-        OVERLAY_INITIALIZE: v,
-        SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: v,
-        UNSYNCED_USER_SETTINGS_UPDATE: v,
-        USER_SETTINGS_PROTO_UPDATE: v,
-      });
     },
     335542(e, t, n) {
       "use strict";
@@ -98936,7 +98800,7 @@ ${O}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534855", versionHash: "e8ffc92255d57d86edcc3f01828e4044db5d0e65" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "534943", versionHash: "d8ebe43e6d175f5be91c1e2dc86d2274b22d610a" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -200755,7 +200619,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                           title: e.title,
                           description: e.description,
                         })),
-                        label: e.label,
                         expiresAt:
                           null != e.expires_at
                             ? new Date(e.expires_at)
@@ -225714,7 +225577,12 @@ ${t}`;
       async function _(e, t, n) {
         if (!s.d4) return null;
         if (i.Av && (0, i.cX)() && window.DiscordNative?.webAuthn?.[e] != null)
-          return t;
+          return (
+            await window.DiscordNative.nativeModules.ensureModule(
+              "discord_webauthn",
+            ),
+            t
+          );
         let r = await PublicKeyCredential.getClientCapabilities?.();
         return void 0 !== r && r[e] ? n : null;
       }
@@ -253180,7 +253048,7 @@ ${t}`;
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "e8ffc92255d57d86edcc3f01828e4044db5d0e65",
+                    "d8ebe43e6d175f5be91c1e2dc86d2274b22d610a",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -259410,7 +259278,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "534855",
+                  build_number: "534943",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -280108,20 +279976,26 @@ ${o.join(" +\n")}
           em = r.useCallback(() => {
             ec || $(!z);
           }, [ec, $, z]),
-          ef = r.useCallback(() => {
+          ef = r.useCallback(
+            (e) => {
+              z && 0 === e.button && e.preventDefault();
+            },
+            [z],
+          ),
+          eg = r.useCallback(() => {
             $(!1), ei.current?.focus();
           }, [$]),
-          eg = r.useCallback(() => {
+          ep = r.useCallback(() => {
             !1 !== g &&
               ("multiple" === n ? U([]) : U(null), ei.current?.focus());
           }, [U, n, g]);
         r.useEffect(() => {
           f && ei.current?.focus();
         }, [f]);
-        let ep = r.useRef(null),
-          eA = r.useCallback(
+        let eA = r.useRef(null),
+          eI = r.useCallback(
             (e) => {
-              if (!ep.current?.contains(e.relatedTarget)) {
+              if (!eA.current?.contains(e.relatedTarget)) {
                 if (ed.current) {
                   ed.current = !1;
                   return;
@@ -280135,11 +280009,11 @@ ${o.join(" +\n")}
             },
             [z, n, es, et, U, $],
           ),
-          eI = r.useMemo(() => {
+          eT = r.useMemo(() => {
             let e = Array.isArray(x) ? x : [x];
             return et.filter((t) => (0, N.fI)(t.value, e));
           }, [x, et]),
-          eT = r.useCallback(
+          eS = r.useCallback(
             (e) => {
               if (ec) return;
               let t = Array.from(e);
@@ -280148,18 +280022,18 @@ ${o.join(" +\n")}
                 : "multiple" === n
                   ? U(t.map((e) => e.value))
                   : U(t[0]?.value),
-                e_ && z && ef();
+                e_ && z && eg();
             },
-            [ec, n, U, e_, ef, z],
+            [ec, n, U, e_, eg, z],
           ),
-          { activeIndex: eS, handleKeyDown: eN } = (0, h.l)(!0, et),
-          eC = r.useRef(null);
+          { activeIndex: eN, handleKeyDown: eC } = (0, h.l)(!0, et),
+          eR = r.useRef(null);
         r.useEffect(() => {
-          let e = eS !== eC.current;
-          (eC.current = eS),
-            null != eS && e && (ea(eS), z || ((el.current = !0), $(!0)));
-        }, [eS, z, $]);
-        let eR = r.useCallback(
+          let e = eN !== eR.current;
+          (eR.current = eN),
+            null != eN && e && (ea(eN), z || ((el.current = !0), $(!0)));
+        }, [eN, z, $]);
+        let eO = r.useCallback(
             (e) => {
               if (ec) return;
               let t = et.length;
@@ -280187,11 +280061,11 @@ ${o.join(" +\n")}
                     if (null != es) {
                       let e = et[es];
                       if (null != e && !0 !== e.disabled) {
-                        eT([e]);
+                        eS([e]);
                         break;
                       }
                     }
-                    ef();
+                    eg();
                     break;
                   }
                   if (!z) return void $(!0);
@@ -280210,7 +280084,7 @@ ${o.join(" +\n")}
                   {
                     let e = et[es];
                     if (null == e || !0 === e.disabled) return;
-                    eT("single" === n ? [e] : (0, N.qH)(n, eI, e));
+                    eS("single" === n ? [e] : (0, N.qH)(n, eT, e));
                   }
                   break;
                 case "Home":
@@ -280239,75 +280113,75 @@ ${o.join(" +\n")}
                   break;
                 case "Escape":
                   z
-                    ? (e.preventDefault(), e.stopPropagation(), ef())
+                    ? (e.preventDefault(), e.stopPropagation(), eg())
                     : eu &&
                       g &&
-                      (e.preventDefault(), e.stopPropagation(), eg());
+                      (e.preventDefault(), e.stopPropagation(), ep());
                   break;
                 default:
-                  eN(e);
+                  eC(e);
               }
             },
-            [ec, z, et, v, n, eI, es, U, eT, ef, eg, eN, eu, g, $],
+            [ec, z, et, v, n, eT, es, U, eS, eg, ep, eC, eu, g, $],
           ),
-          eO = r.useMemo(() => {
+          ey = r.useMemo(() => {
             if (!R)
               return `${Math.max(eE ?? 200, 200) * ("multiple" === n ? 1.5 : 1) + 24 * !!g + 36 + 12}px`;
           }, [R, eE, n, g]),
-          ey = "multiple" === n && eI.length > 0,
-          ev = r.useRef(null);
+          ev = "multiple" === n && eT.length > 0,
+          eD = r.useRef(null);
         r.useEffect(() => {
-          clearTimeout(ev.current),
-            ey &&
+          clearTimeout(eD.current),
+            ev &&
               !G &&
-              (ev.current = setTimeout(() => {
+              (eD.current = setTimeout(() => {
                 B.current?.lastElementChild?.scrollIntoView({
                   behavior: "smooth",
                   inline: "end",
                   block: "end",
                 });
               }, 10));
-        }, [eI, ey, G]);
-        let eD = (0, l.A)(er, q.setReference),
-          eL = r.useCallback(
+        }, [eT, ev, G]);
+        let eL = (0, l.A)(er, q.setReference),
+          eb = r.useCallback(
             (e) => {
               if (ec) return;
               let t = Array.from(e)[0],
-                n = eI.filter((e) => e.id !== t);
-              eT(n), 0 === n.length && ei.current?.focus();
+                n = eT.filter((e) => e.id !== t);
+              eS(n), 0 === n.length && ei.current?.focus();
             },
-            [eT, eI, ec],
+            [eS, eT, ec],
           ),
-          eb = Math.max(
-            et.findIndex((e) => e.id === eI[eI.length - 1]?.id),
+          ew = Math.max(
+            et.findIndex((e) => e.id === eT[eT.length - 1]?.id),
             0,
           ),
-          ew = r.useRef(!1);
+          eP = r.useRef(!1);
         r.useEffect(() => {
-          en || !z || ew.current
-            ? z || ((ew.current = !1), ea(null), (el.current = !1))
-            : ((ew.current = !0),
-              el.current || ea(et.length > 0 ? eb : null),
+          en || !z || eP.current
+            ? z || ((eP.current = !1), ea(null), (el.current = !1))
+            : ((eP.current = !0),
+              el.current || ea(et.length > 0 ? ew : null),
               (el.current = !1),
               ei.current?.focus());
-        }, [en, z, eb, et.length]);
-        let eP = (0, _.r)(d.A.modules.select.MAX_WIDTH),
-          ek = r.useMemo(
-            () => ({ horizontalControlColumnWidth: `min(${eP}px, auto)` }),
-            [eP],
+        }, [en, z, ew, et.length]);
+        let ek = (0, _.r)(d.A.modules.select.MAX_WIDTH),
+          eM = r.useMemo(
+            () => ({ horizontalControlColumnWidth: `min(${ek}px, auto)` }),
+            [ek],
           );
         return (0, i.jsx)(c.D, {
           ...H,
           "data-mana-component": "select",
-          layoutConfig: ek,
+          layoutConfig: eM,
           children: (e) =>
             (0, i.jsx)("div", {
-              ref: ep,
-              style: { width: R ? "100%" : `minmax(${eO}px, 100%)` },
+              ref: eA,
+              style: { width: R ? "100%" : `minmax(${ey}px, 100%)` },
               children: (0, i.jsxs)(i.Fragment, {
                 children: [
                   (0, i.jsx)(I.p, {
-                    ref: eD,
+                    ref: eL,
                     disabled: K,
                     readOnly: s,
                     loading: en,
@@ -280318,7 +280192,7 @@ ${o.join(" +\n")}
                     hasValue: eu,
                     hasError: e?.errorMessageId != null,
                     handleToggle: em,
-                    handleClear: eg,
+                    handleClear: ep,
                     variant: V,
                     ...Z(),
                     children: (0, i.jsxs)(u.s, {
@@ -280335,7 +280209,7 @@ ${o.join(" +\n")}
                         "aria-errormessage": e?.errorMessageId,
                         "aria-invalid": e?.errorMessageId != null,
                         children: (0, i.jsx)(E.A, {
-                          children: eI.map((e) => e.label).join(", "),
+                          children: eT.map((e) => e.label).join(", "),
                         }),
                       },
                       focusProps: { ringTarget: er },
@@ -280344,8 +280218,9 @@ ${o.join(" +\n")}
                         [C.M8]: "multiple" === n,
                       }),
                       onClick: em,
-                      onKeyDown: eR,
-                      onBlur: eA,
+                      onMouseDown: ef,
+                      onKeyDown: eO,
+                      onBlur: eI,
                       "aria-describedby": e?.describedById,
                       children: [
                         (0, i.jsxs)(E.A, { children: [Y, ", "] }),
@@ -280353,8 +280228,8 @@ ${o.join(" +\n")}
                           tagGroupRef: B,
                           placeholder: D,
                           selectionMode: n,
-                          selectedItems: eI,
-                          onRemove: eL,
+                          selectedItems: eT,
+                          onRemove: eb,
                         }),
                       ],
                     }),
@@ -280365,8 +280240,8 @@ ${o.join(" +\n")}
                     disabled: ec,
                     autoComplete: w,
                     selectionMode: n,
-                    selectedItems: eI,
-                    onSelectionChange: eT,
+                    selectedItems: eT,
+                    onSelectionChange: eS,
                     listItems: et,
                   }),
                   !R && eh,
@@ -280383,8 +280258,8 @@ ${o.join(" +\n")}
                         required: W,
                         items: et,
                         selectionMode: n,
-                        selectedItems: eI,
-                        onSelectionChange: eT,
+                        selectedItems: eT,
+                        onSelectionChange: eS,
                         shouldFocusWrap: v,
                         activeDescendantIndex: es,
                         renderListItem: (e) => (0, i.jsx)(A.c, { ...e }),
@@ -327956,4 +327831,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=72667.ba1232d0f17cd452.js.map
+//# sourceMappingURL=72667.6233b142b151fe76.js.map
