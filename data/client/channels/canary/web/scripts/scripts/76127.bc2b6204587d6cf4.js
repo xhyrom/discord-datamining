@@ -26138,7 +26138,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535247, Version Hash: 8a58f961a5218604dd508130698fd25a3b3dc6b5`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535274, Version Hash: c7e8a464db69d26d6b2ebb821ed517736cfb1140`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -48780,7 +48780,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "8a58f961a5218604dd508130698fd25a3b3dc6b5" === e.body.hash
+                  "c7e8a464db69d26d6b2ebb821ed517736cfb1140" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53216,10 +53216,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("535247")),
+                ((e = parseInt("535274")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 535247",
+                    "Trying to open a changelog for an invalid build number 535274",
                   ),
                   (e = 0)),
                 e),
@@ -63740,7 +63740,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535247", versionHash: "8a58f961a5218604dd508130698fd25a3b3dc6b5" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535274", versionHash: "c7e8a464db69d26d6b2ebb821ed517736cfb1140" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -65176,6 +65176,7 @@ ${C}`;
           i.M.QUEST_HOME_NEW_QUEST_BADGE,
           i.M.RIOT_CONNECTION_DEPRECATION,
           i.M.RIOT_CONNECTION_DEPRECATION_ADMIN,
+          i.M.NOTIFICATION_NUDGE_POST_CALL_DISCONNECT,
         ],
         a = [
           i.M.GIFTING_PROMOTION_ICON,
@@ -168139,7 +168140,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "8a58f961a5218604dd508130698fd25a3b3dc6b5",
+                    "c7e8a464db69d26d6b2ebb821ed517736cfb1140",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -173962,7 +173963,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "535247",
+                  build_number: "535274",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -208094,6 +208095,8 @@ Total Time: ${o}ms
             "GAME_SERVER_NEW_GAMES_COACHMARK"),
           (i[(i.NOTIFICATION_NUDGE_GUILD_OPEN_PER_GUILD = 748)] =
             "NOTIFICATION_NUDGE_GUILD_OPEN_PER_GUILD"),
+          (i[(i.NOTIFICATION_NUDGE_POST_CALL_DISCONNECT = 749)] =
+            "NOTIFICATION_NUDGE_POST_CALL_DISCONNECT"),
           i),
         a =
           (((r = {})[(r.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0)] =
@@ -232903,4 +232906,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=76127.bbfdc283b9d40345.js.map
+//# sourceMappingURL=76127.bc2b6204587d6cf4.js.map
