@@ -6875,6 +6875,7 @@
                 e.qualityOptions.preset,
                 e.qualityOptions.resolution,
                 e.qualityOptions.frameRate,
+                e.desktopSettings?.sound,
               ),
               s.h.dispatch({
                 type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE",
@@ -26138,7 +26139,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535274, Version Hash: c7e8a464db69d26d6b2ebb821ed517736cfb1140`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535314, Version Hash: 19acfefbc962ed0adbc8afe46ee94a67277d192c`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -41152,6 +41153,7 @@ ${s}`);
           (i.GO_LIVE_MODAL_V2 = "go live modal v2"),
           (i.GO_LIVE_MODAL_SETTINGS_SELECTION =
             "go live modal settings selection"),
+          (i.MOBILE_GO_LIVE_ACTION_SHEET = "mobile go live action sheet"),
           (i.CHECKPOINT = "checkpoint"),
           (i.GUILD_SETTINGS_OFFICIAL_MESSAGES =
             "guild settings official messages"),
@@ -48780,7 +48782,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "c7e8a464db69d26d6b2ebb821ed517736cfb1140" === e.body.hash
+                  "19acfefbc962ed0adbc8afe46ee94a67277d192c" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53216,10 +53218,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("535274")),
+                ((e = parseInt("535314")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 535274",
+                    "Trying to open a changelog for an invalid build number 535314",
                   ),
                   (e = 0)),
                 e),
@@ -63740,7 +63742,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535274", versionHash: "c7e8a464db69d26d6b2ebb821ed517736cfb1140" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535314", versionHash: "19acfefbc962ed0adbc8afe46ee94a67277d192c" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -168140,7 +168142,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "c7e8a464db69d26d6b2ebb821ed517736cfb1140",
+                    "19acfefbc962ed0adbc8afe46ee94a67277d192c",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -173963,7 +173965,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "535274",
+                  build_number: "535314",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -175334,25 +175336,26 @@ ${o.join(" +\n")}
           [n, e, t],
         );
       }
-      function N(e, t, n) {
-        let i = c.ZV.find(
+      function N(e, t, n, i) {
+        let r = c.ZV.find(
             (i) =>
               (null == i.preset || i.preset === e) &&
               i.resolution === t &&
               i.fps === n,
           ),
-          r = _.default.getCurrentUser(),
-          s = l.A.getGuildId(),
-          a = null != s ? o.A.getGuild(s) : null;
+          s = _.default.getCurrentUser(),
+          a = l.A.getGuildId(),
+          h = null != a ? o.A.getGuild(a) : null;
         d.default.track(u.HAw.STREAM_SETTINGS_UPDATE, {
-          user_premium_tier: r?.premiumType,
-          guild_premium_tier: a?.premiumTier,
+          user_premium_tier: s?.premiumType,
+          guild_premium_tier: h?.premiumTier,
           stream_quality_user_premium_tier:
-            i?.quality != null ? E.Kq[i.quality] : null,
-          stream_quality_guild_premium_tier: i?.guildPremiumTier,
+            r?.quality != null ? E.Kq[r.quality] : null,
+          stream_quality_guild_premium_tier: r?.guildPremiumTier,
           stream_quality_preset: e,
           stream_quality_resolution: t,
           stream_quality_frame_rate: n,
+          soundshare_enabled: i,
         });
       }
     },
@@ -178801,6 +178804,8 @@ ${o.join(" +\n")}
           (i.MESSAGE_ALSO_SEND_TO_CHANNEL =
             "impression_message_also_send_to_channel"),
           (i.MESSAGES_EMPTY_NUX = "impression_messages_empty_nux"),
+          (i.MOBILE_GO_LIVE_ACTION_SHEET =
+            "impression_mobile_go_live_action_sheet"),
           (i.MODAL_ROOT_LEGACY = "impression_modal_root_legacy"),
           (i.MULTI_ACCOUNT_SWITCH_LANDING =
             "impression_multi_account_switch_landing"),
@@ -232906,4 +232911,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=76127.bc2b6204587d6cf4.js.map
+//# sourceMappingURL=76127.3fffe3701cd763df.js.map
