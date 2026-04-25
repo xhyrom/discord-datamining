@@ -3111,7 +3111,12 @@
           }
         },
         E = (e) => {
-          e?.(), (0, i.jH)(), (0, r.pX)(l.BVt.APPLICATION_STORE);
+          e?.(), (0, i.jH)();
+          {
+            let { default: e } = n(779733);
+            e();
+          }
+          (0, r.pX)(l.BVt.APPLICATION_STORE);
         };
     },
     808829(e, t, n) {
@@ -5048,4 +5053,4 @@
     },
   },
 ]);
-//# sourceMappingURL=23056.d51acc3fa825c5da.js.map
+//# sourceMappingURL=23056.0199fe52e66880b0.js.map

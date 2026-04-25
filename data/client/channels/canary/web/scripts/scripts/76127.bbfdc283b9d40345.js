@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["64597"],
+  ["76127"],
   {
     696354(e, t, n) {
       var i = {
@@ -25246,7 +25246,7 @@ ${s}`),
         });
       }
     },
-    486107(e, t, n) {
+    366093(e, t, n) {
       "use strict";
       var i,
         r = n(840574);
@@ -25362,18 +25362,33 @@ ${s}`),
         u = n(183636),
         c = n(53943),
         E = n(652215),
-        h = n(30076),
-        m = n(209489),
-        f = n(723702),
-        g = n(998218),
-        I = n(187207),
-        A = n(472229);
-      let p = [
+        h = n(954571);
+      let m = (0, n(945810).mj)({
+        kind: "user",
+        name: "2026-04-http-request-sample",
+        defaultConfig: { sampleRate: 0 },
+        variations: { 1: { sampleRate: 1e-4 } },
+      });
+      var f = n(30076),
+        g = n(209489),
+        I = n(723702),
+        A = n(998218),
+        p = n(187207),
+        T = n(472229);
+      let S = [
           "https://cdn.discordapp.com/bad-domains/updated_hashes.json",
           "https://cdn.discordapp.com/bad-domains/hashes.json",
         ],
-        T = new I.n(),
-        S = /\/api(\/v\d+)?\/science/;
+        N = new p.n(),
+        O = /\/api(\/v\d+)?\/science/;
+      function R(e) {
+        try {
+          let t = new URL(e).pathname;
+          return O.test(t);
+        } catch {
+          return O.test(e);
+        }
+      }
       (0, l.IA)({
         prepareRequest(e) {
           let { default: t } = n(495544),
@@ -25381,9 +25396,10 @@ ${s}`),
             { default: r } = n(773669),
             { default: s } = n(287809),
             { default: a } = n(954571),
-            { isPlatformEmbedded: E } = n(723702);
+            { isPlatformEmbedded: f } = n(723702),
+            g = performance.now();
           if ("/" === e.url[0]) {
-            let n, o, c, h, m;
+            let n, o, c, E, h;
             (e.url = (0, l.TP)() + e.url),
               "Authorization" in e.header ||
                 "authorization" in e.header ||
@@ -25391,17 +25407,17 @@ ${s}`),
               (n = (0, d.Vc)()),
               (o = (0, _.getSuperProperties)()),
               (c = {}),
-              (h = n?.uuid) !== o?.client_heartbeat_session_id &&
-                (c.client_heartbeat_session_id = h),
-              (m = u.A.getState()) !== o?.client_app_state &&
-                (c.client_app_state = m),
+              (E = n?.uuid) !== o?.client_heartbeat_session_id &&
+                (c.client_heartbeat_session_id = E),
+              (h = u.A.getState()) !== o?.client_app_state &&
+                (c.client_app_state = h),
               Object.keys(c).length > 0 && (0, _.extendSuperProperties)(c);
-            let f = a.getSuperPropertiesBase64();
-            null != f && e.set("X-Super-Properties", f);
-            let I = t.getFingerprint();
-            null != I && "" !== I && e.set("X-Fingerprint", I);
-            let p = t.getInstallationForTracking();
-            if ((null != p && "" !== p && e.set("X-Installation-ID", p), E)) {
+            let m = a.getSuperPropertiesBase64();
+            null != m && e.set("X-Super-Properties", m);
+            let g = t.getFingerprint();
+            null != g && "" !== g && e.set("X-Fingerprint", g);
+            let I = t.getInstallationForTracking();
+            if ((null != I && "" !== I && e.set("X-Installation-ID", I), f)) {
               let t,
                 n = [];
               null != navigator && (n = [...navigator.languages] ?? []);
@@ -25420,28 +25436,19 @@ ${s}`),
               e.set("Accept-Language", i);
             }
             e.set("X-Discord-Locale", r.locale);
-            let N = (0, A.A)();
-            null != N && e.set("X-Discord-Timezone", N);
-            let O = i.getDebugOptionsHeaderValue();
+            let p = (0, T.A)();
+            null != p && e.set("X-Discord-Timezone", p);
+            let S = i.getDebugOptionsHeaderValue();
             if (
-              (null != O && "" !== O && e.set("X-Debug-Options", O),
+              (null != S && "" !== S && e.set("X-Debug-Options", S),
               i.isTracingRequests)
             ) {
               let t = s.getCurrentUser(),
-                n = T.generate(t?.id ?? "0");
+                n = N.generate(t?.id ?? "0");
               e.set("x-client-trace-id", n);
               try {
                 let t = new URL(e.url).pathname;
-                if (
-                  !(function (e) {
-                    try {
-                      let t = new URL(e).pathname;
-                      return S.test(t);
-                    } catch {
-                      return S.test(e);
-                    }
-                  })(t)
-                ) {
+                if (!R(t)) {
                   let i,
                     r,
                     s =
@@ -25450,7 +25457,7 @@ ${s}`),
                         `@http.x_client_trace_id:"${n}"`,
                       ),
                       i.append("showAllSpans", "true"),
-                      (r = g.A.toURLSafe(
+                      (r = A.A.toURLSafe(
                         `traces?${i.toString()}`,
                         "https://datadog.discord.tools/apm/",
                       )),
@@ -25470,16 +25477,46 @@ ${s}`),
               }
             }
           }
-          e.url,
-            e.method,
-            c.z8("Network", `Sending ${e.method} to ${e.url}`),
+          let I = !R(e.url);
+          function p(t) {
+            if (I) {
+              var n, i;
+              let r;
+              (r = {
+                ...(n = {
+                  url: e.url,
+                  method: e.method,
+                  status_code: t?.status,
+                  duration_ms: Math.round(performance.now() - g),
+                }),
+                url:
+                  null == (i = n.url)
+                    ? i
+                    : i.split(/[?#]/)[0].replace(/\d+/g, "#"),
+              }),
+                Math.random() <
+                  (function () {
+                    let { sampleRate: e } = m.getConfig({
+                      location: "track_http_request",
+                    });
+                    return e;
+                  })() &&
+                  h.default.track(E.HAw.HTTP_REQUEST, {
+                    ...r,
+                    source: "sample",
+                  }),
+                (I = !1);
+            }
+          }
+          c.z8("Network", `Sending ${e.method} to ${e.url}`),
             e.on("response", (t) => {
               let n = null != t && t.status >= 400 ? t.text : null,
                 i = null == n ? "" : `and body: ${n}`;
               c.z8(
                 "Network",
                 `Completed ${e.method} to ${e.url} with status: ${t?.status} ${i}`,
-              );
+              ),
+                p(t);
             }),
             e.on("error", (t, n) => {
               if (
@@ -25490,7 +25527,7 @@ ${s}`),
                 null != t && "parse" in t && t.parse)
               ) {
                 let n = "[FILTERED]";
-                p.includes(e.url) && (n = e.xhr?.responseText?.slice(0, 1e3)),
+                S.includes(e.url) && (n = e.xhr?.responseText?.slice(0, 1e3)),
                   o.A.addBreadcrumb({
                     category: "superagent",
                     message: "Failed to parse HTTP response.",
@@ -25502,6 +25539,7 @@ ${s}`),
                     },
                   });
               }
+              p(n);
             });
         },
         interceptResponse(e, t, i) {
@@ -25540,7 +25578,7 @@ ${s}`),
                   })
                   .catch(i),
                 !0)
-              : (0, h.O)(e.statusCode, e.body?.code)
+              : (0, f.O)(e.statusCode, e.body?.code)
                 ? (Promise.resolve()
                     .then(n.bind(n, 700241))
                     .then((e) => {
@@ -25574,28 +25612,28 @@ ${s}`),
       }),
         (0, l.Cu)(async (e) => {
           c.z8("Network", `Request to ${e} failed, will retry.`),
-            m.A.isOnline() ||
-              (await m.A.awaitOnline(),
+            g.A.isOnline() ||
+              (await g.A.awaitOnline(),
               c.z8("Network", `Network detected online, retrying ${e}`));
         });
-      var N = n(495544);
+      var C = n(495544);
       n(736056), n(930839);
-      var O = n(247775),
-        R = n(143236),
-        C =
-          (((i = C || {}).VERTICAL = "vertical"),
+      var y = n(247775),
+        D = n(143236),
+        L =
+          (((i = L || {}).VERTICAL = "vertical"),
           (i.HORIZONTAL = "horizontal"),
           i);
-      let y = { open: !1, orientation: null };
-      class D extends R.EventEmitter {
+      let v = { open: !1, orientation: null };
+      class w extends D.EventEmitter {
         constructor() {
           super(), setInterval(() => this.check(), 500);
         }
         get orientations() {
-          return Object.values(C);
+          return Object.values(L);
         }
         get state() {
-          return y;
+          return v;
         }
         check() {
           let e =
@@ -25616,81 +25654,80 @@ ${s}`),
               })() > 160,
             n = e ? "vertical" : "horizontal";
           if (!(t && e) && (e || t)) {
-            let e = y.open;
-            (y = { open: !0, orientation: n }),
-              (e && y.orientation === n) || this.emit("changed", y);
-          } else y.open && ((y.open = !1), this.emit("changed", y));
+            let e = v.open;
+            (v = { open: !0, orientation: n }),
+              (e && v.orientation === n) || this.emit("changed", v);
+          } else v.open && ((v.open = !1), this.emit("changed", v));
         }
       }
-      var L = n(607399),
-        v = n(855522);
-      function w() {
+      var P = n(607399),
+        b = n(855522);
+      function k() {
         let e =
           arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
-        if (null != v.A.Messages.SELF_XSS_HEADER)
+        if (null != b.A.Messages.SELF_XSS_HEADER)
           if (
             (console.log(
-              `%c${v.A.Messages.SELF_XSS_HEADER}`,
+              `%c${b.A.Messages.SELF_XSS_HEADER}`,
               "color: #5865f2; -webkit-text-stroke: 2px black; font-size: 72px; font-weight: bold;",
             ),
             console.log(
-              `%c${v.A.Messages.SELF_XSS_LINE_1}`,
+              `%c${b.A.Messages.SELF_XSS_LINE_1}`,
               "font-size: 16px;",
             ),
             console.log(
-              `%c${v.A.Messages.SELF_XSS_LINE_2}`,
+              `%c${b.A.Messages.SELF_XSS_LINE_2}`,
               "font-size: 18px; font-weight: bold; color: red;",
             ),
             e >= 4)
           ) {
             console.log(
-              `%c${v.A.Messages.SELF_XSS_LINE_3}`,
+              `%c${b.A.Messages.SELF_XSS_LINE_3}`,
               "font-size: 16px;",
             );
-            let e = v.A.Messages.SELF_XSS_LINE_4.format({
+            let e = b.A.Messages.SELF_XSS_LINE_4.format({
               url: `${location.protocol}${window.GLOBAL_ENV.MARKETING_ENDPOINT}/jobs`,
             });
             console.log(`%c${e}`, "font-size: 16px;");
-          } else setTimeout(() => w(e + 1), 1e3);
+          } else setTimeout(() => k(e + 1), 1e3);
       }
-      var P = n(121894),
-        b = n(17928),
-        k = n(413323),
-        U = n(187322),
-        M = n(775602),
-        G = n(627968);
+      var U = n(121894),
+        M = n(17928),
+        G = n(413323),
+        x = n(187322),
+        V = n(775602),
+        F = n(627968);
       n(64700);
-      var x = n(791332),
-        V = n.n(x),
-        F = n(349288),
-        B = n(77729),
-        H = n(502229),
-        Y = n(873298),
-        W = n(97469),
-        K = n(363195),
-        j = n(253932),
-        $ = n(617617),
-        z = n(954571),
-        q = n(53298);
-      let X = q.O.NONE,
-        Q = window.matchMedia("(prefers-color-scheme: dark)"),
-        J = window.matchMedia("(prefers-color-scheme: light)"),
-        Z = window.matchMedia("(inverted-colors: inverted)"),
-        ee = window.matchMedia("(prefers-contrast: more)"),
-        et = window.matchMedia("(forced-colors: active)");
-      function en(e, t) {
-        t ? (X |= e) : (X &= ~e);
+      var B = n(791332),
+        H = n.n(B),
+        Y = n(349288),
+        W = n(77729),
+        K = n(502229),
+        j = n(873298),
+        $ = n(97469),
+        z = n(363195),
+        q = n(253932),
+        X = n(617617),
+        Q = n(53298);
+      let J = Q.O.NONE,
+        Z = window.matchMedia("(prefers-color-scheme: dark)"),
+        ee = window.matchMedia("(prefers-color-scheme: light)"),
+        et = window.matchMedia("(inverted-colors: inverted)"),
+        en = window.matchMedia("(prefers-contrast: more)"),
+        ei = window.matchMedia("(forced-colors: active)");
+      function er(e, t) {
+        t ? (J |= e) : (J &= ~e);
       }
       n(937982);
-      var ei = n(141931),
-        er = n(506774),
-        es = n(969341),
-        ea = n(287809),
-        eo = n(19575),
-        el = n(77138);
-      let e_ = window.DiscordNative,
-        ed = `${E.HAw.APP_NATIVE_CRASH}Storage`;
-      function eu(e, t) {
+      var es = n(141931),
+        ea = n(506774),
+        eo = n(969341),
+        el = n(287809),
+        e_ = n(19575),
+        ed = n(77138);
+      let eu = window.DiscordNative,
+        ec = `${E.HAw.APP_NATIVE_CRASH}Storage`;
+      function eE(e, t) {
         let n = {
           did_crash: !0,
           electron_crash_reporter_did_crash: !0,
@@ -25698,15 +25735,15 @@ ${s}`),
           child_process_crash_reason: t.reason ?? null,
           child_process_crash_exit_code: t.exitCode ?? null,
         };
-        z.default.track(E.HAw.APP_NATIVE_CRASH, n);
+        h.default.track(E.HAw.APP_NATIVE_CRASH, n);
       }
-      async function ec() {
+      async function eh() {
         var e, t;
         let n, i;
         if (__OVERLAY__) return;
-        let r = e_?.processUtils?.getLastCrash;
+        let r = eu?.processUtils?.getLastCrash;
         if (
-          ((0, f.isDesktop)() && eo.Ay.on("CRASH_REPORTER_NEW_CRASH", eu),
+          ((0, I.isDesktop)() && e_.Ay.on("CRASH_REPORTER_NEW_CRASH", eE),
           null == r)
         )
           return void console.log(
@@ -25714,7 +25751,7 @@ ${s}`),
           );
         let s = await r(),
           { didCrashReporterSeeCrash: a, didCrashOrUncleanExit: o } =
-            ((e = er.w.get(ed, {})),
+            ((e = ea.w.get(ec, {})),
             (t = s),
             (n = e?.lastId !== t?.id && t?.id != null),
             (i = t?.rendererCrashExitCode ?? null),
@@ -25741,14 +25778,14 @@ ${s}`),
                 child_process_crash_type: null,
                 child_process_crash_reason: null,
                 child_process_crash_exit_code: null,
-                had_rtc_connection: i(ei.du.HasRTCConnection),
-                was_sending_video: i(ei.du.IsSendingVideo),
-                was_sending_stream: i(ei.du.IsSendingStream),
-                was_receiving_video: i(ei.du.IsReceivingVideo),
-                was_receiving_stream: i(ei.du.IsReceivingStream),
-                video_media_session_id: r(ei.du.VideoMediaSessionId),
-                stream_media_session_id: r(ei.du.StreamMediaSessionId),
-                intentional_crash_reason: r(ei.du.IntentionalCrashReason),
+                had_rtc_connection: i(es.du.HasRTCConnection),
+                was_sending_video: i(es.du.IsSendingVideo),
+                was_sending_stream: i(es.du.IsSendingStream),
+                was_receiving_video: i(es.du.IsReceivingVideo),
+                was_receiving_stream: i(es.du.IsReceivingStream),
+                video_media_session_id: r(es.du.VideoMediaSessionId),
+                stream_media_session_id: r(es.du.StreamMediaSessionId),
+                intentional_crash_reason: r(es.du.IntentionalCrashReason),
                 last_memory_usage_kb:
                   n?.lastMemoryInformation?.memoryUsageKB ?? null,
                 last_used_js_heap_size_kb:
@@ -25776,34 +25813,34 @@ ${s}`),
               ...s,
             };
           })(a, o, s);
-        z.default.track(E.HAw.APP_NATIVE_CRASH, l),
-          er.w.set(ed, { lastId: s?.id }),
-          o && setTimeout(async () => await eE(), 1e4);
+        h.default.track(E.HAw.APP_NATIVE_CRASH, l),
+          ea.w.set(ec, { lastId: s?.id }),
+          o && setTimeout(async () => await em(), 1e4);
       }
-      async function eE() {
-        if (ea.default.getCurrentUser()?.isStaff())
+      async function em() {
+        if (el.default.getCurrentUser()?.isStaff())
           try {
-            await es.Ay.getMediaEngine().writeAudioDebugState(),
-              await (0, el.a)(E.Umv.RTC),
+            await eo.Ay.getMediaEngine().writeAudioDebugState(),
+              await (0, ed.a)(E.Umv.RTC),
               console.log("Successfully uploaded debug files");
           } catch (e) {
             console.log("Failed to upload debug files");
           }
       }
-      var eh = n(626584),
-        em = n(228366),
-        ef = n(865116),
-        eg = n(608960),
-        eI = n(41237),
-        eA = n(279263),
-        ep = n(317525),
-        eT = n(71393),
-        eS = n(157016),
-        eN = n(548965);
-      let eO = new eh.A("DispatcherBridge"),
-        eR = [eA.A, eT.A, ep.A, eg.A, eI.A],
-        eC = {
-          GUILD_MEMBER_ADD: (e) => ({ ...e, currentUserId: N.default.getId() }),
+      var ef = n(626584),
+        eg = n(228366),
+        eI = n(865116),
+        eA = n(608960),
+        ep = n(41237),
+        eT = n(279263),
+        eS = n(317525),
+        eN = n(71393),
+        eO = n(157016),
+        eR = n(548965);
+      let eC = new ef.A("DispatcherBridge"),
+        ey = [eT.A, eN.A, eS.A, eA.A, ep.A],
+        eD = {
+          GUILD_MEMBER_ADD: (e) => ({ ...e, currentUserId: C.default.getId() }),
           CONNECTION_OPEN: (e) => ({
             guilds: e.guilds,
             unavailableGuilds: e.unavailableGuilds,
@@ -25812,14 +25849,14 @@ ${s}`),
           CACHE_LOADED_LAZY: (e) => ({ guilds: e.guilds }),
           BACKGROUND_SYNC: (e) => ({ guilds: e.guilds }),
         };
-      class ey {
+      class eL {
         tokenToStore = new Map();
         disabledFromFatalError = !1;
         constructor(e) {
           if (0 === e.length) return;
-          const t = eS.V;
+          const t = eO.V;
           if (null == t)
-            return void eO.info(
+            return void eC.info(
               "Not initializing DispatcherBridge, because kvStoreApi is unavailable.",
             );
           try {
@@ -25830,17 +25867,17 @@ ${s}`),
               this.tokenToStore.set(r, i),
                 n.push(`${e} => [token: ${r}, mode: ${i.getMode()}]`);
             }
-            eO.info(
+            eC.info(
               `Connected ${e.length} store(s), mapping: ${n.join(", ")}.`,
             );
             const i = t.getRegisteredActionTypes();
-            eO.info(
+            eC.info(
               `Registering ${i.length} bridged action(s): ${i.join(", ")}.`,
             );
             const r = (e) => {
               let n;
               if (this.disabledFromFatalError) return;
-              let i = eC[e.type],
+              let i = eD[e.type],
                 r = performance.now();
               n =
                 null != i
@@ -25850,7 +25887,7 @@ ${s}`),
                   kind: "json_stringify_action",
                   durationMillis: performance.now() - r,
                 },
-                a = eN.pd.shouldCollectMetrics(),
+                a = eR.pd.shouldCollectMetrics(),
                 o = t.dispatchAction(n, a);
               if (!o.ok) return void this.handleFatalError(o.error, e.type);
               let l = performance.now() - r,
@@ -25868,7 +25905,7 @@ ${s}`),
                 });
               if (null != _ && a) {
                 let t = [s, ..._.timings];
-                if (ef.Ay.get("libdiscore_verbose_telemetry_logging")) {
+                if (eI.Ay.get("libdiscore_verbose_telemetry_logging")) {
                   let n = t
                       .map((e) => {
                         let { kind: t, durationMillis: n } = e;
@@ -25920,34 +25957,34 @@ ${i}`;
 ${n}`;
                       })
                       .join("\n\n");
-                  eO.info(`Handling action ${e.type} took ${l}ms
+                  eC.info(`Handling action ${e.type} took ${l}ms
 ${s}`);
                 }
-                z.default.track(E.HAw.LIBDISCORE_DISPATCH_BRIDGE_TELEMETRY, {
+                h.default.track(E.HAw.LIBDISCORE_DISPATCH_BRIDGE_TELEMETRY, {
                   action_type: e.type,
                   total_duration_millis: l,
                   timings: JSON.stringify(t),
                   mutations: JSON.stringify(_.mutations),
                   memory_usage: JSON.stringify(_.memory),
                 }),
-                  eN.pd.didEmit();
+                  eR.pd.didEmit();
               }
             };
-            em.h.register(
+            eg.h.register(
               "LibDiscoreDispatcherBridge",
               Object.fromEntries(i.map((e) => [e, r])),
               () => {},
-              em.A.Database,
+              eg.A.Database,
             );
           } catch (e) {
-            eO.error("Failed to initialize the dispatcher bridge", e);
+            eC.error("Failed to initialize the dispatcher bridge", e);
           }
         }
         handleFatalError(e, t) {
           let n = Error(e),
             i = this.hasAnyAuthoritativeStore();
           if (
-            (eO.error(
+            (eC.error(
               "Fatal dispatch error for action",
               t,
               "hasAuthoritativeStore:",
@@ -25960,8 +25997,8 @@ ${s}`);
             }),
             i)
           )
-            throw ((0, eN.pX)(), n);
-          for (let e of (eO.warn("Disabling DispatcherBridge until restart"),
+            throw ((0, eR.pX)(), n);
+          for (let e of (eC.warn("Disabling DispatcherBridge until restart"),
           (this.disabledFromFatalError = !0),
           this.tokenToStore.values()))
             e.disableDualReadValidation();
@@ -25972,24 +26009,24 @@ ${s}`);
             r = n?.getMode(),
             s = Error(e.error ?? "unknown store error");
           if (
-            (eO.error("Store", i, "failed to handle action", t, "mode:", r, s),
+            (eC.error("Store", i, "failed to handle action", t, "mode:", r, s),
             o.A.captureException(s, {
               extra: { actionType: t, storeName: i, storeMode: r },
               tags: { source: "libdiscore", errorKind: "store_dispatch" },
             }),
             "typescript-libdiscore-dual-read" === r)
           )
-            eO.warn(
+            eC.warn(
               `Store: ${i} had unexpected error in Rust implementation, disabling moving forward`,
             ),
               n?.disableDualReadValidation();
-          else if ("libdiscore" === r) throw ((0, eN.pX)(), s);
+          else if ("libdiscore" === r) throw ((0, eR.pX)(), s);
           else throw Error(`unexpected storeMode '${r}' for store ${i}`);
         }
         withStoreToken(e, t, n) {
           let i = this.tokenToStore.get(e);
           null == i
-            ? eO.warn(
+            ? eC.warn(
                 "When dispatching action",
                 t,
                 "we got a store token",
@@ -26004,15 +26041,15 @@ ${s}`);
           return !1;
         }
       }
-      let eD = new Set(["libdiscore", "typescript-libdiscore-dual-read"]);
+      let ev = new Set(["libdiscore", "typescript-libdiscore-dual-read"]);
       if (
-        (new ey(
+        (new eL(
           __OVERLAY__
-            ? (eO.verbose(
+            ? (eC.verbose(
                 "Not enabling rust implementation because we're in the legacy overlay",
               ),
               [])
-            : eR.filter((e) => eD.has(e.getMode())),
+            : ey.filter((e) => ev.has(e.getMode())),
         ),
         (n.p =
           (window.GLOBAL_ENV.STATIC_ENDPOINT ?? "") +
@@ -26031,12 +26068,12 @@ ${s}`);
             .then(n.bind(n, 38896))
             .then((e) => e.init());
       }
-      (0, k.Zs)(function (e) {
+      (0, G.Zs)(function (e) {
         return (
           (e.paragraph = {
             ...e.paragraph,
             react: function (e, t, n) {
-              return (0, G.jsx)("p", { children: t(e.content, n) }, n.key);
+              return (0, F.jsx)("p", { children: t(e.content, n) }, n.key);
             },
           }),
           (e.link = {
@@ -26051,9 +26088,9 @@ ${s}`);
                   : (i.onClick = t);
               }
               return (
-                null == i.onClick && (i.href = V().sanitizeUrl(e.target)),
-                (0, G.jsx)(
-                  F.Anchor,
+                null == i.onClick && (i.href = H().sanitizeUrl(e.target)),
+                (0, F.jsx)(
+                  Y.Anchor,
                   { title: e.title, ...i, children: t(e.content, n) },
                   n.key,
                 )
@@ -26065,12 +26102,12 @@ ${s}`);
       }),
         (function (e, t) {
           if (null != t && "0.0.0" === t.app.getVersion()) return;
-          let n = new D();
+          let n = new w();
           if (null != t)
             if (null != t.window.setDevtoolsCallbacks)
               t.window.setDevtoolsCallbacks(
                 () => {
-                  e.hideToken(), w();
+                  e.hideToken(), k();
                 },
                 () => {
                   e.showToken();
@@ -26080,108 +26117,108 @@ ${s}`);
               let n = t.window.webContents;
               n.removeAllListeners("devtools-opened"),
                 n.on("devtools-opened", () => {
-                  e.hideToken(), w();
+                  e.hideToken(), k();
                 }),
                 n.on("devtools-closed", e.showToken);
             }
           else
-            L.Fr ||
-              L.v1 ||
+            P.Fr ||
+              P.v1 ||
               n.on("changed", (t) => {
                 let { open: n } = t;
-                n ? (e.hideToken(), w()) : e.showToken();
+                n ? (e.hideToken(), k()) : e.showToken();
               });
           window.addEventListener("beforeunload", (t) => {
             t.isTrusted && e.showToken();
           });
-        })(O, B.A),
-        b.Ay.Emitter.injectBatchEmitChanges(P.r),
-        (b.Ay.PersistedStore.disableWrites = __OVERLAY__),
-        b.Ay.initialize(),
+        })(y, W.A),
+        M.Ay.Emitter.injectBatchEmitChanges(U.r),
+        (M.Ay.PersistedStore.disableWrites = __OVERLAY__),
+        M.Ay.initialize(),
         n.e("94459").then(n.t.bind(n, 868086, 19));
-      let eL = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new eh.A().log(
-        `[BUILD INFO] Release Channel: ${eL}, Build Number: 535214, Version Hash: 9e2b4e6a924fbc945f74a185891a5dc91e249eeb`,
+      let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
+      new ef.A().log(
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535247, Version Hash: 8a58f961a5218604dd508130698fd25a3b3dc6b5`,
       ),
         o.A.setTags({ appContext: E.QCW }),
-        H.A.initBasic(),
+        K.A.initBasic(),
         {
           init() {
-            M.A.addChangeListener(this.handleAccessibilityStoreChanged),
-              K.A.addChangeListener(this.handleAccessibilityStoreChanged),
-              $.A.addChangeListener(this.handleUiDensityChanged),
-              Q.addListener(this.handlePrefersColorSchemeDarkChanged),
-              this.handlePrefersColorSchemeDarkChanged(Q),
-              J.addListener(this.handlePrefersColorSchemeLightChanged),
-              this.handlePrefersColorSchemeLightChanged(J),
-              ee.addListener(this.handlePrefersMoreContrastChanged),
-              this.handlePrefersMoreContrastChanged(ee),
-              et.addListener(this.handlePrefersForcedColorsChanged),
-              this.handlePrefersForcedColorsChanged(et),
-              Z.addListener(this.handleInvertColorsChanged),
-              this.handleInvertColorsChanged(Z),
-              z.default.setSystemAccessibilityFeatures(this.getActiveFeatures);
+            V.A.addChangeListener(this.handleAccessibilityStoreChanged),
+              z.A.addChangeListener(this.handleAccessibilityStoreChanged),
+              X.A.addChangeListener(this.handleUiDensityChanged),
+              Z.addListener(this.handlePrefersColorSchemeDarkChanged),
+              this.handlePrefersColorSchemeDarkChanged(Z),
+              ee.addListener(this.handlePrefersColorSchemeLightChanged),
+              this.handlePrefersColorSchemeLightChanged(ee),
+              en.addListener(this.handlePrefersMoreContrastChanged),
+              this.handlePrefersMoreContrastChanged(en),
+              ei.addListener(this.handlePrefersForcedColorsChanged),
+              this.handlePrefersForcedColorsChanged(ei),
+              et.addListener(this.handleInvertColorsChanged),
+              this.handleInvertColorsChanged(et),
+              h.default.setSystemAccessibilityFeatures(this.getActiveFeatures);
           },
-          getActiveFeatures: () => X,
+          getActiveFeatures: () => J,
           handlePrefersColorSchemeDarkChanged(e) {
-            en(q.O.PREFERS_COLOR_SCHEME_DARK, e.matches);
+            er(Q.O.PREFERS_COLOR_SCHEME_DARK, e.matches);
           },
           handlePrefersColorSchemeLightChanged(e) {
-            en(q.O.PREFERS_COLOR_SCHEME_LIGHT, e.matches);
+            er(Q.O.PREFERS_COLOR_SCHEME_LIGHT, e.matches);
           },
           handlePrefersMoreContrastChanged(e) {
-            en(q.O.HIGH_CONTRAST, e.matches);
+            er(Q.O.HIGH_CONTRAST, e.matches);
           },
           handlePrefersForcedColorsChanged(e) {
-            en(q.O.FORCED_COLORS, e.matches);
+            er(Q.O.FORCED_COLORS, e.matches);
           },
           handleInvertColorsChanged(e) {
-            en(q.O.INVERT_COLORS, e.matches);
+            er(Q.O.INVERT_COLORS, e.matches);
           },
           handleUiDensityChanged() {
-            let e = j.Xi.getSetting();
-            en(q.O.UI_DENSITY_COMPACT, e === Y.NS.COMPACT),
-              en(q.O.UI_DENSITY_SPACIOUS, e === Y.NS.COZY);
+            let e = q.Xi.getSetting();
+            er(Q.O.UI_DENSITY_COMPACT, e === j.NS.COMPACT),
+              er(Q.O.UI_DENSITY_SPACIOUS, e === j.NS.COZY);
           },
           handleAccessibilityStoreChanged() {
-            en(q.O.REDUCED_MOTION, M.A.useReducedMotion),
-              en(
-                q.O.REDUCED_MOTION_FROM_USER_SETTINGS,
-                "auto" !== M.A.rawPrefersReducedMotion,
+            er(Q.O.REDUCED_MOTION, V.A.useReducedMotion),
+              er(
+                Q.O.REDUCED_MOTION_FROM_USER_SETTINGS,
+                "auto" !== V.A.rawPrefersReducedMotion,
               ),
-              en(q.O.FORCED_COLORS_FROM_USER_SETTINGS, M.A.syncForcedColors),
-              en(q.O.CHAT_FONT_SCALE_DECREASED, M.A.isFontScaledDown),
-              en(q.O.CHAT_FONT_SCALE_INCREASED, M.A.isFontScaledUp),
-              en(q.O.ZOOM_LEVEL_DECREASED, M.A.isZoomedOut),
-              en(q.O.ZOOM_LEVEL_INCREASED, M.A.isZoomedIn),
-              en(
-                q.O.MESSAGE_GROUP_SPACING_DECREASED,
-                M.A.isMessageGroupSpacingDecreased,
+              er(Q.O.FORCED_COLORS_FROM_USER_SETTINGS, V.A.syncForcedColors),
+              er(Q.O.CHAT_FONT_SCALE_DECREASED, V.A.isFontScaledDown),
+              er(Q.O.CHAT_FONT_SCALE_INCREASED, V.A.isFontScaledUp),
+              er(Q.O.ZOOM_LEVEL_DECREASED, V.A.isZoomedOut),
+              er(Q.O.ZOOM_LEVEL_INCREASED, V.A.isZoomedIn),
+              er(
+                Q.O.MESSAGE_GROUP_SPACING_DECREASED,
+                V.A.isMessageGroupSpacingDecreased,
               ),
-              en(
-                q.O.MESSAGE_GROUP_SPACING_INCREASED,
-                M.A.isMessageGroupSpacingIncreased,
+              er(
+                Q.O.MESSAGE_GROUP_SPACING_INCREASED,
+                V.A.isMessageGroupSpacingIncreased,
               ),
-              en(q.O.DARK_SIDEBAR, (0, W.$i)()),
-              en(q.O.SATURATION_LEVEL_DECREASED, M.A.saturation < 1),
-              en(q.O.ROLE_STYLE_ADJUSTED, "username" !== M.A.roleStyle),
-              en(
-                q.O.SYNC_PROFILE_THEME_WITH_USER_THEME,
-                M.A.syncProfileThemeWithUserTheme,
+              er(Q.O.DARK_SIDEBAR, (0, $.$i)()),
+              er(Q.O.SATURATION_LEVEL_DECREASED, V.A.saturation < 1),
+              er(Q.O.ROLE_STYLE_ADJUSTED, "username" !== V.A.roleStyle),
+              er(
+                Q.O.SYNC_PROFILE_THEME_WITH_USER_THEME,
+                V.A.syncProfileThemeWithUserTheme,
               ),
-              en(q.O.CONTRAST_LEVEL_INCREASED, M.A.isHighContrastModeEnabled);
+              er(Q.O.CONTRAST_LEVEL_INCREASED, V.A.isHighContrastModeEnabled);
           },
         }.init(),
         {
           init() {
-            M.A.addChangeListener(() => {
-              M.A.keyboardModeEnabled
-                ? (U.oP.setRingsEnabled(!0), U.oP.enableAnimationTracking())
-                : (U.oP.setRingsEnabled(!1), U.oP.disableAnimationTracking());
+            V.A.addChangeListener(() => {
+              V.A.keyboardModeEnabled
+                ? (x.oP.setRingsEnabled(!0), x.oP.enableAnimationTracking())
+                : (x.oP.setRingsEnabled(!1), x.oP.disableAnimationTracking());
             });
           },
         }.init(),
-        ec();
+        eh();
     },
     181658(e, t, n) {
       "use strict";
@@ -48743,7 +48780,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "9e2b4e6a924fbc945f74a185891a5dc91e249eeb" === e.body.hash
+                  "8a58f961a5218604dd508130698fd25a3b3dc6b5" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53179,10 +53216,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("535214")),
+                ((e = parseInt("535247")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 535214",
+                    "Trying to open a changelog for an invalid build number 535247",
                   ),
                   (e = 0)),
                 e),
@@ -60211,7 +60248,7 @@ ${s}`);
             n.e("62718"),
             n.e("43436"),
             n.e("24170"),
-            n.e("22802"),
+            n.e("84317"),
             n.e("68883"),
             n.e("54865"),
             n.e("29594"),
@@ -63703,7 +63740,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535214", versionHash: "9e2b4e6a924fbc945f74a185891a5dc91e249eeb" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535247", versionHash: "8a58f961a5218604dd508130698fd25a3b3dc6b5" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -65172,7 +65209,11 @@ ${C}`;
           i.M.FIRST_BOOSTER_UPSELL,
           i.M.MOBILE_ACCOUNT_LINKING_BANNER,
         ],
-        _ = [i.M.BOOST_TO_UNLOCK_COACHMARK, i.M.EXPIRING_POWERUP_COACHMARK];
+        _ = [
+          i.M.BOOST_TO_UNLOCK_COACHMARK,
+          i.M.EXPIRING_POWERUP_COACHMARK,
+          i.M.NOTIFICATION_NUDGE_GUILD_OPEN_PER_GUILD,
+        ];
       function d(e) {
         return s.includes(e);
       }
@@ -94293,7 +94334,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("8306"),
           n.e("10567"),
           n.e("43436"),
-          n.e("22802"),
+          n.e("84317"),
           n.e("54865"),
           n.e("44575"),
           n.e("99305"),
@@ -108204,7 +108245,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("62718"),
               n.e("43436"),
               n.e("24170"),
-              n.e("22802"),
+              n.e("84317"),
               n.e("68883"),
               n.e("54865"),
               n.e("29594"),
@@ -111728,7 +111769,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("20735"),
               n.e("10567"),
               n.e("43436"),
-              n.e("22802"),
+              n.e("84317"),
               n.e("6159"),
               n.e("14875"),
               n.e("62175"),
@@ -140012,7 +140053,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("62718"),
                   n.e("43436"),
                   n.e("24170"),
-                  n.e("22802"),
+                  n.e("84317"),
                   n.e("68883"),
                   n.e("54865"),
                   n.e("29594"),
@@ -168098,7 +168139,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "9e2b4e6a924fbc945f74a185891a5dc91e249eeb",
+                    "8a58f961a5218604dd508130698fd25a3b3dc6b5",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -173921,7 +173962,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "535214",
+                  build_number: "535247",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -192464,12 +192505,12 @@ Total Time: ${o}ms
               t.onRequestProgress?.(e);
             });
         let l = () => {
-          (t.backoff = null != t.backoff ? t.backoff : new s.A()),
-            (t.retried = (null != t.retried ? t.retried : 0) + 1),
-            t.backoff.fail(() => L(t.url).then(() => m(e, t, n, i, a)));
-        };
-        y?.prepareRequest?.(o),
-          o.ok((e) => null != e.status),
+            (t.backoff = null != t.backoff ? t.backoff : new s.A()),
+              (t.retried = (null != t.retried ? t.retried : 0) + 1),
+              t.backoff.fail(() => L(t.url).then(() => m(e, t, n, i, a)));
+          },
+          d = y?.prepareRequest?.(o);
+        o.ok((e) => null != e.status),
           o.then(
             (r) => {
               if (null != t.retries && t.retries-- > 0 && E.has(r.status))
@@ -192483,7 +192524,7 @@ Total Time: ${o}ms
               };
               I(t, s);
               let o = !1,
-                d = (r, s) => {
+                u = (r, s) => {
                   let l = {
                     ...t,
                     headers: { ...t.headers, ...r },
@@ -192491,12 +192532,12 @@ Total Time: ${o}ms
                   };
                   (o = !0), m(e, l, n, i, a);
                 },
-                u = (e) => {
+                c = (e) => {
                   o || (i(e), a?.({ ok: !1, hasErr: !0, err: e }));
                 };
               if (
-                t?.interceptResponse?.(r, d, u) !== !0 &&
-                y?.interceptResponse?.(r, d, u) !== !0
+                t?.interceptResponse?.(r, u, c) !== !0 &&
+                y?.interceptResponse?.(r, u, c, d) !== !0
               ) {
                 if (r.ok) n(s);
                 else {
@@ -208051,6 +208092,8 @@ Total Time: ${o}ms
             "NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER"),
           (i[(i.GAME_SERVER_NEW_GAMES_COACHMARK = 747)] =
             "GAME_SERVER_NEW_GAMES_COACHMARK"),
+          (i[(i.NOTIFICATION_NUDGE_GUILD_OPEN_PER_GUILD = 748)] =
+            "NOTIFICATION_NUDGE_GUILD_OPEN_PER_GUILD"),
           i),
         a =
           (((r = {})[(r.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0)] =
@@ -232860,4 +232903,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=64597.b104ee9c272aa3d1.js.map
+//# sourceMappingURL=76127.bbfdc283b9d40345.js.map
