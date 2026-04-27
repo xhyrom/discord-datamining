@@ -26139,7 +26139,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535552, Version Hash: 159bb99835918f7c35a2de79e7f815f27109a307`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535619, Version Hash: 3aeb9397c824d154854f08cee307677fba305b8a`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -40815,6 +40815,7 @@ ${s}`);
           (i.USER_MENTION = "user mention"),
           (i.ROLE_MENTION = "role mention"),
           (i.CONNECTIONS_ROLE_POPOUT = "connections role popout"),
+          (i.XBOX_CONNECTED_ACCOUNTS_BANNER = "xbox connected accounts banner"),
           (i.GAME_MENU = "game menu"),
           (i.GUILD_PROFILE = "guild profile"),
           (i.EDIT_AVATAR = "edit avatar"),
@@ -48784,7 +48785,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "159bb99835918f7c35a2de79e7f815f27109a307" === e.body.hash
+                  "3aeb9397c824d154854f08cee307677fba305b8a" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53220,10 +53221,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("535552")),
+                ((e = parseInt("535619")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 535552",
+                    "Trying to open a changelog for an invalid build number 535619",
                   ),
                   (e = 0)),
                 e),
@@ -63744,7 +63745,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535552", versionHash: "159bb99835918f7c35a2de79e7f815f27109a307" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535619", versionHash: "3aeb9397c824d154854f08cee307677fba305b8a" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -168144,7 +168145,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "159bb99835918f7c35a2de79e7f815f27109a307",
+                    "3aeb9397c824d154854f08cee307677fba305b8a",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -173967,7 +173968,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "535552",
+                  build_number: "535619",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -232914,4 +232915,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=76127.4a6029a68c40301d.js.map
+//# sourceMappingURL=76127.e8bd2cba2c505bce.js.map
