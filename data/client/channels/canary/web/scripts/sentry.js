@@ -10,8 +10,8 @@
           n = o(774099),
           i = o(56833),
           a = o(883950),
-          l = o(871186),
-          d = o(363630);
+          d = o(871186),
+          l = o(363630);
         let s = ["oppobrowser", "realmebrowser", "heytapbrowser"],
           u = (function (e) {
             let { maxBudgetMinute: r, maxBudgetHour: o } = e,
@@ -36,7 +36,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-3aeb9397c824d154854f08cee307677fba305b8a",
+            release: "discord_web-a75df0bac78cc8ea26b7a4f4800f6d9fd81b4593",
             beforeSend: function (e, r) {
               let o;
               return !(
@@ -108,11 +108,11 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            l.NA("buildNumber", "535619"),
-            l.NA("builtAt", String("1777319437539"));
+            d.NA("buildNumber", "535694"),
+            d.NA("builtAt", String("1777323490573"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
-          if (null != e && "object" == typeof e) for (let r in e) l.NA(r, e[r]);
-          return d;
+          if (null != e && "object" == typeof e) for (let r in e) d.NA(r, e[r]);
+          return l;
         })();
       },
     },
@@ -145,12 +145,12 @@
         e[i] = [o, t, n];
         return;
       }
-      for (var l = 1 / 0, i = 0; i < e.length; i++) {
-        for (var [o, t, n] = e[i], d = !0, s = 0; s < o.length; s++)
-          (!1 & n || l >= n) && Object.keys(a.O).every((e) => a.O[e](o[s]))
+      for (var d = 1 / 0, i = 0; i < e.length; i++) {
+        for (var [o, t, n] = e[i], l = !0, s = 0; s < o.length; s++)
+          (!1 & n || d >= n) && Object.keys(a.O).every((e) => a.O[e](o[s]))
             ? o.splice(s--, 1)
-            : ((d = !1), n < l && (l = n));
-        if (d) {
+            : ((l = !1), n < d && (d = n));
+        if (l) {
           e.splice(i--, 1);
           var u = t();
           void 0 !== u && (r = u);
@@ -164,11 +164,11 @@
     (o = (e, o) => {
       var t,
         n,
-        [i, l, d] = o,
+        [i, d, l] = o,
         s = 0;
       if (i.some((e) => 0 !== r[e])) {
-        for (t in l) a.o(l, t) && (a.m[t] = l[t]);
-        if (d) var u = d(a);
+        for (t in d) a.o(d, t) && (a.m[t] = d[t]);
+        if (l) var u = l(a);
       }
       for (e && e(o); s < i.length; s++)
         (n = i[s]), a.o(r, n) && r[n] && r[n][0](), (r[n] = 0);
@@ -178,7 +178,7 @@
       this.webpackChunkdiscord_app || []).forEach(o.bind(null, 0)),
     (t.push = o.bind(null, t.push.bind(t))),
     (a.ruid = "bundler=rspack@1.7.11");
-  var l = a.O(void 0, ["64310", "56707"], () => a(219249));
-  l = a.O(l);
+  var d = a.O(void 0, ["64310", "56707"], () => a(219249));
+  d = a.O(d);
 })();
-//# sourceMappingURL=sentry.aa2ba970206a03ae.js.map
+//# sourceMappingURL=sentry.acf2df9ab43c4475.js.map

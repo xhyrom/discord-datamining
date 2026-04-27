@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["76127"],
+  ["38583"],
   {
     696354(e, t, n) {
       var i = {
@@ -10294,51 +10294,53 @@
         },
         acceptInvite(e) {
           let { inviteKey: t, context: i, callback: r, skipOnboarding: s } = e,
-            a = (0, w.y$)(t),
-            o = a.baseCode,
-            l = x.default.getSessionId(),
-            _ = Y.A.getReceivedInstallationIdForInviteCode(o),
-            d = {
+            l = (0, w.y$)(t),
+            _ = l.baseCode,
+            d = x.default.getSessionId(),
+            c = Y.A.getReceivedInstallationIdForInviteCode(_),
+            E = {
               ...i,
-              invite_guild_scheduled_event_id: a.guildScheduledEventId,
+              invite_guild_scheduled_event_id: l.guildScheduledEventId,
             },
-            c = j.default.getCurrentUser();
-          return c?.hasFlag(ee.nhx.QUARANTINED)
+            m = j.default.getCurrentUser();
+          return m?.hasFlag(ee.nhx.QUARANTINED)
             ? ((0, b.default)(), new Promise((e, t) => t(Error())))
             : (h.h.dispatch({ type: "INVITE_ACCEPT", code: t }),
               u.Bo.post({
-                url: ee.Rsh.INVITE(o),
-                context: d,
+                url: ee.Rsh.INVITE(_),
+                context: E,
                 oldFormErrors: !0,
                 body: {
-                  session_id: l,
+                  session_id: d,
                   invite_instance_id: i.invite_instance_id,
-                  received_installation_id: _,
+                  received_installation_id: c,
                 },
                 rejectWithError: !1,
               }).then(
                 async (e) => {
-                  null != _ && this.clearReceivedInstallationIdForInviteCode(o),
+                  null != c && this.clearReceivedInstallationIdForInviteCode(_),
                     h.h.dispatch({
                       type: "INVITE_ACCEPT_SUCCESS",
                       invite: e.body,
                       code: t,
                     });
-                  let i = D.Ay.getGuildScheduledEvent(a.guildScheduledEventId),
-                    l = { ...e.body, guild_scheduled_event: i },
-                    d = l?.guild_id ?? l?.guild?.id;
+                  let i = D.Ay.getGuildScheduledEvent(l.guildScheduledEventId),
+                    d = { ...e.body, guild_scheduled_event: i },
+                    u = d?.guild_id ?? d?.guild?.id,
+                    E = (0, o.Lt)(d.flags ?? 0, a.Q.IS_GUEST_INVITE);
                   if (
                     !s &&
-                    null != d &&
-                    l.new_member &&
-                    !l.show_verification_form
+                    !E &&
+                    null != u &&
+                    d.new_member &&
+                    !d.show_verification_form
                   ) {
                     let { default: e } = await Promise.resolve().then(
                       n.bind(n, 608401),
                     );
-                    await e({ guildId: d });
+                    await e({ guildId: u });
                   }
-                  return r?.(l), e.body;
+                  return r?.(d), e.body;
                 },
                 (e) => {
                   throw (
@@ -10381,14 +10383,17 @@
           let { channel: i, guild: r } = e;
           if (null != r && r.features?.includes(ee.GuildFeatures.HUB))
             return void v.A.onOpenHubInvite(e);
-          let s = (0, o.Lt)(e.flags ?? 0, a.Q.IS_APPLICATION_BYPASS);
-          if (null != r && !s && e.new_member && (0, L.h)(r))
+          let s = e.flags ?? 0,
+            l =
+              (0, o.Lt)(s, a.Q.IS_GUEST_INVITE) ||
+              (0, o.Lt)(s, a.Q.IS_APPLICATION_BYPASS);
+          if (null != r && !l && e.new_member && (0, L.h)(r))
             return void (0, L.W)(r.id);
           if (null == i) return;
-          let l = el(e);
-          null != t && (l.transitionTo = t),
-            null != n && (l.muteOnJoinVoiceChannel = n),
-            e_({ guildId: null != r ? r.id : ee.ME, channel: i, options: l });
+          let _ = el(e);
+          null != t && (_.transitionTo = t),
+            null != n && (_.muteOnJoinVoiceChannel = n),
+            e_({ guildId: null != r ? r.id : ee.ME, channel: i, options: _ });
         },
         transitionToInviteSync(e, t, n) {
           if (null != e.channel) {
@@ -26139,7 +26144,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535619, Version Hash: 3aeb9397c824d154854f08cee307677fba305b8a`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535694, Version Hash: a75df0bac78cc8ea26b7a4f4800f6d9fd81b4593`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -48785,7 +48790,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "3aeb9397c824d154854f08cee307677fba305b8a" === e.body.hash
+                  "a75df0bac78cc8ea26b7a4f4800f6d9fd81b4593" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -50938,6 +50943,18 @@ ${s}`);
           })
         ).body;
       };
+    },
+    546605(e, t, n) {
+      "use strict";
+      n.d(t, { vg: () => r, wy: () => s });
+      let i = (0, n(945810).mj)({
+          name: "2026-03-store-country",
+          kind: "user",
+          defaultConfig: { enabled: !1 },
+          variations: { 0: { enabled: !1 }, 1: { enabled: !0 } },
+        }),
+        r = (e) => i.useConfig({ location: e }).enabled,
+        s = (e) => i.getConfig({ location: e }).enabled;
     },
     366999(e, t, n) {
       "use strict";
@@ -53221,10 +53238,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("535619")),
+                ((e = parseInt("535694")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 535619",
+                    "Trying to open a changelog for an invalid build number 535694",
                   ),
                   (e = 0)),
                 e),
@@ -53304,7 +53321,7 @@ ${s}`);
                 n.e("82731"),
                 n.e("44575"),
                 n.e("34268"),
-                n.e("70255"),
+                n.e("44939"),
               ]).then(n.bind(n, 636254));
               return (t) => (0, i.jsx)(e, { ...t });
             },
@@ -60261,8 +60278,8 @@ ${s}`);
             n.e("7637"),
             n.e("3025"),
             n.e("42282"),
-            n.e("49862"),
             n.e("44575"),
+            n.e("49862"),
             n.e("80093"),
             n.e("44647"),
             n.e("10730"),
@@ -60284,7 +60301,7 @@ ${s}`);
             n.e("88808"),
             n.e("62092"),
             n.e("27752"),
-            n.e("3441"),
+            n.e("28953"),
             n.e("24431"),
             n.e("86546"),
             n.e("15373"),
@@ -60298,19 +60315,19 @@ ${s}`);
             n.e("26663"),
             n.e("91139"),
             n.e("47568"),
-            n.e("91749"),
+            n.e("8021"),
             n.e("29491"),
             n.e("41706"),
             n.e("17422"),
-            n.e("43368"),
+            n.e("62597"),
             n.e("98352"),
             n.e("26297"),
-            n.e("4986"),
             n.e("77058"),
+            n.e("4986"),
             n.e("72822"),
             n.e("52803"),
-            n.e("22646"),
             n.e("53275"),
+            n.e("50999"),
             n.e("16310"),
             n.e("7121"),
             n.e("49448"),
@@ -60353,17 +60370,17 @@ ${s}`);
             n.e("96975"),
             n.e("19347"),
             n.e("83438"),
-            n.e("55514"),
+            n.e("36423"),
             n.e("4787"),
             n.e("40962"),
             n.e("5536"),
             n.e("81161"),
-            n.e("44395"),
+            n.e("66774"),
             n.e("81250"),
             n.e("24805"),
             n.e("44846"),
             n.e("21595"),
-            n.e("89947"),
+            n.e("18779"),
             n.e("46454"),
             n.e("73985"),
             n.e("31294"),
@@ -63745,7 +63762,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535619", versionHash: "3aeb9397c824d154854f08cee307677fba305b8a" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535694", versionHash: "a75df0bac78cc8ea26b7a4f4800f6d9fd81b4593" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -94343,7 +94360,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("84317"),
           n.e("54865"),
           n.e("44575"),
-          n.e("99305"),
+          n.e("60482"),
         ]).then(n.bind(n, 121338));
         if (
           (t(e),
@@ -108276,7 +108293,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("88808"),
               n.e("62092"),
               n.e("27752"),
-              n.e("3441"),
+              n.e("28953"),
               n.e("24431"),
               n.e("7679"),
               n.e("98970"),
@@ -108285,13 +108302,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("26663"),
               n.e("91139"),
               n.e("47568"),
-              n.e("91749"),
+              n.e("8021"),
               n.e("29491"),
               n.e("17422"),
               n.e("98352"),
               n.e("26297"),
               n.e("4986"),
-              n.e("22646"),
+              n.e("50999"),
               n.e("16310"),
               n.e("7121"),
               n.e("49448"),
@@ -111782,7 +111799,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("29716"),
               n.e("8739"),
               n.e("61402"),
-              n.e("12409"),
+              n.e("26906"),
             ]).then(n.bind(n, 864353));
             return (n) => {
               let { onClose: s, ...a } = n;
@@ -137181,7 +137198,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("77058"),
               n.e("55811"),
               n.e("2059"),
-              n.e("55514"),
+              n.e("36423"),
               n.e("5536"),
               n.e("45340"),
               n.e("92879"),
@@ -140087,7 +140104,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("88808"),
                   n.e("62092"),
                   n.e("27752"),
-                  n.e("3441"),
+                  n.e("28953"),
                   n.e("24431"),
                   n.e("86546"),
                   n.e("7679"),
@@ -140100,14 +140117,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("26663"),
                   n.e("91139"),
                   n.e("47568"),
-                  n.e("91749"),
+                  n.e("8021"),
                   n.e("29491"),
                   n.e("41706"),
                   n.e("17422"),
                   n.e("98352"),
                   n.e("26297"),
                   n.e("4986"),
-                  n.e("22646"),
+                  n.e("50999"),
                   n.e("16310"),
                   n.e("7121"),
                   n.e("49448"),
@@ -168145,7 +168162,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "3aeb9397c824d154854f08cee307677fba305b8a",
+                    "a75df0bac78cc8ea26b7a4f4800f6d9fd81b4593",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -173968,7 +173985,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "535619",
+                  build_number: "535694",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -232915,4 +232932,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=76127.e8bd2cba2c505bce.js.map
+//# sourceMappingURL=38583.0738950128593372.js.map
