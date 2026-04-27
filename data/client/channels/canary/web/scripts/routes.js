@@ -28269,8 +28269,8 @@
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1777262777503",
-                      build_number: "535354",
+                      built_at: "1777298627888",
+                      build_number: "535381",
                     },
                   },
                   retries: 1,
@@ -40935,21 +40935,35 @@
               guildId: e,
             });
             let t = (
-              await i.Bo.get({
-                url: l.Rsh.SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT(e),
-                rejectWithError: !0,
-              })
-            ).body;
+                await i.Bo.get({
+                  url: l.Rsh.SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT(e),
+                  rejectWithError: !0,
+                })
+              ).body,
+              n =
+                "guild-discord-announcement" === t.type
+                  ? {
+                      type: "guild-discord-announcement",
+                      id: t.id,
+                      applicationId: t.application_id,
+                      applicationName: t.application_name,
+                      assetFullyQualifiedURL: t.asset_fully_qualified_url,
+                      popoverTitle: t.popover_title,
+                      popoverBody: t.popover_body,
+                      popoverCta: t.popover_cta,
+                    }
+                  : {
+                      type: "guild-application-announcement",
+                      id: t.id,
+                      applicationId: t.application_id,
+                      applicationName: t.application_name,
+                      assetId: t.asset_id,
+                      backgroundImageAssetId: t.background_image_asset_id,
+                    };
             a.h.dispatch({
               type: "SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_SUCCESS",
               guildId: e,
-              announcement: {
-                id: t.id,
-                applicationId: t.application_id,
-                applicationName: t.application_name,
-                assetId: t.asset_id,
-                backgroundImageAssetId: t.background_image_asset_id,
-              },
+              announcement: n,
             });
           } catch (t) {
             a.h.dispatch({
@@ -52820,7 +52834,7 @@
           (_ = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == r.release_channel || "" === r.release_channel) &&
             (r.release_channel = _.split("-")[0]),
-          isNaN((s = parseInt("535354", 10))) || (r.client_build_number = s),
+          isNaN((s = parseInt("535381", 10))) || (r.client_build_number = s),
           null == (l = O?.app.getBuildNumber()) ||
             isNaN(l) ||
             (r.native_build_number = l),
@@ -65272,7 +65286,7 @@ color: purple;
                                               36189: "8ca6a4c1b626b1ff",
                                               36308: "15bf44e2e92a8e54",
                                               36354: "1cf7f51f63b58150",
-                                              36467: "72cc60c2cb7510c5",
+                                              36467: "fd548c345ab26268",
                                               3666: "55454dc6a492e42c",
                                               36685: "0516e6804ed89ff4",
                                               3671: "1d2743c2eaa65c6d",
@@ -65366,7 +65380,7 @@ color: purple;
                                               49212: "227e1f901124429f",
                                               49222: "ea99e569f7c6c55c",
                                               49517: "3e477a6c0e58979f",
-                                              49594: "72cc60c2cb7510c5",
+                                              49594: "fd548c345ab26268",
                                               49600: "24dd769171d1a211",
                                               49876: "585911b725b6daed",
                                               499: "7e5eb2a34c76045c",
@@ -65374,7 +65388,7 @@ color: purple;
                                               50178: "895c16e938730967",
                                               50441: "dcc16b8b5e4dbe04",
                                               50771: "2aab37847c818812",
-                                              51050: "35595770b8fdc8a8",
+                                              51050: "dd028287c854d0a1",
                                               51143: "277bfa20636935dc",
                                               51200: "2f07063a107cd1db",
                                               51234: "32f99b5a72306446",
@@ -65423,7 +65437,7 @@ color: purple;
                                               59275: "7c48430c5f83622b",
                                               59839: "60d8ca4d9d17c21a",
                                               59866: "01a9d75bfa8fcda0",
-                                              60020: "b9a3a20e2b099b71",
+                                              60020: "64678718ca69802c",
                                               60071: "b44663d88504d462",
                                               60106: "9b55392ccd215736",
                                               60114: "1bd70fddfcd2fa02",
@@ -65514,7 +65528,7 @@ color: purple;
                                               72914: "e18ad3ea88570f55",
                                               72970: "abc80cb370e22064",
                                               73118: "70b04ddf8c0d221c",
-                                              73125: "991e9070ed131378",
+                                              73125: "4fb63ffda6a6c3e3",
                                               73152: "36cd4761007563a0",
                                               73169: "2f6c564482862b5d",
                                               73380: "fc4099e2c3592ebb",
@@ -65666,11 +65680,11 @@ color: purple;
                                               9842: "1a3b3fc54b3b0515",
                                               98597: "ad030e7089f2c131",
                                               98657: "196959ee7cd429ee",
-                                              98700: "02d0d1f7482fcf73",
+                                              98700: "5d39a88acc74b1f2",
                                               99063: "a06f142ee55db4f5",
                                               99116: "1ea1587c9e95451b",
                                               99305: "32bc799d48719764",
-                                              99346: "604fbb7e1a77131a",
+                                              99346: "ab6a360954c691e9",
                                               99487: "fd3d65f0748ec78e",
                                               99510: "d8854e94ce11fe07",
                                               99583: "a6fffca14cb11bc9",
@@ -66833,7 +66847,7 @@ color: purple;
                                                                                                                                                                                                                                                               21705:
                                                                                                                                                                                                                                                                 "0c331e8b42f44cbc",
                                                                                                                                                                                                                                                               21738:
-                                                                                                                                                                                                                                                                "4c6d951eb8a51383",
+                                                                                                                                                                                                                                                                "a5cd2fb2bb354225",
                                                                                                                                                                                                                                                               21868:
                                                                                                                                                                                                                                                                 "210066f6bbe84c25",
                                                                                                                                                                                                                                                               21878:
@@ -67796,7 +67810,7 @@ color: purple;
                                                                                                                                                                                                                                                               38398:
                                                                                                                                                                                                                                                                 "ef305c7a57dbe522",
                                                                                                                                                                                                                                                               38402:
-                                                                                                                                                                                                                                                                "626e5882714c9778",
+                                                                                                                                                                                                                                                                "c6fd75b9e421a854",
                                                                                                                                                                                                                                                               38405:
                                                                                                                                                                                                                                                                 "1f5b3596920268eb",
                                                                                                                                                                                                                                                               38435:
@@ -68140,7 +68154,7 @@ color: purple;
                                                                                                                                                                                                                                                                 "4ab8061a072c61e4",
                                                                                                                                                                                                                                                               445: "e5497d7009e9abff",
                                                                                                                                                                                                                                                               44642:
-                                                                                                                                                                                                                                                                "86788739594340d5",
+                                                                                                                                                                                                                                                                "4ec0bde2b4e39540",
                                                                                                                                                                                                                                                               4467: "5e6cb43bef3e8d64",
                                                                                                                                                                                                                                                               44678:
                                                                                                                                                                                                                                                                 "7af2c50b0b141a53",
@@ -68987,7 +69001,7 @@ color: purple;
                                                                                                                                                                                                                                                               60497:
                                                                                                                                                                                                                                                                 "5a7ee5f8a10b9714",
                                                                                                                                                                                                                                                               60649:
-                                                                                                                                                                                                                                                                "d18608285e573af2",
+                                                                                                                                                                                                                                                                "bf8d832080739f3a",
                                                                                                                                                                                                                                                               6065: "d2f9be547cd534de",
                                                                                                                                                                                                                                                               60658:
                                                                                                                                                                                                                                                                 "7ac61a2649a3a38a",
@@ -69238,7 +69252,7 @@ color: purple;
                                                                                                                                                                                                                                                                 "76bb6c461df0c942",
                                                                                                                                                                                                                                                               65306:
                                                                                                                                                                                                                                                                 "b161657d30d383d5",
-                                                                                                                                                                                                                                                              6531: "d55feb40fa68fef5",
+                                                                                                                                                                                                                                                              6531: "eaacbf72166f9584",
                                                                                                                                                                                                                                                               65338:
                                                                                                                                                                                                                                                                 "454dd9d9173983dd",
                                                                                                                                                                                                                                                               65341:
@@ -69844,7 +69858,7 @@ color: purple;
                                                                                                                                                                                                                                                               77371:
                                                                                                                                                                                                                                                                 "bb83069373f11347",
                                                                                                                                                                                                                                                               77375:
-                                                                                                                                                                                                                                                                "a7235973926f40ae",
+                                                                                                                                                                                                                                                                "b1dffd8233b41c0e",
                                                                                                                                                                                                                                                               7739: "7c113b244ed1c95e",
                                                                                                                                                                                                                                                               77415:
                                                                                                                                                                                                                                                                 "8a48bf1720b9637e",
@@ -71062,7 +71076,7 @@ color: purple;
                                                                                                                                                                                                                                                               99487:
                                                                                                                                                                                                                                                                 "b1c3e5e7cfd9393a",
                                                                                                                                                                                                                                                               99510:
-                                                                                                                                                                                                                                                                "1fa0e05dc9c93849",
+                                                                                                                                                                                                                                                                "1f1c8acffe8f0209",
                                                                                                                                                                                                                                                               99523:
                                                                                                                                                                                                                                                                 "e5858a1ce392bd0d",
                                                                                                                                                                                                                                                               99527:
@@ -71743,4 +71757,4 @@ color: purple;
   );
   L = R.O(L);
 })();
-//# sourceMappingURL=web.f7e5c9c62e25c5cb.js.map
+//# sourceMappingURL=web.6affc597d4ffbffa.js.map
