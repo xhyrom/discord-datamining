@@ -20054,7 +20054,7 @@ ${s}`),
         a = n(64700),
         o = n(503698),
         l = n.n(o),
-        _ = n(419354),
+        _ = n(487514),
         d = n(110259),
         u = n(615300),
         c = n(789645),
@@ -20259,7 +20259,7 @@ ${s}`),
         _ = n(892491),
         d = n(462824),
         u = n(73939),
-        c = n(419354),
+        c = n(487514),
         E = n(602853),
         h = n(661531),
         m = n(866323),
@@ -21555,7 +21555,7 @@ ${s}`),
         a = n.n(s),
         o = n(735438),
         l = n.n(o),
-        _ = n(419354),
+        _ = n(487514),
         d = n(621466),
         u = n(452027),
         c = n(187322),
@@ -22029,7 +22029,7 @@ ${s}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(110259),
         _ = n(66455),
         d = n(607399),
@@ -22206,7 +22206,7 @@ ${s}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(661531),
         _ = n(462887),
         d = n(310784),
@@ -22772,7 +22772,7 @@ ${s}`),
       n.d(t, { U: () => h, Y: () => E });
       var i = n(627968),
         r = n(64700),
-        s = n(419354),
+        s = n(487514),
         a = n(866323),
         o = n(695366),
         l = n(661531),
@@ -23072,7 +23072,7 @@ ${s}`),
       n.d(t, { N: () => E });
       var i = n(627968),
         r = n(64700),
-        s = n(419354),
+        s = n(487514),
         a = n(866323),
         o = n(857250),
         l = n(691540),
@@ -23166,7 +23166,7 @@ ${s}`),
         a = n(503698),
         o = n.n(a),
         l = n(340287),
-        _ = n(419354),
+        _ = n(487514),
         d = n(607399),
         u = n(621466),
         c = n(844222),
@@ -24255,7 +24255,7 @@ ${s}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(508382),
         _ = n(83379),
         d = n(502939),
@@ -26139,7 +26139,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535381, Version Hash: 965c53e51e72ee20ad22ea4bb7e4a05e2ca540f3`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535413, Version Hash: af92649ba73d5e167d472a6019817862f085d500`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -48782,7 +48782,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "965c53e51e72ee20ad22ea4bb7e4a05e2ca540f3" === e.body.hash
+                  "af92649ba73d5e167d472a6019817862f085d500" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53218,10 +53218,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("535381")),
+                ((e = parseInt("535413")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 535381",
+                    "Trying to open a changelog for an invalid build number 535413",
                   ),
                   (e = 0)),
                 e),
@@ -58894,7 +58894,7 @@ ${s}`);
             ? ((_ = [E ?? "unknown"]),
               (0, r.openModalLazy)(async () => {
                 let { default: e } = await Promise.all([
-                  n.e("53242"),
+                  n.e("95908"),
                   n.e("9957"),
                   n.e("73118"),
                 ]).then(n.bind(n, 858128));
@@ -63742,7 +63742,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535381", versionHash: "965c53e51e72ee20ad22ea4bb7e4a05e2ca540f3" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535413", versionHash: "af92649ba73d5e167d472a6019817862f085d500" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -108621,7 +108621,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(17928),
         _ = n(834730),
         d = n(821609),
@@ -113010,7 +113010,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         M = n(267102),
         G = n(735438),
         x = n.n(G),
-        V = n(419354),
+        V = n(487514),
         F = n(258873),
         B = n(622242),
         H = n(731738),
@@ -119872,7 +119872,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(717421),
         _ = n(935462),
         d = n(430690),
@@ -168142,7 +168142,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "965c53e51e72ee20ad22ea4bb7e4a05e2ca540f3",
+                    "af92649ba73d5e167d472a6019817862f085d500",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -173965,7 +173965,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "535381",
+                  build_number: "535413",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -179973,7 +179973,7 @@ ${o.join(" +\n")}
       "use strict";
       n.d(t, { z: () => o });
       var i = n(64700),
-        r = n(419354),
+        r = n(487514),
         s = n(844222),
         a = n(384494);
       function o(e) {
@@ -179999,7 +179999,7 @@ ${o.join(" +\n")}
       "use strict";
       n.d(t, { p: () => o });
       var i = n(64700),
-        r = n(419354),
+        r = n(487514),
         s = n(844222),
         a = n(384494);
       function o(e, t) {
@@ -186060,7 +186060,7 @@ ${o.join(" +\n")}
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(110259),
         _ = n(113325),
         d = n(187322),
@@ -186813,7 +186813,7 @@ ${o.join(" +\n")}
       n(64700);
       var r = n(503698),
         s = n.n(r),
-        a = n(419354),
+        a = n(487514),
         o = n(866323),
         l = n(892491),
         _ = n(150591),
@@ -189703,7 +189703,7 @@ ${o.join(" +\n")}
         s = n(64700),
         a = n(977418),
         o = n(967158),
-        l = n(419354),
+        l = n(487514),
         _ = n(823807),
         d = n(661531),
         u = n(717421),
@@ -189946,7 +189946,7 @@ ${o.join(" +\n")}
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(661531),
         _ = n(717421),
         d = n(603392),
@@ -232911,4 +232911,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=76127.943181ee18ecbde0.js.map
+//# sourceMappingURL=76127.76db9e385baac5a9.js.map
