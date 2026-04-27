@@ -24115,6 +24115,7 @@ ${s}`),
                         "aria-describedby": `${k?.describedById}`,
                         "aria-errormessage": k?.errorMessageId,
                         "aria-invalid": k?.errorMessageId != null,
+                        "aria-required": H,
                         value: en ?? "",
                         onChange: eg,
                         onFocus: ed,
@@ -26144,7 +26145,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535694, Version Hash: a75df0bac78cc8ea26b7a4f4800f6d9fd81b4593`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535756, Version Hash: 5544e2108731a8b28602dd09c8fbb289030ea59e`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -48790,7 +48791,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "a75df0bac78cc8ea26b7a4f4800f6d9fd81b4593" === e.body.hash
+                  "5544e2108731a8b28602dd09c8fbb289030ea59e" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -50086,6 +50087,38 @@ ${s}`);
       n.d(t, { A: () => i });
     },
     883392() {},
+    682618(e, t, n) {
+      "use strict";
+      n.d(t, { R: () => o, o: () => l });
+      var i = n(636537),
+        r = n(228366),
+        s = n(38405),
+        a = n(652215);
+      let o = async () => {
+          try {
+            let e = (
+              await i.Bo.get({ url: a.Rsh.USER_BADGES, rejectWithError: !0 })
+            ).body;
+            r.h.dispatch({
+              type: "BADGE_DIRECTORY_FETCH_SUCCESS",
+              badges: e.badges,
+            });
+          } catch (e) {
+            s.A.captureException(e);
+          }
+        },
+        l = async (e) => {
+          try {
+            let t = await i.Bo.get({
+              url: a.Rsh.USER_BADGE(e),
+              rejectWithError: !0,
+            });
+            r.h.dispatch({ type: "BADGE_FETCH_SUCCESS", badge: t.body });
+          } catch (e) {
+            s.A.captureException(e);
+          }
+        };
+    },
     362762(e, t, n) {
       "use strict";
       n.d(t, {
@@ -53238,10 +53271,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("535694")),
+                ((e = parseInt("535756")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 535694",
+                    "Trying to open a changelog for an invalid build number 535756",
                   ),
                   (e = 0)),
                 e),
@@ -60206,10 +60239,10 @@ ${s}`);
             n.e("28367"),
             n.e("45174"),
             n.e("85519"),
-            n.e("87963"),
+            n.e("11871"),
             n.e("37266"),
             n.e("55057"),
-            n.e("34717"),
+            n.e("14976"),
             n.e("63229"),
             n.e("31988"),
             n.e("55343"),
@@ -60249,7 +60282,7 @@ ${s}`);
             n.e("72401"),
             n.e("47417"),
             n.e("19558"),
-            n.e("53142"),
+            n.e("58946"),
             n.e("51444"),
             n.e("62290"),
             n.e("76390"),
@@ -60258,7 +60291,7 @@ ${s}`);
             n.e("67339"),
             n.e("48900"),
             n.e("31538"),
-            n.e("21453"),
+            n.e("63087"),
             n.e("80973"),
             n.e("98954"),
             n.e("82731"),
@@ -60268,11 +60301,11 @@ ${s}`);
             n.e("8306"),
             n.e("10567"),
             n.e("62718"),
-            n.e("43436"),
+            n.e("12542"),
             n.e("24170"),
             n.e("84317"),
             n.e("68883"),
-            n.e("54865"),
+            n.e("93858"),
             n.e("29594"),
             n.e("8018"),
             n.e("7637"),
@@ -60301,7 +60334,7 @@ ${s}`);
             n.e("88808"),
             n.e("62092"),
             n.e("27752"),
-            n.e("28953"),
+            n.e("96963"),
             n.e("24431"),
             n.e("86546"),
             n.e("15373"),
@@ -60309,7 +60342,7 @@ ${s}`);
             n.e("98970"),
             n.e("14875"),
             n.e("86300"),
-            n.e("99789"),
+            n.e("72474"),
             n.e("44935"),
             n.e("62175"),
             n.e("26663"),
@@ -60325,9 +60358,9 @@ ${s}`);
             n.e("77058"),
             n.e("4986"),
             n.e("72822"),
+            n.e("90779"),
             n.e("52803"),
             n.e("53275"),
-            n.e("50999"),
             n.e("16310"),
             n.e("7121"),
             n.e("49448"),
@@ -60336,7 +60369,7 @@ ${s}`);
             n.e("84704"),
             n.e("33098"),
             n.e("37886"),
-            n.e("95176"),
+            n.e("8797"),
             n.e("23324"),
             n.e("91652"),
             n.e("25013"),
@@ -63762,7 +63795,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535694", versionHash: "a75df0bac78cc8ea26b7a4f4800f6d9fd81b4593" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535756", versionHash: "5544e2108731a8b28602dd09c8fbb289030ea59e" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -82667,6 +82700,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             skuId: e.sku_id,
           });
         }),
+        t0(["USER_BADGE_STATE_UPDATE"], (e) => {
+          n(682618).o(e.badge_id);
+        }),
         t0(["USER_PREMIUM_GUILD_SUBSCRIPTION_SLOT_CREATE"], (e) => {
           t3({
             type: "GUILD_BOOST_SLOT_CREATE",
@@ -94313,10 +94349,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("28367"),
           n.e("45174"),
           n.e("85519"),
-          n.e("87963"),
+          n.e("11871"),
           n.e("37266"),
           n.e("55057"),
-          n.e("34717"),
+          n.e("14976"),
           n.e("63229"),
           n.e("31988"),
           n.e("55343"),
@@ -94356,9 +94392,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("27846"),
           n.e("8306"),
           n.e("10567"),
-          n.e("43436"),
+          n.e("12542"),
           n.e("84317"),
-          n.e("54865"),
+          n.e("93858"),
           n.e("44575"),
           n.e("60482"),
         ]).then(n.bind(n, 121338));
@@ -108204,10 +108240,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("28367"),
               n.e("45174"),
               n.e("85519"),
-              n.e("87963"),
+              n.e("11871"),
               n.e("37266"),
               n.e("55057"),
-              n.e("34717"),
+              n.e("14976"),
               n.e("63229"),
               n.e("31988"),
               n.e("55343"),
@@ -108247,7 +108283,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("72401"),
               n.e("47417"),
               n.e("19558"),
-              n.e("53142"),
+              n.e("58946"),
               n.e("51444"),
               n.e("62290"),
               n.e("76390"),
@@ -108256,7 +108292,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("67339"),
               n.e("48900"),
               n.e("31538"),
-              n.e("21453"),
+              n.e("63087"),
               n.e("80973"),
               n.e("98954"),
               n.e("82731"),
@@ -108266,11 +108302,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("8306"),
               n.e("10567"),
               n.e("62718"),
-              n.e("43436"),
+              n.e("12542"),
               n.e("24170"),
               n.e("84317"),
               n.e("68883"),
-              n.e("54865"),
+              n.e("93858"),
               n.e("29594"),
               n.e("8018"),
               n.e("7637"),
@@ -108293,12 +108329,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("88808"),
               n.e("62092"),
               n.e("27752"),
-              n.e("28953"),
+              n.e("96963"),
               n.e("24431"),
               n.e("7679"),
               n.e("98970"),
               n.e("86300"),
-              n.e("99789"),
+              n.e("72474"),
               n.e("26663"),
               n.e("91139"),
               n.e("47568"),
@@ -108308,13 +108344,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("98352"),
               n.e("26297"),
               n.e("4986"),
-              n.e("50999"),
+              n.e("90779"),
               n.e("16310"),
               n.e("7121"),
               n.e("49448"),
               n.e("55811"),
               n.e("37886"),
-              n.e("95176"),
+              n.e("8797"),
               n.e("25013"),
               n.e("90895"),
               n.e("23536"),
@@ -111758,10 +111794,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("28367"),
               n.e("45174"),
               n.e("85519"),
-              n.e("87963"),
+              n.e("11871"),
               n.e("37266"),
               n.e("55057"),
-              n.e("34717"),
+              n.e("14976"),
               n.e("63229"),
               n.e("80527"),
               n.e("58710"),
@@ -111791,7 +111827,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("82731"),
               n.e("20735"),
               n.e("10567"),
-              n.e("43436"),
+              n.e("12542"),
               n.e("84317"),
               n.e("6159"),
               n.e("14875"),
@@ -111799,7 +111835,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("29716"),
               n.e("8739"),
               n.e("61402"),
-              n.e("26906"),
+              n.e("84285"),
             ]).then(n.bind(n, 864353));
             return (n) => {
               let { onClose: s, ...a } = n;
@@ -140012,10 +140048,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("28367"),
                   n.e("45174"),
                   n.e("85519"),
-                  n.e("87963"),
+                  n.e("11871"),
                   n.e("37266"),
                   n.e("55057"),
-                  n.e("34717"),
+                  n.e("14976"),
                   n.e("63229"),
                   n.e("31988"),
                   n.e("55343"),
@@ -140055,7 +140091,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("72401"),
                   n.e("47417"),
                   n.e("19558"),
-                  n.e("53142"),
+                  n.e("58946"),
                   n.e("51444"),
                   n.e("62290"),
                   n.e("76390"),
@@ -140064,7 +140100,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("67339"),
                   n.e("48900"),
                   n.e("31538"),
-                  n.e("21453"),
+                  n.e("63087"),
                   n.e("80973"),
                   n.e("98954"),
                   n.e("82731"),
@@ -140074,11 +140110,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("8306"),
                   n.e("10567"),
                   n.e("62718"),
-                  n.e("43436"),
+                  n.e("12542"),
                   n.e("24170"),
                   n.e("84317"),
                   n.e("68883"),
-                  n.e("54865"),
+                  n.e("93858"),
                   n.e("29594"),
                   n.e("8018"),
                   n.e("7637"),
@@ -140104,14 +140140,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("88808"),
                   n.e("62092"),
                   n.e("27752"),
-                  n.e("28953"),
+                  n.e("96963"),
                   n.e("24431"),
                   n.e("86546"),
                   n.e("7679"),
                   n.e("98970"),
                   n.e("14875"),
                   n.e("86300"),
-                  n.e("99789"),
+                  n.e("72474"),
                   n.e("44935"),
                   n.e("62175"),
                   n.e("26663"),
@@ -140124,7 +140160,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("98352"),
                   n.e("26297"),
                   n.e("4986"),
-                  n.e("50999"),
+                  n.e("90779"),
                   n.e("16310"),
                   n.e("7121"),
                   n.e("49448"),
@@ -140133,7 +140169,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("84704"),
                   n.e("33098"),
                   n.e("37886"),
-                  n.e("95176"),
+                  n.e("8797"),
                   n.e("23324"),
                   n.e("25013"),
                   n.e("56686"),
@@ -168162,7 +168198,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "a75df0bac78cc8ea26b7a4f4800f6d9fd81b4593",
+                    "5544e2108731a8b28602dd09c8fbb289030ea59e",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -173985,7 +174021,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "535694",
+                  build_number: "535756",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -174504,7 +174540,7 @@ ${o.join(" +\n")}
     },
     252424(e, t, n) {
       "use strict";
-      n.d(t, { $h: () => r, cG: () => a, l9: () => o, tg: () => s });
+      n.d(t, { $h: () => r, cG: () => s, l9: () => a });
       var i = n(985018);
       function r(e) {
         if (e < 1e6)
@@ -174512,27 +174548,14 @@ ${o.join(" +\n")}
         let t = (e / 1e6).toFixed(1);
         return i.intl.formatToPlainString(i.t.Iku48I, { value: t });
       }
-      function s(e, t) {
-        if (e < 1e3)
-          return i.intl.formatToPlainString(i.t.OiHat3, {
-            value: Math.floor(e),
-          });
-        if (e < 1e6)
-          return i.intl.formatToPlainString(i.t["84R4Tc"], {
-            value: Math.floor(e / 1e3),
-          });
-        let n = Math.floor((10 * e) / 1e6) / 10,
-          r = new Intl.NumberFormat(t, { maximumFractionDigits: 1 }).format(n);
-        return i.intl.formatToPlainString(i.t.Iku48I, { value: r });
-      }
-      function a(e) {
+      function s(e) {
         let t =
           arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : NaN;
         if (null == e) return t;
         let n = parseInt(e);
         return Number.isNaN(n) ? t : n;
       }
-      function o(e, t) {
+      function a(e, t) {
         let n =
           arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
         return Intl.NumberFormat(e, {
@@ -187247,6 +187270,8 @@ ${o.join(" +\n")}
                 className: h.Kk,
                 size: "md",
                 color: "currentColor",
+                "aria-hidden": !0,
+                focusable: !1,
               }),
           ],
         });
@@ -187280,6 +187305,7 @@ ${o.join(" +\n")}
           "data-toggleable-component": "radiogroup",
           role: "radio",
           "aria-checked": n,
+          "aria-label": "string" == typeof r.name ? r.name : void 0,
           onClick: t ? void 0 : o,
           tabIndex: !t && S ? 0 : -1,
           className: a()(h.AS, { [h.r9]: t, [h.EO]: !p }, c),
@@ -189250,6 +189276,7 @@ ${o.join(" +\n")}
                         "aria-activedescendant": eo,
                         "aria-errormessage": e?.errorMessageId,
                         "aria-invalid": e?.errorMessageId != null,
+                        "aria-required": W,
                         children: (0, i.jsx)(E.A, {
                           children: eT.map((e) => e.label).join(", "),
                         }),
@@ -232932,4 +232959,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=38583.0738950128593372.js.map
+//# sourceMappingURL=38583.1cdd55800137409b.js.map
