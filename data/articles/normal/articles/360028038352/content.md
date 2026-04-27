@@ -22,15 +22,17 @@
   fresh new perks for your server each month. By using your Server Boosts every
   month, you can unlock some epic perks to the rest of your server community! 
 </p>
-<p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338"
-    ><span data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/19576232968855"
-        width="624"
-        height="281" /></span
-  ></span>
-</p>
+<figure class="wysiwyg-media">
+  <div data-oembed-url="https://www.youtube.com/watch?v=p1ZO51fbvUM">
+    <iframe
+      src="//www.youtube-nocookie.com/embed/p1ZO51fbvUM"
+      frameborder="0"
+      allowfullscreen=""
+      allow="encrypted-media"
+      style="width: 100%; aspect-ratio: 16 / 9"
+    ></iframe>
+  </div>
+</figure>
 <h4 id="h_01HGX7DJ33H4R7S6A31PSZZGCH">
   <span style="color: #2e3338"
     ><span data-darkreader-inline-color=""
@@ -383,6 +385,12 @@
   </li>
 </ul>
 <h2 id="h_01HGX7DJ33YD3AP7K0E0GYSMYM">Boosting Badge Perks</h2>
+<div class="warn-box">
+  <strong>Important:</strong> If your Boosting Badge is still showing on your
+  profile even though you have no active Server Boosts, this is a known issue
+  our team is actively working to resolve. In the meantime, please reach out to
+  our <a href="http://dis.gd/contact">Support team</a> for further assistance.
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/19576208155671"
@@ -478,9 +486,11 @@
 </p>
 <p class="wysiwyg-text-align-center" id="h_01HGX7DJ344FN50A4GM9VPAV52">
   <img
-    src="https://support.discord.com/hc/article_attachments/19576232983959"
-    width="624"
-    height="351"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 800/450; width: 87.93%"
+    src="https://support.discord.com/hc/article_attachments/39891068039319"
+    width="800"
+    height="450"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K0Z1JM8PC72535KXMAEXAK0H">
@@ -800,13 +810,14 @@
   6. Finally you’ll see a confirmation message stating it has been transferred
   successfully.
 </p>
-<p class="wysiwyg-text-align-center">
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 93.36%">
   <img
-    src="https://support.discord.com/hc/article_attachments/20325154465815"
-    width="624"
-    height="351"
+    style="aspect-ratio: 1280/720"
+    src="https://support.discord.com/hc/article_attachments/39891068039959"
+    width="1280"
+    height="720"
   />
-</p>
+</figure>
 <h4 class="wysiwyg-text-align-center" id="h_01K0Z1KR0RQHS6QBGHHH00M9X3">
   <span style="color: #666666"
     ><span data-darkreader-inline-color=""
@@ -981,37 +992,6 @@
     Configure settings for Enhanced Role Styles and Server Tags once enabled
   </li>
 </ul>
-<p>
-  If you’re the server owner or have <strong>Manage Server</strong> permissions
-  within the server, you’ll also be able to go behind the scenes and head into
-  the <strong>Server Boost Status </strong>tab in your
-  <strong>Server Settings </strong>and see:
-</p>
-<ul>
-  <li data-list-item-id="e888da19096cbd8c8590ccbaff93a00cb">
-    Your server’s current level + perks
-  </li>
-  <li data-list-item-id="e434623ecfe35fe736abbc07ccbb6d9df">
-    How many people blessed the server with Boosts
-  </li>
-  <li data-list-item-id="e3846261283eea272f4ef0b459355356b">
-    And how many more Boosts you need before your server reaches the next level
-  </li>
-</ul>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/33699329524631"
-    width="624"
-    height="488"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01K0Z1W2CA0HNERW2YXAJ6R4S4">
-  <span style="color: #666666"
-    ><span data-darkreader-inline-color=""
-      ><strong>Server Boost Status</strong></span
-    ><span data-darkreader-inline-color=""> tab</span></span
-  >
-</h4>
 <h2 id="h_01JXWRKHF311JQS7ZB7ERSKWNW">Grace Periods for Server Boost Loss</h2>
 <p>
   If your server is running low on Server Boosts and loses a level, the server
