@@ -1,9 +1,10 @@
 <div class="exp-box">
   <span style="color: #434343"
-    ><strong>Important:</strong> Starting April 13, 2026 this experiment will no
-    longer be available. Please learn more about this change in the Frequently
-    Asked Questions section.</span
-  >
+    ><strong>Important:</strong> As of April 13, 2026 this experiment is no
+    longer available. Please learn more about this change in the </span
+  ><a href="#h_01J67VMBYC5YYSCKSFPY1XK7M4"
+    ><span style="color: #434343">Frequently Asked Questions</span></a
+  ><span style="color: #434343"> section.</span>
 </div>
 <div class="toc-box">
   <p>
