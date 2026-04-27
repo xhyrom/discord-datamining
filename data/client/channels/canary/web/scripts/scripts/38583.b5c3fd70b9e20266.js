@@ -26145,7 +26145,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535756, Version Hash: 5544e2108731a8b28602dd09c8fbb289030ea59e`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535818, Version Hash: 1b841ca3b208f06584b588dc78a97b601539edca`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -48791,7 +48791,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "5544e2108731a8b28602dd09c8fbb289030ea59e" === e.body.hash
+                  "1b841ca3b208f06584b588dc78a97b601539edca" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53271,10 +53271,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("535756")),
+                ((e = parseInt("535818")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 535756",
+                    "Trying to open a changelog for an invalid build number 535818",
                   ),
                   (e = 0)),
                 e),
@@ -53352,7 +53352,8 @@ ${s}`);
                 n.e("62290"),
                 n.e("80973"),
                 n.e("82731"),
-                n.e("44575"),
+                n.e("46506"),
+                n.e("20382"),
                 n.e("34268"),
                 n.e("44939"),
               ]).then(n.bind(n, 636254));
@@ -54718,6 +54719,100 @@ ${s}`);
             ? { clientThemesCSS: "", clientThemesClassName: "" }
             : { clientThemesCSS: t, clientThemesClassName: c.Gc };
       }
+    },
+    696016(e, t, n) {
+      "use strict";
+      n.d(t, {
+        Fv: () => c,
+        GU: () => L,
+        LX: () => d,
+        Mu: () => C,
+        Ot: () => h,
+        P4: () => E,
+        T2: () => U,
+        U_: () => N,
+        V0: () => A,
+        VP: () => w,
+        Vi: () => f,
+        YM: () => b,
+        cM: () => v,
+        dV: () => P,
+        gC: () => x,
+        iJ: () => k,
+        kd: () => I,
+        l_: () => p,
+        mk: () => O,
+        nm: () => R,
+        nx: () => g,
+        on: () => u,
+        qh: () => G,
+        s3: () => D,
+        sc: () => T,
+        sz: () => m,
+        vZ: () => y,
+        wN: () => M,
+        zj: () => S,
+      });
+      var i,
+        r,
+        s,
+        a,
+        o,
+        l = n(626584),
+        _ = n(927813),
+        d =
+          (((i = {})[(i.SECONDS_30 = 30 * _.A.Millis.SECOND)] = "SECONDS_30"),
+          (i[(i.MINUTES_1 = _.A.Millis.MINUTE)] = "MINUTES_1"),
+          (i[(i.MINUTES_2 = 2 * _.A.Millis.MINUTE)] = "MINUTES_2"),
+          i),
+        u =
+          (((r = {})[(r.ALL = 0)] = "ALL"),
+          (r[(r.FRIENDS = 1)] = "FRIENDS"),
+          r),
+        c =
+          (((s = {}).DECOUPLED = "decoupled"),
+          (s.VIEWER = "viewer"),
+          (s.STREAMER = "streamer"),
+          (s.VOICE = "voice"),
+          s),
+        E =
+          (((a = {})[(a.Error = 0)] = "Error"),
+          (a[(a.Disabled = 1)] = "Disabled"),
+          (a[(a.Enabled = 2)] = "Enabled"),
+          a);
+      let h = "alt+c",
+        m = "f12",
+        f = 6 * _.A.Millis.SECOND,
+        g = new l.A("Clips"),
+        I = 5,
+        A = 2,
+        p =
+          /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/,
+        T =
+          /(NVIDIA GeForce (RTX (20|30|40|50).*))|(.*Radeon RX (57|58|59|6|7|9).*)/,
+        S = 0.1,
+        N = 0,
+        O = 200,
+        R = "clips-gallery",
+        C = "clips_player",
+        y = 640,
+        D = 360,
+        L = 100,
+        v = (e) => `Clip - ${new Date(e).toLocaleString()}`,
+        w = 15,
+        P = 3e4,
+        b = 30,
+        k = 10;
+      _.A.Millis.DAY;
+      let U = 20,
+        M = 1,
+        G = 50;
+      var x =
+        (((o = {}).ALL = ":all"),
+        (o.APPLICATION = ":application"),
+        (o.VOICE = ":voice"),
+        (o.SOUNDBOARD = ":soundboard"),
+        o);
     },
     274372(e, t, n) {
       "use strict";
@@ -60311,8 +60406,9 @@ ${s}`);
             n.e("7637"),
             n.e("3025"),
             n.e("42282"),
-            n.e("44575"),
+            n.e("46506"),
             n.e("49862"),
+            n.e("20382"),
             n.e("80093"),
             n.e("44647"),
             n.e("10730"),
@@ -63795,7 +63891,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535756", versionHash: "5544e2108731a8b28602dd09c8fbb289030ea59e" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535818", versionHash: "1b841ca3b208f06584b588dc78a97b601539edca" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -94395,7 +94491,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("12542"),
           n.e("84317"),
           n.e("93858"),
-          n.e("44575"),
+          n.e("46506"),
+          n.e("20382"),
           n.e("60482"),
         ]).then(n.bind(n, 121338));
         if (
@@ -108312,7 +108409,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("7637"),
               n.e("3025"),
               n.e("42282"),
-              n.e("44575"),
+              n.e("46506"),
+              n.e("20382"),
               n.e("44647"),
               n.e("10730"),
               n.e("25657"),
@@ -140120,7 +140218,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("7637"),
                   n.e("3025"),
                   n.e("42282"),
-                  n.e("44575"),
+                  n.e("46506"),
+                  n.e("20382"),
                   n.e("80093"),
                   n.e("44647"),
                   n.e("10730"),
@@ -168198,7 +168297,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "5544e2108731a8b28602dd09c8fbb289030ea59e",
+                    "1b841ca3b208f06584b588dc78a97b601539edca",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -174021,7 +174120,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "535756",
+                  build_number: "535818",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -232959,4 +233058,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=38583.1cdd55800137409b.js.map
+//# sourceMappingURL=38583.b5c3fd70b9e20266.js.map
