@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["76127"],
+  ["51456"],
   {
     696354(e, t, n) {
       var i = {
@@ -437,6 +437,49 @@
             "zh-CN": () => n.e("19207").then(n.t.bind(n, 602586, 19)),
             "zh-TW": () => n.e("80939").then(n.t.bind(n, 755398, 19)),
             "en-US": () => n.e("35681").then(n.bind(n, 567640)),
+          },
+          "en-US",
+        ),
+        { makeMessagesProxy: s } = n(919523),
+        a = s(r);
+    },
+    16590(e, t, n) {
+      "use strict";
+      n.r(t), n.d(t, { default: () => a, messagesLoader: () => r });
+      let { createLoader: i } = n(919523),
+        r = i(
+          {
+            bg: () => n.e("73524").then(n.t.bind(n, 688799, 19)),
+            cs: () => n.e("42563").then(n.t.bind(n, 596558, 19)),
+            da: () => n.e("81380").then(n.t.bind(n, 260303, 19)),
+            de: () => n.e("72720").then(n.t.bind(n, 220819, 19)),
+            el: () => n.e("76838").then(n.t.bind(n, 523109, 19)),
+            "en-GB": () => n.e("64926").then(n.t.bind(n, 749, 19)),
+            "es-419": () => n.e("14120").then(n.t.bind(n, 60731, 19)),
+            "es-ES": () => n.e("6950").then(n.t.bind(n, 41285, 19)),
+            fi: () => n.e("86654").then(n.t.bind(n, 465677, 19)),
+            fr: () => n.e("91045").then(n.t.bind(n, 714788, 19)),
+            hi: () => n.e("71816").then(n.t.bind(n, 807163, 19)),
+            hr: () => n.e("24339").then(n.t.bind(n, 112894, 19)),
+            hu: () => n.e("37668").then(n.t.bind(n, 792751, 19)),
+            it: () => n.e("67234").then(n.t.bind(n, 310777, 19)),
+            ja: () => n.e("72578").then(n.t.bind(n, 37145, 19)),
+            ko: () => n.e("44087").then(n.t.bind(n, 412554, 19)),
+            lt: () => n.e("92513").then(n.t.bind(n, 956312, 19)),
+            nl: () => n.e("6507").then(n.t.bind(n, 341350, 19)),
+            no: () => n.e("70792").then(n.t.bind(n, 763547, 19)),
+            pl: () => n.e("48445").then(n.t.bind(n, 323660, 19)),
+            "pt-BR": () => n.e("7886").then(n.t.bind(n, 583165, 19)),
+            ro: () => n.e("21228").then(n.t.bind(n, 457735, 19)),
+            ru: () => n.e("40158").then(n.t.bind(n, 831309, 19)),
+            "sv-SE": () => n.e("7103").then(n.t.bind(n, 87746, 19)),
+            th: () => n.e("69301").then(n.t.bind(n, 644436, 19)),
+            tr: () => n.e("99527").then(n.t.bind(n, 300122, 19)),
+            uk: () => n.e("58433").then(n.t.bind(n, 943672, 19)),
+            vi: () => n.e("36238").then(n.t.bind(n, 574877, 19)),
+            "zh-CN": () => n.e("76611").then(n.t.bind(n, 385134, 19)),
+            "zh-TW": () => n.e("35295").then(n.t.bind(n, 894146, 19)),
+            "en-US": () => n.e("58884").then(n.bind(n, 172303)),
           },
           "en-US",
         ),
@@ -10294,51 +10337,53 @@
         },
         acceptInvite(e) {
           let { inviteKey: t, context: i, callback: r, skipOnboarding: s } = e,
-            a = (0, w.y$)(t),
-            o = a.baseCode,
-            l = x.default.getSessionId(),
-            _ = Y.A.getReceivedInstallationIdForInviteCode(o),
-            d = {
+            l = (0, w.y$)(t),
+            _ = l.baseCode,
+            d = x.default.getSessionId(),
+            c = Y.A.getReceivedInstallationIdForInviteCode(_),
+            E = {
               ...i,
-              invite_guild_scheduled_event_id: a.guildScheduledEventId,
+              invite_guild_scheduled_event_id: l.guildScheduledEventId,
             },
-            c = j.default.getCurrentUser();
-          return c?.hasFlag(ee.nhx.QUARANTINED)
+            m = j.default.getCurrentUser();
+          return m?.hasFlag(ee.nhx.QUARANTINED)
             ? ((0, b.default)(), new Promise((e, t) => t(Error())))
             : (h.h.dispatch({ type: "INVITE_ACCEPT", code: t }),
               u.Bo.post({
-                url: ee.Rsh.INVITE(o),
-                context: d,
+                url: ee.Rsh.INVITE(_),
+                context: E,
                 oldFormErrors: !0,
                 body: {
-                  session_id: l,
+                  session_id: d,
                   invite_instance_id: i.invite_instance_id,
-                  received_installation_id: _,
+                  received_installation_id: c,
                 },
                 rejectWithError: !1,
               }).then(
                 async (e) => {
-                  null != _ && this.clearReceivedInstallationIdForInviteCode(o),
+                  null != c && this.clearReceivedInstallationIdForInviteCode(_),
                     h.h.dispatch({
                       type: "INVITE_ACCEPT_SUCCESS",
                       invite: e.body,
                       code: t,
                     });
-                  let i = D.Ay.getGuildScheduledEvent(a.guildScheduledEventId),
-                    l = { ...e.body, guild_scheduled_event: i },
-                    d = l?.guild_id ?? l?.guild?.id;
+                  let i = D.Ay.getGuildScheduledEvent(l.guildScheduledEventId),
+                    d = { ...e.body, guild_scheduled_event: i },
+                    u = d?.guild_id ?? d?.guild?.id,
+                    E = (0, o.Lt)(d.flags ?? 0, a.Q.IS_GUEST_INVITE);
                   if (
                     !s &&
-                    null != d &&
-                    l.new_member &&
-                    !l.show_verification_form
+                    !E &&
+                    null != u &&
+                    d.new_member &&
+                    !d.show_verification_form
                   ) {
                     let { default: e } = await Promise.resolve().then(
                       n.bind(n, 608401),
                     );
-                    await e({ guildId: d });
+                    await e({ guildId: u });
                   }
-                  return r?.(l), e.body;
+                  return r?.(d), e.body;
                 },
                 (e) => {
                   throw (
@@ -10381,14 +10426,17 @@
           let { channel: i, guild: r } = e;
           if (null != r && r.features?.includes(ee.GuildFeatures.HUB))
             return void v.A.onOpenHubInvite(e);
-          let s = (0, o.Lt)(e.flags ?? 0, a.Q.IS_APPLICATION_BYPASS);
-          if (null != r && !s && e.new_member && (0, L.h)(r))
+          let s = e.flags ?? 0,
+            l =
+              (0, o.Lt)(s, a.Q.IS_GUEST_INVITE) ||
+              (0, o.Lt)(s, a.Q.IS_APPLICATION_BYPASS);
+          if (null != r && !l && e.new_member && (0, L.h)(r))
             return void (0, L.W)(r.id);
           if (null == i) return;
-          let l = el(e);
-          null != t && (l.transitionTo = t),
-            null != n && (l.muteOnJoinVoiceChannel = n),
-            e_({ guildId: null != r ? r.id : ee.ME, channel: i, options: l });
+          let _ = el(e);
+          null != t && (_.transitionTo = t),
+            null != n && (_.muteOnJoinVoiceChannel = n),
+            e_({ guildId: null != r ? r.id : ee.ME, channel: i, options: _ });
         },
         transitionToInviteSync(e, t, n) {
           if (null != e.channel) {
@@ -16425,6 +16473,60 @@ ${s}`),
         );
       }
     },
+    23658(e, t, n) {
+      "use strict";
+      n.d(t, { D: () => E, openUploadError: () => h });
+      var i = n(627968);
+      n(64700);
+      var r = n(192308),
+        s = n(189213),
+        a = n(523527),
+        o = n(191244),
+        l = n(976860),
+        _ = n(954571),
+        d = n(652215),
+        u = n(985018);
+      function c(e) {
+        let {
+          title: t,
+          help: n,
+          showPremiumUpsell: r,
+          transitionState: c,
+          onClose: E,
+        } = e;
+        return r
+          ? (0, i.jsx)(o.A, {
+              transitionState: c,
+              onClose: E,
+              handleLearnMore: () => {
+                (0, a.A)(),
+                  E(),
+                  _.default.track(d.HAw.PREMIUM_PROMOTION_OPENED, {
+                    location_section: d.JJy.FILE_UPLOAD_UPSELL_MODAL,
+                    location_object: d.ZSU.NAVIGATION_LINK,
+                  }),
+                  (0, l.pX)(d.BVt.APPLICATION_STORE);
+              },
+            })
+          : (0, i.jsx)(s.Modal, {
+              title: t,
+              subtitle: n,
+              transitionState: c,
+              actions: [
+                {
+                  text: u.intl.string(u.t["NX+WJN"]),
+                  onClick: E,
+                  variant: "primary",
+                },
+              ],
+              onClose: E,
+            });
+      }
+      let E = "UPLOAD_ERROR_MODAL_KEY";
+      function h(e) {
+        (0, r.openModal)((t) => (0, i.jsx)(c, { ...t, ...e }), { modalKey: E });
+      }
+    },
     953992(e, t, n) {
       "use strict";
       n.d(t, { p: () => i });
@@ -20054,7 +20156,7 @@ ${s}`),
         a = n(64700),
         o = n(503698),
         l = n.n(o),
-        _ = n(419354),
+        _ = n(487514),
         d = n(110259),
         u = n(615300),
         c = n(789645),
@@ -20259,7 +20361,7 @@ ${s}`),
         _ = n(892491),
         d = n(462824),
         u = n(73939),
-        c = n(419354),
+        c = n(487514),
         E = n(602853),
         h = n(661531),
         m = n(866323),
@@ -21555,7 +21657,7 @@ ${s}`),
         a = n.n(s),
         o = n(735438),
         l = n.n(o),
-        _ = n(419354),
+        _ = n(487514),
         d = n(621466),
         u = n(452027),
         c = n(187322),
@@ -22029,7 +22131,7 @@ ${s}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(110259),
         _ = n(66455),
         d = n(607399),
@@ -22206,7 +22308,7 @@ ${s}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(661531),
         _ = n(462887),
         d = n(310784),
@@ -22772,7 +22874,7 @@ ${s}`),
       n.d(t, { U: () => h, Y: () => E });
       var i = n(627968),
         r = n(64700),
-        s = n(419354),
+        s = n(487514),
         a = n(866323),
         o = n(695366),
         l = n(661531),
@@ -23072,7 +23174,7 @@ ${s}`),
       n.d(t, { N: () => E });
       var i = n(627968),
         r = n(64700),
-        s = n(419354),
+        s = n(487514),
         a = n(866323),
         o = n(857250),
         l = n(691540),
@@ -23166,7 +23268,7 @@ ${s}`),
         a = n(503698),
         o = n.n(a),
         l = n(340287),
-        _ = n(419354),
+        _ = n(487514),
         d = n(607399),
         u = n(621466),
         c = n(844222),
@@ -23621,7 +23723,7 @@ ${s}`),
               n.e("80527"),
               n.e("23353"),
               n.e("48900"),
-              n.e("95054"),
+              n.e("66307"),
             ]).then(n.bind(n, 510273)),
           2: () =>
             Promise.all([n.e("23353"), n.e("70975")]).then(n.bind(n, 677074)),
@@ -24110,6 +24212,7 @@ ${s}`),
                         "aria-describedby": `${k?.describedById}`,
                         "aria-errormessage": k?.errorMessageId,
                         "aria-invalid": k?.errorMessageId != null,
+                        "aria-required": H,
                         value: en ?? "",
                         onChange: eg,
                         onFocus: ed,
@@ -24255,7 +24358,7 @@ ${s}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(508382),
         _ = n(83379),
         d = n(502939),
@@ -26139,7 +26242,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535363, Version Hash: 0cd0e27a83c5545ddfede82ea94895a8112c7164`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 535999, Version Hash: 3e41e2d4625b6cdc30f9ec4149de8adc286499d6`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -26856,7 +26959,7 @@ ${s}`);
           n.e("14122").then(n.bind(n, 625265)),
           n.e("14304").then(n.bind(n, 710787)),
           n.e("6565").then(n.bind(n, 366340)),
-          n.e("47555").then(n.bind(n, 16590)),
+          Promise.resolve().then(n.bind(n, 16590)),
           n.e("10004").then(n.bind(n, 661023)),
           n.e("34409").then(n.bind(n, 412848)),
           Promise.resolve().then(n.bind(n, 602339)),
@@ -40815,6 +40918,7 @@ ${s}`);
           (i.USER_MENTION = "user mention"),
           (i.ROLE_MENTION = "role mention"),
           (i.CONNECTIONS_ROLE_POPOUT = "connections role popout"),
+          (i.XBOX_CONNECTED_ACCOUNTS_BANNER = "xbox connected accounts banner"),
           (i.GAME_MENU = "game menu"),
           (i.GUILD_PROFILE = "guild profile"),
           (i.EDIT_AVATAR = "edit avatar"),
@@ -41025,6 +41129,8 @@ ${s}`);
             "collectibles shop profile effects tab"),
           (i.COLLECTIBLES_SHOP_NAMEPLATES_TAB =
             "collectibles shop nameplates tab"),
+          (i.COLLECTIBLES_SHOP_PROFILE_FRAMES_TAB =
+            "collectibles shop profile frames tab"),
           (i.COLLECTIBLES_SHOP_BUNDLES_TAB = "collectibles shop bundles tab"),
           (i.COLLECTIBLES_SHOP_INDEX_PAGE = "collectibles shop index page"),
           (i.COLLECTIBLES_SHOP_CARD = "collectibles shop card"),
@@ -48782,7 +48888,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "0cd0e27a83c5545ddfede82ea94895a8112c7164" === e.body.hash
+                  "3e41e2d4625b6cdc30f9ec4149de8adc286499d6" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -50078,6 +50184,38 @@ ${s}`);
       n.d(t, { A: () => i });
     },
     883392() {},
+    682618(e, t, n) {
+      "use strict";
+      n.d(t, { R: () => o, o: () => l });
+      var i = n(636537),
+        r = n(228366),
+        s = n(38405),
+        a = n(652215);
+      let o = async () => {
+          try {
+            let e = (
+              await i.Bo.get({ url: a.Rsh.USER_BADGES, rejectWithError: !0 })
+            ).body;
+            r.h.dispatch({
+              type: "BADGE_DIRECTORY_FETCH_SUCCESS",
+              badges: e.badges,
+            });
+          } catch (e) {
+            s.A.captureException(e);
+          }
+        },
+        l = async (e) => {
+          try {
+            let t = await i.Bo.get({
+              url: a.Rsh.USER_BADGE(e),
+              rejectWithError: !0,
+            });
+            r.h.dispatch({ type: "BADGE_FETCH_SUCCESS", badge: t.body });
+          } catch (e) {
+            s.A.captureException(e);
+          }
+        };
+    },
     362762(e, t, n) {
       "use strict";
       n.d(t, {
@@ -50935,6 +51073,18 @@ ${s}`);
           })
         ).body;
       };
+    },
+    546605(e, t, n) {
+      "use strict";
+      n.d(t, { vg: () => r, wy: () => s });
+      let i = (0, n(945810).mj)({
+          name: "2026-03-store-country",
+          kind: "user",
+          defaultConfig: { enabled: !1 },
+          variations: { 0: { enabled: !1 }, 1: { enabled: !0 } },
+        }),
+        r = (e) => i.useConfig({ location: e }).enabled,
+        s = (e) => i.getConfig({ location: e }).enabled;
     },
     366999(e, t, n) {
       "use strict";
@@ -52708,7 +52858,7 @@ ${s}`);
                       n.e("88017"),
                       n.e("24170"),
                       n.e("32418"),
-                      n.e("26848"),
+                      n.e("89342"),
                     ]).then(n.bind(n, 668569));
                     return (n) => (0, i.jsx)(e, { ...n, user: t });
                   },
@@ -52876,7 +53026,7 @@ ${s}`);
                           let { default: e } = await Promise.all([
                             n.e("80527"),
                             n.e("14138"),
-                            n.e("30322"),
+                            n.e("63007"),
                           ]).then(n.bind(n, 826789));
                           return (t) =>
                             (0, i.jsx)(e, { ...t, analyticsSource: o });
@@ -53218,10 +53368,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("535363")),
+                ((e = parseInt("535999")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 535363",
+                    "Trying to open a changelog for an invalid build number 535999",
                   ),
                   (e = 0)),
                 e),
@@ -53274,34 +53424,33 @@ ${s}`);
                 n.e("57036"),
                 n.e("88394"),
                 n.e("80527"),
-                n.e("58710"),
+                n.e("21909"),
                 n.e("31825"),
                 n.e("23353"),
+                n.e("96123"),
                 n.e("7175"),
                 n.e("37249"),
                 n.e("14138"),
                 n.e("8971"),
-                n.e("85071"),
                 n.e("88017"),
+                n.e("77404"),
                 n.e("1040"),
                 n.e("64615"),
                 n.e("17239"),
-                n.e("66950"),
-                n.e("58164"),
-                n.e("38229"),
+                n.e("7454"),
+                n.e("64492"),
                 n.e("20861"),
                 n.e("36682"),
                 n.e("45723"),
                 n.e("56871"),
                 n.e("69601"),
-                n.e("47511"),
+                n.e("63191"),
                 n.e("51444"),
                 n.e("62290"),
                 n.e("80973"),
-                n.e("82731"),
-                n.e("44575"),
+                n.e("20382"),
                 n.e("34268"),
-                n.e("70255"),
+                n.e("7961"),
               ]).then(n.bind(n, 636254));
               return (t) => (0, i.jsx)(e, { ...t });
             },
@@ -53764,10 +53913,9 @@ ${s}`);
             : new Promise((e) => {
                 (0, r.openModalLazy)(
                   async () => {
-                    let { default: r } = await Promise.all([
-                      n.e("83792"),
-                      n.e("87539"),
-                    ]).then(n.bind(n, 525828));
+                    let { default: r } = await n
+                      .e("10117")
+                      .then(n.bind(n, 525828));
                     return (n) => {
                       let { onClose: s, transitionState: a } = n;
                       return (0, i.jsx)(r, {
@@ -54666,6 +54814,120 @@ ${s}`);
             : { clientThemesCSS: t, clientThemesClassName: c.Gc };
       }
     },
+    696016(e, t, n) {
+      "use strict";
+      n.d(t, {
+        Fv: () => c,
+        GU: () => L,
+        LX: () => d,
+        Mu: () => C,
+        Ot: () => h,
+        P4: () => E,
+        T2: () => U,
+        U_: () => N,
+        V0: () => A,
+        VP: () => w,
+        Vi: () => f,
+        YM: () => b,
+        cM: () => v,
+        dV: () => P,
+        gC: () => x,
+        iJ: () => k,
+        kd: () => I,
+        l_: () => p,
+        mk: () => O,
+        nm: () => R,
+        nx: () => g,
+        on: () => u,
+        qh: () => G,
+        s3: () => D,
+        sc: () => T,
+        sz: () => m,
+        vZ: () => y,
+        wN: () => M,
+        zj: () => S,
+      });
+      var i,
+        r,
+        s,
+        a,
+        o,
+        l = n(626584),
+        _ = n(927813),
+        d =
+          (((i = {})[(i.SECONDS_30 = 30 * _.A.Millis.SECOND)] = "SECONDS_30"),
+          (i[(i.MINUTES_1 = _.A.Millis.MINUTE)] = "MINUTES_1"),
+          (i[(i.MINUTES_2 = 2 * _.A.Millis.MINUTE)] = "MINUTES_2"),
+          i),
+        u =
+          (((r = {})[(r.ALL = 0)] = "ALL"),
+          (r[(r.FRIENDS = 1)] = "FRIENDS"),
+          r),
+        c =
+          (((s = {}).DECOUPLED = "decoupled"),
+          (s.VIEWER = "viewer"),
+          (s.STREAMER = "streamer"),
+          (s.VOICE = "voice"),
+          s),
+        E =
+          (((a = {})[(a.Error = 0)] = "Error"),
+          (a[(a.Disabled = 1)] = "Disabled"),
+          (a[(a.Enabled = 2)] = "Enabled"),
+          a);
+      let h = "alt+c",
+        m = "f12",
+        f = 6 * _.A.Millis.SECOND,
+        g = new l.A("Clips"),
+        I = 5,
+        A = 2,
+        p =
+          /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/,
+        T =
+          /(NVIDIA GeForce (RTX (20|30|40|50).*))|(.*Radeon RX (57|58|59|6|7|9).*)/,
+        S = 0.1,
+        N = 0,
+        O = 200,
+        R = "clips-gallery",
+        C = "clips_player",
+        y = 640,
+        D = 360,
+        L = 100,
+        v = (e) => `Clip - ${new Date(e).toLocaleString()}`,
+        w = 15,
+        P = 3e4,
+        b = 30,
+        k = 10;
+      _.A.Millis.DAY;
+      let U = 20,
+        M = 1,
+        G = 50;
+      var x =
+        (((o = {}).ALL = ":all"),
+        (o.APPLICATION = ":application"),
+        (o.VOICE = ":voice"),
+        (o.SOUNDBOARD = ":soundboard"),
+        o);
+    },
+    672477(e, t, n) {
+      "use strict";
+      n.d(t, { Q: () => r, Z: () => s });
+      var i = n(945810);
+      let r = (0, i.mj)({
+          kind: "user",
+          name: "2026-03-clips-m1",
+          defaultConfig: { newEmbedUi: !1 },
+          variations: { 1: { newEmbedUi: !0 } },
+        }),
+        s = (0, i.mj)({
+          kind: "user",
+          name: "2026-04-clips-reminder-sidebar",
+          defaultConfig: { enableReminderSidebar: !1, scrubOnHover: !1 },
+          variations: {
+            1: { enableReminderSidebar: !0, scrubOnHover: !1 },
+            2: { enableReminderSidebar: !0, scrubOnHover: !0 },
+          },
+        });
+    },
     274372(e, t, n) {
       "use strict";
       n.d(t, { A: () => V }), n(321073), n(938796);
@@ -55182,6 +55444,55 @@ ${s}`);
           },
         }),
         V = x;
+    },
+    372684(e, t, n) {
+      "use strict";
+      n.d(t, { Gy: () => o, k9: () => l, nQ: () => _, rb: () => d });
+      var i,
+        r,
+        s,
+        a,
+        o =
+          (((i = {}).MANUAL = "manual"),
+          (i.DISTRIBUTED = "distributed"),
+          (i.PHRASE = "phrase"),
+          (i.YELLING = "yelling"),
+          (i.LAUGHTER = "laughter"),
+          (i.GAME_EVENT = "game_event"),
+          (i.SPEAKING = "speaking"),
+          (i.SOUNDBOARD = "soundboard"),
+          i),
+        l =
+          (((r = {}).UNKNOWN = "unknown"),
+          (r.BELOW_MINIMUM = "below_minimum"),
+          (r.MEETS_MINIMUM = "meets_minimum"),
+          (r.MEETS_AUTO_ENABLE = "meets_auto_enable"),
+          r),
+        _ =
+          (((s = {}).CLIP = "clip"),
+          (s.SCREENSHOT = "screenshot"),
+          (s.VOICE_CLIP = "voice_clip"),
+          s),
+        d =
+          (((a = {}).KILL = "kill"),
+          (a.MULTIKILL = "multikill"),
+          (a.DEATH = "death"),
+          (a.ASSIST = "assist"),
+          (a.ITEM = "item"),
+          (a.VICTORY = "victory"),
+          (a.DEFEAT = "defeat"),
+          (a.LEVEL_UP = "level_up"),
+          (a.TREASURE = "treasure"),
+          (a.OBJECTIVE_KILL = "objective_kill"),
+          a);
+    },
+    439818(e, t, n) {
+      "use strict";
+      n.d(t, { A: () => r });
+      let i = /[^a-zA-Z0-9-_.]/g,
+        r = function (e) {
+          return e.trim().replaceAll(" ", "_").replaceAll(i, "");
+        };
     },
     762555(e, t, n) {
       "use strict";
@@ -56518,6 +56829,153 @@ ${s}`);
         );
       }
     },
+    271597(e, t, n) {
+      "use strict";
+      n.d(t, { p: () => a });
+      var i = n(627968);
+      n(64700);
+      var r = n(192308),
+        s = n(696016);
+      let a = function () {
+        let { initialEditingClipId: e } =
+          arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+        (0, r.openModalLazy)(
+          async () => {
+            let { default: t } = await Promise.all([
+              n.e("96123"),
+              n.e("17239"),
+              n.e("20861"),
+              n.e("74068"),
+              n.e("59934"),
+            ]).then(n.bind(n, 867487));
+            return (n) => (0, i.jsx)(t, { initialEditingClipId: e, ...n });
+          },
+          { modalKey: s.nm },
+        );
+      };
+    },
+    602902(e, t, n) {
+      "use strict";
+      n.d(t, { K: () => g }), n(321073);
+      var i = n(627968);
+      n(64700);
+      var r = n(192308),
+        s = n(294454),
+        a = n(118517),
+        o = n(734057),
+        l = n(31717),
+        _ = n(232835),
+        d = n(954571),
+        u = n(518960),
+        c = n(372684),
+        E = n(439818),
+        h = n(399925),
+        m = n(696016),
+        f = n(652215);
+      async function g(e, t) {
+        let { channelId: g, analyticsLocations: I, messageReference: A } = t,
+          p = o.A.getChannel(g);
+        if (null != p) {
+          if (null != A) {
+            let e = _.A.getMessage(A.channel_id, A.message_id);
+            null != e &&
+              (0, a.Yf)({
+                message: e,
+                channel: p,
+                shouldMention: !1,
+                showMentionToggle: !1,
+              });
+          }
+          try {
+            let t = [],
+              n = [];
+            for (let i of e) {
+              let e = await (0, h.VO)(i),
+                r = i.name ?? (0, m.cM)(i.createdAt),
+                s = (0, E.A)(r);
+              if (i.type === c.nQ.CLIP || i.type === c.nQ.VOICE_CLIP) {
+                let r = `${"" !== s ? s : "clip"}.mp4`;
+                t.push(new File([e], r, { type: "video/mp4" })),
+                  n.push({ clip: i });
+              } else if (i.type === c.nQ.SCREENSHOT) {
+                let i = `${"" !== s ? s : "screenshot"}.jpeg`;
+                t.push(new File([e], i, { type: "image/jpeg" })), n.push({});
+              }
+              d.default.track(f.HAw.CLIP_SHARED, {
+                location_stack: I,
+                guild_id: p.guild_id,
+                channel_id: p.id,
+                channel_type: p.type,
+                application_id: i.applicationId,
+                clip_id: i.id,
+              });
+            }
+            (0, u.R)(t, p, l.C.ChannelMessage, {
+              filesMetadata: n,
+              origin: "unknown:clip_share",
+            }),
+              r.closeAllModals();
+          } catch (e) {
+            throw (m.nx.error(e), e);
+          }
+        } else
+          (0, r.openModalLazy)(
+            async () => {
+              let { default: t } = await Promise.all([
+                n.e("24199"),
+                n.e("57036"),
+                n.e("88394"),
+                n.e("80527"),
+                n.e("21909"),
+                n.e("31825"),
+                n.e("23353"),
+                n.e("96123"),
+                n.e("7175"),
+                n.e("37249"),
+                n.e("14138"),
+                n.e("8971"),
+                n.e("88017"),
+                n.e("77404"),
+                n.e("1040"),
+                n.e("64615"),
+                n.e("17239"),
+                n.e("7454"),
+                n.e("64492"),
+                n.e("20861"),
+                n.e("36682"),
+                n.e("45723"),
+                n.e("56871"),
+                n.e("69601"),
+                n.e("63191"),
+                n.e("51444"),
+                n.e("62290"),
+                n.e("80973"),
+                n.e("96758"),
+                n.e("922"),
+                n.e("99331"),
+              ]).then(n.bind(n, 243258));
+              return (n) =>
+                (0, i.jsx)(t, { ...n, clips: e, analyticsLocations: I });
+            },
+            { stackingBehavior: "stack", modalKey: s.aU },
+          );
+      }
+    },
+    665039(e, t, n) {
+      "use strict";
+      n.d(t, { j: () => s });
+      var i = n(64700),
+        r = n(77729);
+      function s(e) {
+        return (0, i.useMemo)(
+          () =>
+            null == e || null == r.A.clips.getClipProtocolURLFromPath
+              ? null
+              : r.A.clips.getClipProtocolURLFromPath(e.filepath),
+          [e],
+        );
+      }
+    },
     167189(e, t, n) {
       "use strict";
       n.d(t, { I: () => r });
@@ -56870,7 +57328,7 @@ ${s}`);
     590180(e, t, n) {
       "use strict";
       let i, r, s;
-      n.d(t, { A: () => v });
+      n.d(t, { A: () => D });
       var a = n(735438),
         o = n(17928),
         l = n(228366),
@@ -56881,49 +57339,47 @@ ${s}`);
         E = new Map(),
         h = new Map(),
         m = new Map(),
-        f = c,
-        g = E,
-        I = h,
-        A = [],
-        p = m,
-        T = !1,
-        S = new Set(),
-        N = new Map(),
-        O = new Map(),
-        R = {},
-        C = 0,
-        y = (e) => {
-          (p = new Map(
-            [...(f = e).values()].map((e) => [e.storeListingId, e]),
+        f = E,
+        g = h,
+        I = [],
+        A = {},
+        p = c,
+        T = m,
+        S = !1,
+        N = {},
+        O = 0,
+        R = (e) => {
+          (T = new Map(
+            [...(p = e).values()].map((e) => [e.storeListingId, e]),
           )),
-            (g = new Map((0, d.P_)(f, !0).map((e) => [e.skuId, e]))),
-            (A = [
-              ...(I = new Map(
-                (0, d.P_)(f, !1).map((e) => [e.storeListingId, e]),
+            (f = new Map((0, d.P_)(p, !0).map((e) => [e.skuId, e]))),
+            (I = [
+              ...(g = new Map(
+                (0, d.P_)(p, !1).map((e) => [e.storeListingId, e]),
               )).values(),
             ]);
         },
-        D = () => {
-          (f = c),
-            (g = E),
+        C = () => {
+          (p = c),
+            (f = E),
             (r = void 0),
-            (T = !1),
-            (S = new Set()),
+            (S = !1),
+            (A = {}),
             (i = void 0),
             (s = void 0),
-            (R = {}),
-            (C = 0);
+            (N = {}),
+            (O = 0);
         };
-      class L extends o.Ay.Store {
+      class y extends o.Ay.Store {
         static displayName = "CollectiblesCategoryStore";
         initialize() {
-          this.syncWith([_.default], D);
+          this.syncWith([_.default], C);
         }
         get isFetchingCategories() {
-          return T;
+          return S;
         }
         isFetchingProduct(e) {
-          return null != e && S.has(e);
+          return null != e && A[e]?.state === "fetching";
         }
         get error() {
           return i;
@@ -56935,118 +57391,113 @@ ${s}`);
           return r;
         }
         get lastFetchOptions() {
-          return R;
+          return N;
         }
         get categories() {
-          return f;
+          return p;
         }
         get products() {
-          return g;
+          return f;
         }
         get productsWithVariantsAsGroup() {
-          return A;
+          return I;
         }
         get skipNumCategories() {
-          return C;
+          return O;
         }
         getCategory(e) {
-          return null != e ? f.get(e) : void 0;
+          return null != e ? p.get(e) : void 0;
         }
         getProduct(e) {
-          return null != e ? g.get(e) : void 0;
+          return null != e ? f.get(e) : void 0;
         }
         getProductsBySkus(e) {
-          return e.map((e) => g.get(e)).filter((e) => null != e);
+          return e.map((e) => f.get(e)).filter((e) => null != e);
         }
-        getProductFetchError(e) {
-          return null != e ? N.get(e) : void 0;
-        }
-        getProductFetchErrorTimestamp(e) {
-          return null != e ? O.get(e) : void 0;
+        getProductFetch(e) {
+          return null != e ? A[e] : void 0;
         }
         getProductByStoreListingId(e) {
-          return null != e ? I.get(e) : void 0;
+          return null != e ? g.get(e) : void 0;
         }
         getCategoryByStoreListingId(e) {
-          return null != e ? p.get(e) : void 0;
+          return null != e ? T.get(e) : void 0;
         }
         getCategoryForProduct(e) {
           let t = this.getProduct(e);
           return this.getCategory(t?.categorySkuId);
         }
       }
-      let v = new L(l.h, {
+      let D = new y(l.h, {
         COLLECTIBLES_CATEGORIES_FETCH: (e) => {
-          (T = !0), (i = void 0), (s = void 0), (R = e.options);
+          (S = !0), (i = void 0), (s = void 0), (N = e.options);
         },
         COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: (e) => {
           let t =
             e.categories.collections.length > 0
               ? e.categories.collections.map(u.A.fromStorefrontCollectionRecord)
               : e.categories.categories;
-          if (0 === t.length) (f = c), (g = E);
-          else if (!(0, a.isEqual)([...f.values()], t) && !e.noOp) {
+          if (0 === t.length) (p = c), (f = E);
+          else if (!(0, a.isEqual)([...p.values()], t) && !e.noOp) {
             let e = new Map(t.map((e) => [e.skuId, e])),
               n = new Date();
-            f.forEach((t, i) => {
+            p.forEach((t, i) => {
               !e.has(i) &&
                 (null == t.unpublishedAt || t.unpublishedAt > n) &&
                 e.set(i, t);
             }),
-              y(e);
+              R(e);
           }
-          (r = Date.now()), (T = !1), (i = void 0), (s = void 0);
+          (r = Date.now()), (S = !1), (i = void 0), (s = void 0);
         },
         COLLECTIBLES_CATEGORIES_FETCH_FAILURE: (e) => {
           let { error: t } = e;
-          (f = c),
-            (g = E),
-            (T = !1),
-            (S = new Set()),
-            (i = t),
-            (s = Date.now());
+          (p = c), (f = E), (S = !1), (A = {}), (i = t), (s = Date.now());
         },
         COLLECTIBLES_PRODUCT_FETCH: (e) => {
-          let { skuId: t } = e;
-          (S = new Set(S)).add(t),
-            (N = new Map(N)).delete(t),
-            (O = new Map(O)).delete(t);
+          let { skuId: t, startedAt: n } = e;
+          A[t] = { state: "fetching", startedAt: n };
         },
         COLLECTIBLES_PRODUCT_FETCH_SUCCESS: (e) => {
-          let { skuId: t, product: n } = e,
-            i = g.get(t);
+          let { skuId: t, product: n, endedAt: i } = e,
+            r = f.get(t);
           if (
-            null != i &&
+            null != r &&
             0 === Object.keys(n.prices).length &&
-            ((n.prices = i.prices),
-            null != i.bundledProducts && null != n.bundledProducts)
+            ((n.prices = r.prices),
+            null != r.bundledProducts && null != n.bundledProducts)
           ) {
-            let e = new Map(i.bundledProducts.map((e) => [e.skuId, e.prices]));
+            let e = new Map(r.bundledProducts.map((e) => [e.skuId, e.prices]));
             for (let t of n.bundledProducts) {
               let n = e.get(t.skuId);
               null != n && 0 === Object.keys(t.prices).length && (t.prices = n);
             }
           }
-          g.set(t, n),
-            (S = new Set(S)).delete(t),
-            (N = new Map(N)).delete(t),
-            (O = new Map(O)).delete(t);
+          f.set(t, n),
+            (A[t] = {
+              state: "success",
+              startedAt: A[t]?.startedAt,
+              endedAt: i,
+            });
         },
         COLLECTIBLES_PRODUCT_FETCH_FAILURE: (e) => {
-          let { skuId: t, error: n } = e;
-          (S = new Set(S)).delete(t),
-            (N = new Map(N)).set(t, n),
-            (O = new Map(O)).set(t, Date.now());
+          let { skuId: t, error: n, endedAt: i } = e;
+          A[t] = {
+            state: "error",
+            startedAt: A[t]?.startedAt,
+            endedAt: i,
+            error: n,
+          };
         },
         COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: (e) => {
           if (0 === e.shopHome.categories.length) return;
           let t = new Map(e.shopHome.categories.map((e) => [e.skuId, e]));
-          y(new Map([...f, ...t]));
+          R(new Map([...p, ...t]));
         },
         COLLECTIBLES_SKIP_NUM_CATEGORIES: (e) => {
-          C = e.skipNumCategories;
+          O = e.skipNumCategories;
         },
-        LOGOUT: D,
+        LOGOUT: C,
       });
     },
     752447(e, t, n) {
@@ -57335,24 +57786,23 @@ ${s}`);
       function d(e, t) {
         let n = (0, s.bG)([a.A], () => (null != e ? a.A.get(e) : null)),
           d = null != n && n.productLine !== _.EZt.COLLECTIBLES,
-          [u, c, E, h] = (0, s.yK)([l.A], () => [
-            l.A.isFetchingProduct(e),
+          [u, c] = (0, s.yK)([l.A], () => [
             l.A.getProduct(e),
-            l.A.getProductFetchError(e),
-            l.A.getProductFetchErrorTimestamp(e),
+            l.A.getProductFetch(e),
           ]),
-          m = null != E && null != h && Date.now() - h < 36e5,
-          f = !0 === t && c?.type === r.R.BUNDLE && 0 === c.items.length;
+          E = !0 === t && u?.type === r.R.BUNDLE && 0 === u.items.length;
         return (
           (0, i.useEffect)(() => {
             null == e ||
-              (null != c && !f) ||
+              (null != u && !E) ||
               d ||
-              u ||
-              m ||
+              c?.state === "fetching" ||
+              (c?.state === "error" &&
+                null != c.endedAt &&
+                Date.now() - c.endedAt < 36e5) ||
               (0, o.Jp)(e, { includeBundles: t });
-          }, [e, c, d, u, m, t, f]),
-          { product: c, isFetching: u }
+          }, [e, u, d, c, t, E]),
+          { product: u, isFetching: c?.state === "fetching" }
         );
       }
     },
@@ -58579,7 +59029,7 @@ ${s}`);
               t.skuId === s.Dp.ORB_PROFILE_BADGE
             ) {
               let { default: e } = await Promise.all([
-                n.e("5554"),
+                n.e("30356"),
                 n.e("6827"),
               ]).then(n.bind(n, 328064));
               return (n) =>
@@ -58594,7 +59044,7 @@ ${s}`);
                 });
             }
             let { default: e } = await Promise.all([
-              n.e("5554"),
+              n.e("30356"),
               n.e("80845"),
             ]).then(n.bind(n, 393870));
             return (n) =>
@@ -58894,7 +59344,7 @@ ${s}`);
             ? ((_ = [E ?? "unknown"]),
               (0, r.openModalLazy)(async () => {
                 let { default: e } = await Promise.all([
-                  n.e("53242"),
+                  n.e("95908"),
                   n.e("9957"),
                   n.e("73118"),
                 ]).then(n.bind(n, 858128));
@@ -59936,6 +60386,7 @@ ${s}`);
           (i.APP_ICON = "APP_ICON"),
           (i.CUSTOM_THEME = "CUSTOM_THEME"),
           (i.APPLICATION_TEST_MODE_DEBUG = "APPLICATION_TEST_MODE_DEBUG"),
+          (i.CLIPS_REMINDER = "CLIPS_REMINDER"),
           i),
         l =
           (((r = {}).CLIENT_THEMES_EDITOR = "CLIENT_THEMES_EDITOR"),
@@ -59954,9 +60405,9 @@ ${s}`);
         });
       }
     },
-    276267(e, t, n) {
+    144491(e, t, n) {
       "use strict";
-      n.d(t, { A: () => tW });
+      n.d(t, { A: () => np });
       var i = n(627968),
         r = n(64700),
         s = n(503698),
@@ -60073,7 +60524,7 @@ ${s}`);
         Q = n(5867),
         J = n(235079);
       let Z = () =>
-          Promise.all([n.e("85071"), n.e("95752"), n.e("24927")]).then(
+          Promise.all([n.e("96123"), n.e("95752"), n.e("24927")]).then(
             n.bind(n, 710637),
           ),
         ee = (0, W.Fe)({ createPromise: Z, webpackId: 710637 }),
@@ -60186,80 +60637,79 @@ ${s}`);
             n.e("28367"),
             n.e("45174"),
             n.e("85519"),
-            n.e("87963"),
+            n.e("11871"),
             n.e("37266"),
             n.e("55057"),
-            n.e("76021"),
+            n.e("14976"),
             n.e("63229"),
             n.e("31988"),
             n.e("55343"),
             n.e("93103"),
             n.e("80527"),
-            n.e("88342"),
-            n.e("58710"),
-            n.e("8555"),
+            n.e("21909"),
             n.e("31825"),
             n.e("23353"),
+            n.e("96123"),
             n.e("7175"),
             n.e("37249"),
+            n.e("88342"),
             n.e("14138"),
             n.e("8971"),
-            n.e("85071"),
             n.e("88017"),
-            n.e("40142"),
+            n.e("77404"),
             n.e("1040"),
             n.e("64615"),
             n.e("17239"),
-            n.e("66950"),
-            n.e("60161"),
-            n.e("58164"),
-            n.e("38229"),
+            n.e("7454"),
+            n.e("64492"),
+            n.e("8555"),
             n.e("20861"),
             n.e("36682"),
-            n.e("98765"),
             n.e("45723"),
+            n.e("56871"),
+            n.e("69601"),
+            n.e("63191"),
+            n.e("40142"),
+            n.e("60161"),
+            n.e("51444"),
+            n.e("62290"),
+            n.e("98765"),
             n.e("35313"),
             n.e("65437"),
-            n.e("56871"),
             n.e("34983"),
-            n.e("69601"),
-            n.e("47511"),
+            n.e("80973"),
             n.e("92414"),
             n.e("95208"),
             n.e("72401"),
             n.e("47417"),
             n.e("19558"),
-            n.e("53142"),
-            n.e("51444"),
-            n.e("62290"),
+            n.e("58946"),
             n.e("76390"),
             n.e("93312"),
             n.e("95752"),
-            n.e("67339"),
+            n.e("87046"),
             n.e("48900"),
             n.e("31538"),
-            n.e("21453"),
-            n.e("80973"),
+            n.e("34828"),
             n.e("98954"),
-            n.e("82731"),
             n.e("20735"),
             n.e("227"),
             n.e("27846"),
             n.e("8306"),
             n.e("10567"),
             n.e("62718"),
-            n.e("43436"),
+            n.e("12542"),
             n.e("24170"),
             n.e("84317"),
             n.e("68883"),
-            n.e("54865"),
+            n.e("93858"),
             n.e("29594"),
             n.e("8018"),
             n.e("7637"),
             n.e("3025"),
             n.e("42282"),
             n.e("49862"),
-            n.e("44575"),
+            n.e("20382"),
             n.e("80093"),
             n.e("44647"),
             n.e("10730"),
@@ -60281,7 +60731,7 @@ ${s}`);
             n.e("88808"),
             n.e("62092"),
             n.e("27752"),
-            n.e("3441"),
+            n.e("96963"),
             n.e("24431"),
             n.e("86546"),
             n.e("15373"),
@@ -60289,24 +60739,24 @@ ${s}`);
             n.e("98970"),
             n.e("14875"),
             n.e("86300"),
-            n.e("99789"),
+            n.e("72474"),
             n.e("44935"),
             n.e("62175"),
             n.e("26663"),
             n.e("91139"),
             n.e("47568"),
-            n.e("91749"),
+            n.e("8021"),
+            n.e("45675"),
             n.e("29491"),
             n.e("41706"),
-            n.e("17422"),
-            n.e("29059"),
+            n.e("62597"),
             n.e("98352"),
             n.e("26297"),
-            n.e("4986"),
             n.e("77058"),
+            n.e("4986"),
             n.e("72822"),
+            n.e("90779"),
             n.e("52803"),
-            n.e("22646"),
             n.e("53275"),
             n.e("16310"),
             n.e("7121"),
@@ -60316,7 +60766,7 @@ ${s}`);
             n.e("84704"),
             n.e("33098"),
             n.e("37886"),
-            n.e("95176"),
+            n.e("82866"),
             n.e("23324"),
             n.e("91652"),
             n.e("25013"),
@@ -60327,7 +60777,6 @@ ${s}`);
             n.e("95782"),
             n.e("49914"),
             n.e("40114"),
-            n.e("90895"),
             n.e("19119"),
             n.e("83518"),
             n.e("67646"),
@@ -60335,7 +60784,7 @@ ${s}`);
             n.e("76477"),
             n.e("23536"),
             n.e("39967"),
-            n.e("66636"),
+            n.e("13504"),
             n.e("78467"),
             n.e("48612"),
             n.e("38249"),
@@ -60348,21 +60797,20 @@ ${s}`);
             n.e("11848"),
             n.e("24639"),
             n.e("96975"),
-            n.e("19347"),
+            n.e("20172"),
             n.e("83438"),
-            n.e("55514"),
+            n.e("18616"),
             n.e("4787"),
-            n.e("40962"),
             n.e("5536"),
             n.e("81161"),
-            n.e("44395"),
+            n.e("66774"),
             n.e("81250"),
             n.e("24805"),
-            n.e("44846"),
+            n.e("52813"),
             n.e("21595"),
-            n.e("88729"),
+            n.e("18779"),
             n.e("46454"),
-            n.e("73985"),
+            n.e("30803"),
             n.e("31294"),
           ]).then(n.bind(n, 902592)),
         webpackId: 902592,
@@ -60960,38 +61408,432 @@ ${s}`);
             });
       }
       var tD = n(47671),
-        tL = n(826673),
-        tv = n(932001),
-        tw = n(805627),
-        tP = n(45945);
-      function tb() {
+        tL = n(176781),
+        tv = n(815021),
+        tw = n(672477),
+        tP = n(274372);
+      let tb = (e) => {
+        let { clips: t, onBeforeDelete: r, onAfterDelete: s } = e;
+        (0, E.openModalLazy)(
+          async () => {
+            let { default: e } = await n.e("13367").then(n.bind(n, 223818));
+            return (n) =>
+              (0, i.jsx)(e, {
+                clips: t,
+                ...n,
+                onBeforeDelete: r,
+                onAfterDelete: async () => {
+                  await n.onClose(), s?.();
+                },
+              });
+          },
+          { stackingBehavior: "stack" },
+        );
+      };
+      var tk = n(271597),
+        tU = n(777666);
+      let tM = r.createContext(null),
+        tG = (e) => {
+          let { clip: t, children: n } = e;
+          return (0, i.jsx)(tM.Provider, { value: t, children: n });
+        };
+      var tx = n(408278),
+        tV = n(241326),
+        tF = n(990078);
+      let tB = (e) => {
+        let {
+            onBeforeDelete: t,
+            onAfterDelete: n,
+            variant: s = "overlay-secondary",
+          } = e,
+          a = r.useContext(tM),
+          o = r.useCallback(
+            (e) => {
+              e.stopPropagation(),
+                e.preventDefault(),
+                tb({ clips: [a], onAfterDelete: n, onBeforeDelete: t });
+            },
+            [a, n, t],
+          );
+        return (0, i.jsx)(tF.m, {
+          text: eb.intl.string(eb.t.oyYWHE),
+          position: "top",
+          children: (0, i.jsx)(tx.K, {
+            onClick: o,
+            icon: tV.u,
+            "aria-label": eb.intl.string(eb.t.oyYWHE),
+            variant: s,
+            size: "sm",
+          }),
+        });
+      };
+      var tH = n(22231);
+      let tY = (e) => {
+        let { variant: t = "overlay-secondary" } = e,
+          n = r.useContext(tM),
+          s = r.useCallback(
+            (e) => {
+              e.stopPropagation(),
+                e.preventDefault(),
+                (0, tk.p)({ initialEditingClipId: n.id });
+            },
+            [n],
+          );
+        return (0, i.jsx)(tF.m, {
+          text: eb.intl.string(eb.t.bt75uw),
+          position: "top",
+          children: (0, i.jsx)(tx.K, {
+            onClick: s,
+            icon: tH.R,
+            "aria-label": eb.intl.string(eb.t.bt75uw),
+            variant: t,
+            size: "sm",
+          }),
+        });
+      };
+      var tW = n(27232),
+        tK = n(505930),
+        tj = n(399925),
+        t$ = n(16590);
+      let tz = () => {
+        let e = r.useContext(tM),
+          t = r.useCallback(
+            (t) => {
+              t.stopPropagation(), t.preventDefault(), (0, tj.XK)(e);
+            },
+            [e],
+          );
+        return (0, i.jsx)(
+          tF.m,
+          {
+            text: eb.intl.string(
+              e.isFavorite ? t$.default.IZsalP : t$.default.ihBfyA,
+            ),
+            position: "top",
+            children: (0, i.jsx)(tx.K, {
+              onClick: t,
+              icon: e.isFavorite ? tW.G : tK.y,
+              "aria-label": eb.intl.string(eb.t.k8fFjp),
+              variant: "overlay-secondary",
+              size: "sm",
+            }),
+          },
+          `${e.id}:favorite:${e.isFavorite}`,
+        );
+      };
+      var tq = n(405433),
+        tX = n(602902);
+      let tQ = (e) => {
+        let { variant: t = "primary" } = e,
+          n = r.useContext(tM),
+          { analyticsLocations: s } = (0, tl.Ay)(),
+          a = r.useCallback(
+            (e) => {
+              e.stopPropagation(),
+                e.preventDefault(),
+                (0, tX.K)([n], { analyticsLocations: s });
+            },
+            [n, s],
+          );
+        return (0, i.jsx)(te.$, {
+          onClick: a,
+          icon: tq.l,
+          variant: t,
+          size: "sm",
+          text: eb.intl.string(eb.t.RDE0Sc),
+          fullWidth: !0,
+        });
+      };
+      var tJ = n(66455),
+        tZ = n(607470),
+        t0 = n(665039),
+        t1 = n(204351);
+      let t2 = (e) => {
+        let {
+            isPlaying: t = !1,
+            scrubOnHover: n = !1,
+            preload: s = "metadata",
+            children: a,
+          } = e,
+          o = r.useContext(tM),
+          l = r.useRef(null),
+          _ = (0, tJ.A)(o.editMetadata?.start ?? 0),
+          d = (0, t0.j)(o),
+          u = 0 === o.length,
+          [c, E] = r.useState(0),
+          h = r.useCallback(
+            (e) => {
+              let t = l.current;
+              if (null == t) return;
+              let n = o.editMetadata?.start ?? 0,
+                i = o.editMetadata?.end ?? t.duration;
+              t.currentTime = Math.max(0, _.current + ((i - n) * e) / 100);
+            },
+            [l, _, o],
+          ),
+          m = r.useCallback(
+            (e) => {
+              if (!n || null == l.current) return;
+              let t = l.current.getBoundingClientRect();
+              h(((e.clientX - t.left) / t.width) * 100);
+            },
+            [l, n, h],
+          );
+        return (
+          r.useEffect(() => {
+            if (u) return;
+            let e = l.current;
+            null == e ||
+              ((!t || e.paused) &&
+                ((e.currentTime = _.current), t ? e.play() : e.pause()));
+          }, [t, l, u, _]),
+          r.useEffect(() => {
+            let e = l?.current;
+            if (null == e || u) return;
+            let t = null,
+              n = () => {
+                if (e.paused || e.ended) {
+                  (t = null), E(0);
+                  return;
+                }
+                let i = o.editMetadata?.start ?? 0,
+                  r = o.editMetadata?.end ?? e.duration,
+                  s = ((e.currentTime - i) / (r - i)) * 100;
+                E(isNaN(s) ? 0 : Math.max(0, Math.min(100, s))),
+                  (t = requestAnimationFrame(n));
+              },
+              i = () => {
+                null == t && (t = requestAnimationFrame(n));
+              },
+              r = () => {
+                null != t && (cancelAnimationFrame(t), (t = null), E(0));
+              };
+            return (
+              e.addEventListener("play", i),
+              e.addEventListener("pause", r),
+              e.addEventListener("ended", r),
+              e.paused || i(),
+              () => {
+                null != t && (cancelAnimationFrame(t), E(0)),
+                  e.removeEventListener("play", i),
+                  e.removeEventListener("pause", r),
+                  e.removeEventListener("ended", r);
+              }
+            );
+          }, [l, u, o.editMetadata]),
+          (0, i.jsxs)("div", {
+            className: t1.Q,
+            onMouseMove: m,
+            children: [
+              u
+                ? (0, i.jsx)("img", {
+                    alt: "",
+                    src: o.thumbnail,
+                    className: t1.f,
+                  })
+                : null != d
+                  ? (0, i.jsx)(tZ.A, {
+                      preload: s,
+                      poster: o.thumbnail,
+                      muted: !0,
+                      src: d,
+                      loop: !0,
+                      className: t1.f,
+                      ref: l,
+                    })
+                  : null,
+              a,
+            ],
+          })
+        );
+      };
+      var t3 = n(780479);
+      let t6 = (e) => {
+        let { children: t, className: n, isVisible: r = !0 } = e;
+        return (0, i.jsx)("div", {
+          className: a()(t3.n, { [t3.z]: r }, n),
+          children: t,
+        });
+      };
+      var t4 = n(46437);
+      let t7 = (e) => {
+          let { clip: t, isNew: n } = e,
+            [s, a] = r.useState(!1),
+            { scrubOnHover: o } = tw.Z.useConfig({
+              location: "ClipsSidebarItem",
+            }),
+            l = r.useRef(null),
+            _ = r.useCallback(() => a(!0), []),
+            d = r.useCallback(() => a(!1), []);
+          return null == t
+            ? null
+            : (0, i.jsx)("div", {
+                ref: l,
+                className: t4.Jr,
+                onMouseEnter: _,
+                onMouseLeave: d,
+                onFocus: _,
+                onBlur: d,
+                children: (0, i.jsx)(tG, {
+                  clip: t,
+                  children: (0, i.jsxs)(t2, {
+                    scrubOnHover: o,
+                    isPlaying: !o && s,
+                    preload: n ? "auto" : "metadata",
+                    children: [
+                      n &&
+                        (0, i.jsx)(tU.Lp, {
+                          className: t4.Ad,
+                          text: eb.intl.string(eb.t.y2b7CA),
+                        }),
+                      (0, i.jsxs)(t6, {
+                        isVisible: s,
+                        className: t4.PJ,
+                        children: [(0, i.jsx)(t5, {}), (0, i.jsx)(t8, {})],
+                      }),
+                    ],
+                  }),
+                }),
+              });
+        },
+        t5 = () =>
+          (0, i.jsxs)("div", {
+            className: t4.oK,
+            children: [(0, i.jsx)(tz, {}), (0, i.jsx)(tB, {})],
+          }),
+        t8 = () =>
+          (0, i.jsxs)("div", {
+            className: t4.yG,
+            children: [
+              (0, i.jsx)(tY, { variant: "primary" }),
+              (0, i.jsx)(tQ, {}),
+            ],
+          });
+      var t9 = n(542772);
+      let ne = (e) => {
+        let { clips: t } = e,
+          n =
+            (0, d.bG)([tP.A], () => tP.A.getLastClipsSession()?.newClipIds) ??
+            [];
+        return (0, i.jsx)("div", {
+          className: t9.u,
+          children: t.map((e) =>
+            (0, i.jsx)(t7, { clip: e, isNew: n.includes(e.id) }, e.id),
+          ),
+        });
+      };
+      var nt = n(994337);
+      let nn = (e, t) => t.createdAt - e.createdAt;
+      function ni() {
+        let { enableReminderSidebar: e } = tw.Z.useConfig({
+            location: "ClipsReminderSidebar",
+          }),
+          { clips: t, remindersEnabled: n } = (0, d.cf)([tP.A], () => {
+            let e = Date.now() - 6048e5;
+            return {
+              clips: tP.A.getClipIds()
+                .map((e) => tP.A.getClipById(e))
+                .filter((t) => t.createdAt > e)
+                .sort(nn)
+                .slice(0, 15),
+              remindersEnabled: tP.A.getSettings().remindersEnabled,
+            };
+          });
+        return (r.useEffect(() => {
+          (e && n) || (0, t_.Jp)();
+        }, [e, n]),
+        e && n && 0 !== t.length)
+          ? (0, i.jsxs)("div", {
+              className: nt.kL,
+              "data-app-right-panel": !0,
+              children: [
+                (0, i.jsxs)("div", {
+                  className: nt.wx,
+                  children: [
+                    (0, i.jsxs)(y.E, {
+                      variant: "text-md/bold",
+                      color: "text-strong",
+                      className: nt.DD,
+                      children: [
+                        (0, i.jsx)(tL.x, {
+                          size: "sm",
+                          color: ti.A.colors.TEXT_STRONG.css,
+                        }),
+                        eb.intl.formatToPlainString(t$.default.dFu8vZ, {
+                          count: t.length,
+                        }),
+                      ],
+                    }),
+                    (0, i.jsx)(tv.J, { onClick: t_.Jp }),
+                  ],
+                }),
+                (0, i.jsx)(ts.Ip, {
+                  className: nt.Qs,
+                  children: (0, i.jsx)(ne, { clips: t }),
+                }),
+                (0, i.jsx)(nr, { clips: t }),
+              ],
+            })
+          : null;
+      }
+      let nr = (e) => {
+        let { clips: t } = e,
+          n = r.useCallback(() => {
+            (0, tk.p)();
+          }, []),
+          s = r.useCallback(() => {
+            tb({ clips: t, onAfterDelete: () => (0, t_.Jp)() });
+          }, [t]);
+        return (0, i.jsxs)("div", {
+          className: nt.qr,
+          children: [
+            (0, i.jsx)(te.$, {
+              text: eb.intl.string(t$.default.f98Qe3),
+              variant: "critical-secondary",
+              size: "md",
+              onClick: s,
+            }),
+            (0, i.jsx)(te.$, {
+              text: eb.intl.string(t$.default["55C2MH"]),
+              variant: "primary",
+              size: "md",
+              onClick: n,
+            }),
+          ],
+        });
+      };
+      var ns = n(826673),
+        na = n(932001),
+        no = n(805627),
+        nl = n(45945);
+      function n_() {
         return (0, i.jsx)("div", {
           "data-app-right-panel": !0,
-          className: tP.kL,
+          className: nl.kL,
         });
       }
-      let tk = (0, W.Fe)({
+      let nd = (0, W.Fe)({
           createPromise: () =>
             Promise.all([n.e("37249"), n.e("62290"), n.e("66996")]).then(
               n.bind(n, 974800),
             ),
           webpackId: 974800,
-          renderLoader: tb,
+          renderLoader: n_,
         }),
-        tU = (0, W.Fe)({
+        nu = (0, W.Fe)({
           createPromise: () =>
             Promise.all([n.e("37249"), n.e("62290"), n.e("51200")]).then(
               n.bind(n, 290948),
             ),
           webpackId: 290948,
-          renderLoader: tb,
+          renderLoader: n_,
         }),
-        tM = (0, W.Fe)({
+        nc = (0, W.Fe)({
           createPromise: () =>
             Promise.all([n.e("36682"), n.e("33049")]).then(n.bind(n, 563380)),
           webpackId: 563380,
         }),
-        tG = function (e) {
+        nE = function (e) {
           let { mobile: t } = e,
             n = (0, d.bG)([eR.default], () =>
               tf.Ay.canUseClientThemes(eR.default.getCurrentUser()),
@@ -61016,23 +61858,24 @@ ${s}`);
             !l &&
             (r && !n && _.push(e9.M.CLIENT_THEMES_COACHMARK),
             s && n && _.push(e9.M.CUSTOM_THEME_COACHMARK));
-          let [u, c] = (0, tv.kn)(_, tT.m.SIDEBAR, !0),
+          let [u, c] = (0, na.kn)(_, tT.m.SIDEBAR, !0),
             E = u === e9.M.CLIENT_THEMES_COACHMARK,
             h = u === e9.M.CUSTOM_THEME_COACHMARK,
             m = a === t_.HP.CLIENT_THEMES || E,
             f = a === t_.HP.APP_ICON,
             g = a === t_.HP.CUSTOM_THEME || h,
-            I = a === t_.HP.APPLICATION_TEST_MODE_DEBUG;
-          if (!(m || f || g || I)) return null;
-          let A = () =>
+            I = a === t_.HP.APPLICATION_TEST_MODE_DEBUG,
+            A = a === t_.HP.CLIPS_REMINDER;
+          if (!(m || f || g || I || A)) return null;
+          let p = () =>
             (0, i.jsxs)(i.Fragment, {
               children: [
                 m &&
-                  (0, i.jsx)(tk, {
+                  (0, i.jsx)(nd, {
                     markAsDismissed: E
                       ? c
                       : () => {
-                          (0, tL.Dr)(e9.M.CLIENT_THEMES_COACHMARK, {
+                          (0, ns.Dr)(e9.M.CLIENT_THEMES_COACHMARK, {
                             dismissAction: tT.i.INDIRECT_ACTION,
                             forceTrack: !0,
                           });
@@ -61041,23 +61884,24 @@ ${s}`);
                   }),
                 f && (0, i.jsx)(ty, { isCoachmark: !1, markAsDismissed: c }),
                 g &&
-                  (0, i.jsx)(tU, {
+                  (0, i.jsx)(nu, {
                     metadata: o ?? {},
                     markAsDismissed: c,
                     isCoachmark: h,
                     isMobile: t,
                   }),
-                I && (0, i.jsx)(tM, {}),
+                I && (0, i.jsx)(nc, {}),
+                A && (0, i.jsx)(ni, {}),
               ],
             });
           return t
-            ? (0, i.jsx)("div", { className: tw.A, children: A() })
-            : A();
+            ? (0, i.jsx)("div", { className: no.A, children: p() })
+            : p();
         };
-      var tx = n(404374),
-        tV = n(573435),
-        tF = n(71855),
-        tB = n(906292);
+      var nh = n(404374),
+        nm = n(573435),
+        nf = n(71855),
+        ng = n(906292);
       n(939857),
         Promise.resolve()
           .then(n.bind(n, 677134))
@@ -61095,21 +61939,21 @@ ${s}`);
             ]).then(n.bind(n, 461624)),
           webpackId: 461624,
         });
-      let tH = (0, W.Fe)({
+      let nI = (0, W.Fe)({
           createPromise: () => n.e("99063").then(n.bind(n, 154056)),
           webpackId: 154056,
         }),
-        tY = r.memo(function () {
+        nA = r.memo(function () {
           let e = (0, d.bG)([e5.A], () => e5.A.hasLayers()),
             t = (0, E.useModalsStore)(E.hasAnyModalOpen),
             n = (0, d.bG)([eG.default], () => eG.default.isAuthenticated());
-          return (0, i.jsx)(tF.v5, {
+          return (0, i.jsx)(nf.v5, {
             fixed: !0,
             show: e || t || !n,
             isLayerOpen: e,
           });
         }),
-        tW = function (e) {
+        np = function (e) {
           var t;
           let n,
             { children: s, skipsSettingDefaultPageTitle: c } = e,
@@ -61145,21 +61989,21 @@ ${s}`);
                         children: (0, i.jsxs)(h.xp, {
                           containerRef: C,
                           children: [
-                            (0, i.jsx)(tV.Al, {}),
-                            (0, i.jsx)(tx.Ay, {}),
+                            (0, i.jsx)(nm.Al, {}),
+                            (0, i.jsx)(nh.Ay, {}),
                             (0, i.jsx)(_.Ut, {}),
                             (0, i.jsx)(eS.Wr, {
                               appContext: eE.BRT.APP,
                               renderWindow: window,
                               children: (0, i.jsxs)(w.Yf, {
                                 children: [
-                                  null != E ? (0, i.jsx)(tY, {}) : null,
+                                  null != E ? (0, i.jsx)(nA, {}) : null,
                                   (0, i.jsxs)("div", {
-                                    className: a()(tB.XX, p && tB.Xq),
+                                    className: a()(ng.XX, p && ng.Xq),
                                     children: [
                                       (0, i.jsx)(eo.C1, {}),
                                       (0, i.jsx)("div", {
-                                        className: tB.x$,
+                                        className: ng.x$,
                                         "data-app-not-dev-tools": !0,
                                         children: (0, i.jsx)(ea.l, {
                                           children: (0, i.jsx)(eT.ks, {
@@ -61169,7 +62013,7 @@ ${s}`);
                                                 children: [
                                                   (0, i.jsx)("div", {
                                                     className: a()(
-                                                      p ? tB.C$ : tB.yA,
+                                                      p ? ng.C$ : ng.yA,
                                                     ),
                                                     children: s,
                                                   }),
@@ -61187,7 +62031,7 @@ ${s}`);
                                                   }),
                                                   (0, i.jsx)(G, {}),
                                                   (0, i.jsx)(eD, {}),
-                                                  (0, i.jsx)(tH, {}),
+                                                  (0, i.jsx)(nI, {}),
                                                 ],
                                               }),
                                             }),
@@ -61195,7 +62039,7 @@ ${s}`);
                                         }),
                                       }),
                                       (0, i.jsx)(ei, {}),
-                                      (0, i.jsx)(tG, { mobile: p }),
+                                      (0, i.jsx)(nE, { mobile: p }),
                                       (0, i.jsx)(em, { mobile: p }),
                                     ],
                                   }),
@@ -63742,7 +64586,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535363", versionHash: "0cd0e27a83c5545ddfede82ea94895a8112c7164" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "535999", versionHash: "3e41e2d4625b6cdc30f9ec4149de8adc286499d6" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -74712,6 +75556,115 @@ ${t.join("\n")}`);
       }
       let _ = new l();
     },
+    530912(e, t, n) {
+      "use strict";
+      n.d(t, {
+        Jf: () => c,
+        TA: () => u,
+        VF: () => h,
+        hH: () => d,
+        nL: () => E,
+        pp: () => _,
+      });
+      var i = n(64700),
+        r = n(735438),
+        s = n(58149),
+        a = n(734057),
+        o = n(954571),
+        l = n(652215);
+      function _(e, t, n) {
+        o.default.track(l.HAw.FORWARD_MESSAGE_STARTED, {
+          channel_id: e,
+          message_id: t,
+          source: n,
+        });
+      }
+      function d(e) {
+        let {
+          channelId: t,
+          messageId: n,
+          numDestinationChanges: i,
+          numQueryChanges: r,
+        } = e;
+        o.default.track(l.HAw.FORWARD_MESSAGE_CANCELLED, {
+          channel_id: t,
+          message_id: n,
+          num_destination_changes: i,
+          num_query_changes: r,
+        });
+      }
+      function u(e) {
+        let {
+          channelId: t,
+          messageId: n,
+          hasError: i,
+          hasContextMessage: r,
+          numDestinations: _,
+          numDestinationChanges: d,
+          numQueryChanges: u,
+          anyDestinationHasSlowmode: c,
+          source: E,
+        } = e;
+        if (
+          (o.default.track(l.HAw.FORWARD_MESSAGE_SENT, {
+            channel_id: t,
+            message_id: n,
+            has_error: i,
+            has_context_message: r,
+            num_destinations: _,
+            num_destination_changes: d,
+            num_query_changes: u,
+            any_destination_has_slowmode: c,
+          }),
+          "message-shortcut" === E)
+        ) {
+          let e = a.A.getChannel(t);
+          o.default.track(l.HAw.MESSAGE_SHORTCUT_ACTION_SENT, {
+            action: "forward",
+            original_message_id: n,
+            ...(0, s.H$)(e?.guild_id),
+            ...(0, s.dI)(e),
+          });
+        }
+      }
+      function c() {
+        return i.useMemo(
+          () =>
+            (0, r.once)((e, t, n) => {
+              o.default.track(l.HAw.FORWARD_ADD_RECIPIENT, {
+                channel_id: e,
+                message_id: t,
+                has_query: n,
+              });
+            }),
+          [],
+        );
+      }
+      function E() {
+        return i.useMemo(
+          () =>
+            (0, r.once)((e, t) => {
+              o.default.track(l.HAw.FORWARD_EDIT_SEARCH, {
+                channel_id: e,
+                message_id: t,
+              });
+            }),
+          [],
+        );
+      }
+      function h() {
+        return i.useMemo(
+          () =>
+            (0, r.once)((e, t) => {
+              o.default.track(l.HAw.FORWARD_EDIT_CONTEXT_MESSAGE, {
+                channel_id: e,
+                message_id: t,
+              });
+            }),
+          [],
+        );
+      }
+    },
     427930(e, t, n) {
       "use strict";
       n.d(t, { A: () => r, m: () => s });
@@ -82647,6 +83600,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             skuId: e.sku_id,
           });
         }),
+        t0(["USER_BADGE_STATE_UPDATE"], (e) => {
+          n(682618).o(e.badge_id);
+        }),
         t0(["USER_PREMIUM_GUILD_SUBSCRIPTION_SLOT_CREATE"], (e) => {
           t3({
             type: "GUILD_BOOST_SLOT_CREATE",
@@ -86698,37 +87654,36 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("57036"),
                   n.e("88394"),
                   n.e("80527"),
-                  n.e("58710"),
+                  n.e("21909"),
                   n.e("31825"),
                   n.e("23353"),
+                  n.e("96123"),
                   n.e("7175"),
                   n.e("37249"),
                   n.e("14138"),
                   n.e("8971"),
-                  n.e("85071"),
                   n.e("88017"),
+                  n.e("77404"),
                   n.e("1040"),
                   n.e("64615"),
                   n.e("17239"),
-                  n.e("66950"),
-                  n.e("58164"),
-                  n.e("38229"),
+                  n.e("7454"),
+                  n.e("64492"),
                   n.e("20861"),
                   n.e("36682"),
                   n.e("45723"),
                   n.e("56871"),
                   n.e("69601"),
-                  n.e("47511"),
-                  n.e("95208"),
+                  n.e("63191"),
                   n.e("51444"),
                   n.e("62290"),
-                  n.e("76390"),
                   n.e("80973"),
-                  n.e("82731"),
-                  n.e("17422"),
+                  n.e("95208"),
+                  n.e("76390"),
+                  n.e("45675"),
                   n.e("8458"),
-                  n.e("19347"),
-                  n.e("64239"),
+                  n.e("20172"),
+                  n.e("5181"),
                 ]).then(n.bind(n, 823591));
                 return (n) =>
                   (0, i.jsx)(t, {
@@ -86773,37 +87728,36 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("57036"),
                 n.e("88394"),
                 n.e("80527"),
-                n.e("58710"),
+                n.e("21909"),
                 n.e("31825"),
                 n.e("23353"),
+                n.e("96123"),
                 n.e("7175"),
                 n.e("37249"),
                 n.e("14138"),
                 n.e("8971"),
-                n.e("85071"),
                 n.e("88017"),
+                n.e("77404"),
                 n.e("1040"),
                 n.e("64615"),
                 n.e("17239"),
-                n.e("66950"),
-                n.e("58164"),
-                n.e("38229"),
+                n.e("7454"),
+                n.e("64492"),
                 n.e("20861"),
                 n.e("36682"),
                 n.e("45723"),
                 n.e("56871"),
                 n.e("69601"),
-                n.e("47511"),
-                n.e("95208"),
+                n.e("63191"),
                 n.e("51444"),
                 n.e("62290"),
-                n.e("76390"),
                 n.e("80973"),
-                n.e("82731"),
-                n.e("17422"),
+                n.e("95208"),
+                n.e("76390"),
+                n.e("45675"),
                 n.e("8458"),
-                n.e("19347"),
-                n.e("64239"),
+                n.e("20172"),
+                n.e("5181"),
               ]).then(n.bind(n, 823591));
               return (n) => (0, i.jsx)(t, { ...n, guildId: e, isPreview: !0 });
             });
@@ -94293,54 +95247,54 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("28367"),
           n.e("45174"),
           n.e("85519"),
-          n.e("87963"),
+          n.e("11871"),
           n.e("37266"),
           n.e("55057"),
-          n.e("76021"),
+          n.e("14976"),
           n.e("63229"),
           n.e("31988"),
           n.e("55343"),
           n.e("80527"),
-          n.e("58710"),
-          n.e("8555"),
+          n.e("21909"),
           n.e("31825"),
           n.e("23353"),
+          n.e("96123"),
           n.e("7175"),
           n.e("37249"),
           n.e("14138"),
           n.e("8971"),
-          n.e("85071"),
           n.e("88017"),
-          n.e("40142"),
+          n.e("77404"),
           n.e("1040"),
           n.e("64615"),
           n.e("17239"),
-          n.e("66950"),
-          n.e("58164"),
-          n.e("38229"),
+          n.e("7454"),
+          n.e("64492"),
+          n.e("8555"),
           n.e("20861"),
           n.e("36682"),
-          n.e("98765"),
           n.e("45723"),
           n.e("56871"),
           n.e("69601"),
-          n.e("47511"),
-          n.e("92414"),
-          n.e("47417"),
+          n.e("63191"),
+          n.e("40142"),
           n.e("51444"),
           n.e("62290"),
-          n.e("48900"),
+          n.e("98765"),
           n.e("80973"),
-          n.e("82731"),
+          n.e("92414"),
+          n.e("47417"),
+          n.e("48900"),
           n.e("20735"),
           n.e("27846"),
           n.e("8306"),
           n.e("10567"),
-          n.e("43436"),
+          n.e("12542"),
           n.e("84317"),
-          n.e("54865"),
-          n.e("44575"),
-          n.e("99305"),
+          n.e("93858"),
+          n.e("20382"),
+          n.e("81363"),
+          n.e("39667"),
         ]).then(n.bind(n, 121338));
         if (
           (t(e),
@@ -108184,79 +109138,78 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("28367"),
               n.e("45174"),
               n.e("85519"),
-              n.e("87963"),
+              n.e("11871"),
               n.e("37266"),
               n.e("55057"),
-              n.e("76021"),
+              n.e("14976"),
               n.e("63229"),
               n.e("31988"),
               n.e("55343"),
               n.e("93103"),
               n.e("80527"),
-              n.e("88342"),
-              n.e("58710"),
-              n.e("8555"),
+              n.e("21909"),
               n.e("31825"),
               n.e("23353"),
+              n.e("96123"),
               n.e("7175"),
               n.e("37249"),
+              n.e("88342"),
               n.e("14138"),
               n.e("8971"),
-              n.e("85071"),
               n.e("88017"),
-              n.e("40142"),
+              n.e("77404"),
               n.e("1040"),
               n.e("64615"),
               n.e("17239"),
-              n.e("66950"),
-              n.e("60161"),
-              n.e("58164"),
-              n.e("38229"),
+              n.e("7454"),
+              n.e("64492"),
+              n.e("8555"),
               n.e("20861"),
               n.e("36682"),
-              n.e("98765"),
               n.e("45723"),
+              n.e("56871"),
+              n.e("69601"),
+              n.e("63191"),
+              n.e("40142"),
+              n.e("60161"),
+              n.e("51444"),
+              n.e("62290"),
+              n.e("98765"),
               n.e("35313"),
               n.e("65437"),
-              n.e("56871"),
               n.e("34983"),
-              n.e("69601"),
-              n.e("47511"),
+              n.e("80973"),
               n.e("92414"),
               n.e("95208"),
               n.e("72401"),
               n.e("47417"),
               n.e("19558"),
-              n.e("53142"),
-              n.e("51444"),
-              n.e("62290"),
+              n.e("58946"),
               n.e("76390"),
               n.e("93312"),
               n.e("95752"),
-              n.e("67339"),
+              n.e("87046"),
               n.e("48900"),
               n.e("31538"),
-              n.e("21453"),
-              n.e("80973"),
+              n.e("34828"),
               n.e("98954"),
-              n.e("82731"),
               n.e("20735"),
               n.e("227"),
               n.e("27846"),
               n.e("8306"),
               n.e("10567"),
               n.e("62718"),
-              n.e("43436"),
+              n.e("12542"),
               n.e("24170"),
               n.e("84317"),
               n.e("68883"),
-              n.e("54865"),
+              n.e("93858"),
               n.e("29594"),
               n.e("8018"),
               n.e("7637"),
               n.e("3025"),
               n.e("42282"),
-              n.e("44575"),
+              n.e("20382"),
               n.e("44647"),
               n.e("10730"),
               n.e("25657"),
@@ -108273,36 +109226,35 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("88808"),
               n.e("62092"),
               n.e("27752"),
-              n.e("3441"),
+              n.e("96963"),
               n.e("24431"),
               n.e("7679"),
               n.e("98970"),
               n.e("86300"),
-              n.e("99789"),
+              n.e("72474"),
               n.e("26663"),
               n.e("91139"),
               n.e("47568"),
-              n.e("91749"),
+              n.e("8021"),
+              n.e("45675"),
               n.e("29491"),
-              n.e("17422"),
               n.e("98352"),
               n.e("26297"),
               n.e("4986"),
-              n.e("22646"),
+              n.e("90779"),
               n.e("16310"),
               n.e("7121"),
               n.e("49448"),
               n.e("55811"),
               n.e("37886"),
-              n.e("95176"),
+              n.e("82866"),
               n.e("25013"),
-              n.e("90895"),
               n.e("23536"),
-              n.e("66636"),
+              n.e("13504"),
               n.e("78467"),
               n.e("96234"),
               n.e("24639"),
-              n.e("19347"),
+              n.e("20172"),
               n.e("84989"),
               n.e("12925"),
             ]).then(n.bind(n, 888250)),
@@ -108621,7 +109573,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(17928),
         _ = n(834730),
         d = n(821609),
@@ -109224,38 +110176,36 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("57036"),
               n.e("88394"),
               n.e("80527"),
-              n.e("58710"),
+              n.e("21909"),
               n.e("31825"),
               n.e("23353"),
+              n.e("96123"),
               n.e("7175"),
               n.e("37249"),
               n.e("14138"),
               n.e("8971"),
-              n.e("85071"),
               n.e("88017"),
+              n.e("77404"),
               n.e("1040"),
               n.e("64615"),
               n.e("17239"),
-              n.e("66950"),
-              n.e("58164"),
-              n.e("38229"),
+              n.e("7454"),
+              n.e("64492"),
               n.e("20861"),
               n.e("36682"),
               n.e("45723"),
               n.e("56871"),
               n.e("69601"),
-              n.e("47511"),
+              n.e("63191"),
               n.e("51444"),
               n.e("62290"),
               n.e("80973"),
-              n.e("82731"),
               n.e("99011"),
               n.e("27752"),
               n.e("7679"),
               n.e("49448"),
               n.e("25013"),
-              n.e("90895"),
-              n.e("79332"),
+              n.e("15683"),
             ]).then(n.bind(n, 21076))
           ).default;
         } catch (e) {
@@ -111738,40 +112688,39 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("28367"),
               n.e("45174"),
               n.e("85519"),
-              n.e("87963"),
+              n.e("11871"),
               n.e("37266"),
               n.e("55057"),
-              n.e("76021"),
+              n.e("14976"),
               n.e("63229"),
               n.e("80527"),
-              n.e("58710"),
+              n.e("21909"),
               n.e("31825"),
               n.e("23353"),
+              n.e("96123"),
               n.e("7175"),
               n.e("37249"),
               n.e("14138"),
               n.e("8971"),
-              n.e("85071"),
               n.e("88017"),
+              n.e("77404"),
               n.e("1040"),
               n.e("64615"),
               n.e("17239"),
-              n.e("66950"),
-              n.e("58164"),
-              n.e("38229"),
+              n.e("7454"),
+              n.e("64492"),
               n.e("20861"),
               n.e("36682"),
               n.e("45723"),
               n.e("56871"),
               n.e("69601"),
-              n.e("47511"),
+              n.e("63191"),
               n.e("51444"),
               n.e("62290"),
               n.e("80973"),
-              n.e("82731"),
               n.e("20735"),
               n.e("10567"),
-              n.e("43436"),
+              n.e("12542"),
               n.e("84317"),
               n.e("6159"),
               n.e("14875"),
@@ -111779,7 +112728,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("29716"),
               n.e("8739"),
               n.e("61402"),
-              n.e("12409"),
+              n.e("80986"),
             ]).then(n.bind(n, 864353));
             return (n) => {
               let { onClose: s, ...a } = n;
@@ -113010,7 +113959,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         M = n(267102),
         G = n(735438),
         x = n.n(G),
-        V = n(419354),
+        V = n(487514),
         F = n(258873),
         B = n(622242),
         H = n(731738),
@@ -119872,7 +120821,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(717421),
         _ = n(935462),
         d = n(430690),
@@ -126277,10 +127226,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               let { channelId: t, blockedUserIds: i, ignoredUserIds: r } = e;
               (0, d.openModalLazy)(
                 async () => {
-                  let { default: e } = await Promise.all([
-                    n.e("83792"),
-                    n.e("47000"),
-                  ]).then(n.bind(n, 876717));
+                  let { default: e } = await n
+                    .e("24958")
+                    .then(n.bind(n, 876717));
                   return (n) => {
                     let { transitionState: s, onClose: a } = n;
                     return (0, _.jsx)(e, {
@@ -126334,10 +127282,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               ((e = a.A.isBlocked(t)),
               (0, d.openModalLazy)(
                 async () => {
-                  let { default: e } = await Promise.all([
-                    n.e("83792"),
-                    n.e("49222"),
-                  ]).then(n.bind(n, 552258));
+                  let { default: e } = await n
+                    .e("39679")
+                    .then(n.bind(n, 552258));
                   return (n) => {
                     let { transitionState: r, onClose: s } = n;
                     return (0, _.jsx)(e, {
@@ -134461,7 +135408,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       let f = new m(() =>
         (0, r.openModalLazy)(
           async () => {
-            let { default: e } = await n.e("14343").then(n.bind(n, 531519));
+            let { default: e } = await n.e("36724").then(n.bind(n, 531519));
             return (t) => (0, i.jsx)(e, { ...t });
           },
           { modalKey: d.r, onCloseRequest: u.FXj },
@@ -135433,22 +136380,23 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     841595(e, t, n) {
       "use strict";
-      n.d(t, { A: () => em }), n(938796), n(321073);
+      n.d(t, { A: () => eE }), n(321073), n(938796);
       var i = n(735438),
         r = n.n(i),
-        s = n(540185),
-        a = n(451988),
-        o = n(573648),
-        l = n(945810);
-      function _(e) {
-        return (0, l.mj)({
+        s = n(575593),
+        a = n(540185),
+        o = n(451988),
+        l = n(573648),
+        _ = n(945810);
+      function d(e) {
+        return (0, _.mj)({
           name: e,
           kind: "user",
           variations: { 0: { enabled: !1 }, 1: { enabled: !0 } },
           defaultConfig: { enabled: !1 },
         });
       }
-      class d {
+      class u {
         applicationId;
         widgetTemplateId;
         viewExperiment;
@@ -135463,11 +136411,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         constructor(e) {
           (this.applicationId = e.application_id),
             (this.widgetTemplateId = e.widget_template_id),
-            (this.viewExperiment = _(e.view_experiment)),
-            (this.editExperiment = _(e.edit_experiment)),
+            (this.viewExperiment = d(e.view_experiment)),
+            (this.editExperiment = d(e.edit_experiment)),
             (this.coachmarkExperiment =
               null != e.coachmark_experiment
-                ? _(e.coachmark_experiment)
+                ? d(e.coachmark_experiment)
                 : void 0),
             (this.editProfileUpsellImage = e.edit_profile_upsell_image),
             (this.heroPlaceholderImage = e.hero_placeholder_image),
@@ -135486,37 +136434,48 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return null != this.suggestedWidgetLinkedDc;
         }
       }
-      var u = n(773669),
-        c = n(889227),
-        E = n(495544),
-        h = n(71393),
-        m = n(536802),
-        f = n(290863),
-        g = n(711014),
-        I = n(403362),
-        A = n(439174),
-        p = n(633075),
-        T = n(289173),
-        S = n(575593);
+      var c = n(773669),
+        E = n(889227),
+        h = n(495544),
+        m = n(71393),
+        f = n(536802),
+        g = n(290863),
+        I = n(711014),
+        A = n(403362),
+        p = n(439174),
+        T = n(633075),
+        S = n(289173);
       function N(e) {
         let t, n;
-        for (let i of e?.collectibles ?? [])
-          i.type === S.R.PROFILE_EFFECT
-            ? (t = {
-                skuId: i.sku_id,
-                expiresAt:
-                  null != i.expires_at
-                    ? Math.floor(new Date(i.expires_at).getTime() / 1e3)
-                    : void 0,
-              })
-            : i.type === S.R.PROFILE_FRAME &&
-              (n = {
-                skuId: i.sku_id,
-                type: S.R.PROFILE_FRAME,
-                expiresAt:
-                  null != i.expires_at ? new Date(i.expires_at) : void 0,
-              });
-        return { profileEffect: t, profileFrame: n };
+        if (e?.collectibles == null)
+          return {
+            collectibles: void 0,
+            profileEffect: void 0,
+            profileFrame: void 0,
+          };
+        let i = [];
+        for (let r of e.collectibles)
+          i.push({
+            skuId: r.sku_id,
+            type: r.type,
+            expiresAt: null != r.expires_at ? new Date(r.expires_at) : void 0,
+          }),
+            r.type === s.R.PROFILE_EFFECT
+              ? (t = {
+                  skuId: r.sku_id,
+                  expiresAt:
+                    null != r.expires_at
+                      ? Math.floor(new Date(r.expires_at).getTime() / 1e3)
+                      : void 0,
+                })
+              : r.type === s.R.PROFILE_FRAME &&
+                (n = {
+                  skuId: r.sku_id,
+                  type: s.R.PROFILE_FRAME,
+                  expiresAt:
+                    null != r.expires_at ? new Date(r.expires_at) : void 0,
+                });
+        return { collectibles: i, profileEffect: t, profileFrame: n };
       }
       var O = n(518477),
         R = n(652215),
@@ -135526,89 +136485,86 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         L = new Set(),
         v = new Map(),
         w = new Map(),
-        P = new Map(),
+        P = {},
         b = new Map(),
         k = new Map(),
         U = new Map(),
-        M = new Map(),
+        M = [],
         G = [],
-        x = [],
-        V = null,
-        F = new Map();
-      function B(e) {
+        x = null,
+        V = new Map();
+      function F(e) {
         let t = e.data.type;
         switch (t) {
-          case s.x.CURRENT_GAMES:
-          case s.x.FAVORITE_GAMES:
-          case s.x.PLAYED_GAMES:
-          case s.x.WANT_TO_PLAY_GAMES:
+          case a.x.CURRENT_GAMES:
+          case a.x.FAVORITE_GAMES:
+          case a.x.PLAYED_GAMES:
+          case a.x.WANT_TO_PLAY_GAMES:
             let n = e.data.games.map((e) => ({
                 applicationId: e.game_id,
                 comment: e.comment,
                 tags: e.tags,
               })),
               i = r().uniqBy(n, "applicationId");
-            return new T.Yy({ id: e.id, type: t, games: i });
-          case s.x.APPLICATION:
-            return new p.R({ id: e.id, applicationId: e.data.application_id });
+            return new S.Yy({ id: e.id, type: t, games: i });
+          case a.x.APPLICATION:
+            return new T.R({ id: e.id, applicationId: e.data.application_id });
         }
       }
-      let H = !1,
-        Y = null;
-      function W(e) {
-        let t = v.get(e);
-        if (null == t) return;
-        let n = t.profileEffect;
-        if (n?.expiresAt == null) return;
-        let i = 1e3 * n.expiresAt - Date.now();
-        if (i <= 0) {
-          (t.profileEffect = void 0), P.delete(e), eh.emitChange();
-          return;
-        }
-        let r = P.get(e);
-        null != r && r.start(Math.min(R.mnr, i), () => W(e));
+      let B = !1,
+        H = null;
+      function Y(e, t) {
+        let n = null != t ? w.get(e)?.get(t) : v.get(e);
+        if (n?.collectibles == null) return;
+        let i = [];
+        n.collectibles.forEach((n) => {
+          if (null == n.expiresAt) return;
+          let r = n.expiresAt.getTime() - Date.now();
+          r <= 0
+            ? i.push(n)
+            : (null == P[e] && (P[e] = { [y]: {} }),
+              null == P[e][t ?? y] && (P[e][t ?? y] = {}),
+              null == P[e][t ?? y][n.skuId] &&
+                (P[e][t ?? y][n.skuId] = new o.Ep()),
+              P[e][t ?? y][n.skuId].start(Math.min(R.mnr, r), () => {
+                Y(e, t);
+              }));
+        }),
+          0 !== i.length &&
+            ((n.collectibles = n.collectibles.filter((e) => !i.includes(e))),
+            i.forEach((i) => {
+              i.type === s.R.PROFILE_EFFECT
+                ? (n.profileEffect = void 0)
+                : i.type === s.R.PROFILE_FRAME && (n.profileFrame = void 0),
+                delete P[e]?.[t ?? y]?.[i.skuId];
+            }),
+            "guildId" in n ? w.get(e)?.set(n.guildId, n) : v.set(e, n),
+            ec.emitChange());
       }
-      function K(e, t) {
-        let n = w.get(e);
-        if (null == n) return;
-        let i = n.get(t);
-        if (null == i) return;
-        let r = i.profileEffect;
-        if (r?.expiresAt == null) return;
-        let s = 1e3 * r.expiresAt - Date.now();
-        if (s <= 0) {
-          n.set(t, { ...i, profileEffect: void 0 }),
-            b.get(e)?.delete(t),
-            eh.emitChange();
-          return;
-        }
-        let a = b.get(e)?.get(t);
-        null != a && a.start(Math.min(R.mnr, s), () => K(e, t));
-      }
-      function j() {
+      function W() {
         D.clear(),
           L.clear(),
           v.clear(),
           w.clear(),
+          b.clear(),
           k.clear(),
           U.clear(),
-          M.clear(),
-          (H = !1);
+          (B = !1);
       }
-      function $(e) {
+      function K(e) {
         let { userId: t } = e;
         L.add(t);
       }
-      function z(e) {
+      function j(e) {
         let { userId: t } = e;
         L.delete(t);
       }
-      function q(e) {
+      function $(e) {
         return r()(e)
           .map((e) => ({
             key: e.id,
-            user: new c.A(e),
-            status: f.A.getStatus(e.id),
+            user: new E.A(e),
+            status: g.A.getStatus(e.id),
           }))
           .sortBy((e) => {
             let { user: t } = e;
@@ -135616,12 +136572,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           })
           .value();
       }
-      function X(e) {
+      function z(e) {
         L.delete(e.userId),
-          k.set(e.userId, q(e.mutualFriends)),
-          U.set(e.userId, e.mutualFriends.length);
+          b.set(e.userId, $(e.mutualFriends)),
+          k.set(e.userId, e.mutualFriends.length);
       }
-      function Q(e) {
+      function q(e) {
         let { userProfile: t, fetchStartedAt: n } = e,
           i = t.guild_member_profile?.guild_id ?? y;
         if (
@@ -135632,34 +136588,33 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           let e = {};
           t.mutual_guilds.forEach((t) => {
             let { id: n, nick: i } = t,
-              r = h.A.getGuild(n);
+              r = m.A.getGuild(n);
             null != r && (e[n] = { guild: r, nick: i });
           }),
-            M.set(
+            U.set(
               t.user.id,
-              g.Ay.getFlattenedGuildIds()
+              I.Ay.getFlattenedGuildIds()
                 .filter((t) => null != e[t])
                 .map((t) => ({ guild: e[t].guild, nick: e[t].nick })),
             );
         }
         if (null != t.mutual_friends_count) {
           let e = t.mutual_friends_count;
-          U.set(t.user.id, e), 0 === e && k.set(t.user.id, G);
+          k.set(t.user.id, e), 0 === e && b.set(t.user.id, M);
         }
         null != t.mutual_friends &&
-          (k.set(t.user.id, q(t.mutual_friends)),
-          U.set(t.user.id, t.mutual_friends.length));
+          (b.set(t.user.id, $(t.mutual_friends)),
+          k.set(t.user.id, t.mutual_friends.length));
         let r = null != t.premium_since ? new Date(t.premium_since) : null,
           s =
             null != t.premium_guild_since
               ? new Date(t.premium_guild_since)
               : null,
-          l = t.application,
-          { profileEffect: _, profileFrame: d } = N(t.user_profile),
-          u =
+          a = t.application,
+          o =
             null != t.badges
               ? t.badges.map((e) => {
-                  let t = (0, A.e0)(e.id);
+                  let t = (0, p.e0)(e.id);
                   if (("premium" === e.id || null != t) && null != r) {
                     let n = C.intl.formatToPlainString(C.t["8zbGNR"], {
                       date: r,
@@ -135682,12 +136637,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     : e;
                 })
               : [];
-        null != Y &&
-          Y.userId === t.user.id &&
-          (Date.now() > Y.expiresAtMs ? (Y = null) : J(u, Y));
-        let c = Date.now();
+        null != H &&
+          H.userId === t.user.id &&
+          (Date.now() > H.expiresAtMs ? (H = null) : X(o, H));
+        let _ = Date.now();
         if (
           (v.set(t.user.id, {
+            ...N(t.user_profile),
             userId: t.user.id,
             banner: t.user_profile?.banner,
             accentColor: t.user_profile?.accent_color,
@@ -135695,54 +136651,41 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             popoutAnimationParticleType:
               t.user_profile?.popout_animation_particle_type,
             bio: t.user_profile?.bio ?? "",
-            profileEffect: _,
-            profileFrame: d,
             pronouns: t.user_profile?.pronouns ?? "",
             connectedAccounts:
-              t.connected_accounts.filter((e) => o.A.isSupported(e.type)) ?? [],
+              t.connected_accounts.filter((e) => l.A.isSupported(e.type)) ?? [],
             applicationRoleConnections: t.application_role_connections ?? [],
             premiumSince: r,
             premiumType: t.premium_type,
             premiumGuildSince: s,
             fetchStartedAt: n,
-            fetchEndedAt: c,
+            fetchEndedAt: _,
             legacyUsername: t.legacy_username,
             application:
-              null != l
+              null != a
                 ? {
-                    id: l.id,
-                    primarySkuId: l.primary_sku_id,
-                    customInstallUrl: l.custom_install_url,
-                    installParams: l.install_params,
-                    integrationTypesConfig: l.integration_types_config,
-                    flags: l.flags,
+                    id: a.id,
+                    primarySkuId: a.primary_sku_id,
+                    customInstallUrl: a.custom_install_url,
+                    installParams: a.install_params,
+                    integrationTypesConfig: a.integration_types_config,
+                    flags: a.flags,
                     popularApplicationCommandIds:
-                      l.popular_application_command_ids,
-                    storefront_available: l.storefront_available,
-                    name: l.name,
+                      a.popular_application_command_ids,
+                    storefront_available: a.storefront_available,
+                    name: a.name,
                   }
                 : null,
-            badges: u,
-            widgets: t.widgets?.map(B).filter(I.Vq),
+            badges: o,
+            widgets: t.widgets?.map(F).filter(A.Vq),
             wishlistSettings: t.wishlist_settings,
-            collectibles: t.user_profile?.collectibles?.map((e) => {
-              let { sku_id: t, type: n, expires_at: i } = e;
-              return {
-                expiresAt: null != i ? new Date(i) : void 0,
-                skuId: t,
-                type: n,
-              };
-            }),
             private: t.private,
           }),
-          _?.expiresAt != null)
+          Y(t.user.id),
+          null != t.guild_member_profile)
         ) {
-          let e = new a.Ep();
-          P.set(t.user.id, e), W(t.user.id);
-        }
-        if (null != t.guild_member_profile) {
-          let { profileEffect: e, profileFrame: i } = N(t.guild_member_profile),
-            r = {
+          let e = {
+              ...N(t.guild_member_profile),
               userId: t.user.id,
               guildId: t.guild_member_profile.guild_id,
               banner: t.guild_member_profile.banner,
@@ -135750,39 +136693,28 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               themeColors: t.guild_member_profile?.theme_colors,
               popoutAnimationParticleType:
                 t.guild_member_profile?.popout_animation_particle_type,
-              profileEffect: e,
-              profileFrame: i,
               bio: t.guild_member_profile.bio,
               pronouns: t.guild_member_profile.pronouns,
               badges: t.guild_badges,
               fetchStartedAt: n,
-              fetchEndedAt: c,
+              fetchEndedAt: _,
             },
-            s = w.get(t.user.id);
-          if (null != s) s.set(t.guild_member_profile.guild_id, r);
+            i = w.get(t.user.id);
+          if (null != i) i.set(t.guild_member_profile.guild_id, e);
           else {
-            let e = new Map();
-            e.set(t.guild_member_profile.guild_id, r), w.set(t.user.id, e);
+            let n = new Map();
+            n.set(t.guild_member_profile.guild_id, e), w.set(t.user.id, n);
           }
-          if (e?.expiresAt != null) {
-            let e = new a.Ep(),
-              n = b.get(t.user.id);
-            if (null != n) n.set(t.guild_member_profile.guild_id, e);
-            else {
-              let n = new Map();
-              n.set(t.guild_member_profile.guild_id, e), b.set(t.user.id, n);
-            }
-            K(t.user.id, t.guild_member_profile.guild_id);
-          }
+          Y(t.user.id, t.guild_member_profile.guild_id);
         }
       }
-      function J(e, t) {
+      function X(e, t) {
         if (null == e) return;
         let n = new Set(e.map((e) => e.id)),
           i = t?.badges.filter((e) => !n.has(e.id));
         return i.length > 0 && e.push(...i), e;
       }
-      function Z(e) {
+      function Q(e) {
         let { userId: t, guildId: n, withMutualFriends: i } = e,
           r = n ?? y,
           s = D.get(t);
@@ -135793,7 +136725,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         }
         i && L.add(t);
       }
-      function ee(e) {
+      function J(e) {
         let { userId: t, guildId: n, apiError: i, fetchStartedAt: r } = e;
         D.get(t)?.delete(n ?? y), L.delete(t);
         let s = v.get(t) ?? {
@@ -135825,13 +136757,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           null != e &&
             ((e.fetchStartedAt = r), (e.fetchEndedAt = a), (e.fetchError = i));
         }
-        i?.status === 404 && (U.set(t, 0), k.set(t, G), M.set(t, x));
+        i?.status === 404 && (k.set(t, 0), b.set(t, M), U.set(t, G));
       }
-      function et(e) {
-        H = !0;
+      function Z(e) {
+        B = !0;
       }
-      function en(e) {
-        (H = !1),
+      function ee(e) {
+        (B = !1),
           null != e.guild_id
             ? (function (e) {
                 let {
@@ -135840,41 +136772,26 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     accent_color: i,
                     banner: r,
                     bio: s,
-                    pronouns: o,
-                    popout_animation_particle_type: l,
-                    theme_colors: _,
-                    collectibles: d,
+                    pronouns: a,
+                    popout_animation_particle_type: o,
+                    theme_colors: l,
+                    collectibles: _,
                   } = e,
-                  u = w.get(t);
-                if (null == n || null == u) return;
-                let c = u.get(n);
-                if (null == c) return;
-                let { profileEffect: E, profileFrame: h } = N({
-                  collectibles: d,
-                });
-                if (
-                  (u.set(n, {
-                    ...c,
+                  d = w.get(t);
+                if (null == n || null == d) return;
+                let u = d.get(n);
+                null == u ||
+                  (d.set(n, {
+                    ...u,
+                    ...N({ collectibles: _ }),
                     accentColor: i,
                     banner: r,
                     bio: s,
-                    pronouns: o,
-                    popoutAnimationParticleType: l,
-                    themeColors: _,
-                    profileEffect: E,
-                    profileFrame: h,
+                    pronouns: a,
+                    popoutAnimationParticleType: o,
+                    themeColors: l,
                   }),
-                  E?.expiresAt != null)
-                ) {
-                  let e = new a.Ep(),
-                    i = b.get(t);
-                  if (null != i) i.set(n, e);
-                  else {
-                    let i = new Map();
-                    i.set(n, e), b.set(t, i);
-                  }
-                  K(t, n);
-                }
+                  Y(t, n));
               })(e)
             : (function (e) {
                 let {
@@ -135883,69 +136800,60 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     banner: i,
                     bio: r,
                     pronouns: s,
-                    popout_animation_particle_type: o,
-                    theme_colors: l,
-                    collectibles: _,
+                    popout_animation_particle_type: a,
+                    theme_colors: o,
+                    collectibles: l,
                   } = e,
-                  d = v.get(t);
-                if (null == d) return;
-                let { profileEffect: u, profileFrame: c } = N({
-                  collectibles: _,
-                });
-                if (
+                  _ = v.get(t);
+                null == _ ||
                   (v.set(t, {
-                    ...d,
+                    ..._,
+                    ...N({ collectibles: l }),
                     accentColor: n,
                     banner: i,
                     bio: r,
                     pronouns: s,
-                    popoutAnimationParticleType: o,
-                    themeColors: l,
-                    profileEffect: u,
-                    profileFrame: c,
+                    popoutAnimationParticleType: a,
+                    themeColors: o,
                   }),
-                  u?.expiresAt != null)
-                ) {
-                  let e = new a.Ep();
-                  P.set(t, e), W(t);
-                }
+                  Y(t));
               })(e);
       }
-      function ei(e) {
-        H = !1;
+      function et(e) {
+        B = !1;
       }
-      function er(e) {
+      function en(e) {
         let { userId: t, widgets: n } = e,
           i = v.get(t);
         if (null == i) return !1;
-        v.set(t, { ...i, widgets: n.map(B).filter(I.Vq) });
+        v.set(t, { ...i, widgets: n.map(F).filter(A.Vq) });
       }
-      function es(e) {
+      function ei(e) {
         let { badges: t, ttlInSeconds: n, userId: i } = e;
-        Y = { userId: i, badges: t, expiresAtMs: Date.now() + 1e3 * n };
+        H = { userId: i, badges: t, expiresAtMs: Date.now() + 1e3 * n };
         let r = v.get(i);
         if (null != r) {
           let e = r.badges ?? [];
-          J(e, Y), v.set(i, { ...r, badges: e });
+          X(e, H), v.set(i, { ...r, badges: e });
         }
       }
-      function ea(e) {
+      function er(e) {
         let t = e.user.id;
-        return !((D.get(t)?.size ?? 0) > 0) && eu(t);
+        return !((D.get(t)?.size ?? 0) > 0) && e_(t);
+      }
+      function es(e) {
+        return [...v.keys()].reduce((e, t) => e_(t) || e, !1);
+      }
+      function ea(e) {
+        return e_(e.user.id);
       }
       function eo(e) {
-        return [...v.keys()].reduce((e, t) => eu(t) || e, !1);
+        return e_(e.relationship.id);
       }
-      function el(e) {
-        return eu(e.user.id);
-      }
-      function e_(e) {
-        return eu(e.relationship.id);
-      }
-      function ed() {
+      function el() {
         D.clear(), L.clear(), v.clear(), w.clear();
       }
-      function eu(e) {
+      function e_(e) {
         if (null == e) return !1;
         let t = v.get(e);
         if (null == t) return !1;
@@ -135957,45 +136865,45 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               (e.fetchEndedAt = 0),
               (e.fetchError = void 0);
       }
-      function ec(e) {
-        for (let t of ((V = e.applicationConfigs.map((e) => new d(e))),
-        F.clear(),
-        V))
-          F.set(t.applicationId, t);
+      function ed(e) {
+        for (let t of ((x = e.applicationConfigs.map((e) => new u(e))),
+        V.clear(),
+        x))
+          V.set(t.applicationId, t);
       }
-      class eE extends m.A {
+      class eu extends f.A {
         static displayName = "UserProfileStore";
         static LATEST_SNAPSHOT_VERSION = 1;
         constructor() {
           super({
             CACHE_LOADED_LAZY: () => this.loadCache(),
-            USER_PROFILE_FETCH_START: Z,
-            USER_PROFILE_FETCH_FAILURE: ee,
-            USER_PROFILE_FETCH_SUCCESS: Q,
-            USER_PROFILE_UPDATE_START: et,
-            USER_PROFILE_UPDATE_SUCCESS: en,
-            USER_PROFILE_UPDATE_FAILURE: ei,
-            WIDGET_PENDING_SAVE_SUCCESS: er,
-            USER_PROFILE_PIN_BADGES_ON_CLIENT: es,
-            MUTUAL_FRIENDS_FETCH_START: $,
-            MUTUAL_FRIENDS_FETCH_SUCCESS: X,
-            MUTUAL_FRIENDS_FETCH_FAILURE: z,
-            USER_UPDATE: ea,
-            GUILD_MEMBER_UPDATE: ea,
-            GUILD_JOIN: eo,
-            GUILD_DELETE: eo,
-            INVITE_ACCEPT_SUCCESS: eo,
-            GUILD_MEMBER_ADD: el,
-            GUILD_MEMBER_REMOVE: el,
-            RELATIONSHIP_ADD: e_,
-            RELATIONSHIP_REMOVE: e_,
-            RELATIONSHIP_UPDATE: e_,
-            USER_PROFILE_APPLICATION_WIDGET_CONFIGS_FETCH_SUCCESS: ec,
-            LOGOUT: j,
+            USER_PROFILE_FETCH_START: Q,
+            USER_PROFILE_FETCH_FAILURE: J,
+            USER_PROFILE_FETCH_SUCCESS: q,
+            USER_PROFILE_UPDATE_START: Z,
+            USER_PROFILE_UPDATE_SUCCESS: ee,
+            USER_PROFILE_UPDATE_FAILURE: et,
+            WIDGET_PENDING_SAVE_SUCCESS: en,
+            USER_PROFILE_PIN_BADGES_ON_CLIENT: ei,
+            MUTUAL_FRIENDS_FETCH_START: K,
+            MUTUAL_FRIENDS_FETCH_SUCCESS: z,
+            MUTUAL_FRIENDS_FETCH_FAILURE: j,
+            USER_UPDATE: er,
+            GUILD_MEMBER_UPDATE: er,
+            GUILD_JOIN: es,
+            GUILD_DELETE: es,
+            INVITE_ACCEPT_SUCCESS: es,
+            GUILD_MEMBER_ADD: ea,
+            GUILD_MEMBER_REMOVE: ea,
+            RELATIONSHIP_ADD: eo,
+            RELATIONSHIP_REMOVE: eo,
+            RELATIONSHIP_UPDATE: eo,
+            USER_PROFILE_APPLICATION_WIDGET_CONFIGS_FETCH_SUCCESS: ed,
+            LOGOUT: W,
           });
         }
         initialize() {
-          this.waitFor(g.Ay), this.syncWith([u.default], ed);
+          this.waitFor(I.Ay), this.syncWith([c.default], el);
         }
         isFetchingProfile(e, t) {
           let n = D.get(e);
@@ -136005,7 +136913,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return L.has(e);
         }
         get isSubmitting() {
-          return H;
+          return B;
         }
         getUserProfile(e) {
           return v.get(e);
@@ -136014,13 +136922,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return null == t ? null : (w.get(e)?.get(t) ?? null);
         }
         getMutualFriends(e) {
-          return k.get(e);
+          return b.get(e);
         }
         getMutualFriendsCount(e) {
-          return U.get(e);
+          return k.get(e);
         }
         getMutualGuilds(e) {
-          return M.get(e);
+          return U.get(e);
         }
         getWidgets(e) {
           return v.get(e)?.widgets;
@@ -136041,7 +136949,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return n?.wishlistSettings?.[t] ?? null;
         }
         loadCache = () => {
-          let e = this.readSnapshot(eE.LATEST_SNAPSHOT_VERSION);
+          let e = this.readSnapshot(eu.LATEST_SNAPSHOT_VERSION);
           null != e &&
             e.forEach((e) => {
               let { userId: t, profile: n } = e;
@@ -136049,24 +136957,24 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             });
         };
         takeSnapshot() {
-          let e = E.default.getId(),
+          let e = h.default.getId(),
             t = v.get(e);
           return null != t
             ? {
-                version: eE.LATEST_SNAPSHOT_VERSION,
+                version: eu.LATEST_SNAPSHOT_VERSION,
                 data: [{ userId: e, profile: t }],
               }
-            : { version: eE.LATEST_SNAPSHOT_VERSION, data: [] };
+            : { version: eu.LATEST_SNAPSHOT_VERSION, data: [] };
         }
         get applicationWidgetConfigs() {
-          return V;
+          return x;
         }
         getApplicationWidgetConfig(e) {
-          return F.get(e);
+          return V.get(e);
         }
       }
-      let eh = new eE(),
-        em = eh;
+      let ec = new eu(),
+        eE = ec;
     },
     958805(e, t, n) {
       "use strict";
@@ -137051,31 +137959,30 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("88394"),
               n.e("93103"),
               n.e("80527"),
-              n.e("58710"),
+              n.e("21909"),
               n.e("31825"),
               n.e("23353"),
+              n.e("96123"),
               n.e("7175"),
               n.e("37249"),
               n.e("14138"),
               n.e("8971"),
-              n.e("85071"),
               n.e("88017"),
+              n.e("77404"),
               n.e("1040"),
               n.e("64615"),
               n.e("17239"),
-              n.e("66950"),
-              n.e("58164"),
-              n.e("38229"),
+              n.e("7454"),
+              n.e("64492"),
               n.e("20861"),
               n.e("36682"),
               n.e("45723"),
               n.e("56871"),
               n.e("69601"),
-              n.e("47511"),
+              n.e("63191"),
               n.e("51444"),
               n.e("62290"),
               n.e("80973"),
-              n.e("82731"),
               n.e("20735"),
               n.e("27846"),
               n.e("8306"),
@@ -137083,7 +137990,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("27752"),
               n.e("7679"),
               n.e("77058"),
-              n.e("45340"),
+              n.e("68312"),
               n.e("76062"),
               n.e("67610"),
             ]).then(n.bind(n, 851588)),
@@ -137097,32 +138004,31 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("57036"),
               n.e("88394"),
               n.e("80527"),
-              n.e("58710"),
+              n.e("21909"),
               n.e("31825"),
               n.e("23353"),
+              n.e("96123"),
               n.e("7175"),
               n.e("37249"),
               n.e("14138"),
               n.e("8971"),
-              n.e("85071"),
               n.e("88017"),
+              n.e("77404"),
               n.e("1040"),
               n.e("64615"),
               n.e("17239"),
-              n.e("66950"),
-              n.e("58164"),
-              n.e("38229"),
+              n.e("7454"),
+              n.e("64492"),
               n.e("20861"),
               n.e("36682"),
               n.e("45723"),
               n.e("56871"),
               n.e("69601"),
-              n.e("47511"),
+              n.e("63191"),
               n.e("51444"),
               n.e("62290"),
-              n.e("48900"),
               n.e("80973"),
-              n.e("82731"),
+              n.e("48900"),
               n.e("20735"),
               n.e("27846"),
               n.e("95033"),
@@ -137143,32 +138049,31 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("88394"),
               n.e("93103"),
               n.e("80527"),
-              n.e("58710"),
+              n.e("21909"),
               n.e("31825"),
               n.e("23353"),
+              n.e("96123"),
               n.e("7175"),
               n.e("37249"),
               n.e("14138"),
               n.e("8971"),
-              n.e("85071"),
               n.e("88017"),
+              n.e("77404"),
               n.e("1040"),
               n.e("64615"),
               n.e("17239"),
-              n.e("66950"),
-              n.e("58164"),
-              n.e("38229"),
+              n.e("7454"),
+              n.e("64492"),
               n.e("20861"),
               n.e("36682"),
               n.e("45723"),
               n.e("56871"),
               n.e("69601"),
-              n.e("47511"),
+              n.e("63191"),
               n.e("51444"),
               n.e("62290"),
-              n.e("48900"),
               n.e("80973"),
-              n.e("82731"),
+              n.e("48900"),
               n.e("20735"),
               n.e("27846"),
               n.e("8306"),
@@ -137178,9 +138083,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("77058"),
               n.e("55811"),
               n.e("2059"),
-              n.e("55514"),
+              n.e("18616"),
               n.e("5536"),
-              n.e("45340"),
+              n.e("68312"),
               n.e("92879"),
             ]).then(n.bind(n, 440210)),
           webpackId: 440210,
@@ -139992,79 +140897,78 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("28367"),
                   n.e("45174"),
                   n.e("85519"),
-                  n.e("87963"),
+                  n.e("11871"),
                   n.e("37266"),
                   n.e("55057"),
-                  n.e("76021"),
+                  n.e("14976"),
                   n.e("63229"),
                   n.e("31988"),
                   n.e("55343"),
                   n.e("93103"),
                   n.e("80527"),
-                  n.e("88342"),
-                  n.e("58710"),
-                  n.e("8555"),
+                  n.e("21909"),
                   n.e("31825"),
                   n.e("23353"),
+                  n.e("96123"),
                   n.e("7175"),
                   n.e("37249"),
+                  n.e("88342"),
                   n.e("14138"),
                   n.e("8971"),
-                  n.e("85071"),
                   n.e("88017"),
-                  n.e("40142"),
+                  n.e("77404"),
                   n.e("1040"),
                   n.e("64615"),
                   n.e("17239"),
-                  n.e("66950"),
-                  n.e("60161"),
-                  n.e("58164"),
-                  n.e("38229"),
+                  n.e("7454"),
+                  n.e("64492"),
+                  n.e("8555"),
                   n.e("20861"),
                   n.e("36682"),
-                  n.e("98765"),
                   n.e("45723"),
+                  n.e("56871"),
+                  n.e("69601"),
+                  n.e("63191"),
+                  n.e("40142"),
+                  n.e("60161"),
+                  n.e("51444"),
+                  n.e("62290"),
+                  n.e("98765"),
                   n.e("35313"),
                   n.e("65437"),
-                  n.e("56871"),
                   n.e("34983"),
-                  n.e("69601"),
-                  n.e("47511"),
+                  n.e("80973"),
                   n.e("92414"),
                   n.e("95208"),
                   n.e("72401"),
                   n.e("47417"),
                   n.e("19558"),
-                  n.e("53142"),
-                  n.e("51444"),
-                  n.e("62290"),
+                  n.e("58946"),
                   n.e("76390"),
                   n.e("93312"),
                   n.e("95752"),
-                  n.e("67339"),
+                  n.e("87046"),
                   n.e("48900"),
                   n.e("31538"),
-                  n.e("21453"),
-                  n.e("80973"),
+                  n.e("34828"),
                   n.e("98954"),
-                  n.e("82731"),
                   n.e("20735"),
                   n.e("227"),
                   n.e("27846"),
                   n.e("8306"),
                   n.e("10567"),
                   n.e("62718"),
-                  n.e("43436"),
+                  n.e("12542"),
                   n.e("24170"),
                   n.e("84317"),
                   n.e("68883"),
-                  n.e("54865"),
+                  n.e("93858"),
                   n.e("29594"),
                   n.e("8018"),
                   n.e("7637"),
                   n.e("3025"),
                   n.e("42282"),
-                  n.e("44575"),
+                  n.e("20382"),
                   n.e("80093"),
                   n.e("44647"),
                   n.e("10730"),
@@ -140084,27 +140988,27 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("88808"),
                   n.e("62092"),
                   n.e("27752"),
-                  n.e("3441"),
+                  n.e("96963"),
                   n.e("24431"),
                   n.e("86546"),
                   n.e("7679"),
                   n.e("98970"),
                   n.e("14875"),
                   n.e("86300"),
-                  n.e("99789"),
+                  n.e("72474"),
                   n.e("44935"),
                   n.e("62175"),
                   n.e("26663"),
                   n.e("91139"),
                   n.e("47568"),
-                  n.e("91749"),
+                  n.e("8021"),
+                  n.e("45675"),
                   n.e("29491"),
                   n.e("41706"),
-                  n.e("17422"),
                   n.e("98352"),
                   n.e("26297"),
                   n.e("4986"),
-                  n.e("22646"),
+                  n.e("90779"),
                   n.e("16310"),
                   n.e("7121"),
                   n.e("49448"),
@@ -140113,21 +141017,20 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("84704"),
                   n.e("33098"),
                   n.e("37886"),
-                  n.e("95176"),
+                  n.e("82866"),
                   n.e("23324"),
                   n.e("25013"),
                   n.e("56686"),
                   n.e("20803"),
                   n.e("95782"),
                   n.e("40114"),
-                  n.e("90895"),
                   n.e("83518"),
                   n.e("67646"),
                   n.e("51050"),
                   n.e("76477"),
                   n.e("23536"),
                   n.e("39967"),
-                  n.e("66636"),
+                  n.e("13504"),
                   n.e("78467"),
                   n.e("38249"),
                   n.e("40976"),
@@ -140137,12 +141040,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("9842"),
                   n.e("18294"),
                   n.e("24639"),
-                  n.e("19347"),
-                  n.e("40962"),
+                  n.e("20172"),
                   n.e("81250"),
-                  n.e("44846"),
-                  n.e("73985"),
-                  n.e("38402"),
+                  n.e("52813"),
+                  n.e("30803"),
+                  n.e("1314"),
                 ]).then(n.bind(n, 807807));
                 return (n) => (0, i.jsx)(t, { ...n, target: e });
               },
@@ -168142,7 +169044,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "0cd0e27a83c5545ddfede82ea94895a8112c7164",
+                    "3e41e2d4625b6cdc30f9ec4149de8adc286499d6",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -173621,7 +174523,7 @@ ${o.join(" +\n")}
       let c = {
         show(e) {
           (0, u.openModalLazy)(async () => {
-            let { default: t } = await n.e("40850").then(n.bind(n, 534340));
+            let { default: t } = await n.e("18469").then(n.bind(n, 534340));
             return (n) => (0, d.jsx)(t, { ...n, url: e });
           });
         },
@@ -173965,7 +174867,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "535363",
+                  build_number: "535999",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -174484,7 +175386,7 @@ ${o.join(" +\n")}
     },
     252424(e, t, n) {
       "use strict";
-      n.d(t, { $h: () => r, cG: () => a, l9: () => o, tg: () => s });
+      n.d(t, { $h: () => r, cG: () => s, l9: () => a });
       var i = n(985018);
       function r(e) {
         if (e < 1e6)
@@ -174492,27 +175394,14 @@ ${o.join(" +\n")}
         let t = (e / 1e6).toFixed(1);
         return i.intl.formatToPlainString(i.t.Iku48I, { value: t });
       }
-      function s(e, t) {
-        if (e < 1e3)
-          return i.intl.formatToPlainString(i.t.OiHat3, {
-            value: Math.floor(e),
-          });
-        if (e < 1e6)
-          return i.intl.formatToPlainString(i.t["84R4Tc"], {
-            value: Math.floor(e / 1e3),
-          });
-        let n = Math.floor((10 * e) / 1e6) / 10,
-          r = new Intl.NumberFormat(t, { maximumFractionDigits: 1 }).format(n);
-        return i.intl.formatToPlainString(i.t.Iku48I, { value: r });
-      }
-      function a(e) {
+      function s(e) {
         let t =
           arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : NaN;
         if (null == e) return t;
         let n = parseInt(e);
         return Number.isNaN(n) ? t : n;
       }
-      function o(e, t) {
+      function a(e, t) {
         let n =
           arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
         return Intl.NumberFormat(e, {
@@ -178446,6 +179335,189 @@ ${o.join(" +\n")}
         playNotificationSound: M,
       };
     },
+    518960(e, t, n) {
+      "use strict";
+      n.d(t, { R: () => O, V: () => N });
+      var i = n(367513),
+        r = n(720149),
+        s = n(608299),
+        a = n(23658),
+        o = n(743445),
+        l = n(565150),
+        _ = n(58149),
+        d = n(313961),
+        u = n(550642),
+        c = n(301169),
+        E = n(522602),
+        h = n(287809),
+        m = n(954571),
+        f = n(453771),
+        g = n(927578),
+        I = n(382287),
+        A = n(652215),
+        p = n(381941),
+        T = n(788868),
+        S = n(985018);
+      function N(e, t, n) {
+        let i = h.default.getCurrentUser(),
+          r = e.guild_id,
+          s = f.o2(r),
+          o = (0, u.R8)({ location: "web.showUploadFileSizeExceededError" }),
+          l = (0, u.Jy)(o, s),
+          d = Array.from(t).map((e) => e.size),
+          c = Array.from(t).map((e) => (null != e.type ? e.type : "unknown")),
+          E = d.reduce((e, t) => e + t, 0),
+          m = d.length > 0 ? Math.max(...d) : 0,
+          N = d.length;
+        if (m > l) {
+          let t = n?.reduce((e, t) => e + t, 0);
+          (0, _.zV)(A.HAw.FILE_SIZE_LIMIT_EXCEEDED, {
+            channel_id: e.id,
+            guild_id: r,
+            user_individual_file_size_limit: s,
+            pre_compression_file_sizes: d,
+            pre_compression_aggregate_file_size: E,
+            num_attachments: N,
+            error_type: p.ty.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR,
+            attachment_mimetypes: c,
+            post_compression_file_sizes: n,
+            post_compression_aggregate_file_size: t,
+            kestrel_variant: (0, u.H6)(o),
+          }),
+            (0, a.openUploadError)({
+              title: S.intl.string(S.t["/tGlcj"]),
+              help: (0, I.WQ)(i, r),
+              showPremiumUpsell: !(0, g.YE)(i, T.PremiumTypes.TIER_2),
+              fileSize: m,
+            });
+          return;
+        }
+        (0, a.openUploadError)({
+          title: S.intl.string(S.t["/tGlcj"]),
+          help: S.intl.formatToPlainString(S.t.tUOJdH, {
+            maxSize: f.Hb(f.bB()),
+          }),
+        });
+      }
+      async function O(e, t, n) {
+        let {
+          filesMetadata: _,
+          requireConfirm: u = !0,
+          isThumbnail: h = !1,
+          origin: f,
+        } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
+        if (e.length < 1) return;
+        if (null != _ && _.length !== e.length)
+          throw Error("Unexpected mismatch between files and file metadata");
+        let g = t.getGuildId(),
+          T = Array.from(e),
+          O = T.map((e) => ({
+            originalContentType: e.type,
+            preCompressionSize: e.size,
+          }));
+        if ((await Promise.resolve(), (0, I.fJ)(T, g))) return void N(t, T);
+        if (E.A.getUploadCount(t.id, n) + T.length > A.XgB) {
+          (0, a.openUploadError)({
+            title: S.intl.string(S.t.wOr6hB),
+            help: S.intl.formatToPlainString(S.t["qqyp/e"], { limit: A.XgB }),
+          }),
+            m.default.track(A.HAw.UPLOAD_FILE_LIMIT_ERROR, {
+              existing_count: E.A.getUploadCount(t.id, n),
+              new_count: T.length,
+            });
+          return;
+        }
+        if (
+          ((t.type !== A.rbe.GUILD_VOICE &&
+            t.type !== A.rbe.GUILD_STAGE_VOICE) ||
+            d.A.getChatOpen(t.id) ||
+            i.A.updateChatOpen(t.id, !0),
+          u)
+        ) {
+          let e = T.map((e, t) => ({
+            file: e,
+            platform: l.xz.WEB,
+            isThumbnail: h,
+            origin: f,
+            compressionMetadata: O[t],
+            ..._?.[t],
+          }));
+          s.A.addFiles({ files: e, channelId: t.id, draftType: n });
+        } else {
+          let e = T.map((e, n) => {
+            let i = null != _ ? _[n] : {};
+            return new o.bK(
+              {
+                file: e,
+                platform: l.xz.WEB,
+                isThumbnail: h,
+                origin: f,
+                compressionMetadata: O[n],
+                ...i,
+              },
+              t.id,
+            );
+          });
+          r.A.sendMessage(
+            t.id,
+            {
+              content: "",
+              tts: !1,
+              invalidEmojis: [],
+              validNonShortcutEmojis: [],
+            },
+            void 0,
+            {
+              eagerDispatch: !1,
+              attachmentsToUpload: e,
+              location: p.Hx.INSTANT_UPLOAD,
+              onAttachmentUploadError: (e, n, i) => {
+                (0, c.k)({
+                  file: e,
+                  guildId: t.getGuildId(),
+                  analyticsLocations: [],
+                  code: n,
+                  reason: i,
+                });
+              },
+            },
+          );
+        }
+      }
+    },
+    382287(e, t, n) {
+      "use strict";
+      n.d(t, { LJ: () => u, WQ: () => _, fJ: () => d }), n(321073);
+      var i = n(565150),
+        r = n(550642),
+        s = n(453771),
+        a = n(927578),
+        o = n(788868),
+        l = n(985018);
+      function _(e, t) {
+        let n = s.Hb(s.o2(t));
+        return a.Ay.isPremium(e, o.PremiumTypes.TIER_2)
+          ? l.intl.formatToPlainString(l.t.fxEKdS, { maxSize: n })
+          : a.Ay.isPremium(e, o.PremiumTypes.TIER_1)
+            ? l.intl.formatToPlainString(l.t["Nr+LsZ"], { maxSize: n })
+            : l.intl.formatToPlainString(l.t.fxEKdS, { maxSize: n });
+      }
+      function d(e, t) {
+        let n = (0, r.R8)({ location: "web.filesExceedUploadLimits" });
+        if (n.enabled) {
+          let i = s.o2(t),
+            a = (0, r.Jy)(n, i);
+          return Array.from(e).some((e) => e.size > a) || s.Aw(e);
+        }
+        return s.SH(e, t) || s.Aw(e);
+      }
+      function u(e) {
+        return e.reduce(
+          (e, t) => (t.item.platform === i.xz.WEB && e.push(t.item.file), e),
+          [],
+        );
+      }
+    },
     346142(e, t, n) {
       "use strict";
       n.d(t, { M: () => l });
@@ -179973,7 +181045,7 @@ ${o.join(" +\n")}
       "use strict";
       n.d(t, { z: () => o });
       var i = n(64700),
-        r = n(419354),
+        r = n(487514),
         s = n(844222),
         a = n(384494);
       function o(e) {
@@ -179999,7 +181071,7 @@ ${o.join(" +\n")}
       "use strict";
       n.d(t, { p: () => o });
       var i = n(64700),
-        r = n(419354),
+        r = n(487514),
         s = n(844222),
         a = n(384494);
       function o(e, t) {
@@ -183458,6 +184530,41 @@ ${o.join(" +\n")}
         });
       };
     },
+    22231(e, t, n) {
+      "use strict";
+      n.d(t, { R: () => o });
+      var i = n(627968);
+      n(64700);
+      var r = n(661531),
+        s = n(996682),
+        a = n(27989);
+      let o = (e) => {
+        let {
+            size: t = "md",
+            width: n,
+            height: o,
+            color: l = r.A.colors.INTERACTIVE_ICON_DEFAULT,
+            colorClass: _ = "",
+            ...d
+          } = e,
+          u = (0, a.J)(t),
+          c = u?.width ?? n,
+          E = u?.height ?? o;
+        return (0, i.jsx)("svg", {
+          ...(0, s.A)(d),
+          xmlns: "http://www.w3.org/2000/svg",
+          width: c,
+          height: E,
+          fill: "none",
+          viewBox: "0 0 24 24",
+          children: (0, i.jsx)("path", {
+            fill: "string" == typeof l ? l : l.css,
+            d: "m13.96 5.46 4.58 4.58a1 1 0 0 0 1.42 0l1.38-1.38a2 2 0 0 0 0-2.82l-3.18-3.18a2 2 0 0 0-2.82 0l-1.38 1.38a1 1 0 0 0 0 1.42ZM2.11 20.16l.73-4.22a3 3 0 0 1 .83-1.61l7.87-7.87a1 1 0 0 1 1.42 0l4.58 4.58a1 1 0 0 1 0 1.42l-7.87 7.87a3 3 0 0 1-1.6.83l-4.23.73a1.5 1.5 0 0 1-1.73-1.73Z",
+            className: _,
+          }),
+        });
+      };
+    },
     663417(e, t, n) {
       "use strict";
       n.d(t, { f: () => o });
@@ -183706,6 +184813,48 @@ ${o.join(" +\n")}
         });
       };
     },
+    405433(e, t, n) {
+      "use strict";
+      n.d(t, { l: () => o });
+      var i = n(627968);
+      n(64700);
+      var r = n(661531),
+        s = n(996682),
+        a = n(27989);
+      let o = (e) => {
+        let {
+            size: t = "md",
+            width: n,
+            height: o,
+            color: l = r.A.colors.INTERACTIVE_ICON_DEFAULT,
+            colorClass: _ = "",
+            ...d
+          } = e,
+          u = (0, a.J)(t),
+          c = u?.width ?? n,
+          E = u?.height ?? o;
+        return (0, i.jsxs)("svg", {
+          ...(0, s.A)(d),
+          xmlns: "http://www.w3.org/2000/svg",
+          width: c,
+          height: E,
+          fill: "none",
+          viewBox: "0 0 24 24",
+          children: [
+            (0, i.jsx)("path", {
+              fill: "string" == typeof l ? l : l.css,
+              d: "M13 16V5.41l3.3 3.3a1 1 0 1 0 1.4-1.42l-5-5a1 1 0 0 0-1.4 0l-5 5a1 1 0 0 0 1.4 1.42L11 5.4V16a1 1 0 1 0 2 0Z",
+              className: _,
+            }),
+            (0, i.jsx)("path", {
+              fill: "string" == typeof l ? l : l.css,
+              d: "M4 15a1 1 0 0 1 1-1h2a1 1 0 1 0 0-2H5a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-4a3 3 0 0 0-3-3h-2a1 1 0 1 0 0 2h2a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-4Z",
+              className: _,
+            }),
+          ],
+        });
+      };
+    },
     231483(e, t, n) {
       "use strict";
       n.d(t, { l: () => o });
@@ -183820,6 +184969,43 @@ ${o.join(" +\n")}
           children: (0, i.jsx)("path", {
             fill: "string" == typeof l ? l : l.css,
             d: "M10.81 2.86c.38-1.15 2-1.15 2.38 0l1.89 5.83h6.12c1.2 0 1.71 1.54.73 2.25l-4.95 3.6 1.9 5.82a1.25 1.25 0 0 1-1.93 1.4L12 18.16l-4.95 3.6c-.98.7-2.3-.25-1.92-1.4l1.89-5.82-4.95-3.6a1.25 1.25 0 0 1 .73-2.25h6.12l1.9-5.83Z",
+            className: _,
+          }),
+        });
+      };
+    },
+    505930(e, t, n) {
+      "use strict";
+      n.d(t, { y: () => o });
+      var i = n(627968);
+      n(64700);
+      var r = n(661531),
+        s = n(996682),
+        a = n(27989);
+      let o = (e) => {
+        let {
+            size: t = "md",
+            width: n,
+            height: o,
+            color: l = r.A.colors.INTERACTIVE_ICON_DEFAULT,
+            colorClass: _ = "",
+            ...d
+          } = e,
+          u = (0, a.J)(t),
+          c = u?.width ?? n,
+          E = u?.height ?? o;
+        return (0, i.jsx)("svg", {
+          ...(0, s.A)(d),
+          xmlns: "http://www.w3.org/2000/svg",
+          width: c,
+          height: E,
+          fill: "none",
+          viewBox: "0 0 24 24",
+          children: (0, i.jsx)("path", {
+            fill: "string" == typeof l ? l : l.css,
+            fillRule: "evenodd",
+            d: "M2.07 10.94a1.25 1.25 0 0 1 .73-2.25h6.12l1.9-5.83c.37-1.15 2-1.15 2.37 0l1.89 5.83h6.12c1.2 0 1.71 1.54.73 2.25l-4.95 3.6 1.9 5.82a1.25 1.25 0 0 1-1.93 1.4L12 18.16l-4.95 3.6c-.98.7-2.3-.25-1.92-1.4l1.89-5.82-4.95-3.6Zm11.55-.25h5.26l-4.25 3.09 1.62 5-4.25-3.1-4.25 3.1 1.62-5-4.25-3.1h5.26l1.62-5 1.62 5Z",
+            clipRule: "evenodd",
             className: _,
           }),
         });
@@ -186060,7 +187246,7 @@ ${o.join(" +\n")}
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(110259),
         _ = n(113325),
         d = n(187322),
@@ -186206,6 +187392,50 @@ ${o.join(" +\n")}
           notice: null != T ? { message: T, type: "critical" } : void 0,
           ...h,
           children: E,
+        });
+      }
+    },
+    772707(e, t, n) {
+      "use strict";
+      n.d(t, { k: () => l });
+      var i = n(627968);
+      n(64700);
+      var r = n(224640),
+        s = n(696208),
+        a = n(430993),
+        o = n(20742);
+      function l(e) {
+        let {
+          size: t = "md",
+          gradientColor: n = "purple",
+          graphic: l,
+          badge: _,
+          title: d,
+          subtitle: u,
+          actionBarInput: c,
+          actions: E,
+          children: h,
+          ...m
+        } = e;
+        return (0, i.jsxs)(r.d, {
+          ...m,
+          size: t,
+          paddingSize: "lg",
+          children: [
+            (0, i.jsx)(o.V6, {
+              gradientColor: n,
+              graphic: l,
+              badge: _,
+              title: d,
+              subtitle: u,
+            }),
+            (0, i.jsx)(a.c, { children: h }),
+            (0, i.jsx)(s.H, {
+              leading: c,
+              actions: E,
+              actionsFullWidth: null == c,
+            }),
+          ],
         });
       }
     },
@@ -186813,7 +188043,7 @@ ${o.join(" +\n")}
       n(64700);
       var r = n(503698),
         s = n.n(r),
-        a = n(419354),
+        a = n(487514),
         o = n(866323),
         l = n(892491),
         _ = n(150591),
@@ -187227,6 +188457,8 @@ ${o.join(" +\n")}
                 className: h.Kk,
                 size: "md",
                 color: "currentColor",
+                "aria-hidden": !0,
+                focusable: !1,
               }),
           ],
         });
@@ -187260,6 +188492,7 @@ ${o.join(" +\n")}
           "data-toggleable-component": "radiogroup",
           role: "radio",
           "aria-checked": n,
+          "aria-label": "string" == typeof r.name ? r.name : void 0,
           onClick: t ? void 0 : o,
           tabIndex: !t && S ? 0 : -1,
           className: a()(h.AS, { [h.r9]: t, [h.EO]: !p }, c),
@@ -189230,6 +190463,7 @@ ${o.join(" +\n")}
                         "aria-activedescendant": eo,
                         "aria-errormessage": e?.errorMessageId,
                         "aria-invalid": e?.errorMessageId != null,
+                        "aria-required": W,
                         children: (0, i.jsx)(E.A, {
                           children: eT.map((e) => e.label).join(", "),
                         }),
@@ -189703,7 +190937,7 @@ ${o.join(" +\n")}
         s = n(64700),
         a = n(977418),
         o = n(967158),
-        l = n(419354),
+        l = n(487514),
         _ = n(823807),
         d = n(661531),
         u = n(717421),
@@ -189946,7 +191180,7 @@ ${o.join(" +\n")}
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(419354),
+        o = n(487514),
         l = n(661531),
         _ = n(717421),
         d = n(603392),
@@ -208102,6 +209336,8 @@ Total Time: ${o}ms
             "NOTIFICATION_NUDGE_GUILD_OPEN_PER_GUILD"),
           (i[(i.NOTIFICATION_NUDGE_POST_CALL_DISCONNECT = 749)] =
             "NOTIFICATION_NUDGE_POST_CALL_DISCONNECT"),
+          (i[(i.PROFILE_FRAME_USER_PROFILE_NEW_BADGE = 750)] =
+            "PROFILE_FRAME_USER_PROFILE_NEW_BADGE"),
           i),
         a =
           (((r = {})[(r.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0)] =
@@ -226896,6 +228132,7 @@ Total Time: ${o}ms
           (i.AVATAR_DECORATION = "AVATAR_DECORATION"),
           (i.PROFILE_EFFECT = "PROFILE_EFFECT"),
           (i.NAMEPLATE = "NAMEPLATE"),
+          (i.PROFILE_FRAME = "PROFILE_FRAME"),
           (i.BUNDLE = "BUNDLE"),
           i);
     },
@@ -231468,6 +232705,38 @@ Total Time: ${o}ms
         Qw: "titleText__67a11",
       };
     },
+    994337(e, t, n) {
+      "use strict";
+      e.exports = {
+        kL: "container_b0da80",
+        wx: "header_b0da80",
+        DD: "title_b0da80",
+        Qs: "content_b0da80",
+        qr: "footer_b0da80",
+      };
+    },
+    204351(e, t, n) {
+      "use strict";
+      e.exports = { Q: "clipThumbContainer_b492ef", f: "clipThumb_b492ef" };
+    },
+    780479(e, t, n) {
+      "use strict";
+      e.exports = { n: "clipThumbOverlay_e13340", z: "isVisible_e13340" };
+    },
+    542772(e, t, n) {
+      "use strict";
+      e.exports = { u: "clipsList_e3a195" };
+    },
+    46437(e, t, n) {
+      "use strict";
+      e.exports = {
+        Jr: "clipItemContainer_b77d08",
+        PJ: "clipOverlay_b77d08",
+        Ad: "newBadge_b77d08",
+        oK: "overlayHeader_b77d08",
+        yG: "overlayFooter_b77d08",
+      };
+    },
     64684(e, t, n) {
       "use strict";
       e.exports = { J: "canvas_eb6eba" };
@@ -232911,4 +234180,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=76127.6f504dd85ba2943f.js.map
+//# sourceMappingURL=51456.8dbb1183f9565bdc.js.map
