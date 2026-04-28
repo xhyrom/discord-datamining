@@ -1,0 +1,27 @@
+{
+  "id": 38859942749463,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/38859942749463.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/38859942749463-Profile-Privacy-Setting-on-Discord",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 24452878723607,
+  "created_at": "2026-03-06T18:32:48Z",
+  "name": "Profile Privacy Setting on Discord",
+  "title": "Profile Privacy Setting on Discord",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2026-04-16T17:07:31Z",
+  "user_segment_id": null,
+  "permission_group_id": 6449276657303,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "profile privacy"
+  ],
+  "user_segment_ids": []
+}
