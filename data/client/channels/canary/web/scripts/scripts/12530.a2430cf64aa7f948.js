@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["10868"],
+  ["12530"],
   {
     368662(e, t, n) {
       n.r(t), n.d(t, { default: () => l, messagesLoader: () => r });
@@ -1687,7 +1687,7 @@
       let O = m;
     },
     861638(e, t, n) {
-      n.d(t, { Ht: () => j, Vc: () => q, as: () => $ }), n(321073);
+      n.d(t, { Ht: () => j, Vc: () => q, as: () => K }), n(321073);
       var i = n(132500),
         r = n(71931),
         a = n(17928),
@@ -1810,7 +1810,7 @@
           : w(),
           u.A.getSocket()?.handleActiveStateChange(V());
       }
-      function H(e) {
+      function x(e) {
         return null == e
           ? null
           : e.version !== I.Ir
@@ -1820,7 +1820,7 @@
               null)
             : e;
       }
-      async function x() {
+      async function H() {
         let e = await j(!1);
         null != e &&
           u.A.getSocket()?.handleUpdateTimeSpentSessionId(
@@ -1852,10 +1852,10 @@
           n = t === T.g6G.ACTIVE;
         P !== n && ((P = n), k());
       }
-      function K() {
+      function $() {
         (U = E.A.getState()), (P = (0, g.R)()), B();
       }
-      function $() {
+      function K() {
         A.A.addBreadcrumb({
           message: "Initializing SessionHeartbeatScheduler",
         }),
@@ -1863,7 +1863,7 @@
           c.default.addChangeListener(B),
           s.h.subscribe("WINDOW_FOCUS", z),
           s.h.subscribe("APP_STATE_UPDATE", W),
-          s.h.subscribe("CONNECTION_OPEN", x),
+          s.h.subscribe("CONNECTION_OPEN", H),
           k(),
           null == L &&
             (L = {
@@ -1876,7 +1876,7 @@
               }, m),
               type: "interval",
             }),
-          a.Ay.initialized.then(K);
+          a.Ay.initialized.then($);
       }
       async function j() {
         let e =
@@ -1886,7 +1886,7 @@
         try {
           t =
             "uninitialized" === b.state
-              ? H(await l.w.getAfterRefresh(C))
+              ? x(await l.w.getAfterRefresh(C))
               : b.session;
         } catch (e) {
           A.A.captureException(e);
@@ -1925,7 +1925,7 @@
         );
       }
       function q() {
-        let e = "uninitialized" === b.state ? H(l.w.get(C)) : b.session;
+        let e = "uninitialized" === b.state ? x(l.w.get(C)) : b.session;
         return null == e || (0, I.aE)(e) ? null : e;
       }
     },
@@ -3406,53 +3406,6 @@
         return null;
       }
     },
-    372684(e, t, n) {
-      n.d(t, { Gy: () => s, k9: () => o, nQ: () => d, rb: () => u });
-      var i,
-        r,
-        a,
-        l,
-        s =
-          (((i = {}).MANUAL = "manual"),
-          (i.DISTRIBUTED = "distributed"),
-          (i.PHRASE = "phrase"),
-          (i.YELLING = "yelling"),
-          (i.LAUGHTER = "laughter"),
-          (i.GAME_EVENT = "game_event"),
-          (i.SPEAKING = "speaking"),
-          (i.SOUNDBOARD = "soundboard"),
-          i),
-        o =
-          (((r = {}).UNKNOWN = "unknown"),
-          (r.BELOW_MINIMUM = "below_minimum"),
-          (r.MEETS_MINIMUM = "meets_minimum"),
-          (r.MEETS_AUTO_ENABLE = "meets_auto_enable"),
-          r),
-        d =
-          (((a = {}).CLIP = "clip"),
-          (a.SCREENSHOT = "screenshot"),
-          (a.VOICE_CLIP = "voice_clip"),
-          a),
-        u =
-          (((l = {}).KILL = "kill"),
-          (l.MULTIKILL = "multikill"),
-          (l.DEATH = "death"),
-          (l.ASSIST = "assist"),
-          (l.ITEM = "item"),
-          (l.VICTORY = "victory"),
-          (l.DEFEAT = "defeat"),
-          (l.LEVEL_UP = "level_up"),
-          (l.TREASURE = "treasure"),
-          (l.OBJECTIVE_KILL = "objective_kill"),
-          l);
-    },
-    439818(e, t, n) {
-      n.d(t, { A: () => r });
-      let i = /[^a-zA-Z0-9-_.]/g,
-        r = function (e) {
-          return e.trim().replaceAll(" ", "_").replaceAll(i, "");
-        };
-    },
     608960(e, t, n) {
       n.d(t, { A: () => u });
       var i = n(810531),
@@ -3631,6 +3584,92 @@
           null != r && (s[i] = (0, l.Td)(r));
         },
       });
+    },
+    294454(e, t, n) {
+      n.d(t, { Be: () => o, aU: () => l, fO: () => s, vK: () => d });
+      var i = n(627968);
+      n(64700);
+      var r = n(192308),
+        a = n(530912);
+      let l = "forward-modal";
+      function s(e) {
+        let {
+          message: t,
+          source: s,
+          initialSelectedDestinations: o = [],
+          forwardOptions: d,
+          onRequestSent: u,
+          customSendHandler: c,
+        } = e;
+        (0, a.pp)(t.channel_id, t.id, s),
+          (0, r.openModalLazy)(
+            async () => {
+              let { ForwardModal: e } = await Promise.all([
+                n.e("24199"),
+                n.e("57036"),
+                n.e("88394"),
+                n.e("80527"),
+                n.e("21909"),
+                n.e("31825"),
+                n.e("23353"),
+                n.e("96123"),
+                n.e("7175"),
+                n.e("37249"),
+                n.e("14138"),
+                n.e("8971"),
+                n.e("88017"),
+                n.e("77404"),
+                n.e("1040"),
+                n.e("64615"),
+                n.e("17239"),
+                n.e("7454"),
+                n.e("64492"),
+                n.e("20861"),
+                n.e("36682"),
+                n.e("45723"),
+                n.e("56871"),
+                n.e("69601"),
+                n.e("63191"),
+                n.e("51444"),
+                n.e("62290"),
+                n.e("80973"),
+                n.e("96758"),
+                n.e("922"),
+                n.e("82550"),
+              ]).then(n.bind(n, 953832));
+              return (n) =>
+                (0, i.jsx)(e, {
+                  ...n,
+                  message: t,
+                  initialSelectedDestinations: o,
+                  forwardOptions: d,
+                  onRequestSent: u,
+                  customSendHandler: c,
+                  source: s,
+                });
+            },
+            { modalKey: l },
+          );
+      }
+      function o() {
+        (0, r.closeModal)(l);
+      }
+      function d(e) {
+        let { message: t, failedDestinations: a, forwardOptions: l } = e;
+        (0, r.openModalLazy)(async () => {
+          let { ForwardFailedAlertModal: e } = await Promise.all([
+            n.e("96123"),
+            n.e("7548"),
+          ]).then(n.bind(n, 181622));
+          return (n) =>
+            (0, i.jsx)(e, {
+              ...n,
+              message: t,
+              failedDestinations: a,
+              forwardOptions: l,
+            });
+        });
+      }
     },
     800828(e, t, n) {
       n.d(t, { A: () => S }), n(321073);
@@ -4428,35 +4467,34 @@
             n.e("57036"),
             n.e("88394"),
             n.e("80527"),
-            n.e("58710"),
+            n.e("21909"),
             n.e("31825"),
             n.e("23353"),
+            n.e("96123"),
             n.e("7175"),
             n.e("37249"),
             n.e("14138"),
             n.e("8971"),
-            n.e("85071"),
             n.e("88017"),
+            n.e("77404"),
             n.e("1040"),
             n.e("64615"),
             n.e("17239"),
-            n.e("66950"),
-            n.e("58164"),
-            n.e("38229"),
+            n.e("7454"),
+            n.e("64492"),
             n.e("20861"),
             n.e("36682"),
             n.e("45723"),
             n.e("56871"),
             n.e("69601"),
-            n.e("47511"),
+            n.e("63191"),
             n.e("51444"),
             n.e("62290"),
-            n.e("93312"),
             n.e("80973"),
-            n.e("82731"),
+            n.e("93312"),
             n.e("22021"),
-            n.e("37402"),
-            n.e("11707"),
+            n.e("26460"),
+            n.e("50934"),
           ]).then(n.bind(n, 640132));
           return (n) =>
             (0, i.jsx)(e, {
@@ -5570,8 +5608,8 @@
         ]),
         F = new Set([s.aI.MINIMIZED, s.aI.UNKNOWN]),
         k = !1,
-        H = new o.A(1e4);
-      function x(e, t, n) {
+        x = new o.A(1e4);
+      function H(e, t, n) {
         let i =
           arguments.length > 3 && void 0 !== arguments[3]
             ? arguments[3]
@@ -5598,10 +5636,10 @@
         (P = { ...P, [e]: { ...t } }),
           i !== t.state && l.A.trackOverlayStateChanged(e, i, t.state, n);
       }
-      function K(e) {
+      function $(e) {
         return e in P;
       }
-      function $(e, t, n, i) {
+      function K(e, t, n, i) {
         let r = Y(e);
         if (null == r)
           return void R.error(
@@ -5624,7 +5662,7 @@
           case I.sf.OVERLAY_RENDERING:
             i.overlayRenderingTimestamp = Date.now();
         }
-        $(e, "timer", i, "timeOverlayEvent"), ec.emitChange();
+        K(e, "timer", i, "timeOverlayEvent"), ec.emitChange();
       }
       async function q(e) {
         let t = Y(e);
@@ -5806,7 +5844,7 @@
         }
       }
       async function Q(e) {
-        if (K(e)) {
+        if ($(e)) {
           R.verbose(
             `Skipping track for pid ${e} - already tracked. Determining overlay method.`,
           ),
@@ -5819,11 +5857,11 @@
           );
         let t = await q(e);
         if (null == t) return void R.error(`Failed to track game ${e}`);
-        x(e, "game_tracking_starting", {
+        H(e, "game_tracking_starting", {
           game_name: t.gameName,
           fullscreen_type: t.fullscreenType,
         }),
-          $(
+          K(
             e,
             "state",
             I.AR.WAITING_FOR_SCREEN_TYPE_RESOLUTION,
@@ -5850,7 +5888,7 @@
           await l.A.updateTrackedGame(e, t);
       }
       async function X(e) {
-        if (!K(e))
+        if (!$(e))
           return void R.verbose(`Skipping untrack for pid ${e} - not tracked`);
         R.verbose(`Untracking game ${e}`);
         let t = Y(e),
@@ -5918,11 +5956,11 @@
                 : I.AR.OVERLAY_DISABLED
               : I.AR.WAITING_FOR_MODULE_TRACKING,
           s = `${n}: ${t.reason}`;
-        $(e, "state", a, s),
-          $(e, "overlayMethod", r, s),
-          $(e, "source", t.source, s),
-          $(e, "oopEnabled", t.enabledOOP, s),
-          $(e, "legacyEnabled", t.enabledLegacy, s),
+        K(e, "state", a, s),
+          K(e, "overlayMethod", r, s),
+          K(e, "source", t.source, s),
+          K(e, "oopEnabled", t.enabledOOP, s),
+          K(e, "legacyEnabled", t.enabledLegacy, s),
           R.verbose(
             `Updating overlay method for pid ${e} "${Y(e)?.gameName}" to ${(0, m.gK)(r)}`,
           ),
@@ -6013,13 +6051,13 @@
             oldFullscreenType: l.fullscreenType,
             newFullscreenType: s,
           }),
-            $(
+            K(
               e,
               "fullscreenHistory",
               { ...l.fullscreenHistory, [Date.now()]: s },
               "updateFullscreenType",
             ),
-            $(e, "fullscreenType", s, "updateFullscreenType"),
+            K(e, "fullscreenType", s, "updateFullscreenType"),
             ec.emitChange(),
             (a = !0);
         };
@@ -6030,14 +6068,14 @@
               (E(),
               await ((t = e),
               (n = o),
-              K(t)
+              $(t)
                 ? Y(t)?.overlayMethod === n.overlayMethod
                   ? (R.verbose(
                       `OOP requested for pid ${t} but already enabled`,
                     ),
                     Promise.resolve())
                   : (R.verbose(`Enabling OOP for pid ${t}`),
-                    $(t, "hasChangedRenderMode", !0, "enableOutOfProcess"),
+                    K(t, "hasChangedRenderMode", !0, "enableOutOfProcess"),
                     et(t, n, "enableOutOfProcess"))
                 : (R.verbose(`OOP requested for untracked pid ${t}`),
                   Promise.resolve())));
@@ -6047,14 +6085,14 @@
               (E(),
               await ((i = e),
               (r = o),
-              K(i)
+              $(i)
                 ? Y(i)?.overlayMethod === I.Ue.Hook
                   ? (R.verbose(
                       `Hook requested for pid ${i} but already enabled`,
                     ),
                     Promise.resolve())
                   : (R.verbose(`Enabling hook for pid ${i}`),
-                    $(i, "hasChangedRenderMode", !0, "enableHook"),
+                    K(i, "hasChangedRenderMode", !0, "enableHook"),
                     et(i, r, "enableHook"))
                 : (R.verbose(`Hook requested for untracked pid ${i}`),
                   Promise.resolve())));
@@ -6070,7 +6108,7 @@
         t &&
           (R.info("determineFullscreenOverlayMethodSwaps has changes"),
           ec.emitChange(),
-          x(null, "fullscreen_overlay_method_swap_changes", {
+          H(null, "fullscreen_overlay_method_swap_changes", {
             tracked_game_pids: Array.from(e),
           }));
       }
@@ -6126,7 +6164,7 @@
             this.syncWith([u.A], ed);
         }
         getDevToolsFocusedPidsWithTimestamp() {
-          return H;
+          return x;
         }
         getHasLoadedExperiments() {
           return D;
@@ -6277,12 +6315,12 @@
                       newLegacyOverlayEnabledValue: n,
                       newOverlayV3EnabledValue: i,
                     } = e;
-                  if (K(t)) {
+                  if ($(t)) {
                     let e = Y(t);
                     e?.legacyEnabled !== n &&
-                      $(t, "legacyEnabled", n, "handleGameToggleOverlay"),
+                      K(t, "legacyEnabled", n, "handleGameToggleOverlay"),
                       e?.oopEnabled !== i &&
-                        $(t, "oopEnabled", i ?? !1, "handleGameToggleOverlay");
+                        K(t, "oopEnabled", i ?? !1, "handleGameToggleOverlay");
                   }
                   let r = n && v,
                     a = (i ?? !1) && B();
@@ -6292,7 +6330,7 @@
                           "handleGameToggleOverlay: game enabled changed",
                           { pid: t, legacyEnabled: r, overlayV3Enabled: a },
                         ),
-                        K(t) ? es() : Q(t))
+                        $(t) ? es() : Q(t))
                       : X(t),
                     !0
                   );
@@ -6303,7 +6341,7 @@
                 OVERLAY_UPDATE_OVERLAY_STATE: function (e) {
                   if (null != Y(e.pid))
                     return (
-                      $(e.pid, "state", e.overlayState, e.reason),
+                      K(e.pid, "state", e.overlayState, e.reason),
                       R.verbose(
                         `Updating overlay state for pid ${e.pid} to ${e.overlayState}`,
                       ),
@@ -6321,8 +6359,8 @@
                 OVERLAY_CRASHED: function (e) {
                   return (
                     R.error(`Overlay crashed for pid ${e.pid}`),
-                    !!K(e.pid) &&
-                      ($(
+                    !!$(e.pid) &&
+                      (K(
                         e.pid,
                         "state",
                         I.AR.OVERLAY_CRASHED,
@@ -6343,7 +6381,7 @@
                       e.pid ?? null,
                       e.trackMode,
                     ];
-                    H.push(t);
+                    x.push(t);
                   }
                   return (
                     !(0, A.isValidGamePID)(e.pid) || ((0, A.setPID)(e.pid), !0)
@@ -6355,14 +6393,14 @@
                     I.AR.OVERLAY_RENDERING,
                     "handleOverlaySuccessfullyShown",
                   ),
-                    K(e.pid) &&
-                      $(
+                    $(e.pid) &&
+                      K(
                         e.pid,
                         "successfullyShown",
                         !0,
                         "handleOverlaySuccessfullyShown",
                       ),
-                    x(e.pid, "overlay_successfully_shown", { pid: e.pid });
+                    H(e.pid, "overlay_successfully_shown", { pid: e.pid });
                   let t = Y(e.pid);
                   null != t && l.A.updateTrackedGame(e.pid, t);
                 },
@@ -6370,7 +6408,7 @@
                   return e.mode === I.x7.TrackFocusPIDs && (k = e.enabled), !0;
                 },
                 OVERLAY_RENDER_DEBUG_CLEAR_TRACKED_PIDS: function () {
-                  return (H = new o.A(1e4)), !0;
+                  return (x = new o.A(1e4)), !0;
                 },
               },
         ),
@@ -6986,32 +7024,31 @@
                   n.e("31988"),
                   n.e("55343"),
                   n.e("80527"),
-                  n.e("58710"),
+                  n.e("21909"),
                   n.e("31825"),
                   n.e("23353"),
+                  n.e("96123"),
                   n.e("7175"),
                   n.e("37249"),
                   n.e("14138"),
                   n.e("8971"),
-                  n.e("85071"),
                   n.e("88017"),
+                  n.e("77404"),
                   n.e("1040"),
                   n.e("64615"),
                   n.e("17239"),
-                  n.e("66950"),
-                  n.e("58164"),
-                  n.e("38229"),
+                  n.e("7454"),
+                  n.e("64492"),
                   n.e("20861"),
                   n.e("36682"),
                   n.e("45723"),
                   n.e("56871"),
                   n.e("69601"),
-                  n.e("47511"),
+                  n.e("63191"),
                   n.e("51444"),
                   n.e("62290"),
-                  n.e("48900"),
                   n.e("80973"),
-                  n.e("82731"),
+                  n.e("48900"),
                   n.e("20735"),
                   n.e("27846"),
                   n.e("8306"),
@@ -7019,7 +7056,7 @@
                   n.e("12542"),
                   n.e("84317"),
                   n.e("93858"),
-                  n.e("14325"),
+                  n.e("38852"),
                 ]).then(n.bind(n, 99161));
               e();
             } catch (e) {
@@ -8667,7 +8704,7 @@
           }),
           G(e, s),
           (S[e] = s),
-          (v[e] = K(S[e]));
+          (v[e] = $(S[e]));
         let o = r().filter(s.channel_overrides, (e) =>
           a.Lt(e.flags ?? 0, I.vv.OPT_IN_ENABLED),
         );
@@ -8709,25 +8746,25 @@
         w(e, { channel_overrides: n?.channel_overrides ?? {}, ...t });
       }
       function F(e, t, n) {
-        let i = x(e, t, n);
-        H(e, { [t]: i });
+        let i = H(e, t, n);
+        x(e, { [t]: i });
       }
       function k(e, t) {
         let n = {},
           i = (null != e ? P[e] : null) ?? {};
         h.default.keys(t).forEach((r) => {
-          let a = x(e, r, t[r]);
+          let a = H(e, r, t[r]);
           (n[r] = a), (i[r] = { flags: a.flags ?? 0 });
         }),
           null != e && (P[e] = { ...P[e], ...i }),
-          H(e, n);
+          x(e, n);
       }
-      function H(e, t) {
+      function x(e, t) {
         let n = S[e],
           i = n?.channel_overrides ?? {};
         w(e, { channel_overrides: null == n ? t : { ...i, ...t } });
       }
-      function x(e, t, n) {
+      function H(e, t, n) {
         let i = S[e];
         return {
           channel_id: t,
@@ -8755,7 +8792,7 @@
           (O = a.Lt(e.flags, f.i.MENTION_ON_ALL_MESSAGES)),
           (C = e);
       }
-      function K(e) {
+      function $(e) {
         return new Set(
           null != e.channel_overrides
             ? r()(e.channel_overrides)
@@ -8765,7 +8802,7 @@
             : null,
         );
       }
-      function $() {
+      function K() {
         return !0;
       }
       class j extends l.Ay.PersistedStore {
@@ -8782,7 +8819,7 @@
                   (e) => new Set(e),
                 )),
                 r().forEach(S, (e, t) => {
-                  v[t] = K(e);
+                  v[t] = $(e);
                 })));
         }
         getState() {
@@ -9101,8 +9138,8 @@
               D[e] = new Set(r[e]);
             });
         },
-        GUILD_CREATE: $,
-        GUILD_UPDATE: $,
+        GUILD_CREATE: K,
+        GUILD_UPDATE: K,
         GUILD_TOGGLE_COLLAPSE_MUTED: function (e) {
           let { guildId: t } = e,
             n = null == S[t] ? B(t) : S[t];
@@ -9112,8 +9149,8 @@
             hide_muted_channels: !0 !== n.hide_muted_channels,
           };
         },
-        IMPERSONATE_UPDATE: $,
-        IMPERSONATE_STOP: $,
+        IMPERSONATE_UPDATE: K,
+        IMPERSONATE_STOP: K,
         USER_GUILD_SETTINGS_REMOVE_PENDING_CHANNEL_UPDATES: function (e) {
           let { guildId: t, updates: n } = e;
           if (null == t) return !1;
@@ -9789,11 +9826,11 @@
           !M &&
           (B(e), (M = !0));
       }
-      function H() {
+      function x() {
         let e = L();
-        M && (x(e.id), (M = !1));
+        M && (H(e.id), (M = !1));
       }
-      function x(e) {
+      function H(e) {
         if (_.isPlatformEmbedded) p.Ay.inputEventUnregister(parseInt(e, 10));
         else {
           let t = v[e];
@@ -9823,7 +9860,7 @@
             { keybind: e },
           );
         let l = P[n].keyEvents;
-        e.action === I.hCu.TOGGLE_OVERLAY_INPUT_LOCK && H(),
+        e.action === I.hCu.TOGGLE_OVERLAY_INPUT_LOCK && x(),
           (function (e, t, n, i) {
             if (_.isPlatformEmbedded)
               try {
@@ -9839,7 +9876,7 @@
                 );
               }
             else {
-              x(e.toString());
+              H(e.toString());
               let r = (0, c.I)(document);
               i.keyup && r.bindGlobal((0, f.dI)(t), () => n(!1), "keyup"),
                 i.keydown && r.bindGlobal((0, f.dI)(t), () => n(!0), "keydown"),
@@ -9907,7 +9944,7 @@
         return (D = { ...D, [t.id]: t }), (b += 1), t;
       }
       function z(e) {
-        x(e.id),
+        H(e.id),
           (D = { ...D }),
           delete D[e.id],
           e.action === I.hCu.TOGGLE_OVERLAY_INPUT_LOCK && k();
@@ -9937,7 +9974,7 @@
                 })),
           B(t);
       }
-      function K(e, t) {
+      function $(e, t) {
         let n =
           !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
         return (
@@ -9955,7 +9992,7 @@
           !0)
         );
       }
-      let $ = [
+      let K = [
         function () {
           let e = h.Ay.getShortcuts();
           return (
@@ -10005,13 +10042,13 @@
         function () {
           return (
             !!g.default.getAnyGlobalEnabledOverlay() &&
-            K(I.hCu.TOGGLE_OVERLAY_INPUT_LOCK, C())
+            $(I.hCu.TOGGLE_OVERLAY_INPUT_LOCK, C())
           );
         },
         function () {
           return (
             !!g.default.getAnyGlobalEnabledOverlay() &&
-            K(I.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
+            $(I.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
           );
         },
         function () {
@@ -10024,17 +10061,17 @@
                 n.action === e && !0 === n.managed && (z(n), (t = !0));
               }),
               t);
-          return K(I.hCu.SOUNDBOARD_HOLD, "ctrl+`", !1) || n;
+          return $(I.hCu.SOUNDBOARD_HOLD, "ctrl+`", !1) || n;
         },
         function () {
-          return K(I.hCu.SAVE_CLIP, S.Ot);
+          return $(I.hCu.SAVE_CLIP, S.Ot);
         },
         function () {
-          return K(I.hCu.SAVE_SCREENSHOT, S.sz);
+          return $(I.hCu.SAVE_SCREENSHOT, S.sz);
         },
       ];
       function j() {
-        return k(), $.reduce((e, t) => t() || e, !1);
+        return k(), K.reduce((e, t) => t() || e, !1);
       }
       d.A.setGetKeybindList(() => {
         let e = [];
@@ -10196,7 +10233,7 @@
             (U = t),
               t
                 ? (d.A.enable(), l().forEach(D, B), k())
-                : (d.A.disable(), l().forEach(D, (e) => x(e.id)), H());
+                : (d.A.disable(), l().forEach(D, (e) => H(e.id)), x());
           },
           KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS: function (e) {
             let { keybinds: t } = e;
@@ -10219,7 +10256,7 @@
         Q = Z;
     },
     256415(e, t, n) {
-      n.r(t), n.d(t, { default: () => H });
+      n.r(t), n.d(t, { default: () => x });
       var i = n(17928),
         r = n(506774),
         a = n(228366),
@@ -10586,7 +10623,7 @@
           return F.get(e) ?? null;
         }
       }
-      let H = new k(a.h, {
+      let x = new k(a.h, {
         LOGOUT: function (e) {
           e.isSwitchingAccount || (O = {});
         },
@@ -10764,6 +10801,17 @@
               : F.delete(e.pid));
         },
       });
+    },
+    218394(e, t, n) {
+      n.d(t, { j: () => s });
+      var i = n(64700),
+        r = n(17928),
+        a = n(267102),
+        l = n(531685);
+      function s() {
+        let { windowId: e } = i.useContext(a.Ay);
+        return (0, r.bG)([l.A], () => l.A.isFocused(e), [e]);
+      }
     },
     836480(e, t, n) {
       n.d(t, { Q: () => s });
@@ -11010,4 +11058,4 @@
     },
   },
 ]);
-//# sourceMappingURL=10868.2910e6abb747603c.js.map
+//# sourceMappingURL=12530.a2430cf64aa7f948.js.map
