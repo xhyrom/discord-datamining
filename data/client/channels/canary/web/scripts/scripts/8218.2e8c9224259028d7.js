@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["16532"],
+  ["8218"],
   {
     696354(e, t, n) {
       var i = {
@@ -26331,7 +26331,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 536298, Version Hash: 181105027798ea85d9d2a39c3ddf80d5d0d56b07`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 536377, Version Hash: fe5bb4331d2f37b6d64e01a47163c4c34ea75a3f`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -40253,6 +40253,16 @@ ${s}`);
         };
       }
     },
+    107195(e, t, n) {
+      "use strict";
+      n.d(t, { Ce: () => r });
+      let i = 6 * n(927813).A.Millis.HOUR;
+      function r(e) {
+        if (null == e) return i;
+        let t = 1e3 * e;
+        return t < i && t > 0 ? t : i;
+      }
+    },
     139716(e, t, n) {
       "use strict";
       n.d(t, { A: () => E });
@@ -49046,7 +49056,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "181105027798ea85d9d2a39c3ddf80d5d0d56b07" === e.body.hash
+                  "fe5bb4331d2f37b6d64e01a47163c4c34ea75a3f" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53577,10 +53587,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("536298")),
+                ((e = parseInt("536377")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 536298",
+                    "Trying to open a changelog for an invalid build number 536377",
                   ),
                   (e = 0)),
                 e),
@@ -53630,7 +53640,7 @@ ${s}`);
             async () => {
               let { default: e } = await Promise.all([
                 n.e("40841"),
-                n.e("22810"),
+                n.e("74112"),
                 n.e("25738"),
                 n.e("22513"),
                 n.e("5036"),
@@ -54279,7 +54289,7 @@ ${s}`);
                   async () => {
                     let { default: r } = await Promise.all([
                       n.e("45235"),
-                      n.e("22810"),
+                      n.e("74112"),
                       n.e("21537"),
                       n.e("18943"),
                       n.e("65617"),
@@ -54437,6 +54447,81 @@ ${s}`);
           );
         };
     },
+    364995(e, t, n) {
+      "use strict";
+      n.d(t, { aN: () => o, t6: () => l });
+      var i = n(64700),
+        r = n(228366),
+        s = n(826469),
+        a = n(94420);
+      let o = (e) => {
+          let t = i.useCallback(
+            (t) => {
+              null != t.price &&
+                null != t.price.checkout_context &&
+                null != t.price.checkout_context.payment_sources &&
+                null != t.checkoutSessionId &&
+                e.setState({
+                  standaloneInvoiceOrderContext: t.price.checkout_context,
+                  standaloneInvoiceOrderCheckoutSessionId: t.checkoutSessionId,
+                });
+            },
+            [e],
+          );
+          i.useEffect(
+            () => (
+              r.h.subscribe("SKU_PURCHASE_PREVIEW_FETCH_SUCCESS", t),
+              () => {
+                r.h.unsubscribe("SKU_PURCHASE_PREVIEW_FETCH_SUCCESS", t);
+              }
+            ),
+            [t],
+          );
+        },
+        l = () => {
+          let e = (0, a.t4)((e) => {
+              let {
+                checkoutInvoicePreview: t,
+                standaloneInvoiceOrderContext: n,
+              } = e;
+              return null != t && null != t.checkoutContext
+                ? t.checkoutContext
+                : n;
+            }),
+            {
+              paymentSourceRecords: t,
+              allowedCurrencies: n,
+              storeCountry: r,
+            } = i.useMemo(
+              () =>
+                ((e) => {
+                  if (null == e)
+                    return {
+                      paymentSourceRecords: [],
+                      allowedCurrencies: [],
+                      storeCountry: null,
+                    };
+                  let t =
+                    null != e.store_country ? e.store_country.country : null;
+                  return {
+                    paymentSourceRecords: e.payment_sources.map(
+                      s.A.createFromCheckoutContext,
+                    ),
+                    allowedCurrencies: e.allowed_currencies ?? [],
+                    storeCountry: t,
+                  };
+                })(e),
+              [e],
+            );
+          return {
+            checkoutPaymentSources: t,
+            allowedCurrencies: n,
+            storeCountry: r,
+            hasInvoiceOrderContextLoaded: null != e,
+            invoiceOrderContext: e,
+          };
+        };
+    },
     94420(e, t, n) {
       "use strict";
       n.d(t, { Ni: () => s, t4: () => o, y$: () => l });
@@ -54473,9 +54558,8 @@ ${s}`);
               }),
             checkoutInvoiceError: null,
             renewalInvoiceError: null,
-            invoiceOrderContext: null,
-            invoiceOrderCheckoutSessionId: null,
-            invoiceOrderPreviewPaymentSourceId: null,
+            standaloneInvoiceOrderContext: null,
+            standaloneInvoiceOrderCheckoutSessionId: null,
             entitlementsGranted: [],
             setEntitlementsGranted: (t) => e({ entitlementsGranted: t }),
             hasAcceptedTerms: !1,
@@ -57439,7 +57523,7 @@ ${s}`);
                 n.e("84580"),
                 n.e("54718"),
                 n.e("25738"),
-                n.e("22810"),
+                n.e("74112"),
                 n.e("22513"),
                 n.e("32442"),
                 n.e("54333"),
@@ -61412,7 +61496,7 @@ ${s}`);
             n.e("41475"),
             n.e("79542"),
             n.e("13044"),
-            n.e("22810"),
+            n.e("74112"),
             n.e("84615"),
             n.e("13709"),
             n.e("25738"),
@@ -61457,7 +61541,7 @@ ${s}`);
             n.e("8996"),
             n.e("6619"),
             n.e("23740"),
-            n.e("79093"),
+            n.e("88826"),
             n.e("28510"),
             n.e("45503"),
             n.e("55658"),
@@ -61476,7 +61560,7 @@ ${s}`);
             n.e("52204"),
             n.e("51404"),
             n.e("98042"),
-            n.e("24414"),
+            n.e("20797"),
             n.e("38559"),
             n.e("80287"),
             n.e("50971"),
@@ -61486,8 +61570,8 @@ ${s}`);
             n.e("19415"),
             n.e("77044"),
             n.e("90673"),
-            n.e("3840"),
-            n.e("81579"),
+            n.e("4592"),
+            n.e("27518"),
             n.e("4981"),
             n.e("15453"),
             n.e("92510"),
@@ -62057,6 +62141,7 @@ ${s}`);
             n.e("40204"),
             n.e("77467"),
             n.e("39894"),
+            n.e("97354"),
             n.e("34967"),
             n.e("47057"),
             n.e("34268"),
@@ -66308,7 +66393,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "536298", versionHash: "181105027798ea85d9d2a39c3ddf80d5d0d56b07" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "536377", versionHash: "fe5bb4331d2f37b6d64e01a47163c4c34ea75a3f" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -89417,7 +89502,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("80186"),
                   n.e("31299"),
                   n.e("54333"),
-                  n.e("22810"),
+                  n.e("74112"),
                   n.e("5036"),
                   n.e("97271"),
                   n.e("22513"),
@@ -89659,7 +89744,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("80186"),
                 n.e("31299"),
                 n.e("54333"),
-                n.e("22810"),
+                n.e("74112"),
                 n.e("5036"),
                 n.e("97271"),
                 n.e("22513"),
@@ -97355,7 +97440,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("97189"),
           n.e("24059"),
           n.e("51402"),
-          n.e("22810"),
+          n.e("74112"),
           n.e("5036"),
           n.e("54333"),
           n.e("97271"),
@@ -111520,7 +111605,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("63397"),
               n.e("1440"),
               n.e("40841"),
-              n.e("22810"),
+              n.e("74112"),
               n.e("25738"),
               n.e("7276"),
               n.e("41475"),
@@ -111541,7 +111626,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("86821"),
               n.e("25568"),
               n.e("32260"),
-              n.e("24414"),
+              n.e("20797"),
               n.e("38559"),
               n.e("63635"),
               n.e("80287"),
@@ -111577,13 +111662,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("81788"),
               n.e("19415"),
               n.e("77044"),
-              n.e("79093"),
+              n.e("88826"),
               n.e("28510"),
               n.e("98042"),
               n.e("90673"),
               n.e("36613"),
-              n.e("3840"),
-              n.e("81579"),
+              n.e("4592"),
+              n.e("27518"),
               n.e("4981"),
               n.e("35392"),
               n.e("97137"),
@@ -112105,6 +112190,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("40204"),
               n.e("77467"),
               n.e("39894"),
+              n.e("97354"),
               n.e("34967"),
               n.e("47057"),
               n.e("34268"),
@@ -113219,7 +113305,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("63397"),
               n.e("84580"),
               n.e("40841"),
-              n.e("22810"),
+              n.e("74112"),
               n.e("5036"),
               n.e("54333"),
               n.e("97271"),
@@ -113239,7 +113325,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("32260"),
               n.e("7276"),
               n.e("41475"),
-              n.e("24414"),
+              n.e("20797"),
               n.e("24199"),
               n.e("57036"),
               n.e("88394"),
@@ -115259,7 +115345,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     156312(e, t, n) {
       "use strict";
-      n.d(t, { P5: () => Q, PaymentContextProvider: () => Z, Qv: () => X });
+      n.d(t, { P5: () => X, PaymentContextProvider: () => J, Qv: () => q });
       var i = n(627968),
         r = n(64700),
         s = n(342393),
@@ -115278,312 +115364,307 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         A = n(531260),
         I = n(446044),
         p = n(669874),
-        T = n(364995),
-        S = n(94420),
-        N = n(181447),
-        O = n(881489),
-        R = n(573359),
-        C = n(422936),
-        y = n(234419),
-        D = n(253932),
-        L = n(293700),
-        v = n(67480),
-        w = n(328968),
-        P = n(786300),
-        b = n(927578),
-        k = n(38405),
-        U = n(795791),
-        M = n(905773),
-        G = n(853398),
-        x = n(121005),
-        V = n(369827),
-        F = n(552574),
-        B = n(935630),
-        H = n(988023),
-        Y = n(289333),
-        W = n(252293),
-        K = n(615310),
-        j = n(87952),
-        $ = n(652215),
-        z = n(788868),
-        q = n(106451);
-      let [X, Q, J] = (0, P.A)();
-      function Z(e) {
+        T = n(94420),
+        S = n(181447),
+        N = n(881489),
+        O = n(573359),
+        R = n(422936),
+        C = n(234419),
+        y = n(253932),
+        D = n(293700),
+        L = n(67480),
+        v = n(328968),
+        w = n(786300),
+        P = n(927578),
+        b = n(38405),
+        k = n(795791),
+        U = n(905773),
+        M = n(853398),
+        G = n(121005),
+        x = n(369827),
+        V = n(552574),
+        F = n(935630),
+        B = n(988023),
+        H = n(289333),
+        Y = n(252293),
+        W = n(615310),
+        K = n(87952),
+        j = n(652215),
+        $ = n(788868),
+        z = n(106451);
+      let [q, X, Q] = (0, w.A)();
+      function J(e) {
         let { stepConfigs: t, breadcrumbs: n, ...r } = e;
-        return (0, i.jsx)(K.mz, {
+        return (0, i.jsx)(W.mz, {
           stepConfigs: t,
           breadcrumbs: n,
-          children: (0, i.jsx)(N.P, { children: (0, i.jsx)(ee, { ...r }) }),
+          children: (0, i.jsx)(S.P, { children: (0, i.jsx)(Z, { ...r }) }),
         });
       }
-      function ee(e) {
+      function Z(e) {
         let {
             loadId: t,
             discoverySessionId: n,
             activeSubscription: a,
-            unifiedCheckoutFlow: N,
-            shouldCrashOnUnhandledError: P = !0,
-            onUnhandledError: Q,
-            skuIDs: J,
-            isGift: Z = !1,
-            children: ee,
-            defaultPlanId: et,
-            purchaseType: en = $.VVm.SUBSCRIPTION,
-            applicationId: ei,
-            referralCode: er,
-            paymentGateway: es,
-            excludeSubscriptionPlansBySKU: ea = !1,
-            excludeSKUPurchasePreviews: eo = !1,
-            wasTier2PremiumBeforePurchase: el = !1,
-            referralTrialOfferId: e_,
+            unifiedCheckoutFlow: S,
+            shouldCrashOnUnhandledError: w = !0,
+            onUnhandledError: X,
+            skuIDs: Q,
+            isGift: J = !1,
+            children: Z,
+            defaultPlanId: ee,
+            purchaseType: et = j.VVm.SUBSCRIPTION,
+            applicationId: en,
+            referralCode: ei,
+            paymentGateway: er,
+            excludeSubscriptionPlansBySKU: es = !1,
+            excludeSKUPurchasePreviews: ea = !1,
+            wasTier2PremiumBeforePurchase: eo = !1,
+            referralTrialOfferId: el,
           } = e,
-          ed = (0, j.A)(),
-          eu = (0, g.Hp)(),
-          ec = (0, x.A)(),
-          eE = J[0],
-          eh = (0, _.bG)([v.A], () => v.A.get(eE), [eE]),
-          em = eh?.eligiblePaymentGateways,
+          e_ = (0, K.A)(),
+          ed = (0, g.Hp)(),
+          eu = (0, G.A)(),
+          ec = Q[0],
+          eE = (0, _.bG)([L.A], () => L.A.get(ec), [ec]),
+          eh = eE?.eligiblePaymentGateways,
           {
-            paymentSources: ef,
-            hasPaymentSources: eg,
-            paymentSourceId: eA,
-            setPaymentSourceId: eI,
-            hasFetchedPaymentSources: ep,
-          } = (0, V.A)({
-            isGift: Z,
+            paymentSources: em,
+            hasPaymentSources: ef,
+            paymentSourceId: eg,
+            setPaymentSourceId: eA,
+            hasFetchedPaymentSources: eI,
+          } = (0, x.A)({
+            isGift: J,
             activeSubscription: a,
-            eligiblePaymentGateways: em,
+            eligiblePaymentGateways: eh,
           }),
-          eT = r.useRef(eg),
-          eS = (0, S.t4)((e) => {
+          ep = r.useRef(ef),
+          eT = (0, T.t4)((e) => {
             let { checkoutInvoicePreview: t } = e;
             return t;
           }),
           {
-            hasFetchedSubscriptionPlans: eN,
-            priceOptions: eO,
-            setCurrency: eR,
-            currencyLoading: eC,
-            currencies: ey,
-            displayCurrency: eD,
-          } = (0, G.A)({
+            hasFetchedSubscriptionPlans: eS,
+            priceOptions: eN,
+            setCurrency: eO,
+            currencyLoading: eR,
+            currencies: eC,
+            displayCurrency: ey,
+          } = (0, M.A)({
             activeSubscription: a,
-            skuIDs: J,
-            paymentSourceId: eA,
-            isGift: Z,
-            excludeSubscriptionPlansBySKU: ea,
-            checkoutInvoicePreview: eS,
+            skuIDs: Q,
+            paymentSourceId: eg,
+            isGift: J,
+            excludeSubscriptionPlansBySKU: es,
+            checkoutInvoicePreview: eT,
           }),
-          eL = (0, Y.A)(),
-          ev = (0, K.bB)(),
-          [ew, eP] = (0, H.A)(ev),
-          { paymentError: eb, paymentAuthenticationState: ek } = (0, F.A)(),
+          eD = (0, H.A)(),
+          eL = (0, W.bB)(),
+          [ev, ew] = (0, B.A)(eL),
+          { paymentError: eP, paymentAuthenticationState: eb } = (0, V.A)(),
           {
-            purchaseError: eU,
-            purchaseErrorBlockRef: eM,
-            setPurchaseError: eG,
-          } = (0, B.A)(),
-          ex = (0, d.A)(() => {
+            purchaseError: ek,
+            purchaseErrorBlockRef: eU,
+            setPurchaseError: eM,
+          } = (0, F.A)(),
+          eG = (0, d.A)(() => {
             let e = t ?? (0, l.A)();
             return (
-              k.A.addBreadcrumb({ message: `Checkout session ID: ${e}` }),
+              b.A.addBreadcrumb({ message: `Checkout session ID: ${e}` }),
               { loadId: e, discoverySessionId: n, startTime: Date.now() }
             );
           }),
-          eV = (0, S.t4)((e) => e.selectedSkuId),
-          eF = (0, S.t4)((e) => e.selectedPlanId),
-          [eB, eH] = (0, _.yK)([L.A], () => [
-            L.A.purchaseTokenAuthState,
-            L.A.purchaseTokenHash,
+          ex = (0, T.t4)((e) => e.selectedSkuId),
+          eV = (0, T.t4)((e) => e.selectedPlanId),
+          [eF, eB] = (0, _.yK)([D.A], () => [
+            D.A.purchaseTokenAuthState,
+            D.A.purchaseTokenHash,
           ]),
-          [eY, eW] = r.useState(null),
-          [eK, ej] = r.useState(null),
-          [e$, ez] = r.useState(null),
-          [eq, eX] = r.useState(null),
-          [eQ, eJ] = r.useState(null),
-          [eZ, e0] = r.useState(void 0),
-          [e1, e2] = r.useState([]),
-          e3 = r.useMemo(() => null == eF || (0, b.ys)(eF), [eF]),
-          e6 = r.useRef(null != a ? a.planId : null);
+          [eH, eY] = r.useState(null),
+          [eW, eK] = r.useState(null),
+          [ej, e$] = r.useState(null),
+          [ez, eq] = r.useState(null),
+          [eX, eQ] = r.useState(null),
+          [eJ, eZ] = r.useState(void 0),
+          [e0, e1] = r.useState([]),
+          e2 = r.useMemo(() => null == eV || (0, P.ys)(eV), [eV]),
+          e3 = r.useRef(null != a ? a.planId : null);
         r.useEffect(() => {
-          null == e6.current && null != a && (e6.current = a.planId);
+          null == e3.current && null != a && (e3.current = a.planId);
         }, [a]);
-        let { endsAt: e4 } = (0, A.A)({
+        let { endsAt: e6 } = (0, A.A)({
             forceFetch: !1,
             excludeReverseTrial: !0,
           }),
-          e7 = r.useRef(e4.isSame(o()(0)) ? null : e4);
+          e4 = r.useRef(e6.isSame(o()(0)) ? null : e6);
         r.useEffect(() => {
-          null != e7.current || e4.isSame(o()(0)) || (e7.current = e4);
-        }, [e4]);
-        let e5 = r.useMemo(
-          () => ({ paymentSourceId: eA, paymentGateway: es, loadId: t }),
-          [eA, es, t],
+          null != e4.current || e6.isSame(o()(0)) || (e4.current = e6);
+        }, [e6]);
+        let e7 = r.useMemo(
+          () => ({ paymentSourceId: eg, paymentGateway: er, loadId: t }),
+          [eg, er, t],
         );
-        (0, M.A)(eE, e5);
-        let e8 = r.useMemo(
-            () => J.filter((e) => !z.oz.includes(e)),
-            [JSON.stringify(J)],
+        (0, U.A)(ec, e7);
+        let e5 = r.useMemo(
+            () => Q.filter((e) => !$.oz.includes(e)),
+            [JSON.stringify(Q)],
           ),
-          { previewErrorsById: e9 } = (0, W.A)({
-            applicationId: ei ?? z.tv,
-            skuIDs: e8,
-            currentPaymentSourceId: eA,
-            isGift: Z,
-            excludeSKUPurchasePreviews: eo,
-            loadId: ex.loadId,
-            currency: eO.loaded ? eO.currency : void 0,
+          { previewErrorsById: e8 } = (0, Y.A)({
+            applicationId: en ?? $.tv,
+            skuIDs: e5,
+            currentPaymentSourceId: eg,
+            isGift: J,
+            excludeSKUPurchasePreviews: ea,
+            loadId: eG.loadId,
+            currency: eN.loaded ? eN.currency : void 0,
           }),
-          te = null != eV ? e9[eV] : null,
-          [tt, tn] = r.useState(te),
-          { paymentSourceRecords: ti, hasCheckoutContextForSession: tr } = (0,
-          T.Fy)(),
-          { data: ts } = (0, m.YY)(ei),
-          ta = D.Q_.useSetting(),
-          to = (0, _.bG)([u.A], () => u.A.getFetchState());
+          e9 = null != ex ? e8[ex] : null,
+          [te, tt] = r.useState(e9),
+          { data: tn } = (0, m.YY)(en),
+          ti = y.Q_.useSetting(),
+          tr = (0, _.bG)([u.A], () => u.A.getFetchState());
         r.useEffect(() => {
-          null != ts &&
-            (0, f.n)(ts, $.gfo.EMBEDDED) &&
-            ta &&
-            null == to &&
+          null != tn &&
+            (0, f.n)(tn, j.gfo.EMBEDDED) &&
+            ti &&
+            null == tr &&
             (0, c.SE)();
-        }, [ts, ta, to]);
-        let tl =
-            null != ts &&
-            (0, f.n)(ts, $.gfo.EMBEDDED) &&
-            (0, f.n)(ts, $.gfo.EMBEDDED_IAP),
-          t_ = (0, _.bG)([E.Ay], () =>
+        }, [tn, ti, tr]);
+        let ts =
+            null != tn &&
+            (0, f.n)(tn, j.gfo.EMBEDDED) &&
+            (0, f.n)(tn, j.gfo.EMBEDDED_IAP),
+          ta = (0, _.bG)([E.Ay], () =>
             Array.from(E.Ay.getSelfEmbeddedActivities().values()).find((e) => {
               let { applicationId: t } = e;
-              return t === ei;
+              return t === en;
             }),
           ),
-          td = t_?.compositeInstanceId,
-          tu = (0, _.bG)([w.A], () => (null != eV ? w.A.getForSKU(eV) : null), [
-            eV,
+          to = ta?.compositeInstanceId,
+          tl = (0, _.bG)([v.A], () => (null != ex ? v.A.getForSKU(ex) : null), [
+            ex,
           ]),
-          tc = (0, O.ds)() && !Z,
-          { isDisplayingWowMomentConfirmation: tE } = (0, _.cf)([R.A], () => ({
+          t_ = (0, N.ds)() && !J,
+          { isDisplayingWowMomentConfirmation: td } = (0, _.cf)([O.A], () => ({
             isDisplayingWowMomentConfirmation:
-              R.A.isDisplayingWowMomentConfirmation,
+              O.A.isDisplayingWowMomentConfirmation,
           })),
-          th = e3 ? q.Ot : void 0,
-          { enabled: tm } = (0, I.Y)({ location: "PaymentContext" }),
-          tf = (0, U.$w)(),
-          tg = r.useMemo(
-            () => null != eF && eF === z.gD.PREMIUM_GROUP_MONTH,
-            [eF],
+          tu = e2 ? z.Ot : void 0,
+          { enabled: tc } = (0, I.Y)({ location: "PaymentContext" }),
+          tE = (0, k.$w)(),
+          th = r.useMemo(
+            () => null != eV && eV === $.gD.PREMIUM_GROUP_MONTH,
+            [eV],
           ),
-          tA = (0, y.V)(e_ ?? void 0),
-          tI =
-            !tg &&
-            !Z &&
-            null != tA &&
-            null != eV &&
-            z.TP[tA.trial_id].skus.includes(eV),
-          tp = (0, C.O)(),
-          tT = tp?.discount?.plan_ids.some((e) => z.hd[e].skuId === eV),
-          tS = !!(!tg && !Z && null != tp && null != eV && tT),
-          tN = null != eA && null != ef[eA] ? ef[eA]?.type : null,
-          tO = r.useMemo(
+          tm = (0, C.V)(el ?? void 0),
+          tf =
+            !th &&
+            !J &&
+            null != tm &&
+            null != ex &&
+            $.TP[tm.trial_id].skus.includes(ex),
+          tg = (0, R.O)(),
+          tA = tg?.discount?.plan_ids.some((e) => $.hd[e].skuId === ex),
+          tI = !!(!th && !J && null != tg && null != ex && tA),
+          tp = null != eg && null != em[eg] ? em[eg]?.type : null,
+          tT = r.useMemo(
             () => ({
-              payment_source_id: eA,
-              payment_gateway: es,
-              payment_source_type: tN,
-              checkout_flow: N,
+              payment_source_id: eg,
+              payment_gateway: er,
+              payment_source_type: tp,
+              checkout_flow: S,
             }),
-            [eA, es, tN, N],
+            [eg, er, tp, S],
           ),
-          tR = (0, h.Db)();
-        return (0, i.jsx)(X.Provider, {
+          tS = (0, h.Db)();
+        return (0, i.jsx)(q.Provider, {
           value: {
-            stripe: ed,
-            unifiedCheckoutFlow: N,
-            paymentElementsEnabled: tm,
-            contextMetadata: ex,
-            blockedPayments: eu,
+            stripe: e_,
+            unifiedCheckoutFlow: S,
+            paymentElementsEnabled: tc,
+            contextMetadata: eG,
+            blockedPayments: ed,
             activeSubscription: a,
-            hasFetchedSubscriptions: ec,
-            hasFetchedSubscriptionPlans: eN,
-            updatedSubscription: eq,
-            setUpdatedSubscription: eX,
-            subscriptionMetadataRequest: eQ,
-            setSubscriptionMetadataRequest: eJ,
-            hasFetchedPaymentSources: ep,
-            paymentSources: ef,
-            hasPaymentSources: eg,
-            paymentSourceId: eA,
-            setPaymentSourceId: eI,
-            priceOptions: eO,
-            setCurrency: eR,
-            currencyLoading: eC,
-            currencies: ey,
-            displayCurrency: eD,
-            ...eL,
-            purchaseState: ew,
-            setPurchaseState: eP,
-            paymentAuthenticationState: ek,
-            paymentError: eb,
-            purchaseError: eU,
-            setPurchaseError: eG,
-            purchasePreviewError: tt,
-            setPurchasePreviewError: tn,
-            purchaseErrorBlockRef: eM,
-            purchaseTokenAuthState: eB,
-            purchaseTokenHash: eH,
-            bodyNode: eY,
-            setBodyNode: eW,
-            footerNode: eK,
-            setFooterNode: ej,
-            modalOverlayNode: e$,
-            setModalOverlayNode: ez,
-            selectedStoreListing: tu,
-            readySlideId: eZ,
-            setReadySlideId: e0,
-            defaultPlanId: et,
-            isPremium: e3,
-            isGift: Z,
-            startingFractionalPremiumEndsAtRef: e7,
-            startedPaymentFlowWithPaymentSourcesRef: eT,
-            startingPremiumSubscriptionPlanIdRef: e6,
-            defaultFetchableSkuIds: e8,
-            checkoutPaymentSources: ti,
-            hasCheckoutContextLoaded: tr,
-            application: ts,
-            purchaseType: en,
-            isEmbeddedIAP: tl,
-            activitySessionId: td,
-            devShelfFetchState: to,
-            appliedUserDiscounts: e1,
-            setAppliedUserDiscounts: e2,
-            referralCode: er,
-            inReverseTrial: tc,
-            enablePremiumBrandRefresh: e3,
-            isDisplayingWowMomentConfirmation: tE,
-            premiumBrandRefreshBackgroundClassName: th,
-            wasTier2PremiumBeforePurchase: el,
-            customCheckoutFlow: tf,
-            isPremiumGroupPurchase: tg,
-            isEligibleForTrial: tI,
-            isEligibleForDiscount: tS,
-            userTrialOffer: tA,
-            referralTrialOfferId: e_,
-            discountOffer: tp,
+            hasFetchedSubscriptions: eu,
+            hasFetchedSubscriptionPlans: eS,
+            updatedSubscription: ez,
+            setUpdatedSubscription: eq,
+            subscriptionMetadataRequest: eX,
+            setSubscriptionMetadataRequest: eQ,
+            hasFetchedPaymentSources: eI,
+            paymentSources: em,
+            hasPaymentSources: ef,
+            paymentSourceId: eg,
+            setPaymentSourceId: eA,
+            priceOptions: eN,
+            setCurrency: eO,
+            currencyLoading: eR,
+            currencies: eC,
+            displayCurrency: ey,
+            ...eD,
+            purchaseState: ev,
+            setPurchaseState: ew,
+            paymentAuthenticationState: eb,
+            paymentError: eP,
+            purchaseError: ek,
+            setPurchaseError: eM,
+            purchasePreviewError: te,
+            setPurchasePreviewError: tt,
+            purchaseErrorBlockRef: eU,
+            purchaseTokenAuthState: eF,
+            purchaseTokenHash: eB,
+            bodyNode: eH,
+            setBodyNode: eY,
+            footerNode: eW,
+            setFooterNode: eK,
+            modalOverlayNode: ej,
+            setModalOverlayNode: e$,
+            selectedStoreListing: tl,
+            readySlideId: eJ,
+            setReadySlideId: eZ,
+            defaultPlanId: ee,
+            isPremium: e2,
+            isGift: J,
+            startingFractionalPremiumEndsAtRef: e4,
+            startedPaymentFlowWithPaymentSourcesRef: ep,
+            startingPremiumSubscriptionPlanIdRef: e3,
+            defaultFetchableSkuIds: e5,
+            application: tn,
+            purchaseType: et,
+            isEmbeddedIAP: ts,
+            activitySessionId: to,
+            devShelfFetchState: tr,
+            appliedUserDiscounts: e0,
+            setAppliedUserDiscounts: e1,
+            referralCode: ei,
+            inReverseTrial: t_,
+            enablePremiumBrandRefresh: e2,
+            isDisplayingWowMomentConfirmation: td,
+            premiumBrandRefreshBackgroundClassName: tu,
+            wasTier2PremiumBeforePurchase: eo,
+            customCheckoutFlow: tE,
+            isPremiumGroupPurchase: th,
+            isEligibleForTrial: tf,
+            isEligibleForDiscount: tI,
+            userTrialOffer: tm,
+            referralTrialOfferId: el,
+            discountOffer: tg,
           },
           children: (0, i.jsx)(s.Elements, {
-            options: $.XL8,
-            stripe: ed,
+            options: j.XL8,
+            stripe: e_,
             children: (0, i.jsx)(p.j, {
-              shouldRethrowError: P,
-              locationStack: tR,
-              onUnhandledError: Q,
-              loadId: ex.loadId,
-              selectedSkuId: eV ?? null,
-              selectedPlanId: eF ?? null,
-              isGift: Z,
-              purchaseType: en,
-              additionalAnalyticsData: tO,
-              children: ee,
+              shouldRethrowError: w,
+              locationStack: tS,
+              onUnhandledError: X,
+              loadId: eG.loadId,
+              selectedSkuId: ex ?? null,
+              selectedPlanId: eV ?? null,
+              isGift: J,
+              purchaseType: et,
+              additionalAnalyticsData: tT,
+              children: Z,
             }),
           }),
         });
@@ -115913,7 +115994,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("97189"),
               n.e("24059"),
               n.e("51402"),
-              n.e("22810"),
+              n.e("74112"),
               n.e("5036"),
               n.e("54333"),
               n.e("97271"),
@@ -121692,6 +121773,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         n(228366),
         n(181658),
         n(859387),
+        n(107195),
         n(881615),
         n(861638),
         n(265704),
@@ -121700,14 +121782,15 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     265704(e, t, n) {
       "use strict";
-      let i, r, s, a;
-      var o = n(17928),
-        l = n(228366);
-      function _() {
-        (i = !1), (r = []), (s = new Set()), (a = new Set());
+      let i, r, s, a, o;
+      n.d(t, { A: () => c });
+      var l = n(17928),
+        _ = n(228366);
+      function d() {
+        (i = !1), (r = []), (s = new Set()), (a = new Set()), (o = new Map());
       }
-      _();
-      class d extends o.Ay.Store {
+      d();
+      class u extends l.Ay.Store {
         static displayName = "BountyStore";
         get isFetchingQuestHomeBounties() {
           return i;
@@ -121724,20 +121807,24 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         areAllBountiesCompleted() {
           return r.every((e) => s.has(e.id));
         }
+        getAdDecisionByPlacementAndAdCreativeId(e, t) {
+          return o.get(e)?.get(t) ?? null;
+        }
       }
-      new d(l.h, {
+      let c = new u(_.h, {
         LOGOUT: function () {
-          _();
+          d();
         },
         BOUNTIES_FETCH_QUEST_HOME_BOUNTIES_BEGIN: function () {
           i = !0;
         },
         BOUNTIES_FETCH_QUEST_HOME_BOUNTIES_SUCCESS: function (e) {
-          let { bounties: t } = e;
-          (i = !1), (r = t), (s = new Set());
+          let { bounties: t, placement: n, adDecisionsByAdCreativeId: a } = e;
+          (i = !1), (r = t), (s = new Set()), (o = new Map(o)).set(n, a);
         },
-        BOUNTIES_FETCH_QUEST_HOME_BOUNTIES_FAILURE: function () {
-          (i = !1), (r = []), (s = new Set());
+        BOUNTIES_FETCH_QUEST_HOME_BOUNTIES_FAILURE: function (e) {
+          let { placement: t } = e;
+          (i = !1), (r = []), (s = new Set()), (o = new Map(o)).delete(t);
         },
         BOUNTIES_CLAIM_REWARD_BEGIN: function (e) {
           let { bountyId: t } = e,
@@ -122024,13 +122111,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         D,
         L,
         v;
-      n.d(t, { A: () => e_ });
+      n.d(t, { A: () => eo });
       var w = n(735438),
         P = n(412703),
         b = n(440703),
         k = n(17928),
         U = n(228366),
-        M = n(927813),
+        M = n(107195),
         G = n(178540),
         x = n(507107),
         V = n(405670),
@@ -122039,15 +122126,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         H = n(710969),
         Y = n(470307),
         W = n(654487);
-      let K = 6 * M.A.Millis.HOUR,
-        j = new Map(),
+      let K = new Map(),
+        j = null,
         $ = null,
-        z = null,
-        q = !1,
+        z = !1,
+        q = null,
         X = null,
-        Q = null,
-        J = new Map();
-      function Z() {
+        Q = new Map();
+      function J() {
         (i = !1),
           (r = !1),
           (s = new Map()),
@@ -122064,7 +122150,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           (f = new Set()),
           (g = new Set()),
           (A = new Set()),
-          (j = new Map()),
+          (K = new Map()),
           (p = new Map()),
           (T = new Map()),
           (S = new Map()),
@@ -122074,16 +122160,16 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           (R = new Map()),
           (C = new Map()),
           (y = new Map()),
-          ea(),
+          er(),
           (D = null),
           (v = new Map()),
-          (J = new Map()),
+          (Q = new Map()),
           (L = new Map()),
-          (z = null),
-          (X = null),
-          (Q = null);
+          ($ = null),
+          (q = null),
+          (X = null);
       }
-      function ee(e, t) {
+      function Z(e, t) {
         let n = (_ = new Map(_)).get(e);
         if (null != n) {
           let i = { ...n, ...t };
@@ -122105,31 +122191,26 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           }
         }
       }
-      function et(e, t) {
+      function ee(e, t) {
         let n = new Map(p);
         n.set(e, t), (p = n);
       }
-      function en(e) {
+      function et(e) {
         null != S.get(e) && (S = new Map(S)).delete(e);
       }
-      function ei(e) {
+      function en(e) {
         let t = new Set(h);
         t.delete(e), (h = t);
       }
-      function er(e) {
+      function ei(e) {
         let t = new Set(g);
         t.delete(e), (g = t);
       }
-      function es(e) {
-        if (null == e) return K;
-        let t = 1e3 * e;
-        return t < K && t > 0 ? t : K;
+      function er() {
+        null != j && (clearTimeout(j), (j = null));
       }
-      function ea() {
-        null != $ && (clearTimeout($), ($ = null));
-      }
-      Z();
-      class eo extends k.Ay.Store {
+      J();
+      class es extends k.Ay.Store {
         static displayName = "QuestStore";
         get quests() {
           return _;
@@ -122174,7 +122255,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return L;
         }
         getFetchQuestPreviewError(e) {
-          return J.get(e);
+          return Q.get(e);
         }
         isEnrolling(e) {
           return h.has(e);
@@ -122210,7 +122291,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return O.get(e) ?? null;
         }
         getOptimisticProgress(e, t) {
-          return j.get(e)?.get(t);
+          return K.get(e)?.get(t);
         }
         getExpiredQuestsMap() {
           return y;
@@ -122222,13 +122303,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return v.get(e);
         }
         isFetchingQuestHomeHero() {
-          return q;
+          return z;
         }
         getQuestHomeHero() {
-          return Q ?? X;
+          return X ?? q;
         }
         getLastFetchedQuestHomeHero() {
-          return z;
+          return $;
         }
         get isFetchingEarnedQuestToDeliver() {
           return o;
@@ -122240,9 +122321,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return C;
         }
       }
-      let el = new eo(U.h, {
+      let ea = new es(U.h, {
           LOGOUT: function () {
-            ea(), Z(), V.Ay.getState().clearState(), G.A.getState().reset();
+            er(), J(), V.Ay.getState().clearState(), G.A.getState().reset();
           },
           QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function () {
             i = !0;
@@ -122266,7 +122347,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             for (let e of v?.values())
               _.has(e.id) || (_.set(e.id, e), s.set(e.id, (0, H.Ic)(e)));
             (y = s),
-              ea(),
+              er(),
               (function e() {
                 let t, n;
                 (t = !1),
@@ -122277,12 +122358,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                         ? (n.set(i, !0), (t = !0))
                         : n.has(i) || n.set(i, !1));
                   }),
-                  t && ((y = n), el.emitChange());
+                  t && ((y = n), ea.emitChange());
                 let i = (0, H.v1)(Array.from(_.values()));
                 if (null == i) return;
                 let r = Math.max(5e3, i - Date.now() + 2e3);
                 r > 864e6 ||
-                  ($ = setTimeout(() => {
+                  (j = setTimeout(() => {
                     e();
                   }, r));
               })(),
@@ -122326,7 +122407,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 questId: t?.id ?? null,
                 adCreativeId: t?.id ?? null,
                 fetchedAt: u,
-                ttlMillis: es(o),
+                ttlMillis: (0, M.Ce)(o),
                 adDecisionData: i,
                 adContext: a,
                 metadataSealed: l,
@@ -122365,7 +122446,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               responseTtlSeconds: r,
             } = e;
             (o = !1), (l = new Map(l)).set(n, !1);
-            let s = es(r),
+            let s = (0, M.Ce)(r),
               a = C.get(n),
               d = new Map(a?.earnedDecisionByQuestId);
             for (let [e, n] of t)
@@ -122380,7 +122461,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 let t = _.get(e),
                   i = (0, Y.rO)(n);
                 null != t
-                  ? ee(e, i)
+                  ? Z(e, i)
                   : ((_ = new Map(_)).set(e, i),
                     (y = new Map(y)).set(e, (0, H.Ic)(i)));
               }
@@ -122392,22 +122473,22 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           },
           QUESTS_FETCH_PREVIEW_BEGIN: function (e) {
             let { questId: t } = e;
-            (A = new Set(A)).add(t), (J = new Map(J)).delete(t);
+            (A = new Set(A)).add(t), (Q = new Map(Q)).delete(t);
           },
           QUESTS_FETCH_PREVIEW_SUCCESS: function (e) {
             let { questId: t, quest: n } = e;
             (A = new Set(A)).delete(t),
               (v = new Map(v)).set(t, n),
               (_ = new Map(_)).set(t, n),
-              (J = new Map(J)).delete(t);
+              (Q = new Map(Q)).delete(t);
           },
           QUESTS_FETCH_PREVIEW_FAILURE: function (e) {
             let { questId: t, error: n } = e;
-            (A = new Set(A)).delete(t), (J = new Map(J)).set(t, n);
+            (A = new Set(A)).delete(t), (Q = new Map(Q)).set(t, n);
           },
           QUESTS_SEND_HEARTBEAT_SUCCESS: function (e) {
             let { questId: t, streamKey: n, userStatus: i } = e;
-            I.add(t), ee(t, { userStatus: i }), null != n && en(n);
+            I.add(t), Z(t, { userStatus: i }), null != n && et(n);
           },
           QUESTS_SEND_HEARTBEAT_FAILURE: function (e) {
             let { questId: t, streamKey: n } = e;
@@ -122426,11 +122507,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           },
           QUESTS_ENROLL_SUCCESS: function (e) {
             let { enrolledQuestUserStatus: t } = e;
-            ee(t.questId, { userStatus: t }), ei(t.questId);
+            Z(t.questId, { userStatus: t }), en(t.questId);
           },
           QUESTS_ENROLL_FAILURE: function (e) {
             let { questId: t } = e;
-            ei(t);
+            en(t);
           },
           QUESTS_FETCH_REWARD_CODE_BEGIN: function (e) {
             let { questId: t } = e,
@@ -122444,11 +122525,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               s = new Set(f);
             s.delete(i),
               (f = s),
-              et(i, r),
+              ee(i, r),
               (t = _.get(i)),
               null != (n = t?.userStatus) &&
                 null == n.claimedAt &&
-                ee(i, { userStatus: { ...n, claimedAt: r.claimedAt } });
+                Z(i, { userStatus: { ...n, claimedAt: r.claimedAt } });
           },
           QUESTS_FETCH_REWARD_CODE_FAILURE: function (e) {
             let { questId: t } = e,
@@ -122474,8 +122555,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n = t.items[0].tenantMetadata?.questRewards.reward;
                 return n?.tag !== b.l.REWARD_CODE ? null : n.rewardCode;
               })({ entitlements: n });
-              null != e && et(t, e),
-                ee(t, {
+              null != e && ee(t, e),
+                Z(t, {
                   userStatus: {
                     ...a,
                     claimedAt: n.claimedAt,
@@ -122496,39 +122577,39 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           },
           QUESTS_DISMISS_CONTENT_SUCCESS: function (e) {
             let { dismissedQuestUserStatus: t } = e;
-            ee(t.questId, { userStatus: t }), er(t.questId);
+            Z(t.questId, { userStatus: t }), ei(t.questId);
           },
           QUESTS_DISMISS_CONTENT_FAILURE: function (e) {
             let { questId: t } = e;
-            er(t);
+            ei(t);
           },
           QUESTS_USER_STATUS_UPDATE: function (e) {
             let { user_status: t } = e,
               n = (0, B.L)({ location: W.rE.QUESTS_STORE });
             n.log(`Received user status update for ${t.quest_id}`, t);
             let i = (0, Y.tp)(t);
-            ee(t.quest_id, { userStatus: i });
+            Z(t.quest_id, { userStatus: i });
             let r = _.get(t.quest_id);
             if (null != r) {
               let e = (0, H.Ic)(r);
               y.get(t.quest_id) !== e && (y = new Map(y).set(t.quest_id, e));
             }
             0 === Object.keys(i.progress).length &&
-              j.has(i.questId) &&
+              K.has(i.questId) &&
               (n.log(`Removing optimistic progress for ${i.questId}`),
-              j.delete(i.questId));
+              K.delete(i.questId));
           },
           STREAM_CLOSE: function (e) {
             let { streamKey: t } = e;
-            en(t);
+            et(t);
           },
           QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: function (e) {
             let { streamKey: t } = e;
-            en(t);
+            et(t);
           },
           QUESTS_PREVIEW_UPDATE_SUCCESS: function (e) {
             let { previewQuestUserStatus: t } = e;
-            ee(t.questId, { userStatus: t }),
+            Z(t.questId, { userStatus: t }),
               null == t.claimedAt && (p = new Map(p)).delete(t.questId),
               null == t.enrolledAt &&
                 ((O = new Map(O)).delete(t.questId),
@@ -122549,40 +122630,40 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           },
           QUESTS_UPDATE_OPTIMISTIC_PROGRESS: function (e) {
             let { questId: t, taskEventName: n, progress: i } = e,
-              r = j.get(t) ?? new Map();
-            r.set(n, i), j.set(t, r);
+              r = K.get(t) ?? new Map();
+            r.set(n, i), K.set(t, r);
           },
           QUESTS_RESET_OPTIMISTIC_PROGRESS: function (e) {
             let { questId: t } = e;
-            j.has(t) && j.delete(t), V.Ay.getState().resetQuest(t);
+            K.has(t) && K.delete(t), V.Ay.getState().resetQuest(t);
           },
           QUESTS_USER_COMPLETION_UPDATE: function (e) {
             let { quest_enrollment_blocked_until: t } = e;
             D = null != t ? new Date(t) : null;
           },
           QUESTS_FETCH_QUEST_HOME_HERO_BEGIN: function () {
-            q = !0;
+            z = !0;
           },
           QUESTS_FETCH_QUEST_HOME_HERO_SUCCESS: function (e) {
-            (q = !1), (z = Date.now()), (X = e.questHomeHero);
+            (z = !1), ($ = Date.now()), (q = e.questHomeHero);
           },
           QUESTS_FETCH_QUEST_HOME_HERO_FAILURE: function () {
-            q = !1;
+            z = !1;
           },
           QUESTS_FETCH_QUEST_HOME_HERO_DECISION_BEGIN: function (e) {
             let { placement: t } = e;
-            (q = !0), (s = new Map(s)).set(t, !0);
+            (z = !0), (s = new Map(s)).set(t, !0);
           },
           QUESTS_FETCH_QUEST_HOME_HERO_DECISION_SUCCESS: function (e) {
-            (q = !1),
-              (z = Date.now()),
+            (z = !1),
+              ($ = Date.now()),
               (s = new Map(s)).set(e.placement, !1),
-              (Q = e.questHomeHero);
+              (X = e.questHomeHero);
             let t = {
               questId: null,
               adCreativeId: e.questHomeHero?.id ?? null,
               fetchedAt: e.fetchedAt,
-              ttlMillis: es(e.responseTtlSeconds),
+              ttlMillis: (0, M.Ce)(e.responseTtlSeconds),
               adDecisionData: e.adDecisionData,
               adContext: e.adContext,
               metadataSealed: e.metadataSealed,
@@ -122593,10 +122674,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           },
           QUESTS_FETCH_QUEST_HOME_HERO_DECISION_FAILURE: function (e) {
             let { placement: t } = e;
-            (q = !1), (s = new Map(s)).set(t, !1);
+            (z = !1), (s = new Map(s)).set(t, !1);
           },
         }),
-        e_ = el;
+        eo = ea;
     },
     507107(e, t, n) {
       "use strict";
@@ -130660,7 +130741,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 async () => {
                   let { default: e } = await Promise.all([
                     n.e("45235"),
-                    n.e("22810"),
+                    n.e("74112"),
                     n.e("21537"),
                     n.e("18943"),
                     n.e("65617"),
@@ -130724,7 +130805,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 async () => {
                   let { default: e } = await Promise.all([
                     n.e("45235"),
-                    n.e("22810"),
+                    n.e("74112"),
                     n.e("21537"),
                     n.e("35588"),
                     n.e("18943"),
@@ -141410,7 +141491,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           createPromise: () =>
             Promise.all([
               n.e("13044"),
-              n.e("22810"),
+              n.e("74112"),
               n.e("84615"),
               n.e("13709"),
               n.e("41475"),
@@ -141682,7 +141763,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("63397"),
               n.e("13044"),
               n.e("40841"),
-              n.e("22810"),
+              n.e("74112"),
               n.e("84615"),
               n.e("25738"),
               n.e("84580"),
@@ -141902,7 +141983,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("63397"),
               n.e("54718"),
               n.e("13044"),
-              n.e("22810"),
+              n.e("74112"),
               n.e("84615"),
               n.e("36613"),
               n.e("13709"),
@@ -142144,6 +142225,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("89523"),
               n.e("86467"),
               n.e("40204"),
+              n.e("97354"),
               n.e("34967"),
               n.e("82486"),
               n.e("8480"),
@@ -144997,7 +145079,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("97271"),
                   n.e("52204"),
                   n.e("92652"),
-                  n.e("22810"),
+                  n.e("74112"),
                   n.e("25738"),
                   n.e("63635"),
                   n.e("51404"),
@@ -145041,7 +145123,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("33957"),
                   n.e("59204"),
                   n.e("23574"),
-                  n.e("24414"),
+                  n.e("20797"),
                   n.e("38559"),
                   n.e("80287"),
                   n.e("20524"),
@@ -145052,12 +145134,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("81788"),
                   n.e("19415"),
                   n.e("77044"),
-                  n.e("79093"),
+                  n.e("88826"),
                   n.e("28510"),
                   n.e("90673"),
                   n.e("36613"),
-                  n.e("3840"),
-                  n.e("81579"),
+                  n.e("4592"),
+                  n.e("27518"),
                   n.e("4981"),
                   n.e("35392"),
                   n.e("97137"),
@@ -145614,6 +145696,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("40204"),
                   n.e("77467"),
                   n.e("39894"),
+                  n.e("97354"),
                   n.e("34967"),
                   n.e("47057"),
                   n.e("34268"),
@@ -173955,7 +174038,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "181105027798ea85d9d2a39c3ddf80d5d0d56b07",
+                    "fe5bb4331d2f37b6d64e01a47163c4c34ea75a3f",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -179788,7 +179871,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "536298",
+                  build_number: "536377",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -237232,4 +237315,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=16532.4898aa81d81112b5.js.map
+//# sourceMappingURL=8218.2e8c9224259028d7.js.map
