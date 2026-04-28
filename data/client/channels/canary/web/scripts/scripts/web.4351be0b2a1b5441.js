@@ -117,7 +117,7 @@
           NKC: () => rw,
           NOr: () => rx,
           NcF: () => tx.Nc,
-          NzX: () => a8,
+          NzX: () => a4,
           O3O: () => aa,
           OLI: () => tx.OL,
           OQC: () => rc,
@@ -125,7 +125,7 @@
           Oi0: () => rX,
           P0V: () => ia,
           P6Q: () => rg,
-          PE$: () => a4,
+          PE$: () => a8,
           PE1: () => i3,
           Pq7: () => tx.Pq,
           Puh: () => rR,
@@ -145,7 +145,7 @@
           SO9: () => aF,
           T2E: () => ik,
           T7x: () => n1,
-          TBI: () => t8,
+          TBI: () => t4,
           TGd: () => tx.TG,
           TGz: () => al,
           TLS: () => aA,
@@ -167,7 +167,7 @@
           VVm: () => tx.VV,
           VX0: () => re,
           W6J: () => tK.W6,
-          WA1: () => n4,
+          WA1: () => n8,
           WMy: () => tK.WM,
           WTw: () => ru,
           WxW: () => r$,
@@ -202,7 +202,7 @@
           _tK: () => aE,
           a3B: () => a$,
           aUe: () => tj,
-          aVn: () => t4,
+          aVn: () => t8,
           ajI: () => np,
           b7d: () => t1,
           bFR: () => na,
@@ -239,7 +239,7 @@
           fic: () => rJ,
           frM: () => tx.fr,
           frR: () => nU,
-          ftr: () => i8,
+          ftr: () => i4,
           g0g: () => aY,
           g6G: () => tK.g6,
           gG4: () => rn,
@@ -248,7 +248,7 @@
           gT8: () => iv,
           geh: () => rD,
           gfo: () => aG,
-          gfq: () => i4,
+          gfq: () => i8,
           gh6: () => nh,
           gkb: () => av,
           gp3: () => iT,
@@ -325,7 +325,7 @@
           rzx: () => tx.rz,
           sFm: () => rL,
           sJq: () => tx.sJ,
-          s_7: () => n8,
+          s_7: () => n4,
           sbO: () => nd,
           sdF: () => n5,
           sl8: () => no,
@@ -478,8 +478,8 @@
           e3,
           e6,
           e5,
-          e4,
           e8,
+          e4,
           e7,
           e9,
           te,
@@ -785,12 +785,12 @@
             (A.ENABLED = "ENABLED"),
             (A.BLOCKED = "BLOCKED"),
             A),
-          t4 =
+          t8 =
             (((S = {}).NEVER = "NEVER"),
             (S.ALL_CHANNELS = "ALL_CHANNELS"),
             (S.SELECTED_CHANNEL = "SELECTED_CHANNEL"),
             S),
-          t8 =
+          t4 =
             (((N = {}).PUSH_TO_TALK = "PUSH_TO_TALK"),
             (N.VOICE_ACTIVITY = "VOICE_ACTIVITY"),
             N),
@@ -2452,8 +2452,8 @@
           n3 = 190,
           n6 = 32,
           n5 = 6e5,
-          n4 = 6 * tk.A.Seconds.HOUR,
-          n8 = [
+          n8 = 6 * tk.A.Seconds.HOUR,
+          n4 = [
             0,
             5,
             10,
@@ -2467,7 +2467,7 @@
             30 * tk.A.Seconds.MINUTE,
             +tk.A.Seconds.HOUR,
             2 * tk.A.Seconds.HOUR,
-            n4,
+            n8,
           ],
           n7 = 10,
           n9 = 0xa00000,
@@ -4045,12 +4045,12 @@
             (eA.SPOTIFY = "Spotify"),
             (eA.STREAM = "Stream"),
             eA),
-          i4 =
+          i8 =
             (((eS = {}).DIRECT_MESSAGE = "Direct Message"),
             (eS.SMS = "SMS"),
             (eS.EMAIL = "Email"),
             eS),
-          i8 =
+          i4 =
             (((eN = {})[(eN.DEFAULT = 0)] = "DEFAULT"),
             (eN[(eN.EXPLICIT = 1)] = "EXPLICIT"),
             (eN[(eN.SAFE = 2)] = "SAFE"),
@@ -7351,8 +7351,8 @@
               "#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"),
             e2);
         let a5 = (e) => `https://www.youtube.com/embed/${e}`,
-          a4 = (e) => `https://img.youtube.com/vi/${e}/maxresdefault.jpg`,
-          a8 = "2",
+          a8 = (e) => `https://img.youtube.com/vi/${e}/maxresdefault.jpg`,
+          a4 = "2",
           a7 = "https://discordapp.com/mweb-handoff";
         var a9 =
             (((e3 = {})[(e3.HIDDEN = 1)] = "HIDDEN"),
@@ -7404,14 +7404,14 @@
           ri = 6016,
           ra = 3384;
         var rr =
-            (((e4 = {}).USAGE_STATISTICS = "usage_statistics"),
-            (e4.PERSONALIZATION = "personalization"),
-            e4),
+            (((e8 = {}).USAGE_STATISTICS = "usage_statistics"),
+            (e8.PERSONALIZATION = "personalization"),
+            e8),
           r_ =
-            (((e8 = {})[(e8.MUTUAL_FRIENDS = 2)] = "MUTUAL_FRIENDS"),
-            (e8[(e8.MUTUAL_GUILDS = 4)] = "MUTUAL_GUILDS"),
-            (e8[(e8.NO_RELATION = 8)] = "NO_RELATION"),
-            e8);
+            (((e4 = {})[(e4.MUTUAL_FRIENDS = 2)] = "MUTUAL_FRIENDS"),
+            (e4[(e4.MUTUAL_GUILDS = 4)] = "MUTUAL_GUILDS"),
+            (e4[(e4.NO_RELATION = 8)] = "NO_RELATION"),
+            e4);
         let rs = 14,
           rl = 30;
         var ro =
@@ -10860,10 +10860,10 @@
             background_install_ms_total: 0,
           };
         }
-        function e4(e) {
+        function e8(e) {
           return "host" === e;
         }
-        class e8 {
+        class e4 {
           _installingModules = {};
           _downloadingModules = {};
           _report;
@@ -10871,7 +10871,7 @@
             this._report = e5();
           }
           handleDownloadingModule(e) {
-            if (!e4(e.name)) {
+            if (!e8(e.name)) {
               if (null != this._downloadingModules[e.name])
                 return void console.warn(
                   "Duplicate downloading-module event for module ",
@@ -10897,7 +10897,7 @@
             this._updateReportField(e, t, Math.max);
           }
           handleDownloadedModule(e) {
-            if (e4(e.name)) return;
+            if (e8(e.name)) return;
             let t = this._downloadingModules[e.name];
             if (null == t)
               return void console.warn(
@@ -10921,7 +10921,7 @@
               delete this._downloadingModules[e.name];
           }
           handleInstallingModule(e) {
-            if (!e4(e.name)) {
+            if (!e8(e.name)) {
               if (null != this._installingModules[e.name])
                 return void console.warn(
                   "Duplicate installing-module event for module ",
@@ -10936,7 +10936,7 @@
             }
           }
           handleInstalledModule(e) {
-            if (e4(e.name)) return;
+            if (e8(e.name)) return;
             let t = this._installingModules[e.name];
             if (null == t) return;
             let n = t.foreground ? "foreground" : "background",
@@ -10994,7 +10994,7 @@
           }
         }
         class e7 extends eA.A {
-          _tracker = new e8();
+          _tracker = new e4();
           _initialize() {
             y.isPlatformEmbedded &&
               (v.Ay.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()),
@@ -28265,8 +28265,8 @@
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1777344048737",
-                      build_number: "535980",
+                      built_at: "1777352703032",
+                      build_number: "535991",
                     },
                   },
                   retries: 1,
@@ -29606,7 +29606,7 @@
               ],
             ),
             e5 = a.useRef(!1),
-            e4 = a.useCallback(async () => {
+            e8 = a.useCallback(async () => {
               if (!w.default.isAuthenticated())
                 return void (0, k.Vh)(eC, "oauth2_error_not_authenticated");
               if (!eJ.current && !e5.current) {
@@ -29647,7 +29647,7 @@
                 }
               }
             }, [eC, ef, I, eX, A, S, N, L, U, b, ex, P, e6, e2]),
-            e8 = a.useMemo(
+            e4 = a.useMemo(
               () =>
                 null != e$ && ej
                   ? Object.entries(e$.integrationTypesConfig ?? {})
@@ -29681,15 +29681,15 @@
                 (null != ef
                   ? (eK(ef.integration_type ?? d.b.GUILD_INSTALL),
                     eh("AUTHORIZE_SCOPES"))
-                  : e8.length > 1
+                  : e4.length > 1
                     ? eh("SELECT_INSTALL_TYPE")
-                    : (1 === e8.length
-                        ? eK(e8[0])
+                    : (1 === e4.length
+                        ? eK(e4[0])
                         : null != eo
                           ? eK(eo)
                           : eK(d.b.GUILD_INSTALL),
                       eh("AUTHORIZE_SCOPES")));
-            }, [ef, e8, e$, ej, eo, em, ep]),
+            }, [ef, e4, e$, ej, eo, em, ep]),
             a.useEffect(() => {
               if (null == ex || null != eD || null != eg) return;
               ex === d.b.USER_INSTALL && (eB(null), eF(null));
@@ -29700,8 +29700,8 @@
                   ? eU(Error(`Invalid scope: ${e[0]}`))
                   : (0, Y.F7)(eZ)
                     ? eU(Error("Invalid permission(s) provided."))
-                    : e4();
-            }, [e2, e4, eX, eZ, ex, eD, eg]);
+                    : e8();
+            }, [e2, e8, eX, eZ, ex, eD, eg]);
           let e9 = a.useCallback((e) => {
               e && eG(!0);
             }, []),
@@ -29819,7 +29819,7 @@
                 eX.includes(c.F.BOT) &&
                   !u.aI(eZ, F.x3) &&
                   (r = "AUTHORIZE_BOT_PERMISSIONS"),
-                e8.length > 1 && (n = "SELECT_INSTALL_TYPE"),
+                e4.length > 1 && (n = "SELECT_INSTALL_TYPE"),
                 (tn = (tE && null == eY) || (to && null == ew)),
                 (tt = !0);
               break;
@@ -43022,7 +43022,7 @@
           H1: () => eo,
           HO: () => es,
           HZ: () => eQ,
-          Hu: () => e4,
+          Hu: () => e8,
           Iv: () => eq,
           JG: () => eV,
           JI: () => eb,
@@ -43030,7 +43030,7 @@
           Jr: () => G,
           KP: () => eO,
           Kg: () => ec,
-          LJ: () => e8,
+          LJ: () => e4,
           ML: () => R,
           NF: () => eZ,
           NO: () => M,
@@ -43921,13 +43921,13 @@
               ),
             { delay: T.Sb.AUTOMATED },
           ),
-          e4 = (0, d.c$)(
+          e8 = (0, d.c$)(
             "textAndImages",
             "isCrossDmSearchEnabled",
             (e) => e?.value ?? !1,
             (e) => s._t.create({ value: e }),
           ),
-          e8 = (0, d.c$)(
+          e4 = (0, d.c$)(
             "notifications",
             "enableDmReplyNudgeReminders",
             (e) => e?.value ?? !0,
@@ -52910,7 +52910,7 @@
           (_ = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == r.release_channel || "" === r.release_channel) &&
             (r.release_channel = _.split("-")[0]),
-          isNaN((s = parseInt("535980", 10))) || (r.client_build_number = s),
+          isNaN((s = parseInt("535991", 10))) || (r.client_build_number = s),
           null == (l = O?.app.getBuildNumber()) ||
             isNaN(l) ||
             (r.native_build_number = l),
@@ -55785,7 +55785,7 @@ color: purple;
               { no: 11, name: "status", kind: "message", T: () => e$ },
               { no: 12, name: "localization", kind: "message", T: () => ez },
               { no: 13, name: "appearance", kind: "message", T: () => e1 },
-              { no: 14, name: "guild_folders", kind: "message", T: () => e8 },
+              { no: 14, name: "guild_folders", kind: "message", T: () => e4 },
               { no: 15, name: "favorites", kind: "message", T: () => tt },
               {
                 no: 16,
@@ -55911,7 +55911,7 @@ color: purple;
                   );
                   break;
                 case 14:
-                  a.guildFolders = e8.internalBinaryRead(
+                  a.guildFolders = e4.internalBinaryRead(
                     e,
                     e.uint32(),
                     n,
@@ -56115,7 +56115,7 @@ color: purple;
                   )
                   .join(),
               e.guildFolders &&
-                e8
+                e4
                   .internalBinaryWrite(
                     e.guildFolders,
                     t.tag(14, m.O0.LengthDelimited).fork(),
@@ -60856,7 +60856,7 @@ color: purple;
           }
         }
         let e5 = new e6();
-        class e4 extends U.G {
+        class e8 extends U.G {
           constructor() {
             super("discord_protos.discord_users.v1.GuildFolders", [
               {
@@ -60933,7 +60933,7 @@ color: purple;
             );
           }
         }
-        let e8 = new e4();
+        let e4 = new e8();
         class e7 extends U.G {
           constructor() {
             super("discord_protos.discord_users.v1.GuildFolder", [
@@ -66365,7 +66365,7 @@ color: purple;
                                                                                                                                                                                                                                                                 "35cc0f8eecd8813f",
                                                                                                                                                                                                                                                               13081:
                                                                                                                                                                                                                                                                 "9ed907d3b6f796ea",
-                                                                                                                                                                                                                                                              1314: "64dc8faeb3543a62",
+                                                                                                                                                                                                                                                              1314: "cfaf1249e2a57ca1",
                                                                                                                                                                                                                                                               13148:
                                                                                                                                                                                                                                                                 "08454830bced9b23",
                                                                                                                                                                                                                                                               13161:
@@ -66832,7 +66832,7 @@ color: purple;
                                                                                                                                                                                                                                                               21705:
                                                                                                                                                                                                                                                                 "0c331e8b42f44cbc",
                                                                                                                                                                                                                                                               21738:
-                                                                                                                                                                                                                                                                "024e57aae14865a7",
+                                                                                                                                                                                                                                                                "1cce2605caba18ed",
                                                                                                                                                                                                                                                               21868:
                                                                                                                                                                                                                                                                 "210066f6bbe84c25",
                                                                                                                                                                                                                                                               21878:
@@ -66879,7 +66879,7 @@ color: purple;
                                                                                                                                                                                                                                                               22260:
                                                                                                                                                                                                                                                                 "27b6f4dcd5fbb2e6",
                                                                                                                                                                                                                                                               22261:
-                                                                                                                                                                                                                                                                "c933f8f7801437e5",
+                                                                                                                                                                                                                                                                "2a0e414b5e39b2aa",
                                                                                                                                                                                                                                                               22267:
                                                                                                                                                                                                                                                                 "1c464a862b6e6649",
                                                                                                                                                                                                                                                               22269:
@@ -68907,7 +68907,7 @@ color: purple;
                                                                                                                                                                                                                                                               60497:
                                                                                                                                                                                                                                                                 "5a7ee5f8a10b9714",
                                                                                                                                                                                                                                                               60649:
-                                                                                                                                                                                                                                                                "e8f4b6b80531699d",
+                                                                                                                                                                                                                                                                "6230bafbbbd22cfc",
                                                                                                                                                                                                                                                               6065: "d2f9be547cd534de",
                                                                                                                                                                                                                                                               60658:
                                                                                                                                                                                                                                                                 "7ac61a2649a3a38a",
@@ -69067,7 +69067,7 @@ color: purple;
                                                                                                                                                                                                                                                               63401:
                                                                                                                                                                                                                                                                 "21c475cbc0952ff8",
                                                                                                                                                                                                                                                               63408:
-                                                                                                                                                                                                                                                                "87da4eba5cd3f039",
+                                                                                                                                                                                                                                                                "7b7b01a1259367a9",
                                                                                                                                                                                                                                                               63452:
                                                                                                                                                                                                                                                                 "e8e48fd4bba85a22",
                                                                                                                                                                                                                                                               63480:
@@ -69740,7 +69740,7 @@ color: purple;
                                                                                                                                                                                                                                                               77371:
                                                                                                                                                                                                                                                                 "bb83069373f11347",
                                                                                                                                                                                                                                                               77375:
-                                                                                                                                                                                                                                                                "f4a07aa8e30add43",
+                                                                                                                                                                                                                                                                "a20ede2635834b7a",
                                                                                                                                                                                                                                                               7739: "7c113b244ed1c95e",
                                                                                                                                                                                                                                                               77415:
                                                                                                                                                                                                                                                                 "8a48bf1720b9637e",
@@ -71596,4 +71596,4 @@ color: purple;
   );
   L = R.O(L);
 })();
-//# sourceMappingURL=web.f79f8b1b79d5d801.js.map
+//# sourceMappingURL=web.4351be0b2a1b5441.js.map
