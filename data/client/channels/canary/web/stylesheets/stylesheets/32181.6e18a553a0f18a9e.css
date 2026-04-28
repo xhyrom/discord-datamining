@@ -3032,32 +3032,6 @@
   align-items: center;
   display: flex;
 }
-.upsellPage_d204dc {
-  align-items: center;
-  display: flex;
-  flex: 1;
-  justify-content: center;
-}
-.upsellContainer_d204dc {
-  background-color: var(--background-base-lower);
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  padding: 24px;
-}
-.upsellImage_d204dc {
-  height: 163px;
-  width: 201px;
-}
-.upsellContent_d204dc {
-  display: flex;
-  flex-direction: column;
-  width: 357px;
-}
-.bodyText_d204dc {
-  margin-bottom: auto;
-  margin-top: 8px;
-}
 :where(.section_be87fd) {
   color: var(--text-default);
   gap: 4px;
@@ -4574,6 +4548,15 @@
   margin-top: 18px;
   text-align: center;
 }
+.message__51673 {
+  max-width: 432px;
+}
+.saveNoticeContainer__51673 {
+  bottom: 20px;
+  position: fixed;
+  width: 660px;
+  z-index: 100;
+}
 .container_e6b065 {
   background: var(--background-base-lowest);
   border-radius: 50%;
@@ -5109,6 +5092,10 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.profilePreviewContainer__14af9 {
+  display: flex;
+  justify-content: center;
+}
 .nameplatePreviewPlaceholder__14af9 {
   background: var(--background-mod-normal);
 }
@@ -5227,6 +5214,10 @@
 .full-motion .spinningAvatar_abf1df {
   animation: avatarAnimation_abf1df 3s ease infinite;
 }
+.profilePreviewContainer_abf1df {
+  display: flex;
+  justify-content: center;
+}
 .tryItOutSection__9d295 {
   margin-top: 40px;
   width: -moz-fit-content;
@@ -5250,9 +5241,6 @@
 .premiumIcon__9d295 {
   height: 16px;
   margin-inline-end: -2px;
-}
-.editor__9d295 {
-  min-width: 315px;
 }
 .customizationSection__9d295 {
   margin-bottom: 16px;
@@ -5349,6 +5337,10 @@
   padding: var(--space-16);
   position: sticky;
   z-index: 100;
+}
+.profilePreviewContainer_e110d6 {
+  display: flex;
+  justify-content: center;
 }
 .nameplatePreviewPlaceholder_e110d6 {
   background: var(--background-mod-normal);
@@ -6027,4 +6019,4 @@
   width: 100%;
 }
 
-/*# sourceMappingURL=45235.218d886f204b53c6.css.map*/
+/*# sourceMappingURL=32181.6e18a553a0f18a9e.css.map*/
