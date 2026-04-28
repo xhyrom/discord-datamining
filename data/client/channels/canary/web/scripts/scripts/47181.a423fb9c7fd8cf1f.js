@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["84580"],
+  ["47181"],
   {
     890321(e, n, a) {
       e.exports = {
@@ -17,6 +17,9 @@
         wG: "loader__44cf4",
         dB: "balanceWidgetPillContainer__44cf4",
       };
+    },
+    106451(e, n, a) {
+      e.exports = { Xn: "shaker_e5f3a9" };
     },
     575650(e, n, a) {
       e.exports = {

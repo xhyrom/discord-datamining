@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["32181"],
+  ["66883"],
   {
     349887(e, _, t) {
       e.exports = {
@@ -382,6 +382,13 @@
         UE: "arrow_eb2cd2",
       };
     },
+    290125(e, _, t) {
+      e.exports = {
+        l8: "optionHeader__1f657",
+        XG: "scroller__1f657",
+        KA: "templatesList__1f657",
+      };
+    },
     873185(e, _, t) {
       e.exports = {
         kL: "container__7e6bb",
@@ -516,9 +523,6 @@
         qS: "badge_e7c728",
         I8: "tagContainer_e7c728",
       };
-    },
-    647321(e, _, t) {
-      e.exports = { I: "pill_ed9a5f" };
     },
     683807(e, _, t) {
       e.exports = {

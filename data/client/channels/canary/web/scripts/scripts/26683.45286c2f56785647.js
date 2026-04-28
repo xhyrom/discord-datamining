@@ -168,7 +168,7 @@
             if (e && f.isGuildStageVoice() && (0, _.xn)(f.id))
               return void (0, r.openModalLazy)(async () => {
                 let { default: e } = await Promise.all([
-                  n.e("25738"),
+                  n.e("81349"),
                   n.e("24199"),
                   n.e("43039"),
                   n.e("88077"),
@@ -5061,4 +5061,4 @@
     },
   },
 ]);
-//# sourceMappingURL=26683.7eaa82274098d8ff.js.map
+//# sourceMappingURL=26683.45286c2f56785647.js.map

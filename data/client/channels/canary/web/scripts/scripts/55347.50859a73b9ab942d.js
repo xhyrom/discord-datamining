@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["8218"],
+  ["55347"],
   {
     696354(e, t, n) {
       var i = {
@@ -20160,7 +20160,7 @@ ${s}`),
         a = n(64700),
         o = n(503698),
         l = n.n(o),
-        _ = n(123924),
+        _ = n(519244),
         d = n(110259),
         u = n(615300),
         c = n(789645),
@@ -20365,7 +20365,7 @@ ${s}`),
         _ = n(892491),
         d = n(462824),
         u = n(73939),
-        c = n(123924),
+        c = n(519244),
         E = n(602853),
         h = n(661531),
         m = n(866323),
@@ -21661,7 +21661,7 @@ ${s}`),
         a = n.n(s),
         o = n(735438),
         l = n.n(o),
-        _ = n(123924),
+        _ = n(519244),
         d = n(621466),
         u = n(452027),
         c = n(187322),
@@ -22135,7 +22135,7 @@ ${s}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(123924),
+        o = n(519244),
         l = n(110259),
         _ = n(66455),
         d = n(607399),
@@ -22312,7 +22312,7 @@ ${s}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(123924),
+        o = n(519244),
         l = n(661531),
         _ = n(462887),
         d = n(310784),
@@ -22878,7 +22878,7 @@ ${s}`),
       n.d(t, { U: () => h, Y: () => E });
       var i = n(627968),
         r = n(64700),
-        s = n(123924),
+        s = n(519244),
         a = n(866323),
         o = n(695366),
         l = n(661531),
@@ -23178,7 +23178,7 @@ ${s}`),
       n.d(t, { N: () => E });
       var i = n(627968),
         r = n(64700),
-        s = n(123924),
+        s = n(519244),
         a = n(866323),
         o = n(857250),
         l = n(691540),
@@ -23272,7 +23272,7 @@ ${s}`),
         a = n(503698),
         o = n.n(a),
         l = n(340287),
-        _ = n(123924),
+        _ = n(519244),
         d = n(607399),
         u = n(621466),
         c = n(844222),
@@ -24445,7 +24445,7 @@ ${s}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(123924),
+        o = n(519244),
         l = n(508382),
         _ = n(83379),
         d = n(502939),
@@ -26334,7 +26334,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 536441, Version Hash: b3a6ab21cd7bb99adc0b1e01001f0cf967dee5b1`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 536521, Version Hash: 86b6e1f5ed7b0a6d304638a86138637541a160d3`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -44490,6 +44490,18 @@ ${s}`);
           hasStoreChangeListeners: !0,
           loadRightBeforeConnectionOpen: !0,
         },
+        ConversationsFetchManager: {
+          actions: [
+            "CHANNEL_SELECT",
+            "LOAD_MESSAGES_SUCCESS",
+            "UPDATE_VISIBLE_MESSAGES",
+            "CONVERSATIONS_FETCH_SUCCESS",
+            "CHANNEL_DELETE",
+            "LOGOUT",
+          ],
+          inlineRequire: () => n(185522).A,
+          neverLoadBeforeConnectionOpen: !0,
+        },
       };
       for (let e in a) {
         let t = a[e];
@@ -49064,7 +49076,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "b3a6ab21cd7bb99adc0b1e01001f0cf967dee5b1" === e.body.hash
+                  "86b6e1f5ed7b0a6d304638a86138637541a160d3" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53239,7 +53251,7 @@ ${s}`);
                       (0, g.openModalLazy)(
                         async () => {
                           let { default: e } = await Promise.all([
-                            n.e("25738"),
+                            n.e("81349"),
                             n.e("62680"),
                             n.e("98125"),
                             n.e("18441"),
@@ -53595,10 +53607,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("536441")),
+                ((e = parseInt("536521")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 536441",
+                    "Trying to open a changelog for an invalid build number 536521",
                   ),
                   (e = 0)),
                 e),
@@ -53649,20 +53661,20 @@ ${s}`);
               let { default: e } = await Promise.all([
                 n.e("40841"),
                 n.e("74112"),
-                n.e("25738"),
+                n.e("81349"),
                 n.e("22513"),
                 n.e("5036"),
                 n.e("63397"),
-                n.e("84580"),
+                n.e("47181"),
                 n.e("63133"),
                 n.e("97271"),
                 n.e("13709"),
                 n.e("13498"),
                 n.e("75058"),
-                n.e("54718"),
+                n.e("60571"),
                 n.e("71934"),
                 n.e("60049"),
-                n.e("32181"),
+                n.e("66883"),
                 n.e("92652"),
                 n.e("86483"),
                 n.e("31632"),
@@ -54296,7 +54308,7 @@ ${s}`);
                 (0, r.openModalLazy)(
                   async () => {
                     let { default: r } = await Promise.all([
-                      n.e("32181"),
+                      n.e("66883"),
                       n.e("74112"),
                       n.e("21537"),
                       n.e("18943"),
@@ -57406,7 +57418,7 @@ ${s}`);
               n.e("31320"),
               n.e("40841"),
               n.e("63397"),
-              n.e("84580"),
+              n.e("47181"),
               n.e("60049"),
               n.e("13922"),
               n.e("20287"),
@@ -57528,9 +57540,9 @@ ${s}`);
                 n.e("40841"),
                 n.e("13709"),
                 n.e("63397"),
-                n.e("84580"),
-                n.e("54718"),
-                n.e("25738"),
+                n.e("47181"),
+                n.e("60571"),
+                n.e("81349"),
                 n.e("74112"),
                 n.e("22513"),
                 n.e("13498"),
@@ -57546,7 +57558,7 @@ ${s}`);
                 n.e("97271"),
                 n.e("71934"),
                 n.e("60049"),
-                n.e("32181"),
+                n.e("66883"),
                 n.e("86483"),
                 n.e("24092"),
                 n.e("55658"),
@@ -60168,7 +60180,7 @@ ${s}`);
                   n.e("40841"),
                   n.e("46232"),
                   n.e("95429"),
-                  n.e("29835"),
+                  n.e("23104"),
                   n.e("30221"),
                   n.e("98965"),
                   n.e("48370"),
@@ -61104,6 +61116,633 @@ ${s}`);
         return I(e, a.K.TRENDING_CONTENT)?.trending;
       }
     },
+    828488(e, t, n) {
+      "use strict";
+      n.d(t, {
+        LX: () => s,
+        W$: () => a,
+        ac: () => d,
+        fw: () => l,
+        uJ: () => _,
+      });
+      var i = n(945810),
+        r = n(36200);
+      let s = (0, i.mj)({
+          kind: "user",
+          name: "2026-03-conversation-highlighting-utility",
+          defaultConfig: { enabled: !1 },
+          variations: { 1: { enabled: !1 }, 2: { enabled: !0 } },
+        }),
+        a = (0, r.A)({
+          kind: "guild",
+          id: "2026-04_topical_navigation_aa",
+          label: "Topical Navigation",
+          defaultConfig: { enabled: !1 },
+          treatments: [{ id: 1, label: "Treatment", config: { enabled: !0 } }],
+        }),
+        o = (0, i.mj)({
+          kind: "user",
+          name: "2026-04-topical-navigation-staff-control",
+          defaultConfig: { enabled: !1 },
+          variations: { 1: { enabled: !0 } },
+        });
+      function l(e) {
+        return s.getConfig({ location: e }).enabled;
+      }
+      function _(e, t) {
+        let n,
+          i,
+          r = l(t),
+          s =
+            ((n = o.getConfig({ location: t }).enabled),
+            (i = a.getCurrentConfig(
+              { guildId: e, location: t },
+              { autoTrackExposure: !1 },
+            ).enabled),
+            n || i);
+        return r || s;
+      }
+      function d(e) {
+        return s.useConfig({ location: e }).enabled;
+      }
+    },
+    256331(e, t, n) {
+      "use strict";
+      n.d(t, { A: () => o });
+      var i = n(17928),
+        r = n(228366);
+      let s = !0;
+      class a extends i.Ay.DeviceSettingsStore {
+        static displayName = "ConversationVisibilityStore";
+        static persistKey = "ConversationVisibilityStore";
+        initialize(e) {
+          s = e?.highlightingEnabled ?? !0;
+        }
+        isHighlightingEnabled() {
+          return s;
+        }
+        getState() {
+          return { highlightingEnabled: s };
+        }
+        getUserAgnosticState() {
+          return { highlightingEnabled: s };
+        }
+      }
+      let o = new a(r.h, {
+        CONVERSATIONS_TOGGLE_HIGHLIGHTING: function () {
+          s = !s;
+        },
+      });
+    },
+    185522(e, t, n) {
+      "use strict";
+      n.d(t, { A: () => u });
+      var i = n(439372),
+        r = n(309010),
+        s = n(967198),
+        a = n(935208),
+        o = n(828488),
+        l = n(141850),
+        _ = n(958720);
+      n(705448);
+      class d extends i.A {
+        lastFetchByChannel = new Map();
+        needsPostJumpRefetch = !1;
+        visibleTopMessageId = null;
+        visibleBottomMessageId = null;
+        actions = {
+          CHANNEL_SELECT: (e) => {
+            let { channelId: t, guildId: n, messageId: i } = e;
+            (this.needsPostJumpRefetch = !1),
+              (this.visibleTopMessageId = null),
+              (this.visibleBottomMessageId = null),
+              null == t ||
+                null == n ||
+                _.A.isPendingFetch(t) ||
+                _.A.hasChannelData(t) ||
+                ((0, o.uJ)(n, "channel_select") &&
+                  (0, l.WF)(
+                    null != i
+                      ? { channelId: t, around: i, limit: 25 }
+                      : { channelId: t, limit: 25 },
+                  ));
+          },
+          LOAD_MESSAGES_SUCCESS: (e) => {
+            let { channelId: t, jump: n } = e;
+            null != n &&
+              r.A.getChannelId() === t &&
+              (this.lastFetchByChannel.delete(t),
+              (this.needsPostJumpRefetch = !0));
+          },
+          UPDATE_VISIBLE_MESSAGES: (e) => {
+            let { topVisibleMessage: t, bottomVisibleMessage: n } = e,
+              i = r.A.getChannelId(),
+              a = s.A.getGuildId();
+            if (null == i || null == a || !(0, o.uJ)(a, "visible_messages"))
+              return;
+            let d = this.visibleTopMessageId !== t,
+              u = this.visibleBottomMessageId !== n;
+            if (
+              ((this.visibleTopMessageId = t ?? null),
+              (this.visibleBottomMessageId = n ?? null),
+              (!d && !u) || _.A.isPendingFetch(i) || null == t)
+            )
+              return;
+            if (this.needsPostJumpRefetch) {
+              (this.needsPostJumpRefetch = !1),
+                (0, l.WF)({ channelId: i, around: t, limit: 25 });
+              return;
+            }
+            let c = this.lastFetchByChannel.get(i) ?? 0,
+              E = Date.now() - c;
+            if (E < 2e3) return;
+            let { above: h, below: m } = this.countBuffer(i, t, n);
+            h < 5 && _.A.hasMoreConversations(i, "before")
+              ? (0, l.WF)({ channelId: i, before: t, limit: 25 })
+              : m < 5 && null != n && _.A.hasMoreConversations(i, "after")
+                ? (0, l.WF)({ channelId: i, after: n, limit: 25 })
+                : E > 6e4 &&
+                  (0, l.WF)({
+                    channelId: i,
+                    around: t,
+                    limit: 25,
+                    isStaleRefresh: !0,
+                  });
+          },
+          CONVERSATIONS_FETCH_SUCCESS: (e) => {
+            let { channelId: t } = e;
+            this.lastFetchByChannel.set(t, Date.now());
+          },
+          CHANNEL_DELETE: (e) => {
+            let { channel: t } = e;
+            this.lastFetchByChannel.delete(t.id);
+          },
+          LOGOUT: () => this.reset(),
+        };
+        reset() {
+          this.lastFetchByChannel.clear(),
+            (this.needsPostJumpRefetch = !1),
+            (this.visibleTopMessageId = null),
+            (this.visibleBottomMessageId = null);
+        }
+        countBuffer(e, t, n) {
+          let i = _.A.getChannelConversations(e),
+            r = 0,
+            s = 0;
+          for (let { conversation: e } of i)
+            0 > a.default.compare(e.startMessageId, t) && r++,
+              null != n && a.default.compare(e.startMessageId, n) > 0 && s++;
+          return { above: r, below: s };
+        }
+      }
+      let u = new d();
+    },
+    958720(e, t, n) {
+      "use strict";
+      n.d(t, { A: () => D }), n(321073);
+      var i = n(17928),
+        r = n(228366),
+        s = n(320095),
+        a = n(495544),
+        o = n(734057),
+        l = n(994500),
+        _ = n(309010),
+        d = n(967198),
+        u = n(287809),
+        c = n(935208),
+        E = n(256331),
+        h = n(705448);
+      let m = new Map(),
+        f = new Set(),
+        g = new Map(),
+        A = new Map(),
+        I = null,
+        p = null,
+        T = null,
+        S = !1,
+        N = new Set(),
+        O = 0;
+      function R(e, t) {
+        let n = m.get(e);
+        if (null == n) return !1;
+        let i = n.messageMetadataByMessageId.get(t);
+        if (null != i) {
+          let e = n.conversationMetadataById.get(i.conversationId);
+          e?.hydratedMessages != null &&
+            (e.hydratedMessages = e.hydratedMessages.filter((e) => e.id !== t));
+        }
+        return n.messageMetadataByMessageId.delete(t);
+      }
+      function C(e) {
+        let t = m.delete(e);
+        return (
+          f.delete(e) && (t = !0),
+          g.delete(e) && (t = !0),
+          A.delete(e) && (t = !0),
+          I === e && (I = null),
+          p?.channelId === e && ((p = null), (t = !0)),
+          t
+        );
+      }
+      class y extends i.Ay.Store {
+        static displayName = "ConversationsStore";
+        initialize() {
+          this.waitFor(a.default, o.A, E.A, l.A, _.A, d.A, u.default);
+        }
+        hasChannelData(e) {
+          return m.has(e);
+        }
+        getChannelConversations(e) {
+          let t = m.get(e);
+          return null == t
+            ? []
+            : t.conversations.map((e) => {
+                let n = t.conversationMetadataById.get(e.id);
+                return { conversation: e, color: n?.color ?? h.J["0"] };
+              });
+        }
+        getConversationForMessage(e, t) {
+          return (
+            m.get(e)?.messageMetadataByMessageId.get(t)?.conversationId ?? null
+          );
+        }
+        getMessageMetadata(e, t) {
+          return m.get(e)?.messageMetadataByMessageId.get(t) ?? null;
+        }
+        getConversationMetadata(e, t) {
+          return m.get(e)?.conversationMetadataById.get(t) ?? null;
+        }
+        getScrollToConversation(e) {
+          return p?.channelId === e
+            ? { conversationId: p.conversationId, seq: p.seq }
+            : null;
+        }
+        hasMoreConversations(e, t) {
+          return !!m.has(e) && ("before" === t ? !g.get(e) : !A.get(e));
+        }
+        isPendingFetch(e) {
+          return f.has(e);
+        }
+        getSelectedConversation(e) {
+          return null == T
+            ? null
+            : (m.get(e)?.conversationMetadataById.get(T)?.conversation ?? null);
+        }
+        getSelectedConversationColor(e) {
+          return null == T
+            ? null
+            : (m.get(e)?.conversationMetadataById.get(T)?.color ?? null);
+        }
+        getHydratedMessages(e, t) {
+          let n = m.get(e)?.conversationMetadataById.get(t)?.hydratedMessages;
+          return null != n && n.length > 0 ? n : null;
+        }
+        getHydratedMessageById(e, t) {
+          return m.get(e)?.messageMetadataByMessageId.get(t)?.message ?? null;
+        }
+        isConversationFetchPending(e) {
+          return N.has(e);
+        }
+        isConversationExpanded() {
+          return S;
+        }
+      }
+      let D = new y(r.h, {
+        CONVERSATION_FETCH_START: function (e) {
+          let { conversationId: t } = e;
+          N.add(t);
+        },
+        CONVERSATION_FETCH_SUCCESS: function (e) {
+          let {
+            channelId: t,
+            conversationId: n,
+            conversation: i,
+            messages: r,
+          } = e;
+          N.delete(n);
+          let a = m.get(t);
+          if (null == a) return;
+          let o = a.conversationMetadataById.get(n);
+          null != o && (o.conversation = i);
+          let l = r.map((e) => (0, s.rh)(e));
+          for (let e of l) {
+            let t = a.messageMetadataByMessageId.get(e.id);
+            null != t
+              ? (t.message = e)
+              : a.messageMetadataByMessageId.set(e.id, {
+                  conversationId: n,
+                  moderationLabel: null,
+                  message: e,
+                });
+          }
+          null != o && (o.hydratedMessages = l);
+        },
+        CONVERSATION_FETCH_FAILURE: function (e) {
+          let { conversationId: t } = e;
+          N.delete(t);
+        },
+        CONVERSATIONS_FETCH_START: function (e) {
+          let { channelId: t } = e;
+          f.add(t);
+        },
+        CONVERSATIONS_FETCH_SUCCESS: function (e) {
+          let {
+            channelId: t,
+            conversations: n,
+            direction: i,
+            beforeShortCircuited: r,
+            afterShortCircuited: s,
+            isStaleRefresh: a,
+          } = e;
+          f.delete(t);
+          let l = m.get(t)?.conversations ?? [];
+          a &&
+            (l = (function (e, t) {
+              if (0 === t.length) return e;
+              let n = new Set(t.map((e) => e.id)),
+                i = Math.min(
+                  ...t.map((e) => c.default.extractTimestamp(e.startMessageId)),
+                ),
+                r = Math.max(
+                  ...t.map((e) => c.default.extractTimestamp(e.startMessageId)),
+                );
+              return e.filter((e) => {
+                let t = c.default.extractTimestamp(e.startMessageId);
+                return t < i || t > r || n.has(e.id);
+              });
+            })(l, n)),
+            r && ("before" === i || "around" === i) && g.set(t, !0),
+            s && ("after" === i || "around" === i) && A.set(t, !0);
+          let _ = (function (e, t) {
+            let n = new Map();
+            for (let t of e) n.set(t.id, t);
+            for (let e of t) n.set(e.id, e);
+            let i = Array.from(n.values());
+            return (
+              i.sort((e, t) =>
+                c.default.compare(e.startMessageId, t.startMessageId),
+              ),
+              i
+            );
+          })(l, n);
+          m.set(
+            t,
+            (function (e, t, n) {
+              let i =
+                  n?.guildId ??
+                  t[0]?.guildId ??
+                  o.A.getChannel(e)?.guild_id ??
+                  null,
+                r = new Map(),
+                s = new Map();
+              for (let e of t) {
+                let t = n?.conversationMetadataById.get(e.id),
+                  i = t?.color ?? h.J[O++ % h.J.length];
+                r.set(e.id, {
+                  conversation: e,
+                  color: i,
+                  hydratedMessages: t?.hydratedMessages ?? null,
+                });
+                let a = null;
+                if (null != e.moderation)
+                  for (let t of ((a = new Map()),
+                  e.moderation.flaggedMessageDetails)) {
+                    let e = a.get(t.messageId);
+                    null != e ? e.push(t) : a.set(t.messageId, [t]);
+                  }
+                for (let t of e.messageIds) {
+                  let i = null;
+                  null != e.moderation &&
+                    e.moderation.flaggedMessageIds.includes(t) &&
+                    null != a &&
+                    (i = (function (e) {
+                      let t = e[0],
+                        n = e
+                          .map((e) => e.category ?? e.reason)
+                          .filter((e) => null != e),
+                        i = t?.severity ?? null,
+                        r = t?.confidence ?? null,
+                        s = [
+                          null != i ? `${i} severity` : null,
+                          null != r ? `${r} confidence` : null,
+                        ]
+                          .filter(Boolean)
+                          .join(", "),
+                        a = [
+                          n.length > 0 ? n.join(", ") : null,
+                          s.length > 0 ? s : null,
+                        ]
+                          .filter(Boolean)
+                          .join(" \xb7 ");
+                      return a.length > 0 ? a : "Moderation Failed";
+                    })(a.get(t) ?? []));
+                  let r = n?.messageMetadataByMessageId.get(t)?.message ?? null;
+                  s.set(t, {
+                    conversationId: e.id,
+                    moderationLabel: i,
+                    message: r,
+                  });
+                }
+              }
+              return {
+                guildId: i,
+                conversations: t,
+                conversationMetadataById: r,
+                messageMetadataByMessageId: s,
+              };
+            })(t, _, m.get(t)),
+          );
+        },
+        CONVERSATIONS_FETCH_FAILURE: function (e) {
+          let { channelId: t } = e;
+          f.delete(t);
+        },
+        CHANNEL_SELECT: function (e) {
+          let { channelId: t } = e;
+          if (I === t) return !1;
+          (T = null), (S = !1), (I = t ?? null);
+        },
+        CHANNEL_DELETE: function (e) {
+          let { channel: t } = e;
+          return C(t.id);
+        },
+        GUILD_DELETE: function (e) {
+          let { guild: t } = e;
+          if ("unavailable" in t && !0 === t.unavailable) return !1;
+          let n = !1;
+          for (let [e, i] of m) i.guildId === t.id && C(e) && (n = !0);
+          return n;
+        },
+        LOAD_MESSAGES_SUCCESS: function (e) {
+          let { channelId: t, jump: n } = e;
+          return (
+            null != n &&
+            _.A.getChannelId() === t &&
+            (g.delete(t), A.delete(t), !0)
+          );
+        },
+        SET_SELECTED_CONVERSATION: function (e) {
+          let { channelId: t, conversationId: n } = e;
+          return (
+            T !== n &&
+            ((T = n),
+            (S = !1),
+            null != t &&
+              null != n &&
+              (p = { channelId: t, conversationId: n, seq: (p?.seq ?? 0) + 1 }),
+            !0)
+          );
+        },
+        SET_CONVERSATION_EXPANDED: function (e) {
+          let { expanded: t } = e;
+          return S !== t && ((S = t), !0);
+        },
+        MESSAGE_UPDATE: function (e) {
+          let { message: t } = e,
+            n = t.channel_id,
+            i = t.id;
+          if (null == n || null == i) return !1;
+          let r = m.get(n),
+            a = r?.messageMetadataByMessageId.get(i);
+          if (a?.message == null) return !1;
+          let o = (0, s.IU)(a.message, t);
+          a.message = o;
+          let l = r?.conversationMetadataById.get(a.conversationId);
+          if (l?.hydratedMessages != null) {
+            let e = l.hydratedMessages.findIndex((e) => e.id === i);
+            -1 !== e && (l.hydratedMessages[e] = o);
+          }
+          return !0;
+        },
+        MESSAGE_DELETE: function (e) {
+          let { channelId: t, id: n } = e;
+          return R(t, n);
+        },
+        MESSAGE_DELETE_BULK: function (e) {
+          let { channelId: t, ids: n } = e,
+            i = !1;
+          for (let e of n) R(t, e) && (i = !0);
+          return i;
+        },
+        LOGOUT: function () {
+          m.clear(),
+            f.clear(),
+            g.clear(),
+            A.clear(),
+            N.clear(),
+            (I = null),
+            (T = null),
+            (S = !1),
+            (p = null),
+            (O = 0);
+        },
+      });
+    },
+    701952(e, t, n) {
+      "use strict";
+      function i(e) {
+        try {
+          let t = JSON.parse(e);
+          if (
+            "string" == typeof t?.title &&
+            "string" == typeof t?.brief_summary
+          )
+            return {
+              title: t.title,
+              brief_summary: t.brief_summary,
+              key_points: Array.isArray(t.key_points)
+                ? t.key_points
+                    .map((e) => e?.text)
+                    .filter((e) => "string" == typeof e)
+                : [],
+            };
+          return null;
+        } catch {
+          return null;
+        }
+      }
+      n.d(t, { i: () => i });
+    },
+    161204(e, t, n) {
+      "use strict";
+      n.d(t, { a: () => r, u: () => s });
+      var i = n(701952);
+      function r(e) {
+        var t;
+        return {
+          id: e.id,
+          channelId: e.channel_id,
+          guildId: e.guild_id,
+          messageIds: e.message_ids,
+          userIds: e.user_ids,
+          startMessageId: e.start_message_id,
+          endMessageId: e.end_message_id,
+          messageCount: e.message_count,
+          userCount: e.user_count,
+          keywords: e.keywords ?? [],
+          summaryMap:
+            null != e.summary_map
+              ? {
+                  entries: e.summary_map.entries.map((e) => ({
+                    summaryType: e.summary_type,
+                    contentJson: e.content_json,
+                  })),
+                }
+              : null,
+          engagement: e.engagement,
+          substance: e.substance,
+          dynamics: e.dynamics,
+          moderation:
+            null != e.moderation
+              ? {
+                  status: (t = e.moderation).status,
+                  statusReason: t.status_reason,
+                  messageViolationRate: t.message_violation_rate,
+                  flaggedMessageCount: t.flagged_message_count,
+                  totalMessageCount: t.total_message_count,
+                  flaggedMessageIds: t.flagged_message_ids,
+                  flaggedMessageDetails: t.flagged_message_details.map((e) => ({
+                    messageId: e.message_id,
+                    category: e.category,
+                    severity: e.severity,
+                    confidence: e.confidence,
+                    reason: e.reason,
+                  })),
+                  flaggedSummaryDetails: t.flagged_summary_details,
+                  flaggedTitle: t.flagged_title,
+                  flaggedSummary: t.flagged_summary,
+                  flaggedKeyPoints: t.flagged_key_points,
+                  failedMessageIds: t.failed_message_ids,
+                }
+              : null,
+        };
+      }
+      function s(e) {
+        let t = e.summaryMap?.entries.find(
+          (e) => "TOPIC_EXTRACTION_SUMMARY" === e.summaryType,
+        );
+        if (null != t) {
+          let e = (0, i.i)(t.contentJson);
+          if (e?.title != null && "" !== e.title) return e.title;
+        }
+        return e.keywords.length > 0
+          ? e.keywords.slice(0, 3).join(", ")
+          : `${e.messageCount} messages`;
+      }
+    },
+    705448(e, t, n) {
+      "use strict";
+      n.d(t, { J: () => i });
+      let i = [
+        "rgba(237, 66, 69, 0.12)",
+        "rgba(230, 126, 34, 0.12)",
+        "rgba(254, 231, 92, 0.12)",
+        "rgba(87, 242, 135, 0.12)",
+        "rgba(52, 152, 219, 0.12)",
+        "rgba(88, 101, 242, 0.12)",
+        "rgba(155, 89, 182, 0.12)",
+      ];
+    },
     45143(e, t, n) {
       "use strict";
       n.d(t, { A: () => s });
@@ -61494,11 +62133,11 @@ ${s}`);
             n.e("60049"),
             n.e("40841"),
             n.e("63397"),
-            n.e("84580"),
+            n.e("47181"),
             n.e("75058"),
             n.e("31320"),
             n.e("33092"),
-            n.e("32181"),
+            n.e("66883"),
             n.e("24211"),
             n.e("92652"),
             n.e("41475"),
@@ -61507,9 +62146,9 @@ ${s}`);
             n.e("74112"),
             n.e("84615"),
             n.e("13709"),
-            n.e("25738"),
+            n.e("81349"),
             n.e("7276"),
-            n.e("54718"),
+            n.e("60571"),
             n.e("5036"),
             n.e("63133"),
             n.e("97271"),
@@ -61672,10 +62311,10 @@ ${s}`);
             n.e("17363"),
             n.e("88941"),
             n.e("34552"),
+            n.e("58337"),
             n.e("55411"),
             n.e("93103"),
             n.e("34530"),
-            n.e("58337"),
             n.e("61379"),
             n.e("62680"),
             n.e("43039"),
@@ -61952,7 +62591,6 @@ ${s}`);
             n.e("7833"),
             n.e("86243"),
             n.e("32209"),
-            n.e("48295"),
             n.e("60249"),
             n.e("39171"),
             n.e("37021"),
@@ -63568,7 +64206,7 @@ ${s}`);
           createPromise: () =>
             Promise.all([
               n.e("40841"),
-              n.e("25738"),
+              n.e("81349"),
               n.e("53381"),
               n.e("207"),
               n.e("88077"),
@@ -63592,7 +64230,7 @@ ${s}`);
           createPromise: () =>
             Promise.all([
               n.e("40841"),
-              n.e("25738"),
+              n.e("81349"),
               n.e("42376"),
               n.e("63397"),
               n.e("43282"),
@@ -66402,7 +67040,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "536441", versionHash: "b3a6ab21cd7bb99adc0b1e01001f0cf967dee5b1" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "536521", versionHash: "86b6e1f5ed7b0a6d304638a86138637541a160d3" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -89705,14 +90343,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             (0, r.openModalLazy)(
               async () => {
                 let { default: t } = await Promise.all([
-                  n.e("32181"),
+                  n.e("66883"),
                   n.e("31320"),
                   n.e("63397"),
-                  n.e("84580"),
+                  n.e("47181"),
                   n.e("60049"),
                   n.e("13709"),
                   n.e("40841"),
-                  n.e("25738"),
+                  n.e("81349"),
                   n.e("80186"),
                   n.e("31299"),
                   n.e("63133"),
@@ -89722,7 +90360,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("22513"),
                   n.e("13498"),
                   n.e("75058"),
-                  n.e("54718"),
+                  n.e("60571"),
                   n.e("71934"),
                   n.e("92652"),
                   n.e("86483"),
@@ -89947,14 +90585,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           openMemberVerificationPreviewModal(e) {
             (0, r.openModalLazy)(async () => {
               let { default: t } = await Promise.all([
-                n.e("32181"),
+                n.e("66883"),
                 n.e("31320"),
                 n.e("63397"),
-                n.e("84580"),
+                n.e("47181"),
                 n.e("60049"),
                 n.e("13709"),
                 n.e("40841"),
-                n.e("25738"),
+                n.e("81349"),
                 n.e("80186"),
                 n.e("31299"),
                 n.e("63133"),
@@ -89964,7 +90602,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("22513"),
                 n.e("13498"),
                 n.e("75058"),
-                n.e("54718"),
+                n.e("60571"),
                 n.e("71934"),
                 n.e("92652"),
                 n.e("86483"),
@@ -97642,11 +98280,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       async function f(e) {
         let { openInteractionModal: t } = await Promise.all([
           n.e("63397"),
-          n.e("84580"),
+          n.e("47181"),
           n.e("31320"),
           n.e("40841"),
           n.e("69273"),
-          n.e("25738"),
+          n.e("81349"),
           n.e("13709"),
           n.e("63941"),
           n.e("63009"),
@@ -97661,10 +98299,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("22513"),
           n.e("13498"),
           n.e("75058"),
-          n.e("54718"),
+          n.e("60571"),
           n.e("71934"),
           n.e("60049"),
-          n.e("32181"),
+          n.e("66883"),
           n.e("92652"),
           n.e("86483"),
           n.e("31632"),
@@ -97740,8 +98378,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("5812"),
           n.e("17363"),
           n.e("88941"),
-          n.e("34530"),
           n.e("58337"),
+          n.e("34530"),
           n.e("61379"),
           n.e("62680"),
           n.e("43039"),
@@ -111822,12 +112460,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("1440"),
               n.e("40841"),
               n.e("74112"),
-              n.e("25738"),
+              n.e("81349"),
               n.e("7276"),
               n.e("41475"),
-              n.e("54718"),
+              n.e("60571"),
               n.e("13709"),
-              n.e("84580"),
+              n.e("47181"),
               n.e("75058"),
               n.e("5036"),
               n.e("63133"),
@@ -111836,7 +112474,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("13498"),
               n.e("71934"),
               n.e("60049"),
-              n.e("32181"),
+              n.e("66883"),
               n.e("86483"),
               n.e("31632"),
               n.e("86821"),
@@ -111956,10 +112594,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("17363"),
               n.e("88941"),
               n.e("34552"),
+              n.e("58337"),
               n.e("55411"),
               n.e("93103"),
               n.e("34530"),
-              n.e("58337"),
               n.e("61379"),
               n.e("62680"),
               n.e("43039"),
@@ -112232,7 +112870,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("7833"),
               n.e("86243"),
               n.e("32209"),
-              n.e("48295"),
               n.e("60249"),
               n.e("39171"),
               n.e("37021"),
@@ -112604,7 +113241,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("13709"),
               n.e("63133"),
               n.e("63397"),
-              n.e("25738"),
+              n.e("60571"),
               n.e("56600"),
               n.e("5136"),
               n.e("34530"),
@@ -112920,7 +113557,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(123924),
+        o = n(519244),
         l = n(17928),
         _ = n(834730),
         d = n(821609),
@@ -113519,9 +114156,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         try {
           return (
             await Promise.all([
-              n.e("25738"),
+              n.e("81349"),
               n.e("63397"),
-              n.e("84580"),
+              n.e("47181"),
               n.e("40841"),
               n.e("74112"),
               n.e("5036"),
@@ -113531,10 +114168,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("13709"),
               n.e("13498"),
               n.e("75058"),
-              n.e("54718"),
+              n.e("60571"),
               n.e("71934"),
               n.e("60049"),
-              n.e("32181"),
+              n.e("66883"),
               n.e("92652"),
               n.e("86483"),
               n.e("31632"),
@@ -115563,7 +116200,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     156312(e, t, n) {
       "use strict";
-      n.d(t, { P5: () => X, PaymentContextProvider: () => J, Qv: () => q });
+      n.d(t, { P5: () => q, PaymentContextProvider: () => Q, Qv: () => z });
       var i = n(627968),
         r = n(64700),
         s = n(342393),
@@ -115608,281 +116245,278 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         W = n(615310),
         K = n(87952),
         j = n(652215),
-        $ = n(788868),
-        z = n(106451);
-      let [q, X, Q] = (0, w.A)();
-      function J(e) {
+        $ = n(788868);
+      let [z, q, X] = (0, w.A)();
+      function Q(e) {
         let { stepConfigs: t, breadcrumbs: n, ...r } = e;
         return (0, i.jsx)(W.mz, {
           stepConfigs: t,
           breadcrumbs: n,
-          children: (0, i.jsx)(S.P, { children: (0, i.jsx)(Z, { ...r }) }),
+          children: (0, i.jsx)(S.P, { children: (0, i.jsx)(J, { ...r }) }),
         });
       }
-      function Z(e) {
+      function J(e) {
         let {
             loadId: t,
             discoverySessionId: n,
             activeSubscription: a,
             unifiedCheckoutFlow: S,
             shouldCrashOnUnhandledError: w = !0,
-            onUnhandledError: X,
-            skuIDs: Q,
-            isGift: J = !1,
-            children: Z,
-            defaultPlanId: ee,
-            purchaseType: et = j.VVm.SUBSCRIPTION,
-            applicationId: en,
-            referralCode: ei,
-            paymentGateway: er,
-            excludeSubscriptionPlansBySKU: es = !1,
-            excludeSKUPurchasePreviews: ea = !1,
-            wasTier2PremiumBeforePurchase: eo = !1,
-            referralTrialOfferId: el,
+            onUnhandledError: q,
+            skuIDs: X,
+            isGift: Q = !1,
+            children: J,
+            defaultPlanId: Z,
+            purchaseType: ee = j.VVm.SUBSCRIPTION,
+            applicationId: et,
+            referralCode: en,
+            paymentGateway: ei,
+            excludeSubscriptionPlansBySKU: er = !1,
+            excludeSKUPurchasePreviews: es = !1,
+            wasTier2PremiumBeforePurchase: ea = !1,
+            referralTrialOfferId: eo,
           } = e,
-          e_ = (0, K.A)(),
-          ed = (0, g.Hp)(),
-          eu = (0, G.A)(),
-          ec = Q[0],
-          eE = (0, _.bG)([L.A], () => L.A.get(ec), [ec]),
-          eh = eE?.eligiblePaymentGateways,
+          el = (0, K.A)(),
+          e_ = (0, g.Hp)(),
+          ed = (0, G.A)(),
+          eu = X[0],
+          ec = (0, _.bG)([L.A], () => L.A.get(eu), [eu]),
+          eE = ec?.eligiblePaymentGateways,
           {
-            paymentSources: em,
-            hasPaymentSources: ef,
-            paymentSourceId: eg,
-            setPaymentSourceId: eA,
-            hasFetchedPaymentSources: eI,
+            paymentSources: eh,
+            hasPaymentSources: em,
+            paymentSourceId: ef,
+            setPaymentSourceId: eg,
+            hasFetchedPaymentSources: eA,
           } = (0, x.A)({
-            isGift: J,
+            isGift: Q,
             activeSubscription: a,
-            eligiblePaymentGateways: eh,
+            eligiblePaymentGateways: eE,
           }),
-          ep = r.useRef(ef),
-          eT = (0, T.t4)((e) => {
+          eI = r.useRef(em),
+          ep = (0, T.t4)((e) => {
             let { checkoutInvoicePreview: t } = e;
             return t;
           }),
           {
-            hasFetchedSubscriptionPlans: eS,
-            priceOptions: eN,
-            setCurrency: eO,
-            currencyLoading: eR,
-            currencies: eC,
-            displayCurrency: ey,
+            hasFetchedSubscriptionPlans: eT,
+            priceOptions: eS,
+            setCurrency: eN,
+            currencyLoading: eO,
+            currencies: eR,
+            displayCurrency: eC,
           } = (0, M.A)({
             activeSubscription: a,
-            skuIDs: Q,
-            paymentSourceId: eg,
-            isGift: J,
-            excludeSubscriptionPlansBySKU: es,
-            checkoutInvoicePreview: eT,
+            skuIDs: X,
+            paymentSourceId: ef,
+            isGift: Q,
+            excludeSubscriptionPlansBySKU: er,
+            checkoutInvoicePreview: ep,
           }),
-          eD = (0, H.A)(),
-          eL = (0, W.bB)(),
-          [ev, ew] = (0, B.A)(eL),
-          { paymentError: eP, paymentAuthenticationState: eb } = (0, V.A)(),
+          ey = (0, H.A)(),
+          eD = (0, W.bB)(),
+          [eL, ev] = (0, B.A)(eD),
+          { paymentError: ew, paymentAuthenticationState: eP } = (0, V.A)(),
           {
-            purchaseError: ek,
-            purchaseErrorBlockRef: eU,
-            setPurchaseError: eM,
+            purchaseError: eb,
+            purchaseErrorBlockRef: ek,
+            setPurchaseError: eU,
           } = (0, F.A)(),
-          eG = (0, d.A)(() => {
+          eM = (0, d.A)(() => {
             let e = t ?? (0, l.A)();
             return (
               b.A.addBreadcrumb({ message: `Checkout session ID: ${e}` }),
               { loadId: e, discoverySessionId: n, startTime: Date.now() }
             );
           }),
-          ex = (0, T.t4)((e) => e.selectedSkuId),
-          eV = (0, T.t4)((e) => e.selectedPlanId),
-          [eF, eB] = (0, _.yK)([D.A], () => [
+          eG = (0, T.t4)((e) => e.selectedSkuId),
+          ex = (0, T.t4)((e) => e.selectedPlanId),
+          [eV, eF] = (0, _.yK)([D.A], () => [
             D.A.purchaseTokenAuthState,
             D.A.purchaseTokenHash,
           ]),
-          [eH, eY] = r.useState(null),
-          [eW, eK] = r.useState(null),
-          [ej, e$] = r.useState(null),
-          [ez, eq] = r.useState(null),
-          [eX, eQ] = r.useState(null),
-          [eJ, eZ] = r.useState(void 0),
-          [e0, e1] = r.useState([]),
-          e3 = r.useMemo(() => null == eV || (0, P.ys)(eV), [eV]),
-          e2 = r.useRef(null != a ? a.planId : null);
+          [eB, eH] = r.useState(null),
+          [eY, eW] = r.useState(null),
+          [eK, ej] = r.useState(null),
+          [e$, ez] = r.useState(null),
+          [eq, eX] = r.useState(null),
+          [eQ, eJ] = r.useState(void 0),
+          [eZ, e0] = r.useState([]),
+          e1 = r.useMemo(() => null == ex || (0, P.ys)(ex), [ex]),
+          e3 = r.useRef(null != a ? a.planId : null);
         r.useEffect(() => {
-          null == e2.current && null != a && (e2.current = a.planId);
+          null == e3.current && null != a && (e3.current = a.planId);
         }, [a]);
-        let { endsAt: e6 } = (0, A.A)({
+        let { endsAt: e2 } = (0, A.A)({
             forceFetch: !1,
             excludeReverseTrial: !0,
           }),
-          e4 = r.useRef(e6.isSame(o()(0)) ? null : e6);
+          e6 = r.useRef(e2.isSame(o()(0)) ? null : e2);
         r.useEffect(() => {
-          null != e4.current || e6.isSame(o()(0)) || (e4.current = e6);
-        }, [e6]);
-        let e7 = r.useMemo(
-          () => ({ paymentSourceId: eg, paymentGateway: er, loadId: t }),
-          [eg, er, t],
+          null != e6.current || e2.isSame(o()(0)) || (e6.current = e2);
+        }, [e2]);
+        let e4 = r.useMemo(
+          () => ({ paymentSourceId: ef, paymentGateway: ei, loadId: t }),
+          [ef, ei, t],
         );
-        (0, U.A)(ec, e7);
-        let e5 = r.useMemo(
-            () => Q.filter((e) => !$.oz.includes(e)),
-            [JSON.stringify(Q)],
+        (0, U.A)(eu, e4);
+        let e7 = r.useMemo(
+            () => X.filter((e) => !$.oz.includes(e)),
+            [JSON.stringify(X)],
           ),
-          { previewErrorsById: e8 } = (0, Y.A)({
-            applicationId: en ?? $.tv,
-            skuIDs: e5,
-            currentPaymentSourceId: eg,
-            isGift: J,
-            excludeSKUPurchasePreviews: ea,
-            loadId: eG.loadId,
-            currency: eN.loaded ? eN.currency : void 0,
+          { previewErrorsById: e5 } = (0, Y.A)({
+            applicationId: et ?? $.tv,
+            skuIDs: e7,
+            currentPaymentSourceId: ef,
+            isGift: Q,
+            excludeSKUPurchasePreviews: es,
+            loadId: eM.loadId,
+            currency: eS.loaded ? eS.currency : void 0,
           }),
-          e9 = null != ex ? e8[ex] : null,
-          [te, tt] = r.useState(e9),
-          { data: tn } = (0, m.YY)(en),
-          ti = y.Q_.useSetting(),
-          tr = (0, _.bG)([u.A], () => u.A.getFetchState());
+          e8 = null != eG ? e5[eG] : null,
+          [e9, te] = r.useState(e8),
+          { data: tt } = (0, m.YY)(et),
+          tn = y.Q_.useSetting(),
+          ti = (0, _.bG)([u.A], () => u.A.getFetchState());
         r.useEffect(() => {
-          null != tn &&
-            (0, f.n)(tn, j.gfo.EMBEDDED) &&
-            ti &&
-            null == tr &&
+          null != tt &&
+            (0, f.n)(tt, j.gfo.EMBEDDED) &&
+            tn &&
+            null == ti &&
             (0, c.SE)();
-        }, [tn, ti, tr]);
-        let ts =
-            null != tn &&
-            (0, f.n)(tn, j.gfo.EMBEDDED) &&
-            (0, f.n)(tn, j.gfo.EMBEDDED_IAP),
-          ta = (0, _.bG)([E.Ay], () =>
+        }, [tt, tn, ti]);
+        let tr =
+            null != tt &&
+            (0, f.n)(tt, j.gfo.EMBEDDED) &&
+            (0, f.n)(tt, j.gfo.EMBEDDED_IAP),
+          ts = (0, _.bG)([E.Ay], () =>
             Array.from(E.Ay.getSelfEmbeddedActivities().values()).find((e) => {
               let { applicationId: t } = e;
-              return t === en;
+              return t === et;
             }),
           ),
-          to = ta?.compositeInstanceId,
-          tl = (0, _.bG)([v.A], () => (null != ex ? v.A.getForSKU(ex) : null), [
-            ex,
+          ta = ts?.compositeInstanceId,
+          to = (0, _.bG)([v.A], () => (null != eG ? v.A.getForSKU(eG) : null), [
+            eG,
           ]),
-          t_ = (0, N.ds)() && !J,
-          { isDisplayingWowMomentConfirmation: td } = (0, _.cf)([O.A], () => ({
+          tl = (0, N.ds)() && !Q,
+          { isDisplayingWowMomentConfirmation: t_ } = (0, _.cf)([O.A], () => ({
             isDisplayingWowMomentConfirmation:
               O.A.isDisplayingWowMomentConfirmation,
           })),
-          tu = e3 ? z.Ot : void 0,
-          { enabled: tc } = (0, I.Y)({ location: "PaymentContext" }),
-          tE = (0, k.$w)(),
-          th = r.useMemo(
-            () => null != eV && eV === $.gD.PREMIUM_GROUP_MONTH,
-            [eV],
+          { enabled: td } = (0, I.Y)({ location: "PaymentContext" }),
+          tu = (0, k.$w)(),
+          tc = r.useMemo(
+            () => null != ex && ex === $.gD.PREMIUM_GROUP_MONTH,
+            [ex],
           ),
-          tm = (0, C.V)(el ?? void 0),
-          tf =
-            !th &&
-            !J &&
-            null != tm &&
-            null != ex &&
-            $.TP[tm.trial_id].skus.includes(ex),
-          tg = (0, R.O)(),
-          tA = tg?.discount?.plan_ids.some((e) => $.hd[e].skuId === ex),
-          tI = !!(!th && !J && null != tg && null != ex && tA),
-          tp = null != eg && null != em[eg] ? em[eg]?.type : null,
-          tT = r.useMemo(
+          tE = (0, C.V)(eo ?? void 0),
+          th =
+            !tc &&
+            !Q &&
+            null != tE &&
+            null != eG &&
+            $.TP[tE.trial_id].skus.includes(eG),
+          tm = (0, R.O)(),
+          tf = tm?.discount?.plan_ids.some((e) => $.hd[e].skuId === eG),
+          tg = !!(!tc && !Q && null != tm && null != eG && tf),
+          tA = null != ef && null != eh[ef] ? eh[ef]?.type : null,
+          tI = r.useMemo(
             () => ({
-              payment_source_id: eg,
-              payment_gateway: er,
-              payment_source_type: tp,
+              payment_source_id: ef,
+              payment_gateway: ei,
+              payment_source_type: tA,
               checkout_flow: S,
             }),
-            [eg, er, tp, S],
+            [ef, ei, tA, S],
           ),
-          tS = (0, h.Db)();
-        return (0, i.jsx)(q.Provider, {
+          tp = (0, h.Db)();
+        return (0, i.jsx)(z.Provider, {
           value: {
-            stripe: e_,
+            stripe: el,
             unifiedCheckoutFlow: S,
-            paymentElementsEnabled: tc,
-            contextMetadata: eG,
-            blockedPayments: ed,
+            paymentElementsEnabled: td,
+            contextMetadata: eM,
+            blockedPayments: e_,
             activeSubscription: a,
-            hasFetchedSubscriptions: eu,
-            hasFetchedSubscriptionPlans: eS,
-            updatedSubscription: ez,
-            setUpdatedSubscription: eq,
-            subscriptionMetadataRequest: eX,
-            setSubscriptionMetadataRequest: eQ,
-            hasFetchedPaymentSources: eI,
-            paymentSources: em,
-            hasPaymentSources: ef,
-            paymentSourceId: eg,
-            setPaymentSourceId: eA,
-            priceOptions: eN,
-            setCurrency: eO,
-            currencyLoading: eR,
-            currencies: eC,
-            displayCurrency: ey,
-            ...eD,
-            purchaseState: ev,
-            setPurchaseState: ew,
-            paymentAuthenticationState: eb,
-            paymentError: eP,
-            purchaseError: ek,
-            setPurchaseError: eM,
-            purchasePreviewError: te,
-            setPurchasePreviewError: tt,
-            purchaseErrorBlockRef: eU,
-            purchaseTokenAuthState: eF,
-            purchaseTokenHash: eB,
-            bodyNode: eH,
-            setBodyNode: eY,
-            footerNode: eW,
-            setFooterNode: eK,
-            modalOverlayNode: ej,
-            setModalOverlayNode: e$,
-            selectedStoreListing: tl,
-            readySlideId: eJ,
-            setReadySlideId: eZ,
-            defaultPlanId: ee,
-            isPremium: e3,
-            isGift: J,
-            startingFractionalPremiumEndsAtRef: e4,
-            startedPaymentFlowWithPaymentSourcesRef: ep,
-            startingPremiumSubscriptionPlanIdRef: e2,
-            defaultFetchableSkuIds: e5,
-            application: tn,
-            purchaseType: et,
-            isEmbeddedIAP: ts,
-            activitySessionId: to,
-            devShelfFetchState: tr,
-            appliedUserDiscounts: e0,
-            setAppliedUserDiscounts: e1,
-            referralCode: ei,
-            inReverseTrial: t_,
-            enablePremiumBrandRefresh: e3,
-            isDisplayingWowMomentConfirmation: td,
-            premiumBrandRefreshBackgroundClassName: tu,
-            wasTier2PremiumBeforePurchase: eo,
-            customCheckoutFlow: tE,
-            isPremiumGroupPurchase: th,
-            isEligibleForTrial: tf,
-            isEligibleForDiscount: tI,
-            userTrialOffer: tm,
-            referralTrialOfferId: el,
-            discountOffer: tg,
+            hasFetchedSubscriptions: ed,
+            hasFetchedSubscriptionPlans: eT,
+            updatedSubscription: e$,
+            setUpdatedSubscription: ez,
+            subscriptionMetadataRequest: eq,
+            setSubscriptionMetadataRequest: eX,
+            hasFetchedPaymentSources: eA,
+            paymentSources: eh,
+            hasPaymentSources: em,
+            paymentSourceId: ef,
+            setPaymentSourceId: eg,
+            priceOptions: eS,
+            setCurrency: eN,
+            currencyLoading: eO,
+            currencies: eR,
+            displayCurrency: eC,
+            ...ey,
+            purchaseState: eL,
+            setPurchaseState: ev,
+            paymentAuthenticationState: eP,
+            paymentError: ew,
+            purchaseError: eb,
+            setPurchaseError: eU,
+            purchasePreviewError: e9,
+            setPurchasePreviewError: te,
+            purchaseErrorBlockRef: ek,
+            purchaseTokenAuthState: eV,
+            purchaseTokenHash: eF,
+            bodyNode: eB,
+            setBodyNode: eH,
+            footerNode: eY,
+            setFooterNode: eW,
+            modalOverlayNode: eK,
+            setModalOverlayNode: ej,
+            selectedStoreListing: to,
+            readySlideId: eQ,
+            setReadySlideId: eJ,
+            defaultPlanId: Z,
+            isPremium: e1,
+            isGift: Q,
+            startingFractionalPremiumEndsAtRef: e6,
+            startedPaymentFlowWithPaymentSourcesRef: eI,
+            startingPremiumSubscriptionPlanIdRef: e3,
+            defaultFetchableSkuIds: e7,
+            application: tt,
+            purchaseType: ee,
+            isEmbeddedIAP: tr,
+            activitySessionId: ta,
+            devShelfFetchState: ti,
+            appliedUserDiscounts: eZ,
+            setAppliedUserDiscounts: e0,
+            referralCode: en,
+            inReverseTrial: tl,
+            enablePremiumBrandRefresh: e1,
+            isDisplayingWowMomentConfirmation: t_,
+            wasTier2PremiumBeforePurchase: ea,
+            customCheckoutFlow: tu,
+            isPremiumGroupPurchase: tc,
+            isEligibleForTrial: th,
+            isEligibleForDiscount: tg,
+            userTrialOffer: tE,
+            referralTrialOfferId: eo,
+            discountOffer: tm,
           },
           children: (0, i.jsx)(s.Elements, {
             options: j.XL8,
-            stripe: e_,
+            stripe: el,
             children: (0, i.jsx)(p.j, {
               shouldRethrowError: w,
-              locationStack: tS,
-              onUnhandledError: X,
-              loadId: eG.loadId,
-              selectedSkuId: ex ?? null,
-              selectedPlanId: eV ?? null,
-              isGift: J,
-              purchaseType: et,
-              additionalAnalyticsData: tT,
-              children: Z,
+              locationStack: tp,
+              onUnhandledError: q,
+              loadId: eM.loadId,
+              selectedSkuId: eG ?? null,
+              selectedPlanId: ex ?? null,
+              isGift: Q,
+              purchaseType: ee,
+              additionalAnalyticsData: tI,
+              children: J,
             }),
           }),
         });
@@ -116201,12 +116835,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             let { default: e } = await Promise.all([
               n.e("40841"),
               n.e("69273"),
-              n.e("25738"),
+              n.e("81349"),
               n.e("13709"),
               n.e("63941"),
               n.e("63009"),
               n.e("63397"),
-              n.e("84580"),
+              n.e("47181"),
               n.e("31320"),
               n.e("45650"),
               n.e("97189"),
@@ -116219,10 +116853,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("22513"),
               n.e("13498"),
               n.e("75058"),
-              n.e("54718"),
+              n.e("60571"),
               n.e("71934"),
               n.e("60049"),
-              n.e("32181"),
+              n.e("66883"),
               n.e("92652"),
               n.e("86483"),
               n.e("31632"),
@@ -117703,7 +118337,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         M = n(267102),
         G = n(735438),
         x = n.n(G),
-        V = n(123924),
+        V = n(519244),
         F = n(258873),
         B = n(622242),
         H = n(731738),
@@ -124568,7 +125202,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(123924),
+        o = n(519244),
         l = n(717421),
         _ = n(935462),
         d = n(430690),
@@ -130958,7 +131592,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               (0, d.openModalLazy)(
                 async () => {
                   let { default: e } = await Promise.all([
-                    n.e("32181"),
+                    n.e("66883"),
                     n.e("74112"),
                     n.e("21537"),
                     n.e("18943"),
@@ -131022,7 +131656,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               (0, d.openModalLazy)(
                 async () => {
                   let { default: e } = await Promise.all([
-                    n.e("32181"),
+                    n.e("66883"),
                     n.e("74112"),
                     n.e("21537"),
                     n.e("35588"),
@@ -141714,17 +142348,17 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("13709"),
               n.e("41475"),
               n.e("63397"),
-              n.e("84580"),
+              n.e("47181"),
               n.e("40841"),
-              n.e("54718"),
-              n.e("25738"),
+              n.e("60571"),
+              n.e("81349"),
               n.e("22513"),
               n.e("13498"),
               n.e("63133"),
               n.e("75058"),
               n.e("71934"),
               n.e("60049"),
-              n.e("32181"),
+              n.e("66883"),
               n.e("92652"),
               n.e("86483"),
               n.e("31632"),
@@ -141983,17 +142617,17 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("40841"),
               n.e("74112"),
               n.e("84615"),
-              n.e("25738"),
-              n.e("84580"),
+              n.e("81349"),
+              n.e("47181"),
               n.e("75058"),
               n.e("13709"),
-              n.e("54718"),
+              n.e("60571"),
               n.e("97271"),
               n.e("63133"),
               n.e("71934"),
               n.e("60049"),
               n.e("22513"),
-              n.e("32181"),
+              n.e("66883"),
               n.e("92652"),
               n.e("86483"),
               n.e("31632"),
@@ -142199,7 +142833,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             Promise.all([
               n.e("31320"),
               n.e("63397"),
-              n.e("54718"),
+              n.e("60571"),
               n.e("13044"),
               n.e("74112"),
               n.e("84615"),
@@ -142207,15 +142841,15 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("13709"),
               n.e("41475"),
               n.e("60049"),
-              n.e("84580"),
+              n.e("47181"),
               n.e("40841"),
-              n.e("25738"),
+              n.e("81349"),
               n.e("22513"),
               n.e("13498"),
               n.e("63133"),
               n.e("75058"),
               n.e("71934"),
-              n.e("32181"),
+              n.e("66883"),
               n.e("92652"),
               n.e("86483"),
               n.e("31632"),
@@ -145289,7 +145923,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("31320"),
                   n.e("60049"),
                   n.e("33092"),
-                  n.e("32181"),
+                  n.e("66883"),
                   n.e("24211"),
                   n.e("22583"),
                   n.e("63397"),
@@ -145299,18 +145933,18 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("52204"),
                   n.e("92652"),
                   n.e("74112"),
-                  n.e("25738"),
+                  n.e("81349"),
                   n.e("63635"),
                   n.e("51404"),
                   n.e("98042"),
                   n.e("13709"),
-                  n.e("84580"),
+                  n.e("47181"),
                   n.e("5036"),
                   n.e("63133"),
                   n.e("22513"),
                   n.e("13498"),
                   n.e("75058"),
-                  n.e("54718"),
+                  n.e("60571"),
                   n.e("71934"),
                   n.e("86483"),
                   n.e("31632"),
@@ -145449,10 +146083,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("17363"),
                   n.e("88941"),
                   n.e("34552"),
+                  n.e("58337"),
                   n.e("55411"),
                   n.e("93103"),
                   n.e("34530"),
-                  n.e("58337"),
                   n.e("61379"),
                   n.e("62680"),
                   n.e("43039"),
@@ -145725,7 +146359,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("7833"),
                   n.e("86243"),
                   n.e("32209"),
-                  n.e("48295"),
                   n.e("60249"),
                   n.e("39171"),
                   n.e("37021"),
@@ -146990,7 +147623,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("63397"),
               n.e("40841"),
               n.e("17918"),
-              n.e("25738"),
+              n.e("81349"),
               n.e("207"),
               n.e("98552"),
               n.e("34530"),
@@ -155099,6 +155732,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               }),
             )
           );
+        },
+        CONVERSATION_FETCH_SUCCESS: function (e) {
+          let { channelId: t, messages: n } = e,
+            i = d.A.getChannel(t);
+          return null != i && null != i.guild_id && m(i.guild_id, n);
         },
       });
     },
@@ -168419,7 +169057,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       n.r(t),
         n.d(t, {
           ASSISTANT_WUMPUS_VOICE_USER: () => N,
-          default: () => eM,
+          default: () => eG,
           mergeUser: () => D,
           transformUser: () => C,
           users: () => T,
@@ -168670,6 +169308,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         return t.forEach((e) => w(e, !0)), !1;
       }
       function H(e) {
+        let { messages: t } = e;
+        return t.forEach((e) => w(e, !0)), !1;
+      }
+      function Y(e) {
         let { pins: t } = e;
         return (
           t.forEach((e) => {
@@ -168679,11 +169321,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           !1
         );
       }
-      function Y(e) {
+      function W(e) {
         let { mostRecentMessages: t } = e;
         return t?.forEach((e) => w(e, !1)), !1;
       }
-      function W(e) {
+      function K(e) {
         let { data: t } = e;
         return (
           t.forEach((e) => {
@@ -168702,12 +169344,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           !1
         );
       }
-      function K(e) {
+      function j(e) {
         let { firstMessages: t, owners: n } = e;
         null != t && t.forEach((e) => w(e, !0)),
           null != n && n.forEach((e) => D(e.user, !0));
       }
-      function j(e) {
+      function $(e) {
         let { threads: t } = e;
         Object.values(t).forEach((e) => {
           let { first_message: t, most_recent_message: n, owner: i } = e;
@@ -168716,14 +169358,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             null != i && null != i.user && D(i.user, !0);
         });
       }
-      function $(e) {
+      function z(e) {
         let { supplementalData: t } = e;
         Object.values(t).forEach((e) => {
           let { message_preview: t } = e;
           null != t && w(t, !0);
         });
       }
-      function z(e) {
+      function q(e) {
         let { guildScheduledEventUsers: t, guildId: n } = e;
         t.forEach((e) => {
           let { user: t, member: i } = e;
@@ -168733,17 +169375,17 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           null != r && O(t.id, n, r);
         });
       }
-      function q(e) {
+      function X(e) {
         let { items: t } = e;
         t.forEach((e) => {
           null != e.other_user && D(e.other_user);
         });
       }
-      function X(e) {
+      function Q(e) {
         let { item: t } = e;
         null != t.other_user && D(t.other_user);
       }
-      function Q(e) {
+      function J(e) {
         let { message: t } = e;
         if ((w(t, !0), null != t.flags && r.Lt(t.flags, I.pr7.URGENT))) {
           let e = T[g.default.getId()];
@@ -168758,18 +169400,18 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         }
         return !1;
       }
-      function J(e) {
+      function Z(e) {
         let {
           channel: { rawRecipients: t },
         } = e;
         return null != t && t.forEach((e) => D(e)), !1;
       }
-      function Z(e) {
+      function ee(e) {
         let { channels: t } = e;
         for (let { rawRecipients: e } of t) null != e && e.forEach((e) => D(e));
         return !1;
       }
-      let ee = [
+      let et = [
         "username",
         "avatar",
         "global_name",
@@ -168777,13 +169419,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         "bot",
         "primary_guild",
       ];
-      function et(e) {
+      function en(e) {
         let { updates: t } = e;
         return t
           .map((e) => {
             let t = T[e.user.id];
             if (null == t) return !1;
-            let n = ee.reduce((n, r) => {
+            let n = et.reduce((n, r) => {
               if (e.user.hasOwnProperty(r)) {
                 let s = t.set((0, i.camelCase)(r), e.user[r]);
                 (n = n || s !== t), (t = s);
@@ -168794,25 +169436,25 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           })
           .some((e) => e);
       }
-      function en(e) {
-        let { bans: t } = e;
-        t.forEach((e) => D(e.user));
-      }
       function ei(e) {
         let { bans: t } = e;
         t.forEach((e) => D(e.user));
       }
       function er(e) {
-        return D(e.user);
+        let { bans: t } = e;
+        t.forEach((e) => D(e.user));
       }
       function es(e) {
-        return !!e.isMember && D(e.user);
+        return D(e.user);
       }
       function ea(e) {
+        return !!e.isMember && D(e.user);
+      }
+      function eo(e) {
         let t = D(e.user);
         return O(e.user.id, e.guildId, e.avatar) || t;
       }
-      function eo(e) {
+      function el(e) {
         let { ops: t } = e;
         for (let e of t)
           if ("INSERT" === e.op || "UPDATE" === e.op) {
@@ -168822,7 +169464,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           }
         return !1;
       }
-      function el(e) {
+      function e_(e) {
         let { chunks: t } = e,
           n = !1;
         for (let e of t)
@@ -168833,18 +169475,18 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, !1) || n;
         return n;
       }
-      function e_(e) {
+      function ed(e) {
         let t = !1;
         for (let n of e.members)
           D(n.user) && (t = !0), O(n.user.id, e.guildId, n.avatar) && (t = !0);
         return t;
       }
-      function ed(e) {
+      function eu(e) {
         let t = !1;
         for (let n of e.users ?? []) Object.hasOwn(T, n.id) || (t = D(n) || t);
         return t;
       }
-      function eu(e) {
+      function ec(e) {
         let { members: t } = e,
           n = !1;
         return (
@@ -168855,7 +169497,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n
         );
       }
-      function ec(e) {
+      function eE(e) {
         let { addedMembers: t } = e,
           n = !1;
         return (
@@ -168866,7 +169508,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n
         );
       }
-      function eE(e) {
+      function eh(e) {
         let { guild: t } = e;
         t.members.forEach((e) => {
           let {
@@ -168878,71 +169520,71 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             O(n, t.id, o);
         });
       }
-      function eh(e) {
+      function em(e) {
         return D(e.relationship.user);
       }
-      function em(e) {
+      function ef(e) {
         return D(e.gameRelationship.user);
       }
-      function ef(e) {
+      function eg(e) {
         let { relationships: t } = e;
         return t.reduce((e, t) => D(t.user) || e, !1);
       }
-      function eg(e) {
+      function eA(e) {
         return D(e.suggestion.suggested_user);
       }
-      function eA(e) {
+      function eI(e) {
         let { suggestions: t } = e;
         return t.reduce((e, t) => D(t.suggested_user) || e, !1);
       }
-      function eI(e) {
+      function ep(e) {
         let { users: t } = e;
         t.forEach((e) => {
           null == T[e.id] && (T[e.id] = new m.A(e));
         });
       }
-      function ep(e) {
+      function eT(e) {
         let { giftCode: t } = e;
         return null != t.user && D(t.user);
       }
-      function eT(e) {
+      function eS(e) {
         let { appliedBoosts: t } = e;
         t.forEach((e) => {
           let { user: t } = e;
           null != t && D(t);
         });
       }
-      function eS(e) {
+      function eN(e) {
         let { request: t } = e,
           { user: n, actioned_by_user: i } = t,
           r = !1;
         return null != n && (r = D(n)), null != i && (r = r || D(i)), r;
       }
-      function eN(e) {
+      function eO(e) {
         let { users: t, familyCenterTeenActivity: n } = e,
           { users: i } = n;
         return [...t, ...i].reduce((e, t) => D(t) || e, !1);
-      }
-      function eO(e) {
-        let { users: t } = e;
-        return t.reduce((e, t) => D(t) || e, !1);
       }
       function eR(e) {
         let { users: t } = e;
         return t.reduce((e, t) => D(t) || e, !1);
       }
       function eC(e) {
+        let { users: t } = e;
+        return t.reduce((e, t) => D(t) || e, !1);
+      }
+      function ey(e) {
         let { familyCenterTeenActivity: t } = e;
         if (void 0 === t) return;
         let { users: n } = t;
         return n.reduce((e, t) => D(t) || e, !1);
       }
-      function ey(e) {
+      function eD(e) {
         let { familyCenterTeenActivity: t } = e,
           { users: n } = t;
         return n.reduce((e, t) => D(t) || e, !1);
       }
-      function eD(e) {
+      function eL(e) {
         let { members: t } = e,
           n = g.default.getId();
         return t.reduce(
@@ -168950,17 +169592,17 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           !1,
         );
       }
-      function eL(e) {
+      function ev(e) {
         let { messageItems: t } = e;
         t.forEach((e) => {
           null != e.message && w(e.message, !0);
         }, !1);
       }
-      function ev(e) {
+      function ew(e) {
         let { participants: t } = e;
         return t.reduce((e, t) => ((0, a.A)(t) && D(t.member.user)) || e, !1);
       }
-      function ew(e) {
+      function eP(e) {
         let {} = e,
           t = T[g.default.getId()];
         return (
@@ -168972,7 +169614,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           !0)
         );
       }
-      function eP(e) {
+      function eb(e) {
         let { status: t } = e,
           n = T[g.default.getId()];
         return (
@@ -168981,15 +169623,15 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           ((T[g.default.getId()] = n.set("ageVerificationStatus", t)), !0)
         );
       }
-      function eb(e) {
+      function ek(e) {
         let { resolved: t } = e;
         return v(t, !0);
       }
-      function ek(e) {
+      function eU(e) {
         let { stickers: t } = e;
         return t.reduce((e, t) => (null != t.user && D(t.user)) || e, !1);
       }
-      class eU extends A.A {
+      class eM extends A.A {
         static displayName = "UserStore";
         static LATEST_SNAPSHOT_VERSION = 1;
         constructor() {
@@ -169003,63 +169645,64 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             USER_RESTRICTED_SCHEDULE_UPDATE: G,
             USER_PROFILE_FETCH_SUCCESS: x,
             CURRENT_USER_UPDATE: V,
-            PRESENCE_UPDATES: et,
-            SEARCH_MESSAGES_SUCCESS: W,
-            MOD_VIEW_SEARCH_MESSAGES_SUCCESS: W,
+            PRESENCE_UPDATES: en,
+            SEARCH_MESSAGES_SUCCESS: K,
+            MOD_VIEW_SEARCH_MESSAGES_SUCCESS: K,
             LOAD_MESSAGES_SUCCESS: B,
             LOAD_MESSAGES_AROUND_SUCCESS: B,
             LOAD_RECENT_MENTIONS_SUCCESS: B,
-            LOAD_PINNED_MESSAGES_SUCCESS: H,
-            THREAD_LIST_SYNC: Y,
-            MESSAGE_CREATE: Q,
-            MESSAGE_UPDATE: Q,
-            GUILD_SETTINGS_LOADED_BANS: en,
-            GUILD_SETTINGS_LOADED_BANS_BATCH: ei,
-            GUILD_CREATE: eE,
-            GUILD_BAN_ADD: er,
-            GUILD_BAN_REMOVE: er,
-            CHANNEL_RECIPIENT_ADD: es,
-            CHANNEL_RECIPIENT_REMOVE: es,
-            GUILD_STICKERS_FETCH_SUCCESS: ek,
-            GUILD_JOIN_REQUEST_CREATE: eS,
-            GUILD_JOIN_REQUEST_UPDATE: eS,
-            GUILD_MEMBER_ADD: ea,
-            GUILD_MEMBER_UPDATE: ea,
-            GUILD_MEMBERS_CHUNK_BATCH: el,
-            GUILD_MEMBER_LIST_UPDATE: eo,
-            THREAD_MEMBER_LIST_UPDATE: eu,
-            THREAD_MEMBERS_UPDATE: ec,
-            CHANNEL_CREATE: J,
-            CHANNEL_UPDATES: Z,
-            RELATIONSHIP_ADD: eh,
-            GAME_RELATIONSHIP_ADD: em,
-            LOAD_RELATIONSHIPS_SUCCESS: ef,
-            FRIEND_SUGGESTION_CREATE: eg,
-            LOAD_FRIEND_SUGGESTIONS_SUCCESS: eA,
-            AUDIT_LOG_FETCH_SUCCESS: eI,
-            AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: eI,
-            GIFT_CODE_RESOLVE_SUCCESS: ep,
-            GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: eT,
-            LOAD_THREADS_SUCCESS: K,
-            LOAD_ARCHIVED_THREADS_SUCCESS: K,
-            LOAD_FORUM_POSTS: j,
-            GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: z,
-            LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: q,
-            NOTIFICATION_CENTER_ITEM_CREATE: X,
-            LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: $,
-            PASSIVE_UPDATE_V2: e_,
-            LOCAL_MESSAGES_LOADED: ed,
-            FAMILY_CENTER_INITIAL_LOAD: eN,
-            FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eO,
-            FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: eC,
-            FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: ey,
-            FAMILY_CENTER_REQUEST_LINK_SUCCESS: eR,
-            MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eD,
-            LOAD_ICYMI_HYDRATED: eL,
-            EMBEDDED_ACTIVITY_UPDATE_V2: ev,
-            INITIATE_AGE_VERIFICATION: ew,
-            CLOSE_AGE_VERIFICATION_MODAL: eP,
-            INTERACTION_MODAL_CREATE: eb,
+            CONVERSATION_FETCH_SUCCESS: H,
+            LOAD_PINNED_MESSAGES_SUCCESS: Y,
+            THREAD_LIST_SYNC: W,
+            MESSAGE_CREATE: J,
+            MESSAGE_UPDATE: J,
+            GUILD_SETTINGS_LOADED_BANS: ei,
+            GUILD_SETTINGS_LOADED_BANS_BATCH: er,
+            GUILD_CREATE: eh,
+            GUILD_BAN_ADD: es,
+            GUILD_BAN_REMOVE: es,
+            CHANNEL_RECIPIENT_ADD: ea,
+            CHANNEL_RECIPIENT_REMOVE: ea,
+            GUILD_STICKERS_FETCH_SUCCESS: eU,
+            GUILD_JOIN_REQUEST_CREATE: eN,
+            GUILD_JOIN_REQUEST_UPDATE: eN,
+            GUILD_MEMBER_ADD: eo,
+            GUILD_MEMBER_UPDATE: eo,
+            GUILD_MEMBERS_CHUNK_BATCH: e_,
+            GUILD_MEMBER_LIST_UPDATE: el,
+            THREAD_MEMBER_LIST_UPDATE: ec,
+            THREAD_MEMBERS_UPDATE: eE,
+            CHANNEL_CREATE: Z,
+            CHANNEL_UPDATES: ee,
+            RELATIONSHIP_ADD: em,
+            GAME_RELATIONSHIP_ADD: ef,
+            LOAD_RELATIONSHIPS_SUCCESS: eg,
+            FRIEND_SUGGESTION_CREATE: eA,
+            LOAD_FRIEND_SUGGESTIONS_SUCCESS: eI,
+            AUDIT_LOG_FETCH_SUCCESS: ep,
+            AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: ep,
+            GIFT_CODE_RESOLVE_SUCCESS: eT,
+            GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: eS,
+            LOAD_THREADS_SUCCESS: j,
+            LOAD_ARCHIVED_THREADS_SUCCESS: j,
+            LOAD_FORUM_POSTS: $,
+            GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: q,
+            LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: X,
+            NOTIFICATION_CENTER_ITEM_CREATE: Q,
+            LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: z,
+            PASSIVE_UPDATE_V2: ed,
+            LOCAL_MESSAGES_LOADED: eu,
+            FAMILY_CENTER_INITIAL_LOAD: eO,
+            FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eR,
+            FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: ey,
+            FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: eD,
+            FAMILY_CENTER_REQUEST_LINK_SUCCESS: eC,
+            MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eL,
+            LOAD_ICYMI_HYDRATED: ev,
+            EMBEDDED_ACTIVITY_UPDATE_V2: ew,
+            INITIATE_AGE_VERIFICATION: eP,
+            CLOSE_AGE_VERIFICATION_MODAL: eb,
+            INTERACTION_MODAL_CREATE: ek,
           });
         }
         initialize() {
@@ -169068,12 +169711,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         takeSnapshot() {
           let e = this.getCurrentUser();
           return {
-            version: eU.LATEST_SNAPSHOT_VERSION,
+            version: eM.LATEST_SNAPSHOT_VERSION,
             data: { users: [e].filter(f.Vq) },
           };
         }
         handleLoadCache(e) {
-          let t = this.readSnapshot(eU.LATEST_SNAPSHOT_VERSION);
+          let t = this.readSnapshot(eM.LATEST_SNAPSHOT_VERSION);
           if (null != t) for (let e of t.users) T[e.id] = new m.A(e);
           if (null != e.users)
             for (let t of e.users)
@@ -169123,7 +169766,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return T[g.default.getId()];
         }
       }
-      let eM = new eU();
+      let eG = new eM();
     },
     117549(e, t, n) {
       "use strict";
@@ -174258,7 +174901,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "b3a6ab21cd7bb99adc0b1e01001f0cf967dee5b1",
+                    "86b6e1f5ed7b0a6d304638a86138637541a160d3",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -180091,7 +180734,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "536441",
+                  build_number: "536521",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -186298,7 +186941,7 @@ ${o.join(" +\n")}
       "use strict";
       n.d(t, { z: () => o });
       var i = n(64700),
-        r = n(123924),
+        r = n(519244),
         s = n(844222),
         a = n(384494);
       function o(e) {
@@ -186324,7 +186967,7 @@ ${o.join(" +\n")}
       "use strict";
       n.d(t, { p: () => o });
       var i = n(64700),
-        r = n(123924),
+        r = n(519244),
         s = n(844222),
         a = n(384494);
       function o(e, t) {
@@ -192499,7 +193142,7 @@ ${o.join(" +\n")}
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(123924),
+        o = n(519244),
         l = n(110259),
         _ = n(113325),
         d = n(187322),
@@ -193296,7 +193939,7 @@ ${o.join(" +\n")}
       n(64700);
       var r = n(503698),
         s = n.n(r),
-        a = n(123924),
+        a = n(519244),
         o = n(866323),
         l = n(892491),
         _ = n(150591),
@@ -196190,7 +196833,7 @@ ${o.join(" +\n")}
         s = n(64700),
         a = n(977418),
         o = n(967158),
-        l = n(123924),
+        l = n(519244),
         _ = n(823807),
         d = n(661531),
         u = n(717421),
@@ -196433,7 +197076,7 @@ ${o.join(" +\n")}
         r = n(64700),
         s = n(503698),
         a = n.n(s),
-        o = n(123924),
+        o = n(519244),
         l = n(661531),
         _ = n(717421),
         d = n(603392),
@@ -237636,4 +238279,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=8218.61cd4872f8810aaa.js.map
+//# sourceMappingURL=55347.50859a73b9ab942d.js.map

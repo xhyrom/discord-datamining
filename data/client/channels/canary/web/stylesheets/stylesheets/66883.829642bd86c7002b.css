@@ -1218,11 +1218,6 @@
 .buttonWrapper__24af7:hover {
   color: var(--interactive-text-active);
 }
-.pill_ed9a5f {
-  inset-inline-start: 0;
-  position: absolute;
-  top: 0;
-}
 .card_a23cbe {
   border-radius: var(--radius-sm);
   cursor: pointer;
@@ -4548,6 +4543,18 @@
   margin-top: 18px;
   text-align: center;
 }
+.optionHeader__1f657 {
+  margin-bottom: 8px;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+.scroller__1f657 {
+  height: 330px;
+  margin: 12px -12px 0;
+}
+.templatesList__1f657 {
+  padding: 0 12px;
+}
 .message__51673 {
   max-width: 432px;
 }
@@ -6019,4 +6026,4 @@
   width: 100%;
 }
 
-/*# sourceMappingURL=32181.6e18a553a0f18a9e.css.map*/
+/*# sourceMappingURL=66883.829642bd86c7002b.css.map*/
