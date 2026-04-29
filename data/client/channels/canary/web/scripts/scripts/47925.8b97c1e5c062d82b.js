@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["84804"],
+  ["47925"],
   {
     696354(e, t, n) {
       var i = {
@@ -23805,7 +23805,7 @@ ${s}`),
               n.e("58529"),
             ]).then(n.bind(n, 275256)),
           7: () =>
-            Promise.all([n.e("47715"), n.e("58407")]).then(n.bind(n, 939034)),
+            Promise.all([n.e("86052"), n.e("58407")]).then(n.bind(n, 939034)),
           8: () =>
             Promise.all([n.e("59858"), n.e("54282")]).then(n.bind(n, 140049)),
           9: () =>
@@ -26334,7 +26334,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 536875, Version Hash: 28069ce639e141b78ec22dd7c062d9d0dd285b09`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 536979, Version Hash: bae6cb8abf27c2a6ff8e2baf246557e95de4368f`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -43926,6 +43926,11 @@ ${s}`);
           inlineRequire: () => n(435736).Ay,
           neverLoadBeforeConnectionOpen: !0,
         },
+        OverlayFPSLimitExperimentManager: {
+          actions: ["POST_CONNECTION_OPEN", "LOGOUT"],
+          inlineRequire: () => n(186427).A,
+          hasStoreChangeListeners: !0,
+        },
         BugReporterManager: {
           actions: [
             "POST_CONNECTION_OPEN",
@@ -44159,8 +44164,10 @@ ${s}`);
             "RUNNING_GAMES_CHANGE",
             "CLIPS_RESTART",
             "RTC_CONNECTION_VIDEO",
+            "CLIPS_SAVE_CLIP",
+            "CLIPS_PROMOTE_CLIP_CANDIDATE",
           ],
-          inlineRequire: () => n(363222).A,
+          inlineRequire: () => n(485162).A,
           neverLoadBeforeConnectionOpen: !0,
         },
         ClipDecisionEngineManager: {
@@ -49081,7 +49088,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "28069ce639e141b78ec22dd7c062d9d0dd285b09" === e.body.hash
+                  "bae6cb8abf27c2a6ff8e2baf246557e95de4368f" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53050,7 +53057,7 @@ ${s}`);
                       n.e("41475"),
                       n.e("90673"),
                       n.e("8528"),
-                      n.e("47715"),
+                      n.e("86052"),
                       n.e("26132"),
                       n.e("46652"),
                       n.e("93190"),
@@ -53612,10 +53619,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("536875")),
+                ((e = parseInt("536979")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 536875",
+                    "Trying to open a changelog for an invalid build number 536979",
                   ),
                   (e = 0)),
                 e),
@@ -53678,7 +53685,7 @@ ${s}`);
                 n.e("75058"),
                 n.e("60571"),
                 n.e("71934"),
-                n.e("47715"),
+                n.e("86052"),
                 n.e("29139"),
                 n.e("56685"),
                 n.e("86483"),
@@ -55858,6 +55865,10 @@ ${s}`);
           CLIPS_CLEAR_NEW_CLIP_IDS: function () {
             k.newClipIds = [];
           },
+          CLIPS_REMOVE_SINGLE_NEW_CLIP_ID: function (e) {
+            let { clipId: t } = e;
+            k.newClipIds = k.newClipIds.filter((e) => e !== t);
+          },
           CLIPS_LOAD_DIRECTORY_SUCCESS: function (e) {
             for (let t of ((g = []), (N = []), e.clips))
               t.isCandidate
@@ -56859,37 +56870,40 @@ ${s}`);
       }
       let N = new S();
     },
-    363222(e, t, n) {
+    485162(e, t, n) {
       "use strict";
-      n.d(t, { A: () => H });
+      n.d(t, { A: () => j });
       var i,
-        r = n(691540),
-        s = n(97483),
-        a = n(228366),
-        o = n(328153),
-        l = n(616356),
-        _ = n(51760),
-        d = n(19575),
-        u = n(205693),
-        c = n(439372),
-        E = n(77729),
-        h = n(652896),
-        m = n(967347),
-        f = n(253932),
-        g = n(495544),
-        I = n(763827),
-        A = n(116956),
-        p = n(954571),
-        T = n(723702),
-        S = n(734066),
-        N = n(274372),
-        O = n(372684),
-        R = n(915618),
-        C = n(572164),
-        y = n(696016),
-        D = n(652215),
-        L = n(325278);
-      class v extends c.A {
+        r = n(192308),
+        s = n(691540),
+        a = n(97483),
+        o = n(228366),
+        l = n(793943),
+        _ = n(328153),
+        d = n(616356),
+        u = n(186111),
+        c = n(51760),
+        E = n(19575),
+        h = n(205693),
+        m = n(439372),
+        f = n(77729),
+        g = n(652896),
+        I = n(967347),
+        A = n(253932),
+        p = n(495544),
+        T = n(763827),
+        S = n(116956),
+        N = n(954571),
+        O = n(723702),
+        R = n(734066),
+        C = n(274372),
+        y = n(372684),
+        D = n(915618),
+        L = n(572164),
+        v = n(696016),
+        w = n(652215),
+        P = n(325278);
+      class b extends m.A {
         actions = {
           POST_CONNECTION_OPEN: (e) => this.handlePostConnectionOpen(),
           RTC_CONNECTION_FLAGS: (e) => this.handleRTCConnectionFlags(e),
@@ -56908,24 +56922,24 @@ ${s}`);
         };
         handleRTCConnectionState(e) {
           let { context: t, state: n, streamKey: i } = e;
-          if (!(0, S.Pm)() || n !== D.S7L.RTC_CONNECTED) return;
-          let r = g.default.getId();
-          if (t === u.x.DEFAULT) {
+          if (!(0, R.Pm)() || n !== w.S7L.RTC_CONNECTED) return;
+          let r = p.default.getId();
+          if (t === h.x.DEFAULT) {
             this.applyUserVoiceRecording(r),
               this.applyUserSoundboardRecording(r);
             return;
           }
-          if (t === u.x.STREAM && null != i) {
-            let { ownerId: e } = (0, h.Iy)(i);
+          if (t === h.x.STREAM && null != i) {
+            let { ownerId: e } = (0, g.Iy)(i);
             if (e !== r) return;
-            let t = A.A.getRTCConnection(i);
+            let t = S.A.getRTCConnection(i);
             if (null == t) return;
             this.applyStreamRecording(r, t);
           }
         }
         handleRTCUsersUpdate(e) {
           let { userIds: t, context: n } = e;
-          n === u.x.DEFAULT &&
+          n === h.x.DEFAULT &&
             t.forEach((e) => {
               this.applyUserVoiceRecording(e),
                 this.applyUserSoundboardRecording(e);
@@ -56936,9 +56950,9 @@ ${s}`);
           this.maybeShowClipsWarning(t),
             this.applyUserVoiceRecording(t),
             this.applyUserSoundboardRecording(t);
-          let r = A.A.getRTCConnection(
-            h._z({
-              streamType: null != i ? L.U4.GUILD : L.U4.CALL,
+          let r = S.A.getRTCConnection(
+            g._z({
+              streamType: null != i ? P.U4.GUILD : P.U4.CALL,
               ownerId: t,
               channelId: n,
               guildId: i,
@@ -56948,34 +56962,34 @@ ${s}`);
         }
         handleClipsInitFailure(e) {
           let { applicationName: t, errMsg: n } = e;
-          p.default.track(D.HAw.CLIPS_INIT_FAILURE, {
+          N.default.track(w.HAw.CLIPS_INIT_FAILURE, {
             application_name: t,
             error_message: n,
           });
         }
         maybeShowClipsWarning(e) {
-          let t = I.A.getChannelId();
+          let t = T.A.getChannelId();
           null == t ||
-            N.A.getClipsWarningShown(t) ||
-            e === g.default.getId() ||
-            !N.A.isClipsEnabledForUser(e) ||
-            (f.Q$.getSetting() &&
-              (a.h.dispatch({ type: "CLIPS_SHOW_CALL_WARNING", channelId: t }),
+            C.A.getClipsWarningShown(t) ||
+            e === p.default.getId() ||
+            !C.A.isClipsEnabledForUser(e) ||
+            (A.Q$.getSetting() &&
+              (o.h.dispatch({ type: "CLIPS_SHOW_CALL_WARNING", channelId: t }),
               this.showClipsToast()));
         }
         handleClipsAllowVoiceRecordingUpdate() {
-          I.A.getUserIds()?.forEach((e) => this.maybeShowClipsWarning(e));
+          T.A.getUserIds()?.forEach((e) => this.maybeShowClipsWarning(e));
         }
         handlePostConnectionOpen() {
-          !(0, R.A)(_.Ay) ||
+          !(0, D.A)(c.Ay) ||
             (this.applyNativeClipsSettings(),
-            (0, S.Pm)() &&
+            (0, R.Pm)() &&
               (this.loadClipsFromStorage(),
-              (null == N.A.getHardwareClassification() ||
-                null == N.A.getHardwareClassificationForDecoupled() ||
-                N.A.getHardwareClassificationVersion() !== y.V0) &&
+              (null == C.A.getHardwareClassification() ||
+                null == C.A.getHardwareClassificationForDecoupled() ||
+                C.A.getHardwareClassificationVersion() !== v.V0) &&
                 this.classifyHardwareAndTrack().then((e) => {
-                  a.h.dispatch({
+                  o.h.dispatch({
                     type: "CLIPS_CLASSIFY_HARDWARE",
                     classification: e,
                   });
@@ -56984,10 +56998,10 @@ ${s}`);
         loadClipsFromStorage() {}
         handleRTCConnectionVideo(e) {
           let { userId: t, context: n, channelId: i, guildId: r } = e;
-          if (n !== u.x.STREAM || !(0, R.A)(_.Ay)) return;
-          let s = A.A.getRTCConnection(
-            h._z({
-              streamType: null != r ? L.U4.GUILD : L.U4.CALL,
+          if (n !== h.x.STREAM || !(0, D.A)(c.Ay)) return;
+          let s = S.A.getRTCConnection(
+            g._z({
+              streamType: null != r ? P.U4.GUILD : P.U4.CALL,
               ownerId: t,
               channelId: i,
               guildId: r,
@@ -56998,14 +57012,14 @@ ${s}`);
         async classifyHardwareAndTrack() {
           try {
             let { gpuModels: e, classification: t } = await (async () => {
-              let e = await (0, m.w)();
+              let e = await (0, I.w)();
               if (e?.gpus != null) {
                 let t = e.gpus.map((e) => e.brand),
                   n = this.classifyHardware(t);
                 return { gpuModels: t, classification: n };
               }
               {
-                let e = (await E.A.processUtils.getSystemInfo()).gpus.map(
+                let e = (await f.A.processUtils.getSystemInfo()).gpus.map(
                     (e) => {
                       let { model: t } = e;
                       return t;
@@ -57016,64 +57030,65 @@ ${s}`);
               }
             })();
             return (
-              p.default.track(D.HAw.CLIPS_HARDWARE_CLASSIFICATION, {
+              N.default.track(w.HAw.CLIPS_HARDWARE_CLASSIFICATION, {
                 classification: t,
-                version: y.V0,
+                version: v.V0,
                 gpu_models: e,
               }),
               t
             );
           } catch (e) {
-            return O.k9.UNKNOWN;
+            return y.k9.UNKNOWN;
           }
         }
         classifyHardware(e) {
-          if ((0, T.isWindows)()) {
-            let t = e.some((e) => y.sc.test(e)),
-              n = e.some((e) => y.l_.test(e));
+          if ((0, O.isWindows)()) {
+            let t = e.some((e) => v.sc.test(e)),
+              n = e.some((e) => v.l_.test(e));
             return t
-              ? O.k9.MEETS_AUTO_ENABLE
+              ? y.k9.MEETS_AUTO_ENABLE
               : n
-                ? O.k9.MEETS_MINIMUM
-                : O.k9.BELOW_MINIMUM;
+                ? y.k9.MEETS_MINIMUM
+                : y.k9.BELOW_MINIMUM;
           }
-          return (0, T.isMac)()
-            ? "arm64" === E.A.app.getAppArch()
-              ? O.k9.MEETS_AUTO_ENABLE
-              : O.k9.MEETS_MINIMUM
-            : O.k9.UNKNOWN;
+          return (0, O.isMac)()
+            ? "arm64" === f.A.app.getAppArch()
+              ? y.k9.MEETS_AUTO_ENABLE
+              : y.k9.MEETS_MINIMUM
+            : y.k9.UNKNOWN;
         }
         applyUserVoiceRecording(e) {
-          if (!(0, R.A)(_.Ay)) return;
-          let t = I.A.getRTCConnection();
+          if (!(0, D.A)(c.Ay)) return;
+          let t = T.A.getRTCConnection();
           if (null == t) return;
-          if (e === g.default.getId())
-            return void t.setClipRecordUser(e, "audio", (0, C.TD)());
-          let n = N.A.isVoiceRecordingAllowedForUser(e);
+          if (e === p.default.getId())
+            return void t.setClipRecordUser(e, "audio", (0, L.TD)());
+          let n = C.A.isVoiceRecordingAllowedForUser(e);
           t.setClipRecordUser(e, "audio", n);
         }
         applyUserSoundboardRecording(e) {
-          if (!(0, R.A)(_.Ay)) return;
-          let t = I.A.getRTCConnection();
-          null != t && t.setClipRecordUser(e, "soundboard", (0, C.TD)());
+          if (!(0, D.A)(c.Ay)) return;
+          let t = T.A.getRTCConnection();
+          null != t && t.setClipRecordUser(e, "soundboard", (0, L.TD)());
         }
         applyStreamRecording(e, t) {
-          if ((0, R.A)(_.Ay) && g.default.getId() === e) {
-            let n = (0, C.TD)();
+          if ((0, D.A)(c.Ay) && p.default.getId() === e) {
+            let n = (0, L.TD)();
             t.setClipRecordUser(e, "audio", n),
               t.setClipRecordUser(e, "video", n);
             return;
           }
         }
       }
+      var k = n(150616);
       n(321073);
-      var w = n(626584),
-        P =
+      var U = n(626584),
+        M =
           (((i = {}).MISSING = "missing"),
           (i.DOWNLOADED = "downloaded"),
           (i.DOWNLOADING = "downloading"),
           i);
-      let b = [
+      let G = [
           [
             "laughter_screaming_krispy",
             "onnx",
@@ -57085,8 +57100,8 @@ ${s}`);
             "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe",
           ],
         ],
-        k = new w.A("ClipsAssetManager");
-      class U {
+        x = new U.A("ClipsAssetManager");
+      class V {
         state = {
           assets: {},
           assetState: {},
@@ -57099,30 +57114,30 @@ ${s}`);
         start() {
           !this.started &&
             ((this.started = !0),
-            k.info("Clips asset manager started"),
-            (0, C.TD)() &&
-              (k.info("Clips enabled on startup, prefetching assets"),
+            x.info("Clips asset manager started"),
+            (0, L.TD)() &&
+              (x.info("Clips enabled on startup, prefetching assets"),
               this.maybePrefetchAssets()));
         }
         stop() {
-          d.Ay.stopClipsDownloads(),
+          E.Ay.stopClipsDownloads(),
             this.activeDownloads.clear(),
             (this.started = !1),
-            k.info("Clips asset manager stopped");
+            x.info("Clips asset manager stopped");
         }
         getAssetState(e) {
           return this.state.assetState[e];
         }
         areAllAssetsDownloaded() {
           let e = Object.values(this.state.assetState);
-          return e.length > 0 && e.every((e) => e.status === P.DOWNLOADED);
+          return e.length > 0 && e.every((e) => e.status === M.DOWNLOADED);
         }
         async maybePrefetchAssets() {
-          if (!__OVERLAY__ && (0, T.isWindows)())
+          if (!__OVERLAY__ && (0, O.isWindows)())
             try {
               await this.refreshCatalog(), await this.prefetchAssets();
             } catch (e) {
-              k.warn(`Failed to prefetch clips assets: ${e.message}`);
+              x.warn(`Failed to prefetch clips assets: ${e.message}`);
             }
         }
         async refreshCatalog() {
@@ -57136,10 +57151,10 @@ ${s}`);
                 (this.state.catalogLastFetchTime = new Date()),
                 (this.state.catalogFetchFailed = !1);
               let t = Object.values(e.assets).map((e) => e.fileName);
-              await d.Ay.cleanupUnusedClipsFiles(t),
-                k.info("Clips asset catalog refreshed");
+              await E.Ay.cleanupUnusedClipsFiles(t),
+                x.info("Clips asset catalog refreshed");
             } catch (e) {
-              k.warn(`Failed to refresh clips asset catalog: ${e.message}`),
+              x.warn(`Failed to refresh clips asset catalog: ${e.message}`),
                 (this.state.catalogFetchFailed = !0);
             } finally {
               this.catalogRefreshing = !1;
@@ -57147,13 +57162,13 @@ ${s}`);
         }
         loadCatalog() {
           let e = { assets: {} };
-          for (let [t, n, i] of b)
+          for (let [t, n, i] of G)
             e.assets[t] = {
               url: `https://cdn.discordapp.com/assets/content/${i}.${n}`,
               fileName: `${t}.${n}`,
             };
           return (
-            k.info(
+            x.info(
               "Loaded clips asset catalog with assets:",
               Object.keys(e.assets),
             ),
@@ -57161,13 +57176,13 @@ ${s}`);
           );
         }
         async scanAssetState(e) {
-          if (!d.Ay.canCheckClipsFilesExist()) return;
+          if (!E.Ay.canCheckClipsFilesExist()) return;
           let t = Object.entries(e.assets).map((e) => {
             let [t, n] = e;
             return { id: t, fileName: n.fileName };
           });
-          for (let { id: e, exists: n } of await d.Ay.checkClipsFilesExist(t))
-            this.state.assetState[e] = { status: n ? P.DOWNLOADED : P.MISSING };
+          for (let { id: e, exists: n } of await E.Ay.checkClipsFilesExist(t))
+            this.state.assetState[e] = { status: n ? M.DOWNLOADED : M.MISSING };
         }
         async prefetchAssets() {
           if (__OVERLAY__) return;
@@ -57175,8 +57190,8 @@ ${s}`);
             t = [];
           for (let [n, i] of Object.entries(e)) {
             let e = this.state.assetState[n];
-            e?.status !== P.DOWNLOADED &&
-              e?.status !== P.DOWNLOADING &&
+            e?.status !== M.DOWNLOADED &&
+              e?.status !== M.DOWNLOADING &&
               t.push(
                 this.downloadAsset({
                   assetId: n,
@@ -57185,27 +57200,27 @@ ${s}`);
                 }),
               );
           }
-          k.info(`Waiting for ${t.length} clips asset downloads`),
+          x.info(`Waiting for ${t.length} clips asset downloads`),
             await Promise.all(t),
-            k.info("Finished downloading all clips assets");
+            x.info("Finished downloading all clips assets");
         }
         downloadAsset(e) {
           let { url: t, assetId: n, fileName: i } = e,
             r = this.state.assetState[n],
             s = this.activeDownloads.get(n);
           if (null != s) return s;
-          if (r?.status === P.DOWNLOADED) return Promise.resolve();
-          if (r?.status === P.DOWNLOADING)
+          if (r?.status === M.DOWNLOADED) return Promise.resolve();
+          if (r?.status === M.DOWNLOADING)
             return Promise.reject(
               Error(
                 "Clips asset is downloading but not in active downloads map",
               ),
             );
           this.state.assetState[n] = {
-            status: P.DOWNLOADING,
+            status: M.DOWNLOADING,
             downloadedBytes: 0,
           };
-          let a = d.Ay.downloadClipsFile(t, i, (e) => {
+          let a = E.Ay.downloadClipsFile(t, i, (e) => {
             let { downloadedBytes: t, totalBytes: i } = e;
             this.state.assetState[n] = {
               ...this.state.assetState[n],
@@ -57215,20 +57230,20 @@ ${s}`);
           })
             .then((e) => {
               e.fetchedFromNetwork &&
-                k.info("Downloaded clips asset from network:", n),
+                x.info("Downloaded clips asset from network:", n),
                 (this.state.assetState[n] = {
-                  status: P.DOWNLOADED,
+                  status: M.DOWNLOADED,
                   downloadedBytes: void 0,
                 });
             })
             .catch((t) => {
               t?.USER_CANCELED_DOWNLOAD
-                ? k.info("User canceled the download for clips asset", e)
-                : k.error("Failed to download clips asset", {
+                ? x.info("User canceled the download for clips asset", e)
+                : x.error("Failed to download clips asset", {
                     reason: t,
                     ...e,
                   }),
-                (this.state.assetState[n] = { status: P.MISSING });
+                (this.state.assetState[n] = { status: M.MISSING });
             })
             .finally(() => {
               this.activeDownloads.delete(n);
@@ -57236,28 +57251,50 @@ ${s}`);
           return this.activeDownloads.set(n, a), a;
         }
       }
-      let M = new U();
-      var G = n(399925);
+      let F = new V();
+      var B = n(399925);
       n(871421);
-      var x = n(731854),
-        V = n(985018);
-      let F = !1,
-        B = null,
-        H = new (class extends v {
+      var H = n(731854),
+        Y = n(985018);
+      let W = !1,
+        K = null,
+        j = new (class extends b {
+          constructor() {
+            super(),
+              Object.assign(this.actions, {
+                CLIPS_SAVE_CLIP: (e) => {
+                  let { clip: t } = e;
+                  t.isCandidate || this.maybeOpenReminderSidebar();
+                },
+                CLIPS_PROMOTE_CLIP_CANDIDATE: (e) =>
+                  this.maybeOpenReminderSidebar(),
+              });
+          }
+          maybeOpenReminderSidebar() {
+            let { enableReminderSidebar: e } = k.Z.getConfig({
+              location: "ClipsManager",
+            });
+            !e ||
+              !C.A.getSettings().remindersEnabled ||
+              l.fy.getState().activePanel === l.HP.CLIPS_REMINDER ||
+              u.A.hasLayers() ||
+              (0, r.hasAnyModalOpen)() ||
+              (0, l.nf)(l.HP.CLIPS_REMINDER);
+          }
           showClipsToast() {
-            (0, r.P0)({
+            (0, s.P0)({
               id: "CLIPS_IN_CALL_WARNING",
-              message: V.intl.string(V.t["d+41qJ"]),
-              type: s.Ck.CLIP,
-              options: { duration: y.Vi },
+              message: Y.intl.string(Y.t["d+41qJ"]),
+              type: a.Ck.CLIP,
+              options: { duration: v.Vi },
             });
           }
           applyNativeClipsSettings(e) {
-            if (!(0, R.A)(_.Ay)) return;
-            let t = _.Ay.getMediaEngine(),
+            if (!(0, D.A)(c.Ay)) return;
+            let t = c.Ay.getMediaEngine(),
               n = () => {
-                let n = N.A.getSettings(),
-                  i = (0, C.TD)();
+                let n = C.A.getSettings(),
+                  i = (0, L.TD)();
                 if (
                   (t.setClipBufferLength(i ? n.clipsLength / 1e3 : 0),
                   e?.settings.decoupledClipsEnabled === !0 &&
@@ -57274,31 +57311,31 @@ ${s}`);
                     this.fireClipsInitEvent();
                 }
               };
-            F || !t.supports(x.O5.CLIPS_V3)
+            W || !t.supports(H.O5.CLIPS_V3)
               ? n()
-              : (F
+              : (W
                   ? Promise.resolve()
-                  : null != B
-                    ? B
-                    : (B = (async () => {
+                  : null != K
+                    ? K
+                    : (K = (async () => {
                         try {
-                          await d.Ay.ensureModule("discord_clips");
+                          await E.Ay.ensureModule("discord_clips");
                           let e =
-                              d.Ay.requireModule(
+                              E.Ay.requireModule(
                                 "discord_clips",
                               ).getModulePath(),
-                            t = _.Ay.getMediaEngine(),
-                            n = d.Ay.getClipsDataDirSync();
+                            t = c.Ay.getMediaEngine(),
+                            n = E.Ay.getClipsDataDirSync();
                           t.setClipsDataPath(n),
-                            M.start(),
+                            F.start(),
                             t.setClipsModulePath(e),
-                            (F = !0),
-                            y.nx.info(
+                            (W = !0),
+                            v.nx.info(
                               "discord_clips module loaded, path: " + e,
                             );
                         } catch (e) {
-                          (B = null),
-                            y.nx.error(
+                          (K = null),
+                            v.nx.error(
                               "Failed to load discord_clips module",
                               e,
                             );
@@ -57307,20 +57344,20 @@ ${s}`);
                 ).then(n);
           }
           handleClipsInitOnToggleDetection(e) {
-            let t = o.Ay.getVisibleGame();
+            let t = _.Ay.getVisibleGame();
             null != t && t.id === e.game.id && this.fireClipsInitEvent();
           }
           handleClipsInitOnGamesChange(e) {
-            let t = o.Ay.getVisibleGame();
+            let t = _.Ay.getVisibleGame();
             null == t ||
               (e.added.find((e) => e.pid === t.pid)
-                ? setTimeout(() => this.fireClipsInitEvent(), y.dV)
+                ? setTimeout(() => this.fireClipsInitEvent(), v.dV)
                 : this.fireClipsInitEvent());
           }
           fireClipsInitEvent() {
-            if (!(0, C.TD)() || null != l.A.getCurrentUserActiveStream())
+            if (!(0, L.TD)() || null != d.A.getCurrentUserActiveStream())
               return;
-            let e = o.Ay.getVisibleGame();
+            let e = _.Ay.getVisibleGame();
             if (
               e?.pid == null ||
               e?.windowHandle == null ||
@@ -57328,8 +57365,8 @@ ${s}`);
               "" === e.name
             )
               return;
-            let t = N.A.getSettings();
-            a.h.dispatch({
+            let t = C.A.getSettings();
+            o.h.dispatch({
               type: "CLIPS_INIT",
               sourceId: `window:${e?.windowHandle}`,
               applicationName: e.name,
@@ -57337,10 +57374,10 @@ ${s}`);
             });
           }
           loadClipsFromStorage() {
-            let e = N.A.getSettings().storageLocation;
+            let e = C.A.getSettings().storageLocation;
             "" !== e &&
-              G.Fb(e).catch((e) => {
-                y.nx.error(
+              B.Fb(e).catch((e) => {
+                v.nx.error(
                   "Failed to load clips directory on connection open",
                   e,
                 );
@@ -57535,73 +57572,78 @@ ${s}`);
     },
     226870(e, t, n) {
       "use strict";
-      n.d(t, { d: () => d });
+      n.d(t, { d: () => u });
       var i = n(627968),
         r = n(64700),
         s = n(66455),
-        a = n(607470),
-        o = n(609174),
-        l = n(665039),
-        _ = n(204351);
-      let d = (e) => {
+        a = n(172218),
+        o = n(607470),
+        l = n(609174),
+        _ = n(665039),
+        d = n(204351);
+      let u = (e) => {
         let {
             isPlaying: t = !1,
             scrubOnHover: n = !1,
-            preload: d = "metadata",
-            children: u,
+            preload: u = "metadata",
+            lazy: c = !1,
+            children: E,
           } = e,
-          c = (0, o.Y_)(),
-          E = r.useRef(null),
-          h = (0, s.A)(c.editMetadata?.start ?? 0),
-          m = (0, l.j)(c),
-          f = 0 === c.length,
-          [g, I] = r.useState(0),
-          A = r.useCallback(
+          h = (0, l.Y_)(),
+          [m, f] = r.useState(!1),
+          g = r.useCallback((e) => f(e), []),
+          I = (0, a.K)(g, 0.15),
+          A = r.useRef(null),
+          p = (0, s.A)(h.editMetadata?.start ?? 0),
+          T = (0, _.j)(h),
+          S = 0 === h.length,
+          [N, O] = r.useState(0),
+          R = r.useCallback(
             (e) => {
-              let t = E.current;
+              let t = A.current;
               if (null == t) return;
-              let n = c.editMetadata?.start ?? 0,
-                i = c.editMetadata?.end ?? t.duration;
-              t.currentTime = Math.max(0, h.current + ((i - n) * e) / 100);
+              let n = h.editMetadata?.start ?? 0,
+                i = h.editMetadata?.end ?? t.duration;
+              t.currentTime = Math.max(0, p.current + ((i - n) * e) / 100);
             },
-            [E, h, c],
+            [A, p, h],
           ),
-          p = r.useCallback(
+          C = r.useCallback(
             (e) => {
-              if (!n || null == E.current) return;
-              let t = E.current.getBoundingClientRect();
-              A(((e.clientX - t.left) / t.width) * 100);
+              if (!n || null == A.current) return;
+              let t = A.current.getBoundingClientRect();
+              R(((e.clientX - t.left) / t.width) * 100);
             },
-            [E, n, A],
+            [A, n, R],
           );
         return (
           r.useEffect(() => {
-            if (f) return;
-            let e = E.current;
+            if (S) return;
+            let e = A.current;
             null == e ||
               ((!t || e.paused) &&
-                ((e.currentTime = h.current), t ? e.play() : e.pause()));
-          }, [t, E, f, h]),
+                ((e.currentTime = p.current), t ? e.play() : e.pause()));
+          }, [t, A, S, p, m]),
           r.useEffect(() => {
-            let e = E?.current;
-            if (null == e || f) return;
+            let e = A?.current;
+            if (null == e || S) return;
             let t = null,
               n = () => {
                 if (e.paused || e.ended) {
-                  (t = null), I(0);
+                  (t = null), O(0);
                   return;
                 }
-                let i = c.editMetadata?.start ?? 0,
-                  r = c.editMetadata?.end ?? e.duration,
+                let i = h.editMetadata?.start ?? 0,
+                  r = h.editMetadata?.end ?? e.duration,
                   s = ((e.currentTime - i) / (r - i)) * 100;
-                I(isNaN(s) ? 0 : Math.max(0, Math.min(100, s))),
+                O(isNaN(s) ? 0 : Math.max(0, Math.min(100, s))),
                   (t = requestAnimationFrame(n));
               },
               i = () => {
                 null == t && (t = requestAnimationFrame(n));
               },
               r = () => {
-                null != t && (cancelAnimationFrame(t), (t = null), I(0));
+                null != t && (cancelAnimationFrame(t), (t = null), O(0));
               };
             return (
               e.addEventListener("play", i),
@@ -57609,35 +57651,42 @@ ${s}`);
               e.addEventListener("ended", r),
               e.paused || i(),
               () => {
-                null != t && (cancelAnimationFrame(t), I(0)),
+                null != t && (cancelAnimationFrame(t), O(0)),
                   e.removeEventListener("play", i),
                   e.removeEventListener("pause", r),
                   e.removeEventListener("ended", r);
               }
             );
-          }, [E, f, c.editMetadata]),
+          }, [A, S, h.editMetadata, m]),
           (0, i.jsxs)("div", {
-            className: _.Q,
-            onMouseMove: p,
+            ref: I,
+            className: d.Q,
+            onMouseMove: C,
             children: [
-              f
+              S
                 ? (0, i.jsx)("img", {
                     alt: "",
-                    src: c.thumbnail,
-                    className: _.f,
+                    src: h.thumbnail,
+                    className: d.f,
                   })
-                : null != m
-                  ? (0, i.jsx)(a.A, {
-                      preload: d,
-                      poster: c.thumbnail,
-                      muted: !0,
-                      src: m,
-                      loop: !0,
-                      className: _.f,
-                      ref: E,
-                    })
+                : null != T
+                  ? c && !m
+                    ? (0, i.jsx)("img", {
+                        alt: "",
+                        src: h.thumbnail,
+                        className: d.f,
+                      })
+                    : (0, i.jsx)(o.A, {
+                        preload: u,
+                        poster: h.thumbnail,
+                        muted: !0,
+                        src: T,
+                        loop: !0,
+                        className: d.f,
+                        ref: A,
+                      })
                   : null,
-              u,
+              E,
             ],
           })
         );
@@ -57737,7 +57786,7 @@ ${s}`);
               n.e("40841"),
               n.e("8528"),
               n.e("47181"),
-              n.e("47715"),
+              n.e("86052"),
               n.e("13922"),
               n.e("20287"),
               n.e("88941"),
@@ -57875,7 +57924,7 @@ ${s}`);
                 n.e("5036"),
                 n.e("97271"),
                 n.e("71934"),
-                n.e("47715"),
+                n.e("86052"),
                 n.e("29139"),
                 n.e("86483"),
                 n.e("24092"),
@@ -62448,7 +62497,7 @@ ${s}`);
       let eh = (0, el.Fe)({
         createPromise: () =>
           Promise.all([
-            n.e("47715"),
+            n.e("86052"),
             n.e("40841"),
             n.e("8528"),
             n.e("47181"),
@@ -63351,7 +63400,7 @@ ${s}`);
             n.e("91652"),
             n.e("25013"),
             n.e("38589"),
-            n.e("78814"),
+            n.e("73652"),
             n.e("54792"),
             n.e("20803"),
             n.e("37698"),
@@ -63376,7 +63425,7 @@ ${s}`);
             n.e("6391"),
             n.e("64526"),
             n.e("92097"),
-            n.e("52709"),
+            n.e("75090"),
             n.e("15809"),
             n.e("9861"),
             n.e("24564"),
@@ -64137,21 +64186,20 @@ ${s}`);
             { scrubOnHover: o } = tw.Z.useConfig({
               location: "ClipsSidebarItem",
             }),
-            l = r.useRef(null),
-            _ = r.useCallback(() => a(!0), []),
-            d = r.useCallback(() => a(!1), []);
+            l = r.useCallback(() => a(!0), []),
+            _ = r.useCallback(() => a(!1), []);
           return null == t
             ? null
             : (0, i.jsx)("div", {
-                ref: l,
                 className: tY.Jr,
-                onMouseEnter: _,
-                onMouseLeave: d,
-                onFocus: _,
-                onBlur: d,
+                onMouseEnter: l,
+                onMouseLeave: _,
+                onFocus: l,
+                onBlur: _,
                 children: (0, i.jsx)(tM.Cl, {
                   clip: t,
                   children: (0, i.jsxs)(tB.d, {
+                    lazy: !0,
                     scrubOnHover: o,
                     isPlaying: !o && s,
                     preload: n ? "auto" : "metadata",
@@ -64187,9 +64235,7 @@ ${s}`);
       var t$ = n(542772);
       let tz = (e) => {
         let { clips: t } = e,
-          n =
-            (0, d.bG)([tP.A], () => tP.A.getLastClipsSession()?.newClipIds) ??
-            [];
+          n = (0, d.bG)([tP.A], () => tP.A.getNewClipIds()) ?? [];
         return (0, i.jsx)("div", {
           className: t$.u,
           children: t.map((e) =>
@@ -64204,21 +64250,33 @@ ${s}`);
         let { enableReminderSidebar: e } = tw.Z.useConfig({
             location: "ClipsReminderSidebar",
           }),
-          { clips: t, remindersEnabled: n } = (0, d.cf)([tP.A], () => {
-            let e = Date.now() - 6048e5;
-            return {
-              clips: tP.A.getClipIds()
-                .map((e) => tP.A.getClipById(e))
-                .filter((t) => t.createdAt > e)
-                .sort(tQ)
-                .slice(0, 15),
-              remindersEnabled: tP.A.getSettings().remindersEnabled,
-            };
-          });
+          { remindersEnabled: t } = (0, d.cf)([tP.A], () => ({
+            remindersEnabled: tP.A.getSettings().remindersEnabled,
+          })),
+          [n, s] = r.useState(() =>
+            tP.A.getNewClipIds()
+              .map(tP.A.getClipById)
+              .filter((e) => void 0 !== e)
+              .sort(tQ),
+          );
         return (r.useEffect(() => {
-          (e && n) || (0, t_.Jp)();
-        }, [e, n]),
-        e && n && 0 !== t.length)
+          let e = () => {
+            let e = tP.A.getNewClipIds();
+            s((t) =>
+              [
+                ...e.map(tP.A.getClipById).filter((e) => void 0 !== e),
+                ...t.filter(
+                  (t) => !e.includes(t.id) && null != tP.A.getClipById(t.id),
+                ),
+              ].sort(tQ),
+            );
+          };
+          return tP.A.addChangeListener(e), () => tP.A.removeChangeListener(e);
+        }, []),
+        r.useEffect(() => {
+          (e && t) || (0, t_.Jp)();
+        }, [e, t]),
+        e && t && 0 !== n.length)
           ? (0, i.jsxs)("div", {
               className: tX.kL,
               "data-app-right-panel": !0,
@@ -64236,7 +64294,7 @@ ${s}`);
                           color: ti.A.colors.TEXT_STRONG.css,
                         }),
                         eb.intl.formatToPlainString(tq.default.dFu8vZ, {
-                          count: t.length,
+                          count: n.length,
                         }),
                       ],
                     }),
@@ -64245,9 +64303,9 @@ ${s}`);
                 }),
                 (0, i.jsx)(ts.Ip, {
                   className: tX.Qs,
-                  children: (0, i.jsx)(tz, { clips: t }),
+                  children: (0, i.jsx)(tz, { clips: n }),
                 }),
-                (0, i.jsx)(tZ, { clips: t }),
+                (0, i.jsx)(tZ, { clips: n }),
               ],
             })
           : null;
@@ -67126,7 +67184,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "536875", versionHash: "28069ce639e141b78ec22dd7c062d9d0dd285b09" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "536979", versionHash: "bae6cb8abf27c2a6ff8e2baf246557e95de4368f" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -91559,7 +91617,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("31320"),
                   n.e("8528"),
                   n.e("47181"),
-                  n.e("47715"),
+                  n.e("86052"),
                   n.e("13709"),
                   n.e("40841"),
                   n.e("81349"),
@@ -91801,7 +91859,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("31320"),
                 n.e("8528"),
                 n.e("47181"),
-                n.e("47715"),
+                n.e("86052"),
                 n.e("13709"),
                 n.e("40841"),
                 n.e("81349"),
@@ -99513,7 +99571,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("75058"),
           n.e("60571"),
           n.e("71934"),
-          n.e("47715"),
+          n.e("86052"),
           n.e("29139"),
           n.e("56685"),
           n.e("86483"),
@@ -111262,6 +111320,55 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       }
       let c = new u();
     },
+    186427(e, t, n) {
+      "use strict";
+      n.d(t, { A: () => c });
+      var i = n(439372),
+        r = n(710195),
+        s = n(723702);
+      let a = (0, n(945810).mj)({
+        name: "2026-04-overlay-fps-limit",
+        kind: "user",
+        defaultConfig: { overlayFPSLimit: void 0, mainWindowFPSLimit: void 0 },
+        variations: {
+          1: { overlayFPSLimit: 60, mainWindowFPSLimit: void 0 },
+          2: { overlayFPSLimit: 30, mainWindowFPSLimit: void 0 },
+          3: { overlayFPSLimit: 30, mainWindowFPSLimit: 30 },
+        },
+      });
+      function o(e) {
+        let { location: t } = e;
+        return a.getConfig({ location: t });
+      }
+      let l = !1,
+        _ = null;
+      function d() {
+        (0, s.isWindows)() && (_ = o({ location: "updateSwitch" }));
+      }
+      class u extends i.A {
+        stores = new Map().set(r.A, () => {
+          if (l) {
+            let e = o({ location: "experimentStoreUpdate" });
+            _ !== e && d();
+          }
+        });
+        actions = {
+          POST_CONNECTION_OPEN: async () => {
+            l || ((0, s.isWindows)() && ((l = !0), await d()));
+          },
+          LOGOUT: () => {
+            (l = !1), (_ = null);
+          },
+        };
+        getOverlayFPSLimit() {
+          return _?.overlayFPSLimit;
+        }
+        getMainWindowFPSLimit() {
+          return _?.mainWindowFPSLimit;
+        }
+      }
+      let c = new u();
+    },
     435736(e, t, n) {
       "use strict";
       n.d(t, {
@@ -113042,7 +113149,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     327194(e, t, n) {
       "use strict";
-      n.d(t, { P: () => S });
+      n.d(t, { P: () => N });
       var i = n(77729),
         r = n(626584),
         s = n(869146),
@@ -113051,40 +113158,41 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         l = n(206885),
         _ = n(181435),
         d = n(48345),
-        u = n(489277),
-        c = n(682763),
-        E = n(96175),
-        h = n(905555),
-        m = n(237984),
-        f = n(392164);
-      let g = new r.A("OverlayV3NativeModule");
-      function I(e, t, n) {
-        (0, c._r)(e, "renderer_window_focus_changed", {
+        u = n(186427),
+        c = n(489277),
+        E = n(682763),
+        h = n(96175),
+        m = n(905555),
+        f = n(237984),
+        g = n(392164);
+      let I = new r.A("OverlayV3NativeModule");
+      function A(e, t, n) {
+        (0, E._r)(e, "renderer_window_focus_changed", {
           windowHandle: t,
-          popoutInitializationStages: u.A.getPopoutInitializationStages(),
+          popoutInitializationStages: c.A.getPopoutInitializationStages(),
         }),
-          (0, c.cS)(e, null != t ? (0, E.Oy)(t) : null, n);
-      }
-      function A(e) {
-        (0, c._r)(e, "renderer_window_focus_lost", {
-          popoutInitializationStages: u.A.getPopoutInitializationStages(),
-        }),
-          (0, c.C7)(e);
+          (0, E.cS)(e, null != t ? (0, h.Oy)(t) : null, n);
       }
       function p(e) {
-        (0, c._r)(e, "successfully_shown", {
-          popoutInitializationStages: u.A.getPopoutInitializationStages(),
+        (0, E._r)(e, "renderer_window_focus_lost", {
+          popoutInitializationStages: c.A.getPopoutInitializationStages(),
         }),
-          (0, c.oW)(e);
+          (0, E.C7)(e);
       }
       function T(e) {
-        (0, c._r)(null, "window_handle_initialized", {
-          real_initialized: e,
-          popoutInitializationStages: u.A.getPopoutInitializationStages(),
+        (0, E._r)(e, "successfully_shown", {
+          popoutInitializationStages: c.A.getPopoutInitializationStages(),
         }),
-          (0, c.i0)(e);
+          (0, E.oW)(e);
       }
-      class S {
+      function S(e) {
+        (0, E._r)(null, "window_handle_initialized", {
+          real_initialized: e,
+          popoutInitializationStages: c.A.getPopoutInitializationStages(),
+        }),
+          (0, E.i0)(e);
+      }
+      class N {
         static instance = null;
         module = null;
         modulePromise = null;
@@ -113093,7 +113201,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         trackedGamePids = new Set();
         static getInstance() {
           return (
-            null == this.instance && (this.instance = new S()), this.instance
+            null == this.instance && (this.instance = new N()), this.instance
           );
         }
         async initialize() {
@@ -113107,7 +113215,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           (this.module = null),
             (this.lastAssociatedPID = null),
             (this.trackedGamePids = new Set()),
-            g.info("OverlayV3 Native Module destroyed");
+            I.info("OverlayV3 Native Module destroyed");
         }
         getLastAssociatedPID() {
           return this.lastAssociatedPID;
@@ -113121,10 +113229,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         }
         async loadOutOfProcessOverlayModule() {
           if (!l.O)
-            return void g.error(
+            return void I.error(
               "Attempted to load overlay on an unsupported platform.",
             );
-          g.info("Loading Out of Process Overlay Module");
+          I.info("Loading Out of Process Overlay Module");
           try {
             var e;
             await a.Ay.ensureModule("discord_desktop_overlay");
@@ -113136,22 +113244,22 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 (e) => this.refreshOutOfProcessOverlayHostWindow(e),
               ),
               (this.module = t),
-              (0, c._r)(null, "module_loaded"),
+              (0, E._r)(null, "module_loaded"),
               (0, o.setOutOfProcessSupport)(!0),
               (e = this.module),
-              e.setFocusCallback?.(I),
-              e.setFocusLostCallback?.(A),
-              e.setSuccessfullyShownCallback?.(p),
-              e.setOnWindowHandleInitializedCallback?.(T),
-              (0, c._r)(null, "native_module_callbacks_setup"),
-              g.verbose("Native module callbacks setup"),
-              (0, c.Mi)(),
-              g.info("OverlayV3 Module Loaded");
+              e.setFocusCallback?.(A),
+              e.setFocusLostCallback?.(p),
+              e.setSuccessfullyShownCallback?.(T),
+              e.setOnWindowHandleInitializedCallback?.(S),
+              (0, E._r)(null, "native_module_callbacks_setup"),
+              I.verbose("Native module callbacks setup"),
+              (0, E.Mi)(),
+              I.info("OverlayV3 Module Loaded");
           } catch (e) {
             throw (
-              (g.error("failed loading overlay module", e),
+              (I.error("failed loading overlay module", e),
               (0, o.setOutOfProcessSupport)(!1),
-              (0, c.wK)(e),
+              (0, E.wK)(e),
               (this.module = null),
               (this.modulePromise = null),
               e)
@@ -113159,22 +113267,22 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           }
         }
         async createOutOfProcessOverlayHostWindow(e) {
-          g.verbose(`Creating OOP Host Window for pid ${e}`), (0, c.wX)(e);
+          I.verbose(`Creating OOP Host Window for pid ${e}`), (0, E.wX)(e);
           let t = null;
           try {
-            (0, c._r)(e, "host_window_mounting_started", {
-              popoutInitializationStages: u.A.getPopoutInitializationStages(),
+            (0, E._r)(e, "host_window_mounting_started", {
+              popoutInitializationStages: c.A.getPopoutInitializationStages(),
             }),
-              await (0, h.H)(),
+              await (0, m.H)(),
               (t = await this.openOverlayPopout()),
-              await (0, c.hJ)(e),
-              (0, c._r)(e, "host_window_created", {
+              await (0, E.hJ)(e),
+              (0, E._r)(e, "host_window_created", {
                 hasWindow: null != t,
-                popoutInitializationStages: u.A.getPopoutInitializationStages(),
+                popoutInitializationStages: c.A.getPopoutInitializationStages(),
               });
           } catch (t) {
-            g.error("Error creating OOP host window:", t),
-              (0, c._r)(
+            I.error("Error creating OOP host window:", t),
+              (0, E._r)(
                 e,
                 "host_window_mounting_failed",
                 { error: t },
@@ -113182,10 +113290,15 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               );
           }
           try {
-            i.A.window.setBackgroundThrottling(!1);
+            i.A?.window?.setBackgroundThrottling(!1),
+              i.A?.window?.setFrameRate?.(g.f, u.A.getOverlayFPSLimit() ?? 0),
+              i.A?.window?.setFrameRate?.(
+                null,
+                u.A.getMainWindowFPSLimit() ?? 0,
+              );
           } catch (t) {
-            g.error("Error setting background throttling:", t),
-              (0, c._r)(
+            I.error("Error setting background throttling:", t),
+              (0, E._r)(
                 e,
                 "background_throttling_setting_failed",
                 { error: t },
@@ -113196,18 +113309,18 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           try {
             (n = await this.getNativeWindowHandleWithRetry()),
               d.A.resetWindowState(),
-              (0, c._r)(e, "native_window_handle_retrieved", {
+              (0, E._r)(e, "native_window_handle_retrieved", {
                 handle: n,
                 hasWindow: null != n,
-                popoutInitializationStages: u.A.getPopoutInitializationStages(),
+                popoutInitializationStages: c.A.getPopoutInitializationStages(),
               }),
-              await (0, c.pi)(e, n),
+              await (0, E.pi)(e, n),
               this.module?.setOnWindowHandleInitializedCallback == null &&
-                (await (0, c.i0)(!0));
+                (await (0, E.i0)(!0));
           } catch (t) {
-            g.error("Error getting native window handle:", t),
-              (0, c.lo)(e, t, n),
-              (0, c._r)(
+            I.error("Error getting native window handle:", t),
+              (0, E.lo)(e, t, n),
+              (0, E._r)(
                 e,
                 "native_window_handle_retrieval_failed",
                 {
@@ -113215,14 +113328,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   handle: n,
                   hasWindow: null != n,
                   popoutInitializationStages:
-                    u.A.getPopoutInitializationStages(),
+                    c.A.getPopoutInitializationStages(),
                 },
                 _.QJ.Error,
               );
           }
           return (
             null == n
-              ? (0, c.mD)(e, Error("Native window handle not found"), {
+              ? (0, E.mD)(e, Error("Native window handle not found"), {
                   crashType: "native",
                   isCrashedDisabled: !0,
                 })
@@ -113231,27 +113344,29 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           );
         }
         destroyOutOfProcessOverlayHostWindow() {
-          g.verbose("Destroying OOP host window"),
-            (0, c._r)(this.lastAssociatedPID, "host_window_destroyed");
+          I.verbose("Destroying OOP host window"),
+            (0, E._r)(this.lastAssociatedPID, "host_window_destroyed");
           try {
-            i.A?.window?.close(f.f),
+            i.A?.window?.close(g.f),
               i.A?.window?.setBackgroundThrottling(!0),
+              i.A?.window?.setFrameRate?.(g.f, 0),
+              i.A?.window?.setFrameRate?.(null, 0),
               d.A.resetWindowState(!1);
           } catch (e) {
-            g.error("Error closing overlay window:", e);
+            I.error("Error closing overlay window:", e);
           }
-          (0, c.bF)(this.lastAssociatedPID), (this.lastAssociatedPID = null);
+          (0, E.bF)(this.lastAssociatedPID), (this.lastAssociatedPID = null);
         }
         refreshOutOfProcessOverlayHostWindow(e) {
-          g.verbose(`Refreshing OOP host window for pid ${e}`),
-            (0, c._r)(e, "host_window_refreshing_started", {
-              popoutInitializationStages: u.A.getPopoutInitializationStages(),
+          I.verbose(`Refreshing OOP host window for pid ${e}`),
+            (0, E._r)(e, "host_window_refreshing_started", {
+              popoutInitializationStages: c.A.getPopoutInitializationStages(),
             }),
-            (0, c.ot)(e, this.lastAssociatedPID),
+            (0, E.ot)(e, this.lastAssociatedPID),
             (this.lastAssociatedPID = e);
         }
         async openOverlayPopout() {
-          return await (0, m.o)(), await this.getWindowWithRetry();
+          return await (0, f.o)(), await this.getWindowWithRetry();
         }
         async getWithRetry(e) {
           let t =
@@ -113286,7 +113401,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 : 3;
           return await this.getWithRetry(
             () => {
-              let e = s.A.getWindow(f.f);
+              let e = s.A.getWindow(g.f);
               if (null == e) throw Error("Overlay popout window not found");
               return Promise.resolve(e);
             },
@@ -113305,8 +113420,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 : 3;
           return await this.getWithRetry(
             async () => {
-              let e = await i.A?.window?.getNativeHandle(f.f);
-              return null != e ? (0, E.Oy)(e) : null;
+              let e = await i.A?.window?.getNativeHandle(g.f);
+              return null != e ? (0, h.Oy)(e) : null;
             },
             e,
             t,
@@ -113329,13 +113444,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         }
         setRenderingWindowHandle(e, t) {
           this.module?.setRenderingWindowHandle?.(e),
-            g.verbose(`Setting rendering window handle for pid ${t}: ${e}`);
+            I.verbose(`Setting rendering window handle for pid ${t}: ${e}`);
         }
         setInteractionEnabled(e) {
           this.module?.setInteractionEnabled?.(e);
         }
         setLimitedInteraction(e) {
-          this.module?.setLimitedInteraction?.(e), a.Ay.setFocusable(f.f, !e);
+          this.module?.setLimitedInteraction?.(e), a.Ay.setFocusable(g.f, !e);
         }
         setCaptureZoneCallback(e) {
           this.module?.setCaptureZoneCallback?.(e);
@@ -113350,7 +113465,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           null != this.module &&
             (this.module.trackGame(e),
             this.trackedGamePids.add(e),
-            (0, c.wb)(e));
+            (0, E.wb)(e));
         }
         untrackGame(e) {
           if (null == this.module) return;
@@ -113361,7 +113476,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             : this.lastAssociatedPID === e &&
               null == t &&
               (this.lastAssociatedPID = null),
-            (0, c.Lt)(e);
+            (0, E.Lt)(e);
         }
       }
     },
@@ -113692,7 +113807,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("22513"),
               n.e("13498"),
               n.e("71934"),
-              n.e("47715"),
+              n.e("86052"),
               n.e("29139"),
               n.e("86483"),
               n.e("31632"),
@@ -114417,7 +114532,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("50541"),
               n.e("37886"),
               n.e("25013"),
-              n.e("78814"),
+              n.e("73652"),
               n.e("27687"),
               n.e("58581"),
               n.e("45419"),
@@ -115389,7 +115504,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("75058"),
               n.e("60571"),
               n.e("71934"),
-              n.e("47715"),
+              n.e("86052"),
               n.e("29139"),
               n.e("56685"),
               n.e("86483"),
@@ -118074,7 +118189,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("75058"),
               n.e("60571"),
               n.e("71934"),
-              n.e("47715"),
+              n.e("86052"),
               n.e("29139"),
               n.e("56685"),
               n.e("86483"),
@@ -143630,7 +143745,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("63133"),
               n.e("75058"),
               n.e("71934"),
-              n.e("47715"),
+              n.e("86052"),
               n.e("29139"),
               n.e("56685"),
               n.e("86483"),
@@ -143898,7 +144013,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("97271"),
               n.e("63133"),
               n.e("71934"),
-              n.e("47715"),
+              n.e("86052"),
               n.e("22513"),
               n.e("29139"),
               n.e("56685"),
@@ -144113,7 +144228,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("36613"),
               n.e("13709"),
               n.e("41475"),
-              n.e("47715"),
+              n.e("86052"),
               n.e("47181"),
               n.e("40841"),
               n.e("81349"),
@@ -147194,7 +147309,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 let { default: t } = await Promise.all([
                   n.e("3215"),
                   n.e("31320"),
-                  n.e("47715"),
+                  n.e("86052"),
                   n.e("33092"),
                   n.e("29139"),
                   n.e("24211"),
@@ -148025,7 +148140,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("37886"),
                   n.e("23324"),
                   n.e("25013"),
-                  n.e("78814"),
+                  n.e("73652"),
                   n.e("54792"),
                   n.e("20803"),
                   n.e("95782"),
@@ -176159,7 +176274,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "28069ce639e141b78ec22dd7c062d9d0dd285b09",
+                    "bae6cb8abf27c2a6ff8e2baf246557e95de4368f",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -181992,7 +182107,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "536875",
+                  build_number: "536979",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -185717,7 +185832,7 @@ ${o.join(" +\n")}
         null == u || c
           ? (0, r.openModalLazy)(async () => {
               let { default: r } = await Promise.all([
-                n.e("47715"),
+                n.e("86052"),
                 n.e("8528"),
                 n.e("19573"),
                 n.e("28866"),
@@ -239517,4 +239632,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=84804.62d5cbfc603e2aa5.js.map
+//# sourceMappingURL=47925.8b97c1e5c062d82b.js.map

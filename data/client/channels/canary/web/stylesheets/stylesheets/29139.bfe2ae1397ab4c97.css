@@ -4306,9 +4306,9 @@
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  line-height: 1.25rem;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -6018,4 +6018,4 @@
   position: absolute;
 }
 
-/*# sourceMappingURL=29139.d545d8dbd2e25cc1.css.map*/
+/*# sourceMappingURL=29139.bfe2ae1397ab4c97.css.map*/
