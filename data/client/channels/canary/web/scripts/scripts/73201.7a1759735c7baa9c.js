@@ -1,9 +1,12 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["15900"],
+  ["73201"],
   {
     64684(e, _, i) {
       e.exports = { J: "canvas_eb6eba" };
+    },
+    161148(e, _, i) {
+      e.exports = { n: "havenPipWrapper__3bbd0" };
     },
     423562(e, _, i) {
       e.exports = {

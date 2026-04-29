@@ -1,7 +1,10 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["63397"],
+  ["8528"],
   {
+    402693(e, _, a) {
+      e.exports = { I: "applicationIcon_c4891f", e: "seasonalIcon_c4891f" };
+    },
     536554(e, _, a) {
       e.exports = {
         N4: "note__2ef07",
@@ -207,10 +210,10 @@
         im: "staple__7d80f",
         Mn: "top__7d80f",
         sQ: "bottom__7d80f",
+        PQ: "border__7d80f",
         H$: "rail__7d80f",
         no: "responsive__7d80f",
         gX: "center__7d80f",
-        PQ: "border__7d80f",
       };
     },
     628538(e, _, a) {
@@ -788,9 +791,6 @@
         A: "fromGuildCard__9fe74",
         P4: "toGuildCardBorder__9fe74",
       };
-    },
-    468878(e, _, a) {
-      e.exports = { k: "errorText__38262" };
     },
     907305(e, _, a) {
       e.exports = {

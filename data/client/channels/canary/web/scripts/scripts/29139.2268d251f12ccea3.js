@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["66883"],
+  ["29139"],
   {
     349887(e, _, t) {
       e.exports = {
@@ -382,13 +382,6 @@
         UE: "arrow_eb2cd2",
       };
     },
-    290125(e, _, t) {
-      e.exports = {
-        l8: "optionHeader__1f657",
-        XG: "scroller__1f657",
-        KA: "templatesList__1f657",
-      };
-    },
     873185(e, _, t) {
       e.exports = {
         kL: "container__7e6bb",
@@ -541,9 +534,6 @@
         R: "hidden__5adc3",
         ps: "interactionOverlay__5adc3",
       };
-    },
-    161148(e, _, t) {
-      e.exports = { n: "havenPipWrapper__3bbd0" };
     },
     840275(e, _, t) {
       e.exports = {
@@ -853,6 +843,7 @@
     539396(e, _, t) {
       e.exports = {
         kL: "container__32139",
+        oE: "compact__32139",
         qG: "fadeIn__32139",
         VH: "preview__32139",
         LL: "editable__32139",
@@ -1029,6 +1020,9 @@
     },
     35783(e, _, t) {
       e.exports = { d: "displayNameContent_b51b39" };
+    },
+    469432(e, _, t) {
+      e.exports = { k: "container__54560", J: "isEditing__54560" };
     },
     103579(e, _, t) {
       e.exports = {

@@ -1,3 +1,15 @@
+.havenPipWrapper__3bbd0 {
+  background: var(--black);
+  overflow: hidden;
+  pointer-events: none;
+  position: relative;
+}
+.havenContainer__3bbd0 {
+  border-radius: 0;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
 .pictureInPicture__6341f {
   inset-inline-start: 0;
   position: absolute;
@@ -57,4 +69,4 @@
   z-index: 10000;
 }
 
-/*# sourceMappingURL=15900.61aef753bb65e874.css.map*/
+/*# sourceMappingURL=73201.81e1b859e9e11532.css.map*/

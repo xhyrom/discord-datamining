@@ -437,7 +437,7 @@ img.messageBadge__10651 {
   --custom-profile-frame-overflow-horizontal: 14;
   --custom-profile-frame-popout-overflow-top: 77;
   --custom-profile-frame-popout-overflow-bottom: 53;
-  --custom-profile-frame-popout-width: 304;
+  --custom-profile-frame-popout-width: 300;
 }
 :root .theme-midnight {
   --custom-profile-frame-drop-shadow-opacity: 0.6;
@@ -539,8 +539,12 @@ img.messageBadge__10651 {
       rgba(0, 0, 0, var(--custom-profile-frame-drop-shadow-opacity))
   );
 }
+.profileFrameLayer__7d80f.border__7d80f,
 .profileFrameLayer__7d80f.rail__7d80f {
-  display: flex;
+  background-size: 100% auto;
+}
+.profileFrameLayer__7d80f.rail__7d80f {
+  background-repeat: no-repeat;
   height: 100%;
   overflow: hidden;
   @container (max-height: 480px) {
@@ -549,24 +553,17 @@ img.messageBadge__10651 {
     }
   }
 }
-.profileFrameLayer__7d80f.rail__7d80f > img {
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 100%;
-}
 .profileFrameLayer__7d80f.rail__7d80f.center__7d80f {
-  align-items: center;
+  background-position: 50%;
 }
 .profileFrameLayer__7d80f.rail__7d80f.top__7d80f {
-  align-items: flex-start;
+  background-position: top;
 }
 .profileFrameLayer__7d80f.rail__7d80f.bottom__7d80f {
-  align-items: flex-end;
+  background-position: bottom;
 }
 .profileFrameLayer__7d80f.border__7d80f {
-  background-image: var(--custom-profile-frame-layer-src);
   background-repeat: repeat-y;
-  background-size: 100% auto;
   height: 100%;
 }
 @keyframes fadeIn__7d80f {
@@ -1185,6 +1182,12 @@ img.messageBadge__10651 {
 .gameIconLoading_b52e4f {
   animation: placeholderPulse_b52e4f 1.3s ease-in-out infinite;
   background-color: var(--background-mod-normal);
+}
+.applicationIcon_c4891f {
+  margin-inline-end: 8px;
+}
+.seasonalIcon_c4891f {
+  height: 120px;
 }
 .iconContainer__0ecc4 {
   color: var(--text-default);
@@ -5965,9 +5968,6 @@ img.messageBadge__10651 {
 .reverseTrialContextMarginBottom__945b8 {
   margin-bottom: 8px;
 }
-.errorText__38262 {
-  margin-top: var(--space-4);
-}
 .formContent__30f2d {
   width: 100%;
 }
@@ -6269,4 +6269,4 @@ html .invoiceCancelRow__968a4 {
   margin-bottom: 16px;
 }
 
-/*# sourceMappingURL=63397.ab4bae32a3dbfef2.css.map*/
+/*# sourceMappingURL=8528.d11a9933324a5729.css.map*/
