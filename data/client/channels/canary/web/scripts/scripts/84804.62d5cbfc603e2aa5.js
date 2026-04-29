@@ -26334,7 +26334,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 536797, Version Hash: b97073eec0b197e4983614d5cc478be731af45d0`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 536875, Version Hash: 28069ce639e141b78ec22dd7c062d9d0dd285b09`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -43622,6 +43622,11 @@ ${s}`);
           actions: ["POST_CONNECTION_OPEN"],
           inlineRequire: () => n(687829).A,
         },
+        DesktopTTIClearV8CacheExperimentManager: {
+          actions: ["POST_CONNECTION_OPEN", "LOGOUT"],
+          inlineRequire: () => n(107653).A,
+          hasStoreChangeListeners: !0,
+        },
         DesktopTTIDnsTcpWarmupExperimentManager: {
           actions: ["POST_CONNECTION_OPEN", "LOGOUT"],
           inlineRequire: () => n(388427).A,
@@ -49076,7 +49081,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "b97073eec0b197e4983614d5cc478be731af45d0" === e.body.hash
+                  "28069ce639e141b78ec22dd7c062d9d0dd285b09" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53607,10 +53612,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("536797")),
+                ((e = parseInt("536875")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 536797",
+                    "Trying to open a changelog for an invalid build number 536875",
                   ),
                   (e = 0)),
                 e),
@@ -54504,9 +54509,11 @@ ${s}`);
                 checkoutInvoicePreview: t,
                 standaloneInvoiceOrderContext: n,
               } = e;
-              return null != t && null != t.checkoutContext
-                ? t.checkoutContext
-                : n;
+              return null != n
+                ? n
+                : null != t && null != t.checkoutContext
+                  ? t.checkoutContext
+                  : null;
             }),
             {
               paymentSourceRecords: t,
@@ -67119,7 +67126,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "536797", versionHash: "b97073eec0b197e4983614d5cc478be731af45d0" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "536875", versionHash: "28069ce639e141b78ec22dd7c062d9d0dd285b09" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -67913,6 +67920,53 @@ ${C}`;
         }
       }
       let f = new m();
+    },
+    107653(e, t, n) {
+      "use strict";
+      n.d(t, { A: () => c });
+      var i = n(439372),
+        r = n(710195),
+        s = n(723702);
+      let a = (0, n(945810).mj)({
+        name: "2026-04-desktop-tti-v8-cache",
+        kind: "user",
+        defaultConfig: { enabled: !1 },
+        variations: { 1: { enabled: !0 } },
+      });
+      function o(e) {
+        let { location: t } = e;
+        return a.getConfig({ location: t });
+      }
+      let l = !1,
+        _ = null;
+      async function d() {
+        if (!(0, s.isDesktop)() || window.DiscordNative?.settings?.set == null)
+          return;
+        let { enabled: e } = o({ location: "updateSwitch" }),
+          t = "DESKTOP_TTI_REMOVE_V8_CACHE_CLEAR";
+        e !== (await window.DiscordNative.settings.get(t, !1)) &&
+          (await window.DiscordNative.settings.set(t, e)),
+          (_ = e);
+      }
+      class u extends i.A {
+        stores = new Map().set(r.A, () => {
+          if (l) {
+            let { enabled: e } = o({ location: "experimentStoreUpdate" });
+            _ !== e && d();
+          }
+        });
+        actions = {
+          POST_CONNECTION_OPEN: async () => {
+            l ||
+              window.DiscordNative?.settings?.set == null ||
+              ((0, s.isDesktop)() && ((l = !0), await d()));
+          },
+          LOGOUT: () => {
+            (l = !1), (_ = null);
+          },
+        };
+      }
+      let c = new u();
     },
     388427(e, t, n) {
       "use strict";
@@ -104672,7 +104726,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     },
     451909(e, t, n) {
       "use strict";
-      n.d(t, { Ay: () => J }), n(321073);
+      n.d(t, { Ay: () => Z }), n(321073);
       var i = n(735438),
         r = n.n(i),
         s = n(791332),
@@ -104698,12 +104752,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         R = n(287809),
         C = n(768038),
         y = n(690521),
-        D = n(562153),
-        L = n(427262),
-        v = n(652215),
-        w = n(307731),
-        P = n(985018);
-      function b(e, t, n, i) {
+        D = n(403362),
+        L = n(562153),
+        v = n(427262),
+        w = n(652215),
+        P = n(307731),
+        b = n(985018);
+      function k(e, t, n, i) {
         if (t[0] !== e) return;
         let r = t.substring(e.length);
         return n
@@ -104725,50 +104780,50 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           })
           .first();
       }
-      function k(e) {
+      function U(e) {
         return {
           order: e.order,
           match: e.match,
           parse: (t) => ({ type: e.type, content: t[0] }),
         };
       }
-      function U(e) {
+      function M(e) {
         return {
           match: a().anyScopeRegex(e),
           parse: (e) => ({ type: "text", content: e[0] }),
         };
       }
-      let M = u.A.RULES,
-        G = c.Ay,
-        x = /^<@!?(\d+)>/,
-        V = /^<@&(\d+)>/,
-        F = /^<#(\d+)>/,
-        B = /^<a?:(\w+):(\d+)>/,
-        H = /(@everyone|@here|@Clyde)\b/,
-        Y = /^[^\s]+@[^\s]+\.[^\s.]+/,
-        W = {
-          link: k(a().defaultRules.link),
-          autolink: k(a().defaultRules.autolink),
-          url: k(a().defaultRules.url),
-          inlineCode: k(M.inlineCode),
-          codeBlock: k(M.codeBlock),
-          rawUserMention: U(x),
-          rawRoleMention: U(V),
-          rawChannelMention: U(F),
-          rawEmoji: U(B),
+      let G = u.A.RULES,
+        x = c.Ay,
+        V = /^<@!?(\d+)>/,
+        F = /^<@&(\d+)>/,
+        B = /^<#(\d+)>/,
+        H = /^<a?:(\w+):(\d+)>/,
+        Y = /(@everyone|@here|@Clyde)\b/,
+        W = /^[^\s]+@[^\s]+\.[^\s.]+/,
+        K = {
+          link: U(a().defaultRules.link),
+          autolink: U(a().defaultRules.autolink),
+          url: U(a().defaultRules.url),
+          inlineCode: U(G.inlineCode),
+          codeBlock: U(G.codeBlock),
+          rawUserMention: M(V),
+          rawRoleMention: M(F),
+          rawChannelMention: M(B),
+          rawEmoji: M(H),
           mention: {
             match(e, t, n) {
               let i = n.split(" ").pop() + e;
-              if (Y.test(i)) return null;
-              let r = b("@", e, t.users, "mention");
+              if (W.test(i)) return null;
+              let r = k("@", e, t.users, "mention");
               if (
                 null != r ||
-                null != (r = b("@", e, t.mentionableRoles, "roleMention"))
+                null != (r = k("@", e, t.mentionableRoles, "roleMention"))
               )
                 return r;
               if (
                 null ==
-                (r = b(
+                (r = k(
                   "@",
                   e,
                   t.users.map((e) => ({ ...e, text: e.text.split("#")[0] })),
@@ -104776,7 +104831,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 ))
               )
                 return null;
-              let s = H.exec(e);
+              let s = Y.exec(e);
               if (null != s && r[0].length <= s[0].length) return null;
               if ("" === n) {
                 let t = h.U.exec(e);
@@ -104797,7 +104852,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             match: (e, t) =>
               (function (e, t) {
                 if ("#" !== e[0]) return;
-                if ('"' !== e[1]) return b("#", e, t, "channel");
+                if ('"' !== e[1]) return k("#", e, t, "channel");
                 let n = 2;
                 for (; n < e.length; n++) {
                   if ("\\" === e[n]) {
@@ -104844,7 +104899,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }),
           },
           emoji: {
-            order: M.emoji.order,
+            order: G.emoji.order,
             match: (e) => d.Ay.EMOJI_NAME_RE.exec(e),
             parse(e, t, n) {
               let [i, r] = e,
@@ -104875,29 +104930,29 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             },
           },
           text: {
-            ...G,
+            ...x,
             match: (e, t) =>
               "string" == typeof t.textExclusions && "" !== t.textExclusions
                 ? (0, c.VC)(t.textExclusions).exec(e)
-                : null != G.match
-                  ? G.match(e, t, "")
+                : null != x.match
+                  ? x.match(e, t, "")
                   : null,
           },
         },
-        K = {
-          inlineCode: k(M.inlineCode),
-          codeBlock: k(M.codeBlock),
+        j = {
+          inlineCode: U(G.inlineCode),
+          codeBlock: U(G.codeBlock),
           mention: {
-            match: a().anyScopeRegex(x),
+            match: a().anyScopeRegex(V),
             parse(e, t, n) {
               let { isNotification: i, guild: s, channelId: a } = n,
                 o = R.default.getUser(e[1]);
               if (null == o) return { content: e[0] };
-              let l = L.Ay.getUserTag(o, {
+              let l = v.Ay.getUserTag(o, {
                 identifiable: i && O.A.enabled ? "never" : "always",
               });
               if (i) {
-                let e = D.Ay.getNickname(s?.id, a, o) ?? L.Ay.getGlobalName(o);
+                let e = L.Ay.getNickname(s?.id, a, o) ?? v.Ay.getGlobalName(o);
                 return { content: null != e ? `@${e}` : `@${l}` };
               }
               {
@@ -104916,7 +104971,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             },
           },
           roleMention: {
-            match: a().anyScopeRegex(V),
+            match: a().anyScopeRegex(F),
             parse(e, t, n) {
               let { guild: i } = n;
               if (null != i) {
@@ -104927,7 +104982,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             },
           },
           channel: {
-            match: a().anyScopeRegex(F),
+            match: a().anyScopeRegex(B),
             parse(e) {
               let t = g.A.getChannel(e[1]);
               return {
@@ -104937,7 +104992,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             },
           },
           emoji: {
-            match: a().anyScopeRegex(B),
+            match: a().anyScopeRegex(H),
             parse(e, t, n) {
               let [i, r, s] = e,
                 { guild: a } = n,
@@ -104956,36 +105011,36 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             },
           },
           spoiler: {
-            match: a().anyScopeRegex(v.VFs),
+            match: a().anyScopeRegex(w.VFs),
             parse: () => ({
-              content: `<${P.intl.string(P.t["F+x38C"]).toLowerCase()}>`,
+              content: `<${b.intl.string(b.t["F+x38C"]).toLowerCase()}>`,
             }),
           },
           staticRouteLink: {
-            match: a().anyScopeRegex(v.P0V),
+            match: a().anyScopeRegex(w.P0V),
             parse: (e) => ({ content: `<id:${e[1]}>` }),
           },
           timestamp: {
-            ...M.timestamp,
+            ...G.timestamp,
             parse() {
               for (var e = arguments.length, t = Array(e), n = 0; n < e; n++)
                 t[n] = arguments[n];
-              let i = M.timestamp.parse(...t);
+              let i = G.timestamp.parse(...t);
               return "text" === i.type
                 ? { content: i.content }
                 : { content: i.formatted };
             },
           },
-          text: { ...G },
+          text: { ...x },
         };
-      [W, K].forEach((e) => {
+      [K, j].forEach((e) => {
         Object.keys(e).forEach((t, n) => {
           e[t].order = n;
         });
       });
-      let j = a().parserFor(W),
-        $ = /(?:<a?:\w+:(\d+)>)|:(?:([^\s:]+?)(?:::skin-tone-\d)?:)/g;
-      function z(e, t, n, i) {
+      let $ = a().parserFor(K),
+        z = /(?:<a?:\w+:(\d+)>)|:(?:([^\s:]+?)(?:::skin-tone-\d)?:)/g;
+      function q(e, t, n, i) {
         let r = "",
           s = [];
         return (
@@ -104997,7 +105052,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             ) {
               let n,
                 r = d.Ay.translateSurrogatesToInlineEmoji(e.content);
-              for (; null !== (n = $.exec(r)); ) {
+              for (; null !== (n = z.exec(r)); ) {
                 let r;
                 null != n[1] && "" !== n[1]
                   ? t.emojiContext && (r = t.emojiContext.getById(n[1]))
@@ -105028,7 +105083,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   r += n(e.content);
               }
             else if (e.content.constructor === Array) {
-              let { content: a, emoji: o } = z(e.content, t, n, i);
+              let { content: a, emoji: o } = q(e.content, t, n, i);
               for (let e of o)
                 s.push({
                   position: r.length + e.position,
@@ -105041,11 +105096,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           { content: r, emoji: s }
         );
       }
-      function q(e) {
+      function X(e) {
         let t,
           n = e?.getGuildId(),
           i = null != n ? T.A.getGuild(n) : null,
-          s = S.A.can(v.xBc.MENTION_EVERYONE, e);
+          s = S.A.can(w.xBc.MENTION_EVERYONE, e);
         if (e?.isPrivate()) {
           t = e.recipients.map((e) => ({ userId: e, nick: null }));
           let n = R.default.getCurrentUser();
@@ -105083,11 +105138,17 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               ? r()(C.L3)
                   .filter((e) => e !== I.I6)
                   .flatMap((e) =>
-                    I.Ay.getChannels(n)[e].map((e) => ({
-                      id: e.channel.id,
-                      text: (0, l.m1)(e.channel, R.default, N.A),
-                    })),
+                    I.Ay.getChannels(n)[e].map((e) =>
+                      e.channel.isCategory() &&
+                      !S.A.can(w.xBc.VIEW_CHANNEL, e.channel)
+                        ? null
+                        : {
+                            id: e.channel.id,
+                            text: (0, l.m1)(e.channel, R.default, N.A),
+                          },
+                    ),
                   )
+                  .filter(D.Vq)
                   .value()
               : [],
           c = m.A.computeAllActiveJoinedThreads(n).map((e) => ({
@@ -105111,27 +105172,27 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           isNotification: !1,
         };
       }
-      function X(e) {
+      function Q(e) {
         return e;
       }
-      function Q(e, t, n) {
+      function J(e, t, n) {
         let i = g.A.getChannel(t),
           s = null != i ? i.getGuildId() : null,
           o = null != s ? T.A.getGuild(s) : null,
-          l = n ? K : r().omit(K, ["spoiler", "timestamp"]),
-          _ = n ? X : d.Ay.translateSurrogatesToInlineEmoji,
+          l = n ? j : r().omit(j, ["spoiler", "timestamp"]),
+          _ = n ? Q : d.Ay.translateSurrogatesToInlineEmoji,
           u = a().parserFor(l),
           c = { inline: !0, guild: o, channelId: t, isNotification: n };
-        return z(u(e, c), c, _);
+        return q(u(e, c), c, _);
       }
-      let J = {
+      let Z = {
         parse(e, t) {
           var n, i;
           let r =
               arguments.length > 2 && void 0 !== arguments[2]
                 ? arguments[2]
                 : void 0,
-            s = r ?? q(e),
+            s = r ?? X(e),
             a = {
               content: t,
               tts: !1,
@@ -105144,13 +105205,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               y.Ay.isEmojiPremiumLocked({
                 emoji: t,
                 channel: e,
-                intention: w.EmojiIntention.CHAT,
+                intention: P.EmojiIntention.CHAT,
               })
                 ? a.invalidEmojis.push(t)
                 : n || a.validNonShortcutEmojis.push(t);
             }),
-            (a.content = z(
-              j(n, s),
+            (a.content = q(
+              $(n, s),
               s,
               d.Ay.translateInlineEmojiToSurrogates,
               i,
@@ -105158,9 +105219,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             a
           );
         },
-        parsePreprocessor: (e, t) => j(t, q(e)),
-        unparse: (e, t, n) => Q(e, t, n).content,
-        unparseWithMeta: Q,
+        parsePreprocessor: (e, t) => $(t, X(e)),
+        unparse: (e, t, n) => J(e, t, n).content,
+        unparseWithMeta: J,
       };
     },
     505527(e, t, n) {
@@ -130634,8 +130695,17 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             n.forEach((e) => {
               let t = i(e),
                 n = s.B7[e],
-                a = null != n ? s.su[n] : {};
-              d.tabs[e] = { ...s.us, ...a, ..._, ...r, limit: t };
+                { has: a, ...o } = null != n ? s.su[n] : {},
+                { has: l, ...u } = _,
+                c = [...new Set([...(a ?? []), ...(l ?? [])])];
+              d.tabs[e] = {
+                ...s.us,
+                ...o,
+                ...u,
+                ...(c.length > 0 ? { has: c } : {}),
+                ...r,
+                limit: t,
+              };
             }),
             d
           );
@@ -132240,7 +132310,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         return e.every((e) => 5 === e.type) && e.length > 0;
       }
       function l(e) {
-        return null != e.useTitle || null != e.useSubnavLabel;
+        return (
+          e.parent?.parent?.type === 2 &&
+          (null != e.useTitle || null != e.useSubnavLabel)
+        );
       }
       function _(e) {
         return e.parent?.type === 11;
@@ -132317,7 +132390,15 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             n = t.parentPanelKey;
           if (null == n) return;
           let i = this.accessibleDirectory?.getPanelOrThrow(n);
-          if (null == i || (0, r.Px)(i)) return;
+          if (null == i) return;
+          if ((0, r.Px)(i)) {
+            let e = i.parent;
+            for (; null != e; ) {
+              if (e.type === r.Z6.CATEGORY && (0, r.bJ)(e)) return e.key;
+              e = e.parent;
+            }
+            return;
+          }
           let s = i.layout;
           if (!(0, r.Iu)(s)) return;
           let a = [],
@@ -176078,7 +176159,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "b97073eec0b197e4983614d5cc478be731af45d0",
+                    "28069ce639e141b78ec22dd7c062d9d0dd285b09",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -181911,7 +181992,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "536797",
+                  build_number: "536875",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -196497,7 +196578,7 @@ ${o.join(" +\n")}
               { scrollPosition: u, offsetSize: c } = r(t(), s);
             (n -= l),
               (i += l),
-              n >= u && i <= u + c
+              n >= u && i <= u + c && !o
                 ? null != d && d()
                 : n < u || o
                   ? a({ to: n, animate: _, callback: d })
@@ -239436,4 +239517,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=84804.3d58d6c4c4995acb.js.map
+//# sourceMappingURL=84804.62d5cbfc603e2aa5.js.map
