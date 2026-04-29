@@ -1085,14 +1085,6 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
   border-radius: var(--radius-md);
   color: var(--text-feedback-info);
 }
-.infoBox__75df3 {
-  align-items: center;
-  display: flex;
-}
-.learnMoreText__75df3 {
-  align-self: center;
-  text-align: center;
-}
 .footer_bb3ce8 {
   align-items: center;
   margin-top: auto;
@@ -4330,7 +4322,6 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
   backdrop-filter: blur(8px);
   box-sizing: border-box;
   display: flex;
-  margin-top: 40px;
   min-width: 560px;
 }
 @media (max-width: 485px) {
@@ -4348,7 +4339,6 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
   background: var(--card-background-default);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  margin-bottom: -40px;
   min-height: 292px;
 }
 .allReferralsSentBorder__2c345 {
@@ -4822,7 +4812,6 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 25px;
   position: relative;
   width: 100%;
 }
@@ -4865,7 +4854,6 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
   background: var(--card-background-default);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  margin: 25px 0;
   padding: 40px;
 }
 .giftCard_a45ed3,
@@ -4882,7 +4870,6 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
 .giftCardPromotion_a45ed3 {
   border-radius: var(--radius-lg);
   height: 200px;
-  margin-bottom: 25px;
   padding: 0 30px;
 }
 .giftImagePromotion_a45ed3 {
@@ -6104,5 +6091,15 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
   border-radius: var(--radius-sm);
   position: relative;
 }
+.wrapper__99b35 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  padding: 0 70px;
+  text-align: center;
+}
+.subtitle__99b35 {
+  margin-bottom: 6px;
+}
 
-/*# sourceMappingURL=60811.88b5499abd751937.css.map*/
+/*# sourceMappingURL=21341.b73dd29f436a72eb.css.map*/

@@ -26332,7 +26332,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 537126, Version Hash: 5273dc8f42a1a2fa9b5d6df5b0334fe807fb4fd3`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 537207, Version Hash: 622311b615bc329a522db8c705dc58ed07ac1c9c`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -40318,7 +40318,8 @@ ${s}`);
             ? (0, s.openModalLazy)(
                 async () => {
                   let { default: e } = await Promise.all([
-                    n.e("60811"),
+                    n.e("21341"),
+                    n.e("54398"),
                     n.e("607"),
                     n.e("84794"),
                     n.e("34260"),
@@ -40338,7 +40339,7 @@ ${s}`);
                   async () => {
                     let { default: e } = await Promise.all([
                       n.e("80848"),
-                      n.e("60811"),
+                      n.e("21341"),
                       n.e("88941"),
                       n.e("607"),
                       n.e("84794"),
@@ -40356,7 +40357,7 @@ ${s}`);
               : (0, s.openModalLazy)(
                   async () => {
                     let { default: e } = await Promise.all([
-                      n.e("60811"),
+                      n.e("21341"),
                       n.e("34763"),
                       n.e("61268"),
                       n.e("607"),
@@ -44093,7 +44094,7 @@ ${s}`);
             "OVERLAY_INITIALIZE",
             "USER_SETTINGS_PROTO_UPDATE",
           ],
-          inlineRequire: () => n(465761).A,
+          inlineRequire: () => n(281084).A,
         },
         VoiceChannelSettingsManager: {
           actions: ["CHANNEL_UPDATES", "VOICE_STATE_UPDATES"],
@@ -49061,7 +49062,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "5273dc8f42a1a2fa9b5d6df5b0334fe807fb4fd3" === e.body.hash
+                  "622311b615bc329a522db8c705dc58ed07ac1c9c" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53592,10 +53593,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("537126")),
+                ((e = parseInt("537207")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 537126",
+                    "Trying to open a changelog for an invalid build number 537207",
                   ),
                   (e = 0)),
                 e),
@@ -62365,7 +62366,7 @@ ${s}`);
             n.e("55990"),
             n.e("80731"),
             n.e("66361"),
-            n.e("60811"),
+            n.e("21341"),
             n.e("333"),
             n.e("68432"),
             n.e("19032"),
@@ -62424,7 +62425,6 @@ ${s}`);
             n.e("92793"),
             n.e("23309"),
             n.e("54316"),
-            n.e("23350"),
             n.e("93327"),
             n.e("93998"),
             n.e("15086"),
@@ -63219,6 +63219,7 @@ ${s}`);
             n.e("80559"),
             n.e("52694"),
             n.e("4098"),
+            n.e("53683"),
             n.e("82969"),
             n.e("59373"),
             n.e("33204"),
@@ -66835,7 +66836,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "537126", versionHash: "5273dc8f42a1a2fa9b5d6df5b0334fe807fb4fd3" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "537207", versionHash: "622311b615bc329a522db8c705dc58ed07ac1c9c" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -113440,7 +113441,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         let e = (0, r.Fe)({
           createPromise: () =>
             Promise.all([
-              n.e("60811"),
+              n.e("21341"),
               n.e("90261"),
               n.e("80848"),
               n.e("1440"),
@@ -132024,32 +132025,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       }
       n.d(t, { A: () => i });
     },
-    465761(e, t, n) {
-      "use strict";
-      n.d(t, { A: () => o }), n(142703);
-      var i = n(439372),
-        r = n(253932);
-      let s = !1;
-      class a extends i.A {
-        actions = {
-          POST_CONNECTION_OPEN: () => {
-            this.setVerifyTimezone();
-          },
-          OVERLAY_INITIALIZE: this.setVerifyTimezone,
-          USER_SETTINGS_PROTO_UPDATE: this.ensureTimezoneUpdated,
-        };
-        setVerifyTimezone() {
-          s = !0;
-        }
-        ensureTimezoneUpdated() {
-          if (!s) return;
-          s = !1;
-          let e = new Date().getTimezoneOffset();
-          r.JI.getSetting() !== e && setImmediate(() => r.JI.updateSetting(e));
-        }
-      }
-      let o = new a();
-    },
     963935(e, t, n) {
       "use strict";
       n.d(t, {
@@ -143401,7 +143376,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             Promise.all([
               n.e("13520"),
               n.e("17546"),
-              n.e("60811"),
+              n.e("21341"),
               n.e("69944"),
               n.e("90261"),
               n.e("16933"),
@@ -145988,6 +145963,32 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           (i.LOGOUT_SIDEBAR_ITEM = "logout_sidebar_item"),
           i);
     },
+    281084(e, t, n) {
+      "use strict";
+      n.d(t, { A: () => o }), n(142703);
+      var i = n(439372),
+        r = n(253932);
+      let s = !1;
+      class a extends i.A {
+        actions = {
+          POST_CONNECTION_OPEN: () => {
+            this.setVerifyTimezone();
+          },
+          OVERLAY_INITIALIZE: this.setVerifyTimezone,
+          USER_SETTINGS_PROTO_UPDATE: this.ensureTimezoneUpdated,
+        };
+        setVerifyTimezone() {
+          s = !0;
+        }
+        ensureTimezoneUpdated() {
+          if (!s) return;
+          s = !1;
+          let e = new Date().getTimezoneOffset();
+          r.JI.getSetting() !== e && setImmediate(() => r.JI.updateSetting(e));
+        }
+      }
+      let o = new a();
+    },
     405892(e, t, n) {
       "use strict";
       n.d(t, { A: () => r });
@@ -146964,7 +146965,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("40841"),
                   n.e("65420"),
                   n.e("52204"),
-                  n.e("60811"),
+                  n.e("21341"),
                   n.e("17546"),
                   n.e("90261"),
                   n.e("63635"),
@@ -147037,7 +147038,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("92793"),
                   n.e("23309"),
                   n.e("54316"),
-                  n.e("23350"),
                   n.e("93327"),
                   n.e("93998"),
                   n.e("15086"),
@@ -172960,7 +172960,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         d = {},
         u = {},
         c = {},
-        E = new Set();
+        E = new Map();
       function h(e) {
         let t = e.id,
           n = e.sku.id,
@@ -172979,7 +172979,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         return `${e}:${t}`;
       }
       function f() {
-        (_ = {}), (c = {}), (u = {}), (d = {}), (E = new Set());
+        (_ = {}), (c = {}), (u = {}), (d = {}), (E = new Map());
       }
       function g() {
         if (i === a.default.locale) return !1;
@@ -173011,7 +173011,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return d[m(e, t)];
         }
         isFetchingForSKU(e) {
-          return E.has(e);
+          return !0 === E.get(e);
+        }
+        didFetchingForSKUFail(e) {
+          return !1 === E.get(e);
+        }
+        getFetchingOrFailedSkuIds() {
+          return Array.from(E.keys());
         }
         getStoreListing(e) {
           let { storeListingId: t, skuId: n, channelId: i, isTestMode: r } = e;
@@ -173030,12 +173036,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       }
       let I = new A(s.h, {
         STORE_LISTINGS_FETCH_START: function (e) {
-          let { skuId: t } = e;
-          E.add(t);
+          let { skuId: t } = e,
+            n = E.get(t);
+          return E.set(t, !0), !0 !== n;
         },
         STORE_LISTINGS_FETCH_FAIL: function (e) {
-          let { skuId: t } = e;
-          E.delete(t);
+          let { skuId: t } = e,
+            n = E.get(t);
+          return E.set(t, !1), !1 !== n;
         },
         STORE_LISTINGS_FETCH_SUCCESS: function (e) {
           let { storeListings: t } = e;
@@ -175824,7 +175832,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "5273dc8f42a1a2fa9b5d6df5b0334fe807fb4fd3",
+                    "622311b615bc329a522db8c705dc58ed07ac1c9c",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -181657,7 +181665,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "537126",
+                  build_number: "537207",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -239070,4 +239078,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=89767.c8ea61aa481e3b77.js.map
+//# sourceMappingURL=89767.557a21b308d1cc36.js.map

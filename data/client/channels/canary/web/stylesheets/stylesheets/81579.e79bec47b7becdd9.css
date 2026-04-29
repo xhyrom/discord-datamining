@@ -1508,7 +1508,7 @@
   margin-top: 48px;
 }
 .dividerContent__27703 {
-  background: transparent;
+  background: var(--background-surface-high);
 }
 .container__2692d {
   background-color: var(--background-surface-high);
@@ -1560,4 +1560,4 @@
   border: 2px solid CanvasText;
 }
 
-/*# sourceMappingURL=81579.a8a44eaad6a06602.css.map*/
+/*# sourceMappingURL=81579.e79bec47b7becdd9.css.map*/

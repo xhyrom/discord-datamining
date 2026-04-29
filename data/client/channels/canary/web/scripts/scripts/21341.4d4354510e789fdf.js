@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["60811"],
+  ["21341"],
   {
     580537(e, _, o) {
       e.exports = {
@@ -28,9 +28,6 @@
     },
     548416(e, _, o) {
       e.exports = { W: "dataAssurance__2a048" };
-    },
-    280269(e, _, o) {
-      e.exports = { e: "infoBox__75df3", Z: "learnMoreText__75df3" };
     },
     347933(e, _, o) {
       e.exports = {
@@ -1062,6 +1059,9 @@
         wx: "header__6d839",
         ZS: "recommendedServerCard__6d839",
       };
+    },
+    342933(e, _, o) {
+      e.exports = { i: "wrapper__99b35", V: "subtitle__99b35" };
     },
     194152(e, _, o) {
       e.exports = {
