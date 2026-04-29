@@ -2220,7 +2220,7 @@
       let C = m;
     },
     861638(e, t, n) {
-      n.d(t, { Ht: () => K, Vc: () => q, as: () => W }), n(321073);
+      n.d(t, { Ht: () => K, Vc: () => Z, as: () => W }), n(321073);
       var i = n(132500),
         l = n(71931),
         a = n(17928),
@@ -2457,7 +2457,7 @@
           t
         );
       }
-      function q() {
+      function Z() {
         let e = "uninitialized" === U.state ? H(r.w.get(O)) : U.session;
         return null == e || (0, I.aE)(e) ? null : e;
       }
@@ -3349,8 +3349,8 @@
         })();
       var W = n(617617),
         K = n(45773);
-      let q = new A.A("UserSettingsProto");
-      class Z {
+      let Z = new A.A("UserSettingsProto");
+      class q {
         actions = {
           CONNECTION_OPEN: () => this.throttledOnChange(),
           USER_SETTINGS_PROTO_UPDATE: () => this.throttledOnChange(),
@@ -3361,7 +3361,7 @@
           let t = performance.now(),
             n = await C.A.userSettings(e).getMany(),
             i = performance.now();
-          q.verbose(`loaded in ${i - t}ms (settings: ${n.length})`);
+          Z.verbose(`loaded in ${i - t}ms (settings: ${n.length})`);
           let l = {};
           for (let e of n) l[e.id] = e.value;
           return l;
@@ -3383,7 +3383,7 @@
         throttledOnChange = k().debounce(this.handleUserSettingsProtoChange, 0);
         resetInMemoryState() {}
       }
-      let Q = new Z();
+      let Q = new q();
       var X = n(531743),
         J = n(264392),
         ee = n(548965),
@@ -4242,8 +4242,8 @@
         n(769022);
       var eW = n(451988),
         eK = n(308368),
-        eq = n(973522),
-        eZ = n(674378),
+        eZ = n(973522),
+        eq = n(674378),
         eQ = n(760751),
         eX = n(189081),
         eJ = n(763827);
@@ -4267,7 +4267,7 @@
           n = Date.now(),
           i = null != e.updatedAt ? n - e.updatedAt : 0;
         i > e1 + e2 && (i = 0);
-        let l = (0, eZ.kv)(e.applicationId, eX.A),
+        let l = (0, eq.kv)(e.applicationId, eX.A),
           a = ei.A.getVoiceChannelId(),
           r = g.default.getSessionId(),
           s = eJ.A.getMediaSessionId();
@@ -4303,7 +4303,7 @@
                 applicationId: t.id,
                 updatedAt: Date.now(),
                 distributor: e.distributor,
-                exePath: (0, eq.Ic)(e.exePath ?? ""),
+                exePath: (0, eZ.Ic)(e.exePath ?? ""),
               }));
         }
         for (let t of Object.keys(e3)) n.has(t) || e6(e3[t], e);
@@ -6637,7 +6637,7 @@
                 n.e("48778"),
                 n.e("23354"),
                 n.e("89465"),
-                n.e("5895"),
+                n.e("79440"),
                 n.e("62355"),
                 n.e("93708"),
                 n.e("71482"),
@@ -7728,7 +7728,7 @@
             n.e("91942"),
             n.e("48778"),
             n.e("89465"),
-            n.e("5895"),
+            n.e("79440"),
             n.e("37187"),
             n.e("62355"),
             n.e("93708"),
@@ -8959,7 +8959,7 @@
         }
         W(e, "timer", i, "timeOverlayEvent"), ec.emitChange();
       }
-      async function q(e) {
+      async function Z(e) {
         let t = Y(e);
         if (null != t) return t;
         let n = c.Ay.getGameOrTransformedSubgameForPID(e),
@@ -8998,7 +8998,7 @@
           u
         );
       }
-      function Z(e, t) {
+      function q(e, t) {
         switch (L) {
           case I.V6.UNSET:
             break;
@@ -9150,7 +9150,7 @@
           return void R.verbose(
             `Skipping track for pid ${e} - overlay is disabled`,
           );
-        let t = await q(e);
+        let t = await Z(e);
         if (null == t) return void R.error(`Failed to track game ${e}`);
         x(e, "game_tracking_starting", {
           game_name: t.gameName,
@@ -9239,7 +9239,7 @@
               overlayMethod: I.Ue.Disabled,
               reason: "No tracked game found",
             })
-          : Z(n, t);
+          : q(n, t);
       }
       async function et(e, t, n) {
         let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
@@ -9314,7 +9314,7 @@
             oldFullscreenType: r.fullscreenType,
             newFullscreenType: s,
           });
-        let o = Z(r, s);
+        let o = q(r, s);
         if (
           (r.overlayMethod === o.overlayMethod &&
             r.oopEnabled === o.enabledOOP &&
@@ -9589,7 +9589,7 @@
                         return (
                           et(
                             t,
-                            Z(n, n.fullscreenType),
+                            q(n, n.fullscreenType),
                             "handleGameToggleOverlay - global disabled",
                           ),
                           !0
@@ -10598,7 +10598,7 @@
                   n.e("91942"),
                   n.e("48778"),
                   n.e("89465"),
-                  n.e("5895"),
+                  n.e("79440"),
                   n.e("62355"),
                   n.e("93708"),
                   n.e("71482"),
@@ -12867,7 +12867,7 @@
       });
     },
     543465(e, t, n) {
-      n.d(t, { Ay: () => q, b5: () => Y, wn: () => B }), n(938796);
+      n.d(t, { Ay: () => Z, b5: () => Y, wn: () => B }), n(938796);
       var i = n(735438),
         l = n.n(i),
         a = n(665260),
@@ -13291,7 +13291,7 @@
               : f.e.UNSET;
         }
       }
-      let q = new K(s.h, {
+      let Z = new K(s.h, {
         USER_GUILD_SETTINGS_FULL_UPDATE: function (e) {
           let { userGuildSettings: t } = e;
           t.forEach((e) => {
@@ -13398,28 +13398,6 @@
         },
         GUILD_MUTE_EXPIRED: () => !0,
         CHANNEL_MUTE_EXPIRED: () => !0,
-      });
-    },
-    870570(e, t, n) {
-      n.d(t, { A: () => o });
-      var i = n(17928),
-        l = n(228366);
-      let a = null;
-      class r extends i.Ay.Store {
-        static displayName = "UserRequiredActionStore";
-        hasAction() {
-          return null != a;
-        }
-        getAction() {
-          return a;
-        }
-      }
-      function s(e) {
-        a = e.requiredAction;
-      }
-      let o = new r(l.h, {
-        CONNECTION_OPEN: s,
-        USER_REQUIRED_ACTION_UPDATE: s,
       });
     },
     803301(e, t, n) {
@@ -14308,7 +14286,7 @@
           D.hasOwnProperty(t) && e.push((0, g.dI)(D[t].shortcut));
         return e;
       });
-      class q extends s.Ay.DeviceSettingsStore {
+      class Z extends s.Ay.DeviceSettingsStore {
         static displayName = "KeybindsStore";
         static persistKey = "keybinds";
         static migrations = [
@@ -14427,12 +14405,12 @@
           );
         }
       }
-      let Z = new q(o.h, {
+      let q = new Z(o.h, {
           CONNECTION_OPEN: K,
           LOGIN_SUCCESS: function () {
             return (
               (async () => {
-                await (0, p.AD)(), K() && Z.emitChange();
+                await (0, p.AD)(), K() && q.emitChange();
               })(),
               !1
             );
@@ -14482,7 +14460,7 @@
               (P = !0);
           },
         }),
-        Q = Z;
+        Q = q;
     },
     256415(e, t, n) {
       n.r(t), n.d(t, { default: () => H });
@@ -15167,4 +15145,4 @@
     },
   },
 ]);
-//# sourceMappingURL=23633.f50c3c4239aa5445.js.map
+//# sourceMappingURL=23633.5c9da0b000f3ecc2.js.map
