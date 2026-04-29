@@ -86,8 +86,9 @@
 </ul>
 <div class="form-box">
   If it seems you are running into a technical error when trying to send a DM,
-  please reach out to our <a href="href">Discord Support team</a>. Otherwise,
-  the Discord Support team will not be able to provide further assistance.
+  please reach out to our
+  <a href="http://dis.gd/contact">Discord Support team</a>. Otherwise, the
+  Discord Support team will not be able to provide further assistance.
 </div>
 <div class="book-box">
   For further information, please review our
