@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8373431002](https://discord.com/jobs/8373431002)
 
-**Updated At:** Fri, 17 Apr 2026 22:09:36 GMT
+**Updated At:** Wed, 29 Apr 2026 20:30:26 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for an experienced and passionate Senior Data Engineer, Analytics to join our data team! You will be owning the transformation and semantic layer that turns data into clean, tested, well-documented tables and dashboards that data scientists, product managers, and business stakeholders can trust and self-serve from. You'll define and operationalize the metrics that inform how we identify opportunities, measure success, and make decisions. If this sounds exciting to you and you’re passionate about data modeling, metric design, and empowering teams to move faster with reliable data, read on!
@@ -57,5 +57,5 @@ Please see our Applicant and Candidate Privacy Policy for details regarding Disc
 - Data Science & Engineering
 
 **Offices:**
-- San Francisco, CA in San Francisco, California, United States
+- Remote (U.S.)
     
