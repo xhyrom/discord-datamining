@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["29139"],
+  ["39779"],
   {
     349887(e, _, t) {
       e.exports = {
@@ -76,6 +76,16 @@
         KQ: "waveButton__972a0",
         lU: "channelNameMeasurement__972a0",
         a1: "tabHoverGradient__972a0",
+      };
+    },
+    958847(e, _, t) {
+      e.exports = {
+        Ie: "empty__99e7c",
+        TK: "headerText__99e7c",
+        _e: "privateChannelsHeaderContainer__99e7c",
+        Br: "privateChannelRecipientsInviteButtonIcon__99e7c",
+        U2: "privateChannelRecipientsInviteButtonIconContainer__99e7c",
+        XG: "scroller__99e7c",
       };
     },
     980160(e, _, t) {
@@ -317,7 +327,10 @@
       };
     },
     512514(e, _, t) {
-      e.exports = { $: "productCardBadge_b8a6bd" };
+      e.exports = {
+        s: "productCardBadge_b8a6bd",
+        $: "earlyAccessBadge_b8a6bd",
+      };
     },
     721861(e, _, t) {
       e.exports = {
@@ -515,24 +528,6 @@
         Tc: "tag_e7c728",
         qS: "badge_e7c728",
         I8: "tagContainer_e7c728",
-      };
-    },
-    683807(e, _, t) {
-      e.exports = {
-        nM: "row__5adc3",
-        km: "havenWrapper__5adc3",
-        VT: "haven__5adc3",
-        rh: "noTransition__5adc3",
-        Lw: "overlay__5adc3",
-        FD: "out__5adc3",
-        dH: "welcome__5adc3",
-        cA: "environment__5adc3",
-        Tp: "background__5adc3",
-        Ki: "video__5adc3",
-        ey: "noInteract__5adc3",
-        vf: "bottomActions__5adc3",
-        R: "hidden__5adc3",
-        ps: "interactionOverlay__5adc3",
       };
     },
     840275(e, _, t) {

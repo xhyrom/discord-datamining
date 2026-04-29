@@ -1529,11 +1529,10 @@ html .tabBadge_e6b769 {
   width: 560px;
 }
 .scroller__95796 {
-  padding: 0;
+  padding: 0 16px;
 }
 .container__95796 {
   margin-bottom: 16px;
-  padding-inline-end: 8px;
 }
 .closeButton__95796 {
   flex-shrink: 0;
@@ -1543,7 +1542,6 @@ html .tabBadge_e6b769 {
   background-color: var(--background-surface-higher);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  margin-inline-start: 16px;
   padding: 16px;
   padding-inline-start: 0;
   position: relative;
@@ -1746,4 +1744,4 @@ html .tabBadge_e6b769 {
   font-weight: var(--font-weight-semibold);
 }
 
-/*# sourceMappingURL=40139.ad143a056975b46b.css.map*/
+/*# sourceMappingURL=40139.2d49e25e37af273a.css.map*/
