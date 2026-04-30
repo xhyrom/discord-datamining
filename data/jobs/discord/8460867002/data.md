@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8460867002](https://discord.com/jobs/8460867002)
 
-**Updated At:** Fri, 17 Apr 2026 22:09:36 GMT
+**Updated At:** Thu, 30 Apr 2026 21:36:05 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Consumer Revenue org sits at the center of how we build a sustainable business around that community. We're looking for a Staff Engineer to join teams working across premium experiences and core user identity, shaping the technical strategy that ties it all together. You'll work across surfaces like Nitro, Shop, Server Boosting, and User Identity to build a premium Discord that delivers real value to subscribers without compromising the core experience for our free users.

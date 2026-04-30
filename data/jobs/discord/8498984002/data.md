@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8498984002](https://discord.com/jobs/8498984002)
 
-**Updated At:** Tue, 28 Apr 2026 17:43:08 GMT
+**Updated At:** Thu, 30 Apr 2026 21:36:05 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for someone who gets excited about building data infrastructure at massive scale and cares deeply about the gaming communities we serve. Someone with passion for building lovable products for Discord users and Discord engineers. We're building the next generation Data Platform that powers decisions for one of the most vibrant platforms in the world.

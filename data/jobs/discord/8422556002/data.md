@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8422556002](https://discord.com/jobs/8422556002)
 
-**Updated At:** Fri, 17 Apr 2026 22:09:36 GMT
+**Updated At:** Thu, 30 Apr 2026 21:36:05 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Security &amp;amp; IT organization is in the middle of a significant transformation — expanding scope, standing up new functions, and hiring senior leaders across security operations, GRC, and IT. This role reports into the Office of the CTO and is the operational connective tissue for the entire organization. You'll own the operating cadences, executive reporting, budget governance, and program management practice that keep the machine running — so the Head of Security &amp;amp; IT can focus on strategy, risk decisions, and the external-facing mission of the organization.

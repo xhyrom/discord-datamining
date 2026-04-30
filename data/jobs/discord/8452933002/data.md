@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8452933002](https://discord.com/jobs/8452933002)
 
-**Updated At:** Fri, 17 Apr 2026 22:09:36 GMT
+**Updated At:** Thu, 30 Apr 2026 21:36:05 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Come build the future of Discord’s business with us! We are looking for impact-focused engineers to join our world-class Revenue group as we accelerate Discord’s growth through the creation of compelling paid products. These products allow us to grow our business while keeping Discord’s core functionality free, and without selling ads or user data.&amp;nbsp; You will be reporting to the Engineering Manager of Payments.&amp;nbsp; To learn more about Discord Engineering, take a look at our&amp;nbsp;engineering blog!

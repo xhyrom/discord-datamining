@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8447477002](https://discord.com/jobs/8447477002)
 
-**Updated At:** Fri, 17 Apr 2026 22:09:36 GMT
+**Updated At:** Thu, 30 Apr 2026 21:36:05 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for an experienced Senior Enterprise Security Engineer reporting to the Engineering Manager of Enterprise Security. In this role, you will implement and maintain Discord’s enterprise environment, with a sharp focus on security and privacy. Are you passionate about balancing strong security with seamless operations? We’d love to meet you. We’re looking for someone who brings strong technical skills and genuinely cares about protecting data and keeping systems secure. If you love solving challenging security problems, get energized by learning new things, and want to help make Discord even better, come join our security team on this journey.
