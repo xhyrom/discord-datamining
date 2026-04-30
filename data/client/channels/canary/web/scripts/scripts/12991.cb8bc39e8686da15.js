@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["83247"],
+  ["12991"],
   {
     696354(e, t, n) {
       var i = {
@@ -23742,8 +23742,8 @@ ${s}`),
               n.e("22584"),
               n.e("10004"),
               n.e("83429"),
-              n.e("76195"),
               n.e("86949"),
+              n.e("76195"),
               n.e("26490"),
               n.e("11527"),
               n.e("20320"),
@@ -23765,7 +23765,8 @@ ${s}`),
               n.e("35996"),
               n.e("99518"),
               n.e("11133"),
-              n.e("38863"),
+              n.e("98329"),
+              n.e("54622"),
               n.e("3162"),
             ]).then(n.bind(n, 510273)),
           2: () =>
@@ -26332,7 +26333,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 537651, Version Hash: aa6537fa92c4375cee3f44eeb65496dedfacc151`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 537705, Version Hash: b247507d151e607d19ec6c0308886a502885e661`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -37465,6 +37466,34 @@ ${s}`);
         },
       };
     },
+    870218(e, t, n) {
+      "use strict";
+      n.d(t, { A: () => s });
+      var i = n(860840),
+        r = n(916243);
+      class s {
+        surface;
+        originalMd5Promise;
+        constructor(e, t) {
+          (this.surface = e), (this.originalMd5Promise = t);
+        }
+        static fromBlob(e, t) {
+          return new s(
+            e,
+            i.A.fromBlob(t).catch(() => null),
+          );
+        }
+        getOriginalMd5() {
+          return this.originalMd5Promise;
+        }
+        static buildHeadersForMd5(e, t) {
+          return null == e ? t : { ...t, [r.B]: e };
+        }
+        async buildHeaders(e) {
+          return s.buildHeadersForMd5(await this.originalMd5Promise, e);
+        }
+      }
+    },
     53298(e, t, n) {
       "use strict";
       n.d(t, { O: () => r });
@@ -43605,6 +43634,11 @@ ${s}`);
           inlineRequire: () => n(388427).A,
           hasStoreChangeListeners: !0,
         },
+        DesktopTTIEarlyUpdateCheckExperimentManager: {
+          actions: ["POST_CONNECTION_OPEN", "LOGOUT"],
+          inlineRequire: () => n(788768).A,
+          hasStoreChangeListeners: !0,
+        },
         FriendOnlineTimerManager: {
           actions: [
             "POST_CONNECTION_OPEN",
@@ -49061,7 +49095,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "aa6537fa92c4375cee3f44eeb65496dedfacc151" === e.body.hash
+                  "b247507d151e607d19ec6c0308886a502885e661" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53244,8 +53278,8 @@ ${s}`);
                             n.e("80527"),
                             n.e("22584"),
                             n.e("83429"),
-                            n.e("76195"),
                             n.e("86949"),
+                            n.e("76195"),
                             n.e("43919"),
                             n.e("14879"),
                             n.e("62827"),
@@ -53592,10 +53626,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("537651")),
+                ((e = parseInt("537705")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 537651",
+                    "Trying to open a changelog for an invalid build number 537705",
                   ),
                   (e = 0)),
                 e),
@@ -53717,9 +53751,9 @@ ${s}`);
                 n.e("993"),
                 n.e("54527"),
                 n.e("72535"),
+                n.e("86949"),
                 n.e("76195"),
                 n.e("39227"),
-                n.e("86949"),
                 n.e("1177"),
                 n.e("26490"),
                 n.e("76170"),
@@ -57843,9 +57877,9 @@ ${s}`);
                 n.e("993"),
                 n.e("54527"),
                 n.e("72535"),
+                n.e("86949"),
                 n.e("76195"),
                 n.e("39227"),
-                n.e("86949"),
                 n.e("1177"),
                 n.e("26490"),
                 n.e("76170"),
@@ -60067,8 +60101,8 @@ ${s}`);
               n.e("95444"),
               n.e("54961"),
               n.e("28152"),
-              n.e("49520"),
               n.e("65826"),
+              n.e("49520"),
               n.e("27323"),
               n.e("36877"),
               n.e("21957"),
@@ -62562,9 +62596,9 @@ ${s}`);
             n.e("993"),
             n.e("54527"),
             n.e("72535"),
+            n.e("86949"),
             n.e("76195"),
             n.e("39227"),
-            n.e("86949"),
             n.e("69747"),
             n.e("1177"),
             n.e("26490"),
@@ -62848,8 +62882,8 @@ ${s}`);
             n.e("57458"),
             n.e("8829"),
             n.e("19193"),
-            n.e("49520"),
             n.e("65826"),
+            n.e("49520"),
             n.e("76413"),
             n.e("42204"),
             n.e("18997"),
@@ -62996,6 +63030,7 @@ ${s}`);
             n.e("49333"),
             n.e("14396"),
             n.e("22067"),
+            n.e("98329"),
             n.e("44385"),
             n.e("94607"),
             n.e("30474"),
@@ -63061,7 +63096,6 @@ ${s}`);
             n.e("93907"),
             n.e("60249"),
             n.e("38090"),
-            n.e("38863"),
             n.e("68214"),
             n.e("10014"),
             n.e("43114"),
@@ -63070,6 +63104,7 @@ ${s}`);
             n.e("36926"),
             n.e("98425"),
             n.e("63497"),
+            n.e("54622"),
             n.e("94161"),
             n.e("88881"),
             n.e("79593"),
@@ -63117,6 +63152,7 @@ ${s}`);
             n.e("37479"),
             n.e("83799"),
             n.e("78010"),
+            n.e("80112"),
             n.e("25241"),
             n.e("95067"),
             n.e("97116"),
@@ -63150,7 +63186,6 @@ ${s}`);
             n.e("55552"),
             n.e("34936"),
             n.e("75284"),
-            n.e("80112"),
             n.e("12755"),
             n.e("86697"),
             n.e("62318"),
@@ -66835,7 +66870,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "537651", versionHash: "aa6537fa92c4375cee3f44eeb65496dedfacc151" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "537705", versionHash: "b247507d151e607d19ec6c0308886a502885e661" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -67700,6 +67735,53 @@ ${C}`;
           return;
         let { enabled: e } = o({ location: "updateSwitch" }),
           t = "DESKTOP_TTI_DNSTCP_WARMUP";
+        e !== (await window.DiscordNative.settings.get(t, !1)) &&
+          (await window.DiscordNative.settings.set(t, e)),
+          (_ = e);
+      }
+      class u extends i.A {
+        stores = new Map().set(r.A, () => {
+          if (l) {
+            let { enabled: e } = o({ location: "experimentStoreUpdate" });
+            _ !== e && d();
+          }
+        });
+        actions = {
+          POST_CONNECTION_OPEN: async () => {
+            l ||
+              window.DiscordNative?.settings?.set == null ||
+              ((0, s.isDesktop)() && ((l = !0), await d()));
+          },
+          LOGOUT: () => {
+            (l = !1), (_ = null);
+          },
+        };
+      }
+      let c = new u();
+    },
+    788768(e, t, n) {
+      "use strict";
+      n.d(t, { A: () => c });
+      var i = n(439372),
+        r = n(710195),
+        s = n(723702);
+      let a = (0, n(945810).mj)({
+        name: "2026-04-desktop-tti-early-update-check",
+        kind: "user",
+        defaultConfig: { enabled: !1 },
+        variations: { 1: { enabled: !0 } },
+      });
+      function o(e) {
+        let { location: t } = e;
+        return a.getConfig({ location: t });
+      }
+      let l = !1,
+        _ = null;
+      async function d() {
+        if (!(0, s.isDesktop)() || window.DiscordNative?.settings?.set == null)
+          return;
+        let { enabled: e } = o({ location: "updateSwitch" }),
+          t = "DESKTOP_TTI_EARLY_UPDATE_CHECK";
         e !== (await window.DiscordNative.settings.get(t, !1)) &&
           (await window.DiscordNative.settings.set(t, e)),
           (_ = e);
@@ -91368,9 +91450,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("993"),
                   n.e("54527"),
                   n.e("72535"),
+                  n.e("86949"),
                   n.e("76195"),
                   n.e("39227"),
-                  n.e("86949"),
                   n.e("1177"),
                   n.e("26490"),
                   n.e("76170"),
@@ -91470,8 +91552,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("90664"),
                   n.e("14285"),
                   n.e("28152"),
-                  n.e("49520"),
                   n.e("65826"),
+                  n.e("49520"),
                   n.e("27323"),
                   n.e("49089"),
                   n.e("10943"),
@@ -91608,9 +91690,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("993"),
                 n.e("54527"),
                 n.e("72535"),
+                n.e("86949"),
                 n.e("76195"),
                 n.e("39227"),
-                n.e("86949"),
                 n.e("1177"),
                 n.e("26490"),
                 n.e("76170"),
@@ -91710,8 +91792,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("90664"),
                 n.e("14285"),
                 n.e("28152"),
-                n.e("49520"),
                 n.e("65826"),
+                n.e("49520"),
                 n.e("27323"),
                 n.e("49089"),
                 n.e("10943"),
@@ -99357,9 +99439,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("993"),
           n.e("54527"),
           n.e("72535"),
+          n.e("86949"),
           n.e("76195"),
           n.e("39227"),
-          n.e("86949"),
           n.e("1177"),
           n.e("26490"),
           n.e("76170"),
@@ -113637,9 +113719,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("993"),
               n.e("54527"),
               n.e("72535"),
+              n.e("86949"),
               n.e("76195"),
               n.e("39227"),
-              n.e("86949"),
               n.e("69747"),
               n.e("1177"),
               n.e("26490"),
@@ -113917,8 +113999,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("57458"),
               n.e("8829"),
               n.e("19193"),
-              n.e("49520"),
               n.e("65826"),
+              n.e("49520"),
               n.e("76413"),
               n.e("42204"),
               n.e("18997"),
@@ -115182,9 +115264,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("993"),
               n.e("54527"),
               n.e("72535"),
+              n.e("86949"),
               n.e("76195"),
               n.e("39227"),
-              n.e("86949"),
               n.e("1177"),
               n.e("26490"),
               n.e("76170"),
@@ -117761,9 +117843,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("993"),
               n.e("54527"),
               n.e("72535"),
+              n.e("86949"),
               n.e("76195"),
               n.e("39227"),
-              n.e("86949"),
               n.e("1177"),
               n.e("26490"),
               n.e("76170"),
@@ -120330,19 +120412,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         defaultConfig: !1,
         variations: { 0: !1, 1: !0 },
       });
-    },
-    965387(e, t, n) {
-      "use strict";
-      n.d(t, { N: () => r });
-      let i = (0, n(945810).mj)({
-        name: "2026-01-user-offer-notice-timing-v2-xp",
-        kind: "user",
-        defaultConfig: { thresholdMs: 0 },
-        variations: { 1: { thresholdMs: 6048e5 } },
-      });
-      function r(e) {
-        return i.getConfig({ location: e }).thresholdMs;
-      }
     },
     488803(e, t, n) {
       "use strict";
@@ -136393,17 +136462,17 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     631576(e, t, n) {
       "use strict";
       n.d(t, {
-        $x: () => C,
-        AO: () => T,
-        MO: () => R,
-        YB: () => p,
-        oI: () => S,
-        p9: () => O,
-        sl: () => N,
-        uK: () => L,
-        vr: () => v,
-        x5: () => y,
-        zk: () => I,
+        $x: () => y,
+        AO: () => S,
+        MO: () => C,
+        YB: () => T,
+        oI: () => N,
+        p9: () => R,
+        sl: () => O,
+        uK: () => v,
+        vr: () => w,
+        x5: () => D,
+        zk: () => p,
       }),
         n(321073);
       var i = n(735438),
@@ -136411,20 +136480,21 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         s = n(636537),
         a = n(228366),
         o = n(157559),
-        l = n(446458),
-        _ = n(773669),
-        d = n(594061),
-        u = n(919638),
-        c = n(287809),
-        E = n(371794),
-        h = n(750385),
-        m = n(68935),
-        f = n(652215),
-        g = n(355097),
-        A = n(985018);
-      let I = async (e, t) => {
-          let { body: n } = await (0, E.aP)({
-            url: f.Rsh.STICKER_PACK(e),
+        l = n(870218),
+        _ = n(446458),
+        d = n(773669),
+        u = n(594061),
+        c = n(919638),
+        E = n(287809),
+        h = n(371794),
+        m = n(750385),
+        f = n(68935),
+        g = n(652215),
+        A = n(355097),
+        I = n(985018);
+      let p = async (e, t) => {
+          let { body: n } = await (0, h.aP)({
+            url: g.Rsh.STICKER_PACK(e),
             rejectWithError: !1,
           });
           return (
@@ -136437,36 +136507,36 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             n
           );
         },
-        p = async function () {
-          let { locale: e = _.default.locale } =
+        T = async function () {
+          let { locale: e = d.default.locale } =
             arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-          if (h.A.isFetchingStickerPacks || h.A.hasLoadedStickerPacks) return;
+          if (m.A.isFetchingStickerPacks || m.A.hasLoadedStickerPacks) return;
           a.h.wait(() => {
             a.h.dispatch({ type: "STICKER_PACKS_FETCH_START" });
           });
           let {
             body: { sticker_packs: t },
           } = await s.Bo.get({
-            url: f.Rsh.STICKER_PACKS,
+            url: g.Rsh.STICKER_PACKS,
             query: { locale: e },
             rejectWithError: !1,
           });
           a.h.dispatch({ type: "STICKER_PACKS_FETCH_SUCCESS", packs: t });
         },
-        T = async (e) => {
+        S = async (e) => {
           let { body: t } = await s.Bo.get({
-            url: f.Rsh.STICKER(e),
+            url: g.Rsh.STICKER(e),
             rejectWithError: !1,
           });
-          if ((0, m.Xw)(t))
+          if ((0, f.Xw)(t))
             a.h.dispatch({ type: "GUILD_STICKER_FETCH_SUCCESS", sticker: t });
-          else if ((0, m.FD)(t))
+          else if ((0, f.FD)(t))
             a.h.dispatch({ type: "PACK_STICKER_FETCH_SUCCESS", sticker: t });
           else throw Error("Invalid sticker type");
         },
-        S = async (e, t) => {
+        N = async (e, t) => {
           let { body: n } = await s.Bo.get({
-            url: f.Rsh.GUILD_STICKER_PACKS(e),
+            url: g.Rsh.GUILD_STICKER_PACKS(e),
             rejectWithError: !1,
             signal: t,
           });
@@ -136478,16 +136548,16 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             ),
           });
         },
-        N = async (e) => {
+        O = async (e) => {
           await s.Bo.del({
-            url: f.Rsh.GUILD_STICKER(e.guild_id, e.id),
+            url: g.Rsh.GUILD_STICKER(e.guild_id, e.id),
             rejectWithError: !1,
           });
         },
-        O = async (e) => {
+        R = async (e) => {
           let { guildId: t } = e,
             n = await s.Bo.post({
-              url: f.Rsh.GUILD_STICKER_PACKS(t),
+              url: g.Rsh.GUILD_STICKER_PACKS(t),
               body: "web" === e.platform ? e.body : void 0,
               fields:
                 "mobile" === e.platform
@@ -136506,26 +136576,27 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                       },
                     ]
                   : void 0,
+              headers: l.A.buildHeadersForMd5(e.originalMd5),
               rejectWithError: !1,
             });
           return (
             a.h.dispatch({
               type: "GUILD_STICKERS_CREATE_SUCCESS",
               guildId: t,
-              sticker: { ...n.body, user_id: c.default.getCurrentUser()?.id },
+              sticker: { ...n.body, user_id: E.default.getCurrentUser()?.id },
             }),
             n.body
           );
         },
-        R = async (e, t, n) =>
+        C = async (e, t, n) =>
           (
             await s.Bo.patch({
-              url: f.Rsh.GUILD_STICKER(e, t),
+              url: g.Rsh.GUILD_STICKER(e, t),
               body: n,
               rejectWithError: !1,
             })
           ).body;
-      function C(e, t, n) {
+      function y(e, t, n) {
         a.h.dispatch({
           type: "ADD_STICKER_PREVIEW",
           channelId: e,
@@ -136533,40 +136604,40 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           draftType: n,
         });
       }
-      function y(e, t) {
+      function D(e, t) {
         a.h.dispatch({
           type: "CLEAR_STICKER_PREVIEW",
           channelId: e,
           draftType: t,
         });
       }
-      function D(e) {
-        return u.A.totalUnavailableGuilds > 0 || !l.A.isConnected()
-          ? e
-          : e.filter((e) => null != h.A.getStickerById(e));
-      }
       function L(e) {
-        d.bW.updateAsync(
+        return c.A.totalUnavailableGuilds > 0 || !_.A.isConnected()
+          ? e
+          : e.filter((e) => null != m.A.getStickerById(e));
+      }
+      function v(e) {
+        u.bW.updateAsync(
           "favoriteStickers",
           (t) =>
-            ((t.stickerIds = D(t.stickerIds)), r().size(t.stickerIds) >= 250)
+            ((t.stickerIds = L(t.stickerIds)), r().size(t.stickerIds) >= 250)
               ? (o.A.show({
-                  title: A.intl.string(A.t["+XYXtZ"]),
-                  body: A.intl.formatToPlainString(A.t.JaIyFi, { count: 250 }),
+                  title: I.intl.string(I.t["+XYXtZ"]),
+                  body: I.intl.formatToPlainString(I.t.JaIyFi, { count: 250 }),
                 }),
                 !1)
               : !t.stickerIds.includes(e) && void t.stickerIds.push(e),
-          g.Sb.INFREQUENT_USER_ACTION,
+          A.Sb.INFREQUENT_USER_ACTION,
         );
       }
-      function v(e) {
-        d.bW.updateAsync(
+      function w(e) {
+        u.bW.updateAsync(
           "favoriteStickers",
           (t) => {
             (t.stickerIds = t.stickerIds.filter((t) => t !== e)),
-              (t.stickerIds = D(t.stickerIds));
+              (t.stickerIds = L(t.stickerIds));
           },
-          g.Sb.INFREQUENT_USER_ACTION,
+          A.Sb.INFREQUENT_USER_ACTION,
         );
       }
     },
@@ -141860,6 +141931,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   pendingProfileEffect: void 0,
                   pendingProfileFrame: void 0,
                   pendingBanner: void 0,
+                  pendingBannerOriginalMd5: void 0,
                   pendingAccentColor: void 0,
                   pendingThemeColors: void 0,
                   pendingBio: void 0,
@@ -143566,9 +143638,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("993"),
               n.e("54527"),
               n.e("72535"),
+              n.e("86949"),
               n.e("76195"),
               n.e("39227"),
-              n.e("86949"),
               n.e("1177"),
               n.e("26490"),
               n.e("76170"),
@@ -143693,8 +143765,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("28152"),
               n.e("14224"),
               n.e("72883"),
-              n.e("49520"),
               n.e("65826"),
+              n.e("49520"),
               n.e("72877"),
               n.e("21060"),
               n.e("84971"),
@@ -143815,9 +143887,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("993"),
               n.e("54527"),
               n.e("72535"),
+              n.e("86949"),
               n.e("76195"),
               n.e("39227"),
-              n.e("86949"),
               n.e("1177"),
               n.e("26490"),
               n.e("76170"),
@@ -144046,9 +144118,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("993"),
               n.e("54527"),
               n.e("72535"),
+              n.e("86949"),
               n.e("76195"),
               n.e("39227"),
-              n.e("86949"),
               n.e("1177"),
               n.e("26490"),
               n.e("76170"),
@@ -144179,8 +144251,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("14224"),
               n.e("72883"),
               n.e("49644"),
-              n.e("49520"),
               n.e("65826"),
+              n.e("49520"),
               n.e("83972"),
               n.e("72877"),
               n.e("10943"),
@@ -147267,9 +147339,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("993"),
                   n.e("54527"),
                   n.e("72535"),
+                  n.e("86949"),
                   n.e("76195"),
                   n.e("39227"),
-                  n.e("86949"),
                   n.e("69747"),
                   n.e("1177"),
                   n.e("26490"),
@@ -147549,8 +147621,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("57458"),
                   n.e("8829"),
                   n.e("19193"),
-                  n.e("49520"),
                   n.e("65826"),
+                  n.e("49520"),
                   n.e("76413"),
                   n.e("42204"),
                   n.e("18997"),
@@ -147788,6 +147860,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("19781"),
                   n.e("37479"),
                   n.e("83799"),
+                  n.e("80112"),
                   n.e("25241"),
                   n.e("95067"),
                   n.e("97116"),
@@ -147813,7 +147886,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("28011"),
                   n.e("34936"),
                   n.e("75284"),
-                  n.e("80112"),
                   n.e("12755"),
                   n.e("86697"),
                   n.e("62318"),
@@ -175972,7 +176044,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "aa6537fa92c4375cee3f44eeb65496dedfacc151",
+                    "b247507d151e607d19ec6c0308886a502885e661",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -181805,7 +181877,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "537651",
+                  build_number: "537705",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -239219,4 +239291,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=83247.73ef0d95a1c85f34.js.map
+//# sourceMappingURL=12991.cb8bc39e8686da15.js.map

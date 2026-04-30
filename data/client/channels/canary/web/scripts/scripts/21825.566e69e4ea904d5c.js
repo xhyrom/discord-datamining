@@ -82,16 +82,23 @@
           imageUri: n,
           description: i,
           originalAsset: r,
+          originalMd5: a,
         } = e;
         switch (t) {
           case l.E.NEW_ASSET:
-            return { assetOrigin: t, imageUri: n, description: i };
+            return {
+              assetOrigin: t,
+              imageUri: n,
+              description: i,
+              originalMd5: a,
+            };
           case l.E.EDITED_ARCHIVED_ASSET:
             return {
               assetOrigin: t,
               imageUri: n,
               description: i,
               originalAsset: r,
+              originalMd5: a,
             };
           case l.E.ARCHIVED_ASSET:
             return { assetOrigin: t, imageUri: n, originalAsset: r };
@@ -137,4 +144,4 @@
     },
   },
 ]);
-//# sourceMappingURL=21825.afc0efce04c98dce.js.map
+//# sourceMappingURL=21825.566e69e4ea904d5c.js.map

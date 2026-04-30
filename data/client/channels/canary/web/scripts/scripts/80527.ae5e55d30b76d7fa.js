@@ -2,6 +2,43 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   ["80527"],
   {
+    61310(e, a, t) {
+      t.d(a, { Y: () => i, f: () => l });
+      var n,
+        r = t(339984),
+        l =
+          (((n = {}).USER_DEFAULT_PROFILE_AVATAR =
+            "USER_DEFAULT_PROFILE_AVATAR"),
+          (n.USER_DEFAULT_PROFILE_BANNER = "USER_DEFAULT_PROFILE_BANNER"),
+          (n.USER_GUILD_PROFILE_AVATAR = "USER_GUILD_PROFILE_AVATAR"),
+          (n.USER_GUILD_PROFILE_BANNER = "USER_GUILD_PROFILE_BANNER"),
+          (n.GUILD_ICON = "GUILD_ICON"),
+          (n.GUILD_BANNER = "GUILD_BANNER"),
+          (n.GUILD_DISCOVERY_SPLASH = "GUILD_DISCOVERY_SPLASH"),
+          (n.GUILD_INVITE_SPLASH = "GUILD_INVITE_SPLASH"),
+          (n.EMOJI = "EMOJI"),
+          (n.STICKER = "STICKER"),
+          n);
+      function i(e, a) {
+        switch (e) {
+          case r.HL.AVATAR:
+            return null != a
+              ? "USER_GUILD_PROFILE_AVATAR"
+              : "USER_DEFAULT_PROFILE_AVATAR";
+          case r.HL.BANNER:
+            return null != a
+              ? "USER_GUILD_PROFILE_BANNER"
+              : "USER_DEFAULT_PROFILE_BANNER";
+          case r.HL.GUILD_BANNER:
+          case r.HL.VIDEO_BACKGROUND:
+          case r.HL.SCHEDULED_EVENT_IMAGE:
+          case r.HL.HOME_HEADER:
+          case r.HL.AVATAR_DECORATION:
+          case r.HL.GUILD_ICON:
+            return null;
+        }
+      }
+    },
     601255(e, a, t) {
       t.d(a, { A: () => o });
       var n = t(64700),
@@ -34,98 +71,98 @@
       }
     },
     963977(e, a, t) {
-      t.d(a, { A: () => d });
+      t.d(a, { A: () => E });
       var n = t(64700),
         r = t(17928),
         l = t(919395),
         i = t(696451),
         o = t(486020),
         s = t(775602),
-        u = t(531685),
-        _ = t(940622),
-        c = t(601255),
-        p = t(476324);
-      let d = (e) => {
+        _ = t(531685),
+        u = t(940622),
+        A = t(601255),
+        c = t(476324);
+      let E = (e) => {
         let {
             user: a,
             guildId: t,
-            size: d,
-            avatarDecorationOverride: g,
-            onlyAnimateOnHoverOrFocus: A = !1,
+            size: E,
+            avatarDecorationOverride: p,
+            onlyAnimateOnHoverOrFocus: R = !1,
           } = e,
-          [f, E] = n.useState(!1),
-          { canAnimate: v } = ((e, a) => {
+          [d, g] = n.useState(!1),
+          { canAnimate: f } = ((e, a) => {
             let t = (0, r.bG)([s.A], () => s.A.useReducedMotion),
-              l = (0, r.bG)([u.A], () => u.A.isFocused()),
+              l = (0, r.bG)([_.A], () => _.A.isFocused()),
               [i, o] = n.useState(!1),
-              _ = n.useRef(null);
+              u = n.useRef(null);
             return (
               n.useEffect(() => {
-                null !== _.current &&
-                  (clearTimeout(_.current), (_.current = null));
+                null !== u.current &&
+                  (clearTimeout(u.current), (u.current = null));
                 let n = l && (e || (!t && !a));
                 n && t
-                  ? (_.current = window.setTimeout(() => {
+                  ? (u.current = window.setTimeout(() => {
                       o(!0);
                     }, 1e3))
                   : o(n);
               }, [l, e, t, a]),
               n.useEffect(
                 () => () => {
-                  null !== _.current &&
-                    (clearTimeout(_.current), (_.current = null));
+                  null !== u.current &&
+                    (clearTimeout(u.current), (u.current = null));
                 },
                 [],
               ),
               { canAnimate: i }
             );
-          })(f, A),
+          })(d, R),
           m = (0, r.bG)([i.Ay], () =>
             null != t && null != a ? i.Ay.getMember(t, a.id) : null,
           ),
-          b = (0, c.A)(
+          v = (0, A.A)(
             (0, l.lw)({
               userValue: a?.avatarDecoration,
               guildValue: m?.avatarDecoration,
               guildId: t,
             }),
           ),
-          R = (0, _.VU)(),
-          h = n.useMemo(
+          O = (0, u.VU)(),
+          L = n.useMemo(
             () =>
-              null != R && "" !== R
-                ? R
+              null != O && "" !== O
+                ? O
                 : (0, o.F_)({
-                    avatarDecoration: void 0 !== g ? g : b,
-                    canAnimate: v,
-                    size: d,
+                    avatarDecoration: void 0 !== p ? p : v,
+                    canAnimate: f,
+                    size: E,
                   }),
-            [R, g, b, v, d],
+            [O, p, v, f, E],
           );
         return {
-          avatarPlaceholderSrc: p,
-          avatarDecorationSrc: h,
-          isAvatarDecorationAnimating: v,
+          avatarPlaceholderSrc: c,
+          avatarDecorationSrc: L,
+          isAvatarDecorationAnimating: f,
           eventHandlers: {
-            onMouseEnter: n.useCallback(() => E(!0), []),
-            onMouseLeave: n.useCallback(() => E(!1), []),
+            onMouseEnter: n.useCallback(() => g(!0), []),
+            onMouseLeave: n.useCallback(() => g(!1), []),
           },
         };
       };
     },
     727170(e, a, t) {
-      t.d(a, { A: () => p });
+      t.d(a, { A: () => c });
       var n = t(64700),
         r = t(575593),
         l = t(702841),
         i = t(954571),
         o = t(590180),
         s = t(993408),
-        u = t(652215),
-        _ = t(788868);
-      let c = {
-          [r.R.AVATAR_DECORATION]: _.Ae.AVATAR_DECORATION,
-          [r.R.PROFILE_EFFECT]: _.Ae.PROFILE_EFFECT,
+        _ = t(652215),
+        u = t(788868);
+      let A = {
+          [r.R.AVATAR_DECORATION]: u.Ae.AVATAR_DECORATION,
+          [r.R.PROFILE_EFFECT]: u.Ae.PROFILE_EFFECT,
           [r.R.PROFILE_FRAME]: void 0,
           [r.R.NAMEPLATE]: void 0,
           [r.R.NONE]: void 0,
@@ -133,15 +170,15 @@
           [r.R.VARIANTS_GROUP]: void 0,
           [r.R.EXTERNAL_SKU]: void 0,
         },
-        p = (e) => {
+        c = (e) => {
           let a = (0, l.bG)([o.A], () => o.A.products);
           return (0, n.useCallback)(
             (t) => {
               let { type: n, skuId: r } = t,
                 l = a.get(r);
-              i.default.track(u.HAw.PREMIUM_FEATURE_TRY_OUT, {
-                feature_name: c[n],
-                feature_tier: (0, s.G0)(l) ? _.tz.FREE : _.tz.PREMIUM_STANDARD,
+              i.default.track(_.HAw.PREMIUM_FEATURE_TRY_OUT, {
+                feature_name: A[n],
+                feature_tier: (0, s.G0)(l) ? u.tz.FREE : u.tz.PREMIUM_STANDARD,
                 feature_selection: l?.name,
                 location_stack: e,
               });
@@ -152,16 +189,16 @@
     },
     559474(e, a, t) {
       t.d(a, {
-        GF: () => b,
-        Jn: () => f,
-        KE: () => h,
-        Kx: () => v,
-        Li: () => A,
+        GF: () => v,
+        Jn: () => d,
+        KE: () => L,
+        Kx: () => f,
+        Li: () => R,
         Ni: () => m,
-        RN: () => p,
-        aL: () => d,
+        RN: () => c,
+        aL: () => E,
         ds: () => P,
-        eg: () => I,
+        eg: () => S,
         pd: () => T,
       }),
         t(321073);
@@ -171,10 +208,10 @@
         i = t(64700),
         o = t(691540),
         s = t(857250),
-        u = t(97483),
-        _ = t(77350),
-        c = t(940622),
-        p =
+        _ = t(97483),
+        u = t(77350),
+        A = t(940622),
+        c =
           (((n = {}).CATALOG_BANNER_STATIC = "catalog_banner"),
           (n.CATALOG_BANNER_ANIMATED = "catalog_banner_animated"),
           (n.CATALOG_BANNER_RIVE = "catalog_banner_rive"),
@@ -198,7 +235,7 @@
           (n.MOBILE_BACKGROUND = "mobile_bg"),
           (n.MOBILE_HERO = "mobile_hero"),
           n);
-      let d = {
+      let E = {
           catalog_banner: ["jpg", "png"],
           catalog_banner_animated: ["webm"],
           catalog_banner_rive: ["riv"],
@@ -222,27 +259,27 @@
           mobile_bg: ["jpg"],
           mobile_hero: ["jpg"],
         },
-        g = new Map(
-          Object.values(p).flatMap((e) => d[e].map((a) => [`${e}.${a}`, e])),
+        p = new Map(
+          Object.values(c).flatMap((e) => E[e].map((a) => [`${e}.${a}`, e])),
         ),
-        A = new Set(g.keys());
-      var f =
+        R = new Set(p.keys());
+      var d =
         (((r = {}).PROFILE_EFFECT = "profile_effect"),
         (r.AVATAR_DECORATION = "avatar_decoration"),
         r);
-      let E = ".DS_Store";
-      var v =
+      let g = ".DS_Store";
+      var f =
         (((l = {}).COLLECTION = "collection"),
         (l.AVATAR_DECORATIONS = "avatar_decorations"),
         (l.PROFILE_EFFECTS = "profile_effects"),
         l);
       let m = (e) => {
-          (0, o.P0)((0, s.o)(e, u.Ck.FAILURE));
+          (0, o.P0)((0, s.o)(e, _.Ck.FAILURE));
         },
-        b = (e) => {
-          (0, o.P0)((0, s.o)(e, u.Ck.SUCCESS));
+        v = (e) => {
+          (0, o.P0)((0, s.o)(e, _.Ck.SUCCESS));
         },
-        R = (e, a) => {
+        O = (e, a) => {
           let t = new FileReader();
           (t.onload = (t) => {
             null == t.target || "string" != typeof t.target.result
@@ -251,35 +288,35 @@
           }),
             t.readAsDataURL(e);
         },
-        h = (e, a, t) => {
+        L = (e, a, t) => {
           if (0 === e.length) return void t?.("No files found!");
-          for (let t of e) R(t, a);
+          for (let t of e) O(t, a);
         },
-        O = (e, a) => `${e}/${a}`,
-        F = (e) => (0, _.tT)(e.type) || (0, _.XB)(e.type) || (0, _.XA)(e.name),
-        T = (e) => g.get(e.name) ?? null,
-        N = async (e) => {
+        I = (e, a) => `${e}/${a}`,
+        F = (e) => (0, u.tT)(e.type) || (0, u.XB)(e.type) || (0, u.XA)(e.name),
+        T = (e) => p.get(e.name) ?? null,
+        b = async (e) => {
           let a = [];
           if (e.isFile) {
             let t = await new Promise((a) => e.file(a));
-            t.name !== E && a.push(t);
+            t.name !== g && a.push(t);
           } else if (e.isDirectory) {
             let t = e.createReader(),
               n = await new Promise((e) => t.readEntries(e)),
-              r = await Promise.all(n.map((e) => N(e)));
+              r = await Promise.all(n.map((e) => b(e)));
             a.push(...r.flat());
           }
           return a;
         },
-        D = (e, a, t, n) => {
-          if (a.name === E) return;
-          let r = O(e, a.name);
+        N = (e, a, t, n) => {
+          if (a.name === g) return;
+          let r = I(e, a.name);
           if ("profile_effects" === t)
             F(a) || a.name.endsWith(".txt")
               ? (e in n.profileEffectFilesMap ||
                   (n.profileEffectFilesMap[e] = []),
                 n.profileEffectFilesMap[e].push(a))
-              : n.ignoredFilenames.push(O(e, a.name));
+              : n.ignoredFilenames.push(I(e, a.name));
           else
             F(a)
               ? "collection" === t || null === t
@@ -291,43 +328,43 @@
                   : n.ignoredFilenames.push(r)
               : n.ignoredFilenames.push(r);
         },
-        C = async (e, a, t) => {
+        D = async (e, a, t) => {
           let n = e.createReader();
           for (let r of await new Promise((e) => n.readEntries(e)))
             if (r.isFile) {
               let n = r,
                 l = await new Promise((e) => n.file(e));
-              D(e.name, l, a, t);
+              N(e.name, l, a, t);
             } else {
-              let e = await N(r);
-              t.ignoredFilenames.push(...e.map((e) => O(r.name, e.name)));
+              let e = await b(r);
+              t.ignoredFilenames.push(...e.map((e) => I(r.name, e.name)));
             }
         },
-        L = async (e, a) => {
+        h = async (e, a) => {
           let t = e.createReader();
           for (let n of await new Promise((e) => t.readEntries(e)))
             n.isDirectory
-              ? await C(n, "profile_effects", a)
+              ? await D(n, "profile_effects", a)
               : n.isFile &&
-                n.name !== E &&
-                a.ignoredFilenames.push(O(e.name, n.name));
+                n.name !== g &&
+                a.ignoredFilenames.push(I(e.name, n.name));
         },
-        w = async (e, a) => {
+        U = async (e, a) => {
           let t = e.createReader();
           for (let e of await new Promise((e) => t.readEntries(e)))
             if (e.isDirectory) {
               let t = e;
-              if ("collection" === t.name) await C(t, "collection", a);
+              if ("collection" === t.name) await D(t, "collection", a);
               else if ("avatar_decorations" === t.name)
-                await C(t, "avatar_decorations", a);
-              else if ("profile_effects" === t.name) await L(t, a);
+                await D(t, "avatar_decorations", a);
+              else if ("profile_effects" === t.name) await h(t, a);
               else {
-                let e = await N(t);
-                a.ignoredFilenames.push(...e.map((e) => O(t.name, e.name)));
+                let e = await b(t);
+                a.ignoredFilenames.push(...e.map((e) => I(t.name, e.name)));
               }
             }
         },
-        I = async (e) => {
+        S = async (e) => {
           let a = {
             collectionFiles: [],
             avatarDecorationFiles: [],
@@ -338,13 +375,13 @@
             if (t.isDirectory) {
               let e = t.name;
               "collection" === e || "avatar_decorations" === e
-                ? await C(t, e, a)
+                ? await D(t, e, a)
                 : "profile_effects" === e
-                  ? await L(t, a)
-                  : await w(t, a);
+                  ? await h(t, a)
+                  : await U(t, a);
             } else if (t.isFile) {
               let e = t;
-              D("", await new Promise((a) => e.file(a)), null, a);
+              N("", await new Promise((a) => e.file(a)), null, a);
             }
           return (
             a.collectionFiles.sort((e, a) => e.name.localeCompare(a.name)),
@@ -363,21 +400,21 @@
               ignoredFilenames: [],
             })),
             { upsertCollectionAsset: t, upsertAvatarDecorationAsset: n } = (0,
-            c.JE)(),
+            A.JE)(),
             r = i.useCallback(
               async (e) => {
-                let r = await I(e);
+                let r = await S(e);
                 a(r),
                   (0 !== r.collectionFiles.length ||
                     0 !== r.avatarDecorationFiles.length) &&
                     (r.collectionFiles.forEach((e) => {
-                      R(e, (e) => {
+                      O(e, (e) => {
                         let a = T(e);
                         null != a && t(a, e);
                       });
                     }),
                     r.avatarDecorationFiles.forEach((e) => {
-                      R(e, (e) => {
+                      O(e, (e) => {
                         n(e);
                       });
                     }));
@@ -409,10 +446,10 @@
     },
     252732(e, a, t) {
       t.d(a, {
-        XD: () => d,
-        sv: () => g,
-        eh: () => A,
-        sN: () => E,
+        XD: () => R,
+        sv: () => d,
+        eh: () => g,
+        sN: () => m,
         rM: () => f,
       });
       var n = t(627968);
@@ -420,23 +457,27 @@
       var r = t(317097),
         l = t(192308);
       t(23658);
-      var i = t(101058),
-        o = t(486020);
+      var i = t(870218),
+        o = t(61310),
+        s = t(101058),
+        _ = t(486020);
       t(453771);
-      var s = t(427262),
-        u = t(228366),
-        _ = t(478644),
-        c = t(339984),
+      var u = t(427262),
+        A = t(228366),
+        c = t(478644),
+        E = t(339984),
         p = t(985018);
-      function d(e) {
+      function R(e) {
         let {
-          uploadType: a,
-          guildId: r,
-          analyticsSource: o,
-          filters: s,
-          isTryItOut: d = !1,
-          stackingBehavior: g,
-        } = e;
+            uploadType: a,
+            guildId: r,
+            analyticsSource: _,
+            filters: u,
+            isTryItOut: R = !1,
+            stackingBehavior: d,
+          } = e,
+          g = (0, o.Y)(a, r),
+          f = null;
         (0, l.openModalLazy)(
           async () => {
             let { default: e } = await Promise.all([
@@ -466,19 +507,24 @@
             ]).then(t.bind(t, 902550));
             return (t) =>
               (0, n.jsx)(e, {
-                filters: s,
-                maxFileSizeBytes: _.j,
+                filters: u,
+                maxFileSizeBytes: c.j,
                 imageSpecifications:
-                  a === c.HL.BANNER ? p.intl.string(p.t.IhzZlo) : void 0,
-                onComplete: (e) => {
+                  a === E.HL.BANNER ? p.intl.string(p.t.IhzZlo) : void 0,
+                onFileSelected: (e) => {
+                  f = null != g ? i.A.fromBlob(g, e) : null;
+                },
+                onComplete: async (e) => {
                   let {
-                      assetOrigin: t,
-                      imageUri: n,
-                      file: l,
-                      originalAsset: s,
-                    } = e,
-                    _ = l.name.replace(/\.[^/.]+$/, ""),
-                    c = (0, i.Rh)({ filename: _, assetOrigin: t });
+                    assetOrigin: t,
+                    imageUri: n,
+                    file: l,
+                    originalAsset: o,
+                  } = e;
+                  null == f && null != g && (f = i.A.fromBlob(g, l));
+                  let u = (await f?.getOriginalMd5()) ?? null,
+                    c = l.name.replace(/\.[^/.]+$/, ""),
+                    E = (0, s.Rh)({ filename: c, assetOrigin: t });
                   !(function (e) {
                     let {
                       image: a,
@@ -488,7 +534,7 @@
                       analyticsSource: l,
                       isTryItOut: i = !1,
                     } = e;
-                    u.h.dispatch({
+                    A.h.dispatch({
                       type: "PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL",
                       image: a,
                       file: t,
@@ -498,17 +544,18 @@
                       isTryItOut: i,
                     });
                   })({
-                    image: (0, i.XB)({
+                    image: (0, s.XB)({
                       assetOrigin: t,
                       imageUri: n,
-                      description: c,
-                      originalAsset: s,
+                      description: E,
+                      originalAsset: o,
+                      originalMd5: u,
                     }),
                     file: l,
                     uploadType: a,
                     guildId: r,
-                    analyticsSource: o,
-                    isTryItOut: d,
+                    analyticsSource: _,
+                    isTryItOut: R,
                   });
                 },
                 uploadType: a,
@@ -516,22 +563,22 @@
                 ...t,
               });
           },
-          { stackingBehavior: g },
+          { stackingBehavior: d },
         );
       }
-      function g(e, a, t) {
+      function d(e, a, t) {
         let n =
           arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
         if (null != e) return e;
         let { size: r = 80, canAnimate: l = !0 } = n,
           i = null === e;
         return i && null == a
-          ? o.Ay.getDefaultAvatarURL(t.id, t.discriminator)
+          ? _.Ay.getDefaultAvatarURL(t.id, t.discriminator)
           : i || a?.avatar == null
             ? t.getAvatarURL(void 0, r, l)
             : t.getAvatarURL(a?.guildId, r, l);
       }
-      function A(e) {
+      function g(e) {
         let {
             pendingNickname: a,
             pendingGlobalName: t,
@@ -540,169 +587,169 @@
           } = e,
           l = "" === a ? null : (a ?? r?.nick),
           i = "" === t ? n.username : t;
-        return l ?? i ?? s.Ay.getName(n);
+        return l ?? i ?? u.Ay.getName(n);
       }
       function f(e, a, t) {
         t(e ?? (null != a ? null : void 0));
       }
-      function E(e) {
+      function m(e) {
         return (null != e ? (0, r.OK)(e) : 1) > 0.25;
       }
     },
     352413(e, a, t) {
-      t.d(a, { A: () => _ });
+      t.d(a, { A: () => u });
       var n = t(64700),
         r = t(702841),
         l = t(727170),
         i = t(919395),
         o = t(207803),
         s = t(84540),
-        u = t(836602);
-      function _(e) {
-        let { isTryItOut: a, analyticsLocations: t, guildId: _ } = e,
-          c = (0, l.A)(t),
+        _ = t(836602);
+      function u(e) {
+        let { isTryItOut: a, analyticsLocations: t, guildId: u } = e,
+          A = (0, l.A)(t),
           {
-            pendingAvatar: p,
-            pendingAvatarDecoration: d,
-            pendingErrors: g,
-          } = (0, r.cf)([u.A], () => {
+            pendingAvatar: c,
+            pendingAvatarDecoration: E,
+            pendingErrors: p,
+          } = (0, r.cf)([_.A], () => {
             if (a) {
-              let e = u.A.getTryItOutChanges();
+              let e = _.A.getTryItOutChanges();
               return {
                 pendingAvatar: e.tryItOutAvatar,
                 pendingAvatarDecoration: e.tryItOutAvatarDecoration,
-                pendingErrors: u.A.getErrors(_).avatarDecoration,
+                pendingErrors: _.A.getErrors(u).avatarDecoration,
               };
             }
-            let e = u.A.getPendingChanges(_);
+            let e = _.A.getPendingChanges(u);
             return {
               pendingAvatar: e.pendingAvatar,
               pendingAvatarDecoration: e.pendingAvatarDecoration,
-              pendingErrors: u.A.getErrors(_).avatarDecoration,
+              pendingErrors: _.A.getErrors(u).avatarDecoration,
             };
           }),
-          A = (0, n.useCallback)(
+          R = (0, n.useCallback)(
             (e) => {
-              (0, s.p)({ guildId: _, avatar: e }),
+              (0, s.p)({ guildId: u, avatar: e }),
                 (0, i.WU)(null == e ? "remove" : "set");
             },
-            [_],
+            [u],
           ),
-          f = (0, n.useCallback)(
+          d = (0, n.useCallback)(
             (e) => {
-              (0, s.p)({ guildId: _, avatarDecoration: e }), null != e && c(e);
+              (0, s.p)({ guildId: u, avatarDecoration: e }), null != e && A(e);
             },
-            [c, _],
+            [A, u],
           );
         return {
-          pendingAvatar: p,
-          pendingAvatarDecoration: d,
-          pendingErrors: g,
-          setPendingAvatar: a ? o.e$ : A,
-          setPendingAvatarDecoration: a ? o.Go : f,
+          pendingAvatar: c,
+          pendingAvatarDecoration: E,
+          pendingErrors: p,
+          setPendingAvatar: a ? o.e$ : R,
+          setPendingAvatarDecoration: a ? o.Go : d,
         };
       }
     },
     62199(e, a, t) {
-      t.d(a, { A: () => _ });
+      t.d(a, { A: () => u });
       var n = t(64700),
         r = t(17928),
         l = t(252732),
         i = t(101058),
         o = t(696451),
         s = t(352413),
-        u = t(45837);
-      function _(e) {
+        _ = t(45837);
+      function u(e) {
         let {
             user: a,
             guildId: t,
-            size: _,
-            showPending: c = !1,
-            animateOnHover: p = !1,
-            avatarOverride: d,
+            size: u,
+            showPending: A = !1,
+            animateOnHover: c = !1,
+            avatarOverride: E,
           } = e,
-          { onMouseEnter: g, onMouseLeave: A, shouldAnimate: f } = (0, u.A)(p),
-          { pendingAvatar: E } = (0, s.A)({ guildId: null === t ? void 0 : t }),
-          v =
-            c && null != a
-              ? (0, i.V7)({ userId: a.id, image: E, canAnimate: f, size: _ })
+          { onMouseEnter: p, onMouseLeave: R, shouldAnimate: d } = (0, _.A)(c),
+          { pendingAvatar: g } = (0, s.A)({ guildId: null === t ? void 0 : t }),
+          f =
+            A && null != a
+              ? (0, i.V7)({ userId: a.id, image: g, canAnimate: d, size: u })
               : void 0,
-          m = void 0 !== d ? d : v,
-          b = (0, r.bG)([o.Ay], () =>
+          m = void 0 !== E ? E : f,
+          v = (0, r.bG)([o.Ay], () =>
             null != t && null != a ? o.Ay.getMember(t, a.id) : null,
           );
         return {
           avatarSrc: n.useMemo(
             () =>
               null != a
-                ? (0, l.sv)(m, b, a, { canAnimate: f, size: _ })
+                ? (0, l.sv)(m, v, a, { canAnimate: d, size: u })
                 : void 0,
-            [m, b, a, f, _],
+            [m, v, a, d, u],
           ),
-          isAvatarAnimating: f,
-          eventHandlers: { onMouseEnter: g, onMouseLeave: A },
+          isAvatarAnimating: d,
+          eventHandlers: { onMouseEnter: p, onMouseLeave: R },
         };
       }
     },
     854627(e, a, t) {
-      t.d(a, { A: () => _ });
+      t.d(a, { A: () => u });
       var n = t(64700),
         r = t(17928),
         l = t(778712),
         i = t(562819),
         o = t(963977),
         s = t(287809),
-        u = t(62199);
-      function _(e) {
+        _ = t(62199);
+      function u(e) {
         let {
             userId: a,
             guildId: t,
-            size: _,
-            showPending: c = !1,
-            animateOnHover: p = !1,
-            avatarDecorationOverride: d,
-            avatarOverride: g,
+            size: u,
+            showPending: A = !1,
+            animateOnHover: c = !1,
+            avatarDecorationOverride: E,
+            avatarOverride: p,
           } = e,
-          A = (0, r.bG)([s.default], () => s.default.getUser(a)),
+          R = (0, r.bG)([s.default], () => s.default.getUser(a)),
           {
-            avatarSrc: f,
-            isAvatarAnimating: E,
-            eventHandlers: v,
-          } = (0, u.A)({
-            user: A,
+            avatarSrc: d,
+            isAvatarAnimating: g,
+            eventHandlers: f,
+          } = (0, _.A)({
+            user: R,
             guildId: t,
-            size: (0, l.FT)(_),
-            showPending: c,
-            animateOnHover: p,
-            avatarOverride: g,
+            size: (0, l.FT)(u),
+            showPending: A,
+            animateOnHover: c,
+            avatarOverride: p,
           }),
           {
             avatarPlaceholderSrc: m,
-            avatarDecorationSrc: b,
-            eventHandlers: R,
+            avatarDecorationSrc: v,
+            eventHandlers: O,
           } = (0, o.A)({
-            user: A,
+            user: R,
             guildId: t,
-            avatarDecorationOverride: d,
-            size: (0, i.Te)(_),
-            onlyAnimateOnHoverOrFocus: p,
+            avatarDecorationOverride: E,
+            size: (0, i.Te)(u),
+            onlyAnimateOnHoverOrFocus: c,
           });
         return {
           avatarPlaceholderSrc: m,
-          avatarDecorationSrc: b,
-          avatarSrc: f,
-          isAnimating: E,
+          avatarDecorationSrc: v,
+          avatarSrc: d,
+          isAnimating: g,
           eventHandlers: {
             onMouseEnter: n.useCallback(() => {
-              v.onMouseEnter(), R.onMouseEnter();
-            }, [v, R]),
+              f.onMouseEnter(), O.onMouseEnter();
+            }, [f, O]),
             onMouseLeave: n.useCallback(() => {
-              v.onMouseLeave(), R.onMouseLeave();
-            }, [v, R]),
+              f.onMouseLeave(), O.onMouseLeave();
+            }, [f, O]),
           },
         };
       }
     },
   },
 ]);
-//# sourceMappingURL=80527.cacce095511da673.js.map
+//# sourceMappingURL=80527.ae5e55d30b76d7fa.js.map

@@ -412,7 +412,6 @@
   inset-inline: var(--space-8) var(--space-16);
   min-height: 24px;
   position: absolute;
-  text-transform: capitalize;
   transition: opacity 0.15s;
   z-index: 2;
 }
@@ -1235,4 +1234,4 @@
   border-radius: 0;
 }
 
-/*# sourceMappingURL=68495.3d2d043cb4844d26.css.map*/
+/*# sourceMappingURL=68495.5cc40c2f8d59627f.css.map*/

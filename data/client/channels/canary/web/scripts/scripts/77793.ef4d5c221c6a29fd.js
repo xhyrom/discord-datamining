@@ -291,13 +291,13 @@
     554375(e, t, n) {
       "use strict";
       n.d(t, {
-        Cp: () => N,
-        Gf: () => v,
-        Sw: () => b,
-        V4: () => T,
-        ak: () => S,
-        dK: () => I,
-        dZ: () => y,
+        Cp: () => j,
+        Gf: () => S,
+        Sw: () => R,
+        V4: () => b,
+        ak: () => N,
+        dK: () => y,
+        dZ: () => v,
       }),
         n(321073);
       var l = n(735438),
@@ -307,31 +307,32 @@
         r = n(765178),
         o = n(228366),
         c = n(181658),
-        u = n(159273),
-        d = n(7584),
-        h = n(635222),
-        m = n(446458),
-        p = n(594061),
-        f = n(919638),
-        g = n(403362),
-        x = n(157559),
-        C = n(652215),
-        A = n(355097),
-        E = n(985018);
-      function I(e) {
-        p.wc.updateAsync(
+        u = n(870218),
+        d = n(159273),
+        h = n(7584),
+        m = n(635222),
+        p = n(446458),
+        f = n(594061),
+        g = n(919638),
+        x = n(403362),
+        C = n(157559),
+        A = n(652215),
+        E = n(355097),
+        I = n(985018);
+      function y(e) {
+        f.wc.updateAsync(
           "textAndImages",
           (t) => {
             (t.diversitySurrogate = a.hU.create()),
               (t.diversitySurrogate.value = e);
           },
-          A.Sb.FREQUENT_USER_ACTION,
+          E.Sb.FREQUENT_USER_ACTION,
         );
       }
-      function y(e) {
+      function v(e) {
         o.h.dispatch({ type: "EMOJI_FETCH", guildId: e }),
           s.Bo.get({
-            url: C.Rsh.GUILD_EMOJIS(e),
+            url: A.Rsh.GUILD_EMOJIS(e),
             oldFormErrors: !0,
             rejectWithError: !0,
           }).then(
@@ -344,19 +345,21 @@
             () => o.h.dispatch({ type: "EMOJI_FETCH_FAILURE", guildId: e }),
           );
       }
-      function v(e) {
+      function S(e) {
         let {
           guildId: t,
           image: n,
           name: l,
           roles: i,
           analyticsLocation: a,
+          originalMd5: r,
         } = e;
         return (
           o.h.dispatch({ type: "EMOJI_UPLOAD_START", guildId: t }),
           s.Bo.post({
-            url: C.Rsh.GUILD_EMOJIS(t),
+            url: A.Rsh.GUILD_EMOJIS(t),
             body: { image: n, name: l, roles: i },
+            headers: u.A.buildHeadersForMd5(r),
             context: { client_event_source: a?.page },
             oldFormErrors: !0,
             rejectWithError: !1,
@@ -371,24 +374,24 @@
           )
         );
       }
-      function S(e, t, n) {
+      function N(e, t, n) {
         return (
           o.h.dispatch({ type: "EMOJI_DELETE", guildId: e, emojiId: t }),
           s.Bo.del({
-            url: C.Rsh.GUILD_EMOJI(e, t),
+            url: A.Rsh.GUILD_EMOJI(e, t),
             body: null != n ? { replaced_by: n } : void 0,
             oldFormErrors: !0,
             rejectWithError: !1,
           }).then(() => {
-            r.O.announce(E.intl.string(E.t.L3UUha));
+            r.O.announce(I.intl.string(I.t.L3UUha));
           })
         );
       }
-      async function N(e) {
+      async function j(e) {
         let { guildId: t, emojiId: n, name: l, roles: i } = e;
         try {
           return await s.Bo.patch({
-            url: C.Rsh.GUILD_EMOJI(t, n),
+            url: A.Rsh.GUILD_EMOJI(t, n),
             body: { name: l, roles: i },
             oldFormErrors: !0,
             rejectWithError: !0,
@@ -397,46 +400,46 @@
           throw new c.A(e);
         }
       }
-      function j(e) {
-        if (f.A.totalUnavailableGuilds > 0 || !m.A.isConnected()) return e;
-        let t = e
-          .map((e) => u.Ay.getCustomEmojiById(e) ?? d.Ay.getByName(e))
-          .filter(g.Vq);
-        return [...(0, h.A)(t).keys()];
-      }
       function _(e) {
-        return null == e
-          ? null
-          : (e.id ?? d.Ay.convertSurrogateToBase(e.surrogates)?.name ?? e.name);
+        if (g.A.totalUnavailableGuilds > 0 || !p.A.isConnected()) return e;
+        let t = e
+          .map((e) => d.Ay.getCustomEmojiById(e) ?? h.Ay.getByName(e))
+          .filter(x.Vq);
+        return [...(0, m.A)(t).keys()];
       }
       function T(e) {
-        let t = _(e);
+        return null == e
+          ? null
+          : (e.id ?? h.Ay.convertSurrogateToBase(e.surrogates)?.name ?? e.name);
+      }
+      function b(e) {
+        let t = T(e);
         null != t &&
-          p.bW.updateAsync(
+          f.bW.updateAsync(
             "favoriteEmojis",
             (e) =>
-              ((e.emojis = j(e.emojis)), i().size(e.emojis) >= 250)
-                ? (x.A.show({
-                    title: E.intl.string(E.t["+XYXtZ"]),
-                    body: E.intl.formatToPlainString(E.t.JaIyFi, {
+              ((e.emojis = _(e.emojis)), i().size(e.emojis) >= 250)
+                ? (C.A.show({
+                    title: I.intl.string(I.t["+XYXtZ"]),
+                    body: I.intl.formatToPlainString(I.t.JaIyFi, {
                       count: 250,
                     }),
                   }),
                   !1)
                 : !e.emojis.includes(t) && void e.emojis.push(t),
-            A.Sb.INFREQUENT_USER_ACTION,
+            E.Sb.INFREQUENT_USER_ACTION,
           );
       }
-      function b(e) {
-        let t = _(e);
+      function R(e) {
+        let t = T(e);
         null != t &&
-          p.bW.updateAsync(
+          f.bW.updateAsync(
             "favoriteEmojis",
             (e) => {
-              if (((e.emojis = j(e.emojis)), !e.emojis.includes(t))) return !1;
+              if (((e.emojis = _(e.emojis)), !e.emojis.includes(t))) return !1;
               e.emojis = e.emojis.filter((e) => t !== e);
             },
-            A.Sb.INFREQUENT_USER_ACTION,
+            E.Sb.INFREQUENT_USER_ACTION,
           );
       }
     },
@@ -30881,8 +30884,8 @@
                 n.e("28152"),
                 n.e("49644"),
                 n.e("7059"),
-                n.e("49520"),
                 n.e("65826"),
+                n.e("49520"),
                 n.e("42204"),
                 n.e("78195"),
                 n.e("66783"),
@@ -38620,8 +38623,8 @@
                             n.e("28152"),
                             n.e("49644"),
                             n.e("7059"),
-                            n.e("49520"),
                             n.e("65826"),
+                            n.e("49520"),
                             n.e("42204"),
                             n.e("78195"),
                             n.e("66783"),
@@ -38935,8 +38938,8 @@
                           n.e("28152"),
                           n.e("49644"),
                           n.e("7059"),
-                          n.e("49520"),
                           n.e("65826"),
+                          n.e("49520"),
                           n.e("42204"),
                           n.e("78195"),
                           n.e("66783"),
@@ -41821,20 +41824,21 @@
                       n.e("93461"),
                       n.e("68904"),
                       n.e("22067"),
+                      n.e("98329"),
                       n.e("75627"),
                       n.e("21957"),
                       n.e("93766"),
-                      n.e("38863"),
                       n.e("36926"),
+                      n.e("54622"),
                       n.e("83827"),
                       n.e("51678"),
                       n.e("23065"),
                       n.e("7406"),
                       n.e("69059"),
                       n.e("78010"),
+                      n.e("80112"),
                       n.e("93767"),
                       n.e("30000"),
-                      n.e("80112"),
                       n.e("58838"),
                       n.e("32737"),
                       n.e("38714"),
@@ -50070,4 +50074,4 @@
     },
   },
 ]);
-//# sourceMappingURL=77793.d6e3129467d533f4.js.map
+//# sourceMappingURL=77793.ef4d5c221c6a29fd.js.map

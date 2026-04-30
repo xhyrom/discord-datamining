@@ -6,16 +6,16 @@
       a.d(n, { p: () => d });
       var i = a(228366),
         l = a(696451),
-        o = a(287809),
-        r = a(841595);
+        r = a(287809),
+        o = a(841595);
       let d = (e) => {
         let { guildId: n, ...a } = e,
-          d = o.default.getCurrentUser();
+          d = r.default.getCurrentUser();
         if (null == d) return;
         let t =
             null == n
-              ? r.A.getUserProfile(d.id)
-              : r.A.getGuildMemberProfile(d.id, n),
+              ? o.A.getUserProfile(d.id)
+              : o.A.getGuildMemberProfile(d.id, n),
           p = null != n ? l.Ay.getMember(n, d.id) : null,
           s = {};
         "globalName" in a &&
@@ -63,8 +63,10 @@
           "banner" in a &&
             ((null != n && a.banner === p?.banner) ||
             (null == n && a.banner === d.banner)
-              ? (s.pendingBanner = void 0)
-              : (s.pendingBanner = a.banner)),
+              ? ((s.pendingBanner = void 0),
+                (s.pendingBannerOriginalMd5 = void 0))
+              : ((s.pendingBanner = a.banner),
+                (s.pendingBannerOriginalMd5 = a.bannerOriginalMd5 ?? null))),
           "accentColor" in a && (s.pendingAccentColor = a.accentColor),
           "themeColors" in a &&
             ((a.themeColors?.[0] == null || a.themeColors?.[1] == null) &&
@@ -87,4 +89,4 @@
     },
   },
 ]);
-//# sourceMappingURL=98125.231c1180e736a956.js.map
+//# sourceMappingURL=98125.a7e34ffd90fa6fc1.js.map
