@@ -26332,7 +26332,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 537448, Version Hash: 9355f35eaed28f8bca992d23a210b6b9314a41dc`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 537544, Version Hash: 2daab19b8d3ddbe7668cfe9b710dc83d6760456b`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -49062,7 +49062,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "9355f35eaed28f8bca992d23a210b6b9314a41dc" === e.body.hash
+                  "2daab19b8d3ddbe7668cfe9b710dc83d6760456b" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53593,10 +53593,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("537448")),
+                ((e = parseInt("537544")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 537448",
+                    "Trying to open a changelog for an invalid build number 537544",
                   ),
                   (e = 0)),
                 e),
@@ -62465,9 +62465,9 @@ ${s}`);
             n.e("23964"),
             n.e("20287"),
             n.e("28367"),
-            n.e("63232"),
             n.e("35429"),
             n.e("10471"),
+            n.e("63232"),
             n.e("64827"),
             n.e("23808"),
             n.e("11301"),
@@ -66837,7 +66837,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "537448", versionHash: "9355f35eaed28f8bca992d23a210b6b9314a41dc" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "537544", versionHash: "2daab19b8d3ddbe7668cfe9b710dc83d6760456b" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -99273,9 +99273,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("15380"),
           n.e("20287"),
           n.e("28367"),
-          n.e("63232"),
           n.e("35429"),
           n.e("10471"),
+          n.e("63232"),
           n.e("64827"),
           n.e("23808"),
           n.e("11301"),
@@ -113544,9 +113544,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("73924"),
               n.e("20287"),
               n.e("28367"),
-              n.e("63232"),
               n.e("35429"),
               n.e("10471"),
+              n.e("63232"),
               n.e("64827"),
               n.e("23808"),
               n.e("11301"),
@@ -147053,9 +147053,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("90874"),
                   n.e("20287"),
                   n.e("28367"),
-                  n.e("63232"),
                   n.e("35429"),
                   n.e("10471"),
+                  n.e("63232"),
                   n.e("64827"),
                   n.e("23808"),
                   n.e("11301"),
@@ -175832,7 +175832,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "9355f35eaed28f8bca992d23a210b6b9314a41dc",
+                    "2daab19b8d3ddbe7668cfe9b710dc83d6760456b",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -181665,7 +181665,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "537448",
+                  build_number: "537544",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -239078,4 +239078,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=89767.e1be66bf5d52f3e8.js.map
+//# sourceMappingURL=89767.0166d9634a47d672.js.map

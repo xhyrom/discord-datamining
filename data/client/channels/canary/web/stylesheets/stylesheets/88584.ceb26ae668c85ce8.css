@@ -759,7 +759,6 @@
   font-family: var(--font-code);
   font-size: 85%;
   -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
   text-size-adjust: none;
 }
 .codeLine_ada32f .hljs-comment,
@@ -5699,4 +5698,4 @@ div.nagbar_d74ef8 {
   }
 }
 
-/*# sourceMappingURL=88584.042d2a58d2fee097.css.map*/
+/*# sourceMappingURL=88584.ceb26ae668c85ce8.css.map*/

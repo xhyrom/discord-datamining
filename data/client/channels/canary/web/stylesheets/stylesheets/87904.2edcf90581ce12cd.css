@@ -1571,6 +1571,7 @@
   justify-content: space-between;
 }
 .checklist_bbb935 {
+  background-color: var(--background-base-low);
   flex-basis: 248px;
   flex-grow: 0;
   margin-inline-start: 40px;
@@ -4888,4 +4889,4 @@
   padding: var(--space-4);
 }
 
-/*# sourceMappingURL=87904.eedc238a99989ff1.css.map*/
+/*# sourceMappingURL=87904.2edcf90581ce12cd.css.map*/
