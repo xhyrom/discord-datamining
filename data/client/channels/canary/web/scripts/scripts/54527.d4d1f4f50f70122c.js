@@ -14,8 +14,8 @@
       var i = s(661531),
         o = s(477262),
         r = s(391242),
-        l = s(179866),
-        e = s(797285),
+        e = s(179866),
+        l = s(797285),
         c = s(27232),
         a = s(460905),
         f = s(183623),
@@ -38,7 +38,7 @@
         },
         h = () => ({
           color: i.A.unsafe_rawColors.PREMIUM_PERK_ORANGE.css,
-          icon: l.i,
+          icon: e.i,
           description: R.intl.string(R.t.zZe94m),
         }),
         A = function () {
@@ -48,7 +48,7 @@
               : i.A.unsafe_rawColors.PREMIUM_PERK_PURPLE.css;
           return {
             color: t,
-            icon: e.t,
+            icon: l.t,
             description: R.intl.string(R.t.ZwOSdn),
           };
         },
@@ -71,7 +71,7 @@
           }
           return {
             color: n,
-            icon: e.t,
+            icon: l.t,
             description: R.intl.formatToPlainString(R.t["12vFYK"], {
               numStickers: s,
               numEmojis: o,
@@ -171,8 +171,8 @@
       s(64700);
       var o = s(231723),
         r = s(192308),
-        l = s(869146),
-        e = s(709055),
+        e = s(869146),
+        l = s(709055),
         c = s(954571),
         a = s(652215);
       function f(t, n) {
@@ -184,8 +184,8 @@
             location: t.analyticsSourceLocation,
           });
         let { openInPopoutEnabled: u, ..._ } = t,
-          E = l.A.getWindowOpen(a.MLl.CHANNEL_CALL_POPOUT) && null != u && u;
-        E && (0, e.A)(a.MLl.CHANNEL_CALL_POPOUT);
+          E = e.A.getWindowOpen(a.MLl.CHANNEL_CALL_POPOUT) && null != u && u;
+        E && (0, l.A)(a.MLl.CHANNEL_CALL_POPOUT);
         let d = E ? o.KX : o.SY;
         (0, r.openModalLazy)(
           async () => {
@@ -193,12 +193,13 @@
               s.e("80848"),
               s.e("16933"),
               s.e("45650"),
-              s.e("80731"),
+              s.e("75527"),
               s.e("40305"),
               s.e("52041"),
               s.e("60235"),
               s.e("45959"),
-              s.e("55057"),
+              s.e("39667"),
+              s.e("53092"),
               s.e("71202"),
               s.e("45210"),
             ]).then(s.bind(s, 331617));
@@ -280,4 +281,4 @@
     },
   },
 ]);
-//# sourceMappingURL=54527.9f2fa31936d3871d.js.map
+//# sourceMappingURL=54527.d4d1f4f50f70122c.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["64150"],
+  ["48751"],
   {
     28371(e, _, t) {
       e.exports = {
@@ -380,25 +380,6 @@
         Lj: "embedWrapper_b5ecb2",
         zx: "embedSection_b5ecb2",
         n0: "questsEmbed_b5ecb2",
-      };
-    },
-    66176(e, _, t) {
-      e.exports = {
-        R_: "heading_a10b43",
-        $Q: "previewDescription_a10b43",
-        k0: "memberListContainer_a10b43",
-        Tn: "minimalMemberItem_a10b43",
-        wH: "selected_a10b43",
-        lm: "memberItemContent_a10b43",
-        Fj: "memberInfo_a10b43",
-      };
-    },
-    497275(e, _, t) {
-      e.exports = {
-        kL: "container_ba8a2f",
-        pf: "controlsBarContainer_ba8a2f",
-        tZ: "contentArea_ba8a2f",
-        Qs: "content_ba8a2f",
       };
     },
     970197(e, _, t) {

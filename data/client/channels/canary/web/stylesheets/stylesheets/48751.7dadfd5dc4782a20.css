@@ -2266,93 +2266,6 @@ span.clanTag__5d473 {
   display: flex;
   gap: 8px;
 }
-.heading_a10b43 {
-  color: var(--text-strong);
-  margin-bottom: var(--space-12);
-}
-.previewDescription_a10b43 {
-  color: var(--text-muted);
-  font-size: 12px;
-  font-style: italic;
-  margin-bottom: var(--space-16);
-}
-.memberListContainer_a10b43 {
-  border-radius: var(--radius-md);
-  display: flex;
-  margin-top: var(--space-16);
-  padding: var(--space-8) 0;
-  width: 100%;
-}
-.minimalMemberItem_a10b43 {
-  border-radius: var(--radius-sm);
-  transition: background-color 0.1s ease;
-  width: 240px;
-}
-.minimalMemberItem_a10b43:hover {
-  background-color: var(--interactive-background-hover);
-}
-.minimalMemberItem_a10b43.selected_a10b43 {
-  background-color: var(--interactive-background-selected);
-}
-.minimalMemberItem_a10b43 > * {
-  cursor: pointer;
-  padding: var(--space-8) var(--space-12);
-  width: 100%;
-}
-.memberItemContent_a10b43 {
-  align-items: center;
-  display: flex;
-  gap: var(--space-12);
-  width: 100%;
-}
-.memberInfo_a10b43 {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  min-width: 0;
-}
-.container_ba8a2f {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
-  height: 100%;
-  width: 790px;
-}
-.controlsBarContainer_ba8a2f {
-  margin-bottom: var(--space-sm);
-  width: 90%;
-}
-.progressBar_ba8a2f {
-  border-radius: 4px;
-  height: 8px;
-  overflow: hidden;
-  position: relative;
-}
-.progressBarFill_ba8a2f {
-  background: linear-gradient(90deg, var(--brand-500) 0, var(--brand-360) 100%);
-  border-radius: 4px;
-  height: 100%;
-  inset-inline-start: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.contentArea_ba8a2f {
-  border-radius: 8px;
-  flex: 1;
-  z-index: 1;
-}
-.content_ba8a2f,
-.contentArea_ba8a2f {
-  overflow: visible;
-  position: relative;
-}
-.content_ba8a2f {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  height: 100%;
-}
 .container__3a1f6 {
   display: flex;
   flex-direction: column;
@@ -3293,4 +3206,4 @@ span.clanTag__5d473 {
   width: 100%;
 }
 
-/*# sourceMappingURL=64150.1555d833f6363a11.css.map*/
+/*# sourceMappingURL=48751.7dadfd5dc4782a20.css.map*/
