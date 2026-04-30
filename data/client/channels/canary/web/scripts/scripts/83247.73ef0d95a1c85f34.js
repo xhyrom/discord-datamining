@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["89767"],
+  ["83247"],
   {
     696354(e, t, n) {
       var i = {
@@ -26258,8 +26258,8 @@ ${s}`);
         let { initWasmTracking: e } = n(474570);
         e(),
           n
-            .e("60649")
-            .then(n.bind(n, 38896))
+            .e("67620")
+            .then(n.bind(n, 559023))
             .then((e) => e.init());
       }
       (0, G.Zs)(function (e) {
@@ -26332,7 +26332,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 537544, Version Hash: 2daab19b8d3ddbe7668cfe9b710dc83d6760456b`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 537651, Version Hash: aa6537fa92c4375cee3f44eeb65496dedfacc151`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -27080,7 +27080,6 @@ ${s}`);
           Promise.resolve().then(n.bind(n, 368662)),
           n.e("73746").then(n.bind(n, 224585)),
           n.e("43746").then(n.bind(n, 335993)),
-          n.e("33249").then(n.bind(n, 365720)),
           n.e("44912").then(n.bind(n, 962995)),
           n.e("967").then(n.bind(n, 237146)),
           n.e("8304").then(n.bind(n, 594387)),
@@ -49062,7 +49061,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "2daab19b8d3ddbe7668cfe9b710dc83d6760456b" === e.body.hash
+                  "aa6537fa92c4375cee3f44eeb65496dedfacc151" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53593,10 +53592,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("537544")),
+                ((e = parseInt("537651")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 537544",
+                    "Trying to open a changelog for an invalid build number 537651",
                   ),
                   (e = 0)),
                 e),
@@ -62436,8 +62435,7 @@ ${s}`);
             n.e("90217"),
             n.e("5384"),
             n.e("23924"),
-            n.e("15510"),
-            n.e("25845"),
+            n.e("71470"),
             n.e("24199"),
             n.e("57036"),
             n.e("207"),
@@ -62483,31 +62481,31 @@ ${s}`);
             n.e("24313"),
             n.e("74016"),
             n.e("48405"),
-            n.e("63185"),
+            n.e("12544"),
             n.e("19551"),
             n.e("7743"),
             n.e("45959"),
             n.e("18573"),
             n.e("55936"),
             n.e("31988"),
+            n.e("71751"),
             n.e("39667"),
-            n.e("37794"),
             n.e("26073"),
             n.e("34303"),
-            n.e("48172"),
             n.e("28866"),
             n.e("8304"),
             n.e("58038"),
             n.e("93159"),
             n.e("11566"),
-            n.e("21106"),
+            n.e("10556"),
             n.e("94723"),
             n.e("62931"),
             n.e("81987"),
-            n.e("53092"),
+            n.e("50417"),
             n.e("58007"),
             n.e("5812"),
-            n.e("17363"),
+            n.e("27602"),
+            n.e("83157"),
             n.e("34552"),
             n.e("88941"),
             n.e("55411"),
@@ -62808,8 +62806,8 @@ ${s}`);
             n.e("24170"),
             n.e("84317"),
             n.e("89916"),
-            n.e("67176"),
             n.e("39286"),
+            n.e("58984"),
             n.e("54961"),
             n.e("61156"),
             n.e("14461"),
@@ -62868,7 +62866,7 @@ ${s}`);
             n.e("36877"),
             n.e("95998"),
             n.e("97073"),
-            n.e("71470"),
+            n.e("49089"),
             n.e("72877"),
             n.e("36419"),
             n.e("26437"),
@@ -62920,7 +62918,7 @@ ${s}`);
             n.e("71217"),
             n.e("41701"),
             n.e("37490"),
-            n.e("98725"),
+            n.e("21106"),
             n.e("49205"),
             n.e("40204"),
             n.e("97069"),
@@ -63077,7 +63075,7 @@ ${s}`);
             n.e("79593"),
             n.e("33771"),
             n.e("3168"),
-            n.e("99707"),
+            n.e("22088"),
             n.e("41706"),
             n.e("86779"),
             n.e("91139"),
@@ -63223,7 +63221,7 @@ ${s}`);
             n.e("4098"),
             n.e("53683"),
             n.e("82969"),
-            n.e("59373"),
+            n.e("81754"),
             n.e("33204"),
             n.e("66002"),
             n.e("71811"),
@@ -66837,7 +66835,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "537544", versionHash: "2daab19b8d3ddbe7668cfe9b710dc83d6760456b" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "537651", versionHash: "aa6537fa92c4375cee3f44eeb65496dedfacc151" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -91475,7 +91473,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("49520"),
                   n.e("65826"),
                   n.e("27323"),
-                  n.e("71470"),
+                  n.e("49089"),
                   n.e("10943"),
                   n.e("58164"),
                   n.e("37490"),
@@ -91715,7 +91713,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("49520"),
                 n.e("65826"),
                 n.e("27323"),
-                n.e("71470"),
+                n.e("49089"),
                 n.e("10943"),
                 n.e("58164"),
                 n.e("37490"),
@@ -99264,8 +99262,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("79705"),
           n.e("86274"),
           n.e("23924"),
-          n.e("15510"),
-          n.e("25845"),
+          n.e("71470"),
           n.e("24199"),
           n.e("57036"),
           n.e("207"),
@@ -99291,31 +99288,31 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("24313"),
           n.e("74016"),
           n.e("48405"),
-          n.e("63185"),
+          n.e("12544"),
           n.e("19551"),
           n.e("7743"),
           n.e("45959"),
           n.e("18573"),
           n.e("55936"),
           n.e("31988"),
+          n.e("71751"),
           n.e("39667"),
-          n.e("37794"),
           n.e("26073"),
           n.e("34303"),
-          n.e("48172"),
           n.e("28866"),
           n.e("8304"),
           n.e("58038"),
           n.e("93159"),
           n.e("11566"),
-          n.e("21106"),
+          n.e("10556"),
           n.e("94723"),
           n.e("62931"),
           n.e("81987"),
-          n.e("53092"),
+          n.e("50417"),
           n.e("58007"),
           n.e("5812"),
-          n.e("17363"),
+          n.e("27602"),
+          n.e("83157"),
           n.e("88941"),
           n.e("61379"),
           n.e("34530"),
@@ -99523,8 +99520,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n.e("54791"),
           n.e("255"),
           n.e("84317"),
-          n.e("67176"),
           n.e("39286"),
+          n.e("58984"),
           n.e("54961"),
           n.e("31445"),
           n.e("54625"),
@@ -113527,8 +113524,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("70530"),
               n.e("52204"),
               n.e("23924"),
-              n.e("15510"),
-              n.e("25845"),
+              n.e("71470"),
               n.e("24199"),
               n.e("57036"),
               n.e("207"),
@@ -113562,31 +113558,31 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("24313"),
               n.e("74016"),
               n.e("48405"),
-              n.e("63185"),
+              n.e("12544"),
               n.e("19551"),
               n.e("7743"),
               n.e("45959"),
               n.e("18573"),
               n.e("55936"),
               n.e("31988"),
+              n.e("71751"),
               n.e("39667"),
-              n.e("37794"),
               n.e("26073"),
               n.e("34303"),
-              n.e("48172"),
               n.e("28866"),
               n.e("8304"),
               n.e("58038"),
               n.e("93159"),
               n.e("11566"),
-              n.e("21106"),
+              n.e("10556"),
               n.e("94723"),
               n.e("62931"),
               n.e("81987"),
-              n.e("53092"),
+              n.e("50417"),
               n.e("58007"),
               n.e("5812"),
-              n.e("17363"),
+              n.e("27602"),
+              n.e("83157"),
               n.e("34552"),
               n.e("88941"),
               n.e("55411"),
@@ -113882,8 +113878,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("24170"),
               n.e("84317"),
               n.e("89916"),
-              n.e("67176"),
               n.e("39286"),
+              n.e("58984"),
               n.e("54961"),
               n.e("61156"),
               n.e("14461"),
@@ -113937,7 +113933,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("83972"),
               n.e("95998"),
               n.e("97073"),
-              n.e("71470"),
+              n.e("49089"),
               n.e("72877"),
               n.e("36419"),
               n.e("26437"),
@@ -113981,7 +113977,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("71217"),
               n.e("41701"),
               n.e("37490"),
-              n.e("98725"),
+              n.e("21106"),
               n.e("49205"),
               n.e("40204"),
               n.e("97069"),
@@ -114100,7 +114096,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("98425"),
               n.e("33771"),
               n.e("3168"),
-              n.e("99707"),
+              n.e("22088"),
               n.e("86779"),
               n.e("91139"),
               n.e("25660"),
@@ -114164,7 +114160,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("97354"),
               n.e("52694"),
               n.e("4098"),
-              n.e("59373"),
+              n.e("81754"),
               n.e("71811"),
               n.e("10360"),
               n.e("69257"),
@@ -117215,6 +117211,129 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         });
       }
     },
+    166532(e, t, n) {
+      "use strict";
+      n.d(t, {
+        Ir: () => h,
+        ZC: () => E,
+        l_: () => c,
+        ou: () => m,
+        pn: () => u,
+        zT: () => f,
+      });
+      var i,
+        r = n(64700),
+        s = n(845584),
+        a = n(626584),
+        o = n(739508),
+        l = n(566980),
+        _ = n(985018);
+      let d = new a.A("PaymentSteps");
+      var u =
+        (((i = {}).PAYMENT_TYPE = "payment_type"),
+        (i.PAYMENT_ELEMENT = "payment_element"),
+        (i.CREDIT_CARD_INFORMATION = "credit_card_information"),
+        (i.PAYPAL_INFORMATION = "paypal_information"),
+        (i.VENMO_INFORMATION = "venmo_information"),
+        (i.PRZELEWY24_INFORMATION = "przelewy24_information"),
+        (i.EPS_INFORMATION = "eps_information"),
+        (i.IDEAL_INFORMATION = "ideal_information"),
+        (i.CASH_APP_INFORMATION = "cash_app_information"),
+        (i.PAYMENT_REQUEST_INFORMATION = "payment_request_information"),
+        (i.ADDRESS = "address"),
+        (i.AWAITING_AUTHENTICATION = "awaiting_authentication"),
+        (i.SKU_SELECT = "sku_select"),
+        (i.PLAN_SELECT = "plan_select"),
+        (i.PREMIUM_UPSELL = "premium_upsell"),
+        (i.PREMIUM_GUILD_UPSELL = "premium_guild_upsell"),
+        (i.REVIEW = "review"),
+        (i.CONFIRM = "confirm"),
+        (i.CLAIM_FREE_SKU = "claim_free_sku"),
+        (i.SKU_PREVIEW = "sku_preview"),
+        (i.LOADING_PAYMENT_SOURCES = "loading_payment_sources"),
+        (i.SHOP = "shop"),
+        (i.PROMOTION_INFO = "promotion_info"),
+        (i.AWAITING_PURCHASE_TOKEN_AUTH = "awaiting_purchase_token_auth"),
+        (i.BENEFITS = "benefits"),
+        (i.WHAT_YOU_LOSE = "what_you_lose"),
+        (i.ADD_PAYMENT_STEPS = "add_payment_steps"),
+        (i.ATTEMPT_GOOGLE_PAY = "attempt_google_pay"),
+        (i.ATTEMPT_APPLE_PAY = "attempt_apple_pay"),
+        (i.AWAITING_BROWSER_CHECKOUT = "awaiting_browser_checkout"),
+        (i.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY =
+          "awaiting_browser_checkout_google_pay"),
+        (i.AWAITING_BROWSER_CHECKOUT_APPLE_PAY =
+          "awaiting_browser_checkout_apple_pay"),
+        (i.GIFT_CUSTOMIZATION = "gift_customization"),
+        (i.SELECT_FREE_SKU = "select_free_sku"),
+        i);
+      let c = new Set([
+          "awaiting_browser_checkout",
+          "awaiting_browser_checkout_google_pay",
+          "awaiting_browser_checkout_apple_pay",
+        ]),
+        E = new Set([
+          "credit_card_information",
+          "payment_request_information",
+          "paypal_information",
+          "venmo_information",
+          "cash_app_information",
+          "address",
+          "claim_free_sku",
+          "sku_preview",
+          "premium_upsell",
+          "przelewy24_information",
+        ]);
+      function h(e) {
+        switch (e) {
+          case "plan_select":
+            return _.intl.string(_.t["r+SebU"]);
+          case "payment_type":
+          case "add_payment_steps":
+            return _.intl.string(_.t.Sb6wI1);
+          case "awaiting_purchase_token_auth":
+          case "review":
+            return _.intl.string(_.t.QBnNHq);
+          case "shop":
+            return _.intl.string(_.t.xj9ooX);
+          case "payment_request_information":
+            return _.intl.string(_.t.DDPRXs);
+          case "credit_card_information":
+            return _.intl.string(_.t.yMPCXL);
+          case "address":
+            return _.intl.string(_.t["50Auo2"]);
+          case "paypal_information":
+            return _.intl.string(_.t.RVHDnH);
+          case "venmo_information":
+            return _.intl.string(_.t.bzQdwW);
+          case "przelewy24_information":
+            return _.intl.string(_.t.BW0R4v);
+          case "cash_app_information":
+            return _.intl.string(_.t.Gz1fyE);
+          case "gift_customization":
+            return _.intl.string(_.t.R0vK0N);
+        }
+        throw Error(`Unexpected step: ${e}`);
+      }
+      function m(e) {
+        if (null != e) {
+          if (!(e instanceof s.Ey))
+            throw (d.error(e), (0, o.pM)(e), Error("Unexpected error type"));
+          if (e.hasCardError()) return "credit_card_information";
+          if (e.hasAddressError()) return "address";
+        }
+        return null;
+      }
+      function f(e, t, n) {
+        r.useEffect(() => {
+          null != e &&
+            "review" !== e &&
+            t !== l.h.WAITING &&
+            t !== l.h.COMPLETED &&
+            n(l.h.WAITING);
+        }, [e, t, n]);
+      }
+    },
     566980(e, t, n) {
       "use strict";
       n.d(t, { h: () => r });
@@ -117562,8 +117681,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("42105"),
               n.e("23309"),
               n.e("23924"),
-              n.e("15510"),
-              n.e("25845"),
+              n.e("71470"),
               n.e("24199"),
               n.e("57036"),
               n.e("207"),
@@ -117586,20 +117704,20 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("24313"),
               n.e("74016"),
               n.e("48405"),
-              n.e("63185"),
+              n.e("12544"),
               n.e("19551"),
               n.e("45959"),
+              n.e("71751"),
               n.e("39667"),
-              n.e("37794"),
               n.e("26073"),
-              n.e("48172"),
               n.e("28866"),
               n.e("8304"),
               n.e("58038"),
               n.e("11566"),
-              n.e("21106"),
+              n.e("10556"),
               n.e("5812"),
-              n.e("17363"),
+              n.e("27602"),
+              n.e("83157"),
               n.e("88941"),
               n.e("61379"),
               n.e("34530"),
@@ -117769,8 +117887,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("54791"),
               n.e("255"),
               n.e("84317"),
-              n.e("67176"),
               n.e("39286"),
+              n.e("58984"),
               n.e("54625"),
               n.e("25279"),
               n.e("33134"),
@@ -147031,8 +147149,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("5384"),
                   n.e("8996"),
                   n.e("23924"),
-                  n.e("15510"),
-                  n.e("25845"),
+                  n.e("71470"),
                   n.e("24199"),
                   n.e("57036"),
                   n.e("207"),
@@ -147071,31 +147188,31 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("24313"),
                   n.e("74016"),
                   n.e("48405"),
-                  n.e("63185"),
+                  n.e("12544"),
                   n.e("19551"),
                   n.e("7743"),
                   n.e("45959"),
                   n.e("18573"),
                   n.e("55936"),
                   n.e("31988"),
+                  n.e("71751"),
                   n.e("39667"),
-                  n.e("37794"),
                   n.e("26073"),
                   n.e("34303"),
-                  n.e("48172"),
                   n.e("28866"),
                   n.e("8304"),
                   n.e("58038"),
                   n.e("93159"),
                   n.e("11566"),
-                  n.e("21106"),
+                  n.e("10556"),
                   n.e("94723"),
                   n.e("62931"),
                   n.e("81987"),
-                  n.e("53092"),
+                  n.e("50417"),
                   n.e("58007"),
                   n.e("5812"),
-                  n.e("17363"),
+                  n.e("27602"),
+                  n.e("83157"),
                   n.e("34552"),
                   n.e("88941"),
                   n.e("55411"),
@@ -147392,8 +147509,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("24170"),
                   n.e("84317"),
                   n.e("89916"),
-                  n.e("67176"),
                   n.e("39286"),
+                  n.e("58984"),
                   n.e("54961"),
                   n.e("61156"),
                   n.e("14461"),
@@ -147450,7 +147567,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("36877"),
                   n.e("95998"),
                   n.e("97073"),
-                  n.e("71470"),
+                  n.e("49089"),
                   n.e("72877"),
                   n.e("36419"),
                   n.e("26437"),
@@ -147499,7 +147616,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("71217"),
                   n.e("41701"),
                   n.e("37490"),
-                  n.e("98725"),
+                  n.e("21106"),
                   n.e("49205"),
                   n.e("40204"),
                   n.e("97069"),
@@ -147638,7 +147755,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("79593"),
                   n.e("33771"),
                   n.e("3168"),
-                  n.e("99707"),
+                  n.e("22088"),
                   n.e("41706"),
                   n.e("86779"),
                   n.e("91139"),
@@ -147754,7 +147871,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("97354"),
                   n.e("52694"),
                   n.e("4098"),
-                  n.e("59373"),
+                  n.e("81754"),
                   n.e("33204"),
                   n.e("66002"),
                   n.e("71811"),
@@ -154973,7 +155090,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
     760751(e, t, n) {
       "use strict";
       let i;
-      n.d(t, { A: () => V }), n(321073);
+      n.d(t, { A: () => F }), n(321073);
       var r = n(17928),
         s = n(506774),
         a = n(228366),
@@ -155004,8 +155121,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         w = [],
         P = [],
         b = new Map(),
-        k = E.A.Millis.HOUR;
-      function U(e) {
+        k = E.A.Millis.HOUR,
+        U = new Set();
+      function M(e) {
         return {
           id: e.id,
           name: e.name,
@@ -155023,18 +155141,18 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           content_classification: e.content_classification ?? void 0,
         };
       }
-      function M(e, t) {
+      function G(e, t) {
         null == S[t] && (S[t] = []), S[t].push(e);
       }
-      function G(e) {
-        let t = e instanceof _.xg ? U(e) : e;
+      function x(e) {
+        let t = e instanceof _.xg ? M(e) : e;
         for (let n of (T.set(e.id, t),
-        M(t.id, t.name.toLowerCase()),
+        G(t.id, t.name.toLowerCase()),
         e.aliases))
-          M(t.id, n.toLowerCase());
+          G(t.id, n.toLowerCase());
         if ((0, m.isDesktop)()) for (let n of e.executables) N[n.name] = t.id;
       }
-      class x extends r.Ay.PersistedStore {
+      class V extends r.Ay.PersistedStore {
         static displayName = "GameStore";
         static persistKey = "GameStore";
         static migrations = [
@@ -155043,7 +155161,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               ? {
                   detectableGamesEtag: e.detectableGamesEtag,
                   detectableGames:
-                    e.detectableGames?.map((e) => U(new _.xg(e))) ?? [],
+                    e.detectableGames?.map((e) => M(new _.xg(e))) ?? [],
                 }
               : { detectableGamesEtag: "", detectableGames: [] },
           (e) =>
@@ -155065,7 +155183,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             null != e.blocklistExecutables && (w = e.blocklistExecutables),
             null != e.blocklistPatterns &&
               (P = e.blocklistPatterns.map((e) => RegExp(e, "i"))),
-            e.detectableGames?.forEach((e) => G(e)));
+            e.detectableGames?.forEach((e) => x(e)));
         }
         getState() {
           return (0, m.isDesktop)()
@@ -155136,15 +155254,25 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             : this.getDetectableGame(t);
         }
         getGameByApplication(e) {
-          let t = this.getDetectableGame(e.id);
-          if (null != t) return t;
-          if (null != e.linkedGames) {
-            for (let n of e.linkedGames)
-              if (null != (t = this.getDetectableGame(n.id))) return t;
+          let t,
+            n = this.getDetectableGame(e.id);
+          if (null != n) return n;
+          let i = "none";
+          if (null != e.linkedGames)
+            for (let n of e.linkedGames) {
+              let e = this.getDetectableGame(n.id);
+              if (null != e) {
+                (i = "linked_game"), (t = e);
+                break;
+              }
+            }
+          if (null == t) {
+            let n = this.searchGamesByName(e.name)
+              .map((e) => this.getDetectableGame(e))
+              .reverse()[0];
+            null != n && ((i = "name"), (t = n));
           }
-          return this.searchGamesByName(e.name)
-            .map((e) => this.getDetectableGame(e))
-            .reverse()[0];
+          return this.maybeTrackApplicationLookupFallthrough(e, i, t), t;
         }
         isGameInDatabase(e) {
           return (
@@ -155193,6 +155321,18 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             (this.maybeTrackBlock(e, "pattern_match", i.source), !0)
           );
         }
+        maybeTrackApplicationLookupFallthrough(e, t, n) {
+          let i = e.id;
+          U.has(i) ||
+            (U.add(i),
+            c.default.track(g.HAw.GAME_APPLICATION_LOOKUP_FALLTHROUGH, {
+              application_id: i,
+              application_name: e.name ?? null,
+              match_type: t,
+              matched_game_id: n?.id ?? null,
+              matched_game_name: n?.name ?? null,
+            }));
+        }
         maybeTrackBlock(e, t, n) {
           let i = e.exePath.split(/[/\\]/).pop() ?? "unknown",
             r = b.get(i),
@@ -155216,14 +155356,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           (O[e] = !0), s.w.set(I, O);
         }
       }
-      let V = new x(a.h, {
+      let F = new V(a.h, {
         OVERLAY_INITIALIZE: function (e) {
           let { detectableApplications: t } = e;
           for (let e of (T.clear(),
           (S = Object.create(null)),
           (N = Object.create(null)),
           t))
-            G(e);
+            x(e);
         },
         GAMES_DATABASE_FETCH: function () {
           i = !0;
@@ -155240,7 +155380,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             (N = Object.create(null)),
             (R = n)),
           t))
-            G({
+            x({
               id: e.id,
               name: e.name,
               executables: (e.executables ?? []).map(u.lg),
@@ -175832,7 +175972,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "2daab19b8d3ddbe7668cfe9b710dc83d6760456b",
+                    "aa6537fa92c4375cee3f44eeb65496dedfacc151",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -181665,7 +181805,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "537544",
+                  build_number: "537651",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -216239,6 +216379,7 @@ Total Time: ${o}ms
             "NOTIFICATION_NUDGE_POST_CALL_DISCONNECT"),
           (i[(i.PROFILE_FRAME_USER_PROFILE_NEW_BADGE = 750)] =
             "PROFILE_FRAME_USER_PROFILE_NEW_BADGE"),
+          (i[(i.BOUNTIES_NUX_PROMO_SHEET = 751)] = "BOUNTIES_NUX_PROMO_SHEET"),
           i),
         a =
           (((r = {})[(r.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0)] =
@@ -239078,4 +239219,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=89767.0166d9634a47d672.js.map
+//# sourceMappingURL=83247.73ef0d95a1c85f34.js.map

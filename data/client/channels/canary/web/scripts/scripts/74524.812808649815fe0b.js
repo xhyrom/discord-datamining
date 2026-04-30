@@ -533,10 +533,11 @@
             onClosePopout: w,
             shouldShow: M,
             shouldPreload: k = !0,
-            ...L
+            ignoreModalClicks: L = !0,
+            ...b
           } = e,
-          b = i.useRef(void 0),
-          T = i.useCallback(
+          T = i.useRef(void 0),
+          K = i.useCallback(
             () =>
               null != C
                 ? C()
@@ -549,10 +550,10 @@
                   }),
             [C, a, n, g, l, u],
           ),
-          K = i.useCallback(
+          I = i.useCallback(
             (e) =>
-              ((b.current = Date.now()), null != v)
-                ? v(e, b.current)
+              ((T.current = Date.now()), null != v)
+                ? v(e, T.current)
                 : (0, r.jsx)(c.A, {
                     ...e,
                     user: n,
@@ -564,7 +565,7 @@
                     disableUserProfileLink: m,
                     newAnalyticsLocations: E,
                     appContext: _,
-                    openedAt: b.current,
+                    openedAt: T.current,
                     closePopout: () => {
                       e.closePopout(), w?.();
                     },
@@ -574,12 +575,13 @@
         return (0, r.jsx)(s.Y, {
           popoutKey: h.KM,
           shouldShow: M,
-          preload: k ? T : void 0,
+          preload: k ? K : void 0,
           loadingComponent: (0, o.Zm)(),
-          renderPopout: K,
+          renderPopout: I,
           onRequestOpen: S,
           onRequestClose: A,
-          ...L,
+          ignoreModalClicks: L,
+          ...b,
           children: t,
         });
       }
@@ -1991,4 +1993,4 @@
     },
   },
 ]);
-//# sourceMappingURL=74524.2841e1cab884dd31.js.map
+//# sourceMappingURL=74524.812808649815fe0b.js.map

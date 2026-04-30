@@ -29,8 +29,8 @@
         h = r(773669),
         m = r(594061),
         p = r(821102),
-        f = r(954571),
-        g = r(11187),
+        g = r(954571),
+        f = r(11187),
         I = r(998218),
         E = r(157559),
         R = r(652215),
@@ -54,7 +54,7 @@
         let { startTime: r, ...s } =
             arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
           n = { offset: 0, limit: null, totalResults: e.length },
-          l = (0, g.QL)(p.A.getAnalyticsID(), t, {
+          l = (0, f.QL)(p.A.getAnalyticsID(), t, {
             ...n,
             ...s,
             results: e.length,
@@ -138,7 +138,7 @@
             query: o,
             gifId: c,
           } = e,
-          h = (0, g.QL)(p.A.getAnalyticsID(), t, {
+          h = (0, f.QL)(p.A.getAnalyticsID(), t, {
             offset: s,
             limit: n,
             results: l,
@@ -267,7 +267,7 @@
               );
             let u = n().size(t.gifs);
             u > 2 && (t.hideTooltip = !0),
-              f.default.track(R.HAw.GIF_FAVORITED, { total_num_favorited: u });
+              g.default.track(R.HAw.GIF_FAVORITED, { total_num_favorited: u });
           },
           _.Sb.INFREQUENT_USER_ACTION,
         );
@@ -277,7 +277,7 @@
           "favoriteGifs",
           (t) => {
             e in t.gifs ? delete t.gifs[e] : delete t.gifs[b(e)],
-              f.default.track(R.HAw.GIF_UNFAVORITED, {
+              g.default.track(R.HAw.GIF_UNFAVORITED, {
                 total_num_favorited: n().size(t.gifs),
               });
           },
@@ -333,7 +333,7 @@
             { focusedColumn: s, focusedRow: n } = this.state;
           if (null == e) return;
           let l = t();
-          if (null == l) return;
+          if (null == l || 0 === l.length) return;
           let i = this.getNext(l, s, n, e);
           this.setState({ focusedColumn: i.column, focusedRow: i.row }, () => {
             let e = this.calculateFocusedItem();
@@ -370,9 +370,9 @@
                 n = this.wrapPosition(e, l, i, 1);
             }
           return (
-            null != n && (a = e[n.column][n.row]),
+            null != n && (a = e[n.column]?.[n.row]),
             (null == a || null == n) &&
-              (a = e[(n = { column: l, row: i }).column][n.row]),
+              ((n = { column: l, row: i }), (a = e[n.column]?.[n.row])),
             { column: n.column, row: n.row, id: a }
           );
         }
@@ -601,8 +601,8 @@
         h = r(228366),
         m = r(497685),
         p = r(235986),
-        f = r(151271),
-        g = r(821102),
+        g = r(151271),
+        f = r(821102),
         I = r(996566),
         E = r(291147),
         R = r(703244),
@@ -860,7 +860,7 @@
         }
       }
       function Q(e) {
-        let t = (0, a.bG)([g.A], () => g.A.getTrendingCategories()),
+        let t = (0, a.bG)([f.A], () => f.A.getTrendingCategories()),
           r = (0, I.rM)(),
           n = (0, b.d5)();
         return (0, s.jsx)(H, {
@@ -908,14 +908,14 @@
               this.handleClearQuery()));
         };
         handleChangeQuery = (e) => {
-          (0, f.Ri)(e), this.search(e, U.dD.SEARCH);
+          (0, g.Ri)(e), this.search(e, U.dD.SEARCH);
         };
         handleSelectSuggestion = (e) => {
-          (0, f.Ri)(""), m.Se(), this.search(e, U.dD.SEARCH_SUGGESTION, !0);
+          (0, g.Ri)(""), m.Se(), this.search(e, U.dD.SEARCH_SUGGESTION, !0);
         };
         handleClearQuery = () => {
           let { current: e } = this.props.searchBarRef;
-          (0, f.Ri)(""),
+          (0, g.Ri)(""),
             m.Se(),
             this.setState({ resultType: null }),
             null != e && e.focus();
@@ -1048,7 +1048,7 @@
       let z = n.forwardRef((e, t) => {
         n.useEffect(() => {
           e.persistSearch ||
-            ((0, f.Ri)(e.initialQuery ?? ""),
+            ((0, g.Ri)(e.initialQuery ?? ""),
             m.$P(e.initialQuery ?? "", U.dD.SEARCH));
         }, [e.persistSearch, e.initialQuery]);
         let {
@@ -1056,13 +1056,13 @@
             resultQuery: l,
             resultItems: i,
             suggestions: o,
-          } = (0, a.cf)([g.A], () => ({
-            query: g.A.getQuery(),
-            resultQuery: g.A.getResultQuery(),
-            resultItems: g.A.getResultItems(),
-            suggestions: g.A.getSuggestions(),
+          } = (0, a.cf)([f.A], () => ({
+            query: f.A.getQuery(),
+            resultQuery: f.A.getResultQuery(),
+            resultItems: f.A.getResultItems(),
+            suggestions: f.A.getSuggestions(),
           })),
-          u = (0, f.RQ)((e) => e.searchQuery),
+          u = (0, g.RQ)((e) => e.searchQuery),
           d = (0, I.IE)(),
           c = n.useRef(null);
         return (0, s.jsx)(Y, {
@@ -1074,7 +1074,7 @@
           suggestions: o,
           favorites: d,
           searchOffset: 0,
-          searchTotalResults: g.A.getResultItems().length,
+          searchTotalResults: f.A.getResultItems().length,
           searchLimit: null,
           searchBarRef: c,
           selectedGIF: e.selectedGIF,
@@ -1116,8 +1116,8 @@
         h = r(939249),
         m = r(825484),
         p = r(821609),
-        f = r(27232),
-        g = r(364522),
+        g = r(27232),
+        f = r(364522),
         I = r(92008),
         E = r(497685),
         R = r(25277),
@@ -1421,7 +1421,7 @@
                     className: x.BA,
                     children: [
                       t
-                        ? (0, s.jsx)(f.G, {
+                        ? (0, s.jsx)(g.G, {
                             size: "xs",
                             color: "currentColor",
                             className: x.$2,
@@ -1434,7 +1434,7 @@
           });
         }
         renderEmptyFavorites() {
-          return (0, s.jsx)(g.Ip, {
+          return (0, s.jsx)(f.Ip, {
             className: x.Xv,
             fade: !0,
             children: (0, s.jsxs)("div", {
@@ -1596,8 +1596,8 @@
         h = r(996566),
         m = r(625494),
         p = r(652215),
-        f = r(650583),
-        g = r(985018),
+        g = r(650583),
+        f = r(985018),
         I = r(280312);
       let E = n.memo(function (e) {
         let {
@@ -1611,7 +1611,7 @@
           } = e,
           [S, C] = n.useState(!1),
           A = (0, h.km)((0, c.xo)(R)),
-          v = A ? g.intl.string(g.t["5/NS74"]) : g.intl.string(g.t.nIH0v8),
+          v = A ? f.intl.string(f.t["5/NS74"]) : f.intl.string(f.t.nIH0v8),
           F = A ? o.G : u.y;
         n.useEffect(() => {
           if (!S) return;
@@ -1645,7 +1645,7 @@
             onMouseDown: (e) => e.preventDefault(),
             onClick: w,
             onKeyDown: (e) => {
-              (e.key === f.dh.ENTER || e.key === f.dh.SPACE) && w(e);
+              (e.key === g.dh.ENTER || e.key === g.dh.SPACE) && w(e);
             },
             onDoubleClick: (e) => e.preventDefault(),
             children: (0, s.jsx)(F, {
@@ -1708,8 +1708,8 @@
         h = "",
         m = [],
         p = [],
-        f = [],
-        g = [];
+        g = [],
+        f = [];
       function I(e) {
         return e.replace(/^https?:/, "");
       }
@@ -1741,10 +1741,10 @@
           return o;
         }
         getSuggestions() {
-          return f;
+          return g;
         }
         getTrendingSearchTerms() {
-          return g;
+          return f;
         }
       }
       let _ = new R(l.h, {
@@ -1752,7 +1752,7 @@
           d = e.analyticsID;
         },
         GIF_PICKER_QUERY: function (e) {
-          "" === (c = e.query) && ((h = ""), (m = []), (f = []));
+          "" === (c = e.query) && ((h = ""), (m = []), (g = []));
         },
         GIF_PICKER_QUERY_SUCCESS: function (e) {
           if (null != e.query && c === h) return !1;
@@ -1805,11 +1805,11 @@
         },
         GIF_PICKER_SUGGESTIONS_SUCCESS: function (e) {
           let { items: t } = e;
-          f = t;
+          g = t;
         },
         GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: function (e) {
           let { items: t } = e;
-          g = t;
+          f = t;
         },
       });
     },
@@ -1875,4 +1875,4 @@
     },
   },
 ]);
-//# sourceMappingURL=68647.14fcbe6a9e5c5d72.js.map
+//# sourceMappingURL=68647.f7bd92433fdc18cf.js.map
