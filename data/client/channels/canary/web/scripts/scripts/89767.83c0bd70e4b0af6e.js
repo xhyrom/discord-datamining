@@ -26332,7 +26332,7 @@ ${s}`);
         n.e("94459").then(n.t.bind(n, 868086, 19));
       let ew = window.GLOBAL_ENV.RELEASE_CHANNEL;
       new ef.A().log(
-        `[BUILD INFO] Release Channel: ${ew}, Build Number: 537382, Version Hash: d3213cd5b32b0c34577e8540136d7c3737a91865`,
+        `[BUILD INFO] Release Channel: ${ew}, Build Number: 537396, Version Hash: f3eda1dfad8528ceac605ffa8dac56dcc4897697`,
       ),
         o.A.setTags({ appContext: E.QCW }),
         K.A.initBasic(),
@@ -49062,7 +49062,7 @@ ${s}`);
               (e) => {
                 if (
                   null == e.body ||
-                  "d3213cd5b32b0c34577e8540136d7c3737a91865" === e.body.hash
+                  "f3eda1dfad8528ceac605ffa8dac56dcc4897697" === e.body.hash
                 )
                   return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, o.kK)())
@@ -53593,10 +53593,10 @@ ${s}`);
               t = await r.A.fetchChangelogConfig(),
               n = t.body,
               s =
-                ((e = parseInt("537382")),
+                ((e = parseInt("537396")),
                 Number.isNaN(e) &&
                   (_.A.captureMessage(
-                    "Trying to open a changelog for an invalid build number 537382",
+                    "Trying to open a changelog for an invalid build number 537396",
                   ),
                   (e = 0)),
                 e),
@@ -62957,8 +62957,8 @@ ${s}`);
             n.e("3707"),
             n.e("33448"),
             n.e("90554"),
-            n.e("11133"),
             n.e("29413"),
+            n.e("11133"),
             n.e("63333"),
             n.e("3710"),
             n.e("31638"),
@@ -62996,7 +62996,6 @@ ${s}`);
             n.e("11471"),
             n.e("22266"),
             n.e("49333"),
-            n.e("11295"),
             n.e("14396"),
             n.e("22067"),
             n.e("44385"),
@@ -66838,7 +66837,7 @@ ${C}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "537382", versionHash: "d3213cd5b32b0c34577e8540136d7c3737a91865" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "537396", versionHash: "f3eda1dfad8528ceac605ffa8dac56dcc4897697" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -114011,8 +114010,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("40393"),
               n.e("3707"),
               n.e("33448"),
-              n.e("11133"),
               n.e("29413"),
+              n.e("11133"),
               n.e("63333"),
               n.e("31638"),
               n.e("27779"),
@@ -143591,7 +143590,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("94138"),
               n.e("28752"),
               n.e("49333"),
-              n.e("11295"),
               n.e("22067"),
               n.e("55266"),
               n.e("14479"),
@@ -144082,7 +144080,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("94138"),
               n.e("28752"),
               n.e("49333"),
-              n.e("11295"),
               n.e("22067"),
               n.e("55266"),
               n.e("14479"),
@@ -147536,8 +147533,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("3707"),
                   n.e("33448"),
                   n.e("90554"),
-                  n.e("11133"),
                   n.e("29413"),
+                  n.e("11133"),
                   n.e("63333"),
                   n.e("3710"),
                   n.e("31638"),
@@ -147571,7 +147568,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("11471"),
                   n.e("22266"),
                   n.e("49333"),
-                  n.e("11295"),
                   n.e("14396"),
                   n.e("22067"),
                   n.e("44385"),
@@ -175836,7 +175832,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   let n = new URLSearchParams();
                   n.append(
                     "build_id",
-                    "d3213cd5b32b0c34577e8540136d7c3737a91865",
+                    "f3eda1dfad8528ceac605ffa8dac56dcc4897697",
                   ),
                     n.append("rpc", String(t)),
                     n.append("rpc_auth_token", X),
@@ -181669,7 +181665,7 @@ ${o.join(" +\n")}
             ).then((e) => {
               let i = {
                   environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                  build_number: "537382",
+                  build_number: "537396",
                 },
                 u = l.default.getCurrentUser();
               null != u &&
@@ -239082,4 +239078,4 @@ Total Time: ${o}ms
     },
   },
 ]);
-//# sourceMappingURL=89767.ea7fca4bc8ff5d8b.js.map
+//# sourceMappingURL=89767.83c0bd70e4b0af6e.js.map
