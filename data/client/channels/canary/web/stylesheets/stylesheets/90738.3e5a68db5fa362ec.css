@@ -4962,7 +4962,7 @@ html:not(.keyboard-mode) .root_bfe55a.idle_bfe55a .bottomControls_bfe55a {
   position: absolute;
 }
 .fadeInAvatarImg_e3aa7b {
-  animation: fadeIn_e3aa7b 1.5s;
+  animation: fadeIn_e3aa7b 0.5s;
 }
 .sampleDecorationAvatar_e3aa7b {
   animation: fadeIn_e3aa7b 0.15s ease-out;
@@ -5799,4 +5799,4 @@ html:not(.keyboard-mode) .root_bfe55a.idle_bfe55a .bottomControls_bfe55a {
   padding: var(--space-16) var(--space-24);
 }
 
-/*# sourceMappingURL=90738.2930128f513e7bd1.css.map*/
+/*# sourceMappingURL=90738.3e5a68db5fa362ec.css.map*/

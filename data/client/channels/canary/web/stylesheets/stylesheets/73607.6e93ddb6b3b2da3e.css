@@ -4783,7 +4783,7 @@ html.disable-forced-colors * {
   flex-direction: column;
   gap: var(--space-8);
 }
-.container__0b563 {
+.chat__0b563 .container__0b563 {
   display: flex;
   flex-direction: column;
 }
@@ -6312,4 +6312,4 @@ html.disable-forced-colors * {
   margin-top: var(--space-32);
 }
 
-/*# sourceMappingURL=73607.e4bd83156dc9731e.css.map*/
+/*# sourceMappingURL=73607.6e93ddb6b3b2da3e.css.map*/
