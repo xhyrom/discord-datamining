@@ -1650,7 +1650,7 @@
             }),
           });
         };
-      var e0 = i(925747),
+      var e0 = i(785651),
         e1 = i(717421),
         e2 = i(98812),
         e7 = i(67423);
@@ -1921,8 +1921,8 @@
         });
       };
       var e5 = i(761508),
-        e3 = i(951707),
-        e6 = i(744064);
+        e6 = i(951707),
+        e3 = i(744064);
       function e9(e) {
         let {
           alt: t,
@@ -2754,14 +2754,14 @@
               ),
             }),
             (0, a.jsx)(
-              e3.A,
+              e6.A,
               {
                 gap: 20,
                 className: t8.jG,
                 children: c.map((e) => {
                   if (null != e)
                     return (0, a.jsx)(
-                      e6.S,
+                      e3.S,
                       { ...e, glowing: t === e.id, containerClassName: t8.Ui },
                       e.id,
                     );
@@ -2772,16 +2772,16 @@
           ],
         });
       }
-      var t3 = i(254748),
-        t6 = i(672193);
+      var t6 = i(254748),
+        t3 = i(672193);
       function t9(e) {
         let { glowingPerkId: t = null } = e,
           i = tQ();
-        return (0, a.jsx)(t3.A, {
-          sectionClassName: t6.uW,
+        return (0, a.jsx)(t6.A, {
+          sectionClassName: t3.uW,
           heading: (0, a.jsx)(O.D, {
             variant: "display-sm",
-            className: t6.R_,
+            className: t3.R_,
             children: D.intl.string(D.t.Aw5DRm),
           }),
           grid: (0, a.jsx)(a.Fragment, {
@@ -2789,12 +2789,12 @@
               if (null == e) return;
               let s = 0 === i && !0 === e.featured;
               return (0, a.jsx)(
-                e6.S,
+                e3.S,
                 {
                   ...e,
                   glowing: t === e.id,
                   featured: s,
-                  containerClassName: l()(t6.Nr, { [t6.Nq]: s }),
+                  containerClassName: l()(t3.Nr, { [t3.Nq]: s }),
                 },
                 e.id,
               );
@@ -4294,7 +4294,7 @@
         a,
         n = i(627968),
         r = i(64700),
-        l = i(925747),
+        l = i(785651),
         c = i(717421),
         d = i(396583);
       let o = 3e3,
@@ -4690,4 +4690,4 @@
     },
   },
 ]);
-//# sourceMappingURL=99707.d67a95a7b933abbb.js.map
+//# sourceMappingURL=99707.5dec701b34d9b775.js.map
