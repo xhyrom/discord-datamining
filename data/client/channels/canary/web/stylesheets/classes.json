@@ -2561,6 +2561,8 @@
   "gameServerHostingImage": "gameServerHostingImage_a1bfef",
   "levelImage": "levelImage_a1bfef",
   "animatedImage": "animatedImage_a1bfef",
+  "selectableItem": "selectableItem_eb626b",
+  "selectableItemLabel": "selectableItemLabel_eb626b",
   "base": "base_afb27c",
   "cross": "cross_e42a84",
   "sparkleBlurple": "sparkleBlurple_e42a84",
