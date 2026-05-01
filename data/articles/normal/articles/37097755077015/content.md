@@ -1,5 +1,5 @@
 <p>
-  Nitro subscribers can now receive
+  Nitro subscribers can now receive 250
   <a href="https://support.discord.com/hc/en-us/articles/30593690165783"
     ><span class="wysiwyg-underline">Discord Orbs</span></a
   >
@@ -44,12 +44,9 @@
   </ul>
 </div>
 <div class="warn-box">
-  <strong>Important:</strong>
   <span style="color: #434343"
-    >Monthly Orbs drops are currently in beta and being tested with select
-    users. During this experimental phase, eligible users may receive different
-    amounts of monthly Orbs. We appreciate your patience as we refine this
-    feature! </span
+    ><strong>Important:</strong> Monthly Orbs drops are gradually rolling out to
+    all eligible users.</span
   >
 </div>
 <h1 id="h_01KGQHPPA8G1R87AT5H5R6FYVY">What are Monthly Orbs Drops?</h1>
@@ -67,7 +64,7 @@
 <p>
   Monthly Orbs Drop is a benefit for Nitro subscribers that provide additional
   Discord Orbs on a monthly basis. As a Nitro member, you'll automatically
-  receive monthly Orbs that you can use in the
+  receive 250 monthly Orbs that you can use in the
   <a
     href="https://support.discord.com/hc/en-us/articles/17162747936663"
     target="_blank"
@@ -116,7 +113,8 @@
 <p>To receive a Monthly Orbs Drop, you need:</p>
 <ul>
   <li data-list-item-id="e846d2cdf54407701000bd7f8fdebadb9">
-    An active paid Nitro subscription 
+    An active paid Nitro subscription through the desktop app or browser (we're
+    working on bringing this to mobile app subscribers soon)
   </li>
   <li data-list-item-id="e00f6c72b31c3eff27a8c981107d2fdc2">
     Your subscription must be in good standing (for example, subscription is not
@@ -229,15 +227,17 @@
   >.
 </div>
 <h1 id="h_01KGQHPPAMFW97AA3V2SY7F200">Frequently Asked Questions</h1>
-<p><strong>Q: How many Orbs will I receive each month?</strong></p>
-<p>
-  A: This number may differ based on users and the month during our beta
-  experiment period. We appreciate your patience as we refine this feature! 
-</p>
 <p><strong>Q: Do Orbs expire?</strong></p>
 <p>
   A: No, your Orbs will not expire! Once they're granted to your account, you
   can hold onto them for as long as you like. 
+</p>
+<p><strong>Q: Does the platform I subscribed to Nitro from matter?</strong></p>
+<p>
+  A: Yes, the monthly Orbs drop feature is only available to Nitro members who
+  subscribed through the desktop app, browser, or mobile web. Subscriptions
+  through the Discord mobile app aren't eligible yet, but we're actively working
+  to bring Monthly Orbs your way soon!
 </p>
 <p><strong>Q: What happens to my Orbs if I cancel my subscription?</strong></p>
 <p>

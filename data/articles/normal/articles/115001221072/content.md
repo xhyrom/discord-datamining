@@ -1,6 +1,6 @@
 <p>
   <iframe
-    style="width: 100%; aspect-ratio: 16 / 9"
+    style="aspect-ratio: 16 / 9; width: 100%"
     src="//www.youtube-nocookie.com/embed/QxHyd2IkuSU?&amp;rel=0"
     frameborder="0"
     allowfullscreen=""
@@ -17,22 +17,23 @@
   Discord is unable to remove MFA or issue you new backup codes.
 </div>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li data-list-item-id="eb66dd0073782e9c339cc064a920aac8a">
       <a href="#h_01JVZCR98TP0WPEV1HC218V95D"
         >Disabling MFA if You’re not Logged Into Your Discord Account</a
       >
     </li>
-    <li>
+    <li data-list-item-id="efd86735f1e506b7c45312accb46942be">
       <a href="#h_01JVZCR98TBNPG6CVR9MRVV3TG"
         >How to Receive a SMS Authentication Code</a
       >
     </li>
-    <li>
+    <li data-list-item-id="e4c97aa9ecaa14062ea678895ae7d4ec6">
       <a href="#h_01JVZCR98TP0WPEV1HC218V95D"
         >Disabling MFA if You’re Logged Into Your Discord Account</a
       >
@@ -47,7 +48,9 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
 </div>
 <p>
   If you aren't logged into your account on any other clients (desktop, mobile,
@@ -72,12 +75,21 @@
       height="305"
   /></strong>
 </p>
-<h4 id="h_01JVZCR98TYDHFG6PR85PNH043" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Verify with something else option</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVZCR98TYDHFG6PR85PNH043">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Verify with something else option</span
+    ></span
   >
 </h4>
 <p>2. Select <strong>Use a backup code</strong>.</p>
+<div class="warn-box">
+  <strong>Important:</strong> If the option to use a backup code is not
+  available, this means all of your backup codes have been used. To regain
+  access to your account, please try one of the other verification methods
+  listed on this page. Our support team is unable to generate new backup codes
+  on your behalf.
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/32330681924503"
@@ -85,9 +97,11 @@
     height="340"
   />
 </p>
-<h4 id="h_01JVZCR98TE8SHVP25TKSBZAHX" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Use a backup code selection</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVZCR98TE8SHVP25TKSBZAHX">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Use a backup code selection</span
+    ></span
   >
 </h4>
 <p>3. Enter the 8-digit code and then press on <strong>Confirm</strong>.</p>
@@ -98,9 +112,9 @@
     height="282"
   />
 </p>
-<h4 id="h_01JVZCR98TSG2FGDDQS78M2GP7" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Enter your backup code</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVZCR98TSG2FGDDQS78M2GP7">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Enter your backup code</span></span
   >
 </h4>
 <p>
@@ -124,9 +138,11 @@
     height="315"
   />
 </p>
-<h4 id="h_01JVZCR98T91T8J7VK96X8N773" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Remove Authenticator App button</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVZCR98T91T8J7VK96X8N773">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Remove Authenticator App button</span
+    ></span
   >
 </h4>
 <div class="book-box">
@@ -137,7 +153,9 @@
     target="_blank"
     rel="noopener noreferrer"
     >Setting up Multi-Factor Authentication Help Center article</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
 </div>
 <p>
   Unfortunately, if you did not save your backup codes the Discord Support team
@@ -171,9 +189,11 @@
       height="305"
   /></strong>
 </p>
-<h4 id="h_01JVZCR98TZ1MMR42BDW8KPP1T" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Verify with something else option</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVZCR98TZ1MMR42BDW8KPP1T">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Verify with something else option</span
+    ></span
   >
 </h4>
 <p>2. Select <strong>Use a code sent to your phone</strong>.</p>
@@ -184,9 +204,11 @@
     height="332"
   />
 </p>
-<h4 id="h_01JVZCR98T6QVHT6FZFVSQBX8R" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Use a code sent to your phone button</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVZCR98T6QVHT6FZFVSQBX8R">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Use a code sent to your phone button</span
+    ></span
   >
 </h4>
 <p>
@@ -200,9 +222,11 @@
     height="334"
   />
 </p>
-<h4 id="h_01JVZCR98TYQJVKZ8BX9JXVPQE" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Where to enter your SMS auth code</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVZCR98TYQJVKZ8BX9JXVPQE">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Where to enter your SMS auth code</span
+    ></span
   >
 </h4>
 <p>
@@ -226,9 +250,11 @@
     height="315"
   />
 </p>
-<h4 id="h_01JVZCR98T43QBH1S5ZVE682MK" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Remove Authenticator App button</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVZCR98T43QBH1S5ZVE682MK">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Remove Authenticator App button</span
+    ></span
   >
 </h4>
 <div class="book-box">
@@ -270,9 +296,11 @@
     height="315"
   />
 </p>
-<h4 id="h_01JVZCR98TEB3E5CHXAP1YN6C8" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Remove Authenticator App button</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVZCR98TEB3E5CHXAP1YN6C8">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Remove Authenticator App button</span
+    ></span
   >
 </h4>
 <p>4. Select <strong>Verify with something else.</strong></p>
@@ -284,9 +312,11 @@
       height="305"
   /></strong>
 </p>
-<h4 id="h_01JVZCR98VXMRNN5KEEY9EW800" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Verify with something else option</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVZCR98VXMRNN5KEEY9EW800">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Verify with something else option</span
+    ></span
   >
 </h4>
 <p>
@@ -299,9 +329,9 @@
     height="282"
   />
 </p>
-<h4 id="h_01JVZCR98V1SMQHBA2TPS4717B" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Enter your backup code</span
+<h4 class="wysiwyg-text-align-center" id="h_01JVZCR98V1SMQHBA2TPS4717B">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Enter your backup code</span></span
   >
 </h4>
 <div class="book-box">
@@ -312,5 +342,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >Setting up Multi-Factor Authentication Help Center article</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
 </div>
