@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 37,
+  "subdomain_count": 38,
   "subdomains": [
     "o12.ptr5556",
     "staging-invite",
@@ -32,10 +32,11 @@
     "staging",
     "updates",
     "admin",
+    "enam-rtc-sfu-finder",
     "staging-streamkit",
     "remote-auth-gateway",
-    "staging-gateway-us-east1-d",
     "staging-images-1",
+    "staging-gateway-us-east1-d",
     "otelcol",
     "datahub-prd"
   ]
