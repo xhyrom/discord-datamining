@@ -1,0 +1,24 @@
+.premiumBadge__6d7da {
+  align-items: center;
+  border-radius: var(--radius-md);
+  display: flex;
+  margin-inline-start: auto;
+  padding: 0 6px;
+  pointer-events: all;
+  text-transform: uppercase;
+}
+.premiumAcknowledgedBadge__6d7da {
+  background-color: var(--background-mod-strong);
+}
+.premiumUnacknowledgedBadge__6d7da {
+  background-color: var(--badge-expressive-background-default);
+}
+.premiumUnacknowledgedBadgeCopy__6d7da {
+  color: var(--badge-expressive-text-default);
+}
+.BadgeClockIcon__6d7da {
+  color: var(--icon-subtle);
+  margin-inline-end: 4px;
+}
+
+/*# sourceMappingURL=45905.d6e1b5bbe80477de.css.map*/
