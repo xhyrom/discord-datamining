@@ -1037,19 +1037,11 @@
   },
   "GUILD_FEED_MESSAGE_REMOVE": {
     "url": "/channels/:param/messages/:param/hide-guild-feed",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "GUILD_FEED_MESSAGE_SET_PREFERENCE": {
     "url": "/guilds/:param/guild-feed/preference",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS",
-      "PUT"
-    ]
+    "allowed_methods": null
   },
   "GUILD_FEED_FEATURE_ITEM": {
     "url": "/guilds/:param/guild-feed/feature",
