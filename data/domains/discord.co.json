@@ -4,7 +4,7 @@
     "o12.ptr5556",
     "staging-invite",
     "admin-stg",
-    "rtc-sfu-finder",
+    "rtc-discovery",
     "staging-images-2",
     "grafana-data-prd",
     "staging-gateway",
@@ -35,8 +35,8 @@
     "enam-rtc-sfu-finder",
     "staging-streamkit",
     "remote-auth-gateway",
-    "staging-images-1",
     "staging-gateway-us-east1-d",
+    "staging-images-1",
     "otelcol",
     "datahub-prd"
   ]
