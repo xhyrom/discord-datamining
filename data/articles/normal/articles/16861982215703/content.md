@@ -1,6 +1,5 @@
 <h3 id="h_01HBS4S67RTRV72FXEP64CA0QZ">
-  This experimental feature is only available to a limited number of users and
-  servers.<br />Clips are only stored on your local machine.
+  Clips are only stored on your local machine.
   <a href="#h_01H8CG8GDJXMRF174DNNZR5KBA" target="_self">You control</a> which
   Clips you share on Discord.
 </h3>
@@ -10,40 +9,40 @@
   >
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e1d751d8efcf0cd301a2f66da2c9c6d54">
     <a href="#h_01H8CG7J4ZKM1SZ1VNSKNP5JY9" target="_self">What are Clips?</a>
   </li>
-  <li>
+  <li data-list-item-id="e34beefec7889fd81ff2e703017be9c6a">
     <a href="#h_01H8CG7RQQ5DX463DFEV8YTPV8" target="_self"
       >How to Enable Clips</a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e2acf617006f715f05187f8e0c876afc9">
         <a href="#h_01H8CG7XAYJGSN6048EPSPRXJG" target="_self"
           >Overview of Clips Settings</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e204b21943499b81552acb812af005c00">
         <a href="#h_01H919PQDVD16WNABXRR0JERAW" target="_self"
           >Minimum System Requirements</a
         >
       </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="ea8b9e22f42db9af593440ba4f27e2874">
     <a href="#h_01H8CG85XSK58RRBA1QA03BT6R" target="_self"
       >How to Create Clips</a
     >
   </li>
-  <li>
+  <li data-list-item-id="ea4ae37ed11430447ae6b5c9414489e00">
     <a href="#h_01H8CG8ATCNQ55JDCN1XNMEM8J" target="_self">How to Edit Clips</a>
   </li>
-  <li>
+  <li data-list-item-id="e3cc3e7ee4244c6760968a9650b53fce3">
     <a href="#h_01H8CG8GDJXMRF174DNNZR5KBA" target="_self"
       >How to Share Clips</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e141e0fbc91a144e37db96ffb5fcaf71a">
     <a href="#h_01H8CG8NVQEK4GDPDQQCB7698D" target="_self"
       >How to Delete Clips</a
     >
@@ -59,21 +58,31 @@
 <p>Edit your favorite clips and share epic moments with friends!</p>
 <h1 id="h_01H8CG7RQQ5DX463DFEV8YTPV8">How to Enable Clips</h1>
 <h3 id="docs-internal-guid-d964d01a-7fff-f263-a843-bf8a549a2a93">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Clips is currently available in Early Access for Nitro members.
-  </span>
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Clips is currently available in Early Access for Nitro members.</span
+    ></span
+  >
 </h3>
 <h3 id="h_01HCG6PJ08PS1HE3YQJX0V308W">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Some users may already have Clips
-    <a href="#h_01H919PQDVD16WNABXRR0JERAW" target="_self"
-      >enabled by default</a
-    >
-    if their system has high end hardware. <br /></span
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >Having Clips enabled may impact your game performance if you have lower end
-    hardware. If you experience any issues with your game, please try disabling
-    Clips.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Some users may already have Clips
+    </span></span
+  ><a href="#h_01H919PQDVD16WNABXRR0JERAW" target="_self"
+    ><span style="color: #434343"
+      ><span data-darkreader-inline-color="">enabled by default</span></span
+    ></a
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">
+      if their system has high end hardware. </span
+    ></span
+  ><br /><span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Having Clips enabled may impact your game performance if you have lower
+      end hardware. If you experience any issues with your game, please try
+      disabling Clips.</span
+    ></span
   >
 </h3>
 <p>
@@ -109,7 +118,7 @@
   There are a couple of different settings for Clips, so let’s go over each one
   and what they do.
 </p>
-<p><strong>Enable Clips</strong><strong> </strong></p>
+<p><strong>Enable Clips </strong></p>
 <p>
   In order to use Clips, you first need to enable it! If a “check mark” is
   displayed, it’s enabled! If an “x” is there, then it’s disabled. You can learn
@@ -170,9 +179,11 @@
 </p>
 <h2 id="h_01H919PQDVD16WNABXRR0JERAW">Minimum System Requirements</h2>
 <h3 id="h_01HCG6PWF0GZY5DQ227E5KT0XH">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Early Access to Clips is only available for Windows. This feature is
-    currently not supported on Mac, mobile, or console.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Early Access to Clips is only available for Windows. This feature is
+      currently not supported on Mac, mobile, or console.</span
+    ></span
   >
 </h3>
 <p>
@@ -185,9 +196,11 @@
 </p>
 <h1 id="h_01H8CG85XSK58RRBA1QA03BT6R">How to Create Clips</h1>
 <h3 id="h_01HBS4S67R6F4KRT65HB1ZGBH6">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >When streaming, make sure you’re streaming through Application and not just
-    your screen. This ensures that game audio is also captured.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >When streaming, make sure you’re streaming through Application and not
+      just your screen. This ensures that game audio is also captured.</span
+    ></span
   >
 </h3>
 <p class="wysiwyg-text-align-center">
@@ -368,9 +381,11 @@
 </p>
 <h1 id="h_01H8CG8NVQEK4GDPDQQCB7698D">How to Delete Clips</h1>
 <h3 id="h_01HBS4S67RY3BJNB15TWR0J4G2">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Once a clip has been fully deleted, it cannot be restored. Make sure you’re
-    deleting the correct clip.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Once a clip has been fully deleted, it cannot be restored. Make sure
+      you’re deleting the correct clip.</span
+    ></span
   >
 </h3>
 <p class="wysiwyg-text-align-center">
@@ -434,15 +449,14 @@
   friend.
 </p>
 <h3 id="h_01HBS4S67SYH6AEARKF00PAPGY">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you have any issues or questions about Clips, please reach out to our
-    Support team for further assistance: </span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >If you have any issues or questions about Clips, please reach out to our
+      Support team for further assistance:
+    </span></span
   ><a href="https://dis.gd/contact"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >https://dis.gd/contact</span
-    ></a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+    ><span class="wysiwyg-underline">https://dis.gd/contact</span></a
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
 </h3>
