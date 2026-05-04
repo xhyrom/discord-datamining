@@ -93,8 +93,13 @@
 <h2 id="h_01K7T0XX0C2ZCXHSBSB1PDMG1F">Create your Discord Support Account</h2>
 <p>
   1. Go to
-  <a href="https://support.discord.com/">https://support.discord.com/</a> in
-  your browser.
+  <a
+    href="https://support.discord.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    >https://support.discord.com/</a
+  >
+  in your browser.
 </p>
 <p>
   2. Select <strong>Sign in</strong>, located in the top-right corner of the
@@ -116,26 +121,26 @@
   Then once you’ve reviewed your sign-up information, select the
   <strong>Sign up</strong> button.
 </p>
-<figure style="width: 66.3%" class="wysiwyg-image wysiwyg-image-resized">
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 66.3%">
   <img
     style="aspect-ratio: 1247/1572"
     src="https://support.discord.com/hc/article_attachments/35715306915479"
+    alt="In the sign in box for Discord Support, press on Sign up if you don't have a Support account yet."
     width="1247"
     height="1572"
-    alt="In the sign in box for Discord Support, press on Sign up if you don't have a Support account yet."
   />
   <figcaption>
     In the sign in box for Discord Support, press on Sign up if you don't have a
     Support account yet.
   </figcaption>
 </figure>
-<figure style="width: 66.62%" class="wysiwyg-image wysiwyg-image-resized">
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 66.62%">
   <img
     style="aspect-ratio: 1240/1556"
     src="https://support.discord.com/hc/article_attachments/35715306916887"
+    alt="In the Sign Up box for Discord Support, input your name and email in their respective text fields."
     width="1240"
     height="1556"
-    alt="In the Sign Up box for Discord Support, input your name and email in their respective text fields."
   />
   <figcaption>
     In the Sign Up box for Discord Support, input your name and email in their
@@ -154,13 +159,13 @@
   ><strong>)</strong> with the subject line
   <strong>Activate account for Discord Support.</strong>
 </p>
-<figure style="width: 63.3%" class="wysiwyg-image wysiwyg-image-resized">
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 63.3%">
   <img
     style="aspect-ratio: 1228/782"
     src="https://support.discord.com/hc/article_attachments/35715306917527"
+    alt="You'll receive a notice to check your email for a link to set a password for your Support account."
     width="1228"
     height="782"
-    alt="You'll receive a notice to check your email for a link to set a password for your Support account."
   />
   <figcaption>
     You'll receive a notice to check your email for a link to set a password for
@@ -187,13 +192,13 @@
     Complete your account setup
   </li>
 </ul>
-<figure style="width: 74.24%" class="wysiwyg-image wysiwyg-image-resized">
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 74.24%">
   <img
     style="aspect-ratio: 1448/1070"
     src="https://support.discord.com/hc/article_attachments/35715203302679"
+    alt="Press on Activate account in the confirmation email you receive for the creation of your support account."
     width="1448"
     height="1070"
-    alt="Press on Activate account in the confirmation email you receive for the creation of your support account."
   />
   <figcaption>
     Press on Activate account in the confirmation email you receive for the
@@ -220,9 +225,9 @@
   <img
     style="aspect-ratio: 1052/440"
     src="https://support.discord.com/hc/article_attachments/35715264488471"
+    alt='When submitting a support ticket, choose from the dropdown menu under "What can we help you with?" to get started.'
     width="1052"
     height="440"
-    alt='When submitting a support ticket, choose from the dropdown menu under "What can we help you with?" to get started.'
   />
   <figcaption>
     When submitting a support ticket, choose from the dropdown menu under "What
@@ -271,9 +276,9 @@
   <img
     style="aspect-ratio: 3032/1198"
     src="https://support.discord.com/hc/article_attachments/35715264489623"
+    alt="There are numerous fields to fill out when submitting a support request."
     width="3032"
     height="1198"
-    alt="There are numerous fields to fill out when submitting a support request."
   />
   <figcaption>
     There are numerous fields to fill out when submitting a support request.
@@ -367,7 +372,7 @@
   <strong>1. Send your email</strong> to the appropriate Discord Support email
   address (for example:
   <a href="mailto:samplesupportemail@discord.com"
-    >samplesupportemail@discord.com</a
+    >sample-support-email@discord.com</a
   >)
 </p>
 <p>
