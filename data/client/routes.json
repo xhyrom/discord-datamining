@@ -1055,10 +1055,7 @@
   },
   "GUILD_FEED_MARK_SEEN": {
     "url": "/guilds/:param/guild-feed/mark-seen",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "PINS_ACK": {
     "url": "/channels/:param/pins/ack",
