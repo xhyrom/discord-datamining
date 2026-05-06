@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8480100002](https://discord.com/jobs/8480100002)
 
-**Updated At:** Thu, 30 Apr 2026 21:36:05 GMT
+**Updated At:** Wed, 06 May 2026 20:46:12 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a Director, Developer Solutions who is passionate about building partnerships in the games industry that accelerate adoption of Discord’s engagement and monetization solutions (social sdk, analytics, commerce, collectibles). You will build partnership and sales strategies, as well as lead deal execution, including sourcing and negotiating complex, high-impact partnerships. You will interact with senior executives at our partner organizations and be a trusted evangelist for Discord’s products and priorities. Internally, you will be an advocate for our partners and bring the “voice of the developer” to inform business and product decisions. This is a senior-level individual contributor role and will report into the VP of Developer Solutions.

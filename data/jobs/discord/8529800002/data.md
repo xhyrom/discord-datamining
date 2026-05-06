@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8529800002](https://discord.com/jobs/8529800002)
 
-**Updated At:** Thu, 30 Apr 2026 21:36:05 GMT
+**Updated At:** Wed, 06 May 2026 20:46:12 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Today, we have a set of data dashboards that help our top game developer and publisher partners understand their audiences and measure the performance of their Discord surface areas. But there’s no dedicated product owner for this service, end-to-end. That means analytics roadmap decisions get fragmented across the team, partner feedback on data products doesn’t have a clear home, and we’re underinvesting in one of the highest-leverage tools we offer.

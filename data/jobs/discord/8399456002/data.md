@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8399456002](https://discord.com/jobs/8399456002)
 
-**Updated At:** Thu, 30 Apr 2026 21:36:05 GMT
+**Updated At:** Wed, 06 May 2026 20:46:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our Web Platform team is responsible for building and maintaining the critical systems that power Discord's frontend development across web, desktop, and mobile platforms. These systems support hundreds of engineers daily, process thousands of builds and deployments, and enable rapid feature delivery through robust tooling infrastructure. Through developing and operating foundational JavaScript build systems - including linters, bundlers, package managers, and CI/CD automation - our work allows internal developers to ship features quickly and safely while ensuring optimal performance, correctness, and developer ergonomics. This team also owns the localization and translation systems that power the strings and copy found across all of our apps and platforms.
