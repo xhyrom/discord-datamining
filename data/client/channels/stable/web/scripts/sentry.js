@@ -19702,7 +19702,7 @@ ${uG}
           autoSessionTracking: !1,
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
           release:
-            "2026-05-05-126c467aec2ce7171b2812f4c8d379c9ee8ab96e-discord_web",
+            "2026-05-06-ba3babf21feaf8c9ef2fc01678b9604e85b7d5cf-discord_web",
           beforeSend: function (e, t) {
             let n;
             return !(
@@ -19725,6 +19725,8 @@ ${uG}
               null == n.BetterDiscord &&
               null == n.BdApi &&
               null == n.rambox &&
+              null == n.Vencord &&
+              null == n.VencordNative &&
               "Aborted" !== e.message &&
               "cancel captcha" !== e.message &&
               d6()
@@ -19774,12 +19776,12 @@ ${uG}
           ],
           denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
         }),
-          t3("buildNumber", "539147"),
-          t3("builtAt", String("1777965566683"));
+          t3("buildNumber", "539951"),
+          t3("builtAt", String("1778051990200"));
         let e = window.GLOBAL_ENV.SENTRY_TAGS;
         if (null != e && "object" == typeof e) for (let t in e) t3(t, e[t]);
         return T;
       })();
     })();
 })();
-//# sourceMappingURL=sentry.1e0bc32a8e36731e.js.map
+//# sourceMappingURL=sentry.42740be7f78620a7.js.map
