@@ -1045,13 +1045,7 @@
   },
   "GUILD_FEED_FEATURE_ITEM": {
     "url": "/guilds/:param/guild-feed/feature",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PUT"
-    ]
+    "allowed_methods": null
   },
   "GUILD_FEED_MARK_SEEN": {
     "url": "/guilds/:param/guild-feed/mark-seen",
