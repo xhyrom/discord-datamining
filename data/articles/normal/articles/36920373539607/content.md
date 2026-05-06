@@ -301,7 +301,10 @@
 </ul>
 <div>
   <figure class="wysiwyg-table" style="width: 100%">
-    <table class="wysiwyg-table-resized">
+    <table
+      class="wysiwyg-table-resized"
+      style="margin-left: 0px; margin-right: auto"
+    >
       <colgroup>
         <col style="width: 41%" />
         <col style="width: 59%" />
