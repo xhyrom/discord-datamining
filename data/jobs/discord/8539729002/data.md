@@ -1,19 +1,19 @@
 # Job Listing
 
-## Senior Manager, Learning & Implementation
+## Senior Manager, Learning & Policy Implementation (T&S)
 
 **Location:** San Francisco Bay Area
 
-**Id:** 8529875002 <br/>
+**Id:** 8539729002 <br/>
 **Internal Job Id:** 6406529002 <br/>
 **Requisition Id:** R-107271 <br/>
 
-**Discord Jobs:** [https://discord.com/jobs/8529875002](https://discord.com/jobs/8529875002)
+**Discord Jobs:** [https://discord.com/jobs/8539729002](https://discord.com/jobs/8539729002)
 
-**Updated At:** Wed, 06 May 2026 20:46:12 GMT
+**Updated At:** Thu, 07 May 2026 17:13:25 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Keeping that experience safe and consistent for everyone requires more than good policies. It requires that every team member, enforcement agent, and frontline operator knows exactly what to do when it matters. That's the work of Learning &amp;amp; Implementation (L&amp;amp;I).
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Keeping that experience safe and consistent for everyone requires more than good policies. It requires that every team member, enforcement agent, and frontline operator knows exactly what to do when it matters. That's the work of Learning &amp;amp; Policy Implementation (L&amp;amp;I).
 L&amp;amp;I owns the operational knowledge infrastructure that keeps Discord's Trust &amp;amp; Safety and Customer Experience organizations running. The team sits at the intersection of where policy meets practice, responsible for documentation standards, policy operationalization, enforcement training, BPO enablement, and the public-facing Help Center. The scope of this team is expanding, and we're looking for a Senior Manager to lead it forward.
 This role requires someone who is close enough to the day-to-day to make informed decisions and credible enough with senior stakeholders to shape how T&amp;amp;S and CX operate. You'll define what this team ships, make that work visible across the organization, and build the kind of cross-functional influence that earns this function a seat at the table before decisions get made. If you've led operational knowledge functions before, know how to build credibility without formal authority, and are motivated by a role where your impact is felt across the entire organization, this one is for you.
 What you'll be doing
