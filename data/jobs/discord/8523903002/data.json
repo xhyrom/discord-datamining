@@ -1,0 +1,57 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8523903002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": true
+    }
+  ],
+  "internal_job_id": 6404474002,
+  "location": {
+    "name": "San Francisco Bay Area"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": null,
+      "value_type": "single_select"
+    }
+  ],
+  "id": 8523903002,
+  "updated_at": "2026-05-08T18:29:08-04:00",
+  "requisition_id": "R-107268",
+  "title": "Recruiting Data Analyst",
+  "company_name": "Discord",
+  "first_published": "2026-04-24T19:03:38-04:00",
+  "language": "en",
+  "application_deadline": null,
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is seeking a Recruiting Data Analyst to join our People Analytics team. In this high-impact role, you&#39;ll report to our Sr. Director of Analytics, Systems, and Operations and serve as the dedicated analytics partner to our Recruiting function.&lt;/p&gt;\n&lt;p&gt;As a strategic advisor to Recruiting leadership, you&#39;ll leverage data to optimize our hiring processes—identifying bottlenecks, building predictive models, designing dashboards, and conducting deep-dive analyses to measure and improve recruiting effectiveness.&lt;/p&gt;\n&lt;p&gt;The teams here at Discord are small but mighty - we are looking for people who are “game” to take on multiple responsibilities to learn and grow in their careers.&amp;nbsp; We are implementing One Model as our new analytics platform and there will be lots of runway to be creative and influence the way we share our data within the organization.&amp;nbsp;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Build strong partnerships with stakeholders across Recruiting, People, and Finance functions to establish trust as a strategic data partner&lt;/li&gt;\n&lt;li&gt;Collaborate with Recruiting and cross-functional leadership to gather requirements, translate business needs into analytical solutions, and deliver insights that inform strategic decision-making&lt;/li&gt;\n&lt;li&gt;Own reporting of critical Recruiting metrics (e.g., hiring progress, recruiter productivity, pipeline health) to measure the effectiveness of our Recruiting function; proactively identify issues and provide solutions to ensure goals are met&lt;/li&gt;\n&lt;li&gt;Create and enhance interactive dashboards and visualizations in Tableau and One Model to provide real-time insights, translating complex data into stories that are easy to understand&lt;/li&gt;\n&lt;li&gt;Collaborate with our People data analyst to ensure a cohesive analytics strategy, unified metrics across recruiting and employee experience, and critical reporting to the CPO and Executive team&lt;/li&gt;\n&lt;li&gt;Manage data within Greenhouse and build and maintain data pipelines using SQL (Snowflake, SQL Server, etc.)&lt;/li&gt;\n&lt;li&gt;Support data governance practices, including documentation around data access, privacy, and information flow between systems&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4+ years of hands-on experience in a primarily analytical role, with the ability to use data and business knowledge to solve complex problems and influence leadership decisions through storytelling&lt;/li&gt;\n&lt;li&gt;Proficiency with SQL (e.g., Snowflake, SQL Server) and advanced expertise in Excel/Google Sheets (queries, pivot tables); familiarity with Python and/or R is a plus&lt;/li&gt;\n&lt;li&gt;Proficiency with data visualization tools (Tableau and One Model preferred) with experience building dashboards and translating complex data into clear, compelling narratives&lt;/li&gt;\n&lt;li&gt;ATS Experience (e.g., Greenhouse) and familiarity with HRIS platforms such as Workday&lt;/li&gt;\n&lt;li&gt;Process mapping and systems improvement experience, with a track record of identifying inefficiencies and implementing solutions&lt;/li&gt;\n&lt;li&gt;Experience handling confidential data with discretion, and a commitment to data governance best practices&lt;/li&gt;\n&lt;li&gt;Collaborative team-player with a passion for Discord, gaming, and/or online communities or consumer-facing tech at scale&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $152,000 to $171,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4074076002,
+      "name": "People Operations",
+      "child_ids": [],
+      "parent_id": 4094261002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
