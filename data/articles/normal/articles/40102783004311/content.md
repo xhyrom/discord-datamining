@@ -5,6 +5,15 @@
   friends know exactly what to get you. This article covers everything you need
   to know about how it all works.
 </p>
+<div class="warn-box">
+  <strong>Rust Players:</strong> If you made a purchase and didn't get your item
+  after linking, please launch Rust and re-link your Discord account from inside
+  the game. You can do this by clicking 'Social' in the bottom right, then 'Find
+  your Friends on Discord'. See details on
+  <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E"
+    >how to link your Discord account here</a
+  >. 
+</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
@@ -374,6 +383,12 @@
   <strong>Billing </strong>&gt; navigate to the item you purchased &gt;
   <strong>Connect Account</strong>.
 </p>
+<div class="warn-box">
+  <strong>Rust Players:</strong> If you made a purchase and didn't get your item
+  after linking, please launch Rust and re-link your Discord account from inside
+  the game. You can do this by clicking 'Social' in the bottom right, then 'Find
+  your Friends on Discord'.
+</div>
 <h2 id="h_01KQJNEWWFCGTTPJRND5GPAHZE">General</h2>
 <p><strong>Q: Which games have Game Shops on Discord?</strong> </p>
 <p>A: Game Shops are currently available for Marvel Rivals and Rust.</p>
@@ -402,6 +417,41 @@
   >.
 </p>
 <h2 id="h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Game Shop</h2>
+<p>
+  <strong
+    >Q: I'm having trouble linking my Rust account to receive my item. What
+    should I do?</strong
+  >
+</p>
+<p>
+  A: If you made a purchase and didn't receive your item after linking, please
+  launch Rust and re-link your Discord account from inside the game.
+</p>
+<p>1. Launch Rust</p>
+<p>2. Select <strong>Social</strong> in the bottom-right corner</p>
+<p>
+  3. Select <strong>"Find your friends on Discord"</strong> and follow the
+  prompts
+</p>
+<p>This is the recommended linking method for Rust at this time.</p>
+<figure class="wysiwyg-image">
+  <img
+    style="aspect-ratio: 3072/1920"
+    src="https://support.discord.com/hc/article_attachments/40317227226391"
+    alt="Rust-1.png"
+    width="3072"
+    height="1920"
+  />
+</figure>
+<figure class="wysiwyg-image">
+  <img
+    style="aspect-ratio: 3072/1918"
+    src="https://support.discord.com/hc/article_attachments/40317227228183"
+    alt="Rust-2.png"
+    width="3072"
+    height="1918"
+  />
+</figure>
 <p><strong>Q: Which platforms can I redeem Rust Shop items on?</strong> </p>
 <p>A: Currently supported on PC via Steam.</p>
 <p>
