@@ -355,14 +355,11 @@
 <h2 id="h_01KKYTZQ8C3VZN6SPPHS7ZPGHQ">
   Discord Orbs Multiplier for Nitro Members
 </h2>
-<div class="exp-box">
-  <strong>Important:</strong> This Nitro perk is currently an experiment.
-</div>
 <p>
   For eligible Nitro subscribers, you can claim bonus Orbs through Quests! When
   you complete a Quest with Orb rewards as a Nitro subscriber, your Orb rewards
   have a 1.2x multiplier applied. The Orbs Multiplier perk is currently
-  available for Quests that have Orbs as the reward.
+  available for Quests starting May 8, 2026 that have Orbs as the reward.
 </p>
 <figure class="wysiwyg-image">
   <img
