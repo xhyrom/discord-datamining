@@ -4305,11 +4305,7 @@
   },
   "APP_RECOMMENDATIONS": {
     "url": "/app-recommendations",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "GUILD_FEED": {
     "url": "/guilds/:param/guild-feed",
