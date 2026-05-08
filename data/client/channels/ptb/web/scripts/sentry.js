@@ -11927,7 +11927,7 @@ Error:`,
               let t = e.slice(0, 15e4);
               return o
                 ? { body: t, warnings: ["MAYBE_JSON_TRUNCATED"] }
-                : { body: `${t}…`, warnings: ["TEXT_TRUNCATED"] };
+                : { body: `${t}\u{2026}`, warnings: ["TEXT_TRUNCATED"] };
             }
             if (o)
               try {
@@ -13036,7 +13036,8 @@ Error:`,
                                         if (!e) return e;
                                         if ("string" == typeof e)
                                           return e.length > 5e3
-                                            ? ((n = !0), `${e.slice(0, 5e3)}…`)
+                                            ? ((n = !0),
+                                              `${e.slice(0, 5e3)}\u{2026}`)
                                             : e;
                                         if ("object" == typeof e)
                                           try {
@@ -13044,7 +13045,7 @@ Error:`,
                                             if (JSON.stringify(t).length > 5e3)
                                               return (
                                                 (n = !0),
-                                                `${JSON.stringify(t, null, 2).slice(0, 5e3)}…`
+                                                `${JSON.stringify(t, null, 2).slice(0, 5e3)}\u{2026}`
                                               );
                                             return t;
                                           } catch (e) {}
@@ -19702,7 +19703,7 @@ ${uG}
           autoSessionTracking: !1,
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
           release:
-            "2026-05-07-98b5be2c2533f17f926b290d360986344ddddc9c-discord_web",
+            "2026-05-08-55fe94f3d0ca449c3c407bfbf200806e12400741-discord_web",
           beforeSend: function (e, t) {
             let n;
             return !(
@@ -19776,12 +19777,12 @@ ${uG}
           ],
           denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
         }),
-          t3("buildNumber", "540600"),
-          t3("builtAt", String("1778138376499"));
+          t3("buildNumber", "541270"),
+          t3("builtAt", String("1778226001699"));
         let e = window.GLOBAL_ENV.SENTRY_TAGS;
         if (null != e && "object" == typeof e) for (let t in e) t3(t, e[t]);
         return T;
       })();
     })();
 })();
-//# sourceMappingURL=sentry.36796a94df4938db.js.map
+//# sourceMappingURL=sentry.5099608302411323.js.map
