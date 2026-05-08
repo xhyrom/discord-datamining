@@ -1,0 +1,10 @@
+{
+  "id": "how-discord-automates-scylladb-clusters-at-scale",
+  "title": "How Discord Automates ScyllaDB Clusters at Scale",
+  "link": "https://discord.com/blog/how-discord-automates-scylladb-clusters-at-scale",
+  "guid": "https://discord.com/blog/how-discord-automates-scylladb-clusters-at-scale",
+  "description": "You've been asked to stand up a brand-new database cluster, meaning a whole day of configuring dozens of nodes, validating replication, wiring up dual-write pipelines… what if this whole ordeal took less than two hours? This is how we got ourselves into this exact mess, and how we made our way out of it.\n",
+  "pubDate": "Fri, 08 May 2026 00:00:00 GMT",
+  "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69fb97b51217ebb66107035c_2024_10_DiscordBlog_DevandEngineers-5.png",
+  "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69fb97b51217ebb66107035c_2024_10_DiscordBlog_DevandEngineers-5.png"
+}
