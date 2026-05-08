@@ -787,9 +787,8 @@
                             href="https://discord.com/community"
                             class="dd_nav-link w-inline-block"
                             ><div>
-                              Official Game Communities 7<span class="sr-only">
-                                of 10</span
-                              >
+                              Official Game Communities
+                              <span class="sr-only">7 of 10</span>
                             </div>
                             <div class="nav_dd_link_arrow w-embed">
                               <svg
