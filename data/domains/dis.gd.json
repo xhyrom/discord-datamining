@@ -1,0 +1,8 @@
+{
+  "subdomains": [
+    "staging",
+    "www",
+    "i"
+  ],
+  "subdomain_count": 3
+}
