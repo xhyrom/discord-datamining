@@ -238,63 +238,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8490430002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6388089002,
-      "location": {
-        "name": "New York City"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8490430002,
-      "updated_at": "2026-05-06T16:46:12-04:00",
-      "requisition_id": "R-107229",
-      "title": "Commercial Counsel",
-      "company_name": "Discord",
-      "first_published": "2026-04-01T16:56:12-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is seeking a seasoned Commercial Counsel to join our Legal team to drive complex, high-impact transactions that drive our platform&#39;s revenue and growth. You&#39;ll be a strategic legal partner for our most sophisticated commercial initiatives, from ad sales and major partnerships to novel revenue streams and product launches.&amp;nbsp; This role offers exceptional opportunity to help Discord scale its commercial relationships globally, working at the forefront of gaming, advertising and community engagement.&lt;/p&gt;\n&lt;p&gt;Reporting to our Managing Counsel, you&#39;ll drive high-stakes negotiations independently while serving as a trusted advisor to senior leadership on complex business, risk and legal strategy decisions. This hire can be based in the Bay Area or New York City.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Do&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Operate across the full lifecycle of advertising transactions — including negotiating and structuring insertion orders, master advertising terms, IAB framework agreements, attribution, measurement, ad tech, and data related transactions&lt;/li&gt;\n&lt;li&gt;Structure and negotiate complex commercial agreements, major partnerships, and strategic alliances&lt;/li&gt;\n&lt;li&gt;Provide sophisticated legal guidance on new business models, revenue streams, and product initiatives with understanding of privacy and product concerns.&lt;/li&gt;\n&lt;li&gt;Partner with senior leadership on commercial strategy, risk assessment, and deal structuring for transformational business opportunities&lt;/li&gt;\n&lt;li&gt;Support Discord&#39;s expanding international presence&lt;/li&gt;\n&lt;li&gt;Build and refine legal processes, playbooks, and training programs to help scale Discord’s revenue business.&lt;/li&gt;\n&lt;li&gt;Help drive legal technology solutions and workflow optimizations that enhance team efficiency and business impact&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What You Should Have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;7+ years of commercial legal experience with a mix of top-tier law firm and in-house counsel roles&lt;/li&gt;\n&lt;li&gt;Proven track record leading complex, high-value transactions in advertising, technology, media, or consumer internet sectors&lt;/li&gt;\n&lt;li&gt;Deep expertise in technology licensing, strategic partnerships, and sophisticated commercial structures&lt;/li&gt;\n&lt;li&gt;Experience and facility in identifying and handling privacy issues relating to commercial partnerships&lt;/li&gt;\n&lt;li&gt;Strategic business acumen with ability to identify opportunities and drive value creation beyond pure legal advice&lt;/li&gt;\n&lt;li&gt;Excellent judgment in risk assessment and escalation for novel legal and business challenges&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience at a high-growth consumer technology platform, advertising holding company, ad tech platforms, content publisher or social media company&lt;/li&gt;\n&lt;li&gt;Background in gaming, advertising technology, entertainment, data/identity management, and/or creator economy legal matters&lt;/li&gt;\n&lt;li&gt;Experience with legal operations, process improvement, or legal technology implementation&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to New York City.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $248,000 to $279,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4095032002,
-          "name": "Legal",
-          "child_ids": [],
-          "parent_id": 4094263002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8482186002",
       "data_compliance": [
         {
@@ -333,6 +276,63 @@
       "language": "en",
       "application_deadline": null,
       "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is seeking a seasoned Commercial Counsel to join our Legal team to drive complex, high-impact transactions that drive our platform&#39;s revenue and growth. You&#39;ll be a strategic legal partner for our most sophisticated commercial initiatives, from ad sales and major partnerships to novel revenue streams and product launches.&amp;nbsp; This role offers exceptional opportunity to help Discord scale its commercial relationships globally, working at the forefront of gaming, advertising and community engagement.&lt;/p&gt;\n&lt;p&gt;Reporting to our Managing Counsel, you&#39;ll drive high-stakes negotiations independently while serving as a trusted advisor to senior leadership on complex business, risk and legal strategy decisions. We are open to this hire being based on the Bay Area or New York City.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Do&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Operate across the full lifecycle of advertising transactions — including negotiating and structuring insertion orders, master advertising terms, IAB framework agreements, attribution, measurement, ad tech, and data related transactions&lt;/li&gt;\n&lt;li&gt;Structure and negotiate complex commercial agreements, major partnerships, and strategic alliances&lt;/li&gt;\n&lt;li&gt;Provide sophisticated legal guidance on new business models, revenue streams, and product initiatives with understanding of privacy and product concerns.&lt;/li&gt;\n&lt;li&gt;Partner with senior leadership on commercial strategy, risk assessment, and deal structuring for transformational business opportunities&lt;/li&gt;\n&lt;li&gt;Support Discord&#39;s expanding international presence&lt;/li&gt;\n&lt;li&gt;Build and refine legal processes, playbooks, and training programs to help scale Discord’s revenue business.&lt;/li&gt;\n&lt;li&gt;Help drive legal technology solutions and workflow optimizations that enhance team efficiency and business impact&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What You Should Have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;7+ years of commercial legal experience with a mix of top-tier law firm and in-house counsel roles&lt;/li&gt;\n&lt;li&gt;Proven track record leading complex, high-value transactions in advertising, technology, media, or consumer internet sectors&lt;/li&gt;\n&lt;li&gt;Deep expertise in technology licensing, strategic partnerships, and sophisticated commercial structures&lt;/li&gt;\n&lt;li&gt;Experience and facility in identifying and handling privacy issues relating to commercial partnerships&lt;/li&gt;\n&lt;li&gt;Strategic business acumen with ability to identify opportunities and drive value creation beyond pure legal advice&lt;/li&gt;\n&lt;li&gt;Excellent judgment in risk assessment and escalation for novel legal and business challenges&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience at a high-growth consumer technology platform, advertising holding company, ad tech platforms, content publisher or social media company&lt;/li&gt;\n&lt;li&gt;Background in gaming, advertising technology, entertainment, data/identity management, and/or creator economy legal matters&lt;/li&gt;\n&lt;li&gt;Experience with legal operations, process improvement, or legal technology implementation&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $248,000 to $279,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4095032002,
+          "name": "Legal",
+          "child_ids": [],
+          "parent_id": 4094263002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8490430002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "internal_job_id": 6388089002,
+      "location": {
+        "name": "New York City"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 8490430002,
+      "updated_at": "2026-05-06T16:46:12-04:00",
+      "requisition_id": "R-107229",
+      "title": "Commercial Counsel",
+      "company_name": "Discord",
+      "first_published": "2026-04-01T16:56:12-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is seeking a seasoned Commercial Counsel to join our Legal team to drive complex, high-impact transactions that drive our platform&#39;s revenue and growth. You&#39;ll be a strategic legal partner for our most sophisticated commercial initiatives, from ad sales and major partnerships to novel revenue streams and product launches.&amp;nbsp; This role offers exceptional opportunity to help Discord scale its commercial relationships globally, working at the forefront of gaming, advertising and community engagement.&lt;/p&gt;\n&lt;p&gt;Reporting to our Managing Counsel, you&#39;ll drive high-stakes negotiations independently while serving as a trusted advisor to senior leadership on complex business, risk and legal strategy decisions. This hire can be based in the Bay Area or New York City.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Do&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Operate across the full lifecycle of advertising transactions — including negotiating and structuring insertion orders, master advertising terms, IAB framework agreements, attribution, measurement, ad tech, and data related transactions&lt;/li&gt;\n&lt;li&gt;Structure and negotiate complex commercial agreements, major partnerships, and strategic alliances&lt;/li&gt;\n&lt;li&gt;Provide sophisticated legal guidance on new business models, revenue streams, and product initiatives with understanding of privacy and product concerns.&lt;/li&gt;\n&lt;li&gt;Partner with senior leadership on commercial strategy, risk assessment, and deal structuring for transformational business opportunities&lt;/li&gt;\n&lt;li&gt;Support Discord&#39;s expanding international presence&lt;/li&gt;\n&lt;li&gt;Build and refine legal processes, playbooks, and training programs to help scale Discord’s revenue business.&lt;/li&gt;\n&lt;li&gt;Help drive legal technology solutions and workflow optimizations that enhance team efficiency and business impact&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What You Should Have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;7+ years of commercial legal experience with a mix of top-tier law firm and in-house counsel roles&lt;/li&gt;\n&lt;li&gt;Proven track record leading complex, high-value transactions in advertising, technology, media, or consumer internet sectors&lt;/li&gt;\n&lt;li&gt;Deep expertise in technology licensing, strategic partnerships, and sophisticated commercial structures&lt;/li&gt;\n&lt;li&gt;Experience and facility in identifying and handling privacy issues relating to commercial partnerships&lt;/li&gt;\n&lt;li&gt;Strategic business acumen with ability to identify opportunities and drive value creation beyond pure legal advice&lt;/li&gt;\n&lt;li&gt;Excellent judgment in risk assessment and escalation for novel legal and business challenges&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience at a high-growth consumer technology platform, advertising holding company, ad tech platforms, content publisher or social media company&lt;/li&gt;\n&lt;li&gt;Background in gaming, advertising technology, entertainment, data/identity management, and/or creator economy legal matters&lt;/li&gt;\n&lt;li&gt;Experience with legal operations, process improvement, or legal technology implementation&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to New York City.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $248,000 to $279,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
       "departments": [
         {
           "id": 4095032002,
@@ -984,6 +984,63 @@
       ]
     },
     {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8537955002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "internal_job_id": 6409876002,
+      "location": {
+        "name": "San Francisco Bay Area"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 8537955002,
+      "updated_at": "2026-05-11T16:30:57-04:00",
+      "requisition_id": "R-107273",
+      "title": "Engineering Manager, Notifications",
+      "company_name": "Discord",
+      "first_published": "2026-05-11T16:30:57-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We&#39;re looking for a technical, hands-on, and infrastructure-minded Engineering Manager to lead our Notifications team within the Growth organization. Notifications is a full-stack team owning the platform and infrastructure that powers every notification Discord sends, the orchestration layer that optimizes notifications globally across types, the in-app notifications center, and the user-facing settings and client experience. You will lead a team of full-stack engineers operating business-critical systems that fan out to hundreds of millions of users while shipping the re-engagement surfaces that bring them back.&lt;/p&gt;\n&lt;p&gt;This role reports to the Senior Engineering Manager of Growth.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead a team of full-stack engineers building and operating the notifications platform — Elixir services, Python backends, pubsub pipelines, and the Kubernetes infrastructure underneath them&lt;/li&gt;\n&lt;li&gt;Set technical direction for notifications infrastructure and ensure systems scale reliably as volume and complexity grow&lt;/li&gt;\n&lt;li&gt;Partner with Product, Design, Data Science, and Marketing to define and execute the notifications roadmap&lt;/li&gt;\n&lt;li&gt;Use experimentation and metrics to drive continuous improvement in notification engagement, retention, and long-term user trust&lt;/li&gt;\n&lt;li&gt;Build a high-performing team through hiring, coaching, and instilling engineering best practices&lt;/li&gt;\n&lt;li&gt;Partner with platform consumers across Discord to evolve the primitives other teams depend on to reach our users&lt;/li&gt;\n&lt;li&gt;Partner with engineering leadership on strategic planning and organizational improvement&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;5+ years of experience as a Software Engineer, with significant time building and operating backend or infrastructure systems at scale&lt;/li&gt;\n&lt;li&gt;2+ years of experience as an Engineering Manager&lt;/li&gt;\n&lt;li&gt;Comfort owning production systems built on technologies like Elixir, Python, pubsub/streaming pipelines, and Kubernetes, with strong intuition for reliability, throughput, and cost at scale&lt;/li&gt;\n&lt;li&gt;Experience collaborating closely with product managers, designers, data scientists, and other engineers to define and ship solutions&lt;/li&gt;\n&lt;li&gt;A track record of growing engineers and helping team members succeed&lt;/li&gt;\n&lt;li&gt;Strong ownership mindset — you stay close to the technical decisions your team makes and can discuss them in depth with anyone at Discord&lt;/li&gt;\n&lt;li&gt;Ability to drive a culture of 80/20 thinking, fast iteration, and high-quality delivery&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience leading teams that own shared platforms or primitives consumed by other engineering teams&lt;/li&gt;\n&lt;li&gt;Experience shipping push notifications or other re-engagement systems at consumer scale, including familiarity with deliverability, throttling, and policy considerations&lt;/li&gt;\n&lt;li&gt;Full-stack experience across both frontend and backend development&lt;/li&gt;\n&lt;li&gt;Strong track record of driving measurable impact through experimentation and data-driven decision making&lt;/li&gt;\n&lt;li&gt;Demonstrated success driving engagement and long-term retention through messaging or re-engagement surfaces&lt;/li&gt;\n&lt;li&gt;You understand the gaming industry&lt;/li&gt;\n&lt;li&gt;You&#39;re a Discord user and understand the core features and flow of Discord communications&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $248,000 to $279,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4074054002,
+          "name": "Product Engineering",
+          "child_ids": [],
+          "parent_id": 4094266002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8502342002",
       "data_compliance": [
         {
@@ -1619,63 +1676,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8419048002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6362605002,
-      "location": {
-        "name": "Remote (U.S.)"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8419048002,
-      "updated_at": "2026-05-06T16:46:58-04:00",
-      "requisition_id": "R-107167",
-      "title": "Public Policy Lead, U.S. States",
-      "company_name": "Discord",
-      "first_published": "2026-02-18T17:44:33-05:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;As a Public Policy Advisor on the Public Policy/Government Relations team, you will support Discord’s work by building trust and finding common ground with policymakers, regulators, and other stakeholders with a focus on the U.S. States. This role reports to the company’s Director of Americas Public Policy.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you will do&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Introduce Discord to policymakers and other stakeholders including educating decision-makers on our mission, our products, and our investments in privacy and safety;&lt;/li&gt;\n&lt;li&gt;Advocate for Discord’s position on key legislative and regulatory initiatives that will impact our users and our business&lt;/li&gt;\n&lt;li&gt;Engage in public policy coalitions with peer companies and civil society organizations.&lt;/li&gt;\n&lt;li&gt;Monitor and analyze policy developments in the U.S. States.&lt;/li&gt;\n&lt;li&gt;Develop public policy materials such as position papers, talking points, presentations, consultation responses, for engagement with our partners.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Engage with cross-functional partners (Legal, Trust and Safety, Communications, Policy), reporting on policy developments, providing expert insights,&amp;nbsp; and gathering their input.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;5+ years of experience in government, public policy advocacy, and/or government relations&lt;/li&gt;\n&lt;li&gt;Deep insight on the policymaking process in the U.S. States&lt;/li&gt;\n&lt;li&gt;Ability to execute a multi-year strategic advocacy and public affairs program&lt;/li&gt;\n&lt;li&gt;Work experience on technology policy initiatives such as online safety, privacy, or content moderation&lt;/li&gt;\n&lt;li&gt;Ability to translate complex technical information into clear, compelling narratives for non-technical audiences&lt;/li&gt;\n&lt;li&gt;Success building trust and consensus across stakeholders with different perspectives and priorities&lt;/li&gt;\n&lt;li&gt;Willingness to travel as necessary within the U.S.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $156,000 to $175,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4054683002,
-          "name": "Policy",
-          "child_ids": [],
-          "parent_id": 4094263002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8419050002",
       "data_compliance": [
         {
@@ -1727,6 +1727,63 @@
           "id": 4000383002,
           "name": "San Francisco, CA",
           "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8419048002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "internal_job_id": 6362605002,
+      "location": {
+        "name": "Remote (U.S.)"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 8419048002,
+      "updated_at": "2026-05-06T16:46:58-04:00",
+      "requisition_id": "R-107167",
+      "title": "Public Policy Lead, U.S. States",
+      "company_name": "Discord",
+      "first_published": "2026-02-18T17:44:33-05:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;As a Public Policy Advisor on the Public Policy/Government Relations team, you will support Discord’s work by building trust and finding common ground with policymakers, regulators, and other stakeholders with a focus on the U.S. States. This role reports to the company’s Director of Americas Public Policy.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you will do&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Introduce Discord to policymakers and other stakeholders including educating decision-makers on our mission, our products, and our investments in privacy and safety;&lt;/li&gt;\n&lt;li&gt;Advocate for Discord’s position on key legislative and regulatory initiatives that will impact our users and our business&lt;/li&gt;\n&lt;li&gt;Engage in public policy coalitions with peer companies and civil society organizations.&lt;/li&gt;\n&lt;li&gt;Monitor and analyze policy developments in the U.S. States.&lt;/li&gt;\n&lt;li&gt;Develop public policy materials such as position papers, talking points, presentations, consultation responses, for engagement with our partners.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Engage with cross-functional partners (Legal, Trust and Safety, Communications, Policy), reporting on policy developments, providing expert insights,&amp;nbsp; and gathering their input.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;5+ years of experience in government, public policy advocacy, and/or government relations&lt;/li&gt;\n&lt;li&gt;Deep insight on the policymaking process in the U.S. States&lt;/li&gt;\n&lt;li&gt;Ability to execute a multi-year strategic advocacy and public affairs program&lt;/li&gt;\n&lt;li&gt;Work experience on technology policy initiatives such as online safety, privacy, or content moderation&lt;/li&gt;\n&lt;li&gt;Ability to translate complex technical information into clear, compelling narratives for non-technical audiences&lt;/li&gt;\n&lt;li&gt;Success building trust and consensus across stakeholders with different perspectives and priorities&lt;/li&gt;\n&lt;li&gt;Willingness to travel as necessary within the U.S.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $156,000 to $175,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4054683002,
+          "name": "Policy",
+          "child_ids": [],
+          "parent_id": 4094263002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
           "child_ids": [],
           "parent_id": null
         }
@@ -4734,6 +4791,6 @@
     }
   ],
   "meta": {
-    "total": 82
+    "total": 83
   }
 }
