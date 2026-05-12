@@ -299,7 +299,7 @@
       rel="noopener noreferrer"
       ><span class="wysiwyg-underline">Discord Nitro subscription</span></a
     >
-    (through a paid membership, , and most Nitro trials)
+    (through a paid membership, Nitro gift, and most Nitro trials)
   </li>
   <li data-list-item-id="efcb425a126410e41aa0e7e012dee824e">
     If you’re located in a region that Logitech G ships to (see
