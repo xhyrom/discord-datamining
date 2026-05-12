@@ -19950,10 +19950,11 @@
   --mobile-control-switch-knob-checked-offset: 28px;
   --mobile-control-switch-knob-size: 20px;
   --mobile-control-switch-width: 56px;
-  --mobile-emoji-row-emoji-font-size: 30px;
-  --mobile-emoji-row-emoji-line-height: 36px;
+  --mobile-emoji-row-emoji-container-size: 40px;
+  --mobile-emoji-row-emoji-font-size: 18px;
+  --mobile-emoji-row-emoji-line-height: 24px;
   --mobile-emoji-row-emoji-min-spacing: 8px;
-  --mobile-emoji-row-emoji-size: 32px;
+  --mobile-emoji-row-emoji-size: 20px;
   --mobile-group-avatar-size: 64px;
   --mobile-guild-bar-item-margin: 6px;
   --mobile-guild-folder-background-left: 8px;
@@ -20056,4 +20057,4 @@
   --channels-spine-offset-left: 28px;
 }
 
-/*# sourceMappingURL=56886.64222f84fb414777.css.map*/
+/*# sourceMappingURL=56886.251d99460c47c2d9.css.map*/
