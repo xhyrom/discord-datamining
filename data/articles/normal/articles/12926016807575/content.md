@@ -1,30 +1,34 @@
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large"
-      >What this article covers:</span
-    ></strong
-  >
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
   <ul>
-    <li>
+    <li data-list-item-id="ea297b60eb814b64195cc01ef28588768">
       <a href="#h_01HEJRG4MR97JBQDQYQFYWYM07"
         >What are In-Channel Conversation Summaries?</a
       >
     </li>
-    <li>
+    <li data-list-item-id="ec9864e471b932b649443d000d7d0add2">
       <a href="#h_01HEJRG4MRT6EAE4NCQD084F1T"
         >Where to find In-Channel Conversation Summaries</a
       >
       <ul>
-        <li><a href="#h_01HEJRG4MR5EXESJPMXXQKHAGY">Topic Subheader</a></li>
-        <li><a href="#h_01HEJRG4MRPAE93CYH0Q59DVHA">Summaries List</a></li>
-        <li>
+        <li data-list-item-id="e5613405e9682e78558b491d03cc93520">
+          <a href="#h_01HEJRG4MR5EXESJPMXXQKHAGY">Topic Subheader</a>
+        </li>
+        <li data-list-item-id="ebeef1e521aef3ea787e36cf24b3e70b2">
+          <a href="#h_01HEJRG4MRPAE93CYH0Q59DVHA">Summaries List</a>
+        </li>
+        <li data-list-item-id="e06a6176eadd182e126bc329efe4f7561">
           <a href="#h_01HEJRG4MRSTR9FP3MPK1SM1X5"
             >How to Hide In-Channel Conversation Summaries </a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li data-list-item-id="e43fc1efadfd80968592c6ea6774a16ee">
       <a href="#h_01HEJRG4MRQMKK1FENZD4RQB05">Frequently Asked Questions</a>
     </li>
   </ul>
@@ -144,25 +148,25 @@
   <strong
     >Q: What spaces on Discord can use In-Channel Conversation
     Summaries?</strong
-  ><strong><br /></strong>A: In-Channel Conversation Summaries is currently
-  available to a limited number of servers on Discord.<br /><strong
+  ><br />A: In-Channel Conversation Summaries is currently available to a
+  limited number of servers on Discord.<br /><strong
     >Q: How does In-Channel Conversation Summaries work?</strong
-  ><strong><br /></strong>A: This feature automatically summarizes the messages
-  you receive in a server to display a list of conversations, their associated
-  topic, a short snippet, and some of the participants involved. You won’t
-  receive summaries for messages you don’t have access to (e.g., messages from a
-  private channel you’re not a part of).<br /><strong
+  ><br />A: This feature automatically summarizes the messages you receive in a
+  server to display a list of conversations, their associated topic, a short
+  snippet, and some of the participants involved. You won’t receive summaries
+  for messages you don’t have access to (e.g., messages from a private channel
+  you’re not a part of).<br /><strong
     >Q: What if I don’t want to receive summaries from In-Channel Conversation
     Summaries?</strong
-  ><strong><br /></strong>A: Users can always hide the In-Channel Conversation
-  Summaries UI by following the steps listed above. In-Channel Conversation
-  Summaries will be a core part of the server experience and how users on
-  Discord stay engaged and up-to-date with their servers, similar to
+  ><br />A: Users can always hide the In-Channel Conversation Summaries UI by
+  following the steps listed above. In-Channel Conversation Summaries will be a
+  core part of the server experience and how users on Discord stay engaged and
+  up-to-date with their servers, similar to
   <a
     href="https://support.discord.com/hc/en-us/articles/5304469213079-Highlights-Notifications"
     target="_blank"
     rel="noopener noreferrer"
     >Highlight Notifications</a
-  >.<br /><br />
+  >.<br /><br /> 
 </p>
 <p> </p>
