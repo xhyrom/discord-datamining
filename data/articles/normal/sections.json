@@ -1,5 +1,21 @@
 [
   {
+    "id": 40426778784279,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/40426778784279.json",
+    "html_url": "https://support.discord.com/hc/en-us/sections/40426778784279-Archived",
+    "category_id": 40426617022615,
+    "position": 0,
+    "sorting": "manual",
+    "created_at": "2026-05-12T22:52:36Z",
+    "name": "Archived",
+    "description": "",
+    "locale": "en-us",
+    "source_locale": "en-us",
+    "outdated": false,
+    "parent_section_id": null,
+    "theme_template": "section_page"
+  },
+  {
     "id": 33024419968279,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/33024419968279.json",
     "html_url": "https://support.discord.com/hc/en-us/sections/33024419968279-Videos",

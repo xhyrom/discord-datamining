@@ -6,11 +6,11 @@
   >
   <span style="color: #434343"
     ><span data-darkreader-inline-color=""
-      >This version of the Discord Addendum is archived as of May 16, 2025. You
+      >This version of the Discord Addendum is archived as of May 12, 2026. You
       can find the current version of Discord Advertising IAB Addendum
     </span></span
   ><a
-    href="https://support.discord.com/hc/en-us/articles/28455100031511"
+    href="https://support.discord.com/hc/articles/28455100031511"
     target="_blank"
     rel="noopener noreferrer"
     ><span style="color: #434343"
@@ -20,6 +20,13 @@
     ><span data-darkreader-inline-color="">.</span></span
   >
 </div>
+<p class="wysiwyg-text-align-justify">
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      ><strong>Updated May 12, 2026</strong></span
+    ></span
+  >
+</p>
 <p class="wysiwyg-text-align-justify">
   <span style="color: #2e3338"
     ><span data-darkreader-inline-color=""
@@ -138,8 +145,11 @@
       available to users in certain regions where not supported by the Discord
       Platform. Advertiser and Agency may not terminate for convenience any
       Quest with (i) a Media Company Reward that contains or is derived from
-      Advertising Materials or (ii) any other custom Media Company Reward
-      created specifically for the Quest. </span
+      Advertising Materials (“Custom Reward”) or (ii) any other custom Media
+      Company Reward created specifically for the Quest. Where there is a Custom
+      Reward, Advertiser, or Agency on behalf of Advertiser, grants Discord a
+      worldwide, royalty-free, perpetual license in and to the Custom Reward to
+      provide it to Discord Nitro users. </span
     ></span
   >
 </p>
@@ -457,3 +467,20 @@
     ><span data-darkreader-inline-color="">”</span></span
   >
 </p>
+<div class="info-box">
+  <strong>Info:</strong>
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >You can find past versions Discord Advertising IAB Addendum(s)
+    </span></span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/32155621997719"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span style="color: #434343"
+      ><span data-darkreader-inline-color="">here</span></span
+    ></a
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
+</div>
