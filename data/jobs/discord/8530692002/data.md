@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8530692002](https://discord.com/jobs/8530692002)
 
-**Updated At:** Wed, 06 May 2026 20:46:12 GMT
+**Updated At:** Wed, 13 May 2026 15:28:00 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&amp;nbsp;
 San Francisco, CA
 Discord is used by over 200 million people every month for many different reasons, but there's one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.
 Building on Discord's gaming-centric platform, Quests offer an engaging way for advertisers to connect to our community with rewarded advertising. As we grow our advertising platform, our Ad Formats team is at the forefront of creating new formats, placements, and quest functionality to enable more ways that users can interact with our offering. The most successful formats are ones that surprise and delight our users, continuing the shift in consumer behavior to trust the ads we put in front of them.
@@ -31,7 +31,7 @@ What you should have
 
 Strong product sense for the ad formats space with deep understanding of how users engage with advertising
 Ability to thrive in ambiguous environments, excited about finding simple solutions to complex problems, and then executing on them
-7+ years experience shipping great software, driving prioritization, making trade-off decisions, and setting timelines
+5+ years experience shipping great software, driving prioritization, making trade-off decisions, and setting timelines
 An understanding of AI offerings within the tech world and how to use them effectively
 Demonstrated technical proficiency and effectiveness working closely with engineers
 Track record of driving impact via rapid experimentation towards a metric goal for an advertising tech product
