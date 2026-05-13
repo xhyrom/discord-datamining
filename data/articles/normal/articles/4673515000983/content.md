@@ -1,4 +1,4 @@
-<h3>
+<h3 id="h_01KR1QJ444QE28ZA3Q94ZVDZWT">
   Note: This is in beta. Not all servers have access to this yet. Stay tuned for
   more details in the future!
 </h3>
@@ -25,7 +25,7 @@
   ><a
     href="https://support.discord.com/hc/en-us/articles/360023968311-Server-Discovery#:~:text=Searching%20for%20New%20Communities,-If%20you%20know&amp;text=Once%20you've%20typed%20in,begin%20exploring%20servers%20from%20there!"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     >discoverable servers</a
   ><span style="font-weight: 400">. </span>
 </p>
@@ -59,7 +59,7 @@
   ><a
     href="https://support.discord.com/hc/en-us/articles/4409308485271-Discovery-Guidelines"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     >Discovery Guidelines</a
   ><span style="font-weight: 400"
     >. Discord’s Trust and Safety team will remove web pages that violate these
@@ -76,6 +76,11 @@
     weaver may be just one search term away!  </span
   >
 </p>
+<div class="exp-box">
+  <strong>Important:</strong> To help players find relevant game news and
+  communities online, we're running a pilot with select game communities to add
+  their announcement channel posts to their Server Web Pages.
+</div>
 <p>
   <span class="wysiwyg-font-size-large"
     ><strong>How do I make updates to my web page?</strong></span
@@ -101,10 +106,12 @@
   ><span style="font-weight: 400">gs and clicking “Disable Web Page”. </span>
 </p>
 <p>
-  <span class="wysiwyg-font-size-large" style="font-weight: 400"
-    ><strong
-      >Does my server need a specific server boost level to access this
-      feature?</strong
+  <span class="wysiwyg-font-size-large"
+    ><span style="font-weight: 400"
+      ><strong
+        >Does my server need a specific server boost level to access this
+        feature?</strong
+      ></span
     ></span
   >
 </p>
@@ -112,6 +119,6 @@
   <span style="font-weight: 400"
     >Server web pages are currently in beta and are available to all servers
     that have access to the beta, regardless of Boost Level. In the future, we
-    may integrate page features that require a certain Boost Level.
-  </span>
+    may integrate page features that require a certain Boost Level.</span
+  >
 </p>
