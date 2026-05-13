@@ -130,8 +130,6 @@
   "ACTIVITIES": {
     "url": "/activities",
     "allowed_methods": [
-      "GET",
-      "HEAD",
       "OPTIONS",
       "POST"
     ]
