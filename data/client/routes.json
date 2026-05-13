@@ -4541,11 +4541,7 @@
   },
   "BURST_CREDIT_BALANCE": {
     "url": "/users/@me/burst-credits",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "GET_SAVED_MESSAGES": {
     "url": "/users/@me/saved-messages",
