@@ -1,7 +1,7 @@
 <p>
-  Starting from <strong>December 11, 2025 (11AM ET) </strong>to
-  <strong>January 8, 2026 (11AM ET)</strong>, Epic Game Store members can claim
-  1 month of Discord Nitro from the Epic Games Store. Learn below about how you
+  Starting from <strong>May 14, 2026 (11AM ET) </strong>to
+  <strong>June 11, 2026 (11AM ET)</strong>, Epic Game Store members can claim 1
+  month of Discord Nitro from the Epic Games Store. Learn below about how you
   can claim
   <a href="https://support.discord.com/hc/en-us/articles/115000435108"
     ><span class="wysiwyg-underline">Discord Nitro</span></a
@@ -9,7 +9,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/36920373529239"
+    src="https://support.discord.com/hc/article_attachments/40287420170775"
     width="624"
     height="352"
   />
@@ -51,24 +51,16 @@
   claim further gifts from this promotion.
 </p>
 <p>
-  <span style="color: #434343"
-    >This promotion is not eligible in the following regions: Syria, Russia,
-    Turkey, Iran, North Korea, Zaporizhzhia, Kherson, Donetsk, and Luhansk. You
-    can learn more at this </span
-  ><a href="https://support.discord.com/hc/en-us/articles/4708041338391"
-    ><span class="wysiwyg-underline">Help Center article</span></a
-  ><span style="color: #434343">.</span>
-</p>
-<p>
   <strong>Requirements:</strong> Epic Game Store members can claim the 1 month
-  of Nitro starting <strong>December 11, 2025</strong>, and redeem it in your
-  Discord account by <strong>February 7, 2026 (11:59pm PT)</strong>.
+  of Nitro starting <strong>May 14, 2026</strong>, and redeem it in your Discord
+  account by <strong>July 11, 2026 (2:59PM ET)</strong>.
 </p>
 <p>
-  <strong>Subscription:</strong> After the 1 month trial period, your Nitro
-  subscription will convert to a monthly recurring subscription, and Discord
-  will bill your payment method for per month until you cancel it. You can
-  cancel at any time in your Discord <strong>User Settings</strong>. 
+  <strong>Subscri</strong>pt<strong>ion:</strong> After the 1 month trial
+  period, your Nitro subscription will convert to a monthly recurring
+  subscription, and Discord will bill your payment method for per month until
+  you cancel it. You can cancel at any time in your Discord
+  <strong>User Settings</strong>. 
 </p>
 <div class="toc-box">
   <p>
@@ -194,8 +186,8 @@
 </div>
 <p>
   1. Head over to the <strong>Epic Game Store app</strong> from
-  <strong>December 11, 2025 (11AM ET) </strong>to
-  <strong>January 8, 2026 (11AM ET) </strong>and you should see the Nitro trial
+  <strong>May 14, 2026 (11AM ET) </strong>to
+  <strong>June 11, 2026 (11AM ET) </strong>and you should see the Nitro trial
   promotion on the homepage. 
 </p>
 <p>2. Press on the promotion to get started on redeeming Nitro.</p>
@@ -228,7 +220,7 @@
 <p>
   Once you have claimed the promo, you'll now need to officially redeem this
   promo on your Discord account. You must redeem this Nitro trial by
-  <strong>February 7, 2026 (11:59M PT)</strong>.
+  <strong>July 11, 2026 (2:59PM ET)</strong>.
 </p>
 <h2 id="h_01KC4Q5DE5RZS1C7KJFWMC3VP1">
   Eligibility for Redeeming the Nitro Trial
@@ -423,7 +415,7 @@
   promotion URL link in the new page and send it to a friend.
   <strong
     >We recommend sending the link in a private direct message. Make sure your
-    friend redeems the code by February 7, 2026 (11:59M PT)</strong
+    friend redeems the code by July 11, 2026 (2:59PM ET)</strong
   >.
 </p>
 <h1 id="h_01KC4Q5DEKF1HR3ABVFBDVETCV">Frequently Asked Questions</h1>
@@ -464,21 +456,21 @@
 <p><strong>Q: How long does this promotion run for?</strong></p>
 <p>
   A: Epic Games Store users can claim Discord Nitro promo between
-  <strong>December 11, 2025 (11AM ET) </strong>to
-  <strong>January 8, 2026 (11AM ET)</strong>,
+  <strong>May 14, 2026 (11AM ET) </strong>to
+  <strong>June 11, 2026 (11AM ET)</strong>,
 </p>
 <p>
-  After <strong>February 7, 2026 (11:59M PT),</strong> Epic Game Store users
-  will no longer be able to claim a trial promo.
+  After <strong>July 11, 2026 (2:59PM ET)</strong>, Epic Game Store users will
+  no longer be able to claim a trial promo.
 </p>
 <p><strong>Q: How long does the Discord Nitro promotion last for?</strong></p>
 <p>
   A: You must redeem the Nitro promotion by
-  <strong>February 7, 2026 (11:59M PT)</strong>.
+  <strong>July 11, 2026 (2:59PM ET)</strong>.
 </p>
 <p>
   If a code has not been redeemed to the Discord account by
-  <strong>February 7, 2026 (11:59M PT)</strong> it will expire and you will no
+  <strong>July 11, 2026 (2:59PM ET)</strong> it will expire and you will no
   longer be able to have 1 month of Discord Nitro.
 </p>
 <h2 id="h_01KC4Q5DEQ074TVP4340AT639X">Eligibility for the Promotion</h2>
@@ -800,4 +792,3 @@
     ></a
   >.
 </p>
-<p><br /><br /><br /><br /><br /><br /><br /><br /><br /> </p>
