@@ -1,0 +1,102 @@
+.container__80907 {
+  --custom-premium-home-max-width: 1200px;
+  --custom-content-width-with-padding: calc(100% - 64px);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.responsiveContainer__80907 {
+  container-name: premium-marketing-page-container;
+  container-type: inline-size;
+}
+.giftNitro__80907 {
+  width: var(--custom-content-width-with-padding);
+}
+.footerSpacing__80907 {
+  height: 180px;
+}
+.bottomIllustration__80907 {
+  bottom: 0;
+  filter: saturate(var(--saturation-factor, 1));
+  position: absolute;
+}
+.heroHeading__80907 {
+  width: var(--custom-content-width-with-padding);
+}
+.bottomOfPageVisibilitySensor__80907 {
+  bottom: 0;
+  height: 300px;
+  position: absolute;
+}
+.mainPageScroller__80907 {
+  background: var(--background-gradient-chat, var(--background-base-lower));
+  contain: layout size;
+}
+.custom-client-theme .mainPageScroller__80907 {
+  background: var(--background-base-lower);
+}
+.loading__80907 {
+  align-items: center;
+  display: flex;
+  height: 520px;
+  justify-content: center;
+}
+.optionContainer__14160 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.clickableRow__14160 {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.clickableRow__14160:hover {
+  background: var(--background-mod-normal);
+}
+.indicatorWrapper__14160 {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+}
+.labelContainer__14160 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+}
+.label__14160 {
+  align-items: center;
+  display: flex;
+}
+.textInputWrapper__14160 {
+  padding-inline-start: 40px;
+}
+.container_b5a371 {
+  gap: 12px;
+}
+.choicesContainer_b5a371,
+.container_b5a371 {
+  display: flex;
+  flex-direction: column;
+}
+.choicesContainer_b5a371 {
+  gap: 4px;
+}
+.choiceRow_b5a371 {
+  align-items: center;
+  display: flex;
+}
+.noChoices_b5a371 {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=72228.507bcb6b22ca740e.css.map*/
