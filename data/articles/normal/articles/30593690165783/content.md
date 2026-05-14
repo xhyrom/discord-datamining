@@ -384,6 +384,17 @@
     Nitro Basic.
   </li>
 </ul>
+<div class="info-box">
+  <strong>Note: </strong>Nitro subscribers now receive 250 Discord Orbs on a
+  monthly basis just for maintaining their subscription. Learn more in our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/37097755077015"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Monthly Orbs Drop for Nitro Members FAQ</a
+  >
+  article.
+</div>
 <h1 id="h_01JVN9C8T6GAJ4V009G09TZ6A0">Spending Your Discord Orbs</h1>
 <h2 id="h_01JVN9C8T66JFD60SBTAW2FPXD">Where can I spend Orbs?</h2>
 <p>
