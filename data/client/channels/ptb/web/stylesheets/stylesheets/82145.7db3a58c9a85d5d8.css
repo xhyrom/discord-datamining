@@ -1,0 +1,61 @@
+.title__1472a {
+  color: var(--text-default);
+  margin-block: 16px;
+  margin-inline: 30px 20px;
+  margin-inline-start: var(--space-24);
+}
+.listItemContents_c72b78 {
+  align-items: center;
+  display: flex;
+  flex: 0 1 100%;
+  justify-content: space-between;
+}
+.actions_c72b78 {
+  display: flex;
+  gap: 10px;
+  margin-inline-start: auto;
+}
+.interactive_bf202d {
+  border-radius: inherit;
+  color: var(--interactive-text-default);
+  cursor: pointer;
+}
+.interactive_bf202d:focus-within,
+.interactive_bf202d:hover {
+  background: var(--interactive-background-hover);
+  color: var(--interactive-text-hover);
+}
+.interactive_bf202d:active {
+  background: var(--interactive-background-active);
+  color: var(--interactive-text-active);
+}
+.muted_bf202d {
+  color: var(--text-muted);
+}
+@media (min-width: 486px) {
+  .selected_bf202d {
+    background: var(--interactive-background-selected);
+    color: var(--interactive-text-active);
+  }
+}
+.enable-forced-colors .interactive_bf202d {
+  background-color: ButtonFace;
+  border: 1px solid ButtonFace;
+  color: ButtonText;
+  forced-color-adjust: none;
+}
+.enable-forced-colors .interactive_bf202d:focus-within,
+.enable-forced-colors .interactive_bf202d:hover {
+  background-color: ButtonFace;
+  border-color: ButtonText;
+  color: ButtonText;
+}
+.enable-forced-colors .interactive_bf202d.selected_bf202d,
+.enable-forced-colors .interactive_bf202d.selected_bf202d:focus-within,
+.enable-forced-colors .interactive_bf202d.selected_bf202d:hover {
+  background-color: Highlight;
+  border-color: HighlightText;
+  color: HighlightText;
+}
+
+/*# sourceMappingURL=82145.7db3a58c9a85d5d8.css.map*/
