@@ -1,0 +1,257 @@
+.header__36335 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.overlay__18000 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  inset-inline-start: 0;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.full-motion .checkmark__18000 {
+  transition: opacity 0.3s ease;
+}
+.checkmarkHover__18000 {
+  opacity: 0;
+}
+.addToWishlist__18000 {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+.full-motion .addToWishlist__18000 {
+  transition: opacity 0.3s ease;
+}
+.addToWishlistShow__18000 {
+  opacity: 1;
+}
+.cardStateIcon__18000 {
+  color: var(--status-positive);
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+  height: 38px;
+  transition: opacity 0.3s ease;
+  width: 38px;
+}
+.seeMoreOverlay__18000 {
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+.card_a23cbe {
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  --custom-premium-backdrop-inset: 0;
+}
+.collectiblesCardHover_a23cbe {
+  transform: translateY(-18px);
+}
+.full-motion .skuPreview_a23cbe {
+  transition: transform 0.2s ease;
+}
+.scaledSkuPreview_a23cbe {
+  transform: scale(0.613);
+  transform-origin: center;
+}
+.collectiblesSkuPreview_a23cbe > div {
+  height: 136px;
+  width: 106px;
+}
+.isOwnerAndHovering_a23cbe {
+  opacity: 0.5;
+}
+.grid_d89db4 {
+  display: grid;
+  gap: var(--space-8);
+  justify-content: start;
+  width: 100%;
+}
+.loadingContainer_d89db4 {
+  align-items: center;
+  display: flex;
+  height: 382px;
+  justify-content: center;
+  width: 100%;
+}
+.tooltipContent_d89db4 {
+  text-align: center;
+}
+.card_d89db4 {
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.highlightOverlay_d89db4 {
+  background-color: var(--black-500);
+  border-radius: var(--radius-sm);
+  opacity: 0.5;
+}
+.highlightOverlay_d89db4,
+.plusIconContainer_d89db4 {
+  align-items: center;
+  height: 100%;
+  inset-inline-start: 0;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.plusIconContainer_d89db4 {
+  display: flex;
+}
+.cardBackgroundImage_d89db4 {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.cardBackgroundImage_d89db4,
+.cardImage_d89db4 {
+  height: 100%;
+  inset-inline: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.cardImage_d89db4 {
+  bottom: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.upsellContainer_e75cd3 {
+  width: 344px;
+}
+.contentContainer_e75cd3 {
+  padding: 0;
+}
+.buttonContainer_e75cd3 {
+  margin-top: 16px;
+}
+.wishlistGrid_e75cd3 {
+  grid-auto-rows: 122px;
+  grid-template-columns: repeat(3, 95px);
+}
+.container__85bea {
+  border-radius: var(--radius-md);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.08);
+  color: var(--white);
+  cursor: grab;
+  position: relative;
+  width: -moz-min-content;
+  width: min-content;
+}
+.card__85bea {
+  background-color: var(--background-surface-highest);
+}
+.card__85bea:after {
+  border: 1px solid var(--border-muted);
+}
+.custom-user-profile-theme.theme-light .card__85bea {
+  background-color: var(--opacity-white-24);
+}
+.custom-user-profile-theme.theme-dark .card__85bea {
+  background-color: var(--background-mod-normal);
+}
+.dragHandle__85bea {
+  color: inherit;
+  z-index: 2;
+}
+.collectiblesCardHover__85bea {
+  transform: translateY(-14px);
+}
+.full-motion .skuPreview__85bea {
+  transition: transform 0.2s ease;
+}
+.skuPreview__85bea.isOwned__85bea {
+  cursor: default;
+  opacity: 0.5;
+}
+.gameCover__1a3d6 {
+  aspect-ratio: 3/4;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.coverContainer__1a3d6 {
+  background-color: var(--background-mod-muted);
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.coverContainer__1a3d6:before {
+  background: linear-gradient(
+    150deg,
+    hsla(0, 0%, 100%, 0.2),
+    hsla(0, 0%, 100%, 0) 40%
+  );
+  border-radius: 8px;
+  box-shadow:
+    inset 0 0 13px 0 hsla(0, 0%, 100%, 0.06),
+    inset 0 0 0 1px var(--border-muted);
+  content: "";
+  height: 100%;
+  inset-inline-start: 0;
+  position: absolute;
+  top: 0;
+  transition: background 50ms ease-in;
+  width: 100%;
+  z-index: 1;
+}
+.gameCoverImage__1a3d6 {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+  width: 100%;
+}
+.fallback__1a3d6 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4px;
+  text-align: center;
+  word-break: break-word;
+}
+.clickable__1a3d6 {
+  cursor: pointer;
+}
+.clickable__1a3d6:hover:before {
+  background: linear-gradient(
+      150deg,
+      hsla(0, 0%, 100%, 0.2),
+      hsla(0, 0%, 100%, 0) 40%
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  transition: background 0.15s ease-out;
+}
+.loadingCover__1a3d6 {
+}
+.full-motion .hoverActiveEffect__1a3d6 {
+  transition: transform 0.15s ease-in-out;
+  will-change: transform;
+}
+.full-motion .hoverActiveEffect__1a3d6:hover {
+  transform: scale(1.0225);
+}
+.full-motion .hoverActiveEffect__1a3d6:active {
+  transform: scale(0.9775);
+}
+
+/*# sourceMappingURL=11971.5806103c361a340e.css.map*/

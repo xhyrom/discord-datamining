@@ -1,0 +1,420 @@
+.churnDiscountBadge_b65b20 {
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  margin-inline-start: auto;
+  padding: 0 6px;
+  pointer-events: all;
+  text-transform: uppercase;
+}
+.churnDiscountAcknowledgedBadge_b65b20 {
+  background-color: var(--background-mod-strong);
+}
+.churnDiscountBadgeIcon_b65b20 {
+  color: var(--icon-subtle);
+  height: 14px;
+  margin-inline-end: 4px;
+  width: 14px;
+}
+.imageWrapper_f357e4 {
+  margin-top: var(--space-16);
+  padding: 0 var(--space-16);
+}
+.image_f357e4 {
+  border-radius: 16px;
+  display: block;
+  width: 100%;
+}
+.container_d79086 {
+  box-sizing: border-box;
+  contain: paint;
+  cursor: revert;
+  display: inline-block;
+  position: relative;
+  text-align: start;
+  vertical-align: top;
+  width: 100%;
+}
+.animatedText_d79086 {
+  display: block;
+  overflow: hidden;
+  pointer-events: none;
+  text-overflow: ellipsis;
+  transform-style: preserve-3d;
+  white-space: nowrap;
+  width: 100%;
+}
+.container_e93594 {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.icon_e93594 {
+  color: var(--text-default);
+  margin-inline-start: -2px;
+  z-index: 10;
+}
+@container premium-marketing-page-container (min-width: 720px) {
+  .icon_e93594 {
+    color: #fff;
+  }
+}
+.baseContainer__40d5b {
+  container-name: premium-marketing-page-container;
+  container-type: inline-size;
+  filter: saturate(var(--saturation-factor, 1));
+  max-width: var(--custom-premium-home-max-width);
+  overflow: visible;
+}
+.baseContainer__40d5b,
+.card__40d5b {
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+}
+.card__40d5b {
+  border-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.video__40d5b {
+  height: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+.betaBadge__40d5b {
+  margin-bottom: 12px;
+}
+.progressContainer__40d5b {
+  padding-top: var(--space-12);
+  width: 75%;
+}
+.bannerImageContainer__40d5b {
+  flex: 0 0 auto;
+  height: 250px;
+  overflow: visible;
+  position: relative;
+}
+.bannerImage__40d5b,
+.bannerImageContainer__40d5b {
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+}
+.bannerImage__40d5b {
+  height: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  transform: scaleX(-1);
+}
+.textContainer__40d5b {
+  align-items: flex-start;
+  background-color: var(--card-background-default);
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-48) var(--space-24);
+  position: relative;
+  z-index: 1;
+}
+.heading__40d5b {
+  margin-bottom: var(--space-12);
+}
+.actionButtonContainer__40d5b {
+  margin-top: var(--space-24);
+}
+.totalLifetimeRewardsContainer__40d5b {
+  align-items: center;
+  color: var(--text-muted);
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-12);
+}
+.stackedGradientOverlay__40d5b {
+  background: linear-gradient(
+    to bottom,
+    transparent 0,
+    color-mix(in srgb, var(--card-background-default) 70%, transparent) 50%,
+    var(--card-background-default) 100%
+  );
+  position: absolute;
+  top: auto;
+  inset-inline: 0;
+  bottom: 0;
+  height: 100px;
+}
+@container premium-marketing-page-container (min-width: 720px) {
+  .card__40d5b {
+    flex-direction: row;
+    height: 350px;
+  }
+  .bannerImageContainer__40d5b {
+    height: auto;
+    margin-inline-end: 0;
+    min-width: 0;
+    width: 50%;
+    z-index: 0;
+  }
+  .bannerImage__40d5b {
+    -o-object-position: center;
+    object-position: center;
+  }
+  .textContainer__40d5b {
+    background-color: transparent;
+    padding-block: var(--space-48);
+    padding-inline: var(--space-32);
+    width: 50%;
+    z-index: auto;
+  }
+  .heading__40d5b,
+  .textContainer__40d5b {
+    color: var(--white);
+  }
+  .bodyText__40d5b,
+  .totalLifetimeRewardsContainer__40d5b {
+    color: hsl(var(--white-hsl) / 0.6);
+  }
+  .bodyText__40d5b a {
+    color: var(--blue-new-27);
+  }
+  .bodyText__40d5b a:hover {
+    color: var(--blue-new-31);
+  }
+  .stackedGradientOverlay__40d5b {
+    display: none;
+  }
+}
+@container premium-marketing-page-container (min-width: 960px) {
+  .textContainer__40d5b {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-inline: var(--space-24);
+  }
+  .bannerImage__40d5b {
+    -o-object-position: calc(100% + 250px) center;
+    object-position: calc(100% + 250px) center;
+  }
+  .bannerImageContainer__40d5b {
+    margin-inline-end: 0;
+  }
+}
+.container_ad8aad {
+  gap: 8px;
+  width: 100%;
+}
+.container_ad8aad,
+.orbContainer_ad8aad {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.orbContainer_ad8aad {
+  flex-shrink: 0;
+}
+.value_ad8aad {
+  font-style: italic;
+  text-align: center;
+}
+.graphicSection_a2cab2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: var(--space-16) auto var(--space-20);
+  max-width: 232px;
+  width: 100%;
+}
+.headerCentered_a2cab2 {
+  text-align: center;
+}
+.wrapper__553bf {
+  isolation: isolate;
+  position: relative;
+}
+.withGradient__553bf {
+  overflow: hidden;
+  position: relative;
+}
+.withGradient__553bf.withQuestHomeHeroContent__553bf:focus-within a,
+.withGradient__553bf.withQuestHomeHeroContent__553bf:hover a,
+.withOnboardingContent__553bf a {
+  color: var(--text-strong) !important;
+}
+.withGradient__553bf.withQuestHomeHeroContent__553bf:focus-within svg,
+.withGradient__553bf.withQuestHomeHeroContent__553bf:hover svg,
+.withOnboardingContent__553bf svg {
+  color: var(--icon-strong) !important;
+}
+.withGradient__553bf.withQuestHomeHeroContent__553bf:before,
+.withGradient__553bf:after {
+  border-radius: inherit;
+  bottom: 1px;
+  content: "";
+  inset-inline: 0;
+  position: absolute;
+  top: 1px;
+  transition: opacity 0.125s;
+  z-index: 0;
+}
+.questHomeHeroBackgroundImage__553bf,
+.withGradient__553bf.withQuestHomeHeroContent__553bf:after,
+.withGradient__553bf.withQuestHomeHeroContent__553bf:before {
+  opacity: 0;
+}
+.withGradient__553bf.withQuestHomeHeroContent__553bf:before {
+  background-image: linear-gradient(
+    90deg,
+    var(--custom-quest-home-hero-linear-gradient-start),
+    var(--custom-quest-home-hero-linear-gradient-end)
+  );
+}
+.withGradient__553bf.withQuestHomeHeroContent__553bf:after {
+  background-image: radial-gradient(
+    100% 80px at center 230%,
+    var(--custom-quest-home-hero-radial-gradient-start),
+    var(--custom-quest-home-hero-radial-gradient-end)
+  );
+}
+.withGradient__553bf.withQuestHomeHeroContent__553bf:focus-within:before,
+.withGradient__553bf.withQuestHomeHeroContent__553bf:hover:before {
+  opacity: 0.4;
+}
+.withGradient__553bf.withQuestHomeHeroContent__553bf:focus-within:after,
+.withGradient__553bf.withQuestHomeHeroContent__553bf:hover:after,
+.withQuestHomeHeroContent__553bf:focus-within
+  .questHomeHeroBackgroundImage__553bf,
+.withQuestHomeHeroContent__553bf:hover .questHomeHeroBackgroundImage__553bf {
+  opacity: 1;
+}
+.withOnboardingContent__553bf:after {
+  background-image: linear-gradient(90deg, #394aff, #e901d9);
+  opacity: 0.16;
+}
+.withOnboardingContent__553bf:focus-within:after,
+.withOnboardingContent__553bf:hover:after {
+  opacity: 0.2;
+}
+.badge__553bf {
+  position: relative;
+  z-index: 2;
+}
+.shine__553bf {
+  background-image: linear-gradient(
+    90deg,
+    hsla(0, 0%, 100%, 0) 25%,
+    hsla(0, 0%, 100%, 0.7) 50%,
+    hsla(0, 0%, 100%, 0) 75%
+  );
+  height: var(--custom-shine-dimensions);
+  inset-inline-end: calc(100% + var(--custom-shine-rotated-dimensions-delta));
+  transform-origin: 50%;
+  width: var(--custom-shine-dimensions);
+  z-index: 3;
+}
+.glow__553bf,
+.shine__553bf {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+}
+.glow__553bf {
+  background-image: radial-gradient(
+    rgba(221, 0, 241, 0.5) 0,
+    rgba(221, 0, 241, 0) 60%
+  );
+  height: 150px;
+  inset-inline-end: 32px;
+  transform: translate(50%, -50%);
+  width: 150px;
+  z-index: 1;
+}
+.glow__553bf:after {
+  background-image: radial-gradient(
+    rgba(241, 0, 4, 0.2) 0,
+    rgba(241, 0, 4, 0) 60%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.questHomeHeroBackgroundImage__553bf {
+  bottom: 0;
+  height: 100%;
+  inset-inline-end: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: right;
+  object-position: right;
+  position: absolute;
+  top: 0;
+  transition: 0.125s;
+  width: auto;
+}
+.questHomeHeroTooltipImage__553bf {
+  height: 48px;
+  width: 48px;
+}
+.devBanner__56d75 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  line-height: 24px;
+  padding: 0 4px;
+  position: relative;
+  text-align: center;
+  white-space: no-wrap;
+}
+.devBanner__56d75 strong {
+  font-weight: var(--font-weight-semibold);
+}
+.local__56d75 {
+  background-color: var(--background-feedback-warning);
+}
+.local__56d75,
+.staging__56d75 {
+  color: var(--text-default);
+}
+.staging__56d75 {
+  background-color: var(--background-feedback-critical);
+}
+.buildOverride__56d75 {
+  background-color: var(--status-positive-background);
+  color: var(--white);
+}
+.icon__56d75 {
+  display: inline-block;
+  height: auto;
+  margin-inline-end: 4px;
+  vertical-align: middle;
+  width: 12px;
+}
+.closeButton__56d75 {
+  background-position: 50% 55%;
+  background-size: 10px 10px;
+  cursor: pointer;
+  height: 24px;
+  inset-inline-end: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 3px;
+  transition: opacity 0.2s;
+  width: 24px;
+  -webkit-app-region: no-drag;
+}
+.closeButton__56d75:hover {
+  opacity: 1;
+}
+.closeIcon__56d75 {
+  height: 14px;
+  width: 14px;
+}
+
+/*# sourceMappingURL=11610.1eb6845d3a664502.css.map*/
