@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8517367002](https://discord.com/jobs/8517367002)
 
-**Updated At:** Wed, 13 May 2026 21:34:36 GMT
+**Updated At:** Fri, 15 May 2026 20:24:40 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord exists to give people the power to create space to find belonging — to talk regularly with the people they care about and build genuine relationships with friends and communities close to home or around the world.
@@ -46,7 +46,7 @@ A strong passion for Discord and/or gaming, and an appreciation for the communit
 A relevant degree in Computer Science, Machine Learning, Statistics, or a related quantitative field, or equivalent practical experience.
 
 Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.
-The US base salary range for this full-time position is $220,000 to $247,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include benefits.
+The US base salary range for this full-time position is $220,000 to $275,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include benefits.
 &amp;nbsp;Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Discord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
