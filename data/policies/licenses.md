@@ -60614,6 +60614,454 @@ without specific prior written permission.</code></pre>
                   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
                   ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span
                 ><span class="paragraph-3ckiht">*/</span>
+                <h2 id="steam-audio">
+                  Steam Audio<a class="hyperlink" href="#steam-audio"
+                    ><div name="steam-audio"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright 2017-2023 Valve Corporation.</span
+                ><span class="paragraph-3ckiht"
+                  >Licensed under the Apache License, Version 2.0 (the
+                  "License"); you may not use this file except in compliance
+                  with the License. You may obtain a copy of the License
+                  at</span
+                >
+                <pre
+                  class="pre-NiP_FO"
+                ><code class="hljs scroller">http://www.apache.org/licenses/LICENSE-2.0</code></pre>
+                <span class="paragraph-3ckiht"
+                  >Unless required by applicable law or agreed to in writing,
+                  software distributed under the License is distributed on an
+                  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+                  either express or implied. See the License for the specific
+                  language governing permissions and limitations under the
+                  License.</span
+                >
+                <h2 id="steam-audio-intel-ipp">
+                  Steam Audio: Intel IPP<a
+                    class="hyperlink"
+                    href="#steam-audio-intel-ipp"
+                    ><div name="steam-audio-intel-ipp"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Intel Simplified Software License (Version October
+                  2022)</span
+                ><span class="paragraph-3ckiht"
+                  >Use and Redistribution. You may use and redistribute the
+                  software, which is provided in binary form only, (the
+                  “Software”), without modification, provided the following
+                  conditions are met:</span
+                ><span class="paragraph-3ckiht"
+                  >Redistributions must reproduce the above copyright notice and
+                  these terms of use in the Software and in the documentation
+                  and/or other materials provided with the distribution. Neither
+                  the name of Intel nor the names of its suppliers may be used
+                  to endorse or promote products derived from this Software
+                  without specific prior written permission. No reverse
+                  engineering, decompilation, or disassembly of the Software is
+                  permitted, nor any modification or alteration of the Software
+                  or its operation at any time, including during execution. No
+                  other licenses. Except as provided in the preceding section,
+                  Intel grants no licenses or other rights by implication,
+                  estoppel or otherwise to, patent, copyright, trademark, trade
+                  name, service mark or other intellectual property licenses or
+                  rights of Intel.</span
+                ><span class="paragraph-3ckiht"
+                  >Third party software. “Third Party Software” means the files
+                  (if any) listed in the “third-party-software.txt” or other
+                  similarly-named text file that may be included with the
+                  Software. Third Party Software, even if included with the
+                  distribution of the Software, may be governed by separate
+                  license terms, including without limitation, third party
+                  license terms, open source software notices and terms, and/or
+                  other Intel software license terms. These separate license
+                  terms solely govern Your use of the Third Party
+                  Software.</span
+                ><span class="paragraph-3ckiht"
+                  >DISCLAIMER. THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS
+                  OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+                  IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+                  PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. THIS
+                  SOFTWARE IS NOT INTENDED FOR USE IN SYSTEMS OR APPLICATIONS
+                  WHERE FAILURE OF THE SOFTWARE MAY CAUSE PERSONAL INJURY OR
+                  DEATH AND YOU AGREE THAT YOU ARE FULLY RESPONSIBLE FOR ANY
+                  CLAIMS, COSTS, DAMAGES, EXPENSES, AND ATTORNEYS’ FEES ARISING
+                  OUT OF ANY SUCH USE, EVEN IF ANY CLAIM ALLEGES THAT INTEL WAS
+                  NEGLIGENT REGARDING THE DESIGN OR MANUFACTURE OF THE
+                  SOFTWARE.</span
+                ><span class="paragraph-3ckiht"
+                  >LIMITATION OF LIABILITY. IN NO EVENT WILL INTEL BE LIABLE FOR
+                  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+                  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+                  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+                  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+                  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+                  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+                  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+                  THE POSSIBILITY OF SUCH DAMAGE.</span
+                ><span class="paragraph-3ckiht"
+                  >No support. Intel may make changes to the Software, at any
+                  time without notice, and is not obligated to support, update
+                  or provide training for the Software.</span
+                ><span class="paragraph-3ckiht"
+                  >Termination. Your right to use the Software is terminated in
+                  the event of your breach of this license.</span
+                ><span class="paragraph-3ckiht"
+                  >Feedback. Should you provide Intel with comments,
+                  modifications, corrections, enhancements or other input
+                  (“Feedback”) related to the Software, Intel will be free to
+                  use, disclose, reproduce, license or otherwise distribute or
+                  exploit the Feedback in its sole discretion without any
+                  obligations or restrictions of any kind, including without
+                  limitation, intellectual property rights or licensing
+                  obligations.</span
+                ><span class="paragraph-3ckiht"
+                  >Compliance with laws. You agree to comply with all relevant
+                  laws and regulations governing your use, transfer, import or
+                  export (or prohibition thereof) of the Software.</span
+                ><span class="paragraph-3ckiht"
+                  >Governing law. All disputes will be governed by the laws of
+                  the United States of America and the State of Delaware without
+                  reference to conflict of law principles and subject to the
+                  exclusive jurisdiction of the state or federal courts sitting
+                  in the State of Delaware, and each party agrees that it
+                  submits to the personal jurisdiction and venue of those courts
+                  and waives any objections. THE UNITED NATIONS CONVENTION ON
+                  CONTRACTS FOR THE INTERNATIONAL SALE OF GOODS (1980) IS
+                  SPECIFICALLY EXCLUDED AND WILL NOT APPLY TO THE
+                  SOFTWARE.</span
+                >
+                <h2 id="steam-audio-ffts">
+                  Steam Audio: FFTS<a class="hyperlink" href="#steam-audio-ffts"
+                    ><div name="steam-audio-ffts"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >This file is part of FFTS -- The Fastest Fourier Transform in
+                  the South</span
+                ><span class="paragraph-3ckiht"
+                  >Copyright (c) 2012, 2013 Anthony M. Blake
+                  <a
+                    href="mailto:amb@anthonix.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>amb@anthonix.com</span></a
+                  ></span
+                ><span class="paragraph-3ckiht">All rights reserved.</span
+                ><span class="paragraph-3ckiht"
+                  >Redistribution and use in source and binary forms, with or
+                  without modification, are permitted provided that the
+                  following conditions are met:</span
+                >
+                <ul>
+                  <li>
+                    Redistributions of source code must retain the above
+                    copyright notice, this list of conditions and the following
+                    disclaimer.
+                  </li>
+                  <li>
+                    Redistributions in binary form must reproduce the above
+                    copyright notice, this list of conditions and the following
+                    disclaimer in the documentation and/or other materials
+                    provided with the distribution.
+                  </li>
+                  <li>
+                    Neither the name of the organization nor the names of its
+                    contributors may be used to endorse or promote products
+                    derived from this software without specific prior written
+                    permission.
+                  </li>
+                </ul>
+                <span class="paragraph-3ckiht"
+                  >THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+                  CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+                  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+                  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+                  DISCLAIMED. IN NO EVENT SHALL ANTHONY M. BLAKE BE LIABLE FOR
+                  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+                  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+                  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+                  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+                  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+                  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+                  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+                  THE POSSIBILITY OF SUCH DAMAGE.</span
+                >
+                <h2 id="steam-audio-pffft">
+                  Steam Audio: PFFFT<a
+                    class="hyperlink"
+                    href="#steam-audio-pffft"
+                    ><div name="steam-audio-pffft"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright (c) 2020 Dario Mambro ( dario.mambro@gmail.com )
+                  Copyright (c) 2019 Hayati Ayguen ( h_ayguen@web.de ) Copyright
+                  (c) 2013 Julien Pommier ( pommier@modartt.com )</span
+                ><span class="paragraph-3ckiht"
+                  >Copyright (c) 2004 the University Corporation for Atmospheric
+                  Research ("UCAR"). All rights reserved. Developed by NCAR's
+                  Computational and Information Systems Laboratory, UCAR,
+                  www.cisl.ucar.edu.</span
+                ><span class="paragraph-3ckiht"
+                  >Redistribution and use of the Software in source and binary
+                  forms, with or without modification, is permitted provided
+                  that the following conditions are met:</span
+                >
+                <ul>
+                  <li>
+                    <span class="paragraph-3ckiht"
+                      >Neither the names of NCAR's Computational and Information
+                      Systems Laboratory, the University Corporation for
+                      Atmospheric Research, nor the names of its sponsors or
+                      contributors may be used to endorse or promote products
+                      derived from this Software without specific prior written
+                      permission.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="paragraph-3ckiht"
+                      >Redistributions of source code must retain the above
+                      copyright notices, this list of conditions, and the
+                      disclaimer below.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="paragraph-3ckiht"
+                      >Redistributions in binary form must reproduce the above
+                      copyright notice, this list of conditions, and the
+                      disclaimer below in the documentation and/or other
+                      materials provided with the distribution.</span
+                    >
+                  </li>
+                </ul>
+                <span class="paragraph-3ckiht"
+                  >THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+                  KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE
+                  WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                  CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+                  INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+                  DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+                  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
+                  THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+                  SOFTWARE.</span
+                >
+                <h2 id="steam-audio-mysofa">
+                  Steam Audio: MySOFA<a
+                    class="hyperlink"
+                    href="#steam-audio-mysofa"
+                    ><div name="steam-audio-mysofa"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright (c) 2016-2017, Symonics GmbH, Christian Hoene All
+                  rights reserved.</span
+                ><span class="paragraph-3ckiht"
+                  >Redistribution and use in source and binary forms, with or
+                  without modification, are permitted provided that the
+                  following conditions are met:</span
+                >
+                <pre
+                  class="pre-NiP_FO"
+                ><code class="hljs scroller">(1) Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+(2) Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in
+the documentation and/or other materials provided with the
+distribution.
+(3)The name of the author may not be used to
+endorse or promote products derived from this software without
+specific prior written permission.</code></pre>
+                <span class="paragraph-3ckiht"
+                  >THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY
+                  EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+                  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+                  PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+                  AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+                  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+                  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+                  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+                  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+                  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+                  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+                  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span
+                >
+                <h2 id="steam-audio-intel-embree">
+                  Steam Audio: Intel Embree<a
+                    class="hyperlink"
+                    href="#steam-audio-intel-embree"
+                    ><div name="steam-audio-intel-embree"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright 2009-2021 Intel Corporation</span
+                ><span class="paragraph-3ckiht"
+                  >Licensed under the Apache License, Version 2.0 (the
+                  "License"); you may not use this file except in compliance
+                  with the License. You may obtain a copy of the License
+                  at</span
+                >
+                <pre
+                  class="pre-NiP_FO"
+                ><code class="hljs scroller">http://www.apache.org/licenses/LICENSE-2.0</code></pre>
+                <span class="paragraph-3ckiht"
+                  >Unless required by applicable law or agreed to in writing,
+                  software distributed under the License is distributed on an
+                  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+                  either express or implied. See the License for the specific
+                  language governing permissions and limitations under the
+                  License.</span
+                >
+                <h2 id="steam-audio-amd-radeonrays">
+                  Steam Audio: AMD RadeonRays<a
+                    class="hyperlink"
+                    href="#steam-audio-amd-radeonrays"
+                    ><div name="steam-audio-amd-radeonrays"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright (c) 2016 Advanced Micro Devices, Inc. All rights
+                  reserved.</span
+                ><span class="paragraph-3ckiht"
+                  >Permission is hereby granted, free of charge, to any person
+                  obtaining a copy of this software and associated documentation
+                  files (the "Software"), to deal in the Software without
+                  restriction, including without limitation the rights to use,
+                  copy, modify, merge, publish, distribute, sublicense, and/or
+                  sell copies of the Software, and to permit persons to whom the
+                  Software is furnished to do so, subject to the following
+                  conditions:</span
+                ><span class="paragraph-3ckiht"
+                  >The above copyright notice and this permission notice shall
+                  be included in all copies or substantial portions of the
+                  Software.</span
+                ><span class="paragraph-3ckiht"
+                  >THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+                  KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+                  WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+                  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+                  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+                  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span
+                >
+                <h2 id="steam-audio-amd-trueaudio-next">
+                  Steam Audio: AMD TrueAudio Next<a
+                    class="hyperlink"
+                    href="#steam-audio-amd-trueaudio-next"
+                    ><div name="steam-audio-amd-trueaudio-next"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht">MIT license</span
+                ><span class="paragraph-3ckiht"
+                  >Copyright (c) 2019 Advanced Micro Devices, Inc. All rights
+                  reserved.</span
+                ><span class="paragraph-3ckiht"
+                  >Permission is hereby granted, free of charge, to any person
+                  obtaining a copy of this software and associated documentation
+                  files (the "Software"), to deal in the Software without
+                  restriction, including without limitation the rights to use,
+                  copy, modify, merge, publish, distribute, sublicense, and/or
+                  sell copies of the Software, and to permit persons to whom the
+                  Software is furnished to do so, subject to the following
+                  conditions:</span
+                ><span class="paragraph-3ckiht"
+                  >The above copyright notice and this permission notice shall
+                  be included in all copies or substantial portions of the
+                  Software.</span
+                ><span class="paragraph-3ckiht"
+                  >THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+                  KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+                  WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+                  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+                  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+                  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span
+                >
+                <h2 id="steam-audio-cipic-hrtf-database">
+                  Steam Audio: CIPIC HRTF Database<a
+                    class="hyperlink"
+                    href="#steam-audio-cipic-hrtf-database"
+                    ><div name="steam-audio-cipic-hrtf-database"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht">Sponsorship</span
+                ><span class="paragraph-3ckiht">
+                  This work was supported by the National Science Foundation
+                  under Grants IRI-9619339 and ITR-0086075. Any opinions,
+                  findings and conclusions or recommendations expressed in this
+                  material are those of the authors, and do not necessarily
+                  reflect the views of the National Science Foundation.</span
+                ><span class="paragraph-3ckiht">Copyright</span
+                ><span class="paragraph-3ckiht"
+                  >Copyright (c) 2001 The Regents of the University of
+                  California. All Rights Reserved</span
+                ><span class="paragraph-3ckiht">Disclaimer</span
+                ><span class="paragraph-3ckiht"
+                  >THE REGENTS OF THE UNIVERSITY OF CALIFORNIA MAKE NO
+                  REPRESENTATION OR WARRANTIES WITH RESPECT TO THE CONTENTS
+                  HEREOF AND SPECIFICALLY DISCLAIM ANY IMPLIED WARRANTIES OR
+                  MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE.</span
+                ><span class="paragraph-3ckiht"
+                  >Further, the Regents of the University of California reserve
+                  the right to revise this software and/or documentation and to
+                  make changes from time to time in the content hereof without
+                  obligation of the Regents of the University of California to
+                  notify any person of such revision or change.</span
+                ><span class="paragraph-3ckiht">Use of Materials</span
+                ><span class="paragraph-3ckiht"
+                  >The Regents of the University of California hereby grant
+                  users permission to reproduce and/or use materials available
+                  therein for any purpose- educational, research or commercial.
+                  However, each reproduction of any part of the materials must
+                  include the copyright notice, if it is present.</span
+                ><span class="paragraph-3ckiht"
+                  >In addition, as a courtesy, if these materials are used in
+                  published research, this use should be acknowledged in the
+                  publication. If these materials are used in the development of
+                  commercial products, the Regents of the University of
+                  California request that written acknowledgment of such use be
+                  sent to:</span
+                >
+                <pre
+                  class="pre-NiP_FO"
+                ><code class="hljs scroller"> CIPIC- Center for Image Processing and Integrated Computing
+ University of California
+ 1 Shields Avenue
+ Davis, CA 95616-8553
+    </code></pre>
+                <h2 id="steam-audio-google-spherical-harmonics-library">
+                  Steam Audio: Google Spherical Harmonics Library<a
+                    class="hyperlink"
+                    href="#steam-audio-google-spherical-harmonics-library"
+                    ><div
+                      name="steam-audio-google-spherical-harmonics-library"
+                    ></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright 2015 Google Inc. All Rights Reserved.</span
+                ><span class="paragraph-3ckiht"
+                  >Licensed under the Apache License, Version 2.0 (the
+                  "License"); you may not use this file except in compliance
+                  with the License. You may obtain a copy of the License
+                  at</span
+                >
+                <pre
+                  class="pre-NiP_FO"
+                ><code class="hljs scroller">http://www.apache.org/licenses/LICENSE-2.0</code></pre>
+                <span class="paragraph-3ckiht"
+                  >Unless required by applicable law or agreed to in writing,
+                  software distributed under the License is distributed on an
+                  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+                  either express or implied. See the License for the specific
+                  language governing permissions and limitations under the
+                  License.</span
+                >
                 <hr />
                 <h1 id="additional-software-used-in-discord-for-android">
                   Additional software used in Discord for Android:<a
@@ -60805,6 +61253,14 @@ without specific prior written permission.</code></pre>
                     target="_blank"
                     rel="noreferrer"
                     ><span>https://tenbytwenty.com/#munro</span></a
+                  >,
+                  <a
+                    href="https://fonts.google.com/specimen/Delicious+Handrawn/license"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://fonts.google.com/specimen/Delicious+Handrawn/license</span
+                    ></a
                   ></span
                 >
               </div>
