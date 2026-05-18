@@ -328,20 +328,25 @@
                         <div class="nav_dd_link_list is-new">
                           <div class="nav_dd_link_title">Resources</div>
                           <a href="/safety-family-center" class="dd_nav-link"
-                            >Family Center<span class="sr-only"
-                              >1 of 9</span
-                            > </a
+                            >Family Center
+                            <span class="sr-only">1 of 10</span></a
                           ><a href="/safety-library" class="dd_nav-link"
-                            >Safety Library<span class="sr-only"
-                              >2 of 9</span
-                            ></a
+                            >Safety Library
+                            <span class="sr-only">2 of 10</span></a
                           ><a href="/safety-news" class="dd_nav-link"
-                            >Safety News<span class="sr-only">3 of 9</span></a
+                            >Safety News <span class="sr-only">3 of 10</span></a
                           ><a
                             href="/safety-teen-charter"
                             class="dd_nav-link w-inline-block"
                             ><div>
-                              Teen Charter <span class="sr-only">4 of 9</span>
+                              Teen Charter <span class="sr-only">4 of 10</span>
+                            </div></a
+                          ><a
+                            href="/safety-players-guide"
+                            class="dd_nav-link is_new w-inline-block"
+                            ><div>
+                              Discord Player's Guide
+                              <span class="sr-only">5 of 10</span>
                             </div></a
                           >
                         </div>
@@ -353,32 +358,33 @@
                             href="/safety-parents"
                             class="dd_nav-link w-inline-block"
                             ><div>
-                              Parent Hub <span class="sr-only">5 of 9</span>
+                              Parent Hub <span class="sr-only">6 of 10</span>
                             </div></a
                           ><a
                             href="/safety-policies"
                             class="dd_nav-link w-inline-block"
                             ><div>
-                              Policy Hub <span class="sr-only">6 of 9</span>
+                              Policy Hub <span class="sr-only">7 of 10</span>
                             </div></a
                           ><a
                             href="/safety-privacy"
                             class="dd_nav-link w-inline-block"
                             ><div>
-                              Privacy Hub <span class="sr-only">7 of 9</span>
+                              Privacy Hub <span class="sr-only">8 of 10</span>
                             </div></a
                           ><a
                             href="/safety-transparency"
                             class="dd_nav-link w-inline-block"
                             ><div>
                               Transparency Hub
-                              <span class="sr-only">8 of 9</span>
+                              <span class="sr-only">9 of 10</span>
                             </div></a
                           ><a
                             href="/safety-wellbeing"
                             class="dd_nav-link w-inline-block"
                             ><div>
-                              Wellbeing Hub <span class="sr-only">9 of 9</span>
+                              Wellbeing Hub
+                              <span class="sr-only">10 of 10</span>
                             </div></a
                           >
                         </div>
@@ -1073,6 +1079,10 @@
                                 href="/safety-teen-charter"
                                 class="dd_nav-link is-new w-inline-block"
                                 ><div>Teen Charter</div></a
+                              ><a
+                                href="/safety-players-guide"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Discord Player's Guide</div></a
                               >
                             </div>
                           </div>
