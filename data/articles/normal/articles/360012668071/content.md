@@ -7,115 +7,126 @@
   by Discord on a case-by-case basis and eligibility is determined at our sole
   discretion.
 </p>
-<ul>
-  <li
-    style="font-weight: 400"
-    data-list-item-id="e537adb7d9225f453a24e4de4f7c3bf09"
-  >
-    <a href="#h_01J5BJ8AD35FVE1BBY5SM35Y6R">Refunds by Payment Type</a>
-    <ul>
-      <li
-        style="font-weight: 400"
-        aria-level="1"
-        data-list-item-id="e15775a668dbb84a183a99c76bb338368"
-      >
-        <a href="#h_01J5BHZ59CNMWV3JE8D1GHQ5P3">iOS App Store Purchases</a>
-      </li>
-      <li
-        style="font-weight: 400"
-        aria-level="1"
-        data-list-item-id="ef77f7814fb748e06d1c6892ae0733cb2"
-      >
-        <a href="#h_01J5BJ03FMG9GKPN0EYVYE5T23">Paysafecards</a>
-      </li>
-      <li
-        style="font-weight: 400"
-        aria-level="1"
-        data-list-item-id="efd291e579cc0956757b75ebac7e9aa94"
-      >
-        <a href="#h_01JW9DNYQXDHAH0YFC08MM536A">Orbs</a>
-      </li>
-    </ul>
-  </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e5b6ca72505ad699791a2ebbaa246f91f"
-  >
-    <a href="#h_01J5BJ03FMZ021ECRNC8JWQ0Y0">Nitro and Server Boosts </a>
-    <ul>
-      <li
-        style="font-weight: 400"
-        aria-level="1"
-        data-list-item-id="e61db38472b90d4665c430f30e6fbdbb9"
-      >
-        <a href="#h_01J5BJ0CVX6QRXWNJHY3TM97FG">Exceptions</a>
-      </li>
-    </ul>
-  </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e77e6d03490676b9d408e694c2b051422"
-  >
-    <a href="#h_01J5BJ13F4GHPNM080EY7QR9V0">Nitro Gifts </a>
-  </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="ef110a1386a54ba38ad68517db43d33ca"
-  >
-    <a href="#h_01J5BJ1E128CKG7FPKAKKGJQD9"
-      >DLC, Profile Cosmetics and In-App</a
+<div class="toc-box">
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
     >
-  </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e94d6f156bd5384cab02627c3378d7882"
-  >
-    <a href="#h_01KBDQVHKE2JEVXB1FWSH9N3H8">Marvel Rivals Shop</a>
-  </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="ee986c55ee5ba314a1d20ec6cd22f4721"
-  >
-    <a href="#h_01J5BJ1RGC5P7CMY2FS0WAW4GB"
-      >Purchases from Users and Developers</a
+  </p>
+  <ul>
+    <li
+      style="font-weight: 400"
+      data-list-item-id="e674b97a125441d99c025b24c53f81c76"
     >
-    <ul>
-      <li
-        style="font-weight: 400"
-        aria-level="1"
-        data-list-item-id="e9453dfc08b7f36ca3b31ca5c570ff5b1"
+      <a href="#h_01J5BJ8AD35FVE1BBY5SM35Y6R">Refunds by Payment Type</a>
+      <ul>
+        <li
+          style="font-weight: 400"
+          aria-level="1"
+          data-list-item-id="ea9724661c2b0052902f8bbb9591ec505"
+        >
+          <a href="#h_01J5BHZ59CNMWV3JE8D1GHQ5P3">iOS App Store Purchases</a>
+        </li>
+        <li
+          style="font-weight: 400"
+          aria-level="1"
+          data-list-item-id="e12b2b65fadd52bcd317f02b22040622d"
+        >
+          <a href="#h_01J5BJ03FMG9GKPN0EYVYE5T23">Paysafecards</a>
+        </li>
+        <li
+          style="font-weight: 400"
+          aria-level="1"
+          data-list-item-id="efa2070e8937fdf6c7d61e2a90d4f7ce0"
+        >
+          <a href="#h_01JW9DNYQXDHAH0YFC08MM536A">Orbs</a>
+        </li>
+      </ul>
+    </li>
+    <li
+      style="font-weight: 400"
+      aria-level="1"
+      data-list-item-id="e3e670d1a1cb2c59ccc72d6d947256c68"
+    >
+      <a href="#h_01J5BJ03FMZ021ECRNC8JWQ0Y0">Nitro and Server Boosts </a>
+      <ul>
+        <li
+          style="font-weight: 400"
+          aria-level="1"
+          data-list-item-id="e20bf69c9f8cfe22c0ea4e5769f9422d2"
+        >
+          <a href="#h_01J5BJ0CVX6QRXWNJHY3TM97FG">Exceptions</a>
+        </li>
+      </ul>
+    </li>
+    <li
+      style="font-weight: 400"
+      aria-level="1"
+      data-list-item-id="e7ebbdad9c2e2fd35ddfdb2e5bbaef02b"
+    >
+      <a href="#h_01J5BJ13F4GHPNM080EY7QR9V0">Nitro Gifts </a>
+    </li>
+    <li
+      style="font-weight: 400"
+      aria-level="1"
+      data-list-item-id="e5fcaec54b87e2287b55adfbe2b78b8fc"
+    >
+      <a href="#h_01J5BJ1E128CKG7FPKAKKGJQD9"
+        >DLC, Profile Cosmetics and In-App</a
       >
-        <a href="#h_01J5BJ24CY61CX217VEZCSHSVZ">Server Subscription Refunds</a>
-      </li>
-      <li
-        style="font-weight: 400"
-        aria-level="1"
-        data-list-item-id="e243ae5c3768479a14c6b13ad7daea96d"
+    </li>
+    <li
+      style="font-weight: 400"
+      aria-level="1"
+      data-list-item-id="e83d21e9c478be9a7727337adb7a0d9b5"
+    >
+      <a href="#h_01KRXRE6KJQNEBMMPR7B8XKAFH">Game Shop</a>
+    </li>
+    <li
+      style="font-weight: 400"
+      aria-level="1"
+      data-list-item-id="e1d9b3914507446866037268458ac2f61"
+    >
+      <a href="#h_01J5BJ1RGC5P7CMY2FS0WAW4GB"
+        >Purchases from Users and Developers</a
       >
-        <a href="#h_01J5BJEN2SS8JW91M1JKYDSRDW">Server Shop Purchase Refunds</a>
-      </li>
-      <li
-        style="font-weight: 400"
-        aria-level="1"
-        data-list-item-id="ec002c71427743d28dc77bf9e054dfa77"
-      >
-        <a href="#h_01J5BJ2X9ZT977MQHTP5PK3C2M">Premium App Refunds</a>
-      </li>
-    </ul>
-  </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e4f583bf5c79ad9507dd6d89e250df854"
-  >
-    <a href="#h_01J5BJMMBM60AYHA22N600NDT5">How to Submit a Refund Request</a>
-  </li>
-</ul>
+      <ul>
+        <li
+          style="font-weight: 400"
+          aria-level="1"
+          data-list-item-id="e794602b9b4bb34a74005e318cfbcbe6e"
+        >
+          <a href="#h_01J5BJ24CY61CX217VEZCSHSVZ"
+            >Server Subscription Refunds</a
+          >
+        </li>
+        <li
+          style="font-weight: 400"
+          aria-level="1"
+          data-list-item-id="ec1399e8da09d751c8314519baf86480f"
+        >
+          <a href="#h_01J5BJEN2SS8JW91M1JKYDSRDW"
+            >Server Shop Purchase Refunds</a
+          >
+        </li>
+        <li
+          style="font-weight: 400"
+          aria-level="1"
+          data-list-item-id="e9db2981eea7dfd1202d79b905ff4a279"
+        >
+          <a href="#h_01J5BJ2X9ZT977MQHTP5PK3C2M">Premium App Refunds</a>
+        </li>
+      </ul>
+    </li>
+    <li
+      style="font-weight: 400"
+      aria-level="1"
+      data-list-item-id="efd51986bf71f67dde5fbaf1ae1b902e7"
+    >
+      <a href="#h_01J5BJMMBM60AYHA22N600NDT5">How to Submit a Refund Request</a>
+    </li>
+  </ul>
+</div>
 <div class="warn-box">
   <strong>Important Note:</strong><br />Refunds for purchases described in this
   Refund Policy are
@@ -238,19 +249,28 @@
   While these users and developers are responsible for these offerings, we may
   offer refunds in our sole discretion in the situations outlined below.
 </p>
-<h1 id="h_01KBDQVHKE2JEVXB1FWSH9N3H8">Marvel Rivals Shop</h1>
+<h1 id="h_01KRXRE6KJQNEBMMPR7B8XKAFH">Game Shop</h1>
 <p>
-  We are unable to provide refunds for items purchased from the Marvel Rivals
-  Shop. However, if you or your intended gift recipient are unable to receive
-  the item in your connected account (for example, if the item is already
-  owned), we may offer a refund, provided that you or the gift recipient
-  attempted to claim the item within 14 days of purchase.
+  Refunds for items purchased from the
+  <a
+    href="https://support.discord.com/hc/en-us/articles/40102783004311-Game-Shops-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong><span class="wysiwyg-underline">Game Shop</span></strong></a
+  >
+  are limited. Discord may issue a refund if you're unable to claim the in-game
+  item on a supported platform.
 </p>
 <p>
-  If your Marvel Rivals Shop purchase is defective or you're experiencing
-  problems with the purchase, please contact us at
-  <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">dis.gd/billing</span></a
+  If you or your gift recipient attempt to claim an item you already own in-game
+  within 14 days of purchase, a refund will be automatically issued to the
+  original purchaser. Eligible refunds are processed back to your original
+  payment method within 5–10 business days.
+</p>
+<p>
+  Experiencing an issue with your purchase? Contact us at
+  <a href="https://dis.gd/billing" target="_blank" rel="noopener noreferrer"
+    ><strong><span class="wysiwyg-underline">dis.gd/billing</span></strong></a
   >
   within 14 days of purchase.
 </p>
@@ -324,10 +344,7 @@
   <li data-list-item-id="e4d72b6348dad0d5069162c131e0c8499">
     Select the correct product category that you’re requesting a refund for.
     <ul>
-      <li
-        class="ck-list-marker-italic"
-        data-list-item-id="e0272fc737aa0947e13c9efd84543eda8"
-      >
+      <li data-list-item-id="e0272fc737aa0947e13c9efd84543eda8">
         <em
           >For example, if you are requesting a refund for a Premium App
           Subscription, select Premium Apps” from the Type of Billing Issue
