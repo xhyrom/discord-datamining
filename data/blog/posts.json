@@ -3329,5 +3329,16 @@
     "pubDate": "Wed, 13 May 2026 00:00:00 GMT",
     "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a03ba0af460a93816fbc072_Birthday%20Blog%20Header.jpg",
     "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a03ba0af460a93816fbc072_Birthday%20Blog%20Header.jpg"
+  },
+  {
+    "id": "every-voice-and-video-call-on-discord-is-now-end-to-end-encrypted",
+    "body": "",
+    "title": "Every Voice and Video Call on Discord Is Now End-to-End Encrypted",
+    "link": "https://discord.com/blog/every-voice-and-video-call-on-discord-is-now-end-to-end-encrypted",
+    "guid": "https://discord.com/blog/every-voice-and-video-call-on-discord-is-now-end-to-end-encrypted",
+    "description": "As of March 2026, E2EE is now enforced for every voice and video call on Discord. This represents a multi-year commitment, and Discord’s VP of Engineering is here to talk about why it matters.",
+    "pubDate": "Mon, 18 May 2026 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a025bd747acaa792ad3ddad_image1.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a025bd747acaa792ad3ddad_image1.png"
   }
 ]
