@@ -1,0 +1,14 @@
+.emoji {
+  height: var(--custom-emoji-size-emoji);
+  -o-object-fit: contain;
+  object-fit: contain;
+  vertical-align: bottom;
+  width: var(--custom-emoji-size-emoji);
+}
+.emoji.jumboable {
+  height: var(--custom-emoji-size-jumbo-emoji);
+  min-height: var(--custom-emoji-size-jumbo-emoji);
+  width: var(--custom-emoji-size-jumbo-emoji);
+}
+
+/*# sourceMappingURL=85549.633113f618f16835.css.map*/
