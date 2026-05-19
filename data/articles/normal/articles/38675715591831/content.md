@@ -148,34 +148,14 @@
   >
   on your preferred browser
 </p>
-<p>
-  2. Select the “<strong>Report Non-Consensual Intimate Imagery</strong>” report
-  form
-</p>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 480/324"
-    src="https://support.discord.com/hc/article_attachments/39550461432983"
-    width="480"
-    height="324"
-  />
-</figure>
-<h4 class="wysiwyg-text-align-center" id="h_01KN36M4EKD0BQM1Y9P9WCE0RC">
-  In the report form on browser, Report Non-Consensual Intimate Imagery is one
-  of two options that can be selected.
-</h4>
-<p>3. Follow the steps in the form to file a report.</p>
-<figure class="wysiwyg-media">
-  <div data-oembed-url="https://youtu.be/fenELNSdWiA">
-    <iframe
-      src="//www.youtube-nocookie.com/embed/fenELNSdWiA"
-      frameborder="0"
-      allowfullscreen=""
-      allow="encrypted-media"
-      style="width: 100%; aspect-ratio: 16 / 9"
-    ></iframe>
-  </div>
-</figure>
+<p>2. Follow the steps in the form to file a report.</p>
+<iframe
+  style="aspect-ratio: 16 / 9; width: 100%"
+  src="https://www.youtube-nocookie.com/embed/fenELNSdWiA?&amp;rel=0"
+  frameborder="0"
+  allowfullscreen=""
+  allow="encrypted-media"
+></iframe>
 <h2 id="h_01KN36N6A2A5B1Z2KJWYN8GX7R">Required Information</h2>
 <p>
   We recognize that reporting non-consensual intimate imagery can be difficult.
@@ -323,10 +303,15 @@
 <p>
   <span class="wysiwyg-font-size-large"><strong>Desktop</strong></span>
 </p>
-<p>1. Right-click on the emoji.</p>
 <p>
-  2. For emojis sent in chat messages or shared as reactions, select
-  <strong>Message Details</strong>. Otherwise, go straight to step 3.<br /><br />3.
+  1. Enable <strong>Developer Mode</strong> by pressing the
+  <strong>cogwheel icon</strong> and navigating to
+  <strong>Settings</strong> &gt; <strong>Developer</strong>. 
+</p>
+<p>2. Right-click on the emoji.</p>
+<p>
+  3. For emojis sent in chat messages or shared as reactions, select
+  <strong>Message Details</strong>. Otherwise, go straight to step 3.<br /><br />4.
   Select <strong>Copy Emoji Image Link</strong>.
 </p>
 <figure class="wysiwyg-image">
@@ -361,11 +346,16 @@
   <span class="wysiwyg-font-size-large"><strong>Mobile</strong></span>
 </p>
 <p>If selecting an emoji in a message:</p>
-<p>1. Tap on emoji. </p>
-<p>2. Then click the three dot menu in the upper right corner.</p>
-<p>3. Select <strong>Copy Emoji Image Link</strong>.</p>
 <p>
-  4. Paste the link into the report form’s
+  1. Enable <strong>Developer Mode</strong> by tapping on the
+  <strong>cogwheel icon</strong> in your user profile and navigating to
+  <strong>Settings</strong> &gt; <strong>Advanced</strong>. 
+</p>
+<p>2. Tap on emoji. </p>
+<p>3. Then click the three dot menu in the upper right corner.</p>
+<p>4. Select <strong>Copy Emoji Image Link</strong>.</p>
+<p>
+  5. Paste the link into the report form’s
   <strong>Content Details</strong> section.
 </p>
 <figure class="wysiwyg-image">
@@ -404,9 +394,13 @@
 <p>
   <span class="wysiwyg-font-size-large"><strong>Desktop</strong></span>
 </p>
-<p>1. Right-click on sticker.</p>
-<p>2. Select <strong>Message Details.</strong></p>
-<p>3. Select <strong>Copy Sticker Image Link</strong>.</p>
+<p>
+  1. Enable <strong>Developer Mode</strong> by pressing the cogwheel icon and
+  navigating to <strong>Settings</strong> &gt; <strong>Developer</strong>.
+</p>
+<p>2. Right-click on sticker.</p>
+<p>3. Select <strong>Message Details.</strong></p>
+<p>4. Select <strong>Copy Sticker Image Link</strong>.</p>
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 1444/1002"
@@ -438,9 +432,14 @@
 <p>
   <span class="wysiwyg-font-size-large"><strong>Mobile</strong></span>
 </p>
-<p>1. Tap on sticker.</p>
-<p>2. Select the three-dot menu.</p>
-<p>3. Select <strong>Copy Sticker Image Link</strong>.</p>
+<p>
+  1. Enable <strong>Developer Mode</strong> by tapping on the cogwheel icon in
+  your user profile and navigating to <strong>Settings</strong> &gt;
+  <strong>Advanced</strong>. 
+</p>
+<p>2. Tap on sticker.</p>
+<p>3. Select the three-dot menu.</p>
+<p>4. Select <strong>Copy Sticker Image Link</strong>.</p>
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 1253/892"
@@ -453,7 +452,7 @@
   The userflow of tapping on a sticker in the Discord mobile app, selecting the
   three-dot menu, and finding the Copy Sticker Image Link option.
 </h4>
-<p>4. Paste the link into the report form’s Content Details section</p>
+<p>5. Paste the link into the report form’s Content Details section</p>
 <h2 id="h_01KN37KAB1H7B4Y86QFWY19CJD">User Profiles (Avatars, Banners)</h2>
 <p>
   <span class="wysiwyg-font-size-large"><strong>Desktop</strong></span>
@@ -461,8 +460,7 @@
 <p>
   1. Enable <strong>Developer Mode</strong> by pressing the
   <strong>cogwheel icon</strong> and navigating to
-  <strong>Settings</strong> &gt; <strong>Advanced </strong>&gt;
-  <strong>Developer</strong>. 
+  <strong>Settings</strong> &gt; <strong>Developer</strong>. 
 </p>
 <div class="tip-box">
   <strong>Tip:</strong> You can also type “developer” in the Settings search
@@ -803,4 +801,12 @@
     rel="noopener noreferrer"
     >Wellbeing Hub</a
   >.
+</p>
+<p><strong>Q: Is there a limit to how many reports I can submit?</strong></p>
+<p>
+  <strong>A:</strong> We have rate limits in place to prevent mass reports of
+  the same content, and submitting too many reports in a short timeframe can
+  result in your reports being rejected. If you encounter an error message after
+  submitting several reports in a row, please wait 24 hours before submitting
+  additional reports.
 </p>
