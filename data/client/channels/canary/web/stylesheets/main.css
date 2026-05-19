@@ -19887,6 +19887,7 @@
   --mobile-emoji-row-emoji-line-height: 33px;
   --mobile-emoji-row-emoji-min-spacing: 12px;
   --mobile-emoji-row-emoji-size: 28px;
+  --mobile-gifting-settings-padding-horizontal: 0px;
   --mobile-group-avatar-size: 72px;
   --mobile-guild-bar-item-margin: 4px;
   --mobile-guild-bar-item-padding: 8px;
@@ -19947,6 +19948,7 @@
   --mobile-table-row-group-helper-text-style: text-sm/medium;
   --mobile-table-row-height: 60px;
   --mobile-table-row-icon-size: 32px;
+  --mobile-table-row-label-text-style: text-md/semibold;
   --mobile-table-row-padding: 12px;
   --mobile-user-profile-about-me-heading-text-style: text-sm/semibold;
   --mobile-user-row-label-line-height-android: 16px;
@@ -19973,7 +19975,6 @@
 .mobile-visual-refresh {
   --button-border-radius: 8px;
   --button-border-radius-lg: 12px;
-  --mobile-card-default-radius: 8px;
   --mobile-channel-details-nav-buttons-gap: 0px;
   --mobile-channel-details-nav-icon-button-size: lg;
   --mobile-channel-details-nav-icon-button-variant: icon-only;
@@ -20017,6 +20018,7 @@
   --mobile-emoji-row-emoji-line-height: 24px;
   --mobile-emoji-row-emoji-min-spacing: 8px;
   --mobile-emoji-row-emoji-size: 20px;
+  --mobile-gifting-settings-padding-horizontal: 16px;
   --mobile-group-avatar-size: 64px;
   --mobile-guild-bar-item-margin: 6px;
   --mobile-guild-folder-background-left: 8px;
@@ -20066,6 +20068,7 @@
   --mobile-table-row-content-height: 32px;
   --mobile-table-row-group-helper-text-style: text-sm/normal;
   --mobile-table-row-height: 56px;
+  --mobile-table-row-label-text-style: text-md/medium;
   --mobile-user-profile-about-me-heading-text-style: text-sm/medium;
   --mobile-user-row-label-line-height-ios: 20px;
   --mobile-voice-channel-user-limit-border-width: 1px;
@@ -20116,4 +20119,4 @@
   --channels-spine-offset-left: 28px;
 }
 
-/*# sourceMappingURL=56886.d0dd76e4632a1983.css.map*/
+/*# sourceMappingURL=56886.0e98657b70692463.css.map*/
