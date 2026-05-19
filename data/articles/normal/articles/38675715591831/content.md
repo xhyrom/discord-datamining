@@ -165,6 +165,17 @@
   of two options that can be selected.
 </h4>
 <p>3. Follow the steps in the form to file a report.</p>
+<figure class="wysiwyg-media">
+  <div data-oembed-url="https://youtu.be/fenELNSdWiA">
+    <iframe
+      src="//www.youtube-nocookie.com/embed/fenELNSdWiA"
+      frameborder="0"
+      allowfullscreen=""
+      allow="encrypted-media"
+      style="width: 100%; aspect-ratio: 16 / 9"
+    ></iframe>
+  </div>
+</figure>
 <h2 id="h_01KN36N6A2A5B1Z2KJWYN8GX7R">Required Information</h2>
 <p>
   We recognize that reporting non-consensual intimate imagery can be difficult.

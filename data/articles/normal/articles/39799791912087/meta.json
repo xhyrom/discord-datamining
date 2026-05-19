@@ -1,0 +1,28 @@
+{
+  "id": 39799791912087,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/39799791912087.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/39799791912087-Country-Region-Setting",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360002436411,
+  "created_at": "2026-04-16T16:49:42Z",
+  "name": "Country/Region Setting",
+  "title": "Country/Region Setting",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2026-05-14T17:07:46Z",
+  "user_segment_id": null,
+  "permission_group_id": 6449276657303,
+  "content_tag_ids": [],
+  "label_names": [
+    "country region setting",
+    "country setting",
+    "region setting"
+  ],
+  "user_segment_ids": []
+}
