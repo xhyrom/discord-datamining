@@ -1,0 +1,68 @@
+"use strict";
+(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
+  ["13172"],
+  {
+    1468(_, e, t) {
+      _.exports = {
+        e1: "clipContainer__841c8",
+        kL: "container__841c8",
+        eU: "replyBar__841c8",
+        _r: "threadSuggestionBar__841c8",
+        Qq: "text__841c8",
+        Fn: "replyLabel__841c8",
+        UU: "name__841c8",
+        o1: "actions__841c8",
+        Z4: "mentionButton__841c8",
+        mM: "mentionIcon__841c8",
+        me: "separator__841c8",
+        NG: "createThreadButton__841c8",
+      };
+    },
+    266599(_, e, t) {
+      _.exports = {
+        gM: "channelTextArea__74017",
+        mr: "highlighted__74017",
+        z3: "error__74017",
+        Rg: "focusRing__74017",
+        xx: "scrollableContainer__74017",
+        k6: "themedBackground__74017",
+        Tg: "textArea__74017",
+        h9: "channelTextAreaDisabled__74017",
+        Ri: "hasStackedBar__74017",
+        Ls: "inlineContainer__74017",
+        AH: "flushContainer__74017 inlineContainer__74017",
+        vW: "inner__74017",
+        BF: "innerDisabled__74017 inner__74017",
+        RL: "sansAttachButton__74017",
+        fk: "sansAttachButtonCreateThread__74017",
+        TZ: "sansAttachButtonCreatePost__74017",
+        $i: "sansAttachButtonUserProfileReply__74017",
+        g$: "attachButton__74017",
+        w5: "textAreaSlate__74017",
+        QI: "textAreaThreadCreation__74017",
+        AV: "profileBioInput__74017",
+        BW: "hiddenAppLauncherAnchor__74017",
+        GR: "overlayInlineReply__74017",
+        H$: "textAreaForPostCreation__74017",
+        $$: "textAreaForOverlayInlineReply__74017",
+        Yg: "textAreaForUserProfile__74017",
+        g_: "textAreaCustomGift__74017",
+        Rr: "textAreaDisabled__74017 textArea__74017",
+        Uo: "buttons__74017",
+        UD: "buttonContainer__74017",
+        x6: "button__74017",
+        Z8: "emojiButton__74017 button__74017",
+        KE: "stickerButton__74017",
+        Vq: "floatingBars__74017",
+        UW: "newMemberActionBar__74017",
+        MD: "stackedBars__74017",
+        BD: "expressionPickerPositionLayer__74017",
+        Wn: "textAreaMobileThemed__74017",
+        Ui: "announcementScrollableContainer__74017 scrollableContainer__74017",
+      };
+    },
+    630816(_, e, t) {
+      _.exports = { b: "closeButton_e876a8", u: "closeIcon_e876a8" };
+    },
+  },
+]);
