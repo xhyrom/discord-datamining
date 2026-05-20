@@ -1,8 +1,8 @@
 # Job Listing
 
-## Senior Tax Analyst
+## Senior Indirect Tax Analyst
 
-**Location:** San Francisco Bay Area
+**Location:** U.S. (Remote) or San Francisco, CA
 
 **Id:** 8476363002 <br/>
 **Internal Job Id:** 6385748002 <br/>
@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8476363002](https://discord.com/jobs/8476363002)
 
-**Updated At:** Wed, 06 May 2026 20:46:12 GMT
+**Updated At:** Wed, 20 May 2026 22:01:54 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re looking for a Senior Tax Analyst to join Discord’s global tax team and play a hands-on role in shaping our tax function as we scale. You’ll own work across corporate income tax, indirect tax, tax provisions, and global operations—partnering directly with Finance, Engineering, Legal, and external advisors. This is a high-visibility role where your contributions will directly influence how Discord navigates complex, multi-jurisdictional tax challenges during a period of rapid global growth.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re looking for a Senior Indirect Tax Analyst to join Discord’s global tax team and play a hands-on role in shaping our tax function as we scale. You’ll own work across corporate income tax, indirect tax, tax provisions, and global operations—partnering directly with Finance, Engineering, Legal, and external advisors. This is a high-visibility role where your contributions will directly influence how Discord navigates complex, multi-jurisdictional tax challenges during a period of rapid global growth.
 You’ll tackle novel tax questions that come with building a platform used by over 200 million people worldwide—from digital services taxes to multi-entity structuring—and have real ownership over the solutions.
 The ideal candidate is detail-oriented, collaborative, and intellectually curious, with a strong foundation in domestic and global indirect taxation and a desire to contribute to a high-impact tax function.
 What you'll be doing
