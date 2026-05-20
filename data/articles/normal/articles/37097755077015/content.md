@@ -113,8 +113,7 @@
 <p>To receive a Monthly Orbs Drop, you need:</p>
 <ul>
   <li data-list-item-id="e846d2cdf54407701000bd7f8fdebadb9">
-    An active paid Nitro subscription through the desktop app or browser (we're
-    working on bringing this to mobile app subscribers soon)
+    An active paid Nitro subscription through the desktop app or browser
   </li>
   <li data-list-item-id="e00f6c72b31c3eff27a8c981107d2fdc2">
     Your subscription must be in good standing (for example, subscription is not
@@ -235,9 +234,7 @@
 <p><strong>Q: Does the platform I subscribed to Nitro from matter?</strong></p>
 <p>
   A: Yes, the monthly Orbs drop feature is only available to Nitro members who
-  subscribed through the desktop app, browser, or mobile web. Subscriptions
-  through the Discord mobile app aren't eligible yet, but we're actively working
-  to bring Monthly Orbs your way soon!
+  subscribed through the desktop app, browser, or mobile web. 
 </p>
 <p><strong>Q: What happens to my Orbs if I cancel my subscription?</strong></p>
 <p>
