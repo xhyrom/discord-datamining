@@ -10,13 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8552362002](https://discord.com/jobs/8552362002)
 
-**Updated At:** Thu, 21 May 2026 18:16:29 GMT
+**Updated At:** Thu, 21 May 2026 20:46:02 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is temporary and US-based only.&amp;nbsp;
 Discord's Talent team is seeking a strategic Technical Sourcer to support our most complex engineering roles by activating passive candidates. In this role, you'll partner directly with engineering leadership to conduct market intelligence, size talent pools, and execute sophisticated sourcing strategies for hard-to-fill technical roles.&amp;nbsp;
 You'll be responsible for translating technical requirements into targeted sourcing approaches, building robust candidate pipelines through deep market analysis and personalized outreach, and serving as a trusted advisor on talent availability and competitive dynamics. Success in this role requires a consultative mindset, strong analytical capabilities, and proven expertise in activating passive talent in highly constrained technical markets.
-Key Responsibilities
+What you will be doing:
 
 Partner strategically with hiring managers and technical leaders to deeply understand role requirements, technical stack nuances, team dynamics, and ideal candidate profiles, translating technical requirements into effective sourcing criteria.&amp;nbsp;
 Conduct comprehensive total addressable market (TAM) research to size talent pools, identify hiring feasibility, and inform realistic hiring timelines for niche technical roles.&amp;nbsp;
@@ -28,7 +28,7 @@ Own candidate experience from initial outreach through recruiter handoff, mainta
 Represent Discord's engineering brand at technical conferences, meetups, and industry events, building long-term relationships and nurturing talent communities for sustained pipeline development
 Practice strong data hygiene across our recruiting systems and maintain rigorous pipeline health metrics including interested response rates, activation rate, next step pass-through rate, and source effectiveness, using data to continuously optimize sourcing approaches and demonstrate ROI.&amp;nbsp;
 
-Must Haves:
+What you should have:
 
 5+ years of experience in technical sourcing or recruitment, preferably in a high-growth tech company environment, on job profiles such as distributed systems and product engineering.
 Demonstrated success hiring senior, staff, and principal-level engineers, and engineering managers in competitive, constrained talent markets&amp;nbsp;
@@ -41,7 +41,8 @@ Strong pipeline management capabilities with the ability to rigorously prioritiz
 A proven track record of successfully sourcing candidates in areas such as developers, full-stack engineers, and feature development&amp;nbsp;
 Data-driven mindset with ability to track, analyze, and report on key sourcing metrics (interested response rates, activation rates, conversion ratios, source effectiveness) and translate insights into actionable strategy adjustments
 
-The US base salary range for this temporary full-time position is $132,000 to $149,000 + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and, do not include benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+The US base salary range for this temporary full-time position is $132,000 to $149,000 + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and, do not include benefits.
+#LI-RemoteWhy Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Discord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 
