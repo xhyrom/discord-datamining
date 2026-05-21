@@ -1,0 +1,43 @@
+.root_c5bcbe {
+  height: 100%;
+  width: 100%;
+}
+.root_c5bcbe.pipMode_c5bcbe {
+  transition: height 0.2s ease-in-out;
+  width: 320px;
+}
+.root_c5bcbe.pipModeShort_c5bcbe {
+  height: 180px;
+}
+.root_c5bcbe.pipModeTall_c5bcbe {
+  height: 410px;
+}
+.root_c5bcbe.hidden_c5bcbe {
+  max-height: 0;
+  transition: none;
+  width: 0;
+}
+.iframe_c5bcbe {
+  height: 100%;
+  min-height: 2px;
+  min-width: 2px;
+  width: 100%;
+}
+.iframe_c5bcbe.pipModeShort_c5bcbe {
+  height: 180px;
+}
+.iframe_c5bcbe.pipModeTall_c5bcbe {
+  height: 410px;
+}
+.pipNonInteractive_c5bcbe {
+  pointer-events: none;
+}
+.clickShield_c5bcbe {
+  inset: 0;
+  position: absolute;
+}
+.multiPIPMode_c5bcbe {
+  margin-top: 8px;
+}
+
+/*# sourceMappingURL=83815.6c619903ea91db44.css.map*/
