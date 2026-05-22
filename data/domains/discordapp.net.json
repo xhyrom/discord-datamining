@@ -1,0 +1,17 @@
+{
+  "subdomains": [
+    "media",
+    "images",
+    "images-ext-1",
+    "images-ext-2",
+    "dl",
+    "symbols",
+    "dl2",
+    "client-metrics",
+    "dl-canary",
+    "dl-development",
+    "dl-ptb",
+    "dl-game-sdk"
+  ],
+  "subdomain_count": 12
+}
