@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/artifact-keeper",
   "created_at": "2026-04-17T17:30:38Z",
   "homepage": "https://artifactkeeper.com",
-  "size": 17166,
+  "size": 17313,
   "language": "Rust",
   "has_issues": false,
   "has_projects": false,
