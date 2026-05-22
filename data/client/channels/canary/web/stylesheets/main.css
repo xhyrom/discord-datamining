@@ -19837,6 +19837,7 @@
   --mobile-channel-details-nav-icon-button-size: sm;
   --mobile-channel-details-nav-icon-button-variant: tertiary;
   --mobile-channel-item-radius: 12px;
+  --mobile-channel-list-subtitle-text-style: text-xs/medium;
   --mobile-channel-list-title-text-style: redesign/heading-18/bold;
   --mobile-channel-name-channel-border-width: 1px;
   --mobile-channel-name-channel-icon-radius: 12px;
@@ -19921,6 +19922,7 @@
   --mobile-media-keyboard-button-padding: 0px;
   --mobile-media-keyboard-button-text-color-active: text-default;
   --mobile-media-keyboard-button-text-variant: text-xs/semibold;
+  --mobile-media-keyboard-send-vertical-inset: 0px;
   --mobile-messages-header-button-gap: 8px;
   --mobile-messages-header-button-layout: row;
   --mobile-messages-header-padding-bottom: 16px;
@@ -19979,6 +19981,7 @@
   --mobile-channel-details-nav-icon-button-size: lg;
   --mobile-channel-details-nav-icon-button-variant: icon-only;
   --mobile-channel-item-radius: 8px;
+  --mobile-channel-list-subtitle-text-style: text-sm/medium;
   --mobile-channel-list-title-text-style: heading-lg/semibold;
   --mobile-channel-name-channel-border-width: 0px;
   --mobile-channel-name-channel-icon-radius: 8px;
@@ -20046,6 +20049,7 @@
   --mobile-media-keyboard-button-padding: 4px;
   --mobile-media-keyboard-button-text-color-active: text-default;
   --mobile-media-keyboard-button-text-variant: text-xs/medium;
+  --mobile-media-keyboard-send-vertical-inset: 8px;
   --mobile-messages-header-button-gap: 12px;
   --mobile-messages-header-button-layout: row-reverse;
   --mobile-messages-header-padding-bottom: 12px;
@@ -20119,4 +20123,4 @@
   --channels-spine-offset-left: 28px;
 }
 
-/*# sourceMappingURL=56886.0e98657b70692463.css.map*/
+/*# sourceMappingURL=56886.5e5f7381e7c61ff9.css.map*/
