@@ -1,0 +1,213 @@
+.rewardIndicatorContainer_cc3943 {
+  --custom-stroke-width: 3px;
+  align-items: center;
+  background-color: var(--progressbar-track-background);
+  border-radius: 50%;
+  display: flex;
+  height: var(--custom-indicator-size);
+  justify-content: center;
+  padding: var(--custom-stroke-width);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--custom-indicator-size);
+  will-change: transform;
+}
+.rewardIndicatorContainerGreenFill_cc3943 {
+  --custom-bottom-layer-color: hsla(0, 0%, 100%, 0.4);
+  --custom-transparent-bottom-color: hsla(0, 0%, 100%, 0);
+  --custom-top-layer-color: rgba(98, 196, 101, 0.75);
+  --custom-transparent-top-color: rgba(87, 188, 90, 0);
+  background-image: conic-gradient(
+      from 270deg at 50% 50%,
+      var(--custom-top-layer-color) calc(var(--custom-indicator-fill) * 1.8deg),
+      var(--custom-transparent-top-color)
+        calc(var(--custom-indicator-fill) * 1.8deg),
+      var(--custom-transparent-top-color)
+        calc(1turn - var(--custom-indicator-fill) * 1.8deg),
+      var(--custom-top-layer-color)
+        calc(1turn - var(--custom-indicator-fill) * 1.8deg)
+    ),
+    conic-gradient(
+      from 270deg at 50% 50%,
+      var(--custom-bottom-layer-color)
+        calc(var(--custom-indicator-fill) * 1.8deg),
+      var(--custom-transparent-bottom-color)
+        calc(var(--custom-indicator-fill) * 1.8deg),
+      var(--custom-transparent-bottom-color)
+        calc(1turn - var(--custom-indicator-fill) * 1.8deg),
+      var(--custom-bottom-layer-color)
+        calc(1turn - var(--custom-indicator-fill) * 1.8deg)
+    );
+}
+.rewardIndicatorContainerWhiteFill_cc3943 {
+  background-image: conic-gradient(
+    from 270deg at 50% 50%,
+    var(--white) calc(var(--custom-indicator-fill) * 1.8deg),
+    transparent calc(var(--custom-indicator-fill) * 1.8deg),
+    transparent calc(1turn - var(--custom-indicator-fill) * 1.8deg),
+    var(--white) calc(1turn - var(--custom-indicator-fill) * 1.8deg)
+  );
+}
+.rewardIndicatorContainer_cc3943:after {
+  background-color: var(--black);
+  border-radius: 50%;
+  content: "";
+  inset: var(--custom-stroke-width);
+  position: absolute;
+}
+.rewardIconWrapper_cc3943 {
+  border-radius: 50%;
+  inset: var(--custom-stroke-width);
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+}
+.rewardIconWrapper_cc3943,
+.rewardTooltip_cc3943 {
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+.rewardTooltip_cc3943 {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 99px;
+  bottom: calc(100% + 6px);
+  gap: 10px;
+  inset-inline-start: 50%;
+  opacity: 0;
+  padding: 8px 16px;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: opacity 0.15s ease-in-out;
+  white-space: nowrap;
+  z-index: 10;
+}
+.rewardIndicatorContainer_cc3943:has(:focus-visible) .rewardTooltip_cc3943,
+.rewardIndicatorContainer_cc3943:hover .rewardTooltip_cc3943 {
+  opacity: 1;
+}
+.rewardTooltipDivider_cc3943 {
+  background: hsla(0, 0%, 100%, 0.12);
+  height: 10px;
+  width: 2px;
+}
+.questGreen__3ea4b {
+  --custom-timeline-fill-bg: linear-gradient(90deg, #f5fef6, #d1f9d3);
+  --custom-timeline-glow-shadow: -2px 0 12px 2px rgba(18, 201, 25, 0.8),
+    0 0 33px 2px #fff;
+}
+.questWhite__3ea4b {
+  --custom-timeline-fill-bg: var(--white);
+  --custom-timeline-glow-blend-mode: soft-light;
+  --custom-timeline-glow-shadow: -2px 0 14px 3px transparent,
+    -5px 0 22px 0 transparent, 0 0 27.8px 1px #fff;
+}
+.overlayPadding__58e02 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  pointer-events: auto;
+}
+.transcriptPanel__58e02 {
+  --custom-transcript-top: 80px;
+  --custom-transcript-bottom: 36px;
+}
+.helper_fd2e49 {
+  align-items: center;
+  background: var(--background-base-lowest);
+  border: 1px solid hsla(0, 0%, 100%, 0.04);
+  border-radius: 8px;
+  box-shadow: var(--shadow-low);
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+}
+.infoFilledIcon_fd2e49 {
+  color: var(--text-default);
+  margin-inline-end: 8px;
+}
+.header_feae96 {
+  align-items: center;
+  background: var(--background-base-lowest);
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  gap: var(--space-8);
+  height: 48px;
+  justify-content: space-between;
+  padding: 0 var(--space-12);
+}
+.questInfo_feae96 {
+  flex-shrink: 1;
+  min-width: 0;
+}
+.questIcon_feae96 {
+  border-radius: var(--radius-sm);
+  height: 32px;
+  width: 32px;
+}
+.questIconContainer_feae96 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+.progressContainer_feae96 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: var(--space-8);
+}
+.progressBar_feae96 {
+  background-color: var(--opacity-12);
+  flex: 1;
+  height: 4px;
+  overflow: visible;
+}
+.progressBar_feae96,
+.progressBarFill_feae96 {
+  border-radius: var(--radius-sm);
+  position: relative;
+}
+.progressBarFill_feae96 {
+  background-image: linear-gradient(90deg, hsla(229, 7%, 45%, 0.18), #44fc7e);
+  height: 100%;
+  transition: width 0.7s;
+}
+.progressBarGlowContainer_feae96 {
+  position: absolute;
+  top: 4px;
+  transition: width 0.7s;
+}
+.progressBarGlow_feae96 {
+  background: linear-gradient(90deg, transparent, #44fc7e);
+  border-radius: 20%;
+  filter: blur(4px);
+  height: 8px;
+  inset-inline-end: -4px;
+  max-width: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  width: 60%;
+}
+.questProgress_feae96 {
+  max-width: 470px;
+}
+.full-motion .transition__5fbe9 {
+  transition: transform 0.2s ease;
+}
+.directionDown__5fbe9 {
+  transform: rotate3d(0, 0, -1, 0deg);
+}
+.directionRight__5fbe9 {
+  transform: rotate3d(0, 0, -1, 90deg);
+}
+.directionLeft__5fbe9 {
+  transform: rotate3d(0, 0, -1, -90deg);
+}
+.directionUp__5fbe9 {
+  transform: rotate3d(0, 0, -1, 180deg);
+}
+
+/*# sourceMappingURL=31430.35c26e0da05b2230.css.map*/
