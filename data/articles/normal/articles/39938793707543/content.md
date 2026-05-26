@@ -103,6 +103,17 @@
   actually use. The program is designed to grow and evolve — we'll be updating
   the partners and offers over time, and what's available may change.
 </p>
+<div class="tip-box">
+  If you are an eligible Xbox Game Pass subscriber, you get access to 3 Discord
+  Nitro perks at no extra cost. For more info, check out this Help Center
+  article:
+  <a
+    href="https://support.discord.com/hc/articles/40387273783831"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Taste of Nitro for Xbox Game Pass Subscribers</a
+  >.
+</div>
 <p>
   Individual perks have their own eligibility conditions, redemption
   requirements, and availability limitations, which you'll find described in

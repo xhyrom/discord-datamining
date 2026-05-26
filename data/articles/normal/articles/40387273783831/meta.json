@@ -1,0 +1,29 @@
+{
+  "id": 40387273783831,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/40387273783831.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/40387273783831-Taste-of-Nitro-for-Xbox-Game-Pass-Subscribers",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360002436391,
+  "created_at": "2026-05-11T16:42:12Z",
+  "name": "Taste of Nitro for Xbox Game Pass Subscribers",
+  "title": "Taste of Nitro for Xbox Game Pass Subscribers",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2026-05-26T16:01:47Z",
+  "user_segment_id": null,
+  "permission_group_id": 6449276657303,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "Xbox",
+    "Nitro perks",
+    "xbox game pass"
+  ],
+  "user_segment_ids": []
+}
