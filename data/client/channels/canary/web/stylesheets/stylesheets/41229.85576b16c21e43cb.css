@@ -1,0 +1,140 @@
+.popover__2ee1b {
+}
+.popoverGradientWrapper__2ee1b {
+}
+.popoverContentWithGradient__2ee1b {
+}
+.closeButton__2ee1b {
+}
+.header__2ee1b {
+  gap: 2px;
+  margin-bottom: 0;
+  margin-top: var(--space-20);
+}
+.headerWithBadge__2ee1b {
+}
+.badgeContainer__2ee1b {
+}
+.content__2ee1b {
+}
+.footer__2ee1b {
+}
+.footerText__2ee1b {
+}
+.footerLink__2ee1b {
+}
+.actionBar__2ee1b {
+  margin-top: var(--space-16);
+}
+.actions__2ee1b {
+}
+.multistepIndicator__2ee1b {
+}
+.multistepActionLayout__2ee1b {
+}
+.caretIcon__2ee1b {
+}
+.graphic__2ee1b {
+  margin-bottom: calc(var(--space-6) * -1);
+  margin-top: 0;
+}
+.graphic--sm__2ee1b {
+}
+.graphic--md__2ee1b {
+}
+.graphic--lg__2ee1b {
+}
+.graphic--video__2ee1b {
+}
+.title__2ee1b {
+  color: var(--text-strong);
+  font-family: var(--font-display-marketing-header);
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  width: 100%;
+}
+.headerBody__2ee1b {
+  width: 90%;
+}
+.caretHoverable__2ee1b {
+  pointer-events: auto;
+}
+.tooltipContainer__7bebc {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 8px 4px;
+}
+.tooltipWordmarkContainer__7bebc {
+  margin-top: 8px;
+}
+.tooltipDescription_cd30d9 {
+  margin-top: var(--space-4);
+}
+.tooltipWordmark_cd30d9 {
+  color: var(--text-muted);
+}
+.tooltipWordmark_d4ff11 {
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.orbBadgeAsset_d4ff11 {
+  width: 64px;
+}
+.orbHeaderWithSpacing_d4ff11 {
+  margin-bottom: 12px;
+}
+.orbSubtext_d4ff11 {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+.container__8061a {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin: 1px 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container__8061a:empty {
+  visibility: hidden;
+}
+.badge__8061a {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  filter: saturate(var(--saturation-factor, 1));
+  height: 20px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+  pointer-events: none;
+  width: 20px;
+}
+.badge__8061a:active {
+  opacity: 0.8;
+}
+.badge__8061a:before {
+  background-color: var(--user-profile-border);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=41229.85576b16c21e43cb.css.map*/
