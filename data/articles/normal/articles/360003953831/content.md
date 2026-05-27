@@ -212,7 +212,18 @@
     </li>
   </ul>
 </div>
-<h1 id="h_01JWW0XJY184XBXFR0HH4JGGRM">
+<div class="book-box">
+  If you are an eligible Xbox Game Pass subscriber, you get access to 3 Discord
+  Nitro perks at no extra cost. For more info, check out this Help Center
+  article:
+  <a
+    href="https://support.discord.com/hc/articles/40387273783831"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Taste of Nitro for Xbox Game Pass Subscribers</a
+  >.
+</div>
+<h1 id="h_01KRY7J8XT1RMQYTQVP6FF97JX">
   How To Link Your Discord And Xbox Accounts
 </h1>
 <div class="tip-box">
