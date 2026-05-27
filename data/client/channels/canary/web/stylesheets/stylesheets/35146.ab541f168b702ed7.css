@@ -1,0 +1,62 @@
+.ping__06d62 {
+  color: var(--text-muted);
+  display: block;
+  flex: 0 0 auto;
+  height: 16px;
+  margin-inline: 0 4px;
+  width: 16px;
+}
+.ping__06d62.largePing__06d62 {
+  background: var(--background-mod-muted);
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px var(--border-muted);
+  height: 18px;
+  margin-inline-end: 8px;
+  padding: 7px;
+  width: 18px;
+}
+.clickablePing__06d62 {
+  cursor: pointer;
+}
+.rtcConnectionStatus__06d62 {
+  align-items: center;
+  display: flex;
+  height: 32px;
+  overflow: hidden;
+  padding-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rtcConnectionStatusLabel__06d62 {
+  font-weight: var(--font-weight-semibold);
+  height: 20px;
+  margin-top: -1px;
+}
+.rtcConnectionStatusConnected__06d62 {
+  color: var(--text-feedback-positive);
+}
+.rtcConnectionStatusConnecting__06d62 {
+  color: var(--text-feedback-warning);
+}
+.rtcConnectionStatusError__06d62 {
+  color: var(--text-feedback-critical);
+}
+.rtcConnectionQualityFine__06d62 .largePing__06d62 {
+  background: var(--background-feedback-positive);
+}
+.rtcConnectionQualityAverage__06d62 .largePing__06d62 {
+  background: var(--background-feedback-warning);
+}
+.rtcConnectionQualityBad__06d62 .largePing__06d62 {
+  background: var(--background-feedback-critical);
+}
+.labelWrapper__06d62 {
+  overflow: hidden;
+}
+.rtcConnectionStatusWrapper__06d62 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+/*# sourceMappingURL=35146.ab541f168b702ed7.css.map*/
