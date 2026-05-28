@@ -485,11 +485,11 @@
   >
 </p>
 <p>
-  A: Before authorizing a game, you'll see a clear screen outlining the
-  permissions you’re granting the game and the data that you’re authorizing to
-  be shared. For more information about the game’s data practices, please review
-  its terms of service and privacy policy. Any data that Discord receives will
-  be treated like other data shared on Discord consistent with Discord's
+  A: Before authorizing a game, you'll see a screen outlining the permissions
+  you’re granting the game and the data that you’re authorizing to be shared.
+  For more information about the game’s data practices, please review its terms
+  of service and privacy policy. Any data that Discord receives will be treated
+  like other data shared on Discord consistent with Discord's
   <a href="http://discord.com/privacy" target="_blank" rel="noopener noreferrer"
     >Privacy Policy</a
   >.
