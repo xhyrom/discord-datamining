@@ -1,9 +1,9 @@
 {
-  "subdomain_count": 38,
   "subdomains": [
     "o12.ptr5556",
     "staging-invite",
     "admin-stg",
+    "rtc-sfu-finder",
     "rtc-discovery",
     "staging-images-2",
     "grafana-data-prd",
@@ -11,9 +11,12 @@
     "staging-media-2",
     "staging-media-1",
     "staging-images",
+    "staging-gateway-k8s-d",
     "latency",
+    "staging-gateway-k8s-c",
     "static-edge.staging",
     "staging-gateway-us-east1-b",
+    "staging-gateway-k8s-b",
     "datahub-stg",
     "tracker",
     "staging-gift",
@@ -39,5 +42,6 @@
     "staging-images-1",
     "otelcol",
     "datahub-prd"
-  ]
+  ],
+  "subdomain_count": 42
 }
