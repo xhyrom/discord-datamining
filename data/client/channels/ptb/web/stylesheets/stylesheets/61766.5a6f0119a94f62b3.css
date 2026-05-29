@@ -1,0 +1,109 @@
+.container__2994f {
+  background: var(--background-surface-high);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-high);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  padding: var(--space-12);
+  width: 304px;
+}
+.header__2994f {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--space-8);
+  padding-inline-start: var(--space-8);
+}
+.closeButton__2994f {
+  color: var(--interactive-text-default);
+  cursor: pointer;
+}
+.body__2994f {
+  align-items: center;
+  display: flex;
+  gap: var(--space-12);
+}
+.helper_fd2e49 {
+  align-items: center;
+  background: var(--background-base-lowest);
+  border: 1px solid hsla(0, 0%, 100%, 0.04);
+  border-radius: 8px;
+  box-shadow: var(--shadow-low);
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+}
+.infoFilledIcon_fd2e49 {
+  color: var(--text-default);
+  margin-inline-end: 8px;
+}
+.header_feae96 {
+  align-items: center;
+  background: var(--background-base-lowest);
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  gap: var(--space-8);
+  height: 48px;
+  justify-content: space-between;
+  padding: 0 var(--space-12);
+}
+.questInfo_feae96 {
+  flex-shrink: 1;
+  min-width: 0;
+}
+.questIcon_feae96 {
+  border-radius: var(--radius-sm);
+  height: 32px;
+  width: 32px;
+}
+.questIconContainer_feae96 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+.progressContainer_feae96 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: var(--space-8);
+}
+.progressBar_feae96 {
+  background-color: var(--opacity-12);
+  flex: 1;
+  height: 4px;
+  overflow: visible;
+}
+.progressBar_feae96,
+.progressBarFill_feae96 {
+  border-radius: var(--radius-sm);
+  position: relative;
+}
+.progressBarFill_feae96 {
+  background-image: linear-gradient(90deg, hsla(229, 7%, 45%, 0.18), #44fc7e);
+  height: 100%;
+  transition: width 0.7s;
+}
+.progressBarGlowContainer_feae96 {
+  position: absolute;
+  top: 4px;
+  transition: width 0.7s;
+}
+.progressBarGlow_feae96 {
+  background: linear-gradient(90deg, transparent, #44fc7e);
+  border-radius: 20%;
+  filter: blur(4px);
+  height: 8px;
+  inset-inline-end: -4px;
+  max-width: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  width: 60%;
+}
+.questProgress_feae96 {
+  max-width: 470px;
+}
+
+/*# sourceMappingURL=61766.5a6f0119a94f62b3.css.map*/

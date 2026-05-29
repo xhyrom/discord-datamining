@@ -1,0 +1,379 @@
+.offerDetailContainer__11ee8 {
+  background: var(--background-mod-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-16);
+}
+.legalContainer__11ee8 {
+  margin: var(--space-16) 0;
+}
+.spinnerContainer__11ee8 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.table_fda3e4 {
+  background-color: var(--background-mod-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: var(--space-12);
+}
+.table_fda3e4.premiumRebrand_fda3e4 {
+  border: 1px solid var(--border-muted);
+}
+.table_fda3e4.hasError_fda3e4 {
+  margin-bottom: var(--space-16);
+}
+.flex_fda3e4 {
+  display: flex;
+}
+.header_fda3e4 {
+  color: var(--interactive-text-active);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 8px;
+}
+.header_fda3e4,
+.rowBase_fda3e4 {
+  font-size: 16px;
+  line-height: 20px;
+}
+.rowBase_fda3e4 {
+  display: flex;
+  font-weight: var(--font-weight-medium);
+}
+.rowBase_fda3e4:not(:last-child) {
+  margin-bottom: 8px;
+}
+.row_fda3e4 {
+  align-items: flex-start;
+  color: var(--interactive-text-default);
+  justify-content: space-between;
+}
+.row_fda3e4.canceled_fda3e4 {
+  color: var(--text-feedback-critical);
+}
+.rowAmount_fda3e4 {
+  align-items: center;
+  display: flex;
+  white-space: nowrap;
+}
+.rowLabel_fda3e4 {
+  margin-inline-end: 10px;
+}
+.rowPercentDiscount_fda3e4 {
+  background-color: var(--green-360);
+  border-radius: 2px;
+  color: var(--white);
+  font-size: 12px;
+  line-height: 16px;
+  margin-inline-start: 8px;
+  padding: 2px 4px;
+}
+.rowDiscountOriginalPrice_fda3e4 {
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  line-height: 16px;
+  margin: -4px 0 4px;
+  text-align: end;
+  text-decoration: line-through;
+}
+.entitlementDiscountRow_fda3e4 {
+  color: var(--text-feedback-positive);
+  justify-content: flex-end;
+}
+.divider_fda3e4 {
+  background-color: var(--border-muted);
+  height: 1px;
+  margin: 16px 0;
+}
+.divider_fda3e4.negativeMarginTop_fda3e4 {
+  margin-top: -16px;
+}
+.divider_fda3e4.negativeMarginBottom_fda3e4 {
+  margin-bottom: -4px;
+}
+.dividerInvisible_fda3e4 {
+  background-color: transparent;
+}
+.dividerExtended_fda3e4 {
+  height: 4px;
+  margin-inline: -16px;
+}
+.totalRow_fda3e4 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.totalLabel_fda3e4 {
+  color: var(--interactive-text-default);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+}
+.totalAmount_fda3e4,
+.totalLabel_fda3e4 strong {
+  color: var(--interactive-text-active);
+  font-weight: var(--font-weight-semibold);
+}
+.finePrint_fda3e4 {
+  color: var(--text-default);
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  line-height: 16px;
+  margin: 16px 0;
+}
+.annualPlanDiscountPriceSection_fda3e4 {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+.annualPlanOptionDiscount_fda3e4 {
+  background-color: var(--green-360);
+  border-radius: 8px;
+  font-weight: var(--font-weight-semibold);
+  margin-top: 2px;
+  margin-inline-end: 8px;
+  max-height: 16px;
+  padding: 0 6px;
+  position: relative;
+}
+.annualDiscountValues_fda3e4 {
+  display: flex;
+  flex-direction: column;
+}
+.trialEndPrice_fda3e4 {
+  text-align: end;
+}
+.applicationIcon__6dec9 {
+  border-radius: 6px;
+}
+.cardContainer__47729 {
+  align-items: center;
+  background-position: 50%;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.cardContainer__47729.square__47729 {
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
+}
+.cardContainerRelative__47729 {
+  position: relative;
+}
+.cardContainerAbsolute__47729 {
+  position: absolute;
+}
+.cardBackgroundImage__47729 {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  inset-inline: 0;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+}
+.skuImage__47729 {
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  z-index: 1;
+}
+.skuImage__47729.square__47729 {
+  aspect-ratio: 1;
+  border-radius: var(--radius-xs);
+}
+.container__42d0d {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.invoiceTable__25766 {
+  margin-bottom: 16px;
+}
+.invoiceRow__25766 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  gap: 10px;
+  line-height: 20px;
+}
+.invoiceRow__25766:not(:last-child) {
+  margin-bottom: 8px;
+}
+.invoiceTagColumn__25766 {
+  flex: 1;
+}
+.invoiceDescriptionColumn__25766 {
+  flex: 5;
+}
+.invoiceRegularText__25766 {
+  color: var(--text-strong);
+}
+.invoiceDiscountText__25766 {
+  color: var(--text-feedback-positive);
+}
+.invoiceDiscountTag__25766 {
+  background-color: var(--green-360);
+  border-radius: 12px;
+  display: inline-block;
+  padding: 2px 6px;
+  position: relative;
+  text-align: center;
+}
+.totalRow__25766 {
+  font-weight: 700;
+}
+.slayerStorefrontProductPreview__25766 {
+  box-sizing: border-box;
+  height: 48px;
+  width: 48px;
+}
+.invoiceProductPreviewImage__25766 {
+  max-height: 64px;
+  max-width: 64px;
+}
+.rentalDescription__25766 {
+  color: var(--text-muted);
+  display: block;
+  margin-top: 4px;
+}
+.container_da8ac7 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-12);
+  width: 100%;
+}
+.content_da8ac7 {
+  flex: 1;
+  min-width: 0;
+}
+.bottomSubText_da8ac7 {
+  margin-top: var(--space-12);
+}
+.header_da8ac7 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.headerIcon_da8ac7 {
+  border-radius: var(--radius-xs);
+  height: 16px;
+  width: 16px;
+}
+.details_da8ac7 {
+  align-self: center;
+  flex: 1;
+  gap: var(--space-24);
+}
+.details_da8ac7,
+.text_da8ac7 {
+  display: flex;
+  min-width: 0;
+}
+.text_da8ac7 {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-4);
+  justify-content: space-between;
+}
+.capitalizedText_da8ac7 {
+  text-transform: capitalize;
+}
+.targetIcon_da8ac7 {
+  display: inline-block;
+  height: 16px;
+  margin-inline: 2px 1px;
+  vertical-align: text-bottom;
+  width: 16px;
+}
+.priceContainer_da8ac7 {
+  align-items: flex-end;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.currentPrice_da8ac7,
+.priceContainer_da8ac7 {
+  display: flex;
+  gap: var(--space-4);
+}
+.currentPrice_da8ac7 {
+  align-items: center;
+}
+.strikethroughPrice_da8ac7 {
+  text-decoration: line-through;
+}
+.originalPrice_da8ac7 {
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  white-space: nowrap;
+}
+.iconDefaultBackground_da8ac7 {
+  background: var(--background-mod-subtle);
+}
+.icon_da8ac7 {
+  align-self: flex-start;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-md);
+  height: 64px;
+  overflow: clip;
+  position: relative;
+  width: 64px;
+}
+.icon_da8ac7,
+.icon_da8ac7 .expressiveGradient_da8ac7 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.icon_da8ac7 .expressiveGradient_da8ac7 {
+  inset: 0;
+  position: absolute;
+}
+.icon_da8ac7 .nitroGradient_da8ac7 {
+  display: grid;
+  place-items: center;
+}
+.icon_da8ac7 .nitroGradientLayer_da8ac7 {
+  grid-area: 1/1;
+}
+.icon_da8ac7 .nitroCredit_da8ac7 {
+  align-items: center;
+  background: linear-gradient(322deg, #e978e6 6.26%, #2f3ebb 79.77%);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+}
+.icon_da8ac7 .nitroCredit_da8ac7 svg {
+  filter: drop-shadow(0 4px 10px var(--shadow-low-hover));
+}
+.icon_da8ac7 .nitroBasic_da8ac7 {
+  align-items: center;
+  background: var(--background-mod-normal);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+}
+.bundleMiniStaticPreview_da8ac7 {
+  height: 100%;
+  width: 100%;
+}
+.purchaseItemImage_da8ac7 {
+  height: 64px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 64px;
+}
+
+/*# sourceMappingURL=741.2e7a4e35aa523437.css.map*/
