@@ -299,9 +299,20 @@
 <p>
   A: Generally, purchases in Game Shops are non-refundable. However, if you're
   unable to claim the in-game item on a supported platform, and you attempt to
-  claim the item within the 14-day claim period, Discord will attempt to
-  automatically process a refund. Check the game-specific sections below for
-  which platforms are supported.
+  claim the item within the 14-day claim period, you can reach out to Discord
+  support to request a refund:
+  <a
+    href="https://dis.gd/billing"
+    target="_blank"
+    rel="noopener noreferrer"
+    tabindex="0"
+    title="https://dis.gd/billing"
+    role="link"
+    >https://dis.gd/billing</a
+  >. 
+</p>
+<p>
+  Check the game-specific sections below for which platforms are supported. 
 </p>
 <p><strong>Q: How do I see what items I've purchased?</strong> </p>
 <p>
