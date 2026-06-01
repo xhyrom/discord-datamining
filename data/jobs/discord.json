@@ -2565,7 +2565,7 @@
         }
       ],
       "id": 8530692002,
-      "updated_at": "2026-05-13T11:28:00-04:00",
+      "updated_at": "2026-06-01T12:37:21-04:00",
       "requisition_id": "R-107272",
       "title": "Senior Product Manager, Ad Formats",
       "company_name": "Discord",
@@ -2583,9 +2583,9 @@
       ],
       "offices": [
         {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
           "child_ids": [],
           "parent_id": null
         }
