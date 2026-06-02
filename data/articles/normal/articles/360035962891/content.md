@@ -102,6 +102,26 @@
     </li>
   </ul>
 </div>
+<div class="exp-box">
+  <strong>Important:</strong> Gifting Badge is currently an experiment available
+  to select users. The more you gift
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360020877112-Nitro-Gifting"
+    >Nitro</a
+  >
+  or items from the
+  <a
+    href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ#h_01J4T4Z6G3GCXP9S76GKGBR98G"
+    >Shop</a
+  >, the more your badge will evolve.<br /> 
+  <img
+    class="center-image"
+    src="https://support.discord.com/hc/article_attachments/40923306466199"
+    alt="Gifting Badge evolution"
+    width="359"
+    height="386"
+  />
+</div>
 <h1 class="wysiwyg-text-align-left" id="h_01GM67J1C84KT7YPDK0GP3M2PC">
   <strong>Common Profile Badges</strong>
 </h1>
