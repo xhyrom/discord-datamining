@@ -182,6 +182,10 @@
   are deleted quickly, and the video selfie used for facial age estimation never
   leaves your device.
 </p>
+<div class="info-box">
+  <strong>Note: </strong>We're currently testing a few additional age assurance
+  methods, so you may see more options than what’s listed below.
+</div>
 <p>The age assurance process is the same, regardless of how it's triggered:</p>
 <h2 id="h_01KBKGJ94MPJS9SGFC1H4Z4FZQ">Step 1: Start Age Assurance</h2>
 <p>

@@ -1,24 +1,33 @@
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li data-list-item-id="e6c9adc71b6001c19a46e986d7b654f25">
       <a href="#h_01J4M00QYZN32G2KQM21D4F5ZF">What is a File Attachment?</a>
     </li>
-    <li><a href="#h_01J4M00QYZTXY5FV9KDWT05H5T">How to Attach Files</a></li>
-    <li>
+    <li data-list-item-id="e04aff824135cc1065b2512a24a3a15c4">
+      <a href="#h_01J4M00QYZTXY5FV9KDWT05H5T">How to Attach Files</a>
+    </li>
+    <li data-list-item-id="ee2f66ae0ebbe1eb20bebec2387ca56cc">
       <a href="#h_01J4M00QYZ1NVBTHE6E6A3BSXR">File Upload Settings</a>
       <ul>
-        <li><a href="#h_01J4M00QYZG2NM4G307YCRNS5B">Desktop/Browser</a></li>
-        <li><a href="#h_01J4M00QYZT1EQE0XSJJ326S6Q">Mobile</a></li>
+        <li data-list-item-id="e165ddc2471049fbb29ed933926d52630">
+          <a href="#h_01J4M00QYZG2NM4G307YCRNS5B">Desktop/Browser</a>
+        </li>
+        <li data-list-item-id="e309213a0e8c59a173c2e85d02d4c6af5">
+          <a href="#h_01J4M00QYZT1EQE0XSJJ326S6Q">Mobile</a>
+        </li>
       </ul>
     </li>
-    <li>
+    <li data-list-item-id="ec2662c8ef8c38067da024d09024cfb15">
       <a href="#h_01J4M00QYZMNPF2W7MRC1QHWSZ">What is NSFW Content Scanning?</a>
     </li>
-    <li><a href="#h_01J4M00QYZM3445WFF5918B3R4">How to Use Alt Text</a></li>
+    <li data-list-item-id="eba86a561952cc00477e9c44eaab11559">
+      <a href="#h_01J4M00QYZM3445WFF5918B3R4">How to Use Alt Text</a>
+    </li>
   </ul>
 </div>
 <h1 id="h_01J4M00QYZN32G2KQM21D4F5ZF">What is a File Attachment?</h1>
@@ -26,12 +35,7 @@
   In addition to text messages, users can upload file attachments in Discord to
   send to others. If you have Nitro, you can upload
   <a href="https://support.discord.com/hc/en-us/articles/115000435108"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >even bigger files</span
-    ></a
+    ><span class="wysiwyg-underline">even bigger files</span></a
   >. For non-Nitro subscribers, the maximum file upload is 10MB. 
 </p>
 <p>
@@ -39,11 +43,13 @@
   are the most common examples:
 </p>
 <ul>
-  <li>JPEG</li>
-  <li>PDF</li>
-  <li>MP3</li>
-  <li>MOV </li>
-  <li>MP4 (Video encoded with H264, HEVC/H265, or AV1)</li>
+  <li data-list-item-id="e55cdb49d33650e69b5668355594f4fe8">JPEG</li>
+  <li data-list-item-id="e77610488dfee66ae23cfc275858c2314">PDF</li>
+  <li data-list-item-id="ee1336c63fb414ec88c6b1f552b07409e">MP3</li>
+  <li data-list-item-id="eb9ba96a7f267774a226dabfc67307881">MOV </li>
+  <li data-list-item-id="e8c6a3abc009186140c93493b402f64a6">
+    MP4 (Video encoded with H264, HEVC/H265, or AV1)
+  </li>
 </ul>
 <h1 id="h_01J4M00QYZTXY5FV9KDWT05H5T">How to Attach Files</h1>
 <div class="tip-box">
@@ -59,17 +65,20 @@
   channel, or group message that you want to send a file attachment in and then
   tap on <strong>Upload a File</strong>.
 </p>
-<p id="h_01JZJZM3A3PBWQH9QBP5MJ6CZ2" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/33302221052823"
-      width="303"
-      height="317"
-  /></span>
+<p class="wysiwyg-text-align-center" id="h_01JZJZM3A3PBWQH9QBP5MJ6CZ2">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/33302221052823"
+        width="303"
+        height="317" /></span
+  ></span>
 </p>
-<h4 id="h_01JZJZVYRRH4K1G0WZ8F157YAH" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of sending a file attachment with text</span
+<h4 class="wysiwyg-text-align-center" id="h_01JZJZVYRRH4K1G0WZ8F157YAH">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of sending a file attachment with text</span
+    ></span
   >
 </h4>
 <p>
@@ -87,9 +96,11 @@
     height="391"
   />
 </p>
-<h4 id="h_01JZJZM3A31WE6N94JAGJH25VD" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Attachment sent along with text</span
+<h4 class="wysiwyg-text-align-center" id="h_01JZJZM3A31WE6N94JAGJH25VD">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Attachment sent along with text</span
+    ></span
   >
 </h4>
 <p>
@@ -97,16 +108,19 @@
   as embeds in your message and will not provide a preview of the attached file.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/33302182050583"
-      width="624"
-      height="223"
-  /></span>
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/33302182050583"
+        width="624"
+        height="223" /></span
+  ></span>
 </p>
-<h4 id="h_01JZJZM3A3ZP0EV9BA1R159772" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of sending  a non-image file </span
+<h4 class="wysiwyg-text-align-center" id="h_01JZJZM3A3ZP0EV9BA1R159772">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of sending  a non-image file </span
+    ></span
   >
 </h4>
 <div class="tip-box">
@@ -140,18 +154,13 @@
     height="416"
   />
 </p>
-<h4 id="h_01JZJZM3A3Q11AYZ932746JR38" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Chat</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color=""> tab in</span
-  ><strong
-    ><span style="color: #666666" data-darkreader-inline-color="">
-      User Settings
-    </span></strong
-  ><span style="color: #666666" data-darkreader-inline-color=""
-    >on desktop/browser</span
+<h4 class="wysiwyg-text-align-center" id="h_01JZJZM3A3Q11AYZ932746JR38">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""><strong>Chat</strong></span
+    ><span data-darkreader-inline-color=""> tab in</span
+    ><span data-darkreader-inline-color=""
+      ><strong> User Settings </strong></span
+    ><span data-darkreader-inline-color="">on desktop/browser</span></span
   >
 </h4>
 <p>
@@ -160,19 +169,19 @@
 </p>
 <p>Here is how each setting works:</p>
 <ul>
-  <li>
+  <li data-list-item-id="e1a427c7bf2a45cb601e7173667445cd4">
     <strong>When posted as links to chat: </strong>When an image is posted as a
     link, the image will be displayed instead of the text link.
   </li>
-  <li>
+  <li data-list-item-id="e15e622ee92f51c02b4dade18b6492fc9">
     <strong>When uploaded directly to Discord: </strong>Any image that is larger
     than 10MB will be shared as a download instead.
   </li>
-  <li>
+  <li data-list-item-id="e977cd773890d016c1f6f46d1ea413a35">
     <strong>With image descriptions: </strong>Used for screen readers to
     describe any shared image.
   </li>
-  <li>
+  <li data-list-item-id="e56474ed6038d62dec0df3690c54583cd">
     <strong>Show embeds and preview website links pasted into the chat: </strong
     >Embeds and website links will display a preview, unless disabled.
   </li>
@@ -184,13 +193,12 @@
     height="295"
   />
 </p>
-<h4 id="h_01JZJZM3A3JSNPRMTBZQAAP63P" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Chat</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color="">
-    setting options on desktop/browser</span
+<h4 class="wysiwyg-text-align-center" id="h_01JZJZM3A3JSNPRMTBZQAAP63P">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""><strong>Chat</strong></span
+    ><span data-darkreader-inline-color="">
+      setting options on desktop/browser</span
+    ></span
   >
 </h4>
 <h2 id="h_01JZJZM3A3KSVBKBC6K19CA19C">Mobile</h2>
@@ -210,13 +218,12 @@
     height="810"
   />
 </p>
-<h4 id="h_01JZJZM3A3KQYHA0HARY74NDB7" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Chat</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color="">
-    tab in Settings on mobile</span
+<h4 class="wysiwyg-text-align-center" id="h_01JZJZM3A3KQYHA0HARY74NDB7">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""><strong>Chat</strong></span
+    ><span data-darkreader-inline-color="">
+      tab in Settings on mobile</span
+    ></span
   >
 </h4>
 <p>
@@ -228,17 +235,17 @@
   the mobile-only settings:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="eab1a013feb32dff9b8f41772a8ffca00">
     <strong>Save to Device: </strong>If you directly send an image or video
     through your mobile device, the file will be automatically saved to your
     phone.
   </li>
-  <li>
+  <li data-list-item-id="e75f19364bae91b6f75ca305dc0c94877">
     <strong>Video Uploads: </strong>In this section, you can manage the quality
     of videos you upload through Discord. By selecting the "Data Saver" option,
     your videos will upload more quickly and consume less data.
   </li>
-  <li>
+  <li data-list-item-id="ededd4695a009beb87172937b7938cf54">
     <strong>Data Saving Mode: </strong>If enabled, images and videos will be
     sent in lower quality through your cellular network to use less data.
   </li>
@@ -250,13 +257,10 @@
     height="863"
   />
 </p>
-<h4 id="h_01JZJZM3A3C44VEMTMZH7JX2C3" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Chat</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color="">
-    settings for mobile</span
+<h4 class="wysiwyg-text-align-center" id="h_01JZJZM3A3C44VEMTMZH7JX2C3">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""><strong>Chat</strong></span
+    ><span data-darkreader-inline-color=""> settings for mobile</span></span
   >
 </h4>
 <h1 id="h_01JZJZM3A3TQJDKRC09WKTH4R2">What is NSFW Content Scanning?</h1>
@@ -283,21 +287,24 @@
   Help Center article.
 </div>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/33302150283031"
-      width="624"
-      height="52" /></span
-  ><span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/33302182066839"
-      width="624"
-      height="68"
-  /></span>
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/33302150283031"
+        width="624"
+        height="52" /></span
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/33302182066839"
+        width="624"
+        height="68" /></span
+  ></span>
 </p>
-<h4 id="h_01JZJZM3A36HMAHF4GHFN6CVFF" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Clyde warning for a blocked message</span
+<h4 class="wysiwyg-text-align-center" id="h_01JZJZM3A36HMAHF4GHFN6CVFF">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Clyde warning for a blocked message</span
+    ></span
   >
 </h4>
 <h1 id="h_01JZJZM3A3X9CNP1SXBQ4N29YB">How to Use Alt Text</h1>
@@ -326,13 +333,13 @@
     height="272"
   />
 </p>
-<h4 id="h_01JZJZM3A31G6PP1RB8KNJGKH7" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >Modify Attachmen</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color=""
-    ><strong>t</strong> option</span
+<h4 class="wysiwyg-text-align-center" id="h_01JZJZM3A31G6PP1RB8KNJGKH7">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><strong>Modify Attachmen</strong></span
+    ><span data-darkreader-inline-color=""
+      ><strong>t</strong> option</span
+    ></span
   >
 </h4>
 <p>
@@ -346,9 +353,11 @@
     height="448"
   />
 </p>
-<h4 id="h_01JZJZM3A3ST4AG38TS069Y21S" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of applying Alt Text</span
+<h4 class="wysiwyg-text-align-center" id="h_01JZJZM3A3ST4AG38TS069Y21S">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of applying Alt Text</span
+    ></span
   >
 </h4>
 <p>3. You can now send your image(s) with the alt text you’ve written. </p>
@@ -365,9 +374,11 @@
     height="477"
   />
 </p>
-<h4 id="h_01JZJZM3A36GS6MDAJMY7P0RDK" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of what ALT text looks like when applied to an attachment</span
+<h4 class="wysiwyg-text-align-center" id="h_01JZJZM3A36GS6MDAJMY7P0RDK">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of what ALT text looks like when applied to an attachment</span
+    ></span
   >
 </h4>
 <p>
