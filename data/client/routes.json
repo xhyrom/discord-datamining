@@ -4955,18 +4955,11 @@
   },
   "GAME_INVITE": {
     "url": "/game-invite/@me/:param",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "GAME_INVITES": {
     "url": "/game-invite/@me",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "ADD_SAFETY_WARNING": {
     "url": "/channels/:param/add-safety-warning",
