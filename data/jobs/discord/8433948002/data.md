@@ -10,14 +10,14 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8433948002](https://discord.com/jobs/8433948002)
 
-**Updated At:** Wed, 06 May 2026 20:47:21 GMT
+**Updated At:** Tue, 02 Jun 2026 17:30:41 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking an experienced Account Executive to join as a founding member of the new Advertising Solutions (Quests) business line to help build out the Tech&amp;nbsp;verticals. This is a strategic, senior-level individual contributor position, ideal for someone passionate about gaming and excited to establish Discord as a premier marketing tool for gaming-aligned brands.
 In this dynamic, zero-to-one environment, you will be instrumental in building and scaling this fast-growing business line. You’ll leverage your strategic business expertise, industry relationships, and product knowledge to create a significant and recurring book of business while forging our first partnerships with non-endemic brands.
 What You'll Be Doing
 
-Generate Revenue: Drive $XX million+ in new revenue across nonendemic categories such as Tech &amp;amp; Telco. Build and deepen relationships with senior stakeholders becoming an expert in their marketing needs.
+Generate Revenue: Drive $XX million+ in new revenue across nonendemic categories such as Tech. Build and deepen relationships with senior stakeholders becoming an expert in their marketing needs.
 Internal Strategic Insights: Provide market insights to cross-functional teams, including Product and Product Marketing, to co-develop innovative solutions that align with client objectives and enhance our advertising offerings.
 External Thought Leadership: Represent Discord externally with strategic insights and a focus on safeguarding the user experience. Showcase thought leadership in gaming, media, and marketing by engaging with clients, internal teams, and industry events.
 Influential Presentations: Create and deliver powerful sales presentations and proposals by leveraging advanced insights from internal and external data sources.&amp;nbsp;
@@ -25,7 +25,7 @@ Process Development: Collaborate across the sales organization to establish scal
 
 What you should have
 
-Proven track record of over 6+&amp;nbsp; years building $XX million in business with global brands across Tech or Telco.
+Proven track record of over 6+&amp;nbsp; years building $XX million in business with global brands across Tech.
 Ample experience influencing senior leaders at global brands and their agencies to drive new partnerships through new product launches.&amp;nbsp;
 Proactive problem-solving mindset, anticipating client needs and concerns while safeguarding the end user experience within the Discord platform.&amp;nbsp;
 Intuitive grasp of foundational sales skills, including data analysis to assess campaign performance, escalation strategies, negotiating and structuring non-standard ad-buying agreements, forecasting, and outreach.&amp;nbsp;
