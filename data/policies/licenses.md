@@ -35244,6 +35244,144 @@ IN THE SOFTWARE.</code></pre>
                   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
                   SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span
                 >
+                <h2 id="cherry-bomb-one">
+                  Cherry Bomb One<a class="hyperlink" href="#cherry-bomb-one"
+                    ><div name="cherry-bomb-one"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright 2019 The Cherry Bomb Project Authors (<a
+                    href="https://github.com/satsuyako/CherryBomb"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://github.com/satsuyako/CherryBomb</span></a
+                  >) Portions copyright 2025 Discord, Inc. Licensed under the
+                  SIL Open Font License, Version 1.1 (<a
+                    href="https://openfontlicense.org/open-font-license-official-text/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://openfontlicense.org/open-font-license-official-text/</span
+                    ></a
+                  >).</span
+                >
+                <h2 id="chicle">
+                  Chicle<a class="hyperlink" href="#chicle"
+                    ><div name="chicle"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright (c) 2007 Angel Koziupa (sudtipos@sudtipos.com)
+                  Copyright (c) 2007 Alejandro Paul (sudtipos@sudtipos.com)
+                  Portions copyright 2025 Discord, Inc. Licensed under the SIL
+                  Open Font License, Version 1.1 (<a
+                    href="https://openfontlicense.org/open-font-license-official-text/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://openfontlicense.org/open-font-license-official-text/</span
+                    ></a
+                  >).</span
+                >
+                <h2 id="museo-moderno">
+                  Museo Moderno<a class="hyperlink" href="#museo-moderno"
+                    ><div name="museo-moderno"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright 2020 The MuseoModerno Project Authors (<a
+                    href="https://github.com/Omnibus-Type/MuseoModerno"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://github.com/Omnibus-Type/MuseoModerno</span
+                    ></a
+                  >) Portions copyright 2025 Discord, Inc. Licensed under the
+                  SIL Open Font License, Version 1.1 (<a
+                    href="https://openfontlicense.org/open-font-license-official-text/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://openfontlicense.org/open-font-license-official-text/</span
+                    ></a
+                  >).</span
+                >
+                <h2 id="neo-castel">
+                  Neo Castel<a class="hyperlink" href="#neo-castel"
+                    ><div name="neo-castel"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright atypeofamigo (<a
+                    href="https://atypeofamigo.com/fonts/neo-castel/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://atypeofamigo.com/fonts/neo-castel/</span></a
+                  >) Portions copyright 2025 Discord, Inc. Licensed under the
+                  SIL Open Font License, Version 1.1 (<a
+                    href="https://openfontlicense.org/open-font-license-official-text/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://openfontlicense.org/open-font-license-official-text/</span
+                    ></a
+                  >).</span
+                >
+                <h2 id="pixelify-sans">
+                  Pixelify Sans<a class="hyperlink" href="#pixelify-sans"
+                    ><div name="pixelify-sans"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright 2021 The Pixelify Sans Project Authors (<a
+                    href="https://github.com/eifetx/Pixelify-Sans"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://github.com/eifetx/Pixelify-Sans</span></a
+                  >) Portions copyright 2025 Discord, Inc. Licensed under the
+                  SIL Open Font License, Version 1.1 (<a
+                    href="https://openfontlicense.org/open-font-license-official-text/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://openfontlicense.org/open-font-license-official-text/</span
+                    ></a
+                  >).</span
+                >
+                <h2 id="sinistre">
+                  Sinistre<a class="hyperlink" href="#sinistre"
+                    ><div name="sinistre"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >© 2023, Jules Durand &amp; Collletttivo Portions copyright
+                  2025 Discord, Inc. Licensed under the SIL Open Font License,
+                  Version 1.1 (<a
+                    href="https://openfontlicense.org/open-font-license-official-text/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://openfontlicense.org/open-font-license-official-text/</span
+                    ></a
+                  >).</span
+                >
+                <h2 id="zilla-slab">
+                  Zilla Slab<a class="hyperlink" href="#zilla-slab"
+                    ><div name="zilla-slab"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  >Copyright 2017, The Mozilla Foundation Portions copyright
+                  2025 Discord, Inc. Licensed under the SIL Open Font License,
+                  Version 1.1 (<a
+                    href="https://openfontlicense.org/open-font-license-official-text/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://openfontlicense.org/open-font-license-official-text/</span
+                    ></a
+                  >).</span
+                >
                 <hr />
                 <h1
                   id="additional-software-used-in-discord-for-windows-mac-and-linux"
@@ -61191,9 +61329,161 @@ specific prior written permission.</code></pre>
                   ></a>
                 </h1>
                 <span class="paragraph-3ckiht"
-                  >The following open source fonts may be included in this
-                  product:</span
+                  >The following open source fonts are included in this product.
+                  Each has been modified by Discord, Inc.</span
+                >
+                <hr />
+                <h2 id="vampyre-based-on-sinistre">
+                  Vampyre (based on Sinistre)<a
+                    class="hyperlink"
+                    href="#vampyre-based-on-sinistre"
+                    ><div name="vampyre-based-on-sinistre"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://www.collletttivo.it/typefaces/sinistre"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://www.collletttivo.it/typefaces/sinistre</span
+                    ></a
+                  ></span
                 ><span class="paragraph-3ckiht"
+                  >© 2023, Jules Durand &amp; Collletttivo Portions copyright
+                  2025 Discord, Inc.</span
+                >
+                <hr />
+                <h2 id="sakura-based-on-cherry-bomb-one">
+                  Sakura (based on Cherry Bomb One)<a
+                    class="hyperlink"
+                    href="#sakura-based-on-cherry-bomb-one"
+                    ><div name="sakura-based-on-cherry-bomb-one"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://fonts.google.com/specimen/Cherry+Bomb+One/license"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://fonts.google.com/specimen/Cherry+Bomb+One/license</span
+                    ></a
+                  ></span
+                ><span class="paragraph-3ckiht"
+                  >Copyright 2019 The Cherry Bomb Project Authors (<a
+                    href="https://github.com/satsuyako/CherryBomb"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://github.com/satsuyako/CherryBomb</span></a
+                  >) Portions copyright 2025 Discord, Inc.</span
+                >
+                <hr />
+                <h2 id="jellybean-based-on-chicle">
+                  Jellybean (based on Chicle)<a
+                    class="hyperlink"
+                    href="#jellybean-based-on-chicle"
+                    ><div name="jellybean-based-on-chicle"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://fonts.google.com/specimen/Chicle/license"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://fonts.google.com/specimen/Chicle/license</span
+                    ></a
+                  ></span
+                ><span class="paragraph-3ckiht"
+                  >Copyright (c) 2007 Angel Koziupa (sudtipos@sudtipos.com)
+                  Copyright (c) 2007 Alejandro Paul (sudtipos@sudtipos.com)
+                  Portions copyright 2025 Discord, Inc.</span
+                >
+                <hr />
+                <h2 id="medieval-based-on-neo-castel">
+                  Medieval (based on Neo Castel)<a
+                    class="hyperlink"
+                    href="#medieval-based-on-neo-castel"
+                    ><div name="medieval-based-on-neo-castel"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://atypeofamigo.com/fonts/neo-castel/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://atypeofamigo.com/fonts/neo-castel/</span></a
+                  ></span
+                ><span class="paragraph-3ckiht"
+                  >Copyright atypeofamigo (<a
+                    href="https://atypeofamigo.com/fonts/neo-castel/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://atypeofamigo.com/fonts/neo-castel/</span></a
+                  >) Portions copyright 2025 Discord, Inc.</span
+                >
+                <hr />
+                <h2 id="modern-based-on-museo-moderno">
+                  Modern (based on Museo Moderno)<a
+                    class="hyperlink"
+                    href="#modern-based-on-museo-moderno"
+                    ><div name="modern-based-on-museo-moderno"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://www.omnibus-type.com/fonts/museomoderno/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://www.omnibus-type.com/fonts/museomoderno/</span
+                    ></a
+                  ></span
+                ><span class="paragraph-3ckiht"
+                  >Copyright 2020 The MuseoModerno Project Authors (<a
+                    href="https://github.com/Omnibus-Type/MuseoModerno"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://github.com/Omnibus-Type/MuseoModerno</span
+                    ></a
+                  >) Portions copyright 2025 Discord, Inc.</span
+                >
+                <hr />
+                <h2 id="8bit-based-on-pixelify-sans">
+                  8Bit (based on Pixelify Sans)<a
+                    class="hyperlink"
+                    href="#8bit-based-on-pixelify-sans"
+                    ><div name="8bit-based-on-pixelify-sans"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://fonts.google.com/specimen/Pixelify+Sans/license"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://fonts.google.com/specimen/Pixelify+Sans/license</span
+                    ></a
+                  ></span
+                ><span class="paragraph-3ckiht"
+                  >Copyright 2021 The Pixelify Sans Project Authors (<a
+                    href="https://github.com/eifetx/Pixelify-Sans"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://github.com/eifetx/Pixelify-Sans</span></a
+                  >) Portions copyright 2025 Discord, Inc.</span
+                >
+                <hr />
+                <h2 id="tempo-based-on-zilla-slab">
+                  Tempo (based on Zilla Slab)<a
+                    class="hyperlink"
+                    href="#tempo-based-on-zilla-slab"
+                    ><div name="tempo-based-on-zilla-slab"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
                   ><a
                     href="https://fonts.google.com/specimen/Zilla+Slab/license"
                     target="_blank"
@@ -61201,60 +61491,37 @@ specific prior written permission.</code></pre>
                     ><span
                       >https://fonts.google.com/specimen/Zilla+Slab/license</span
                     ></a
-                  >,
-                  <a
-                    href="https://fonts.google.com/specimen/Cherry+Bomb+One/license?preview.layout=grid"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://fonts.google.com/specimen/Cherry+Bomb+One/license?preview.layout=grid</span
-                    ></a
-                  >,
-                  <a
-                    href="https://fonts.google.com/specimen/Chicle/license"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://fonts.google.com/specimen/Chicle/license</span
-                    ></a
-                  >,
-                  <a
-                    href="https://www.omnibus-type.com/fonts/museomoderno/"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://www.omnibus-type.com/fonts/museomoderno/</span
-                    ></a
-                  >,
-                  <a
-                    href="https://atypeofamigo.com/fonts/neo-castel/"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span>https://atypeofamigo.com/fonts/neo-castel/</span></a
-                  >,
-                  <a
-                    href="https://fonts.google.com/specimen/Pixelify+Sans/license?preview.layout=grid&amp;query=Pixelify"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://fonts.google.com/specimen/Pixelify+Sans/license?preview.layout=grid&amp;query=Pixelify</span
-                    ></a
-                  >,
-                  <a
-                    href="https://www.collletttivo.it/typefaces/sinistre"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://www.collletttivo.it/typefaces/sinistre</span
-                    ></a
-                  >,
-                  <a
+                  ></span
+                ><span class="paragraph-3ckiht"
+                  >Copyright 2017, The Mozilla Foundation Portions copyright
+                  2025 Discord, Inc.</span
+                >
+                <hr />
+                <h2 id="munro">
+                  Munro<a class="hyperlink" href="#munro"
+                    ><div name="munro"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
                     href="https://tenbytwenty.com/#munro"
                     target="_blank"
                     rel="noreferrer"
                     ><span>https://tenbytwenty.com/#munro</span></a
-                  >,
-                  <a
+                  ></span
+                ><span class="paragraph-3ckiht"
+                  >Typeface © (Ten by Twenty). 2007. All Rights Reserved.</span
+                >
+                <hr />
+                <h2 id="delicious-handrawn">
+                  Delicious Handrawn<a
+                    class="hyperlink"
+                    href="#delicious-handrawn"
+                    ><div name="delicious-handrawn"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
                     href="https://fonts.google.com/specimen/Delicious+Handrawn/license"
                     target="_blank"
                     rel="noreferrer"
@@ -61262,6 +61529,121 @@ specific prior written permission.</code></pre>
                       >https://fonts.google.com/specimen/Delicious+Handrawn/license</span
                     ></a
                   ></span
+                ><span class="paragraph-3ckiht"
+                  >Copyright 2022 The Delicious Handrawn Project Authors (<a
+                    href="https://github.com/alphArtype/Delicious-Handrawn"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://github.com/alphArtype/Delicious-Handrawn</span
+                    ></a
+                  >)</span
+                >
+                <hr />
+                <h2 id="sil-open-font-license-version-11">
+                  SIL Open Font License, Version 1.1<a
+                    class="hyperlink"
+                    href="#sil-open-font-license-version-11"
+                    ><div name="sil-open-font-license-version-11"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht">SIL OPEN FONT LICENSE</span
+                ><span class="paragraph-3ckiht"
+                  >Version 1.1 - 26 February 2007</span
+                ><span class="paragraph-3ckiht">PREAMBLE</span
+                ><span class="paragraph-3ckiht"
+                  >The goals of the Open Font License (OFL) are to stimulate
+                  worldwide development of collaborative font projects, to
+                  support the font creation efforts of academic and linguistic
+                  communities, and to provide a free and open framework in which
+                  fonts may be shared and improved in partnership with
+                  others.</span
+                ><span class="paragraph-3ckiht"
+                  >The OFL allows the licensed fonts to be used, studied,
+                  modified and redistributed freely as long as they are not sold
+                  by themselves. The fonts, including any derivative works, can
+                  be bundled, embedded, redistributed and/or sold with any
+                  software provided that any reserved names are not used by
+                  derivative works. The fonts and derivatives, however, cannot
+                  be released under any other type of license. The requirement
+                  for fonts to remain under this license does not apply to any
+                  document created using the fonts or their derivatives.</span
+                ><span class="paragraph-3ckiht">DEFINITIONS</span
+                ><span class="paragraph-3ckiht"
+                  >"Font Software" refers to the set of files released by the
+                  Copyright Holder(s) under this license and clearly marked as
+                  such. This can include source files, build scripts and
+                  documentation.</span
+                ><span class="paragraph-3ckiht"
+                  >"Reserved Font Name" refers to any names specified as such
+                  after the copyright statement(s).</span
+                ><span class="paragraph-3ckiht"
+                  >"Original Version" refers to the collection of Font Software
+                  components as distributed by the Copyright Holder(s).</span
+                ><span class="paragraph-3ckiht"
+                  >"Modified Version" refers to any derivative made by adding
+                  to, deleting, or substituting -- in part or in whole -- any of
+                  the components of the Original Version, by changing formats or
+                  by porting the Font Software to a new environment.</span
+                ><span class="paragraph-3ckiht"
+                  >"Author" refers to any designer, engineer, programmer,
+                  technical writer or other person who contributed to the Font
+                  Software.</span
+                ><span class="paragraph-3ckiht"
+                  >PERMISSION &amp; CONDITIONS</span
+                ><span class="paragraph-3ckiht"
+                  >Permission is hereby granted, free of charge, to any person
+                  obtaining a copy of the Font Software, to use, study, copy,
+                  merge, embed, modify, redistribute, and sell modified and
+                  unmodified copies of the Font Software, subject to the
+                  following conditions:</span
+                ><span class="paragraph-3ckiht"
+                  >1) Neither the Font Software nor any of its individual
+                  components, in Original or Modified Versions, may be sold by
+                  itself.</span
+                ><span class="paragraph-3ckiht"
+                  >2) Original or Modified Versions of the Font Software may be
+                  bundled, redistributed and/or sold with any software, provided
+                  that each copy contains the above copyright notice and this
+                  license. These can be included either as stand-alone text
+                  files, human-readable headers or in the appropriate
+                  machine-readable metadata fields within text or binary files
+                  as long as those fields can be easily viewed by the
+                  user.</span
+                ><span class="paragraph-3ckiht"
+                  >3) No Modified Version of the Font Software may use the
+                  Reserved Font Name(s) unless explicit written permission is
+                  granted by the corresponding Copyright Holder. This
+                  restriction only applies to the primary font name as presented
+                  to the users.</span
+                ><span class="paragraph-3ckiht"
+                  >4) The name(s) of the Copyright Holder(s) or the Author(s) of
+                  the Font Software shall not be used to promote or endorse
+                  Modified Versions, except to acknowledge the contribution(s)
+                  of the Copyright Holder(s) and Author(s) or with their
+                  explicit written permission.</span
+                ><span class="paragraph-3ckiht"
+                  >5) The Font Software, modified or unmodified, in part or in
+                  whole, must be distributed entirely under this license, and
+                  must not be distributed under any other license. The
+                  requirement for fonts to remain under this license does not
+                  apply to any document created using the Font Software.</span
+                ><span class="paragraph-3ckiht">TERMINATION</span
+                ><span class="paragraph-3ckiht"
+                  >This license becomes null and void if any of the above
+                  conditions are not met.</span
+                ><span class="paragraph-3ckiht">DISCLAIMER</span
+                ><span class="paragraph-3ckiht"
+                  >THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+                  ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY
+                  WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                  PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK,
+                  OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE
+                  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING
+                  ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+                  DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+                  ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT
+                  SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.</span
                 >
               </div>
             </div>
