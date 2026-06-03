@@ -1,0 +1,57 @@
+.verification_dede4b {
+  background-color: var(--background-base-low);
+  height: 100%;
+  width: 100%;
+}
+.verification_dede4b .title_dede4b {
+  color: var(--text-default);
+}
+.verification_dede4b .body_dede4b,
+.verification_dede4b .footer_dede4b {
+  color: var(--text-muted);
+}
+.textContainer_dede4b {
+  text-align: center;
+}
+.container_dede4b {
+  width: 500px;
+}
+.container_dede4b.isMobile_dede4b {
+  width: 100%;
+}
+.footer_dede4b {
+  text-align: center;
+}
+.footerBullet_dede4b {
+  opacity: 0.3;
+}
+.logoutButton_dede4b {
+  position: relative;
+}
+.verificationBlock_dede4b {
+  border-radius: 3px;
+  cursor: pointer;
+  padding-inline: 20px;
+}
+.verificationBlock_dede4b .image_dede4b {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  height: 160px;
+  width: 180px;
+}
+.verificationBlock_dede4b .body_dede4b {
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+.verificationBlock_dede4b:hover {
+  background-color: var(--background-base-lower);
+}
+.theme-light .verificationBlock_dede4b {
+  border: 1px solid var(--primary-300);
+}
+.theme-dark .verificationBlock_dede4b {
+  border: 1px solid var(--primary-700);
+}
+
+/*# sourceMappingURL=33581.c6a07e981fc9f6a7.css.map*/
