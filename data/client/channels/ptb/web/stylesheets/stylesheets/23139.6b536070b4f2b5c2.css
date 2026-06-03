@@ -1,0 +1,164 @@
+.container__2bb7a {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  padding: 16px;
+}
+.controls__2bb7a {
+  width: 100%;
+}
+.heading__2bb7a {
+  margin-bottom: 16px;
+}
+.row__2bb7a {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.divider__2bb7a {
+  margin-bottom: 16px;
+}
+.label__2bb7a {
+  margin-bottom: 4px;
+}
+.modeSelector__2bb7a,
+.slider__2bb7a {
+  margin-bottom: 16px;
+}
+.modeSelector__2bb7a {
+  display: flex;
+  gap: 4px;
+}
+.modeButton__2bb7a {
+  background: var(--background-mod-subtle);
+  border: none;
+  border-radius: 4px;
+  color: var(--text-default);
+  cursor: pointer;
+  flex: 1;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 0;
+  transition: background 0.1s;
+}
+.modeButton__2bb7a:hover {
+  background: var(--interactive-background-hover);
+}
+.modeButtonActive__2bb7a {
+  background: var(--brand-500);
+  color: var(--white);
+}
+.modeButtonActive__2bb7a:hover {
+  background: var(--brand-560);
+}
+.visualizer__2bb7a {
+  aspect-ratio: 1/1;
+  box-shadow: var(--shadow-border);
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  touch-action: none;
+}
+.canvas__2bb7a,
+.visualizer__2bb7a {
+  border-radius: 4px;
+  width: 100%;
+}
+.canvas__2bb7a {
+  display: block;
+  height: 100%;
+}
+.avatar__2bb7a {
+  height: 24px;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  width: 24px;
+}
+.menu_f727ab {
+  width: 330px;
+}
+.active_f42222 {
+  background-color: var(--control-secondary-background-hover);
+}
+.activeIcon_f42222 {
+  color: var(--text-link);
+}
+.scroller__68617 {
+  margin-inline: -3px -7px;
+  max-height: 132px;
+  min-height: 24px;
+  padding-block: 4px;
+  padding-inline: 4px 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.scroller__68617.expanded__68617 {
+  margin-bottom: 4px;
+}
+.voiceUsers__68617 {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 100%;
+}
+.voiceUsers__68617.collapsed__68617 {
+  flex-wrap: nowrap;
+}
+.avatarContainer__68617 {
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.avatar__68617 {
+  background-size: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+.avatarIconOverlay__68617 {
+  background-color: var(--opacity-black-28);
+  color: var(--white);
+  padding: 4px;
+}
+.avatarIconRed__68617 {
+  color: var(--red-400);
+}
+.partnerBranding__83420 {
+  align-items: center;
+  display: flex;
+  flex: 0 1 auto;
+}
+.partnerBrandingGameTile__83420 {
+  display: block;
+  flex: 0 0 auto;
+  margin-inline-end: 8px;
+}
+.partnerBrandingLogotype__83420 {
+  height: 24px;
+  max-width: 92px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.partnerBrandingLogotypeWithCosponsor__83420 {
+  flex: 0 0 auto;
+  max-width: 44px;
+}
+.cosponsorBrandSeparatorWrapper__83420 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+}
+.cosponsorBrandSeparator__83420 {
+  height: 12px;
+  width: 12px;
+}
+
+/*# sourceMappingURL=23139.6b536070b4f2b5c2.css.map*/
