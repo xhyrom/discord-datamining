@@ -1,0 +1,55 @@
+.wrapper__0a838 {
+  bottom: 0;
+  inset-inline-start: 0;
+  margin-bottom: 42px;
+  opacity: 0;
+  pointer-events: none;
+  position: sticky;
+  width: 100%;
+  z-index: 10;
+}
+.innerWrapper__0a838,
+.wrapper__0a838 {
+  display: flex;
+  justify-content: center;
+}
+.innerWrapper__0a838 {
+  align-items: center;
+  background-color: var(--background-base-lowest);
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 16px;
+  pointer-events: all;
+  position: relative;
+}
+.innerWrapper__0a838:after,
+.innerWrapper__0a838:before {
+  content: "";
+  height: 100%;
+  inset-inline-start: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.invisible__0a838 > .innerWrapper__0a838 {
+  pointer-events: none;
+}
+.tier2Gradient__0a838 {
+  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  color: var(--white);
+}
+.descriptionContainer__0a838 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+  width: 320px;
+}
+.nitroIcon__0a838 {
+  border-radius: var(--radius-sm);
+  filter: saturate(var(--saturation-factor, 1));
+  height: 48px;
+  width: 48px;
+}
+
+/*# sourceMappingURL=34957.88c00c371224f529.css.map*/
