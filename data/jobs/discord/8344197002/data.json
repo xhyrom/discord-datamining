@@ -30,7 +30,7 @@
     }
   ],
   "id": 8344197002,
-  "updated_at": "2026-06-02T17:49:32-04:00",
+  "updated_at": "2026-06-04T11:12:38-04:00",
   "requisition_id": "R-107107",
   "title": "Staff Software Engineer - Safety Experience",
   "company_name": "Discord",
@@ -47,6 +47,13 @@
     }
   ],
   "offices": [
+    {
+      "id": 4105189002,
+      "name": "Los Angeles Metro Area",
+      "location": null,
+      "child_ids": [],
+      "parent_id": null
+    },
     {
       "id": 4000383002,
       "name": "San Francisco, CA",
