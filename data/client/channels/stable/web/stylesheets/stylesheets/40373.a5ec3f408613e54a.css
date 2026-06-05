@@ -1,0 +1,270 @@
+.quickBar_b3c194 {
+  align-items: center;
+  background-color: var(--background-surface-high);
+  box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--space-8);
+  padding: var(--space-12);
+  width: 100%;
+}
+.custom-theme-background .quickBar_b3c194 {
+  background: unset;
+}
+.title_b3c194 {
+  flex: 1;
+  gap: var(--space-8);
+  min-width: 0;
+}
+.actions_b3c194,
+.title_b3c194 {
+  align-items: center;
+  display: flex;
+}
+.actions_b3c194 {
+  margin-inline-start: auto;
+}
+.clipContainer_b3c194 {
+  display: flex;
+  gap: var(--space-8);
+  width: 100%;
+}
+.clipThumbnailWrapper_b3c194 {
+  background-color: var(--background-mod-subtle);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  cursor: pointer;
+  flex: 1 1 0;
+  height: 47px;
+  min-width: 0;
+  opacity: 0.9;
+}
+.clipThumbnailWrapper_b3c194:hover {
+  opacity: 1;
+}
+.clipThumbnailWrapper_b3c194:empty {
+  cursor: default;
+}
+.autoClipIcon_b3c194 {
+  inset-inline-start: var(--space-4);
+  position: absolute;
+  top: var(--space-4);
+  z-index: 1;
+}
+.stackCountIndicator_b3c194 {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: inherit;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+}
+.container_f99067 {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.thumbnail_f99067 {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  opacity: 0.9;
+  position: absolute;
+  transform: translate(
+      var(--custom-stack-bbox-rest-x, 0),
+      var(--custom-stack-bbox-rest-y, 0)
+    )
+    translate(var(--custom-stack-rest-x, 0), var(--custom-stack-rest-y, 0))
+    rotate(var(--custom-stack-rotation, 0deg));
+  transition: opacity 0.4s ease-out;
+}
+.thumbnailShadow_f99067 {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+.container_f99067:hover .thumbnail_f99067 {
+  opacity: 1;
+}
+.full-motion .thumbnail_f99067 {
+  opacity: 1;
+  transition: transform 0.4s ease-out;
+}
+.full-motion .container_f99067:hover .thumbnail_f99067 {
+  transform: translate(
+      var(--custom-stack-bbox-hover-x, 0),
+      var(--custom-stack-bbox-hover-y, 0)
+    )
+    translate(var(--custom-stack-hover-x, 0), var(--custom-stack-hover-y, 0))
+    rotate(var(--custom-stack-rotation, 0deg));
+}
+.wrapper__09f82 {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.wrapper__09f82[data-open="true"] {
+  max-height: 480px;
+  opacity: 1;
+}
+.full-motion .wrapper__09f82 {
+  transform: translateY(100%);
+  transition:
+    max-height 0.22s ease,
+    transform 0.22s ease,
+    opacity 0.18s ease;
+}
+.full-motion .wrapper__09f82[data-open="true"] {
+  transform: translateY(0);
+}
+.panel__09f82 {
+  background-color: var(--background-surface-high);
+  border-bottom: 1px solid var(--border-muted);
+  border-start-end-radius: var(--radius-sm);
+  border-start-start-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  isolation: isolate;
+  overflow: hidden;
+  padding: var(--space-12);
+  position: relative;
+}
+.backdrop__09f82 {
+  background-position: 50%;
+  background-size: cover;
+  block-size: 70%;
+  filter: blur(24px);
+  inline-size: 100%;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  -webkit-mask-image: linear-gradient(180deg, #000 0, transparent);
+  mask-image: linear-gradient(180deg, #000 0, transparent);
+  opacity: 0.2;
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+}
+.custom-theme-background .panel__09f82 {
+  background: unset;
+}
+.header__09f82 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+  justify-content: flex-end;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.panelInner__09f82 {
+  position: relative;
+}
+.countdownRing__09f82 {
+  height: 16px;
+  transform: rotate(-90deg);
+  width: 16px;
+}
+.countdownTrack__09f82 {
+  fill: none;
+  stroke: color-mix(in srgb, var(--text-default) 20%, transparent);
+}
+.countdownProgress__09f82 {
+  fill: none;
+  stroke: var(--text-default);
+  stroke-linecap: round;
+}
+.full-motion .countdownProgress__09f82 {
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: countdown-ring__09f82;
+  animation-timing-function: linear;
+}
+@keyframes countdown-ring__09f82 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: var(--custom-final-offset, 100);
+  }
+}
+.countdownButton__09f82 {
+  border-radius: 50%;
+  color: var(--text-default);
+  cursor: pointer;
+  display: inline-flex;
+  height: 16px;
+  position: relative;
+  width: 16px;
+}
+.countdownButton__09f82:hover {
+  background-color: var(--background-mod-subtle);
+}
+.countdownCloseLayer__09f82,
+.countdownRingLayer__09f82 {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+}
+.countdownCloseLayer__09f82 {
+  opacity: 0;
+}
+.countdownButton__09f82:focus-visible .countdownRingLayer__09f82,
+.countdownButton__09f82:hover .countdownRingLayer__09f82 {
+  opacity: 0;
+}
+.countdownButton__09f82:focus-visible .countdownCloseLayer__09f82,
+.countdownButton__09f82:hover .countdownCloseLayer__09f82 {
+  opacity: 1;
+}
+.full-motion .countdownCloseLayer__09f82,
+.full-motion .countdownRingLayer__09f82 {
+  transition: opacity 0.15s ease;
+}
+.thumbnails__09f82 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-block: 30px;
+}
+.thumbnailClickable__09f82 {
+  cursor: pointer;
+}
+.thumbnailsStack__09f82 {
+  aspect-ratio: 16/9;
+  width: 140px;
+}
+.gameRow__09f82 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+  min-width: 0;
+}
+.gameIcon__09f82 {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-medium);
+}
+.gameInfo__09f82 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+.gameName__09f82 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.gameNameClickable__09f82 {
+  display: block;
+  min-width: 0;
+}
+.gameNameClickable__09f82:hover .gameName__09f82 {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=40373.a5ec3f408613e54a.css.map*/
