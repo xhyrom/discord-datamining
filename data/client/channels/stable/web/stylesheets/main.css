@@ -1,13 +1,3 @@
-.base_afb27c {
-  height: 100vh;
-  width: 100vw;
-  --custom-chat-input-margin-bottom: var(--space-xs);
-}
-.titleBar_afb27c {
-  height: calc(32px / (var(--custom-zoom) / 100));
-  width: 100%;
-  -webkit-app-region: drag;
-}
 a,
 abbr,
 acronym,
@@ -1093,4 +1083,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=24440.75f9c57175dde574.css.map*/
+/*# sourceMappingURL=56051.45c82f95b3466739.css.map*/
