@@ -41,9 +41,15 @@
   questionnaire. We'll ask you a few questions including:
 </p>
 <ul>
-  <li>Which Intents you're applying for</li>
-  <li>Your use case for those Intents</li>
-  <li>Some data security and privacy questions</li>
+  <li data-list-item-id="e3f2e634b345f69823cd1759ee2f3ac5a">
+    Which Intents you're applying for
+  </li>
+  <li data-list-item-id="ec746a6e484935386e39b49d3674f637f">
+    Your use case for those Intents
+  </li>
+  <li data-list-item-id="e983e9470795d5b59dd263d7ad6fe0e06">
+    Some data security and privacy questions
+  </li>
 </ul>
 <p>
   Providing thorough answers to these questions will help to ensure the best

@@ -214,13 +214,23 @@
   </li>
 </ul>
 <p>
-  The account standing is determined based on any active violations and the
-  severity of those violations. These can be viewed in the
-  <strong>Active Violations</strong> section under
-  <strong>Account Standing</strong>. After 90 days, most violations expire and
-  no longer impact a user’s account standing. Particularly severe violations may
-  remain on the user’s record for longer – the expiration date can be found on
-  the violation detail. 
+  Your account standing reflects any active violations and their severity, which
+  you can view in the <strong>Active Violations</strong> section under
+  <strong>Account Standing</strong>. 
+</p>
+<p>
+  It’s important to understand that violations and their associated restrictions
+  are two separate things. A restriction (such as a temporary limit on messaging
+  or posting) may lift before the violation itself fully expires. Until a
+  violation expires, it will remain listed under
+  <strong>Active Violations</strong> and may continue to affect your account
+  standing, even if its associated restriction is no longer active. 
+</p>
+<p>
+  Most violations expire after 90 days, at which point they move to the
+  <strong>Expired Violations </strong>section and no longer impact your account
+  standing. More severe violations may remain active longer — check the
+  violation detail for its specific expiration date.
 </p>
 <p>
   After violations expire, they can still be viewed in the
