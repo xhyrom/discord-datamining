@@ -1240,12 +1240,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": null,
+          "value": "Trust & Safety",
           "value_type": "single_select"
         }
       ],
       "id": 8517367002,
-      "updated_at": "2026-05-15T16:24:40-04:00",
+      "updated_at": "2026-06-05T13:37:47-04:00",
       "requisition_id": "R-107260",
       "title": "Manager, Scaled Abuse Countermeasures and Research",
       "company_name": "Discord",
