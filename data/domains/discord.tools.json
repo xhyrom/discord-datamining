@@ -6,6 +6,7 @@
     "mcp-portal",
     "dirt",
     "datadog",
+    "hivemind-api-stg",
     "dirt-stg",
     "experiment-readouts",
     "api-deploys",
@@ -39,13 +40,16 @@
     "metabase-prd",
     "bazel-rbe",
     "oosla",
+    "gameseer",
+    "apple-provisioner",
     "cap-stg",
     "dads",
     "builds",
     "rustdocs",
     "bazel-bes-stg",
-    "memes",
     "hivemind",
+    "memes",
+    "keysmith",
     "sirius",
     "yay",
     "datahub",
@@ -72,5 +76,5 @@
     "dbt-docs",
     "airflow-data-prd"
   ],
-  "subdomain_count": 71
+  "subdomain_count": 75
 }
