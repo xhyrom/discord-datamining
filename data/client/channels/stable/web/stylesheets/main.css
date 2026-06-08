@@ -74,13 +74,22 @@ body {
   background: transparent;
   font-family: var(--font-primary);
   line-height: 1;
+  margin: 0;
   overflow: hidden;
   padding: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
-body,
+:not(:root):-webkit-full-screen {
+  -webkit-user-select: none;
+  user-select: none;
+}
+:not(:root):fullscreen {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 p {
   margin: 0;
 }
@@ -1083,4 +1092,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=56051.45c82f95b3466739.css.map*/
+/*# sourceMappingURL=56051.babb8a83454e4138.css.map*/
