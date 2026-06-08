@@ -53,6 +53,12 @@
     </li>
   </ul>
 </div>
+<div class="warn-box">
+  <strong>Important:</strong> As of July 1, 2026, the KontrolFreek discount will
+  no longer be available. <br />The good news? We're continuing to work on new
+  discounts to make your Nitro experience even more valuable. Thank you for your
+  continued feedback and support!
+</div>
 <h1 id="h_01KQZ3D7Y7SZNPRDNJ37Z6QCTK">What are Nitro Rewards?</h1>
 <div class="warn-box">
   <strong>Important:</strong> Nitro Rewards are rolling out to eligible members
@@ -432,7 +438,7 @@
   <li data-list-item-id="e3e0be3a21a3f377187581400f82bab67">
     Visit the<a href="https://steelseries.com"> </a
     ><a
-      href="https://www.logitech.com/"
+      href="https://www.logitechg.com/"
       target="_blank"
       rel="noopener noreferrer"
       >Logitech G<span class="wysiwyg-underline"> website</span></a
