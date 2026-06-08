@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Financial Analyst, Finance & Strategy
+## Senior Financial Analyst, Business Partnership
 
 **Location:** San Francisco Bay Area
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8580659002](https://discord.com/jobs/8580659002)
 
-**Updated At:** Mon, 08 Jun 2026 21:27:38 GMT
+**Updated At:** Mon, 08 Jun 2026 22:05:17 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re looking for a passionate and experienced Senior Financial Analyst to join our growing Finance &amp;amp; Strategy team. The Finance organization at Discord is responsible for planning, forecasting, and strategic analysis. Senior leaders across the business rely on us as trusted advisors to develop actionable insights, steer headcount and investment decisions, and build scalable financial reporting solutions. Your analysis will be highly visible and will directly inform executive decision-making.This is a role built for someone who can go deep and flex broadly. You’ll partner with leaders across GTM and G&amp;amp;A functions, acting as a powerhouse across the broader Finance &amp;amp; Strategy team. As a thought partner to functional leaders, you’ll help steward Discord’s resource investments to improve the durability of our long-term financial performance, establishing coordination and communication across business teams such as Finance, Accounting &amp;amp; Talent. In return, you’ll gain autonomy, deep interaction with business partners, and the opportunity to impact a rapidly growing business.

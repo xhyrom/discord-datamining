@@ -47,7 +47,7 @@ Please see our Applicant and Candidate Privacy Policy for details regarding Disc
 - GDPR: No consent required for processing or retention.
 
 **Departments:**
-- Product Engineering
+- Developers
 
 **Offices:**
 - San Francisco, CA in San Francisco, California, United States
