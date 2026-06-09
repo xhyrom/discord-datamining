@@ -1,0 +1,111 @@
+.container__91a9d {
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  color: var(--channels-default);
+  display: block;
+  padding: 1px 0;
+  transition: none;
+}
+.container__91a9d .muted__91a9d {
+  color: var(--text-muted);
+}
+.childContainer__91a9d {
+  border-radius: inherit;
+  padding-block: 0;
+  padding-inline: var(--space-xs) 8px;
+}
+.childContainer__91a9d.nameplated__91a9d {
+  padding-inline-end: 32px;
+  position: relative;
+}
+.muted__91a9d .avatar__91a9d {
+  opacity: 0.3;
+}
+.clickable__91a9d.container__91a9d:hover {
+  color: var(--interactive-text-hover);
+}
+.clickable__91a9d.container__91a9d:hover .muted__91a9d {
+  color: var(--interactive-text-hover);
+}
+.clickable__91a9d.container__91a9d:hover .avatar__91a9d {
+  opacity: 1;
+}
+.clickable__91a9d.container__91a9d:active,
+.highlighted__91a9d.container__91a9d,
+.selected__91a9d.container__91a9d {
+  color: var(--interactive-text-active);
+}
+.layout__91a9d {
+  align-items: center;
+  border-radius: inherit;
+  display: flex;
+  flex: 0 1 auto;
+  height: 42px;
+  max-width: 100%;
+  min-width: 0;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 1;
+}
+.wrappedLayout__91a9d {
+  height: auto;
+  padding: 5px 8px;
+}
+.clickable__91a9d:hover .childContainer__91a9d {
+  background-color: var(--interactive-background-hover);
+  cursor: pointer;
+}
+.clickable__91a9d:active .childContainer__91a9d {
+  background-color: var(--interactive-background-active);
+}
+.selected__91a9d .childContainer__91a9d {
+  background-color: var(--interactive-background-selected);
+}
+.avatar__91a9d {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  height: 32px;
+  justify-content: center;
+  margin-inline-end: 12px;
+  width: 32px;
+}
+.content__91a9d {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.name__91a9d {
+  display: flex;
+  flex: 0 1 auto;
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+  min-width: 0;
+}
+.wrappedName__91a9d {
+  overflow: none;
+  white-space: normal;
+}
+.nameAndDecorators__91a9d {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+.subText__91a9d {
+  margin-top: -2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.subText__91a9d:empty {
+  display: none;
+}
+.children__91a9d {
+  flex: 0 0 auto;
+  margin-inline-start: 8px;
+}
+
+/*# sourceMappingURL=32993.ef257aa9ecf7ac84.css.map*/
