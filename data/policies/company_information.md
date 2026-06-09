@@ -211,7 +211,13 @@
             font-size: 0.75rem;
           }
         }
+        html[lang="es"] .nav_link {
+          font-size: 0.75rem;
+        }
         html[lang="es"] .dd_nav-link {
+          font-size: 0.75rem;
+        }
+        html[lang="es"] .nav_dd_trigger {
           font-size: 0.75rem;
         }
       </style>
