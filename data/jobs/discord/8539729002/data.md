@@ -2,7 +2,7 @@
 
 ## Senior Manager, Learning & Policy Implementation (T&S)
 
-**Location:** San Francisco Bay Area
+**Location:** San Francisco Bay Area or Remote (U.S.)
 
 **Id:** 8539729002 <br/>
 **Internal Job Id:** 6406529002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8539729002](https://discord.com/jobs/8539729002)
 
-**Updated At:** Thu, 07 May 2026 17:13:25 GMT
+**Updated At:** Tue, 09 Jun 2026 19:36:48 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Keeping that experience safe and consistent for everyone requires more than good policies. It requires that every team member, enforcement agent, and frontline operator knows exactly what to do when it matters. That's the work of Learning &amp;amp; Policy Implementation (L&amp;amp;I).
@@ -44,7 +44,7 @@ You have experience managing public-facing Help Center or user-facing documentat
 You've led a team through a significant scope expansion and know what it takes to build shared direction without dismissing what people have already built.
 You're comfortable in Notion and Zendesk as documentation and knowledge management platforms and have strong opinions about how to use them well.
 
-Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&amp;nbsp;
+This position is US-based and can be remote but if you live in the Bay Area, you’re welcome to work from our beautiful SF office.&amp;nbsp;
 The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Discord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
