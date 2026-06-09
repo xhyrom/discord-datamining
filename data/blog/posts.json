@@ -3384,5 +3384,16 @@
     "pubDate": "Mon, 08 Jun 2026 00:00:00 GMT",
     "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a2332d69dbeedfe7d0cbc92_image4.jpg",
     "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a2332d69dbeedfe7d0cbc92_image4.jpg"
+  },
+  {
+    "id": "how-we-moved-discord-voice-to-the-edge",
+    "body": "",
+    "title": "How We Moved Discord Voice to the Edge",
+    "link": "https://discord.com/blog/how-we-moved-discord-voice-to-the-edge",
+    "guid": "https://discord.com/blog/how-we-moved-discord-voice-to-the-edge",
+    "description": "Moving Discord’s voice and video onto Cloudflare's edge network. Closer servers, lower ping in most regions, and a few real bugs getting there.\n",
+    "pubDate": "Tue, 09 Jun 2026 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a2840bb10082f32bf59f78a_2024_10_DiscordBlog_UsingDiscord-2.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a2840bb10082f32bf59f78a_2024_10_DiscordBlog_UsingDiscord-2.png"
   }
 ]
