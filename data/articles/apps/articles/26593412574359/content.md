@@ -9,6 +9,11 @@
     >what apps are here</a
   >.
 </p>
+<div class="info-box">
+  Note: Some Activities and apps may not be available in certain regions based
+  on their content. If you're in an affected region, you may not be able to
+  launch or join certain apps or activities.
+</div>
 <p>
   You can interact with an app in a multitude of ways. If you have an app
   installed to your account or it’s added to your server, you can access its
@@ -33,43 +38,47 @@
   >
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="eae80a6dc7f49215874ffe99c2e41f204">
     <a href="#h_01J8JG3PHMQMKWFS18E0G5213G"
       >Where You Can Use Apps on Discord</a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e7af3dba3888f552d2a1df4049ea64356">
         <a href="#h_01J8JFFXHTHT2XP9C1NYPSZR0T"
           >Launching Apps From the Chat Bar</a
         >
       </li>
-      <li><a href="#h_01J8JFFXHTEY480XZ6QBFVC2TV">Typing "/"</a></li>
-      <li>
+      <li data-list-item-id="e31549ed9cb035eb13706568a0193a357">
+        <a href="#h_01J8JFFXHTEY480XZ6QBFVC2TV">Typing "/"</a>
+      </li>
+      <li data-list-item-id="e2b06f51dd010ace655b06df80117d730">
         <a href="#h_01J8JFFXHTM9K9E1WEDJQVNRPB"
           >Launching Apps in Voice Calls</a
         >
       </li>
-      <li>
+      <li data-list-item-id="e9cb99739f13b23ff62e384c163340595">
         <a href="#h_01J8JFFXHT9E4SAYQADYS83AD9">User and Message Commands</a>
       </li>
     </ul>
   </li>
-  <li><a href="#h_01J8JFFXHTAHHEJK5CZYQVYB43">Editing Images in Chat</a></li>
-  <li>
+  <li data-list-item-id="e8b13404780d791fc6bbc70d2fefb83f9">
+    <a href="#h_01J8JFFXHTAHHEJK5CZYQVYB43">Editing Images in Chat</a>
+  </li>
+  <li data-list-item-id="e9bc9813c35f4e859edf6b85d82379dfb">
     <a href="#h_01J8JFFXHVNB9G8JMTQ0ES9AV7"
       >Joining and Inviting Others to Join Activities</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e5da2a7e2c9ac411f8be8e3fa3dbd0b2d">
     <a href="#h_01J8JFFXHV9KMVZ9WDEM0V2PX9">Ending and Changing Activities</a>
   </li>
-  <li>
+  <li data-list-item-id="ead7f30749ad354635ba5de8c9f1f84ea">
     <a href="#h_01J8JFFXHVEJC2J08PAM34TYQQ"
       >My mobile device gets really warm while playing Activities. How do I fix
       it?</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e8d3c2a3156373348da13687ecd94a28c">
     <a href="#h_01J8JFFXHV1QF8HRCTBH40H5C8">Frequently Asked Questions</a>
   </li>
 </ul>
@@ -134,24 +143,26 @@
   app in chat.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    ><img
-      src="https://support-apps.discord.com/hc/article_attachments/26593412482455"
-      width="624"
-      height="393"
-  /></span>
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support-apps.discord.com/hc/article_attachments/26593412482455"
+        width="624"
+        height="393" /></span
+  ></span>
 </p>
 <p>
   If the app has an Activity, you can launch it in the chat by selecting the
   <strong>Launch</strong> button.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #23272a" data-darkreader-inline-color=""
-    ><img
-      src="https://support-apps.discord.com/hc/article_attachments/26593412486679"
-      width="624"
-      height="403"
-  /></span>
+  <span style="color: #23272a"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support-apps.discord.com/hc/article_attachments/26593412486679"
+        width="624"
+        height="403" /></span
+  ></span>
 </p>
 <p><strong>Mobile</strong></p>
 <p>
@@ -167,7 +178,8 @@
     src="https://support-apps.discord.com/hc/article_attachments/26593395723159"
     width="253"
     height="524"
-  />      
+  />
+       
 </p>
 <p> </p>
 <p>
@@ -175,23 +187,21 @@
   having to type them out.
 </p>
 <p class="wysiwyg-text-align-center">
-     <img
+    
+  <img
     src="https://support-apps.discord.com/hc/article_attachments/26593412500759"
     width="241"
     height="502"
-  />   
+  />
+    
 </p>
 <h2 id="h_01J8JFFXHTEY480XZ6QBFVC2TV">Typing “/”</h2>
 <p>
   To use an app’s slash commands via the chat bar, simply type
-  <strong
-    ><span style="color: #38761d" data-darkreader-inline-color=""
-      >“</span
-    ></strong
-  ><strong
-    ><span style="color: #188038" data-darkreader-inline-color=""
-      >/”</span
-    ></strong
+  <span style="color: #38761d"
+    ><span data-darkreader-inline-color=""><strong>“</strong></span></span
+  ><span style="color: #188038"
+    ><span data-darkreader-inline-color=""><strong>/”</strong></span></span
   >
   in chat to bring up the <strong>command picker </strong>and select the command
   you would like to use for that app. You can also type the entire<strong>
@@ -205,12 +215,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >For more information on slash commands, check out this
-    <span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >article</span
-    ></a
+    <span class="wysiwyg-underline">article</span></a
   >.
 </p>
 <h2 id="h_01J8JFFXHTM9K9E1WEDJQVNRPB">Launching Apps in Voice Calls</h2>
@@ -238,23 +243,23 @@
   />
 </p>
 <h4 id="h_01J8JFFXHTZ5JQAT14PH8J4NRX">
-  <span style="color: #666666" data-darkreader-inline-color="">The </span
-  ><strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >App Launcher</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color="">
-    appears on the bottom left-hand side, or the one that appears when in
-    focused view, while in a voice channel.</span
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">The </span
+    ><span data-darkreader-inline-color=""><strong>App Launcher</strong></span
+    ><span data-darkreader-inline-color="">
+      appears on the bottom left-hand side, or the one that appears when in
+      focused view, while in a voice channel.</span
+    ></span
   >
 </h4>
-<h4 id="h_01J8JFFXHTC38ACJ525BYKSF6H" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    ><img
-      src="https://support-apps.discord.com/hc/article_attachments/26593395738775"
-      width="197"
-      height="427"
-  /></span>
+<h4 class="wysiwyg-text-align-center" id="h_01J8JFFXHTC38ACJ525BYKSF6H">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support-apps.discord.com/hc/article_attachments/26593395738775"
+        width="197"
+        height="427" /></span
+  ></span>
 </h4>
 <p>
   3. Select the App you want to launch from the App Launcher menu. You can also
@@ -303,15 +308,12 @@
   />
 </p>
 <h3 id="h_01J8JFFXHTAHGMNY07NC8GBBY3">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Note: Every app is different. To learn how each app functions, check out
-    the app’s profile or the </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >App Directory</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    page for the app. </span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Note: Every app is different. To learn how each app functions, check out
+      the app’s profile or the </span
+    ><span data-darkreader-inline-color=""><strong>App Directory</strong></span
+    ><span data-darkreader-inline-color=""> page for the app. </span></span
   >
 </h3>
 <h1 id="h_01J8JFFXHTAHHEJK5CZYQVYB43">Editing Images in Chat </h1>
@@ -323,25 +325,23 @@
 <p>
   1. <strong>Find the App Launcher on the image</strong>: When viewing an image
   in chat, locate the <strong>App Launcher </strong>button [<span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><img
-      src="https://support-apps.discord.com/hc/article_attachments/26593395753495"
-      width="24"
-      height="24" /></span
+    style="background-color: #ffffff; color: #2e3338"
+    ><span data-darkreader-inline-color="" data-darkreader-inline-bgcolor=""
+      ><img
+        src="https://support-apps.discord.com/hc/article_attachments/26593395753495"
+        width="24"
+        height="24" /></span></span
   >] in the upper-right corner of the image.
 </p>
 <p>
   2. <strong>Select your desired app command</strong>: Select the
   <strong>App</strong> <strong>Launcher</strong> button [<span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><img
-      src="https://support-apps.discord.com/hc/article_attachments/26593395753495"
-      width="24"
-      height="24" /></span
+    style="background-color: #ffffff; color: #2e3338"
+    ><span data-darkreader-inline-color="" data-darkreader-inline-bgcolor=""
+      ><img
+        src="https://support-apps.discord.com/hc/article_attachments/26593395753495"
+        width="24"
+        height="24" /></span></span
   >] to see a list of commands for apps that can modify or interact with the
   image. 
 </p>
@@ -375,7 +375,7 @@
   when users explicitly choose to send them for editing.<br /><br />Discord does
   not provide these apps with access to your message content, and these apps do
   not passively receive information about the Discord server where you might see
-  them in this feature. <br />Users must manually authorize each app and decide
+  them in this feature. <br />Users must manually authorize each app and decide
   to use it on specific images. If you do choose to use one of these apps, then
   the app can access the specific image you're editing, your command request,
   and your basic user profile information (such as your username, ID, avatar,
@@ -506,7 +506,7 @@
   Activity, we recommend that you try the following:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ecba4c08c792f2490eb8743ad0f09cb55">
     If you have our picture-in-picture feature (the ability to see a small
     window of a voice call while you look at other things in the Discord app)
     engaged while playing an Activity, please minimize/close the
@@ -525,7 +525,7 @@
 </p>
 <p> </p>
 <ul>
-  <li>
+  <li data-list-item-id="ee2998f859e8fa5bd3bef5912292b6904">
     If you have your Video enabled while playing an Activity, please disable
     your mobile device camera by pressing on the Video camera icon and keep the
     Activity in focus.
@@ -539,7 +539,7 @@
   />
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e6d402e1ad4b065687d271b82aea98eba">
     If you have any apps opened in the background, please close out those apps. 
   </li>
 </ul>
