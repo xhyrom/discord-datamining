@@ -1,0 +1,212 @@
+.container__5301b {
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  max-width: 660px;
+  min-width: 280px;
+  width: 100%;
+}
+.wide__5301b.container__5301b {
+  display: flex;
+  flex-shrink: 0;
+  height: 250px;
+}
+.tall__5301b.container__5301b {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.contentContainer__5301b {
+  background: var(--background-base-lowest);
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 38px 16px 16px;
+}
+.tall__5301b .contentContainer__5301b {
+  border-radius: 0 0 8px 8px;
+  padding: 16px;
+}
+.buttonContainer__5301b {
+  align-self: flex-start;
+  margin-top: auto;
+}
+.tall__5301b .buttonContainer__5301b {
+  margin-top: 50px;
+  width: 100%;
+}
+.imgContainer__5301b {
+  align-items: center;
+  background: var(--background-base-lower);
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 16px;
+}
+.missingQuestImage__5301b {
+  height: 180px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+}
+.theme-light .contentContainer__5301b {
+  background: var(--background-base-lower);
+}
+.theme-light .imgContainer__5301b {
+  background: var(--background-mod-normal);
+}
+.theme-dark .contentContainer__5301b {
+  background: var(--background-base-lowest);
+}
+.theme-dark .imgContainer__5301b {
+  background: var(--background-base-lower);
+}
+.orbIconSVG__85200 {
+  height: 18px;
+}
+.full-motion .loading__85200 {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: spin__85200;
+  animation-timing-function: linear;
+}
+@keyframes spin__85200 {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.container__2a988 {
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+}
+.inner__2a988 {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.fill__2a988 {
+  height: 100%;
+  inset: 0;
+  opacity: var(--custom-premium-reward-gradient-fill-opacity, 0.3);
+}
+.fill__2a988,
+.glow__2a988 {
+  background: linear-gradient(
+    to right,
+    var(--expressive-gradient-nitro-pink-start),
+    var(--expressive-gradient-nitro-pink-end)
+  );
+  pointer-events: none;
+  position: absolute;
+}
+.glow__2a988 {
+  inset-inline: 0;
+  bottom: 0;
+  height: 75%;
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000);
+  mask-image: linear-gradient(180deg, transparent, #000);
+  opacity: var(--custom-premium-reward-gradient-glow-opacity, 0.4);
+}
+.theme-light {
+  --custom-premium-reward-gradient-glow-opacity: 0.25;
+  --custom-premium-reward-gradient-fill-opacity: 0.25;
+}
+.wrapper__19b5e {
+  align-items: center;
+  background-color: var(--background-base-lowest);
+  border-radius: 8px;
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  box-sizing: border-box;
+  display: flex;
+  gap: 8px;
+  inset-inline-start: 0;
+  margin-inline-start: 16px;
+  padding: 8px;
+  position: absolute;
+  top: 100%;
+  width: 385px;
+}
+.wrapperAccepted__19b5e {
+  width: 305px;
+}
+.rewardTileWrapper__19b5e {
+  flex: 0 0 auto;
+  height: 76px;
+  position: relative;
+  width: 76px;
+}
+.rewardTile__19b5e {
+  border-radius: 4px;
+  display: block;
+}
+.rewardTile__19b5e.rewardTile__19b5e {
+  height: 100%;
+  width: 100%;
+}
+.heading__19b5e .rewardTile__19b5e {
+  flex: 0 0 auto;
+  height: 38px;
+  width: 38px;
+}
+.promotedTag__19b5e {
+  box-sizing: border-box;
+  inset-inline-start: 4px;
+  position: absolute;
+  text-align: center;
+  width: calc(100% - 8px);
+  word-break: break-word;
+  z-index: 1;
+}
+.content__19b5e {
+  flex: 1 1 auto;
+}
+.heading__19b5e {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.headingWithSubmenu__19b5e {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+.questTitle__19b5e {
+  flex: 1 1 auto;
+  margin-inline-end: 24px;
+}
+.gameTile__19b5e {
+  border-radius: 4px;
+  flex: 0 0 auto;
+  height: 38px;
+  width: 38px;
+}
+.ctas__19b5e {
+  display: flex;
+  gap: 8px;
+}
+.submenuWrapper__19b5e {
+  cursor: pointer;
+  inset-inline-end: 8px;
+  position: absolute;
+  top: 8px;
+}
+.submenuIcon__19b5e {
+  color: var(--interactive-text-default);
+  height: 24px;
+  width: 24px;
+}
+.submenuIcon__19b5e:focus,
+.submenuIcon__19b5e:hover {
+  color: var(--interactive-text-hover);
+}
+.submenuIcon__19b5e:active {
+  color: var(--interactive-text-active);
+}
+
+/*# sourceMappingURL=35303.312f1ffcfa80e813.css.map*/
