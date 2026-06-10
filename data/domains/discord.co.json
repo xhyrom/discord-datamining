@@ -11,12 +11,9 @@
     "staging-media-2",
     "staging-media-1",
     "staging-images",
-    "staging-gateway-k8s-d",
     "latency",
-    "staging-gateway-k8s-c",
     "static-edge.staging",
     "staging-gateway-us-east1-b",
-    "staging-gateway-k8s-b",
     "datahub-stg",
     "tracker",
     "staging-gift",
@@ -33,15 +30,16 @@
     "static.staging",
     "smite-anti-abuse-prd",
     "staging",
+    "ads",
     "updates",
     "admin",
     "enam-rtc-sfu-finder",
     "staging-streamkit",
     "remote-auth-gateway",
-    "staging-gateway-us-east1-d",
     "staging-images-1",
+    "staging-gateway-us-east1-d",
     "otelcol",
     "datahub-prd"
   ],
-  "subdomain_count": 42
+  "subdomain_count": 40
 }
