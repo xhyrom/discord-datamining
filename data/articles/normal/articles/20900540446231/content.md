@@ -12,12 +12,12 @@
   launching.
 </div>
 <p>
-  As of <strong>January 21</strong><strong>, 2025</strong>, Discord will no
-  longer be supported on macOS 10.15.
+  As of <strong>January 21, 2025</strong>, Discord will no longer be supported
+  on macOS 10.15.
 </p>
 <p>
   To continue receiving updates and support for your Discord client, you must
-  upgrade to at least macOS 11. Check out our OS/system requirements for Discord
+  upgrade to at least macOS 12. Check out our OS/system requirements for Discord
   <a
     href="https://support.discord.com/hc/en-us/articles/213491697"
     target="_blank"
@@ -30,7 +30,7 @@
   pages:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e96eec386c3ea7fe3d1ebaa70e0cd7df5">
     <a
       href="https://support.apple.com/en-us/HT201541"
       target="_blank"
@@ -38,7 +38,7 @@
       >Upgrade macOS on Mac</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e81f0b451d1df0b9af09d6e0fc76af00b">
     <a
       href="https://support.apple.com/en-us/111980"
       target="_blank"

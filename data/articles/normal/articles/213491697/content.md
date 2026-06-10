@@ -73,7 +73,7 @@
       </tr>
       <tr style="height: 22px">
         <td style="height: 22px; width: 21.8571%">Mac</td>
-        <td style="height: 22px; width: 66.7143%">MacOS 11 (Big Sur)</td>
+        <td style="height: 22px; width: 66.7143%">MacOS 12+ (Monterey)</td>
       </tr>
       <tr style="height: 22px">
         <td style="height: 22px; width: 21.8571%">Linux</td>
@@ -113,6 +113,14 @@
       target="_blank"
       rel="noopener noreferrer"
       >[Known Issue] Support for macOS 10.15</a
+    >
+  </li>
+  <li data-list-item-id="e0afd5fca2a5269f3687589e4bf0fc841">
+    <a
+      href="https://support.discord.com/hc/en-us/articles/41117240080151--Known-Issue-Support-for-macOS-11"
+      target="_blank"
+      rel="noopener noreferrer"
+      >[Known Issue] Support for macOS 11</a
     >
   </li>
   <li data-list-item-id="ea0621792035642a9c49d1a22a4d52274">
