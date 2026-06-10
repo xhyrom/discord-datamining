@@ -1,0 +1,81 @@
+.itemIcon_a647f7 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+.itemIcon_a647f7.hasTooltip_a647f7 {
+  pointer-events: auto;
+}
+.applicationIcon_a647f7 {
+  border-radius: 6px;
+  box-shadow: var(--shadow-high);
+  position: relative;
+}
+.applicationIcon_a647f7 > img {
+  border-radius: inherit;
+  height: inherit;
+  width: inherit;
+}
+.applicationIcon_a647f7:after {
+  border: 1px solid var(--border-normal);
+  border-radius: inherit;
+  content: "";
+  display: inline-block;
+  inset: 0;
+  position: absolute;
+}
+.card__9ed47 {
+  aspect-ratio: 1/1;
+  background-color: var(--background-surface-highest);
+  border-radius: var(--radius-md);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+}
+.custom-user-profile-theme .card__9ed47 {
+  background-color: var(--user-profile-overlay-background);
+}
+.full-motion .card__9ed47 {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.card__9ed47:after {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+.card__9ed47:focus-within,
+.card__9ed47:hover {
+  transform: scale(1.025);
+}
+.cardPreview__9ed47 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  opacity: 0.5;
+  overflow: hidden;
+  width: 100%;
+}
+.full-motion .cardPreview__9ed47 {
+  transition: transform 0.2s ease;
+}
+.skuPreview__9ed47 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=48898.2c49f95f05547f8d.css.map*/
