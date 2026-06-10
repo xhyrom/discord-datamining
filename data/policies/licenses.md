@@ -35244,144 +35244,6 @@ IN THE SOFTWARE.</code></pre>
                   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
                   SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span
                 >
-                <h2 id="cherry-bomb-one">
-                  Cherry Bomb One<a class="hyperlink" href="#cherry-bomb-one"
-                    ><div name="cherry-bomb-one"></div
-                  ></a>
-                </h2>
-                <span class="paragraph-3ckiht"
-                  >Copyright 2019 The Cherry Bomb Project Authors (<a
-                    href="https://github.com/satsuyako/CherryBomb"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span>https://github.com/satsuyako/CherryBomb</span></a
-                  >) Portions copyright 2025 Discord, Inc. Licensed under the
-                  SIL Open Font License, Version 1.1 (<a
-                    href="https://openfontlicense.org/open-font-license-official-text/"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://openfontlicense.org/open-font-license-official-text/</span
-                    ></a
-                  >).</span
-                >
-                <h2 id="chicle">
-                  Chicle<a class="hyperlink" href="#chicle"
-                    ><div name="chicle"></div
-                  ></a>
-                </h2>
-                <span class="paragraph-3ckiht"
-                  >Copyright (c) 2007 Angel Koziupa (sudtipos@sudtipos.com)
-                  Copyright (c) 2007 Alejandro Paul (sudtipos@sudtipos.com)
-                  Portions copyright 2025 Discord, Inc. Licensed under the SIL
-                  Open Font License, Version 1.1 (<a
-                    href="https://openfontlicense.org/open-font-license-official-text/"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://openfontlicense.org/open-font-license-official-text/</span
-                    ></a
-                  >).</span
-                >
-                <h2 id="museo-moderno">
-                  Museo Moderno<a class="hyperlink" href="#museo-moderno"
-                    ><div name="museo-moderno"></div
-                  ></a>
-                </h2>
-                <span class="paragraph-3ckiht"
-                  >Copyright 2020 The MuseoModerno Project Authors (<a
-                    href="https://github.com/Omnibus-Type/MuseoModerno"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://github.com/Omnibus-Type/MuseoModerno</span
-                    ></a
-                  >) Portions copyright 2025 Discord, Inc. Licensed under the
-                  SIL Open Font License, Version 1.1 (<a
-                    href="https://openfontlicense.org/open-font-license-official-text/"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://openfontlicense.org/open-font-license-official-text/</span
-                    ></a
-                  >).</span
-                >
-                <h2 id="neo-castel">
-                  Neo Castel<a class="hyperlink" href="#neo-castel"
-                    ><div name="neo-castel"></div
-                  ></a>
-                </h2>
-                <span class="paragraph-3ckiht"
-                  >Copyright atypeofamigo (<a
-                    href="https://atypeofamigo.com/fonts/neo-castel/"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span>https://atypeofamigo.com/fonts/neo-castel/</span></a
-                  >) Portions copyright 2025 Discord, Inc. Licensed under the
-                  SIL Open Font License, Version 1.1 (<a
-                    href="https://openfontlicense.org/open-font-license-official-text/"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://openfontlicense.org/open-font-license-official-text/</span
-                    ></a
-                  >).</span
-                >
-                <h2 id="pixelify-sans">
-                  Pixelify Sans<a class="hyperlink" href="#pixelify-sans"
-                    ><div name="pixelify-sans"></div
-                  ></a>
-                </h2>
-                <span class="paragraph-3ckiht"
-                  >Copyright 2021 The Pixelify Sans Project Authors (<a
-                    href="https://github.com/eifetx/Pixelify-Sans"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span>https://github.com/eifetx/Pixelify-Sans</span></a
-                  >) Portions copyright 2025 Discord, Inc. Licensed under the
-                  SIL Open Font License, Version 1.1 (<a
-                    href="https://openfontlicense.org/open-font-license-official-text/"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://openfontlicense.org/open-font-license-official-text/</span
-                    ></a
-                  >).</span
-                >
-                <h2 id="sinistre">
-                  Sinistre<a class="hyperlink" href="#sinistre"
-                    ><div name="sinistre"></div
-                  ></a>
-                </h2>
-                <span class="paragraph-3ckiht"
-                  >© 2023, Jules Durand &amp; Collletttivo Portions copyright
-                  2025 Discord, Inc. Licensed under the SIL Open Font License,
-                  Version 1.1 (<a
-                    href="https://openfontlicense.org/open-font-license-official-text/"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://openfontlicense.org/open-font-license-official-text/</span
-                    ></a
-                  >).</span
-                >
-                <h2 id="zilla-slab">
-                  Zilla Slab<a class="hyperlink" href="#zilla-slab"
-                    ><div name="zilla-slab"></div
-                  ></a>
-                </h2>
-                <span class="paragraph-3ckiht"
-                  >Copyright 2017, The Mozilla Foundation Portions copyright
-                  2025 Discord, Inc. Licensed under the SIL Open Font License,
-                  Version 1.1 (<a
-                    href="https://openfontlicense.org/open-font-license-official-text/"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span
-                      >https://openfontlicense.org/open-font-license-official-text/</span
-                    ></a
-                  >).</span
-                >
                 <hr />
                 <h1
                   id="additional-software-used-in-discord-for-windows-mac-and-linux"
@@ -61329,8 +61191,8 @@ specific prior written permission.</code></pre>
                   ></a>
                 </h1>
                 <span class="paragraph-3ckiht"
-                  >The following open source fonts are included in this product.
-                  Each has been modified by Discord, Inc.</span
+                  >The following open source fonts are included in this
+                  product.</span
                 >
                 <hr />
                 <h2 id="vampyre-based-on-sinistre">
@@ -61350,8 +61212,19 @@ specific prior written permission.</code></pre>
                     ></a
                   ></span
                 ><span class="paragraph-3ckiht"
-                  >© 2023, Jules Durand &amp; Collletttivo Portions copyright
-                  2025 Discord, Inc.</span
+                  >© 2023, Jules Durand &amp; Collletttivo</span
+                ><span class="paragraph-3ckiht"
+                  >Portions Copyright 2025 Discord Inc.</span
+                ><span class="paragraph-3ckiht"
+                  >This Font Software is licensed under the SIL Open Font
+                  License, Version 1.1. This license is copied below, and is
+                  also available with a FAQ at:
+                  <a
+                    href="https://openfontlicense.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://openfontlicense.org/</span></a
+                  ></span
                 >
                 <hr />
                 <h2 id="sakura-based-on-cherry-bomb-one">
@@ -61376,7 +61249,19 @@ specific prior written permission.</code></pre>
                     target="_blank"
                     rel="noreferrer"
                     ><span>https://github.com/satsuyako/CherryBomb</span></a
-                  >) Portions copyright 2025 Discord, Inc.</span
+                  >)</span
+                ><span class="paragraph-3ckiht"
+                  >Portions Copyright 2025 Discord Inc.</span
+                ><span class="paragraph-3ckiht"
+                  >This Font Software is licensed under the SIL Open Font
+                  License, Version 1.1. This license is copied below, and is
+                  also available with a FAQ at:
+                  <a
+                    href="https://openfontlicense.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://openfontlicense.org/</span></a
+                  ></span
                 >
                 <hr />
                 <h2 id="jellybean-based-on-chicle">
@@ -61396,9 +61281,23 @@ specific prior written permission.</code></pre>
                     ></a
                   ></span
                 ><span class="paragraph-3ckiht"
-                  >Copyright (c) 2007 Angel Koziupa (sudtipos@sudtipos.com)
-                  Copyright (c) 2007 Alejandro Paul (sudtipos@sudtipos.com)
-                  Portions copyright 2025 Discord, Inc.</span
+                  >Copyright (c) 2007 Angel Koziupa (sudtipos@sudtipos.com),
+                  with Reserved Font Name Chicle.</span
+                ><span class="paragraph-3ckiht"
+                  >Copyright (c) 2007 Alejandro Paul (sudtipos@sudtipos.com),
+                  with Reserved Font Name Chicle.</span
+                ><span class="paragraph-3ckiht"
+                  >Portions Copyright 2025 Discord Inc.</span
+                ><span class="paragraph-3ckiht"
+                  >This Font Software is licensed under the SIL Open Font
+                  License, Version 1.1. This license is copied below, and is
+                  also available with a FAQ at:
+                  <a
+                    href="https://openfontlicense.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://openfontlicense.org/</span></a
+                  ></span
                 >
                 <hr />
                 <h2 id="medieval-based-on-neo-castel">
@@ -61415,13 +61314,19 @@ specific prior written permission.</code></pre>
                     rel="noreferrer"
                     ><span>https://atypeofamigo.com/fonts/neo-castel/</span></a
                   ></span
+                ><span class="paragraph-3ckiht">Copyright 2023 Max Lillo</span
                 ><span class="paragraph-3ckiht"
-                  >Copyright atypeofamigo (<a
-                    href="https://atypeofamigo.com/fonts/neo-castel/"
+                  >Portions Copyright 2025 Discord Inc.</span
+                ><span class="paragraph-3ckiht"
+                  >This Font Software is licensed under the SIL Open Font
+                  License, Version 1.1. This license is copied below, and is
+                  also available with a FAQ at:
+                  <a
+                    href="https://openfontlicense.org/"
                     target="_blank"
                     rel="noreferrer"
-                    ><span>https://atypeofamigo.com/fonts/neo-castel/</span></a
-                  >) Portions copyright 2025 Discord, Inc.</span
+                    ><span>https://openfontlicense.org/</span></a
+                  ></span
                 >
                 <hr />
                 <h2 id="modern-based-on-museo-moderno">
@@ -61448,7 +61353,19 @@ specific prior written permission.</code></pre>
                     ><span
                       >https://github.com/Omnibus-Type/MuseoModerno</span
                     ></a
-                  >) Portions copyright 2025 Discord, Inc.</span
+                  >)</span
+                ><span class="paragraph-3ckiht"
+                  >Portions Copyright 2025 Discord Inc.</span
+                ><span class="paragraph-3ckiht"
+                  >This Font Software is licensed under the SIL Open Font
+                  License, Version 1.1. This license is copied below, and is
+                  also available with a FAQ at:
+                  <a
+                    href="https://openfontlicense.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://openfontlicense.org/</span></a
+                  ></span
                 >
                 <hr />
                 <h2 id="8bit-based-on-pixelify-sans">
@@ -61473,7 +61390,19 @@ specific prior written permission.</code></pre>
                     target="_blank"
                     rel="noreferrer"
                     ><span>https://github.com/eifetx/Pixelify-Sans</span></a
-                  >) Portions copyright 2025 Discord, Inc.</span
+                  >)</span
+                ><span class="paragraph-3ckiht"
+                  >Portions Copyright 2025 Discord Inc.</span
+                ><span class="paragraph-3ckiht"
+                  >This Font Software is licensed under the SIL Open Font
+                  License, Version 1.1. This license is copied below, and is
+                  also available with a FAQ at:
+                  <a
+                    href="https://openfontlicense.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://openfontlicense.org/</span></a
+                  ></span
                 >
                 <hr />
                 <h2 id="tempo-based-on-zilla-slab">
@@ -61493,8 +61422,19 @@ specific prior written permission.</code></pre>
                     ></a
                   ></span
                 ><span class="paragraph-3ckiht"
-                  >Copyright 2017, The Mozilla Foundation Portions copyright
-                  2025 Discord, Inc.</span
+                  >Copyright 2017, The Mozilla Foundation</span
+                ><span class="paragraph-3ckiht"
+                  >Portions Copyright 2025 Discord Inc.</span
+                ><span class="paragraph-3ckiht"
+                  >This Font Software is licensed under the SIL Open Font
+                  License, Version 1.1. This license is copied below, and is
+                  also available with a FAQ at:
+                  <a
+                    href="https://openfontlicense.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://openfontlicense.org/</span></a
+                  ></span
                 >
                 <hr />
                 <h2 id="munro">
