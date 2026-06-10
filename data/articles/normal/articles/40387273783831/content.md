@@ -78,14 +78,6 @@
   <span style="color: #666666">Xbox Connection in the Discord app</span>
 </h4>
 <h1 id="h_01KRY71A472WEBF6QPW4EAJZ4K">How to Earn Nitro Perks</h1>
-<div class="warn-box">
-  <strong>Important:</strong> Your Discord account must be verified to receive
-  Xbox Game Pass Nitro perks. To verify your account, check out
-  <a href="https://support.discord.com/hc/en-us/articles/6181726888215"
-    ><span class="wysiwyg-underline">this</span></a
-  >
-  article.
-</div>
 <p>
   To start receiving your Game Pass perks on Discord, you'll need to link your
   Xbox account to your Discord account.
