@@ -220,6 +220,106 @@
         html[lang="es"] .nav_dd_trigger {
           font-size: 0.75rem;
         }
+        @media screen and (min-width: 1280px) {
+          html[lang="ru"] .nav_link,
+          html[lang="ru"] .nav_dd_trigger {
+            font-size: 0.75rem;
+          }
+        }
+        html[lang="es"] .nav_link,
+        html[lang="es"] .dd_nav-link,
+        html[lang="es"] .nav_dd_trigger,
+        html[lang="ru"] .nav_link,
+        html[lang="ru"] .dd_nav-link,
+        html[lang="ru"] .nav_dd_trigger,
+        html[lang="el"] .nav_link,
+        html[lang="el"] .dd_nav-link,
+        html[lang="el"] .nav_dd_trigger,
+        html[lang="hu"] .nav_link,
+        html[lang="hu"] .dd_nav-link,
+        html[lang="hu"] .nav_dd_trigger,
+        html[lang="uk"] .nav_link,
+        html[lang="uk"] .dd_nav-link,
+        html[lang="uk"] .nav_dd_trigger {
+          font-size: 0.75rem !important;
+        }
+        @media screen and (max-width: 1280px) {
+          html[lang="ru"] .nav_link,
+          html[lang="ru"] .nav_dd_trigger {
+            font-size: 0.6rem;
+          }
+          html[lang="es"] .nav_link,
+          html[lang="es"] .dd_nav-link,
+          html[lang="es"] .nav_dd_trigger,
+          html[lang="da"] .nav_link,
+          html[lang="da"] .dd_nav-link,
+          html[lang="da"] .nav_dd_trigger,
+          html[lang="de"] .nav_link,
+          html[lang="de"] .dd_nav-link,
+          html[lang="de"] .nav_dd_trigger,
+          html[lang="es-LA"] .nav_link,
+          html[lang="es-LA"] .dd_nav-link,
+          html[lang="es-LA"] .nav_dd_trigger,
+          html[lang="fr"] .nav_link,
+          html[lang="fr"] .dd_nav-link,
+          html[lang="fr"] .nav_dd_trigger,
+          html[lang="hr"] .nav_link,
+          html[lang="hr"] .dd_nav-link,
+          html[lang="hr"] .nav_dd_trigger,
+          html[lang="it"] .nav_link,
+          html[lang="it"] .dd_nav-link,
+          html[lang="it"] .nav_dd_trigger,
+          html[lang="it"] .nav_link,
+          html[lang="it"] .dd_nav-link,
+          html[lang="it"] .nav_dd_trigger,
+          html[lang="lt"] .nav_link,
+          html[lang="lt"] .dd_nav-link,
+          html[lang="lt"] .nav_dd_trigger,
+          html[lang="nl"] .nav_link,
+          html[lang="nl"] .dd_nav-link,
+          html[lang="nl"] .nav_dd_trigger,
+          html[lang="no"] .nav_link,
+          html[lang="no"] .dd_nav-link,
+          html[lang="no"] .nav_dd_trigger,
+          html[lang="pl"] .nav_link,
+          html[lang="pl"] .dd_nav-link,
+          html[lang="pl"] .nav_dd_trigger,
+          html[lang="pt-BR"] .nav_link,
+          html[lang="pt-BR"] .dd_nav-link,
+          html[lang="pt-BR"] .nav_dd_trigger,
+          html[lang="ro"] .nav_link,
+          html[lang="ro"] .dd_nav-link,
+          html[lang="ro"] .nav_dd_trigger,
+          html[lang="sv"] .nav_link,
+          html[lang="sv"] .dd_nav-link,
+          html[lang="sv"] .nav_dd_trigger,
+          html[lang="vi"] .nav_link,
+          html[lang="vi"] .dd_nav-link,
+          html[lang="vi"] .nav_dd_trigger,
+          html[lang="th"] .nav_link,
+          html[lang="th"] .dd_nav-link,
+          html[lang="th"] .nav_dd_trigger,
+          html[lang="bg"] .nav_link,
+          html[lang="bg"] .dd_nav-link,
+          html[lang="bg"] .nav_dd_trigger,
+          html[lang="ja"] .nav_link,
+          html[lang="ja"] .dd_nav-link,
+          html[lang="ja"] .nav_dd_trigger,
+          html[lang="ru"] .nav_link,
+          html[lang="ru"] .dd_nav-link,
+          html[lang="ru"] .nav_dd_trigger,
+          html[lang="el"] .nav_link,
+          html[lang="el"] .dd_nav-link,
+          html[lang="el"] .nav_dd_trigger,
+          html[lang="hu"] .nav_link,
+          html[lang="hu"] .dd_nav-link,
+          html[lang="hu"] .nav_dd_trigger,
+          html[lang="uk"] .nav_link,
+          html[lang="uk"] .dd_nav-link,
+          html[lang="uk"] .nav_dd_trigger {
+            font-size: 0.6rem !important;
+          }
+        }
       </style>
     </div>
     <div class="nav_padding">
