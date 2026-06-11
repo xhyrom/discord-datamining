@@ -1,0 +1,271 @@
+.itemIcon_a647f7 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+.itemIcon_a647f7.hasTooltip_a647f7 {
+  pointer-events: auto;
+}
+.applicationIcon_a647f7 {
+  border-radius: 6px;
+  box-shadow: var(--shadow-high);
+  position: relative;
+}
+.applicationIcon_a647f7 > img {
+  border-radius: inherit;
+  height: inherit;
+  width: inherit;
+}
+.applicationIcon_a647f7:after {
+  border: 1px solid var(--border-normal);
+  border-radius: inherit;
+  content: "";
+  display: inline-block;
+  inset: 0;
+  position: absolute;
+}
+.itemIcon_d9866f {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+.itemIcon_d9866f.hasTooltip_d9866f {
+  pointer-events: auto;
+}
+.itemIconBackground_d9866f {
+  background-color: var(--control-overlay-secondary-background-default);
+  border-radius: var(--radius-round);
+  padding: 2px;
+}
+.card__02d09 {
+  background: var(--background-base-low);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 190px;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+  transform: translateY(0);
+  width: 294px;
+}
+.card__02d09:after {
+  border: 2px solid var(--border-subtle);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+.cardImageContainer__02d09 {
+  bottom: 0;
+  top: 0;
+  inset-inline: 0;
+  z-index: 0;
+}
+.cardDark__02d09 {
+  background-color: var(--background-surface-high);
+}
+.cardHighlighted__02d09 {
+  box-shadow: var(--shadow-border), var(--shadow-high);
+}
+.cardDark__02d09.cardHighlighted__02d09 {
+  box-shadow: 0 0 15px 1px var(--primary-700);
+}
+.cardAnimation__02d09 {
+  transform: scale(100%);
+}
+.cardAnimation__02d09:has(:focus-visible),
+.cardAnimation__02d09:hover {
+  transform: scale(105%);
+}
+.full-motion .cardAnimation__02d09 {
+  transition:
+    transform 0.5s,
+    box-shadow 0.5s;
+}
+.cardBackgroundImage__02d09 {
+  background-color: var(--background-base-low);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(110%);
+}
+.full-motion .cardBackgroundImage__02d09 {
+  transition: transform 0.5s;
+}
+.cardImage__02d09 {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.full-motion .cardImage__02d09 {
+  transition: transform 0.5s;
+}
+.details__02d09 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  z-index: 1;
+}
+.titleContainer__02d09 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  transform: translateY(0);
+}
+.full-motion .titleContainer__02d09 {
+  transition: transform 0.5s;
+}
+.descriptionContainer__02d09 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  opacity: 1;
+}
+.full-motion .descriptionContainer__02d09 {
+  transition:
+    opacity 0.25s,
+    transform 0.25s;
+}
+.buttonHover__02d09 {
+  bottom: 16px;
+  inset-inline: 16px;
+  position: absolute;
+  transform: translateY(150%);
+  z-index: 1;
+}
+.full-motion .buttonHover__02d09 {
+  transition: all 0.5s;
+}
+.card__02d09:has(:focus-visible) .buttonHover__02d09,
+.card__02d09:hover .buttonHover__02d09 {
+  transform: translateY(0);
+}
+.card__02d09:has(:focus-visible) .descriptionContainer__02d09,
+.card__02d09:hover .descriptionContainer__02d09 {
+  opacity: 0;
+  transform: translateY(50%);
+}
+.card__02d09:has(:focus-visible) .titleContainer__02d09,
+.card__02d09:hover .titleContainer__02d09 {
+  transform: translateY(-100%);
+}
+.card__02d09:has(:focus-visible) .titleContainerNoPrice__02d09,
+.card__02d09:hover .titleContainerNoPrice__02d09 {
+  transform: translateY(-180%);
+}
+.card__02d09:has(:focus-visible) .titleContainerExtendedHeight__02d09,
+.card__02d09:hover .titleContainerExtendedHeight__02d09 {
+  transform: translateY(-5%);
+}
+.card__02d09:has(:focus-visible) .bottomGradient__02d09,
+.card__02d09:hover .bottomGradient__02d09 {
+  transform: translateY(-15%);
+}
+.card__02d09:has(:focus-visible) .cardBackgroundImage__02d09,
+.card__02d09:hover .cardBackgroundImage__02d09 {
+  transform: scale(100%);
+}
+.card__02d09:has(:focus-visible) .cardImage__02d09,
+.card__02d09:hover .cardImage__02d09 {
+  transform: scale(105%);
+}
+.priceContainer__02d09 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  justify-content: flex-start;
+}
+.strikethrough__02d09 {
+  text-decoration: line-through;
+}
+.bottomGradient__02d09 {
+  bottom: -25%;
+  height: 100%;
+  inset-inline-end: 0;
+  position: absolute;
+  transform: translateY(0);
+  width: 100%;
+}
+.full-motion .bottomGradient__02d09 {
+  transition: transform 0.5s;
+}
+.iconAsset__02d09 {
+  height: 20px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  width: 20px;
+}
+.orbsEarnedContainer__02d09 {
+  color: color-mix(in srgb, var(--white) 60%, transparent);
+}
+.orbsEarnedContainer__02d09 > div {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+}
+.card__9ed47 {
+  aspect-ratio: 1/1;
+  background-color: var(--background-surface-highest);
+  border-radius: var(--radius-md);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+}
+.custom-user-profile-theme .card__9ed47 {
+  background-color: var(--user-profile-overlay-background);
+}
+.full-motion .card__9ed47 {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.card__9ed47:after {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+.card__9ed47:focus-within,
+.card__9ed47:hover {
+  transform: scale(1.025);
+}
+.cardPreview__9ed47 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  opacity: 0.5;
+  overflow: hidden;
+  width: 100%;
+}
+.full-motion .cardPreview__9ed47 {
+  transition: transform 0.2s ease;
+}
+.skuPreview__9ed47 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=34712.3ccde35a524bcd05.css.map*/
