@@ -2,49 +2,56 @@
   Have a new image that you’re excited to share with your friends? We will show
   you how to do that and more!
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul>
-  <li data-list-item-id="ebeb92606b26368beb32f9fd472924723">
-    <a href="#h_01GWWTHCAK3W9FW7DRYQ22FFRC" target="_self"
-      >How to Upload an Image</a
+<div class="toc-box">
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
     >
-    <ul>
-      <li data-list-item-id="e837d77c1127d25641447608f6a680a2a">
-        <a href="#h_01GWWTHJMX8ZDJ1SBKK9ZV17VG" target="_self"
-          >Drag &amp; Drop</a
-        >
-      </li>
-      <li data-list-item-id="e87e4bf8f980f1f7eaeb63cd9f101b148">
-        <a href="#h_01GWWTHPMEJJ8W9YPRD0JD64R2" target="_self"
-          >Upload From File</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li data-list-item-id="eb28d0ef8422e82b6d47cf1c44d0739d2">
-    <a href="#h_01GWWTHYJEV2S1WCDGFEMY21AQ" target="_self"
-      >Add Alt Text To Your Image Upload</a
-    >
-    <ul>
-      <li data-list-item-id="e340f3f4d134baf9f164cd1ba7997bad6">
-        <a href="#h_01GWWTJ313QZXE8KY5XS3HYN8G" target="_self">Desktop</a>
-      </li>
-      <li data-list-item-id="e572661aa6c5191d65308e666040e7948">
-        <a href="#h_01GWWTJ8S6Q29GJD76H6YPHS1H" target="_self">Mobile</a>
-      </li>
-      <li data-list-item-id="e917bf84974a15400d7e609db7af7968f">
-        <a href="#h_01GWWTJEKMRPV2VKJPQFXRP835" target="_self"
-          >When writing image alt text, there a few things to keep in mind</a
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
-<h1 id="h_01GWWTHCAK3W9FW7DRYQ22FFRC">How to Upload an Image</h1>
+  </p>
+  <ul>
+    <li data-list-item-id="ef2229c234edc85864ca46bd9ee49b0d1">
+      <a href="#h_01GWWTHCAK3W9FW7DRYQ22FFRC" target="_self"
+        >How to Upload an Image</a
+      >
+      <ul>
+        <li data-list-item-id="eb877b59863ab807b862eb9ffbd1ca553">
+          <a href="#h_01GWWTHJMX8ZDJ1SBKK9ZV17VG" target="_self"
+            >Drag &amp; Drop</a
+          >
+        </li>
+        <li data-list-item-id="effc252ef2d53a38c37958adaa693e03a">
+          <a href="#h_01GWWTHPMEJJ8W9YPRD0JD64R2" target="_self"
+            >Upload From File</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="e9b712ef11e7556c0873c3fdbe925f181">
+      <a href="#h_01GWWTHYJEV2S1WCDGFEMY21AQ" target="_self"
+        >Add Alt Text To Your Image Upload</a
+      >
+      <ul>
+        <li data-list-item-id="e8453979be08db156263277d11177b784">
+          <a href="#h_01GWWTJ313QZXE8KY5XS3HYN8G" target="_self">Desktop</a>
+        </li>
+        <li data-list-item-id="e909656569f37b2fb3a6815d072f64836">
+          <a href="#h_01GWWTJ8S6Q29GJD76H6YPHS1H" target="_self">Mobile</a>
+        </li>
+        <li data-list-item-id="e2ae4c3b9b19664f9d36a44d5ac6ad8cb">
+          <a href="#h_01GWWTJEKMRPV2VKJPQFXRP835" target="_self"
+            >When writing image alt text, there a few things to keep in mind</a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="exp-box">
+  <strong>Important:</strong> We’re currently experimenting with various file
+  upload size limits. Select users may have the ability to upload larger file
+  sizes.
+</div>
+<h1 id="h_01KT2GQ6QEF3139KX11YTYXZGS">How to Upload an Image</h1>
 <h3 id="h_01K6PHCKRTBAG5XVW22JJN7ZNQ">
   <span style="color: #434343"
     ><span data-darkreader-inline-color=""
@@ -162,20 +169,20 @@
   When writing image alt text, there a few things to keep in mind:
 </h2>
 <ul>
-  <li data-list-item-id="ed2777e7b88250415ac5179f5c80966ac">
+  <li data-list-item-id="e0d7bb69f2d3fc6e90c02a0a0b1277df2">
     Aim to be succinct and specific! Avoid repeating details.
   </li>
-  <li data-list-item-id="e66e748a3c57c15e5f89139c523188353">
+  <li data-list-item-id="e87c1be9797096d60904e74cb54b42746">
     Don’t start the alt text with “image of…” or “picture of…” since screen
     readers will usually announce that an image is a “graphic” then state the
     provided alt text.
   </li>
-  <li data-list-item-id="e2778d56ef711720400e6822a5a034c78">
+  <li data-list-item-id="eb11448cbf54a74fbebbc9bb6f9c34d7a">
     Make sure to call out specific details. For example, state any text that’s
     in the image and the names of prominent figures, landmarks, etc. if they are
     in the image.
   </li>
-  <li data-list-item-id="e284ff2b7ca3c35ec8845a25182ab6c7e">
+  <li data-list-item-id="ee7309334a1242fe1df310b246f7f694c">
     Context is key! When describing the image, describe what the image is
     supposed to communicate to viewers, not just what is literally in the image.
   </li>
