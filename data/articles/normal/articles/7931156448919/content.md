@@ -5,105 +5,54 @@
     ><br /> 
   </p>
   <ul>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e583c4c02edd6e00c5db5cea3e1d2eebc"
-    >
+    <li data-list-item-id="ea9a5c298bcaa1af5913f1e27ac52d139">
       <a href="#h_01HTJA8QV5YFRR10TQ9RBZM8SS"
-        ><strong>What is Activity Sharing on Discord?</strong></a
+        >What is Activity Sharing on Discord?</a
       >
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e125a92c1fade458930d40e14a7df99ae"
-    >
-      <a href="#h_01HTJA8QV5TNKJRY98GXQSHJQQ"
-        ><strong>How to View Activity</strong></a
-      >
+    <li data-list-item-id="ea7cc2eb764d4cae92de75ca21636d72e">
+      <a href="#h_01HTJA8QV5TNKJRY98GXQSHJQQ">How to View Activity</a>
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e8481b0f8fa5e41fae830489ee813aed1"
-        >
-          <a href="#h_01HTJA8QV5GP22NWFTXYNKW3GX"
-            ><strong>Within User Profiles</strong></a
-          >
+        <li data-list-item-id="e006196e8c798615f3759535e614cfe5e">
+          <a href="#h_01HTJA8QV5GP22NWFTXYNKW3GX">Within User Profiles</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e194f2661a739b4249fedeb30ae08f5f2"
-        >
-          <a href="#h_01HTJA8QV59M70ZB3DY4THZM27"
-            ><strong>On Global Activity Cards</strong></a
-          >
+        <li data-list-item-id="e2ac4d54e79479f136dc9f4eed8184545">
+          <a href="#h_01HTJA8QV59M70ZB3DY4THZM27">On Global Activity Cards</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e89ea067a5c090809056aebd9da685ad8"
-        >
-          <a href="#h_01HTJA8QV5ZFGKBM8QNZA4S4JZ"
-            ><strong>As a Status Message</strong></a
-          >
+        <li data-list-item-id="ee6b1e6bb617ad319b76bb2b7e75e945c">
+          <a href="#h_01HTJA8QV5ZFGKBM8QNZA4S4JZ">As a Status Message</a>
         </li>
       </ul>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="eb644d39a110ddd404676e4d6fb733fe7"
-    >
+    <li data-list-item-id="e6e28dcc4055a620f42b888e6c8d19ab1">
       <a href="#h_01HTJA8QV5EZK2YFH8G4T6JD9D"
-        ><strong>How do I control who sees my activity?</strong></a
+        >How do I control who sees my activity?</a
       >
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e2ac1b20c8210c184401fa9f8344b46c2"
-        >
-          <a href="#h_01HTJA8QV5H72HKXSNDXME2NAS"
-            ><strong>Global Settings</strong></a
-          >
+        <li data-list-item-id="e7bc347e15eb98fb2319600a23dd1e104">
+          <a href="#h_01HTJA8QV5H72HKXSNDXME2NAS">Global Settings</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e97566ce52446ee285f521b211b6673dc"
-        >
-          <a href="#h_01HTJA8QV57FRX82WP3T41Z3G8"
-            ><strong>Per-server Control</strong></a
-          >
+        <li data-list-item-id="e525c2762fd3d7c10f8e30aa177dc1aef">
+          <a href="#h_01HTJA8QV57FRX82WP3T41Z3G8">Per-server Control</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e99318197d20feeb25433bd02644fb79e"
-        >
-          <a href="#h_01HTJA8QV5M1VHRW89M024JHDT"
-            ><strong>Connection Settings</strong></a
-          >
+        <li data-list-item-id="ebb5e2aa429b9d620a7560e64aed1fd9c">
+          <a href="#h_01HTJA8QV5M1VHRW89M024JHDT">Connection Settings</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ee696a97cbcbb82732babddbe906d90df"
-        >
-          <a href="#h_01HTJA8QV5ABSA6FY6GEPMA946"
-            ><strong>Game Detection</strong></a
-          >
+        <li data-list-item-id="efcdf446ff784d2ce78190f8db7ef5fd9">
+          <a href="#h_01HTJA8QV5ABSA6FY6GEPMA946">Game Detection</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e0a6bcedf3f4d020fa1a0e034780f7f8b"
-        >
-          <a href="#h_01J5NNZS153N6H9V1S5A6WMMPK"
-            ><strong>Recent Activity History</strong></a
-          >
+        <li data-list-item-id="ea69b5ccdb9551d9ab412b32fa1ce4734">
+          <a href="#h_01J5NNZS153N6H9V1S5A6WMMPK">Recent Activity History</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e033b81961239a2665766e20cf1044cb5"
-        >
-          <a href="#h_01K2JEV10ZY89CHQ5JXCSQPM10"
-            ><strong>Who Can Join My Game</strong></a
-          >
+        <li data-list-item-id="ed8d88ea75ac206e097d90664f9aa8845">
+          <a href="#h_01K2JEV10ZY89CHQ5JXCSQPM10">Who Can Join My Game</a>
         </li>
       </ul>
+    </li>
+    <li data-list-item-id="eef15a5fe7291d0a7f2e096ad5781e01d">
+      <a href="#h_01KP691D10QB9Z3Z49T61Q48HB"
+        >How Activity Sharing Works with Profile Privacy Setting</a
+      >
     </li>
   </ul>
 </div>
@@ -115,10 +64,10 @@
   activity. Some examples of the types of activity we show:
 </p>
 <ol>
-  <li data-list-item-id="e60e51890c90123844d33916291b1a9b8">
+  <li data-list-item-id="e579a523e51d5bc1ad384bbcda3a32aba">
     Detectable games you’re playing on a computer
   </li>
-  <li data-list-item-id="e0eb3dd6f56d39cd22cba5dbefdb26049">
+  <li data-list-item-id="e102ab99fb76909ac0477e3d66640db8c">
     Games you’re playing on
     <a
       href="https://support.discord.com/hc/en-us/articles/360003953831-Discord-and-Xbox-Connection-FAQ"
@@ -134,7 +83,7 @@
       >PlayStation</a
     >
   </li>
-  <li data-list-item-id="e51c5e289b39daebce871c1dd1536186f">
+  <li data-list-item-id="ecc4fde45fd8743ed3821f7fd06121c22">
     <a
       href="https://support.discord.com/hc/en-us/articles/360000167212-Discord-Spotify-Connection"
       target="_blank"
@@ -142,7 +91,7 @@
       >Spotify</a
     >
   </li>
-  <li data-list-item-id="e73621393f4b68d44d65011b9f4c111fd">
+  <li data-list-item-id="ed3acc04ffc9918c55c68a3f824c55a6b">
     <a
       href="https://support.discord.com/hc/en-us/articles/9929188048023-Discord-and-Crunchyroll-Connection-FAQ"
       target="_blank"
@@ -150,7 +99,7 @@
       >Crunchyroll</a
     >
   </li>
-  <li data-list-item-id="eb77edc2639f51f148d7ca65c28005731">
+  <li data-list-item-id="eb7a914f576c11a19b658203d83d0ecbe">
     1st and 3rd party
     <a
       href="https://support-apps.discord.com/hc/sections/26498424335895"
@@ -159,7 +108,7 @@
       >Activities on Discord</a
     >
   </li>
-  <li data-list-item-id="ec1ec04a1bb361635598057a3b7fbaee0">And more!</li>
+  <li data-list-item-id="e6e5009a84fea86b86ca48b04cb867028">And more!</li>
 </ol>
 <p>
   Games and activities that support Rich Presence will show even more cool stuff
@@ -274,17 +223,17 @@
     corresponds to your region for further details.
   </p>
   <ul>
-    <li data-list-item-id="e60657bf45ee3147da7f6226fc48c14e1">
+    <li data-list-item-id="e1f52bf28bce73ff64d832d8d7780e748">
       <a href="https://support.discord.com/hc/en-us/articles/33362401287959"
         ><span class="wysiwyg-underline">United Kingdom</span></a
       >
     </li>
-    <li data-list-item-id="e3cc03d20625957b939b87f27f67af5a0">
+    <li data-list-item-id="e689f8fabc4823e32fb29b77ad618e842">
       <a href="https://support.discord.com/hc/en-us/articles/38832004637207"
         ><span class="wysiwyg-underline">Australia</span></a
       >
     </li>
-    <li data-list-item-id="eba18e8fb953c95a3fe9666b3b03d16bf">
+    <li data-list-item-id="e55343d056e6da5240389954e5fba1f79">
       <a href="https://support.discord.com/hc/en-us/articles/38860612202775"
         ><span class="wysiwyg-underline">Brazil</span></a
       >
@@ -323,7 +272,7 @@
 </p>
 <p>First, decide whether you’d like to share your activity with others:</p>
 <ul>
-  <li data-list-item-id="e45629602d0b6152f34793e0b007254ef">
+  <li data-list-item-id="e2d59a8c7a487137f956ba68e7cd29438">
     <strong>Share my activity</strong> - This toggle controls whether or not
     others on Discord can see your activity sharing.
   </li>
@@ -333,12 +282,12 @@
   in the <strong>Servers I share with</strong> section:
 </p>
 <ul>
-  <li data-list-item-id="eddea0fd68d60804a9632b01c1b011394">
+  <li data-list-item-id="ef68cd737bd6bbe86721b153d8cfa92b6">
     <strong>Automatically share my activity when joining a server</strong> -
     This toggle determines if your activity is visible by default in new servers
     that you join.
   </li>
-  <li data-list-item-id="e9d0321432675fa7be5b1d509a1fb0d29">
+  <li data-list-item-id="e2679f0f6846c8959ae9872fba044fd3b">
     <strong>My Servers</strong> - Further customize your activity sharing by
     enabling or disabling your activity sharing on a per server basis.
   </li>
@@ -511,3 +460,29 @@
     alt="activity-sharing-who-can-join-my-games.png"
   />
 </p>
+<h1 id="h_01KP691D10QB9Z3Z49T61Q48HB">
+  How Activity Sharing Works With Profile Privacy Setting
+</h1>
+<div class="warn-box">
+  <strong>Important:</strong>
+  <a
+    href="https://support.discord.com/hc/en-us/articles/38859942749463"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Profile Privacy setting</a
+  >
+  is currently being tested and may not be available to all users.
+</div>
+<p>
+  Profile Privacy setting and Activity Sharing are separate settings, but they
+  work together to give you consistent control over your visibility on Discord.
+</p>
+<p>
+  <strong>When you change your Profile Privacy setting</strong>, you'll be
+  prompted to update your <strong>Activity Sharing</strong> setting to match and
+  vice versa. For example, if you set your <strong>Profile Privacy</strong> to
+  <strong>Friends Only</strong>, Discord will ask if you'd like to restrict your
+  <strong>Activity Sharing</strong> to friends only as well. You can choose to
+  update both settings at once, or decline and manage them independently.
+</p>
+<p> </p>
