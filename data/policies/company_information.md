@@ -266,9 +266,93 @@
               >
             </li>
             <li>
-              <a href="/servers" class="nav_link"
-                >Discover<span class="sr-only">3 of 9</span></a
+              <div
+                data-delay="0"
+                data-hover="true"
+                class="nav_dd is-relative w-dropdown"
               >
+                <div class="nav_dd_trigger w-dropdown-toggle">
+                  <div>
+                    <span class="menu-title">Discover</span>
+                    <span class="sr-only">3 of 9</span>
+                  </div>
+                  <div class="nav_dd_arrow-wr-white">
+                    <div class="nav_dd_arrow w-embed">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 6L8 10L4 6"
+                          stroke="white"
+                          stroke-opacity="0.5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="nav_dd_arrow-wr-black">
+                    <div class="nav_dd_arrow w-embed">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 6L8 10L4 6"
+                          stroke="black"
+                          stroke-opacity="0.5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <a
+                    tabindex="0"
+                    href="https://discord.com/servers"
+                    class="nav_link_dropdown w-inline-block"
+                  ></a>
+                </div>
+                <nav class="nav_dd_list is-safety w-dropdown-list">
+                  <div class="nav_dd_content-wr isnew">
+                    <div class="nav_dd_content_layout top-none _1-col">
+                      <div class="nav_dd_link-group">
+                        <div class="nav_dd_link_list">
+                          <div class="nav_dd_link_title">Resources</div>
+                          <a
+                            href="https://discord.com/servers"
+                            class="dd_nav-link"
+                            >Server Directory<span class="sr-only"
+                              >1 of 2</span
+                            ></a
+                          ><a
+                            href="https://discord.com/trending-games"
+                            class="dd_nav-link"
+                            >Trending Games<span class="sr-only"
+                              >2 of 2</span
+                            ></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      loading="eager"
+                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6a1fdab6dacb93b00f5ec24d_Discord_Objects_Newspaper.webp"
+                      alt=""
+                      class="nav-dd-decor is_discover"
+                    />
+                  </div>
+                </nav>
+              </div>
             </li>
             <li>
               <div
@@ -1026,9 +1110,62 @@
                   <a href="https://discord.com/nitro" class="nav_link">Nitro</a>
                 </li>
                 <li>
-                  <a href="https://discord.com/servers" class="nav_link"
-                    >Discover</a
+                  <div
+                    data-delay="0"
+                    data-hover="false"
+                    class="nav_dd w-dropdown"
                   >
+                    <div class="nav_dd_trigger w-dropdown-toggle">
+                      <div>Discover</div>
+                      <div class="nav_dd_arrow w-embed">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 6L8 10L4 6"
+                            stroke="white"
+                            stroke-opacity="0.5"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <nav class="nav_dd_list is-burger w-dropdown-list">
+                      <div class="nav_dd_content-wr">
+                        <div class="nav_dd_separator"></div>
+                        <div class="nav_dd_content_layout">
+                          <div class="nav_dd_link-group">
+                            <a
+                              href="https://discord.com/servers"
+                              class="nav_dd_link-group_title is-new"
+                              >Discover</a
+                            >
+                            <div class="nav_dd_link_list">
+                              <div class="nav_dd_link_title is-new">
+                                Resources
+                              </div>
+                              <a
+                                href="https://discord.com/servers"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Server Directory</div></a
+                              ><a
+                                href="https://discord.com/trending-games"
+                                class="dd_nav-link is-new"
+                                >Trending Games</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="nav_dd_list_bg"></div>
+                      </div>
+                    </nav>
+                  </div>
                 </li>
                 <li>
                   <div
