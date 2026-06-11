@@ -3406,5 +3406,16 @@
     "pubDate": "Wed, 10 Jun 2026 00:00:00 GMT",
     "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a2745e353a855b298f3162d_2024_10_DiscordBlog_UsingDiscord-3.png",
     "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a2745e353a855b298f3162d_2024_10_DiscordBlog_UsingDiscord-3.png"
+  },
+  {
+    "id": "updated-requirements-to-how-apps-access-data-in-servers",
+    "body": "",
+    "title": "Updated Requirements to How Apps Access Data in Servers",
+    "link": "https://discord.com/blog/updated-requirements-to-how-apps-access-data-in-servers",
+    "guid": "https://discord.com/blog/updated-requirements-to-how-apps-access-data-in-servers",
+    "description": "Discord is updating requirements to how apps access certain data within servers, changing the review threshold and requiring annual review. Here's what's changing and why.\n",
+    "pubDate": "Wed, 10 Jun 2026 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a288b1f807541d41908c42b_image1.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a288b1f807541d41908c42b_image1.png"
   }
 ]
