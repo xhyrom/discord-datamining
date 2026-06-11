@@ -61451,6 +61451,16 @@ specific prior written permission.</code></pre>
                   ></span
                 ><span class="paragraph-3ckiht"
                   >Typeface © (Ten by Twenty). 2007. All Rights Reserved.</span
+                ><span class="paragraph-3ckiht"
+                  >This Font Software is licensed under the SIL Open Font
+                  License, Version 1.1. This license is copied below, and is
+                  also available with a FAQ at:
+                  <a
+                    href="https://openfontlicense.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://openfontlicense.org/</span></a
+                  ></span
                 >
                 <hr />
                 <h2 id="delicious-handrawn">
@@ -61478,6 +61488,16 @@ specific prior written permission.</code></pre>
                       >https://github.com/alphArtype/Delicious-Handrawn</span
                     ></a
                   >)</span
+                ><span class="paragraph-3ckiht"
+                  >This Font Software is licensed under the SIL Open Font
+                  License, Version 1.1. This license is copied below, and is
+                  also available with a FAQ at:
+                  <a
+                    href="https://openfontlicense.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://openfontlicense.org/</span></a
+                  ></span
                 >
                 <hr />
                 <h2 id="sil-open-font-license-version-11">
