@@ -1,0 +1,113 @@
+.socialLayerCardHover__517e1 .socialLayerCardBackgroundImage__517e1 {
+  transform: scale(100%);
+}
+.socialLayerCardHover__517e1 .socialLayerCardImage__517e1 {
+  transform: scale(105%);
+}
+.socialLayerCard__517e1 {
+  border-radius: none;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.socialLayerCardBackgroundImage__517e1 {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  inset-inline: 0;
+  bottom: 0;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: scale(105%);
+  width: 100%;
+}
+.full-motion .socialLayerCardBackgroundImage__517e1 {
+  transition: transform 0.5s;
+}
+.socialLayerCardImage__517e1 {
+  inset-inline: 0;
+  bottom: 0;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  position: absolute;
+  transform: scale(100%);
+  width: 100%;
+}
+.full-motion .socialLayerCardImage__517e1 {
+  transition: transform 0.5s;
+}
+.profileEffectPreview__517e1 {
+  align-items: flex-start;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.nameplatePreview__517e1 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: var(--space-4);
+  position: relative;
+  width: 100%;
+}
+.full-motion .nameplatePreview__517e1 {
+  transition: transform 0.2s ease;
+}
+.nameplatePreviewRescaler__517e1 {
+  inset: -12.5%;
+  position: absolute;
+}
+.bundlePreview__517e1,
+.nameplatePreviewRescaler__517e1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transform: scale(0.8);
+  transform-origin: center;
+}
+.bundlePreview__517e1,
+.profileFramePreview__517e1 {
+  height: 100%;
+  width: 100%;
+}
+.profileFramePreview__517e1 {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding-block: var(--custom-profile-frame-preview-padding-block, 16px);
+  padding-inline: var(--custom-profile-frame-preview-padding-inline, 24px);
+}
+.bundleStaticPreview__517e1,
+.premiumPreview__517e1 {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.premiumPreview__517e1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transform-origin: center;
+}
+.premiumRive__517e1 {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.full-motion .premiumRive__517e1 {
+  transition: transform 0.2s ease;
+}
+.premiumCardHover__517e1 {
+  transform: scale(0.8) translateY(-22px);
+}
+
+/*# sourceMappingURL=38123.dbdefe80dcfc62ee.css.map*/
