@@ -29,7 +29,7 @@
     }
   ],
   "id": 8552176002,
-  "updated_at": "2026-06-03T11:37:15-04:00",
+  "updated_at": "2026-06-11T15:02:34-04:00",
   "requisition_id": "R-101048",
   "title": "Engineering Manager, Core Product",
   "company_name": "Discord",
@@ -47,9 +47,9 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }
