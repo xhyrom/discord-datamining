@@ -27,7 +27,7 @@
   >. If you're not sure whether your app needs these intents and their potential
   alternatives, please review our
   <a
-    href="https://www.notion.so/You-Might-Not-Need-a-Privileged-Intent-guide-33df46fd48aa80a9b257e1ed3eb0b6c9?pvs=21"
+    href="https://docs.discord.com/developers/gateway/you-might-not-need-a-privileged-intent"
     target="_blank"
     rel="noopener noreferrer"
     >You Might Not Need Privileged Intent</a
