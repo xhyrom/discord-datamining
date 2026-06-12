@@ -1,0 +1,39 @@
+.nameplatePreviewContainer_f7b5db {
+  align-items: center;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0,
+    #000 30%,
+    #000 70%,
+    rgba(0, 0, 0, 0.2)
+  );
+  mask-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0,
+    #000 30%,
+    #000 70%,
+    rgba(0, 0, 0, 0.2)
+  );
+  max-height: 100%;
+  max-width: 252px;
+}
+.nameplatePreviewContainer_f7b5db,
+.nameplatePreviewList_f7b5db {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.nameplatePreviewList_f7b5db {
+  flex-direction: column;
+  gap: var(--space-4);
+  justify-content: center;
+}
+.nameplatePreviewSampleItem_f7b5db {
+  align-items: center;
+  display: flex;
+  height: 42px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=59867.5fa16c008d78e56e.css.map*/
