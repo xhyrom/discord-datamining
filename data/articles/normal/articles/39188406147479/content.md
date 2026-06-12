@@ -53,12 +53,6 @@
     </li>
   </ul>
 </div>
-<div class="warn-box">
-  <strong>Important:</strong> As of July 1, 2026, the KontrolFreek discount will
-  no longer be available. <br />The good news? We're continuing to work on new
-  discounts to make your Nitro experience even more valuable. Thank you for your
-  continued feedback and support!
-</div>
 <h1 id="h_01KQZ3D7Y7SZNPRDNJ37Z6QCTK">What are Nitro Rewards?</h1>
 <div class="warn-box">
   <strong>Important:</strong> Nitro Rewards are rolling out to eligible members
@@ -261,6 +255,12 @@
   account. 
 </p>
 <h1 id="h_01KQZ3D7YNX1T79C7XEKF34EX3">Logitech G Discount  </h1>
+<div class="warn-box">
+  <strong>Important:</strong> As of July 1, 2026, the KontrolFreek discount will
+  no longer be available.The good news? We're continuing to work on new
+  discounts to make your Nitro experience even more valuable. Thank you for your
+  continued feedback and support!
+</div>
 <div class="warn-box">
   <strong>Important:</strong> To receive your code, you must use the desktop
   app. Eligibility conditions apply, see below for more information.

@@ -401,17 +401,6 @@
   renewing your Nitro subscription, you will not be eligible to refund your
   Nitro subscription.
 </p>
-<p>
-  <strong
-    >Q: Can Profile Frames be turned off? I don't want to see them.</strong
-  >
-</p>
-<p>
-  A: Profile Frames cannot be disabled, but you can go to
-  <strong>User Settings &gt; Accessibility &gt; Enable Reduced Motion</strong>
-  to minimize Profile Frame animations and effects. Animations are only
-  displayed when hovering over a profile frame.
-</p>
 <p><strong>Q: How do Profile Frames interact with Profile Effects?</strong></p>
 <p>
   A:
