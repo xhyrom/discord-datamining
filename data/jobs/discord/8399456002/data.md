@@ -51,7 +51,7 @@ education_optional
 - GDPR: No consent required for processing or retention.
 
 **Departments:**
-- Core Tech Engineering
+- Product Engineering
 
 **Offices:**
 - Remote (U.S.)
