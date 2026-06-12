@@ -203,51 +203,32 @@
             width: 7.45rem;
           }
         }
-        @media screen and (min-width: 1280px) {
-          html[lang="ru"] .nav_link {
-            font-size: 0.75rem;
-          }
-          html[lang="ru"] .nav_dd_trigger {
-            font-size: 0.75rem;
-          }
-        }
-        html[lang="es"] .nav_link {
-          font-size: 0.75rem;
-        }
-        html[lang="es"] .dd_nav-link {
-          font-size: 0.75rem;
-        }
-        html[lang="es"] .nav_dd_trigger {
-          font-size: 0.75rem;
-        }
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 1281px) and (max-width: 1500px) {
+          html[lang="nl"] .nav_link,
+          html[lang="nl"] .dd_nav-link,
+          html[lang="nl"] .nav_dd_trigger,
+          html[lang="es"] .nav_link,
+          html[lang="es"] .dd_nav-link,
+          html[lang="es"] .nav_dd_trigger,
           html[lang="ru"] .nav_link,
-          html[lang="ru"] .nav_dd_trigger {
-            font-size: 0.75rem;
+          html[lang="ru"] .dd_nav-link,
+          html[lang="ru"] .nav_dd_trigger,
+          html[lang="el"] .nav_link,
+          html[lang="el"] .dd_nav-link,
+          html[lang="el"] .nav_dd_trigger,
+          html[lang="hu"] .nav_link,
+          html[lang="hu"] .dd_nav-link,
+          html[lang="hu"] .nav_dd_trigger,
+          html[lang="uk"] .nav_link,
+          html[lang="uk"] .dd_nav-link,
+          html[lang="uk"] .nav_dd_trigger {
+            font-size: 0.75rem !important;
           }
         }
-        html[lang="es"] .nav_link,
-        html[lang="es"] .dd_nav-link,
-        html[lang="es"] .nav_dd_trigger,
-        html[lang="ru"] .nav_link,
-        html[lang="ru"] .dd_nav-link,
-        html[lang="ru"] .nav_dd_trigger,
-        html[lang="el"] .nav_link,
-        html[lang="el"] .dd_nav-link,
-        html[lang="el"] .nav_dd_trigger,
-        html[lang="hu"] .nav_link,
-        html[lang="hu"] .dd_nav-link,
-        html[lang="hu"] .nav_dd_trigger,
-        html[lang="uk"] .nav_link,
-        html[lang="uk"] .dd_nav-link,
-        html[lang="uk"] .nav_dd_trigger {
-          font-size: 0.75rem !important;
-        }
-        @media screen and (max-width: 1280px) {
-          html[lang="ru"] .nav_link,
-          html[lang="ru"] .nav_dd_trigger {
-            font-size: 0.6rem;
-          }
+        @media screen and (min-width: 992px) and (max-width: 1280px) {
+          html[lang="nl"] .nav_link,
+          html[lang="nl"] .dd_nav-link,
+          html[lang="nl"] .nav_dd_trigger,
           html[lang="es"] .nav_link,
           html[lang="es"] .dd_nav-link,
           html[lang="es"] .nav_dd_trigger,
@@ -269,15 +250,9 @@
           html[lang="it"] .nav_link,
           html[lang="it"] .dd_nav-link,
           html[lang="it"] .nav_dd_trigger,
-          html[lang="it"] .nav_link,
-          html[lang="it"] .dd_nav-link,
-          html[lang="it"] .nav_dd_trigger,
           html[lang="lt"] .nav_link,
           html[lang="lt"] .dd_nav-link,
           html[lang="lt"] .nav_dd_trigger,
-          html[lang="nl"] .nav_link,
-          html[lang="nl"] .dd_nav-link,
-          html[lang="nl"] .nav_dd_trigger,
           html[lang="no"] .nav_link,
           html[lang="no"] .dd_nav-link,
           html[lang="no"] .nav_dd_trigger,
@@ -317,7 +292,7 @@
           html[lang="uk"] .nav_link,
           html[lang="uk"] .dd_nav-link,
           html[lang="uk"] .nav_dd_trigger {
-            font-size: 0.6rem !important;
+            font-size: 0.65rem !important;
           }
         }
       </style>
