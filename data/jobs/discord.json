@@ -3133,7 +3133,7 @@
       "education": "education_optional",
       "internal_job_id": 6353275002,
       "location": {
-        "name": "San Francisco Bay Area"
+        "name": "San Francisco Bay Area or Remote (U.S.)"
       },
       "metadata": [
         {
@@ -3150,7 +3150,7 @@
         }
       ],
       "id": 8399456002,
-      "updated_at": "2026-06-12T12:11:29-04:00",
+      "updated_at": "2026-06-15T12:28:19-04:00",
       "requisition_id": "R-107156",
       "title": "Senior Software Engineer - Web Platform",
       "company_name": "Discord",
