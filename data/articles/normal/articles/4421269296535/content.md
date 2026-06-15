@@ -14,68 +14,77 @@
   />
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
-      <strong
-        ><a href="#h_01GV3GPHP4ES8CJ4MRXWHNDDDD" target="_self"
-          >What is AutoMod?</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e34357c20b8d7a85dd99ae7c23f00579a"
+    >
+      <a href="#h_01GV3GPHP4ES8CJ4MRXWHNDDDD" target="_self"
+        ><strong>What is AutoMod?</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01GV3GQ8B6WR17JJA5KX92GDHT" target="_self"
-          >What are Keyword Filters?</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e67cf87e3ca006d06fb5a2aa7250df907"
+    >
+      <a href="#h_01GV3GQ8B6WR17JJA5KX92GDHT" target="_self"
+        ><strong>What are Keyword Filters?</strong></a
       >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01GV3GQDQD4EJH71R6PA5C6DAC" target="_self"
-              >How to Set Up Keyword Filters for AutoMod</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ebc2938603510e277630704b3658d42ed"
+        >
+          <a href="#h_01GV3GQDQD4EJH71R6PA5C6DAC" target="_self"
+            ><strong>How to Set Up Keyword Filters for AutoMod</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a
-              href="#docs-internal-guid-57931522-7fff-24d2-3f2d-58f601b6d462"
-              target="_self"
-              ><span
-                id="docs-internal-guid-26a35128-7fff-3ac4-dc68-48dcdcc8b354"
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ec4afd9f857cdf4fdd07591bad22b1247"
+        >
+          <a
+            href="#docs-internal-guid-57931522-7fff-24d2-3f2d-58f601b6d462"
+            target="_self"
+            ><span id="docs-internal-guid-26a35128-7fff-3ac4-dc68-48dcdcc8b354"
+              ><strong
                 >Block Words in Server Member Usernames or Server
-                Nicknames</span
-              ></a
-            ></strong
+                Nicknames</strong
+              ></span
+            ></a
           >
         </li>
       </ul>
     </li>
-    <li>
-      <strong
-        ><a href="#h_01GV3GQSB85NVWN1KQJ8AKZYC8" target="_self"
-          >What are Spam Filters?</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="eeacd5445ca27fd8e1c77094a1f42b8c5"
+    >
+      <a href="#h_01GV3GQSB85NVWN1KQJ8AKZYC8" target="_self"
+        ><strong>What are Spam Filters?</strong></a
       >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01GV3GR6B7X9461TJYBJFYSHMK" target="_self"
-              >How to Set Up Spam Filters for AutoMod</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e1ae2034f93e65d92c347faf440abf119"
+        >
+          <a href="#h_01GV3GR6B7X9461TJYBJFYSHMK" target="_self"
+            ><strong>How to Set Up Spam Filters for AutoMod</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
-      <strong
-        ><a href="#h_01GV3GRDBMVE8GDA7Q3JQSBRC5" target="_self"
-          >Frequently Asked Questions</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e5e2e172dae12645c549bb75aa8272b80"
+    >
+      <a href="#h_01GV3GRDBMVE8GDA7Q3JQSBRC5" target="_self"
+        ><strong>Frequently Asked Questions</strong></a
       >
     </li>
   </ul>
@@ -138,16 +147,16 @@
 </p>
 <p><strong>Categories of Commonly Flagged Words:</strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="e3b130ad71ee0c8d837f990ba6cb5f9c4">
     <strong>Insults and Slurs </strong>- Protect members of your Community from
     personally insulting material targeted at them, including terms that may be
     considered slurs or hate speech.
   </li>
-  <li>
+  <li data-list-item-id="e86eceae831b630fc40428bf2dda47857">
     <strong>Sexual Content</strong> - Keep sexually explicit language out of
     your server to keep your Community family-friendly.
   </li>
-  <li>
+  <li data-list-item-id="e884eab106e998937b98bb8d19696eaae">
     <strong>Severe Profanity</strong> - Block the more egregious forms of
     profanity, while still allowing for mild forms of cursing or swearing.
   </li>
@@ -173,7 +182,7 @@
   Keywords, you can go to the AutoMod tab in your Server Settings. 
 </p>
 <ol>
-  <li>
+  <li data-list-item-id="e4c9c6b247b7e7b8023d914c87131b5fa">
     Go to Server Settings &gt; AutoMod to see the different keyword filter
     options for AutoMod.
   </li>
@@ -185,7 +194,7 @@
   />
 </p>
 <ol start="2">
-  <li>
+  <li data-list-item-id="ecb1fa2d1570acd7a580db6939300b458">
     Under Commonly Flagged Words, press “Set Up” to select from any of the three
     ready-made word lists of commonly flagged words.
   </li>
@@ -237,7 +246,9 @@
 </p>
 <p class="wysiwyg-text-align-center">Timeout user for flagged messages</p>
 <ol start="3">
-  <li>Add roles or channels you’d like to exempt. </li>
+  <li data-list-item-id="ea485c2a2e436b1b6d7d17a17ec4423f2">
+    Add roles or channels you’d like to exempt. 
+  </li>
 </ol>
 <p>
   If you set a channel to be exempt, any messages in Threads or Text Chat in
@@ -277,8 +288,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="height: 351px; width: 624px"
     src="https://lh5.googleusercontent.com/fwckINmfHvBK-70VmRFoKxz8KTYeeqeG8X-harycpkn5rzEpEocsR7so9hYn6bL-I5SWvOqS-5pUUCzeE0sPHXJcqF_YxZeHJgwzJcqKKzGeCRA24L_e3vzVxWabodD92RpSwEwfNYdGgBGUlRVlyUc"
+    width="624"
+    height="351"
   />
 </p>
 <p>
@@ -288,8 +300,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="height: 113px; width: 345px"
     src="https://lh3.googleusercontent.com/ej10wunVHRICwReyRiSoLLr61UPmE4gES97lQmjtqjSu_y3uk6MGP4GRiBXYVHQzq9s9s5r0uJlhkxIDS4eDwbiVs7u0cgMhPgKbHXr2bnTuSjeEA6X3i2ZvgmYjv8VjrqqIhcGlhtqbx1Qow3JeWCw"
+    width="345"
+    height="113"
   />
 </p>
 <h1 id="h_01GV3GQSB85NVWN1KQJ8AKZYC8">WHAT ARE SPAM FILTERS?</h1>
@@ -310,19 +323,17 @@
   AutoMod will respond when a message triggers your rules.
 </p>
 <ol>
-  <li>
+  <li data-list-item-id="e173c7fd2c828b54a18f9771c12fe8b5d">
     Block Spam Content Rule - Enable this rule to detect messages containing
     unwanted spammy text content that disrupts your experience on Discord such
     as:
   </li>
 </ol>
-<ul>
-  <li style="list-style-type: none">
-    <ul>
-      <li>Unsolicited messages or advertisements (free Nitro)</li>
-      <li>Invite spam</li>
-    </ul>
+<ul class="wysiwyg-indent1">
+  <li data-list-item-id="e965b2c574f0d36d64ed01d22828b016a">
+    Unsolicited messages or advertisements (free Nitro)
   </li>
+  <li data-list-item-id="e6ffab166132821eff092c1ddb48d18e3">Invite spam</li>
 </ul>
 <p>
   Note this filter is powered by machine learning that is informed by spammy
@@ -337,7 +348,7 @@
   the “Report Issues” button below the flagged message to let us know.
 </p>
 <ol start="2">
-  <li>
+  <li data-list-item-id="e667aed47a46c32dbd2b75767b2ae3149">
     Block Mention Spam Rule - Set a limit on the number of mentions a message
     may contain. Once configured, AutoMod can detect and block messages
     containing excessive user or role mentions and help prevent your members
@@ -354,7 +365,7 @@
 </p>
 <p><strong>How to Set Up the Block Spam Content Filter</strong></p>
 <ol>
-  <li>
+  <li data-list-item-id="e640fe1847a15f512ba710e778a32f16a">
     Press “Set Up” or enable the toggle button on the Block Spam Content filter
     to view the different response actions.
   </li>
@@ -366,14 +377,16 @@
   />
 </p>
 <ol start="2">
-  <li class="wysiwyg-text-align-center">
-    Choose to have AutoMod block flagged messages entirely, and/or send you an
-    alert:<img
-      src="https://support.discord.com/hc/article_attachments/12974704497815"
-      alt="automod.png"
-    /><br />Block message and send an alert for flagged messages
+  <li data-list-item-id="e02c628a23813ad071282938095888a36">
+    <p class="wysiwyg-text-align-center">
+      Choose to have AutoMod block flagged messages entirely, and/or send you an
+      alert:<img
+        src="https://support.discord.com/hc/article_attachments/12974704497815"
+        alt="automod.png"
+      /><br />Block message and send an alert for flagged messages
+    </p>
   </li>
-  <li>
+  <li data-list-item-id="e54d3e3d54151ded94c51abb5cff5f8e4">
     (Optional) Add exempt roles or channels that you don’t want AutoMod to flag
     for suspected spam content.
   </li>
@@ -390,7 +403,7 @@
 </p>
 <p><strong>How to Set Up the Block Mention Spam Filter</strong></p>
 <ol>
-  <li>
+  <li data-list-item-id="e955e2fa3cd10356e7b12d1be0d6b3908">
     Press “Set Up” or enable the toggle button on Block Mention Spam to view the
     different response actions.
   </li>
@@ -402,7 +415,9 @@
   />
 </p>
 <ol start="2">
-  <li>Set a limit on the number of mentions that a message may contain.</li>
+  <li data-list-item-id="e75cd66e13a1092eb13e21bd33f76d00e">
+    Set a limit on the number of mentions that a message may contain.
+  </li>
 </ol>
 <p class="wysiwyg-text-align-center">
   <img
@@ -411,7 +426,7 @@
   /><br />Set a mention limit, up to a maximum of 50 per message
 </p>
 <ol start="3">
-  <li>
+  <li data-list-item-id="e431dd5d0ed255151746c3429a909b90e">
     Choose to have AutoMod block messages, send you an alert, and/or time out
     users when it flags a message containing excessive mentions. 
   </li>
@@ -423,7 +438,7 @@
   /><br />Block message, send an alert, and/or timeout user for flagged messages
 </p>
 <ol start="4">
-  <li>
+  <li data-list-item-id="efdb1c747664560fa1309d68f327ab386">
     (Optional) Add exempt roles or channels where you don’t want AutoMod to flag
     messages containing excessive mentions.
   </li>
@@ -440,24 +455,16 @@
 </p>
 <h1 id="h_01GV3HBH7412D01VKF9EKHEMA2">FREQUENTLY ASKED QUESTIONS</h1>
 <p>
-  <strong>Q: Who has access to AutoMod at this time?</strong
-  ><strong><br /></strong>A:
+  <strong>Q: Who has access to AutoMod at this time?</strong><br />A:
   <span id="docs-internal-guid-5493223c-7fff-12fb-3655-82fc39aaaa4d"
     >AutoMod is currently available for all servers.</span
-  ><br />This means you must have Community enabled from your server’s settings
-  to access AutoMod. Learn How to enable your Community Server
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360047132851"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
+  >
 </p>
 <p>
   <strong>Q: What filters are currently available under AutoMod?</strong
-  ><strong><br /></strong>A: Currently, the Keyword filters and the Spam Content
-  filter are available and ready to use. We will continue working on additional
-  content filters which will be added to AutoMod when ready.
+  ><br />A: Currently, the Keyword filters and the Spam Content filter are
+  available and ready to use. We will continue working on additional content
+  filters which will be added to AutoMod when ready.
 </p>
 <p><strong>Q: What languages does AutoMod support?</strong></p>
 <p>
@@ -484,9 +491,7 @@
   access, create, and edit your AutoMod rules when on a Desktop device. Updates
   to your AutoMod rules cannot be made on mobile devices at this time.
 </p>
-<p>
-  <strong>Q: How does keyword matching work?</strong><strong><br /></strong>
-</p>
+<p><strong>Q: How does keyword matching work?</strong><br /> </p>
 <p>
   A: AutoMod will block messages that contain keywords found anywhere in the
   message, including between words. This can be useful for reducing toxicity, or
@@ -520,9 +525,13 @@
   one of the following matching strategies on a per keyword basis:
 </p>
 <ol>
-  <li>Prefix -- at least one word in the message must start with keyword</li>
-  <li>Suffix -- at least one word in the message must end with keyword</li>
-  <li>
+  <li data-list-item-id="e7c319c9ee2ab5b41211db58f6a1401ca">
+    Prefix -- at least one word in the message must start with keyword
+  </li>
+  <li data-list-item-id="e678b4519606b7b0ed74241f918b0da2a">
+    Suffix -- at least one word in the message must end with keyword
+  </li>
+  <li data-list-item-id="e6a2621db6c3b1d241ccb60fc140b7452">
     Anywhere -- keyword can show up in any part of the message in the middle of
     any word
   </li>
@@ -634,10 +643,12 @@
   such as:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e95aeef0d9d0c0f2ae71d65470ea4b6af">
     Unwanted spammy text content repeated across multiple messages and channels
   </li>
-  <li>Friend request spam</li>
+  <li data-list-item-id="e6c82ebab7a874c368120fcbbe5a55273">
+    Friend request spam
+  </li>
 </ul>
 <p><strong>Q: I found spam that Discord missed, what should I do?</strong></p>
 <p>
