@@ -48,34 +48,30 @@
           class="wysiwyg-list-bold"
           data-list-item-id="ec4afd9f857cdf4fdd07591bad22b1247"
         >
-          <a
-            href="#docs-internal-guid-57931522-7fff-24d2-3f2d-58f601b6d462"
-            target="_self"
-            ><span id="docs-internal-guid-26a35128-7fff-3ac4-dc68-48dcdcc8b354"
-              ><strong
-                >Block Words in Server Member Usernames or Server
-                Nicknames</strong
-              ></span
+          <a href="#h_01KV5ZMFH6BM689GS4G5MYM24Q"
+            ><strong
+              >Block Words in Server Member Usernames or Server
+              Nicknames</strong
             ></a
           >
         </li>
-      </ul>
-    </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="eeacd5445ca27fd8e1c77094a1f42b8c5"
-    >
-      <a href="#h_01GV3GQSB85NVWN1KQJ8AKZYC8" target="_self"
-        ><strong>What are Spam Filters?</strong></a
-      >
-      <ul>
         <li
           class="wysiwyg-list-bold"
-          data-list-item-id="e1ae2034f93e65d92c347faf440abf119"
+          data-list-item-id="eeacd5445ca27fd8e1c77094a1f42b8c5"
         >
-          <a href="#h_01GV3GR6B7X9461TJYBJFYSHMK" target="_self"
-            ><strong>How to Set Up Spam Filters for AutoMod</strong></a
+          <a href="#h_01GV3GQSB85NVWN1KQJ8AKZYC8" target="_self"
+            ><strong>What are Spam Filters?</strong></a
           >
+          <ul>
+            <li
+              class="wysiwyg-list-bold"
+              data-list-item-id="e1ae2034f93e65d92c347faf440abf119"
+            >
+              <a href="#h_01HP26SCCM6V5R8RY460DQAQMF" target="_self"
+                ><strong>How to Set Up Spam Filters for AutoMod</strong></a
+              >
+            </li>
+          </ul>
         </li>
       </ul>
     </li>
@@ -83,7 +79,7 @@
       class="wysiwyg-list-bold"
       data-list-item-id="e5e2e172dae12645c549bb75aa8272b80"
     >
-      <a href="#h_01GV3GRDBMVE8GDA7Q3JQSBRC5" target="_self"
+      <a href="#h_01GV3HBH7412D01VKF9EKHEMA2" target="_self"
         ><strong>Frequently Asked Questions</strong></a
       >
     </li>
@@ -181,24 +177,20 @@
   In order to set up your own rules for Commonly Flagged Words or Custom
   Keywords, you can go to the AutoMod tab in your Server Settings. 
 </p>
-<ol>
-  <li data-list-item-id="e4c9c6b247b7e7b8023d914c87131b5fa">
-    Go to Server Settings &gt; AutoMod to see the different keyword filter
-    options for AutoMod.
-  </li>
-</ol>
+<p>
+  1. Go to Server Settings &gt; AutoMod to see the different keyword filter
+  options for AutoMod.
+</p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12974314950295"
     alt="automod_commonlyflagged_words.gif"
   />
 </p>
-<ol start="2">
-  <li data-list-item-id="ecb1fa2d1570acd7a580db6939300b458">
-    Under Commonly Flagged Words, press “Set Up” to select from any of the three
-    ready-made word lists of commonly flagged words.
-  </li>
-</ol>
+<p>
+  2. Under Commonly Flagged Words, press “Set Up” to select from any of the
+  three ready-made word lists of commonly flagged words.
+</p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12974349989143"
@@ -214,7 +206,7 @@
   new rule of your choice.
 </p>
 <p>
-  3. Choose to have AutoMod block flagged messages entirely with a custom
+  4. Choose to have AutoMod block flagged messages entirely with a custom
   message, send you an alert, and/or time out users* when it flags a message.<br />*<em
     >Timeout user response is only available under Custom Keyword Rules</em
   >
@@ -245,11 +237,7 @@
   />
 </p>
 <p class="wysiwyg-text-align-center">Timeout user for flagged messages</p>
-<ol start="3">
-  <li data-list-item-id="ea485c2a2e436b1b6d7d17a17ec4423f2">
-    Add roles or channels you’d like to exempt. 
-  </li>
-</ol>
+<p>5. Add roles or channels you’d like to exempt. </p>
 <p>
   If you set a channel to be exempt, any messages in Threads or Text Chat in
   Voice in that channel will also be exempt. Users with Admin and Manage Server
@@ -261,7 +249,7 @@
     alt="image10.png"
   />
 </p>
-<h2 id="docs-internal-guid-57931522-7fff-24d2-3f2d-58f601b6d462">
+<h2 id="h_01KV5ZMFH6BM689GS4G5MYM24Q">
   Block Words in Server Member Usernames or Server Nicknames
 </h2>
 <p>
@@ -305,6 +293,7 @@
     height="113"
   />
 </p>
+<p class="wysiwyg-text-align-center"> </p>
 <h1 id="h_01GV3GQSB85NVWN1KQJ8AKZYC8">WHAT ARE SPAM FILTERS?</h1>
 <p>
   Spam is a problem that communities have to defend against every day to protect
@@ -322,13 +311,10 @@
   your Community against different types of spam. You can also choose how
   AutoMod will respond when a message triggers your rules.
 </p>
-<ol>
-  <li data-list-item-id="e173c7fd2c828b54a18f9771c12fe8b5d">
-    Block Spam Content Rule - Enable this rule to detect messages containing
-    unwanted spammy text content that disrupts your experience on Discord such
-    as:
-  </li>
-</ol>
+<p>
+  1. Block Spam Content Rule - Enable this rule to detect messages containing
+  unwanted spammy text content that disrupts your experience on Discord such as:
+</p>
 <ul class="wysiwyg-indent1">
   <li data-list-item-id="e965b2c574f0d36d64ed01d22828b016a">
     Unsolicited messages or advertisements (free Nitro)
@@ -347,14 +333,12 @@
   out: if you come across a message that was incorrectly flagged as spam, click
   the “Report Issues” button below the flagged message to let us know.
 </p>
-<ol start="2">
-  <li data-list-item-id="e667aed47a46c32dbd2b75767b2ae3149">
-    Block Mention Spam Rule - Set a limit on the number of mentions a message
-    may contain. Once configured, AutoMod can detect and block messages
-    containing excessive user or role mentions and help prevent your members
-    from receiving unnecessary notifications and pings.
-  </li>
-</ol>
+<p>
+  2. Block Mention Spam Rule - Set a limit on the number of mentions a message
+  may contain. Once configured, AutoMod can detect and block messages containing
+  excessive user or role mentions and help prevent your members from receiving
+  unnecessary notifications and pings.
+</p>
 <h2 id="h_01HP26SCCM6V5R8RY460DQAQMF">
   HOW TO SET UP SPAM FILTERS FOR AUTOMOD
 </h2>
@@ -363,34 +347,40 @@
   Spam, go to <strong>Server Settings</strong> &gt; <strong>AutoMod</strong> to
   see the different spam filter options:
 </p>
-<p><strong>How to Set Up the Block Spam Content Filter</strong></p>
-<ol>
-  <li data-list-item-id="e640fe1847a15f512ba710e778a32f16a">
-    Press “Set Up” or enable the toggle button on the Block Spam Content filter
-    to view the different response actions.
-  </li>
-</ol>
+<p>
+  <span class="wysiwyg-font-size-large"
+    ><strong>How to Set Up the Block Spam Content Filter</strong></span
+  >
+</p>
+<p>
+  1. Press “Set Up” or enable the toggle button on the Block Spam Content filter
+  to view the different response actions.
+</p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12974672241431"
     alt="automod_spam.gif"
   />
 </p>
-<ol start="2">
-  <li data-list-item-id="e02c628a23813ad071282938095888a36">
-    <p class="wysiwyg-text-align-center">
-      Choose to have AutoMod block flagged messages entirely, and/or send you an
-      alert:<img
-        src="https://support.discord.com/hc/article_attachments/12974704497815"
-        alt="automod.png"
-      /><br />Block message and send an alert for flagged messages
-    </p>
-  </li>
-  <li data-list-item-id="e54d3e3d54151ded94c51abb5cff5f8e4">
-    (Optional) Add exempt roles or channels that you don’t want AutoMod to flag
-    for suspected spam content.
-  </li>
-</ol>
+<h4 class="wysiwyg-text-align-center" id="h_01KV6396QH28M0Z2SC1W8W9796">
+  <span style="color: #666666"
+    >Navigate to Server Settings, then Automod to set up Block Spam Filter</span
+  >
+</h4>
+<p>
+  2. Choose to have AutoMod block flagged messages entirely, and/or send you an
+  alert:
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KV61KQGFSZK4ZQ2YPAC3HSYM">
+  <img
+    src="https://support.discord.com/hc/article_attachments/12974704497815"
+    alt="automod.png"
+  /><br />Block message and send an alert for flagged messages
+</h4>
+<p>
+  3. (Optional) Add exempt roles or channels that you don’t want AutoMod to flag
+  for suspected spam content.
+</p>
 <p>
   As a reminder, setting a channel to be exempt will ensure that any messages in
   Threads and Text Chat in Voice in that particular channel will also be exempt.
@@ -401,30 +391,37 @@
     alt="automod_allow.png"
   />
 </p>
-<p><strong>How to Set Up the Block Mention Spam Filter</strong></p>
-<ol>
-  <li data-list-item-id="e955e2fa3cd10356e7b12d1be0d6b3908">
-    Press “Set Up” or enable the toggle button on Block Mention Spam to view the
-    different response actions.
-  </li>
-</ol>
+<h4 class="wysiwyg-text-align-center" id="h_01KV635WMJY3FDAE7ZREGJCHC7">
+  <span style="color: #666666">Allow certain roles or channels option</span>
+</h4>
+<p>
+  <span class="wysiwyg-font-size-large"
+    ><strong>How to Set Up the Block Mention Spam Filter</strong></span
+  >
+</p>
+<p>
+  1. Press “Set Up” or enable the toggle button on Block Mention Spam to view
+  the different response actions.
+</p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12974708184471"
     alt="automod_mention_spam.gif"
   />
 </p>
-<ol start="2">
-  <li data-list-item-id="e75cd66e13a1092eb13e21bd33f76d00e">
-    Set a limit on the number of mentions that a message may contain.
-  </li>
-</ol>
+<h4 class="wysiwyg-text-align-center" id="h_01KV61STA3GEM79B9D6B0QEDJH">
+  Navigate to Server Settings, then Automod to set up Block Mention Spam
+</h4>
+<p>2. Set a limit on the number of mentions that a message may contain.</p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12974710092439"
     alt="config_limits.png"
-  /><br />Set a mention limit, up to a maximum of 50 per message
+  />
 </p>
+<h4 class="wysiwyg-text-align-center" id="h_01KV646SJD7K0J5WSGDJJN82R8">
+  Set a mention limit, up to a maximum of 50 per message
+</h4>
 <ol start="3">
   <li data-list-item-id="e431dd5d0ed255151746c3429a909b90e">
     Choose to have AutoMod block messages, send you an alert, and/or time out
