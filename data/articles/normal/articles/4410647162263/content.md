@@ -6,7 +6,7 @@
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">Xbox Game Pass Ultimate</span></a
   >
-  subscribers will receive 1 month of
+  subscribers will receive 3 months of
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108"
     target="_blank"
@@ -23,7 +23,7 @@
 </p>
 <h1 id="h_01KN4M0526VD9Z71BBX956615T">Promotion Summary</h1>
 <p>
-  <strong>Offer Details:</strong> 1 month of
+  <strong>Offer Details:</strong> 3 months of
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108"
     target="_blank"
@@ -62,7 +62,7 @@
 <p>
   We will not be able to refund any leftover subscription time from those, and
   the user will be forfeiting the remainder of the existing subscription when
-  activating the 3 months or 1 month Nitro trial.
+  activating the 3 months Nitro trial.
 </p>
 <p>
   Users who have already claimed a gift from this promotion are not eligible to
@@ -73,7 +73,7 @@
   required to claim.
 </p>
 <p>
-  <strong>Subscription:</strong> After the 1 month trial period, your Nitro
+  <strong>Subscription:</strong> After the 3 months trial period, your Nitro
   subscription will convert to a monthly recurring subscription, and Discord
   will bill your payment method per month until you cancel it. You can cancel at
   any time in your Discord <strong>User Settings</strong>. 
@@ -489,11 +489,11 @@
 <p>
   So long as you have had a Nitro Basic, Nitro Classic, or Server Boosting
   subscription active on your account and you’ve never had a subscription, you
-  will be able to redeem this promotion and replace it with the 1 month Nitro
+  will be able to redeem this promotion and replace it with the 3 months Nitro
   subscription.
 </p>
 <div class="warn-box">
-  <strong>Important:</strong> By choosing to activate this 1 month trial, you
+  <strong>Important:</strong> By choosing to activate this 3 months trial, you
   will lose any features associated with your current subscriptions, and **you
   will not receive a refund for any remaining value on your current
   subscription**.
@@ -585,11 +585,11 @@
 <p>
   If you have had a Nitro Basic, Nitro Classic, or Server Boosting subscription
   active on your account and you’ve never had a Nitro subscription,  you will be
-  able to redeem this promotion and replace it with the 1 month Nitro
+  able to redeem this promotion and replace it with the 3 months Nitro
   subscription.
 </p>
 <div class="warn-box">
-  <strong>Important:</strong> By choosing to activate this 1 month trial, you
+  <strong>Important:</strong> By choosing to activate this 3 months trial, you
   will lose any features associated with your current subscriptions, and **you
   will not receive a refund for any remaining value on your current
   subscription**.
@@ -605,13 +605,13 @@
   <strong>Q: Why do I need to submit my payment info to redeem Nitro?</strong>
 </p>
 <p>
-  A: Because Nitro is a subscription plan, at the end of your 1 month trial, we
+  A: Because Nitro is a subscription plan, at the end of your 3 months trial, we
   will start your first billing cycle so you can continue to enjoy Nitro on
   Discord.
 </p>
 <p>
   However, you can cancel the Nitro subscription at any time before the end of
-  the 1 month.
+  the 3 months.
 </p>
 <p>
   <strong
@@ -672,7 +672,7 @@
 <p>
   A:<strong> </strong>If you're seeing an “Sorry, looks like you’ve already had
   a Nitro sub” error, that means that you've previously subscribed to Nitro on
-  your Discord account and you won't be able to redeem this 1 month perk.
+  your Discord account and you won't be able to redeem this 3 months perk.
 </p>
 <p>
   If you have never subscribed to Nitro, please submit a ticket through our
