@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8545663002](https://discord.com/jobs/8545663002)
 
-**Updated At:** Wed, 03 Jun 2026 16:43:54 GMT
+**Updated At:** Tue, 16 Jun 2026 20:05:40 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.The Realtime Infrastructure team is responsible for building and maintaining some of Discord’s highest scale and most critical services. Those systems are at the core of our text chat infrastructure and facilitate the dispatching of every update to our users sessions. This role will have a significant impact on Discord’s overall reliability and performance. It will also help our product teams build new features on top of our infrastructure. This team is small but critical, and its work has a direct impact on Discord's success and ability to scale. This role reports to the Senior Engineering Manager of Realtime Infrastructure.

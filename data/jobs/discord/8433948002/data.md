@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8433948002](https://discord.com/jobs/8433948002)
 
-**Updated At:** Tue, 02 Jun 2026 17:30:41 GMT
+**Updated At:** Tue, 16 Jun 2026 20:05:31 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are seeking an experienced Account Executive to join as a founding member of the new Advertising Solutions (Quests) business line to help build out the Tech&amp;nbsp;verticals. This is a strategic, senior-level individual contributor position, ideal for someone passionate about gaming and excited to establish Discord as a premier marketing tool for gaming-aligned brands.

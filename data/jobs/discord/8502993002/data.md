@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8502993002](https://discord.com/jobs/8502993002)
 
-**Updated At:** Wed, 06 May 2026 20:46:12 GMT
+**Updated At:** Tue, 16 Jun 2026 20:05:36 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.The Safety Product team builds the systems, features, and experiences that help keep Discord safe for everyone. As the Staff Product Manager for Safety Experience, you’ll define the vision, strategy, and roadmap for Discord’s safety tools and age-appropriate experiences. We’re looking for an impact-driven, collaborative, and hands-on product leader who can navigate complex tradeoffs, align cross-functional partners, and help shape the future of safety on Discord.

@@ -24,12 +24,12 @@
     {
       "id": 96196709002,
       "name": "Careers Site Department",
-      "value": null,
+      "value": "Product Engineering",
       "value_type": "single_select"
     }
   ],
   "id": 8497565002,
-  "updated_at": "2026-05-29T12:15:27-04:00",
+  "updated_at": "2026-06-16T16:16:05-04:00",
   "requisition_id": "R-107242",
   "title": "Senior Full-Stack Software Engineer, Player Experience",
   "company_name": "Discord",

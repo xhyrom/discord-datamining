@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8289766002](https://discord.com/jobs/8289766002)
 
-**Updated At:** Thu, 30 Apr 2026 21:36:05 GMT
+**Updated At:** Tue, 16 Jun 2026 20:05:26 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are looking for an Account Executive to join our growing APAC Gaming Advertising Solutions team, reporting to our Director of Gaming Sales, APAC. This role is based in Japan and is perfect for someone passionate about the Japanese gaming market who wants to help game companies connect with their most dedicated player communities on Discord.
