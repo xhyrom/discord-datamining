@@ -1,0 +1,38 @@
+.pill_ebc727 {
+  align-items: center;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: linear-gradient(
+    90deg,
+    var(--custom-pill-gradient-start) 0,
+    var(--custom-pill-gradient-end) 120%
+  );
+  border-radius: var(--radius-round);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 4px;
+  height: 19px;
+  padding: 0 8px;
+}
+.theme-light .pill_ebc727 {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: linear-gradient(
+      90deg,
+      var(--custom-pill-gradient-start) 0,
+      var(--custom-pill-gradient-end) 120%
+    ),
+    var(--custom-pill-base-color);
+}
+.crepe_ebc727 {
+  align-items: center;
+  background: var(--custom-pill-crepe-bg);
+  border-radius: var(--radius-round);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 4px;
+  height: 19px;
+  padding: 0 8px;
+}
+
+/*# sourceMappingURL=35426.fb8298d8530100d4.css.map*/

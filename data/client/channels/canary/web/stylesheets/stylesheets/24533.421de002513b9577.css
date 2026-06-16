@@ -1,0 +1,142 @@
+.navBar__131a1 {
+  -webkit-backdrop-filter: blur(11.5px);
+  backdrop-filter: blur(11.5px);
+  border-bottom: 1px solid var(--color-border-strong, hsla(240, 4%, 61%, 0.44));
+  margin-bottom: calc(var(--custom-channel-header-height) * -1);
+  padding: 0;
+  position: sticky;
+  top: 0;
+}
+.nitroWheelIcon__131a1 {
+  margin-top: 3px;
+  margin-inline-end: var(--space-24);
+}
+.nitroWheelIconColor__131a1 {
+  fill: var(--icon-strong);
+}
+.navBarContent__131a1 {
+  justify-content: space-between;
+  padding: 0 var(--space-16);
+  width: 100%;
+}
+.navBarContent__131a1,
+.navBarSectionContentContainer__131a1 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+.navBarSectionContent__131a1 {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  margin-inline-end: var(--space-16);
+}
+.sectionClickable__131a1 {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+.sectionUnderline__131a1 {
+  background-color: var(--text-default);
+  bottom: -0.5px;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.sectionUnderline__131a1.fadeIn__131a1 {
+  animation: underlineAppear__131a1 0.3s ease-out;
+}
+.navBarActions__131a1 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+}
+@keyframes underlineAppear__131a1 {
+  0% {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.nav__82d84.nav__82d84 {
+  margin-bottom: 0;
+  z-index: 2;
+}
+.brand__82d84 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+}
+.wheelColor__82d84 {
+  fill: var(--icon-strong);
+}
+.wordmark__82d84 {
+  align-items: center;
+  color: var(--text-strong);
+  display: inline-flex;
+}
+.wordmark__82d84 svg {
+  height: var(--space-12);
+  width: auto;
+}
+.wrapper__0a838 {
+  bottom: 0;
+  inset-inline-start: 0;
+  margin-bottom: 42px;
+  opacity: 0;
+  pointer-events: none;
+  position: sticky;
+  width: 100%;
+  z-index: 10;
+}
+.innerWrapper__0a838,
+.wrapper__0a838 {
+  display: flex;
+  justify-content: center;
+}
+.innerWrapper__0a838 {
+  align-items: center;
+  background-color: var(--background-base-lowest);
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 16px;
+  pointer-events: all;
+  position: relative;
+}
+.innerWrapper__0a838:after,
+.innerWrapper__0a838:before {
+  content: "";
+  height: 100%;
+  inset-inline-start: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.invisible__0a838 > .innerWrapper__0a838 {
+  pointer-events: none;
+}
+.tier2Gradient__0a838 {
+  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  color: var(--white);
+}
+.descriptionContainer__0a838 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+  width: 320px;
+}
+.nitroIcon__0a838 {
+  border-radius: var(--radius-sm);
+  filter: saturate(var(--saturation-factor, 1));
+  height: 48px;
+  width: 48px;
+}
+
+/*# sourceMappingURL=24533.421de002513b9577.css.map*/

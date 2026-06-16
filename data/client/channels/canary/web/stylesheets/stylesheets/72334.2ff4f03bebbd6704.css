@@ -1,0 +1,307 @@
+.header__7e090 {
+  background-image: url(/assets/cb4131669938b6ad.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 132px;
+  margin-top: calc(var(--custom-modal-padding-top) * -1 - 2px);
+  margin-inline-start: -1px;
+  width: calc(100% + 2px);
+}
+.animation__7e090 {
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  bottom: 0;
+}
+.headerTitle__7e090 {
+  background-image: url(/assets/9f911879992ce2d1.svg);
+  height: 28px;
+  width: 60px;
+}
+.header__7e090 .closeButton__7e090 {
+  color: var(--white);
+  inset-inline-end: 12px;
+  opacity: 0.8;
+  position: absolute;
+  top: 12px;
+}
+.header__7e090 .closeButton__7e090:hover {
+  opacity: 1;
+}
+.enable-forced-colors .header__7e090 .closeButton__7e090 {
+  opacity: 1;
+}
+.confirmationText_cbd4f3 {
+  text-align: center;
+}
+.staticCelebration__0de46,
+.videoContainer__0de46 {
+  transform: translate(calc(-50% + 4px), calc(-50% + 4px));
+  width: 1500px;
+  z-index: 0;
+}
+.staticCelebration__0de46,
+.video__0de46,
+.videoContainer__0de46 {
+  inset-inline-start: 50%;
+  position: absolute;
+  top: 50%;
+}
+.video__0de46 {
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.video__0de46.hidden__0de46 {
+  visibility: hidden;
+}
+.video__0de46.visible__0de46 {
+  visibility: visible;
+}
+.entryAnimationContainer__0de46 {
+  animation:
+    boostWowScaleIn__0de46 0.4s ease,
+    boostWowScaleSettle__0de46 0.4s ease 0.4s;
+  will-change: transform;
+}
+@keyframes boostWowScaleIn__0de46 {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+@keyframes boostWowScaleSettle__0de46 {
+  0% {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.exitAnimationContainer__0de46 {
+  animation: boostWowExit__0de46 175ms ease forwards;
+  pointer-events: none;
+  transform: scale(1);
+  will-change: transform;
+}
+@keyframes boostWowExit__0de46 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+    visibility: hidden;
+  }
+}
+.fadeOut__0de46 {
+  animation: boostWowFadeOut__0de46 175ms ease forwards;
+}
+@keyframes boostWowFadeOut__0de46 {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.contentWrapper__65b48 {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+}
+.content__65b48 {
+  overflow: hidden;
+}
+.breadcrumbsWrapper__65b48 {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0 16px 16px;
+}
+.externalErrorBlock__65b48 {
+  margin-top: 16px;
+}
+.externalErrorBlock__65b48 a {
+  text-decoration: underline;
+}
+.helpMessageWrapper__65b48 {
+  margin-bottom: 16px;
+}
+.bodyWrapper__65b48 {
+  position: relative;
+}
+.copy__65b48 {
+  color: var(--text-default);
+}
+.loadingWrapper__65b48 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 398px;
+  padding-top: 16px;
+}
+.animationContainer__884d1,
+.container__884d1 {
+  position: relative;
+  z-index: 0;
+}
+.animationContainer__884d1 {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.svgBorder__884d1 {
+  height: calc(100% + 2px);
+  inset-inline-start: -1px;
+  position: absolute;
+  top: -1px;
+  width: calc(100% + 2px);
+  z-index: 1;
+}
+.svgCopy__884d1 {
+  display: block;
+}
+.animationContainer__884d1 {
+  color: var(--text-strong);
+}
+.shine__884d1 {
+  color: var(--opacity-white-48);
+}
+.bodyText__945b8 {
+  color: var(--text-default);
+  font-size: 16px;
+  line-height: 20px;
+}
+.planSelectText__945b8 {
+  margin-bottom: 16px;
+}
+.planSelectRow__945b8 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 8px auto;
+}
+.planSelectRowALaCarte__945b8 {
+  justify-content: flex-start;
+}
+.planSelectorWrapper__945b8 {
+  align-items: center;
+  display: flex;
+}
+.planSelectorHeader__945b8 {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 8px;
+}
+.planSelectorRadioBarALaCarte__945b8 {
+  align-items: flex-start;
+}
+.planSelectorRadioIconALaCarte__945b8 {
+  margin-top: 4px;
+}
+.planSelectorPlanName__945b8 {
+  margin-inline-end: 4px;
+}
+.planSelectorLabel__945b8 {
+  color: var(--text-default);
+  font-size: 16px;
+  line-height: 20px;
+  margin-inline-start: 16px;
+}
+.planSelectorPreviewPrice__945b8 {
+  color: var(--interactive-text-default);
+  font-size: 16px;
+  line-height: 20px;
+}
+.planSelectDivider__945b8 {
+  background-color: var(--border-subtle);
+  height: 1px;
+  margin: 16px 0;
+}
+.planSelectorSubtotal__945b8 {
+  color: var(--interactive-text-active);
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 20px;
+}
+.invoiceTableBottom__945b8,
+.paymentSourceWrapper__945b8 {
+  margin: 16px 0;
+}
+.taxInclusiveNote__945b8 {
+  margin-top: 12px;
+}
+.confirmationContainer__945b8 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 56px 32px 64px;
+}
+.confirmationAnimation__945b8 {
+  height: 140px;
+  margin-bottom: 32px;
+  width: 400px;
+}
+.confirmationText__945b8,
+.confirmationUpgradedBanner__945b8 {
+  margin-bottom: 16px;
+}
+.confirmationText__945b8 {
+  color: var(--interactive-text-default);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+  text-align: center;
+}
+.confirmationText__945b8 p {
+  margin: 0;
+}
+.confirmationText__945b8 p + p {
+  margin-top: 8px;
+}
+.existingSlotNotice__945b8 {
+  align-items: center;
+  background-color: var(--background-base-lower);
+  border-radius: 8px;
+  color: var(--text-default);
+  display: flex;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  padding: 8px;
+}
+.existingSlotIcon__945b8 {
+  flex-shrink: 0;
+  height: 24px;
+  margin-inline-end: 8px;
+  width: 24px;
+}
+.existingSlotTooltipWarningIcon__945b8 {
+  cursor: pointer;
+  height: 16px;
+  margin-inline-start: 6px;
+  vertical-align: text-bottom;
+  width: 14px;
+}
+.loadingSpinner__945b8 {
+  flex: 1;
+  max-width: 100px;
+}
+.reverseTrialContextInfoDivider__945b8 {
+  background-color: var(--border-subtle);
+  height: 1px;
+}
+.reverseTrialContextText__945b8 {
+  margin: 12px 0;
+}
+.reverseTrialContextMarginBottom__945b8 {
+  margin-bottom: 8px;
+}
+
+/*# sourceMappingURL=72334.2ff4f03bebbd6704.css.map*/

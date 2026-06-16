@@ -1,0 +1,102 @@
+.icon__14ad3 {
+  height: 16px;
+  width: 16px;
+}
+.sliderContainer__14ad3 {
+  background-color: var(--background-surface-high);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  min-width: 188px;
+  padding: var(--space-12);
+}
+.slider__14ad3 {
+  margin-bottom: calc(var(--space-8) * -1);
+}
+.betaBadge__14ad3 {
+  inset-inline-start: var(--space-8);
+  position: absolute;
+  top: -8px;
+}
+.infoContainer__14ad3 {
+  border-radius: var(--radius-sm);
+  max-width: 300px;
+}
+.infoTooltip__14ad3 {
+  overflow: hidden;
+}
+.infoNitroContainer__14ad3 {
+  background-color: var(--background-surface-high);
+  position: relative;
+}
+.infoNitroBackground__14ad3 {
+  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  inset: 0;
+  opacity: 0.64;
+  position: absolute;
+  z-index: 1;
+}
+.infoNitroTextContainer__14ad3 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-8);
+  position: relative;
+  z-index: 2;
+}
+.infoNitroIcon__14ad3 {
+  margin-inline-end: var(--space-4);
+}
+.infoNitroText__14ad3 {
+  flex: 1;
+  margin-inline-end: var(--space-16);
+}
+.infoNitroBadge__14ad3 {
+  margin-inline-start: 0 auto;
+}
+.infoSoundContainer__14ad3 {
+  background-color: var(--background-surface-high);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-12);
+}
+.infoSoundInnerContainer__14ad3 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.infoSoundIcon__14ad3 {
+  margin-inline-end: var(--space-4);
+}
+.infoExpandedSoundContainer__14ad3 {
+  align-items: center;
+  background-color: var(--background-base-lower);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-16);
+  padding: var(--space-16);
+}
+.infoExpandedGuildContainer__14ad3 {
+  align-items: start;
+  background-color: var(--background-mod-normal);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: var(--space-16);
+}
+.infoExpandedGuildInfo__14ad3 {
+  width: 100%;
+}
+.infoExpandedGuildTitle__14ad3 {
+  align-self: flex-start;
+}
+.infoExpandedGuildInfoContainer__14ad3 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-8);
+}
+
+/*# sourceMappingURL=79989.e3db8c036625bbf6.css.map*/

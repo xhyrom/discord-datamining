@@ -1,0 +1,98 @@
+.tier2Animation__387d4 {
+  position: relative;
+}
+.panningAnimation__387d4 {
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  bottom: 22px;
+  overflow: hidden;
+}
+.panningAnimationInner__387d4 {
+  background-size: 100% 100%;
+  filter: saturate(var(--saturation-factor, 1));
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  bottom: 0;
+}
+.tier2Background__387d4 {
+  background-image: url(/assets/083b1bde1c6b39a3.svg);
+  opacity: 0.2;
+}
+.tier2Foreground__387d4 {
+  background-image: url(/assets/ae4a4071a85dcaa6.svg);
+}
+.guildWrapper__387d4 {
+  position: relative;
+}
+.guildBackground__387d4 {
+  top: 0;
+  inset-inline: 0;
+  bottom: 0;
+}
+.guildBackground__387d4,
+.guildStar__387d4 {
+  position: absolute;
+}
+.sequencedAnimation__387d4 {
+  filter: saturate(var(--saturation-factor, 1));
+}
+.modalHeader_b54a5b {
+  background-image: linear-gradient(
+    var(--modal-background),
+    var(--modal-background)
+  );
+  background-position: 0 10px;
+  background-repeat: no-repeat;
+  background-size: 100% calc(100% - 20px);
+  margin-bottom: -20px;
+  overflow: clip;
+  padding-bottom: 0;
+}
+.manaModalHeaderCompatible_b54a5b {
+  margin-top: calc(var(--custom-modal-padding-top) * -1);
+}
+.modalHeaderCustomGift_b54a5b {
+  align-items: center;
+  background-image: unset;
+  background-size: unset;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.closeButton_b54a5b {
+  margin-inline-start: auto;
+  padding: 0;
+}
+.closeButtonInner_b54a5b {
+  height: 24px;
+}
+.header_b54a5b {
+  flex-shrink: 0;
+}
+body .headerAnimation_b54a5b {
+  border-start-end-radius: 4px;
+  border-start-start-radius: 4px;
+  position: absolute;
+  top: 0;
+  inset-inline: 50% 0;
+  bottom: -22px;
+  min-width: 440px;
+  overflow: hidden;
+  transform: translateX(-50%);
+  width: 100%;
+}
+@media (max-width: 485px) {
+  .headerAnimation_b54a5b {
+    min-width: auto !important;
+  }
+}
+.headerAnimation_b54a5b {
+  border-start-end-radius: calc(var(--radius-md) - 1px);
+  border-start-start-radius: calc(var(--radius-md) - 1px);
+}
+
+/*# sourceMappingURL=13495.4c5455b64c88701b.css.map*/

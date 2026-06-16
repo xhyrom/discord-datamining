@@ -1,0 +1,22 @@
+.groupDiscountBannerText_a5923e {
+  flex: 1;
+  min-width: 0;
+}
+.divider_a5923e {
+  margin: var(--space-16) 0;
+  opacity: 0.1;
+  z-index: 0;
+}
+.divider_a5923e.compact_a5923e {
+  margin-top: var(--space-12);
+}
+.bannerTopDivider_a5923e {
+  margin: 2px 0 var(--space-16);
+  opacity: 0.1;
+  z-index: 0;
+}
+.bannerTopDivider_a5923e.compact_a5923e {
+  margin: 5px 0 var(--space-12);
+}
+
+/*# sourceMappingURL=96040.01254ed0bb3f353c.css.map*/

@@ -1,0 +1,36 @@
+.container__72cd3 {
+  align-items: center;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  bottom: 0;
+  display: flex;
+  inset-inline: 0;
+  justify-content: space-between;
+  padding: var(--space-8);
+  position: absolute;
+}
+.textSection__72cd3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  margin-inline-start: var(--space-16);
+  max-width: 57%;
+}
+.avatarWrapper__72cd3 {
+  align-self: end;
+  height: 0;
+  position: relative;
+  width: 120px;
+}
+.avatar__72cd3 {
+  inset-block-end: 0;
+  inset-inline-end: 0;
+  position: absolute;
+  width: 120px;
+}
+.avatarLargeTilted__72cd3 {
+  transform: rotate(-7deg) translateX(calc(100% * (1 - cos(-7deg))));
+  transform-origin: bottom left;
+}
+
+/*# sourceMappingURL=78179.9d6190c1f5daf50e.css.map*/

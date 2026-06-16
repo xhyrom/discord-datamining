@@ -1,0 +1,78 @@
+.wrapper__3b770 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+  margin: var(--space-80) 0;
+  width: 100%;
+}
+.heading__3b770 {
+  text-align: center;
+}
+.cards__3b770 {
+  display: flex;
+  gap: var(--space-24);
+  width: 100%;
+}
+.card__3b770 {
+  align-items: center;
+  background: var(--background-base-low);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  box-shadow: var(--shadow-low);
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  gap: var(--space-12);
+  justify-content: center;
+  min-width: 0;
+  padding: var(--space-24);
+}
+.icon__3b770 {
+  color: var(--icon-muted);
+  display: block;
+  height: 48px;
+  width: 48px;
+}
+.iconImage__3b770 {
+  filter: saturate(var(--saturation-factor, 1));
+}
+.description__3b770 {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .cards__3b770 {
+    flex-wrap: wrap;
+  }
+  .card__3b770 {
+    flex: 1 1 calc(50% - var(--space-12));
+    min-width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .cards__3b770 {
+    flex-direction: column;
+  }
+  .card__3b770 {
+    flex: 1 1 auto;
+  }
+}
+.guildBoostUnavailableNotice__0c507 {
+  align-self: center;
+  background-color: hsl(var(--white-hsl) / 0.1);
+  border: 2px solid var(--white);
+  border-radius: 9999px;
+  justify-self: center;
+  margin-bottom: 32px;
+  padding: 8px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.guildBoostUnavailableNotice__0c507.lightTheme__0c507 {
+  border: 2px solid var(--black-500);
+}
+.guildBoostUnavailableNoticeText__0c507 {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=88610.1404345b007f3444.css.map*/

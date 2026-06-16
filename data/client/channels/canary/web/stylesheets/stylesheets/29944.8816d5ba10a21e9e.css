@@ -1,0 +1,75 @@
+.inspector_aeaaeb {
+  align-items: center;
+  background-color: var(--background-base-lower);
+  border-top: 1px solid var(--border-normal);
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  height: var(
+    --custom-expression-picker-constants-expression-picker-inspector-bar-height
+  );
+  overflow: hidden;
+  padding: 0 16px;
+  width: 100%;
+}
+.graphicPrimary_aeaaeb {
+  height: var(
+    --custom-expression-picker-constants-expression-picker-inspector-bar-graphic-primary-dimensions
+  );
+  width: var(
+    --custom-expression-picker-constants-expression-picker-inspector-bar-graphic-primary-dimensions
+  );
+}
+.graphicSecondary_aeaaeb {
+  height: var(
+    --custom-expression-picker-constants-expression-picker-inspector-bar-graphic-secondary-dimensions
+  );
+  margin-inline-start: 8px;
+  width: var(
+    --custom-expression-picker-constants-expression-picker-inspector-bar-graphic-secondary-dimensions
+  );
+}
+.textWrapper_aeaaeb {
+  flex: 1;
+  margin-inline-start: 8px;
+  overflow: hidden;
+}
+.titlePrimary_aeaaeb,
+.titleSecondary_aeaaeb {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.titleSecondary_aeaaeb {
+  color: var(--interactive-text-default);
+}
+.favorite_aeaaeb {
+  margin-inline-end: 3px;
+  margin-bottom: -1px;
+}
+.badgeLabel_aeaaeb {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  padding: 4px 8px;
+  text-transform: uppercase;
+}
+.topGuildEmojiBadge_aeaaeb {
+  background: linear-gradient(268.26deg, #bf5151, #db803f 102.45%);
+}
+.newlyAddedBadge_aeaaeb {
+  background: linear-gradient(268.26deg, #097d8d, #60a654 102.45%);
+}
+.newlyAddedBadgeIcon_aeaaeb {
+  color: #fff;
+  height: 14px;
+  width: 14px;
+}
+.enable-forced-colors .inspector_aeaaeb {
+  border-top: 1px solid CanvasText;
+}
+
+/*# sourceMappingURL=29944.8816d5ba10a21e9e.css.map*/
