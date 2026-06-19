@@ -1,0 +1,58 @@
+.container_fc4ad8 {
+  flex-direction: row;
+  gap: var(--space-12);
+  padding: var(--space-12);
+}
+.artBox_fc4ad8,
+.container_fc4ad8 {
+  align-items: center;
+  background: var(--background-mod-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+}
+.artBox_fc4ad8 {
+  flex-shrink: 0;
+  height: 64px;
+  justify-content: center;
+  overflow: hidden;
+  width: 64px;
+}
+.art_fc4ad8 {
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+  pointer-events: none;
+  width: 56px;
+}
+.body_fc4ad8 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-width: 0;
+}
+.customConfetti__69c6c {
+  inset-inline-end: -75px;
+  pointer-events: none;
+  top: -120px;
+}
+.modalOverrideSliderBody__34eac {
+  padding: 0;
+  width: 440px;
+}
+.confettiCanvas__34eac {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.customConfetti__34eac {
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+.customConfetti__34eac.hidden__34eac {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=33460.476985a26e94616b.css.map*/
