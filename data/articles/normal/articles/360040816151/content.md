@@ -27,82 +27,62 @@
   </p>
   <ul>
     <li data-list-item-id="e21548e4e67a2652c9450de409b43aa06">
-      <a
-        href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJN3P338W5BPT2MV63"
+      <a href="#h_01HFFJ28PJN3P338W5BPT2MV63"
         >What is Go Live and Screen Share?</a
       > 
       <ul>
         <li data-list-item-id="e62995f990e1bfaa91ca9d196dda887f3">
-          <a
-            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJF3AW5WS7TNZNCPKN"
+          <a href="#h_01HFFJ28PJF3AW5WS7TNZNCPKN"
             >How to Stream in a Discord Channel</a
           >
         </li>
       </ul>
     </li>
     <li data-list-item-id="e7a32ff319dc3f049953283f8db421d41">
-      <a
-        href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJAY9AHGRQ85XRSF8G"
+      <a href="#h_01HFFJ28PJAY9AHGRQ85XRSF8G"
         >How do I Screen Share my Game on Discord?</a
       > 
       <ul>
         <li data-list-item-id="e6c57a44620c213cc7c0faf06f866193a">
-          <a
-            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJTSNBKEPFGMSM8CNJ"
+          <a href="#h_01HFFJ28PJTSNBKEPFGMSM8CNJ"
             >Screen Share Your Game Using Overlay</a
           >
         </li>
         <li data-list-item-id="ec1693ff1dc4b3ffd2cffc5b2d0b4226c">
-          <a
-            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ0KS0XE3DCV4EWDA4"
+          <a href="#h_01HFFJ28PJ0KS0XE3DCV4EWDA4"
             >How do I screen share in a Direct Message?</a
           >
         </li>
       </ul>
     </li>
     <li data-list-item-id="e9760f347b2f5aec5147c16fae639b7c2">
-      <a
-        href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ0F9PHJ9SKK6DWC2E"
-        >Stream Quality Settings</a
-      >
+      <a href="#h_01HFFJ28PJ0F9PHJ9SKK6DWC2E">Stream Quality Settings</a>
       <ul>
         <li data-list-item-id="e1f47e494057f1a3cb95d1b06ab3ef812">
-          <a
-            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ0M35H8PM3PMFYWPE"
+          <a href="#h_01HFFJ28PJ0M35H8PM3PMFYWPE"
             >Stream Quality Settings for Go Live</a
           >
         </li>
         <li data-list-item-id="e82d5b580818f8b67a08b4884232f5592">
-          <a
-            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJF9VT9WJ853CA4762"
+          <a href="#h_01HFFJ28PJF9VT9WJ853CA4762"
             >Screen Share Stream Quality Settings For Direct Messages </a
           > 
           <ul>
             <li data-list-item-id="e00f04b927bb170e500e8ad627696cebd">
-              <a
-                href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJV2A3A3M3YER8CH3Y"
-                >View Modes</a
-              >
+              <a href="#h_01HFFJ28PJV2A3A3M3YER8CH3Y">View Modes</a>
             </li>
             <li data-list-item-id="e1c8c22642cc3d8024a0547723453d43a">
-              <a
-                href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJS00NX4CMYT1R1V30"
-                >Window Modes</a
-              >
+              <a href="#h_01HFFJ28PJS00NX4CMYT1R1V30">Window Modes</a>
             </li>
             <li data-list-item-id="ecebd803bdcdcb525972ba5c8b5a18b67">
-              <a
-                href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJK46RNAZ8JPEF2G0J"
-                >Audio Sharing</a
-              >
+              <a href="#h_01HFFJ28PJK46RNAZ8JPEF2G0J">Audio Sharing</a>
             </li>
           </ul>
         </li>
       </ul>
     </li>
     <li data-list-item-id="e624f6903cd282f45aa738ddd90436532">
-      <a
-        href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJV9BYYQKW4ACP1W26"
+      <a href="#h_01HFFJ28PJV9BYYQKW4ACP1W26"
         >Go Live: Screen Share Server Permissions</a
       >
     </li>
@@ -120,22 +100,15 @@
       </ul>
     </li>
     <li data-list-item-id="e0f01a7c02aff77ea5234075410548363">
-      <a
-        href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJH77AAZ7HR0GEN6M3"
-        >How do I watch a Stream?</a
-      >
+      <a href="#h_01HFFJ28PJH77AAZ7HR0GEN6M3">How do I watch a Stream?</a>
       <ul>
         <li data-list-item-id="e121e87ec5e7980bb05a171ed1940396a">
-          <a
-            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJVPX87HMESR599JHH"
+          <a href="#h_01HFFJ28PJVPX87HMESR599JHH"
             >Troubleshooting for a Go Live Viewer</a
           >
         </li>
         <li data-list-item-id="edffc3009aeec4b7e0bbce8957b5301e9">
-          <a
-            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ2BY2WHE38TTRXQ3P"
-            >Go Live: Pop Out</a
-          >
+          <a href="#h_01HFFJ28PJ2BY2WHE38TTRXQ3P">Go Live: Pop Out</a>
         </li>
       </ul>
     </li>
@@ -410,14 +383,15 @@
   >
 </h4>
 <div class="tip-box">
-  <strong>Tip:</strong> Tip: If you want to swap from one app window to another,
+  <strong>Tip:</strong> If you want to swap from one app window to another,
   you’ll be able to easily swap by selecting the "Change Window" option!
 </div>
 <h1 id="h_01HFFJ28PJ0F9PHJ9SKK6DWC2E">Stream Quality Settings</h1>
 <div class="tip-box">
   <span style="color: #434343"
     ><strong>Tip:</strong> All users can stream up to 720p/30fps. Nitro and
-    Nitro Classic subscribers can stream up to 4k/60fps.</span
+    Nitro Classic subscribers can stream up to 4k/60fps. Nitro subscribers on
+    iOS can enjoy HD streaming in up to 1080p/60fps.</span
   >
 </div>
 <p>
