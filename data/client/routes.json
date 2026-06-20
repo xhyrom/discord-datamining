@@ -5079,25 +5079,15 @@
   },
   "GUILD_LEADERBOARD": {
     "url": "/guilds/:param/leaderboards/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "UPDATE_MY_LOL_LEADERBOARD": {
     "url": "/users/@me/update-league-of-legends-leaderboard",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "GUILD_LEADERBOARD_SETTINGS": {
     "url": "/guilds/:param/leaderboards/:param/settings",
-    "allowed_methods": [
-      "OPTIONS",
-      "PUT"
-    ]
+    "allowed_methods": null
   },
   "VIRTUAL_CURRENCY_SKU_REDEEM": {
     "url": "/virtual-currency/skus/:param/redeem",
