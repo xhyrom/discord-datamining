@@ -1,0 +1,101 @@
+.wrapper__9ed0b {
+  inset-inline-start: 0;
+  isolation: isolate;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  will-change: transform;
+  z-index: 10;
+}
+.innerWrapper__9ed0b,
+.wrapper__9ed0b {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+}
+.innerWrapper__9ed0b {
+  align-items: center;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background-color: hsla(0, 0%, 100%, 0.17);
+  border: 1px solid hsla(0, 0%, 100%, 0.16);
+  border-radius: 16px;
+  box-sizing: border-box;
+  gap: 40px;
+  margin-bottom: 36px;
+  padding: 12px;
+  pointer-events: all;
+  position: relative;
+  transform: translateZ(0);
+}
+.theme-light .innerWrapper__9ed0b {
+  background-color: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.guildInfo__9ed0b {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.guildIcon__9ed0b {
+  border: 1px solid hsla(0, 0%, 100%, 0.16);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-low);
+  flex: 0 0 auto;
+}
+.theme-light .guildIcon__9ed0b {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.ctaButton__9ed0b {
+  flex: 0 0 auto;
+}
+.guildName__9ed0b {
+  color: var(--white);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.theme-light .guildName__9ed0b {
+  color: var(--primary-800);
+}
+.container__040eb {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-high);
+  cursor: pointer;
+  display: grid;
+  margin: 0 auto var(--space-32);
+  max-width: 770px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.thumbnail__040eb {
+  display: block;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.overlay__040eb {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(25, 22, 58, 0.2) 0,
+    rgba(25, 22, 58, 0.9) 100%
+  );
+}
+.overlay__040eb,
+.playButton__040eb {
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.playButton__040eb {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=26564.75099699dbabe045.css.map*/

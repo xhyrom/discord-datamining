@@ -1,0 +1,65 @@
+.container_b7e1cb {
+  display: grid;
+  grid-auto-flow: row;
+  height: -moz-fit-content;
+  height: fit-content;
+  grid-row-gap: 0.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0.125rem;
+  padding-top: 0.125rem;
+  position: relative;
+  text-indent: 0;
+}
+.container_b7e1cb:empty {
+  display: none;
+}
+.gifFavoriteButton_b7e1cb {
+  box-sizing: border-box;
+  display: block;
+  margin-block: 0;
+  margin-inline: auto 0;
+  opacity: 0;
+  transform: translateY(-16px);
+}
+.full-motion .gifFavoriteButton_b7e1cb {
+  transition:
+    transform 0.2s ease,
+    opacity 0.1s ease;
+}
+.imageWrapper:focus-within .gifFavoriteButton_b7e1cb,
+.imageWrapper:hover .gifFavoriteButton_b7e1cb {
+  opacity: 1;
+  transform: translateY(0);
+}
+.giftCodeContainer_b7e1cb {
+  width: 100%;
+}
+.referralContainer_b7e1cb {
+  justify-content: space-between;
+  width: 100%;
+}
+.pollContainer_b7e1cb {
+  margin: 4px 0;
+}
+.confirmText_b7e1cb {
+  margin-bottom: 12px;
+}
+.threadRoleMentionFailure_b7e1cb {
+  color: var(--text-feedback-critical);
+  font-size: 12px;
+  line-height: 16px;
+}
+.ctaButtonContainer_b7e1cb {
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+.embedIFrame__49997 {
+  opacity: 0.8;
+}
+.embedIFrame__49997:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=12672.9e6266354353e275.css.map*/

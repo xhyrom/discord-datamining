@@ -1,0 +1,19 @@
+.hangTightNotice_fb42a1 {
+  border-top: 1px solid var(--interactive-background-hover);
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+}
+.hangTightIcon_fb42a1 {
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+.hangTightContent_fb42a1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+/*# sourceMappingURL=31544.f3b74a164426231d.css.map*/

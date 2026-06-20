@@ -1,0 +1,44 @@
+.image__04666 {
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+}
+.emptyPreviewContainer__04666 {
+  align-items: center;
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  bottom: 0;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.emptyPreviewImage__04666 {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 60%;
+  margin-bottom: 10px;
+  width: 80%;
+}
+.emptyPreviewText__04666 {
+  color: var(--text-default);
+}
+.noImage__04666 {
+  background-image: none;
+}
+.images-light .emptyPreviewImage__04666 {
+  background-image: url(/assets/bc689a4cf705a445.svg);
+}
+.images-light .emptyPreviewImage__04666.noImage__04666 {
+  background-image: none;
+}
+.images-dark .emptyPreviewImage__04666 {
+  background-image: url(/assets/6b1a461f35c05c7a.svg);
+}
+.images-dark .emptyPreviewImage__04666.noImage__04666 {
+  background-image: none;
+}
+
+/*# sourceMappingURL=1887.499bb47b88ba31b9.css.map*/
