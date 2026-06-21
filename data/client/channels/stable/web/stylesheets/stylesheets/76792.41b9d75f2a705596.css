@@ -1,0 +1,224 @@
+.refreshContent__390b6 {
+  display: flex;
+  flex-direction: column;
+}
+.refreshStepRow__390b6 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+.refreshStepCurrent__390b6 {
+  color: var(--text-default);
+}
+.refreshStepChevron__390b6,
+.refreshStepUpcoming__390b6 {
+  color: var(--text-muted);
+}
+.refreshStepChevron__390b6 {
+  flex-shrink: 0;
+}
+.refreshDescription__390b6 {
+  color: var(--text-subtle);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+  margin-bottom: var(--space-24);
+}
+.refreshPlanRow__390b6 {
+  justify-content: space-between;
+  margin: 0;
+}
+.refreshPlanRow__390b6,
+.refreshPlanSelectorWrapper__390b6 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-16);
+}
+.refreshPlanSelectorWrapper__390b6 {
+  min-width: 0;
+}
+.refreshQuantitySelector__390b6 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+}
+.refreshQuantityInputWrapper__390b6 {
+  align-items: center;
+  background-color: var(--input-background-default);
+  border: 1px solid var(--input-border-default);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  transition: border-color 0.1s ease;
+  width: 40px;
+}
+.refreshQuantityInputWrapper__390b6:focus-within {
+  border-color: var(--input-border-active);
+  outline: 2px solid var(--input-border-active);
+  outline-offset: -2px;
+}
+.refreshQuantityInput__390b6 {
+  background: transparent;
+  border: 0;
+  color: var(--input-text-default);
+  font-size: 16px;
+  height: 100%;
+  line-height: 20px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.refreshQuantityInput__390b6:focus {
+  outline: none;
+}
+.refreshPlanLabel__390b6 {
+  color: var(--text-default);
+}
+.refreshPlanPrice__390b6 {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  text-align: end;
+}
+.refreshDiscountCallout__390b6 {
+  align-items: center;
+  background-color: var(--background-mod-subtle);
+  border-radius: var(--radius-sm);
+  display: flex;
+  gap: var(--space-8);
+  margin: var(--space-24) 0;
+  padding: var(--space-8);
+}
+.refreshDiscountCalloutIconWrapper__390b6 {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  height: 20px;
+  justify-content: center;
+  width: 20px;
+}
+.refreshDiscountCalloutIcon__390b6 {
+  display: block;
+  overflow: visible;
+}
+.refreshDiscountCalloutText__390b6 {
+  color: var(--text-subtle);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  line-height: 18px;
+  min-width: 0;
+}
+.refreshDiscountCalloutText__390b6 a,
+.refreshDiscountCalloutText__390b6 button {
+  color: var(--text-link);
+}
+.refreshDiscountCalloutText__390b6 a {
+  text-decoration: none;
+}
+.refreshDiscountCalloutText__390b6 a:hover,
+.refreshDiscountCalloutText__390b6 button:hover {
+  text-decoration: underline;
+}
+.refreshDiscountCalloutText__390b6 button {
+  background: none;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+.refreshSubtotalLabel__390b6 {
+  color: var(--text-strong);
+}
+.refreshSubtotalPrice__390b6 {
+  color: var(--text-default);
+  font-size: 20px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 24px;
+  text-align: end;
+}
+.refreshLegalNote__390b6 {
+  margin-top: var(--space-12);
+}
+.refreshLegalNote__390b6 a {
+  color: var(--text-link);
+  text-decoration: none;
+}
+.refreshLegalNote__390b6 a:hover {
+  text-decoration: underline;
+}
+.perkRow_c609c8 {
+  align-items: center;
+  border-bottom: 1px solid var(--channeltextarea-background);
+  display: flex;
+  margin: 0 16px;
+  padding: 16px 0;
+}
+.perkRow_c609c8:last-child {
+  border-bottom: none;
+}
+.perkIconContainer_c609c8 {
+  display: flex;
+  justify-content: center;
+  margin-inline-end: 16px;
+}
+.perkIcon_c609c8,
+.perkIconContainer_c609c8 {
+  height: 24px;
+  width: 24px;
+}
+.perkDescription_c609c8 {
+  color: var(--interactive-text-active);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+}
+.closeButton__2d726 {
+  inset-inline-end: 4px;
+  position: absolute;
+  top: 12px;
+}
+.upsellImage__2d726 {
+  background-image: url(/assets/7a8cfb4e8b5926c9.svg);
+  background-size: cover;
+  height: 120px;
+  margin: 0 auto 32px;
+  width: 265px;
+}
+.upsellImageWithTrialOffer__2d726 {
+  margin-top: 24px;
+}
+.premiumTrialBadge__2d726 {
+  inset-inline-start: 50%;
+  position: absolute;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.bodyText__2d726 {
+  color: var(--interactive-text-default);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+}
+.perksList__2d726 {
+  background-color: var(--background-base-lower);
+  border-radius: 8px;
+  margin: 16px 0;
+}
+.perkIconGuild__2d726 {
+  color: var(--guild-boosting-pink);
+}
+.perkIconUpload__2d726 {
+  color: var(--premium-perk-yellow);
+}
+.perkIconStream__2d726 {
+  color: var(--premium-perk-dark-blue);
+}
+.perkIconChatPerks__2d726 {
+  color: var(--brand-400);
+}
+
+/*# sourceMappingURL=76792.41b9d75f2a705596.css.map*/

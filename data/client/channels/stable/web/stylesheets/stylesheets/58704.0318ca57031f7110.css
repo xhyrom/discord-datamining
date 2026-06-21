@@ -1,0 +1,127 @@
+.peopleListItem_cc6179 {
+  border-radius: 8px;
+  border-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+  margin-inline: 14px 10px;
+  overflow: hidden;
+  padding: 16px 10px;
+}
+.peopleListItem_cc6179.active_cc6179 + .divider_cc6179,
+.peopleListItem_cc6179:hover + .divider_cc6179 {
+  background-color: transparent;
+}
+.peopleListItem_cc6179.active_cc6179,
+.peopleListItem_cc6179:hover {
+  background: var(--interactive-background-hover);
+  border-color: transparent;
+  box-shadow: none;
+}
+.peopleListItem_cc6179:hover {
+  background-color: var(--background-mod-subtle);
+}
+.peopleListItem_cc6179.active_cc6179 {
+  background-color: var(--background-mod-normal);
+}
+.full-motion .peopleListItem_cc6179 {
+  transition: background-color 0.2s ease;
+}
+.divider_cc6179 {
+  background-color: var(--border-subtle);
+  display: flex;
+  flex: 1;
+  height: 1px;
+  margin-inline: 30px 20px;
+}
+.divider_cc6179.activeDivider_cc6179 {
+  background-color: transparent;
+}
+.statusText__19b6d,
+.text__19b6d {
+  font-size: 14px;
+}
+.statusText__19b6d {
+  color: var(--text-muted);
+}
+.userInfo__0a06e {
+  display: flex;
+  overflow: hidden;
+}
+.avatar__0a06e {
+  flex-shrink: 0;
+  margin-block: 0;
+  margin-inline: 0 12px;
+}
+.text__0a06e {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.account__0a06e {
+  display: flex;
+  flex-direction: row;
+}
+.accountIdentifier__0a06e {
+  margin-inline-start: 8px;
+}
+.subtext__0a06e {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.discordTag__0a06e {
+  align-items: flex-end;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.botTag__0a06e,
+.discordTag__0a06e {
+  display: flex;
+}
+.username__0a06e {
+  color: var(--text-strong);
+  font-weight: var(--font-weight-semibold);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.discriminator__0a06e {
+  color: var(--text-default);
+  font-size: 14px;
+  line-height: 16px;
+  visibility: hidden;
+}
+.hovered__0a06e .discriminator__0a06e {
+  visibility: visible;
+}
+.alignUniqueUsername__0a06e {
+  align-items: center;
+}
+.listItemContents_fc004c {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.friendAnniversaryRow_fc004c {
+  padding: var(--space-8) 0;
+}
+.actions_fc004c {
+  display: flex;
+  gap: 10px;
+}
+.anniversarySubtext_fc004c {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+}
+.userInfoCentered_fc004c {
+  align-items: center;
+}
+
+/*# sourceMappingURL=58704.0318ca57031f7110.css.map*/

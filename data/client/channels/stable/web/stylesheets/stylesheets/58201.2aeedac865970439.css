@@ -1,0 +1,41 @@
+.premiumTooltipFooterBackground__7d7fe {
+  background: linear-gradient(90deg, #b473f5, #e292aa);
+  width: "100%";
+}
+.tooltipBodyContainer__7d7fe {
+  padding: 8px 12px;
+  text-align: center;
+}
+.tooltipPremiumFooterContainer__7d7fe {
+  align-items: center;
+  background: linear-gradient(90deg, #b473f5, #e292aa);
+  border-radius: 0 0 5px 5px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.tooltipRemovePadding__7d7fe {
+  padding: 0;
+}
+.gemIcon__7d7fe {
+  margin-top: 2px;
+  margin-inline-start: -4px;
+}
+.tooltipPremiumFooterSegment__7d7fe {
+  align-items: center;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 4px;
+  text-align: center;
+}
+.tooltipPremiumFooterTierSegment__7d7fe {
+  border-inline-end: 1px solid;
+  border-color: var(--background-surface-high);
+}
+.clanBadgeContainer__7d7fe img {
+  margin: 0;
+}
+
+/*# sourceMappingURL=58201.2aeedac865970439.css.map*/

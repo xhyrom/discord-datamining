@@ -1,0 +1,101 @@
+.emojiButton__04eed {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  max-height: 50px;
+}
+.emojiButtonHovered__04eed,
+.emojiButtonNormal__04eed {
+}
+.spriteContainer__04eed {
+  position: relative;
+  --custom-emoji-sprite-bg-position: calc(
+      var(--custom-emoji-sprite-col) * -1 * var(--custom-emoji-sprite-size)
+    )
+    calc(var(--custom-emoji-sprite-row) * -1 * var(--custom-emoji-sprite-size));
+  --custom-emoji-sprite-bg-size: calc(var(--custom-emoji-sprite-size) * 20)
+    calc(var(--custom-emoji-sprite-size) * 4);
+}
+.sprite__04eed,
+.spriteContainer__04eed {
+  display: block;
+  height: var(--custom-emoji-sprite-size);
+  width: var(--custom-emoji-sprite-size);
+}
+.sprite__04eed {
+  inset-inline-start: 0;
+  position: absolute;
+  top: 0;
+}
+.spriteColored__04eed {
+  background-image: url(/assets/1b05b930a77fbff9.png);
+  background-position: var(--custom-emoji-sprite-bg-position);
+  background-size: var(--custom-emoji-sprite-bg-size);
+}
+.spriteGreyscale__04eed {
+  background-color: var(--interactive-text-default);
+}
+.spriteGreyscale__04eed,
+.spritePremiumColored__04eed {
+  -webkit-mask-image: url(/assets/decf85f79e02d276.png);
+  mask-image: url(/assets/decf85f79e02d276.png);
+  -webkit-mask-position: var(--custom-emoji-sprite-bg-position);
+  mask-position: var(--custom-emoji-sprite-bg-position);
+  -webkit-mask-size: var(--custom-emoji-sprite-bg-size);
+  mask-size: var(--custom-emoji-sprite-bg-size);
+}
+.spritePremiumColored__04eed.reducedMotion__04eed {
+  background-color: var(--premium-tier-2-purple-for-gradients-2);
+}
+.spritePremiumColored__04eed:not(.reducedMotion__04eed) {
+  animation: spritePremiumPulsing__04eed 2s infinite;
+}
+@keyframes spritePremiumPulsing__04eed {
+  0% {
+    background-color: var(--premium-tier-2-purple);
+  }
+  50% {
+    background-color: var(--premium-tier-2-purple-for-gradients-2);
+  }
+  to {
+    background-color: var(--premium-tier-2-purple);
+  }
+}
+.inactive__04eed {
+  opacity: 0;
+}
+.active__04eed {
+  opacity: 1;
+}
+.premiumUnlockAnimation__04eed {
+  position: absolute;
+  z-index: 100;
+}
+.premiumUnlockAnimation__04eed.reducedMotion__04eed {
+  height: 48px;
+  width: 48px;
+}
+.premiumUnlockAnimation__04eed:not(.reducedMotion__04eed) {
+  animation: shrink__04eed 2s forwards;
+}
+@keyframes shrink__04eed {
+  0% {
+    height: 60px;
+    width: 60px;
+  }
+  75% {
+    height: 60px;
+    width: 60px;
+  }
+  to {
+    height: 48px;
+    width: 48px;
+  }
+}
+.enable-forced-colors .spriteGreyscale__04eed {
+  background-color: ButtonText;
+}
+
+/*# sourceMappingURL=77573.436b77e96a081984.css.map*/

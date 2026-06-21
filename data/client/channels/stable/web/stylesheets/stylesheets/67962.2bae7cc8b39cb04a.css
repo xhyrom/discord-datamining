@@ -1,0 +1,21 @@
+.clickable_faf576 {
+  align-items: center;
+  background-color: var(--opacity-black-40);
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+  height: 100%;
+  inset-inline-start: 0;
+  justify-content: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.2s ease;
+  width: 100%;
+}
+.clickable_faf576:focus-visible,
+.clickable_faf576:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=67962.2bae7cc8b39cb04a.css.map*/

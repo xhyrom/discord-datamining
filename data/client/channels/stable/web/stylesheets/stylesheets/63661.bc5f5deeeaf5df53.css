@@ -1,0 +1,200 @@
+.effects__58042 {
+  border-radius: var(--radius-sm);
+  bottom: 0;
+  inset-inline: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+}
+.soundButtonWrapper__9be63 {
+  background: var(--background-base-lower);
+  list-style: none;
+}
+.soundButton__9be63,
+.soundButtonWrapper__9be63 {
+  border-radius: var(--radius-sm);
+  position: relative;
+}
+.soundButton__9be63 {
+  align-items: center;
+  background: var(--background-mod-subtle);
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  font-weight: var(--font-weight-semibold);
+  height: 40px;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  width: 148px;
+}
+.soundButton__9be63.focused__9be63,
+.soundButton__9be63:active:not(:focus-within),
+.soundButton__9be63:hover {
+  border-color: var(--border-subtle);
+}
+.high-contrast-mode .soundButton__9be63 {
+  border-color: var(--border-muted);
+}
+.animated__9be63:active:not(:focus-within) {
+  box-shadow: none;
+  outline-width: 1px;
+}
+.full-motion .animated__9be63:active:not(:focus-within) {
+  transform: translateY(2px);
+}
+.addButton__9be63 {
+  align-items: center;
+  display: flex;
+  margin: 3px;
+}
+.plusSign__9be63 {
+  color: var(--text-muted);
+  height: 18px;
+  width: 18px;
+}
+.addButton__9be63 > * {
+  margin-inline-end: 4px;
+}
+.hoverActiveBackground__9be63.focused__9be63,
+.hoverActiveBackground__9be63:focus-within {
+  background: var(--background-mod-normal);
+}
+.hoverActiveBackground__9be63:hover {
+  background: var(--background-mod-strong);
+}
+.soundButton__9be63.focused__9be63 .buttonOverlay__9be63,
+.soundButton__9be63:focus-within .buttonOverlay__9be63,
+.soundButton__9be63:hover .buttonOverlay__9be63 {
+  opacity: 1;
+  visibility: visible;
+}
+.soundButton__9be63.focused__9be63 .addButtonOverlay__9be63,
+.soundButton__9be63:focus-within .addButtonOverlay__9be63,
+.soundButton__9be63:hover .addButtonOverlay__9be63 {
+  opacity: 1;
+  visibility: visible;
+}
+.soundInfo__9be63 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px;
+}
+.soundName__9be63 {
+  color: var(--text-strong);
+  display: -webkit-box;
+  flex-grow: 0;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+}
+.soundName__9be63.hasEmoji__9be63 {
+  text-align: start;
+}
+.emoji__9be63 {
+  flex-shrink: 0;
+  height: 20px;
+  width: 20px;
+}
+.soundButtonInteractive__9be63 {
+  cursor: pointer;
+}
+.soundButtonInteractive__9be63.playing__9be63 {
+  border-color: var(--status-positive-background);
+}
+.buttonDisabledSecondaryActionsEnabled__9be63 {
+  cursor: default;
+}
+.buttonDisabled__9be63 {
+  pointer-events: none;
+}
+.premiumDisabled__9be63 {
+  opacity: 0.5;
+}
+.absoluteFill__9be63 {
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  bottom: 0;
+}
+.addButtonOverlay__9be63,
+.buttonOverlay__9be63 {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  visibility: hidden;
+}
+.buttonOverlayBackground__9be63 {
+  background: var(--background-surface-highest);
+  opacity: 0.8;
+}
+.buttonOverlayActions__9be63 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+.secondaryButton__9be63 {
+  color: var(--interactive-text-default);
+  display: flex;
+}
+.secondaryButton__9be63:focus,
+.secondaryButton__9be63:hover {
+  color: var(--interactive-text-hover);
+  cursor: pointer;
+}
+.secondaryIcon__9be63 {
+  height: 16px;
+  width: 16px;
+}
+.favoriteIconFavorite__9be63 {
+  color: var(--text-feedback-warning);
+}
+.primaryIcon__9be63 {
+  color: var(--interactive-text-active);
+  flex: 1;
+  height: 20px;
+  width: 20px;
+}
+.lockIcon__9be63,
+.primaryIcon__9be63 {
+  pointer-events: none;
+}
+.primaryIconTopLevel__9be63 {
+  position: absolute;
+  z-index: 9999;
+}
+.unavailableTooltip__9be63 {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  inset-inline-end: 0;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+.unavailableTooltip__9be63:hover .unavailableTooltipActions__9be63 {
+  opacity: 1;
+  visibility: visible;
+}
+.unavailableTooltipActions__9be63 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  pointer-events: auto;
+  transition: opacity 0.2s ease;
+  visibility: hidden;
+  width: 100%;
+}
+
+/*# sourceMappingURL=63661.bc5f5deeeaf5df53.css.map*/

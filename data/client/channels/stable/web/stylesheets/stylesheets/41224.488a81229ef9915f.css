@@ -1,0 +1,24 @@
+.tile__90dc5 {
+  background-color: var(--primary-700);
+  border-radius: var(--custom-base-tile-border-radius);
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.tile__90dc5.noBorder__90dc5 {
+  border-radius: 0;
+}
+.fillParent__078ba {
+  display: block;
+  height: 100%;
+  overflow: clip;
+  width: 100%;
+}
+.hiddenIframeContainer__078ba {
+  opacity: 0;
+}
+.iframePlaceholder__078ba {
+  background-color: #000;
+}
+
+/*# sourceMappingURL=41224.488a81229ef9915f.css.map*/

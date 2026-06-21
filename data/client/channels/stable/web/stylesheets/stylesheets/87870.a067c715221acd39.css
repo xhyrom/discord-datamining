@@ -1,0 +1,16 @@
+.overflow_b0dfc2 {
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lineClamp2Plus_b0dfc2,
+.overflow_b0dfc2 {
+  overflow: hidden;
+  position: relative;
+}
+.lineClamp2Plus_b0dfc2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+/*# sourceMappingURL=87870.a067c715221acd39.css.map*/

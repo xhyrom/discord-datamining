@@ -1,0 +1,33 @@
+.externalProductWrapper__320c6 {
+  align-items: center;
+  display: flex;
+  height: 252px;
+  justify-content: center;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+}
+.orbProfileBadgeAsset__320c6 {
+  height: 120px;
+}
+.fractionalNitroRive__320c6 {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.fadeInAvatarImg_d71c71 {
+  animation: fadeIn_d71c71 1.5s;
+}
+.avatar_d71c71 {
+  margin: 0 auto;
+}
+@keyframes fadeIn_d71c71 {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=78662.8f2c410b63233f7e.css.map*/

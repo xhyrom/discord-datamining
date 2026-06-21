@@ -1,0 +1,98 @@
+.placeholder__84ae7 {
+  align-items: center;
+  background-color: var(--background-mod-subtle);
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+  padding: var(--space-8) var(--space-12);
+}
+.divider__1de9c {
+  border-top: thin solid var(--border-subtle);
+  height: 1px;
+  width: 100%;
+}
+.selectableItem_eb626b {
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: var(--text-strong);
+  cursor: pointer;
+  height: 34px;
+  margin: 2px 0;
+  margin-inline-end: 4px;
+  padding: 8px 10px;
+}
+.selectableItem_eb626b.selected_eb626b {
+  cursor: default;
+}
+.selectableItemLabel_eb626b {
+  font-size: 16px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  top: 1px;
+  white-space: nowrap;
+}
+.theme-light .selectableItem_eb626b:focus,
+.theme-light .selectableItem_eb626b:hover {
+  background-color: var(--primary-200);
+}
+.theme-dark .selectableItem_eb626b:focus,
+.theme-dark .selectableItem_eb626b:hover {
+  background-color: hsl(var(--primary-700-hsl) / 0.6);
+}
+.enable-forced-colors .selectableItem_eb626b:focus,
+.enable-forced-colors .selectableItem_eb626b:hover {
+  outline: 1px solid Highlight;
+  outline-offset: -1px;
+}
+.popoutList__92efc {
+  background: var(--background-mod-normal);
+  border-radius: 5px;
+  padding: 10px 10px 0;
+}
+.popoutListEmpty__92efc {
+  box-sizing: border-box;
+  color: var(--text-strong);
+  cursor: default;
+  margin-block: 2px;
+  margin-inline: 0 4px;
+  padding: 8px 10px 0;
+}
+.divider__92efc {
+  margin: 8px 0;
+}
+.enable-forced-colors .popoutList__92efc {
+  border: 2px solid CanvasText;
+}
+.phoneFieldPopout__61a01 {
+  height: 240px;
+  inset-inline-start: 0;
+  position: absolute;
+  top: 40px;
+  width: 220px;
+}
+.phoneFieldPopout__61a01 .phoneFieldScroller__61a01 {
+  height: 196px;
+  padding-bottom: 10px;
+}
+.phoneFieldPopout__61a01 .countryItem__61a01 {
+  width: 100%;
+}
+.phoneFieldPopout__61a01 .countryName__61a01 {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 18px;
+  margin-inline-end: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.phoneFieldPopout__61a01 .countryCode__61a01 {
+  color: var(--text-strong);
+  font-size: 13px;
+  font-weight: var(--font-weight-semibold);
+  text-align: end;
+}
+
+/*# sourceMappingURL=16907.8ce716f27738342b.css.map*/

@@ -1,0 +1,128 @@
+.container__52c9d {
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 101;
+}
+.background__52c9d {
+  background-color: var(--background-base-lower);
+  opacity: 0.98;
+  position: absolute;
+}
+.background__52c9d,
+.content__52c9d {
+  height: 100%;
+  width: 100%;
+}
+.content__52c9d {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+}
+.closeButton__52c9d {
+  cursor: pointer;
+  inset-inline-end: 20px;
+  position: absolute;
+  top: 20px;
+}
+.closeButtonIcon__52c9d {
+  color: var(--interactive-text-default);
+}
+.description__52c9d,
+.header__52c9d {
+  text-align: center;
+}
+.upsellImage__52c9d {
+  width: 124px;
+}
+.banner__97f37 {
+  border-radius: 8px;
+  max-width: 304px;
+  width: 100%;
+}
+.banner__97f37.hasTrialOffer__97f37 {
+  margin-bottom: 16px;
+  margin-top: 16px;
+  max-height: 172px;
+}
+.wrapper__97f37 {
+  align-items: center;
+  background-color: var(--modal-background);
+  border-radius: 8px;
+  display: flex;
+  height: 100%;
+  inset-inline-start: 0;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 101;
+}
+.closeButton__97f37 {
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  inset-inline-end: 16px;
+  position: absolute;
+  top: 16px;
+}
+.contentFill__97f37 {
+  background: var(
+    --gradients-nitro-classic-diagonal,
+    linear-gradient(
+      45deg,
+      var(--premium-tier-1-blue) 0,
+      var(--premium-tier-1-purple) 75.25%
+    )
+  );
+  border-radius: 8px;
+  margin-top: 24px;
+  padding: 36px 84px;
+}
+.nitroWheel__97f37 {
+  color: var(--premium-tier-1-purple);
+  padding-inline-end: 4px;
+}
+.content__97f37 {
+  box-sizing: border-box;
+  color: var(--text-default);
+  flex-direction: column;
+  text-align: center;
+}
+.content__97f37,
+.header__97f37 {
+  align-items: center;
+  display: flex;
+}
+.header__97f37 {
+  justify-content: center;
+  margin: 16px 0 8px;
+}
+.headerText__97f37 {
+  margin-inline-start: 4px;
+}
+.subheaderText__97f37 {
+  color: var(--text-default);
+  max-width: 350px;
+  padding: 0 32px;
+  white-space: pre-line;
+}
+.subheaderText__97f37 a {
+  color: var(--text-default);
+  text-decoration: underline;
+}
+.ctaActionWrapper__97f37 {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 0 48px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=68006.e091683d6696fb67.css.map*/

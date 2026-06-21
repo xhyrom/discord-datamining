@@ -1,0 +1,89 @@
+.verifiedRole_e59759 {
+  align-items: center;
+  border: 2px solid var(--border-subtle);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 20px 16px;
+  position: relative;
+}
+.verifiedRole_e59759:hover {
+  border-color: var(--border-muted);
+}
+.verifiedRoleNameDescriptionContainer_e59759 {
+  flex: 2;
+  overflow: hidden;
+}
+.verifiedRoleDescription_e59759,
+.verifiedRoleName_e59759 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.verifiedRoleDescription_e59759 {
+  margin-top: 4px;
+}
+.verifiedRoleHasRole_e59759 {
+  background-color: var(--background-base-lowest);
+  border: 2px solid var(--background-base-lowest);
+  cursor: unset;
+}
+.verifiedRoleHasRole_e59759:hover {
+  border-color: var(--background-base-lowest);
+}
+.roleCheckmark_e59759 {
+  background-color: var(--brand-500);
+  border-radius: 50%;
+  color: var(--white);
+  inset-inline-end: -8px;
+  position: absolute;
+  top: -8px;
+}
+.botAvatar_e59759,
+.roleCheckmark_e59759,
+.roleCheckmark_e59759 svg {
+  height: 20px;
+  width: 20px;
+}
+.botAvatar_e59759 {
+  padding: 2px;
+}
+.animationMiddle__8177b {
+  height: 262px;
+  inset-inline-start: calc(50% - 128px);
+  position: absolute;
+  top: -240px;
+  width: 256px;
+}
+.animationContainer__8177b {
+  position: relative;
+  width: 100%;
+}
+.header__8177b {
+  margin-bottom: 8px;
+  max-width: 100%;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+.header__8177b p {
+  margin: 0;
+}
+.manaContainer__8177b {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 28px;
+  text-align: center;
+}
+@media (max-height: 500px) {
+  .animationContainer__8177b {
+    display: none;
+  }
+}
+.clickableChannelTextArea_d8b277 {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=45821.1a316eee37de8547.css.map*/

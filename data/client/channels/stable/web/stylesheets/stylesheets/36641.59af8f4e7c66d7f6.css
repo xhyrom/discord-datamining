@@ -1,0 +1,19 @@
+.container__76394 {
+  border-radius: 20px;
+  filter: saturate(var(--saturation-factor, 1));
+  overflow: visible;
+  position: relative;
+}
+.glowAnimation__76394 {
+  filter: blur(var(--custom-blur-amount)) saturate(var(--saturation-factor, 1))
+    hue-rotate(var(--custom-hue-rotate, 0deg));
+  height: calc(100% + var(--custom-glow-amount) * 2 + 2px);
+  inset-inline-start: calc(var(--custom-glow-amount) * -1 - 1px);
+  opacity: var(--custom-glow-opacity);
+  pointer-events: none;
+  position: absolute;
+  top: calc(var(--custom-glow-amount) * -1 - 1px);
+  width: calc(100% + var(--custom-glow-amount) * 2 + 2px);
+}
+
+/*# sourceMappingURL=36641.59af8f4e7c66d7f6.css.map*/
