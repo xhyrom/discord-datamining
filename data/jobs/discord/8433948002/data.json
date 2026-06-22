@@ -30,7 +30,7 @@
     }
   ],
   "id": 8433948002,
-  "updated_at": "2026-06-16T16:05:31-04:00",
+  "updated_at": "2026-06-22T15:02:20-04:00",
   "requisition_id": "R-107179",
   "title": "Account Executive - Tech",
   "company_name": "Discord",
@@ -47,6 +47,13 @@
     }
   ],
   "offices": [
+    {
+      "id": 4105189002,
+      "name": "Los Angeles Metro Area",
+      "location": null,
+      "child_ids": [],
+      "parent_id": null
+    },
     {
       "id": 4105187002,
       "name": "New York, NY",
