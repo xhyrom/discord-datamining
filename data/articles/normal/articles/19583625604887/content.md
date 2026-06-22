@@ -4,19 +4,19 @@
   >
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e9969066d5fc8d7a17bf2a2e3c13ad70c">
     <a
       href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXJWRPAM7ZBDKJ75B0NWQ4G"
       >What are Voice Channels?</a
     >
   </li>
-  <li>
+  <li data-list-item-id="eb46de84657c2613326691563f079201a">
     <a
       href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXJWRPAZBM3FY6333C9WBQ3"
       >How to create Voice Channels in a server</a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e2b70b123fccaf3cb0ab33e3c9e8732c7">
         <a
           href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXJWRPA55H4PRWCP622JNJJ"
           >Role permissions for adding a Voice Channel</a
@@ -24,19 +24,19 @@
       </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="e6b8e7389d2278600ad37fbc74ebaf03d">
     <a
       href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXJWRPAD3XEYBF3A3Q0CM8H"
       >How to join a Voice Channel in a server</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e9fd92f11fa2c11bda600e1aa530abae2">
     <a
       href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXJWRPAHJ609VF2JRKYGGQW"
       >How to set a Voice Channel status</a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e96c4e06a2d2159381f7d38c58facbc35">
         <a
           href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXJWRPANYHE1WF48TTZ59T3"
           >Role permissions for setting a Voice Channel status</a
@@ -52,6 +52,10 @@
   voice channel for you and your friends, but also so much more about voice
   channels!
 </p>
+<div class="exp-box">
+  <strong>Important:</strong> The Living Room feature is an experimental feature
+  available to a very limited number of servers.
+</div>
 <h1 id="h_01HGXJWRPAM7ZBDKJ75B0NWQ4G">What are Voice Channels?</h1>
 <p>
   A voice channel is a channel in a server where users can connect and chat with
@@ -150,9 +154,11 @@
   How to join a Voice Channel in a server
 </h1>
 <h3 id="h_01HGXJWRPAXDMCHDV9VGMX04WX">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If a voice channel has a lock icon on it, it means you do not have
-    permissions to join the channel.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >If a voice channel has a lock icon on it, it means you do not have
+      permissions to join the channel.</span
+    ></span
   >
 </h3>
 <p>1. Navigate to the server that you want to join the voice channel in.</p>
