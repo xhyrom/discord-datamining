@@ -552,6 +552,21 @@
     ></span
   >
 </div>
+<div class="exp-box">
+  <span style="color: #434343"
+    ><strong>Important</strong>: We’re currently running an experiment with
+    <strong>Server Themes</strong>, an additional perk available to select
+    servers that allows server admins to set a custom color theme for their
+    server with 3 Server Boosts. To configure it, go to
+    <strong>Server Settings &gt; Server Theme</strong>. </span
+  ><br /><br /><span style="color: #434343"
+    >Once enabled, members can choose whether to view the server’s theme while
+    they’re in that server or keep using the theme set on their own device. If
+    you have a theme set under
+    <strong>User Settings &gt; Display &gt; Theme</strong>, you can switch
+    between the server’s theme and your account theme at any time.</span
+  >
+</div>
 <h2 id="h_01JXWRENPD3N35RBKMS1YR1538">
   How Do I Apply Server Boosts to Additional Perks
 </h2>

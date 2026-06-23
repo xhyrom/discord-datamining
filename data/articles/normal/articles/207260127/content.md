@@ -5,40 +5,45 @@
   your app's appearance.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li data-list-item-id="e27ca134cf6e3dcfda77dcefdfaa815ed">
       <a href="#h_01JPR4VE8AKNPT1S6735SEJ2WQ"
         >How to Change your Discord Theme</a
       >
       <ul>
-        <li><a href="#h_01JPR51MJ41MNRY57T54AYH0JF">Desktop</a></li>
-        <li><a href="#h_01JPR51B5D5D9JC31RHW3RXDDX">Mobile</a></li>
+        <li data-list-item-id="e46e57a2b0beea7971186dbe6cbd819a7">
+          <a href="#h_01JPR51MJ41MNRY57T54AYH0JF">Desktop</a>
+        </li>
+        <li data-list-item-id="eae749f140465fc1080f499b08e66352b">
+          <a href="#h_01JPR51B5D5D9JC31RHW3RXDDX">Mobile</a>
+        </li>
       </ul>
     </li>
-    <li>
+    <li data-list-item-id="e242ad437c2006ba786ba097177df6ee4">
       <a href="#h_01JPR4VE8AZ96PBKN8VCWFJ41G">How to Change the UI Density</a>
     </li>
-    <li>
+    <li data-list-item-id="ec629afaeae877f2ee5015d802e6d04dc">
       <a href="#h_01JPR4GVRS0578ZNJD7ZB21KRS"
         >How to Change the Message Display</a
       >
     </li>
-    <li>
+    <li data-list-item-id="e19c4df02c402e0564c667a9b9b9e0de9">
       <a href="#h_01JPR4KSCNS72EFPCZFWRVHXKZ"
         >How to Use a Color for my Theme</a
       >
     </li>
-    <li>
+    <li data-list-item-id="e3e69ccbcb83315be1716287d3600ebe4">
       <a href="#h_01JXZWY4ZQVKSDMSVG2RMJMFKF">How to Customize Your Theme</a>
       <ul>
-        <li>
+        <li data-list-item-id="eb8a7dcd49e876fa7c1b6cafbd7433b48">
           <a href="#h_01K57C2VJVQ218GVYQW72BHCWX">Creating a Custom Theme</a>
         </li>
-        <li>
+        <li data-list-item-id="efc29de98d1ae53797f17655243e72db7">
           <a href="#h_01K57714AWT22J2N1HXFRG9DYK">Sharing Your Custom Theme</a>
         </li>
       </ul>
@@ -46,6 +51,17 @@
   </ul>
 </div>
 <h1 id="h_01JPR4VE8AKNPT1S6735SEJ2WQ">How to Change your Discord Theme</h1>
+<div class="exp-box">
+  <strong>Important</strong>: We’re currently running an experiment with
+  <strong>Server Themes</strong>, an additional perk available to select servers
+  that allows server admins to set a custom color theme for their server with 3
+  Server Boosts. To configure it, go to
+  <strong>Server Settings &gt; Server Theme</strong>. <br /><br />Once enabled,
+  members can choose whether to view the server’s theme while they’re in that
+  server or keep using the theme set on their own device. If you have a theme
+  set under <strong>User Settings &gt; Display &gt; Theme</strong>, you can
+  switch between the server’s theme and your account theme at any time.
+</div>
 <h2 id="h_01JPR51MJ41MNRY57T54AYH0JF">Desktop</h2>
 <p>
   First, head into your <strong>User Settings</strong> by selecting the
@@ -61,7 +77,7 @@
     alt="image39.gif"
   />
 </p>
-<h4 id="h_01JPR49B3618RTDM25XRB3WV73" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPR49B3618RTDM25XRB3WV73">
   <span style="color: #666666"
     >Access Theme Settings on Desktop: Open User Settings &gt; Appearance</span
   >
@@ -72,22 +88,22 @@
   <strong>Sync with computer.</strong>
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e99a8d4896d20eefffee0d88d7b9290ff">
     The <strong>Light theme </strong>features a white background with dark grey
     text and includes an optional <strong>Dark Sidebar</strong>.
   </li>
-  <li>
+  <li data-list-item-id="e480b2142540cb14fcc6340af6bab1486">
     The <strong>Ash theme </strong>uses a mid-gray background with white text. 
   </li>
-  <li>
+  <li data-list-item-id="eea4a5e179004aadeb6ba15a02b140c87">
     The<strong> Dark theme </strong>displays a dark gray background with white
     text.
   </li>
-  <li>
+  <li data-list-item-id="ed16c5766f9ba00216099c45068e6b09e">
     The <strong>Onyx theme </strong>presents a gray and black background with
     white text.
   </li>
-  <li>
+  <li data-list-item-id="e615634388d215a208ed299e8ade4f217">
     <strong
       style="
         font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
@@ -105,7 +121,7 @@
     height="552"
   />
 </p>
-<h4 id="h_01JPR4B2KGG5NRMQP8EEVQ6AY6" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPR4B2KGG5NRMQP8EEVQ6AY6">
   <span style="color: #666666"
     >Example of Discord Theme Selection Interface on Desktop</span
   >
@@ -127,7 +143,7 @@
     height="621"
   />
 </p>
-<h4 id="h_01JPR4CA8D9HYHHB385A5SGA2K" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPR4CA8D9HYHHB385A5SGA2K">
   <span style="color: #666666"
     >Access Theme Settings on Mobile: Open User Settings &gt; Appearance</span
   >
@@ -138,20 +154,20 @@
   <strong>Automatic</strong> (which syncs with your device settings).
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e0fca6f9849b09a4119b8c804500ac160">
     The <strong>Light</strong> <strong>theme</strong> uses a white background
     with dark grey text. You can also enable the
     <strong>Dark Sidebar</strong> option.
   </li>
-  <li>
+  <li data-list-item-id="eed277623a3bebd56fe451bc48ef9c52e">
     The <strong>Dark</strong> <strong>theme</strong> uses a dark grey/charcoal
     background with white text.
   </li>
-  <li>
+  <li data-list-item-id="ebce075ad1b3872cfd1de41e2062fa98b">
     The <strong>Midnight theme </strong>presents a gray and black background
     with white text.
   </li>
-  <li>
+  <li data-list-item-id="e6d3124e11f3b9c281cb4be8aed4fe37b">
     <strong>Automatic</strong> matches your Discord theme to your mobile
     device's appearance settings.
   </li>
@@ -169,7 +185,7 @@
     height="623"
   />
 </p>
-<h4 id="h_01JPR4F5YWJPCDJJS5R7FNMZW6" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPR4F5YWJPCDJJS5R7FNMZW6">
   <span style="color: #666666"
     >Example of Discord Theme Selection Interface on Mobile</span
   >
@@ -189,7 +205,7 @@
     height="541"
   />
 </p>
-<h4 id="h_01JPR4GDX7VAHXKTQY6S41M68C" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPR4GDX7VAHXKTQY6S41M68C">
   <span style="color: #666666">UI Density options on Desktop</span>
 </h4>
 <h1 id="h_01JPR4GVRS0578ZNJD7ZB21KRS">How to Change the Message Display</h1>
@@ -206,7 +222,7 @@
     height="344"
   />
 </p>
-<h4 id="h_01JPR4HS490MP6HZ35HETTWR9X" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPR4HS490MP6HZ35HETTWR9X">
   <span style="color: #666666">Chat Message Display options on Desktop</span>
 </h4>
 <p>
@@ -221,7 +237,7 @@
       height="551"
   /></strong>
 </p>
-<h4 id="h_01JPR4J78GF67W71CZ8SS35HJQ" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPR4J78GF67W71CZ8SS35HJQ">
   <span style="color: #666666"
     >Example of Light Theme with Compact Message Display</span
   >
@@ -230,7 +246,7 @@
   Fine-tune your app's appearance using the sliders to adjust the following:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e7db5da4ca1c43237d9adfff38bf5f3b3">
     <strong>Zoom Level: </strong>Adjusting zoom changes the size of all Discord
     elements, including text. The Discord desktop app offers a slider control,
     while browsers use their built-in zoom function. Use Ctrl/Cmd + plus (+) to
@@ -244,11 +260,11 @@
     height="502"
   />
 </p>
-<h4 id="h_01JT16BF5CS2C0R0R6YSGDWJQJ" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JT16BF5CS2C0R0R6YSGDWJQJ">
   <span style="color: #666666">Example of Decreasing Zoom Level</span>
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="ee577431b9972776d4a97b25522a51e83">
     <strong>Chat Font Scaling: </strong>This setting adjusts only chat text size
     while keeping other elements unchanged. Note that the zoom level will
     amplify whatever font size you choose here.
@@ -261,11 +277,11 @@
     height="515"
   />
 </p>
-<h4 id="h_01JT16CPDWXANV295NREQ74YKG" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JT16CPDWXANV295NREQ74YKG">
   <span style="color: #666666">Example of Increasing Chat Font Scaling</span>
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="eecd488fa658fb244f654a6dfee942a33">
     <strong>Message Group Spacing: </strong>Increase the space between chat
     messages to make conversations easier to read.
   </li>
@@ -277,7 +293,7 @@
     height="519"
   />
 </p>
-<h4 id="h_01JT16DK8N70XJB5E32V07J585" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JT16DK8N70XJB5E32V07J585">
   <span style="color: #666666"
     >Example of Decreasing Message Group Spacing</span
   >
@@ -306,15 +322,17 @@
     height="473"
   />
 </p>
-<h4 id="h_01JPR4MDJ92YRYPJG62ZKN1084" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JPR4MDJ92YRYPJG62ZKN1084">
   <span style="color: #666666"
     >Nitro subscribers can customize Discord's look with colorful themes</span
   >
 </h4>
 <div class="tip-box">
-  Even without Nitro, you can preview themes on the desktop app. Select the
-  <strong>Preview Theme</strong> button to open a preview sidebar where you can
-  test different themes.
+  <p>
+    Even without Nitro, you can preview themes on the desktop app. Select the
+    <strong>Preview Theme</strong> button to open a preview sidebar where you
+    can test different themes.
+  </p>
   <p class="wysiwyg-text-align-center">
     <img
       src="https://support.discord.com/hc/article_attachments/34960658929815"
@@ -322,7 +340,7 @@
       height="530"
     />
   </p>
-  <h4 id="h_01JPR4P5KXJV9G2CCYJW5NECNH" class="wysiwyg-text-align-center">
+  <h4 class="wysiwyg-text-align-center" id="h_01JPR4P5KXJV9G2CCYJW5NECNH">
     <span style="color: #666666"
       >Preview Theme: See How Different Themes Look Before Applying</span
     >
@@ -380,7 +398,7 @@
     height="561"
   />
 </p>
-<h4 id="h_01JXZX031FCD5QW5X504HQM8NM" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JXZX031FCD5QW5X504HQM8NM">
   <span style="color: #666666"
     >Navigating to User Settings &gt; Appearance &gt; Theme on Desktop</span
   >
@@ -390,7 +408,7 @@
   app, you can select the following: 
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e8b3167f664a037ab417ff34bacfa64d4">
     Select between <strong>Dark</strong> or <strong>Light</strong> mode color
     palettes
   </li>
@@ -402,11 +420,11 @@
     height="579"
   />
 </p>
-<h4 id="h_01JXZX031F7S1G4NXN2B41A9B2" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JXZX031F7S1G4NXN2B41A9B2">
   <span style="color: #666666">Selecting Between Dark and Light Mode</span>
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="e71fb05b9db895c05904a5d491f7c7351">
     Select your custom colors using the <strong>color field </strong>and<strong>
       hue slider</strong
     >
@@ -419,34 +437,36 @@
     height="526"
   />
 </p>
-<h4 id="h_01JXZX031FVRQHDE9B7YKQC8GY" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JXZX031FVRQHDE9B7YKQC8GY">
   <span style="color: #666666"
     >Choosing Colors from the Color Field and Hue Slider</span
   >
 </h4>
 <div class="tip-box">
-  <strong>Tip</strong
-  ><span style="color: #434343"
-    >: You can use either the <strong>color picker</strong></span
-  >
-  icon [<img
-    src="https://support.discord.com/hc/article_attachments/32883943209495"
-    width="24"
-    height="24"
-  />] or enter a Hex code to select a color for your theme.
+  <p>
+    <strong>Tip</strong
+    ><span style="color: #434343"
+      >: You can use either the <strong>color picker</strong></span
+    >
+    icon [<img
+      src="https://support.discord.com/hc/article_attachments/32883943209495"
+      width="24"
+      height="24"
+    />] or enter a Hex code to select a color for your theme.
+  </p>
   <p class="wysiwyg-text-align-center">
     <img
       src="https://support.discord.com/hc/article_attachments/34960658938519"
     />
   </p>
-  <h4 id="h_01K34KB5D9B3HQDEG12XMM1DK2" class="wysiwyg-text-align-center">
+  <h4 class="wysiwyg-text-align-center" id="h_01K34KB5D9B3HQDEG12XMM1DK2">
     <span style="color: #666666"
       >Choosing Colors by Entering a Hex Code or Using the Color Picker</span
     >
   </h4>
 </div>
 <ul>
-  <li>
+  <li data-list-item-id="e71d93cca5e736317aba774ad104f808e">
     Add additional colors to your gradient by pressing
     <strong>Add Color</strong> 
   </li>
@@ -464,20 +484,19 @@
     height="503"
   />
 </p>
-<h4 id="h_01JXZX031FA54MZ6H4DR9ZXWP6" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JXZX031FA54MZ6H4DR9ZXWP6">
   <span style="color: #666666">Using the Add Color Option</span>
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="eff02ed5afc895c6b2fe073020ab1098e">
     Use the <strong>Gradient Direction</strong> slider to control how your
     colors flow
   </li>
 </ul>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
-    >: The Gradient Direction slider will only show as an option once you’ve
-    added two or more color options.</span
+  <span style="color: #434343"
+    ><strong>Info</strong>: The Gradient Direction slider will only show as an
+    option once you’ve added two or more color options.</span
   >
 </div>
 <p class="wysiwyg-text-align-center">
@@ -487,11 +506,11 @@
     height="546"
   />
 </p>
-<h4 id="h_01JXZX031FGYJQ7NRJ9TYB9KNG" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JXZX031FGYJQ7NRJ9TYB9KNG">
   <span style="color: #666666">Using the Gradient Direction Slider</span>
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="e3f5cf8e53146dcaaf1da93ffaa725bea">
     Use the <strong>Color Intensity</strong> slider to adjust how vibrant your
     colors appear
   </li>
@@ -501,7 +520,7 @@
     src="https://support.discord.com/hc/article_attachments/34960610538007"
   />
 </p>
-<h4 id="h_01JXZX031FQ066GDG54FV32PME" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JXZX031FQ066GDG54FV32PME">
   <span style="color: #666666">Using the Color Intensity Slider</span>
 </h4>
 <p>
@@ -513,16 +532,18 @@
     src="https://support.discord.com/hc/article_attachments/34960658943639"
   />
 </p>
-<h4 id="h_01JXZX031FZ7VXHF50Y5RC69JX" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JXZX031FZ7VXHF50Y5RC69JX">
   <span style="color: #666666">Apply Button in Sidebar</span>
 </h4>
 <div class="tip-box">
-  <strong>Tip</strong>: Press the <strong>Surprise Me</strong> icon [<img
-    src="https://support.discord.com/hc/article_attachments/32883943217175"
-    width="24"
-    height="24"
-  />] in the bottom-left corner of the sidebar to generate random color
-  combinations for your theme! 
+  <p>
+    <strong>Tip</strong>: Press the <strong>Surprise Me</strong> icon [<img
+      src="https://support.discord.com/hc/article_attachments/32883943217175"
+      width="24"
+      height="24"
+    />] in the bottom-left corner of the sidebar to generate random color
+    combinations for your theme! 
+  </p>
   <p class="wysiwyg-text-align-center">
     <img
       src="https://support.discord.com/hc/article_attachments/34960610541335"
@@ -530,19 +551,21 @@
       height="501"
     />
   </p>
-  <h4 id="h_01JXZX031GPP70BACCDMYJKRYY" class="wysiwyg-text-align-center">
+  <h4 class="wysiwyg-text-align-center" id="h_01JXZX031GPP70BACCDMYJKRYY">
     <span style="color: #666666">Using the Surprise Me Icon</span>
   </h4>
 </div>
 <div class="tip-box">
-  <strong>Tip</strong>: You can also restore your theme back to your previous
-  custom theme by selecting the <strong>Reset</strong> button.
+  <p>
+    <strong>Tip</strong>: You can also restore your theme back to your previous
+    custom theme by selecting the <strong>Reset</strong> button.
+  </p>
   <p class="wysiwyg-text-align-center">
     <img
       src="https://support.discord.com/hc/article_attachments/34960658945303"
     />
   </p>
-  <h4 id="h_01JXZX031G3B7ZKBM7STQ97JM4" class="wysiwyg-text-align-center">
+  <h4 class="wysiwyg-text-align-center" id="h_01JXZX031G3B7ZKBM7STQ97JM4">
     <span style="color: #666666">Using Reset Button</span>
   </h4>
 </div>
@@ -577,14 +600,16 @@
     height="538"
   />
 </p>
-<h4 id="h_01K57714AXAV785FMM1PQ6N9XF" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K57714AXAV785FMM1PQ6N9XF">
   <span style="color: #666666">Sharing a Custom Theme to a Channel</span>
 </h4>
 <div class="tip-box">
-  <strong>Tip</strong>: To apply a shared custom theme, press the
-  <strong>Preview</strong> button in the shared
-  <strong>Custom Theme</strong> box. If you like how it looks, select the
-  <strong>Apply</strong> button in the sidebar to confirm.
+  <p>
+    <strong>Tip</strong>: To apply a shared custom theme, press the
+    <strong>Preview</strong> button in the shared
+    <strong>Custom Theme</strong> box. If you like how it looks, select the
+    <strong>Apply</strong> button in the sidebar to confirm.
+  </p>
   <p class="wysiwyg-text-align-center">
     <img
       src="https://support.discord.com/hc/article_attachments/34960610547991"
@@ -592,9 +617,10 @@
       height="444"
     />
   </p>
-  <h4 id="h_01K57714AXV48VZD283XAE7VQ7" class="wysiwyg-text-align-center">
+  <h4 class="wysiwyg-text-align-center" id="h_01K57714AXV48VZD283XAE7VQ7">
     <span style="color: #666666"
       >Applying a Shared Custom Theme to Your Discord</span
     >
   </h4>
 </div>
+<p> </p>
