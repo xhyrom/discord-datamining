@@ -1,0 +1,50 @@
+.cloudPlaySection__1692d {
+  justify-content: space-between;
+}
+.cloudPlaySectionTextContainer__1692d {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+.appWidgetPreview__1692d {
+  margin-block-end: calc(var(--custom-content-card-padding) * -1);
+  margin-inline: calc(var(--custom-content-card-padding) * -1);
+  width: calc(100% + var(--custom-content-card-padding) * 2);
+}
+.container__264ae {
+  align-items: center;
+  border-radius: 32px;
+  display: flex;
+  filter: brightness(0.7);
+  flex-direction: column;
+}
+.container__264ae[role="button"] {
+  cursor: pointer;
+}
+.container__264ae[role="button"]:hover {
+  filter: brightness(1);
+}
+.listeningTimeline__66799 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  justify-content: space-between;
+}
+.seekBarContainer__66799 {
+  background-color: var(--content-inventory-media-seekbar-container);
+  border-radius: 2px;
+  height: 2px;
+  position: relative;
+  width: 100%;
+}
+.seekBarFill__66799 {
+  background-color: var(--text-default);
+  border-radius: 2px;
+  height: 2px;
+}
+.timestamp__66799 {
+  font-family: var(--font-code);
+}
+
+/*# sourceMappingURL=816.de421162e9bb3432.css.map*/

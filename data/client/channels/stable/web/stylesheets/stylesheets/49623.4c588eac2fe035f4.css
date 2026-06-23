@@ -1,0 +1,53 @@
+.container_b7b2cf {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+.header_b7b2cf {
+  margin-bottom: 24px;
+}
+.description_b7b2cf {
+  margin-bottom: 40px;
+}
+.splashImage_b7b2cf {
+  width: 223px;
+}
+.settings_b7b2cf {
+  margin-top: 96px;
+}
+.modal_b7b2cf {
+  margin-bottom: 48px;
+  margin-top: 40px;
+}
+.blockedPaymentsModalContent_b7b2cf,
+.blockedPaymentsModalHeader_b7b2cf {
+  background-color: var(--modal-background);
+}
+.blockedPaymentsModalHeader_b7b2cf {
+  border-radius: 4px 4px 0 0;
+}
+.blockedPaymentsModalContent_b7b2cf {
+  border-radius: 0 0 4px 4px;
+}
+.blockedPaymentsWarningIcon_b7b2cf {
+  margin-inline-end: 10px;
+}
+.blockedPaymentsWarning_b7b2cf {
+  background-color: var(--background-base-lower);
+  color: var(--text-default);
+  display: flex;
+  justify-items: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  padding: 16px 22px;
+}
+.theme-dark .blockedPaymentsWarning_b7b2cf {
+  border-color: var(--primary-700);
+}
+.theme-light .blockedPaymentsWarning_b7b2cf {
+  border-color: var(--primary-200);
+}
+
+/*# sourceMappingURL=49623.4c588eac2fe035f4.css.map*/

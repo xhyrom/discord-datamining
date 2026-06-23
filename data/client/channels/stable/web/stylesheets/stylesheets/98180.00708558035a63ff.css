@@ -1,0 +1,160 @@
+.animationContainer__884d1,
+.container__884d1 {
+  position: relative;
+  z-index: 0;
+}
+.animationContainer__884d1 {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.svgBorder__884d1 {
+  height: calc(100% + 2px);
+  inset-inline-start: -1px;
+  position: absolute;
+  top: -1px;
+  width: calc(100% + 2px);
+  z-index: 1;
+}
+.svgCopy__884d1 {
+  display: block;
+}
+.animationContainer__884d1 {
+  color: var(--text-strong);
+}
+.shine__884d1 {
+  color: var(--opacity-white-48);
+}
+.bodyText__945b8 {
+  color: var(--text-default);
+  font-size: 16px;
+  line-height: 20px;
+}
+.planSelectText__945b8 {
+  margin-bottom: 16px;
+}
+.planSelectRow__945b8 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 8px auto;
+}
+.planSelectRowALaCarte__945b8 {
+  justify-content: flex-start;
+}
+.planSelectorWrapper__945b8 {
+  align-items: center;
+  display: flex;
+}
+.planSelectorHeader__945b8 {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 8px;
+}
+.planSelectorRadioBarALaCarte__945b8 {
+  align-items: flex-start;
+}
+.planSelectorRadioIconALaCarte__945b8 {
+  margin-top: 4px;
+}
+.planSelectorPlanName__945b8 {
+  margin-inline-end: 4px;
+}
+.planSelectorLabel__945b8 {
+  color: var(--text-default);
+  font-size: 16px;
+  line-height: 20px;
+  margin-inline-start: 16px;
+}
+.planSelectorPreviewPrice__945b8 {
+  color: var(--interactive-text-default);
+  font-size: 16px;
+  line-height: 20px;
+}
+.planSelectDivider__945b8 {
+  background-color: var(--border-subtle);
+  height: 1px;
+  margin: 16px 0;
+}
+.planSelectorSubtotal__945b8 {
+  color: var(--interactive-text-active);
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 20px;
+}
+.invoiceTableBottom__945b8,
+.paymentSourceWrapper__945b8 {
+  margin: 16px 0;
+}
+.taxInclusiveNote__945b8 {
+  margin-top: 12px;
+}
+.confirmationContainer__945b8 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 56px 32px 64px;
+}
+.confirmationAnimation__945b8 {
+  height: 140px;
+  margin-bottom: 32px;
+  width: 400px;
+}
+.confirmationText__945b8,
+.confirmationUpgradedBanner__945b8 {
+  margin-bottom: 16px;
+}
+.confirmationText__945b8 {
+  color: var(--interactive-text-default);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+  text-align: center;
+}
+.confirmationText__945b8 p {
+  margin: 0;
+}
+.confirmationText__945b8 p + p {
+  margin-top: 8px;
+}
+.existingSlotNotice__945b8 {
+  align-items: center;
+  background-color: var(--background-base-lower);
+  border-radius: 8px;
+  color: var(--text-default);
+  display: flex;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  padding: 8px;
+}
+.existingSlotIcon__945b8 {
+  flex-shrink: 0;
+  height: 24px;
+  margin-inline-end: 8px;
+  width: 24px;
+}
+.existingSlotTooltipWarningIcon__945b8 {
+  cursor: pointer;
+  height: 16px;
+  margin-inline-start: 6px;
+  vertical-align: text-bottom;
+  width: 14px;
+}
+.loadingSpinner__945b8 {
+  flex: 1;
+  max-width: 100px;
+}
+.reverseTrialContextInfoDivider__945b8 {
+  background-color: var(--border-subtle);
+  height: 1px;
+}
+.reverseTrialContextText__945b8 {
+  margin: 12px 0;
+}
+.reverseTrialContextMarginBottom__945b8 {
+  margin-bottom: 8px;
+}
+
+/*# sourceMappingURL=98180.00708558035a63ff.css.map*/

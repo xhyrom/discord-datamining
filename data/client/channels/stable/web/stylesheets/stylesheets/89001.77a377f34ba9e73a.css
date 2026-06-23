@@ -1,0 +1,119 @@
+.popover__2d0ab.popover__2d0ab {
+  background-color: var(--user-profile-toolbar-background);
+  border: 1px solid var(--user-profile-toolbar-border);
+  border-radius: 100px;
+  box-shadow: var(--shadow-low);
+  display: inline-flex;
+  gap: 2px;
+  height: unset;
+  opacity: 0;
+  padding: 2px;
+  pointer-events: none;
+  position: absolute;
+  top: -16px;
+  z-index: var(--custom-user-profile-scrim-z-index);
+}
+.custom-user-profile-theme.theme-dark .popover__2d0ab.popover__2d0ab {
+  -webkit-backdrop-filter: blur(36px);
+  backdrop-filter: blur(36px);
+}
+.custom-user-profile-theme.theme-light .popover__2d0ab.popover__2d0ab {
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
+.has-animated-banner .popover__2d0ab.popover__2d0ab {
+  background-color: var(--background-surface-high);
+}
+.popover__2d0ab.popover__2d0ab.visible__2d0ab,
+.popover__2d0ab.popover__2d0ab:hover {
+  opacity: 1;
+}
+.keyboard-mode .popover__2d0ab.popover__2d0ab:focus-within {
+  opacity: 1;
+}
+.reduce-motion .popover__2d0ab.popover__2d0ab {
+  pointer-events: all;
+}
+.popover__2d0ab.popover__2d0ab > :first-child > .button__2d0ab {
+  border-radius: 100px 6px 6px 100px;
+  margin-inline-start: 0;
+  padding-inline-start: 6px;
+}
+.popover__2d0ab.popover__2d0ab > :last-child > .button__2d0ab {
+  border-radius: 6px 100px 100px 6px;
+  margin-inline-end: 0;
+  padding-inline-end: 6px;
+}
+.tooltipContainer__2d0ab:empty {
+  display: none;
+}
+.activityPopover__2d0ab {
+  background-color: var(--user-profile-activity-toolbar-background);
+  inset-inline-end: 8px;
+}
+.custom-user-profile-theme .activityPopover__2d0ab {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+.statusPopover__2d0ab {
+  inset-inline-end: min(8px, calc(50% - 29px));
+}
+.avatarPopover__2d0ab {
+  inset-inline: 0;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+:not(.keyboard-mode).full-motion .popover__2d0ab.visible__2d0ab,
+:not(.keyboard-mode).full-motion .popover__2d0ab:hover {
+  animation: fadeIn__2d0ab 0.15s ease forwards;
+  opacity: 0;
+}
+:not(.keyboard-mode).full-motion
+  .popover__2d0ab.visible__2d0ab.expandable__2d0ab,
+:not(.keyboard-mode).full-motion .popover__2d0ab:hover.expandable__2d0ab {
+  animation-delay: 0.45s;
+}
+@keyframes fadeIn__2d0ab {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+    top: -14px;
+  }
+  99% {
+    pointer-events: none;
+  }
+  to {
+    opacity: 1;
+    pointer-events: all;
+    top: -16px;
+  }
+}
+.button__2d0ab.button__2d0ab {
+  height: unset;
+  min-width: unset;
+  padding: 4px;
+}
+.full-motion .button__2d0ab.button__2d0ab .icon__2d0ab {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.custom-user-profile-theme .button__2d0ab.button__2d0ab .icon__2d0ab {
+  color: var(--icon-strong);
+}
+.button__2d0ab.button__2d0ab:hover {
+  background: var(--background-mod-normal);
+}
+.button__2d0ab.button__2d0ab:hover .icon__2d0ab {
+  fill: var(--interactive-text-hover);
+  transform: scale(1.1);
+}
+.button__2d0ab.button__2d0ab:active {
+  background: var(--background-mod-strong);
+  padding-block: 4px;
+}
+.button__2d0ab.button__2d0ab:active .icon__2d0ab {
+  fill: var(--interactive-text-active);
+  transform: scale(1);
+}
+
+/*# sourceMappingURL=89001.77a377f34ba9e73a.css.map*/

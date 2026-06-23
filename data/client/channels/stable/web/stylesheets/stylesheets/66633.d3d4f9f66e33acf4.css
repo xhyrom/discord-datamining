@@ -1,0 +1,77 @@
+.previewContainer_c9a5b2 {
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 0;
+  --custom-profile-frame-layer-scale: calc(
+    100% / var(--custom-profile-frame-container-width)
+  );
+  --custom-profile-frame-scaled-overflow-horizontal: calc(
+    var(--custom-profile-frame-overflow-horizontal) *
+      var(--custom-profile-frame-layer-scale)
+  );
+  --custom-profile-frame-scaled-overflow-top: calc(
+    var(--custom-profile-frame-overflow-top) *
+      var(--custom-profile-frame-layer-scale)
+  );
+  --custom-profile-frame-scaled-overflow-bottom: calc(
+    var(--custom-profile-frame-overflow-bottom) *
+      var(--custom-profile-frame-layer-scale)
+  );
+  padding-inline: calc(var(--custom-profile-frame-scaled-overflow-horizontal));
+  padding-bottom: calc(var(--custom-profile-frame-scaled-overflow-bottom));
+  padding-top: calc(var(--custom-profile-frame-scaled-overflow-top));
+}
+.previewContainer_c9a5b2,
+.profileContainer_c9a5b2 {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.sampleProfile_c9a5b2 {
+  background-color: var(--background-surface-higher);
+  border: 2px solid var(--border-normal);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+  width: 100%;
+}
+.sampleProfile_c9a5b2.small_c9a5b2 {
+  border-radius: var(--radius-xs);
+  border-width: 1px;
+}
+.sampleProfile_c9a5b2.transparentSampleProfile_c9a5b2 {
+  background-color: transparent;
+}
+.backLayerMask_c9a5b2 {
+  box-sizing: border-box;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#000, #000), linear-gradient(#000, #000),
+    linear-gradient(#000, #000), linear-gradient(#000, #000);
+  mask-image: linear-gradient(#000, #000), linear-gradient(#000, #000),
+    linear-gradient(#000, #000), linear-gradient(#000, #000);
+  -webkit-mask-position: top, bottom, left, right;
+  mask-position: top, bottom, left, right;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size:
+    100% var(--custom-profile-frame-scaled-overflow-top),
+    100% var(--custom-profile-frame-scaled-overflow-bottom),
+    var(--custom-profile-frame-scaled-overflow-horizontal) 100%,
+    var(--custom-profile-frame-scaled-overflow-horizontal) 100%;
+  mask-size:
+    100% var(--custom-profile-frame-scaled-overflow-top),
+    100% var(--custom-profile-frame-scaled-overflow-bottom),
+    var(--custom-profile-frame-scaled-overflow-horizontal) 100%,
+    var(--custom-profile-frame-scaled-overflow-horizontal) 100%;
+  padding-inline: var(--custom-profile-frame-scaled-overflow-horizontal);
+  padding-bottom: var(--custom-profile-frame-scaled-overflow-bottom);
+  padding-top: var(--custom-profile-frame-scaled-overflow-top);
+  pointer-events: none;
+  position: absolute;
+}
+
+/*# sourceMappingURL=66633.d3d4f9f66e33acf4.css.map*/
