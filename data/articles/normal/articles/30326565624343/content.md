@@ -257,9 +257,9 @@
   second vendor,
   <a href="https://www.incode.com/face-age-estimation"
     ><span class="wysiwyg-underline">Incode</span></a
-  >. That data handling is the same: Your selfie never leaves your device, is
-  deleted immediately, and no biometric data is shared. This experiment may not
-  be available to all users and will run from June 2026 to July 2026.
+  >. That data handling is the same: Your selfie never leaves your device, and
+  no biometric data is shared. This experiment may not be available to all users
+  and will run from June 2026 to July 2026.
 </div>
 <p>
   <span class="wysiwyg-font-size-large"
