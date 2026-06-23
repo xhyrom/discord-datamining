@@ -65,11 +65,7 @@
     href="https://support.stripe.com/questions/common-questions-about-stripe-identity"
     >data retention policies</a
   >, users will be asked to reverify their ID once every three years to keep
-  their ID information on file and up to date. You can lean more about our
-  reverification requirement in our
-  <a href="https://support-dev.discord.com/hc/en-us/articles/23370452552599"
-    >ID Verification Update FAQ</a
-  >.
+  their ID information on file and up to date. 
 </p>
 <h2 id="01HXF3E3SWXYGZ1MFD6MKCP9NW">Legal Nerd Hat</h2>
 <p>
