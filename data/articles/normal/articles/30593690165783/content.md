@@ -740,16 +740,7 @@
 </p>
 <h2 id="h_01JZ9AY4XRNS4GA22J5GPD7XBF">Earning and Obtaining Orbs</h2>
 <p><strong>Q: Can I buy or gift Orbs to someone?</strong></p>
-<p>
-  A: No, you cannot gift or buy Orbs. The only way to obtain Orbs today is
-  through completing
-  <a
-    href="https://support.discord.com/hc/articles/22225719947543"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Quests</a
-  >.
-</p>
+<p>A: No, you cannot gift or buy Orbs.</p>
 <p>
   <strong
     >Q: Is there any other way to obtain Orbs? Can I only earn Orbs from
