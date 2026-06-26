@@ -1,3 +1,11 @@
+<div class="tip-box">
+  <strong>NOTE:</strong> If you're on macOS 11 and Discord no longer launches,
+  it is recommended to install
+  <a href="https://dl.discordapp.net/apps/osx/0.0.396/Discord.dmg">this</a>
+  version of the Discord app. This version will continue to work without
+  updating, but installing any newer version will prevent Discord from
+  launching.
+</div>
 <p>
   As of <strong>June 15, 2026</strong>, Discord will no longer be supported on
   macOS 11. 

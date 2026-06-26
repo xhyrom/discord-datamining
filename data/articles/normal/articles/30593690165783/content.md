@@ -757,14 +757,8 @@
   >
 </p>
 <p>
-  A: The only way to earn Orbs today is to complete specific
-  <a
-    href="https://support.discord.com/hc/articles/22225719947543"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Quests</a
-  >
-  that offer Orbs as a reward.
+  A: Orbs are primarily earned through Quests, with additional opportunities
+  available through select promotional offers, subject to eligibility.
 </p>
 <p><strong>Q: What should I do if I see someone selling Orbs?</strong></p>
 <p>
