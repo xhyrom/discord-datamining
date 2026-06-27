@@ -8,7 +8,7 @@
   <p>
     <span class="wysiwyg-font-size-x-large"
       ><strong>What this article covers:</strong></span
-    ><br /> 
+    >
   </p>
   <ul>
     <li data-list-item-id="e27ca134cf6e3dcfda77dcefdfaa815ed">
