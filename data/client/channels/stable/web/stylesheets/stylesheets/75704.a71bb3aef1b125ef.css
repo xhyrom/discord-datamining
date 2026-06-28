@@ -1,0 +1,173 @@
+.badgeRow__9b0aa {
+  align-items: center;
+  display: flex;
+  gap: var(--space-16);
+  justify-content: space-between;
+  margin-top: var(--space-192);
+  width: 100%;
+}
+.badgeTrigger__9b0aa {
+  align-items: center;
+  display: inline-flex;
+  height: var(--space-24);
+  justify-content: center;
+  width: var(--space-24);
+}
+.badgeTriggerImg__9b0aa {
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+}
+.container_e99fef,
+.progressHeader_e99fef {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.progressHeader_e99fef {
+  width: 100%;
+}
+.progressBar_e99fef {
+  background-color: var(--background-surface-highest);
+  border-radius: 94px;
+  height: 10px;
+  position: relative;
+  width: 100%;
+}
+.progressBarContainer_e99fef {
+  margin: var(--space-12) 0;
+  width: 100%;
+}
+.monthlyCodeCountdownLabel_e99fef {
+  margin-bottom: 10px;
+}
+.progressBarFill_e99fef {
+  background: linear-gradient(90deg, #13184c, #5865f2);
+  height: 100%;
+  fill: #5865f2;
+  border-radius: 5px 0 0 5px;
+}
+.progressBarIndicator_e99fef {
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 5px #5865f2;
+  display: flex;
+  height: 100%;
+  position: absolute;
+}
+.cards_e99fef {
+  gap: var(--space-12);
+  width: 100%;
+}
+.cards_e99fef,
+.promoCardContainer_e99fef {
+  display: flex;
+  flex-direction: column;
+}
+.promoCardContainer_e99fef {
+  align-items: stretch;
+  background-color: var(--background-surface-highest);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-lg);
+  gap: 14px;
+  margin-top: var(--space-12);
+  padding: var(--space-16) 0;
+}
+.wrap_e99fef {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0 var(--space-16);
+}
+.promoCardContent_e99fef {
+  width: 100%;
+}
+.promoCardContentDetails_e99fef {
+  width: 60%;
+}
+.promoCardContentText_e99fef {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: var(--space-12) 0;
+}
+.promoCardAssetContainer_e99fef {
+  align-items: center;
+  display: flex;
+  width: 40%;
+}
+.promoCardAsset_e99fef {
+  margin: 0 auto;
+}
+.promoCardAssetImageRounded_e99fef {
+  border-radius: 16px;
+}
+.promoCardAssetImageLockedRounded_e99fef {
+  border-radius: 10px;
+}
+.lockIconContainer_e99fef {
+  align-items: center;
+  aspect-ratio: 1/1;
+  background: var(--background-mod-subtle);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-shrink: 0;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+.claimedFooterContainer_e99fef {
+  border-top: 1px solid var(--border-muted);
+  padding-top: var(--space-16);
+}
+.claimedFooter_e99fef,
+.claimedFooterContainer_e99fef {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.claimedFooter_e99fef {
+  gap: 10px;
+  margin: 0 var(--space-16);
+}
+.claimedFooterCode_e99fef {
+  flex: 1 0 0;
+}
+.extraCodeButton_e99fef {
+  align-items: center;
+  background-color: var(--background-surface-highest);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: var(--space-4) 0;
+  width: 80%;
+}
+.progressBarSlim_e99fef {
+  box-sizing: border-box;
+  padding: 0 var(--space-16);
+}
+.progressBarSlim_e99fef .progressBar_e99fef {
+  height: 5px;
+}
+.sectionSpacer_e99fef {
+  margin-top: var(--space-24);
+  width: 100%;
+}
+.footerClaimButton_e99fef {
+  box-sizing: border-box;
+  width: 100%;
+}
+.footerClaimButton_e99fef > button {
+  width: 100%;
+}
+.copyIconButton_e99fef {
+  --control-icon-only-icon-default: var(--text-strong);
+}
+
+/*# sourceMappingURL=75704.a71bb3aef1b125ef.css.map*/
