@@ -4,8 +4,8 @@
     for and post GIFs directly on the Discord app? Let us assist you with
     sending GIFs to your friends in a snap</span
   ><span style="font-weight: 400"
-    >! No more hunting around folders or websites! <br
-  /></span>
+    >! No more hunting around folders or websites! </span
+  ><br /> 
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
@@ -23,25 +23,27 @@
     ></em
   >
 </p>
-<h1><span style="font-weight: 400">What does this Article Cover?</span></h1>
+<h1 id="h_01KWACYH9WFS4RKBBPGAB284R6">
+  <span style="font-weight: 400">What does this Article Cover?</span>
+</h1>
 <ul>
-  <li>
+  <li data-list-item-id="ec0115877beede047c442e10090855d29">
     <a href="#h_01EE1G6QVB4MWMFYMEQ3FR6E2G" target="_self">How to Send a Gif</a>
     <ul>
-      <li>
+      <li data-list-item-id="e7862e13bc634e8cbec2865b8f4f5cd61">
         <a href="#h_01EE1G6QVB4MWMFYMEQ3FR6E2G" target="_self">On Desktop</a>
       </li>
-      <li>
+      <li data-list-item-id="efbe41f17e1d3ac8cc1aa4d1d11356e22">
         <a href="#h_01EEZS3NZYTX0JY37V3589N1BG" target="_self"
           >On Mobile (Android/iOS)</a
         >
       </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="e92de7e5d9426bdf62813cab6e473ced3">
     <a href="#h_01EE1G6WR2NHWRCMKFE4C7F7JZ" target="_self">Favoriting GIFs</a>
     <ul>
-      <li>
+      <li data-list-item-id="eba35fe7e6970ea05b65fe63f7a769652">
         <a href="#h_01EE1G75K15FABPBBF47WVQR0S" target="_self"
           >How to View and Use your Favorite Gifs</a
         >
@@ -58,19 +60,14 @@
     with the emoji picker in your text channels. </span
   >
 </p>
-<p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      style="
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      src="https://support.discord.com/hc/article_attachments/360062795732"
-      alt="Screen_Shot_2020-07-24_at_1.00.05_PM.png"
-      width="668"
-      height="80"
-  /></span>
-</p>
+<figure class="wysiwyg-image">
+  <img
+    style="aspect-ratio: 1872/203"
+    src="https://support.discord.com/hc/article_attachments/41584094406935"
+    width="1872"
+    height="203"
+  />
+</figure>
 <p class="wysiwyg-text-align-left">
   <span style="font-weight: 400"
     >By clicking on the <strong>GIF</strong> icon, you’ll find a variety of
@@ -83,58 +80,66 @@
     emotions.</span
   >
 </p>
-<p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/360062814912"
-      alt="Screen_Shot_2020-07-24_at_1.01.53_PM.png"
-      width="606"
-      height="82"
-  /></span>
-</p>
-<p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/360062997591"
-      alt="sending_and_searching_for_gif.gif"
-      width="617"
-      height="667"
-  /></span>
-</p>
+<figure class="wysiwyg-image">
+  <img
+    src="https://support.discord.com/hc/article_attachments/41584152894103"
+  />
+</figure>
 <h1 id="h_01EEZS3NZYTX0JY37V3589N1BG">How to Send a Gif on Mobile</h1>
-<h3>
-  <span style="font-weight: 400"
-    ><strong>Note:</strong> Make sure you've updated your Discord app fully on
-    your mobile device! If you don't see an update yet, hang tight and you
-    should see the build soon. Otherwise, if you're confident that you've
-    already updated - let our team know at</span
-  ><a href="https://dis.gd/support/"
-    ><span style="font-weight: 400"> https://dis.gd/support</span></a
-  ><span style="font-weight: 400">. </span>
-</h3>
 <p>
   <span style="font-weight: 400"
     >If you’re on Android or iOS, you’ll also be able to upload gifs directly
     into chat as well using the Gif Picker! </span
   >
 </p>
-<p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/360063833072"
-      alt="emoji_icon_highlight.png"
-      width="250"
-      height="445" /> <img
-      style="
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      src="https://support.discord.com/hc/article_attachments/360063833092"
-      alt="gif_picker_on_mobile.png"
-      width="250"
-      height="444"
-  /></span>
-</p>
+<div class="info-box">
+  <strong>Note:</strong> Make sure you've updated your Discord app fully on your
+  mobile device! If you don't see an update yet, hang tight and you should see
+  the build soon. Otherwise, if you're confident that you've already updated -
+  let our team know at
+  <a href="https://dis.gd/support/">https://dis.gd/support</a>
+</div>
+<figure class="wysiwyg-table" style="width: 100%">
+  <table
+    style="
+      border-collapse: collapse;
+      border-spacing: 0;
+      border-style: none;
+      border-width: 0;
+    "
+  >
+    <tbody>
+      <tr>
+        <td style="border-style: none; padding: 0">
+          <figure
+            class="wysiwyg-image wysiwyg-image-resized"
+            style="width: 100%"
+          >
+            <img
+              style="aspect-ratio: 1080/2155"
+              src="https://support.discord.com/hc/article_attachments/41584824256663"
+              width="1080"
+              height="2155"
+            />
+          </figure>
+        </td>
+        <td style="border-style: none; padding: 0">
+          <figure
+            class="wysiwyg-image wysiwyg-image-resized"
+            style="width: 95.43%"
+          >
+            <img
+              style="aspect-ratio: 1079/2244"
+              src="https://support.discord.com/hc/article_attachments/41584803971991"
+              width="1079"
+              height="2244"
+            />
+          </figure>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
 <p>
   <span style="font-weight: 400"
     >Once you tap the chat/text box, you’ll then see the emoji icon (that looks
@@ -149,19 +154,7 @@
     available! </span
   >
 </p>
-<p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/360063833532"
-      alt="searching_for_a_gif_on_mobile.gif"
-      width="293"
-      height="517" /><img
-      src="https://support.discord.com/hc/article_attachments/360063834352"
-      alt="trending_gifs_on_mobile_tap.gif"
-      width="293"
-      height="516"
-  /></span>
-</p>
+<p class="wysiwyg-text-align-center"> </p>
 <h2 id="h_01EE1G6WR2NHWRCMKFE4C7F7JZ">
   <span style="font-weight: 400">Favoriting GIFs</span>
 </h2>
@@ -170,16 +163,15 @@
     >You also have the ability to favorite GIFs &amp; add them to a
     <strong>Favorites GIFs</strong> folder for easy access. You’ll be able to
     favorite a GIF anywhere on Discord. See a GIF your friend posted &amp; want
-    to add it to the collection? Cool, hit that gold star &amp; it’s yours!
-  </span>
-</p>
-<h3>
-  <span style="font-weight: 400"
-    >Note: Currently, you can only favorite gifs on the desktop and browser
-    client at this point in time! We’re still working on building this feature
-    for the mobile app! Hang in there for now!</span
+    to add it to the collection? Cool, hit that gold star &amp; it’s
+    yours!</span
   >
-</h3>
+</p>
+<div class="info-box">
+  Note: Currently, you can only favorite gifs on the desktop and browser client
+  at this point in time! We’re still working on building this feature for the
+  mobile app! Hang in there for now!
+</div>
 <p>
   <span style="font-weight: 400">When favoriting a GIF you’ll notice a </span
   ><strong>gold star </strong
@@ -205,8 +197,13 @@
 </p>
 <p><span style="font-weight: 400">Just remember:</span></p>
 <ul>
-  <li><strong>filled in star = favorite</strong></li>
-  <li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e145989231d93d9f9cae91d4d47918e90"
+  >
+    <strong>filled in star = favorite</strong>
+  </li>
+  <li data-list-item-id="ecb8420ef151577defd856cdb846747f7">
     <strong>unfilled star = unfavorited</strong
     ><span style="font-weight: 400">.</span>
   </li>
@@ -229,19 +226,19 @@
     category! </span
   >
 </p>
-<p class="wysiwyg-text-align-center">
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 74.53%">
   <img
-    src="https://support.discord.com/hc/article_attachments/360062981851"
-    alt="Screen_Shot_2020-07-24_at_1.20.57_PM.png"
-    width="652"
-    height="225"
+    style="aspect-ratio: 1236/1212"
+    src="https://support.discord.com/hc/article_attachments/41583895152023"
+    width="1236"
+    height="1212"
   />
-</p>
+</figure>
 <p>
   <span style="font-weight: 400"
     >Once you click on the <strong>Favorites </strong>category, you'll be able
-    to admire your full favorite gif collection!
-  </span>
+    to admire your full favorite gif collection!</span
+  >
 </p>
 <p>
   <span style="font-weight: 400"
@@ -250,11 +247,12 @@
     <strong>Favorites</strong> folder too!)</span
   >
 </p>
-<p class="wysiwyg-text-align-center">
+<figure class="wysiwyg-image">
   <img
-    src="https://support.discord.com/hc/article_attachments/360062997891"
-    alt="using_favorite_gifs_demo.gif"
-    width="597"
-    height="646"
+    style="aspect-ratio: 1280/923"
+    src="https://support.discord.com/hc/article_attachments/41584332645399"
+    alt="clickingonfavoritegifdesktop.gif"
+    width="1280"
+    height="923"
   />
-</p>
+</figure>

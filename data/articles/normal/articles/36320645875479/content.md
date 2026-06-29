@@ -55,14 +55,13 @@
 </div>
 <div class="warn-box">
   <strong>Important</strong>: Nitro Squad is currently in Beta and only
-  available to desktop users in Australia.
+  available to desktop users in Australia and France.
 </div>
 <h1 id="h_01KGGQH2B3FY3G1QVJ5G6PFJ7W">What is Nitro Squad?</h1>
 <p>
   Nitro Squad is a monthly subscription that provides Nitro memberships for up
   to 6 accounts under one plan. Each Nitro Squad includes
-  <strong>1 plan owner</strong> and up to <strong>5 plan members</strong> for
-  <strong>$33.99 AUD per month</strong>.
+  <strong>1 plan owner</strong> and up to <strong>5 plan members</strong>.
 </p>
 <h2 id="h_01KGGQMGXJPKHE5J68BRDM960W">Nitro Squad Perks</h2>
 <ul>
@@ -93,7 +92,7 @@
 </p>
 <ul>
   <li data-list-item-id="e90e3507d9c435c3340faee6b50530f56">
-    Must be located in Australia
+    All plan members, including the owner, must be located in the same country.
   </li>
   <li data-list-item-id="ee810bce74b6807e0f5a528d9d2e4f392">
     <strong>Cannot</strong> have an annual Nitro subscription
