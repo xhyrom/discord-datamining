@@ -104,7 +104,8 @@
 </div>
 <div class="exp-box">
   <strong>Important:</strong> Gifting Badge is currently an experiment available
-  to select users. The more you gift
+  to select users. Every gift you've ever sent counts toward your badge, and it
+  levels up the more you gift
   <a
     href="https://support.discord.com/hc/en-us/articles/360020877112-Nitro-Gifting"
     >Nitro</a
@@ -113,8 +114,7 @@
   <a
     href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ#h_01J4T4Z6G3GCXP9S76GKGBR98G"
     >Shop</a
-  >, the more your badge will evolve.<br /> 
-  <img
+  > <br /><img
     class="center-image"
     src="https://support.discord.com/hc/article_attachments/40923306466199"
     alt="Gifting Badge evolution"
