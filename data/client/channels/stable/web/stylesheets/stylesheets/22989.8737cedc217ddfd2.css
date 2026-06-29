@@ -1,0 +1,106 @@
+.wrapper_a99139 {
+  background-color: var(--message-background-hover);
+  border: 1px solid var(--interactive-background-hover);
+  border-radius: 8px;
+  margin-top: 12px;
+  padding: 12px;
+}
+.stepsWrapper_a99139:not(:last-child) {
+  margin-bottom: 12px;
+}
+.headingWrapper_a99139 {
+  margin-bottom: 12px;
+}
+.heading_a99139 {
+  flex: 1 1 auto;
+}
+.stepWrapper_a99139 {
+  display: flex;
+  gap: 10px;
+}
+.stepContent_a99139 {
+  padding-top: 3px;
+}
+.stepWrapperWithNextStep_a99139 .stepContent_a99139 {
+  margin-bottom: 12px;
+}
+.stepIndicator_a99139 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.stepIconWrapper_a99139 {
+  align-items: center;
+  border: 2px solid var(--interactive-background-selected);
+  border-radius: 20px;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  width: 20px;
+}
+.theme-light .stepIconWrapper_a99139 {
+  border: 2px solid var(--opacity-black-8);
+}
+.stepWrapperComplete_a99139 .stepIconWrapper_a99139 {
+  background-color: var(--brand-500);
+  border-color: transparent;
+}
+.stepWrapperCurrent_a99139 .stepIconWrapper_a99139 {
+  border-color: var(--icon-overlay-light);
+}
+.theme-light .stepWrapperCurrent_a99139 .stepIconWrapper_a99139 {
+  border-color: var(--icon-overlay-dark);
+}
+.stepConnector_a99139 {
+  background-color: var(--interactive-background-selected);
+  flex: 1 1 auto;
+  position: relative;
+  width: 2px;
+}
+.stepWrapperComplete_a99139 .stepConnector_a99139:before {
+  background-image: linear-gradient(
+    to top,
+    var(--icon-overlay-light) 30%,
+    hsla(229, 7%, 45%, 0.18) 100%
+  );
+  bottom: 0;
+  box-shadow: 0 0 5px hsla(0, 0%, 100%, 0.5);
+  content: "";
+  inset-inline: 0;
+  position: absolute;
+  top: 0;
+}
+.theme-light .stepWrapperComplete_a99139 .stepConnector_a99139:before {
+  background-color: var(--icon-overlay-dark);
+  background-image: none;
+}
+.stepIcon_a99139 {
+  display: block;
+  height: 14px;
+  width: 14px;
+}
+.opacity_50_a99139 {
+  opacity: 0.5;
+}
+.rewardsListWrapper_a99139 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 12px;
+}
+.rewardsListBody_a99139 {
+  list-style-type: none;
+}
+.rewardsListPremiumDurationExtension_a99139 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    90deg,
+    var(--premium-tier-2-purple) 0,
+    var(--premium-tier-2-pink) 100%
+  );
+  color: transparent;
+}
+
+/*# sourceMappingURL=22989.8737cedc217ddfd2.css.map*/

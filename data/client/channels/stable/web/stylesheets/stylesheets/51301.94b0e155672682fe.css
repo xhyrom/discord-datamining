@@ -1,0 +1,56 @@
+.optionContainer__14160 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.clickableRow__14160 {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.clickableRow__14160:hover {
+  background: var(--background-mod-normal);
+}
+.indicatorWrapper__14160 {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+}
+.labelContainer__14160 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+}
+.label__14160 {
+  align-items: center;
+  display: flex;
+}
+.textInputWrapper__14160 {
+  padding-inline-start: 40px;
+}
+.container_b5a371 {
+  gap: 12px;
+}
+.choicesContainer_b5a371,
+.container_b5a371 {
+  display: flex;
+  flex-direction: column;
+}
+.choicesContainer_b5a371 {
+  gap: 4px;
+}
+.choiceRow_b5a371 {
+  align-items: center;
+  display: flex;
+}
+.noChoices_b5a371 {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=51301.94b0e155672682fe.css.map*/

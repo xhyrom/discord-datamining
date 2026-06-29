@@ -1,0 +1,55 @@
+.outer__146e2 {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.progressBar__146e2 {
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  bottom: 0;
+  shape-rendering: geometricPrecision;
+}
+.progress__146e2 {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset 0.35s;
+}
+.progressAltGlow__146e2 {
+  filter: drop-shadow(0 0 8.3px rgba(34, 255, 132, 0.33))
+    drop-shadow(0 0 2.7px rgba(93, 255, 164, 0.42));
+}
+.inner__146e2 {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+.coverContent__146e2 {
+  border-radius: 50%;
+  inset: 0;
+  position: absolute;
+  z-index: 999;
+}
+.progressTextWrapper__146e2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.progressTextOverlay__146e2 {
+  background-color: var(--background-base-lowest);
+  opacity: 0.75;
+  z-index: 1;
+}
+.progressText__146e2 {
+  z-index: 2;
+}
+
+/*# sourceMappingURL=58530.d4859f10fd0c134d.css.map*/
