@@ -1,34 +1,43 @@
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
   <ul>
-    <li>
+    <li data-list-item-id="eeebb73990889a3c84a7149c14221a21b">
       <a href="#h_01JF805XA5HMY9Z3X6XGXGV3H7"
         >Why is My Payment Showing As Failed?</a
       >
     </li>
-    <li>
+    <li data-list-item-id="e6f182d9023a6376bdd27087272421343">
       <a href="#h_01JF803313C7SVM8B890K2TXY4"
         >Why is My Payment showing as Invalid Payment?</a
+      >
+    </li>
+    <li data-list-item-id="e8bc70a7b156a4e04308581312f19b141">
+      <a href="#h_01KW9T0HQHR3K7W9PZFRM9VN28"
+        >Why is My Payment Method showing as Invalid?</a
       >
     </li>
   </ul>
 </div>
 <h1 id="h_01JF805XA5HMY9Z3X6XGXGV3H7">Why is my Payment Showing As Failed?</h1>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #5765f2" data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/28561299053463"
-        width="624"
-        height="249" /></span
-  ></strong>
+  <span style="color: #5765f2"
+    ><span data-darkreader-inline-color=""
+      ><strong
+        ><img
+          src="https://support.discord.com/hc/article_attachments/28561299053463"
+          width="624"
+          height="249" /></strong></span
+  ></span>
 </p>
-<h4 id="h_01JF80331282DENRTXZC0QFHV5" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Billing tab under User Settings on desktop/browser</span
+<h4 class="wysiwyg-text-align-center" id="h_01JF80331282DENRTXZC0QFHV5">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Billing tab under User Settings on desktop/browser</span
+    ></span
   >
 </h4>
 <p>
@@ -41,12 +50,7 @@
   manage your billing information
   <a
     href="https://support.discord.com/hc/en-us/articles/360017693772-Payments-and-Billing-FAQ"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >here</span
-    ></a
+    ><span class="wysiwyg-underline">here</span></a
   >.
 </p>
 <p>2. Ensure your card details are entered correctly.</p>
@@ -73,16 +77,38 @@
   review the information you provided and try again. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/28561269347735"
-      width="483"
-      height="506"
-  /></span>
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/28561269347735"
+        width="483"
+        height="506" /></span
+  ></span>
 </p>
-<h4 id="h_01JF803313MXS1QA3EMBQZDWRW" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of an Invalid payment message when making a purchase</span
+<h4 class="wysiwyg-text-align-center" id="h_01JF803313MXS1QA3EMBQZDWRW">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of an Invalid payment message when making a purchase</span
+    ></span
+  >
+</h4>
+<h1 id="h_01KW9T0HQHR3K7W9PZFRM9VN28">
+  Why is My Payment Method showing as Invalid?
+</h1>
+<p>
+  If you’re seeing the <strong>Invalid</strong> error for one of your listed
+  payment methods, try to attempt your purchase again.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/41573094374807"
+    width="624"
+    height="215"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KW9T0HQKK9073SDH49Z6J5Y6">
+  <span style="color: #666666"
+    >Example of an Invalid payment error under Payment Methods</span
   >
 </h4>
 <div class="form-box">
