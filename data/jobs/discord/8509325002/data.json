@@ -53,5 +53,8 @@
       "child_ids": [],
       "parent_id": null
     }
-  ]
+  ],
+  "ai_disclaimer": null,
+  "include_ai_disclaimer": null,
+  "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8509325002/ai_opt_out"
 }
