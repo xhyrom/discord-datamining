@@ -3450,5 +3450,16 @@
     "pubDate": "Tue, 30 Jun 2026 00:00:00 GMT",
     "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a42fb78addf50b41deb42cf_image2.png",
     "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a42fb78addf50b41deb42cf_image2.png"
+  },
+  {
+    "id": "cost-attribution-in-discords-api",
+    "body": "",
+    "title": "Cost Attribution in Discord’s API",
+    "link": "https://discord.com/blog/cost-attribution-in-discords-api",
+    "guid": "https://discord.com/blog/cost-attribution-in-discords-api",
+    "description": "Discord's API spans 1700+ endpoints across hundreds of Kubernetes deployments. The challenge: tracking per-feature hosting costs without restructuring. Jim Benton helps explain how Discord tackled the situation.",
+    "pubDate": "Tue, 30 Jun 2026 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67f597ab8965032c232c7d4a_image4.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67f597ab8965032c232c7d4a_image4.png"
   }
 ]
