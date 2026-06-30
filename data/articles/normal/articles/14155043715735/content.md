@@ -22,9 +22,15 @@
   online behaviors.
 </p>
 <div class="info-box">
-  <strong>Note:</strong> You can access Family Center by selecting this
-  <a href="https://discord.com/feature/family-center">link</a
-  ><strong>User Settings</strong>within the Discord App.
+  <strong>Note:</strong>
+  <span style="color: #434343"
+    >You can access Family Center by selecting this </span
+  ><a href="https://discord.com/feature/family-center"
+    ><span class="wysiwyg-underline">link</span></a
+  ><span style="color: #434343">
+    or by heading into <strong>Account &gt; Family Center </strong>within the
+    Discord App.</span
+  >
 </div>
 <div class="book-box">
   <strong>Want to learn more?</strong><br />For additional resources on how to
@@ -52,15 +58,25 @@
     <li data-list-item-id="e11699f7b0553ee9af37b7d9719a68cbd">
       <a href="#h_01K8RVK0P79RP13G7C9AYADRZ9">How to use Family Center</a>
       <ul>
-        <li data-list-item-id="e043d881f82d6fa5642c41ef5303d6841">
+        <li data-list-item-id="ecfd900eb392b866ea8e21763b81f430c">
           <a href="#h_01K8RVK0P7GSJGADV3MY0CHPVR"
             >Your Teen’s Recent Activity</a
           >
         </li>
-        <li data-list-item-id="e7e92a2e01e4f5f6dcb6a6d35320648a2">
+        <li data-list-item-id="ef55c0ac9c2a50721c39aa624eaf3c26a">
           <a href="#h_01K8RVK0P72Z9V25C64NJNF1Q8">Teen Account Settings</a>
         </li>
-        <li data-list-item-id="ed05be7d2362cac36b0338cfe2a03402c">
+        <li data-list-item-id="ebb3c4eb274a31c976e6c745c964de400">
+          <a href="#h_01KVV3B8TWDBR8ZF0M6Z08KKXR"
+            >Setting Your Teen’s Monthly Spending Cap</a
+          >
+        </li>
+        <li data-list-item-id="e1d92e95c5a9c767743a1367d5c20b7de">
+          <a href="#h_01KVV3B8TZ31CV3C6A2RSJYDJ1"
+            >Scheduling Your Teen’s Screen Downtime</a
+          >
+        </li>
+        <li data-list-item-id="e408c52b9f9e78aecf0da57bafd9be965">
           <a href="#h_01K8RVK0P72Y66J1DJCC8G69Q7"
             >Your Teen’s Submitted Reports</a
           >
@@ -83,15 +99,16 @@
   Family Center through Discord on browser, you can only complete the connection
   process with your teen by using the Discord mobile app. After installing the
   app or opening Discord, tap on <strong>Family Center </strong>in
-  <strong>User Settings</strong> and toggle the
+  <strong>Account</strong> and toggle the
   <strong>Enable Family Center tab </strong>under <strong>Settings</strong>. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/36027356118167"
-    width="743"
-    height="551"
-  />
+  <span style="color: #666666"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/41441807578903"
+      width="821"
+      height="624"
+  /></span>
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K8RVK0P7DV95EP9FFA2H5YGA">
   <span style="color: #666666"
@@ -211,7 +228,17 @@
     subscriptions are shown in the week when they are billed to your teen’s
     account.
   </li>
+  <li data-list-item-id="ee23d0fd906d332317daf7267e6116cfa">
+    <strong>Gifts Received: </strong>You can view any items that have been
+    gifted to your teen, including both claimed and unclaimed gifts. You’ll see
+    what was gifted, who gifted it, and when. Note: Gifts sent via a link to
+    teens will only show up here after the teen has claimed it
+  </li>
 </ul>
+<div class="info-box">
+  <strong>Note: </strong>You will also be able to see this information in the
+  Family Center page in User Settings.
+</div>
 <p>
   In addition to seeing information about your teen’s recent activity through
   Family Center, you’ll also receive weekly updates containing a high level
@@ -243,7 +270,7 @@
 <h2 id="h_01K8RVK0P72Z9V25C64NJNF1Q8">Teen Account Settings</h2>
 <p>
   You will also be able to see and adjust some of your teen’s settings,
-  including:<br /> 
+  including:
 </p>
 <ul>
   <li data-list-item-id="e11026cea3dd13315472262178269d829">
@@ -380,6 +407,91 @@
   to talk to your teen about how to customize these safety settings in a way
   that supports your family's safety goals.
 </div>
+<h2 id="h_01KVV3B8TWDBR8ZF0M6Z08KKXR">
+  Setting Your Teen's Monthly Spending Cap
+</h2>
+<p>
+  As a Guardian, you can set a monthly spending cap to limit how much your teen
+  can spend, (this does not include subscriptions such as Nitro, Server Boosts,
+  Server Subscriptions, Premium App Subscriptions). However, in your teen’s
+  recent activity, you can see their total purchases for the last 7 days,
+  including Nitro subscriptions. Nitro subscriptions are shown in the week when
+  they are billed to your teen’s account.
+</p>
+<p class="wysiwyg-text-align-center">
+  <br /><img
+    src="https://support.discord.com/hc/article_attachments/41441814215959"
+    width="666"
+    height="359"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KVV3CP2K57FNDGB8JPAF5F94">
+  Total purchases
+</h4>
+<p>
+  Once the cap is reached, your teen won't be able to make additional purchases
+  until the following month. You can also set a monthly spending cap of $0.00.
+</p>
+<p>
+  1. Under the <strong>Family Center</strong> tab, look for
+  <strong>Monthly Spending cap</strong> to start setting up a spending cap.
+</p>
+<p>
+  2. Select <strong>Edit</strong>. You can then enter in the box what you’d like
+  the spending limit to be. Once set, select <strong>Save</strong> to save the
+  limit.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/41441814216343"
+    width="468"
+    height="286"
+  />
+   
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KVV3B8TZN5VV5YBN39GERMHM">
+  <span style="color: #666666"><strong>Save </strong>button</span>
+</h4>
+<h2 id="h_01KVV3B8TZ31CV3C6A2RSJYDJ1">
+  Scheduling Your Teen's Screen Downtime
+</h2>
+<p>
+  Screen time limits lets you schedule downtime for your teen during which your
+  teen cannot access Discord. They will be notified when you schedule downtime
+  and also be notified 15 minutes before downtime begins. Your teen won’t
+  receive any Discord notifications during downtime.
+</p>
+<p>
+  For example, if you  schedule downtime from 11PM to 9AM, your teen won’t be
+  able to access Discord during those hours. Your teen will see a message
+  letting them know access is currently restricted when they try to open Discord
+  during downtime. 
+</p>
+<p>
+  1. Under the <strong>Family Center</strong> tab, look for
+  <strong>Screen Time Limits</strong> under <strong>Parental</strong>
+  <strong>Controls</strong> to set up restricted hours. 
+</p>
+<p>
+  2. Select <strong>Edit</strong> to edit a previous schedule or
+  <strong>Schedule Downtime </strong>to add a new one.
+</p>
+<p>
+  3. Here, you can enable or disable the schedule, set the downtime hour(s) or
+  day(s) or delete the schedule.
+</p>
+<p>4. Select <strong>Save Schedule</strong> to save.</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/41441814217239"
+    width="461"
+    height="432"
+  />
+   
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KVV3B8V2R5SFE98Q3Y29288D">
+  <span style="color: #666666"><strong>Save Schedule</strong> button</span>
+</h4>
 <h2 id="h_01K8RVK0P72Y66J1DJCC8G69Q7">Your Teen’s Submitted Reports</h2>
 <p>
   When your teen
@@ -407,8 +519,9 @@
   can best support them.
 </p>
 <div class="exp-box">
-  <strong>Important:</strong> Although you can disconnect at any time, the month
-  your teen turns 18 years old, they will be automatically disconnected from all
+  <strong>Important:</strong> Although you can disconnect
+  <span style="color: #434343">a teen account </span>at any time, the month your
+  teen turns 18 years old, they will be automatically disconnected from all
   connected guardian accounts in Family Center.
 </div>
 <h1 id="h_01K8RVK0P7Z7D9BK67J9G8P2EQ">Frequently Asked Questions</h1>

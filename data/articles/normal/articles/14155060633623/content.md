@@ -1,10 +1,11 @@
 <p>
-  Family Center is an optional tool created to help keep up to three parents or
-  guardians informed about how you use Discord while still maintaining your
-  privacy. As you make connections and join servers, the information provided
-  within the <strong>Activity Summary </strong>will help you and your connected
-  family members stay on the same page. However, to respect your privacy, the
-  summary will not share the messages you send with connected family members. 
+  <strong>Family Center</strong> is an optional tool created to help keep up to
+  three parents or guardians informed about how you use Discord while still
+  maintaining your privacy. As you make connections and join servers, the
+  information provided within the <strong>Activity Summary </strong>will help
+  you and your connected family members stay on the same page. However, to
+  respect your privacy, the summary will not share the messages you send with
+  connected family members. 
 </p>
 <div class="info-box">
   <strong>Note:</strong> You can access Family Center by selecting this
@@ -14,7 +15,10 @@
     rel="noopener noreferrer"
     >link</a
   >
-  or by heading into your <strong>User Settings </strong>within the Discord App.
+  or by heading into your
+  <span style="color: #434343"
+    ><strong>User Settings &gt; Account &gt; Family Center</strong></span
+  ><strong> </strong>within the Discord App.
 </div>
 <div class="toc-box">
   <p>
@@ -33,6 +37,14 @@
       <ul>
         <li data-list-item-id="e85fa23fdb56dce4120c48f61b41251a7">
           <a href="#h_01K8RWCDQ9S5X2V2QSVJJYYM8Z">Your Recent Activity</a>
+        </li>
+        <li data-list-item-id="e932b5b68357136aa2674d1c0841efc6d">
+          <a href="#h_01KVV4744DWK2Y6CM9QDT9RJH9">Your Spending Cap</a>
+        </li>
+        <li data-list-item-id="eda07f3a26f348fe76647810c9ba44ec1">
+          <a href="#h_01KVV47Y713PQJ4Q1JV92X9AMZ"
+            >Your Scheduled Screen Downtime</a
+          >
         </li>
         <li data-list-item-id="e39254e047afe8c421436d9ca2adfa2fc">
           <a href="#h_01K8RWCDQAC4CK0BXWBMQ0A5CW">Your Account Settings</a>
@@ -220,6 +232,13 @@
       ></span
     >
   </li>
+  <li data-list-item-id="eb6dd89f6f893dfa013bf6878a4c60f12">
+    <span style="color: #1f1f1f"><strong>Gifts Received:</strong></span
+    ><strong> </strong>Gifts you have received, including both claimed and
+    unclaimed gifts. Information on what was gifted, who gifted it, and when.
+    Note: Gifts sent via a link to teens will only show up here after the teen
+    has claimed it.
+  </li>
 </ul>
 <div class="info-box">
   <strong>Note:</strong> You will also be able to see this information in the
@@ -288,9 +307,9 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/36027356010135"
+    src="https://support.discord.com/hc/article_attachments/41441839032983"
     width="624"
-    height="317"
+    height="397"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K8RWCDQA6XE5W2NGEC2JC4VP">
@@ -424,6 +443,82 @@
     ></span
   >
 </h4>
+<h2 id="h_01KVV4744DWK2Y6CM9QDT9RJH9">Your Spending Cap</h2>
+<p>
+  Your guardian has the option to set a monthly spending cap on your account,
+  which doesn't apply to subscriptions (Nitro, Server Boosts, Server
+  Subscriptions, Premium App Subscriptions)
+</p>
+<p>
+  Under the Family Center tab, look for <strong>Spending Cap</strong> to see
+  your monthly limit. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/41441823133975"
+    width="624"
+    height="149"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KVV4744G7ESGWQJSPVXS1NJ6">
+  <span style="color: #666666">Teen’s <strong>Spending Cap</strong></span>
+</h4>
+<p>
+  If a purchase would put you over that cap, you'll see an error message and
+  won't be able to complete the transaction.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/41441839040791"
+    width="438"
+    height="671"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KVV4744K4J8594X3A1ZP3DMS">
+  <span style="color: #666666">Error message if over/or at spending limit</span>
+</h4>
+<h2 id="h_01KVV47Y713PQJ4Q1JV92X9AMZ">Your Scheduled Screen Downtime</h2>
+<p>
+  Your guardian is able to schedule downtime which are specific hours during
+  which you cannot access Discord. Inside of those hours, you'll see a message
+  letting you know that access is currently restricted.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/41441823136791"
+    width="584"
+    height="575"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KVV479629EE9RHSQ0N6MAJDS">
+  <span style="color: #666666"
+    >Restricted Hours message when logging in outside of these
+    hour(s)/day(s)</span
+  >
+</h4>
+<p>
+  For example, your guardian might schedule downtime from 11PM to 9AM and inside
+  of those hours, you won’t be able to access Discord.
+</p>
+<p>
+  To check your downtime scheduled hours, head to the
+  <strong>Family Center</strong> tab and look for
+  <strong>Screen Time Limits</strong> under Parental Controls.
+</p>
+<p class="wysiwyg-text-align-center">
+   <img
+    src="https://support.discord.com/hc/article_attachments/41441839043479"
+    width="624"
+    height="337"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KVV4744RR8KV848TXF7AVFMB">
+  <span style="color: #666666">Teen’s <strong>Screen Time Limits</strong></span>
+</h4>
+<p>
+  If you try to log into the Discord app during your downtime hours, you’ll see
+  a message that tells you when you can log in again.
+</p>
 <h2 id="h_01K8RWCDQBR3GP0PK4VD54X7YT">Your Submitted Reports</h2>
 <p>
   When you report another user or content to Discord, you will be given the
@@ -438,7 +533,7 @@
     height="473"
   />
 </p>
-<h4 id="h_01K8RWCDQBJC4ANK8YS7SSTKHN">
+<h4 class="wysiwyg-text-align-center" id="h_01K8RWCDQBJC4ANK8YS7SSTKHN">
   <span style="color: #666666"
     ><span data-darkreader-inline-color=""
       >Example of submitted report</span
