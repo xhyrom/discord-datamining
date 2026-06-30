@@ -3190,11 +3190,7 @@
   },
   "GUILD_DISCOVERY_SLUG": {
     "url": "/discovery/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "GUILD_DISCOVERY_METADATA": {
     "url": "/guilds/:param/discovery-metadata",
