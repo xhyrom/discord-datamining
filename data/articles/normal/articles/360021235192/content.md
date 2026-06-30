@@ -121,13 +121,6 @@
     </tbody>
   </table>
 </figure>
-<div class="info-box">
-  <strong>Note:</strong> Make sure you've updated your Discord app fully on your
-  mobile device! If you don't see an update yet, hang tight and you should see
-  the build soon. Otherwise, if you're confident that you've already updated -
-  let our team know at
-  <a href="https://dis.gd/support/">https://dis.gd/support</a>
-</div>
 <h2 id="h_01EE1G6WR2NHWRCMKFE4C7F7JZ">Favoriting GIFs</h2>
 <p>
   You also have the ability to favorite GIFs &amp; add them to a
@@ -190,6 +183,11 @@
   Once you click on the <strong>Favorites </strong>category, you'll be able to
   admire your full favorite GIF collection!
 </p>
+<p>
+  You'll be able to quickly access all the GIFs you love and send them in chat
+  in a snap! (You can also directly unfavorite GIFs from inside the
+  <strong>Favorites</strong> folder too!)
+</p>
 <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 74.53%">
   <img
     style="aspect-ratio: 1236/1212"
@@ -198,11 +196,6 @@
     height="1212"
   />
 </figure>
-<p>
-  You'll be able to quickly access all the GIFs you love and send them in chat
-  in a snap! (You can also directly unfavorite GIFs from inside the
-  <strong>Favorites</strong> folder too!)
-</p>
 <figure class="wysiwyg-image">
   <img
     style="aspect-ratio: 1280/923"
