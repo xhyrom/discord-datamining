@@ -13,133 +13,64 @@
     >
   </p>
   <ul>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e589f77950cd022c41f8e10b489ba9b12"
-    >
-      <a href="#h_01HDME17HJE3D9N3DWY2QYGF07"
-        ><strong>What will I find in the Shop?</strong></a
-      >
+    <li data-list-item-id="e589f77950cd022c41f8e10b489ba9b12">
+      <a href="#h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</a>
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e00dd837a2729d480d10a78de3022c206"
-        >
-          <a href="#h_01J4T4BWARG55JA5T9T9CGJRFW"
-            ><strong>Shop Bundles</strong></a
-          >
+        <li data-list-item-id="e00dd837a2729d480d10a78de3022c206">
+          <a href="#h_01J4T4BWARG55JA5T9T9CGJRFW">Shop Bundles</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ef3d0b28856eea07ee6ebbd0ddc807a24"
-        >
-          <a href="#h_01JZ9CB0KZ0NZB7ECSAFY6DEW2"
-            ><strong>Orbs Exclusives</strong></a
-          >
+        <li data-list-item-id="ef3d0b28856eea07ee6ebbd0ddc807a24">
+          <a href="#h_01JZ9CB0KZ0NZB7ECSAFY6DEW2">Orbs Exclusives</a>
         </li>
       </ul>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="eefbf3fcdc070f61ef98c4ca2cd5dd43f"
-    >
-      <a href="#h_01HDME17HJX40G92JC7V3Q0WD6"
-        ><strong>How do I find the Shop?</strong></a
-      >
+    <li data-list-item-id="eefbf3fcdc070f61ef98c4ca2cd5dd43f">
+      <a href="#h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</a>
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e55d72635543e7533ec1c6f0896776107"
-        >
-          <a href="#h_01HVHE1RAM3Y86Y72M182775GF"
-            ><strong>Desktop/Browser</strong></a
-          >
+        <li data-list-item-id="e55d72635543e7533ec1c6f0896776107">
+          <a href="#h_01HVHE1RAM3Y86Y72M182775GF">Desktop/Browser</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e250435a63862a58f3115a8a582b0e7fe"
-        >
-          <a href="#h_01J4T4TY98TVE2FGXE2HW9YTPH"><strong>Mobile</strong></a>
+        <li data-list-item-id="e250435a63862a58f3115a8a582b0e7fe">
+          <a href="#h_01J4T4TY98TVE2FGXE2HW9YTPH">Mobile</a>
         </li>
       </ul>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="ec90888cbd6a82e99f9251ea14d57262f"
-    >
-      <a href="#h_01K058KRRWBGD0CMR2FVTDXMQJ"
-        ><strong>Browsing in the Shop</strong></a
-      >
+    <li data-list-item-id="ec90888cbd6a82e99f9251ea14d57262f">
+      <a href="#h_01K058KRRWBGD0CMR2FVTDXMQJ">Browsing in the Shop</a>
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e3ae300390d099cbf732911766fdfd2e6"
-        >
-          <a href="#h_01K058PPFEC3CEJ2VF5XA8QNAD"><strong>Sort By</strong></a>
+        <li data-list-item-id="e3ae300390d099cbf732911766fdfd2e6">
+          <a href="#h_01K058PPFEC3CEJ2VF5XA8QNAD">Sort By</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ed7a1572b47c41b508aeb7c405e8d7f66"
-        >
-          <a href="#h_01K058PPFEZ57GPXW9AEM49RCV"
-            ><strong>Show Filters</strong></a
-          >
+        <li data-list-item-id="ed7a1572b47c41b508aeb7c405e8d7f66">
+          <a href="#h_01K058PPFEZ57GPXW9AEM49RCV">Show Filters</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e49f8bcd79aad25d00a27606063fbf922"
-        >
-          <a href="#h_01K058PPFENDQRWK2WH629A9ZT"
-            ><strong>Search the Shop</strong></a
-          >
+        <li data-list-item-id="e49f8bcd79aad25d00a27606063fbf922">
+          <a href="#h_01K058PPFENDQRWK2WH629A9ZT">Search the Shop</a>
         </li>
       </ul>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="eac4e4c89175d3bdeed28412fccdb39b4"
-    >
-      <a href="#h_01J4T4Z6G3GCXP9S76GKGBR98G"
-        ><strong>Gifting from the Shop</strong></a
-      >
+    <li data-list-item-id="eac4e4c89175d3bdeed28412fccdb39b4">
+      <a href="#h_01J4T4Z6G3GCXP9S76GKGBR98G">Gifting from the Shop</a>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e2cca935c6694791c67c9e770ce1c36d3"
-    >
-      <a href="#h_01HDME17HJ58CYGM3WYGQF0ZMN"
-        ><strong>Frequently Asked Questions</strong></a
-      >
+    <li data-list-item-id="e2cca935c6694791c67c9e770ce1c36d3">
+      <a href="#h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions</a>
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e70348def4db5fa58715d1ef7c4821fbb"
-        >
+        <li data-list-item-id="e70348def4db5fa58715d1ef7c4821fbb">
           <a href="#h_01JZ9CVVGE6NXPYTCVV3PAM5QF"
-            ><strong>Refunds and Account-related</strong></a
+            >Refunds and Account-related</a
           >
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ef04d66fd361f532ad9fe2c84faca4489"
-        >
-          <a href="#h_01JZ9CVVGE6SHSPCED6NRRNP4J"
-            ><strong>Pricing and Discounts</strong></a
-          >
+        <li data-list-item-id="ef04d66fd361f532ad9fe2c84faca4489">
+          <a href="#h_01JZ9CVVGE6SHSPCED6NRRNP4J">Pricing and Discounts</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e060589122cfb61096c996b672c37312c"
-        >
-          <a href="#h_01JZ9CVVGEV9VX1ZQGVC30E94F"
-            ><strong>Bundles and Items</strong></a
-          >
+        <li data-list-item-id="e060589122cfb61096c996b672c37312c">
+          <a href="#h_01JZ9CVVGEV9VX1ZQGVC30E94F">Bundles and Items</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="eea9ce24df41afa13c84249e64fd41038"
-        >
-          <a href="#h_01JZ9CVVGEN1C6Z0ADK3H43J4K"><strong>Gifting</strong></a>
+        <li data-list-item-id="eea9ce24df41afa13c84249e64fd41038">
+          <a href="#h_01JZ9CVVGEN1C6Z0ADK3H43J4K">Gifting</a>
+        </li>
+        <li data-list-item-id="e89b66b60ae236e779060aa7d1081e892">
+          <a href="#h_01KWD3PP5M81JSDZQEX69SVCS4">Other</a>
         </li>
       </ul>
     </li>
@@ -564,37 +495,26 @@
   to<strong> User Settings &gt; Gift Inventory</strong>. 
 </div>
 <h1 id="h_01JZ9CVVGEJ6JZEYKQPGVH9XJF">Frequently Asked Questions </h1>
-<p>This FAQ is divided into sections:</p>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>This FAQ is divided into sections:</strong></span
+  >
+</p>
 <ul>
-  <li
-    class="wysiwyg-list-bold"
-    data-list-item-id="ea2bde67b31b11701f130017d42ddb5e8"
-  >
-    <a href="#h_01JZ9CVVGE6NXPYTCVV3PAM5QF"
-      ><strong>Refunds and Account-related</strong></a
-    >
+  <li data-list-item-id="ea2bde67b31b11701f130017d42ddb5e8">
+    <a href="#h_01JZ9CVVGE6NXPYTCVV3PAM5QF">Refunds and Account-related</a>
   </li>
-  <li
-    class="wysiwyg-list-bold"
-    data-list-item-id="e6146166a8c20f454affa1b67f6822519"
-  >
-    <a href="#h_01JZ9CVVGE6SHSPCED6NRRNP4J"
-      ><strong>Pricing and Discounts</strong></a
-    >
+  <li data-list-item-id="e6146166a8c20f454affa1b67f6822519">
+    <a href="#h_01JZ9CVVGE6SHSPCED6NRRNP4J">Pricing and Discounts</a>
   </li>
-  <li
-    class="wysiwyg-list-bold"
-    data-list-item-id="e41b732ba3d707a04713e654c387fc2ca"
-  >
-    <a href="#h_01JZ9CVVGEV9VX1ZQGVC30E94F"
-      ><strong>Bundles and Items</strong></a
-    >
+  <li data-list-item-id="e41b732ba3d707a04713e654c387fc2ca">
+    <a href="#h_01JZ9CVVGEV9VX1ZQGVC30E94F">Bundles and Items</a>
   </li>
-  <li
-    class="wysiwyg-list-bold"
-    data-list-item-id="e77a9f3bd828b49386141dc493c23c973"
-  >
-    <a href="#h_01JZ9CVVGEN1C6Z0ADK3H43J4K"><strong>Gifting</strong></a>
+  <li data-list-item-id="e77a9f3bd828b49386141dc493c23c973">
+    <a href="#h_01JZ9CVVGEN1C6Z0ADK3H43J4K">Gifting</a>
+  </li>
+  <li data-list-item-id="ee4669633839f140803d65282d5026b54">
+    <a href="#h_01KWD3PP5M81JSDZQEX69SVCS4">Other</a>
   </li>
 </ul>
 <h2 id="h_01JZ9CVVGE6NXPYTCVV3PAM5QF">Refunds and Account-related</h2>
@@ -699,4 +619,19 @@
   case, you can choose to claim one of the gifts. Then, the other gifts with the
   same item will be returned to the sender within 48 hours, and they can choose
   to send the gift to someone else.
+</p>
+<h2 id="h_01KWD3PP5M81JSDZQEX69SVCS4">Other</h2>
+<p><strong>Q: Can I use a Discord gift card to purchase Shop items?</strong></p>
+<p>
+  A: Yes! You can use your Discord gift card balance to purchase items in the
+  Shop. Learn more about
+  <a
+    href="https://support.discord.com/hc/en-us/articles/41159820367895"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">gift cards</span></a
+  >, or redeem a gift card
+  <a href="http://discord.com/redeem" target="_blank" rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >.
 </p>

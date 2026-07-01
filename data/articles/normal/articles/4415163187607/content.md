@@ -5,40 +5,44 @@
   <strong>What this article covers:</strong>
 </h2>
 <ul>
-  <li data-list-item-id="e075f3dad63e3f39e6e5271101febf2eb">
+  <li data-list-item-id="ecc3f351e5320644ca8b6cb5bd69e576c">
     <a href="#h_01GXS8A8K3KS5H407NZT2A43RX" target="_self"
       >What is Server Subscription?</a
     >
   </li>
-  <li data-list-item-id="ed550fba2ffd99289af89fc6f94ed094e">
+  <li data-list-item-id="e2cff6320992c49635d0a09daaf909be1">
     <a href="#h_01GXS8AFVQFQYKC26D6E89516Z" target="_self" rel="undefined"
       >How can I subscribe to a Server Subscription in a server?</a
     >
   </li>
-  <li data-list-item-id="e8ef2580786ec2dcdf819cf7fa7d378fa">
+  <li data-list-item-id="e79bd6c653c2972c2fef671f7bebb4a7b">
     <a href="#h_01GXS8QJ43BG0RDFEJ2P56Z0H9" target="_self"
       >How do I manage or cancel my Server Subscription with a server?</a
     >
   </li>
-  <li data-list-item-id="e5d0ee48b848ca3d32cc90b0ca273ed76">
+  <li data-list-item-id="ee8e019cbf28c24aeaa2e1638714f32cf">
     <a href="#h_01GXS8QWVJXBH1PJ4KP942M5PM" target="_self"
       >Can I ask for a refund for my Server Subscription?</a
     >
   </li>
-  <li data-list-item-id="eb4868333898967d5649ab76e70f8b8d0">
+  <li data-list-item-id="eb35cb3e35ed7130007c37248f8605e38">
     <a href="#h_01GXS8R35VE6J7YE50ZPR239CQ" target="_self"
       >Why can’t my server enable Server Subscription?</a
     >
   </li>
-  <li data-list-item-id="edb7c0d798df0e67688b5ccae018896c6">
+  <li data-list-item-id="e8d6f61ca2e13a7734b04810a3db6cd10">
     <a href="#h_01GXS8R9AVGAC8PRKTB13D53ZD" target="_self"
       >Server Subscriptions iOS </a
     >
+  </li>
+  <li data-list-item-id="e87d52e66110a732858e07768ffcb8427">
+    <a href="#h_01KWD4V5FRCEC40JRJ0F88S5VN">Frequently Asked Questions </a>
     <ul>
-      <li data-list-item-id="e35daf21541490585af041b98508c06fe">
-        <a href="#h_01GXS8RFFFKYZ1CGYAC0BZZ6MD" target="_self"
-          >Frequently Asked Questions for iOS</a
-        >
+      <li data-list-item-id="e0c70bc8a9a038d3e2f94c128bfcad878">
+        <a href="#h_01KWD4VRVH94VWAV7FC68FR30T">Server Subscriptions iOS</a>
+      </li>
+      <li data-list-item-id="e17e79e2d39924c04d0d80fdaec30d2eb">
+        <a href="#h_01KWD53G4VVFQBXDP8D8MWPANB">Other</a>
       </li>
     </ul>
   </li>
@@ -85,20 +89,20 @@
   <strong>HOW CAN I SUBSCRIBE TO A SERVER SUBSCRIPTION IN A SERVER?</strong>
 </h2>
 <ol>
-  <li data-list-item-id="eadcf802b9cb662f24fae676c0988ad04">
+  <li data-list-item-id="eed7a2ea5008a5b3d4d7c59e8c3b05cb8">
     In the server you would like to have a Server Subscription, you can press
     "Server Subscription" at the top of the server's channel list. 
   </li>
-  <li data-list-item-id="e6c4b1b33dbd799dbfc74880fdfd9f968">
+  <li data-list-item-id="e0118e169c453bb262776dc4bea417d32">
     An in-app landing page will appear, and you can see the different Server
     Subscription  subscription tiers, their prices, and the perks included in
     each tier. Read the descriptions to make sure you know what you’re buying!
   </li>
-  <li data-list-item-id="e47561e832a2ab77830ff3effc8523ed5">
+  <li data-list-item-id="e72ce390af4dee3581474b23c83b8919d">
     Choose a tier, then follow the instructions to pick a payment method and
     complete the purchase.
   </li>
-  <li data-list-item-id="e9548e9bcbff7f98796a91a34c38bdf7a">
+  <li data-list-item-id="e85a7f5f30b9953fcea757475d7183955">
     And that's it! A welcome message will pop up to show you the perks you have
     with the Server Subscription tier you purchased.
   </li>
@@ -109,18 +113,18 @@
   >
 </h1>
 <ol>
-  <li data-list-item-id="e128e1992280353cad248896a751fd4fb">
+  <li data-list-item-id="ee342d81a099a5f80e5397a36a3e3ca26">
     Press on the cog wheel next to your username at the bottom right corner of
     the client to open up User Settings.
   </li>
-  <li data-list-item-id="ede0fe5755e1efd140f0a284aa22e6d61">
+  <li data-list-item-id="ec8b24b1bc9627fc5784b9a00cf592be4">
     Select Subscriptions on the left side panel.
   </li>
-  <li data-list-item-id="eff5df63d24f6fb4ec7535b879db4b39c">
+  <li data-list-item-id="eb1f7b467f06c4918b554c11190e3b01a">
     On this page, you should see your subscriptions, including memberships.
     Press on the Manage Membership button.
   </li>
-  <li data-list-item-id="e0efde22eebd7cae176d77c27a49d138d">
+  <li data-list-item-id="ecc7a6b96be61711dacb44209e2a57b14">
     The Server Subscription page will show your memberships across all servers
     and each memberships' costs and billing/renewal dates. Press on Cancel
     Subscription next to the membership you want to cancel and confirm your
@@ -162,7 +166,21 @@
   favorite creators and communities by subscribing directly from the Discord iOS
   app.
 </p>
-<h2 id="h_01GXS8RFFFKYZ1CGYAC0BZZ6MD">Frequently Asked Questions for iOS</h2>
+<h1 id="h_01KWD4V5FRCEC40JRJ0F88S5VN">Frequently Asked Questions </h1>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>This FAQ is divided into sections:</strong></span
+  >
+</p>
+<ul>
+  <li data-list-item-id="e2e25141792bc4fc140d5f70914ee571d">
+    <a href="#h_01KWD4VRVH94VWAV7FC68FR30T">Server Subscriptions iOS</a>
+  </li>
+  <li data-list-item-id="e3980a735d5f4edf5df0975611f23f751">
+    <a href="#h_01KWD53G4VVFQBXDP8D8MWPANB">Other</a>
+  </li>
+</ul>
+<h2 id="h_01KWD4VRVH94VWAV7FC68FR30T">Server Subscriptions iOS</h2>
 <p>
   <strong
     >Q. Do mobile subscriptions cost the same as desktop subscriptions?</strong
@@ -202,3 +220,22 @@
 </p>
 <p><strong>Q: When will subscriptions be purchasable on Android?</strong></p>
 <p>A: Subscriptions will not be available to purchase on Android.</p>
+<h2 id="h_01KWD53G4VVFQBXDP8D8MWPANB">Other</h2>
+<p>
+  <strong
+    >Q: Can I use a Discord gift card to pay for a Server Subscription?</strong
+  >
+</p>
+<p>
+  A: Yes! You can use your Discord gift card balance to pay for Server
+  Subscriptions. Learn more about
+  <a
+    href="https://support.discord.com/hc/en-us/articles/41159820367895"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">gift cards</span></a
+  >, or redeem a gift card
+  <a href="http://discord.com/redeem" target="_blank" rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >.
+</p>

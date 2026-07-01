@@ -7,47 +7,47 @@
   <p>
     <span class="wysiwyg-font-size-x-large"
       ><strong>What this article covers:</strong></span
-    ><br /> 
+    >
   </p>
   <ul>
-    <li data-list-item-id="e48917dde974b17491e2dfd1f3a2e7c00">
+    <li data-list-item-id="e6cae99878acb52ba690762df02a459b4">
       <a href="#h_01JXDBAEEQSS9BKVA82R7JNKM1"
         >What types of Nitro plans are there?</a
       >
       <ul>
-        <li data-list-item-id="e52a8da59acec70887500858284c9e3a4">
+        <li data-list-item-id="ed29a61d75fb4b458c51ec0dcbd76a459">
           <a href="#h_01JXDBAR0WH1RJAGD4N99QN13J">Nitro</a>
         </li>
-        <li data-list-item-id="ea376552ade1162d2138f2a11056b4ba6">
+        <li data-list-item-id="eed60376da51d05fde978ad0aea9a67de">
           <a href="#h_01GFV3P6JCBPK991K73KW8C70B">Nitro Basic</a>
         </li>
       </ul>
     </li>
-    <li data-list-item-id="e53d36d34b8ef8eb06a1b6bcc9ab574ce">
+    <li data-list-item-id="e07513bffe182a05b2009e4f5dedc1434">
       <a href="#h_01JXDBQ7YTESHKC4EFEMTEAQ7G"
         >How to Subscribe to Nitro or Nitro Basic</a
       >
       <ul>
-        <li data-list-item-id="ebc784a6392b1da2cc02b34a475b67ec5">
+        <li data-list-item-id="eabcb1e6f3c3cb9336af2d3baeca1afc8">
           <a href="#h_01JXDBW1M9V03F3QCWBSVX1XXR">On Desktop/Browser</a>
         </li>
-        <li data-list-item-id="e1e348ec18c4be18237eade863b9d7475">
+        <li data-list-item-id="e4756f41cbb4ebab45477127bec441059">
           <a href="#h_01JXDBZ39KR58GMC6FPHM90VZD">On Mobile</a>
         </li>
       </ul>
     </li>
-    <li data-list-item-id="e84872295394f06ab992d4ab0a013f617">
+    <li data-list-item-id="ec6481e295736ef8728c0e922820c1dda">
       <a href="#h_01JXDC2X91EXZZKRPMQ1729F5Z">Frequently Asked Questions</a>
       <ul>
-        <li data-list-item-id="e53919836e8fe6cf8d17535859a3fff2b">
+        <li data-list-item-id="e7942a650d1cd7323f6b6fe87d4758966">
           <a href="#h_01JZ3EFHEK8PRXH1SXVXVQXFW3"
             >All Nitro Subscription Types</a
           >
         </li>
-        <li data-list-item-id="e93e58c08d873f73d8a1a740a0b4a7200">
+        <li data-list-item-id="e1c050e9e6cdb5a944589fa8583d2e81e">
           <a href="#h_01JZ3EFHEKYR6GTDDN4KBC1W0S">Nitro</a>
         </li>
-        <li data-list-item-id="e06cb8ba08a4f4a20d658d3953e6c89aa">
+        <li data-list-item-id="e4b55dea49ee54c3a28ac26558be097fe">
           <a href="#h_01JZ3EFHEK1ARBXN693Y3D0JQD">Nitro Classic</a>
         </li>
       </ul>
@@ -75,7 +75,10 @@
 <p><span style="font-weight: 400">All included subscriber perks:</span></p>
 <div>
   <figure class="wysiwyg-table wysiwyg-table-align-left" style="width: 100%">
-    <table class="wysiwyg-table-resized">
+    <table
+      class="wysiwyg-table-resized"
+      style="margin-left: 0px; margin-right: auto"
+    >
       <colgroup>
         <col style="width: 33%" />
         <col style="width: 67%" />
@@ -344,7 +347,10 @@
 <p>Here's what Nitro Basic includes:</p>
 <div>
   <figure class="wysiwyg-table wysiwyg-table-align-left" style="width: 100%">
-    <table class="wysiwyg-table-resized">
+    <table
+      class="wysiwyg-table-resized"
+      style="margin-left: 0px; margin-right: auto"
+    >
       <colgroup>
         <col style="width: 33%" />
         <col style="width: 67%" />
@@ -628,17 +634,17 @@
 <h1 id="h_01JXDC2X91EXZZKRPMQ1729F5Z">Frequently Asked Questions</h1>
 <p>
   <span class="wysiwyg-font-size-x-large"
-    ><strong>In this FAQ section: </strong></span
+    ><strong>This FAQ is divided into sections:</strong></span
   >
 </p>
 <ul>
-  <li data-list-item-id="e7efa28592a5765bcf3a97e39074da742">
+  <li data-list-item-id="eb1d3c19bbb61f4068aa2cd0a5121c313">
     <a href="#h_01JZ3EFHEK8PRXH1SXVXVQXFW3">All Nitro Subscription Types</a>
   </li>
-  <li data-list-item-id="e9524d158e1f5a7f88971c8f82a871c76">
+  <li data-list-item-id="e83e95f593c55650e442539bcb0f32190">
     <a href="#h_01JZ3EFHEKYR6GTDDN4KBC1W0S">Nitro</a>
   </li>
-  <li data-list-item-id="e04364b1608ff77840973214f969ebcf1">
+  <li data-list-item-id="e185f5e33afadc6393fe96e1bec9076cd">
     <a href="#h_01JZ3EFHEK1ARBXN693Y3D0JQD">Nitro Classic</a>
   </li>
 </ul>
@@ -696,6 +702,24 @@
     this article</a
   >
   for information on localized pricing.
+</p>
+<p>
+  <strong
+    >Q: Can I use a Discord gift card to purchase Nitro or Nitro Basic?</strong
+  >
+</p>
+<p>
+  A: Yes! You can use your Discord gift card balance to purchase Nitro and Nitro
+  Basic. Learn more about
+  <a
+    href="https://support.discord.com/hc/en-us/articles/41159820367895"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">gift cards</span></a
+  >, or redeem a gift card
+  <a href="http://discord.com/redeem" target="_blank" rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >.
 </p>
 <h2 id="h_01JZ3EFHEKYR6GTDDN4KBC1W0S">Nitro</h2>
 <p>
@@ -766,22 +790,22 @@
 </p>
 <p>A: Nitro Classic unlocks the following perks on your account:</p>
 <ul>
-  <li data-list-item-id="e74b28f89e07abca573753fc96941eb25">
+  <li data-list-item-id="e39324b44986069a72b164ab271267225">
     Profile customization: animated avatar, Nitro badge.
   </li>
-  <li data-list-item-id="e78bbf6b11ef0ac26d54c6dc616641808">
+  <li data-list-item-id="ebca7f2b71c3933f53c25e54ea749b122">
     30% off Boost purchases
   </li>
-  <li data-list-item-id="e18c1e3875241db0d078bfd26b46ece8d">
+  <li data-list-item-id="eac36fd2caf3748854cd0b57a653e0818">
     Use custom and animated emojis anywhere
   </li>
-  <li data-list-item-id="e32ea72dad858c139a007d1e8fdc921b9">
+  <li data-list-item-id="e2ed25041bcae50f098d7014522f71442">
     Unlimited Super Reactions
   </li>
-  <li data-list-item-id="e30a0de319c0576c14c2f07e3aa72bab0">
+  <li data-list-item-id="ee71db1c5ac82c35437a49958a15fa49e">
     Bigger file uploads (50MB)
   </li>
-  <li data-list-item-id="e2e4c1194fcef857991fbd5cf6272a6af">
+  <li data-list-item-id="e17ff8047876ba034225d01513382dbbf">
     Screen share up to 1080p/60fps 
   </li>
 </ul>
@@ -795,15 +819,15 @@
   ends, follow these steps:
 </p>
 <ol>
-  <li data-list-item-id="e5964f2fd1e2b083d653875557ee5e451">
+  <li data-list-item-id="ebefda8a4d6d566956fd6b598ed7cea19">
     On the desktop or web client (this is not available on mobile), go to
     <strong>User Settings &gt; Subscriptions</strong>.
   </li>
-  <li data-list-item-id="e2a14544b2d81877d95ab9e8f06bb0891">
+  <li data-list-item-id="e4cba2265358e60fd4de208466fdd03de">
     On the bottom of the page, you should see a <strong>banner</strong> for
     Nitro Classic. Select the“Subscribe” button.
   </li>
-  <li data-list-item-id="e49cc07e46d2a519f6c6cf1f3ffed6873">
+  <li data-list-item-id="eb9a73a81f05782174e8c5c5397a3b264">
     After completing the process to begin your Nitro Classic subscription, your
     subscription should automatically begin using your existing credit.
   </li>

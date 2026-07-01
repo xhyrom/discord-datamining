@@ -49,100 +49,51 @@
     ><br /> 
   </p>
   <ul>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="ef47d2209033e3ebdabb1742f55d1ff45"
-    >
+    <li data-list-item-id="ef47d2209033e3ebdabb1742f55d1ff45">
       <a href="#h_01HGX7DJ33W4WY3FYVPRZ2CK02"
-        ><strong>What are the levels and perks for Server Boosting? </strong></a
+        >What are the levels and perks for Server Boosting? </a
       >
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e76c4a356d9619c9f81cd1ae9c606e71b"
-        >
-          <a href="#h_01HGX7DJ33Z5HGWCXJ6NKR2FTZ"
-            ><strong>Server Level Perks</strong></a
-          >
+        <li data-list-item-id="e76c4a356d9619c9f81cd1ae9c606e71b">
+          <a href="#h_01HGX7DJ33Z5HGWCXJ6NKR2FTZ">Server Level Perks</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e92890ae78311442a0c315e030125023b"
-        >
-          <a href="#h_01JT6SH1QBD1XZKK4KEAD64GXS"
-            ><strong>Additional Perks</strong></a
-          >
+        <li data-list-item-id="e92890ae78311442a0c315e030125023b">
+          <a href="#h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ed306d678a769c86f8d745f7e3e07ee5c"
-        >
-          <a href="#h_01HGX7DJ33YD3AP7K0E0GYSMYM"
-            ><strong>Boosting Badge Perks</strong></a
-          >
+        <li data-list-item-id="ed306d678a769c86f8d745f7e3e07ee5c">
+          <a href="#h_01HGX7DJ33YD3AP7K0E0GYSMYM">Boosting Badge Perks</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ee88a3c553b2265847f59d5edc6e6e1c7"
-        >
-          <a href="#h_01HGX7DJ332WE7WX2XH0FEN6H9"
-            ><strong>Nitro Subscription Perks </strong></a
-          >
+        <li data-list-item-id="ee88a3c553b2265847f59d5edc6e6e1c7">
+          <a href="#h_01HGX7DJ332WE7WX2XH0FEN6H9">Nitro Subscription Perks </a>
         </li>
       </ul>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e1397ff32187b3474dffae6b74b53fa41"
-    >
-      <a href="#h_01HGX7DJ331AJ25MPQRD6R83KJ"
-        ><strong>How do I Boost a Server?</strong></a
-      >
+    <li data-list-item-id="e1397ff32187b3474dffae6b74b53fa41">
+      <a href="#h_01HGX7DJ331AJ25MPQRD6R83KJ">How do I Boost a Server?</a>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e2d3434e60dde3394ac12ded03c19558e"
-    >
-      <a href="#h_01JXWRENPDXWD623DT9NTY70R1"
-        ><strong>How do Additional Perks work?</strong></a
-      >
+    <li data-list-item-id="e2d3434e60dde3394ac12ded03c19558e">
+      <a href="#h_01JXWRENPDXWD623DT9NTY70R1">How do Additional Perks work?</a>
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ee7d4877770b57c9b9ea194b5db819487"
-        >
+        <li data-list-item-id="ee7d4877770b57c9b9ea194b5db819487">
           <a href="#h_01JXWRENPD3N35RBKMS1YR1538"
-            ><strong
-              >How do I apply Server Boosts to Additional Perks</strong
-            ></a
+            >How do I apply Server Boosts to Additional Perks</a
           >
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e4811005bc621c14519495440938c0fa4"
-        >
+        <li data-list-item-id="e4811005bc621c14519495440938c0fa4">
           <a href="#h_01JXWRENPDE8PJ41K82SM9CSNX"
-            ><strong
-              >How Do Server Boosts Work for Levels vs Additional Perks?</strong
-            ></a
+            >How Do Server Boosts Work for Levels vs Additional Perks?</a
           >
         </li>
       </ul>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e0d54b6de32cf376ad127c65954662a2f"
-    >
+    <li data-list-item-id="e0d54b6de32cf376ad127c65954662a2f">
       <a href="#h_01HGX7DJ34QP27HTRJCM5JQ783"
-        ><strong>How to maintain your Boosting Streak</strong></a
+        >How to maintain your Boosting Streak</a
       >
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e735c869cf685b614a8a362c0764e0490"
-    >
+    <li data-list-item-id="e735c869cf685b614a8a362c0764e0490">
       <a href="#h_01HGX7DJ3486SXSGHT99XVMNFN"
-        ><strong>How do I Transfer my Server Boost?</strong></a
+        >How do I Transfer my Server Boost?</a
       >
     </li>
     <li data-list-item-id="edf0cb0ff2597aec26bb1115328e10b80">
@@ -160,23 +111,23 @@
             >Server Owner/Admin View Of Server Boosts</a
           >
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ee11030f239145f77b61256386bf9343c"
-        >
+        <li data-list-item-id="ee11030f239145f77b61256386bf9343c">
           <a href="#h_01JXWRKHF311JQS7ZB7ERSKWNW"
-            ><strong>Grace Period for Server Boost Loss</strong></a
+            >Grace Period for Server Boost Loss</a
           >
         </li>
       </ul>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e619fe69b3fc0c54d87911e52964f258c"
-    >
-      <a href="#h_01JXWRM6K7KF6GMB6XRGJFKQD8"
-        ><strong>FAQs for Additional Perks</strong></a
-      >
+    <li data-list-item-id="ec1adcf32a8c195dee8b5d5514eb50917">
+      <a href="#h_01KWD37QW5REBHB1D3EQ4DKCPB">Frequently Asked Questions</a>
+      <ul>
+        <li data-list-item-id="ece5c0625ed44194e747218554ac2e53a">
+          <a href="#h_01KWD33HF61XH4P24N857N2SNQ">Additional Perks</a>
+        </li>
+        <li data-list-item-id="e513ffbe96cfa0024b3fca71c18a36718">
+          <a href="#h_01KWD33XN047N98698MWW7455G">Other</a>
+        </li>
+      </ul>
     </li>
   </ul>
 </div>
@@ -1033,7 +984,21 @@
     >http://dis.gd/feedback</a
   >!
 </p>
-<h1 id="h_01JXWRM6K7KF6GMB6XRGJFKQD8">FAQs for Additional Perks</h1>
+<h1 id="h_01KWD37QW5REBHB1D3EQ4DKCPB">Frequently Asked Questions</h1>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>This FAQ is divided into sections:</strong></span
+  >
+</p>
+<ul>
+  <li data-list-item-id="e9d770e99f05facbe0f47c6f614ffeece">
+    <a href="#h_01KWD33HF61XH4P24N857N2SNQ">Additional Perks</a>
+  </li>
+  <li data-list-item-id="edceddb532f238629945758d4a4e4d5d1">
+    <a href="#h_01KWD33XN047N98698MWW7455G">Other</a>
+  </li>
+</ul>
+<h2 id="h_01KWD33HF61XH4P24N857N2SNQ">Additional Perks</h2>
 <p>
   <strong
     >Q: What are ‘additional perks’ and how are they different from
@@ -1142,4 +1107,21 @@
 <p>
   <strong>A:</strong> Additional perks can currently only be
   <strong>purchased and configured on desktop</strong>.
+</p>
+<h2 id="h_01KWD33XN047N98698MWW7455G">Other</h2>
+<p>
+  <strong>Q: Can I use a Discord gift card to purchase Server Boosts?</strong>
+</p>
+<p>
+  A: Yes! You can use your Discord gift card balance to purchase Server Boosts.
+  Learn more about
+  <a
+    href="https://support.discord.com/hc/en-us/articles/41159820367895"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">gift cards</span></a
+  >, or redeem a gift card
+  <a href="http://discord.com/redeem" target="_blank" rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >.
 </p>

@@ -270,7 +270,11 @@
   </li>
 </ul>
 <h1 id="h_01KQJNEWW70FH3QE17RZP3TC2P">Frequently Asked Questions</h1>
-<p>This FAQ is divided into sections:</p>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>This FAQ is divided into sections:</strong></span
+  >
+</p>
 <ul>
   <li data-list-item-id="e15a3fc956d5370fbc56abadcc01531c0">
     <a href="#h_01KQJNEWW9VBQYCG8QCRDVHXQ8">Purchases and Refunds</a>
@@ -356,6 +360,24 @@
     >message</span
   >
 </h4>
+<p>
+  <strong
+    >Q: Can I use a Discord gift card to purchase items in Game Shops?</strong
+  >
+</p>
+<p>
+  A: Yes! You can use your Discord gift card balance to purchase items in Game
+  Shops. Learn more about
+  <a
+    href="https://support.discord.com/hc/en-us/articles/41159820367895"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">gift cards</span></a
+  >, or redeem a gift card
+  <a href="http://discord.com/redeem" target="_blank" rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >.
+</p>
 <h2 id="h_01KQJNEWWC2D0G97YGZRCAA2S1">Pricing</h2>
 <p>
   <strong>Q: What currency do Game Shops support?</strong> <br /><br />A: Prices
