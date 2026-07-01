@@ -1,6 +1,4 @@
 {
-  "subdomains": [
-    "api"
-  ],
-  "subdomain_count": 1
+  "subdomains": [],
+  "subdomain_count": 0
 }
