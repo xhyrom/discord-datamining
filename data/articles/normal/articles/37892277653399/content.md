@@ -4,11 +4,29 @@
   Advertising services:
 </p>
 <p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Managed Advertising Services:</strong></span
+  >
+</p>
+<p>
   <a
     href="https://support.discord.com/hc/en-us/articles/28455100031511-Discord-Advertising-IAB-Addendum"
     target="_blank"
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">Discord Advertising IAB Addendum</span></a
+  >
+</p>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Self-Service Advertising:</strong></span
+  >
+</p>
+<p>
+  <a
+    href="https://support.discord.com/hc/en-us/articles/41619407434391"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Self-Service Advertising Terms</a
   >
 </p>
 <p>
@@ -40,6 +58,14 @@
     target="_blank"
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">Custom Audience Terms</span></a
+  >
+</p>
+<p>
+  <a
+    href="https://support.discord.com/hc/en-us/articles/41618861207959"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Events API Terms</a
   >
 </p>
 <p><br /> </p>

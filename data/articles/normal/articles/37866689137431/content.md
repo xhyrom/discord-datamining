@@ -1,4 +1,4 @@
-<p>Effective Date: January 22, 2026</p>
+<p>Effective Date: July 1, 2026</p>
 <p>
   Welcome! Thank you for your interest in Discord's advertising business
   products and services (collectively, "Business Services"). The Business
@@ -15,30 +15,31 @@
 <p>
   When we say "Discord," "we," "us," and "our" in these Business Terms, we mean
   Discord Inc. and its subsidiaries and related companies, unless otherwise set
-  forth in additional terms applicable to a given Business Service.  When we say
-  “Partner,” “you,” or “yours,” we mean the entity identified in an Insertion
-  Order (“<strong>IO</strong>”)or other ordering document that has elected to
-  use the Business Services.
+  forth in additional terms applicable to a given Business Service. "When we say
+  'Partner,' 'you,' or 'yours,' we mean the entity that has elected to use the
+  Business Services, whether by entering into an Insertion Order ('IO') or other
+  ordering document or by accepting the Self-Service Advertising Terms or
+  otherwise accessing or using the Ads Manager."
 </p>
 <p>
   When we say "Terms" in these Business Terms, we mean, collectively, these
-  Business Terms, the applicable Insertion Order to which these Business Terms
-  are incorporated by reference, our
+  Business Terms, the applicable terms of the Insertion Order to which these
+  Business Terms are incorporated by reference, our
   <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">Terms of Service</span></a
+    >Terms of Service</a
   >
   (including our
   <a
     href="https://discord.com/guidelines"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">Discord Community Guidelines</span></a
+    >Discord Community Guidelines</a
   >), our
   <a
     href="https://support.discord.com/hc/en-us/articles/25516720403223-Ads-Policy"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">Ads Policy</span></a
+    >Ads Policy</a
   >, and any other applicable terms, policies, and guidelines we make available.
   If you use other Discord business products and services in connection with the
   Business Services, then the terms for those other products or services also
@@ -50,16 +51,16 @@
   Business Terms with respect to a specific subject matter.
 </p>
 <p>
-  <strong>Important Note:</strong> Section 9: Disputes incorporates the
+  <strong>Important Note</strong>: Section 9: Disputes incorporates the
   <a
     href="https://discord.com/terms#16"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">dispute resolution provision</span></a
+    >dispute resolution provision</a
   >
   from our
   <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">Terms of Service</span></a
+    >Terms of Service</a
   >, which includes an arbitration clause and class action waiver that applies
   to all U.S.-based Discord users including users of the Business Services.
   Please read this section carefully as it may significantly affect your legal
@@ -91,7 +92,7 @@
   service, or (vi) use the Business Services, or any information contained
   therein, for the purposes of training any AI or machine learning model.
 </p>
-<p><strong>Section 3: Representations and Warranties</strong></p>
+<p><strong>Section 2: Representations and Warranties</strong></p>
 <p>
   You represent and warrant that: (i) you are an entity validly existing and in
   good standing under the laws of your jurisdiction of incorporation or
@@ -117,13 +118,13 @@
   for any obligations ascribed to or actions taken by that individual or entity
   under these Business Terms.
 </p>
-<p><strong>Section 4: Intellectual </strong>Property and Ownership</p>
+<p><strong>Section 3: Intellectual Property and Ownership</strong></p>
 <p>
   Discord owns all rights, title, and interest in the Business Services and any
   data, insights, analytics, or reports derived from the Business Services. All
   rights not expressly granted herein are reserved Discord.
 </p>
-<p><strong>Section 5: Termination</strong></p>
+<p><strong>Section 4: Termination</strong></p>
 <p>
   Discord may terminate these Business Terms, and modify, suspend, terminate
   access to, or discontinue the availability of any Business Services, at any
@@ -133,7 +134,7 @@
   liability for failure to do so. Upon termination, you will immediately stop
   using the Business Service.
 </p>
-<p><strong>Section 6: Warranty Disclaimer</strong></p>
+<p><strong>Section 5: Warranty Disclaimer</strong></p>
 <p>
   DISCORD MAKES NO REPRESENTATIONS OR WARRANTIES REGARDING THE BUSINESS
   SERVICES. BUSINESS SERVICES ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND,
@@ -147,7 +148,7 @@
   LIABLE FOR ANY DAMAGES OR LOSSES INCURRED BY YOU AS A RESULT OF YOUR USE OF
   ANY THIRD-PARTY PRODUCTS OR SERVICES.
 </p>
-<p><strong>Section 7: Indemnification</strong></p>
+<p><strong>Section 6: Indemnification</strong></p>
 <p>
   You shall indemnify, defend, and hold harmless Discord and its affiliates,
   directors, officers, employees, and agents against all claims, liabilities,
@@ -164,7 +165,7 @@
   claim. You will not compromise or settle any claim without Discord's prior
   written consent, which Discord may provide in its sole discretion.
 </p>
-<p><strong>Section 8: Limitation of Liability</strong></p>
+<p><strong>Section 7: Limitation of Liability</strong></p>
 <p>
   IN NO EVENT WILL DISCORD OR ITS AFFILIATES BE LIABLE FOR ANY INDIRECT,
   SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING FOR LOSS OF REVENUE
@@ -174,7 +175,7 @@
   (B) THE AMOUNT OF  FEES PAID OR PAYABLE TO DISCORD UNDER THE INSERTION ORDER
   GIVING RISE TO LIABILITY.
 </p>
-<p><strong>Section 9: Disputes</strong></p>
+<p><strong>Section 8: Disputes</strong></p>
 <p>
   For any disputes arising from or related to the Business Services, the
   <a
@@ -197,18 +198,18 @@
   federal courts in New York, New York, and the parties each consent to venue
   and personal jurisdiction in these courts.  
 </p>
-<p><strong>Section 10: Modifications</strong></p>
+<p><strong>Section 9: Modifications</strong></p>
 <p>
-  We may update these Business Terms from time to time. We will provide you with
-  reasonable notice and post updated terms in advance of the updated terms
-  taking effect, unless the changes are urgent (for example, to comply with
-  applicable law or correct non-material errors). If you continue to access or
-  use the Business Services after the changes have taken effect, it means that
-  you agree to the changes. If you do not agree, you must stop using the
-  Business Services. You can review the most current version of these Business
-  Terms at any time by visiting this page. 
+  We may modify these Business Terms from time to time by publishing an updated
+  version to the Discord web site. We will endeavor to post updated terms in
+  advance of the updated terms taking effect, unless the changes are urgent (for
+  example, to comply with applicable law or correct non-material errors). If you
+  continue to access or use the Business Services after the changes have taken
+  effect, it means that you agree to the changes. If you do not agree, you must
+  stop using the Business Services. You can review the most current version of
+  these Business Terms at any time by visiting this page. 
 </p>
-<p><strong>Section 11: Miscellaneous</strong></p>
+<p><strong>Section 10: Miscellaneous</strong></p>
 <p>
   To the extent permitted by law, we each agree to contract in the English
   language and if we provide a translation of the Business Terms, we do so for

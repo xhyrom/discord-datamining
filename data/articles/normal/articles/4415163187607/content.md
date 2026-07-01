@@ -5,37 +5,37 @@
   <strong>What this article covers:</strong>
 </h2>
 <ul>
-  <li>
+  <li data-list-item-id="e075f3dad63e3f39e6e5271101febf2eb">
     <a href="#h_01GXS8A8K3KS5H407NZT2A43RX" target="_self"
       >What is Server Subscription?</a
     >
   </li>
-  <li>
+  <li data-list-item-id="ed550fba2ffd99289af89fc6f94ed094e">
     <a href="#h_01GXS8AFVQFQYKC26D6E89516Z" target="_self" rel="undefined"
       >How can I subscribe to a Server Subscription in a server?</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e8ef2580786ec2dcdf819cf7fa7d378fa">
     <a href="#h_01GXS8QJ43BG0RDFEJ2P56Z0H9" target="_self"
       >How do I manage or cancel my Server Subscription with a server?</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e5d0ee48b848ca3d32cc90b0ca273ed76">
     <a href="#h_01GXS8QWVJXBH1PJ4KP942M5PM" target="_self"
       >Can I ask for a refund for my Server Subscription?</a
     >
   </li>
-  <li>
+  <li data-list-item-id="eb4868333898967d5649ab76e70f8b8d0">
     <a href="#h_01GXS8R35VE6J7YE50ZPR239CQ" target="_self"
       >Why can’t my server enable Server Subscription?</a
     >
   </li>
-  <li>
+  <li data-list-item-id="edb7c0d798df0e67688b5ccae018896c6">
     <a href="#h_01GXS8R9AVGAC8PRKTB13D53ZD" target="_self"
       >Server Subscriptions iOS </a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e35daf21541490585af041b98508c06fe">
         <a href="#h_01GXS8RFFFKYZ1CGYAC0BZZ6MD" target="_self"
           >Frequently Asked Questions for iOS</a
         >
@@ -85,20 +85,20 @@
   <strong>HOW CAN I SUBSCRIBE TO A SERVER SUBSCRIPTION IN A SERVER?</strong>
 </h2>
 <ol>
-  <li>
+  <li data-list-item-id="eadcf802b9cb662f24fae676c0988ad04">
     In the server you would like to have a Server Subscription, you can press
     "Server Subscription" at the top of the server's channel list. 
   </li>
-  <li>
+  <li data-list-item-id="e6c4b1b33dbd799dbfc74880fdfd9f968">
     An in-app landing page will appear, and you can see the different Server
     Subscription  subscription tiers, their prices, and the perks included in
     each tier. Read the descriptions to make sure you know what you’re buying!
   </li>
-  <li>
+  <li data-list-item-id="e47561e832a2ab77830ff3effc8523ed5">
     Choose a tier, then follow the instructions to pick a payment method and
     complete the purchase.
   </li>
-  <li>
+  <li data-list-item-id="e9548e9bcbff7f98796a91a34c38bdf7a">
     And that's it! A welcome message will pop up to show you the perks you have
     with the Server Subscription tier you purchased.
   </li>
@@ -109,16 +109,18 @@
   >
 </h1>
 <ol>
-  <li>
+  <li data-list-item-id="e128e1992280353cad248896a751fd4fb">
     Press on the cog wheel next to your username at the bottom right corner of
     the client to open up User Settings.
   </li>
-  <li>Select Subscriptions on the left side panel.</li>
-  <li>
+  <li data-list-item-id="ede0fe5755e1efd140f0a284aa22e6d61">
+    Select Subscriptions on the left side panel.
+  </li>
+  <li data-list-item-id="eff5df63d24f6fb4ec7535b879db4b39c">
     On this page, you should see your subscriptions, including memberships.
     Press on the Manage Membership button.
   </li>
-  <li>
+  <li data-list-item-id="e0efde22eebd7cae176d77c27a49d138d">
     The Server Subscription page will show your memberships across all servers
     and each memberships' costs and billing/renewal dates. Press on Cancel
     Subscription next to the membership you want to cancel and confirm your

@@ -257,7 +257,7 @@
 <h1 id="h_01KQZ3D7YNX1T79C7XEKF34EX3">Logitech G Discount  </h1>
 <div class="warn-box">
   <strong>Important:</strong> As of July 1, 2026, the KontrolFreek discount will
-  no longer be available.The good news? We're continuing to work on new
+  no longer be available. The good news? We're continuing to work on new
   discounts to make your Nitro experience even more valuable. Thank you for your
   continued feedback and support!
 </div>
@@ -265,6 +265,21 @@
   <strong>Important:</strong> To receive your code, you must use the desktop
   app. Eligibility conditions apply, see below for more information.
 </div>
+<p>Nitro members receive the following Logitech G discounts:</p>
+<ul>
+  <li data-list-item-id="e5d4e2bebb461ea920e680b1b233241f8">
+    <strong>30% off</strong> Logitech G products, available monthly (excludes
+    new releases and PRO series simulation line gear)
+  </li>
+  <li data-list-item-id="e1391ffa7524639a8c725bdbc0f827c8e">
+    <strong>5% off</strong> new releases (one-time use, limited to one use per
+    customer)
+  </li>
+  <li data-list-item-id="e116ccea5615fa1ae8491be6bad92c6da">
+    <strong>5% off</strong> PRO series simulation line gear (one-time use,
+    limited to one use per customer)
+  </li>
+</ul>
 <h1 id="h_01KQZ3D7YP220G7TKF2T48GD0R">How it Works</h1>
 <p>The following terms apply to this promotional offer:</p>
 <ul>
@@ -278,8 +293,7 @@
   <li data-list-item-id="e36711660d46868525ca4db91d6f488d0">
     For new products and PRO series simulation gear items, a 5% discount is
     available on new products for the first 6 months following a product's
-    release (limited to 1 use per customer). The PRO series simulation gear
-    discount is rolling out to all users in the upcoming days.
+    release (limited to 1 use per customer). 
   </li>
   <li data-list-item-id="e1951208c77703f2c1361c57079e61adf">
     <strong>Immediate availability</strong>: Codes become available to eligible
@@ -458,6 +472,7 @@
   </li>
 </ol>
 <h1 id="h_01KQZ3D7Z26A58ERQBDNY7TAWS">SteelSeries Discount</h1>
+<p>Users with Nitro will receive a monthly code for 20% off SteelSeries. </p>
 <div class="warn-box">
   <strong>Important:</strong> To receive your code, you must use the desktop
   app. Eligibility conditions apply, see below for more information.
@@ -467,14 +482,14 @@
 <ul>
   <li data-list-item-id="eb3dfe6e0e449b35605ace8a130d26ee1">
     <strong>Minimum purchase requirements</strong>: You must make a minimum
-    subtotal purchase of $20 to use your discount at SteelSeries. There is no
-    minimum purchase requirement for KontrolFreek.
+    subtotal purchase of $20 to use your discount at SteelSeries. 
   </li>
   <li data-list-item-id="ee47b91168a9178efa752a8fb9951e872">
     <strong>Code details and restrictions</strong>: Discount codes are valid on
     most items in each store, including all sale items, with no blackout dates.
     Please note that the SteelSeries code cannot be applied to the Arctis Nova
-    Elite, Blemished Boxes, and is limited to 3 items per order.
+    Elite, Artic Nova Omni, Blemished Boxes, bundles, and is limited to 3 items
+    per order. Stacks with other discounts.
   </li>
   <li data-list-item-id="eb4599139d40e8b8c75de397d2798e164">
     <strong>Immediate availability</strong>: Codes become available to eligible
@@ -576,22 +591,20 @@
   >
 </h4>
 <p>
-  3. Locate and select the <strong>SteelSeries</strong>
-  <strong>x KontrolFreek</strong> <strong>Discounts</strong> card under either
-  the <strong>NITRO REWARDS</strong> or the
+  3. Locate and select the <strong>SteelSeries Discount</strong> card under
+  either the <strong>NITRO REWARDS</strong> or the
   <strong>EXPLORE WHAT’S NEW</strong> section.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/40276842696471"
+    src="https://support.discord.com/hc/article_attachments/41636278421783"
     width="624"
-    height="593"
+    height="345"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01KQZ3D7ZB9S5FK5J7D25TF0FG">
   <span style="color: #666666"
-    > <strong>SteelSeries</strong> <strong>x KontrolFreek</strong>
-    <strong>Discounts</strong> Card</span
+    > <strong>SteelSeries</strong> <strong>Discount</strong> Card</span
   >
 </h4>
 <p>
@@ -600,9 +613,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/40276842698647"
-    width="320"
-    height="347"
+    src="https://support.discord.com/hc/article_attachments/41636278422807"
+    width="307"
+    height="323"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01KQZ3D7ZCE8Z1PCE34XVA2HZY">
@@ -627,24 +640,13 @@
 </h4>
 <h1 id="h_01KQZ3D7ZDB626YHGMEF6HB5GC">Using Your Discount Code</h1>
 <p>
-  After claiming your discount code, here's how to use it on the SteelSeries or
-  KontrolFreek website:
+  After claiming your discount code, here's how to use it on the SteelSeries
+  website:
 </p>
 <ol>
   <li data-list-item-id="e7017250b9970d56dfdb84d75129230d9">
-    Visit the<a
-      href="https://steelseries.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    Visit the<a href="https://steelseries.com">
       <span class="wysiwyg-underline">SteelSeries store</span></a
-    >
-    or<a
-      href="https://www.kontrolfreek.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <span class="wysiwyg-underline">KontrolFreek website</span></a
     >
   </li>
   <li data-list-item-id="e7607624af11d0770501c351c12865ba6">
@@ -826,13 +828,16 @@
     src="https://support.discord.com/hc/article_attachments/40276842703767"
     width="418"
     height="378"
-  /><img
-    src="https://support.discord.com/hc/article_attachments/40276858475543"
-    width="329"
-    height="462"
   />
 </p>
-<h4 id="h_01KQZ3D7ZN135ZXQMWX55ERK8M">
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/41636278422935"
+    width="260"
+    height="242"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KQZ3D7ZN135ZXQMWX55ERK8M">
   <span style="color: #666666">Unavailable Discount Code</span>
 </h4>
 <p><strong>Q: Why isn't my discount code working?</strong></p>
@@ -847,8 +852,8 @@
   > 
 </p>
 <p>
-  If you're experiencing issues with your SteelSeries or KontrolFreek discount
-  code, contact their support teams directly:
+  If you're experiencing issues with your SteelSeries discount code, contact
+  their support teams directly:
 </p>
 <ul>
   <li data-list-item-id="e6aad9f2a9c85ce514bf09dc3ef40561e">
@@ -859,17 +864,6 @@
       rel="noopener noreferrer"
       ><span class="wysiwyg-underline"
         >https://support.steelseries.com/hc/en-us</span
-      ></a
-    > 
-  </li>
-  <li data-list-item-id="eb4fe2261cc1d968d437b32c16c34efe8">
-    <strong>KontrolFreek Support:</strong>
-    <a
-      href="https://support.kontrolfreek.com/hc/en-us"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><span class="wysiwyg-underline"
-        >https://support.kontrolfreek.com/hc/en-us</span
       ></a
     > 
   </li>
