@@ -3175,6 +3175,11 @@
                 href="/application-directory"
                 class="link-footer top-new-link"
                 >App Directory</a
+              ><a
+                data-track="gift cards"
+                href="/gift-cards"
+                class="link-footer top-new-link"
+                >Gift Cards</a
               >
             </nav>
           </div>
