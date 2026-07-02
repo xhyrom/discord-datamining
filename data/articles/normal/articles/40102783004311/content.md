@@ -21,58 +21,119 @@
     >
   </p>
   <ul>
-    <li data-list-item-id="e6475083b55ffbf6094ba3de8163a3f0e">
-      <a href="#h_01KQJNEWVNAN7QH4CJD132QV71">What Are Game Shops?</a>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e6475083b55ffbf6094ba3de8163a3f0e"
+    >
+      <a href="#h_01KQJNEWVNAN7QH4CJD132QV71"
+        ><strong>What Are Game Shops?</strong></a
+      >
     </li>
-    <li data-list-item-id="e50cdeff2a32c4499a32947127ae71e6f">
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e50cdeff2a32c4499a32947127ae71e6f"
+    >
       <a href="#h_01KQJNEWVPG87A6MGGTS47408G"
-        >Where To Find In-Game Items On Discord</a
+        ><strong>Where To Find In-Game Items On Discord</strong></a
       >
       <ul>
-        <li data-list-item-id="e110480c84594088bc1822ddd713e5c5a">
-          <a href="#h_01KQJNEWVQH83B35TH0VEMYAGG">Through the Discord Shop</a>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e110480c84594088bc1822ddd713e5c5a"
+        >
+          <a href="#h_01KQJNEWVQH83B35TH0VEMYAGG"
+            ><strong>Through the Discord Shop</strong></a
+          >
         </li>
-        <li data-list-item-id="e4a920d607ce8fcf6b0056874bcf96685">
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e4a920d607ce8fcf6b0056874bcf96685"
+        >
           <a href="#h_01KQJNEWVT9ZGPJV5MMFXZ23JC"
-            >Through a Game's Official Server</a
+            ><strong>Through a Game's Official Server</strong></a
           >
         </li>
       </ul>
     </li>
-    <li data-list-item-id="ec099b4d67bb824e9d559ba4a25585a6c">
-      <a href="#h_01KQJNEWVWKKB83TQF6QZ2F91A">How to Purchase Items</a>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="ec099b4d67bb824e9d559ba4a25585a6c"
+    >
+      <a href="#h_01KQJNEWVWKKB83TQF6QZ2F91A"
+        ><strong>How to Purchase Items</strong></a
+      >
     </li>
-    <li data-list-item-id="e69e9cb74498e932561d06aebed3e09dd">
-      <a href="#h_01KQJNEWW2VWMMC9BEQRK4J0XZ">Gifting Items</a>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e69e9cb74498e932561d06aebed3e09dd"
+    >
+      <a href="#h_01KQJNEWW2VWMMC9BEQRK4J0XZ"><strong>Gifting Items</strong></a>
       <ul>
-        <li data-list-item-id="edd5541ea95e68000ee391f82f6466cd8">
-          <a href="#h_01KQJNEWW50ZGZ36FGRB0WA1WS">Other Ways to Gift</a>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="edd5541ea95e68000ee391f82f6466cd8"
+        >
+          <a href="#h_01KQJNEWW50ZGZ36FGRB0WA1WS"
+            ><strong>Other Ways to Gift</strong></a
+          >
         </li>
       </ul>
     </li>
-    <li data-list-item-id="e855e9449a676e0d13d3d9f70cf18e1b9">
-      <a href="#h_01KQJNEWW70FH3QE17RZP3TC2P">Frequently Asked Questions</a>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e855e9449a676e0d13d3d9f70cf18e1b9"
+    >
+      <a href="#h_01KQJNEWW70FH3QE17RZP3TC2P"
+        ><strong>Frequently Asked Questions</strong></a
+      >
       <ul>
-        <li data-list-item-id="e27d90fb3a69ed0723cad4a4ffadbf884">
-          <a href="#h_01KQJNEWW9VBQYCG8QCRDVHXQ8">Purchases and Refunds</a>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e27d90fb3a69ed0723cad4a4ffadbf884"
+        >
+          <a href="#h_01KQJNEWW9VBQYCG8QCRDVHXQ8"
+            ><strong>Purchases and Refunds</strong></a
+          >
         </li>
-        <li data-list-item-id="e90d6bf9a7fd81e7282c8cbf48583376b">
-          <a href="#h_01KQJNEWWC2D0G97YGZRCAA2S1">Pricing</a>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e90d6bf9a7fd81e7282c8cbf48583376b"
+        >
+          <a href="#h_01KQJNEWWC2D0G97YGZRCAA2S1"><strong>Pricing</strong></a>
         </li>
-        <li data-list-item-id="e945b703f2cd278b4f44b3c321aff90cc">
-          <a href="#h_01KQJNEWWD64M48SSGRQ8V2ZYD">Gifting</a>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e945b703f2cd278b4f44b3c321aff90cc"
+        >
+          <a href="#h_01KQJNEWWD64M48SSGRQ8V2ZYD"><strong>Gifting</strong></a>
         </li>
-        <li data-list-item-id="e745d686c9c8385ff586cc6cb71bc8a96">
-          <a href="#h_01KQJNEWWEEHM4W2H100GX74HV">Account Linking</a>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e745d686c9c8385ff586cc6cb71bc8a96"
+        >
+          <a href="#h_01KQJNEWWEEHM4W2H100GX74HV"
+            ><strong>Account Linking</strong></a
+          >
         </li>
-        <li data-list-item-id="e731f650a21013bf0fbffd7dc6239a8a4">
-          <a href="#h_01KQJNEWWFCGTTPJRND5GPAHZE">General</a>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e731f650a21013bf0fbffd7dc6239a8a4"
+        >
+          <a href="#h_01KQJNEWWFCGTTPJRND5GPAHZE"><strong>General</strong></a>
         </li>
-        <li data-list-item-id="e82bd135e324a3b48ce100a678fc88666">
-          <a href="#h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Shop</a>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e82bd135e324a3b48ce100a678fc88666"
+        >
+          <a href="#h_01KQJNEWWGZ6CB48FP9VBE2MD1"
+            ><strong>Marvel Rivals Shop</strong></a
+          >
         </li>
-        <li data-list-item-id="ebc0d1a01065e6a5d963e9fdd717864cc">
-          <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Shop</a>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ebc0d1a01065e6a5d963e9fdd717864cc"
+        >
+          <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E"><strong>Rust Shop</strong></a>
         </li>
       </ul>
     </li>
@@ -276,26 +337,51 @@
   >
 </p>
 <ul>
-  <li data-list-item-id="e15a3fc956d5370fbc56abadcc01531c0">
-    <a href="#h_01KQJNEWW9VBQYCG8QCRDVHXQ8">Purchases and Refunds</a>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e15a3fc956d5370fbc56abadcc01531c0"
+  >
+    <a href="#h_01KQJNEWW9VBQYCG8QCRDVHXQ8"
+      ><strong>Purchases and Refunds</strong></a
+    >
   </li>
-  <li data-list-item-id="ea96eb46b127fd03ef4cb984fbdbc7821">
-    <a href="#h_01KQJNEWWC2D0G97YGZRCAA2S1">Pricing</a>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="ea96eb46b127fd03ef4cb984fbdbc7821"
+  >
+    <a href="#h_01KQJNEWWC2D0G97YGZRCAA2S1"><strong>Pricing</strong></a>
   </li>
-  <li data-list-item-id="e12efe62dd12d24021c139612a20ea50f">
-    <a href="#h_01KQJNEWWD64M48SSGRQ8V2ZYD">Gifting</a>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e12efe62dd12d24021c139612a20ea50f"
+  >
+    <a href="#h_01KQJNEWWD64M48SSGRQ8V2ZYD"><strong>Gifting</strong></a>
   </li>
-  <li data-list-item-id="eafd255f0d4fb1789177f5ff873e8ebcb">
-    <a href="#h_01KQJNEWWEEHM4W2H100GX74HV">Account Linking</a>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="eafd255f0d4fb1789177f5ff873e8ebcb"
+  >
+    <a href="#h_01KQJNEWWEEHM4W2H100GX74HV"><strong>Account Linking</strong></a>
   </li>
-  <li data-list-item-id="e1e9ea893ce950e1168575a1185a02d82">
-    <a href="#h_01KQJNEWWFCGTTPJRND5GPAHZE">General</a>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e1e9ea893ce950e1168575a1185a02d82"
+  >
+    <a href="#h_01KQJNEWWFCGTTPJRND5GPAHZE"><strong>General</strong></a>
   </li>
-  <li data-list-item-id="e0bf14813999224f43e5fa8a43b9956e7">
-    <a href="#h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Shop</a>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e0bf14813999224f43e5fa8a43b9956e7"
+  >
+    <a href="#h_01KQJNEWWGZ6CB48FP9VBE2MD1"
+      ><strong>Marvel Rivals Shop</strong></a
+    >
   </li>
-  <li data-list-item-id="eac29e8a302cace62ee9288a82fbd8248">
-    <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Shop</a>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="eac29e8a302cace62ee9288a82fbd8248"
+  >
+    <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E"><strong>Rust Shop</strong></a>
   </li>
 </ul>
 <h2 id="h_01KQJNEWW9VBQYCG8QCRDVHXQ8">Purchases and Refunds</h2>
@@ -450,6 +536,24 @@
   >.
 </p>
 <h2 id="h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Game Shop</h2>
+<div class="mega-box">
+  Offer: <strong>From</strong> July 2, (11 AM PT)<strong> through</strong> July
+  16, (11 AM PT)
+  <strong
+    >all players can earn Discord Orbs on purchases of official Rust in-game
+    items in the Rust Game Shop on Discord, including gifts purchased for other
+    players. The amount of Orbs earned will vary based on the purchase
+    amount. </strong
+  ><br /><strong
+    >For more information about Discord Orbs, including how to use and redeem
+    them, please see the </strong
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Orbs FAQ</a
+  >.
+</div>
 <p>
   <strong
     >Q: I'm having trouble linking my Rust account to receive my item. What
@@ -502,3 +606,4 @@
     ><span class="wysiwyg-underline">Rust Shop on Discord</span></a
   >. 
 </p>
+<p> </p>
