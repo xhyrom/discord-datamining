@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8606300002](https://discord.com/jobs/8606300002)
 
-**Updated At:** Tue, 30 Jun 2026 16:52:39 GMT
+**Updated At:** Thu, 02 Jul 2026 18:23:56 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are seeking an experienced Safety Policy Lead to own Discord's youth safety policy portfolio. As a member of the Safety Policy team within Product Policy, you will drive policy development and lifecycle management across the full spectrum of youth safety harms: child sexual abuse material, grooming, and child exploitation. This role requires deep domain expertise, strong regulatory literacy, and the ability to translate complex child safety requirements into enforceable policy and durable implementation.
@@ -26,7 +26,7 @@ Own the feedback loop from implementation and QA back to your policy work. When 
 Collaborate with civil society, NCMEC, ICAC, and other external child safety organizations. Represent Discord externally in this domain with credibility and consistency.
 Deliver rapid policy responses to emerging child safety threats, including cross-functional coordination during incidents and regulatory notifications where applicable.
 Own at least one functional domain area for the Safety Policy team beyond your harm portfolio. Current team needs include policy implementation systems, AI/LLM governance, or safety-by-design frameworks.
-Eepected travel: 15%
+Expected travel: 15%
 
 What you should have
 5 or more years of experience in trust and safety, policy development, or child safety roles at a technology platform or civil society organization focused on child protection.Deep expertise in youth safety: CSAM, NCMEC/ICAC frameworks, CSAM hash-matching systems, grooming and solicitation patterns, age assurance methodologies, and the regulatory landscape governing minors online.Direct experience with KOSA, COPPA, DSA child safety provisions, and/or the Online Safety Act. Regulatory literacy is required, not a bonus.Proven ability to write policy that survives implementation: clear enforcement criteria, defined classification hierarchies, and usable edge case guidance.Experience working with ML and automation teams to translate policy criteria into detection signals. You do not need to write the model, but you need to know what the model needs from you.Comfort making decisions under ambiguity and pressure.Strong written and verbal communication for audiences ranging from frontline moderators to regulators to executive leadership.Bachelor's degree or equivalent professional experience.
