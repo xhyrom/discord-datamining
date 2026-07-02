@@ -47,6 +47,9 @@
         <li data-list-item-id="e9314a7261d6509bcb5e84f4fae7765c5">
           <a href="#h_01KKFEK9B0VYMZ512MCDDSYBVY">Orbs Badge</a>
         </li>
+        <li data-list-item-id="ee0eebedf1b6bd0658b8cfc2c943c50fe">
+          <a href="#h_01KWJ9Z0E300ZR2Z4BV4EV6KQJ">Legacy Username Badge</a>
+        </li>
       </ul>
     </li>
     <li data-list-item-id="e7d9c7059a9a88c6bbc478837b71afe60">
@@ -103,24 +106,30 @@
   </ul>
 </div>
 <div class="exp-box">
-  <strong>Important:</strong> Gifting Badge is currently an experiment available
-  to select users. Every gift you've ever sent counts toward your badge, and it
-  levels up the more you gift
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360020877112-Nitro-Gifting"
-    >Nitro</a
-  >
-  or items from the
-  <a
-    href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ#h_01J4T4Z6G3GCXP9S76GKGBR98G"
-    >Shop</a
-  > <br /><img
-    class="center-image"
-    src="https://support.discord.com/hc/article_attachments/40923306466199"
-    alt="Gifting Badge evolution"
-    width="359"
-    height="386"
-  />
+  <p>
+    <strong>Important:</strong> Gifting Badge is currently an experiment
+    available to select users. Every gift you've ever sent counts toward your
+    badge, and it levels up the more you gift
+    <a
+      href="https://support.discord.com/hc/en-us/articles/360020877112-Nitro-Gifting"
+      >Nitro</a
+    >
+    or items from the
+    <a
+      href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ#h_01J4T4Z6G3GCXP9S76GKGBR98G"
+      >Shop</a
+    >.
+  </p>
+  <figure class="wysiwyg-image">
+    <img
+      class="center-image"
+      style="aspect-ratio: 359/386"
+      src="https://support.discord.com/hc/article_attachments/40923306466199"
+      alt="Gifting Badge evolution"
+      width="359"
+      height="386"
+    />
+  </figure>
 </div>
 <h1 class="wysiwyg-text-align-left" id="h_01GM67J1C84KT7YPDK0GP3M2PC">
   <strong>Common Profile Badges</strong>
@@ -253,11 +262,79 @@
     ><span class="wysiwyg-underline"
       >Discord Quests FAQ Help Center article</span
     ></a
-  >.<br /><span style="color: #434343"
-    ><strong>Tip: </strong>Once purchased with Orbs, the Orbs badge cannot be
+  >.
+</p>
+<div class="info-box">
+  <span style="color: #434343"
+    ><strong>Note: </strong>Once purchased with Orbs, the Orbs badge cannot be
     removed. </span
   >
+</div>
+<h2 id="h_01KWJ9Z0E300ZR2Z4BV4EV6KQJ">Legacy Username Badge</h2>
+<p class="wysiwyg-text-align-center">
+  <img
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 500/155; width: 80.7%"
+    src="https://support.discord.com/hc/article_attachments/41675323826583"
+    width="500"
+    height="155"
+  />
 </p>
+<p>
+  The <strong>Legacy Username</strong> badge lets other users know that you've
+  kept your old username and discriminator. You can learn more about the badge
+  <a
+    href="https://support.discord.com/hc/en-us/articles/12620128861463-New-Usernames-Display-Names"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >.
+</p>
+<div class="tip-box">
+  <p>
+    <span style="color: #434343"
+      ><strong>Tip</strong>: To remove the Legacy Username badge, follow the
+      steps for your platform below. Some users may not see the toggle on
+      desktop, if that's the case, use the mobile steps instead.</span
+    >
+  </p>
+  <p>
+    <span style="color: #434343"><strong>Desktop</strong>:</span>
+  </p>
+  <p>
+    <span style="color: #434343"
+      >1. Go to <strong>User Settings &gt; Profiles</strong>.</span
+    >
+  </p>
+  <p>
+    <span style="color: #434343"
+      >2. Within the <strong>User Profile</strong> tab, scroll down and turn off
+      the <strong>Legacy Username Badg</strong>e toggle.</span
+    >
+  </p>
+  <p>
+    <span style="color: #434343"><strong>Mobile</strong>:</span>
+  </p>
+  <p>
+    <span style="color: #434343">1. Tap the </span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/40953848660759-You-Bar-FAQ"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong><span class="wysiwyg-underline">You </span></strong
+      ><span class="wysiwyg-underline">bar</span></a
+    ><span style="color: #434343"> at the bottom of the app.</span>
+  </p>
+  <p>
+    <span style="color: #434343">2. Select <strong>Edit Profile</strong>.</span>
+  </p>
+  <p>
+    <span style="color: #434343"
+      >3. Scroll down to the <strong>Legacy</strong> <strong>Username</strong>
+      <strong>Badge</strong> toggle and disable it.</span
+    >
+  </p>
+</div>
 <h1 class="wysiwyg-text-align-left" id="h_01GM67JVQ0MCMWA9MFD9FVF9F6">
   <strong>Rare Badges</strong>
 </h1>
@@ -461,3 +538,5 @@
 <p><strong>This badge is no longer obtainable.</strong></p>
 <p> </p>
 <p><br /> </p>
+<p> </p>
+<p> </p>
