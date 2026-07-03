@@ -1,6 +1,6 @@
 <p>
   Until <strong>July 14, 2026</strong>, eligible Discord users who subscribe to
-  Nitro for the first time will receive 10,000 Orbs! Read below to learn more.
+  Nitro will receive 10,000 Orbs! Read below to learn more.
 </p>
 <div class="toc-box">
   <p>
@@ -41,8 +41,14 @@
     rel="noopener noreferrer"
     >Discord Nitro</a
   >
-  (Monthly or Yearly) as a new subscriber through the Discord desktop app will
-  receive 10,000 Orbs! You can learn more about Discord Orbs here.
+  (Monthly or Yearly) through the Discord desktop app will receive 10,000 Orbs!
+  You can learn more about Discord Orbs
+  <a
+    href="https://support.discord.com/hc/en-us/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.
 </p>
 <p>
   <strong>Eligibility</strong>: This promotion is available to a limited number
@@ -55,11 +61,15 @@
 </p>
 <h1 id="h_01KW0N3D0WGH4AV6GZBXJEVJBM">What is Discord Nitro?</h1>
 <p>
-  <span id="docs-internal-guid-be5df991-7fff-8d7c-985d-df3750a66ec5"
-    >Discord Nitro is our subscription plan that unlocks a world of perks
-    that’ll make your time on Discord as fun as ever! Personalize and enhance
-    your experience with popular perks like HD streaming, 500MB file uploads,
-    profile and avatar customizations, and more:</span
+  <a href="https://discord.com/nitro" target="_blank" rel="noopener noreferrer"
+    ><span id="docs-internal-guid-be5df991-7fff-8d7c-985d-df3750a66ec5"
+      >Discord Nitro</span
+    ></a
+  ><span id="docs-internal-guid-be5df991-7fff-8d7c-985d-df3750a66ec5">
+    is our subscription plan that unlocks a world of perks that’ll make your
+    time on Discord as fun as ever! Personalize and enhance your experience with
+    popular perks like HD streaming, 500MB file uploads, profile and avatar
+    customizations, and more:</span
   >
 </p>
 <ul>
@@ -222,7 +232,7 @@
 </figure>
 <h4 class="wysiwyg-text-align-center" id="h_01KW0P3G10CR0C2CAYPDQYQ3NH">
   A notification to let you know that the 10k orbs offer was added to your
-  wallet in Shop after subscribing to Nitro for the first time.
+  wallet in Shop after subscribing to Nitro.
 </h4>
 <h1 id="h_01KW0P6VY2QXQ4BQT0Y0YQBZZH">Frequently Asked Questions</h1>
 <p><strong>Q: Why don't I see this offer in my Discord app?</strong></p>
