@@ -7,13 +7,14 @@
     "dirt",
     "datadog",
     "hivemind-api-stg",
+    "api-deploys",
     "dirt-stg",
     "experiment-readouts",
-    "api-deploys",
     "smite",
     "access-stg",
-    "backstage",
     "looker",
+    "backstage",
+    "keysmith-stg",
     "design",
     "ai-usage",
     "teleport",
@@ -76,5 +77,5 @@
     "dbt-docs",
     "airflow-data-prd"
   ],
-  "subdomain_count": 75
+  "subdomain_count": 76
 }
