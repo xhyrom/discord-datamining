@@ -2,6 +2,18 @@
   Until <strong>July 14, 2026</strong>, eligible Discord users who subscribe to
   Nitro will receive 10,000 Orbs! Read below to learn more.
 </p>
+<div class="info-box">
+  <p>
+    This Nitro Orbs Offer is only available to
+    <em><strong>a limited number of eligible users</strong></em
+    >. If you don't see any promotion details on your Nitro tab in the desktop
+    app or browser, it is because you do not meet the eligibility criteria. 
+  </p>
+  <p>
+    If you are not eligible for the promotion, the Orbs will not be applied to
+    your account.
+  </p>
+</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
