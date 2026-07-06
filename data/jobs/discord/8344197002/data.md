@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8344197002](https://discord.com/jobs/8344197002)
 
-**Updated At:** Thu, 04 Jun 2026 15:12:38 GMT
+**Updated At:** Mon, 06 Jul 2026 18:21:28 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.As a Staff Engineer on the Safety Experience team, you'll be a technical leader who autonomously delivers real business impact on large, ambiguous projects. You'll design and build product features and systems that prevent harmful activities at scale while ensuring regulatory compliance. This role requires both deep technical expertise and the ability to be a force multiplier for your team: driving engineering excellence, making solid technical decisions, and remaining a top code contributor. You'll work cross-functionally to shape the technical direction of safety initiatives that protect hundreds of millions of Discord users. This role reports to the Engineering Manager of Safety Experience.
