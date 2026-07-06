@@ -1,0 +1,264 @@
+.container_fc0f77 {
+  margin-block-end: var(--space-16);
+}
+.surface__5b95d {
+  background: var(--background-base-lower);
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+.nagbarOverride__5b95d {
+  width: 100%;
+}
+.promotionSelector__5b95d {
+  border-inline-end: 1px solid var(--border-subtle);
+  margin-inline-end: var(--space-12);
+  padding-inline-end: var(--space-12);
+  width: 200px;
+}
+.chatInputSurface__5b95d {
+  background: var(
+    --background-gradient-highest,
+    var(--chat-background-default)
+  );
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+:where(.card_b5dd01) {
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+  --__card-background-color: transparent;
+  --__card-border-color: transparent;
+  --__card-color: var(--text-default);
+  background-color: var(--__card-background-color);
+  border-color: var(--__card-border-color);
+  border-radius: var(--radius-sm);
+  color: var(--__card-color);
+}
+:where(.card_b5dd01) a:hover {
+  text-decoration: underline;
+}
+.cardBrand_b5dd01 a,
+.cardDanger_b5dd01 a,
+.cardSuccess_b5dd01 a,
+.cardWarning_b5dd01 a {
+  font-weight: var(--font-weight-bold);
+}
+.cardDanger_b5dd01 {
+  --__card-background-color: var(--background-feedback-critical);
+  --__card-color: var(--text-feedback-critical);
+  --__card-border-color: var(--border-feedback-critical);
+}
+.cardWarning_b5dd01 {
+  --__card-background-color: var(--background-feedback-warning);
+  --__card-color: var(--text-feedback-warning);
+  --__card-border-color: var(--background-feedback-warning);
+}
+.cardSuccess_b5dd01 {
+  --__card-background-color: var(--background-feedback-positive);
+  --__card-color: var(--text-feedback-positive);
+  --__card-border-color: var(--background-feedback-positive);
+}
+.cardBrand_b5dd01 {
+  --__card-background-color: var(--background-brand);
+  --__card-color: var(--text-overlay-dark);
+  --__card-border-color: var(--background-brand);
+}
+.cardOutline_b5dd01 {
+  --__card-background-color: transparent;
+}
+.cardBrand_b5dd01 a,
+.cardDanger_b5dd01 a,
+.cardSuccess_b5dd01 a,
+.cardWarning_b5dd01 a {
+  color: var(--white);
+}
+.cardPrimary_b5dd01 {
+  --__card-background-color: var(--card-background-default);
+  --__card-border-color: var(--border-subtle);
+  --__card-color: var(--text-default);
+}
+.elevated__3f12a {
+  box-shadow:
+    0 2px 10px 0 hsl(var(--primary-900-hsl) / 0.2),
+    0 0 0 1px var(--primary-700);
+}
+.button__3f12a {
+  margin: 12px auto 20px;
+  width: 85%;
+}
+.buttonTitle__3f12a {
+  margin: 20px 20px 0;
+  text-align: center;
+}
+.text__3f12a {
+  text-align: start;
+}
+.buttonLogin__3f12a {
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+}
+.card__3f12a {
+  background: var(--primary-700);
+  border-color: var(--primary-700);
+  margin: 16px;
+}
+.cardContents__3f12a {
+  margin: 0 auto;
+  max-width: 400px;
+}
+.cardAccentLeft__3f12a {
+  inset-inline-start: 0;
+}
+.cardAccentLeft__3f12a,
+.cardAccentRight__3f12a {
+  bottom: 0;
+  opacity: 0.3;
+  position: absolute;
+}
+.cardAccentRight__3f12a {
+  inset-inline-end: 0;
+}
+.card_d07961 {
+  line-height: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.nickError_d07961,
+.reset_d07961 {
+  margin-top: 8px;
+}
+@value smallMobileBreakpoint: 640px;
+.container_d69818 {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.guildBadge_d69818 {
+  flex-shrink: 0;
+  height: 25px;
+  margin-inline-end: 6px;
+  position: relative;
+  width: 25px;
+}
+.appIcon_d69818 {
+  display: inline-block;
+}
+.appIconSize_d69818 {
+  height: 100px;
+  width: 100px;
+}
+.appIcon_d69818,
+.avatar_d69818,
+.guildIcon_d69818 {
+  border-radius: 16px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.title_d69818 {
+  align-items: center;
+  color: var(--text-strong);
+  display: flex;
+  font-weight: var(--font-weight-semibold);
+  justify-content: center;
+  margin-top: 4px;
+}
+@media (min-height: 640px) {
+  .title_d69818 {
+    margin-top: 8px;
+  }
+}
+.activityCount_d69818 {
+  margin-top: 4px;
+}
+@media (min-height: 640px) {
+  .activityCount_d69818 {
+    margin-top: 8px;
+  }
+}
+.directInviteSubTitle_d69818 {
+  margin-top: 8px;
+}
+.guildContainer_d69818 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.appIn_d69818 {
+  margin: 4px 0;
+}
+.inviteJoinContainer_d69818 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.inviterIconWrapper_d69818 {
+  padding-inline-end: 8px;
+}
+.inviteJoinText_d69818 {
+  color: var(--text-default);
+}
+.container__76394 {
+  border-radius: 20px;
+  filter: saturate(var(--saturation-factor, 1));
+  overflow: visible;
+  position: relative;
+}
+.glowAnimation__76394 {
+  filter: blur(var(--custom-blur-amount)) saturate(var(--saturation-factor, 1))
+    hue-rotate(var(--custom-hue-rotate, 0deg));
+  height: calc(100% + var(--custom-glow-amount) * 2 + 2px);
+  inset-inline-start: calc(var(--custom-glow-amount) * -1 - 1px);
+  opacity: var(--custom-glow-opacity);
+  pointer-events: none;
+  position: absolute;
+  top: calc(var(--custom-glow-amount) * -1 - 1px);
+  width: calc(100% + var(--custom-glow-amount) * 2 + 2px);
+}
+.premiumTrialBadge__4c1e4 {
+  align-items: center;
+  border-radius: var(--radius-md);
+  color: var(--text-strong);
+  display: flex;
+  gap: 4px;
+  margin-inline-start: auto;
+  padding: 1px 6px;
+  pointer-events: all;
+  text-transform: uppercase;
+}
+.premiumOfferUnackedBadge__4c1e4 {
+  background: linear-gradient(90deg, #db00a4, #5968f0);
+}
+.premiumOfferWithTimerUnacknowledgedBadge__4c1e4 {
+  background-image: linear-gradient(
+    to right,
+    var(--premium-tier-2-purple-for-gradients),
+    var(--premium-tier-2-pink-for-gradients)
+  );
+}
+.premiumOfferWithTimerAcknowledgedBadge__4c1e4 {
+  background-color: var(--background-mod-strong);
+}
+.premiumTrialBadgeSelected__4c1e4 {
+  background-color: var(--background-base-lower);
+}
+.premiumOfferBadgeCopy__4c1e4 {
+  color: var(--white);
+}
+.theme-light .premiumTrialBadge__4c1e4 {
+  background-color: var(--background-base-lowest);
+}
+.theme-light .premiumTrialBadgeSelected__4c1e4 {
+  background-color: var(--background-base-lower);
+}
+
+/*# sourceMappingURL=87761.4130410b95d553c8.css.map*/
