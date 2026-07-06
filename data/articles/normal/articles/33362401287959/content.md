@@ -1,3 +1,7 @@
+<div class="info-box">
+  <strong>Note:</strong> We're currently testing a few additional age assurance
+  methods, so you may see more options than what’s listed below.
+</div>
 <p>
   The
   <strong>United Kingdom's Online Safety Act</strong> (“<strong>OSA</strong>”)
@@ -223,7 +227,9 @@
       ></a
     >
     are enabled by default to help you screen out unwanted DMs from your DM
-    list. Turning off Message Requests will require age assurance.
+    list. DMs that you receive from someone that isn’t your friend will go into
+    a separate Message Requests tab for you to review. Turning off Message
+    Requests will require age assurance.
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
@@ -240,7 +246,26 @@
   >
 </h4>
 <ul>
-  <li data-list-item-id="e464bc2a80442263a6f15f994ec8b1ab8">
+  <li data-list-item-id="ed5c9214baaa32fccc00835e2c80ad54b">
+    <p>
+      <strong>Message Requests </strong>limit what content you can see before
+      you accept the message request in order to respond. You can preview a
+      message in Message Requests, but images or other files will not be visible
+      or accessible and any links will be shown as plain text that can’t be
+      selected. 
+    </p>
+    <p class="wysiwyg-text-align-center">
+      <img
+        src="https://support.discord.com/hc/article_attachments/41748808493591"
+        width="601"
+        height="426"
+      />
+    </p>
+    <h4 class="wysiwyg-text-align-center" id="h_01KWFVAQ09488139RFFQ363JM5">
+      <span style="color: #666666">Example of a Message Request in DMs</span>
+    </h4>
+  </li>
+  <li data-list-item-id="eb417f9a3a52eae89d677acb0a0f44381">
     <strong>Your Activity status </strong>by default will not be shared to large
     servers with 200+ members. You can update this setting at any time — age
     assurance is not required to do so.
@@ -263,7 +288,12 @@
   >
 </h4>
 <ul>
-  <li data-list-item-id="ea930167ce5da4f1d992eec42a02fbff4">
+  <li data-list-item-id="e20a47fd251ed7c48f7aa59aed1390825">
+    Once you accept a message request, the conversation will move to your DM
+    list and content like images, links, or files will be accessible according
+    to your existing DM permissions. 
+  </li>
+  <li data-list-item-id="e1d6c90edadef0a545ae9a68fe4b9d642">
     <strong
       >You will be alerted before accepting a friend request from an unfamiliar
       user. </strong
