@@ -515,7 +515,7 @@
       "education": "education_optional",
       "internal_job_id": 6396082002,
       "location": {
-        "name": "San Francisco Bay Area"
+        "name": "San Francisco Bay Area or Remote"
       },
       "metadata": [
         {
@@ -532,7 +532,7 @@
         }
       ],
       "id": 8502342002,
-      "updated_at": "2026-06-16T16:05:36-04:00",
+      "updated_at": "2026-07-06T12:07:02-04:00",
       "requisition_id": "R-107250",
       "title": "Engineering Manager, Revenue",
       "company_name": "Discord",
