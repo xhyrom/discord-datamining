@@ -31,6 +31,9 @@
       </ul>
     </li>
     <li data-list-item-id="e4d53d7c54489c934e657a0a3526dba4f">
+      <a href="#h_01KTS9WJBXTSRY6AS3SKG23C8W">Profile Privacy for Teens</a>
+    </li>
+    <li data-list-item-id="e8e84de04200f70a382c9f6782b968d15">
       <a href="#h_01KP4CPKZQ986S2HQCHHE3DKVC"
         >How Does This Affect Activity Sharing Setting</a
       >
@@ -41,10 +44,6 @@
   </ul>
 </div>
 <h1 id="h_01KP4CPKZ68GRBDPRS1F6MK4KH">What is Profile Privacy Setting?</h1>
-<div class="warn-box">
-  <strong>Important:</strong> Profile Privacy setting is currently being tested
-  and may not be available to all users.
-</div>
 <p>
   Profile Privacy setting lets you control who sees your profile information.
   When enabled, certain details are hidden from anyone who isn't a friend or
@@ -147,8 +146,7 @@
       target="_blank"
       rel="noopener noreferrer"
       ><span class="wysiwyg-underline">Server tag</span></a
-    >
-    (when you share the same server)
+    > 
   </li>
   <li data-list-item-id="e689654a444da17a37d7cf7fb59e1ce70">Account age</li>
   <li data-list-item-id="e10e903a4e70ff23c5a0c159ccbb8012d">
@@ -217,45 +215,54 @@
   will be automatically saved.
 </p>
 <h2 id="h_01KP4CPKZJ1V4150T3V7XN5A2H">Mobile</h2>
-<p>1. Tap on your <strong>avatar</strong> in the bottom-right corner.</p>
 <p>
-  2. Press on the cogwheel [<img
-    src="https://support.discord.com/hc/article_attachments/39722756283799"
-    width="20"
-    height="20"
-  />] in the top-right corner.
+  1. Tap
+  <a
+    href="https://support.discord.com/hc/en-us/articles/40953848660759-You-Bar-FAQ"
+    ><span class="wysiwyg-underline">You Bar</span></a
+  >
+  at the bottom of the screen.
+</p>
+<p>2. Your profile will open, showing your avatar, username, and status.</p>
+<p>
+  3. To access <strong>Settings</strong>, tap the
+  <strong>cogwheel icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/41130774933399"
+    width="24"
+    height="24"
+  />] in the upper-right corner of your profile. 
 </p>
 <p>
-  3. Navigate to the <strong>Data &amp; Privacy</strong> and then scroll down
-  until you see <strong>Profile Privacy setting</strong>.
+  4. Navigate to <strong>Data &amp; Privacy</strong> and then scroll down until
+  you see <strong>Profile Privacy setting</strong>.
 </p>
-<p>4. Here you can choose between the following options:</p>
+<p>5. Here you can choose between the following options:</p>
 <ul>
-  <li data-list-item-id="e2c13d251bc6802999244ffdd4f4e1541">
+  <li data-list-item-id="ee4ceb1b28944ff9a74c1b2e990bc2a35">
     <strong>Friends &amp; All Servers: </strong>Your full profile will be
-    visible to your friends and any servers you join.
+    visible to your friends and members of any servers you join.
   </li>
-  <li data-list-item-id="e1a76102c2b0785afcf117be6a1caace2">
-    <strong>Friends &amp; Small Server Only: </strong>Your profile will be
-    visible to all friends and any servers you’re in that have 200 or less
-    members.
+  <li data-list-item-id="ecda6b750a8f33aac24f59f22288f21e3">
+    <strong>Friends &amp; Small Servers Only: </strong>Your full profile will be
+    visible to your friends and members of any servers you join with 200 or
+    fewer members.
   </li>
-  <li data-list-item-id="ed3a72eb9d85806face014470fe4fe1d0">
+  <li data-list-item-id="e56376e052734eccce6326ecd984bd704">
     <strong>Friends Only:</strong> Your profile will be visible to your friends
     only.
   </li>
 </ul>
 <p>
-  5. Tap on the setting you’d like to choose and then navigate out of your
-  <strong>User Settings</strong> to save.<br /> 
+  6. Tap on the setting you’d like to choose and then navigate out of your
+  <strong>Settings</strong> to save.
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #666666"
     ><img
       class="wysiwyg-image-resized"
-      style="aspect-ratio: 720/1562; width: 42.01%"
-      src="https://support.discord.com/hc/article_attachments/39722732333719"
-      alt="private_profiles_mobile.gif"
+      style="aspect-ratio: 720/1562; width: 38.23%"
+      src="https://support.discord.com/hc/article_attachments/41130736632855"
+      alt="profile_privacy_mobile.gif"
       width="720"
       height="1562"
   /></span>
@@ -263,6 +270,37 @@
 <h4 class="wysiwyg-text-align-center" id="h_01KP4CPKZQXD3DK280Q8QKT75R">
   <span style="color: #666666">Profile Privacy setting on mobile</span>
 </h4>
+<h1 id="h_01KTS9WJBXTSRY6AS3SKG23C8W">Profile Privacy for Teens</h1>
+<p>
+  If you're a teen, your Profile Privacy setting comes pre-configured based on
+  your region. These starting settings are designed to give you privacy
+  protections right away, which you can change anytime. No age assurance is
+  needed to update this setting.
+</p>
+<p>
+  <strong>Teens in the UK, Brazil, and Australia:</strong> Teen accounts in
+  these regions  start with their profile set to <strong>Friends Only</strong>.
+  This means only confirmed friends can see your full profile details.
+</p>
+<p>
+  <strong>Teens everywhere else:</strong> Teen accounts in all other regions
+  start with <strong>Friends &amp; Small Servers</strong>. Your profile is
+  visible to friends and anyone in your servers with 200 or fewer members.
+</p>
+<p>
+  <strong>Adults (all regions):</strong> Adult accounts start with
+  <strong>Friends &amp; All Servers</strong> everywhere.
+</p>
+<div class="info-box">
+  <strong>Note:</strong> You're always in control. You can update your Profile
+  Privacy setting whenever you like in
+  <strong>User Settings &gt; Data &amp; Privacy &gt; Profile Privacy</strong>.
+  No
+  <a
+    href="https://support.discord.com/hc/en-us/articles/38332670254231-Age-Assurance-Update-FAQ"
+    ><span class="wysiwyg-underline">age assurance</span></a
+  ><span style="color: #434343"> is required to make changes.</span>
+</div>
 <h1 id="h_01KP4CPKZQ986S2HQCHHE3DKVC">
   How Does This Affect Activity Sharing Setting
 </h1>
@@ -342,3 +380,4 @@
   and mutual server info stay visible no matter what.
 </p>
 <p><br /> </p>
+<p> </p>

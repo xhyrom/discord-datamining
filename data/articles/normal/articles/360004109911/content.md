@@ -8,13 +8,6 @@
   <strong>Privacy &amp; Safety </strong>&gt;
   <strong>How We Use Your Data</strong>. 
 </p>
-<div class="warn-box">
-  <strong>Important:</strong> Profile Privacy setting is currently an experiment
-  available to some users. You can learn more about this experiment in this
-  <a href="https://support.discord.com/hc/en-us/articles/38859942749463"
-    >Help Center article</a
-  >.
-</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/35034698685591"
@@ -47,6 +40,14 @@
       target="_blank"
       rel="noopener noreferrer"
       >Data Used for Sponsored Content</a
+    >
+  </li>
+  <li data-list-item-id="ee3b8a2ef9dff50b7f355eea140833287">
+    <a
+      href="https://support.discord.com/hc/en-us/articles/38859942749463-Profile-Privacy-Setting-on-Discord"
+      ><span class="wysiwyg-underline"
+        >Profile Privacy Setting on Discord</span
+      ></a
     >
   </li>
 </ul>

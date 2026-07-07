@@ -247,69 +247,78 @@
 </p>
 <h2 id="h_01HTJA8QV5H72HKXSNDXME2NAS">Global Settings</h2>
 <p>
-  In your global settings, you can control whether
-  <span id="docs-internal-guid-7ef7295c-7fff-9316-a504-ae87397e3212"
-    >detectable games or applications that support rich presence are shown</span
-  ><span id="docs-internal-guid-7434bd74-7fff-ebef-f9c5-bf5a5eeedf33">
-    to others, regardless of whether they’re friends or not.</span
-  >
+  In your global settings, you can control whether any activity of any kind is
+  shown to others, regardless of whether they’re friends or not. 
 </p>
 <p>
-  1. Tap on <strong>cogwheel</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/22536161088791"
+  1. Select the <strong>cogwheel</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/41130737123991"
     width="23"
     height="24"
   />] next to your Discord username to access your
   <strong>User Settings</strong>.
 </p>
 <p>
-  2. Then, select <strong>Activity Privacy </strong>where you will find your
-  <strong>Activity</strong> settings.
+  2. Then, select <strong>Activity Sharing </strong>where you will find your
+  <strong>Activity</strong> settings. 
 </p>
 <p>
-  3. Here you can enable or disable your activity status by toggling the
-  following settings.
+  3. Here you can determine your activity sharing settings.<br />First, decide
+  whether you’d like to share your activity with others:
 </p>
-<p>First, decide whether you’d like to share your activity with others:</p>
 <ul>
-  <li data-list-item-id="e2d59a8c7a487137f956ba68e7cd29438">
+  <li data-list-item-id="eacfa91d189edbec1158fae94dd3ba204">
     <strong>Share my activity</strong> - This toggle controls whether or not
     others on Discord can see your activity sharing.
   </li>
 </ul>
 <p>
-  When sharing your activity, decide which servers you share your activity with
-  in the <strong>Servers I share with</strong> section:
+  4. You can also determine your <strong>Default Sharing </strong>settings to
+  control who can see your game and app activity when you join a new server: 
 </p>
 <ul>
-  <li data-list-item-id="ef68cd737bd6bbe86721b153d8cfa92b6">
-    <strong>Automatically share my activity when joining a server</strong> -
-    This toggle determines if your activity is visible by default in new servers
-    that you join.
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="eb1e7c2f096c614a029d1b1bbe7720660"
+  >
+    <strong>Automatically share my activity with</strong>
+    <ul>
+      <li data-list-item-id="e2aa5f761888f9cb52b5678df6dcd85ad">
+        <strong>Friends &amp; All Servers: </strong>Your activity is shared with
+        friends and members of any server you join.
+      </li>
+      <li data-list-item-id="e507ef4f1c1d731d2da7f50454d189e93">
+        <strong>Friends &amp; Small Servers Only: </strong>Your activity is
+        shared with friends and members of any servers you join with 200 or
+        fewer members.
+      </li>
+      <li data-list-item-id="e88fdea5cd44d907f3eedce81432aecb9">
+        <strong>Friends Only: </strong>Your activity is shared with your friends
+        only.
+      </li>
+    </ul>
   </li>
-  <li data-list-item-id="e2679f0f6846c8959ae9872fba044fd3b">
+  <li data-list-item-id="efb22051c27dc347b7d9fb70fce6d8e1e">
     <strong>My Servers</strong> - Further customize your activity sharing by
-    enabling or disabling your activity sharing on a per server basis.
+    enabling or disabling your activity sharing on a per-server basis. 
   </li>
 </ul>
 <p>
-  If your activity sharing is enabled in a server, you’ll see a check mark [<img
-    src="https://support.discord.com/hc/article_attachments/22536161098775"
-    width="27"
-    height="24"
-  />] next to its name. If disabled, you’ll see an [<img
-    src="https://support.discord.com/hc/article_attachments/22536161114903"
-    width="25"
-    height="24"
-  />] instead.
+  If your activity sharing is enabled in a server, the toggle next to the server
+  will be ON. If disabled, the server will be toggled OFF.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/22536161120535"
+    src="https://support.discord.com/hc/article_attachments/41130737125015"
     width="624"
-    height="425"
+    height="185"
   />
 </p>
+<h4 class="wysiwyg-text-align-center" id="h_01KTSAKVPAR1XX3951PX33S6PV">
+  <span style="color: #666666"
+    ><strong>Share my activity toggle</strong> in Activity Sharing</span
+  >
+</h4>
 <div class="info-box">
   In certain countries and situations, this setting might be disabled by default
   for you. You can always change your settings by following the instructions
@@ -463,16 +472,6 @@
 <h1 id="h_01KP691D10QB9Z3Z49T61Q48HB">
   How Activity Sharing Works With Profile Privacy Setting
 </h1>
-<div class="warn-box">
-  <strong>Important:</strong>
-  <a
-    href="https://support.discord.com/hc/en-us/articles/38859942749463"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Profile Privacy setting</a
-  >
-  is currently being tested and may not be available to all users.
-</div>
 <p>
   Profile Privacy setting and Activity Sharing are separate settings, but they
   work together to give you consistent control over your visibility on Discord.
