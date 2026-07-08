@@ -1,9 +1,6 @@
 <p>
-  With the <strong>Profile Privacy setting</strong>, you can control who has
-  access to your profile details on Discord. When enabled, most profile details
-  will be hidden from users who are not your friends or don't share a mutual
-  server with you — ensuring your profile is only visible to the people you
-  already have a connection with.
+  With <strong>Profile Privacy setting</strong>, you can control who has access
+  to your profile details on Discord. 
 </p>
 <div class="toc-box">
   <p>
@@ -45,10 +42,10 @@
 </div>
 <h1 id="h_01KP4CPKZ68GRBDPRS1F6MK4KH">What is Profile Privacy Setting?</h1>
 <p>
-  Profile Privacy setting lets you control who sees your profile information.
-  When enabled, certain details are hidden from anyone who isn't a friend or
-  doesn't share a server with you. This setting can be accessed from desktop,
-  browser, and mobile devices.
+  Profile Privacy setting lets you control who sees your full profile. You can
+  choose from options like just your friends to friends and everyone in your
+  servers. This setting can be accessed from desktop, browser, and mobile
+  devices.
 </p>
 <p>Profile Privacy setting will hide the following information:</p>
 <ul>
