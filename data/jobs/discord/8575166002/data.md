@@ -1,6 +1,6 @@
 # Job Listing
 
-## Financial Analyst
+## Strategic Finance
 
 **Location:** San Francisco Bay Area
 
@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8575166002](https://discord.com/jobs/8575166002)
 
-**Updated At:** Wed, 24 Jun 2026 05:22:00 GMT
+**Updated At:** Thu, 09 Jul 2026 03:45:43 GMT
 
 **Job Description:**
-Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are looking for a passionate and motivated Financial Analyst to join our growing Revenue Finance team at Discord. Reporting to the Finance Manager for Revenue, you will be responsible for driving revenue modeling, revenue forecasting, preparing regular reporting and analysis, understanding the drivers of our rapidly expanding subscription business, and partnering with cross-functional teams to support functional strategic initiatives and unlock new growth opportunities. In this role, you will work with senior leaders across Data Science, Product, Engineering, Partnerships, and Operations to make a direct impact on revenue strategy and decision-making. Come help us pave the way to a more awesome Discord!
+Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are looking for a passionate and motivated Strategic Finance Analyst to join our growing Revenue Finance team at Discord. Reporting to the Finance Manager for Revenue, you will be responsible for driving revenue modeling, revenue forecasting, preparing regular reporting and analysis, understanding the drivers of our rapidly expanding subscription business, and partnering with cross-functional teams to support functional strategic initiatives and unlock new growth opportunities. In this role, you will work with senior leaders across Data Science, Product, Engineering, Partnerships, and Operations to make a direct impact on revenue strategy and decision-making. Come help us pave the way to a more awesome Discord!
 What you'll be doing
 
 Forecast the future. Build and maintain long-range revenue forecasts, incorporating cohort behavior, product impacts, FX trends, and experimentation data.
@@ -27,7 +27,7 @@ Grow the craft. Bring a hunger to learn, pick up new AI tools as they emerge, an
 
 What you should have
 
-3+ years in investment banking, top-tier consulting, or high-growth tech FP&amp;amp;A with heavy financial-modeling ownership.
+2+ years in investment banking, top-tier consulting, or high-growth tech FP&amp;amp;A with heavy financial-modeling ownership.
 Strong mastery of Excel &amp;amp; modelling techniques, experience with SQL, FP&amp;amp;A tools, and Data visualization tools also encouraged.
 Experience with consumer-subscription modeling: subscription conversions, cohort-level assumptions, churn curves, and FX forecasting.
 Passion for exploring options to automate and optimize workflows to save time and improve accuracy.
