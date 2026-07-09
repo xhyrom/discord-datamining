@@ -30,7 +30,7 @@
     }
   ],
   "id": 8447477002,
-  "updated_at": "2026-07-08T20:24:06-04:00",
+  "updated_at": "2026-07-09T14:13:15-04:00",
   "requisition_id": "R-107195",
   "title": "Senior Security Engineer, Enterprise Security",
   "company_name": "Discord",
@@ -48,14 +48,14 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }
   ],
   "ai_disclaimer": null,
-  "include_ai_disclaimer": null,
+  "include_ai_disclaimer": false,
   "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8447477002/ai_opt_out"
 }

@@ -58,7 +58,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8289766002/ai_opt_out"
     },
     {
@@ -133,7 +133,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8433948002/ai_opt_out"
     },
     {
@@ -194,7 +194,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8599937002/ai_opt_out"
     },
     {
@@ -254,7 +254,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8538797002/ai_opt_out"
     },
     {
@@ -315,7 +315,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8571766002/ai_opt_out"
     },
     {
@@ -376,7 +376,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8397385002/ai_opt_out"
     },
     {
@@ -436,7 +436,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": null
     },
     {
@@ -497,7 +497,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8502342002/ai_opt_out"
     },
     {
@@ -557,7 +557,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8509325002/ai_opt_out"
     },
     {
@@ -618,7 +618,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8497292002/ai_opt_out"
     },
     {
@@ -678,7 +678,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8546664002/ai_opt_out"
     },
     {
@@ -739,7 +739,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8517367002/ai_opt_out"
     },
     {
@@ -800,7 +800,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8400845002/ai_opt_out"
     },
     {
@@ -860,7 +860,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8585009002/ai_opt_out"
     },
     {
@@ -921,7 +921,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8445676002/ai_opt_out"
     },
     {
@@ -982,7 +982,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8359170002/ai_opt_out"
     },
     {
@@ -1042,7 +1042,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8606300002/ai_opt_out"
     },
     {
@@ -1102,7 +1102,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8614209002/ai_opt_out"
     },
     {
@@ -1162,7 +1162,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8540239002/ai_opt_out"
     },
     {
@@ -1222,7 +1222,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8468440002/ai_opt_out"
     },
     {
@@ -1282,7 +1282,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8497565002/ai_opt_out"
     },
     {
@@ -1343,7 +1343,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8177757002/ai_opt_out"
     },
     {
@@ -1403,7 +1403,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8604768002/ai_opt_out"
     },
     {
@@ -1463,7 +1463,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": null
     },
     {
@@ -1524,7 +1524,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8597934002/ai_opt_out"
     },
     {
@@ -1585,7 +1585,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8595014002/ai_opt_out"
     },
     {
@@ -1646,7 +1646,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8614424002/ai_opt_out"
     },
     {
@@ -1707,7 +1707,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8594977002/ai_opt_out"
     },
     {
@@ -1768,7 +1768,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8581126002/ai_opt_out"
     },
     {
@@ -1829,7 +1829,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8582693002/ai_opt_out"
     },
     {
@@ -1864,7 +1864,7 @@
         }
       ],
       "id": 8447477002,
-      "updated_at": "2026-07-08T20:24:06-04:00",
+      "updated_at": "2026-07-09T14:13:15-04:00",
       "requisition_id": "R-107195",
       "title": "Senior Security Engineer, Enterprise Security",
       "company_name": "Discord",
@@ -1882,15 +1882,15 @@
       ],
       "offices": [
         {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
           "child_ids": [],
           "parent_id": null
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8447477002/ai_opt_out"
     },
     {
@@ -1950,7 +1950,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8575644002/ai_opt_out"
     },
     {
@@ -2011,7 +2011,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8460791002/ai_opt_out"
     },
     {
@@ -2072,7 +2072,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8200328002/ai_opt_out"
     },
     {
@@ -2133,7 +2133,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": null
     },
     {
@@ -2193,7 +2193,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8599753002/ai_opt_out"
     },
     {
@@ -2253,7 +2253,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8538039002/ai_opt_out"
     },
     {
@@ -2314,7 +2314,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8544305002/ai_opt_out"
     },
     {
@@ -2382,7 +2382,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8377248002/ai_opt_out"
     },
     {
@@ -2443,7 +2443,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8399456002/ai_opt_out"
     },
     {
@@ -2504,7 +2504,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8487457002/ai_opt_out"
     },
     {
@@ -2565,7 +2565,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8396927002/ai_opt_out"
     },
     {
@@ -2626,7 +2626,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8609250002/ai_opt_out"
     },
     {
@@ -2687,7 +2687,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8545663002/ai_opt_out"
     },
     {
@@ -2747,7 +2747,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": null
     },
     {
@@ -2807,7 +2807,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8299493002/ai_opt_out"
     },
     {
@@ -2867,7 +2867,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8485884002/ai_opt_out"
     },
     {
@@ -2927,7 +2927,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8623481002/ai_opt_out"
     },
     {
@@ -2988,7 +2988,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8573433002/ai_opt_out"
     },
     {
@@ -3049,7 +3049,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8460867002/ai_opt_out"
     },
     {
@@ -3110,7 +3110,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8498984002/ai_opt_out"
     },
     {
@@ -3171,7 +3171,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8177912002/ai_opt_out"
     },
     {
@@ -3239,7 +3239,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8344197002/ai_opt_out"
     },
     {
@@ -3307,7 +3307,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8214127002/ai_opt_out"
     },
     {
@@ -3367,7 +3367,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8575166002/ai_opt_out"
     },
     {
@@ -3428,7 +3428,7 @@
         }
       ],
       "ai_disclaimer": null,
-      "include_ai_disclaimer": null,
+      "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8507387002/ai_opt_out"
     }
   ],

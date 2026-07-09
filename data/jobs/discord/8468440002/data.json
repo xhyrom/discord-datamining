@@ -55,6 +55,6 @@
     }
   ],
   "ai_disclaimer": null,
-  "include_ai_disclaimer": null,
+  "include_ai_disclaimer": false,
   "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8468440002/ai_opt_out"
 }

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8447477002](https://discord.com/jobs/8447477002)
 
-**Updated At:** Thu, 09 Jul 2026 00:24:06 GMT
+**Updated At:** Thu, 09 Jul 2026 18:13:15 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are looking for an experienced Senior Enterprise Security Engineer reporting to the Engineering Manager of Enterprise Security. In this role, you will implement and maintain Discord’s enterprise environment, with a sharp focus on security and privacy. Are you passionate about balancing strong security with seamless operations? We’d love to meet you. We’re looking for someone who brings strong technical skills and genuinely cares about protecting data and keeping systems secure. If you love solving challenging security problems, get energized by learning new things, and want to help make Discord even better, come join our security team on this journey.
@@ -58,5 +58,5 @@ education_optional
 - Security Engineering
 
 **Offices:**
-- San Francisco, CA in San Francisco, California, United States
+- Remote (U.S.)
     
