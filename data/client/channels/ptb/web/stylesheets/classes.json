@@ -1859,6 +1859,8 @@
   "overlayIcon": "overlayIcon_f910d0",
   "callAvatarMask": "callAvatarMask_f910d0",
   "callAvatarMaskContainer": "callAvatarMaskContainer_f910d0",
+  "seats": "seats_fae5e9",
+  "fullHeight": "fullHeight_fae5e9",
   "chat": "chat_f75fb0",
   "threadSidebarOpen": "threadSidebarOpen_f75fb0",
   "uploadArea": "uploadArea_f75fb0",
