@@ -8,10 +8,10 @@
       219249(e, r, o) {
         var t = o(501661),
           n = o(774099),
-          i = o(56833),
-          a = o(883950),
-          d = o(871186),
-          l = o(363630);
+          a = o(56833),
+          i = o(883950),
+          l = o(871186),
+          d = o(363630);
         let s = ["oppobrowser", "realmebrowser", "heytapbrowser"],
           u = (function (e) {
             let { maxBudgetMinute: r, maxBudgetHour: o } = e,
@@ -19,11 +19,11 @@
               n = { slot: 0, budgetUsed: 0 };
             return () => {
               let e = Date.now(),
-                i = Math.round(e / 1e3 / 60),
-                a = Math.round(e / 1e3 / 60 / 60);
+                a = Math.round(e / 1e3 / 60),
+                i = Math.round(e / 1e3 / 60 / 60);
               return (
-                t.slot !== i && ((t.slot = i), (t.budgetUsed = 0)),
-                n.slot !== a && ((n.slot = a), (n.budgetUsed = 0)),
+                t.slot !== a && ((t.slot = a), (t.budgetUsed = 0)),
+                n.slot !== i && ((n.slot = i), (n.budgetUsed = 0)),
                 !!(t.budgetUsed < r) &&
                   (t.budgetUsed++, !!(n.budgetUsed < o)) &&
                   (n.budgetUsed++, !0)
@@ -36,7 +36,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-3c8dd7509dacaf4279dd7aa04965c982e7549ebd",
+            release: "discord_web-71a199cce1cedbc981aa3319d3b76257cd2a9a70",
             beforeSend: function (e, r) {
               let o;
               return !(
@@ -69,7 +69,7 @@
             },
             integrations: [
               n.L({ onerror: !0, onunhandledrejection: !0 }),
-              i.F({
+              a.F({
                 console: !0,
                 dom: !0,
                 fetch: !0,
@@ -77,7 +77,7 @@
                 sentry: !0,
                 xhr: !0,
               }),
-              a.S(),
+              i.S(),
             ],
             ignoreErrors: [
               "EADDRINUSE",
@@ -110,77 +110,77 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            d.NA("buildNumber", "576384"),
-            d.NA("builtAt", String("1783688910045"));
+            l.NA("buildNumber", "576398"),
+            l.NA("builtAt", String("1783695276896"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
-          if (null != e && "object" == typeof e) for (let r in e) d.NA(r, e[r]);
-          return l;
+          if (null != e && "object" == typeof e) for (let r in e) l.NA(r, e[r]);
+          return d;
         })();
       },
     },
-    i = {};
-  function a(e) {
-    var r = i[e];
+    a = {};
+  function i(e) {
+    var r = a[e];
     if (void 0 !== r) return r.exports;
-    var o = (i[e] = { exports: {} });
-    return n[e](o, o.exports, a), o.exports;
+    var o = (a[e] = { exports: {} });
+    return n[e](o, o.exports, i), o.exports;
   }
-  (a.m = n),
-    (a.d = (e, r) => {
+  (i.m = n),
+    (i.d = (e, r) => {
       for (var o in r)
-        a.o(r, o) &&
-          !a.o(e, o) &&
+        i.o(r, o) &&
+          !i.o(e, o) &&
           Object.defineProperty(e, o, { enumerable: !0, get: r[o] });
     }),
-    (a.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r)),
-    (a.r = (e) => {
+    (i.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r)),
+    (i.r = (e) => {
       "u" > typeof Symbol &&
         Symbol.toStringTag &&
         Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
         Object.defineProperty(e, "__esModule", { value: !0 });
     }),
     (e = []),
-    (a.O = (r, o, t, n) => {
+    (i.O = (r, o, t, n) => {
       if (o) {
         n = n || 0;
-        for (var i = e.length; i > 0 && e[i - 1][2] > n; i--) e[i] = e[i - 1];
-        e[i] = [o, t, n];
+        for (var a = e.length; a > 0 && e[a - 1][2] > n; a--) e[a] = e[a - 1];
+        e[a] = [o, t, n];
         return;
       }
-      for (var d = 1 / 0, i = 0; i < e.length; i++) {
-        for (var [o, t, n] = e[i], l = !0, s = 0; s < o.length; s++)
-          (!1 & n || d >= n) && Object.keys(a.O).every((e) => a.O[e](o[s]))
+      for (var l = 1 / 0, a = 0; a < e.length; a++) {
+        for (var [o, t, n] = e[a], d = !0, s = 0; s < o.length; s++)
+          (!1 & n || l >= n) && Object.keys(i.O).every((e) => i.O[e](o[s]))
             ? o.splice(s--, 1)
-            : ((l = !1), n < d && (d = n));
-        if (l) {
-          e.splice(i--, 1);
+            : ((d = !1), n < l && (l = n));
+        if (d) {
+          e.splice(a--, 1);
           var u = t();
           void 0 !== u && (r = u);
         }
       }
       return r;
     }),
-    (a.rv = () => "1.7.11"),
+    (i.rv = () => "1.7.11"),
     (r = { 44771: 0 }),
-    (a.O.j = (e) => 0 === r[e]),
+    (i.O.j = (e) => 0 === r[e]),
     (o = (e, o) => {
       var t,
         n,
-        [i, d, l] = o,
+        [a, l, d] = o,
         s = 0;
-      if (i.some((e) => 0 !== r[e])) {
-        for (t in d) a.o(d, t) && (a.m[t] = d[t]);
-        if (l) var u = l(a);
+      if (a.some((e) => 0 !== r[e])) {
+        for (t in l) i.o(l, t) && (i.m[t] = l[t]);
+        if (d) var u = d(i);
       }
-      for (e && e(o); s < i.length; s++)
-        (n = i[s]), a.o(r, n) && r[n] && r[n][0](), (r[n] = 0);
-      return a.O(u);
+      for (e && e(o); s < a.length; s++)
+        (n = a[s]), i.o(r, n) && r[n] && r[n][0](), (r[n] = 0);
+      return i.O(u);
     }),
     (t = this.webpackChunkdiscord_app =
       this.webpackChunkdiscord_app || []).forEach(o.bind(null, 0)),
     (t.push = o.bind(null, t.push.bind(t))),
-    (a.ruid = "bundler=rspack@1.7.11");
-  var d = a.O(void 0, ["48255", "64310", "56707"], () => a(219249));
-  d = a.O(d);
+    (i.ruid = "bundler=rspack@1.7.11");
+  var l = i.O(void 0, ["48255", "64310", "56707"], () => i(219249));
+  l = i.O(l);
 })();
-//# sourceMappingURL=sentry.dfa8b594e53e81eb.js.map
+//# sourceMappingURL=sentry.2dcf40842e662a55.js.map
