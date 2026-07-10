@@ -1,0 +1,16 @@
+:where(.section_bf424d) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+:where(.section_bf424d):empty,
+:where(.section_bf424d):has(> .headings_bf424d:only-child) {
+  display: none;
+}
+.header_bf424d {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+
+/*# sourceMappingURL=87437.f0057eb613593750.css.map*/

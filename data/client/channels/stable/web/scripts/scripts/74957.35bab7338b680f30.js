@@ -1,0 +1,42 @@
+"use strict";
+(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
+  ["74957"],
+  {
+    480028(_, a, t) {
+      _.exports = {
+        Ix: "channel__972a0",
+        Ij: "fullWidth__972a0",
+        dM: "unreadPill__972a0",
+        SU: "muted__972a0",
+        bG: "interactive__972a0",
+        uN: "overflowTooltip__972a0",
+        e8: "withDisplayNameStyles__972a0",
+        fc: "clanTag__972a0",
+        Y_: "clanTagMuted__972a0",
+        Q2: "interactiveSelected__972a0",
+        nf: "link__972a0",
+        $J: "linkButton__972a0",
+        e_: "linkButtonIcon__972a0",
+        b: "closeButton__972a0",
+        wY: "reducedClickTarget__972a0",
+        DQ: "closeButtonPlated__972a0",
+        by: "closeButtonForceShow__972a0",
+        PJ: "innerCloseButtonPlated__972a0",
+        Uq: "closeIconPlated__972a0",
+        _q: "iconsContainer__972a0",
+        EY: "nameplated__972a0",
+        ut: "closeIcon__972a0",
+        wB: "favoriteIcon__972a0",
+        W$: "subtext__972a0",
+        tG: "mutedIcon__972a0",
+        XD: "activityStatusText__972a0",
+        G$: "decorator__972a0",
+        dm: "dm__972a0",
+        xx: "avatarWithText__972a0",
+        KQ: "waveButton__972a0",
+        lU: "channelNameMeasurement__972a0",
+        a1: "tabHoverGradient__972a0",
+      };
+    },
+  },
+]);
