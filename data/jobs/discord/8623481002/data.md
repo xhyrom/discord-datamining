@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8623481002](https://discord.com/jobs/8623481002)
 
-**Updated At:** Tue, 07 Jul 2026 23:39:52 GMT
+**Updated At:** Fri, 10 Jul 2026 16:26:09 GMT
 
 **Job Description:**
-Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are seeking an experienced Staff Product Marketing Manager to help build out our go-to-market motions for our Ads product suite. This individual will align to several Product Managers, helping to bring high-impact products to market. In particular, this role will focus on Ad Formats and our push into Mobile Performance. This role will play a key part in accelerating growth of our overall Ad platform into 2027 and beyond.&amp;nbsp;
+Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are seeking an experienced Product Marketing Manager to help build out our go-to-market motions for our Ads product suite, with a focus on activating within a specific sales vertical. You will be the sole PMM owner aligned to this vertical, responsible for driving activation and growth of our products in market. This will include developing GTM and activation plans tied to this vertical, leading Alpha and Beta testing to validate products and develop proof points, and conducting inbound to inform product prioritization. This role will play a key part in accelerating growth of our overall Ad platform into 2027 and beyond.&amp;nbsp;
 If you’re a self-starter and team player that excels in a fast paced environment and zero-to-scale projects, this is a unique opportunity to make a significant impact on our future and shape the direction of our advertising business. We are looking for great, self motivated PMMs, bonus points if you have worked on the Gaming vertical in the past.&amp;nbsp;
 What You'll Be Doing
 
