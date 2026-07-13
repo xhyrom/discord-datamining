@@ -1,11 +1,8 @@
 <p>
   Deck out your profile with Profile Frames, decorative borders that wrap around
-  your Discord profile whenever your profile is viewed as a pop-out or as a full
-  profile by your and fellow Discord users.
+  your Discord profile wherever and whenever your profile is visible to you and
+  fellow Discord users.
 </p>
-<div class="exp-box">
-  <strong>Important:</strong> Profile Frames are currently an experiment.
-</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
@@ -128,52 +125,50 @@
   >
 </p>
 <p>
-  1. To access your User Settings, select the cogwheel icon [<img
-    src="https://support.discord.com/hc/article_attachments/41006830413719"
-    alt="cogwheel.png"
-    width="23"
-    height="24"
-  />] in the lower-left corner of the app, then navigate to the Edit Profiles
-  section. 
+  1. On the desktop app or browser, head into your
+  <strong>User Settings</strong> by selecting the
+  <strong>cogwheel</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/41920250285719"
+    width="20"
+    height="20"
+  />]. 
 </p>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 484/104"
-    src="https://support.discord.com/hc/article_attachments/41006830414487"
-    alt="desktop-cogwheel-user-settings.png"
-    width="484"
-    height="104"
-  />
-</figure>
-<h4 class="wysiwyg-text-align-center" id="h_01KTCJWDD0P6KHFPNWV1ZJJ61D">
-  Cogwheel icon
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2e3338"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/41920245739415"
+      alt="Cogwheel Icon"
+      width="363"
+      height="60"
+  /></span>
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KX3W624Y57SAKFZMCEGB9TVC">
+  <span style="color: #666666">Cogwheel Icon</span>
 </h4>
 <p>
-  2. Once there, you will see the banner to the Shop where you can select
-  <strong>Go to Shop</strong>. You can also select
-  <strong>Change Frame</strong> and select the <strong>Shop</strong> icon [<img
-    src="https://support.discord.com/hc/article_attachments/41006830407063"
-    alt="shop-icon.png"
+  2. In User Settings, select <strong>Edit Profiles</strong> in the top-right
+  corner to open your profile customization options.
+</p>
+<p>
+  3. Press the <strong>Shop </strong>icon [<img
+    src="https://support.discord.com/hc/article_attachments/41920250290455"
     width="24"
     height="24"
-  />] to be redirected to the Shop. 
+  />] to navigate to the Shop. Once directed to the Shop, you can preview and
+  buy Profile Frames to add to your collection. 
 </p>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 800/458"
-    src="https://support.discord.com/hc/article_attachments/41006817234839"
-    alt="shop-in-edit-profile-frame.gif"
-    width="800"
-    height="458"
-  />
-</figure>
-<h4 class="wysiwyg-text-align-center" id="h_01KTCJZ125V9XFRD0A90NH0TSZ">
-  Access Shop via User Settings
+<h4 class="wysiwyg-text-align-center" id="h_01KX3W6SESK7M6SKFXFPPC1B01">
+  <span style="color: #666666"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/41920245740439"
+      alt="Accessing the Shop on Desktop"
+      width="624"
+      height="485"
+  /></span>
 </h4>
-<p>
-  3. Once directed to the Shop, you can preview and buy Profile Frames to add to
-  your collection. 
-</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KX3W6SETKAMRDS9DCBDQV130">
+  <span style="color: #666666">Accessing the Shop on Desktop</span>
+</h4>
 <div class="info-box">
   Purchased Profile Frames get added to your collection, which can be found in
   <strong>User Settings &gt; Profiles &gt; Profile Frames</strong>. Items
@@ -212,75 +207,45 @@
   1. On the desktop app or browser, head into your
   <strong>User Settings</strong> by selecting the
   <strong>cogwheel</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/41006830413719"
-    alt="cogwheel.png"
-    width="23"
-    height="24"
+    src="https://support.discord.com/hc/article_attachments/41920250285719"
+    width="20"
+    height="20"
   />]. 
 </p>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 484/104"
-    src="https://support.discord.com/hc/article_attachments/41006830414487"
-    alt="desktop-cogwheel-user-settings.png"
-    width="484"
-    height="104"
-  />
-</figure>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2e3338"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/41920245739415"
+      width="363"
+      height="60"
+  /></span>
+</p>
 <h4 class="wysiwyg-text-align-center" id="h_01KTCKG5PCVXK1ZY5XKGDXJSSB">
   Cogwheel Icon
 </h4>
 <p>
-  2. Once directed to your <strong>User Settings</strong>, select
-  <strong>Edit Profiles</strong> to view your profile customization options. 
+  2. In User Settings, select <strong>Edit Profiles</strong> in the top-right
+  corner to open your profile customization options.
 </p>
 <p>
-  3. Then, press the <strong>Change Frames</strong> button to open the selection
-  menu. 
+  3. Under <strong>Profile Effect &amp; Frame</strong>, select
+  <strong>Change Frames</strong> to open the selection menu.
 </p>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 1329/730"
-    src="https://support.discord.com/hc/article_attachments/41006830419095"
-    alt="edit-frame-button-in-edit-profile-page.png"
-    width="1329"
-    height="730"
-  />
-</figure>
-<h4 class="wysiwyg-text-align-center" id="h_01KTCKK73F9Z90PNYMEFVAW4A5">
-  Change Profile Frame Button
-</h4>
 <p>
-  4. Once you have chosen the Profile Frame you would like, select
+  4. Choose the <strong>Profile Frame</strong> you'd like, then select
   <strong>Apply</strong>.
 </p>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 800/458"
-    src="https://support.discord.com/hc/article_attachments/41006830421271"
-    alt="choose-apply-profile-frame.gif"
-    width="800"
-    height="458"
-  />
-</figure>
-<h4 class="wysiwyg-text-align-center" id="h_01KTCN6GKZFEKW9NCY2VX2PBQB">
-  Selecting a Profile Frame
+<p>5. Select <strong>Save</strong> to confirm your changes.</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KTCKK73F9Z90PNYMEFVAW4A5">
+  <span style="color: #666666"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/41920250292119"
+      width="624"
+      height="483"
+  /></span>
 </h4>
-<p>
-  5. After applying your selected Profile Frame, confirm your profile changes by
-  selecting <strong>Save Changes</strong>.
-</p>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 1542/115"
-    src="https://support.discord.com/hc/article_attachments/41006817238807"
-    alt="desktop-save-button-for-profile-changes.png"
-    width="1542"
-    height="115"
-  />
-</figure>
-<h4 class="wysiwyg-text-align-center" id="h_01KTCN7GZ98PP2NPFW28ASSQ28">
-  Save Changes Button
+<h4 class="wysiwyg-text-align-center" id="h_01KX3WAXF5Q83W2G6HRZK71QT0">
+  <span style="color: #666666">Applying a Frame on Desktop</span>
 </h4>
 <h2 id="h_01KTCKQ94M5QEETEAQB0ZFEDS0">Mobile</h2>
 <div class="info-box">
@@ -336,17 +301,24 @@
 <h1 id="h_01KTCKW5E113KE1KQW869K91RS">Where do Profile Frames appear?</h1>
 <p>
   Profile Frames appear on your full profile, including your profile pop-out,
-  the full profile card, and your profile as seen by others across Discord.
+  the full profile card, and anywhere your profile is seen by others across
+  Discord.
 </p>
-<figure class="wysiwyg-image">
+<p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 1440/900"
-    src="https://support.discord.com/hc/article_attachments/41006930186135"
-    alt="profile-frame-example.png"
-    width="1440"
-    height="900"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 251/425; width: 42.21%"
+    src="https://support.discord.com/hc/article_attachments/41920245741591"
+    width="251"
+    height="425"
+  />.  <img
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 362/424; width: 46.63%"
+    src="https://support.discord.com/hc/article_attachments/41920245742359"
+    width="362"
+    height="424"
   />
-</figure>
+</p>
 <h4 class="wysiwyg-text-align-center" id="h_01KTCKXC6T167V8EF222V40TPJ">
   Profile Frames as seen in pop-out profile cards.
 </h4>
@@ -360,14 +332,36 @@
 <p>
   Some Frames also include additional decorative elements that appear based on
   the size of your profile, meaning adding more to your profile (like bio text
-  or widgets) can unlock more of a Frame's full design. The best way to see a
-  Frame's full design is in the Shop preview before you buy.
+  or widgets) can unlock more of a Frame's full design. The best way to see how
+  a Frame's full design will look on your device is in the Shop preview before
+  you buy.
 </p>
 <h1 id="h_01KTCKYB0FTRZM0382NCHV7S3Q">Frequently Asked Questions</h1>
 <p><strong>Q: Are Profile Frames available to everyone?</strong></p>
 <p>
-  A: Profile Frames are currently an experiment, so they are limited to some
-  Discord users.
+  A: Profile Frames are currently in Nitro Early Access, meaning Nitro
+  subscribers get to shop the collection first, before it opens to all Discord
+  users.
+</p>
+<p>
+  If you're not a Nitro subscriber, you can still see Frames on other users'
+  profiles.
+</p>
+<div class="book-box">
+  Want early access?
+  <a href="https://discord.com/nitro" target="_blank" rel="noopener noreferrer"
+    >Subscribe to Nitro</a
+  >
+  to shop Profile Frames now.
+</div>
+<p><strong>Q: When can I buy Profile Frames with Orbs?</strong></p>
+<p>
+  A: Profile Frames are not currently eligible for Orbs purchases. Orbs
+  purchasing will be rolling out over the next 2 months.
+</p>
+<p>
+  In the meantime, Profile Frames can be purchased with USD and other supported
+  currencies through the Shop.
 </p>
 <p><strong>Q: Can everyone see my Profile Frame or just me?</strong></p>
 <p>A: Everyone can see your Profile Frame.</p>
@@ -439,3 +433,4 @@
     >here</a
   >.
 </p>
+<p> </p>

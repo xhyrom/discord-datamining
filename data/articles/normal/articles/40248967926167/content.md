@@ -3,10 +3,6 @@
   sensitive topics hidden from view until members of your server choose to see
   them. 
 </p>
-<div class="exp-box">
-  <strong>Important:</strong> Spoiler channels are currently available to a
-  limited number of servers. More updates coming soon!
-</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
