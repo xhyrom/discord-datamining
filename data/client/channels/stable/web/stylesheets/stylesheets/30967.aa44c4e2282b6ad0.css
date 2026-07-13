@@ -1,0 +1,36 @@
+.clickable_b66158 {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  max-width: 100%;
+  width: -moz-max-content;
+  width: max-content;
+}
+.clickable_b66158:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--text-default);
+}
+.clickable_b66158:focus-within .text_b66158,
+.clickable_b66158:hover .text_b66158 {
+  max-width: calc(100% - 16px);
+}
+.clickable_b66158:focus-within .pencilIcon_b66158,
+.clickable_b66158:hover .pencilIcon_b66158 {
+  visibility: visible;
+}
+.text_b66158 {
+  max-width: 100%;
+  width: -moz-max-content;
+  width: max-content;
+}
+.pencilIcon_b66158 {
+  color: var(--text-subtle);
+  flex-shrink: 0;
+}
+.pencilIcon_b66158.hidden_b66158 {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=30967.aa44c4e2282b6ad0.css.map*/
