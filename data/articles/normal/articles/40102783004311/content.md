@@ -160,8 +160,12 @@
 </h1>
 <div class="info-box">
   <strong>Note: </strong>Game Shops are currently available on the Discord
-  desktop and web apps. See the Marvel Rivals Shop and Rust Shop sections below
-  for details on which platforms each game supports for item redemption.
+  desktop and web apps. Mobile users may encounter Game Shop embeds or item
+  listings that are available for purchase, but the full Game Shop experience is
+  only available on desktop and web. <br />See the
+  <a href="#h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Shop</a> and
+  <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Shop</a> sections below for
+  details on which platforms each game supports for item redemption.
 </div>
 <p>There are two ways to find in-game items on Discord:</p>
 <h2 id="h_01KQJNEWVQH83B35TH0VEMYAGG">Through the Discord Shop</h2>
@@ -513,7 +517,12 @@
 <p>A: Game Shops are currently available for Marvel Rivals and Rust.</p>
 <p><strong>Q: Are Game Shops available on mobile?</strong> </p>
 <p>
-  A: Game Shops are currently available on the Discord desktop and web apps.
+  A: Game Shops are currently available on the Discord desktop and web apps. 
+</p>
+<p>
+  Mobile users may encounter Game Shop embeds or item listings that are
+  available for purchase, but the full Game Shop experience is only available on
+  desktop and web apps.
 </p>
 <h2 id="h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Game Shop</h2>
 <p>
@@ -537,8 +546,8 @@
 </p>
 <h2 id="h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Game Shop</h2>
 <div class="mega-box">
-  Offer: <strong>From</strong> July 2, (11 AM PT)<strong> through</strong> July
-  16, (11 AM PT)
+  Offer: <br /><strong>From</strong> July 2, (11 AM PT)
+  <strong>through</strong> July 16, (11 AM PT)
   <strong
     >all players can earn Discord Orbs on purchases of official Rust in-game
     items in the Rust Game Shop on Discord, including gifts purchased for other
@@ -551,8 +560,8 @@
     href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
     target="_blank"
     rel="noopener noreferrer"
-    >Discord Orbs FAQ</a
-  >.
+    ><strong>Discord Orbs FAQ</strong></a
+  ><strong>.</strong>
 </div>
 <p>
   <strong
