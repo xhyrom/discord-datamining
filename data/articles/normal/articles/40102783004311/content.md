@@ -525,6 +525,46 @@
   desktop and web apps.
 </p>
 <h2 id="h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Game Shop</h2>
+<div class="mega-box">
+  <p>
+    Offer:<br /><strong>From</strong> July 13 (11:00AM PT)
+    <strong>through</strong> August 6 (11:00AM PT)<strong
+      >, eligible Nitro subscribers can redeem Discord Orbs for official Marvel
+      Rivals in-game items in the Marvel Rivals Game Shop on Discord. This offer
+      is part of a limited-time beta experiment and is not available to all
+      users. Trial subscriptions, Nitro Basic, Nitro with Nitro Credits and
+      other subscription types are not eligible. Eligibility, availability, and
+      redemption requirements may change during this experiment. </strong
+    ><br /><strong
+      >For more information about Discord Orbs, including how to use and redeem
+      them, please see the </strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
+      ><strong
+        ><span class="wysiwyg-underline">Discord Orbs FAQ.</span></strong
+      ></a
+    ><br /> 
+  </p>
+  <p>Q: Is Orbs redemption for Marvel Rivals items region locked?</p>
+  <p>
+    <strong
+      >A: No. Availability is not based on region. Orbs redemption for Marvel
+      Rivals items is part of a limited beta experiment for eligible Nitro
+      subscribers and is not available to all users at this time.</strong
+    >
+  </p>
+  <p>
+    Q: Are Nitro Basic, a Nitro trial, or Nitro with Nitro credits eligible for
+    Orbs redemption for Marvel Rivals items?
+  </p>
+  <p>
+    <strong
+      >A: No. Only select Nitro subscribers are eligible for this experiment.
+      Nitro Basic, Nitro trials, Nitro with Nitro Credits and other subscription
+      types are not eligible.</strong
+    >
+  </p>
+</div>
 <p>
   <strong>Q: Which platforms can I redeem Marvel Rivals Shop items on?</strong> 
 </p>
@@ -542,12 +582,12 @@
     target="_blank"
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">Marvel Rivals Shop on Discord</span></a
-  >.
+  >.<br /> 
 </p>
 <h2 id="h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Game Shop</h2>
 <div class="mega-box">
-  Offer: <br /><strong>From</strong> July 2, (11 AM PT)
-  <strong>through</strong> July 16, (11 AM PT)
+  Offer:<br /><strong>From</strong> July 2, (11:00AM PT)
+  <strong>through</strong> July 16, (11:00AM PT)
   <strong
     >all players can earn Discord Orbs on purchases of official Rust in-game
     items in the Rust Game Shop on Discord, including gifts purchased for other
