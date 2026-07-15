@@ -146,7 +146,7 @@
   official Discord server, and you can gift items to friends from places you're
   already hanging out, like DMs and voice channels.
 </p>
-<p>Games currently available on Discord:</p>
+<p>Games currently available on Discord: </p>
 <ul>
   <li data-list-item-id="ef2f589c2587174185538c3b4bc68e30d">
     <strong>Marvel Rivals</strong>: Marvel Rivals Shop
@@ -526,6 +526,17 @@
 </p>
 <h2 id="h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Game Shop</h2>
 <div class="mega-box">
+  <p>
+    Update as of July 14:
+    <strong
+      >We've temporarily paused this experiment while we hotfix an issue to
+      improve the user experience. We plan to bring the beta program back on </strong
+    >July 15,
+    <strong
+      >and eligible users will be able to see the offer again at that
+      time.</strong
+    >
+  </p>
   <p>
     Offer:<br /><strong>From</strong> July 13 (11:00AM PT)
     <strong>through</strong> August 6 (11:00AM PT)<strong
