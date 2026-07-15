@@ -530,8 +530,9 @@
     Update as of July 14:
     <strong
       >We've temporarily paused this experiment while we hotfix an issue to
-      improve the user experience. We plan to bring the beta program back on </strong
-    >July 15,
+      improve the user experience. We plan to bring the beta program back
+      soon</strong
+    >,
     <strong
       >and eligible users will be able to see the offer again at that
       time.</strong
@@ -585,7 +586,7 @@
   receive the item, we may offer a refund, provided that you or the gift
   recipient attempted to claim the item within 14 days of purchase.
 </p>
-<p><strong>Q: Where can I find the Marvel Rivals Shop on Discord? </strong></p>
+<p><strong>Q: Where can I find the Marvel Rivals Shop on Discord?</strong></p>
 <p>
   A: You can click this link to go directly to the
   <a
