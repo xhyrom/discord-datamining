@@ -1,0 +1,9 @@
+{
+  "full": {
+    "host_version": "1.0.1018",
+    "module_version": 1,
+    "package_sha256": "3568d9d9c6324caafcd67375ad67d590a023a76d72722f4fc1ef61e0e113230c",
+    "url": "https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.1018/discord_arborium/1/full.distro"
+  },
+  "deltas": []
+}
