@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8623481002](https://discord.com/jobs/8623481002)
 
-**Updated At:** Fri, 10 Jul 2026 16:26:09 GMT
+**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are seeking an experienced Product Marketing Manager to help build out our go-to-market motions for our Ads product suite, with a focus on activating within a specific sales vertical. You will be the sole PMM owner aligned to this vertical, responsible for driving activation and growth of our products in market. This will include developing GTM and activation plans tied to this vertical, leading Alpha and Beta testing to validate products and develop proof points, and conducting inbound to inform product prioritization. This role will play a key part in accelerating growth of our overall Ad platform into 2027 and beyond.&amp;nbsp;

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8538797002](https://discord.com/jobs/8538797002)
 
-**Updated At:** Mon, 11 May 2026 02:58:46 GMT
+**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.The Customer Experience team at Discord has the privilege of supporting our communities, listening to their feedback, and sharing these insights with other teams to help make the Discord experience the best that it can possibly be. We’re looking for a Director of Customer Experience to lead the next chapter of our support story: a bold, AI-powered transformation of how we serve tens of millions of users worldwide.

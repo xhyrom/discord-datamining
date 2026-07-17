@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8579738002](https://discord.com/jobs/8579738002)
 
-**Updated At:** Wed, 10 Jun 2026 01:33:43 GMT
+**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.As a Solutions Architect on the Games team at Discord, you'll serve as the technical owner for AAA game developer partnerships. You'll lead the architectural and integration work that helps studios successfully implement Discord's developer tools, including the Social SDK.

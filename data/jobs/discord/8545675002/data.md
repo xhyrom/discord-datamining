@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8545675002](https://discord.com/jobs/8545675002)
 
-**Updated At:** Mon, 13 Jul 2026 18:45:19 GMT
+**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.The Safety Processing team builds the infrastructure and decision systems that enable accurate, efficient, and fair content moderation at scale. Keeping our users safe is&amp;nbsp;foundational to everything we do.

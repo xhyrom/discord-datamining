@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8582693002](https://discord.com/jobs/8582693002)
 
-**Updated At:** Tue, 16 Jun 2026 21:54:14 GMT
+**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord is looking for a Senior Manager, Sales Tools &amp;amp; Process to own the systems, workflows, and automation that power how Discord B2B sells and scales across business units. Reporting to the Sr. Director of Revenue Operations, you will be the single-threaded owner of Salesforce platform management, end-to-end sales process design, and AI-driven operational enhancements. This is a high-visibility IC role for someone who thrives at the intersection of systems thinking, process engineering, and hands-on technical execution.

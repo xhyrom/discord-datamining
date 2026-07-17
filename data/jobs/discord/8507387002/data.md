@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8507387002](https://discord.com/jobs/8507387002)
 
-**Updated At:** Tue, 16 Jun 2026 20:05:36 GMT
+**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We’re looking for a Manager to own strategy and operations for Discord’s Consumer Revenue business, with a primary focus on Nitro partnerships. You’ll sit at the intersection of Business Development, Product, and Finance, ensuring our partnership deals are structured, modeled, and operationalized effectively as our B2B motion scales. This is a high-impact role that touches deal strategy, financial modeling, pricing, analytics, and cross-functional operations.

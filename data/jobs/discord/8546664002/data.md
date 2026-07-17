@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8546664002](https://discord.com/jobs/8546664002)
 
-**Updated At:** Wed, 13 May 2026 14:41:42 GMT
+**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord is looking for an experienced Litigation Counsel to join Discord’s Legal team. Reporting to the Director, Global Litigation and working closely with two Senior Litigation Counsels, you’ll join a lean team where every team member carries real responsibility from day one.&amp;nbsp; We're looking for an experienced litigator who can operate independently across a broad range of matters, with the judgment to triage, strategize, and execute on a diverse caseload. You'll own the individual consumer claims docket, support discovery and briefing on high-stakes matters, and manage IP litigation, all while working closely with cross-functional partners to protect Discord's platform and users.
