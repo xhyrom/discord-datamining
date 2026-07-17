@@ -1624,6 +1624,7 @@
   "MENTIONS": {
     "url": "/users/@me/mentions",
     "allowed_methods": [
+      "DELETE",
       "GET",
       "HEAD",
       "OPTIONS"
