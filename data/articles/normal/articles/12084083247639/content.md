@@ -1,4 +1,9 @@
-<p><span style="font-weight: 400">Calling all TikTok LIVE creators! </span></p>
+<div class="info-box">
+  Note: Setting up a new Discord role connection for TikTok LIVE Subscriptions
+  is no longer available. Existing account connections will continue remain
+  active.
+</div>
+<p><span style="font-weight: 400">Calling all TikTok LIVE creators!</span></p>
 <p>
   <span style="font-weight: 400"
     >The Discord role is now available as one of TikTok LIVE Subscription’s
@@ -22,29 +27,29 @@
   >
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e7ffa94f16d7866d04bef75a66cf2710e">
     <a href="#h_01GR7HHWTFSW2S5D3ZYQS5YKQ9" target="_self"
       ><span style="font-weight: 400"
         >Frequently Asked Questions for TikTok LIVE Creators</span
       ></a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e61a5a934b45816cc8dfc2acf2d90cc4b">
         <a href="#h_01GR7HJ60JA2H0TKN629JMN5MF" target="_self"
           ><span style="font-weight: 400"
             >How do I set up my Discord role customized perk?</span
           ></a
         >
       </li>
-      <li>
-        <span style="font-weight: 400"
-          ><a href="#h_01GR7HJG0HDXWR3QF3SJYJBPDK" target="_self"
+      <li data-list-item-id="e73a424b440df795fabe5f6fe863c1161">
+        <a href="#h_01GR7HJG0HDXWR3QF3SJYJBPDK" target="_self"
+          ><span style="font-weight: 400"
             >How do I create an exclusive Discord server, channel, or channels
-            for my TikTok LIVE subscribers to access?</a
-          ><br
-        /></span>
+            for my TikTok LIVE subscribers to access?</span
+          ></a
+        ><br /> 
       </li>
-      <li>
+      <li data-list-item-id="e7fa88681db6c666fb220aac2c20f497d">
         <a href="#h_01GR7HJPZ0Y627FV834EJW8T10" target="_self"
           ><span style="font-weight: 400"
             >What happens if someone unsubscribes from my LIVE
@@ -63,7 +68,7 @@
   to TikTok Support for further assistance.
 </h3>
 <h2 id="h_01GR7HJ60JA2H0TKN629JMN5MF">
-  <strong>Q: How do I set up my Discord role customized perk? </strong>
+  <strong>Q: How do I set up my Discord role customized perk?</strong>
 </h2>
 <p>
   <strong>A. </strong
@@ -73,8 +78,8 @@
     <strong>Creator Tools &gt; Subscription &gt; Customized Perks</strong> and
     <strong>toggle on</strong> the <strong>Discord role</strong>. Next, you’ll
     be prompted to enter your Discord login details to connect your Discord
-    account.
-  </span>
+    account.</span
+  >
 </p>
 <p>
   <span style="font-weight: 400"
@@ -92,22 +97,22 @@
   >
     click here</a
   ><span style="font-weight: 400">
-    to learn more about Discord for creators.
-  </span>
+    to learn more about Discord for creators.</span
+  >
 </p>
 <p>
   <span style="font-weight: 400"
     >Once your Discord account is connected, select the
     <strong>Discord server</strong> you want subscribers to have access to, or
     create a new server, and then click <strong>Authorize</strong>. This
-    connects your TikTok account to your Discord server. 
-  </span>
+    connects your TikTok account to your Discord server. </span
+  >
 </p>
 <h2 id="h_01GR7HJG0HDXWR3QF3SJYJBPDK">
   <strong
     >Q: How do I create an exclusive Discord server, channel, or channels for my
-    TikTok LIVE subscribers to access?
-  </strong>
+    TikTok LIVE subscribers to access?</strong
+  >
 </h2>
 <p>
   <strong>A.</strong
@@ -115,8 +120,8 @@
     In order to create a private Discord server or channel(s) exclusively for
     your LIVE subscriber community, you must first create a new Discord role.
     This role grants  subscribers access to any channel(s) designated to that
-    role. 
-  </span>
+    role. </span
+  >
 </p>
 <p>
   <span style="font-weight: 400">Follow the instructions </span
@@ -127,8 +132,8 @@
     >here</a
   ><span style="font-weight: 400">
     to create a new Discord role and channel. Once completed, follow the final
-    step below.
-  </span>
+    step below.</span
+  >
 </p>
 <p>
   <span style="font-weight: 400"
@@ -138,9 +143,7 @@
     <strong>Creator Tools &gt; Subscription &gt; Customized Perks</strong> and
     clicking </span
   ><strong>Discord settings </strong
-  ><span style="font-weight: 400"
-    >under the Discord role customized perk.
-  </span>
+  ><span style="font-weight: 400">under the Discord role customized perk.</span>
 </p>
 <h3 id="h_01HP7VQ7KGX1F09CQVY8PEVBAN">
   <span style="font-weight: 400"
@@ -154,15 +157,16 @@
     permission is granted.</span
   ><span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/12108330331671"
+      src="https://support.discord.com/hc/article_attachments/42034800188311"
       alt="TikTok-rearrange-role-demo.gif"
   /></span>
 </h3>
 <h2 id="h_01GR7HJPZ0Y627FV834EJW8T10">
   <span style="font-weight: 400"
     ><strong
-      >Q: What happens if someone unsubscribes from my LIVE Subscription?
-    </strong></span
+      >Q: What happens if someone unsubscribes from my LIVE
+      Subscription?</strong
+    ></span
   >
 </h2>
 <p>
@@ -172,8 +176,8 @@
       >reator Tools &gt; Subscription &gt; Customized Perks</strong
     >
     and then clicking <strong>Discord settings</strong> under the Discord role
-    customized perk.
-  </span>
+    customized perk.</span
+  >
 </p>
 <p>
   <span style="font-weight: 400"
@@ -181,7 +185,6 @@
     to <strong>Remove the Discord Subscription</strong> role after 7 days or
     24hrs; Kick from server after 7 days or 24hrs; or choose to take no action
     which allows the user to retain access to the Discord role and channel or
-    server. <strong
-      ><em><br /></em></strong
-  ></span>
+    server. </span
+  ><br /> 
 </p>
