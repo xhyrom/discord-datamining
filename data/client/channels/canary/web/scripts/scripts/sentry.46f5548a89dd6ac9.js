@@ -1,0 +1,186 @@
+(() => {
+  "use strict";
+  var e,
+    r,
+    o,
+    t,
+    n = {
+      219249(e, r, o) {
+        var t = o(501661),
+          n = o(774099),
+          i = o(56833),
+          d = o(883950),
+          a = o(871186),
+          l = o(363630);
+        let s = ["oppobrowser", "realmebrowser", "heytapbrowser"],
+          u = (function (e) {
+            let { maxBudgetMinute: r, maxBudgetHour: o } = e,
+              t = { slot: 0, budgetUsed: 0 },
+              n = { slot: 0, budgetUsed: 0 };
+            return () => {
+              let e = Date.now(),
+                i = Math.round(e / 1e3 / 60),
+                d = Math.round(e / 1e3 / 60 / 60);
+              return (
+                t.slot !== i && ((t.slot = i), (t.budgetUsed = 0)),
+                n.slot !== d && ((n.slot = d), (n.budgetUsed = 0)),
+                !!(t.budgetUsed < r) &&
+                  (t.budgetUsed++, !!(n.budgetUsed < o)) &&
+                  (n.budgetUsed++, !0)
+              );
+            };
+          })({ maxBudgetMinute: 1, maxBudgetHour: 3 });
+        window.DiscordSentry = (function () {
+          t.Ts({
+            tunnel: "/error-reporting-proxy/web",
+            dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
+            autoSessionTracking: !1,
+            environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
+            release: "discord_web-8d139074bd0de13e634872c36dbde2fdec9f9bd1",
+            beforeSend: function (e, r) {
+              let o;
+              return !(
+                (null != e.exception &&
+                  null != e.exception.values &&
+                  e.exception.values.every(
+                    (e) =>
+                      null == e.stacktrace ||
+                      (null != e.stacktrace.frames &&
+                        1 === e.stacktrace.frames.length),
+                  ) &&
+                  "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL) ||
+                s.some(
+                  (e) =>
+                    window.navigator.appVersion.toLowerCase().indexOf(e) >= 0,
+                )
+              ) &&
+                null == (o = window).jQuery &&
+                null == o.$ &&
+                null == o.BetterDiscord &&
+                null == o.BdApi &&
+                null == o.rambox &&
+                null == o.Vencord &&
+                null == o.VencordNative &&
+                "Aborted" !== e.message &&
+                "cancel captcha" !== e.message &&
+                u()
+                ? e
+                : null;
+            },
+            integrations: [
+              n.L({ onerror: !0, onunhandledrejection: !0 }),
+              i.F({
+                console: !0,
+                dom: !0,
+                fetch: !0,
+                history: !0,
+                sentry: !0,
+                xhr: !0,
+              }),
+              d.S(),
+            ],
+            ignoreErrors: [
+              "EADDRINUSE",
+              "BetterDiscord",
+              "EnhancedDiscord",
+              "Powercord",
+              "RecipeWebview",
+              "jQuery",
+              "localStorage",
+              "has already been declared",
+              "Cannot call hover while not dragging.",
+              "Cannot call beginDrag while dragging.",
+              "getHostNode",
+              "setupCSS",
+              "on missing remote object",
+              "ChunkLoadError",
+              "Cannot find module 'discord_utils'",
+              "Failed to setup Krisp module",
+              "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!",
+              "Non-Error promise rejection captured with keys:",
+              "Request has been terminated",
+              "Cannot resolve a Slate point from DOM point",
+              "Failed to fetch",
+              "no suitable image found",
+              "ResizeObserver loop limit exceeded",
+              "ResizeObserver loop completed with undelivered notifications.",
+              "The play() request was interrupted",
+              "could not play audio",
+              "notosans-400-normalitalic",
+            ],
+            denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
+          }),
+            a.NA("buildNumber", "580158"),
+            a.NA("builtAt", String("1784274162982"));
+          let e = window.GLOBAL_ENV.SENTRY_TAGS;
+          if (null != e && "object" == typeof e) for (let r in e) a.NA(r, e[r]);
+          return l;
+        })();
+      },
+    },
+    i = {};
+  function d(e) {
+    var r = i[e];
+    if (void 0 !== r) return r.exports;
+    var o = (i[e] = { exports: {} });
+    return n[e](o, o.exports, d), o.exports;
+  }
+  (d.m = n),
+    (d.d = (e, r) => {
+      for (var o in r)
+        d.o(r, o) &&
+          !d.o(e, o) &&
+          Object.defineProperty(e, o, { enumerable: !0, get: r[o] });
+    }),
+    (d.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r)),
+    (d.r = (e) => {
+      "u" > typeof Symbol &&
+        Symbol.toStringTag &&
+        Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+        Object.defineProperty(e, "__esModule", { value: !0 });
+    }),
+    (e = []),
+    (d.O = (r, o, t, n) => {
+      if (o) {
+        n = n || 0;
+        for (var i = e.length; i > 0 && e[i - 1][2] > n; i--) e[i] = e[i - 1];
+        e[i] = [o, t, n];
+        return;
+      }
+      for (var a = 1 / 0, i = 0; i < e.length; i++) {
+        for (var [o, t, n] = e[i], l = !0, s = 0; s < o.length; s++)
+          (!1 & n || a >= n) && Object.keys(d.O).every((e) => d.O[e](o[s]))
+            ? o.splice(s--, 1)
+            : ((l = !1), n < a && (a = n));
+        if (l) {
+          e.splice(i--, 1);
+          var u = t();
+          void 0 !== u && (r = u);
+        }
+      }
+      return r;
+    }),
+    (d.rv = () => "1.7.11"),
+    (r = { 44771: 0 }),
+    (d.O.j = (e) => 0 === r[e]),
+    (o = (e, o) => {
+      var t,
+        n,
+        [i, a, l] = o,
+        s = 0;
+      if (i.some((e) => 0 !== r[e])) {
+        for (t in a) d.o(a, t) && (d.m[t] = a[t]);
+        if (l) var u = l(d);
+      }
+      for (e && e(o); s < i.length; s++)
+        (n = i[s]), d.o(r, n) && r[n] && r[n][0](), (r[n] = 0);
+      return d.O(u);
+    }),
+    (t = this.webpackChunkdiscord_app =
+      this.webpackChunkdiscord_app || []).forEach(o.bind(null, 0)),
+    (t.push = o.bind(null, t.push.bind(t))),
+    (d.ruid = "bundler=rspack@1.7.11");
+  var a = d.O(void 0, ["48255", "64310", "56707"], () => d(219249));
+  a = d.O(a);
+})();
+//# sourceMappingURL=sentry.46f5548a89dd6ac9.js.map
