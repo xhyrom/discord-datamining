@@ -1,0 +1,121 @@
+.nameplatePreview__62b8c {
+  align-items: center;
+  border-radius: var(--radius-sm);
+  display: flex;
+  height: 42px;
+  position: relative;
+}
+.nameplatePreview__62b8c.large__62b8c {
+  height: 52px;
+}
+.nameplatePreview__62b8c.xlarge__62b8c {
+  height: 62px;
+}
+.density-cozy .nameplatePreview__62b8c {
+  height: 48px;
+}
+.density-cozy .nameplatePreview__62b8c.xsmall__62b8c {
+  height: 26px;
+}
+.density-cozy .nameplatePreview__62b8c.small__62b8c {
+  height: 30px;
+}
+.density-cozy .nameplatePreview__62b8c.large__62b8c {
+  height: 58px;
+}
+.density-cozy .nameplatePreview__62b8c.xlarge__62b8c {
+  height: 68px;
+}
+.density-default .nameplatePreview__62b8c {
+  height: 42px;
+}
+.density-default .nameplatePreview__62b8c.xsmall__62b8c {
+  height: 26px;
+}
+.density-default .nameplatePreview__62b8c.small__62b8c {
+  height: 30px;
+}
+.density-default .nameplatePreview__62b8c.large__62b8c {
+  height: 52px;
+}
+.density-default .nameplatePreview__62b8c.xlarge__62b8c {
+  height: 62px;
+}
+.density-compact .nameplatePreview__62b8c {
+  height: 38px;
+}
+.density-compact .nameplatePreview__62b8c.xsmall__62b8c {
+  height: 26px;
+}
+.density-compact .nameplatePreview__62b8c.small__62b8c {
+  height: 34px;
+}
+.density-compact .nameplatePreview__62b8c.large__62b8c {
+  height: 48px;
+}
+.density-compact .nameplatePreview__62b8c.xlarge__62b8c {
+  height: 58px;
+}
+.overlayContainer__62b8c {
+  flex: 1;
+  height: 100%;
+  margin-block: 0;
+  margin-inline: 8px 32px;
+  position: relative;
+}
+.nameplatePreview__62b8c.large__62b8c .overlayContainer__62b8c {
+  margin-block: 0;
+  margin-inline: 10px 38px;
+}
+.nameplatePreview__62b8c.xlarge__62b8c .overlayContainer__62b8c {
+  margin-block: 0;
+  margin-inline: 14px 44px;
+}
+.avatarContainer__62b8c {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  max-width: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.4s ease;
+  width: 100%;
+}
+.avatar__62b8c {
+  margin-inline-end: 12px;
+}
+.avatarVisible__62b8c {
+  opacity: 1;
+}
+.placeholderUsername__62b8c {
+  border-radius: 8px;
+  height: 14px;
+  opacity: 0.5;
+  width: 66%;
+}
+.nameplatePreview__62b8c.xsmall__62b8c .placeholderUsername__62b8c {
+  height: 8px;
+}
+.nameplatePreview__62b8c.small__62b8c .placeholderUsername__62b8c {
+  height: 10px;
+}
+.nameplatePreview__62b8c.large__62b8c .placeholderUsername__62b8c {
+  height: 16px;
+}
+.nameplatePreview__62b8c.xlarge__62b8c .placeholderUsername__62b8c {
+  height: 18px;
+}
+.theme-light .placeholderUsername__62b8c {
+  background-color: #aaaab2;
+}
+.theme-dark .placeholderUsername__62b8c {
+  background-color: #706f74;
+}
+.tagChiplet__62b8c {
+  margin-inline-start: var(--space-4);
+}
+.inheritWidth__62b8c {
+  width: inherit;
+}
+
+/*# sourceMappingURL=23443.5e8cfff75ac1c046.css.map*/

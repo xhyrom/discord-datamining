@@ -1,0 +1,16 @@
+.clipThumbOverlay_e13340 {
+  box-sizing: border-box;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  opacity: 0;
+  padding: var(--space-8);
+  pointer-events: none;
+  transition: opacity 0.1s ease;
+}
+.clipThumbOverlay_e13340.isVisible_e13340 {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=24820.17fad8f15048afb8.css.map*/
