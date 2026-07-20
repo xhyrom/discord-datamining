@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Product Designer, Engagement
+## Senior Product Designer, Consumer
 
 **Location:** San Francisco Bay Area
 
@@ -10,11 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8614424002](https://discord.com/jobs/8614424002)
 
-**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
+**Updated At:** Mon, 20 Jul 2026 18:39:13 GMT
 
 **Job Description:**
-Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Our mission on Engagement is to improve both the quality and depth of Discord’s core product value - which is tomake Discord the best place to hang out online and play games with friends. Millions of people use Discord every day to find belonging, create connections, and talk… and we are the center of this.
-Our work on Engagement focuses on improving and simplifying the foundations of the Discord experience at large. This could be streamlining how users customize their settings, to the way they express themselves over text, voice, and video. You’ll be part of a multi-faceted team flexing across surface area ownership, and acting as a guardian on our core foundations.
+Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Our mission on the Consumer team is to improve both the quality and depth of Discord’s core product value - which is to make Discord the best place to hang out online and play games with friends. Millions of people use Discord every day to find belonging, create connections, and talk… and we are the center of this.
+The work focuses on improving and simplifying the foundations of the Discord experience at large. This could be streamlining how users customize their settings, to the way they express themselves over text, voice, and video. You’ll be part of a multi-faceted team flexing across surface area ownership, and acting as a guardian on our core foundations.
 As a product designer, you'll be involved with the full end-to-end product development process, from brainstorming to launch. You'll use a balance of strategic thinking, product principles, systems design, and strong visual design skills to iterate and innovate on the Discord product. If you're interested in joining a passionate team of designers that are designing features that will be used by millions of people across the world, come join us.
 This position will be located in the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma Counties), or be willing to relocate to the San Francisco Bay Area.
 What You'll Be Doing
