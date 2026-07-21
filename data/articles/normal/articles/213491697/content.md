@@ -224,7 +224,7 @@
         </tr>
         <tr style="height: 22px">
           <td>Google Chrome</td>
-          <td>Google Chrome 86+</td>
+          <td>Google Chrome 108+</td>
         </tr>
         <tr style="height: 22px">
           <td>Mozilla Firefox</td>
