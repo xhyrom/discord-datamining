@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8637188002](https://discord.com/jobs/8637188002)
 
-**Updated At:** Sat, 18 Jul 2026 19:02:58 GMT
+**Updated At:** Tue, 21 Jul 2026 03:57:58 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are seeking an experienced Senior Salesforce Technical Lead to join Discord's Business Systems team. In this role, you will lead the architecture, design, and development of Salesforce solutions across Ad Sales. You will partner closely with the Technical PM, business stakeholders, and cross-functional teams to deliver scalable, high-quality Salesforce solutions that power Discord's core business operations.
@@ -36,13 +36,12 @@ Proven experience architecting integrations using REST/SOAP APIs, Middleware, an
 Deep knowledge of SDLC, ITGC, DevOps, and CI/CD pipelines within a Salesforce environment.
 Strong communication skills with the ability to work across technical and non-technical team members.
 Experience with Agile/Scrum methodology, including sprint planning, standups, and retrospectives; proficient with Jira for sprint tracking and backlog management, and Jira Service Manager (JSM) for incident tracking and change management.
-Familiarity with the Quote-to-Cash cycle in Salesforce, including CPQ, product configuration, pricing rules, quote templates, and approval workflows.
 Proficient with version control using Git, including branching strategies, pull requests, and code reviews within a Salesforce development workflow (e.g., Copado, Gearset, or SFDX-based pipelines).
-Experience with data migration tools and processes, including Salesforce Data Loader, Bulk API, and data validation and cleansing strategies for large-scale data imports and exports.
-Strong understanding of Salesforce environment management, including sandbox strategy (Developer, Partial, Full), scratch orgs, change set deployments, and release management processes.
+Experience with Salesforce environment management (sandbox strategy, release management) and data migration tools (Data Loader, Bulk API).
 
 Preferred Qualifications
 
+Familiarity with the Quote-to-Cash cycle in Salesforce, including CPQ, product configuration, pricing rules, quote templates, and approval workflows.
 Salesforce Platform Developer II or Application Architect certification.
 Experience with HubSpot and Asana integrations within a Salesforce ecosystem.
 Familiarity with Ad Sales platforms and media industry workflows.
