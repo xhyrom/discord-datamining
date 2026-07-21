@@ -307,11 +307,19 @@
 <h1 id="h_01K32B6G984P3THJEWREKWJF3C">
   How to Set Your Display Name Style Options
 </h1>
+<div class="info-box">
+  <strong>Note</strong>: Animations will not show up on mobile at this time.
+  Only fonts, colors, and effects (without animation) will display.
+</div>
 <p>
   Display Name Styles allow you to personalize your display name with three
   customization components:
 </p>
 <h2 id="h_01K32B6G98V14GP2G300KV0CRN">Fonts</h2>
+<div class="exp-box">
+  <strong>Note</strong>: New fonts are currently an experiment and are not
+  widely available at this time.
+</div>
 <p>Choose from 8 unique fonts:</p>
 <ul>
   <li
@@ -376,6 +384,10 @@
   <span style="color: #666666">Different Fonts Available</span>
 </h4>
 <h2 id="h_01K32B6G9A1GE7G6WT8MQ0FA7G">Effects</h2>
+<div class="exp-box">
+  <strong>Note</strong>: New effects are currently an experiment and are not
+  widely available at this time.
+</div>
 <p>Select from 5 effect options:</p>
 <ul>
   <li
@@ -573,3 +585,6 @@
     >Display Name Styles toggle located under Accessibility</span
   >
 </h4>
+<p> </p>
+<p> </p>
+<p> </p>
