@@ -1,0 +1,133 @@
+.titleBar__421ed {
+  z-index: 3001;
+  -webkit-app-region: drag;
+  flex-shrink: 0;
+}
+.withFrame__421ed {
+  height: 18px;
+  margin-top: 4px;
+}
+.typeMacOS__421ed {
+  position: absolute;
+  width: 72px;
+}
+.typeMacOS__421ed .macDragRegion__421ed {
+  padding-bottom: 32px;
+  width: 70px;
+}
+.typeMacOSWithFrame__421ed {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 24px;
+  justify-content: space-between;
+  margin-top: 0;
+}
+.typeMacOSWithFrame__421ed .macButtons__421ed {
+  margin-top: -2px;
+  margin-inline-end: -70px;
+}
+.typeWindows__421ed {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+.wordmark__421ed {
+  font-size: 0;
+  pointer-events: none;
+}
+.wordmarkWindows__421ed {
+  color: var(--text-muted);
+  inset-inline-start: 0;
+  padding: 4px 9px 3px;
+  position: absolute;
+  top: 0;
+}
+.wordmarkMacOS__421ed {
+  margin: 0 auto;
+}
+.winButton__421ed {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  pointer-events: auto;
+  position: relative;
+  top: -4px;
+  width: 28px;
+  -webkit-app-region: no-drag;
+}
+.winButtonMinMax__421ed {
+}
+.winButtonMinMax__421ed:hover {
+  background-color: var(--interactive-background-hover);
+  color: var(--interactive-text-hover);
+}
+.winButtonMinMax__421ed:active {
+  background-color: var(--interactive-background-active);
+  color: var(--interactive-text-active);
+}
+.winButtonClose__421ed {
+}
+.winButtonClose__421ed:hover {
+  background-color: var(--background-feedback-critical);
+  color: var(--white);
+}
+.winButton__421ed {
+  color: var(--interactive-text-default);
+}
+.macButtons__421ed {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  width: 70px;
+}
+.macButtons__421ed svg {
+  display: block;
+  visibility: hidden;
+}
+.focused__421ed .macButtons__421ed:hover svg {
+  visibility: visible;
+}
+.macButton__421ed {
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+  -webkit-app-region: no-drag;
+}
+.macButtonClose__421ed,
+.macButtonMaximize__421ed,
+.macButtonMinimize__421ed {
+}
+.macButtonMaximize__421ed {
+  background-color: #34c749;
+}
+.macButtonMinimize__421ed {
+  background-color: #fdbc40;
+}
+.macButtonClose__421ed {
+  background-color: #fc615d;
+}
+.unfocused__421ed .macButtonClose__421ed,
+.unfocused__421ed .macButtonMaximize__421ed,
+.unfocused__421ed .macButtonMinimize__421ed {
+  background-color: var(--background-mod-subtle);
+}
+.custom-theme-background .withBackgroundOverride__421ed {
+  background: var(
+    --background-gradient-app-frame,
+    var(--background-base-lowest)
+  );
+}
+.custom-theme-background .withBackgroundOverride__421ed.typeWindows__421ed {
+  margin-top: 0;
+  padding-top: 4px;
+}
+
+/*# sourceMappingURL=65566.45eba97b592c6805.css.map*/
