@@ -1,0 +1,17 @@
+.container_e93594 {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.icon_e93594 {
+  color: var(--text-default);
+  margin-inline-start: -2px;
+  z-index: 10;
+}
+@container premium-marketing-page-container (min-width: 720px) {
+  .icon_e93594 {
+    color: #fff;
+  }
+}
+
+/*# sourceMappingURL=90206.150d1eb5cf054bb7.css.map*/
