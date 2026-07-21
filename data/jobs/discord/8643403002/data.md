@@ -4,18 +4,17 @@
 
 **Location:** San Francisco Bay Area 
 
-**Id:** 8517367002 <br/>
+**Id:** 8643403002 <br/>
 **Internal Job Id:** 6402299002 <br/>
 **Requisition Id:** R-107260 <br/>
 
-**Discord Jobs:** [https://discord.com/jobs/8517367002](https://discord.com/jobs/8517367002)
+**Discord Jobs:** [https://discord.com/jobs/8643403002](https://discord.com/jobs/8643403002)
 
-**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
+**Updated At:** Tue, 21 Jul 2026 19:11:19 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord exists to give people the power to create space to find belonging — to talk regularly with the people they care about and build genuine relationships with friends and communities close to home or around the world.
 We're looking for a Manager to lead our Scaled Abuse Countermeasures and Research (SCAR) team — Discord's first line of defense against scaled abuse. SCAR combines rapid incident response with deep threat research and signal generation across bulk fake account creation, login abuse, spam, scams, fraud, and other high-volume threats. This is an opportunity to reshape how the team operates: set a sharper strategy, stand up a structured research program, and lean heavily into ML and AI-powered automation to replace today's manual workflows. This role reports to the Director of Safety Automation.
-&amp;nbsp;
 What You'll Be Doing
 
 Lead and grow the SCAR team, a group of Scaled Abuse Scientists who serve as Discord's first line of defense against bulk fake account creation, login abuse, spam, scams, fraud, and other high-volume threats.
