@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8377248002](https://discord.com/jobs/8377248002)
 
-**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
+**Updated At:** Tue, 21 Jul 2026 23:35:46 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.The Safety Processing team is responsible for the systems that power Discord's ability to detect, review, and enforce against harmful content at scale. We build the infrastructure and decision systems that enable accurate, efficient, and fair content moderation across all of Discord. We're looking for a Senior Software Engineer who can handle complex, multi-milestone projects and deliver high-quality systems that protect millions of users daily.
@@ -52,7 +52,6 @@ Experience with cloud platforms (GCP/AWS)
 A strong passion for Discord and making online communities safer
 
 &amp;nbsp;
-
 This position is US-based only. We are seeking candidates located in the Los Angeles or San Francisco Bay Areas. Candidates in the Los Angeles area can work remotely. Candidates in the San Francisco area are required to be in the office 2 days per week. Relocation assistance may be available to the San Francisco Bay Area.
 Candidates must be located within one of the following counties:
 
