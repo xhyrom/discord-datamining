@@ -597,24 +597,6 @@
   >.<br /> 
 </p>
 <h2 id="h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Game Shop</h2>
-<div class="mega-box">
-  Offer:<br /><strong>From</strong> July 2, (11:00AM PT)
-  <strong>through</strong> July 16, (11:00AM PT)
-  <strong
-    >all players can earn Discord Orbs on purchases of official Rust in-game
-    items in the Rust Game Shop on Discord, including gifts purchased for other
-    players. The amount of Orbs earned will vary based on the purchase
-    amount. </strong
-  ><br /><strong
-    >For more information about Discord Orbs, including how to use and redeem
-    them, please see the </strong
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><strong>Discord Orbs FAQ</strong></a
-  ><strong>.</strong>
-</div>
 <p>
   <strong
     >Q: I'm having trouble linking my Rust account to receive my item. What
