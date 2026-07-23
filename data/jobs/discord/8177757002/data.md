@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Full-Stack Software Engineer, Quests Experience
+## Senior Full-Stack Software Engineer, Ads
 
 **Location:** San Francisco Bay Area
 
@@ -10,32 +10,33 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8177757002](https://discord.com/jobs/8177757002)
 
-**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
+**Updated At:** Thu, 23 Jul 2026 22:24:39 GMT
 
 **Job Description:**
-Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are looking for a highly technical, creative, hands-on, and impact-focused Senior Software Engineer to join our growing Ads team.
-Our team is revolutionizing the way users interact with our platform through innovative ad formats (including Quests). We are driven by a passion for delivering exceptional user experiences while scaling our platform to new heights. These products enable us to generate revenue by building a win-win-win suite of distribution tools for game developers, players, and Discord. Join us in shaping the future of digital advertising and marketplace interactions!
+Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are looking for a highly technical, creative, hands-on, and impact-focused Software Engineer to join our growing Ads team.
+Our team is revolutionizing the way users interact with our platform through innovative ads formats (including&amp;nbsp;Quests). We are driven by a passion for delivering exceptional user experiences while scaling our platform to new heights. These products enable us to generate revenue by building a win-win-win suite of distribution tools for game developers, players, and Discord. Join us in shaping the future of digital advertising and marketplace interactions.
 To learn more about Discord Engineering, take a look at our&amp;nbsp;engineering blog!
-What you'll be doing
+What You'll Be Doing
 
-Design, build and maintain new Ads products from the backend to frontend. Collaborate with both engineers on and off the team - from Revenue Infrastructure, to Core Tech, to Machine Learning, to Data Science.
-Be a strategic partner with engineering, product, and cross functional leadership in designing, developing and scaling digital advertising features that drive revenue growth and enhance user engagement.
-Architect simple and maintainable systems to enable us to launch quickly and iterate while sustaining a high product and technical quality bar.
-Model strong ownership by acting autonomously when possible and looping in others to build confidence on critical questions. Introduce coding and operational best practices to the team; always be learning &amp;amp; teaching.
-Own projects end to end — you’ll be responsible for working with Product and other stakeholders to refine requirements, creating technical designs and specs, implementing changes, and seeing projects through to launch and maintenance.
+Build new ads products from the backend to the frontend that deliver direct value to users through rewards
+Build a platform that enable advertisers and operations teams to manage their ad campaigns
+Make architectural improvements to improve the long term maintenance of our products and systems
+Collaborate with engineers, product managers and designers to create delightful products that people love
+Work with our analytics and experimentation frameworks to help optimize our ads products
+Stay up-to-date on the latest industry technologies
 
 What you should have
 
-A focus on impact.&amp;nbsp;You have a sharp eye for what changes can bring a product from good to great. You collaborate closely with product managers, designers, analysts, and other engineers to define great solutions to business problems.
-A sense of ownership.&amp;nbsp;You believe in solving a problem completely rather than simply shipping a solution. You operate autonomously and follow through on your commitments.
+Full-stack experience with hands on experience with Typescript, React, Python or equivalents
+Strive for excellence mentality.&amp;nbsp;You believe in solving a problem completely rather than simply shipping a solution. You have high attention to detail, and can deliver on building beautiful products.
+Collaboration. Your updates are transparent and highlight both everything that’s going great and going wrong with a project - bringing your team along for the ride. In addition, you can build strong relationships with your teammates around you.
 A growth mindset.&amp;nbsp;You view mistakes as learning opportunities and build upon your successes. You challenge yourself and those around you to continuously improve.
-A love of mentorship.&amp;nbsp;Helping fellow engineers, providing feedback and guidance on system architecture, API design, data modeling, and tradeoffs.
-4+ years of experience
+4+ years of experience, working with similar technologies.
 
 Bonus Points
 
-Expertise with Typescript, React, React Native, and Python
-Familiarity with experimentation and analysis
+Familiarity with experimentation tooling and analysis
+React Native and Mobile development (iOS/Android)
 Contributions to open-source projects
 Interest or passion for the Discord platform
 
