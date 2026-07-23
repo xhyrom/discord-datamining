@@ -1,6 +1,6 @@
 # Job Listing
 
-## Detection and Enforcement Program Manager
+## Program Manager, Detection & Enforcement, Youth Safety
 
 **Location:** San Francisco Bay Area
 
@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8635949002](https://discord.com/jobs/8635949002)
 
-**Updated At:** Tue, 21 Jul 2026 21:08:39 GMT
+**Updated At:** Thu, 23 Jul 2026 20:15:49 GMT
 
 **Job Description:**
-Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.As the Detection and Enforcement Program Manager on the Youth Safety team, you will program manage product and process initiatives that drive more effective and efficient mitigations across the minor safety remit. You will serve as the internal subject matter expert across product, detection, tooling, and bugs, including working with XFN teams to drive safety improvements. You will report into the Senior Manager of Youth Safety.
+Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.As the Program Manager, Detection &amp;amp; Enforcement, Youth Safety on the Youth Safety team, you will program manage product and process initiatives that drive more effective and efficient mitigations across the minor safety remit. You will serve as the internal subject matter expert across product, detection, tooling, and bugs, including working with XFN teams to drive safety improvements. You will report into the Senior Manager of Youth Safety.
 Please note: This role involves exposure to potentially disturbing topics such as child sexual abuse material, exploitation imagery, and grooming-related content. Wellness support is provided.
 What You’ll be Doing:
 
