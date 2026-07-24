@@ -5,15 +5,6 @@
   friends know exactly what to get you. This article covers everything you need
   to know about how it all works.
 </p>
-<div class="warn-box">
-  <strong>Rust Players:</strong> If you made a purchase and didn't get your item
-  after linking, please launch Rust and re-link your Discord account from inside
-  the game. You can do this by clicking 'Social' in the bottom right, then 'Find
-  your Friends on Discord'. See details on
-  <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E"
-    >how to link your Discord account here</a
-  >. 
-</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
