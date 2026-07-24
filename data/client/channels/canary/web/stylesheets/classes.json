@@ -892,6 +892,7 @@
   "underline": "underline_ada32f",
   "strikethrough": "strikethrough_e0923d",
   "fakeLink": "fakeLink_ada32f",
+  "silentPrefix": "silentPrefix_ada32f",
   "inlineCode": "inlineCode_ada32f",
   "spoiler": "spoiler_ada32f",
   "codeBlockText": "codeBlockText_ada32f",
