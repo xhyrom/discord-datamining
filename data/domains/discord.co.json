@@ -24,6 +24,7 @@
     "event-stream",
     "click",
     "staging-gateway-us-east1-c",
+    "admin-dev",
     "airflow-ai-stg",
     "staging-media",
     "vector-prd",
@@ -36,10 +37,10 @@
     "enam-rtc-sfu-finder",
     "staging-streamkit",
     "remote-auth-gateway",
-    "staging-images-1",
     "staging-gateway-us-east1-d",
+    "staging-images-1",
     "otelcol",
     "datahub-prd"
   ],
-  "subdomain_count": 40
+  "subdomain_count": 41
 }
