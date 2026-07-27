@@ -258,66 +258,6 @@
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8485797002/ai_opt_out"
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8538797002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6410223002,
-      "location": {
-        "name": "San Francisco Bay Area"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8538797002,
-      "updated_at": "2026-07-16T17:15:46-04:00",
-      "requisition_id": "R-107275",
-      "title": "Director, Customer Experience",
-      "company_name": "Discord",
-      "first_published": "2026-05-10T22:58:46-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The Customer Experience team at Discord has the privilege of supporting our communities, listening to their feedback, and sharing these insights with other teams to help make the Discord experience the best that it can possibly be. We’re looking for a Director of Customer Experience to lead the next chapter of our support story: a bold, AI-powered transformation of how we serve tens of millions of users worldwide.&lt;/p&gt;\n&lt;p&gt;You’ll inherit a talented, established team of in-house CX specialists and own the strategy, culture, and execution that defines what great support looks like at Discord. This is a high-visibility, high-impact role for a senior leader who thrives on building world class systems that solve problems for customers. This person will report to the Senior Director of Scaled Operations.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Define and drive a CX transformation strategy that harnesses AI, intelligent tooling, and data-driven insights to deliver faster, higher-quality support at global scale&lt;/li&gt;\n&lt;li&gt;Lead, develop, and inspire a global team of in-house CX specialists building a culture of ownership, continuous improvement, and genuine care for our users&lt;/li&gt;\n&lt;li&gt;Own the end-to-end user support experience, setting the vision for quality, efficiency, and satisfaction across all channels and contact types&lt;/li&gt;\n&lt;li&gt;Champion AI-first support models including intelligent triage, AI agents, and proactive deflection strategies, partnering closely with technical teams to bring them to life&lt;/li&gt;\n&lt;li&gt;Partner cross-functionally with Product, Engineering, and Data teams to identify upstream drivers of contact volume, close the feedback loop, and measurably improve the user experience&lt;/li&gt;\n&lt;li&gt;Define and defend the KPIs that matter and translate data into executable strategy that moves the needle&lt;/li&gt;\n&lt;li&gt;Build and maintain high-trust operational partnerships to ensure global coverage, quality consistency, and resilience across all support channels&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;10+ years in customer support or customer experience, including 5+ years leading large-scale global support organizations at major technology companies&lt;/li&gt;\n&lt;li&gt;A proven track record of CX transformation at scale. You’ve modernized tooling, implemented AI-powered support, and have the metrics to prove it moved the needle&lt;/li&gt;\n&lt;li&gt;Deep fluency in AI-powered support models. You understand how to build a modern support stack, maximize automation, and know where human judgment still wins&lt;/li&gt;\n&lt;li&gt;Exceptional people leadership. You develop leaders, grow high-performing teams, and create environments where people do the best work of their careers&lt;/li&gt;\n&lt;li&gt;Strong analytical fluency. You’re comfortable in the data, can diagnose what’s broken, and translate insight into executable strategy&lt;/li&gt;\n&lt;li&gt;A highly collaborative operating style. You build strong cross-functional partnerships with Product, Engineering, Finance, and Legal, and know how to drive outcomes across organizational lines&lt;/li&gt;\n&lt;li&gt;Genuine enthusiasm for Discord’s mission and an intuition for what community-driven platforms demand from their support experience&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Hands-on experience implementing or scaling AI support agents (e.g., conversational AI platforms, automated resolution tools)&lt;/li&gt;\n&lt;li&gt;Deep familiarity with Zendesk or enterprise CX platforms at significant scale&lt;/li&gt;\n&lt;li&gt;Background in Trust &amp;amp; Safety or experience supporting policy-sensitive user issues&lt;/li&gt;\n&lt;li&gt;Experience managing global vendor or BPO relationships as part of a broader support strategy&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available. &lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $224,000 to $252,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4000668002,
-          "name": "Customer Experience",
-          "child_ids": [],
-          "parent_id": 4094263002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ],
-      "ai_disclaimer": null,
-      "include_ai_disclaimer": false,
-      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8538797002/ai_opt_out"
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8571766002",
       "data_compliance": [
         {
@@ -1044,66 +984,6 @@
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8637648002/ai_opt_out"
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8606300002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6437426002,
-      "location": {
-        "name": "San Francisco Bay Area"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8606300002,
-      "updated_at": "2026-07-16T17:15:46-04:00",
-      "requisition_id": "R-107330",
-      "title": "Safety Policy Lead, Youth Safety",
-      "company_name": "Discord",
-      "first_published": "2026-06-30T12:52:39-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We are seeking an experienced Safety Policy Lead to own Discord&#39;s youth safety policy portfolio. As a member of the Safety Policy team within Product Policy, you will drive policy development and lifecycle management across the full spectrum of youth safety harms: child sexual abuse material, grooming, and child exploitation. This role requires deep domain expertise, strong regulatory literacy, and the ability to translate complex child safety requirements into enforceable policy and durable implementation.&lt;/p&gt;\n&lt;p&gt;This is a lifecycle ownership role, not a drafting role. You will be accountable for policy quality from problem identification through enforcement quality, with visibility into implementation, QA, and the feedback loops that determine whether policy intent survives contact with enforcement.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Please note: This role involves regular exposure to potentially disturbing content, including child sexual abuse material, exploitation imagery, and grooming-related content. Wellness support is provided.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Research and develop safety policies governing youth safety harms on Discord, including CSAM, grooming and solicitation, child exploitation, and age assurance, covering both reactive harm response and proactive age-appropriate design.&lt;/li&gt;\n&lt;li&gt;Own the full policy lifecycle for your domain: problem scoping, data justification, structured XFN consultation, testing against enforcement criteria, and post-launch feedback loop management.&lt;/li&gt;\n&lt;li&gt;Partner with Legal early in the development process. Embed compliance requirements for KOSA, COPPA, DSA Article 28, and the Online Safety Act into policy design before drafting begins.&lt;/li&gt;\n&lt;li&gt;Co-develop enforcement infrastructure with Trust and Safety, Engineering, and ML teams, including golden datasets, classification hierarchies, ML signal specifications, and IKB anchor criteria.&lt;/li&gt;\n&lt;li&gt;Own the feedback loop from implementation and QA back to your policy work. When QA findings or overturn data indicate a policy gap, you drive the revision.&lt;/li&gt;\n&lt;li&gt;Collaborate with civil society, NCMEC, ICAC, and other external child safety organizations. Represent Discord externally in this domain with credibility and consistency.&lt;/li&gt;\n&lt;li&gt;Deliver rapid policy responses to emerging child safety threats, including cross-functional coordination during incidents and regulatory notifications where applicable.&lt;/li&gt;\n&lt;li&gt;Own at least one functional domain area for the Safety Policy team beyond your harm portfolio. Current team needs include policy implementation systems, AI/LLM governance, or safety-by-design frameworks.&lt;/li&gt;\n&lt;li&gt;Expected travel: 15%&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;li1&quot;&gt;5+ years of experience developing policy (not solely enforcing or operationalizing it) in trust and safety, child safety, or a related domain at a technology platform or civil society organization focused on child protection.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Deep expertise in youth safety: CSAM, NCMEC/ICAC frameworks, CSAM hash-matching systems, grooming and solicitation patterns, age assurance methodologies, and the regulatory landscape governing minors online.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Direct experience with KOSA, COPPA, DSA child safety provisions, and/or the Online Safety Act. Regulatory literacy is required, not a bonus.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Proven ability to write policy that survives implementation: clear enforcement criteria, defined classification hierarchies, and usable edge case guidance.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Experience working with ML and automation teams to translate policy criteria into detection signals. You do not need to write the model, but you need to know what the model needs from you.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Comfort making decisions under ambiguity and pressure.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Strong written and verbal communication for audiences ranging from frontline moderators to regulators to executive leadership.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Bachelor&#39;s degree or equivalent professional experience.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Advanced degree in law, public policy, child development, psychology, or a related field.&lt;/li&gt;\n&lt;li&gt;Experience with Discord&#39;s platform or gaming and creator communities.&lt;/li&gt;\n&lt;li&gt;Multilingual capabilities, particularly in languages relevant to Discord&#39;s global user base&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $192,000 to $216,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4054683002,
-          "name": "Policy",
-          "child_ids": [],
-          "parent_id": 4094263002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ],
-      "ai_disclaimer": null,
-      "include_ai_disclaimer": false,
-      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8606300002/ai_opt_out"
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8614209002",
       "data_compliance": [
         {
@@ -1162,6 +1042,66 @@
       "ai_disclaimer": null,
       "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8614209002/ai_opt_out"
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8606300002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "internal_job_id": 6437426002,
+      "location": {
+        "name": "San Francisco Bay Area"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 8606300002,
+      "updated_at": "2026-07-16T17:15:46-04:00",
+      "requisition_id": "R-107330",
+      "title": "Safety Policy Lead, Youth Safety",
+      "company_name": "Discord",
+      "first_published": "2026-06-30T12:52:39-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We are seeking an experienced Safety Policy Lead to own Discord&#39;s youth safety policy portfolio. As a member of the Safety Policy team within Product Policy, you will drive policy development and lifecycle management across the full spectrum of youth safety harms: child sexual abuse material, grooming, and child exploitation. This role requires deep domain expertise, strong regulatory literacy, and the ability to translate complex child safety requirements into enforceable policy and durable implementation.&lt;/p&gt;\n&lt;p&gt;This is a lifecycle ownership role, not a drafting role. You will be accountable for policy quality from problem identification through enforcement quality, with visibility into implementation, QA, and the feedback loops that determine whether policy intent survives contact with enforcement.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Please note: This role involves regular exposure to potentially disturbing content, including child sexual abuse material, exploitation imagery, and grooming-related content. Wellness support is provided.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Research and develop safety policies governing youth safety harms on Discord, including CSAM, grooming and solicitation, child exploitation, and age assurance, covering both reactive harm response and proactive age-appropriate design.&lt;/li&gt;\n&lt;li&gt;Own the full policy lifecycle for your domain: problem scoping, data justification, structured XFN consultation, testing against enforcement criteria, and post-launch feedback loop management.&lt;/li&gt;\n&lt;li&gt;Partner with Legal early in the development process. Embed compliance requirements for KOSA, COPPA, DSA Article 28, and the Online Safety Act into policy design before drafting begins.&lt;/li&gt;\n&lt;li&gt;Co-develop enforcement infrastructure with Trust and Safety, Engineering, and ML teams, including golden datasets, classification hierarchies, ML signal specifications, and IKB anchor criteria.&lt;/li&gt;\n&lt;li&gt;Own the feedback loop from implementation and QA back to your policy work. When QA findings or overturn data indicate a policy gap, you drive the revision.&lt;/li&gt;\n&lt;li&gt;Collaborate with civil society, NCMEC, ICAC, and other external child safety organizations. Represent Discord externally in this domain with credibility and consistency.&lt;/li&gt;\n&lt;li&gt;Deliver rapid policy responses to emerging child safety threats, including cross-functional coordination during incidents and regulatory notifications where applicable.&lt;/li&gt;\n&lt;li&gt;Own at least one functional domain area for the Safety Policy team beyond your harm portfolio. Current team needs include policy implementation systems, AI/LLM governance, or safety-by-design frameworks.&lt;/li&gt;\n&lt;li&gt;Expected travel: 15%&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;li1&quot;&gt;5+ years of experience developing policy (not solely enforcing or operationalizing it) in trust and safety, child safety, or a related domain at a technology platform or civil society organization focused on child protection.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Deep expertise in youth safety: CSAM, NCMEC/ICAC frameworks, CSAM hash-matching systems, grooming and solicitation patterns, age assurance methodologies, and the regulatory landscape governing minors online.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Direct experience with KOSA, COPPA, DSA child safety provisions, and/or the Online Safety Act. Regulatory literacy is required, not a bonus.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Proven ability to write policy that survives implementation: clear enforcement criteria, defined classification hierarchies, and usable edge case guidance.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Experience working with ML and automation teams to translate policy criteria into detection signals. You do not need to write the model, but you need to know what the model needs from you.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Comfort making decisions under ambiguity and pressure.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Strong written and verbal communication for audiences ranging from frontline moderators to regulators to executive leadership.&lt;/li&gt;\n&lt;li class=&quot;li1&quot;&gt;Bachelor&#39;s degree or equivalent professional experience.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Advanced degree in law, public policy, child development, psychology, or a related field.&lt;/li&gt;\n&lt;li&gt;Experience with Discord&#39;s platform or gaming and creator communities.&lt;/li&gt;\n&lt;li&gt;Multilingual capabilities, particularly in languages relevant to Discord&#39;s global user base&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $192,000 to $216,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4054683002,
+          "name": "Policy",
+          "child_ids": [],
+          "parent_id": 4094263002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "ai_disclaimer": null,
+      "include_ai_disclaimer": false,
+      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8606300002/ai_opt_out"
     },
     {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8177757002",
@@ -1706,67 +1646,6 @@
       "ai_disclaimer": null,
       "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8637188002/ai_opt_out"
-    },
-    {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8582693002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "education": "education_optional",
-      "internal_job_id": 6428158002,
-      "location": {
-        "name": "San Francisco Bay Area"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8582693002,
-      "updated_at": "2026-07-16T17:15:46-04:00",
-      "requisition_id": "R-107312",
-      "title": "Senior Sales Tools and Process Manager",
-      "company_name": "Discord",
-      "first_published": "2026-06-16T17:54:14-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is looking for a Senior Manager, Sales Tools &amp;amp; Process to own the systems, workflows, and automation that power how Discord B2B sells and scales across business units. Reporting to the Sr. Director of Revenue Operations, you will be the single-threaded owner of Salesforce platform management, end-to-end sales process design, and AI-driven operational enhancements. This is a high-visibility IC role for someone who thrives at the intersection of systems thinking, process engineering, and hands-on technical execution.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Own the Salesforce business requirements roadmap, translating revenue team needs into platform capabilities; execute light configuration and dev work (flows, validation rules, custom objects, dashboards) to unblock teams&lt;/li&gt;\n&lt;li&gt;Serve as the primary RevOps interface to Engineering and IT for Salesforce development, managing prioritization, sprint intake, and release coordination&lt;/li&gt;\n&lt;li&gt;Define data governance standards including pipeline hygiene, field definitions, and object architecture across all revenue pillars&lt;/li&gt;\n&lt;li&gt;Design and operationalize the end-to-end sales process: from pitch and proposal through pricing, legal review, deal execution, and post-sale handoff across all revenue lines&lt;/li&gt;\n&lt;li&gt;Create process documentation, playbooks, and guardrails that standardize how deals move through the funnel; identify and eliminate bottlenecks by mapping workflows and benchmarking cycle times&lt;/li&gt;\n&lt;li&gt;Define and drive the AI and automation roadmap for Discord B2B, identifying high-impact opportunities across the full revenue lifecycle and deploying solutions that reduce manual effort, accelerate decision-making, and unlock new operational capabilities for every team in the organization&lt;/li&gt;\n&lt;li&gt;Serve as the central evaluator of all new tools, platforms, and vendor solutions for Discord B2B, owning the end-to-end process from discovery and pilot through procurement, rollout, and adoption measurement to ensure every investment drives measurable gains in seller productivity and operational efficiency.&lt;/li&gt;\n&lt;li&gt;Partner cross-functionally with Sales, BD, Product, PMM, Legal, Finance, Accounting, Business Systems, and Engineering&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;8+ years in Revenue Operations, Sales Operations, or Business Operations with experience owning sales tools and process at scale&lt;/li&gt;\n&lt;li&gt;Deep Salesforce expertise including hands-on configuration, flows, custom objects, and reporting; Admin certification preferred&lt;/li&gt;\n&lt;li&gt;Proven track record designing end-to-end sales processes across complex, multi-product organizations&lt;/li&gt;\n&lt;li&gt;Demonstrated experience deploying AI and automation solutions in a revenue operations or GTM context&lt;/li&gt;\n&lt;li&gt;Strong technical fluency across APIs, data pipelines, and integration architectures; high agency and comfort building structure where none exists&lt;/li&gt;\n&lt;li&gt;Experience in advertising, gaming, subscription/consumer revenue, or platform businesses is a strong plus&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $232,000 to $261,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4113098002,
-          "name": "Customer Success & Ops",
-          "child_ids": [],
-          "parent_id": 4109059002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ],
-      "ai_disclaimer": null,
-      "include_ai_disclaimer": false,
-      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8582693002/ai_opt_out"
     },
     {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8447477002",
@@ -2385,66 +2264,6 @@
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8642220002/ai_opt_out"
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8579738002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6426930002,
-      "location": {
-        "name": "San Francisco Bay Area"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8579738002,
-      "updated_at": "2026-07-16T17:15:46-04:00",
-      "requisition_id": "R-107305",
-      "title": "Solutions Architect, SF Bay Area",
-      "company_name": "Discord",
-      "first_published": "2026-06-09T21:16:17-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;As a Solutions Architect on the Games team at Discord, you&#39;ll serve as the technical owner for AAA game developer partnerships. You&#39;ll lead the architectural and integration work that helps studios successfully implement Discord&#39;s developer tools, including the Social SDK.&lt;/p&gt;\n&lt;p&gt;We&#39;re looking for an experienced technical practitioner who wants to operate at the intersection of solution architecture, game development, and developer partnerships. You&#39;ll own the technical relationship with major studios end-to-end: from discovery and architecture, through implementation, to ongoing optimization. You&#39;ll work closely with Sales, Product, and Engineering, and you&#39;ll serve as a technical resource and mentor for more junior team members.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Technical Ownership&lt;/strong&gt;\n&lt;ul&gt;\n&lt;li&gt;Own end-to-end solution architecture for AAA game developer accounts&lt;/li&gt;\n&lt;li&gt;Lead technical discovery sessions and architectural reviews for customer implementations across the Social SDK and Discord&#39;s broader developer toolset&lt;/li&gt;\n&lt;li&gt;Provide expert guidance on best practices for integrating Discord&#39;s Social SDK and enabling commerce across diverse game genres, engines, and platforms&lt;/li&gt;\n&lt;li&gt;Troubleshoot deep technical issues that fall outside defined processes, working independently to define scope and propose solutions&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Customer Partnership&lt;/strong&gt;\n&lt;ul&gt;\n&lt;li&gt;Build trusted advisor relationships with senior technical stakeholders — engineering leaders, technical directors, and architects — at AAA partner studios&lt;/li&gt;\n&lt;li&gt;Anticipate partner needs and proactively propose solutions before issues arise&lt;/li&gt;\n&lt;li&gt;Develop integration strategies for your portfolio of developers that maximize the value of Discord&#39;s developer tools&lt;/li&gt;\n&lt;li&gt;Prepare and deliver technical updates and reviews to partner stakeholders on integration progress, milestones, and optimization opportunities&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Scaling &amp;amp; Operational Excellence&lt;/strong&gt;\n&lt;ul&gt;\n&lt;li&gt;Contribute to systems, tools, and automations that evolve high-touch managed services into repeatable, scalable processes&lt;/li&gt;\n&lt;li&gt;Author reference architectures, integration playbooks, and technical documentation that lift the entire team&#39;s effectiveness&lt;/li&gt;\n&lt;li&gt;Identify patterns across accounts to drive product and process improvements&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Cross-Functional Collaboration&lt;/strong&gt;\n&lt;ul&gt;\n&lt;li&gt;Partner closely with Sales, Product, and Engineering to drive successful customer outcomes&lt;/li&gt;\n&lt;li&gt;Contribute to sales enablement through technical documentation, reference architectures, and case studies&lt;/li&gt;\n&lt;li&gt;Mentor more junior team members on technical best practices, integration patterns, and customer engagement&lt;/li&gt;\n&lt;li&gt;Lead initiatives spanning multiple areas and influence cross-functional partners with diverse viewpoints&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Significant technical experience in game development, with hands-on exposure to multiplayer architecture&lt;/li&gt;\n&lt;li&gt;Direct experience working within a game studio or game ecosystem provider&lt;/li&gt;\n&lt;li&gt;Track record of independently owning complex, multi-month technical projects from architecture through delivery&lt;/li&gt;\n&lt;li&gt;Ability to read, understand, and discuss code across multiple languages&lt;/li&gt;\n&lt;li&gt;Familiarity with game engines (such as Unity, Unreal, proprietary), platforms, and development toolchains&lt;/li&gt;\n&lt;li&gt;Excellent communication skills, with the ability to translate complex technical concepts for varied audiences — from individual engineers to senior technical leaders&lt;/li&gt;\n&lt;li&gt;Demonstrated experience building and maintaining trusted technical relationships with external partners&lt;/li&gt;\n&lt;li&gt;Comfort operating in ambiguity — defining scope where none exists and proposing solutions that fall outside of defined processes&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Nice to have:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience as a Solutions Engineer, Solutions Architect, Technical Account Manager, or similar customer-facing senior technical role&lt;/li&gt;\n&lt;li&gt;Experience with gamedev-focused developer platforms or SDK integrations&lt;/li&gt;\n&lt;li&gt;Background in developer relations or developer experience&lt;/li&gt;\n&lt;li&gt;Proficiency in Korean, Mandarin, or Japanese&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $220,000 to $247,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4113098002,
-          "name": "Customer Success & Ops",
-          "child_ids": [],
-          "parent_id": 4109059002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ],
-      "ai_disclaimer": null,
-      "include_ai_disclaimer": false,
-      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8579738002/ai_opt_out"
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8623481002",
       "data_compliance": [
         {
@@ -2945,6 +2764,6 @@
     }
   ],
   "meta": {
-    "total": 48
+    "total": 45
   }
 }
