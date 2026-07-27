@@ -27,11 +27,21 @@
   submitting a transfer request, gather the following information:
 </p>
 <ul>
-  <li><strong>App ID</strong> of the application involved in the transfer</li>
-  <li><strong>Team ID</strong> of the developer team you want to transfer</li>
-  <li><strong>User ID</strong> of the person who will receive ownership</li>
-  <li><strong>Reason</strong> for the transfer</li>
-  <li><strong>Consent</strong> from the person receiving ownership</li>
+  <li data-list-item-id="e524ba8e9a6d54bfc0194686d4ee020e3">
+    <strong>App ID</strong> of the application involved in the transfer
+  </li>
+  <li data-list-item-id="e44409ec2ffbccc13107f41a53f98d854">
+    <strong>Team ID</strong> of the developer team you want to transfer
+  </li>
+  <li data-list-item-id="ea0aca3a8f96fbec6f684d9e8996451ba">
+    <strong>User ID</strong> of the person who will receive ownership
+  </li>
+  <li data-list-item-id="ed42b6691e48b62f6a8f775d629401a71">
+    <strong>Reason</strong> for the transfer
+  </li>
+  <li data-list-item-id="e1ff05ebc3dd068f1b9d62695a9a681cc">
+    <strong>Consent</strong> from the person receiving ownership
+  </li>
 </ul>
 <h2 id="h_01K4ZT4PDAXA3K9A4A9KFSJFKT">The Transfer Process</h2>
 <h3 id="h_01K4ZT4PDAX82W4QHT0NA1DE8V">Step 1: Dual-Party Consent Required</h3>
@@ -41,7 +51,7 @@
   Both parties have <strong>30 days to respond</strong> to our requests.
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e4bb5a62fb34bd460877768510671587a">
     If either party says no or doesn't respond within 30 days, the transfer
     request will be denied.
   </li>
@@ -52,9 +62,15 @@
   need to:
 </p>
 <ul>
-  <li>Remove verification from all applications owned by the team</li>
-  <li>Delete any associated identity verification information</li>
-  <li>Allow the new owner to reapply for verification after the transfer</li>
+  <li data-list-item-id="e19b64c788e767b3ecd19d54c9c4dd7ad">
+    Remove verification from all applications owned by the team
+  </li>
+  <li data-list-item-id="ef7da1381713211c4854ff84719829d5e">
+    Delete any associated identity verification information
+  </li>
+  <li data-list-item-id="e484ccdc93217fe496aa057f38f08697d">
+    Allow the new owner to reapply for verification after the transfer
+  </li>
 </ul>
 <h3 id="h_01K4ZT4PDC2S7TYHBVNZB4FGQN">Step 3: Transfer Execution</h3>
 <p>
@@ -64,18 +80,22 @@
 <h2 id="h_01K4ZT4PDCGBKV38PVWTB6EGFS">Submitting Your Request</h2>
 <p>To request a developer team ownership transfer:</p>
 <ol>
-  <li>
+  <li data-list-item-id="ed7ff214c13fba95011daa471633a758d">
     <strong>Contact Discord Support</strong> through our
     <a href="https://support.discord.com/hc/en-us/requests/new">support form</a>
   </li>
-  <li>
+  <li data-list-item-id="e80004c68b1e56ce4955a1d59f3b99c22">
     <strong>Select the appropriate category</strong> for developer product
     ownership transfers
   </li>
-  <li><strong>Provide all required information</strong> listed above</li>
-  <li><strong>Wait for our response</strong> with next steps</li>
+  <li data-list-item-id="e6f75f31d842a1cb8857640dc3f1f5a03">
+    <strong>Provide all required information</strong> listed above
+  </li>
+  <li data-list-item-id="e9d68912df09dbfd7e20a7b136c37f94c">
+    <strong>Wait for our response</strong> with next steps
+  </li>
 </ol>
-<figure style="width: 90.15%" class="wysiwyg-image wysiwyg-image-resized">
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 90.15%">
   <img
     style="aspect-ratio: 2983/1775"
     src="https://support-dev.discord.com/hc/article_attachments/34905356136471"
@@ -87,18 +107,30 @@
 <h2 id="h_01K4ZT4PDFRKZTXJJ25WQQ9FV1">Moving Applications to Your Team</h2>
 <h3 id="h_01K4ZT4PDFYYSMSEPDRE5VWP9Q">Individual to Team Transfer</h3>
 <p>
-  If you currently own verified applications individually and want to transfer
+  If you currently own unverified applications individually and want to transfer
   them to your team:
 </p>
 <ol>
-  <li>Ensure your team has completed identity verification</li>
-  <li>Navigate to your application settings</li>
-  <li>Go to the "General Information" section</li>
-  <li>Look for the "Transfer App to Team" option below</li>
-  <li>Select your team as the new owner</li>
-  <li>Confirm the transfer</li>
+  <li data-list-item-id="e1811bf6471d0ae6f3fde1b18204f7803">
+    Ensure your team has completed identity verification
+  </li>
+  <li data-list-item-id="e550398c856801e45d29200e48539057e">
+    Navigate to your application settings
+  </li>
+  <li data-list-item-id="eb6a59de2c43055d3e7c5059337a82825">
+    Go to the "General Information" section
+  </li>
+  <li data-list-item-id="e4094f4c33bcc61972bdcdc42938ee4b8">
+    Look for the "Transfer App to Team" option below
+  </li>
+  <li data-list-item-id="e038def96973a68561df103fa57f24579">
+    Select your team as the new owner
+  </li>
+  <li data-list-item-id="eb96f575e790eeacb6d64a0e79a2a52c3">
+    Confirm the transfer
+  </li>
 </ol>
-<figure style="width: 51.57%" class="wysiwyg-image wysiwyg-image-resized">
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 51.57%">
   <img
     style="aspect-ratio: 893/627"
     src="https://support-dev.discord.com/hc/article_attachments/34905356138007"
@@ -140,15 +172,17 @@
 <h2 id="h_01K4ZT4PDJ3DANB5STBMAN8XEV">What Happens After Transfer</h2>
 <p>Once the transfer is complete:</p>
 <ol>
-  <li>
+  <li data-list-item-id="e49a948dda0d06a016b79c4e78af5829f">
     <strong>Ownership changes immediately</strong> in the Developer Portal
   </li>
-  <li>
+  <li data-list-item-id="e8ee050c5d56f0c75afd5df39e327f722">
     <strong>The new owner gains full control</strong> of the team and its
     applications
   </li>
-  <li><strong>Previous verification is removed</strong> (if applicable)</li>
-  <li>
+  <li data-list-item-id="efd29a4c21eeaedb62dfcd2f0cdeba950">
+    <strong>Previous verification is removed</strong> (if applicable)
+  </li>
+  <li data-list-item-id="e11c74f1332e29418b27a40d4088168ac">
     <strong>The new owner can reapply for verification</strong> when ready
   </li>
 </ol>
@@ -156,19 +190,29 @@
 <h3 id="h_01K4ZT4PDKN7XD8C3TFWRY7041">Transfer Requirements</h3>
 <p>When transferring applications to a team:</p>
 <ul>
-  <li>Both individual owner and recipient must consent to transfers</li>
-  <li>
+  <li data-list-item-id="e0087bc7ea439d5404fd4f67c083376c9">
+    Both individual owner and recipient must consent to transfers
+  </li>
+  <li data-list-item-id="eb8c4db827e6652b9e76da3071f5bf00f">
     Verified applications will lose verification status if the team lacks proper
     identity verification
   </li>
-  <li>The transfer process may take some time to complete</li>
+  <li data-list-item-id="e7b4484e258f753d6f12e8775edd6292d">
+    The transfer process may take some time to complete
+  </li>
 </ul>
 <h3 id="h_01K4ZT4PDM2VAYZD2WXA7NPFXN">Verification Concerns</h3>
 <p>If you're concerned about losing verification status:</p>
 <ul>
-  <li>Complete team identity verification before transferring</li>
-  <li>Plan transfers during low-activity periods</li>
-  <li>Have re-verification documentation ready</li>
+  <li data-list-item-id="e41cb58ee353ee0028d7257532a9b64e6">
+    Complete team identity verification before transferring
+  </li>
+  <li data-list-item-id="ef535ce69e6037b50c45931f574430992">
+    Plan transfers during low-activity periods
+  </li>
+  <li data-list-item-id="e3a89fe229a18ae1357fd22537f6e8ca9">
+    Have re-verification documentation ready
+  </li>
 </ul>
 <div class="info-box">
   <p>
