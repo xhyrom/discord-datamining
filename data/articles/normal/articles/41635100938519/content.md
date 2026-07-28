@@ -5,7 +5,7 @@
     ><span class="wysiwyg-underline">Nitro</span></a
   >
   and get an extra month on us, valid now until
-  <strong>July 28, 2026 (11:59PM PT)</strong>. Read below to learn more.
+  <strong>July 30, 2026 (11:00AM PT)</strong>. Read below to learn more.
 </p>
 <div class="warn-box">
   <span style="color: #434343"
@@ -147,7 +147,7 @@
 </p>
 <p>
   <strong>Deadline for Claiming:</strong> This promotion must be claimed before
-  <strong>July 28, 2026 (11:59PM PT)</strong>.
+  <strong>July 30, 2026 (11:00AM PT)</strong>.
 </p>
 <h1 id="h_01KXENYB41E2R1WY3C7FGGH53Q">What is Discord Nitro?</h1>
 <p>

@@ -1,6 +1,15 @@
 <div class="info-box">
-  <strong>Note:</strong> We're currently testing a few additional age assurance
-  methods, so you may see more options than what’s listed below.
+  <strong>Note: </strong>To give users more choice in how they confirm their
+  age, we're testing Google Wallet as an additional age confirmation method. You
+  can confirm your age group by using a Passport ID already verified and stored
+  in your Google Wallet. We don’t get your Passport information, just your age.
+  For more details on this method please go
+  <a
+    href="https://support.discord.com/hc/articles/30326565624343"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.
 </div>
 <p>
   The
