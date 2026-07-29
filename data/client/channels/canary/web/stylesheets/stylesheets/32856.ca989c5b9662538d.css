@@ -1,0 +1,67 @@
+.banner_b83360 {
+  display: inline-block;
+  flex-shrink: 0;
+}
+.banner_b83360,
+.fill_b83360 {
+  position: relative;
+}
+.fill_b83360 {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  -webkit-mask-image: radial-gradient(
+    circle var(--custom-cutout-radius) at var(--custom-cutout-x)
+      var(--custom-cutout-y),
+    transparent 0,
+    transparent calc(var(--custom-cutout-radius) - 0.5px),
+    #000 var(--custom-cutout-radius)
+  );
+  mask-image: radial-gradient(
+    circle var(--custom-cutout-radius) at var(--custom-cutout-x)
+      var(--custom-cutout-y),
+    transparent 0,
+    transparent calc(var(--custom-cutout-radius) - 0.5px),
+    #000 var(--custom-cutout-radius)
+  );
+  width: 100%;
+}
+.fill_b83360:hover .gifTag_b83360 {
+  opacity: 0;
+}
+.gifTag_b83360 {
+  inset-inline-start: var(--space-8);
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  top: var(--space-8);
+  z-index: 1;
+}
+.enable-forced-colors .fill_b83360 {
+  forced-color-adjust: none;
+}
+:where(.banner__68edb) {
+  transition: background-color 0.1s;
+}
+:not(.custom-user-profile-theme).user-profile-popout :where(.banner__68edb) {
+  border-radius: var(
+    --custom-user-profile-banner-radius,
+    var(--radius-sm) var(--radius-sm) 0 0
+  );
+}
+.user-profile-modal-v2 :where(.banner__68edb) {
+  border-radius: var(
+    --custom-user-profile-banner-radius,
+    var(--radius-lg) var(--radius-lg) 0 0
+  );
+}
+:where(.banner__68edb):before {
+  border-bottom: 1px solid var(--border-muted);
+  bottom: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+}
+
+/*# sourceMappingURL=32856.ca989c5b9662538d.css.map*/
