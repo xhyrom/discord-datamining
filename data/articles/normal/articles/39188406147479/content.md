@@ -159,9 +159,16 @@
 <p><strong>Eligibility Requirements</strong></p>
 <p>You are eligible if:</p>
 <ul>
-  <li data-list-item-id="e5c289a596c76dc98c653a84e67ced101">
-    You have an active Discord Nitro membership (through a paid membership,
-    Nitro gift, and most Nitro trials)
+  <li data-list-item-id="e3049bf13ff7e5c9660575924a8d52028">
+    You have an active
+    <a
+      href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Discord Nitro membership</a
+    >
+    (through a paid membership, Nitro gift, and some Nitro trials, with
+    exceptions noted below)
   </li>
   <li data-list-item-id="e83b1228541b6e1fdada6eeaaea704c42">
     You are not an existing Xbox Game Pass subscriber
@@ -177,6 +184,11 @@
   </li>
   <li data-list-item-id="e81cf5426423ea5957c42150fae76ccab">
     You are a Nitro Classic or Nitro Basic member
+  </li>
+  <li data-list-item-id="e5a6928586c90deb399ec9b9e50228e2e">
+    Your Nitro membership came from a third-party inbound promotion (for
+    example, a 1-month Nitro trial from an external partner) or a large-scale
+    campaign trial (for example, an annual Nitro trial offered to all users)
   </li>
 </ul>
 <p>
@@ -316,15 +328,16 @@
 <h1 id="h_01KQZ3D7YRNX0JYKBNDJF3A5GR">Eligibility Requirements</h1>
 <p>You are eligible:</p>
 <ul>
-  <li data-list-item-id="e18218bdd1d53b9bf985a3d2227164938">
-    With an active
+  <li data-list-item-id="eca5d6444a0a975ebf3bd145c58506ddc">
+    You have an active
     <a
       href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
       target="_blank"
       rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">Discord Nitro subscription</span></a
+      >Discord Nitro membership</a
     >
-    (through a paid membership, Nitro gift, and most Nitro trials)
+    (through a paid membership, Nitro gift, and some Nitro trials, with
+    exceptions noted below)
   </li>
   <li data-list-item-id="efcb425a126410e41aa0e7e012dee824e">
     If you’re located in a region that Logitech G ships to (see
@@ -344,6 +357,11 @@
   </li>
   <li data-list-item-id="eeaac5582f176a25ee3bd07cc8c0776a9">
     You are a Nitro Classic or Nitro Basic subscriber.
+  </li>
+  <li data-list-item-id="e38c6a342658b5b26b14a7975c5dd33b0">
+    Your Nitro membership came from a third-party inbound promotion (for
+    example, a 1-month Nitro trial from an external partner) or a large-scale
+    campaign trial (for example, an annual Nitro trial offered to all users)
   </li>
 </ul>
 <div class="info-box">
@@ -512,15 +530,16 @@
 <h1 id="h_01KQZ3D7Z5AV81RGVSCB016BSG">Eligibility Requirements</h1>
 <p>You are eligible:</p>
 <ul>
-  <li data-list-item-id="e86fa2cb5f29b0b72d142ad20b2914971">
-    With an active
+  <li data-list-item-id="e71b7666053acb53663b1f60897b4a6bb">
+    You have an active
     <a
       href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
       target="_blank"
       rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">Discord Nitro subscription</span></a
+      >Discord Nitro membership</a
     >
-    (through a paid membership, Nitro gift, and most Nitro trials)
+    (through a paid membership, Nitro gift, and some Nitro trials, with
+    exceptions noted below)
   </li>
   <li data-list-item-id="e0e26559473d19af95997cf1ec85f6942">
     If you’re located in a region that SteelSeries ships to (see
@@ -540,6 +559,11 @@
   </li>
   <li data-list-item-id="ea0c5b21d854391977a5778e3358521e2">
     You are a Nitro Classic or Nitro Basic subscriber.
+  </li>
+  <li data-list-item-id="ebe5577bc2db3f15b83382f8100ac39ee">
+    Your Nitro membership came from a third-party inbound promotion (for
+    example, a 1-month Nitro trial from an external partner) or a large-scale
+    campaign trial (for example, an annual Nitro trial offered to all users)
   </li>
 </ul>
 <div class="info-box">
