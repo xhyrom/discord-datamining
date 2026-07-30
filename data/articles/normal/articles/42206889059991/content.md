@@ -76,6 +76,11 @@
   this Nitro promotion.
 </p>
 <div class="info-box">
+  <strong>Note</strong>: Redeeming this promotion makes you ineligible for other
+  partner Nitro Rewards (like Xbox Game Pass, Logitech, or SteelSeries
+  discounts) for the duration of the trial.
+</div>
+<div class="info-box">
   <p>
     <span style="color: #434343"
       ><strong>Note</strong>: This promotion is not eligible in the following
@@ -501,9 +506,7 @@
   >
 </p>
 <p>
-  A: Any NVIDIA Account holder with an available Reward can claim this
-  promotion. Create an NVIDIA Account, download and log in to the NVIDIA app,
-  then select Redeem to claim your Reward directly through the app. Visit the
+  A: Visit the
   <a href="https://www.nvidia.com/en-us/geforce/rewards/"
     ><span class="wysiwyg-underline">NVIDIA GeForce Rewards page</span></a
   >
@@ -514,9 +517,17 @@
 </p>
 <p>
   A: Users who have never had an active Nitro subscription on their Discord
-  accounts are eligible to redeem this Nitro promotion. Users who previously had
-  a Discord Nitro subscription and have had a Nitro Classic or Nitro Basic
-  subscription in the past 12 months are ineligible.
+  accounts are eligible to redeem this Nitro promotion. 
+</p>
+<p>
+  Additionally, users who previously had a Discord Nitro subscription and have
+  had a Nitro Classic or Nitro Basic subscription in the past 12 months are
+  ineligible.
+</p>
+<p>
+  <strong>Note</strong>: Redeeming this promotion makes you ineligible for other
+  partner Nitro Rewards (like Xbox Game Pass, Logitech, or SteelSeries
+  discounts) for the duration of the trial.
 </p>
 <p>
   This promotion is not eligible in the following regions:
