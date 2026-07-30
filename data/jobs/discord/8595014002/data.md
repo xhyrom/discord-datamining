@@ -10,13 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8595014002](https://discord.com/jobs/8595014002)
 
-**Updated At:** Mon, 27 Jul 2026 15:52:26 GMT
+**Updated At:** Thu, 30 Jul 2026 20:50:27 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Our mission on the Developer Platform Team is to help game studios succeed by creating meaningful experiences for players. As a B2B2C team, we serve two key audiences. For game studios, we build smart integrations and intuitive tools that make it easy for developers and community managers to connect with players and bring the best of Discord into their games. For players, we enhance on-platform experiences that deepen their connection to the games they love—and make it easier to build lasting friendships through play.
 You’ll work on everything from the tools studios use to integrate with Discord to the player-facing experiences those integrations enable. For example, you might design in-game ways to invite Discord friends to play, onboarding flows for studios, or new ways to bring game moments and achievements onto Discord to spark social connection. Your work will span surfaces like the developer portal, dashboards, self-serve tools, in-game overlays, and the Discord client itself—where players discover games, make new friends, and play together.
 As a product designer, you’ll work across the full product development cycle—from early exploration through to launch and iteration. You’ll bring a thoughtful mix of user empathy, systems thinking, and visual craft to solve meaningful problems for developers and players alike. If you’re energized by complex challenges, passionate about games and community, and excited to help shape how studios partner with Discord, we’d love to hear from you.
-What you'll be doing
+What You'll Be Doing
 
 You will embed within a product squad and partner with engineers, product managers, researchers, and data scientists to oversee the user experience of a product from concept to launch, and then continue to improve it after release.
 You will create wireframes, mockups, prototypes, and help implement your designs to pixel perfection. You will also quality check all of your work as it is built, ensuring it reflects your vision.
@@ -42,6 +42,7 @@ Bonus Points
 
 Casual PC or console player
 
+&amp;nbsp;
 The US base salary range for this full-time position is $188,000 to $211,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Discord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
