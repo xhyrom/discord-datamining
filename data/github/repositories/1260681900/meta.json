@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/opentelemetry-ebpf-profiler",
   "created_at": "2026-06-05T18:55:28Z",
   "homepage": "",
-  "size": 85762,
+  "size": 85621,
   "language": "Go",
   "has_issues": false,
   "has_projects": true,
