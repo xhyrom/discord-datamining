@@ -1,0 +1,31 @@
+.qrCodeOverlay_c28498 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+.qrCodeOverlay_c28498 img {
+  image-rendering: crisp-edges;
+}
+.size-40_c28498 {
+  height: 40px;
+  width: 40px;
+}
+.size-60_c28498 {
+  height: 60px;
+  width: 60px;
+}
+.qrCodeOverlayContainer_c28498 {
+  display: flex;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.qrCodeContainer_c28498 {
+  border-radius: var(--radius-xs);
+  padding: var(--space-8);
+}
+
+/*# sourceMappingURL=76729.62bd0f1e479705ba.css.map*/
