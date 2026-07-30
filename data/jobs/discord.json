@@ -198,6 +198,66 @@
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8625545002/ai_opt_out"
     },
     {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8614971002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "internal_job_id": 6440705002,
+      "location": {
+        "name": "San Francisco Bay Area"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 8614971002,
+      "updated_at": "2026-07-30T18:53:02-04:00",
+      "requisition_id": "R-107334",
+      "title": "Data Engineer",
+      "company_name": "Discord",
+      "first_published": "2026-07-30T18:53:02-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is looking for an experienced and passionate Data Engineer, Analytics to join our data team! You will be owning the transformation and semantic layer that turns data into clean, tested, well-documented tables and dashboards that data scientists, product managers, and business stakeholders can trust and self-serve from. You&#39;ll define and operationalize the metrics that inform how we identify opportunities, measure success, and make decisions. If this sounds exciting to you and you’re passionate about data modeling, metric design, and empowering teams to move faster with reliable data, read on!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you will be doing&lt;/strong&gt;:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design, build, and maintain curated analytical datasets and data models that serve as canonical sources for metrics, dashboards, and analyses&lt;/li&gt;\n&lt;li&gt;Own metric definitions end to end, from partnering with data science and product team to define what we should measure, to implementing it in production, to surfacing it in visualization tools&lt;/li&gt;\n&lt;li&gt;Build and maintain executive-level dashboards and self-serve reporting tools that enable business stakeholders to answer their own questions&lt;/li&gt;\n&lt;li&gt;Partner closely with data science, product manager, and engineering teams to translate business questions into well modeled, performant, and discoverable data assets&lt;/li&gt;\n&lt;li&gt;Establish and enforce data quality standards through testing frameworks, documentation, and monitoring for the datasets you own&lt;/li&gt;\n&lt;li&gt;Drive adoption of consistent data modeling patterns, naming conventions, and documentation norms across the data organization&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;3+ years of experience in &lt;strong&gt;analytics or data engineering&lt;/strong&gt; with a strong focus on building curated, consumer-facing datasets&lt;/li&gt;\n&lt;li&gt;3+ years of experience in &lt;strong&gt;designing, developing, and maintaining robust data models&lt;/strong&gt; from structured and unstructured sources&lt;/li&gt;\n&lt;li&gt;3+ years of experience writing &lt;strong&gt;accurate and effective code in SQL&lt;/strong&gt;&lt;/li&gt;\n&lt;li&gt;Experience with designing data model to power a variety of use cases, including experimentation&lt;/li&gt;\n&lt;li&gt;Fluency in Python or another programming language, with solid fundamentals in version control and CI/CD practices&lt;/li&gt;\n&lt;li&gt;Experience building and owning executive-level dashboards and reports using BI tools (e.g., Looker, Tableau, or similar)&lt;/li&gt;\n&lt;li&gt;Strong business acumen, you will partner with data scientists and product managers to translate ambiguous business questions into concrete metric definitions and data models&lt;/li&gt;\n&lt;li&gt;Excellent communication, comfortable being the connective tissue between technical and business teams&lt;/li&gt;\n&lt;li&gt;Last but not least, desire to work with amazing, passionate people who care deeply about solving challenging problems to improve Discord&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Passion for Discord or online communities&lt;/li&gt;\n&lt;li&gt;Experience building or contributing to a semantic layer or metrics store&lt;/li&gt;\n&lt;li&gt;Experience with modern analytics and data engineering tools and workflows (dbt, BigQuery, or similar)&lt;/li&gt;\n&lt;li&gt;Experience working on monetization and/or subscription products&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $180,000 to $200,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4022531002,
+          "name": "Data Science & Engineering",
+          "child_ids": [],
+          "parent_id": 4094266002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "ai_disclaimer": null,
+      "include_ai_disclaimer": false,
+      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8614971002/ai_opt_out"
+    },
+    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8571766002",
       "data_compliance": [
         {
@@ -1105,6 +1165,66 @@
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8652553002/ai_opt_out"
     },
     {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8299493002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "internal_job_id": 6220768002,
+      "location": {
+        "name": "San Francisco Bay Area"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 8299493002,
+      "updated_at": "2026-07-30T18:58:55-04:00",
+      "requisition_id": "R-102056",
+      "title": "Senior Data Engineer, Ads",
+      "company_name": "Discord",
+      "first_published": "2025-11-19T13:20:53-05:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord seeks a seasoned Data Engineer, focusing on our advertising product data. In this role, you will drive technical vision and strategy for ads data engineering in support of our ML initiatives while building and maintaining sophisticated data pipelines, datasets, and analytical tools. You will lead cross-functional initiatives to transform our advertising products through data-driven insights and mentor fellow engineers to deliver exceptional results.&lt;/p&gt;\n&lt;p&gt;This role works heavily with Data Science, Machine Learning, and product. If leading technical innovation, architecting scalable solutions, and empowering teams through data excites you, we encourage you to make a move!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Design and own core ads data models&lt;/strong&gt;: fact/dim tables, canonical datasets, and aggregation layers that power delivery, measurement, targeting, attribution, and ML use cases.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Build and maintain the ML data that enables ads ranking, delivery, and targeting &lt;/strong&gt;- including feature development, label generation workflows, intra-day training, and ML input observability to catch data quality issues before they degrade model performance.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Build conversion measurement pipelines and integrate third-party attribution data&lt;/strong&gt; - including Conversion Attribution and Mobile Measurement Partner (MMP) integrations (Adjust, AppsFlyer, Singular) - ensuring attribution accuracy and data parity across measurement surfaces.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Build batch and near real-time pipeline infrastructure across the ads ecosystem&lt;/strong&gt; - pushing toward lower-latency data for ML and reporting use cases on our BigQuery + dbt + Dagster stack. Partnering with Data Platform on launch and success of new data processing engines to support low latency requirements..&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Develop data quality frameworks, monitoring systems, automated anomaly detection, and SLA infrastructure&lt;/strong&gt; for critical ads pipelines at massive scale.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Proactively identify foundational data infrastructure gaps&lt;/strong&gt; - including those with broad implications across ML, measurement, and reporting - and design scalable, canonical solutions that multiple teams can depend on.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Build systems from scratch in a rapidly evolving, greenfield advertising data environment&lt;/strong&gt; - making sound architectural decisions with incomplete information and balancing short-term delivery with long-term infrastructure investment.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Drive alignment across Data Science, ML Engineering, Ads Product, and GTM teams&lt;/strong&gt; through clear narratives that connect data infrastructure decisions to business outcomes and revenue impact.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Mentor engineers through technical challenges, code and design reviews, and ownership of complex projects&lt;/strong&gt; - contributing to the culture and engineering standards of the Data Engineering team team.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;5+ years of hands-on experience writing production code and architecting data pipelines with high-volume consumer data in advertising technology domains&lt;/strong&gt; (ad delivery, ranking, targeting, identity, conversion measurement).&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Deep expertise in digital advertising data engineering&lt;/strong&gt; - specifically in ads delivery, conversion measurement, attribution pipelines, or ML feature data infrastructure. Experience with Conversion Data and APIs, MMP integrations, or identity graph infrastructure is strongly valued.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Demonstrated experience building data models in a greenfield or 0-to-1 environment&lt;/strong&gt; where requirements change frequently, documentation is sparse, and architectural decisions are made with incomplete information.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Expert-level SQL and Python&lt;/strong&gt;. Strong ability to design performant, maintainable data models and write production-quality pipeline code.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Proven hands-on experience with data quality audits, monitoring systems, and automated anomaly detection for massive-scale datasets (billions+ rows)&lt;/strong&gt; - including quality frameworks designed for ML inputs.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Strong technical communication skills&lt;/strong&gt; with the ability to drive alignment, influence prioritization, and earn adoption from technical stakeholders.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Collaborative mindset and strong cross-functional instincts&lt;/strong&gt; with experience building trusted working relationships with Data Science, ML Engineering, and Product teams.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Passion for Discord or gaming communities&lt;/li&gt;\n&lt;li&gt;Experience with data visualization and dashboarding technologies (Looker, Tableau, or similar)&lt;/li&gt;\n&lt;li&gt;Experience with designing data architecture to power a variety of use cases, including reporting (internal and external), adhoc analysis, experimentation.&lt;/li&gt;\n&lt;li&gt;Working with Data AI tools to establish greater self service utility for your customers.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Experience building near real-time or streaming pipeline infrastructure&lt;/strong&gt; (e.g., Kafka, Spark Streaming, or equivalent) in addition to batch processing is preferred.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $220,500 to $245,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4022531002,
+          "name": "Data Science & Engineering",
+          "child_ids": [],
+          "parent_id": 4094266002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "ai_disclaimer": null,
+      "include_ai_disclaimer": false,
+      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8299493002/ai_opt_out"
+    },
+    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8177757002",
       "data_compliance": [
         {
@@ -1654,67 +1774,6 @@
       "ai_disclaimer": null,
       "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8637188002/ai_opt_out"
-    },
-    {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8447477002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "education": "education_optional",
-      "internal_job_id": 6374563002,
-      "location": {
-        "name": "Remote  (Western States)"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8447477002,
-      "updated_at": "2026-07-16T17:15:46-04:00",
-      "requisition_id": "R-107195",
-      "title": "Senior Security Engineer, Enterprise Security",
-      "company_name": "Discord",
-      "first_published": "2026-03-09T20:03:35-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We are looking for an experienced Senior Enterprise Security Engineer reporting to the Engineering Manager of Enterprise Security. In this role, you will implement and maintain Discord’s enterprise environment, with a sharp focus on security and privacy. Are you passionate about balancing strong security with seamless operations? We’d love to meet you. We’re looking for someone who brings strong technical skills and genuinely cares about protecting data and keeping systems secure. If you love solving challenging security problems, get energized by learning new things, and want to help make Discord even better, come join our security team on this journey.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design and implement security measures to protect company data from unauthorized access, disclosure, and misuse.&lt;/li&gt;\n&lt;li&gt;Partner closely with the Detection &amp;amp; Response team to maintain full visibility into enterprise access, networks, and devices.&lt;/li&gt;\n&lt;li&gt;Deploy and manage security tools across Discord&#39;s corporate infrastructure.&lt;/li&gt;\n&lt;li&gt;Establish security standards that provide strong protection while enabling smooth workflows.&lt;/li&gt;\n&lt;li&gt;Develop and deliver security awareness training for employees.&lt;/li&gt;\n&lt;li&gt;Shape and enforce Discord&#39;s IT and security policies.&lt;/li&gt;\n&lt;li&gt;Build secure, sustainable environments using modern principles like &quot;secure by design&quot; and “zero-trust” network architecture, without relying on traditional VPN setups.&lt;/li&gt;\n&lt;li&gt;Foster a security-conscious culture by guiding employees on data protection best practices.&lt;/li&gt;\n&lt;li&gt;Partner cross-functionally with IT, Engineering, Workplace, and other teams to achieve security objectives&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;3+ years of experience in an Enterprise Security role as a senior individual contributor or lead.&lt;/li&gt;\n&lt;li&gt;3+ years of experience programming in at least one general purpose programming language (e.g., Python, Go, Rust).&lt;/li&gt;\n&lt;li&gt;Experience securing, monitoring, and managing Identity and Access Management systems (we use Okta, Kolide, Teleport, and Cloudflare Access).&lt;/li&gt;\n&lt;li&gt;Deep understanding of data security in enterprise environments.&lt;/li&gt;\n&lt;li&gt;Experience working in “zero-trust” network architecture environments.&lt;/li&gt;\n&lt;li&gt;Experience deploying and managing Mobile Device Management, Endpoint Detection and Response, and device trust tooling.&lt;/li&gt;\n&lt;li&gt;Knowledge and practical application of IT security best practices.&lt;/li&gt;\n&lt;li&gt;A great sense of empathy.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience working with SIEMs (we use Panther)&lt;/li&gt;\n&lt;li&gt;Hands on experience with Google Cloud.&lt;/li&gt;\n&lt;li&gt;Hands on experience with Cloudflare.&lt;/li&gt;\n&lt;li&gt;Hands-on experience managing a primarily macOS and ChromeOS environment with a smaller Windows footprint. We used Jamf &amp;amp; Intune for our endpoint management and Crowdstrike &amp;amp; Jamf for endpoint detections and response (EDR).&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4127961002,
-          "name": "Security Engineering",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        }
-      ],
-      "ai_disclaimer": null,
-      "include_ai_disclaimer": false,
-      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8447477002/ai_opt_out"
     },
     {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8460791002",
@@ -2583,6 +2642,6 @@
     }
   ],
   "meta": {
-    "total": 42
+    "total": 43
   }
 }
