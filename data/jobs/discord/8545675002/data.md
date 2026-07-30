@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Software Engineer, Enforce - Safety Processing
+## Senior Software Engineer, Safety Backend
 
 **Location:** San Francisco Bay Area or Los Angeles Area
 
@@ -10,41 +10,38 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8545675002](https://discord.com/jobs/8545675002)
 
-**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
+**Updated At:** Thu, 30 Jul 2026 01:24:17 GMT
 
 **Job Description:**
-Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.The Safety Processing team builds the infrastructure and decision systems that enable accurate, efficient, and fair content moderation at scale. Keeping our users safe is&amp;nbsp;foundational to everything we do.
-The Enforce Squad is a newly formed squad within Safety Processing, responsible for the systems that translate safety decisions into real-world actions such as bans, warnings, content removal, and legally mandated reporting. These systems touch every user who violates policy and every piece of content that gets actioned. We're looking for a Senior Software Engineer who can take ownership of complex, critical infrastructure and help us stabilize, scale, and evolve Discord's enforcement systems.
-What you will do:
+Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Keeping our platform safe requires infrastructure that is accurate, scalable, and fair and the engineering challenges that come with that are genuinely hard. Our Safety Engineering teams build and operate the systems that power content moderation, enforcement, and safety signal processing at scale.
+Our team developed Osprey, the open-source investigation and incident response tool that allows safety teams to understand what is happening on their platforms and take actions at scale. Osprey has since been open-sourced and donated to ROOST, reflecting our commitment to industry-wide safety improvements.&amp;nbsp;
+We're looking for a Senior Software Engineer who thrives on complex, ambiguous problems and can take full ownership of critical infrastructure from design through post-launch iteration.
+What You'll Be Doing
 
-Own high impact projects within a complex distributed system from end-to-end that help Safety at Discord scale.
-Improve production services that process millions of enforcement decisions per day, including participating in the team's 24/7 on-call rotation.
-Apply an adversarial mindset to enforcement systems to anticipate abuse patterns, edge cases, and failure modes in systems that must be accurate, fair, and legally compliant.
-Partner with Trust &amp;amp; Safety, Policy, ML, Data Science, and Legal teams to deliver enforcement changes ranging from policy updates to compliance-critical pipeline improvements.
-Contribute to measurement foundations by working with Data Science to define and baseline enforcement metrics like recidivism rate, over-enforcement rate, and unintended churn.
+Own complex safety infrastructure projects end-to-end, from initial design through post-launch monitoring and iteration
+Build and maintain production systems that operate at massive scale, participating in on-call rotations
+Apply an adversarial mindset to your work — thinking through security, abuse scenarios, edge cases, and scalability concerns
+Collaborate closely with Trust &amp;amp; Safety, ML, Policy, and product teams to understand requirements and deliver effective solutions
+Break down large, multi-milestone projects into prioritized work streams while managing stakeholders and dependencies across teams
+Contribute to technical design discussions and write RFCs; help establish best practices and maintain a high quality bar through code reviews and mentorship
 
-What you should have:
+What You Should Have
 
-4+ years of professional software engineering experience with a focus on backend services and infrastructure.
-Strong programming skills in Python
-Experience building and operating distributed systems and production services at scale ( use GCP, PostgreSQL, Redis, Pub/Sub, KKV, and gRPC).
-Demonstrated ability to own projects end-to-end and deliver results on time, including in ambiguous or transitional environments.
-Strong debugging skills and ability to navigate complex, multi-service codebases. Many of our systems have deep interdependencies.
-Demonstrated adversarial thinking. The ability to anticipate misuse, edge cases, and system vulnerabilities in systems that bad actors are actively trying to circumvent
-Experience being in 24/7 on-call rotations.
-Excellent collaboration and communication skills, including experience working across Trust &amp;amp; Safety, Policy, Legal, or Operations stakeholders.
-Using Gen AI products, like Claude Code, as part of your daily workflow.
+5+ years of professional software engineering experience focused on backend services and/or infrastructure
+Strong programming skills in Python; we work occasionally in Rust and TypeScript as well
+Experience building and operating distributed systems and production services at scale such as GCP or AWS
+Strong debugging skills and ability to navigate complex, multi-service codebases
+Excellent collaboration and communication skills, including experience working with cross-functional partners
+A quality-centered mindset with attention to the right details at every stage of development
 
-Bonus Points:
+Bonus Points
 
-Experience with content moderation, trust &amp;amp; safety, enforcement infrastructure, or related problem domains.
-Familiarity with Rust
-Familiarity with legally mandated reporting pipelines or compliance-sensitive systems.
-Experience with workflow automation or decision systems, particularly handler-based or rules-driven enforcement architectures.
-Experience with observability tooling, defining SLOs, building dashboards, and instrumenting distributed systems with Datadog or similar.
-A strong passion for Discord and making online communities safer.
+Experience with content moderation, trust &amp;amp; safety, or related problem domains
+Experience with ML/LLM integration
+Experience with observability tooling, metrics, and monitoring systems at scale
+A strong passion for Discord and making online communities safer
 
-
+&amp;nbsp;
 This position is US-based only. We are seeking candidates located in the Los Angeles or San Francisco Bay Areas. Candidates in the Los Angeles area can work remotely. Candidates in the San Francisco area are required to be in the office 2 days per week. Relocation assistance may be available to the San Francisco Bay Area.
 Candidates must be located within one of the following counties:
 
