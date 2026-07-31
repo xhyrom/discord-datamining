@@ -107,6 +107,18 @@
 </p>
 <p>
   <strong
+    >Q: Why can't I see a certain feature in a game with this
+    integration?</strong
+  >
+</p>
+<p>
+  A: Developers control which features are implemented in their game and when.
+  Check out the game's support resources or reach out to the developer to learn
+  more about what's currently available or ask about additional features you
+  want to see.
+</p>
+<p>
+  <strong
     >Q: What will the game developer be able to do with my Discord
     messages?</strong
   >
