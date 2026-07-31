@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8642085002](https://discord.com/jobs/8642085002)
 
-**Updated At:** Tue, 28 Jul 2026 22:32:29 GMT
+**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We're looking for a Senior Software Engineer to join the Growth team at Discord. Our team owns how new users discover, understand, and get started with Discord — from the first moment someone encounters us on the web through the onboarding experience that turns them into engaged members. You'll work across the stack to build the systems that acquire and activate users at scale, whether that means improving how Discord shows up across the web or designing the in-product experiences that help new users find their footing. This is a high-impact role where you'll directly influence how Discord grows. This person will report to the Senior Engineering Manager for Growth.

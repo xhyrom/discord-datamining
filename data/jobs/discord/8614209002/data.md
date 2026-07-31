@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8614209002](https://discord.com/jobs/8614209002)
 
-**Updated At:** Mon, 27 Jul 2026 23:25:45 GMT
+**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are seeking an experienced Safety Policy Lead to own Discord's youth safety policy portfolio. As a member of the Safety Policy team within Product Policy, you will drive policy development and lifecycle management across the full spectrum of youth safety harms: child sexual abuse material, grooming, and child exploitation. This role requires deep domain expertise, strong regulatory literacy, and the ability to translate complex child safety requirements into enforceable policy and durable implementation.

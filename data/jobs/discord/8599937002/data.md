@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8599937002](https://discord.com/jobs/8599937002)
 
-**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
+**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Advertising Solutions team helps gaming, mobile, and entertainment brands reach one of the most passionate and engaged communities on the internet. Our ad products — including Quests, Bounties, and Video Quests — are built around action and participation, not passive impressions. We're in an exciting phase of scaling our advertising business, and the AMs on this team aren't just executing campaigns — they're shaping how we show up for advertisers.

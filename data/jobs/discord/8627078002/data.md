@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8627078002](https://discord.com/jobs/8627078002)
 
-**Updated At:** Sat, 18 Jul 2026 19:03:33 GMT
+**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are seeking an experienced Oracle ERP Fusion Technical Developer to join Discord’s Business Systems team. In this role, you will own technical incident resolution, report development, integrations, system enhancements, and technical delivery across our Oracle Fusion ERP environment. You will partner closely with Finance, Accounting, Business Systems, and integration teams to ensure operational stability, scalable solutions, and successful delivery of business-critical initiatives.

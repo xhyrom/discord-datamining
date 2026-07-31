@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8652553002](https://discord.com/jobs/8652553002)
 
-**Updated At:** Thu, 30 Jul 2026 02:29:09 GMT
+**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Legal team is growing its Security GRC function, and we're looking for a Security Analyst to help run and scale it. You'll own the day-to-day engine of the program: the questionnaires, risk tracking, analyses, tooling, and documentation that keep compliance moving. As we build, that's a mix of hands-on work today and the systems that shrink it over time, because we'd rather automate a control than babysit it. We care about the right level of compliance for Discord, our users, and our customers. You'll partner across Security, Engineering, IT, and Legal to make compliance feel friction-free, even invisible, rather than something teams have to fight.

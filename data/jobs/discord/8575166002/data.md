@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8575166002](https://discord.com/jobs/8575166002)
 
-**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
+**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are looking for a passionate and motivated Strategic Finance Analyst to join our growing Revenue Finance team at Discord. Reporting to the Finance Manager for Revenue, you will be responsible for driving revenue modeling, revenue forecasting, preparing regular reporting and analysis, understanding the drivers of our rapidly expanding subscription business, and partnering with cross-functional teams to support functional strategic initiatives and unlock new growth opportunities. In this role, you will work with senior leaders across Data Science, Product, Engineering, Partnerships, and Operations to make a direct impact on revenue strategy and decision-making. Come help us pave the way to a more awesome Discord!

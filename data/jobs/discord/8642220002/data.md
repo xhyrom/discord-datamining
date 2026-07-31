@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8642220002](https://discord.com/jobs/8642220002)
 
-**Updated At:** Wed, 22 Jul 2026 16:16:58 GMT
+**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.The Notifications squad is a multidisciplinary group of engineers working across client experiences, infrastructure, and machine learning to make sure every notification Discord sends is high signal and high value. As a Software Engineer on Notifications, you'll own well-defined projects end-to-end, sweat the details of a great user experience, and grow your craft alongside a team that ships reliably and cares deeply about quality. This person will report to the Senior Engineering Manager for Growth.

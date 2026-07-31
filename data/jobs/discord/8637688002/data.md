@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8637688002](https://discord.com/jobs/8637688002)
 
-**Updated At:** Wed, 29 Jul 2026 18:22:44 GMT
+**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.This team is where reports and signals become decisions. We build the LLM pipelines that review reported content, the systems that carry enforcement out, the appeals path users take when we get it wrong, and the tooling our investigators and content reviewers work in every day. Most safety reviews are now decided by automation instead of a person, at a cost per review that has fallen by more than 90% on mature workflows and at precision and recall above trained human reviewers. What's left to automate is the ambiguous, high-stakes end, and with appeals arriving by the hundreds of thousands, getting users a fast and fair answer matters as much as catching harm.

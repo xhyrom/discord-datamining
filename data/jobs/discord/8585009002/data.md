@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8585009002](https://discord.com/jobs/8585009002)
 
-**Updated At:** Thu, 16 Jul 2026 21:15:46 GMT
+**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.The Discord Creative Studio Team is seeking a versatile Product Creative designer and illustrator with strong conceptual skills and a knack for working across styles. This role sits within our Product Design org, meaning your work lives inside the app, directly shaping how millions of people experience and express themselves on Discord. Unlike a traditional agency or brand illustration role, you'll be designing within a real product ecosystem: working alongside product designers, animators, and engineers, navigating technical constraints, and contributing to a design system where consistency and craft both matter. You'll be a key player in our expanding Collectibles Content Creation team, someone who can develop a creative vision, collaborate fluidly with other creatives, and provide clear direction to vendors.

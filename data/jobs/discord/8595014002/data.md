@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8595014002](https://discord.com/jobs/8595014002)
 
-**Updated At:** Thu, 30 Jul 2026 20:50:27 GMT
+**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Our mission on the Developer Platform Team is to help game studios succeed by creating meaningful experiences for players. As a B2B2C team, we serve two key audiences. For game studios, we build smart integrations and intuitive tools that make it easy for developers and community managers to connect with players and bring the best of Discord into their games. For players, we enhance on-platform experiences that deepen their connection to the games they love—and make it easier to build lasting friendships through play.

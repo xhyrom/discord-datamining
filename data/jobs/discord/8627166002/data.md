@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8627166002](https://discord.com/jobs/8627166002)
 
-**Updated At:** Sat, 18 Jul 2026 19:03:50 GMT
+**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are seeking an experienced Oracle ERP Fusion Functional Analyst to join Discord's Business Systems team. In this role, you will own incident resolution, functional support, and enhancement and system changes delivery across our Oracle Fusion ERP environment. You will serve to Finance stakeholders and a key liaison on critical system issues, while helping Discord maintain a strong controls posture through ITGC and SOX compliance support.
