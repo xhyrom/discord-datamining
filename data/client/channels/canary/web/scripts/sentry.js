@@ -277,6 +277,13 @@
           }
         }
         function x(e, t, r, n, o) {
+          if (t.signal?.aborted) {
+            let e = Object.assign(Error("Request aborted"), {
+              code: "ABORTED",
+            });
+            L(t), n(e), null != o && o({ ok: !1, hasErr: !0, err: e });
+            return;
+          }
           let a = d()[e](t.url);
           if (
             (null != t.onRequestCreated && t.onRequestCreated(a),
@@ -327,9 +334,9 @@
           let l = () => {
               (t.backoff = null != t.backoff ? t.backoff : new c()),
                 (t.retried = (null != t.retried ? t.retried : 0) + 1),
-                t.backoff.fail(() => O(t.url).then(() => x(e, t, r, n, o)));
+                t.backoff.fail(() => S(t.url).then(() => x(e, t, r, n, o)));
             },
-            i = S?.prepareRequest?.(a);
+            i = O?.prepareRequest?.(a);
           a.ok((e) => null != e.status),
             a.then(
               (a) => {
@@ -358,7 +365,7 @@
                   };
                 if (
                   t?.interceptResponse?.(a, d, c) !== !0 &&
-                  S?.interceptResponse?.(a, d, c, i) !== !0
+                  O?.interceptResponse?.(a, d, c, i) !== !0
                 ) {
                   if (a.ok) r(s);
                   else {
@@ -515,8 +522,8 @@
           R.bind(null, "patch"),
           R.bind(null, "del"),
           r.g.isServerRendering;
-        let S = null,
-          O = () => Promise.resolve(),
+        let O = null,
+          S = () => Promise.resolve(),
           T = ["oppobrowser", "realmebrowser", "heytapbrowser"],
           j = (function (e) {
             let { maxBudgetMinute: t, maxBudgetHour: r } = e,
@@ -541,7 +548,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-ffc414cc924b377db94ca443b216069acd29267c",
+            release: "discord_web-f688b78a2cf3f92c270ecd67da3ca94c6aead105",
             beforeSend: function (e, t) {
               var r;
               let n;
@@ -629,8 +636,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.NA("buildNumber", "587401"),
-            i.NA("builtAt", String("1785538537574"));
+            i.NA("buildNumber", "587484"),
+            i.NA("builtAt", String("1785545615883"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) i.NA(t, e[t]);
           return s;
@@ -720,4 +727,4 @@
   );
   i = l.O(i);
 })();
-//# sourceMappingURL=sentry.e34746f4f21f368f.js.map
+//# sourceMappingURL=sentry.7a17ddae81f6cbf7.js.map
