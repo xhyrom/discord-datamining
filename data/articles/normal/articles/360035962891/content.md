@@ -131,6 +131,22 @@
     />
   </figure>
 </div>
+<div class="exp-box">
+  <p>
+    <strong>Important</strong>: The Account Age, Streaming, Game Time, and Game
+    Variety badges are currently an experiment and are only available to a small
+    number of desktop users at this time.
+  </p>
+  <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 20.86%">
+    <img
+      style="aspect-ratio: 308/100"
+      src="https://support.discord.com/hc/article_attachments/42385756179607"
+      alt="image.png"
+      width="308"
+      height="100"
+    />
+  </figure>
+</div>
 <h1 class="wysiwyg-text-align-left" id="h_01GM67J1C84KT7YPDK0GP3M2PC">
   <strong>Common Profile Badges</strong>
 </h1>
