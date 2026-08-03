@@ -82,8 +82,8 @@
             r[n - 1] = arguments[n];
         }
         let h = () => {},
-          b = () => {};
-        class g {
+          g = () => {};
+        class b {
           name;
           nativeLoggerEnabled;
           constructor(e = "default") {
@@ -102,7 +102,7 @@
               )
                 n[o - 1] = arguments[o];
               h(e.name, "log", t, ...n),
-                e.nativeLoggerEnabled && b?.(e.name, "log", t, ...n);
+                e.nativeLoggerEnabled && g?.(e.name, "log", t, ...n);
             };
           })();
           log = (() => {
@@ -116,7 +116,7 @@
                 n[o - 1] = arguments[o];
               f(t, ...n),
                 h(e.name, "log", t, ...n),
-                e.nativeLoggerEnabled && b?.(e.name, "log", t, ...n);
+                e.nativeLoggerEnabled && g?.(e.name, "log", t, ...n);
             };
           })();
           verboseDangerously = (() => {
@@ -129,7 +129,7 @@
               )
                 n[o - 1] = arguments[o];
               h(e.name, "debug", t, ...n),
-                e.nativeLoggerEnabled && b?.(e.name, "debug", t, ...n);
+                e.nativeLoggerEnabled && g?.(e.name, "debug", t, ...n);
             };
           })();
           verbose = (() => {
@@ -143,7 +143,7 @@
                 n[o - 1] = arguments[o];
               f(t, ...n),
                 h(e.name, "debug", t, ...n),
-                e.nativeLoggerEnabled && b?.(e.name, "debug", t, ...n);
+                e.nativeLoggerEnabled && g?.(e.name, "debug", t, ...n);
             };
           })();
           info = (() => {
@@ -157,7 +157,7 @@
                 n[o - 1] = arguments[o];
               f(t, ...n),
                 h(e.name, "info", t, ...n),
-                e.nativeLoggerEnabled && b?.(e.name, "info", t, ...n);
+                e.nativeLoggerEnabled && g?.(e.name, "info", t, ...n);
             };
           })();
           warn = (() => {
@@ -171,7 +171,7 @@
                 n[o - 1] = arguments[o];
               f(t, ...n),
                 h(e.name, "warn", t, ...n),
-                e.nativeLoggerEnabled && b?.(e.name, "warn", t, ...n);
+                e.nativeLoggerEnabled && g?.(e.name, "warn", t, ...n);
             };
           })();
           error = (() => {
@@ -185,7 +185,7 @@
                 n[o - 1] = arguments[o];
               f(t, ...n),
                 h(e.name, "error", t, ...n),
-                e.nativeLoggerEnabled && b?.(e.name, "error", t, ...n);
+                e.nativeLoggerEnabled && g?.(e.name, "error", t, ...n);
             };
           })();
           trace = (() => {
@@ -198,7 +198,7 @@
               )
                 n[o - 1] = arguments[o];
               h(e.name, "trace", t, ...n),
-                e.nativeLoggerEnabled && b?.(e.name, "trace", t, ...n);
+                e.nativeLoggerEnabled && g?.(e.name, "trace", t, ...n);
             };
           })();
           time = (e, t) => {
@@ -221,13 +221,13 @@
               )
                 n[o - 1] = arguments[o];
               h(e.name, "file-only", t, ...n),
-                e.nativeLoggerEnabled && b?.(e.name, "file-only", t, ...n);
+                e.nativeLoggerEnabled && g?.(e.name, "file-only", t, ...n);
             };
           })();
         }
         let m = "_errors";
         var p = r(264572).Buffer;
-        let y = new g("HTTPUtils"),
+        let y = new b("HTTPUtils"),
           v = new Set([502, 504, 507, 598, 599, 522, 523, 524]),
           E = new Set([429, 503]);
         class w extends Error {
@@ -277,6 +277,13 @@
           }
         }
         function x(e, t, r, n, o) {
+          if (t.signal?.aborted) {
+            let e = Object.assign(Error("Request aborted"), {
+              code: "ABORTED",
+            });
+            L(t), n(e), null != o && o({ ok: !1, hasErr: !0, err: e });
+            return;
+          }
           let a = d()[e](t.url);
           if (
             (null != t.onRequestCreated && t.onRequestCreated(a),
@@ -327,9 +334,9 @@
           let l = () => {
               (t.backoff = null != t.backoff ? t.backoff : new c()),
                 (t.retried = (null != t.retried ? t.retried : 0) + 1),
-                t.backoff.fail(() => O(t.url).then(() => x(e, t, r, n, o)));
+                t.backoff.fail(() => S(t.url).then(() => x(e, t, r, n, o)));
             },
-            i = S?.prepareRequest?.(a);
+            i = O?.prepareRequest?.(a);
           a.ok((e) => null != e.status),
             a.then(
               (a) => {
@@ -358,7 +365,7 @@
                   };
                 if (
                   t?.interceptResponse?.(a, d, c) !== !0 &&
-                  S?.interceptResponse?.(a, d, c, i) !== !0
+                  O?.interceptResponse?.(a, d, c, i) !== !0
                 ) {
                   if (a.ok) r(s);
                   else {
@@ -515,8 +522,8 @@
           R.bind(null, "patch"),
           R.bind(null, "del"),
           r.g.isServerRendering;
-        let S = null,
-          O = () => Promise.resolve(),
+        let O = null,
+          S = () => Promise.resolve(),
           T = ["oppobrowser", "realmebrowser", "heytapbrowser"],
           j = (function (e) {
             let { maxBudgetMinute: t, maxBudgetHour: r } = e,
@@ -542,7 +549,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-07-31-060db27ba71fcdaa609e766684ebd08516bb7d93-discord_web",
+              "2026-08-03-1a0e2d017c39d427ced2a95c829fd32621bddb14-discord_web",
             beforeSend: function (e, t) {
               var r;
               let n;
@@ -630,8 +637,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.NA("buildNumber", "586984"),
-            i.NA("builtAt", String("1785482388780"));
+            i.NA("buildNumber", "587597"),
+            i.NA("builtAt", String("1785741588280"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) i.NA(t, e[t]);
           return s;
@@ -721,4 +728,4 @@
   );
   i = l.O(i);
 })();
-//# sourceMappingURL=sentry.80ab6930f6ce110d.js.map
+//# sourceMappingURL=sentry.ad2349a32124de24.js.map
