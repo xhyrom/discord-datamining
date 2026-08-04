@@ -1,11 +1,77 @@
 <p>
   Welcome to Discord's Shop FAQ! Learn everything you need to know about
   customizing your Discord profile with <strong>Avatar Decorations</strong>,
-  <strong>Profile Effects</strong>, <strong>Nameplates</strong>, and more
-  through our <strong>Shop</strong>. Whether you're looking to purchase unique
-  items, claim Nitro exclusives, or send gifts to friends, this article explains
-  all the essential features and functions.
+  <strong>Nameplates</strong>, <strong>Profile Effects</strong>, and
+  <strong>Profile Frames</strong> through our <strong>Shop</strong>. Whether
+  you're looking to purchase unique items, claim Nitro exclusives, or send gifts
+  to friends, this article explains all the essential features and functions.
 </p>
+<div class="mega-box">
+  <p>
+    <span style="color: #434343"
+      >Offer:
+      <strong>Discount on your first Shop purchase starting </strong>August 4,
+      2026<strong>!</strong></span
+    >
+  </p>
+  <p>
+    <span style="color: #434343"
+      ><strong
+        >Some users may see a banner for a discount on their first real-money
+        purchase in the Shop. If you have this offer:</strong
+      ></span
+    >
+  </p>
+  <ul>
+    <li
+      class="wysiwyg-list-color wysiwyg-list-bold"
+      style="--wysiwyg-list-marker-color: #434343"
+      data-list-item-id="ee8a661790ea1fd531f93b71e12daddf8"
+    >
+      <span style="color: #434343"
+        ><strong
+          >It's a one-time discount on Discord-made items (Discord Collabs items
+          and Orbs purchases aren't included). Works for a purchase for yourself
+          or a gift.</strong
+        ></span
+      >
+    </li>
+    <li
+      class="wysiwyg-list-color"
+      style="--wysiwyg-list-marker-color: #434343"
+      data-list-item-id="e74142691c37ca4275f183818ed517d13"
+    >
+      <span style="color: #434343"
+        ><strong
+          >Not sure if an item qualifies? Open its page and look for the </strong
+        >Offer Eligible<strong>
+          badge. The discount won't show while browsing, it's applied
+          automatically at checkout.</strong
+        ></span
+      >
+    </li>
+    <li
+      class="wysiwyg-list-color wysiwyg-list-bold"
+      style="--wysiwyg-list-marker-color: #434343"
+      data-list-item-id="ec8b5948af7091e6cabeb2412f4e716ca"
+    >
+      <span style="color: #434343"
+        ><strong
+          >While your offer is active, item prices may default to real-money
+          pricing instead of Orbs. You can still purchase Orbs Eligible items
+          with Orbs by opening the item’s page.</strong
+        ></span
+      >
+    </li>
+  </ul>
+  <p>
+    <span style="color: #434343"
+      ><strong>This offer will end </strong>August 11, 2026 (12PM PT)<strong
+        >.</strong
+      ></span
+    >
+  </p>
+</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
@@ -78,27 +144,30 @@
 </div>
 <h1 id="h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</h1>
 <p>
-  In the Shop, you can preview and purchase
-  <a
+  In the Shop, you can preview and purchase<a
     href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
     target="_blank"
     rel="noopener noreferrer"
-    >Avatar Decorations</a
-  >,
-  <a
+    ><span class="wysiwyg-underline"> Avatar Decorations</span></a
+  >,<a
     href="https://support.discord.com/hc/en-us/articles/17828465914263-Profile-Effects"
     target="_blank"
     rel="noopener noreferrer"
-    >Profile Effects</a
-  >,
-  <a
+    ><span class="wysiwyg-underline"> Profile Effects</span></a
+  >,<a
     href="https://support.discord.com/hc/en-us/articles/30408457944215"
     target="_blank"
     rel="noopener noreferrer"
-    >Nameplates</a
-  >, and more. Nitro members enjoy exclusive Shop perks, including special
-  discounts on select items, and may have access to member-only profile items to
-  use with their subscription.
+    ><span class="wysiwyg-underline"> Nameplates</span></a
+  >, and
+  <a
+    href="https://support.discord.com/hc/en-us/articles/40775065582615"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Profile Frames</span></a
+  >. Nitro members enjoy exclusive Shop perks, including special discounts on
+  select items, and may have access to member-only profile items to use with
+  their subscription.
 </p>
 <div class="info-box">
   Items available for purchase in the Shop will change periodically and may be
@@ -127,9 +196,9 @@
 </div>
 <h2 id="h_01J4T4BWARG55JA5T9T9CGJRFW">Shop Bundles</h2>
 <p>
-  In the Shop, you’ll also find <strong>Bundles</strong>! Bundles include a
-  matching or complementary pair of avatar decorations and profile effects from
-  the same collection and come with a larger discount.
+  In the Shop, you’ll also find <strong>Bundles</strong>! Bundles include
+  matching or complementary profile decorations from the same collection and
+  come with a discount. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -192,16 +261,16 @@
       </li>
     </ul>
   </li>
-  <li data-list-item-id="e6c4f1a0f7b444df09638f9745e5509fd">
-    <strong>Select items from main collections</strong> - Access popular Shop
-    items without spending money
+  <li data-list-item-id="e2fb69623ab3a84a41f377068d4218638">
+    <strong>Select Orbs Eligible items from main catalog</strong> - Access
+    popular Shop items without spending money
   </li>
 </ul>
 <p>You <em>cannot</em> purchase the following items with Orbs: </p>
 <ul>
   <li data-list-item-id="e9aa9a97a18f5465ea6f122e44118022a">Gifts</li>
-  <li data-list-item-id="e748a3ca66effecefdc68be1981f21cf7">
-    Partner-branded Shop items
+  <li data-list-item-id="e47bd89ef943aaa9d3e42271c1c66be06">
+    Partner-branded Shop items (Collabs)
   </li>
   <li data-list-item-id="e8042bc7a109f987a518966ef89667bcb">
     Recurring Nitro or Boosting subscriptions
@@ -219,8 +288,8 @@
 </h4>
 <p><strong>How pricing works:</strong></p>
 <ul>
-  <li data-list-item-id="e4f7d13dcb8b9f678776e0b93e0a7b8d9">
-    Eligible items show both real-world money and Orb prices
+  <li data-list-item-id="e4f19b0eb14a613efb17d39320faf89f3">
+    Orbs Eligible items show both real-world money and Orb prices
   </li>
   <li data-list-item-id="ef82efaf25f2449bc41ab6276a4a5ec1e">
     When you have enough Orbs, we automatically display the Orbs price first
@@ -276,41 +345,26 @@
 </h4>
 <p>
   <span class="wysiwyg-font-size-x-large"
-    ><strong>Navigate to the Shop via Shop Banner</strong></span
+    ><strong>Navigate to the Shop via Your Profile</strong></span
   >
 </p>
 <p>
-  1. To access your <strong>User Settings, </strong>select the
-  <strong>cogwheel icon</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/33244572829591"
-    width="24"
-    height="24"
-  />] in the lower-left corner of the app, then navigate to the
-  <strong>Profiles </strong>section. 
+  1. Select the <strong>avatar</strong> icon in the bottom-left corner of the
+  app to open your profile.
 </p>
-<p>
-  2. Once there, you will see the <strong>banner</strong> to the Shop. You can
-  also select <strong>Change Effect, </strong>
-  <strong>Change Decoration</strong>, or <strong>Change Nameplate </strong>and
-  press the <strong>Shop icon</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/33244580986135"
-    width="24"
-    height="24"
-  />].  
-</p>
-<p>
-  3. Once directed to the Shop, you can preview and buy Avatar Decorations,
-  Profile Effects, Nameplates and more to add to your collection!
-</p>
+<p>2. Select <strong>Edit</strong> <strong>Profile</strong>.</p>
+<p>3. Select any profile cosmetic icon.</p>
+<p>4. Select the <strong>Shop</strong> tab in the window that appears.</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33244572829975"
-    width="624"
-    height="447"
+    src="https://support.discord.com/hc/article_attachments/42176668785175"
+    alt="Navigating to the Shop via Your Profile"
+    width="800"
+    height="587"
   />
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JZ9CHZRQJ29B2ZXSKXW0NQXG">
-  <span style="color: #666666">Navigating to the Shop via Shop Banner</span>
+<h4 class="wysiwyg-text-align-center" id="h_01KY61856APY3GGTX98EX0HENX">
+  <span style="color: #666666">Navigating to the Shop via Your Profile</span>
 </h4>
 <div class="tip-box">
   <strong>Tip</strong>: Orbs Exclusives are only available on the Discord
@@ -635,3 +689,4 @@
     ><span class="wysiwyg-underline">here</span></a
   >.
 </p>
+<p> </p>
