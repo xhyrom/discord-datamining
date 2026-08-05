@@ -1,7 +1,7 @@
 <p>
   Buy, gift, and wishlist in-game items for your favorite games directly on
   Discord. Browse items in the Discord Shop or in a game's official server, gift
-  items to friends in just a few clicks, and add items to your Wishlist so
+  items to friends in just a few steps, and add items to your Wishlist so
   friends know exactly what to get you. This article covers everything you need
   to know about how it all works.
 </p>
@@ -126,6 +126,14 @@
         >
           <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E"><strong>Rust Shop</strong></a>
         </li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e8a4825d625743d4162c732b072491a31"
+        >
+          <a href="#h_01KZ49EKXDR078KV47FBG58PYP"
+            ><strong>Bloons TD 6</strong></a
+          >
+        </li>
       </ul>
     </li>
   </ul>
@@ -145,32 +153,35 @@
   <li data-list-item-id="e0ddccaf43ccc8c0387e841ce63bc5ef1">
     <strong>Rust</strong>: Rust Shop
   </li>
+  <li data-list-item-id="e5e3b56c08a8c3e000f1b95ae21e759a4">
+    <strong>Bloons TD 6</strong>: Bloons TD 6
+  </li>
 </ul>
 <h1 id="h_01KQJNEWVPG87A6MGGTS47408G">
   Where To Find In-Game Items On Discord
 </h1>
 <div class="info-box">
   <strong>Note: </strong>Game Shops are currently available on the Discord
-  desktop and web apps. Mobile users may encounter Game Shop embeds or item
+  desktop app and browser. Mobile users may encounter Game Shop embeds or item
   listings that are available for purchase, but the full Game Shop experience is
-  only available on desktop and web. <br />See the
-  <a href="#h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Shop</a> and
-  <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Shop</a> sections below for
-  details on which platforms each game supports for item redemption.
+  only available on desktop and browser. Platform support for item redemption
+  varies by game, so check the
+  <a href="#h_01KQJNEWW70FH3QE17RZP3TC2P">FAQ</a> section for your specific game
+  below for details. 
 </div>
 <p>There are two ways to find in-game items on Discord:</p>
 <h2 id="h_01KQJNEWVQH83B35TH0VEMYAGG">Through the Discord Shop</h2>
 <p>
-  1. Navigate to the Discord Shop by selecting the <strong>Shop tab</strong> [ ]
-  to the right of your server list.
+  1. Navigate to the Discord Shop by selecting the <strong>Shop tab</strong> to
+  the right of your server list.
 </p>
 <p>2. Select <strong>Game Shops</strong> at the top of the Shop.</p>
-<p>3. Browse available games and select a game to see its items.<br /> </p>
+<p>3. Browse available games and select a game to see its items.</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/40167861384855"
-    width="795"
-    height="252"
+    src="https://support.discord.com/hc/article_attachments/42477023070359"
+    width="714"
+    height="233"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01KQJNEWVTN14ABEY245S58793">
@@ -378,6 +389,14 @@
   >
     <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E"><strong>Rust Shop</strong></a>
   </li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="ed7f3f9cd84db34b1cfc4d3c612233c0d"
+  >
+    <a href="#h_01KZ49EKXDR078KV47FBG58PYP"
+      ><strong>Bloons TD 6 Game Shop</strong></a
+    >
+  </li>
 </ul>
 <h2 id="h_01KQJNEWW9VBQYCG8QCRDVHXQ8">Purchases and Refunds</h2>
 <p><strong>Q: Can I refund a Game Shop purchase?</strong> </p>
@@ -500,8 +519,8 @@
 <div class="warn-box">
   <strong>Rust Players:</strong> If you made a purchase and didn't get your item
   after linking, please launch Rust and re-link your Discord account from inside
-  the game. You can do this by clicking 'Social' in the bottom right, then 'Find
-  your Friends on Discord'.
+  the game. You can do this by selecting 'Social' in the bottom right, then
+  'Find your Friends on Discord'.
 </div>
 <h2 id="h_01KQJNEWWFCGTTPJRND5GPAHZE">General</h2>
 <p><strong>Q: Which games have Game Shops on Discord?</strong> </p>
@@ -590,7 +609,7 @@
 </p>
 <p><strong>Q: Where can I find the Marvel Rivals Shop on Discord?</strong></p>
 <p>
-  A: You can click this link to go directly to the
+  A: You can select this link to go directly to the
   <a
     href="https://discord.com/channels/1193841000108531764/game-shop"
     target="_blank"
@@ -646,9 +665,125 @@
 </p>
 <p><strong>Q: Where can I find the Rust Shop on Discord? </strong></p>
 <p>
-  A: You can click this link to go directly to the
+  A: You can select this link to go directly to the
   <a href="https://discord.com/channels/560127830160048128/game-shop"
     ><span class="wysiwyg-underline">Rust Shop on Discord</span></a
+  >. 
+</p>
+<h2 id="h_01KZ49EKXDR078KV47FBG58PYP">Bloons TD 6 Game Shop</h2>
+<div class="mega-box">
+  <span style="color: #434343"
+    >Offer:<strong> From </strong>August 4 (3 PM PT)<strong> through </strong
+    >August 18 (5 PM PT)<strong
+      >, all users can get 50% off official Bloons TD 6 in-game items in the </strong
+    >Bloons TD 6 Game Shop<strong>
+      on Discord. Players who make their first purchase will also receive a </strong
+    >Wumpus Pet<strong>
+      available in-game for Bloons TD 6 even after the sale window.</strong
+    ></span
+  >
+</div>
+<p>
+  <strong>Q: Which platforms can I redeem Bloons TD6 Shop items on?</strong>
+</p>
+<p>
+  A: Currently supported on <strong>PC</strong> (via Steam, Epic Store and
+  Microsoft Store), and <strong>mobile</strong> (iOS, Android, Epic iOS, Epic
+  Android and Amazon). Items are tied to your linked Bloons TD 6 account rather
+  than a specific device, so once your account is linked, your item is available
+  no matter which supported platform you play on.
+</p>
+<p>
+  <strong
+    >Q: I'm having trouble linking my Bloons TD 6 account to receive my item.
+    What should I do?</strong
+  >
+</p>
+<p>
+  A: If you made a purchase and didn't receive your item, re-linking your Bloons
+  TD 6 and Discord accounts usually fixes it. You'll need a Ninja Kiwi account
+  (used for Bloons TD 6) to do this, so make sure you're signed in before you
+  start.
+</p>
+<p>Start the same way on any device:</p>
+<p>
+  1. Open <strong>Bloons TD 6</strong> and go to <strong>Settings</strong> &gt;
+  <strong>Account</strong> &gt; <strong>Discord</strong>.
+</p>
+<p>2. Select <strong>Link Accounts</strong>.</p>
+<p>What happens next depends on your platform.</p>
+<p><strong>On Steam (PC):</strong></p>
+<p>1. The Discord account-linking window opens directly.</p>
+<p>2. Select <strong>Authorize</strong> to confirm. You're now linked.</p>
+<p><strong>On mobile:</strong></p>
+<p>
+  1. You'll be taken to a web page to sign in to your Ninja Kiwi account. Choose
+  one:
+</p>
+<ul>
+  <li data-list-item-id="edd4bde31cab936c0410e5c314c844809">
+    Sign in with Steam
+  </li>
+  <li data-list-item-id="eb1eada1e59313ca65b6cfd573fe9255d">
+    Log in with your email and password
+  </li>
+  <li data-list-item-id="e4ec822bc9f51a913347bc59500d34c55">
+    Use a linking code
+  </li>
+</ul>
+<p>2. Scroll down and select <strong>Authorize</strong> to confirm.</p>
+<p>Your accounts are now linked, and your item should appear.</p>
+<p>
+  <strong
+    >Q: What happens if I receive a Bloons TD6 item but don't own the
+    game?</strong
+  >
+</p>
+<p>
+  A: You'll be taken to the account-linking page first, since you'll need to
+  link a Bloons TD 6 account before you can claim the item. If you don't already
+  have the game, download <strong>Bloons TD 6</strong>, create an account, and
+  link it to Discord. Once that's done, your item is ready to use.
+</p>
+<p>
+  Gifting works the same way. If a friend claims a gifted item without a linked
+  account, they'll be prompted to link one on that same page before the item
+  lands.
+</p>
+<p><strong>Q: How does this work on mobile?</strong></p>
+<p>
+  A: The same way as on PC. If you don't have a linked account, you'll be
+  redirected to the account-linking page to log into your Bloons TD6 account. It
+  doesn't matter which platform you link from. Once linked, your item is
+  available everywhere you play. Gifting follows the same flow. Claim the gift,
+  link your account if needed, then the item is yours.
+</p>
+<p>
+  <strong
+    >Q: I've linked my account, but I'm still having trouble accessing my item
+    in Bloons TD 6. What should I do?</strong
+  >
+</p>
+<p>
+  A: If you're still having trouble accessing your item after linking, please
+  visit our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/35714463749015-How-to-Submit-a-Support-Ticket-to-Discord"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Help Center article</span></a
+  >
+  on how to submit a support ticket so our Discord Support team can investigate
+  further.
+</p>
+<p><strong>Q: Where can I find the Bloons TD 6 Shop on Discord? </strong></p>
+<p>
+  A: You can select this link to go directly to the
+  <a
+    href="https://discord.com/channels/187363008610041857/game-shop"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Bloons TD 6 Game Shop</span></a
   >. 
 </p>
 <p> </p>
