@@ -1,14 +1,48 @@
 <div class="exp-box">
-  <strong>Note:</strong> Between June and July 2026, we're testing a few new age
-  assurance methods including Google Wallet and credit card check to provide
-  more options for the small percentage of users who may need to manually age
-  assure. We will also be testing ID scan and Selfie methods with a new vendor,
-  <a href="https://www.incode.com/face-age-estimation"
-    ><span class="wysiwyg-underline">Incode</span></a
-  >, who meets our strict requirements for on-device facial age estimation so
-  your biometric data never leaves your phone. Please see
-  <a href="#h_01KBKGJ94P37NG33SC7PAFTVKS">below </a>for more details on what
-  we're testing.
+  <strong>Note: </strong><br />To give users more choice in how they confirm
+  their age, we're testing additional age confirmation methods from June to
+  August 2026 in Australia and Brazil, where it's required by regulation. These
+  are limited experiments and may not be available to all users in these
+  regions.<br /><br /><strong>What's being tested:</strong><br />- Google
+  Wallet: Confirms you’re an adult by using a Passport ID already verified and
+  stored in your Google Wallet. We don’t get your Passport information, just
+  your age. Note: This is also being tested in the UK, see
+  <a
+    href="https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.<br />- Facial Age Estimate with a selfie through a new vendor,
+  <a
+    href="https://www.incode.com/face-age-estimation"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Incode</a
+  ><br />- ID scan through a new vendor,
+  <a
+    href="https://www.incode.com/face-age-estimation#id-scan"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Incode</a
+  ><br />- Credit card check: Confirms you're an adult by checking you hold a
+  valid credit card<br />See
+  <a
+    href="#h_01KBKGJ94P37NG33SC7PAFTVKS"
+    target="_blank"
+    rel="noopener noreferrer"
+    >below</a
+  >
+  for more details on how each method works.<br /><br /><strong
+    >How Incode handles your data:</strong
+  > <br />- Incode runs these age checks as Discord's service provider. Our
+  agreement limits them to only the age confirmation we ask for, requires them
+  to delete your info afterward, and doesn't allow them to link your ID or
+  selfie to your Discord account or use them to train their models.<br />-
+  Incode has its own privacy policy for its broader products, but that’s not
+  what applies here. Our agreement is what controls how Incode supports the age
+  checks for Discord.<br />- For Facial Age Estimation, your selfie is processed
+  on-device and never leaves your phone. For ID scan, your ID and selfie go to
+  Incode only to confirm your age, then is deleted immediately.
 </div>
 <div class="warn-box">
   <strong>Important:</strong> As part of strengthening teen safety and
@@ -206,7 +240,7 @@
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01KBKGJ94N5EY53TDWY1D888TC">
   <span style="color: #666666"
-    >Example of <strong>Verify age group</strong> window</span
+    >Example of <strong>Confirm age group</strong> window</span
   >
 </h4>
 <h2 id="h_01KBKGJ94P37NG33SC7PAFTVKS">
@@ -219,7 +253,7 @@
 </p>
 <p>
   <span class="wysiwyg-font-size-large"
-    ><strong>Option 1: Video Selfie via k-ID</strong></span
+    ><strong>Video Selfie via k-ID</strong></span
   >
 </p>
 <p>
@@ -230,7 +264,7 @@
 </p>
 <ul>
   <li data-list-item-id="eb1f82c0bca6b16c4fc1d42f3f20199ca">
-    Select <strong>Take a selfie </strong>on the age confirmation page. 
+    Select <strong>Video Selfie </strong>on the age confirmation page. 
   </li>
   <li data-list-item-id="ec803c6387c9327f5065107d0e1d08211">
     Allow camera access when prompted.
@@ -257,14 +291,12 @@
   second vendor,
   <a href="https://www.incode.com/face-age-estimation"
     ><span class="wysiwyg-underline">Incode</span></a
-  >. That data handling is the same: Your selfie never leaves your device, and
-  no biometric data is shared. This experiment may not be available to all users
-  and will run from June 2026 to July 2026.
+  >. That data handling is the same: Your selfie never leaves your device, is
+  deleted immediately, and no biometric data is shared. This experiment may not
+  be available to all users at this time. 
 </div>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>Option 2: Scan ID via k-ID</strong></span
-  >
+  <span class="wysiwyg-font-size-large"><strong>Scan ID via k-ID</strong></span>
 </p>
 <p>
   This method confirms your age by scanning a government-issued ID and then
@@ -322,8 +354,7 @@
   entire process is fully automated so no human ever sees your ID. Everything is
   permanently deleted once your age is confirmed and Discord never sees it.
   Discord only receives your age and your ID is never linked to your Discord
-  account. This experiment may not be available to all users and will be running
-  from June 2026 to July 2026.
+  account. This experiment may not be available to all users at this time.
 </div>
 <p class="wysiwyg-text-align-center">
   <img
@@ -339,52 +370,50 @@
   >
 </h4>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>Option 3: Google Wallet</strong></span
-  >
+  <span class="wysiwyg-font-size-large"><strong>Google Wallet</strong></span>
 </p>
 <div class="exp-box">
   <strong>Important:</strong> This feature is currently in testing and may not
   be available to all users.
 </div>
 <p>
-  This method uses a passport ID pass saved in Google Wallet to confirm your
-  age. Google shares your birthdate with Discord and we derive your age from it.
-  We do not store or retain your birthdate after that. All other information
-  included in the form of ID stays within Google Wallet and is never shared.
+  This method uses a form of ID, like a passport, saved in Google Wallet to
+  confirm your age. Only your age group and country are shared with Discord. All
+  other information included in the form of ID stays within Google Wallet.
 </p>
 <ul>
   <li data-list-item-id="e7a3366225fc114de0b554f32e2652edd">
-    Select <strong>Google Wallet ID Pass</strong> on the age confirmation page.
+    Select <strong>Google Wallet</strong> on the age confirmation page.
   </li>
   <li data-list-item-id="eb5fb5ce65f60a7c22b79833405af348e">
-    Already have an ID pass? You're all set, just click
+    <strong>Already have an ID pass?</strong> You're all set, just click
     <strong>Continue</strong> when prompted to share your age with Discord.
   </li>
   <li data-list-item-id="ed6e35b77ae052da7b918ac495545b728">
-    Don't have an ID pass yet? You'll be asked to create one first:
+    <strong>Don't have an ID pass yet?</strong> You'll be asked to create one
+    first: 
+    <ol>
+      <li data-list-item-id="ee8d573caa0c7400b22a61257321ee2a1">
+        Choose to complete setup on your current device or scan a QR code to use
+        another device.
+      </li>
+      <li data-list-item-id="e078afe446a28c677d9fe78a925474f80">
+        On the <strong>Create an ID pass</strong> page, tap
+        <strong>Continue</strong>.
+      </li>
+      <li data-list-item-id="e2539fec014fbc0a192845abeb4d45e31">
+        Select your region.
+      </li>
+      <li data-list-item-id="e1c7142779583d2fdf5c2658cf18308d3">
+        Scan your passport.
+      </li>
+      <li data-list-item-id="ea71c32b50246bc1d113e9935ae2f4b52">
+        Click <strong>Continue</strong> when prompted to share your age with
+        Discord.
+      </li>
+    </ol>
   </li>
 </ul>
-<ol>
-  <li data-list-item-id="e1baa807c16018bc4e78f3ee25061c72e">
-    Choose to complete setup on your current device or scan a QR code to use
-    another device.
-  </li>
-  <li data-list-item-id="e94090424957f25d7cc2799e15fe0ece3">
-    On the <strong>Create an ID pass</strong> page, tap
-    <strong>Continue</strong>.
-  </li>
-  <li data-list-item-id="e1afbaf26f28cd25424f74a6b83e82556">
-    Select your region.
-  </li>
-  <li data-list-item-id="e82820d9378f3eb47a626b6b1fe0f024d">
-    Scan your passport.
-  </li>
-  <li data-list-item-id="ecb854107e19950e305df600220bcd3fc">
-    Click <strong>Continue</strong> when prompted to share your age with
-    Discord.
-  </li>
-</ol>
 <p>
   Need help setting up an ID pass?
   <a
@@ -396,7 +425,7 @@
 </p>
 <p>
   <span class="wysiwyg-font-size-large"
-    ><strong>Option 4: Credit Card Check</strong></span
+    ><strong>Credit Card Check</strong></span
   >
 </p>
 <div class="exp-box">
@@ -404,7 +433,6 @@
   be available to all users.
 </div>
 <p>
-  This method confirms you're an adult by verifying ownership of a credit card.
   Your card details are passed to k-ID, who sends them to Stripe (a secure
   payment processor). Your details are never seen by Discord and are not
   retained by k-ID or Discord. Discord only receives confirmation of whether or
@@ -423,7 +451,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  >.
+  >. This feature is currently in testing and may not be available to all users.
 </p>
 <h2 id="h_01KBKGJ94ZQVW62DH0TS4JJFSF">Step 3: Confirmation</h2>
 <p>
@@ -710,7 +738,7 @@
     </li>
   </ul>
 </div>
-<p><strong>Q: How many times will I need to verify my age?</strong></p>
+<p><strong>Q: How many times will I need to confirm my age?</strong></p>
 <p>
   <span id="docs-internal-guid-f73b639f-7fff-0e5c-0fe3-29d2697a54c6"
     >A: In most cases, users complete the process once and their Discord
