@@ -30,7 +30,7 @@
     }
   ],
   "id": 8675215002,
-  "updated_at": "2026-08-03T18:54:22-04:00",
+  "updated_at": "2026-08-06T18:13:47-04:00",
   "requisition_id": "R-107260",
   "title": "Manager, Safety Analytics",
   "company_name": "Discord",
@@ -48,9 +48,9 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }

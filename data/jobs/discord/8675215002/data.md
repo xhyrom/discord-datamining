@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8675215002](https://discord.com/jobs/8675215002)
 
-**Updated At:** Mon, 03 Aug 2026 22:54:22 GMT
+**Updated At:** Thu, 06 Aug 2026 22:13:47 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord exists to give people the power to create space to find belonging — to talk regularly with the people they care about and build genuine relationships with friends and communities close to home or around the world.
@@ -56,5 +56,5 @@ education_optional
 - Machine Learning
 
 **Offices:**
-- San Francisco, CA in San Francisco, California, United States
+- Remote (U.S.)
     

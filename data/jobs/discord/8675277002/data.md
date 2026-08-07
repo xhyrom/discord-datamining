@@ -10,11 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8675277002](https://discord.com/jobs/8675277002)
 
-**Updated At:** Tue, 04 Aug 2026 17:38:21 GMT
+**Updated At:** Thu, 06 Aug 2026 20:53:15 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Enterprise Technology org is building a software engineering discipline from the ground up, and this is one of its first engineering hires. The Enterprise Platform team is brand new. You will not be inheriting a mature system or a long backlog: you will own core domains of the platform that turns the internal systems enabling Discordians into self-service software.
-Discord's mission is to cultivate belonging, and doing that at scale requires internal systems that move as fast as the product itself. The mission of this role is to turn our enterprise infrastructure into self-service software. Your job is to replace manual consoles and tickets with a platform of reusable primitives, building blocks like "provision a device" or "push an IAM policy or app integration through code," exposed through clean APIs and self-service portals. As a code-forward Staff engineer, you will design abstractions that hide the messy reality of Okta, Jamf, and Terraform (our identity, device management, and infrastructure-as-code tools) behind interfaces people actually want to use, operating with a platform-as-a-product mindset.
+Discord's mission is to cultivate belonging, and doing that at scale requires internal systems that move as fast as the product itself. The mission of this role is to turn our enterprise infrastructure into self-service software. Your job is to replace manual consoles and tickets with a platform of reusable primitives, building blocks like "provision a device" or "push an IAM policy or app integration through code," exposed through clean APIs and self-service portals. As a code-forward Senior engineer, you will design abstractions that hide the messy reality of Okta, Jamf, and Terraform (our identity, device management, and infrastructure-as-code tools) behind interfaces people actually want to use, operating with a platform-as-a-product mindset.
 What You'll Do
 
 Manage the device fleet as code: Move device configuration off consoles and into versioned, API-driven infrastructure for endpoint management and hardware provisioning.
