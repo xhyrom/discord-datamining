@@ -12,19 +12,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  >.<br />- Facial Age Estimate with a selfie through a new vendor,
-  <a
-    href="https://www.incode.com/face-age-estimation"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Incode</a
-  ><br />- ID scan through a new vendor,
-  <a
-    href="https://www.incode.com/face-age-estimation#id-scan"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Incode</a
-  ><br />- Credit card check: Confirms you're an adult by checking you hold a
+  >.<br />- Credit card check: Confirms you're an adult by checking you hold a
   valid credit card<br />See
   <a
     href="#h_01KBKGJ94P37NG33SC7PAFTVKS"
@@ -32,17 +20,7 @@
     rel="noopener noreferrer"
     >below</a
   >
-  for more details on how each method works.<br /><br /><strong
-    >How Incode handles your data:</strong
-  > <br />- Incode runs these age checks as Discord's service provider. Our
-  agreement limits them to only the age confirmation we ask for, requires them
-  to delete your info afterward, and doesn't allow them to link your ID or
-  selfie to your Discord account or use them to train their models.<br />-
-  Incode has its own privacy policy for its broader products, but that’s not
-  what applies here. Our agreement is what controls how Incode supports the age
-  checks for Discord.<br />- For Facial Age Estimation, your selfie is processed
-  on-device and never leaves your phone. For ID scan, your ID and selfie go to
-  Incode only to confirm your age, then is deleted immediately.
+  for more details on how each method works.<br /> 
 </div>
 <div class="warn-box">
   <strong>Important:</strong> As part of strengthening teen safety and
@@ -286,15 +264,6 @@
     >here</a
   >.
 </p>
-<div class="exp-box">
-  <strong>Selfie via Incode:</strong> We’re testing this experience with a
-  second vendor,
-  <a href="https://www.incode.com/face-age-estimation"
-    ><span class="wysiwyg-underline">Incode</span></a
-  >. That data handling is the same: Your selfie never leaves your device, is
-  deleted immediately, and no biometric data is shared. This experiment may not
-  be available to all users at this time. 
-</div>
 <p>
   <span class="wysiwyg-font-size-large"><strong>Scan ID via k-ID</strong></span>
 </p>
@@ -345,17 +314,6 @@
   >
   to learn more about how they handle your data.
 </p>
-<div class="exp-box">
-  <strong>ID Scan via Incode:</strong> We're testing this with a second vendor,
-  <a href="https://www.incode.com/face-age-estimation"
-    ><span class="wysiwyg-underline">Incode</span></a
-  >. The data handling is the same. Your ID and selfie go directly to Incode,
-  only your date of birth is reviewed for age confirmation purposes, and the
-  entire process is fully automated so no human ever sees your ID. Everything is
-  permanently deleted once your age is confirmed and Discord never sees it.
-  Discord only receives your age and your ID is never linked to your Discord
-  account. This experiment may not be available to all users at this time.
-</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/36768944679959"
