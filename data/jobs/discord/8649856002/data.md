@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8649856002](https://discord.com/jobs/8649856002)
 
-**Updated At:** Mon, 03 Aug 2026 17:39:20 GMT
+**Updated At:** Mon, 10 Aug 2026 15:43:04 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.More broadly, Discord is about empowering people to find belonging in all kinds of communities, and those people trust us to keep their communications safe. Our Platform Security Engineering team protects the systems we use to create Discord, making the “secure way” the “easy way.”
@@ -18,20 +18,20 @@ We’re looking for an Engineering Manager to lead a team of software engineers 
 What you'll do
 You’ll shape company-wide security strategy and lead a highly-autonomous and horizontally-integrated team of software engineers who will...
 
-Build and operate identity and access management (IAM) systems for humans and machines that are user-friendly and promote least privilege
-Secure first- and third-party software supply chains, from the dev environment through CI/CD and into production
-Develop and apply best-in-class secure baselines for cloud infrastructure
+Develop and apply best-in-class secure baselines for cloud infrastructure, owning the security of all cloud environments
 Manage infrastructure vulnerabilities while supporting a high-velocity engineering org with hundreds of developers
+Secure first- and third-party software supply chains, from the dev environment through CI/CD and into production
+Build and operate identity and access management (IAM) systems for humans and machines that are user-friendly and promote least privilege
 Consult on risk assessments, architectural designs, threat models, code reviews, and more—pragmatically balancing security with other business considerations
 
 What we look for
 
 3+ years of experience as people manager, having managed a team of 3+ security software engineers
 Passion for creating diverse and inclusive teams and coaching engineers
-Comfort with writing the roadmap, not just following one
 3+ years of experience securing systems with millions of users
-Expert reasoning about the security of complex systems, even if they contain unfamiliar components
+Comfort with writing the roadmap, not just following one
 Experience building in and securing cloud-based environments (we use GCP, Cloudflare, and AWS)
+Expert reasoning about the security of complex systems, even if they contain unfamiliar components
 Experience writing software in a general-purpose programming language (we use Python, Typescript, and Rust)
 Experience developing with agentic AI, and a good grasp of AI security practices
 

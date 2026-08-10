@@ -2,7 +2,7 @@
 
 ## Engineering Manager, Revenue
 
-**Location:** San Francisco Bay Area or Remote
+**Location:** Remote
 
 **Id:** 8502342002 <br/>
 **Internal Job Id:** 6396082002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8502342002](https://discord.com/jobs/8502342002)
 
-**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
+**Updated At:** Mon, 10 Aug 2026 16:52:41 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We’re looking for a highly technical, hands-on, and empathetic Engineering Manager to lead one of our full stack squads in our Revenue organization. This is a high-impact role where you’ll be directly responsible for one of Discord’s major business lines, delivering premium experiences that create real value for users while driving company revenue.
