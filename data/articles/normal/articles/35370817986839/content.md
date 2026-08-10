@@ -87,10 +87,10 @@
 </div>
 <h1 id="h_01K7Q39NTJXN478QEC9C50K5MF">What is the Game Servers Feature?</h1>
 <p>
-  Discord’s Game Servers feature lets server owners create hosted game servers
-  for popular titles, giving their community a dedicated space to game together.
-  This feature makes it simple for communities to set up, manage, and join
-  custom game servers tailored to their preferences.
+  Discord's Game Servers feature lets you create dedicated game servers for
+  popular titles — either by unlocking one for your whole community using Server
+  Boosts, or by subscribing to your own directly in the Shop — creating seamless
+  multiplayer gaming experiences for your community.
 </p>
 <div class="info-box">
   <strong>Note:</strong> While Game Servers can be set up and accessed through a
