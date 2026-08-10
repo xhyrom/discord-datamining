@@ -735,11 +735,6 @@
     redeemed by August 25, 2026 (10AM PT).
   </li>
 </ul>
-<div class="info-box">
-  <strong>Note:</strong> This Reward is not available in regions where Discord
-  or billing on Discord is not supported, including Syria, Russia, Turkey, Iran,
-  North Korea, Zaporizhzhia, Kherson, Donetsk, and Luhansk.
-</div>
 <p>You are <strong>not</strong> eligible if:</p>
 <ul>
   <li data-list-item-id="eab1190d73c7caf549e2b16038e3fb6c1">
