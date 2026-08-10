@@ -1,7 +1,7 @@
 <p>
   Nitro is expanding its perks beyond Discord with
   <strong>Nitro Rewards</strong>, a third-party benefits program included with
-  your membership. From games to gear, these are perks built for how you play.
+  your subscription. From games to gear, these are perks built for how you play.
 </p>
 <div class="toc-box">
   <p>
@@ -12,6 +12,13 @@
   <ul>
     <li data-list-item-id="e6f7a43161f6f318d841074a645da2a35">
       <a href="#h_01KQZ3D7Y7SZNPRDNJ37Z6QCTK">What are Nitro Rewards?</a>
+      <ul>
+        <li data-list-item-id="e19af9f57617526793b86a64d47274d88">
+          <a href="#h_01KZ4VYSJ8GFB0CBP8RP4HC988"
+            >Nitro Rewards Program Terms </a
+          >
+        </li>
+      </ul>
     </li>
     <li data-list-item-id="e032dc9171d170fc3a761d3a0b9d1ac6a">
       <a href="#h_01KQZ3D7YCXW73126GMPFJNDZ1">Xbox Game Pass </a>
@@ -49,28 +56,34 @@
       </ul>
     </li>
     <li data-list-item-id="ee0ccb6be9bc156e44fc3466938e152d1">
+      <a href="#h_01KZ4QGEHQD2RQWG9MWXGHK95M"
+        >Call of Duty Modern Warfare 4 Beta Code</a
+      >
+    </li>
+    <li data-list-item-id="e843220e54dc2206f7ab720c117c5f2d4">
       <a href="#h_01KQZ3D7ZFZV9JCQXQMJFCCENW">Frequently Asked Questions</a>
     </li>
   </ul>
 </div>
 <h1 id="h_01KQZ3D7Y7SZNPRDNJ37Z6QCTK">What are Nitro Rewards?</h1>
 <div class="warn-box">
-  <strong>Important:</strong> Nitro Rewards are rolling out to eligible members
-  over the coming weeks. If you don't see Nitro Rewards in the Nitro tab yet,
-  they haven't reached your account. All eligible Nitro members will have access
-  soon. Perk availability varies by region. Nitro Basic and Nitro Classic
-  members are not eligible.
+  <strong>Important:</strong>
+  <span style="color: #434343"
+    >Nitro Rewards are available to all eligible members. Perk availability
+    varies by region. Nitro Basic and Nitro Classic members are not
+    eligible.</span
+  >
 </div>
 <p>
-  Nitro Rewards is a benefits program included with your Nitro membership at no
-  additional cost. It gives members access to perks from partners that matter to
-  people who play games.
+  Nitro Rewards is a benefits program included with your Nitro subscription at
+  no additional cost. It gives members access to perks from partners that matter
+  to people who play games.
 </p>
 <p>
   Nitro Rewards will evolve and change over time. You can check your Nitro Home
-  to see what's currently available to you. As long as your Nitro membership is
-  active, you'll have access to whatever perks are currently available in your
-  rewards collection.
+  to see what's currently available to you. As long as your Nitro subscription
+  is active, you'll have access to whatever perks are currently available in
+  your rewards collection.
 </p>
 <p>
   For a full list of the other perks you get with Nitro, check out
@@ -96,9 +109,11 @@
 <h4 class="wysiwyg-text-align-center" id="h_01KQZ3D7YA18RG6A91JR0DAWWJ">
   <span style="color: #666666"><strong>Nitro Home</strong> tab</span>
 </h4>
-<p><strong>Nitro Rewards Program Terms</strong> </p>
+<h2 id="h_01KZ4VYSJ8GFB0CBP8RP4HC988">
+  <strong>Nitro Rewards Program Terms</strong> 
+</h2>
 <p>
-  Nitro Rewards is included with eligible paid Nitro memberships at no
+  Nitro Rewards is included with eligible paid Nitro subscriptions at no
   additional cost, giving you access to perks from partners we think you'll
   actually use. The program is designed to grow and evolve — we'll be updating
   the partners and offers over time, and what's available may change.
@@ -129,18 +144,18 @@
   limitations.
 </p>
 <p>
-  Access to Nitro Rewards perks requires an active Nitro membership. Some perks,
-  once claimed, may remain valid after your membership ends per the terms
-  applicable to that perk.
+  Access to Nitro Rewards perks requires an active Nitro subscription. Some
+  perks, once claimed, may remain valid after your subscription ends per the
+  terms applicable to that perk.
 </p>
 <h1 id="h_01KQZ3D7YCXW73126GMPFJNDZ1">Xbox Game Pass </h1>
 <p>
   Take your gaming further with <strong>Xbox Game Pass</strong>, included with
-  your Nitro membership. Whether you're looking for something new to play or
+  your Nitro subscription. Whether you're looking for something new to play or
   want to stream your existing Xbox library, this benefit puts more gaming
   within reach — no extra subscription needed.
 </p>
-<p>Your Nitro membership includes:</p>
+<p>Your Nitro subscription includes:</p>
 <ul>
   <li data-list-item-id="e65b88c4b725a165e218dfba23603a790">
     <strong>50+ games</strong> like Stardew Valley, DayZ, and Fallout 4
@@ -165,9 +180,9 @@
       href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
       target="_blank"
       rel="noopener noreferrer"
-      >Discord Nitro membership</a
+      >Discord Nitro subscription</a
     >
-    (through a paid membership, Nitro gift, and some Nitro trials, with
+    (through a paid subscription, Nitro gift, and some Nitro trials, with
     exceptions noted below)
   </li>
   <li data-list-item-id="e83b1228541b6e1fdada6eeaaea704c42">
@@ -186,7 +201,7 @@
     You are a Nitro Classic or Nitro Basic member
   </li>
   <li data-list-item-id="e5a6928586c90deb399ec9b9e50228e2e">
-    Your Nitro membership came from a third-party inbound promotion (for
+    Your Nitro subscription came from a third-party inbound promotion (for
     example, a 1-month Nitro trial from an external partner) or a large-scale
     campaign trial (for example, an annual Nitro trial offered to all users)
   </li>
@@ -334,9 +349,9 @@
       href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
       target="_blank"
       rel="noopener noreferrer"
-      >Discord Nitro membership</a
+      >Discord Nitro subscription</a
     >
-    (through a paid membership, Nitro gift, and some Nitro trials, with
+    (through a paid subscription, Nitro gift, and some Nitro trials, with
     exceptions noted below)
   </li>
   <li data-list-item-id="efcb425a126410e41aa0e7e012dee824e">
@@ -359,7 +374,7 @@
     You are a Nitro Classic or Nitro Basic subscriber.
   </li>
   <li data-list-item-id="e38c6a342658b5b26b14a7975c5dd33b0">
-    Your Nitro membership came from a third-party inbound promotion (for
+    Your Nitro subscription came from a third-party inbound promotion (for
     example, a 1-month Nitro trial from an external partner) or a large-scale
     campaign trial (for example, an annual Nitro trial offered to all users)
   </li>
@@ -536,9 +551,9 @@
       href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
       target="_blank"
       rel="noopener noreferrer"
-      >Discord Nitro membership</a
+      >Discord Nitro subscription</a
     >
-    (through a paid membership, Nitro gift, and some Nitro trials, with
+    (through a paid subscription, Nitro gift, and some Nitro trials, with
     exceptions noted below)
   </li>
   <li data-list-item-id="e0e26559473d19af95997cf1ec85f6942">
@@ -561,7 +576,7 @@
     You are a Nitro Classic or Nitro Basic subscriber.
   </li>
   <li data-list-item-id="ebe5577bc2db3f15b83382f8100ac39ee">
-    Your Nitro membership came from a third-party inbound promotion (for
+    Your Nitro subscription came from a third-party inbound promotion (for
     example, a 1-month Nitro trial from an external partner) or a large-scale
     campaign trial (for example, an annual Nitro trial offered to all users)
   </li>
@@ -680,6 +695,122 @@
     Complete your purchase with the discount applied
   </li>
 </ol>
+<h1 id="h_01KZ4QGEHQD2RQWG9MWXGHK95M">
+  Call of Duty Modern Warfare 4 Beta Code
+</h1>
+<p><strong>Beta Access Window:</strong> August 21, 2026 - August 25, 2026</p>
+<p>
+  Nitro members will have access to a beta code to check out the new Call of
+  Duty Modern Warfare 4 releasing in October 2026.
+</p>
+<h2 id="h_01KZ4QGEHQAM2Q41W4XWB2X602">How it Works</h2>
+<p>The following terms apply to this Beta Code offer:</p>
+<ul>
+  <li data-list-item-id="e05ab8d3e400354743104d1712507a2c6">
+    <strong>Claim location:</strong> Codes are claimed from Nitro Home and must
+    be redeemed at
+    <a
+      href="http://www.callofduty.com/betaredeem"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><span class="wysiwyg-underline">www.callofduty.com/betaredeem</span></a
+    >.
+  </li>
+  <li data-list-item-id="ec6b219bd38a2ce034843e77a84a42510">
+    <strong>Additional Terms</strong>:
+    <a href="http://www.callofduty.com/modernwarfare4/beta"
+      ><span class="wysiwyg-underline"
+        >www.callofduty.com/modernwarfare4/beta</span
+      ></a
+    >  
+  </li>
+  <li data-list-item-id="ef6a65d8094c6e0f5ee90f5a991dc6406">
+    <strong>Platform selection:</strong> You'll choose your platform at the time
+    of redemption.
+  </li>
+  <li data-list-item-id="ebf5e97601d9fcc9ec1f45055e230bb01">
+    <strong>Eligibility:</strong> Available to active, eligible Nitro
+    subscribers in eligible countries (through a paid subscription, Nitro gift,
+    and some Nitro trials, with exceptions noted below). Beta code must be
+    redeemed by August 25, 2026 (10AM PT).
+  </li>
+</ul>
+<div class="info-box">
+  <strong>Note:</strong> This Reward is not available in regions where Discord
+  or billing on Discord is not supported, including Syria, Russia, Turkey, Iran,
+  North Korea, Zaporizhzhia, Kherson, Donetsk, and Luhansk.
+</div>
+<p>You are <strong>not</strong> eligible if:</p>
+<ul>
+  <li data-list-item-id="eab1190d73c7caf549e2b16038e3fb6c1">
+    Using Nitro Credits without a Nitro subscription. 
+  </li>
+  <li data-list-item-id="eef936a3bd07a7d256c7b2bd952918aff">
+    You are a Nitro Classic or Nitro Basic subscriber.
+  </li>
+  <li data-list-item-id="e9f3b8a6d4fbe17eeb85e619130305f80">
+    Your Nitro subscription came from a third-party inbound promotion (for
+    example, a 1-month Nitro trial from an external partner) or a large-scale
+    campaign trial (for example, an annual Nitro trial offered to all users).
+  </li>
+</ul>
+<h2 id="h_01KZ4QGEHVKH0ADE25VGTSCGNB">How to Access Your Discount Code</h2>
+<p>
+  1. On desktop or browser, select the <strong>Direct Messages</strong> icon
+  [<img
+    src="https://support.discord.com/hc/article_attachments/40276842685207"
+    width="24"
+    height="18"
+  />] in the upper-left corner. 
+</p>
+<p>
+  2. Press the <strong>Nitro Home</strong> tab to navigate to the
+  <strong>Nitro</strong> page. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/40276842687383"
+    width="298"
+    height="256"
+  />
+   <img
+    src="https://support.discord.com/hc/article_attachments/40276842682007"
+    width="297"
+    height="254"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01KZ4QGEHXFCYFRMWMK1YFK2J3">
+  <span style="color: #666666"
+    ><strong>Direct Message</strong>s Icon (Left) and <strong>Nitro</strong> Tab
+    (Right)</span
+  >
+</h4>
+<p>
+  3. Locate and select the
+  <strong>Call of Duty Modern Warfare 4 Beta Code</strong> card under the
+  <strong>What's New?</strong> section.
+</p>
+<p>
+  4. Press <strong>Unlock Rewards</strong> to open the Call of Duty Modern
+  Warfare 4 Beta Code window and see your available benefits.
+</p>
+<p>
+  5. Select <strong>Unlock Code</strong> to reveal your code—you can copy it
+  immediately or return to view it later.
+</p>
+<h2 id="h_01KZ4QGEHZS1WJF37AEY5232RZ">Using Your Beta Code</h2>
+<p>After claiming your code, here's how to redeem it:</p>
+<p>
+  1. Visit<a href="https://www.youtube.com/premium"> </a
+  ><a
+    href="http://callofduty.com/betaredeem"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">callofduty.com/betaredeem</span></a
+  >
+</p>
+<p>2. Log into your Activision account.</p>
+<p>3. Enter your code and follow the on-screen instructions.</p>
 <h1 id="h_01KQZ3D7ZFZV9JCQXQMJFCCENW">Frequently Asked Questions</h1>
 <p>
   <strong>Q: I'm a Nitro member but I don't see Nitro Rewards. Why?</strong> 
@@ -707,12 +838,12 @@
 </p>
 <p><strong>Q: Do Nitro Rewards cost extra?</strong> </p>
 <p>
-  A: No. Nitro Rewards are included with your Nitro membership at no additional
-  cost. Your membership price stays the same.
+  A: No. Nitro Rewards are included with your Nitro subscription at no
+  additional cost. Your subscription price stays the same.
 </p>
 <p><strong>Q: What happens to my Nitro Rewards if I cancel Nitro?</strong> </p>
 <p>
-  A: You'll lose access to all Nitro Rewards perks when your membership ends.
+  A: You'll lose access to all Nitro Rewards perks when your subscription ends.
   Any active partner benefits like Xbox Game Pass will also end.
 </p>
 <p>
@@ -731,12 +862,12 @@
 <p>
   <strong
     >Q: What happens to my Xbox Game Pass (Starter Edition) access if I cancel
-    my Nitro membership?</strong
+    my Nitro subscription?</strong
   > 
 </p>
 <p>
   A: Your access to Xbox Game Pass (Starter Edition) is tied to your active
-  Nitro membership. If you cancel, you will automatically lose access to this
+  Nitro subscription. If you cancel, you will automatically lose access to this
   benefit at the end of your current billing period.
 </p>
 <p>
