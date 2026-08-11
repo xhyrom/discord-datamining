@@ -767,10 +767,10 @@
   <strong>Q: Why am I seeing more Orbs in my account than expected?</strong>
 </p>
 <p>
-  A: As part of a limited experiment, some users who link their Discord and Riot
-  Games (VALORANT or League of Legends) accounts may receive an Orbs reward. If
-  you recently connected your Discord and Riot accounts, that's likely the
-  reason for the change.
+  A: Some users who link their Discord and Riot Games (VALORANT or League of
+  Legends) accounts or their Battle.net accounts may receive an Orbs reward. If
+  you recently connected these accounts, that's likely the reason for the
+  change.
 </p>
 <h2 id="h_01JZ9AY4XRM4JH1FDGDDHKVMCZ">Spending Orbs</h2>
 <p><strong>Q: I noticed I can’t buy a specific Shop item. Why not?</strong></p>
