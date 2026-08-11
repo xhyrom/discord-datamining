@@ -687,11 +687,11 @@
   <strong>Q: Which platforms can I redeem Bloons TD6 Shop items on?</strong>
 </p>
 <p>
-  A: Currently supported on <strong>PC</strong> (via Steam, Epic Store and
+  A: Currently supported on <strong>PC</strong> (via Steam, Epic Games Store and
   Microsoft Store), and <strong>mobile</strong> (iOS, Android, Epic iOS, Epic
   Android and Amazon). Items are tied to your linked Bloons TD 6 account rather
-  than a specific device, so once your account is linked, your item is available
-  no matter which supported platform you play on.
+  than a specific device, so once your account is linked, your item should be
+  available on all supported platforms.
 </p>
 <p>
   <strong
@@ -707,31 +707,37 @@
 </p>
 <p>Start the same way on any device:</p>
 <p>
-  1. Open <strong>Bloons TD 6</strong> and go to <strong>Settings</strong> &gt;
-  <strong>Account</strong> &gt; <strong>Discord</strong>.
+  1. Open <strong>Bloons TD 6</strong> and go to
+  <strong>Settings &gt; Account &gt; Discord.</strong> (Or find
+  <strong>Discord </strong>under <strong>Sign in providers</strong>).
 </p>
 <p>2. Select <strong>Link Accounts</strong>.</p>
 <p>What happens next depends on your platform.</p>
-<p><strong>On Steam (PC):</strong></p>
-<p>1. The Discord account-linking window opens directly.</p>
-<p>2. Select <strong>Authorize</strong> to confirm. You're now linked.</p>
-<p><strong>On mobile:</strong></p>
+<p><strong>In-game linking (PC or Mac):</strong></p>
+<p>1. The Discord account-linking authorization modal will open.</p>
+<p>2. Select Authorize to confirm. You're now linked.</p>
+<p><strong>Web-based linking (PC, Mac, or mobile):</strong></p>
 <p>
   1. You'll be taken to a web page to sign in to your Ninja Kiwi account. Choose
   one:
 </p>
 <ul>
-  <li data-list-item-id="edd4bde31cab936c0410e5c314c844809">
+  <li data-list-item-id="e0011bb477eec97453bfcdc691a1581d2">
     Sign in with Steam
   </li>
-  <li data-list-item-id="eb1eada1e59313ca65b6cfd573fe9255d">
+  <li data-list-item-id="ebe67c848ebcdd20be383592a9fda0342">
     Log in with your email and password
   </li>
-  <li data-list-item-id="e4ec822bc9f51a913347bc59500d34c55">
+  <li data-list-item-id="e980c5e348f1dfd941fd2379894111b67">
     Use a linking code
   </li>
 </ul>
-<p>2. Scroll down and select <strong>Authorize</strong> to confirm.</p>
+<p>Then, scroll down and select Authorize to confirm.</p>
+<div class="info-box">
+  <strong>Note:</strong> Account linking isn't supported through Epic Games
+  Store or Microsoft Store. Link your account in-game or on the web, and your
+  purchased items will automatically sync.
+</div>
 <p>Your accounts are now linked, and your item should appear.</p>
 <p>
   <strong
