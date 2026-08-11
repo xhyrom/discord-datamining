@@ -148,8 +148,6 @@ code {
 :root {
   --custom-index-scrollbar-width: 10px;
   --custom-index-scrollbar-margin: 3px;
-}
-:root {
   --custom-auth-box-auth-box-padding: 32px;
   --custom-channel-text-area-button-hover-scale: 0.85714;
   --custom-drag-resize-container-handle-size: 8px;
@@ -214,8 +212,6 @@ code {
   --custom-live-indicator-border-radius: 16px;
   --custom-tutorial-popout-padding-content: 16px;
   --custom-tutorial-popout-height-media-approx: 80px;
-}
-:root {
   --custom-emoji-size-emoji: 1.375em;
   --custom-emoji-size-jumbo-emoji: 3rem;
   --custom-margin-margin-x-small: 4px;
@@ -230,21 +226,13 @@ code {
   --custom-scrollbar-border-radius: calc(
     var(--custom-scrollbar-scrollbar-width) / 2
   );
-}
-:root {
   --custom-voice-channel-effect-voice-channel-effect-animation-size: 800px;
   --custom-voice-channel-effects-bar-effect-bar-padding-x: 16px;
   --custom-voice-channel-effects-bar-effect-bar-padding-y: 12px;
   --custom-voice-channel-effects-bar-max-width: 498px;
-}
-:root {
   --custom-base-tile-border-radius: 8px;
   --video-calls-base-tile-border-radius: var(--radius-lg);
-}
-:root {
   --custom-summary-avatars-avatar-diameter: 16px;
-}
-:root {
   --custom-guild-settings-premium-tier-status-progress-with-subscriptions-margin-top: 7px;
   --custom-guild-stickers-tiers-grid-breakpoint: 1010px;
   --custom-guild-sticker-upload-modal-emoji-size: 22px;
@@ -279,14 +267,8 @@ code {
   --custom-stickers-constants-sticker-picker-breakpoint-medium: 446px;
   --custom-stickers-constants-category-separator-size: 1px;
   --custom-stickers-constants-category-separator-margin-vertical: 12px;
-}
-:root {
   --custom-header-icon-color-expired: #4e5058;
-}
-:root {
   --custom-reaction-picker-border-radius: 8px;
-}
-:root {
   --custom-outbound-promotion-redemption-modal-art-height: 120px;
   --custom-premium-colors-premium-gradient-tier-0: linear-gradient(
     to right,
@@ -338,28 +320,16 @@ code {
   );
   --custom-premium-colors-banner-yellow: #ffeaa0;
   --custom-premium-colors-banner-black: #232428;
-}
-:root {
   --custom-pending-row-max-width: 1040px;
   --custom-people-page-max-width-with-toolbar: 940px;
-}
-:root {
   --custom-family-center-page-responsive-width-mobile: 900px;
-}
-:root {
   --custom-text-widget-background-color-header-default: var(--primary-600);
   --custom-voice-widget-top-margin: calc(
     var(--custom-widget-bar-height) + var(--custom-widget-bar-padding) * 2
   );
   --custom-voice-widget-widget-width: 272px;
-}
-:root {
   --custom-party-avatars-avatar-diameter: 24px;
-}
-:root {
   --custom-mobile-web-handoff-link-mobile-web-handoff-height: 70px;
-}
-:root {
   --custom-embedded-application-invite-content-height: 130px;
   --custom-embedded-application-invite-content-height-tall: 162px;
   --custom-embedded-application-invite-content-width: 576px;
@@ -371,39 +341,25 @@ code {
     var(--custom-message-helpers-popout-content-width) +
       var(--custom-message-helpers-popout-padding-width) * 2
   );
-}
-:root {
   --custom-media-post-attachments-horizontal-padding: 48px;
   --custom-media-post-embed-spoiler-blur-radius: 20px;
   --custom-media-post-embed-transition-duration: 170ms;
-}
-:root {
   --custom-raging-demon-duration: 0.15s;
-}
-:root {
   --custom-interaction-iframe-modal-modal-min-width: 320px;
   --custom-interaction-iframe-modal-modal-margin: 80px;
   --custom-interaction-iframe-modal-modal-max-width: 1280px;
   --custom-interaction-iframe-modal-modal-header-height: 52px;
-}
-:root {
   --custom-accept-invite-detail-components-small-mobile-breakpoint: 640px;
   --custom-accept-invite-mobile-small-mobile-breakpoint: 640px;
-}
-:root {
   --custom-hub-discovery-add-hub-card-card-height: 320px;
   --custom-hub-discovery-guild-list-card-height: 320px;
   --custom-hub-discovery-guild-list-min-card-width: 248px;
   --custom-hub-discovery-guild-list-gutter-size: 16px;
   --custom-hub-discovery-page-max-page-width: 1608px;
-}
-:root {
   --custom-guild-tooltip-icon-size: 20px;
   --custom-guild-tooltip-icon-size-v-2: 16px;
   --custom-folder-item-animation-duration: 150ms;
   --custom-folder-item-guild-icon-margin: 8px;
-}
-:root {
   --custom-category-channel-space-before-category: 16px;
 }
 .density-compact {
@@ -431,11 +387,7 @@ code {
   --custom-guild-settings-discovery-landing-page-max-width-tab: 905px;
   --custom-guild-settings-discovery-landing-page-settings-max-width: 520px;
   --custom-guild-settings-partner-content-spacing: 32px;
-}
-:root {
   --custom-event-detail-info-tab-base-spacing: 8px;
-}
-:root {
   --custom-subscription-listing-previews-carousel-cards-get-cut-off-width: 724px;
   --custom-editable-benefits-list-emoji-size: 24px;
   --custom-edit-benefit-modal-emoji-size: 22px;
@@ -452,65 +404,39 @@ code {
   --custom-guild-role-subscription-card-basic-info-tier-image-size: 80px;
   --custom-guild-role-subscription-card-basic-info-tier-image-size-mobile: 48px;
   --custom-guild-role-subscriptions-overview-page-page-max-width: 1180px;
-}
-:root {
   --custom-guild-dialog-popout-width: 250px;
   --custom-guild-dialog-splash-ratio: 1.77778;
   --custom-guild-dialog-icon-size: 84px;
   --custom-guild-dialog-icon-padding: 4px;
-}
-:root {
   --custom-guild-product-download-modal-header-image-width: 119px;
-}
-:root {
   --custom-guild-onboarding-home-page-max-page-width: 1128px;
   --custom-guild-onboarding-home-page-max-single-column-width: 704px;
   --custom-home-resource-channels-obscured-blur-radius: 20px;
-}
-:root {
   --custom-guild-member-application-review-sidebar-width: 29vw;
-}
-:root {
   --custom-featured-items-popout-featured-items-popout-footer-height: 120px;
-}
-:root {
   --custom-guild-boosting-sidebar-display-conditional-bottom-margin: 12px;
   --custom-guild-boosting-marketing-progress-bar-marker-dimensions: 32px;
   --custom-guild-boosting-marketing-progress-bar-end-markers-margin: 4px;
   --custom-guild-boosting-marketing-progress-bar-marker-marker-dimensions: 32px;
   --custom-guild-boosting-marketing-tier-cards-tier-card-border-radius: 16px;
-}
-:root {
   --custom-go-live-modal-art-height: 112px;
-}
-:root {
   --custom-gif-picker-gutter-size: 0 16px 12px 16px;
   --custom-gif-picker-search-results-desired-item-width: 160px;
-}
-:root {
   --custom-forum-composer-attachments-attachment-size: 78px;
   --custom-forum-post-obscured-blur-radius: 20px;
   --custom-forum-post-grid-view-obscured-blur-radius: 20px;
   --custom-demo-forum-channel-padding-large: 20px;
   --custom-demo-forum-channel-post-padding: 12px;
   --custom-demo-forum-channel-gap-size: 8px;
-}
-:root {
   --custom-feedback-modal-emoji-size: 64px;
   --custom-feedback-modal-close-button-margin: 12px;
-}
-:root {
   --custom-expression-suggestions-container-padding: 8px;
   --custom-expression-suggestions-sticker-suggestion-size: 48px;
   --custom-expression-suggestions-sticker-suggestion-margin: 8px;
-}
-:root {
   --custom-expression-picker-constants-expression-picker-list-section-heading-height: 32px;
   --custom-expression-picker-constants-expression-picker-inspector-bar-graphic-primary-dimensions: 28px;
   --custom-expression-picker-constants-expression-picker-inspector-bar-graphic-secondary-dimensions: 32px;
   --custom-expression-picker-constants-expression-picker-inspector-bar-height: 48px;
-}
-:root {
   --custom-emoji-picker-border-radius: 8px;
   --custom-emoji-picker-constants-min-emoji-picker-width: 498px;
   --custom-emoji-picker-constants-emoji-size-medium: 40px;
@@ -538,23 +464,17 @@ code {
   --custom-emoji-picker-constants-emoji-premium-upsell-height: 54px;
   --custom-emoji-picker-constants-emoji-premium-upsell-margin-top: 16px;
   --custom-emoji-picker-constants-newly-added-emoji-badge-height: 16px;
-}
-:root {
   --custom-discover-static-guild-card-card-height: 258px;
   --custom-discover-featured-guilds-section-card-height: 320px;
   --custom-discover-featured-guilds-section-min-card-width: 248px;
   --custom-discover-featured-guilds-section-gutter-size: 16px;
   --custom-discover-search-results-max-search-bar-width: 720px;
-}
-:root {
   --custom-guild-directory-min-card-width: 248px;
   --custom-guild-directory-gutter-size: 16px;
   --custom-guild-directory-min-content-width: 320px;
   --custom-guild-directory-max-page-width: 1608px;
   --custom-guild-directory-entry-card-card-height: 274px;
   --custom-guild-directory-landing-min-header-height: 200px;
-}
-:root {
   --custom-guild-shop-page-two-column-max-width: 1439px;
   --custom-aspect-stable-image-container-padding: 20px;
   --custom-monetization-info-table-expandable-rows-toggle-expand-column-width: 30px;
@@ -581,27 +501,17 @@ code {
   --custom-guild-shop-preview-pill-shadow-light: -4px 5px #d7dce8;
   --custom-guild-shop-gradient-start: #686bff;
   --custom-guild-shop-gradient-end: #c356fd;
-}
-:root {
   --custom-clips-enabled-indicator-medium-break-point: 920px;
   --custom-clips-enabled-indicator-badge-icon-dimension-override: 20px;
-}
-:root {
   --custom-channel-attachment-upload-spoiler-blur-radius: 44px;
   --custom-channel-attachment-upload-mini-attachment-size: 78px;
   --custom-channel-textarea-text-area-height: 44px;
   --custom-channel-textarea-text-area-max-height: 50vh;
-}
-:root {
   --custom-channel-call-participants-popout-padding-value: 16px;
   --custom-stream-upsell-modal-art-height: 149px;
   --custom-voice-channel-status-modal-emoji-size: 22px;
   --custom-voice-channel-status-modal-emoji-margin: 10px;
-}
-:root {
   --custom-broadcasting-tooltip-image-offset: 40px;
-}
-:root {
   --custom-application-directory-content-min-width: 600px;
   --custom-application-directory-content-max-width: 1024px;
   --custom-guild-count-small-icon-size: 16px;
@@ -618,12 +528,8 @@ code {
   --custom-application-directory-profile-icon-size: 122px;
   --custom-application-directory-search-sidebar-width: 200px;
   --custom-application-directory-search-sidebar-margin-right: 32px;
-}
-:root {
   --custom-accept-invite-modal-invite-modal-height: 420px;
   --custom-accept-invite-modal-small-screen-width: 720px;
-}
-:root {
   --custom-avatar-avatar-decoration-border-position: calc(
     (1 - var(--decoration-to-avatar-ratio)) / 2 * 100%
   );
@@ -647,18 +553,12 @@ code {
   --custom-button-filled-active: 0.2;
   --custom-button-transition-duration: 170ms;
   --custom-modal-min-width-large: 800px;
-}
-:root {
   --custom-special-markdown-small-break-point: 600px;
   --custom-special-markdown-medium-break-point: 768px;
   --custom-user-profile-hype-squad-badge-icon-size: 24px;
   --custom-user-profile-hype-squad-badge-shine-size-offset: 64px;
-}
-:root {
   --custom-guild-discovery-gutter-size: 16px;
   --custom-guild-discovery-max-page-width: 1608px;
-}
-:root {
   --custom-dropdown-button-small-dropdown-size: 16px;
   --custom-dropdown-button-medium-dropdown-size: 24px;
   --custom-dropdown-button-large-dropdown-size: 32px;
@@ -676,8 +576,6 @@ code {
     var(--premium-tier-2-purple),
     var(--premium-tier-2-pink)
   );
-}
-:root {
   --custom-member-list-item-avatar-decoration-padding: 2px;
   --custom-messages-popout-messages-popout-footer-height: 120px;
   --custom-radio-image-border-thickness: 2px;
@@ -685,11 +583,7 @@ code {
   --custom-standard-sidebar-view-standard-padding: 20px;
   --custom-standard-sidebar-view-sidebar-content-scrollbar-padding: 6px;
   --custom-standard-sidebar-view-sidebar-total-width: 264px;
-}
-:root {
   --decoration-to-avatar-ratio: 1.2;
-}
-:root {
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -1102,4 +996,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=60448.a8f620bddd4854fe.css.map*/
+/*# sourceMappingURL=60448.b369d46b4551750d.css.map*/
