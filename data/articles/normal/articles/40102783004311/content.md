@@ -756,13 +756,16 @@
   account, they'll be prompted to link one on that same page before the item
   lands.
 </p>
-<p><strong>Q: How does this work on mobile?</strong></p>
+<p><strong>: How does this work on mobile?</strong></p>
 <p>
   A: The same way as on PC. If you don't have a linked account, you'll be
   redirected to the account-linking page to log into your Bloons TD6 account. It
-  doesn't matter which platform you link from. Once linked, your item is
-  available everywhere you play. Gifting follows the same flow. Claim the gift,
-  link your account if needed, then the item is yours.
+  doesn't matter which platform you link from. Once linked, your item should be
+  available on all supported platforms. 
+</p>
+<p>
+  Gifting follows the same flow. Claim the gift, link your account if needed,
+  then the item is yours.
 </p>
 <p>
   <strong
