@@ -82,8 +82,8 @@
             r[n - 1] = arguments[n];
         }
         let h = () => {},
-          g = () => {};
-        class b {
+          b = () => {};
+        class g {
           name;
           nativeLoggerEnabled;
           constructor(e = "default") {
@@ -102,7 +102,7 @@
               )
                 n[o - 1] = arguments[o];
               h(e.name, "log", t, ...n),
-                e.nativeLoggerEnabled && g?.(e.name, "log", t, ...n);
+                e.nativeLoggerEnabled && b?.(e.name, "log", t, ...n);
             };
           })();
           log = (() => {
@@ -116,7 +116,7 @@
                 n[o - 1] = arguments[o];
               f(t, ...n),
                 h(e.name, "log", t, ...n),
-                e.nativeLoggerEnabled && g?.(e.name, "log", t, ...n);
+                e.nativeLoggerEnabled && b?.(e.name, "log", t, ...n);
             };
           })();
           verboseDangerously = (() => {
@@ -129,7 +129,7 @@
               )
                 n[o - 1] = arguments[o];
               h(e.name, "debug", t, ...n),
-                e.nativeLoggerEnabled && g?.(e.name, "debug", t, ...n);
+                e.nativeLoggerEnabled && b?.(e.name, "debug", t, ...n);
             };
           })();
           verbose = (() => {
@@ -143,7 +143,7 @@
                 n[o - 1] = arguments[o];
               f(t, ...n),
                 h(e.name, "debug", t, ...n),
-                e.nativeLoggerEnabled && g?.(e.name, "debug", t, ...n);
+                e.nativeLoggerEnabled && b?.(e.name, "debug", t, ...n);
             };
           })();
           info = (() => {
@@ -157,7 +157,7 @@
                 n[o - 1] = arguments[o];
               f(t, ...n),
                 h(e.name, "info", t, ...n),
-                e.nativeLoggerEnabled && g?.(e.name, "info", t, ...n);
+                e.nativeLoggerEnabled && b?.(e.name, "info", t, ...n);
             };
           })();
           warn = (() => {
@@ -171,7 +171,7 @@
                 n[o - 1] = arguments[o];
               f(t, ...n),
                 h(e.name, "warn", t, ...n),
-                e.nativeLoggerEnabled && g?.(e.name, "warn", t, ...n);
+                e.nativeLoggerEnabled && b?.(e.name, "warn", t, ...n);
             };
           })();
           error = (() => {
@@ -185,7 +185,7 @@
                 n[o - 1] = arguments[o];
               f(t, ...n),
                 h(e.name, "error", t, ...n),
-                e.nativeLoggerEnabled && g?.(e.name, "error", t, ...n);
+                e.nativeLoggerEnabled && b?.(e.name, "error", t, ...n);
             };
           })();
           trace = (() => {
@@ -198,7 +198,7 @@
               )
                 n[o - 1] = arguments[o];
               h(e.name, "trace", t, ...n),
-                e.nativeLoggerEnabled && g?.(e.name, "trace", t, ...n);
+                e.nativeLoggerEnabled && b?.(e.name, "trace", t, ...n);
             };
           })();
           time = (e, t) => {
@@ -221,13 +221,13 @@
               )
                 n[o - 1] = arguments[o];
               h(e.name, "file-only", t, ...n),
-                e.nativeLoggerEnabled && g?.(e.name, "file-only", t, ...n);
+                e.nativeLoggerEnabled && b?.(e.name, "file-only", t, ...n);
             };
           })();
         }
         let m = "_errors";
         var p = r(264572).Buffer;
-        let y = new b("HTTPUtils"),
+        let y = new g("HTTPUtils"),
           v = new Set([502, 504, 507, 598, 599, 522, 523, 524]),
           E = new Set([429, 503]);
         class w extends Error {
@@ -548,7 +548,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-0595c18d29f45ad0729036eb9edeef85b2ce57d1",
+            release: "discord_web-2196cd90e6ef86d7edfab727050d5be3e40bf43d",
             beforeSend: function (e, t) {
               var r;
               let n;
@@ -636,8 +636,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.NA("buildNumber", "591526"),
-            i.NA("builtAt", String("1786499361007"));
+            i.NA("buildNumber", "591566"),
+            i.NA("builtAt", String("1786509682780"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) i.NA(t, e[t]);
           return s;
@@ -727,4 +727,4 @@
   );
   i = l.O(i);
 })();
-//# sourceMappingURL=sentry.3d21fd1b5b225c6f.js.map
+//# sourceMappingURL=sentry.736b28535c947390.js.map
