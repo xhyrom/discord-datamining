@@ -84,8 +84,8 @@
   <p>
     <span style="color: #434343"
       ><strong>Note</strong>: This promotion is not eligible in the following
-      regions: Ukraine, China, Cuba, Iran, North Korea, Russia, Belarus, Sudan,
-      Syria, Venezuela, and Brazil.</span
+      regions: Turkey, Ukraine, China, Cuba, Iran, North Korea, Russia, Belarus,
+      Sudan, Syria, Venezuela, and Brazil.</span
     >
   </p>
   <p>
@@ -244,8 +244,8 @@
   <p>
     <span style="color: #434343"
       ><strong>Note:</strong> This promotion is not eligible in the following
-      regions: Ukraine, China, Cuba, Iran, North Korea, Russia, Belarus, Sudan,
-      Syria, Venezuela, and Brazil.</span
+      regions: Turkey, Ukraine, China, Cuba, Iran, North Korea, Russia, Belarus,
+      Sudan, Syria, Venezuela, and Brazil.</span
     >
   </p>
   <p>
@@ -531,6 +531,7 @@
 </p>
 <p>
   This promotion is not eligible in the following regions:
+  <strong>Turkey,</strong>
   <strong
     >Ukraine, China, Cuba, Iran, North Korea, Russia, Belarus, Sudan, Syria,
     Venezuela, and Brazil</strong
