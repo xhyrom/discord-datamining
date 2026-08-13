@@ -28,6 +28,9 @@
     <li data-list-item-id="e335d0c8abc44b2b6b687c5607abdc775">
       <a href="#h_01J4M00QYZM3445WFF5918B3R4">How to Use Alt Text</a>
     </li>
+    <li data-list-item-id="e83a885a3b64eff8f556fff7f8376c95f">
+      <a href="#h_01KZWM4BR207JHZGH747ACRVK4">Frequently Asked Questions</a>
+    </li>
   </ul>
 </div>
 <h1 id="h_01J4M00QYZN32G2KQM21D4F5ZF">What is a File Attachment?</h1>
@@ -397,3 +400,34 @@
   and files, or using ALT text, please reach out to Discord Support through this
   link here: <a href="http://dis.gd/contact">dis.gd/contact</a>
 </div>
+<h1 id="h_01KZWM4BR207JHZGH747ACRVK4">Frequently Asked Questions</h1>
+<p><strong>Q: Why did Discord’s file upload limit change?</strong></p>
+<p>
+  A :We regularly revisit our file limits to reflect how people actually use
+  Discord and to support ongoing improvements to file sharing across platforms.
+  As of August 2026, the free upload limit is 20MB (up from 10MB), and we've
+  aligned how that limit is checked on desktop and mobile so it's consistent and
+  predictable.
+</p>
+<p>
+  One thing worth knowing: because we now check file size before compression
+  rather than after, the real-world effect varies by platform. Desktop and iOS
+  users should generally find uploads easier than before. On Android, where
+  source files tend to be larger, you may hit the size limit more often than you
+  did previously, even though the stated number is higher.
+</p>
+<p>
+  If you need more room regularly, Nitro Basic offers 50MB and Nitro offers up
+  to 500MB.
+</p>
+<p>
+  <strong>Q: Does Discord check my file size pre- or post-compression?</strong>
+</p>
+<p>
+  A: Every day, millions of files are uploaded to Discord, and we're always
+  working to make that process faster and more predictable. Previously on
+  mobile, we'd try to compress your file first and only tell you afterward if it
+  was still too large, so the limit you saw didn't always match what actually
+  applied. We've now moved mobile to the same pre-compression check that desktop
+  has always used, so the number you see is the number that counts.
+</p>
