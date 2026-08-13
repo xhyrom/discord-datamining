@@ -8,15 +8,15 @@
     "datadog",
     "hivemind-api-stg",
     "winget",
+    "api-deploys",
     "dirt-stg",
     "experiment-readouts",
-    "api-deploys",
     "smite",
     "access-stg",
     "backstage",
     "looker",
-    "design",
     "keysmith-stg",
+    "design",
     "ai-usage",
     "teleport",
     "safety-dispatch-stg",
@@ -39,7 +39,6 @@
     "pyroscope",
     "bazel-cache",
     "coderv2-stg",
-    "metabase-prd",
     "bazel-rbe",
     "oosla",
     "gameseer",
@@ -49,8 +48,8 @@
     "builds",
     "rustdocs",
     "bazel-bes-stg",
-    "memes",
     "hivemind",
+    "memes",
     "keysmith",
     "sirius",
     "yay",
@@ -78,5 +77,5 @@
     "dbt-docs",
     "airflow-data-prd"
   ],
-  "subdomain_count": 77
+  "subdomain_count": 76
 }
