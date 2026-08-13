@@ -44,7 +44,7 @@
   send to others. If you have Nitro, you can upload
   <a href="https://support.discord.com/hc/en-us/articles/115000435108"
     ><span class="wysiwyg-underline">even bigger files</span></a
-  >. For non-Nitro subscribers, the maximum file upload is 10MB. 
+  >. For non-Nitro subscribers, the maximum file upload is 20MB. 
 </p>
 <p>
   There is a wide variety of file types that can be uploaded to Discord. Here
@@ -183,7 +183,7 @@
   </li>
   <li data-list-item-id="e4002c70ce851e2b1220d444fa51c6d67">
     <strong>When uploaded directly to Discord: </strong>Any image that is larger
-    than 10MB will be shared as a download instead.
+    than 20MB will be shared as a download instead.
   </li>
   <li data-list-item-id="ec4cfb28333885c4b2689702b0456117b">
     <strong>With image descriptions: </strong>Used for screen readers to
