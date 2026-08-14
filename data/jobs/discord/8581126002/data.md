@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Product Manager, Scaled Abuse
+## Senior Product Manager, Safety
 
 **Location:** San Francisco Bay Area
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8581126002](https://discord.com/jobs/8581126002)
 
-**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
+**Updated At:** Fri, 14 Aug 2026 13:45:54 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.At the heart of Discord's communities is Safety. The Safety team at Discord is responsible for ensuring users find belonging by minimizing exposure to abuse on the platform. We're looking for a Product Manager to lead our work on scaled abuse — fake accounts, account takeovers, scraping — and help keep Discord a safe and welcoming place.
