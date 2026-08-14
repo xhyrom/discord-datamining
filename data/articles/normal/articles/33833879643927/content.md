@@ -28,11 +28,19 @@
         ><strong>How to Access Display Name Styles</strong></a
       >
       <ul>
-        <li data-list-item-id="e64d86db4fc8a1584a1317a9e2763f8d8">
-          <a href="#h_01KFKESBW2YTXP7F31J7C85JZY">Desktop/Browser</a>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e64d86db4fc8a1584a1317a9e2763f8d8"
+        >
+          <a href="#h_01KFKESBW2YTXP7F31J7C85JZY"
+            ><strong>Desktop/Browser</strong></a
+          >
         </li>
-        <li data-list-item-id="e3ee54ba7879d57cda75f9f7681d86bb1">
-          <a href="#h_01KFKERGA3KXSQNEC162BXXXR0">Mobile</a>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e3ee54ba7879d57cda75f9f7681d86bb1"
+        >
+          <a href="#h_01KFKERGA3KXSQNEC162BXXXR0"><strong>Mobile</strong></a>
         </li>
       </ul>
     </li>
@@ -116,52 +124,69 @@
   <span style="color: #434343">Desktop/Browser</span>
 </h2>
 <p>
-  1. Head into your <strong>User Settings</strong> by selecting the
-  <strong>cogwheel</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/34306353369751"
-    width="24"
-    height="24"
-  />] next to your username. 
+  1. Select your <strong>username</strong> at the bottom-left corner to open
+  your <strong>profile card</strong>.
 </p>
-<p>2. Select <strong>Profiles &gt; Display Name Styles</strong>. </p>
+<p>2. Press <strong>Edit Profile</strong>.</p>
 <p>
-  3. Press the <strong>Change Style</strong> button to open the
-  <strong>Change Display Name Styles </strong>menu. 
+  3. Under <strong>Display Name Style</strong>, press the
+  <strong>+</strong> button to open the
+  <strong>Change Display Name Style</strong> <strong>menu</strong>.
 </p>
-<p class="wysiwyg-text-align-center">
-  <span style="color: #666666"
-    ><img
-      class="wysiwyg-image-resized"
-      style="aspect-ratio: 624/424; width: 100%"
-      src="https://support.discord.com/hc/article_attachments/34306353371543"
-      width="624"
-      height="424"
-  /></span>
-</p>
+<figure class="wysiwyg-image">
+  <img
+    style="aspect-ratio: 800/599"
+    src="https://support.discord.com/hc/article_attachments/42710057825559"
+    alt="image18.gif"
+    width="800"
+    height="599"
+  />
+</figure>
 <h4 class="wysiwyg-text-align-center" id="h_01K32BE5PY9SHYR3JZQRH1ZKA2">
   <span style="color: #666666"
-    >Find Display Name Styles in User Settings &gt; Profiles &gt; Display Name
-    Styles</span
+    >Find Display Name Style from Your Profile Card &gt; Edit Profile</span
   >
 </h4>
+<div class="tip-box">
+  <p>
+    <strong>Tip</strong>: You can also get here through
+    <strong>User Settings</strong> by pressing <strong>Edit Profiles</strong> at
+    the top of the <strong>Account</strong> <strong>page</strong>.
+  </p>
+  <p>
+    <img
+      src="https://support.discord.com/hc/article_attachments/42710057825815"
+      alt="DNS1.gif"
+      width="800"
+      height="599"
+    />
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01KZYF2YN8EAFSJK7TP8VJBS29">
+    <span style="color: #666666"
+      >Find Display Name Style in User Settings &gt; Edit Profile</span
+    >
+  </h4>
+</div>
 <h2 id="h_01KFKERGA3KXSQNEC162BXXXR0">Mobile</h2>
-<p>1. Tap your <strong>avatar</strong> in the bottom-right corner.  </p>
+<p>1. Tap the <strong>You bar</strong> at the bottom of the screen.</p>
+<p>2. Press <strong>Edit Profile</strong>.</p>
 <p>
-  2. Press on <strong>Edit Profile</strong>, then tap under
-  <strong>Display Name Styles </strong>to change your Display Name. 
+  3. Under <strong>Display Name Style</strong>, tap <strong>Font</strong>,
+  <strong>Effect</strong>, or <strong>Color</strong> to customize each option.
 </p>
-<p class="wysiwyg-text-align-center">
+<p>4. Press <strong>Apply</strong> to save your changes.</p>
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 42%">
   <img
-    src="https://support.discord.com/hc/article_attachments/37865131983255"
-    alt="image2.gif"
-    width="330"
-    height="718"
+    style="aspect-ratio: 720/1498"
+    src="https://support.discord.com/hc/article_attachments/42710057825943"
+    alt="image16.gif"
+    width="720"
+    height="1498"
   />
-</p>
-<h4 id="h_01KFKERGA57BYXKT1JZ76DKQCG">
+</figure>
+<h4 class="wysiwyg-text-align-center" id="h_01KZYF7ZCMPY66NPG8JSWYQV2E">
   <span style="color: #666666"
-    >Find Display Name Styles on mobile under You tab &gt; Edit Profile &gt;
-    Display Name Styles</span
+    >Customize Font, Effect, and Color Under Display Name Style on Mobile</span
   >
 </h4>
 <div class="info-box">
@@ -187,15 +212,15 @@
     Profile. 
   </li>
 </ul>
-<p class="wysiwyg-text-align-center">
+<figure class="wysiwyg-image">
   <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 624/424; width: 100%"
-    src="https://support.discord.com/hc/article_attachments/34306334668567"
-    width="624"
-    height="424"
+    style="aspect-ratio: 800/599"
+    src="https://support.discord.com/hc/article_attachments/42710012897687"
+    alt="profile dns.gif"
+    width="800"
+    height="599"
   />
-</p>
+</figure>
 <h4 class="wysiwyg-text-align-center" id="h_01K32B6G94DZBZ6VXATK2Q2AA0">
   <span style="color: #666666">Display Name Styles in User Profile</span>
 </h4>
@@ -246,11 +271,11 @@
 </ul>
 <figure class="wysiwyg-image">
   <img
-    style="aspect-ratio: 800/593"
-    src="https://support.discord.com/hc/article_attachments/35820587468311"
-    alt="image10.gif"
+    style="aspect-ratio: 800/528"
+    src="https://support.discord.com/hc/article_attachments/42710057826199"
+    alt="server profile.gif"
     width="800"
-    height="593"
+    height="528"
   />
 </figure>
 <h4 class="wysiwyg-text-align-center" id="h_01K32B6G96GC987WGG6RXJZXHA">
@@ -270,11 +295,11 @@
   </p>
   <figure class="wysiwyg-image">
     <img
-      style="aspect-ratio: 800/593"
-      src="https://support.discord.com/hc/article_attachments/35820587475095"
-      alt="image16.gif"
+      style="aspect-ratio: 800/592"
+      src="https://support.discord.com/hc/article_attachments/42710012898455"
+      alt="server profile 2.gif"
       width="800"
-      height="593"
+      height="592"
     />
   </figure>
   <h4 class="wysiwyg-text-align-center" id="h_01K816TDF32HYPWGYAZFHZB4NE">
@@ -317,10 +342,9 @@
 </p>
 <h2 id="h_01K32B6G98V14GP2G300KV0CRN">Fonts</h2>
 <div class="exp-box">
-  <strong>Note</strong>: New fonts are currently an experiment and are not
-  widely available at this time.
+  <strong>Note</strong>: New fonts will be rolling out in the coming weeks!
 </div>
-<p>Choose from 8 unique fonts:</p>
+<p>Choose from various unique fonts:</p>
 <ul>
   <li
     class="wysiwyg-list-bold"
@@ -370,25 +394,48 @@
   >
     <strong>Vampyre</strong>
   </li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e7e0e30a346a82862372445367e6b3c74"
+  >
+    <strong>Monkey Bars</strong>
+  </li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e78b58ff0954d44b7cef436b1637b188e"
+  >
+    <strong>Mainframe</strong>
+  </li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e6ecc040f10b7504c198b616f28168537"
+  >
+    <strong>Headbang</strong>
+  </li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e9e79020155a82825b7012c392fcb56fc"
+  >
+    <strong>Journal</strong>
+  </li>
 </ul>
-<p class="wysiwyg-text-align-center">
+<figure class="wysiwyg-image">
   <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 624/425; width: 100%"
-    src="https://support.discord.com/hc/article_attachments/34306353375639"
-    width="624"
-    height="425"
+    style="aspect-ratio: 800/708"
+    src="https://support.discord.com/hc/article_attachments/42710057826839"
+    alt="font.gif"
+    width="800"
+    height="708"
   />
-</p>
+</figure>
 <h4 class="wysiwyg-text-align-center" id="h_01K32B6G9A00PDKC084QCNMN4A">
   <span style="color: #666666">Different Fonts Available</span>
 </h4>
 <h2 id="h_01K32B6G9A1GE7G6WT8MQ0FA7G">Effects</h2>
 <div class="exp-box">
-  <strong>Note</strong>: New effects are currently an experiment and are not
-  widely available at this time.
+  <strong>Note</strong>: New effects will be rolling out in the coming weeks!
 </div>
-<p>Select from 5 effect options:</p>
+<p>Select from various effect options:</p>
 <ul>
   <li
     class="wysiwyg-list-bold"
@@ -420,37 +467,45 @@
   >
     <strong>Pop</strong>
   </li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e392a4bc1a6cd58174226f21f2d7abc70"
+  >
+    <strong>Gummy</strong>
+  </li>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e68b7346d4e0340b047489a1ec8bd76ad"
+  >
+    <strong>Prism</strong>
+  </li>
 </ul>
-<p class="wysiwyg-text-align-center">
+<figure class="wysiwyg-image">
   <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 624/425; width: 100%"
-    src="https://support.discord.com/hc/article_attachments/34306334673687"
-    width="624"
-    height="425"
+    style="aspect-ratio: 800/708"
+    src="https://support.discord.com/hc/article_attachments/42710057827607"
+    alt="effects.gif"
+    width="800"
+    height="708"
   />
-</p>
+</figure>
 <h4 class="wysiwyg-text-align-center" id="h_01K32B6G9CTTMB39C4ECYBBF88">
   <span style="color: #666666">Different Effects Available</span>
 </h4>
 <div class="tip-box">
   <p>
-    <strong>Tip: </strong>Selecting the <strong>Gradient</strong> effect enables
-    you to choose two colors.
+    <strong>Tip: </strong>The <strong>Gradient</strong> effect lets you choose
+    two colors, while the <strong>Prism</strong> effect lets you choose five.
   </p>
-  <p class="wysiwyg-text-align-center">
+  <h4 class="wysiwyg-text-align-center" id="h_01KZYFN0ZSTQZM8KTSPAWWRAYC">
     <span style="color: #434343"
       ><img
-        class="wysiwyg-image-resized"
-        style="aspect-ratio: 624/513; width: 100%"
-        src="https://support.discord.com/hc/article_attachments/34306353377559"
-        width="624"
-        height="513"
-      /> </span
-    >
-  </p>
-  <h4 class="wysiwyg-text-align-center" id="h_01K32B6G9D3PGCS778VY78FT6J">
-    <span style="color: #666666"
+        src="https://support.discord.com/hc/article_attachments/42710012901271"
+        alt="Gradient:prism.gif"
+        width="800"
+        height="708"
+      /> </span
+    ><span style="color: #666666"
       >Color Presets and Color Pickers for Gradient Effect</span
     >
   </h4>
@@ -477,15 +532,15 @@
     <strong>Default</strong> color option. 
   </li>
 </ul>
-<p class="wysiwyg-text-align-center">
+<figure class="wysiwyg-image">
   <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 624/425; width: 100%"
-    src="https://support.discord.com/hc/article_attachments/34306353378327"
-    width="624"
-    height="425"
+    style="aspect-ratio: 800/708"
+    src="https://support.discord.com/hc/article_attachments/42710057832087"
+    alt="image17.gif"
+    width="800"
+    height="708"
   />
-</p>
+</figure>
 <h4 class="wysiwyg-text-align-center" id="h_01K32B6G9GZ3X61SAC92APZTN1">
   <span style="color: #666666">Select Color from Presets or Color Picker</span>
 </h4>
@@ -512,15 +567,15 @@
   Use the <strong>Surprise Me</strong> button to get random font, color, and
   effect combinations for inspiration.
 </p>
-<p class="wysiwyg-text-align-center">
+<figure class="wysiwyg-image">
   <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 624/425; width: 100%"
-    src="https://support.discord.com/hc/article_attachments/34306353383959"
-    width="624"
-    height="425"
+    style="aspect-ratio: 800/708"
+    src="https://support.discord.com/hc/article_attachments/42710012901911"
+    alt="surprise me.gif"
+    width="800"
+    height="708"
   />
-</p>
+</figure>
 <h4 class="wysiwyg-text-align-center" id="h_01K32B6G9J3RFEE7HPZ91GV72V">
   <span style="color: #666666">Surprise Me Button</span>
 </h4>
@@ -530,23 +585,23 @@
   to see how your Display Name Style looks in both themes before applying your
   changes.
 </p>
-<p class="wysiwyg-text-align-center">
+<figure class="wysiwyg-image">
   <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 624/425; width: 100%"
-    src="https://support.discord.com/hc/article_attachments/34306353384855"
-    width="624"
-    height="425"
+    style="aspect-ratio: 800/708"
+    src="https://support.discord.com/hc/article_attachments/42710057833751"
+    alt="light:dark.gif"
+    width="800"
+    height="708"
   />
-</p>
+</figure>
 <h4 class="wysiwyg-text-align-center" id="h_01K32B6G9JKHT3P0WN71BHC2AA">
   <span style="color: #666666">Light and Dark Mode Preview Buttons</span>
 </h4>
 <h1 id="h_01K32B6G9KZBMH4K3SW6GZ15XH">Disabling Display Name Styles</h1>
 <p>
   If you prefer not to see Display Name Styles from yourself and other users, go
-  to your <strong>User Settings &gt; App Settings</strong>. Then select
-  <strong>Accessibility </strong>and disable the
+  to your <strong>User Settings &gt; App Settings </strong>on desktop. Then
+  select <strong>Accessibility </strong>and disable the
   <strong>Display Name Styles</strong> toggle. This will prevent you from seeing
   Display Name Styles across Discord.
 </p>
@@ -561,30 +616,34 @@
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K32B6G9KEBWHTC2NR2DM0YAV">
   <span style="color: #666666"
-    >To Disable Display Name Styles, Go to User Settings &gt;
-    Accessibility</span
+    >To Disable Display Name Styles, Go to User Settings &gt; Accessibility on
+    Desktop</span
   >
 </h4>
-<p>
-  You can disable Display Name Styles on mobile by tapping your avatar in the
-  bottom right corner, then selecting the cogwheel icon to access
-  <strong>User Settings</strong>. From there, navigate to
-  <strong>Accessibility</strong> and scroll down to find
-  <strong>Display Name Styles</strong>. A checkmark indicates the feature is
-  enabled, while an X means it's disabled—just tap to toggle between them.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/37864976945943"
-    width="309"
-    height="668"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01KFKERGA889BQKD9HP1998T65">
-  <span style="color: #666666"
-    >Display Name Styles toggle located under Accessibility</span
-  >
-</h4>
-<p> </p>
-<p> </p>
-<p> </p>
+<div class="tip-box">
+  <p>
+    <span style="color: #434343"
+      ><strong>Tip: </strong>You can disable Display Name Styles on mobile by
+      tapping the <strong>You</strong> <strong>bar</strong> at the bottom of the
+      screen, then pressing the <strong>cogwheel</strong>
+      <strong>icon</strong> to access <strong>Settings</strong>. From there,
+      navigate to <strong>Accessibility</strong> and scroll down to find
+      <strong>Display Name Styles</strong>. Tap the toggle to turn the feature
+      on or off.</span
+    >
+  </p>
+  <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 42%">
+    <img
+      style="aspect-ratio: 720/1494"
+      src="https://support.discord.com/hc/article_attachments/42710057834519"
+      alt="Mobile Accessibility.gif"
+      width="720"
+      height="1494"
+    />
+  </figure>
+  <h4 class="wysiwyg-text-align-center" id="h_01KZYFBB1KT77GYKD4TVXBRFPN">
+    <span style="color: #666666"
+      >Display Name Styles toggle located under Accessibility on Mobile</span
+    >
+  </h4>
+</div>
