@@ -295,6 +295,18 @@
             font-size: 0.65rem !important;
           }
         }
+        @media screen and (max-width: 479px) {
+          .nav_burger_list {
+            height: 100dvh;
+            max-height: 100dvh;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+          }
+          .nav_burger_bottom {
+            padding-bottom: calc(24px + env(safe-area-inset-bottom)) !important;
+            flex-shrink: 0;
+          }
+        }
       </style>
     </div>
     <div class="nav_padding">
