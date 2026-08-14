@@ -1,0 +1,93 @@
+.wrapper_f7ecac {
+  align-items: center;
+  background-color: var(--background-surface-highest);
+  border-radius: 4px;
+  box-shadow: var(--shadow-border), var(--shadow-low);
+  box-sizing: border-box;
+  display: grid;
+  grid-auto-flow: column;
+  height: 32px;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.1s ease-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.full-motion .wrapper_f7ecac:hover {
+  box-shadow: var(--shadow-border), var(--shadow-medium);
+}
+.button_f7ecac {
+  align-items: center;
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  display: flex;
+  flex: 0 0 auto;
+  height: 24px;
+  justify-content: center;
+  min-width: 24px;
+  padding: 4px;
+  position: relative;
+}
+.button_f7ecac:hover {
+  background-color: var(--interactive-background-hover);
+  color: var(--interactive-text-hover);
+}
+.button_f7ecac:active {
+  background-color: var(--interactive-background-active);
+  padding-bottom: 3px;
+  padding-top: 5px;
+}
+.button_f7ecac.selected_f7ecac,
+.button_f7ecac:active {
+  color: var(--interactive-text-active);
+}
+.button_f7ecac.selected_f7ecac {
+  background-color: var(--interactive-background-selected);
+}
+.separator_f7ecac {
+  background-color: var(--border-subtle);
+  flex: 0 0 auto;
+  height: 100%;
+  margin: 0 4px;
+  width: 1px;
+}
+.button_f7ecac.disabled_f7ecac,
+.button_f7ecac.disabled_f7ecac:active,
+.button_f7ecac.disabled_f7ecac:hover {
+  background-color: transparent;
+  color: var(--interactive-text-default);
+  cursor: default;
+  opacity: 0.5;
+  padding: 4px;
+}
+.button_f7ecac.dangerous_f7ecac {
+  color: var(--control-critical-secondary-text-default);
+}
+.button_f7ecac.dangerous_f7ecac:hover {
+  color: var(--control-critical-secondary-text-hover);
+}
+.button_f7ecac.dangerous_f7ecac:active {
+  color: var(--control-critical-secondary-text-active);
+}
+.enable-forced-colors .wrapper_f7ecac {
+  border: 1px solid CanvasText;
+  height: 36px;
+}
+.enable-forced-colors .button_f7ecac {
+  background-color: ButtonFace;
+  border: 1px solid ButtonFace;
+  color: ButtonText;
+  height: 26px;
+  min-width: 26px;
+}
+.enable-forced-colors .button_f7ecac.selected_f7ecac,
+.enable-forced-colors .button_f7ecac:active,
+.enable-forced-colors .button_f7ecac:hover {
+  background-color: HighlightText;
+  border-color: Highlight;
+  color: Highlight;
+}
+
+/*# sourceMappingURL=576921.bdd052f77c755d76.css.map*/

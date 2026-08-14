@@ -1,0 +1,219 @@
+.pauseBackground_d70e0d {
+  align-self: center;
+  background-color: var(--background-mod-strong);
+  border-radius: 50%;
+  display: flex;
+  height: 16px;
+  justify-content: center;
+  justify-self: center;
+  overflow: hidden;
+  width: 16px;
+}
+.pause_d70e0d {
+  align-self: center;
+  color: var(--interactive-text-active);
+}
+@value popoutBackgroundColor var(--background-surface-highest);
+@value popoutWidth 256px;
+.pendingFolderButtonIcon__93fc9 {
+  align-items: center;
+  background-color: var(--background-mod-subtle);
+  border-radius: var(--radius-md);
+  box-sizing: border-box;
+  color: var(--text-default);
+  display: flex;
+  height: var(--guildbar-avatar-size);
+  justify-content: center;
+  transition: background-color 0.2s ease-out;
+  width: var(--guildbar-avatar-size);
+}
+.pendingFolderButtonIcon__93fc9:hover {
+  background-color: var(--background-mod-normal);
+}
+.container__93fc9 {
+  display: flex;
+  flex-direction: column;
+}
+.popoutAnchor__93fc9 {
+  align-self: center;
+  width: 48px;
+}
+.popoutContainer__93fc9 {
+  background: var(--background-surface-highest);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 256px;
+}
+.popoutCaret__93fc9,
+.popoutCaretLeft__93fc9 {
+  border: 6px solid;
+  border-color: var(--background-surface-highest);
+  bottom: -6px;
+  height: 0;
+  inset-inline-start: 18px;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 0;
+  z-index: 1;
+}
+.popoutCaretLeft__93fc9 {
+  inset-inline-start: -6px;
+  top: 18px;
+}
+.popoutContent__93fc9 {
+  box-sizing: border-box;
+  padding: 16px;
+  width: 256px;
+  z-index: 2;
+}
+.coachmarkTextContainer__93fc9 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.wrapper_ef3116 {
+  background-color: var(--background-base-lowest);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-bottom: calc(
+    var(--custom-app-panels-height, 0) + var(--space-xs) - 16px
+  );
+  -webkit-mask:
+    linear-gradient(180deg, #000, transparent) bottom / 100% 16px no-repeat,
+    linear-gradient(#000, #000) top / 100% calc(100% - 15px) no-repeat;
+  mask:
+    linear-gradient(180deg, #000, transparent) bottom / 100% 16px no-repeat,
+    linear-gradient(#000, #000) top / 100% calc(100% - 15px) no-repeat;
+  overflow: hidden;
+  position: relative;
+  width: var(--custom-guild-list-width);
+}
+.wrapper_ef3116.hidden_ef3116 {
+  visibility: hidden;
+  width: 0;
+}
+.refresh-fast-follow-guild-bg .wrapper_ef3116 {
+  background-color: var(--app-frame-background);
+}
+@supports (grid-template-columns: subgrid) and (white-space-collapse: collapse) {
+  .wrapper_ef3116 {
+    grid-area: guildsList;
+  }
+}
+.platform-osx .wrapper_ef3116 {
+  margin-top: 0;
+}
+.tree_ef3116 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+.scroller_ef3116 {
+  flex: 0 1 auto;
+  padding-bottom: calc(var(--space-xs, 8px) + 16px) !important;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.scroller_ef3116 > [hidden] {
+  margin-top: calc(var(--space-xs) * -1);
+  visibility: hidden;
+}
+.scroller_ef3116.scrolling_ef3116 > * {
+  pointer-events: none;
+}
+.platform-osx .scroller_ef3116,
+.platform-win .scroller_ef3116 {
+  padding-top: 4px;
+}
+.platform-overlay .scroller_ef3116 {
+  padding-top: 12px;
+}
+.unreadMentionsIndicatorBottom_ef3116,
+.unreadMentionsIndicatorTop_ef3116 {
+  box-sizing: border-box;
+  height: auto;
+  inset-inline: 0;
+  overflow: hidden;
+  padding: 8px;
+  pointer-events: none;
+  position: absolute;
+  width: var(--custom-guild-list-width);
+  z-index: 10;
+}
+.unreadMentionsIndicatorTop_ef3116 {
+  padding-top: 8px;
+}
+.unreadMentionsIndicatorBottom_ef3116 {
+  padding-bottom: calc(var(--space-xs, 8px) + 16px);
+}
+.unreadMentionsBar_ef3116:before {
+  position: absolute;
+  top: 0;
+  inset-inline: -8px;
+  bottom: 0;
+  content: "";
+}
+.unreadMentionsIndicatorTop_ef3116 {
+  top: 0;
+}
+.unreadMentionsIndicatorTop_ef3116 .unreadMentionsBar_ef3116:before {
+  top: -8px;
+}
+.unreadMentionsIndicatorBottom_ef3116 {
+  bottom: 0;
+}
+.unreadMentionsIndicatorBottom_ef3116 .unreadMentionsBar_ef3116:before {
+  bottom: -8px;
+}
+.unreadMentionsFixedFooter_ef3116 {
+  bottom: 0;
+}
+.discoveryIcon_ef3116 {
+  color: var(--text-default);
+}
+.platform-osx .unreadMentionsIndicatorTop_ef3116 .unreadMentionsBar_ef3116 {
+  -webkit-app-region: unset;
+}
+.custom-theme-background .tree_ef3116 {
+  background: var(
+    --background-gradient-app-frame,
+    var(--background-base-lowest)
+  );
+}
+.bottomRailNotifCenterButton_ef3116 {
+  padding-bottom: 12px;
+  padding-top: 8px;
+}
+.bottomRailNotifCenterButton_ef3116:before {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-base-lowest) 75%,
+    var(--background-base-lowest) 100%
+  );
+  content: "";
+  height: 16px;
+  position: absolute;
+  translate: 0 -22px;
+  width: 100%;
+}
+.custom-theme-background .bottomRailNotifCenterButton_ef3116 {
+  padding-top: 12px;
+}
+.custom-theme-background .bottomRailNotifCenterButton_ef3116:before {
+  display: none;
+}
+.unreadMentionsFixedFooterBottomNotifCenterEntrypoint_ef3116 {
+  bottom: 76px;
+}
+
+/*# sourceMappingURL=399017.35f153b05582e16b.css.map*/
