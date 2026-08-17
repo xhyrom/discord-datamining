@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer, Data Platform
 
-**Location:** San Francisco Bay Area or Remote (U.S.)
+**Location:** San Francisco Bay Area 
 
 **Id:** 8694476002 <br/>
 **Internal Job Id:** 6473939002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8694476002](https://discord.com/jobs/8694476002)
 
-**Updated At:** Wed, 12 Aug 2026 20:01:53 GMT
+**Updated At:** Mon, 17 Aug 2026 19:12:28 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.

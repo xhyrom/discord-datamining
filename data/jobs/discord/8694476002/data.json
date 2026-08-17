@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6473939002,
   "location": {
-    "name": "San Francisco Bay Area or Remote (U.S.)"
+    "name": "San Francisco Bay Area "
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 8694476002,
-  "updated_at": "2026-08-12T16:01:53-04:00",
+  "updated_at": "2026-08-17T15:12:28-04:00",
   "requisition_id": "R-107369",
   "title": "Senior Software Engineer, Data Platform",
   "company_name": "Discord",
