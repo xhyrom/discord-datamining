@@ -2,7 +2,7 @@
   <span style="color: #2e3338"
     ><em
       ><span data-darkreader-inline-color=""
-        >Last updated: Feb 17, 2026</span
+        >Last updated: August 17, 2026</span
       ></em
     ></span
   >
@@ -31,8 +31,8 @@
     ><span data-darkreader-inline-color=""
       >Under the DSA, some elements of the services Discord provides may qualify
       as an online platform. We’ve calculated the average number of monthly
-      active recipients of these services in the EU for the six months from July
-      1, 2025 through December 31, 2025 and that number is well below 45
+      active recipients of these services in the EU for the six months from
+      January 1, 2026 through June 30, 2026 and that number is well below 45
       million.</span
     ></span
   >
