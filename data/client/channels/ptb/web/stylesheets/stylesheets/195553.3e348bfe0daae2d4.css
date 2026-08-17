@@ -1,0 +1,44 @@
+.nameTag__05e81 {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 1.1;
+  overflow: hidden;
+}
+.username__05e81 {
+  display: block;
+  flex: 0 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bot__05e81 {
+  display: block;
+  flex: 0 0 auto;
+  margin-inline-start: 1ch;
+}
+.info_f4bc97 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.info_f4bc97.withDisplayNameStyles_f4bc97 {
+  overflow: visible;
+}
+.infoSpacing_f4bc97 {
+  margin-inline-start: 5px;
+}
+.guildTag_f4bc97 {
+  background: unset;
+  border: 1px solid var(--user-profile-border);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  height: 20px;
+  margin-inline-start: var(--space-4);
+}
+
+/*# sourceMappingURL=195553.3e348bfe0daae2d4.css.map*/
