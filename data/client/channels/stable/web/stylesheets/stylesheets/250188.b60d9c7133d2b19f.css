@@ -1,0 +1,24 @@
+.premiumTrialBadge_e4ef22 {
+  align-items: center;
+  border-radius: var(--radius-md);
+  display: flex;
+  margin-inline-start: auto;
+  padding: 0 6px;
+  pointer-events: all;
+  text-transform: uppercase;
+}
+.backgroundGradient_e4ef22 {
+  background: linear-gradient(90deg, #db00a4, #5968f0);
+}
+.premiumTrialAcknowledgedBadge_e4ef22 {
+  background-color: var(--background-mod-strong);
+}
+.BogoBadgeClockIcon_e4ef22 {
+  color: var(--icon-subtle);
+  margin-inline-end: 4px;
+}
+.bogoBadgeLabel_e4ef22 {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=250188.b60d9c7133d2b19f.css.map*/

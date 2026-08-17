@@ -1,0 +1,25 @@
+.pro__30cbe {
+  text-transform: uppercase;
+}
+.tip__30cbe {
+  line-height: 16px;
+  opacity: 1;
+}
+.block__30cbe .pro__30cbe,
+.block__30cbe .tip__30cbe,
+.tip__30cbe {
+  font-size: 14px;
+}
+.inline__30cbe .pro__30cbe,
+.inline__30cbe .tip__30cbe {
+  display: inline;
+  font-size: 12px;
+}
+.inline__30cbe .pro__30cbe {
+  margin-inline-end: 3px;
+}
+.enable-forced-colors .tip__30cbe {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=347143.b692943f0aa04ecf.css.map*/

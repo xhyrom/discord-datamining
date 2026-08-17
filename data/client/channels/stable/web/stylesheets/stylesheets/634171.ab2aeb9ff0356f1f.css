@@ -1,0 +1,20 @@
+.itemIcon__1a4d2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+.itemIcon__1a4d2.hasTooltip__1a4d2 {
+  pointer-events: auto;
+}
+.promoIconContainer__1a4d2 {
+  align-items: center;
+  background-color: var(--control-overlay-secondary-background-default);
+  border-radius: var(--radius-round);
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=634171.ab2aeb9ff0356f1f.css.map*/

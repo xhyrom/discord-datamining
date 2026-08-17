@@ -1,0 +1,28 @@
+.custom-profile-frame {
+  --custom-profile-frame-scaled-overflow-horizontal: calc(
+    var(--custom-profile-frame-overflow-horizontal) *
+      var(--custom-profile-frame-layer-scale)
+  );
+  --custom-profile-frame-scaled-overflow-top: calc(
+    var(--custom-profile-frame-overflow-top) *
+      var(--custom-profile-frame-layer-scale)
+  );
+  --custom-profile-frame-scaled-overflow-bottom: calc(
+    var(--custom-profile-frame-overflow-bottom) *
+      var(--custom-profile-frame-layer-scale)
+  );
+}
+:where(:root) .theme-midnight {
+  --custom-profile-frame-drop-shadow-opacity: 0.6;
+}
+:where(:root) .theme-darker {
+  --custom-profile-frame-drop-shadow-opacity: 0.4;
+}
+:where(:root) .theme-dark {
+  --custom-profile-frame-drop-shadow-opacity: 0.2;
+}
+:where(:root) .theme-light {
+  --custom-profile-frame-drop-shadow-opacity: 0.13;
+}
+
+/*# sourceMappingURL=225091.5eb4318a6a83cc8f.css.map*/

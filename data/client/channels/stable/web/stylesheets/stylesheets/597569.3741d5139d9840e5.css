@@ -1,0 +1,93 @@
+.container_c9d15c {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+.container_c9d15c.textXs_c9d15c {
+  --custom-activity-status-icon-size: 12px;
+  --custom-activity-status-emoji-size: 14px;
+}
+.container_c9d15c.textSm_c9d15c {
+  --custom-activity-status-icon-size: 14px;
+  --custom-activity-status-emoji-size: 16px;
+}
+.container_c9d15c:empty {
+  display: none;
+}
+.customStatusContent_c9d15c {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  min-width: 0;
+}
+.activityContainer_c9d15c {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  gap: 4px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.activityContainer_c9d15c.iconOnly_c9d15c {
+  gap: 1px;
+}
+.activitiesTooltip_c9d15c,
+.tooltipText_c9d15c {
+  word-break: break-word;
+}
+.activitiesTooltip_c9d15c {
+  align-items: flex-start;
+  display: flex;
+  gap: 4px;
+  padding: 8px;
+}
+.activitiesTooltip_c9d15c .icon_c9d15c {
+  height: 14px;
+  position: relative;
+  top: 2px;
+  width: 14px;
+}
+.activitiesTooltip_c9d15c.hasMultipleActivities_c9d15c {
+  align-items: start;
+  display: grid;
+  grid-template-columns: 14px 1fr;
+}
+.icon_c9d15c {
+  flex-shrink: 0;
+  height: var(--custom-activity-status-icon-size);
+  width: var(--custom-activity-status-icon-size);
+}
+.truncated_c9d15c {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.textWithIconContainer_c9d15c {
+  max-width: 100%;
+  min-width: var(--custom-activity-status-icon-size);
+}
+.activityCounter_c9d15c {
+  flex-shrink: 0;
+}
+.emoji_c9d15c {
+  flex: 0 0 auto;
+  height: var(--custom-activity-status-emoji-size);
+  margin-inline-end: 0;
+  width: var(--custom-activity-status-emoji-size);
+}
+.dot_c9d15c {
+  flex-shrink: 0;
+}
+.dot_c9d15c:first-child,
+.dot_c9d15c:last-child {
+  display: none;
+}
+.questsIcon_c9d15c {
+  flex-shrink: 0;
+}
+.customStatusLabel_c9d15c {
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=597569.3741d5139d9840e5.css.map*/

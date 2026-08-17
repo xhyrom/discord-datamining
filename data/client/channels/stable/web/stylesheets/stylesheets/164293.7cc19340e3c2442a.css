@@ -1,0 +1,41 @@
+.cardContainer__47729 {
+  align-items: center;
+  background-position: 50%;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.cardContainer__47729.square__47729 {
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
+}
+.cardContainerRelative__47729 {
+  position: relative;
+}
+.cardContainerAbsolute__47729 {
+  position: absolute;
+}
+.cardBackgroundImage__47729 {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  inset-inline: 0;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+}
+.skuImage__47729 {
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  z-index: 1;
+}
+.skuImage__47729.square__47729 {
+  aspect-ratio: 1;
+  border-radius: var(--radius-xs);
+}
+
+/*# sourceMappingURL=164293.7cc19340e3c2442a.css.map*/
