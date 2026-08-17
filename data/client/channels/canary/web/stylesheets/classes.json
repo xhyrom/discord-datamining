@@ -542,6 +542,7 @@
   "show": "show_f061f6",
   "disablePointerEvents": "disablePointerEvents_c38106",
   "winButtons": "winButtons_c38106",
+  "leadingGrow": "leadingGrow_c38106",
   "winButtonsWithDivider": "winButtonsWithDivider_c38106",
   "winButton": "winButton_c38106",
   "winButtonMinMax": "winButtonMinMax_c38106",
