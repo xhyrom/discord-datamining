@@ -3538,5 +3538,16 @@
     "pubDate": "Tue, 11 Aug 2026 00:00:00 GMT",
     "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6360419dba12275999ef0eee_Summer_August.png",
     "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6360419dba12275999ef0eee_Summer_August.png"
+  },
+  {
+    "id": "a-letter-to-the-discord-community-in-brazil",
+    "body": "",
+    "title": "A letter to the Discord community in Brazil",
+    "link": "https://discord.com/blog/a-letter-to-the-discord-community-in-brazil",
+    "guid": "https://discord.com/blog/a-letter-to-the-discord-community-in-brazil",
+    "description": "On the order from Brazil's ANPD to suspend screensharing and video features in the country, how we're complying, and our commitment to our community in Brazil.",
+    "pubDate": "Mon, 17 Aug 2026 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68090f03d6cb868fab0af03c_2024_10_DiscordBlog_CompanyAnnoucements-1.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68090f03d6cb868fab0af03c_2024_10_DiscordBlog_CompanyAnnoucements-1.png"
   }
 ]
