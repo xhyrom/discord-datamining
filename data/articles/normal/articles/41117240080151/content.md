@@ -1,56 +1,56 @@
-<div class="tip-box">
-  <strong>NOTE:</strong> If you're on macOS 11 and Discord no longer launches,
-  it is recommended to install
-  <a href="https://dl.discordapp.net/apps/osx/0.0.396/Discord.dmg">this</a>
-  version of the Discord app. This version will continue to work without
-  updating, but installing any newer version will prevent Discord from
-  launching.
-</div>
 <p>
-  As of <strong>June 15, 2026</strong>, Discord will no longer be supported on
-  macOS 11. 
+  As of <strong>September 17, 2026</strong>, Discord will no longer be supported
+  on macOS 12.
 </p>
 <p>
   To continue receiving updates and support for your Discord client, you must
-  upgrade to at least macOS 12. Check out our OS/system requirements for Discord
+  upgrade to at least macOS 13. Check out our
   <a
     href="https://support.discord.com/hc/en-us/articles/213491697"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">here</span></a
-  >.  
+    ><span class="wysiwyg-underline"
+      >OS/system requirements for Discord here</span
+    ></a
+  >.
 </p>
 <p>
   You can find more information about upgrading your macOS from the following
   page:
 </p>
 <ul>
-  <li data-list-item-id="e52c10eb6be312d7648155a28bb7638f7">
+  <li data-list-item-id="efc92b14c4b1375bf0312f0127082b00b">
     <a
       href="https://support.apple.com/en-us/HT201541"
       target="_blank"
       rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">Upgrade macOS on Mac </span></a
+      ><span class="wysiwyg-underline">Upgrade macOS on Mac</span></a
     >
   </li>
 </ul>
-<h1 id="h_01KTS1KC2ASDWECBXWPCEYDV6F">Frequently Asked Questions</h1>
+<h1 id="h_01M08HENQTQA8TS90P90HCV49N">Frequently Asked Questions</h1>
 <p>
   <strong
     >Q. Will the Discord client I currently have installed continue to work
-    after June 15, 2026?</strong
-  ><br />A. Basic functionality may continue to work, however, the functionality
-  and stability is not guaranteed as the client will no longer receive updates. 
+    after September 17, 2026?</strong
+  >
+</p>
+<p>
+  A. Basic functionality may continue to work, however, the functionality and
+  stability is not guaranteed as the client will no longer receive updates.
 </p>
 <p>
   <strong
     >Q. If I cannot upgrade my computer right now, can I use the browser version
     of Discord?</strong
-  ><br />A. Yes, as long as your browser meets the minimum requirements found
+  >
+</p>
+<p>
+  A. Yes, as long as your browser meets the minimum requirements found
   <a
     href="https://support.discord.com/hc/en-us/articles/213491697-What-are-the-OS-system-requirements-for-Discord-"
     target="_blank"
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
-  >, you can continue to use it. 
+  >, you can continue to use it.
 </p>
