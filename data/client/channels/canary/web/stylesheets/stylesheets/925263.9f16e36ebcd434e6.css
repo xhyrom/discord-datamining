@@ -1,0 +1,181 @@
+.selectableItem_eb626b {
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: var(--text-strong);
+  cursor: pointer;
+  height: 34px;
+  margin: 2px 0;
+  margin-inline-end: 4px;
+  padding: 8px 10px;
+}
+.selectableItem_eb626b.selected_eb626b {
+  cursor: default;
+}
+.selectableItemLabel_eb626b {
+  font-size: 16px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  top: 1px;
+  white-space: nowrap;
+}
+.theme-light .selectableItem_eb626b:focus,
+.theme-light .selectableItem_eb626b:hover {
+  background-color: var(--primary-200);
+}
+.theme-dark .selectableItem_eb626b:focus,
+.theme-dark .selectableItem_eb626b:hover {
+  background-color: hsl(var(--primary-700-hsl) / 0.6);
+}
+.enable-forced-colors .selectableItem_eb626b:focus,
+.enable-forced-colors .selectableItem_eb626b:hover {
+  outline: 1px solid Highlight;
+  outline-offset: -1px;
+}
+.popoutList__92efc {
+  background: var(--background-mod-normal);
+  border-radius: 5px;
+  padding: 10px 10px 0;
+}
+.popoutListEmpty__92efc {
+  box-sizing: border-box;
+  color: var(--text-strong);
+  cursor: default;
+  margin-block: 2px;
+  margin-inline: 0 4px;
+  padding: 8px 10px 0;
+}
+.divider__92efc {
+  margin: 8px 0;
+}
+.enable-forced-colors .popoutList__92efc {
+  border: 2px solid CanvasText;
+}
+.phoneFieldPopout__61a01 {
+  height: 240px;
+  inset-inline-start: 0;
+  position: absolute;
+  top: 40px;
+  width: 220px;
+}
+.phoneFieldPopout__61a01 .phoneFieldScroller__61a01 {
+  height: 196px;
+  padding-bottom: 10px;
+}
+.phoneFieldPopout__61a01 .countryItem__61a01 {
+  width: 100%;
+}
+.phoneFieldPopout__61a01 .countryName__61a01 {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 18px;
+  margin-inline-end: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.phoneFieldPopout__61a01 .countryCode__61a01 {
+  color: var(--text-strong);
+  font-size: 13px;
+  font-weight: var(--font-weight-semibold);
+  text-align: end;
+}
+:root {
+  --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
+  --legacy-elevation-high: 0 2px 10px 0 var(--opacity-black-8);
+  --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3);
+}
+.theme-dark {
+  --legacy-elevation-low: 0 1px 5px 0 var(--opacity-black-28);
+  --legacy-elevation-high: 0 2px 10px 0 var(--opacity-black-20);
+  --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-700-hsl) / 0.6);
+}
+.elevationLow__2b2f1 {
+  box-shadow: var(--legacy-elevation-low);
+}
+.elevationHigh__2b2f1 {
+  box-shadow: var(--legacy-elevation-high);
+}
+.elevationBorderLow__2b2f1 {
+  box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+}
+.darkElevationBorderHigh__2b2f1 {
+  box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+}
+.lightElevationLow__2b2f1 {
+  box-shadow: var(--legacy-elevation-low);
+}
+.lightElevationHigh__2b2f1 {
+  box-shadow: var(--legacy-elevation-high);
+}
+.lightElevationBorderLow__2b2f1 {
+  box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+}
+.elevationBorderHigh__2b2f1,
+.elevationBorderLow__2b2f1,
+.elevationHigh__2b2f1,
+.elevationLow__2b2f1,
+.lightElevationBorderHigh__2b2f1 {
+  box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+}
+.outerContainer__310be {
+  position: relative;
+}
+.container__310be {
+  overflow: hidden;
+}
+.container__310be,
+.innerContainer__310be {
+  display: flex;
+}
+.countryCode__310be {
+  line-height: normal;
+  padding: 9px 8px;
+  white-space: nowrap;
+}
+.separator__310be {
+  background-color: var(--border-subtle);
+  margin: 8px 4px;
+  width: 1px;
+}
+.popout__310be {
+  z-index: 1;
+}
+.hidden__310be {
+  display: none;
+}
+.enable-forced-colors .countryCode__310be {
+  background-color: ButtonFace;
+  border: 1px solid ButtonFace;
+  border-radius: 4px;
+  color: ButtonText;
+}
+.enable-forced-colors .countryCode__310be:focus,
+.enable-forced-colors .countryCode__310be:hover {
+  border-color: ButtonText;
+}
+.enable-forced-colors .countryCode__310be[aria-expanded="true"] {
+  background-color: HighlightText;
+  border-color: Highlight;
+  color: Highlight;
+}
+.input_d64f22 {
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+.inputField_d64f22:hover {
+  border: none;
+}
+.inputWrapper_d64f22 {
+  flex-grow: 1;
+}
+.inputField_d64f22 {
+  background-color: transparent;
+  border: none;
+}
+.enable-forced-colors .input_d64f22 {
+  border: none;
+}
+
+/*# sourceMappingURL=925263.9f16e36ebcd434e6.css.map*/
