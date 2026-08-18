@@ -527,77 +527,9 @@
 <p>A: Game Shops are currently available for Marvel Rivals and Rust.</p>
 <p><strong>Q: Are Game Shops available on mobile?</strong> </p>
 <p>
-  A: Game Shops are currently available on the Discord desktop and web apps. 
-</p>
-<p>
-  Mobile users may encounter Game Shop embeds or item listings that are
-  available for purchase, but the full Game Shop experience is only available on
-  desktop and web apps.
+  A: Game Shops are currently available on the Discord desktop app and browser. 
 </p>
 <h2 id="h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Game Shop</h2>
-<div class="mega-box">
-  <p>
-    Update as of July 22<strong
-      >: The Marvel Rivals Orbs redemption experiment has resumed and has been
-      extended through </strong
-    >August 13 (11 AM PT)<strong> to account for the temporary pause.</strong>
-  </p>
-  <p>
-    <strong
-      >As with any limited-time experiment, eligibility and offer availability
-      may change throughout the rollout. </strong
-    >
-  </p>
-  <p>
-    Offer<strong>: From </strong>July 13 (11 AM PT)
-    <strong>through </strong>August 13 (11 AM PT)<strong
-      >, eligible Nitro Standard subscribers can redeem Discord Orbs for
-      official Marvel Rivals in-game items in the Marvel Rivals Game Shop on
-      Discord. This offer is part of a limited-time beta experiment and is not
-      available to all users. Trial subscriptions, Nitro Basics, and other
-      ineligible subscription types are not eligible. Eligibility, availability,
-      and redemption requirements may change during this experiment. </strong
-    >
-  </p>
-  <p>
-    <strong
-      >For more information about Discord Orbs, including how to use and redeem
-      them, please see the </strong
-    ><a
-      href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><strong
-        ><span class="wysiwyg-underline">Discord Orbs FAQ.</span></strong
-      ></a
-    ><strong> To learn more about Nitro, including Nitro Basic, see our </strong
-    ><a
-      href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><strong><span class="wysiwyg-underline">Nitro FAQ</span></strong></a
-    ><strong>. </strong>
-  </p>
-</div>
-<p>Q: Is Orbs redemption for Marvel Rivals items region locked?</p>
-<p>
-  <strong
-    >A: No. Availability is not based on region. Orbs redemption for Marvel
-    Rivals items is part of a limited beta experiment for eligible Nitro
-    subscribers and is not available to all users at this time.</strong
-  >
-</p>
-<p>
-  Q: Are Nitro Basic, a Nitro trial, or Nitro with Nitro credits eligible for
-  Orbs redemption for Marvel Rivals items?
-</p>
-<p>
-  <strong
-    >A: No. Only select Nitro subscribers are eligible for this experiment.
-    Nitro Basic, Nitro trials, Nitro with Nitro Credits and other subscription
-    types are not eligible.</strong
-  >
-</p>
 <p>
   <strong>Q: Which platforms can I redeem Marvel Rivals Shop items on?</strong> 
 </p>
@@ -615,7 +547,7 @@
     target="_blank"
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">Marvel Rivals Shop on Discord</span></a
-  >.<br /> 
+  >.
 </p>
 <h2 id="h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Game Shop</h2>
 <p>
