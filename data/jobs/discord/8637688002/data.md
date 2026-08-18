@@ -53,7 +53,7 @@ education_optional
 - GDPR: No consent required for processing or retention.
 
 **Departments:**
-- Core Tech Engineering
+- Developers
 
 **Offices:**
 - San Francisco, CA in San Francisco, California, United States
