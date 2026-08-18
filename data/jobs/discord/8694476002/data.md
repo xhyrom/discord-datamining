@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8694476002](https://discord.com/jobs/8694476002)
 
-**Updated At:** Mon, 17 Aug 2026 19:12:28 GMT
+**Updated At:** Tue, 18 Aug 2026 15:53:13 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.
@@ -67,7 +67,6 @@ To learn more about Discord’s Data Platform,&amp;nbsp;read our engineering blo
 
 
 What You'll Be Doing
-&amp;nbsp;
 
 
 
@@ -76,116 +75,32 @@ What You'll Be Doing
 
 
 
-
-
-&amp;nbsp;
 
 
 
 
 
 Build and maintain data infrastructure processing petabytes of data across millions of users
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Write clean, well-tested code for data ingestion, transformation, and serving systems
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Own projects end-to-end. From design through deployment and production support
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Collaborate with data scientists, engineers, and product teams to deliver solutions that power Discord's insights
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Apply 80/20 thinking to challenge requirements, cut unnecessary complexity, and deliver the optimal solution at the right time
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Mentor teammates through code reviews, RFCs, and shared technical knowledge that makes the whole team better
 
 
 
+
+
+
+
+
 &amp;nbsp;
-
-
-
-
-
 
 
 
 
 
 What You Should Have
-&amp;nbsp;
 
 
 
@@ -194,85 +109,22 @@ What You Should Have
 
 
 
-
-
-&amp;nbsp;
 
 
 
 
 
 5+ years of software engineering experience with strong programming skills in Python, Java, Rust, Go, or similar
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Hands-on experience building or operating data infrastructure like pipelines, streaming systems, orchestration, or data warehousing at scale (BigQuery, Kafka, Spark, Flink, Airflow, Dagster, or similar)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Proven track record of delivering complex, multi-phase projects autonomously. You've owned the hard ones and handled edge cases, failure modes, and scale before they became problems.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Strong collaboration and communication skills, including with XFN partners. You write clear technical documents, drive alignment, and bring people along on technical decisions
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Growth mindset. You’ve failed, learned, and shipped something better because of it
 
-&amp;nbsp;
+
+
+
+
+
 
 
 
@@ -286,7 +138,6 @@ Growth mindset. You’ve failed, learned, and shipped something better because o
 
 
 Bonus Points
-&amp;nbsp;
 
 
 
@@ -295,41 +146,23 @@ Bonus Points
 
 
 
-
-
-&amp;nbsp;
 
 
 
 
 
 Passion for Discord and gaming
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Familiarity with data governance, privacy compliance, or cost optimization in large-scale data environments
 
 
-&amp;nbsp;
+
+
+
+
+
+
 
 &amp;nbsp;
-
-
-
-
 
 
 
@@ -348,7 +181,7 @@ Candidates must reside in or be willing to relocate to the San Francisco Bay Are
 
 
 
-The US base salary range for this full-time position is $196,000 to $245,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.
+The US base salary range for this full-time position is $220,500 to $269,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.
 &amp;nbsp;
 
 
