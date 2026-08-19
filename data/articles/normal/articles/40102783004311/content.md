@@ -124,14 +124,16 @@
           class="wysiwyg-list-bold"
           data-list-item-id="ebc0d1a01065e6a5d963e9fdd717864cc"
         >
-          <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E"><strong>Rust Shop</strong></a>
+          <a href="#h_01KQJNEWWHB6E6WFRAF5WTPM8E"
+            ><strong>Rust Game Shop</strong></a
+          >
         </li>
         <li
           class="wysiwyg-list-bold"
           data-list-item-id="e8a4825d625743d4162c732b072491a31"
         >
           <a href="#h_01KZ49EKXDR078KV47FBG58PYP"
-            ><strong>Bloons TD 6</strong></a
+            ><strong>Ninja Kiwi (Bloons TD 6) Game Shop</strong></a
           >
         </li>
       </ul>
@@ -154,7 +156,7 @@
     <strong>Rust</strong>: Rust Shop
   </li>
   <li data-list-item-id="e5e3b56c08a8c3e000f1b95ae21e759a4">
-    <strong>Bloons TD 6</strong>: Bloons TD 6
+    <strong>Bloons TD 6</strong>: Ninja Kiwi Game Shop
   </li>
 </ul>
 <h1 id="h_01KQJNEWVPG87A6MGGTS47408G">
@@ -394,7 +396,7 @@
     data-list-item-id="ed7f3f9cd84db34b1cfc4d3c612233c0d"
   >
     <a href="#h_01KZ49EKXDR078KV47FBG58PYP"
-      ><strong>Bloons TD 6 Game Shop</strong></a
+      ><strong>Ninja Kiwi (Bloons TD 6) Game Shop</strong></a
     >
   </li>
 </ul>
@@ -602,19 +604,7 @@
     ><span class="wysiwyg-underline">Rust Shop on Discord</span></a
   >. 
 </p>
-<h2 id="h_01KZ49EKXDR078KV47FBG58PYP">Bloons TD 6 Game Shop</h2>
-<div class="mega-box">
-  <span style="color: #434343"
-    >Offer:<strong> From </strong>August 4 (3 PM PT)<strong> through </strong
-    >August 18 (5 PM PT)<strong
-      >, all users can get 50% off official Bloons TD 6 in-game items in the </strong
-    >Bloons TD 6 Game Shop<strong>
-      on Discord. Players who make their first purchase will also receive a </strong
-    >Wumpus Pet<strong>
-      available in-game for Bloons TD 6 even after the sale window.</strong
-    ></span
-  >
-</div>
+<h2 id="h_01KZ49EKXDR078KV47FBG58PYP">Ninja Kiwi (Bloons TD 6) Game Shop</h2>
 <p>
   <strong>Q: Which platforms can I redeem Bloons TD6 Shop items on?</strong>
 </p>
