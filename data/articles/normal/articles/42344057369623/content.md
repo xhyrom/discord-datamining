@@ -255,7 +255,7 @@
   </li>
   <li data-list-item-id="ecdc04ee2aa063fb6e69b98d61f96b2d6">
     <strong>What you get:</strong> A free Shop item for you to pick from the
-    Shop. Collaborations are not included.
+    Shop. Bundles and Collaborations are not included.
   </li>
   <li data-list-item-id="ecb0c2937d1c594c3d9c53283eebb0fd8">
     <strong>Terms:</strong> Available to a limited number of eligible users.
@@ -265,7 +265,7 @@
       >Free Shop item will be added on successful subscription, and you will
       need to redeem it in the Shop by 9/11</strong
     >. If you don't meet eligibility, the item won’t be applied to your account.
-    Collabs are not included in this promo.
+    Bundles and Collaborations are not included in this promo.
   </li>
 </ul>
 <h1 id="h_01KZ4G2Z2VK3PSEXHKDS3YSYT7">Frequently Asked Questions</h1>
