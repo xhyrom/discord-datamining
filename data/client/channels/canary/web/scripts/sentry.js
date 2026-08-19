@@ -12,8 +12,8 @@
           i = o(56833),
           l = o(883950),
           a = o(871186),
-          s = o(363630);
-        let d = ["oppobrowser", "realmebrowser", "heytapbrowser"],
+          d = o(363630);
+        let s = ["oppobrowser", "realmebrowser", "heytapbrowser"],
           u = (function (e) {
             let { maxBudgetMinute: r, maxBudgetHour: o } = e,
               t = { slot: 0, budgetUsed: 0 },
@@ -37,7 +37,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-e3f5a999393bcaac95ae78a1ee80cdd2fa52f70a",
+            release: "discord_web-adf9bf350da496bdad88d6671173d049e30aac1c",
             beforeSend: function (e) {
               var r;
               let o;
@@ -51,7 +51,7 @@
                         1 === e.stacktrace.frames.length),
                   ) &&
                   "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL) ||
-                d.some(
+                s.some(
                   (e) =>
                     window.navigator.appVersion.toLowerCase().indexOf(e) >= 0,
                 ) ||
@@ -121,11 +121,11 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.NA("buildNumber", "596191"),
-            a.NA("builtAt", String("1787128794343"));
+            a.NA("buildNumber", "596200"),
+            a.NA("builtAt", String("1787131429069"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let r in e) a.NA(r, e[r]);
-          return s;
+          return d;
         })();
       },
     },
@@ -167,11 +167,11 @@
         return;
       }
       for (var a = 1 / 0, i = 0; i < e.length; i++) {
-        for (var [o, t, n] = e[i], s = !0, d = 0; d < o.length; d++)
-          (!1 & n || a >= n) && Object.keys(l.O).every((e) => l.O[e](o[d]))
-            ? o.splice(d--, 1)
-            : ((s = !1), n < a && (a = n));
-        if (s) {
+        for (var [o, t, n] = e[i], d = !0, s = 0; s < o.length; s++)
+          (!1 & n || a >= n) && Object.keys(l.O).every((e) => l.O[e](o[s]))
+            ? o.splice(s--, 1)
+            : ((d = !1), n < a && (a = n));
+        if (d) {
           e.splice(i--, 1);
           var u = t();
           void 0 !== u && (r = u);
@@ -185,14 +185,14 @@
     (o = (e, o) => {
       var t,
         n,
-        [i, a, s] = o,
-        d = 0;
+        [i, a, d] = o,
+        s = 0;
       if (i.some((e) => 0 !== r[e])) {
         for (t in a) l.o(a, t) && (l.m[t] = a[t]);
-        if (s) var u = s(l);
+        if (d) var u = d(l);
       }
-      for (e && e(o); d < i.length; d++)
-        (n = i[d]), l.o(r, n) && r[n] && r[n][0](), (r[n] = 0);
+      for (e && e(o); s < i.length; s++)
+        (n = i[s]), l.o(r, n) && r[n] && r[n][0](), (r[n] = 0);
       return l.O(u);
     }),
     (t = this.webpackChunkdiscord_app =
@@ -204,4 +204,4 @@
   );
   a = l.O(a);
 })();
-//# sourceMappingURL=sentry.0554cd26b64e856b.js.map
+//# sourceMappingURL=sentry.66d8d126eab99992.js.map
