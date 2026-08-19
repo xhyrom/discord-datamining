@@ -1,0 +1,28 @@
+.section__3af27 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: var(--custom-premium-home-max-width);
+  width: var(--custom-content-width-with-padding);
+}
+.heading__3af27 {
+  font-style: italic;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+.subtitle__3af27 {
+  margin: 0 0 16px;
+  max-width: 544px;
+}
+.leftAlignSection__3af27 {
+  align-items: start;
+  position: relative;
+}
+.leftAlignSubtitle__3af27 {
+  text-align: start;
+}
+.footer__3af27 {
+  margin-bottom: 88px;
+}
+
+/*# sourceMappingURL=181166.7c4c0736b41cf146.css.map*/

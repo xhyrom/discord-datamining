@@ -1,0 +1,33 @@
+.noUserDrag_c8743f {
+  -webkit-user-drag: none;
+}
+.userSelectText_c8743f {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+.userSelectNone_c8743f {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.cursorDefault_c8743f {
+  cursor: default;
+}
+.cursorPointer_c8743f {
+  cursor: pointer;
+}
+.clickable__39b46 {
+  cursor: pointer;
+}
+.clickable__39b46:hover > * {
+  text-decoration: underline;
+}
+.popout__91e7a {
+  background-color: var(--background-surface-high);
+  border-radius: 8px;
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  padding: 0 16px;
+}
+
+/*# sourceMappingURL=644289.92db454f6dfc8aab.css.map*/
