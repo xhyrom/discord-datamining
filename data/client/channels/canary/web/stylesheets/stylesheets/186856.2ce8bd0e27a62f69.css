@@ -1,0 +1,137 @@
+.message__51673 {
+  max-width: 432px;
+}
+.saveNoticeContainer__51673 {
+  bottom: 20px;
+  position: fixed;
+  width: 660px;
+  z-index: 100;
+}
+.scrollbar_da3286::-webkit-scrollbar-corner {
+  background: none;
+  border: none;
+}
+.scrollbarDefault_da3286 {
+}
+.scrollbarDefault_da3286::-webkit-scrollbar {
+  height: var(--custom-scrollbar-scrollbar-width, 14px);
+  width: var(--custom-scrollbar-scrollbar-width, 14px);
+}
+.scrollbarDefault_da3286::-webkit-scrollbar-thumb,
+.scrollbarDefault_da3286::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border-color: transparent;
+  border-radius: var(
+    --custom-scrollbar-border-radius,
+    calc(var(--custom-scrollbar-scrollbar-width, 14px) / 2)
+  );
+  border-style: solid;
+  border-width: var(--custom-scrollbar-scrollbar-margin, 3px);
+}
+.scrollbarDefault_da3286::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-auto-thumb);
+}
+.scrollbarDefault_da3286::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-auto-track);
+  border-width: initial;
+}
+.scrollbarGhost_da3286 {
+}
+.scrollbarGhost_da3286::-webkit-scrollbar {
+  height: var(--custom-scrollbar-scrollbar-width, 14px);
+  width: var(--custom-scrollbar-scrollbar-width, 14px);
+}
+.scrollbarGhost_da3286::-webkit-scrollbar-thumb,
+.scrollbarGhost_da3286::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border-radius: var(
+    --custom-scrollbar-border-radius,
+    calc(var(--custom-scrollbar-scrollbar-width, 14px) / 2)
+  );
+  border-style: solid;
+  border-width: var(--custom-scrollbar-scrollbar-margin, 3px);
+}
+.scrollbarGhost_da3286::-webkit-scrollbar-thumb {
+  background-color: var(--opacity-black-40);
+  border-color: transparent;
+}
+.scrollbarGhost_da3286::-webkit-scrollbar-track {
+  background-color: var(--opacity-black-8);
+  border-color: transparent;
+  border-width: initial;
+}
+.scrollbarGhostHairline_da3286 {
+}
+.scrollbarGhostHairline_da3286::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+.scrollbarGhostHairline_da3286::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--primary-800-hsl) / 0.6);
+  border-radius: 2px;
+  cursor: move;
+}
+.scrollbarGhostHairline_da3286::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: none;
+}
+.enable-forced-colors .scrollbar_da3286::-webkit-scrollbar-track {
+  background-color: Canvas;
+  border-radius: 0;
+  border-width: 1px;
+}
+.enable-forced-colors .scrollbar_da3286::-webkit-scrollbar-thumb {
+  background-color: CanvasText;
+  border-width: 1px;
+}
+.keywordsTextArea__6a631 {
+  background: var(--background-mod-normal);
+  background-color: var(--input-background-default);
+  border: 1px solid var(--background-base-lowest);
+  border-color: var(--input-border-default);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--text-default);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 40px;
+  padding: 12px 12px 24px;
+  resize: vertical;
+  width: 100%;
+}
+.paddingTop__6a631 {
+  padding-top: 8px;
+}
+.errorText__6a631 {
+  word-break: break-word;
+}
+.keywordsContainer__6a631 {
+  position: relative;
+}
+.keywordsCounter__6a631 {
+  bottom: 12px;
+  inset-inline-end: 12px;
+  position: absolute;
+}
+.keywordTextAreaContainer__4546e {
+  padding-top: 8px;
+}
+.keywordTextArea__4546e {
+  background: var(--background-base-lowest);
+}
+.collapseable__4546e {
+  margin-top: 16px;
+  padding: 8px 12px;
+}
+.header__4546e {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.arrow__4546e {
+  color: var(--interactive-text-default);
+}
+
+/*# sourceMappingURL=186856.2ce8bd0e27a62f69.css.map*/
