@@ -1,0 +1,22 @@
+.richText__9e7f3 a {
+  color: var(--text-link);
+  cursor: pointer;
+  -webkit-text-decoration: var(--link-decoration);
+  text-decoration: var(--link-decoration);
+  word-break: break-word;
+}
+.richText__9e7f3 a:hover {
+  text-decoration: underline;
+}
+.richText__9e7f3 strong {
+  font-weight: var(--font-weight-bold);
+}
+.richText__9e7f3 em {
+  font-style: italic;
+}
+.multilineText__9e7f3 {
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/*# sourceMappingURL=244941.676123e7294fc9e9.css.map*/
