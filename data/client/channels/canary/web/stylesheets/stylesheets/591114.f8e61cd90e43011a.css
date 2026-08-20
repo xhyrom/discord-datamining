@@ -1,0 +1,59 @@
+.hiddenFileInput__8dd4d {
+  display: none;
+}
+.jsonTextArea__8dd4d {
+  font-family: var(--font-code);
+  font-size: 12px;
+  resize: vertical;
+  width: 100%;
+}
+.modeToggle__8dd4d {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hidden__8dd4d {
+  display: none;
+}
+.roleDotRight__703b9 {
+  margin-inline-start: 0.25rem;
+}
+.roleDotLeft__703b9 {
+  margin-inline-end: 0.25rem;
+}
+.username__703b9 {
+}
+.container__703b9 {
+  display: inline-flex;
+  max-width: 100%;
+  min-width: 0;
+  text-decoration: inherit;
+}
+.container__703b9.displayInline__703b9 {
+  display: inline;
+}
+.nameContainer__703b9 {
+  display: inline-flex;
+  max-width: 100%;
+  min-width: 0;
+  position: relative;
+  z-index: 0;
+}
+.nameContainer__703b9.displayInline__703b9 {
+  display: inline;
+}
+.name__703b9 {
+  position: relative;
+}
+.name__703b9,
+.nameGlow__703b9 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nameGlow__703b9 {
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/*# sourceMappingURL=591114.f8e61cd90e43011a.css.map*/
