@@ -3191,7 +3191,7 @@
         }
       ],
       "id": 8652914002,
-      "updated_at": "2026-08-06T20:04:55-04:00",
+      "updated_at": "2026-08-21T11:02:58-04:00",
       "requisition_id": "R-107355",
       "title": "Threat Investigator ",
       "company_name": "Discord",
@@ -3209,9 +3209,30 @@
       ],
       "offices": [
         {
+          "id": 4105189002,
+          "name": "Los Angeles Metro Area",
+          "location": null,
+          "child_ids": [],
+          "parent_id": null
+        },
+        {
+          "id": 4105187002,
+          "name": "New York, NY",
+          "location": "New York, New York, United States",
+          "child_ids": [],
+          "parent_id": null
+        },
+        {
           "id": 4000383002,
           "name": "San Francisco, CA",
           "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        },
+        {
+          "id": 4105188002,
+          "name": "Washington, D.C.",
+          "location": null,
           "child_ids": [],
           "parent_id": null
         }
