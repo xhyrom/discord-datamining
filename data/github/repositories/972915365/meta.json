@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/opentelemetry-collector-contrib",
   "created_at": "2025-04-25T22:17:56Z",
   "homepage": "https://opentelemetry.io",
-  "size": 746828,
+  "size": 746822,
   "language": "Go",
   "has_issues": false,
   "has_projects": true,
