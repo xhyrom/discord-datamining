@@ -526,12 +526,39 @@
 </div>
 <h2 id="h_01KQJNEWWFCGTTPJRND5GPAHZE">General</h2>
 <p><strong>Q: Which games have Game Shops on Discord?</strong> </p>
-<p>A: Game Shops are currently available for Marvel Rivals and Rust.</p>
+<p>
+  A: Game Shops are currently available for Marvel Rivals, Rust, and Bloons TD
+  6.
+</p>
 <p><strong>Q: Are Game Shops available on mobile?</strong> </p>
 <p>
   A: Game Shops are currently available on the Discord desktop app and browser. 
 </p>
 <h2 id="h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Game Shop</h2>
+<p>
+  <strong>Offer:</strong> From August 24 (11:00 AM PT) through September 3
+  (11:00 AM PT), eligible users who purchase a Nitro yearly subscription can
+  receive their first official Marvel Rivals in-game item free in the Marvel
+  Rivals Game Shop on Discord. Other subscription types are not eligible for
+  this offer. Receiving Nitro yearly subscription as a gift or purchasing Nitro
+  yearly subscription as a gift for another user does not qualify for this
+  offer.
+</p>
+<p>
+  For more details around eligibility, terms and policy please see the<a
+    href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
+  >
+    <span style="color: #0000ff"
+      >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
+    ></a
+  >.
+</p>
+<div class="info-box">
+  <strong>Note:</strong> Users who subscribe to Nitro yearly subscription on
+  mobile are still eligible for this offer. However, they must sign in on the
+  Discord desktop or web app to claim their free item in the Marvel Rivals Game
+  Shop.
+</div>
 <p>
   <strong>Q: Which platforms can I redeem Marvel Rivals Shop items on?</strong> 
 </p>
@@ -552,6 +579,27 @@
   >.
 </p>
 <h2 id="h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Game Shop</h2>
+<p>
+  <strong>Offer:</strong> From August 24 (11:00 AM PT) through September 4
+  (11:00 AM PT), Nitro subscribers can receive 15% off select official Rust
+  in-game items in the Rust Game Shop on Discord. This discount applies to
+  self-purchases only and cannot be applied toward gifted items purchased for
+  other users.
+</p>
+<p>
+  For details around eligibility, terms and policy please see the<a
+    href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
+  >
+    <span style="color: #0000ff"
+      >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
+    ></a
+  >.
+</p>
+<div class="info-box">
+  <strong>Note:</strong> Users who subscribe to Nitro on mobile can still redeem
+  this offer. However, they must sign in on the Discord desktop or web app to
+  redeem the discount in the Rust Game Shop.
+</div>
 <p>
   <strong
     >Q: I'm having trouble linking my Rust account to receive my item. What
@@ -678,7 +726,7 @@
   account, they'll be prompted to link one on that same page before the item
   lands.
 </p>
-<p><strong>: How does this work on mobile?</strong></p>
+<p><strong>Q: How does this work on mobile?</strong></p>
 <p>
   A: The same way as on PC. If you don't have a linked account, you'll be
   redirected to the account-linking page to log into your Bloons TD6 account. It
