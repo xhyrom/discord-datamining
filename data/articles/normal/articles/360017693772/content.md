@@ -1,77 +1,89 @@
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li style="list-style-type: none">
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="eb3e2363aa5cd4e72111cb475b5b25a20"
+    >
+      <a href="#h_01J1FZH9BCJZ73NWBB9RTMESMG"
+        ><strong>Where to Manage all of Your Active Subscriptions </strong></a
+      >
+    </li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="ee46bd4f6a31c2852a7333c9b2492aa6b"
+    >
+      <a href="#h_01K81NJDJQCQEQ3KM1NNZAF1JD"
+        ><strong>Billing Information and History</strong></a
+      >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01J1FZH9BCJZ73NWBB9RTMESMG"
-              >Where to Manage all of Your Active Subscriptions </a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e7d0c8cd601d5da88247025b6edb1ee1c"
+        >
+          <a href="#h_01K81NM0KY4S4KCEZB008EFBA5"
+            ><strong>How do I add or edit payment methods?</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01K81NJDJQCQEQ3KM1NNZAF1JD"
-              >Billing Information and History</a
-            ></strong
-          >
-          <ul>
-            <li>
-              <strong
-                ><a href="#h_01K81NM0KY4S4KCEZB008EFBA5"
-                  >How do I add or edit payment methods?</a
-                ></strong
-              >
-            </li>
-            <li>
-              <strong
-                ><a href="#h_01K81NNQ1FDGM4RT8NNPJKFWEM"
-                  >How do I change my payment methods for my subscription?</a
-                ></strong
-              >
-            </li>
-            <li>
-              <strong
-                ><a href="#h_01K81NPZY2MMP8P9BBK26CDRQD"
-                  >How do I remove a payment method?</a
-                ></strong
-              >
-            </li>
-            <li>
-              <strong
-                ><a href="#h_01K81NQFSH7WBFS8FPQ2FD2CNM"
-                  >Where can I download my tax invoice or purchase receipt?</a
-                ></strong
-              >
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01K81NR51C61N77REZJQD6K0AW"
-              >What payment methods are accepted?</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="eac1b73e9f93e2d060d8f22e3494497de"
+        >
+          <a href="#h_01K81NNQ1FDGM4RT8NNPJKFWEM"
+            ><strong
+              >How do I change my payment methods for my subscription?</strong
+            ></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01K81NSNAKRHBQACY5A3B780ET"
-              >What Discord Purchases Will Look Like on Your Statement</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="ec60e608d570544a8af26bddeb7fb6388"
+        >
+          <a href="#h_01K81NPZY2MMP8P9BBK26CDRQD"
+            ><strong>How do I remove a payment method?</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01K81NT5AVBH2CTY6TRH6XJ1FH"
-              >Frequently Asked Questions</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e5e623a86dea74dbd31b5a38669127238"
+        >
+          <a href="#h_01K81NQFSH7WBFS8FPQ2FD2CNM"
+            ><strong
+              >Where can I download my tax invoice or purchase receipt?</strong
+            ></a
           >
         </li>
       </ul>
+    </li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="eafeeb7aab8bf6834a6a4ddd2fe97ad9a"
+    >
+      <a href="#h_01K81NR51C61N77REZJQD6K0AW"
+        ><strong>What payment methods are accepted?</strong></a
+      >
+    </li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="ef6d3a32b185f025144ef22cae2ac0f22"
+    >
+      <a href="#h_01K81NSNAKRHBQACY5A3B780ET"
+        ><strong
+          >What Discord Purchases Will Look Like on Your Statement</strong
+        ></a
+      >
+    </li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="ebf2a268f83831403b98f64b5c5d80d55"
+    >
+      <a href="#h_01K81NT5AVBH2CTY6TRH6XJ1FH"
+        ><strong>Frequently Asked Questions</strong></a
+      >
     </li>
   </ul>
 </div>
@@ -79,17 +91,19 @@
   Where to Manage all of Your Active Subscriptions 
 </h1>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><span id="docs-internal-guid-a5096c0b-7fff-beb8-851d-dbeacf840f60"
+  <span id="docs-internal-guid-a5096c0b-7fff-beb8-851d-dbeacf840f60"
+    ><strong
       ><img
         src="https://support.discord.com/hc/article_attachments/24509121394711"
         width="839"
-        height="633" /></span
-  ></strong>
+        height="633" /></strong
+  ></span>
 </p>
-<h4 id="h_01K81NXBQX6M8YTXDAHFH7C00B" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Subscriptions Tab in User Settings on Desktop</span
+<h4 class="wysiwyg-text-align-center" id="h_01K81NXBQX6M8YTXDAHFH7C00B">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Subscriptions Tab in User Settings on Desktop</span
+    ></span
   >
 </h4>
 <p id="docs-internal-guid-68cbc2d3-7fff-f602-1743-01972b2b8085">
@@ -108,9 +122,13 @@
 <p>2. Then, select the <strong>Subscriptions tab.</strong></p>
 <p>Once there, you can find information about:</p>
 <ul>
-  <li>Any active subscriptions;</li>
-  <li>The renewal dates and amounts you'll be charged;</li>
-  <li>
+  <li data-list-item-id="e4143d87bf70f31d513f1e4ed6f66bc71">
+    Any active subscriptions;
+  </li>
+  <li data-list-item-id="e5343889b58170a949b4fcb80f3108048">
+    The renewal dates and amounts you'll be charged;
+  </li>
+  <li data-list-item-id="e7bcce61745c32edefc41f79c5e2354f3">
     Options to manage your subscriptions, including
     <a
       href="https://support.discord.com/hc/en-us/articles/19580873036695-How-to-Cancel-your-Nitro-Server-Boosting-or-other-Discord-Subscriptions"
@@ -120,40 +138,51 @@
     >
     or switching plans; 
   </li>
-  <li>Any gift subscription credits you’ve received.</li>
+  <li data-list-item-id="eecbbe17d5eeaea7d3483f11e0fc7d05d">
+    Any gift subscription credits you’ve received.
+  </li>
 </ul>
 <div class="book-box">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >For more information on how to cancel a subscription, please check out one
-    of these relevant articles depending on your subscription type: </span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >For more information on how to cancel a subscription, please check out
+      one of these relevant articles depending on your subscription type:
+    </span></span
   ><a
     href="https://support.discord.com/hc/en-us/articles/19580873036695"
     target="_blank"
     rel="noopener noreferrer"
     >Nitro subscription</a
-  ><span style="color: #434343" data-darkreader-inline-color="">, </span
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">, </span></span
   ><a
     href="https://support.discord.com/hc/en-us/articles/26729525788695"
     target="_blank"
     rel="noopener noreferrer"
     >Server Boosting</a
-  ><span style="color: #434343" data-darkreader-inline-color="">, </span
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">, </span></span
   ><a
     href="https://support.discord.com/hc/en-us/articles/26729967472279"
     target="_blank"
     rel="noopener noreferrer"
     >Server subscription</a
-  ><span style="color: #434343" data-darkreader-inline-color="">, or </span
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">, or </span></span
   ><a
     href="https://support.discord.com/hc/en-us/articles/26729692307351"
     target="_blank"
     rel="noopener noreferrer"
     >Premium App</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
 </div>
 <h1 id="h_01K81NJDJQCQEQ3KM1NNZAF1JD">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Billing Information and History</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Billing Information and History</span
+    ></span
   >
 </h1>
 <p id="docs-internal-guid-8e60dd78-7fff-f06a-32ad-61a4840fd18b">
@@ -161,17 +190,19 @@
   under <strong>User Settings &gt; Billing. </strong>
 </p>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><span id="docs-internal-guid-3de5febf-7fff-2122-7a68-e604a975cd40"
+  <span id="docs-internal-guid-3de5febf-7fff-2122-7a68-e604a975cd40"
+    ><strong
       ><img
         src="https://support.discord.com/hc/article_attachments/24509121402135"
         width="771"
-        height="493" /></span
-  ></strong>
+        height="493" /></strong
+  ></span>
 </p>
-<h4 id="01K81P0P9ZZ4983QX4D6NR2TFD" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Billing Tab in User Settings on Desktop</span
+<h4 class="wysiwyg-text-align-center" id="01K81P0P9ZZ4983QX4D6NR2TFD">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Billing Tab in User Settings on Desktop</span
+    ></span
   >
 </h4>
 <h2 id="h_01K81NM0KY4S4KCEZB008EFBA5">How do I add or edit payment methods?</h2>
@@ -184,17 +215,19 @@
   and complete the prompts.
 </p>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><span id="docs-internal-guid-3692f165-7fff-0c35-b613-330c68eab92a"
+  <span id="docs-internal-guid-3692f165-7fff-0c35-b613-330c68eab92a"
+    ><strong
       ><img
         src="https://support.discord.com/hc/article_attachments/24509110852759"
         width="739"
-        height="547" /></span
-  ></strong>
+        height="547" /></strong
+  ></span>
 </p>
-<h4 id="01K81P1Q0TAXGBTSXQYT9NH3QX" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Adding a Payment Method</span
+<h4 class="wysiwyg-text-align-center" id="01K81P1Q0TAXGBTSXQYT9NH3QX">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of Adding a Payment Method</span
+    ></span
   >
 </h4>
 <p id="docs-internal-guid-199acb8c-7fff-7019-e2d2-0eed05830428">
@@ -210,9 +243,11 @@
       height="465"
   /></span>
 </p>
-<h4 id="01K81P2Y2A0ZBCMT29NQG656KP" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Default Tag and Edit Button for Payment Method</span
+<h4 class="wysiwyg-text-align-center" id="01K81P2Y2A0ZBCMT29NQG656KP">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Default Tag and Edit Button for Payment Method</span
+    ></span
   >
 </h4>
 <p id="docs-internal-guid-c0be2227-7fff-15e9-ecfd-40e1f8582ac8">
@@ -236,9 +271,11 @@
       height="716"
   /></span>
 </p>
-<h4 id="01K81P4JKC32RNNRSPZ0C8TCXR" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Make this my default payment method Checkbox</span
+<h4 class="wysiwyg-text-align-center" id="01K81P4JKC32RNNRSPZ0C8TCXR">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Make this my default payment method Checkbox</span
+    ></span
   >
 </h4>
 <h2 id="h_01K81NNQ1FDGM4RT8NNPJKFWEM">
@@ -257,26 +294,34 @@
 <p>2. Find the <strong>Pay for it With</strong> section.</p>
 <p>3. Select a payment method.</p>
 <div class="info-box">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    ><strong>Note:</strong> Updating your subscription payment method does not
-    automatically change which payment method is set as your default payment
-    method. If you’d like to set one card as both your default and subscription
-    payment methods, you will need to update both settings to the same
-    card. </span
-  >
+  <p>
+    <span style="color: #434343"
+      ><span data-darkreader-inline-color=""
+        ><strong>Note:</strong> Updating your subscription payment method does
+        not automatically change which payment method is set as your default
+        payment method. If you’d like to set one card as both your default and
+        subscription payment methods, you will need to update both settings to
+        the same card. </span
+      ></span
+    >
+  </p>
   <p class="wysiwyg-text-align-center">
-    <span style="color: #434343" data-darkreader-inline-color=""
-      ><strong
-        ><span id="docs-internal-guid-e00d7002-7fff-5770-de49-fbf5f28ba804"
+    <span style="color: #434343"
+      ><span
+        data-darkreader-inline-color=""
+        id="docs-internal-guid-e00d7002-7fff-5770-de49-fbf5f28ba804"
+        ><strong
           ><img
             src="https://support.discord.com/hc/article_attachments/24509121414679"
             width="755"
-            height="570" /></span></strong
+            height="570" /></strong></span
     ></span>
   </p>
-  <h4 id="01K81P6F370YRE72AK6VJCVGET" class="wysiwyg-text-align-center">
-    <span style="color: #666666" data-darkreader-inline-color=""
-      >Pay for it with Dropdown</span
+  <h4 class="wysiwyg-text-align-center" id="01K81P6F370YRE72AK6VJCVGET">
+    <span style="color: #666666"
+      ><span data-darkreader-inline-color=""
+        >Pay for it with Dropdown</span
+      ></span
     >
   </h4>
 </div>
@@ -287,20 +332,20 @@
   <strong>User Settings &gt; Billing</strong>. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><span id="docs-internal-guid-95b2d89a-7fff-31e5-639e-f9a5fe1fdf0c"
+  <span id="docs-internal-guid-95b2d89a-7fff-31e5-639e-f9a5fe1fdf0c"
+    ><strong
       ><img
         src="https://support.discord.com/hc/article_attachments/24509121418903"
         width="860"
-        height="142" /></span
-  ></strong>
+        height="142" /></strong
+  ></span>
 </p>
-<h4 id="01K81P8DCRS4AVKXKBRN9SV7E6" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Subscription Tag</span
+<h4 class="wysiwyg-text-align-center" id="01K81P8DCRS4AVKXKBRN9SV7E6">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Subscription Tag</span></span
   >
 </h4>
-<h2 id="h_01K81NPZY2MMP8P9BBK26CDRQD" class="wysiwyg-text-align-left">
+<h2 class="wysiwyg-text-align-left" id="h_01K81NPZY2MMP8P9BBK26CDRQD">
   How do I remove a payment method?
 </h2>
 <p>
@@ -313,33 +358,36 @@
   <strong>Delete Payment Method</strong> to remove it.
 </p>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><span id="docs-internal-guid-576a8cf1-7fff-3c74-2163-512cd13a3e39"
+  <span id="docs-internal-guid-576a8cf1-7fff-3c74-2163-512cd13a3e39"
+    ><strong
       ><img
         src="https://support.discord.com/hc/article_attachments/24509110864791"
         width="731"
-        height="611" /></span
-  ></strong>
+        height="611" /></strong
+  ></span>
 </p>
-<h4 id="01K81P9X1ZRJ6RWPK490R7HAFV" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Delete Payment Method Button</span
+<h4 class="wysiwyg-text-align-center" id="01K81P9X1ZRJ6RWPK490R7HAFV">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Delete Payment Method Button</span
+    ></span
   >
 </h4>
 <div class="info-box">
-  <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Note</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >: If you have an active subscription, we require you to have at least one
-    saved payment method. If you’d like to cancel your subscription and remove
-    your cards on file, be sure to cancel your subscription first.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""><strong>Note</strong></span
+    ><span data-darkreader-inline-color=""
+      >: If you have an active subscription, we require you to have at least one
+      saved payment method. If you’d like to cancel your subscription and remove
+      your cards on file, be sure to cancel your subscription first.</span
+    ></span
   >
 </div>
 <h2 id="h_01K81NQFSH7WBFS8FPQ2FD2CNM">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Where can I download my tax invoice or purchase receipt?</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Where can I download my tax invoice or purchase receipt?</span
+    ></span
   >
 </h2>
 <p id="docs-internal-guid-e4d4d176-7fff-2501-356e-964de8b86b56">
@@ -366,18 +414,16 @@
   /></span>
 </p>
 <h4
-  id="docs-internal-guid-b5360d60-7fff-6234-f2a9-8ec53be34ba4"
   class="wysiwyg-text-align-center"
+  id="docs-internal-guid-b5360d60-7fff-6234-f2a9-8ec53be34ba4"
 >
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >You may see either the </span
-  ><strong
-    ><span style="color: #666666" data-darkreader-inline-color=""
-      >“</span
-    ></strong
-  ><span style="color: #666666" data-darkreader-inline-color=""
-    >Download extended purchase receipt" or "Download tax invoice” within this
-    section. </span
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">You may see either the </span
+    ><span data-darkreader-inline-color=""><strong>“</strong></span
+    ><span data-darkreader-inline-color=""
+      >Download extended purchase receipt" or "Download tax invoice” within this
+      section. </span
+    ></span
   >
 </h4>
 <h1 id="h_01K81NR51C61N77REZJQD6K0AW">What payment methods are accepted?</h1>
@@ -392,66 +438,136 @@
   >
 </p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="eac411bd1f87392ab922317af9c976aa9"
+  >
     <span style="font-weight: 400">A valid credit/debit card (Global)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e23c72932d30ff0cca5dad1af03c9c3a5"
+  >
     <span style="font-weight: 400">PayPal (Global)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ecef7a3415424c19219ef15f803f07895"
+  >
     <span style="font-weight: 400">Apple Pay</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Google Pay<br /></span>
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ef4f81ba652580550e0b34be80bf44984"
+  >
+    <span style="font-weight: 400">Google Pay</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e9071720584abd81161194c1b7d61a978"
+  >
     <span style="font-weight: 400">Venmo (United States)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li data-list-item-id="eaa35e1df5222d67100446935a0e98bdd">
+    Cash App Pay (United States)
+  </li>
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e8bc8ebadb87cb04d7031929510a87749"
+  >
     <span style="font-weight: 400">Paysafecard (Germany)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ed14e32576e7699252115a2e3d7dc1340"
+  >
     <span style="font-weight: 400">Gcash (Philippines)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e4c6f17d96ee69325f4cb8a330ecc8965"
+  >
     <span style="font-weight: 400">Grabpay (Malaysia)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="efd0d206e8fbb0960623661067517b035"
+  >
     <span style="font-weight: 400">MoMoWallet (Vietnam)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e9d01e75cfea15caa399bccbda17ffe07"
+  >
     <span style="font-weight: 400">KakaoPay (South Korea)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">iDEAL (Netherlands)</span
-    ><span style="font-weight: 400"><br /></span>
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e84ecba63737e7d45aa6530bd957fb7de"
+  >
+    <span style="font-weight: 400">iDEAL (Netherlands)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e13a2929f639991481cceda206fb2be0c"
+  >
     <span style="font-weight: 400">Bancontact (Belgium)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ede1206450809845804a3453d63e5c534"
+  >
     <span style="font-weight: 400">EPS (Austria)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Przelewy24 (Poland)<br /></span>
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e163a515736e3bb73c295c9c63df67fe9"
+  >
+    <span style="font-weight: 400">Przelewy24 (Poland)</span>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ee787fe8ba9594c543eab58bdcbd1baf3"
+  >
     <span style="font-weight: 400">GoPay (Indonesia)</span>
+  </li>
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e1be228aef18898441b20ff1a1f5574f5"
+  >
+    PIX (Brazil)
   </li>
 </ul>
 <div class="warn-box">
-  <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Important</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >: When selecting your payment method, please note we are unable to provide
-    refunds for purchases made with Paysafecards.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""><strong>Important</strong></span
+    ><span data-darkreader-inline-color=""
+      >: When selecting your payment method, please note we are unable to
+      provide refunds for purchases made with Paysafecards.</span
+    ></span
   >
 </div>
 <h1 id="h_01K81NSNAKRHBQACY5A3B780ET">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >What Discord Purchases Will Look Like on Your Statement</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >What Discord Purchases Will Look Like on Your Statement</span
+    ></span
   >
 </h1>
 <p>
@@ -475,9 +591,11 @@
       height="39"
   /></span>
 </p>
-<h4 id="01K81PB67KH389C27884EMP0PE" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Bank Statement for Nitro Monthly</span
+<h4 class="wysiwyg-text-align-center" id="01K81PB67KH389C27884EMP0PE">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of Bank Statement for Nitro Monthly</span
+    ></span
   >
 </h4>
 <p>
@@ -494,32 +612,37 @@
       height="528"
   /></span>
 </p>
-<h4 id="01K81PCC70KT8WBVDVB8QSZCS5" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of PayPal Statement for Nitro Basic Monthly</span
+<h4 class="wysiwyg-text-align-center" id="01K81PCC70KT8WBVDVB8QSZCS5">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of PayPal Statement for Nitro Basic Monthly</span
+    ></span
   >
 </h4>
 <div class="info-box">
-  <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Note</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >: All purchases made within Discord will be labeled
-    <strong>DISCORD*ItemName</strong> within credit/debit card statements
-    depending on how your bank renders this and
-    <strong>PAYPAL* DISCORD</strong> if completed through PayPal. If you would
-    like a refund for any purchases, check out our refund policy </span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""><strong>Note</strong></span
+    ><span data-darkreader-inline-color=""
+      >: All purchases made within Discord will be labeled
+      <strong>DISCORD*ItemName</strong> within credit/debit card statements
+      depending on how your bank renders this and
+      <strong>PAYPAL* DISCORD</strong> if completed through PayPal. If you would
+      like a refund for any purchases, check out our refund policy
+    </span></span
   ><a
     href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy"
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
 </div>
 <h1 id="h_01K81NT5AVBH2CTY6TRH6XJ1FH">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Frequently Asked Questions</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Frequently Asked Questions</span
+    ></span
   >
 </h1>
 <p>
@@ -601,7 +724,7 @@
   subscriptions specifically will not show a Subscription tag within the Billing
   tab, and these subscriptions will charge from either the original payment
   method selected or the payment method set for the specific App subscription in
-  the Premium App Subscriptions list.<strong><br /></strong>
+  the Premium App Subscriptions list.<br /> 
 </p>
 <p>
   <strong
@@ -638,9 +761,15 @@
   for additional subscription purchases, such as:  
 </p>
 <ul>
-  <li>If you're changing your billing plan from monthly to yearly</li>
-  <li>If your payment is being prorated</li>
-  <li>If you are getting a discount</li>
+  <li data-list-item-id="ea4fbf193fe06900015ff8bafc02e539e">
+    If you're changing your billing plan from monthly to yearly
+  </li>
+  <li data-list-item-id="e3d6bb7982b71d4d72d27d160fb1710e0">
+    If your payment is being prorated
+  </li>
+  <li data-list-item-id="ef40bb3a623b3af97a0d7f4d19f01b220">
+    If you are getting a discount
+  </li>
 </ul>
 <p>
   <strong
@@ -670,7 +799,7 @@
 <p>
   <strong
     >Q: I have a new Discord account, can I transfer my Nitro subscription to
-    another account? </strong
+    another account? </strong
   ><br />A: Unfortunately, Discord doesn't currently support transferring Nitro
   subscriptions between accounts. We understand this might be a bit
   inconvenient, and we appreciate your understanding.
