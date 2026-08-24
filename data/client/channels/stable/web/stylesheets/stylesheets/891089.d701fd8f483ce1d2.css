@@ -1,0 +1,33 @@
+.media__9c640 {
+  border-radius: var(--radius-md);
+}
+.assetContainer__9c640 {
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.playButton__9c640 {
+  inset-inline-start: 50%;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease-in-out;
+  z-index: 2;
+}
+.assetContainer__9c640:focus-within .playButton__9c640,
+.assetContainer__9c640:hover .playButton__9c640 {
+  opacity: 1;
+  pointer-events: auto;
+}
+.closeButton__9c640 {
+  inset-inline-end: calc(var(--space-8) - 1px);
+  position: absolute;
+  top: calc(var(--space-8) - 1px);
+  z-index: 2;
+}
+
+/*# sourceMappingURL=891089.d701fd8f483ce1d2.css.map*/

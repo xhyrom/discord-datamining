@@ -1,0 +1,57 @@
+.cell_f70307 {
+  align-items: center;
+  border-bottom: 1px solid var(--border-subtle);
+  border-color: var(--border-muted);
+  display: flex;
+  gap: var(--space-16);
+  padding: var(--space-16) 0;
+}
+.cell_f70307:last-child {
+  border-bottom: none;
+}
+.iconContainer_f70307 {
+  display: flex;
+  justify-content: center;
+}
+.icon_f70307,
+.iconContainer_f70307 {
+  height: var(--space-24);
+  width: var(--space-24);
+}
+.icon_f70307 {
+  color: var(--icon-subtle);
+}
+.textContainer_f70307 {
+  gap: 2px;
+}
+.number_f70307,
+.textContainer_f70307 {
+  display: flex;
+  flex-direction: column;
+}
+.number_f70307 {
+  align-items: center;
+  background-color: var(--background-mod-subtle);
+  border-radius: var(--radius-round);
+  height: 32px;
+  justify-content: center;
+  min-width: 32px;
+}
+.cellGroup_f70307 {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: var(--space-8);
+}
+.cellGroup_f70307 .content_f70307 {
+  border-radius: var(--radius-sm);
+  flex-grow: 1;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.completedText_f70307 {
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=337375.7acf38b91725be1e.css.map*/

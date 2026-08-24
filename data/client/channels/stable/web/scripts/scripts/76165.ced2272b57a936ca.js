@@ -1,9 +1,0 @@
-"use strict";
-(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["76165"],
-  {
-    517220(s, p, a) {
-      s.exports = { J: "canvas_eb6eba" };
-    },
-  },
-]);
