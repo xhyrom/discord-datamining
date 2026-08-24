@@ -1,0 +1,203 @@
+.tutorial__73f2a {
+  position: absolute;
+  top: -80px;
+  inset-inline: -60px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.tutorial__73f2a.shown__73f2a {
+  opacity: 1;
+}
+.arrowGroup__73f2a {
+  inset-inline-start: 0;
+  position: absolute;
+  top: 0;
+  transform-origin: 0 0;
+}
+.arrowGroup__73f2a.right__73f2a {
+  inset-inline: auto 0;
+  transform: scaleX(-1);
+}
+.arrowContainer__73f2a {
+  inset-inline-start: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  transform-origin: 0 0;
+}
+.full-motion .arrowContainer__73f2a {
+  transition:
+    transform 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+}
+.horizontal__73f2a {
+  top: 118px;
+  transition: none;
+}
+.diag1__73f2a {
+  transform: translate3d(10px, 24px, 0) rotate(40deg);
+}
+.diag2__73f2a {
+  transform: translate3d(85px, 0, 0) rotate(70deg);
+}
+.full-motion .arrowIcon__73f2a {
+  animation: arrow-pulse__73f2a 0.82s ease-in-out infinite;
+}
+.tutorialMessages__73f2a {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: var(--font-weight-medium);
+  height: 60px;
+  line-height: 24px;
+  overflow: hidden;
+  padding-top: 30px;
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+.message__73f2a {
+  position: absolute;
+  width: 100%;
+}
+.full-motion .message__73f2a {
+  transition:
+    opacity 0.15s ease-in-out,
+    transform 0.15s ease-in-out;
+}
+.searchMessage__73f2a {
+  opacity: 1;
+  transform: translateZ(0);
+}
+.selectMessage__73f2a {
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+}
+.hasQuery__73f2a .diag1__73f2a,
+.hasQuery__73f2a .diag2__73f2a,
+.hasQuery__73f2a .horizontal__73f2a {
+  opacity: 0;
+}
+.hasQuery__73f2a .diag1__73f2a {
+  transform: translate3d(0, 12px, 0) rotate(40deg);
+}
+.hasQuery__73f2a .diag2__73f2a {
+  transform: translate3d(85px, -10px, 0) rotate(70deg);
+}
+.hasQuery__73f2a .searchMessage__73f2a {
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+}
+.hasQuery__73f2a .selectMessage__73f2a {
+  opacity: 1;
+  transform: translateZ(0);
+}
+@keyframes arrow-pulse__73f2a {
+  0%,
+  to {
+    transform: translateZ(0);
+  }
+  50% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+.quickswitcher_ac6cb0 {
+  align-items: stretch;
+  border-radius: 8px;
+  color: var(--text-default);
+  display: flex;
+  flex-direction: column;
+  padding: 12px 20px 0;
+  position: relative;
+}
+.quickswitcher_ac6cb0,
+.quickswitcher_ac6cb0 * {
+  box-sizing: border-box;
+}
+.input_ac6cb0 {
+  background-color: var(--input-background-default);
+  border: 1px solid var(--input-border-default);
+  border-radius: var(--radius-sm);
+  color: var(--text-default);
+  display: block;
+  flex: 0 0 auto;
+  font-size: 22px;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 12px;
+  position: relative;
+  z-index: 1;
+}
+.input_ac6cb0::-moz-placeholder {
+  color: var(--input-placeholder-text-default);
+}
+.input_ac6cb0::placeholder {
+  color: var(--input-placeholder-text-default);
+}
+.autocompleteQuerySymbol_ac6cb0 {
+  background-color: var(--background-base-lowest);
+  border-radius: 4px;
+  font-family: var(--font-code);
+  padding: 2px;
+}
+.scroller_ac6cb0 {
+  height: 236px;
+  margin-inline-end: -17px;
+  margin-top: 16px;
+  max-height: 236px;
+  z-index: 0;
+}
+.scroller_ac6cb0::-webkit-scrollbar-track {
+  background-color: var(--background-mod-normal) !important;
+}
+.protip_ac6cb0 {
+  padding: 10px 0 0;
+}
+.protip_ac6cb0.hasContent_ac6cb0 {
+  border-top: 1px solid var(--border-subtle);
+}
+.resultsArea_ac6cb0 {
+  height: 262px;
+}
+.emptyState_ac6cb0 {
+  background: no-repeat 50% 20px;
+  font-weight: var(--font-weight-medium);
+  padding-bottom: 20px;
+  padding-top: 150px;
+  text-align: center;
+}
+.emptyStateNote_ac6cb0 {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 20px;
+}
+.emptyStateCTA_ac6cb0 {
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 1;
+}
+.emptyStateCTA_ac6cb0:hover {
+  opacity: 1;
+}
+.miscContainer_ac6cb0 {
+  opacity: 0.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.enable-forced-colors .input_ac6cb0 {
+  border: 1px solid ButtonText;
+}
+.enable-forced-colors .input_ac6cb0:focus {
+  border-color: Highlight;
+}
+.enable-forced-colors .miscContainer_ac6cb0 {
+  opacity: 1;
+}
+.images-light .emptyState_ac6cb0 {
+  background-image: url(/assets/4df87e6155cbedff.svg);
+}
+.images-dark .emptyState_ac6cb0 {
+  background-image: url(/assets/05207174d5432737.svg);
+}
+
+/*# sourceMappingURL=599266.ab3918065004d411.css.map*/

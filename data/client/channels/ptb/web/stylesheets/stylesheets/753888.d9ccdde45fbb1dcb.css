@@ -1,0 +1,22 @@
+.container__8e51c {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.text__8e51c {
+  font-family: var(--font-code);
+}
+.bar__8e51c {
+  background-color: var(--background-mod-normal);
+  border-radius: 2px;
+  flex: 1;
+  height: 2px;
+}
+.progress__8e51c {
+  background-color: var(--interactive-text-active);
+  border-radius: inherit;
+  height: inherit;
+  min-width: 4px;
+}
+
+/*# sourceMappingURL=753888.d9ccdde45fbb1dcb.css.map*/
