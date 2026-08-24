@@ -1,0 +1,9 @@
+{
+  "full": {
+    "host_version": "1.0.1124",
+    "module_version": 1,
+    "package_sha256": "04d70296bca38012b79a8496b493dd7ed5cdeade8ff8fbab96743935cdbd996d",
+    "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1124/discord_sysimg/1/full.distro"
+  },
+  "deltas": []
+}
