@@ -437,121 +437,73 @@
     >We currently accept the following payment methods:</span
   >
 </p>
+<p><strong>Available globally:</strong></p>
 <ul>
   <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="eac411bd1f87392ab922317af9c976aa9"
+    class="wysiwyg-list-bold"
+    data-list-item-id="ebef4cc75423044c2ab3b56e307bdf124"
   >
-    <span style="font-weight: 400">A valid credit/debit card (Global)</span>
+    <strong>Credit or debit card</strong>
   </li>
   <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e23c72932d30ff0cca5dad1af03c9c3a5"
+    class="wysiwyg-list-bold"
+    data-list-item-id="e848300e9a4bc15664294311f84f14e0d"
   >
-    <span style="font-weight: 400">PayPal (Global)</span>
+    <strong>PayPal</strong>
   </li>
   <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="ecef7a3415424c19219ef15f803f07895"
+    class="wysiwyg-list-bold"
+    data-list-item-id="ef6858039fa7146b2ed39e152bc7cd352"
   >
-    <span style="font-weight: 400">Apple Pay</span>
+    <strong>Apple Pay</strong>
   </li>
   <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="ef4f81ba652580550e0b34be80bf44984"
+    class="wysiwyg-list-bold"
+    data-list-item-id="ef147c7ae948a86ae6a28631999995fc1"
   >
-    <span style="font-weight: 400">Google Pay</span>
+    <strong>Google Pay</strong>
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e9071720584abd81161194c1b7d61a978"
-  >
-    <span style="font-weight: 400">Venmo (United States)</span>
+</ul>
+<p><strong>Available by region:</strong></p>
+<ul>
+  <li data-list-item-id="e5f8946b6f0fcdbe11c290d5489b94dda">
+    <strong>Bancontact</strong> (Belgium)
   </li>
-  <li data-list-item-id="eaa35e1df5222d67100446935a0e98bdd">
-    Cash App Pay (United States)
+  <li data-list-item-id="e024c9282e9d79a73a06ef49768f4174d">
+    <strong>Cash App Pay</strong> (United States)
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e8bc8ebadb87cb04d7031929510a87749"
-  >
-    <span style="font-weight: 400">Paysafecard (Germany)</span>
+  <li data-list-item-id="e6f227153fb62e3e47cda9d035c3c2161">
+    <strong>EPS</strong> (Austria)
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="ed14e32576e7699252115a2e3d7dc1340"
-  >
-    <span style="font-weight: 400">Gcash (Philippines)</span>
+  <li data-list-item-id="ef0fb2a5fbad56f5cead588cd89619dc7">
+    <strong>GCash</strong> (Philippines)
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e4c6f17d96ee69325f4cb8a330ecc8965"
-  >
-    <span style="font-weight: 400">Grabpay (Malaysia)</span>
+  <li data-list-item-id="e63732b4d7e57bb468ebc3fe862a2759d">
+    <strong>GoPay</strong> (Indonesia)
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="efd0d206e8fbb0960623661067517b035"
-  >
-    <span style="font-weight: 400">MoMoWallet (Vietnam)</span>
+  <li data-list-item-id="e78f98798b07f730b76810ea4383e9fdf">
+    <strong>GrabPay</strong> (Malaysia)
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e9d01e75cfea15caa399bccbda17ffe07"
-  >
-    <span style="font-weight: 400">KakaoPay (South Korea)</span>
+  <li data-list-item-id="efd74081c73b85e4381af6f0210f98db8">
+    <strong>iDEAL</strong> (Netherlands)
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e84ecba63737e7d45aa6530bd957fb7de"
-  >
-    <span style="font-weight: 400">iDEAL (Netherlands)</span>
+  <li data-list-item-id="e33fa7eb85d8f97465bbcba9c53885f4f">
+    <strong>KakaoPay</strong> (South Korea)
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e13a2929f639991481cceda206fb2be0c"
-  >
-    <span style="font-weight: 400">Bancontact (Belgium)</span>
+  <li data-list-item-id="ed0a9f59d096aa60516e21d69e47987a8">
+    <strong>MoMo Wallet</strong> (Vietnam)
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="ede1206450809845804a3453d63e5c534"
-  >
-    <span style="font-weight: 400">EPS (Austria)</span>
+  <li data-list-item-id="edefa6198c092b60e716349eb1d639982">
+    <strong>Paysafecard</strong> (Germany)
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e163a515736e3bb73c295c9c63df67fe9"
-  >
-    <span style="font-weight: 400">Przelewy24 (Poland)</span>
+  <li data-list-item-id="e3bf22e5b6bdfe064b5844dfc577b721a">
+    <strong>Pix</strong> (Brazil)
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="ee787fe8ba9594c543eab58bdcbd1baf3"
-  >
-    <span style="font-weight: 400">GoPay (Indonesia)</span>
+  <li data-list-item-id="e76ae844bb401d71247831ba257bdc67b">
+    <strong>Przelewy24</strong> (Poland)
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e1be228aef18898441b20ff1a1f5574f5"
-  >
-    PIX (Brazil)
+  <li data-list-item-id="ed16b75e3231d530cd057a79df4368c33">
+    <strong>Venmo</strong> (United States)
   </li>
 </ul>
 <div class="warn-box">
