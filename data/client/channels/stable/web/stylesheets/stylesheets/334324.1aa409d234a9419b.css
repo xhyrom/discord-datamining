@@ -1,0 +1,122 @@
+.nav__77616 {
+  background: var(--background-base-lower);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-8);
+  width: 240px;
+}
+.navItem__77616 {
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: var(--space-8);
+  text-align: start;
+}
+.navContent__77616,
+.navItem__77616 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-12);
+  position: relative;
+  width: 100%;
+}
+.navContent__77616 {
+  z-index: 1;
+}
+.navItem__77616:hover {
+  background: var(--interactive-background-hover);
+  color: var(--interactive-text-active);
+}
+.navItem__77616:active,
+.navItemSelected__77616 {
+  background: var(--interactive-background-active);
+}
+.navItemSelected__77616 {
+  color: var(--interactive-text-active);
+}
+.navLabel__77616 {
+  flex: 1;
+  min-width: 0;
+}
+.navDecoration__77616 {
+  display: flex;
+  margin-inline-start: auto;
+}
+.nowrap__5db79 {
+  white-space: nowrap;
+}
+.icon_b75563 {
+  height: 1em;
+  margin-bottom: 0.2rem;
+  margin-inline-end: var(--space-4);
+  vertical-align: middle;
+  width: 1em;
+}
+.name_b75563 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.channelWithIcon_b75563 .iconMentionText_b75563 {
+  gap: 0 !important;
+}
+.icon_d2d51d {
+  display: inline-block;
+  margin-inline-end: 3px;
+  margin-bottom: 0.2rem;
+  vertical-align: middle;
+}
+.textIcon_d2d51d {
+  font-size: 0.5rem !important;
+  height: 1.05rem;
+  line-height: 1.05rem !important;
+  width: 1.05rem;
+}
+.imageIcon_d2d51d {
+  height: 1em;
+  width: 1em;
+}
+.name_d2d51d {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrapper_f61d60 {
+  background: var(--mention-background);
+  border-radius: 3px;
+  color: var(--mention-foreground);
+  font-weight: var(--font-weight-medium);
+  padding: 0 2px;
+  unicode-bidi: plaintext;
+}
+.theme-dark.low-contrast .wrapper_f61d60 {
+  background: var(--brand-05a);
+  color: var(--brand-300);
+}
+.interactive {
+  cursor: pointer;
+  transition:
+    background-color 50ms ease-out,
+    color 50ms ease-out;
+}
+.interactive:hover {
+  background-color: var(--brand-500);
+  color: var(--white);
+}
+.icon_c76ab6 {
+  height: 0.5em;
+  margin-inline: 4px 2px;
+  margin-bottom: 1px;
+  width: 0.5em;
+}
+.icon__3173f {
+  height: 0.95rem;
+  padding-inline-start: 4px;
+  position: relative;
+  top: 2px;
+  width: 0.95rem;
+}
+
+/*# sourceMappingURL=334324.1aa409d234a9419b.css.map*/
