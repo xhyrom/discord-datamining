@@ -1,0 +1,9 @@
+{
+  "full": {
+    "host_version": "1.0.1026",
+    "module_version": 1,
+    "package_sha256": "bf14415bdf81c9aa9895337f7161ef84630a7686c17666227942546b278cd294",
+    "url": "https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.1026/discord_sysimg/1/full.distro"
+  },
+  "deltas": []
+}
