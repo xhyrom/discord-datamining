@@ -2,7 +2,7 @@
   <p>
     <span class="wysiwyg-font-size-x-large"
       ><strong>What this article covers:</strong></span
-    ><br /> 
+    >
   </p>
   <ul>
     <li
@@ -308,8 +308,8 @@
   <p class="wysiwyg-text-align-center">
     <span style="color: #434343"
       ><span
-        data-darkreader-inline-color=""
         id="docs-internal-guid-e00d7002-7fff-5770-de49-fbf5f28ba804"
+        data-darkreader-inline-color=""
         ><strong
           ><img
             src="https://support.discord.com/hc/article_attachments/24509121414679"
@@ -375,11 +375,11 @@
 </h4>
 <div class="info-box">
   <span style="color: #434343"
-    ><span data-darkreader-inline-color=""><strong>Note</strong></span
     ><span data-darkreader-inline-color=""
-      >: If you have an active subscription, we require you to have at least one
-      saved payment method. If you’d like to cancel your subscription and remove
-      your cards on file, be sure to cancel your subscription first.</span
+      ><strong>Note</strong>: If you have an active subscription, we require you
+      to have at least one saved payment method. If you’d like to cancel your
+      subscription and remove your cards on file, be sure to cancel your
+      subscription first.</span
     ></span
   >
 </div>
@@ -418,11 +418,9 @@
   id="docs-internal-guid-b5360d60-7fff-6234-f2a9-8ec53be34ba4"
 >
   <span style="color: #666666"
-    ><span data-darkreader-inline-color="">You may see either the </span
-    ><span data-darkreader-inline-color=""><strong>“</strong></span
     ><span data-darkreader-inline-color=""
-      >Download extended purchase receipt" or "Download tax invoice” within this
-      section. </span
+      >You may see either the <strong>“</strong>Download extended purchase
+      receipt" or "Download tax invoice” within this section. </span
     ></span
   >
 </h4>
@@ -508,10 +506,10 @@
 </ul>
 <div class="warn-box">
   <span style="color: #434343"
-    ><span data-darkreader-inline-color=""><strong>Important</strong></span
     ><span data-darkreader-inline-color=""
-      >: When selecting your payment method, please note we are unable to
-      provide refunds for purchases made with Paysafecards.</span
+      ><strong>Important</strong>: When selecting your payment method, please
+      note we are unable to provide refunds for purchases made with
+      Paysafecards.</span
     ></span
   >
 </div>
@@ -573,9 +571,8 @@
 </h4>
 <div class="info-box">
   <span style="color: #434343"
-    ><span data-darkreader-inline-color=""><strong>Note</strong></span
     ><span data-darkreader-inline-color=""
-      >: All purchases made within Discord will be labeled
+      ><strong>Note</strong>: All purchases made within Discord will be labeled
       <strong>DISCORD*ItemName</strong> within credit/debit card statements
       depending on how your bank renders this and
       <strong>PAYPAL* DISCORD</strong> if completed through PayPal. If you would
