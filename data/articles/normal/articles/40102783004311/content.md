@@ -537,12 +537,12 @@
 <h2 id="h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Game Shop</h2>
 <p>
   <strong>Offer:</strong> From August 24 (11:00 AM PT) through September 3
-  (11:00 AM PT), eligible users who purchase a Nitro yearly subscription can
-  receive their first official Marvel Rivals in-game item free in the Marvel
-  Rivals Game Shop on Discord. Other subscription types are not eligible for
-  this offer. Receiving Nitro yearly subscription as a gift or purchasing Nitro
-  yearly subscription as a gift for another user does not qualify for this
-  offer.
+  (11:00 AM PT), eligible users who purchase a
+  <strong>Nitro yearly </strong>subscription can receive their first official
+  Marvel Rivals in-game item free in the Marvel Rivals Game Shop on Discord.
+  Other subscription types are not eligible for this offer. Receiving Nitro
+  yearly subscription as a gift or purchasing Nitro yearly subscription as a
+  gift for another user does not qualify for this offer.
 </p>
 <p>
   For more details around eligibility, terms and policy please see the<a
@@ -618,22 +618,24 @@
 </p>
 <p>This is the recommended linking method for Rust at this time.</p>
 <figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 3072/1920"
-    src="https://support.discord.com/hc/article_attachments/40317227226391"
-    alt="Rust-1.png"
-    width="3072"
-    height="1920"
-  />
+  <p>
+    <img
+      src="https://support.discord.com/hc/article_attachments/40317227226391"
+      alt="Rust-1.png"
+      width="3072"
+      height="1920"
+    />
+  </p>
 </figure>
 <figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 3072/1918"
-    src="https://support.discord.com/hc/article_attachments/40317227228183"
-    alt="Rust-2.png"
-    width="3072"
-    height="1918"
-  />
+  <p>
+    <img
+      src="https://support.discord.com/hc/article_attachments/40317227228183"
+      alt="Rust-2.png"
+      width="3072"
+      height="1918"
+    />
+  </p>
 </figure>
 <p><strong>Q: Which platforms can I redeem Rust Shop items on?</strong> </p>
 <p>A: Currently supported on PC via Steam.</p>
