@@ -1,0 +1,92 @@
+.container_f6d5bd {
+  container-type: inline-size;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.container_f6d5bd:hover {
+  background: var(--interactive-background-hover);
+}
+.custom-user-profile-theme.theme-light .container_f6d5bd:hover {
+  background: var(--opacity-white-36);
+}
+.container_f6d5bd:hover .gifTag_f6d5bd {
+  opacity: 0;
+}
+.imageContainer_f6d5bd {
+  container-type: inline-size;
+  position: relative;
+}
+.imageContainer_f6d5bd:hover .gifTag_f6d5bd {
+  opacity: 0;
+}
+.gifTag_f6d5bd {
+  inset-inline-start: var(--space-8);
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  top: var(--space-8);
+  z-index: 1;
+}
+@container (width < 56px) {
+  .gifTag_f6d5bd {
+    inset-inline-start: var(--space-4);
+    top: var(--space-4);
+  }
+}
+.image_f6d5bd {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.image_f6d5bd,
+.placeholder_f6d5bd {
+  height: 100%;
+  width: 100%;
+}
+.placeholder_f6d5bd {
+  background: var(--background-mod-muted);
+  container-type: inline-size;
+  display: flex;
+}
+.custom-user-profile-theme .placeholder_f6d5bd {
+  background: var(--background-mod-normal);
+}
+.custom-user-profile-theme.theme-light .placeholder_f6d5bd {
+  background: var(--opacity-white-24);
+}
+.editOverlay_f6d5bd,
+.uploading_f6d5bd {
+  align-items: center;
+  background: var(--background-scrim);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+}
+.editOverlay_f6d5bd {
+  opacity: var(--custom-edit-overlay-opacity, 0);
+  pointer-events: none;
+  transition: opacity 0.1s ease;
+}
+.container_f6d5bd:focus-within .editOverlay_f6d5bd,
+.container_f6d5bd:hover .editOverlay_f6d5bd {
+  opacity: 1;
+}
+.editOverlayIcon_f6d5bd {
+  transform: scale(calc(1 / var(--custom-edit-image-scale, 1)));
+}
+.full-motion .editOverlayIcon_f6d5bd {
+  transition: transform 0.1s ease;
+}
+.placeholderIcon_f6d5bd {
+  margin-top: var(--space-16);
+  margin-inline-start: var(--space-16);
+}
+@container (width < 56px) {
+  .placeholderIcon_f6d5bd {
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=598263.81be3fa9d488ec20.css.map*/
