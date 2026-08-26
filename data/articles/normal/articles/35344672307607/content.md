@@ -18,6 +18,16 @@
       <a href="#h_01K6GXYZY6Z3JTZ1EE09GHRS9V"
         ><strong>What are Widgets?</strong></a
       >
+      <ul>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e1448b065180235300ef3463ee05326b3"
+        >
+          <a href="#h_01M0XWPRWNB6T1KE631382F8E2"
+            ><strong>Game Stats Widgets</strong></a
+          >
+        </li>
+      </ul>
     </li>
     <li
       class="wysiwyg-list-bold"
@@ -117,7 +127,9 @@
   </li>
   <li data-list-item-id="eb0f8144fe94bef340a665ed13588747c">
     <strong>Game Stats: </strong>Showcase your stats, achievements, and progress
-    from supported games. Currently available for select games.
+    from supported games. Currently available for select See
+    <a href="#h_01M0XWPRWNB6T1KE631382F8E2">Game Stats Widgets</a> below for
+    details on supported games and how it works.
   </li>
 </ul>
 <p>
@@ -135,26 +147,46 @@
 <h4 class="wysiwyg-text-align-center" id="h_01K6GXYZYABDBDD7YQ0A8D8ESP">
   <span style="color: #666666">Widgets in Your Profile Board</span>
 </h4>
-<div class="exp-box">
-  <p>
-    <strong>Important:</strong>
-    <span style="color: #434343"
-      >We're testing the Game Stats Widget with Marvel Rivals and Wuthering
-      Waves. To use it, navigate to your Widgets and connect your game account.
-      Currently, not all users will have access.</span
-    >
-  </p>
-  <p class="wysiwyg-text-align-center">
-    <img
-      src="https://support.discord.com/hc/article_attachments/37098032322839"
-      width="624"
-      height="527"
-    />
-  </p>
-  <h4 class="wysiwyg-text-align-center" id="h_01KCPV545VB4Q1YWF6JT0AFMZ7">
-    Marvel Rivals stats
-  </h4>
-</div>
+<h2 id="h_01M0XWPRWNB6T1KE631382F8E2">Game Stats Widgets</h2>
+<p>
+  <strong>Game Stats Widgets</strong> are currently available for games such as
+  Marvel Rivals, Wuthering Waves, and Arknights: Endfield. 
+</p>
+<p>
+  Once you add the Game Stats Widget, you will be prompted to Account Link with
+  the game. This  may take you to a web page where you can select a character to
+  display. After you've linked your account, your Game Stats Widget updates
+  automatically with your in-game stats.For steps on adding a Game Stats Widget
+  to your profile, see
+  <a href="#h_01K6GXYZYAKWV5FTZ017YRKEMR"
+    >How to Add Widgets to Your Profile Board</a
+  >
+  below.
+</p>
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 72.93%">
+  <img
+    style="aspect-ratio: 1488/1328"
+    src="https://support.discord.com/hc/article_attachments/43014403727895"
+    alt="GDOPv2-addwidget-modal.png"
+    width="1488"
+    height="1328"
+  />
+</figure>
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 73.32%">
+  <img
+    style="aspect-ratio: 2048/1728"
+    src="https://support.discord.com/hc/article_attachments/43014403728663"
+    alt="Example of Game Stats Widgets (top) and a Marvel Rivals Game Stats Widget (bottom)"
+    width="2048"
+    height="1728"
+  />
+</figure>
+<h4 id="h_01M0XYKHA6351JPR61AJ6JQT49">
+  <span style="color: #666666"
+    >Example of Game Stats Widgets (top) and a Marvel Rivals Game Stats Widget
+    (bottom)</span
+  >
+</h4>
 <h1 id="h_01K6GXYZYAKWV5FTZ017YRKEMR">
   How to Add Widgets to Your Profile Board
 </h1>
