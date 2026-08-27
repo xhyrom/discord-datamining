@@ -535,24 +535,31 @@
   A: Game Shops are currently available on the Discord desktop app and browser. 
 </p>
 <h2 id="h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Game Shop</h2>
-<p>
-  <strong>Offer:</strong> From August 24 (11:00 AM PT) through September 3
-  (11:00 AM PT), eligible users who purchase a
-  <strong>Nitro yearly </strong>subscription can receive their first official
-  Marvel Rivals in-game item free in the Marvel Rivals Game Shop on Discord.
-  Other subscription types are not eligible for this offer. Receiving Nitro
-  yearly subscription as a gift or purchasing Nitro yearly subscription as a
-  gift for another user does not qualify for this offer.
-</p>
-<p>
-  For more details around eligibility, terms and policy please see the<a
-    href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
-  >
-    <span style="color: #0000ff"
-      >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
-    ></a
-  >.
-</p>
+<div class="mega-box">
+  <p>
+    Offer:
+    <strong
+      >From August 24 (11:00 AM PT) through September 3 (11:00 AM PT), eligible
+      users who purchase a</strong
+    >
+    Nitro yearly<strong>
+      subscription can receive their first official Marvel Rivals in-game item
+      free in the Marvel Rivals Game Shop on Discord. Other subscription types
+      are not eligible for this offer. Receiving Nitro yearly subscription as a
+      gift or purchasing Nitro yearly subscription as a gift for another user
+      does not qualify for this offer.</strong
+    >
+  </p>
+  <p>
+    For more details around eligibility, terms and policy please see the<a
+      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
+    >
+      <span style="color: #0000ff"
+        >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
+      ></a
+    >.
+  </p>
+</div>
 <div class="info-box">
   <strong>Note:</strong> Users who subscribe to Nitro yearly subscription on
   mobile are still eligible for this offer. However, they must sign in on the
@@ -579,22 +586,27 @@
   >.
 </p>
 <h2 id="h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Game Shop</h2>
-<p>
-  <strong>Offer:</strong> From August 24 (11:00 AM PT) through September 4
-  (11:00 AM PT), Nitro subscribers can receive 15% off select official Rust
-  in-game items in the Rust Game Shop on Discord. This discount applies to
-  self-purchases only and cannot be applied toward gifted items purchased for
-  other users.
-</p>
-<p>
-  For details around eligibility, terms and policy please see the<a
-    href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
-  >
-    <span style="color: #0000ff"
-      >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
-    ></a
-  >.
-</p>
+<div class="mega-box">
+  <p>
+    Offer:
+    <strong
+      >From August 24 (11:00 AM PT) through September 4 (11:00 AM PT), Nitro
+      subscribers can receive 15% off select official Rust in-game items in the
+      Rust Game Shop on Discord. This discount applies to self-purchases only
+      and cannot be applied toward gifted items purchased for other
+      users.</strong
+    >
+  </p>
+  <p>
+    For details around eligibility, terms and policy please see the<a
+      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
+    >
+      <span style="color: #0000ff"
+        >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
+      ></a
+    >.
+  </p>
+</div>
 <div class="info-box">
   <strong>Note:</strong> Users who subscribe to Nitro on mobile can still redeem
   this offer. However, they must sign in on the Discord desktop or web app to
@@ -618,24 +630,22 @@
 </p>
 <p>This is the recommended linking method for Rust at this time.</p>
 <figure class="wysiwyg-image">
-  <p>
-    <img
-      src="https://support.discord.com/hc/article_attachments/40317227226391"
-      alt="Rust-1.png"
-      width="3072"
-      height="1920"
-    />
-  </p>
+  <img
+    style="aspect-ratio: 3072/1920"
+    src="https://support.discord.com/hc/article_attachments/40317227226391"
+    alt="Rust-1.png"
+    width="3072"
+    height="1920"
+  />
 </figure>
 <figure class="wysiwyg-image">
-  <p>
-    <img
-      src="https://support.discord.com/hc/article_attachments/40317227228183"
-      alt="Rust-2.png"
-      width="3072"
-      height="1918"
-    />
-  </p>
+  <img
+    style="aspect-ratio: 3072/1918"
+    src="https://support.discord.com/hc/article_attachments/40317227228183"
+    alt="Rust-2.png"
+    width="3072"
+    height="1918"
+  />
 </figure>
 <p><strong>Q: Which platforms can I redeem Rust Shop items on?</strong> </p>
 <p>A: Currently supported on PC via Steam.</p>
