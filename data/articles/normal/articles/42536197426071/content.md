@@ -73,6 +73,14 @@
     <strong>Bookmarks:</strong> users can bookmark the messages they care about
     most and return to them later.
   </li>
+  <li data-list-item-id="ee173b0472408210ad0af51c669f3bc2b">
+    <strong>Personal widget:</strong> Nitro users can create a personal widget
+    that’s available on their profile. What’s added there is up to you!
+  </li>
+  <li data-list-item-id="ef530b4f72bd8556c07aa0ae16e275f1e">
+    <strong>Scheduled messages:</strong> set a time in the future to send your
+    messages in DMs and channels.
+  </li>
 </ul>
 <h1 id="h_01KZXWE7C2K0083HBA6ZGVDVB2">Frequently Asked Questions</h1>
 <p><strong>Q: Why don't I have access to this Beta?</strong></p>
