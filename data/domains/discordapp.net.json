@@ -5,13 +5,15 @@
     "images-ext-1",
     "images-ext-2",
     "dl",
+    "media-b2",
     "symbols",
     "dl2",
     "client-metrics",
     "dl-canary",
     "dl-development",
     "dl-ptb",
-    "dl-game-sdk"
+    "dl-game-sdk",
+    "media-b1"
   ],
-  "subdomain_count": 12
+  "subdomain_count": 14
 }
