@@ -30,7 +30,7 @@
     }
   ],
   "id": 8214127002,
-  "updated_at": "2026-08-19T13:18:49-04:00",
+  "updated_at": "2026-08-27T14:27:52-04:00",
   "requisition_id": "R-107050",
   "title": "Staff Software Engineer, Safety Processing",
   "company_name": "Discord",
@@ -48,16 +48,9 @@
   ],
   "offices": [
     {
-      "id": 4105189002,
-      "name": "Los Angeles Metro Area",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
       "location": null,
-      "child_ids": [],
-      "parent_id": null
-    },
-    {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
       "child_ids": [],
       "parent_id": null
     }
