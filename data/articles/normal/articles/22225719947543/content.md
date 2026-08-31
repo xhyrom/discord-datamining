@@ -297,6 +297,14 @@
                 >support article</a
               >.
             </p>
+            <p>
+              3. Perform a Specific Game Action: Link a Discord account to the
+              game and complete a specific in-game activity (e.g., playing 3
+              matches). The game developer provides Discord with the in-game
+              activity completion data for the linked account, and data
+              processing can delay Quest rewards up to 36 hours after completing
+              the gameplay action.
+            </p>
           </td>
         </tr>
         <tr>
