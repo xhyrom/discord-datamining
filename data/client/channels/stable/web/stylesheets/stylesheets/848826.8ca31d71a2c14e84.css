@@ -1,0 +1,114 @@
+.bar_a750ac {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: linear-gradient(
+      0deg,
+      hsl(var(--black-hsl) / 0.2) 0,
+      hsl(var(--black-hsl) / 0.2) 100%
+    ),
+    var(--background-mod-normal);
+  border: 1px solid var(--border-subtle);
+  border-radius: 62px;
+  bottom: var(--space-6);
+  box-sizing: border-box;
+  height: 36px;
+  inset-inline-start: 50%;
+  padding: var(--space-4) var(--space-8);
+  pointer-events: auto;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.bar_a750ac,
+.emojis_a750ac {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+}
+.emojis_a750ac {
+  justify-content: center;
+}
+.bar_a750ac.minimized_a750ac {
+  pointer-events: none;
+}
+.button_a750ac {
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: var(--space-4);
+}
+.button_a750ac:hover {
+  background-color: var(--background-mod-strong);
+}
+.divider_a750ac {
+  background-color: hsl(var(--white-hsl) / 0.1);
+  height: 100%;
+  width: 1px;
+}
+.messageCount_a750ac {
+  cursor: pointer;
+  margin-inline-start: var(--space-4);
+}
+.messageCount_a750ac > div:hover {
+  text-decoration: underline;
+}
+.timeline__76ea6 {
+  bottom: 66px;
+  inset-inline-end: var(--space-20);
+  inset-inline-start: var(--space-20);
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.timeline__76ea6,
+.timelineGradient__76ea6 {
+  height: 24px;
+  position: absolute;
+}
+.timelineGradient__76ea6 {
+  background: linear-gradient(
+    180deg,
+    rgba(7, 7, 9, 0),
+    rgba(7, 7, 9, 0.64) 70%,
+    rgba(7, 7, 9, 0.8)
+  );
+  bottom: 0;
+  inset-inline-end: 0;
+  inset-inline-start: 0;
+}
+.marker__76ea6 {
+  bottom: 0;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.marker__76ea6 .markerInner__76ea6 {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  pointer-events: auto;
+}
+.marker__76ea6 .emoji__76ea6 {
+  height: 100%;
+  width: 100%;
+}
+.marker__76ea6 .chatIcon__76ea6 {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+.markerMessage__76ea6 {
+  display: inline-block;
+  max-width: 140px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=848826.8ca31d71a2c14e84.css.map*/
