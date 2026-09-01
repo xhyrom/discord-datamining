@@ -1,0 +1,99 @@
+.mosaic_b97d98 {
+  --custom-clips-mosaic-height: 96px;
+  --custom-clips-mosaic-stack-width: 78px;
+  display: flex;
+  gap: var(--space-8);
+  height: var(--custom-clips-mosaic-height);
+}
+.tile_b97d98 {
+  border: 1px solid var(--border-muted);
+  overflow: hidden;
+  position: relative;
+}
+.tile_b97d98,
+.tileMedia_b97d98 {
+  border-radius: var(--radius-sm);
+}
+.feature_b97d98 {
+  flex: 1;
+  min-width: 0;
+}
+.stack_b97d98 {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: var(--space-8);
+  width: var(--custom-clips-mosaic-stack-width);
+}
+.equallySizedTile_b97d98 {
+  flex: none;
+  width: calc(50% - var(--space-8) / 2);
+}
+.stackTile_b97d98 {
+  flex: 1;
+  min-height: 0;
+}
+.featureOverlayContent_b97d98 {
+  padding-bottom: var(--space-4);
+  padding-inline-end: var(--space-4);
+  padding-inline-start: var(--space-8);
+}
+.featureFooter_b97d98 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+  min-width: 0;
+}
+.featureTitle_b97d98 {
+  min-width: 0;
+}
+.playButton_b97d98 {
+  align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: rgba(48, 48, 48, 0.4);
+  border-radius: 50%;
+  color: var(--text-overlay-light);
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.lg_b97d98 {
+  height: 24px;
+  width: 24px;
+}
+.sm_b97d98 {
+  height: 16px;
+  width: 16px;
+}
+.featurePlayButton_b97d98 {
+  margin-inline-start: auto;
+}
+.stackPlayButton_b97d98 {
+  inset-block-end: var(--space-4);
+  inset-inline-end: var(--space-4);
+  position: absolute;
+}
+.container_bf99ae {
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: var(--space-8);
+}
+.header_bf99ae {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+  justify-content: space-between;
+}
+.staticLink__75a07 {
+  color: var(--text-link);
+  -webkit-text-decoration: var(--link-decoration);
+  text-decoration: var(--link-decoration);
+  word-break: break-word;
+}
+
+/*# sourceMappingURL=269614.e52e7748e1826f25.css.map*/
