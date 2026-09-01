@@ -29,7 +29,7 @@
     }
   ],
   "id": 8700605002,
-  "updated_at": "2026-08-18T18:26:49-04:00",
+  "updated_at": "2026-09-01T15:02:18-04:00",
   "requisition_id": "R-107374",
   "title": "Staff Software Engineer, Experimentation Platform",
   "company_name": "Discord",
@@ -47,9 +47,9 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }
