@@ -1205,6 +1205,8 @@
   "badgeTile": "badgeTile_f18413",
   "isInteracting": "isInteracting_f18413",
   "badgeTileIcon": "badgeTileIcon_f18413",
+  "badgeTileIconHidden": "badgeTileIconHidden_f18413",
+  "unhideButton": "unhideButton_f18413",
   "backgroundSvg": "backgroundSvg_a88956",
   "overlay": "overlay_c0bea0",
   "tooltipDescription": "tooltipDescription_cd30d9",
