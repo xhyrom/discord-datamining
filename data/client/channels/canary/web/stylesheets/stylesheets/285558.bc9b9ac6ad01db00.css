@@ -1,0 +1,94 @@
+.orbWalletPrimaryCard__89f5f {
+  align-items: flex-start;
+  align-self: stretch;
+  background: var(--background-mod-muted);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-lg);
+  -moz-column-gap: var(--space-16);
+  column-gap: var(--space-16);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: var(--space-16);
+  padding-top: var(--space-16);
+  padding-inline: var(--space-16) var(--space-24);
+  position: relative;
+}
+.orbWalletPrimaryCardHeaderText__89f5f {
+  margin-bottom: var(--space-4);
+}
+.orbWalletPrimaryCardSubText__89f5f {
+  margin-bottom: var(--space-16);
+}
+.orbWalletPrimaryCardGraphic__89f5f {
+  align-items: center;
+  background: var(--background-base-low);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-shrink: 0;
+  height: 56px;
+  justify-content: center;
+  width: 56px;
+}
+.orbWalletPrimaryCardCloseButton__89f5f {
+  inset-inline-end: 0;
+  position: absolute;
+  top: 0;
+  --control-icon-only-background-hover: transparent;
+  --control-icon-only-border-hover: transparent;
+  --control-icon-only-icon-hover: var(--control-icon-only-icon-default);
+}
+.orbWalletNitroUpsellCard__89f5f {
+  background: radial-gradient(
+      125% 125% at 10% 120%,
+      color-mix(
+          in srgb,
+          var(--expressive-gradient-nitro-pink-start) 65%,
+          transparent
+        )
+        0,
+      color-mix(
+          in srgb,
+          var(--expressive-gradient-nitro-pink-start) 26%,
+          transparent
+        )
+        45%,
+      color-mix(
+          in srgb,
+          var(--expressive-gradient-nitro-pink-start) 8%,
+          transparent
+        )
+        78%,
+      transparent 100%
+    ),
+    radial-gradient(
+      115% 140% at 82% 115%,
+      color-mix(
+          in srgb,
+          var(--expressive-gradient-nitro-pink-end) 60%,
+          transparent
+        )
+        0,
+      color-mix(
+          in srgb,
+          var(--expressive-gradient-nitro-pink-end) 24%,
+          transparent
+        )
+        45%,
+      color-mix(
+          in srgb,
+          var(--expressive-gradient-nitro-pink-end) 7%,
+          transparent
+        )
+        80%,
+      transparent 100%
+    ),
+    var(--background-mod-muted);
+}
+.placeholderChallengesCard__583ca {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-16);
+}
+
+/*# sourceMappingURL=285558.bc9b9ac6ad01db00.css.map*/
