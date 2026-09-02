@@ -1,0 +1,52 @@
+.ring_ddf8f1 {
+  inset-inline-start: 50%;
+  position: absolute;
+  top: 50%;
+  translate: -50% -50%;
+}
+.lg_ddf8f1 {
+  height: 40px;
+  width: 40px;
+}
+.sm_ddf8f1 {
+  height: 16px;
+  width: 16px;
+}
+.indeterminate_ddf8f1 {
+  animation: spin_ddf8f1 1s linear infinite;
+}
+@keyframes spin_ddf8f1 {
+  to {
+    rotate: 1turn;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .indeterminate_ddf8f1 {
+    animation: none;
+  }
+}
+.media__4e703 {
+  background-color: var(--background-base-lowest);
+  overflow: hidden;
+  position: relative;
+}
+.frame__4e703,
+.media__4e703 {
+  height: 100%;
+  width: 100%;
+}
+.frame__4e703 {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.frameContain__4e703 {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.uploading__4e703 {
+  filter: blur(12px);
+  scale: 1.1;
+}
+
+/*# sourceMappingURL=104864.66cb731940ead36e.css.map*/
