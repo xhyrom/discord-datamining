@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8680047002](https://discord.com/jobs/8680047002)
 
-**Updated At:** Wed, 05 Aug 2026 21:50:08 GMT
+**Updated At:** Wed, 02 Sep 2026 16:36:22 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.As Discord's advertising business grows alongside that community, protecting user trust and brand safety is central to that growth story. You'll join the Product Policy team's Commercial Policy function, partnering closely with Legal, Revenue, Product, Engineering, and Enforcement teams to build the frameworks that let Discord's ads business scale responsibly. This is a foundational, high-visibility role: you'll independently own policy strategy for Brand Safety and Anti-Malware, working directly with advertisers, industry vendors, and internal product teams to keep the platform safe as it grows. This person will report to the Senior Manager, Commercial Policy.

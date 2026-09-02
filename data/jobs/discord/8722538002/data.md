@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8722538002](https://discord.com/jobs/8722538002)
 
-**Updated At:** Thu, 20 Aug 2026 17:43:23 GMT
+**Updated At:** Wed, 02 Sep 2026 16:36:22 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Safety ML team builds the machine learning systems that protect 200M+ users. The team's mission is to make Discord a place where people can build genuine friendships without exposure to harm, at a scale where manual review alone can never keep up.

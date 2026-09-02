@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8694818002](https://discord.com/jobs/8694818002)
 
-**Updated At:** Fri, 14 Aug 2026 21:28:33 GMT
+**Updated At:** Wed, 02 Sep 2026 16:36:22 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Internal Audit team exists to demonstrate effective risk management, process optimization, and adherence to relevant regulations — through a mix of independent assurance and advisory work that helps teams strengthen our overall control environment. This Technology Risk Audit Manager role owns the technical side of that mission — IT SOX/ITGC, system controls, and domains centered around consumer trust — that protect hundreds of millions of our users worldwide. You'll have the opportunity to help build our internal audit function from the ground up: shaping the frameworks and processes with an AI-native approach from day one, rather than bolting AI on after the fact. Your first few months will focus on learning Discord's financial-reporting systems landscape, understanding the company's GRC program structure, and evaluating AI-powered testing solutions — setting the foundation for a function that's built to scale as Discord grows toward enterprise readiness. This person will report to the Vice President of Internal Audit.

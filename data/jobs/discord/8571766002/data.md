@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8571766002](https://discord.com/jobs/8571766002)
 
-**Updated At:** Fri, 31 Jul 2026 17:17:05 GMT
+**Updated At:** Wed, 02 Sep 2026 16:36:22 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord only works at our scale if people feel safe showing up — and building the systems that make that possible is exactly what our Safety engineering org does.
@@ -56,7 +56,7 @@ education_optional
 - GDPR: No consent required for processing or retention.
 
 **Departments:**
-- Core Tech Engineering
+- Developers
 
 **Offices:**
 - San Francisco, CA in San Francisco, California, United States

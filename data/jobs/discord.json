@@ -32,7 +32,7 @@
         }
       ],
       "id": 8599937002,
-      "updated_at": "2026-08-06T20:05:30-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107329",
       "title": "Account Manager, Advertising Solutions",
       "company_name": "Discord",
@@ -93,7 +93,7 @@
         }
       ],
       "id": 8686353002,
-      "updated_at": "2026-08-21T18:04:11-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107367",
       "title": "Advertising Operations Manager",
       "company_name": "Discord",
@@ -161,7 +161,7 @@
         }
       ],
       "id": 8625545002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107338",
       "title": "Associate Product Counsel, Safety",
       "company_name": "Discord",
@@ -222,7 +222,7 @@
         }
       ],
       "id": 8680047002,
-      "updated_at": "2026-08-05T17:50:08-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107366",
       "title": "Commercial Policy Lead, Brand Safety & Malware",
       "company_name": "Discord",
@@ -283,7 +283,7 @@
         }
       ],
       "id": 8571766002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107298",
       "title": "Director of Engineering, Safety",
       "company_name": "Discord",
@@ -293,8 +293,8 @@
       "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord only works at our scale if people feel safe showing up — and building the systems that make that possible is exactly what our Safety engineering org does.&lt;/p&gt;\n&lt;p&gt;We classify content, route reports, make and audit enforcement decisions, and build the tools our operations partners use to handle everything automation doesn&#39;t. The work is a mix of deep backend infrastructure, AI-driven automation, and tight collaboration with the people who do nuanced review. As Discord grows into new surfaces like commerce and ads, the platform we build matters more.&lt;/p&gt;\n&lt;p&gt;We&#39;re hiring a Director of Engineering to lead Safety Infrastructure Engineering at Discord. The org is roughly 20 engineers across two teams with two EM direct reports. You&#39;ll report to the senior Director of Safety and work closely with T&amp;amp;S Operations, Safety ML, Safety Product, Legal, Policy, Security, and Core Tech.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll do&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead and grow two engineering teams covering our safety backend: the decision platform, classification systems, content understanding, intake and routing pipelines, and observability&lt;/li&gt;\n&lt;li&gt;Drive the automation roadmap with Safety ML. Decide where AI belongs in the loop, where humans still win, and hold the line on quality, latency, and cost&lt;/li&gt;\n&lt;li&gt;Own the queue routing and internal tooling our ops teams and vendor partners rely on, and partner with T&amp;amp;S Operations on golden sets, QA, appeals, and evals that turn operational signal into better systems&lt;/li&gt;\n&lt;li&gt;Consolidate fragmented systems onto infra and set the bar for engineering quality: on-call, incident response, technical review, and ownership&lt;/li&gt;\n&lt;li&gt;Hire, coach, and grow senior leaders&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Who you are&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;5+ years as a software engineer with a strong backend and distributed systems background, and 5+ years as an EM including 2+ years managing managers. Experience running 20+ engineers through multiple EMs&lt;/li&gt;\n&lt;li&gt;Strong infrastructure instincts. You can hold your own in architecture discussions on event-driven systems, service migrations, and platform design&lt;/li&gt;\n&lt;li&gt;Fluent in AI and ML systems enough to partner credibly with an ML org and make good calls about where automation belongs in a decision pipeline&lt;/li&gt;\n&lt;li&gt;Experienced working closely with ops or human-in-the-loop teams. You get the rhythm of QA, calibration, appeals, and ground-truth work, and build tools that respect the people using them&lt;/li&gt;\n&lt;li&gt;Excellent communication and cross-functional collaboration skills, with a history of partnering effectively across engineering, ML, data science, policy, legal, and product teams.&lt;/li&gt;\n&lt;li&gt;Practical about throughput, vendor management, and unit economics&lt;/li&gt;\n&lt;li&gt;An empathetic and experienced recruiter and coach. People you&#39;ve managed want to work with you again&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;A strong passion for Discord and/or gaming, and an appreciation for the communities we serve.&lt;/li&gt;\n&lt;li&gt;Trust &amp;amp; Safety, fraud, integrity, or abuse engineering at a consumer platform&lt;/li&gt;\n&lt;li&gt;Building ML platforms, MLOps, or automated decisioning at scale&lt;/li&gt;\n&lt;li&gt;Managing vendor-based ops (BPO, content review, third-party tools), or building internal tools where ops or review teams are the primary user&lt;/li&gt;\n&lt;li&gt;Payments, fraud, or commerce infra&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $400,000 to $450,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
       "departments": [
         {
-          "id": 4074059002,
-          "name": "Core Tech Engineering",
+          "id": 4107920002,
+          "name": "Developers",
           "child_ids": [],
           "parent_id": 4094266002
         }
@@ -344,7 +344,7 @@
         }
       ],
       "id": 8722538002,
-      "updated_at": "2026-08-20T13:43:23-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107381",
       "title": "Engineering Manager, Machine Learning (Safety)",
       "company_name": "Discord",
@@ -404,7 +404,7 @@
         }
       ],
       "id": 8537955002,
-      "updated_at": "2026-08-12T13:11:36-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107273",
       "title": "Engineering Manager, Notifications",
       "company_name": "Discord",
@@ -465,7 +465,7 @@
         }
       ],
       "id": 8649856002,
-      "updated_at": "2026-08-28T18:54:39-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107352",
       "title": "Engineering Manager, Platform Security",
       "company_name": "Discord",
@@ -526,7 +526,7 @@
         }
       ],
       "id": 8502342002,
-      "updated_at": "2026-08-12T13:10:34-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107250",
       "title": "Engineering Manager, Revenue",
       "company_name": "Discord",
@@ -587,7 +587,7 @@
         }
       ],
       "id": 8637688002,
-      "updated_at": "2026-08-20T10:18:56-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107345",
       "title": "Engineering Manager, Safety",
       "company_name": "Discord",
@@ -648,7 +648,7 @@
         }
       ],
       "id": 8675215002,
-      "updated_at": "2026-08-07T13:10:04-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107260",
       "title": "Manager, Safety Analytics",
       "company_name": "Discord",
@@ -658,8 +658,8 @@
       "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord exists to give people the power to create space to find belonging — to talk regularly with the people they care about and build genuine relationships with friends and communities close to home or around the world.&lt;/p&gt;\n&lt;p&gt;We&#39;re looking for an Analytics Manager to lead our Scaled Abuse Countermeasures and Research (SCAR) team — the team that safeguards Discord’s platform integrity. SCAR detects, analyzes, and disrupts high-volume threats through a combination of automated systems, deep research, and active incident response. This role reports to the Head of Safety Intelligence and Automation.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead and mentor a team of data analysts, scientists, and researchers who investigate active threats, identify platform abuse vectors, and uncover adversarial patterns.&lt;/li&gt;\n&lt;li&gt;Define a strategic roadmap that prioritizes and disrupts the highest impact abuse operations through structured research, rigorous analyses, and live experimentation.&lt;/li&gt;\n&lt;li&gt;Collaborate closely with the safety machine learning team to improve models by identifying the threat signals that translate into long-term, automated countermeasures.&lt;/li&gt;\n&lt;li&gt;Partner cross-functionally with Product, Engineering, Data Science, Policy, Legal, and Revenue, influencing safety-by-design decisions upstream of abuse.&lt;/li&gt;\n&lt;li&gt;Influence capacity toward high-impact infrastructure, such as automated rule engines, ML models, or agent moderation tools.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;2+ years of people management experience leading technical teams, including engineers, data scientists, analysts, applied researchers, or equivalent.&lt;/li&gt;\n&lt;li&gt;4+ years of experience working in a Trust &amp;amp; Safety domain, such as fraud, spam, scams, account compromise or other high-volume threats.&lt;/li&gt;\n&lt;li&gt;Fluency in SQL and/or Python for data investigation and pattern analysis.&lt;/li&gt;\n&lt;li&gt;Strong analytical problem-solving skills, with expertise in measurement and experimentation.&lt;/li&gt;\n&lt;li&gt;Demonstrated ability to drive automation adoption within operations or incident response workflows that increase the team&#39;s leverage and reduce manual work.&lt;/li&gt;\n&lt;li&gt;Excellent communication and cross-functional collaboration skills, with an ability to translate complex technical topics into clear takeaways for senior leadership.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience leveraging LLMs or AI agents for incident response, investigation automation, or signal triage.&lt;/li&gt;\n&lt;li&gt;Experience tackling scaled abuse at large social platforms, marketplaces, or other high-volume consumer products.&lt;/li&gt;\n&lt;li&gt;Threat intelligence research background, including understanding of internet infrastructure and the tools and techniques attackers use.&lt;/li&gt;\n&lt;li&gt;A strong passion for Discord and/or gaming, and an appreciation for the communities we serve.&lt;/li&gt;\n&lt;li&gt;A relevant degree in Computer Science, Machine Learning, Statistics, or a related quantitative field, or equivalent practical experience.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $220,000 to $275,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
       "departments": [
         {
-          "id": 4121690002,
-          "name": "Machine Learning",
+          "id": 4107920002,
+          "name": "Developers",
           "child_ids": [],
           "parent_id": 4094266002
         }
@@ -708,7 +708,7 @@
         }
       ],
       "id": 8627166002,
-      "updated_at": "2026-08-26T17:42:33-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107340",
       "title": "Oracle ERP Fusion Functional Analyst",
       "company_name": "Discord",
@@ -768,7 +768,7 @@
         }
       ],
       "id": 8627078002,
-      "updated_at": "2026-08-26T17:43:45-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107339",
       "title": "Oracle ERP Fusion Technical Developer",
       "company_name": "Discord",
@@ -829,7 +829,7 @@
         }
       ],
       "id": 8674411002,
-      "updated_at": "2026-08-03T17:27:39-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107362",
       "title": "Product Designer, Growth",
       "company_name": "Discord",
@@ -890,7 +890,7 @@
         }
       ],
       "id": 8635949002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107342",
       "title": "Program Manager, Detection & Enforcement, Youth Safety",
       "company_name": "Discord",
@@ -950,7 +950,7 @@
         }
       ],
       "id": 8703614002,
-      "updated_at": "2026-08-13T23:27:33-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107344",
       "title": "QA/DevOps Engineer",
       "company_name": "Discord",
@@ -1010,7 +1010,7 @@
         }
       ],
       "id": 8299493002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-102056",
       "title": "Senior Data Engineer, Ads",
       "company_name": "Discord",
@@ -1071,7 +1071,7 @@
         }
       ],
       "id": 8730666002,
-      "updated_at": "2026-08-20T13:03:45-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107383",
       "title": "Senior Data Scientist, Causal Inference + Experimentation",
       "company_name": "Discord",
@@ -1131,7 +1131,7 @@
         }
       ],
       "id": 8659978002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107361",
       "title": "Senior Full-Stack Software Engineer, Ads",
       "company_name": "Discord",
@@ -1191,7 +1191,7 @@
         }
       ],
       "id": 8597656002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107323",
       "title": "Senior Full-Stack Software Engineer, Game Records",
       "company_name": "Discord",
@@ -1251,7 +1251,7 @@
         }
       ],
       "id": 8642085002,
-      "updated_at": "2026-09-01T16:29:31-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107348",
       "title": "Senior Full-Stack Software Engineer, Growth ",
       "company_name": "Discord",
@@ -1311,7 +1311,7 @@
         }
       ],
       "id": 8604768002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107216",
       "title": "Senior Full-Stack Software Engineer, Social Commerce",
       "company_name": "Discord",
@@ -1372,7 +1372,7 @@
         }
       ],
       "id": 8731898002,
-      "updated_at": "2026-08-20T10:43:52-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107385",
       "title": "Senior Product Designer, Consumer Revenue",
       "company_name": "Discord",
@@ -1433,7 +1433,7 @@
         }
       ],
       "id": 8595014002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107322",
       "title": "Senior Product Designer, Developer Success",
       "company_name": "Discord",
@@ -1494,7 +1494,7 @@
         }
       ],
       "id": 8581126002,
-      "updated_at": "2026-08-14T09:45:54-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107310",
       "title": "Senior Product Manager, Safety",
       "company_name": "Discord",
@@ -1554,7 +1554,7 @@
         }
       ],
       "id": 8637188002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107343",
       "title": "Senior Salesforce Technical Lead",
       "company_name": "Discord",
@@ -1614,7 +1614,7 @@
         }
       ],
       "id": 8697883002,
-      "updated_at": "2026-08-12T12:44:44-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107372",
       "title": "Senior Software Engineer, Ads",
       "company_name": "Discord",
@@ -1675,7 +1675,7 @@
         }
       ],
       "id": 8656854002,
-      "updated_at": "2026-08-21T16:13:36-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107356",
       "title": "Senior Software Engineer, Application Security",
       "company_name": "Discord",
@@ -1736,7 +1736,7 @@
         }
       ],
       "id": 8460791002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107203",
       "title": "Senior Software Engineer, Consumer Revenue",
       "company_name": "Discord",
@@ -1797,7 +1797,7 @@
         }
       ],
       "id": 8694476002,
-      "updated_at": "2026-09-01T14:28:18-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107369",
       "title": "Senior Software Engineer, Data Platform",
       "company_name": "Discord",
@@ -1858,7 +1858,7 @@
         }
       ],
       "id": 8675277002,
-      "updated_at": "2026-08-06T16:53:15-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107364",
       "title": "Senior Software Engineer, Enterprise Platform",
       "company_name": "Discord",
@@ -1918,7 +1918,7 @@
         }
       ],
       "id": 8642087002,
-      "updated_at": "2026-09-01T16:29:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107348",
       "title": "Senior Software Engineer, Growth ",
       "company_name": "Discord",
@@ -1978,7 +1978,7 @@
         }
       ],
       "id": 8644780002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107274",
       "title": "Senior Software Engineer, Machine Learning (Ads)",
       "company_name": "Discord",
@@ -1988,8 +1988,8 @@
       "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We are looking for a Senior Software Engineer specializing in Machine Learning to join our Revenue ML team at Discord. This team partners with our revenue product groups, focusing on both consumer revenue and our emerging Ads initiative. This role will specifically contribute to our Ads ML efforts, helping to build and scale ML capabilities in areas such as ads measurement, targeting, and delivery ranking.&lt;/p&gt;\n&lt;p&gt;As part of this team, you will play a critical role in developing foundational ML models that enhance ad relevance, optimize performance, and drive revenue. This is a unique opportunity to work on an early-stage Ads ML platform and have a direct impact on the business&#39;s success. Our tech stack includes Python, ML frameworks like PyTorch and TensorFlow, large-scale data infrastructure, and real-time ad-serving technologies.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design, develop, and deploy machine learning models for ads targeting and ranking.&lt;/li&gt;\n&lt;li&gt;Develop sophisticated ML solutions such as identity graph to enhance ad targeting.&lt;/li&gt;\n&lt;li&gt;Build and optimize ad ranking models to serve the most effective ads based on campaign objectives (e.g., app installs, link click).&lt;/li&gt;\n&lt;li&gt;Improve ads targeting and ranking by leveraging both on-platform and off-platform signals.&lt;/li&gt;\n&lt;li&gt;Collaborate cross-functionally with product, engineering, and business teams to define and execute on the Ads ML roadmap.&lt;/li&gt;\n&lt;li&gt;Scale our ML infrastructure to support an increasing number of concurrent ad campaigns while ensuring low-latency decision-making.&lt;/li&gt;\n&lt;li&gt;Drive research and implementation of state-of-the-art ML techniques in the field of online advertising.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What You Should Have:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;5+ years of experience as a Machine Learning Engineer or Data Scientist.&lt;/li&gt;\n&lt;li&gt;3+ years of experience specifically in Ads ML (ads ranking, personalization, optimization, privacy-compliant user modeling, targeting, or measurement).&lt;/li&gt;\n&lt;li&gt;Strong proficiency in Python and familiarity with deep learning frameworks such as PyTorch or TensorFlow.&lt;/li&gt;\n&lt;li&gt;Experience with applied deep learning (e.g transformers, embedding models).&lt;/li&gt;\n&lt;li&gt;Proven track record of designing, implementing, and scaling ML-driven ad systems in real-world applications.&lt;/li&gt;\n&lt;li&gt;Experience working with real-time ML inference, A/B testing, and optimization frameworks.&lt;/li&gt;\n&lt;li&gt;Experience translating ML evaluation results and performance metrics into actionable product roadmap items.&lt;/li&gt;\n&lt;li&gt;Ability to connect business objectives to ML solutions, with the flexibility to shift focus toward the highest-impact problems as priorities evolve.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Skills:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Strong understanding of performance advertising and how ML impacts revenue and advertiser retention.&lt;/li&gt;\n&lt;li&gt;Knowledge of ad tech industry standards and ads ecosystem including targeting, retrieval, ranking, pacing, frequency, auction, etc.&lt;/li&gt;\n&lt;li&gt;Experience with large-scale recommendation systems.&lt;/li&gt;\n&lt;li&gt;Experience with large-scale data infrastructure and distributed computing&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $220,000 to $275,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
       "departments": [
         {
-          "id": 4121690002,
-          "name": "Machine Learning",
+          "id": 4074054002,
+          "name": "Product Engineering",
           "child_ids": [],
           "parent_id": 4094266002
         }
@@ -2039,7 +2039,7 @@
         }
       ],
       "id": 8545675002,
-      "updated_at": "2026-08-19T13:21:41-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107282",
       "title": "Senior Software Engineer, Safety Backend",
       "company_name": "Discord",
@@ -2100,7 +2100,7 @@
         }
       ],
       "id": 8757366002,
-      "updated_at": "2026-08-28T19:06:52-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107390",
       "title": "Senior Stock Administrator",
       "company_name": "Discord",
@@ -2161,7 +2161,7 @@
         }
       ],
       "id": 8396927002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107151",
       "title": "Software Engineer, Data Platform",
       "company_name": "Discord",
@@ -2222,7 +2222,7 @@
         }
       ],
       "id": 8609250002,
-      "updated_at": "2026-08-25T17:50:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107331",
       "title": "Software Engineer, Developer Success",
       "company_name": "Discord",
@@ -2283,7 +2283,7 @@
         }
       ],
       "id": 8545663002,
-      "updated_at": "2026-08-18T11:59:33-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107281",
       "title": "Software Engineer, Distributed Systems",
       "company_name": "Discord",
@@ -2344,7 +2344,7 @@
         }
       ],
       "id": 8642220002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107351",
       "title": "Software Engineer, Notifications",
       "company_name": "Discord",
@@ -2404,7 +2404,7 @@
         }
       ],
       "id": 8691572002,
-      "updated_at": "2026-08-17T18:09:58-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107368",
       "title": "Staff Data Engineer - Data Infrastructure",
       "company_name": "Discord",
@@ -2464,7 +2464,7 @@
         }
       ],
       "id": 8652853002,
-      "updated_at": "2026-08-17T15:25:09-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107354",
       "title": "Staff Data Scientist, Causal Inference & Experimentation",
       "company_name": "Discord",
@@ -2524,7 +2524,7 @@
         }
       ],
       "id": 8641295002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107346",
       "title": "Staff Product Marketing Manager, Developer and Publishers",
       "company_name": "Discord",
@@ -2585,7 +2585,7 @@
         }
       ],
       "id": 8460867002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107205",
       "title": "Staff Software Engineer - Consumer Revenue",
       "company_name": "Discord",
@@ -2646,7 +2646,7 @@
         }
       ],
       "id": 8498984002,
-      "updated_at": "2026-08-18T11:47:22-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107245",
       "title": "Staff Software Engineer, Data Platform",
       "company_name": "Discord",
@@ -2707,7 +2707,7 @@
         }
       ],
       "id": 8675185002,
-      "updated_at": "2026-08-04T13:30:55-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107363",
       "title": "Staff Software Engineer, Enterprise Platform",
       "company_name": "Discord",
@@ -2767,7 +2767,7 @@
         }
       ],
       "id": 8700605002,
-      "updated_at": "2026-09-01T15:02:18-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107374",
       "title": "Staff Software Engineer, Experimentation Platform",
       "company_name": "Discord",
@@ -2828,7 +2828,7 @@
         }
       ],
       "id": 8727410002,
-      "updated_at": "2026-08-26T16:58:25-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107382",
       "title": "Staff Software Engineer, Safety Experience",
       "company_name": "Discord",
@@ -2889,7 +2889,7 @@
         }
       ],
       "id": 8214127002,
-      "updated_at": "2026-08-27T14:27:52-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107050",
       "title": "Staff Software Engineer, Safety Processing",
       "company_name": "Discord",
@@ -2949,7 +2949,7 @@
         }
       ],
       "id": 8575166002,
-      "updated_at": "2026-07-31T13:17:05-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107301",
       "title": "Strategic Finance",
       "company_name": "Discord",
@@ -3009,7 +3009,7 @@
         }
       ],
       "id": 8694818002,
-      "updated_at": "2026-08-14T17:28:33-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107371",
       "title": "Technology Risk Audit Manager",
       "company_name": "Discord",
@@ -3070,7 +3070,7 @@
         }
       ],
       "id": 8652914002,
-      "updated_at": "2026-08-21T18:05:23-04:00",
+      "updated_at": "2026-09-02T12:36:22-04:00",
       "requisition_id": "R-107355",
       "title": "Threat Investigator ",
       "company_name": "Discord",

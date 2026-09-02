@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8675277002](https://discord.com/jobs/8675277002)
 
-**Updated At:** Thu, 06 Aug 2026 20:53:15 GMT
+**Updated At:** Wed, 02 Sep 2026 16:36:22 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Enterprise Technology org is building a software engineering discipline from the ground up, and this is one of its first engineering hires. The Enterprise Platform team is brand new. You will not be inheriting a mature system or a long backlog: you will own core domains of the platform that turns the internal systems enabling Discordians into self-service software.

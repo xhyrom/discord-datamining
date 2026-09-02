@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8686353002](https://discord.com/jobs/8686353002)
 
-**Updated At:** Fri, 21 Aug 2026 22:04:11 GMT
+**Updated At:** Wed, 02 Sep 2026 16:36:22 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Ad Operations and Sales Analytics support Discord's ads business, partnering with Sales, Product, Engineering, Data Science, and other cross-functional teams to deliver high-quality campaign executions, impactful data insights, and go-to-market strategy across our advertising products.

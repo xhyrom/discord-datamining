@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8730666002](https://discord.com/jobs/8730666002)
 
-**Updated At:** Thu, 20 Aug 2026 17:03:45 GMT
+**Updated At:** Wed, 02 Sep 2026 16:36:22 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord is looking for an experienced, proactive, and self-driven Senior Data Scientist to join our Experimentation Platform team.&amp;nbsp;The Experimentation Platform puts data at the heart of the company’s decision-making and growth by enabling rapid and accurate product experimentation. Discord runs hundreds of experiments on any given day, turning experiment results into business decisions. As a Data Scientist on this team, you will ensure that the statistical underpinnings of our experiments are sound, that experimenters are able to design experiments with high rigor, and that Discord makes the best business decisions on the basis of these experiments. We are a small and quickly growing team; you will be presented with significant leadership opportunities as we evolve.
