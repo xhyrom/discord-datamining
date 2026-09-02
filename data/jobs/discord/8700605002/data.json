@@ -12,7 +12,7 @@
   ],
   "internal_job_id": 6476715002,
   "location": {
-    "name": "San Francisco Bay Area"
+    "name": "Remote (U.S.)"
   },
   "metadata": [
     {
@@ -29,7 +29,7 @@
     }
   ],
   "id": 8700605002,
-  "updated_at": "2026-09-02T12:36:22-04:00",
+  "updated_at": "2026-09-02T15:24:09-04:00",
   "requisition_id": "R-107374",
   "title": "Staff Software Engineer, Experimentation Platform",
   "company_name": "Discord",
