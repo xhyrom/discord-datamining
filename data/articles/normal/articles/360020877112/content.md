@@ -56,6 +56,62 @@
 <h1 id="h_01JF85KBBN81QWNATTG0MMWX5F">
   How to Purchase a Nitro Gift in Discord
 </h1>
+<div class="mega-box">
+  <p>
+    <span style="color: #434343"
+      >Offer<strong>: Give a Gift, Get Orbs! From </strong>September 3
+      <strong>through</strong> September 14, 2026 (5PM PT)<strong
+        >, gift a
+      </strong></span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic#h_01JXDBAR0WH1RJAGD4N99QN13J"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong><span class="wysiwyg-underline">Nitro</span></strong></a
+    ><span style="color: #434343"
+      ><strong>
+        (Standard) monthly or yearly subscription to a friend and get 5,000 Orbs
+        added to your account.</strong
+      ></span
+    >
+  </p>
+  <p>
+    <span style="color: #434343"
+      ><strong
+        >You'll receive 5,000 Orbs on your account after your gift purchase is
+        complete. Look for the promotion banner before you buy to confirm you're
+        eligible. If you don't see the banner, you're not currently eligible for
+        this promotion. Not all users will be eligible.</strong
+      ></span
+    >
+  </p>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/42979572341783"
+      alt="Promotion banner in Select Plan window"
+      width="260"
+      height="565"
+    />
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01M0T6VRHTYM6GS87VKM5PYKPP">
+    <span style="color: #666666">Promotion banner in Select Plan window</span>
+  </h4>
+  <p>
+    <span style="color: #434343"
+      >Please note:
+      <strong
+        >This offer is only valid for Nitro (Standard) gifts and doesn't apply
+        to Nitro Basic. You can redeem this offer once per account. Orbs are
+        added automatically and don't require any extra steps.
+      </strong></span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong><span class="wysiwyg-underline">Terms apply</span></strong></a
+    ><span style="color: #434343"><strong>. </strong></span>
+  </p>
+</div>
 <p>
   Discord Nitro gifts can be purchased within direct messages (DMs), group
   chats, server channels, and the Nitro page.
@@ -192,9 +248,8 @@
 </p>
 <p id="docs-internal-guid-dec96d88-7fff-de15-e40f-acc4469a3ad7">
   <span style="color: #4f545c"
-    ><span data-darkreader-inline-color="">2. </span
     ><span data-darkreader-inline-color=""
-      >Once you have navigated to the page, you can purchase the following
+      >2. Once you have navigated to the page, you can purchase the following
       subscriptions: </span
     ></span
   >
@@ -246,10 +301,9 @@
     ><span data-darkreader-inline-color=""
       >3. Once you have completed your Amazon purchase, the gift card will be
       sent as a digital code to your email address associated with your Amazon
-      account. You can also access your digital code within </span
-    ><span data-darkreader-inline-color=""
-      ><strong>Your Games Library page</strong></span
-    ><span data-darkreader-inline-color=""> via Amazon. </span></span
+      account. You can also access your digital code within
+      <strong>Your Games Library page</strong> via Amazon. </span
+    ></span
   >
 </p>
 <p>
