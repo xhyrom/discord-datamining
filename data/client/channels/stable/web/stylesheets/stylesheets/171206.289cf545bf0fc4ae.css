@@ -1,0 +1,19 @@
+.orbIconSVG__85200 {
+  height: 18px;
+}
+.full-motion .loading__85200 {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: spin__85200;
+  animation-timing-function: linear;
+}
+@keyframes spin__85200 {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/*# sourceMappingURL=171206.289cf545bf0fc4ae.css.map*/
