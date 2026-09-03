@@ -535,37 +535,6 @@
   A: Game Shops are currently available on the Discord desktop app and browser. 
 </p>
 <h2 id="h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Game Shop</h2>
-<div class="mega-box">
-  <p>
-    Offer:
-    <strong
-      >From August 24 (11:00 AM PT) through September 3 (11:00 AM PT), eligible
-      users who purchase a</strong
-    >
-    Nitro yearly<strong>
-      subscription can receive their first official Marvel Rivals in-game item
-      free in the Marvel Rivals Game Shop on Discord. Other subscription types
-      are not eligible for this offer. Receiving Nitro yearly subscription as a
-      gift or purchasing Nitro yearly subscription as a gift for another user
-      does not qualify for this offer.</strong
-    >
-  </p>
-  <p>
-    For more details around eligibility, terms and policy please see the<a
-      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
-    >
-      <span style="color: #0000ff"
-        >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
-      ></a
-    >.
-  </p>
-</div>
-<div class="info-box">
-  <strong>Note:</strong> Users who subscribe to Nitro yearly subscription on
-  mobile are still eligible for this offer. However, they must sign in on the
-  Discord desktop or web app to claim their free item in the Marvel Rivals Game
-  Shop.
-</div>
 <p>
   <strong>Q: Which platforms can I redeem Marvel Rivals Shop items on?</strong> 
 </p>
