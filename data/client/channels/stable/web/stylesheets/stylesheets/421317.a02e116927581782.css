@@ -1,0 +1,35 @@
+.userMenuItem_d40c56 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+}
+.userMenuUsername_d40c56 {
+  flex-grow: 1;
+  max-width: 132px;
+}
+.userMenuText_d40c56 {
+  color: var(--text-strong);
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.userMenuDiscriminator_d40c56 {
+  color: var(--text-default);
+}
+.focused_d40c56 .userMenuUsername_d40c56 .userMenuText_d40c56 {
+  color: var(--text-strong);
+}
+.focused_d40c56 .userMenuUsername_d40c56 .userMenuDiscriminator_d40c56 {
+  color: var(--text-default);
+}
+.activeIcon_d40c56 {
+  flex-shrink: 0;
+}
+.container_caf802 {
+  align-items: center;
+  display: flex;
+  gap: 3px;
+}
+
+/*# sourceMappingURL=421317.a02e116927581782.css.map*/
