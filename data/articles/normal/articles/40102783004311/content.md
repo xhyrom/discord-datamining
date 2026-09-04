@@ -535,6 +535,72 @@
   A: Game Shops are currently available on the Discord desktop app and browser. 
 </p>
 <h2 id="h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Game Shop</h2>
+<div class="mega-box">
+  <p>
+    <strong>Starting </strong>September 4 at 11:00 AM PT,<strong>
+      eligible Nitro users can access two limited-time offers in the Marvel
+      Rivals Game Shop on Discord: </strong
+    >
+  </p>
+  <p>
+    Get your first in-game item with Nitro
+    <strong>(Sep 4, 11 AM PT – Sep 11, 11 AM PT) </strong>
+  </p>
+  <p>
+    <strong>From </strong>September 4<strong> through </strong>September 11 at
+    11:00 AM PT<strong
+      >, eligible users who purchase Nitro Monthly or Nitro Yearly can receive
+      their first official Marvel Rivals in-game item free with their Nitro
+      subscription, for items priced at USD 20 or less. Items priced above USD
+      20 are not eligible and remain available at their regular price. Receiving
+      Nitro as a gift or purchasing Nitro as a gift for another user does not
+      qualify for this offer. </strong
+    >
+  </p>
+  <p>
+    Get Discord Orbs on Marvel Rivals purchases
+    <strong>(Sep 4, 11 AM PT – Sep 18, 11 AM PT) </strong>
+  </p>
+  <p>
+    <strong>From </strong>September 4<strong> through </strong>September 18 at
+    11:00 AM PT<strong
+      >, Nitro Monthly and Nitro Yearly subscribers can get Discord Orbs when
+      purchasing Marvel Rivals in-game items in the Marvel Rivals Game Shop.
+      Orbs are received on self-purchases only, not gifted items, and the number
+      of Orbs received varies based on the purchase amount. </strong
+    >
+  </p>
+  <p>
+    For both offers:
+    <strong
+      >Users who subscribe to Nitro on mobile are eligible, but must use the
+      Discord desktop or web app to claim the first-item offer or make purchases
+      eligible to receive Orbs. For more information about Discord Orbs,
+      including how to use and redeem them, see the </strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ?utm_source=chatgpt.com"
+      ><strong
+        ><span class="wysiwyg-underline">Discord Orbs FAQ</span></strong
+      ></a
+    ><strong
+      >. For details on eligibility, limitations, terms, and policies for these
+      offers, see the </strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide?utm_source=chatgpt.com"
+      ><strong
+        ><span class="wysiwyg-underline"
+          >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
+        ></strong
+      ></a
+    ><strong>.</strong>
+  </p>
+</div>
+<div class="info-box">
+  <strong>Note:</strong> Users who subscribe to Nitro yearly subscription on
+  mobile are still eligible for this offer. However, they must sign in on the
+  Discord desktop or web app to claim their free item in the Marvel Rivals Game
+  Shop.
+</div>
 <p>
   <strong>Q: Which platforms can I redeem Marvel Rivals Shop items on?</strong> 
 </p>
@@ -555,32 +621,6 @@
   >.
 </p>
 <h2 id="h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Game Shop</h2>
-<div class="mega-box">
-  <p>
-    Offer:
-    <strong
-      >From August 24 (11:00 AM PT) through September 4 (11:00 AM PT), Nitro
-      subscribers can receive 15% off select official Rust in-game items in the
-      Rust Game Shop on Discord. This discount applies to self-purchases only
-      and cannot be applied toward gifted items purchased for other
-      users.</strong
-    >
-  </p>
-  <p>
-    For details around eligibility, terms and policy please see the<a
-      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
-    >
-      <span style="color: #0000ff"
-        >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
-      ></a
-    >.
-  </p>
-</div>
-<div class="info-box">
-  <strong>Note:</strong> Users who subscribe to Nitro on mobile can still redeem
-  this offer. However, they must sign in on the Discord desktop or web app to
-  redeem the discount in the Rust Game Shop.
-</div>
 <p>
   <strong
     >Q: I'm having trouble linking my Rust account to receive my item. What

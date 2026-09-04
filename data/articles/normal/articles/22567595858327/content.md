@@ -21,105 +21,92 @@
   >
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e27ee82748498caace4aab2f016dd105f">
     <a href="#h_01HVRY7E8SNEPQT1Q6H7T6ME4X">Share Nitro Eligibility</a>
     <ul>
-      <li>
+      <li data-list-item-id="e1b4d9c7853b9e3ac233f6e5481ef64a6">
         <a href="#h_01HVRY7E8SSPXDFV3PXM9CHTNE"
           >Nitro Members Sharing a Trial</a
         >
       </li>
-      <li>
+      <li data-list-item-id="ee6012bab340fc3f10e61bd6577ed04ba">
         <a href="#h_01HVRY7E8S1GMH2YZTN907BAY5">Friends Receiving a Trial</a>
       </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="e91ce1241a0e6a87a52cc8cd8531b5aff">
     <a href="#h_01HVRY7E8S7RJM0888YQMZCMGE"
       >How to Share a Nitro Trial with your Friends</a
     >
   </li>
-  <li>
+  <li data-list-item-id="ee003d54cd279be23888c9bc5000de481">
     <a href="#h_01HVRY7E8SC0MH4T9WR6EH6GJG"
       >Receiving a Nitro Trial from Someone</a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e842f13d83137732fd8ba90ca82d02c21">
         <a href="#h_01HVRY7E8S3S0XYVK5FMMT1C69"
           >How to Redeem your 2-week Trial</a
         >
       </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="eae61f062e7bae1def42f199fe280143e">
     <a href="#h_01JD8N8F28HG61QXY041GA63P7">Share Nitro On Mobile</a>
     <ul>
-      <li><a href="#h_01JD8NBH1SP6K15RZ3R0ZPWX1E">Sending Trials</a></li>
-      <li><a href="#h_01JD8NDRK1XPGAJ1GBAF9KKZTR">Receiving a Trial</a></li>
+      <li data-list-item-id="ef24d7f41dda72c92e2e0884ac4579c2d">
+        <a href="#h_01JD8NBH1SP6K15RZ3R0ZPWX1E">Sending Trials</a>
+      </li>
+      <li data-list-item-id="e9ee8e2b532f602b36f761ddcf41825ad">
+        <a href="#h_01JD8NDRK1XPGAJ1GBAF9KKZTR">Receiving a Trial</a>
+      </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="eec3200e22c433e3566d6d858943f52bd">
     <a href="#h_01HVRY7E8T0ADKKTYZWQXHSE7D">Frequently Asked Questions</a>
   </li>
 </ul>
-<h1 id="h_01HVRY7E8SNEPQT1Q6H7T6ME4X">SHARE NITRO ELIGIBILITY </h1>
+<h1 id="h_01HVRY7E8SNEPQT1Q6H7T6ME4X">Share Nitro Eligibility </h1>
 <h2 id="h_01HVRY7E8SSPXDFV3PXM9CHTNE">Nitro Members Sharing a Trial</h2>
 <p id="h_01HVRY7E8SZDVXYBMZ21XF14ER">
-  <span style="color: #434343"
-    >Only eligible Nitro members (either monthly or yearly), will be able to see
-    the Share Nitro trial option. </span
-  >
+  Only eligible Nitro members (either monthly or yearly), will be able to see
+  the Share Nitro trial option. 
 </p>
-<p>
-  <span style="color: #2e3338; background-color: #ffffff">You will </span
-  ><strong
-    ><span style="color: #2e3338; background-color: #ffffff">not</span></strong
-  ><span style="color: #2e3338; background-color: #ffffff">
-    be eligible to send a Nitro trial if: </span
-  >
-</p>
+<p>You will <strong>not</strong> be eligible to send a Nitro trial if: </p>
 <ul>
-  <li>
-    <span style="color: #2e3338; background-color: #ffffff"
-      >You are a Nitro Classic or Nitro Basic member.</span
-    >
+  <li
+    class="wysiwyg-list-color"
+    data-list-item-id="e1a534390f322e04b1fb767d8f3908e67"
+  >
+    You are a Nitro Classic or Nitro Basic member.
   </li>
-  <li>
-    <span style="color: #2e3338; background-color: #ffffff"
-      >You are on another trial or discounted offer plan.</span
-    >
+  <li
+    class="wysiwyg-list-color"
+    data-list-item-id="e7c9396451288abebbba5f0504461673a"
+  >
+    You are on another trial or discounted offer plan.
   </li>
 </ul>
 <h2 id="h_01HVRY7E8S1GMH2YZTN907BAY5">Friends Receiving a Trial</h2>
 <p id="docs-internal-guid-45ed59b1-7fff-7411-bed3-94b50d56a2d0">
-  <span style="color: #2e3338; background-color: #ffffff"
-    >Users who appear in the </span
-  ><strong
-    ><span style="color: #2e3338; background-color: #ffffff"
-      >Select Friends</span
-    ></strong
-  ><span style="color: #2e3338; background-color: #ffffff">
-    modal are eligible to receive a Nitro trial from you. </span
-  ><span style="color: #2e3338; background-color: #ffffff"><br /></span
-  ><span style="color: #2e3338; background-color: #ffffff"
-    >If a specific person does not appear in the </span
-  ><strong
-    ><span style="color: #2e3338; background-color: #ffffff"
-      >Select Friends
-    </span></strong
-  ><span style="color: #2e3338; background-color: #ffffff"
-    >modal, it means the person you’re trying to share a trial with is
-    ineligible to receive a trial. Being ineligible for a trial could occur for
-    several reasons, including having a Nitro membership in the last 30 days,
-    accepting another trial offer, and more. If you can’t find the specific
-    person you’re looking for, you’ll need to share the trial with another
-    person, or try again later.</span
-  >
+  Users who appear in the <strong>Select Friends</strong> modal are eligible to
+  receive a Nitro trial from you. 
+</p>
+<p id="docs-internal-guid-45ed59b1-7fff-7411-bed3-94b50d56a2d0">
+  If a specific person does not appear in the
+  <strong>Select Friends </strong>modal, it means the person you’re trying to
+  share a trial with is ineligible to receive a trial. Being ineligible for a
+  trial could occur for several reasons, including having a Nitro membership in
+  the last 30 days, accepting another trial offer, and more. 
+</p>
+<p id="docs-internal-guid-45ed59b1-7fff-7411-bed3-94b50d56a2d0">
+  If you can’t find the specific person you’re looking for, you’ll need to share
+  the trial with another person, or try again later.
 </p>
 <h1 id="h_01HVRY7E8S7RJM0888YQMZCMGE">
-  HOW TO SHARE A NITRO TRIAL WITH YOUR FRIENDS
+  How to Share a Nitro Trial with your Friends
 </h1>
-<p>As a Nitro member, follow these steps:</p>
+<p>As a Nitro member, follow these steps: </p>
 <p>
   1. On the desktop or browser app, press the
   <strong>Direct Messages</strong> button in the top left corner and then select
@@ -134,7 +121,7 @@
       height="402"
   /></span>
 </p>
-<h4 id="h_01JD8N0VEYWYDK6J0PHGMJQ2TQ" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JD8N0VEYWYDK6J0PHGMJQ2TQ">
   <span style="color: #666666"
     >Direct Messages Button and Nitro Tab on Desktop</span
   >
@@ -153,7 +140,7 @@
       height="536"
   /></span>
 </p>
-<h4 id="h_01JD8N17WTXXT8FYAJ9DAKQJ1W" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JD8N17WTXXT8FYAJ9DAKQJ1W">
   <span style="color: #666666"
     >Select Friends Button in Share Nitro Banner</span
   >
@@ -169,7 +156,7 @@
     height="428"
   />
 </p>
-<h4 id="h_01JD8N1M68C9N3QTE6G617YW3H" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JD8N1M68C9N3QTE6G617YW3H">
   <span style="color: #666666">Select Friends Window Selection </span>
 </h4>
 <p>
@@ -183,7 +170,7 @@
     height="443"
   />
 </p>
-<h4 id="h_01JD8N1Z6D5G40Z5HF0VZKQ77W" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JD8N1Z6D5G40Z5HF0VZKQ77W">
   <span style="color: #666666">Shared Trial Confirmation</span>
 </h4>
 <div class="info-box">
@@ -191,7 +178,7 @@
   coming in the future. A trial will expire if not redeemed by the recipient in
   10 days, but you’ll get the trial back. 
 </div>
-<h1 id="h_01HVRY7E8SC0MH4T9WR6EH6GJG">RECEIVING A NITRO TRIAL FROM SOMEONE</h1>
+<h1 id="h_01HVRY7E8SC0MH4T9WR6EH6GJG">Receiving a Nitro Trial from Someone</h1>
 <p>
   If someone generously shares a Nitro trial with you, you’ll see the trial in
   the form of an embedded message in your DMs with the sharer. You’ll have up to
@@ -200,11 +187,11 @@
 <h2 id="h_01HVRY7E8S3S0XYVK5FMMT1C69">How to Redeem your 2-week Trial</h2>
 <p>1. Make sure the offer is authentic</p>
 <ul>
-  <li>
+  <li data-list-item-id="e1466cde1c6838b947d05e98ba2dec460">
     Confirm the sharer is a Nitro member - only Nitro members can share trials
     with you.
   </li>
-  <li>
+  <li data-list-item-id="ec49aff085ba8415fc3346a55009792e6">
     Confirm the trial offer from the sharer looks like this in your DMs with
     them:
   </li>
@@ -216,7 +203,7 @@
     height="147"
   />
 </p>
-<h4 id="h_01JD8N5YZD4E784VAQ5MJHTRZ7" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JD8N5YZD4E784VAQ5MJHTRZ7">
   <span style="color: #666666">Example of Nitro 2-week Trial in DM </span>
 </h4>
 <div class="warn-box">
@@ -239,7 +226,7 @@
     height="425"
   />
 </p>
-<h4 id="h_01JD8N7ZN0AK5336PP3TSD0Y72" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JD8N7ZN0AK5336PP3TSD0Y72">
   <span style="color: #666666"
     >Example of Selecting a Payment Method for 2-week Trial</span
   >
@@ -269,7 +256,7 @@
 <h1 id="h_01JD8N8F28HG61QXY041GA63P7">Share Nitro On Mobile</h1>
 <p>
   Some Nitro members will be able to send and receive trials on their iOS and
-  Android devices. <br />Please note that on iOS devices, if your account has
+  Android devices. <br />Please note that on iOS devices, if your account has
   never had a subscription on Discord through the App Store in the past, you
   will need to redeem your trial on desktop instead.
 </p>
@@ -290,14 +277,13 @@
     width="254"
     height="548"
   />
-   
-  <img
+    <img
     src="https://support.discord.com/hc/article_attachments/27981921037719"
     width="253"
     height="548"
   />
 </p>
-<h4 id="h_01JD8NCDEG314CBS5HJMNP2N5Z" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JD8NCDEG314CBS5HJMNP2N5Z">
   <span style="color: #666666"
     >Profile Icon (Left) and Manage Nitro Tab (Right) in User Settings on
     Mobile</span
@@ -314,14 +300,13 @@
     width="242"
     height="525"
   />
-   
-  <img
+    <img
     src="https://support.discord.com/hc/article_attachments/27981921039383"
     width="242"
     height="524"
   />
 </p>
-<h4 id="h_01JD8ND92ZNY6MBXVSFCYHNC6F" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JD8ND92ZNY6MBXVSFCYHNC6F">
   <span style="color: #666666"
     >Select Friends Button (Left) and Select Friends Menu (Right)</span
   >
@@ -335,7 +320,7 @@
     height="511"
   />
 </p>
-<h4 id="h_01JD8NE8991GCAT63WSDB2Q9T0" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JD8NE8991GCAT63WSDB2Q9T0">
   <span style="color: #666666">Example of 2-week Trial in DMs on Mobile</span>
 </h4>
 <p>
@@ -346,7 +331,7 @@
   Then, select the plan you would like to try. This plan will begin once your
   2-week trial ends.
 </p>
-<h1 id="h_01HVRY7E8T0ADKKTYZWQXHSE7D">FREQUENTLY ASKED QUESTIONS</h1>
+<h1 id="h_01HVRY7E8T0ADKKTYZWQXHSE7D">Frequently Asked Questions</h1>
 <p><strong>Q: As a Nitro member, who can I share Nitro trials with?</strong></p>
 <p>
   A: As a Nitro member, you can share Nitro trials with any eligible friend. If
@@ -365,8 +350,11 @@
   For those who have access, you must be a paying Nitro member for at least 5
   days to see the <strong>Share Nitro banner</strong> and share trials with
   others. If you’re a new Nitro member, you’ll be able to share Nitro trials
-  with others after 5 days.<br />Additionally, you may not see it due to the
-  eligibility criteria for Nitro members. 
+  with others after 5 days.
+</p>
+<p>
+  Additionally, you may not see it due to the eligibility criteria for Nitro
+  members. 
 </p>
 <p><strong>Q: What happens after I share all 3 of my trials? </strong></p>
 <p>
@@ -400,9 +388,8 @@
   <strong>User Settings &gt; Subscriptions &gt; Cancel</strong>.
 </p>
 <p>
-  <strong>Q: What devices is this available on?</strong
-  ><strong><br /></strong>A: Share Nitro is only available on the desktop app
-  and browser. 
+  <strong>Q: What devices is this available on?</strong><br />A: Share Nitro is
+  only available on the desktop app and browser. 
 </p>
 <p><strong>Q: Is there a way to revoke or decline a shared trial? </strong></p>
 <p>
@@ -465,7 +452,7 @@
     height="378"
   />
 </p>
-<h4 id="h_01J5RAK32HF8ZM37G6DZDKF7WP" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01J5RAK32HF8ZM37G6DZDKF7WP">
   Line 1: A friend pass has been shared, but not redeemed.<br />Line 2: A friend
   pass has been successfully redeemed.<br />Line 3: Two friend passes have been
   redeemed, and one friend has signed up for Nitro.
