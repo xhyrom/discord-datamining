@@ -39,6 +39,7 @@
     "zendesk3",
     "zendesk4",
     "o20.ptr1353",
+    "support-ads",
     "www",
     "o18.ptr2300",
     "ads",
@@ -76,5 +77,5 @@
     "o13.ptr7216",
     "snowsgiving-tale-2022-zh-cn"
   ],
-  "subdomain_count": 75
+  "subdomain_count": 76
 }
