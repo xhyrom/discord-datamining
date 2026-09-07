@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Software Engineer, Safety Backend
+## Senior Software Engineer, Safety Processing
 
 **Location:** San Francisco Bay Area or Los Angeles Area
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8545675002](https://discord.com/jobs/8545675002)
 
-**Updated At:** Wed, 02 Sep 2026 16:36:22 GMT
+**Updated At:** Mon, 07 Sep 2026 00:04:01 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Keeping our platform safe requires infrastructure that is accurate, scalable, and fair and the engineering challenges that come with that are genuinely hard. Our Safety Engineering teams build and operate the systems that power content moderation, enforcement, and safety signal processing at scale.
