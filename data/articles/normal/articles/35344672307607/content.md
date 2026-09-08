@@ -156,7 +156,7 @@
   Once you add the Game Stats Widget, you will be prompted to Account Link with
   the game. This  may take you to a web page where you can select a character to
   display. After you've linked your account, your Game Stats Widget updates
-  automatically with your in-game stats.For steps on adding a Game Stats Widget
+  automatically with your in-game stats. For steps on adding a Game Stats Widget
   to your profile, see
   <a href="#h_01K6GXYZYAKWV5FTZ017YRKEMR"
     >How to Add Widgets to Your Profile Board</a
