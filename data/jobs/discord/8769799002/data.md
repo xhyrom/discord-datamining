@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8769799002](https://discord.com/jobs/8769799002)
 
-**Updated At:** Tue, 08 Sep 2026 19:19:28 GMT
+**Updated At:** Wed, 09 Sep 2026 20:22:54 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.More broadly, Discord is about empowering people to find belonging in all kinds of communities, and those people trust us to keep their communications safe. Our Platform Security Engineering team protects the systems we use to create Discord, making the "secure way" the "easy way."
