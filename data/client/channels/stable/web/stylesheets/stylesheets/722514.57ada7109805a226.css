@@ -1,0 +1,401 @@
+.formContent__30f2d {
+  width: 100%;
+}
+.termsPhrase__30f2d {
+  margin-top: 8px;
+}
+.centerText_a3fac7 {
+  text-align: center;
+  white-space: pre-wrap;
+}
+.header_a3fac7 {
+  margin-bottom: 8px;
+}
+.forcedHeight_a3fac7 {
+  height: 400px;
+}
+.guildRow_a3fac7 {
+  align-items: center;
+  background-color: var(--background-mod-normal);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding-block: 12px;
+  padding-inline: 12px 16px;
+  position: relative;
+}
+.clickableGuildInfoRow_a3fac7 {
+  cursor: pointer;
+}
+.clickableGuildInfoRow_a3fac7:hover {
+  background-color: var(--interactive-background-hover);
+}
+.guildIcon_a3fac7 {
+  background-color: var(--background-base-low);
+}
+.guildName_a3fac7 {
+  flex: 1;
+  margin-inline-start: 16px;
+}
+.noResultsContainer_a3fac7 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  min-height: 400px;
+  padding: 16px 24px 0;
+}
+.noResultsContent_a3fac7 {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.textButton__7a01b {
+  background: initial;
+  box-sizing: border-box;
+  color: inherit;
+  display: inline-flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: medium;
+  font-weight: 400;
+  gap: var(--space-4);
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  text-align: start;
+  text-decoration: none;
+  width: -moz-min-content;
+  width: min-content;
+}
+.textButton__7a01b:disabled {
+  opacity: 0.5;
+}
+.textButton__7a01b:hover:not(:disabled) .text__7a01b,
+:where(.decorate-links) .text__7a01b {
+  text-decoration: underline;
+}
+.primary__7a01b {
+  color: var(--text-brand);
+}
+.secondary__7a01b {
+  color: var(--text-strong);
+}
+.always-white__7a01b {
+  color: var(--white);
+}
+.critical__7a01b {
+  color: var(--text-feedback-critical);
+}
+.highlight-mana-buttons .button__7a01b {
+  box-shadow: 0 0 2px 2px var(--opacity-white-60);
+}
+.list__75b62 {
+  list-style: decimal outside;
+  padding-inline-start: 1em;
+}
+.list__75b62 > li::marker {
+  color: var(--text-muted);
+}
+.list__75b62 > li:first-child {
+  margin-bottom: var(--space-8);
+}
+.recordContainer__75b62 {
+  margin-top: var(--space-8);
+}
+.spinner__1d6c7 {
+  margin: 32px;
+}
+.gridContainer_dcb619 {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+}
+.grid_dcb619 {
+  display: grid;
+  gap: 24px;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(var(--custom-cols, 1), minmax(0, 1fr));
+  width: 100%;
+  --custom-product-card-min-width: 0;
+}
+.pagination_dcb619 {
+  grid-column: 1/-1;
+  margin: 12px 0;
+}
+.pageNumbers_dcb619 {
+  flex: 0 1 auto;
+  margin: 0 12px;
+  min-width: 0;
+}
+.page_dcb619 {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+.active_dcb619 {
+  background: var(--brand-500);
+}
+.columns1_dcb619 {
+  --custom-cols: 1;
+}
+.columns2_dcb619 {
+  --custom-cols: 2;
+}
+.columns3_dcb619 {
+  --custom-cols: 3;
+}
+.columns4_dcb619 {
+  --custom-cols: 4;
+}
+.columns5_dcb619 {
+  --custom-cols: 5;
+}
+.columns6_dcb619 {
+  --custom-cols: 6;
+}
+@container (max-width: 1152px) {
+  .columns6_dcb619 {
+    --custom-cols: 5;
+  }
+}
+@container (max-width: 1024px) {
+  .columns5_dcb619,
+  .columns6_dcb619 {
+    --custom-cols: 4;
+  }
+}
+@container (max-width: 896px) {
+  .columns4_dcb619,
+  .columns5_dcb619,
+  .columns6_dcb619 {
+    --custom-cols: 3;
+  }
+}
+@container (max-width: 768px) {
+  .columns3_dcb619,
+  .columns4_dcb619,
+  .columns5_dcb619,
+  .columns6_dcb619 {
+    --custom-cols: 2;
+  }
+}
+@container (max-width: 480px) {
+  .columns2_dcb619,
+  .columns3_dcb619,
+  .columns4_dcb619,
+  .columns5_dcb619,
+  .columns6_dcb619 {
+    --custom-cols: 1;
+  }
+}
+.gridItem_dcb619 {
+  display: block;
+  grid-column: span min(var(--custom-col-span, 1), var(--custom-cols, 1));
+  grid-row: span min(var(--custom-row-span, 1), var(--custom-cols, 1));
+}
+.gridItemColumns1_dcb619 {
+  --custom-col-span: 1;
+}
+.gridItemColumns2_dcb619 {
+  --custom-col-span: 2;
+}
+.gridItemColumns3_dcb619 {
+  --custom-col-span: 3;
+}
+.gridItemColumns4_dcb619 {
+  --custom-col-span: 4;
+}
+.gridItemColumns5_dcb619 {
+  --custom-col-span: 5;
+}
+.gridItemColumns6_dcb619 {
+  --custom-col-span: 6;
+}
+.gridItemRows1_dcb619 {
+  --custom-row-span: 1;
+}
+.gridItemRows2_dcb619 {
+  --custom-row-span: 2;
+}
+.gridItemRows3_dcb619 {
+  --custom-row-span: 3;
+}
+.gridItemRows4_dcb619 {
+  --custom-row-span: 4;
+}
+.gridItemRows5_dcb619 {
+  --custom-row-span: 5;
+}
+.gridItemRows6_dcb619 {
+  --custom-row-span: 6;
+}
+.buttonContainer__3e6b4 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  margin-top: var(--space-32);
+}
+.buttonInner__3e6b4 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.body__3e6b4 {
+  padding-block: var(--space-16) var(--space-32);
+  padding-inline: var(--space-32) var(--space-32);
+}
+.textContainer__3e6b4 {
+  margin-bottom: var(--space-16);
+  text-align: center;
+}
+.description__3e6b4 {
+  margin: var(--space-4) auto 0;
+  max-width: 80%;
+}
+.heroImage__3e6b4 {
+  height: 140px;
+  margin: 44px auto 24px;
+}
+.safetyTips__3e6b4 {
+  margin-top: var(--space-16);
+}
+.tabs_b292bc {
+  flex-direction: column;
+}
+.strip_b292bc,
+.tabs_b292bc {
+  display: flex;
+  width: 100%;
+}
+.strip_b292bc {
+  align-items: center;
+  position: relative;
+}
+.rail_b292bc {
+  background-color: var(--border-subtle);
+  border-radius: var(--radius-round);
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.items_b292bc {
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+  gap: var(--space-32);
+  margin: calc(var(--space-8) * -1) calc(var(--space-8) * -1) 0;
+  overflow-x: auto;
+  padding: var(--space-8) var(--space-8) 0;
+  scrollbar-width: none;
+  z-index: 1;
+}
+.items_b292bc::-webkit-scrollbar {
+  display: none;
+}
+.item_b292bc {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  border: 0;
+  color: var(--text-subtle);
+  cursor: pointer;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  outline: 0;
+  padding: 0 0 var(--space-16);
+  position: relative;
+  white-space: nowrap;
+}
+.item_b292bc[data-selected="true"] {
+  color: var(--text-strong);
+}
+.item_b292bc[data-disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.item_b292bc[data-focus-visible] .contents_b292bc {
+  border-radius: var(--radius-xs);
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+.strip_b292bc[data-full-width="true"] .item_b292bc {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.contents_b292bc {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+  justify-content: center;
+}
+.indicator_b292bc {
+  background-color: var(--text-brand);
+  border-radius: var(--radius-round);
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition-duration: var(--motion-spring-subtle-duration);
+  transition-property: translate, width;
+  transition-timing-function: var(--motion-spring-subtle);
+  width: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .indicator_b292bc {
+    transition: none;
+  }
+}
+.panels_b292bc {
+  position: relative;
+}
+.panels_b292bc[data-animation="fade"] {
+  height: var(--tab-panel-height);
+  overflow: clip;
+  transition: height 0.4s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .panels_b292bc[data-animation="fade"] {
+    transition: none;
+  }
+}
+.panel_b292bc {
+  outline: 0;
+}
+.panel_b292bc[data-focus-visible] {
+  border-radius: var(--radius-sm);
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+.panel_b292bc[data-animation="fade"] {
+  transition: opacity 0.4s;
+}
+.panel_b292bc[data-animation="fade"][data-entering],
+.panel_b292bc[data-animation="fade"][data-exiting] {
+  opacity: 0;
+}
+.panel_b292bc[data-animation="fade"][data-exiting] {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .panel_b292bc[data-animation="fade"] {
+    transition: none;
+  }
+}
+
+/*# sourceMappingURL=722514.57ada7109805a226.css.map*/

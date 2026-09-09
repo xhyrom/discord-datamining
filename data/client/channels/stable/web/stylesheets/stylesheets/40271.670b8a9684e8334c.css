@@ -1,0 +1,193 @@
+.horizontalContainer__84ece {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.cursorPointer__84ece {
+  cursor: pointer;
+}
+.orbChallengeCenterContent__84ece {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-inline-start: var(--space-8);
+  row-gap: 2px;
+}
+.orbChallengeItem__84ece {
+  align-items: center;
+  align-self: stretch;
+  border-radius: var(--radius-md);
+  -moz-column-gap: var(--space-12);
+  column-gap: var(--space-12);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline-start: calc(var(--space-16) * -1);
+  padding: 8px;
+  padding-inline: var(--space-16);
+  width: 100%;
+}
+.orbChallengeItemHovered__84ece {
+  background: var(--background-mod-normal);
+  background-color: var(--background-mod-normal);
+  border-radius: 0;
+}
+.orbChallengeItemActionIcon__84ece {
+  cursor: pointer;
+}
+.orbChallengeTile__84ece {
+  border-radius: var(--radius-md);
+  flex: 0 0 auto;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 40px;
+}
+.orbChallengeTileWithProgressRing__84ece {
+  align-items: center;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  height: 28px;
+  justify-content: center;
+  overflow: hidden;
+  width: 28px;
+}
+.orbChallengeGlyph__84ece {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.orbChallengeRing__84ece {
+  align-items: center;
+  align-self: center;
+  aspect-ratio: 1;
+  border: 3px solid var(--status-positive);
+  border-radius: 50%;
+  box-shadow:
+    0 0 8px rgba(34, 255, 132, 0.33),
+    0 0 3px rgba(93, 255, 164, 0.42);
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  height: 40px;
+  justify-content: center;
+  padding: 2px;
+  width: 40px;
+}
+.orbIconAligned__84ece {
+  margin-top: 1px;
+  vertical-align: top;
+}
+.orbChallengeItemDivider__84ece {
+  margin-bottom: var(--space-4);
+  margin-top: var(--space-4);
+  margin-inline-start: var(--space-48);
+  width: calc(100% - var(--space-16) * 2) !important;
+}
+.orbWalletContainer__81c60 {
+  background: var(--background-base-low);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-high);
+}
+.orbWalletContainerLayout__81c60 {
+  align-items: flex-start;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-16);
+  width: 340px;
+}
+.orbWalletHeader__81c60 {
+  -moz-column-gap: var(--space-12);
+  column-gap: var(--space-12);
+  justify-content: flex-start;
+  margin-bottom: var(--space-16);
+}
+.orbWalletHeader__81c60,
+.orbWalletHeaderTagInlineText__81c60 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.orbWalletHeaderTagInlineText__81c60 {
+  -moz-column-gap: var(--space-4);
+  column-gap: var(--space-4);
+}
+.assetContainer__81c60 {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  height: 46px;
+  justify-content: center;
+  width: 46px;
+}
+.orbAsset__81c60 {
+  height: 60px;
+}
+.nitroMultiplierPill__81c60 {
+  align-items: center;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: linear-gradient(
+      90deg,
+      var(--expressive-gradient-nitro-pink-start),
+      var(--expressive-gradient-nitro-pink-end) 120%
+    ),
+    linear-gradient(
+      90deg,
+      var(--expressive-gradient-nitro-pink-start),
+      var(--expressive-gradient-nitro-pink-end) 120%
+    ),
+    var(--background-base-lower);
+  border-radius: var(--radius-lg);
+  -moz-column-gap: var(--space-4);
+  column-gap: var(--space-4);
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  justify-content: center;
+  padding-inline: var(--space-6) var(--space-8);
+}
+.orbChallengesCard__81c60 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 16px;
+  padding-top: 18px;
+}
+.orbChallengesCardTitleBlock__81c60 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--space-12);
+}
+.orbChallengesCardEmptyContent__81c60 {
+  flex-direction: column;
+  row-gap: var(--space-4);
+}
+.orbChallengesCardEmptyContent__81c60,
+.orbWalletFooter__81c60 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+}
+.orbWalletFooter__81c60 {
+  -moz-column-gap: var(--space-12);
+  column-gap: var(--space-12);
+  flex-direction: row;
+  padding-bottom: 16px;
+}
+
+/*# sourceMappingURL=40271.670b8a9684e8334c.css.map*/
