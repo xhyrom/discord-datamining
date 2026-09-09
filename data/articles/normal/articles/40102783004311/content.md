@@ -549,12 +549,13 @@
   <p>
     <strong>From </strong>September 4<strong> through </strong>September 11 at
     11:00 AM PT<strong
-      >, eligible users who purchase Nitro Monthly or Nitro Yearly can receive
-      their first official Marvel Rivals in-game item free with their Nitro
-      subscription, for items priced at USD 20 or less. Items priced above USD
-      20 are not eligible and remain available at their regular price. Receiving
-      Nitro as a gift or purchasing Nitro as a gift for another user does not
-      qualify for this offer. </strong
+      >, select users who newly subscribe to Nitro Monthly or Nitro Yearly can
+      receive their first official Marvel Rivals in-game item free, for items
+      priced at USD 20 or less. The offer applies to their first Marvel Rivals
+      Shop purchase after subscribing. Items priced above USD 20 are not
+      eligible and remain available at their regular price. Receiving Nitro as a
+      gift or purchasing Nitro as a gift for another user does not qualify for
+      this offer. </strong
     >
   </p>
   <p>
