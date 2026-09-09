@@ -1,4 +1,4 @@
-<h2 id="h_01J9PZD05F3APKBR95F0W8C5PH">App Directory: Content Requirements</h2>
+<h2 id="h_01J9PZD05F3APKBR95F0W8C5PH">App Discovery Content Requirements</h2>
 <p>
   App Discovery gives users multiple ways to find and install your app across
   Discord, such as App Directory and App Launcher. In order for your Application

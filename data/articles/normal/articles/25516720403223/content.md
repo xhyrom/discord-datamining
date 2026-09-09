@@ -325,46 +325,6 @@
     Tax preparation or filing.
   </li>
 </ul>
-<h2 id="h_01J4T2BK6EP8APMZ4Y9B4PNT2W">
-  <span class="wysiwyg-underline">Gambling Content</span>
-</h2>
-<p>
-  Discord prohibits the promotion of gambling or gambling-adjacent activities.
-</p>
-<p>The following are prohibited:</p>
-<ul>
-  <li data-list-item-id="e004f130ce099b4903451de37ed971e9c">
-    Affiliates and websites driving traffic to gambling,
-  </li>
-  <li data-list-item-id="efa978885c03a67d8d4e7aab619a155b3">
-    Brick-and-mortar casinos,
-  </li>
-  <li data-list-item-id="e32b2038303b8d13735a0ec43c1702d35">
-    Online casinos and gambling,
-  </li>
-  <li data-list-item-id="eac2d09a165c7cf93b421a44eb1c2a3d9">
-    Odds, tips, picks, forecasts, and handicapping, 
-  </li>
-  <li data-list-item-id="e7fb2ee17b42e191775ac3047b90c8cf2">
-    Gambling advice and discussions,
-  </li>
-  <li data-list-item-id="ea19cfeae1a60dc6c7953e1b9cac229f4">
-    Games or apps played for money,
-  </li>
-  <li data-list-item-id="edf6a00377171a4bf3f7933433c94af5a">
-    Horse race betting,
-  </li>
-  <li data-list-item-id="e30b0e389dec2f3aaf69196deebc0b162">Lotteries,</li>
-  <li data-list-item-id="efe5af78e24c9ccdd07c1281d67a690a0">
-    Pay to play games of chance with prizes of real-world value,
-  </li>
-  <li data-list-item-id="e164580028b7c76e7926ae2885e07f1a2">
-    Simulated casinos and their games,
-  </li>
-  <li data-list-item-id="e229eb5930ea6df52a9e0aef72e1f5388">
-    Sports betting, sports books, or fantasy sports.
-  </li>
-</ul>
 <h2 id="h_01J4T2DT7XZ45K02YDSZW9J8Y2">
   <span class="wysiwyg-underline">Hateful Content</span>
 </h2>
@@ -634,6 +594,26 @@
     Advocacy for or against any of the above. 
   </li>
 </ul>
+<h2 class="wysiwyg-text-align-center" id="h_01J4T2BK6EP8APMZ4Y9B4PNT2W">
+  <span class="wysiwyg-underline"
+    >Real Money Gaming and Adjacent Products and Services</span
+  >
+</h2>
+<p>
+  Discord prohibits ads for Real Money Gaming and adjacent products and services
+  including brick and mortar casinos, sports betting, sports books, games or
+  apps played for money, horse race betting, lotteries, pay-to-play games of
+  chance with prizes of real-world value, simulated casinos, associated games
+  and others.
+</p>
+<p>
+  Ad or landing page content which promotes odds, tips, picks, forecasts,
+  handicapping or which drive users to real money gaming sites are prohibited.
+</p>
+<p>
+  Discord permits Daily Fantasy Sports ads in some jurisdictions in some
+  circumstances. Contact your Discord Account Executive for more information.
+</p>
 <h2 id="h_01J4T2KTXB28MRWZDH3MNQ1K36">
   <span class="wysiwyg-underline">Tobacco and Tobacco Accessories</span>
 </h2>
