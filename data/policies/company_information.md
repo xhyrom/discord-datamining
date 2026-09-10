@@ -732,7 +732,7 @@
                             class="dd_nav-link"
                             >Help Center<span class="sr-only">1 of 3</span></a
                           ><a
-                            href="https://support.discord.com/hc/en-us/community/topics"
+                            href="https://support.discord.com/hc/requests/new?brand_id=96508&amp;ticket_form_id=34826052965399"
                             class="dd_nav-link"
                             >Feedback<span class="sr-only">2 of 3</span></a
                           ><a
@@ -1456,7 +1456,7 @@
                                 class="dd_nav-link is-new"
                                 >Help Center</a
                               ><a
-                                href="https://support.discord.com/hc/en-us/community/topics"
+                                href="https://support.discord.com/hc/requests/new?brand_id=96508&amp;ticket_form_id=34826052965399"
                                 class="dd_nav-link is-new"
                                 >Feedback</a
                               ><a
@@ -2281,7 +2281,7 @@
                 >Official 3rd Party Merch</a
               ><a
                 data-track="feedback"
-                href="https://support.discord.com/hc/en-us/community/topics"
+                href="https://support.discord.com/hc/requests/new?brand_id=96508&amp;ticket_form_id=34826052965399"
                 class="link-footer top-new-link"
                 >Feedback</a
               >
