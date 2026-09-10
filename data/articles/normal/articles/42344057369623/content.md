@@ -66,10 +66,12 @@
 <p>
   For most offers, if you don't see one in the <strong>Nitro tab</strong>,
   you're not currently eligible, and support isn't able to manually add offers
-  or change eligibility. Some promotions, like Game Shop promotions for Nitro
-  subscribers, appear on other surfaces and can have their own eligibility
-  requirements; see that promotion's entry in the Available Offers section
-  below, and the
+  or change eligibility. 
+</p>
+<p>
+  Some promotions, like Game Shop promotions for Nitro subscribers, appear on
+  other surfaces and can have their own eligibility requirements; see that
+  promotion's entry in the Available Offers section below, and the
   <a
     href="https://support.discord.com/hc/en-us/articles/40102783004311-Game-Shops-FAQ"
     target="_blank"
@@ -85,10 +87,6 @@
   now, you may become eligible later in the offer period.
 </div>
 <h1 id="h_01KZ4G2Z2H10DMWV17A3KF60DW">How to Check if You're Eligible</h1>
-<div class="info-box">
-  <strong>Note:</strong> This offer flow is only available on the Discord
-  desktop app and browser.
-</div>
 <p>Follow these steps to see if you currently qualify for a Nitro offer.</p>
 <p>
   1. Update your Discord desktop app to the latest version. Some offers only
@@ -99,6 +97,10 @@
   select the <strong>Nitro</strong> tab. You can also get here through
   <strong>User Settings &gt; Nitro</strong>.
 </p>
+<div class="info-box">
+  <strong>Note:</strong> This offer flow is only available on the Discord
+  desktop app and browser.
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/42440935345815"
