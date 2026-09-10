@@ -10,13 +10,14 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8396927002](https://discord.com/jobs/8396927002)
 
-**Updated At:** Wed, 09 Sep 2026 20:22:54 GMT
+**Updated At:** Wed, 09 Sep 2026 23:14:37 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Every day, hundreds of millions of gamers gather on Discord to hang out, strategize their next raid, celebrate tournament victories, and build communities around the games they love. Behind every voice channel, every streamer Go Live, every Quest completed, there's data, petabytes of it, telling the story of how people connect through gaming.
 We're looking for someone who gets excited about building data infrastructure at massive scale and cares deeply about the gaming communities we serve. Someone with passion for building lovable products for Discord users and Discord engineers. We’re building the next generation Data Platform that powers decisions for one of the most vibrant platforms in the world.
 If you're the kind of Software Engineer who lights up when talking about distributed systems, cares deeply about user privacy, grounding decisions in data, and wants your work to directly impact millions of gamers worldwide, we want to talk to you.
 To learn more about Discord’s Data Platform,&amp;nbsp;read our engineering blog, including how we built our modern data stack leveraging open-source tools!
+This position is based in our San Francisco office. For this role, the Hiring Manager would like folks to be in the office 1-2 days a week.
 What You'll Be Doing
 
 Build and maintain data infrastructure processing petabytes of data across millions of users

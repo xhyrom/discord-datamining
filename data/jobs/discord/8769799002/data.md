@@ -10,12 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8769799002](https://discord.com/jobs/8769799002)
 
-**Updated At:** Wed, 09 Sep 2026 20:22:54 GMT
+**Updated At:** Wed, 09 Sep 2026 23:12:17 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.More broadly, Discord is about empowering people to find belonging in all kinds of communities, and those people trust us to keep their communications safe. Our Platform Security Engineering team protects the systems we use to create Discord, making the "secure way" the "easy way."
 We're looking for a Senior Engineer to advance this mission through security expertise, software development, and operational excellence, with a particular focus on identity and access management: who and what can access Discord's systems, how they authenticate, and how access stays scoped to what's actually needed. You'll help identify leveraged opportunities to reduce security risk across Engineering, then design and deliver technical solutions: lovable "paved paths" for managing identities and access, shipping code, configuring cloud infrastructure, and operating services.
 If you're a security engineer with a deep interest in identity and access management, who's eager to own technically and socially complex projects, and excited to improve security and privacy at Discord, read on!
+This position is based in our San Francisco office. For this role, the Hiring Manager would like folks to be in the office 1-2 days a week.
 What you'll do
 
 Own software engineering projects end-to-end on a highly autonomous, horizontally integrated team with a lot of leverage. This is a code-forward role!
