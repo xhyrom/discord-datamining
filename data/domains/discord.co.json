@@ -21,6 +21,7 @@
     "staging-cdn",
     "docs",
     "airflow-ai-prd",
+    "staging-media-b2",
     "event-stream",
     "click",
     "staging-gateway-us-east1-c",
@@ -42,5 +43,5 @@
     "otelcol",
     "datahub-prd"
   ],
-  "subdomain_count": 41
+  "subdomain_count": 42
 }
