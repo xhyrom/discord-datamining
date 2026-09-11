@@ -214,6 +214,51 @@
   tap on your avatar to head into
   <strong>User Settings &gt; Nitro Gifting</strong>. 
 </h3>
+<div class="exp-box">
+  <p>
+    <strong>Important</strong>: <strong>Bulk Gifting</strong> is currently an
+    experiment on desktop and isn't widely available yet. If you have access,
+    select the <strong>gift</strong> <strong>icon</strong> to the right of the
+    <strong>text</strong> <strong>bar</strong> in
+    <strong>server channels</strong>, <strong>group chats</strong>, or the
+    <strong>gifting</strong> <strong>option</strong> in the
+    <strong>Nitro</strong> <strong>Home</strong> or the
+    <strong>Billing</strong> <strong>page</strong>, then choose multiple friends
+    to send Nitro gifts to at once. During this experiment, you may see one of
+    the two experiences below.<br /><img
+      class="wysiwyg-image-resized"
+      style="aspect-ratio: 968/1164; width: 32.7%"
+      src="https://support.discord.com/hc/article_attachments/43407021395095"
+      alt="1.png"
+      width="968"
+      height="1164"
+    />
+      <img
+      class="wysiwyg-image-resized"
+      style="aspect-ratio: 1926/1170; width: 64.95%"
+      src="https://support.discord.com/hc/article_attachments/43406998047127"
+      alt="2.png"
+      width="1926"
+      height="1170"
+    /> 
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01M26S772K4MKBB74FF5BQRMJN">
+    <span style="color: #666666"
+      >Preset gift quantities with a custom amount option (Left) &amp; a gift
+      quantity stepper with the bulk discount applied at checkout (Right)</span
+    >
+  </h4>
+  <p>
+    <span style="color: #434343"
+      >Our standard refund policy applies. Learn more in our </span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy#h_01J5BJ13F4GHPNM080EY7QR9V0"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><span class="wysiwyg-underline">Refund Policy</span></a
+    ><span style="color: #434343">.</span>
+  </p>
+</div>
 <h1 id="h_01JF85HYSDTS1VC2ZHTE1ZVW6Y">
   Discord Nitro Digital Gift Cards on Amazon.com
 </h1>
