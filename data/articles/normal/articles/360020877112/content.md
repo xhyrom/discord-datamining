@@ -245,7 +245,7 @@
   <h4 class="wysiwyg-text-align-center" id="h_01M26S772K4MKBB74FF5BQRMJN">
     <span style="color: #666666"
       >Preset gift quantities with a custom amount option (Left) &amp; a gift
-      quantity stepper with the bulk discount applied at checkout (Right)</span
+      quantity stepper with the bulk gifting (Right)</span
     >
   </h4>
   <p>
