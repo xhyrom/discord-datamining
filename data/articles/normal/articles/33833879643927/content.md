@@ -341,9 +341,6 @@
   customization components:
 </p>
 <h2 id="h_01K32B6G98V14GP2G300KV0CRN">Fonts</h2>
-<div class="exp-box">
-  <strong>Note</strong>: New fonts will be rolling out in the coming weeks!
-</div>
 <p>Choose from various unique fonts:</p>
 <ul>
   <li
@@ -432,9 +429,6 @@
   <span style="color: #666666">Different Fonts Available</span>
 </h4>
 <h2 id="h_01K32B6G9A1GE7G6WT8MQ0FA7G">Effects</h2>
-<div class="exp-box">
-  <strong>Note</strong>: New effects will be rolling out in the coming weeks!
-</div>
 <p>Select from various effect options:</p>
 <ul>
   <li

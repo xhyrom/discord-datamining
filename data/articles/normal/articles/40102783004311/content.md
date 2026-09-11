@@ -537,28 +537,6 @@
 <h2 id="h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Game Shop</h2>
 <div class="mega-box">
   <p>
-    <strong>Starting </strong>September 4 at 11:00 AM PT,<strong>
-      eligible Nitro users can access two limited-time offers in the Marvel
-      Rivals Game Shop on Discord: </strong
-    >
-  </p>
-  <p>
-    Get your first in-game item with Nitro
-    <strong>(Sep 4, 11 AM PT – Sep 11, 11 AM PT) </strong>
-  </p>
-  <p>
-    <strong>From </strong>September 4<strong> through </strong>September 11 at
-    11:00 AM PT<strong
-      >, select users who newly subscribe to Nitro Monthly or Nitro Yearly can
-      receive their first official Marvel Rivals in-game item free, for items
-      priced at USD 20 or less. The offer applies to their first Marvel Rivals
-      Shop purchase after subscribing. Items priced above USD 20 are not
-      eligible and remain available at their regular price. Receiving Nitro as a
-      gift or purchasing Nitro as a gift for another user does not qualify for
-      this offer. </strong
-    >
-  </p>
-  <p>
     Get Discord Orbs on Marvel Rivals purchases
     <strong>(Sep 4, 11 AM PT – Sep 18, 11 AM PT) </strong>
   </p>
@@ -572,12 +550,9 @@
     >
   </p>
   <p>
-    For both offers:
     <strong
-      >Users who subscribe to Nitro on mobile are eligible, but must use the
-      Discord desktop or web app to claim the first-item offer or make purchases
-      eligible to receive Orbs. For more information about Discord Orbs,
-      including how to use and redeem them, see the </strong
+      >For more information about Discord Orbs, including how to use and redeem
+      them, see the </strong
     ><a
       href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ?utm_source=chatgpt.com"
       ><strong
@@ -597,10 +572,9 @@
   </p>
 </div>
 <div class="info-box">
-  <strong>Note:</strong> Users who subscribe to Nitro yearly subscription on
-  mobile are still eligible for this offer. However, they must sign in on the
-  Discord desktop or web app to claim their free item in the Marvel Rivals Game
-  Shop.
+  <strong>Note: </strong>Users who subscribe to Nitro on mobile are still
+  eligible for this offer. However, they must sign in on the Discord desktop or
+  web app to make eligible Marvel Rivals Game Shop purchases and receive Orbs.
 </div>
 <p>
   <strong>Q: Which platforms can I redeem Marvel Rivals Shop items on?</strong> 
