@@ -1620,6 +1620,8 @@
   "volumeControlGroup": "volumeControlGroup_b824c5",
   "controlsBarItem": "controlsBarItem_b824c5",
   "controlsBarItemActive": "controlsBarItemActive_b824c5",
+  "controlBtnIconWithOverlay": "controlBtnIconWithOverlay_b824c5",
+  "playbackSpeedBadge": "playbackSpeedBadge_b824c5",
   "playbackSpeedPopout": "playbackSpeedPopout_b824c5",
   "playbackSpeedHeading": "playbackSpeedHeading_b824c5",
   "contentHeader": "contentHeader_b824c5",
