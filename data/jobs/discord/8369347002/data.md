@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8369347002](https://discord.com/jobs/8369347002)
 
-**Updated At:** Fri, 11 Sep 2026 22:23:14 GMT
+**Updated At:** Fri, 11 Sep 2026 23:25:24 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are seeking an experienced Senior Machine Learning Engineer to join our Safety ML team. This role focuses on building and deploying machine learning models that help keep Discord users safe, including real-time and batch systems for content understanding, risk evaluation, and account integrity. You will work closely with partners across product, engineering, design, policy, legal, and Trust and Safety to design and deliver effective ML solutions. This role reports to the Senior Manager of Machine Learning, Safety.

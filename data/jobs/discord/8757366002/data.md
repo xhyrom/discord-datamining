@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8757366002](https://discord.com/jobs/8757366002)
 
-**Updated At:** Wed, 09 Sep 2026 20:22:54 GMT
+**Updated At:** Fri, 11 Sep 2026 23:25:24 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord is where hundreds of millions of people come together around games, communities, and shared interests. Behind the scenes, our Stock Administration team makes sure every equity award — from a new hire's first grant to a multi-year vesting RSU release — is handled accurately, compliantly, and with care.

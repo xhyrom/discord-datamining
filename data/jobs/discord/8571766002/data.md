@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8571766002](https://discord.com/jobs/8571766002)
 
-**Updated At:** Fri, 11 Sep 2026 19:09:25 GMT
+**Updated At:** Fri, 11 Sep 2026 23:25:24 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord only works at our scale if people feel safe showing up — and building the systems that make that possible is exactly what our Safety engineering org does.

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8771059002](https://discord.com/jobs/8771059002)
 
-**Updated At:** Wed, 09 Sep 2026 20:22:54 GMT
+**Updated At:** Fri, 11 Sep 2026 23:25:24 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Payments, Fraud &amp;amp; Risk team enables revenue growth and protects Discord's financial health by managing payments optimization and fraud risk as a strategic function. We operate across three core areas: identifying and mitigating large-scale fraud to enable clean revenue, optimizing the cost of payments through chargeback strategy and card network fee mitigation, and partnering with Product, Revenue, and Engineering early to surface and address fraud risk — so Discord can launch with confidence and maximize revenue outcomes.

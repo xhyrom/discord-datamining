@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8780263002](https://discord.com/jobs/8780263002)
 
-**Updated At:** Wed, 09 Sep 2026 20:22:54 GMT
+**Updated At:** Fri, 11 Sep 2026 23:25:24 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Growth sits at the front door of Discord's consumer experience. Our mission is to grow Discord's community responsibly — helping new people discover Discord, land and activate quickly, and stay connected to what they care about. This role owns the full arc of a new user's first experience: how they find us through search, how they register and log in, how onboarding introduces what Discord is, and how notifications bring them back to the moments that matter.
