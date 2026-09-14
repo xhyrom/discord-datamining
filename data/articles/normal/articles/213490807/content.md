@@ -96,10 +96,10 @@
         <td>Share ideas, suggestions, and general thoughts about Discord</td>
         <td>
           <a
-            href="https://dis.gd/contact"
+            href="https://dis.gd/feedback"
             target="_blank"
             rel="noopener noreferrer"
-            >dis.gd/contact</a
+            >dis.gd/feedback</a
           >
           → select <strong>Feedback</strong>
         </td>

@@ -1,50 +1,100 @@
 <h3 id="h_01H9RC8CQ3W4QJEJBKAVWVWP9B">
-  <span style="color: #104c32" data-darkreader-inline-color=""
-    >Subscription Credit can only be used for desktop/browser subscriptions.
-    They cannot be used on Google Play or iOS App Store subscriptions. </span
-  >
-</h3>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong
-      ><span style="color: #2e3338" data-darkreader-inline-color=""
-        >What this article covers:</span
-      ></strong
+  <span style="color: #104c32"
+    ><span data-darkreader-inline-color=""
+      >Subscription Credit can only be used for desktop/browser subscriptions.
+      They cannot be used on Google Play or iOS App Store subscriptions. </span
     ></span
   >
-</p>
-<ul>
-  <li>
-    <a href="#h_01H9RC8CQ3ZGQR4DB3V1SN9ZGJ">What is Subscription Credit?</a>
-    <ul>
-      <li>
-        <a href="#h_01H9RC8CQ3J7BMS27AGTS47B3R"
-          >What are the limitations of Subscription Credit? </a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01H9RC8CQ4Q9XH0ASXF963K1T1"
-      >How do I activate my Subscription Credit?</a
+</h3>
+<div class="mega-box">
+  <p>
+    Offer<strong>: Starting </strong>September 14, 2026<strong
+      >, eligible Nitro subscribers can purchase a Boost and get the next month
+      of Boosting free, and each subsequent month renews at your regular rate.
+      This promotion is rolling out gradually and will be available to all
+      eligible users by </strong
+    >September 15<strong
+      >. For each Boost purchased, you will receive an additional month of
+      Boosting for free. Limit 20 Boosts per user. Available on Desktop
+      only.  </strong
     >
-    <ul>
-      <li>
-        <a href="#h_01H9RC8CQ49VY8YPRM95SVPWD8"
-          >What if I have an active Subscription?</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01H9RC8CQ402FWZ8HKZQJGZFYC"
-      >What happens if I cancel my Subscription?</a
+  </p>
+  <p>
+    <span style="color: #434343"
+      ><strong
+        >Look for the promotion banner before you buy to confirm your
+        eligibility. If you don't see the banner, you're not eligible for this
+        promotion at this time.</strong
+      ></span
     >
-  </li>
-</ul>
+  </p>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/43482952487191"
+      alt="Promotion Banner"
+      width="280"
+      height="411"
+    />
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01M2GBKWAG1Z2B668DP6FQVXQM">
+    <span style="color: #666666">Promotion Banner</span>
+  </h4>
+  <p>
+    <span style="color: #2e3338"
+      ><strong>This offer ends </strong>September 21, 2026 (5PM PT)<strong
+        >.
+      </strong></span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong><span class="wysiwyg-underline">Terms apply.</span></strong></a
+    >
+  </p>
+</div>
+<div class="toc-box">
+  <p>
+    <span class="wysiwyg-font-size-large" style="color: #2e3338"
+      ><span data-darkreader-inline-color=""
+        ><strong>What this article covers:</strong></span
+      ></span
+    >
+  </p>
+  <ul>
+    <li data-list-item-id="e0175ab81f1de8b293da4363917c33a26">
+      <a href="#h_01H9RC8CQ3ZGQR4DB3V1SN9ZGJ">What is Subscription Credit?</a>
+      <ul>
+        <li data-list-item-id="ea5deb91c88809eea31a64c301062205a">
+          <a href="#h_01H9RC8CQ3J7BMS27AGTS47B3R"
+            >What are the limitations of Subscription Credit? </a
+          >
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="e2ce29117bc29e3e2266f479697c96b11">
+      <a href="#h_01H9RC8CQ4Q9XH0ASXF963K1T1"
+        >How do I activate my Subscription Credit?</a
+      >
+      <ul>
+        <li data-list-item-id="e698cfa5fb630f3deb06e4b4a9c7e85c5">
+          <a href="#h_01H9RC8CQ49VY8YPRM95SVPWD8"
+            >What if I have an active Subscription?</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="e70ad80831a42e0ebb523ccab61e50207">
+      <a href="#h_01H9RC8CQ402FWZ8HKZQJGZFYC"
+        >What happens if I cancel my Subscription?</a
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01H9RC8CQ3ZGQR4DB3V1SN9ZGJ">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >What is Subscription Credit?</span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >What is Subscription Credit?</span
+    ></span
   >
 </h1>
 <p>
@@ -74,7 +124,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/17353099028631"
+    src="https://support.discord.com/hc/article_attachments/43482974731671"
     alt="subscription_credit.png"
   />
 </p>
@@ -82,10 +132,12 @@
   What are the limitations of Subscription Credit?
 </h2>
 <h3 id="h_01H9RC8CQ4VTDWQV46KKA5DBDH">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Subscription credit can only be consumed and redeemed for matching Nitro
-    subscriptions. Nitro for Nitro, Nitro Basic for Nitro Basic, and Nitro
-    Classic for Nitro Classic.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Subscription credit can only be consumed and redeemed for matching Nitro
+      subscriptions. Nitro for Nitro, Nitro Basic for Nitro Basic, and Nitro
+      Classic for Nitro Classic.</span
+    ></span
   >
 </h3>
 <p>
@@ -136,7 +188,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/17353093878167"
+    src="https://support.discord.com/hc/article_attachments/43482952491287"
     alt="nitro_select_plan.png"
   />
 </p>
@@ -159,8 +211,10 @@
   credit!
 </p>
 <h1 id="h_01H9RC8CQ402FWZ8HKZQJGZFYC">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >What happens if I cancel my Subscription?</span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >What happens if I cancel my Subscription?</span
+    ></span
   >
 </h1>
 <p>
@@ -175,21 +229,22 @@
   your account before charging your card for another months time.
 </p>
 <h3 id="h_01H9RC8CQ4DSN89WDJ2KH5KVG6">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you have any further questions about Subscription Credits, please reach
-    out to our support team through </span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >If you have any further questions about Subscription Credits, please
+      reach out to our support team through
+    </span></span
   ><a href="http://dis.gd/billing"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >dis.gd/billing</span
-    ></a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+    ><span class="wysiwyg-underline">dis.gd/billing</span></a
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
 </h3>
 <h3 id="h_01H9RC8CQ43NHXDKEXRQMGVK2Y">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >To receive help as quickly as possible, please make sure that you are using
-    the email address that's associated with your Discord account.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >To receive help as quickly as possible, please make sure that you are
+      using the email address that's associated with your Discord account.</span
+    ></span
   >
 </h3>

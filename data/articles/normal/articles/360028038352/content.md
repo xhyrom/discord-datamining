@@ -1,27 +1,51 @@
-<div class="mega-box">
-  <span style="color: #434343"
-    ><span data-darkreader-inline-color=""
-      ><strong>What’s New:</strong></span
-    ></span
-  > <br /><span style="color: #434343"
-    ><span data-darkreader-inline-color=""
-      >Server Boosting just got more flexible! You can now use your available
-      Boosts to unlock additional perks like </span
-    ><span data-darkreader-inline-color=""><strong>Server Tags</strong></span
-    ><span data-darkreader-inline-color=""> and </span
-    ><span data-darkreader-inline-color=""
-      ><strong>Enhanced Role Styles</strong></span
-    ><span data-darkreader-inline-color="">
-      without needing to reach higher server levels.</span
-    ></span
-  >
-</div>
 <p>
   Want to share some extra special perks with your favorite community? With
   Server Boosts, you and your community can now work together to unlock some
   fresh new perks for your server each month. By using your Server Boosts every
   month, you can unlock some epic perks to the rest of your server community! 
 </p>
+<div class="mega-box">
+  <p>
+    Offer<strong>: Starting </strong>September 14, 2026<strong
+      >, eligible Nitro subscribers can purchase a Boost and get the next month
+      of Boosting free, and each subsequent month renews at your regular rate.
+      This promotion is rolling out gradually and will be available to all
+      eligible users by </strong
+    >September 15<strong
+      >. For each Boost purchased, you will receive an additional month of
+      Boosting for free. Limit 20 Boosts per user. Available on Desktop
+      only.  </strong
+    >
+  </p>
+  <p>
+    <strong
+      >Look for the promotion banner before you buy to confirm your eligibility.
+      If you don't see the banner, you're not eligible for this promotion at
+      this time. </strong
+    >
+  </p>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/43482964473111"
+      alt="Promotion Banner"
+      width="280"
+      height="411"
+    />
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01M2GBF5BZ2C9NCXBQR639GPRJ">
+    <span style="color: #666666">Promotion Banner</span>
+  </h4>
+  <p>
+    <strong>This offer ends </strong>September 21, 2026 (5PM PT)<strong
+      >. </strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong>Terms apply</strong></a
+    ><strong>.</strong>
+  </p>
+</div>
 <figure class="wysiwyg-media">
   <div data-oembed-url="https://www.youtube.com/watch?v=p1ZO51fbvUM">
     <iframe
@@ -33,15 +57,6 @@
     ></iframe>
   </div>
 </figure>
-<h4 id="h_01HGX7DJ33H4R7S6A31PSZZGCH">
-  <span style="color: #2e3338"
-    ><span data-darkreader-inline-color=""
-      ><strong
-        >Start your engines and get ready to ✨B  O  O  S  T✨!</strong
-      ></span
-    ></span
-  >
-</h4>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
@@ -490,16 +505,13 @@
 </p>
 <div class="warn-box">
   <span style="color: #434343"
-    ><span data-darkreader-inline-color=""><strong>Important:</strong></span
-    ><span data-darkreader-inline-color="">
-      Additional perks use dedicated Boosts that are separate from those
-      maintaining your server level. You'll need </span
     ><span data-darkreader-inline-color=""
-      ><strong>available (unallocated) Boosts</strong></span
-    ><span data-darkreader-inline-color="">
-      to unlock them—Boosts already allocated to your server level won't count
-      toward additional perks. Each perk requires ongoing Boosts to remain
-      active, similar to how server levels require ongoing Boosts.</span
+      ><strong>Important:</strong> Additional perks use dedicated Boosts that
+      are separate from those maintaining your server level. You'll need
+      <strong>available (unallocated) Boosts</strong> to unlock them—Boosts
+      already allocated to your server level won't count toward additional
+      perks. Each perk requires ongoing Boosts to remain active, similar to how
+      server levels require ongoing Boosts.</span
     ></span
   >
 </div>
@@ -579,13 +591,12 @@
 </h4>
 <div class="warn-box">
   <span style="color: #434343"
-    ><span data-darkreader-inline-color=""><strong>Important:</strong></span
-    ><span data-darkreader-inline-color="">
-      If your server's Boost count drops and you no longer have enough Boosts
-      allocated to a perk, that perk will be disabled. Enhanced Role Styles will
-      automatically revert to solid colors, and Server Tags will be removed from
-      member profiles. Server owners and admins can choose which perks to
-      prioritize when managing limited Boosts.</span
+    ><span data-darkreader-inline-color=""
+      ><strong>Important:</strong> If your server's Boost count drops and you no
+      longer have enough Boosts allocated to a perk, that perk will be disabled.
+      Enhanced Role Styles will automatically revert to solid colors, and Server
+      Tags will be removed from member profiles. Server owners and admins can
+      choose which perks to prioritize when managing limited Boosts.</span
     ></span
   >
 </div>
@@ -605,10 +616,9 @@
 </h4>
 <div class="info-box">
   <span style="color: #434343"
-    ><span data-darkreader-inline-color=""><strong>Info: </strong></span
     ><span data-darkreader-inline-color=""
-      >Additional perks can currently only be unlocked and configured on desktop
-      at this time.</span
+      ><strong>Info: </strong>Additional perks can currently only be unlocked
+      and configured on desktop at this time.</span
     ></span
   >
 </div>
@@ -840,8 +850,8 @@
 <h4 class="wysiwyg-text-align-center" id="h_01K0Z1N8S2A8Y2ACWEEX5F96NJ">
   <span style="color: #666666"
     ><span data-darkreader-inline-color=""
-      ><strong>Server Settings</strong></span
-    ><span data-darkreader-inline-color=""> option </span></span
+      ><strong>Server Settings</strong> option </span
+    ></span
   >
 </h4>
 <p>
