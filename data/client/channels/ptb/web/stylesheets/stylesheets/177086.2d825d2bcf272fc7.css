@@ -1,0 +1,62 @@
+.button_aa63ab > .disabled_aa63ab {
+  color: var(--icon-muted);
+  cursor: not-allowed;
+}
+.container_aa63ab {
+  align-items: center;
+  display: flex;
+  margin-inline-start: 0;
+}
+.separator_aa63ab {
+  align-self: center;
+  background-color: var(--border-normal);
+  height: var(--chat-markup-line-height);
+  margin-inline-start: 0;
+  width: 1px;
+}
+.buttonContainer_aa63ab {
+  display: flex;
+}
+.sendIcon_aa63ab {
+  height: 20px !important;
+  width: 20px !important;
+}
+.button_aa63ab {
+  box-sizing: border-box;
+  margin-inline: 0;
+  min-height: var(--space-32);
+  min-width: var(--space-32);
+  padding: 4px;
+}
+.buttonChild_aa63ab {
+  transition: color 0.25s ease-in-out;
+}
+.activeButtonChild_aa63ab {
+  color: var(--text-brand);
+}
+.theme-dark .button_aa63ab:focus .activeButtonChild_aa63ab,
+.theme-dark .button_aa63ab:focus-within .activeButtonChild_aa63ab,
+.theme-dark .button_aa63ab:hover .activeButtonChild_aa63ab {
+  color: var(--brand-430);
+}
+.theme-dark .button_aa63ab:active .activeButtonChild_aa63ab {
+  color: var(--brand-500);
+}
+.theme-light .activeInnerButton_aa63ab:focus,
+.theme-light .activeInnerButton_aa63ab:hover,
+.theme-light .buttonContainer_aa63ab:focus,
+.theme-light .buttonContainer_aa63ab:hover {
+  color: var(--brand-560);
+}
+.theme-light .activeInnerButton_aa63ab:active,
+.theme-light .buttonContainer_aa63ab:active {
+  color: var(--brand-600);
+}
+.reduce-motion .button_aa63ab {
+  transition: unset;
+}
+.container_aa63ab:before {
+  display: none;
+}
+
+/*# sourceMappingURL=177086.2d825d2bcf272fc7.css.map*/
