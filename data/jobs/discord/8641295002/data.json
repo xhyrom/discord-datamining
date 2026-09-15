@@ -29,7 +29,7 @@
     }
   ],
   "id": 8641295002,
-  "updated_at": "2026-09-11T19:25:24-04:00",
+  "updated_at": "2026-09-15T16:03:50-04:00",
   "requisition_id": "R-107346",
   "title": "Staff Product Marketing Manager, Developer and Publishers",
   "company_name": "Discord",
@@ -47,9 +47,9 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }
