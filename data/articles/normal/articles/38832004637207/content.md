@@ -1,3 +1,7 @@
+<div class="info-box">
+  <strong>Note:</strong> We're currently testing a few additional age assurance
+  methods, so you may see more options than what’s listed below.
+</div>
 <p>
   Although Discord has not been classified as an Age-Restricted Social Media
   Platform under <strong>Australia’s </strong

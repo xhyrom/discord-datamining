@@ -1,3 +1,7 @@
+<div class="info-box">
+  <strong>Note:</strong> We're currently testing a few additional age assurance
+  methods, so you may see more options than what’s listed below.
+</div>
 <p>
   Starting March 9th, 2026, we're rolling out age assurance in Brazil to comply
   with the Digital Statute for Children and Adolescents (Digital ECA), which
