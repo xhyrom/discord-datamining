@@ -1,0 +1,79 @@
+.scrollbar_da3286::-webkit-scrollbar-corner {
+  background: none;
+  border: none;
+}
+.scrollbarDefault_da3286 {
+}
+.scrollbarDefault_da3286::-webkit-scrollbar {
+  height: var(--custom-scrollbar-scrollbar-width, 14px);
+  width: var(--custom-scrollbar-scrollbar-width, 14px);
+}
+.scrollbarDefault_da3286::-webkit-scrollbar-thumb,
+.scrollbarDefault_da3286::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border-color: transparent;
+  border-radius: var(
+    --custom-scrollbar-border-radius,
+    calc(var(--custom-scrollbar-scrollbar-width, 14px) / 2)
+  );
+  border-style: solid;
+  border-width: var(--custom-scrollbar-scrollbar-margin, 3px);
+}
+.scrollbarDefault_da3286::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-auto-thumb);
+}
+.scrollbarDefault_da3286::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-auto-track);
+  border-width: initial;
+}
+.scrollbarGhost_da3286 {
+}
+.scrollbarGhost_da3286::-webkit-scrollbar {
+  height: var(--custom-scrollbar-scrollbar-width, 14px);
+  width: var(--custom-scrollbar-scrollbar-width, 14px);
+}
+.scrollbarGhost_da3286::-webkit-scrollbar-thumb,
+.scrollbarGhost_da3286::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border-radius: var(
+    --custom-scrollbar-border-radius,
+    calc(var(--custom-scrollbar-scrollbar-width, 14px) / 2)
+  );
+  border-style: solid;
+  border-width: var(--custom-scrollbar-scrollbar-margin, 3px);
+}
+.scrollbarGhost_da3286::-webkit-scrollbar-thumb {
+  background-color: var(--opacity-black-40);
+  border-color: transparent;
+}
+.scrollbarGhost_da3286::-webkit-scrollbar-track {
+  background-color: var(--opacity-black-8);
+  border-color: transparent;
+  border-width: initial;
+}
+.scrollbarGhostHairline_da3286 {
+}
+.scrollbarGhostHairline_da3286::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+.scrollbarGhostHairline_da3286::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--primary-800-hsl) / 0.6);
+  border-radius: 2px;
+  cursor: move;
+}
+.scrollbarGhostHairline_da3286::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: none;
+}
+.enable-forced-colors .scrollbar_da3286::-webkit-scrollbar-track {
+  background-color: Canvas;
+  border-radius: 0;
+  border-width: 1px;
+}
+.enable-forced-colors .scrollbar_da3286::-webkit-scrollbar-thumb {
+  background-color: CanvasText;
+  border-width: 1px;
+}
+
+/*# sourceMappingURL=415695.c0966b11afeb7285.css.map*/
