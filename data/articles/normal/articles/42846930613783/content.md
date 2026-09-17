@@ -1,3 +1,16 @@
+<div class="info-box">
+  <strong>Note</strong>: If you're on macOS 12 and Discord no longer launches,
+  it is recommended to install
+  <a
+    href="https://dl.discordapp.net/apps/osx/0.0.412/Discord.dmg"
+    target="_blank"
+    rel="noopener noreferrer"
+    >this</a
+  >
+  version of the Discord app. This version will continue to work without
+  updating, but installing any newer version will prevent Discord from
+  launching.
+</div>
 <p>
   As of <strong>September 17, 2026</strong>, Discord will no longer be supported
   on macOS 12.
