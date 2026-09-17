@@ -1,0 +1,57 @@
+.singleSelectOption__12eef {
+  -moz-column-gap: 8px;
+  column-gap: 8px;
+  display: flex;
+}
+.deviceContainer__12eef {
+  align-items: center;
+  display: grid;
+  gap: 4px;
+  grid-template-areas: "label subLabel certifiedPill";
+  grid-template-columns: auto 1fr min-content;
+  width: 100%;
+}
+.deviceContainer__12eef.withIcon__12eef {
+  grid-template-areas: "icon label subLabel certifiedPill";
+  grid-template-columns: min-content auto 1fr min-content;
+}
+.deviceContainer__12eef.multiLine__12eef {
+  grid-template-areas: "label certifiedPill" "subLabel certifiedPill";
+  grid-template-columns: 1fr min-content;
+}
+.deviceContainer__12eef.multiLine__12eef.withIcon__12eef {
+  grid-template-areas: "icon label certifiedPill" "icon subLabel certifiedPill";
+  grid-template-columns: min-content 1fr min-content;
+}
+.deviceContainer__12eef.multiLine__12eef .deviceSubLabel__12eef:before {
+  content: "";
+}
+.deviceContainer__12eef.multiLine__12eef .deviceSubLabel__12eef:after {
+  content: "";
+}
+.deviceContainer__12eef .deviceIcon__12eef {
+  align-items: center;
+  display: flex;
+  grid-area: icon;
+  margin-inline-end: var(--space-4);
+}
+.deviceContainer__12eef .deviceLabel__12eef {
+  grid-area: label;
+}
+.deviceContainer__12eef .deviceSubLabel__12eef {
+  grid-area: subLabel;
+  text-overflow: ellipsis;
+}
+.deviceContainer__12eef .deviceSubLabel__12eef:before {
+  content: "(";
+}
+.deviceContainer__12eef .deviceSubLabel__12eef:after {
+  content: ")";
+}
+.deviceContainer__12eef .deviceCertifiedPill__12eef {
+  align-items: center;
+  display: flex;
+  grid-area: certifiedPill;
+}
+
+/*# sourceMappingURL=932696.96137147521e5db7.css.map*/
