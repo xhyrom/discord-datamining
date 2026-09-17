@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8641295002](https://discord.com/jobs/8641295002)
 
-**Updated At:** Tue, 15 Sep 2026 20:03:50 GMT
+**Updated At:** Thu, 17 Sep 2026 17:59:24 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We're seeking a strategic Staff Product Marketing Manager to build and lead the go-to-market strategy for Discord's Unified Developer Platform, focused on helping game developers and publishers build richer social experiences, grow their communities, and deepen player engagement through Discord's platform.
@@ -48,5 +48,5 @@ Please see our Applicant and Candidate Privacy Policy for details regarding Disc
 - Product Marketing
 
 **Offices:**
-- Remote (U.S.)
+- San Francisco, CA in San Francisco, California, United States
     
