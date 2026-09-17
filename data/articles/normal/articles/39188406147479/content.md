@@ -60,6 +60,27 @@
         >Call of Duty Modern Warfare 4 Beta Code</a
       >
     </li>
+    <li data-list-item-id="e97f6a5ff6104a29d956c41836e66b366">
+      <a href="#h_01M28JF5GNHD4FAYCE01XS5GA1">YouTube Premium</a>
+      <ul>
+        <li data-list-item-id="e420c35a6f95fa38c004bb997b279f8e7">
+          <a href="#h_01M28JMFHCAH6V7EVVX10MC6VC">How it Works</a>
+        </li>
+        <li data-list-item-id="ec187bc2ecd25a7a1a7b32a2c7f5f2879">
+          <a href="#h_01M28JRX3SJKNY0F26Q295DGTT">Eligibility Requirements</a>
+        </li>
+        <li data-list-item-id="e5c408397249a78e6b835def889813766">
+          <a href="#h_01M28JZ4CW98J08314AV39Q47X"
+            >How to Access Your Discount Code</a
+          >
+        </li>
+        <li data-list-item-id="e7d343535247be0baf8c1863e77fbf9a4">
+          <a href="#h_01M2GVH8RZYMDKFGEAFDNSWFCT"
+            >How to Redeem Your Discount Code on YouTube</a
+          >
+        </li>
+      </ul>
+    </li>
     <li data-list-item-id="e843220e54dc2206f7ab720c117c5f2d4">
       <a href="#h_01KQZ3D7ZFZV9JCQXQMJFCCENW">Frequently Asked Questions</a>
     </li>
@@ -119,9 +140,9 @@
   the partners and offers over time, and what's available may change.
 </p>
 <div class="tip-box">
-  If you are an eligible Xbox Game Pass subscriber, you get access to 3 Discord
-  Nitro perks at no extra cost. For more info, check out this Help Center
-  article:
+  <strong>Note</strong>: If you are an eligible Xbox Game Pass subscriber, you
+  get access to 3 Discord Nitro perks at no extra cost. For more info, check out
+  this Help Center article:
   <a
     href="https://support.discord.com/hc/articles/40387273783831"
     target="_blank"
@@ -278,7 +299,7 @@
   >
 </h4>
 <p>
-  5. Follow the prompts to activate your benefit and link your Microsoft
+  4. Follow the prompts to activate your benefit and link your Microsoft
   account. 
 </p>
 <h1 id="h_01KQZ3D7YNX1T79C7XEKF34EX3">Logitech G Discount  </h1>
@@ -473,31 +494,21 @@
 <h1 id="h_01KQZ3D7Z1M4H2RJTCPFDARWKC">Using Your Discount Code</h1>
 <p>
   After claiming your discount code, here's how to use it on the Logitech G
-  website:
+  website
 </p>
-<ol>
-  <li data-list-item-id="e3e0be3a21a3f377187581400f82bab67">
-    Visit the<a href="https://steelseries.com"> </a
-    ><a
-      href="https://www.logitechg.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Logitech G<span class="wysiwyg-underline"> website</span></a
-    >
-  </li>
-  <li data-list-item-id="e63ac02c963b3421f17fc6a172f7c74bf">
-    Add items to your cart 
-  </li>
-  <li data-list-item-id="e12efc80d8b88101127bc4f6183a33239">
-    Proceed to checkout
-  </li>
-  <li data-list-item-id="e53f8e1b5aaba4740e8454ba53db8b49c">
-    Enter your discount code in the promo code field
-  </li>
-  <li data-list-item-id="ec224766a408605f4d3492f14a54dd816">
-    Complete your purchase with the discount applied
-  </li>
-</ol>
+<p>
+  1. Visit the<a href="https://steelseries.com"> </a
+  ><a
+    href="https://www.logitechg.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Logitech G<span class="wysiwyg-underline"> website</span></a
+  >
+</p>
+<p>2. Add items to your cart </p>
+<p>3. Proceed to checkout</p>
+<p>4. Enter your discount code in the promo code field</p>
+<p>5. Complete your purchase with the discount applied</p>
 <h1 id="h_01KQZ3D7Z26A58ERQBDNY7TAWS">SteelSeries Discount</h1>
 <p>Users with Nitro will receive a monthly code for 20% off SteelSeries. </p>
 <div class="warn-box">
@@ -676,25 +687,17 @@
   After claiming your discount code, here's how to use it on the SteelSeries
   website:
 </p>
-<ol>
-  <li data-list-item-id="e7017250b9970d56dfdb84d75129230d9">
-    Visit the<a href="https://steelseries.com">
-      <span class="wysiwyg-underline">SteelSeries store</span></a
-    >
-  </li>
-  <li data-list-item-id="e7607624af11d0770501c351c12865ba6">
-    Add items to your cart (minimum $20 purchase required on SteelSeries.com)
-  </li>
-  <li data-list-item-id="e2fda40bf7fcbfc36f3c2316c024dcf97">
-    Proceed to checkout
-  </li>
-  <li data-list-item-id="eab729f59ffa59c4fbd33c2c5a8470dbf">
-    Enter your discount code in the promo code field
-  </li>
-  <li data-list-item-id="e025ab55390f65cc777dc66b0e77a3bd6">
-    Complete your purchase with the discount applied
-  </li>
-</ol>
+<p>
+  1. Visit the<a href="https://steelseries.com">
+    <span class="wysiwyg-underline">SteelSeries store</span></a
+  >
+</p>
+<p>
+  2. Add items to your cart (minimum $20 purchase required on SteelSeries.com)
+</p>
+<p>3. Proceed to checkout</p>
+<p>4. Enter your discount code in the promo code field</p>
+<p>5. Complete your purchase with the discount applied</p>
 <h1 id="h_01KZ4QGEHQD2RQWG9MWXGHK95M">
   Call of Duty Modern Warfare 4 Beta Code
 </h1>
@@ -806,6 +809,231 @@
 </p>
 <p>2. Log into your Activision account.</p>
 <p>3. Enter your code and follow the on-screen instructions.</p>
+<h1 id="h_01M28JF5GNHD4FAYCE01XS5GA1">YouTube Premium</h1>
+<div class="exp-box">
+  <strong>Important</strong>: <br />- YouTube Premium rewards are currently in
+  experiment and only available to select users.<br />- To receive your code,
+  you must use the desktop app. Eligibility conditions apply, see below for more
+  information.<br />- This offer is available only to individual YouTube Premium
+  plans. Family plans are not eligible.
+</div>
+<p>
+  This promotional offer provides Nitro members with 20% off YouTube Premium for
+  6 consecutive months. This discount is available whether you're a new user or
+  an existing YouTube Premium subscriber. 
+</p>
+<p>
+  You may be able to combine this promotional discount offer with an extended
+  free trial (EFT), depending on your eligibility. Your specific EFT timing and
+  eligibility vary on a per-user basis, and you will see if you qualify for a
+  trial before applying the promotional discount upon redemption.
+</p>
+<h2 id="h_01M28JMFHCAH6V7EVVX10MC6VC">How it Works</h2>
+<p>The following terms apply to this promotional offer:</p>
+<ul>
+  <li data-list-item-id="e1706da99a524e5b7f479902a0105c170">
+    <strong>Discount details:</strong> Your code unlocks 20% off YouTube Premium
+    for 6 consecutive months, whether you're new to YouTube Premium or already
+    subscribed.
+  </li>
+  <li data-list-item-id="ee2090abcbeb565df6f8c500c796b1d1c">
+    <strong>Immediate availability:</strong> Benefits become available to
+    eligible users as soon as you subscribe to Nitro and must be claimed in your
+    Nitro Home.
+  </li>
+  <li data-list-item-id="ee127ed74c65f3552363e529f7af7248e">
+    <strong>Redemption: </strong>Claim your one-time promotional code and redeem
+    it at youtube.com/premium. All promo codes expire on
+    <strong>December 31, 2027</strong>. Please note that redemption methods are
+    subject to change including updates to the activation flow. This offer
+    cannot be combined with any other YouTube Premium promotion or discount
+    code, and codes cannot be stacked. Google reserves the right to modify or
+    update the offer or redemption method at any time. Your YouTube Premium plan
+    is managed and billed through YouTube; you can manage your plan by
+    navigating to the Purchases and Memberships section in your YouTube
+    settings.
+  </li>
+  <li data-list-item-id="ee7db9c0fe80fe32d42b299ece3566d01">
+    <strong>Premium Terms apply:</strong>
+    <a
+      href="https://www.youtube.com/t/terms_paidservice#premium"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><span class="wysiwyg-underline"
+        >https://www.youtube.com/t/terms_paidservice#premium</span
+      ></a
+    >
+  </li>
+</ul>
+<div class="warn-box">
+  <span style="color: #434343"
+    ><strong>Important</strong>:  If you have an existing YouTube Premium
+    subscription, you must cancel it prior to redeeming your promotional code.
+    After completing the cancellation, you can resubscribe applying your coupon
+    code at checkout, even if your current billing cycle is still active. Your
+    promotional discount via this Discord offer will apply to the upcoming
+    billing cycle, preventing any double charges. See below for step by steps
+    instructions on how to cancel your YouTube Premium subscription and
+    resubscribe using the coupon code. </span
+  >
+</div>
+<div class="info-box">
+  <span style="color: #434343"
+    ><strong>Note:</strong> If you cancel your Nitro subscription, you can still
+    use any previously claimed benefits until they expire, but you won't receive
+    new offers until you resubscribe.</span
+  >
+</div>
+<h2 id="h_01M28JRX3SJKNY0F26Q295DGTT">Eligibility Requirements</h2>
+<div class="info-box">
+  <span style="color: #434343"
+    ><strong>Note</strong>: This promotion is eligible in the following regions:
+    United States, Great Britain, Germany, Canada, France, Australia, Japan
+    Taiwan, Netherlands, Poland, Sweden, Mexico, Philippines, Saudi Arabia,
+    Spain, Turkey, Norway, Switzerland, Italy, Austria, Thailand, Belgium,
+    Vietnam, Indonesia, Denmark, Czech Republic, Ukraine, Finland, Hong Kong,
+    New Zealand, Singapore, Chile, and Argentina.</span
+  >
+</div>
+<p>You are eligible:</p>
+<ul>
+  <li data-list-item-id="e5e546d05e5bdd323e4d8eaeeeb50d81e">
+    With an active
+    <a
+      href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><span class="wysiwyg-underline">Discord Nitro subscription</span></a
+    >
+    (through a paid subscription, Nitro gift, and some Nitro trials, with
+    exceptions noted below)
+  </li>
+  <li data-list-item-id="e0c27e17bc7db40469c1538e6c03fe66d">
+    With an individual YouTube Premium plan or no existing YouTube Premium
+    subscription
+  </li>
+</ul>
+<p>You are not eligible if:</p>
+<ul>
+  <li data-list-item-id="ef87f5a731573fc1e5cb9a47b5b3f6e5f">
+    Using Nitro Credits without a Nitro subscription.
+  </li>
+  <li data-list-item-id="e8f92daf1f8a950673e8ef04b8913ad2b">
+    You are a Nitro Classic or Nitro Basic subscriber.
+  </li>
+  <li data-list-item-id="e94302c9ce11ff6f4d5a2f3fc29fdc503">
+    Your Nitro subscription came from a third-party inbound promotion (for
+    example, a 1-month Nitro trial from an external partner) or a large-scale
+    campaign trial (for example, an annual Nitro trial offered to all users).
+  </li>
+  <li data-list-item-id="e1b0861cc88a710a8e30e4e4a2dd99bf6">
+    Your YouTube Premium subscription was purchased through, or is currently
+    managed by, a third party outside of YouTube.
+  </li>
+  <li data-list-item-id="e3d563776e43405fdeb0df298577af086">
+    You are subscribed to a YouTube Premium Family plan. Only individual YouTube
+    Premium plans are eligible for this offer.
+  </li>
+</ul>
+<div class="info-box">
+  <span style="color: #434343"
+    ><strong>Note:</strong> Once you unlock a benefit, you will not be eligible
+    for a refund on your Nitro subscription. See our </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy#h_01J5BJ0CVX6QRXWNJHY3TM97FG"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Refund Policy</span></a
+  ><span style="color: #434343"> for more details.</span>
+</div>
+<h2 id="h_01M28JZ4CW98J08314AV39Q47X">How to Access Your Discount Code</h2>
+<p>
+  1. On desktop or browser, select the <strong>Direct Messages</strong> icon
+  [<img
+    src="https://support.discord.com/hc/article_attachments/43428548244503"
+    width="24"
+    height="18"
+  />] in the upper-left corner. 
+</p>
+<p>
+  2. Press the <strong>Nitro Home</strong> tab to navigate to the
+  <strong>Nitro Home</strong> page. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/43428573550487"
+    alt="Direct Messages Icon"
+    width="298"
+    height="256"
+  />
+   <img
+    src="https://support.discord.com/hc/article_attachments/43428548246423"
+    alt="Nitro Tab"
+    width="297"
+    height="254"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M28JZ4CZRA86AM99GE9V0VGA">
+  <span style="color: #666666"
+    ><strong>Direct Message</strong>s Icon (Left) and <strong>Nitro</strong> Tab
+    (Right)</span
+  >
+</h4>
+<p>
+  3. Locate and select the <strong>YouTube Premium</strong> card under the Nitro
+  Rewards section.
+</p>
+<p>
+  4. Press <strong>Unlock Reward</strong> to open the YouTube Premium window and
+  see your available benefits.
+</p>
+<p>
+  5. Select <strong>Unlock </strong>to reveal your code—you can copy it
+  immediately or return to view it later.
+</p>
+<h2 id="h_01M2GVH8RZYMDKFGEAFDNSWFCT">
+  How to Redeem Your Discount Code on YouTube
+</h2>
+<p><strong>New YouTube Premium Subscribers</strong></p>
+<p>After claiming your code (steps 1-5 above), here's how to redeem it:</p>
+<p>
+  1. Go to
+  <a href="http://youtube.com/redeem" target="_blank" rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">youtube.com/redeem</span></a
+  >. 
+</p>
+<p>2. Enter your code in the promo code field. </p>
+<p>3. Complete sign-up with the discount applied.</p>
+<p><strong>Currently Subscribed to YouTube Premium</strong></p>
+<p>
+  If you currently have an active YouTube Premium subscription, you’ll need to
+  cancel and resubscribe to use your code.
+</p>
+<p>1. Log in to your YouTube account.</p>
+<p>
+  2. Go to manage your<a
+    href="https://www.youtube.com/paid_memberships"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span class="wysiwyg-underline">purchases and subscriptions</span></a
+  >.
+</p>
+<p>
+  3. Cancel your subscription temporarily by pressing
+  <strong>Cancel</strong> and following the steps.
+</p>
+<p>
+  4. Go to
+  <a href="http://youtube.com/redeem" target="_blank" rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">youtube.com/redeem</span></a
+  >.
+</p>
+<p>5. Enter your code in the promo code field.</p>
+<p>
+  6. Continue through checkout to resume your subscription. Your discount will
+  be applied starting on the next bill.
+</p>
 <h1 id="h_01KQZ3D7ZFZV9JCQXQMJFCCENW">Frequently Asked Questions</h1>
 <p>
   <strong>Q: I'm a Nitro member but I don't see Nitro Rewards. Why?</strong> 
@@ -874,7 +1102,7 @@
 <p>
   A: Xbox Game Pass Starter Edition is intended for Nitro members who do not
   already have an active Xbox Game Pass subscription. If you already subscribe
-  to Xbox Game Pass, this benefit is notbe applicable.
+  to Xbox Game Pass, this benefit is not be applicable.
 </p>
 <p>
   <strong>Q: What counts toward my 10 hours of cloud gaming per month?</strong> 
@@ -884,9 +1112,11 @@
   Hours reset at the beginning of each calendar month.
 </p>
 <p>
-  <strong>Q. Can I play my own games with the 10 hours of cloud gaming?</strong
-  ><br />A: Yes, if a game is cloud playable and you own it digitally with Xbox,
-  you can stream it using your 10 hours of cloud gaming each month.
+  <strong>Q. Can I play my own games with the 10 hours of cloud gaming?</strong>
+</p>
+<p>
+  A: Yes, if a game is cloud playable and you own it digitally with Xbox, you
+  can stream it using your 10 hours of cloud gaming each month.
 </p>
 <p>
   <strong
@@ -1016,7 +1246,7 @@
 <p>
   A: If you're experiencing technical issues or suspect you've encountered a
   bug, please reach out to
-  <a href="http://dis.gd/support"
+  <a href="http://dis.gd/support" target="_blank" rel="noopener noreferrer"
     ><span class="wysiwyg-underline">Discord Support</span></a
   >
   for help. We can investigate and assist you further.
