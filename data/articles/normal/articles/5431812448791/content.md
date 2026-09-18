@@ -32,7 +32,7 @@
     some types of information used for specific purposes. </span
   >
 </p>
-<h2 id="h_01M2NVBSCAYFEERH82TK29QX69">
+<h2 id="h_01M2RR7AYP3N0BQN7A68P4TXC0">
   <span style="font-weight: 400"
     >Information you can delete directly from the services</span
   >
@@ -47,7 +47,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e532ec0e3c50351f9c775f776cb62fba1"
+    data-list-item-id="e947fddf9d2249dfbb3179f52638ebb3b"
   >
     <span style="font-weight: 400"
       >You can edit or delete any message you have sent or content you have
@@ -57,7 +57,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e7517fab8c364331402a333c0efd7116e"
+    data-list-item-id="e37c46a60f439f459449922e5ddbc9b24"
   >
     <span style="font-weight: 400"
       >You can edit or delete a Discord server if you have the permissions
@@ -67,7 +67,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e58e636b16a0564707784c0b6268d6a40"
+    data-list-item-id="eba8c5fa10ea17770886e0defd53e8cd5"
   >
     <span style="font-weight: 400"
       >You can edit or delete a channel from a Discord server if you have the
@@ -86,7 +86,7 @@
     proactively detect content that violates our policies). </span
   >
 </p>
-<h2 id="h_01M2NVBSCASJEXH36DQWT9XS6E">
+<h2 id="h_01M2RR7AYPGR63PVX2B1FR6WCV">
   <span style="font-weight: 400"
     >Information retained until your account is deleted</span
   >
@@ -108,7 +108,7 @@
     your account” section below.</span
   >
 </p>
-<h2 id="h_01M2NVBSCAANV5WYVDYQW43D2S">
+<h2 id="h_01M2RR7AYPMR66NSMRS3FSR5GF">
   <span style="font-weight: 400">Retention periods for specific purposes</span>
 </h2>
 <p>
@@ -123,7 +123,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e15701f9d3e56e22effe16a8c9dcde045"
+    data-list-item-id="e30a236c1b2cdf060b9578ca71a45d123"
   >
     <strong>Age verification</strong
     ><span style="font-weight: 400"
@@ -134,7 +134,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e0e945eb65f601d7e2680184f22c1b6a9"
+    data-list-item-id="e56f7c08f625c171d41c10493eab497b4"
   >
     <strong>Backups</strong
     ><span style="font-weight: 400"
@@ -145,7 +145,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e52e2b4d334e9765e675d255a3474db82"
+    data-list-item-id="ede4a9c20852331426f456940f967ce2d"
   >
     <strong>Compliance with our legal obligations</strong
     ><span style="font-weight: 400"
@@ -158,7 +158,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="eae88740440972bece3ad3fb70bf15157"
+    data-list-item-id="e15813dcab6f4714acbf39e81db2919ab"
   >
     <strong>To meet our safety and security commitments</strong
     ><span style="font-weight: 400"
@@ -174,7 +174,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e5ac74f9c7c67399fec4934ab1824346b"
+    data-list-item-id="e323856d860c272ee7c9a07c70d869d36"
   >
     <strong>To exercise or defend legal claims. </strong
     ><span style="font-weight: 400"
@@ -187,7 +187,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e0a97e48a95b0f7d59adbd7aa3eb2947d"
+    data-list-item-id="e20adf079f110320cb673c95dd4df61de"
   >
     <strong>Continuity of our service</strong
     ><span style="font-weight: 400"
@@ -205,7 +205,7 @@
     >
   </li>
 </ul>
-<h2 id="h_01M2NVBSCBT6B5E6JAFMDW3S56">
+<h2 id="h_01M2RR7AYQT6GY13YA3EJQW1SV">
   <span style="font-weight: 400"
     >What happens when you delete your account</span
   >
@@ -223,7 +223,7 @@
     identify you and is no longer tied to you as an individual. </span
   >
 </p>
-<h2 id="h_01M2NVBSCBJJ7K5AKCSWMYEVRZ">
+<h2 id="h_01M2RR7AYQ0A7P13WZ1XVJDD8W">
   <span style="font-weight: 400">Your rights</span>
 </h2>
 <p>
@@ -242,14 +242,14 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e5c4b93fcb59ed4304ca7ebdf88b13a06"
+    data-list-item-id="e047b012e1c8fbc6586bd40c2bd90ae16"
   >
     <span style="font-weight: 400">Right of access to your personal data</span>
   </li>
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="ed8ea96a51cb848f4608aebbf6d78748f"
+    data-list-item-id="e9b62868938ffb44ca414fd27bbdabe87"
   >
     <span style="font-weight: 400"
       >Right to rectify your personal data if they are incorrect</span
@@ -258,14 +258,14 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e8b50565f372b76fe20a77ae62af9c976"
+    data-list-item-id="eedf7bcdf3eb24af85c473bf2f993973e"
   >
     <span style="font-weight: 400">Right to erase your personal data</span>
   </li>
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e96af6ca9f17107e1973407c9d2dcfa7b"
+    data-list-item-id="e028de83359da80a7efe31a5f8f91f71a"
   >
     <span style="font-weight: 400"
       >Right to limit the processing of your personal data</span
@@ -274,7 +274,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e341b2b3d908393204772ce78074b8340"
+    data-list-item-id="ef5b272fa38b4351028f3f52685846142"
   >
     <span style="font-weight: 400"
       >Right to the portability of your personal data</span
@@ -283,7 +283,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e10c4234fa8999b36c65e6d9ffea16fa8"
+    data-list-item-id="e29cbbd8dac1bd4d6441f06d5a6bbfe75"
   >
     <span style="font-weight: 400"
       >Right to object to the processing of your personal data</span
