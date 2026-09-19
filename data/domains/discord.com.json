@@ -62,10 +62,11 @@
     "snowsgiving-tale-2022-pl",
     "prod-wf1",
     "snowsgiving-tale-2022-sv-se",
+    "email.recruiting",
     "seo",
     "support-apps",
-    "rtc-sfu-finder",
     "prod-wf3",
+    "rtc-sfu-finder",
     "o24.ptr4166",
     "crawl-35-196-132-85.ptr",
     "updates",
@@ -77,5 +78,5 @@
     "o13.ptr7216",
     "snowsgiving-tale-2022-zh-cn"
   ],
-  "subdomain_count": 76
+  "subdomain_count": 77
 }
