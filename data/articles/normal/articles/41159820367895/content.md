@@ -346,8 +346,8 @@
   </li>
   <li data-list-item-id="e74c3ed9f1ca84bb4b882aa9d1d9f07a7">
     After redeeming, open Discord in your browser at
-    <a href="http://discord.com/" target="_blank" rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">discord.com</span></a
+    <a href="http://discord.com/login" target="_blank" rel="noopener noreferrer"
+      ><span class="wysiwyg-underline">discord.com/login</span></a
     >
     to spend on things like Nitro, the Shop, and more. 
   </li>

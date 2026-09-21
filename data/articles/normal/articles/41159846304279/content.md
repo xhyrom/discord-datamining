@@ -46,6 +46,14 @@
       ><span class="wysiwyg-underline">GameStop</span></a
     >
   </li>
+  <li data-list-item-id="ead005902a5587f57be201100d8d07e61">
+    <a
+      href="https://www.target.com/p/discord-gift-card-email-delivery/-/A-1013530846"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><span class="wysiwyg-underline">Target</span></a
+    >
+  </li>
 </ul>
 <h1 id="h_01KW3217Q6GEP4SGVEGND7YZJK">
   <strong>Don't See Your Country Listed?</strong>
