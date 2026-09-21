@@ -1,0 +1,23 @@
+.applicationIcon_c4891f {
+  margin-inline-end: 8px;
+}
+.seasonalIcon_c4891f {
+  height: 120px;
+}
+.full-motion .transition__5fbe9 {
+  transition: transform 0.2s ease;
+}
+.directionDown__5fbe9 {
+  transform: rotate3d(0, 0, -1, 0deg);
+}
+.directionRight__5fbe9 {
+  transform: rotate3d(0, 0, -1, 90deg);
+}
+.directionLeft__5fbe9 {
+  transform: rotate3d(0, 0, -1, -90deg);
+}
+.directionUp__5fbe9 {
+  transform: rotate3d(0, 0, -1, 180deg);
+}
+
+/*# sourceMappingURL=570385.76e58bb413ace330.css.map*/
