@@ -1,16 +1,16 @@
 {
   "full": {
-    "host_version": "1.0.9258",
+    "host_version": "1.0.9259",
     "module_version": 1,
-    "package_sha256": "abdca8e34d32ec0fdcd36efbda3c22496a5b49694330df0ecd3d0365a66f9a9a",
-    "url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x64/1.0.9258/discord_krisp/1/full.distro"
+    "package_sha256": "9b15d139df27b602edf8856c1abf9c0e1ed285a36dc6e35bd1e5b5fe5714090d",
+    "url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x64/1.0.9259/discord_krisp/1/full.distro"
   },
   "deltas": [
     {
-      "host_version": "1.0.9257",
+      "host_version": "1.0.9258",
       "module_version": 1,
-      "package_sha256": "a651034e6b3e94428a187291562d84ffc53e177ae1a402b27370435cc3b60d26",
-      "url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x64/1.0.9258/discord_krisp/1/from/1.0.9257/1"
+      "package_sha256": "59c4c6e56754c07cdc91ec2ebc3d156e607bd5c96902226500f63e65c853fd37",
+      "url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x64/1.0.9259/discord_krisp/1/from/1.0.9258/1"
     }
   ]
 }
