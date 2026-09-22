@@ -27,8 +27,10 @@
     "18+",
     "channels",
     "activity status",
+    "teen",
     "privacy",
     "users",
+    "age verification",
     "sensitive content filters",
     "United Kingdom",
     "underage",
@@ -43,7 +45,9 @@
     "Center",
     "article",
     "gated",
-    "friend requests"
+    "friend requests",
+    "age assurance",
+    "experience"
   ],
   "user_segment_ids": []
 }

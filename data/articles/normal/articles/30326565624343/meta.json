@@ -20,6 +20,7 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
+    "Discord",
     "account",
     "security",
     "face",
@@ -37,11 +38,15 @@
     "gap",
     "k-id",
     "age-restricted",
+    "on",
     "united kingdom",
     "uk online safety act",
     "uk osa",
     "australia",
-    "i've been locked out"
+    "i've been locked out",
+    "group",
+    "confirm",
+    "your"
   ],
   "user_segment_ids": []
 }
