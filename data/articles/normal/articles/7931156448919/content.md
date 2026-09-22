@@ -171,11 +171,14 @@
   <span style="color: #666666">Recent Activity History on User Profile</span>
 </h4>
 <h2 id="h_01M2H59ECXJJ3QQR3MMY3NFFK4">On Global Activity Cards</h2>
-<p class="wysiwyg-text-align-center">
+<p>
   You can also view <strong>activity cards</strong> by checking a user’s profile
   on mobile or in the <strong>Friends List </strong>on desktop. These cards
   display the recent activity of friends and people you interact with in your
-  servers.<br /><img
+  servers.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
     src="https://support.discord.com/hc/article_attachments/43516363199383"
     alt="Activity Card in Friends List on Desktop"
     width="624"

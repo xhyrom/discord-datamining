@@ -184,38 +184,24 @@
   Sensitive Content Filters for the Teen Age Group
 </h1>
 <p>
-  <span style="color: #4f545c">As part of our additional </span
-  ><a
+  As part of our additional
+  <a
     href="https://support.discord.com/hc/en-us/articles/42178056096663"
     target="_blank"
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">teen safety protections</span></a
-  ><span style="color: #4f545c"
-    >, we have standard sensitive content filter settings for users in the teen
-    age group:</span
-  >
+  >, we have standard sensitive content filter settings for users in the teen
+  age group:
 </p>
 <ul>
-  <li
-    class="wysiwyg-list-color"
-    style="--wysiwyg-list-marker-color: #4f545c"
-    data-list-item-id="ef40e1687145e26a3a1d824e85b3a12b9"
-  >
-    <span style="color: #4f545c">Direct messages from friends: Blur</span>
+  <li data-list-item-id="efa068942c3b0dacd53e781c510566321">
+    Direct messages from friends: Blur
   </li>
-  <li
-    class="wysiwyg-list-color"
-    style="--wysiwyg-list-marker-color: #4f545c"
-    data-list-item-id="e7f7e4691f8df757aa25fadec6ef6abc3"
-  >
-    <span style="color: #4f545c">Direct messages from others: Block</span>
+  <li data-list-item-id="e13d2122292a9f21beed765b644a59bcb">
+    Direct messages from others: Block
   </li>
-  <li
-    class="wysiwyg-list-color"
-    style="--wysiwyg-list-marker-color: #4f545c"
-    data-list-item-id="e09979c01479292a8943535384a4ab74d"
-  >
-    <span style="color: #4f545c">Messages in server channels: Blur</span>
+  <li data-list-item-id="eb02107e4960da30f20dfd6a09204ed12">
+    Messages in server channels: Blur
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">

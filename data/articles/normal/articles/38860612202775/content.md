@@ -125,7 +125,10 @@
     ><strong>Note: </strong>Teen safety protections may vary slightly depending
     on where you live, as some regions have specific requirements under local
     regulation. For region-specific information, see our directory </span
-  ><a href="https://support.discord.com/hc/en-us/articles/42653320919447"
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/42653320919447"
+    target="_blank"
+    rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
   ><span style="color: #434343">.</span>
 </div>
@@ -342,8 +345,12 @@
 </p>
 <p>
   If you're an adult and want to access age restricted content, spaces, or
-  settings, you can confirm your age group at<strong>
-    User Settings &gt; Account Status</strong
+  settings, you can confirm your age group at<strong> </strong
+  ><a
+    href="https://discord.com/settings/account-status"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong>User Settings &gt; Account Status</strong></a
   >. See more information
   <a
     href="https://support.discord.com/hc/articles/30326565624343"
@@ -485,6 +492,8 @@
   center article on
   <a
     href="https://support.discord.com/hc/en-us/articles/14155043715735-Family-Center-for-Parents-and-Guardians"
+    target="_blank"
+    rel="noopener noreferrer"
     ><span class="wysiwyg-underline">Family Center</span></a
   >.
 </p>

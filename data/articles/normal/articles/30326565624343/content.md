@@ -114,6 +114,8 @@
     place
     <a
       href="https://discord.com/safety/age-assurance-on-discord-vendors-methods-and-your-data"
+      target="_blank"
+      rel="noopener noreferrer"
       ><span class="wysiwyg-underline">here</span></a
     >.
   </li>
@@ -353,6 +355,8 @@
   in place
   <a
     href="https://discord.com/safety/age-assurance-on-discord-vendors-methods-and-your-data"
+    target="_blank"
+    rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
   >.
 </p>
@@ -662,6 +666,8 @@
   methods and vendors are described
   <a
     href="https://discord.com/safety/age-assurance-on-discord-vendors-methods-and-your-data"
+    target="_blank"
+    rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
   >. We evaluate methods and providers for data security, and we don't use your
   data for anything beyond confirming your age group.

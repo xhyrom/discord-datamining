@@ -68,7 +68,10 @@
   settings. You can use our age assurance options to confirm your age group
   directly at <strong>User Settings &gt; Account Status</strong>. Find more
   detailed instructions
-  <a href="https://support.discord.com/hc/articles/30326565624343"
+  <a
+    href="https://support.discord.com/hc/articles/30326565624343"
+    target="_blank"
+    rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
   >.
 </p>
