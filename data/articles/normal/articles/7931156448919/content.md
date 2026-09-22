@@ -2,114 +2,117 @@
   <p>
     <span class="wysiwyg-font-size-x-large"
       ><strong>What this article covers:</strong></span
-    ><br /> 
+    >
   </p>
   <ul>
-    <li data-list-item-id="ea9a5c298bcaa1af5913f1e27ac52d139">
-      <a href="#h_01HTJA8QV5YFRR10TQ9RBZM8SS"
+    <li data-list-item-id="ee2e1ef8c57cb5fb521eca4ce594849b0">
+      <a href="#h_01M2H59ECQPJAGJCK429CMT5EA"
         >What is Activity Sharing on Discord?</a
       >
     </li>
-    <li data-list-item-id="ea7cc2eb764d4cae92de75ca21636d72e">
-      <a href="#h_01HTJA8QV5TNKJRY98GXQSHJQQ">How to View Activity</a>
+    <li data-list-item-id="eba3649aab84e9de0fb58881da8aa9a58">
+      <a href="#h_01M2H59ECWYW42TST3FA05R3JA">How to View Activity </a>
       <ul>
-        <li data-list-item-id="e006196e8c798615f3759535e614cfe5e">
-          <a href="#h_01HTJA8QV5GP22NWFTXYNKW3GX">Within User Profiles</a>
+        <li data-list-item-id="ed2a3b9af65db109229850573151dd6e9">
+          <a href="#h_01M2H59ECWXPVPW091YZZ29QK3">Within User Profiles</a>
         </li>
-        <li data-list-item-id="e2ac4d54e79479f136dc9f4eed8184545">
-          <a href="#h_01HTJA8QV59M70ZB3DY4THZM27">On Global Activity Cards</a>
+        <li data-list-item-id="e4f27991ae624521c873a299b4f0c1433">
+          <a href="#h_01M2H59ECXJJ3QQR3MMY3NFFK4">On Global Activity Cards</a>
         </li>
-        <li data-list-item-id="ee6b1e6bb617ad319b76bb2b7e75e945c">
-          <a href="#h_01HTJA8QV5ZFGKBM8QNZA4S4JZ">As a Status Message</a>
+        <li data-list-item-id="e444103d473b83c3bc2257c862bb207e6">
+          <a href="#h_01M2H59ECZ05YZN59YDJWFTKF5">As a Status Message</a>
         </li>
       </ul>
     </li>
-    <li data-list-item-id="e6e28dcc4055a620f42b888e6c8d19ab1">
-      <a href="#h_01HTJA8QV5EZK2YFH8G4T6JD9D"
+    <li data-list-item-id="edc0b2428c4a22357d3e609c4af2ec72e">
+      <a href="#h_01M2H59ED0H4VWCPGMQ9WQV13Y"
         >How do I control who sees my activity?</a
       >
       <ul>
-        <li data-list-item-id="e7bc347e15eb98fb2319600a23dd1e104">
-          <a href="#h_01HTJA8QV5H72HKXSNDXME2NAS">Global Settings</a>
+        <li data-list-item-id="e80e061acfef24094c5f04b4855872c2c">
+          <a href="#h_01M2H5E7M6TXF39TZBHWS5CN7K"
+            >Activity Sharing for the Teen Age Group</a
+          >
         </li>
-        <li data-list-item-id="e525c2762fd3d7c10f8e30aa177dc1aef">
-          <a href="#h_01HTJA8QV57FRX82WP3T41Z3G8">Per-server Control</a>
+        <li data-list-item-id="e130378f447e3a67ecef8a55a1eb75b9c">
+          <a href="#h_01M2H59ED2AT0753X4ZT0GXVEG">Global Settings</a>
         </li>
-        <li data-list-item-id="ebb5e2aa429b9d620a7560e64aed1fd9c">
-          <a href="#h_01HTJA8QV5M1VHRW89M024JHDT">Connection Settings</a>
+        <li data-list-item-id="e0b44b83bdfb0de35c39f5f94f6e430b7">
+          <a href="#h_01M2H59ED7CXGPG7FH6X86KHJY">Per-Server Control</a>
         </li>
-        <li data-list-item-id="efcdf446ff784d2ce78190f8db7ef5fd9">
-          <a href="#h_01HTJA8QV5ABSA6FY6GEPMA946">Game Detection</a>
+        <li data-list-item-id="e89c2482e1cf8c8c05d13ff5661cca4fc">
+          <a href="#h_01M2H59EDA5JFVEGZ1F16YGA0D">Connection Settings</a>
         </li>
-        <li data-list-item-id="ea69b5ccdb9551d9ab412b32fa1ce4734">
-          <a href="#h_01J5NNZS153N6H9V1S5A6WMMPK">Recent Activity History</a>
+        <li data-list-item-id="ecdc62e31ff7559dce0963b84b666fce9">
+          <a href="#h_01M2H59EDBJB7T6KHH857TCSH5">Game Detection</a>
         </li>
-        <li data-list-item-id="ed8d88ea75ac206e097d90664f9aa8845">
-          <a href="#h_01K2JEV10ZY89CHQ5JXCSQPM10">Who Can Join My Game</a>
+        <li data-list-item-id="e71b85269dd2f02e6c4715743c262d3c9">
+          <a href="#h_01M2H59EDC9CS5A7N9NQ5SBMYR">Recent Activity History</a>
+        </li>
+        <li data-list-item-id="e4477e17276d86b653967a0f412551160">
+          <a href="#h_01M2H59EDG1HNHRZJM3NQTC2WD">Who Can Join My Game</a>
         </li>
       </ul>
     </li>
-    <li data-list-item-id="eef15a5fe7291d0a7f2e096ad5781e01d">
-      <a href="#h_01KP691D10QB9Z3Z49T61Q48HB"
+    <li data-list-item-id="e0c357c124cf862f4e96d9538935ae171">
+      <a href="#h_01M2H59EDH7TQ8NSYD3EDAJFGH"
         >How Activity Sharing Works with Profile Privacy Setting</a
       >
     </li>
   </ul>
 </div>
-<h1 id="h_01HTJA8QV5YFRR10TQ9RBZM8SS">What is Activity Sharing on Discord?</h1>
+<h1 id="h_01M2H59ECQPJAGJCK429CMT5EA">What is Activity Sharing on Discord?</h1>
 <p>
   When you engage in certain detectable activities (like playing a game or
   listening to music), Discord can display information about those activities.
   This includes when and how you engaged, as well as information about the
   activity. Some examples of the types of activity we show:
 </p>
-<ol>
-  <li data-list-item-id="e579a523e51d5bc1ad384bbcda3a32aba">
-    Detectable games you’re playing on a computer
-  </li>
-  <li data-list-item-id="e102ab99fb76909ac0477e3d66640db8c">
-    Games you’re playing on
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360003953831-Discord-and-Xbox-Connection-FAQ"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Xbox</a
-    >
-    or
-    <a
-      href="https://support.discord.com/hc/en-us/articles/4419534960919-Discord-and-PlayStation-Network-Connection-FAQ"
-      target="_blank"
-      rel="noopener noreferrer"
-      >PlayStation</a
-    >
-  </li>
-  <li data-list-item-id="ecc4fde45fd8743ed3821f7fd06121c22">
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360000167212-Discord-Spotify-Connection"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Spotify</a
-    >
-  </li>
-  <li data-list-item-id="ed3acc04ffc9918c55c68a3f824c55a6b">
-    <a
-      href="https://support.discord.com/hc/en-us/articles/9929188048023-Discord-and-Crunchyroll-Connection-FAQ"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Crunchyroll</a
-    >
-  </li>
-  <li data-list-item-id="eb7a914f576c11a19b658203d83d0ecbe">
-    1st and 3rd party
-    <a
-      href="https://support-apps.discord.com/hc/sections/26498424335895"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Activities on Discord</a
-    >
-  </li>
-  <li data-list-item-id="e6e5009a84fea86b86ca48b04cb867028">And more!</li>
-</ol>
+<p>1. Detectable games you’re playing on a computer</p>
+<p>
+  2. Games you’re playing on
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360003953831-Discord-and-Xbox-Connection-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Xbox</span></a
+  >
+  or
+  <a
+    href="https://support.discord.com/hc/en-us/articles/4419534960919-Discord-and-PlayStation-Network-Connection-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Playstation</span></a
+  >
+</p>
+<p>
+  3.
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360000167212-Discord-Spotify-Connection"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Spotify</span></a
+  >
+</p>
+<p>
+  4.
+  <a
+    href="https://support.discord.com/hc/en-us/articles/9929188048023-Discord-and-Crunchyroll-Connection-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Crunchyroll</span></a
+  >
+</p>
+<p>
+  5. 1st and 3rd party
+  <a
+    href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Activities on Discord</span></a
+  >
+</p>
+<p>6. And more!</p>
 <p>
   Games and activities that support Rich Presence will show even more cool stuff
   about what’s happening in the activity. 
@@ -122,137 +125,160 @@
     href="https://support.discord.com/hc/en-us/articles/8063233404823-Connections-Linked-Roles-Community-Members"
     target="_blank"
     rel="noopener noreferrer"
-    >here</a
+    ><span class="wysiwyg-underline">here</span></a
   >. 
 </p>
-<div class="exp-box">
-  <p>
-    <span style="color: #434343"
-      ><strong>Game activity notifications</strong> are currently an experiment
-      on the desktop app. To turn off these notifications, go to
-      <strong>User Settings &gt; Notifications </strong>and adjust your
-      <strong>Game Activity Notifications </strong>settings. To stop sharing
-      your game activities entirely, update your
-      <strong>Activity Privacy</strong> settings instead. Learn more details on
-      managing your activity settings </span
-    ><a href="#h_01HTJA8QV5EZK2YFH8G4T6JD9D"
-      ><span style="color: #434343">here</span></a
-    ><span style="color: #434343">. </span>
-  </p>
-  <p class="wysiwyg-text-align-center">
-    <img
-      src="https://support.discord.com/hc/article_attachments/33543076762007"
-      width="624"
-      height="301"
-    />
-  </p>
-  <h4 class="wysiwyg-text-align-center" id="h_01K0CXK58CYV5PDJRJK5A7YCH8">
-    <span style="color: #666666">Example of Game Activity Notification</span>
-  </h4>
+<div class="info-box">
+  <span style="color: #434343"
+    ><strong>Note: Game activity notifications</strong> are currently an
+    experiment on the desktop app. To turn off these notifications, go to
+    <strong>User Settings &gt; Notifications </strong>and adjust your
+    <strong>Game Activity Notifications </strong>settings. To stop sharing your
+    game activities entirely, update your
+    <strong>Activity Privacy</strong> settings instead. Learn more details on
+    managing your activity settings </span
+  ><a href="#h_01M2H59ED0H4VWCPGMQ9WQV13Y"
+    ><span style="color: #434343">here</span></a
+  ><span style="color: #434343">. </span>
 </div>
-<h1 id="h_01HTJA8QV5TNKJRY98GXQSHJQQ">How to View Activity</h1>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/43516378944151"
+    alt="Example of Game Activity Notification"
+    width="624"
+    height="301"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H59ECV4HHS24T68NGAWXKY">
+  <span style="color: #666666">Example of Game Activity Notification</span>
+</h4>
+<h1 id="h_01M2H59ECWYW42TST3FA05R3JA">How to View Activity </h1>
 <p>Activity can be seen in multiple places within the Discord app.</p>
-<h2 id="h_01HTJA8QV5GP22NWFTXYNKW3GX">Within User Profiles</h2>
+<h2 id="h_01M2H59ECWXPVPW091YZZ29QK3">Within User Profiles</h2>
 <p>
   When viewing your User Profile, you will be able to see your Recent Activity
-  history within the last 30 days.
+  history within the  last 30 days.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26988676547863"
-    width="328"
-    height="473"
+    src="https://support.discord.com/hc/article_attachments/43516363198359"
+    alt="Recent Activity History on User Profile"
+    width="296"
+    height="636"
   />
 </p>
-<h2 id="h_01HTJA8QV59M70ZB3DY4THZM27">On Global Activity Cards</h2>
-<p>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H59ECXHCETTNE7MRBJ464X">
+  <span style="color: #666666">Recent Activity History on User Profile</span>
+</h4>
+<h2 id="h_01M2H59ECXJJ3QQR3MMY3NFFK4">On Global Activity Cards</h2>
+<p class="wysiwyg-text-align-center">
   You can also view <strong>activity cards</strong> by checking a user’s profile
   on mobile or in the <strong>Friends List </strong>on desktop. These cards
   display the recent activity of friends and people you interact with in your
-  servers.
+  servers.<br /><img
+    src="https://support.discord.com/hc/article_attachments/43516363199383"
+    alt="Activity Card in Friends List on Desktop"
+    width="624"
+    height="444"
+  />
 </p>
 <p class="wysiwyg-text-align-center">
   <strong
     ><img
-      src="https://support.discord.com/hc/article_attachments/26988662546071"
-      width="624"
-      height="383" />
-    <img
-      src="https://support.discord.com/hc/article_attachments/26988662547479"
-      width="210"
-      height="439"
+      src="https://support.discord.com/hc/article_attachments/43516363201303"
+      alt="Activity Card on User Profile on Mobile"
+      width="249"
+      height="540"
   /></strong>
 </p>
-<h3 id="h_01HTJA8QV5EBWAT0D8Z93TGDQX">
-  <span style="color: #434343"
-    >Note: Activity Cards may appear in the server’s Members List during the
-    Recent Activity experiment. You can learn more about this </span
-  ><a
+<h4 id="h_01M2H59ECYSKKVEM1ZAWW5WRE8">
+  <span style="color: #666666"
+    >Activity Card in Friends List on Desktop (Top) &amp; Activity Card on User
+    Profile on Mobile (Bottom)</span
+  >
+</h4>
+<div class="info-box">
+  <strong>Note</strong>: Activity Cards may also appear in the server’s Members
+  List during  the Recent Activity experiment. You can learn more about this
+  experiment
+  <a
     href="https://support.discord.com/hc/en-us/articles/22045487931799"
     target="_blank"
     rel="noopener noreferrer"
-    ><span style="color: #434343"
-      >Members List Recent Activity experiment here</span
-    ></a
-  ><span style="color: #434343">.</span>
-</h3>
-<h2 id="h_01HTJA8QV5ZFGKBM8QNZA4S4JZ">As a Status Message </h2>
+    ><span class="wysiwyg-underline">here</span></a
+  >.
+</div>
+<h2 id="h_01M2H59ECZ05YZN59YDJWFTKF5">As a Status Message </h2>
 <p>
-  While in a server, the activity status may appear as a status in the Members
-  list depending on your settings.
+  While in a server, the activity may appear as a status in the Members list
+  depending on your settings.  
 </p>
-<p class="wysiwyg-text-align-center" id="h_01HTJA8QV500D229RX3F47SAG8">
+<p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26988662549015"
+    src="https://support.discord.com/hc/article_attachments/43516363201687"
+    alt="Activity Status in Members List on Desktop"
     width="624"
-    height="387"
+    height="444"
   />
 </p>
-<h1 id="h_01HTJA8QV5EZK2YFH8G4T6JD9D">
+<h4 class="wysiwyg-text-align-center" id="h_01M2H59ED0T6HTPC3KCK7STK24">
+  <span style="color: #666666">Activity Status in Members List on Desktop</span>
+</h4>
+<h1 id="h_01M2H59ED0H4VWCPGMQ9WQV13Y">
   How do I control who sees my activity?
 </h1>
-<div class="warn-box">
-  <p>
-    <strong>Important:</strong> Users in regions with regional restrictions may
-    have different settings to ensure an age-appropriate experience. They may
-    also need to complete
-    <a href="https://support.discord.com/hc/articles/30326565624343"
-      ><span class="wysiwyg-underline">age assurance</span></a
-    >
-    before sharing their activity. Please refer to the article below that
-    corresponds to your region for further details.
-  </p>
-  <ul>
-    <li data-list-item-id="e1f52bf28bce73ff64d832d8d7780e748">
-      <a href="https://support.discord.com/hc/en-us/articles/33362401287959"
-        ><span class="wysiwyg-underline">United Kingdom</span></a
-      >
-    </li>
-    <li data-list-item-id="e689f8fabc4823e32fb29b77ad618e842">
-      <a href="https://support.discord.com/hc/en-us/articles/38832004637207"
-        ><span class="wysiwyg-underline">Australia</span></a
-      >
-    </li>
-    <li data-list-item-id="e55343d056e6da5240389954e5fba1f79">
-      <a href="https://support.discord.com/hc/en-us/articles/38860612202775"
-        ><span class="wysiwyg-underline">Brazil</span></a
-      >
-    </li>
-  </ul>
-</div>
+<h2 id="h_01M2H5E7M6TXF39TZBHWS5CN7K">
+  Activity Sharing for the Teen Age Group
+</h2>
 <p>
-  By default in most regions, your current and recent activity can be viewed by
-  your friends or other users who are in the same server as you. You can control
-  this in a few ways.
+  As part of our additional
+  <a
+    href="https://support.discord.com/hc/en-us/articles/42178056096663"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">teen safety protections</span></a
+  >, we have standard activity sharing settings for users in the teen age group.
+  You can change this setting at any time, you don’t have to be in the adult age
+  group.
 </p>
-<h2 id="h_01HTJA8QV5H72HKXSNDXME2NAS">Global Settings</h2>
+<p>
+  <strong>Users in the teen age group:</strong> Start with their activity
+  sharing set to <strong>Friends &amp; Small Servers</strong>. This means their
+  full profile details will only be visible to their friends and members of any
+  small servers (&lt; 200 members) they join, not members of all shared
+  servers. 
+</p>
+<p>
+  <strong>Users in the adult age group or users who are unconfirmed:</strong>
+  Start with their activity sharing set to
+  <strong>Friends &amp; All Servers</strong> everywhere.
+</p>
+<div class="info-box">
+  <strong>Note: </strong>Teen safety protections may vary slightly depending on
+  where you live, as some regions have specific requirements under local
+  regulation. For region-specific information, see our directory
+  <a
+    href="https://support.discord.com/hc/en-us/articles/42653320919447"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >.
+</div>
+<div class="info-box">
+  <strong>Note: </strong>You're always in control. You can update your Activity
+  Sharing setting whenever you like in
+  <strong
+    >User Settings &gt; Activity Privacy &gt; Where I Share Activity</strong
+  >. You don’t have to be an adult to make a change.
+</div>
+<h2 id="h_01M2H59ED2AT0753X4ZT0GXVEG">Global Settings</h2>
 <p>
   In your global settings, you can control whether any activity of any kind is
   shown to others, regardless of whether they’re friends or not. 
 </p>
 <p>
   1. Select the <strong>cogwheel</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/41130737123991"
+    src="https://support.discord.com/hc/article_attachments/43516378950039"
     width="23"
     height="24"
   />] next to your Discord username to access your
@@ -267,7 +293,7 @@
   whether you’d like to share your activity with others:
 </p>
 <ul>
-  <li data-list-item-id="eacfa91d189edbec1158fae94dd3ba204">
+  <li data-list-item-id="efae6fb12ba2c5dd0045551d444e359e6">
     <strong>Share my activity</strong> - This toggle controls whether or not
     others on Discord can see your activity sharing.
   </li>
@@ -279,26 +305,26 @@
 <ul>
   <li
     class="wysiwyg-list-bold"
-    data-list-item-id="eb1e7c2f096c614a029d1b1bbe7720660"
+    data-list-item-id="e3b73fff6a5445912c76e5450b2140cd3"
   >
     <strong>Automatically share my activity with</strong>
     <ul>
-      <li data-list-item-id="e2aa5f761888f9cb52b5678df6dcd85ad">
+      <li data-list-item-id="e8f43e2593e6dd6d3d87566a8251f1a0d">
         <strong>Friends &amp; All Servers: </strong>Your activity is shared with
         friends and members of any server you join.
       </li>
-      <li data-list-item-id="e507ef4f1c1d731d2da7f50454d189e93">
+      <li data-list-item-id="e2758830cff5ca04402cb20130c70f374">
         <strong>Friends &amp; Small Servers Only: </strong>Your activity is
         shared with friends and members of any servers you join with 200 or
         fewer members.
       </li>
-      <li data-list-item-id="e88fdea5cd44d907f3eedce81432aecb9">
+      <li data-list-item-id="e6ecb1341514e2f66e6a9b9f99364937f">
         <strong>Friends Only: </strong>Your activity is shared with your friends
         only.
       </li>
     </ul>
   </li>
-  <li data-list-item-id="efb22051c27dc347b7d9fb70fce6d8e1e">
+  <li data-list-item-id="e689c468a9419fc6b13614f0b68fe0f78">
     <strong>My Servers</strong> - Further customize your activity sharing by
     enabling or disabling your activity sharing on a per-server basis. 
   </li>
@@ -309,154 +335,208 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/41130737125015"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/212; width: 100%"
+    src="https://support.discord.com/hc/article_attachments/43516363205911"
+    alt="“Share my activity toggle” in What Activity I Share"
     width="624"
-    height="185"
+    height="212"
   />
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01KTSAKVPAR1XX3951PX33S6PV">
+<h4 class="wysiwyg-text-align-center" id="h_01M2H59ED6W9RB4CCYYA0EQRJM">
   <span style="color: #666666"
-    ><strong>Share my activity toggle</strong> in Activity Sharing</span
+    >“Share my activity toggle” in What Activity I Share</span
   >
 </h4>
-<div class="info-box">
+<p>
   In certain countries and situations, this setting might be disabled by default
   for you. You can always change your settings by following the instructions
-  above.
-</div>
-<h2 id="h_01HTJA8QV57FRX82WP3T41Z3G8">Per-server Control</h2>
-<div class="tip-box">
-  <strong>Note:</strong> Activity Status is automatically enabled for servers
-  you join. However, you can adjust this default setting for servers with over
-  200 members in your Global Settings menu.
+  <a href="#h_01M2H59ED2AT0753X4ZT0GXVEG">above</a>. 
+</p>
+<h2 id="h_01M2H59ED7CXGPG7FH6X86KHJY">Per-server Control</h2>
+<div class="info-box">
+  <strong>Note</strong>:<strong> </strong>Sharing your activity is automatically
+  enabled for servers you join. However, you can adjust this default setting for
+  servers with over 200 members in your Global Settings menu.
 </div>
 <p>
   If you want to control which servers can see your recent activity, you can
   disable or enable settings per server.
 </p>
 <p>
-  1. Navigate to the server where you would like to enable or disable the
-  Activity Status settings.
+  1. Navigate to the <strong>server</strong> where you would like to enable or
+  disable the <strong>Activity Status settings</strong>.
 </p>
-<p>2. Right-click the server’s name or select the dropdown menu. </p>
+<p>
+  2. Right-click the <strong>server’s name</strong> or select the
+  <strong>dropdown menu</strong>. 
+</p>
 <p>
   3. Then, select <strong>Privacy Settings</strong>. This will give you the
   option to toggle the <strong>Activity Status</strong> setting.   
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/22536161154967"
-    width="624"
-    height="425"
+    src="https://support.discord.com/hc/article_attachments/43516363207063"
+    alt="Activity Status Toggle in Privacy Settings within a Server"
+    width="406"
+    height="495"
   />
 </p>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H59ED973R8E4YDGA7SXK34">
+  <span style="color: #666666"
+    >Activity Status Toggle in Privacy Settings within a Server</span
+  >
+</h4>
 <div class="info-box">
-  <strong>Note:</strong><br />- Members of a disabled server will still be able
-  to see your activity if they’re also friends with you or if they share another
-  server with you where your activity is allowed.<br />- Although the Activity
-  Status may be turned off for a specific server, you’ll still see the status on
-  your end unless you have it fully disabled.
+  <p><strong>Note</strong>: </p>
+  <ul>
+    <li data-list-item-id="e7ce7a4436d4348d33f67e18f4810f885">
+      Members of a disabled server will still be able to see your activity if
+      they’re also friends with you or if they share another server with you
+      where your activity is allowed.
+    </li>
+    <li data-list-item-id="e01a274d3d255ac58b4182353d0d018a7">
+      Although the Activity Status may be turned off for a specific server,
+      you’ll still see the status on your end unless you have it fully disabled.
+    </li>
+  </ul>
 </div>
 <div class="exp-box">
-  For the experiment that displays Activity Cards in a server’s Members List,
-  the server-specific privacy settings will not affect the experiment at this
-  time. The activity shown in that experiment features are controlled by global,
-  connection, and game-level controls within Discord.
+  <strong>Important</strong>: For the experiment that displays Activity Cards in
+  a server’s Members List, the server-specific privacy settings will not affect
+  the experiment at this time. The activity shown in that experiment features
+  are controlled by global, connection, and game-level controls within Discord.
 </div>
-<h2 id="h_01HTJA8QV5M1VHRW89M024JHDT">Connections Settings</h2>
+<h2 id="h_01M2H59EDA5JFVEGZ1F16YGA0D">Connections Settings</h2>
 <p>
   For any connected accounts that support sharing recent activity or rich
   presence, you’ll see a toggle to share your activity with others in the
   <strong>Connections</strong> menu located within your
-  <strong>User Settings &gt; Connections</strong>. 
+  <strong>User Settings &gt; Connected Apps</strong>. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/22536176616599"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/229; width: 100%"
+    src="https://support.discord.com/hc/article_attachments/43516363208855"
+    alt="Activity Sharing Toggle in Connected Apps"
     width="624"
-    height="264"
+    height="229"
   />
 </p>
-<p>You can enable or disable each individual connection.</p>
-<h2 id="h_01HTJA8QV5ABSA6FY6GEPMA946">Game Detection</h2>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H59EDBE4APE01NG7BRK2JQ">
+  <span style="color: #666666">Activity Sharing Toggle in Connected Apps</span>
+</h4>
+<p>
+  You can enable or disable each individual connection, but activity will only
+  be shared as long as the global settings are also on.
+</p>
+<h2 id="h_01M2H59EDBJB7T6KHH857TCSH5">Game Detection</h2>
 <p>
   You can enable or disable individual games from being displayed as activity in
   the <strong>Registered Games</strong> menu located within your
-  <strong>User Settings &gt; </strong>under <strong>Activity Settings</strong>.
+  <strong>User Settings &gt; </strong>under<strong> Games &amp; Apps</strong>.
   Activity will be shared as long as the global setting is also on.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/22536176626583"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/401; width: 100%"
+    src="https://support.discord.com/hc/article_attachments/43516363210135"
+    alt="Registered Games in Games &amp; Apps Settings "
     width="624"
-    height="237"
+    height="401"
   />
 </p>
-<h2 id="h_01J5NNZS153N6H9V1S5A6WMMPK">
-  <span style="color: #434343">Recent Activity History</span>
-</h2>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H59EDCY871VYSXN82S3YPR">
+  <span style="color: #666666"
+    >Registered Games in Games &amp; Apps Settings </span
+  >
+</h4>
+<h2 id="h_01M2H59EDC9CS5A7N9NQ5SBMYR">Recent Activity History</h2>
 <p>
   While viewing your User Profile, you can also clear your
   <strong>Game History</strong> to clear it from your activity history. 
 </p>
 <p>
   1. Select your <strong>User</strong> <strong>Profile</strong> in the
-  lower-left corner of the app to view your <strong>User Status </strong>menu.
+  lower-left corner of the app<strong> </strong>to view your
+  <strong>User Status </strong>menu.
 </p>
-<p class="wysiwyg-text-align-left">
+<p>
   2. Select your <strong>profile avatar</strong> to view your
-  <strong>full profile</strong>.  
+  <strong>full profile</strong>.   
 </p>
 <p class="wysiwyg-text-align-center">
   <strong
     ><img
-      src="https://support.discord.com/hc/article_attachments/25750646290583"
+      src="https://support.discord.com/hc/article_attachments/43516363211159"
+      alt="User Profile Showing Activity"
       width="624"
-      height="468"
+      height="583"
   /></strong>
 </p>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H6Z80V01CGCDG0GJK8ZD2W">
+  <span style="color: #666666">User Profile Showing Activity</span>
+</h4>
 <p>
   3. While here, press <strong>Activity </strong>within the profile categories.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26988676553111"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/532; width: 100%"
+    src="https://support.discord.com/hc/article_attachments/43516363212183"
+    alt="Activity Tab in Full Profile"
     width="624"
-    height="467"
+    height="532"
   />
 </p>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H59EDEJGT8YHKMJBEWVH7N">
+  <span style="color: #666666">Activity Tab in Full Profile</span>
+</h4>
 <p>
   4. This will bring you to your activity history where you can select the
-  ellipsis [<img
-    src="https://support.discord.com/hc/article_attachments/25750646300183"
+  <strong>ellipsis</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/43516363213079"
     width="30"
     height="24"
   />] to the right of the activity and press
-  <strong>Clear Game History</strong>.
-</p>
-<p class="wysiwyg-text-align-center">
-  <span style="color: #434343"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/26988694424087"
-      width="624"
-      height="497"
-  /></span>
+  <strong>Clear Game History</strong>. <strong> </strong>
 </p>
 <p>
   5. Within <strong>Clear Game History</strong> press the
-  <strong>Clear </strong>button in the lower-right corner to remove the activity
-  from your history.
+  <strong>Clear </strong>button<strong> </strong>in the lower-right corner to
+  remove the activity from your history. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25750632689047"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/479; width: 100%"
+    src="https://support.discord.com/hc/article_attachments/43516378957335"
+    alt="Clear Game History Option in Activity Menu "
     width="624"
-    height="427"
+    height="479"
   />
 </p>
-<h2 class="wysiwyg-text-align-left" id="h_01K2JEV10ZY89CHQ5JXCSQPM10">
-  Who Can Join My Games
-</h2>
+<p class="wysiwyg-text-align-center">
+  <img
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/464; width: 100%"
+    src="https://support.discord.com/hc/article_attachments/43516363216407"
+    alt="Clear Game History Confirmation"
+    width="624"
+    height="464"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H7A37ZWFDXRY7GFF7T6Y3A">
+  <span style="color: #666666"
+    >Clear Game History Option in Activity Menu (Top) &amp; Clear Game History
+    Confirmation (Bottom)</span
+  >
+</h4>
+<h2 id="h_01M2H59EDG1HNHRZJM3NQTC2WD">Who Can Join My Games</h2>
 <p>
   If you are sharing your activity and playing a game that supports rich
   presence, friends and other server members who are in the same voice channel
@@ -465,11 +545,40 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34162390324631"
-    alt="activity-sharing-who-can-join-my-games.png"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/241; width: 100%"
+    src="https://support.discord.com/hc/article_attachments/43516378958487"
+    alt="Game Join Settings "
+    width="624"
+    height="241"
   />
 </p>
-<h1 id="h_01KP691D10QB9Z3Z49T61Q48HB">
+<h4 class="wysiwyg-text-align-center" id="h_01M2H59EDG6YFHM8BB2KZADE8S">
+  <span style="color: #666666">Game Join Settings </span>
+</h4>
+<ul>
+  <li data-list-item-id="e38aeb6910204d7f6fb4bb5c378602818">
+    <strong>Allow friends to join my game</strong>: This allows for your Discord
+    friends to join the game you’re playing, which is being shared as your
+    activity.
+  </li>
+  <li data-list-item-id="ef7647d5895b1c9382c9d25bcac06926a">
+    <strong>Allow voice channel participants to join my game</strong>: This
+    allows for other server members who are in the same voice channel as you to
+    join the game you’re playing, which is being shared as your activity.
+    However, this feature is only available in non-Community servers.
+  </li>
+</ul>
+<p>
+  You can read more about how Game Invites work on Discord at this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/115001557452-Game-Invites"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">article</span></a
+  >.
+</p>
+<h1 id="h_01M2H59EDH7TQ8NSYD3EDAJFGH">
   How Activity Sharing Works With Profile Privacy Setting
 </h1>
 <p>
@@ -484,4 +593,3 @@
   <strong>Activity Sharing</strong> to friends only as well. You can choose to
   update both settings at once, or decline and manage them independently.
 </p>
-<p> </p>

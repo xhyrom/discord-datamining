@@ -2,34 +2,9 @@
   Discover how to create Discord<strong> age-restricted channels</strong> and
   maximize their effectiveness. Learn the step-by-step process for setting up
   dedicated age-restricted spaces in your server to properly manage adult
-  content, plus find out how to submit an appeal if you're incorrectly locked
-  out despite being over 18 years old.
+  content, plus find out how to confirm you’re an adult if you don’t have access
+  to an age-restricted channel.
 </p>
-<div class="warn-box">
-  <p>
-    <strong>Important:</strong> Users in regions with regional restrictions may
-    have to complete age assurance before accessing age-restricted channels and
-    content. Please refer to the article below that corresponds to your region
-    for further details.
-  </p>
-  <ul>
-    <li data-list-item-id="eb43b28e094e905115a5cce286f56518c">
-      <a href="https://support.discord.com/hc/en-us/articles/33362401287959"
-        ><span class="wysiwyg-underline">United Kingdom</span></a
-      >
-    </li>
-    <li data-list-item-id="e92d2910f11400de2df62bbdcff74b97e">
-      <a href="https://support.discord.com/hc/en-us/articles/38832004637207"
-        ><span class="wysiwyg-underline">Australia</span></a
-      >
-    </li>
-    <li data-list-item-id="e59746b9f630f2ddb4fcb04fc860d9b2a">
-      <a href="https://support.discord.com/hc/en-us/articles/38860612202775"
-        ><span class="wysiwyg-underline">Brazil</span></a
-      >
-    </li>
-  </ul>
-</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
@@ -37,23 +12,15 @@
     >
   </p>
   <ul>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e6d461341092b9de2750843a16c725cdc"
-    >
-      <a href="#h_01K0G0KP8ZDMVTXQV8FZ87PH08"
-        ><strong>How to Set Up an Age-Restricted Channel</strong></a
+    <li data-list-item-id="ef2276f7e68e0b51b3670ff0375ef0280">
+      <a href="#h_01M2H8S73TX3DZXCFR8GWVC34N"
+        >How to Set Up an Age-Restricted Channel</a
       >
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="ed5390369ea70b9d686edea6d0569caf6"
-    >
-      <a href="#h_01K0G0SS22WX8R353SNXNQ72VB"
-        ><strong
-          >Help! I'm over 18 years old, but got locked out of an age-restricted
-          Channel!</strong
-        ></a
+    <li data-list-item-id="e9fc39208cbf761126205129051071d4e">
+      <a href="#h_01M2H8S73YA0SVG1G3TQBG64TC"
+        >Help! I'm over 18 years old, but got locked out of an age-restricted
+        Channel!</a
       >
     </li>
   </ul>
@@ -65,63 +32,92 @@
 </p>
 <p>
   We understand that there's a wide variety of fun things to talk about when
-  chatting with close friends or new acquaintances, and that <strong
-    >what might be ok for you might be unsuitable for others</strong
-  >.
+  chatting with close friends or new acquaintances, and that what might be ok
+  for you might be unsuitable for others.
 </p>
 <p>
   To help keep age-restricted content in a dedicated spot that's clearly
   labeled, we've added a channel setting that allows you to designate a text
-  channel in your server (or multiple channels!) as age-restricted.
+  channel in your server (or multiple channels!) as age-restricted. If you are
+  looking to keep spoilers or other sensitive topics hidden from view until
+  members of your server choose to see them, and not specifically age-restricted
+  content, please check out
+  <a
+    href="https://support.discord.com/hc/en-us/articles/40248967926167-Spoiler-Channels-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">spoiler channels</span></a
+  >.
 </p>
 <p>
-  <span style="font-weight: 400"
-    >When enabled, anyone that opens the channel will be greeted with a
-    notification letting them know that the channel may contain adult
-    content:</span
-  >
+  When an age-restricted channel is enabled, anyone that opens the channel will
+  be greeted with a notification letting them know that the channel may contain
+  adult content and they must be an adult to enter.
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/33574711900951"
-      width="783"
-      height="516"
+      class="wysiwyg-image-resized"
+      style="aspect-ratio: 624/444; width: 100%"
+      src="https://support.discord.com/hc/article_attachments/43515751142935"
+      alt="Age-Restricted Channel in a Server"
+      width="624"
+      height="444"
   /></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01K0G0JZ3ZXPT8EH6Y0JKXCART">
+<h4 class="wysiwyg-text-align-center" id="h_01M2H8S73S2MVHQA4RXTRKJG24">
   <span style="color: #666666">Age-Restricted Channel in a Server</span>
 </h4>
-<h1 id="h_01K0G0KP8ZDMVTXQV8FZ87PH08">
+<h1 id="h_01M2H8S73TX3DZXCFR8GWVC34N">
   How to Set Up an Age-Restricted Channel
 </h1>
 <div class="info-box">
-  You can only set up an age-restricted channel on desktop or browser.
+  <strong>Note</strong>: You can only set up an age-restricted channel on
+  desktop or browser.
 </div>
-<p id="h_01K0G0MVH66ZX505CSFDW9PVBT">
+<p>
   1. To designate a channel as age-restricted on desktop or browser, start by
   pressing the <strong>Edit Channel icon</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/33574724084375"
+    src="https://support.discord.com/hc/article_attachments/43515741842327"
     width="24"
     height="24"
-  />] to the right of the <strong>channel name</strong>.
+  />] to the right of the <strong>channel name</strong>. 
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/33574711905815"
+    >  
+    <img
+      src="https://support.discord.com/hc/article_attachments/43515741845399"
+      alt="Edit Channel Icon "
       width="373"
       height="293"
-  /></span>
+    />
+      </span
+  >
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01K0G0P9MF5GKA1N1H0S94SG4M">
-  <span style="color: #2e3338">Edit Channel Icon </span>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H8S73WHKDY7RQF817HY6A2">
+  <span style="color: #666666">Edit Channel Icon </span>
 </h4>
 <p>
   2. Within the channel’s <strong>Overview tab</strong>, you'll see the
   <strong>Age-Restricted Channel </strong>option. Toggle it on, and you'll be
   good to go!
 </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/571; width: 100%"
+    src="https://support.discord.com/hc/article_attachments/43515741846295"
+    alt="“Age-Restricted Channel” option in Overview Tab"
+    width="624"
+    height="571"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H8S73XK6GGNBT0YK6XK1CN">
+  <span style="color: #666666"
+    >“Age-Restricted Channel” Option in Overview Tab</span
+  >
+</h4>
 <p>
   It's worth mentioning that while having a dedicated place for your
   age-restricted content is ok by Discord standards, there's still some material
@@ -133,21 +129,20 @@
     href="https://discord.com/guidelines"
     target="_blank"
     rel="noopener noreferrer"
-    >Community Guidelines</a
-  >.
+    ><span class="wysiwyg-underline">Community Guidelines</span></a
+  >. 
 </p>
-<h1 id="h_01K0G0SS22WX8R353SNXNQ72VB">
-  Help! I'm over 18 years old, but got locked out of an age-restricted Channel!
+<h1 id="h_01M2H8S73YA0SVG1G3TQBG64TC">
+  Help! I'm Over 18 Years Old, But Got Locked Out Of An Age-Restricted Channel!
 </h1>
-<p>
-  <span style="color: #2e3338"
-    >If you are over the age of 18 and have been locked out of an age-restricted
-    channel, or are unable to use age-restricted commands in DMs, you can appeal
-    by following the instructions in this </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/360041820932-Help-I-m-old-enough-to-use-Discord-in-my-country-but-I-got-locked-out"
+<div class="info-box">
+  <strong>Note</strong>: If you are an adult and have been locked out of an
+  age-restricted channel, you can confirm your age group by following the
+  instructions
+  <a
+    href="https://support.discord.com/hc/articles/30326565624343"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">Help Center article</span></a
-  ><span style="color: #2e3338">.</span>
-</p>
+    ><span class="wysiwyg-underline">here</span></a
+  >.
+</div>

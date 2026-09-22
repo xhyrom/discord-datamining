@@ -1,58 +1,28 @@
 <p>
-  If you are over the minimum age required for your country and have been locked
-  out of Discord, you can appeal your banned account by following the
-  instructions below.
+  We require all users to meet the minimum age requirement for their region. If
+  you meet that requirement and have been locked out of Discord, you can appeal
+  your banned account by following the instructions below.
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/36768944589335"
+      class="wysiwyg-image-resized"
+      style="aspect-ratio: 624/313; width: 100%"
+      src="https://support.discord.com/hc/article_attachments/43517442927639"
+      alt='"Your account is suspended" screen, showing an Active Violations card for a minimum age requirements violation'
       width="624"
-      height="332"
+      height="313"
   /></span>
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01KBKHTYAYF0MBSE19NYKZR3T7">
+<h4 class="wysiwyg-text-align-center" id="h_01M2GD8YYRQDSA5JZ4155PZR5G">
   <span style="color: #666666"
-    >Example of Banned Account due to Minimum Age Requirements</span
+    >"Your account is suspended" screen, showing an Active Violations card for a
+    minimum age requirements violation</span
   >
 </h4>
-<div class="toc-box">
-  <p>
-    <span class="wysiwyg-font-size-x-large"
-      ><strong>What this article covers:</strong></span
-    >
-  </p>
-  <ul>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e53aa2b30888e9cb21e7003879b88128a"
-    >
-      <a href="#h_01KBKHTYAZ6BA7DZWF7GCP2J60"
-        ><strong>How to Verify Your Age to Unlock Your Account</strong></a
-      >
-    </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e197dc443099a82d46854e09541617340"
-    >
-      <a href="#h_01KBKHTYB92NAQ9CXXD0A1BZKP"
-        ><strong>Frequently Asked Questions</strong></a
-      >
-    </li>
-  </ul>
-</div>
-<h1 id="h_01KBKHTYAZ6BA7DZWF7GCP2J60">
-  <strong>How to Verify Your Age to Unlock Your Account</strong>
+<h1 id="h_01M2GD8YYT8A2VRRZFM99G5TCE">
+  <strong>How to Confirm Your Age Group to Unlock Your Account</strong>
 </h1>
-<div class="form-box">
-  <strong>Important: </strong>If you are having trouble completing the
-  verification steps or you believe the determination is incorrect, you can
-  contact us for additional support
-  <a
-    href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000029731"
-    ><span class="wysiwyg-underline">here</span></a
-  ><span style="color: #434343">. </span>
-</div>
 <p>
   1. Log in to your locked Discord account.<br />2. Locate your
   <strong>Active</strong> <strong>Violations</strong> and open the
@@ -60,120 +30,109 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/36768960953239"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/424; width: 90%"
+    src="https://support.discord.com/hc/article_attachments/43517426762263"
+    alt="“Minimum Age Requirements” Violation Card"
     width="624"
-    height="439"
+    height="424"
   />
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01KBKHTYB36DZDRTWSH9YGCE8W">
+<h4 class="wysiwyg-text-align-center" id="h_01M2GD8YYWA64Q8FNT11A3B0VE">
   <span style="color: #666666">“Minimum Age Requirements” Violation Card</span>
 </h4>
 <p>
-  3. Press the <strong>Let us know</strong> button to start the appeal process.
+  3. Press “<strong
+    >Confirm you meet the minimum age requirement in your region” </strong
+  >to start the appeal process.
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01KBKHTYB4XJT67B6RSCS89NPN">
+<h4 class="wysiwyg-text-align-center" id="h_01M2GD8YYXRCF9DJPGPTD7Y9KS">
   <span style="color: #666666"
     ><img
-      src="https://support.discord.com/hc/article_attachments/36768944589719"
-      width="624"
-      height="456"
+      class="wysiwyg-image-resized"
+      style="aspect-ratio: 1094/655; width: 65%"
+      src="https://support.discord.com/hc/article_attachments/43517426763159"
+      alt='Violation detail card open, with the "Confirm you meet the minimum age requirement in your region" button highlighted'
+      width="1094"
+      height="655"
   /></span>
 </h4>
-<h4 class="wysiwyg-text-align-center" id="h_01KBKHV70XBCBYR16C2KSJ5JG4">
-  <span style="color: #666666">“Let Us Know” Button</span>
+<h4 class="wysiwyg-text-align-center" id="h_01M2GD8YYYTQWJSEDXTZF0HD0B">
+  <span style="color: #666666"
+    >Violation detail card open, with the "Confirm you meet the minimum age
+    requirement in your region" button highlighted</span
+  >
 </h4>
-<div class="tip-box">
-  <strong>Tip: </strong>If you’re in the UK, you will also see an option to
-  complete a face scan.
-</div>
-<p>4. Select <strong>Scan your ID</strong> on the verification page. </p>
-<ul>
-  <li data-list-item-id="ee0c51e4b9423e328a51269f261eddb54">
-    Allow access to your camera when prompted.
-  </li>
-  <li data-list-item-id="ea9ae6ff7bcd0c88950c2fbe3763db463">
-    Follow the on-screen instructions to complete the ID scan. 
-  </li>
-  <li data-list-item-id="ebb2c29579fa79282f76645bc781252ec">
-    Then, take a selfie to match the ID document by following the guidelines on
-    screen:
-    <ul>
-      <li data-list-item-id="e73754d8d98c4f65e288a042bd5655a38">
-        Make sure you are in a well-lit area
-      </li>
-      <li data-list-item-id="ed8160967b44db5802a68efb11cbb0cf0">
-        Remove any headwear
-      </li>
-      <li data-list-item-id="e2893f6f7c562125ac40c74cc90a3fe5e">
-        Keep your glasses on
-      </li>
-    </ul>
-  </li>
-  <li data-list-item-id="ec9b967d8de37998857f1a9790074d134">
-    Press <strong>Done</strong> to submit your scan.
-  </li>
-</ul>
+<p>
+  4. From here you’d choose a method to confirm your age group from the options
+  and follow the detailed instructions
+  <a
+    href="https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord#h_01KBKGJ94P37NG33SC7PAFTVKS"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >. What options are actually available to you depends on factors such as your
+  region or device, so the options you see may not be the same for everyone.
+</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/36768944589975"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/936; width: 50%"
+    src="https://support.discord.com/hc/article_attachments/43517442930583"
+    alt='"Confirm your age group" screen listing method options: Credit Card, Video Selfie, and ID Scan'
     width="624"
-    height="712"
+    height="936"
   />
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01KBKHTYB7QF87K11QW319DTXQ">
-  <span style="color: #666666">Scan your ID</span>
+<h4 class="wysiwyg-text-align-center" id="h_01M2GD8YYZBE9H8QV4MG7DAAFH">
+  <span style="color: #666666"
+    >"Confirm your age group" screen listing method options: Credit Card, Video
+    Selfie, and ID Scan</span
+  >
+</h4>
+<p>
+  5. If we determine you do meet the minimum age requirement in your region
+  (which is typically processed within seconds), you’ll see "<strong
+    >You’re all set</strong
+  >" at the top of your <strong>Active Violations</strong> screen, and you can
+  now log back into your account as your access should be fully restored.
+</p>
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 90%">
+  <img
+    style="aspect-ratio: 1296/1210"
+    src="https://support.discord.com/hc/article_attachments/43517442931863"
+    alt='"You&apos;re all set" confirmation banner, highlighted at the top of the Active Violations screen with a Log In button'
+    width="1296"
+    height="1210"
+  />
+</figure>
+<h4 class="wysiwyg-text-align-center" id="h_01M2GD8YZ1Q57WVKFK2R8C2NH7">
+  <span style="color: #666666"
+    >"You're all set" confirmation banner, highlighted at the top of the Active
+    Violations screen with a Log In button</span
+  >
 </h4>
 <div class="info-box">
-  <strong>Note:</strong> Identity documents submitted to our vendors are deleted
-  quickly—in most cases, immediately after age confirmation.
+  <p>
+    <strong>Note</strong>: If we determine you do not meet the minimum age
+    requirement in your region, you will see a notice at the top and be asked to
+    retry confirming your age group.
+  </p>
+  <p class="wysiwyg-text-align-center">
+    <strong
+      ><img
+        class="wysiwyg-image-resized"
+        style="aspect-ratio: 1301/1212; width: 90%"
+        src="https://support.discord.com/hc/article_attachments/43517442932887"
+        alt='"Doesn&apos;t meet the minimum age requirement" notice, highlighted, with a Retry button'
+        width="1301"
+        height="1212"
+    /></strong>
+  </p>
+  <h4 id="h_01M2GD8YZ2QWDC79Z70VHECS23">
+    <span style="color: #666666"
+      >"Doesn't meet the minimum age requirement" notice, highlighted, with a
+      Retry button</span
+    >
+  </h4>
 </div>
-<p>
-  5. If age assurance is successful (which is typically processed within
-  seconds), you’ll see <strong>Age Check Complete</strong> at the top of your
-  <strong>Active Violations</strong> screen, and you can now log back into your
-  account as your access should be fully restored.
-</p>
-<p class="wysiwyg-text-align-center">
-  <span style="color: #666666"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/36768960954647"
-      width="624"
-      height="511"
-  /></span>
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01KBKHTYB9ZMCEZ7770AP008NY">
-  <span style="color: #666666">Age Check Complete Notification</span>
-</h4>
-<h1 id="h_01KBKHTYB92NAQ9CXXD0A1BZKP">
-  <strong>Frequently Asked Questions</strong>
-</h1>
-<p>
-  <strong
-    >Q: Is my personal data stored during the age assurance process?</strong
-  >
-</p>
-<p>
-  A: Discord and its trusted partners do not permanently store personal identity
-  documents or your video selfies. Identity documents submitted to our vendors
-  are deleted quickly, and the video selfie used for facial age estimation never
-  leaves your device.
-</p>
-<p><strong>Q: How will Discord use my age assurance information?</strong></p>
-<p>
-  A: The information you provide will be used solely for age assurance purposes
-  and will not be used for anything else.
-</p>
-<p>
-  <strong
-    >Q: What if I am having issues verifying my age or I believe the age
-    verification was incorrect? </strong
-  >
-</p>
-<p>
-  If you are having trouble completing the verification steps or you believe the
-  determination is incorrect, you can contact us for
-  <a
-    href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000029731"
-    ><span class="wysiwyg-underline">additional support here</span></a
-  >.
-</p>

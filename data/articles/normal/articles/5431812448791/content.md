@@ -20,7 +20,7 @@
   <span style="font-weight: 400"
     >We retain personal information for as long as it is needed for the purposes
     for which we collected it. In general, this means that we retain your
-    personal data for as long as you have an active Discord account. Some
+    personal information for as long as you have an active Discord account. Some
     information you can delete directly from the services. We may also retain
     information for a certain period of time for specific purposes as described
     below. </span
@@ -32,11 +32,53 @@
     some types of information used for specific purposes. </span
   >
 </p>
-<h2 id="h_01M2RR7AYP3N0BQN7A68P4TXC0">
+<div class="toc-box">
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
+  <ul>
+    <li data-list-item-id="ec838c7827f9a0603557323d8d932380f">
+      <a href="#h_01M2PA577FSAYFFPAV8PT7VJWF"
+        ><span style="font-weight: 400"
+          >Information You Can Delete Directly from the Services</span
+        ></a
+      >
+    </li>
+    <li data-list-item-id="e2d706215f3558c638bb84fb36d7db059">
+      <a href="#h_01M2PA7MGRA800ECHBFNCA1CRT"
+        ><span style="font-weight: 400"
+          >Information Retained Until Your Account Is Deleted</span
+        ></a
+      >
+    </li>
+    <li data-list-item-id="ebb1483731466c31459e2d2a5ab3c2e33">
+      <a href="#h_01M2PA8611QADJ1YXTGHNQPXKV"
+        ><span style="font-weight: 400"
+          >Retention Periods for Specific Purposes</span
+        ></a
+      >
+    </li>
+    <li data-list-item-id="e9acd88cc1b52d8d6dc256aa5ff137743">
+      <a href="#h_01M2PA577GZ032JPZ20Y76HDXX"
+        ><span style="font-weight: 400"
+          >What Happens When You Delete Your Account</span
+        ></a
+      >
+    </li>
+    <li data-list-item-id="e96d1c5b57a4a1a48a9a923cb533ebb6a">
+      <a href="#h_01M2PA577GMDQ3BZJKMZR6NHA6"
+        ><span style="font-weight: 400">Your Rights</span></a
+      >
+    </li>
+  </ul>
+</div>
+<h1 id="h_01M2PA577FSAYFFPAV8PT7VJWF">
   <span style="font-weight: 400"
-    >Information you can delete directly from the services</span
+    >Information You Can Delete Directly From The Services</span
   >
-</h2>
+</h1>
 <p>
   <span style="font-weight: 400"
     >You may edit or erase content that you post within Discord. For
@@ -47,7 +89,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e947fddf9d2249dfbb3179f52638ebb3b"
+    data-list-item-id="ee6f1b16c600448c75582e4f582fb3071"
   >
     <span style="font-weight: 400"
       >You can edit or delete any message you have sent or content you have
@@ -57,7 +99,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e37c46a60f439f459449922e5ddbc9b24"
+    data-list-item-id="e017ab57d931fd7752be569d3c49e270a"
   >
     <span style="font-weight: 400"
       >You can edit or delete a Discord server if you have the permissions
@@ -67,7 +109,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="eba8c5fa10ea17770886e0defd53e8cd5"
+    data-list-item-id="ecf3e99bca2cc032f1742bf22722407ba"
   >
     <span style="font-weight: 400"
       >You can edit or delete a channel from a Discord server if you have the
@@ -86,11 +128,11 @@
     proactively detect content that violates our policies). </span
   >
 </p>
-<h2 id="h_01M2RR7AYPGR63PVX2B1FR6WCV">
+<h1 id="h_01M2PA7MGRA800ECHBFNCA1CRT">
   <span style="font-weight: 400"
-    >Information retained until your account is deleted</span
+    >Information Retained Until Your Account Is Deleted</span
   >
-</h2>
+</h1>
 <p>
   <span style="font-weight: 400"
     >We keep some data for the life of your Discord account. This includes
@@ -108,9 +150,9 @@
     your account” section below.</span
   >
 </p>
-<h2 id="h_01M2RR7AYPMR66NSMRS3FSR5GF">
-  <span style="font-weight: 400">Retention periods for specific purposes</span>
-</h2>
+<h1 id="h_01M2PA8611QADJ1YXTGHNQPXKV">
+  <span style="font-weight: 400">Retention Periods for Specific Purposes</span>
+</h1>
 <p>
   <span style="font-weight: 400"
     >Business and legal requirements may mean that we need to retain certain
@@ -120,21 +162,49 @@
   >
 </p>
 <ul>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e30a236c1b2cdf060b9578ca71a45d123"
-  >
-    <strong>Age verification</strong
-    ><span style="font-weight: 400"
-      >. If you submit an ID for an age verification appeal, we will delete it
-      within sixty days after the age appeal ticket is closed. </span
-    >
+  <li data-list-item-id="ec2fa2f1190e03a79e115c9da433eed00">
+    <strong>Age assurance. </strong>If you submit personal information to one of
+    our trusted providers as part of a process to confirm your age, Discord does
+    not access or receive this data directly. Our providers process this
+    information and send us your age signal only, which is retained until you
+    delete your account or update that information. How long your information is
+    retained by one of our providers varies depending on the process you use:
+    <ul>
+      <li data-list-item-id="eee8bc265a44930ad8e1f8ae6d239ec58">
+        <strong>On-device facial age estimation</strong>. Your video selfie is
+        processed locally on your device. This involves facial analysis, which
+        may be considered biometric or sensitive in some places. This data is
+        not used to identify you, it does not leave your device, and is deleted
+        once the process is completed.
+      </li>
+      <li data-list-item-id="e0ededc318de359d6c64d367eb67d6577">
+        <strong>ID scan</strong>. Your selfie and ID are analyzed (including
+        facial structure and ID details), which may be considered biometric or
+        sensitive data in some places. This data is not used to identify you and
+        is deleted once the process is completed.     
+      </li>
+      <li data-list-item-id="ee898e9f6f5e7686de5a19eea31c8017b">
+        <strong>Credit card check.</strong> Credit card details (such as card
+        number and billing information) are redacted and truncated once the
+        process is complete. A financial record (including truncated card
+        detail, transaction amount, and timestamp) is typically retained by our
+        provider for up to 10 years, consistent with tax and financial
+        obligations for payment processors.   
+      </li>
+      <li data-list-item-id="ebcefc78d0026f00290a160413de4afcd">
+        <strong>Age appeals or correction requests</strong>. If you contact
+        Discord Support to change or verify your age, you may use an
+        age-confirmation method noted above, in which case your data is retained
+        as described for the applicable process. If you submit an ID and selfie
+        as part of a manual review, it will be deleted after the verification is
+        complete. 
+      </li>
+    </ul>
   </li>
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e56f7c08f625c171d41c10493eab497b4"
+    data-list-item-id="e6e5e31670fa1b089262d84f167d072e0"
   >
     <strong>Backups</strong
     ><span style="font-weight: 400"
@@ -145,7 +215,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="ede4a9c20852331426f456940f967ce2d"
+    data-list-item-id="e2a1353cabba0fb64cfdcc75497fa2105"
   >
     <strong>Compliance with our legal obligations</strong
     ><span style="font-weight: 400"
@@ -158,7 +228,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e15813dcab6f4714acbf39e81db2919ab"
+    data-list-item-id="e81c3d96a30b4bedc298e848668f692d3"
   >
     <strong>To meet our safety and security commitments</strong
     ><span style="font-weight: 400"
@@ -174,7 +244,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e323856d860c272ee7c9a07c70d869d36"
+    data-list-item-id="ebdf42777fa9739f9752b994c640fe2b6"
   >
     <strong>To exercise or defend legal claims. </strong
     ><span style="font-weight: 400"
@@ -187,7 +257,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e20adf079f110320cb673c95dd4df61de"
+    data-list-item-id="e3936b7e98f9901025787a692f29f438a"
   >
     <strong>Continuity of our service</strong
     ><span style="font-weight: 400"
@@ -205,11 +275,11 @@
     >
   </li>
 </ul>
-<h2 id="h_01M2RR7AYQT6GY13YA3EJQW1SV">
+<h1 id="h_01M2PA577GZ032JPZ20Y76HDXX">
   <span style="font-weight: 400"
-    >What happens when you delete your account</span
+    >What Happens When You Delete Your Account</span
   >
-</h2>
+</h1>
 <p>
   <span style="font-weight: 400"
     >When you delete your account, we will typically first put your account on
@@ -223,9 +293,9 @@
     identify you and is no longer tied to you as an individual. </span
   >
 </p>
-<h2 id="h_01M2RR7AYQ0A7P13WZ1XVJDD8W">
-  <span style="font-weight: 400">Your rights</span>
-</h2>
+<h1 id="h_01M2PA577GMDQ3BZJKMZR6NHA6">
+  <span style="font-weight: 400">Your Rights</span>
+</h1>
 <p>
   <span style="font-weight: 400">As provided in our </span
   ><a href="https://discord.com/privacy"
@@ -242,14 +312,14 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e047b012e1c8fbc6586bd40c2bd90ae16"
+    data-list-item-id="e4542756ebc0cc2f1581610097988ec6c"
   >
     <span style="font-weight: 400">Right of access to your personal data</span>
   </li>
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e9b62868938ffb44ca414fd27bbdabe87"
+    data-list-item-id="e34a6d6871267c397f62d702d967eff57"
   >
     <span style="font-weight: 400"
       >Right to rectify your personal data if they are incorrect</span
@@ -258,14 +328,14 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="eedf7bcdf3eb24af85c473bf2f993973e"
+    data-list-item-id="ec8562b4ba9fc8c3c955b38c2f0ce66b3"
   >
     <span style="font-weight: 400">Right to erase your personal data</span>
   </li>
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e028de83359da80a7efe31a5f8f91f71a"
+    data-list-item-id="e247f13d5f1764666425a28fd800f541b"
   >
     <span style="font-weight: 400"
       >Right to limit the processing of your personal data</span
@@ -274,7 +344,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="ef5b272fa38b4351028f3f52685846142"
+    data-list-item-id="efe289ba76dcbcbe04f1a5972cf198807"
   >
     <span style="font-weight: 400"
       >Right to the portability of your personal data</span
@@ -283,7 +353,7 @@
   <li
     style="font-weight: 400"
     aria-level="1"
-    data-list-item-id="e29cbbd8dac1bd4d6441f06d5a6bbfe75"
+    data-list-item-id="eb64d334bb35f5613c040476e88d213ad"
   >
     <span style="font-weight: 400"
       >Right to object to the processing of your personal data</span
@@ -299,3 +369,4 @@
     ><span style="font-weight: 400">privacy@discord.com</span></a
   ><span style="font-weight: 400">.</span>
 </p>
+<p> </p>

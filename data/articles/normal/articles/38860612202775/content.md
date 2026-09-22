@@ -1,33 +1,17 @@
-<div class="info-box">
-  <strong>Note:</strong> We're currently testing a few additional age assurance
-  methods, so you may see more options than what’s listed below.
-</div>
 <p>
-  Starting March 9th, 2026, we're rolling out age assurance in Brazil to comply
-  with the Digital Statute for Children and Adolescents (Digital ECA), which
-  takes effect on March 17th. This is part of a government regulation that
-  applies to a wide range of digital services operating in Brazil.
-</p>
-<p>
-  When
-  <a
-    href="https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline"
-      >we delayed our global age assurance rollout</span
-    ></a
-  >
-  on February 24th, we shared that we are still committed to meeting legal
-  requirements in countries where they exist and Brazil is one of those
-  countries. 
+  Starting <strong>March 9th, 2026</strong>, we're rolling out age assurance in
+  Brazil to comply with the
+  <strong>Digital Statute for Children and Adolescents (Digital ECA)</strong>,
+  which takes effect on <strong>March 17th</strong>. This is part of a
+  government regulation that applies to a wide range of digital services
+  operating in Brazil.
 </p>
 <p>
   These changes bring updated default safety settings, age-gated access to
-  certain content and spaces, and a privacy-forward age check, using k-ID, for
-  adults who want to access age-restricted content or change certain default
-  settings. Most users who don't access age-restricted content won't need to
-  verify at all.
+  certain content and spaces, and a privacy-forward age assurance experience,
+  using k-ID, for adults who want to access age-restricted content or change
+  certain default settings. Users who don't want to access age-restricted
+  content won't need to confirm their age group at all.
 </p>
 <p>
   Our goal remains the same: apply the right protections for the right age
@@ -42,527 +26,465 @@
     >
   </p>
   <ul>
-    <li data-list-item-id="e3fb6ad740d728da30d6e05f69e8e1094">
-      <a href="#h_01KK9GZVFHV5Z060ADDT2RXMNY"
-        >What's Changing for Brazilian Users</a
+    <li data-list-item-id="e4eb2349b5f536ab9d49a71d72ea6c3e2">
+      <a href="#h_01M2H107H79JCWQZCEXTWKHKME">What Stays the Same for Teens</a>
+    </li>
+    <li data-list-item-id="eb1fbae94cf00ec7b4c1049e8d02cdcdb">
+      <a href="#h_01M2H10G1NGPNSXWWG9FZB93EK"
+        >What Are the Teen Safety Protections</a
       >
-    </li>
-    <li data-list-item-id="e31c26d47438daa278fd1567ee87f5a65">
-      <a href="#h_01KK9GZVFJ252J1BQHETXXNMXP">Privacy-Forward Age Assurance</a>
-    </li>
-    <li data-list-item-id="e46a9d797392e7a950bfb28f6b77787b4">
-      <a href="#h_01KK9GZVFTEXZ6AYBQZCMVDBPJ">Default Safety Settings</a>
       <ul>
-        <li data-list-item-id="e12b99d6d599b4a9ffb25bb7e7a31c5cf">
-          <a href="#h_01KK9GZVFVCBJGPTYHPRJKMWH3">Content Settings </a>
+        <li data-list-item-id="ed3544636d7f7a241c630e9ac44835ab8">
+          <a href="#h_01M2H107H8A96YS73Z5YK28S9N"
+            >Content: What You Can and Can't See</a
+          >
         </li>
-        <li data-list-item-id="ec909fdb1d65936d25078da6cb4716b30">
-          <a href="#h_01KK9GZVFY8NQEH8AN78D0KFYY">Social Settings</a>
+        <li data-list-item-id="e6bf9ff665c8d390fa0583280659c2b0b">
+          <a href="#h_01M2H107H9RYEQ415F1H50JNP5">Social: Who Can Reach You</a>
+        </li>
+        <li data-list-item-id="e332a6216a88028015334d01f06494679">
+          <a href="#h_01M2H107H9FKTQT9XQ7XDCV75W"
+            >Profile &amp; Activity: What Others Can See</a
+          >
         </li>
       </ul>
     </li>
-    <li data-list-item-id="e3db03d6d02db877edd09ec217f27d53a">
-      <a href="#h_01KK9GZVG105R37KPP4M86G514">Frequently Asked Questions</a>
+    <li data-list-item-id="e1f7d32f54ceb839fef4495dd4b331064">
+      <a href="#h_01M2H107HAM50X8VTM29BD7M8A"
+        >If We Haven't Determined Your Age Group Yet</a
+      >
+    </li>
+    <li data-list-item-id="e67186729029eafbfdf388bd979bee453">
+      <a href="#h_01M2H107HB8JX811WA94WGPH63">Frequently Asked Questions</a>
     </li>
   </ul>
 </div>
-<h2 id="h_01KK9GZVFHV5Z060ADDT2RXMNY">
-  What's Changing for Brazilian Users<strong> </strong>
-</h2>
 <p>
-  Starting March 17th, 2026, all Discord users in Brazil will have more
-  protective settings to support teens. This means updated communications
-  settings, restricted access to age-gated spaces, and content filtering.
-  Brazilian users 18 and older can complete a privacy-forward age check to
-  access age-restricted content and spaces, or to adjust relevant settings.
+  If you have been determined to be in the teen age group (13-17), your account
+  automatically receives certain protections. This article explains what those
+  protections are, what they affect, and what can be changed.
 </p>
-<h1 id="h_01KK9GZVFJ252J1BQHETXXNMXP">Privacy-Forward Age Assurance</h1>
 <p>
+  We work to place users into the right age group automatically via our
   <a
-    href="https://support.discord.com/hc/articles/30326565624343"
+    href="https://discord.com/safety/how-discord-estimates-age-without-collecting-your-identity"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">Age assurance</span
-    ><span style="color: #1155cc"> </span></a
-  >is the backbone of this new experience and is designed to respect your
-  privacy and choice. You can choose to use facial age estimation or submit a
-  form of identification and we plan to introduce more options in the future.
-  This experience is powered by
-  <a href="https://www.k-id.com/" target="_blank" rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">k-ID</span></a
-  >, our age assurance vendor.
-</p>
-<p>Here's how we've built in privacy protections:</p>
-<ul>
-  <li data-list-item-id="e2e20232cfb0c54174a2907b4e5b30b1b">
-    <strong>On-device processing: </strong>Video selfies for facial age
-    estimation never leave your device
-  </li>
-  <li data-list-item-id="e1e0187b1ec536baf81f7a85a17ef1161">
-    <strong>Quick deletion: </strong>Identity documents that go directly to k-ID
-    are never seen by Discord. They are deleted immediately after age
-    confirmation.
-  </li>
-  <li data-list-item-id="e81cf6076663f9c6131e23229ffb24b02">
-    <strong>Straightforward age assurance:</strong> In most cases, you complete
-    the process once and your Discord experience adapts to your verified age
-    group. You may be asked to use multiple methods only when more information
-    is needed to assign an age group.
-  </li>
-  <li data-list-item-id="e5507e6e41518c2ad9d32e7bdee7374a8">
-    <strong>Private status: </strong>Your age assurance status is only available
-    to you and cannot be seen by others unless you choose to share it.
-  </li>
-</ul>
-<p>
-  After completing verification, you'll receive a confirmation via direct
-  message from our
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360036118732-Discord-Official-Messages"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">official Discord account</span></a
-  >. You can view your assigned age group at any time in
-  <strong>My Account</strong> settings. If you'd like to appeal or retry the
-  process, you can do that there too.
+    ><span class="wysiwyg-underline">age estimation model</span></a
+  >, so if you're a teen, these settings may already be in place without you
+  having to do anything. 
 </p>
 <div class="info-box">
-  <strong>Note: </strong>If you receive an email or text message asking you to
-  verify your age, it's not from us.  Age assurance only happens within Discord.
-</div>
-<p>
-  If you have not already confirmed your age, you will be prompted to complete
-  an age check if you attempt to:
-</p>
-<ul>
-  <li data-list-item-id="e2a10ae42190e769cb064e175b71ff3bc">
-    Unblur media with sensitive content flagged by our
-    <a href="https://support.discord.com/hc/articles/18210995019671/"
-      ><span class="wysiwyg-underline">Sensitive Content Filter</span></a
-    >
-    or attempt to change any of the default
-    <a
-      href="https://support.discord.com/hc/articles/18210995019671/"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><span class="wysiwyg-underline"
-        >Sensitive Content Filter settings</span
-      ></a
-    >
-    to “<strong>Show</strong>” sensitive content.
-  </li>
-  <li data-list-item-id="ee1649ed764659aadc244a68b519ba1fd">
-    Turn off
-    <a
-      href="https://support.discord.com/hc/en-us/articles/7924992471191-Message-Requests"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">Message Requests</span> (</a
-    >they are enabled by default to help you screen out unwanted DMs from your
-    DM list).
-  </li>
-  <li data-list-item-id="ed8fb6e1b2dc7a62a7ba401abdeb2fcf5">
-    Access
-    <a
-      href="https://support.discord.com/hc/en-us/articles/115000084051-Age-Restricted-Channels-and-Content"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">age-restricted (18+) channels</span></a
-    >
-    and servers.
-  </li>
-  <li data-list-item-id="e0d23ac92d6321abf6d3228ac98405107">
-    Speak in a
-    <a
-      href="https://support.discord.com/hc/en-us/articles/1500005513722-Stage-Channels-FAQ"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">stage channel</span></a
-    >.
-  </li>
-  <li data-list-item-id="e79e1f5b4c56b672d3f635ccdd259b722">
-    Toggle on
-    <a
-      href="https://support.discord.com/hc/en-us/articles/10123937946007-Age-Restricted-Commands"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">age-restricted commands setting</span></a
-    >.
-  </li>
-  <li data-list-item-id="e6da12e0ad025a7e6362710cb3ca82c98">
-    Toggle on “Allow access to NSFW servers on iOS” setting.
-  </li>
-</ul>
-<div class="book-box">
-  To learn more about how to confirm your age, go to our
-  <a
+  <span style="color: #434343"
+    ><strong>Note: </strong>If you're an adult (18+) and these protections have
+    been applied to your account incorrectly, you can confirm you're an adult to
+    access age-restricted content, spaces, and settings at </span
+  ><a
+    href="https://discord.com/settings/account-status"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">User Settings &gt; Account Status</span></a
+  ><span style="color: #434343">. Find more detailed instructions </span
+  ><a
     href="https://support.discord.com/hc/articles/30326565624343"
     target="_blank"
     rel="noopener noreferrer"
-    >How to Complete Age Assurance on Discord</a
-  >
-  article.
-</div>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/38905173185303"
-    width="624"
-    height="456"
-  />
-</p>
-<h1 id="h_01KK9GZVFTEXZ6AYBQZCMVDBPJ">Default Safety Settings</h1>
-<p>
-  All new and existing Brazilian users will have default safety settings. Age
-  assurance may be required when you try to change certain settings or access
-  specific content.
-</p>
-<h2 id="h_01KK9GZVFVCBJGPTYHPRJKMWH3">Content Settings </h2>
-<ul>
-  <li data-list-item-id="ebe2a38a0b764dd2f918de698966cb699">
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210995019671-Discord-Sensitive-Content-Filters"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><strong
-        ><span class="wysiwyg-underline"
-          >Sensitive Content Filters</span
-        ></strong
-      ></a
-    >
-    are enabled by default. The default settings for this feature will blur
-    content flagged in DMs with friends and messages in server channels, but it
-    will also block content flagged in DMs with strangers. What’s changed is
-    that modifying these default content settings to
-    <strong>“Show”</strong> will now require age assurance.
-  </li>
-</ul>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/38905162065175"
-    width="624"
-    height="317"
-  /><br /> 
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01KK9GZVFWD64XGD8YN16D4BWM">
-  <span style="color: #666666"
-    ><strong>Sensitive Content Filter</strong> Settings</span
-  >
-</h4>
-<ul>
-  <li data-list-item-id="e88fec6db06cb4f17dca0230fbbec1655">
-    <strong>Unblurring content flagged by our content filters</strong> will
-    require age assurance.
-  </li>
-  <li data-list-item-id="e0ab922c6f987f665bda10a6698aa0d12">
-    <strong
-      >Attempting to enter an age-restricted (18+) channel and age-restricted
-      servers </strong
-    >will require age assurance.
-  </li>
-</ul>
-<h2 id="h_01KK9GZVFY8NQEH8AN78D0KFYY">Social Settings</h2>
-<ul>
-  <li data-list-item-id="e210f5d1bf6b6df7aa6a98360cdb73343">
-    <a
-      href="https://support.discord.com/hc/en-us/articles/7924992471191-Message-Requests"
-      ><strong
-        ><span class="wysiwyg-underline">Message Requests</span></strong
-      ></a
-    >
-    are enabled by default and send all DMs from non-Friends to a separate space
-    to help you review any incoming messages. Turning off Message Requests will
-    require age assurance.
-  </li>
-</ul>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/38905173188631"
-    width="624"
-    height="315"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01KK9GZVFZDGRMC3JAHNHYTKJ0">
-  <span style="color: #666666"
-    ><strong>Message Requests</strong> Setting in
-    <strong>Content &amp; Social</strong> Page</span
-  >
-</h4>
-<ul>
-  <li data-list-item-id="efc2eda10e47995273fc90e776e75b64c">
-    <strong
-      >You will be alerted before accepting a friend request from an unfamiliar
-      user. </strong
-    >Unfamiliar users are those you do not have any mutual friends or shared
-    small servers (under 200 members) with. These alerts can help you make more
-    informed decisions about new connections. These alerts cannot be turned off
-    at this time.
-  </li>
-</ul>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/38905162067607"
-    width="624"
-    height="344"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01KK9GZVG0MMVR67GPKRNHV0TB">
-  <span style="color: #666666"
-    ><strong>Accept friend request?</strong> Alert</span
-  >
-</h4>
-<h1 id="h_01KK9GZVG105R37KPP4M86G514">Frequently Asked Questions</h1>
-<p>
-  <strong>Q: Do these changes apply to all Brazilian Discord users?</strong>
-</p>
-<p>
-  A: Yes, the features and experiences described above apply to all new and
-  existing Brazilian accounts.
-</p>
-<p><strong>Q: When do I need to go through age assurance?</strong></p>
-<p>
-  A: You must be a confirmed adult to access age-restricted content and spaces
-  or to modify certain safety settings. The majority of Discord users don’t
-  access age restricted content and will never need to go through a facial age
-  estimation flow or ID verification. 
-</p>
-<p>
-  <strong
-    >Q: Are you going to be adding more verification method options?</strong
-  >
-</p>
-<p>
-  A: We're actively working to add more verification options before we expand
-  age assurance globally. However, some methods may not be available in certain
-  regions that have set legal standards for what methods are acceptable.
-</p>
-<p><strong>Q: What age assurance methods are available?</strong></p>
-<p>A: There are two primary methods available right now:</p>
-<ol>
-  <li data-list-item-id="ee6bf223a94f9ceb6b0edb33f630a9a4d">
-    <strong>Facial Age Estimation (Video Selfie):</strong> Uses your device's
-    camera to estimate your age group. Processing happens entirely on your
-    device — your video selfie never leaves it, and Discord and our vendor,
-    k-ID, never receives it. We only receive your age group.
-  </li>
-  <li data-list-item-id="e9357d01edc761d1b650b7322a0eec82a">
-    <strong>ID Scan:</strong> Scan your government-issued ID and take a quick
-    selfie to confirm it matches. Your ID and selfie is processed to confirm
-    your age and then deleted.
-  </li>
-</ol>
-<p>
-  Note: You may need to complete both methods if we can't confirm your age group
-  with sufficient confidence from facial age estimation alone.
-</p>
-<p>
-  We're actively working to add more verification options before we expand age
-  assurance globally.
-</p>
-<p>
-  For step-by-step instructions on each method, see our
-  <a
-    href="https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline"
-      >How to Complete Age Assurance on Discord article</span
-    ></a
-  >.
-</p>
-<p><strong>Q: What if I choose not to confirm my age?</strong></p>
-<p>
-  A: If you choose not to verify, here's exactly what happens: you keep your
-  account, your servers, your friends list, your DMs, and voice chat. The only
-  thing that changes is you won't be able to access age-restricted content or
-  change certain default settings designed to protect teens. Nothing else about
-  your Discord experience changes.
-</p>
-<p>
-  <strong
-    >Q: How do you choose the vendors you work with for age assurance?</strong
-  >
-</p>
-<p>
-  A: We're working on documenting every verification vendor and their practices
-  on our website, and make it clear in the product who each vendor is. We've
-  also set a new requirement: any partner offering facial age estimation must
-  perform it entirely on-device. If they don't meet that bar, we won't work with
-  them.
-</p>
-<p class="wysiwyg-indent0.8333333333333334">
-  <strong>Q: How does Discord use my age assurance data?</strong>
-</p>
-<p>
-  A: We use this information for safety purposes and to deliver age-appropriate
-  experiences on Discord. We will not use your age assurance information to
-  target you with ads, and we don't sell your data. You can control
-  <a
-    href="https://discord.com/privacy#4"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">how we use your data</span></a
-  >.
-</p>
-<p>
-  <strong
-    >Q: Is my personal data stored during the age assurance process?</strong
-  >
-</p>
-<p>
-  A: No. Discord and its trusted partners do not permanently store your personal
-  identity documents or video selfies. Identity documents that go directly to
-  k-ID are never seen by Discord. They are deleted immediately after age
-  confirmation. Video selfies for facial age estimation are processed entirely
-  on-device and never stored. Your identity is never associated with your
-  Discord account.
-</p>
-<p>
-  <strong
-    >Q: What are you getting from my ID or facial age estimation? What personal
-    information do you receive?</strong
-  ><br /><br />A: Discord only gets your age. That’s it. Your identity is never
-  associated with your account.
-</p>
-<p>
-  <strong>Q: What if my age assurance fails or shows incorrect results?</strong>
-</p>
-<p>
-  A: If the age assurance process fails or shows incorrect results, retry the
-  verification through Discord system messages by selecting
-  "<strong>Retry</strong>". 
-</p>
-<p>
-  If you were incorrectly identified as under
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360040724612"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">minimum age requirement</span></a
-  >
-  and want to appeal, please follow instructions
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360041820932-Help-I-m-old-enough-to-use-Discord-in-my-country-but-I-got-locked-out"
     ><span class="wysiwyg-underline">here</span></a
-  >
-  to use the ID scan option to verify your date of birth.
+  ><span style="color: #434343">.</span>
+</div>
+<h1 id="h_01M2H107H79JCWQZCEXTWKHKME">What Stays the Same for Teens</h1>
+<p>
+  The core Discord experience, messaging friends, joining voice calls or servers
+  that are not age-restricted, works the same. Users in the teen age group can
+  still:
 </p>
-<div class="book-box">
-  For more information on handling age assurance issues, visit our
+<ul>
+  <li data-list-item-id="ec5d7acc570ecf3e8a21eefef415dc782">
+    Message friends and server members you're already connected with
+  </li>
+  <li data-list-item-id="e878982693dc47ec2c5e56c541619b025">
+    Join and participate in servers that aren't age-restricted
+  </li>
+  <li data-list-item-id="ec3295c79b567edf809f4d8942d008f6d">
+    Make voice and video calls
+  </li>
+  <li data-list-item-id="e2c68ae371017c6d6f9422e8aa85d27b8">
+    Participate in gaming, communities, study servers, and everything Discord is
+    built for
+  </li>
+</ul>
+<h1 id="h_01M2H10G1NGPNSXWWG9FZB93EK">What are the Teen Safety Protections</h1>
+<p>
+  Users in the teen age group have a slightly different experience across three
+  areas: what content you can see and can’t see, who can reach you, and what
+  others can see about you. Some of these can only be changed by confirming
+  you're an adult. Others can be adjusted at any time.
+</p>
+<div class="info-box">
+  <span style="color: #434343"
+    ><strong>Note: </strong>Teen safety protections may vary slightly depending
+    on where you live, as some regions have specific requirements under local
+    regulation. For region-specific information, see our directory </span
+  ><a href="https://support.discord.com/hc/en-us/articles/42653320919447"
+    ><span class="wysiwyg-underline">here</span></a
+  ><span style="color: #434343">.</span>
+</div>
+<h2 id="h_01M2H107H8A96YS73Z5YK28S9N">Content: What You Can and Can’t See</h2>
+<p>
   <a
-    href="https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Verify-Age-Group"
+    href="https://support.discord.com/hc/en-us/articles/18210995019671-Discord-Sensitive-Content-Filters"
     target="_blank"
     rel="noopener noreferrer"
-    >How to Complete Age Assurance on Discord</a
-  >
-  article.
-</div>
+    ><strong
+      ><span class="wysiwyg-underline">Sensitive content</span></strong
+    ></a
+  ><strong> that we flag is filtered automatically.</strong> Images and videos
+  flagged by Discord's content filters are blurred or blocked depending on where
+  they appear:
+</p>
+<ul>
+  <li data-list-item-id="e72959e236a7f2f2e4c174b4d6d24ef3a">
+    Direct messages from friends: blurred
+  </li>
+  <li data-list-item-id="ecf8ae3f1d35f169959dc47a7de17ae5b">
+    Direct messages from strangers: blocked
+  </li>
+  <li data-list-item-id="e5e724378577d5dea0605a72ab072fc9e">
+    Server channel messages: blurred
+  </li>
+</ul>
 <p>
-  <strong
-    >Q: Do I need to confirm my age every time I access age-restricted content
-    or attempt to update a default setting?</strong
-  >
+  Viewing blurred content, or changing these settings to "Show," requires
+  confirming you're an adult.
 </p>
 <p>
-  A: No. Age assurance is typically a one-time process. In most cases, users
-  complete the process once and their Discord experience adapts to their
-  verified age group. Users may be asked to use multiple methods only when more
-  information is needed to assign an age group.
-</p>
-<p><strong>Q: What happens if my age is confirmed as under 18?</strong></p>
-<p>
-  A: If your age is confirmed as under 18, certain default safety settings will
-  remain in place that cannot be changed. These include sensitive content
-  filters, message request settings and restrictions when attempting to access
   <a
+    href="https://support.discord.com/hc/en-us/articles/1500005389362-What-are-Age-Restricted-Servers-on-Discord"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong
+      ><span class="wysiwyg-underline">Age-restricted servers</span></strong
+    ></a
+  ><strong> and </strong
+  ><a
     href="https://support.discord.com/hc/en-us/articles/115000084051-Age-Restricted-Channels-and-Content"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">age-restricted channels</span></a
+    ><strong><span class="wysiwyg-underline">channels</span></strong></a
+  ><strong> are not accessible.</strong> Servers and channels marked as
+  age-restricted (18+) are not accessible for teen accounts. Accessing them
+  requires confirming you're an adult.
+</p>
+<p>
+  <a
+    href="https://support.discord.com/hc/en-us/articles/10123937946007-Age-Restricted-Commands"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong
+      ><span class="wysiwyg-underline">Age-restricted commands</span></strong
+    ></a
+  ><strong> are off.</strong> App commands flagged as age-restricted are
+  disabled. Enabling them requires confirming you're an adult.
+</p>
+<p>
+  <strong
+    >For iOS only: The setting “Allow access to age-restricted servers on iOS”
+    is off.</strong
+  >
+  This is a separate, additional step adults must take on iOS to reach
+  age-restricted servers described above. It does not apply to teen accounts,
+  which remain blocked regardless of this setting, and it does not apply on
+  Android. Turning it on requires confirming you're an adult.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/43517208150935"
+    alt='Content Filters settings, showing "Allow access to age-restricted commands from apps in DMs" and "Allow access to age-restricted servers on iOS" toggles, both off'
+    width="624"
+    height="391"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H0VS4CJG0X1BPP06XPX8QZ">
+  <span style="color: #666666"
+    >Content Filters settings, showing "Allow access to age-restricted commands
+    from apps in DMs" and "Allow access to age-restricted servers on iOS"
+    toggles, both off</span
+  >
+</h4>
+<h2 id="h_01M2H107H9RYEQ415F1H50JNP5">Social: Who Can Reach You</h2>
+<p>
+  <a
+    href="https://support.discord.com/hc/en-us/articles/7924992471191-Message-Requests"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong><span class="wysiwyg-underline">Message requests</span></strong></a
+  ><strong> are on.</strong> All direct messages from people you're not friends
+  with are sent to a separate message requests inbox, so you can review them
+  before they appear in your main DM list. Turning this off requires confirming
+  you're an adult.
+</p>
+<p>
+  <strong>DM spam filters are set to “filter all”.</strong> Spam filtering is
+  applied to all incoming DMs. This can be adjusted at any time.
+</p>
+<p>
+  <strong>Friend request alerts are on.</strong> You will be alerted before
+  accepting a friend request from an unfamiliar user. Unfamiliar users are those
+  you do not have any mutual friends or shared small servers (&lt; 200 members)
+  with. These alerts can help you make more informed decisions about new
+  connections. These alerts cannot be turned off at this time whether you’re in
+  the adult or teen age group.
+</p>
+<h2 id="h_01M2H107H9FKTQT9XQ7XDCV75W">
+  Profile &amp; Activity: What Others Can See
+</h2>
+<p>
+  <a
+    href="https://support.discord.com/hc/en-us/articles/7931156448919-Activity-Sharing-on-Discord-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong><span class="wysiwyg-underline">Activity sharing</span></strong></a
+  ><strong> is limited.</strong> Your activity will only be visible to your
+  friends, not members of shared servers. This can be adjusted at any time.
+</p>
+<p>
+  <a
+    href="https://support.discord.com/hc/en-us/articles/38859942749463-Profile-Privacy-Setting-on-Discord"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong
+      ><span class="wysiwyg-underline">Profile visibility</span></strong
+    ></a
+  ><strong> is limited.</strong> Your full profile details will only be visible
+  to your friends, not shared servers. This can be adjusted at any time.
+</p>
+<p>
+  <strong>Speaking in </strong
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/1500005513722-Stage-Channels-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong><span class="wysiwyg-underline">Stage channels</span></strong></a
+  ><strong> is not available. </strong>Speaking in a Stage channel requires you
+  to confirm you’re an adult, as it can broadcast your voice to large
+  audiences.You can still listen to any Stage channel.
+</p>
+<h1 id="h_01M2H107HAM50X8VTM29BD7M8A">
+  If We Haven't Determined Your Age Group Yet
+</h1>
+<p>
+  If your account hasn't been placed into an age group yet, your age group
+  status is unconfirmed.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/43517208154391"
+    alt="Account Status screen showing an unconfirmed age group with a Confirm Age button"
+    width="624"
+    height="221"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H0VS4FT57F9065Y9M6ZNP6">
+  <span style="color: #666666"
+    >Account Status screen showing an unconfirmed age group with a Confirm Age
+    button</span
+  >
+</h4>
+<p>
+  You'll get the same protections as the teen experience, except for your
+  <a
+    href="https://support.discord.com/hc/en-us/articles/38859942749463"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Profile Privacy</span></a
+  >
+  and
+  <a
+    href="https://support.discord.com/hc/en-us/articles/7931156448919"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Activity Sharing</span></a
+  >
+  settings:
+</p>
+<ul>
+  <li data-list-item-id="e4ccfe501c423bf29b7f50e6f9602c0d9">
+    <strong>Teens users:</strong> Profile Privacy and Activity Sharing starts at
+    Friends &amp; Small Servers meaning their profile and activity is only
+    visible to friends and members of any server they’re in with 200 or fewer
+    members. This can be updated at any time.
+  </li>
+  <li data-list-item-id="e43d256a2baff00c667522c1f0d306459">
+    <strong>Unconfirmed users:</strong> Profile Privacy and Activity Sharing is
+    open to Friends &amp; All Servers meaning your profile and activity is
+    visible to friends and to members of any server you join, regardless of
+    size. This can be updated at any time.
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/43517153275287"
+      alt='"Where I Share Activity" settings, with "Share in servers with 200 or fewer members" selected'
+      width="624"
+      height="263"
+  /></strong>
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M2H0VS4HZ7M74FM038BQPTXT">
+  <span style="color: #666666"
+    >"Where I Share Activity" settings, with "Share in servers with 200 or fewer
+    members" selected</span
+  >
+</h4>
+<p>
+  Having an unconfirmed age group doesn't affect core Discord features like
+  messaging friends, joining voice calls, or servers that aren't age restricted.
+</p>
+<p>
+  If you're an adult and want to access age restricted content, spaces, or
+  settings, you can confirm your age group at<strong>
+    User Settings &gt; Account Status</strong
+  >. See more information
+  <a
+    href="https://support.discord.com/hc/articles/30326565624343"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >.
+</p>
+<h1 id="h_01M2H107HB8JX811WA94WGPH63">Frequently Asked Questions</h1>
+<p>
+  <strong
+    >Q: I'm an adult and I've been placed in the teen age group. What do I
+    do?</strong
+  > 
+</p>
+<p>
+  A: Head to
+  <a
+    href="https://discord.com/settings/account-status"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong
+      ><span class="wysiwyg-underline"
+        >User Settings &gt; Account Status</span
+      ></strong
+    ></a
+  >, pick whichever method you're most comfortable with, and you can confirm
+  your age group, usually in a few minutes. Find more detailed instructions
+  <a
+    href="https://support.discord.com/hc/articles/30326565624343"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
   >.
 </p>
 <p>
   <strong
-    >Q: What happens if my age is confirmed as too young to be on
-    Discord?</strong
-  >
+    >Q: My account hasn't been placed into an age group yet. What does that
+    mean?</strong
+  > 
 </p>
 <p>
-  A: Your account will be suspended if you are under the minimum age requirement
-  to be on Discord. If you believe your verified age is incorrect, you may retry
-  the verification process using the ID scan option. 
-</p>
-<p>
-  Please follow the instructions
+  A: It means our 
   <a
-    href="https://support.discord.com/hc/en-us/articles/360041820932-Help-I-m-old-enough-to-use-Discord-in-my-country-but-I-got-locked-out"
+    href="https://discord.com/safety/how-discord-estimates-age-without-collecting-your-identity"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">age estimation model</span></a
+  >
+  doesn't have enough signals yet to determine your age group. Additional
+  protections apply in the meantime. Otherwise, the core Discord experience,
+  messaging friends, joining voice calls or servers that are not age-restricted,
+  works the same.
+</p>
+<p>
+  If you're an adult and want access to age-restricted content, spaces, or
+  settings, you can confirm you’re an adult at
+  <a
+    href="https://discord.com/settings/account-status"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong
+      ><span class="wysiwyg-underline"
+        >User Settings &gt; Account Status</span
+      ></strong
+    ></a
+  >. Find more detailed instructions
+  <a
+    href="https://support.discord.com/hc/articles/30326565624343"
     target="_blank"
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
-  >
-  to use the ID scan option to verify your date of birth.
+  >.
+</p>
+<p><strong>Q: Why do these protections apply to my account?</strong> </p>
+<p>
+  A: You’ve been determined to be in the teen age group. If you're an adult and
+  think we got it wrong, you can confirm your age group. Find more detailed
+  instructions
+  <a
+    href="https://support.discord.com/hc/articles/30326565624343"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">here</span></a
+  >.
+</p>
+<p><strong>Q: Can I turn these protections off?</strong> </p>
+<p>
+  A: Some settings can only be changed after confirming you're an adult. Others,
+  like activity sharing and profile visibility, can be adjusted at any time. See
+  the sections above for details on which protections can be turned off.
+</p>
+<p><strong>Q: Can other people see that I'm in the teen age group?</strong> </p>
+<p>
+  A: Your age group isn't shown on your profile or visible to other members in a
+  server.
 </p>
 <p>
   <strong
-    >Q: Can I appeal if I believe my account was incorrectly age-restricted or
-    banned?</strong
-  >
+    >Q: Do these protections apply in the UK, Australia, and Brazil?</strong
+  > 
 </p>
 <p>
-  A: Yes. If you believe you were incorrectly verified and want to appeal, you
-  may try the verification process using the ID scan option. 
-</p>
-<p>
-  Please follow the instructions
+  A: Teen safety protections may vary slightly depending on where you live, as
+  some regions have specific requirements under local regulation. For
+  region-specific information, see our directory
   <a
-    href="https://support.discord.com/hc/en-us/articles/360041820932-Help-I-m-old-enough-to-use-Discord-in-my-country-but-I-got-locked-out"
+    href="https://support.discord.com/hc/en-us/articles/42653320919447"
     target="_blank"
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
+  >.
+</p>
+<p><strong>Q: Will these protections change over time?</strong> </p>
+<p>
+  A: We continue to adjust our approach as regulations evolve. We'll communicate
+  any changes that affect your experience.
+</p>
+<p><strong>Q: I'm a parent, can I manage my teen's settings?</strong> </p>
+<p>
+  A: Teen safety protections are applied when we believe a user is a teen and
+  most can't be changed by anyone other than your teen confirming they're an
+  adult. A few settings, like
+  <a
+    href="https://support.discord.com/hc/articles/18210995019671/"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Sensitive Content Filters</span></a
   >
-  to use the ID scan option to verify your date of birth.
+  and
+  <a
+    href="https://support.discord.com/hc/en-us/articles/7924992471191"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Message Requests</span></a
+  >, can be managed by you if you're connected through Family Center, though
+  you'll need to be in the adult age group yourself to update Message Requests.
+  For the full list of what you can manage and how to connect, read our help
+  center article on
+  <a
+    href="https://support.discord.com/hc/en-us/articles/14155043715735-Family-Center-for-Parents-and-Guardians"
+    ><span class="wysiwyg-underline">Family Center</span></a
+  >.
 </p>
-<p><strong>Q: How do content safety filters work?</strong></p>
-<p>
-  A: Discord’s content safety filters are part of our broader
-  <strong>Teen Safety Assist </strong>approach. They help reduce exposure to
-  certain categories of potentially sensitive<strong> image-based media</strong
-  >, especially for teens.
-</p>
-<ul>
-  <li data-list-item-id="eb10da2ed4a43e27fcf3b7cd8846b1c14">
-    <a
-      href="https://discord.com/safety/sexual-content-policy-explainer"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">Mature Sexual Media Filter</span></a
-    >: Helps identify visual media that may contain sexually explicit or
-    suggestive material involving adults
-  </li>
-  <li data-list-item-id="e3db0495ef5813061e2830a3e0664883d">
-    <a
-      href="https://discord.com/safety/violence-graphic-content-policy-explainer"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">Graphic Media Filter</span></a
-    >: Helps identify image-based media that may contain violent or potentially
-    disturbing visual material
-  </li>
-</ul>
-<p>
-  These filters apply only to images and videos.
-  <strong>They do not scan messages, voice, or calls</strong>, and they are
-  designed to support age-appropriate experiences while preserving private
-  conversations.
-</p>
-<p>
-  <strong>Q: Are there plans to expand these changes to other regions?</strong>
-</p>
-<p>
-  A: We're still working on expanding verification options, publishing our
-  methodology for automatic age determination, and making sure every vendor we
-  work with meets our privacy bar before we launch globally. Our global rollout
-  is planned for the second half of 2026 as we build this thoughtfully. In the
-  meantime, we may also move forward in regions if age assurance is required by
-  regulation, in line with local laws and requirements.
-</p>
-<p><br /> </p>

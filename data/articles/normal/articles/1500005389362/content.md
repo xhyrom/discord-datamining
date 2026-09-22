@@ -96,7 +96,7 @@
     rel="noopener noreferrer"
     >here</a
   >
-  to learn more about how to access age-restricted servers.<br /> 
+  to learn more about how to access age-restricted servers. 
 </div>
 <h1 id="h_01K728TD6X96J3KCNSSCM8DNDM">
   <span style="font-weight: 400"
