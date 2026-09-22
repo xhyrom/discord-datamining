@@ -2,7 +2,7 @@
 
 ## Engineering Manager, Machine Learning (Safety)
 
-**Location:** San Francisco Bay Area
+**Location:** San Francisco Bay Area (or Remote U.S.)
 
 **Id:** 8722538002 <br/>
 **Internal Job Id:** 6486826002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8722538002](https://discord.com/jobs/8722538002)
 
-**Updated At:** Mon, 21 Sep 2026 19:34:45 GMT
+**Updated At:** Tue, 22 Sep 2026 21:36:02 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Safety ML team builds the machine learning systems that protect 200M+ users. The team's mission is to make Discord a place where people can build genuine friendships without exposure to harm, at a scale where manual review alone can never keep up.
@@ -50,5 +50,5 @@ education_optional
 - Developers
 
 **Offices:**
-- San Francisco, CA in San Francisco, California, United States
+- Remote (U.S.)
     
