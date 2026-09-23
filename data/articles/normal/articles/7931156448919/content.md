@@ -106,7 +106,7 @@
 <p>
   5. 1st and 3rd party
   <a
-    href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord"
+    href="https://support-apps.discord.com/hc/en-us/sections/26498424335895"
     target="_blank"
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">Activities on Discord</span></a

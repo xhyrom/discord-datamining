@@ -330,7 +330,7 @@
     direct message inbox.
   </li>
 </ul>
-<p>
+<div class="warn-box">
   <strong>Important</strong>: Parents or guardians must be in the adult age
   group (18+) before you’re able to update your message request setting. Parents
   or guardians can go to Settings &gt; Account Status to check their age group
@@ -341,7 +341,7 @@
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
   >.
-</p>
+</div>
 <ul>
   <li data-list-item-id="e9700c2f06b6f18c3a1f0b264b63917ec">
     <a

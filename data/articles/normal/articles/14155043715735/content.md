@@ -28,7 +28,10 @@
 </p>
 <div class="info-box">
   <strong>Note</strong>: You can access Family Center by selecting this
-  <a href="https://discord.com/feature/family-center"
+  <a
+    href="https://discord.com/feature/family-center"
+    target="_blank"
+    rel="noopener noreferrer"
     ><span class="wysiwyg-underline">link</span></a
   >
   or by heading into <strong>Account &gt; Family Center </strong>within the
@@ -334,7 +337,10 @@
   you’re able to update your teen’s message request setting. You can go to your
   <strong>User Settings &gt; Account Status</strong> to check your age group
   status or learn more about how to confirm your age group
-  <a href="https://support.discord.com/hc/articles/30326565624343"
+  <a
+    href="https://support.discord.com/hc/articles/30326565624343"
+    target="_blank"
+    rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
   >.
 </div>
@@ -403,14 +409,14 @@
     >Data &amp; Privacy Settings in Family Center</span
   >
 </h4>
-<p>
+<div class="tip-box">
   <span style="color: #434343"
     ><strong>Tip:</strong> If you have a linked Family Center account, your teen
     will not be able to adjust the above settings on their own. We encourage you
     to talk to your teen about how to customize these safety settings in a way
     that supports your family's safety goals.</span
   >
-</p>
+</div>
 <h2 id="h_01M2JY7BQDZ8G5VB62MBJQD5ZV">
   Setting Your Teen's Monthly Spending Cap
 </h2>
@@ -699,7 +705,10 @@
     target="_blank"
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
-  >.<br /><strong
+  >.
+</p>
+<p>
+  <strong
     >Q: If I accidentally remove my teen’s connection, do they need to re-allow
     me to connect?</strong
   >

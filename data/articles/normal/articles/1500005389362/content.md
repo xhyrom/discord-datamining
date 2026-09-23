@@ -145,17 +145,26 @@
   </p>
   <ul>
     <li data-list-item-id="e0b0d56279ceeb9b660cd3b89443674c9">
-      <a href="https://support.discord.com/hc/en-us/articles/33362401287959"
+      <a
+        href="https://support.discord.com/hc/en-us/articles/33362401287959"
+        target="_blank"
+        rel="noopener noreferrer"
         ><span class="wysiwyg-underline">United Kingdom</span></a
       >
     </li>
     <li data-list-item-id="e8be03c32f0403aafb20707395032a359">
-      <a href="https://support.discord.com/hc/en-us/articles/38832004637207"
+      <a
+        href="https://support.discord.com/hc/en-us/articles/38832004637207"
+        target="_blank"
+        rel="noopener noreferrer"
         ><span class="wysiwyg-underline">Australia</span></a
       >
     </li>
     <li data-list-item-id="e0fafd8d5ac33f8b45e9e6d0bc4414b24">
-      <a href="https://support.discord.com/hc/en-us/articles/38860612202775"
+      <a
+        href="https://support.discord.com/hc/en-us/articles/38860612202775"
+        target="_blank"
+        rel="noopener noreferrer"
         ><span class="wysiwyg-underline">Brazil</span></a
       >
     </li>

@@ -1,7 +1,10 @@
 <p>
   <span style="font-weight: 400"
     >We collect certain information as you use Discord. Our </span
-  ><a href="https://discord.com/privacy"
+  ><a
+    href="https://discord.com/privacy"
+    target="_blank"
+    rel="noopener noreferrer"
     ><span style="font-weight: 400">Privacy Policy</span></a
   ><span style="font-weight: 400">
     describes the information we collect, how we use and share it, and how you
@@ -143,6 +146,8 @@
     periods for specific purposes, as described below. You can </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/212500837-How-do-I-permanently-delete-my-account-"
+    target="_blank"
+    rel="noopener noreferrer"
     ><span style="font-weight: 400">delete your account at any time</span></a
   ><span style="font-weight: 400"
     >, and if your account is inactive for two years, we may delete it for you.
@@ -298,7 +303,10 @@
 </h1>
 <p>
   <span style="font-weight: 400">As provided in our </span
-  ><a href="https://discord.com/privacy"
+  ><a
+    href="https://discord.com/privacy"
+    target="_blank"
+    rel="noopener noreferrer"
     ><span style="font-weight: 400">Privacy Policy</span></a
   ><span style="font-weight: 400"
     >, all our users have control over their information and can directly edit
