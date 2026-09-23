@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer - Safety Experience
 
-**Location:** San Francisco Bay Area or Remote (U.S.)
+**Location:** San Francisco Bay Area
 
 **Id:** 8817776002 <br/>
 **Internal Job Id:** 6528986002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8817776002](https://discord.com/jobs/8817776002)
 
-**Updated At:** Fri, 18 Sep 2026 18:26:37 GMT
+**Updated At:** Wed, 23 Sep 2026 22:21:53 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.As a Senior Engineer on the Safety Experience team, you'll lead the charge in making Discord's platform safer for hundreds of millions of users. You'll design, build, and maintain product features and systems that prevent harmful activities while ensuring regulatory compliance. Keeping users safe is essential for Discord's growth, making your team's work critical. This role reports to the Engineering Manager of Safety Experience.
