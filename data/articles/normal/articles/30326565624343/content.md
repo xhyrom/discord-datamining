@@ -1,11 +1,14 @@
-<div class="warn-box">
-  <strong>Update as of Sep 23, 6:30PM PST</strong><br />- Some of you may be
-  seeing mismatched experiences across devices - for example, appearing as
-  “unconfirmed” on an older app version, or being unable to access
-  age-restricted servers on certain mobile devices. Updating your mobile app to
-  the latest version normally fixes this, but we've also identified a bug
-  blocking it. <br />- Our team is actively working on a fix. Follow along for
-  updates here:
+<div class="info-box">
+  <strong
+    ><span class="wysiwyg-underline"
+      >Resolved as of Sep 23, 8:32PM PST</span
+    ></strong
+  ><br />- Some of you may have saw mismatched experiences across devices - for
+  example, appearing as “unconfirmed” on an older app version, or being unable
+  to access age-restricted servers on certain mobile devices. We had identified
+  a bug causing this issue. <br />- This issue has now been
+  <strong>resolved</strong>! Please close and refresh your app to get the fix
+  for the age group status. <br />- For more details, check out:
   <a href="https://discordstatus.com/" target="_blank" rel="noopener noreferrer"
     >https://discordstatus.com/</a
   > 
