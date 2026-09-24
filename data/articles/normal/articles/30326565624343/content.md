@@ -1,3 +1,15 @@
+<div class="warn-box">
+  <strong>Update as of Sep 23, 6:30PM PST</strong><br />- Some of you may be
+  seeing mismatched experiences across devices - for example, appearing as
+  “unconfirmed” on an older app version, or being unable to access
+  age-restricted servers on certain mobile devices. Updating your mobile app to
+  the latest version normally fixes this, but we've also identified a bug
+  blocking it. <br />- Our team is actively working on a fix. Follow along for
+  updates here:
+  <a href="https://discordstatus.com/" target="_blank" rel="noopener noreferrer"
+    >https://discordstatus.com/</a
+  > 
+</div>
 <p>
   Helping to keep teens safer on Discord means making sure the right protections
   apply to the right accounts. When Discord knows your account belongs to a teen
@@ -9,7 +21,7 @@
     target="_blank"
     rel="noopener noreferrer"
     ><span class="wysiwyg-underline">here</span></a
-  >.
+  >. 
 </p>
 <p>
   For most users, our
