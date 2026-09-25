@@ -263,18 +263,52 @@
     Library applications
   </li>
 </ul>
+<p>You’ll also see some different age signals we use across the platform:</p>
+<ul>
+  <li
+    class="wysiwyg-list-color"
+    data-list-item-id="e9a63b3c0cdce60aec7851ac02367a021"
+  >
+    <code>date_of_birth</code> - This is the date of birth you provide to us
+    when you sign up for the platform. If you’re under 18, it will be anonymized
+    to the first of the month (MM-01-YYYY). If you’re over 18, this will be
+    fully anonymized, and you’ll see (01-01-0001)
+  </li>
+  <li
+    class="wysiwyg-list-color"
+    data-list-item-id="e5af8921c6043737a7d27001514e89a97"
+  >
+    <code>age_assurance</code> - When you use one of the methods to confirm your
+    age, we retain the vendor and method used, as well as the timestamp of your
+    verification attempt. 
+    <ul>
+      <li data-list-item-id="e4adcc496052be35b056c8df24a2985cd">
+        <code>estimated_age_group</code> is how we store the outcome of the age
+        assurance method you chose, which can be more precise in the case of
+        teens (e.g., 13, 14, 15) or broader for adults (e.g., 22-25).  
+      </li>
+      <li data-list-item-id="ee213d2a2985db4bd1f4ffc6969c451ce">
+        <code>inferred_age_group</code> is the age group assigned to you by the
+        ML model that estimates your age as part of our overall age assurance
+        system (e.g., Teen, Adult).
+      </li>
+    </ul>
+  </li>
+  <li data-list-item-id="e05ddfd69cca9c9901a90c753b15f12de">
+    <code>predicted_age</code> - This is a different type of age prediction
+    model that we use to understand how users interact with Discord and to power
+    certain features in the app. This age signal does not determine your age
+    group (e.g., Adult, Teen).
+  </li>
+</ul>
 <div class="tip-box">
   <strong>Tip:</strong> If you have recently deleted an avatar image, it may
   still show up in your package.
 </div>
 <h2 id="h_01JV2QTH9QK6M7GAWDHVQXHKM3">Activity</h2>
 <p>
-  <span style="color: #2e3338"
-    ><span data-darkreader-inline-color=""
-      >The activity folder contains four folders, each with a JSON file that has
-      information about the actions you have taken on Discord. </span
-    ></span
-  >
+  The activity folder contains four folders, each with a JSON file that has
+  information about the actions you have taken on Discord. 
 </p>
 <ul>
   <li data-list-item-id="e87cd905948d13d175bbc98a147e5b115">
