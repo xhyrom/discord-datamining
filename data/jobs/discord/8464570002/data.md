@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8464570002](https://discord.com/jobs/8464570002)
 
-**Updated At:** Tue, 22 Sep 2026 23:32:13 GMT
+**Updated At:** Fri, 25 Sep 2026 15:34:12 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.The Consumer Revenue org sits at the center of how we build a sustainable business around that community. We're looking for a talented Staff Engineer to join teams working across premium experiences and core user identity, shaping the technical strategy that ties it all together. You'll work across surfaces like Nitro, Shop, Server Boosting, and User Identity to build a premium Discord that delivers real value to subscribers without compromising the core experience for our free users.
@@ -57,5 +57,5 @@ education_optional
 - Product Engineering
 
 **Offices:**
-- San Francisco, CA in San Francisco, California, United States
+- Remote (U.S.)
     
