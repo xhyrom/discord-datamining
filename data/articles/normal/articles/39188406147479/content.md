@@ -994,7 +994,11 @@
 <h2 id="h_01M2GVH8RZYMDKFGEAFDNSWFCT">
   How to Redeem Your Discount Code on YouTube
 </h2>
-<p><strong>New YouTube Premium Subscribers</strong></p>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>New YouTube Premium Subscribers</strong></span
+  >
+</p>
 <p>After claiming your code (steps 1-5 above), here's how to redeem it:</p>
 <p>
   1. Go to
@@ -1004,10 +1008,16 @@
 </p>
 <p>2. Enter your code in the promo code field. </p>
 <p>3. Complete sign-up with the discount applied.</p>
-<p><strong>Currently Subscribed to YouTube Premium</strong></p>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Currently Subscribed to YouTube Premium</strong></span
+  >
+</p>
 <p>
   If you currently have an active YouTube Premium subscription, you’ll need to
-  cancel and resubscribe to use your code.
+  cancel and resubscribe to use your code. If your subscription is managed by a
+  third-party other than YouTube, you may need to wait to resubscribe directly
+  through YouTube.
 </p>
 <p>1. Log in to your YouTube account.</p>
 <p>
