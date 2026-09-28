@@ -14,9 +14,9 @@
     "latency",
     "static-edge.staging",
     "staging-gateway-us-east1-b",
-    "datahub-stg",
     "tracker",
     "staging-gift",
+    "staging-gateway-us-east-1a",
     "seo",
     "staging-cdn",
     "docs",
@@ -40,8 +40,7 @@
     "remote-auth-gateway",
     "staging-gateway-us-east1-d",
     "staging-images-1",
-    "otelcol",
-    "datahub-prd"
+    "otelcol"
   ],
-  "subdomain_count": 42
+  "subdomain_count": 41
 }
