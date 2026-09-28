@@ -30,7 +30,7 @@
     }
   ],
   "id": 8656854002,
-  "updated_at": "2026-09-11T19:25:24-04:00",
+  "updated_at": "2026-09-28T17:29:21-04:00",
   "requisition_id": "R-107356",
   "title": "Senior Software Engineer, Application Security",
   "company_name": "Discord",
@@ -48,9 +48,9 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }
