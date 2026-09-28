@@ -16,56 +16,92 @@
   become their favorite to use in daily conversations.
 </p>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
+  Some members may also earn a reward when a friend they've shared a trial with
+  subscribes.
 </p>
-<ul>
-  <li data-list-item-id="e27ee82748498caace4aab2f016dd105f">
-    <a href="#h_01HVRY7E8SNEPQT1Q6H7T6ME4X">Share Nitro Eligibility</a>
-    <ul>
-      <li data-list-item-id="e1b4d9c7853b9e3ac233f6e5481ef64a6">
-        <a href="#h_01HVRY7E8SSPXDFV3PXM9CHTNE"
-          >Nitro Members Sharing a Trial</a
-        >
-      </li>
-      <li data-list-item-id="ee6012bab340fc3f10e61bd6577ed04ba">
-        <a href="#h_01HVRY7E8S1GMH2YZTN907BAY5">Friends Receiving a Trial</a>
-      </li>
-    </ul>
-  </li>
-  <li data-list-item-id="e91ce1241a0e6a87a52cc8cd8531b5aff">
-    <a href="#h_01HVRY7E8S7RJM0888YQMZCMGE"
-      >How to Share a Nitro Trial with your Friends</a
-    >
-  </li>
-  <li data-list-item-id="ee003d54cd279be23888c9bc5000de481">
-    <a href="#h_01HVRY7E8SC0MH4T9WR6EH6GJG"
-      >Receiving a Nitro Trial from Someone</a
-    >
-    <ul>
-      <li data-list-item-id="e842f13d83137732fd8ba90ca82d02c21">
-        <a href="#h_01HVRY7E8S3S0XYVK5FMMT1C69"
-          >How to Redeem your 2-week Trial</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li data-list-item-id="eae61f062e7bae1def42f199fe280143e">
-    <a href="#h_01JD8N8F28HG61QXY041GA63P7">Share Nitro On Mobile</a>
-    <ul>
-      <li data-list-item-id="ef24d7f41dda72c92e2e0884ac4579c2d">
-        <a href="#h_01JD8NBH1SP6K15RZ3R0ZPWX1E">Sending Trials</a>
-      </li>
-      <li data-list-item-id="e9ee8e2b532f602b36f761ddcf41825ad">
-        <a href="#h_01JD8NDRK1XPGAJ1GBAF9KKZTR">Receiving a Trial</a>
-      </li>
-    </ul>
-  </li>
-  <li data-list-item-id="eec3200e22c433e3566d6d858943f52bd">
-    <a href="#h_01HVRY7E8T0ADKKTYZWQXHSE7D">Frequently Asked Questions</a>
-  </li>
-</ul>
+<div class="toc-box">
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
+  <ul>
+    <li data-list-item-id="e27ee82748498caace4aab2f016dd105f">
+      <a href="#h_01HVRY7E8SNEPQT1Q6H7T6ME4X">Share Nitro Eligibility</a>
+      <ul>
+        <li data-list-item-id="e1b4d9c7853b9e3ac233f6e5481ef64a6">
+          <a href="#h_01HVRY7E8SSPXDFV3PXM9CHTNE"
+            >Nitro Members Sharing a Trial</a
+          >
+        </li>
+        <li data-list-item-id="ee6012bab340fc3f10e61bd6577ed04ba">
+          <a href="#h_01HVRY7E8S1GMH2YZTN907BAY5">Friends Receiving a Trial</a>
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="e91ce1241a0e6a87a52cc8cd8531b5aff">
+      <a href="#h_01HVRY7E8S7RJM0888YQMZCMGE"
+        >How to Share a Nitro Trial with your Friends</a
+      >
+    </li>
+    <li data-list-item-id="ec476d3d78038aed0fb9fa6fb122710b5">
+      <a href="#h_01HVRY7E8SC0MH4T9WR6EH6GJG"
+        >Earning a Reward When Your Friend Subscribes</a
+      >
+      <ul>
+        <li data-list-item-id="e50b575b2c376042fca0febd22cf2c535">
+          <a href="#h_01M3MJKRRDFT2HQH2VTF0ZZ8WG">Reward Types</a>
+        </li>
+        <li data-list-item-id="ed0a5fccf18a87491985e48cdc00f820e">
+          <a href="#h_01M3MJKRREEDHJ17QYN2MWB0AD">When You Get Your Reward</a>
+        </li>
+        <li data-list-item-id="e2795a1e797b7488186cd2e8fa88cf925">
+          <a href="#h_01M3MJKRRFDBDSHR7RDHQM5S14">If You Cancel Nitro</a>
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="ee003d54cd279be23888c9bc5000de481">
+      <a href="#h_01HVRY7E8SC0MH4T9WR6EH6GJG"
+        >Receiving a Nitro Trial from Someone</a
+      >
+      <ul>
+        <li data-list-item-id="e842f13d83137732fd8ba90ca82d02c21">
+          <a href="#h_01HVRY7E8S3S0XYVK5FMMT1C69"
+            >How to Redeem your 2-week Trial</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="eae61f062e7bae1def42f199fe280143e">
+      <a href="#h_01JD8N8F28HG61QXY041GA63P7">Share Nitro On Mobile</a>
+      <ul>
+        <li data-list-item-id="ef24d7f41dda72c92e2e0884ac4579c2d">
+          <a href="#h_01JD8NBH1SP6K15RZ3R0ZPWX1E">Sending Trials</a>
+        </li>
+        <li data-list-item-id="e9ee8e2b532f602b36f761ddcf41825ad">
+          <a href="#h_01JD8NDRK1XPGAJ1GBAF9KKZTR">Receiving a Trial</a>
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="eec3200e22c433e3566d6d858943f52bd">
+      <a href="#h_01HVRY7E8T0ADKKTYZWQXHSE7D">Frequently Asked Questions</a>
+      <ul>
+        <li data-list-item-id="e0b1d1eac07c2ffcfcd66af5acab88f71">
+          <a href="#h_01M3MJNFH1JN7SBMZMPRR75D8M">Eligibility &amp; Access</a>
+        </li>
+        <li data-list-item-id="efb36cc9b6ea10fe4bb02cbfff8e2d170">
+          <a href="#h_01M3MJP09J5XGMKK2KG5T97FSQ">Sending Trials</a>
+        </li>
+        <li data-list-item-id="ed973a300adb8f3fd70f1d020c11ad450">
+          <a href="#h_01M3MJPG1ZPTTRB2K9B3X73R60">Receiving Trials</a>
+        </li>
+        <li data-list-item-id="e1c79dd6be91776587e0487e61b69427b">
+          <a href="#h_01M3MJPZAAVAPE66B266RZYHBC">Rewards</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01HVRY7E8SNEPQT1Q6H7T6ME4X">Share Nitro Eligibility </h1>
 <h2 id="h_01HVRY7E8SSPXDFV3PXM9CHTNE">Nitro Members Sharing a Trial</h2>
 <p id="h_01HVRY7E8SZDVXYBMZ21XF14ER">
@@ -174,11 +210,67 @@
   <span style="color: #666666">Shared Trial Confirmation</span>
 </h4>
 <div class="info-box">
-  Note: As an eligible Nitro member, you get 3 Nitro trials to start, with more
-  coming in the future. A trial will expire if not redeemed by the recipient in
-  10 days, but you’ll get the trial back. 
+  <strong>Note</strong>: As an eligible Nitro member, you get 3 Nitro trials to
+  start, with more coming in the future. A trial will expire if not redeemed by
+  the recipient in 10 days, but you’ll get the trial back. 
 </div>
-<h1 id="h_01HVRY7E8SC0MH4T9WR6EH6GJG">Receiving a Nitro Trial from Someone</h1>
+<h1 id="h_01HVRY7E8SC0MH4T9WR6EH6GJG">
+  Earning a Reward When Your Friend <span data-token-index="1">Subscribes</span>
+</h1>
+<div class="info-box">
+  <p><strong>Note</strong>:</p>
+  <ul>
+    <li data-list-item-id="e4fa2b313dcfb9b30d8bf122678ac3fc1">
+      This is a limited time experiment for a sample of Nitro subscribers. Not
+      all Discord users will have access to this experiment.
+    </li>
+    <li data-list-item-id="ed907235655fd59a3a1e45b8f05cc731e">
+      The reward type you see and the exact amount cannot be manually chosen.
+    </li>
+  </ul>
+</div>
+<p>
+  Some Nitro members may see a reward option when they share Nitro trials with
+  friends. If you're part of this experiment, you'll see it called out directly
+  on the Share Nitro banner, including what your reward is and how to earn it.
+</p>
+<h2 id="h_01M3MJKRRDFT2HQH2VTF0ZZ8WG">Reward Types</h2>
+<p>
+  If you are eligible, you will see different promotions in your Nitro banner.
+  Promotions change from time to time, but may include:
+</p>
+<ul>
+  <li data-list-item-id="ee5be0743e0c94e312d5f37f3c278c099">
+    <strong>Orbs:</strong> you can earn up to 15,000 Orbs from your 3 available
+    Share Nitro trials. Each friend who becomes a paid Nitro subscriber after
+    starting a trial you shared earns you 5,000 Orbs.
+  </li>
+  <li data-list-item-id="e600be9b78612c5dd6ae4904e99c29bd7">
+    <strong>A 30% discount on your Nitro subscription:</strong> you can earn 30%
+    off your Nitro subscription for up to 3 consecutive months. Each friend who
+    becomes a paid subscriber after starting a trial you shared earns you 1
+    discounted month.
+  </li>
+</ul>
+<h2 id="h_01M3MJKRREEDHJ17QYN2MWB0AD">When You Get Your Reward</h2>
+<p>
+  Your reward will be delivered 5 business days after your friend's subscription
+  starts.<br />You can check your <strong>Share Nitro banner</strong> in
+  <strong>Nitro</strong> <strong>Home</strong> to track your progress on the
+  rewards you've earned.
+</p>
+<h2 id="h_01M3MJKRRFDBDSHR7RDHQM5S14">If You Cancel Nitro</h2>
+<ul>
+  <li data-list-item-id="eae89f078124fcb996663a3d64555e3c1">
+    If you're earning Orbs, they're yours to keep and don't expire, even if you
+    later cancel your Nitro subscription.
+  </li>
+  <li data-list-item-id="e68b8cc3062c9122f064498394b53a6f4">
+    If you're earning a subscription discount, and you cancel before the
+    discounted month arrives, you'll lose that pending discount.
+  </li>
+</ul>
+<h1 id="h_01M3MJVQHYJNH6BXMC6YZAV8AQ">Receiving a Nitro Trial from Someone</h1>
 <p>
   If someone generously shares a Nitro trial with you, you’ll see the trial in
   the form of an embedded message in your DMs with the sharer. You’ll have up to
@@ -207,7 +299,7 @@
   <span style="color: #666666">Example of Nitro 2-week Trial in DM </span>
 </h4>
 <div class="warn-box">
-  <strong>IMPORTANT: </strong>This is NOT a link, file, image attachment,
+  <strong>Important: </strong>This is NOT a link, file, image attachment,
   program, nor a QR code! Redeeming the trial is completed entirely within the
   Discord app.
 </div>
@@ -260,6 +352,11 @@
   never had a subscription on Discord through the App Store in the past, you
   will need to redeem your trial on desktop instead.
 </p>
+<div class="info-box">
+  <strong>Note</strong>: The reward described above in
+  <span data-token-index="1">Earning a Reward When Your Friend Subscribes</span>
+  is currently only available to members sharing trials on desktop.
+</div>
 <h2 id="h_01JD8NBH1SP6K15RZ3R0ZPWX1E">Sending Trials</h2>
 <p>
   1. Open <strong>Settings</strong> on your mobile device by selecting your
@@ -332,6 +429,22 @@
   2-week trial ends.
 </p>
 <h1 id="h_01HVRY7E8T0ADKKTYZWQXHSE7D">Frequently Asked Questions</h1>
+<p><strong>This FAQ is divided into sections:</strong></p>
+<ul>
+  <li data-list-item-id="e301b29564ccda378a9b95f67552048bf">
+    <a href="#h_01M3MJNFH1JN7SBMZMPRR75D8M">Eligibility &amp; Access</a>
+  </li>
+  <li data-list-item-id="ef4f5bed2c55065e344d6bd324af7bd96">
+    <a href="#h_01M3MJP09J5XGMKK2KG5T97FSQ">Sending Trials</a>
+  </li>
+  <li data-list-item-id="e393a8bb0aadd9905423638d429f8e0a0">
+    <a href="#h_01M3MJPG1ZPTTRB2K9B3X73R60">Receiving Trials</a>
+  </li>
+  <li data-list-item-id="ec9282bfa0ef60e72c5261aa10ff781dc">
+    <a href="#h_01M3MJPZAAVAPE66B266RZYHBC">Rewards</a>
+  </li>
+</ul>
+<h2 id="h_01M3MJNFH1JN7SBMZMPRR75D8M">Eligibility &amp; Access</h2>
 <p><strong>Q: As a Nitro member, who can I share Nitro trials with?</strong></p>
 <p>
   A: As a Nitro member, you can share Nitro trials with any eligible friend. If
@@ -356,6 +469,7 @@
   Additionally, you may not see it due to the eligibility criteria for Nitro
   members. 
 </p>
+<h2 id="h_01M3MJP09J5XGMKK2KG5T97FSQ">Sending Trials</h2>
 <p><strong>Q: What happens after I share all 3 of my trials? </strong></p>
 <p>
   A: We hope to provide more sharing opportunities in the future. Keep an eye on
@@ -391,6 +505,12 @@
   <strong>Q: What devices is this available on?</strong><br />A: Share Nitro is
   only available on the desktop app and browser. 
 </p>
+<p>
+  The reward described in
+  <span data-token-index="1">Earning a Reward When Your Friend Subscribes</span>
+  is desktop-only as well.
+</p>
+<h2 id="h_01M3MJPG1ZPTTRB2K9B3X73R60">Receiving Trials</h2>
 <p><strong>Q: Is there a way to revoke or decline a shared trial? </strong></p>
 <p>
   A: There isn't a way to revoke or decline a shared trial, so if you're sharing
@@ -426,7 +546,7 @@
 </p>
 <p class="wysiwyg-text-align-left">
   <strong
-    >IMPORTANT: This is NOT a link, file, image attachment, program, nor a QR
+    >Important: This is NOT a link, file, image attachment, program, nor a QR
     code</strong
   >!<br />Beware of bad actors asking you to redeem a Nitro trial by pressing a
   suspicious scam link, downloading a program, or scanning QR codes. Don’t click
@@ -457,3 +577,24 @@
   pass has been successfully redeemed.<br />Line 3: Two friend passes have been
   redeemed, and one friend has signed up for Nitro.
 </h4>
+<h2 id="h_01M3MJPZAAVAPE66B266RZYHBC">Rewards</h2>
+<p>
+  <strong
+    >Q: I don't see a reward option on my Share Nitro banner. Why not?</strong
+  >
+</p>
+<p>
+  A: The reward is part of a limited-time test and isn't available to all Nitro
+  members yet. If you don't see it, it hasn't reached your account yet, and
+  there's nothing wrong on your end.
+</p>
+<p><strong>Q: Do I need to do anything to claim my reward?</strong></p>
+<p>
+  A: No. Once your friend becomes a paid subscriber, your reward is applied
+  automatically.
+</p>
+<p><strong>Q: Does my friend get a reward too?</strong></p>
+<p>
+  A: Their free 2-week trial is their reward for accepting your Share Nitro
+  invite. There's no separate reward for them beyond the trial itself.
+</p>
