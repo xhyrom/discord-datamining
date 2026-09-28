@@ -1,0 +1,32 @@
+.platforms__9bb6a {
+  --custom-game-platform-glyph-size: 20px;
+  --custom-game-platform-glyph-gap: var(--space-4);
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  min-width: calc(
+    var(--custom-game-platform-glyph-size) * 3 +
+      var(--custom-game-platform-glyph-gap) * 2
+  );
+}
+.platformIcon__9bb6a {
+  color: var(--icon-subtle);
+  display: grid;
+  flex: 0 0 auto;
+  height: var(--custom-game-platform-glyph-size);
+  place-items: center;
+  width: var(--custom-game-platform-glyph-size);
+}
+.platformIcon__9bb6a + .platformIcon__9bb6a {
+  margin-inline-start: var(--custom-game-platform-glyph-gap);
+}
+.platforms_e6539f {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  margin-inline-start: auto;
+  padding-inline-start: var(--space-8);
+}
+
+/*# sourceMappingURL=476988.535ba02dbc146de2.css.map*/
