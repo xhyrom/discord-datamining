@@ -10,12 +10,12 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8656854002](https://discord.com/jobs/8656854002)
 
-**Updated At:** Mon, 28 Sep 2026 22:41:14 GMT
+**Updated At:** Tue, 29 Sep 2026 16:24:07 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord empowers people to create spaces where they can find a sense of belonging in their lives. Millions of people trust Discord to keep their communications secure, private, and out of the hands of evildoers, so security and privacy are necessary to Discord's success.
 We are looking for a Senior Software Engineer to join our Application Security team and protect Discord’s users where it matters most, their accounts. If you are an engineer with a wealth of experience making the secure way the easy way, a deep sense of curiosity, and an endless desire to improve Discord, read on!
-This role is open to remote locations within the Pacific Standard Time Zone.&amp;nbsp;
+&amp;nbsp;
 What you'll do
 
 Join an engineering team designing and implementing full-stack, user-facing security solutions that protect hundreds of millions of Discord users.
