@@ -127,8 +127,8 @@
             >
           </td>
           <td>
-            Share larger files up to 500 MB - perfect for videos, photos, and
-            more files like videos and photos up to 500 MB!
+            Share larger files up to 1GB - perfect for videos, photos, and more
+            files like videos and photos up to 1GB!
           </td>
         </tr>
         <tr>
@@ -767,8 +767,7 @@
   reduce the free file size upload limit. Unlike other platforms, we store your
   files for as long as you need them, so it’s crucial that we manage our storage
   sustainably. If you need more upload capacity, Nitro Basic offers a 50MB
-  limit, and Nitro gives you up to 500 MB, so you have options that fit your
-  needs.
+  limit, and Nitro gives you up to 1GB, so you have options that fit your needs.
 </p>
 <h2 id="h_01JZ3EFHEK1ARBXN693Y3D0JQD">Nitro Classic</h2>
 <p>

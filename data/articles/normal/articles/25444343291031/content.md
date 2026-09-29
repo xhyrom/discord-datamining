@@ -418,7 +418,7 @@
 </p>
 <p>
   If you need more room regularly, Nitro Basic offers 50MB and Nitro offers up
-  to 500MB.
+  to 1GB.
 </p>
 <p>
   <strong>Q: Does Discord check my file size pre- or post-compression?</strong>
