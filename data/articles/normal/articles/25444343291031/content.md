@@ -316,10 +316,6 @@
   >
 </h4>
 <h1 id="h_01JZJZM3A3X9CNP1SXBQ4N29YB">How to Use Alt Text</h1>
-<div class="tip-box">
-  <strong>Tip:</strong> ALT text cannot be added to an image after it has
-  already been uploaded to chat.
-</div>
 <p>
   ALT text - short for alternative text - is a feature that allows users to
   write an image description to uploads so that anyone using a screen reader can
