@@ -25,12 +25,12 @@
     {
       "id": 96196709002,
       "name": "Careers Site Department",
-      "value": "Data Platform",
+      "value": null,
       "value_type": "single_select"
     }
   ],
   "id": 8498984002,
-  "updated_at": "2026-09-11T19:25:24-04:00",
+  "updated_at": "2026-09-29T18:12:15-04:00",
   "requisition_id": "R-107245",
   "title": "Staff Software Engineer, Data Platform",
   "company_name": "Discord",
