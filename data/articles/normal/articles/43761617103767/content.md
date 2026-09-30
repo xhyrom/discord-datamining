@@ -163,7 +163,7 @@
   while logged into your Riot Games account, or through the prepaid codes and
   cards section at checkout in participating Riot titles.
 </p>
-<p>Q: What if codes for this offer run out?</p>
+<p><strong>Q: What if codes for this offer run out?</strong></p>
 <p>
   A: Codes are limited. If none are available when you check, you'll see a
   message letting you know more are on the way, and you can check back later.

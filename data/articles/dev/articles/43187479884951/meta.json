@@ -1,0 +1,27 @@
+{
+  "id": 43187479884951,
+  "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/43187479884951.json",
+  "html_url": "https://support-dev.discord.com/hc/en-us/articles/43187479884951-Self-Serve-Verified-Ownership-Transfers",
+  "author_id": 17347533772439,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": true,
+  "position": 0,
+  "section_id": 6308906589975,
+  "created_at": "2026-09-02T14:58:21Z",
+  "name": "Self Serve Verified Ownership Transfers",
+  "title": "Self Serve Verified Ownership Transfers",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2026-09-30T20:44:50Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720952,
+  "content_tag_ids": [
+    "01KHVYQJCDQDZSG7WN6H14S0G5",
+    "01M1H9YWK5CQ1Z117TARK3JS9G"
+  ],
+  "label_names": [],
+  "user_segment_ids": []
+}

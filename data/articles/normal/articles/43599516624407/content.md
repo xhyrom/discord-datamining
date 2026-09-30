@@ -74,7 +74,27 @@
     you won't be eligible for additional rewards through this promotion.
   </li>
 </ul>
-<h2 id="h_01M3SFHJ76N0Z2TNQQCK56YXM1">Which Familiar Can I Choose?</h2>
+<div class="info-box">
+  <p>
+    <span data-token-index="0"><strong>Note</strong></span
+    >: <span data-token-index="2"> </span>Look for the promotion banner before
+    you buy to confirm you're eligible. If you don't see the banner, you're not
+    currently eligible for this promotion. Not all users will be eligible.
+  </p>
+  <figure class="wysiwyg-image wysiwyg-image-resized" style="width: 40.36%">
+    <img
+      style="aspect-ratio: 1206/2622"
+      src="https://support.discord.com/hc/article_attachments/43892299407639"
+      alt="Example of Promotion Banner"
+      width="1206"
+      height="2622"
+    />
+  </figure>
+  <h4 class="wysiwyg-text-align-center" id="h_01M3SFHJ76N0Z2TNQQCK56YXM1">
+    Example of Promotion Banner
+  </h4>
+</div>
+<h2 id="h_01M3T63JJHHYD0QSV0YRY1RBAC">Which Familiar Can I Choose?</h2>
 <p>
   When your gift qualifies, you'll be prompted to choose one familiar Avatar
   Decoration:
