@@ -1,6 +1,6 @@
 <p>
   Starting from <strong>June 26, 2025 (6:00AM PT) </strong>to
-  <strong>June 26, 2026 (11:59PM PT)</strong>, Elgato customers can claim 1
+  <strong>December 31, 2027 (11:59PM PT)</strong>, Elgato customers can claim 1
   month of Discord Nitro from purchasing eligible Elgato products. Learn below
   about how you can claim<a
     href="https://support.discord.com/hc/en-us/articles/115000435108"
@@ -18,11 +18,13 @@
   this Nitro promotion.
 </p>
 <div class="info-box">
-  <span style="color: #434343"
-    >This promotion is not eligible in the following regions: Syria, Russia,
-    Turkey, Iran, North Korea, Zaporizhzhia, Kherson, Donetsk, and
-    Luhansk. </span
-  >
+  <p>
+    <span style="color: #434343"
+      >This promotion is not eligible in the following regions: Syria, Russia,
+      Turkey, Iran, North Korea, Zaporizhzhia, Kherson, Donetsk, and
+      Luhansk. </span
+    >
+  </p>
   <p id="h_01JYM0S2ZHEVWTW5FM93ZH95QZ">
     <span style="color: #434343"
       >We may add additional restrictions from time to time, if you receive an
@@ -72,7 +74,7 @@
 <p>
   <strong>Requirements:</strong> Claim the promo by purchasing eligible Elgato
   products starting <strong>June 26, 2025 (6:00AM PT)</strong>, and redeem in
-  your Discord account by <strong>July 26, 2026 (11:59PM PT)</strong>.
+  your Discord account by <strong>January 30, 2028 (11:59PM PT)</strong>.
 </p>
 <p>
   <strong>Subscription:</strong> After the 1 month trial period, your Nitro
@@ -81,51 +83,76 @@
   any time in your Discord <strong>User Settings</strong>. 
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="ee2459f16707d8d6696246cd8b23608c8"
+    >
       <a href="#h_01JYM0S2ZH3P0BNYV42BV23R4X"
         ><strong>Promotion Summary</strong></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e41a53c146c074ee3d747b31603155e7f"
+    >
       <a href="#h_01JYM0S2ZHMXKQC8630A1W42JD"
         ><strong>What is Discord Nitro?</strong></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e92ba129297a6ba34ee174a10c0cf3084"
+    >
       <a href="#h_01JYM0S2ZHYBTXSTRPTXBPRNSP"
         ><strong>What is Elgato?</strong></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e39d0b1f20c5187203f5ea7bb85dbf539"
+    >
       <a href="#h_01JYM0S2ZHJ6V7BQ2EDQVSNXRE"
         ><strong
           >How do I claim the Nitro Promo from my Elgato product?  </strong
         ></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e7be4b79666c6720ca354a5193a1a5f0a"
+    >
       <a href="#h_01JYM0S2ZHTAV6SATQNJ22283N"
         ><strong
           >How do I redeem the Nitro Trial on my Discord Account? </strong
         ></a
       >
       <ul>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e05965637e7663ebe5d755083c61826d7"
+        >
           <a href="#h_01JYM0S2ZHNC0WX0TPF32RPFT6"
             ><strong>Eligibility for Redeeming the Nitro Trial</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="eb4f2072c8e839d887121eacff562fbb2"
+        >
           <a href="#h_01JYM0S2ZH0C3Y1G8PR6HMZA4Q"
             ><strong>Step by Step Redeem Instructions</strong></a
           >
           <ul>
-            <li>
+            <li
+              class="wysiwyg-list-bold"
+              data-list-item-id="ea078a22cfe5bc402d57cad1d86a6239e"
+            >
               <a href="#h_01JYM0S2ZJK1QP5MSEW22FAHZK"
                 ><strong
                   >What if I am an Active Nitro Basic, Nitro Classic, or Server
@@ -137,27 +164,42 @@
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e02d37640bb3de25b3920c88e55a92c0c"
+    >
       <a href="#h_01JYM0S2ZJK7KGTAZQKKW3HQB4"
         ><strong>Frequently Asked Questions</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e6763eeede3f0132ccb5cddea5cc49df2"
+        >
           <a href="#h_01JYM0S2ZJ75M1MCS7PS3DDKBN"
             ><strong>Promotion Details</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e7120dd461649f581b4659a506686bee5"
+        >
           <a href="#h_01JYM0S2ZJRHND0SBD5D6F36DZ"
             ><strong>Eligibility for the Promotion</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e404ec1d9236d1cc2cf7868581ad8d7d2"
+        >
           <a href="#h_01JYM0S2ZJM03C85H8V8Z6HKHB"
             ><strong>Payment Info and Subscription Questions</strong></a
           >
         </li>
-        <li>
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="e7b8b55c0a462036b438a4d9018d88b86"
+        >
           <a href="#h_01JYM0S2ZJPD6M2M6QY10JXNW1"
             ><strong>Potential Errors and Other Issues</strong></a
           >
@@ -174,7 +216,7 @@
   uploads, profile and avatar customizations, 2 free Server Boosts, and more:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e7df7035d96c639c8f76f6ac477b373e9">
     <a
       href="https://support.discord.com/hc/articles/360036479811"
       target="_blank"
@@ -182,7 +224,7 @@
       >Custom Emojis</a
     >
   </li>
-  <li>
+  <li data-list-item-id="edfe44ada0a99c1a812d30121a61d766b">
     <a
       href="https://support.discord.com/hc/articles/207260127"
       target="_blank"
@@ -190,7 +232,7 @@
       >Discord App Color Themes</a
     >
   </li>
-  <li>
+  <li data-list-item-id="eeb349fb53c94f336ab302280fe3b988a">
     <a
       href="https://support.discord.com/hc/articles/12102061808663"
       target="_blank"
@@ -198,7 +240,7 @@
       >Super Reactions</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e6c67e0eeec6d96c9c7d8a1e656049da1">
     <a
       href="https://support.discord.com/hc/articles/13410113109911"
       target="_blank"
@@ -206,7 +248,7 @@
       >Avatar Decorations</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e3b939507ba02c31fabbdd3c2c6c826a2">
     <a
       href="https://support.discord.com/hc/en-us/articles/4409388345495"
       target="_blank"
@@ -214,7 +256,7 @@
       >Unique Server Profiles</a
     >
   </li>
-  <li>
+  <li data-list-item-id="eb0cf0f1504def35e62a29653be28d0e5">
     <a
       href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-"
       target="_blank"
@@ -222,7 +264,7 @@
       >Server Boosts</a
     >
   </li>
-  <li>
+  <li data-list-item-id="ecd08628fb894b273b580b193d7607ebb">
     <a
       href="https://support.discord.com/hc/articles/115000435108"
       target="_blank"
@@ -265,7 +307,7 @@
 </h1>
 <p><strong>Step 1 - Purchase and Add the Offer</strong> </p>
 <ul>
-  <li>
+  <li data-list-item-id="e05558d20250a734b7ea44a6f4a411330">
     Purchase a qualifying product/SKU on
     <a href="http://elgato.com" target="_blank" rel="noopener noreferrer"
       >Elgato.com</a
@@ -276,7 +318,7 @@
 </ul>
 <p><strong>Step 2 - Check Your Shipping Confirmation</strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="ebac1f1f0cd29f1ca3dadbbd38aed4905">
     Once your order ships, you'll receive an email from Elgato containing a
     redemption link. Select this <strong>redemption</strong>
     <strong>link</strong> to proceed to the next step. 
@@ -284,7 +326,7 @@
 </ul>
 <p><strong>Step 3 - Redeem Your Code</strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="e77959039ecfeb870942a4ca7c7beb526">
     Follow the <a href="#h_01JYM0S2ZHTAV6SATQNJ22283N">instructions</a> to
     redeem your Nitro Trial code within Discord and start enjoying your month of
     Nitro. 
@@ -296,7 +338,7 @@
 <p>
   Once you have claimed the promo, you'll now need to officially redeem this
   promo on your Discord account. You must redeem this Nitro trial by
-  <strong>July 26, 2026 (11:59PM PT).</strong>
+  <strong>January 30, 2028 (11:59PM PT)</strong><strong>.</strong>
 </p>
 <h2 id="h_01JYM0S2ZHNC0WX0TPF32RPFT6">
   Eligibility for Redeeming the Nitro Trial
@@ -340,72 +382,75 @@
   Discord account, you can follow these steps below to redeem the promo.
 </p>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343">:</span
-  ><span style="color: #434343"><br /></span
-  ><span style="color: #434343"
+  <span style="color: #434343"><strong>Info</strong>:</span><br /><span
+    style="color: #434343"
     >- Before redeeming Nitro, make sure you are logged in your own Discord
     account.</span
-  ><span style="color: #434343"><br /></span
-  ><span style="color: #434343"
+  ><br /><span style="color: #434343"
     >- If you accidentally redeemed the Nitro promo on an account that is not
     yours, we are unable to provide you with another promo.</span
   >
 </div>
 <p><strong>Step 1 - Logging into Discord</strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="eb49fb6fca179b6be8ef8c988073560b1">
     If you're not already logged into Discord in your browser, you will then be
     automatically redirected to either:
   </li>
 </ul>
 <div>
-  <table style="width: 100%">
-    <colgroup>
-      <col style="width: 258px" />
-      <col style="width: 404px" />
-    </colgroup>
-    <tbody>
-      <tr>
-        <td>
-          <p><strong>Register for a New Account</strong></p>
-          <p>
-            If you don't have an account, you can directly register a new
-            Discord account
-          </p>
-        </td>
-        <td>
-          <p><strong>Login to your Account</strong></p>
-          <p>
-            If you already have a Discord account, you can login to your account
-            using your email and password or using QR code login
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td style="text-align: center">
-          <img
-            src="https://support.discord.com/hc/article_attachments/33049770344087"
-            width="194"
-            height="224"
-          />
-          <h4 id="h_01JYM0S2ZHX1A2HNW0SYRNA8HR">
-            <span style="color: #666666">Create an account page</span>
-          </h4>
-        </td>
-        <td style="text-align: center">
-          <img
-            src="https://support.discord.com/hc/article_attachments/33049770348567"
-            width="394"
-            height="218"
-          />
-          <h4 id="h_01JYM0S2ZJRRR9FJSC8ZPJ6TJ5">
-            <span style="color: #666666">Login page</span>
-          </h4>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <figure class="wysiwyg-table wysiwyg-table-align-left" style="width: 100%">
+    <table class="wysiwyg-table-resized">
+      <colgroup>
+        <col style="width: 39%" />
+        <col style="width: 61%" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><strong>Register for a New Account</strong></p>
+            <p>
+              If you don't have an account, you can directly register a new
+              Discord account
+            </p>
+          </td>
+          <td>
+            <p><strong>Login to your Account</strong></p>
+            <p>
+              If you already have a Discord account, you can login to your
+              account using your email and password or using QR code login
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center">
+            <p>
+              <img
+                src="https://support.discord.com/hc/article_attachments/33049770344087"
+                width="194"
+                height="224"
+              />
+            </p>
+            <h4 id="h_01JYM0S2ZHX1A2HNW0SYRNA8HR">
+              <span style="color: #666666">Create an account page</span>
+            </h4>
+          </td>
+          <td style="text-align: center">
+            <p>
+              <img
+                src="https://support.discord.com/hc/article_attachments/33049770348567"
+                width="394"
+                height="218"
+              />
+            </p>
+            <h4 id="h_01JYM0S2ZJRRR9FJSC8ZPJ6TJ5">
+              <span style="color: #666666">Login page</span>
+            </h4>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </figure>
 </div>
 <p><strong>Step 2 - Claiming your promotion gift</strong></p>
 <p>
@@ -414,25 +459,26 @@
   correct Discord account.
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ed066e373dc6e91ef98a3e550db72c9ff">
     You'll see a notice saying:
-    <strong><em>"You are accepting this gift as _________" </em></strong>
+    <em><strong>"You are accepting this gift as _________" </strong></em>
   </li>
 </ul>
 <ul>
-  <li>
+  <li data-list-item-id="e96241a61b58759639fb37492732b6708">
     If your Discord account does not have your payment information, you'll be
     asked to fill out your payment details. (Note: You will not be charged until
     the free trial ends and the subscription renews)
   </li>
-  <li>
+  <li data-list-item-id="ef78cbff0a35e0deb9f71b7cd48d0ed1e">
     When you've filled out all the necessary information and you're ready to
     redeem this promotion, press the "<strong>Accept Gift</strong>" button. 
   </li>
 </ul>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343">:</span>
+  <p>
+    <span style="color: #434343"><strong>Info</strong>:</span>
+  </p>
   <p id="h_01JYM0S2ZJVFSPRQYAV7MB30T2">
     <span style="color: #434343"
       >- If you're logged into the incorrect Discord account, press the "Wrong
@@ -449,7 +495,7 @@
       height="363"
   /></strong>
 </p>
-<h4 id="h_01JZ8JTCXM0S50GR6K7WJ74A87" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ8JTCXM0S50GR6K7WJ74A87">
   <span style="color: #666666">1 Month of Nitro Gift</span>
 </h4>
 <p>
@@ -464,7 +510,7 @@
     height="504"
   />
 </p>
-<h4 id="h_01JZ8JWXZJCG8CW3HY42X8XG1V" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JZ8JWXZJCG8CW3HY42X8XG1V">
   <span style="color: #666666">Payment Details Review</span>
 </h4>
 <p>
@@ -478,7 +524,7 @@
 </p>
 <p><strong>Step 4 - Subscription Now Activated</strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="e68381c96bc96af19d7127f01b02fe30f">
     After accepting the promo to your account, you'll now be automatically
     redirected to your <strong>Subscriptions</strong> tab in your User Settings
     to see your newly activated Nitro subscription on your account.
@@ -500,11 +546,11 @@
   Nitro subscription.
 </p>
 <div class="warn-box">
-  <strong><span style="color: #434343">HOWEVER, please note</span></strong
-  ><span style="color: #434343"
-    >: By choosing to activate this 1 month trial, you will lose any features
-    associated with your current subscriptions, and **you will not receive a
-    refund for any remaining value on your current subscription**.</span
+  <span style="color: #434343"
+    ><strong>HOWEVER, please note</strong>: By choosing to activate this 1 month
+    trial, you will lose any features associated with your current
+    subscriptions, and **you will not receive a refund for any remaining value
+    on your current subscription**.</span
   >
 </div>
 <p>
@@ -521,8 +567,8 @@
   promotion URL link in the new page and send it to a friend.
   <strong
     >We recommend sending the link in a private direct message. Make sure your
-    friend redeems the code by July 26, 2026 (11:59PM PT).</strong
-  >
+    friend redeems the code by </strong
+  ><strong>January 30, 2028 (11:59PM PT)</strong><strong>.</strong>
 </p>
 <h1 id="h_01JYM0S2ZJK7KGTAZQKKW3HQB4">Frequently Asked Questions</h1>
 <p>
@@ -530,23 +576,31 @@
   we've also broken down this information in this FAQ section as well too.
 </p>
 <ul>
-  <li><a href="#h_01JYM0S2ZJ75M1MCS7PS3DDKBN">Promotion Details</a></li>
-  <li>
+  <li data-list-item-id="e99bf3ca2d8a44ba452a17018066860b2">
+    <a href="#h_01JYM0S2ZJ75M1MCS7PS3DDKBN">Promotion Details</a>
+  </li>
+  <li data-list-item-id="e2a6d0a6355f6400ef3ba0ce2a4ddff69">
     <a href="#h_01JYM0S2ZJRHND0SBD5D6F36DZ">Eligibility for the Promotion</a>
   </li>
-  <li>
+  <li data-list-item-id="e13fa47780dd5c74c2e7bdc657e32eb58">
     <a href="%20#h_01JYM0S2ZJM03C85H8V8Z6HKHB"
       >Payment Info and Subscription Questions</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e5d7fc3ce500ae76edd12d6349fdcf68a">
     <a href="#h_01JYM0S2ZJPD6M2M6QY10JXNW1"
       >Potential Errors and Other Issues</a
     >
     <ul>
-      <li>Already Had/Have Nitro</li>
-      <li>Already Redeemed</li>
-      <li>Something's Wrong Here</li>
+      <li data-list-item-id="e13f04d7bb96372710af8d2cad2442af3">
+        Already Had/Have Nitro
+      </li>
+      <li data-list-item-id="e1749a0b93b64f9d34c2659cae9200475">
+        Already Redeemed
+      </li>
+      <li data-list-item-id="e03db357b121c2d2eee1ab2649ac34e7f">
+        Something's Wrong Here
+      </li>
     </ul>
   </li>
 </ul>
@@ -554,23 +608,22 @@
 <p><strong>Q: How long does this promotion run for?</strong></p>
 <p>
   A: Elgato customers can purchase eligible Elgato products starting on
-  <strong>June 26, 2025 (6:00AM PT) </strong>through<strong>
-    June 26, 2026 (11:59PM PT)</strong
-  >. The 1-month Nitro promotion must be redeemed by
-  <strong>July 26, 2026 (11:59PM PT)</strong>. 
+  <strong>June 26, 2025 (6:00AM PT) </strong>through<strong> </strong
+  ><strong>December 31, 2027 (11:59PM PT)</strong>. The 1-month Nitro promotion
+  must be redeemed by <strong>January 30, 2028 (11:59PM PT)</strong>. 
 </p>
 <p>
-  After <strong>July 26, 2026 (11:59PM PT)</strong>, Elgato customers will no
+  After <strong>January 30, 2028 (11:59PM PT)</strong>, Elgato customers will no
   longer be able to claim a trial promo.
 </p>
 <p><strong>Q: How long does the Discord Nitro promotion last for?</strong></p>
 <p>
   A: You must redeem the Nitro promotion by
-  <strong>July 26, 2026 (11:59PM PT)</strong>.
+  <strong>January 30, 2028 (11:59PM PT)</strong>.
 </p>
 <p>
   If a code has not been redeemed to the Discord account by
-  <strong>July 26, 2026 (11:59PM PT)</strong>, it will expire and you will no
+  <strong>January 30, 2028 (11:59PM PT)</strong>, it will expire and you will no
   longer be able to have 1 month of Discord Nitro.
 </p>
 <h2 id="h_01JYM0S2ZJRHND0SBD5D6F36DZ">Eligibility for the Promotion</h2>
@@ -772,10 +825,18 @@
 </p>
 <p>A: There are several reasons why you may be seeing this error:</p>
 <ul>
-  <li>You are ineligible for this promotion</li>
-  <li>The promotion is invalid</li>
-  <li>The promotion has reached the maximum number of claims</li>
-  <li>The link is invalid</li>
+  <li data-list-item-id="eac567c88364ddfa2176ff18b67c0512c">
+    You are ineligible for this promotion
+  </li>
+  <li data-list-item-id="e740931fc730579944325353309415567">
+    The promotion is invalid
+  </li>
+  <li data-list-item-id="e2ca83eed9ab8aefeab75a7d4df5cc193">
+    The promotion has reached the maximum number of claims
+  </li>
+  <li data-list-item-id="efdc9ecf5b0e1f90db38030d00fb12ba4">
+    The link is invalid
+  </li>
 </ul>
 <p>
   Please note that the Discord support team is not able to assist if you run
