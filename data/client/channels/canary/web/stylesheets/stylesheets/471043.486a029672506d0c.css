@@ -1,0 +1,17 @@
+.container__82fb2 {
+  cursor: pointer;
+}
+.container__82fb2:hover {
+  background: var(--user-profile-overlay-background-hover);
+}
+.applicationIcon__82fb2,
+.applicationIconPlaceholder__82fb2 {
+  border-radius: 2px;
+}
+.applicationIconPlaceholder__82fb2 {
+  background-color: var(--background-mod-subtle);
+  height: 16px;
+  width: 16px;
+}
+
+/*# sourceMappingURL=471043.486a029672506d0c.css.map*/

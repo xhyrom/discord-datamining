@@ -1,0 +1,24 @@
+:where(.banner__68edb) {
+  transition: background-color 0.1s;
+}
+:not(.custom-user-profile-theme).user-profile-popout :where(.banner__68edb) {
+  border-radius: var(
+    --custom-user-profile-banner-radius,
+    var(--radius-sm) var(--radius-sm) 0 0
+  );
+}
+.user-profile-modal-v2 :where(.banner__68edb) {
+  border-radius: var(
+    --custom-user-profile-banner-radius,
+    var(--radius-lg) var(--radius-lg) 0 0
+  );
+}
+:where(.banner__68edb):before {
+  border-bottom: 1px solid var(--border-muted);
+  bottom: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+}
+
+/*# sourceMappingURL=58495.ad5de67af9a66ad3.css.map*/
