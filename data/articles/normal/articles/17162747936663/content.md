@@ -6,72 +6,6 @@
   you're looking to purchase unique items, claim Nitro exclusives, or send gifts
   to friends, this article explains all the essential features and functions.
 </p>
-<div class="mega-box">
-  <p>
-    <span style="color: #434343"
-      >Offer:
-      <strong>Discount on your first Shop purchase starting </strong>August 4,
-      2026<strong>!</strong></span
-    >
-  </p>
-  <p>
-    <span style="color: #434343"
-      ><strong
-        >Some users may see a banner for a discount on their first real-money
-        purchase in the Shop. If you have this offer:</strong
-      ></span
-    >
-  </p>
-  <ul>
-    <li
-      class="wysiwyg-list-color wysiwyg-list-bold"
-      style="--wysiwyg-list-marker-color: #434343"
-      data-list-item-id="ee8a661790ea1fd531f93b71e12daddf8"
-    >
-      <span style="color: #434343"
-        ><strong
-          >It's a one-time discount on Discord-made items (Discord Collabs items
-          and Orbs purchases aren't included). Works for a purchase for yourself
-          or a gift.</strong
-        ></span
-      >
-    </li>
-    <li
-      class="wysiwyg-list-color"
-      style="--wysiwyg-list-marker-color: #434343"
-      data-list-item-id="e74142691c37ca4275f183818ed517d13"
-    >
-      <span style="color: #434343"
-        ><strong
-          >Not sure if an item qualifies? Open its page and look for the </strong
-        >Offer Eligible<strong>
-          badge. The discount won't show while browsing, it's applied
-          automatically at checkout.</strong
-        ></span
-      >
-    </li>
-    <li
-      class="wysiwyg-list-color wysiwyg-list-bold"
-      style="--wysiwyg-list-marker-color: #434343"
-      data-list-item-id="ec8b5948af7091e6cabeb2412f4e716ca"
-    >
-      <span style="color: #434343"
-        ><strong
-          >While your offer is active, item prices may default to real-money
-          pricing instead of Orbs. You can still purchase Orbs Eligible items
-          with Orbs by opening the item’s page.</strong
-        ></span
-      >
-    </li>
-  </ul>
-  <p>
-    <span style="color: #434343"
-      ><strong>This offer will end </strong>August 11, 2026 (12PM PT)<strong
-        >.</strong
-      ></span
-    >
-  </p>
-</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
@@ -143,6 +77,13 @@
   </ul>
 </div>
 <h1 id="h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</h1>
+<div class="info-box">
+  <span style="color: #434343"
+    ><strong>Note</strong>: The Discord Shop does not use AI-generated art.
+    Every item in the Shop is designed by human artists, either on our team or
+    the partners we collaborate with.</span
+  >
+</div>
 <p>
   In the Shop, you can preview and purchase<a
     href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
@@ -170,9 +111,9 @@
   their subscription.
 </p>
 <div class="info-box">
-  Items available for purchase in the Shop will change periodically and may be
-  available for a limited time. However, any purchased items are yours to keep
-  and can be used at any time.
+  <strong>Note</strong>: Items available for purchase in the Shop will change
+  periodically and may be available for a limited time. However, any purchased
+  items are yours to keep and can be used at any time.
 </div>
 <p class="wysiwyg-text-align-center">
   <img
