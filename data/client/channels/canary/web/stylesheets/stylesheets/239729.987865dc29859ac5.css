@@ -1,0 +1,28 @@
+.container__2d263 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+.volumeButton__2d263 {
+  cursor: pointer;
+  line-height: 0;
+}
+.volumeButtonSlider__2d263 {
+  bottom: calc(100% + 16px);
+  display: none;
+  inset-inline: -78px 0;
+  position: absolute;
+  -webkit-app-region: no-drag;
+  pointer-events: none;
+}
+.volumeButtonSlider__2d263.sliderVisible__2d263 {
+  display: initial;
+}
+.mediaBar__2d263 {
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+/*# sourceMappingURL=239729.987865dc29859ac5.css.map*/

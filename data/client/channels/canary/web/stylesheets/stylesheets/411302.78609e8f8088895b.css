@@ -1,0 +1,44 @@
+.container__50387 {
+  text-align: unset;
+  width: 300px;
+}
+.tabs__50387 {
+  margin-bottom: 0;
+  position: relative;
+}
+.tabs__50387:after {
+  background-color: var(--border-subtle);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  inset-inline-start: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+.tabBarItem__50387 {
+  padding-bottom: 8px;
+}
+.tabPanel__50387 {
+  display: grid;
+}
+.tabPanel__50387 > * {
+  grid-area: 1/1;
+}
+.tabPanelHidden__50387 {
+  visibility: hidden;
+}
+.debugPanelStandalone__50387 {
+  text-align: unset;
+  width: 300px;
+}
+.enable-forced-colors .container__50387,
+.enable-forced-colors .debugPanelStandalone__50387 {
+  border: 2px solid CanvasText;
+}
+.custom-theme-background .container__50387,
+.custom-theme-background .debugPanelStandalone__50387 {
+  border: 1px solid var(--border-strong);
+}
+
+/*# sourceMappingURL=411302.78609e8f8088895b.css.map*/

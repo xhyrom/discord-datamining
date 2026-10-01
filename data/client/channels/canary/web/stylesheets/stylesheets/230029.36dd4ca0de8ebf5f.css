@@ -1,0 +1,141 @@
+.caret__6ec79 {
+  --custom-caret-half-width: 11px;
+  --custom-caret-half-height: 7px;
+  --custom-caret-horizontal-distance: 18px;
+  --custom-caret-border-overlap: 1px;
+  color: transparent;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: center;
+}
+.caret--bottom__6ec79 {
+  top: calc(100% - var(--custom-caret-border-overlap));
+  transform: rotate(0deg);
+}
+.caret--top__6ec79 {
+  bottom: calc(100% - var(--custom-caret-border-overlap));
+  transform: rotate(180deg);
+}
+.caret--left__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-start) 25%,
+    transparent
+  );
+  inset-inline-start: calc(var(--custom-caret-horizontal-distance) * -1);
+  transform: rotate(90deg);
+}
+.caret--right__6ec79 {
+  inset-inline-end: calc(var(--custom-caret-horizontal-distance) * -1);
+  transform: rotate(-90deg);
+}
+.caret--bottom__6ec79.caret--center__6ec79,
+.caret--top__6ec79.caret--center__6ec79 {
+  inset-inline-start: calc(
+    50% + var(--custom-caret-edge-offset-horizontal-nudge, 0)
+  );
+  margin-inline-start: calc(var(--custom-caret-half-width) * -1);
+}
+.caret--bottom__6ec79.caret--start__6ec79,
+.caret--top__6ec79.caret--start__6ec79 {
+  inset-inline-start: calc(
+    var(--custom-caret-edge-offset-horizontal) +
+      var(--custom-caret-edge-offset-horizontal-nudge, 0)
+  );
+  margin-inline-start: calc(var(--custom-caret-half-width) * -1);
+}
+.caret--bottom__6ec79.caret--end__6ec79,
+.caret--top__6ec79.caret--end__6ec79 {
+  inset-inline-end: calc(
+    var(--custom-caret-edge-offset-horizontal) -
+      var(--custom-caret-edge-offset-horizontal-nudge, 0)
+  );
+  margin-inline-end: calc(var(--custom-caret-half-width) * -1);
+}
+.caret--left__6ec79.caret--center__6ec79,
+.caret--right__6ec79.caret--center__6ec79 {
+  margin-top: calc(var(--custom-caret-half-height) * -1);
+  top: 50%;
+}
+.caret--left__6ec79.caret--center__6ec79 {
+  inset-inline-start: calc(var(--custom-caret-horizontal-distance) * -1);
+}
+.caret--left__6ec79.caret--start__6ec79,
+.caret--right__6ec79.caret--start__6ec79 {
+  margin-top: calc(var(--custom-caret-half-height) * -1);
+  top: var(--custom-caret-edge-offset-vertical);
+}
+.caret--left__6ec79.caret--end__6ec79,
+.caret--right__6ec79.caret--end__6ec79 {
+  bottom: var(--custom-caret-edge-offset-vertical);
+  margin-bottom: calc(var(--custom-caret-half-height) * -1);
+}
+.caret--custom__6ec79 {
+  --custom-caret-offset-x: 0;
+  --custom-caret-offset-y: 0;
+}
+.caret--bottom__6ec79.caret--custom__6ec79,
+.caret--top__6ec79.caret--custom__6ec79 {
+  inset-inline-start: 50%;
+  margin-inline-start: calc(
+    var(--custom-caret-offset-x) - var(--custom-caret-half-width)
+  );
+}
+.caret--left__6ec79.caret--custom__6ec79,
+.caret--right__6ec79.caret--custom__6ec79 {
+  margin-top: calc(
+    var(--custom-caret-offset-y) - var(--custom-caret-half-height)
+  );
+  top: 50%;
+}
+.caret--top__6ec79.caret--start__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-end) 7%,
+    var(--custom-popover-caret-gradient-color-start)
+  );
+}
+.caret--top__6ec79.caret--center__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-end) 50%,
+    var(--custom-popover-caret-gradient-color-start)
+  );
+}
+.caret--top__6ec79.caret--end__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-end) 98%,
+    var(--custom-popover-caret-gradient-color-start)
+  );
+}
+.caret--right__6ec79.caret--start__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-end) 98%,
+    transparent
+  );
+}
+.caret--right__6ec79.caret--center__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-end) 25%,
+    transparent
+  );
+}
+.caret--left__6ec79.caret--start__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-start) 98%,
+    transparent
+  );
+}
+.caret--left__6ec79.caret--center__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-start) 25%,
+    transparent
+  );
+}
+
+/*# sourceMappingURL=230029.36dd4ca0de8ebf5f.css.map*/
