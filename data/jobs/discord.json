@@ -256,7 +256,7 @@
       "education": "education_optional",
       "internal_job_id": 6454461002,
       "location": {
-        "name": "San Francisco Bay Area "
+        "name": "Remote (West Coast)"
       },
       "metadata": [
         {
@@ -273,14 +273,14 @@
         }
       ],
       "id": 8649856002,
-      "updated_at": "2026-09-11T19:25:24-04:00",
+      "updated_at": "2026-10-01T13:42:24-04:00",
       "requisition_id": "R-107352",
       "title": "Engineering Manager, Platform Security",
       "company_name": "Discord",
       "first_published": "2026-07-27T17:23:50-04:00",
       "language": "en",
       "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;More broadly, Discord is about empowering people to find belonging in all kinds of communities, and those people trust us to keep their communications safe. Our Platform Security Engineering team protects the systems we use to create Discord, making the “secure way” the “easy way.”&lt;/p&gt;\n&lt;p&gt;We’re looking for an Engineering Manager to lead a team of software engineers in articulating and pursuing the most leveraged opportunities to reduce security risk across Engineering. This team will design and build lovable “paved paths” for managing identities and access, shipping code, configuring cloud infrastructure, and operating services. If you’re an Engineering Manager who’s deeply curious, eager to own technically and socially complex projects, and excited to improve security and privacy at Discord, read on!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;This position is based in our San Francisco office. For this role, the Hiring Manager would like folks to be in the office 1-2 days a week.&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll do&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;You’ll shape company-wide security strategy and lead a highly-autonomous and horizontally-integrated team of software engineers who will...&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Develop and apply best-in-class secure baselines for cloud infrastructure, owning the security of all cloud environments&lt;/li&gt;\n&lt;li&gt;Manage infrastructure vulnerabilities while supporting a high-velocity engineering org with hundreds of developers&lt;/li&gt;\n&lt;li&gt;Secure first- and third-party software supply chains, from the dev environment through CI/CD and into production&lt;/li&gt;\n&lt;li&gt;Build and operate identity and access management (IAM) systems for humans and machines that are user-friendly and promote least privilege&lt;/li&gt;\n&lt;li&gt;Consult on risk assessments, architectural designs, threat models, code reviews, and more—pragmatically balancing security with other business considerations&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What we look for&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;3+ years of experience as people manager, having managed a team of 3+ security software engineers&lt;/li&gt;\n&lt;li&gt;Passion for creating diverse and inclusive teams and coaching engineers&lt;/li&gt;\n&lt;li&gt;3+ years of experience securing systems with millions of users&lt;/li&gt;\n&lt;li&gt;Comfort with writing the roadmap, not just following one&lt;/li&gt;\n&lt;li&gt;Experience building in and securing cloud-based environments (we use GCP, Cloudflare, and AWS)&lt;/li&gt;\n&lt;li&gt;Expert reasoning about the security of complex systems, even if they contain unfamiliar components&lt;/li&gt;\n&lt;li&gt;Experience writing software in a general-purpose programming language (we use Python, Typescript, and Rust)&lt;/li&gt;\n&lt;li&gt;Experience developing with agentic AI, and a good grasp of AI security practices&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points if you have…&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Understanding of modern authentication and authorization concepts (e.g. RBAC, OAuth, Zero Trust network architectures, mTLS)&lt;/li&gt;\n&lt;li&gt;Familiarity with build and CI/CD technologies (e.g. Terraform, Bazel, Buildkite, Spacelift)&lt;/li&gt;\n&lt;li&gt;Experience defining and orchestrating containers (e.g. via Kubernetes, Docker, Distroless, OCI) and serverless workloads (e.g. Cloudflare Workers)&lt;/li&gt;\n&lt;li&gt;Experience with running and operationalizing security platforms such as Wiz&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $248,000 to $310,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;More broadly, Discord is about empowering people to find belonging in all kinds of communities, and those people trust us to keep their communications safe. Our Platform Security Engineering team protects the systems we use to create Discord, making the “secure way” the “easy way.”&lt;/p&gt;\n&lt;p&gt;We’re looking for an Engineering Manager to lead a team of software engineers in articulating and pursuing the most leveraged opportunities to reduce security risk across Engineering. This team will design and build lovable “paved paths” for managing identities and access, shipping code, configuring cloud infrastructure, and operating services. If you’re an Engineering Manager who’s deeply curious, eager to own technically and socially complex projects, and excited to improve security and privacy at Discord, read on!&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll do&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;You’ll shape company-wide security strategy and lead a highly-autonomous and horizontally-integrated team of software engineers who will...&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Develop and apply best-in-class secure baselines for cloud infrastructure, owning the security of all cloud environments&lt;/li&gt;\n&lt;li&gt;Manage infrastructure vulnerabilities while supporting a high-velocity engineering org with hundreds of developers&lt;/li&gt;\n&lt;li&gt;Secure first- and third-party software supply chains, from the dev environment through CI/CD and into production&lt;/li&gt;\n&lt;li&gt;Build and operate identity and access management (IAM) systems for humans and machines that are user-friendly and promote least privilege&lt;/li&gt;\n&lt;li&gt;Consult on risk assessments, architectural designs, threat models, code reviews, and more—pragmatically balancing security with other business considerations&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What we look for&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;3+ years of experience as people manager, having managed a team of 3+ security software engineers&lt;/li&gt;\n&lt;li&gt;Passion for creating diverse and inclusive teams and coaching engineers&lt;/li&gt;\n&lt;li&gt;3+ years of experience securing systems with millions of users&lt;/li&gt;\n&lt;li&gt;Comfort with writing the roadmap, not just following one&lt;/li&gt;\n&lt;li&gt;Experience building in and securing cloud-based environments (we use GCP, Cloudflare, and AWS)&lt;/li&gt;\n&lt;li&gt;Expert reasoning about the security of complex systems, even if they contain unfamiliar components&lt;/li&gt;\n&lt;li&gt;Experience writing software in a general-purpose programming language (we use Python, Typescript, and Rust)&lt;/li&gt;\n&lt;li&gt;Experience developing with agentic AI, and a good grasp of AI security practices&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points if you have…&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Understanding of modern authentication and authorization concepts (e.g. RBAC, OAuth, Zero Trust network architectures, mTLS)&lt;/li&gt;\n&lt;li&gt;Familiarity with build and CI/CD technologies (e.g. Terraform, Bazel, Buildkite, Spacelift)&lt;/li&gt;\n&lt;li&gt;Experience defining and orchestrating containers (e.g. via Kubernetes, Docker, Distroless, OCI) and serverless workloads (e.g. Cloudflare Workers)&lt;/li&gt;\n&lt;li&gt;Experience with running and operationalizing security platforms such as Wiz&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;This position is West Coast (U.S.) based and can be remote but if you live in the Bay Area, you’re welcome to work from our beautiful SF office.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $248,000 to $310,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
       "departments": [
         {
           "id": 4127961002,
@@ -291,9 +291,9 @@
       ],
       "offices": [
         {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
           "child_ids": [],
           "parent_id": null
         }
@@ -881,7 +881,7 @@
         }
       ],
       "id": 8299493002,
-      "updated_at": "2026-09-29T15:14:23-04:00",
+      "updated_at": "2026-10-01T16:32:44-04:00",
       "requisition_id": "R-102056",
       "title": "Senior Data Engineer, Ads",
       "company_name": "Discord",
@@ -899,9 +899,9 @@
       ],
       "offices": [
         {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
           "child_ids": [],
           "parent_id": null
         }
@@ -1818,6 +1818,66 @@
       "ai_disclaimer": null,
       "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8694476002/ai_opt_out"
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8856467002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "internal_job_id": 6545415002,
+      "location": {
+        "name": "San Francisco Bay Area"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 8856467002,
+      "updated_at": "2026-10-01T14:55:39-04:00",
+      "requisition_id": "R-107444",
+      "title": "Senior Software Engineer, Engagement",
+      "company_name": "Discord",
+      "first_published": "2026-10-01T14:55:39-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&lt;/p&gt;\n&lt;p&gt;We&#39;re looking for a highly motivated, mission-focused Senior Engineer to join our Engagement team. Engagement is responsible for improving the core value of Discord, including chatting, hanging out with friends, and expressing yourself. We work on improving core features like messaging, voice chat, user profiles, and app navigation. You will work across the full stack to build delightful and impactful features that are focused on making Discord the best place to play games and hangout with your friends online.&lt;/p&gt;\n&lt;p&gt;We’re looking for engineers that have strong product sense and are fearless in jumping between technical stacks. You’ll be working with highly experienced engineering peers and cross functional partners.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Building delightful products with a very high bar for quality, performance, and a focus on impact&lt;/li&gt;\n&lt;li&gt;Working with Product, Design, Data Science, UX Research, and Marketing to shape the team’s vision and roadmap&lt;/li&gt;\n&lt;li&gt;Helping find the right solutions that balance delight, speed of delivery, and impact by collaborating with design and product partners&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;You Will Thrive In This Role If&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You have 5+ years of experience as a Software Engineer&lt;/li&gt;\n&lt;li&gt;You have specialized in building consumer-facing products on web and mobile platforms&lt;/li&gt;\n&lt;li&gt;You have developed domain expertise in either web or mobile front-end (or both)&lt;/li&gt;\n&lt;li&gt;You are eager to learn new languages and frameworks, and are comfortable working across the full stack when needed&lt;/li&gt;\n&lt;li&gt;You have worked in a product team with clear metrics goals and had a measurable positive impact on customers&lt;/li&gt;\n&lt;li&gt;You have a strong product sense and take pride in sweating the details of great UX&lt;/li&gt;\n&lt;li&gt;You are motivated to help your team members succeed and grow and learn from each other through empathetic feedback&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You are a Discord user, and understand the core features and flow of Discord communications&lt;/li&gt;\n&lt;li&gt;You’ve worked on React Native products&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is &lt;span class=&quot;notion-enable-hover&quot; data-token-index=&quot;0&quot;&gt;$196,000 to $245,000&amp;nbsp;&lt;/span&gt;+ equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4074054002,
+          "name": "Product Engineering",
+          "child_ids": [],
+          "parent_id": 4094266002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "ai_disclaimer": null,
+      "include_ai_disclaimer": false,
+      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8856467002/ai_opt_out"
     },
     {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8642087002",
@@ -3095,6 +3155,6 @@
     }
   ],
   "meta": {
-    "total": 51
+    "total": 52
   }
 }

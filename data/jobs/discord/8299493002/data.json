@@ -29,7 +29,7 @@
     }
   ],
   "id": 8299493002,
-  "updated_at": "2026-09-29T15:14:23-04:00",
+  "updated_at": "2026-10-01T16:32:44-04:00",
   "requisition_id": "R-102056",
   "title": "Senior Data Engineer, Ads",
   "company_name": "Discord",
@@ -47,9 +47,9 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }

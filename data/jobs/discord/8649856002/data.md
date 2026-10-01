@@ -2,7 +2,7 @@
 
 ## Engineering Manager, Platform Security
 
-**Location:** San Francisco Bay Area 
+**Location:** Remote (West Coast)
 
 **Id:** 8649856002 <br/>
 **Internal Job Id:** 6454461002 <br/>
@@ -10,12 +10,12 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8649856002](https://discord.com/jobs/8649856002)
 
-**Updated At:** Fri, 11 Sep 2026 23:25:24 GMT
+**Updated At:** Thu, 01 Oct 2026 17:42:24 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.More broadly, Discord is about empowering people to find belonging in all kinds of communities, and those people trust us to keep their communications safe. Our Platform Security Engineering team protects the systems we use to create Discord, making the “secure way” the “easy way.”
 We’re looking for an Engineering Manager to lead a team of software engineers in articulating and pursuing the most leveraged opportunities to reduce security risk across Engineering. This team will design and build lovable “paved paths” for managing identities and access, shipping code, configuring cloud infrastructure, and operating services. If you’re an Engineering Manager who’s deeply curious, eager to own technically and socially complex projects, and excited to improve security and privacy at Discord, read on!
-This position is based in our San Francisco office. For this role, the Hiring Manager would like folks to be in the office 1-2 days a week.
+&amp;nbsp;
 What you'll do
 You’ll shape company-wide security strategy and lead a highly-autonomous and horizontally-integrated team of software engineers who will...
 
@@ -43,6 +43,8 @@ Familiarity with build and CI/CD technologies (e.g. Terraform, Bazel, Buildkite,
 Experience defining and orchestrating containers (e.g. via Kubernetes, Docker, Distroless, OCI) and serverless workloads (e.g. Cloudflare Workers)
 Experience with running and operationalizing security platforms such as Wiz
 
+&amp;nbsp;
+This position is West Coast (U.S.) based and can be remote but if you live in the Bay Area, you’re welcome to work from our beautiful SF office.
 The US base salary range for this full-time position is $248,000 to $310,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.
 &amp;nbsp;
 &amp;nbsp;Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
@@ -59,5 +61,5 @@ education_optional
 - Security Engineering
 
 **Offices:**
-- San Francisco, CA in San Francisco, California, United States
+- Remote (U.S.)
     
