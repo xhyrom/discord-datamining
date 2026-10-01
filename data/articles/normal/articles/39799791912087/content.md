@@ -117,10 +117,25 @@
   <strong>Q: What if I need to update my Country/Region before 90 days?</strong>
 </p>
 <p>
-  A: Your Country/Region can be updated once every 90 days using the steps
-  above. If you're within that window and need to make a change sooner, please
-  reach out to our support team at dis.gd/contact and we'll do our best to
-  help. 
+  A: There are very few exceptions that we will grant early changes for. The
+  following are not eligible reasons for an early change:
+</p>
+<ul>
+  <li data-list-item-id="e8392e3747ef278d726d70ab788d420ad">
+    Moving, relocating, or traveling
+  </li>
+  <li data-list-item-id="ec38ea145c198b9cfc07fe8aa0e0ea7a8">
+    Accidental or unintended past purchases made with a payment method from the
+    wrong region
+  </li>
+</ul>
+<p>
+  If your situation falls under one of these reasons, you'll need to wait the
+  full 90 days before trying again. For anything else, reach out to our support
+  team at
+  <a href="http://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+    >dis.gd/contact</a
+  >.
 </p>
 <p><strong>Q: Why is my payment method not available at checkout?</strong></p>
 <p>
