@@ -48,12 +48,11 @@
     "builds",
     "rustdocs",
     "bazel-bes-stg",
-    "memes",
     "hivemind",
+    "memes",
     "keysmith",
     "sirius",
     "yay",
-    "datahub",
     "bazel-bes",
     "cdx",
     "buildbuddy",
@@ -77,5 +76,5 @@
     "dbt-docs",
     "airflow-data-prd"
   ],
-  "subdomain_count": 76
+  "subdomain_count": 75
 }
