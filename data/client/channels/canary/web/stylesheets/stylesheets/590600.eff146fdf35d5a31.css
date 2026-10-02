@@ -1,0 +1,93 @@
+.container_a5f01b {
+  align-items: flex-start;
+  background: var(--background-surface-high);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  padding: 16px;
+}
+.echoSoundContainer_a5f01b {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.textContainer_a5f01b {
+  width: 208px;
+}
+.emoji_a5f01b {
+  height: 40px;
+  width: 40px;
+}
+.echoList_effefc {
+  bottom: calc(100% + 8px);
+  flex-direction: column;
+  pointer-events: none;
+  width: 100%;
+}
+.echoList_effefc,
+.rowWrapper_effefc {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.rowWrapper_effefc {
+  bottom: 0;
+  padding-top: 6px;
+  pointer-events: auto;
+}
+.echoRow_effefc {
+  gap: 8px;
+}
+.echoPill_effefc,
+.echoRow_effefc {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.echoPill_effefc {
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  background: var(--control-overlay-secondary-background-default);
+  border: 1px solid var(--control-overlay-secondary-border-default);
+  border-radius: 8px;
+  box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  gap: 6px;
+  padding: 4px 8px;
+}
+.echoPill_effefc:active,
+.echoPill_effefc:hover {
+  background: var(--control-overlay-secondary-background-hover);
+  border: 1px solid var(--control-overlay-secondary-border-hover);
+}
+.echoPill_effefc.echoPillActive_effefc {
+  background: var(--control-overlay-secondary-background-active);
+  border: 1px solid var(--brand-500);
+  border-radius: 8px;
+}
+.voiceChannelEffectEmoji_effefc {
+  height: 20px;
+  width: 20px;
+}
+.reactionCount_effefc {
+  display: flex;
+  flex-direction: row;
+}
+.verticalDivider_effefc {
+  background-color: var(--border-subtle);
+  height: 20px;
+  width: 1px;
+}
+.echoRowDisabled_effefc {
+  opacity: 0.5;
+}
+.echoPillDisabled_effefc {
+  cursor: default;
+}
+
+/*# sourceMappingURL=590600.eff146fdf35d5a31.css.map*/
