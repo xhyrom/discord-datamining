@@ -1,30 +1,31 @@
 # Canary
 
 ### Info
-Build number: 627179  
-Version hash: 00c0a1455faa40bfb875cd1afee91d708c0daee6  
-Host version: 1.0.1199  
-Built at: 10/1/2026, 8:47:08 PM  
+Build number: 627609  
+Version hash: 35f81224ae7843f32c2d26c12e06440862426539  
+Host version: 1.0.1201  
+Built at: 10/2/2026, 12:25:39 AM  
 
 ### Modules
 | Module                  | Version | Package sha256                                                   | URL                                                                                                        |
 | ----------------------- | ------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| discord_overlay2        | 1       | ea3128be7ffc5049985b10fea6e4eab7d4f87f408442c02894cf59bff904baaa | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_overlay2/1/full.distro        |
-| discord_krisp           | 1       | 0fcbdaf63350539f7a67f9d3d380d1622767f6bd569b9e1cb5afd20e23fe4b58 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_krisp/1/full.distro           |
-| discord_notifications   | 1       | 3b62b465428ea81af93f157341743dfd0c26ddfbb6c15e27dc6a1c28bed926d3 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_notifications/1/full.distro   |
-| discord_erlpack         | 1       | ba1f07e18e82d24f79141e2c3f5d01ff08b86fa896265df05e7243d805631361 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_erlpack/1/full.distro         |
-| discord_utils           | 8       | d42d7ad84d39aefb4b5f66aa5d16d1caf09e4a26b60ffceac5202aa85b215ace | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_utils/8/full.distro           |
-| discord_desktop_core    | 1       | 445ed65d1a07a19fc0af0fccf4530d8aab9aaa8930e0af0e38a58070430f17cc | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_desktop_core/1/full.distro    |
-| discord_game_utils      | 1       | b8271e554441c0023be3efd764a508d07f475216ce97ee19b5999efafe73778f | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_game_utils/1/full.distro      |
-| discord_rpc             | 1       | 4ea9f8527d453780e7588ddca0883e09f3342b4d46c8048e2a4c20232f9d3816 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_rpc/1/full.distro             |
-| discord_desktop_overlay | 1       | 442143655be267c1890db60fd31951f2ed204032fe86992faca6a8ff61d11793 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_desktop_overlay/1/full.distro |
-| discord_sysimg          | 1       | 0dc159518fd9e95e8d47f2ab75aed4b12b00a98fae51b27ddd47dae0f4fb46ea | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_sysimg/1/full.distro          |
-| discord_zstd            | 1       | 7bf151ad21ba3d737cb3275e892f9bb82417515a2456ade2c1b7995bf9240947 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_zstd/1/full.distro            |
-| discord_voice           | 6       | 828c432679f687deaf1becebc3bbf251fc8c88b026899404b609927fb7651964 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_voice/6/full.distro           |
-| discord_modules         | 1       | b07d59c5c96d368603585e180f9f3df977f43d1ccbe8871e22e887dc22b67720 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_modules/1/full.distro         |
-| discord_dispatch        | 1       | 900dd87162c088d924c9f9165b68d996db07c2684f89f29c5daeb70d5fd3df52 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_dispatch/1/full.distro        |
-| discord_clips           | 3       | db638799d5d6ef036704eae5c30a324750c6473c5dea04a480e08d0b02b63179 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_clips/3/full.distro           |
-| discord_hook            | 1       | f40116614dab3b2448c3acb1bc323e6f8141b605f2f792ce3dcf33d2e2a8fac3 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_hook/1/full.distro            |
-| discord_media           | 1       | 95256e2eb377a1a325e3785e26b41c33add16c016ef8899b736eadd13c48ba11 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_media/1/full.distro           |
-| discord_spellcheck      | 1       | 0496f2f0b3d3bdf7ff44355a54a67ebcf8f8568add963958af3da7312fcb2317 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_spellcheck/1/full.distro      |
-| discord_cloudsync       | 1       | 5d149207a97c96525f2de6ebed76a1b5c28edc32ede6724426eb33fc81e86715 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1199/discord_cloudsync/1/full.distro       |
+| discord_zstd            | 1       | 0ba16f4221d2bfe3dd348ac8f65b8c91a12f3a133ffd5024fd9fa9e4c684dab6 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_zstd/1/full.distro            |
+| discord_modules         | 1       | d6b8a1e3beed0c05abdaa6ffb4855448cb5c010ce8767c76fea58d9fa637a3be | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_modules/1/full.distro         |
+| discord_notifications   | 1       | b64ac5a3c698edc0daa75e0cc8060992af8ba33aee2813ee58c849acda5599ea | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_notifications/1/full.distro   |
+| discord_krisp           | 1       | fdc4c7fb5b51f3453e50b26cf8ca190bb7fe4cef572159fbe97b3eef0118d442 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_krisp/1/full.distro           |
+| discord_hook            | 1       | 69a436d8e862ba78b36bc82b9c5ea43b4cb5d60871eaedb086e0e4b286967de1 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_hook/1/full.distro            |
+| discord_rpc             | 1       | 68042bd93ee355c305e9bac07c2431b5bcb41f52073731a41f61fd35a5633a72 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_rpc/1/full.distro             |
+| discord_dispatch        | 1       | 7aa1e6e35f077bb7120cf3fd70558a714326102c7178382d6545d723fce18122 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_dispatch/1/full.distro        |
+| discord_game_utils      | 1       | 95f523fa4b41c467a009d0c79bafabe7589924f1f18ef02b70d61815ad8e61aa | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_game_utils/1/full.distro      |
+| discord_overlay2        | 1       | 5ba91abf62bba822327dca84d6743466ec2148d673b59e30e835daaf3be03a27 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_overlay2/1/full.distro        |
+| discord_utils           | 1       | 9ffabc3b2f5f92c80a4a5695d65ad4c01727a307f110e81846e445de4562b9e5 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_utils/1/full.distro           |
+| discord_voice           | 1       | 80987efa359fac334e00c9b02d1c25d99abc3cfb7e3a079652a53bf3340301f9 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_voice/1/full.distro           |
+| discord_clips           | 1       | 02c955f51628af9fb466807d489722f6840fa57c29726d9dba7ff5fd233a323b | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_clips/1/full.distro           |
+| discord_desktop_overlay | 1       | 3b730e37400ff5df1a3fb3a8db9633ad1e7c1d127301ecb62a928879ebaec4ca | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_desktop_overlay/1/full.distro |
+| discord_media           | 1       | afe0f5f0bff03d6f1cbbc10b77f3a2dce25f6c617890d3bea46a22d1880614f4 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_media/1/full.distro           |
+| discord_ndi             | 1       | 92697dfb885a96de53c022a930adc3664034f10f2dbd1d20af57de917353ab91 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_ndi/1/full.distro             |
+| discord_spellcheck      | 1       | 484726a5a484adddadc613172bfd5ad76b0b7f1a95b7973d92e5a8f7c3e2b692 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_spellcheck/1/full.distro      |
+| discord_desktop_core    | 1       | e23e1066858a1311545b7ee73920d57678e304ccc74ca4a554933e2fc4cfef1f | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_desktop_core/1/full.distro    |
+| discord_cloudsync       | 1       | 6670be48874bbcd75420f7f259153cf714b74c9f711bb1f9bc1f84670c3c262c | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_cloudsync/1/full.distro       |
+| discord_sysimg          | 1       | 994065f3a73cc93dae956e3426b582bda81786a597dc20aadedbd6853d2ce4bb | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_sysimg/1/full.distro          |
+| discord_erlpack         | 1       | 4c4ecd40150c3aae22dc76b31cd7d8d39ddbb92b01acf1f5415a20a38f6d6347 | https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.1201/discord_erlpack/1/full.distro         |
