@@ -1,0 +1,206 @@
+.mask_ca5f52 {
+  display: block;
+}
+.icon_ca5f52 {
+  height: 32px;
+  width: 32px;
+}
+.wrapper_ca5f52 {
+  border-radius: 8px;
+  transition: background-color 0.1s ease-in-out;
+}
+.selectable_ca5f52:hover {
+  background-color: var(--interactive-background-hover);
+}
+.selectable_ca5f52:hover .icon_ca5f52 {
+  color: var(--interactive-text-hover);
+}
+.selected_ca5f52,
+.selected_ca5f52:hover {
+  background-color: var(--background-base-low);
+}
+.selected_ca5f52 .icon_ca5f52,
+.selected_ca5f52:hover .icon_ca5f52 {
+  color: var(--interactive-text-active);
+}
+.theme-light .selected_ca5f52 .icon_ca5f52,
+.theme-light .selected_ca5f52:hover .icon_ca5f52 {
+  color: var(--primary-500);
+}
+.icon__1a58a {
+  color: var(--interactive-text-default);
+}
+.wrapper__1a58a {
+  border-radius: 8px;
+  transition: background-color 0.1s ease-in-out;
+}
+.selectable__1a58a:hover {
+  background-color: var(--interactive-background-hover);
+}
+.selectable__1a58a:hover .icon__1a58a {
+  color: var(--interactive-text-hover);
+}
+.selected__1a58a,
+.selected__1a58a:hover {
+  background-color: var(--background-base-low);
+}
+.selected__1a58a .icon__1a58a,
+.selected__1a58a:hover .icon__1a58a {
+  color: var(--interactive-text-active);
+}
+.theme-light .selected__1a58a .icon__1a58a,
+.theme-light .selected__1a58a:hover .icon__1a58a {
+  color: var(--primary-500);
+}
+.wrapper__920ab {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+.image__920ab {
+  align-self: flex-start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-self: flex-start;
+  margin-top: 4px;
+  margin-inline-end: 16px;
+}
+.infoWrapper__920ab {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.source__920ab {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-inline-start: 16px;
+  max-width: 33%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.usageWrapper__920ab {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.description__920ab {
+  margin-top: 4px;
+  white-space: nowrap;
+}
+.description__920ab,
+.title__920ab {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.title__920ab {
+  flex-shrink: 0;
+  font-weight: var(--font-weight-medium);
+}
+.option__920ab {
+  margin-inline-start: 8px;
+}
+.error__920ab {
+  color: var(--text-feedback-critical);
+}
+.optionalHeader__920ab {
+  color: var(--text-muted);
+  padding-inline-start: 8px;
+  text-transform: uppercase;
+}
+.mana-type-consolidation .optionalHeader__920ab {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  text-transform: none;
+}
+.optionalCount__920ab {
+  padding-inline-start: 8px;
+}
+.disabled__920ab {
+  opacity: 0.3;
+}
+.optionals__920ab {
+  align-items: center;
+  border-inline-start: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: row;
+  margin-inline-start: 8px;
+}
+.optionalNames__920ab {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper__78aa3 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: space-between;
+  padding: 8px;
+}
+.infoWrapper__78aa3 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.usageWrapper__78aa3 {
+  align-items: center;
+  background: var(--background-mod-strong);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 16px;
+}
+.image__78aa3 {
+  align-self: flex-start;
+  background: var(--background-base-low);
+  border-radius: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 32px;
+  justify-self: flex-start;
+  margin-top: 4px;
+  margin-inline-end: 16px;
+  width: 32px;
+}
+.description__78aa3 {
+  margin-top: 8px;
+}
+.description__78aa3,
+.source__78aa3 {
+  background: var(--background-base-low);
+  border-radius: 16px;
+  height: 16px;
+}
+.source__78aa3 {
+  flex-shrink: 0;
+  margin-inline-start: 16px;
+}
+.upsell__98044 {
+  margin-bottom: -4px;
+  margin-top: -4px;
+}
+.emojis__98044 {
+  display: flex;
+}
+.emojiMask__98044 {
+  position: relative;
+}
+.emojiBackground__98044 {
+  align-items: center;
+  background-color: var(--background-base-lowest);
+  border-radius: 50%;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+.emoji__98044 {
+  height: 16px;
+  width: 16px;
+}
+
+/*# sourceMappingURL=147119.244550b749634536.css.map*/
