@@ -1,0 +1,21 @@
+.wrapper__8b9fc {
+  background-clip: padding-box;
+  background-color: var(--background-feedback-notification);
+  border-radius: 3px;
+  box-shadow:
+    0 1px 0 var(--opacity-black-24),
+    inset 0 1px 0 var(--opacity-white-16);
+  color: var(--white);
+  display: inline-block;
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  line-height: 12px;
+  padding: 3px 6px;
+  text-shadow: 0 1px 0 var(--opacity-black-24);
+  text-transform: uppercase;
+}
+.lowImportance__8b9fc {
+  background-color: var(--background-mod-strong);
+}
+
+/*# sourceMappingURL=10071.2b450c18ad228a0b.css.map*/

@@ -1,0 +1,37 @@
+.badgeContainer__635ed {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  gap: 4px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.badgeContainer__635ed svg {
+  flex-shrink: 0;
+}
+.badgeLabel__635ed {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+:where(.badgesContainer__635ed) {
+  align-items: center;
+  display: flex;
+  gap: 0 8px;
+}
+:where(.badgesContainer__635ed):empty {
+  display: none;
+}
+.badgesContainerCard__635ed > :nth-child(n + 3) {
+  display: none;
+}
+.badgesContainerCard__635ed > :nth-child(2) {
+  flex-shrink: 1;
+}
+.badgesContainerGameProfile__635ed,
+.badgesContainerPopout__635ed {
+  flex-wrap: wrap;
+  row-gap: 4px;
+}
+
+/*# sourceMappingURL=843335.6509383f20d97c00.css.map*/
