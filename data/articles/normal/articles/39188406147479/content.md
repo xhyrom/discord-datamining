@@ -810,12 +810,11 @@
 <p>2. Log into your Activision account.</p>
 <p>3. Enter your code and follow the on-screen instructions.</p>
 <h1 id="h_01M28JF5GNHD4FAYCE01XS5GA1">YouTube Premium</h1>
-<div class="exp-box">
-  <strong>Important</strong>: <br />- YouTube Premium rewards are currently in
-  experiment and only available to select users.<br />- To receive your code,
-  you must use the desktop app. Eligibility conditions apply, see below for more
-  information.<br />- This offer is available only to individual YouTube Premium
-  plans. Family plans are not eligible.
+<div class="info-box">
+  <strong>Note</strong>: <br />- To receive your code, you must use the desktop
+  app. Eligibility conditions apply, see below for more information.<br />- This
+  offer is available only to individual YouTube Premium plans. Family plans are
+  not eligible.
 </div>
 <p>
   This promotional offer provides Nitro members with 20% off YouTube Premium for
@@ -1045,24 +1044,6 @@
   be applied starting on the next bill.
 </p>
 <h1 id="h_01KQZ3D7ZFZV9JCQXQMJFCCENW">Frequently Asked Questions</h1>
-<p>
-  <strong>Q: I'm a Nitro member but I don't see Nitro Rewards. Why?</strong> 
-</p>
-<p>
-  A: Nitro Rewards are rolling out gradually to members. If you don't see them
-  in your Nitro Home yet, they haven't reached your account. All eligible Nitro
-  members will have access over the coming weeks. You can check the eligibility
-  conditions for each perk in the sections above.
-</p>
-<p>
-  <strong>Q: Can I contact support to get early access to Nitro Rewards?</strong
-  > 
-</p>
-<p>
-  A: Our support team is not able to speed up the rollout or grant early access
-  to individual accounts. You'll receive access once the rollout reaches your
-  account.
-</p>
 <p><strong>Q: Are Nitro Rewards available in my country?</strong> </p>
 <p>
   A: Availability varies by perk. Each partner section above lists the eligible
