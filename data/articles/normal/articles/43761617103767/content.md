@@ -1,3 +1,14 @@
+<div class="warn-box">
+  <strong>Important:</strong> The Riot Cash code promotion for eligible Nitro
+  subscribers is currently <strong>paused</strong>. If you believe you made an
+  eligible purchase and did not receive a code, please contact
+  <a
+    href="https://support.discord.com/hc/en-us/requests/new"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Support</a
+  >.
+</div>
 <p>
   Discord has partnered with Riot Games to offer eligible new Nitro subscribers
   a Riot Cash Code, redeemable for in-game currency in select Riot Games titles.
