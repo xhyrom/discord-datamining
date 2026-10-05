@@ -19,138 +19,71 @@
   <p>
     <span class="wysiwyg-font-size-x-large"
       ><strong>What this article covers:</strong></span
-    ><br /> 
+    >
   </p>
   <ul>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e295cae71505bf683ea9935dc0860ce2e"
-    >
-      <a href="#h_01JVN9B6E5CEK0KRXD7T6S6G6M"
-        ><strong>What are Discord Orbs? </strong></a
-      >
+    <li data-list-item-id="e295cae71505bf683ea9935dc0860ce2e">
+      <a href="#h_01JVN9B6E5CEK0KRXD7T6S6G6M">What are Discord Orbs? </a>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="eb4f8f76febfd6d7737e4d1178f2e06f6"
-    >
-      <a href="#h_01JVN9BXVA54DT1W6C0NAHSM73"
-        ><strong>How do I earn Discord Orbs?</strong></a
-      >
+    <li data-list-item-id="eb4f8f76febfd6d7737e4d1178f2e06f6">
+      <a href="#h_01JVN9BXVA54DT1W6C0NAHSM73">How do I earn Discord Orbs?</a>
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e8969846cc2db79e64a0ba42085000591"
-        >
-          <a href="#h_01K86MYX6G5E72C8NTS0JPPEFV"
-            ><strong>Desktop/Browser</strong></a
-          >
+        <li data-list-item-id="e8969846cc2db79e64a0ba42085000591">
+          <a href="#h_01K86MYX6G5E72C8NTS0JPPEFV">Desktop/Browser</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ea8f00fda31a39278357466e9a963a33d"
-        >
-          <a href="#h_01K86N2KDQDBN7FAKKK70H3PNZ"><strong>Mobile</strong></a>
+        <li data-list-item-id="ea8f00fda31a39278357466e9a963a33d">
+          <a href="#h_01K86N2KDQDBN7FAKKK70H3PNZ">Mobile</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e750ba3c4d6271ca0d8a963e8b848a9da"
-        >
+        <li data-list-item-id="e750ba3c4d6271ca0d8a963e8b848a9da">
           <a href="#h_01KKYTZQ8C3VZN6SPPHS7ZPGHQ"
-            ><strong>Discord Orbs Multiplier for Nitro Members</strong></a
+            >Discord Orbs Multiplier for Nitro Members</a
+          >
+        </li>
+        <li data-list-item-id="efe90ba8adc835bc07e04190ad295ca58">
+          <a href="#h_01M3WB2TWDD7WVN8ETJCW2PKDM"
+            >Earning Orbs Through Orb Challenges</a
           >
         </li>
       </ul>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e4f6f4ac4db7610ce6da239372e8b8f74"
-    >
-      <a href="#h_01JVN9C8T6GAJ4V009G09TZ6A0"
-        ><strong>Spending Your Discord Orbs</strong></a
-      >
+    <li data-list-item-id="e4f6f4ac4db7610ce6da239372e8b8f74">
+      <a href="#h_01JVN9C8T6GAJ4V009G09TZ6A0">Spending Your Discord Orbs</a>
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="eae203b13a04e9938c2e575e1892e8495"
-        >
-          <a href="#h_01JVN9C8T66JFD60SBTAW2FPXD"
-            ><strong>Where can I spend Orbs?</strong></a
-          >
+        <li data-list-item-id="eae203b13a04e9938c2e575e1892e8495">
+          <a href="#h_01JVN9C8T66JFD60SBTAW2FPXD">Where can I spend Orbs?</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ecaccaa31b5c0b85d25e1662e4ee10416"
-        >
-          <a href="#h_01JVN9C8T7QS6SMHNPSE97MYZP"
-            ><strong>What can I buy with Orbs?</strong></a
-          >
+        <li data-list-item-id="ecaccaa31b5c0b85d25e1662e4ee10416">
+          <a href="#h_01JVN9C8T7QS6SMHNPSE97MYZP">What can I buy with Orbs?</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e4df198a0e5a9e28437773bbcd9996c72"
-        >
-          <a href="#h_01JVN9C8T7EDJC0CT3DKGW8DJ6"
-            ><strong>How to Spend Orbs</strong></a
-          >
+        <li data-list-item-id="e4df198a0e5a9e28437773bbcd9996c72">
+          <a href="#h_01JVN9C8T7EDJC0CT3DKGW8DJ6">How to Spend Orbs</a>
         </li>
       </ul>
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e70f8dbd4d64b756814635f6933ac29d7"
-    >
+    <li data-list-item-id="e70f8dbd4d64b756814635f6933ac29d7">
       <a href="#h_01JVN9C8T730VEP0NXKG44GKHV"
-        ><strong>Important Discord Orbs Information</strong></a
+        >Important Discord Orbs Information</a
       >
     </li>
-    <li
-      class="wysiwyg-list-bold"
-      data-list-item-id="e5ae499baea6490922e2c17ecd4f53744"
-    >
-      <a href="#h_01JVN9C8T7BJ54A4DWBYKRXC6F"
-        ><strong>Frequently Asked Questions</strong></a
-      >
+    <li data-list-item-id="e5ae499baea6490922e2c17ecd4f53744">
+      <a href="#h_01JVN9C8T7BJ54A4DWBYKRXC6F">Frequently Asked Questions</a>
       <ul>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ebb02b62734aa212e61919ebe803606c9"
-        >
-          <a href="#h_01JZ9AY4XRS43ZEP3GPWRJTYM8"
-            ><strong>General Orbs Information</strong></a
-          >
+        <li data-list-item-id="ebb02b62734aa212e61919ebe803606c9">
+          <a href="#h_01JZ9AY4XRS43ZEP3GPWRJTYM8">General Orbs Information</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e70c57ecd0517219d0eedf23644d6f5d7"
-        >
-          <a href="#h_01JZ9AY4XRNS4GA22J5GPD7XBF"
-            ><strong>Earning and Obtaining Orbs</strong></a
-          >
+        <li data-list-item-id="e70c57ecd0517219d0eedf23644d6f5d7">
+          <a href="#h_01JZ9AY4XRNS4GA22J5GPD7XBF">Earning and Obtaining Orbs</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e5297fc5d4a96e39c9abd3d1a64e9e54b"
-        >
-          <a href="#h_01JZ9AY4XRM4JH1FDGDDHKVMCZ"
-            ><strong>Spending Orbs</strong></a
-          >
+        <li data-list-item-id="e5297fc5d4a96e39c9abd3d1a64e9e54b">
+          <a href="#h_01JZ9AY4XRM4JH1FDGDDHKVMCZ">Spending Orbs</a>
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="e04ebdb97f1977a9ee835d208916e786f"
-        >
+        <li data-list-item-id="e04ebdb97f1977a9ee835d208916e786f">
           <a href="#h_01JZ9AY4XRXM6YWSVB8TA2AARX"
-            ><strong>Sharing and Transferring Orbs</strong></a
+            >Sharing and Transferring Orbs</a
           >
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="eac165bfac63cfe16097930d3614f3ca0"
-        >
-          <a href="#h_01JZ9AY4XRE0VH4X2KR6Y4CATC"
-            ><strong>Support and Issues</strong></a
-          >
+        <li data-list-item-id="eac165bfac63cfe16097930d3614f3ca0">
+          <a href="#h_01JZ9AY4XRE0VH4X2KR6Y4CATC">Support and Issues</a>
         </li>
       </ul>
     </li>
@@ -395,6 +328,97 @@
   >
   article.
 </div>
+<h2 id="h_01M3WB2TWDD7WVN8ETJCW2PKDM">Earning Orbs Through Orb Challenges</h2>
+<div class="exp-box">
+  <strong>Important: </strong>Orb Challenges are currently an experiment on
+  desktop and browser, and are not widely available at this time.
+</div>
+<p>
+  Orb Challenges give you another way to earn Orbs beyond completing Quests.
+  Each Orb Challenge rewards you with Orbs for taking a specific action on
+  Discord. New Orb Challenges may be added over time, and each one shows what
+  you need to do to complete it.
+</p>
+<p>
+  You can view and track your Orb Challenges from three places on desktop or
+  browser:
+</p>
+<ul>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="e15eed47c1ba9e0992e2f9468e6e415c3"
+  >
+    <strong>Quest Home</strong>
+  </li>
+</ul>
+<figure class="wysiwyg-image">
+  <img
+    style="aspect-ratio: 800/596"
+    src="https://support.discord.com/hc/article_attachments/43923641726231"
+    alt="Orb Challenges in Quest Home"
+    width="800"
+    height="596"
+  />
+</figure>
+<h4 class="wysiwyg-text-align-center" id="h_01M3WKMSBVV799ZPQ9AYF3NVEZ">
+  <span style="color: #666666">Orb Challenges in Quest Home</span>
+</h4>
+<ul>
+  <li
+    class="wysiwyg-list-bold"
+    data-list-item-id="ecff34c01c1ed0273c70bcf0f0eb71310"
+  >
+    <strong>The Shop</strong>
+  </li>
+</ul>
+<figure class="wysiwyg-image">
+  <img
+    style="aspect-ratio: 800/596"
+    src="https://support.discord.com/hc/article_attachments/43923625464087"
+    alt="Orb Challenges in the Shop"
+    width="800"
+    height="596"
+  />
+</figure>
+<h4 class="wysiwyg-text-align-center" id="h_01M3WKPQXYRB446ZF83WX2CCMB">
+  <span style="color: #666666">Orb Challenges in the Shop</span>
+</h4>
+<ul>
+  <li data-list-item-id="ed1c13aee3317bd9df9eb2b0423e9ce21">
+    <strong>Your Profile</strong>: select your avatar, then hover over or select
+    the <strong>Orbs</strong> menu item in the account pop-out
+  </li>
+</ul>
+<figure class="wysiwyg-image">
+  <img
+    style="aspect-ratio: 800/596"
+    src="https://support.discord.com/hc/article_attachments/43923625465623"
+    alt="Orbs Menu Item in the Account Pop-out"
+    width="800"
+    height="596"
+  />
+</figure>
+<h4 class="wysiwyg-text-align-center" id="h_01M3WKXJX7WNQ8HGF1KCBYRJYR">
+  <span style="color: #666666">Orbs Menu Item in the Account Pop-out</span>
+</h4>
+<p><strong>Eligibility Requirements:</strong></p>
+<ul>
+  <li data-list-item-id="e4ef4713b5f3d44ede42c3f7e035c3d36">
+    Each Orb Challenge shows what you need to do to complete it and how many
+    Orbs you'll earn.
+  </li>
+  <li data-list-item-id="e9206d4a019f7b320bd2b10014caa6f47">
+    Available Orb Challenges may vary between users and can change over time.
+  </li>
+  <li data-list-item-id="e1ca4628c6f4ae454f763bc6147817ea2">
+    Some Orb Challenges are only available for a limited time, and some can only
+    be completed once. 
+  </li>
+  <li data-list-item-id="ecde9c4ebeb7555261dda1b1e7bb86f75">
+    Purchases made with Orbs don't count toward Orb Challenges that involve a
+    purchase. Only purchases made with a payment method are eligible. 
+  </li>
+</ul>
 <h1 id="h_01JVN9C8T6GAJ4V009G09TZ6A0">Spending Your Discord Orbs</h1>
 <h2 id="h_01JVN9C8T66JFD60SBTAW2FPXD">Where can I spend Orbs?</h2>
 <p>
@@ -771,6 +795,12 @@
   Legends) accounts or their Battle.net accounts may receive an Orbs reward. If
   you recently connected these accounts, that's likely the reason for the
   change.
+</p>
+<p><strong>Q: What are Orb Challenges? </strong></p>
+<p>
+  A: Orb Challenges are a way to earn Orbs for completing specific actions on
+  Discord, separate from Quests. You can view and track your Orb Challenges from
+  Quest Home, the Shop, or your profile on desktop or browser.
 </p>
 <h2 id="h_01JZ9AY4XRM4JH1FDGDDHKVMCZ">Spending Orbs</h2>
 <p><strong>Q: I noticed I can’t buy a specific Shop item. Why not?</strong></p>
