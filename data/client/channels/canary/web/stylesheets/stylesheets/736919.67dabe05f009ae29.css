@@ -54,6 +54,7 @@
 .section__6aa84 {
   cursor: pointer;
   gap: 4px;
+  padding: var(--space-4) 0;
 }
 .section__6aa84:focus-visible .text__6aa84,
 .section__6aa84:hover .text__6aa84 {
@@ -66,4 +67,4 @@
   width: 4px;
 }
 
-/*# sourceMappingURL=736919.4063579d6a2a62d0.css.map*/
+/*# sourceMappingURL=736919.67dabe05f009ae29.css.map*/

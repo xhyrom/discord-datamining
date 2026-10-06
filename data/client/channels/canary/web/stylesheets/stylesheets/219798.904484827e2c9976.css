@@ -116,22 +116,18 @@
 .backgroundTop__24b9c {
   background: linear-gradient(
     to bottom,
-    var(
-      --custom-floating-current-user-row-fade-color,
-      var(--background-surface-high)
-    ),
-    transparent
+    var(--background-surface-high) 0,
+    color-mix(in oklab, var(--background-surface-high) 60%, transparent) 68%,
+    transparent 100%
   );
   inset-block-start: 0;
 }
 .backgroundBottom__24b9c {
   background: linear-gradient(
     to top,
-    var(
-      --custom-floating-current-user-row-fade-color,
-      var(--background-surface-high)
-    ),
-    transparent
+    var(--background-surface-high) 0,
+    color-mix(in oklab, var(--background-surface-high) 60%, transparent) 68%,
+    transparent 100%
   );
   inset-block-end: 0;
 }
@@ -143,7 +139,9 @@
     ),
     var(--background-surface-highest);
   border-radius: var(--radius-sm);
-  box-shadow: inset 0 0 0 1px var(--border-subtle);
+  box-shadow:
+    var(--shadow-medium),
+    inset 0 0 0 1px var(--border-subtle);
   inset-inline-end: var(
     --custom-floating-current-user-row-inset-inline,
     var(--space-8)
@@ -162,10 +160,12 @@
   inset-block-end: var(--space-8);
 }
 .full-motion .rowTop__24b9c {
-  animation: guild-space-floating-current-user-row-descend__24b9c 0.2s ease-out;
+  animation: guild-space-floating-current-user-row-descend__24b9c 0.2s
+    cubic-bezier(0.23, 1, 0.32, 1);
 }
 .full-motion .rowBottom__24b9c {
-  animation: guild-space-floating-current-user-row-rise__24b9c 0.2s ease-out;
+  animation: guild-space-floating-current-user-row-rise__24b9c 0.2s
+    cubic-bezier(0.23, 1, 0.32, 1);
 }
 @keyframes guild-space-floating-current-user-row-rise__24b9c {
   0% {
@@ -181,4 +181,4 @@
   min-height: 380px;
 }
 
-/*# sourceMappingURL=219798.35e96d9806d21dcf.css.map*/
+/*# sourceMappingURL=219798.904484827e2c9976.css.map*/

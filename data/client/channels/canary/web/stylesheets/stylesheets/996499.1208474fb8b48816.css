@@ -509,6 +509,13 @@
   margin-inline: 0 8px;
   min-width: auto;
 }
+.titleClickable__9293f {
+  cursor: pointer;
+  min-height: 24px;
+}
+.titleClickable__9293f:hover {
+  color: var(--text-strong);
+}
 .clickable__9293f {
   cursor: pointer;
 }
@@ -656,11 +663,5 @@
 .enable-forced-colors .iconBadge__9293f {
   background-color: Highlight;
 }
-.titleClickable__9293f {
-  cursor: pointer;
-}
-.titleClickable__9293f:hover {
-  color: var(--text-strong);
-}
 
-/*# sourceMappingURL=996499.302bf31db3d69336.css.map*/
+/*# sourceMappingURL=996499.1208474fb8b48816.css.map*/

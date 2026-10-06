@@ -1658,7 +1658,7 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: var(--space-4);
   line-height: 24px;
   -webkit-user-select: text;
   -moz-user-select: text;
@@ -1721,6 +1721,11 @@
   margin-block-start: 8px;
 }
 .userTag__26b1f {
+}
+.userTagClickable__26b1f {
+  align-items: center;
+  display: flex;
+  height: 24px;
 }
 .pronounsTooltip__26b1f {
   min-width: 0;
@@ -1805,4 +1810,4 @@
   forced-color-adjust: none;
 }
 
-/*# sourceMappingURL=866212.40638e7c53777949.css.map*/
+/*# sourceMappingURL=866212.c3ea3b33780c51dd.css.map*/

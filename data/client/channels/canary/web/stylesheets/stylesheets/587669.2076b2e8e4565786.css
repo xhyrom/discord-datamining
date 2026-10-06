@@ -1,6 +1,9 @@
 .hoverableStatus_cdcd10 {
   cursor: pointer;
 }
+.enlarge-target-size .text_cdcd10 {
+  padding-top: var(--space-4);
+}
 .ping__06d62 {
   color: var(--text-muted);
   display: block;
@@ -18,8 +21,18 @@
   padding: 7px;
   width: 18px;
 }
+.enlarge-target-size .ping__06d62.largePing__06d62 {
+  margin-inline-end: 0;
+}
 .clickablePing__06d62 {
   cursor: pointer;
+}
+.enlarge-target-size .clickablePing__06d62 {
+  margin-top: 4px;
+}
+.enlarge-target-size .clickablePing__06d62.largeClickablePing__06d62 {
+  margin-top: 6px;
+  margin-inline-end: var(--space-8);
 }
 .rtcConnectionStatus__06d62 {
   align-items: center;
@@ -30,10 +43,24 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.enlarge-target-size .rtcConnectionStatus__06d62 {
+  align-items: flex-start;
+  height: auto;
+}
 .rtcConnectionStatusLabel__06d62 {
-  font-weight: var(--font-weight-semibold);
   height: 20px;
   margin-top: -1px;
+}
+.enlarge-target-size .rtcConnectionStatusLabel__06d62 {
+  height: 24px;
+  margin-top: 0;
+}
+.labelWrapper__06d62 {
+  overflow: hidden;
+}
+.enlarge-target-size .labelWrapper__06d62 {
+  margin-top: -1px;
+  padding-bottom: 1px;
 }
 .rtcConnectionStatusConnected__06d62 {
   color: var(--text-feedback-positive);
@@ -53,13 +80,10 @@
 .rtcConnectionQualityBad__06d62 .largePing__06d62 {
   background: var(--background-feedback-critical);
 }
-.labelWrapper__06d62 {
-  overflow: hidden;
-}
 .rtcConnectionStatusWrapper__06d62 {
   display: flex;
   flex-direction: column;
   padding-bottom: 0;
 }
 
-/*# sourceMappingURL=587669.7229215684ff2a64.css.map*/
+/*# sourceMappingURL=587669.2076b2e8e4565786.css.map*/

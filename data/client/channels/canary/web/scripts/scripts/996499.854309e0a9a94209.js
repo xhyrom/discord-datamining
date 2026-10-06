@@ -64,6 +64,7 @@
         P0: "iconWrapper__9293f",
         DD: "title__9293f",
         oB: "titleWrapper__9293f",
+        NP: "titleClickable__9293f",
         vk: "clickable__9293f",
         Kk: "icon__9293f",
         p: "channelIcon__9293f",
@@ -79,7 +80,6 @@
         OW: "caret__9293f",
         Sp: "themed__9293f",
         GY: "themedMobile__9293f",
-        NP: "titleClickable__9293f",
       };
     },
     974689(_, e, o) {

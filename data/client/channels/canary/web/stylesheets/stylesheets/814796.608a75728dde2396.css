@@ -20,6 +20,9 @@
 .privateChannelsHeaderContainer__99e7c:hover {
   color: var(--interactive-text-hover);
 }
+.enlarge-target-size .privateChannelsHeaderContainer__99e7c {
+  padding-inline: var(--space-md) calc(var(--space-xs) - var(--space-4));
+}
 .privateChannelRecipientsInviteButtonIcon__99e7c {
   flex: unset;
   height: 16px;
@@ -30,6 +33,9 @@
   align-items: center;
   display: flex;
   gap: var(--space-8);
+}
+.enlarge-target-size .headerActions__99e7c {
+  gap: var(--space-4);
 }
 @media (hover: hover) {
   .moreButton__99e7c {
@@ -45,6 +51,12 @@
 .privateChannelRecipientsInviteButtonIconContainer__99e7c {
   height: 16px;
   width: 16px;
+}
+.enlarge-target-size .privateChannelRecipientsInviteButtonIconContainer__99e7c {
+  box-sizing: border-box;
+  height: 24px;
+  padding: var(--space-4);
+  width: 24px;
 }
 .scroller__99e7c {
   background: var(--background-gradient-high, var(--background-base-lowest));
@@ -1793,4 +1805,4 @@
   margin-inline-end: 2px;
 }
 
-/*# sourceMappingURL=814796.6508c8489f41019e.css.map*/
+/*# sourceMappingURL=814796.608a75728dde2396.css.map*/

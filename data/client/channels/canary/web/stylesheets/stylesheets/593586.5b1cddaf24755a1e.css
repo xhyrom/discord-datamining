@@ -12,12 +12,22 @@
     var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 4px
   );
 }
+.enlarge-target-size .container_e131a9 {
+  gap: 10px;
+  padding-top: calc(
+    var(--custom-guild-list-padding) - var(--custom-panels-spacing) - 2px
+  );
+}
 .inner_e131a9 {
   flex: 1;
   height: 32px;
   min-width: 0;
 }
-.channel_e131a9:hover {
+.enlarge-target-size .inner_e131a9 {
+  height: auto;
+}
+.channel_e131a9:hover,
+a:hover > .channel_e131a9 {
   text-decoration: underline;
 }
 .customStatusContainer_e131a9 {
@@ -46,6 +56,9 @@
 .connection_e131a9 {
   height: 32px;
   padding-bottom: 0;
+}
+.enlarge-target-size .connection_e131a9 {
+  height: auto;
 }
 .voiceUsers_e131a9 {
   padding-bottom: 4px;
@@ -227,5 +240,8 @@
 .voiceButtonsContainer_e131a9 {
   gap: var(--space-4);
 }
+.enlarge-target-size .voiceButtonsContainer_e131a9 {
+  padding-top: var(--space-4);
+}
 
-/*# sourceMappingURL=593586.fe57c064b52a9ea4.css.map*/
+/*# sourceMappingURL=593586.5b1cddaf24755a1e.css.map*/

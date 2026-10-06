@@ -39,9 +39,11 @@
   color: var(--text-feedback-warning);
   cursor: pointer;
   display: inline-flex;
+  height: 24px;
   margin-inline-start: var(--space-4);
   overflow: hidden;
   vertical-align: middle;
+  width: 24px;
 }
 
-/*# sourceMappingURL=227652.b49bff9fe0233844.css.map*/
+/*# sourceMappingURL=227652.8369e4ee63586088.css.map*/

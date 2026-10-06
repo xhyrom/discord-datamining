@@ -2772,12 +2772,11 @@ html .tabBadge_e6b769 {
   display: flex;
   height: 32px;
   overflow: hidden;
-  padding: 2px 0;
   width: 100%;
 }
 .searchBar_c322aa .icon_c322aa {
   height: 100%;
-  margin-inline-end: var(--space-4);
+  padding: var(--space-4);
 }
 .density-compact .searchBar_c322aa {
   height: 28px;
@@ -2791,4 +2790,4 @@ html .tabBadge_e6b769 {
   color: CanvasText;
 }
 
-/*# sourceMappingURL=398929.40a41aa79b6ceaec.css.map*/
+/*# sourceMappingURL=398929.7c73fe641a58fa03.css.map*/
