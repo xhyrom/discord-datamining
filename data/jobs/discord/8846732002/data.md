@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8846732002](https://discord.com/jobs/8846732002)
 
-**Updated At:** Mon, 28 Sep 2026 20:46:37 GMT
+**Updated At:** Tue, 06 Oct 2026 16:42:12 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We're looking for talented&amp;nbsp;Software Engineers to join our Consumer Revenue squads, the teams at the heart of premium experiences at Discord. You’ll be building out a premium Discord for millions of subscribers, focusing on surfaces such as Nitro, shop, boosting, user identity, and more. Your work will be vital in delivering a high-value premium experience, without compromising the core experience for our free users. You’ll be a key driver in generating the revenue that fuels Discord’s mission.
@@ -26,7 +26,7 @@ Rapidly prototype new features and synthesize insights through experimentation.
 What you should have
 
 3+ years of software engineering experience. You’re a key technical contributor to your team and have led sizable projects which have had a big impact on your team’s roadmap.
-Full-stack proficiency. You are an expert in React/React Native with a solid grasp of Python backend development. We work primarily in the web (React, TypeScript), mobile (React Native, with a small amount of Kotlin, Objective-C, and Swift), and backend (Python).
+Full-stack proficiency. You are an expert in React/React Native with a solid grasp of Python backend development.&amp;nbsp;
 Product sense. You maintain a high degree of empathy for your internal and external users, and seek feedback from them about your work. You have an eye for what changes can bring a product from good to great.
 Ownership mentality. You thrive with autonomy, take initiative to drive projects forward, and are comfortable with ambiguity.
 Pragmatic approach. You find incremental approaches to solving complex problems, enjoy rapidly prototyping solutions, value your autonomy and operate with high integrity.
