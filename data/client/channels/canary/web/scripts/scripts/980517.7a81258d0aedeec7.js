@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["709463"],
+  ["980517"],
   {
     498419(e) {
       !(function () {
@@ -79,7 +79,7 @@
                     ].forEach(function (e) {
                       e in b[0].options && (t[e] = b[0].options[e]);
                     }),
-                      R.run(
+                      E.run(
                         b[0].options,
                         function () {
                           e();
@@ -88,7 +88,7 @@
                       );
                   };
                   c
-                    ? R.run(
+                    ? E.run(
                         c.options,
                         function () {
                           r();
@@ -118,7 +118,7 @@
             } catch (e) {}
             (m = setTimeout(function () {
               x(e);
-            }, R.duration)),
+            }, E.duration)),
               _.setIcon(o);
           }
           (v.circle = function (e) {
@@ -316,10 +316,10 @@
                   o.parentNode && o.parentNode.removeChild(o);
               } else r.setAttribute("href", n);
             });
-          var R = {};
-          (R.duration = 40),
-            (R.types = {}),
-            (R.types.fade = [
+          var E = {};
+          (E.duration = 40),
+            (E.types = {}),
+            (E.types.fade = [
               { x: 0.4, y: 0.4, w: 0.6, h: 0.6, o: 0 },
               { x: 0.4, y: 0.4, w: 0.6, h: 0.6, o: 0.1 },
               { x: 0.4, y: 0.4, w: 0.6, h: 0.6, o: 0.2 },
@@ -332,8 +332,8 @@
               { x: 0.4, y: 0.4, w: 0.6, h: 0.6, o: 0.9 },
               { x: 0.4, y: 0.4, w: 0.6, h: 0.6, o: 1 },
             ]),
-            (R.types.none = [{ x: 0.4, y: 0.4, w: 0.6, h: 0.6, o: 1 }]),
-            (R.types.pop = [
+            (E.types.none = [{ x: 0.4, y: 0.4, w: 0.6, h: 0.6, o: 1 }]),
+            (E.types.pop = [
               { x: 1, y: 1, w: 0, h: 0, o: 1 },
               { x: 0.9, y: 0.9, w: 0.1, h: 0.1, o: 1 },
               { x: 0.8, y: 0.8, w: 0.2, h: 0.2, o: 1 },
@@ -342,7 +342,7 @@
               { x: 0.5, y: 0.5, w: 0.5, h: 0.5, o: 1 },
               { x: 0.4, y: 0.4, w: 0.6, h: 0.6, o: 1 },
             ]),
-            (R.types.popFade = [
+            (E.types.popFade = [
               { x: 0.75, y: 0.75, w: 0, h: 0, o: 0 },
               { x: 0.65, y: 0.65, w: 0.1, h: 0.1, o: 0.2 },
               { x: 0.6, y: 0.6, w: 0.2, h: 0.2, o: 0.4 },
@@ -351,7 +351,7 @@
               { x: 0.45, y: 0.45, w: 0.5, h: 0.5, o: 0.9 },
               { x: 0.4, y: 0.4, w: 0.6, h: 0.6, o: 1 },
             ]),
-            (R.types.slide = [
+            (E.types.slide = [
               { x: 0.4, y: 1, w: 0.6, h: 0.6, o: 1 },
               { x: 0.4, y: 0.9, w: 0.6, h: 0.6, o: 1 },
               { x: 0.4, y: 0.9, w: 0.6, h: 0.6, o: 1 },
@@ -361,9 +361,9 @@
               { x: 0.4, y: 0.5, w: 0.6, h: 0.6, o: 1 },
               { x: 0.4, y: 0.4, w: 0.6, h: 0.6, o: 1 },
             ]),
-            (R.run = function (e, r, n, a) {
+            (E.run = function (e, r, n, a) {
               var i =
-                R.types[
+                E.types[
                   g.hidden || g.msHidden || g.webkitHidden || g.mozHidden
                     ? "none"
                     : t.animation
@@ -380,32 +380,32 @@
               a < i.length && a >= 0)
                 ? (v[t.type](S(e, i[a])),
                   (p = setTimeout(function () {
-                    n ? (a -= 1) : (a += 1), R.run(e, r, n, a);
-                  }, R.duration)),
+                    n ? (a -= 1) : (a += 1), E.run(e, r, n, a);
+                  }, E.duration)),
                   _.setIcon(o))
                 : r();
             }),
             ((t = S(y, e)).bgColor = C(t.bgColor)),
             (t.textColor = C(t.textColor)),
             (t.position = t.position.toLowerCase()),
-            (t.animation = R.types["" + t.animation]
+            (t.animation = E.types["" + t.animation]
               ? t.animation
               : y.animation),
             (g = t.win.document);
-          var E = t.position.indexOf("up") > -1,
+          var R = t.position.indexOf("up") > -1,
             A = t.position.indexOf("left") > -1;
-          if (E || A)
-            for (var T = 0; T < R.types["" + t.animation].length; T++) {
-              var P = R.types["" + t.animation][T];
-              E &&
-                (P.y < 0.6
-                  ? (P.y = P.y - 0.4)
-                  : (P.y = P.y - 2 * P.y + (1 - P.w))),
+          if (R || A)
+            for (var P = 0; P < E.types["" + t.animation].length; P++) {
+              var T = E.types["" + t.animation][P];
+              R &&
+                (T.y < 0.6
+                  ? (T.y = T.y - 0.4)
+                  : (T.y = T.y - 2 * T.y + (1 - T.w))),
                 A &&
-                  (P.x < 0.6
-                    ? (P.x = P.x - 0.4)
-                    : (P.x = P.x - 2 * P.x + (1 - P.h))),
-                (R.types["" + t.animation][T] = P);
+                  (T.x < 0.6
+                    ? (T.x = T.x - 0.4)
+                    : (T.x = T.x - 2 * T.x + (1 - T.h))),
+                (E.types["" + t.animation][P] = T);
             }
           return (
             (t.type = v["" + t.type] ? t.type : y.type),
@@ -443,7 +443,7 @@
                         var r = { type: "badge", options: { n: e } };
                         if (
                           ("animation" in t &&
-                            R.types["" + t.animation] &&
+                            E.types["" + t.animation] &&
                             (r.options.animation = "" + t.animation),
                           "type" in t &&
                             v["" + t.type] &&
@@ -783,7 +783,7 @@
               ? C(e)
               : e.cloneNode(!1);
       }
-      async function R(e, t, r) {
+      async function E(e, t, r) {
         var n, a;
         let i = [];
         return (
@@ -811,7 +811,7 @@
           t
         );
       }
-      async function E(e, t) {
+      async function R(e, t) {
         let r = e.querySelectorAll ? e.querySelectorAll("use") : [];
         if (0 === r.length) return e;
         let n = {};
@@ -844,7 +844,7 @@
         return r || !t.filter || t.filter(e)
           ? Promise.resolve(e)
               .then((e) => S(e, t))
-              .then((r) => R(e, r, t))
+              .then((r) => E(e, r, t))
               .then((t) =>
                 (function (e, t) {
                   if (
@@ -889,11 +889,11 @@
                   return t;
                 })(e, t),
               )
-              .then((e) => E(e, t))
+              .then((e) => R(e, t))
           : null;
       }
-      let T = /url\((['"]?)([^'"]+?)\1\)/g,
-        P = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,
+      let P = /url\((['"]?)([^'"]+?)\1\)/g,
+        T = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,
         k = /src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;
       async function D(e, t, r, n, a) {
         try {
@@ -930,7 +930,7 @@
         return e;
       }
       function L(e) {
-        return -1 !== e.search(T);
+        return -1 !== e.search(P);
       }
       async function N(e, t, r) {
         let n;
@@ -939,7 +939,7 @@
           return t
             ? e.replace(k, (e) => {
                 for (;;) {
-                  let [r, , n] = P.exec(e) || [];
+                  let [r, , n] = T.exec(e) || [];
                   if (!n) return "";
                   if (n === t) return `src: ${r};`;
                 }
@@ -947,7 +947,7 @@
             : e;
         })(e, r);
         return ((n = []),
-        a.replace(T, (e, t, r) => (n.push(r), e)),
+        a.replace(P, (e, t, r) => (n.push(r), e)),
         n.filter((e) => !y(e))).reduce(
           (e, n) => e.then((e) => D(e, n, t, r)),
           Promise.resolve(a),
@@ -1148,7 +1148,7 @@
             e.firstChild ? e.insertBefore(t, e.firstChild) : e.appendChild(t);
         }
       }
-      async function J(e, t = {}) {
+      async function Y(e, t = {}) {
         let { width: r, height: n } = s(e, t),
           a = await A(e, t, !0);
         return (
@@ -1168,9 +1168,9 @@
           await u(a, r, n)
         );
       }
-      async function Y(e, t = {}) {
+      async function J(e, t = {}) {
         let { width: r, height: n } = s(e, t),
-          a = await J(e, t),
+          a = await Y(e, t),
           o = await l(a),
           i = document.createElement("canvas"),
           c = i.getContext("2d"),
@@ -1211,7 +1211,7 @@
         );
       }
       async function X(e, t = {}) {
-        let r = await Y(e, t);
+        let r = await J(e, t);
         return await (function (e, t = {}) {
           return new Promise(
             e.toBlob
@@ -1585,13 +1585,13 @@
         B6: () => S,
         Ix: () => y,
         W5: () => D,
-        W6: () => T,
+        W6: () => P,
         XZ: () => g,
-        dO: () => E,
+        dO: () => R,
         g: () => k,
-        qh: () => R,
+        qh: () => E,
         rd: () => x,
-        zy: () => P,
+        zy: () => T,
       });
       var n = r(750573),
         a = r(582128),
@@ -1911,7 +1911,7 @@
               };
         }, null);
       }
-      var R = (function (e) {
+      var E = (function (e) {
         function t() {
           return e.apply(this, arguments) || this;
         }
@@ -1961,7 +1961,7 @@
         );
       })(a.Component);
       a.Component;
-      var E = (function (e) {
+      var R = (function (e) {
           function t() {
             return e.apply(this, arguments) || this;
           }
@@ -1994,10 +1994,10 @@
           );
         })(a.Component),
         A = a.useContext;
-      function T() {
+      function P() {
         return A(m);
       }
-      function P() {
+      function T() {
         return A(g).location;
       }
       function k() {
@@ -2005,7 +2005,7 @@
         return e ? e.params : {};
       }
       function D(e) {
-        var t = P(),
+        var t = T(),
           r = A(g).match;
         return e ? S(t.pathname, e) : r;
       }
@@ -2212,6 +2212,94 @@
         inject: !0,
         isolated: !1,
         hl: "",
+      };
+    },
+    299855(e, t, r) {
+      let n = r(64672),
+        a = r(376780),
+        o = r(864886),
+        i = r(931717),
+        s = r(532618),
+        l = r(298415),
+        c = r(368208),
+        u = r(367249),
+        h = r(481014),
+        d = r(69528),
+        f = r(961348),
+        p = r(354219),
+        m = r(273771),
+        g = r(481558),
+        y = r(158832),
+        b = r(392973),
+        w = r(745271),
+        v = r(237769),
+        M = r(521159),
+        x = r(800670),
+        _ = r(596641),
+        C = r(177335),
+        S = r(601861),
+        E = r(569671),
+        R = r(738018),
+        A = r(88701),
+        P = r(607008),
+        T = r(46666),
+        k = r(74509),
+        D = r(4144),
+        L = r(420621),
+        N = r(32018),
+        I = r(425800),
+        B = r(189715),
+        $ = r(964580),
+        O = r(861345),
+        j = r(181817),
+        z = r(139328),
+        q = r(711002);
+      e.exports = {
+        parse: s,
+        valid: l,
+        clean: c,
+        inc: u,
+        diff: h,
+        major: d,
+        minor: f,
+        patch: p,
+        prerelease: m,
+        compare: g,
+        rcompare: y,
+        compareLoose: b,
+        compareBuild: w,
+        sort: v,
+        rsort: M,
+        gt: x,
+        lt: _,
+        eq: C,
+        neq: S,
+        gte: E,
+        lte: R,
+        cmp: A,
+        coerce: P,
+        Comparator: T,
+        Range: k,
+        satisfies: D,
+        toComparators: L,
+        maxSatisfying: N,
+        minSatisfying: I,
+        minVersion: B,
+        validRange: $,
+        outside: O,
+        gtr: j,
+        ltr: z,
+        intersects: q,
+        simplifyRange: r(532879),
+        subset: r(549566),
+        SemVer: o,
+        re: n.re,
+        src: n.src,
+        tokens: n.t,
+        SEMVER_SPEC_VERSION: a.SEMVER_SPEC_VERSION,
+        RELEASE_TYPES: a.RELEASE_TYPES,
+        compareIdentifiers: i.compareIdentifiers,
+        rcompareIdentifiers: i.rcompareIdentifiers,
       };
     },
     546738(e, t, r) {
@@ -3209,15 +3297,15 @@
           this.verbose && globalThis?.console?.warn?.(e);
         },
       };
-      let R = {
+      let E = {
         D50: [0.3457 / 0.3585, 1, 0.8251046025104602],
         D65: [0.3127 / 0.329, 1, 1.0890577507598784],
       };
-      function E(e) {
-        return Array.isArray(e) ? e : R[e];
+      function R(e) {
+        return Array.isArray(e) ? e : E[e];
       }
       function A(e, t, r, n = {}) {
-        if (((e = E(e)), (t = E(t)), !e || !t))
+        if (((e = R(e)), (t = R(t)), !e || !t))
           throw TypeError(
             `Missing white point to convert ${!e ? "from" : ""}${!e && !t ? "/" : ""}${!t ? "to" : ""}`,
           );
@@ -3226,7 +3314,7 @@
         if (
           (C.run("chromatic-adaptation-start", o),
           o.M ||
-            (o.W1 === R.D65 && o.W2 === R.D50
+            (o.W1 === E.D65 && o.W2 === E.D50
               ? (o.M = [
                   [
                     1.0479297925449969, 0.022946870601609652,
@@ -3241,8 +3329,8 @@
                     0.7518742814281371,
                   ],
                 ])
-              : o.W1 === R.D50 &&
-                o.W2 === R.D65 &&
+              : o.W1 === E.D50 &&
+                o.W2 === E.D65 &&
                 (o.M = [
                   [
                     0.955473421488075, -0.02309845494876471,
@@ -3265,14 +3353,14 @@
           "Only Bradford CAT with white points D50 and D65 supported for now.",
         );
       }
-      let T = new Set(["<number>", "<percentage>", "<angle>"]);
-      function P(e, t, r, n) {
+      let P = new Set(["<number>", "<percentage>", "<angle>"]);
+      function T(e, t, r, n) {
         return Object.entries(e.coords).map(([e, a], o) => {
           let i,
             s = t.coordGrammar[o],
             l = n[o],
             c = l?.type;
-          if (!(i = l.none ? s.find((e) => T.has(e)) : s.find((e) => e == c))) {
+          if (!(i = l.none ? s.find((e) => P.has(e)) : s.find((e) => e == c))) {
             let t = a.name || e;
             throw TypeError(`${c ?? l.raw} not allowed for ${t} in ${r}()`);
           }
@@ -3303,7 +3391,7 @@
                     (e, t) => r.parsed.args[t] || 0,
                   );
                 return (
-                  i.coordGrammar && (a = P(n, i, "color", s)),
+                  i.coordGrammar && (a = T(n, i, "color", s)),
                   t && Object.assign(t, { formatId: "color", types: a }),
                   i.id.startsWith("--") &&
                     !e.startsWith("--") &&
@@ -3338,7 +3426,7 @@
                 (i = r.parsed.args.pop());
               let s = r.parsed.args;
               return (
-                a.coordGrammar && (o = P(n, a, e, s)),
+                a.coordGrammar && (o = T(n, a, e, s)),
                 t && Object.assign(t, { formatId: a.name, types: o }),
                 { spaceId: n.id, coords: s, alpha: i }
               );
@@ -3377,7 +3465,7 @@
           for (let e in t) "name" in t[e] || (t[e].name = e);
           this.coords = t;
           let r = e.white ?? this.base.white ?? "D65";
-          for (let t in ((this.white = E(r)),
+          for (let t in ((this.white = R(r)),
           (this.formats = e.formats ?? {}),
           this.formats)) {
             let e = this.formats[t];
@@ -3655,7 +3743,7 @@
       let U = 216 / 24389,
         F = 24 / 116,
         H = 24389 / 27,
-        W = R.D50;
+        W = E.D50;
       var V = new L({
         id: "lab",
         name: "Lab",
@@ -3698,7 +3786,7 @@
       function G(e) {
         return ((e % 360) + 360) % 360;
       }
-      var J = new L({
+      var Y = new L({
         id: "lch",
         name: "LCH",
         coords: {
@@ -3740,9 +3828,9 @@
           },
         },
       });
-      let Y = Math.PI,
-        X = 180 / Y,
-        Z = Y / 180;
+      let J = Math.PI,
+        X = 180 / J,
+        Z = J / 180;
       function Q(e) {
         let t = e * e;
         return t * t * t * e;
@@ -3751,9 +3839,9 @@
         let o, i;
         [e, t] = D([e, t]);
         let [s, l, c] = V.from(e),
-          u = J.from(V, [s, l, c])[1],
+          u = Y.from(V, [s, l, c])[1],
           [h, d, f] = V.from(t),
-          p = J.from(V, [h, d, f])[1];
+          p = Y.from(V, [h, d, f])[1];
         u < 0 && (u = 0), p < 0 && (p = 0);
         let m = Q((u + p) / 2),
           g = 0.5 * (1 - Math.sqrt(m / (m + 0x16bcc41e9))),
@@ -3763,26 +3851,26 @@
           v = Math.sqrt(b ** 2 + f ** 2),
           M = 0 === y && 0 === c ? 0 : Math.atan2(c, y),
           x = 0 === b && 0 === f ? 0 : Math.atan2(f, b);
-        M < 0 && (M += 2 * Y), x < 0 && (x += 2 * Y), (M *= X);
+        M < 0 && (M += 2 * J), x < 0 && (x += 2 * J), (M *= X);
         let _ = h - s,
           C = v - w,
-          R = (x *= X) - M,
-          E = M + x,
-          A = Math.abs(R);
+          E = (x *= X) - M,
+          R = M + x,
+          A = Math.abs(E);
         w * v == 0
           ? (o = 0)
           : A <= 180
-            ? (o = R)
-            : R > 180
-              ? (o = R - 360)
-              : R < -180
-                ? (o = R + 360)
+            ? (o = E)
+            : E > 180
+              ? (o = E - 360)
+              : E < -180
+                ? (o = E + 360)
                 : S.warn("the unthinkable has happened");
-        let T = 2 * Math.sqrt(v * w) * Math.sin((o * Z) / 2),
-          P = (s + h) / 2,
+        let P = 2 * Math.sqrt(v * w) * Math.sin((o * Z) / 2),
+          T = (s + h) / 2,
           k = (w + v) / 2,
           L = Q(k),
-          N = (P - 50) ** 2,
+          N = (T - 50) ** 2,
           I = 1 + (0.015 * N) / Math.sqrt(20 + N),
           B = 1 + 0.045 * k,
           $ =
@@ -3794,12 +3882,12 @@
                   Math.cos(
                     ((i =
                       w * v == 0
-                        ? E
+                        ? R
                         : A <= 180
-                          ? E / 2
-                          : E < 360
-                            ? (E + 360) / 2
-                            : (E - 360) / 2) -
+                          ? R / 2
+                          : R < 360
+                            ? (R + 360) / 2
+                            : (R - 360) / 2) -
                       30) *
                       Z,
                   ) +
@@ -3810,12 +3898,12 @@
         return Math.sqrt(
           (O +=
             (C / (n * B)) ** 2 +
-            (T / (a * $)) ** 2 +
+            (P / (a * $)) ** 2 +
             (C / (n * B)) *
               (-1 *
                 Math.sin(2 * (30 * Math.exp(-1 * ((i - 275) / 25) ** 2)) * Z) *
                 (2 * Math.sqrt(L / (L + 0x16bcc41e9)))) *
-              (T / (a * $))),
+              (P / (a * $))),
         );
       }
       let ee = [
@@ -4017,12 +4105,12 @@
         e_ = 2523 / 32,
         eC = 16384 / 2610,
         eS = 32 / 2523,
-        eR = [
+        eE = [
           [0.3592832590121217, 0.6976051147779502, -0.035891593232029],
           [-0.1920808463704993, 1.100476797037432, 0.0753748658519118],
           [0.0070797844607479, 0.0748396662186362, 0.8433265453898765],
         ],
-        eE = [
+        eR = [
           [0.5, 0.5, 0],
           [6610 / 4096, -13613 / 4096, 7003 / 4096],
           [17933 / 4096, -17390 / 4096, -543 / 4096],
@@ -4032,12 +4120,12 @@
           [0.9999999999999998, -0.0086090370379328, -0.1110296250030259],
           [0.9999999999999998, 0.5600313357106791, -0.3206271749873188],
         ],
-        eT = [
+        eP = [
           [2.0701522183894223, -1.3263473389671563, 0.2066510476294053],
           [0.3647385209748072, 0.6805660249472273, -0.0453045459220347],
           [-0.0497472075358123, -0.0492609666966131, 1.1880659249923042],
         ];
-      var eP = new L({
+      var eT = new L({
         id: "ictcp",
         name: "ICTCP",
         coords: {
@@ -4049,9 +4137,9 @@
         fromBase: (e) => {
           var t;
           return (
-            (t = a(eR, e)),
+            (t = a(eE, e)),
             a(
-              eE,
+              eR,
               t.map(function (e) {
                 return (
                   ((0.8359375 + eM * (e / 1e4) ** ex) /
@@ -4064,14 +4152,14 @@
         },
         toBase: (e) =>
           a(
-            eT,
+            eP,
             a(eA, e).map(function (e) {
               let t = Math.max(e ** eS - 0.8359375, 0);
               return 1e4 * (t / (eM - 18.6875 * e ** eS)) ** eC;
             }),
           ),
       });
-      let ek = R.D65,
+      let ek = E.D65,
         eD = 2 * Math.PI,
         eL = [
           [0.401288, 0.650173, -0.051461],
@@ -4260,13 +4348,13 @@
         },
         toBase: (e) => eW({ J: e[0], M: e[1], h: e[2] }, eH),
       });
-      let eJ = R.D65,
-        eY = 216 / 24389,
+      let eY = E.D65,
+        eJ = 216 / 24389,
         eX = 24389 / 27;
       function eZ(e) {
         return e > 8 ? Math.pow((e + 16) / 116, 3) : e / eX;
       }
-      let eQ = eF(eJ, (200 / Math.PI) * eZ(50), 100 * eZ(50), "average", !1);
+      let eQ = eF(eY, (200 / Math.PI) * eZ(50), 100 * eZ(50), "average", !1);
       var eK = new L({
         id: "hct",
         name: "HCT",
@@ -4280,7 +4368,7 @@
           (function (e) {
             var t;
             let r =
-              116 * ((t = e[1]) > eY ? Math.cbrt(t) : (eX * t + 16) / 116) - 16;
+              116 * ((t = e[1]) > eJ ? Math.cbrt(t) : (eX * t + 16) / 116) - 16;
             if (0 === r) return [0, 0, 0];
             let n = eV(e, eQ);
             return [G(n.h), n.C, r];
@@ -4339,9 +4427,9 @@
         deltaECMC: function (e, t, { l: r = 2, c: n = 1 } = {}) {
           [e, t] = D([e, t]);
           let [a, o, i] = V.from(e),
-            [, s, l] = J.from(V, [a, o, i]),
+            [, s, l] = Y.from(V, [a, o, i]),
             [c, u, h] = V.from(t),
-            d = J.from(V, [c, u, h])[1];
+            d = Y.from(V, [c, u, h])[1];
           s < 0 && (s = 0), d < 0 && (d = 0);
           let f = a - c,
             p = s - d,
@@ -4382,8 +4470,8 @@
         },
         deltaEITP: function (e, t) {
           [e, t] = D([e, t]);
-          let [r, n, a] = eP.from(e),
-            [o, i, s] = eP.from(t);
+          let [r, n, a] = eT.from(e),
+            [o, i, s] = eT.from(t);
           return (
             720 * Math.sqrt((r - o) ** 2 + 0.25 * (n - i) ** 2 + (a - s) ** 2)
           );
@@ -4500,7 +4588,7 @@
                 let t = L.resolveCoord(i.channel),
                   r = O(e3(e, t.space), t.id);
                 if ((l(r) && (r = 0), r >= i.max))
-                  return e3({ space: "xyz-d65", coords: R.D65 }, e.space);
+                  return e3({ space: "xyz-d65", coords: E.D65 }, e.space);
                 if (r <= i.min)
                   return e3({ space: "xyz-d65", coords: [0, 0, 0] }, e.space);
               }
@@ -4941,7 +5029,7 @@
       let tp = 216 / 24389,
         tm = 24 / 116,
         tg = 24389 / 27,
-        ty = R.D65;
+        ty = E.D65;
       var tb = new L({
           id: "lab-d65",
           name: "Lab D65",
@@ -5096,10 +5184,10 @@
         return (
           ([e, t] = [D(e), D(t)]),
           "object" === i(r) && ([r, n] = [0.5, r]),
-          tE(e, t, n)(r)
+          tR(e, t, n)(r)
         );
       }
-      function tR(e, t, r = {}) {
+      function tE(e, t, r = {}) {
         let n;
         tA(e) && (([n, r] = [e, t]), ([e, t] = n.rangeArgs.colors));
         let {
@@ -5109,7 +5197,7 @@
           maxSteps: s = 1e3,
           ...l
         } = r;
-        n || (([e, t] = [D(e), D(t)]), (n = tE(e, t, l)));
+        n || (([e, t] = [D(e), D(t)]), (n = tR(e, t, l)));
         let c = t_(e, t),
           u = a > 0 ? Math.max(i, Math.ceil(c / a) + 1) : i,
           h = [];
@@ -5143,10 +5231,10 @@
         }
         return (h = h.map((e) => e.color));
       }
-      function tE(e, t, r = {}) {
+      function tR(e, t, r = {}) {
         if (tA(e)) {
           let [r, n] = [e, t];
-          return tE(...r.rangeArgs.colors, { ...r.rangeArgs.options, ...n });
+          return tR(...r.rangeArgs.colors, { ...r.rangeArgs.options, ...n });
         }
         let { space: n, outputSpace: a, progression: o, premultiplied: i } = r;
         (e = D(e)), (t = D(t)), (e = es(e)), (t = es(t));
@@ -5207,19 +5295,19 @@
         return "function" === i(e) && !!e.rangeArgs;
       }
       S.interpolationSpace = "lab";
-      var tT = Object.freeze({
+      var tP = Object.freeze({
           __proto__: null,
           isRange: tA,
           mix: tS,
-          range: tE,
+          range: tR,
           register: function (e) {
             e.defineFunction("mix", tS, { returns: "color" }),
-              e.defineFunction("range", tE, { returns: "function<color>" }),
-              e.defineFunction("steps", tR, { returns: "array<color>" });
+              e.defineFunction("range", tR, { returns: "function<color>" }),
+              e.defineFunction("steps", tE, { returns: "array<color>" });
           },
-          steps: tR,
+          steps: tE,
         }),
-        tP = new L({
+        tT = new L({
           id: "hsl",
           name: "HSL",
           coords: {
@@ -5288,7 +5376,7 @@
             s: { range: [0, 100], name: "Saturation" },
             v: { range: [0, 100], name: "Value" },
           },
-          base: tP,
+          base: tT,
           fromBase(e) {
             let [t, r, n] = e,
               a = (n /= 100) + (r /= 100) * Math.min(n, 1 - n);
@@ -5440,7 +5528,7 @@
             },
           },
         });
-      let tz = R.D65,
+      let tz = E.D65,
         tq = 216 / 24389,
         tU = 24389 / 27,
         [tF, tH] = tv({ space: I, coords: tz });
@@ -5530,8 +5618,8 @@
           },
         });
       let tG = 216 / 24389,
-        tJ = 24389 / 27,
-        tY = tr[0][0],
+        tY = 24389 / 27,
+        tJ = tr[0][0],
         tX = tr[0][1],
         tZ = tr[0][2],
         tQ = tr[1][0],
@@ -5546,9 +5634,9 @@
       }
       function t9(e) {
         let t = Math.pow(e + 16, 3) / 1560896,
-          r = t > tG ? t : e / tJ,
-          n = r * (284517 * tY - 94839 * tZ),
-          a = r * (838422 * tZ + 769860 * tX + 731718 * tY),
+          r = t > tG ? t : e / tY,
+          n = r * (284517 * tJ - 94839 * tZ),
+          a = r * (838422 * tZ + 769860 * tX + 731718 * tJ),
           o = r * (632260 * tZ - 126452 * tX),
           i = r * (284517 * tQ - 94839 * t0),
           s = r * (838422 * t0 + 769860 * tK + 731718 * tQ),
@@ -5819,7 +5907,7 @@
             [-0.01584149884933386, -0.03412293802851557, 1.0499644368778496],
           ],
         }),
-        Object.assign(R, {
+        Object.assign(E, {
           A: [1.0985, 1, 0.35585],
           C: [0.98074, 1, 1.18232],
           D55: [0.95682, 1, 0.92149],
@@ -5829,7 +5917,7 @@
           F7: [0.95041, 1, 1.08747],
           F11: [1.00962, 1, 0.6435],
         }),
-        (R.ACES = [0.32168 / 0.33767, 1, 1.0088251843515859]);
+        (E.ACES = [0.32168 / 0.33767, 1, 1.0088251843515859]);
       var rc = new B({
         id: "acescg",
         cssId: "--acescg",
@@ -5840,7 +5928,7 @@
           b: { range: [0, 65504], name: "Blue" },
         },
         referred: "scene",
-        white: R.ACES,
+        white: E.ACES,
         toXYZ_M: [
           [0.6624541811085053, 0.13400420645643313, 0.1561876870049078],
           [0.27222871678091454, 0.6740817658111484, 0.05368951740793705],
@@ -5891,14 +5979,14 @@
         CAM16_JMh: eG,
         HCT: eK,
         HPLuv: re,
-        HSL: tP,
+        HSL: tT,
         HSLuv: t3,
         HSV: tk,
         HWB: tD,
-        ICTCP: eP,
+        ICTCP: eT,
         JzCzHz: ev,
         Jzazbz: ew,
-        LCH: J,
+        LCH: Y,
         LCHuv: tV,
         Lab: V,
         Lab_D65: tb,
@@ -6038,7 +6126,7 @@
       Object.assign(rd, {
         util: _,
         hooks: C,
-        WHITES: R,
+        WHITES: E,
         Space: L,
         spaces: L.registry,
         parse: k,
@@ -6114,9 +6202,9 @@
         }),
         rd.extend(tx),
         rd.extend(th),
-        rd.extend(tT),
+        rd.extend(tP),
         rd.extend(tw);
     },
   },
 ]);
-//# sourceMappingURL=709463.00102a22cd7784cc.js.map
+//# sourceMappingURL=980517.7a81258d0aedeec7.js.map

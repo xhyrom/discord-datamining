@@ -182,7 +182,7 @@
   inset-inline-start: calc(var(--custom-marquee-overflow, 0px) * -1);
   max-width: none;
   overflow: visible;
-  transition: inset-inline-start 2s linear;
+  transition: inset-inline-start var(--custom-marquee-duration, 2s) linear;
 }
 .listBox__2e223 {
   box-sizing: border-box;
@@ -542,4 +542,4 @@
   margin: 0;
 }
 
-/*# sourceMappingURL=965703.2e75b37fe1306c30.css.map*/
+/*# sourceMappingURL=965703.078f775395859ae2.css.map*/

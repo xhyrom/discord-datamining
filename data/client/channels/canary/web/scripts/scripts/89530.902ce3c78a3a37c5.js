@@ -1,9 +1,44 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["35328"],
+  ["89530"],
   {
-    948611(e, _, b) {
-      e.exports = {
+    653131(_, e, o) {
+      _.exports = {
+        xJ: "sliderContainer__14ad3",
+        aw: "slider__14ad3",
+        aZ: "betaBadge__14ad3",
+        op: "infoContainer__14ad3",
+        kX: "infoTooltip__14ad3",
+        Mq: "infoNitroContainer__14ad3",
+        Nh: "infoNitroBackground__14ad3",
+        Pc: "infoNitroTextContainer__14ad3",
+        aJ: "infoNitroIcon__14ad3",
+        sD: "infoNitroText__14ad3",
+        Br: "infoSoundContainer__14ad3",
+        tn: "infoSoundInnerContainer__14ad3",
+        nR: "infoSoundIcon__14ad3",
+        g4: "infoExpandedSoundContainer__14ad3",
+        Qe: "infoExpandedGuildContainer__14ad3",
+        Ff: "infoExpandedGuildInfo__14ad3",
+        x$: "infoExpandedGuildTitle__14ad3",
+      };
+    },
+    178226(_, e, o) {
+      _.exports = { z: "effects__58042" };
+    },
+    84566(_, e, o) {
+      o.r(
+        (_.exports = {
+          target: "target__93289",
+          before: "before__93289",
+          dragOver: "dragOver__93289",
+          after: "after__93289",
+          autoPointerEvents: "autoPointerEvents__93289",
+        }),
+      );
+    },
+    948611(_, e, o) {
+      _.exports = {
         H: "soundButtonWrapper__9be63",
         cB: "dragging__9be63",
         aG: "soundButton__9be63",
@@ -36,6 +71,9 @@
         ET: "unavailableTooltip__9be63",
         ld: "unavailableTooltipActions__9be63",
       };
+    },
+    777511(_, e, o) {
+      _.exports = { Q: "effect__68185" };
     },
   },
 ]);

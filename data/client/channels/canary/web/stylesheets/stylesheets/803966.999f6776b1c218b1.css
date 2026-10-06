@@ -1860,6 +1860,9 @@
   margin-top: 24px;
   text-align: center;
 }
+.text_b76614:first-child {
+  margin-top: 0;
+}
 .authorizedSuccessSubtext_b76614 {
   margin-top: 16px;
   max-width: 274px;
@@ -2702,4 +2705,4 @@
   z-index: 2;
 }
 
-/*# sourceMappingURL=803966.4e18f76bf05ab87b.css.map*/
+/*# sourceMappingURL=803966.999f6776b1c218b1.css.map*/

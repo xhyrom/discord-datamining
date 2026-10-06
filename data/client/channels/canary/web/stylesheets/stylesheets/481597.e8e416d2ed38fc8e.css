@@ -69,6 +69,7 @@
 }
 .misc__71961 {
   align-items: center;
+  align-self: center;
   color: var(--interactive-text-default);
   flex: 0 1 auto;
   margin-inline-start: 4px;
@@ -148,4 +149,4 @@
   outline-offset: -2px;
 }
 
-/*# sourceMappingURL=481597.8aab6ead4c239240.css.map*/
+/*# sourceMappingURL=481597.e8e416d2ed38fc8e.css.map*/

@@ -162,8 +162,12 @@
   flex-direction: column;
   position: relative;
 }
+.secureFramesBetaTag__49508,
 .secureFramesIcon__49508 {
   margin-inline-start: 4px;
+}
+.secureFramesBetaTag__49508 {
+  display: flex;
 }
 .playingText__49508 {
   align-items: center;
@@ -215,4 +219,4 @@
   width: 28px;
 }
 
-/*# sourceMappingURL=249727.86caa89ba5cc9e24.css.map*/
+/*# sourceMappingURL=249727.9ebf9d989dac6a9f.css.map*/
