@@ -1,0 +1,205 @@
+.notice_a2002f {
+  align-items: center;
+  background: var(--background-surface-high);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  display: flex;
+  gap: var(--space-12);
+  padding: var(--space-12) var(--space-16);
+}
+.icon_a2002f {
+  color: var(--text-muted);
+  flex: 0 0 auto;
+}
+.message_a2002f {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.frame_cc8221 {
+  padding: var(--space-16);
+}
+.wide_cc8221 {
+  width: 1100px;
+}
+.narrow_cc8221,
+.wide_cc8221 {
+  max-width: 100%;
+}
+.narrow_cc8221 {
+  width: 320px;
+}
+.richTooltipContent__9038b {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  gap: var(--space-8);
+  max-width: 272px;
+  padding: var(--space-8) var(--space-12);
+}
+.richTooltipContentLg__9038b {
+  gap: var(--space-16);
+  max-width: 372px;
+  padding: var(--space-16);
+}
+.assetContainer__9038b {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.assetContainer__9038b > * {
+  height: auto;
+  max-width: 100%;
+}
+.textContent__9038b {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+.noAsset__9038b .textContent__9038b {
+  text-align: center;
+}
+.container_fc0f77 {
+  margin-block-end: var(--space-16);
+}
+.surface__5b95d {
+  background: var(--background-base-lower);
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+.nagbarOverride__5b95d {
+  width: 100%;
+}
+.promotionSelector__5b95d {
+  border-inline-end: 1px solid var(--border-subtle);
+  margin-inline-end: var(--space-12);
+  padding-inline-end: var(--space-12);
+  width: 200px;
+}
+.chatInputSurface__5b95d {
+  background: var(
+    --background-gradient-highest,
+    var(--chat-background-default)
+  );
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+.content_d9185c {
+  border-radius: var(--radius-md);
+  gap: var(--size-8);
+  margin-bottom: calc(var(--custom-modal-padding-bottom) * -1);
+  margin-top: calc(var(--custom-modal-padding-top) * -1);
+  overflow: hidden;
+  padding: var(--size-24);
+  position: relative;
+  text-align: center;
+}
+.content_d9185c,
+.hero_d9185c {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.hero_d9185c {
+  padding-top: 160px;
+  width: 100%;
+}
+.backgroundImage_d9185c {
+  height: 300px;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    #000 30%,
+    rgba(0, 0, 0, 0.55) 40%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    180deg,
+    #000 30%,
+    rgba(0, 0, 0, 0.55) 40%,
+    transparent
+  );
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top center;
+  object-position: top center;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.closeButton_d9185c {
+  inset-inline-end: var(--size-20);
+  position: absolute;
+  top: var(--size-20);
+}
+.logo_d9185c {
+  height: 28px;
+  margin-bottom: 4px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.title_d9185c {
+  white-space: nowrap;
+}
+.subtitle_d9185c {
+  margin-top: var(--space-8);
+  margin-inline-end: -10px;
+  margin-inline-start: -10px;
+}
+.features_d9185c {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-24);
+  margin-bottom: var(--size-16);
+  margin-top: var(--size-16);
+}
+.feature_d9185c {
+  background-color: var(--background-mod-subtle);
+  border-radius: var(--radius-md);
+  flex: 1;
+  gap: var(--size-16);
+  overflow: hidden;
+  padding: var(--size-20);
+}
+.feature_d9185c,
+.featureCopy_d9185c {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.featureCopy_d9185c {
+  gap: var(--size-4);
+  text-align: center;
+}
+.featureAsset_d9185c {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.featureAsset_d9185c img {
+  max-height: 100px;
+  max-width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.featureAssetLabel_d9185c {
+  bottom: 0;
+  inset-inline-start: 50%;
+  position: absolute;
+  transform: translate(-50%, 50%);
+}
+.buttonContainer_d9185c {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=959371.db07efcd7a309d56.css.map*/

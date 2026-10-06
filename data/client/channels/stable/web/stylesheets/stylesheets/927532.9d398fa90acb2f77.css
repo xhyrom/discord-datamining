@@ -1,0 +1,18 @@
+.container__3cb11 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container__18c16 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  white-space: normal;
+}
+.container__18c16 ol,
+.container__18c16 ul {
+  margin-bottom: 24px;
+  margin-inline: 20px 0;
+}
+
+/*# sourceMappingURL=927532.9d398fa90acb2f77.css.map*/
