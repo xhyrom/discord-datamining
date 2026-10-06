@@ -41,7 +41,7 @@
     height="616"
   />
 </p>
-<h4 id="h_01JAZSHVYJTHSFN37CQRRRYGWE" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JAZSHVYJTHSFN37CQRRRYGWE">
   <span style="color: #666666"
     >Halloween Event Sound Pack in Notifications Settings</span
   >
@@ -69,7 +69,7 @@
     alt="halloween2025-ezgif.com-video-to-gif-converter.gif"
   />
 </p>
-<h4 id="h_01JAZSM2ZNY14BWRM9YT7NJBD0" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JAZSM2ZNY14BWRM9YT7NJBD0">
   <span style="color: #666666"
     >How to Revert Event Sound Pack to Discord Default in Notifications
     Settings</span
