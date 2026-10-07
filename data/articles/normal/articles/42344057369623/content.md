@@ -31,6 +31,11 @@
             >Discord Nitro Free Shop Item</a
           >
         </li>
+        <li data-list-item-id="ee3a6a223a653f419b1056abc5970e5b0">
+          <a href="#h_01M37YN82B9H591CVWE794PJYP"
+            >Discord Nitro Mobile Orb Drop</a
+          >
+        </li>
       </ul>
     </li>
     <li data-list-item-id="efdf5e31890130f9ad44902b868873672">
@@ -268,6 +273,35 @@
       need to redeem it in the Shop by 9/11</strong
     >. If you don't meet eligibility, the item won’t be applied to your account.
     Bundles and Collaborations are not included in this promo.
+  </li>
+</ul>
+<h2 id="h_01M37YN82B9H591CVWE794PJYP">Discord Nitro Mobile Orb Drop</h2>
+<ul>
+  <li data-list-item-id="e760caf2ffc588f7c015290a726bc147a">
+    <strong>Offer type:</strong> Get bonus Orbs when you subscribe to Nitro on
+    mobile during the campaign period.
+  </li>
+  <li data-list-item-id="e54219bf778f411f43f21516ffef80779">
+    <strong>Platforms:</strong> This offer is only available on the Discord
+    mobile app (iOS and Android).
+  </li>
+  <li data-list-item-id="eceddd0c3d8620c0d3a10cbf22d252ff9">
+    <strong>Duration:</strong> This offer is available from
+    <strong>October 7, 2026</strong> through
+    <strong>October 14, 2026 (4PM PT)</strong>.
+  </li>
+  <li data-list-item-id="e6b9640fbe81796d87ff2f79c1225641e">
+    <strong>What you get:</strong> A bonus drop of Orbs added to your account
+    after you subscribe to an eligible Nitro subscription.
+  </li>
+  <li data-list-item-id="ede4328eede9a705dcfa9c470325c76cb">
+    <strong>Terms:</strong> Requires subscribing to Nitro (Monthly or Yearly)
+    through the Discord mobile app during the offer window. Only new
+    subscribers, meaning you haven't had an active Nitro subscription within the
+    last 30 days, are eligible for the bonus. Once you subscribe, the bonus Orbs
+    are added to your account automatically, with no separate claim step
+    required. You aren't eligible if you already received Orbs from an earlier
+    Nitro Orbs promotion. 
   </li>
 </ul>
 <h1 id="h_01KZ4G2Z2VK3PSEXHKDS3YSYT7">Frequently Asked Questions</h1>
