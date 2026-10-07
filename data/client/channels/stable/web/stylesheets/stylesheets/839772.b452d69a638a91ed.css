@@ -1,0 +1,227 @@
+.text__7b750 {
+  display: inline-block;
+}
+.text__7b750,
+.text__7b750 a {
+  color: currentColor;
+}
+.text__7b750 a {
+  text-decoration: underline;
+}
+.premiumIcon__7b750 {
+  height: 24px;
+  margin-inline-end: 8px;
+  position: relative;
+  top: 6px;
+  width: 24px;
+}
+.notice__36c3e {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.guildIcon__36c3e {
+  margin-inline-end: 8px;
+}
+.guildName__36c3e {
+  color: inherit;
+}
+.guildName__36c3e:hover {
+  text-decoration: underline;
+}
+.actionButton__36c3e {
+  margin-inline-start: 12px;
+  top: 0;
+}
+.actionButtonInner__36c3e {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+.notice__30f28 {
+  align-items: center;
+  background-color: var(--brand-600);
+  box-shadow: none;
+  color: var(--white);
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 0 8px;
+}
+.notice__30f28.error__30f28 {
+  background-color: var(--background-feedback-critical);
+}
+.button__30f28 {
+  align-items: center;
+  font-weight: var(--font-weight-semibold);
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4px 8px;
+}
+.button__30f28:hover {
+  background-color: var(--brand-530);
+}
+.error__30f28 > .button__30f28:hover {
+  background-color: var(--red-430);
+}
+.header__30f28 {
+  color: var(--white);
+  display: inline;
+  margin-inline-end: 16px;
+}
+.backButtonInner__84419 {
+  display: flex;
+  gap: 8px;
+  padding: 2px 0;
+}
+.backButton__84419:hover {
+  background-color: var(--brand-530);
+}
+.backNotice__84419 {
+  background-color: var(--brand-600);
+  border-radius: 0;
+  padding: 8px;
+}
+.closeButton__84419 {
+  height: 100%;
+}
+.left_caab99 {
+  transform: rotate(270deg);
+}
+.right_caab99 {
+  transform: rotate(90deg);
+}
+.down_caab99 {
+  transform: rotate(180deg);
+}
+.downRight_caab99 {
+  transform: rotate(135deg);
+}
+.upLeft_caab99 {
+  transform: rotate(315deg);
+}
+.discordMemberCreatedAt_e6abe8 {
+  display: flex;
+  gap: 10px;
+}
+.discordMemberCreatedAtIconContainer_e6abe8 {
+  background-color: var(--interactive-background-hover);
+  border-radius: 50%;
+  color: var(--interactive-text-active);
+  height: 24px;
+  padding: 8px;
+  width: 24px;
+}
+.discordMemberCreatedAtIcon_e6abe8 {
+  align-self: center;
+}
+.discordMemberCreatedAtText_e6abe8 {
+  display: flex;
+  flex-direction: column;
+}
+.connectedAccounts_e6abe8 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.connectedAccountsColumn_e6abe8 {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 8px);
+}
+.connectedAccountsColumn_e6abe8 + .connectedAccountsColumn_e6abe8 {
+  margin-inline-start: 16px;
+}
+.connectedAccountContainer_e6abe8 {
+  border: 1px solid var(--user-profile-border);
+  border-radius: var(--radius-sm);
+  margin-top: 16px;
+  padding: 8px;
+}
+.connectedAccountContainerWithMetadata_e6abe8 {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.connectedAccount_e6abe8 {
+  align-items: center;
+  display: flex;
+  flex: 0 1;
+  gap: 8px;
+}
+.connectedAccountChildren_e6abe8 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-inline-start: 32px;
+  overflow: hidden;
+}
+.connectedAccountChildrenNoIcon_e6abe8 {
+  margin-inline-start: 0;
+}
+.connectedAccountPoweredBy_e6abe8 {
+  color: var(--text-muted);
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 8px;
+}
+.connectedAccountPoweredByText_e6abe8 {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 4px;
+  vertical-align: text-top;
+}
+.connectedAccountIcon_e6abe8 {
+  flex-shrink: 0;
+  height: 24px;
+  width: 24px;
+}
+.connectedAccountNameContainer_e6abe8 {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.connectedAccountNameContainerClickable_e6abe8 {
+  cursor: pointer;
+}
+.connectedAccountName_e6abe8,
+.connectedAccountNameTextContainer_e6abe8 {
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+.connectedAccountNameTextContainer_e6abe8 {
+  flex: 1;
+}
+.connectedAccountNameText_e6abe8 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+  white-space: nowrap;
+}
+.connectedAccountVerifiedIcon_e6abe8 {
+  margin-inline-start: 4px;
+}
+.connectedAccountHideIcon_e6abe8 {
+  color: var(--interactive-text-default);
+  height: 14px;
+  margin: 2px;
+  width: 14px;
+}
+.connectedAccountContainer_e6abe8 .connectedAccountOpenIcon_e6abe8 {
+  color: var(--interactive-text-default);
+  display: block;
+  height: 16px;
+  transform: rotate(45deg);
+  width: 16px;
+}
+.connectedAccountContainer_e6abe8 .connectedAccountOpenIcon_e6abe8:hover {
+  color: var(--interactive-text-hover);
+}
+.connectedAccountContainer_e6abe8 .connectedAccountOpenIcon_e6abe8:active {
+  color: var(--interactive-text-active);
+}
+
+/*# sourceMappingURL=839772.b452d69a638a91ed.css.map*/
