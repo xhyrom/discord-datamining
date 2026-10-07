@@ -100,8 +100,10 @@
 </p>
 <p>
   Depending on the specific law available to people in those regions, Discord’s
-  obligations and what happens after you submit a report will vary.<br /><br />For
-  people based in the US:
+  obligations and what happens after you submit a report will vary.
+</p>
+<p>
+  For people based in the US:
   <a
     href="https://support.discord.com/hc/en-us/articles/39404618931223-What-is-the-Take-It-Down-Act-TIDA"
     target="_blank"
@@ -109,7 +111,19 @@
     ><span class="wysiwyg-underline"
       >What is the Take It Down Act (TIDA)</span
     ></a
-  ><br />For people based in the UK:<a
+  >
+</p>
+<p>
+  For people based in Brazil:
+  <a
+    href="https://support.discord.com/hc/en-us/articles/43819652702871"
+    target="_blank"
+    rel="noopener noreferrer"
+    >What is Decree No. 12,976/2026</a
+  >
+</p>
+<p>
+  For people based in the UK:<a
     href="https://support.discord.com/hc/en-us/articles/43773430420119"
     target="_blank"
     rel="noopener noreferrer"

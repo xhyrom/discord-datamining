@@ -637,6 +637,40 @@
   >. 
 </p>
 <h2 id="h_01KZ49EKXDR078KV47FBG58PYP">Ninja Kiwi (Bloons TD 6) Game Shop</h2>
+<div class="mega-box">
+  <p>
+    Offer:<strong> From </strong>October 7th 11:00 AM PT<strong>
+      through </strong
+    >October 21st, 11:00 AM PT<strong>,</strong>
+    <strong
+      >Nitro subscribers can earn Discord Orbs on purchases of official Bloons
+      TD 6 in-game items in the Bloons TD 6 Game Shop on Discord. </strong
+    ><strong>Nitro monthly and Nitro yearly subscriptions are eligible.</strong>
+    <strong
+      >Orbs are earned on top of the normal purchase price. Non-Nitro users do
+      not earn Orbs during this time but can subscribe to Nitro to start
+      earning. </strong
+    ><strong
+      >Orbs are awarded only for self-purchases and are not earned on gifted
+      items purchased for other users. </strong
+    ><strong
+      >The amount of Orbs earned will vary based on the purchase amount.</strong
+    >
+  </p>
+  <p>
+    <strong
+      >For more information about Discord Orbs, including how to use and redeem
+      them, please see the </strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong
+        ><span class="wysiwyg-underline">Discord Orbs FAQ</span></strong
+      ></a
+    >
+  </p>
+</div>
 <p>
   <strong>Q: Which platforms can I redeem Bloons TD6 Shop items on?</strong>
 </p>
