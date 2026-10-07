@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Software Engineer, Engagement
+## Senior Full-Stack Software Engineer, Engagement
 
 **Location:** San Francisco Bay Area
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8856467002](https://discord.com/jobs/8856467002)
 
-**Updated At:** Thu, 01 Oct 2026 18:55:39 GMT
+**Updated At:** Wed, 07 Oct 2026 15:27:54 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
