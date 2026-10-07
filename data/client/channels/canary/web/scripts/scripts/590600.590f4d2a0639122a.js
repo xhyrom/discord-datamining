@@ -2,7 +2,7 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   ["590600"],
   {
-    858981(e, f, i) {
+    858981(e, f, a) {
       e.exports = {
         kL: "container_a5f01b",
         r: "soundContainer_a5f01b",
@@ -17,7 +17,7 @@
         jC: "textPlaceholder_a5f01b",
       };
     },
-    998812(e, f, i) {
+    998812(e, f, a) {
       e.exports = {
         ei: "echoList_effefc",
         Ob: "rowWrapper_effefc",
@@ -29,6 +29,12 @@
         SU: "verticalDivider_effefc",
         E$: "echoRowDisabled_effefc",
         Jx: "echoPillDisabled_effefc",
+        yA: "avatarStack_effefc",
+        R3: "avatarWrapper_effefc",
+        aR: "stackedAvatarWrapper_effefc",
+        my: "avatar_effefc",
+        Du: "authorAvatar_effefc avatar_effefc",
+        mf: "replyAvatar_effefc avatar_effefc",
       };
     },
   },

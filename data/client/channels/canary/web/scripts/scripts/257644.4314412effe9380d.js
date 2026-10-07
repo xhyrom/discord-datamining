@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["140874"],
+  ["257644"],
   {
     410075() {},
     524897(e, t) {
@@ -8243,7 +8243,7 @@
         (t.a = x),
         (t.animated = x);
     },
-    989385(e) {
+    314635(e) {
       e.exports = (() => {
         "use strict";
         var e,
@@ -14322,26 +14322,27 @@
                     g = void 0 === y ? 1 : y,
                     b = e.advanceAndDrain,
                     w = e.listenOnDocumentBody,
-                    _ = e.eventCapture;
+                    _ = e.eventCapture,
+                    S = e.wakeFromSleep;
                   if (!t || !a.length || !s || !l || !r || "u" < typeof window)
                     return null;
-                  var S = w ? t.ownerDocument.body : t,
-                    x = !0 === w,
-                    E = null != _ ? _ : x,
-                    k = null,
-                    C = !1,
-                    T = null,
-                    M = new Set(),
+                  var x = w ? t.ownerDocument.body : t,
+                    E = !0 === w,
+                    k = null != _ ? _ : E,
+                    C = null,
+                    T = !1,
+                    M = null,
                     P = new Set(),
-                    A = null,
+                    A = new Set(),
                     I = null,
-                    O = "function" == typeof requestAnimationFrame,
-                    D = function (e, t, r) {
+                    O = null,
+                    D = "function" == typeof requestAnimationFrame,
+                    R = function (e, t, r) {
                       var n = t - e.left,
                         i = r - e.top;
                       return n >= 0 && n <= e.width && i >= 0 && i <= e.height;
                     },
-                    R = function (e, t) {
+                    L = function (e, t) {
                       if (0 !== e.length) {
                         var n = l.computeAlignment(
                             u,
@@ -14367,13 +14368,13 @@
                           n.delete();
                       }
                     },
-                    L = function (e, t) {
+                    F = function (e, t) {
                       if (0 !== e.length)
                         for (var r = 0; r < a.length; r++)
                           for (var n = 0; n < e.length; n++) t(a[r], e[n]);
                     },
-                    F = function (e) {
-                      L(e, function (e, t) {
+                    N = function (e) {
+                      F(e, function (e, t) {
                         e.pointerMove(
                           t.transformedX,
                           t.transformedY,
@@ -14381,8 +14382,8 @@
                         );
                       });
                     },
-                    N = function (e) {
-                      L(e, function (e, t) {
+                    j = function (e) {
+                      F(e, function (e, t) {
                         h
                           ? e.pointerExit(
                               t.transformedX < 0
@@ -14400,36 +14401,36 @@
                             );
                       });
                     },
-                    j = function () {
-                      (T = null), M.clear(), P.clear();
+                    B = function () {
+                      (M = null), P.clear(), A.clear();
                     },
-                    B = function (e) {
+                    K = function (e) {
                       var r,
                         n = "mouseout" === e.type || "mouseleave" === e.type;
-                      if (!n || !x || null == e.relatedTarget) {
-                        if (C && e instanceof MouseEvent) {
-                          "mouseup" == e.type && (C = !1);
+                      if (!n || !E || null == e.relatedTarget) {
+                        if (T && e instanceof MouseEvent) {
+                          "mouseup" == e.type && (T = !1);
                           return;
                         }
-                        (C = d && "touchend" === e.type && "touchstart" === k),
-                          (k = e.type);
+                        (T = d && "touchend" === e.type && "touchstart" === C),
+                          (C = e.type);
                         var i = "mouseup" === e.type || "touchend" === e.type,
                           a = "mousedown" === e.type || "touchstart" === e.type,
                           s =
-                            ((!x || a || i || null === A) &&
-                              (A = t.getBoundingClientRect()),
-                            null === I &&
-                              O &&
-                              (I = requestAnimationFrame(function () {
-                                (I = null), (A = null);
+                            ((!E || a || i || null === I) &&
+                              (I = t.getBoundingClientRect()),
+                            null === O &&
+                              D &&
+                              (O = requestAnimationFrame(function () {
+                                (O = null), (I = null);
                               })),
-                            A);
-                        if (!v && "touchstart" === e.type && null === T) {
+                            I);
+                        if (!v && "touchstart" === e.type && null === M) {
                           var l =
                             null == (r = e.changedTouches) ? void 0 : r[0];
-                          l && (T = l.identifier);
+                          l && (M = l.identifier);
                         }
-                        var u = o(e, d, v, v ? null : T),
+                        var u = o(e, d, v, v ? null : M),
                           c = "touchend" === e.type,
                           f = [],
                           p = [],
@@ -14441,30 +14442,30 @@
                               r = e.clientY;
                             if (Number.isFinite(t) && Number.isFinite(r)) {
                               var o = e.identifier,
-                                l = M.has(o),
-                                u = !n && (!x || D(s, t, r));
+                                l = P.has(o),
+                                u = !n && (!E || R(s, t, r));
                               u ? f.push(e) : l && p.push(e);
-                              var d = i && (u || P.has(o));
+                              var d = i && (u || A.has(o));
                               d && h.push(e),
                                 (u || l || d) && m.push(e),
-                                a && u ? P.add(o) : i && P.delete(o),
-                                u && !c ? M.add(o) : M.delete(o);
+                                a && u ? A.add(o) : i && A.delete(o),
+                                u && !c ? P.add(o) : P.delete(o);
                             }
                           }),
                           !v &&
                             "touchend" === e.type &&
                             u.some(function (e) {
-                              return e.identifier === T;
+                              return e.identifier === M;
                             }) &&
-                            (T = null),
+                            (M = null),
                           ("mousemove" !== e.type &&
                             "mouseover" !== e.type &&
                             "mouseenter" !== e.type &&
                             "touchmove" !== e.type) ||
                             0 !== f.length ||
                             0 !== p.length)
-                        )
-                          switch ((R(m, s), N(p), e.type)) {
+                        ) {
+                          switch ((L(m, s), j(p), e.type)) {
                             case "mouseleave":
                             case "mouseout":
                               break;
@@ -14472,11 +14473,11 @@
                             case "touchmove":
                             case "mouseover":
                             case "mousemove":
-                              F(f);
+                              N(f);
                               break;
                             case "touchstart":
                             case "mousedown":
-                              L(f, function (e, t) {
+                              F(f, function (e, t) {
                                 e.pointerDown(
                                   t.transformedX,
                                   t.transformedY,
@@ -14486,7 +14487,7 @@
                                 b(0);
                               break;
                             case "touchend":
-                              L(h, function (e, t) {
+                              F(h, function (e, t) {
                                 e.pointerUp(
                                   t.transformedX,
                                   t.transformedY,
@@ -14501,7 +14502,7 @@
                                 b(0);
                               break;
                             case "mouseup":
-                              L(h, function (e, t) {
+                              F(h, function (e, t) {
                                 e.pointerUp(
                                   t.transformedX,
                                   t.transformedY,
@@ -14510,38 +14511,40 @@
                               }),
                                 b(0);
                           }
+                          S && m.length > 0 && S();
+                        }
                       }
                     }.bind(n);
                   return (
-                    S.addEventListener("mouseover", B, E),
-                    S.addEventListener("mouseout", B, E),
-                    S.addEventListener("mousemove", B, E),
-                    S.addEventListener("mousedown", B, E),
-                    S.addEventListener("mouseup", B, E),
-                    x &&
-                      (S.addEventListener("mouseenter", B, E),
-                      S.addEventListener("mouseleave", B, E)),
-                    t.addEventListener("touchmove", B, { passive: d }),
-                    t.addEventListener("touchstart", B, { passive: d }),
-                    t.addEventListener("touchend", B),
-                    t.addEventListener("touchcancel", j),
+                    x.addEventListener("mouseover", K, k),
+                    x.addEventListener("mouseout", K, k),
+                    x.addEventListener("mousemove", K, k),
+                    x.addEventListener("mousedown", K, k),
+                    x.addEventListener("mouseup", K, k),
+                    E &&
+                      (x.addEventListener("mouseenter", K, k),
+                      x.addEventListener("mouseleave", K, k)),
+                    t.addEventListener("touchmove", K, { passive: d }),
+                    t.addEventListener("touchstart", K, { passive: d }),
+                    t.addEventListener("touchend", K),
+                    t.addEventListener("touchcancel", B),
                     function () {
-                      S.removeEventListener("mouseover", B, E),
-                        S.removeEventListener("mouseout", B, E),
-                        S.removeEventListener("mousemove", B, E),
-                        S.removeEventListener("mousedown", B, E),
-                        S.removeEventListener("mouseup", B, E),
-                        x &&
-                          (S.removeEventListener("mouseenter", B, E),
-                          S.removeEventListener("mouseleave", B, E)),
-                        t.removeEventListener("touchmove", B),
-                        t.removeEventListener("touchstart", B),
-                        t.removeEventListener("touchend", B),
-                        t.removeEventListener("touchcancel", j),
-                        null !== I && (cancelAnimationFrame(I), (I = null)),
-                        (A = null),
-                        M.clear(),
-                        P.clear();
+                      x.removeEventListener("mouseover", K, k),
+                        x.removeEventListener("mouseout", K, k),
+                        x.removeEventListener("mousemove", K, k),
+                        x.removeEventListener("mousedown", K, k),
+                        x.removeEventListener("mouseup", K, k),
+                        E &&
+                          (x.removeEventListener("mouseenter", K, k),
+                          x.removeEventListener("mouseleave", K, k)),
+                        t.removeEventListener("touchmove", K),
+                        t.removeEventListener("touchstart", K),
+                        t.removeEventListener("touchend", K),
+                        t.removeEventListener("touchcancel", B),
+                        null !== O && (cancelAnimationFrame(O), (O = null)),
+                        (I = null),
+                        P.clear(),
+                        A.clear();
                     }
                   );
                 };
@@ -14564,51 +14567,54 @@
                       n = e.stateMachine,
                       o = e.hasFocusNodes,
                       a = e.getOverlayElement,
-                      s = this;
+                      s = e.onFocusMoved,
+                      l = this;
                     (this.focusSessionState = i.NotFocused),
                       (this.canvasHasFocus = !1),
                       (this.focusDomainReleased = !1),
                       (this.currentOverlayElement = null),
                       (this.onCanvasFocus = function (e) {
-                        s.syncOverlayListener(),
-                          (s.canvasHasFocus = !0),
-                          (s.focusDomainReleased = !1),
-                          !s.hasFocusNodes ||
-                            s.mainSm.focusState().hasFocus ||
-                            ((s.focusSessionState = i.EntryPending),
-                            s.isKeyboardDrivenFocus() &&
-                              (s.cameFromBeforeCanvas(e.relatedTarget)
-                                ? s.mainSm.focusNext()
-                                : s.mainSm.focusPrevious()) &&
-                              (s.focusSessionState = i.RiveFocused));
+                        l.syncOverlayListener(),
+                          (l.canvasHasFocus = !0),
+                          (l.focusDomainReleased = !1),
+                          !l.hasFocusNodes ||
+                            l.mainSm.focusState().hasFocus ||
+                            ((l.focusSessionState = i.EntryPending),
+                            l.isKeyboardDrivenFocus() &&
+                              (l.cameFromBeforeCanvas(e.relatedTarget)
+                                ? l.mainSm.focusNext()
+                                : l.mainSm.focusPrevious()) &&
+                              ((l.focusSessionState = i.RiveFocused),
+                              s && s()));
                       }),
                       (this.onCanvasBlur = function (e) {
-                        (s.focusSessionState = i.NotFocused),
-                          (s.canvasHasFocus = !1);
+                        (l.focusSessionState = i.NotFocused),
+                          (l.canvasHasFocus = !1);
                       }),
                       (this.onOverlayFocusIn = function (e) {
-                        s.isInOverlay(e.target) && (s.focusDomainReleased = !1);
+                        l.isInOverlay(e.target) && (l.focusDomainReleased = !1);
                       }),
                       (this.onFocusDomainHostFocusIn = function (e) {
-                        s.syncOverlayListener();
+                        l.syncOverlayListener();
                       }),
                       (this.onKeyDown = function (e) {
-                        s.syncOverlayListener(),
-                          s.focusDomainReleased ||
-                            (s.shouldRiveHandleKeyEvent(e) &&
+                        l.syncOverlayListener(),
+                          l.focusDomainReleased ||
+                            (l.shouldRiveHandleKeyEvent(e) &&
                               "Tab" === e.code &&
-                              s.hasFocusNodes &&
+                              l.hasFocusNodes &&
                               ((
                                 e.shiftKey
-                                  ? s.mainSm.focusPrevious()
-                                  : s.mainSm.focusNext()
+                                  ? l.mainSm.focusPrevious()
+                                  : l.mainSm.focusNext()
                               )
-                                ? ((s.focusSessionState = i.RiveFocused),
+                                ? (s && s(),
+                                  (l.focusSessionState = i.RiveFocused),
                                   e.preventDefault())
-                                : ((s.focusSessionState = i.NotFocused),
-                                  (s.focusDomainReleased = !0),
-                                  (s.canvasHasFocus = !1)),
-                              s.syncOverlayListener()));
+                                : ((l.focusSessionState = i.NotFocused),
+                                  (l.focusDomainReleased = !0),
+                                  (l.canvasHasFocus = !1)),
+                              l.syncOverlayListener()));
                       }),
                       (this.canvas = r),
                       (this.mainSm = n),
@@ -15458,7 +15464,7 @@
           (k[(k.Boolean = 59)] = "Boolean"),
           (C = (function () {
             function e(e, t) {
-              (this.type = e), (this.runtimeInput = t);
+              (this.type = e), (this.runtimeInput = t), (this.onWrite = null);
             }
             return (
               Object.defineProperty(e.prototype, "name", {
@@ -15473,13 +15479,14 @@
                   return this.runtimeInput.value;
                 },
                 set: function (e) {
-                  this.runtimeInput.value = e;
+                  (this.runtimeInput.value = e), this.onWrite && this.onWrite();
                 },
                 enumerable: !1,
                 configurable: !0,
               }),
               (e.prototype.fire = function () {
-                this.type === n.Trigger && this.runtimeInput.fire();
+                this.type === n.Trigger &&
+                  (this.runtimeInput.fire(), this.onWrite && this.onWrite());
               }),
               (e.prototype.delete = function () {
                 this.runtimeInput = null;
@@ -15529,6 +15536,7 @@
                 (this.playing = r),
                 (this.artboard = n),
                 (this.inputs = []),
+                (this.lastKeepGoing = !0),
                 (this.instance = new t.StateMachineInstance(e, n)),
                 this.initInputs(t);
             }
@@ -15564,7 +15572,10 @@
                 this.instance.advance(e);
               }),
               (e.prototype.advanceAndApply = function (e) {
-                this.instance.advanceAndApply(e);
+                return (
+                  (this.lastKeepGoing = this.instance.advanceAndApply(e)),
+                  this.lastKeepGoing
+                );
               }),
               (e.prototype.enableSemantics = function () {
                 this.instance.enableSemantics();
@@ -16572,6 +16583,14 @@
                 (this._overlayTransformDirty = !0),
                 (this._instanceId = "".concat(V++)),
                 (this.drawOptimization = r.DrawOnChanged),
+                (this._enableAutoSleep = !!e.enableAutoSleep),
+                (this._autoSleeping = !1),
+                (this._settledFrameCount = 0),
+                (this._autoSleepHeartbeatMs =
+                  null != e.autoSleepHeartbeatMs
+                    ? e.autoSleepHeartbeatMs
+                    : 2e3),
+                (this._autoSleepHeartbeatTimer = null),
                 (this.enablePerfMarks = !1),
                 (this.durations = []),
                 (this.frameTimes = []),
@@ -16832,7 +16851,12 @@
                       dispatchPointerExit: i,
                       enableMultiTouch: o,
                       layoutScaleFactor: this._layout.layoutScaleFactor,
-                      advanceAndDrain: this.advanceAndReportChanges.bind(this),
+                      advanceAndDrain: function (e) {
+                        t.advanceAndReportChanges(e), t.wakeFromAutoSleep();
+                      },
+                      wakeFromSleep: function () {
+                        t.wakeFromAutoSleep();
+                      },
                     })),
                     this.ensureKeyboardInteractions();
                 }
@@ -16868,6 +16892,9 @@
                                 : t.getSemanticOverlayContainer())
                             ? r
                             : null;
+                        },
+                        onFocusMoved: function () {
+                          e.wakeFromAutoSleep();
                         },
                       }));
                   }
@@ -17262,7 +17289,19 @@
                   null == (r = this._viewModelInstance) || r.handleCallbacks(),
                   this._globalViewModelInstances.forEach(function (e) {
                     e && e.handleCallbacks();
-                  });
+                  }),
+                  this._trackSettledFrame(n, l);
+              }),
+              (t.prototype._trackSettledFrame = function (e, t) {
+                if (this._enableAutoSleep) {
+                  var r =
+                    t.length > 0 &&
+                    0 === e.length &&
+                    t.every(function (e) {
+                      return !1 === e.lastKeepGoing;
+                    });
+                  this._settledFrameCount = r ? this._settledFrameCount + 1 : 0;
+                }
               }),
               (t.prototype.draw = function (e, t) {
                 this.frameRequestId = null;
@@ -17326,7 +17365,11 @@
                 )
                   this.frameTimes.shift(), this.durations.shift();
                 this.animator.isPlaying
-                  ? this.scheduleRendering()
+                  ? this._enableAutoSleep && this._settledFrameCount >= 2
+                    ? ((this._autoSleeping = !0),
+                      (this.lastRenderTime = 0),
+                      this._armAutoSleepHeartbeat())
+                    : this.scheduleRendering()
                   : this.animator.isPaused
                     ? (this.lastRenderTime = 0)
                     : this.animator.isStopped && (this.lastRenderTime = 0);
@@ -17389,6 +17432,9 @@
                       this._pageVisibilityHandler,
                     ),
                     (this._pageVisibilityHandler = null)),
+                  this._viewModelInstance &&
+                    this._viewModelInstance._owningRives &&
+                    this._viewModelInstance._owningRives.delete(this),
                   null == (n = this._viewModelInstance) || n.cleanup(),
                   (this._viewModelInstance = null),
                   this._globalViewModelInstances.forEach(function (e) {
@@ -17436,7 +17482,7 @@
               }),
               (t.prototype.setTextRunValue = function (e, t) {
                 var r = this.retrieveTextRun(e);
-                r && (r.text = t);
+                r && ((r.text = t), this.wakeFromAutoSleep());
               }),
               (t.prototype.play = function (e, t) {
                 var r = this;
@@ -17498,7 +17544,12 @@
                   s = null != (r = null == e ? void 0 : e.autoBind) && r;
                 this.cleanupInstances(),
                   this.initArtboard(n, i, o, a, s),
-                  this.taskQueue.process();
+                  this.taskQueue.process(),
+                  (this._settledFrameCount = 0),
+                  this._autoSleeping &&
+                    ((this._autoSleeping = !1),
+                    (this.lastRenderTime = 0),
+                    this.animator.isPlaying && this.scheduleRendering());
               }),
               (t.prototype.load = function (e) {
                 (this.file = null), this.stop(), this.init(e);
@@ -17604,10 +17655,20 @@
               }),
               (t.prototype.stateMachineInputs = function (e) {
                 if (this.loaded) {
-                  var t = this.animator.stateMachines.find(function (t) {
-                    return t.name === e;
-                  });
-                  return null == t ? void 0 : t.inputs;
+                  var t = this,
+                    r = this.animator.stateMachines.find(function (t) {
+                      return t.name === e;
+                    }),
+                    n = null == r ? void 0 : r.inputs;
+                  return (
+                    n &&
+                      n.forEach(function (e) {
+                        e.onWrite = function () {
+                          return t.wakeFromAutoSleep();
+                        };
+                      }),
+                    n
+                  );
                 }
               }),
               (t.prototype.retrieveInputAtPath = function (e, t) {
@@ -17635,7 +17696,7 @@
                 var i = this.retrieveInputAtPath(e, r);
                 i &&
                   (i.type === n.Boolean
-                    ? (i.asBool().value = t)
+                    ? ((i.asBool().value = t), this.wakeFromAutoSleep())
                     : console.warn(
                         "Input with name: '"
                           .concat(e, "', at path:'")
@@ -17646,7 +17707,7 @@
                 var i = this.retrieveInputAtPath(e, r);
                 i &&
                   (i.type === n.Number
-                    ? (i.asNumber().value = t)
+                    ? ((i.asNumber().value = t), this.wakeFromAutoSleep())
                     : console.warn(
                         "Input with name: '"
                           .concat(e, "', at path:'")
@@ -17657,7 +17718,7 @@
                 var r = this.retrieveInputAtPath(e, t);
                 r &&
                   (r.type === n.Trigger
-                    ? r.asTrigger().fire()
+                    ? (r.asTrigger().fire(), this.wakeFromAutoSleep())
                     : console.warn(
                         "Input with name: '"
                           .concat(e, "', at path:'")
@@ -17702,7 +17763,7 @@
               (t.prototype.setTextRunValueAtPath = function (e, t, r) {
                 var n = this.retrieveTextAtPath(e, r);
                 n
-                  ? (n.text = t)
+                  ? ((n.text = t), this.wakeFromAutoSleep())
                   : console.warn(
                       "Could not set text with name: '"
                         .concat(e, "', at path:'")
@@ -17825,6 +17886,9 @@
               }),
               (t.prototype.stopRendering = function () {
                 (this._explicitlyStoppedRendering = !0),
+                  (this._autoSleeping = !1),
+                  (this._settledFrameCount = 0),
+                  this._clearAutoSleepHeartbeat(),
                   this.loaded &&
                     this.frameRequestId &&
                     (this.runtime.cancelAnimationFrame
@@ -17833,7 +17897,48 @@
                     (this.frameRequestId = null));
               }),
               (t.prototype.startRendering = function () {
-                (this._explicitlyStoppedRendering = !1), this.drawFrame();
+                (this._explicitlyStoppedRendering = !1),
+                  (this._autoSleeping = !1),
+                  (this._settledFrameCount = 0),
+                  this._clearAutoSleepHeartbeat(),
+                  this.drawFrame();
+              }),
+              Object.defineProperty(t.prototype, "isAutoSleeping", {
+                get: function () {
+                  return !0 === this._autoSleeping;
+                },
+                enumerable: !1,
+                configurable: !0,
+              }),
+              (t.prototype.wakeFromAutoSleep = function () {
+                this._autoSleeping &&
+                  !this.destroyed &&
+                  !this._explicitlyStoppedRendering &&
+                  ((this._autoSleeping = !1),
+                  (this._settledFrameCount = 0),
+                  this._clearAutoSleepHeartbeat(),
+                  (this.lastRenderTime = 0),
+                  this.animator.isPlaying && this.scheduleRendering());
+              }),
+              (t.prototype._armAutoSleepHeartbeat = function () {
+                var e = this;
+                this._clearAutoSleepHeartbeat();
+                var t = this._autoSleepHeartbeatMs;
+                t > 0 &&
+                  isFinite(t) &&
+                  (this._autoSleepHeartbeatTimer = setTimeout(function () {
+                    (e._autoSleepHeartbeatTimer = null),
+                      e._autoSleeping &&
+                        !e.destroyed &&
+                        !e._explicitlyStoppedRendering &&
+                        e.animator.isPlaying &&
+                        ((e._autoSleeping = !1), e.scheduleRendering());
+                  }, t));
+              }),
+              (t.prototype._clearAutoSleepHeartbeat = function () {
+                null != this._autoSleepHeartbeatTimer &&
+                  (clearTimeout(this._autoSleepHeartbeatTimer),
+                  (this._autoSleepHeartbeatTimer = null));
               }),
               (t.prototype.scheduleRendering = function () {
                 this.loaded &&
@@ -17859,7 +17964,8 @@
                         ? this.runtime.cancelAnimationFrame(this.frameRequestId)
                         : cancelAnimationFrame(this.frameRequestId),
                       (this.frameRequestId = null)),
-                    (this.lastRenderTime = 0))
+                    (this.lastRenderTime = 0),
+                    this._clearAutoSleepHeartbeat())
                   : (null == (t = this.animator) ? void 0 : t.isPlaying) &&
                     !this._explicitlyStoppedRendering &&
                     this.scheduleRendering();
@@ -17995,8 +18101,13 @@
                   e &&
                   r &&
                   (e.internalIncrementReferenceCount(),
+                  this._viewModelInstance &&
+                    this._viewModelInstance._owningRives &&
+                    this._viewModelInstance._owningRives.delete(this),
                   null == (t = this._viewModelInstance) || t.cleanup(),
                   (this._viewModelInstance = e),
+                  e._owningRives || (e._owningRives = new Set()),
+                  e._owningRives.add(this),
                   this.animator.stateMachines.length > 0
                     ? this.animator.stateMachines.forEach(function (e) {
                         return e.instance.setViewModelInstance(r);
@@ -18713,7 +18824,7 @@
                   return this._viewModelInstanceValue.value;
                 },
                 set: function (e) {
-                  this._viewModelInstanceValue.value = e;
+                  (this._viewModelInstanceValue.value = e), this._notifyWrite();
                 },
                 enumerable: !1,
                 configurable: !0,
@@ -18768,6 +18879,32 @@
                   enumerable: !1,
                   configurable: !0,
                 }),
+                (e.prototype._notifyWrite = function () {
+                  for (
+                    var e = this._parentViewModel
+                        ? [this._parentViewModel]
+                        : [],
+                      t = [];
+                    e.length > 0;
+
+                  ) {
+                    var r = e.pop();
+                    if (
+                      null != r &&
+                      -1 === t.indexOf(r) &&
+                      (t.push(r),
+                      r._owningRives &&
+                        r._owningRives.forEach(function (e) {
+                          try {
+                            e.wakeFromAutoSleep();
+                          } catch (e) {}
+                        }),
+                      r._parents)
+                    )
+                      for (var n = 0; n < r._parents.length; n++)
+                        e.push(r._parents[n]);
+                  }
+                }),
                 e
               );
             })()),
@@ -18783,7 +18920,7 @@
                   return this._viewModelInstanceValue.value;
                 },
                 set: function (e) {
-                  this._viewModelInstanceValue.value = e;
+                  (this._viewModelInstanceValue.value = e), this._notifyWrite();
                 },
                 enumerable: !1,
                 configurable: !0,
@@ -18805,7 +18942,7 @@
                   return this._viewModelInstanceValue.value;
                 },
                 set: function (e) {
-                  this._viewModelInstanceValue.value = e;
+                  (this._viewModelInstanceValue.value = e), this._notifyWrite();
                 },
                 enumerable: !1,
                 configurable: !0,
@@ -18823,7 +18960,8 @@
             return (
               m(t, e),
               (t.prototype.trigger = function () {
-                return this._viewModelInstanceValue.trigger();
+                var e = this._viewModelInstanceValue.trigger();
+                return this._notifyWrite(), e;
               }),
               (t.prototype.internalHandleCallback = function (e) {
                 e();
@@ -18842,7 +18980,7 @@
                   return this._viewModelInstanceValue.value;
                 },
                 set: function (e) {
-                  this._viewModelInstanceValue.value = e;
+                  (this._viewModelInstanceValue.value = e), this._notifyWrite();
                 },
                 enumerable: !1,
                 configurable: !0,
@@ -18852,7 +18990,8 @@
                   return this._viewModelInstanceValue.valueIndex;
                 },
                 set: function (e) {
-                  this._viewModelInstanceValue.valueIndex = e;
+                  (this._viewModelInstanceValue.valueIndex = e),
+                    this._notifyWrite();
                 },
                 enumerable: !1,
                 configurable: !0,
@@ -18937,7 +19076,7 @@
                   return this._viewModelInstanceValue.value;
                 },
                 set: function (e) {
-                  this._viewModelInstanceValue.value = e;
+                  (this._viewModelInstanceValue.value = e), this._notifyWrite();
                 },
                 enumerable: !1,
                 configurable: !0,
@@ -18976,7 +19115,8 @@
                   var t;
                   this._viewModelInstanceValue.value(
                     null != (t = null == e ? void 0 : e.nativeImage) ? t : null,
-                  );
+                  ),
+                    this._notifyWrite();
                 },
                 enumerable: !1,
                 configurable: !0,
@@ -18998,7 +19138,8 @@
                   var t;
                   this._viewModelInstanceValue.value(
                     null != (t = null == e ? void 0 : e.nativeFont) ? t : null,
-                  );
+                  ),
+                    this._notifyWrite();
                 },
                 enumerable: !1,
                 configurable: !0,
@@ -19033,7 +19174,8 @@
                         null != (r = null == n ? void 0 : n.nativeViewModel)
                           ? r
                           : null,
-                      );
+                      ),
+                    this._notifyWrite();
                 },
                 enumerable: !1,
                 configurable: !0,
@@ -19150,7 +19292,7 @@
       Object.defineProperty(t, "__esModule", { value: !0 });
       var n,
         i = r(582128),
-        o = r(989385),
+        o = r(314635),
         a = i && "object" == typeof i && "default" in i ? i : { default: i };
       function s(e) {
         var t = e || l(),
@@ -58000,7 +58142,7 @@
           return (this.head = t), (this.tail = e), this;
         });
     },
-    565409(e, t, r) {
+    895975(e, t, r) {
       "use strict";
       e.exports = r.p + "bd93c5b4b4233174.wasm";
     },
@@ -71257,4 +71399,4 @@
     },
   },
 ]);
-//# sourceMappingURL=140874.e8b5a28d0147b813.js.map
+//# sourceMappingURL=257644.4314412effe9380d.js.map
