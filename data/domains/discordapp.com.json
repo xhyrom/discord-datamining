@@ -12,6 +12,7 @@
     "zendesk2",
     "i18n",
     "pax",
+    "cdn-b2",
     "zendesk4",
     "www",
     "url7195",
@@ -24,6 +25,7 @@
     "static",
     "url9624",
     "other-worker",
+    "cdn-b1",
     "zendesk3",
     "email.gh-mail",
     "printer",
@@ -33,5 +35,5 @@
     "cdn-ptb",
     "zendesk1"
   ],
-  "subdomain_count": 32
+  "subdomain_count": 34
 }
