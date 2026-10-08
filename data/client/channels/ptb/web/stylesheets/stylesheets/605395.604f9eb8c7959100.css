@@ -1,0 +1,62 @@
+.actionButton_f8fa06 {
+  align-items: center;
+  background-color: var(--background-base-lower);
+  border-radius: 50%;
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+.actionButton_f8fa06.highlight_f8fa06 {
+  background-color: var(--background-base-lowest);
+}
+.actionButton_f8fa06:first-child {
+  margin-inline-start: 0;
+}
+.actionButton_f8fa06:hover {
+  color: var(--interactive-text-hover);
+}
+.actionButton_f8fa06:active {
+  background-color: var(--interactive-background-active);
+  color: var(--interactive-text-active);
+}
+.actionButton_f8fa06.disabled_f8fa06 {
+  cursor: default;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.actionButton_f8fa06.actionAccept_f8fa06:hover {
+  color: var(--icon-feedback-positive);
+}
+.actionButton_f8fa06.actionDeny_f8fa06:hover {
+  color: var(--icon-feedback-critical);
+}
+.icon_f8fa06 {
+  height: 20px;
+  width: 20px;
+}
+.enable-forced-colors .actionButton_f8fa06 {
+  background-color: ButtonFace;
+  border: 1px solid ButtonFace;
+  color: ButtonText;
+  forced-color-adjust: none;
+}
+.enable-forced-colors .actionButton_f8fa06:hover {
+  border-color: ButtonText;
+  color: ButtonText;
+}
+.enable-forced-colors .actionButton_f8fa06:active {
+  background-color: HighlightText;
+  border-color: Highlight;
+  color: Highlight;
+}
+.enable-forced-colors .actionButton_f8fa06.disabled_f8fa06 {
+  background-color: Canvas;
+  border-color: GrayText;
+  color: GrayText;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=605395.604f9eb8c7959100.css.map*/
