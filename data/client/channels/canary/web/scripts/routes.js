@@ -45176,7 +45176,7 @@ ${a}`);
           n.e("859864").then(n.t.bind(n, 122123, 19));
         let e7 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eK.A().log(
-          `[BUILD INFO] Release Channel: ${e7}, Build Number: 633003, Version Hash: 5af356401412e724b9db41ab71907956e93ceeb1`,
+          `[BUILD INFO] Release Channel: ${e7}, Build Number: 633076, Version Hash: f284aad65d4b205920e4f184c3e903d3276d7eb2`,
         ),
           U.A.setTags({ appContext: V.QCW }),
           em.A.initBasic(),
@@ -47697,16 +47697,19 @@ ${a}`);
                 n.e("123727"),
                 n.e("6168"),
                 n.e("931510"),
-                n.e("720141"),
+                n.e("60933"),
+                n.e("318025"),
+                n.e("309862"),
                 n.e("875842"),
                 n.e("518954"),
                 n.e("201050"),
                 n.e("965576"),
                 n.e("206152"),
                 n.e("722440"),
+                n.e("361596"),
                 n.e("90474"),
                 n.e("496914"),
-                n.e("560250"),
+                n.e("598606"),
                 n.e("999045"),
               ]).then(n.bind(n, 298666)),
             webpackId: 298666,
@@ -48444,7 +48447,7 @@ ${a}`);
                 n.e("781949"),
                 n.e("356675"),
                 n.e("504098"),
-                n.e("283300"),
+                n.e("492383"),
                 n.e("978046"),
                 n.e("245691"),
                 n.e("98972"),
@@ -48629,7 +48632,7 @@ ${a}`);
                 n.e("725246"),
                 n.e("654658"),
                 n.e("912938"),
-                n.e("487318"),
+                n.e("847584"),
                 n.e("169987"),
                 n.e("504787"),
                 n.e("312665"),
@@ -72112,7 +72115,7 @@ ${a}`);
                     className: tc()(LP.Wz, LP.mr),
                     children: [
                       (0, v.jsx)(LM, { className: LP.Kk }),
-                      tC.intl.format(tC.t.uyrfYF, { buildNumber: "633003" }),
+                      tC.intl.format(tC.t.uyrfYF, { buildNumber: "633076" }),
                       (0, v.jsx)(r, {}),
                     ],
                   })
@@ -75629,7 +75632,7 @@ ${a}`);
                 n.e("931510"),
                 n.e("50384"),
                 n.e("865429"),
-                n.e("720141"),
+                n.e("60933"),
                 n.e("740826"),
                 n.e("695781"),
                 n.e("930206"),
@@ -75858,7 +75861,9 @@ ${a}`);
                 n.e("258759"),
                 n.e("114383"),
                 n.e("912597"),
-                n.e("146090"),
+                n.e("429513"),
+                n.e("318025"),
+                n.e("643493"),
                 n.e("348567"),
                 n.e("452075"),
                 n.e("900277"),
@@ -76144,7 +76149,7 @@ ${a}`);
                 n.e("781949"),
                 n.e("356675"),
                 n.e("504098"),
-                n.e("283300"),
+                n.e("492383"),
                 n.e("978046"),
                 n.e("245691"),
                 n.e("98972"),
@@ -76172,20 +76177,21 @@ ${a}`);
                 n.e("623547"),
                 n.e("141049"),
                 n.e("156751"),
+                n.e("361596"),
                 n.e("90474"),
                 n.e("464675"),
                 n.e("496914"),
                 n.e("81766"),
                 n.e("736410"),
                 n.e("935412"),
-                n.e("926503"),
-                n.e("560250"),
+                n.e("913604"),
+                n.e("598606"),
                 n.e("261064"),
                 n.e("815341"),
                 n.e("256769"),
                 n.e("526274"),
-              ]).then(n.bind(n, 938991)),
-            webpackId: 938991,
+              ]).then(n.bind(n, 438857)),
+            webpackId: 438857,
             name: "VibegrationsScreen",
             renderLoader: vf,
           }),
@@ -76711,7 +76717,7 @@ ${a}`);
                 n.e("620689"),
                 n.e("781949"),
                 n.e("356675"),
-                n.e("283300"),
+                n.e("492383"),
                 n.e("978046"),
                 n.e("98972"),
                 n.e("734546"),
@@ -77802,7 +77808,7 @@ ${a}`);
                 n.e("620689"),
                 n.e("781949"),
                 n.e("356675"),
-                n.e("283300"),
+                n.e("492383"),
                 n.e("978046"),
                 n.e("98972"),
                 n.e("734546"),
@@ -78043,6 +78049,7 @@ ${a}`);
                 n.e("236999"),
                 n.e("317731"),
                 n.e("842492"),
+                n.e("361596"),
                 n.e("736793"),
                 n.e("90474"),
                 n.e("241245"),
@@ -79385,7 +79392,7 @@ ${a}`);
                 n.e("620689"),
                 n.e("781949"),
                 n.e("356675"),
-                n.e("283300"),
+                n.e("492383"),
                 n.e("98972"),
                 n.e("734546"),
                 n.e("341701"),
@@ -79963,7 +79970,7 @@ ${a}`);
                 n.e("620689"),
                 n.e("781949"),
                 n.e("356675"),
-                n.e("283300"),
+                n.e("492383"),
                 n.e("978046"),
                 n.e("98972"),
                 n.e("604172"),
@@ -85774,7 +85781,7 @@ ${a}`);
                 n.e("781949"),
                 n.e("356675"),
                 n.e("504098"),
-                n.e("283300"),
+                n.e("492383"),
                 n.e("978046"),
                 n.e("245691"),
                 n.e("98972"),
@@ -86584,7 +86591,7 @@ ${a}`);
                 n.e("781949"),
                 n.e("356675"),
                 n.e("504098"),
-                n.e("283300"),
+                n.e("492383"),
                 n.e("978046"),
                 n.e("245691"),
                 n.e("98972"),
@@ -87197,7 +87204,7 @@ ${a}`);
                 n.e("781949"),
                 n.e("356675"),
                 n.e("504098"),
-                n.e("283300"),
+                n.e("492383"),
                 n.e("978046"),
                 n.e("245691"),
                 n.e("98972"),
@@ -94554,8 +94561,8 @@ ${a}`);
                       n.e("249629"),
                       n.e("780407"),
                       n.e("781949"),
-                      n.e("283300"),
-                    ]).then(n.bind(n, 674447));
+                      n.e("492383"),
+                    ]).then(n.bind(n, 355682));
                     return (n) =>
                       (0, v.jsx)(i, { ...n, channel: e, message: t });
                   }),
@@ -103379,7 +103386,7 @@ ${a}`);
               n.e("431714"),
               n.e("356675"),
               n.e("504098"),
-              n.e("283300"),
+              n.e("492383"),
               n.e("978046"),
               n.e("245691"),
               n.e("98972"),
@@ -103719,7 +103726,7 @@ ${a}`);
               n.e("911521"),
               n.e("654658"),
               n.e("912938"),
-              n.e("487318"),
+              n.e("847584"),
               n.e("155361"),
               n.e("233049"),
               n.e("169987"),
@@ -105969,7 +105976,7 @@ ${a}`);
                 n.e("620689"),
                 n.e("781949"),
                 n.e("356675"),
-                n.e("283300"),
+                n.e("492383"),
                 n.e("978046"),
                 n.e("98972"),
                 n.e("604172"),
@@ -106045,6 +106052,7 @@ ${a}`);
                 n.e("236999"),
                 n.e("317731"),
                 n.e("352566"),
+                n.e("361596"),
                 n.e("736793"),
                 n.e("90474"),
                 n.e("282910"),
@@ -150037,7 +150045,7 @@ ${a}`);
                 (e) => {
                   if (
                     null == e.body ||
-                    "5af356401412e724b9db41ab71907956e93ceeb1" === e.body.hash
+                    "f284aad65d4b205920e4f184c3e903d3276d7eb2" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -159355,10 +159363,10 @@ ${a}`);
                 t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("633003")),
+                  ((e = parseInt("633076")),
                   Number.isNaN(e) &&
                     (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 633003",
+                      "Trying to open a changelog for an invalid build number 633076",
                     ),
                     (e = 0)),
                   e),
@@ -181008,76 +181016,78 @@ ${a}`);
       696016(e, t, n) {
         "use strict";
         n.d(t, {
-          CN: () => $,
-          Cx: () => el,
-          DX: () => eO,
-          EC: () => eD,
-          Ew: () => eu,
+          A_: () => F,
+          CN: () => X,
+          Cx: () => ed,
+          DX: () => eL,
+          EC: () => eb,
+          Ew: () => eE,
           Fv: () => m,
-          G$: () => eS,
+          G$: () => eC,
           GU: () => G,
-          Gy: () => q,
-          HA: () => ev,
-          Hz: () => ey,
-          L4: () => eI,
+          Gy: () => J,
+          HA: () => eM,
+          Hz: () => ev,
+          L4: () => eT,
           LX: () => T,
-          Me: () => er,
+          Me: () => es,
           Mu: () => P,
           Ot: () => N,
           P4: () => S,
-          QK: () => eA,
-          QY: () => en,
-          Qw: () => eL,
-          RC: () => ee,
-          SC: () => z,
-          T7: () => ef,
-          UY: () => e_,
-          U_: () => X,
+          QK: () => ef,
+          QY: () => er,
+          Qw: () => eD,
+          RC: () => en,
+          SC: () => Z,
+          T7: () => ep,
+          UY: () => eA,
+          U_: () => q,
           V0: () => y,
-          VP: () => F,
+          VP: () => V,
           Vi: () => O,
-          Y2: () => K,
-          YK: () => eC,
-          YM: () => H,
-          _1: () => ei,
-          _9: () => eN,
-          _S: () => eo,
-          ad: () => ed,
-          cM: () => k,
-          dV: () => V,
-          gC: () => Z,
-          iJ: () => j,
-          k9: () => J,
+          Y2: () => z,
+          YK: () => eR,
+          YM: () => W,
+          _1: () => ea,
+          _9: () => eO,
+          _S: () => ec,
+          ad: () => eu,
+          cM: () => B,
+          dV: () => j,
+          gC: () => Q,
+          gy: () => k,
+          iJ: () => Y,
+          k9: () => et,
           kd: () => L,
-          ku: () => eg,
+          ku: () => eN,
           l_: () => D,
-          mO: () => eE,
-          mY: () => ea,
-          nQ: () => eP,
-          nS: () => eR,
+          mO: () => eh,
+          mY: () => el,
+          nQ: () => ew,
+          nS: () => ey,
           nm: () => M,
           nx: () => R,
-          p4: () => ec,
-          pZ: () => Q,
-          pk: () => eM,
-          rD: () => eT,
-          rb: () => eU,
-          rv: () => Y,
+          p4: () => e_,
+          pZ: () => ee,
+          pk: () => eU,
+          rD: () => eg,
+          rb: () => eG,
+          rv: () => $,
           s3: () => w,
-          sL: () => ep,
+          sL: () => em,
           sT: () => g,
           sc: () => v,
           sz: () => C,
-          tS: () => es,
+          tS: () => eo,
           td: () => x,
-          ut: () => B,
+          ut: () => H,
           vZ: () => U,
-          w6: () => em,
-          xy: () => eb,
-          yz: () => et,
-          z2: () => eh,
+          w6: () => eS,
+          xy: () => eP,
+          yz: () => ei,
+          z2: () => eI,
           zj: () => b,
-          zq: () => W,
+          zq: () => K,
         });
         var i,
           r,
@@ -181128,26 +181138,28 @@ ${a}`);
           w = 360,
           G = 100,
           x = 1e3,
-          k = (e) => `Clip - ${new Date(e).toLocaleString()}`,
-          F = 15,
-          B = 60 * p.A.Millis.SECOND,
-          V = 3e4,
-          H = 30,
-          j = 10;
+          k = "id",
+          F = "killIds",
+          B = (e) => `Clip - ${new Date(e).toLocaleString()}`,
+          V = 15,
+          H = 60 * p.A.Millis.SECOND,
+          j = 3e4,
+          W = 30,
+          Y = 10;
         p.A.Millis.DAY;
-        let W = 10,
-          Y = 100,
-          K = 75,
-          $ = 0x3c0000000,
-          z = ".autoclip-cache",
-          X = 0;
-        var Z =
+        let K = 10,
+          $ = 100,
+          z = 75,
+          X = 0x3c0000000,
+          Z = ".autoclip-cache",
+          q = 0;
+        var Q =
             (((s = {}).ALL = ":all"),
             (s.APPLICATION = ":application"),
             (s.VOICE = ":voice"),
             (s.SOUNDBOARD = ":soundboard"),
             s),
-          q =
+          J =
             (((l = {}).MANUAL = "manual"),
             (l.DISTRIBUTED = "distributed"),
             (l.SHOUTING = "shouting"),
@@ -181156,18 +181168,18 @@ ${a}`);
             (l.SPEAKING = "speaking"),
             (l.SOUNDBOARD = "soundboard"),
             l),
-          Q =
+          ee =
             (((o = {})[(o.LAUGHTER = 1)] = "LAUGHTER"),
             (o[(o.SHOUTING = 2)] = "SHOUTING"),
             (o[(o.GAME_EVENTS = 4)] = "GAME_EVENTS"),
             o),
-          J =
+          et =
             (((d = {}).UNKNOWN = "unknown"),
             (d.BELOW_MINIMUM = "below_minimum"),
             (d.MEETS_MINIMUM = "meets_minimum"),
             (d.MEETS_AUTO_ENABLE = "meets_auto_enable"),
             d),
-          ee =
+          en =
             (((c = {}).MAX_CONCURRENT_SAVES = "max_concurrent_saves"),
             (c.NO_ELIGIBLE_SOURCE = "no_eligible_source"),
             (c.MODULE_NOT_LOADED = "module_not_loaded"),
@@ -181175,12 +181187,12 @@ ${a}`);
             (c.BRIDGE_SHUTDOWN = "bridge_shutdown"),
             (c.RECORDING_NOT_READY = "recording_not_ready"),
             c),
-          et =
+          ei =
             (((u = {}).ORIGINAL = "original"),
             (u.PORTRAIT_9_16 = "9:16"),
             (u.LANDSCAPE_16_9 = "16:9"),
             u);
-        function en(e) {
+        function er(e) {
           switch (e) {
             case "9:16":
               return 9 / 16;
@@ -181190,66 +181202,66 @@ ${a}`);
               return null;
           }
         }
-        function ei(e) {
+        function ea(e) {
           if (e?.bounds != null) return e.bounds;
-          let t = en(e?.preset);
+          let t = er(e?.preset);
           return null != t ? { aspectRatio: t } : null;
         }
-        var er = (((_ = {}).TEXT = "text"), (_.IMAGE = "image"), _);
-        let ea = { text: "#D53FAE", image: "#3F7FD5" },
-          es = 5,
-          el = 1,
-          eo = { x: 0.5, y: 0.5 },
-          ed = 0,
-          ec = 15;
-        function eu(e) {
-          let t = (((Math.round(e / ec) * ec) % 360) + 360) % 360;
+        var es = (((_ = {}).TEXT = "text"), (_.IMAGE = "image"), _);
+        let el = { text: "#D53FAE", image: "#3F7FD5" },
+          eo = 5,
+          ed = 1,
+          ec = { x: 0.5, y: 0.5 },
+          eu = 0,
+          e_ = 15;
+        function eE(e) {
+          let t = (((Math.round(e / e_) * e_) % 360) + 360) % 360;
           return t > 180 ? t - 360 : t;
         }
-        var e_ =
+        var eA =
           (((E = {}).NONE = "none"),
           (E.SMALL = "small"),
           (E.MEDIUM = "medium"),
           (E.LARGE = "large"),
           E);
-        let eE = { none: 0, small: 1 / 16, medium: 1 / 8, large: 1 / 4 },
-          eA = {
+        let eh = { none: 0, small: 1 / 16, medium: 1 / 8, large: 1 / 4 },
+          ef = {
             fontSize: 0.06,
             color: "#FFFFFF",
             strokeWidth: "none",
             strokeColor: "#000000",
           },
-          eh = 0.015,
-          ef = 0.5,
-          eI = 2048,
-          ep = 0x2000000,
-          eT = 2097152,
-          em = "image/webp",
-          eg = 0.92,
-          eS = ["png", "jpg", "jpeg", "webp"],
-          eN = ["image/png", "image/jpeg", "image/webp"],
-          eC = 0.35,
-          eO = 0.02,
-          eR = 2;
-        function eL(e, t) {
-          return Math.max(eO, Math.min(eC, (0.5 * e) / t));
+          eI = 0.015,
+          ep = 0.5,
+          eT = 2048,
+          em = 0x2000000,
+          eg = 2097152,
+          eS = "image/webp",
+          eN = 0.92,
+          eC = ["png", "jpg", "jpeg", "webp"],
+          eO = ["image/png", "image/jpeg", "image/webp"],
+          eR = 0.35,
+          eL = 0.02,
+          ey = 2;
+        function eD(e, t) {
+          return Math.max(eL, Math.min(eR, (0.5 * e) / t));
         }
-        var ey =
+        var ev =
           (((A = {}).NONE = "none"),
           (A.SMALL = "small"),
           (A.MEDIUM = "medium"),
           (A.LARGE = "large"),
           A);
-        let eD = { none: 0, small: 0.02, medium: 0.05, large: 0.1 },
-          ev = 0.4,
-          eb = "none",
-          eM = "#000000";
-        var eP =
+        let eb = { none: 0, small: 0.02, medium: 0.05, large: 0.1 },
+          eM = 0.4,
+          eP = "none",
+          eU = "#000000";
+        var ew =
             (((h = {}).CLIP = "clip"),
             (h.SCREENSHOT = "screenshot"),
             (h.VOICE_CLIP = "voice_clip"),
             h),
-          eU =
+          eG =
             (((f = {}).UNCLASSIFIED = "unclassified"),
             (f.KILL = "kill"),
             (f.MULTIKILL = "multikill"),
@@ -182728,26 +182740,68 @@ ${a}`);
         n.d(t, { m: () => i });
         let i = "1402418696126992445";
       },
+      612638(e, t, n) {
+        "use strict";
+        n.d(t, { b: () => a });
+        var i = n(801344);
+        function r(e) {
+          let t = e.additionalData?.[i.nn];
+          return "number" == typeof t ? (0, i.VD)(t) : e.score;
+        }
+        function a(e) {
+          switch (e.eventName) {
+            case i.n_.ChampionKill:
+              return { ...e, score: 0.15, importance: 1 };
+            case i.n_.ChampionAssist:
+              return { ...e, score: 0.06, importance: 1 };
+            case i.n_.DoubleKill:
+            case i.n_.TripleKill:
+            case i.n_.QuadraKill:
+              return { ...e, score: 0.05, importance: 1 };
+            case i.n_.PentaKill:
+              return { ...e, score: 0.1, importance: 1 };
+            case i.n_.TurretKill:
+            case i.n_.InhibitorKill:
+              return { ...e, score: 0.05, importance: 0 };
+            case i.n_.DragonKill:
+              return { ...e, score: 0.1, importance: 1 };
+            case i.n_.DragonSteal:
+            case i.n_.BaronKill:
+              return { ...e, score: 0.2, importance: 1 };
+            case i.n_.BaronSteal:
+              return { ...e, score: 0.4, importance: 1 };
+            case i.n_.Victory:
+              return { ...e, score: 0.2, importance: 1 };
+            case i.n_.TeamFightWin:
+              return { ...e, score: r(e), importance: 1 };
+            case i.n_.TeamFight:
+              return { ...e, score: r(e), importance: 0 };
+            case i.n_.ChampionDeath:
+            case i.n_.LevelUp:
+            case i.n_.ItemPurchase:
+            case i.n_.Defeat:
+            case i.n_.GameStart:
+            case i.n_.GameEnd:
+            case i.n_.Respawn:
+              return { ...e, score: 0, importance: 0 };
+          }
+        }
+      },
       801344(e, t, n) {
         "use strict";
         n.d(t, {
-          Br: () => s,
-          QL: () => A,
-          VD: () => I,
-          VX: () => f,
-          j3: () => l,
-          kt: () => c,
-          nS: () => u,
-          n_: () => a,
-          nn: () => _,
-          pw: () => d,
-          ym: () => o,
-          zS: () => E,
-          zd: () => h,
+          Br: () => a,
+          QL: () => c,
+          VD: () => _,
+          VX: () => u,
+          nS: () => l,
+          n_: () => r,
+          nn: () => o,
+          pw: () => s,
+          zS: () => d,
         });
         var i,
-          r = n(696016),
-          a =
+          r =
             (((i = {}).GameStart = "lol_game_start"),
             (i.GameEnd = "lol_game_end"),
             (i.Respawn = "lol_respawn"),
@@ -182771,126 +182825,26 @@ ${a}`);
             (i.TeamFightWin = "lol_team_fight_win"),
             (i.TeamFight = "lol_team_fight"),
             i);
-        let s = {
+        let a = {
             2: "lol_double_kill",
             3: "lol_triple_kill",
             4: "lol_quadra_kill",
             5: "lol_penta_kill",
           },
-          l = {
-            lol_champion_kill: {
-              scoreBoost: 0.15,
-              eventType: r.rb.KILL,
-              triggerClipCandidate: !0,
-            },
-            lol_champion_assist: {
-              scoreBoost: 0.06,
-              eventType: r.rb.ASSIST,
-              triggerClipCandidate: !0,
-            },
-            lol_champion_death: {
-              scoreBoost: 0,
-              eventType: r.rb.DEATH,
-              triggerClipCandidate: !1,
-            },
-            lol_double_kill: {
-              scoreBoost: 0.05,
-              eventType: r.rb.MULTIKILL,
-              triggerClipCandidate: !0,
-            },
-            lol_triple_kill: {
-              scoreBoost: 0.05,
-              eventType: r.rb.MULTIKILL,
-              triggerClipCandidate: !0,
-            },
-            lol_quadra_kill: {
-              scoreBoost: 0.05,
-              eventType: r.rb.MULTIKILL,
-              triggerClipCandidate: !0,
-            },
-            lol_penta_kill: {
-              scoreBoost: 0.1,
-              eventType: r.rb.MULTIKILL,
-              triggerClipCandidate: !0,
-            },
-            lol_turret_kill: {
-              scoreBoost: 0.05,
-              eventType: r.rb.OBJECTIVE_KILL,
-              triggerClipCandidate: !1,
-            },
-            lol_inhibitor_kill: {
-              scoreBoost: 0.5,
-              eventType: r.rb.OBJECTIVE_KILL,
-              triggerClipCandidate: !1,
-            },
-            lol_dragon_kill: {
-              scoreBoost: 0.1,
-              eventType: r.rb.OBJECTIVE_KILL,
-              triggerClipCandidate: !0,
-            },
-            lol_dragon_steal: {
-              scoreBoost: 0.2,
-              eventType: r.rb.OBJECTIVE_KILL,
-              triggerClipCandidate: !0,
-            },
-            lol_baron_kill: {
-              scoreBoost: 0.2,
-              eventType: r.rb.OBJECTIVE_KILL,
-              triggerClipCandidate: !0,
-            },
-            lol_baron_steal: {
-              scoreBoost: 0.4,
-              eventType: r.rb.OBJECTIVE_KILL,
-              triggerClipCandidate: !0,
-            },
-            lol_team_fight_win: {
-              scoreBoost: 0,
-              eventType: r.rb.MULTIKILL,
-              triggerClipCandidate: !0,
-            },
-            lol_team_fight: {
-              scoreBoost: 0,
-              eventType: r.rb.UNCLASSIFIED,
-              triggerClipCandidate: !1,
-            },
-            lol_level_up: {
-              scoreBoost: 0,
-              eventType: r.rb.LEVEL_UP,
-              triggerClipCandidate: !1,
-            },
-            lol_item_purchase: {
-              scoreBoost: 0,
-              eventType: r.rb.ITEM,
-              triggerClipCandidate: !1,
-            },
-            lol_victory: {
-              scoreBoost: 0.2,
-              eventType: r.rb.VICTORY,
-              triggerClipCandidate: !0,
-            },
-            lol_defeat: {
-              scoreBoost: 0,
-              eventType: r.rb.DEFEAT,
-              triggerClipCandidate: !1,
-            },
-          },
-          o = 1 / 4,
-          d = 1 / 3,
-          c = "health";
-        function u(e) {
+          s = 1 / 3;
+        function l(e) {
           return 1 + (1 - Math.max(0, Math.min(1, e))) * 0.19999999999999996;
         }
-        let _ = "teamFightScore",
-          E = "teamFightStartMs",
-          A = "teamFightEndMs",
-          h = 0.25;
-        function f(e, t) {
+        let o = "teamFightScore",
+          d = "teamFightStartMs",
+          c = "teamFightEndMs";
+        function u(e, t) {
           let n = "BLUE" === t ? "RED" : "BLUE",
             i = e.participantsByTeam[t].size,
             r = e.participantsByTeam[n].size;
           return e.deathsByTeam[n] - e.deathsByTeam[t] + (r - i) * 0.5;
         }
-        function I(e) {
+        function _(e) {
           return Math.max(0, 0.075 * e);
         }
       },
@@ -183108,124 +183062,27 @@ ${a}`);
           },
         };
       },
-      295706(e, t, n) {
+      236059(e, t, n) {
         "use strict";
         n.d(t, {
-          tA: () => x,
-          Ly: () => k,
-          Q4: () => w,
-          pn: () => B,
-          Tv: () => F,
-          GC: () => G,
-          lq: () => V,
+          tA: () => U,
+          Ly: () => w,
+          Q4: () => M,
+          pn: () => x,
+          Tv: () => G,
+          GC: () => P,
+          lq: () => k,
         }),
           n(321073);
         var i = n(284009),
           r = n.n(i),
-          a = n(997649);
+          a = n(997649),
+          s = n(786661);
         n(775443);
-        var s = n(260549),
-          l = n(106983);
-        function o(e, t, n, i) {
-          let a = (n - t) / 1e3 + 1,
-            s = [];
-          for (let n = 0; n < a; n++) {
-            let a = t + 1e3 * n,
-              l = e.findLast((e) => e.timestamp_ms <= a);
-            r()(null != l, "bad timeline!"), s.push(i(l));
-          }
-          return s;
-        }
-        var d = n(171251);
+        var l = n(115171),
+          o = n(144705),
+          d = n(861343);
         class c {
-          gameAxisScoreThreshold = 0.35;
-          gameStateTimeline = [];
-          constructor(e) {
-            this.gameStateTimeline = (function (e) {
-              let t = { inGame: !0, inMatch: !0, bombPlanted: !1 },
-                n = [{ ...t, timestamp_ms: 0 }];
-              function i(e, i) {
-                let r = { ...t, ...e };
-                (r.inGame !== t.inGame ||
-                  r.inMatch !== t.inMatch ||
-                  r.bombPlanted !== t.bombPlanted) &&
-                  (Object.assign(t, r), n.push({ ...r, timestamp_ms: i }));
-              }
-              for (let n of e)
-                switch (n.eventName) {
-                  case l.C.PlayStateChange: {
-                    let e = n.additionalData?.playing === !0;
-                    i(
-                      { inGame: e, bombPlanted: e && t.bombPlanted },
-                      n.timestamp_ms,
-                    );
-                    break;
-                  }
-                  case l.C.InMatchChange: {
-                    let e = n.additionalData?.inMatch === !0;
-                    i(
-                      e
-                        ? { inMatch: e }
-                        : { inMatch: e, inGame: !1, bombPlanted: !1 },
-                      n.timestamp_ms,
-                    );
-                    break;
-                  }
-                  case l.C.BombPlant:
-                    i({ bombPlanted: !0 }, n.timestamp_ms);
-                    break;
-                  case l.C.BombDefused:
-                  case l.C.BombExploded:
-                  case l.C.RoundEnd:
-                    i({ bombPlanted: !1 }, n.timestamp_ms);
-                }
-              return n;
-            })(e);
-          }
-          calculateModifiers(e, t) {
-            let n = this.gameStateTimeline,
-              i = [],
-              r = (t - e) / 1e3 + 1;
-            for (let t = 0; t < r; t++) {
-              let r = e + 1e3 * t,
-                a = _(n, r),
-                s = 1;
-              a.inGame ? a.bombPlanted && (s *= 2) : (s /= 4),
-                i.push({ timestamp_ms: r, modifier: s });
-            }
-            return i;
-          }
-          getInGameState(e, t) {
-            return o(this.gameStateTimeline, e, t, (e) => e.inGame);
-          }
-          rescoreEvent(e) {
-            return (0, l.z)(e) ? (0, s.n)(e).score : void 0;
-          }
-          isInGame(e) {
-            return _(this.gameStateTimeline, e).inGame;
-          }
-          isInMatch(e) {
-            return _(this.gameStateTimeline, e).inMatch;
-          }
-          canAnchorReaction(e) {
-            let t = e.eventName;
-            return (
-              t === l.C.Kill ||
-              t === l.C.MultiKill ||
-              t === l.C.Death ||
-              t === l.C.BombDefused ||
-              t === l.C.BombExploded
-            );
-          }
-        }
-        let u = { applicationIds: d.l, create: (e) => new c(e) };
-        function _(e, t) {
-          let n = e.findLast((e) => e.timestamp_ms <= t);
-          return r()(null != n, "bad timeline!"), n;
-        }
-        var E = n(115171),
-          A = n(144705);
-        class h {
           gameAxisScoreThreshold = 0.35;
           gameStateTimeline = [];
           constructor(e) {
@@ -183239,13 +183096,13 @@ ${a}`);
               }
               for (let t of e)
                 switch (t.eventName) {
-                  case A.I.PlayStateChange:
+                  case o.I.PlayStateChange:
                     i(
                       { playing: t.additionalData?.playing === !0 },
                       t.timestamp_ms,
                     );
                     break;
-                  case A.I.InMatchChange: {
+                  case o.I.InMatchChange: {
                     let e = t.additionalData?.inMatch === !0;
                     i(
                       e ? { inMatch: e } : { inMatch: e, playing: !1 },
@@ -183262,50 +183119,52 @@ ${a}`);
               r = (t - e) / 1e3 + 1;
             for (let t = 0; t < r; t++) {
               let r = e + 1e3 * t,
-                a = f(n, r).playing ? 1 : 1 / 4;
+                a = u(n, r).playing ? 1 : 1 / 4;
               i.push({ timestamp_ms: r, modifier: a });
             }
             return i;
           }
           getInGameState(e, t) {
-            return o(this.gameStateTimeline, e, t, (e) => e.playing);
+            return (0, d.r)(this.gameStateTimeline, e, t, (e) => e.playing);
           }
           rescoreEvent(e) {
-            return (0, A.j)(e) ? (0, E.d)(e).score : void 0;
+            return (0, o.j)(e) ? (0, l.d)(e).score : void 0;
           }
           isInGame(e) {
-            return f(this.gameStateTimeline, e).playing;
+            return u(this.gameStateTimeline, e).playing;
           }
           isInMatch(e) {
-            return f(this.gameStateTimeline, e).inMatch;
+            return u(this.gameStateTimeline, e).inMatch;
           }
           canAnchorReaction(e) {
             let t = e.eventName;
             return (
-              t === A.I.Kill ||
-              t === A.I.MultiKill ||
-              t === A.I.Death ||
-              t === A.I.RoshanKill
+              t === o.I.Kill ||
+              t === o.I.MultiKill ||
+              t === o.I.Death ||
+              t === o.I.RoshanKill
             );
           }
         }
-        function f(e, t) {
+        function u(e, t) {
           let n = e.findLast((e) => e.timestamp_ms <= t);
           return r()(null != n, "bad timeline!"), n;
         }
-        var I = n(876474),
-          p = n(801344);
-        let T = new Set([
-          p.n_.ChampionKill,
-          p.n_.ChampionDeath,
-          p.n_.DoubleKill,
-          p.n_.TripleKill,
-          p.n_.QuadraKill,
-          p.n_.PentaKill,
-          p.n_.DragonSteal,
-          p.n_.BaronSteal,
+        var _ = n(612638),
+          E = n(801344);
+        let A = new Set(Object.values(E.n_));
+        var h = n(876474);
+        let f = new Set([
+          E.n_.ChampionKill,
+          E.n_.ChampionDeath,
+          E.n_.DoubleKill,
+          E.n_.TripleKill,
+          E.n_.QuadraKill,
+          E.n_.PentaKill,
+          E.n_.DragonSteal,
+          E.n_.BaronSteal,
         ]);
-        class m {
+        class I {
           gameEvents;
           gameAxisScoreThreshold = 0.17;
           gameStateTimeline = [];
@@ -183325,13 +183184,13 @@ ${a}`);
                   switch (
                     (function (e) {
                       switch (e) {
-                        case p.n_.GameStart:
+                        case E.n_.GameStart:
                           return "game_start";
-                        case p.n_.GameEnd:
+                        case E.n_.GameEnd:
                           return "game_end";
-                        case p.n_.ChampionDeath:
+                        case E.n_.ChampionDeath:
                           return "death";
-                        case p.n_.Respawn:
+                        case E.n_.Respawn:
                           return "respawn";
                         default:
                           return "gameplay";
@@ -183360,49 +183219,51 @@ ${a}`);
               r = (t - e) / 1e3 + 1;
             for (let t = 0; t < r; t++) {
               let r = e + 1e3 * t,
-                a = S(n, r),
+                a = T(n, r),
                 s = 1;
-              a.in_game ? a.is_dead && (s *= p.pw) : (s *= p.ym),
+              a.in_game ? a.is_dead && (s *= E.pw) : (s *= 0.25),
                 i.push({ timestamp_ms: r, modifier: s });
             }
             return i;
           }
           eventScoreMultiplier(e) {
-            if (e.eventName !== p.n_.ChampionKill) return 1;
-            let t = e.additionalData?.[p.kt];
-            return "number" != typeof t ? 1 : (0, p.nS)(t);
+            if (e.eventName !== E.n_.ChampionKill) return 1;
+            let t = e.additionalData?.health;
+            return "number" != typeof t ? 1 : (0, E.nS)(t);
           }
           getInGameState(e, t) {
-            return o(this.gameStateTimeline, e, t, (e) => e.in_game);
+            return (0, d.r)(this.gameStateTimeline, e, t, (e) => e.in_game);
           }
           rescoreEvent(e) {
-            return null != e.eventName ? p.j3[e.eventName]?.scoreBoost : void 0;
+            return null != e.eventName && A.has(e.eventName)
+              ? (0, _.b)(e).score
+              : void 0;
           }
           isInGame(e) {
-            return S(this.gameStateTimeline, e).in_game;
+            return T(this.gameStateTimeline, e).in_game;
           }
           canAnchorReaction(e) {
-            return null != e.eventName && T.has(e.eventName);
+            return null != e.eventName && f.has(e.eventName);
           }
         }
-        let g = { applicationIds: [I.m], create: (e) => new m(e) };
-        function S(e, t) {
+        let p = { applicationIds: [h.m], create: (e) => new I(e) };
+        function T(e, t) {
           let n = e.findLast((e) => e.timestamp_ms <= t);
           return r()(null != n, "bad timeline!"), n;
         }
-        var N = n(190443),
-          C = n(979563);
-        let O = 1 / 4,
-          R = new Set([
-            C.d.Goal,
-            C.d.Save,
-            C.d.EpicSave,
-            C.d.Demolition,
-            C.d.Demolished,
-            C.d.BicycleHit,
-            C.d.FlipReset,
+        var m = n(190443),
+          g = n(979563);
+        let S = 1 / 4,
+          N = new Set([
+            g.d.Goal,
+            g.d.Save,
+            g.d.EpicSave,
+            g.d.Demolition,
+            g.d.Demolished,
+            g.d.BicycleHit,
+            g.d.FlipReset,
           ]);
-        class L {
+        class C {
           gameAxisScoreThreshold = 0.25;
           gameStateTimeline = [];
           constructor(e) {
@@ -183416,15 +183277,15 @@ ${a}`);
                 (e, t) => e.timestamp_ms - t.timestamp_ms,
               ))
                 switch (t.eventName) {
-                  case C.d.MatchStart:
+                  case g.d.MatchStart:
                     i(!0, t.timestamp_ms);
                     break;
-                  case C.d.MatchEnd:
+                  case g.d.MatchEnd:
                     i(!1, t.timestamp_ms);
                     break;
                   default:
                     null != t.eventName &&
-                      null != C._[t.eventName] &&
+                      null != g._[t.eventName] &&
                       i(!0, t.timestamp_ms);
                 }
               return n;
@@ -183435,48 +183296,48 @@ ${a}`);
               i = (t - e) / 1e3 + 1;
             for (let t = 0; t < i; t++) {
               let i = e + 1e3 * t,
-                r = D(this.gameStateTimeline, i);
-              n.push({ timestamp_ms: i, modifier: r.inMatch ? 1 : O });
+                r = R(this.gameStateTimeline, i);
+              n.push({ timestamp_ms: i, modifier: r.inMatch ? 1 : S });
             }
             return n;
           }
           getInGameState(e, t) {
-            return o(this.gameStateTimeline, e, t, (e) => e.inMatch);
+            return (0, d.r)(this.gameStateTimeline, e, t, (e) => e.inMatch);
           }
           rescoreEvent(e) {
-            return null != e.eventName ? C._[e.eventName]?.scoreBoost : void 0;
+            return null != e.eventName ? g._[e.eventName]?.scoreBoost : void 0;
           }
           isInGame(e) {
-            return D(this.gameStateTimeline, e).inMatch;
+            return R(this.gameStateTimeline, e).inMatch;
           }
           canAnchorReaction(e) {
-            return null != e.eventName && R.has(e.eventName);
+            return null != e.eventName && N.has(e.eventName);
           }
         }
-        let y = { applicationIds: [N.e], create: (e) => new L(e) };
-        function D(e, t) {
+        let O = { applicationIds: [m.e], create: (e) => new C(e) };
+        function R(e, t) {
           let n = e.findLast((e) => e.timestamp_ms <= t);
           return r()(null != n, "bad timeline!"), n;
         }
-        var v = n(45926),
-          b = n(557329),
-          M = n(781183),
-          P = n(696016);
-        let U = [
-          u,
-          { applicationIds: ["356875988589740042"], create: (e) => new h(e) },
-          g,
-          y,
+        var L = n(45926),
+          y = n(557329),
+          D = n(781183),
+          v = n(696016);
+        let b = [
+          s.E,
+          { applicationIds: ["356875988589740042"], create: (e) => new c(e) },
+          p,
+          O,
         ];
-        function w(e, t) {
+        function M(e, t) {
           if (null == e) return;
-          let n = U.find((t) => t.applicationIds.includes(e));
+          let n = b.find((t) => t.applicationIds.includes(e));
           return n?.create(t);
         }
-        function G(e) {
-          return null != e && U.some((t) => t.applicationIds.includes(e));
+        function P(e) {
+          return null != e && b.some((t) => t.applicationIds.includes(e));
         }
-        function x(e) {
+        function U(e) {
           r()(null != e.decision, "clip missing .decision");
           let t = e.decision.timestamp - e.length;
           return null != e.editMetadata
@@ -183486,7 +183347,7 @@ ${a}`);
               }
             : { startMs: t, endMs: e.decision.timestamp };
         }
-        function k(e, t, n, i) {
+        function w(e, t, n, i) {
           let s,
             l =
               arguments.length > 4 && void 0 !== arguments[4]
@@ -183497,13 +183358,13 @@ ${a}`);
               preTrimmedSignalsByFilepath: d,
               debug: c = !1,
             } = l,
-            u = { ...(0, v.A)(), ...l.config },
+            u = { ...(0, L.A)(), ...l.config },
             _ = [],
             E = Object.keys(t.audioModelDataPerUser).length,
             A = [...t.gameEventData].sort(
               (e, t) => e.timestamp_ms - t.timestamp_ms,
             ),
-            h = w(i, A),
+            h = M(i, A),
             f = null != h ? A : [],
             I = Number.MAX_VALUE,
             p = -Number.MAX_VALUE;
@@ -183536,7 +183397,7 @@ ${a}`);
               if (null != a) {
                 let t = 1e3 * Math.floor(s / 1e3);
                 function o(i) {
-                  return F(
+                  return G(
                     i.map((e) => ({ ...e, timestamp_ms: e.timestamp_ms + t })),
                     e,
                     n,
@@ -183554,9 +183415,9 @@ ${a}`);
                 for (let i in t.audioModelDataPerUser) {
                   let r = t.audioModelDataPerUser[i];
                   l[i] = {
-                    laughterData: F(r.laughterData, e, n),
-                    shoutingData: F(r.shoutingData, e, n),
-                    rmsData: F(r.rmsData, e, n),
+                    laughterData: G(r.laughterData, e, n),
+                    shoutingData: G(r.shoutingData, e, n),
+                    rmsData: G(r.rmsData, e, n),
                   };
                 }
               let c = (function (e) {
@@ -183572,15 +183433,15 @@ ${a}`);
                   }
                   if (t === Number.MAX_VALUE || n === -Number.MAX_VALUE)
                     return e;
-                  r()(t % B == 0 && n % B == 0, "bad timestamps!");
-                  let i = (n - t) / B + 1,
+                  r()(t % x == 0 && n % x == 0, "bad timestamps!");
+                  let i = (n - t) / x + 1,
                     a = {};
                   for (let n in e) {
                     let r = e[n];
                     a[n] = {
-                      laughterData: V(r.laughterData, t, i),
-                      shoutingData: V(r.shoutingData, t, i),
-                      rmsData: V(r.rmsData, t, i),
+                      laughterData: k(r.laughterData, t, i),
+                      shoutingData: k(r.shoutingData, t, i),
+                      rmsData: k(r.rmsData, t, i),
                     };
                   }
                   return a;
@@ -183605,7 +183466,7 @@ ${a}`);
                 chunkCount: h?.laughterData.length ?? 0,
               };
             }
-            let { startMs: l, endMs: o } = x(i),
+            let { startMs: l, endMs: o } = U(i),
               {
                 userIds: A,
                 pLaughter: h,
@@ -183626,7 +183487,7 @@ ${a}`);
                   Math.min(C - 1, Math.round((e.timestamp_ms - N) / 1e3)),
                 ),
               ));
-            let y = (function (e, t) {
+            let b = (function (e, t) {
                 let n,
                   {
                     pLaughter: i,
@@ -183655,19 +183516,19 @@ ${a}`);
                       coContribPerChunk: [],
                     },
                   };
-                let d = (0, b.br)(i, t, t.laughterEventThreshold),
-                  c = (0, b.br)(r, t, t.shoutingEventThreshold),
-                  u = t.requireAttribution ? (0, b.bU)(a, t) : void 0,
-                  _ = null != u ? (0, b.ei)(d, u) : d,
-                  E = null != u ? (0, b.ei)(c, u) : c,
-                  A = (0, b.v$)(a, t),
-                  h = (0, b.Dk)(_, A),
-                  f = (0, b.Dk)(E, A),
+                let d = (0, y.br)(i, t, t.laughterEventThreshold),
+                  c = (0, y.br)(r, t, t.shoutingEventThreshold),
+                  u = t.requireAttribution ? (0, y.bU)(a, t) : void 0,
+                  _ = null != u ? (0, y.ei)(d, u) : d,
+                  E = null != u ? (0, y.ei)(c, u) : c,
+                  A = (0, y.v$)(a, t),
+                  h = (0, y.Dk)(_, A),
+                  f = (0, y.Dk)(E, A),
                   {
                     mainEventScore: I,
                     anchors: p,
                     events: T,
-                  } = (0, b.aT)(
+                  } = (0, y.aT)(
                     { laughter: _, shouting: E },
                     { laughter: h, shouting: f },
                     s,
@@ -183677,31 +183538,31 @@ ${a}`);
                     t.gameEventsAsReactionAnchors && null != l
                       ? l.map((e) => ({ tStart: e, tEnd: e }))
                       : [],
-                  g = (0, b.Mf)([...p, ...m], t.eventChainGapChunks),
-                  S = (0, b.tf)(g, h, f, s, t),
-                  { laughter: N, shouting: C } = (0, b.Lj)(d, c, a, t),
-                  { coOccurrenceScore: O, coContribPerChunk: R } = (0, b.k0)(
+                  g = (0, y.Mf)([...p, ...m], t.eventChainGapChunks),
+                  S = (0, y.tf)(g, h, f, s, t),
+                  { laughter: N, shouting: C } = (0, y.Lj)(d, c, a, t),
+                  { coOccurrenceScore: O, coContribPerChunk: R } = (0, y.k0)(
                     N,
                     C,
                     t,
                   ),
                   L = I,
-                  y = S;
+                  D = S;
                 if (t.normalizeComponents) {
                   (L = (I - t.sMainMedian) / t.sMainIqr),
-                    (y = (S - t.sReactionMedian) / t.sReactionIqr);
+                    (D = (S - t.sReactionMedian) / t.sReactionIqr);
                   let e = Math.max(1, o - 1);
                   n = (O - t.sCoMedianPerPair * e) / (t.sCoIqrPerPair * e);
                 } else n = Math.log1p(O);
-                let D = o <= 1,
-                  v = D ? t.soloReactionWeight : t.reactionWeight,
-                  M = D ? t.soloCoOccurrenceWeight : t.coOccurrenceWeight;
+                let v = o <= 1,
+                  b = v ? t.soloReactionWeight : t.reactionWeight,
+                  M = v ? t.soloCoOccurrenceWeight : t.coOccurrenceWeight;
                 return {
-                  audioScore: t.mainWeight * L + v * y + M * n,
+                  audioScore: t.mainWeight * L + b * D + M * n,
                   components: t.normalizeComponents
                     ? {
                         mainEventScore: L,
-                        reactionScore: y,
+                        reactionScore: D,
                         coOccurrenceScore: n,
                       }
                     : {
@@ -183731,7 +183592,7 @@ ${a}`);
                 },
                 u,
               ),
-              D = (function (e, t, n) {
+              M = (function (e, t, n) {
                 let i = 0;
                 for (let r of e) {
                   let e = t(r.timestamp_ms),
@@ -183740,53 +183601,53 @@ ${a}`);
                 }
                 return i;
               })(R, T, m),
-              v =
-                (0.5 + (0, M.ry)(y.audioScore)) *
-                  (1 + Math.tanh(D / u.gameSquashScale)) -
+              P =
+                (0.5 + (0, D.ry)(b.audioScore)) *
+                  (1 + Math.tanh(M / u.gameSquashScale)) -
                 0.5,
-              U = S(s, i.decision.timestamp),
-              w = U.gridStartMs,
-              G =
-                null != w
+              w = S(s, i.decision.timestamp),
+              F = w.gridStartMs,
+              B =
+                null != F
                   ? (function (e, t) {
                       let { pLaughter: n, pShouting: i, rms: r } = e;
                       if (0 === n.length) return [];
-                      let a = (0, b.br)(n, t, t.laughterEventThreshold),
-                        s = (0, b.br)(i, t, t.shoutingEventThreshold);
-                      return (0, b.e3)((0, b.Lj)(a, s, r, t), t);
+                      let a = (0, y.br)(n, t, t.laughterEventThreshold),
+                        s = (0, y.br)(i, t, t.shoutingEventThreshold);
+                      return (0, y.e3)((0, y.Lj)(a, s, r, t), t);
                     })(
                       {
-                        pLaughter: U.pLaughter,
-                        pShouting: U.pShouting,
-                        rms: U.rms,
+                        pLaughter: w.pLaughter,
+                        pShouting: w.pShouting,
+                        rms: w.rms,
                       },
                       u,
                     ).map((e) => ({
                       type:
                         "laughter" === e.emotion
-                          ? P.Gy.LAUGHTER
-                          : P.Gy.SHOUTING,
-                      userId: U.userIds[e.channel],
-                      startMs: w + 1e3 * e.tStart,
-                      endMs: w + (e.tEnd + 1) * 1e3,
-                      peakMs: w + 1e3 * e.peakT,
+                          ? v.Gy.LAUGHTER
+                          : v.Gy.SHOUTING,
+                      userId: w.userIds[e.channel],
+                      startMs: F + 1e3 * e.tStart,
+                      endMs: F + (e.tEnd + 1) * 1e3,
+                      peakMs: F + 1e3 * e.peakT,
                       peakConfidence: e.peakV,
                     }))
                   : [],
-              k = {
+              V = {
                 clip: i,
-                score: v,
-                audioScore: y.audioScore,
-                gameEventsScore: D,
+                score: P,
+                audioScore: b.audioScore,
+                gameEventsScore: M,
                 hasAudio: h.length > 0,
                 hasGameEvents: R.length > 0,
-                audioEvents: G,
+                audioEvents: B,
               };
             if (c) {
-              k.components = { ...y.components, gameEventsScore: D };
+              V.components = { ...b.components, gameEventsScore: M };
               let e = null != N ? (N - l) / 1e3 : 0;
-              k.debug = {
-                ...y.debug,
+              V.debug = {
+                ...b.debug,
                 userIds: A,
                 tsSec: Array.from({ length: C }, (t, n) => e + n),
                 pLaughter: h,
@@ -183794,7 +183655,7 @@ ${a}`);
                 rms: p,
               };
             }
-            _.push(k);
+            _.push(V);
           }
           _.sort((e, t) => t.score - e.score);
           let N = (function (e, t, n, i) {
@@ -183834,9 +183695,9 @@ ${a}`);
                   !d.has(t) &&
                   e.eligible(t) &&
                   !(function (e) {
-                    let { startMs: t, endMs: n } = x(e.clip);
+                    let { startMs: t, endMs: n } = U(e.clip);
                     for (let e of o) {
-                      let { startMs: i, endMs: r } = x(e.clip);
+                      let { startMs: i, endMs: r } = U(e.clip);
                       if (Math.min(n, r) - Math.max(t, i) >= 5e3) return !0;
                     }
                     return !1;
@@ -183862,21 +183723,21 @@ ${a}`);
           })(_, u, o, h?.gameAxisScoreThreshold);
           return { allClipsRanked: _, selected: N };
         }
-        function F(e, t, n) {
+        function G(e, t, n) {
           return e.filter((e) => e.timestamp_ms >= t && e.timestamp_ms <= n);
         }
-        let B = 1e3;
-        function V(e, t, n) {
+        let x = 1e3;
+        function k(e, t, n) {
           let i = [],
             a = 0;
           for (let s = 0; s < n; s++) {
-            let n = t + B * s,
+            let n = t + x * s,
               l = e[a];
             null != l && l.timestamp_ms === n
               ? (i.push({ ...l }), a++)
               : (null != l &&
                   r()(
-                    l.timestamp_ms % B == 0,
+                    l.timestamp_ms % x == 0,
                     `bad timestamp! ${l.timestamp_ms}`,
                   ),
                 i.push({ value: 0, timestamp_ms: n }));
@@ -184451,7 +184312,7 @@ ${a}`);
             return null;
           }
         }
-        var V = n(295706),
+        var V = n(236059),
           H = n(31048),
           j = n(997649),
           W = n(649223);
@@ -185507,7 +185368,7 @@ ${a}`);
         }
         var f = n(341923),
           I = n(572164),
-          p = n(295706),
+          p = n(236059),
           T = n(614584),
           m = n(31048),
           g = n(997649),
@@ -185552,7 +185413,7 @@ ${a}`);
               candidate_clips_promoted: e.candidateClipsPromoted,
             }));
         }
-        var v = n(313465),
+        var v = n(214859),
           b = n(799),
           M = n(696016);
         function P(e, t) {
@@ -186486,9 +186347,9 @@ ${a}`);
           s = n(779559),
           l = n(915725),
           o = n(439818),
-          d = n(295706),
+          d = n(236059),
           c = n(614584),
-          u = n(313465),
+          u = n(214859),
           _ = n(598213),
           E = n(799),
           A = n(160330),
@@ -186772,16 +186633,17 @@ ${a}`);
           }
         }
       },
-      313465(e, t, n) {
+      214859(e, t, n) {
         "use strict";
-        n.d(t, { V1: () => M, HB: () => b }), n(321073);
+        n.d(t, { V1: () => k, HB: () => x }), n(321073);
         var i = n(106983),
-          r = n(295706),
-          a = n(45926),
-          s = n(557329);
-        let l = ["laughter", "shouting"],
-          o = { laughter: "laughterData", shouting: "shoutingData" };
-        function d(e, t, n) {
+          r = n(786661),
+          a = n(236059),
+          s = n(45926),
+          l = n(557329);
+        let o = ["laughter", "shouting"],
+          d = { laughter: "laughterData", shouting: "shoutingData" };
+        function c(e, t, n) {
           let i = 0,
             r = e.length - 1,
             a = -1;
@@ -186799,21 +186661,21 @@ ${a}`);
           n(949626),
           n(767709),
           n(65162);
-        var c = n(260549);
-        function u(e) {
-          if (e.eventName !== i.C.MultiKill) return null;
-          let t = e.additionalData?.killIds;
+        var u = n(260549),
+          _ = n(696016);
+        function E(e) {
+          let t = e.additionalData?.[_.A_];
           return Array.isArray(t) &&
             0 !== t.length &&
             t.every((e) => "string" == typeof e)
             ? t
             : null;
         }
-        function _(e) {
+        function A(e) {
           let t = new Map(),
             n = [];
           for (let i of e) {
-            let e = u(i);
+            let e = E(i);
             if (null == e) {
               n.push(i);
               continue;
@@ -186824,24 +186686,22 @@ ${a}`);
           }
           return [...n, ...Array.from(t.values(), (e) => e.event)];
         }
-        function E(e) {
+        function h(e) {
           let t = new Map();
           for (let n of e) {
-            if (n.eventName !== i.C.Kill) continue;
-            let e = n.additionalData?.id;
+            let e = n.additionalData?.[_.gy];
             "string" != typeof e || t.has(e) || t.set(e, n.timestamp_ms);
           }
           return t;
         }
-        function A(e, t) {
-          let n = u(e);
+        function f(e, t) {
+          let n = E(e);
           if (null == n) return null;
           let i = t.get(n[0]);
           return null == i || i > e.timestamp_ms ? null : i;
         }
-        var h = n(598213),
-          f = n(696016);
-        let I = new Map([
+        var I = n(598213);
+        let p = new Map([
             [i.C.Kill, { beforeMs: 3e3, afterMs: 2e3 }],
             [i.C.Death, { beforeMs: 3e3, afterMs: 2e3 }],
             [i.C.MultiKill, { beforeMs: 3e3, afterMs: 2e3 }],
@@ -186849,18 +186709,18 @@ ${a}`);
             [i.C.BombDefused, { beforeMs: 3e3, afterMs: 5e3 }],
             [i.C.BombExploded, { beforeMs: 3e3, afterMs: 5e3 }],
           ]),
-          p = { beforeMs: 3e3, afterMs: 2e3 },
-          T = { beforeMs: 2e3, afterMs: 4e3 },
-          m = 2 * c.U;
-        function g(e, t) {
+          T = { beforeMs: 3e3, afterMs: 2e3 },
+          m = { beforeMs: 2e3, afterMs: 4e3 },
+          g = 2 * u.U;
+        function S(e, t) {
           if (e.eventName !== t) return null;
           let n = e.additionalData?.round;
           return "number" == typeof n ? n : null;
         }
-        function S(e) {
+        function N(e) {
           return 1e3 * Math.floor(e / 1e3);
         }
-        function N(e, t, n) {
+        function C(e, t, n) {
           let i = 0,
             r = e.length;
           for (; i < r; ) {
@@ -186870,19 +186730,19 @@ ${a}`);
           }
           return i;
         }
-        var C = n(435558);
-        function O(e) {
+        var O = n(435558);
+        function R(e) {
           return 1e3 * Math.floor(e / 1e3);
         }
-        function R(e) {
-          let t = (0, h.lQ)(e.clip);
+        function L(e) {
+          let t = (0, I.lQ)(e.clip);
           return { startMs: t + e.videoStartMs, endMs: t + e.videoEndMs };
         }
-        function L(e) {
-          let { startMs: t, endMs: n } = R(e);
+        function y(e) {
+          let { startMs: t, endMs: n } = L(e);
           return { srcStartMs: t, srcEndMs: n, label: e.label };
         }
-        function y(e, t) {
+        function D(e, t) {
           let n = 0,
             i = !0;
           for (let r of e) {
@@ -186892,688 +186752,745 @@ ${a}`);
           }
           return n;
         }
-        let D = new Map([
-            [
-              "highlight_reels",
-              {
+        var v = n(876474),
+          b = n(801344);
+        let M = {
+            "audio:laughter": { beforeMs: 3e3, afterMs: 2e3 },
+            "audio:shouting": { beforeMs: 3e3, afterMs: 2e3 },
+            [`game:${i.C.Kill}`]: { beforeMs: 1250, afterMs: 1250 },
+            [`game:${i.C.MultiKill}`]: { beforeMs: 1250, afterMs: 1250 },
+            [`game:${i.C.Death}`]: { beforeMs: 1250, afterMs: 1250 },
+          },
+          P = { [`game:${i.C.Kill}`]: { beforeMs: 2e3, afterMs: 1e3 } },
+          U = {
+            [`game:${b.n_.ChampionKill}`]: { beforeMs: 6e3, afterMs: 2e3 },
+            [`game:${b.n_.DoubleKill}`]: { beforeMs: 6e3, afterMs: 2e3 },
+            [`game:${b.n_.TripleKill}`]: { beforeMs: 6e3, afterMs: 2e3 },
+            [`game:${b.n_.QuadraKill}`]: { beforeMs: 6e3, afterMs: 2e3 },
+            [`game:${b.n_.PentaKill}`]: { beforeMs: 6e3, afterMs: 2e3 },
+            [`game:${b.n_.TeamFightWin}`]: { beforeMs: 3e3, afterMs: 0 },
+            [`game:${b.n_.DragonSteal}`]: { beforeMs: 5e3, afterMs: 1e3 },
+            [`game:${b.n_.BaronSteal}`]: { beforeMs: 5e3, afterMs: 1e3 },
+          },
+          w = {
+            [`game:${b.n_.ChampionKill}`]: { beforeMs: 6e3, afterMs: 2e3 },
+            [`game:${b.n_.DoubleKill}`]: { beforeMs: 6e3, afterMs: 2e3 },
+            [`game:${b.n_.TripleKill}`]: { beforeMs: 6e3, afterMs: 2e3 },
+            [`game:${b.n_.QuadraKill}`]: { beforeMs: 6e3, afterMs: 2e3 },
+            [`game:${b.n_.PentaKill}`]: { beforeMs: 6e3, afterMs: 2e3 },
+          },
+          G = [
+            {
+              type: "cs2_round_summary",
+              applicationIds: r.E.applicationIds,
+              kind: "custom",
+              build: function (e, t, n) {
+                let r = { ...I.yC, audioTrackLabel: "0:all", blendMs: 300 },
+                  s = (function (e) {
+                    let t,
+                      n,
+                      r,
+                      s = [...e.gameEventData].sort(
+                        (e, t) => e.timestamp_ms - t.timestamp_ms,
+                      ),
+                      l = (function (e) {
+                        let t = [],
+                          n = new Map(),
+                          r = null;
+                        for (let a of e) {
+                          if (
+                            a.eventName === i.C.InMatchChange &&
+                            a.additionalData?.inMatch !== !0
+                          ) {
+                            n.clear(), (r = null);
+                            continue;
+                          }
+                          let e = S(a, i.C.RoundStart);
+                          if (null != e) {
+                            null != r && e <= r && n.clear(),
+                              n.set(e, a.timestamp_ms),
+                              (r = e);
+                            continue;
+                          }
+                          let s = S(a, i.C.RoundEnd);
+                          if (null == s) continue;
+                          let l = n.get(s);
+                          null != l &&
+                            (n.delete(s),
+                            a.timestamp_ms <= l ||
+                              t.push({
+                                number: s,
+                                startMs: l,
+                                endMs: a.timestamp_ms,
+                              }));
+                        }
+                        return t.sort((e, t) => e.startMs - t.startMs);
+                      })(s);
+                    if (0 === l.length)
+                      return (
+                        _.nx.info(
+                          `automontage: no valid CS2 rounds reconstructed from ${s.length} game events - skipping round summary`,
+                        ),
+                        null
+                      );
+                    let o = (0, a.Q4)(e.gameId, s),
+                      d =
+                        ((t = (function (e, t) {
+                          if (e?.calculateModifiers == null || 0 === t.length)
+                            return () => 1;
+                          let n = N(t[0].timestamp_ms),
+                            i = N(t[t.length - 1].timestamp_ms),
+                            r = new Map(
+                              e
+                                .calculateModifiers(n, i)
+                                .map((e) => [e.timestamp_ms, e.modifier]),
+                            );
+                          return (e) => r.get(N(e)) ?? 1;
+                        })(o, s)),
+                        (n = new Float64Array(s.length + 1)),
+                        (r = 0),
+                        s.forEach((e, a) => {
+                          let s = e.score ?? 0;
+                          o?.rescoreEvent != null &&
+                            (s =
+                              e.eventName === i.C.Death
+                                ? -0.1
+                                : (o.rescoreEvent(e) ?? s));
+                          let l = s * t(e.timestamp_ms);
+                          Number.isFinite(l) || (r++, (l = 0)),
+                            (n[a + 1] = n[a] + l);
+                        }),
+                        r > 0 &&
+                          _.nx.warn(
+                            `automontage: ignored ${r} non-finite event score(s) while ranking rounds`,
+                          ),
+                        l
+                          .map((e) => {
+                            let t = C(s, e.startMs, !1),
+                              i = C(s, e.endMs, !1);
+                            return { round: e, score: n[i] - n[t] };
+                          })
+                          .sort((e, t) => t.score - e.score)),
+                      c = d[0];
+                    if (c.score <= g)
+                      return (
+                        _.nx.info(
+                          `automontage: best CS2 round ${c.round.number} scored ${c.score.toFixed(3)}, not above the ${g} minimum - skipping round summary`,
+                        ),
+                        null
+                      );
+                    let u = (function (e, t) {
+                        let n = e.startMs + 23e3,
+                          r = [
+                            (0, I.Wp)({ startMs: n, endMs: n }, T, {
+                              label: `r${e.number} context`,
+                            }),
+                          ],
+                          a = C(t, n, !1),
+                          s = C(t, e.endMs, !0),
+                          l = t.slice(a, s),
+                          o = h(l),
+                          d = new Set(
+                            A(l.filter((e) => e.eventName === i.C.MultiKill)),
+                          );
+                        for (let t of l) {
+                          let n = t.eventName;
+                          if (null == n) continue;
+                          let a = p.get(n);
+                          if (null == a) continue;
+                          let s = `r${e.number} ${n}`;
+                          if (n === i.C.MultiKill) {
+                            if (!d.has(t)) continue;
+                            let e = f(t, o) ?? t.timestamp_ms;
+                            r.push(
+                              (0, I.Wp)(
+                                { startMs: e, endMs: t.timestamp_ms },
+                                a,
+                                { label: s },
+                              ),
+                            );
+                          } else
+                            r.push(
+                              (0, I.Wp)(
+                                {
+                                  startMs: t.timestamp_ms,
+                                  endMs: t.timestamp_ms,
+                                },
+                                a,
+                                { label: s },
+                              ),
+                            );
+                        }
+                        return (
+                          r.push(
+                            (0, I.Wp)({ startMs: e.endMs, endMs: e.endMs }, m, {
+                              label: `r${e.number} round end`,
+                            }),
+                          ),
+                          r.sort((e, t) => e.srcStartMs - t.srcStartMs),
+                          r
+                        );
+                      })(c.round, s),
+                      E = (0, I.X0)(u),
+                      { resolved: O, skipped: R } = (0, I.z2)(
+                        E,
+                        e.clipCandidates,
+                      );
+                    return 0 === O.length
+                      ? (_.nx.info(
+                          `automontage: no candidate clip covers any of the ${E.length} sections of best round ${c.round.number} (candidates=${e.clipCandidates.length}) - skipping round summary`,
+                        ),
+                        null)
+                      : {
+                          durationMs: (0, I.s_)(O, e.config.blendMs),
+                          resolved: O,
+                          skipped: R,
+                          bestRound: c,
+                          rankedRounds: d,
+                        };
+                  })({
+                    gameEventData: t.decisionSignals.gameEventData,
+                    clipCandidates: n,
+                    gameId: t.gameId,
+                    config: r,
+                  });
+                return null == s
+                  ? null
+                  : {
+                      type: e,
+                      config: r,
+                      durationMs: s.durationMs,
+                      resolved: s.resolved,
+                      skipped: s.skipped,
+                    };
+              },
+            },
+            {
+              type: "highlight_reels",
+              applicationIds: null,
+              kind: "preset",
+              settings: {
                 includeOtherUsers: !0,
                 startOnSilence: !0,
                 endOnSilence: !0,
                 requireVoiceGamePair: !0,
                 blendMs: 300,
+                minDurationMs: 25e3,
+                maxDurationMs: 9e4,
                 laughterThreshold: 0.75,
                 shoutingThreshold: 0.5,
-                events: {
-                  "audio:laughter": { beforeMs: 3e3, afterMs: 2e3 },
-                  "audio:shouting": { beforeMs: 3e3, afterMs: 2e3 },
-                  [`game:${i.C.Kill}`]: { beforeMs: 1250, afterMs: 1250 },
-                  [`game:${i.C.MultiKill}`]: { beforeMs: 1250, afterMs: 1250 },
-                  [`game:${i.C.Death}`]: { beforeMs: 1250, afterMs: 1250 },
-                },
+                events: M,
               },
-            ],
-            [
-              "kill_compilation",
-              {
+            },
+            {
+              type: "kill_compilation",
+              applicationIds: r.E.applicationIds,
+              kind: "preset",
+              settings: {
                 includeOtherUsers: !1,
                 startOnSilence: !1,
                 endOnSilence: !1,
                 requireVoiceGamePair: !1,
                 blendMs: 300,
-                events: {
-                  [`game:${i.C.Kill}`]: { beforeMs: 2e3, afterMs: 1e3 },
-                },
+                minDurationMs: 25e3,
+                maxDurationMs: 9e4,
+                events: P,
               },
-            ],
-          ]),
-          v = ["cs2_round_summary", "highlight_reels", "kill_compilation"];
-        function b(e) {
-          for (let t of v) {
-            let n = (function (e, t) {
-              let n,
-                c,
-                u = (function (e) {
-                  let t = [];
-                  for (let n of e)
-                    null != n.decision &&
-                      t.push({
-                        id: n.id,
-                        filepath: n.filepath,
-                        length: n.length,
-                        decision: n.decision,
-                      });
-                  return t;
-                })(t.clipCandidates);
-              return 0 === u.length
-                ? (f.nx.info(
-                    `automontage: no usable clip candidates in this session (received ${t.clipCandidates.length}) - skipping montage`,
-                  ),
-                  null)
-                : "cs2_round_summary" === e
-                  ? ((n = { ...h.yC, audioTrackLabel: "0:all", blendMs: 300 }),
-                    null ==
-                    (c = (function (e) {
-                      let t,
-                        n,
-                        a,
-                        s = [...e.gameEventData].sort(
-                          (e, t) => e.timestamp_ms - t.timestamp_ms,
+            },
+            {
+              type: "league_of_legends_game_highlights",
+              applicationIds: [v.m],
+              kind: "preset",
+              settings: {
+                includeOtherUsers: !1,
+                startOnSilence: !1,
+                endOnSilence: !1,
+                requireVoiceGamePair: !1,
+                blendMs: 300,
+                minDurationMs: 3e4,
+                maxDurationMs: 9e4,
+                events: U,
+              },
+            },
+            {
+              type: "league_of_legends_kill_compil",
+              applicationIds: [v.m],
+              kind: "preset",
+              settings: {
+                includeOtherUsers: !1,
+                startOnSilence: !1,
+                endOnSilence: !1,
+                requireVoiceGamePair: !1,
+                blendMs: 300,
+                minDurationMs: 3e4,
+                maxDurationMs: 6e4,
+                events: w,
+              },
+            },
+          ];
+        function x(e) {
+          var t,
+            n =
+              ((t = e.gameId),
+              G.filter(
+                (e) =>
+                  null == e.applicationIds ||
+                  (null != t && e.applicationIds.includes(t)),
+              )),
+            i = e;
+          let r = (function (e) {
+            let t = [];
+            for (let n of e)
+              null != n.decision &&
+                t.push({
+                  id: n.id,
+                  filepath: n.filepath,
+                  length: n.length,
+                  decision: n.decision,
+                });
+            return t;
+          })(i.clipCandidates);
+          if (0 === r.length)
+            return (
+              _.nx.info(
+                `automontage: no usable clip candidates in this session (received ${i.clipCandidates.length}) - skipping montage`,
+              ),
+              null
+            );
+          for (let e of n) {
+            let t =
+              "custom" === e.kind
+                ? e.build(e.type, i, r)
+                : (function (e, t, n, i) {
+                    var r, u, E, p;
+                    let T,
+                      m = (function (e, t, n, i) {
+                        let { localUserId: r, gameId: c, ...u } = n,
+                          _ = [],
+                          E = A(e ?? []),
+                          I = h(E),
+                          p = (0, a.Q4)(c, E);
+                        function T(e, t) {
+                          return p?.isInGame == null || p.isInGame((e + t) / 2);
+                        }
+                        for (let e of E) {
+                          let t = e.eventName;
+                          if (null == t) continue;
+                          let n = i[`game:${t}`];
+                          if (null == n) continue;
+                          let r =
+                              f(e, I) ??
+                              e.clipWindow?.startMs ??
+                              e.timestamp_ms,
+                            a = e.clipWindow?.endMs ?? e.timestamp_ms;
+                          T(r, a) &&
+                            _.push({
+                              startMs: r,
+                              endMs: a,
+                              kind: "game",
+                              padding: n,
+                            });
+                        }
+                        let m = new Map();
+                        for (let e of o) {
+                          let t = i[`audio:${e}`];
+                          null != t && m.set(e, t);
+                        }
+                        if (m.size > 0)
+                          for (let e of (function (e, t, n, i) {
+                            let {
+                              includeOtherUsers: r,
+                              laughterThreshold: o,
+                              shoutingThreshold: c,
+                            } = n;
+                            if (0 === i.length) return [];
+                            let u = Object.keys(e).filter((e) => e === t || r),
+                              _ = Number.MAX_VALUE,
+                              E = -Number.MAX_VALUE;
+                            for (let t of u) {
+                              let n = e[t];
+                              for (let e of [
+                                n.rmsData,
+                                ...i.map((e) => n[d[e]]),
+                              ])
+                                for (let t of e)
+                                  t.timestamp_ms < _ && (_ = t.timestamp_ms),
+                                    t.timestamp_ms > E && (E = t.timestamp_ms);
+                            }
+                            if (E < _) return [];
+                            let A = (E - _) / a.pn + 1;
+                            function h(e) {
+                              return (0, a.lq)(
+                                [
+                                  ...(function (e) {
+                                    for (let t = 1; t < e.length; t++)
+                                      if (
+                                        e[t].timestamp_ms <
+                                        e[t - 1].timestamp_ms
+                                      )
+                                        return [...e].sort(
+                                          (e, t) =>
+                                            e.timestamp_ms - t.timestamp_ms,
+                                        );
+                                    return e;
+                                  })(e),
+                                ],
+                                _,
+                                A,
+                              ).map((e) => e.value);
+                            }
+                            let f = (0, s.A)(),
+                              I = {
+                                laughter: o ?? f.laughterEventThreshold,
+                                shouting: c ?? f.shoutingEventThreshold,
+                              },
+                              p = u.map((t) => h(e[t].rmsData)),
+                              T = (0, l.kV)(p, f),
+                              m = [];
+                            for (let t of i) {
+                              let n = u.map((n) => h(e[n][d[t]])),
+                                i = (0, l.br)(n, f, I[t]),
+                                r = null != T ? (0, l.ei)(i, T) : i;
+                              u.forEach((e, n) => {
+                                for (let i of (function (e) {
+                                  let t = [],
+                                    n = -1;
+                                  for (let i = 0; i <= e.length; i++) {
+                                    let r = i < e.length && e[i] > 0;
+                                    r && -1 === n && (n = i),
+                                      r ||
+                                        -1 === n ||
+                                        (t.push({
+                                          startChunk: n,
+                                          endChunk: i - 1,
+                                        }),
+                                        (n = -1));
+                                  }
+                                  return t;
+                                })(r[n]))
+                                  i.endChunk - i.startChunk + 1 <
+                                    f.minConsecutiveChunks ||
+                                    m.push({
+                                      kind: t,
+                                      userId: e,
+                                      startMs: _ + i.startChunk * a.pn,
+                                      endMs: _ + i.endChunk * a.pn,
+                                    });
+                              });
+                            }
+                            return m.sort((e, t) => e.startMs - t.startMs), m;
+                          })(t, r, u, Array.from(m.keys()))) {
+                            let t = m.get(e.kind);
+                            null != t &&
+                              T(e.startMs, e.endMs) &&
+                              _.push({
+                                startMs: e.startMs,
+                                endMs: e.endMs,
+                                kind: "audio",
+                                padding: t,
+                              });
+                          }
+                        return _;
+                      })(
+                        n.decisionSignals.gameEventData,
+                        n.decisionSignals.audioModelDataPerUser,
+                        {
+                          localUserId: n.localUserId,
+                          gameId: n.gameId,
+                          includeOtherUsers: t.includeOtherUsers,
+                          laughterThreshold: t.laughterThreshold,
+                          shoutingThreshold: t.shoutingThreshold,
+                        },
+                        t.events,
+                      );
+                    if (0 === m.length)
+                      return (
+                        _.nx.info(
+                          `automontage: preset ${e} matched no events in this session - skipping montage`,
                         ),
-                        l = (function (e) {
-                          let t = [],
-                            n = new Map(),
-                            r = null;
-                          for (let a of e) {
-                            if (
-                              a.eventName === i.C.InMatchChange &&
-                              a.additionalData?.inMatch !== !0
-                            ) {
-                              n.clear(), (r = null);
-                              continue;
+                        null
+                      );
+                    let g =
+                        t.startOnSilence || t.endOnSilence
+                          ? ((r = (function (e) {
+                              let t = new Set(),
+                                n = [],
+                                i = [];
+                              for (let r of e)
+                                if (
+                                  r.decision?.timestamp != null &&
+                                  null != r.length
+                                )
+                                  for (let e of (i.push({
+                                    start: r.decision.timestamp - r.length,
+                                    end: r.decision.timestamp,
+                                  }),
+                                  r.timeline ?? [])) {
+                                    let i = e.signal;
+                                    if (
+                                      i.type !== _.Gy.SPEAKING ||
+                                      null == e.timestamp
+                                    )
+                                      continue;
+                                    let r = `${i.userId}|${e.timestamp}|${i.speakingFlags}`;
+                                    t.has(r) ||
+                                      (t.add(r),
+                                      n.push({
+                                        userId: i.userId,
+                                        timestamp: e.timestamp,
+                                        speaking:
+                                          ((i.speakingFlags ?? 0) & 1) == 1,
+                                      }));
+                                  }
+                              if (0 === i.length) return [];
+                              i.sort((e, t) => e.start - t.start);
+                              let r = [];
+                              for (let e of i) {
+                                let t = r[r.length - 1];
+                                null != t && e.start <= t.end
+                                  ? (t.end = Math.max(t.end, e.end))
+                                  : r.push({ ...e });
+                              }
+                              n.sort((e, t) => e.timestamp - t.timestamp);
+                              let a = [],
+                                s = 0;
+                              for (let e of r) {
+                                for (
+                                  ;
+                                  s < n.length && n[s].timestamp < e.start;
+
+                                )
+                                  s++;
+                                let t = new Map();
+                                for (
+                                  ;
+                                  s < n.length && n[s].timestamp <= e.end;
+
+                                ) {
+                                  let e = n[s];
+                                  s++;
+                                  let i = t.get(e.userId);
+                                  e.speaking
+                                    ? null == i && t.set(e.userId, e.timestamp)
+                                    : null != i &&
+                                      (a.push({
+                                        userId: e.userId,
+                                        startMs: i,
+                                        endMs: e.timestamp,
+                                      }),
+                                      t.delete(e.userId));
+                                }
+                                for (let [n, i] of t)
+                                  a.push({
+                                    userId: n,
+                                    startMs: i,
+                                    endMs: e.end,
+                                  });
+                              }
+                              return a;
+                            })(n.clipCandidates)),
+                            (u = n.localUserId),
+                            t.includeOtherUsers
+                              ? [...r]
+                              : r.filter((e) => e.userId === u))
+                          : [],
+                      S = { ...I.yC, blendMs: t.blendMs },
+                      N = (function (e) {
+                        let {
+                            selected: t,
+                            clipCandidates: n,
+                            config: i,
+                            speakingSpans: r,
+                            startOnSilence: a,
+                            endOnSilence: s,
+                            requireVoiceGamePair: l,
+                            maxDurationMs: o,
+                            scoreSection: d,
+                          } = e,
+                          u = (function (e, t, n, i) {
+                            let r = [];
+                            for (let a of e) {
+                              let e = (0, I.Wp)(a, a.padding, {
+                                hasGame: "game" === a.kind,
+                                hasAudio: "audio" === a.kind,
+                              });
+                              n &&
+                                (e.srcStartMs = (function (e, t) {
+                                  let n = c(t, e, !1);
+                                  if (-1 === n) return e;
+                                  let i = t[n];
+                                  return e < i.endMs ? i.startMs : e;
+                                })(e.srcStartMs, t)),
+                                i &&
+                                  (e.srcEndMs = (function (e, t) {
+                                    let n = c(t, e, !0);
+                                    if (-1 === n) return e;
+                                    let i = t[n];
+                                    return e < i.endMs ? i.endMs : e;
+                                  })(e.srcEndMs, t)),
+                                e.srcEndMs <= e.srcStartMs || r.push(e);
                             }
-                            let e = g(a, i.C.RoundStart);
-                            if (null != e) {
-                              null != r && e <= r && n.clear(),
-                                n.set(e, a.timestamp_ms),
-                                (r = e);
-                              continue;
-                            }
-                            let s = g(a, i.C.RoundEnd);
-                            if (null == s) continue;
-                            let l = n.get(s);
-                            null != l &&
-                              (n.delete(s),
-                              a.timestamp_ms <= l ||
-                                t.push({
-                                  number: s,
-                                  startMs: l,
-                                  endMs: a.timestamp_ms,
-                                }));
-                          }
-                          return t.sort((e, t) => e.startMs - t.startMs);
-                        })(s);
-                      if (0 === l.length)
-                        return (
-                          f.nx.info(
-                            `automontage: no valid CS2 rounds reconstructed from ${s.length} game events - skipping round summary`,
-                          ),
-                          null
-                        );
-                      let o = (0, r.Q4)(e.gameId, s),
-                        d =
-                          ((t = (function (e, t) {
-                            if (e?.calculateModifiers == null || 0 === t.length)
-                              return () => 1;
-                            let n = S(t[0].timestamp_ms),
-                              i = S(t[t.length - 1].timestamp_ms),
-                              r = new Map(
-                                e
-                                  .calculateModifiers(n, i)
-                                  .map((e) => [e.timestamp_ms, e.modifier]),
-                              );
-                            return (e) => r.get(S(e)) ?? 1;
-                          })(o, s)),
-                          (n = new Float64Array(s.length + 1)),
-                          (a = 0),
-                          s.forEach((e, r) => {
-                            let s = e.score ?? 0;
-                            o?.rescoreEvent != null &&
-                              (s =
-                                e.eventName === i.C.Death
-                                  ? -0.1
-                                  : (o.rescoreEvent(e) ?? s));
-                            let l = s * t(e.timestamp_ms);
-                            Number.isFinite(l) || (a++, (l = 0)),
-                              (n[r + 1] = n[r] + l);
-                          }),
-                          a > 0 &&
-                            f.nx.warn(
-                              `automontage: ignored ${a} non-finite event score(s) while ranking rounds`,
-                            ),
-                          l
-                            .map((e) => {
-                              let t = N(s, e.startMs, !1),
-                                i = N(s, e.endMs, !1);
-                              return { round: e, score: n[i] - n[t] };
-                            })
-                            .sort((e, t) => t.score - e.score)),
-                        c = d[0];
-                      if (c.score <= m)
-                        return (
-                          f.nx.info(
-                            `automontage: best CS2 round ${c.round.number} scored ${c.score.toFixed(3)}, not above the ${m} minimum - skipping round summary`,
-                          ),
-                          null
-                        );
-                      let u = (function (e, t) {
-                          let n = e.startMs + 23e3,
-                            r = [
-                              (0, h.Wp)({ startMs: n, endMs: n }, p, {
-                                label: `r${e.number} context`,
-                              }),
-                            ],
-                            a = N(t, n, !1),
-                            s = N(t, e.endMs, !0),
-                            l = t.slice(a, s),
-                            o = E(l),
-                            d = new Set(
-                              _(l.filter((e) => e.eventName === i.C.MultiKill)),
+                            return (
+                              r.sort((e, t) => e.srcStartMs - t.srcStartMs), r
                             );
-                          for (let t of l) {
-                            let n = t.eventName;
-                            if (null == n) continue;
-                            let a = I.get(n);
-                            if (null == a) continue;
-                            let s = `r${e.number} ${n}`;
-                            if (n === i.C.MultiKill) {
-                              if (!d.has(t)) continue;
-                              let e = A(t, o) ?? t.timestamp_ms;
-                              r.push(
-                                (0, h.Wp)(
-                                  { startMs: e, endMs: t.timestamp_ms },
-                                  a,
-                                  { label: s },
+                          })(
+                            t,
+                            (function (e) {
+                              let t = [...e].sort(
+                                  (e, t) => e.startMs - t.startMs,
                                 ),
-                              );
-                            } else
-                              r.push(
-                                (0, h.Wp)(
-                                  {
-                                    startMs: t.timestamp_ms,
-                                    endMs: t.timestamp_ms,
-                                  },
-                                  a,
-                                  { label: s },
+                                n = [];
+                              for (let e of t) {
+                                let t = n[n.length - 1];
+                                null != t && e.startMs <= t.endMs
+                                  ? (t.endMs = Math.max(t.endMs, e.endMs))
+                                  : n.push({
+                                      startMs: e.startMs,
+                                      endMs: e.endMs,
+                                    });
+                              }
+                              return n;
+                            })(r),
+                            a,
+                            s,
+                          ),
+                          E = (0, I.X0)(u),
+                          A = l
+                            ? E.filter(
+                                (e) => !0 === e.hasGame && !0 === e.hasAudio,
+                              )
+                            : E,
+                          h = [],
+                          f = [];
+                        for (let e of A)
+                          e.srcEndMs - e.srcStartMs < I.rx
+                            ? h.push(e)
+                            : f.push(e);
+                        let { resolved: p, skipped: T } = (0, I.z2)(f, n),
+                          { kept: m, removed: g } = (function (e, t, n, i) {
+                            let r = [...e],
+                              a = e
+                                .map((e, t) => {
+                                  let { startMs: n, endMs: r } = L(e);
+                                  return { id: t, score: i(n, r) };
+                                })
+                                .sort((e, t) => t.score - e.score),
+                              s = [],
+                              l = D(r, t);
+                            for (; l > n; ) {
+                              let n = a.pop();
+                              if (null == n) break;
+                              s.push(e[n.id]), (r[n.id] = null), (l = D(r, t));
+                            }
+                            return (
+                              s.length > 0 &&
+                                _.nx.info(
+                                  `automontage: removed ${s.length} lowest-scored section(s) to fit the ${n}ms maximum (durationMs=${l})`,
                                 ),
-                              );
-                          }
-                          return (
-                            r.push(
-                              (0, h.Wp)(
-                                { startMs: e.endMs, endMs: e.endMs },
-                                T,
-                                { label: `r${e.number} round end` },
-                              ),
-                            ),
-                            r.sort((e, t) => e.srcStartMs - t.srcStartMs),
-                            r
-                          );
-                        })(c.round, s),
-                        C = (0, h.X0)(u),
-                        { resolved: O, skipped: R } = (0, h.z2)(
-                          C,
-                          e.clipCandidates,
-                        );
-                      return 0 === O.length
-                        ? (f.nx.info(
-                            `automontage: no candidate clip covers any of the ${C.length} sections of best round ${c.round.number} (candidates=${e.clipCandidates.length}) - skipping round summary`,
+                              {
+                                kept: r.filter((e) => null != e),
+                                removed: s,
+                                durationMs: l,
+                              }
+                            );
+                          })(p, i.blendMs, o, d);
+                        return {
+                          durationMs: (0, I.s_)(m, i.blendMs),
+                          resolved: m,
+                          skipped: [...h, ...T, ...g.map(y)],
+                          requestedSectionCount: A.length,
+                          trimmedSectionCount: g.length,
+                        };
+                      })({
+                        selected: m,
+                        clipCandidates: i,
+                        config: S,
+                        speakingSpans: g,
+                        startOnSilence: t.startOnSilence,
+                        endOnSilence: t.endOnSilence,
+                        requireVoiceGamePair: t.requireVoiceGamePair,
+                        maxDurationMs: t.maxDurationMs,
+                        scoreSection:
+                          ((E = n.decisionSignals.gameEventData),
+                          (p = n.gameId),
+                          (function (e, t) {
+                            if (0 === e.length) return () => 0;
+                            let n = () => 1;
+                            if (t?.calculateModifiers != null) {
+                              let i = R(e[0].timestamp_ms),
+                                r = R(e[e.length - 1].timestamp_ms),
+                                a = new Map(
+                                  t
+                                    .calculateModifiers(i, r)
+                                    .map((e) => [e.timestamp_ms, e.modifier]),
+                                );
+                              n = (e) => a.get(R(e)) ?? 1;
+                            }
+                            let i = new Float64Array(e.length + 1),
+                              r = 0;
+                            return (
+                              e.forEach((e, a) => {
+                                let s = e.score ?? 0;
+                                t?.rescoreEvent != null &&
+                                  (s = t.rescoreEvent(e) ?? s);
+                                let l = s * n(e.timestamp_ms);
+                                Number.isFinite(l) || (r++, (l = 0)),
+                                  (i[a + 1] = i[a] + l);
+                              }),
+                              r > 0 &&
+                                _.nx.warn(
+                                  `automontage: ignored ${r} non-finite event score(s) while scoring sections`,
+                                ),
+                              (t, n) => {
+                                let r = (0, O.sortedIndexBy)(
+                                  e,
+                                  { timestamp_ms: t },
+                                  "timestamp_ms",
+                                );
+                                return (
+                                  i[
+                                    (0, O.sortedLastIndexBy)(
+                                      e,
+                                      { timestamp_ms: n },
+                                      "timestamp_ms",
+                                    )
+                                  ] - i[r]
+                                );
+                              }
+                            );
+                          })(
+                            (T = [...E].sort(
+                              (e, t) => e.timestamp_ms - t.timestamp_ms,
+                            )),
+                            (0, a.Q4)(p, T),
+                          )),
+                      });
+                    return 0 === N.resolved.length
+                      ? (_.nx.info(
+                          N.trimmedSectionCount > 0
+                            ? `automontage: preset ${e} - all ${N.trimmedSectionCount} resolved section(s) were removed to fit the ${t.maxDurationMs}ms maximum - skipping montage`
+                            : `automontage: preset ${e} - no candidate clip covers any of the ${N.requestedSectionCount} requested sections (candidates=${i.length}, skipped=${N.skipped.length}) - skipping montage`,
+                        ),
+                        null)
+                      : N.durationMs < t.minDurationMs
+                        ? (_.nx.info(
+                            `automontage: preset ${e} duration ${N.durationMs}ms is below the ${t.minDurationMs}ms minimum - skipping montage`,
                           ),
                           null)
                         : {
-                            durationMs: (0, h.s_)(O, e.config.blendMs),
-                            resolved: O,
-                            skipped: R,
-                            bestRound: c,
-                            rankedRounds: d,
+                            type: e,
+                            config: S,
+                            durationMs: N.durationMs,
+                            resolved: N.resolved,
+                            skipped: N.skipped,
                           };
-                    })({
-                      gameEventData: t.decisionSignals.gameEventData,
-                      clipCandidates: u,
-                      gameId: t.gameId,
-                      config: n,
-                    }))
-                      ? null
-                      : {
-                          type: e,
-                          config: n,
-                          durationMs: c.durationMs,
-                          resolved: c.resolved,
-                          skipped: c.skipped,
-                        })
-                  : (function (e, t, n) {
-                      var i, c, u, I;
-                      let p,
-                        T = (function (e) {
-                          let t = D.get(e);
-                          if (null == t)
-                            throw Error(
-                              `Unrecognized automontage preset: ${e}`,
-                            );
-                          return t;
-                        })(e),
-                        m = (function (e, t, n, i) {
-                          let { localUserId: d, gameId: c, ...u } = n,
-                            h = [],
-                            f = _(e ?? []),
-                            I = E(f),
-                            p = (0, r.Q4)(c, f);
-                          function T(e, t) {
-                            return (
-                              p?.isInGame == null || p.isInGame((e + t) / 2)
-                            );
-                          }
-                          for (let e of f) {
-                            let t = e.eventName;
-                            if (null == t) continue;
-                            let n = i[`game:${t}`];
-                            if (null == n) continue;
-                            let r = A(e, I) ?? e.timestamp_ms,
-                              a = e.timestamp_ms;
-                            T(r, a) &&
-                              h.push({
-                                startMs: r,
-                                endMs: a,
-                                kind: "game",
-                                padding: n,
-                              });
-                          }
-                          let m = new Map();
-                          for (let e of l) {
-                            let t = i[`audio:${e}`];
-                            null != t && m.set(e, t);
-                          }
-                          if (m.size > 0)
-                            for (let e of (function (e, t, n, i) {
-                              let {
-                                includeOtherUsers: l,
-                                laughterThreshold: d,
-                                shoutingThreshold: c,
-                              } = n;
-                              if (0 === i.length) return [];
-                              let u = Object.keys(e).filter(
-                                  (e) => e === t || l,
-                                ),
-                                _ = Number.MAX_VALUE,
-                                E = -Number.MAX_VALUE;
-                              for (let t of u) {
-                                let n = e[t];
-                                for (let e of [
-                                  n.rmsData,
-                                  ...i.map((e) => n[o[e]]),
-                                ])
-                                  for (let t of e)
-                                    t.timestamp_ms < _ && (_ = t.timestamp_ms),
-                                      t.timestamp_ms > E &&
-                                        (E = t.timestamp_ms);
-                              }
-                              if (E < _) return [];
-                              let A = (E - _) / r.pn + 1;
-                              function h(e) {
-                                return (0, r.lq)(
-                                  [
-                                    ...(function (e) {
-                                      for (let t = 1; t < e.length; t++)
-                                        if (
-                                          e[t].timestamp_ms <
-                                          e[t - 1].timestamp_ms
-                                        )
-                                          return [...e].sort(
-                                            (e, t) =>
-                                              e.timestamp_ms - t.timestamp_ms,
-                                          );
-                                      return e;
-                                    })(e),
-                                  ],
-                                  _,
-                                  A,
-                                ).map((e) => e.value);
-                              }
-                              let f = (0, a.A)(),
-                                I = {
-                                  laughter: d ?? f.laughterEventThreshold,
-                                  shouting: c ?? f.shoutingEventThreshold,
-                                },
-                                p = u.map((t) => h(e[t].rmsData)),
-                                T = (0, s.kV)(p, f),
-                                m = [];
-                              for (let t of i) {
-                                let n = u.map((n) => h(e[n][o[t]])),
-                                  i = (0, s.br)(n, f, I[t]),
-                                  a = null != T ? (0, s.ei)(i, T) : i;
-                                u.forEach((e, n) => {
-                                  for (let i of (function (e) {
-                                    let t = [],
-                                      n = -1;
-                                    for (let i = 0; i <= e.length; i++) {
-                                      let r = i < e.length && e[i] > 0;
-                                      r && -1 === n && (n = i),
-                                        r ||
-                                          -1 === n ||
-                                          (t.push({
-                                            startChunk: n,
-                                            endChunk: i - 1,
-                                          }),
-                                          (n = -1));
-                                    }
-                                    return t;
-                                  })(a[n]))
-                                    i.endChunk - i.startChunk + 1 <
-                                      f.minConsecutiveChunks ||
-                                      m.push({
-                                        kind: t,
-                                        userId: e,
-                                        startMs: _ + i.startChunk * r.pn,
-                                        endMs: _ + i.endChunk * r.pn,
-                                      });
-                                });
-                              }
-                              return m.sort((e, t) => e.startMs - t.startMs), m;
-                            })(t, d, u, Array.from(m.keys()))) {
-                              let t = m.get(e.kind);
-                              null != t &&
-                                T(e.startMs, e.endMs) &&
-                                h.push({
-                                  startMs: e.startMs,
-                                  endMs: e.endMs,
-                                  kind: "audio",
-                                  padding: t,
-                                });
-                            }
-                          return h;
-                        })(
-                          t.decisionSignals.gameEventData,
-                          t.decisionSignals.audioModelDataPerUser,
-                          {
-                            localUserId: t.localUserId,
-                            gameId: t.gameId,
-                            includeOtherUsers: T.includeOtherUsers,
-                            laughterThreshold: T.laughterThreshold,
-                            shoutingThreshold: T.shoutingThreshold,
-                          },
-                          T.events,
-                        );
-                      if (0 === m.length)
-                        return (
-                          f.nx.info(
-                            `automontage: preset ${e} matched no events in this session - skipping montage`,
-                          ),
-                          null
-                        );
-                      let g =
-                          T.startOnSilence || T.endOnSilence
-                            ? ((i = (function (e) {
-                                let t = new Set(),
-                                  n = [],
-                                  i = [];
-                                for (let r of e)
-                                  if (
-                                    r.decision?.timestamp != null &&
-                                    null != r.length
-                                  )
-                                    for (let e of (i.push({
-                                      start: r.decision.timestamp - r.length,
-                                      end: r.decision.timestamp,
-                                    }),
-                                    r.timeline ?? [])) {
-                                      let i = e.signal;
-                                      if (
-                                        i.type !== f.Gy.SPEAKING ||
-                                        null == e.timestamp
-                                      )
-                                        continue;
-                                      let r = `${i.userId}|${e.timestamp}|${i.speakingFlags}`;
-                                      t.has(r) ||
-                                        (t.add(r),
-                                        n.push({
-                                          userId: i.userId,
-                                          timestamp: e.timestamp,
-                                          speaking:
-                                            ((i.speakingFlags ?? 0) & 1) == 1,
-                                        }));
-                                    }
-                                if (0 === i.length) return [];
-                                i.sort((e, t) => e.start - t.start);
-                                let r = [];
-                                for (let e of i) {
-                                  let t = r[r.length - 1];
-                                  null != t && e.start <= t.end
-                                    ? (t.end = Math.max(t.end, e.end))
-                                    : r.push({ ...e });
-                                }
-                                n.sort((e, t) => e.timestamp - t.timestamp);
-                                let a = [],
-                                  s = 0;
-                                for (let e of r) {
-                                  for (
-                                    ;
-                                    s < n.length && n[s].timestamp < e.start;
-
-                                  )
-                                    s++;
-                                  let t = new Map();
-                                  for (
-                                    ;
-                                    s < n.length && n[s].timestamp <= e.end;
-
-                                  ) {
-                                    let e = n[s];
-                                    s++;
-                                    let i = t.get(e.userId);
-                                    e.speaking
-                                      ? null == i &&
-                                        t.set(e.userId, e.timestamp)
-                                      : null != i &&
-                                        (a.push({
-                                          userId: e.userId,
-                                          startMs: i,
-                                          endMs: e.timestamp,
-                                        }),
-                                        t.delete(e.userId));
-                                  }
-                                  for (let [n, i] of t)
-                                    a.push({
-                                      userId: n,
-                                      startMs: i,
-                                      endMs: e.end,
-                                    });
-                                }
-                                return a;
-                              })(t.clipCandidates)),
-                              (c = t.localUserId),
-                              T.includeOtherUsers
-                                ? [...i]
-                                : i.filter((e) => e.userId === c))
-                            : [],
-                        S = { ...h.yC, blendMs: T.blendMs },
-                        N = (function (e) {
-                          let {
-                              selected: t,
-                              clipCandidates: n,
-                              config: i,
-                              speakingSpans: r,
-                              startOnSilence: a,
-                              endOnSilence: s,
-                              requireVoiceGamePair: l,
-                              maxDurationMs: o,
-                              scoreSection: c,
-                            } = e,
-                            u = (function (e, t, n, i) {
-                              let r = [];
-                              for (let a of e) {
-                                let e = (0, h.Wp)(a, a.padding, {
-                                  hasGame: "game" === a.kind,
-                                  hasAudio: "audio" === a.kind,
-                                });
-                                n &&
-                                  (e.srcStartMs = (function (e, t) {
-                                    let n = d(t, e, !1);
-                                    if (-1 === n) return e;
-                                    let i = t[n];
-                                    return e < i.endMs ? i.startMs : e;
-                                  })(e.srcStartMs, t)),
-                                  i &&
-                                    (e.srcEndMs = (function (e, t) {
-                                      let n = d(t, e, !0);
-                                      if (-1 === n) return e;
-                                      let i = t[n];
-                                      return e < i.endMs ? i.endMs : e;
-                                    })(e.srcEndMs, t)),
-                                  e.srcEndMs <= e.srcStartMs || r.push(e);
-                              }
-                              return (
-                                r.sort((e, t) => e.srcStartMs - t.srcStartMs), r
-                              );
-                            })(
-                              t,
-                              (function (e) {
-                                let t = [...e].sort(
-                                    (e, t) => e.startMs - t.startMs,
-                                  ),
-                                  n = [];
-                                for (let e of t) {
-                                  let t = n[n.length - 1];
-                                  null != t && e.startMs <= t.endMs
-                                    ? (t.endMs = Math.max(t.endMs, e.endMs))
-                                    : n.push({
-                                        startMs: e.startMs,
-                                        endMs: e.endMs,
-                                      });
-                                }
-                                return n;
-                              })(r),
-                              a,
-                              s,
-                            ),
-                            _ = (0, h.X0)(u),
-                            E = l
-                              ? _.filter(
-                                  (e) => !0 === e.hasGame && !0 === e.hasAudio,
-                                )
-                              : _,
-                            A = [],
-                            I = [];
-                          for (let e of E)
-                            e.srcEndMs - e.srcStartMs < h.rx
-                              ? A.push(e)
-                              : I.push(e);
-                          let { resolved: p, skipped: T } = (0, h.z2)(I, n),
-                            { kept: m, removed: g } = (function (e, t, n, i) {
-                              let r = [...e],
-                                a = e
-                                  .map((e, t) => {
-                                    let { startMs: n, endMs: r } = R(e);
-                                    return { id: t, score: i(n, r) };
-                                  })
-                                  .sort((e, t) => t.score - e.score),
-                                s = [],
-                                l = y(r, t);
-                              for (; l > n; ) {
-                                let n = a.pop();
-                                if (null == n) break;
-                                s.push(e[n.id]),
-                                  (r[n.id] = null),
-                                  (l = y(r, t));
-                              }
-                              return (
-                                s.length > 0 &&
-                                  f.nx.info(
-                                    `automontage: removed ${s.length} lowest-scored section(s) to fit the ${n}ms maximum (durationMs=${l})`,
-                                  ),
-                                {
-                                  kept: r.filter((e) => null != e),
-                                  removed: s,
-                                  durationMs: l,
-                                }
-                              );
-                            })(p, i.blendMs, o, c);
-                          return {
-                            durationMs: (0, h.s_)(m, i.blendMs),
-                            resolved: m,
-                            skipped: [...A, ...T, ...g.map(L)],
-                            requestedSectionCount: E.length,
-                            trimmedSectionCount: g.length,
-                          };
-                        })({
-                          selected: m,
-                          clipCandidates: n,
-                          config: S,
-                          speakingSpans: g,
-                          startOnSilence: T.startOnSilence,
-                          endOnSilence: T.endOnSilence,
-                          requireVoiceGamePair: T.requireVoiceGamePair,
-                          maxDurationMs: 9e4,
-                          scoreSection:
-                            ((u = t.decisionSignals.gameEventData),
-                            (I = t.gameId),
-                            (function (e, t) {
-                              if (0 === e.length) return () => 0;
-                              let n = () => 1;
-                              if (t?.calculateModifiers != null) {
-                                let i = O(e[0].timestamp_ms),
-                                  r = O(e[e.length - 1].timestamp_ms),
-                                  a = new Map(
-                                    t
-                                      .calculateModifiers(i, r)
-                                      .map((e) => [e.timestamp_ms, e.modifier]),
-                                  );
-                                n = (e) => a.get(O(e)) ?? 1;
-                              }
-                              let i = new Float64Array(e.length + 1),
-                                r = 0;
-                              return (
-                                e.forEach((e, a) => {
-                                  let s = e.score ?? 0;
-                                  t?.rescoreEvent != null &&
-                                    (s = t.rescoreEvent(e) ?? s);
-                                  let l = s * n(e.timestamp_ms);
-                                  Number.isFinite(l) || (r++, (l = 0)),
-                                    (i[a + 1] = i[a] + l);
-                                }),
-                                r > 0 &&
-                                  f.nx.warn(
-                                    `automontage: ignored ${r} non-finite event score(s) while scoring sections`,
-                                  ),
-                                (t, n) => {
-                                  let r = (0, C.sortedIndexBy)(
-                                    e,
-                                    { timestamp_ms: t },
-                                    "timestamp_ms",
-                                  );
-                                  return (
-                                    i[
-                                      (0, C.sortedLastIndexBy)(
-                                        e,
-                                        { timestamp_ms: n },
-                                        "timestamp_ms",
-                                      )
-                                    ] - i[r]
-                                  );
-                                }
-                              );
-                            })(
-                              (p = [...u].sort(
-                                (e, t) => e.timestamp_ms - t.timestamp_ms,
-                              )),
-                              (0, r.Q4)(I, p),
-                            )),
-                        });
-                      return 0 === N.resolved.length
-                        ? (f.nx.info(
-                            N.trimmedSectionCount > 0
-                              ? `automontage: preset ${e} - all ${N.trimmedSectionCount} resolved section(s) were removed to fit the maximum duration - skipping montage`
-                              : `automontage: preset ${e} - no candidate clip covers any of the ${N.requestedSectionCount} requested sections (candidates=${n.length}, skipped=${N.skipped.length}) - skipping montage`,
-                          ),
-                          null)
-                        : N.durationMs < 25e3
-                          ? (f.nx.info(
-                              `automontage: preset ${e} duration ${N.durationMs}ms is below the 25000ms minimum - skipping montage`,
-                            ),
-                            null)
-                          : {
-                              type: e,
-                              config: S,
-                              durationMs: N.durationMs,
-                              resolved: N.resolved,
-                              skipped: N.skipped,
-                            };
-                    })(e, t, u);
-            })(t, e);
-            if (null != n) return n;
+                  })(e.type, e.settings, i, r);
+            if (null != t) return t;
           }
           return null;
         }
-        function M(e, t, n) {
-          return (0, h.BA)(e.resolved, t, e.config, n);
+        function k(e, t, n) {
+          return (0, I.BA)(e.resolved, t, e.config, n);
         }
       },
       598213(e, t, n) {
@@ -187601,23 +187518,33 @@ ${a}`);
           return {
             srcStartMs: e.startMs - t.beforeMs,
             srcEndMs: e.endMs + t.afterMs,
+            eventStartMs: e.startMs,
+            eventEndMs: e.endMs,
             ...n,
           };
         }
         function o(e) {
           let t = [];
-          for (let n of e) {
+          for (let s of e) {
             let e = t[t.length - 1];
-            if (null != e && n.srcStartMs <= e.srcEndMs) {
-              (e.srcEndMs = Math.max(e.srcEndMs, n.srcEndMs)),
-                (e.hasGame = !0 === e.hasGame || !0 === n.hasGame),
-                (e.hasAudio = !0 === e.hasAudio || !0 === n.hasAudio),
-                null != n.label &&
+            if (null != e && s.srcStartMs <= e.srcEndMs) {
+              var n, i, r, a;
+              (e.srcEndMs = Math.max(e.srcEndMs, s.srcEndMs)),
+                (n = e.eventStartMs),
+                (i = s.eventStartMs),
+                (e.eventStartMs =
+                  null == n ? i : null == i ? n : Math.min(n, i)),
+                (r = e.eventEndMs),
+                (a = s.eventEndMs),
+                (e.eventEndMs = null == r ? a : null == a ? r : Math.max(r, a)),
+                (e.hasGame = !0 === e.hasGame || !0 === s.hasGame),
+                (e.hasAudio = !0 === e.hasAudio || !0 === s.hasAudio),
+                null != s.label &&
                   (e.label =
-                    null != e.label ? `${e.label} + ${n.label}` : n.label);
+                    null != e.label ? `${e.label} + ${s.label}` : s.label);
               continue;
             }
-            t.push({ ...n });
+            t.push({ ...s });
           }
           return t;
         }
@@ -187626,18 +187553,21 @@ ${a}`);
             i = [];
           for (let l of e) {
             let e = (function (e, t) {
-              let n = (e.srcStartMs + e.srcEndMs) / 2,
-                i = null,
-                r = 1 / 0;
-              for (let l of t) {
-                let t = a(l),
-                  o = s(l);
-                if (t <= e.srcStartMs && o >= e.srcEndMs) {
-                  let e = Math.abs((t + o) / 2 - n);
-                  e < r && ((r = e), (i = l));
-                }
+              let n = e.eventStartMs ?? e.srcStartMs,
+                i = e.eventEndMs ?? e.srcEndMs,
+                r = (e.srcStartMs + e.srcEndMs) / 2,
+                l = null,
+                o = -1 / 0,
+                d = 1 / 0;
+              for (let c of t) {
+                let t = a(c),
+                  u = s(c);
+                if (t > n || u < i) continue;
+                let _ = Math.min(u, e.srcEndMs) - Math.max(t, e.srcStartMs),
+                  E = Math.abs((t + u) / 2 - r);
+                (_ > o || (_ === o && E < d)) && ((o = _), (d = E), (l = c));
               }
-              return i;
+              return l;
             })(l, t);
             if (null == e) {
               i.push(l);
@@ -187745,7 +187675,7 @@ ${a}`);
         n.d(t, { y: () => l });
         var i = n(77729),
           r = n(649223),
-          a = n(313465),
+          a = n(214859),
           s = n(696016);
         async function l(e, t) {
           let n = t(e.resolved[0].clip),
@@ -190441,6 +190371,118 @@ ${a}`);
               mainLinkNewCounts: S,
             };
           }, [t, n, r, h, I, f, e]);
+        }
+      },
+      861343(e, t, n) {
+        "use strict";
+        n.d(t, { r: () => a }), n(775443), n(321073);
+        var i = n(284009),
+          r = n.n(i);
+        function a(e, t, n, i) {
+          let a = (n - t) / 1e3 + 1,
+            s = [];
+          for (let n = 0; n < a; n++) {
+            let a = t + 1e3 * n,
+              l = e.findLast((e) => e.timestamp_ms <= a);
+            r()(null != l, "bad timeline!"), s.push(i(l));
+          }
+          return s;
+        }
+      },
+      786661(e, t, n) {
+        "use strict";
+        n.d(t, { E: () => c }), n(321073), n(775443);
+        var i = n(284009),
+          r = n.n(i),
+          a = n(260549),
+          s = n(106983),
+          l = n(861343),
+          o = n(171251);
+        class d {
+          gameAxisScoreThreshold = 0.35;
+          gameStateTimeline = [];
+          constructor(e) {
+            this.gameStateTimeline = (function (e) {
+              let t = { inGame: !0, inMatch: !0, bombPlanted: !1 },
+                n = [{ ...t, timestamp_ms: 0 }];
+              function i(e, i) {
+                let r = { ...t, ...e };
+                (r.inGame !== t.inGame ||
+                  r.inMatch !== t.inMatch ||
+                  r.bombPlanted !== t.bombPlanted) &&
+                  (Object.assign(t, r), n.push({ ...r, timestamp_ms: i }));
+              }
+              for (let n of e)
+                switch (n.eventName) {
+                  case s.C.PlayStateChange: {
+                    let e = n.additionalData?.playing === !0;
+                    i(
+                      { inGame: e, bombPlanted: e && t.bombPlanted },
+                      n.timestamp_ms,
+                    );
+                    break;
+                  }
+                  case s.C.InMatchChange: {
+                    let e = n.additionalData?.inMatch === !0;
+                    i(
+                      e
+                        ? { inMatch: e }
+                        : { inMatch: e, inGame: !1, bombPlanted: !1 },
+                      n.timestamp_ms,
+                    );
+                    break;
+                  }
+                  case s.C.BombPlant:
+                    i({ bombPlanted: !0 }, n.timestamp_ms);
+                    break;
+                  case s.C.BombDefused:
+                  case s.C.BombExploded:
+                  case s.C.RoundEnd:
+                    i({ bombPlanted: !1 }, n.timestamp_ms);
+                }
+              return n;
+            })(e);
+          }
+          calculateModifiers(e, t) {
+            let n = this.gameStateTimeline,
+              i = [],
+              r = (t - e) / 1e3 + 1;
+            for (let t = 0; t < r; t++) {
+              let r = e + 1e3 * t,
+                a = u(n, r),
+                s = 1;
+              a.inGame ? a.bombPlanted && (s *= 2) : (s /= 4),
+                i.push({ timestamp_ms: r, modifier: s });
+            }
+            return i;
+          }
+          getInGameState(e, t) {
+            return (0, l.r)(this.gameStateTimeline, e, t, (e) => e.inGame);
+          }
+          rescoreEvent(e) {
+            return (0, s.z)(e) ? (0, a.n)(e).score : void 0;
+          }
+          isInGame(e) {
+            return u(this.gameStateTimeline, e).inGame;
+          }
+          isInMatch(e) {
+            return u(this.gameStateTimeline, e).inMatch;
+          }
+          canAnchorReaction(e) {
+            let t = e.eventName;
+            return (
+              t === s.C.Kill ||
+              t === s.C.MultiKill ||
+              t === s.C.Death ||
+              t === s.C.BombDefused ||
+              t === s.C.BombExploded
+            );
+          }
+        }
+        let c = { applicationIds: o.l, create: (e) => new d(e) };
+        function u(e, t) {
+          let n = e.findLast((e) => e.timestamp_ms <= t);
+          return r()(null != n, "bad timeline!"), n;
         }
       },
       589553(e, t, n) {
@@ -200747,7 +200789,7 @@ ${a}`);
       517244(e, t, n) {
         "use strict";
         n.d(t, { k: () => o, p: () => l }), n(134528), n(947204);
-        var i = n(89505);
+        var i = n(868695);
         let r = new Map(),
           a = new Map();
         function s(e, t) {
@@ -201857,9 +201899,9 @@ ${a}`);
           },
         });
       },
-      89505(e, t, n) {
+      868695(e, t, n) {
         "use strict";
-        n.d(t, { A: () => K });
+        n.d(t, { A: () => ed });
         var i = n(264686),
           r = n(625180),
           a = n(91242),
@@ -201883,13 +201925,75 @@ ${a}`);
         var _ = n(141931),
           E = n(941426),
           A = n(475735),
-          h = n(192820),
-          f = n(731854);
-        let I = new E.Vy("VibegrationsNativeCapture");
-        function p(e, t) {
-          return I.verbose(`native capture not used: ${e}`, t ?? {}), null;
+          h = n(192820);
+        n(321073);
+        var f = n(508382),
+          I = n(365912),
+          p = n(192308),
+          T = n(186111);
+        function m(e, t) {
+          let n = e.getBoundingClientRect();
+          return (
+            2 >= Math.abs(n.left - t.left) &&
+            2 >= Math.abs(n.top - t.top) &&
+            4 >= Math.abs(n.width - t.width) &&
+            4 >= Math.abs(n.height - t.height)
+          );
         }
-        function T(e) {
+        function g(e, t) {
+          if (
+            (0, p.hasAnyModalOpen)() ||
+            T.A.hasLayers() ||
+            (function (e, t) {
+              let n = [
+                  ...document.getElementsByClassName(I.Pb),
+                  ...document.querySelectorAll(`[${f.IP}]`),
+                ],
+                i = [],
+                r = 0;
+              for (let s of n)
+                for (let n of s.querySelectorAll("*")) {
+                  if (++r > 500) return !0;
+                  if (!(n.contains(e) || i.some((e) => e.contains(n)))) {
+                    var a;
+                    if (m(n, t)) {
+                      i.push(n);
+                      continue;
+                    }
+                    if (
+                      ((a = n.getBoundingClientRect()),
+                      a.width > 0 &&
+                        a.height > 0 &&
+                        a.left < t.right &&
+                        a.right > t.left &&
+                        a.top < t.bottom &&
+                        a.bottom > t.top)
+                    )
+                      return !0;
+                  }
+                }
+              return !1;
+            })(e, t)
+          )
+            return !0;
+          let n = Math.min(4, t.width / 4),
+            i = Math.min(4, t.height / 4);
+          for (let r = 0; r < 7; r++)
+            for (let a = 0; a < 7; a++) {
+              let s = t.left + n + ((t.width - 2 * n) * r) / 6,
+                l = t.top + i + ((t.height - 2 * i) * a) / 6,
+                o = document.elementsFromPoint(s, l),
+                d = o.indexOf(e);
+              if (-1 === d || !o.slice(0, d).every((e) => m(e, t))) return !0;
+            }
+          return !1;
+        }
+        var S = n(731854);
+        let N = new E.Vy("VibegrationsNativeCapture");
+        function C(e, t) {
+          return N.verbose(`native capture not used: ${e}`, t ?? {}), null;
+        }
+        function O(e) {
           let t = e.getBoundingClientRect();
           return t.width < 40 ||
             t.height < 40 ||
@@ -201900,13 +202004,13 @@ ${a}`);
             ? null
             : t;
         }
-        async function m(e) {
+        async function R(e) {
           let t = window.DiscordNative,
             n = await t?.window?.getMediaSourceId?.();
-          if (null == n) return p("no media source id for our own window");
+          if (null == n) return C("no media source id for our own window");
           let i = n.split(":")[1];
           if (null == i || "" === i)
-            return p("unrecognized media source id", { sourceId: n });
+            return C("unrecognized media source id", { sourceId: n });
           let r = Math.min(
               window.devicePixelRatio,
               1,
@@ -201916,7 +202020,7 @@ ${a}`);
             a = Math.ceil(window.outerWidth * r),
             s = Math.ceil(window.outerHeight * r),
             l = h.Ay.getMediaEngine();
-          if (l.supports(f.O5.WINDOW_PREVIEWS))
+          if (l.supports(S.O5.WINDOW_PREVIEWS))
             try {
               let e = A.O.getConfig({
                   location: "vibegrationsNativeCapture",
@@ -201930,10 +202034,10 @@ ${a}`);
             }),
             d = o?.find((e) => e.id.split(":")[1] === i);
           return null == d || "" === d.url
-            ? p("own window missing from capture sources")
+            ? C("own window missing from capture sources")
             : d.url;
         }
-        async function g() {
+        async function L() {
           let e = document.createElement("div");
           return (
             (e.style.cssText =
@@ -201945,7 +202049,7 @@ ${a}`);
             () => e.remove()
           );
         }
-        async function S(e, t, n, i) {
+        async function y(e, t, n, i) {
           let r = new Image();
           if (
             ((r.decoding = "async"),
@@ -201953,11 +202057,11 @@ ${a}`);
             await r.decode(),
             0 === r.naturalWidth || 0 === r.naturalHeight)
           )
-            return p("window still decoded empty");
+            return C("window still decoded empty");
           let a = r.naturalWidth / window.outerWidth,
             s = r.naturalHeight / window.outerHeight;
           if (a <= 0 || s <= 0 || Math.abs(a - s) > 0.03 * a)
-            return p("window still does not match the window geometry", {
+            return C("window still does not match the window geometry", {
               image: { width: r.naturalWidth, height: r.naturalHeight },
               window: { width: window.outerWidth, height: window.outerHeight },
             });
@@ -201982,14 +202086,14 @@ ${a}`);
             return null;
           })(r, n, a, s);
           if (null == l)
-            return p("document not found inside the window still", {
+            return C("document not found inside the window still", {
               inset: n,
             });
           let o = Math.max(0, Math.floor((l.x + t.left) * a)),
             d = Math.max(0, Math.floor((l.y + t.top) * s)),
             c = Math.min(r.naturalWidth - o, Math.round(t.width * a)),
             u = Math.min(r.naturalHeight - d, Math.round(t.height * s));
-          if (c < 1 || u < 1) return p("crop resolved empty");
+          if (c < 1 || u < 1) return C("crop resolved empty");
           let _ = Math.min(
               1,
               1568 / Math.max(c, u),
@@ -202000,25 +202104,25 @@ ${a}`);
             h = document.createElement("canvas");
           (h.width = E), (h.height = A);
           let f = h.getContext("2d");
-          if (null == f) return p("no 2d context");
+          if (null == f) return C("no 2d context");
           f.drawImage(r, o, d, c, u, 0, 0, E, A);
           let I = `image/${i?.format ?? "webp"}`,
-            T =
+            p =
               i?.quality == null
                 ? 0.92
                 : Math.min(1, Math.max(0, i.quality / 100)),
-            m = await new Promise((e) => h.toBlob(e, I, T));
-          return null == m || m.type !== I
-            ? p("encode failed", { type: I })
-            : m.size > 5242880
-              ? p("encoded capture too large", { bytes: m.size })
-              : { blob: m, scale: (E / t.width + A / t.height) / 2 };
+            T = await new Promise((e) => h.toBlob(e, I, p));
+          return null == T || T.type !== I
+            ? C("encode failed", { type: I })
+            : T.size > 5242880
+              ? C("encoded capture too large", { bytes: T.size })
+              : { blob: T, scale: (E / t.width + A / t.height) / 2 };
         }
-        async function N(e, t) {
+        async function D(e, t) {
           try {
             var n, i, r;
             let a;
-            if (null == window.DiscordNative) return p("not the desktop app");
+            if (null == window.DiscordNative) return C("not the desktop app");
             if (
               ((n = t.spec),
               null != n &&
@@ -202032,52 +202136,26 @@ ${a}`);
                         ? "rect"
                         : "viewport")))
             )
-              return p("targeted capture needs the frame DOM", {
+              return C("targeted capture needs the frame DOM", {
                 spec: t.spec,
               });
             if ("visible" !== document.visibilityState)
-              return p("window not visible");
-            let s = T(e);
-            if (null == s) return p("frame not fully on screen");
-            if (
-              !(function (e, t) {
-                for (let [n, i] of [
-                  [t.left + t.width / 2, t.top + t.height / 2],
-                  [t.left + 8, t.top + 8],
-                  [t.right - 8, t.top + 8],
-                  [t.left + 8, t.bottom - 8],
-                  [t.right - 8, t.bottom - 8],
-                ]) {
-                  let r = document.elementFromPoint(n, i);
-                  if (r === e) continue;
-                  if (null == r) return !1;
-                  let a = r.getBoundingClientRect();
-                  if (
-                    !(
-                      2 >= Math.abs(a.left - t.left) &&
-                      2 >= Math.abs(a.top - t.top) &&
-                      4 >= Math.abs(a.width - t.width) &&
-                      4 >= Math.abs(a.height - t.height)
-                    )
-                  )
-                    return !1;
-                }
-                return !0;
-              })(e, s)
-            )
-              return p("frame is covered");
+              return C("window not visible");
+            let s = O(e);
+            if (null == s) return C("frame not fully on screen");
+            if (g(e, s)) return C("frame is covered by Discord UI");
             let l = {
                 x: Math.max(0, window.outerWidth - window.innerWidth),
                 y: Math.max(0, window.outerHeight - window.innerHeight),
               },
-              o = l.x > 2 || l.y > 2 ? await g() : null;
+              o = l.x > 2 || l.y > 2 ? await L() : null;
             try {
-              a = await m(s);
+              a = await R(s);
             } finally {
               o?.();
             }
             if (null == a) return null;
-            let d = T(e);
+            let d = O(e);
             if (
               null == d ||
               Math.abs(d.left - s.left) > 1 ||
@@ -202085,8 +202163,10 @@ ${a}`);
               Math.abs(d.width - s.width) > 1 ||
               Math.abs(d.height - s.height) > 1
             )
-              return p("frame moved or resized during capture");
-            let c = await S(a, s, l, t.spec);
+              return C("frame moved or resized during capture");
+            if (g(e, d))
+              return C("Discord UI covered the frame during capture");
+            let c = await y(a, s, l, t.spec);
             if (null == c) return null;
             let u = (function (e) {
               try {
@@ -202101,7 +202181,7 @@ ${a}`);
                 return null;
               }
             })(e);
-            if (null == u) return p("frame has no resolvable upload url");
+            if (null == u) return C("frame has no resolvable upload url");
             let _ = {
                 mode: "viewport",
                 bounds: {
@@ -202135,9 +202215,9 @@ ${a}`);
               headers: E,
               body: c.blob,
             });
-            if (!A.ok) return p("upload refused", { status: A.status });
+            if (!A.ok) return C("upload refused", { status: A.status });
             return (
-              I.verbose("native capture uploaded", {
+              N.verbose("native capture uploaded", {
                 id: t.captureId,
                 bytes: c.blob.size,
                 scale: _.scale,
@@ -202145,23 +202225,208 @@ ${a}`);
               { status: "accepted" }
             );
           } catch (e) {
-            return p("threw", { err: e });
+            return C("threw", { err: e });
           }
         }
-        var C = n(251363),
-          O = n(192888),
-          R = n(853555),
-          L = n(809685),
-          y = n(777977),
-          D = n(484697);
-        n(321073), n(667532);
-        var v = n(112420),
-          b = n(652215);
-        function M(e) {
+        var v = n(251363),
+          b = n(192888),
+          M = n(853555),
+          P = n(873715);
+        let U = null,
+          w = null,
+          G = new Map(),
+          x = null,
+          k = 0;
+        function F() {
+          return window.DiscordNative?.frameDebugger ?? null;
+        }
+        async function B(e) {
+          let t = await Promise.race([
+            (0, P.J)(e, `native-cdp-${Date.now()}-${++k}`, {
+              steps: [
+                {
+                  action: "cdp",
+                  calls: [{ method: "Runtime.releaseObjectGroup", params: {} }],
+                },
+              ],
+              passive: !0,
+            }),
+            new Promise((e) => setTimeout(() => e(null), 1500)),
+          ]);
+          if (t?.status !== "completed") return [];
+          let n = t.response.results[0]?.value?.events;
+          return Array.isArray(n) ? n.slice(-200) : [];
+        }
+        async function V(e, t) {
+          let n = F(),
+            i = (function (e) {
+              try {
+                return new URL(e.src, window.location.href).origin;
+              } catch {
+                return null;
+              }
+            })(t);
+          if (null == n || null == i) return null;
+          if (U?.projectId === e && U.origin === i) return U;
+          if (null != w) {
+            let t = w,
+              n = await t.result;
+            return t.projectId === e && t.origin === i ? n : null;
+          }
+          let r = {
+            projectId: e,
+            origin: i,
+            cancelled: !1,
+            result: Promise.resolve(null),
+          };
+          function a() {
+            return r.cancelled;
+          }
+          (r.result = (async () => {
+            let r;
+            try {
+              r = await n.attach(i);
+            } catch {
+              return null;
+            }
+            if (
+              (x !== n &&
+                ((x = n),
+                n.onDetached((e) => {
+                  U?.id === e && (U = null);
+                })),
+              a())
+            )
+              return n.detach().catch(() => {}), "cancelled";
+            let s = { id: r, projectId: e, origin: i, earlierEvents: [] };
+            return (
+              (U = s),
+              (s.earlierEvents = await B(t).catch(() => [])),
+              a() ? "cancelled" : s
+            );
+          })()),
+            (w = r);
+          try {
+            return await r.result;
+          } finally {
+            w === r && (w = null);
+          }
+        }
+        function H(e, t) {
+          return {
+            status: "completed",
+            response: {
+              ok: e.ok,
+              results: [e],
+              ...("" === t ? {} : { build: t }),
+            },
+          };
+        }
+        async function j(e, t, n) {
+          let i,
+            r = F(),
+            a = (function (e) {
+              if (!0 === e.passive || !0 === e.snapshot || 1 !== e.steps.length)
+                return null;
+              let t = e.steps[0],
+                n = t.calls;
+              return "cdp" !== t.action ||
+                !Array.isArray(n) ||
+                0 === n.length ||
+                n.length > 200
+                ? null
+                : n;
+            })(n);
+          if (null == r || null == a) return null;
+          let s = await V(e, t);
+          if (null == s) return null;
+          if ("cancelled" === s)
+            return H(
+              {
+                action: "cdp",
+                ok: !1,
+                code: "blocked",
+                message: "stopped by the user",
+                ms: 0,
+              },
+              "",
+            );
+          let l = Date.now(),
+            o = new Promise((e) => {
+              i = setTimeout(() => e("timeout"), 1e4);
+            });
+          try {
+            let t = await Promise.race([r.runBatch(a), o]),
+              n = Date.now() - l;
+            if ("timeout" === t)
+              return (
+                W(e),
+                H(
+                  {
+                    action: "cdp",
+                    ok: !1,
+                    code: "timeout",
+                    message: "the batch ran out of time",
+                    ms: n,
+                  },
+                  "",
+                )
+              );
+            if (t.stopped)
+              return H(
+                {
+                  action: "cdp",
+                  ok: !1,
+                  code: "blocked",
+                  message: "stopped by the user",
+                  ms: n,
+                },
+                t.build,
+              );
+            let i = [...s.earlierEvents.splice(0), ...t.events],
+              d = {
+                replies: t.replies,
+                url: t.url,
+                title: t.title,
+                doc: t.doc,
+                ...(i.length > 0 ? { events: i } : {}),
+              };
+            return H({ action: "cdp", ok: !0, value: d, ms: n }, t.build);
+          } catch (t) {
+            return (
+              W(e),
+              {
+                status: "failed",
+                message:
+                  t instanceof Error
+                    ? t.message
+                    : "the preview debugger failed",
+              }
+            );
+          } finally {
+            clearTimeout(i);
+          }
+        }
+        function W(e) {
+          let t = F(),
+            n = G.get(e);
+          null != n && ((n.cancelled = !0), G.delete(e)),
+            w?.projectId === e && (w.cancelled = !0),
+            null != t &&
+              U?.projectId === e &&
+              ((U = null), t.detach().catch(() => {}));
+        }
+        var Y = n(809685),
+          K = n(777977),
+          $ = n(484697);
+        n(667532);
+        var z = n(112420),
+          X = n(652215);
+        function Z(e) {
           return "string" == typeof e && "" !== e ? e : void 0;
         }
-        let P = {
-          [b.e$_.OPEN_CONTEXT_MENU]: (e) =>
+        let q = {
+          [X.e$_.OPEN_CONTEXT_MENU]: (e) =>
             "custom" !== e.args.type
               ? {
                   result: { opened: !0 },
@@ -202179,71 +202444,71 @@ ${a}`);
                     for (let i of t) {
                       if (n.length >= 40) break;
                       if (null == i || "object" != typeof i) continue;
-                      let t = M(i.id);
+                      let t = Z(i.id);
                       null != t && n.push(t), e(i.items, n);
                     }
                     return n;
                   })(e.args.items),
                 },
-          [b.e$_.SHOW_CONFIRM_MODAL]: (e) => ({
+          [X.e$_.SHOW_CONFIRM_MODAL]: (e) => ({
             result:
               "confirm" === e.args.type
                 ? { confirmed: !1 }
                 : { acknowledged: !1 },
             answered: "dismissed",
-            subject: M(e.args.title),
+            subject: Z(e.args.title),
           }),
-          [b.e$_.OPEN_EXTERNAL_LINK]: (e) => ({
+          [X.e$_.OPEN_EXTERNAL_LINK]: (e) => ({
             result: { opened: !1 },
             answered: "cancelled \u2014 an agent may not open external links",
-            subject: M(e.args.url),
+            subject: Z(e.args.url),
           }),
-          [b.e$_.SHARE_CONTENT]: (e) => ({
+          [X.e$_.SHARE_CONTENT]: (e) => ({
             result: { success: !1, didCopyLink: !1, didSendMessage: !1 },
             answered:
               "closed without sharing \u2014 an agent may not send a message for the user",
-            subject: M(e.args.preview_title) ?? M(e.args.content),
+            subject: Z(e.args.preview_title) ?? Z(e.args.content),
           }),
-          [b.e$_.OPEN_USER_PROFILE]: () => ({
+          [X.e$_.OPEN_USER_PROFILE]: () => ({
             result: { opened: !0 },
             answered: "opened",
           }),
-          [b.e$_.OPEN_USER_POPOUT]: () => ({
+          [X.e$_.OPEN_USER_POPOUT]: () => ({
             result: { opened: !0 },
             answered: "opened",
           }),
-          [b.e$_.SHOW_TOOLTIP]: () => ({
+          [X.e$_.SHOW_TOOLTIP]: () => ({
             result: { shown: !0 },
             answered: "shown",
           }),
-          [b.e$_.HIDE_TOOLTIP]: () => ({
+          [X.e$_.HIDE_TOOLTIP]: () => ({
             result: { hidden: !0 },
             answered: "hidden",
           }),
-          [b.e$_.OPEN_MEDIA_VIEWER]: () => ({
+          [X.e$_.OPEN_MEDIA_VIEWER]: () => ({
             result: { opened: !0 },
             answered: "opened",
           }),
-          [b.e$_.SHOW_TOAST]: () => ({
+          [X.e$_.SHOW_TOAST]: () => ({
             result: { shown: !0 },
             answered: "shown",
           }),
-          [b.e$_.OPEN_INVITE_DIALOG]: () => ({
+          [X.e$_.OPEN_INVITE_DIALOG]: () => ({
             result: void 0,
             answered: "opened",
           }),
-          [b.e$_.OPEN_SHARE_MOMENT_DIALOG]: () => ({
+          [X.e$_.OPEN_SHARE_MOMENT_DIALOG]: () => ({
             result: void 0,
             answered: "opened",
           }),
         };
-        Object.keys(P);
-        let U = { drain: () => [], end: () => {}, iframeId: null },
-          w = [];
-        function G(e) {
-          let t = w.find((t) => t.iframeId === e.iframeId);
+        Object.keys(q);
+        let Q = { drain: () => [], end: () => {}, iframeId: null },
+          J = [];
+        function ee(e) {
+          let t = J.find((t) => t.iframeId === e.iframeId);
           if (null == t) return null;
-          let n = P[e.cmd];
+          let n = q[e.cmd];
           if (null == n) return null;
           let { result: i, answered: r, options: a, subject: s } = n(e);
           return (
@@ -202257,38 +202522,37 @@ ${a}`);
             { result: i }
           );
         }
-        function x(e) {
+        function et(e) {
           let t = e.contentWindow;
-          return null == t ? null : ((0, D.lw)(t) ?? null);
+          return null == t ? null : ((0, $.lw)(t) ?? null);
         }
-        function k(e, t) {
-          var n = x(e);
-          if (null == n) return U;
+        function en(e, t) {
+          var n = et(e);
+          if (null == n) return Q;
           let i = { iframeId: n, recorded: [] };
           return (
-            t?.beneathBatches === !0 ? w.push(i) : w.unshift(i),
-            1 === w.length && (0, v.C)(G),
+            t?.beneathBatches === !0 ? J.push(i) : J.unshift(i),
+            1 === J.length && (0, z.C)(ee),
             {
               iframeId: n,
               drain: () => i.recorded.splice(0, i.recorded.length),
               end: () => {
-                let e = w.indexOf(i);
-                -1 !== e && (w.splice(e, 1), 0 === w.length && (0, v.C)(null));
+                let e = J.indexOf(i);
+                -1 !== e && (J.splice(e, 1), 0 === J.length && (0, z.C)(null));
               },
             }
           );
         }
-        var F = n(873715),
-          B = n(226178),
-          V = n(165610);
-        async function H(e) {
+        var ei = n(226178),
+          er = n(165610);
+        async function ea(e) {
           let { onClose: t, ...i } = e,
             { openOAuth2Modal: r } = await Promise.resolve().then(
               n.bind(n, 887909),
             );
-          r((0, B.i)(i), t);
+          r((0, ei.i)(i), t);
         }
-        async function j(e, t, i) {
+        async function es(e, t, i) {
           let {
             probe: r,
             spec: a,
@@ -202297,7 +202561,7 @@ ${a}`);
             resolveUploadUrl: o,
           } = i;
           if (!0 === r)
-            return { status: (0, R.rQ)(e) ? "accepted" : "unavailable" };
+            return { status: (0, M.rQ)(e) ? "accepted" : "unavailable" };
           if (a?.mode === "widget") {
             let { captureConjureProfileWidget: i } = await Promise.all([
               n.e("253781"),
@@ -202337,11 +202601,11 @@ ${a}`);
               resolveUploadUrl: o,
             });
           }
-          let d = await (0, R.o$)(e, 6e3);
+          let d = await (0, M.o$)(e, 6e3);
           if (null == d) return { status: "unavailable" };
           let c = null == l ? { uploadToken: void 0 } : await l();
           if (null == c) return { status: "unavailable" };
-          let u = N(d, {
+          let u = D(d, {
             captureId: t,
             spec: a,
             build: s,
@@ -202355,22 +202619,22 @@ ${a}`);
           }
           let E = await _(3e3);
           if (null != E) return E;
-          let A = await (0, C.i)(d, t, a, c.uploadToken);
+          let A = await (0, v.i)(d, t, a, c.uploadToken);
           return "accepted" === A.status ? A : ((await _(3e3)) ?? A);
         }
-        async function W(e, t, n, i) {
-          if (!(0, R.rQ)(e)) return { status: "unavailable" };
+        async function el(e, t, n, i) {
+          if (!(0, M.rQ)(e)) return { status: "unavailable" };
           let r = (0, c.Wg)(e);
           try {
-            let r = await (0, R.o$)(e, 6e3);
+            let r = await (0, M.o$)(e, 6e3);
             if (null == r) return { status: "unavailable" };
             let a = await i?.();
             if (!1 === a) return { status: "unavailable" };
-            let s = k(r);
+            let s = en(r);
             try {
-              let i = await (0, F.J)(r, t, n);
+              let i = (await j(e, r, n)) ?? (await (0, P.J)(r, t, n));
               if ("completed" !== i.status) return i;
-              let a = [...Y.drain(e), ...s.drain()];
+              let a = [...eo.drain(e), ...s.drain()];
               if (0 === a.length) return i;
               return { ...i, response: { ...i.response, native: a } };
             } finally {
@@ -202380,7 +202644,7 @@ ${a}`);
             r();
           }
         }
-        let Y = (function (e) {
+        let eo = (function (e) {
           let t = new Map();
           function n(e) {
             let n = t.get(e);
@@ -202418,25 +202682,26 @@ ${a}`);
             drain: (e) => t.get(e)?.drain() ?? [],
           };
         })((e) => {
-          let t = (0, R.UJ)(e);
+          let t = (0, M.UJ)(e);
           return null == t
             ? null
             : {
-                identity: x(t),
+                identity: et(t),
                 dismiss: () =>
                   (function (e) {
                     let t = e.contentWindow;
                     if (null == t) return;
-                    let n = (0, D.lw)(t);
-                    null != n && ((0, L.ir)(n), (0, y.OR)(n));
+                    let n = (0, $.lw)(t);
+                    null != n && ((0, Y.ir)(n), (0, K.OR)(n));
                   })(t),
-                open: () => k(t, { beneathBatches: !0 }),
+                open: () => en(t, { beneathBatches: !0 }),
               };
         });
         (0, c.h2)((e) => {
-          let t = (0, R.UJ)(e);
+          W(e);
+          let t = (0, M.UJ)(e);
           null != t &&
-            (0, O.W)(
+            (0, b.W)(
               t,
               "control-end",
               {},
@@ -202448,13 +202713,13 @@ ${a}`);
               },
             ).catch(() => {});
         });
-        let K = {
-          openConjureAppInstallModal: H,
+        let ed = {
+          openConjureAppInstallModal: ea,
           isWindowFocused: function () {
             return o.A.isFocused();
           },
           areTurnNotificationsDisabled: function () {
-            return l.A.getDesktopType() === b.nRU.NEVER;
+            return l.A.getDesktopType() === X.nRU.NEVER;
           },
           presentTurnNotification: function (e) {
             let { title: t, body: r, route: a, sound: l, volume: o } = e;
@@ -202472,12 +202737,13 @@ ${a}`);
               },
             );
           },
-          relayPreviewCapture: j,
-          relayPreviewControl: W,
+          relayPreviewCapture: es,
+          relayPreviewControl: el,
           abortPreviewControl: function (e) {
-            let t = (0, R.UJ)(e);
+            W(e);
+            let t = (0, M.UJ)(e);
             null != t &&
-              (0, O.W)(
+              (0, b.W)(
                 t,
                 "control-abort",
                 {},
@@ -202490,10 +202756,21 @@ ${a}`);
               ).catch(() => {});
           },
           beginPreviewOperation: function (e) {
-            Y.begin(e);
+            eo.begin(e),
+              (function (e) {
+                if (null == F() || G.has(e)) return;
+                let t = { cancelled: !1 };
+                G.set(e, t),
+                  (0, M.o$)(e, 6e3)
+                    .then((n) => (null == n || t.cancelled ? null : V(e, n)))
+                    .catch(() => {})
+                    .finally(() => {
+                      G.get(e) === t && G.delete(e);
+                    });
+              })(e);
           },
           endPreviewOperation: function (e) {
-            Y.end(e);
+            eo.end(e), W(e);
           },
           releasePreviewControl: function (e) {
             (0, c.GU)(e);
@@ -202501,7 +202778,7 @@ ${a}`);
           reloadAppFrames: function (e) {
             if (null != e)
               for (let t of a.A.getAllFrames())
-                (0, V.x1)(t) &&
+                (0, er.x1)(t) &&
                   t.applicationId === e &&
                   !t.data.proxyTicketRefreshing &&
                   r.A.refreshProxyTicket(t.id);
@@ -212822,7 +213099,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "633003", versionHash: "5af356401412e724b9db41ab71907956e93ceeb1" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "633076", versionHash: "f284aad65d4b205920e4f184c3e903d3276d7eb2" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -325690,8 +325967,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1791439916685",
-                      build_number: "633003",
+                      built_at: "1791455951958",
+                      build_number: "633076",
                     },
                   },
                   retries: 1,
@@ -339340,7 +339617,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("431714"),
                 n.e("356675"),
                 n.e("504098"),
-                n.e("283300"),
+                n.e("492383"),
                 n.e("245691"),
                 n.e("98972"),
                 n.e("421060"),
@@ -345152,7 +345429,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("182816"),
                 n.e("64500"),
                 n.e("486825"),
-                n.e("487318"),
+                n.e("847584"),
                 n.e("69658"),
                 n.e("671367"),
                 n.e("375072"),
@@ -347018,7 +347295,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             f = eI.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, rM.A)("1791439916685", !0);
+            let e = (0, rM.A)("1791455951958", !0);
             t =
               null != e
                 ? eV.intl.formatToPlainString(eV.t.wve4kg, {
@@ -347897,7 +348174,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("781949"),
                   n.e("356675"),
                   n.e("504098"),
-                  n.e("283300"),
+                  n.e("492383"),
                   n.e("245691"),
                   n.e("98972"),
                   n.e("431649"),
@@ -439253,7 +439530,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     n.e("64500"),
                     n.e("486825"),
                     n.e("61849"),
-                    n.e("487318"),
+                    n.e("847584"),
                     n.e("274857"),
                     n.e("69658"),
                     n.e("772163"),
@@ -455099,7 +455376,7 @@ ${t}`;
                     n.e("431714"),
                     n.e("356675"),
                     n.e("504098"),
-                    n.e("283300"),
+                    n.e("492383"),
                     n.e("245691"),
                     n.e("98972"),
                     n.e("421060"),
@@ -506322,7 +506599,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "5af356401412e724b9db41ab71907956e93ceeb1",
+                      "f284aad65d4b205920e4f184c3e903d3276d7eb2",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", K),
@@ -516649,7 +516926,7 @@ ${l.join(" +\n")}
               ).then((e) => {
                 let i = {
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    build_number: "633003",
+                    build_number: "633076",
                   },
                   u = o.default.getCurrentUser();
                 null != u &&
@@ -523730,6 +524007,10 @@ ${l.join(" +\n")}
               "DISCORD_POWER_SAVE_BLOCKER_UNBLOCK_DISPLAY_SLEEP"),
             (i.POWER_SAVE_BLOCKER_CLEANUP_DISPLAY_SLEEP =
               "DISCORD_POWER_SAVE_BLOCKER_CLEANUP_DISPLAY_SLEEP"),
+            (i.FRAME_DEBUGGER_ATTACH = "DISCORD_FRAME_DEBUGGER_ATTACH"),
+            (i.FRAME_DEBUGGER_RUN_BATCH = "DISCORD_FRAME_DEBUGGER_RUN_BATCH"),
+            (i.FRAME_DEBUGGER_DETACH = "DISCORD_FRAME_DEBUGGER_DETACH"),
+            (i.FRAME_DEBUGGER_DETACHED = "DISCORD_FRAME_DEBUGGER_DETACHED"),
             (i.PROCESS_UTILS_GET_CPU_USAGE =
               "DISCORD_PROCESS_UTILS_GET_CPU_USAGE"),
             (i.PROCESS_UTILS_FLUSH_DNS_CACHE =
@@ -528630,7 +528911,7 @@ ${l.join(" +\n")}
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("633003", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("633076", 10))) || (l.client_build_number = d),
           null == (c = eo?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -550656,7 +550937,7 @@ ${l.join(" +\n")}
       },
       365912(e, t, n) {
         "use strict";
-        n.d(t, { Ay: () => I, J$: () => h, Wd: () => f });
+        n.d(t, { Ay: () => I, J$: () => h, Pb: () => _, Wd: () => f });
         var i = n(477900),
           r = n(582128),
           a = n(503698),
@@ -626704,7 +626985,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 e
                                                                                                                                                                                                                                                                                                                                                                                                                                                               ? "" +
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 e +
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                ".00b810dd33e18d93.css"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                ".a0bac93cb748a876.css"
                                                                                                                                                                                                                                                                                                                                                                                                                                                               : "377109" ===
                                                                                                                                                                                                                                                                                                                                                                                                                                                                   e
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ? "" +
@@ -627058,8 +627339,6 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     1433: "e626822a99411067",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     145006:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "3e426143eef208a6",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    146090:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "e3364a3cced062ff",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     146697:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "beb7a22bdbef5120",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     14775:
@@ -627304,6 +627583,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "4e4f53d331e19665",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     309702:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "1c134876fd48df55",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    309862:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "2b93036d6483e484",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     310734:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "7b1a8563370f10e0",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     310838:
@@ -627318,6 +627599,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "dc76caab5768cf4c",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     317615:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "990f40f776424e89",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    318025:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "853a644a70fea363",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     318907:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "ec5b0749194be81d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     32039:
@@ -627472,6 +627755,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "50880875990fa0db",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     427761:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "e2523eb3602af274",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    429513:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "66589604d1264b7d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     430877:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "82cb2811a0004053",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     431933:
@@ -627777,6 +628062,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "bdf3e695a6b3cd45",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     607468:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "35318c4b25daf541",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    60933:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "370e498b19778950",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     611899:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "572c0c9b96f067c7",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     614535:
@@ -627824,6 +628111,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "b621bdc8216edfce",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     643363:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "b085c048ab29f4ad",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    643493:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "dfb8f4fd658e5758",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     644565:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "201d9bc0a9929739",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     647367:
@@ -627910,7 +628199,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     694303:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "467b04125570be00",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     695781:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "659ef2c139106326",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "a0f938320dd65299",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     700572:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "3377efd4d3296b35",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     703540:
@@ -627937,8 +628226,6 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "a4e0899236e3031d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     718955:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "7712e53ccdb747ed",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    720141:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "e285961dda01992c",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     720538:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "cb721c07f1ec292b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     721654:
@@ -628238,7 +628525,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     92868:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "2b4250304944fdb3",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     931510:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "2a4e59432dd7a718",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "e4fcb932bccd89e9",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     935205:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       "ea8385f8db317e7b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     936875:
@@ -629342,7 +629629,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                               e
                                                                                                                                                                                                                                                                                                                                                                                                                                                             ? "" +
                                                                                                                                                                                                                                                                                                                                                                                                                                                               e +
-                                                                                                                                                                                                                                                                                                                                                                                                                                                              ".dfd5d58dc4f1334f.js"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                              ".6f6f12e3b7b271ce.js"
                                                                                                                                                                                                                                                                                                                                                                                                                                                             : "377109" ===
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 e
                                                                                                                                                                                                                                                                                                                                                                                                                                                               ? "" +
@@ -629767,7 +630054,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         115321:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "8dc61c8c6fb2ca14",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         115332:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "7ed25d9d31c8cb25",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "f91527a5010ff598",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         115367:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "d70d83185cb52a3f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         115368:
@@ -630112,8 +630399,6 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "ab14bbca598c75df",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         146070:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "69ea36056f30b8d8",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        146090:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "bf48cb9c6f333681",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         146115:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "5762ef6998eb1361",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         146149:
@@ -630781,7 +631066,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         200957:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "f349bfdf0d4a0180",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         201050:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "a5e1e002ab114dee",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "e561bb906060d683",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         201228:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "d07ddb5ad4aea887",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         201243:
@@ -630829,7 +631114,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         206130:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "4d8d2c15203f7872",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         206152:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "617e0f4a369d8997",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "8053c9d3f3ebbba1",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         206372:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "be3c1870e5b1b5e7",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         207309:
@@ -631570,7 +631855,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         263222:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "e2091d6fe80cb16a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         263408:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "8e04140659695aed",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "3d99ef8ace415046",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         263651:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "652036f598820947",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         263953:
@@ -631812,8 +632097,6 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "114e0e1c4418d942",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         283230:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "055a64c6e00c9659",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        283300:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "d9c350138749922b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         283451:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "d892794aeb550819",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         283543:
@@ -631890,7 +632173,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         290159:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "a03cd6a947603a7e",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         290639:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "0c3253b54ecbc597",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "944c63b86e7afcf3",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         290652:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "4ce2b0415bbddf55",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         290828:
@@ -632126,6 +632409,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "55b267d41910ba9e",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         309702:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "eb247d6c4bb13b83",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        309862:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "5d27e4912321e003",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         31e4: "cff9ecf02d421e38",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         310489:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "55ce6996887181a2",
@@ -632216,6 +632501,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "3f8c0cbbf9591e94",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         317985:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "bda167720f895cf9",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        318025:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "8cfc0e21cc27ed93",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         318197:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "374c3c57bd53fe91",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         318420:
@@ -632650,7 +632937,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         356296:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6330b5ba31f67634",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         356675:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "d808e001bd8a91db",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "f2173551a05cc615",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         356952:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "2bc6f324bcb1cc6e",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         357197:
@@ -632713,6 +633000,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "d89c5b041752a500",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         361569:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "9de9d43fc3e49373",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        361596:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "ac55ba81499beff8",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         361626:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "52704b39a440ef6c",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         361671:
@@ -633341,7 +633630,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         41442:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "8a8f0aef0dfbed75",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         414501:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "7344fb83f1fa4ac6",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "f0e6e62e92f88c07",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         414522:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "a041cec62d5697e8",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         414591:
@@ -633539,6 +633828,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "4d9e4b28b64603a4",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         429232:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "503c9a09af152ba3",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        429513:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "e86bd9199dcc658b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         429624:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "116ad8f0cfed8f07",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         429953:
@@ -633548,7 +633839,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         430997:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "9e118497906e58e1",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431294:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "93e452b5b34dd014",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "873b3be5e50ba7e4",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431422:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "0d2886b25588e3cc",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431649:
@@ -633560,7 +633851,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431881:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "de530451dafc4e32",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431897:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "861f482f3f9c696c",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "bf519c385fb593cc",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431933:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "32642c1b7fa84c5d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         432209:
@@ -633972,7 +634263,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         46460:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "a4b3ac278b647ed9",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         464675:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "79e3b343c74a6b51",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "52b11e58d146e0ac",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         464745:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "7345ed5afb919c49",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         464749:
@@ -634220,8 +634511,6 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "5e09fee5474e31da",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         486825:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "77eae2c3703aaeac",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        487318:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "42f4ee39cdd17b9b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         487697:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "77f8a9b5cf05bf8f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         487729:
@@ -634284,6 +634573,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "f3f2ad85a034eaf4",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         492073:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "023cdc511b05c9b3",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        492383:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "11cc338743991354",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         492412:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "d822253d87df9bb2",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         492496:
@@ -634653,7 +634944,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         522804:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "8207968f6a0462fc",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         522872:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "59125d642b0fd513",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "69dfc1d7ea1d059c",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         52320:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "234297a4f506e1b3",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         523276:
@@ -634697,7 +634988,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         52584:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "5aab2b617a1a39cd",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         526274:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "e766f6390b5ff09d",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "ca161687d29d4894",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         526448:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6e43a85685bb37f9",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         526766:
@@ -634769,7 +635060,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         531521:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "37bdf406924d2e09",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         531527:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "36a0650531f8d71a",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "f446e3873cfe700f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         531909:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "7727793bf16dd781",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         531997:
@@ -635050,7 +635341,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         556967:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "4dfd10f8dea15b34",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         557089:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "34fc66b5dbb2a7be",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "cea179641cad5a39",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         557277:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "d418eeacec228c54",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         557685:
@@ -635071,8 +635362,6 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "f999da23ba3b166d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         560183:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "4fd0f4d50832e9c0",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        560250:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "c7f6bc3856c0a133",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         560394:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "74edb486bf55357e",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         560699:
@@ -635174,7 +635463,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         567478:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "41fc2347165574b7",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         567620:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "e3355fe37b549c5f",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "fc2a6975300ccc7d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         567743:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "edde8abbcb6251ec",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         568035:
@@ -635540,6 +635829,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "9e95c635d5633b19",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         598474:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "0c4762ffe0ac3f6e",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        598606:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "31762ff6f4a64aab",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         598892:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "07a0c95bd89f5daf",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         599141:
@@ -635656,6 +635947,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "48e649422e204c17",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         609167:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "53de012d7296897c",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        60933:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "dd3ce6f564238ec6",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         60955:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "b2df4ce6e0382fe9",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         609733:
@@ -636074,6 +636367,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "0eadb1b8c212761d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         643414:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "553981aa01686489",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        643493:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "ab0eb55bbe9b2e8f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         643568:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6a63c9014347255a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         643870:
@@ -636807,7 +637102,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         701911:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "b7ac53f87c6f05ec",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         702091:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "010d5760b9b200ae",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "e1042b1d017d2b5f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         702097:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "a13975ceaaf7f469",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         702846:
@@ -637042,8 +637337,6 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "26d6008c3fccdfcc",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         720094:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "561989976dfb41f7",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        720141:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "dfca577121f1402a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         720161:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "4479bf7ab7beba28",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         720516:
@@ -637071,7 +637364,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         722401:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "8991b40e5da57bf1",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         722440:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "01cabc533778211e",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "a287373f064b55be",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         722612:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "1d6a2673e7f98b69",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         722640:
@@ -637257,7 +637550,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         736585:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "5f972686520d3300",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         736621:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "b13703b570a71b7c",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "18d71ffb202cb0b0",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         736637:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "9a193689b4ad1bb7",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         736674:
@@ -637394,7 +637687,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         747731:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "20e39920b744f6e0",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         747868:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "2e7a8f277429010f",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "ff7de07725e31268",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         747948:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "8774c658cd4cfa18",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         747993:
@@ -638624,6 +638917,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "278e81c190a8dd30",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         84755:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "1cd63a5dcc05e403",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        847584:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "fd5e4a54fb5281be",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         847785:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "ef517a60af4108bc",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         847799:
@@ -639304,7 +639599,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         904727:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "8003404513a97b8e",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         90474:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "c10b4867fcdb15e1",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "4423edb1c207543c",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         904774:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "89f7bba725d50f2a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         904855:
@@ -639405,6 +639700,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "ba5a6f6224a95ae2",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         913491:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "2fbd030942ac8a18",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        913604:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "76ba8f9700172cac",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         913823:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "b6808fcd8f587b34",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         913954:
@@ -639528,7 +639825,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         924584:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "2be72afd03731fca",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         924691:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "6a6bff0207bc9f88",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "ae04ed75dc5bc7f3",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         924832:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "469dfd2a94060f10",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         924927:
@@ -639551,8 +639848,6 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "100212505f0d860a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         926132:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "011defdad14709a8",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        926503:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "931d6d5d5e5e59e5",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         926510:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "77deb816d4685d14",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         926620:
@@ -639620,7 +639915,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         931233:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "7517adf0f51591e0",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         931510:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "63c9d7afa8ab182d",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "446411fd552bd3ab",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         931578:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "ee2d233346826d11",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         931607:
@@ -640140,7 +640435,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         983390:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "cc112d3df4cc739f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         983508:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "f48e286176072199",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "60c44241d78f1cee",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         983525:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "9c13a95115da8d55",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         983625:
@@ -640318,7 +640613,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         998955:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "23fba4b85b018a1a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         999045:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "37dd79d66b2f1e59",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "4fbbb5ff312210e0",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         999063:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "15aebe36ba6b01bf",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         99949:
@@ -641113,7 +641408,7 @@ color: purple;
       if (0 !== i)
         if (i) t.push(i[2]);
         else if (
-          /^(4(0(07(4|80)|1(106|317|425)|7(32(|6)|91)|3(032|382|643|655)|271|5689|5714|6242|6322|8203)|4(2(524|610|781)|6(215|34|761)|31(36|59)|(40|87)38|(06|85)36|1674|5147|5380)|2(6(737|782|965)|3(117|211|538)|(044|167|421)6|0282|2750|5292|7761|809)|5(0(36|530|998)|6(436|46|510)|9(086|257|368|397)|(26|742|809)8|1895|2880|374|4423|7866|8855)|6(0(582|83|915)|4(452|759|838)|57(73|94)|3(143|276|317|455)|1123|238|2427|6592|6924|7506|8555|8617|9663)|1(1(302|619|938)|9(070|121|915)|0526|4522|5695|7867|8319)|8(7(644|697|873)|9(020|217|361|565)|0527|0889|1597|8602|8926)|7(5(006|071|775)|0532|097|1043|268|2847|3782|7550|7751)|3(5(751|78|860)|(40|61)01|(193|468|85)3|0877|2880|7157|7655)|9(8(167|589|640)|0449|0743|1183|2599|2936|4150|5628|571|742))|2(0(2(342|976|985)|5(035|406|894)|6(03|130|516)|(107|365|426|999)4|(4|73)09|0075|3112|7998)|4(7(471|74|917)|9(169|727|918)|(046|494|585)1|(169|179|218)7|2266|3486|3794|5652|8089|8625)|2(2(267|589|969)|6(229|589|867)|7(100|512|652|853|955)|(368|415|86)5|0868|3213|5307|5560|8767|9269|9511)|5(8(39|616|759)|3(00|335|781)|0440|1937|6172|7073|7935|9298)|6(62[08]1|(100|50|548)0|(063|120|256|961|971)4|0009|3406|4141|7526|7732)|1(6(656|806|870|947)|(22|97)98|1004|3042|3217|486|7991|8466)|8((099|920|978)9|2050|3543|3887|420|5558|636|6615|8123)|7(9(385|774|926)|2(223|396|430|788|915)|(497|61|68)2|3169|3298|4654|5179)|3(40(17|52)|58(12|44)|(00|97)29|7427|8595|9592)|9(1(04|10|95)3|2699|4411|489|5570|6956|8903))|5(0(0(186|194|505)|4(374|715|867)|7(140|26|278|528|621)|([35]63|38)4|1277|1546|5928|9032)|4((56|75)10|1656|3521|5749|6957|8018|8252|9091)|2(83(11|87)|7(27|302|552|798|81)|9(366|659|787)|0689|0957|6575|6807)|5(5(235|679|956|977)|3(0|464|627|829)|(13|26)53|2705|4970|6436|6647|7729|994)|6(0(042|338|570|699)|4(091|447|833|98)|8(035|86|960)|(16|27)72|347|606|6594|7999|9080)|1(4(024|567|588)|5(293|363|638|857)|3(221|747|843)|6(201|497|949)|0933|9237|9435)|8(49(5|96)|(0|73)08|(030|500|803)5|(201|666|975)2|243|353|6206|7669|9154)|7(0([49]73|690)|71(54|62)|(3|99)58|1331|1481|2717|3013|6083|6854)|3(6(490|75|849)|3(240|651|781)|0009|0166|1521|2648|5308|5413|719|8712|8855)|9(59(44|45|9|90)|8(47[46]|263|947)|(358|499|926)6|0088|0275|2268|4045|7981|9660))|6(0(5(263|326|395)|1(031|04|495)|3(091|619|737)|002|0336|2023|4153|4456|7468|882|9019)|4(2(31|341|578)|7(367|562|658|69)|(336|401|539)3|0380|097|1794|1877|4565|640|8241)|2((29|96)36|0019|0963|1712|2074|5000|6353|849|9972)|5(0((|1)00|195)|5(282|327|825)|7(266|503|682)|(36|69)97|1299|1886|2014|2200|8423|8520)|6(0201|0608|5979|8526|9130|9706)|1(53(1|44)|1137|1899|3085|4535|4929|68|7281|8416|9984)|8(0(015|114|212|431)|4(231|290|954|986)|9(387|521|827)|3(023|084|302|621)|6(047|731|889)|1801)|7(5(052|327|582)|7(02|508|624|668)|31(30|6)|0058|032|1464|491|8674|8906|9502|9928)|3(4(225|508|941)|8(023|259|658|781|797)|0279|1323|5338|5958|7844|9887)|9(3(635|684|958)|(43|94)03|112|1398|2811|5781))|1(0(7(033|427|701)|058|071|1105|1801|3137|4188|4864|6980|886|9383|985)|4(8(326|729|758|886|942)|3(172|3|35)|(06|50)06|2753|6090|6697|7119|775|9249)|2(0(239|35|410|561|933)|5(043|32|466)|(1|405|880)4|1046|2326|3727|6301|9621)|5(7(064|771|931)|6(316|422|957)|0009|0183|2263|2862|3302|9597)|6(0(246|425|496)|(447|599|689|818)4|1411|2182|2775|3399|3466|5291|7506|8248|9727)|1(6(125|160|815)|(028|543|976)6|0839|3391|3561|4383|4688|5308|8203|9182)|8(9(281|423|908)|0556|1166|3715|3910|4821|6204|7127|7880|8259)|7(2(413|56|727)|9(028|301|652)|(120|389|708)6|1120|4554|5804|833)|3(0185|0662|2073|2502|566|8545)|9(4(399|704|933)|3(457|845|85)|(015|5|74)5|(153|606|966)3|1601|2318|5830|8496|8877|9752))|8(0(2(380|598|890)|(351|555|639)1|1348|3966|4365|6152|7007|7432|8368)|4(5(486|636|769)|7(445|499|727|810|980)|9(162|560|93)|0100|1136|3335|4331|6582)|2(171(|7)|7(31|649|788)|(38|613|884)9|4992|5478|6744|937)|5(9(516|821|864)|(219|42|729)7|0979|1503|4326|6763)|6(1(035|161|494|973)|8(052|193|544|577)|0350|0640|2179|2543|5257|5429|6212)|1(8(291|479|860)|1198|1566|2453|4431|4796|59|6027|94)|8(0(150|186|248)|484[18]|6(8(07|3|95|96)|631)|1(063|66|965)|8(213|454|499)|(322|351|525)1|7789|9002)|7(0(088|423|809)|57[16]2|(688|773|814)0|3532|3943|6364|9641)|3(0(171|560|836)|([46]05|113|446)0|(319|918|977)2|2637|6178|7031)|9(5(14|30|359|840|909)|6(496|622|691|995)|(287|293|895)7|1089|1473|4292|9003|914))|7(0(3(298|540|76|942)|0572|1335|2154|4570|6073|6209|866|9976)|4(0(291|705|826)|2(11|445|978)|52(|81)|8(231|53|86)|7(278|400|802|973)|4554|6309|979)|2(0(141|210|538)|2(640|765|784)|(192|713|880)9|1654|3180|338|4086|6542)|5(0(370|568|955)|(436|459|908)6|2657|2704|8053|9743)|6(8(289|581|613)|9(266|28|590)|3(214|343|945)|0662|1232|2309|2831|5626|6806)|1(5(170|528|958)|1(162|51|69)|8(269|66|955)|(234|371|93)0|0075|0379|2419|3273|4144)|8(0509|1173|2208|4993|6830|8029|8938|956)|7(0(061|105|444|583|720)|69(15|68)|87(16|99)|(159|418|94)8|2565|2699|4550|5417|7285|9367)|3(4(027|187|818)|8(098|349|991)|6(159|663|919)|0008|0931|3199|3814|7132|7853|946)|9(0340|0484|1370|1879|2783|2818|6057|6668|7845|9075))|3(0(3([48]25|779)|0641|0867|1850|1969|2458|2800|4419|482|5161|6695|7107|7314|9702)|4(03(41|63)|1161|3298|6829|8231)|2(4(520|866|931)|7(439|545|736|744)|(03|307|655)9|125|1855|2497|3223|5522|6794)|5(9(189|244|970)|24(21|56)|8(93[17]|404|574|810)|1200|3604|5502)|6(0(26|732|777)|3(189|66|750|874)|(546|78|899)1|1922|2079|4956|565|6100|6396|7675)|1(0(734|838|994)|5(273|289|513)|15(41|80|9)|3097|331|4001|4479|7615|8907|9714)|8(6(345|655|830)|(454|797|825)0|(121|550|847)4|7132|956)|7(7(016|04|109|368|476|989)|8(100|21|267)|0017|2883|6922)|3(1(212|584|696)|9(013|09|384)|(093|300|416|821)8|(55|83)32|0150|2165|6046|7375|7931)|9((003|176|351|365)4|0430|2028|2833|4692|5919|6635|8791|8929))|9(0(37(33|58)|(098|193|725)3|0578|2654|5201|6470|6710|8868|9091|9189)|4(2(030|068|571)|3968|4121|4492|5210|5756|6697|7870|8054|8705|938|9946)|2(0(099|907|955)|(306|601|780|86)8|(132|580|678)7|1903|3981|4399|7532|8873)|5(20(07|68)|54(10|24)|3(327|343|840)|9311|9922)|6(92(2|74)|(173|295|570)3|100|2811|6268|6366|724)|1(4(052|175|46|553)|6(131|692|885)|1((14|74|83)7|342)|0349|2597|5082|8347|8786|9170|9789)|8((183|351|731)3|0902|1079|4|5301|7221|8435|9877)|7(0(062|200|604|760)|1(082|156|86|91)|2281|6389|6888|7306|7412|8226|8953|9259|9862)|3((520|687|874)5|012|0206|1510|2020|2696|9329)|9(2(535|758|956)|6(036|43|499|907)|35(1|62)|0185|1051|5941|7183|7926|8392|8835)))$/.test(
+          /^(4(0(07(4|80)|1(106|317|425)|7(32(|6)|91)|3(032|382|643|655)|271|5689|5714|6242|6322|8203)|4(2(524|610|781)|6(215|34|761)|31(36|59)|(40|87)38|(06|85)36|1674|5147|5380)|2(6(737|782|965)|3(117|211|538)|(044|167|421)6|0282|2750|5292|7761|809|9513)|5(0(36|530|998)|6(436|46|510)|9(086|257|368|397)|(26|742|809)8|1895|2880|374|4423|7866|8855)|6(0(582|83|915)|4(452|759|838)|57(73|94)|3(143|276|317|455)|1123|238|2427|6592|6924|7506|8555|8617|9663)|1(1(302|619|938)|9(070|121|915)|0526|4522|5695|7867|8319)|8(7(644|697|873)|9(020|217|361|565)|0527|0889|1597|8602|8926)|7(5(006|071|775)|0532|097|1043|268|2847|3782|7550|7751)|3(5(751|78|860)|(40|61)01|(193|468|85)3|0877|2880|7157|7655)|9(8(167|589|640)|0449|0743|1183|2599|2936|4150|5628|571|742))|2(0(2(342|976|985)|5(035|406|894)|6(03|130|516)|(107|365|426|999)4|(4|73)09|0075|3112|7998)|4(7(471|74|917)|9(169|727|918)|(046|494|585)1|(169|179|218)7|2266|3486|3794|5652|8089|8625)|2(2(267|589|969)|6(229|589|867)|7(100|512|652|853|955)|(368|415|86)5|0868|3213|5307|5560|8767|9269|9511)|5(8(39|616|759)|3(00|335|781)|0440|1937|6172|7073|7935|9298)|6(62[08]1|(100|50|548)0|(063|120|256|961|971)4|0009|3406|4141|7526|7732)|1(6(656|806|870|947)|(22|97)98|1004|3042|3217|486|7991|8466)|8((099|920|978)9|2050|3543|3887|420|5558|636|6615|8123)|7(9(385|774|926)|2(223|396|430|788|915)|(497|61|68)2|3169|3298|4654|5179)|3(40(17|52)|58(12|44)|(00|97)29|7427|8595|9592)|9(1(04|10|95)3|2699|4411|489|5570|6956|8903))|5(0(0(186|194|505)|4(374|715|867)|7(140|26|278|528|621)|([35]63|38)4|1277|1546|5928|9032)|4((56|75)10|1656|3521|5749|6957|8018|8252|9091)|2(83(11|87)|7(27|302|552|798|81)|9(366|659|787)|0689|0957|6575|6807)|5(5(235|679|956|977)|3(0|464|627|829)|(13|26)53|2705|4970|6436|6647|7729|994)|6(0(042|338|570|699)|4(091|447|833|98)|8(035|86|960)|(16|27)72|347|606|6594|7999|9080)|1(4(024|567|588)|5(293|363|638|857)|3(221|747|843)|6(201|497|949)|0933|9237|9435)|8(49(5|96)|(0|73)08|(030|500|803)5|(201|666|975)2|243|353|6206|7669|9154)|7(0([49]73|690)|71(54|62)|(3|99)58|1331|1481|2717|3013|6083|6854)|3(6(490|75|849)|3(240|651|781)|0009|0166|1521|2648|5308|5413|719|8712|8855)|9(59(44|45|9|90)|8(47[46]|263|947)|(358|499|926)6|0088|0275|2268|4045|7981|9660))|6(0(5(263|326|395)|1(031|04|495)|3(091|619|737)|(202|415|93)3|002|0336|4456|7468|882|9019)|4(2(31|341|578)|7(367|562|658|69)|(336|349|401|539)3|0380|097|1794|1877|4565|640|8241)|2((29|96)36|0019|0963|1712|2074|5000|6353|849|9972)|5(0((|1)00|195)|5(282|327|825)|7(266|503|682)|(36|69)97|1299|1886|2014|2200|8423|8520)|6(0201|0608|5979|8526|9130|9706)|1(53(1|44)|1137|1899|3085|4535|4929|68|7281|8416|9984)|8(0(015|114|212|431)|4(231|290|954|986)|9(387|521|827)|3(023|084|302|621)|6(047|731|889)|1801)|7(5(052|327|582)|7(02|508|624|668)|31(30|6)|0058|032|1464|491|8674|8906|9502|9928)|3(4(225|508|941)|8(023|259|658|781|797)|0279|1323|5338|5958|7844|9887)|9(3(635|684|958)|(43|94)03|112|1398|2811|5781))|1(0(7(033|427|701)|058|071|1105|1801|3137|4188|4864|6980|886|9383|985)|4(8(326|729|758|886|942)|3(172|3|35)|(06|50)06|2753|6697|7119|775|9249)|2(0(239|35|410|561|933)|5(043|32|466)|(1|405|880)4|1046|2326|3727|6301|9621)|5(7(064|771|931)|6(316|422|957)|0009|0183|2263|2862|3302|9597)|6(0(246|425|496)|(447|599|689|818)4|1411|2182|2775|3399|3466|5291|7506|8248|9727)|1(6(125|160|815)|(028|543|976)6|0839|3391|3561|4383|4688|5308|8203|9182)|8(9(281|423|908)|0556|1166|3715|3910|4821|6204|7127|7880|8259)|7(2(413|56|727)|9(028|301|652)|(120|389|708)6|1120|4554|5804|833)|3(0185|0662|2073|2502|566|8545)|9(4(399|704|933)|3(457|845|85)|(015|5|74)5|(153|606|966)3|1601|2318|5830|8496|8877|9752))|8(0(2(380|598|890)|(351|555|639)1|1348|3966|4365|6152|7007|7432|8368)|4(5(486|636|769)|7(445|499|727|810|980)|9(162|560|93)|0100|1136|3335|4331|6582)|2(171(|7)|7(31|649|788)|(38|613|884)9|4992|5478|6744|937)|5(9(516|821|864)|(219|42|729)7|0979|1503|4326|6763)|6(1(035|161|494|973)|8(052|193|544|577)|0350|0640|2179|2543|5257|5429|6212)|1(8(291|479|860)|1198|1566|2453|4431|4796|59|6027|94)|8(0(150|186|248)|484[18]|6(8(07|3|95|96)|631)|1(063|66|965)|8(213|454|499)|(322|351|525)1|7789|9002)|7(0(088|423|809)|57[16]2|(688|773|814)0|3532|3943|6364|9641)|3(0(171|560|836)|([46]05|113|446)0|(319|918|977)2|2637|6178|7031)|9(5(14|30|359|840|909)|6(496|622|691|995)|(287|293|895)7|1089|1473|4292|9003|914))|7(0(3(298|540|76|942)|0572|1335|2154|4570|6073|6209|866|9976)|4(0(291|705|826)|2(11|445|978)|52(|81)|8(231|53|86)|7(278|400|802|973)|4554|6309|979)|2(2(640|765|784)|(05|3)38|(192|713|880)9|0210|1654|3180|4086|6542)|5(0(370|568|955)|(436|459|908)6|2657|2704|8053|9743)|6(8(289|581|613)|9(266|28|590)|3(214|343|945)|0662|1232|2309|2831|5626|6806)|1(5(170|528|958)|1(162|51|69)|8(269|66|955)|(234|371|93)0|0075|0379|2419|3273|4144)|8(0509|1173|2208|4993|6830|8029|8938|956)|7(0(061|105|444|583|720)|69(15|68)|87(16|99)|(159|418|94)8|2565|2699|4550|5417|7285|9367)|3(4(027|187|818)|8(098|349|991)|6(159|663|919)|0008|0931|3199|3814|7132|7853|946)|9(0340|0484|1370|1879|2783|2818|6057|6668|7845|9075))|3(0(3([48]25|779)|(48|970|986)2|0641|0867|1850|1969|2458|2800|4419|5161|6695|7107|7314)|4(03(41|63)|1161|3298|6829|8231)|2(4(520|866|931)|7(439|545|736|744)|(03|307|655)9|125|1855|2497|3223|5522|6794)|5(9(189|244|970)|24(21|56)|8(93[17]|404|574|810)|1200|3604|5502)|6(0(26|732|777)|3(189|66|750|874)|(546|78|899)1|1922|2079|4956|565|6100|6396|7675)|1(0(734|838|994)|5(273|289|513)|15(41|80|9)|3097|331|4001|4479|7615|8025|8907|9714)|8(6(345|655|830)|(454|797|825)0|(121|550|847)4|7132|956)|7(7(016|04|109|368|476|989)|8(100|21|267)|0017|2883|6922)|3(1(212|584|696)|9(013|09|384)|(093|300|416|821)8|(55|83)32|0150|2165|6046|7375|7931)|9((003|176|351|365)4|0430|2028|2833|4692|5919|6635|8791|8929))|9(0(37(33|58)|(098|193|725)3|0578|2654|5201|6470|6710|8868|9091|9189)|4(2(030|068|571)|3968|4121|4492|5210|5756|6697|7870|8054|8705|938|9946)|2(0(099|907|955)|(306|601|780|86)8|(132|580|678)7|1903|3981|4399|7532|8873)|5(20(07|68)|54(10|24)|3(327|343|840)|9311|9922)|6(92(2|74)|(173|295|570)3|100|2811|6268|6366|724)|1(4(052|175|46|553)|6(131|692|885)|1((14|74|83)7|342)|0349|2597|5082|8347|8786|9170|9789)|8((183|351|731)3|0902|1079|4|5301|7221|8435|9877)|7(0(062|200|604|760)|1(082|156|86|91)|2281|6389|6888|7306|7412|8226|8953|9259|9862)|3((520|687|874)5|012|0206|1510|2020|2696|9329)|9(2(535|758|956)|6(036|43|499|907)|35(1|62)|0185|1051|5941|7183|7926|8392|8835)))$/.test(
             e,
           )
         ) {
@@ -641612,4 +641907,4 @@ color: purple;
   );
   C = T.O(C);
 })();
-//# sourceMappingURL=web.379a3439c98dd3af.js.map
+//# sourceMappingURL=web.ae475728147056a6.js.map
