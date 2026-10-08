@@ -1,0 +1,51 @@
+.row__02ff5 {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: var(--space-8) 0;
+}
+.button__02ff5,
+.row__02ff5 {
+  display: flex;
+  justify-content: center;
+}
+.button__02ff5 {
+  align-items: center;
+  background-color: var(--background-mod-strong);
+  background-image: radial-gradient(
+      circle 32px at 12% 94%,
+      rgba(45, 53, 173, 0.63) 0,
+      rgba(45, 53, 173, 0.28) 45%,
+      rgba(45, 53, 173, 0) 100%
+    ),
+    radial-gradient(
+      circle 32px at 97% 94%,
+      rgba(255, 76, 210, 0.63) 0,
+      rgba(255, 76, 210, 0.28) 45%,
+      rgba(255, 76, 210, 0) 100%
+    );
+  border-radius: var(--radius-sm);
+  color: var(--icon-default);
+  cursor: pointer;
+  height: var(--custom-emoji-picker-constants-unicode-category-icon-size);
+  overflow: hidden;
+  padding: var(--custom-emoji-picker-constants-unicode-category-icon-padding);
+  transition: background-color 0.1s ease-in-out;
+  width: var(--custom-emoji-picker-constants-unicode-category-icon-size);
+}
+.button__02ff5:hover {
+  background-color: var(--interactive-background-hover);
+}
+.enable-forced-colors .row__02ff5 {
+  border-bottom: 1px solid CanvasText;
+}
+.enable-forced-colors .button__02ff5 {
+  background-image: none;
+  border: 1px solid Canvas;
+  color: ButtonText;
+  transition: none;
+}
+.enable-forced-colors .button__02ff5:hover {
+  background: ButtonFace;
+  border-color: ButtonText;
+}
+
+/*# sourceMappingURL=861973.9f47a69c2fbfa09f.css.map*/
