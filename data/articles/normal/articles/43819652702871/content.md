@@ -1,7 +1,13 @@
 <div class="info-box">
+  <strong>Note:</strong> A full Brazilian Portuguese translation of this article
+  is coming soon. Until it's available, some sections may appear in English. We
+  appreciate your patience.
+</div>
+<div class="info-box">
   <span style="color: #011347"
-    >Note: Individuals to whom Decree 12,976/2026 does not apply may submit
-    reports of non-consensual intimate imagery (NCII) through our standard </span
+    ><strong>Note</strong>: Individuals to whom Decree 12,976/2026 does not
+    apply may submit reports of non-consensual intimate imagery (NCII) through
+    our standard </span
   ><a
     href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord"
     target="_blank"
@@ -43,9 +49,9 @@
   </li>
 </ul>
 <div class="warn-box">
-  Important: Need immediate help? If you have concerns about your personal
-  safety, or the safety of someone you know, please contact local law
-  enforcement or social services.
+  <strong>Important</strong>: Need immediate help? If you have concerns about
+  your personal safety, or the safety of someone you know, please contact local
+  law enforcement or social services.
 </div>
 <div class="toc-box">
   <p>
@@ -120,13 +126,13 @@
   >
   using the in-app report menu.
 </p>
-<p>
-  Important: Please note that intimate imagery of a person under the age of 18
-  constitutes Child Sexual Abuse Material (CSAM). We report illegal child sexual
-  abuse material and grooming to the National Center for Missing &amp; Exploited
-  Children (NCMEC). Discord takes enforcement action against users who post such
-  content.
-</p>
+<div class="warn-box">
+  <strong>Important</strong>: Please note that intimate imagery of a person
+  under the age of 18 constitutes Child Sexual Abuse Material (CSAM). We report
+  illegal child sexual abuse material and grooming to the National Center for
+  Missing &amp; Exploited Children (NCMEC). Discord takes enforcement action
+  against users who post such content.
+</div>
 <p>
   Discord’s obligations as a covered provider under Decree 12,976/2026 include:
 </p>
