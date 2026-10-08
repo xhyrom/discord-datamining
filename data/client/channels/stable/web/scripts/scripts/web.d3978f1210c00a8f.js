@@ -45136,7 +45136,7 @@ ${a}`);
           n.e("859864").then(n.t.bind(n, 122123, 19));
         let e7 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eK.A().log(
-          `[BUILD INFO] Release Channel: ${e7}, Build Number: 631730, Version Hash: 59b3d22ec95ee0f00f05d94e0c17faf2a316e7ed`,
+          `[BUILD INFO] Release Channel: ${e7}, Build Number: 632301, Version Hash: e4f2a199ac905e7adaf50aefa2d70cf746f24419`,
         ),
           U.A.setTags({ appContext: V.QCW }),
           em.A.initBasic(),
@@ -72090,7 +72090,7 @@ ${a}`);
                     className: tc()(LP.Wz, LP.mr),
                     children: [
                       (0, v.jsx)(LM, { className: LP.Kk }),
-                      tC.intl.format(tC.t.uyrfYF, { buildNumber: "631730" }),
+                      tC.intl.format(tC.t.uyrfYF, { buildNumber: "632301" }),
                       (0, v.jsx)(r, {}),
                     ],
                   })
@@ -149910,7 +149910,7 @@ ${a}`);
                 (e) => {
                   if (
                     null == e.body ||
-                    "59b3d22ec95ee0f00f05d94e0c17faf2a316e7ed" === e.body.hash
+                    "e4f2a199ac905e7adaf50aefa2d70cf746f24419" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -159236,10 +159236,10 @@ ${a}`);
                 t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("631730")),
+                  ((e = parseInt("632301")),
                   Number.isNaN(e) &&
                     (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 631730",
+                      "Trying to open a changelog for an invalid build number 632301",
                     ),
                     (e = 0)),
                   e),
@@ -212547,7 +212547,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "631730", versionHash: "59b3d22ec95ee0f00f05d94e0c17faf2a316e7ed" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "632301", versionHash: "e4f2a199ac905e7adaf50aefa2d70cf746f24419" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -325139,8 +325139,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1791386837936",
-                      build_number: "631730",
+                      built_at: "1791405701189",
+                      build_number: "632301",
                     },
                   },
                   retries: 1,
@@ -346374,7 +346374,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             f = em.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, rw.A)("1791386837936", !0);
+            let e = (0, rw.A)("1791405701189", !0);
             t =
               null != e
                 ? eW.intl.formatToPlainString(eW.t.wve4kg, {
@@ -463862,7 +463862,7 @@ ${t}`;
       },
       646731(e, t, n) {
         "use strict";
-        n.d(t, { Yc: () => eV, vG: () => eY, FT: () => eB, EA: () => eK });
+        n.d(t, { Yc: () => ej, vG: () => e$, FT: () => eH, EA: () => ez });
         var i = n(477900),
           r = n(582128),
           a = n(503698),
@@ -463871,73 +463871,75 @@ ${t}`;
           o = n(806163),
           d = n(17928),
           c = n(939249),
-          u = n(922016),
-          _ = n(793574),
-          E = n(688810),
-          A = n(757036),
-          h = n(369189),
-          f = n(366505),
-          I = n(166403),
-          p = n(174459),
-          T = n(124861),
-          m = n(318346),
-          g = n(362862),
-          S = n(478996),
-          N = n(923138),
-          C = n(12510),
-          O = n(673125),
-          R = n(821609),
-          L = n(661531),
-          y = n(403581),
-          D = n(834730),
-          v = n(140735),
-          b = n(683071),
-          M = n(577473),
-          P = n(34188),
-          U = n(369606),
-          w = n(28863),
-          G = n(305866),
-          x = n(475743),
-          k = n(303136),
-          F = n(975571),
-          B = n(626031),
-          V = n(320448),
-          H = n(404778),
-          j = n(318254),
-          W = n(742967),
-          Y = n(570165),
-          K = n(375708),
-          $ = n(137484),
-          z = n(427483);
-        function X(e) {
+          u = n(192308),
+          _ = n(922016),
+          E = n(793574),
+          A = n(688810),
+          h = n(757036),
+          f = n(369189),
+          I = n(366505),
+          p = n(287809),
+          T = n(166403),
+          m = n(174459),
+          g = n(124861),
+          S = n(318346),
+          N = n(362862),
+          C = n(478996),
+          O = n(923138),
+          R = n(12510),
+          L = n(673125),
+          y = n(821609),
+          D = n(661531),
+          v = n(403581),
+          b = n(834730),
+          M = n(140735),
+          P = n(683071),
+          U = n(577473),
+          w = n(34188),
+          G = n(369606),
+          x = n(28863),
+          k = n(305866),
+          F = n(475743),
+          B = n(303136),
+          V = n(975571),
+          H = n(626031),
+          j = n(320448),
+          W = n(404778),
+          Y = n(318254),
+          K = n(742967),
+          $ = n(570165),
+          z = n(375708),
+          X = n(137484),
+          Z = n(427483);
+        function q(e) {
           let { achievementStatus: t, animationState: n = "off" } = e,
-            r = t === T.x.COMPLETED || t === T.x.CLAIMED,
+            r = t === g.x.COMPLETED || t === g.x.CLAIMED,
             a = (0, i.jsx)("div", {
-              className: s()($.TK, { [$.AM]: r }),
-              children: (0, i.jsx)(W.x, {
-                className: $.t9,
-                webmAsset: z.A,
+              className: s()(X.TK, { [X.AM]: r }),
+              children: (0, i.jsx)(K.x, {
+                className: X.t9,
+                webmAsset: Z.A,
                 animationState: n,
                 assetAltText: "",
               }),
             });
           return r
             ? (0, i.jsxs)("div", {
-                className: $.Zs,
+                className: X.Zs,
                 children: [
-                  (0, i.jsx)(v.A, {
-                    children: K.intl.string(Y.default.k6h2J3),
+                  (0, i.jsx)(M.A, {
+                    children: z.intl.string($.default.k6h2J3),
                   }),
                   a,
                 ],
               })
             : a;
         }
-        function Z(e) {
+        function Q(e) {
           let { className: t } = e;
-          return (0, i.jsx)(H.c, { className: s()($.Fu, t) });
+          return (0, i.jsx)(W.c, { className: s()(X.Fu, t) });
         }
-        function q(e) {
+        function J(e) {
           let {
               achievementIdentifier: t,
               title: n,
@@ -463953,39 +463955,39 @@ ${t}`;
           async function I() {
             null != o && (f(!0), await o(t).finally(() => f(!1)));
           }
-          let p = null != d && l !== T.x.COMPLETED,
-            m = s()($.of, { [$.o4]: _, [$.D8]: E, [$.or]: p }),
-            g = (0, i.jsxs)(i.Fragment, {
+          let p = null != d && l !== g.x.COMPLETED,
+            T = s()(X.of, { [X.o4]: _, [X.D8]: E, [X.or]: p }),
+            m = (0, i.jsxs)(i.Fragment, {
               children: [
                 (0, i.jsxs)("div", {
-                  className: $.Ub,
+                  className: X.Ub,
                   children: [
-                    (0, i.jsx)(X, {
+                    (0, i.jsx)(q, {
                       achievementStatus: l,
                       animationState: E ? "on" : "off",
                     }),
                     (0, i.jsxs)("div", {
-                      className: $.Du,
+                      className: X.Du,
                       children: [
-                        (0, i.jsx)(D.E, {
+                        (0, i.jsx)(b.E, {
                           variant: "text-sm/medium",
                           color: "text-default",
                           children: n,
                         }),
-                        (0, i.jsx)(D.E, {
+                        (0, i.jsx)(b.E, {
                           variant: "text-sm/normal",
                           color: "text-muted",
-                          children: K.intl.format(
-                            l === T.x.COMPLETED
-                              ? Y.default.h2qWpS
-                              : Y.default.B8Fxns,
+                          children: z.intl.format(
+                            l === g.x.COMPLETED
+                              ? $.default.h2qWpS
+                              : $.default.B8Fxns,
                             {
                               orbAmount: a,
                               orbIconHook: () =>
-                                (0, i.jsx)(j.C, {
-                                  className: $.fN,
+                                (0, i.jsx)(Y.C, {
+                                  className: X.fN,
                                   size: "xxs",
-                                  color: L.A.colors.ICON_SUBTLE,
+                                  color: D.A.colors.ICON_SUBTLE,
                                 }),
                             },
                           ),
@@ -464000,17 +464002,17 @@ ${t}`;
                       handleClaim: r,
                       hasDiscoveryClick: a,
                     } = t,
-                    s = (0, i.jsx)(R.$, {
+                    s = (0, i.jsx)(y.$, {
                       variant: "expressive",
                       size: "sm",
-                      text: K.intl.string(Y.default.WmfVjs),
+                      text: z.intl.string($.default.WmfVjs),
                       loading: n,
                       onClick: r,
                     });
-                  return e === T.x.COMPLETED || n
+                  return e === g.x.COMPLETED || n
                     ? s
                     : a
-                      ? (0, i.jsx)(V._, { size: "sm", "aria-hidden": !0 })
+                      ? (0, i.jsx)(j._, { size: "sm", "aria-hidden": !0 })
                       : null;
                 })(l, {
                   isHovered: E,
@@ -464028,42 +464030,42 @@ ${t}`;
             ? (0, i.jsxs)(i.Fragment, {
                 children: [
                   (0, i.jsx)(c.D, {
-                    className: m,
+                    className: T,
                     ...S,
                     onClick: d,
-                    children: g,
+                    children: m,
                   }),
-                  !u && (0, i.jsx)(Z, {}),
+                  !u && (0, i.jsx)(Q, {}),
                 ],
               })
             : (0, i.jsxs)(i.Fragment, {
                 children: [
-                  (0, i.jsx)("div", { className: m, ...S, children: g }),
-                  !u && (0, i.jsx)(Z, {}),
+                  (0, i.jsx)("div", { className: T, ...S, children: m }),
+                  !u && (0, i.jsx)(Q, {}),
                 ],
               });
         }
-        var Q = n(652215),
-          J = n(653877),
-          ee = n(268920),
-          et = n(633217);
-        function en() {
+        var ee = n(652215),
+          et = n(653877),
+          en = n(268920),
+          ei = n(633217);
+        function er() {
           return (0, i.jsx)("div", {
-            className: J.s,
-            children: (0, i.jsx)(k.A, {
-              src: et.A,
-              fallbackImage: ee.A,
-              className: J.Cb,
+            className: et.s,
+            children: (0, i.jsx)(B.A, {
+              src: ei.A,
+              fallbackImage: en.A,
+              className: et.Cb,
             }),
           });
         }
-        function ei(e) {
-          let { nitroIconColor: t = L.A.colors.ICON_SUBTLE, text: n } = e;
+        function ea(e) {
+          let { nitroIconColor: t = D.A.colors.ICON_SUBTLE, text: n } = e;
           return (0, i.jsxs)("div", {
-            className: J.SY,
+            className: et.SY,
             children: [
-              (0, i.jsx)(y.t, { size: "xs", color: t }),
-              (0, i.jsx)(D.E, {
+              (0, i.jsx)(v.t, { size: "xs", color: t }),
+              (0, i.jsx)(b.E, {
                 variant: "text-xs/medium",
                 color: "text-subtle",
                 children: n,
@@ -464071,9 +464073,9 @@ ${t}`;
             ],
           });
         }
-        function er(e) {
+        function es(e) {
           let { orbBalance: t, headerTagsContent: n } = e,
-            a = (0, x.Ay)(t),
+            a = (0, F.Ay)(t),
             s = r.useMemo(
               () =>
                 (null != t && !!(t.toString().length > 10)) ||
@@ -464081,26 +464083,26 @@ ${t}`;
               [t, a],
             );
           return (0, i.jsxs)("div", {
-            className: J.SZ,
+            className: et.SZ,
             children: [
-              (0, i.jsx)(en, {}),
+              (0, i.jsx)(er, {}),
               (0, i.jsxs)("div", {
-                className: J.ZX,
+                className: et.ZX,
                 children: [
-                  (0, i.jsx)(v.A, {
+                  (0, i.jsx)(M.A, {
                     children:
                       null == t
-                        ? K.intl.string(K.t.cKwv4k)
-                        : K.intl.formatToPlainString(K.t.zPaLL9, {
+                        ? z.intl.string(z.t.cKwv4k)
+                        : z.intl.formatToPlainString(z.t.zPaLL9, {
                             balance: t,
                           }),
                   }),
-                  (0, i.jsx)(B.t, {
+                  (0, i.jsx)(H.t, {
                     ariaHidden: !0,
-                    counterInnerClassName: s ? J.F4 : void 0,
+                    counterInnerClassName: s ? et.F4 : void 0,
                     value: t,
-                    onValueChange: Q.tEg,
-                    onValueReached: Q.tEg,
+                    onValueChange: ee.tEg,
+                    onValueReached: ee.tEg,
                     targetTotalCounterTime: 1500,
                     textVariant: "display-md",
                     textColor: "text-strong",
@@ -464113,18 +464115,18 @@ ${t}`;
             ],
           });
         }
-        function ea(e) {
+        function el(e) {
           let { text: t, accessibilityLabel: n, onClick: r } = e,
             a = null != n,
             l = (0, i.jsxs)(i.Fragment, {
               children: [
-                a && (0, i.jsx)(v.A, { children: n }),
-                (0, i.jsx)(y.t, {
+                a && (0, i.jsx)(M.A, { children: n }),
+                (0, i.jsx)(v.t, {
                   size: "xxs",
                   color: "white",
                   "aria-hidden": !0,
                 }),
-                (0, i.jsx)(D.E, {
+                (0, i.jsx)(b.E, {
                   variant: "text-xs/semibold",
                   color: "text-overlay-light",
                   "aria-hidden": a,
@@ -464133,31 +464135,31 @@ ${t}`;
               ],
             });
           return null == r
-            ? (0, i.jsx)("div", { className: J.lh, children: l })
+            ? (0, i.jsx)("div", { className: et.lh, children: l })
             : (0, i.jsx)(c.D, {
-                className: s()(J.lh, J.w9),
+                className: s()(et.lh, et.w9),
                 onClick: r,
                 children: l,
               });
         }
-        function es(e) {
+        function eo(e) {
           let { numRows: t = 3 } = e,
             n = r.useMemo(() => Array.from({ length: t }), [t]);
           return (0, i.jsx)("div", {
-            className: J.gW,
+            className: et.gW,
             "aria-hidden": !0,
             children: n.map((e, t) =>
               (0, i.jsxs)(
                 "div",
                 {
-                  className: J.US,
+                  className: et.US,
                   children: [
-                    (0, i.jsx)("div", { className: s()(J.DO, J.VR) }),
+                    (0, i.jsx)("div", { className: s()(et.DO, et.VR) }),
                     (0, i.jsxs)("div", {
-                      className: J.A3,
+                      className: et.A3,
                       children: [
-                        (0, i.jsx)("div", { className: s()(J.DO, J.Iz) }),
-                        (0, i.jsx)("div", { className: s()(J.DO, J.D_) }),
+                        (0, i.jsx)("div", { className: s()(et.DO, et.Iz) }),
+                        (0, i.jsx)("div", { className: s()(et.DO, et.D_) }),
                       ],
                     }),
                   ],
@@ -464167,7 +464169,7 @@ ${t}`;
             ),
           });
         }
-        function el(e) {
+        function ed(e) {
           let {
               title: t,
               challenges: n,
@@ -464182,20 +464184,20 @@ ${t}`;
             _ = r.useMemo(
               () =>
                 a && null == c
-                  ? (0, i.jsx)(es, { numRows: 3 })
+                  ? (0, i.jsx)(eo, { numRows: 3 })
                   : u
                     ? (0, i.jsxs)(i.Fragment, {
                         children: [
                           (0, i.jsxs)("div", {
-                            className: J.$b,
+                            className: et.$b,
                             children: [
-                              (0, i.jsx)(D.E, {
+                              (0, i.jsx)(b.E, {
                                 variant: "text-xs/medium",
                                 color: "text-subtle",
                                 children: t,
                               }),
                               null != l &&
-                                (0, i.jsx)(ea, {
+                                (0, i.jsx)(el, {
                                   text: l,
                                   accessibilityLabel: o,
                                   onClick: d,
@@ -464203,13 +464205,13 @@ ${t}`;
                             ],
                           }),
                           (0, i.jsx)("ul", {
-                            className: J.Up,
+                            className: et.Up,
                             children: n.map((e, t) =>
                               (0, i.jsx)(
                                 "li",
                                 {
-                                  className: J.tJ,
-                                  children: (0, i.jsx)(q, {
+                                  className: et.tJ,
+                                  children: (0, i.jsx)(J, {
                                     ...e,
                                     onClaim: s,
                                     isLastItem: t === n.length - 1,
@@ -464224,17 +464226,17 @@ ${t}`;
                     : null != c
                       ? null
                       : (0, i.jsxs)("div", {
-                          className: J.GN,
+                          className: et.GN,
                           children: [
-                            (0, i.jsx)(D.E, {
+                            (0, i.jsx)(b.E, {
                               variant: "text-sm/medium",
                               color: "text-default",
-                              children: K.intl.string(Y.default.xOP5OP),
+                              children: z.intl.string($.default.xOP5OP),
                             }),
-                            (0, i.jsx)(D.E, {
+                            (0, i.jsx)(b.E, {
                               variant: "experimental/body-xs/normal",
                               color: "text-subtle",
-                              children: K.intl.string(Y.default.XW2CuY),
+                              children: z.intl.string($.default.XW2CuY),
                             }),
                           ],
                         }),
@@ -464245,64 +464247,64 @@ ${t}`;
                 null == c
                   ? null
                   : (0, i.jsx)("div", {
-                      className: J.re,
-                      children: (0, i.jsx)(b.w, { ...c }),
+                      className: et.re,
+                      children: (0, i.jsx)(P.w, { ...c }),
                     }),
               [c],
             );
           return (0, i.jsxs)("div", {
-            className: J.E6,
+            className: et.E6,
             "aria-busy": a,
             children: [E, _],
           });
         }
-        function eo(e) {
+        function ec(e) {
           let { onQuestsClick: t, onShopClick: n, totalOrbsRedeemed: r } = e;
           return (0, i.jsxs)("div", {
-            className: J.VX,
+            className: et.VX,
             children: [
               (0, i.jsxs)("div", {
-                className: J.W,
+                className: et.W,
                 children: [
                   null != t &&
-                    (0, i.jsx)(R.$, {
+                    (0, i.jsx)(y.$, {
                       text: "Quests",
                       variant: "secondary",
                       size: "md",
-                      icon: { asset: M.r, type: "icon" },
+                      icon: { asset: U.r, type: "icon" },
                       fullWidth: !0,
                       onClick: t,
                     }),
                   null != n &&
-                    (0, i.jsx)(R.$, {
+                    (0, i.jsx)(y.$, {
                       text: "Shop",
                       variant: "secondary",
                       size: "md",
-                      icon: { asset: P.U, type: "icon" },
+                      icon: { asset: w.U, type: "icon" },
                       fullWidth: !0,
                       onClick: n,
                     }),
                 ],
               }),
               (0, i.jsxs)("div", {
-                className: J.RA,
+                className: et.RA,
                 children: [
                   null != r &&
                     (0, i.jsxs)(i.Fragment, {
                       children: [
-                        (0, i.jsx)(U.TrophyIcon, {
+                        (0, i.jsx)(G.TrophyIcon, {
                           size: "xs",
-                          color: L.A.colors.ICON_MUTED,
+                          color: D.A.colors.ICON_MUTED,
                           "aria-hidden": !0,
                         }),
-                        (0, i.jsx)(D.E, {
+                        (0, i.jsx)(b.E, {
                           variant: "text-xs/normal",
                           color: "text-muted",
-                          children: K.intl.format(Y.default.B5tZXw, {
+                          children: z.intl.format($.default.B5tZXw, {
                             orbAmount: r,
                           }),
                         }),
-                        (0, i.jsx)(D.E, {
+                        (0, i.jsx)(b.E, {
                           variant: "text-xs/normal",
                           color: "text-muted",
                           "aria-hidden": !0,
@@ -464310,13 +464312,13 @@ ${t}`;
                         }),
                       ],
                     }),
-                  (0, i.jsx)(D.E, {
+                  (0, i.jsx)(b.E, {
                     variant: "text-xs/normal",
-                    children: (0, i.jsx)(w.Anchor, {
+                    children: (0, i.jsx)(x.Anchor, {
                       target: "_blank",
                       rel: "author",
-                      href: F.A.getArticleURL(Q.MVz.ORBS_WALLET),
-                      children: K.intl.string(K.t["5qZv9E"]),
+                      href: V.A.getArticleURL(ee.MVz.ORBS_WALLET),
+                      children: z.intl.string(z.t["5qZv9E"]),
                     }),
                   }),
                 ],
@@ -464324,7 +464326,7 @@ ${t}`;
             ],
           });
         }
-        function ed(e) {
+        function eu(e) {
           let {
               orbBalance: t,
               headerTagsContent: n,
@@ -464335,68 +464337,68 @@ ${t}`;
               returnRef: c,
             } = e,
             [u, _] = r.useState(!1);
-          return (0, i.jsxs)(G.l, {
-            className: s()(J.ql, J.Ut),
+          return (0, i.jsxs)(k.l, {
+            className: s()(et.ql, et.Ut),
             ref: d,
             returnRef: c,
-            "aria-label": K.intl.string(Y.default.XKj5L9),
+            "aria-label": z.intl.string($.default.XKj5L9),
             children: [
               (0, i.jsxs)("div", {
-                className: J.hG,
+                className: et.hG,
                 children: [
-                  (0, i.jsx)(er, { orbBalance: t, headerTagsContent: n }),
+                  (0, i.jsx)(es, { orbBalance: t, headerTagsContent: n }),
                   u ? null : a({ onClose: () => _(!0) }),
                 ],
               }),
-              (0, i.jsx)("div", { className: J.BA, children: l }),
+              (0, i.jsx)("div", { className: et.BA, children: l }),
               o,
             ],
           });
         }
-        var ec = n(554146),
-          eu = n(408278),
-          e_ = n(789645),
-          eE = n(131607),
-          eA = n(696292),
-          eh = n(815996),
-          ef = n(75678),
-          eI = n(87719),
-          ep = n(576761),
-          eT = n(617986),
-          em = n(758836),
-          eg = n(202541);
-        function eS(e) {
-          let { analyticsLocations: t = [], shopTab: n = em.G2.ORBS } = e;
-          (0, eh.Cz)({
+        var e_ = n(554146),
+          eE = n(408278),
+          eA = n(789645),
+          eh = n(131607),
+          ef = n(696292),
+          eI = n(815996),
+          ep = n(75678),
+          eT = n(87719),
+          em = n(576761),
+          eg = n(617986),
+          eS = n(758836),
+          eN = n(202541);
+        function eC(e) {
+          let { analyticsLocations: t = [], shopTab: n = eS.G2.ORBS } = e;
+          (0, eI.Cz)({
             tab: n,
             analyticsLocations: t,
-            analyticsSource: _.A.ORBS_BALANCE_MENU,
+            analyticsSource: E.A.ORBS_BALANCE_MENU,
           });
         }
-        function eN() {
-          (0, eT.mA)({ fromContent: eA.u.ORBS_BALANCE_MENU });
+        function eO() {
+          (0, eg.mA)({ fromContent: ef.u.ORBS_BALANCE_MENU });
         }
-        function eC(e) {
+        function eR(e) {
           let { analyticsLocations: t = [] } = e;
-          (0, ef.A)({ subscriptionTier: eg.pe.TIER_2, analyticsLocations: t });
+          (0, ep.A)({ subscriptionTier: eN.pe.TIER_2, analyticsLocations: t });
         }
-        let eO = {
+        let eL = {
           "1531422538125676707": (e) => {
             let { analyticsLocations: t } = e;
-            eS({ analyticsLocations: t, shopTab: em.G2.HOME });
+            eC({ analyticsLocations: t, shopTab: eS.G2.HOME });
           },
           "1531422538125676708": (e) => {
             let { analyticsLocations: t } = e;
-            eS({ analyticsLocations: t, shopTab: em.G2.HOME });
+            eC({ analyticsLocations: t, shopTab: eS.G2.HOME });
           },
           "1531422538125676709": (e) => {
             let { analyticsLocations: t } = e;
-            eC({ analyticsLocations: t });
+            eR({ analyticsLocations: t });
           },
         };
-        var eR = n(49999),
-          eL = n(600676);
-        function ey(e) {
+        var ey = n(49999),
+          eD = n(600676);
+        function ev(e) {
           let {
             title: t,
             imageUrl: n,
@@ -464410,14 +464412,14 @@ ${t}`;
             className: _,
           } = e;
           return (0, i.jsxs)("div", {
-            className: s()(eL.Vm, _),
+            className: s()(eD.Vm, _),
             children: [
               null != u
                 ? (0, i.jsx)("div", {
-                    className: eL.Fx,
-                    children: (0, i.jsx)(eu.K, {
-                      icon: e_.P,
-                      "aria-label": K.intl.string(K.t.cpT0Cq),
+                    className: eD.Fx,
+                    children: (0, i.jsx)(eE.K, {
+                      icon: eA.P,
+                      "aria-label": z.intl.string(z.t.cpT0Cq),
                       variant: "icon-only",
                       size: "sm",
                       onClick: u,
@@ -464425,20 +464427,20 @@ ${t}`;
                   })
                 : null,
               (0, i.jsxs)("div", {
-                className: eL.iH,
+                className: eD.iH,
                 children: [
                   null != n &&
-                    (0, i.jsx)("img", { alt: r, src: n, className: eL.db }),
+                    (0, i.jsx)("img", { alt: r, src: n, className: eD.db }),
                   (0, i.jsxs)("div", {
                     children: [
-                      (0, i.jsx)(D.E, {
+                      (0, i.jsx)(b.E, {
                         variant: "text-md/bold",
                         color: "text-default",
-                        className: eL.L8,
+                        className: eD.L8,
                         children: t,
                       }),
                       null != a &&
-                        (0, i.jsx)(D.E, {
+                        (0, i.jsx)(b.E, {
                           variant: "text-xs/medium",
                           color: "text-default",
                           children: a,
@@ -464447,7 +464449,7 @@ ${t}`;
                   }),
                 ],
               }),
-              (0, i.jsx)(R.$, {
+              (0, i.jsx)(y.$, {
                 text: l,
                 size: "sm",
                 icon: o,
@@ -464458,84 +464460,43 @@ ${t}`;
             ],
           });
         }
-        function eD(e, t) {
+        function eb(e, t) {
           let { ctaClickHandler: n, dismissibleContent: i, ctaObject: a } = t,
             {
-              analyticsPage: s = _.A.ORB_WALLET,
+              analyticsPage: s = E.A.ORB_WALLET,
               forceVisible: l,
               onClose: o,
               onCloseWallet: d,
             } = e,
-            [c, u] = (0, eE.kn)([i], eR.m.ORB_WALLET, !0),
-            E = r.useCallback(() => {
-              (0, m.Y)({
+            [c, u] = (0, eh.kn)([i], ey.m.ORB_WALLET, !0),
+            _ = r.useCallback(() => {
+              (0, S.Y)({
                 pageType: s,
-                sectionType: _.A.ORB_WALLET_PRIMARY_CARD,
+                sectionType: E.A.ORB_WALLET_PRIMARY_CARD,
                 ctaObject: a,
               }),
                 n(),
-                l || u(eR.i.TAKE_ACTION),
+                l || u(ey.i.TAKE_ACTION),
                 d("navigation");
             }, [s, u, l, d, n, a]),
             A = r.useCallback(() => {
-              l || u(eR.i.DISMISS), o();
+              l || u(ey.i.DISMISS), o();
             }, [l, u, o]);
-          return { onCtaClick: E, shouldHideCard: null == c && !l, onClose: A };
+          return { onCtaClick: _, shouldHideCard: null == c && !l, onClose: A };
         }
-        function ev(e) {
-          let {
-              onClose: t,
-              onCloseWallet: a,
-              analyticsPage: s = _.A.ORB_WALLET,
-              forceVisible: l = !1,
-            } = e,
-            { analyticsLocations: o } = (0, E.Ay)(_.A.ORB_WALLET_PRIMARY_CARD),
-            {
-              shouldHideCard: d,
-              onCtaClick: c,
-              onClose: u,
-            } = eD(
-              {
-                analyticsPage: s,
-                forceVisible: l,
-                onClose: t,
-                onCloseWallet: a,
-              },
-              {
-                ctaClickHandler: r.useCallback(() => {
-                  eS({ analyticsLocations: o });
-                }, [o]),
-                dismissibleContent: ec.M.ORB_WALLET_SHOP_CTA_CARD,
-                ctaObject: _.A.ORB_WALLET_SHOP_CTA,
-              },
-            );
-          return d
-            ? null
-            : (0, i.jsx)(ey, {
-                title: K.intl.string(Y.default.v8QrJf),
-                imageUrl: n(105644),
-                imageAlt: K.intl.string(Y.default.qa1xyr),
-                subTextDescription: K.intl.string(Y.default.HACucK),
-                buttonText: K.intl.string(Y.default["7raRgL"]),
-                buttonIcon: { asset: P.U, type: "icon" },
-                onCtaClick: c,
-                onClose: u,
-              });
-        }
-        let eb = { asset: y.t, type: "icon" };
         function eM(e) {
           let {
               onClose: t,
               onCloseWallet: a,
-              analyticsPage: s = _.A.ORB_WALLET,
+              analyticsPage: s = E.A.ORB_WALLET,
               forceVisible: l = !1,
             } = e,
-            { analyticsLocations: o } = (0, E.Ay)(_.A.ORB_WALLET_PRIMARY_CARD),
+            { analyticsLocations: o } = (0, A.Ay)(E.A.ORB_WALLET_PRIMARY_CARD),
             {
-              shouldHideCard: c,
-              onCtaClick: u,
-              onClose: A,
-            } = eD(
+              shouldHideCard: d,
+              onCtaClick: c,
+              onClose: u,
+            } = eb(
               {
                 analyticsPage: s,
                 forceVisible: l,
@@ -464546,39 +464507,80 @@ ${t}`;
                 ctaClickHandler: r.useCallback(() => {
                   eC({ analyticsLocations: o });
                 }, [o]),
-                dismissibleContent: ec.M.ORB_WALLET_NITRO_UPSELL_CTA_CARD,
-                ctaObject: _.A.ORB_WALLET_PRIMARY_CARD_NITRO_UPSELL_CTA,
+                dismissibleContent: e_.M.ORB_WALLET_SHOP_CTA_CARD,
+                ctaObject: E.A.ORB_WALLET_SHOP_CTA,
+              },
+            );
+          return d
+            ? null
+            : (0, i.jsx)(ev, {
+                title: z.intl.string($.default.v8QrJf),
+                imageUrl: n(105644),
+                imageAlt: z.intl.string($.default.qa1xyr),
+                subTextDescription: z.intl.string($.default.HACucK),
+                buttonText: z.intl.string($.default["7raRgL"]),
+                buttonIcon: { asset: w.U, type: "icon" },
+                onCtaClick: c,
+                onClose: u,
+              });
+        }
+        let eP = { asset: v.t, type: "icon" };
+        function eU(e) {
+          let {
+              onClose: t,
+              onCloseWallet: a,
+              analyticsPage: s = E.A.ORB_WALLET,
+              forceVisible: l = !1,
+            } = e,
+            { analyticsLocations: o } = (0, A.Ay)(E.A.ORB_WALLET_PRIMARY_CARD),
+            {
+              shouldHideCard: c,
+              onCtaClick: u,
+              onClose: _,
+            } = eb(
+              {
+                analyticsPage: s,
+                forceVisible: l,
+                onClose: t,
+                onCloseWallet: a,
+              },
+              {
+                ctaClickHandler: r.useCallback(() => {
+                  eR({ analyticsLocations: o });
+                }, [o]),
+                dismissibleContent: e_.M.ORB_WALLET_NITRO_UPSELL_CTA_CARD,
+                ctaObject: E.A.ORB_WALLET_PRIMARY_CARD_NITRO_UPSELL_CTA,
               },
             ),
-            { nitroGatedOrbMultiplier: h } = (0, d.cf)([O.Ay], () => ({
-              nitroGatedOrbMultiplier: O.Ay.nitroGatedOrbMultiplier,
+            { nitroGatedOrbMultiplier: h } = (0, d.cf)([L.Ay], () => ({
+              nitroGatedOrbMultiplier: L.Ay.nitroGatedOrbMultiplier,
             })),
             f = r.useMemo(
-              () => K.intl.format(Y.default["Ba/7wO"], { multiplier: h }),
+              () => z.intl.format($.default["Ba/7wO"], { multiplier: h }),
               [h],
             );
           return null == h || c
             ? null
-            : (0, i.jsx)(ey, {
-                title: K.intl.string(Y.default.ZqCAos),
+            : (0, i.jsx)(ev, {
+                title: z.intl.string($.default.ZqCAos),
                 imageUrl: n(780361),
-                imageAlt: K.intl.string(Y.default.FkfrRH),
+                imageAlt: z.intl.string($.default.FkfrRH),
                 subTextDescription: f,
-                buttonText: K.intl.string(Y.default.U9UQJE),
-                buttonIcon: eb,
+                buttonText: z.intl.string($.default.U9UQJE),
+                buttonIcon: eP,
                 buttonVariant: "expressive",
                 onCtaClick: u,
-                onClose: A,
-                className: eL.ml,
+                onClose: _,
+                className: eD.ml,
               });
         }
-        var eP = n(123576);
-        let eU = [
+        var ew = n(123576);
+        let eG = [
           {
             achievementIdentifier: "challenge_1",
             title: "Challenge Task",
             description: "Challenge description",
-            achievementStatus: T.x.COMPLETED,
+            achievementStatus: g.x.COMPLETED,
             orbRewardAmount: 100,
             onDiscoveryClick: () => {
               console.log("Challenge 1 discovery clicked");
@@ -464588,7 +464590,7 @@ ${t}`;
             achievementIdentifier: "challenge_2",
             title: "Challenge Task",
             description: "Challenge description",
-            achievementStatus: T.x.NONE,
+            achievementStatus: g.x.NONE,
             orbRewardAmount: 100,
             onDiscoveryClick: () => {
               console.log("Challenge 2 discovery clicked");
@@ -464598,40 +464600,40 @@ ${t}`;
             achievementIdentifier: "challenge_3",
             title: "Challenge Task",
             description: "Challenge description",
-            achievementStatus: T.x.NONE,
+            achievementStatus: g.x.NONE,
             orbRewardAmount: 100,
           },
         ];
-        async function ew(e) {
+        async function ex(e) {
           console.log(`Claiming challenge ${e}`),
             await new Promise((e) => setTimeout(e, 1e3));
         }
-        function eG(e, t) {
+        function ek(e, t) {
           return e
             ? null != t && t >= 1400
               ? "shop_orbs"
               : null
             : "nitro_upsell";
         }
-        function ex(e) {
+        function eF(e) {
           let {
               userHasPremium: t,
               onClose: n,
               orbBalance: r,
               analyticsPage: a,
               forceVisible: s = !1,
-              onCloseWallet: l = Q.tEg,
+              onCloseWallet: l = ee.tEg,
             } = e,
-            o = eG(t, r);
+            o = ek(t, r);
           return "shop_orbs" === o
-            ? (0, i.jsx)(ev, {
+            ? (0, i.jsx)(eM, {
                 onClose: n,
                 analyticsPage: a,
                 forceVisible: s,
                 onCloseWallet: l,
               })
             : "nitro_upsell" === o
-              ? (0, i.jsx)(eM, {
+              ? (0, i.jsx)(eU, {
                   onClose: n,
                   analyticsPage: a,
                   forceVisible: s,
@@ -464639,23 +464641,23 @@ ${t}`;
                 })
               : null;
         }
-        function ek(e) {
+        function eB(e) {
           let { text: t, onClick: n } = e;
           return null == n
-            ? (0, i.jsx)("span", { className: eP.dW, children: t })
+            ? (0, i.jsx)("span", { className: ew.dW, children: t })
             : (0, i.jsx)(c.D, {
-                className: s()(eP.dW, eP.or),
+                className: s()(ew.dW, ew.or),
                 onClick: n,
                 children: t,
               });
         }
-        function eF(e, t) {
-          return K.intl.formatToPlainString(
-            e ? Y.default.p9PPYD : Y.default["1JZfaU"],
+        function eV(e, t) {
+          return z.intl.formatToPlainString(
+            e ? $.default.p9PPYD : $.default["1JZfaU"],
             { multiplier: t },
           );
         }
-        function eB(e) {
+        function eH(e) {
           let {
             userHasPremium: t,
             orbBalance: n,
@@ -464664,11 +464666,11 @@ ${t}`;
             hasNoChallenges: s,
             totalOrbsRedeemed: l = 15600,
           } = e;
-          return (0, i.jsx)(ed, {
+          return (0, i.jsx)(eu, {
             orbBalance: n,
             headerTagsContent: t
-              ? (0, i.jsx)(ei, {
-                  text: K.intl.format(Y.default["04j3XV"], {
+              ? (0, i.jsx)(ea, {
+                  text: z.intl.format($.default["04j3XV"], {
                     orbAmount: 250,
                     days: 16,
                   }),
@@ -464676,237 +464678,267 @@ ${t}`;
               : null,
             renderPrimaryCard: (e) => {
               let { onClose: i } = e;
-              return ex({
+              return eF({
                 userHasPremium: t,
                 onClose: i,
                 orbBalance: n,
                 forceVisible: !0,
               });
             },
-            orbChallengesCard: (0, i.jsx)(el, {
+            orbChallengesCard: (0, i.jsx)(ed, {
               isLoading: a,
               inlineNoticeProps: r
                 ? {
                     type: "warning",
-                    message: K.intl.format(Y.default.ggLzeg, {
-                      underlineHook: (e) => (0, i.jsx)(ek, { text: e }),
+                    message: z.intl.format($.default.ggLzeg, {
+                      underlineHook: (e) => (0, i.jsx)(eB, { text: e }),
                     }),
                     role: "status",
                   }
                 : null,
-              title: K.intl.string(Y.default.H6Ny8N),
-              badgeText: K.intl.format(
-                t ? Y.default.OHLdjq : Y.default.WOMrJf,
+              title: z.intl.string($.default.H6Ny8N),
+              badgeText: z.intl.format(
+                t ? $.default.OHLdjq : $.default.WOMrJf,
                 { multiplier: 1.2 },
               ),
-              badgeAccessibilityLabel: eF(t, 1.2),
-              challenges: s ? [] : eU,
-              onClaim: ew,
+              badgeAccessibilityLabel: eV(t, 1.2),
+              challenges: s ? [] : eG,
+              onClaim: ex,
             }),
-            orbWalletFooter: (0, i.jsx)(eo, {
-              onQuestsClick: () => eN(),
-              onShopClick: () => eS({ analyticsLocations: [] }),
+            orbWalletFooter: (0, i.jsx)(ec, {
+              onQuestsClick: () => eO(),
+              onShopClick: () => eC({ analyticsLocations: [] }),
               totalOrbsRedeemed: l,
             }),
           });
         }
-        function eV(e) {
-          return (0, i.jsx)(eB, { ...e, hasNoChallenges: !0 });
+        function ej(e) {
+          return (0, i.jsx)(eH, { ...e, hasNoChallenges: !0 });
         }
-        function eH() {
-          let { passesGeneralUIInvariant: e, programReward: t } = (0, f.F)();
+        function eW() {
+          let { passesGeneralUIInvariant: e, programReward: t } = (0, I.F)();
           if (!e || null == t) return null;
           let n = Math.max(
             1,
             (0, l.default)(new Date(t.next_reward_date), new Date()),
           );
-          return (0, i.jsx)(ei, {
-            text: K.intl.format(Y.default["04j3XV"], {
+          return (0, i.jsx)(ea, {
+            text: z.intl.format($.default["04j3XV"], {
               orbAmount: t.reward_amount,
               days: n,
             }),
           });
         }
-        function ej() {
+        function eY() {
           return null !=
-            (0, d.bG)([I.A], () => I.A.getPremiumTypeSubscription())
-            ? (0, i.jsx)(eH, {})
+            (0, d.bG)([T.A], () => T.A.getPremiumTypeSubscription())
+            ? (0, i.jsx)(eW, {})
             : null;
         }
-        function eW(e) {
+        function eK(e) {
           let {
-              analyticsPage: t = _.A.ORB_WALLET,
-              analyticsLocations: n = [],
-              onCloseWallet: a = Q.tEg,
+              analyticsPage: t = E.A.ORB_WALLET,
+              analyticsLocations: a = [],
+              onCloseWallet: s = ee.tEg,
             } = e,
             {
-              challengesForOrbWallet: s,
-              hasFetchedChallenges: l,
-              refetch: o,
-            } = (0, N.z)({ shouldFetch: !0 }),
-            c = (0, A.L)(eg.PremiumTypes.TIER_2),
-            { nitroGatedOrbMultiplier: u, orbChallengesDisplayError: E } = (0,
-            d.cf)([O.Ay], () => ({
-              nitroGatedOrbMultiplier: O.Ay.nitroGatedOrbMultiplier,
-              orbChallengesDisplayError: O.Ay.orbChallengesDisplayError,
+              challengesForOrbWallet: l,
+              hasFetchedChallenges: o,
+              refetch: c,
+            } = (0, O.z)({ shouldFetch: !0 }),
+            _ = (0, h.L)(eN.PremiumTypes.TIER_2),
+            A = (0, d.bG)([p.default], () => p.default.getCurrentUser()),
+            { nitroGatedOrbMultiplier: f, orbChallengesDisplayError: I } = (0,
+            d.cf)([L.Ay], () => ({
+              nitroGatedOrbMultiplier: L.Ay.nitroGatedOrbMultiplier,
+              orbChallengesDisplayError: L.Ay.orbChallengesDisplayError,
             })),
-            h = r.useMemo(
+            T = null != A && !A.isClaimed(),
+            m = r.useMemo(
               () =>
-                null != E
+                null != I
                   ? {
                       type: "warning",
                       message:
-                        E.errorType === O.EB.CLAIM_CHALLENGE
-                          ? K.intl.string(Y.default.FYb5rH)
-                          : K.intl.format(Y.default.ggLzeg, {
+                        I.errorType === L.EB.CLAIM_CHALLENGE
+                          ? z.intl.string($.default.FYb5rH)
+                          : z.intl.format($.default.ggLzeg, {
                               underlineHook: (e) =>
-                                (0, i.jsx)(ek, { text: e, onClick: o }),
+                                (0, i.jsx)(eB, { text: e, onClick: c }),
                             }),
                       role: "status",
                     }
-                  : null,
-              [E, o],
+                  : T
+                    ? {
+                        type: "info",
+                        message: z.intl.string(z.t.qxk9zo),
+                        role: "status",
+                      }
+                    : null,
+              [I, c, T],
             ),
-            f = r.useCallback(
+            g = r.useCallback(
               () => (
-                (0, m.Y)({
+                (0, S.Y)({
                   pageType: t,
-                  sectionType: _.A.ORB_WALLET,
-                  ctaObject: _.A.ORB_WALLET_NITRO_BADGE_CLICK,
+                  sectionType: E.A.ORB_WALLET,
+                  ctaObject: E.A.ORB_WALLET_NITRO_BADGE_CLICK,
                 }),
-                a("navigation"),
+                s("navigation"),
                 (function (e) {
                   let { nitroGatedOrbMultiplier: t, userIsPremiumTier2: n } = e;
-                  if (null == t) return void (0, eI.x)();
-                  let i = n ? ep.MA.NITRO : ep.MA.UPSELL,
+                  if (null == t) return void (0, eT.x)();
+                  let i = n ? em.MA.NITRO : em.MA.UPSELL,
                     r = n
                       ? {
-                          customSubtitle: K.intl.format(Y.default["wE4a/r"], {
+                          customSubtitle: z.intl.format($.default["wE4a/r"], {
                             bonusOrbMultiplier: t,
                           }),
                         }
                       : void 0;
-                  (0, eT.gC)(t, i, r);
-                })({ nitroGatedOrbMultiplier: u, userIsPremiumTier2: c })
+                  (0, eg.gC)(t, i, r);
+                })({ nitroGatedOrbMultiplier: f, userIsPremiumTier2: _ })
               ),
-              [u, c, t, a],
+              [f, _, t, s],
             ),
-            I = r.useMemo(
+            N = r.useMemo(
               () =>
-                s.map((e) => {
-                  let i =
+                l.map((e) => {
+                  let n =
                       null != e.achievementDefinitionId
-                        ? eO[e.achievementDefinitionId]
+                        ? eL[e.achievementDefinitionId]
                         : null,
-                    r = { analyticsLocations: n },
-                    s =
-                      null != i
+                    i = { analyticsLocations: a },
+                    r =
+                      null != n
                         ? () => {
-                            (0, m.Y)({
+                            (0, S.Y)({
                               pageType: t,
-                              sectionType: _.A.ORB_WALLET,
-                              ctaObject: _.A.ORB_CHALLENGE_DISCOVERY_CLICK,
+                              sectionType: E.A.ORB_WALLET,
+                              ctaObject: E.A.ORB_CHALLENGE_DISCOVERY_CLICK,
                             }),
-                              i(r),
-                              a("navigation");
+                              n(i),
+                              s("navigation");
                           }
                         : void 0;
-                  return { ...e, onDiscoveryClick: s };
+                  return { ...e, onDiscoveryClick: r };
                 }),
-              [s, n, t, a],
+              [l, a, t, s],
+            ),
+            C = r.useCallback(() => {
+              (0, u.openModalLazy)(async () => {
+                let { default: e } = await Promise.all([
+                  n.e("671464"),
+                  n.e("112206"),
+                  n.e("709998"),
+                  n.e("480388"),
+                ]).then(n.bind(n, 195759));
+                return (t) => {
+                  let { onClose: n, ...r } = t;
+                  return (0, i.jsx)(e, {
+                    ...r,
+                    onClose: n,
+                    body: z.intl.string(z.t["gP/vPe"]),
+                  });
+                };
+              });
+            }, []),
+            y = r.useCallback(
+              (e) => (T ? (C(), Promise.resolve()) : (0, R.Xz)(e)),
+              [T, C],
             );
-          return (0, i.jsx)(el, {
-            title: K.intl.string(Y.default.H6Ny8N),
-            isLoading: !l,
-            inlineNoticeProps: h,
-            challenges: I,
-            onClaim: C.Xz,
-            onClickBadge: f,
-            badgeText: K.intl.format(c ? Y.default.OHLdjq : Y.default.WOMrJf, {
-              multiplier: u,
+          return (0, i.jsx)(ed, {
+            title: z.intl.string($.default.H6Ny8N),
+            isLoading: !o,
+            inlineNoticeProps: m,
+            challenges: N,
+            onClaim: y,
+            onClickBadge: g,
+            badgeText: z.intl.format(_ ? $.default.OHLdjq : $.default.WOMrJf, {
+              multiplier: f,
             }),
-            badgeAccessibilityLabel: eF(c, u),
+            badgeAccessibilityLabel: eV(_, f),
           });
         }
-        function eY(e) {
+        function e$(e) {
           let {
               cardRef: t,
               returnRef: n,
-              analyticsPage: a = _.A.ORB_WALLET,
-              onCloseWallet: s = Q.tEg,
+              analyticsPage: a = E.A.ORB_WALLET,
+              onCloseWallet: s = ee.tEg,
               isProfilePopout: l,
             } = e,
-            { balance: c } = (0, S.W0)(),
-            u = (0, g.H)({ location: "StatefulOrbWallet" }),
-            { totalRedeemed: f } = (0, S.rQ)({ disableFetch: !u }),
-            I = (0, A.L)(eg.PremiumTypes.TIER_2),
-            { analyticsLocations: N } = (0, E.Ay)(_.A.ORB_WALLET);
+            { balance: c } = (0, C.W0)(),
+            u = (0, N.H)({ location: "StatefulOrbWallet" }),
+            { totalRedeemed: _ } = (0, C.rQ)({ disableFetch: !u }),
+            I = (0, h.L)(eN.PremiumTypes.TIER_2),
+            { analyticsLocations: p } = (0, A.Ay)(E.A.ORB_WALLET);
           r.useEffect(() => {
-            u && (0, C.eX)();
+            u && (0, R.eX)();
           }, [u]);
-          let R = r.useCallback(() => {
-              (0, m.Y)({
+          let T = r.useCallback(() => {
+              (0, S.Y)({
                 pageType: a,
-                sectionType: _.A.ORB_WALLET_FOOTER,
-                ctaObject: _.A.ORB_WALLET_SHOP_CTA,
+                sectionType: E.A.ORB_WALLET_FOOTER,
+                ctaObject: E.A.ORB_WALLET_SHOP_CTA,
               }),
-                eS({ analyticsLocations: N }),
+                eC({ analyticsLocations: p }),
                 s("navigation");
-            }, [N, a, s]),
-            L = r.useCallback(() => {
-              (0, m.Y)({
+            }, [p, a, s]),
+            O = r.useCallback(() => {
+              (0, S.Y)({
                 pageType: a,
-                sectionType: _.A.ORB_WALLET_FOOTER,
-                ctaObject: _.A.ORB_WALLET_QUEST_HOME_CTA,
+                sectionType: E.A.ORB_WALLET_FOOTER,
+                ctaObject: E.A.ORB_WALLET_QUEST_HOME_CTA,
               }),
-                eN(),
+                eO(),
                 s("navigation");
             }, [a, s]),
-            y = r.useMemo(() => eG(I, c), [I, c]),
+            y = r.useMemo(() => ek(I, c), [I, c]),
             { challengesForOrbWallet: D, hasFetchedChallenges: v } = (0, d.cf)(
-              [O.Ay],
+              [L.Ay],
               () => ({
-                challengesForOrbWallet: O.Ay.challengesForOrbWallet,
-                hasFetchedChallenges: O.Ay.hasFetchedChallenges,
+                challengesForOrbWallet: L.Ay.challengesForOrbWallet,
+                hasFetchedChallenges: L.Ay.hasFetchedChallenges,
               }),
             ),
             b = r.useRef(!1);
           r.useEffect(() => {
             if (!v || b.current) return;
             let e = D.map((e) => e.achievementIdentifier),
-              t = D.filter((e) => e.achievementStatus === T.x.COMPLETED).map(
+              t = D.filter((e) => e.achievementStatus === g.x.COMPLETED).map(
                 (e) => e.achievementIdentifier,
               );
-            p.default.track(Q.HAw.ORB_WALLET_VIEWED, {
-              location_stack: N,
+            m.default.track(ee.HAw.ORB_WALLET_VIEWED, {
+              location_stack: p,
               location_page: a,
-              location_section: _.A.ORB_WALLET,
-              location_object: _.A.ORB_WALLET,
+              location_section: E.A.ORB_WALLET,
+              location_object: E.A.ORB_WALLET,
               wallet_primary_card_type: y,
               wallet_visible_achievements: e,
               wallet_visible_completed_achievements: t,
             }),
               (b.current = !0);
-          }, [v, D, y, N, a]);
+          }, [v, D, y, p, a]);
           let { pathname: M } = (0, o.zy)(),
-            P = M.startsWith(Q.BVt.COLLECTIBLES_SHOP),
-            U = (0, h.p)(),
+            P = M.startsWith(ee.BVt.COLLECTIBLES_SHOP),
+            U = (0, f.p)(),
             w = r.useMemo(
               () =>
                 l
-                  ? { onQuestsClick: L, onShopClick: R }
-                  : { onQuestsClick: U ? null : L, onShopClick: P ? null : R },
-              [U, P, L, R, l],
+                  ? { onQuestsClick: O, onShopClick: T }
+                  : { onQuestsClick: U ? null : O, onShopClick: P ? null : T },
+              [U, P, O, T, l],
             );
           return u
-            ? (0, i.jsx)(ed, {
+            ? (0, i.jsx)(eu, {
                 cardRef: t,
                 returnRef: n,
                 orbBalance: c,
-                headerTagsContent: (0, i.jsx)(ej, {}),
+                headerTagsContent: (0, i.jsx)(eY, {}),
                 renderPrimaryCard: (e) => {
                   let { onClose: t } = e;
-                  return ex({
+                  return eF({
                     userHasPremium: I,
                     onClose: t,
                     orbBalance: c,
@@ -464914,16 +464946,16 @@ ${t}`;
                     onCloseWallet: s,
                   });
                 },
-                orbChallengesCard: (0, i.jsx)(eW, {
+                orbChallengesCard: (0, i.jsx)(eK, {
                   analyticsPage: a,
-                  analyticsLocations: N,
+                  analyticsLocations: p,
                   onCloseWallet: s,
                 }),
-                orbWalletFooter: (0, i.jsx)(eo, { ...w, totalOrbsRedeemed: f }),
+                orbWalletFooter: (0, i.jsx)(ec, { ...w, totalOrbsRedeemed: _ }),
               })
             : null;
         }
-        function eK(e) {
+        function ez(e) {
           let {
               cardRef: t,
               returnRef: n,
@@ -464934,7 +464966,7 @@ ${t}`;
             } = e,
             d = r.useCallback(
               () =>
-                (0, i.jsx)(eY, {
+                (0, i.jsx)(e$, {
                   cardRef: t,
                   returnRef: n,
                   analyticsPage: l,
@@ -464948,7 +464980,7 @@ ${t}`;
               },
               [o],
             );
-          return (0, i.jsx)(u.Y, {
+          return (0, i.jsx)(_.Y, {
             fixed: !0,
             autoInvert: !1,
             renderPopout: d,
@@ -464956,7 +464988,7 @@ ${t}`;
             align: "right",
             shouldShow: s,
             onRequestClose: c,
-            animation: u.Y.Animation.NONE,
+            animation: _.Y.Animation.NONE,
             targetElementRef: a,
             children: () => null,
           });
@@ -505293,7 +505325,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "59b3d22ec95ee0f00f05d94e0c17faf2a316e7ed",
+                      "e4f2a199ac905e7adaf50aefa2d70cf746f24419",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", Z),
@@ -515644,7 +515676,7 @@ ${l.join(" +\n")}
               ).then((e) => {
                 let i = {
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    build_number: "631730",
+                    build_number: "632301",
                   },
                   u = o.default.getCurrentUser();
                 null != u &&
@@ -527587,7 +527619,7 @@ ${l.join(" +\n")}
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("631730", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("632301", 10))) || (l.client_build_number = d),
           null == (c = eo?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -628973,7 +629005,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       155202:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "2e4f4e9fbfbc745a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       155361:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "1eaece907404d11d",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "a20880784285420b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       155738:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "d0193bff10317dfc",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       155781:
@@ -630315,7 +630347,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       263283:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "6944880c64917ea0",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       263408:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "863d1a457f62dd69",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "348e4d520e2c3cb2",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       263651:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "25853a816435c843",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       263953:
@@ -632269,7 +632301,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       430997:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "9e118497906e58e1",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       431294:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "be932886d15d7c9d",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "eec3d5d8a072db18",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       431649:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "df7c6c44cfb52c3b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       431658:
@@ -632279,7 +632311,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       431714:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "4178f409aecc22a9",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       431897:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "8ed4d8548081803d",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "12b483bcc1baed5c",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       431933:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "32642c1b7fa84c5d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       431944:
@@ -632854,7 +632886,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       479907:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "f352c841c6f76515",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       480388:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "35e475ba35cce4ec",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "1323ebef169f5b07",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       480419:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "dc0a1d5cdb01b8a7",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       480436:
@@ -633380,7 +633412,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       522684:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "3bb9d0f1a351a565",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       522872:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "24ff490294374985",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "021cf9e779c9b4ab",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       523095:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "5fbbb7871f8bda19",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       523146:
@@ -633900,7 +633932,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       567364:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "7872eeefca8c6f70",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       567620:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "5c7586ed346a7529",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "7945375f275f16dc",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       567743:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         "edde8abbcb6251ec",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       568035:
@@ -640287,4 +640319,4 @@ color: purple;
   );
   C = T.O(C);
 })();
-//# sourceMappingURL=web.b5e982817c690727.js.map
+//# sourceMappingURL=web.d3978f1210c00a8f.js.map
