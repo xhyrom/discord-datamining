@@ -1,0 +1,9 @@
+{
+  "full": {
+    "host_version": "1.0.1224",
+    "module_version": 1,
+    "package_sha256": "b9ff4d3ec52295c89031411bb5b14f64fa34bb8fec3fe81d2c6cf955515115fc",
+    "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1224/discord_premap/1/full.distro"
+  },
+  "deltas": []
+}
