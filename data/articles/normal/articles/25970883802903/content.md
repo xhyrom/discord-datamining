@@ -2,7 +2,7 @@
   Starting from <strong>September 30, 2026 (10:00AM PT)</strong> to
   <strong>December 31, 2027 (11:59PM PT)</strong>, eligible YouTube Premium
   subscribers within the United States can claim a 3 month trial of Discord
-  Nitro through YouTube's Member Hub. 
+  Nitro. 
 </p>
 <p>
   During this same period, eligible YouTube Premium subscribers in the United
@@ -38,7 +38,7 @@
   Japan, South Korea, Mexico, New Zealand, Taiwan, Turkey, or Ukraine.
 </p>
 <ul>
-  <li data-list-item-id="ea45ec724ee95649b7a41f221bb933024">
+  <li data-list-item-id="ef03bafad87bbf2dc3575f69bd166494d">
     If you currently have a free YouTube Premium subscription, you will not be
     eligible to claim this promotion.
   </li>
@@ -85,45 +85,45 @@
     >
   </p>
   <ul>
-    <li data-list-item-id="e0cc2332921fef73a08fb4b7effcb45f0">
+    <li data-list-item-id="ec23d3e2b52eb8e124b06e946b8aaaa49">
       <a href="#h_01M3DBTVZ42S1BJJCGXTVTQTPT">What is YouTube Premium? </a>
     </li>
-    <li data-list-item-id="e8588e566f33277675f468a2ffdb8d3e6">
+    <li data-list-item-id="ee60935874dfa86647dc01b1227d5013b">
       <a href="#h_01M3DBTVZ5MFQKFMXKW6WYB3TA">What is Discord Nitro?</a>
     </li>
-    <li data-list-item-id="edc5479eafa5eb056d96882c5594669e1">
+    <li data-list-item-id="e0eea3d4e5e11c0316159155d6d1782fd">
       <a href="#h_01M3DBTVZ6CMY3CZV6607FA6B1"
         >How do I claim the Nitro Promo from YouTube?  </a
       >
       <ul>
-        <li data-list-item-id="ea6e9b67d8e3fc5ff928a65d1f7d422b3">
+        <li data-list-item-id="e0e03e0f69a997da7c6c0cc02df18ae37">
           <a href="#h_01M3DBTVZ6CB1ZY20HSWKD21Q2"
             >Eligibility for the Claiming this Promotion from YouTube</a
           >
         </li>
-        <li data-list-item-id="ef35d1c0800b79935c21ca202c8f4beeb">
+        <li data-list-item-id="eea43c6c1407943b6d8737d31bd6d8dbf">
           <a href="#h_01M3DBTVZ88YFQCDS1VH2MC7A7"
             >Step By Step Claim Instructions </a
           >
         </li>
       </ul>
     </li>
-    <li data-list-item-id="e96fa98f4acb6eed83015964b7f2630c4">
+    <li data-list-item-id="e680044d154ced23474ef6897b55fafed">
       <a href="#h_01M3DBTVZ9YS48BENTSSWGGE3Z"
         >How do I redeem the Nitro Trial on my Discord Account? </a
       >
       <ul>
-        <li data-list-item-id="eff4bc4a2f24eb8e64a42a9b8dc8713ce">
+        <li data-list-item-id="e0767f5795dd657f77c75267b85bb296b">
           <a href="#h_01M3DBTVZAKV63E5MD6CY2QFAX"
             >Eligibility for Redeeming the Nitro Trial</a
           >
         </li>
-        <li data-list-item-id="ec47f352d1a0da669ffb66e00554a4d45">
+        <li data-list-item-id="e7969663033442595e22d909a72a408bf">
           <a href="#h_01M3DBTVZA7JJ37M0R8NHE77RZ"
             >Step by Step Redeem Instructions</a
           >
           <ul>
-            <li data-list-item-id="e5aa377b6b525173f34893c683dfab262">
+            <li data-list-item-id="e85631dc206e599add2f4578dabf46b08">
               <a href="#h_01M3DBTVZF9409NVQ0K5GVRRQP"
                 >What if I am an Active Nitro Basic, Nitro Classic, or Server
                 Boosting Subscriber? </a
@@ -133,28 +133,28 @@
         </li>
       </ul>
     </li>
-    <li data-list-item-id="e8011d6b656f37be6cc48f3972bf4d8bf">
+    <li data-list-item-id="e57f5b3c7b42fa1694dc7d54aa105ff34">
       <a href="#h_01M3DBTVZG7FGRAP15PZ2CXF1Q"
         >How do I share my Code with a Friend?</a
       >
     </li>
-    <li data-list-item-id="e2b47cb647407f7a00280bc717189653f">
+    <li data-list-item-id="ea9130f2630f5d5004a9c1de1d370ffe7">
       <a href="#h_01M3DBTVZHEX6MXRZJ51TC80GZ">Frequently Asked Questions</a>
       <ul>
-        <li data-list-item-id="e6a86089ff26c51212b3072f4949d8a29">
+        <li data-list-item-id="ef3340929ba30bed5efd7b01eb1c2bd6e">
           <a href="#h_01M3DBTVZJ5VTVRR3J75V1GZ7H">Promotion Details</a>
         </li>
-        <li data-list-item-id="e944aa068f682f8125dda079a70d4804a">
+        <li data-list-item-id="e6b64e8219b838049f32793eab5611ab5">
           <a href="#h_01M3DBTVZPE2G89ERR4ZWJ9WT3"
             >Eligibility for the Promotion</a
           >
         </li>
-        <li data-list-item-id="e3b25609658e4f5e52bc4986b770ac6f5">
+        <li data-list-item-id="e4a2026978fd33a29c6684c538ff856c0">
           <a href="#h_01M3DBTVZS8DS1HSGA2R3SMXVY"
             >Payment Info and Subscription Questions</a
           >
         </li>
-        <li data-list-item-id="e336aba13def8ab78c0a6faada4097581">
+        <li data-list-item-id="ea342e015c14f184aaf37ef7afcbc6887">
           <a href="#h_01M3DBTVZT61G510ST53PQHNSM"
             >Potential Errors and Other Issues</a
           >
@@ -194,7 +194,7 @@
   favorite Discords, and more! Check out some of these perks below! 
 </p>
 <ul>
-  <li data-list-item-id="ef20557a0e710fa36dac5386efa3c07fc">
+  <li data-list-item-id="e98999d33c6ecdacabe06e60525c10289">
     <a
       href="https://support.discord.com/hc/en-us/articles/4403147417623"
       target="_blank"
@@ -202,7 +202,7 @@
       ><span class="wysiwyg-underline">Custom Profiles</span></a
     >
   </li>
-  <li data-list-item-id="e8c2759b1efd0eba25289caf3e06f634e">
+  <li data-list-item-id="e72f37b4f45e370b98c0ba75d6d9968ad">
     <a
       href="https://support.discord.com/hc/en-us/articles/360036479811"
       target="_blank"
@@ -210,7 +210,7 @@
       ><span class="wysiwyg-underline">Global Custom emojis</span></a
     >
   </li>
-  <li data-list-item-id="ee92fea4f05e889f666fe1b278814b9c1">
+  <li data-list-item-id="eaf9436337b3ed0493bed43aee4a06349">
     <a
       href="https://support.discord.com/hc/en-us/articles/360041721052"
       target="_blank"
@@ -218,7 +218,7 @@
       ><span class="wysiwyg-underline">Higher Video quality</span></a
     >
   </li>
-  <li data-list-item-id="eb22c99c0aadde8ef7ee72ecc5ffac566">
+  <li data-list-item-id="e7cdfee5d60fac63d852c1a048e87e782">
     <a
       href="https://support.discord.com/hc/en-us/articles/360028038352"
       target="_blank"
@@ -226,7 +226,7 @@
       ><span class="wysiwyg-underline">Server Boosting</span></a
     >
   </li>
-  <li data-list-item-id="eca99b06d4d655773500e17a1e922e349">
+  <li data-list-item-id="e2a115c18cd0be86cc33dc5e81e1b02e4">
     <a href="https://support.discord.com/hc/en-us/articles/115000435108"
       ><span class="wysiwyg-underline">More!</span></a
     >
@@ -250,10 +250,9 @@
   marketing emails from YouTube in order to be sent the code.
 </p>
 <p>
-  In the US, active YouTube Premium subscribers can claim the code from their
-  YouTube Premium Member Hub. All offer claims must be by
-  <strong>December 31, 2027 (11:59PM PT)</strong> and redeemed by
-  <strong>January 30, 2028 (11:59PM PT)</strong>.
+  In the US, active YouTube Premium subscribers can claim the code. All offer
+  claims must be by <strong>December 31, 2027 (11:59PM PT)</strong> and redeemed
+  by <strong>January 30, 2028 (11:59PM PT)</strong>.
 </p>
 <div class="tip-box">
   <span style="color: #434343"
@@ -368,9 +367,9 @@
   >
 </p>
 <ul>
-  <li data-list-item-id="e4958e917dd44d5087fd802e252447a4b">
-    Start by directly pressing on the promotion link within the YouTube Premium
-    Member Hub or copy and paste the link into your browser window.
+  <li data-list-item-id="e451f7014dc380d69f0d96a46c014db1c">
+    Start by directly pressing on the promotion link or copy and paste the link
+    into your browser window.
   </li>
 </ul>
 <div class="info-box">
@@ -381,7 +380,7 @@
 </div>
 <p><strong>Step 2 - Logging into Discord</strong></p>
 <ul>
-  <li data-list-item-id="eb5653b221ad7251aee29bc7f5fc57e2b">
+  <li data-list-item-id="ee41199271fbee639969471e82abf2551">
      If you're not already logged into Discord in your browser, you will then be
     automatically redirected to either:
   </li>
@@ -440,23 +439,23 @@
   <strong>Step 3 - Confirming the Correct Account and Payment Method</strong>
 </p>
 <ul>
-  <li data-list-item-id="ef56a4e1732e120bf9127d6bec9fc23a2">
+  <li data-list-item-id="e979529ed21d5037ae57d223e31539b0f">
     Once you have logged into your Discord account, you'll see a new message
     asking you to confirm that you are accepting the Nitro subscription on the
     correct Discord account.
     <ul>
-      <li data-list-item-id="e9ad726b138aadf38da1b2f0c4f0526ef">
+      <li data-list-item-id="e37711f0fcc0cfe29ddf92c1f784cea8f">
         You'll see a notice saying:
         <em><strong>"You are accepting this gift as _________" </strong></em>
       </li>
     </ul>
   </li>
-  <li data-list-item-id="e49a9bc09a0d11292022b29c09ed3c313">
+  <li data-list-item-id="e7b2c1e6613bae471d92d2c40b866cc3b">
     If your Discord account does not have your payment information, you'll be
     asked to fill out your payment details. (<strong>Note</strong>: You will not
     be charged until the free trial ends and the subscription renews)
   </li>
-  <li data-list-item-id="ec26595267038c82a60f8523032a5b033">
+  <li data-list-item-id="e7b99ad7a52c6b5b485c2d774a45bf640">
     When you've filled out all the necessary information and you're ready to
     redeem this promotion, press the "<strong>Accept Gift</strong>" button. 
   </li>
@@ -470,7 +469,7 @@
 </div>
 <p><strong>Step 4 - Subscription Now Activated</strong></p>
 <ul>
-  <li data-list-item-id="efa8f2a18b0016d9b6638402c08d9c057">
+  <li data-list-item-id="ed5d2708795e5e05a54cab382070a5f40">
     After accepting the promo to your account, you'll now be automatically
     redirected to your <strong>Subscriptions</strong> tab in your User Settings
     to see your newly activated Nitro subscription on your account.
@@ -497,8 +496,11 @@
   <span style="color: #434343"
     ><strong>HOWEVER, please note</strong>: By choosing to activate this 3 month
     trial, you will lose any features associated with your current
-    subscriptions, and **you will not receive a refund for any remaining value
-    on your current subscription**.</span
+    subscriptions,
+    <span class="wysiwyg-underline"
+      >and you will not receive a refund for any remaining value on your current
+      subscription</span
+    >.</span
   >
 </div>
 <p>
@@ -521,8 +523,8 @@
   can share this link with a friend to use instead.
 </p>
 <p>
-  After you locate the Discord Nitro benefit in the YouTube Premium Member Hub,
-  you can copy the promotion link and send it to a friend.
+  After you locate the Discord Nitro benefit, you can copy the promotion link
+  and send it to a friend.
   <strong>We recommend sending the link in a private direct message.</strong>
 </p>
 <h1 id="h_01M3DBTVZHEX6MXRZJ51TC80GZ">
@@ -533,37 +535,37 @@
   we've also broken down this information in this FAQ section as well! 
 </p>
 <ul>
-  <li data-list-item-id="ed04b607a73a9b35c5c02138aa65cd656">
+  <li data-list-item-id="eda9cac3c9919de98a217f03c6267f9b2">
     <a href="#h_01M3DBTVZJ5VTVRR3J75V1GZ7H"
       ><span class="wysiwyg-underline">Promotion Details</span></a
     >
   </li>
-  <li data-list-item-id="e4333db9b330d10bbcc4a2fe2aa0b81de">
+  <li data-list-item-id="e75d4ad61179f791203465621fe67264e">
     <a href="#h_01M3DBTVZPE2G89ERR4ZWJ9WT3"
       ><span class="wysiwyg-underline">Eligibility for the Promotion</span></a
     >
   </li>
-  <li data-list-item-id="e8d12e5ecbe5a7cbfcd4061e72f48cff2">
+  <li data-list-item-id="e165cc542f08ca67e98358ea740322bfc">
     <a href="#h_01M3DBTVZS8DS1HSGA2R3SMXVY"
       ><span class="wysiwyg-underline"
         >Payment Info and Subscription Questions</span
       ></a
     >
   </li>
-  <li data-list-item-id="e31714dbeac1c9b57b51b19b28dbcfd56">
+  <li data-list-item-id="e8257ae5ceb0de43aadcea4b05b8c41a3">
     <a href="#h_01M3DBTVZT61G510ST53PQHNSM"
       ><span class="wysiwyg-underline"
         >Potential Errors and Other Issues</span
       ></a
     >
     <ul>
-      <li data-list-item-id="e50a115bdde28e373c3b4c5897319512e">
+      <li data-list-item-id="ee9802d8737761f6bf5275cdcd3df2e41">
         Already Had/Have Nitro
       </li>
-      <li data-list-item-id="ea107e9e348e380840ae4c2d13a7dd505">
+      <li data-list-item-id="eac7d654738e72026f00e434362601b59">
         Already Redeemed
       </li>
-      <li data-list-item-id="e65016149ec025bc06656f1da51b7ce4d">
+      <li data-list-item-id="e72c257c92257f94c9f7bb55abfb6d79d">
         Something's Wrong Here
       </li>
     </ul>
@@ -615,7 +617,7 @@
   and 2) <strong>have opted-in to receive YouTube marketing emails.</strong>
 </p>
 <ul>
-  <li data-list-item-id="ef429acd4f66dc51073d5c42fd93e9241">
+  <li data-list-item-id="e753a1224b33ae7ac63d652e5b976b356">
     If you run into any issues, please reach out to YouTube Premium support via
     the form at the bottom of this help article:<a
       href="https://support.google.com/youtube/"
@@ -630,26 +632,7 @@
       ></a
     >
   </li>
-  <li data-list-item-id="e294492ddd6b68a4f6c8f5d1ffc36a754">
-    <strong>Note:</strong> If you currently have a free YouTube Premium
-    subscription, you will not be eligible to claim this promotion. 
-  </li>
-</ul>
-<p>
-  <strong
-    >Q: Who can claim this promotion from their YouTube Premium Member
-    Hub?</strong
-  >
-</p>
-<p>
-  A: In order to see this offer from YouTube in the YouTube Premium Member Hub,
-  you must be a current<strong>
-    YouTube Premium subscriber in the United States, where this functionality is
-    active.</strong
-  >
-</p>
-<ul>
-  <li data-list-item-id="e6fc18227a172b1e05645fe3a660c356e">
+  <li data-list-item-id="e327f79cef045a84929acb97ae5f3a490">
     <strong>Note:</strong> If you currently have a free YouTube Premium
     subscription, you will not be eligible to claim this promotion. 
   </li>
@@ -688,8 +671,11 @@
   <span style="color: #434343"
     ><strong>HOWEVER, please note: </strong>By choosing to activate this 3 month
     trial, you will lose any features associated with your current
-    subscriptions, and **you will not receive a refund for any remaining value
-    on your current subscription**.</span
+    subscriptions, and
+    <span class="wysiwyg-underline"
+      >you will not receive a refund for any remaining value on your current
+      subscription</span
+    >.</span
   >
 </div>
 <p>
@@ -813,12 +799,12 @@
   >
 </p>
 <p>
-  A: In order to receive this Nitro offer from YouTube in your YouTube Premium
-  Member Hub, you must be a current YouTube Premium subscriber in the United
-  States. During this same period, YouTube Premium subscribers in the United
-  States, Argentina, Australia, Brazil, Canada, France, Germany, Great Britain,
-  Hong Kong, India, Japan, South Korea, Mexico, New Zealand, Taiwan, Turkey, and
-  Ukraine can claim their 3-month Discord Nitro offer via email.
+  A: In order to receive this Nitro offer from YouTube, you must be a current
+  YouTube Premium subscriber in the United States. During this same period,
+  YouTube Premium subscribers in the United States, Argentina, Australia,
+  Brazil, Canada, France, Germany, Great Britain, Hong Kong, India, Japan, South
+  Korea, Mexico, New Zealand, Taiwan, Turkey, and Ukraine can claim their
+  3-month Discord Nitro offer via email.
 </p>
 <p>
   If you aren’t sure how to find offers in your YouTube Premium account, follow
@@ -943,7 +929,7 @@
   A: If you're seeing an “Wait a Second...Looks like this code didn't work.”
   error, that means that the link is invalid! If you've copy and pasted this
   link, we recommend you double check the link you were given once more and make
-  sure it exactly matches the code in your YouTube Premium Member Hub. 
+  sure it exactly matches the code. 
 </p>
 <p>
   If you received this link from a friend, double check with your friend on the
