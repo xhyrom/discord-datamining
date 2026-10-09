@@ -1,8 +1,8 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["993180"],
+  ["907423"],
   {
-    535768(_, e, d) {
+    535768(_, e, t) {
       _.exports = {
         Wz: "devBanner__56d75",
         sr: "local__56d75",
@@ -13,10 +13,7 @@
         ut: "closeIcon__56d75",
       };
     },
-    137326(_, e, d) {
-      _.exports = { Q: "mediaWrapper_c8b0d6", $: "media_c8b0d6" };
-    },
-    363839(_, e, d) {
+    363839(_, e, t) {
       _.exports = {
         iE: "wrapper__553bf",
         VU: "withGradient__553bf",
