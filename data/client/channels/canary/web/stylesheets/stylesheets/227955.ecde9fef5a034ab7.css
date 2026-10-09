@@ -27,6 +27,13 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.receiverReportRow__7c7a6 {
+  color: var(--text-muted);
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+  line-height: 18px;
+  padding-inline-start: 16px;
+}
 .valueIcon__7c7a6 {
   float: inline-start;
   position: relative;
@@ -108,4 +115,4 @@
   color: var(--white);
 }
 
-/*# sourceMappingURL=227955.dac52b1be52dd792.css.map*/
+/*# sourceMappingURL=227955.ecde9fef5a034ab7.css.map*/

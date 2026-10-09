@@ -1,36 +1,8 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["333008"],
+  ["487719"],
   {
-    788066(e, _, t) {
-      e.exports = {
-        MK: "menu__43313",
-        Eq: "customMenuItem__43313",
-        CO: "customNotches__43313",
-      };
-    },
-    193221(e, _, t) {
-      e.exports = {
-        kL: "container__011b7",
-        ak: "micTest__011b7",
-        EX: "small__011b7",
-        mi: "meterOnly__011b7",
-        Qe: "micTestCaption__011b7",
-        b_: "captionLiveRegion__011b7",
-        km: "buttonSizer__011b7",
-      };
-    },
-    838949(e, _, t) {
-      e.exports = {
-        iE: "wrapper__06283",
-        kL: "container__06283",
-        qB: "progress__06283",
-        DR: "notches__06283",
-        wm: "gray__06283",
-        Ql: "black__06283",
-      };
-    },
-    484555(e, _, t) {
+    484555(e, t, _) {
       e.exports = {
         x6: "button__67645",
         Xr: "redGlow__67645",
@@ -42,13 +14,7 @@
         In: "greenTooltipContent__67645",
       };
     },
-    98950(e, _, t) {
-      e.exports = { W: "subtext__339d0" };
-    },
-    158821(e, _, t) {
-      e.exports = { D: "title_b6c092" };
-    },
-    358285(e, _, t) {
+    358285(e, t, _) {
       e.exports = {
         kL: "container__37e49",
         my: "avatar__37e49",
@@ -70,7 +36,7 @@
         ZQ: "plated__37e49",
       };
     },
-    516171(e, _, t) {
+    516171(e, t, _) {
       e.exports = {
         Lh: "audioButtonParent__5e764",
         UT: "buttonChevron__5e764",
@@ -80,10 +46,10 @@
         $$: "buttonChevronIcon__5e764",
       };
     },
-    577755(e, _, t) {
+    577755(e, t, _) {
       e.exports = { T: "redIcon_e0923d", o: "strikethrough_e0923d" };
     },
-    222176(e, _, t) {
+    222176(e, t, _) {
       e.exports = { U: "pttIndicator_a18ea4", z: "speaking_a18ea4" };
     },
   },
