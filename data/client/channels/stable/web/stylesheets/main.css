@@ -413,18 +413,6 @@ code {
   --custom-add-permissions-modal-focus-ring-width: 4px;
   --custom-custom-role-icon-form-item-role-icon-preview-size: 32px;
   --custom-guild-settings-roles-edit-shared-sidebar-width: 232px;
-  --custom-guild-settings-roles-intro-roles-transition: 250ms;
-  --custom-guild-settings-roles-intro-pause-transition: 166ms;
-  --custom-guild-settings-roles-intro-background-transition: 500ms;
-  --custom-guild-settings-roles-intro-banner-transition-delay: calc(
-    var(--custom-guild-settings-roles-intro-roles-transition) +
-      var(--custom-guild-settings-roles-intro-pause-transition)
-  );
-  --custom-guild-settings-roles-intro-roles-transition-delay: calc(
-    var(--custom-guild-settings-roles-intro-roles-transition) +
-      var(--custom-guild-settings-roles-intro-pause-transition) * 2 +
-      var(--custom-guild-settings-roles-intro-background-transition)
-  );
   --custom-guild-settings-community-intro-content-spacing: 32px;
   --custom-guild-settings-community-intro-hover-distance: -12px;
   --custom-guild-settings-community-intro-text-spacing: 8px;
@@ -1099,4 +1087,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=419070.51520158c0dc856e.css.map*/
+/*# sourceMappingURL=419070.5a76dee70a3767eb.css.map*/

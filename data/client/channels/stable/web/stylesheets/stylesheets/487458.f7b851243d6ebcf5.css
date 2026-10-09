@@ -1,0 +1,115 @@
+@keyframes fadeIn__5cd44 {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut__5cd44 {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.base__5cd44 {
+  animation: fadeIn__5cd44 0.15s ease-out 50ms forwards;
+  opacity: 0;
+}
+.base__5cd44.hidden__5cd44:not(.focusSensitive__5cd44:focus-within) {
+  animation: fadeOut__5cd44 0.15s ease-out forwards;
+  pointer-events: none;
+}
+.horizontal_e03578 {
+  grid-column: 1 / span 5;
+  grid-row: 2;
+  margin: 24px;
+}
+.vertical_e03578 {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  margin: 24px;
+}
+.mediaArea_e03578 {
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 3;
+  place-self: center;
+}
+.tile_c41dc3 {
+  align-items: center;
+  container-type: size;
+  display: flex;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.tile_c41dc3,
+.tileFrame_c41dc3 {
+  position: relative;
+}
+.tileFrame_c41dc3 {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.tileFrameGrid_c41dc3 {
+  aspect-ratio: 16/9;
+  border-radius: var(--radius-xs);
+  height: auto;
+  width: min(var(--custom-grid-tile-width, 100cqw), 177.77778cqh);
+}
+.tileMediaWaiting_c41dc3 {
+  filter: blur(16px);
+  transform: scale(1.06);
+}
+.full-motion .tileMediaWaiting_c41dc3 {
+  transition:
+    filter 0.15s ease,
+    transform 0.15s ease;
+}
+.tileVideo_c41dc3 {
+  background: transparent;
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.waitingPill_c41dc3 {
+  align-items: center;
+  background-color: var(--background-mod-strong);
+  border-radius: var(--radius-round);
+  color: var(--white);
+  display: flex;
+  gap: var(--space-4);
+  inset-inline-start: 50%;
+  padding: var(--space-4) var(--space-8);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.tileOwner_c41dc3,
+.waitingPill_c41dc3 {
+  pointer-events: none;
+  position: absolute;
+}
+.tileOwner_c41dc3 {
+  background: radial-gradient(
+    74.05% 72.3% at 14.44% 89.77%,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0.6) 50%,
+    transparent 100%
+  );
+  bottom: 0;
+  inset-inline-start: 0;
+  line-height: 0;
+  padding-bottom: var(--space-8);
+  padding-inline-end: var(--space-12);
+  padding-inline-start: var(--space-8);
+  padding-top: var(--space-12);
+}
+
+/*# sourceMappingURL=487458.f7b851243d6ebcf5.css.map*/
