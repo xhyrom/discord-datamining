@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["307314"],
+  ["467847"],
   {
     83978(_, e, a) {
       _.exports = {
@@ -37,6 +37,9 @@
         tr: "avatarIconOverlay__68617",
         qE: "avatarIconRed__68617",
       };
+    },
+    566082(_, e, a) {
+      _.exports = { n: "panel__9d3f0" };
     },
   },
 ]);
