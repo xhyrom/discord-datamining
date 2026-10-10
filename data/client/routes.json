@@ -3823,11 +3823,7 @@
   },
   "OUTBOUND_PROMOTIONS": {
     "url": "/outbound-promotions",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "OUTBOUND_PROMOTIONS_PREVIEW": {
     "url": "/outbound-promotions/preview",
