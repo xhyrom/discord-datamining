@@ -41,6 +41,7 @@
         sI: "stepStatPositive__76711",
         eh: "stepStatNegative__76711",
         iq: "stepItem__76711",
+        n9: "stepLineError__76711",
         Ue: "stepChevron__76711",
         y8: "stepScreenshots__76711",
         MT: "turnAttachments__76711",
