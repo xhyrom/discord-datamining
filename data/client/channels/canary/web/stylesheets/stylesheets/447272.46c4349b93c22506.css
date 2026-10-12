@@ -171,14 +171,6 @@
 .gradientBackground__53b4c:before {
   opacity: 0.3;
 }
-.callOfDutyGradient__53b4c:before {
-  background: linear-gradient(
-    180deg,
-    rgba(136, 89, 16, 0.3),
-    rgba(112, 59, 0, 0.3)
-  );
-  opacity: 0.5;
-}
 .xboxGradient__53b4c:before {
   background: linear-gradient(
     180deg,
@@ -293,4 +285,4 @@
   }
 }
 
-/*# sourceMappingURL=447272.347fbb59fe645c45.css.map*/
+/*# sourceMappingURL=447272.46c4349b93c22506.css.map*/

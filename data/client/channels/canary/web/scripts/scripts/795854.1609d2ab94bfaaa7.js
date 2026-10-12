@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["472847"],
+  ["795854"],
   {
     242695(a, c, e) {
       a.exports = {
@@ -26,9 +26,6 @@
         C0: "bundleMiniStaticPreview_da8ac7",
         gw: "purchaseItemImage_da8ac7",
       };
-    },
-    200307(a, c, e) {
-      a.exports = { h: "imageWrapper__313d2", S: "image__313d2" };
     },
     557226(a, c, e) {
       a.exports = {
