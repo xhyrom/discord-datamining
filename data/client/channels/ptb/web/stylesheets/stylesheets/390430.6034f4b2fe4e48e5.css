@@ -23,22 +23,13 @@
   width: 80%;
 }
 .emptyPreviewText__04666 {
-  color: var(--text-default);
-}
-.noImage__04666 {
-  background-image: none;
+  text-align: center;
 }
 .images-light .emptyPreviewImage__04666 {
   background-image: url(/assets/bc689a4cf705a445.svg);
 }
-.images-light .emptyPreviewImage__04666.noImage__04666 {
-  background-image: none;
-}
 .images-dark .emptyPreviewImage__04666 {
   background-image: url(/assets/6b1a461f35c05c7a.svg);
 }
-.images-dark .emptyPreviewImage__04666.noImage__04666 {
-  background-image: none;
-}
 
-/*# sourceMappingURL=390430.3cae341f2bbd8ee6.css.map*/
+/*# sourceMappingURL=390430.6034f4b2fe4e48e5.css.map*/
