@@ -2,9 +2,9 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   ["447272"],
   {
-    505051(e, o, a) {
+    505051(o, e, a) {
       a.r(
-        (e.exports = {
+        (o.exports = {
           boxBackdrop: "boxBackdrop__53b4c",
           boxContainer: "boxContainer__53b4c",
           bentoSectionHeader: "bentoSectionHeader__53b4c",
@@ -27,7 +27,6 @@
           overlayImageMode: "overlayImageMode__53b4c",
           textBox: "textBox__53b4c",
           gradientBackground: "gradientBackground__53b4c",
-          callOfDutyGradient: "callOfDutyGradient__53b4c",
           xboxGradient: "xboxGradient__53b4c",
           youtubeGradient: "youtubeGradient__53b4c",
           macaronGradient: "macaronGradient__53b4c",
