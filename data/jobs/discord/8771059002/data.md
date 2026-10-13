@@ -1,6 +1,6 @@
 # Job Listing
 
-## Payments & Fraud Analyst
+## Program Manager, Fraud and Payments Risk
 
 **Location:** San Francisco Bay Area
 
@@ -10,13 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8771059002](https://discord.com/jobs/8771059002)
 
-**Updated At:** Fri, 11 Sep 2026 23:25:24 GMT
+**Updated At:** Tue, 13 Oct 2026 16:51:25 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Payments, Fraud &amp;amp; Risk team enables revenue growth and protects Discord's financial health by managing payments optimization and fraud risk as a strategic function. We operate across three core areas: identifying and mitigating large-scale fraud to enable clean revenue, optimizing the cost of payments through chargeback strategy and card network fee mitigation, and partnering with Product, Revenue, and Engineering early to surface and address fraud risk — so Discord can launch with confidence and maximize revenue outcomes.
 As Discord matures, this team serves as the connective tissue between Payments Strategy, Engineering, Legal, Product, and Revenue — embedding fraud and financial risk expertise into everything Discord does, with a bias toward enabling growth.
 As a Payments &amp;amp; Fraud Analyst on Discord's Payments, Fraud &amp;amp; Risk team, you will own one or more of the team's core functions end-to-end — leading cross-functional programs, shaping fraud and payments strategy, and driving the fraud risk decisions that let Discord launch products with confidence and maximize clean revenue.
-
+&amp;nbsp;
 What You'll Be Doing
 
 Own high-scale fraud detection and mitigation, payments operations, and risk assessment within your assigned area end-to-end — from strategy through execution and post-launch measurement

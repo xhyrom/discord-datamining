@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8806482002](https://discord.com/jobs/8806482002)
 
-**Updated At:** Tue, 15 Sep 2026 16:52:11 GMT
+**Updated At:** Tue, 13 Oct 2026 20:45:36 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We are seeking a strategic Commercial Policy Lead to shape Discord's approach to monetization and revenue products. As a key member of the Product Policy organization, you will develop and implement advertising and commerce policies that enable Discord's business while maintaining platform safety and user trust. This role requires a deep understanding of digital commerce, creator economies, and advertising ecosystems, with the ability to balance business objectives with responsible platform practices.
@@ -49,5 +49,5 @@ Please see our Applicant and Candidate Privacy Policy for details regarding Disc
 - Policy
 
 **Offices:**
-- San Francisco, CA in San Francisco, California, United States
+- Remote (U.S.)
     
