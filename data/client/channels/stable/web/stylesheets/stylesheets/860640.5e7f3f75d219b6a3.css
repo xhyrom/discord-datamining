@@ -96,16 +96,18 @@
 }
 .avatarStack_effefc {
   flex-direction: row;
+  justify-content: flex-end;
+  width: 32px;
 }
 .avatarStack_effefc,
 .avatarWrapper_effefc {
   align-items: center;
   display: flex;
-  justify-content: center;
 }
 .avatarWrapper_effefc {
   border-radius: 100%;
   box-shadow: var(--shadow-high);
+  justify-content: center;
 }
 .stackedAvatarWrapper_effefc {
   margin-inline-start: -8px;
@@ -142,4 +144,4 @@
   }
 }
 
-/*# sourceMappingURL=860640.36792bd2205638f1.css.map*/
+/*# sourceMappingURL=860640.5e7f3f75d219b6a3.css.map*/
