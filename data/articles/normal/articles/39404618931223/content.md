@@ -1,12 +1,51 @@
+<div class="info-box">
+  <strong>Note</strong>: Individuals to whom the Take It Down Act does not apply
+  may submit reports of non-consensual intimate imagery (NCII) through our
+  standard
+  <a
+    href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord"
+    target="_blank"
+    rel="noopener noreferrer"
+    >in-app reporting system</a
+  >. Our non-consensual intimate imagery
+  <a
+    href="https://discord.com/safety/non-consensual-intimate-media-policy-explainer"
+    target="_blank"
+    rel="noopener noreferrer"
+    >policy</a
+  >
+  applies globally in addition to other legal rights you may have where you
+  live.
+</div>
 <p>
-  The Take It Down Act (TIDA) is a law that allows certain individuals to
-  request the removal of intimate images shared or created without their
-  consent, sometimes referred to as “revenge porn” or “non-consensual
-  pornography.” It requires covered platforms, like Discord, to provide a clear
-  reporting process, review qualifying removal requests, remove covered content
-  within a defined timeframe, and take reasonable steps to limit the spread of
-  that content.
+  The Take It Down Act (<strong>TIDA</strong>) is a US law that allows certain
+  individuals to request the removal of intimate images shared or created
+  without their consent, sometimes referred to as “revenge porn” or
+  “non-consensual pornography.” It requires covered platforms, like Discord, to
+  provide a clear reporting process, review qualifying removal requests, remove
+  covered content within a defined timeframe, and take reasonable steps to limit
+  the spread of that content.
 </p>
+<div class="warn-box">
+  <strong>Important</strong>: Need immediate help? If you have concerns about
+  your personal safety, or the safety of someone you know, please contact local
+  law enforcement or social services.
+</div>
+<div class="toc-box">
+  <p><strong>What this article covers:</strong></p>
+  <ul>
+    <li data-list-item-id="e1460e2f2dc6ce92395820044f8a9ff27">
+      <a href="#h_01KNAZCSTZ7N6X27ZSQ064S3Z3"
+        >Your Rights and Our Responsibilities Under TIDA</a
+      >
+    </li>
+    <li data-list-item-id="ee28feb54a8f23223de32f1edc604d58d">
+      <a href="#h_01KNAZH3141MSDQZWBAZTTSNPW"
+        >What to Expect After You Submit a Removal Request Under TIDA</a
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01KNAZCSTZ7N6X27ZSQ064S3Z3">
   Your Rights and Our Responsibilities Under TIDA
 </h1>
@@ -15,7 +54,7 @@
   acting on your behalf, may:
 </p>
 <ul>
-  <li data-list-item-id="e40b26a48f981c192e114a732cabde91a">
+  <li data-list-item-id="e753cf86bc04cc55d2952b1779ac92c7a">
     Notify Discord of any “<a
       href="https://www.congress.gov/119/plaws/publ12/PLAW-119publ12.pdf"
       target="_blank"
@@ -24,7 +63,7 @@
     >” published on Discord that depicts you and was published without your
     consent; and,
   </li>
-  <li data-list-item-id="e371fdcfdf251580e4cb7bad7f2285329">
+  <li data-list-item-id="e70b883d62657a9f7ec18eb1f0c2353fc">
     Submit a request for Discord to remove the depiction. For more details about
     how to submit a removal request, you can refer to our
     <a
@@ -40,14 +79,14 @@
   these requirements:
 </p>
 <ul>
-  <li data-list-item-id="e9692b2605f293e64174b09faa39b0480">
+  <li data-list-item-id="e2781ba37af830f2fc8d796e80939441a">
     You are identifiable in the content or via the context in which it is
     displayed (for example, your face is visible or your name is mentioned);
   </li>
-  <li data-list-item-id="e7b3478209e5af8160f1abd46828c23ce">
+  <li data-list-item-id="ea41ff88fe2c543fffc034621271c1c0d">
     The content shows you nude or engaged in sexual activity; and,
   </li>
-  <li data-list-item-id="edb99ae6dba1d2eae502bc39d83b0a12e">
+  <li data-list-item-id="e5ae95008ed102401fc96f81659f8a3d5">
     The content was published without your consent.
   </li>
 </ul>
@@ -58,20 +97,20 @@
 </p>
 <p>Under TIDA, Discord, as a covered platform, is required to:</p>
 <ul>
-  <li data-list-item-id="e9ae1863dc58ef63a1a084852324e2fc1">
+  <li data-list-item-id="e43efc344786a3d8dd892b6ca9bfd9980">
     Maintain a clear and accessible process that allows a depicted individual
     (or their authorized representative) to request the removal of
     non-consensual intimate visual depictions;
   </li>
-  <li data-list-item-id="eb9f7b105cd477b14a6538893ab9060f5">
+  <li data-list-item-id="e99d5caffba1d8f3554eae29e750dabbf">
     Review each removal request and determine whether it satisfies the
     requirements of the law;
   </li>
-  <li data-list-item-id="e2a7cd4f90e1229297e136e2298e9f905">
+  <li data-list-item-id="eb337b56def8cbe86d2a1849d08c80e31">
     Remove the reported content within the 48 hour time period required by law
     when a valid request is received; and,
   </li>
-  <li data-list-item-id="e02c1f96740063f27b131ce6d4211d17d">
+  <li data-list-item-id="e020224d59340661fc1389dfc13cbac63">
     Make reasonable efforts to identify and remove known copies of the same
     non-consensual intimate visual depiction.
   </li>

@@ -102,10 +102,12 @@
   >
 </p>
 <h1 id="h_01K640AM1RCFQFREHSFKQRDNFC">What is Discord Testers?</h1>
-<div class="warn-box">
-  <strong>Important:</strong> We're sorry to say that the opportunity to be
-  considered for the Discord Testers server is currently unavailable. When the
-  possibility arises again, we will announce it here!
+<div class="mega-box">
+  Announcement<strong>:</strong>
+  <strong
+    >We’re excited to announce that the opportunity to be considered for the
+    Discord Testers server will be available soon!</strong
+  >
 </div>
 <p>
   <strong>Discord Testers</strong> (also known as DTesters) is an official,
@@ -113,36 +115,25 @@
   identify, reproduce, and provide high-quality bug reports. 
 </p>
 <p>
-  We wanted to say a big thank you to those that took the time to fill out the
-  recent Discord Testers Consideration Quiz. Your interest and participation
-  means a lot to us. If you were one of the top performers, we have sent you an
-  email with more information on what to do next.  Don't forget to check your
-  spam folder for messages from @discordapp.com, just in case our email ended up
-  there.
+  Great news for aspiring Discord Testers!  We plan to open the Discord Testers
+  Consideration Quiz for a limited time later this Fall to welcome new members
+  to the community.  
 </p>
-<p>
-  If you have not been contacted, we are sorry to say that you were not chosen
-  this time around.  We understand that this is likely disappointing, but wanted
-  to offer some guidance for the future.
-</p>
-<p>
-  For those interested in joining Discord Testers in the future, here are some
-  valuable tips to help you prepare and shine on the quiz in the future:
-</p>
+<p>Here are a few tips to help you prepare:</p>
 <ul>
   <li data-list-item-id="e6de3efe324b57d683615fa21936291d0">
-    Make sure to follow the quiz directions carefully
+    Follow the quiz directions carefully.
   </li>
-  <li data-list-item-id="e36a705def5b4c6e5333c9e1bfecf9a6c">
-    Become familiar with Discord and its features
+  <li data-list-item-id="ee88ea15bc4f9731c14b0c452c0763880">
+    Become familiar with Discord and its features.
   </li>
-  <li data-list-item-id="eb0470fe9b1e024d4470b2a4f74f957bd">
-    Utilize Discord support articles in the Help Center
+  <li data-list-item-id="e4677f66cecb73ec891f3d21d6480cbb8">
+    Use the Discord Help Center to learn how features work.
   </li>
 </ul>
 <p>
-  Periodically, new testers will be added and more information will be provided
-  here as these opportunities arise.
+  When the quiz opens, we’ll announce it here and add a link to the Discord
+  Testers Consideration Quiz to this article.
 </p>
 <h2 id="h_01GB8VR2A607B1TXP5CX4MF7CF">
   <span style="font-weight: 400">Discord Tester FAQ</span>
