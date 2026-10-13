@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["434742"],
+  ["935812"],
   {
     491238(t, r, e) {
       t.exports = e(27650).Symbol;
@@ -15,13 +15,13 @@
       var o = e(491238),
         n = e(31034),
         c = e(956713),
-        p = o ? o.toStringTag : void 0;
+        i = o ? o.toStringTag : void 0;
       t.exports = function (t) {
         return null == t
           ? void 0 === t
             ? "[object Undefined]"
             : "[object Null]"
-          : p && p in Object(t)
+          : i && i in Object(t)
             ? n(t)
             : c(t);
       };
@@ -30,16 +30,16 @@
       var o = e(491238),
         n = e(24011),
         c = e(377482),
-        p = e(574151),
-        i = 1 / 0,
+        i = e(574151),
+        p = 1 / 0,
         u = o ? o.prototype : void 0,
         a = u ? u.toString : void 0;
       t.exports = function t(r) {
         if ("string" == typeof r) return r;
         if (c(r)) return n(r, t) + "";
-        if (p(r)) return a ? a.call(r) : "";
+        if (i(r)) return a ? a.call(r) : "";
         var e = r + "";
-        return "0" == e && 1 / r == -i ? "-0" : e;
+        return "0" == e && 1 / r == -p ? "-0" : e;
       };
     },
     20683(t, r, e) {
@@ -49,17 +49,17 @@
       var o = e(491238),
         n = Object.prototype,
         c = n.hasOwnProperty,
-        p = n.toString,
-        i = o ? o.toStringTag : void 0;
+        i = n.toString,
+        p = o ? o.toStringTag : void 0;
       t.exports = function (t) {
-        var r = c.call(t, i),
-          e = t[i];
+        var r = c.call(t, p),
+          e = t[p];
         try {
-          t[i] = void 0;
+          t[p] = void 0;
           var o = !0;
         } catch (t) {}
-        var n = p.call(t);
-        return o && (r ? (t[i] = e) : delete t[i]), n;
+        var n = i.call(t);
+        return o && (r ? (t[p] = e) : delete t[p]), n;
       };
     },
     956713(t) {
@@ -72,14 +72,6 @@
       var o = e(20683),
         n = "object" == typeof self && self && self.Object === Object && self;
       t.exports = o || n || Function("return this")();
-    },
-    377941(t, r, e) {
-      var o = e(762479),
-        n = /[\\^$.*+?()[\]{}|]/g,
-        c = RegExp(n.source);
-      t.exports = function (t) {
-        return (t = o(t)) && c.test(t) ? t.replace(n, "\\$&") : t;
-      };
     },
     377482(t) {
       t.exports = Array.isArray;
@@ -104,4 +96,4 @@
     },
   },
 ]);
-//# sourceMappingURL=434742.5289724900ea180e.js.map
+//# sourceMappingURL=935812.136ada77a97748a6.js.map
