@@ -894,17 +894,17 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.default_c2b88c {
-  background-color: var(--badge-background-default);
-  color: var(--badge-text-default);
+.secondary_c2b88c {
+  background-color: var(--badge-secondary-background);
+  color: var(--badge-secondary-text);
 }
-.brand_c2b88c {
-  background-color: var(--badge-background-brand);
-  color: var(--badge-text-brand);
+.primary_c2b88c {
+  background-color: var(--badge-primary-background);
+  color: var(--badge-primary-text);
 }
 .expressive_c2b88c {
-  background-color: var(--badge-expressive-background-default);
-  color: var(--badge-expressive-text-default);
+  background-color: var(--badge-expressive-background);
+  color: var(--badge-expressive-text);
 }
 .rarity-common_c2b88c {
   background: var(--badge-common-background);
@@ -1015,4 +1015,4 @@
   --custom-gradient-color-end: var(--expressive-gradient-nitro-green-end);
 }
 
-/*# sourceMappingURL=384209.82c6261d0bdd2002.css.map*/
+/*# sourceMappingURL=384209.98ed92535d1a79fb.css.map*/
