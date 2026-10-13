@@ -81,6 +81,25 @@
         </li>
       </ul>
     </li>
+    <li data-list-item-id="e9d837a4e346c96b68a164a3582a62794">
+      <a href="#h_01M4TXKQ6XRYT16GNSTT7C8ZGN">My Best Buy Plus Membership</a>
+      <ul>
+        <li data-list-item-id="e469854ee9bd2775f46ca9d46c5899ae7">
+          <a href="#h_01M4TXNK5YW29MY1ZB0S27WW4V">How it Works</a>
+        </li>
+        <li data-list-item-id="ef83e629ccbe41625f218fba7ec3db9f6">
+          <a href="#h_01M4TXSSJ99QHTE27VHQS7GY8P">Eligibility Requirements</a>
+        </li>
+        <li data-list-item-id="e54d2f6108ebaf6e4f70a5a894586a99d">
+          <a href="#h_01M4TXVGFAGZY76Z955PFWN116">How to Access Your Code</a>
+        </li>
+        <li data-list-item-id="e1f2e079ef0b552c6fb20b1d21b7d0ab3">
+          <a href="#h_01M4TXWAD5NTJHE876R6S8QAXE"
+            >How to Redeem Your Code on Best Buy</a
+          >
+        </li>
+      </ul>
+    </li>
     <li data-list-item-id="e843220e54dc2206f7ab720c117c5f2d4">
       <a href="#h_01KQZ3D7ZFZV9JCQXQMJFCCENW">Frequently Asked Questions</a>
     </li>
@@ -811,7 +830,7 @@
 <p>3. Enter your code and follow the on-screen instructions.</p>
 <h1 id="h_01M28JF5GNHD4FAYCE01XS5GA1">YouTube Premium</h1>
 <div class="info-box">
-  <strong>Note</strong>: <br />- To receive your code, you must use the desktop
+  <strong>Note</strong>:<br />- To receive your code, you must use the desktop
   app. Eligibility conditions apply, see below for more information.<br />- This
   offer is available only to individual YouTube Premium plans. Family plans are
   not eligible.
@@ -1043,6 +1062,155 @@
   6. Continue through checkout to resume your subscription. Your discount will
   be applied starting on the next bill.
 </p>
+<h1 id="h_01M4TXKQ6XRYT16GNSTT7C8ZGN">My Best Buy Plus Membership</h1>
+<div class="warn-box">
+  Important: To receive your code, you must use the desktop app. Eligibility
+  conditions apply, see <a href="#h_01M4TXSSJ99QHTE27VHQS7GY8P">below</a> for
+  more information. This offer is only available to Nitro members in the United
+  States who are not currently a My Best Buy Plus member.<br />Nitro members in
+  the United States can get the first year of a new My Best Buy Plus membership
+  for free. 
+</div>
+<h2 id="h_01M4TXNK5YW29MY1ZB0S27WW4V">How it Works</h2>
+<p>The following terms apply to this promotional offer:</p>
+<ul>
+  <li data-list-item-id="e728ebe66be92d168316f95bf1ce6c7b8">
+    <strong>Membership details</strong>: Your code unlocks the first year of a
+    new My Best Buy Plus membership at no cost. At the conclusion of the first
+    year, your My Best Buy Plus membership will automatically renew at Best
+    Buy’s current prices. You can manage or cancel your membership anytime from
+    your Best Buy account or by calling Best Buy. 
+  </li>
+  <li data-list-item-id="ea6ab7dafa46458580edf84dd1b38436d">
+    <strong>One-time code</strong>: This is a one-time code. You can claim one
+    code per account.
+  </li>
+  <li data-list-item-id="e6d0f53f7528f1319bd4d13dfa31ab6f6">
+    <strong>Claim window</strong>: Codes can be claimed and redeemed from
+    October 13, 2026 through November 18, 2026 at 11:59 PM Central Time. Codes
+    cannot be claimed or redeemed after this period ends.
+  </li>
+  <li data-list-item-id="e10f94262f00702c07e15e5eb10bac360">
+    <strong>Redemption</strong>: Codes can be redeemed through the Best Buy
+    offer page linked from your Nitro Home.
+  </li>
+  <li data-list-item-id="e8eba344f1038b756da4128f495af9246">
+    <strong>Membership management</strong>: Your My Best Buy Plus membership is
+    managed through Best Buy.
+  </li>
+  <li data-list-item-id="e66dd721e734a554c03d806cf0f09e6c1">
+    <strong>Additional Terms apply</strong>:
+    <a
+      href="https://www.bestbuy.com/services/plans/termsconditions"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><span class="wysiwyg-underline"
+        >https://www.bestbuy.com/services/plans/termsconditions</span
+      ></a
+    > 
+  </li>
+</ul>
+<div class="info-box">
+  <strong>Note</strong>: If you cancel your Nitro subscription after claiming
+  your code, you can still redeem it until November 19, 2026. Once redeemed,
+  your My Best Buy Plus membership stays active for the full year and
+  automatically renews.
+</div>
+<h2 id="h_01M4TXSSJ99QHTE27VHQS7GY8P">Eligibility Requirements</h2>
+<p>You are eligible:</p>
+<ul>
+  <li data-list-item-id="e67b30fa79de2aa3821222aebf255da27">
+    You have an active Discord Nitro subscription (through a paid subscription,
+    Nitro gift, and some Nitro trials, with exceptions noted below)
+  </li>
+  <li data-list-item-id="ee31d7469be1a58cab08f7eb2cc69e7de">
+    You are located in the United States
+  </li>
+  <li data-list-item-id="ebf5ddc85acef76d77e2f35d09223ce03">
+    You do not currently have an active My Best Buy Plus or My Best Buy Total
+    membership
+  </li>
+</ul>
+<p>You are not eligible if:</p>
+<ul>
+  <li data-list-item-id="e38538bbcd0e09148c8edd9e610b0de83">
+    Using Nitro Credits without a Nitro subscription
+  </li>
+  <li data-list-item-id="e2f3492f37557b9f644c9a10e9d297ed4">
+    You are a Nitro Classic or Nitro Basic subscriber
+  </li>
+  <li data-list-item-id="e778b929ce190d0692ecacf2a9b112f2f">
+    Your Nitro subscription came from a third-party inbound promotion (for
+    example, a 1-month Nitro trial from an external partner) or a large-scale
+    campaign trial (for example, an annual Nitro trial offered to all users)
+  </li>
+  <li data-list-item-id="ed0ca4c18792f5d2b547fdd7d6238c75e">
+    You already have an active My Best Buy Plus or My Best Buy Total membership
+  </li>
+</ul>
+<div class="info-box">
+  <strong>Note:</strong> Once you unlock your discount code, you will not be
+  eligible for a refund on your Nitro subscription. See our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy#h_01J5BJ0CVX6QRXWNJHY3TM97FG"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Refund Policy</span></a
+  >
+  for more details.
+</div>
+<h2 id="h_01M4TXVGFAGZY76Z955PFWN116">How to Access Your Code</h2>
+<p>
+  1. On desktop or browser, select the Direct Messages icon [<img
+    src="https://support.discord.com/hc/article_attachments/43428548244503"
+    width="24"
+    height="18"
+  />] in the upper-left corner. 
+</p>
+<p>2. Press the Nitro Home tab to navigate to the Nitro Home page. </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/43428573550487"
+    width="298"
+    height="256"
+    alt="Direct Messages Icon"
+  />
+   <img
+    src="https://support.discord.com/hc/article_attachments/43428548246423"
+    width="297"
+    height="254"
+    alt="Nitro Tab"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M4TXWAD45W8R98XGRF60FEBQ">
+  <span style="color: #666666"
+    >Direct Messages Icon (Left) and Nitro Tab (Right)</span
+  >
+</h4>
+<p>
+  3. Locate and select the My Best Buy Plus card in the Nitro Rewards section.
+</p>
+<p>4. Press Unlock Reward to open the Best Buy window.</p>
+<p>
+  5. Select Unlock Code to reveal your code. You can copy it immediately or
+  return to view it later.
+</p>
+<h2 id="h_01M4TXWAD5NTJHE876R6S8QAXE">How to Redeem Your Code on Best Buy</h2>
+<p>After claiming your code (steps 1-5 above), here's how to redeem it:</p>
+<p>
+  1. Visit the Best Buy offer page:
+  <a
+    href="https://www.bestbuy.com/site/pcmcat1789762764770.c?id=pcmcat1789762764770"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">dis.gd/bestbuyoffer</span></a
+  >. 
+</p>
+<p>2. Add My Best Buy Plus membership to your cart.</p>
+<p>3. Proceed to checkout.</p>
+<p>4. Sign in to your Best Buy account, or create one for free.</p>
+<p>5. Enter your code at checkout, located below the payment method.</p>
+<p>6. Complete checkout to activate your My Best Buy Plus membership.</p>
 <h1 id="h_01KQZ3D7ZFZV9JCQXQMJFCCENW">Frequently Asked Questions</h1>
 <p><strong>Q: Are Nitro Rewards available in my country?</strong> </p>
 <p>
@@ -1144,12 +1312,30 @@
   A: Any codes you've already claimed will remain valid until their expiration
   date, but you won't receive new codes unless you resubscribe to Nitro.
 </p>
+<p>
+  <strong
+    >Q: Can I use my Best Buy code if I already have a My Best Buy Plus or My
+    Best Buy Total membership?</strong
+  >
+</p>
+<p>
+  A: This offer is only available to Nitro members who are not currently a My
+  Best Buy Plus member.
+</p>
 <p><strong>Q: When do the discount codes expire?</strong></p>
 <p>
   A: It depends on the type of code. <strong>Monthly codes</strong> are valid
   through the end of the current month. <strong>One-time codes</strong> (such as
   for Logitech’s new products and the Pro Series sim line) do not expire and can
   be redeemed at any time.
+</p>
+<p>
+  Your YouTube Premium code is a one-time code and must be redeemed by
+  <strong>December 31, 2027</strong>.
+</p>
+<p>
+  Your Best Buy code is a one-time code and must be redeemed by
+  <strong>November 19, 2026</strong>.
 </p>
 <p>
   <strong
@@ -1231,6 +1417,21 @@
         >https://support.steelseries.com/hc/en-us</span
       ></a
     > 
+  </li>
+</ul>
+<p>
+  If you're experiencing issues with your Best Buy code, contact their support
+  team directly:
+</p>
+<ul>
+  <li data-list-item-id="ec3e5fcb1151cbe9cabcff6cfff3acd4d">
+    <strong>Best Buy Support:</strong>
+    <a
+      href="https://www.bestbuy.com/contact-us"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><span style="color: #0b57d0">https://www.bestbuy.com/contact-us</span></a
+    >
   </li>
 </ul>
 <p><strong>Q: I think I found a bug. How do I report it?</strong></p>

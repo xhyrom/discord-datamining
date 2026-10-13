@@ -7,6 +7,8 @@
   "draft": false,
   "promoted": false,
   "position": 0,
+  "upvote_count": 110,
+  "downvote_count": 466,
   "section_id": 115000352292,
   "created_at": "2025-02-04T21:34:37Z",
   "name": "[Known Issue] API Errors involving Messaging",
