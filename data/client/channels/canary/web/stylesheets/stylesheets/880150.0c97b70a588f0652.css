@@ -168,6 +168,17 @@
   cursor: pointer;
   pointer-events: none;
 }
+.spoilerMarkdownContent__299eb.hidden__299eb .obscuredTextContentInner__299eb {
+  forced-color-adjust: none;
+}
+.spoilerMarkdownContent__299eb.hidden__299eb ::-moz-selection {
+  background-color: Highlight;
+  color: transparent;
+}
+.spoilerMarkdownContent__299eb.hidden__299eb ::selection {
+  background-color: Highlight;
+  color: transparent;
+}
 .enable-forced-colors .obscuredTextContent__299eb {
   border: 1px solid var(--__current--spoiler-border-color);
   border-radius: var(--radius-xs);
@@ -292,4 +303,4 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-/*# sourceMappingURL=880150.8851b0be092dc53b.css.map*/
+/*# sourceMappingURL=880150.0c97b70a588f0652.css.map*/
