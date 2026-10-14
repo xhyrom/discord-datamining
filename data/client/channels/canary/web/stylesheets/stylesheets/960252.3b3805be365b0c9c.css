@@ -1,0 +1,22 @@
+.listItem__650eb {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+  width: var(--custom-guild-list-width);
+}
+.unavailableBadge__650eb {
+  background-color: var(--white);
+  color: var(--red-400) !important;
+}
+.iconBadge__650eb {
+  background-color: var(--icon-overlay-dark);
+}
+.iconBadge__650eb.isCurrentUserConnected__650eb {
+  background-color: var(--status-positive);
+}
+.tutorialContainer__650eb {
+  position: relative;
+}
+
+/*# sourceMappingURL=960252.3b3805be365b0c9c.css.map*/

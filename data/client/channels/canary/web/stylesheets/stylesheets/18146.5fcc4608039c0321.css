@@ -1,22 +1,41 @@
-.listItem__650eb {
+.imageFieldContainer__6a93f {
+  height: 60px;
+}
+.preview__6a93f {
+  background: var(--background-base-low);
+  border-radius: var(--radius-md);
+  flex: 0 0 auto;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.container__9c6c7 {
   display: flex;
-  justify-content: center;
-  margin: 0;
-  position: relative;
-  width: var(--custom-guild-list-width);
+  flex-direction: column;
+  gap: var(--space-12);
+  padding: var(--space-8);
 }
-.unavailableBadge__650eb {
-  background-color: var(--white);
-  color: var(--red-400) !important;
+.image__9c6c7 {
+  background: var(--background-base-low);
+  border-radius: var(--radius-sm);
+  max-height: 380px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
 }
-.iconBadge__650eb {
-  background-color: var(--icon-overlay-dark);
+@container (min-width: 480px) {
+  .container__9c6c7 {
+    flex-direction: row;
+    gap: var(--space-12);
+  }
+  .image__9c6c7 {
+    flex-shrink: 0;
+    height: 100%;
+    max-width: 40%;
+  }
 }
-.iconBadge__650eb.isCurrentUserConnected__650eb {
-  background-color: var(--status-positive);
-}
-.tutorialContainer__650eb {
-  position: relative;
+.text__9c6c7 {
+  padding: var(--space-4);
 }
 .container__183c2 {
   align-items: center;
@@ -295,4 +314,4 @@
   opacity: 1;
 }
 
-/*# sourceMappingURL=42809.7f532ec49e402315.css.map*/
+/*# sourceMappingURL=18146.5fcc4608039c0321.css.map*/
