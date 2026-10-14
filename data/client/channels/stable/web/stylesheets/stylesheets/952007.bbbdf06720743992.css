@@ -1125,8 +1125,6 @@
   --background-voice-muted: hsl(
     var(--opacity-red-12-hsl) / 0.12156862745098039
   );
-  --badge-background-brand: var(--blurple-50);
-  --badge-background-default: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --badge-common-background: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --badge-common-border: var(--neutral-35);
   --badge-common-text: var(--neutral-15);
@@ -1134,19 +1132,21 @@
   --badge-epic-border-gradient-end: var(--illo-purple-40);
   --badge-epic-border-gradient-start: var(--illo-pink-40);
   --badge-epic-text: var(--illo-purple-30);
-  --badge-expressive-background-default: var(--neutral-1);
-  --badge-expressive-text-default: var(--neutral-71);
+  --badge-expressive-background: var(--neutral-1);
+  --badge-expressive-text: var(--neutral-71);
   --badge-mythic-background: hsl(var(--illo-orange-40-hsl) / 0.24);
   --badge-mythic-border-gradient-end: var(--illo-orange-40);
   --badge-mythic-border-gradient-start: var(--illo-yellow-40);
   --badge-mythic-text: var(--illo-orange-30);
   --badge-notification-background: var(--red-new-50);
+  --badge-primary-background: var(--blurple-50);
+  --badge-primary-text: var(--neutral-1);
   --badge-rare-background: hsl(var(--illo-blue-40-hsl) / 0.24);
   --badge-rare-border-gradient-end: var(--illo-blue-50);
   --badge-rare-border-gradient-start: var(--illo-blue-40);
   --badge-rare-text: var(--illo-blue-30);
-  --badge-text-brand: var(--neutral-1);
-  --badge-text-default: var(--neutral-1);
+  --badge-secondary-background: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+  --badge-secondary-text: var(--neutral-1);
   --bg-surface-raised: var(--primary-560);
   --border-feedback-critical: var(--red-new-18);
   --border-feedback-info: var(--blue-new-21);
@@ -1273,6 +1273,9 @@
   --chip-yellow-medium-text: var(--yellow-new-80);
   --collectibles-tab-gradient-center: var(--blue-new-30);
   --collectibles-tab-gradient-inner: hsl(var(--teal-new-51-hsl) / 0.5);
+  --collectibles-tab-gradient-orange-center: var(--illo-orange-50);
+  --collectibles-tab-gradient-orange-inner: hsl(var(--red-new-55-hsl) / 0.5);
+  --collectibles-tab-gradient-orange-outer: hsl(var(--red-new-70-hsl) / 0);
   --collectibles-tab-gradient-outer: hsl(var(--teal-new-97-hsl) / 0);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
@@ -4123,8 +4126,6 @@
   --background-voice-muted: hsl(
     var(--opacity-red-12-hsl) / 0.12156862745098039
   );
-  --badge-background-brand: var(--blurple-50);
-  --badge-background-default: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --badge-common-background: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --badge-common-border: var(--neutral-35);
   --badge-common-text: var(--neutral-45);
@@ -4132,19 +4133,21 @@
   --badge-epic-border-gradient-end: var(--illo-purple-40);
   --badge-epic-border-gradient-start: var(--illo-pink-40);
   --badge-epic-text: var(--illo-purple-50);
-  --badge-expressive-background-default: var(--blurple-50);
-  --badge-expressive-text-default: var(--neutral-1);
+  --badge-expressive-background: var(--blurple-50);
+  --badge-expressive-text: var(--neutral-1);
   --badge-mythic-background: hsl(var(--illo-orange-40-hsl) / 0.24);
   --badge-mythic-border-gradient-end: var(--illo-orange-40);
   --badge-mythic-border-gradient-start: var(--illo-yellow-40);
   --badge-mythic-text: var(--illo-orange-50);
   --badge-notification-background: var(--red-new-50);
+  --badge-primary-background: var(--blurple-50);
+  --badge-primary-text: var(--neutral-1);
   --badge-rare-background: hsl(var(--illo-blue-40-hsl) / 0.24);
   --badge-rare-border-gradient-end: var(--illo-blue-50);
   --badge-rare-border-gradient-start: var(--illo-blue-40);
   --badge-rare-text: var(--illo-blue-50);
-  --badge-text-brand: var(--neutral-1);
-  --badge-text-default: var(--neutral-76);
+  --badge-secondary-background: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+  --badge-secondary-text: var(--neutral-76);
   --bg-surface-raised: var(--white);
   --border-feedback-critical: var(--red-new-56);
   --border-feedback-info: var(--blue-new-58);
@@ -4271,6 +4274,9 @@
   --chip-yellow-medium-text: var(--yellow-new-80);
   --collectibles-tab-gradient-center: var(--blue-new-30);
   --collectibles-tab-gradient-inner: hsl(var(--blue-new-46-hsl) / 0.5);
+  --collectibles-tab-gradient-orange-center: var(--illo-orange-50);
+  --collectibles-tab-gradient-orange-inner: hsl(var(--red-new-55-hsl) / 0.5);
+  --collectibles-tab-gradient-orange-outer: hsl(var(--red-new-70-hsl) / 0);
   --collectibles-tab-gradient-outer: hsl(var(--illo-purple-50-hsl) / 0);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
@@ -7105,8 +7111,6 @@
   --background-voice-muted: hsl(
     var(--opacity-red-12-hsl) / 0.12156862745098039
   );
-  --badge-background-brand: var(--blurple-50);
-  --badge-background-default: hsl(var(--opacity-20-hsl) / 0.2);
   --badge-common-background: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --badge-common-border: var(--neutral-35);
   --badge-common-text: var(--neutral-15);
@@ -7114,19 +7118,21 @@
   --badge-epic-border-gradient-end: var(--illo-purple-40);
   --badge-epic-border-gradient-start: var(--illo-pink-40);
   --badge-epic-text: var(--illo-purple-30);
-  --badge-expressive-background-default: var(--neutral-1);
-  --badge-expressive-text-default: var(--neutral-71);
+  --badge-expressive-background: var(--neutral-1);
+  --badge-expressive-text: var(--neutral-71);
   --badge-mythic-background: hsl(var(--illo-orange-40-hsl) / 0.24);
   --badge-mythic-border-gradient-end: var(--illo-orange-40);
   --badge-mythic-border-gradient-start: var(--illo-yellow-40);
   --badge-mythic-text: var(--illo-orange-30);
   --badge-notification-background: var(--red-new-50);
+  --badge-primary-background: var(--blurple-50);
+  --badge-primary-text: var(--neutral-1);
   --badge-rare-background: hsl(var(--illo-blue-40-hsl) / 0.24);
   --badge-rare-border-gradient-end: var(--illo-blue-50);
   --badge-rare-border-gradient-start: var(--illo-blue-40);
   --badge-rare-text: var(--illo-blue-30);
-  --badge-text-brand: var(--neutral-1);
-  --badge-text-default: var(--neutral-10);
+  --badge-secondary-background: hsl(var(--opacity-20-hsl) / 0.2);
+  --badge-secondary-text: var(--neutral-10);
   --bg-surface-raised: var(--plum-23);
   --border-feedback-critical: var(--red-new-37);
   --border-feedback-info: var(--blue-new-39);
@@ -7249,6 +7255,9 @@
   --chip-yellow-medium-text: var(--yellow-new-80);
   --collectibles-tab-gradient-center: var(--blue-new-30);
   --collectibles-tab-gradient-inner: hsl(var(--blue-new-46-hsl) / 0.5);
+  --collectibles-tab-gradient-orange-center: var(--illo-orange-50);
+  --collectibles-tab-gradient-orange-inner: hsl(var(--red-new-55-hsl) / 0.5);
+  --collectibles-tab-gradient-orange-outer: hsl(var(--red-new-70-hsl) / 0);
   --collectibles-tab-gradient-outer: hsl(var(--illo-purple-50-hsl) / 0);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
@@ -10087,8 +10096,6 @@
   --background-voice-muted: hsl(
     var(--opacity-red-12-hsl) / 0.12156862745098039
   );
-  --badge-background-brand: var(--blurple-50);
-  --badge-background-default: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --badge-common-background: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --badge-common-border: var(--neutral-35);
   --badge-common-text: var(--neutral-15);
@@ -10096,19 +10103,21 @@
   --badge-epic-border-gradient-end: var(--illo-purple-40);
   --badge-epic-border-gradient-start: var(--illo-pink-40);
   --badge-epic-text: var(--illo-purple-30);
-  --badge-expressive-background-default: var(--neutral-1);
-  --badge-expressive-text-default: var(--neutral-71);
+  --badge-expressive-background: var(--neutral-1);
+  --badge-expressive-text: var(--neutral-71);
   --badge-mythic-background: hsl(var(--illo-orange-40-hsl) / 0.24);
   --badge-mythic-border-gradient-end: var(--illo-orange-40);
   --badge-mythic-border-gradient-start: var(--illo-yellow-40);
   --badge-mythic-text: var(--illo-orange-30);
   --badge-notification-background: var(--red-new-50);
+  --badge-primary-background: var(--blurple-50);
+  --badge-primary-text: var(--neutral-1);
   --badge-rare-background: hsl(var(--illo-blue-40-hsl) / 0.24);
   --badge-rare-border-gradient-end: var(--illo-blue-50);
   --badge-rare-border-gradient-start: var(--illo-blue-40);
   --badge-rare-text: var(--illo-blue-30);
-  --badge-text-brand: var(--neutral-1);
-  --badge-text-default: var(--neutral-2);
+  --badge-secondary-background: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+  --badge-secondary-text: var(--neutral-2);
   --bg-surface-raised: var(--plum-18);
   --border-feedback-critical: var(--red-new-28);
   --border-feedback-info: var(--blue-new-31);
@@ -10235,6 +10244,9 @@
   --chip-yellow-medium-text: var(--yellow-new-80);
   --collectibles-tab-gradient-center: var(--blue-new-30);
   --collectibles-tab-gradient-inner: hsl(var(--blue-new-46-hsl) / 0.5);
+  --collectibles-tab-gradient-orange-center: var(--illo-orange-50);
+  --collectibles-tab-gradient-orange-inner: hsl(var(--red-new-55-hsl) / 0.5);
+  --collectibles-tab-gradient-orange-outer: hsl(var(--red-new-70-hsl) / 0);
   --collectibles-tab-gradient-outer: hsl(var(--illo-purple-50-hsl) / 0);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
@@ -13096,8 +13108,8 @@
   --background-mod-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --badge-background-default: hsl(var(--opacity-20-hsl) / 0.2);
-  --badge-text-default: var(--neutral-1);
+  --badge-secondary-background: hsl(var(--opacity-20-hsl) / 0.2);
+  --badge-secondary-text: var(--neutral-1);
   --border-feedback-critical: var(--red-new-5);
   --border-feedback-info: var(--blue-new-8);
   --border-feedback-positive: var(--green-new-10);
@@ -14287,8 +14299,8 @@
   --background-mod-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-strong: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --background-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
-  --badge-background-default: hsl(var(--opacity-20-hsl) / 0.2);
-  --badge-text-default: var(--neutral-100);
+  --badge-secondary-background: hsl(var(--opacity-20-hsl) / 0.2);
+  --badge-secondary-text: var(--neutral-100);
   --border-feedback-critical: var(--red-new-66);
   --border-feedback-info: var(--blue-new-68);
   --border-feedback-positive: var(--green-new-68);
@@ -15476,8 +15488,10 @@
   --background-mod-normal: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-mod-strong: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --background-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
-  --badge-background-default: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-  --badge-text-default: var(--neutral-1);
+  --badge-secondary-background: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --badge-secondary-text: var(--neutral-1);
   --border-feedback-critical: var(--red-new-26);
   --border-feedback-info: var(--blue-new-28);
   --border-feedback-positive: var(--green-new-29);
@@ -16673,8 +16687,8 @@
   --background-mod-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --badge-background-default: hsl(var(--opacity-20-hsl) / 0.2);
-  --badge-text-default: var(--neutral-1);
+  --badge-secondary-background: hsl(var(--opacity-20-hsl) / 0.2);
+  --badge-secondary-text: var(--neutral-1);
   --border-feedback-critical: var(--red-new-16);
   --border-feedback-info: var(--blue-new-19);
   --border-feedback-positive: var(--green-new-20);
@@ -22481,4 +22495,4 @@
   --motion-spring-subtle-duration: 598ms;
 }
 
-/*# sourceMappingURL=952007.3b490a4a037fd35b.css.map*/
+/*# sourceMappingURL=952007.bbbdf06720743992.css.map*/

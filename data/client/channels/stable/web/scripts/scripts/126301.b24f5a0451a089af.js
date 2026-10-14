@@ -2,16 +2,15 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   ["126301"],
   {
-    386151(_, e, i) {
+    386151(_, e, o) {
       _.exports = {
         pq: "info_f4bc97",
         e8: "withDisplayNameStyles_f4bc97",
         ok: "infoSpacing_f4bc97",
         Mp: "guildTag_f4bc97",
-        iP: "guildTagChip_f4bc97",
       };
     },
-    933092(_, e, i) {
+    933092(_, e, o) {
       _.exports = {
         jT: "modalContainer__38295",
         zT: "editorContent__38295",
@@ -23,13 +22,13 @@
         HU: "cropFrameVideo__38295",
       };
     },
-    24468(_, e, i) {
+    24468(_, e, o) {
       _.exports = { R: "hidden_b54fe3" };
     },
-    22745(_, e, i) {
+    22745(_, e, o) {
       _.exports = { T: "background__6cac4" };
     },
-    646810(_, e, i) {
+    646810(_, e, o) {
       _.exports = {
         oM: "nameTag__05e81",
         Xh: "username__05e81",

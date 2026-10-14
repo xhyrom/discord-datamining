@@ -2,13 +2,13 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   ["384209"],
   {
-    963434(e, a, r) {
-      r.r(
+    963434(e, r, a) {
+      a.r(
         (e.exports = {
           badge: "badge_c2b88c",
           label: "label_c2b88c",
-          default: "default_c2b88c",
-          brand: "brand_c2b88c",
+          secondary: "secondary_c2b88c",
+          primary: "primary_c2b88c",
           expressive: "expressive_c2b88c",
           "rarity-common": "rarity-common_c2b88c",
           "rarity-epic": "rarity-epic_c2b88c",
@@ -17,8 +17,8 @@
         }),
       );
     },
-    65406(e, a, r) {
-      r.r(
+    65406(e, r, a) {
+      a.r(
         (e.exports = {
           button: "button_a22cb0",
           buttonChildrenWrapper: "buttonChildrenWrapper_a22cb0",
@@ -63,7 +63,7 @@
         }),
       );
     },
-    70074(e, a, r) {
+    70074(e, r, a) {
       e.exports = {
         Rm: "toggleButton__79243",
         mQ: "standard__79243 toggleButton__79243",
@@ -72,7 +72,7 @@
         e7: "iconOnly__79243 toggleButton__79243",
       };
     },
-    140379(e, a, r) {
+    140379(e, r, a) {
       e.exports = {
         t9: "dotGrow__714a9",
         Lf: "dotShrink__714a9",
@@ -80,7 +80,7 @@
         cY: "checkUndraw__714a9",
         nj: "checkboxOption__714a9",
         YK: "spacing__714a9",
-        GA: "labeled__714a9 " + r(736541)["text-md/normal"],
+        GA: "labeled__714a9 " + a(736541)["text-md/normal"],
         Gu: "withLeadingIcon__714a9",
         fb: "checkboxIndicator__714a9",
         Ho: "checkStroke__714a9",
@@ -93,8 +93,8 @@
         Pf: "label__714a9",
       };
     },
-    129735(e, a, r) {
-      r.r(
+    129735(e, r, a) {
+      a.r(
         (e.exports = {
           container: "container_a62383",
           purple: "purple_a62383",
