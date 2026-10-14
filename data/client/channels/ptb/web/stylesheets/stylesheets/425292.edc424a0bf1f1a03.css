@@ -11,7 +11,7 @@
   );
 }
 .platformIcon__9bb6a {
-  color: var(--icon-subtle);
+  color: var(--icon-muted);
   display: grid;
   flex: 0 0 auto;
   height: var(--custom-game-platform-glyph-size);
@@ -22,4 +22,4 @@
   margin-inline-start: var(--custom-game-platform-glyph-gap);
 }
 
-/*# sourceMappingURL=425292.6e9de8ab5725cb4b.css.map*/
+/*# sourceMappingURL=425292.edc424a0bf1f1a03.css.map*/

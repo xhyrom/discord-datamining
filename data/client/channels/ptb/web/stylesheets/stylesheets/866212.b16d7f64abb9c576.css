@@ -1762,19 +1762,6 @@
 .enable-forced-colors .dotSpacer__26b1f {
   background-color: CanvasText;
 }
-.guildTag__26b1f.guildTag__26b1f {
-  background: transparent;
-  border: 1px solid var(--user-profile-border);
-  border-radius: var(--radius-sm);
-  box-sizing: border-box;
-  height: 20px;
-  margin: 0 auto;
-  transition: background 50ms ease-in;
-}
-.guildTag__26b1f.guildTag__26b1f:hover {
-  background-color: var(--user-profile-background-hover);
-  transition: background 0.15s ease-out;
-}
 .guildTagPill__26b1f.guildTagPill__26b1f {
   background: var(--background-mod-subtle);
   border: 1px solid var(--border-muted);
@@ -1810,4 +1797,4 @@
   forced-color-adjust: none;
 }
 
-/*# sourceMappingURL=866212.c3ea3b33780c51dd.css.map*/
+/*# sourceMappingURL=866212.b16d7f64abb9c576.css.map*/
