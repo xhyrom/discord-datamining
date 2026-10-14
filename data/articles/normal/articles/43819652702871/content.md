@@ -1,9 +1,4 @@
 <div class="info-box">
-  <strong>Note:</strong> A full Brazilian Portuguese translation of this article
-  is coming soon. Until it's available, some sections may appear in English. We
-  appreciate your patience.
-</div>
-<div class="info-box">
   <span style="color: #011347"
     ><strong>Note</strong>: Individuals to whom Decree 12,976/2026 does not
     apply may submit reports of non-consensual intimate imagery (NCII) through
