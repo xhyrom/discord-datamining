@@ -874,8 +874,8 @@
               >
                 <div class="nav_dd_trigger w-dropdown-toggle">
                   <div>
-                    <span class="menu-title">Developers</span>
-                    <span class="sr-only">8 of 9</span> &nbsp;
+                    <span class="menu-title">Developers</span
+                    ><span class="sr-only">8 of 9</span>
                   </div>
                   <div class="nav_dd_arrow-wr-white">
                     <div class="nav_dd_arrow w-embed">
