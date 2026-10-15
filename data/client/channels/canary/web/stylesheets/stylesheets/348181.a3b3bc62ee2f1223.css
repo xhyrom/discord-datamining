@@ -2332,14 +2332,19 @@
   justify-self: end;
 }
 .twitchSectionPreviewWrapper__00943 {
+  aspect-ratio: 16/9;
+  border-radius: var(--radius-xs);
   cursor: pointer;
+  display: block;
   margin-top: 12px;
+  position: relative;
 }
 .twitchSectionPreviewWrapper__00943:hover .twitchSectionPlayButton__00943 {
   opacity: 1;
 }
 .twitchSectionPreview__00943 {
   border-radius: 4px;
+  display: block;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -2634,4 +2639,4 @@
   z-index: 2;
 }
 
-/*# sourceMappingURL=348181.c160ab9de555d350.css.map*/
+/*# sourceMappingURL=348181.a3b3bc62ee2f1223.css.map*/
