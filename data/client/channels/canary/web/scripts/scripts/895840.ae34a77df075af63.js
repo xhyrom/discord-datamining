@@ -74,6 +74,7 @@
         wx: "header__7eee5",
         rf: "body__7eee5",
         ne: "controls__7eee5",
+        FG: "overlayControls__7eee5",
         RP: "exiting__7eee5",
       };
     },

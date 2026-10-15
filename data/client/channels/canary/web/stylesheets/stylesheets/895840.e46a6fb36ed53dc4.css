@@ -170,7 +170,10 @@
   gap: var(--space-8);
   grid-template-areas: "countdown countdown" "header controls" "body body";
   grid-template-columns: 1fr auto;
-  padding-block-end: var(--space-12);
+  padding-block-end: var(
+    --custom-timed-reminder-panel-padding-block-end,
+    var(--space-12)
+  );
   padding-block-start: 0;
   padding-inline: var(--space-12);
 }
@@ -190,6 +193,24 @@
   gap: var(--space-8);
   grid-area: controls;
   justify-content: center;
+}
+.overlayControls__7eee5 .content__7eee5 {
+  grid-template-areas: "countdown" "header" "body";
+  grid-template-columns: minmax(0, 1fr);
+  position: relative;
+}
+.overlayControls__7eee5 .controls__7eee5 {
+  inset-inline-end: var(--space-12);
+  opacity: 0;
+  position: absolute;
+  top: var(--space-12);
+  z-index: 2;
+}
+.overlayControls__7eee5:is(:hover, :focus-within) .controls__7eee5 {
+  opacity: 1;
+}
+.full-motion .overlayControls__7eee5 .controls__7eee5 {
+  transition: opacity 0.15s ease;
 }
 .full-motion .wrapper__7eee5 {
   interpolate-size: allow-keywords;
@@ -399,4 +420,4 @@
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=895840.2631bbd292f4e3f7.css.map*/
+/*# sourceMappingURL=895840.e46a6fb36ed53dc4.css.map*/
