@@ -64,6 +64,19 @@
   box-sizing: border-box;
   text-align: center;
 }
+.preview_b070db {
+  box-sizing: border-box;
+  min-height: 390px;
+  text-align: center;
+}
+.graphic_b070db {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.copy_b070db {
+  width: 100%;
+}
 .roleDotRight__703b9 {
   margin-inline-start: 0.25rem;
 }
@@ -181,4 +194,4 @@
   min-height: 380px;
 }
 
-/*# sourceMappingURL=219798.904484827e2c9976.css.map*/
+/*# sourceMappingURL=828881.c31c4ee0e4ca63b9.css.map*/

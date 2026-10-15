@@ -25,6 +25,7 @@
         Uq: "closeIconPlated__972a0",
         _q: "iconsContainer__972a0",
         EY: "nameplated__972a0",
+        R4: "callDuration__972a0",
         ut: "closeIcon__972a0",
         wB: "favoriteIcon__972a0",
         W$: "subtext__972a0",

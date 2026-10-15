@@ -1,15 +1,12 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["718269"],
+  ["915213"],
   {
-    323747(_, e, t) {
-      _.exports = { I: "safetySettingsNotice__9536c", b: "closeButton__9536c" };
+    323747(e, _, t) {
+      e.exports = { I: "safetySettingsNotice__9536c", b: "closeButton__9536c" };
     },
-    40957(_, e, t) {
-      _.exports = { r: "body__62f9a" };
-    },
-    774156(_, e, t) {
-      _.exports = {
+    774156(e, _, t) {
+      e.exports = {
         nM: "row__28071",
         yF: "divider__28071",
         uW: "section__28071",
@@ -20,21 +17,21 @@
         Qz: "sectionIconContainer__28071 icon__28071",
       };
     },
-    514479(_, e, t) {
-      _.exports = {
+    514479(e, _, t) {
+      e.exports = {
         d: "emptyContainer__88a04",
         x: "noGamesConnectedText__88a04",
       };
     },
-    978433(_, e, t) {
-      _.exports = {
+    978433(e, _, t) {
+      e.exports = {
         cl: "guildSelectOptionIcon__53d6e",
         KP: "clydeIconContainer__53d6e",
         h_: "description__53d6e",
       };
     },
-    276573(_, e, t) {
-      _.exports = {
+    276573(e, _, t) {
+      e.exports = {
         Nr: "card_a72ffc",
         wx: "header_a72ffc",
         Qq: "text_a72ffc",
@@ -47,11 +44,11 @@
         Qf: "loadMoreButton_a72ffc",
       };
     },
-    636745(_, e, t) {
-      _.exports = { v: "tabs__70e05" };
+    636745(e, _, t) {
+      e.exports = { v: "tabs__70e05" };
     },
-    492422(_, e, t) {
-      _.exports = { A: "item_be62d9" };
+    492422(e, _, t) {
+      e.exports = { A: "item_be62d9" };
     },
   },
 ]);

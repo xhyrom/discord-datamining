@@ -1,12 +1,12 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["219798"],
+  ["828881"],
   {
-    400590(_, e, c) {
+    400590(_, e, b) {
       _.exports = {
         WN: "roleDotRight__703b9",
         Hf: "roleDotLeft__703b9",
-        Xh: "username__703b9 " + c(601645).WY,
+        Xh: "username__703b9 " + b(601645).WY,
         kL: "container__703b9",
         mO: "displayInline__703b9",
         VW: "nameContainer__703b9",
@@ -14,7 +14,7 @@
         lD: "nameGlow__703b9",
       };
     },
-    848966(_, e, c) {
+    848966(_, e, b) {
       _.exports = {
         Tp: "background__24b9c",
         oT: "backgroundTop__24b9c background__24b9c",
@@ -26,7 +26,7 @@
         xI: "guild-space-floating-current-user-row-rise__24b9c",
       };
     },
-    393750(_, e, c) {
+    393750(_, e, b) {
       _.exports = {
         kL: "container_ebf8c0",
         nM: "row_ebf8c0",
@@ -38,13 +38,20 @@
         M0: "bar_ebf8c0",
       };
     },
-    523755(_, e, c) {
+    523755(_, e, b) {
       _.exports = { D: "title_a6dccf" };
     },
-    448492(_, e, c) {
+    448492(_, e, b) {
       _.exports = { w: "state_f0c906", p: "emptyState_f0c906" };
     },
-    823353(_, e, c) {
+    441920(_, e, b) {
+      _.exports = {
+        VH: "preview_b070db",
+        fA: "graphic_b070db",
+        C: "copy_b070db",
+      };
+    },
+    823353(_, e, b) {
       _.exports = { w: "state__3d017" };
     },
   },
