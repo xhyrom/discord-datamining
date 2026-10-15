@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8827890002](https://discord.com/jobs/8827890002)
 
-**Updated At:** Wed, 23 Sep 2026 14:57:48 GMT
+**Updated At:** Thu, 15 Oct 2026 20:08:17 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.The Discord Creative Studio Team is seeking a versatile graphic designer and illustrator with strong conceptual skills and a knack for working across styles. This role sits alongside our Social team, creating fast-turnaround content across a wide range of creative expressions, including illustration, graphic design, and visual storytelling. You'll be embedded with the team, helping bring content to life across platforms in ways that are fun, timely, and resonate with our large and highly engaged community. This is a highly collaborative role. You'll partner closely with members of our Social team and other creatives, working within quick-turnaround windows to keep pace with what's happening in the community in real time.

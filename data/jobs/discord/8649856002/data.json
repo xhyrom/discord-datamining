@@ -30,7 +30,7 @@
     }
   ],
   "id": 8649856002,
-  "updated_at": "2026-10-01T13:42:24-04:00",
+  "updated_at": "2026-10-15T16:08:17-04:00",
   "requisition_id": "R-107352",
   "title": "Engineering Manager, Platform Security",
   "company_name": "Discord",
@@ -49,7 +49,7 @@
   "offices": [
     {
       "id": 4082816002,
-      "name": "Remote (U.S.)",
+      "name": "Remote (US)",
       "location": null,
       "child_ids": [],
       "parent_id": null

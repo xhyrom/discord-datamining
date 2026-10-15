@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8821508002](https://discord.com/jobs/8821508002)
 
-**Updated At:** Fri, 25 Sep 2026 23:14:20 GMT
+**Updated At:** Thu, 15 Oct 2026 20:08:17 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord is where the world's gamers hang out, and increasingly, it's the platform game developers build on. We're seeking a Senior Data Science Manager to lead Data Science for our Developer Platform: the SDKs, identity systems, and developer tools that connect games and their players to Discord.

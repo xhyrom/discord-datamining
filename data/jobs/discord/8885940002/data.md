@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8885940002](https://discord.com/jobs/8885940002)
 
-**Updated At:** Tue, 13 Oct 2026 21:34:29 GMT
+**Updated At:** Thu, 15 Oct 2026 20:08:17 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We're looking for a technical, hands-on, and infrastructure-minded Engineering Manager to lead our Notifications team within the Growth organization. Notifications is a full-stack team owning the platform and infrastructure that powers every notification Discord sends, the orchestration layer that optimizes notifications globally across types, the in-app notifications center, and the user-facing settings and client experience. You will lead a team of full-stack engineers operating business-critical systems that fan out to hundreds of millions of users while shipping the re-engagement surfaces that bring them back.
@@ -59,5 +59,5 @@ education_optional
 - Product Engineering
 
 **Offices:**
-- Remote (U.S.)
+- Remote (US)
     

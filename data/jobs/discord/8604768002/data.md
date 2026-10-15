@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8604768002](https://discord.com/jobs/8604768002)
 
-**Updated At:** Wed, 14 Oct 2026 20:30:26 GMT
+**Updated At:** Thu, 15 Oct 2026 20:08:17 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord launched its Social Commerce team in August 2025 and by the end of the year, we shipped an MVP which was extremely successful. In 2026 we’ve been scaling to more games, adding more features, and extending capabilities.

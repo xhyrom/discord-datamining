@@ -30,7 +30,7 @@
     }
   ],
   "id": 8885940002,
-  "updated_at": "2026-10-13T17:34:29-04:00",
+  "updated_at": "2026-10-15T16:08:17-04:00",
   "requisition_id": "R-107460",
   "title": "Engineering Manager, Notifications",
   "company_name": "Discord",
@@ -49,7 +49,7 @@
   "offices": [
     {
       "id": 4082816002,
-      "name": "Remote (U.S.)",
+      "name": "Remote (US)",
       "location": null,
       "child_ids": [],
       "parent_id": null

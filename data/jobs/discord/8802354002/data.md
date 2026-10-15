@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8802354002](https://discord.com/jobs/8802354002)
 
-**Updated At:** Tue, 22 Sep 2026 00:35:05 GMT
+**Updated At:** Thu, 15 Oct 2026 20:08:17 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We're looking to hire a Staff Machine Learning Engineer on our Consumer Revenue ML team. This team applies Machine Learning across Discord's core revenue surfaces — Shop, Nitro, Server Subscriptions, and Gifting — building the ranking, targeting, and recommendation systems that connect users to the right products, subscriptions, and content. If this excites you and you’ve led org-wide initiatives in the past, keep reading!
@@ -46,5 +46,5 @@ education_optional
 - Product Engineering
 
 **Offices:**
-- Remote (U.S.)
+- Remote (US)
     

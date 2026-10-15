@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8796132002](https://discord.com/jobs/8796132002)
 
-**Updated At:** Wed, 07 Oct 2026 20:20:34 GMT
+**Updated At:** Thu, 15 Oct 2026 20:08:17 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord is opening an engineering hub in Lisbon, our first dedicated one outside of our San Francisco HQ. And we’re building it from the ground up. As a member of our founding team, you’ll help set the direction for teams across Core Technology, advancing work that keeps Discord reliable for millions of people around the world, helps our engineers move faster, and protects our platform at scale. You’ll also help shape the culture of the hub so it feels unmistakably Discord while developing a distinctly Lisbon identity of its own.
@@ -52,5 +52,5 @@ education_optional
 - IT & Corporate Security
 
 **Offices:**
-- Portugal in Lisbon, Portugal
+- Lisbon, Portugal in Lisbon, Portugal
     
