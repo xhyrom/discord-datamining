@@ -1,3 +1,37 @@
+.child_a226a5 {
+  align-items: center;
+  background: pink;
+  border-radius: 8px;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  font-size: 24px;
+  height: 100px;
+  justify-content: center;
+  padding: 12px;
+  width: 100px;
+}
+.badgeRow__9b0aa {
+  align-items: center;
+  display: flex;
+  gap: var(--space-16);
+  justify-content: space-between;
+  margin-top: var(--space-192);
+  width: 100%;
+}
+.badgeTrigger__9b0aa {
+  align-items: center;
+  display: inline-flex;
+  height: var(--space-24);
+  justify-content: center;
+  width: var(--space-24);
+}
+.badgeTriggerImg__9b0aa {
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+}
 .container_e99fef,
 .progressHeader_e99fef {
   align-items: flex-start;
@@ -130,4 +164,4 @@
   --control-icon-only-icon-default: var(--text-strong);
 }
 
-/*# sourceMappingURL=56886.165da72b25496b35.css.map*/
+/*# sourceMappingURL=456968.6d985cff2cf739da.css.map*/

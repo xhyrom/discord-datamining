@@ -1,0 +1,25 @@
+.button__0f074 {
+  box-sizing: border-box;
+  color: var(--icon-subtle);
+  cursor: pointer;
+  height: 24px;
+  opacity: 0;
+  padding: var(--space-4);
+  transition: color 50ms ease-in;
+  width: 24px;
+}
+.button__0f074:focus-visible,
+.button__0f074:hover {
+  color: var(--icon-strong);
+  transition: color 0.15s ease-out;
+}
+.button__0f074.visible__0f074,
+.button__0f074:focus-visible {
+  opacity: 1;
+}
+.bio_b40b46 .bioText_b40b46 small {
+  font-size: 12px;
+  line-height: 16.5px;
+}
+
+/*# sourceMappingURL=711590.bd8ee9990b524b2d.css.map*/

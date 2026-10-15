@@ -1,8 +1,18 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["56886"],
+  ["456968"],
   {
-    341973(e, o, f) {
+    410681(e, o, r) {
+      e.exports = { j: "child_a226a5" };
+    },
+    277135(e, o, r) {
+      e.exports = {
+        k3: "badgeRow__9b0aa",
+        yU: "badgeTrigger__9b0aa",
+        Jv: "badgeTriggerImg__9b0aa",
+      };
+    },
+    341973(e, o, r) {
       e.exports = {
         kL: "container_e99fef",
         G9: "progressBarContainer_e99fef",
