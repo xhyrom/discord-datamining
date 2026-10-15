@@ -1,9 +1,17 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["82389"],
+  ["537596"],
   {
-    196404(c, _, d) {
-      c.exports = {
+    429800(_, c, d) {
+      _.exports = {
+        kL: "container__134f6",
+        Tp: "background__134f6",
+        wx: "header__134f6",
+        Gv: "backButton__134f6",
+      };
+    },
+    196404(_, c, d) {
+      _.exports = {
         kL: "container__52c9d",
         Tp: "background__52c9d",
         Qs: "content__52c9d",

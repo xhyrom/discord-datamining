@@ -11,6 +11,7 @@
         D0: "positionContainerOnlyEmoji__08434",
         jP: "drawerSizingWrapper__08434",
         FG: "contentWrapper__08434",
+        $D: "contentWrapperEmojiPacks__08434",
         C$: "nav__08434",
         CT: "navList__08434",
         pc: "navItem__08434",

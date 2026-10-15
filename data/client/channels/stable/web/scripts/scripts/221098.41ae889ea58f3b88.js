@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["978110"],
+  ["221098"],
   {
     410075() {},
     524897(e, t) {
@@ -40708,15 +40708,6 @@
             : "";
       };
     },
-    265431(e, t, r) {
-      "use strict";
-      r.d(t, { A: () => i });
-      var n = r(582128);
-      function i() {
-        let [, e] = (0, n.useState)({});
-        return (0, n.useCallback)(() => e({}), []);
-      }
-    },
     7467(e, t, r) {
       !(function (
         e,
@@ -73919,4 +73910,4 @@
     },
   },
 ]);
-//# sourceMappingURL=978110.7c479d238cbc0212.js.map
+//# sourceMappingURL=221098.41ae889ea58f3b88.js.map
