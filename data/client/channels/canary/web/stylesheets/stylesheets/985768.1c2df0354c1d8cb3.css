@@ -1,29 +1,29 @@
-.slider__4c059 {
+.slider_ec237e {
   height: 40px;
   position: relative;
   width: 100%;
 }
-.mini__4c059 {
+.mini_ec237e {
   height: 20px;
 }
-.mini__4c059 .bar__4c059 {
+.mini_ec237e .bar_ec237e {
   height: 6px;
   top: 17px;
 }
-.mini__4c059 .grabber__4c059 {
+.mini_ec237e .grabber_ec237e {
   border-radius: 50%;
   height: 12px;
   margin-inline-start: -7px;
   margin-top: 3px;
   width: 12px;
 }
-.disabled__4c059 {
+.disabled_ec237e {
   opacity: 0.6;
 }
-.disabled__4c059 .grabber__4c059 {
+.disabled_ec237e .grabber_ec237e {
   cursor: not-allowed;
 }
-.bar__4c059 {
+.bar_ec237e {
   background-color: var(--slider-track-background);
   border-radius: 4px;
   display: block;
@@ -32,18 +32,18 @@
   position: relative;
   top: 16px;
 }
-.barFill__4c059 {
+.barFill_ec237e {
   background: var(--control-brand-foreground-new);
   height: 100%;
 }
-.track__4c059 {
+.track_ec237e {
   --custom-track-inset: 5px;
   position: absolute;
   top: 0;
   inset-inline: var(--custom-track-inset);
   bottom: 0;
 }
-.grabber__4c059 {
+.grabber_ec237e {
   background-color: var(--white);
   border: 1px solid var(--border-strong);
   border-radius: 3px;
@@ -55,12 +55,12 @@
   top: 50%;
   width: 10px;
 }
-.grabber__4c059,
-.mark__4c059 {
+.grabber_ec237e,
+.mark_ec237e {
   inset-inline-start: 0;
   position: absolute;
 }
-.mark__4c059 {
+.mark_ec237e {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -70,75 +70,75 @@
   user-select: none;
   width: 24px;
 }
-.markAbove__4c059 {
+.markAbove_ec237e {
   top: -6px;
 }
-.markBelow__4c059 {
+.markBelow_ec237e {
   bottom: -12px;
 }
-.mark__4c059:first-child .markValue__4c059 {
+.mark_ec237e:first-child .markValue_ec237e {
   transform: translateX(calc(50% - var(--custom-track-inset)));
 }
-.mark__4c059:last-child .markValue__4c059 {
+.mark_ec237e:last-child .markValue_ec237e {
   transform: translateX(calc(-50% + var(--custom-track-inset)));
 }
-.markValue__4c059 {
+.markValue_ec237e {
   font-size: 10px;
   font-weight: var(--font-weight-bold);
   margin-bottom: 4px;
   min-height: 10px;
   padding-inline-start: 1px;
 }
-.markDash__4c059 {
+.markDash_ec237e {
   background-color: var(--slider-track-background);
   height: 24px;
   width: 2px;
 }
-.markDashSimple__4c059 {
+.markDashSimple_ec237e {
   margin-top: 10px;
 }
-.markValue__4c059 {
+.markValue_ec237e {
   color: var(--text-muted);
 }
-.defaultValue__4c059 .markValue__4c059 {
+.defaultValue_ec237e .markValue_ec237e {
   color: var(--text-feedback-positive);
 }
-.mini__4c059,
-.slider__4c059 {
+.mini_ec237e,
+.slider_ec237e {
   height: calc(24px + var(--bar-offset));
   --grabber-size: 16px;
   --bar-size: 4px;
   --bar-offset: 0px;
 }
-.mini__4c059.hasMarks__4c059,
-.slider__4c059.hasMarks__4c059 {
+.mini_ec237e.hasMarks_ec237e,
+.slider_ec237e.hasMarks_ec237e {
   --bar-offset: 24px;
 }
-.mini__4c059 .mark__4c059,
-.slider__4c059 .mark__4c059 {
+.mini_ec237e .mark_ec237e,
+.slider_ec237e .mark_ec237e {
   display: flex;
   flex-direction: column;
   height: 48px;
   justify-content: space-between;
   top: 0;
 }
-.mini__4c059 .markValue__4c059,
-.slider__4c059 .markValue__4c059 {
+.mini_ec237e .markValue_ec237e,
+.slider_ec237e .markValue_ec237e {
   color: var(--text-subtle);
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
 }
-.mini__4c059 .defaultValue__4c059 .markValue__4c059,
-.slider__4c059 .defaultValue__4c059 .markValue__4c059 {
+.mini_ec237e .defaultValue_ec237e .markValue_ec237e,
+.slider_ec237e .defaultValue_ec237e .markValue_ec237e {
   color: var(--text-feedback-positive);
 }
-.mini__4c059 .markDash__4c059,
-.slider__4c059 .markDash__4c059 {
+.mini_ec237e .markDash_ec237e,
+.slider_ec237e .markDash_ec237e {
   border-radius: 12px;
 }
-.mini__4c059 .grabber__4c059,
-.slider__4c059 .grabber__4c059 {
+.mini_ec237e .grabber_ec237e,
+.slider_ec237e .grabber_ec237e {
   border: 1px solid var(--border-normal);
   border-radius: 50%;
   box-shadow: var(--shadow-low);
@@ -148,56 +148,56 @@
   margin-top: calc(var(--grabber-size) / -2 + var(--bar-offset) / 2);
   width: var(--grabber-size);
 }
-.high-contrast-mode .mini__4c059 .grabber__4c059,
-.high-contrast-mode .slider__4c059 .grabber__4c059 {
+.high-contrast-mode .mini_ec237e .grabber_ec237e,
+.high-contrast-mode .slider_ec237e .grabber_ec237e {
   border-color: var(--border-strong);
 }
-.mini__4c059 .hasMarks__4c059 .grabber__4c059,
-.slider__4c059 .hasMarks__4c059 .grabber__4c059 {
+.mini_ec237e .hasMarks_ec237e .grabber_ec237e,
+.slider_ec237e .hasMarks_ec237e .grabber_ec237e {
   margin-top: calc(var(--grabber-size) / -2 + 12px);
 }
-.mini__4c059 .bar__4c059,
-.slider__4c059 .bar__4c059 {
+.mini_ec237e .bar_ec237e,
+.slider_ec237e .bar_ec237e {
   background-color: var(--slider-track-background);
   height: var(--bar-size);
   top: calc((24px - var(--bar-size)) / 2 + var(--bar-offset));
 }
-.mini__4c059 .hasMarks__4c059 .bar__4c059,
-.slider__4c059 .hasMarks__4c059 .bar__4c059 {
+.mini_ec237e .hasMarks_ec237e .bar_ec237e,
+.slider_ec237e .hasMarks_ec237e .bar_ec237e {
   top: 34px;
 }
-.mini__4c059 .barFill__4c059,
-.slider__4c059 .barFill__4c059 {
+.mini_ec237e .barFill_ec237e,
+.slider_ec237e .barFill_ec237e {
   background-color: var(--background-brand);
   border: 1px solid hsla(0, 0%, 100%, 0.1);
 }
-.enable-forced-colors .barFill__4c059 {
+.enable-forced-colors .barFill_ec237e {
   background: Highlight;
 }
-.enable-forced-colors .grabber__4c059 {
+.enable-forced-colors .grabber_ec237e {
   background-color: Highlight;
   border-color: Highlight;
 }
-.enable-forced-colors .bar__4c059 {
+.enable-forced-colors .bar_ec237e {
   background: Canvas;
   border: 1px solid ButtonText;
 }
-.enable-forced-colors .markDash__4c059 {
+.enable-forced-colors .markDash_ec237e {
   background: CanvasText;
 }
-.enable-forced-colors .disabled__4c059 {
+.enable-forced-colors .disabled_ec237e {
   opacity: 1;
 }
-.enable-forced-colors .disabled__4c059 .barFill__4c059 {
+.enable-forced-colors .disabled_ec237e .barFill_ec237e {
   background: GrayText;
 }
-.enable-forced-colors .disabled__4c059 .grabber__4c059 {
+.enable-forced-colors .disabled_ec237e .grabber_ec237e {
   background-color: GrayText;
   border-color: GrayText;
 }
-.enable-forced-colors .disabled__4c059 .bar__4c059 {
+.enable-forced-colors .disabled_ec237e .bar_ec237e {
   background: Canvas;
   border-color: GrayText;
 }
 
-/*# sourceMappingURL=500186.4422353a4dc21a35.css.map*/
+/*# sourceMappingURL=985768.1c2df0354c1d8cb3.css.map*/
