@@ -8,6 +8,7 @@
     "staging-images-2",
     "grafana-data-prd",
     "staging-gateway",
+    "staging-gateway-us-east-1c",
     "staging-media-2",
     "staging-media-1",
     "staging-images",
@@ -16,8 +17,8 @@
     "staging-gateway-us-east1-b",
     "tracker",
     "staging-gift",
-    "staging-gateway-us-east-1a",
     "seo",
+    "staging-gateway-us-east-1a",
     "staging-cdn",
     "docs",
     "airflow-ai-prd",
@@ -42,5 +43,5 @@
     "staging-images-1",
     "otelcol"
   ],
-  "subdomain_count": 41
+  "subdomain_count": 42
 }
