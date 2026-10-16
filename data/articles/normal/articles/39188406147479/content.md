@@ -55,11 +55,6 @@
         </li>
       </ul>
     </li>
-    <li data-list-item-id="ee0ccb6be9bc156e44fc3466938e152d1">
-      <a href="#h_01KZ4QGEHQD2RQWG9MWXGHK95M"
-        >Call of Duty Modern Warfare 4 Beta Code</a
-      >
-    </li>
     <li data-list-item-id="e97f6a5ff6104a29d956c41836e66b366">
       <a href="#h_01M28JF5GNHD4FAYCE01XS5GA1">YouTube Premium</a>
       <ul>
@@ -97,6 +92,25 @@
           <a href="#h_01M4TXWAD5NTJHE876R6S8QAXE"
             >How to Redeem Your Code on Best Buy</a
           >
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="e44630078c47833cbdcc7182aaa595d4a">
+      <a href="#h_01M4Y7XV7016H1S3QY1S2JA1NC"
+        >Call of Duty Modern Warfare 4 Exclusive Blueprint</a
+      >
+      <ul>
+        <li data-list-item-id="e77302dcbe2f076ed8396e2d191a0c5e5">
+          <a href="#h_01M4Y7Z4SETJAQ92E3YRK8RPBJ">How it Works</a>
+        </li>
+        <li data-list-item-id="e3cd8e9fcce353c6375273ba49e285eb5">
+          <a href="#h_01M4Y7Z4SH3QSYZZX2PNV225AC">Eligibility Requirements</a>
+        </li>
+        <li data-list-item-id="ec11d1135ad0aa4d7ce59fea41ded0e2d">
+          <a href="#h_01M4Y7ZHAJVFA0GWJF8GT2ZMHQ">How to Access Your Code</a>
+        </li>
+        <li data-list-item-id="ea1c4413ece38596ea2f8b849b647854c">
+          <a href="#h_01M4Y7ZYXH0ZCMZPKCKSJ3N254">How to Redeem Your Code</a>
         </li>
       </ul>
     </li>
@@ -717,117 +731,6 @@
 <p>3. Proceed to checkout</p>
 <p>4. Enter your discount code in the promo code field</p>
 <p>5. Complete your purchase with the discount applied</p>
-<h1 id="h_01KZ4QGEHQD2RQWG9MWXGHK95M">
-  Call of Duty Modern Warfare 4 Beta Code
-</h1>
-<p><strong>Beta Access Window:</strong> August 21, 2026 - August 25, 2026</p>
-<p>
-  Nitro members will have access to a beta code to check out the new Call of
-  Duty Modern Warfare 4 releasing in October 2026.
-</p>
-<h2 id="h_01KZ4QGEHQAM2Q41W4XWB2X602">How it Works</h2>
-<p>The following terms apply to this Beta Code offer:</p>
-<ul>
-  <li data-list-item-id="e05ab8d3e400354743104d1712507a2c6">
-    <strong>Claim location:</strong> Codes are claimed from Nitro Home and must
-    be redeemed at
-    <a
-      href="http://www.callofduty.com/betaredeem"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">www.callofduty.com/betaredeem</span></a
-    >.
-  </li>
-  <li data-list-item-id="ec6b219bd38a2ce034843e77a84a42510">
-    <strong>Additional Terms</strong>:
-    <a href="http://www.callofduty.com/modernwarfare4/beta"
-      ><span class="wysiwyg-underline"
-        >www.callofduty.com/modernwarfare4/beta</span
-      ></a
-    >  
-  </li>
-  <li data-list-item-id="ef6a65d8094c6e0f5ee90f5a991dc6406">
-    <strong>Platform selection:</strong> You'll choose your platform at the time
-    of redemption.
-  </li>
-  <li data-list-item-id="ebf5e97601d9fcc9ec1f45055e230bb01">
-    <strong>Eligibility:</strong> Available to active, eligible Nitro
-    subscribers in eligible countries (through a paid subscription, Nitro gift,
-    and some Nitro trials, with exceptions noted below). Beta code must be
-    redeemed by August 25, 2026 (10AM PT).
-  </li>
-</ul>
-<p>You are <strong>not</strong> eligible if:</p>
-<ul>
-  <li data-list-item-id="eab1190d73c7caf549e2b16038e3fb6c1">
-    Using Nitro Credits without a Nitro subscription. 
-  </li>
-  <li data-list-item-id="eef936a3bd07a7d256c7b2bd952918aff">
-    You are a Nitro Classic or Nitro Basic subscriber.
-  </li>
-  <li data-list-item-id="e9f3b8a6d4fbe17eeb85e619130305f80">
-    Your Nitro subscription came from a third-party inbound promotion (for
-    example, a 1-month Nitro trial from an external partner) or a large-scale
-    campaign trial (for example, an annual Nitro trial offered to all users).
-  </li>
-</ul>
-<h2 id="h_01KZ4QGEHVKH0ADE25VGTSCGNB">How to Access Your Discount Code</h2>
-<p>
-  1. On desktop or browser, select the <strong>Direct Messages</strong> icon
-  [<img
-    src="https://support.discord.com/hc/article_attachments/40276842685207"
-    width="24"
-    height="18"
-  />] in the upper-left corner. 
-</p>
-<p>
-  2. Press the <strong>Nitro Home</strong> tab to navigate to the
-  <strong>Nitro</strong> page. 
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/40276842687383"
-    width="298"
-    height="256"
-  />
-   <img
-    src="https://support.discord.com/hc/article_attachments/40276842682007"
-    width="297"
-    height="254"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01KZ4QGEHXFCYFRMWMK1YFK2J3">
-  <span style="color: #666666"
-    ><strong>Direct Message</strong>s Icon (Left) and <strong>Nitro</strong> Tab
-    (Right)</span
-  >
-</h4>
-<p>
-  3. Locate and select the
-  <strong>Call of Duty Modern Warfare 4 Beta Code</strong> card under the
-  <strong>What's New?</strong> section.
-</p>
-<p>
-  4. Press <strong>Unlock Rewards</strong> to open the Call of Duty Modern
-  Warfare 4 Beta Code window and see your available benefits.
-</p>
-<p>
-  5. Select <strong>Unlock Code</strong> to reveal your code—you can copy it
-  immediately or return to view it later.
-</p>
-<h2 id="h_01KZ4QGEHZS1WJF37AEY5232RZ">Using Your Beta Code</h2>
-<p>After claiming your code, here's how to redeem it:</p>
-<p>
-  1. Visit<a href="https://www.youtube.com/premium"> </a
-  ><a
-    href="http://callofduty.com/betaredeem"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">callofduty.com/betaredeem</span></a
-  >
-</p>
-<p>2. Log into your Activision account.</p>
-<p>3. Enter your code and follow the on-screen instructions.</p>
 <h1 id="h_01M28JF5GNHD4FAYCE01XS5GA1">YouTube Premium</h1>
 <div class="info-box">
   <strong>Note</strong>:<br />- To receive your code, you must use the desktop
@@ -1171,15 +1074,15 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/43428573550487"
+    alt="Direct Messages Icon"
     width="298"
     height="256"
-    alt="Direct Messages Icon"
   />
    <img
     src="https://support.discord.com/hc/article_attachments/43428548246423"
+    alt="Nitro Tab"
     width="297"
     height="254"
-    alt="Nitro Tab"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01M4TXWAD45W8R98XGRF60FEBQ">
@@ -1211,12 +1114,161 @@
 <p>4. Sign in to your Best Buy account, or create one for free.</p>
 <p>5. Enter your code at checkout, located below the payment method.</p>
 <p>6. Complete checkout to activate your My Best Buy Plus membership.</p>
+<h1 id="h_01M4Y7XV7016H1S3QY1S2JA1NC">
+  Call of Duty Modern Warfare 4 Exclusive Blueprint
+</h1>
+<div class="warn-box">
+  <strong>Important</strong>: To receive your code, you must use the desktop
+  app. Eligibility conditions apply, see
+  <a href="#h_01M4Y7Z4SH3QSYZZX2PNV225AC">below</a> for more information.
+</div>
+<div class="tip-box">
+  <strong>Tip</strong>: Starting <strong>October 15, 2026</strong>, you'll see
+  an <strong>Upcoming badge</strong> and a <strong>countdown</strong>
+  <strong>card</strong> in your <strong>Nitro</strong> <strong>Home</strong>.
+  Check back on <strong>October 23</strong> to claim your blueprint.
+</div>
+<p>
+  Nitro members can get the Code Blurple weapon blueprint in Call of Duty:
+  Modern Warfare 4, available only with Nitro. Claim your code starting
+  <strong>October 23, 2026</strong>, the day the game launches.
+</p>
+<h2 id="h_01M4Y7Z4SETJAQ92E3YRK8RPBJ">How it Works</h2>
+<p>The following terms apply to this promotional offer:</p>
+<ul>
+  <li data-list-item-id="efed1c086f0bd65c526aa46a9b0f62165">
+    Reward details: Your code unlocks the Code Blurple weapon blueprint in Call
+    of Duty: Modern Warfare 4.
+  </li>
+  <li data-list-item-id="e6bb8960b6f9ddc07b77ce4641cb1a93f">
+    One-time code: This is a one-time code. You can claim one code per account.
+  </li>
+  <li data-list-item-id="e5b07e0cb188365c1b27196907601f96e">
+    Claim window: Codes can be claimed starting
+    <strong>October 23, 2026</strong> through <strong>August 6, 2027</strong>.
+  </li>
+  <li data-list-item-id="e38b77adffbc0d3924121f1a3d24a1dad">
+    Redemption: Codes are claimed from Nitro Home and must be redeemed at
+    https://callofduty.com/redeem
+  </li>
+  <li data-list-item-id="ecd59e989f1dd9b1e96410538b22d98ee">
+    Additional Terms apply:
+    <a
+      href="https://www.activision.com/legal/terms-of-use"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><span class="wysiwyg-underline"
+        >https://www.activision.com/legal/terms-of-use</span
+      ></a
+    > 
+  </li>
+</ul>
+<div class="info-box">
+  <strong>Note</strong>: If you cancel your Nitro subscription after claiming
+  your code, you can still redeem it until August 6, 2027 at
+  <a
+    href="https://callofduty.com/redeem"
+    target="_blank"
+    rel="noopener noreferrer"
+    >https://callofduty.com/redeem</a
+  >. Once redeemed, the blueprint stays in your Call of Duty account.
+</div>
+<h2 id="h_01M4Y7Z4SH3QSYZZX2PNV225AC">Eligibility Requirements</h2>
+<p>You are eligible:</p>
+<ul>
+  <li data-list-item-id="ed2d260848d022ade0b7b2611093ba43d">
+    With an active Discord Nitro subscription (through a paid subscription,
+    Nitro gift, and some Nitro trials, with exceptions noted below)
+  </li>
+</ul>
+<p>You are not eligible if:</p>
+<ul>
+  <li data-list-item-id="e4475ee610fb0e7f14508ab48b7429748">
+    Using Nitro Credits without a Nitro subscription.
+  </li>
+  <li data-list-item-id="e879200aada6f39bb069af705e5c2bc9f">
+    You are a Nitro Classic or Nitro Basic subscriber.
+  </li>
+  <li data-list-item-id="e558f41d23512a1d7d98f3b094326ba21">
+    Your Nitro subscription came from a third-party inbound promotion (for
+    example, a 1-month Nitro trial from an external partner) or a large-scale
+    campaign trial (for example, an annual Nitro trial offered to all users).
+  </li>
+</ul>
+<div class="info-box">
+  <strong>Note:</strong> Once you unlock a benefit, you will not be eligible for
+  a refund on your Nitro subscription. See our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy#h_01J5BJ0CVX6QRXWNJHY3TM97FG"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Refund Policy</span></a
+  >
+  for more details.
+</div>
+<h2 id="h_01M4Y7ZHAJVFA0GWJF8GT2ZMHQ">How to Access Your Code</h2>
+<p>
+  1. On desktop or browser, select the Direct Messages icon [<img
+    src="https://support.discord.com/hc/article_attachments/43428548244503"
+    width="24"
+    height="18"
+  />] in the upper-left corner. 
+</p>
+<p>2. Press the Nitro Home tab to navigate to the Nitro Home page. </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/43428573550487"
+    alt="Direct Messages Icon"
+    width="298"
+    height="256"
+  />
+   <img
+    src="https://support.discord.com/hc/article_attachments/43428548246423"
+    alt="Nitro Tab"
+    width="297"
+    height="254"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M4Y7ZHAPT9MHKVKKF9HZCYMC">
+  <span style="color: #666666"
+    >Direct Messages Icon (Left) and Nitro Tab (Right)</span
+  >
+</h4>
+<p>
+  3. Locate and select the <strong>Bring Nitro to your loadout card </strong>in
+  the <strong>Nitro Rewards section</strong>.
+</p>
+<p>
+  4. Press <strong>Unlock Reward </strong>to open the <strong>MW4</strong>
+  <strong>Exclusive</strong> <strong>Blueprint</strong> <strong>window</strong>.
+</p>
+<p>
+  5. Select <strong>Unlock</strong> to reveal your code. You can copy it
+  immediately or return to view it later.
+</p>
+<h2 id="h_01M4Y7ZYXH0ZCMZPKCKSJ3N254">How to Redeem Your Code</h2>
+<p>After claiming your code (steps 1-5 above), here's how to redeem it:</p>
+<p>
+  1. Visit
+  <a
+    href="https://callofduty.com/redeem"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">https://callofduty.com/redeem</span></a
+  >.
+</p>
+<p>2. Log in to your Activision account.</p>
+<p>3. Enter your code and follow the on-screen instructions.</p>
 <h1 id="h_01KQZ3D7ZFZV9JCQXQMJFCCENW">Frequently Asked Questions</h1>
 <p><strong>Q: Are Nitro Rewards available in my country?</strong> </p>
 <p>
-  A: Availability varies by perk. Each partner section above lists the eligible
-  regions. If your country isn't listed for a specific perk, that perk is not
-  currently available in your region.
+  A: Availability varies by perk. If a perk has regional requirements, you’ll
+  find them in that perk’s <strong>Eligibility Requirements</strong>
+  <strong>section</strong> above. Some perks list their eligible regions
+  directly, while others are available wherever the partner offers or ships its
+  products. For those perks, check the partner’s website to confirm availability
+  in your region. If you don’t see a specific Nitro Reward in your Nitro Home,
+  that perk may not be available in your region.
 </p>
 <p><strong>Q: Do Nitro Rewards cost extra?</strong> </p>
 <p>
@@ -1338,6 +1390,10 @@
   <strong>November 19, 2026</strong>.
 </p>
 <p>
+  Your Call of Duty blueprint code must be redeemed by
+  <strong>August 6, 2027</strong>.
+</p>
+<p>
   <strong
     >Q: Are there any restrictions on the products I can purchase with the
     discount?</strong
@@ -1430,7 +1486,23 @@
       href="https://www.bestbuy.com/contact-us"
       target="_blank"
       rel="noopener noreferrer"
-      ><span style="color: #0b57d0">https://www.bestbuy.com/contact-us</span></a
+      >https://www.bestbuy.com/contact-us</a
+    >
+  </li>
+</ul>
+<p>
+  If you're experiencing issues with your Call of Duty blueprint code, contact
+  their support team directly:
+</p>
+<ul>
+  <li data-list-item-id="eb74769fabad6b5714706e8eb2b51e938">
+    <strong>Activision Support:</strong
+    ><a
+      href="https://support.activision.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="wysiwyg-underline">https://support.activision.com</span></a
     >
   </li>
 </ul>
