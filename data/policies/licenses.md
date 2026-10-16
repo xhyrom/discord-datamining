@@ -50530,39 +50530,6 @@ https://datatracker.ietf.org/ipr/1526/</code></pre>
                   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
                   SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span
                 >
-                <h2 id="reactnativeinapputils">
-                  react-native-in-app-utils<a
-                    class="hyperlink"
-                    href="#reactnativeinapputils"
-                    ><div name="reactnativeinapputils"></div
-                  ></a>
-                </h2>
-                <span class="paragraph-3ckiht">The MIT License (MIT)</span
-                ><span class="paragraph-3ckiht"
-                  >Copyright (c) 2015 Chirag Jain</span
-                ><span class="paragraph-3ckiht"
-                  >Permission is hereby granted, free of charge, to any person
-                  obtaining a copy of this software and associated documentation
-                  files (the "Software"), to deal in the Software without
-                  restriction, including without limitation the rights to use,
-                  copy, modify, merge, publish, distribute, sublicense, and/or
-                  sell copies of the Software, and to permit persons to whom the
-                  Software is furnished to do so, subject to the following
-                  conditions:</span
-                ><span class="paragraph-3ckiht"
-                  >The above copyright notice and this permission notice shall
-                  be included in all copies or substantial portions of the
-                  Software.</span
-                ><span class="paragraph-3ckiht"
-                  >THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
-                  KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-                  WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-                  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-                  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-                  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-                  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-                  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span
-                >
                 <h2 id="reactnativekeyboardcontroller">
                   react-native-keyboard-controller<a
                     class="hyperlink"
@@ -52279,6 +52246,203 @@ specific prior written permission.</code></pre>
                     rel="noreferrer"
                     ><span>IGDB</span></a
                   >.</span
+                >
+                <h1 id="art-and-sound">
+                  Art and sound<a class="hyperlink" href="#art-and-sound"
+                    ><div name="art-and-sound"></div
+                  ></a>
+                </h1>
+                <span class="paragraph-3ckiht"
+                  >The following third-party art and sound assets are included
+                  in this product.</span
+                >
+                <hr />
+                <h2 id="micro-roguelike">
+                  Micro Roguelike<a class="hyperlink" href="#micro-roguelike"
+                    ><div name="micro-roguelike"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://www.kenney.nl/assets/micro-roguelike"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://www.kenney.nl/assets/micro-roguelike</span
+                    ></a
+                  ></span
+                ><span class="paragraph-3ckiht"
+                  >Created by Kenney (<a
+                    href="https://www.kenney.nl"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://www.kenney.nl</span></a
+                  >)</span
+                ><span class="paragraph-3ckiht"
+                  >Dedicated to the public domain under the Creative Commons CC0
+                  1.0 Universal Public Domain Dedication, available at:
+                  <a
+                    href="https://creativecommons.org/publicdomain/zero/1.0/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://creativecommons.org/publicdomain/zero/1.0/</span
+                    ></a
+                  ></span
+                >
+                <hr />
+                <h2 id="8x8-ascii-bitmap-font-modified">
+                  8x8 ASCII bitmap font (modified)<a
+                    class="hyperlink"
+                    href="#8x8-ascii-bitmap-font-modified"
+                    ><div name="8x8-ascii-bitmap-font-modified"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://opengameart.org/content/8x8-ascii-bitmap-font-with-c-source"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://opengameart.org/content/8x8-ascii-bitmap-font-with-c-source</span
+                    ></a
+                  ></span
+                ><span class="paragraph-3ckiht">Created by darkrose</span
+                ><span class="paragraph-3ckiht"
+                  >Portions Copyright 2026 Discord Inc.</span
+                ><span class="paragraph-3ckiht"
+                  >A subset of the character glyphs from this font has been
+                  copied into a combined tilesheet that also contains unrelated
+                  artwork. That tilesheet is a modified version of this work,
+                  and is licensed under the Creative Commons
+                  Attribution-ShareAlike 3.0 Unported license, available at:
+                  <a
+                    href="https://creativecommons.org/licenses/by-sa/3.0/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://creativecommons.org/licenses/by-sa/3.0/</span
+                    ></a
+                  ></span
+                >
+                <hr />
+                <h2 id="long-away-home-8bit">
+                  Long Away Home (8bit)<a
+                    class="hyperlink"
+                    href="#long-away-home-8bit"
+                    ><div name="long-away-home-8bit"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://opengameart.org/content/long-away-home-8bit"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://opengameart.org/content/long-away-home-8bit</span
+                    ></a
+                  ></span
+                ><span class="paragraph-3ckiht">Created by nene</span
+                ><span class="paragraph-3ckiht"
+                  >Dedicated to the public domain under the Creative Commons CC0
+                  1.0 Universal Public Domain Dedication, available at:
+                  <a
+                    href="https://creativecommons.org/publicdomain/zero/1.0/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://creativecommons.org/publicdomain/zero/1.0/</span
+                    ></a
+                  ></span
+                >
+                <hr />
+                <h2 id="inka-whine">
+                  inka whine<a class="hyperlink" href="#inka-whine"
+                    ><div name="inka-whine"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://freesound.org/people/aeroglifo/sounds/512507/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://freesound.org/people/aeroglifo/sounds/512507/</span
+                    ></a
+                  ></span
+                ><span class="paragraph-3ckiht">Created by aeroglifo</span
+                ><span class="paragraph-3ckiht"
+                  >Dedicated to the public domain under the Creative Commons CC0
+                  1.0 Universal Public Domain Dedication, available at:
+                  <a
+                    href="https://creativecommons.org/publicdomain/zero/1.0/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://creativecommons.org/publicdomain/zero/1.0/</span
+                    ></a
+                  ></span
+                >
+                <hr />
+                <h2 id="labrador-barking-dog">
+                  Labrador Barking Dog<a
+                    class="hyperlink"
+                    href="#labrador-barking-dog"
+                    ><div name="labrador-barking-dog"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://soundbible.com/2215-Labrador-Barking-Dog.html"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://soundbible.com/2215-Labrador-Barking-Dog.html</span
+                    ></a
+                  ></span
+                ><span class="paragraph-3ckiht">Recorded by Daniel Simion</span
+                ><span class="paragraph-3ckiht">Has been modified.</span
+                ><span class="paragraph-3ckiht"
+                  >Licensed under the Creative Commons Attribution 3.0 Unported
+                  license, available at:
+                  <a
+                    href="https://creativecommons.org/licenses/by/3.0/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://creativecommons.org/licenses/by/3.0/</span
+                    ></a
+                  ></span
+                >
+                <hr />
+                <h2 id="cat-smokey-meow-1">
+                  Cat Smokey Meow 1<a
+                    class="hyperlink"
+                    href="#cat-smokey-meow-1"
+                    ><div name="cat-smokey-meow-1"></div
+                  ></a>
+                </h2>
+                <span class="paragraph-3ckiht"
+                  ><a
+                    href="https://freesound.org/people/redjamie7/sounds/729031/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://freesound.org/people/redjamie7/sounds/729031/</span
+                    ></a
+                  ></span
+                ><span class="paragraph-3ckiht">Created by redjamie7</span
+                ><span class="paragraph-3ckiht"
+                  >Licensed under the Creative Commons Attribution 4.0
+                  International license, available at:
+                  <a
+                    href="https://creativecommons.org/licenses/by/4.0/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://creativecommons.org/licenses/by/4.0/</span
+                    ></a
+                  ></span
                 >
                 <h1 id="fonts">
                   Fonts<a class="hyperlink" href="#fonts"
