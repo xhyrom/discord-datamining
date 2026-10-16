@@ -22,13 +22,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-12);
-}
-.emoji__3bdf8,
-.emojis__3bdf8 {
   height: var(--space-32);
+}
+.emojisExpanded__3bdf8 {
+  height: auto;
 }
 .emoji__3bdf8 {
   flex: none;
+  height: var(--space-32);
   -o-object-fit: contain;
   object-fit: contain;
   width: var(--space-32);
@@ -141,4 +142,4 @@
   width: 124px;
 }
 
-/*# sourceMappingURL=813057.17e418531e0c370b.css.map*/
+/*# sourceMappingURL=813057.94f8ffd2a8fc1018.css.map*/
