@@ -2479,6 +2479,19 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.emojiPopout_d5cd2d {
+  max-width: calc(var(--custom-message-helpers-popout-container-width) * 1.25);
+  min-width: var(--custom-message-helpers-popout-container-width);
+  width: auto;
+}
+.emojiPopout_d5cd2d .customEmojiLabel_d5cd2d,
+.emojiPopout_d5cd2d .emojiDescription_d5cd2d,
+.emojiPopout_d5cd2d .guildSection_d5cd2d {
+  contain: inline-size;
+}
+.emojiName_d5cd2d {
+  overflow-wrap: anywhere;
+}
 .theme-dark .betaTag_d5cd2d {
   background-color: #fff;
   color: var(--premium-tier-2-pink-for-gradients-2);
@@ -2600,4 +2613,4 @@
   top: -4px;
 }
 
-/*# sourceMappingURL=247917.2a18c1b1ed5f34c4.css.map*/
+/*# sourceMappingURL=247917.6b7a396bebba0935.css.map*/

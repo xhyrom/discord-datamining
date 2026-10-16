@@ -132,6 +132,9 @@
 .iconsContainer__972a0.nameplated__972a0 {
   min-width: 32px;
 }
+.callDuration__972a0 {
+  margin-inline-end: var(--space-xs);
+}
 .closeIcon__972a0,
 .favoriteIcon__972a0 {
   display: block;
@@ -158,7 +161,9 @@
   margin-inline-start: 4px;
 }
 @media (hover: hover) {
+  .channel__972a0:focus-within .callDuration__972a0,
   .channel__972a0:focus-within .favoriteIcon__972a0,
+  .channel__972a0:hover .callDuration__972a0,
   .channel__972a0:hover .favoriteIcon__972a0 {
     display: none;
   }
@@ -277,4 +282,4 @@
   z-index: 0;
 }
 
-/*# sourceMappingURL=834050.6f12e87d4777c969.css.map*/
+/*# sourceMappingURL=834050.2b20814942076d60.css.map*/
