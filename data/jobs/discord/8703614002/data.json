@@ -29,7 +29,7 @@
     }
   ],
   "id": 8703614002,
-  "updated_at": "2026-10-16T16:36:35-04:00",
+  "updated_at": "2026-10-16T17:36:43-04:00",
   "requisition_id": "R-107344",
   "title": "QA/DevOps Engineer",
   "company_name": "Discord",
@@ -47,9 +47,9 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (US)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }
