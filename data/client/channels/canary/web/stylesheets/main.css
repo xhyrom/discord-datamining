@@ -686,13 +686,41 @@ code {
 }
 .theme-dark.custom-theme-background {
   --custom-background-gradient-color: 0 0 0;
-  --custom-background-gradient-opacity-chat: 0.8;
-  --custom-background-gradient-highest-opacity: 0.65;
-  --custom-background-gradient-lowest-opacity: 0.9;
-  --custom-background-gradient-lower-opacity: 0.85;
-  --custom-background-gradient-low-opacity: 0.8;
-  --custom-background-gradient-high-opacity: 0.75;
-  --custom-background-gradient-higher-opacity: 0.7;
+  --custom-background-gradient-opacity-chat: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.8),
+    1
+  );
+  --custom-background-gradient-highest-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.65),
+    1
+  );
+  --custom-background-gradient-lowest-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.9),
+    1
+  );
+  --custom-background-gradient-lower-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.85),
+    1
+  );
+  --custom-background-gradient-low-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.8),
+    1
+  );
+  --custom-background-gradient-high-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.75),
+    1
+  );
+  --custom-background-gradient-higher-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.7),
+    1
+  );
   --custom-background-gradient-opacity-app-frame: var(
     --custom-background-gradient-higher-opacity
   );
@@ -728,13 +756,41 @@ code {
 }
 .theme-light.custom-theme-background {
   --custom-background-gradient-color: 255 255 255;
-  --custom-background-gradient-highest-opacity: 0.95;
-  --custom-background-gradient-opacity-chat: 0.85;
-  --custom-background-gradient-lowest-opacity: 0.85;
-  --custom-background-gradient-lower-opacity: 0.8;
-  --custom-background-gradient-low-opacity: 0.75;
-  --custom-background-gradient-high-opacity: 0.7;
-  --custom-background-gradient-higher-opacity: 0.65;
+  --custom-background-gradient-highest-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.95),
+    1
+  );
+  --custom-background-gradient-opacity-chat: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.85),
+    1
+  );
+  --custom-background-gradient-lowest-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.85),
+    1
+  );
+  --custom-background-gradient-lower-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.8),
+    1
+  );
+  --custom-background-gradient-low-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.75),
+    1
+  );
+  --custom-background-gradient-high-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.7),
+    1
+  );
+  --custom-background-gradient-higher-opacity: clamp(
+    0,
+    calc(var(--custom-background-gradient-opacity-multiplier, 1) * 0.65),
+    1
+  );
   --custom-background-gradient-opacity-app-frame: var(
     --custom-background-gradient-higher-opacity
   );
@@ -1087,4 +1143,4 @@ html.enable-forced-colors:not(.platform-web).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=419070.5a76dee70a3767eb.css.map*/
+/*# sourceMappingURL=419070.573a47afd8bdcf20.css.map*/
