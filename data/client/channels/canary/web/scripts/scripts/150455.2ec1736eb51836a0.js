@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["505634"],
+  ["150455"],
   {
     311225(d, e, a) {
       d.exports = {
@@ -31,7 +31,20 @@
         kO: "playPausePop_cf09d8",
         PK: "playPausePopIcon_cf09d8",
         CY: "videoButton_cf09d8",
+        Nn: "playbackSpeedButton_cf09d8",
+        Lu: "playbackSpeedLabel_cf09d8",
+        qp: "playbackSpeedPopout_cf09d8",
+        y: "playbackSpeedMenu_cf09d8",
+        EX: "playbackSpeedLabelCustom_cf09d8",
         eM: "overlayContentHidden_cf09d8",
+      };
+    },
+    317714(d, e, a) {
+      d.exports = {
+        Iv: "cover__6eb54",
+        vu: "active__6eb54",
+        P0: "iconWrapper__6eb54",
+        Kk: "icon__6eb54",
       };
     },
   },
