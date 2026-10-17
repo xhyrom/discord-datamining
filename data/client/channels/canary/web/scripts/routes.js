@@ -45061,7 +45061,7 @@ ${a}`);
           n.e("859864").then(n.t.bind(n, 122123, 19));
         let te = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new ez.A().log(
-          `[BUILD INFO] Release Channel: ${te}, Build Number: 641346, Version Hash: 3522ad43209f2ec1315c4e8b7701c3b6de247be4`,
+          `[BUILD INFO] Release Channel: ${te}, Build Number: 641379, Version Hash: 5da50dde59ecb766318abfc7f593425bcdc99c20`,
         ),
           G.A.setTags({ appContext: j.QCW }),
           eS.A.initBasic(),
@@ -72196,7 +72196,7 @@ ${a}`);
                     className: tE()(L5.Wz, L5.mr),
                     children: [
                       (0, P.jsx)(L3, { className: L5.Kk }),
-                      tL.intl.format(tL.t.uyrfYF, { buildNumber: "641346" }),
+                      tL.intl.format(tL.t.uyrfYF, { buildNumber: "641379" }),
                       (0, P.jsx)(r, {}),
                     ],
                   })
@@ -132996,11 +132996,11 @@ ${a}`);
       429582(e, t, n) {
         "use strict";
         n.d(t, {
-          H3: () => U,
-          H9: () => D,
-          oe: () => w,
-          t8: () => M,
-          xW: () => G,
+          H3: () => eR,
+          H9: () => eg,
+          oe: () => eL,
+          t8: () => eO,
+          xW: () => ey,
         }),
           n(321073);
         var i = n(621466),
@@ -133009,15 +133009,37 @@ ${a}`);
         let s = new r.Vy("NativeFrameView"),
           l = new Map(),
           o = null,
-          d = null,
-          c = 0,
-          u = !1,
-          _ = null,
-          E = "",
-          A = /^(?:theme-|custom-theme-background$|custom-client-theme$)/;
-        function h() {
+          d = [250, 1e3, 2e3],
+          c = null,
+          u = null,
+          _ = 0,
+          E = 0,
+          A = !1,
+          h = !1,
+          f = 0,
+          I = !1,
+          p = null,
+          T = null,
+          m = new WeakSet(),
+          g = new Set(),
+          S = new Set(),
+          N = new Set(),
+          C = null,
+          O = !1,
+          R = !1,
+          L = new WeakMap(),
+          y = 1,
+          D = null,
+          v = new Set(),
+          b = new Set(),
+          P = "",
+          M = !1,
+          U = null,
+          w = "",
+          G = /^(?:theme-|custom-theme-background$|custom-client-theme$)/;
+        function x() {
           let e = [...document.documentElement.classList]
-              .filter((e) => A.test(e))
+              .filter((e) => G.test(e))
               .sort(),
             t =
               document.querySelector("style[data-client-themes]")
@@ -133025,17 +133047,33 @@ ${a}`);
           return `${e.join(" ")}
 ${t}`;
         }
-        function f() {
-          let e = h();
-          e !== E && ((E = e), (u = !0));
+        function k() {
+          let e = x();
+          e !== w && ((w = e), (M = !0), eu(!0));
         }
-        let I = null,
-          p = "data-native-frame-view-hole",
-          T = `
-[${p}] {
+        let F = null,
+          B = "data-native-frame-view-hole",
+          V = "data-native-frame-view-covered",
+          H = "data-native-frame-view-pointer-scope",
+          j = `[${H}]`.repeat(4),
+          W = [
+            "color",
+            "image",
+            "size",
+            "position",
+            "repeat",
+            "x",
+            "y",
+            "width",
+            "height",
+          ],
+          Y = `
+${W.map((e) => `@property --native-frame-view-hole-${e} { syntax: '*'; inherits: false; }`).join("\n")}
+[${B}] {
   background: transparent !important;
 }
-[${p}]::before {
+[${B}]::before {
+  ${W.map((e) => `--native-frame-view-hole-${e}: inherit;`).join("\n  ")}
   content: '';
   position: absolute;
   inset: 0;
@@ -133052,159 +133090,338 @@ ${t}`;
   mask-position: 0 0, var(--native-frame-view-hole-x) var(--native-frame-view-hole-y);
   mask-repeat: no-repeat;
   mask-composite: exclude;
+}
+[${V}] {
+  background: transparent !important;
+}
+/* Specific enough to win over the important rules that turn pointer events off, like Discord's animating layers. */
+html body ${j}, html body ${j} * {
+  pointer-events: auto !important;
 }`,
-          m = [
+          K = [
             ["--native-frame-view-hole-color", "backgroundColor"],
             ["--native-frame-view-hole-image", "backgroundImage"],
             ["--native-frame-view-hole-size", "backgroundSize"],
             ["--native-frame-view-hole-position", "backgroundPosition"],
             ["--native-frame-view-hole-repeat", "backgroundRepeat"],
           ],
-          g = new Map(),
-          S = null;
-        function N(e, t) {
-          for (let [t] of (e.removeAttribute(p), m)) e.style.removeProperty(t);
+          $ = new Map(),
+          z = new Map(),
+          X = null,
+          q = [
+            "(prefers-color-scheme: dark)",
+            "(prefers-reduced-motion: reduce)",
+            "(prefers-contrast: more)",
+            "(forced-colors: active)",
+            "(resolution: 2dppx)",
+          ];
+        function Z(e) {
+          return (
+            "rgba(0, 0, 0, 0)" !== e.backgroundColor ||
+            "none" !== e.backgroundImage
+          );
+        }
+        function Q(e, t) {
+          for (let [t] of (e.removeAttribute(B), K)) e.style.removeProperty(t);
           for (let t of ["x", "y", "width", "height"])
             e.style.removeProperty(`--native-frame-view-hole-${t}`);
-          t && (e.style.position = ""), g.delete(e);
+          t && (e.style.position = ""), $.delete(e), (h = !0);
         }
-        function C(e) {
+        function J(e) {
           return (
             Math.round(e * window.devicePixelRatio) / window.devicePixelRatio
           );
         }
-        function O(e) {
-          if (((c = performance.now()), u))
-            for (let [e, t] of ((u = !1), [...g])) N(e, t);
-          null == S &&
-            e.length > 0 &&
-            (((S = document.createElement("style")).textContent = T),
-            document.head.appendChild(S));
-          let t = new Map();
-          function n(e, n) {
-            if (!(!(0, i.vq)(e, HTMLElement) || t.has(e))) {
-              var r;
-              (g.has(e) ||
-                "rgba(0, 0, 0, 0)" !==
-                  (r = getComputedStyle(e)).backgroundColor ||
-                "none" !== r.backgroundImage) &&
-                t.set(e, n);
+        function ee(e) {
+          let {
+            left: t,
+            top: n,
+            right: i,
+            bottom: r,
+          } = e.getBoundingClientRect();
+          return {
+            left: t,
+            top: n,
+            right: i,
+            bottom: r,
+            clientLeft: e.clientLeft,
+            clientTop: e.clientTop,
+          };
+        }
+        function et(e, t, n) {
+          let i = J(n.left + n.clientLeft),
+            r = J(n.top + n.clientTop),
+            a = J(t.x),
+            s = J(t.y),
+            l = 1 / window.devicePixelRatio,
+            o = J(t.x + t.width) - a + l,
+            d = J(t.y + t.height) - s + l;
+          e.style.setProperty("--native-frame-view-hole-x", `${a - i}px`),
+            e.style.setProperty("--native-frame-view-hole-y", `${s - r}px`),
+            e.style.setProperty("--native-frame-view-hole-width", `${o}px`),
+            e.style.setProperty("--native-frame-view-hole-height", `${d}px`);
+        }
+        function en(e) {
+          let { x: t, y: n, width: i, height: r } = e,
+            a = t + i - 1,
+            s = n + r - 1;
+          return [
+            [t + i / 2, n + r / 2],
+            [t + 1, n + 1],
+            [a, n + 1],
+            [t + 1, s],
+            [a, s],
+          ];
+        }
+        function ei(e) {
+          let t = L.get(e);
+          return null == t && ((t = y++), L.set(e, t)), t;
+        }
+        function er() {
+          for (let e of l.values()) return e.iframe;
+          return null;
+        }
+        function ea(e) {
+          if (null == T || !(0, i.vq)(e, Element)) return !1;
+          let { x: t, y: n, width: r, height: a } = T,
+            s = e.getBoundingClientRect();
+          return s.right > t && s.left < t + r && s.bottom > n && s.top < n + a;
+        }
+        function es(e) {
+          if (null == e || e === document || e === window) return !0;
+          if (!(0, i.vq)(e, Element)) return !1;
+          for (let t of l.values()) if (e.contains(t.iframe)) return !0;
+          return !1;
+        }
+        function el(e) {
+          let t = [...S].filter((e) => e.isConnected);
+          for (let e of t) e.setAttribute(H, "");
+          try {
+            return e();
+          } finally {
+            for (let e of t) e.removeAttribute(H);
+          }
+        }
+        function eo(e) {
+          let { iframe: t, clip: n } = e;
+          return el(() => {
+            let e = [];
+            for (let [i, r] of en(n)) {
+              let n = document.elementsFromPoint(i, r),
+                a = n.findIndex((e) => e.contains(t));
+              if (a < 0) {
+                e.push("-");
+                continue;
+              }
+              for (let t of n.slice(a)) {
+                let n = ei(t);
+                if ($.has(t) || z.has(t)) {
+                  e.push(`${n}p`);
+                  continue;
+                }
+                let { backgroundColor: i, backgroundImage: r } =
+                  getComputedStyle(t);
+                e.push(`${n}:${i}:${"none" === r ? "" : r.length}`);
+              }
+              e.push("/");
             }
+            for (let t of N) e.push(`pin${ei(t)}`);
+            return e.join(" ");
+          });
+        }
+        function ed() {
+          let e = er();
+          if (null == C || null == e || 1 !== l.size) return !1;
+          let t = eN(e);
+          return (
+            t?.clip != null &&
+            JSON.stringify(t) === C.layout &&
+            eo({ iframe: e, clip: t.clip }) === C.value
+          );
+        }
+        function ec(e) {
+          if (
+            ((I = !1), (T = e[0]?.clip ?? null), (f = performance.now()), M)
+          ) {
+            for (let e of ((M = !1), z.keys())) e.removeAttribute(V);
+            for (let [e, t] of (z.clear(), [...$])) Q(e, t);
+          }
+          null == X &&
+            e.length > 0 &&
+            (((X = document.createElement("style")).textContent = Y),
+            document.head.appendChild(X));
+          let t = new Map(),
+            n = new Set();
+          function r(e, n) {
+            !(!(0, i.vq)(e, HTMLElement) || t.has(e)) &&
+              ($.has(e) || z.has(e) || Z(getComputedStyle(e))) &&
+              t.set(e, n);
           }
           for (let { iframe: t, clip: i } of e) {
             for (let e = t.parentElement; null != e; e = e.parentElement)
-              n(e, i);
-            for (let [e, r] of (function (e) {
-              let { x: t, y: n, width: i, height: r } = e,
-                a = t + i - 1,
-                s = n + r - 1;
-              return [
-                [t + i / 2, n + r / 2],
-                [t + 1, n + 1],
-                [a, n + 1],
-                [t + 1, s],
-                [a, s],
-              ];
-            })(i)) {
-              let a = document.elementsFromPoint(e, r),
-                s = a.findIndex((e) => e.contains(t));
-              if (!(s < 0)) for (let e of a.slice(s + 1)) n(e, i);
-            }
+              r(e, i);
+            for (let e of (el(() => {
+              for (let [e, a] of en(i)) {
+                let s = document.elementsFromPoint(e, a),
+                  l = s.findIndex((e) => e.contains(t));
+                if (!(l < 0)) for (let e of s.slice(l + 1)) n.add(e), r(e, i);
+              }
+            }),
+            [...N]))
+              e.isConnected ? ea(e) && (n.add(e), r(e, i)) : N.delete(e);
           }
-          for (let [e, n] of [...g]) t.has(e) || N(e, n);
-          for (let [e, n] of t)
+          for (let [e, n] of ((function (e) {
+            let t = [...e.keys()],
+              n = new Map(t.map((e) => [e, e.getBoundingClientRect()])),
+              i = new Map(
+                t.map((e) => [
+                  e,
+                  (function (e) {
+                    if ($.has(e))
+                      return [
+                        e.style.getPropertyValue(
+                          "--native-frame-view-hole-color",
+                        ),
+                        e.style.getPropertyValue(
+                          "--native-frame-view-hole-image",
+                        ),
+                      ];
+                    let t = z.get(e);
+                    if (null != t) return t;
+                    let { backgroundColor: n, backgroundImage: i } =
+                      getComputedStyle(e);
+                    return [n, i];
+                  })(e),
+                ]),
+              ),
+              r = new Set(
+                t.filter((e) => {
+                  let [t, n] = i.get(e);
+                  return (
+                    "none" === n &&
+                    /^(rgb\(|oklab\((?!.*\/)|#)/.test(t) &&
+                    "0px" === getComputedStyle(e).borderRadius
+                  );
+                }),
+              ),
+              a = new Map();
+            for (let e of t) {
+              let s = n.get(e);
+              t.some((t) => {
+                var i;
+                return (
+                  t !== e &&
+                  r.has(t) &&
+                  e.contains(t) &&
+                  ((i = n.get(t)),
+                  1 > Math.abs(i.left - s.left) &&
+                    1 > Math.abs(i.top - s.top) &&
+                    1 > Math.abs(i.width - s.width) &&
+                    1 > Math.abs(i.height - s.height))
+                );
+              }) && a.set(e, i.get(e));
+            }
+            for (let e of z.keys()) a.has(e) || e.removeAttribute(V);
+            for (let t of a.keys())
+              e.delete(t), z.has(t) || t.setAttribute(V, "");
+            for (let [e, t] of (z.clear(), a)) z.set(e, t);
+          })(t),
+          [...$]))
+            t.has(e) || Q(e, n);
+          for (let e of t.keys())
             !(function (e) {
-              if (g.has(e)) return;
+              if ($.has(e)) return;
               let t = getComputedStyle(e);
-              for (let [n, i] of m) e.style.setProperty(n, t[i]);
+              for (let [n, i] of K) e.style.setProperty(n, t[i]);
               let n = "static" === t.position;
               n && (e.style.position = "relative"),
-                e.setAttribute(p, ""),
-                g.set(e, n);
-            })(e),
-              (function (e, t) {
-                let n = e.getBoundingClientRect(),
-                  i = C(n.left + e.clientLeft),
-                  r = C(n.top + e.clientTop),
-                  a = C(t.x),
-                  s = C(t.y),
-                  l = 1 / window.devicePixelRatio,
-                  o = C(t.x + t.width) - a + l,
-                  d = C(t.y + t.height) - s + l;
-                e.style.setProperty("--native-frame-view-hole-x", `${a - i}px`),
-                  e.style.setProperty(
-                    "--native-frame-view-hole-y",
-                    `${s - r}px`,
-                  ),
-                  e.style.setProperty(
-                    "--native-frame-view-hole-width",
-                    `${o}px`,
-                  ),
-                  e.style.setProperty(
-                    "--native-frame-view-hole-height",
-                    `${d}px`,
-                  );
-              })(e, n);
-        }
-        let R = ["left", "middle", "right"],
-          L = { nodrop: "no-drop", custom: "default" };
-        function y() {
-          return window.DiscordNative?.frameView ?? null;
-        }
-        function D() {
-          return null != y();
-        }
-        function v(e, t) {
-          let n = Math.max(e.x, t.left),
-            i = Math.max(e.y, t.top);
-          return {
-            x: n,
-            y: i,
-            width: Math.max(0, Math.min(e.x + e.width, t.right) - n),
-            height: Math.max(0, Math.min(e.y + e.height, t.bottom) - i),
+                e.setAttribute(B, ""),
+                $.set(e, n),
+                (h = !0);
+            })(e);
+          let a = new Map([...t.keys()].map((e) => [e, ee(e)]));
+          for (let [e, n] of t) et(e, n, a.get(e));
+          let s = {
+            left: 0,
+            top: 0,
+            right: window.innerWidth,
+            bottom: window.innerHeight,
           };
+          for (let e of a.values())
+            s = {
+              left: Math.max(s.left, e.left),
+              top: Math.max(s.top, e.top),
+              right: Math.min(s.right, e.right),
+              bottom: Math.min(s.bottom, e.bottom),
+            };
+          p = t.size > 0 && 1 === e.length ? s : null;
+          let l = new WeakSet([...t.keys(), ...n]);
+          for (let { iframe: t } of e)
+            for (let e = t; null != e; e = e.parentElement) l.add(e);
+          (m = l),
+            (function (e, t) {
+              if (null == D) return;
+              let n = "";
+              for (let e of t) n += `${ei(e)},`;
+              for (let { iframe: t } of e) n += `|${ei(t)}`;
+              if (n === P) return;
+              P = n;
+              let i = new Set();
+              function r(e) {
+                for (let t = e; null != t; t = t.parentElement)
+                  i.has(t) ||
+                    "normal" === getComputedStyle(t).containerType ||
+                    i.add(t);
+              }
+              for (let { iframe: t } of e) r(t);
+              for (let e of t) r(e);
+              for (let e of b) i.has(e) || D.containers?.unobserve(e);
+              for (let e of i) b.has(e) || D.containers?.observe(e);
+              for (let e of (b.clear(), i)) b.add(e);
+            })(e, n),
+            D?.mutations.takeRecords(),
+            (C = null),
+            (O = !0);
         }
-        function b() {
-          d = null;
-          let e = y();
-          if (null == e) return;
+        function eu(e) {
+          0 !== l.size &&
+            (e && (A = !0),
+            (_ = 0),
+            null != u && (clearTimeout(u), (u = null)),
+            (E = 0),
+            (c ??= requestAnimationFrame(eh)));
+        }
+        function e_() {
+          0 === l.size ||
+            R ||
+            ((R = !0),
+            requestAnimationFrame(() => {
+              (R = !1), ed() || eu(!0);
+            }));
+        }
+        function eE() {
+          null == u && l.size > 0 && (u = setTimeout(eA, d[_]));
+        }
+        function eA() {
+          if (((u = null), null == c && 0 !== l.size)) {
+            if (ed()) {
+              (_ = Math.min(_ + 1, d.length - 1)), eE();
+              return;
+            }
+            (A = !0),
+              (E = 9),
+              (_ = eh() ? 0 : Math.min(_ + 1, d.length - 1)),
+              null != u && (clearTimeout(u), (u = null), eE());
+          }
+        }
+        function eh() {
+          c = null;
+          let e = em();
+          if (null == e) return !1;
           let t = [],
             n = !1;
           for (let [i, r] of l) {
-            let a = (function (e) {
-              if (!e.isConnected) return null;
-              let t = e.getBoundingClientRect();
-              if (t.width <= 0 || t.height <= 0) return null;
-              let n = { x: t.left, y: t.top, width: t.width, height: t.height },
-                { devicePixelRatio: i } = window;
-              if (
-                !e.checkVisibility({
-                  opacityProperty: !0,
-                  visibilityProperty: !0,
-                })
-              )
-                return { frame: n, clip: null, devicePixelRatio: i };
-              let r = v(n, {
-                left: 0,
-                top: 0,
-                right: window.innerWidth,
-                bottom: window.innerHeight,
-              });
-              for (
-                let t = e.parentElement;
-                null != t && r.width > 0;
-                t = t.parentElement
-              ) {
-                let { overflowX: e, overflowY: n } = getComputedStyle(t);
-                ("visible" !== e || "visible" !== n) &&
-                  (r = v(r, t.getBoundingClientRect()));
-              }
-              return {
-                frame: n,
-                clip: r.width > 0 && r.height > 0 ? r : null,
-                devicePixelRatio: i,
-              };
-            })(r.iframe);
+            let a = eN(r.iframe);
             a?.clip != null && t.push({ iframe: r.iframe, clip: a.clip });
             let l = JSON.stringify(a);
             l !== r.lastLayout &&
@@ -133214,17 +133431,174 @@ ${t}`;
                 .setLayout(i, a)
                 .catch((e) => s.warn(`frame view ${i} layout failed`, e)));
           }
-          (n || u || performance.now() - c >= 250) && O(t),
-            l.size > 0 && (d = requestAnimationFrame(b));
+          let i = A;
+          (A = !1), (h = !1);
+          let r = n || M || i;
+          if (!M && !i) {
+            let e = performance.now() - f >= 250;
+            if (n && !e && 1 === t.length && $.size > 0 && null != p) {
+              let { x: e, y: n, width: i, height: s } = t[0].clip;
+              if (
+                e >= p.left - 0.5 &&
+                n >= p.top - 0.5 &&
+                e + i <= p.right + 0.5 &&
+                n + s <= p.bottom + 0.5
+              ) {
+                var a = t[0].clip;
+                for (let [e, t] of ((T = a),
+                [...$.keys()].map((e) => [e, ee(e)])))
+                  et(e, a, t);
+                D?.mutations.takeRecords(), (I = !0), (r = !1);
+              }
+            } else e && (n || E < 10) && (r = !0);
+          }
+          if ((r && ec(t), 0 === l.size)) return n;
+          let o = n || h;
+          return (
+            (E = o ? 0 : E + 1) < 10 || g.size > 0
+              ? (c = requestAnimationFrame(eh))
+              : (I && ec(t),
+                O &&
+                  ((O = !1),
+                  !(function (e) {
+                    if (((C = null), 1 !== e.length)) return;
+                    let { iframe: t } = e[0],
+                      n = eN(t);
+                    n?.clip != null &&
+                      (C = {
+                        layout: JSON.stringify(n),
+                        value: eo({ iframe: t, clip: n.clip }),
+                      });
+                  })(t)),
+                eE()),
+            o
+          );
         }
-        function P(e) {
+        function ef(e) {
+          if (
+            !(
+              0 === l.size ||
+              (function (e) {
+                let t = er(),
+                  n = !1,
+                  r = 200;
+                for (let a of e) {
+                  if (r <= 0) break;
+                  let { target: e } = a;
+                  if ("attributes" === a.type && (0, i.vq)(e, Element)) {
+                    if (
+                      "class" !== a.attributeName &&
+                      "style" !== a.attributeName
+                    )
+                      continue;
+                    let i = S.has(e);
+                    if (!i && !(null != t && e.contains(t)) && !ea(e)) continue;
+                    let r = "none" === getComputedStyle(e).pointerEvents;
+                    r && !i
+                      ? (S.add(e), (n = !0))
+                      : !r && i && (S.delete(e), (n = !0));
+                  } else if ("childList" === a.type) {
+                    for (let e of a.addedNodes)
+                      if ((0, i.vq)(e, Element))
+                        for (let t of [e, ...e.querySelectorAll("*")].slice(
+                          0,
+                          r,
+                        )) {
+                          if ((r--, !ea(t))) continue;
+                          let e = getComputedStyle(t);
+                          "none" === e.pointerEvents &&
+                            Z(e) &&
+                            (N.add(t), (n = !0));
+                        }
+                  }
+                }
+                return n && eu(!0), n;
+              })(e)
+            )
+          ) {
+            for (let t of e) {
+              let { target: e } = t,
+                n = [...t.addedNodes, ...t.removedNodes];
+              if (
+                "STYLE" === e.nodeName ||
+                e.parentNode?.nodeName === "STYLE" ||
+                n.some((e) => "STYLE" === e.nodeName || "LINK" === e.nodeName)
+              )
+                return void eu(!0);
+              if ("childList" === t.type) {
+                if (n.some((e) => (0, i.vq)(e, Element))) return void eu(!0);
+              } else if ((0, i.vq)(e, Element) && (m.has(e) || es(e)))
+                return void eu(!0);
+            }
+            e.some((e) => "attributes" === e.type) && e_();
+          }
+        }
+        function eI() {
+          if (null == D) return;
+          let e = new Set();
+          for (let t of l.values())
+            for (let n = t.iframe; null != n; n = n.parentElement) e.add(n);
+          for (let t of v) e.has(t) || D.ancestors?.unobserve(t);
+          for (let t of e) v.has(t) || D.ancestors?.observe(t);
+          for (let t of (v.clear(), e)) v.add(t);
+        }
+        let ep = ["left", "middle", "right"],
+          eT = { nodrop: "no-drop", custom: "default" };
+        function em() {
+          return window.DiscordNative?.frameView ?? null;
+        }
+        function eg() {
+          return null != em();
+        }
+        function eS(e, t) {
+          let n = Math.max(e.x, t.left),
+            i = Math.max(e.y, t.top);
+          return {
+            x: n,
+            y: i,
+            width: Math.max(0, Math.min(e.x + e.width, t.right) - n),
+            height: Math.max(0, Math.min(e.y + e.height, t.bottom) - i),
+          };
+        }
+        function eN(e) {
+          if (!e.isConnected) return null;
+          let t = e.getBoundingClientRect();
+          if (t.width <= 0 || t.height <= 0) return null;
+          let n = { x: t.left, y: t.top, width: t.width, height: t.height },
+            { devicePixelRatio: i } = window;
+          if (
+            !e.checkVisibility({ opacityProperty: !0, visibilityProperty: !0 })
+          )
+            return { frame: n, clip: null, devicePixelRatio: i };
+          let r = eS(n, {
+            left: 0,
+            top: 0,
+            right: window.innerWidth,
+            bottom: window.innerHeight,
+          });
+          for (
+            let t = e.parentElement;
+            null != t && r.width > 0;
+            t = t.parentElement
+          ) {
+            let { overflowX: e, overflowY: n } = getComputedStyle(t);
+            ("visible" !== e || "visible" !== n) &&
+              (r = eS(r, t.getBoundingClientRect()));
+          }
+          return {
+            frame: n,
+            clip: r.width > 0 && r.height > 0 ? r : null,
+            devicePixelRatio: i,
+          };
+        }
+        function eC(e) {
           for (let [t, n] of l) if (n.iframe === e) return t;
           return null;
         }
-        function M(e) {
-          return null != P(e);
+        function eO(e) {
+          return null != eC(e);
         }
-        function U(e) {
+        function eR(e) {
           for (let t of l.values())
             if (t.source === e) {
               if (null == t.shell || t.shell.closed) return null;
@@ -133243,21 +133617,21 @@ ${t}`;
             }
           return null;
         }
-        function w(e, t) {
-          let n = y(),
-            i = P(e);
+        function eL(e, t) {
+          let n = em(),
+            i = eC(e);
           return null == n || null == i ? null : n.capture(i, t);
         }
-        function G(e, t, n, i, r) {
-          let c = y();
+        function ey(e, t, n, r, d) {
+          let c = em();
           if (null == c || e.ownerDocument !== document) return null;
-          null == _ &&
-            ((E = h()),
-            (_ = new MutationObserver(f)).observe(document.documentElement, {
+          null == U &&
+            ((w = x()),
+            (U = new MutationObserver(k)).observe(document.documentElement, {
               attributes: !0,
               attributeFilter: ["class"],
             }),
-            _.observe(document.head, {
+            U.observe(document.head, {
               childList: !0,
               subtree: !0,
               characterData: !0,
@@ -133281,7 +133655,7 @@ ${t}`;
                   i = l.get(e)?.inputTarget;
                 null != i &&
                   (i.style.cursor =
-                    ((n = L[t] ?? (t.endsWith("-panning") ? "all-scroll" : t)),
+                    ((n = eT[t] ?? (t.endsWith("-panning") ? "all-scroll" : t)),
                     CSS.supports("cursor", n) ? n : "default"));
               }),
               c.onExit((e, t) => {
@@ -133314,14 +133688,14 @@ ${t}`;
               c.onFocus((e, t) => {
                 if (l.has(e)) {
                   if (t) {
-                    (I = e), (0, a.XC)(window, !0);
+                    (F = e), (0, a.XC)(window, !0);
                     return;
                   }
-                  I === e && (I = null),
+                  F === e && (F = null),
                     document.hasFocus() || (0, a.XC)(window, !1);
                 }
               }));
-          let A = (function (e, t) {
+          let _ = (function (e, t) {
             let { port1: n } = new MessageChannel();
             return (
               Object.defineProperty(n, "postMessage", {
@@ -133336,27 +133710,46 @@ ${t}`;
           })(c, t);
           Object.defineProperty(e, "contentWindow", {
             configurable: !0,
-            get: () => A,
+            get: () => _,
           }),
             Object.defineProperty(e, "src", {
               configurable: !0,
               get: () => n.src,
             });
-          let p = e.parentElement,
-            T =
-              null != p
+          let E = e.parentElement,
+            h =
+              null != E
                 ? (function (e, t, n) {
                     let i = new AbortController(),
                       { signal: r } = i,
                       a = !1,
                       l = !1,
-                      o = !1;
-                    function d(n) {
-                      e.sendInput(t, n).catch((e) =>
-                        s.warn(`frame view ${t} input failed`, e),
-                      );
+                      o = !1,
+                      d = !1,
+                      c = null;
+                    function u(n) {
+                      if (d) {
+                        c = n;
+                        return;
+                      }
+                      function i() {
+                        d = !1;
+                        let e = c;
+                        (c = null), null == e || r.aborted || u(e);
+                      }
+                      (d = !0),
+                        e.sendInput(t, n).then(i, (e) => {
+                          s.warn(`frame view ${t} input failed`, e), i();
+                        });
                     }
-                    function c(e, t, i) {
+                    function _(n) {
+                      let i = null != c ? [c, n] : [n];
+                      for (let n of ((c = null), i))
+                        e.sendInput(t, n).catch((e) =>
+                          s.warn(`frame view ${t} input failed`, e),
+                        );
+                    }
+                    function E(e, t, i) {
                       n.addEventListener(
                         e,
                         (e) => {
@@ -133365,7 +133758,7 @@ ${t}`;
                         { signal: r, ...i },
                       );
                     }
-                    function u(e, t) {
+                    function A(e, t) {
                       let n;
                       return {
                         type: e,
@@ -133383,46 +133776,58 @@ ${t}`;
                           n),
                       };
                     }
-                    function _(e) {
+                    function h(e) {
                       let t = document.elementFromPoint(e.clientX, e.clientY);
-                      (null != t && n.contains(t)) || d(u("mouseLeave", e));
+                      (null != t && n.contains(t)) || _(A("mouseLeave", e));
                     }
-                    for (let e of (c("pointerdown", (e) => {
+                    E("pointerdown", (e) => {
                       "mouse" === e.pointerType &&
                         (n.setPointerCapture(e.pointerId), (l = !0));
                     }),
-                    c("lostpointercapture", (e) => {
-                      (l = !1), o && ((o = !1), _(e));
+                      E("lostpointercapture", (e) => {
+                        (l = !1), o && ((o = !1), h(e));
+                      }),
+                      E("mousedown", (e) => {
+                        e.preventDefault();
+                        let t = ep[e.button];
+                        null != t &&
+                          _({
+                            ...A("mouseDown", e),
+                            button: t,
+                            clickCount: e.detail,
+                          });
+                      }),
+                      E("mouseup", (e) => {
+                        let t = ep[e.button];
+                        null != t &&
+                          _({
+                            ...A("mouseUp", e),
+                            button: t,
+                            clickCount: e.detail,
+                          });
+                      });
+                    let f = !1;
+                    for (let e of (n.addEventListener(
+                      "pointerrawupdate",
+                      (e) => {
+                        (f = "mouse" === e.pointerType) &&
+                          !a &&
+                          u(A("mouseMove", e));
+                      },
+                      { signal: r },
+                    ),
+                    E("mousemove", (e) => {
+                      f || u(A("mouseMove", e));
                     }),
-                    c("mousedown", (e) => {
-                      e.preventDefault();
-                      let t = R[e.button];
-                      null != t &&
-                        d({
-                          ...u("mouseDown", e),
-                          button: t,
-                          clickCount: e.detail,
-                        });
-                    }),
-                    c("mouseup", (e) => {
-                      let t = R[e.button];
-                      null != t &&
-                        d({
-                          ...u("mouseUp", e),
-                          button: t,
-                          clickCount: e.detail,
-                        });
-                    }),
-                    c("mousemove", (e) => d(u("mouseMove", e))),
-                    c("mouseenter", (e) => d(u("mouseEnter", e))),
-                    c("mouseleave", (e) => {
+                    E("mouseenter", (e) => _(A("mouseEnter", e))),
+                    E("mouseleave", (e) => {
                       if (l) {
                         o = !0;
                         return;
                       }
-                      _(e);
+                      h(e);
                     }),
-                    c(
+                    E(
                       "wheel",
                       (e) => {
                         e.preventDefault();
@@ -133432,27 +133837,27 @@ ${t}`;
                             : e.deltaMode === WheelEvent.DOM_DELTA_PAGE
                               ? n.clientHeight
                               : 1;
-                        d({
-                          ...u("mouseWheel", e),
+                        _({
+                          ...A("mouseWheel", e),
                           deltaX: e.deltaX * t,
                           deltaY: e.deltaY * t,
                         });
                       },
                       { passive: !1 },
                     ),
-                    c("contextmenu", (e) => e.preventDefault()),
+                    E("contextmenu", (e) => e.preventDefault()),
                     ["dragenter", "dragover", "drop"]))
-                      c(e, (e) => e.stopPropagation());
+                      E(e, (e) => e.stopPropagation());
                     return (
                       r.addEventListener("abort", () => {
-                        n.style.cursor = "";
+                        (c = null), (n.style.cursor = "");
                       }),
                       {
                         abort: () => i.abort(),
                         setSuspended(e) {
                           e &&
                             !a &&
-                            d({
+                            _({
                               type: "mouseLeave",
                               x: 0,
                               y: 0,
@@ -133462,71 +133867,216 @@ ${t}`;
                         },
                       }
                     );
-                  })(c, t, p)
+                  })(c, t, E)
                 : null,
-            m = n.colorScheme,
-            g = {
+            f = n.colorScheme,
+            I = {
               iframe: e,
-              source: A,
+              source: _,
               shell: null,
-              onLoad: i,
-              inputTarget: p,
+              onLoad: r,
+              inputTarget: E,
               lastLayout: null,
             },
-            S = new AbortController();
-          function N() {
-            l.get(t) === g &&
+            T = new AbortController();
+          function R() {
+            l.get(t) === I &&
               (l.delete(t),
-              T?.abort(),
-              S.abort(),
-              I === t &&
-                ((I = null), document.hasFocus() || (0, a.XC)(window, !1)),
+              D?.visibility?.unobserve(e),
+              eI(),
+              h?.abort(),
+              T.abort(),
+              F === t &&
+                ((F = null), document.hasFocus() || (0, a.XC)(window, !1)),
               Reflect.deleteProperty(e, "contentWindow"),
               Reflect.deleteProperty(e, "src"),
-              0 === l.size && (O([]), _?.disconnect(), (_ = null), (u = !1)));
+              0 === l.size &&
+                (null != D &&
+                  (D.controller.abort(),
+                  D.mutations.disconnect(),
+                  D.ancestors?.disconnect(),
+                  D.containers?.disconnect(),
+                  D.visibility?.disconnect(),
+                  (D = null),
+                  v.clear(),
+                  b.clear(),
+                  (P = ""),
+                  g.clear(),
+                  S.clear(),
+                  N.clear(),
+                  (C = null),
+                  (O = !1),
+                  (p = null),
+                  (A = !1),
+                  null != u && (clearTimeout(u), (u = null))),
+                ec([]),
+                U?.disconnect(),
+                (U = null),
+                (M = !1)));
           }
           return (
             e.addEventListener(
               "focus",
               () => {
                 setTimeout(() => {
-                  l.get(t) === g &&
+                  l.get(t) === I &&
                     document.activeElement === e &&
                     c
                       .enter(t)
                       .catch((e) => s.warn(`frame view ${t} focus failed`, e));
                 }, 0);
               },
-              { signal: S.signal },
+              { signal: T.signal },
             ),
-            l.set(t, g),
+            l.set(t, I),
+            !(function () {
+              if (null != D) return;
+              let e = new AbortController(),
+                { signal: t } = e,
+                n = { capture: !0, signal: t },
+                r = { capture: !0, passive: !0, signal: t };
+              for (let n of ((D = {
+                controller: e,
+                mutations: new MutationObserver(ef),
+                ancestors:
+                  "u" > typeof ResizeObserver
+                    ? new ResizeObserver(() => eu(!1))
+                    : null,
+                containers:
+                  "u" > typeof ResizeObserver ? new ResizeObserver(e_) : null,
+                visibility:
+                  "u" > typeof IntersectionObserver
+                    ? new IntersectionObserver(() => eu(!0), {
+                        threshold: [0, 0.01, 0.25, 0.5, 0.75, 0.99, 1],
+                      })
+                    : null,
+              }).mutations.observe(document.documentElement, {
+                subtree: !0,
+                childList: !0,
+                attributes: !0,
+                attributeFilter: [
+                  "class",
+                  "style",
+                  "hidden",
+                  "open",
+                  "data-theme",
+                ],
+              }),
+              D.mutations.observe(document.head, {
+                subtree: !0,
+                childList: !0,
+                characterData: !0,
+              }),
+              window.addEventListener("resize", () => eu(!1), { signal: t }),
+              document.addEventListener(
+                "scroll",
+                (e) => {
+                  es(e.target) && eu(!1);
+                },
+                r,
+              ),
+              [
+                "pointerover",
+                "pointerout",
+                "pointerdown",
+                "pointerup",
+                "focusin",
+                "focusout",
+              ]))
+                document.addEventListener(n, e_, r);
+              for (let e of ["transitionrun", "animationstart"])
+                document.addEventListener(
+                  e,
+                  (t) => {
+                    let { target: n } = t;
+                    (0, i.vq)(n, Element) &&
+                      (!(function (e) {
+                        let t = er(),
+                          n = e;
+                        for (
+                          let e = 0;
+                          null != n && e < 40;
+                          e++, n = n.parentElement
+                        ) {
+                          if (S.has(n)) return;
+                          if (
+                            "none" === getComputedStyle(n).pointerEvents &&
+                            ((null != t && n.contains(t)) || ea(n))
+                          ) {
+                            S.add(n), eu(!0);
+                            return;
+                          }
+                        }
+                      })(n),
+                      es(n)
+                        ? (g.add(n), eu(!0))
+                        : "transitionrun" === e && m.has(n) && eu(!0));
+                  },
+                  n,
+                );
+              for (let e of [
+                "transitionend",
+                "transitioncancel",
+                "animationend",
+                "animationcancel",
+              ])
+                document.addEventListener(
+                  e,
+                  (e) => {
+                    let { target: t } = e;
+                    if ((0, i.vq)(t, Element)) {
+                      for (let e of [...S])
+                        e.contains(t) &&
+                          ((e.isConnected &&
+                            "none" === getComputedStyle(e).pointerEvents) ||
+                            (S.delete(e), eu(!0)));
+                      g.delete(t) && eu(!0);
+                    }
+                  },
+                  n,
+                );
+              for (let e of (document.addEventListener(
+                "load",
+                (e) => {
+                  let { target: t } = e;
+                  (0, i.vq)(t, HTMLLinkElement) && eu(!0);
+                },
+                n,
+              ),
+              q))
+                window
+                  .matchMedia(e)
+                  .addEventListener("change", () => eu(!0), { signal: t });
+            })(),
+            D?.visibility?.observe(e),
+            eI(),
             c.create(t, n).then(
               (e) => {
-                l.get(t) === g &&
-                  ((g.shell = window.open(e.url, e.name)),
-                  null == g.shell &&
+                l.get(t) === I &&
+                  ((I.shell = window.open(e.url, e.name)),
+                  null == I.shell &&
                     (s.error(`frame view ${t} shell did not open`),
-                    N(),
+                    R(),
                     c.destroy(t).catch(() => {}),
-                    r?.()));
+                    d?.()));
               },
               (e) => {
-                l.get(t) === g &&
-                  (s.error(`frame view ${t} was not created`, e), N(), r?.());
+                l.get(t) === I &&
+                  (s.error(`frame view ${t} was not created`, e), R(), d?.());
               },
             ),
-            (d ??= requestAnimationFrame(b)),
+            eu(!0),
             {
               destroy() {
-                l.get(t) === g && (N(), c.destroy(t).catch(() => {}));
+                l.get(t) === I && (R(), c.destroy(t).catch(() => {}));
               },
               setInputSuspended(e) {
-                T?.setSuspended(e);
+                h?.setSuspended(e);
               },
               setColorScheme(e) {
-                e !== m &&
-                  l.get(t) === g &&
-                  ((m = e),
+                e !== f &&
+                  l.get(t) === I &&
+                  ((f = e),
                   c
                     .setColorScheme(t, e)
                     .catch((e) =>
@@ -151992,7 +152542,7 @@ ${t}`;
                 (e) => {
                   if (
                     null == e.body ||
-                    "3522ad43209f2ec1315c4e8b7701c3b6de247be4" === e.body.hash
+                    "5da50dde59ecb766318abfc7f593425bcdc99c20" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -161359,10 +161909,10 @@ ${t}`;
                 t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("641346")),
+                  ((e = parseInt("641379")),
                   Number.isNaN(e) &&
                     (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 641346",
+                      "Trying to open a changelog for an invalid build number 641379",
                     ),
                     (e = 0)),
                   e),
@@ -217732,7 +218282,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "641346", versionHash: "3522ad43209f2ec1315c4e8b7701c3b6de247be4" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "641379", versionHash: "5da50dde59ecb766318abfc7f593425bcdc99c20" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -332893,8 +333443,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1792228723093",
-                      build_number: "641346",
+                      built_at: "1792249668074",
+                      build_number: "641379",
                     },
                   },
                   retries: 1,
@@ -354424,7 +354974,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             f = ed.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, rR.A)("1792228723093", !0);
+            let e = (0, rR.A)("1792249668074", !0);
             t =
               null != e
                 ? eP.intl.formatToPlainString(eP.t.wve4kg, {
@@ -515997,7 +516547,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "3522ad43209f2ec1315c4e8b7701c3b6de247be4",
+                      "5da50dde59ecb766318abfc7f593425bcdc99c20",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", K),
@@ -526417,7 +526967,7 @@ ${l.join(" +\n")}
               ).then((e) => {
                 let i = {
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    build_number: "641346",
+                    build_number: "641379",
                   },
                   u = o.default.getCurrentUser();
                 null != u &&
@@ -538546,7 +539096,7 @@ ${l.join(" +\n")}
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("641346", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("641379", 10))) || (l.client_build_number = d),
           null == (c = eu?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -643044,7 +643594,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         263283:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6944880c64917ea0",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         263408:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "d604d745672767b4",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "23d537fb306c0f22",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         263815:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6b009f4e6f1be8a2",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         264236:
@@ -645084,7 +645634,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         430997:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "9e118497906e58e1",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431294:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "5cee8333d3df7b19",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "e6f454041e65631b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431649:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "df7c6c44cfb52c3b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431658:
@@ -645094,7 +645644,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431714:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "4178f409aecc22a9",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431897:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "e88e747121646dc1",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "d639c456bcd97a83",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431933:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "32642c1b7fa84c5d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431944:
@@ -646241,7 +646791,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         522684:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "3bb9d0f1a351a565",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         522872:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "d4da486df725e387",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "9ceb48d8f9e07101",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         523095:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "5fbbb7871f8bda19",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         523146:
@@ -646757,7 +647307,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         567364:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "7872eeefca8c6f70",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         567620:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "6c41169fe2b207eb",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "cb7e9873ce4069f3",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         567743:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "edde8abbcb6251ec",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         568035:
@@ -653387,4 +653937,4 @@ color: purple;
   );
   C = T.O(C);
 })();
-//# sourceMappingURL=web.f8f59c7259dbb178.js.map
+//# sourceMappingURL=web.345eaa8eb96a3f0a.js.map

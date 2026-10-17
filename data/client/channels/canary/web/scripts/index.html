@@ -37,21 +37,21 @@
     <!-- section:title -->
     <title>Discord</title>
     <!-- endsection -->
-    <script nonce="MjExLDMzLDE2LDg5LDE0LDE4OCwxNzUsODg=">
+    <script nonce="MTA0LDE2MywzNiwxNTksNiw3Niw0MywxOTM=">
       window.GLOBAL_ENV = {
         NODE_ENV: "production",
-        BUILT_AT: "1792228723093",
+        BUILT_AT: "1792249668074",
         HTML_TIMESTAMP: Date.now(),
-        BUILD_NUMBER: "641346",
+        BUILD_NUMBER: "641379",
         PROJECT_ENV: "production",
         RELEASE_CHANNEL: "canary",
-        VERSION_HASH: "3522ad43209f2ec1315c4e8b7701c3b6de247be4",
+        VERSION_HASH: "5da50dde59ecb766318abfc7f593425bcdc99c20",
         PRIMARY_DOMAIN: "discord.com",
         SENTRY_TAGS: {
-          buildId: "3522ad43209f2ec1315c4e8b7701c3b6de247be4",
+          buildId: "5da50dde59ecb766318abfc7f593425bcdc99c20",
           buildType: "normal",
         },
-        SENTRY_RELEASE: "discord_web-3522ad43209f2ec1315c4e8b7701c3b6de247be4",
+        SENTRY_RELEASE: "discord_web-5da50dde59ecb766318abfc7f593425bcdc99c20",
         PUBLIC_PATH: "/assets/",
         LOCATION: "history",
         API_VERSION: 9,
@@ -88,11 +88,11 @@
         NATIVE_WEBSOCKET_ORIGIN: "undefined",
       };
     </script>
-    <script nonce="MjExLDMzLDE2LDg5LDE0LDE4OCwxNzUsODg=">
+    <script nonce="MTA0LDE2MywzNiwxNTksNiw3Niw0MywxOTM=">
       window.__OVERLAY__ = /overlay/.test(location.pathname);
       window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname);
     </script>
-    <link as="script" href="/assets/web.f8f59c7259dbb178.js" rel="preload" />
+    <link as="script" href="/assets/web.345eaa8eb96a3f0a.js" rel="preload" />
     <link as="script" href="/assets/596231.42f9d5fee6fefe71.js" rel="preload" />
     <link as="script" href="/assets/41814.16b66adbca89c196.js" rel="preload" />
     <link as="script" href="/assets/560820.c51065430f361449.js" rel="preload" />
@@ -433,13 +433,13 @@
     <link as="script" href="/assets/773047.0e0c5f1b8bbd1893.js" rel="preload" />
     <link as="script" href="/assets/471903.548717a3823c1cb2.js" rel="preload" />
     <link as="script" href="/assets/193433.213ada0bddfee7ee.js" rel="preload" />
-    <link as="script" href="/assets/sentry.25a9503d6dc6745d.js" rel="preload" />
+    <link as="script" href="/assets/sentry.ce52dd3985fea5b7.js" rel="preload" />
     <link as="script" href="/assets/556707.bb1a25f3c212ce8f.js" rel="preload" />
     <link as="script" href="/assets/64310.f09c86493518d14b.js" rel="preload" />
     <link as="script" href="/assets/324644.9fe0c100e808e762.js" rel="preload" />
     <link
       as="script"
-      href="/assets/fast-connect.f770c4470997ed45.js"
+      href="/assets/fast-connect.0f9079259c32511c.js"
       rel="preload"
     />
     <link as="script" href="/assets/40715.ce9980776791e583.js" rel="preload" />
@@ -459,7 +459,7 @@
     <link as="script" href="/assets/536004.a83dbed8d40db3b2.js" rel="preload" />
     <link as="script" href="/assets/533077.aaffa7a528706cc2.js" rel="preload" />
     <link href="/assets/favicon.ico" rel="icon" />
-    <script nonce="MjExLDMzLDE2LDg5LDE0LDE4OCwxNzUsODg=">
+    <script nonce="MTA0LDE2MywzNiwxNTksNiw3Niw0MywxOTM=">
       !(function () {
         if ("/billing/past-due-payment" === window.location.pathname) {
           var n = /^#token=(.+)$/.exec(window.location.hash);
@@ -476,10 +476,12 @@
         }
       })();
     </script>
-    <script nonce="MjExLDMzLDE2LDg5LDE0LDE4OCwxNzUsODg=">
+    <script nonce="MTA0LDE2MywzNiwxNTksNiw3Niw0MywxOTM=">
       !(function () {
         if (
           null != window.WebSocket &&
+          ("string" != typeof window.name ||
+            0 !== window.name.indexOf("FRAME_VIEW_")) &&
           (function (n) {
             try {
               var o = localStorage.getItem(n);
@@ -517,21 +519,21 @@
           var e = new WebSocket(o);
           e.binaryType = "arraybuffer";
           var i = Date.now(),
-            r = { open: !1, identify: !1, gateway: o, messages: [] };
+            w = { open: !1, identify: !1, gateway: o, messages: [] };
           (e.onopen = function () {
             console.log(
               "[FAST CONNECT] connected in " + (Date.now() - i) + "ms",
             ),
-              (r.open = !0);
+              (w.open = !0);
           }),
             (e.onclose = e.onerror =
               function () {
                 window._ws = null;
               }),
             (e.onmessage = function (n) {
-              r.messages.push(n);
+              w.messages.push(n);
             }),
-            (window._ws = { ws: e, state: r });
+            (window._ws = { ws: e, state: w });
         }
       })();
     </script>
@@ -550,11 +552,11 @@
     <script defer src="/assets/162412.aa9087f204b9b1a2.js"></script>
     <script defer src="/assets/99286.3b48322384eb245f.js"></script>
     <script defer src="/assets/40715.ce9980776791e583.js"></script>
-    <script defer src="/assets/fast-connect.f770c4470997ed45.js"></script>
+    <script defer src="/assets/fast-connect.0f9079259c32511c.js"></script>
     <script defer src="/assets/324644.9fe0c100e808e762.js"></script>
     <script defer src="/assets/64310.f09c86493518d14b.js"></script>
     <script defer src="/assets/556707.bb1a25f3c212ce8f.js"></script>
-    <script defer src="/assets/sentry.25a9503d6dc6745d.js"></script>
+    <script defer src="/assets/sentry.ce52dd3985fea5b7.js"></script>
     <script defer src="/assets/193433.213ada0bddfee7ee.js"></script>
     <script defer src="/assets/471903.548717a3823c1cb2.js"></script>
     <script defer src="/assets/773047.0e0c5f1b8bbd1893.js"></script>
@@ -891,7 +893,7 @@
     <script defer src="/assets/560820.c51065430f361449.js"></script>
     <script defer src="/assets/41814.16b66adbca89c196.js"></script>
     <script defer src="/assets/596231.42f9d5fee6fefe71.js"></script>
-    <script defer src="/assets/web.f8f59c7259dbb178.js"></script>
+    <script defer src="/assets/web.345eaa8eb96a3f0a.js"></script>
     <link href="/assets/193433.6c7be9d5d6e8b51f.css" rel="stylesheet" />
     <link href="/assets/471903.9e7f7c46f29a9da5.css" rel="stylesheet" />
     <link href="/assets/773047.76edaf18f2188bba.css" rel="stylesheet" />
@@ -1217,16 +1219,16 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="app-mount"></div>
 
-    <script nonce="MjExLDMzLDE2LDg5LDE0LDE4OCwxNzUsODg=">
+    <script nonce="MTA0LDE2MywzNiwxNTksNiw3Niw0MywxOTM=">
       (function () {
         function c() {
           var b =
             a.contentDocument || (a.contentWindow && a.contentWindow.document);
           if (b) {
             var d = b.createElement("script");
-            d.nonce = "MjExLDMzLDE2LDg5LDE0LDE4OCwxNzUsODg=";
+            d.nonce = "MTA0LDE2MywzNiwxNTksNiw3Niw0MywxOTM=";
             d.innerHTML =
-              "window.__CF$cv$params={r:'a4be4c71ce9611d4',t:'MTc5MjIyOTU3Mw=='};var a=document.createElement('script');a.nonce='MjExLDMzLDE2LDg5LDE0LDE4OCwxNzUsODg=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+              "window.__CF$cv$params={r:'a4c0a00579708ea2',t:'MTc5MjI1Mzk2OA=='};var a=document.createElement('script');a.nonce='MTA0LDE2MywzNiwxNTksNiw3Niw0MywxOTM=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
             b.getElementsByTagName("head")[0].appendChild(d);
           }
         }
