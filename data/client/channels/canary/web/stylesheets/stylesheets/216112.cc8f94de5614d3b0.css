@@ -1,0 +1,22 @@
+.guildIconImage_d28ae0 {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.guildIconImage_d28ae0.acronym_d28ae0 {
+  background-color: var(--background-base-lowest);
+}
+.acronym_d28ae0 {
+  align-items: center;
+  color: var(--text-strong);
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/*# sourceMappingURL=216112.cc8f94de5614d3b0.css.map*/

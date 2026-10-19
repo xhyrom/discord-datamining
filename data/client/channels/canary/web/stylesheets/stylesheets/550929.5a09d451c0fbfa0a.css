@@ -1,0 +1,93 @@
+.bar_f1a33b {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  gap: var(--space-8);
+  min-height: var(--custom-channel-textarea-text-area-height);
+  padding: 0;
+  padding-inline-end: 6px;
+}
+.has-webkit-scrollbar .bar_f1a33b {
+  padding-inline-end: 0;
+}
+.capture_f1a33b {
+  flex: 1;
+  gap: var(--space-16);
+  min-width: 0;
+}
+.capture_f1a33b,
+.timerGroup_f1a33b {
+  align-items: center;
+  display: flex;
+}
+.timerGroup_f1a33b {
+  flex: 0 0 auto;
+  gap: 4px;
+}
+.recordDot_f1a33b {
+  background-color: var(--text-feedback-critical);
+  border-radius: 50%;
+  flex: 0 0 auto;
+  height: 4px;
+  width: 4px;
+}
+.recordDotHidden_f1a33b {
+  background-color: transparent;
+}
+.timer_f1a33b {
+  color: var(--text-default);
+  flex: 0 0 auto;
+  min-width: 32px;
+}
+.timerWarning_f1a33b {
+  color: var(--text-feedback-critical);
+}
+.waveform_f1a33b {
+  color: var(--interactive-text-active);
+  flex: 1;
+  min-width: 0;
+}
+.divider_f1a33b {
+  align-self: center;
+  background-color: var(--border-subtle);
+  flex: 0 0 auto;
+  height: var(--chat-markup-line-height);
+  width: 1px;
+}
+.sendButton_f1a33b {
+  box-sizing: border-box;
+  margin-inline: 0;
+  min-height: var(--space-32);
+  min-width: var(--space-32);
+  padding: 4px;
+}
+.sendButtonChild_f1a33b {
+  color: var(--text-brand);
+  transition: color 0.25s ease-in-out;
+}
+.sendIcon_f1a33b {
+  height: 20px !important;
+  width: 20px !important;
+}
+.theme-dark .sendButton_f1a33b:focus .sendButtonChild_f1a33b,
+.theme-dark .sendButton_f1a33b:focus-within .sendButtonChild_f1a33b,
+.theme-dark .sendButton_f1a33b:hover .sendButtonChild_f1a33b {
+  color: var(--brand-430);
+}
+.theme-dark .sendButton_f1a33b:active .sendButtonChild_f1a33b {
+  color: var(--brand-500);
+}
+.theme-light .sendButton_f1a33b:focus .sendButtonChild_f1a33b,
+.theme-light .sendButton_f1a33b:hover .sendButtonChild_f1a33b {
+  color: var(--brand-560);
+}
+.theme-light .sendButton_f1a33b:active .sendButtonChild_f1a33b {
+  color: var(--brand-600);
+}
+.sendButtonDisabled_f1a33b {
+  color: var(--icon-muted);
+  cursor: not-allowed;
+}
+
+/*# sourceMappingURL=550929.5a09d451c0fbfa0a.css.map*/
