@@ -30,12 +30,10 @@
 .emojiLockIconContainer_d982c2 {
   background: var(--opacity-black-60);
   border-radius: 2px;
-  height: 40px;
   inset: 0;
   margin: auto;
   pointer-events: none;
   position: absolute;
-  width: 40px;
 }
 .emojiLockIcon_d982c2 {
   color: var(--icon-strong);
@@ -420,4 +418,4 @@
   flex: 1 1 auto;
 }
 
-/*# sourceMappingURL=296956.717f9bed519534ae.css.map*/
+/*# sourceMappingURL=296956.df4fda7c85fba382.css.map*/

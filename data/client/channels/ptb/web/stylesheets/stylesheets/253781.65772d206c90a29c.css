@@ -260,6 +260,7 @@
   border-radius: var(--radius-sm);
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   overflow: hidden;
   position: relative;
 }
@@ -285,4 +286,4 @@
   background-color: Canvas;
 }
 
-/*# sourceMappingURL=253781.d118af6e4f0bc056.css.map*/
+/*# sourceMappingURL=253781.65772d206c90a29c.css.map*/

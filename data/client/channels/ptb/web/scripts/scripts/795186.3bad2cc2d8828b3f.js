@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["467847"],
+  ["795186"],
   {
     83978(_, e, a) {
       _.exports = {
@@ -40,6 +40,24 @@
     },
     566082(_, e, a) {
       _.exports = { n: "panel__9d3f0" };
+    },
+    343476(_, e, a) {
+      _.exports = {
+        nd: "panel__35940",
+        NI: "slot__35940",
+        hS: "slotHidden__35940",
+        DU: "floating__35940",
+        ah: "collapseBodyGap__35940",
+        $_: "media__35940",
+        Sl: "image__35940",
+        HU: "imageFill__35940",
+        Rv: "sideCopy__35940",
+        Pb: "gameRow__35940",
+        Gt: "gameIcon__35940",
+        rf: "body__35940",
+        zH: "details__35940",
+        E1: "ctaReveal__35940",
+      };
     },
   },
 ]);
