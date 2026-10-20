@@ -3,13 +3,13 @@
   paused. We are not accepting applications for either program.
 </div>
 <p>
-  <span style="font-weight: 400"
-    >If you’ve taken a stroll through
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360023968311-Server-Discovery"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Server Discovery</a
+  <span style="font-weight: 400">If you’ve taken a stroll through </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/360023968311-Server-Discovery"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span style="font-weight: 400">Server Discovery</span></a
+  ><span style="font-weight: 400"
     >, you’ve probably noticed two distinct badges next to some server’s names:
     One that’s a green checkmark you may have seen on other platforms, and a
     fancy infinity-style blurple logo. </span
@@ -22,9 +22,11 @@
     height="448"
   />
 </p>
-<h4 id="h_01K193XSMSXYAKPK7ERK1DGJNY" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Featured Servers under the Server Discovery tab</span
+<h4 class="wysiwyg-text-align-center" id="h_01K193XSMSXYAKPK7ERK1DGJNY">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Featured Servers under the Server Discovery tab</span
+    ></span
   >
 </h4>
 <p>
@@ -93,9 +95,7 @@
     official servers for businesses, brands, and figures of public interest. But
     what if a Verified Server is also one of the best communities out
     there?</span
-  ><span style="font-weight: 400"><br /></span
-  ><span style="font-weight: 400"><br /></span
-  ><strong
+  ><br /><br /><strong
     >If you qualify for both programs, you can be in both programs.</strong
   ><span style="font-weight: 400">
     A Verified Server can apply for the Discord Partner Program if they reach
@@ -107,126 +107,108 @@
     >If a server is in both programs and is removed from one, it can remain in
     the other. For example, if a server is both Partnered and Verified and loses
     Partnership, it can stay Verified and retain any perks that are tied to
-    being a Verified Server. </span
-  ><span style="font-weight: 400"><br /></span
-  ><span style="font-weight: 400"><br /></span
-  ><span style="font-weight: 400"
+    being a Verified Server. </span
+  ><br /><br /><span style="font-weight: 400"
     >As for the perks that come with each program, here’s the lowdown on what
     each one gets:</span
   >
 </p>
-<table style="height: 403px" width="731">
-  <tbody>
-    <tr>
-      <td style="width: 280px">
-        <p><strong>Perk</strong></p>
-      </td>
-      <td style="width: 202.5px">
-        <p><strong>Verified Servers</strong></p>
-      </td>
-      <td style="width: 212.5px">
-        <p><strong>Partner Program</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 280px">
-        <p><span style="font-weight: 400">Vanity URL</span></p>
-      </td>
-      <td style="width: 202.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-      <td style="width: 212.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 280px">
-        <p><span style="font-weight: 400">Invite Splash </span></p>
-      </td>
-      <td style="width: 202.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-      <td style="width: 212.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 280px">
-        <p><span style="font-weight: 400">384kbps Voice</span></p>
-      </td>
-      <td style="width: 202.5px">
-        <p><span style="font-weight: 400">No</span></p>
-      </td>
-      <td style="width: 212.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 280px">Lottie Files for Custom Stickers</td>
-      <td style="width: 202.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-      <td style="width: 212.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 280px">
-        <p><span style="font-weight: 400">Animated Server Icon</span></p>
-      </td>
-      <td style="width: 202.5px">
-        <p><span style="font-weight: 400">No</span></p>
-      </td>
-      <td style="width: 212.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 280px">
-        <p><span style="font-weight: 400">Server Banner</span></p>
-      </td>
-      <td style="width: 202.5px">
-        <p><span style="font-weight: 400">No</span></p>
-      </td>
-      <td style="width: 212.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 280px">
-        <p><span style="font-weight: 400">Discord Nitro for Owner</span></p>
-      </td>
-      <td style="width: 202.5px">
-        <p><span style="font-weight: 400">No</span></p>
-      </td>
-      <td style="width: 212.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 280px">
-        <p><span style="font-weight: 400">Verified badge on Server</span></p>
-      </td>
-      <td style="width: 202.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-      <td style="width: 212.5px">
-        <p><span style="font-weight: 400">No</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 280px">
-        <p><span style="font-weight: 400">Partner badge on Server</span></p>
-      </td>
-      <td style="width: 202.5px">
-        <p><span style="font-weight: 400">No</span></p>
-      </td>
-      <td style="width: 212.5px">
-        <p><span style="font-weight: 400">Yes</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<figure class="wysiwyg-table wysiwyg-table-align-left" style="height: 403px">
+  <table>
+    <tbody>
+      <tr>
+        <td style="width: 280px"><strong>Perk</strong></td>
+        <td style="width: 202.5px"><strong>Verified Servers</strong></td>
+        <td style="width: 212.5px"><strong>Partner Program</strong></td>
+      </tr>
+      <tr>
+        <td style="width: 280px">
+          <span style="font-weight: 400">Vanity URL</span>
+        </td>
+        <td style="width: 202.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+        <td style="width: 212.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 280px">
+          <span style="font-weight: 400">Invite Splash </span>
+        </td>
+        <td style="width: 202.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+        <td style="width: 212.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 280px">
+          <span style="font-weight: 400">384kbps Voice</span>
+        </td>
+        <td style="width: 202.5px"><span style="font-weight: 400">No</span></td>
+        <td style="width: 212.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 280px">Lottie Files for Custom Stickers</td>
+        <td style="width: 202.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+        <td style="width: 212.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 280px">
+          <span style="font-weight: 400">Animated Server Icon</span>
+        </td>
+        <td style="width: 202.5px"><span style="font-weight: 400">No</span></td>
+        <td style="width: 212.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 280px">
+          <span style="font-weight: 400">Server Banner</span>
+        </td>
+        <td style="width: 202.5px"><span style="font-weight: 400">No</span></td>
+        <td style="width: 212.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 280px">
+          <span style="font-weight: 400">Discord Nitro for Owner</span>
+        </td>
+        <td style="width: 202.5px"><span style="font-weight: 400">No</span></td>
+        <td style="width: 212.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 280px">
+          <span style="font-weight: 400">Verified badge on Server</span>
+        </td>
+        <td style="width: 202.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+        <td style="width: 212.5px"><span style="font-weight: 400">No</span></td>
+      </tr>
+      <tr>
+        <td style="width: 280px">
+          <span style="font-weight: 400">Partner badge on Server</span>
+        </td>
+        <td style="width: 202.5px"><span style="font-weight: 400">No</span></td>
+        <td style="width: 212.5px">
+          <span style="font-weight: 400">Yes</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
 <div class="tip-box">
   <strong>Tip:</strong> If you’re part of both programs, your Verification badge
   will override the Discord Partner badge visually. However, you still receive

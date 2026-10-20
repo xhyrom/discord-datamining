@@ -1,11 +1,15 @@
 <p>
-  <span style="color: #333333" data-darkreader-inline-color=""
-    >Discord is a communications platform that brings people together to hang
-    out online. </span
-  ><span style="color: #2c2f33" data-darkreader-inline-color=""
-    >We work hard to ensure Discord users are able to have meaningful
-    conversations and spend time with their friends and communities
-    safely.</span
+  <span style="color: #333333"
+    ><span data-darkreader-inline-color=""
+      >Discord is a communications platform that brings people together to hang
+      out online.
+    </span></span
+  ><span style="color: #2c2f33"
+    ><span data-darkreader-inline-color=""
+      >We work hard to ensure Discord users are able to have meaningful
+      conversations and spend time with their friends and communities
+      safely.</span
+    ></span
   >
 </p>
 <p>
@@ -15,23 +19,23 @@
   in those spaces.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large"
-      >What this article covers:</span
-    ></strong
-  >
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
   <ul>
-    <li>
+    <li data-list-item-id="e97e9bfa929df81d6fb3dd3cc0f18a01a">
       <a href="#h_01H1W0A6Y2FN2P05CD7WD96RF8" target="_self"
         >At a Glance: Friend vs. Community Servers</a
       >
     </li>
-    <li>
+    <li data-list-item-id="ed16da4504c024c51d1c62489db7f015b">
       <a href="#h_01H1W0ABM3N9PXPQTDJR5WAZCD" target="_self"
         >Becoming a Community Server</a
       >
     </li>
-    <li>
+    <li data-list-item-id="ea9c5db9965bd8595072d8713a0db7014">
       <a href="#h_01H1W0AFG0KTPNN94FVPEZK156" target="_self"
         >Frequently Asked Questions</a
       >
@@ -43,11 +47,11 @@
 </h1>
 <p><em>What are the types of servers </em></p>
 <ul>
-  <li>
+  <li data-list-item-id="e6da225159c1c80e1f010db818731edb1">
     <strong>Friend Server</strong>: Friend Servers are invite-only spaces
     designed to discuss, connect, and share with your friends or smaller groups.
   </li>
-  <li>
+  <li data-list-item-id="e2e7ceacc697a5472ae4c1453ae0d6e06">
     <strong>Community Server: </strong>Community Servers are invite-only spaces
     designed for people to share, connect, and learn from others all over the
     world who share common interests. Moderators in Community Servers have
@@ -118,12 +122,14 @@
   server type, whether anyone can join the server, and the Boost level.
 </p>
 <p class="wysiwyg-text-align-center">
-  <em
-    ><span style="background-color: #ffff00" data-darkreader-inline-bgcolor=""
-      ><img
-        style="height: 291px; width: 624px"
-        src="https://support.discord.com/hc/article_attachments/15027067915671" /></span
-  ></em>
+  <span style="background-color: #ffff00"
+    ><em
+      ><span data-darkreader-inline-bgcolor=""
+        ><img
+          src="https://support.discord.com/hc/article_attachments/15027067915671"
+          width="624"
+          height="291" /></span></em
+  ></span>
 </p>
 <p>
   Communities that previously had the “Public” tag, will now have the
@@ -132,8 +138,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="height: 345px; width: 624px"
     src="https://support.discord.com/hc/article_attachments/15027054348695"
+    width="624"
+    height="345"
   />
 </p>
 <p>
