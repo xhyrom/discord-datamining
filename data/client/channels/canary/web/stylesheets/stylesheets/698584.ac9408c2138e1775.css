@@ -1,3 +1,29 @@
+.divider__03099 {
+  border-bottom: 1px solid var(--border-subtle);
+  margin: var(--space-16) 0;
+}
+.heading__03099 {
+  justify-content: space-between;
+  margin-bottom: var(--space-12);
+}
+.heading__03099,
+.title__03099 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+}
+.preview__03099 {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: space-between;
+}
+.emoji__03099 {
+  height: var(--space-32);
+  width: var(--space-32);
+}
+.action__03099 {
+  margin-top: var(--space-16);
+}
 .heading-sm\/normal__0f481 {
   font-family: var(--font-primary);
   font-size: 14px;
@@ -2489,6 +2515,16 @@
 .emojiPopout_d5cd2d .guildSection_d5cd2d {
   contain: inline-size;
 }
+.packEmojiPopout_d5cd2d {
+  box-sizing: border-box;
+  max-width: calc(100vw - var(--space-32));
+  min-width: 0;
+  padding: var(--space-16);
+  width: 320px;
+}
+.packEmojiPopout_d5cd2d .emojiSection_d5cd2d {
+  padding: 0;
+}
 .emojiName_d5cd2d {
   overflow-wrap: anywhere;
 }
@@ -2613,4 +2649,4 @@
   top: -4px;
 }
 
-/*# sourceMappingURL=247917.6b7a396bebba0935.css.map*/
+/*# sourceMappingURL=698584.ac9408c2138e1775.css.map*/

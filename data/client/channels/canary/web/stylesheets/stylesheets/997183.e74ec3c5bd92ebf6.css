@@ -117,6 +117,7 @@
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.14));
 }
 .newBadge__8fea4 {
+  display: flex;
   position: absolute;
   top: -8px;
   z-index: 1;
@@ -478,4 +479,4 @@
   border-color: var(--app-frame-border);
 }
 
-/*# sourceMappingURL=997183.35f592da5df58956.css.map*/
+/*# sourceMappingURL=997183.e74ec3c5bd92ebf6.css.map*/

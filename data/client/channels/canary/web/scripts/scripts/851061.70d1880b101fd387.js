@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["96726"],
+  ["851061"],
   {
     314795(e, t, r) {
       var i = r(254628),
@@ -11067,8 +11067,8 @@
             G = parseInt(B.borderBottomWidth, 10),
             X = 0,
             z = 0,
-            q = "offsetWidth" in L ? L.offsetWidth - L.clientWidth - W - H : 0,
-            Y =
+            Y = "offsetWidth" in L ? L.offsetWidth - L.clientWidth - W - H : 0,
+            q =
               "offsetHeight" in L ? L.offsetHeight - L.clientHeight - N - G : 0,
             Q =
               "offsetWidth" in L
@@ -11106,31 +11106,31 @@
               "start" === a
                 ? k - C - N
                 : "end" === a
-                  ? k - F + G + Y
+                  ? k - F + G + q
                   : "nearest" === a
-                    ? s(C, F, I, N, G + Y, k, k + V, V)
-                    : k - (C + I / 2) + Y / 2),
+                    ? s(C, F, I, N, G + q, k, k + V, V)
+                    : k - (C + I / 2) + q / 2),
               (z =
                 "start" === u
                   ? S - j - W
                   : "center" === u
-                    ? S - (j + U / 2) + q / 2
+                    ? S - (j + U / 2) + Y / 2
                     : "end" === u
-                      ? S - M + H + q
-                      : s(j, M, U, W, H + q, S, S + x, x));
+                      ? S - M + H + Y
+                      : s(j, M, U, W, H + Y, S, S + x, x));
             var Z = L.scrollLeft,
               J = L.scrollTop;
             (k +=
               J -
               (X = Math.max(
                 0,
-                Math.min(J + X / K, L.scrollHeight - I / K + Y),
+                Math.min(J + X / K, L.scrollHeight - I / K + q),
               ))),
               (S +=
                 Z -
                 (z = Math.max(
                   0,
-                  Math.min(Z + z / Q, L.scrollWidth - U / Q + q),
+                  Math.min(Z + z / Q, L.scrollWidth - U / Q + Y),
                 )));
           }
           O.push({ el: L, top: X, left: z });
@@ -12235,12 +12235,18 @@
       "use strict";
       e.exports = r.p + "fc1fef817cbb6528.wasm";
     },
-    915639(e, t, r) {
+    807853(e, t, r) {
       "use strict";
       async function i(e) {
         return null;
       }
-      r.d(t, { pb: () => d, A: () => f });
+      r.d(t, {
+        WY: () => u,
+        gT: () => n,
+        Sx: () => s,
+        BW: () => o,
+        LM: () => a,
+      });
       class n extends Error {
         kind;
         constructor(e, t) {
@@ -12249,23 +12255,26 @@
       }
       function o(e, t) {
         if (0 === t.length) return [0, 0];
-        let r = c.encode(t),
+        let r = l.encode(t),
           i = e._malloc(r.length);
         return e.HEAPU8.set(r, i), [i, r.length];
       }
-      async function s(e) {
+      function s(e, t, r) {
+        return 0 === r ? "" : d.decode(e.HEAPU8.subarray(t, t + r));
+      }
+      async function a(e) {
         return e instanceof URL
-          ? u(e)
+          ? c(e)
           : e instanceof Uint8Array
             ? e
             : new Uint8Array(e);
       }
-      async function a(e) {
-        if ("string" == typeof e) return e;
-        let t = await u(e);
-        return l.decode(t);
-      }
       async function u(e) {
+        if ("string" == typeof e) return e;
+        let t = await c(e);
+        return d.decode(t);
+      }
+      async function c(e) {
         let t = await i(e);
         if (t) return t;
         let r = await fetch(e);
@@ -12276,678 +12285,693 @@
           );
         return new Uint8Array(await r.arrayBuffer());
       }
-      let c = new TextEncoder(),
-        l = new TextDecoder(),
-        d = {
-          ada: {
-            languageId: "ada",
-            languageExport: "tree_sitter_ada",
-            wasm: new URL(r(314795), r.b),
-            highlights: new URL(r(185621), r.b),
-            locals: new URL(r(316690), r.b),
-          },
-          agda: {
-            languageId: "agda",
-            languageExport: "tree_sitter_agda",
-            wasm: new URL(r(111909), r.b),
-            highlights: new URL(r(308970), r.b),
-          },
-          asciidoc: {
-            languageId: "asciidoc",
-            languageExport: "tree_sitter_asciidoc",
-            wasm: new URL(r(797101), r.b),
-            highlights: new URL(r(501958), r.b),
-          },
-          asm: {
-            languageId: "asm",
-            languageExport: "tree_sitter_asm",
-            wasm: new URL(r(664943), r.b),
-            highlights: new URL(r(796510), r.b),
-            injections: new URL(r(445323), r.b),
-          },
-          awk: {
-            languageId: "awk",
-            languageExport: "tree_sitter_awk",
-            wasm: new URL(r(280063), r.b),
-            highlights: new URL(r(371672), r.b),
-          },
-          bash: {
-            languageId: "bash",
-            languageExport: "tree_sitter_bash",
-            wasm: new URL(r(538567), r.b),
-            highlights: new URL(r(253475), r.b),
-          },
-          batch: {
-            languageId: "batch",
-            languageExport: "tree_sitter_batch",
-            wasm: new URL(r(419227), r.b),
-            highlights: new URL(r(820825), r.b),
-          },
-          c: {
-            languageId: "c",
-            languageExport: "tree_sitter_c",
-            wasm: new URL(r(546943), r.b),
-            highlights: new URL(r(371524), r.b),
-          },
-          "c-sharp": {
-            languageId: "c-sharp",
-            languageExport: "tree_sitter_c_sharp",
-            wasm: new URL(r(253135), r.b),
-            highlights: new URL(r(501721), r.b),
-          },
-          caddy: {
-            languageId: "caddy",
-            languageExport: "tree_sitter_caddy",
-            wasm: new URL(r(520883), r.b),
-            highlights: new URL(r(718266), r.b),
-          },
-          capnp: {
-            languageId: "capnp",
-            languageExport: "tree_sitter_capnp",
-            wasm: new URL(r(71343), r.b),
-            highlights: new URL(r(253515), r.b),
-            injections: new URL(r(785462), r.b),
-            locals: new URL(r(427200), r.b),
-          },
-          cedar: {
-            languageId: "cedar",
-            languageExport: "tree_sitter_cedar",
-            wasm: new URL(r(59067), r.b),
-            highlights: new URL(r(582242), r.b),
-          },
-          cedarschema: {
-            languageId: "cedarschema",
-            languageExport: "tree_sitter_cedarschema",
-            wasm: new URL(r(370115), r.b),
-            highlights: new URL(r(843389), r.b),
-          },
-          clojure: {
-            languageId: "clojure",
-            languageExport: "tree_sitter_clojure",
-            wasm: new URL(r(582371), r.b),
-            highlights: new URL(r(632781), r.b),
-          },
-          cmake: {
-            languageId: "cmake",
-            languageExport: "tree_sitter_cmake",
-            wasm: new URL(r(933959), r.b),
-            highlights: new URL(r(135538), r.b),
-            injections: new URL(r(547431), r.b),
-          },
-          commonlisp: {
-            languageId: "commonlisp",
-            languageExport: "tree_sitter_commonlisp",
-            wasm: new URL(r(776097), r.b),
-            highlights: new URL(r(713796), r.b),
-          },
-          cpp: {
-            languageId: "cpp",
-            languageExport: "tree_sitter_cpp",
-            wasm: new URL(r(114935), r.b),
-            highlights: new URL(r(983420), r.b),
-            injections: new URL(r(489565), r.b),
-          },
-          css: {
-            languageId: "css",
-            languageExport: "tree_sitter_css",
-            wasm: new URL(r(5559), r.b),
-            highlights: new URL(r(681166), r.b),
-          },
-          d: {
-            languageId: "d",
-            languageExport: "tree_sitter_d",
-            wasm: new URL(r(806835), r.b),
-            highlights: new URL(r(687429), r.b),
-          },
-          dart: {
-            languageId: "dart",
-            languageExport: "tree_sitter_dart",
-            wasm: new URL(r(376297), r.b),
-            highlights: new URL(r(108572), r.b),
-          },
-          devicetree: {
-            languageId: "devicetree",
-            languageExport: "tree_sitter_devicetree",
-            wasm: new URL(r(72539), r.b),
-            highlights: new URL(r(502907), r.b),
-          },
-          diff: {
-            languageId: "diff",
-            languageExport: "tree_sitter_diff",
-            wasm: new URL(r(165361), r.b),
-            highlights: new URL(r(655582), r.b),
-          },
-          dockerfile: {
-            languageId: "dockerfile",
-            languageExport: "tree_sitter_dockerfile",
-            wasm: new URL(r(992963), r.b),
-            highlights: new URL(r(604623), r.b),
-          },
-          dot: {
-            languageId: "dot",
-            languageExport: "tree_sitter_dot",
-            wasm: new URL(r(78767), r.b),
-            highlights: new URL(r(992094), r.b),
-            injections: new URL(r(404043), r.b),
-          },
-          elisp: {
-            languageId: "elisp",
-            languageExport: "tree_sitter_elisp",
-            wasm: new URL(r(560391), r.b),
-            highlights: new URL(r(180458), r.b),
-          },
-          elixir: {
-            languageId: "elixir",
-            languageExport: "tree_sitter_elixir",
-            wasm: new URL(r(988013), r.b),
-            highlights: new URL(r(817218), r.b),
-            injections: new URL(r(842039), r.b),
-          },
-          elm: {
-            languageId: "elm",
-            languageExport: "tree_sitter_elm",
-            wasm: new URL(r(61083), r.b),
-            highlights: new URL(r(565989), r.b),
-            injections: new URL(r(777084), r.b),
-            locals: new URL(r(224578), r.b),
-          },
-          erlang: {
-            languageId: "erlang",
-            languageExport: "tree_sitter_erlang",
-            wasm: new URL(r(239737), r.b),
-            highlights: new URL(r(72382), r.b),
-          },
-          fish: {
-            languageId: "fish",
-            languageExport: "tree_sitter_fish",
-            wasm: new URL(r(49775), r.b),
-            highlights: new URL(r(807991), r.b),
-          },
-          fsharp: {
-            languageId: "fsharp",
-            languageExport: "tree_sitter_fsharp",
-            wasm: new URL(r(749307), r.b),
-            highlights: new URL(r(581583), r.b),
-            injections: new URL(r(471586), r.b),
-            locals: new URL(r(645372), r.b),
-          },
-          gleam: {
-            languageId: "gleam",
-            languageExport: "tree_sitter_gleam",
-            wasm: new URL(r(896335), r.b),
-            highlights: new URL(r(679453), r.b),
-            injections: new URL(r(531860), r.b),
-            locals: new URL(r(345322), r.b),
-          },
-          glsl: {
-            languageId: "glsl",
-            languageExport: "tree_sitter_glsl",
-            wasm: new URL(r(127887), r.b),
-            highlights: new URL(r(463989), r.b),
-          },
-          go: {
-            languageId: "go",
-            languageExport: "tree_sitter_go",
-            wasm: new URL(r(913447), r.b),
-            highlights: new URL(r(757283), r.b),
-          },
-          graphql: {
-            languageId: "graphql",
-            languageExport: "tree_sitter_graphql",
-            wasm: new URL(r(392263), r.b),
-            highlights: new URL(r(477092), r.b),
-          },
-          groovy: {
-            languageId: "groovy",
-            languageExport: "tree_sitter_groovy",
-            wasm: new URL(r(379339), r.b),
-            highlights: new URL(r(971567), r.b),
-            injections: new URL(r(718850), r.b),
-          },
-          haskell: {
-            languageId: "haskell",
-            languageExport: "tree_sitter_haskell",
-            wasm: new URL(r(131083), r.b),
-            highlights: new URL(r(206965), r.b),
-            injections: new URL(r(16076), r.b),
-            locals: new URL(r(208626), r.b),
-          },
-          hcl: {
-            languageId: "hcl",
-            languageExport: "tree_sitter_hcl",
-            wasm: new URL(r(882247), r.b),
-            highlights: new URL(r(972942), r.b),
-          },
-          hlsl: {
-            languageId: "hlsl",
-            languageExport: "tree_sitter_hlsl",
-            wasm: new URL(r(939193), r.b),
-            highlights: new URL(r(449794), r.b),
-          },
-          html: {
-            languageId: "html",
-            languageExport: "tree_sitter_html",
-            wasm: new URL(r(810601), r.b),
-            highlights: new URL(r(911112), r.b),
-            injections: new URL(r(495969), r.b),
-          },
-          idris: {
-            languageId: "idris",
-            languageExport: "tree_sitter_idris",
-            wasm: new URL(r(459355), r.b),
-            highlights: new URL(r(583152), r.b),
-          },
-          ini: {
-            languageId: "ini",
-            languageExport: "tree_sitter_ini",
-            wasm: new URL(r(579311), r.b),
-            highlights: new URL(r(363471), r.b),
-          },
-          java: {
-            languageId: "java",
-            languageExport: "tree_sitter_java",
-            wasm: new URL(r(798703), r.b),
-            highlights: new URL(r(883585), r.b),
-          },
-          javascript: {
-            languageId: "javascript",
-            languageExport: "tree_sitter_javascript",
-            wasm: new URL(r(570445), r.b),
-            highlights: new URL(r(646866), r.b),
-            injections: new URL(r(70855), r.b),
-            locals: new URL(r(66753), r.b),
-          },
-          jinja2: {
-            languageId: "jinja2",
-            languageExport: "tree_sitter_jinja2",
-            wasm: new URL(r(289375), r.b),
-            highlights: new URL(r(137323), r.b),
-          },
-          jq: {
-            languageId: "jq",
-            languageExport: "tree_sitter_jq",
-            wasm: new URL(r(896193), r.b),
-            highlights: new URL(r(20080), r.b),
-          },
-          json: {
-            languageId: "json",
-            languageExport: "tree_sitter_json",
-            wasm: new URL(r(73655), r.b),
-            highlights: new URL(r(187311), r.b),
-          },
-          julia: {
-            languageId: "julia",
-            languageExport: "tree_sitter_julia",
-            wasm: new URL(r(783199), r.b),
-            highlights: new URL(r(324828), r.b),
-          },
-          kotlin: {
-            languageId: "kotlin",
-            languageExport: "tree_sitter_kotlin",
-            wasm: new URL(r(208929), r.b),
-            highlights: new URL(r(823504), r.b),
-          },
-          lean: {
-            languageId: "lean",
-            languageExport: "tree_sitter_lean",
-            wasm: new URL(r(624783), r.b),
-            highlights: new URL(r(281161), r.b),
-          },
-          lua: {
-            languageId: "lua",
-            languageExport: "tree_sitter_lua",
-            wasm: new URL(r(545711), r.b),
-            highlights: new URL(r(871659), r.b),
-            injections: new URL(r(273558), r.b),
-            locals: new URL(r(864928), r.b),
-          },
-          markdown: {
-            languageId: "markdown",
-            languageExport: "tree_sitter_markdown",
-            wasm: new URL(r(697165), r.b),
-            highlights: new URL(r(9916), r.b),
-            injections: new URL(r(516061), r.b),
-          },
-          markdown_inline: {
-            languageId: "markdown_inline",
-            languageExport: "tree_sitter_markdown_inline",
-            wasm: new URL(r(344467), r.b),
-            highlights: new URL(r(581934), r.b),
-            injections: new URL(r(858376), r.b),
-          },
-          matlab: {
-            languageId: "matlab",
-            languageExport: "tree_sitter_matlab",
-            wasm: new URL(r(393725), r.b),
-            highlights: new URL(r(955268), r.b),
-          },
-          meson: {
-            languageId: "meson",
-            languageExport: "tree_sitter_meson",
-            wasm: new URL(r(63343), r.b),
-            highlights: new URL(r(448407), r.b),
-          },
-          ninja: {
-            languageId: "ninja",
-            languageExport: "tree_sitter_ninja",
-            wasm: new URL(r(17743), r.b),
-            highlights: new URL(r(980429), r.b),
-          },
-          nix: {
-            languageId: "nix",
-            languageExport: "tree_sitter_nix",
-            wasm: new URL(r(781035), r.b),
-            highlights: new URL(r(714370), r.b),
-            injections: new URL(r(739191), r.b),
-            locals: new URL(r(227473), r.b),
-          },
-          objc: {
-            languageId: "objc",
-            languageExport: "tree_sitter_objc",
-            wasm: new URL(r(852423), r.b),
-            highlights: new URL(r(974591), r.b),
-            injections: new URL(r(860306), r.b),
-            locals: new URL(r(373196), r.b),
-          },
-          ocaml: {
-            languageId: "ocaml",
-            languageExport: "tree_sitter_ocaml",
-            wasm: new URL(r(278331), r.b),
-            highlights: new URL(r(602297), r.b),
-            locals: new URL(r(347294), r.b),
-          },
-          perl: {
-            languageId: "perl",
-            languageExport: "tree_sitter_perl",
-            wasm: new URL(r(395233), r.b),
-            highlights: new URL(r(358060), r.b),
-            injections: new URL(r(486221), r.b),
-          },
-          php: {
-            languageId: "php",
-            languageExport: "tree_sitter_php",
-            wasm: new URL(r(605171), r.b),
-            highlights: new URL(r(910825), r.b),
-            injections: new URL(r(323e3), r.b),
-          },
-          postscript: {
-            languageId: "postscript",
-            languageExport: "tree_sitter_postscript",
-            wasm: new URL(r(835721), r.b),
-            highlights: new URL(r(980524), r.b),
-          },
-          powershell: {
-            languageId: "powershell",
-            languageExport: "tree_sitter_powershell",
-            wasm: new URL(r(602993), r.b),
-            highlights: new URL(r(449048), r.b),
-          },
-          prolog: {
-            languageId: "prolog",
-            languageExport: "tree_sitter_prolog",
-            wasm: new URL(r(299861), r.b),
-            highlights: new URL(r(290858), r.b),
-          },
-          python: {
-            languageId: "python",
-            languageExport: "tree_sitter_python",
-            wasm: new URL(r(683151), r.b),
-            highlights: new URL(r(425335), r.b),
-          },
-          query: {
-            languageId: "query",
-            languageExport: "tree_sitter_query",
-            wasm: new URL(r(282111), r.b),
-            highlights: new URL(r(214685), r.b),
-            injections: new URL(r(840660), r.b),
-          },
-          r: {
-            languageId: "r",
-            languageExport: "tree_sitter_r",
-            wasm: new URL(r(91567), r.b),
-            highlights: new URL(r(652715), r.b),
-            locals: new URL(r(396576), r.b),
-          },
-          rego: {
-            languageId: "rego",
-            languageExport: "tree_sitter_rego",
-            wasm: new URL(r(613005), r.b),
-            highlights: new URL(r(968038), r.b),
-            locals: new URL(r(914189), r.b),
-          },
-          rescript: {
-            languageId: "rescript",
-            languageExport: "tree_sitter_rescript",
-            wasm: new URL(r(414271), r.b),
-            highlights: new URL(r(855995), r.b),
-            injections: new URL(r(479846), r.b),
-            locals: new URL(r(539152), r.b),
-          },
-          ron: {
-            languageId: "ron",
-            languageExport: "tree_sitter_ron",
-            wasm: new URL(r(111431), r.b),
-            highlights: new URL(r(342870), r.b),
-          },
-          ruby: {
-            languageId: "ruby",
-            languageExport: "tree_sitter_ruby",
-            wasm: new URL(r(866079), r.b),
-            highlights: new URL(r(221081), r.b),
-          },
-          rust: {
-            languageId: "rust",
-            languageExport: "tree_sitter_rust_orchard",
-            wasm: new URL(r(217935), r.b),
-            highlights: new URL(r(544211), r.b),
-            injections: new URL(r(153278), r.b),
-          },
-          scala: {
-            languageId: "scala",
-            languageExport: "tree_sitter_scala",
-            wasm: new URL(r(296559), r.b),
-            highlights: new URL(r(636155), r.b),
-            locals: new URL(r(798928), r.b),
-          },
-          scheme: {
-            languageId: "scheme",
-            languageExport: "tree_sitter_scheme",
-            wasm: new URL(r(377961), r.b),
-            highlights: new URL(r(499150), r.b),
-          },
-          scss: {
-            languageId: "scss",
-            languageExport: "tree_sitter_scss",
-            wasm: new URL(r(487351), r.b),
-            highlights: new URL(r(581365), r.b),
-          },
-          solidity: {
-            languageId: "solidity",
-            languageExport: "tree_sitter_solidity",
-            wasm: new URL(r(319797), r.b),
-            highlights: new URL(r(93492), r.b),
-            locals: new URL(r(307379), r.b),
-          },
-          sparql: {
-            languageId: "sparql",
-            languageExport: "tree_sitter_sparql",
-            wasm: new URL(r(389909), r.b),
-            highlights: new URL(r(512564), r.b),
-          },
-          sql: {
-            languageId: "sql",
-            languageExport: "tree_sitter_sql",
-            wasm: new URL(r(586463), r.b),
-            highlights: new URL(r(631189), r.b),
-          },
-          "ssh-config": {
-            languageId: "ssh-config",
-            languageExport: "tree_sitter_ssh_config",
-            wasm: new URL(r(937233), r.b),
-            highlights: new URL(r(400774), r.b),
-            injections: new URL(r(557011), r.b),
-          },
-          starlark: {
-            languageId: "starlark",
-            languageExport: "tree_sitter_starlark",
-            wasm: new URL(r(690423), r.b),
-            highlights: new URL(r(757197), r.b),
-            injections: new URL(r(362116), r.b),
-            locals: new URL(r(607930), r.b),
-          },
-          styx: {
-            languageId: "styx",
-            languageExport: "tree_sitter_styx",
-            wasm: new URL(r(872179), r.b),
-            highlights: new URL(r(789227), r.b),
-            injections: new URL(r(447638), r.b),
-          },
-          svelte: {
-            languageId: "svelte",
-            languageExport: "tree_sitter_svelte",
-            wasm: new URL(r(731545), r.b),
-            highlights: new URL(r(582814), r.b),
-            injections: new URL(r(994763), r.b),
-            locals: new URL(r(756661), r.b),
-          },
-          swift: {
-            languageId: "swift",
-            languageExport: "tree_sitter_swift",
-            wasm: new URL(r(304707), r.b),
-            highlights: new URL(r(259850), r.b),
-            injections: new URL(r(134399), r.b),
-            locals: new URL(r(917129), r.b),
-          },
-          textproto: {
-            languageId: "textproto",
-            languageExport: "tree_sitter_textproto",
-            wasm: new URL(r(155823), r.b),
-            highlights: new URL(r(264834), r.b),
-          },
-          thrift: {
-            languageId: "thrift",
-            languageExport: "tree_sitter_thrift",
-            wasm: new URL(r(744357), r.b),
-            highlights: new URL(r(584122), r.b),
-            injections: new URL(r(259439), r.b),
-            locals: new URL(r(720793), r.b),
-          },
-          tlaplus: {
-            languageId: "tlaplus",
-            languageExport: "tree_sitter_tlaplus",
-            wasm: new URL(r(727267), r.b),
-            highlights: new URL(r(58894), r.b),
-            locals: new URL(r(661637), r.b),
-          },
-          toml: {
-            languageId: "toml",
-            languageExport: "tree_sitter_toml",
-            wasm: new URL(r(508703), r.b),
-            highlights: new URL(r(191649), r.b),
-          },
-          tsx: {
-            languageId: "tsx",
-            languageExport: "tree_sitter_tsx",
-            wasm: new URL(r(355535), r.b),
-            highlights: new URL(r(613110), r.b),
-            locals: new URL(r(757629), r.b),
-          },
-          typescript: {
-            languageId: "typescript",
-            languageExport: "tree_sitter_typescript",
-            wasm: new URL(r(202085), r.b),
-            highlights: new URL(r(648506), r.b),
-            locals: new URL(r(194201), r.b),
-          },
-          typst: {
-            languageId: "typst",
-            languageExport: "tree_sitter_typst",
-            wasm: new URL(r(107087), r.b),
-            highlights: new URL(r(13079), r.b),
-            injections: new URL(r(960138), r.b),
-          },
-          verilog: {
-            languageId: "verilog",
-            languageExport: "tree_sitter_verilog",
-            wasm: new URL(r(615343), r.b),
-            highlights: new URL(r(486859), r.b),
-          },
-          vhdl: {
-            languageId: "vhdl",
-            languageExport: "tree_sitter_vhdl",
-            wasm: new URL(r(347275), r.b),
-            highlights: new URL(r(858987), r.b),
-          },
-          vim: {
-            languageId: "vim",
-            languageExport: "tree_sitter_vim",
-            wasm: new URL(r(540423), r.b),
-            highlights: new URL(r(330909), r.b),
-            injections: new URL(r(440532), r.b),
-          },
-          vue: {
-            languageId: "vue",
-            languageExport: "tree_sitter_vue",
-            wasm: new URL(r(799767), r.b),
-            highlights: new URL(r(4081), r.b),
-            injections: new URL(r(751968), r.b),
-          },
-          wit: {
-            languageId: "wit",
-            languageExport: "tree_sitter_wit",
-            wasm: new URL(r(118567), r.b),
-            highlights: new URL(r(856145), r.b),
-            injections: new URL(r(413056), r.b),
-          },
-          x86asm: {
-            languageId: "x86asm",
-            languageExport: "tree_sitter_x86asm",
-            wasm: new URL(r(19537), r.b),
-            highlights: new URL(r(489700), r.b),
-          },
-          xml: {
-            languageId: "xml",
-            languageExport: "tree_sitter_xml",
-            wasm: new URL(r(310435), r.b),
-            highlights: new URL(r(730180), r.b),
-          },
-          yaml: {
-            languageId: "yaml",
-            languageExport: "tree_sitter_yaml",
-            wasm: new URL(r(389805), r.b),
-            highlights: new URL(r(395958), r.b),
-          },
-          yuri: {
-            languageId: "yuri",
-            languageExport: "tree_sitter_yuri",
-            wasm: new URL(r(433782), r.b),
-            highlights: new URL(r(686146), r.b),
-          },
-          zig: {
-            languageId: "zig",
-            languageExport: "tree_sitter_zig",
-            wasm: new URL(r(990103), r.b),
-            highlights: new URL(r(692027), r.b),
-            injections: new URL(r(95334), r.b),
-          },
-          zsh: {
-            languageId: "zsh",
-            languageExport: "tree_sitter_zsh",
-            wasm: new URL(r(7087), r.b),
-            highlights: new URL(r(371952), r.b),
-          },
-        };
-      async function f() {
-        let e = await g(),
-          [t, i] = await Promise.all([
-            s(new URL(r(800070), r.b)),
-            s(new URL(r(468638), r.b)),
+      let l = new TextEncoder(),
+        d = new TextDecoder();
+    },
+    728806(e, t, r) {
+      "use strict";
+      r.d(t, { p: () => i });
+      let i = {
+        ada: {
+          languageId: "ada",
+          languageExport: "tree_sitter_ada",
+          wasm: new URL(r(314795), r.b),
+          highlights: new URL(r(185621), r.b),
+          locals: new URL(r(316690), r.b),
+        },
+        agda: {
+          languageId: "agda",
+          languageExport: "tree_sitter_agda",
+          wasm: new URL(r(111909), r.b),
+          highlights: new URL(r(308970), r.b),
+        },
+        asciidoc: {
+          languageId: "asciidoc",
+          languageExport: "tree_sitter_asciidoc",
+          wasm: new URL(r(797101), r.b),
+          highlights: new URL(r(501958), r.b),
+        },
+        asm: {
+          languageId: "asm",
+          languageExport: "tree_sitter_asm",
+          wasm: new URL(r(664943), r.b),
+          highlights: new URL(r(796510), r.b),
+          injections: new URL(r(445323), r.b),
+        },
+        awk: {
+          languageId: "awk",
+          languageExport: "tree_sitter_awk",
+          wasm: new URL(r(280063), r.b),
+          highlights: new URL(r(371672), r.b),
+        },
+        bash: {
+          languageId: "bash",
+          languageExport: "tree_sitter_bash",
+          wasm: new URL(r(538567), r.b),
+          highlights: new URL(r(253475), r.b),
+        },
+        batch: {
+          languageId: "batch",
+          languageExport: "tree_sitter_batch",
+          wasm: new URL(r(419227), r.b),
+          highlights: new URL(r(820825), r.b),
+        },
+        c: {
+          languageId: "c",
+          languageExport: "tree_sitter_c",
+          wasm: new URL(r(546943), r.b),
+          highlights: new URL(r(371524), r.b),
+        },
+        "c-sharp": {
+          languageId: "c-sharp",
+          languageExport: "tree_sitter_c_sharp",
+          wasm: new URL(r(253135), r.b),
+          highlights: new URL(r(501721), r.b),
+        },
+        caddy: {
+          languageId: "caddy",
+          languageExport: "tree_sitter_caddy",
+          wasm: new URL(r(520883), r.b),
+          highlights: new URL(r(718266), r.b),
+        },
+        capnp: {
+          languageId: "capnp",
+          languageExport: "tree_sitter_capnp",
+          wasm: new URL(r(71343), r.b),
+          highlights: new URL(r(253515), r.b),
+          injections: new URL(r(785462), r.b),
+          locals: new URL(r(427200), r.b),
+        },
+        cedar: {
+          languageId: "cedar",
+          languageExport: "tree_sitter_cedar",
+          wasm: new URL(r(59067), r.b),
+          highlights: new URL(r(582242), r.b),
+        },
+        cedarschema: {
+          languageId: "cedarschema",
+          languageExport: "tree_sitter_cedarschema",
+          wasm: new URL(r(370115), r.b),
+          highlights: new URL(r(843389), r.b),
+        },
+        clojure: {
+          languageId: "clojure",
+          languageExport: "tree_sitter_clojure",
+          wasm: new URL(r(582371), r.b),
+          highlights: new URL(r(632781), r.b),
+        },
+        cmake: {
+          languageId: "cmake",
+          languageExport: "tree_sitter_cmake",
+          wasm: new URL(r(933959), r.b),
+          highlights: new URL(r(135538), r.b),
+          injections: new URL(r(547431), r.b),
+        },
+        commonlisp: {
+          languageId: "commonlisp",
+          languageExport: "tree_sitter_commonlisp",
+          wasm: new URL(r(776097), r.b),
+          highlights: new URL(r(713796), r.b),
+        },
+        cpp: {
+          languageId: "cpp",
+          languageExport: "tree_sitter_cpp",
+          wasm: new URL(r(114935), r.b),
+          highlights: new URL(r(983420), r.b),
+          injections: new URL(r(489565), r.b),
+        },
+        css: {
+          languageId: "css",
+          languageExport: "tree_sitter_css",
+          wasm: new URL(r(5559), r.b),
+          highlights: new URL(r(681166), r.b),
+        },
+        d: {
+          languageId: "d",
+          languageExport: "tree_sitter_d",
+          wasm: new URL(r(806835), r.b),
+          highlights: new URL(r(687429), r.b),
+        },
+        dart: {
+          languageId: "dart",
+          languageExport: "tree_sitter_dart",
+          wasm: new URL(r(376297), r.b),
+          highlights: new URL(r(108572), r.b),
+        },
+        devicetree: {
+          languageId: "devicetree",
+          languageExport: "tree_sitter_devicetree",
+          wasm: new URL(r(72539), r.b),
+          highlights: new URL(r(502907), r.b),
+        },
+        diff: {
+          languageId: "diff",
+          languageExport: "tree_sitter_diff",
+          wasm: new URL(r(165361), r.b),
+          highlights: new URL(r(655582), r.b),
+        },
+        dockerfile: {
+          languageId: "dockerfile",
+          languageExport: "tree_sitter_dockerfile",
+          wasm: new URL(r(992963), r.b),
+          highlights: new URL(r(604623), r.b),
+        },
+        dot: {
+          languageId: "dot",
+          languageExport: "tree_sitter_dot",
+          wasm: new URL(r(78767), r.b),
+          highlights: new URL(r(992094), r.b),
+          injections: new URL(r(404043), r.b),
+        },
+        elisp: {
+          languageId: "elisp",
+          languageExport: "tree_sitter_elisp",
+          wasm: new URL(r(560391), r.b),
+          highlights: new URL(r(180458), r.b),
+        },
+        elixir: {
+          languageId: "elixir",
+          languageExport: "tree_sitter_elixir",
+          wasm: new URL(r(988013), r.b),
+          highlights: new URL(r(817218), r.b),
+          injections: new URL(r(842039), r.b),
+        },
+        elm: {
+          languageId: "elm",
+          languageExport: "tree_sitter_elm",
+          wasm: new URL(r(61083), r.b),
+          highlights: new URL(r(565989), r.b),
+          injections: new URL(r(777084), r.b),
+          locals: new URL(r(224578), r.b),
+        },
+        erlang: {
+          languageId: "erlang",
+          languageExport: "tree_sitter_erlang",
+          wasm: new URL(r(239737), r.b),
+          highlights: new URL(r(72382), r.b),
+        },
+        fish: {
+          languageId: "fish",
+          languageExport: "tree_sitter_fish",
+          wasm: new URL(r(49775), r.b),
+          highlights: new URL(r(807991), r.b),
+        },
+        fsharp: {
+          languageId: "fsharp",
+          languageExport: "tree_sitter_fsharp",
+          wasm: new URL(r(749307), r.b),
+          highlights: new URL(r(581583), r.b),
+          injections: new URL(r(471586), r.b),
+          locals: new URL(r(645372), r.b),
+        },
+        gleam: {
+          languageId: "gleam",
+          languageExport: "tree_sitter_gleam",
+          wasm: new URL(r(896335), r.b),
+          highlights: new URL(r(679453), r.b),
+          injections: new URL(r(531860), r.b),
+          locals: new URL(r(345322), r.b),
+        },
+        glsl: {
+          languageId: "glsl",
+          languageExport: "tree_sitter_glsl",
+          wasm: new URL(r(127887), r.b),
+          highlights: new URL(r(463989), r.b),
+        },
+        go: {
+          languageId: "go",
+          languageExport: "tree_sitter_go",
+          wasm: new URL(r(913447), r.b),
+          highlights: new URL(r(757283), r.b),
+        },
+        graphql: {
+          languageId: "graphql",
+          languageExport: "tree_sitter_graphql",
+          wasm: new URL(r(392263), r.b),
+          highlights: new URL(r(477092), r.b),
+        },
+        groovy: {
+          languageId: "groovy",
+          languageExport: "tree_sitter_groovy",
+          wasm: new URL(r(379339), r.b),
+          highlights: new URL(r(971567), r.b),
+          injections: new URL(r(718850), r.b),
+        },
+        haskell: {
+          languageId: "haskell",
+          languageExport: "tree_sitter_haskell",
+          wasm: new URL(r(131083), r.b),
+          highlights: new URL(r(206965), r.b),
+          injections: new URL(r(16076), r.b),
+          locals: new URL(r(208626), r.b),
+        },
+        hcl: {
+          languageId: "hcl",
+          languageExport: "tree_sitter_hcl",
+          wasm: new URL(r(882247), r.b),
+          highlights: new URL(r(972942), r.b),
+        },
+        hlsl: {
+          languageId: "hlsl",
+          languageExport: "tree_sitter_hlsl",
+          wasm: new URL(r(939193), r.b),
+          highlights: new URL(r(449794), r.b),
+        },
+        html: {
+          languageId: "html",
+          languageExport: "tree_sitter_html",
+          wasm: new URL(r(810601), r.b),
+          highlights: new URL(r(911112), r.b),
+          injections: new URL(r(495969), r.b),
+        },
+        idris: {
+          languageId: "idris",
+          languageExport: "tree_sitter_idris",
+          wasm: new URL(r(459355), r.b),
+          highlights: new URL(r(583152), r.b),
+        },
+        ini: {
+          languageId: "ini",
+          languageExport: "tree_sitter_ini",
+          wasm: new URL(r(579311), r.b),
+          highlights: new URL(r(363471), r.b),
+        },
+        java: {
+          languageId: "java",
+          languageExport: "tree_sitter_java",
+          wasm: new URL(r(798703), r.b),
+          highlights: new URL(r(883585), r.b),
+        },
+        javascript: {
+          languageId: "javascript",
+          languageExport: "tree_sitter_javascript",
+          wasm: new URL(r(570445), r.b),
+          highlights: new URL(r(646866), r.b),
+          injections: new URL(r(70855), r.b),
+          locals: new URL(r(66753), r.b),
+        },
+        jinja2: {
+          languageId: "jinja2",
+          languageExport: "tree_sitter_jinja2",
+          wasm: new URL(r(289375), r.b),
+          highlights: new URL(r(137323), r.b),
+        },
+        jq: {
+          languageId: "jq",
+          languageExport: "tree_sitter_jq",
+          wasm: new URL(r(896193), r.b),
+          highlights: new URL(r(20080), r.b),
+        },
+        json: {
+          languageId: "json",
+          languageExport: "tree_sitter_json",
+          wasm: new URL(r(73655), r.b),
+          highlights: new URL(r(187311), r.b),
+        },
+        julia: {
+          languageId: "julia",
+          languageExport: "tree_sitter_julia",
+          wasm: new URL(r(783199), r.b),
+          highlights: new URL(r(324828), r.b),
+        },
+        kotlin: {
+          languageId: "kotlin",
+          languageExport: "tree_sitter_kotlin",
+          wasm: new URL(r(208929), r.b),
+          highlights: new URL(r(823504), r.b),
+        },
+        lean: {
+          languageId: "lean",
+          languageExport: "tree_sitter_lean",
+          wasm: new URL(r(624783), r.b),
+          highlights: new URL(r(281161), r.b),
+        },
+        lua: {
+          languageId: "lua",
+          languageExport: "tree_sitter_lua",
+          wasm: new URL(r(545711), r.b),
+          highlights: new URL(r(871659), r.b),
+          injections: new URL(r(273558), r.b),
+          locals: new URL(r(864928), r.b),
+        },
+        markdown: {
+          languageId: "markdown",
+          languageExport: "tree_sitter_markdown",
+          wasm: new URL(r(697165), r.b),
+          highlights: new URL(r(9916), r.b),
+          injections: new URL(r(516061), r.b),
+        },
+        markdown_inline: {
+          languageId: "markdown_inline",
+          languageExport: "tree_sitter_markdown_inline",
+          wasm: new URL(r(344467), r.b),
+          highlights: new URL(r(581934), r.b),
+          injections: new URL(r(858376), r.b),
+        },
+        matlab: {
+          languageId: "matlab",
+          languageExport: "tree_sitter_matlab",
+          wasm: new URL(r(393725), r.b),
+          highlights: new URL(r(955268), r.b),
+        },
+        meson: {
+          languageId: "meson",
+          languageExport: "tree_sitter_meson",
+          wasm: new URL(r(63343), r.b),
+          highlights: new URL(r(448407), r.b),
+        },
+        ninja: {
+          languageId: "ninja",
+          languageExport: "tree_sitter_ninja",
+          wasm: new URL(r(17743), r.b),
+          highlights: new URL(r(980429), r.b),
+        },
+        nix: {
+          languageId: "nix",
+          languageExport: "tree_sitter_nix",
+          wasm: new URL(r(781035), r.b),
+          highlights: new URL(r(714370), r.b),
+          injections: new URL(r(739191), r.b),
+          locals: new URL(r(227473), r.b),
+        },
+        objc: {
+          languageId: "objc",
+          languageExport: "tree_sitter_objc",
+          wasm: new URL(r(852423), r.b),
+          highlights: new URL(r(974591), r.b),
+          injections: new URL(r(860306), r.b),
+          locals: new URL(r(373196), r.b),
+        },
+        ocaml: {
+          languageId: "ocaml",
+          languageExport: "tree_sitter_ocaml",
+          wasm: new URL(r(278331), r.b),
+          highlights: new URL(r(602297), r.b),
+          locals: new URL(r(347294), r.b),
+        },
+        perl: {
+          languageId: "perl",
+          languageExport: "tree_sitter_perl",
+          wasm: new URL(r(395233), r.b),
+          highlights: new URL(r(358060), r.b),
+          injections: new URL(r(486221), r.b),
+        },
+        php: {
+          languageId: "php",
+          languageExport: "tree_sitter_php",
+          wasm: new URL(r(605171), r.b),
+          highlights: new URL(r(910825), r.b),
+          injections: new URL(r(323e3), r.b),
+        },
+        postscript: {
+          languageId: "postscript",
+          languageExport: "tree_sitter_postscript",
+          wasm: new URL(r(835721), r.b),
+          highlights: new URL(r(980524), r.b),
+        },
+        powershell: {
+          languageId: "powershell",
+          languageExport: "tree_sitter_powershell",
+          wasm: new URL(r(602993), r.b),
+          highlights: new URL(r(449048), r.b),
+        },
+        prolog: {
+          languageId: "prolog",
+          languageExport: "tree_sitter_prolog",
+          wasm: new URL(r(299861), r.b),
+          highlights: new URL(r(290858), r.b),
+        },
+        python: {
+          languageId: "python",
+          languageExport: "tree_sitter_python",
+          wasm: new URL(r(683151), r.b),
+          highlights: new URL(r(425335), r.b),
+        },
+        query: {
+          languageId: "query",
+          languageExport: "tree_sitter_query",
+          wasm: new URL(r(282111), r.b),
+          highlights: new URL(r(214685), r.b),
+          injections: new URL(r(840660), r.b),
+        },
+        r: {
+          languageId: "r",
+          languageExport: "tree_sitter_r",
+          wasm: new URL(r(91567), r.b),
+          highlights: new URL(r(652715), r.b),
+          locals: new URL(r(396576), r.b),
+        },
+        rego: {
+          languageId: "rego",
+          languageExport: "tree_sitter_rego",
+          wasm: new URL(r(613005), r.b),
+          highlights: new URL(r(968038), r.b),
+          locals: new URL(r(914189), r.b),
+        },
+        rescript: {
+          languageId: "rescript",
+          languageExport: "tree_sitter_rescript",
+          wasm: new URL(r(414271), r.b),
+          highlights: new URL(r(855995), r.b),
+          injections: new URL(r(479846), r.b),
+          locals: new URL(r(539152), r.b),
+        },
+        ron: {
+          languageId: "ron",
+          languageExport: "tree_sitter_ron",
+          wasm: new URL(r(111431), r.b),
+          highlights: new URL(r(342870), r.b),
+        },
+        ruby: {
+          languageId: "ruby",
+          languageExport: "tree_sitter_ruby",
+          wasm: new URL(r(866079), r.b),
+          highlights: new URL(r(221081), r.b),
+        },
+        rust: {
+          languageId: "rust",
+          languageExport: "tree_sitter_rust_orchard",
+          wasm: new URL(r(217935), r.b),
+          highlights: new URL(r(544211), r.b),
+          injections: new URL(r(153278), r.b),
+        },
+        scala: {
+          languageId: "scala",
+          languageExport: "tree_sitter_scala",
+          wasm: new URL(r(296559), r.b),
+          highlights: new URL(r(636155), r.b),
+          locals: new URL(r(798928), r.b),
+        },
+        scheme: {
+          languageId: "scheme",
+          languageExport: "tree_sitter_scheme",
+          wasm: new URL(r(377961), r.b),
+          highlights: new URL(r(499150), r.b),
+        },
+        scss: {
+          languageId: "scss",
+          languageExport: "tree_sitter_scss",
+          wasm: new URL(r(487351), r.b),
+          highlights: new URL(r(581365), r.b),
+        },
+        solidity: {
+          languageId: "solidity",
+          languageExport: "tree_sitter_solidity",
+          wasm: new URL(r(319797), r.b),
+          highlights: new URL(r(93492), r.b),
+          locals: new URL(r(307379), r.b),
+        },
+        sparql: {
+          languageId: "sparql",
+          languageExport: "tree_sitter_sparql",
+          wasm: new URL(r(389909), r.b),
+          highlights: new URL(r(512564), r.b),
+        },
+        sql: {
+          languageId: "sql",
+          languageExport: "tree_sitter_sql",
+          wasm: new URL(r(586463), r.b),
+          highlights: new URL(r(631189), r.b),
+        },
+        "ssh-config": {
+          languageId: "ssh-config",
+          languageExport: "tree_sitter_ssh_config",
+          wasm: new URL(r(937233), r.b),
+          highlights: new URL(r(400774), r.b),
+          injections: new URL(r(557011), r.b),
+        },
+        starlark: {
+          languageId: "starlark",
+          languageExport: "tree_sitter_starlark",
+          wasm: new URL(r(690423), r.b),
+          highlights: new URL(r(757197), r.b),
+          injections: new URL(r(362116), r.b),
+          locals: new URL(r(607930), r.b),
+        },
+        styx: {
+          languageId: "styx",
+          languageExport: "tree_sitter_styx",
+          wasm: new URL(r(872179), r.b),
+          highlights: new URL(r(789227), r.b),
+          injections: new URL(r(447638), r.b),
+        },
+        svelte: {
+          languageId: "svelte",
+          languageExport: "tree_sitter_svelte",
+          wasm: new URL(r(731545), r.b),
+          highlights: new URL(r(582814), r.b),
+          injections: new URL(r(994763), r.b),
+          locals: new URL(r(756661), r.b),
+        },
+        swift: {
+          languageId: "swift",
+          languageExport: "tree_sitter_swift",
+          wasm: new URL(r(304707), r.b),
+          highlights: new URL(r(259850), r.b),
+          injections: new URL(r(134399), r.b),
+          locals: new URL(r(917129), r.b),
+        },
+        textproto: {
+          languageId: "textproto",
+          languageExport: "tree_sitter_textproto",
+          wasm: new URL(r(155823), r.b),
+          highlights: new URL(r(264834), r.b),
+        },
+        thrift: {
+          languageId: "thrift",
+          languageExport: "tree_sitter_thrift",
+          wasm: new URL(r(744357), r.b),
+          highlights: new URL(r(584122), r.b),
+          injections: new URL(r(259439), r.b),
+          locals: new URL(r(720793), r.b),
+        },
+        tlaplus: {
+          languageId: "tlaplus",
+          languageExport: "tree_sitter_tlaplus",
+          wasm: new URL(r(727267), r.b),
+          highlights: new URL(r(58894), r.b),
+          locals: new URL(r(661637), r.b),
+        },
+        toml: {
+          languageId: "toml",
+          languageExport: "tree_sitter_toml",
+          wasm: new URL(r(508703), r.b),
+          highlights: new URL(r(191649), r.b),
+        },
+        tsx: {
+          languageId: "tsx",
+          languageExport: "tree_sitter_tsx",
+          wasm: new URL(r(355535), r.b),
+          highlights: new URL(r(613110), r.b),
+          locals: new URL(r(757629), r.b),
+        },
+        typescript: {
+          languageId: "typescript",
+          languageExport: "tree_sitter_typescript",
+          wasm: new URL(r(202085), r.b),
+          highlights: new URL(r(648506), r.b),
+          locals: new URL(r(194201), r.b),
+        },
+        typst: {
+          languageId: "typst",
+          languageExport: "tree_sitter_typst",
+          wasm: new URL(r(107087), r.b),
+          highlights: new URL(r(13079), r.b),
+          injections: new URL(r(960138), r.b),
+        },
+        verilog: {
+          languageId: "verilog",
+          languageExport: "tree_sitter_verilog",
+          wasm: new URL(r(615343), r.b),
+          highlights: new URL(r(486859), r.b),
+        },
+        vhdl: {
+          languageId: "vhdl",
+          languageExport: "tree_sitter_vhdl",
+          wasm: new URL(r(347275), r.b),
+          highlights: new URL(r(858987), r.b),
+        },
+        vim: {
+          languageId: "vim",
+          languageExport: "tree_sitter_vim",
+          wasm: new URL(r(540423), r.b),
+          highlights: new URL(r(330909), r.b),
+          injections: new URL(r(440532), r.b),
+        },
+        vue: {
+          languageId: "vue",
+          languageExport: "tree_sitter_vue",
+          wasm: new URL(r(799767), r.b),
+          highlights: new URL(r(4081), r.b),
+          injections: new URL(r(751968), r.b),
+        },
+        wit: {
+          languageId: "wit",
+          languageExport: "tree_sitter_wit",
+          wasm: new URL(r(118567), r.b),
+          highlights: new URL(r(856145), r.b),
+          injections: new URL(r(413056), r.b),
+        },
+        x86asm: {
+          languageId: "x86asm",
+          languageExport: "tree_sitter_x86asm",
+          wasm: new URL(r(19537), r.b),
+          highlights: new URL(r(489700), r.b),
+        },
+        xml: {
+          languageId: "xml",
+          languageExport: "tree_sitter_xml",
+          wasm: new URL(r(310435), r.b),
+          highlights: new URL(r(730180), r.b),
+        },
+        yaml: {
+          languageId: "yaml",
+          languageExport: "tree_sitter_yaml",
+          wasm: new URL(r(389805), r.b),
+          highlights: new URL(r(395958), r.b),
+        },
+        yuri: {
+          languageId: "yuri",
+          languageExport: "tree_sitter_yuri",
+          wasm: new URL(r(433782), r.b),
+          highlights: new URL(r(686146), r.b),
+        },
+        zig: {
+          languageId: "zig",
+          languageExport: "tree_sitter_zig",
+          wasm: new URL(r(990103), r.b),
+          highlights: new URL(r(692027), r.b),
+          injections: new URL(r(95334), r.b),
+        },
+        zsh: {
+          languageId: "zsh",
+          languageExport: "tree_sitter_zsh",
+          wasm: new URL(r(7087), r.b),
+          highlights: new URL(r(371952), r.b),
+        },
+      };
+    },
+    926890(e, t, r) {
+      "use strict";
+      r.d(t, { A: () => n.A, pb: () => i.p }), r(807853);
+      var i = r(728806),
+        n = r(353134);
+    },
+    353134(e, t, r) {
+      "use strict";
+      r.d(t, { A: () => n });
+      var i = r(807853);
+      async function n() {
+        let e = await u(),
+          [t, n] = await Promise.all([
+            (0, i.LM)(new URL(r(800070), r.b)),
+            (0, i.LM)(new URL(r(468638), r.b)),
           ]),
-          n = await e({ wasmBinary: t }),
-          o = await n.loadWebAssemblyModule(i, { loadAsync: !0 });
-        return new h(n, o);
+          s = await e({ wasmBinary: t }),
+          a = await s.loadWebAssemblyModule(n, { loadAsync: !0 });
+        return new o(s, a);
       }
-      class h {
+      class o {
         host;
         abi;
         constructor(e, t) {
@@ -12955,21 +12979,21 @@
         }
         async loadGrammar(e) {
           if (!e.languageId)
-            throw new n(
+            throw new i.gT(
               "grammar-registration-failed",
               "loadGrammar: languageId is required (must match the name referenced by injection queries)",
             );
-          let [t, r, i, u] = await Promise.all([
-              s(e.wasm),
-              a(e.highlights),
-              void 0 === e.injections ? "" : a(e.injections),
-              void 0 === e.locals ? "" : a(e.locals),
+          let [t, r, n, o] = await Promise.all([
+              (0, i.LM)(e.wasm),
+              (0, i.WY)(e.highlights),
+              void 0 === e.injections ? "" : (0, i.WY)(e.injections),
+              void 0 === e.locals ? "" : (0, i.WY)(e.locals),
             ]),
-            c = (function (e, t) {
+            a = (function (e, t) {
               if (void 0 !== t) {
                 let r = e[t];
                 if ("function" != typeof r)
-                  throw new n(
+                  throw new i.gT(
                     "grammar-language-export-missing",
                     `grammar module has no function export named ${JSON.stringify(t)}`,
                   );
@@ -12980,12 +13004,12 @@
                   t.startsWith("tree_sitter_") && "function" == typeof e[t],
               );
               if (0 === r.length)
-                throw new n(
+                throw new i.gT(
                   "grammar-language-export-missing",
                   "grammar module has no function export starting with tree_sitter_",
                 );
               if (r.length > 1)
-                throw new n(
+                throw new i.gT(
                   "grammar-language-export-missing",
                   `grammar module has multiple tree_sitter_* exports: ${r.join(", ")}. Pass options.languageExport to disambiguate.`,
                 );
@@ -12994,43 +13018,43 @@
               await this.host.loadWebAssemblyModule(t, { loadAsync: !0 }),
               e.languageExport,
             )();
-          if (!c)
-            throw new n(
+          if (!a)
+            throw new i.gT(
               "grammar-registration-failed",
               "grammar tree_sitter_* export returned null",
             );
-          let [l, d] = o(this.host, e.languageId),
-            [f, h] = o(this.host, r),
-            [_, g] = o(this.host, i),
-            [m, b] = o(this.host, u),
-            v = 0;
+          let [u, c] = (0, i.BW)(this.host, e.languageId),
+            [l, d] = (0, i.BW)(this.host, r),
+            [f, h] = (0, i.BW)(this.host, n),
+            [p, _] = (0, i.BW)(this.host, o),
+            g = 0;
           try {
-            v = this.abi.arborium_rt_register_grammar(
+            g = this.abi.arborium_rt_register_grammar(
+              a,
+              u,
               c,
               l,
               d,
               f,
               h,
+              p,
               _,
-              g,
-              m,
-              b,
             );
           } finally {
-            l && this.host._free(l),
+            u && this.host._free(u),
+              l && this.host._free(l),
               f && this.host._free(f),
-              _ && this.host._free(_),
-              m && this.host._free(m);
+              p && this.host._free(p);
           }
-          if (0 === v)
-            throw new n(
+          if (0 === g)
+            throw new i.gT(
               "grammar-registration-failed",
               "arborium_rt_register_grammar returned 0 (query compile failure, bad language ptr, or empty name?)",
             );
-          return new p(this, v, c, e.languageId);
+          return new s(this, g, a, e.languageId);
         }
       }
-      class p {
+      class s {
         runtime;
         id;
         languagePtr;
@@ -13046,11 +13070,11 @@
           this.#t();
           let e = this.runtime.abi.arborium_rt_create_session(this.id);
           if (0 === e)
-            throw new n(
+            throw new i.gT(
               "session-creation-failed",
               `arborium_rt_create_session(${this.id}) returned 0`,
             );
-          return new _(this, e);
+          return new a(this, e);
         }
         unregister() {
           this.#e ||
@@ -13059,13 +13083,13 @@
         }
         #t() {
           if (this.#e)
-            throw new n(
+            throw new i.gT(
               "grammar-registration-failed",
               `grammar ${this.id} has been unregistered`,
             );
         }
       }
-      class _ {
+      class a {
         grammar;
         id;
         #r = !1;
@@ -13074,7 +13098,7 @@
         }
         setText(e) {
           this.#t();
-          let [t, r] = o(this.grammar.runtime.host, e);
+          let [t, r] = (0, i.BW)(this.grammar.runtime.host, e);
           try {
             this.grammar.runtime.abi.arborium_rt_set_text(this.id, t, r);
           } finally {
@@ -13128,8 +13152,8 @@
           this.#t();
           let t = e.maxInjectionDepth ?? 3,
             r = e.format ?? { kind: "custom-elements" },
-            { host: i } = this.grammar.runtime,
-            { code: n, prefix: s } = (function (e) {
+            { host: n } = this.grammar.runtime,
+            { code: o, prefix: s } = (function (e) {
               switch (e.kind) {
                 case "custom-elements":
                   return { code: 0, prefix: "" };
@@ -13141,7 +13165,7 @@
                   return { code: 3, prefix: e.prefix };
               }
             })(r),
-            [a, u] = o(i, s);
+            [a, u] = (0, i.BW)(n, s);
           try {
             let e = this.#i(
               "highlight-failed",
@@ -13149,7 +13173,7 @@
                 this.grammar.runtime.abi.arborium_rt_highlight_to_html(
                   this.id,
                   t,
-                  n,
+                  o,
                   a,
                   u,
                   e,
@@ -13172,7 +13196,7 @@
               fuelUsed: e.fuel_used,
             };
           } finally {
-            a && i._free(a);
+            a && n._free(a);
           }
         }
         cancel() {
@@ -13185,33 +13209,33 @@
         }
         #t() {
           if (this.#r)
-            throw new n(
+            throw new i.gT(
               "session-creation-failed",
               `session ${this.id} has been freed`,
             );
         }
         #i(e, t, r) {
-          let { host: i, abi: o } = this.grammar.runtime,
-            s = i._malloc(4),
-            a = i._malloc(4);
+          let { host: n, abi: o } = this.grammar.runtime,
+            s = n._malloc(4),
+            a = n._malloc(4);
           try {
             let u = t(s, a);
             if (0 !== u)
-              throw new n(e, `arborium_rt call returned status ${u}`);
-            let c = i.getValue(s, "i32"),
-              d = i.getValue(a, "i32");
-            if (0 === d) return r("");
+              throw new i.gT(e, `arborium_rt call returned status ${u}`);
+            let c = n.getValue(s, "i32"),
+              l = n.getValue(a, "i32");
+            if (0 === l) return r("");
             try {
-              return r(0 === d ? "" : l.decode(i.HEAPU8.subarray(c, c + d)));
+              return r((0, i.Sx)(n, c, l));
             } finally {
-              o.arborium_rt_free(c, d);
+              o.arborium_rt_free(c, l);
             }
           } finally {
-            i._free(s), i._free(a);
+            n._free(s), n._free(a);
           }
         }
       }
-      async function g() {
+      async function u() {
         return (await r.e("379098").then(r.bind(r, 623777))).default;
       }
     },
@@ -13699,7 +13723,7 @@
                       C: !1,
                     }),
                   (s = z),
-                  i && ((o = [n]), (s = q)),
+                  i && ((o = [n]), (s = Y)),
                   (u = (a = Proxy.revocable(o, s)).revoke),
                   (n.k = c = a.proxy),
                   (n.j = u),
@@ -13832,19 +13856,19 @@
             i(12);
           },
         },
-        q = {};
+        Y = {};
       s(z, function (e, t) {
-        q[e] = function () {
+        Y[e] = function () {
           return (arguments[0] = arguments[0][0]), t.apply(this, arguments);
         };
       }),
-        (q.deleteProperty = function (e, t) {
-          return q.set.call(this, e, t, void 0);
+        (Y.deleteProperty = function (e, t) {
+          return Y.set.call(this, e, t, void 0);
         }),
-        (q.set = function (e, t, r) {
+        (Y.set = function (e, t, r) {
           return z.set.call(this, e[0], t, r, e[0]);
         });
-      var Y = new ((function () {
+      var q = new ((function () {
           function e(e) {
             var t = this;
             (this.O = F),
@@ -14003,14 +14027,14 @@
             e
           );
         })())(),
-        Q = Y.produce,
+        Q = q.produce,
         K =
-          (Y.produceWithPatches.bind(Y),
-          Y.setAutoFreeze.bind(Y),
-          Y.setUseProxies.bind(Y),
-          Y.applyPatches.bind(Y),
-          Y.createDraft.bind(Y)),
-        Z = Y.finishDraft.bind(Y);
+          (q.produceWithPatches.bind(q),
+          q.setAutoFreeze.bind(q),
+          q.setUseProxies.bind(q),
+          q.applyPatches.bind(q),
+          q.createDraft.bind(q)),
+        Z = q.finishDraft.bind(q);
     },
     694260(e, t, r) {
       "use strict";
@@ -14030,4 +14054,4 @@
     },
   },
 ]);
-//# sourceMappingURL=96726.3c96fdef19594eba.js.map
+//# sourceMappingURL=851061.70d1880b101fd387.js.map
