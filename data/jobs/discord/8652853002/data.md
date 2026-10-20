@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8652853002](https://discord.com/jobs/8652853002)
 
-**Updated At:** Thu, 15 Oct 2026 20:08:17 GMT
+**Updated At:** Tue, 20 Oct 2026 17:01:11 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Experimentation Platform puts data at the heart of the company's decision-making and growth - we run hundreds of experiments at any given time, and those results turn directly into business decisions across Discord.&amp;nbsp;

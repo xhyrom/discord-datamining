@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8815116002](https://discord.com/jobs/8815116002)
 
-**Updated At:** Thu, 15 Oct 2026 20:08:17 GMT
+**Updated At:** Tue, 20 Oct 2026 17:01:11 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Creators are people who build audiences across the internet: influential voices whose communities listen to them and want to spend time together. Many of those communities already live on Discord, but our relationship with creators has grown organically. We have an opportunity to listen more closely, serve them more intentionally, and build a relationship that reflects the role they play on our platform.

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8846330002](https://discord.com/jobs/8846330002)
 
-**Updated At:** Thu, 15 Oct 2026 20:08:17 GMT
+**Updated At:** Tue, 20 Oct 2026 17:01:11 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.The Design Systems team is a cross-functional team that ensures design quality across all facets of UI, content, and graphics. Mana, our design system, is well loved and widely used by the product designers, engineers, and creatives who design and build Discord every day. This role is about stewardship: keeping Mana healthy, accurate, and useful as the product grows. You'll own the day-to-day work of fixing bugs, shipping updates, and evolving existing components, and you'll help decide what the system needs next.

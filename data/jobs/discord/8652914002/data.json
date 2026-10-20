@@ -30,7 +30,7 @@
     }
   ],
   "id": 8652914002,
-  "updated_at": "2026-10-15T18:27:22-04:00",
+  "updated_at": "2026-10-20T13:01:11-04:00",
   "requisition_id": "R-107355",
   "title": "Threat Investigator Team Lead",
   "company_name": "Discord",
@@ -49,7 +49,7 @@
   "offices": [
     {
       "id": 4105189002,
-      "name": "Los Angeles Metro Area",
+      "name": "Los Angeles, CA",
       "location": "Los Angeles, California, United States",
       "child_ids": [],
       "parent_id": null

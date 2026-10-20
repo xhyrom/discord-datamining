@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8652914002](https://discord.com/jobs/8652914002)
 
-**Updated At:** Thu, 15 Oct 2026 22:27:22 GMT
+**Updated At:** Tue, 20 Oct 2026 17:01:11 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord’s mission is to give people the power to create space to find belonging in their lives. Every day, millions of people trust Discord to be a place where they can talk, spend time together, and build community. Keeping that space safe starts with teams like ours.
@@ -58,7 +58,7 @@ education_optional
 - Trust & Safety
 
 **Offices:**
-- Los Angeles Metro Area in Los Angeles, California, United States
+- Los Angeles, CA in Los Angeles, California, United States
 - New York, NY in New York, New York, United States
 - San Francisco, CA in San Francisco, California, United States
 - Washington, D.C. in Washington, District of Columbia, United States
