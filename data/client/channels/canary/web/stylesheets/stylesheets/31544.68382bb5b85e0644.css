@@ -1,9 +1,3 @@
-.rowContainer__1e702 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  padding-top: 8px;
-}
 .image__1859b,
 .imageLoading__1859b {
   color: transparent;
@@ -380,18 +374,6 @@
   background: var(--control-secondary-background-hover);
   border: 1px solid var(--control-secondary-border-hover);
 }
-.soundmojiViewMore_c656ac {
-  align-self: center;
-  color: var(--text-default);
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: var(--font-weight-semibold);
-  margin-inline-start: auto;
-  transition: color 0.125s;
-}
-.soundmojiViewMore_c656ac:hover {
-  color: var(--interactive-text-active);
-}
 .premiumRetentionNotice_a606ef {
   background-color: var(--background-base-lowest);
   border-radius: 4px;
@@ -418,4 +400,4 @@
   flex: 1 1 auto;
 }
 
-/*# sourceMappingURL=296956.df4fda7c85fba382.css.map*/
+/*# sourceMappingURL=31544.68382bb5b85e0644.css.map*/

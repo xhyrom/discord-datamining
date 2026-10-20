@@ -310,12 +310,18 @@
   display: flex;
   margin-inline-start: 6px;
 }
-.playbackSpeedPopout_b824c5 {
+.controlBarPopoutSurface_b824c5 {
   background-color: var(--background-surface-high);
   border-radius: var(--radius-sm);
   box-shadow:
     inset 0 0 0 1px var(--border-subtle),
     var(--shadow-high);
+}
+.volumePopout_b824c5 {
+  padding: var(--space-12);
+  width: 120px;
+}
+.playbackSpeedPopout_b824c5 {
   display: flex;
   flex-direction: column;
   gap: var(--space-12);
@@ -767,4 +773,4 @@
   }
 }
 
-/*# sourceMappingURL=245420.5228e3d9019e0d01.css.map*/
+/*# sourceMappingURL=245420.4448bd478e383c76.css.map*/

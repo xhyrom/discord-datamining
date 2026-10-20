@@ -885,6 +885,9 @@
   text-align: center;
   text-transform: uppercase;
 }
+.mana-badge-refresh .badge_c2b88c {
+  text-transform: none;
+}
 .badge_c2b88c > :not(.label_c2b88c) {
   flex-shrink: 0;
 }
@@ -1038,4 +1041,4 @@
   --custom-gradient-color-end: var(--expressive-gradient-nitro-green-end);
 }
 
-/*# sourceMappingURL=384209.7d2aa884087159cc.css.map*/
+/*# sourceMappingURL=384209.7d0ffd250e798c49.css.map*/

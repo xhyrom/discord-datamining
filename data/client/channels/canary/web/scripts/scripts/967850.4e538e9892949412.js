@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["89530"],
+  ["967850"],
   {
     653131(_, e, o) {
       _.exports = {
@@ -22,20 +22,6 @@
         Ff: "infoExpandedGuildInfo__14ad3",
         x$: "infoExpandedGuildTitle__14ad3",
       };
-    },
-    178226(_, e, o) {
-      _.exports = { z: "effects__58042" };
-    },
-    84566(_, e, o) {
-      o.r(
-        (_.exports = {
-          target: "target__93289",
-          before: "before__93289",
-          dragOver: "dragOver__93289",
-          after: "after__93289",
-          autoPointerEvents: "autoPointerEvents__93289",
-        }),
-      );
     },
     948611(_, e, o) {
       _.exports = {
@@ -71,9 +57,6 @@
         ET: "unavailableTooltip__9be63",
         ld: "unavailableTooltipActions__9be63",
       };
-    },
-    777511(_, e, o) {
-      _.exports = { Q: "effect__68185" };
     },
   },
 ]);

@@ -42,6 +42,8 @@
         Ue: "durationTimeDisplay_b824c5",
         zO: "durationTimeSeparator_b824c5",
         MQ: "volumeSlider_b824c5",
+        p8: "controlBarPopoutSurface_b824c5",
+        Gl: "volumePopout_b824c5",
         qp: "playbackSpeedPopout_b824c5",
         xl: "playbackSpeedHeading_b824c5",
         hA: "contentHeaderGameInfo_b824c5",

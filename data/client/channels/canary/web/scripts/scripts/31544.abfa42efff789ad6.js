@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["296956"],
+  ["31544"],
   {
     618723(e, c, i) {
       e.exports = {
@@ -18,7 +18,6 @@
         Lu: "premiumUpsell_c656ac",
         pQ: "nitroBottomDivider_c656ac",
         ij: "wishlistButton_c656ac",
-        f3: "soundmojiViewMore_c656ac",
       };
     },
     537911(e, c, i) {
@@ -64,9 +63,6 @@
     },
     703413(e, c, i) {
       e.exports = { S: "image__1859b", Y: "imageLoading__1859b" };
-    },
-    821425(e, c, i) {
-      e.exports = { q: "rowContainer__1e702" };
     },
   },
 ]);

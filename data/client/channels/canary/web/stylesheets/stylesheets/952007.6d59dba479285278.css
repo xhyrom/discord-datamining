@@ -21330,6 +21330,22 @@
   --yellow-900: var(--yellow-new-100);
   --yellow-900-hsl: var(--yellow-new-100-hsl);
 }
+.mana-badge-refresh .theme-dark,
+.mana-badge-refresh .theme-darker,
+.mana-badge-refresh .theme-light,
+.mana-badge-refresh .theme-midnight,
+.mana-badge-refresh.theme-dark,
+.mana-badge-refresh.theme-darker,
+.mana-badge-refresh.theme-light,
+.mana-badge-refresh.theme-midnight {
+  --badge-expressive-border: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --badge-primary-border: hsl(var(--opacity-white-8-hsl) / 0.0784313725490196);
+  --badge-secondary-border: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+}
 .theme-dark {
   --shadow-border: 0 0 0 1px hsl(none 0% 100%/0.08);
   --shadow-border-filter: drop-shadow(0 0 1px hsl(none 0% 100%/0.08));
@@ -22248,6 +22264,9 @@
   --toast-queue-enter-delay-ms: 400px;
   --toast-text-line-count: 2px;
 }
+.mana-badge-refresh {
+  --badge-border-width: 1px;
+}
 .mobile-visual-refresh {
   --button-border-radius: 8px;
   --button-border-radius-lg: 12px;
@@ -22460,4 +22479,4 @@
   --motion-spring-subtle-duration: 598ms;
 }
 
-/*# sourceMappingURL=952007.1b66fa291e25d409.css.map*/
+/*# sourceMappingURL=952007.6d59dba479285278.css.map*/

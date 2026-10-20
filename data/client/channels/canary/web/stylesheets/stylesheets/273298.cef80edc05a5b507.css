@@ -46,5 +46,58 @@
 .newUpsellBackground__65c15 {
   background: hsl(var(--brand-500-hsl) / 0.08);
 }
+.title_ace4f5 {
+  align-items: center;
+  display: flex;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.viewFullProfileButton_ace4f5 {
+  margin-inline-start: auto;
+}
+.disabled_ace4f5 {
+  opacity: 0.4;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.customizationSection_ace4f5 {
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+.customizationSection_ace4f5.hideDivider_ace4f5 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.customizationSection_ace4f5:last-child:not(.withDivider_ace4f5) {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.customizationSection_ace4f5.showBorder_ace4f5 {
+  padding-bottom: 12px;
+}
+.customizationSectionBackground_ace4f5 {
+  padding: 16px;
+}
+.sectionDescription_ace4f5 {
+  margin-bottom: 16px;
+}
+.errorMessage_ace4f5 {
+  margin-top: 8px;
+}
+.customizationSectionBorder_ace4f5 {
+  margin: -12px -12px 0;
+}
+.section__999b5 {
+  margin-top: 16px;
+}
+.guildSelectOptionIcon__999b5 {
+  border-radius: 4px;
+}
 
-/*# sourceMappingURL=501017.c355a36adc724804.css.map*/
+/*# sourceMappingURL=273298.cef80edc05a5b507.css.map*/

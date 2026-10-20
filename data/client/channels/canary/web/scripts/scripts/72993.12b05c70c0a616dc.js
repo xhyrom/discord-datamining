@@ -1,6 +1,11 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["641026"],
+  ["72993"],
   {
+    679474(e, t, r) {
+      var n = r(912381),
+        i = globalThis.__DISCORD_RESOLVE_WASM_URL__;
+      e.exports = "function" == typeof i ? i(n) : n;
+    },
     410075() {},
     524897(e, t) {
       "use strict";
@@ -60653,7 +60658,7 @@
           return (this.head = t), (this.tail = e), this;
         });
     },
-    895975(e, t, r) {
+    912381(e, t, r) {
       "use strict";
       e.exports = r.p + "bd93c5b4b4233174.wasm";
     },
@@ -73910,4 +73915,4 @@
     },
   },
 ]);
-//# sourceMappingURL=641026.9fc1ffda44439ab6.js.map
+//# sourceMappingURL=72993.12b05c70c0a616dc.js.map
