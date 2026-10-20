@@ -1,0 +1,114 @@
+.actions__46671 {
+  min-width: calc(100% + var(--space-8));
+}
+.destination__46671 {
+  align-items: center;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  gap: var(--space-12);
+  margin: 0 calc(var(--space-8) * -1);
+  min-height: var(--space-48);
+  min-width: 0;
+  overflow: hidden;
+  padding: 0 var(--space-8);
+  text-align: start;
+  width: 100%;
+}
+.destination__46671:hover {
+  background-color: var(--interactive-background-hover);
+}
+.destinationIcon__46671 {
+  flex: none;
+}
+.destinationText__46671 {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.destinationSecondary__46671,
+.destinationText__46671 {
+  display: flex;
+  gap: calc(var(--space-4) / 2);
+  min-width: 0;
+  overflow: hidden;
+}
+.destinationSecondary__46671 {
+  align-items: center;
+  color: var(--text-muted);
+}
+.destinationTextLine__46671 {
+  min-width: 0;
+  overflow: hidden;
+}
+.destinationSecondary__46671 .destinationTextLine__46671 {
+  flex: 1;
+}
+.subtitleDestination__46671 {
+  align-items: center;
+  color: var(--text-strong);
+  display: inline-flex;
+  gap: var(--space-4);
+  white-space: nowrap;
+}
+.canvas__81292 {
+  --custom-waveform-spacing: 4px;
+  color: var(--interactive-text-active);
+  flex: 1;
+  height: calc(24px + var(--custom-waveform-spacing) * 2);
+  margin-bottom: calc(var(--custom-waveform-spacing) * -1);
+  margin-top: calc(var(--custom-waveform-spacing) * -1);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    var(--text-default) 12%,
+    var(--text-default) 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    var(--text-default) 12%,
+    var(--text-default) 100%
+  );
+  min-width: 0;
+  width: 0;
+}
+.backupContainer__0efdf {
+  display: flex;
+  justify-content: center;
+}
+.canvas__0efdf {
+  cursor: pointer;
+  flex: 1;
+  height: 32px;
+  margin-bottom: -4px;
+  margin-top: -4px;
+  min-width: 0;
+}
+.playback_c15390 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: var(--space-16);
+  min-width: 0;
+}
+.waveform_c15390 {
+  flex: 1;
+  margin-inline-start: var(--space-4);
+  min-width: 0;
+  width: 0;
+}
+.timerGroup_c15390 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+}
+.timer_c15390 {
+  color: var(--text-default);
+  min-width: var(--space-32);
+}
+.audioElement_c15390 {
+  display: none;
+}
+
+/*# sourceMappingURL=490514.e58f600146c67496.css.map*/
