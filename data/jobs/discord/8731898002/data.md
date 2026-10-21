@@ -10,14 +10,14 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8731898002](https://discord.com/jobs/8731898002)
 
-**Updated At:** Tue, 20 Oct 2026 17:01:11 GMT
+**Updated At:** Wed, 21 Oct 2026 18:40:04 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.As a Senior Product Designer on Consumer Revenue, you'll help shape how millions of people discover, experience, and engage with Discord's paid products and offerings. You'll work on experiences that create meaningful value for our users while helping grow Discord's consumer business - from exploring new ways to monetize to improving and evolving existing revenue products.
 You'll be involved in the full product development process from end to end, from identifying opportunities and shaping product strategy to prototyping, experimentation, and launch. You'll bring a strong balance of product thinking, interaction design, and visual craft, and partner closely with Product, Engineering, Data Science, Research, and Marketing to understand user needs, test hypotheses, and turn insights into impactful experiences.
 We're looking for a designer who is excited by the intersection of consumer behavior, product experience, and business growth - someone who can simplify complex problems, explore new ideas, and design experiences that feel distinctly Discord while driving measurable impact.
 If you're excited to help define the future of Discord's consumer business and build products used by millions of people around the world, we'd love to hear from you.
-
+&amp;nbsp;
 What You'll Be Doing
 
 Embed within a Consumer Revenue squad and partner with engineering, product, data science, and research to own the experience of our paid products from concept to experiment to launch - and keep improving them after release.
@@ -39,8 +39,7 @@ A working understanding and curiosity of AI-assisted design workflows - from ide
 Bonus Points
 
 Experience building monetization products&amp;nbsp;
-
-The US base salary range for this full-time position is $188,000 to $211,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+The base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits.Base Salary$188,000&amp;mdash;$235,000 USDWhy Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Discord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 

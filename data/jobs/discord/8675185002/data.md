@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8675185002](https://discord.com/jobs/8675185002)
 
-**Updated At:** Tue, 20 Oct 2026 17:01:11 GMT
+**Updated At:** Wed, 21 Oct 2026 18:44:28 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Enterprise Technology org is building a software engineering discipline from the ground up, and this is the founding engineering hire. There is no Enterprise Platform team yet. You will not be maintaining a status quo or joining an existing backlog: you will define the discipline, set the technical foundation, and build the platform that lets the internal systems enabling Discordians scale with the company.
@@ -37,8 +37,7 @@ Bonus Points
 Hands-on experience with Okta, Jamf, or Intune.
 Experience with identity and access governance for non-human, workload, or AI-agent principals.
 Background at a high-growth consumer tech company with a highly technical employee base.
-
-The US base salary range for this full-time position is $248,000 to $279,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+The base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits.Base Salary$248,000&amp;mdash;$310,000 USDWhy Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Discord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 
