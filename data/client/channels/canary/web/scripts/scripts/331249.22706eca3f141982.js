@@ -1,23 +1,33 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["896995"],
+  ["331249"],
   {
-    845210(e, a, _) {
-      e.exports = {
+    845210(a, e, _) {
+      a.exports = {
         zr: "root__6c5a1",
         Qq: "text__6c5a1",
         M2: "premium__6c5a1",
         e7: "iconOnly__6c5a1",
       };
     },
-    343005(e, a, _) {
-      e.exports = { l: "actionBarIcon_a7e304" };
+    343005(a, e, _) {
+      a.exports = { l: "actionBarIcon_a7e304" };
     },
-    714731(e, a, _) {
-      e.exports = { I: "channelAttachmentArea_b77158" };
+    33720(a, e, _) {
+      a.exports = {
+        Se: "upload_aa605f",
+        BN: "smallActionBar_aa605f",
+        PO: "uploadContainer_aa605f",
+        TC: "actionBarContainer_aa605f",
+        KY: "actionBar_aa605f",
+        BX: "miniPopover_aa605f",
+      };
     },
-    40974(e, a, _) {
-      e.exports = {
+    714731(a, e, _) {
+      a.exports = { I: "channelAttachmentArea_b77158" };
+    },
+    40974(a, e, _) {
+      a.exports = {
         xd: "emptyOption_b088b0",
         LB: "emptyOptionActive_b088b0",
         uN: "clickContainer_b088b0",
@@ -29,9 +39,9 @@
         Fg: "fileInput_b088b0",
       };
     },
-    429955(e, a, _) {
+    429955(a, e, _) {
       _.r(
-        (e.exports = {
+        (a.exports = {
           filenameContainer: "filenameContainer__41ea0",
           filename: "filename__41ea0",
           mediaContainer: "mediaContainer__41ea0",
@@ -68,16 +78,16 @@
         }),
       );
     },
-    412028(e, a, _) {
-      e.exports = {
+    412028(a, e, _) {
+      a.exports = {
         Dq: "characterCount__795fb",
         y: "premiumFlair__795fb",
         SW: "flairContainer__795fb",
         UX: "upsell__795fb",
       };
     },
-    9287(e, a, _) {
-      e.exports = {
+    9287(a, e, _) {
+      a.exports = {
         KE: "toolbar_bba883",
         Uo: "buttons_bba883",
         aL: "staticToolbar_bba883",
@@ -88,6 +98,31 @@
         Kk: "icon_bba883",
         C7: "staticIcon_bba883",
         us: "staticDivider_bba883",
+      };
+    },
+    7834(a, e, _) {
+      a.exports = { s: "participantOverflow_fc42a2", x: "button_fc42a2" };
+    },
+    447177(a, e, _) {
+      a.exports = {
+        oK: "overlayHeader__0a5bd",
+        aS: "isFullscreen__0a5bd",
+        Lu: "overlayGradient__0a5bd",
+        pd: "minimized__0a5bd",
+        s$: "overlayContent__0a5bd",
+        yR: "textInfo__0a5bd",
+        $: "titleRow__0a5bd",
+        gr: "titleIcon__0a5bd",
+        DD: "title__0a5bd",
+        yu: "metadata__0a5bd",
+        Nn: "gameNameGroup__0a5bd",
+        Gt: "gameIcon__0a5bd",
+        mO: "gameName__0a5bd",
+        BR: "clipDate__0a5bd",
+        On: "clickableGameName__0a5bd",
+        HD: "avatars__0a5bd",
+        RB: "participantAvatar__0a5bd",
+        i9: "gridViewReturn__0a5bd",
       };
     },
   },
