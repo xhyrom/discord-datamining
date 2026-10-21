@@ -1,9 +1,9 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["132502"],
+  ["6050"],
   {
-    489387(e, t, r) {
-      r.r(
+    489387(e, t, d) {
+      d.r(
         (e.exports = {
           popover: "popover_d6f39b",
           popoverGradientWrapper: "popoverGradientWrapper_d6f39b",
@@ -35,24 +35,21 @@
         }),
       );
     },
-    321557(e, t, r) {
-      e.exports = { M: "navigatorTrailing__15430" };
-    },
-    793409(e, t, r) {
+    907896(e, t, d) {
       e.exports = {
-        Nr: "card_b2d910",
-        MY: "cardHeader_b2d910",
-        Q2: "solo_b2d910",
-        zI: "cardBody_b2d910",
+        kL: "container__251d4",
+        Xn: "fadeOut__251d4",
+        UX: "upsell__251d4",
+        R: "hidden__251d4",
       };
     },
-    526943(e, t, r) {
+    139230(e, t, d) {
       e.exports = {
-        bW: "triggerButton__64c86",
-        nd: "panel__64c86",
-        t5: "disablePanelAnimation__64c86",
-        Kk: "icon__64c86",
-        kX: "iconClosed__64c86",
+        y_: "backForwardButtons__63abb",
+        x6: "button__63abb",
+        aX: "back__63abb",
+        sY: "forward__63abb",
+        r9: "disabled__63abb",
       };
     },
   },

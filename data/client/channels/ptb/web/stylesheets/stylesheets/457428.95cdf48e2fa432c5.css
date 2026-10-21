@@ -112,63 +112,6 @@
 .overflowHidden_b1c9f2 {
   overflow: hidden;
 }
-.hljs-ansi-control-sequence {
-  display: none;
-}
-.hljs-ansi-style-bold {
-  font-weight: var(--font-weight-bold);
-}
-.hljs-ansi-style-underline {
-  text-decoration: underline;
-}
-.hljs-ansi-foreground-black {
-  color: var(--ansi-black);
-}
-.hljs-ansi-foreground-red {
-  color: var(--ansi-red);
-}
-.hljs-ansi-foreground-green {
-  color: var(--ansi-green);
-}
-.hljs-ansi-foreground-yellow {
-  color: var(--ansi-yellow);
-}
-.hljs-ansi-foreground-blue {
-  color: var(--ansi-blue);
-}
-.hljs-ansi-foreground-magenta {
-  color: var(--ansi-magenta);
-}
-.hljs-ansi-foreground-cyan {
-  color: var(--ansi-cyan);
-}
-.hljs-ansi-foreground-white {
-  color: var(--ansi-white);
-}
-.hljs-ansi-background-black {
-  background-color: var(--ansi-black);
-}
-.hljs-ansi-background-red {
-  background-color: var(--ansi-red);
-}
-.hljs-ansi-background-green {
-  background-color: var(--ansi-green);
-}
-.hljs-ansi-background-yellow {
-  background-color: var(--ansi-yellow);
-}
-.hljs-ansi-background-blue {
-  background-color: var(--ansi-blue);
-}
-.hljs-ansi-background-magenta {
-  background-color: var(--ansi-magenta);
-}
-.hljs-ansi-background-cyan {
-  background-color: var(--ansi-cyan);
-}
-.hljs-ansi-background-white {
-  background-color: var(--ansi-white);
-}
 @use postcss-pxtorem;
 .markup__75297 {
   font-size: 1rem;
@@ -709,4 +652,4 @@
   margin-inline-start: var(--space-12);
 }
 
-/*# sourceMappingURL=457428.24d2fb1a1a72df80.css.map*/
+/*# sourceMappingURL=457428.95cdf48e2fa432c5.css.map*/

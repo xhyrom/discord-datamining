@@ -135,6 +135,16 @@
 .callDuration__972a0 {
   margin-inline-end: var(--space-xs);
 }
+.callDurationPlated__972a0 {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background-color: var(--opacity-black-44);
+  border-radius: var(--radius-sm);
+  padding: calc(var(--space-4) / 2) var(--space-4);
+}
+.callDurationPlatedLight__972a0 {
+  background-color: var(--opacity-white-44);
+}
 .closeIcon__972a0,
 .favoriteIcon__972a0 {
   display: block;
@@ -282,4 +292,4 @@
   z-index: 0;
 }
 
-/*# sourceMappingURL=834050.2b20814942076d60.css.map*/
+/*# sourceMappingURL=834050.f07d3b44215b763c.css.map*/

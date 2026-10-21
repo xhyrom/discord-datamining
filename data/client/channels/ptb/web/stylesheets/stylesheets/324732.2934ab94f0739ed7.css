@@ -101,6 +101,7 @@
 }
 .featureAssetLabel_d9185c {
   bottom: 0;
+  display: flex;
   inset-inline-start: 50%;
   position: absolute;
   transform: translate(-50%, 50%);
@@ -276,4 +277,4 @@
   width: 20px;
 }
 
-/*# sourceMappingURL=324732.2ec18faa9856ca9c.css.map*/
+/*# sourceMappingURL=324732.2934ab94f0739ed7.css.map*/

@@ -1,21 +1,21 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["638781"],
+  ["864875"],
   {
-    637219(e, _, t) {
+    637219(e, _, r) {
       e.exports = { p: "list__75b62", r: "recordContainer__75b62" };
     },
-    631130(e, _, t) {
+    631130(e, _, r) {
       e.exports = {
         Nr: "card_d07961",
         wt: "nickError_d07961",
         cL: "reset_d07961",
       };
     },
-    523442(e, _, t) {
+    523442(e, _, r) {
       e.exports = { o: "formContent__30f2d", V: "termsPhrase__30f2d" };
     },
-    385276(e, _, t) {
+    385276(e, _, r) {
       e.exports = {
         He: "centerText_a3fac7",
         wx: "header_a3fac7",
@@ -28,17 +28,17 @@
         rv: "noResultsContent_a3fac7",
       };
     },
-    374242(e, _, t) {
+    374242(e, _, r) {
       e.exports = { u: "spinner__1d6c7" };
     },
-    633423(e, _, t) {
+    633423(e, _, r) {
       e.exports = {
         kL: "container__2c3b4",
         wx: "header__2c3b4",
         uk: "upsellsContainer__2c3b4",
       };
     },
-    737973(e, _, t) {
+    737973(e, _, r) {
       e.exports = {
         kL: "container__3eeee",
         bo: "guildContainer__3eeee",
@@ -47,13 +47,13 @@
         $f: "guildIcon__3eeee",
       };
     },
-    336621(e, _, t) {
+    336621(e, _, r) {
       e.exports = { t: "successImg_f05c94" };
     },
-    709531(e, _, t) {
+    709531(e, _, r) {
       e.exports = { w: "header__41dd9", r: "body__41dd9" };
     },
-    65489(e, _, t) {
+    65489(e, _, r) {
       e.exports = {
         kL: "container_dba137",
         wx: "header_dba137",
@@ -63,7 +63,7 @@
         pG: "copied_dba137",
       };
     },
-    243899(e, _, t) {
+    243899(e, _, r) {
       e.exports = {
         kL: "container__7bd4e",
         f1: "userContainer__7bd4e",
@@ -72,8 +72,30 @@
         Hk: "userIcon__7bd4e",
       };
     },
-    15447(e, _, t) {
-      t.r(
+    169819(e, _, r) {
+      e.exports = { k: "container__3cdae", O: "videoBanner__3cdae" };
+    },
+    219407(e, _, r) {
+      e.exports = { N: "card__2cf1c", L: "overflowable__2cf1c" };
+    },
+    715591(e, _, r) {
+      r.r(
+        (e.exports = {
+          carousel: "carousel__38359",
+          children: "children__38359",
+          child: "child__38359",
+          left: "left__38359",
+          right: "right__38359",
+          center: "center__38359",
+          overflowable: "overflowable__38359",
+        }),
+      );
+    },
+    395399(e, _, r) {
+      e.exports = { k: "container_dbbcb5" };
+    },
+    15447(e, _, r) {
+      r.r(
         (e.exports = {
           gridContainer: "gridContainer_dcb619",
           grid: "grid_dcb619",
@@ -103,7 +125,19 @@
         }),
       );
     },
-    512967(e, _, t) {
+    948111(e, _, r) {
+      e.exports = {
+        rJ: "collection__6f806",
+        rf: "body__6f806",
+        wm: "logo__6f806",
+        hP: "supplemental__6f806",
+        kb: "left__6f806",
+      };
+    },
+    715333(e, _, r) {
+      e.exports = { S: "image_c1449e" };
+    },
+    512967(e, _, r) {
       e.exports = {
         UD: "buttonContainer__3e6b4",
         rf: "body__3e6b4",
@@ -113,7 +147,7 @@
         lG: "safetyTips__3e6b4",
       };
     },
-    219052(e, _, t) {
+    219052(e, _, r) {
       e.exports = {
         vR: "tabs_b292bc",
         q3: "indicator_b292bc",
@@ -126,8 +160,8 @@
         nd: "panel_b292bc",
       };
     },
-    778956(e, _, t) {
-      t.r(
+    778956(e, _, r) {
+      r.r(
         (e.exports = {
           textButton: "textButton__7a01b",
           text: "text__7a01b",
