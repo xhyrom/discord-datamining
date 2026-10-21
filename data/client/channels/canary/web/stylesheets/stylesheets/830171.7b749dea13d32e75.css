@@ -119,6 +119,18 @@
   height: 8px;
   width: 8px;
 }
+.conjureCaptureHint_f9504b {
+  min-width: 0;
+}
+.conjureCaptureIcon_f9504b {
+  flex-shrink: 0;
+}
+.conjureCaptureText_f9504b {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .gameName__8c6c2 {
   color: var(--text-default);
   line-height: 16px;
@@ -1916,4 +1928,4 @@
   cursor: pointer;
 }
 
-/*# sourceMappingURL=830171.63be71701069d924.css.map*/
+/*# sourceMappingURL=830171.7b749dea13d32e75.css.map*/

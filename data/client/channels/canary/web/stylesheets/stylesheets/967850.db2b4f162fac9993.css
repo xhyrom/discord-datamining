@@ -212,7 +212,7 @@
   cursor: pointer;
 }
 .soundButtonInteractive__9be63.playing__9be63 {
-  border-color: var(--status-positive-background);
+  border-color: var(--brand-500);
 }
 .buttonDisabledSecondaryActionsEnabled__9be63 {
   cursor: default;
@@ -301,4 +301,4 @@
   width: 100%;
 }
 
-/*# sourceMappingURL=967850.bd7290a56562b335.css.map*/
+/*# sourceMappingURL=967850.db2b4f162fac9993.css.map*/

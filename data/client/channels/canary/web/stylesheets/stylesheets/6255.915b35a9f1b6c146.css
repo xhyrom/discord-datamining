@@ -214,6 +214,7 @@
   transition-property: grid-template-rows, visibility;
   transition-timing-function: var(--expand-easing-function);
   visibility: visible;
+  width: 100%;
 }
 .enterExit__03a26.enterExitHidden__03a26 {
   grid-template-rows: 0fr;
@@ -342,4 +343,4 @@
   color: var(--icon-feedback-critical);
 }
 
-/*# sourceMappingURL=6255.6ce5380e274f9d2a.css.map*/
+/*# sourceMappingURL=6255.915b35a9f1b6c146.css.map*/
