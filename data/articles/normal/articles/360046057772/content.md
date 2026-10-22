@@ -106,7 +106,7 @@
   Announcement<strong>:</strong>
   <strong
     >We’re excited to announce that the opportunity to be considered for the
-    Discord Testers server will be available soon!</strong
+    Discord Testers server is currently available for a limited time!  </strong
   >
 </div>
 <p>
@@ -115,9 +115,26 @@
   identify, reproduce, and provide high-quality bug reports. 
 </p>
 <p>
-  Great news for aspiring Discord Testers!  We plan to open the Discord Testers
-  Consideration Quiz for a limited time later this Fall to welcome new members
-  to the community.  
+  <span style="color: #434343"
+    >Great news for aspiring Discord Testers! The Discord Testers Consideration
+    Quiz is currently <strong>open</strong> for a limited time. Based on quiz
+    results, Discord will invite a limited number of candidates to join the
+    <strong>Discord Testers</strong> community.</span
+  >
+</p>
+<p>
+  <span style="color: #434343"
+    >Because DTesters is a trusted space, we also look for candidates who are
+    respectful members of the Discord community and follow Discord's </span
+  ><a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Terms of Service</span></a
+  ><span style="color: #434343"> and </span
+  ><a
+    href="https://discord.com/guidelines"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Community Guidelines</span></a
+  ><span style="color: #434343">.</span>
 </p>
 <p>Here are a few tips to help you prepare:</p>
 <ul>
@@ -132,8 +149,29 @@
   </li>
 </ul>
 <p>
-  When the quiz opens, we’ll announce it here and add a link to the Discord
-  Testers Consideration Quiz to this article.
+  <span style="color: #434343"
+    >The Discord Testers Consideration Quiz will be available until
+    <strong>Tuesday, October 27</strong> (<strong>12:00PM PT</strong>). </span
+  ><a
+    href="https://forms.gle/bWtRLmWCScZd4S2W6"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span style="color: #434343"
+      >Take the Discord Testers Consideration Quiz here</span
+    ></a
+  ><span style="color: #434343">!</span>
+</p>
+<p>
+  <span style="color: #434343"
+    ><strong>What happens next?</strong> We expect a high volume of quiz
+    submissions, so we’ll take the time to review each one carefully. We'll
+    contact selected candidates within a month after the quiz closes. Due to the
+    number of submissions, we can’t reply to everyone individually, but we'll
+    update this post once we’ve sent all invitations.</span
+  >
+</p>
+<p>
+  <span style="color: #434343">Thanks for your interest and patience!</span>
 </p>
 <h2 id="h_01GB8VR2A607B1TXP5CX4MF7CF">
   <span style="font-weight: 400">Discord Tester FAQ</span>

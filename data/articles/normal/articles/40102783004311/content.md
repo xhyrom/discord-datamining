@@ -584,6 +584,52 @@
   further.
 </p>
 <h2 id="h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Game Shop</h2>
+<div class="mega-box">
+  <p>
+    <strong>From </strong>October 22 (11:00 AM PT)
+    <strong>through </strong>November 5 (11:00 AM PT),
+    <strong
+      >eligible Nitro subscribers can claim the exclusive Zombie Wumpus Plush
+      in-game item in the Rust Game Shop on Discord using Discord Orbs. Nitro
+      monthly and Nitro yearly subscriptions are eligible. Nitro Basic, trial
+      subscriptions, and other subscription types are not eligible for this
+      offer. Claiming with Orbs applies to self-purchases only and cannot be
+      used for gifted items purchased for other users. All users, including
+      Nitro subscribers, can also purchase the </strong
+    ><strong>Zombie Wumpus Plush</strong
+    ><strong>
+      at its regular price in the Rust Game Shop, during the offer
+      period.</strong
+    >
+  </p>
+  <p>
+    <strong
+      >For more information about Discord Orbs, including how to use and redeem
+      them, please see the</strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
+      ><strong> </strong
+      ><strong
+        ><span class="wysiwyg-underline">Discord Orbs FAQ</span></strong
+      ></a
+    ><strong
+      >. For details around eligibility, terms and policy please see the</strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
+      ><strong> </strong
+      ><strong
+        ><span class="wysiwyg-underline"
+          >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
+        ></strong
+      ></a
+    >
+  </p>
+</div>
+<div class="info-box">
+  <strong>Note:</strong> Users who subscribe to Nitro on mobile are still
+  eligible for this offer. However, they must sign in on the Discord desktop or
+  web app to claim the Zombie Wumpus Plush item in the Rust Game Shop.
+</div>
 <p>
   <strong
     >Q: I'm having trouble linking my Rust account to receive my item. What
@@ -637,40 +683,6 @@
   >. 
 </p>
 <h2 id="h_01KZ49EKXDR078KV47FBG58PYP">Ninja Kiwi (Bloons TD 6) Game Shop</h2>
-<div class="mega-box">
-  <p>
-    Offer:<strong> From </strong>October 7th 11:00 AM PT<strong>
-      through </strong
-    >October 21st, 11:00 AM PT<strong>,</strong>
-    <strong
-      >Nitro subscribers can earn Discord Orbs on purchases of official Bloons
-      TD 6 in-game items in the Bloons TD 6 Game Shop on Discord. </strong
-    ><strong>Nitro monthly and Nitro yearly subscriptions are eligible.</strong>
-    <strong
-      >Orbs are earned on top of the normal purchase price. Non-Nitro users do
-      not earn Orbs during this time but can subscribe to Nitro to start
-      earning. </strong
-    ><strong
-      >Orbs are awarded only for self-purchases and are not earned on gifted
-      items purchased for other users. </strong
-    ><strong
-      >The amount of Orbs earned will vary based on the purchase amount.</strong
-    >
-  </p>
-  <p>
-    <strong
-      >For more information about Discord Orbs, including how to use and redeem
-      them, please see the </strong
-    ><a
-      href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><strong
-        ><span class="wysiwyg-underline">Discord Orbs FAQ</span></strong
-      ></a
-    >
-  </p>
-</div>
 <p>
   <strong>Q: Which platforms can I redeem Bloons TD6 Shop items on?</strong>
 </p>
