@@ -204,6 +204,8 @@
   "critical": "critical_c2b88c",
   "success": "success_c2b88c",
   "notification": "notification_c2b88c",
+  "premium": "premium_c2b88c",
+  "inverted": "inverted_c2b88c",
   "rarity-common": "rarity-common_ed9123",
   "rarity-epic": "rarity-epic_ed9123",
   "rarity-mythic": "rarity-mythic_ed9123",

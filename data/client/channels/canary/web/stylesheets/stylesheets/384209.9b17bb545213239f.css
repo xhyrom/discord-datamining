@@ -932,6 +932,22 @@
   border: var(--badge-border-width) solid var(--badge-notification-border);
   color: var(--badge-notification-text);
 }
+.premium_c2b88c {
+  background: linear-gradient(
+      to right,
+      var(--badge-premium-background-gradient-start),
+      var(--badge-premium-background-gradient-mid),
+      var(--badge-premium-background-gradient-end)
+    )
+    border-box;
+  border: var(--badge-border-width) solid transparent;
+  color: var(--badge-premium-text);
+}
+.inverted_c2b88c {
+  background-color: var(--badge-inverted-background);
+  border: var(--badge-border-width) solid var(--badge-inverted-border);
+  color: var(--badge-inverted-text);
+}
 .rarity-common_c2b88c {
   background: var(--badge-common-background);
   border: 1px solid var(--badge-common-border);
@@ -1041,4 +1057,4 @@
   --custom-gradient-color-end: var(--expressive-gradient-nitro-green-end);
 }
 
-/*# sourceMappingURL=384209.7d0ffd250e798c49.css.map*/
+/*# sourceMappingURL=384209.9b17bb545213239f.css.map*/
