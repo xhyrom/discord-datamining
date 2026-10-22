@@ -34,7 +34,7 @@
   top: -22px;
 }
 .stop-animations * {
-  animation: none!important__960e4;
+  animation: none !important;
   transition-property: none !important;
 }
 .layer__960e4 {
@@ -63,4 +63,4 @@
   --devtools-sidebar-width: 0;
 }
 
-/*# sourceMappingURL=555956.df7780e22d770f85.css.map*/
+/*# sourceMappingURL=555956.9a19c388d057dcbd.css.map*/

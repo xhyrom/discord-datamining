@@ -27,6 +27,10 @@
   height: var(--custom-game-icon-size);
   width: var(--custom-game-icon-size);
 }
+img.withBackground_b52e4f {
+  background-clip: content-box;
+  background-color: var(--custom-game-icon-background);
+}
 .intersectionContainer_b52e4f,
 .intersectionRef_b52e4f {
   position: absolute;
@@ -224,4 +228,4 @@
   color: var(--text-default);
 }
 
-/*# sourceMappingURL=205035.3e6cb408939be8aa.css.map*/
+/*# sourceMappingURL=205035.0f91ff2699d1b7de.css.map*/

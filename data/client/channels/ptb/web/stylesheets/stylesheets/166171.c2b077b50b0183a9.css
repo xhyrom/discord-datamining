@@ -150,6 +150,14 @@
   .addButtonContainer__4a011:has(.addButtonContent__4a011:active) {
   background: var(--opacity-white-56);
 }
+.compact__4a011 {
+  border-radius: var(--radius-md);
+  height: 100px;
+}
+.compact__4a011 .addButtonContent__4a011 {
+  height: 100%;
+  overflow: hidden;
+}
 .addButtonContent__4a011 {
   --custom-option-add-button-padding: 16px;
   align-items: center;
@@ -217,6 +225,37 @@
   inset-block-start: 12px;
   inset-inline-end: 12px;
   position: absolute;
+}
+.section_eeba05 {
+  border-top-color: var(--border-muted);
+  gap: var(--space-16);
+  margin-top: var(--space-20);
+  padding-top: var(--space-32);
+}
+.section_eeba05.above_eeba05 {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  margin-top: 0;
+  padding: var(--space-12);
+}
+.carousel_eeba05,
+.tile_eeba05 {
+  min-width: 0;
+}
+.tile_eeba05 {
+  flex: 0 0 var(--space-192);
+}
+.actions_eeba05 {
+  opacity: 0;
+}
+.actions_eeba05:focus-within,
+.carousel_eeba05:hover .actions_eeba05 {
+  opacity: 1;
+}
+@media (hover: none) {
+  .actions_eeba05 {
+    opacity: 1;
+  }
 }
 .empty__7ff05 {
   align-items: center;
@@ -346,4 +385,4 @@
   z-index: 1;
 }
 
-/*# sourceMappingURL=169727.24d2a5a2e12f0b6f.css.map*/
+/*# sourceMappingURL=166171.c2b077b50b0183a9.css.map*/
