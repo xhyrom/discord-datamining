@@ -31,7 +31,7 @@
     height="563"
   />
 </p>
-<h4 id="h_01K488Z9QAV1HA3YCK74AFZCFQ" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K488Z9QAV1HA3YCK74AFZCFQ">
   <span style="color: #666666"
     >Use data to improve Discord toggle in Data &amp; Privacy on Desktop</span
   >
@@ -43,13 +43,8 @@
 <p>
   If you’d like to further assert your right to object to our processing of your
   data, email
-  <strong
-    ><a
-      href="mailto:privacy@discord.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      >privacy@discord.com</a
-    ></strong
+  <a href="mailto:privacy@discord.com" target="_blank" rel="noopener noreferrer"
+    ><strong>privacy@discord.com</strong></a
   >.
 </p>
 <div class="info-box">

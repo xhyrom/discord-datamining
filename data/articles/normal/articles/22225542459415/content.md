@@ -37,14 +37,14 @@
 </p>
 <p>2. Configure these options:</p>
 <ul>
-  <li>
+  <li data-list-item-id="e0d00c0d23f5f42a28fc6adede84f97b6">
     <strong
       >Use data based on my Discord activity to personalize sponsored
       content:</strong
     >
     Uses your Discord activity to surface relevant sponsored content.
   </li>
-  <li>
+  <li data-list-item-id="e5db9a5ac97ef49d6ae1f76a7db300337">
     <strong
       >Use data from third party sources about me to personalize sponsored
       content: </strong
@@ -59,7 +59,7 @@
     height="497"
   />
 </p>
-<h4 id="h_01K39NWSZR8W47G1T1PD4342S1" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K39NWSZR8W47G1T1PD4342S1">
   <span style="color: #666666"
     >Data &amp; Privacy controls in Data &amp; Privacy</span
   >
@@ -87,15 +87,15 @@
     height="616"
   />
 </p>
-<h4 id="h_01K5EQFH9JCE05ESYVBYYKKYKE" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K5EQFH9JCE05ESYVBYYKKYKE">
   <span style="color: #666666"
     >Data &amp; Privacy controls in Data &amp; Privacy on mobile</span
   >
 </h4>
 <div class="info-box">
-  <strong>Important Notes:</strong>
+  <p><strong>Important Notes:</strong></p>
   <ul>
-    <li>
+    <li data-list-item-id="efbf76af808b120db39487a9e81e611aa">
       <p id="h_01K39NY0JP5MM90DM740MC6TGX">
         If you disable the use of data based on Discord activity to personalize
         sponsored content, Discord will also disable the use of data from third
@@ -104,7 +104,7 @@
         have no impact on personalization based on your Discord activity.
       </p>
     </li>
-    <li>
+    <li data-list-item-id="ef7bc0020828ee3cb5a36c8cd0cc1c796">
       <p id="h_01K39NY0JPMQG8NNCP8530PERD">
         This supports an opt out for residents of certain U.S. states who are
         entitled to an applicable opt out under those state laws (please refer
@@ -116,7 +116,7 @@
         >).
       </p>
     </li>
-    <li>
+    <li data-list-item-id="ebaec0fdd19c4870298620f476f48e727">
       <p id="h_01K39NY0JPTN7TY3NY2QQM0C62">
         If you opt out of personalization using these controls, you may still
         see sponsored content, like Quests, but they won’t be personalized. For

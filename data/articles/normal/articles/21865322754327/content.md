@@ -1,24 +1,34 @@
 <p>
   We use certain information to
-  <span style="color: #23272a" data-darkreader-inline-color=""
-    >personalize our services. This includes features like customizing your
-    experience on our discovery surfaces, highlighting activity on Discord that
-    may interest you, and surfacing Discord features and promotions from us and
-    our partners that may be of interest to you. </span
+  <span style="color: #23272a"
+    ><span data-darkreader-inline-color=""
+      >personalize our services. This includes features like customizing your
+      experience on our discovery surfaces, highlighting activity on Discord
+      that may interest you, and surfacing Discord features and promotions from
+      us and our partners that may be of interest to you.
+    </span></span
   >For example, we may use information about who you interact with to rank a
   Friend who you interact with often higher in the “Active Now” section of your
   Friends List.
 </p>
 <p>The information used to power personalized features for you include: </p>
 <ul>
-  <li>The games you play</li>
-  <li>Who you interact with</li>
-  <li>The way you use Discord</li>
-  <li>
+  <li data-list-item-id="e413f9f9fb847fb1c9b9c50537925bea5">
+    The games you play
+  </li>
+  <li data-list-item-id="eb8f84dc19738cc6bdfaab2d164ef2d83">
+    Who you interact with
+  </li>
+  <li data-list-item-id="e69bf22a5e966f9e3c73bdd83fca74d25">
+    The way you use Discord
+  </li>
+  <li data-list-item-id="ef599b1c8b7c18d715e7944747bae6c5b">
     Connections made between your Discord account and another service (e.g.,
     Xbox or Steam)
   </li>
-  <li>The servers you join</li>
+  <li data-list-item-id="e27b81a49717e63eb8859d5a081191f9a">
+    The servers you join
+  </li>
 </ul>
 <p>
   On desktop, head to <strong>User Setting &gt; Data &amp; Privacy</strong> and
@@ -36,7 +46,7 @@
       height="606"
   /></span>
 </p>
-<h4 id="h_01K4888RH0XM1CN4CJA62MMJ9R" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K4888RH0XM1CN4CJA62MMJ9R">
   <span style="color: #2e3338"
     >Use data to personalize my Discord experience toggle in Data &amp; Privacy
     on Desktop</span

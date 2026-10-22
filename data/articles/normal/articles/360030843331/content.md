@@ -1,8 +1,9 @@
 <p>
   <span style="font-weight: 400"
     >With the Server Discovery feature, a server can become public and visible
-    to all. We'll go over where to access this feature for your server below.
-  </span>
+    to all. We'll go over where to access this feature for your server
+    below.</span
+  >
 </p>
 <p>
   <span class="wysiwyg-font-size-large"
@@ -10,19 +11,19 @@
   >
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ea8b8a1a96edfcd64cc9d48c7dfe28927">
     <a href="#h_01GCHW555YT4Y6Z2P1W3668133" target="_self"
       ><span style="font-weight: 400">How to enable Server Discovery</span></a
     >
   </li>
-  <li>
+  <li data-list-item-id="e97c55dba058d658c145f181b286044e0">
     <a href="#h_01GCHW5CGDT4A50EF1ZJKHDTSC" target="_self"
       ><span style="font-weight: 400"
         >How to disable the Community feature</span
       ></a
     >
   </li>
-  <li>
+  <li data-list-item-id="e62a613493a7f59a5af8123ba3df14c86">
     <a href="#h_01GCHW5KVAF9PW62K3C8H395KG" target="_self"
       ><span style="font-weight: 400">Learn More!</span></a
     >
@@ -32,20 +33,15 @@
   <span style="font-weight: 400">How to enable Server Discovery</span>
 </h1>
 <h3 id="h_01JERG4SKE0N8RPGWAX3F90MAH">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Users that have roles with </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Manage Server</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""> or </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Administrator</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    permission enabled will have the ability to enable and disable Server
-    Discovery!</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color="">Users that have roles with </span
+    ><span data-darkreader-inline-color=""><strong>Manage Server</strong></span
+    ><span data-darkreader-inline-color=""> or </span
+    ><span data-darkreader-inline-color=""><strong>Administrator</strong></span
+    ><span data-darkreader-inline-color="">
+      permission enabled will have the ability to enable and disable Server
+      Discovery!</span
+    ></span
   >
 </h3>
 <p>
@@ -55,32 +51,56 @@
   >
 </p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e5f5882c57287cb3c868b81d6c71d7776"
+  >
     <span style="font-weight: 400"
       >Enabling safety requirements for a safe environment.</span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ee7394cddda0ebbb6c156006046d7dd84"
+  >
     <span style="font-weight: 400"
       >Server must have at least 1,000 members to qualify. </span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ecb6169c3dd13b6399c630d6669d89421"
+  >
     <span style="font-weight: 400"
       >Servers need to be at least 8 weeks old to be in Discovery.</span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e69c6d8e22abc03f1394b6b3788191d5b"
+  >
     <span style="font-weight: 400"
       >Servers must meet certain activity requirements to be in Discovery.</span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e51ce1862b79daec58f9129d0f85d380f"
+  >
     <span style="font-weight: 400"
       >Your server name, description, and channel name looks clean!</span
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e8fbe99f9cb3a795ded60b0cbb8c1846b"
+  >
     <span style="font-weight: 400"
       >Enable the 2FA Requirement For Moderation Setting</span
     >
@@ -106,8 +126,8 @@
     >2. Next, be sure to set your Discord server to Community by selecting
     <strong>Enable Community</strong> and pressing on the
     <strong>Get Started </strong>icon. Then, you will be prompted to set a few
-    safety requirements.
-  </span>
+    safety requirements.</span
+  >
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
@@ -122,8 +142,8 @@
   <span style="font-weight: 400"
     >3. After your server has been set to <strong>Community</strong>,  you can
     head into the <strong>Discovery</strong> tab and select the
-    <strong>Set Up Discovery </strong>button.
-  </span>
+    <strong>Set Up Discovery </strong>button.</span
+  >
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
@@ -136,8 +156,8 @@
   <span style="font-weight: 400"
     >4. Once the server has met all the requirements,
     <strong>Server Discovery</strong> can now be enabled by pressing the
-    <strong>Set Up Discovery</strong> button.
-  </span>
+    <strong>Set Up Discovery</strong> button.</span
+  >
 </p>
 <h1 id="h_01GCHW5CGDT4A50EF1ZJKHDTSC">
   <span style="font-weight: 400">How to disable the Community feature</span>
