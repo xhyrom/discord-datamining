@@ -1,72 +1,3 @@
-.placeholder__84ae7 {
-  align-items: center;
-  background-color: var(--background-mod-subtle);
-  border: 1px dashed var(--border-subtle);
-  border-radius: var(--radius-md);
-  display: flex;
-  justify-content: center;
-  padding: var(--space-8) var(--space-12);
-}
-.indicatorDot__3da4a {
-  border-radius: var(--radius-round);
-  display: inline-block;
-  flex: 0 0 auto;
-}
-.xs__3da4a {
-  height: var(--space-4);
-  width: var(--space-4);
-}
-.sm__3da4a {
-  height: var(--space-6);
-  width: var(--space-6);
-}
-.md__3da4a {
-  height: var(--space-8);
-  width: var(--space-8);
-}
-.primary__3da4a {
-  background-color: var(--badge-primary-background);
-}
-.notification__3da4a {
-  background-color: var(--badge-notification-background);
-}
-.neutral__3da4a {
-  background-color: var(--icon-strong);
-}
-.active__3da4a {
-  background-color: var(--status-positive);
-}
-.cutout-base-lower__3da4a {
-  box-shadow: 0 0 0 2px var(--background-base-lower);
-}
-.enable-forced-colors .indicatorDot__3da4a {
-  background-color: Highlight;
-  forced-color-adjust: none;
-}
-.surfaces_afabb3 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-16);
-}
-.surface_afabb3 {
-  background-color: var(--background-base-lower);
-  border-radius: var(--radius-md);
-  padding: var(--space-16);
-}
-.grid_afabb3 {
-  display: grid;
-  gap: var(--space-12) var(--space-24);
-  grid-template-columns: repeat(4, auto);
-  justify-items: center;
-}
-.cell_afabb3,
-.grid_afabb3 {
-  align-items: center;
-}
-.cell_afabb3 {
-  display: inline-flex;
-  justify-content: center;
-}
 .wrapper_fc8177 {
   box-sizing: border-box;
   position: relative;
@@ -192,21 +123,5 @@
 .compactTimestamp_fc8177 {
   margin-inline: -4rem 0.25rem;
 }
-.newContentCard__62256 {
-  cursor: pointer;
-}
-.newContentCard__62256:hover .newContentRow__62256 {
-  background: var(--user-profile-overlay-background-hover);
-}
-.newContentRow__62256 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: var(--space-8);
-  padding: var(--space-8);
-}
-.newContentDot__62256 {
-  flex-shrink: 0;
-}
 
-/*# sourceMappingURL=551572.0eadb14996037417.css.map*/
+/*# sourceMappingURL=123141.de609262277cfd38.css.map*/

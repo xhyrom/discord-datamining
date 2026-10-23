@@ -1721,9 +1721,6 @@
   padding: 2px;
   width: 100%;
 }
-.premiumBadge__463b7 {
-  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
-}
 .limitedTimeText__463b7 {
   text-transform: uppercase;
 }
@@ -1734,23 +1731,18 @@
   outline: 2px solid Canvas;
 }
 .newBadge__03991 {
-  inset-inline-end: -4px;
-  position: absolute;
-  text-transform: uppercase;
+  display: flex;
   top: -4px;
 }
-.newBadgeText__03991 {
-  align-items: center;
-  display: flex;
-  gap: var(--space-4);
-  justify-content: center;
+.iconBadge__03991,
+.newBadge__03991 {
+  inset-inline-end: -4px;
+  position: absolute;
 }
 .iconBadge__03991 {
   border-radius: 50%;
   height: 20px;
-  inset-inline-end: -4px;
   padding: 2px;
-  position: absolute;
   top: -6px;
   width: 20px;
 }
@@ -1934,4 +1926,4 @@
   margin-inline-end: 6px;
 }
 
-/*# sourceMappingURL=5257.b3b18a9a4641e4dc.css.map*/
+/*# sourceMappingURL=5257.15d8e5ad60b554b0.css.map*/

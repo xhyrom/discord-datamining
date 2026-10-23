@@ -50,6 +50,7 @@
     --__spoiler-warning-background-color
   );
 }
+.spoilerContent__299eb.hidden__299eb.hovered__299eb,
 .spoilerContent__299eb.hidden__299eb:hover {
   --__current--spoiler-background-color: var(
     --__spoiler-background-color--hidden--hover
@@ -68,6 +69,7 @@
   --__obscured-background-brightness: 0;
   --__obscured-background-blur-radius: 500px;
 }
+.spoilerContent__299eb.hidden__299eb.opaque__299eb.hovered__299eb,
 .spoilerContent__299eb.hidden__299eb.opaque__299eb:hover {
   --__current--spoiler-background-color: var(
     --__spoiler-background-color--hidden
@@ -303,4 +305,4 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-/*# sourceMappingURL=880150.0c97b70a588f0652.css.map*/
+/*# sourceMappingURL=880150.91508f3ed1e2598f.css.map*/

@@ -1,25 +1,18 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["765531"],
+  ["14083"],
   {
-    272318(a, t, _) {
-      a.exports = {
-        Vg: "grid_c63815",
-        Hn: "cell_c63815",
-        k$: "animationWrapper_c63815",
-        Pf: "label_c63815",
-        QT: "switchWrapper_c63815",
+    304133(t, _, a) {
+      t.exports = {
+        kL: "container__577c3",
+        yJ: "links__577c3",
+        nf: "link__577c3",
+        h_: "description__577c3",
       };
     },
-    404544(a, t, _) {
-      a.exports = { H: "variants_f72374", N: "card_f72374" };
-    },
-    393743(a, t, _) {
-      a.exports = { q: "layer__95d7b" };
-    },
-    395762(a, t, _) {
-      _.r(
-        (a.exports = {
+    395762(t, _, a) {
+      a.r(
+        (t.exports = {
           wrapper: "wrapper__518a0",
           critical: "critical__518a0",
           success: "success__518a0",
@@ -31,9 +24,9 @@
         }),
       );
     },
-    435871(a, t, _) {
-      _.r(
-        (a.exports = {
+    435871(t, _, a) {
+      a.r(
+        (t.exports = {
           container: "container__5ab60",
           top: "top__5ab60",
           bottom: "bottom__5ab60",
@@ -48,21 +41,14 @@
         }),
       );
     },
-    627805(a, t, _) {
-      a.exports = {
+    627805(t, _, a) {
+      t.exports = {
         EG: "entity__67232",
         Sl: "image__67232",
         M2: "imageContain__67232",
         my: "avatar__67232",
         EB: "guild__67232",
         Hj: "guildAcronym__67232",
-      };
-    },
-    381275(a, t, _) {
-      a.exports = {
-        Os: "group__8a9ed",
-        KE: "toolbar__8a9ed",
-        me: "separator__8a9ed",
       };
     },
   },

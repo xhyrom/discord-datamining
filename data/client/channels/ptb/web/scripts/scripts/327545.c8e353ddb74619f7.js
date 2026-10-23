@@ -17,6 +17,7 @@
         yT: "orbitron__89a31",
         NX: "newRocker__89a31",
         x4: "kalam__89a31",
+        qP: "pricedown__89a31",
       };
     },
   },
