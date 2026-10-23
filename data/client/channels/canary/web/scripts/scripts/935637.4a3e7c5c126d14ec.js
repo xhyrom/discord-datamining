@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["72993"],
+  ["935637"],
   {
     679474(e, t, r) {
       var n = r(912381),
@@ -73861,6 +73861,27 @@
           );
         };
     },
+    196765(e, t, r) {
+      "use strict";
+      r.d(t, { P: () => a, v: () => l });
+      var n = r(582128),
+        i = r(976245);
+      let o = (e) => e;
+      function a(e, t = o) {
+        let r = n.useSyncExternalStore(
+          e.subscribe,
+          n.useCallback(() => t(e.getState()), [e, t]),
+          n.useCallback(() => t(e.getInitialState()), [e, t]),
+        );
+        return n.useDebugValue(r), r;
+      }
+      let s = (e) => {
+          let t = (0, i.y)(e),
+            r = (e) => a(t, e);
+          return Object.assign(r, t), r;
+        },
+        l = (e) => (e ? s(e) : s);
+    },
     882035(e, t, r) {
       "use strict";
       r.d(t, { h: () => c, n: () => l });
@@ -73955,4 +73976,4 @@
     },
   },
 ]);
-//# sourceMappingURL=72993.f39e2d699b82292e.js.map
+//# sourceMappingURL=935637.4a3e7c5c126d14ec.js.map
