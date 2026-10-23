@@ -5,35 +5,49 @@
   >
 </p>
 <p>
-  <strong
-    ><span class="wysiwyg-font-size-large"
-      >What does this article cover?</span
-    ></strong
+  <span class="wysiwyg-font-size-large"
+    ><strong>What does this article cover?</strong></span
   >
 </p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e6be605113a44052be7fde6a8b8253595"
+  >
     <a href="#h_01GCHTHA4SW6YGTQ47XVVMPT8P" target="_self"
       ><span style="font-weight: 400"
         >What email notifications can I receive from Discord?</span
       ></a
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e5c666ccfd5187425204ee5fb3be46532"
+  >
     <a href="#h_01GCHTHKSJ5FKEGX92BFAKV5S6" target="_self"
       ><span style="font-weight: 400"
         >How can I manage my email notification settings?</span
       ></a
     >
     <ul>
-      <li style="font-weight: 400" aria-level="1">
+      <li
+        style="font-weight: 400"
+        aria-level="1"
+        data-list-item-id="e349f9025636103c7041bfae27dec4c89"
+      >
         <a href="#h_01GCHTHW65YY7HTV3CC0Q0SZSS" target="_self"
           ><span style="font-weight: 400"
             >How to Manage Email Notification Settings on Browser</span
           ></a
         >
       </li>
-      <li style="font-weight: 400" aria-level="2">
+      <li
+        style="font-weight: 400"
+        aria-level="2"
+        data-list-item-id="e9625fcbc2df0ad8e9668222c9ebd3192"
+      >
         <a href="#h_01GCHTJGSH8QKNCA6A54ZHXW6G" target="_self"
           ><span style="font-weight: 400"
             >How To Manage Email Notification Settings on Desktop</span
@@ -42,7 +56,11 @@
       </li>
     </ul>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ecd5f569cfe93d3bd321dc3af16968b44"
+  >
      <a href="#h_01GCHTJSQD5EFYV5JNZR5VTCFN" target="_self"
       ><span style="font-weight: 400"
         >Can I unsubscribe from Discord email notifications within the
@@ -61,8 +79,8 @@
     >Enabling email notifications is a great way to keep track of all the
     shenanigans while you’re away from Discord. For instance, Discord will send
     transactional emails to notify users when subscription updates and purchases
-    have been made to their account.
-  </span>
+    have been made to their account.</span
+  >
 </p>
 <p>
   <span style="font-weight: 400"
@@ -107,7 +125,7 @@
     >How can I manage my email notification settings?</span
   >
 </h1>
-<h3>
+<h3 id="h_01M5N3QDPG094PWMW1MC9TR5KE">
   <span style="font-weight: 400">Note</span>:
   <span style="font-weight: 400"
     >Discord email notifications cannot be managed via mobile app. </span
@@ -134,8 +152,8 @@
     button [<img
       src="https://support.discord.com/hc/article_attachments/4408811448599"
       alt="Vector.png"
-    />]located on the bottom left corner.
-  </span>
+    />]located on the bottom left corner.</span
+  >
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
@@ -189,7 +207,7 @@
       src="https://support.discord.com/hc/article_attachments/4408811448599"
       alt="Vector.png" /></span
   ><span style="font-weight: 400">]: </span
-  ><span style="font-weight: 400"> <br /></span>
+  ><span style="font-weight: 400"> </span><br /> 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -225,8 +243,8 @@
 <p class="wysiwyg-text-align-left">
   <span style="font-weight: 400"
     >Customizing which email notifications you’d like to receive is a great way
-    to declutter your space while still being part of the loop!
-  </span>
+    to declutter your space while still being part of the loop!</span
+  >
 </p>
 <h1 id="h_01GCHTJSQD5EFYV5JNZR5VTCFN">
   <span style="font-weight: 400"
@@ -237,24 +255,23 @@
   <span style="font-weight: 400"
     >You can unsubscribe from any or all of these emails at any time by pressing
     <strong>Unsubscribe</strong> in the email itself. Learn more on how to stop
-    email notifications
-    <a
-      href="https://support.discord.com/hc/en-us/articles/115001657287"
-      target="_blank"
-      rel="noopener noreferrer"
-      >here</a
-    >.
-  </span>
+    email notifications </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/115001657287"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span style="font-weight: 400">here</span></a
+  ><span style="font-weight: 400">.</span>
 </p>
-<h3>
+<h3 id="h_01M5N3QDPHJY6N2ZQ0VRPC36DE">
   <span style="font-weight: 400"
     >Note: If you choose to unsubscribe in the email itself, this is a permanent
-    action and you will no longer receive email notifications.
-  </span>
+    action and you will no longer receive email notifications.</span
+  >
 </h3>
 <p>
   <span style="font-weight: 400"
     >However, if you’d like to continue receiving email notifications, you can
-    customize your preferences through the web browser or desktop app.
-  </span>
+    customize your preferences through the web browser or desktop app.</span
+  >
 </p>

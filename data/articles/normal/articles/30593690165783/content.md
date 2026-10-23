@@ -1,19 +1,24 @@
 <p>
-  <strong>Discord Orbs</strong> are virtual rewards that you can earn by
-  completing
-  <a
+  <span data-token-index="0"><strong>Discord Orbs</strong></span> are virtual
+  rewards that you can earn by <span data-token-index="2">completing </span
+  ><a
     href="https://support.discord.com/hc/articles/22225719947543"
     target="_blank"
     rel="noopener noreferrer"
+    tabindex="0"
+    data-token-index="3"
     >Quests</a
-  >. Redeem them in the
-  <a
-    href="https://support.discord.com/hc/en-us/articles/17162747936663"
+  ><span data-token-index="4">.</span> Orbs can also be earned through select
+  promotions on Discord. <span data-token-index="6">Redeem them in the </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ#h_01JZ9CB0KZ0NZB7ECSAFY6DEW2"
     target="_blank"
     rel="noopener noreferrer"
-    >Shop</a
+    ><span data-token-index="7">Orbs </span>Shop</a
+  ><span data-token-index="9">
+    for exciting perks like Nitro credits and select items redeemable with
+    Orbs.</span
   >
-  for exciting perks like Nitro credits and Orbs-exclusive items.
 </p>
 <div class="toc-box">
   <p>
@@ -100,36 +105,41 @@
   >.
 </div>
 <p>
-  <span style="color: #434343"
-    ><span data-darkreader-inline-color=""
-      >Discord Orbs are rewards you earn by completing
-    </span></span
+  Discord Orbs are rewards you earn by
+  <span data-token-index="1">completing </span
   ><a
     href="https://support.discord.com/hc/articles/22225719947543"
-    target="_blank"
+    tabindex="0"
+    data-token-index="2"
     rel="noopener noreferrer"
-    ><span style="color: #434343"
-      ><span data-darkreader-inline-color="">Quests</span></span
-    ></a
-  ><span style="color: #434343"
-    ><span data-darkreader-inline-color=""
-      >. You can use them in the
-    </span></span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/17162747936663"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span style="color: #434343"
-      ><span data-darkreader-inline-color="">Shop</span></span
-    ></a
-  ><span style="color: #434343"
-    ><span data-darkreader-inline-color="">
-      to get Nitro credits, items from the main collections, and more. It’s an
-      easy way to unlock Discord upgrades, no payment method required.</span
-    ></span
+    >Quests</a
+  ><span data-token-index="3">.</span>
+  <span data-token-index="5"
+    >Orbs can also be earned through select promotions on Discord.</span
   >
+  You can <span data-token-index="7">use them in the </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ#h_01JZ9CB0KZ0NZB7ECSAFY6DEW2"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span data-token-index="8">Orbs </span></a
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ#h_01JZ9CB0KZ0NZB7ECSAFY6DEW2"
+    target="_blank"
+    rel="noopener noreferrer"
+    tabindex="0"
+    data-token-index="9"
+    >Shop</a
+  ><span data-token-index="10"> </span>to get Nitro credits, items from the main
+  collections, and more. It's an easy way to unlock Discord upgrades, no payment
+  method required.
 </p>
 <h1 id="h_01JVN9BXVA54DT1W6C0NAHSM73">How do I earn Discord Orbs?</h1>
+<div class="info-box">
+  <strong>Note:</strong> Orbs can also be earned through select promotions on
+  Discord, separate from Quests. Check individual promotion details for
+  eligibility.
+</div>
 <h2 id="h_01K86MYX6G5E72C8NTS0JPPEFV">Desktop/Browser</h2>
 <p>
   1. To start earning Orbs,
@@ -221,9 +231,12 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33244208615319"
-    width="608"
-    height="555"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 1667/1686; width: 86.37%"
+    src="https://support.discord.com/hc/article_attachments/44480792016279"
+    alt="Orbs Balance"
+    width="1667"
+    height="1686"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01JZ9AKNM6PTF4AKG7FP94KP3H">
@@ -351,13 +364,13 @@
     <strong>Quest Home</strong>
   </li>
 </ul>
-<figure class="wysiwyg-image">
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 88.29%">
   <img
-    style="aspect-ratio: 800/596"
-    src="https://support.discord.com/hc/article_attachments/43923641726231"
+    style="aspect-ratio: 800/574"
+    src="https://support.discord.com/hc/article_attachments/44480821331863"
     alt="Orb Challenges in Quest Home"
     width="800"
-    height="596"
+    height="574"
   />
 </figure>
 <h4 class="wysiwyg-text-align-center" id="h_01M3WKMSBVV799ZPQ9AYF3NVEZ">
@@ -371,13 +384,13 @@
     <strong>The Shop</strong>
   </li>
 </ul>
-<figure class="wysiwyg-image">
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 89.43%">
   <img
-    style="aspect-ratio: 800/596"
-    src="https://support.discord.com/hc/article_attachments/43923625464087"
+    style="aspect-ratio: 800/574"
+    src="https://support.discord.com/hc/article_attachments/44480821332247"
     alt="Orb Challenges in the Shop"
     width="800"
-    height="596"
+    height="574"
   />
 </figure>
 <h4 class="wysiwyg-text-align-center" id="h_01M3WKPQXYRB446ZF83WX2CCMB">
@@ -389,7 +402,7 @@
     the <strong>Orbs</strong> menu item in the account pop-out
   </li>
 </ul>
-<figure class="wysiwyg-image">
+<figure class="wysiwyg-image wysiwyg-image-resized" style="width: 88.29%">
   <img
     style="aspect-ratio: 800/596"
     src="https://support.discord.com/hc/article_attachments/43923625465623"
@@ -467,19 +480,22 @@
   <span style="color: #666666">Shop Tab</span>
 </h4>
 <p>
-  3. In the Shop, select the <strong>Orbs Exclusives tab</strong> at the top to
-  view Orbs-exclusive items.
+  3. In the Shop, select the <strong>Orbs Shop tab</strong> at the top to view
+  Orbs-exclusive items.
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/33511693647895"
-      width="624"
-      height="652"
+      class="wysiwyg-image-resized"
+      style="aspect-ratio: 2426/1750; width: 88.14%"
+      src="https://support.discord.com/hc/article_attachments/44480821333143"
+      alt="Screenshot 2026-10-23 at 11.04.16 AM.png"
+      width="2426"
+      height="1750"
   /></span>
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01JZ9APQ8PJEG56K5J553BDZER">
-  <span style="color: #666666">Orbs Exclusives Tab in the Shop</span>
+  <span style="color: #666666">Orbs Shop Tab in the Shop</span>
 </h4>
 <p>
   <span class="wysiwyg-font-size-x-large"><strong>Mobile</strong></span>
@@ -519,7 +535,7 @@
 <p>Here’s what you <em>can</em> purchase with Orbs in the Shop: </p>
 <ul>
   <li data-list-item-id="ebb1f765f08081cd7cb417cfe33b463ad">
-    Shop items from the main collections
+    Shop items from the Orbs Shop
   </li>
   <li data-list-item-id="e96be3d6507fb0923df9a905adf69add8">
     Orbs-exclusives:
@@ -528,7 +544,10 @@
       target="_blank"
       rel="noopener noreferrer"
       >Nitro credits</a
-    >, a profile badge, special Avatar Decoration, and special Profile Effect. 
+    >, a profile badge, special Avatar Decoration, and special Profile Effect.
+  </li>
+  <li data-list-item-id="eb1a040a2937663598c873940d8676b87">
+    Orbs redeemable items: Select popular items redeemable with Orbs 
   </li>
 </ul>
 <p>You <em>cannot</em> purchase these items with Orbs: </p>
@@ -542,8 +561,8 @@
   </li>
 </ul>
 <div class="info-box">
-  Nitro credits are considered an Orbs-exclusive item within the Shop. However,
-  you can also earn them occasionally by completing specific
+  Nitro credits are considered an Orbs-exclusive item within the Orbs Shop.
+  However, you can also earn them occasionally by completing specific
   <a
     href="https://support.discord.com/hc/en-us/articles/22225719947543-Discord-Quests-FAQ"
     target="_blank"
@@ -558,11 +577,9 @@
   >
 </p>
 <p>
-  1. On desktop or browser, browse Orbs-exclusive items in the
-  <strong>Orbs Exclusives</strong> <strong>tab</strong> of the
-  <strong>Shop</strong>, or check the <strong>Shop All</strong>
-  <strong>tab</strong> to see the full collection of items that can be claimed
-  with Orbs. 
+  1. On desktop or browser, browse Orbs-redeemable items in the Orbs Shop tab of
+  the Shop, or check the Shop All tab to see the full collection of items that
+  can be claimed with Orbs.
 </p>
 <div class="info-box">
   <span style="color: #434343"
@@ -597,17 +614,16 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33244208620311"
-    width="624"
-    height="451"
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 800/574; width: 89.71%"
+    src="https://support.discord.com/hc/article_attachments/44480792020759"
+    alt="Orbs Shop Items "
+    width="800"
+    height="574"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01JVN9C8T7N1TY4WR71F55X55B">
-  <span style="color: #666666"
-    ><span data-darkreader-inline-color=""
-      >Orbs Exclusives Shop Items </span
-    ></span
-  >
+  <span data-token-index="0">Orbs Shop Items </span>
 </h4>
 <div class="tip-box">
   <p>
@@ -669,9 +685,16 @@
 <ul>
   <li data-list-item-id="eae2cb9a378561b5688159439096beb08">
     Switch between earning and spending Orbs by selecting the buttons in the
-    Shop banner (<strong>Orbs Exclusives </strong>tab,
-    <strong>Quest Home</strong> or through your <strong>Orbs balance</strong>). 
-     
+    Shop banner (<span data-token-index="1"
+      ><strong>Orbs</strong> <strong>Shop</strong></span
+    ><span data-token-index="2"> <strong>tab</strong></span
+    >,
+    <span data-token-index="4"
+      ><strong>Quest</strong> <strong>Home</strong></span
+    >, or through your
+    <span data-token-index="6"
+      ><strong>Orbs</strong> <strong>balance</strong></span
+    >).
   </li>
   <li data-list-item-id="ea6e66ef73233fb5bd61de78578355583">
     Orbs can only be used within Discord–they cannot be converted to real
@@ -805,8 +828,9 @@
 <h2 id="h_01JZ9AY4XRM4JH1FDGDDHKVMCZ">Spending Orbs</h2>
 <p><strong>Q: I noticed I can’t buy a specific Shop item. Why not?</strong></p>
 <p>
-  A: You can spend Orbs on most Shop items, including Orbs-exclusive items.
-  However, partner branded Shop items cannot be purchased with Orbs.
+  A: You can spend Orbs on most Shop items, including
+  <span data-token-index="1">items in the Orbs Shop</span>. Items redeemable
+  with Orbs will display Orbs amount
 </p>
 <p>
   <strong>Q: Can I refund something I claimed in the Shop with Orbs?</strong>
