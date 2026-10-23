@@ -6,6 +6,7 @@
       e.exports = {
         ur: "spoilerContent__299eb",
         R: "hidden__299eb",
+        yo: "hovered__299eb",
         OZ: "opaque__299eb",
         q2: "spoilerContainer__299eb",
         x: "embedContainer__299eb",

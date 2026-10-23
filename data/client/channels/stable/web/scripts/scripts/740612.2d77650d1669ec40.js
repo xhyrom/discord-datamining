@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["472240"],
+  ["740612"],
   {
     106071(e) {
       function t(e, t, r, n) {
@@ -5652,27 +5652,6 @@
       }
       r.d(t, { A: () => n });
     },
-    196765(e, t, r) {
-      "use strict";
-      r.d(t, { P: () => a, v: () => u });
-      var n = r(582128),
-        i = r(976245);
-      let o = (e) => e;
-      function a(e, t = o) {
-        let r = n.useSyncExternalStore(
-          e.subscribe,
-          n.useCallback(() => t(e.getState()), [e, t]),
-          n.useCallback(() => t(e.getInitialState()), [e, t]),
-        );
-        return n.useDebugValue(r), r;
-      }
-      let s = (e) => {
-          let t = (0, i.y)(e),
-            r = (e) => a(t, e);
-          return Object.assign(r, t), r;
-        },
-        u = (e) => (e ? s(e) : s);
-    },
   },
 ]);
-//# sourceMappingURL=472240.0e11c51513246260.js.map
+//# sourceMappingURL=740612.2d77650d1669ec40.js.map

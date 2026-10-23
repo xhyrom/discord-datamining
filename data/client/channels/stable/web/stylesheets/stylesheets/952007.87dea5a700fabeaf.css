@@ -135,6 +135,18 @@
   --bg-gradient-hanami-3: hsl(var(--bg-gradient-hanami-3-hsl) / 1);
   --bg-gradient-hanami-3-hsl: 115.714
     calc(var(--saturation-factor, 1) * 43.077%) 74.51%;
+  --bg-gradient-hexagon-1: hsl(var(--bg-gradient-hexagon-1-hsl) / 1);
+  --bg-gradient-hexagon-1-hsl: 36.98 calc(var(--saturation-factor, 1) * 97.61%)
+    49.216%;
+  --bg-gradient-hexagon-2: hsl(var(--bg-gradient-hexagon-2-hsl) / 1);
+  --bg-gradient-hexagon-2-hsl: 340.392 calc(var(--saturation-factor, 1) * 100%)
+    70%;
+  --bg-gradient-hexagon-3: hsl(var(--bg-gradient-hexagon-3-hsl) / 1);
+  --bg-gradient-hexagon-3-hsl: 283.14 calc(var(--saturation-factor, 1) * 99.18%)
+    47.843%;
+  --bg-gradient-hexagon-4: hsl(var(--bg-gradient-hexagon-4-hsl) / 1);
+  --bg-gradient-hexagon-4-hsl: 240.323 calc(var(--saturation-factor, 1) * 100%)
+    63.529%;
   --bg-gradient-hexagon-promo-1: hsl(
     var(--bg-gradient-hexagon-promo-1-hsl) / 1
   );
@@ -21962,6 +21974,13 @@
 }
 @font-face {
   font-display: swap;
+  font-family: Pricedown;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/assets/a7bafac436428e6c.woff2) format("woff2");
+}
+@font-face {
+  font-display: swap;
   font-family: AI Visual Identity Glyphs;
   font-style: normal;
   font-weight: 400;
@@ -22550,4 +22569,4 @@
   --motion-spring-subtle-duration: 598ms;
 }
 
-/*# sourceMappingURL=952007.1486d9a8a5b1fa6c.css.map*/
+/*# sourceMappingURL=952007.87dea5a700fabeaf.css.map*/
