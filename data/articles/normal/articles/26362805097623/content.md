@@ -3,55 +3,76 @@
   give you Nitro for a limited amount of time.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
   <ul>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e4049b5654b95fdb064971ff902f9d604"
+    >
       <a href="#h_01JDB0ACQV156W5C32S3XR69WC"
         ><strong>What are Nitro Credits?</strong></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e7ea1070741204c0d2e0b6072e5a88fe2"
+    >
       <a href="#h_01JDB0ACQVVVSJ44EZDSKQQZ18"
         ><strong>How do I earn Nitro Credits?</strong></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e6095d067f655453978841b5b239e6786"
+    >
       <a href="#h_01JDB0ACQVRA46TFAA79SVQBH0"
         ><strong>Where can I view my Nitro Credits?</strong></a
       >
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e36fd1c011e3986313bd37a6a510346a4"
+    >
       <a href="#h_01JDB0ACQVBSBSDEQWZJFKV33A"
         ><strong>How do I use Nitro Credits?</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01JRKCBE60B42NJH08MG46EDCG"
-          >Managing Your Subscription with Active Nitro Credits</a
-        ></strong
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e2a91a927068ea4eef57c494bfaf7f5d6"
+    >
+      <a href="#h_01JRKCBE60B42NJH08MG46EDCG"
+        ><strong
+          >Managing Your Subscription with Active Nitro Credits</strong
+        ></a
       >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01JRKCBE61M702ZKMNY842AVQH"
-              >Nitro Subscription</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="efc5f419c8b3c11bdaa0c82210d3bee93"
+        >
+          <a href="#h_01JRKCBE61M702ZKMNY842AVQH"
+            ><strong>Nitro Subscription</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01JRKCBE61A06RGW8XDQRNPCGW"
-              >Server Boost Subscription</a
-            ></strong
+        <li
+          class="wysiwyg-list-bold"
+          data-list-item-id="eaa89a9e623aa01f42566542469a9c557"
+        >
+          <a href="#h_01JRKCBE61A06RGW8XDQRNPCGW"
+            ><strong>Server Boost Subscription</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="eeb479760d51986d7ba261ee5da16774a"
+    >
       <a href="#h_01JDB0ACQVQ96K8TW31DJ2KR43"
         ><strong>Frequently Asked Questions</strong></a
       >
@@ -61,7 +82,7 @@
 <h1 id="h_01JDB0ACQV156W5C32S3XR69WC">What are Nitro Credits?</h1>
 <p>Nitro credits give you Nitro for a limited amount of time. </p>
 <ul>
-  <li>
+  <li data-list-item-id="e7c4d790e292419172b6d9b1e7dc79c7f">
     They are earned by purchasing in the
     <a
       href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ"
@@ -76,24 +97,37 @@
       >Quests</a
     >. 
   </li>
-  <li>The duration of each credit varies depending on the Quest. </li>
-  <li>
+  <li data-list-item-id="e2df2184139e6a46a8c08de6ee63babb8">
+    The duration of each credit varies
+    <span data-token-index="1"
+      >depending on the purchase credits and/or Quest.</span
+    >
+  </li>
+  <li data-list-item-id="e42296e232d59f8b21ca10a6748bcb990">
     Nitro credits do not expire and can stack if multiple Nitro credits are
     earned.
   </li>
-  <li>Nitro credits do not become a recurring subscription.</li>
-  <li>
+  <li data-list-item-id="ed69179c69ce601f5f3baac186ee24ba2">
+    Nitro credits do not become a recurring subscription.
+  </li>
+  <li data-list-item-id="ea5d0c28634037e73d52561666526f171">
     Once all your Nitro credits have been used and their duration is over, your
     Nitro subscription will revert to its normal state.
   </li>
-  <li>
+  <li data-list-item-id="eca94969f239c5201e2b43af77cdb90e1">
     Some Nitro Perks are not available with Nitro credits. Perks that are not
     included:
     <ul>
-      <li>Two Boosts</li>
-      <li>Boost discount</li>
-      <li>Profile badge</li>
-      <li>Share Nitro (Referral Program)</li>
+      <li data-list-item-id="e826727ba67a36c3211e1ca37c92b86f3">Two Boosts</li>
+      <li data-list-item-id="ee2336e24134637f5ae07e84f1434dc79">
+        Boost discount
+      </li>
+      <li data-list-item-id="e8dca1c1c4dcdd3819145d748a11c05c2">
+        Profile badge
+      </li>
+      <li data-list-item-id="e579a5b2f5ef97b91e3158e9b044c1da7">
+        Share Nitro (Referral Program)
+      </li>
     </ul>
   </li>
 </ul>
@@ -119,18 +153,17 @@
   You can claim Nitro credits in the
   <a
     href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ"
-    ><span class="wysiwyg-underline" style="color: #1155cc">Shop</span></a
+    ><span class="wysiwyg-underline">Shop</span></a
   >
   using
   <a href="https://support.discord.com/hc/en-us/articles/30593690165783"
-    ><span class="wysiwyg-underline" style="color: #1155cc"
-      >Discord Orbs</span
-    ></a
+    ><span class="wysiwyg-underline">Discord Orbs</span></a
   >. Orbs are virtual rewards that you can earn by completing Quests. 
 </p>
 <p>
-  Once you have earned Orbs, you can get Nitro credits in the 
-  <strong>Shop &gt; Orbs Exclusives page. </strong> 
+  Once you have earned Orbs, you can get Nitro credits in the <strong
+    >Shop &gt; Orbs Shop page. </strong
+  > 
 </p>
 <div class="book-box">
   <strong>Want to learn more?</strong><br />Find out how to earn Discord Orbs
@@ -143,13 +176,14 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33244735239575"
-    width="624"
-    height="453"
+    src="https://support.discord.com/hc/article_attachments/44475967552279"
+    alt="Screen Recording 2026-10-23 at 9.45.56 AM.gif"
+    width="800"
+    height="576"
   />
 </p>
-<h4 id="h_01JZ9DJEK7GHZE9TS56Y3WWYFC" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Claiming Nitro credit in Orbs Exclusives</span>
+<h4 class="wysiwyg-text-align-center" id="h_01JZ9DJEK7GHZE9TS56Y3WWYFC">
+  <span data-token-index="0">Claiming Nitro credit in Orbs Shop</span>
 </h4>
 <div class="info-box">
   Nitro credits are also occasionally offered as Quest rewards. For more details
@@ -177,7 +211,7 @@
     height="62"
   />
 </p>
-<h4 id="h_01JDB0ACQVS7DGMW92K2K7MPR3" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JDB0ACQVS7DGMW92K2K7MPR3">
   <span style="color: #666666">Cogwheel icon on desktop</span>
 </h4>
 <p>
@@ -192,7 +226,7 @@
     height="489"
   />
 </p>
-<h4 id="h_01JRKC4JR5DN9PA4SX0MK8M2AK" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JRKC4JR5DN9PA4SX0MK8M2AK">
   <span style="color: #666666"
     >Example of Nitro credits displayed in Subscriptions tab</span
   >
@@ -203,16 +237,18 @@
   depending on whether you have a pre-existing subscription or not. 
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ecbedb8ae7569dac95172a1058a52a098">
     <strong>If you have no Nitro subscription</strong>: 
     <ul>
-      <li>Credits activate instantly upon earning them.</li>
+      <li data-list-item-id="e6195276df2894e7d76bbec17af278650">
+        Credits activate instantly upon earning them.
+      </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="e0b22a02f056b2841e435d103cb3a408d">
     <strong>If you have an active Nitro subscription</strong>: 
     <ul>
-      <li>
+      <li data-list-item-id="e71bcde4acef9b6ddede5e243474d0149">
         Credits activate automatically at the end of your current billing cycle.
       </li>
     </ul>
@@ -233,15 +269,15 @@
   here’s what happens in different scenarios:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e2e91ece5aa59a7f9541ea3ca329e9475">
     <strong>Starting a new Nitro subscription or upgrading</strong>: Your
     credits will pause and start again at the end of your billing cycle.
   </li>
-  <li>
+  <li data-list-item-id="eafb91b3228ab53775a6406a3553f9e05">
     <strong>Downgrading or removing additional Boosts from Nitro</strong>: Any
     changes will take effect after your current credits expire.
   </li>
-  <li>
+  <li data-list-item-id="e84c16110273396bbfdb44f4eb6db99e7">
     <strong>Cancelling Nitro</strong>: Changes happen right away, but don't
     worry - your active credits will still work.
   </li>
@@ -327,11 +363,11 @@
   be applied in one of two ways:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ec0b2adc74ff5bdd86436b0e66f7fb664">
     If no successful payment is made during the 30-day grace period, the credits
     will be applied after the grace period ends.
   </li>
-  <li>
+  <li data-list-item-id="e13f4e3939c609b2835a2c05cec0db97a">
     If a payment is successful, the credits will be applied at your next billing
     cycle. 
   </li>
@@ -342,24 +378,23 @@
   your subscription status:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="eac185f517d7df402c3c7bf19c2947309">
     <strong>If you’re a current subscriber</strong>: Nitro credits automatically
     apply at the end of your current billing cycle. 
   </li>
-  <li>
+  <li data-list-item-id="e1cc251e1b2205afce9d956608e55f185">
     <strong>If you don’t have an active Nitro subscription</strong>: Your Nitro
     credits will be activated immediately upon getting them.
   </li>
 </ul>
 <p>
-  <strong
-    >Q: How do Nitro credits interact with subscription credits (<a
-      href="https://support.discord.com/hc/en-us/articles/360020877112-Nitro-Gifting"
-      target="_blank"
-      rel="noopener noreferrer"
-      >gifts</a
-    >)?</strong
-  >
+  <strong>Q: How do Nitro credits interact with subscription credits (</strong
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/360020877112-Nitro-Gifting"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><strong>gifts</strong></a
+  ><strong>)?</strong>
 </p>
 <p>
   A: The interaction between Nitro credits and subscription credits depends on

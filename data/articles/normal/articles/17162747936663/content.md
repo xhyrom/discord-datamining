@@ -20,7 +20,10 @@
           <a href="#h_01J4T4BWARG55JA5T9T9CGJRFW">Shop Bundles</a>
         </li>
         <li data-list-item-id="ef3d0b28856eea07ee6ebbd0ddc807a24">
-          <a href="#h_01JZ9CB0KZ0NZB7ECSAFY6DEW2">Orbs Exclusives</a>
+          <a href="#h_01JZ9CB0KZ0NZB7ECSAFY6DEW2">Orbs Shop</a>
+        </li>
+        <li data-list-item-id="ef7903307881cdc58d7ae4743bdf15c60">
+          <a href="#[PLACEHOLDER%20-%20Game%20Shops%20H2%20ID]">Game Shops</a>
         </li>
       </ul>
     </li>
@@ -117,9 +120,10 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25517233436439"
-    width="624"
-    height="453"
+    src="https://support.discord.com/hc/article_attachments/44479488419479"
+    alt="Mallow Jump Avatar Decoration in the Shop"
+    width="2426"
+    height="1750"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01JZ9C62ZE17DJ1RA6PM0V2RBV">
@@ -143,9 +147,10 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33244572829207"
-    width="624"
-    height="473"
+    src="https://support.discord.com/hc/article_attachments/44479488420247"
+    alt="Am I Getting Hacked? Bundle in the Shop"
+    width="800"
+    height="576"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01JZ9C7TH17BMCK6R3MW7XDZW6">
@@ -157,7 +162,7 @@
   be eligible for a discount on the remaining item in the bundle. Furthermore,
   the bundle will be marked as “partially owned.”
 </div>
-<h2 id="h_01JZ9CB0KZ0NZB7ECSAFY6DEW2">Orbs Exclusives</h2>
+<h2 id="h_01JZ9CB0KZ0NZB7ECSAFY6DEW2">Orbs Shop</h2>
 <p>
   <a
     href="https://support.discord.com/hc/en-us/articles/30593690165783"
@@ -204,7 +209,7 @@
   </li>
   <li data-list-item-id="e2fb69623ab3a84a41f377068d4218638">
     <strong>Select Orbs Eligible items from main catalog</strong> - Access
-    popular Shop items without spending money
+    popular Shop items <span data-token-index="0">redeemable with Orbs</span>
   </li>
 </ul>
 <p>You <em>cannot</em> purchase the following items with Orbs: </p>
@@ -219,13 +224,14 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33244580984855"
-    width="624"
-    height="453"
+    src="https://support.discord.com/hc/article_attachments/44479484292119"
+    alt="Orb Exclusive Items in the Orbs Shop"
+    width="800"
+    height="576"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01JZ9CCJZX6H6DQS7PCM7TAH38">
-  <span style="color: #666666">Orb Exclusive Items in the Shop</span>
+  <span style="color: #666666">Orb Exclusive Items in the Orbs Shop</span>
 </h4>
 <p><strong>How pricing works:</strong></p>
 <ul>
@@ -243,6 +249,7 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/33244580985239"
+    alt="Pricing Options for a Shop Item"
     width="613"
     height="472"
   />
@@ -250,6 +257,32 @@
 <h4 class="wysiwyg-text-align-center" id="h_01JZ9CDHPD3FJ9B5TGXK3WWEF9">
   <span style="color: #666666">Pricing Options for a Shop Item</span>
 </h4>
+<h2 id="[PLACEHOLDER - Game Shops H2 ID]">Game Shops</h2>
+<p>
+  <a
+    href="https://support.discord.com/hc/en-us/articles/40102783004311-Game-Shops-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Game Shops</a
+  >
+  let you browse, purchase, and gift in-game items for supported games directly
+  on Discord. Select the <strong>Game Shops</strong> tab at the top of the
+  <strong>Shop</strong> to browse available games and their items.
+</p>
+<div class="info-box">
+  <strong>Note:</strong> Game Shops are currently available on the Discord
+  desktop app and browser.
+</div>
+<div class="book-box">
+  <strong>Want to learn more?</strong> <br />See our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/40102783004311-Game-Shops-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Game Shops FAQ</a
+  >
+  for details on purchasing, gifting, and account linking.
+</div>
 <h1 id="h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</h1>
 <p>Head over to the Shop to start collecting exclusive items on Discord! </p>
 <h2 id="h_01HVHE1RAM3Y86Y72M182775GF">
@@ -276,9 +309,10 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33244580985495"
-    width="624"
-    height="447"
+    src="https://support.discord.com/hc/article_attachments/44479484292759"
+    alt="Navigating to the Shop via Shop Tab"
+    width="800"
+    height="576"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01JZ9CG35B7734EZ4M7ANZZQ42">
@@ -308,22 +342,25 @@
   <span style="color: #666666">Navigating to the Shop via Your Profile</span>
 </h4>
 <div class="tip-box">
-  <strong>Tip</strong>: Orbs Exclusives are only available on the Discord
-  desktop app and browser app. To find them, go to the
-  <strong>Shop</strong> page and select the
-  <strong>Orbs Exclusives tab</strong> at the top.
+  <p>
+    <strong>Tip</strong>: Orbs Exclusives are only available on the Discord
+    desktop app and browser app. To find them, go to the
+    <strong>Shop</strong> page and select the <strong>Orbs Shop tab</strong> at
+    the top.
+  </p>
+  <p class="wysiwyg-text-align-center">
+    <span style="color: #434343"
+      ><img
+        src="https://support.discord.com/hc/article_attachments/44479484293399"
+        alt="Orbs Shop Tab in the Shop Page"
+        width="2426"
+        height="1750"
+    /></span>
+  </p>
+  <h4 class="wysiwyg-text-align-center" id="h_01JZ9CK78KQMWY6QHVTA21E0RE">
+    <span style="color: #666666">Orbs Shop Tab in the Shop Page</span>
+  </h4>
 </div>
-<p class="wysiwyg-text-align-center">
-  <span style="color: #434343"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/33244580987159"
-      width="624"
-      height="421"
-  /></span>
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01JZ9CK78KQMWY6QHVTA21E0RE">
-  <span style="color: #666666">Orbs Exclusives Tab in the Shop Page</span>
-</h4>
 <h2 class="wysiwyg-text-align-left" id="h_01J4T4TY98TVE2FGXE2HW9YTPH">
   Mobile
 </h2>
@@ -364,9 +401,10 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33465773702551"
-    width="624"
-    height="345"
+    src="https://support.discord.com/hc/article_attachments/44479484293783"
+    alt="Screen Recording 2026-10-23 at 11.06.12 AM.gif"
+    width="800"
+    height="576"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K058NTXS07G98DKHX4EDG860">
@@ -385,9 +423,10 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33465773704215"
-    width="624"
-    height="353"
+    src="https://support.discord.com/hc/article_attachments/44479484294551"
+    alt="Sort by Dropdown in the Shop"
+    width="800"
+    height="576"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K058PPFE9X4MVQ0V3EN6CHAY">
@@ -404,9 +443,10 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33465743791639"
-    width="624"
-    height="396"
+    src="https://support.discord.com/hc/article_attachments/44479484296599"
+    alt="Filtering in the Shop"
+    width="800"
+    height="576"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K058PPFEZHEBJEFCFPP6R0C8">
@@ -421,9 +461,10 @@
   </p>
   <p class="wysiwyg-text-align-center">
     <img
-      src="https://support.discord.com/hc/article_attachments/33465773706263"
-      width="624"
-      height="539"
+      src="https://support.discord.com/hc/article_attachments/44479488422935"
+      alt="Screenshot 2026-10-23 at 11.21.51 AM.png"
+      width="2426"
+      height="1750"
     />
   </p>
   <h4 class="wysiwyg-text-align-center" id="h_01K058PPFEWVYQP78MGCG7HAH1">
@@ -438,9 +479,10 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33465743795863"
-    width="624"
-    height="488"
+    src="https://support.discord.com/hc/article_attachments/44479484298007"
+    alt="Search Bar in the Shop"
+    width="800"
+    height="576"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K058PPFEFS0SC692MSHHEEEM">
@@ -479,11 +521,15 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25517233459991"
-    width="600"
-    height="438"
+    src="https://support.discord.com/hc/article_attachments/44479488424343"
+    alt="Gifting a Shop Item to a Friend"
+    width="800"
+    height="576"
   />
 </p>
+<h4 class="wysiwyg-text-align-center" id="h_01M5N16N53GVEJBV9T1XGVPN4V">
+  <span style="color: #666666">Gifting a Shop Item to a Friend</span>
+</h4>
 <div class="tip-box">
   <strong>Tip</strong>: Any purchased gifts that haven’t been sent and claimed
   can be found in your Discord Gift Inventory, which you can find by going
