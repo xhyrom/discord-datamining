@@ -1,9 +1,0 @@
-"use strict";
-(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["971082"],
-  {
-    889553(s, i, p) {
-      s.exports = { x: "sliderContainer__65039", a: "slider__65039" };
-    },
-  },
-]);

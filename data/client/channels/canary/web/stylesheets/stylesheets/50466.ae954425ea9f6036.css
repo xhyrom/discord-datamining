@@ -2065,6 +2065,9 @@
 .videoButton_cf09d8 {
   margin-inline-end: 8px;
 }
+.videoButton_cf09d8:last-child {
+  margin-inline-end: 0;
+}
 .playbackSpeedButton_cf09d8 {
   align-items: center;
   color: var(--interactive-text-active);
@@ -2237,4 +2240,4 @@
   opacity: 1;
 }
 
-/*# sourceMappingURL=50466.4e263aeef6a906f8.css.map*/
+/*# sourceMappingURL=50466.ae954425ea9f6036.css.map*/
