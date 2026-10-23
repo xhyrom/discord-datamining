@@ -1,8 +1,8 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["935637"],
+  ["417522"],
   {
-    679474(e, t, r) {
-      var n = r(912381),
+    223145(e, t, r) {
+      var n = r(912976),
         i = globalThis.__DISCORD_RESOLVE_WASM_URL__;
       e.exports = "function" == typeof i ? i(n) : n;
     },
@@ -10079,7 +10079,7 @@
         (t.a = E),
         (t.animated = E);
     },
-    314635(e) {
+    713564(e) {
       e.exports = (() => {
         "use strict";
         var e,
@@ -21128,7 +21128,7 @@
       Object.defineProperty(t, "__esModule", { value: !0 });
       var n,
         i = r(582128),
-        o = r(314635),
+        o = r(713564),
         a = i && "object" == typeof i && "default" in i ? i : { default: i };
       function s(e) {
         var t = e || l(),
@@ -60658,7 +60658,7 @@
           return (this.head = t), (this.tail = e), this;
         });
     },
-    912381(e, t, r) {
+    912976(e, t, r) {
       "use strict";
       e.exports = r.p + "bd93c5b4b4233174.wasm";
     },
@@ -73976,4 +73976,4 @@
     },
   },
 ]);
-//# sourceMappingURL=935637.4a3e7c5c126d14ec.js.map
+//# sourceMappingURL=417522.372bcb2dc89d7939.js.map

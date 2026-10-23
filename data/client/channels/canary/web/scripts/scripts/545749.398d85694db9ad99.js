@@ -22,7 +22,7 @@
         Zz: "featureCardTextGroup__3e32a",
         Hf: "featureCardTextHeader__3e32a",
         bX: "featureCardTag__3e32a",
-        Tc: "tag__3e32a",
+        Gr: "tagWrapper__3e32a",
         ed: "disclaimer__3e32a",
         xQ: "footerContainer__3e32a",
       };
