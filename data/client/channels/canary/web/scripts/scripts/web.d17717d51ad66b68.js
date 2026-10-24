@@ -20113,45 +20113,47 @@
               applicationId: n,
               channelId: i,
               fromLink: r = !1,
-              customId: a,
-              referrerId: s,
-              source: l,
-              inviterUserId: o,
-              analyticsLocations: d = [],
+              linkChannelId: a,
+              customId: s,
+              referrerId: l,
+              source: o,
+              inviterUserId: d,
+              analyticsLocations: c = [],
             } = e,
-            c = b.A.getChannel(i),
-            u = c?.getGuildId(),
-            _ = {
+            u = b.A.getChannel(i),
+            _ = u?.getGuildId(),
+            E = {
               isStart: !0,
-              analyticsLocations: d,
-              source: l,
-              inviterUserId: o,
+              analyticsLocations: c,
+              source: o,
+              inviterUserId: d,
               channelId: i,
-              guildId: u,
+              guildId: _,
             },
-            E = { customId: a, referrerId: s };
+            A = { customId: s, referrerId: l };
           if (r || !(0, q.It)(t).has(D.U.MAIN))
             return (0, H.y)({
               applicationId: n,
               application: t,
-              analyticsContext: _,
-              launch: E,
+              analyticsContext: E,
+              launch: A,
               preferAppChannel: r,
+              channelId: a,
             });
           (0, $.A)(i);
           try {
             let e = await z.A.launchFrame({
               applicationId: n,
               surface:
-                null != c && null != u
-                  ? { type: D.U.MAIN, channelId: c.id, guildId: u }
+                null != u && null != _
+                  ? { type: D.U.MAIN, channelId: u.id, guildId: _ }
                   : ee.sd,
-              analyticsContext: _,
-              launch: E,
+              analyticsContext: E,
+              launch: A,
             });
-            if (null != c) {
+            if (null != u) {
               let t = (0, Y.Gg)({ applicationId: n, id: e });
-              null != K.A.getParticipant(c.id, t) && (0, B.A)(c.id, t);
+              null != K.A.getParticipant(u.id, t) && (0, B.A)(u.id, t);
             }
             return !0;
           } catch {
@@ -22643,7 +22645,7 @@
           f = n(354287),
           I = n(695870),
           p = n(53677),
-          T = n(892768),
+          T = n(76349),
           m = n(167189),
           g = n(721779),
           S = n(626584),
@@ -43840,7 +43842,7 @@ ${a}`),
           });
         }
       },
-      169728(e, t, n) {
+      884118(e, t, n) {
         "use strict";
         let i, r, a, s, l, o, d, c, u;
         var _,
@@ -45100,7 +45102,7 @@ ${a}`),
             a =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
-                : "649615";
+                : "649831";
           if (__OVERLAY__) return;
           isNaN((r = parseInt(a ?? "", 10))) ||
             eV.Ay.setCrashInformation(eG.du.BuildNumber, r);
@@ -45538,7 +45540,7 @@ ${a}`);
           n.e("859864").then(n.t.bind(n, 122123, 19));
         let ti = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new ez.A().log(
-          `[BUILD INFO] Release Channel: ${ti}, Build Number: 649615, Version Hash: 18a90dded8ac93df750c32393e5d0927a53bd655`,
+          `[BUILD INFO] Release Channel: ${ti}, Build Number: 649831, Version Hash: e530f10a1ea2807b94c60767eefb0a870835f57e`,
         ),
           G.A.setTags({ appContext: j.QCW }),
           eS.A.initBasic(),
@@ -48691,9 +48693,8 @@ ${a}`);
                 n.e("963203"),
                 n.e("275133"),
                 n.e("228850"),
-                n.e("285802"),
+                n.e("697367"),
                 n.e("127659"),
-                n.e("65200"),
                 n.e("860003"),
                 n.e("472627"),
                 n.e("941348"),
@@ -49356,8 +49357,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -56915,8 +56916,8 @@ ${a}`);
                       n.e("773534"),
                       n.e("971430"),
                       n.e("211185"),
-                      n.e("41332"),
                       n.e("976516"),
+                      n.e("41332"),
                       n.e("400501"),
                       n.e("985794"),
                       n.e("732194"),
@@ -72473,7 +72474,7 @@ ${a}`);
                     className: tf()(yn.Wz, yn.mr),
                     children: [
                       (0, b.jsx)(yt, { className: yn.Kk }),
-                      tv.intl.format(tv.t.uyrfYF, { buildNumber: "649615" }),
+                      tv.intl.format(tv.t.uyrfYF, { buildNumber: "649831" }),
                       (0, b.jsx)(r, {}),
                     ],
                   })
@@ -75555,9 +75556,8 @@ ${a}`);
                 n.e("963203"),
                 n.e("275133"),
                 n.e("228850"),
-                n.e("285802"),
+                n.e("697367"),
                 n.e("127659"),
-                n.e("65200"),
                 n.e("860003"),
                 n.e("472627"),
                 n.e("941348"),
@@ -75943,8 +75943,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -76800,8 +76800,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -77382,8 +77382,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -77969,8 +77969,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -78479,8 +78479,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -79612,8 +79612,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -80077,8 +80077,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -80661,8 +80661,8 @@ ${a}`);
               n.e("773534"),
               n.e("971430"),
               n.e("211185"),
-              n.e("41332"),
               n.e("976516"),
+              n.e("41332"),
               n.e("400501"),
               n.e("985794"),
               n.e("732194"),
@@ -80755,17 +80755,16 @@ ${a}`);
               n.e("78601"),
               n.e("295175"),
               n.e("574678"),
-              n.e("285802"),
               n.e("342234"),
               n.e("81189"),
               n.e("741111"),
               n.e("200203"),
+              n.e("697367"),
               n.e("489523"),
               n.e("249629"),
               n.e("726294"),
               n.e("780407"),
               n.e("127659"),
-              n.e("65200"),
               n.e("267255"),
               n.e("781949"),
               n.e("356675"),
@@ -80822,8 +80821,8 @@ ${a}`);
               n.e("529005"),
               n.e("701485"),
               n.e("192218"),
-              n.e("842775"),
               n.e("941348"),
+              n.e("842775"),
               n.e("386861"),
               n.e("64500"),
               n.e("317731"),
@@ -81282,8 +81281,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -84034,8 +84033,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -86489,8 +86488,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -87305,8 +87304,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -87918,8 +87917,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -92057,11 +92056,19 @@ ${a}`);
         }
         var xL = n(353835),
           xy = n(123917);
-        let xD = new Set(["channels", "users", "events"]),
-          xv = new Set(["", "-"]),
-          xb = new Set([w8.AM, w8.eK]),
-          xM = new WeakMap();
-        function xP(e, t, n) {
+        function xD(e) {
+          let t = e?.frame,
+            n = nR.A.getChannel((0, sL.A)(t?.surface));
+          return n?.type === j.rbe.GUILD_APP &&
+            n.application_id === t?.applicationId
+            ? n.id
+            : void 0;
+        }
+        let xv = new Set(["channels", "users", "events"]),
+          xb = new Set(["", "-"]),
+          xM = new Set([w8.AM, w8.eK]),
+          xP = new WeakMap();
+        function xU(e, t, n) {
           let i = new URL(t);
           "client.vibeyard.tools" === i.hostname &&
             "/link" === i.pathname &&
@@ -92075,7 +92082,7 @@ ${a}`);
               opened: n,
             });
         }
-        async function xU(e, t) {
+        async function xw(e, t) {
           let i = ng.A.getApplication(e.application?.id),
             r = (0, nz.H)(nP.Ay.getCurrentEmbeddedActivity()?.location),
             a = eB.isPlatformEmbedded
@@ -92091,7 +92098,7 @@ ${a}`);
                     if (z.A.isDiscordProtocol(i))
                       t = (function (e) {
                         let { hostname: t, pathname: n } = e;
-                        return xv.has(t) || z.A.isDiscordHostname(t)
+                        return xb.has(t) || z.A.isDiscordHostname(t)
                           ? n.startsWith("/")
                             ? n
                             : `/${n}`
@@ -92108,7 +92115,7 @@ ${a}`);
                       t = n.pathname;
                     }
                     let [, s] = t.split("/");
-                    return null != s && xD.has(s)
+                    return null != s && xv.has(s)
                       ? `https://discord.com${t}${n.search}${n.hash}`
                       : null;
                   })(t)
@@ -92122,12 +92129,12 @@ ${a}`);
               return null != i && !0 === i(null);
             })(s))
           )
-            return xP(e, t, !0), { opened: !0 };
+            return xU(e, t, !0), { opened: !0 };
           try {
             let n = new URL(t).toString();
             if ((null != a && xL.A.focus(a, !0), await xR(i?.id, n)))
               return (
-                (0, af.A)(n), xP(e, n, !0), Promise.resolve({ opened: !0 })
+                (0, af.A)(n), xU(e, n, !0), Promise.resolve({ opened: !0 })
               );
             return new Promise((t) =>
               (0, xy.h)(
@@ -92136,10 +92143,10 @@ ${a}`);
                   shouldConfirm: !0,
                   onClick: () => !1,
                   onConfirm: () => {
-                    (0, af.A)(n), xP(e, n, !0), t({ opened: !0 });
+                    (0, af.A)(n), xU(e, n, !0), t({ opened: !0 });
                   },
                   onCancel: () => {
-                    xP(e, n, !1), t({ opened: !1 });
+                    xU(e, n, !1), t({ opened: !1 });
                   },
                 },
                 void 0,
@@ -92159,7 +92166,7 @@ ${a}`);
             );
           }
         }
-        let xw = {
+        let xG = {
             [j.e$_.OPEN_EXTERNAL_LINK]: GZ(j.e$_.OPEN_EXTERNAL_LINK, {
               scope: { [bc.sm.ANY]: [bc.VH, bc.W_] },
               async handler(e) {
@@ -92168,11 +92175,11 @@ ${a}`);
                   args: { url: n },
                 } = e;
                 (0, w1.lG)(t.transport);
-                let i = xM.get(t) ?? { inFlight: !1, readyAt: 0 };
+                let i = xP.get(t) ?? { inFlight: !1, readyAt: 0 };
                 if (i.inFlight || Date.now() < i.readyAt) return { opened: !1 };
-                (i.inFlight = !0), xM.set(t, i);
+                (i.inFlight = !0), xP.set(t, i);
                 try {
-                  return await xU(t, n);
+                  return await xw(t, n);
                 } finally {
                   (i.inFlight = !1), (i.readyAt = Date.now() + 1e3);
                 }
@@ -92185,7 +92192,7 @@ ${a}`);
                 let { socket: t } = e;
                 (0, w1.lG)(t.transport);
                 let i = (0, w1.D2)(t.application);
-                if (!xb.has(i))
+                if (!xM.has(i))
                   throw new wB.A(
                     { errorCode: j.Lw6.UNAUTHORIZED_FOR_APPLICATION },
                     "Command not available for this application",
@@ -92221,21 +92228,22 @@ ${a}`);
                         applicationId: t,
                         customId: i,
                         linkId: r,
-                        message: a,
-                        onShare: s,
+                        channelId: a,
+                        message: s,
+                        onShare: l,
                       } = e,
-                      l = ng.A.getApplication(t);
-                    if (null == l) return s(!1, !1);
-                    let o =
-                        null != (0, xN.LU)({ applicationId: l.id })
+                      o = ng.A.getApplication(t);
+                    if (null == o) return l(!1, !1);
+                    let d =
+                        null != (0, xN.LU)({ applicationId: o.id })
                           ? xS.KX
                           : xS.SY,
-                      d = !1;
-                    function c(e) {
-                      s(e, d);
+                      c = !1;
+                    function u(e) {
+                      l(e, c);
                     }
-                    function u() {
-                      d = !0;
+                    function _() {
+                      c = !0;
                     }
                     (0, tQ.openModalLazy)(
                       async () => {
@@ -92257,17 +92265,18 @@ ${a}`);
                             applicationId: t,
                             customId: i,
                             linkId: r,
-                            message: a,
-                            onCopyLink: u,
-                            onShare: c,
+                            channelId: a,
+                            message: s,
+                            onCopyLink: _,
+                            onShare: u,
                             ...n,
                           });
                       },
                       {
                         modalKey: "activity-share-moment-modal",
-                        contextKey: o,
+                        contextKey: d,
                         onCloseCallback: () => {
-                          s(!1, d);
+                          l(!1, c);
                         },
                       },
                     );
@@ -92275,6 +92284,7 @@ ${a}`);
                     applicationId: s,
                     customId: i,
                     linkId: a,
+                    channelId: xD((0, wH.we)(t)),
                     message: r,
                     onShare: function (t, n) {
                       e({ success: n || t, didCopyLink: n, didSendMessage: t });
@@ -92284,8 +92294,8 @@ ${a}`);
               },
             }),
           },
-          xG = new ez.A(j.meB),
-          xx = {
+          xx = new ez.A(j.meB),
+          xk = {
             [j.e$_.CAPTURE_LOG]: GZ(j.e$_.CAPTURE_LOG, {
               handler(e) {
                 let {
@@ -92297,24 +92307,24 @@ ${a}`);
                   a = `${r} - ${i}`;
                 switch (n) {
                   case "log":
-                    xG.log(a);
+                    xx.log(a);
                     break;
                   case "warn":
-                    xG.warn(a);
+                    xx.warn(a);
                     break;
                   case "debug":
-                    xG.verbose(a);
+                    xx.verbose(a);
                     break;
                   case "info":
-                    xG.info(a);
+                    xx.info(a);
                     break;
                   case "error":
-                    xG.error(a);
+                    xx.error(a);
                 }
               },
             }),
           },
-          xk = {
+          xF = {
             [j.e$_.GET_NETWORKING_CONFIG]: {
               scope: bc.hj,
               handler: () =>
@@ -92373,15 +92383,15 @@ ${a}`);
                 }).then((e) => e.body),
             },
           },
-          xF = {
+          xB = {
             [cv.e$.GET_PLATFORM_BEHAVIORS]: GZ(cv.e$.GET_PLATFORM_BEHAVIORS, {
               handler: () => ({ iosKeyboardResizesView: !0 }),
             }),
           };
-        var xB = n(77468);
-        let xV = new Set([w8.AM, w8.eK]);
-        async function xH(e, t) {
-          let n = await xB.A.refreshAccessToken(e, t);
+        var xV = n(77468);
+        let xH = new Set([w8.AM, w8.eK]);
+        async function xj(e, t) {
+          let n = await xV.A.refreshAccessToken(e, t);
           if (null == n)
             throw new wB.A(
               { errorCode: cv.Lw.OAUTH2_ERROR },
@@ -92389,7 +92399,7 @@ ${a}`);
             );
           return { access_token: n };
         }
-        let xj = {
+        let xW = {
             [cv.e$.GET_PROVIDER_ACCESS_TOKEN]: {
               scope: { [bc.sm.ANY]: [bc.VH] },
               validation: (e) =>
@@ -92414,7 +92424,7 @@ ${a}`);
                     `Platform not found for provider "${i}"`,
                   );
                 if (i === j.fg2.AMAZON_MUSIC) {
-                  if (!xV.has(a))
+                  if (!xH.has(a))
                     throw new wB.A(
                       { errorCode: cv.Lw.UNAUTHORIZED_FOR_APPLICATION },
                       "Command not available for this application",
@@ -92426,7 +92436,7 @@ ${a}`);
                   );
                 let l = ce.A.getAccount(null, i);
                 return null != l
-                  ? xH(s.type, l.id)
+                  ? xj(s.type, l.id)
                   : new Promise((e, n) => {
                       function a(t) {
                         if (null == s) return;
@@ -92489,7 +92499,7 @@ ${a}`);
                     `Platform not found for provider "${n}"`,
                   );
                 if (n === j.fg2.AMAZON_MUSIC) {
-                  if (!xV.has(i))
+                  if (!xH.has(i))
                     throw new wB.A(
                       { errorCode: cv.Lw.UNAUTHORIZED_FOR_APPLICATION },
                       "Command not available for this application",
@@ -92505,7 +92515,7 @@ ${a}`);
                     { errorCode: cv.Lw.NO_CONNECTION_FOUND },
                     "No connection found",
                   );
-                let s = await xB.A.refreshAccessToken(r.type, a.id);
+                let s = await xV.A.refreshAccessToken(r.type, a.id);
                 if (null == s)
                   throw new wB.A(
                     { errorCode: cv.Lw.OAUTH2_ERROR },
@@ -92515,7 +92525,7 @@ ${a}`);
               },
             },
           },
-          xW = {
+          xY = {
             [j.e$_.GET_QUEST_ENROLLMENT_STATUS]: GZ(
               j.e$_.GET_QUEST_ENROLLMENT_STATUS,
               {
@@ -92609,7 +92619,7 @@ ${a}`);
               },
             }),
           },
-          xY = {
+          xK = {
             [j.e$_.GET_RELATIONSHIPS]: GZ(j.e$_.GET_RELATIONSHIPS, {
               scope: { [bc.sm.ANY]: [GT.F.RELATIONSHIPS_READ] },
               handler(e) {
@@ -92635,11 +92645,11 @@ ${a}`);
               },
             }),
           };
-        var xK = n(182892),
-          x$ = n(366430);
-        let xz = ["1402418171662569542"],
-          xX = [bc.z4.IPC, bc.z4.WEBSOCKET, bc.z4.POST_MESSAGE],
-          xq = {
+        var x$ = n(182892),
+          xz = n(366430);
+        let xX = ["1402418171662569542"],
+          xq = [bc.z4.IPC, bc.z4.WEBSOCKET, bc.z4.POST_MESSAGE],
+          xZ = {
             [j.e$_.SET_ACTIVITY]: GZ(j.e$_.SET_ACTIVITY, {
               scope: {
                 [bc.sm.ANY]: [
@@ -92660,7 +92670,7 @@ ${a}`);
                     !t.authorization.scopes.has(GT.F.RPC_ACTIVITIES_WRITE) &&
                     !t.authorization.scopes.has(bc.hj),
                   s = null;
-                if ((a && (s = (0, wH.$b)(t)), !xX.includes(t.transport)))
+                if ((a && (s = (0, wH.$b)(t)), !xq.includes(t.transport)))
                   throw new wB.A(
                     { errorCode: j.Lw6.INVALID_COMMAND },
                     `command not available from "${t.transport}" transport`,
@@ -92683,37 +92693,37 @@ ${a}`);
                     null
                   );
                 let o = {},
-                  d =
+                  d = xD(
                     s ??
-                    (t.transport === bc.z4.POST_MESSAGE ? (0, wH.we)(t) : null),
-                  c = (0, sL.A)(d?.frame.surface);
-                null != c &&
-                  (0, sR.Xs)(nR.A.getChannel(c), "setActivity") &&
-                  (o.channel_id = c);
-                let { buttons: u, ..._ } = i,
-                  E = {
-                    ..._,
-                    name: _.name ?? t.application.name,
-                    type: _.type ?? j.$pd.PLAYING,
+                      (t.transport === bc.z4.POST_MESSAGE
+                        ? (0, wH.we)(t)
+                        : null),
+                  );
+                null != d && (o.channel_id = d);
+                let { buttons: c, ...u } = i,
+                  _ = {
+                    ...u,
+                    name: u.name ?? t.application.name,
+                    type: u.type ?? j.$pd.PLAYING,
                   };
-                E.application_id = l;
-                let A = t.transport === bc.z4.POST_MESSAGE;
-                E.platform = A ? j.yTV.EMBEDDED : j.yTV.DESKTOP;
-                let h = ng.A.getApplication(l ?? void 0),
-                  f = E.instance ?? !1,
-                  I = E.party?.privacy;
-                delete E.instance, delete E.party?.privacy;
-                let p = (0, xK.E)(E, f, A, null != h && (0, x$.VS)(h) && A, I);
-                p > 0 && (E.flags = p);
-                let { assets: T, party: m, secrets: g, timestamps: S } = E;
-                if (null != g) {
+                _.application_id = l;
+                let E = t.transport === bc.z4.POST_MESSAGE;
+                _.platform = E ? j.yTV.EMBEDDED : j.yTV.DESKTOP;
+                let A = ng.A.getApplication(l ?? void 0),
+                  h = _.instance ?? !1,
+                  f = _.party?.privacy;
+                delete _.instance, delete _.party?.privacy;
+                let I = (0, x$.E)(_, h, E, null != A && (0, xz.VS)(A) && E, f);
+                I > 0 && (_.flags = I);
+                let { assets: p, party: T, secrets: m, timestamps: g } = _;
+                if (null != m) {
                   let e = iV()
-                    .values(g)
+                    .values(m)
                     .filter((e) => null != e && "" !== e);
                   if (
-                    null != m &&
-                    iV().intersection(e, [m.id]).length > 0 &&
-                    (null == l || !xz.includes(l))
+                    null != T &&
+                    iV().intersection(e, [T.id]).length > 0 &&
+                    (null == l || !xX.includes(l))
                   )
                     throw new wB.A(
                       { errorCode: j.Lw6.INVALID_ACTIVITY_SECRET },
@@ -92724,41 +92734,41 @@ ${a}`);
                       { errorCode: j.Lw6.INVALID_ACTIVITY_SECRET },
                       "secrets must be unique",
                     );
-                  if (null != u)
+                  if (null != c)
                     throw new wB.A(
                       { errorCode: j.Lw6.INVALID_ACTIVITY_SECRET },
                       "secrets cannot currently be sent with buttons",
                     );
                 }
                 if (
-                  (null != u &&
-                    ((o.button_urls = u.map((e) => e.url)),
-                    (E.buttons = u.map((e) => e.label))),
-                  (E.metadata = o),
-                  null != S)
+                  (null != c &&
+                    ((o.button_urls = c.map((e) => e.url)),
+                    (_.buttons = c.map((e) => e.label))),
+                  (_.metadata = o),
+                  null != g)
                 )
                   for (let e of ["start", "end"]) {
-                    let t = S[e];
+                    let t = g[e];
                     null != t &&
                       Date.now().toString().length - t.toString().length > 2 &&
-                      (S[e] = Math.floor(t * iT.A.Millis.SECOND));
+                      (g[e] = Math.floor(t * iT.A.Millis.SECOND));
                   }
-                if (null != T) {
+                if (null != p) {
                   if (null == l)
                     throw new wB.A(
                       { errorCode: j.Lw6.INVALID_COMMAND },
                       "No application.",
                     );
                   let [e, t, n] = await (0, uG.RG)(l, [
-                    T.large_image,
-                    T.small_image,
-                    T.invite_cover_image,
+                    p.large_image,
+                    p.small_image,
+                    p.invite_cover_image,
                   ]);
-                  null != e ? (T.large_image = e) : delete T.large_image,
-                    null != t ? (T.small_image = t) : delete T.small_image,
+                  null != e ? (p.large_image = e) : delete p.large_image,
+                    null != t ? (p.small_image = t) : delete p.small_image,
                     null != n
-                      ? (T.invite_cover_image = n)
-                      : delete T.invite_cover_image;
+                      ? (p.invite_cover_image = n)
+                      : delete p.invite_cover_image;
                 }
                 if (!r()) return null;
                 k.h.dispatch({
@@ -92766,42 +92776,42 @@ ${a}`);
                   socketId: t.id,
                   pid: n,
                   applicationId: l,
-                  activity: E,
-                  partyPrivacy: I,
+                  activity: _,
+                  partyPrivacy: f,
                 });
-                let N = {
+                let S = {
                   application_id: t.application.id,
-                  type: E.type,
-                  name: E.name,
-                  status_display_type: E.status_display_type,
-                  details: E.details ?? "",
-                  state: E.state ?? "",
+                  type: _.type,
+                  name: _.name,
+                  status_display_type: _.status_display_type,
+                  details: _.details ?? "",
+                  state: _.state ?? "",
                   has_urls:
-                    null != E.state_url ||
-                    null != E.details_url ||
-                    E.assets?.large_url != null ||
-                    E.assets?.small_url != null,
+                    null != _.state_url ||
+                    null != _.details_url ||
+                    _.assets?.large_url != null ||
+                    _.assets?.small_url != null,
                 };
                 return (
-                  null != g &&
-                    ((N.has_match_secret = null != g.match),
-                    (N.has_join_secret = null != g.join)),
-                  null != T &&
-                    (N.has_images =
-                      null != T.large_image ||
-                      null != T.small_image ||
-                      null != T.invite_cover_image),
                   null != m &&
-                    ((N.party_max =
-                      null != m.size && m.size[1] > 0 ? m.size[1] : void 0),
-                    (N.party_id = m.id)),
-                  W.default.track(j.HAw.ACTIVITY_UPDATED, N),
-                  E
+                    ((S.has_match_secret = null != m.match),
+                    (S.has_join_secret = null != m.join)),
+                  null != p &&
+                    (S.has_images =
+                      null != p.large_image ||
+                      null != p.small_image ||
+                      null != p.invite_cover_image),
+                  null != T &&
+                    ((S.party_max =
+                      null != T.size && T.size[1] > 0 ? T.size[1] : void 0),
+                    (S.party_id = T.id)),
+                  W.default.track(j.HAw.ACTIVITY_UPDATED, S),
+                  _
                 );
               },
             }),
           },
-          xZ = {
+          xQ = {
             [cv.e$.SET_ORIENTATION_LOCK_STATE]: GZ(
               cv.e$.SET_ORIENTATION_LOCK_STATE,
               {
@@ -92844,18 +92854,18 @@ ${a}`);
               },
             ),
           };
-        var xQ = n(796774),
-          xJ = n(807348),
-          x0 = n(693806);
-        let x1 = {
+        var xJ = n(796774),
+          x0 = n(807348),
+          x1 = n(693806);
+        let x2 = {
           [cv.e$.GET_SOUNDBOARD_SOUNDS]: {
             scope: { [bc.sm.ANY]: [GT.F.RPC, bc.hj] },
             async handler() {
-              await (0, xQ.E7)();
+              await (0, xJ.E7)();
               let e = vp.A.getSounds(),
                 t = [];
               return (
-                e.forEach((e) => e.forEach((e) => t.push((0, xJ.A2)(e)))), t
+                e.forEach((e) => e.forEach((e) => t.push((0, x0.A2)(e)))), t
               );
             },
           },
@@ -92869,10 +92879,10 @@ ${a}`);
               let {
                 args: { guild_id: t, sound_id: n },
               } = e;
-              await (0, xQ.E7)();
+              await (0, xJ.E7)();
               let i = eF.default.getCurrentUser(),
                 r = vp.A.getSound(t, n),
-                a = (0, x0.A)(),
+                a = (0, x1.A)(),
                 s = null != r && null != i && (0, DK.Ir)(i, r, a);
               if (null == a)
                 throw new wB.A(
@@ -92894,19 +92904,19 @@ ${a}`);
             },
           },
         };
-        var x2 = n(800342),
-          x3 = n(143582);
-        function x5(e) {
+        var x3 = n(800342),
+          x5 = n(143582);
+        function x6(e) {
           if (bc.z4.IPC !== e && bc.z4.POST_MESSAGE !== e)
             throw new wB.A(
               { errorCode: j.Lw6.INVALID_COMMAND },
               "Invalid transport.",
             );
         }
-        function x6(e) {
+        function x4(e) {
           return null != e.name && null != e.price;
         }
-        function x4(e) {
+        function x7(e) {
           return {
             id: e.id,
             name: e.name,
@@ -92917,10 +92927,10 @@ ${a}`);
             release_date: e.release_date ?? null,
           };
         }
-        async function x7(e, t) {
+        async function x8(e, t) {
           let n = t.filter((e) => e.type === j.Puh.SUBSCRIPTION_GROUP),
             i = await Promise.all(
-              n.map(async (t) => await (0, x3.vz)(e, t.id)),
+              n.map(async (t) => await (0, x5.vz)(e, t.id)),
             ),
             r = [];
           return (
@@ -92947,9 +92957,9 @@ ${a}`);
             r
           );
         }
-        async function x8(e) {
+        async function x9(e) {
           let { socket: t } = e;
-          x5(t.transport);
+          x6(t.transport);
           let n = t.application.id;
           if (null == n)
             throw new wB.A(
@@ -92958,22 +92968,22 @@ ${a}`);
             );
           if ((0, G5.Fs)(n)) {
             let e = await cn.O1(n, !1),
-              t = await x7(n, e);
-            return [...e.filter(x6).map(x4), ...t];
+              t = await x8(n, e);
+            return [...e.filter(x4).map(x7), ...t];
           }
-          let i = await x2.JI(n),
+          let i = await x3.JI(n),
             r = i
               .filter((e) => e.sku.type !== j.Puh.SUBSCRIPTION_GROUP)
               .map((e) => e.sku),
-            a = await x7(
+            a = await x8(
               n,
               i.map((e) => e.sku),
             );
-          return [...r.filter(x6).map(x4), ...a];
+          return [...r.filter(x4).map(x7), ...a];
         }
-        function x9(e) {
+        function ke(e) {
           let { socket: t } = e;
-          x5(t.transport);
+          x6(t.transport);
           let n = t.application.id;
           if (null == n)
             throw new wB.A(
@@ -92982,36 +92992,36 @@ ${a}`);
             );
           return ct.LM(n);
         }
-        let ke = {
+        let kt = {
           [j.e$_.GET_SKUS]: {
-            scope: { [bc.sm.ANY]: [bc.VH, bc.hj] },
-            handler: x8,
-          },
-          [j.e$_.GET_ENTITLEMENTS]: {
             scope: { [bc.sm.ANY]: [bc.VH, bc.hj] },
             handler: x9,
           },
+          [j.e$_.GET_ENTITLEMENTS]: {
+            scope: { [bc.sm.ANY]: [bc.VH, bc.hj] },
+            handler: ke,
+          },
           [j.e$_.GET_SKUS_EMBEDDED]: GZ(j.e$_.GET_SKUS_EMBEDDED, {
             scope: { [bc.sm.ANY]: [bc.VH, bc.hj] },
-            handler: async (e) => ({ skus: await x8(e) }),
+            handler: async (e) => ({ skus: await x9(e) }),
           }),
           [j.e$_.GET_ENTITLEMENTS_EMBEDDED]: GZ(
             j.e$_.GET_ENTITLEMENTS_EMBEDDED,
             {
               scope: { [bc.sm.ANY]: [bc.VH, bc.hj] },
-              handler: async (e) => ({ entitlements: await x9(e) }),
+              handler: async (e) => ({ entitlements: await ke(e) }),
             },
           ),
         };
-        var kt = n(722306);
-        let kn = new WeakMap();
-        function ki(e, t) {
-          let n = kn.get(e);
+        var kn = n(722306);
+        let ki = new WeakMap();
+        function kr(e, t) {
+          let n = ki.get(e);
           if (null == n) return;
           let i = n.indexOf(t);
-          -1 !== i && n.splice(i, 1), 0 === n.length && kn.delete(e);
+          -1 !== i && n.splice(i, 1), 0 === n.length && ki.delete(e);
         }
-        let kr = {
+        let ka = {
             [j.e$_.SUBSCRIBE]: {
               async handler(e) {
                 let t,
@@ -93023,7 +93033,7 @@ ${a}`);
                     { errorCode: j.Lw6.INVALID_EVENT },
                     `Invalid event: ${a}`,
                   );
-                if (!(0, kt.A)(r.authorization.scopes, l.scope))
+                if (!(0, kn.A)(r.authorization.scopes, l.scope))
                   throw new wB.A(
                     { errorCode: j.Lw6.INVALID_PERMISSIONS },
                     "Not authenticated or invalid scope",
@@ -93039,7 +93049,7 @@ ${a}`);
                 });
                 let o =
                   ((t = { evt: a, args: s, cancelled: !1 }),
-                  null == (n = kn.get(r)) ? kn.set(r, [t]) : n.push(t),
+                  null == (n = ki.get(r)) ? ki.set(r, [t]) : n.push(t),
                   t);
                 try {
                   if (null != l.validation) {
@@ -93111,7 +93121,7 @@ ${a}`);
                     })(r, a, s);
                   return (
                     setImmediate(() => {
-                      ki(r, o),
+                      kr(r, o),
                         o.cancelled ||
                           (i.addSubscription(r, a, s, e),
                           null != t &&
@@ -93124,7 +93134,7 @@ ${a}`);
                     { evt: a }
                   );
                 } catch (e) {
-                  throw (ki(r, o), e);
+                  throw (kr(r, o), e);
                 }
               },
             },
@@ -93136,7 +93146,7 @@ ${a}`);
                     { errorCode: j.Lw6.INVALID_EVENT },
                     `Invalid event: ${i}`,
                   );
-                let a = kn.get(n);
+                let a = ki.get(n);
                 if (null != a)
                   for (let e of a)
                     e.evt === i &&
@@ -93146,7 +93156,7 @@ ${a}`);
               },
             },
           },
-          ka = {
+          ks = {
             [j.e$_.USER_SETTINGS_GET_LOCALE]: GZ(
               j.e$_.USER_SETTINGS_GET_LOCALE,
               {
@@ -93155,7 +93165,7 @@ ${a}`);
               },
             ),
           },
-          ks = {
+          kl = {
             [j.e$_.GET_USER]: GZ(j.e$_.GET_USER, {
               scope: { [bc.sm.ANY]: [bc.W_, bc.hj] },
               handler(e) {
@@ -93174,7 +93184,7 @@ ${a}`);
               },
             }),
           },
-          kl = {
+          ko = {
             [j.e$_.TOGGLE_VOICE_CHANNEL_CHAT]: {
               scope: bc.hj,
               validation: (e) => G6(e).keys({ open: e.boolean() }),
@@ -93192,7 +93202,7 @@ ${a}`);
               },
             },
           },
-          ko = {
+          kd = {
             ...G7,
             ...G8,
             ...xi,
@@ -93201,28 +93211,28 @@ ${a}`);
             ...xE,
             ...xh,
             ...xg,
-            ...xw,
-            ...xx,
+            ...xG,
             ...xk,
-            ...xj,
-            ...xY,
-            ...xq,
-            ...xZ,
-            ...ke,
-            ...kr,
-            ...ks,
-            ...ka,
             ...xF,
-            ...x1,
+            ...xW,
+            ...xK,
+            ...xZ,
+            ...xQ,
+            ...kt,
+            ...ka,
+            ...kl,
+            ...ks,
+            ...xB,
+            ...x2,
             ...xs,
             ...xd,
             ...xu,
             ...G2,
-            ...xW,
-            ...kl,
+            ...xY,
+            ...ko,
           },
-          kd = /[\u0000-\u001f\u007f]/,
-          kc = {
+          kc = /[\u0000-\u001f\u007f]/,
+          ku = {
             [j.e$_.SET_FRAME_RELAUNCH_DEEP_LINK]: GZ(
               j.e$_.SET_FRAME_RELAUNCH_DEEP_LINK,
               {
@@ -93230,7 +93240,7 @@ ${a}`);
                 handler(e) {
                   let { server: t, socket: n, args: i } = e,
                     { frame: r } = (0, wV.Ay)(n);
-                  if (kd.test(i.hash))
+                  if (kc.test(i.hash))
                     throw new wB.A(
                       { errorCode: j.Lw6.INVALID_PAYLOAD },
                       "hash must not contain control characters",
@@ -93251,12 +93261,12 @@ ${a}`);
               },
             ),
           };
-        var ku = n(52133),
-          k_ = n(574165);
-        function kE(e) {
+        var k_ = n(52133),
+          kE = n(574165);
+        function kA(e) {
           return G6(e).required().keys({ channel_id: e.string().required() });
         }
-        function kA(e) {
+        function kh(e) {
           let {
               args: { channel_id: t },
               socket: n,
@@ -93276,10 +93286,10 @@ ${a}`);
               `Invalid nsfw channel id: ${i.id}`,
             );
         }
-        function kh(e) {
+        function kf(e) {
           return G6(e).keys({ channel_id: e.string().allow(null) });
         }
-        function kf(e) {
+        function kI(e) {
           let {
             args: { channel_id: t },
           } = e;
@@ -93289,18 +93299,18 @@ ${a}`);
               `Invalid channel id: ${t}`,
             );
         }
-        let kI = { [bc.sm.ANY]: [bc.W_, bc.VH] };
-        function kp(e) {
+        let kp = { [bc.sm.ANY]: [bc.W_, bc.VH] };
+        function kT(e) {
           return G6(e).required().keys({ session_id: e.string().required() });
         }
-        function kT(e) {
+        function km(e) {
           let {
             args: { session_id: t },
             socket: n,
           } = e;
           wZ.validateEventSubscription(n, t);
         }
-        let km = {
+        let kg = {
           [j.ZE4.GUILD_STATUS]: {
             scope: GT.F.RPC,
             validation: (e) =>
@@ -93441,32 +93451,32 @@ ${a}`);
           },
           [j.ZE4.MESSAGE_CREATE]: {
             scope: GT.F.RPC,
-            validation: kE,
-            handler: kA,
+            validation: kA,
+            handler: kh,
           },
           [j.ZE4.MESSAGE_UPDATE]: {
             scope: GT.F.RPC,
-            validation: kE,
-            handler: kA,
+            validation: kA,
+            handler: kh,
           },
           [j.ZE4.MESSAGE_DELETE]: {
             scope: GT.F.RPC,
-            validation: kE,
-            handler: kA,
+            validation: kA,
+            handler: kh,
           },
           [j.ZE4.SPEAKING_START]: {
             scope: { [bc.sm.ANY]: [GT.F.RPC, GT.F.RPC_VOICE_READ, bc.hj] },
-            validation: kh,
-            handler: kf,
+            validation: kf,
+            handler: kI,
           },
           [j.ZE4.SPEAKING_STOP]: {
             scope: { [bc.sm.ANY]: [GT.F.RPC, GT.F.RPC_VOICE_READ, bc.hj] },
-            validation: kh,
-            handler: kf,
+            validation: kf,
+            handler: kI,
           },
           [j.ZE4.VOICE_SESSION_PARTICIPANTS_UPDATE]: {
-            scope: kI,
-            validation: kp,
+            scope: kp,
+            validation: kT,
             handler(e) {
               let {
                 args: { session_id: t },
@@ -93488,14 +93498,14 @@ ${a}`);
             },
           },
           [j.ZE4.VOICE_SESSION_SPEAKING_START]: {
-            scope: kI,
-            validation: kp,
-            handler: kT,
+            scope: kp,
+            validation: kT,
+            handler: km,
           },
           [j.ZE4.VOICE_SESSION_SPEAKING_STOP]: {
-            scope: kI,
-            validation: kp,
-            handler: kT,
+            scope: kp,
+            validation: kT,
+            handler: km,
           },
           [j.ZE4.GUILD_CREATE]: { scope: GT.F.RPC, handler() {} },
           [j.ZE4.CHANNEL_CREATE]: { scope: GT.F.RPC, handler() {} },
@@ -93590,7 +93600,7 @@ ${a}`);
                 i = { currentUser: eF.default.getCurrentUser() };
               return (
                 null == i.currentUser ||
-                  (null != t && (0, ku.A)(i, t)) ||
+                  (null != t && (0, k_.A)(i, t)) ||
                   n((0, w2.A)(i.currentUser)),
                 i
               );
@@ -93607,7 +93617,7 @@ ${a}`);
                   r = { currentGuildMember: oF.Ay.getSelfMember(t) };
                 return (
                   null == r.currentGuildMember ||
-                    (null != n && (0, ku.A)(r, n)) ||
+                    (null != n && (0, k_.A)(r, n)) ||
                     i(
                       (function (e) {
                         let {
@@ -93626,7 +93636,7 @@ ${a}`);
                           nick: n,
                           guild_id: i,
                           avatar: r,
-                          avatar_decoration_data: (0, k_.A)(a),
+                          avatar_decoration_data: (0, kE.A)(a),
                           banner: s,
                           bio: l,
                           pronouns: o,
@@ -93683,12 +93693,12 @@ ${a}`);
           },
           [j.ZE4.AUTHORIZE_REQUEST]: { scope: void 0, handler() {} },
         };
-        var kg = n(873727);
-        let kS = (function () {
+        var kS = n(873727);
+        let kN = (function () {
           let e =
             arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
           function t() {
-            let t = (0, kg.mB)(ef.Ay.useReducedMotion);
+            let t = (0, kS.mB)(ef.Ay.useReducedMotion);
             if (!e) return t;
             let { uiDensity: n, ...i } = t;
             return i;
@@ -93720,22 +93730,22 @@ ${a}`);
             },
           };
         })();
-        var kN = n(289919);
-        function kC(e) {
+        var kC = n(289919);
+        function kO(e) {
           if (!(0, G3.n)(e.application, j.gfo.SOCIAL_LAYER_INTEGRATION))
             throw new wB.A(
               { errorCode: j.Lw6.UNAUTHORIZED_FOR_APPLICATION },
               "This application cannot access this API",
             );
         }
-        var kO = n(350535);
-        function kR() {
+        var kR = n(350535);
+        function kL() {
           let e = ek.Ay.getSettings();
           return {
             self_mute: e.mute,
             self_deaf: e.deaf,
             input_mode: e.mode,
-            ptt_key: (0, kO.rB)(e.modeOptions.shortcut)
+            ptt_key: (0, kR.rB)(e.modeOptions.shortcut)
               .join(" + ")
               .toUpperCase(),
             input_volume: e.inputVolume,
@@ -93749,23 +93759,23 @@ ${a}`);
             ),
           };
         }
-        let kL = {
+        let ky = {
             [j.ZE4.CLIENT_VOICE_SETTINGS_UPDATE]: {
               scope: bc.hj,
               handler(e) {
                 let { socket: t } = e;
                 return (
-                  kC(t),
+                  kO(t),
                   (e) => {
                     let { prevState: t, dispatch: n } = e,
-                      i = kR();
+                      i = kL();
                     return iV().isEqual(i, t) || n(i), i;
                   }
                 );
               },
             },
           },
-          ky = {
+          kD = {
             [j.ZE4.OVERLAY_UPDATE]: {
               scope: bc.hj,
               handler(e) {
@@ -93794,7 +93804,7 @@ ${a}`);
               },
             },
           },
-          kD = {
+          kv = {
             [j.ZE4.QUEST_ENROLLMENT_STATUS_UPDATE]: {
               scope: GT.F.IDENTIFY,
               validation: function (e) {
@@ -93817,7 +93827,7 @@ ${a}`);
               },
             },
           },
-          kv = {
+          kb = {
             [j.ZE4.SCREEN_CAPTURE_STATE_UPDATE]: {
               scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
               handler(e) {
@@ -93834,10 +93844,10 @@ ${a}`);
               },
             },
           };
-        var kb = n(546983);
-        let kM =
-          ((N = kb.l6),
-          (C = kb.Au),
+        var kM = n(546983);
+        let kP =
+          ((N = kM.l6),
+          (C = kM.Au),
           {
             [j.ZE4.VOICE_SETTINGS_UPDATE]: {
               scope: { [bc.sm.ANY]: [GT.F.RPC, GT.F.RPC_VOICE_READ] },
@@ -93860,18 +93870,18 @@ ${a}`);
               },
             },
           });
-        var kP = n(298990),
-          kU = n(334738),
-          kw = n(181658);
-        function kG(e, t) {
+        var kU = n(298990),
+          kw = n(334738),
+          kG = n(181658);
+        function kx(e, t) {
           return (
             null != e.application_id &&
             null == t.getApplicationActivity(e.application_id, !1)
           );
         }
-        var kx = n(293588),
-          kk = n(383233);
-        async function kF(e, t, n, i) {
+        var kk = n(293588),
+          kF = n(383233);
+        async function kB(e, t, n, i) {
           let r =
               arguments.length > 4 && void 0 !== arguments[4]
                 ? arguments[4]
@@ -93886,10 +93896,10 @@ ${a}`);
               { errorCode: j.Lw6.NO_ELIGIBLE_ACTIVITY },
               "No eligible activity for application. Ensure an activity includes a party and appropriate secret.",
             );
-          let s = kG(a, iJ.A);
+          let s = kx(a, iJ.A);
           if (s) {
-            let { lock: t } = (0, kb.d5)(e);
-            return (0, kP.qf)(a, s).then(() => {
+            let { lock: t } = (0, kM.d5)(e);
+            return (0, kU.qf)(a, s).then(() => {
               throw (
                 (t(),
                 new wB.A(
@@ -93907,7 +93917,7 @@ ${a}`);
             location: "In-Game Invite",
           });
         }
-        let kB = {
+        let kV = {
             [j.e$_.SEND_ACTIVITY_JOIN_INVITE]: {
               scope: { [bc.sm.ANY]: [GT.F.RPC, bc.hj] },
               handler(e) {
@@ -93921,7 +93931,7 @@ ${a}`);
                     { errorCode: j.Lw6.INVALID_COMMAND },
                     "No application.",
                   );
-                return kF(i, r, n, j.xL.JOIN);
+                return kB(i, r, n, j.xL.JOIN);
               },
             },
             [j.e$_.CLOSE_ACTIVITY_JOIN_REQUEST]: {
@@ -93932,7 +93942,7 @@ ${a}`);
                   } = e,
                   n = nR.A.getDMFromUserId(t);
                 null != n &&
-                  (0, kU.ack)(
+                  (0, kw.ack)(
                     n,
                     {
                       section: j.JJy.CLOSE_ACTIVITY_JOIN_REQUEST_RPC_COMMAND,
@@ -93966,7 +93976,7 @@ ${a}`);
                     { errorCode: j.Lw6.INVALID_COMMAND },
                     "No application.",
                   );
-                return kF(a, s, i, n, r);
+                return kB(a, s, i, n, r);
               },
             },
             [j.e$_.ACCEPT_ACTIVITY_INVITE]: {
@@ -94043,7 +94053,7 @@ ${a}`);
                 let d = null != o ? j.BRT.POPOUT : j.BRT.APP;
                 if (((0, se.sP)({}, o?.document), null != s)) {
                   let e = _W.A.getApplicationActivity(i.id);
-                  if (null != e) (0, kP.qf)(e, !1, d);
+                  if (null != e) (0, kU.qf)(e, !1, d);
                   else
                     throw new wB.A(
                       { errorCode: j.Lw6.NO_ELIGIBLE_ACTIVITY },
@@ -94127,7 +94137,7 @@ ${a}`);
                   })(
                     async (i) => {
                       let a = await (0, n_.CS)(n, r, i);
-                      (0, _l.Vq)(a) && (0, _l.Vq)(a.url) && !(a instanceof kw.A)
+                      (0, _l.Vq)(a) && (0, _l.Vq)(a.url) && !(a instanceof kG.A)
                         ? e({ image_url: a.url })
                         : t(a);
                     },
@@ -94261,7 +94271,7 @@ ${a}`);
                         width: r.width,
                       },
                     ]),
-                    (t = new kk.Ay({
+                    (t = new kF.Ay({
                       id: cu.default.cast(cu.default.fromTimestamp(Date.now())),
                       applicationId: c,
                       content: l,
@@ -94271,12 +94281,12 @@ ${a}`);
                 }
                 return new Promise((e) => {
                   let n = !1,
-                    r = (0, kb.d5)(d),
+                    r = (0, kM.d5)(d),
                     a = xS.SY;
                   (iv.A.getWindowOpen(j.MLl.ACTIVITY_POPOUT) ||
                     r.context === j.BRT.POPOUT) &&
                     (a = xS.KX),
-                    (0, kx.m)({
+                    (0, kk.m)({
                       applicationId: c,
                       channel: u,
                       command: { name: i, options: o },
@@ -94291,8 +94301,8 @@ ${a}`);
               },
             }),
           },
-          kV = 10 * iT.A.Millis.SECOND,
-          kH = {
+          kH = 10 * iT.A.Millis.SECOND,
+          kj = {
             [j.e$_.VALIDATE_APPLICATION]: {
               scope: bc.hj,
               handler(e) {
@@ -94342,7 +94352,7 @@ ${a}`);
                           "User does not have entitlement.",
                         );
                     }),
-                    (0, ip.BK)(kV).then(() => {
+                    (0, ip.BK)(kH).then(() => {
                       throw new wB.A(
                         { errorCode: j.Lw6.INVALID_ENTITLEMENT },
                         "Timed out fetching entitlement.",
@@ -94400,27 +94410,27 @@ ${a}`);
               },
             },
           };
-        var kj = n(941426),
-          kW = n(229209),
-          kY = n(782425),
-          kK = n(201327),
-          k$ = n(429582),
-          kz = n(426179),
-          kX = n(484697),
-          kq = n(803301);
-        let kZ = "/embeds/video-frame";
-        function kQ(e) {
+        var kW = n(941426),
+          kY = n(229209),
+          kK = n(782425),
+          k$ = n(201327),
+          kz = n(429582),
+          kX = n(426179),
+          kq = n(484697),
+          kZ = n(803301);
+        let kQ = "/embeds/video-frame";
+        function kJ(e) {
           return "contain" === e || "cover" === e ? e : null;
         }
-        let kJ = new Map(),
-          k0 = new kj.Vy("ApplicationStreamingViewCoordinator"),
-          k1 = {
-            application_streaming: [d8.A, wR.A, kq.A],
-            camera: [nL.A, nH.A, ek.Ay, kq.A],
+        let k0 = new Map(),
+          k1 = new kW.Vy("ApplicationStreamingViewCoordinator"),
+          k2 = {
+            application_streaming: [d8.A, wR.A, kZ.A],
+            camera: [nL.A, nH.A, ek.Ay, kZ.A],
           };
-        function k2(e) {
+        function k3(e) {
           if (null == e) return "contain";
-          let t = kQ(e);
+          let t = kJ(e);
           if (null == t)
             throw new wB.A(
               { errorCode: j.Lw6.INVALID_PAYLOAD },
@@ -94428,7 +94438,7 @@ ${a}`);
             );
           return t;
         }
-        class k3 {
+        class k5 {
           frames = new Map();
           subscribedSourceTypes = new Set();
           publishedDisplaySizes = new Map();
@@ -94499,7 +94509,7 @@ ${a}`);
           }
           async start(e, t, n, i) {
             let r,
-              a = k2(i),
+              a = k3(i),
               { context: s, frameId: l } = this.validateFrame(e),
               { channelId: o, guildId: d } = this.resolveFrameVoiceContext(s),
               c = d8.A.getStreamForUser(t, d);
@@ -94582,7 +94592,7 @@ ${a}`);
             }
           }
           startCamera(e, t, n, i) {
-            let r = k2(i),
+            let r = k3(i),
               { context: a, frameId: s } = this.validateFrame(e),
               {
                 channelId: l,
@@ -94600,7 +94610,7 @@ ${a}`);
                 { errorCode: j.Lw6.INVALID_CHANNEL },
                 "That camera is hidden in this Discord client",
               );
-            let u = kq.A.getStreamId(t, o, iM.x.DEFAULT);
+            let u = kZ.A.getStreamId(t, o, iM.x.DEFAULT);
             if (null == u)
               throw new wB.A(
                 { errorCode: j.Lw6.INVALID_CHANNEL },
@@ -94635,7 +94645,7 @@ ${a}`);
                 { errorCode: j.Lw6.UNAUTHORIZED_FOR_APPLICATION },
                 "Managed video views require a Frame transport",
               );
-            let n = (0, kX.fl)(t.iframeId)?.contentWindow;
+            let n = (0, kq.fl)(t.iframeId)?.contentWindow;
             if (null == n)
               throw new wB.A(
                 { errorCode: j.Lw6.INVALID_COMMAND },
@@ -94678,15 +94688,15 @@ ${a}`);
                 fit: E,
               } = e,
               A = (function (e) {
-                if ((0, kW.au)()) return (0, kW.nz)(e);
-                let t = (0, kK.yL)(e);
+                if ((0, kY.au)()) return (0, kY.nz)(e);
+                let t = (0, k$.yL)(e);
                 if (null == t) return null;
-                (0, kY.NM)(e);
+                (0, kK.NM)(e);
                 let n = !1;
                 return {
                   stream: t,
                   release() {
-                    n || ((n = !0), (0, kY.gm)(e));
+                    n || ((n = !0), (0, kK.gm)(e));
                   },
                 };
               })(u);
@@ -94709,7 +94719,7 @@ ${a}`);
                 rtcConnectionId: c,
                 videoStreamId: u,
                 lease: A,
-                viewerUrl: `${window.location.origin}${kZ}`,
+                viewerUrl: `${window.location.origin}${kQ}`,
                 releaseViewer: null,
                 setViewerPresenting: null,
                 fit: E,
@@ -94743,7 +94753,7 @@ ${a}`);
             );
           }
           attachFrameVideoViewer(e, t, n, i) {
-            let r = (0, k$.H3)(t)?.shell ?? t.top ?? window,
+            let r = (0, kz.H3)(t)?.shell ?? t.top ?? window,
               a = null,
               s = (n) => {
                 var r;
@@ -94756,13 +94766,13 @@ ${a}`);
                     r.nonce !== i)
                 )
                   return;
-                let s = (0, k$.H3)(t)?.guest ?? t;
+                let s = (0, kz.H3)(t)?.guest ?? t;
                 (function (e, t) {
                   try {
                     let n = new URL(e.location.href);
                     return (
                       n.origin === window.location.origin &&
-                      n.pathname === kZ &&
+                      n.pathname === kQ &&
                       e.parent === t
                     );
                   } catch {
@@ -94784,7 +94794,7 @@ ${a}`);
                       s = !1,
                       l = !1;
                     function o(e) {
-                      let t = kQ(e);
+                      let t = kJ(e);
                       s || null == t || (a.style.objectFit = t);
                     }
                     function d(e) {
@@ -94848,7 +94858,7 @@ ${a}`);
           }
           setFit(e, t, n) {
             let i = this.validateSession(e, t);
-            (i.fit = k2(n)), i.setViewerFit?.(i.fit);
+            (i.fit = k3(n)), i.setViewerFit?.(i.fit);
           }
           watchOnDiscord(e, t) {
             let n = this.validateSession(e, t);
@@ -94942,9 +94952,9 @@ ${a}`);
                 : this.handleCameraIdentityChange;
             t
               ? (this.subscribedSourceTypes.add(e),
-                k1[e].forEach((e) => e.addChangeListener(n)))
+                k2[e].forEach((e) => e.addChangeListener(n)))
               : (this.subscribedSourceTypes.delete(e),
-                k1[e].forEach((e) => e.removeChangeListener(n)));
+                k2[e].forEach((e) => e.removeChangeListener(n)));
           }
           releaseAll() {
             for (let e of this.getPendingStarts()) this.cancelPendingStart(e);
@@ -94990,7 +95000,7 @@ ${a}`);
                   ((t = e.channelId),
                   (n = "camera" === e.sourceType ? e.ownerUserId : e.streamKey),
                   (i = `${t}:${n}`),
-                  null != (r = kJ.get(i))
+                  null != (r = k0.get(i))
                     ? (r.holders += 1)
                     : ((r = {
                         holders: 1,
@@ -95008,14 +95018,14 @@ ${a}`);
                           );
                         })(t, n),
                       }),
-                      kJ.set(i, r)),
+                      k0.set(i, r)),
                   (a = r),
                   (s = !1),
                   () =>
                     !s &&
                     ((s = !0),
                     (a.holders -= 1),
-                    !(a.holders > 0) && (kJ.delete(i), a.release())));
+                    !(a.holders > 0) && (k0.delete(i), a.release())));
               }
           }
           releaseNativeSurfaceExclusion(e) {
@@ -95027,7 +95037,7 @@ ${a}`);
             if (i?.state !== j.XYD.ACTIVE && i?.state !== j.XYD.PAUSED)
               return null;
             let r = wR.A.getRtcConnectionId(n),
-              a = kq.A.getStreamId(e, t, iM.x.STREAM);
+              a = kZ.A.getStreamId(e, t, iM.x.STREAM);
             return null != r && null != a
               ? { rtcConnectionId: r, videoStreamId: a }
               : null;
@@ -95044,7 +95054,7 @@ ${a}`);
                   function a() {
                     clearTimeout(o),
                       n.removeEventListener("abort", s),
-                      k1.application_streaming.forEach((e) =>
+                      k2.application_streaming.forEach((e) =>
                         e.removeChangeListener(l),
                       );
                   }
@@ -95087,7 +95097,7 @@ ${a}`);
                         void (a(), r(e))
                       );
                     }, 12e3);
-                  k1.application_streaming.forEach((e) =>
+                  k2.application_streaming.forEach((e) =>
                     e.addChangeListener(l),
                   ),
                     n.addEventListener("abort", s, { once: !0 }),
@@ -95138,9 +95148,9 @@ ${a}`);
             this.streamWatches.delete(e);
             let a = i || tm.A.getSelectedParticipantId(t) === e,
               s =
-                null != n && ((0, kW.au)() ? (0, kW.sj)(n) : (0, kY.ZE)(n)) > 0;
+                null != n && ((0, kY.au)() ? (0, kY.sj)(n) : (0, kK.ZE)(n)) > 0;
             a || s
-              ? k0.info(
+              ? k1.info(
                   "Leaving Conjure-acquired Go Live watch active for another Discord consumer",
                 )
               : (0, ub.vN)(e, !1, !1);
@@ -95170,7 +95180,7 @@ ${a}`);
             let i = this.publishedDisplaySizes.get(e);
             (i?.width !== t || i.height !== n) &&
               (this.publishedDisplaySizes.set(e, { width: t, height: n }),
-              (0, kz.c)(e, { width: t, height: n }, 1));
+              (0, kX.c)(e, { width: t, height: n }, 1));
           }
           resolveFrameVoiceContext(e) {
             let t = nL.A.getRTCConnection();
@@ -95240,50 +95250,50 @@ ${a}`);
                   i.getRTCConnectionId() === t.rtcConnectionId &&
                   r?.selfVideo === !0 &&
                   !ek.Ay.isLocalVideoDisabled(t.ownerUserId, iM.x.DEFAULT) &&
-                  kq.A.getStreamId(t.ownerUserId, t.guildId, iM.x.DEFAULT) ===
+                  kZ.A.getStreamId(t.ownerUserId, t.guildId, iM.x.DEFAULT) ===
                     t.videoStreamId)
               : ((n = e),
                 null != (a = d8.A.getStreamForUser(n.ownerUserId, n.guildId)) &&
                   a.channelId === n.channelId &&
                   (0, dF._z)(a) === n.streamKey &&
                   wR.A.getRtcConnectionId(n.streamKey) === n.rtcConnectionId &&
-                  kq.A.getStreamId(n.ownerUserId, n.guildId, iM.x.STREAM) ===
+                  kZ.A.getStreamId(n.ownerUserId, n.guildId, iM.x.STREAM) ===
                     n.videoStreamId);
           }
         }
-        let k5 = new k3();
+        let k6 = new k5();
         k.h.subscribe("RPC_APP_DISCONNECTED", (e) => {
           let { socketId: t } = e;
-          return k5.releaseSocket(t);
+          return k6.releaseSocket(t);
         }),
           k.h.subscribe("VOICE_CHANNEL_SELECT", (e) => {
             let { channelId: t } = e;
-            return k5.releaseUnlessChannel(t);
+            return k6.releaseUnlessChannel(t);
           }),
-          k.h.subscribe("LOGOUT", () => k5.releaseAll());
-        let k6 = { [bc.sm.ANY]: [bc.W_, bc.VH] },
-          k4 = {
+          k.h.subscribe("LOGOUT", () => k6.releaseAll());
+        let k4 = { [bc.sm.ANY]: [bc.W_, bc.VH] },
+          k7 = {
             [j.e$_.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: GZ(
               j.e$_.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES,
               {
-                scope: k6,
+                scope: k4,
                 handler(e) {
                   let { socket: t } = e;
-                  return (0, wV.Ay)(t), k5.getCapabilitiesForSocket(t);
+                  return (0, wV.Ay)(t), k6.getCapabilitiesForSocket(t);
                 },
               },
             ),
             [j.e$_.START_APPLICATION_STREAMING_VIEW]: GZ(
               j.e$_.START_APPLICATION_STREAMING_VIEW,
               {
-                scope: k6,
+                scope: k4,
                 async handler(e) {
                   let {
                     socket: t,
                     args: { owner_user_id: n, transport_nonce: i, fit: r },
                   } = e;
                   (0, wV.Ay)(t);
-                  let a = await k5.start(t, n, i, r);
+                  let a = await k6.start(t, n, i, r);
                   return {
                     session_id: a.id,
                     owner_user_id: a.ownerUserId,
@@ -95297,53 +95307,53 @@ ${a}`);
             [j.e$_.SUSPEND_APPLICATION_STREAMING_VIEW]: GZ(
               j.e$_.SUSPEND_APPLICATION_STREAMING_VIEW,
               {
-                scope: k6,
+                scope: k4,
                 handler(e) {
                   let {
                     socket: t,
                     args: { session_id: n },
                   } = e;
-                  return (0, wV.Ay)(t), k5.suspend(t, n), { success: !0 };
+                  return (0, wV.Ay)(t), k6.suspend(t, n), { success: !0 };
                 },
               },
             ),
             [j.e$_.RESUME_APPLICATION_STREAMING_VIEW]: GZ(
               j.e$_.RESUME_APPLICATION_STREAMING_VIEW,
               {
-                scope: k6,
+                scope: k4,
                 handler(e) {
                   let {
                     socket: t,
                     args: { session_id: n },
                   } = e;
-                  return (0, wV.Ay)(t), k5.resume(t, n), { success: !0 };
+                  return (0, wV.Ay)(t), k6.resume(t, n), { success: !0 };
                 },
               },
             ),
             [j.e$_.SET_APPLICATION_STREAMING_VIEW_FIT]: GZ(
               j.e$_.SET_APPLICATION_STREAMING_VIEW_FIT,
               {
-                scope: k6,
+                scope: k4,
                 handler(e) {
                   let {
                     socket: t,
                     args: { session_id: n, fit: i },
                   } = e;
-                  return (0, wV.Ay)(t), k5.setFit(t, n, i), { success: !0 };
+                  return (0, wV.Ay)(t), k6.setFit(t, n, i), { success: !0 };
                 },
               },
             ),
             [j.e$_.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: GZ(
               j.e$_.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD,
               {
-                scope: k6,
+                scope: k4,
                 handler(e) {
                   let {
                     socket: t,
                     args: { session_id: n },
                   } = e;
                   return (
-                    (0, wV.Ay)(t), k5.watchOnDiscord(t, n), { success: !0 }
+                    (0, wV.Ay)(t), k6.watchOnDiscord(t, n), { success: !0 }
                   );
                 },
               },
@@ -95351,30 +95361,30 @@ ${a}`);
             [j.e$_.STOP_APPLICATION_STREAMING_VIEW]: GZ(
               j.e$_.STOP_APPLICATION_STREAMING_VIEW,
               {
-                scope: k6,
+                scope: k4,
                 handler(e) {
                   let {
                     socket: t,
                     args: { session_id: n },
                   } = e;
-                  return (0, wV.Ay)(t), k5.stop(t, n), { success: !0 };
+                  return (0, wV.Ay)(t), k6.stop(t, n), { success: !0 };
                 },
               },
             ),
           };
-        var k7 = n(887909),
-          k8 = n(321987),
-          k9 = n(595244),
-          Fe = n(485845),
-          Ft = n(898467),
-          Fn = n(224750),
-          Fi = n(716965),
-          Fr = n(671523),
-          Fa = n(337095),
-          Fs = n(488926);
-        let Fl = "CachedTokens",
-          Fo = { "1273616940451102832": new Ft.A(2, +iT.A.Millis.MINUTE) };
-        async function Fd(e, t, n) {
+        var k8 = n(887909),
+          k9 = n(321987),
+          Fe = n(595244),
+          Ft = n(485845),
+          Fn = n(898467),
+          Fi = n(224750),
+          Fr = n(716965),
+          Fa = n(671523),
+          Fs = n(337095),
+          Fl = n(488926);
+        let Fo = "CachedTokens",
+          Fd = { "1273616940451102832": new Fn.A(2, +iT.A.Millis.MINUTE) };
+        async function Fc(e, t, n) {
           let i,
             r,
             a,
@@ -95430,18 +95440,18 @@ ${a}`);
             function R(e) {
               return (
                 (0, GJ.D)(e) &&
-                e?.integrationTypesConfig?.[Fe.b.USER_INSTALL] != null
+                e?.integrationTypesConfig?.[Ft.b.USER_INSTALL] != null
               );
             }
             let e = ng.A.getApplication(o);
             r =
-              R(e) || R((e = nB.Ay.createFromServer(await (0, Fa.TA)(o, N))))
-                ? Fe.b.USER_INSTALL
-                : Fe.b.GUILD_INSTALL;
+              R(e) || R((e = nB.Ay.createFromServer(await (0, Fs.TA)(o, N))))
+                ? Ft.b.USER_INSTALL
+                : Ft.b.GUILD_INSTALL;
           }
           try {
             [a, { disclosures: s, allAcked: l }] = await Promise.all([
-              (0, Fi.qY)({
+              (0, Fr.qY)({
                 clientId: o,
                 scopes: O,
                 responseType: d,
@@ -95452,7 +95462,7 @@ ${a}`);
                 integrationType: r,
                 signal: N,
               }),
-              (0, Fn.vG)(o),
+              (0, Fi.vG)(o),
             ]);
           } catch (t) {
             let { body: e } = t;
@@ -95461,10 +95471,10 @@ ${a}`);
               `OAuth2 Authorization Error: ${e?.message || "Unknown Error"}`,
             );
           }
-          if (T === Fr.l.NONE && null != a && a.authorized && l)
+          if (T === Fa.l.NONE && null != a && a.authorized && l)
             try {
               return (
-                await (0, Fi.Gq)({
+                await (0, Fr.Gq)({
                   authorize: !0,
                   clientId: o,
                   scopes: O,
@@ -95485,16 +95495,16 @@ ${a}`);
               );
             }
           n?.(a.application, p, S);
-          let L = Fs.x3;
+          let L = Fl.x3;
           try {
             L = MP.iu(f ?? 0);
           } catch (e) {}
           if (
             (null != a.integration_type &&
-              Object.values(Fe.b).includes(a.integration_type) &&
+              Object.values(Ft.b).includes(a.integration_type) &&
               (i = new Map()).set(a.integration_type, a),
-            null != Fo[a.application.id] &&
-              (await Fo[a.application.id].process(), N?.aborted))
+            null != Fd[a.application.id] &&
+              (await Fd[a.application.id].process(), N?.aborted))
           )
             throw new wB.A(
               { errorCode: j.Lw6.UNKNOWN_ERROR },
@@ -95520,7 +95530,7 @@ ${a}`);
             signal: N,
           });
         }
-        async function Fc(e, t) {
+        async function Fu(e, t) {
           if (null != e.authorization.accessToken)
             throw new wB.A(
               { errorCode: j.Lw6.INVALID_COMMAND },
@@ -95580,7 +95590,7 @@ ${a}`);
             e.authorization.authing = !1;
           }
         }
-        let Fu =
+        let F_ =
             ((O = (e) => {
               let {
                   clientId: t,
@@ -95605,7 +95615,7 @@ ${a}`);
                 T = null != h ? n?.get(h) : void 0,
                 m = T?.application ?? ng.A.getApplication(t);
               return new Promise((e, T) => {
-                let g = (0, kb.d5)(f),
+                let g = (0, kM.d5)(f),
                   S = xS.SY;
                 null != m &&
                 null != (0, xN.Ay)({ application: m, channelId: u })
@@ -95629,7 +95639,7 @@ ${a}`);
                       ? g.lock()
                       : null == new URL(r).searchParams.get("error")
                         ? (0, tQ.openModal)(
-                            (e) => (0, b.jsx)(k9.Sm, { application: m, ...e }),
+                            (e) => (0, b.jsx)(Fe.Sm, { application: m, ...e }),
                             {
                               onCloseCallback: () => {
                                 g.lock();
@@ -95638,7 +95648,7 @@ ${a}`);
                             S,
                           )
                         : (0, tQ.openModal)(
-                            (e) => (0, b.jsx)(k9.xb, { ...e }),
+                            (e) => (0, b.jsx)(Fe.xb, { ...e }),
                             {
                               onCloseCallback: () => {
                                 g.lock();
@@ -95652,7 +95662,7 @@ ${a}`);
                   function n() {
                     (0, tQ.closeModal)(e) &&
                       (0, tQ.openModal)((e) =>
-                        (0, b.jsx)(k8.f, {
+                        (0, b.jsx)(k9.f, {
                           ...e,
                           title: tv.intl.string(tv.t.j2d6Km),
                           subtitle: tv.intl.string(tv.t["4LKmN5"]),
@@ -95676,7 +95686,7 @@ ${a}`);
                 })(p, I);
                 (0, tQ.openModal)(
                   (e) =>
-                    (0, b.jsx)(k7.OAuth2AuthorizeModal, {
+                    (0, b.jsx)(k8.OAuth2AuthorizeModal, {
                       ...e,
                       authorizations: n,
                       clientId: t,
@@ -95715,7 +95725,7 @@ ${a}`);
               });
             }),
             (R = function (e, t, n) {
-              if ((0, kb.kS)(n) || !eB.isPlatformEmbedded) return;
+              if ((0, kM.kS)(n) || !eB.isPlatformEmbedded) return;
               let i = (0, xN.Ay)({ application: e, channelId: t });
               (0, eB.isWindows)() ? eV.Ay.minimize(i) : eV.Ay.restore(i),
                 eV.Ay.focus(i);
@@ -95737,7 +95747,7 @@ ${a}`);
                       );
                     let r = GT.F.IDENTIFY,
                       a = () =>
-                        Fd(
+                        Fc(
                           {
                             client_id: e,
                             scope: r,
@@ -95766,31 +95776,31 @@ ${a}`);
                             (i = o.access_token),
                             (r = o.scope),
                             (a = o.expires_in),
-                            ((s = ex.w.get(Fl) ?? {})[e] = {
+                            ((s = ex.w.get(Fo) ?? {})[e] = {
                               accessToken: i,
                               scope: r,
                               expires: Date.now() + a,
                             }),
-                            ex.w.set(Fl, s),
-                            Fc(t, o.access_token)
+                            ex.w.set(Fo, s),
+                            Fu(t, o.access_token)
                           );
                         });
                     return null !=
                       (i = (function (e, t) {
-                        let n = ex.w.get(Fl);
+                        let n = ex.w.get(Fo);
                         if (null != n && null != n[e]) {
                           let i = n[e];
                           if (!(i.scope !== t || i.expires <= Date.now()))
                             return i.accessToken;
-                          delete n[e], ex.w.set(Fl, n);
+                          delete n[e], ex.w.set(Fo, n);
                         }
                       })(e, r))
-                      ? Fc(t, i).catch(() => {
+                      ? Fu(t, i).catch(() => {
                           let t;
                           return (
-                            (t = ex.w.get(Fl) ?? {}),
+                            (t = ex.w.get(Fo) ?? {}),
                             delete t[e],
-                            ex.w.set(Fl, t),
+                            ex.w.set(Fo, t),
                             a()
                           );
                         })
@@ -95801,7 +95811,7 @@ ${a}`);
                       { errorCode: j.Lw6.INVALID_TOKEN },
                       "No access token provided",
                     );
-                  return Fc(t, i);
+                  return Fu(t, i);
                 },
               }),
               [j.e$_.AUTHORIZE]: GZ(j.e$_.AUTHORIZE, {
@@ -95847,7 +95857,7 @@ ${a}`);
                     null != i.scopes && "" !== i.scopes ? i.scopes : i.scope;
                   return (
                     delete i.scopes,
-                    Fd(
+                    Fc(
                       { ...i, scope: s, signal: n, isSocketRpcPrivateScope: a },
                       O,
                       R,
@@ -95885,27 +95895,27 @@ ${a}`);
                 },
               }),
             }),
-          F_ = { [bc.sm.ANY]: [bc.W_, bc.VH] },
-          FE = {
+          FE = { [bc.sm.ANY]: [bc.W_, bc.VH] },
+          FA = {
             [j.e$_.GET_CAMERA_VIEW_CAPABILITIES]: GZ(
               j.e$_.GET_CAMERA_VIEW_CAPABILITIES,
               {
-                scope: F_,
+                scope: FE,
                 handler(e) {
                   let { socket: t } = e;
-                  return (0, wV.Ay)(t), k5.getCameraCapabilitiesForSocket(t);
+                  return (0, wV.Ay)(t), k6.getCameraCapabilitiesForSocket(t);
                 },
               },
             ),
             [j.e$_.START_CAMERA_VIEW]: GZ(j.e$_.START_CAMERA_VIEW, {
-              scope: F_,
+              scope: FE,
               handler(e) {
                 let {
                   socket: t,
                   args: { owner_user_id: n, transport_nonce: i, fit: r },
                 } = e;
                 (0, wV.Ay)(t);
-                let a = k5.startCamera(t, n, i, r);
+                let a = k6.startCamera(t, n, i, r);
                 return {
                   session_id: a.id,
                   owner_user_id: a.ownerUserId,
@@ -95916,49 +95926,49 @@ ${a}`);
               },
             }),
             [j.e$_.SUSPEND_CAMERA_VIEW]: GZ(j.e$_.SUSPEND_CAMERA_VIEW, {
-              scope: F_,
+              scope: FE,
               handler(e) {
                 let {
                   socket: t,
                   args: { session_id: n },
                 } = e;
-                return (0, wV.Ay)(t), k5.suspend(t, n), { success: !0 };
+                return (0, wV.Ay)(t), k6.suspend(t, n), { success: !0 };
               },
             }),
             [j.e$_.RESUME_CAMERA_VIEW]: GZ(j.e$_.RESUME_CAMERA_VIEW, {
-              scope: F_,
+              scope: FE,
               handler(e) {
                 let {
                   socket: t,
                   args: { session_id: n },
                 } = e;
-                return (0, wV.Ay)(t), k5.resume(t, n), { success: !0 };
+                return (0, wV.Ay)(t), k6.resume(t, n), { success: !0 };
               },
             }),
             [j.e$_.SET_CAMERA_VIEW_FIT]: GZ(j.e$_.SET_CAMERA_VIEW_FIT, {
-              scope: F_,
+              scope: FE,
               handler(e) {
                 let {
                   socket: t,
                   args: { session_id: n, fit: i },
                 } = e;
-                return (0, wV.Ay)(t), k5.setFit(t, n, i), { success: !0 };
+                return (0, wV.Ay)(t), k6.setFit(t, n, i), { success: !0 };
               },
             }),
             [j.e$_.STOP_CAMERA_VIEW]: GZ(j.e$_.STOP_CAMERA_VIEW, {
-              scope: F_,
+              scope: FE,
               handler(e) {
                 let {
                   socket: t,
                   args: { session_id: n },
                 } = e;
-                return (0, wV.Ay)(t), k5.stop(t, n), { success: !0 };
+                return (0, wV.Ay)(t), k6.stop(t, n), { success: !0 };
               },
             }),
           };
-        var FA = n(673953);
-        let Fh = new Set();
-        function Ff(e) {
+        var Fh = n(673953);
+        let Ff = new Set();
+        function FI(e) {
           let {
               type: t,
               title: n,
@@ -95991,7 +96001,7 @@ ${a}`);
             ];
           return (0, b.jsx)(ns.a, { ...o, title: n, subtitle: i, actions: d });
         }
-        let FI = {
+        let Fp = {
           [j.e$_.SHOW_CONFIRM_MODAL]: GZ(j.e$_.SHOW_CONFIRM_MODAL, {
             scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
             handler(e) {
@@ -96006,18 +96016,18 @@ ${a}`);
                   },
                 } = e,
                 { iframeId: l } = (0, wH.Ay)(t),
-                o = (0, FA.C6)(l);
-              return null == o || Fh.has(l)
+                o = (0, Fh.C6)(l);
+              return null == o || Ff.has(l)
                 ? "confirm" === n
                   ? { confirmed: !1 }
                   : { acknowledged: !1 }
-                : (Fh.add(l),
+                : (Ff.add(l),
                   new Promise((e) => {
                     let t = !1;
                     function d(i) {
                       t ||
                         ((t = !0),
-                        Fh.delete(l),
+                        Ff.delete(l),
                         e(
                           "confirm" === n
                             ? { confirmed: i }
@@ -96026,7 +96036,7 @@ ${a}`);
                     }
                     (0, tQ.openModal)(
                       (e) =>
-                        (0, b.jsx)(Ff, {
+                        (0, b.jsx)(FI, {
                           ...e,
                           type: n,
                           title: i,
@@ -96043,8 +96053,8 @@ ${a}`);
             },
           }),
         };
-        var Fp = n(809685);
-        let FT = {
+        var FT = n(809685);
+        let Fm = {
           [j.e$_.OPEN_CONTEXT_MENU]: GZ(j.e$_.OPEN_CONTEXT_MENU, {
             scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
             async handler(e) {
@@ -96066,7 +96076,7 @@ ${a}`);
                 } = e,
                 { frame: A, iframeId: h } = (0, wH.Ay)(s),
                 f = (0, sL.A)(A.surface),
-                I = (0, kX.fl)(h);
+                I = (0, kq.fl)(h);
               if (null == I) return { opened: !1 };
               let p = null;
               if ("custom" === l) {
@@ -96100,12 +96110,12 @@ ${a}`);
                     (t = I.getBoundingClientRect()).width,
                   )),
                   (r = Math.min(Math.max(E, 0), t.height)),
-                  (a = (0, FA.JH)(I)),
+                  (a = (0, Fh.JH)(I)),
                   {
                     pageX: t.left + a.scrollX + i,
                     pageY: t.top + a.scrollY + r,
                   }),
-                g = { context: (0, FA.cH)(I), onClose: () => (0, Fp.yH)(h) },
+                g = { context: (0, Fh.cH)(I), onClose: () => (0, FT.yH)(h) },
                 S = {
                   pageX: T,
                   pageY: m,
@@ -96115,7 +96125,7 @@ ${a}`);
                   preventDefault: () => {},
                 };
               function N(e, t) {
-                (0, Fp.n_)(h),
+                (0, FT.n_)(h),
                   (0, Et.L3)(S, e, null == t ? g : { ...g, onClose: t });
               }
               if (null != p) {
@@ -96123,7 +96133,7 @@ ${a}`);
                 return new Promise((t) => {
                   let i = null;
                   function r() {
-                    (0, Fp.yH)(h), t({ opened: !0, selected_id: i });
+                    (0, FT.yH)(h), t({ opened: !0, selected_id: i });
                   }
                   N(async () => {
                     let { default: t, loadActivityContextMenuIcons: a } =
@@ -96591,8 +96601,8 @@ ${a}`);
                       n.e("773534"),
                       n.e("971430"),
                       n.e("211185"),
-                      n.e("41332"),
                       n.e("976516"),
+                      n.e("41332"),
                       n.e("400501"),
                       n.e("985794"),
                       n.e("732194"),
@@ -96863,28 +96873,28 @@ ${a}`);
             },
           }),
         };
-        var Fm = n(60465),
-          Fg = n(921138),
-          FS = n(311043),
-          FN = n(227309),
-          FC = n(871633);
-        async function FO(e) {
-          return await u7.I.fetchMany([e]), FS.A.getGame(e) ?? null;
-        }
+        var Fg = n(60465),
+          FS = n(921138),
+          FN = n(311043),
+          FC = n(227309),
+          FO = n(871633);
         async function FR(e) {
+          return await u7.I.fetchMany([e]), FN.A.getGame(e) ?? null;
+        }
+        async function FL(e) {
           let { applicationId: t, gameId: n } = e,
             i = n ?? null;
           if (null == i && null != t) {
             ng.A.isHydrated(t) || (await (0, nm.TA)(t).catch(j.tEg));
             let e = ng.A.getApplication(t);
             if (null == e) return null;
-            i = (0, FC.bB)(e) ? FN.aX : e.getCanonicalGameId();
+            i = (0, FO.bB)(e) ? FC.aX : e.getCanonicalGameId();
           }
           if (null == i) return null;
-          let r = await FO(i);
-          return null != r && (0, FC.Zb)(r) ? FO(FN.aX) : r;
+          let r = await FR(i);
+          return null != r && (0, FO.Zb)(r) ? FR(FC.aX) : r;
         }
-        let FL = {
+        let Fy = {
           [j.e$_.OPEN_GAME_PROFILE]: GZ(j.e$_.OPEN_GAME_PROFILE, {
             scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
             async handler(e) {
@@ -96898,12 +96908,12 @@ ${a}`);
                   { errorCode: j.Lw6.INVALID_COMMAND },
                   "Pass exactly one of game_id or application_id",
                 );
-              let a = await FR({ gameId: n, applicationId: i });
-              if (null == a || (0, Fg.TC)(a)) return { opened: !1 };
-              let s = (0, FA.LV)(r);
+              let a = await FL({ gameId: n, applicationId: i });
+              if (null == a || (0, FS.TC)(a)) return { opened: !1 };
+              let s = (0, Fh.LV)(r);
               return null == s
                 ? { opened: !1 }
-                : (Fm.default.openGameProfileModal({
+                : (Fg.default.openGameProfileModal({
                     gameId: a.id,
                     gameProfileModalChecks: {
                       shouldOpenGameProfile: !0,
@@ -96916,9 +96926,9 @@ ${a}`);
             },
           }),
         };
-        var Fy = n(845187);
-        let FD = "activity-hardware-acceleration-modal",
-          Fv = {
+        var FD = n(845187);
+        let Fv = "activity-hardware-acceleration-modal",
+          Fb = {
             [j.e$_.ENCOURAGE_HW_ACCELERATION]: GZ(
               j.e$_.ENCOURAGE_HW_ACCELERATION,
               {
@@ -96944,12 +96954,12 @@ ${a}`);
                             (0, b.jsx)(e, { applicationId: i, ...t });
                         },
                         {
-                          modalKey: FD,
+                          modalKey: Fv,
                           onCloseRequest: () => {
                             W.default.track(j.HAw.MODAL_DISMISSED, {
-                              type: Fy.a,
+                              type: FD.a,
                             }),
-                              (0, tQ.closeModal)(FD);
+                              (0, tQ.closeModal)(Fv);
                           },
                         },
                       ),
@@ -96959,8 +96969,8 @@ ${a}`);
               },
             ),
           };
-        var Fb = n(256905);
-        let FM = {
+        var FM = n(256905);
+        let FP = {
           [j.e$_.OPEN_MEDIA_VIEWER]: GZ(j.e$_.OPEN_MEDIA_VIEWER, {
             scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
             handler(e) {
@@ -96986,10 +96996,10 @@ ${a}`);
                   { errorCode: j.Lw6.INVALID_PAYLOAD },
                   `starting_index ${i} is out of range for ${n.length} item(s)`,
                 );
-              let a = (0, FA.C6)(r);
+              let a = (0, Fh.C6)(r);
               return null == a
                 ? { opened: !1 }
-                : ((0, Fb.R)({
+                : ((0, FM.R)({
                     items: n.map((e) => {
                       let { url: t, type: n, width: i, height: r, alt: a } = e;
                       return {
@@ -97010,15 +97020,15 @@ ${a}`);
             },
           }),
         };
-        var FP = n(43203);
-        let FU = {
+        var FU = n(43203);
+        let Fw = {
             [j.e$_.OPEN_MESSAGE]: {
               scope: bc.hj,
               handler(e) {
                 let {
                   args: { guild_id: t, channel_id: n, message_id: i, pid: r },
                 } = e;
-                (0, kb.d5)(r).context === j.BRT.OVERLAY
+                (0, kM.d5)(r).context === j.BRT.OVERLAY
                   ? k.h.dispatch({
                       type: "OVERLAY_OPEN_MESSAGE",
                       guildId: t,
@@ -97030,8 +97040,8 @@ ${a}`);
               },
             },
           },
-          Fw = new ez.A("RPCCommandsOverlay"),
-          FG = {
+          FG = new ez.A("RPCCommandsOverlay"),
+          Fx = {
             [j.e$_.SET_OVERLAY_LOCKED]: {
               scope: bc.hj,
               validation: (e) =>
@@ -97047,7 +97057,7 @@ ${a}`);
                   socket: { application: i },
                 } = e;
                 if (
-                  (Fw.verbose("RPCCommands.SET_OVERLAY_LOCKED", {
+                  (FG.verbose("RPCCommands.SET_OVERLAY_LOCKED", {
                     locked: t,
                     pid: n,
                   }),
@@ -97090,9 +97100,9 @@ ${a}`);
                     { errorCode: j.Lw6.NO_ELIGIBLE_ACTIVITY },
                     "No eligible activity for application. Ensure an activity includes a party and appropriate secret.",
                   );
-                let { lock: s, context: l } = (0, kb.d5)(i),
-                  o = kG(a, iJ.A);
-                return (0, kP.qf)(a, o, l).then(() => {
+                let { lock: s, context: l } = (0, kM.d5)(i),
+                  o = kx(a, iJ.A);
+                return (0, kU.qf)(a, o, l).then(() => {
                   if ((s(), o))
                     throw new wB.A(
                       { errorCode: j.Lw6.NO_ELIGIBLE_ACTIVITY },
@@ -97127,7 +97137,7 @@ ${a}`);
                       { errorCode: j.Lw6.INVALID_INVITE },
                       `Invalid invite id: ${i}`,
                     );
-                  let { context: r, lock: a } = (0, kb.d5)(n);
+                  let { context: r, lock: a } = (0, kM.d5)(n);
                   return new Promise((e) => {
                     k.h.dispatch({
                       type: "INVITE_MODAL_OPEN",
@@ -97157,7 +97167,7 @@ ${a}`);
                     { errorCode: j.Lw6.INVALID_COMMAND },
                     "No application.",
                   );
-                let { lock: a, context: s } = (0, kb.d5)(t);
+                let { lock: a, context: s } = (0, kM.d5)(t);
                 return new Promise((e) => {
                   (0, tQ.openModalLazy)(
                     async () => {
@@ -97185,15 +97195,16 @@ ${a}`);
               },
             },
           };
-        var Fx = n(6981),
-          Fk = n(257269),
-          FF = n(277984),
-          FB = n(121623),
-          FV = n(224640),
-          FH = n(20742),
-          Fj = n(430993),
-          FW = n(696208);
-        function FY(e) {
+        var Fk = n(6981),
+          FF = n(257269),
+          FB = n(909338),
+          FV = n(277984),
+          FH = n(121623),
+          Fj = n(224640),
+          FW = n(20742),
+          FY = n(430993),
+          FK = n(696208);
+        function F$(e) {
           let {
             title: t,
             subtitle: n,
@@ -97271,24 +97282,24 @@ ${a}`);
                 return {};
             }
           })(e);
-          return (0, b.jsxs)(FV.d, {
+          return (0, b.jsxs)(Fj.d, {
             ...e,
             onClose: () => Promise.resolve(e.onClose?.()),
             size: "sm",
             "aria-label": t,
             children: [
-              (0, b.jsx)(FH.rQ, { title: t ?? "", subtitle: n }),
-              (0, b.jsx)(Fj.c, { children: i }),
-              (0, b.jsx)(FW.H, { actions: r ?? [], actionsFullWidth: !0 }),
+              (0, b.jsx)(FW.rQ, { title: t ?? "", subtitle: n }),
+              (0, b.jsx)(FY.c, { children: i }),
+              (0, b.jsx)(FK.H, { actions: r ?? [], actionsFullWidth: !0 }),
             ],
           });
         }
-        function FK(e) {
+        function Fz(e) {
           (0, tQ.openModalLazy)(() =>
-            Promise.resolve((t) => (0, b.jsx)(FY, { ...t, ...e })),
+            Promise.resolve((t) => (0, b.jsx)(F$, { ...t, ...e })),
           );
         }
-        function F$(e, t) {
+        function FX(e, t) {
           let { fingerprint: n, installationId: i } = e;
           (null != n || null != i) &&
             W.default.track(j.HAw.EXTERNAL_DYNAMIC_LINK_RECEIVED, {
@@ -97300,14 +97311,14 @@ ${a}`);
               link_type: t,
             });
         }
-        let Fz = {
+        let Fq = {
           [j.e$_.INVITE_BROWSER]: {
             scope: bc.LQ,
             async handler(e) {
               let {
                 args: { code: t, ...n },
               } = e;
-              return await (0, FP.$)(t, "Desktop Modal", n);
+              return await (0, FU.$)(t, "Desktop Modal", n);
             },
           },
           [j.e$_.GUILD_TEMPLATE_BROWSER]: {
@@ -97317,7 +97328,7 @@ ${a}`);
                 args: { code: t },
               } = e;
               if (null == eF.default.getCurrentUser()) return;
-              let { guildTemplate: i } = await FB.A.resolveGuildTemplate(t);
+              let { guildTemplate: i } = await FH.A.resolveGuildTemplate(t);
               if (null == i)
                 throw new wB.A(
                   { errorCode: j.Lw6.INVALID_GUILD_TEMPLATE },
@@ -97417,7 +97428,7 @@ ${a}`);
                           path: n.path,
                           searchParams: n.params,
                         }),
-                        F$(i, (0, bc.OE)(t));
+                        FX(i, (0, bc.OE)(t));
                     });
                   break;
                 case bc.XK.CHANGELOG:
@@ -97428,22 +97439,22 @@ ${a}`);
                         i.query,
                       ),
                     ),
-                    F$(i, (0, bc.OE)(t)));
+                    FX(i, (0, bc.OE)(t)));
                   break;
                 case bc.XK.LIBRARY:
                   (0, l8.pX)(j.BVt.APPLICATION_LIBRARY),
-                    null != i && F$(i, (0, bc.OE)(t));
+                    null != i && FX(i, (0, bc.OE)(t));
                   break;
                 case bc.XK.STORE_HOME:
                   (0, l8.pX)(j.BVt.APPLICATION_STORE),
-                    null != i && F$(i, (0, bc.OE)(t));
+                    null != i && FX(i, (0, bc.OE)(t));
                   break;
                 case bc.XK.STORE_LISTING:
                   null != i &&
                     ((0, l8.pX)(
                       j.BVt.APPLICATION_STORE_LISTING_SKU(i.skuId, i.slug),
                     ),
-                    F$(i, (0, bc.OE)(t)));
+                    FX(i, (0, bc.OE)(t)));
                   break;
                 case bc.XK.PICK_GUILD_SETTINGS:
                   null != i &&
@@ -97451,7 +97462,7 @@ ${a}`);
                       j.BVt.PICK_GUILD_SETTINGS(i.section, i.subsection),
                       { search: i.search },
                     ),
-                    F$(i, (0, bc.OE)(t)));
+                    FX(i, (0, bc.OE)(t)));
                   break;
                 case bc.XK.CHANNEL:
                   null != i &&
@@ -97459,7 +97470,7 @@ ${a}`);
                       j.BVt.CHANNEL(i.guildId, i.channelId, i.messageId),
                       { search: i.search },
                     ),
-                    F$(i, (0, bc.OE)(t)));
+                    FX(i, (0, bc.OE)(t)));
                   break;
                 case bc.XK.GAME_SHOP:
                   null != i &&
@@ -97471,7 +97482,7 @@ ${a}`);
                         i.slug,
                       ),
                     ),
-                    F$(i, (0, bc.OE)(t)));
+                    FX(i, (0, bc.OE)(t)));
                   break;
                 case bc.XK.QUEST_HOME:
                   if (null != i) {
@@ -97485,7 +97496,7 @@ ${a}`);
                         hash: i.questId,
                         search: `?${e.toString()}`,
                       }),
-                      F$(i, (0, bc.OE)(t));
+                      FX(i, (0, bc.OE)(t));
                   } else (0, l8.pX)(j.BVt.QUEST_HOME);
                   break;
                 case bc.XK.QUEST_PREVIEW_TOOL:
@@ -97496,7 +97507,7 @@ ${a}`);
                       (0, l8.pX)(j.BVt.QUEST_HOME, {
                         search: `?${e.toString()}`,
                       }),
-                      F$(i, (0, bc.OE)(t));
+                      FX(i, (0, bc.OE)(t));
                   }
                   break;
                 case bc.XK.DISCOVERY_GAME_RESULTS:
@@ -97504,7 +97515,7 @@ ${a}`);
                     ((0, l8.pX)(j.BVt.GLOBAL_DISCOVERY_SERVERS, {
                       search: `?game=${i.gameId}`,
                     }),
-                    F$(i, (0, bc.OE)(t)));
+                    FX(i, (0, bc.OE)(t)));
                   break;
                 case bc.XK.OAUTH2:
                   let r = new URL(
@@ -97512,21 +97523,21 @@ ${a}`);
                     window.location.origin,
                   );
                   r.search = i.search;
-                  let a = (0, k7.getOAuth2AuthorizeProps)(r.toString());
+                  let a = (0, k8.getOAuth2AuthorizeProps)(r.toString());
                   if (null != a)
-                    return (0, k7.openOAuth2ModalWithCreateGuildModal)(a), !0;
+                    return (0, k8.openOAuth2ModalWithCreateGuildModal)(a), !0;
                   return !1;
                 case bc.XK.ONE_TIME_LOGIN:
                   if (null != i)
-                    return FK({ token: i.token }), F$(i, (0, bc.OE)(t)), !0;
+                    return Fz({ token: i.token }), FX(i, (0, bc.OE)(t)), !0;
                   return !1;
                 case bc.XK.SHOP:
                   null != i &&
                     ((0, l8.pX)(j.BVt.COLLECTIBLES_SHOP, { search: i.search }),
-                    F$(i, (0, bc.OE)(t)));
+                    FX(i, (0, bc.OE)(t)));
                   break;
                 case bc.XK.FEATURES:
-                  i?.path != null && ((0, l8.pX)(i.path), F$(i, (0, bc.OE)(t)));
+                  i?.path != null && ((0, l8.pX)(i.path), FX(i, (0, bc.OE)(t)));
                   break;
                 case bc.XK.ACTIVITIES:
                   if (null != i) {
@@ -97547,7 +97558,7 @@ ${a}`);
                             );
                           let r = new URL(t),
                             a = r.searchParams.get("referrer_id") ?? void 0,
-                            { customId: s } = await (0, Fk.d9)(
+                            { customId: s } = await (0, FF.d9)(
                               e,
                               r.searchParams.get("link_id"),
                               r.searchParams.get("custom_id"),
@@ -97555,6 +97566,7 @@ ${a}`);
                             l = await nf.A.launch({
                               applicationId: e,
                               fromLink: !0,
+                              linkChannelId: (0, FB.D)(r),
                               customId: s,
                               referrerId: a,
                               analyticsLocations: [np.A.DEEPLINK],
@@ -97574,7 +97586,7 @@ ${a}`);
                           });
                         }
                       })(i.applicationId, i.url, e),
-                      F$(i, (0, bc.OE)(t)),
+                      FX(i, (0, bc.OE)(t)),
                       !0
                     );
                   }
@@ -97582,7 +97594,7 @@ ${a}`);
                 case bc.XK.PLAYGROUND:
                   if (null != i) {
                     let { openPlayground: e } = n(965042);
-                    e(i.collection, i.story), F$(i, (0, bc.OE)(t));
+                    e(i.collection, i.story), FX(i, (0, bc.OE)(t));
                   }
               }
             },
@@ -97593,7 +97605,7 @@ ${a}`);
               let {
                 args: { handoffToken: t, fingerprint: n },
               } = e;
-              eV.Ay.focus(null, !0), (0, Fx.mZ)(t, n);
+              eV.Ay.focus(null, !0), (0, Fk.mZ)(t, n);
             },
           },
           [j.e$_.CONNECTIONS_CALLBACK]: {
@@ -97616,7 +97628,7 @@ ${a}`);
               try {
                 return (
                   ce.A.deletePendingAuthorizedState(a),
-                  await xB.A.callback(t, {
+                  await xV.A.callback(t, {
                     code: n,
                     openid_params: i,
                     iss: r,
@@ -97639,7 +97651,7 @@ ${a}`);
               let {
                 args: { state: t, path: n, query: i },
               } = e;
-              return (0, FF.re)({
+              return (0, FV.re)({
                 paymentSourceType: j.hes.PAYPAL,
                 state: t,
                 path: n,
@@ -97653,7 +97665,7 @@ ${a}`);
               let {
                 args: { state: t, path: n, query: i, payment_source_type: r },
               } = e;
-              return (0, FF.re)({
+              return (0, FV.re)({
                 paymentSourceType: r,
                 state: t,
                 path: n,
@@ -97662,11 +97674,11 @@ ${a}`);
             },
           },
         };
-        var FX = n(455426);
-        let Fq = { [bc.sm.ANY]: [bc.W_, bc.VH] },
-          FZ = {
+        var FZ = n(455426);
+        let FQ = { [bc.sm.ANY]: [bc.W_, bc.VH] },
+          FJ = {
             [j.e$_.CAPTURE_SCREEN]: GZ(j.e$_.CAPTURE_SCREEN, {
-              scope: Fq,
+              scope: FQ,
               handler(e) {
                 let { socket: t, args: n } = e,
                   { frame: i } = (0, wV.Ay)(t);
@@ -97679,7 +97691,7 @@ ${a}`);
                 )
                   return { status: r };
                 let a = ng.A.getApplication(i.applicationId);
-                return (0, FX.k)({
+                return (0, FZ.k)({
                   frameId: i.id,
                   applicationId: i.applicationId,
                   appName: a?.name ?? i.applicationId,
@@ -97691,7 +97703,7 @@ ${a}`);
               },
             }),
           },
-          FQ = {
+          F0 = {
             [j.e$_.SET_RUNS_IN_BACKGROUND]: GZ(j.e$_.SET_RUNS_IN_BACKGROUND, {
               scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
               handler(e) {
@@ -97718,7 +97730,7 @@ ${a}`);
               },
             }),
           },
-          FJ = {
+          F1 = {
             [j.e$_.SET_SUPPRESS_NOTIFICATIONS]: {
               scope: bc.hj,
               handler(e) {
@@ -97735,7 +97747,7 @@ ${a}`);
               },
             },
           };
-        var F0 = n(294454);
+        var F2 = n(294454);
         n(508300),
           n(393431),
           n(532706),
@@ -97744,9 +97756,9 @@ ${a}`);
           n(949626),
           n(767709),
           n(65162);
-        var F1 = n(409481),
-          F2 = n(453771);
-        let F3 = {
+        var F3 = n(409481),
+          F5 = n(453771);
+        let F6 = {
           "image/png": "png",
           "image/jpeg": "jpg",
           "image/gif": "gif",
@@ -97754,26 +97766,26 @@ ${a}`);
           "video/mp4": "mp4",
           "video/webm": "webm",
         };
-        function F5(e, t) {
+        function F4(e, t) {
           let n =
             arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0;
           return t.every((t, i) => e[n + i] === t);
         }
-        let F6 = [82, 73, 70, 70],
-          F4 = [87, 69, 66, 80],
-          F7 = [102, 116, 121, 112],
-          F8 = {
-            "image/png": (e) => F5(e, [137, 80, 78, 71, 13, 10, 26, 10]),
-            "image/jpeg": (e) => F5(e, [255, 216, 255]),
+        let F7 = [82, 73, 70, 70],
+          F8 = [87, 69, 66, 80],
+          F9 = [102, 116, 121, 112],
+          Be = {
+            "image/png": (e) => F4(e, [137, 80, 78, 71, 13, 10, 26, 10]),
+            "image/jpeg": (e) => F4(e, [255, 216, 255]),
             "image/gif": (e) =>
-              F5(e, [71, 73, 70, 56]) && (55 === e[4] || 57 === e[4]),
-            "image/webp": (e) => F5(e, F6) && F5(e, F4, 8),
-            "video/mp4": (e) => F5(e, F7, 4),
-            "video/webm": (e) => F5(e, [26, 69, 223, 163]),
+              F4(e, [71, 73, 70, 56]) && (55 === e[4] || 57 === e[4]),
+            "image/webp": (e) => F4(e, F7) && F4(e, F8, 8),
+            "video/mp4": (e) => F4(e, F9, 4),
+            "video/webm": (e) => F4(e, [26, 69, 223, 163]),
           },
-          F9 = /^data:[^,]*;base64,/,
-          Be = /[^\w\-. ]/g,
-          Bt = {
+          Bt = /^data:[^,]*;base64,/,
+          Bn = /[^\w\-. ]/g,
+          Bi = {
             [j.e$_.SHARE_CONTENT]: GZ(j.e$_.SHARE_CONTENT, {
               scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
               async handler(e) {
@@ -97823,12 +97835,12 @@ ${a}`);
                               { data: i, filename: r, content_type: a } = e,
                               s = i;
                             if (s.startsWith("data:")) {
-                              if (!F9.test(s))
+                              if (!Bt.test(s))
                                 throw new wB.A(
                                   { errorCode: j.Lw6.INVALID_PAYLOAD },
                                   `${t}.data must be a base64 data url`,
                                 );
-                              s = s.replace(F9, "");
+                              s = s.replace(Bt, "");
                             }
                             let l = (function (e, t) {
                               try {
@@ -97848,13 +97860,13 @@ ${a}`);
                                 { errorCode: j.Lw6.INVALID_PAYLOAD },
                                 `${t}.data must not be empty`,
                               );
-                            let o = (0, F1.C)((0, F2.o2)());
+                            let o = (0, F3.C)((0, F5.o2)());
                             if (l.length > o)
                               throw new wB.A(
                                 { errorCode: j.Lw6.INVALID_PAYLOAD },
                                 `${t}.data is ${l.length} bytes, over this user's ${o} byte upload limit`,
                               );
-                            if (!F8[a](l))
+                            if (!Be[a](l))
                               throw new wB.A(
                                 { errorCode: j.Lw6.INVALID_PAYLOAD },
                                 `${t}.data is not ${a} \u{2014} the declared content_type must match the bytes`,
@@ -97868,11 +97880,11 @@ ${a}`);
                                     ? void 0
                                     : r.lastIndexOf("."),
                                 )
-                                .replace(Be, "_")
+                                .replace(Bn, "_")
                                 .replace(/^[_. ]+/, "")
                                 .trim()
                                 .slice(0, 48)),
-                              `${"" === n ? "attachment" : n}.${F3[a]}`),
+                              `${"" === n ? "attachment" : n}.${F6[a]}`),
                               { type: a },
                             );
                           })(e, `attachments[${n}]`),
@@ -97885,7 +97897,7 @@ ${a}`);
                     { errorCode: j.Lw6.INVALID_PAYLOAD },
                     "link must be a trusted link for this application",
                   );
-                let f = (0, FA.C6)(E);
+                let f = (0, Fh.C6)(E);
                 return null == f
                   ? { success: !1, didCopyLink: !1, didSendMessage: !1 }
                   : new Promise((e) => {
@@ -97897,15 +97909,16 @@ ${a}`);
                             link: a,
                             customId: s,
                             linkId: l,
-                            imageUrl: o,
-                            files: d,
-                            previewTitle: c,
-                            previewSubtitle: u,
-                            onShare: _,
+                            channelId: o,
+                            imageUrl: d,
+                            files: c,
+                            previewTitle: u,
+                            previewSubtitle: _,
+                            onShare: E,
                           } = e,
-                          E = !1,
                           A = !1,
-                          h = [];
+                          h = !1,
+                          f = [];
                         (0, tQ.openModalLazy)(
                           async () => {
                             let { default: e } = await Promise.all([
@@ -97941,17 +97954,18 @@ ${a}`);
                                 link: a,
                                 customId: s,
                                 linkId: l,
-                                imageUrl: o,
-                                files: d,
-                                previewTitle: c,
-                                previewSubtitle: u,
+                                channelId: o,
+                                imageUrl: d,
+                                files: c,
+                                previewTitle: u,
+                                previewSubtitle: _,
                                 onCopyLink: () => {
-                                  E = !0;
+                                  A = !0;
                                 },
                                 onShare: (e) => {
-                                  h.push(
+                                  f.push(
                                     e.then((e) => {
-                                      A = A || e;
+                                      h = h || e;
                                     }),
                                   );
                                 },
@@ -97959,12 +97973,12 @@ ${a}`);
                               });
                           },
                           {
-                            modalKey: F0.aU,
+                            modalKey: F2.aU,
                             stackingBehavior: "stack",
                             contextKey: i,
                             onCloseCallback: () => {
-                              Promise.all(h).then(() => {
-                                _(A, E);
+                              Promise.all(f).then(() => {
+                                E(h, A);
                               });
                             },
                           },
@@ -97976,6 +97990,7 @@ ${a}`);
                         link: a,
                         customId: s,
                         linkId: l,
+                        channelId: xD({ frame: _ }),
                         imageUrl: o,
                         files: h,
                         previewTitle: c,
@@ -97992,11 +98007,11 @@ ${a}`);
               },
             }),
           },
-          Bn = [np.A.RPC];
-        function Bi(e, t) {
+          Br = [np.A.RPC];
+        function Ba(e, t) {
           let n = {
             subscriptionTier: lX.pe.TIER_2,
-            analyticsLocations: Bn,
+            analyticsLocations: Br,
             analyticsObject: t,
           };
           switch (e) {
@@ -98008,7 +98023,7 @@ ${a}`);
               throw Error(`Unexpected app context: ${e}`);
           }
         }
-        let Br = {
+        let Bs = {
           [j.e$_.START_PURCHASE]: GZ(j.e$_.START_PURCHASE, {
             scope: { [bc.sm.ANY]: [bc.VH, bc.hj] },
             handler(e) {
@@ -98016,14 +98031,14 @@ ${a}`);
                 socket: t,
                 args: { sku_id: i, pid: r },
               } = e;
-              x5(t.transport);
+              x6(t.transport);
               let a = t.application.id;
               if (null == a)
                 throw new wB.A(
                   { errorCode: j.Lw6.INVALID_COMMAND },
                   "No application.",
                 );
-              let { lock: s, context: l } = (0, kb.d5)(
+              let { lock: s, context: l } = (0, kM.d5)(
                 t.transport !== bc.z4.POST_MESSAGE ? r : null,
               );
               if (null == G4())
@@ -98191,8 +98206,8 @@ ${a}`);
                     t = await e({
                       applicationId: a,
                       skuId: i,
-                      openPremiumPaymentModal: () => Bi(l, o),
-                      analyticsLocations: Bn,
+                      openPremiumPaymentModal: () => Ba(l, o),
+                      analyticsLocations: Br,
                       analyticsLocationObject: o,
                       context: l,
                     });
@@ -98228,15 +98243,15 @@ ${a}`);
                 socket: t,
                 args: { pid: n },
               } = e;
-              if ((x5(t.transport), null == t.application.id))
+              if ((x6(t.transport), null == t.application.id))
                 throw new wB.A(
                   { errorCode: j.Lw6.INVALID_COMMAND },
                   "No application.",
                 );
-              let { lock: i, context: r } = (0, kb.d5)(
+              let { lock: i, context: r } = (0, kM.d5)(
                 t.transport !== bc.z4.POST_MESSAGE ? n : null,
               );
-              return Bi(r, { page: j.liQ.IN_APP }).then(
+              return Ba(r, { page: j.liQ.IN_APP }).then(
                 () => {
                   i();
                 },
@@ -98252,14 +98267,14 @@ ${a}`);
             },
           },
         };
-        var Ba = n(8062);
-        let Bs = {
+        var Bl = n(8062);
+        let Bo = {
             message: "default",
             success: "success",
             failure: "critical",
           },
-          Bl = new Map(),
-          Bo = {
+          Bd = new Map(),
+          Bc = {
             [j.e$_.SHOW_TOAST]: GZ(j.e$_.SHOW_TOAST, {
               scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
               handler(e) {
@@ -98268,16 +98283,16 @@ ${a}`);
                     args: { message: n, type: i },
                   } = e,
                   { iframeId: r } = (0, wH.Ay)(t),
-                  a = (0, FA.LV)(r);
+                  a = (0, Fh.LV)(r);
                 return null == a ||
                   !(function (e) {
                     let t = Date.now();
-                    for (let [e, n] of Bl)
-                      t - n.refilledAt >= 6e3 && Bl.delete(e);
-                    let n = Bl.get(e);
+                    for (let [e, n] of Bd)
+                      t - n.refilledAt >= 6e3 && Bd.delete(e);
+                    let n = Bd.get(e);
                     if (null == n) {
-                      if (Bl.size >= 1e3) return !1;
-                      (n = { tokens: 3, refilledAt: t }), Bl.set(e, n);
+                      if (Bd.size >= 1e3) return !1;
+                      (n = { tokens: 3, refilledAt: t }), Bd.set(e, n);
                     } else {
                       let e = Math.floor((t - n.refilledAt) / 2e3);
                       e > 0 &&
@@ -98287,13 +98302,13 @@ ${a}`);
                     return 0 !== n.tokens && ((n.tokens -= 1), !0);
                   })(r)
                   ? { shown: !1 }
-                  : ((0, nl.P0)({ text: n, variant: Bs[i], surface: Ba.a[a] }),
+                  : ((0, nl.P0)({ text: n, variant: Bo[i], surface: Bl.a[a] }),
                     { shown: !0 });
               },
             }),
           };
-        var Bd = n(955418);
-        let Bc = {
+        var Bu = n(955418);
+        let B_ = {
             [j.e$_.SHOW_TOOLTIP]: GZ(j.e$_.SHOW_TOOLTIP, {
               scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
               handler(e) {
@@ -98309,9 +98324,9 @@ ${a}`);
                     },
                   } = e,
                   { iframeId: o } = (0, wH.Ay)(t);
-                return null == (0, kX.fl)(o)
+                return null == (0, kq.fl)(o)
                   ? { shown: !1 }
-                  : ((0, Bd.EX)({
+                  : ((0, Bu.EX)({
                       iframeId: o,
                       text: n,
                       shortcut: i,
@@ -98327,11 +98342,11 @@ ${a}`);
               scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
               handler(e) {
                 let { socket: t } = e;
-                return (0, Bd.ny)((0, wH.Ay)(t).iframeId), { hidden: !0 };
+                return (0, Bu.ny)((0, wH.Ay)(t).iframeId), { hidden: !0 };
               },
             }),
           },
-          Bu = {
+          BE = {
             [j.e$_.SEND_GENERIC_EVENT]: {
               handler(e) {
                 throw new wB.A(
@@ -98349,8 +98364,8 @@ ${a}`);
               },
             },
           };
-        var B_ = n(777977);
-        let BE = {
+        var BA = n(777977);
+        let Bh = {
             [j.e$_.OPEN_USER_POPOUT]: GZ(j.e$_.OPEN_USER_POPOUT, {
               scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
               async handler(e) {
@@ -98359,7 +98374,7 @@ ${a}`);
                     args: { user_id: n, x: i, y: r },
                   } = e,
                   { iframeId: a } = (0, wH.Ay)(t);
-                if (null == (0, kX.fl)(a)) return { opened: !1 };
+                if (null == (0, kq.fl)(a)) return { opened: !1 };
                 let s = eF.default.getUser(n);
                 if (
                   (null == s && (await lB.eO(n), (s = eF.default.getUser(n))),
@@ -98370,13 +98385,13 @@ ${a}`);
                     `Unknown user id: ${n}`,
                   );
                 return (
-                  (0, B_.Ps)({ iframeId: a, userId: n, x: i, y: r }),
+                  (0, BA.Ps)({ iframeId: a, userId: n, x: i, y: r }),
                   { opened: !0 }
                 );
               },
             }),
           },
-          BA = {
+          Bf = {
             [j.e$_.OPEN_USER_PROFILE]: GZ(j.e$_.OPEN_USER_PROFILE, {
               scope: { [bc.sm.ANY]: [bc.W_, bc.VH] },
               handler(e) {
@@ -98385,7 +98400,7 @@ ${a}`);
                     args: { user_id: n },
                   } = e,
                   { iframeId: i } = (0, wH.Ay)(t),
-                  r = (0, FA.LV)(i);
+                  r = (0, Fh.LV)(i);
                 return null == r
                   ? { opened: !1 }
                   : ((0, _q.openUserProfileModal)({ userId: n, appContext: r }),
@@ -98393,12 +98408,12 @@ ${a}`);
               },
             }),
           },
-          Bh = {
+          BI = {
             [j.e$_.TOGGLE_VIDEO]: {
               scope: { [bc.sm.ALL]: [GT.F.RPC, GT.F.RPC_VIDEO_WRITE] },
               handler() {
                 let e = ek.Ay.isVideoEnabled();
-                null != (0, x0.A)() &&
+                null != (0, x1.A)() &&
                   (e
                     ? iL.default.setVideoEnabled(!1)
                     : (0, vt.A)(
@@ -98420,7 +98435,7 @@ ${a}`);
                   i = d8.A.getCurrentUserActiveStream(),
                   r = d8.A.getStreamerActiveStreamMetadata(),
                   a = (0, yl.A)(iD.Ay, yo.A),
-                  s = (0, x0.A)();
+                  s = (0, x1.A)();
                 null != s &&
                   (null != t && null != r && r.pid !== t && (0, eB.isWindows)()
                     ? (0, ub.XI)(s.guild_id, s.id, { pid: t })
@@ -98453,7 +98468,7 @@ ${a}`);
               },
             },
           };
-        function Bf(e) {
+        function Bp(e) {
           let t = e.application.id;
           if (null == t)
             throw new wB.A(
@@ -98462,12 +98477,12 @@ ${a}`);
             );
           return t;
         }
-        let BI = {
+        let BT = {
             [j.e$_.GET_CLIENT_VOICE_SETTINGS]: {
               scope: bc.hj,
               handler(e) {
                 let { socket: t } = e;
-                return kC(t), kR();
+                return kO(t), kL();
               },
             },
             [j.e$_.SET_VOICE_SETTINGS_2]: {
@@ -98488,11 +98503,11 @@ ${a}`);
                     socket: t,
                     args: { input_mode: n, self_mute: i, self_deaf: r },
                   } = e,
-                  a = Bf(t);
+                  a = Bp(t);
                 null != n &&
                   iL.default.setMode(
                     n.type,
-                    { shortcut: (0, kO.OH)(n.shortcut) },
+                    { shortcut: (0, kR.OH)(n.shortcut) },
                     a,
                   ),
                   null != i &&
@@ -98518,7 +98533,7 @@ ${a}`);
                     socket: t,
                     args: { user_id: n, mute: i, volume: r },
                   } = e,
-                  a = Bf(t);
+                  a = Bp(t);
                 null != i &&
                   i !== ek.Ay.isLocalMute(n, a) &&
                   iL.default.toggleLocalMute(n, a),
@@ -98537,7 +98552,7 @@ ${a}`);
               },
             },
           },
-          Bp = {
+          Bm = {
             [j.e$_.SET_USER_VOICE_SETTINGS]: {
               scope: { [bc.sm.ANY]: [GT.F.RPC, GT.F.RPC_VOICE_WRITE] },
               validation: (e) =>
@@ -98580,7 +98595,7 @@ ${a}`);
             },
             [j.e$_.GET_VOICE_SETTINGS]: {
               scope: { [bc.sm.ANY]: [GT.F.RPC, GT.F.RPC_VOICE_READ] },
-              handler: () => (0, kb.l6)(),
+              handler: () => (0, kM.l6)(),
             },
             [j.e$_.SET_VOICE_SETTINGS]: {
               scope: { [bc.sm.ANY]: [GT.F.RPC, GT.F.RPC_VOICE_WRITE] },
@@ -98675,18 +98690,18 @@ ${a}`);
                   let e = ek.Ay.isSelfMute();
                   ((e && !c) || (!e && c)) && iL.default.toggleSelfMute();
                 }
-                return (0, kb.l6)();
+                return (0, kM.l6)();
               },
             },
           };
-        var BT = n(535558),
-          Bm = n(332874),
-          Bg = n(633802),
-          BS = n(111162),
-          BN = n(861621),
-          BC = n(436283);
-        let BO = Gp.v.DESKTOP;
-        function BR(e) {
+        var Bg = n(535558),
+          BS = n(332874),
+          BN = n(633802),
+          BC = n(111162),
+          BO = n(861621),
+          BR = n(436283);
+        let BL = Gp.v.DESKTOP;
+        function By(e) {
           switch (e.type) {
             case G0.f.FRAME: {
               let t = (0, aJ.ny)(aX.A.getFrame(e.frameId));
@@ -98695,7 +98710,7 @@ ${a}`);
                 source: e,
                 surface: t.surface,
                 launch: t.data.launch,
-                platform: BO,
+                platform: BL,
               };
             }
             case G0.f.ACTIVITY: {
@@ -98709,11 +98724,11 @@ ${a}`);
                   guildId: (0, nz.D)(t.location),
                 },
                 launch: { customId: t.customId, referrerId: t.referrerId },
-                platform: BO,
+                platform: BL,
               };
             }
             case G0.f.INTERACTION: {
-              let t = BC.Ay.getIFrameModal();
+              let t = BR.Ay.getIFrameModal();
               if (null == t || t.interactionId !== e.interactionId) return;
               return {
                 source: e,
@@ -98726,20 +98741,20 @@ ${a}`);
                   customId: t.customId,
                   interactionId: t.interactionId,
                 },
-                platform: BO,
+                platform: BL,
               };
             }
           }
         }
-        var BL = n(440454);
-        let By = 10 * iT.A.Millis.SECOND,
-          BD = new Map(),
-          Bv = new Map(),
+        var BD = n(440454);
+        let Bv = 10 * iT.A.Millis.SECOND,
           Bb = new Map(),
-          BM = (e, t, n) => {
-            n([BL.A.CLOSE, t], e.origin);
+          BM = new Map(),
+          BP = new Map(),
+          BU = (e, t, n) => {
+            n([BD.A.CLOSE, t], e.origin);
           };
-        class BP extends ea.EventEmitter {
+        class Bw extends ea.EventEmitter {
           validateSocketClient;
           logger;
           createPostMessageProxySocket;
@@ -98762,13 +98777,13 @@ ${a}`);
                 arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
               e.emit("disconnect", t, i ? void 0 : n),
                 i || t.close(n.code, n.message ?? "Unknown"),
-                BD.delete(t.source.iframeId);
+                Bb.delete(t.source.iframeId);
             };
           })();
           handleIFrameMount = (e) => {
             let { id: t, data: n } = e;
-            Bv.set(t, n),
-              Bb.set(t, { contextSource: n.contextSource }),
+            BM.set(t, n),
+              BP.set(t, { contextSource: n.contextSource }),
               (this.handshakeFailureTimeoutId = setTimeout(() => {
                 Array.from(nP.Ay.getSelfEmbeddedActivities().entries()).forEach(
                   (e) => {
@@ -98777,16 +98792,16 @@ ${a}`);
                       application_id: t,
                       channel_id: (0, nz.H)(n.location),
                       guild_id: (0, nz.D)(n.location),
-                      timeout_ms: By,
+                      timeout_ms: Bv,
                     });
                   },
                 );
-              }, By));
+              }, Bv));
           };
           handleIFrameUnmount = (e) => {
             let { id: t } = e;
-            Bv.delete(t), Bb.delete(t);
-            let n = BD.get(t);
+            BM.delete(t), BP.delete(t);
+            let n = Bb.get(t);
             null != n &&
               this.disconnectSocket(
                 n,
@@ -98795,7 +98810,7 @@ ${a}`);
               );
           };
           handleMessage = (e, t, n) => {
-            let i = BD.get(t.iframeId);
+            let i = Bb.get(t.iframeId);
             try {
               this.routeEvent(i, t, e, n);
             } catch (e) {
@@ -98807,7 +98822,7 @@ ${a}`);
                     { code: e.code, message: e.message },
                     !0,
                   )
-                : BM(t, { code: e.code, message: e.message }, n);
+                : BU(t, { code: e.code, message: e.message }, n);
             }
           };
           routeEvent(e, t, n, i) {
@@ -98817,14 +98832,14 @@ ${a}`);
               );
             let [r, a] = n;
             switch (r) {
-              case BL.A.HANDSHAKE:
+              case BD.A.HANDSHAKE:
                 if (null != e)
                   throw new wB.A(
                     { closeCode: j.YI$.CLOSE_UNSUPPORTED },
                     "Already connected",
                   );
                 return this.handleHandshake(t, a, i);
-              case BL.A.FRAME:
+              case BD.A.FRAME:
                 if (this.handleFrameTicketRefresh(e, t, a, i)) return;
                 if (null == e)
                   throw new wB.A(
@@ -98832,7 +98847,7 @@ ${a}`);
                     "Not connected",
                   );
                 return this.handleFrame(t, e, a);
-              case BL.A.CLOSE:
+              case BD.A.CLOSE:
                 if (null == e)
                   throw new wB.A(
                     { closeCode: j.YI$.CLOSE_UNSUPPORTED },
@@ -98854,7 +98869,7 @@ ${a}`);
               n.cmd !== j.e$_.REQUEST_PROXY_TICKET_REFRESH
             )
               return !1;
-            let r = e?.context.source ?? Bb.get(t.iframeId)?.contextSource;
+            let r = e?.context.source ?? BP.get(t.iframeId)?.contextSource;
             if (r?.type !== G0.f.FRAME) return !1;
             if (
               !("nonce" in n) ||
@@ -98864,8 +98879,8 @@ ${a}`);
             )
               return !0;
             let a = (0, aJ.ny)(aX.A.getFrame(r.frameId)),
-              s = BR(r),
-              l = Bb.get(t.iframeId);
+              s = By(r),
+              l = BP.get(t.iframeId);
             if (
               null == a ||
               null == s ||
@@ -98884,7 +98899,7 @@ ${a}`);
             function E() {
               let e = (0, aJ.ny)(aX.A.getFrame(d));
               return (
-                Bb.get(t.iframeId) === l &&
+                BP.get(t.iframeId) === l &&
                 null != e &&
                 e.applicationId === c &&
                 e.launchRequestId === u &&
@@ -98902,7 +98917,7 @@ ${a}`);
                     version: 1,
                     encoding: "json",
                     logger: this.logger,
-                    postClose: BM,
+                    postClose: BU,
                   });
                   if (
                     (await this.validateSocketClient(
@@ -98921,7 +98936,7 @@ ${a}`);
                   E() &&
                     i(
                       [
-                        BL.A.FRAME,
+                        BD.A.FRAME,
                         {
                           cmd: j.e$_.REQUEST_PROXY_TICKET_REFRESH,
                           nonce: o,
@@ -98935,7 +98950,7 @@ ${a}`);
                   E() &&
                     i(
                       [
-                        BL.A.FRAME,
+                        BD.A.FRAME,
                         {
                           cmd: j.e$_.REQUEST_PROXY_TICKET_REFRESH,
                           nonce: o,
@@ -98995,7 +99010,7 @@ ${a}`);
               throw new wB.A({ closeCode: j.YI$.CLOSE_UNSUPPORTED }, e.message);
             }
             let s = t.frame_id,
-              l = Bv.get(e.iframeId);
+              l = BM.get(e.iframeId);
             if (s !== e.iframeId || null == l)
               throw (
                 (this.logger.error(
@@ -99006,7 +99021,7 @@ ${a}`);
                   `Unrecognized iframe ID ${s}`,
                 ))
               );
-            let o = BR(l.contextSource);
+            let o = By(l.contextSource);
             if (null == o)
               throw (
                 (this.logger.error(
@@ -99029,7 +99044,7 @@ ${a}`);
                 postMessageToRPCClient: i,
                 version: Number(t.v),
                 logger: this.logger,
-                postClose: BM,
+                postClose: BU,
                 encoding: t.encoding ?? "json",
               });
             } catch (e) {
@@ -99039,7 +99054,7 @@ ${a}`);
             try {
               if (
                 (await this.validateSocketClient(r, e.origin, t.client_id),
-                !Bv.has(e.iframeId))
+                !BM.has(e.iframeId))
               )
                 throw (
                   (this.logger.error(
@@ -99050,8 +99065,8 @@ ${a}`);
                     `Unrecognized iframe ID ${e.iframeId}`,
                   ))
                 );
-              BD.set(e.iframeId, r),
-                Bv.delete(e.iframeId),
+              Bb.set(e.iframeId, r),
+                BM.delete(e.iframeId),
                 r.authorization.scopes.add(bc.W_),
                 (function (e) {
                   let t = (0, xp.A)(e.context.surface),
@@ -99100,8 +99115,8 @@ ${a}`);
             this.disconnectSocket(e, t);
           };
         }
-        var BU = n(313731);
-        class Bw extends BU.A {
+        var BG = n(313731);
+        class Bx extends BG.A {
           context;
           postMessageToRPCClient;
           logger;
@@ -99137,7 +99152,7 @@ ${a}`);
           }
           send(e) {
             this.onSendingToRPCClient?.(e, this.id),
-              this.postMessageToRPCClient([BL.A.FRAME, e], this.source.origin);
+              this.postMessageToRPCClient([BD.A.FRAME, e], this.source.origin);
           }
           close(e, t) {
             this.closed ||
@@ -99149,11 +99164,11 @@ ${a}`);
               (this.closed = !0);
           }
         }
-        let BG = new ez.A("RPCServer:PostMessage"),
-          Bx =
-            ((u = new BP(
-              kb.j7,
-              BG,
+        let Bk = new ez.A("RPCServer:PostMessage"),
+          BF =
+            ((u = new Bw(
+              kM.j7,
+              Bk,
               (e) => {
                 let {
                   source: t,
@@ -99164,7 +99179,7 @@ ${a}`);
                   logger: s,
                   postClose: l,
                 } = e;
-                return new Bw({
+                return new Bx({
                   source: t,
                   context: n,
                   postMessageToRPCClient: i,
@@ -99173,33 +99188,33 @@ ${a}`);
                   logger: s,
                   postClose: l,
                   onSendingToRPCClient: (e, t) => {
-                    (BS.default.isLoggingOverlayEvents ||
+                    (BC.default.isLoggingOverlayEvents ||
                       (e.cmd !== j.e$_.OVERLAY && e.evt !== j.ZE4.OVERLAY)) &&
-                      s.info(`Socket Emit: ${t}`, (0, BN.A)(e));
+                      s.info(`Socket Emit: ${t}`, (0, BO.A)(e));
                   },
                 });
               },
               (e, t, n) => {
-                (BS.default.isLoggingOverlayEvents ||
+                (BC.default.isLoggingOverlayEvents ||
                   e.cmd !== j.e$_.OVERLAY) &&
-                  t.info(`Socket Message: ${n.id}`, (0, BN.A)(e));
+                  t.info(`Socket Message: ${n.id}`, (0, BO.A)(e));
               },
             )),
             window.addEventListener("message", function (e) {
               if (window === e.source) return;
               if (null == e.source || null == e.source.postMessage)
-                return void BG.error("Unknown event source");
+                return void Bk.error("Unknown event source");
               let t = e.source,
                 n = e.data,
                 i = e.origin,
-                r = (0, kX.lw)(t);
+                r = (0, kq.lw)(t);
               if (null != r) {
-                if ((0, BT.Hm)(n)) {
+                if ((0, Bg.Hm)(n)) {
                   let e;
                   return void (
-                    null != (e = (0, BT.kv)(n)) &&
-                    "hello" === n[BT.Y5] &&
-                    (0, Bm.B)(t, i, e, (e) => (0, Bg.dY)(r, e))
+                    null != (e = (0, Bg.kv)(n)) &&
+                    "hello" === n[Bg.Y5] &&
+                    (0, BS.B)(t, i, e, (e) => (0, BN.dY)(r, e))
                   );
                 }
                 u.handleMessage(
@@ -99218,52 +99233,52 @@ ${a}`);
               }
             }),
             u),
-          Bk = {
-            ...ko,
-            ...kB,
-            ...kH,
-            ...k4,
-            ...FE,
-            ...FI,
-            ...FT,
-            ...FL,
-            ...Fv,
-            ...FM,
-            ...FU,
-            ...FP.A,
-            ...FZ,
-            ...FG,
-            ...Fz,
-            ...FQ,
-            ...kc,
-            ...FJ,
-            ...Bt,
-            ...Br,
-            ...Bo,
-            ...Bc,
-            ...BE,
-            ...BA,
-            ...Bh,
-            ...Bp,
-            ...BI,
-            ...Fu,
-            ...Bu,
-          },
-          BF = { ...km, ...kS, ...ky, ...kD, ...kv, ...kM, ...kL },
           BB = {
-            server: kN.A,
-            commands: Bk,
-            events: BF,
+            ...kd,
+            ...kV,
+            ...kj,
+            ...k7,
+            ...FA,
+            ...Fp,
+            ...Fm,
+            ...Fy,
+            ...Fb,
+            ...FP,
+            ...Fw,
+            ...FU.A,
+            ...FJ,
+            ...Fx,
+            ...Fq,
+            ...F0,
+            ...ku,
+            ...F1,
+            ...Bi,
+            ...Bs,
+            ...Bc,
+            ...B_,
+            ...Bh,
+            ...Bf,
+            ...BI,
+            ...Bm,
+            ...BT,
+            ...F_,
+            ...BE,
+          },
+          BV = { ...kg, ...kN, ...kD, ...kv, ...kb, ...kP, ...ky },
+          BH = {
+            server: kC.A,
+            commands: BB,
+            events: BV,
             stores: [MK.default, eO.A, w9.A, ef.Ay, eL.A, ...GI],
-            transports: [Bx],
+            transports: [BF],
             registerTransportsForEmbeddedPlatform: function () {
               eV.Ay.ensureModule("discord_rpc").then(() => {
                 for (let e of [n(33006).default, n(998921).A])
-                  kN.A.registerTransport(e);
+                  kC.A.registerTransport(e);
               });
             },
           },
-          BV = new (class {
+          Bj = new (class {
             rpcServer;
             transports;
             rpcCommandHandlers;
@@ -99904,12 +99919,12 @@ ${a}`);
                   },
                 );
             };
-          })(BB);
-        var BH = n(138298),
-          Bj = n(940382),
-          BW = n(450510),
-          BY = n(594061);
-        class BK extends nI.A {
+          })(BH);
+        var BW = n(138298),
+          BY = n(940382),
+          BK = n(450510),
+          B$ = n(594061);
+        class Bz extends nI.A {
           _initialize() {
             __OVERLAY__ ||
               (k.h.subscribe(
@@ -99971,34 +99986,34 @@ ${a}`);
             this._stopAndClearSounds();
           };
         }
-        var B$ = n(102597),
-          Bz = n(904054),
-          BX = n(205693),
-          Bq = n(602674),
-          BZ = n(76788),
-          BQ = n(738011),
-          BJ = n(536184);
-        let B0 = new Map();
-        async function B1(e) {
-          let t = B0.get(e);
+        var BX = n(102597),
+          Bq = n(904054),
+          BZ = n(205693),
+          BQ = n(602674),
+          BJ = n(76788),
+          B0 = n(738011),
+          B1 = n(536184);
+        let B2 = new Map();
+        async function B3(e) {
+          let t = B2.get(e);
           if (null != t) return t;
           let n = await (await fetch(e)).arrayBuffer(),
-            i = (0, Bq.v)(),
+            i = (0, BQ.v)(),
             r = await i?.decodeAudioData(n);
-          return null != r && B0.set(e, r), r;
+          return null != r && B2.set(e, r), r;
         }
-        async function B2(e) {
+        async function B5(e) {
           let {
               soundKey: t,
               soundURL: n,
               soundVolume: i,
               reportSoundStartedPlaying: r,
             } = e,
-            a = await B1(n);
+            a = await B3(n);
           if (null != a)
             return new Promise((e, n) => {
               ek.Ay.getMediaEngine().eachConnection((s) => {
-                s.context === BX.x.DEFAULT &&
+                s.context === BZ.x.DEFAULT &&
                   (r(),
                   s.startSamplesLocalPlayback(t, a, i, (t, i) => {
                     0 !== t ? n(Error(`${i}`)) : e();
@@ -100006,7 +100021,7 @@ ${a}`);
               });
             });
         }
-        async function B3(e, t) {
+        async function B6(e, t) {
           let {
               soundKey: n,
               soundURL: i,
@@ -100018,20 +100033,20 @@ ${a}`);
             s.currentTime = 0;
             return;
           }
-          let l = await (0, BJ.A)(i);
+          let l = await (0, B1.A)(i);
           return new Promise((e) => {
             let s = new l();
             (s.src = i),
-              (s.volume = (0, Bz.A)(r)),
+              (s.volume = (0, Bq.A)(r)),
               s.addEventListener(
-                s instanceof BZ.A.OGVPlayer
+                s instanceof BJ.A.OGVPlayer
                   ? "loadedmetadata"
                   : "canplaythrough",
                 () => {
                   a(),
                     t.set(n, s),
                     s.play()?.catch((i) => {
-                      if ((0, BQ.u)(i)) {
+                      if ((0, B0.u)(i)) {
                         G.A.captureException(i, {
                           tags: {
                             errorType: "autoplay_policy",
@@ -100052,8 +100067,8 @@ ${a}`);
               });
           });
         }
-        let B5 = new ez.A("SoundboardManager");
-        class B6 extends BK {
+        let B4 = new ez.A("SoundboardManager");
+        class B7 extends Bz {
           playingSoundsWeb = new Map();
           _initialize() {
             super._initialize(),
@@ -100107,27 +100122,27 @@ ${a}`);
                 try {
                   let r = {
                     soundKey: `${i}-${t}`,
-                    soundURL: (0, B$.A)(t),
-                    soundVolume: (0, Bz.A)(n),
-                    reportSoundStartedPlaying: () => (0, xQ.dZ)(t, i),
+                    soundURL: (0, BX.A)(t),
+                    soundVolume: (0, Bq.A)(n),
+                    reportSoundStartedPlaying: () => (0, xJ.dZ)(t, i),
                   };
                   ek.Ay.supports(iM.O5.SAMPLE_PLAYBACK)
-                    ? await B2(r)
-                    : await B3(r, e.playingSoundsWeb);
+                    ? await B5(r)
+                    : await B6(r, e.playingSoundsWeb);
                 } catch (e) {
-                  B5.warn(`Error playing soundboard sound: ${e.message}`);
+                  B4.warn(`Error playing soundboard sound: ${e.message}`);
                 } finally {
-                  (0, xQ.g0)(t, i);
+                  (0, xJ.g0)(t, i);
                 }
             };
           })();
           _handleRTCConnectionState = (e) => {
             let { state: t } = e;
             t === j.S7L.RTC_CONNECTED &&
-              (BY.bW.loadIfNecessary(), (0, xQ.E7)({ disableAnalytics: !0 }));
+              (B$.bW.loadIfNecessary(), (0, xJ.E7)({ disableAnalytics: !0 }));
           };
           _handleOverlaySoundboardSoundsFetchRequest = () => {
-            (0, xQ.E7)();
+            (0, xJ.E7)();
           };
           _handleOpenEducationModal = (e, t) => {
             if (null == e) return;
@@ -100136,7 +100151,7 @@ ${a}`);
             null != i &&
               (0, DB.Ay)(i) &&
               null != r &&
-              Dx.A.hasHotspot(BW._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) &&
+              Dx.A.hasHotspot(BK._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) &&
               (0, tQ.openModalLazy)(async () => {
                 let { default: t } = await Promise.all([
                   n.e("445147"),
@@ -100147,8 +100162,8 @@ ${a}`);
               });
           };
         }
-        let B4 = new B6();
-        class B7 extends nI.A {
+        let B8 = new B7();
+        class B9 extends nI.A {
           _initialize() {
             k.h.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates);
           }
@@ -100176,9 +100191,9 @@ ${a}`);
             ek.Ay.isVideoEnabled() && iL.default.setVideoEnabled(!1);
           };
         }
-        let B8 = new B7(),
-          B9 = "STAGE_INVITED_TO_SPEAK_MODAL";
-        class Ve extends nI.A {
+        let Ve = new B9(),
+          Vt = "STAGE_INVITED_TO_SPEAK_MODAL";
+        class Vn extends nI.A {
           _initialize() {
             k.h.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates);
           }
@@ -100196,7 +100211,7 @@ ${a}`);
             if (null == a) return;
             let s = a.channelId;
             if (null == s) {
-              (0, tQ.hasModalOpen)(B9) && (0, tQ.closeModal)(B9);
+              (0, tQ.hasModalOpen)(Vt) && (0, tQ.closeModal)(Vt);
               return;
             }
             let l = nR.A.getChannel(s);
@@ -100204,7 +100219,7 @@ ${a}`);
             let o =
               (0, d6.eY)(a) === d6.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
             if (null != l && o) {
-              if ((0, tQ.hasModalOpen)(B9)) return;
+              if ((0, tQ.hasModalOpen)(Vt)) return;
               (0, tQ.openModalLazy)(
                 async () => {
                   let { default: e } = await Promise.all([
@@ -100213,30 +100228,30 @@ ${a}`);
                   ]).then(n.bind(n, 427412));
                   return (t) => (0, b.jsx)(e, { ...t, channel: l });
                 },
-                { modalKey: B9, onCloseRequest: j.FXj },
+                { modalKey: Vt, onCloseRequest: j.FXj },
               );
             }
           };
         }
-        let Vt = new Ve();
-        var Vn = n(863922),
-          Vi = n(353202);
+        let Vi = new Vn();
+        var Vr = n(863922),
+          Va = n(353202);
         n(667532);
-        var Vr = n(100767),
-          Va = n(379418),
-          Vs = n(9842),
-          Vl = n(54570),
-          Vo = n(8880);
+        var Vs = n(100767),
+          Vl = n(379418),
+          Vo = n(9842),
+          Vd = n(54570),
+          Vc = n(8880);
         n(75804);
-        let Vd = [],
-          Vc = null,
-          Vu = null,
+        let Vu = [],
           V_ = null,
-          VE = /\|\|([\s\S]+?)\|\|/g;
-        function VA(e, t, n, i) {
+          VE = null,
+          VA = null,
+          Vh = /\|\|([\s\S]+?)\|\|/g;
+        function Vf(e, t, n, i) {
           let r = e6.A.getGuild(n),
             a = e
-              .replace(VE, tv.intl.string(tv.t["F+x38C"]))
+              .replace(Vh, tv.intl.string(tv.t["F+x38C"]))
               .replace(/<@!?(\d+)>/g, (e, t) => {
                 let i = eF.default.getUser(t);
                 return null == i
@@ -100261,7 +100276,7 @@ ${a}`);
               )
               .replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => `/${t}`)
               .replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
-                let i = Va.kx[n],
+                let i = Vl.kx[n],
                   r = 1e3 * parseInt(t, 10),
                   a = of()(r);
                 return null != i ? i(a) : a.format();
@@ -100277,59 +100292,59 @@ ${a}`);
                 replyUsername: i,
               });
         }
-        function Vh() {
-          if (!Vr.$j) return !1;
+        function VI() {
+          if (!Vs.$j) return !1;
           let e = PG.default.locale;
-          null == V_ && (V_ = window.speechSynthesis?.getVoices());
-          let t = V_.filter(
+          null == VA && (VA = window.speechSynthesis?.getVoices());
+          let t = VA.filter(
             (t) => t.lang === e || t.lang.slice(0, e.length) === e,
           );
-          Vu = t.length > 0 ? t[0] : null;
+          VE = t.length > 0 ? t[0] : null;
         }
-        async function Vf(e, t, n, i, r) {
-          let a = Vr.aW(e, n);
+        async function Vp(e, t, n, i, r) {
+          let a = Vs.aW(e, n);
           null !== a &&
-            (null == Vu && Vh(),
-            t ? await (0, Vl.pr)() : Vc?.removeEventListener("end", Vl.pr),
-            a.addEventListener("end", Vl.pr),
+            (null == VE && VI(),
+            t ? await (0, Vd.pr)() : V_?.removeEventListener("end", Vd.pr),
+            a.addEventListener("end", Vd.pr),
             null != i && a.addEventListener("start", i),
             null != r && a.addEventListener("end", r),
-            (Vc = a),
-            Vr.wz(a, Vu));
+            (V_ = a),
+            Vs.wz(a, VE));
         }
-        function VI(e, t, n, i, r) {
-          Vf(e, t, r, () => {
-            (0, Vl.kC)(n, i);
+        function VT(e, t, n, i, r) {
+          Vp(e, t, r, () => {
+            (0, Vd.kC)(n, i);
           });
         }
-        function Vp(e) {
+        function Vm(e) {
           let { text: t, interrupt: n, maxLength: i, onStart: r, onEnd: a } = e;
-          Vf(t, n, i, r, a);
+          Vp(t, n, i, r, a);
         }
-        function VT() {
+        function Vg() {
           return (
-            null !== Vc && Vc.removeEventListener("end", Vl.pr),
-            Vr._X(),
-            (Vc = null),
+            null !== V_ && V_.removeEventListener("end", Vd.pr),
+            Vs._X(),
+            (V_ = null),
             !0
           );
         }
-        function Vm(e) {
+        function VS(e) {
           let { message: t, channel: n } = e,
             i =
               t.type === j.lAJ.REPLY
-                ? Vs.A.getMessageByReference(t.messageReference)
+                ? Vo.A.getMessageByReference(t.messageReference)
                 : null,
-            r = i?.state === Vs.a.LOADED ? i?.message?.author : null,
+            r = i?.state === Vo.a.LOADED ? i?.message?.author : null,
             a =
               null != r
                 ? (oF.Ay.getNick(n.guild_id, r?.id) ?? ad.Ay.getName(r))
                 : null,
             s = n.getGuildId(),
             l = oF.Ay.getNick(s, t.author.id) ?? ad.Ay.getName(t.author);
-          return VI(VA(t.content, l, s, a), !0, n.id, t.id), !0;
+          return VT(Vf(t.content, l, s, a), !0, n.id, t.id), !0;
         }
-        function Vg(e) {
+        function VN(e) {
           let { channelId: t, message: n, optimistic: i } = e;
           if (i || ek.Ay.isSelfDeaf()) return !1;
           let r = nR.A.getChannel(t);
@@ -100343,8 +100358,8 @@ ${a}`);
               n.author?.id !== ei.default.getId() &&
               (d === j.aVn.ALL_CHANNELS || (d === j.aVn.SELECTED_CHANNEL && l));
           if ((o || c) && !iQ.A.isBlockedOrIgnoredForMessage(n)) {
-            if (Vd.indexOf(n.id) >= 0) return !1;
-            Vd.unshift(n.id) > 10 && Vd.pop();
+            if (Vu.indexOf(n.id) >= 0) return !1;
+            Vu.unshift(n.id) > 10 && Vu.pop();
             let e = r.getGuildId();
             if (null != e && MY.Ay.getMutedChannels(e).has(t)) return !1;
             let i =
@@ -100354,103 +100369,103 @@ ${a}`);
                 null != a
                   ? (oF.Ay.getNick(e, a?.id) ?? ad.Ay.getName(a))
                   : null;
-            VI(VA(n.content, i, e, s), !1, r.id, n.id, 200);
+            VT(Vf(n.content, i, e, s), !1, r.id, n.id, 200);
           }
           return !1;
         }
-        function VS(e) {
+        function VC(e) {
           let { id: t, channelId: n } = e,
-            i = Vo.A.currentMessage;
+            i = Vc.A.currentMessage;
           return (
             null != i &&
             t === i.messageId &&
             n === i.channelId &&
-            ((0, Vl.pr)(), !0)
+            ((0, Vd.pr)(), !0)
           );
         }
-        function VN() {
-          ek.Ay.isSelfDeaf() && Vr._X();
+        function VO() {
+          ek.Ay.isSelfDeaf() && Vs._X();
         }
-        function VC(e) {
+        function VR(e) {
           let { channelId: t } = e,
-            n = Vo.A.currentMessage;
-          null != n && n.channelId !== t && (0, Vl.pr)();
+            n = Vc.A.currentMessage;
+          null != n && n.channelId !== t && (0, Vd.pr)();
         }
-        let VO = {
+        let VL = {
           init() {
-            k.h.subscribe("SPEAK_TEXT", Vp),
-              k.h.subscribe("SPEAK_MESSAGE", Vm),
-              k.h.subscribe("STOP_SPEAKING", VT),
-              k.h.subscribe("MESSAGE_CREATE", Vg),
-              k.h.subscribe("MESSAGE_DELETE", VS),
-              k.h.subscribe("AUDIO_TOGGLE_SELF_DEAF", VN),
-              k.h.subscribe("CHANNEL_SELECT", VC),
-              k.h.subscribe("USER_SETTINGS_PROTO_UPDATE", Vh),
-              (0, PH.I)(Vh);
+            k.h.subscribe("SPEAK_TEXT", Vm),
+              k.h.subscribe("SPEAK_MESSAGE", VS),
+              k.h.subscribe("STOP_SPEAKING", Vg),
+              k.h.subscribe("MESSAGE_CREATE", VN),
+              k.h.subscribe("MESSAGE_DELETE", VC),
+              k.h.subscribe("AUDIO_TOGGLE_SELF_DEAF", VO),
+              k.h.subscribe("CHANNEL_SELECT", VR),
+              k.h.subscribe("USER_SETTINGS_PROTO_UPDATE", VI),
+              (0, PH.I)(VI);
           },
         };
-        var VR = n(80556);
-        let VL = (0, yW.Ay)({
+        var Vy = n(80556);
+        let VD = (0, yW.Ay)({
             name: "2026-04-safety-flows",
             kind: "user",
             defaultConfig: { enabled: !1 },
             variations: { 0: { enabled: !1 }, 1: { enabled: !0 } },
           }),
           {
-            REQUIRE_CAPTCHA: Vy,
-            REQUIRE_VERIFIED_EMAIL: VD,
-            REQUIRE_VERIFIED_PHONE: Vv,
-            REQUIRE_REVERIFIED_EMAIL: Vb,
-            REQUIRE_REVERIFIED_PHONE: VM,
-            REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE: VP,
-            REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE: VU,
-            REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE: Vw,
-            REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE: VG,
+            REQUIRE_CAPTCHA: Vv,
+            REQUIRE_VERIFIED_EMAIL: Vb,
+            REQUIRE_VERIFIED_PHONE: VM,
+            REQUIRE_REVERIFIED_EMAIL: VP,
+            REQUIRE_REVERIFIED_PHONE: VU,
+            REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE: Vw,
+            REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE: VG,
+            REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE: Vx,
+            REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE: Vk,
           } = j.a3B;
-        function Vx() {
+        function VF() {
           for (var e = arguments.length, t = Array(e), n = 0; n < e; n++)
             t[n] = arguments[n];
           return { requiredActions: new Set(t) };
         }
-        function Vk() {
+        function VB() {
           for (var e = arguments.length, t = Array(e), n = 0; n < e; n++)
             t[n] = arguments[n];
           return {
             requiredActions: new Set(t.flatMap((e) => [...e.requiredActions])),
           };
         }
-        let VF = Vx(),
-          VB = Vx(VD),
-          VV = Vx(VD, Vb),
-          VH = Vx(Vv),
-          Vj = Vx(Vv, VM),
-          VW = Vx(VP, VU, Vw, VG),
-          VY = Vx(Vy),
-          VK = Vk(VV, Vj, VW),
-          V$ = Vk(VK, VY),
-          Vz = (0, H.mj)({
+        let VV = VF(),
+          VH = VF(Vb),
+          Vj = VF(Vb, VP),
+          VW = VF(VM),
+          VY = VF(VM, VU),
+          VK = VF(Vw, VG, Vx, Vk),
+          V$ = VF(Vv),
+          Vz = VB(Vj, VY, VK),
+          VX = VB(Vz, V$),
+          Vq = (0, H.mj)({
             name: "2026-09-safety-flows-legacy-required-actions",
             kind: "user",
-            defaultConfig: VF,
+            defaultConfig: VV,
             variations: {
-              0: VF,
-              1: VB,
-              2: VV,
-              3: VH,
-              4: Vj,
-              5: VW,
-              6: VY,
-              7: VK,
-              8: V$,
+              0: VV,
+              1: VH,
+              2: Vj,
+              3: VW,
+              4: VY,
+              5: VK,
+              6: V$,
+              7: Vz,
+              8: VX,
             },
           });
-        var VX = n(219503),
-          Vq = n(446868),
-          VZ = n(665095),
-          VQ = n(639719),
-          VJ = n(53516),
-          V0 = n(87404);
-        let V1 = {
+        var VZ = n(219503),
+          VQ = n(446868),
+          VJ = n(665095),
+          V0 = n(639719),
+          V1 = n(53516),
+          V2 = n(87404);
+        let V3 = {
           init() {
             k.h.subscribe("CONNECTION_OPEN", this.handleRequiredAction),
               k.h.subscribe(
@@ -100476,32 +100491,32 @@ ${a}`);
               t === j.a3B.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE ||
               t === j.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE ||
               t === j.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE ||
-              Vq.A.isEmailReverification(t)
+              VQ.A.isEmailReverification(t)
                 ? (function (e) {
                     let { location: t, requiredAction: n } = e;
                     return (
                       null != n &&
                       !!(function (e) {
                         let { location: t } = e;
-                        return VL.getConfig({ location: t }).enabled;
+                        return VD.getConfig({ location: t }).enabled;
                       })({ location: t }) &&
-                      Vz.getConfig({ location: t }).requiredActions.has(n)
+                      Vq.getConfig({ location: t }).requiredActions.has(n)
                     );
                   })({ location: "verification-legacy", requiredAction: t })
                   ? (0, M1.B8)(
                       (e) => {
                         let { closeLayer: t } = e;
-                        return (0, b.jsx)(VX.A, { onClose: t });
+                        return (0, b.jsx)(VZ.A, { onClose: t });
                       },
-                      { layerKey: V0._s, Layer: VR.Ay },
+                      { layerKey: V2._s, Layer: Vy.Ay },
                     )
-                  : (0, M1.B8)(() => (0, b.jsx)(VZ.A, {}), {
-                      layerKey: V0._s,
-                      Layer: VR.Ay,
+                  : (0, M1.B8)(() => (0, b.jsx)(VJ.A, {}), {
+                      layerKey: V2._s,
+                      Layer: Vy.Ay,
                     })
                 : t === j.a3B.AGREEMENTS
-                  ? (0, tQ.openModal)((e) => (0, b.jsx)(VQ.default, { ...e }), {
-                      modalKey: V0.i$,
+                  ? (0, tQ.openModal)((e) => (0, b.jsx)(V0.default, { ...e }), {
+                      modalKey: V2.i$,
                       onCloseRequest: cv.FX,
                       dismissable: !1,
                     })
@@ -100509,32 +100524,32 @@ ${a}`);
                     ? (0, M1.B8)(
                         (e) => {
                           let { closeLayer: t } = e;
-                          return (0, b.jsx)(VX.A, { onClose: t });
+                          return (0, b.jsx)(VZ.A, { onClose: t });
                         },
-                        { layerKey: V0._s, Layer: VR.Ay },
+                        { layerKey: V2._s, Layer: Vy.Ay },
                       )
                     : null == t &&
-                      ((0, M1.dF)(V0._s),
-                      (0, tQ.hasModalOpen)(V0.i$) &&
-                        (0, tQ.closeModal)(V0.i$)));
+                      ((0, M1.dF)(V2._s),
+                      (0, tQ.hasModalOpen)(V2.i$) &&
+                        (0, tQ.closeModal)(V2.i$)));
           },
           handleAuthenticationStoreChanged() {
             null == ei.default.getId() &&
-              ((0, M1.dF)(V0._s),
-              (0, tQ.closeModal)(V0.i$),
-              (0, tQ.closeModal)(V0.Pr),
-              (0, tQ.closeModal)(V0.H1),
-              (0, tQ.closeModal)(VJ.V));
+              ((0, M1.dF)(V2._s),
+              (0, tQ.closeModal)(V2.i$),
+              (0, tQ.closeModal)(V2.Pr),
+              (0, tQ.closeModal)(V2.H1),
+              (0, tQ.closeModal)(V1.V));
           },
           handleCurrentUserUpdate(e) {
             let { user: t } = e;
-            t.verified && (0, tQ.closeModal)(V0.H1);
+            t.verified && (0, tQ.closeModal)(V2.H1);
           },
         };
-        var V2 = n(803805),
-          V3 = n(761821);
-        let V5 = "selectedChannelGuildFrecency";
-        function V6(e) {
+        var V5 = n(803805),
+          V6 = n(761821);
+        let V4 = "selectedChannelGuildFrecency";
+        function V7(e) {
           let { state: t } = eE.Ay.PersistedStore.migrateAndReadStoreState(
             "GIFFavoritesStore",
             [
@@ -100553,16 +100568,16 @@ ${a}`);
           return null == t || 0 === t.favorites.length
             ? []
             : t.favorites.map((n, i) => {
-                let r = V2.tC.create();
+                let r = V5.tC.create();
                 return (
                   (r.format = (() => {
                     switch (n.format) {
                       case "IMAGE":
-                        return V2.TL.IMAGE;
+                        return V5.TL.IMAGE;
                       case "VIDEO":
-                        return V2.TL.VIDEO;
+                        return V5.TL.VIDEO;
                       default:
-                        return n.format, V2.TL.NONE;
+                        return n.format, V5.TL.NONE;
                     }
                   })()),
                   (r.src = n.src),
@@ -100573,14 +100588,14 @@ ${a}`);
                 );
               });
         }
-        let V4 = [
+        let V8 = [
           {
             version: 2,
             run(e) {
-              let t = V6(1);
+              let t = V7(1);
               if (0 === t.length) return !1;
               for (let { url: n, favorite: i } of (null == e.favoriteGifs &&
-                (e.favoriteGifs = V2.uz.create()),
+                (e.favoriteGifs = V5.uz.create()),
               (e.favoriteGifs.gifs = {}),
               t))
                 e.favoriteGifs.gifs[n] = i;
@@ -100608,14 +100623,14 @@ ${a}`);
               let i = !1;
               return (
                 n.favorites.length > 0 &&
-                  ((e.favoriteStickers = V2.tQ.create()),
+                  ((e.favoriteStickers = V5.tQ.create()),
                   (e.favoriteStickers.stickerIds = iV()
                     .uniq(n.favorites)
                     .slice(0, 250)),
                   (i = !0)),
                 iV().size(n.usageHistory) > 0 &&
-                  ((e.stickerFrecency = V2.Do.create()),
-                  (e.stickerFrecency.stickers = (0, V3.Mr)(
+                  ((e.stickerFrecency = V5.Do.create()),
+                  (e.stickerFrecency.stickers = (0, V6.Mr)(
                     n.usageHistory,
                     100,
                   )),
@@ -100639,14 +100654,14 @@ ${a}`);
               return (
                 null != t.favorites &&
                   t.favorites.length > 0 &&
-                  ((e.favoriteEmojis = V2.gW.create()),
+                  ((e.favoriteEmojis = V5.gW.create()),
                   (e.favoriteEmojis.emojis = iV()
                     .uniq(t.favorites)
                     .slice(0, 250)),
                   (n = !0)),
                 iV().size(t.usageHistory) > 0 &&
-                  ((e.emojiFrecency = V2.Q8.create()),
-                  (e.emojiFrecency.emojis = (0, V3.Mr)(t.usageHistory, 100)),
+                  ((e.emojiFrecency = V5.Q8.create()),
+                  (e.emojiFrecency.emojis = (0, V6.Mr)(t.usageHistory, 100)),
                   (n = !0)),
                 n
               );
@@ -100660,29 +100675,29 @@ ${a}`);
           {
             version: 6,
             run(e) {
-              null == e.favoriteGifs && (e.favoriteGifs = V2.uz.create()),
+              null == e.favoriteGifs && (e.favoriteGifs = V5.uz.create()),
                 null == e.favoriteGifs.gifs && (e.favoriteGifs.gifs = {});
-              let t = V6(1);
+              let t = V7(1);
               if (0 === t.length) return !1;
               iV()(e.favoriteGifs.gifs)
                 .values()
                 .sortBy("order")
                 .forEach((e, n) => (e.order = t.length + 1 + n));
-              let n = V2.uz.toBinary(e.favoriteGifs).length,
+              let n = V5.uz.toBinary(e.favoriteGifs).length,
                 i = 0;
               for (let { url: r, favorite: a } of t) {
                 if (((a.order = t.length - i), i++, r in e.favoriteGifs.gifs)) {
                   e.favoriteGifs.gifs[r].order = a.order;
                   continue;
                 }
-                let s = V2.tC.toBinary(a).length + r.length + 7;
+                let s = V5.tC.toBinary(a).length + r.length + 7;
                 n + s > 762880 || ((n += s), (e.favoriteGifs.gifs[r] = a));
               }
-              for (n = V2.uz.toBinary(e.favoriteGifs).length; n > 762880; ) {
+              for (n = V5.uz.toBinary(e.favoriteGifs).length; n > 762880; ) {
                 let t = 0;
                 for (let n in e.favoriteGifs.gifs)
                   if ((delete e.favoriteGifs.gifs[n], ++t >= 10)) break;
-                n = V2.uz.toBinary(e.favoriteGifs).length;
+                n = V5.uz.toBinary(e.favoriteGifs).length;
               }
               return !0;
             },
@@ -100699,9 +100714,9 @@ ${a}`);
               let n = !1;
               return (
                 iV().size(t.usageHistory) > 0 &&
-                  ((e.applicationCommandFrecency = V2.Zc.create()),
+                  ((e.applicationCommandFrecency = V5.Zc.create()),
                   (e.applicationCommandFrecency.applicationCommands = (0,
-                  V3.Mr)(t.usageHistory, 500)),
+                  V6.Mr)(t.usageHistory, 500)),
                   (n = !0)),
                 n
               );
@@ -100721,7 +100736,7 @@ ${a}`);
               let n = !1;
               return (
                 iV().size(t.favoriteSounds) > 0 &&
-                  ((e.favoriteSoundboardSounds = V2.Qn.create()),
+                  ((e.favoriteSoundboardSounds = V5.Qn.create()),
                   cu.default.keys(t.favoriteSounds).forEach((n) => {
                     new Set(t.favoriteSounds[n]).forEach((t) => {
                       e.favoriteSoundboardSounds?.soundIds.push(t);
@@ -100738,12 +100753,12 @@ ${a}`);
           {
             version: 9,
             run(e) {
-              let t = ex.w.get(V5);
+              let t = ex.w.get(V4);
               if (null == t) return !1;
               for (let e in t) j.Ut1.test(e) || delete t[e];
               return (
-                (e.guildAndChannelFrecency = V2.F1.create()),
-                (e.guildAndChannelFrecency.guildAndChannels = (0, V3.Mr)(
+                (e.guildAndChannelFrecency = V5.F1.create()),
+                (e.guildAndChannelFrecency.guildAndChannels = (0, V6.Mr)(
                   t,
                   100,
                 )),
@@ -100751,7 +100766,7 @@ ${a}`);
               );
             },
             cleanup() {
-              ex.w.remove(V5);
+              ex.w.remove(V4);
             },
           },
           {
@@ -100761,10 +100776,10 @@ ${a}`);
               let t = e.emojiFrecency.emojis ?? {},
                 n = !1;
               if (iV().size(t) > 0) {
-                let t = V2.Q8.create();
-                V2.Q8.mergePartial(t, e.emojiFrecency),
+                let t = V5.Q8.create();
+                V5.Q8.mergePartial(t, e.emojiFrecency),
                   null != e.emojiReactionFrecency &&
-                    V2.Q8.mergePartial(t, e.emojiReactionFrecency),
+                    V5.Q8.mergePartial(t, e.emojiReactionFrecency),
                   (e.emojiReactionFrecency = t),
                   (n = !0);
               }
@@ -100784,9 +100799,9 @@ ${a}`);
                 null != r &&
                   (r.src.startsWith("//") &&
                     ((r.src = `https:${r.src}`), (n = !0)),
-                  r.format !== V2.TL.IMAGE &&
+                  r.format !== V5.TL.IMAGE &&
                     t.test(r.src) &&
-                    ((r.format = V2.TL.IMAGE), (n = !0)));
+                    ((r.format = V5.TL.IMAGE), (n = !0)));
               }
               return n;
             },
@@ -100806,17 +100821,17 @@ ${a}`);
             cleanup() {},
           },
         ];
-        var V7 = n(406935),
-          V8 = n(168186),
-          V9 = n(460288);
-        function He(e, t) {
+        var V9 = n(406935),
+          He = n(168186),
+          Ht = n(460288);
+        function Hn(e, t) {
           let n = !1;
           return (
             null == e.userContent && (e.userContent = eN.YW.create()),
             null == e.userContent.dismissedContents &&
               (e.userContent.dismissedContents = new Uint8Array()),
-            (0, V9.c0)(e.userContent.dismissedContents, t) ||
-              ((e.userContent.dismissedContents = (0, V9.Vf)(
+            (0, Ht.c0)(e.userContent.dismissedContents, t) ||
+              ((e.userContent.dismissedContents = (0, Ht.Vf)(
                 e.userContent.dismissedContents,
                 t,
               )),
@@ -100824,10 +100839,10 @@ ${a}`);
             n
           );
         }
-        function Ht(e, t, n) {
-          return !!BW.HP.hasHiddenHotspot(t) && He(e, n);
+        function Hi(e, t, n) {
+          return !!BK.HP.hasHiddenHotspot(t) && Hn(e, n);
         }
-        let Hn = [
+        let Hr = [
           {
             version: 2,
             run(e) {
@@ -100848,7 +100863,7 @@ ${a}`);
                 let i = nR.A.getChannel(n);
                 null != i &&
                   ((t = !0),
-                  (0, V3.gc)(e, i.guild_id ?? "0", i.id, (e) => {
+                  (0, V6.gc)(e, i.guild_id ?? "0", i.id, (e) => {
                     e.collapsedInInbox = !0;
                   }));
               }
@@ -100880,7 +100895,7 @@ ${a}`);
                   (null == e.textAndImages &&
                     (e.textAndImages = eN.oJ.create()),
                   null == e.textAndImages.diversitySurrogate &&
-                    (e.textAndImages.diversitySurrogate = V7.hU.create()),
+                    (e.textAndImages.diversitySurrogate = V9.hU.create()),
                   (e.textAndImages.diversitySurrogate.value =
                     t.diversitySurrogate),
                   (n = !0)),
@@ -100902,22 +100917,22 @@ ${a}`);
               let n = ex.w.get("UserSettingsStore") ?? {};
               return (
                 "boolean" == typeof n.useRichChatTextBox &&
-                  ((e.textAndImages.useRichChatInput = V7._t.create({
+                  ((e.textAndImages.useRichChatInput = V9._t.create({
                     value: n.useRichChatTextBox,
                   })),
                   (t = !0)),
                 "string" == typeof n.renderSpoilers &&
-                  ((e.textAndImages.renderSpoilers = V7.hU.create({
+                  ((e.textAndImages.renderSpoilers = V9.hU.create({
                     value: n.renderSpoilers,
                   })),
                   (t = !0)),
                 "boolean" == typeof n.useThreadSidebar &&
-                  ((e.textAndImages.useThreadSidebar = V7._t.create({
+                  ((e.textAndImages.useThreadSidebar = V9._t.create({
                     value: n.useThreadSidebar,
                   })),
                   (t = !0)),
                 "boolean" == typeof n.showInAppNotifications &&
-                  ((e.notifications.showInAppNotifications = V7._t.create({
+                  ((e.notifications.showInAppNotifications = V9._t.create({
                     value: n.showInAppNotifications,
                   })),
                   (t = !0)),
@@ -100930,48 +100945,48 @@ ${a}`);
                     n.stickerPickerCollapsedSections),
                   (t = !0)),
                 "boolean" == typeof n.viewImageDescriptions &&
-                  ((e.textAndImages.viewImageDescriptions = V7._t.create({
+                  ((e.textAndImages.viewImageDescriptions = V9._t.create({
                     value: n.viewImageDescriptions,
                   })),
                   (t = !0)),
                 "boolean" == typeof n.showCommandSuggestions &&
-                  ((e.textAndImages.showCommandSuggestions = V7._t.create({
+                  ((e.textAndImages.showCommandSuggestions = V9._t.create({
                     value: n.showCommandSuggestions,
                   })),
                   (t = !0)),
                 "boolean" == typeof n.alwaysPreviewVideo &&
-                  ((e.voiceAndVideo.alwaysPreviewVideo = V7._t.create({
+                  ((e.voiceAndVideo.alwaysPreviewVideo = V9._t.create({
                     value: n.alwaysPreviewVideo,
                   })),
                   (t = !0)),
                 "boolean" == typeof n.notifyFriendsOnGoLive &&
-                  ((e.notifications.notifyFriendsOnGoLive = V7._t.create({
+                  ((e.notifications.notifyFriendsOnGoLive = V9._t.create({
                     value: n.notifyFriendsOnGoLive,
                   })),
                   (t = !0)),
                 "boolean" == typeof n.installShortcutDesktop &&
-                  ((e.gameLibrary.installShortcutDesktop = V7._t.create({
+                  ((e.gameLibrary.installShortcutDesktop = V9._t.create({
                     value: n.installShortcutDesktop,
                   })),
                   (t = !0)),
                 "boolean" == typeof n.installShortcutStartMenu &&
-                  ((e.gameLibrary.installShortcutStartMenu = V7._t.create({
+                  ((e.gameLibrary.installShortcutStartMenu = V9._t.create({
                     value: n.installShortcutStartMenu,
                   })),
                   (t = !0)),
                 "boolean" == typeof n.allowActivityPartyPrivacyFriends &&
-                  ((e.privacy.allowActivityPartyPrivacyFriends = V7._t.create({
+                  ((e.privacy.allowActivityPartyPrivacyFriends = V9._t.create({
                     value: n.allowActivityPartyPrivacyFriends,
                   })),
                   (t = !0)),
                 "boolean" == typeof n.allowActivityPartyPrivacyVoiceChannel &&
                   ((e.privacy.allowActivityPartyPrivacyVoiceChannel =
-                    V7._t.create({
+                    V9._t.create({
                       value: n.allowActivityPartyPrivacyVoiceChannel,
                     })),
                   (t = !0)),
                 "boolean" == typeof n.rtcPanelShowVoiceStates &&
-                  ((e.debug.rtcPanelShowVoiceStates = V7._t.create({
+                  ((e.debug.rtcPanelShowVoiceStates = V9._t.create({
                     value: n.rtcPanelShowVoiceStates,
                   })),
                   (t = !0)),
@@ -100983,21 +100998,21 @@ ${a}`);
           {
             version: 10,
             run(e) {
-              let t = Ht(
+              let t = Hi(
                   e,
-                  BW._2.HUB_LINK_CHANNEL_NOTICE,
+                  BK._2.HUB_LINK_CHANNEL_NOTICE,
                   rW.M.CHANNEL_NOTICE_HUBLINK,
                 ),
                 n = ex.w.get("channelNotices") ?? {};
               return (
                 !1 === n[j.n5X.INVITE] &&
-                  He(e, rW.M.CHANNEL_NOTICE_INVITE) &&
+                  Hn(e, rW.M.CHANNEL_NOTICE_INVITE) &&
                   (t = !0),
                 !1 === n[j.n5X.QUICKSWITCHER] &&
-                  He(e, rW.M.CHANNEL_NOTICE_QUICKSWITCHER) &&
+                  Hn(e, rW.M.CHANNEL_NOTICE_QUICKSWITCHER) &&
                   (t = !0),
                 !1 === n[j.n5X.GUILD_BOOSTING] &&
-                  He(e, rW.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) &&
+                  Hn(e, rW.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) &&
                   (t = !0),
                 t
               );
@@ -101012,10 +101027,10 @@ ${a}`);
               let t = !1;
               return (
                 ex.w.get("hideNag") &&
-                  He(e, rW.M.NAGBAR_NOTICE_DOWNLOAD) &&
+                  Hn(e, rW.M.NAGBAR_NOTICE_DOWNLOAD) &&
                   (t = !0),
                 ex.w.get("hideConnectSpotify") &&
-                  He(e, rW.M.NAGBAR_NOTICE_CONNECT_SPOTIFY) &&
+                  Hn(e, rW.M.NAGBAR_NOTICE_CONNECT_SPOTIFY) &&
                   (t = !0),
                 t
               );
@@ -101030,13 +101045,13 @@ ${a}`);
               let t = !1;
               return (
                 ex.w.get("hidePremiumPromo") &&
-                  He(e, rW.M.NAGBAR_NOTICE_PREMIUM_PROMO) &&
+                  Hn(e, rW.M.NAGBAR_NOTICE_PREMIUM_PROMO) &&
                   (t = !0),
                 ex.w.get("hidePremiumTier2TrialEnding") &&
-                  He(e, rW.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) &&
+                  Hn(e, rW.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) &&
                   (t = !0),
                 ex.w.get("hidePremiumReactivateNotice") &&
-                  He(e, rW.M.NAGBAR_NOTICE_PREMIUM_REACTIVATE) &&
+                  Hn(e, rW.M.NAGBAR_NOTICE_PREMIUM_REACTIVATE) &&
                   (t = !0),
                 t
               );
@@ -101050,9 +101065,9 @@ ${a}`);
           {
             version: 15,
             run: (e) =>
-              Ht(
+              Hi(
                 e,
-                BW._2.NOW_PLAYING_CONSENT_CARD,
+                BK._2.NOW_PLAYING_CONSENT_CARD,
                 rW.M.NOW_PLAYING_CONSENT_CARD,
               ),
             cleanup() {},
@@ -101069,7 +101084,7 @@ ${a}`);
                 null ==
                   e.userContent.lastDismissedOutboundPromotionStartDate) &&
                 ((e.userContent.lastDismissedOutboundPromotionStartDate =
-                  V7.hU.create({ value: n })),
+                  V9.hU.create({ value: n })),
                 !0)
               );
             },
@@ -101088,7 +101103,7 @@ ${a}`);
                 null != n &&
                 (null == e.textAndImages && (e.textAndImages = eN.oJ.create()),
                 null == e.textAndImages.expressionSuggestionsEnabled) &&
-                ((e.textAndImages.expressionSuggestionsEnabled = V7._t.create({
+                ((e.textAndImages.expressionSuggestionsEnabled = V9._t.create({
                   value: n,
                 })),
                 !0)
@@ -101103,7 +101118,7 @@ ${a}`);
             run(e) {
               let t = ex.w.get("lastChangeLogId");
               if (null == t) return !1;
-              if (!(0, V8.hT)(t)) return ex.w.remove("lastChangeLogId"), !1;
+              if (!(0, He.hT)(t)) return ex.w.remove("lastChangeLogId"), !1;
               if (null == e.userContent) e.userContent = eN.YW.create();
               else if (
                 null != e.userContent &&
@@ -101132,7 +101147,7 @@ ${a}`);
                 t?._state?.displayCompactAvatars === !0 &&
                 ((e.textAndImages ??= eN.oJ.create()),
                 null == e.textAndImages.displayCompactAvatars &&
-                  ((e.textAndImages.displayCompactAvatars = V7._t.create({
+                  ((e.textAndImages.displayCompactAvatars = V9._t.create({
                     value: !0,
                   })),
                   !0))
@@ -101141,58 +101156,58 @@ ${a}`);
             cleanup() {},
           },
         ];
-        var Hi = n(405892);
-        let Hr = {
+        var Ha = n(405892);
+        let Hs = {
           init() {
-            (Hi.A[or.oD.PRELOADED_USER_SETTINGS] = Hn),
-              (Hi.A[or.oD.FRECENCY_AND_FAVORITES_SETTINGS] = V4),
-              k.h.subscribe("CONNECTION_OPEN", Hs),
-              k.h.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", Hl),
-              k.h.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", Ho),
-              k.h.subscribe("APP_STATE_UPDATE", Hd),
-              __OVERLAY__ || window.addEventListener("beforeunload", Ha);
+            (Ha.A[or.oD.PRELOADED_USER_SETTINGS] = Hr),
+              (Ha.A[or.oD.FRECENCY_AND_FAVORITES_SETTINGS] = V8),
+              k.h.subscribe("CONNECTION_OPEN", Ho),
+              k.h.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", Hd),
+              k.h.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", Hc),
+              k.h.subscribe("APP_STATE_UPDATE", Hu),
+              __OVERLAY__ || window.addEventListener("beforeunload", Hl);
           },
         };
-        function Ha() {
-          iV().forEach(BY.Df, (e, t) => {
+        function Hl() {
+          iV().forEach(B$.Df, (e, t) => {
             null != eL.A.getFullState()[Number(t)].editInfo.timeout &&
               e.persistChanges();
           });
         }
-        function Hs() {
+        function Ho() {
           let e = eL.A.getFullState(),
             t = e[or.oD.PRELOADED_USER_SETTINGS];
           t.editInfo.triggeredMigrations &&
-            BY.wc.markDirtyFromMigration(t.proto, t.editInfo.cleanupFuncs),
-            iV().forEach(BY.Df, (t, n) => {
+            B$.wc.markDirtyFromMigration(t.proto, t.editInfo.cleanupFuncs),
+            iV().forEach(B$.Df, (t, n) => {
               let i = e[Number(n)];
               null != i.editInfo.offlineEditDataVersion &&
                 null != i.editInfo.protoToSave &&
                 t.scheduleSaveFromOfflineEdit();
             });
         }
-        function Hl(e) {
+        function Hd(e) {
           let {
             settings: { proto: t, type: n },
             delaySeconds: i,
             jitter: r,
           } = e;
-          BY.Df[n].markDirty(t, { delaySeconds: i, jitter: r });
+          B$.Df[n].markDirty(t, { delaySeconds: i, jitter: r });
         }
-        function Ho(e) {
+        function Hc(e) {
           let { settingsType: t } = e;
-          BY.Df[t].loadIfNecessary();
+          B$.Df[t].loadIfNecessary();
         }
-        function Hd(e) {
+        function Hu(e) {
           let { state: t } = e;
-          ("inactive" === t || "background" === t) && Ha();
+          ("inactive" === t || "background" === t) && Hl();
         }
-        var Hc = n(31728);
-        function Hu() {
+        var H_ = n(31728);
+        function HE() {
           if (null == s || !sA.A.isOpen(s)) return !1;
-          Hc.VN(s), nL.A.getRTCConnection()?.setPipOpen(!1), (s = null);
+          H_.VN(s), nL.A.getRTCConnection()?.setPipOpen(!1), (s = null);
         }
-        function H_() {
+        function HA() {
           let e = nL.A.getChannelId(),
             t = s === e;
           if (
@@ -101232,64 +101247,64 @@ ${a}`);
               );
             })()
           )
-            return Hu();
-          if ((t || Hu(), null == e)) return !1;
+            return HE();
+          if ((t || HE(), null == e)) return !1;
           let n = nR.A.getChannel(e);
           return (
             !(null == n || sA.A.isOpen(e)) &&
-            (Hc.ho(n.id, j.o1q.VIDEO, { channel: n }),
+            (H_.ho(n.id, j.o1q.VIDEO, { channel: n }),
             nL.A.getRTCConnection()?.setPipOpen(!0),
             void (s = e))
           );
         }
-        class HE extends nI.A {
+        class Hh extends nI.A {
           _initialize() {
-            ny.Ay.addChangeListener(H_),
-              ic.A.addChangeListener(H_),
-              nL.A.addChangeListener(H_),
-              nH.A.addChangeListener(H_),
-              vi.A.addChangeListener(H_),
-              d8.A.addChangeListener(H_),
-              iv.A.addChangeListener(H_),
-              ek.Ay.addChangeListener(H_),
-              nP.Ay.addChangeListener(H_),
-              tm.A.addChangeListener(H_);
+            ny.Ay.addChangeListener(HA),
+              ic.A.addChangeListener(HA),
+              nL.A.addChangeListener(HA),
+              nH.A.addChangeListener(HA),
+              vi.A.addChangeListener(HA),
+              d8.A.addChangeListener(HA),
+              iv.A.addChangeListener(HA),
+              ek.Ay.addChangeListener(HA),
+              nP.Ay.addChangeListener(HA),
+              tm.A.addChangeListener(HA);
           }
           _terminate() {
-            ny.Ay.removeChangeListener(H_),
-              ic.A.removeChangeListener(H_),
-              nL.A.removeChangeListener(H_),
-              nH.A.removeChangeListener(H_),
-              vi.A.removeChangeListener(H_),
-              d8.A.removeChangeListener(H_),
-              iv.A.removeChangeListener(H_),
-              ek.Ay.removeChangeListener(H_),
-              nP.Ay.removeChangeListener(H_),
-              tm.A.removeChangeListener(H_);
+            ny.Ay.removeChangeListener(HA),
+              ic.A.removeChangeListener(HA),
+              nL.A.removeChangeListener(HA),
+              nH.A.removeChangeListener(HA),
+              vi.A.removeChangeListener(HA),
+              d8.A.removeChangeListener(HA),
+              iv.A.removeChangeListener(HA),
+              ek.Ay.removeChangeListener(HA),
+              nP.Ay.removeChangeListener(HA),
+              tm.A.removeChangeListener(HA);
           }
         }
-        let HA = new HE();
-        var Hh = n(885576);
-        let Hf = new ip.Ep(),
-          HI = new ip.Ep();
-        class Hp extends nI.A {
+        let Hf = new Hh();
+        var HI = n(885576);
+        let Hp = new ip.Ep(),
+          HT = new ip.Ep();
+        class Hm extends nI.A {
           _initialize() {
             k.h.subscribe("IDLE", this.handleIdleUpdate);
           }
           _terminate() {
-            Hf.stop(),
-              HI.stop(),
+            Hp.stop(),
+              HT.stop(),
               k.h.unsubscribe("IDLE", this.handleIdleUpdate);
           }
           handleIdleUpdate() {
-            let e = Hh.A.getIdleSince();
+            let e = HI.A.getIdleSince();
             if (!eB.isPlatformEmbedded) return;
-            for (let e of (Hf.stop(), HI.stop(), d8.A.getAllActiveStreams()))
+            for (let e of (Hp.stop(), HT.stop(), d8.A.getAllActiveStreams()))
               if (e.state !== j.XYD.ENDED) return;
             if (null == e) return;
             let t = nL.A.getChannelId();
             if (null == t) return;
-            HI.start(18e6, () => {
+            HT.start(18e6, () => {
               t3.default.selectVoiceChannel(null);
             });
             let n = e6.A.getGuild(nL.A.getGuildId());
@@ -101303,7 +101318,7 @@ ${a}`);
             let i = nR.A.getChannel(t);
             null == i ||
               i.isGuildStageVoice() ||
-              Hf.start(
+              Hp.start(
                 e + n.afkTimeout * iT.A.Millis.SECOND - Date.now(),
                 () => {
                   null != (n = e6.A.getGuild(nL.A.getGuildId())) &&
@@ -101315,8 +101330,8 @@ ${a}`);
               );
           }
         }
-        let HT = new Hp(),
-          Hm = (0, H.mj)({
+        let Hg = new Hm(),
+          HS = (0, H.mj)({
             kind: "user",
             name: "2026-06-web-vitals-monitoring",
             defaultConfig: { enabled: !1, sampleRate: 0 },
@@ -101325,10 +101340,10 @@ ${a}`);
               2: { enabled: !0, sampleRate: 1 },
             },
           });
-        var Hg = n(484789);
-        let HS = new ez.A("WebVitals"),
-          HN = !1;
-        function HC(e) {
+        var HN = n(484789);
+        let HC = new ez.A("WebVitals"),
+          HO = !1;
+        function HR(e) {
           let {
             name: t,
             value: n,
@@ -101337,7 +101352,7 @@ ${a}`);
             id: a,
             navigationType: s,
           } = e;
-          HS.info(
+          HC.info(
             `${t}: ${n.toFixed(2)} (rating: ${i}, delta: ${r.toFixed(2)}, navigationType: ${s})`,
           ),
             W.default.track(j.HAw.APP_WEB_PERF_STARTUP_METRICS, {
@@ -101350,42 +101365,42 @@ ${a}`);
               metric_navigation_type: s,
             });
         }
-        function HO() {
-          let { enabled: e, sampleRate: t } = Hm.useConfig({
+        function HL() {
+          let { enabled: e, sampleRate: t } = HS.useConfig({
             location: "init_web_vitals",
           });
           return (
             eI.useEffect(() => {
               e &&
-                (HN ||
+                (HO ||
                   !((0, eB.isDesktop)() || (0, eB.isWeb)()) ||
-                  ((HN = !0),
+                  ((HO = !0),
                   Math.random() >= t ||
-                    ((0, Hg.IN)(HC, { reportAllChanges: !0 }),
-                    (0, Hg.zB)(HC, { reportAllChanges: !0 }),
-                    (0, Hg.rH)(HC, { reportAllChanges: !0 }),
-                    (0, Hg.fK)(HC, { reportAllChanges: !0 }),
-                    (0, Hg.Ck)(HC, { reportAllChanges: !0 }),
-                    HS.info(
+                    ((0, HN.IN)(HR, { reportAllChanges: !0 }),
+                    (0, HN.zB)(HR, { reportAllChanges: !0 }),
+                    (0, HN.rH)(HR, { reportAllChanges: !0 }),
+                    (0, HN.fK)(HR, { reportAllChanges: !0 }),
+                    (0, HN.Ck)(HR, { reportAllChanges: !0 }),
+                    HC.info(
                       `Web-vitals monitoring started (sampleRate: ${100 * t}%)`,
                     ))));
             }, [e, t]),
             null
           );
         }
-        var HR = n(565058);
-        let HL = !1,
-          Hy = null,
-          HD = {
+        var Hy = n(565058);
+        let HD = !1,
+          Hv = null,
+          Hb = {
             init() {
               k.h.subscribe("CONNECTION_OPEN", (e) => {
                 let { pendingPayments: t } = e;
                 if (null != t && t.length > 0) {
                   var i;
-                  if (Hy === t[0] || null == (Hy = t[0])) return;
-                  (i = Hy),
-                    HL ||
-                      ((HL = !0),
+                  if (Hv === t[0] || null == (Hv = t[0])) return;
+                  (i = Hv),
+                    HD ||
+                      ((HD = !0),
                       (0, tQ.openModalLazy)(async () => {
                         let { default: e } = await Promise.all([
                           n.e("157931"),
@@ -101396,7 +101411,7 @@ ${a}`);
                           return (0, b.jsx)(e, {
                             pendingPayment: i,
                             transitionState: n,
-                            onClose: () => ((HL = !1), r()),
+                            onClose: () => ((HD = !1), r()),
                           });
                         };
                       }));
@@ -101404,7 +101419,7 @@ ${a}`);
               });
             },
           };
-        var Hv = n(612181);
+        var HM = n(612181);
         n(115036),
           n(131319),
           n(794383),
@@ -101412,15 +101427,15 @@ ${a}`);
           n(712687),
           n(328968),
           n(304296);
-        let Hb = j.XlH.CLOSED,
-          HM = {},
-          HP = null;
-        function HU() {
+        let HP = j.XlH.CLOSED,
+          HU = {},
+          Hw = null;
+        function HG() {
           let e = eF.default.getCurrentUser();
-          if (null == e) return Hw();
-          (Hb = j.XlH.OPEN),
-            (HM = {}),
-            (HP = {
+          if (null == e) return Hx();
+          (HP = j.XlH.OPEN),
+            (HU = {}),
+            (Hw = {
               ...{
                 userId: e.id,
                 username: e.username,
@@ -101433,51 +101448,51 @@ ${a}`);
               },
             });
         }
-        function Hw() {
-          (Hb = j.XlH.CLOSED), (HP = null), (HM = {});
+        function Hx() {
+          (HP = j.XlH.CLOSED), (Hw = null), (HU = {});
         }
-        function HG() {
-          (Hb = j.XlH.OPEN), (HM = {});
+        function Hk() {
+          (HP = j.XlH.OPEN), (HU = {});
         }
-        class Hx extends eE.Ay.Store {
+        class HF extends eE.Ay.Store {
           static displayName = "UserSettingsAccountStore";
           initialize() {
             this.waitFor(eF.default);
           }
           getErrors() {
-            return HM;
+            return HU;
           }
           getSubmitting() {
-            return Hb === j.XlH.SUBMITTING;
+            return HP === j.XlH.SUBMITTING;
           }
           getSettings() {
-            return HP;
+            return Hw;
           }
         }
-        new Hx(k.h, {
+        new HF(k.h, {
           USER_SETTINGS_MODAL_OPEN: function () {
-            HU();
+            HG();
           },
-          USER_SETTINGS_MODAL_INIT: HU,
-          USER_SETTINGS_MODAL_CLOSE: Hw,
-          LOGOUT: Hw,
+          USER_SETTINGS_MODAL_INIT: HG,
+          USER_SETTINGS_MODAL_CLOSE: Hx,
+          LOGOUT: Hx,
           USER_SETTINGS_MODAL_SUBMIT: function () {
-            Hb = j.XlH.SUBMITTING;
+            HP = j.XlH.SUBMITTING;
           },
           USER_SETTINGS_MODAL_SUBMIT_FAILURE: function (e) {
-            if (Hb !== j.XlH.SUBMITTING) return !1;
-            (Hb = j.XlH.OPEN), (HM = e.errors ?? {});
+            if (HP !== j.XlH.SUBMITTING) return !1;
+            (HP = j.XlH.OPEN), (HU = e.errors ?? {});
           },
           USER_SETTINGS_MODAL_UPDATE_ACCOUNT: function (e) {
             let { settings: t } = e;
-            null == HP && (HP = {}), (HP = { ...HP, ...t });
+            null == Hw && (Hw = {}), (Hw = { ...Hw, ...t });
           },
-          USER_SETTINGS_MODAL_SUBMIT_COMPLETE: HG,
+          USER_SETTINGS_MODAL_SUBMIT_COMPLETE: Hk,
           USER_SETTINGS_MODAL_RESET: function () {
             let e = eF.default.getCurrentUser();
-            HG(),
+            Hk(),
               null != e &&
-                (HP = {
+                (Hw = {
                   ...{
                     userId: e.id,
                     username: e.username,
@@ -101493,13 +101508,13 @@ ${a}`);
         }),
           n(836602),
           n(555337);
-        let Hk = {
+        let HB = {
             hasAppliedPerk: !1,
             hasVisitedDisplayNameStyles: !1,
             previousPerkValues: {},
           },
-          HF = Hk;
-        class HB extends eE.Ay.PersistedStore {
+          HV = HB;
+        class HH extends eE.Ay.PersistedStore {
           static displayName = "HexagonCampaignPersistedStore";
           static persistKey = "HexagonCampaignPersistedStore";
           static migrations = [
@@ -101510,41 +101525,41 @@ ${a}`);
             (e) => ({ ...e, previousPerkValues: e?.previousPerkValues ?? {} }),
           ];
           initialize(e) {
-            null != e && (HF = { ...Hk, ...e });
+            null != e && (HV = { ...HB, ...e });
           }
           getState() {
-            return HF;
+            return HV;
           }
           get hasAppliedPerk() {
-            return HF.hasAppliedPerk;
+            return HV.hasAppliedPerk;
           }
           get hasVisitedDisplayNameStyles() {
-            return HF.hasVisitedDisplayNameStyles;
+            return HV.hasVisitedDisplayNameStyles;
           }
           get previousPerkValues() {
-            return HF.previousPerkValues;
+            return HV.previousPerkValues;
           }
         }
-        new HB(k.h, {
+        new HH(k.h, {
           HEXAGON_CAMPAIGN_PERK_APPLIED: function () {
-            HF = { ...HF, hasAppliedPerk: !0 };
+            HV = { ...HV, hasAppliedPerk: !0 };
           },
           HEXAGON_CAMPAIGN_APPLIED_PERKS_CLEARED: function () {
-            HF = { ...HF, hasAppliedPerk: !1 };
+            HV = { ...HV, hasAppliedPerk: !1 };
           },
           HEXAGON_CAMPAIGN_DISPLAY_NAME_STYLES_VISITED: function () {
-            if (HF.hasVisitedDisplayNameStyles) return !1;
-            HF = { ...HF, hasVisitedDisplayNameStyles: !0 };
+            if (HV.hasVisitedDisplayNameStyles) return !1;
+            HV = { ...HV, hasVisitedDisplayNameStyles: !0 };
           },
           HEXAGON_CAMPAIGN_PREVIOUS_PERK_VALUES_SAVED: function (e) {
             let { previousPerkValues: t } = e;
-            HF = {
-              ...HF,
-              previousPerkValues: { ...HF.previousPerkValues, ...t },
+            HV = {
+              ...HV,
+              previousPerkValues: { ...HV.previousPerkValues, ...t },
             };
           },
           LOGOUT: function () {
-            HF = Hk;
+            HV = HB;
           },
         }),
           n(863036),
@@ -101554,16 +101569,16 @@ ${a}`);
           n(884705),
           n(787301),
           n(632789);
-        var HV = n(453001);
+        var Hj = n(453001);
         n(753027), n(989837), n(166862), n(264322), n(861382), n(715314);
-        var HH = n(61090);
+        var HW = n(61090);
         n(237751);
-        var Hj = n(154049),
-          HW = n(937724),
-          HY = n(799422),
-          HK = n(723176);
-        let H$ = new ez.A("GuildBasicChannels");
-        function Hz(e, t) {
+        var HY = n(154049),
+          HK = n(937724),
+          H$ = n(799422),
+          Hz = n(723176);
+        let HX = new ez.A("GuildBasicChannels");
+        function Hq(e, t) {
           return (
             null == e ||
             e.type !== t.type ||
@@ -101572,13 +101587,13 @@ ${a}`);
             nV.A.computeBasicPermissions(e) !== nV.A.computeBasicPermissions(t)
           );
         }
-        let HX = new (class {
+        let HZ = new (class {
           synced = null;
           async getAsync(e) {
             let t = performance.now(),
               [n, i] = await Promise.all([
-                HK.A.basicChannels(e).getKvEntries(),
-                HK.A.syncedBasicChannels(e).getKvEntries(),
+                Hz.A.basicChannels(e).getKvEntries(),
+                Hz.A.syncedBasicChannels(e).getKvEntries(),
               ]),
               r = performance.now() - t,
               [a, s] = (function (e) {
@@ -101590,7 +101605,7 @@ ${a}`);
               l = new Set(a);
             return (
               (this.synced = l),
-              H$.verbose(
+              HX.verbose(
                 `loaded in ${r}ms (guilds: ${n.length}, synced: ${l.size} unsynced: ${s.length})`,
               ),
               {
@@ -101625,7 +101640,7 @@ ${a}`);
           }
           handleChannelUpdates(e, t) {
             for (let n of e.channels.filter((e) => null != e.guild_id))
-              Hz(nR.A.getBasicChannel(n.id), n) && this.unsync(n.guild_id, t);
+              Hq(nR.A.getBasicChannel(n.id), n) && this.unsync(n.guild_id, t);
           }
           handleBackgroundSync(e, t) {
             for (let n of e.guilds)
@@ -101650,22 +101665,22 @@ ${a}`);
           }
           async handlePostConnectionOpen() {
             let e = sW.A.lastTimeConnectedChanged(),
-              t = HK.A.database();
-            if (null == this.synced || null == t || !(0, HW.O)()) return;
+              t = Hz.A.database();
+            if (null == this.synced || null == t || !(0, HK.O)()) return;
             let n = e6.A.getGuildIds(),
               i = n.filter((e) => !this.synced.has(e));
-            for (let r of (H$.verbose(
+            for (let r of (HX.verbose(
               `scheduling basic_channel optimstic writes (guilds: ${i.length})`,
             ),
             n)) {
               if (
                 null == this.synced ||
-                t !== HK.A.database() ||
+                t !== Hz.A.database() ||
                 e !== sW.A.lastTimeConnectedChanged()
               )
                 break;
               if (!this.synced.has(r)) {
-                H$.verbose(
+                HX.verbose(
                   `optimstically writing basic_channels (guild: ${r})`,
                 );
                 try {
@@ -101675,7 +101690,7 @@ ${a}`);
                       "handlePostConnectionOpen",
                     );
                 } catch (e) {
-                  H$.warn("couldn't optimstically write basic_channel:", e);
+                  HX.warn("couldn't optimstically write basic_channel:", e);
                   return;
                 }
                 await new Promise((e) => setTimeout(e, 1e3));
@@ -101718,7 +101733,7 @@ ${a}`);
           }
           onGuildUpdate(e, t, n, i) {
             (n.length > 0 ||
-              t.some((e) => Hz(nR.A.getBasicChannel(e.id), e))) &&
+              t.some((e) => Hq(nR.A.getBasicChannel(e.id), e))) &&
               this.unsync(e, i);
           }
           onGuildSync(e, t) {
@@ -101726,23 +101741,23 @@ ${a}`);
           }
           delete(e, t) {
             this.unsync(e, t),
-              HK.A.basicChannelsTransaction(t).delete(e),
-              HK.A.syncedBasicChannelsTransaction(t).delete(e);
+              Hz.A.basicChannelsTransaction(t).delete(e),
+              Hz.A.syncedBasicChannelsTransaction(t).delete(e);
           }
           unsync(e, t) {
             this.synced?.delete(e),
-              HK.A.basicChannelsTransaction(t).delete(e),
-              HK.A.syncedBasicChannelsTransaction(t).put(e, !1),
-              HV.A.invalidate(e);
+              Hz.A.basicChannelsTransaction(t).delete(e),
+              Hz.A.syncedBasicChannelsTransaction(t).put(e, !1),
+              Hj.A.invalidate(e);
           }
           sync(e) {
-            H$.verbose("Starting to write all basic channels");
+            HX.verbose("Starting to write all basic channels");
             let t = performance.now(),
               n = { written: 0, skipped: 0 };
             for (let t of e6.A.getGuildIds())
               this.syncOne(t, e) ? n.written++ : n.skipped++;
             let i = performance.now() - t;
-            H$.verbose(
+            HX.verbose(
               `${n.written} basic_channel guilds submitted (took: ${i}ms, skipped: ${n.skipped} guilds)`,
             );
           }
@@ -101751,7 +101766,7 @@ ${a}`);
             return (
               !(null == e6.A.getGuild(e) || this.synced?.has(e)) &&
               (this.synced?.add(e),
-              HK.A.basicChannelsTransaction(t).put(
+              Hz.A.basicChannelsTransaction(t).put(
                 e,
                 ((n = e),
                 Object.values(nR.A.getMutableGuildChannelsForGuild(n)).map(
@@ -101760,33 +101775,33 @@ ${a}`);
                     type: e.type,
                     guild_id: e.guild_id,
                     parent_id: e.parent_id,
-                    basicPermissions: HY.A.asBasicFlag(
+                    basicPermissions: H$.A.asBasicFlag(
                       nV.A.computePermissions(e),
                     ),
                     nsfw: e.nsfw || void 0,
                   }),
                 )),
               ),
-              HK.A.syncedBasicChannelsTransaction(t).put(e, !0),
+              Hz.A.syncedBasicChannelsTransaction(t).put(e, !0),
               !0)
             );
           }
         })();
-        var Hq = n(149790),
-          HZ = n(9865),
-          HQ = n(7864);
-        let HJ = new ez.A("Guilds"),
-          H0 = new (class {
+        var HQ = n(149790),
+          HJ = n(9865),
+          H0 = n(7864);
+        let H1 = new ez.A("Guilds"),
+          H2 = new (class {
             async getAsync(e) {
               let t = performance.now(),
-                n = await HK.A.guilds(e).getMany(),
+                n = await Hz.A.guilds(e).getMany(),
                 i = performance.now();
               return (
-                HJ.verbose(`loaded in ${i - t}ms (guilds: ${n.length})`), n
+                H1.verbose(`loaded in ${i - t}ms (guilds: ${n.length})`), n
               );
             }
             async getOneAsync(e, t) {
-              return await HK.A.guilds(e).get(t);
+              return await Hz.A.guilds(e).get(t);
             }
             actions = {
               BACKGROUND_SYNC: (e, t) => this.handleBackgroundSync(e, t),
@@ -101808,15 +101823,15 @@ ${a}`);
                   let i = e5.A.getUnsafeMutableRoles(n.id),
                     r =
                       "partial" === n.data_mode
-                        ? HQ.ly(
+                        ? H0.ly(
                             n.id,
                             i,
                             n.partial_updates.roles,
                             n.partial_updates.deleted_role_ids,
                           )
-                        : HZ.hd(n.id, n.roles);
+                        : HJ.hd(n.id, n.roles);
                   this.put(
-                    Hq.Me(Hq.kI(n, e), HZ.cH(r), oF.Ay.getSelfMember(n.id)),
+                    HQ.Me(HQ.kI(n, e), HJ.cH(r), oF.Ay.getSelfMember(n.id)),
                     t,
                   );
                 }
@@ -101824,7 +101839,7 @@ ${a}`);
             }
             handleConnectionOpen(e, t) {
               let n = [...e.guilds.map((e) => e.id), ...e.unavailableGuilds];
-              for (let i of (HK.A.guildsTransaction(t).deleteAllExcept(n),
+              for (let i of (Hz.A.guildsTransaction(t).deleteAllExcept(n),
               e.guilds))
                 this.putOne(i, t);
             }
@@ -101833,11 +101848,11 @@ ${a}`);
             }
             handleGuildUpdate(e, t) {
               let n = e6.A.getGuild(e.guild.id),
-                i = Hq.Y1(e.guild, n);
+                i = HQ.Y1(e.guild, n);
               this.put(
-                Hq.Me(
+                HQ.Me(
                   i,
-                  HZ.cH(HZ.hd(e.guild.id, e.guild.roles)),
+                  HJ.cH(HJ.hd(e.guild.id, e.guild.roles)),
                   oF.Ay.getSelfMember(e.guild.id),
                 ),
                 t,
@@ -101851,9 +101866,9 @@ ${a}`);
                 i = e5.A.getUnsafeMutableRoles(e.guildId);
               null != n &&
                 this.put(
-                  Hq.Me(
+                  HQ.Me(
                     n,
-                    HZ.cH({ ...i, [e.role.id]: HZ.Wj(e.guildId, e.role) }),
+                    HJ.cH({ ...i, [e.role.id]: HJ.Wj(e.guildId, e.role) }),
                     oF.Ay.getSelfMember(e.guildId),
                   ),
                   t,
@@ -101867,7 +101882,7 @@ ${a}`);
                 let r = oF.Ay.getSelfMember(e.guildId);
                 null != r &&
                   (r = { ...r, roles: r.roles.filter((t) => t !== e.roleId) }),
-                  this.put(Hq.Me(n, HZ.cH(i), r), t);
+                  this.put(HQ.Me(n, HJ.cH(i), r), t);
               }
             }
             handleGuildMemberAdd(e, t) {
@@ -101875,9 +101890,9 @@ ${a}`);
                 let n = e6.A.getGuild(e.guildId);
                 null != n &&
                   this.put(
-                    Hq.Me(
+                    HQ.Me(
                       (0, id.kn)(n, e.joinedAt),
-                      HZ.cH(e5.A.getUnsafeMutableRoles(n.id)),
+                      HJ.cH(e5.A.getUnsafeMutableRoles(n.id)),
                       oF.Ay.getSelfMember(n.id),
                     ),
                     t,
@@ -101889,7 +101904,7 @@ ${a}`);
               let n = e6.A.getGuild(e.guildId);
               null != n &&
                 this.put(
-                  Hq.Me(n, HZ.cH(e5.A.getUnsafeMutableRoles(n.id)), {
+                  HQ.Me(n, HJ.cH(e5.A.getUnsafeMutableRoles(n.id)), {
                     roles: e.roles,
                     userId: e.user.id,
                   }),
@@ -101901,33 +101916,33 @@ ${a}`);
               let n = e.members.find((e) => e.user.id === ei.default.getId()),
                 i = e6.A.getGuild(e.id);
               if (null == e.properties && null == i) return;
-              let r = HZ.j_(e.id, e.roles, e5.A.getUnsafeMutableRoles(e.id)),
-                a = Hq.Me(
-                  Hq.Wj(e, i),
-                  HZ.cH(r),
+              let r = HJ.j_(e.id, e.roles, e5.A.getUnsafeMutableRoles(e.id)),
+                a = HQ.Me(
+                  HQ.Wj(e, i),
+                  HJ.cH(r),
                   null != n ? { userId: n.user.id, roles: n.roles } : null,
                 );
               this.put(a, t);
             }
             put(e, t) {
-              HK.A.guildsTransaction(t).put(e);
+              Hz.A.guildsTransaction(t).put(e);
             }
             delete(e, t) {
-              HK.A.guildsTransaction(t).delete(e);
+              Hz.A.guildsTransaction(t).delete(e);
             }
           })();
-        var H1 = n(314732),
-          H2 = n(586660),
-          H3 = n(214771);
-        let H5 = new ez.A("ReadStates"),
-          H6 = new (class {
+        var H3 = n(314732),
+          H5 = n(586660),
+          H6 = n(214771);
+        let H4 = new ez.A("ReadStates"),
+          H7 = new (class {
             readStateVersion = null;
             async getAll(e) {
               let t = performance.now(),
-                n = await HK.A.readStates(e).getMany(),
+                n = await Hz.A.readStates(e).getMany(),
                 i = performance.now();
               return (
-                H5.log(
+                H4.log(
                   `asynchronously loaded in ${i - t}ms (readStates: ${n.length})`,
                 ),
                 n
@@ -101952,7 +101967,7 @@ ${a}`);
               null != this.readStateVersion &&
                 (null != e.version
                   ? (this.readStateVersion = e.version)
-                  : H5.log("Received null read states version", e));
+                  : H4.log("Received null read states version", e));
             }
             handleWriteCaches(e, t) {
               let n = Mx.Ay.getAllReadStates(!1);
@@ -101971,25 +101986,25 @@ ${a}`);
                     a.has(e.channelId) &&
                       1 === cu.default.compare(e._lastMessageId, i) &&
                       (i = e._lastMessageId));
-                HK.A.nonGuildVersionsTransaction(e).putAll([
+                Hz.A.nonGuildVersionsTransaction(e).putAll([
                   { id: "highest_last_message_id", versionString: t },
                   { id: "private_channels_version", versionString: i },
                   { id: "read_state_version", version: this.readStateVersion },
                 ]);
               }
-              let i = HK.A.readStatesTransaction(e);
+              let i = Hz.A.readStatesTransaction(e);
               i.delete(),
                 n.forEach((e) => i.put(`${e.type}-${e.channelId}`, e));
             }
           })(),
-          H4 = new ez.A("ReadStates"),
-          H7 = new (class {
+          H8 = new ez.A("ReadStates"),
+          H9 = new (class {
             async getAll(e) {
               let t = performance.now(),
-                n = await HK.A.userGuildSettings(e).getMany(),
+                n = await Hz.A.userGuildSettings(e).getMany(),
                 i = performance.now();
               return (
-                H4.log(
+                H8.log(
                   `asynchronously loaded in ${i - t}ms (userGuildSettings: ${n.length})`,
                 ),
                 n
@@ -102003,7 +102018,7 @@ ${a}`);
             resetInMemoryState() {}
             handleConnectionOpen(e, t) {
               e.userGuildSettings.partial ||
-                HK.A.userGuildSettingsTransaction(t).delete(),
+                Hz.A.userGuildSettingsTransaction(t).delete(),
                 this.write(
                   e.userGuildSettings.entries,
                   e.userGuildSettings.version,
@@ -102015,7 +102030,7 @@ ${a}`);
               null != n && this.write(e.userGuildSettings, n, t);
             }
             write(e, t, n) {
-              let i = HK.A.userGuildSettingsTransaction(n);
+              let i = Hz.A.userGuildSettingsTransaction(n);
               for (let t of e) {
                 let e = {
                   ...(0, MY.wn)(t.guild_id),
@@ -102024,15 +102039,15 @@ ${a}`);
                 };
                 i.put(t.guild_id ?? "dm-sentinel", e);
               }
-              HK.A.nonGuildVersionsTransaction(n).put({
+              Hz.A.nonGuildVersionsTransaction(n).put({
                 id: "user_guild_settings_version",
                 version: t,
               });
             }
           })();
-        var H8 = n(45773);
-        let H9 = new ez.A("UserSettingsProto");
-        class je {
+        var je = n(45773);
+        let jt = new ez.A("UserSettingsProto");
+        class jn {
           actions = {
             CONNECTION_OPEN: () => this.throttledOnChange(),
             USER_SETTINGS_PROTO_UPDATE: () => this.throttledOnChange(),
@@ -102042,22 +102057,22 @@ ${a}`);
           };
           async getAll(e) {
             let t = performance.now(),
-              n = await HK.A.userSettings(e).getMany(),
+              n = await Hz.A.userSettings(e).getMany(),
               i = performance.now();
-            H9.verbose(`loaded in ${i - t}ms (settings: ${n.length})`);
+            jt.verbose(`loaded in ${i - t}ms (settings: ${n.length})`);
             let r = {};
             for (let e of n) r[e.id] = e.value;
             return r;
           }
           handleUserSettingsProtoChange = () => {
             let e = ei.default.getId(),
-              t = H8.A.database(e);
+              t = je.A.database(e);
             t?.transaction((e) => {
               let t = eL.A.computeState(),
-                n = HK.A.userSettingsTransaction(e);
+                n = Hz.A.userSettingsTransaction(e);
               for (let e in t) n.put({ id: Number(e), value: t[e] });
               let i = eL.A.settings.versions?.dataVersion ?? -1;
-              HK.A.nonGuildVersionsTransaction(e).put({
+              Hz.A.nonGuildVersionsTransaction(e).put({
                 id: "user_settings_version",
                 version: i,
               });
@@ -102069,20 +102084,20 @@ ${a}`);
           );
           resetInMemoryState() {}
         }
-        let jt = new je();
-        var jn = n(531743),
-          ji = n(917878),
-          jr = n(464578),
-          ja = n(736400);
-        let js = new ez.A("CacheStore"),
-          jl = !1,
-          jo = "initializing",
-          jd = 0;
-        async function jc(e, t, n) {
+        let ji = new jn();
+        var jr = n(531743),
+          ja = n(917878),
+          js = n(464578),
+          jl = n(736400);
+        let jo = new ez.A("CacheStore"),
+          jd = !1,
+          jc = "initializing",
+          ju = 0;
+        async function j_(e, t, n) {
           let i = performance.now();
           if (null == e || null == n)
             return (
-              js.verbose(
+              jo.verbose(
                 `skipped loaded messages (channel: ${n}, database: ${e}).`,
               ),
               [
@@ -102097,8 +102112,8 @@ ${a}`);
               ]
             );
           {
-            let r = await H2.Ay.startupLoad(e, t, n, j.EMb);
-            js.verbose(
+            let r = await H5.Ay.startupLoad(e, t, n, j.EMb);
+            jo.verbose(
               `loaded ${r.messages.length} messages (guild: ${t}, channel: ${n}).`,
             );
             let a = {
@@ -102109,9 +102124,9 @@ ${a}`);
               messages: r.messages,
             };
             return (
-              ji.A.recordChannelFetchedLocal(
+              ja.A.recordChannelFetchedLocal(
                 n,
-                ji.a,
+                ja.a,
                 null,
                 null,
                 j.EMb,
@@ -102121,45 +102136,45 @@ ${a}`);
             );
           }
         }
-        async function ju(e, t, n) {
-          js.verbose("loading early cache");
+        async function jE(e, t, n) {
+          jo.verbose("loading early cache");
           let i = sW.A.getSocket();
           i.connect();
           let r = ic.A.getGuildId() ?? null,
             a = ny.Ay.getChannelId() ?? null,
             s = performance.now(),
-            l = jr.A.loadCachedMessages.measureAsyncWithoutNesting(() =>
-              jc(e, r, a),
+            l = js.A.loadCachedMessages.measureAsyncWithoutNesting(() =>
+              j_(e, r, a),
             ),
-            o = jr.A.fetchGuildCache.measureAsync(() => jE(e, n)),
-            d = jr.A.fetchGuildCache.measureAsync(() => jA(e, n)),
+            o = js.A.fetchGuildCache.measureAsync(() => jh(e, n)),
+            d = js.A.fetchGuildCache.measureAsync(() => jf(e, n)),
             c =
               null != e
-                ? HH.A.timeAsync(
+                ? HW.A.timeAsync(
                     "\uD83D\uDCBE",
                     "cache: private_channels",
-                    () => jn.A.getAsync(e, null),
+                    () => jr.A.getAsync(e, null),
                   )
                 : Promise.resolve([]),
             u =
               null == e
                 ? Promise.resolve({})
-                : HH.A.timeAsync("\uD83D\uDCBE", "cache: user_settings", () =>
-                    jt.getAll(e),
+                : HW.A.timeAsync("\uD83D\uDCBE", "cache: user_settings", () =>
+                    ji.getAll(e),
                   ),
             _ =
               null == e
                 ? Promise.resolve([])
-                : HH.A.timeAsync("\uD83D\uDCBE", "cache: read_states", () =>
-                    H6.getAll(e),
+                : HW.A.timeAsync("\uD83D\uDCBE", "cache: read_states", () =>
+                    H7.getAll(e),
                   ),
             E =
               null == e
                 ? Promise.resolve([])
-                : HH.A.timeAsync(
+                : HW.A.timeAsync(
                     "\uD83D\uDCBE",
                     "cache: user_guild_settings",
-                    () => H7.getAll(e),
+                    () => H9.getAll(e),
                   ),
             [[A, h], f, I, p, T, m, g] = await Promise.all([
               l,
@@ -102172,11 +102187,11 @@ ${a}`);
             ]),
             S = performance.now() - s;
           if (
-            (js.verbose(`cache loaded in ${S}ms (channel_history ${A}ms)`),
+            (jo.verbose(`cache loaded in ${S}ms (channel_history ${A}ms)`),
             null == h)
           )
             return (
-              js.verbose("finished without dispatching CACHE_LOADED"),
+              jo.verbose("finished without dispatching CACHE_LOADED"),
               [!1, null, 0]
             );
           let N = Object.fromEntries(h.members.map((e) => [e.userId, e])),
@@ -102185,7 +102200,7 @@ ${a}`);
           return (
             await new Promise((e, t) =>
               eE.Ay.Emitter.batched(() => {
-                HH.A.time("\uD83D\uDCBE", "Dispatch Mini Cache", () =>
+                HW.A.time("\uD83D\uDCBE", "Dispatch Mini Cache", () =>
                   k.h
                     .dispatch({
                       type: "CACHE_LOADED",
@@ -102204,7 +102219,7 @@ ${a}`);
                     })
                     .then(e, t),
                 ),
-                  HH.A.time(
+                  HW.A.time(
                     "\uD83D\uDCBE",
                     "socket.processFirstQueuedDispatch()",
                     () =>
@@ -102214,7 +102229,7 @@ ${a}`);
                   );
               }),
             ),
-            js.verbose(`early_cache_summary: (
+            jo.verbose(`early_cache_summary: (
         ok: true
         meta:
           auth_user_id: ${t}
@@ -102239,106 +102254,106 @@ ${a}`);
             read_states: ${m.length}
             user_guild_settings: ${g.length}
       )`),
-            jr.A.setEarlyCacheInfo({ guilds: f.length }),
-            js.verbose("finished dispatching CACHE_LOADED"),
+            js.A.setEarlyCacheInfo({ guilds: f.length }),
+            jo.verbose("finished dispatching CACHE_LOADED"),
             [!0, C ? (O ?? null) : null, p.length]
           );
         }
-        let j_ = !1;
-        async function jE(e, t) {
+        let jA = !1;
+        async function jh(e, t) {
           if (null == e) return [];
           switch (t.page) {
             case "private-channels":
             case "guild-channels":
-              j_ = !0;
+              jA = !0;
               break;
             case "other":
-              "@me" === t.guildId && (j_ = !0);
+              "@me" === t.guildId && (jA = !0);
           }
-          if (j_)
+          if (jA)
             return (
-              (await (0, Hj.kk)(() =>
-                HH.A.timeAsync("\uD83D\uDCBE", "cache: guilds", () =>
-                  H0.getAsync(e),
+              (await (0, HY.kk)(() =>
+                HW.A.timeAsync("\uD83D\uDCBE", "cache: guilds", () =>
+                  H2.getAsync(e),
                 ),
               )) ?? []
             );
           let n =
-            (await H3.A.getCommittedVersions()).initial_guild_id ?? t.guildId;
+            (await H6.A.getCommittedVersions()).initial_guild_id ?? t.guildId;
           if (null == n || "@me" === n) return [];
-          let i = await (0, Hj.kk)(() => H0.getOneAsync(e, n));
+          let i = await (0, HY.kk)(() => H2.getOneAsync(e, n));
           return null != i ? [i] : [];
         }
-        async function jA(e, t) {
+        async function jf(e, t) {
           if (null == e)
             return Promise.resolve({ channels: null, guildId: null });
-          let n = (await H3.A.getCommittedVersions()).initial_guild_id;
+          let n = (await H6.A.getCommittedVersions()).initial_guild_id;
           if (
             (null == n && "guild-channels" === t.page && (n = t.guildId),
             null == e || null == n)
           )
             return (
-              js.verbose(
+              jo.verbose(
                 `skipped loading initial guild (guild: ${n}, database: ${e})`,
               ),
               Promise.resolve({ channels: null, guildId: null })
             );
           let i = n;
           return {
-            channels: await (0, Hj.kk)(() => jn.A.getAsync(e, i)),
+            channels: await (0, HY.kk)(() => jr.A.getAsync(e, i)),
             guildId: n,
           };
         }
-        async function jh(e, t, n, i) {
-          js.verbose("loading late lazy cache");
-          let [r, a, s] = await jr.A.fetchLazyCache.measureAsync(() =>
+        async function jI(e, t, n, i) {
+          jo.verbose("loading late lazy cache");
+          let [r, a, s] = await js.A.fetchLazyCache.measureAsync(() =>
               Promise.all([
-                (0, Hj.kk)(() =>
+                (0, HY.kk)(() =>
                   null != e
-                    ? HH.A.timeAsync(
+                    ? HW.A.timeAsync(
                         "\uD83D\uDCBE",
                         "cache: cache_version",
-                        () => H1.A.okAsync(e),
+                        () => H3.A.okAsync(e),
                       )
                     : Promise.resolve(!0),
                 ),
-                (0, Hj.kk)(() =>
-                  null == e || j_
+                (0, HY.kk)(() =>
+                  null == e || jA
                     ? Promise.resolve([])
-                    : HH.A.timeAsync("\uD83D\uDCBE", "cache: lazy guilds", () =>
-                        H0.getAsync(e),
+                    : HW.A.timeAsync("\uD83D\uDCBE", "cache: lazy guilds", () =>
+                        H2.getAsync(e),
                       ),
                 ),
-                (0, Hj.kk)(() =>
+                (0, HY.kk)(() =>
                   null != e
-                    ? HH.A.timeAsync(
+                    ? HW.A.timeAsync(
                         "\uD83D\uDCBE",
                         "cache: basic_channels",
-                        () => HX.getAsync(e),
+                        () => HZ.getAsync(e),
                       )
                     : Promise.resolve({ all: [], stale: [], channels: [] }),
                 ),
               ]),
             ),
-            l = await jr.A.fetchStaleChannels.measureAsync(() =>
+            l = await js.A.fetchStaleChannels.measureAsync(() =>
               null != e && null != s && s.stale.length > 0
-                ? (0, Hj.kk)(() => {
+                ? (0, HY.kk)(() => {
                     var t;
                     return (
                       (t = s.stale),
-                      js.verbose(
+                      jo.verbose(
                         `loading stale guild channels (count: ${t.length}, ids: ${t.join(", ")})`,
                       ),
                       Promise.all(
-                        t.map((t) => jn.A.getAsync(e, t).then((e) => [t, e])),
+                        t.map((t) => jr.A.getAsync(e, t).then((e) => [t, e])),
                       )
                     );
                   })
                 : Promise.resolve([]),
             );
           M.iQ.getCachedEnabled()
-            ? js.verbose("loadLateLazyCache: not yielding to react")
-            : (js.verbose("loadLateLazyCache: yielding to react"),
+            ? jo.verbose("loadLateLazyCache: not yielding to react")
+            : (jo.verbose("loadLateLazyCache: yielding to react"),
               await (function () {
                 let e =
                   arguments.length > 0 && void 0 !== arguments[0]
@@ -102353,9 +102368,9 @@ ${a}`);
                   });
                 });
               })((0, eB.isIOS)() ? 0 : void 0)),
-            jr.A.loadLazyCache.recordStart();
+            js.A.loadLazyCache.recordStart();
           let o = sW.A.getSocket();
-          jf(() => {
+          jp(() => {
             let d = performance.now();
             if (!1 === r) {
               k.h.dispatch({ type: "CLEAR_CACHES", reason: "database:not_ok" }),
@@ -102363,7 +102378,7 @@ ${a}`);
               return;
             }
             if (null == a || null == s || null == l) {
-              js.log(`couldn't load database item (
+              jo.log(`couldn't load database item (
           database: ${null != e}
           basic_channels: ${null != s}
           guild_channels: ${null != l}
@@ -102377,7 +102392,7 @@ ${a}`);
               return;
             }
             if (null == r && (a.length > 0 || s.all.length > 0)) {
-              js.log("kv_cache was not ok (null version with values)"),
+              jo.log("kv_cache was not ok (null version with values)"),
                 k.h.dispatch({
                   type: "CLEAR_CACHES",
                   reason: "database:versionless",
@@ -102394,13 +102409,13 @@ ${a}`);
               basicGuildChannels: s.channels,
               initialGuildId: n,
             };
-            jr.A.deserializeCache.measure(() => {
-              null != c.channels && (0, ja.Ay)(c.channels),
-                null != c.privateChannels && (0, ja.Ay)(c.privateChannels),
-                null != c.guildChannels && (0, ja.X3)(c.guildChannels);
+            js.A.deserializeCache.measure(() => {
+              null != c.channels && (0, jl.Ay)(c.channels),
+                null != c.privateChannels && (0, jl.Ay)(c.privateChannels),
+                null != c.guildChannels && (0, jl.X3)(c.guildChannels);
             }),
-              jr.A.dispatchLazyCache.measure(() => k.h.dispatch(c)),
-              js.verbose(
+              js.A.dispatchLazyCache.measure(() => k.h.dispatch(c)),
+              jo.verbose(
                 `late lazy cache loaded (ok: true, took: ${performance.now() - d}ms)`,
               ),
               o.addAnalytics({ usedCacheAtStartup: !0 });
@@ -102419,7 +102434,7 @@ ${a}`);
               }, 0),
               h = E - A,
               f = 0 === s.stale.length ? "" : ` \xb7 ${s.stale.join(", ")}`;
-            js.verbose(`lazy_cache_summary: (
+            jo.verbose(`lazy_cache_summary: (
         ok: true
         meta:
           auth_user_id: ${t}
@@ -102437,7 +102452,7 @@ ${a}`);
             full_channels (guilds_with_stale_basic_channels):
               total: ${u} (${l.length} guilds)
       )`),
-              jr.A.setLazyCacheInfo({
+              js.A.setLazyCacheInfo({
                 guilds: a.length,
                 privateChannels: i,
                 basicChannels: E,
@@ -102447,37 +102462,37 @@ ${a}`);
               });
           });
         }
-        function jf(e) {
+        function jp(e) {
           let t = sW.A.getSocket(),
             n = !1;
           eE.Ay.Emitter.batched(() => {
             try {
               if ((e(), !t.dispatcher.hasStuffToDispatchNow())) {
-                js.verbose("Unpausing Dispatch Queue"),
+                jo.verbose("Unpausing Dispatch Queue"),
                   t.dispatcher.unpauseDispatchQueue();
                 return;
               }
               (n = !0),
-                jr.A.loadLazyCache.recordEnd(),
-                js.verbose("Processing First Queued Dispatch"),
+                js.A.loadLazyCache.recordEnd(),
+                jo.verbose("Processing First Queued Dispatch"),
                 t.dispatcher.processFirstQueuedDispatch(
                   new Set(["READY", "INITIAL_GUILD"]),
                 ),
                 setTimeout(() => {
-                  js.verbose("Unpausing Dispatch Queue"),
+                  jo.verbose("Unpausing Dispatch Queue"),
                     t.dispatcher.unpauseDispatchQueue();
                 }, 100);
             } catch (e) {
-              js.warn("Lazy cache has encountered error", e),
+              jo.warn("Lazy cache has encountered error", e),
                 k.h.dispatch({
                   type: "RESET_SOCKET",
                   args: { error: e, action: "LazyCache" },
                 });
             }
           }),
-            n || jr.A.loadLazyCache.recordEnd();
+            n || js.A.loadLazyCache.recordEnd();
         }
-        class jI extends eE.Ay.Store {
+        class jT extends eE.Ay.Store {
           static displayName = "CacheStore";
           initialize() {
             this.waitFor(ei.default, sW.A, ny.Ay, ic.A),
@@ -102490,15 +102505,15 @@ ${a}`);
             return "no-cache";
           }
           get lastWriteTime() {
-            return jd;
+            return ju;
           }
           canWriteCaches(e) {
-            return (0, Hv.wR)()
-              ? jl
-                ? (js.log("Not writing cache because caches cleared"), !1)
+            return (0, HM.wR)()
+              ? jd
+                ? (jo.log("Not writing cache because caches cleared"), !1)
                 : !!e ||
-                  (js.log("Not writing cache because never connected"), !1)
-              : (js.log("Not writing cache because not authenticated"), !1);
+                  (jo.log("Not writing cache because never connected"), !1)
+              : (jo.log("Not writing cache because not authenticated"), !1);
           }
           async loadCacheAsync(e, t) {
             let n,
@@ -102514,11 +102529,11 @@ ${a}`);
                     r[a] = arguments[a];
                   return i || ((i = !0), (n = t(...r))), n;
                 });
-            jr.A.setInitialPage(e.page);
+            js.A.setInitialPage(e.page);
             let a = e.guildId;
             if (
-              (jr.A.setInitialGuildId(null != a && "@me" !== a ? a : null),
-              "initializing" !== jo)
+              (js.A.setInitialGuildId(null != a && "@me" !== a ? a : null),
+              "initializing" !== jc)
             ) {
               r(),
                 setTimeout(
@@ -102529,19 +102544,19 @@ ${a}`);
             }
             try {
               let t = ei.default.getId(),
-                n = H8.A.carefullyOpenDatabase(t),
-                [i, a, s] = await jr.A.loadMiniCache.measureAsync(() =>
-                  ju(n, t, e),
+                n = je.A.carefullyOpenDatabase(t),
+                [i, a, s] = await js.A.loadMiniCache.measureAsync(() =>
+                  jE(n, t, e),
                 );
               i
-                ? (r(), await jh(n, t, a, s))
+                ? (r(), await jI(n, t, a, s))
                 : (r(),
-                  await (jf(() =>
+                  await (jp(() =>
                     k.h.dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" }),
                   ),
                   Promise.resolve()));
             } catch (e) {
-              js.error(
+              jo.error(
                 "clearing cache. exception encountered while loading cache.",
                 e,
                 e.stack,
@@ -102554,43 +102569,43 @@ ${a}`);
             }
           }
         }
-        new jI(k.h, {});
-        let jp = Object.freeze({ online: null, total: null }),
-          jT = {},
-          jm = {},
-          jg = null;
-        class jS extends eE.Ay.PersistedStore {
+        new jT(k.h, {});
+        let jm = Object.freeze({ online: null, total: null }),
+          jg = {},
+          jS = {},
+          jN = null;
+        class jC extends eE.Ay.PersistedStore {
           static displayName = "ChannelMemberCountStore";
           static persistKey = "channelMemberCounts";
           initialize(e) {
-            this.waitFor(sW.A, nR.A), (jm = e ?? jT);
+            this.waitFor(sW.A, nR.A), (jS = e ?? jg);
           }
           getState() {
-            return jm;
+            return jS;
           }
           getMemberCount(e) {
-            return jm[e] ?? jp;
+            return jS[e] ?? jm;
           }
           requestCount(e, t) {
-            (jg = { guildId: e, channelId: t }),
+            (jN = { guildId: e, channelId: t }),
               sW.A.getSocket().requestChannelMemberCount(e, t);
           }
         }
-        new jS(k.h, {
+        new jC(k.h, {
           CONNECTION_OPEN: function () {
-            null != jg &&
+            null != jN &&
               sW.A.getSocket().requestChannelMemberCount(
-                jg.guildId,
-                jg.channelId,
+                jN.guildId,
+                jN.channelId,
               ),
-              cu.default.keys(jm).forEach((e) => {
-                null == nR.A.getChannel(e) && delete jm[e];
+              cu.default.keys(jS).forEach((e) => {
+                null == nR.A.getChannel(e) && delete jS[e];
               });
           },
           CHANNEL_MEMBER_COUNT_UPDATE: function (e) {
             let { channelId: t, online: n, total: i } = e;
             return (
-              (null != n || null != i) && (jm[t] = { online: n, total: i }), !0
+              (null != n || null != i) && (jS[t] = { online: n, total: i }), !0
             );
           },
         }),
@@ -102618,66 +102633,66 @@ ${a}`);
           n(823448),
           n(499118),
           n(351022);
-        let jN = {},
-          jC = {},
-          jO = {},
-          jR = {};
-        function jL(e) {
-          let t = jC[e];
+        let jO = {},
+          jR = {},
+          jL = {},
+          jy = {};
+        function jD(e) {
+          let t = jR[e];
           if (null == t) return;
           let n = cu.default.fromTimestamp(Date.now() - 9e5),
             i = iV().findIndex(t, (e) => cu.default.compare(e.id, n) > 0);
-          if (-1 === i) jC[e] = [];
+          if (-1 === i) jR[e] = [];
           else {
             let n = Math.max(i, t.length - 26);
-            jC[e] = iV().slice(t, n);
+            jR[e] = iV().slice(t, n);
           }
-          jO[e] = Date.now();
+          jL[e] = Date.now();
         }
-        function jy(e, t, n, i) {
-          jN[e].add(t);
-          let r = jO[t];
-          (null == r || r + 3e5 > Date.now()) && jL(t),
-            null == jC[t] && (jC[t] = []),
-            jC[t].push({ id: n, userId: i });
+        function jv(e, t, n, i) {
+          jO[e].add(t);
+          let r = jL[t];
+          (null == r || r + 3e5 > Date.now()) && jD(t),
+            null == jR[t] && (jR[t] = []),
+            jR[t].push({ id: n, userId: i });
         }
-        function jD(e) {
+        function jb(e) {
           let { channel: t } = e;
-          delete jC[t.id], delete jO[t.id];
+          delete jR[t.id], delete jL[t.id];
         }
-        class jv extends eE.Ay.Store {
+        class jM extends eE.Ay.Store {
           initialize() {
             this.waitFor(nR.A, ic.A);
           }
           static displayName = "ActiveChannelsStore";
           getActiveChannelsFetchStatus(e) {
-            return jR[e];
+            return jy[e];
           }
           getActiveChannelIds(e) {
-            return jN[e];
+            return jO[e];
           }
           getChannelMessageData(e) {
-            return jC[e];
+            return jR[e];
           }
           shouldFetch(e) {
-            return null == jN[e] && !jR[e]?.loading;
+            return null == jO[e] && !jy[e]?.loading;
           }
         }
-        new jv(k.h, {
+        new jM(k.h, {
           CHANNEL_SELECT: function (e) {
             let { channelId: t, guildId: n } = e;
             if (!(0, sn.mP)(t) || null == n) return !1;
-            let i = jN[n];
+            let i = jO[n];
             if (null == i) return !1;
             i.forEach((e) => {
-              jL(e), jC[e]?.length === 0 && delete jC[e];
+              jD(e), jR[e]?.length === 0 && delete jR[e];
             });
             let r = iV()
               .chain(Array.from(i))
-              .filter((e) => e in jC)
-              .sortBy((e) => -(jC[e]?.length ?? 0))
+              .filter((e) => e in jR)
+              .sortBy((e) => -(jR[e]?.length ?? 0))
               .value();
-            jN[n] = new Set(r);
+            jO[n] = new Set(r);
           },
           MESSAGE_CREATE: function (e) {
             let {
@@ -102690,33 +102705,33 @@ ${a}`);
             let a = nR.A.getChannel(t);
             if (null == a) return !1;
             let s = a.guild_id;
-            if (null == s || null == jN[s]) return !1;
-            jy(s, t, n.id, n.author?.id);
+            if (null == s || null == jO[s]) return !1;
+            jv(s, t, n.id, n.author?.id);
           },
           GUILD_DELETE: function (e) {
             let { guild: t } = e;
-            delete jN[t.id];
+            delete jO[t.id];
           },
-          CHANNEL_DELETE: jD,
-          THREAD_DELETE: jD,
+          CHANNEL_DELETE: jb,
+          THREAD_DELETE: jb,
           ACTIVE_CHANNELS_FETCH_START: function (e) {
             let { guildId: t } = e;
-            jR[t] = { loading: !0, error: null, fetchedAt: Date.now() };
+            jy[t] = { loading: !0, error: null, fetchedAt: Date.now() };
           },
           ACTIVE_CHANNELS_FETCH_SUCCESS: function (e) {
             let { guildId: t, channels: n } = e;
-            (jR[t] = { loading: !1, error: null, fetchedAt: Date.now() }),
-              (jN[t] = new Set()),
+            (jy[t] = { loading: !1, error: null, fetchedAt: Date.now() }),
+              (jO[t] = new Set()),
               n.forEach((e) => {
                 let { channel_id: n, messages: i } = e;
                 i.forEach((e) => {
-                  jy(t, n, e.message_id, e.user_id);
+                  jv(t, n, e.message_id, e.user_id);
                 });
               });
           },
           ACTIVE_CHANNELS_FETCH_FAILURE: function (e) {
             let { guildId: t, error: n } = e;
-            jR[t] = { loading: !1, error: n, fetchedAt: null };
+            jy[t] = { loading: !1, error: n, fetchedAt: null };
           },
           CONNECTION_OPEN: function () {},
         }),
@@ -102725,58 +102740,58 @@ ${a}`);
           n(591552),
           n(713125),
           n(871109);
-        var jb = n(936649);
-        let jM = {};
-        function jP(e, t) {
-          let n = jM[e];
-          return !(null == n || n.has(t)) && ((jM[e] = new Set(n.add(t))), !0);
+        var jP = n(936649);
+        let jU = {};
+        function jw(e, t) {
+          let n = jU[e];
+          return !(null == n || n.has(t)) && ((jU[e] = new Set(n.add(t))), !0);
         }
-        class jU extends eE.Ay.PersistedStore {
+        class jG extends eE.Ay.PersistedStore {
           static displayName = "GuildProgressStore";
           static persistKey = "GuildProgressStore";
           initialize(e) {
             this.waitFor(ei.default, nR.A, e6.A),
-              (jM = {}),
+              (jU = {}),
               null != e &&
                 cu.default.keys(e).forEach((t) => {
                   let n = e[t];
                   null != n &&
                     "function" == typeof n[Symbol.iterator] &&
-                    (jM[t] = new Set(n));
+                    (jU[t] = new Set(n));
                 });
           }
           getProgress(e) {
-            return jM[e];
+            return jU[e];
           }
           hasProgress(e) {
-            let t = jM[e];
-            return null != t && !t.has(jb.gj.DISMISSED);
+            let t = jU[e];
+            return null != t && !t.has(jP.gj.DISMISSED);
           }
           getState() {
-            return jM;
+            return jU;
           }
         }
-        new jU(k.h, {
+        new jG(k.h, {
           CONNECTION_OPEN: function () {
             let e = [];
-            cu.default.keys(jM).forEach((t) => {
-              jM[t].has(jb.gj.COMPLETED) && e.push(t);
+            cu.default.keys(jU).forEach((t) => {
+              jU[t].has(jP.gj.COMPLETED) && e.push(t);
             }),
-              e.forEach((e) => jP(e, jb.gj.DISMISSED));
+              e.forEach((e) => jw(e, jP.gj.DISMISSED));
           },
           GUILD_PROGRESS_INITIALIZE: function (e) {
             let { guildId: t } = e;
-            null == jM[t] && (jM[t] = new Set()),
-              jM[t].has(jb.gj.COMPLETED) || jM[t].delete(jb.gj.DISMISSED);
+            null == jU[t] && (jU[t] = new Set()),
+              jU[t].has(jP.gj.COMPLETED) || jU[t].delete(jP.gj.DISMISSED);
           },
           GUILD_PROGRESS_COMPLETED_SEEN: function (e) {
             let { guildId: t } = e;
-            if (null == jM[t]) return !1;
-            jM[t] = new Set(jM[t].add(jb.gj.COMPLETED));
+            if (null == jU[t]) return !1;
+            jU[t] = new Set(jU[t].add(jP.gj.COMPLETED));
           },
           GUILD_PROGRESS_DISMISS: function (e) {
             let { guildId: t } = e;
-            return jP(t, jb.gj.DISMISSED);
+            return jw(t, jP.gj.DISMISSED);
           },
           GUILD_CREATE: function (e) {
             let {
@@ -102785,17 +102800,17 @@ ${a}`);
               i = e6.A.getGuild(t);
             if (null == i) return !1;
             i.ownerId === ei.default.getId() &&
-              null != jM[i.id] &&
-              (null != i.icon && jM[i.id].add(jb.gj.AVATAR),
-              n > 1 && jM[i.id].add(jb.gj.INVITE));
+              null != jU[i.id] &&
+              (null != i.icon && jU[i.id].add(jP.gj.AVATAR),
+              n > 1 && jU[i.id].add(jP.gj.INVITE));
           },
           CHANNEL_CREATE: function (e) {
             let { channel: t } = e;
             return (
               null != t &&
               null != t.guild_id &&
-              null != jM[t.guild_id] &&
-              jP(t.guild_id, jb.gj.CHANNEL)
+              null != jU[t.guild_id] &&
+              jw(t.guild_id, jP.gj.CHANNEL)
             );
           },
           CHANNEL_UPDATES: function (e) {
@@ -102804,8 +102819,8 @@ ${a}`);
             for (let e of t)
               null != e &&
                 null != e.guild_id &&
-                null != jM[e.guild_id] &&
-                !1 !== jP(e.guild_id, jb.gj.CHANNEL) &&
+                null != jU[e.guild_id] &&
+                !1 !== jw(e.guild_id, jP.gj.CHANNEL) &&
                 (n = !0);
             return n;
           },
@@ -102814,9 +102829,9 @@ ${a}`);
             return (
               null != t &&
               null != t.id &&
-              null != jM[t.id] &&
+              null != jU[t.id] &&
               null != t.icon &&
-              jP(t.id, jb.gj.AVATAR)
+              jw(t.id, jP.gj.AVATAR)
             );
           },
           MESSAGE_CREATE: function (e) {
@@ -102825,13 +102840,13 @@ ${a}`);
             return (
               n.author?.id === ei.default.getId() &&
               null != i &&
-              null != jM[i.guild_id] &&
-              jP(i.guild_id, jb.gj.MESSAGE)
+              null != jU[i.guild_id] &&
+              jw(i.guild_id, jP.gj.MESSAGE)
             );
           },
           GUILD_MEMBER_LIST_UPDATE: function (e) {
             let { guildId: t, memberCount: n } = e;
-            return null != jM[t] && n > 1 && jP(t, jb.gj.INVITE);
+            return null != jU[t] && n > 1 && jw(t, jP.gj.INVITE);
           },
         }),
           n(636194),
@@ -102841,9 +102856,9 @@ ${a}`);
           n(34162),
           n(331887),
           n(409686);
-        var jw = n(635377),
-          jG = n.n(jw),
-          jx =
+        var jx = n(635377),
+          jk = n.n(jx),
+          jF =
             (((L = {}).LOADING = "loading"),
             (L.LOADED = "loaded"),
             (L.EMPTY = "empty"),
@@ -102851,47 +102866,47 @@ ${a}`);
             (L.ERROR = "error"),
             L);
         iT.A.Millis.MINUTE, iT.A.Millis.MINUTE;
-        let jk = new (jG())({ max: 10 });
-        function jF(e) {
-          let t = jk.get(e);
+        let jB = new (jk())({ max: 10 });
+        function jV(e) {
+          let t = jB.get(e);
           if (null != t) return t;
-          let n = new (jG())({ max: 5 });
-          return jk.set(e, n), n;
+          let n = new (jk())({ max: 5 });
+          return jB.set(e, n), n;
         }
-        function jB(e, t) {
-          return jk.peek(e)?.peek(t) ?? null;
+        function jH(e, t) {
+          return jB.peek(e)?.peek(t) ?? null;
         }
-        function jV() {
-          jk.reset();
+        function jj() {
+          jB.reset();
         }
-        class jH extends eE.Ay.Store {
+        class jW extends eE.Ay.Store {
           static displayName = "SmartSearchResultsStore";
           initialize() {
             this.waitFor(iQ.A, eF.default);
           }
           getAnswer(e, t) {
-            return jB(e, t)?.smartSearchResult ?? null;
+            return jH(e, t)?.smartSearchResult ?? null;
           }
           getStatus(e, t) {
             return this.getAnswer(e, t)?.status ?? null;
           }
           hasAnswer(e, t) {
-            return null != jB(e, t);
+            return null != jH(e, t);
           }
           getResultFeedback(e, t) {
-            return jB(e, t)?.hasPositiveFeedback ?? null;
+            return jH(e, t)?.hasPositiveFeedback ?? null;
           }
         }
-        function jj(e) {
+        function jY(e) {
           return [...e].sort().join("|");
         }
-        new jH(k.h, {
+        new jW(k.h, {
           SMART_SEARCH_FETCH_START: function (e) {
             let { smartSearchQuery: t } = e,
               { requestKey: n, guildId: i, queryText: r, channelIds: a } = t;
-            jF(i).set(n, {
+            jV(i).set(n, {
               smartSearchResult: {
-                status: jx.LOADING,
+                status: jF.LOADING,
                 queryText: r,
                 answerText: "",
                 citations: [],
@@ -102908,7 +102923,7 @@ ${a}`);
                 citations: r,
               } = e,
               { requestKey: a, guildId: s, queryText: l, channelIds: o } = t;
-            jF(s).set(a, {
+            jV(s).set(a, {
               smartSearchResult: {
                 status: n,
                 queryText: l,
@@ -102922,7 +102937,7 @@ ${a}`);
           SMART_SEARCH_FETCH_FAILURE: function (e) {
             let { smartSearchQuery: t, status: n } = e,
               { requestKey: i, guildId: r, queryText: a, channelIds: s } = t;
-            jF(r).set(i, {
+            jV(r).set(i, {
               smartSearchResult: {
                 status: n,
                 queryText: a,
@@ -102936,19 +102951,19 @@ ${a}`);
           SMART_SEARCH_SET_RESULT_FEEDBACK: function (e) {
             let { smartSearchQuery: t, hasPositiveFeedback: n } = e,
               { requestKey: i, guildId: r } = t,
-              a = jB(r, i);
+              a = jH(r, i);
             if (null == a || a.hasPositiveFeedback === n) return !1;
             a.hasPositiveFeedback = n;
           },
           GUILD_DELETE: function (e) {
             let { guild: t } = e;
-            if (!jk.has(t.id)) return !1;
-            jk.del(t.id);
+            if (!jB.has(t.id)) return !1;
+            jB.del(t.id);
           },
           CHANNEL_DELETE: function (e) {
             let { channel: t } = e;
             if (null == t.guild_id) return !1;
-            let n = jk.peek(t.guild_id);
+            let n = jB.peek(t.guild_id);
             if (null == n) return !1;
             let i = [];
             if (
@@ -102966,66 +102981,66 @@ ${a}`);
               n.del(e);
             });
           },
-          CONNECTION_OPEN: jV,
-          LOGOUT: jV,
+          CONNECTION_OPEN: jj,
+          LOGOUT: jj,
         }),
           n(988665),
           n(822382),
           n(768570),
           j.LWr.FILTER_IN,
           j.LWr.ANSWER_IN;
-        let jW = [],
-          jY = new (jG())({ max: 5 }),
-          jK = new (jG())({ max: 5 });
-        function j$(e, t, n) {
+        let jK = [],
+          j$ = new (jk())({ max: 5 }),
+          jz = new (jk())({ max: 5 });
+        function jX(e, t, n) {
           let i = e.get(t);
           if (null != i) return i;
           let r = {
             guildId: n,
             currentIndex: 0,
-            suggestedSearches: jW,
+            suggestedSearches: jK,
             isLoading: !1,
             requestId: null,
           };
           return e.set(t, r), r;
         }
-        function jz(e) {
+        function jq(e) {
           let { guildId: t, channelIds: n } = e;
           return 0 === n.length
-            ? (jY.peek(t) ?? null)
-            : (jK.peek(jj(n)) ?? null);
+            ? (j$.peek(t) ?? null)
+            : (jz.peek(jY(n)) ?? null);
         }
-        function jX(e) {
+        function jZ(e) {
           let { guildId: t, channelIds: n } = e;
-          return 0 === n.length ? j$(jY, t, t) : j$(jK, jj(n), t);
+          return 0 === n.length ? jX(j$, t, t) : jX(jz, jY(n), t);
         }
-        function jq(e, t) {
-          if (0 === e.suggestedSearches.length) return jW;
+        function jQ(e, t) {
+          if (0 === e.suggestedSearches.length) return jK;
           if (e.suggestedSearches.length < t) return e.suggestedSearches;
           let n = e.suggestedSearches.slice(e.currentIndex, e.currentIndex + t),
             i = (e.currentIndex + t) % e.suggestedSearches.length;
           return i < t && n.push(...e.suggestedSearches.slice(0, i)), n;
         }
-        function jZ(e, t) {
+        function jJ(e, t) {
           e.currentIndex = (e.currentIndex + t) % e.suggestedSearches.length;
         }
-        function jQ() {
-          jY.reset(), jK.reset();
+        function j0() {
+          j$.reset(), jz.reset();
         }
-        class jJ extends eE.Ay.Store {
+        class j1 extends eE.Ay.Store {
           static displayName = "SuggestedSearchStore";
           getNextSuggestions(e, t) {
-            let n = jz(e);
-            return null == n ? jW : jq(n, t);
+            let n = jq(e);
+            return null == n ? jK : jQ(n, t);
           }
           hasSuggestions(e) {
             return this.getNextSuggestions(e, 1).length > 0;
           }
           isLoadingSuggestedSearches(e) {
-            return jz(e)?.isLoading ?? !1;
+            return jq(e)?.isLoading ?? !1;
           }
           willExhaustSuggestedSearches(e, t) {
-            let n = jz(e);
+            let n = jq(e);
             return (
               null != n &&
               0 !== n.suggestedSearches.length &&
@@ -103034,13 +103049,13 @@ ${a}`);
             );
           }
           getStateForScope(e) {
-            return jz(e);
+            return jq(e);
           }
         }
-        new jJ(k.h, {
+        new j1(k.h, {
           SUGGESTED_SEARCHES_FETCH_START: function (e) {
             let { scope: t } = e;
-            jX(t).isLoading = !0;
+            jZ(t).isLoading = !0;
           },
           SUGGESTED_SEARCHES_FETCH_SUCCESS: function (e) {
             let {
@@ -103049,7 +103064,7 @@ ${a}`);
                 suggestedSearches: i,
                 windowSize: r,
               } = e,
-              a = jX(t);
+              a = jZ(t);
             if (
               ((a.isLoading = !1),
               (a.requestId = n),
@@ -103058,41 +103073,41 @@ ${a}`);
               (a.currentIndex = 0), (a.suggestedSearches = i);
               return;
             }
-            let s = jq(a, r),
+            let s = jQ(a, r),
               l = i.filter(
                 (e) => !s.some((t) => t.suggestionId === e.suggestionId),
               );
             0 === l.length
-              ? jZ(a, r)
+              ? jJ(a, r)
               : ((a.suggestedSearches = [...s, ...l]), (a.currentIndex = 0));
           },
           SUGGESTED_SEARCHES_FETCH_FAILURE: function (e) {
             let { scope: t, windowSize: n } = e,
-              i = jz(t);
+              i = jq(t);
             if (null == i) return !1;
             (i.isLoading = !1),
-              null != n && i.suggestedSearches.length > 0 && jZ(i, n);
+              null != n && i.suggestedSearches.length > 0 && jJ(i, n);
           },
           SUGGESTED_SEARCH_ADVANCE: function (e) {
             let { scope: t, windowSize: n } = e,
-              i = jz(t);
+              i = jq(t);
             if (null == i || 0 === i.suggestedSearches.length) return !1;
-            jZ(i, n);
+            jJ(i, n);
           },
           GUILD_DELETE: function (e) {
             let { guild: t } = e,
-              n = jK.keys().filter((e) => jK.peek(e)?.guildId === t.id);
-            if (!jY.has(t.id) && 0 === n.length) return !1;
-            jY.del(t.id), n.forEach((e) => jK.del(e));
+              n = jz.keys().filter((e) => jz.peek(e)?.guildId === t.id);
+            if (!j$.has(t.id) && 0 === n.length) return !1;
+            j$.del(t.id), n.forEach((e) => jz.del(e));
           },
           CHANNEL_DELETE: function (e) {
             let { channel: t } = e,
-              n = jK.keys().filter((e) => e.split("|").includes(t.id));
+              n = jz.keys().filter((e) => e.split("|").includes(t.id));
             if (0 === n.length) return !1;
-            n.forEach((e) => jK.del(e));
+            n.forEach((e) => jz.del(e));
           },
-          CONNECTION_OPEN: jQ,
-          LOGOUT: jQ,
+          CONNECTION_OPEN: j0,
+          LOGOUT: j0,
         }),
           n(121780),
           n(752755),
@@ -103103,46 +103118,46 @@ ${a}`);
           n(713132),
           n(274303),
           n(252431);
-        let j0 = [],
-          j1 = !1;
-        function j2() {
+        let j2 = [],
+          j3 = !1;
+        function j5() {
           return (
-            j0.length >= 4 &&
-            j0.some((e) => e < Date.now() - 3 * iT.A.Millis.DAY)
+            j2.length >= 4 &&
+            j2.some((e) => e < Date.now() - 3 * iT.A.Millis.DAY)
           );
         }
-        class j3 extends eE.Ay.PersistedStore {
+        class j6 extends eE.Ay.PersistedStore {
           static displayName = "HabitualDNDStore";
           static persistKey = "habitualDND";
           initialize(e) {
             this.waitFor(iJ.A),
               null != e &&
                 Array.isArray(e.sessionStartsWithDND) &&
-                (j0 = e.sessionStartsWithDND);
+                (j2 = e.sessionStartsWithDND);
           }
           showNagBar() {
-            return j1;
+            return j3;
           }
           getState() {
-            return { sessionStartsWithDND: j0 };
+            return { sessionStartsWithDND: j2 };
           }
           getTemp() {
             return { x: eR.CY.getSetting() };
           }
         }
-        new j3(k.h, {
+        new j6(k.h, {
           POST_CONNECTION_OPEN: function () {
             iJ.A.getStatus() === j.clD.DND && "0" === eR.CY.getSetting()
-              ? (j0.push(Date.now()),
-                (j0 = j0.filter((e) => e > Date.now() - 5 * iT.A.Millis.DAY)),
-                j2() &&
+              ? (j2.push(Date.now()),
+                (j2 = j2.filter((e) => e > Date.now() - 5 * iT.A.Millis.DAY)),
+                j5() &&
                   setTimeout(() => {
                     k.h.dispatch({ type: "HABITUAL_DND_CLEAR" });
                   }, 15 * iT.A.Millis.SECOND))
-              : (j0 = []);
+              : (j2 = []);
           },
           HABITUAL_DND_CLEAR: function () {
-            (j1 = !!j2()), (j0 = []);
+            (j3 = !!j5()), (j2 = []);
           },
         }),
           n(535586),
@@ -103189,29 +103204,29 @@ ${a}`);
           n(79858),
           n(997187),
           n(921955);
-        var j5 = n(674378);
-        let j6 = "ActivityTrackingStore",
-          j4 = 30 * iT.A.Millis.MINUTE,
-          j7 = 5 * iT.A.Millis.MINUTE,
-          j8 = ex.w.get(j6) ?? {},
-          j9 = {},
-          We = !1;
-        function Wt(e) {
+        var j4 = n(674378);
+        let j7 = "ActivityTrackingStore",
+          j8 = 30 * iT.A.Millis.MINUTE,
+          j9 = 5 * iT.A.Millis.MINUTE,
+          We = ex.w.get(j7) ?? {},
+          Wt = {},
+          Wn = !1;
+        function Wi(e) {
           let t =
             !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-          t && Wn(e, !0);
-          let n = j9[e.applicationId];
-          null != n && (n.stop(), delete j9[e.applicationId]),
-            delete j8[e.applicationId],
-            ex.w.set(j6, j8);
+          t && Wr(e, !0);
+          let n = Wt[e.applicationId];
+          null != n && (n.stop(), delete Wt[e.applicationId]),
+            delete We[e.applicationId],
+            ex.w.set(j7, We);
         }
-        function Wn(e) {
+        function Wr(e) {
           let t =
               arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             n = Date.now(),
             i = null != e.updatedAt ? n - e.updatedAt : 0;
-          i > j4 + j7 && (i = 0);
-          let r = (0, j5.kv)(e.applicationId, _j.A),
+          i > j8 + j9 && (i = 0);
+          let r = (0, j4.kv)(e.applicationId, _j.A),
             a = ny.Ay.getVoiceChannelId(),
             s = ei.default.getSessionId(),
             l = nL.A.getMediaSessionId();
@@ -103228,12 +103243,12 @@ ${a}`);
             mediaSessionId: l,
           }),
             (e.updatedAt = n);
-          let o = j9[e.applicationId];
+          let o = Wt[e.applicationId];
           null == o &&
-            (o = j9[e.applicationId] = new ip.IX()).start(j4, () => Wn(e)),
-            t || ((j8[e.applicationId] = e), ex.w.set(j6, j8));
+            (o = Wt[e.applicationId] = new ip.IX()).start(j8, () => Wr(e)),
+            t || ((We[e.applicationId] = e), ex.w.set(j7, We));
         }
-        function Wi() {
+        function Wa() {
           let e =
               !(arguments.length > 0) ||
               void 0 === arguments[0] ||
@@ -103244,53 +103259,53 @@ ${a}`);
             let t = Mj.A.findGame(e);
             null != t &&
               (n.add(t.id),
-              t.id in j8 ||
-                Wn({
+              t.id in We ||
+                Wr({
                   applicationId: t.id,
                   updatedAt: Date.now(),
                   distributor: e.distributor,
                   exePath: (0, Mb.Ic)(e.exePath ?? ""),
                 }));
           }
-          for (let t of Object.keys(j8)) n.has(t) || Wt(j8[t], e);
+          for (let t of Object.keys(We)) n.has(t) || Wi(We[t], e);
         }
-        function Wr() {
-          for (let e of Object.keys(j8)) Wt(j8[e]);
-          We = !1;
+        function Ws() {
+          for (let e of Object.keys(We)) Wi(We[e]);
+          Wn = !1;
         }
-        class Wa extends eE.Ay.Store {
+        class Wl extends eE.Ay.Store {
           static displayName = "ActivityTrackingStore";
           initialize() {
             this.waitFor(ei.default, Mj.A, _j.A, nL.A, iD.Ay, ny.Ay, eL.A),
-              this.syncWith([eL.A], Wi);
+              this.syncWith([eL.A], Wa);
           }
           getActivities() {
-            return j8;
+            return We;
           }
         }
-        new Wa(k.h, {
-          RUNNING_GAMES_CHANGE: () => Wi(),
+        new Wl(k.h, {
+          RUNNING_GAMES_CHANGE: () => Wa(),
           CONNECTION_OPEN: function () {
-            if (We) return !1;
-            for (let e of Object.keys(j8)) Wn(j8[e]);
-            Wi(!1), (We = !0);
+            if (Wn) return !1;
+            for (let e of Object.keys(We)) Wr(We[e]);
+            Wa(!1), (Wn = !0);
           },
           CONNECTION_CLOSED: function (e) {
             let { code: t } = e;
-            4004 === t && Wr();
+            4004 === t && Ws();
           },
-          LOGOUT: Wr,
+          LOGOUT: Ws,
           ACTIVITY_UPDATE_SUCCESS: function (e) {
             let { applicationId: t, token: n } = e,
-              i = j8[t];
+              i = We[t];
             if (null == i) return !1;
-            (i.token = n), ex.w.set(j6, j8);
+            (i.token = n), ex.w.set(j7, We);
           },
           ACTIVITY_UPDATE_FAIL: function (e) {
             let { applicationId: t } = e,
-              n = j8[t];
+              n = We[t];
             if (null == n) return !1;
-            (n.token = null), (n.updatedAt = null), ex.w.set(j6, j8);
+            (n.token = null), (n.updatedAt = null), ex.w.set(j7, We);
           },
         }),
           n(384200),
@@ -103299,20 +103314,20 @@ ${a}`);
           n(560010),
           n(963307),
           n(966833);
-        let Ws = {};
-        class Wl extends eE.Ay.Store {
+        let Wo = {};
+        class Wd extends eE.Ay.Store {
           static displayName = "ChannelSKUStore";
           getSkuIdForChannel(e) {
-            return Ws[e];
+            return Wo[e];
           }
         }
-        new Wl(k.h, {
+        new Wd(k.h, {
           CONNECTION_OPEN: function () {
-            Ws = {};
+            Wo = {};
           },
           STORE_LISTING_FETCH_SUCCESS: function (e) {
             let { channelId: t, storeListing: n } = e;
-            null != t && (Ws[t] = n.sku.id);
+            null != t && (Wo[t] = n.sku.id);
           },
         }),
           n(945886),
@@ -103329,14 +103344,14 @@ ${a}`);
           n(670492),
           n(956703),
           n(783592);
-        let Wo = "hideSuppressWarning",
-          Wd = !1,
-          Wc = !0,
-          Wu = !1;
-        class W_ extends eE.Ay.Store {
+        let Wc = "hideSuppressWarning",
+          Wu = !1,
+          W_ = !0,
+          WE = !1;
+        class WA extends eE.Ay.Store {
           static displayName = "PermissionSpeakStore";
           initialize() {
-            this.waitFor(nR.A, e6.A), (Wu = ex.w.get(Wo) || Wu);
+            this.waitFor(nR.A, e6.A), (WE = ex.w.get(Wc) || WE);
           }
           isAFKChannel() {
             let e = nR.A.getChannel(o);
@@ -103345,15 +103360,15 @@ ${a}`);
             return null != t && e.id === t.afkChannelId;
           }
           shouldShowWarning() {
-            return !nR.A.getChannel(o)?.isGuildStageVoice() && !Wc;
+            return !nR.A.getChannel(o)?.isGuildStageVoice() && !W_;
           }
         }
-        let WE = new W_(k.h, {
+        let Wh = new WA(k.h, {
           CONNECTION_OPEN: function (e) {
-            (l = e.sessionId), (Wd = !1);
+            (l = e.sessionId), (Wu = !1);
           },
           CONNECTION_CLOSED: function () {
-            (l = null), (o = null), (Wc = !0);
+            (l = null), (o = null), (W_ = !0);
           },
           VOICE_STATE_UPDATES: function (e) {
             let { voiceStates: t } = e;
@@ -103361,16 +103376,16 @@ ${a}`);
               (e, t) =>
                 l !== t.sessionId
                   ? e
-                  : (Wd !== t.suppress && (Wc = !(Wd = t.suppress)),
-                    o !== t.channelId && ((o = t.channelId), (Wc = !Wd)),
-                    (Wu || null == t.channelId) && (Wc = !0),
+                  : (Wu !== t.suppress && (W_ = !(Wu = t.suppress)),
+                    o !== t.channelId && ((o = t.channelId), (W_ = !Wu)),
+                    (WE || null == t.channelId) && (W_ = !0),
                     !0),
               !1,
             );
           },
           PERMISSION_CLEAR_SUPPRESS_WARNING: function (e) {
             let { forever: t } = e;
-            (Wc = !0), t && ((Wu = !0), ex.w.set(Wo, Wu));
+            (W_ = !0), t && ((WE = !0), ex.w.set(Wc, WE));
           },
         });
         n(131677),
@@ -103386,9 +103401,9 @@ ${a}`);
           n(645959),
           n(321191),
           n(750128);
-        let WA = !1;
-        (0, iO.as)(), eE.Ay.initialize(), BV.loadServer();
-        let Wh = (0, tZ.Fe)({
+        let Wf = !1;
+        (0, iO.as)(), eE.Ay.initialize(), Bj.loadServer();
+        let WI = (0, tZ.Fe)({
             createPromise: () =>
               Promise.all([n.e("359244"), n.e("211415")]).then(
                 n.bind(n, 844358),
@@ -103397,7 +103412,7 @@ ${a}`);
             name: "UnauthenticatedDeepLinkActivity",
             renderLoader: bu,
           }),
-          Wf = (0, tZ.Fe)({
+          Wp = (0, tZ.Fe)({
             createPromise: () => n.e("215243").then(n.bind(n, 190662)),
             webpackId: 190662,
             name: "ApplicationDirectoryRoutes",
@@ -103419,7 +103434,7 @@ ${a}`);
               },
             );
           }));
-        let WI = ni((e) => {
+        let WT = ni((e) => {
             let { location: t } = e;
             return (
               (0, sY.B)(() => {
@@ -103464,7 +103479,7 @@ ${a}`);
               })
             );
           }),
-          Wp = ni((e) => {
+          Wm = ni((e) => {
             let { location: t } = e,
               i = (0, U1.parsePlaygroundUrl)(t.pathname, t.search);
             return (
@@ -103490,7 +103505,7 @@ ${a}`);
               })
             );
           }),
-          WT = eE.Ay.connectStores([sW.A, L8.A, ei.default], () => ({
+          Wg = eE.Ay.connectStores([sW.A, L8.A, ei.default], () => ({
             isConnected: sW.A.isConnected(),
             defaultRoute: L8.A.defaultRoute,
             defaultRouteFallback: L8.A.fallbackRoute,
@@ -103507,7 +103522,7 @@ ${a}`);
                 if (null == n)
                   return (0, b.jsx)(tW.rd, { to: j.BVt.DEFAULT_LOGGED_OUT });
                 if (e) {
-                  let e = WR(t);
+                  let e = Wy(t);
                   return null == e ||
                     ((e.params.guildId === j.ME ||
                       null != e6.A.getGuild(e.params.guildId)) &&
@@ -103519,13 +103534,13 @@ ${a}`);
               }
             },
           ),
-          Wm = ni((0, iR.C)(Ps, null, { passProps: !1 })),
-          Wg = (0, iR.C)(Wf, null, { passProps: !1 }),
-          WS = [
+          WS = ni((0, iR.C)(Ps, null, { passProps: !1 })),
+          WN = (0, iR.C)(Wp, null, { passProps: !1 }),
+          WC = [
             j.BVt.GUILD_BOOSTING_MARKETING(a5.pv.guildId()),
             ...Array.from(sn.qW).map((e) => j.BVt.CHANNEL(a5.pv.guildId(), e)),
           ];
-        function WN(e) {
+        function WO(e) {
           let {
             guildId: t,
             channelId: n = null,
@@ -103539,15 +103554,15 @@ ${a}`);
             threadId: r,
           };
         }
-        let WC = [
+        let WR = [
           {
             path: [j.BVt.ACTIVITY_DETAILS(":applicationId")],
             render: function (e) {
-              return (0, Hv.wR)() ||
+              return (0, HM.wR)() ||
                 ei.default.getLoginStatus() === j.aUe.LOGGING_IN ||
                 !ei.default.allowLogoutRedirect()
-                ? Wm(e)
-                : (0, b.jsx)(Wh, {
+                ? WS(e)
+                : (0, b.jsx)(WI, {
                     applicationId: e.match.params.applicationId,
                   });
             },
@@ -103584,7 +103599,7 @@ ${a}`);
               );
             },
           },
-          { path: [j.BVt.APP], render: () => (0, b.jsx)(WT, {}) },
+          { path: [j.BVt.APP], render: () => (0, b.jsx)(Wg, {}) },
           {
             path: [j.BVt.USERS(":id")],
             render: function (e) {
@@ -103707,8 +103722,8 @@ ${a}`);
               );
             },
           },
-          { path: [j.BVt.SETTINGS(":section", ":subsection?")], render: WI },
-          { path: [j.BVt.PLAYGROUND(":collection?", ":story?")], render: Wp },
+          { path: [j.BVt.SETTINGS(":section", ":subsection?")], render: WT },
+          { path: [j.BVt.PLAYGROUND(":collection?", ":story?")], render: Wm },
           {
             path: [j.BVt.USER_GUILD_NOTIFICATION_SETTINGS(a5.pv.guildId())],
             render: function (e) {
@@ -103842,10 +103857,10 @@ ${a}`);
               j.BVt.FEATURE(":feature"),
               j.BVt.FAMILY_CENTER,
             ],
-            render: Wm,
+            render: WS,
             isChatRoute: !0,
           },
-          { path: [j.BVt.APPLICATION_DIRECTORY], render: Wg },
+          { path: [j.BVt.APPLICATION_DIRECTORY], render: WN },
           {
             path: [
               j.BVt.GAME_SHOP(a5.pv.guildId(), ":shopSkuId?", ":shopSlug?"),
@@ -104107,7 +104122,7 @@ ${a}`);
             },
           },
         ];
-        function WO(e, t) {
+        function WL(e, t) {
           if (
             !sW.A.isConnected() ||
             null == e ||
@@ -104121,15 +104136,15 @@ ${a}`);
             ? null
             : j.BVt.CHANNEL(e, MU.Ay.getDefaultChannel(e)?.id);
         }
-        function WR(e) {
-          for (let { path: t, isChatRoute: n } of WC) {
+        function Wy(e) {
+          for (let { path: t, isChatRoute: n } of WR) {
             if (!n) continue;
             let i = (0, a6.B)(e, { path: t });
             if (null != i) return i;
           }
           return null;
         }
-        function WL(e) {
+        function WD(e) {
           let { channelId: t, guildId: n, pathname: i } = e;
           if (!sW.A.isConnected()) return;
           let { location: r } = (0, l8.JK)();
@@ -104138,17 +104153,17 @@ ${a}`);
               ? (0, l8.bG)(j.BVt.CHANNEL(n))
               : (0, l8.bG)(i));
         }
-        class Wy extends eI.PureComponent {
+        class Wv extends eI.PureComponent {
           historyUnlisten = () => {};
           rewriterUnlisten = () => {};
           conversationFocusRewriterUnlisten = () => {};
           componentDidMount() {
             eV.Ay.setZoomFactor(ef.Ay.zoom),
-              BV.init(),
+              Bj.init(),
               iF.initialize(),
               wh.initialize(),
               PQ.initialize(),
-              HT.initialize(),
+              Hg.initialize(),
               Ut.initialize(),
               wC.A.initialize(),
               wv.initialize(),
@@ -104163,21 +104178,21 @@ ${a}`);
               wx.initialize(),
               n8.Ay.initialize(),
               sw.Ay.initialize(),
-              HA.initialize(),
+              Hf.initialize(),
               wE.initialize(),
               ir.initialize(),
               Uu.init(),
               PT.init(),
-              HD.init(),
+              Hb.init(),
               na.A.initialize(),
-              VO.init(),
-              HR.A.init(),
-              V1.init(),
-              B8.initialize(),
-              Vt.initialize(),
-              Hr.init(),
+              VL.init(),
+              Hy.A.init(),
+              V3.init(),
+              Ve.initialize(),
+              Vi.initialize(),
+              Hs.init(),
               nr.A.initialize(),
-              B4.initialize(),
+              B8.initialize(),
               we.A.initialize(),
               U9.initialize(),
               wi.initialize(),
@@ -104200,15 +104215,15 @@ ${a}`);
               ));
           }
           componentWillUnmount() {
-            BV.terminate(),
-              HT.terminate(),
+            Bj.terminate(),
+              Hg.terminate(),
               wC.A.terminate(),
               wv.terminate(),
               wh.terminate(),
               iF.terminate(),
               n8.Ay.terminate(),
               sw.Ay.terminate(),
-              HA.terminate(),
+              Hf.terminate(),
               ir.terminate(),
               wx.terminate(),
               wE.terminate(),
@@ -104216,7 +104231,7 @@ ${a}`);
               Ux.A.terminate(),
               nr.A.terminate(),
               wk.A.terminate(),
-              B4.terminate(),
+              B8.terminate(),
               we.A.terminate(),
               U9.terminate(),
               wi.terminate(),
@@ -104241,38 +104256,38 @@ ${a}`);
               null == t || ((0, wF.Q)(e) && tJ.A.startSession(t));
             })(t),
               (function (e, t) {
-                let n = WR(e);
+                let n = Wy(e);
                 if (null == n) return;
                 let {
                     guildId: i,
                     channelId: r,
                     messageId: a,
                     threadId: s,
-                  } = WN(n),
+                  } = WO(n),
                   l = (0, a5.nn)(i),
                   o = (0, a5.ts)(r),
                   d = (0, a5.ts)(s),
                   c = ic.A.getGuildId(),
                   u = c !== i;
                 if ((l && u && t2.A.selectGuild(i), l && o)) {
-                  let n = WO(i, r);
+                  let n = WL(i, r);
                   if (null != n) return (0, l8.bG)(n);
                   let l = ny.Ay.getChannelId(c),
                     o = l !== r || ny.Ay.getCurrentlySelectedChannelId() !== r,
                     _ = null != rz.Ay.getGuildSidebarState(i);
-                  if (!WA || u || o || null != a) {
-                    (WA = !0),
+                  if (!Wf || u || o || null != a) {
+                    (Wf = !0),
                       t3.default.selectChannel({
                         guildId: i,
                         channelId: r,
                         messageId: a,
                       });
                     let { summaryId: e } = (0, tq.parse)(t);
-                    null != e && Vn.Ay.setSelectedSummary(r, e);
+                    null != e && Vr.Ay.setSelectedSummary(r, e);
                   }
                   if (_ && o && null != r) {
                     let e = rz.Ay.getCurrentSidebarChannelId(r);
-                    null != e && e !== r && BH.A.closeChannelSidebar(r);
+                    null != e && e !== r && BW.A.closeChannelSidebar(r);
                   }
                   if (null != s && d) {
                     let e = rz.Ay.getCurrentSidebarChannelId(l),
@@ -104280,9 +104295,9 @@ ${a}`);
                     if (null != r && null != s && t)
                       if (_) (0, l8.bG)(j.BVt.CHANNEL(i, s, a));
                       else {
-                        let e = { type: Bj.kk.CHAT };
+                        let e = { type: BY.kk.CHAT };
                         null != a && (e.initialMessageId = a),
-                          BH.A.openThreadAsSidebar({
+                          BW.A.openThreadAsSidebar({
                             guildId: i,
                             baseChannelId: r,
                             channelId: s,
@@ -104294,12 +104309,12 @@ ${a}`);
                         null != e &&
                         null != r &&
                         rz.Ay.getCurrentSidebarChannelId(r) !== r &&
-                        BH.A.closeChannelSidebar(r);
+                        BW.A.closeChannelSidebar(r);
                   } else
                     null == r ||
                       o ||
                       rz.Ay.getCurrentSidebarChannelId(r) === r ||
-                      BH.A.closeChannelSidebar(r);
+                      BW.A.closeChannelSidebar(r);
                   let E = lI.getIsOpen();
                   if (r === sn.VV.ROLE_SUBSCRIPTIONS) lA.closeSidebar();
                   else if (u && E) {
@@ -104308,7 +104323,7 @@ ${a}`);
                     t || n ? lA.closeSidebar() : lA.openSidebar();
                   } else ((o && E) || (!u && !o)) && lA.closeSidebar();
                 } else
-                  WS.some((t) => (0, a6.B)(e, t)?.isExact === !0) ||
+                  WC.some((t) => (0, a6.B)(e, t)?.isExact === !0) ||
                     (0, l8.bG)(L8.A.fallbackRoute);
               })(t, n),
               (0, rw.MS)();
@@ -104316,30 +104331,30 @@ ${a}`);
           ensureChannelMatchesGuild(e) {
             if (!sW.A.isConnected()) return null;
             let { pathname: t } = e,
-              n = WR(t);
+              n = Wy(t);
             if (null == n) return null;
-            let { guildId: i, channelId: r, threadId: a } = WN(n),
+            let { guildId: i, channelId: r, threadId: a } = WO(n),
               s = (0, a5.nn)(i) && i !== j.ME && !(0, az.ai)(i);
             if (null != r && (0, a5.ts)(r) && !(0, sn.jq)(r) && s) {
               let n = nR.A.getChannel(r);
               if (null == n)
-                Vi.A.loadThread(r).then(() =>
-                  WL({ channelId: r, guildId: i, pathname: t }),
+                Va.A.loadThread(r).then(() =>
+                  WD({ channelId: r, guildId: i, pathname: t }),
                 );
               else if (n.guild_id !== i && i !== j.gNP)
                 return { path: j.BVt.CHANNEL(i), state: e.state };
-              let s = WO(i, r);
+              let s = WL(i, r);
               if (null != s) return { path: s, state: e.state };
               if (null != a) {
                 if (!((0, a5.ts)(a) && !(0, sn.jq)(r))) return null;
                 let n = nR.A.getChannel(a);
                 if (null == n)
-                  Vi.A.loadThread(a).then(() =>
-                    WL({ channelId: a, guildId: i, pathname: t }),
+                  Va.A.loadThread(a).then(() =>
+                    WD({ channelId: a, guildId: i, pathname: t }),
                   );
                 else if (n?.parent_id !== r)
                   return (
-                    BH.A.closeChannelSidebar(r),
+                    BW.A.closeChannelSidebar(r),
                     { path: j.BVt.CHANNEL(i, r), state: e.state }
                   );
               }
@@ -104356,7 +104371,7 @@ ${a}`);
                       from: "/channels",
                       to: "/",
                     }),
-                    WC.map((e) => {
+                    WR.map((e) => {
                       let { path: t, render: n } = e;
                       return (0, b.jsx)(tW.qh, { path: t, render: n }, t[0]);
                     }),
@@ -104364,27 +104379,27 @@ ${a}`);
                   ],
                 }),
                 (0, b.jsx)(PV, {}),
-                ((0, eB.isDesktop)() || (0, eB.isWeb)()) && (0, b.jsx)(HO, {}),
+                ((0, eB.isDesktop)() || (0, eB.isWeb)()) && (0, b.jsx)(HL, {}),
               ],
             });
           }
         }
-        var WD = n(337836),
-          Wv = n(59652),
-          Wb = n(557361),
-          WM = n(638495),
-          WP = n(345874),
-          WU = n(197808),
-          Ww = n(318009),
-          WG = n(638421),
-          Wx = n(983555),
-          Wk = n(697138),
-          WF = n(989395),
-          WB = n(750506),
-          WV = n(686757),
-          WH = n(323737);
-        function Wj() {
-          let { debugTrackedData: e, impressions: t } = (0, WV.SD)(
+        var Wb = n(337836),
+          WM = n(59652),
+          WP = n(557361),
+          WU = n(638495),
+          Ww = n(345874),
+          WG = n(197808),
+          Wx = n(318009),
+          Wk = n(638421),
+          WF = n(983555),
+          WB = n(697138),
+          WV = n(989395),
+          WH = n(750506),
+          Wj = n(686757),
+          WW = n(323737);
+        function WY() {
+          let { debugTrackedData: e, impressions: t } = (0, Wj.SD)(
               (e) => ({
                 debugTrackedData: e.debugTrackedData,
                 impressions: e.impressions,
@@ -104397,49 +104412,49 @@ ${a}`);
             { name: s, ...l } = e ?? {},
             o = null != s;
           return i && n
-            ? (0, b.jsx)(WB.Ay, {
+            ? (0, b.jsx)(WH.Ay, {
                 children: (0, b.jsxs)("div", {
-                  className: tf()(WH.kL, { [WH.YV]: r, [WH.cn]: !o }),
+                  className: tf()(WW.kL, { [WW.YV]: r, [WW.cn]: !o }),
                   children: [
                     (0, b.jsx)(tI.D, {
-                      className: WH.VI,
+                      className: WW.VI,
                       onClick: () => {
                         a(!r);
                       },
                       children: r ? (0, b.jsx)(tL, {}) : (0, b.jsx)(tD, {}),
                     }),
                     (0, b.jsxs)("div", {
-                      className: tf()(WH.Qs, { [WH.Cx]: r }),
+                      className: tf()(WW.Qs, { [WW.Cx]: r }),
                       children: [
                         (0, b.jsxs)(rY.E, {
-                          className: tf()(WH.Pf, { [WH.cn]: !o }),
+                          className: tf()(WW.Pf, { [WW.cn]: !o }),
                           variant: "text-xxs/normal",
                           children: [
                             o
                               ? (0, b.jsx)(fY.y, {
                                   size: "md",
                                   color: "currentColor",
-                                  className: WH.sG,
+                                  className: WW.sG,
                                 })
                               : (0, b.jsx)(fZ.a, {
                                   size: "md",
                                   color: "currentColor",
-                                  className: WH.jZ,
+                                  className: WW.jZ,
                                 }),
                             s ?? "(untracked)",
                           ],
                         }),
                         (0, b.jsx)("div", {
-                          className: WH.ss,
+                          className: WW.ss,
                           children: JSON.stringify(l, void 0, 2),
                         }),
                         (0, b.jsx)(rY.E, {
-                          className: tf()(WH.Pf, { [WH.cn]: !o }),
+                          className: tf()(WW.Pf, { [WW.cn]: !o }),
                           variant: "text-xxs/normal",
                           children: "impressions stack",
                         }),
                         (0, b.jsx)("div", {
-                          className: WH.t$,
+                          className: WW.t$,
                           children: JSON.stringify(t, void 0, 2),
                         }),
                       ],
@@ -104449,10 +104464,10 @@ ${a}`);
               })
             : null;
         }
-        var WW = n(999129),
-          WY = n(866323),
-          WK = n(235079);
-        let W$ = (0, rl.qT)({
+        var WK = n(999129),
+          W$ = n(866323),
+          Wz = n(235079);
+        let WX = (0, rl.qT)({
             createPromise: () =>
               Promise.all([
                 n.e("401425"),
@@ -104476,9 +104491,9 @@ ${a}`);
               ]).then(n.bind(n, 417680)),
             webpackId: 417680,
           }),
-          Wz = { transform: "scale(0.7)", opacity: 0 },
-          WX = { transform: "scale(1)", opacity: 1 },
-          Wq = eI.memo(function () {
+          Wq = { transform: "scale(0.7)", opacity: 0 },
+          WZ = { transform: "scale(1)", opacity: 1 },
+          WQ = eI.memo(function () {
             let e = (0, eE.yK)([re, ny.Ay, nP.Ay], () =>
                 re.getIncomingCalls().filter((e) => {
                   let { channel: t } = e,
@@ -104498,9 +104513,9 @@ ${a}`);
               i = (0, eE.bG)([cS.A], () => cS.A.disableSounds),
               r = (0, eE.bG)([Pw.A], () => Pw.A.getSoundpack()),
               a = eI.useRef(!1),
-              s = (0, WW.A)(
+              s = (0, WK.A)(
                 () =>
-                  r === WK.i.CLASSIC
+                  r === Wz.i.CLASSIC
                     ? (0, Mr.Qh)(
                         500 !== iV().random(1, 1e3)
                           ? "call_ringing"
@@ -104516,7 +104531,7 @@ ${a}`);
             return (
               eI.useEffect(() => {
                 (0, rA.t)(() => {
-                  W$.preload();
+                  WX.preload();
                 });
               }, []),
               eI.useEffect(
@@ -104534,20 +104549,20 @@ ${a}`);
                   ? (s.loop(), (a.current = !0))
                   : !t && a.current && (s.stop(), (a.current = !1));
               }, [n, i, t, s]),
-              (0, WY.p)(e, {
+              (0, W$.p)(e, {
                 keys: (e) => e.channel?.id,
-                enter: { from: Wz, to: WX },
-                leave: Wz,
+                enter: { from: Wq, to: WZ },
+                leave: Wq,
                 config: { mass: 1, tension: 500, friction: 18, clamp: !0 },
-              })((e, t) => (0, b.jsx)(W$, { ...t, animatedStyle: e }))
+              })((e, t) => (0, b.jsx)(WX, { ...t, animatedStyle: e }))
             );
           });
-        var WZ = n(288610),
-          WQ = n(681582),
-          WJ = n(172272),
-          W0 = n(538064),
-          W1 = n(265059);
-        let W2 = (0, tZ.Fe)({
+        var WJ = n(288610),
+          W0 = n(681582),
+          W1 = n(172272),
+          W2 = n(538064),
+          W3 = n(265059);
+        let W5 = (0, tZ.Fe)({
           createPromise: () =>
             Promise.all([
               n.e("860350"),
@@ -105459,8 +105474,8 @@ ${a}`);
               n.e("912773"),
               n.e("817989"),
               n.e("454625"),
-              n.e("693832"),
               n.e("437065"),
+              n.e("693832"),
               n.e("488990"),
               n.e("577084"),
               n.e("720590"),
@@ -105553,8 +105568,8 @@ ${a}`);
               n.e("478476"),
               n.e("971430"),
               n.e("211185"),
-              n.e("41332"),
               n.e("976516"),
+              n.e("41332"),
               n.e("496715"),
               n.e("400501"),
               n.e("985794"),
@@ -106232,10 +106247,10 @@ ${a}`);
             ]).then(n.bind(n, 902592)),
           webpackId: 902592,
         });
-        function W3(e) {
+        function W6(e) {
           let { mobile: t } = e,
             n = (0, eE.bG)([a9.A], () => a9.A.isDeveloper),
-            i = (0, eE.bG)([W1.A], () => W1.A.displayTools),
+            i = (0, eE.bG)([W3.A], () => W3.A.displayTools),
             r = (0, eE.bG)([no.A], () =>
               no.A.getWindowOpen(j.MLl.DEVTOOLS_POPOUT),
             ),
@@ -106243,7 +106258,7 @@ ${a}`);
               ((0, eB.isMac)() ? e.metaKey : e.ctrlKey) &&
                 e.altKey &&
                 "KeyO" === e.code &&
-                (0, W0.pf)();
+                (0, W2.pf)();
             }, []);
           return (eI.useLayoutEffect(
             () => (
@@ -106255,26 +106270,26 @@ ${a}`);
             [a],
           ),
           (t ? n : i) && !r)
-            ? (0, b.jsx)(W2, { mobile: t })
+            ? (0, b.jsx)(W5, { mobile: t })
             : null;
         }
-        var W5 = n(670735),
-          W6 = n(333007),
-          W4 = n(536246),
-          W7 = n(625998),
-          W8 = n(824613),
-          W9 = n(256693),
-          Ye = n(51250),
-          Yt = n(506868);
-        let Yn = (0, H.mj)({
+        var W4 = n(670735),
+          W7 = n(333007),
+          W8 = n(536246),
+          W9 = n(625998),
+          Ye = n(824613),
+          Yt = n(256693),
+          Yn = n(51250),
+          Yi = n(506868);
+        let Yr = (0, H.mj)({
           name: "2026-10-desktop-conjure-native-preview-view",
           kind: "user",
           defaultConfig: { enabled: !1 },
           variations: { 0: { enabled: !1 }, 1: { enabled: !0 } },
         });
-        var Yi = n(489719),
-          Yr = n(271982);
-        function Ya(e) {
+        var Ya = n(489719),
+          Ys = n(271982);
+        function Yl(e) {
           let [t] = eI.useState(() => {
               let t = document.createElement("div");
               return t.setAttribute("data-frame-id", e), t;
@@ -106283,16 +106298,16 @@ ${a}`);
             r = eI.useCallback(
               (n) => {
                 null != n
-                  ? (Yr.A.registerFrameEntry(e, { container: t, overlay: n }),
+                  ? (Ys.A.registerFrameEntry(e, { container: t, overlay: n }),
                     i(!0))
-                  : (Yr.A.removeFrameEntry(e), i(!1));
+                  : (Ys.A.removeFrameEntry(e), i(!1));
               },
               [t, e],
             );
           return { container: t, isRegistered: n, registerPoolEntry: r };
         }
-        var Ys = n(51123);
-        function Yl() {
+        var Yo = n(51123);
+        function Yd() {
           let [e, t] = eI.useState(!1),
             n = (0, eE.yK)([aX.A], () => aX.A.getAllFrames()),
             i = (0, eE.bG)([iv.A, aX.A], () =>
@@ -106315,11 +106330,11 @@ ${a}`);
               return e?.renderInFramePool === !0 ? e : null;
             }),
             s = eI.useCallback((e) => {
-              null != e && Yr.A.setPool(e), t(null != e);
+              null != e && Ys.A.setPool(e), t(null != e);
             }, []);
           return (0, b.jsxs)("div", {
             ref: s,
-            className: Ys.d,
+            className: Yo.d,
             children: [
               e
                 ? n.map((e) =>
@@ -106328,18 +106343,18 @@ ${a}`);
                     r.includes(e.id) ||
                     e.surface.type === Ge.U.OVERLAY
                       ? null
-                      : (0, b.jsx)(Yo, { frame: e }, e.id),
+                      : (0, b.jsx)(Yc, { frame: e }, e.id),
                   )
                 : null,
               e && null != a
-                ? (0, b.jsx)(Yd, { embeddedActivity: a }, (0, W9.Ri)(a))
+                ? (0, b.jsx)(Yu, { embeddedActivity: a }, (0, Yt.Ri)(a))
                 : null,
             ],
           });
         }
-        function Yo(e) {
+        function Yc(e) {
           let { frame: t } = e,
-            { container: n, isRegistered: i, registerPoolEntry: r } = Ya(t.id),
+            { container: n, isRegistered: i, registerPoolEntry: r } = Yl(t.id),
             a = (0, sC.h)(t.applicationId),
             s = (0, eE.bG)([sA.A], () => sA.A.isFrameHidden()),
             l =
@@ -106348,20 +106363,20 @@ ${a}`);
               ]) &&
               t.data.layoutMode === aJ.y0.PIP &&
               !s,
-            o = (0, Yt.LK)(t.id),
+            o = (0, Yi.LK)(t.id),
             d = !l && !o,
-            c = Yn.useConfig({ location: "FramePool" }).enabled,
+            c = Yr.useConfig({ location: "FramePool" }).enabled,
             u = null;
           if (null != a) {
             let { url: e, proxyTicketRefreshing: n } = t.data,
-              i = (0, Yi.A)(t, Gp.v.DESKTOP);
+              i = (0, Ya.A)(t, Gp.v.DESKTOP);
             u = n
               ? (0, b.jsx)("div", {
-                  className: Ys.p,
+                  className: Yo.p,
                   children: (0, b.jsx)(rr.y, {}),
                 })
-              : (0, b.jsx)(W7.o, {
-                  allowPopups: (0, W4.b)(a),
+              : (0, b.jsx)(W9.o, {
+                  allowPopups: (0, W8.b)(a),
                   referrerPolicy: "origin",
                   transparentWhileLoading: t.surface.type === Ge.U.APP_CHANNEL,
                   url: e,
@@ -106370,12 +106385,12 @@ ${a}`);
                   onIframeUnmount: (e) => nN.A.detachFrameIframe(t.id, e),
                   onGuestReload: () => nN.A.setFrameRunsInBackground(t.id, !1),
                   queryParams: i,
-                  className: Ys.p,
+                  className: Yo.p,
                   shouldRefocus: d,
                   nativeView: c && (0, Mn.Q5)(t.surface),
                 });
           }
-          return (0, W6.createPortal)(
+          return (0, W7.createPortal)(
             (0, b.jsxs)("div", {
               style: {
                 position: "relative",
@@ -106400,14 +106415,14 @@ ${a}`);
             n,
           );
         }
-        function Yd(e) {
+        function Yu(e) {
           let { embeddedActivity: t } = e,
             { applicationId: n, url: i } = t,
             {
               container: r,
               isRegistered: a,
               registerPoolEntry: s,
-            } = Ya((0, W9.Ri)(t)),
+            } = Yl((0, Yt.Ri)(t)),
             l = (0, sC.h)(n),
             o = (0, nz.H)(t.location),
             d = (0, eE.bG)([nR.A], () => nR.A.getChannel(o), [o]),
@@ -106419,21 +106434,21 @@ ${a}`);
             null != l &&
               (u = c
                 ? (0, b.jsx)("div", {
-                    className: Ys.p,
+                    className: Yo.p,
                     children: (0, b.jsx)(rr.y, {}),
                   })
-                : (0, b.jsx)(W7.o, {
-                    allowPopups: (0, W4.b)(l),
+                : (0, b.jsx)(W9.o, {
+                    allowPopups: (0, W8.b)(l),
                     referrerPolicy: "origin",
                     url: i,
                     contextSource: { type: G0.f.ACTIVITY, applicationId: n },
-                    queryParams: (0, Ye.A)(t, d),
-                    className: Ys.p,
+                    queryParams: (0, Yn.A)(t, d),
+                    className: Yo.p,
                     shouldRefocus: !1,
-                    onIframeMount: (e) => (0, W8.hN)(n, e),
-                    onIframeUnmount: (e) => (0, W8.WO)(n, e),
+                    onIframeMount: (e) => (0, Ye.hN)(n, e),
+                    onIframeUnmount: (e) => (0, Ye.WO)(n, e),
                   })),
-            (0, W6.createPortal)(
+            (0, W7.createPortal)(
               (0, b.jsxs)("div", {
                 style: {
                   position: "relative",
@@ -106457,43 +106472,43 @@ ${a}`);
             )
           );
         }
-        var Yc = n(981133),
-          Yu = n(183636),
-          Y_ = n(469177),
-          YE = n(935154),
-          YA = n(268547);
-        function Yh() {
+        var Y_ = n(981133),
+          YE = n(183636),
+          YA = n(469177),
+          Yh = n(935154),
+          Yf = n(268547);
+        function YI() {
           let e = (0, eE.bG)([e0.Ay], () => e0.Ay.get("idle_status_indicator")),
             t = (0, eE.bG)(
               [eF.default],
               () => eF.default.getCurrentUser()?.isStaff() ?? !1,
             ),
-            [n, i] = (0, eE.yK)([Hh.A], () => [Hh.A.isIdle(), Hh.A.isAFK()]),
+            [n, i] = (0, eE.yK)([HI.A], () => [HI.A.isIdle(), HI.A.isAFK()]),
             r = [];
           return (
             n || i || r.push("ACTIVE"),
             n && r.push("IDLE"),
             i && r.push("AFK"),
             t && e
-              ? (0, b.jsx)(WB.Ay, {
+              ? (0, b.jsx)(WH.Ay, {
                   children: (0, b.jsxs)("div", {
-                    className: YA.kL,
+                    className: Yf.kL,
                     children: [
                       (0, b.jsxs)("div", {
-                        className: YA.h5,
+                        className: Yf.h5,
                         children: [
-                          (0, b.jsx)(YE.nW, {
+                          (0, b.jsx)(Yh.nW, {
                             status: r.includes("ACTIVE")
                               ? cv.cl.ONLINE
                               : cv.cl.IDLE,
-                            className: YA.UX,
+                            className: Yf.UX,
                           }),
                           (0, b.jsx)(rY.E, {
                             variant: "text-md/normal",
                             children: "IDLE STATUS:",
                           }),
                           (0, b.jsx)("div", {
-                            className: YA.qS,
+                            className: Yf.qS,
                             children: (0, b.jsx)(rY.E, {
                               variant: "text-md/bold",
                               children: r.join(" + "),
@@ -106508,7 +106523,7 @@ ${a}`);
                             "Idle since:",
                             " ",
                             new Date(
-                              Hh.A.getIdleSince() ?? 0,
+                              HI.A.getIdleSince() ?? 0,
                             ).toLocaleDateString(void 0, {
                               year: "numeric",
                               day: "numeric",
@@ -106525,9 +106540,9 @@ ${a}`);
               : null
           );
         }
-        var Yf = n(639735),
-          YI = n(149138);
-        let Yp = function () {
+        var Yp = n(639735),
+          YT = n(149138);
+        let Ym = function () {
           let e = (0, eE.bG)([ek.Ay], () => ek.Ay.isInteractionRequired(), []),
             t = eI.useRef(null);
           function n() {
@@ -106563,10 +106578,10 @@ ${a}`);
             null
           );
         };
-        var YT = n(386406);
-        let Ym = !0,
-          Yg = !0;
-        function YS() {
+        var Yg = n(386406);
+        let YS = !0,
+          YN = !0;
+        function YC() {
           let e,
             t = nL.A.getChannelId();
           if (null == t) e = !0;
@@ -106584,50 +106599,50 @@ ${a}`);
               null != i.requestToSpeakTimestamp;
           }
           return (
-            Ym !== e &&
-            ((Yg = e),
-            (Ym = e),
-            k.h.dispatch({ type: "SET_VAD_PERMISSION", hasPermission: Ym }),
+            YS !== e &&
+            ((YN = e),
+            (YS = e),
+            k.h.dispatch({ type: "SET_VAD_PERMISSION", hasPermission: YS }),
             !0)
           );
         }
-        class YN extends eE.Ay.Store {
+        class YO extends eE.Ay.Store {
           static displayName = "PermissionVADStore";
           initialize() {
             this.waitFor(ei.default, nR.A, ek.Ay, nV.A, nL.A, nH.A);
           }
           shouldShowWarning() {
-            return !Yg;
+            return !YN;
           }
           canUseVoiceActivity() {
-            return Ym;
+            return YS;
           }
         }
-        let YC = new YN(k.h, {
-          RTC_CONNECTION_STATE: YS,
-          MEDIA_ENGINE_SET_AUDIO_ENABLED: YS,
-          AUDIO_SET_MODE: YS,
-          CHANNEL_UPDATES: YS,
-          THREAD_UPDATE: YS,
-          GUILD_ROLE_UPDATE: YS,
-          GUILD_MEMBER_UPDATE: YS,
-          IMPERSONATE_UPDATE: YS,
-          IMPERSONATE_STOP: YS,
+        let YR = new YO(k.h, {
+          RTC_CONNECTION_STATE: YC,
+          MEDIA_ENGINE_SET_AUDIO_ENABLED: YC,
+          AUDIO_SET_MODE: YC,
+          CHANNEL_UPDATES: YC,
+          THREAD_UPDATE: YC,
+          GUILD_ROLE_UPDATE: YC,
+          GUILD_MEMBER_UPDATE: YC,
+          IMPERSONATE_UPDATE: YC,
+          IMPERSONATE_STOP: YC,
           VOICE_STATE_UPDATES: function (e) {
             let { voiceStates: t } = e;
             return t.some((e) => {
               let { userId: t } = e;
-              return t === ei.default.getId() && YS();
+              return t === ei.default.getId() && YC();
             });
           },
           AUDIO_TOGGLE_SELF_MUTE: function () {
-            Yg = Ym;
+            YN = YS;
           },
           PERMISSION_CLEAR_VAD_WARNING: function () {
-            Yg = !0;
+            YN = !0;
           },
         });
-        function YO(e) {
+        function YL(e) {
           return (0, b.jsx)(ns.a, {
             size: "md",
             title: tv.intl.string(tv.t.NYklhr),
@@ -106636,7 +106651,7 @@ ${a}`);
               {
                 text: tv.intl.string(tv.t.UYW0dz),
                 onClick: () => {
-                  e.onClose(), YT.A.clearVADWarning();
+                  e.onClose(), Yg.A.clearVADWarning();
                 },
                 variant: "secondary",
               },
@@ -106645,7 +106660,7 @@ ${a}`);
                 onClick: () => {
                   iL.default.setMode(j.TBI.PUSH_TO_TALK),
                     e.onClose(),
-                    YT.A.clearVADWarning();
+                    Yg.A.clearVADWarning();
                 },
                 variant: "primary",
               },
@@ -106653,8 +106668,8 @@ ${a}`);
             ...e,
           });
         }
-        function YR() {
-          let e = (0, eE.bG)([YC], () => YC.shouldShowWarning(), []),
+        function Yy() {
+          let e = (0, eE.bG)([YR], () => YR.shouldShowWarning(), []),
             t = eI.useRef(null);
           function n() {
             null !== t.current &&
@@ -106665,7 +106680,7 @@ ${a}`);
               () => (
                 e
                   ? (t.current = (0, tQ.openModal)((e) =>
-                      (0, b.jsx)(YO, { ...e }),
+                      (0, b.jsx)(YL, { ...e }),
                     ))
                   : n(),
                 () => {
@@ -106677,12 +106692,12 @@ ${a}`);
             null
           );
         }
-        function YL(e) {
+        function YD(e) {
           let { currentGame: t, ...n } = e,
             [i, r] = eI.useState(!1);
           return (
             (0, _G.l0)(() => {
-              i && YT.A.clearPTTAdminWarning();
+              i && Yg.A.clearPTTAdminWarning();
             }),
             (0, b.jsx)(ns.a, {
               size: "md",
@@ -106714,7 +106729,7 @@ ${a}`);
             })
           );
         }
-        function Yy() {
+        function Yv() {
           let [e, t] = (0, eE.yK)(
               [iD.Ay],
               () => [iD.Ay.canShowAdminWarning, iD.Ay.getVisibleGame()],
@@ -106734,7 +106749,7 @@ ${a}`);
                 return (
                   r
                     ? (a.current = (0, tQ.openModal)((e) =>
-                        (0, b.jsx)(YL, { currentGame: t, ...e }),
+                        (0, b.jsx)(YD, { currentGame: t, ...e }),
                       ))
                     : e(),
                   () => {
@@ -106749,7 +106764,7 @@ ${a}`);
             null
           );
         }
-        function YD(e) {
+        function Yb(e) {
           let t,
             n,
             { afk: i, ...r } = e,
@@ -106768,7 +106783,7 @@ ${a}`);
                 {
                   text: tv.intl.string(tv.t.BddRzS),
                   onClick: () => {
-                    r.onClose(), YT.A.clearSuppressWarning(a);
+                    r.onClose(), Yg.A.clearSuppressWarning(a);
                   },
                   variant: "primary",
                 },
@@ -106783,20 +106798,20 @@ ${a}`);
             })
           );
         }
-        let Yv = function () {
+        let YM = function () {
             let e = eI.useRef(null);
             function t() {
               null !== e.current &&
                 ((0, tQ.closeModal)(e.current), (e.current = null));
             }
             let [n, i] = (0, eE.yK)(
-                [WE],
-                () => [WE.shouldShowWarning(), WE.isAFKChannel()],
+                [Wh],
+                () => [Wh.shouldShowWarning(), Wh.isAFKChannel()],
                 [],
               ),
               r = eI.useCallback(() => {
                 e.current = (0, tQ.openModal)((e) =>
-                  (0, b.jsx)(YD, { afk: i, ...e }),
+                  (0, b.jsx)(Yb, { afk: i, ...e }),
                 );
               }, [i]);
             return (
@@ -106812,34 +106827,34 @@ ${a}`);
               null
             );
           },
-          Yb = function () {
+          YP = function () {
             return (0, b.jsxs)(b.Fragment, {
               children: [
-                (0, b.jsx)(Yy, {}),
-                (0, b.jsx)(Yp, {}),
                 (0, b.jsx)(Yv, {}),
-                (0, b.jsx)(YR, {}),
+                (0, b.jsx)(Ym, {}),
+                (0, b.jsx)(YM, {}),
+                (0, b.jsx)(Yy, {}),
               ],
             });
           };
-        var YM = n(663413),
-          YP = n(82495),
-          YU = n(725807),
-          Yw = n(450232);
-        function YG() {
+        var YU = n(663413),
+          Yw = n(82495),
+          YG = n(725807),
+          Yx = n(450232);
+        function Yk() {
           k.h.dispatch({ type: "APP_ICON_EDITOR_RESET" });
         }
-        var Yx = n(526162),
-          Yk = n(806932),
-          YF = n(174197),
-          YB = n(111173);
-        function YV() {
+        var YF = n(526162),
+          YB = n(806932),
+          YV = n(174197),
+          YH = n(111173);
+        function Yj() {
           let e = (0, eE.bG)([eF.default], () =>
               lY.Ay.isPremium(eF.default.getCurrentUser()),
             ),
             t = (0, lK.V)(),
             n = t?.subscriptionTrial?.skuId === lX.pe.TIER_2;
-          return (0, b.jsx)(YU.A, {
+          return (0, b.jsx)(YG.A, {
             size: sh.$n.Sizes.MEDIUM,
             textOptions: {
               textOverride: e
@@ -106854,45 +106869,45 @@ ${a}`);
             subscriptionTier: lX.pe.TIER_2,
           });
         }
-        function YH(e) {
+        function YW(e) {
           let { markAsDismissed: t } = e;
           return (0, b.jsxs)("div", {
-            className: YB.nV,
+            className: YH.nV,
             children: [
               (0, b.jsx)(tI.D, {
-                className: YB.VV,
-                onClick: () => void (t?.(rm.i.DISMISS), (0, lw.Jp)(), YG()),
+                className: YH.VV,
+                onClick: () => void (t?.(rm.i.DISMISS), (0, lw.Jp)(), Yk()),
                 children: (0, b.jsx)(fZ.a, {
                   size: "md",
                   color: "currentColor",
-                  className: YB.P0,
+                  className: YH.P0,
                 }),
               }),
               (0, b.jsxs)("div", {
-                className: YB.DD,
+                className: YH.DD,
                 children: [
                   (0, b.jsx)(sq.D, {
                     variant: "heading-lg/extrabold",
                     children: tv.intl.string(tv.t["hb/wE0"]),
                   }),
-                  (0, b.jsx)(Yw.A, { color: "strong", size: "sm" }),
+                  (0, b.jsx)(Yx.A, { color: "strong", size: "sm" }),
                 ],
               }),
             ],
           });
         }
-        function Yj(e) {
+        function YY(e) {
           let { isCoachmark: t, markAsDismissed: n } = e,
-            i = (0, eE.bG)([Yx.A], () => Yx.A.isUpsellPreview);
+            i = (0, eE.bG)([YF.A], () => YF.A.isUpsellPreview);
           return (0, b.jsxs)("div", {
-            className: YB.N3,
+            className: YH.N3,
             children: [
-              i && (0, b.jsx)(YV, {}),
+              i && (0, b.jsx)(Yj, {}),
               (0, b.jsx)(tE.$, {
                 onClick: function () {
                   n?.(rm.i.DISMISS),
                     (0, lw.Jp)(),
-                    YG(),
+                    Yk(),
                     t ||
                       (0, ot.openUserSettings)(
                         l9.X.APPEARANCE_IN_APP_ICON_CATEGORY,
@@ -106908,18 +106923,18 @@ ${a}`);
             ],
           });
         }
-        function YW(e) {
+        function YK(e) {
           let {
               isCoachmark: t,
               markAsDismissed: n,
-              iconSize: i = YF.N8.SIZE_60,
+              iconSize: i = YV.N8.SIZE_60,
             } = e,
             { analyticsLocations: r } = (0, r$.Ay)(np.A.APP_ICON_EDITOR),
             a = (0, eE.bG)([eF.default], () => eF.default.getCurrentUser()),
             { isUpsellPreview: s, shouldEditorAnimate: l } = (0, eE.cf)(
-              [Yx.A, ef.Ay],
+              [YF.A, ef.Ay],
               () => ({
-                isUpsellPreview: Yx.A.isUpsellPreview,
+                isUpsellPreview: YF.A.isUpsellPreview,
                 shouldEditorAnimate: t && !ef.Ay.useReducedMotion,
               }),
             ),
@@ -106934,9 +106949,9 @@ ${a}`);
                 (0, wy.uq)(lX.e.APP_ICON_UPSELL),
               ));
           }, [s, r]);
-          let d = (0, YP.A)(null, s ? YG : j.tEg);
+          let d = (0, Yw.A)(null, s ? Yk : j.tEg);
           eI.useEffect(() => {
-            if (s && !o) return YG;
+            if (s && !o) return Yk;
           }, [s, o]);
           let c = eI.useMemo(
             () => ({
@@ -106951,37 +106966,37 @@ ${a}`);
                 value: r,
                 children: (0, b.jsx)("div", {
                   ref: d,
-                  className: tf()(YB.EN, l ? YB.hP : null),
+                  className: tf()(YH.EN, l ? YH.hP : null),
                   "data-app-right-panel": !0,
                   style: c,
                   children: (0, b.jsxs)(sX.F, {
                     children: [
-                      (0, b.jsx)(YH, { markAsDismissed: n }),
+                      (0, b.jsx)(YW, { markAsDismissed: n }),
                       (0, b.jsx)(uo.Ip, {
-                        className: YB.sV,
-                        children: (0, b.jsx)(Yk.A, {
-                          className: YB.Gg,
+                        className: YH.sV,
+                        children: (0, b.jsx)(YB.A, {
+                          className: YH.Gg,
                           isEditor: !0,
                           iconSize: i,
                         }),
                       }),
-                      (0, b.jsx)(Yj, { markAsDismissed: n, isCoachmark: t }),
+                      (0, b.jsx)(YY, { markAsDismissed: n, isCoachmark: t }),
                     ],
                   }),
                 }),
               });
         }
-        var YY = n(141343),
-          YK = n(103714),
-          Y$ = n(748284),
-          Yz = n(438221);
-        function YX() {
+        var Y$ = n(141343),
+          Yz = n(103714),
+          YX = n(748284),
+          Yq = n(438221);
+        function YZ() {
           return (0, b.jsx)("div", {
             "data-app-right-panel": !0,
-            className: Y$.kL,
+            className: YX.kL,
           });
         }
-        let Yq = (0, rl.Fe)({
+        let YQ = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("329172"),
@@ -107003,9 +107018,9 @@ ${a}`);
                 n.e("366996"),
               ]).then(n.bind(n, 974800)),
             webpackId: 974800,
-            renderLoader: YX,
+            renderLoader: YZ,
           }),
-          YZ = (0, rl.Fe)({
+          YJ = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("329172"),
@@ -107039,9 +107054,9 @@ ${a}`);
                 n.e("851200"),
               ]).then(n.bind(n, 238234)),
             webpackId: 238234,
-            renderLoader: YX,
+            renderLoader: YZ,
           }),
-          YQ = (0, rl.Fe)({
+          Y0 = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("249169"),
@@ -107078,11 +107093,11 @@ ${a}`);
             renderLoader: function () {
               return (0, b.jsx)("div", {
                 "data-app-right-panel": !0,
-                className: Yz.kL,
+                className: Yq.kL,
               });
             },
           }),
-          YJ = (0, rl.Fe)({
+          Y1 = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("70866"),
@@ -107113,7 +107128,7 @@ ${a}`);
               ]).then(n.bind(n, 321552)),
             webpackId: 321552,
           }),
-          Y0 = function (e) {
+          Y2 = function (e) {
             let { mobile: t } = e,
               n = (0, eE.bG)([eF.default], () =>
                 lY.Ay.canUseClientThemes(eF.default.getCurrentUser()),
@@ -107131,7 +107146,7 @@ ${a}`);
                     return !1;
                   }
                 })(),
-              a = (0, YY.V)(),
+              a = (0, Y$.V)(),
               { activePanel: s, metadata: l } = (0, lw.fy)(),
               o = (0, eE.bG)([vi.A], () => vi.A.hasLayers()),
               d = [];
@@ -107161,7 +107176,7 @@ ${a}`);
               return (0, b.jsxs)(b.Fragment, {
                 children: [
                   f &&
-                    (0, b.jsx)(Yq, {
+                    (0, b.jsx)(YQ, {
                       markAsDismissed: _
                         ? u
                         : () => {
@@ -107172,26 +107187,26 @@ ${a}`);
                           },
                       showClientThemesCoachmark: _,
                     }),
-                  I && (0, b.jsx)(YW, { isCoachmark: !1, markAsDismissed: u }),
+                  I && (0, b.jsx)(YK, { isCoachmark: !1, markAsDismissed: u }),
                   p &&
-                    (0, b.jsx)(YZ, {
+                    (0, b.jsx)(YJ, {
                       metadata: l ?? {},
                       markAsDismissed: u,
                       isCoachmark: E,
                       isMobile: t,
                     }),
-                  T && (0, b.jsx)(YQ, { isMobile: t }),
-                  m && (0, b.jsx)(YJ, {}),
+                  T && (0, b.jsx)(Y0, { isMobile: t }),
+                  m && (0, b.jsx)(Y1, {}),
                 ],
               });
             }
             return t
-              ? (0, b.jsx)("div", { className: YK.A, children: g() })
+              ? (0, b.jsx)("div", { className: Yz.A, children: g() })
               : g();
           };
-        var Y1 = n(404374),
-          Y2 = n(573435),
-          Y3 = n(349805);
+        var Y3 = n(404374),
+          Y5 = n(573435),
+          Y6 = n(349805);
         n(939857),
           Promise.resolve()
             .then(n.bind(n, 677134))
@@ -107208,7 +107223,7 @@ ${a}`);
                     !1,
                   );
             }),
-          (0, Wv.h)({ getDefaultLinkInterceptor: Wx.default }),
+          (0, WM.h)({ getDefaultLinkInterceptor: WF.default }),
           (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
@@ -107232,14 +107247,14 @@ ${a}`);
               ]).then(n.bind(n, 461624)),
             webpackId: 461624,
           });
-        let Y5 = (0, rl.Fe)({
+        let Y4 = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([n.e("748231"), n.e("398254"), n.e("999063")]).then(
                 n.bind(n, 1464),
               ),
             webpackId: 1464,
           }),
-          Y6 = eI.memo(function () {
+          Y7 = eI.memo(function () {
             let e = (0, eE.bG)([vi.A], () => vi.A.hasLayers()),
               t = (0, tQ.useModalsStore)(tQ.hasAnyModalOpen),
               n = (0, eE.bG)([ei.default], () => ei.default.isAuthenticated());
@@ -107249,7 +107264,7 @@ ${a}`);
               isLayerOpen: e,
             });
           }),
-          Y4 = function (e) {
+          Y8 = function (e) {
             var t;
             let n,
               { children: i, skipsSettingDefaultPageTitle: r } = e,
@@ -107261,80 +107276,80 @@ ${a}`);
               o = eI.useRef(document.body),
               d = `${l}`;
             (t = "AppSkeleton"),
-              (n = Yu.A.useCanUIRequestGatewaySocket()),
+              (n = YE.A.useCanUIRequestGatewaySocket()),
               eI.useEffect(() => {
                 if (n)
                   return (
-                    Y_.uG(t),
+                    YA.uG(t),
                     () => {
-                      Y_.qr(t);
+                      YA.qr(t);
                     }
                   );
               }, [t, n]);
-            let c = (0, Yc.sK)("AppSkeleton");
+            let c = (0, Y_.sK)("AppSkeleton");
             eI.useEffect(() => {
-              c ? ex.w.set(Yc.AL, !0) : ex.w.remove(Yc.AL);
+              c ? ex.w.set(Y_.AL, !0) : ex.w.remove(Y_.AL);
             }, [c]);
-            let u = (0, eE.bG)([Yf.A], () => Yf.A.canPlayWowMoment);
+            let u = (0, eE.bG)([Yp.A], () => Yp.A.canPlayWowMoment);
             return (0, b.jsx)(
-              YI.e,
+              YT.e,
               {
-                children: (0, b.jsxs)(Wk.A, {
+                children: (0, b.jsxs)(WB.A, {
                   children: [
-                    (0, b.jsx)(YM.A, { skipsSettingDefaultPageTitle: r }),
-                    (0, b.jsx)(WG.N, {
-                      children: (0, b.jsx)(W5.A, {
+                    (0, b.jsx)(YU.A, { skipsSettingDefaultPageTitle: r }),
+                    (0, b.jsx)(Wk.N, {
+                      children: (0, b.jsx)(W4.A, {
                         children: (0, b.jsxs)(eh.xp, {
                           containerRef: o,
                           children: [
-                            (0, b.jsx)(Y2.Al, {}),
-                            (0, b.jsx)(Y1.Ay, {}),
-                            (0, b.jsx)(Wb.Ut, {}),
+                            (0, b.jsx)(Y5.Al, {}),
+                            (0, b.jsx)(Y3.Ay, {}),
+                            (0, b.jsx)(WP.Ut, {}),
                             (0, b.jsx)(tg.Wr, {
                               appContext: j.BRT.APP,
                               renderWindow: window,
-                              children: (0, b.jsxs)(WB.Yf, {
+                              children: (0, b.jsxs)(WH.Yf, {
                                 children: [
-                                  null != a ? (0, b.jsx)(Y6, {}) : null,
+                                  null != a ? (0, b.jsx)(Y7, {}) : null,
                                   (0, b.jsxs)("div", {
-                                    className: tf()(Y3.XX, s && Y3.Xq),
+                                    className: tf()(Y6.XX, s && Y6.Xq),
                                     children: [
-                                      (0, b.jsx)(WJ.C1, {}),
+                                      (0, b.jsx)(W1.C1, {}),
                                       (0, b.jsx)("div", {
-                                        className: Y3.x$,
+                                        className: Y6.x$,
                                         "data-app-not-dev-tools": !0,
-                                        children: (0, b.jsx)(WQ.l, {
-                                          children: (0, b.jsx)(VR.ks, {
+                                        children: (0, b.jsx)(W0.l, {
+                                          children: (0, b.jsx)(Vy.ks, {
                                             children: (0, b.jsx)(
-                                              WF.A.Provider,
+                                              WV.A.Provider,
                                               {
                                                 value: lW.A,
-                                                children: (0, b.jsxs)(WZ.p, {
+                                                children: (0, b.jsxs)(WJ.p, {
                                                   children: [
                                                     (0, b.jsx)("div", {
                                                       className: tf()(
-                                                        s ? Y3.C$ : Y3.yA,
+                                                        s ? Y6.C$ : Y6.yA,
                                                       ),
                                                       children: i,
                                                     }),
-                                                    (0, b.jsx)(WU.A, {
+                                                    (0, b.jsx)(WG.A, {
                                                       showConjureAppPictureInPictures:
                                                         !0,
                                                     }),
-                                                    (0, b.jsx)(Yl, {}),
-                                                    (0, b.jsx)(Ww.A, {}),
-                                                    (0, b.jsx)(WM.b, {}),
-                                                    (0, b.jsx)(Yb, {}),
+                                                    (0, b.jsx)(Yd, {}),
+                                                    (0, b.jsx)(Wx.A, {}),
+                                                    (0, b.jsx)(WU.b, {}),
+                                                    (0, b.jsx)(YP, {}),
                                                     (0, b.jsx)(M1.up, {}),
-                                                    (0, b.jsx)(WD.P, {}),
-                                                    (0, b.jsx)(WB.C8, {}),
-                                                    (0, b.jsx)(VR.ok, {}),
-                                                    (0, b.jsx)(WP.N, {
+                                                    (0, b.jsx)(Wb.P, {}),
+                                                    (0, b.jsx)(WH.C8, {}),
+                                                    (0, b.jsx)(Vy.ok, {}),
+                                                    (0, b.jsx)(Ww.N, {
                                                       appContext: j.BRT.APP,
                                                     }),
-                                                    (0, b.jsx)(Wj, {}),
-                                                    (0, b.jsx)(Yh, {}),
-                                                    u && (0, b.jsx)(Y5, {}),
+                                                    (0, b.jsx)(WY, {}),
+                                                    (0, b.jsx)(YI, {}),
+                                                    u && (0, b.jsx)(Y4, {}),
                                                   ],
                                                 }),
                                               },
@@ -107342,16 +107357,16 @@ ${a}`);
                                           }),
                                         }),
                                       }),
-                                      (0, b.jsx)(Wq, {}),
-                                      (0, b.jsx)(Y0, { mobile: s }),
-                                      (0, b.jsx)(W3, { mobile: s }),
+                                      (0, b.jsx)(WQ, {}),
+                                      (0, b.jsx)(Y2, { mobile: s }),
+                                      (0, b.jsx)(W6, { mobile: s }),
                                     ],
                                   }),
                                   !1,
                                 ],
                               }),
                             }),
-                            (0, b.jsx)(Wb.Ut, {}),
+                            (0, b.jsx)(WP.Ut, {}),
                           ],
                         }),
                       }),
@@ -107362,34 +107377,34 @@ ${a}`);
               d,
             );
           };
-        var Y7 =
+        var Y9 =
           (((y = {})[(y.NOT_STARTED = 0)] = "NOT_STARTED"),
           (y[(y.IN_PROGRESS = 1)] = "IN_PROGRESS"),
           (y[(y.FAILED = 2)] = "FAILED"),
           (y[(y.SKIPPED = 3)] = "SKIPPED"),
           y);
-        let Y8 = 0;
-        class Y9 extends eE.Ay.Store {
+        let Ke = 0;
+        class Kt extends eE.Ay.Store {
           static displayName = "DomainMigrationStore";
           getMigrationStatus() {
-            return Y8;
+            return Ke;
           }
         }
-        let Ke = new Y9(k.h, {
+        let Kn = new Kt(k.h, {
           DOMAIN_MIGRATION_START: function () {
-            Y8 = 1;
+            Ke = 1;
           },
           DOMAIN_MIGRATION_FAILURE: function () {
-            Y8 = 2;
+            Ke = 2;
           },
           DOMAIN_MIGRATION_SKIP: function () {
-            Y8 = 3;
+            Ke = 3;
           },
         });
-        function Kt(e) {
+        function Ki(e) {
           return e?._state?.lastTestTimestamp;
         }
-        function Kn() {
+        function Kr() {
           return (
             eI.useEffect(() => {
               window.location.origin ===
@@ -107416,8 +107431,8 @@ ${a}`);
                         : JSON.parse(e.RTCRegionStore),
                     a =
                       null == r ||
-                      null == Kt(r) ||
-                      Kt(r) <= Kt(ex.w.get("RTCRegionStore"));
+                      null == Ki(r) ||
+                      Ki(r) <= Ki(ex.w.get("RTCRegionStore"));
                   n &&
                     i &&
                     !a &&
@@ -107441,7 +107456,7 @@ ${a}`);
             null
           );
         }
-        class Ki extends nI.A {
+        class Ka extends nI.A {
           _initialize() {
             k.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen);
           }
@@ -107453,9 +107468,9 @@ ${a}`);
               er.encryptAndStoreTokens();
           };
         }
-        let Kr = new Ki();
-        var Ka = n(53505);
-        function Ks(e) {
+        let Ks = new Ka();
+        var Kl = n(53505);
+        function Ko(e) {
           if (null == e || "" === e) return null;
           try {
             let t = new URL(e);
@@ -107467,9 +107482,9 @@ ${a}`);
             return null;
           }
         }
-        var Kl = n(396574);
+        var Kd = n(396574);
         n(967347);
-        let Ko = (0, rl.Fe)({
+        let Kc = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([n.e("990994"), n.e("299681")]).then(
                 n.bind(n, 224116),
@@ -107477,7 +107492,7 @@ ${a}`);
             webpackId: 224116,
             name: "UnsupportedBrowser",
           }),
-          Kd = (0, rl.Fe)({
+          Ku = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([n.e("569433"), n.e("944602"), n.e("825280")]).then(
                 n.bind(n, 987482),
@@ -107485,12 +107500,12 @@ ${a}`);
             webpackId: 987482,
             name: "DownloadApps",
           }),
-          Kc = (0, rl.Fe)({
+          K_ = (0, rl.Fe)({
             createPromise: () => n.e("184809").then(n.bind(n, 312625)),
             webpackId: 312625,
             name: "InviteProxy",
           }),
-          Ku = (0, rl.Fe)({
+          KE = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("99351"),
@@ -107501,7 +107516,7 @@ ${a}`);
             webpackId: 459789,
             name: "VerifyConnectedAccount",
           }),
-          K_ = (0, rl.Fe)({
+          KA = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("99351"),
@@ -107512,7 +107527,7 @@ ${a}`);
             webpackId: 744185,
             name: "VerifyConnectedAccountSuccess",
           }),
-          KE = (0, rl.Fe)({
+          Kh = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("99351"),
@@ -107523,7 +107538,7 @@ ${a}`);
             webpackId: 885338,
             name: "VerifyConnectedAccountError",
           }),
-          KA = (0, rl.Fe)({
+          Kf = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("99351"),
@@ -107536,7 +107551,7 @@ ${a}`);
             webpackId: 97649,
             name: "LinkConnectedAccount",
           }),
-          Kh = (0, rl.Fe)({
+          KI = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([n.e("698965"), n.e("336335"), n.e("765893")]).then(
                 n.bind(n, 209086),
@@ -107544,7 +107559,7 @@ ${a}`);
             webpackId: 209086,
             name: "LinkAuthorize",
           }),
-          Kf = (0, rl.Fe)({
+          Kp = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("630279"),
@@ -107559,7 +107574,7 @@ ${a}`);
             webpackId: 627318,
             name: "ActivateDevice",
           }),
-          KI = (0, rl.Fe)({
+          KT = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("324732"),
@@ -107779,7 +107794,7 @@ ${a}`);
             webpackId: 56989,
             name: "ViewsWithAuth",
           }),
-          Kp = (0, rl.Fe)({
+          Km = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("630279"),
@@ -107793,7 +107808,7 @@ ${a}`);
             webpackId: 234260,
             name: "ViewsWithOAuth2",
           }),
-          KT = (0, rl.Fe)({
+          Kg = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([n.e("301969"), n.e("730514")]).then(
                 n.bind(n, 146088),
@@ -107801,12 +107816,12 @@ ${a}`);
             webpackId: 146088,
             name: "BrowserHandoff",
           }),
-          Km = (0, rl.Fe)({
+          KS = (0, rl.Fe)({
             createPromise: () => n.e("574272").then(n.bind(n, 569710)),
             webpackId: 569710,
             name: "MobileWebHandoffFallback",
           }),
-          Kg = (0, rl.Fe)({
+          KN = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("82731"),
@@ -108273,8 +108288,8 @@ ${a}`);
                 n.e("773534"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("400501"),
                 n.e("985794"),
                 n.e("732194"),
@@ -108376,18 +108391,17 @@ ${a}`);
                 n.e("295175"),
                 n.e("766031"),
                 n.e("574678"),
-                n.e("285802"),
                 n.e("342234"),
                 n.e("81189"),
                 n.e("394317"),
                 n.e("741111"),
                 n.e("200203"),
+                n.e("697367"),
                 n.e("489523"),
                 n.e("249629"),
                 n.e("726294"),
                 n.e("780407"),
                 n.e("127659"),
-                n.e("65200"),
                 n.e("267255"),
                 n.e("781949"),
                 n.e("356675"),
@@ -108459,8 +108473,8 @@ ${a}`);
                 n.e("701485"),
                 n.e("192218"),
                 n.e("286712"),
-                n.e("842775"),
                 n.e("941348"),
+                n.e("842775"),
                 n.e("639721"),
                 n.e("903820"),
                 n.e("726223"),
@@ -108513,7 +108527,7 @@ ${a}`);
             webpackId: 436405,
             name: "Overlay",
           }),
-          KS = (0, rl.Fe)({
+          KC = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("213217"),
@@ -108526,7 +108540,7 @@ ${a}`);
             webpackId: 654423,
             name: "SuspendedUserSafetyHubPage",
           }),
-          KN = (0, rl.Fe)({
+          KO = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("346829"),
@@ -108537,7 +108551,7 @@ ${a}`);
             webpackId: 125820,
             name: "QuestsLandingPage",
           }),
-          KC = (0, rl.Fe)({
+          KR = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("346829"),
@@ -108548,7 +108562,7 @@ ${a}`);
             webpackId: 589877,
             name: "QuestPreviewLandingPage",
           }),
-          KO = (0, rl.Fe)({
+          KL = (0, rl.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e("99351"),
@@ -108559,35 +108573,35 @@ ${a}`);
             webpackId: 519716,
             name: "ConnectionsAuthorizeContinue",
           }),
-          KR = (0, rl.Fe)({
+          Ky = (0, rl.Fe)({
             createPromise: () => n.e("215243").then(n.bind(n, 190662)),
             webpackId: 190662,
             name: "ApplicationDirectoryRoutes",
           }),
-          KL = (0, rl.Fe)({
+          KD = (0, rl.Fe)({
             createPromise: () => n.e("338217").then(n.bind(n, 149755)),
             webpackId: 149755,
             name: "ApplicationDirectoryGlobalDiscoveryRoutes",
           });
-        function Ky() {
-          return (0, b.jsx)(Wy, {});
+        function Kv() {
+          return (0, b.jsx)(Wv, {});
         }
-        let KD = new Set([
+        let Kb = new Set([
           j.BVt.LOGIN,
           j.BVt.LOGIN_HANDOFF,
           j.BVt.INVITE_LOGIN(":inviteCode"),
           j.BVt.GIFT_CODE_LOGIN(":giftCode"),
           j.BVt.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"),
         ]);
-        function Kv(e, t) {
-          return t ? e.filter((e) => !KD.has(e)) : e;
+        function KM(e, t) {
+          return t ? e.filter((e) => !Kb.has(e)) : e;
         }
-        function Kb() {
+        function KP() {
           let e = (0, eE.bG)([ei.default], () => ei.default.isAuthenticated());
-          return (0, eE.bG)([Ke], () => Ke.getMigrationStatus()) ===
-            Y7.IN_PROGRESS
+          return (0, eE.bG)([Kn], () => Kn.getMigrationStatus()) ===
+            Y9.IN_PROGRESS
             ? null
-            : Kl.VP
+            : Kd.VP
               ? eB.isPlatformEmbedded
                 ? (0, b.jsxs)(tW.dO, {
                     children: [
@@ -108595,7 +108609,7 @@ ${a}`);
                         ? null
                         : (0, b.jsx)(tW.qh, {
                             path: j.BVt.ACCOUNT_STANDING,
-                            component: KS,
+                            component: KC,
                           }),
                       (0, b.jsx)(tW.qh, {
                         exact: !0,
@@ -108605,10 +108619,10 @@ ${a}`);
                       (0, b.jsx)(rE.A, {
                         exact: !0,
                         path: j.BVt.APPS,
-                        component: Kd,
+                        component: Ku,
                       }),
                       (0, b.jsx)(tW.qh, {
-                        path: Kv(
+                        path: KM(
                           [
                             j.BVt.LOGIN,
                             j.BVt.REGISTER,
@@ -108620,11 +108634,11 @@ ${a}`);
                           ],
                           !1,
                         ),
-                        component: KI,
+                        component: KT,
                       }),
                       (0, b.jsx)(rE.A, {
                         path: j.BVt.INVITE_PROXY(a5.pv.channelId()),
-                        component: Kc,
+                        component: K_,
                       }),
                       (0, b.jsx)(tW.rd, {
                         from: j.BVt.INVITE(""),
@@ -108634,7 +108648,7 @@ ${a}`);
                         from: j.BVt.GIFT_CODE(""),
                         to: j.BVt.LOGIN,
                       }),
-                      (0, b.jsx)(tW.qh, { render: Ky }),
+                      (0, b.jsx)(tW.qh, { render: Kv }),
                     ],
                   })
                 : (0, b.jsxs)(tW.dO, {
@@ -108645,7 +108659,7 @@ ${a}`);
                         render: () => (0, b.jsx)(tX, {}),
                       }),
                       (0, b.jsx)(tW.qh, {
-                        path: Kv(
+                        path: KM(
                           [
                             j.BVt.LOGIN_ONE_TIME,
                             j.BVt.LOGIN,
@@ -108668,7 +108682,7 @@ ${a}`);
                           ],
                           !1,
                         ),
-                        component: KI,
+                        component: KT,
                       }),
                       e
                         ? null
@@ -108677,7 +108691,7 @@ ${a}`);
                               ":section?",
                               ":subsection?",
                             ),
-                            component: KI,
+                            component: KT,
                           }),
                       e
                         ? null
@@ -108687,7 +108701,7 @@ ${a}`);
                               a5.pv.channelId({ optional: !0 }),
                               ":messageId?",
                             ),
-                            component: KI,
+                            component: KT,
                           }),
                       (0, b.jsx)(tW.rd, {
                         from: j.BVt.INVITE(""),
@@ -108695,7 +108709,7 @@ ${a}`);
                       }),
                       (0, b.jsx)(rE.A, {
                         path: j.BVt.INVITE_PROXY(a5.pv.channelId()),
-                        component: Kc,
+                        component: K_,
                       }),
                       (0, b.jsx)(tW.rd, {
                         from: j.BVt.GIFT_CODE(""),
@@ -108703,7 +108717,7 @@ ${a}`);
                       }),
                       (0, b.jsx)(rE.A, {
                         path: j.BVt.QUESTS(":questId"),
-                        component: KN,
+                        component: KO,
                         impressionName: tY.ImpressionNames.QUESTS_LANDING_PAGE,
                         impressionProperties: (e) => {
                           let { match: t } = e;
@@ -108717,41 +108731,41 @@ ${a}`);
                       }),
                       (0, b.jsx)(rE.A, {
                         path: j.BVt.QUEST_PREVIEW(":questId"),
-                        component: KC,
+                        component: KR,
                       }),
-                      (0, b.jsx)(rE.A, { path: j.BVt.HANDOFF, component: KT }),
+                      (0, b.jsx)(rE.A, { path: j.BVt.HANDOFF, component: Kg }),
                       (0, b.jsx)(rE.A, {
                         path: j.BVt.MOBILE_WEB_HANDOFF,
-                        component: Km,
+                        component: KS,
                       }),
                       (0, b.jsx)(rE.A, {
                         path: j.BVt.CONNECTION_LINK(":type"),
-                        component: KA,
-                      }),
-                      (0, b.jsx)(rE.A, {
-                        path: j.BVt.CONNECTION_LINK_AUTHORIZE(":type"),
-                        component: Kh,
-                      }),
-                      (0, b.jsx)(rE.A, { path: j.BVt.ACTIVATE, component: Kf }),
-                      (0, b.jsx)(rE.A, {
-                        path: j.BVt.ACTIVATE_HANDOFF,
                         component: Kf,
                       }),
                       (0, b.jsx)(rE.A, {
+                        path: j.BVt.CONNECTION_LINK_AUTHORIZE(":type"),
+                        component: KI,
+                      }),
+                      (0, b.jsx)(rE.A, { path: j.BVt.ACTIVATE, component: Kp }),
+                      (0, b.jsx)(rE.A, {
+                        path: j.BVt.ACTIVATE_HANDOFF,
+                        component: Kp,
+                      }),
+                      (0, b.jsx)(rE.A, {
                         path: j.BVt.CONNECTIONS_AUTHORIZE_CONTINUE(":type"),
-                        component: KO,
+                        component: KL,
                       }),
                       (0, b.jsx)(rE.A, {
                         path: j.BVt.CONNECTIONS_SUCCESS(":type"),
-                        component: K_,
+                        component: KA,
                       }),
                       (0, b.jsx)(rE.A, {
                         path: j.BVt.CONNECTIONS_ERROR(":type"),
-                        component: KE,
+                        component: Kh,
                       }),
                       (0, b.jsx)(rE.A, {
                         path: j.BVt.CONNECTIONS(":type"),
-                        component: Ku,
+                        component: KE,
                       }),
                       (0, b.jsx)(rE.A, {
                         path: j.BVt.DOWNLOAD_QR_CODE_REDIRECT,
@@ -108771,7 +108785,7 @@ ${a}`);
                                 referring_location: n,
                                 qr_code: !0,
                               }),
-                            (window.location.href = (0, Ka.b$)(
+                            (window.location.href = (0, Kl.b$)(
                               null != n && "" !== n ? n : "qr_code",
                               e,
                             )),
@@ -108788,10 +108802,10 @@ ${a}`);
                             i =
                               ((e = window.location.search ?? ""),
                               {
-                                desktop: Ks(
+                                desktop: Ko(
                                   (t = (0, tq.parse)(e)).desktop_link,
                                 ),
-                                mobile: Ks(t.mobile_link),
+                                mobile: Ko(t.mobile_link),
                               });
                           if ("iOS" !== n && "Android" !== n)
                             return (0, b.jsx)(tW.rd, {
@@ -108801,7 +108815,7 @@ ${a}`);
                                   : j.BVt.APP,
                             });
                           {
-                            let e = (0, Ka.b$)(
+                            let e = (0, Kl.b$)(
                                 "app_open_from_email",
                                 n,
                                 i.mobile,
@@ -108830,27 +108844,27 @@ ${a}`);
                           j.BVt.OAUTH2_ERROR,
                           j.BVt.OAUTH2_WHITELIST_ACCEPT,
                         ],
-                        component: Kp,
+                        component: Km,
                       }),
                       e
                         ? null
                         : (0, b.jsx)(tW.qh, {
                             path: [j.BVt.ACCOUNT_STANDING],
-                            component: KS,
+                            component: KC,
                           }),
                       e
                         ? null
                         : (0, b.jsx)(tW.qh, {
                             path: [j.BVt.APPLICATION_DIRECTORY],
-                            component: KR,
+                            component: Ky,
                           }),
                       e
                         ? null
                         : (0, b.jsx)(tW.qh, {
                             path: [j.BVt.GLOBAL_DISCOVERY_APPS],
-                            component: KL,
+                            component: KD,
                           }),
-                      (0, b.jsx)(tW.qh, { render: Ky }),
+                      (0, b.jsx)(tW.qh, { render: Kv }),
                       (0, b.jsx)(tW.rd, {
                         from: j.BVt.ACCOUNT_REVERT(""),
                         to: j.BVt.LOGIN,
@@ -108858,18 +108872,18 @@ ${a}`);
                     ],
                   })
               : (0, b.jsx)(tW.dO, {
-                  children: (0, b.jsx)(rE.A, { component: Ko }),
+                  children: (0, b.jsx)(rE.A, { component: Kc }),
                 });
         }
-        function KM() {
-          let e = (0, eE.bG)([Ke], () => Ke.getMigrationStatus());
+        function KU() {
+          let e = (0, eE.bG)([Kn], () => Kn.getMigrationStatus());
           return eB.isPlatformEmbedded &&
-            (e === Y7.NOT_STARTED || e === Y7.IN_PROGRESS) &&
+            (e === Y9.NOT_STARTED || e === Y9.IN_PROGRESS) &&
             !0 !== ex.w.get(tK.qx)
-            ? (0, b.jsx)(Kn, {})
+            ? (0, b.jsx)(Kr, {})
             : null;
         }
-        function KP() {
+        function Kw() {
           let e = (function () {
             let { pathname: e } = (0, tW.zy)();
             return null != (0, a6.B)(e, { path: j.BVt.APPLICATION_DIRECTORY });
@@ -108890,21 +108904,21 @@ ${a}`);
             eI.useEffect(
               () => (
                 eV.Ay.cleanupDisplaySleep(),
-                Kr.initialize(),
-                (jr.A.wasAuthenticated = ei.default.isAuthenticated()),
+                Ks.initialize(),
+                (js.A.wasAuthenticated = ei.default.isAuthenticated()),
                 () => {
-                  Kr.terminate();
+                  Ks.terminate();
                 }
               ),
               [],
             ),
-            (0, b.jsxs)(Y4, {
+            (0, b.jsxs)(Y8, {
               skipsSettingDefaultPageTitle: e,
-              children: [(0, b.jsx)(Kb, {}), (0, b.jsx)(KM, {})],
+              children: [(0, b.jsx)(KP, {}), (0, b.jsx)(KU, {})],
             })
           );
         }
-        class KU extends nI.A {
+        class KG extends nI.A {
           _initialize() {
             eB.isPlatformEmbedded &&
               (eV.Ay.on("APP_PUSH_ANALYTICS", (e, t) => {
@@ -108947,11 +108961,11 @@ ${a}`);
               });
           }
         }
-        let Kw = new KU(),
-          KG = "1402418696126992445";
-        function Kx(e, t) {
+        let Kx = new KG(),
+          Kk = "1402418696126992445";
+        function KF(e, t) {
           if (null == t) return null;
-          if (t.applicationId === KG) {
+          if (t.applicationId === Kk) {
             let n, i, r;
             return (
               (n =
@@ -108960,7 +108974,7 @@ ${a}`);
                   : 0),
               void 0 !==
               (r = (i = e.filter(
-                (e) => e.applicationId === KG && e.processPath.includes(n),
+                (e) => e.applicationId === Kk && e.processPath.includes(n),
               )).find((e) => "league of legends.exe" === e.executableName))
                 ? r
                 : i.length > 0
@@ -108984,26 +108998,26 @@ ${a}`);
             let i = e.rootedPath
                 .map((e) => n.get(e))
                 .filter((e) => null != e && null != e.windowHandle),
-              r = Kk(
+              r = KB(
                 t.rootedPath
                   .map((e) => n.get(e))
                   .filter((e) => null != e && null != e.windowHandle),
                 i,
               );
-            return 0 !== r ? r : Kk(t.rootedPath, e.rootedPath);
+            return 0 !== r ? r : KB(t.rootedPath, e.rootedPath);
           });
           let a = r.find((e) => null != e.application.windowHandle) ?? r[0];
           return null == a ? null : a.application;
         }
-        function Kk(e, t) {
+        function KB(e, t) {
           return e.length - t.length;
         }
-        var KF =
+        var KV =
           (((D = {}).STREAM = "stream"),
           (D.PAUSE = "pause"),
           (D.STOP = "stop"),
           D);
-        class KB {
+        class KH {
           callback;
           active;
           application;
@@ -109014,14 +109028,14 @@ ${a}`);
               (this.active = !1),
               (this.application = null),
               (this.sound = !0),
-              (this.logger = new kj.Vy("StreamDirector"));
+              (this.logger = new kW.Vy("StreamDirector"));
           }
           onStreamBegin(e, t, n) {
             let i,
               r =
                 null == (i = e.find((e) => e.processId === t))
                   ? null
-                  : Kx(e, i);
+                  : KF(e, i);
             (this.sound = n),
               null == r || null == r.windowHandle
                 ? this.callback({ type: "stop" })
@@ -109045,7 +109059,7 @@ ${a}`);
               : this._stop();
           }
           _update(e) {
-            let t = Kx(e, this.application);
+            let t = KF(e, this.application);
             if (null != t)
               return null == t.windowHandle ? this._pause() : this._stream(t);
             this._stop();
@@ -109077,8 +109091,8 @@ ${a}`);
               this.callback({ type: "pause" }));
           }
         }
-        var KV = n(929921);
-        class KH {
+        var Kj = n(929921);
+        class KW {
           director;
           applications;
           streamKey;
@@ -109086,7 +109100,7 @@ ${a}`);
           constructor() {
             (this.mode = null),
               (this.applications = []),
-              (this.director = new KB((e) => this._onDirectorAction(e))),
+              (this.director = new KH((e) => this._onDirectorAction(e))),
               k.h.subscribe("STREAM_START", (e) => {
                 let {
                     streamType: t,
@@ -109161,7 +109175,7 @@ ${a}`);
               (this.director.sound = i ?? !0),
               (this.director.application = null),
               this._onDirectorAction({
-                type: KF.STREAM,
+                type: KV.STREAM,
                 sourceId: t,
                 audioSourceId: n,
                 sound: i,
@@ -109178,7 +109192,7 @@ ${a}`);
                   this.director.onStreamEnd();
                   break;
                 case "verbatim-source":
-                  this._onDirectorAction({ type: KF.STOP, alsoClose: t });
+                  this._onDirectorAction({ type: KV.STOP, alsoClose: t });
                   break;
                 default:
                   throw Error(
@@ -109202,9 +109216,9 @@ ${a}`);
           }
           _onDirectorAction(e) {
             let t = d8.A.getCurrentUserActiveStream(),
-              n = KV.A.getState();
+              n = Kj.A.getState();
             switch (e.type) {
-              case KF.STREAM:
+              case KV.STREAM:
                 if (
                   (null != t && (0, ub.TZ)(t, !1),
                   e.sourceId.startsWith("camera") && null != e.audioSourceId)
@@ -109238,10 +109252,10 @@ ${a}`);
                     context: iM.x.STREAM,
                   });
                 break;
-              case KF.PAUSE:
+              case KV.PAUSE:
                 null != t && (0, ub.TZ)(t, !0);
                 break;
-              case KF.STOP:
+              case KV.STOP:
                 null != t && (0, Dw.A)(t, !0, e.alsoClose ?? !0);
                 break;
               default:
@@ -109269,8 +109283,8 @@ ${a}`);
             }
           }
         }
-        var Kj = n(579872);
-        class KW extends nI.A {
+        var KY = n(579872);
+        class KK extends nI.A {
           _initialize() {
             k.h.subscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission);
           }
@@ -109285,7 +109299,7 @@ ${a}`);
                   : j.MVz.ENABLE_MIC_CHROME;
             if (!n) {
               let e = "audio" !== t;
-              Kj.A.show({
+              KY.A.show({
                 title: e
                   ? tv.intl.string(tv.t.OqloH8)
                   : tv.intl.string(tv.t["kI+OOV"]),
@@ -109298,8 +109312,8 @@ ${a}`);
             }
           };
         }
-        let KY = new KW();
-        function KK() {
+        let K$ = new KK();
+        function Kz() {
           return {
             num_failed: 0,
             num_delta_installed: 0,
@@ -109312,18 +109326,18 @@ ${a}`);
             background_install_ms_total: 0,
           };
         }
-        function K$(e) {
+        function KX(e) {
           return "host" === e;
         }
-        class Kz {
+        class Kq {
           _installingModules = {};
           _downloadingModules = {};
           _report;
           constructor() {
-            this._report = KK();
+            this._report = Kz();
           }
           handleDownloadingModule(e) {
-            if (!K$(e.name)) {
+            if (!KX(e.name)) {
               if (null != this._downloadingModules[e.name])
                 return void console.warn(
                   "Duplicate downloading-module event for module ",
@@ -109349,7 +109363,7 @@ ${a}`);
             this._updateReportField(e, t, Math.max);
           }
           handleDownloadedModule(e) {
-            if (K$(e.name)) return;
+            if (KX(e.name)) return;
             let t = this._downloadingModules[e.name];
             if (null == t)
               return void console.warn(
@@ -109373,7 +109387,7 @@ ${a}`);
               delete this._downloadingModules[e.name];
           }
           handleInstallingModule(e) {
-            if (!K$(e.name)) {
+            if (!KX(e.name)) {
               if (null != this._installingModules[e.name])
                 return void console.warn(
                   "Duplicate installing-module event for module ",
@@ -109388,7 +109402,7 @@ ${a}`);
             }
           }
           handleInstalledModule(e) {
-            if (K$(e.name)) return;
+            if (KX(e.name)) return;
             let t = this._installingModules[e.name];
             if (null == t) return;
             let n = t.foreground ? "foreground" : "background",
@@ -109430,7 +109444,7 @@ ${a}`);
             return this._report;
           }
           reset() {
-            this._report = KK();
+            this._report = Kz();
           }
           submissionReady() {
             return (
@@ -109445,8 +109459,8 @@ ${a}`);
             );
           }
         }
-        class KX extends nI.A {
-          _tracker = new Kz();
+        class KZ extends nI.A {
+          _tracker = new Kq();
           _initialize() {
             eB.isPlatformEmbedded &&
               (eV.Ay.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()),
@@ -109484,19 +109498,19 @@ ${a}`);
                 this._tracker.reset());
           }
         }
-        let Kq = new KX();
+        let KQ = new KZ();
         n(742459), n(321034);
-        var KZ = n(823598);
-        let KQ = new ip.Ep(),
-          KJ = !1,
-          K0 = window.document.createElement("canvas");
-        (K0.width = 512), (K0.height = 288);
-        let K1 = K0.getContext("2d");
-        function K2() {
-          KQ.stop(), null != d && (d = null);
+        var KJ = n(823598);
+        let K0 = new ip.Ep(),
+          K1 = !1,
+          K2 = window.document.createElement("canvas");
+        (K2.width = 512), (K2.height = 288);
+        let K3 = K2.getContext("2d");
+        function K5() {
+          K0.stop(), null != d && (d = null);
         }
-        let K3 = iV().debounce((e, t, n, i) => {
-          K5(
+        let K6 = iV().debounce((e, t, n, i) => {
+          K4(
             e,
             (0, dF._z)({
               streamType: null != t ? cQ.U4.GUILD : cQ.U4.CALL,
@@ -109506,7 +109520,7 @@ ${a}`);
             }),
           );
         }, 500);
-        async function K5(e, t) {
+        async function K4(e, t) {
           if (
             d === e &&
             !(
@@ -109514,7 +109528,7 @@ ${a}`);
               (d8.A.getIsActiveStreamPreviewDisabled(t) ?? eR.uh.getSetting())
             )
           ) {
-            if (!KJ)
+            if (!K1)
               try {
                 var n, i;
                 let r, a, s, l, o, c, u, _;
@@ -109522,7 +109536,7 @@ ${a}`);
                 (_ = 0),
                 (eB.isPlatformEmbedded
                   ? function (e, t) {
-                      let n = (0, KZ.lE)();
+                      let n = (0, KJ.lE)();
                       return new Promise((i, r) => {
                         n.getNextVideoOutputFrame(e).then(
                           function (e) {
@@ -109539,7 +109553,7 @@ ${a}`);
                       });
                     }
                   : function (e, t) {
-                      let n = (0, kK.yL)(e);
+                      let n = (0, k$.yL)(e);
                       if (null == n)
                         return Promise.resolve(new ImageData(0, 0));
                       let { width: i, height: r } = n
@@ -109580,8 +109594,8 @@ ${a}`);
                   (a = Math.min(r, 288 / n.height)),
                   (s = n.width * a),
                   (l = n.height * a),
-                  (K0.width = s),
-                  (K0.height = l),
+                  (K2.width = s),
+                  (K2.height = l),
                   (c = (o = window.document.createElement("canvas")).getContext(
                     "2d",
                   )),
@@ -109589,8 +109603,8 @@ ${a}`);
                   (o.height = n.height),
                   (u = new ImageData(n.data, n.width, n.height)),
                   c?.putImageData(u, 0, 0),
-                  K1?.drawImage(o, 0, 0, n.width, n.height, 0, 0, s, l);
-                let E = K0.toDataURL("image/jpeg");
+                  K3?.drawImage(o, 0, 0, n.width, n.height, 0, 0, s, l);
+                let E = K2.toDataURL("image/jpeg");
                 if (
                   (k.h.dispatch({
                     type: "STREAM_PREVIEW_FETCH_SUCCESS",
@@ -109621,35 +109635,35 @@ ${a}`);
                   "Failed to post stream preview",
                   t,
                 ),
-                  d === e && KQ.start(6e4, r);
+                  d === e && K0.start(6e4, r);
                 return;
               }
-            d === e && (KJ ? KQ.start(6e4, r) : KQ.start(3e5, r));
+            d === e && (K1 ? K0.start(6e4, r) : K0.start(3e5, r));
           }
           function r() {
-            return K5(e, t);
+            return K4(e, t);
           }
         }
-        function K6(e, t) {
+        function K7(e, t) {
           return !(
             e === j.TGd.BROWSER && cD.Ay.hasKeybind(s8.zY.MOUSE_BUTTON, t)
           );
         }
-        let K4 = new (class {
+        let K8 = new (class {
           initialize() {
             (0, eB.isDesktop)() &&
               (eV.Ay.on("NAVIGATE_BACK", (e, t) => {
-                K6(t, s8.RX.Back) && (0, rw.OE)("native");
+                K7(t, s8.RX.Back) && (0, rw.OE)("native");
               }),
               eV.Ay.on("NAVIGATE_FORWARD", (e, t) => {
-                K6(t, s8.RX.Forward) && (0, rw.Qb)("native");
+                K7(t, s8.RX.Forward) && (0, rw.Qb)("native");
               }));
           }
         })();
-        var K7 = n(812729),
-          K8 = n.n(K7),
-          K9 = n(675991);
-        class $e extends nI.A {
+        var K9 = n(812729),
+          $e = n.n(K9),
+          $t = n(675991);
+        class $n extends nI.A {
           callbackActions = {
             [eG.dv.VIDEO]: () => {
               ek.Ay.supports(iM.O5.VIDEO) &&
@@ -109730,7 +109744,7 @@ ${a}`);
                 null != s
                   ? (0, D6.M)(s)
                   : { reachedLimit: void 0, limit: void 0 },
-              c = (0, K9.Q)({
+              c = (0, $t.Q)({
                 enabled: r,
                 join: !1,
                 channel: s,
@@ -109771,37 +109785,37 @@ ${a}`);
               this.setThumbarButtons(u);
           }, 100);
           setThumbarButtons(e) {
-            K8()(this.prevButtons, e) ||
+            $e()(this.prevButtons, e) ||
               ((this.prevButtons = e), eV.Ay.setThumbarButtons(e));
           }
         }
-        let $t = new $e();
-        var $n = n(350723),
-          $i = n(346142),
-          $r = n(848421);
-        function $a(e) {
+        let $i = new $n();
+        var $r = n(350723),
+          $a = n(346142),
+          $s = n(848421);
+        function $l(e) {
           let { children: t } = e;
           return (
             eI.useEffect(() => (L7.A.initialize(), () => L7.A.cleanup()), []),
             (0, b.jsx)(tc.vd, {
               children: (0, b.jsx)(tW.Ix, {
                 history: (0, l8.JK)(),
-                children: (0, b.jsx)($r.Kl, { children: t }),
+                children: (0, b.jsx)($s.Kl, { children: t }),
               }),
             })
           );
         }
-        var $s = n(306173),
-          $l = n(279234);
-        let $o = new ez.A("libdiscore"),
-          $d = !1;
-        async function $c() {
-          if (!$d) {
+        var $o = n(306173),
+          $d = n(279234);
+        let $c = new ez.A("libdiscore"),
+          $u = !1;
+        async function $_() {
+          if (!$u) {
             try {
               let e;
-              await (0, $l.P)();
-              let t = (0, $s.t7)(6, 7);
-              $o.info("The answer for life the universe and everything is:", t),
+              await (0, $d.P)();
+              let t = (0, $o.t7)(6, 7);
+              $c.info("The answer for life the universe and everything is:", t),
                 (e = []),
                 M.ML.forEach((t) => {
                   let n = t.getEnabledFeatureName();
@@ -109814,7 +109828,7 @@ ${a}`);
             } catch (e) {
               !(function (e) {
                 let t, n;
-                $o.error("Failed to execute smoke test:", e);
+                $c.error("Failed to execute smoke test:", e);
                 let i =
                   ((t = ""),
                   (n = null),
@@ -109831,55 +109845,55 @@ ${a}`);
                 });
               })(e);
             }
-            $d = !0;
+            $u = !0;
           }
         }
-        var $u = n(300923),
-          $_ = n(316501);
-        let $E = !1,
-          $A = null,
-          $h = null,
-          $f = (0, H.mj)({
+        var $E = n(300923),
+          $A = n(316501);
+        let $h = !1,
+          $f = null,
+          $I = null,
+          $p = (0, H.mj)({
             name: "2026-06-web-translate-dom-guard",
             kind: "installation",
             defaultConfig: { enabled: !0 },
             variations: { 1: { enabled: !1 } },
           });
-        function $I() {
-          $f.getConfig({ location: "web_app_entrypoint" }).enabled ||
-            ($E &&
-              (($E = !1),
-              null != $A && (Node.prototype.removeChild = $A),
-              null != $h && (Node.prototype.insertBefore = $h)),
-            R_.A.removeChangeListener($I));
+        function $T() {
+          $p.getConfig({ location: "web_app_entrypoint" }).enabled ||
+            ($h &&
+              (($h = !1),
+              null != $f && (Node.prototype.removeChild = $f),
+              null != $I && (Node.prototype.insertBefore = $I)),
+            R_.A.removeChangeListener($T));
         }
-        var $p = n(394072);
-        BS.default.cssDebuggingEnabled &&
+        var $m = n(394072);
+        BC.default.cssDebuggingEnabled &&
           n.e("836050").then(n.t.bind(n, 581929, 19)),
-          (0, $_.pF)(),
-          (0, $p.tO)();
-        let $T = 5 * iT.A.Millis.MINUTE,
-          $m = document.getElementById("app-mount");
-        ts()(null != $m, "Could not find app-mount"),
-          ($m.className = __OVERLAY__ ? "" : $u.l),
-          !$E &&
+          (0, $A.pF)(),
+          (0, $m.tO)();
+        let $g = 5 * iT.A.Millis.MINUTE,
+          $S = document.getElementById("app-mount");
+        ts()(null != $S, "Could not find app-mount"),
+          ($S.className = __OVERLAY__ ? "" : $E.l),
+          !$h &&
             (0, eB.isWeb)() &&
             "function" == typeof Node &&
             null != Node.prototype &&
-            (($E = !0),
-            ($A = Node.prototype.removeChild),
+            (($h = !0),
+            ($f = Node.prototype.removeChild),
             (Node.prototype.removeChild = function (e) {
-              return e.parentNode !== this ? e : $A.call(this, e);
+              return e.parentNode !== this ? e : $f.call(this, e);
             }),
-            ($h = Node.prototype.insertBefore),
+            ($I = Node.prototype.insertBefore),
             (Node.prototype.insertBefore = function (e, t) {
               return null != t && t.parentNode !== this
                 ? e
-                : $h.call(this, e, t);
+                : $I.call(this, e, t);
             })),
-          (0, eB.isWeb)() && (R_.A.addChangeListener($I), $I());
-        let $g = (0, tr.createRoot)($m),
-          $S = {
+          (0, eB.isWeb)() && (R_.A.addChangeListener($T), $T());
+        let $N = (0, tr.createRoot)($S),
+          $C = {
             "/oauth2/authorize": function (e) {
               let t = e?.get("client_id"),
                 n = e?.get("scope")?.split(" "),
@@ -109894,7 +109908,7 @@ ${a}`);
                 null == n ||
                 null == r ||
                 null == a ||
-                ((0, k7.openOAuth2Modal)({
+                ((0, k8.openOAuth2Modal)({
                   clientId: t,
                   scopes: n,
                   redirectUri: r,
@@ -109909,14 +109923,14 @@ ${a}`);
             },
             "/one-time": function (e) {
               let t = e?.get("token");
-              return null != t && (FK({ token: t }), !0);
+              return null != t && (Fz({ token: t }), !0);
             },
           };
-        function $N(e) {
-          let t = (0, b.jsx)(YI.e, {
-            children: (0, b.jsx)($a, { children: (0, b.jsx)(e, {}) }),
+        function $O(e) {
+          let t = (0, b.jsx)(YT.e, {
+            children: (0, b.jsx)($l, { children: (0, b.jsx)(e, {}) }),
           });
-          return $g.render(t);
+          return $N.render(t);
         }
         if (null != eg.A) {
           eg.A.setUncaughtExceptionHandler?.((e, t) => {
@@ -109939,9 +109953,9 @@ ${a}`);
             eV.Ay.initializeExitHook(),
             eV.Ay.initializeWERHandler();
         }
-        if (((0, $i.M)(window), __OVERLAY__))
-          $N(() => (0, b.jsx)(tl.W, { children: (0, b.jsx)(Kg, {}) }));
-        else if (null != window.require && null == window.DiscordNative) $N(tH);
+        if (((0, $a.M)(window), __OVERLAY__))
+          $O(() => (0, b.jsx)(tl.W, { children: (0, b.jsx)(KN, {}) }));
+        else if (null != window.require && null == window.DiscordNative) $O(tH);
         else {
           if (
             (document.addEventListener("scroll", (e) => e.preventDefault()),
@@ -109949,34 +109963,34 @@ ${a}`);
           ) {
             (window.onbeforeunload = () => eV.Ay.beforeUnload()),
               eV.Ay.on("HELP_OPEN", () => window.open(tF.A.getCommunityURL()));
-            let e = new ip.J_($T, () => eV.Ay.purgeMemory());
+            let e = new ip.J_($g, () => eV.Ay.purgeMemory());
             eV.Ay.on("MAIN_WINDOW_BLUR", () => {
-              e.delay(), eV.Ay.setFocused(!1), (0, $n.XC)(window, !1);
+              e.delay(), eV.Ay.setFocused(!1), (0, $r.XC)(window, !1);
             }),
               eV.Ay.on("MAIN_WINDOW_FOCUS", () => {
-                e.cancel(), eV.Ay.setFocused(!0), (0, $n.XC)(window, !0);
+                e.cancel(), eV.Ay.setFocused(!0), (0, $r.XC)(window, !0);
               }),
               eV.Ay.on("MAIN_WINDOW_PATH", function (e, t, n) {
                 let i = null != n ? new URLSearchParams(n) : null;
-                $S[t]?.(i) || (0, l8.pX)(t);
+                $C[t]?.(i) || (0, l8.pX)(t);
               }),
               eV.Ay.on("MAIN_WINDOW_HIDDEN", () => {
-                (0, $n.R)(window);
+                (0, $r.R)(window);
               });
           }
-          Kq.initialize(),
-            Kw.initialize(),
+          KQ.initialize(),
+            Kx.initialize(),
             {
               instance: null,
               init() {
-                null == this.instance && (this.instance = new KH());
+                null == this.instance && (this.instance = new KW());
               },
             }.init(),
             {
               init() {
-                k.h.subscribe("CONNECTION_OPEN", K2),
-                  k.h.subscribe("LOGOUT", K2),
-                  k.h.subscribe("STREAM_DELETE", K2),
+                k.h.subscribe("CONNECTION_OPEN", K5),
+                  k.h.subscribe("LOGOUT", K5),
+                  k.h.subscribe("STREAM_DELETE", K5),
                   k.h.subscribe("RTC_CONNECTION_VIDEO", (e) => {
                     let {
                       guildId: t,
@@ -109989,19 +110003,19 @@ ${a}`);
                       a !== iM.x.STREAM ||
                       i !== ei.default.getId() ||
                       __OVERLAY__ ||
-                      (K2(), (d = r), K3(r, t, n, i));
+                      (K5(), (d = r), K6(r, t, n, i));
                   }),
                   k.h.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", (e) => {
                     let { videoState: t } = e;
-                    KJ = t === j.uPF.PAUSED;
+                    K1 = t === j.uPF.PAUSED;
                   });
               },
             }.init(),
-            KY.initialize(),
-            K4.initialize(),
-            $t.initialize(),
-            $c(),
-            $N(() => (0, b.jsx)(tl.W, { children: (0, b.jsx)(KP, {}) }));
+            K$.initialize(),
+            K8.initialize(),
+            $i.initialize(),
+            $_(),
+            $O(() => (0, b.jsx)(tl.W, { children: (0, b.jsx)(Kw, {}) }));
         }
       },
       329563(e, t, n) {
@@ -110020,7 +110034,7 @@ ${a}`);
           }
           setTimeout(() => {
             try {
-              n(169728);
+              n(884118);
             } finally {
               n(19575).Ay.indexLoadedAsync();
             }
@@ -123925,7 +123939,7 @@ ${a}`);
       983555(e, t, n) {
         "use strict";
         n.r(t),
-          n.d(t, { default: () => K }),
+          n.d(t, { default: () => $ }),
           n(323874),
           n(14289),
           n(35956),
@@ -123941,50 +123955,51 @@ ${a}`);
           c = n(666860),
           u = n(121401),
           _ = n(587895),
-          E = n(725606),
-          A = n(167189),
-          h = n(721779),
-          f = n(366430),
-          I = n(707592),
-          p = n(698441),
-          T = n(268313),
-          m = n(21599),
-          g = n(376943),
-          S = n(741231),
-          N = n(971276),
-          C = n(216934),
-          O = n(976860),
-          R = n(832163),
-          L = n(227327),
-          y = n(788995),
-          D = n(432e3);
+          E = n(909338),
+          A = n(725606),
+          h = n(167189),
+          f = n(721779),
+          I = n(366430),
+          p = n(707592),
+          T = n(698441),
+          m = n(268313),
+          g = n(21599),
+          S = n(376943),
+          N = n(741231),
+          C = n(971276),
+          O = n(216934),
+          R = n(976860),
+          L = n(832163),
+          y = n(227327),
+          D = n(788995),
+          v = n(432e3);
         n(809733);
-        var v = n(280450),
-          b = n(696451),
-          M = n(71393),
-          P = n(299091),
-          U = n(232835),
-          w = n(309010),
-          G = n(967198),
-          x = n(711014),
-          k = n(174459),
-          F = n(998218),
-          B = n(975807),
-          V = n(652215);
-        async function H(e, t, n) {
+        var b = n(280450),
+          M = n(696451),
+          P = n(71393),
+          U = n(299091),
+          w = n(232835),
+          G = n(309010),
+          x = n(967198),
+          k = n(711014),
+          F = n(174459),
+          B = n(998218),
+          V = n(975807),
+          H = n(652215);
+        async function j(e, t, n) {
           await a.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: e,
             code: t,
-            context: V.BRT.APP,
+            context: H.BRT.APP,
             invite_instance_id: n,
           });
         }
-        async function j(e, t) {
+        async function W(e, t) {
           let n = e.code,
-            i = (0, m._U)(n, t),
-            r = P.A.getInvite(n);
-          if (null == r || r.state === V.elq.ERROR) {
+            i = (0, g._U)(n, t),
+            r = U.A.getInvite(n);
+          if (null == r || r.state === H.elq.ERROR) {
             let { invite: e } = await o.Ay.resolveInvite(n, "Markdown Link", {
               inviteInstanceId: i,
             });
@@ -123992,26 +124007,26 @@ ${a}`);
           }
           if (null == r) return;
           if (
-            r.state === V.elq.EXPIRED ||
-            r.state === V.elq.BANNED ||
-            r.state === V.elq.ERROR
+            r.state === H.elq.EXPIRED ||
+            r.state === H.elq.BANNED ||
+            r.state === H.elq.ERROR
           )
-            return void (await H(r, n, i));
-          let a = x.Ay.getFlattenedGuildIds(),
+            return void (await j(r, n, i));
+          let a = k.Ay.getFlattenedGuildIds(),
             s = r?.guild?.id,
             l = null != s && a.includes(s),
             d = !1;
           if (l && null != r.roles && r.roles.length > 0) {
-            let e = v.default.getId(),
-              t = b.Ay.getMember(s, e),
+            let e = b.default.getId(),
+              t = M.Ay.getMember(s, e),
               n = new Set(t?.roles ?? []);
             d = r.roles.some((e) => !n.has(e.id));
           }
           l && !d
             ? o.Ay.transitionToInvite(r, { forceTransition: !0 })
-            : await H(r, n, i);
+            : await j(r, n, i);
         }
-        async function W(e, t) {
+        async function Y(e, t) {
           function i() {
             {
               let { showInaccessibleLinkModal: e } = n(9588);
@@ -124019,7 +124034,7 @@ ${a}`);
             }
           }
           if (null == e || "" === e) return void i();
-          let r = p.Ay.getGuildScheduledEvent(t);
+          let r = T.Ay.getGuildScheduledEvent(t);
           if (null == r)
             try {
               let { default: i } = await Promise.resolve().then(
@@ -124031,23 +124046,23 @@ ${a}`);
               return;
             }
           if (null == r) return void i();
-          if (null == M.A.getGuild(e))
+          if (null == P.A.getGuild(e))
             try {
               await l.A.joinGuild(e, {
                 lurker: !0,
-                source: V.Q4z.GUILD_EVENT_EMBED,
+                source: H.Q4z.GUILD_EVENT_EMBED,
               }),
                 await l.A.transitionToGuildSync(e);
             } catch (e) {
-              e.body?.code === V.t02.UNKNOWN_GUILD && i();
+              e.body?.code === H.t02.UNKNOWN_GUILD && i();
               return;
             }
-          G.A.getGuildId() !== e && (0, S.A)(V.BVt.CHANNEL(e)),
-            (0, I.uR)({ eventId: r.id });
+          x.A.getGuildId() !== e && (0, N.A)(H.BVt.CHANNEL(e)),
+            (0, p.uR)({ eventId: r.id });
         }
         n(758836), n(188275);
-        let Y = { skipExtensionCheck: void 0, analyticsLocations: [] };
-        function K(e) {
+        let K = { skipExtensionCheck: void 0, analyticsLocations: [] };
+        function $(e) {
           let {
               skipExtensionCheck: t,
               analyticsLocations: a,
@@ -124055,38 +124070,38 @@ ${a}`);
               channelId: o,
             } = arguments.length > 1 && void 0 !== arguments[1]
               ? arguments[1]
-              : Y,
-            I = (0, h.br)(e);
+              : K,
+            p = (0, f.br)(e);
           if (
-            null != I &&
-            (I.type === A.I.INVITE || I.type === A.I.EMBEDDED_ACTIVITY_INVITE)
+            null != p &&
+            (p.type === h.I.INVITE || p.type === h.I.EMBEDDED_ACTIVITY_INVITE)
           )
-            return (e) => (e?.preventDefault(), j(I, l), !0);
+            return (e) => (e?.preventDefault(), W(p, l), !0);
           if (
-            null != I &&
-            (I.type === A.I.APP_DIRECTORY_PROFILE ||
-              I.type === A.I.APP_DIRECTORY_STOREFRONT ||
-              I.type === A.I.APP_DIRECTORY_STOREFRONT_SKU)
+            null != p &&
+            (p.type === h.I.APP_DIRECTORY_PROFILE ||
+              p.type === h.I.APP_DIRECTORY_STOREFRONT ||
+              p.type === h.I.APP_DIRECTORY_STOREFRONT_SKU)
           )
             return (t) => {
               t?.preventDefault();
-              let { code: r } = I,
+              let { code: r } = p,
                 { applicationId: a, skuId: s } =
-                  I.type === A.I.APP_DIRECTORY_PROFILE ||
-                  I.type === A.I.APP_DIRECTORY_STOREFRONT
+                  p.type === h.I.APP_DIRECTORY_PROFILE ||
+                  p.type === h.I.APP_DIRECTORY_STOREFRONT
                     ? { applicationId: r, skuId: void 0 }
                     : ((0, u.u)(r) ?? { applicationId: void 0, skuId: void 0 }),
-                l = G.A.getGuildId() ?? void 0;
+                l = x.A.getGuildId() ?? void 0;
               return (
                 null == a
-                  ? (0, B.A)(e)
-                  : (k.default.track(
-                      V.HAw.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED,
+                  ? (0, V.A)(e)
+                  : (F.default.track(
+                      H.HAw.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED,
                       {
                         application_id: a,
                         device_platform: i.Fr ? "mobile_web" : "desktop_web",
                         guild_id: l,
-                        channel_id: w.Ay.getChannelId(),
+                        channel_id: G.Ay.getChannelId(),
                       },
                     ),
                     n
@@ -124099,9 +124114,9 @@ ${a}`);
                         t({
                           tab: i.APPS,
                           applicationId: a,
-                          section: (0, T.A)(
+                          section: (0, m.A)(
                             r,
-                            I.type === A.I.APP_DIRECTORY_PROFILE
+                            p.type === h.I.APP_DIRECTORY_PROFILE
                               ? r.ABOUT
                               : r.STORE,
                           ),
@@ -124111,10 +124126,10 @@ ${a}`);
                 !0
               );
             };
-          if (null != I && I.type === A.I.ACTIVITY_BOOKMARK)
+          if (null != p && p.type === h.I.ACTIVITY_BOOKMARK)
             return (e) => {
               e?.preventDefault();
-              let { code: t, url: n } = I,
+              let { code: t, url: n } = p,
                 i = _.A.getApplication(t),
                 r = new URL(n),
                 l = r.searchParams.get("referrer_id") ?? void 0,
@@ -124122,10 +124137,10 @@ ${a}`);
                   currentChannelId: o,
                   isCurrentlyInInstance: c,
                   canLaunchInChannel: u,
-                } = (0, E.t)(t);
+                } = (0, A.t)(t);
               return (
                 !c &&
-                (!!u || i?.bot != null || !!(0, f.U4)(i)) &&
+                (!!u || i?.bot != null || !!(0, I.U4)(i)) &&
                 ((0, d.d9)(
                   t,
                   r.searchParams.get("link_id"),
@@ -124137,6 +124152,7 @@ ${a}`);
                       applicationId: t,
                       channelId: u ? o : null,
                       fromLink: !0,
+                      linkChannelId: (0, E.D)(r),
                       customId: n,
                       referrerId: l,
                       analyticsLocations: a,
@@ -124146,10 +124162,10 @@ ${a}`);
                 !0)
               );
             };
-          if (null != I && I.type === A.I.GUILD_PRODUCT)
+          if (null != p && p.type === h.I.GUILD_PRODUCT)
             return (e) => {
               e?.preventDefault();
-              let [t, i] = I.code.split("-");
+              let [t, i] = p.code.split("-");
               return (
                 Promise.all([n.e("521574"), n.e("749607")])
                   .then(n.bind(n, 811546))
@@ -124160,9 +124176,9 @@ ${a}`);
                 !0
               );
             };
-          if (null != I && I.type === A.I.SOCIAL_LAYER_STOREFRONT)
+          if (null != p && p.type === h.I.SOCIAL_LAYER_STOREFRONT)
             return (e) => {
-              let t = (0, L.rg)(I.code);
+              let t = (0, y.rg)(p.code);
               if (null == t) return !1;
               let i = t.scopeId;
               if (t.skuIds.length > 1)
@@ -124191,9 +124207,9 @@ ${a}`);
                 !0
               );
             };
-          if (null != I && I.type === A.I.SOCIAL_LAYER_STOREFRONT_APP)
+          if (null != p && p.type === h.I.SOCIAL_LAYER_STOREFRONT_APP)
             return (e) => {
-              let t = (0, L.rg)(I.code);
+              let t = (0, y.rg)(p.code);
               if (null == t) return !1;
               let i = t.scopeId;
               if (t.skuIds.length > 1)
@@ -124210,7 +124226,7 @@ ${a}`);
                 );
               e?.preventDefault();
               let [r] = t.skuIds,
-                a = R.A.getGuildIdFromApplicationId(i);
+                a = L.A.getGuildIdFromApplicationId(i);
               if (null != a)
                 return (
                   n
@@ -124223,30 +124239,30 @@ ${a}`);
                   !0
                 );
             };
-          if (null != I && I.type === A.I.QUESTS_EMBED && (0, N.s)())
+          if (null != p && p.type === h.I.QUESTS_EMBED && (0, C.s)())
             return (e) => {
               e?.preventDefault();
-              let { search: t } = F.A.toURLSafe(I.url) ?? {};
+              let { search: t } = B.A.toURLSafe(p.url) ?? {};
               if (null != t) {
                 let e = new URLSearchParams(t);
                 e.get("sort"), e.get("filter");
               }
               return (
-                (0, C.m)({
+                (0, O.m)({
                   fromContent: r.u.QUEST_SHARE_LINK,
-                  questId: I.code,
+                  questId: p.code,
                 }),
                 !0
               );
             };
-          if (null != I && I.type === A.I.GAME_PROFILE)
+          if (null != p && p.type === h.I.GAME_PROFILE)
             return (e) => {
               e?.preventDefault();
               let { GameProfileSources: t } = n(409626),
-                i = I.code,
+                i = p.code,
                 r =
                   null != o && null != l
-                    ? U.A.getMessage(o, l)?.author.id
+                    ? w.A.getMessage(o, l)?.author.id
                     : void 0;
               return (
                 Promise.resolve()
@@ -124267,29 +124283,29 @@ ${a}`);
               );
             };
           let {
-              host: p,
-              hostname: m,
-              pathname: v,
-              search: b,
-              hash: M,
-            } = F.A.toURLSafe(e) ?? {},
-            P =
-              F.A.isDiscordHostname(m ?? null) ||
-              F.A.isDiscordLocalhost(p ?? null, m ?? null);
+              host: T,
+              hostname: g,
+              pathname: b,
+              search: M,
+              hash: P,
+            } = B.A.toURLSafe(e) ?? {},
+            U =
+              B.A.isDiscordHostname(g ?? null) ||
+              B.A.isDiscordLocalhost(T ?? null, g ?? null);
           if (
-            P &&
-            (v?.startsWith("/application-directory") ||
-              v?.startsWith("/discovery/applications"))
+            U &&
+            (b?.startsWith("/application-directory") ||
+              b?.startsWith("/discovery/applications"))
           ) {
-            let e = v.split("/"),
-              t = v?.startsWith("/discovery/applications"),
+            let e = b.split("/"),
+              t = b?.startsWith("/discovery/applications"),
               i = e[t ? 3 : 2],
               r = "search" === i,
               a = t && "categories" === i && "featured" !== e[4];
             return (t) => {
               let i, s, l;
               if ((t?.preventDefault(), r)) {
-                let e = new URLSearchParams(b);
+                let e = new URLSearchParams(M);
                 (i = e.get("q") ?? void 0),
                   (s = e.get("category_id") ?? void 0),
                   (l = e.get("page") ?? void 0);
@@ -124313,16 +124329,16 @@ ${a}`);
               );
             };
           }
-          if (null != v && P && F.A.isAppRoute(v)) {
+          if (null != b && U && B.A.isAppRoute(b)) {
             let e = { navigationReplace: !1, openChannel: !0 };
             return (
-              null != b && (e.search = b),
-              null != M && (e.hash = M),
-              (t) => (t?.preventDefault(), (0, S.A)(v, e), !0)
+              null != M && (e.search = M),
+              null != P && (e.hash = P),
+              (t) => (t?.preventDefault(), (0, N.A)(b, e), !0)
             );
           }
-          if (P && v?.startsWith("/users/")) {
-            let e = v.match(/^\/users\/(\d+)/);
+          if (U && b?.startsWith("/users/")) {
+            let e = b.match(/^\/users\/(\d+)/);
             if (null != e) {
               let t = e[1];
               return (e) => (
@@ -124337,7 +124353,7 @@ ${a}`);
               );
             }
           }
-          if (null != v && P) {
+          if (null != b && U) {
             let {
                 getOAuth2AuthorizeProps: t,
                 openOAuth2ModalWithCreateGuildModal: i,
@@ -124346,29 +124362,29 @@ ${a}`);
             if (null != r)
               return (e) => (
                 e?.preventDefault(),
-                null != I &&
-                  I.type === A.I.APP_OAUTH2_LINK &&
+                null != p &&
+                  p.type === h.I.APP_OAUTH2_LINK &&
                   c.Ay.trackWithMetadata(
-                    V.HAw.APP_OAUTH2_LINK_EMBED_URL_CLICKED,
+                    H.HAw.APP_OAUTH2_LINK_EMBED_URL_CLICKED,
                     { application_id: r.clientId },
                   ),
                 i(r),
                 !0
               );
           }
-          let x = (0, g.SK)(v);
-          if (null != v && P && null != x)
+          let k = (0, S.SK)(b);
+          if (null != b && U && null != k)
             return (e) => {
               e?.preventDefault();
-              let { guildId: t, guildEventId: n } = x;
-              return W(t, n), !0;
+              let { guildId: t, guildEventId: n } = k;
+              return Y(t, n), !0;
             };
-          if (P && v?.startsWith("/settings/")) {
+          if (U && b?.startsWith("/settings/")) {
             let { openUserSettings: e } = n(766075),
               { parseSettingsUrl: t, trackParseSettingsUrl: i } = n(718446);
             return (n) => {
               n?.preventDefault();
-              let r = t({ path: v, search: b });
+              let r = t({ path: b, search: M });
               return (
                 i(r, "link_click"),
                 e(r.target, {
@@ -124380,7 +124396,7 @@ ${a}`);
               );
             };
           }
-          if (P && v === V.BVt.FEATURE("badges"))
+          if (U && b === H.BVt.FEATURE("badges"))
             return (e) => (
               e?.preventDefault(),
               n
@@ -124392,9 +124408,9 @@ ${a}`);
                 }),
               !0
             );
-          if (P && v?.startsWith("/playground")) {
+          if (U && b?.startsWith("/playground")) {
             let { parsePlaygroundUrl: e } = n(682492),
-              { collection: t, story: i, controlOverrides: r } = e(v, b);
+              { collection: t, story: i, controlOverrides: r } = e(b, M);
             return (e) => (
               e?.preventDefault(),
               Promise.all([n.e("60800"), n.e("129263")])
@@ -124406,20 +124422,20 @@ ${a}`);
               !0
             );
           }
-          if (P && v?.startsWith("/discovery/quests"))
+          if (U && b?.startsWith("/discovery/quests"))
             return (e) => (
               e?.preventDefault(),
-              (0, C.m)({ fromContent: r.u.QUEST_BADGE }),
+              (0, O.m)({ fromContent: r.u.QUEST_BADGE }),
               !0
             );
-          if (P && v?.startsWith("/quest-home"))
+          if (U && b?.startsWith("/quest-home"))
             return (e) => (
               e?.preventDefault(),
-              (0, O.pX)(V.BVt.QUEST_HOME, { search: b, hash: M }),
+              (0, R.pX)(H.BVt.QUEST_HOME, { search: M, hash: P }),
               !0
             );
-          if (P && v?.startsWith("/quest-bar-preview")) {
-            let e = new URLSearchParams(b ?? "").get("ad_creative_ids");
+          if (U && b?.startsWith("/quest-bar-preview")) {
+            let e = new URLSearchParams(M ?? "").get("ad_creative_ids");
             if (null != e)
               return (t) => (
                 t?.preventDefault(),
@@ -124432,16 +124448,16 @@ ${a}`);
                 !0
               );
           }
-          return P && v?.startsWith("/quest-preview")
+          return U && b?.startsWith("/quest-preview")
             ? (e) => (
                 e?.preventDefault(),
-                (0, O.pX)(
-                  V.BVt.QUEST_HOME +
-                    `?tab=preview_tool&quest_id=${v.split("/").at(-1)}`,
+                (0, R.pX)(
+                  H.BVt.QUEST_HOME +
+                    `?tab=preview_tool&quest_id=${b.split("/").at(-1)}`,
                 ),
                 !0
               )
-            : P && v?.startsWith("/discovery/servers")
+            : U && b?.startsWith("/discovery/servers")
               ? (e) => (
                   e?.preventDefault(),
                   n
@@ -124454,9 +124470,9 @@ ${a}`);
                     }),
                   !0
                 )
-              : t || null == (0, D.m)(e)
+              : t || null == (0, v.m)(e)
                 ? void 0
-                : (t) => (t?.preventDefault(), y.A.show(e), !0);
+                : (t) => (t?.preventDefault(), D.A.show(e), !0);
         }
       },
       472229(e, t, n) {
@@ -131853,19 +131869,23 @@ ${a}`);
         var i = n(991690),
           r = n(587895),
           a = n(625180),
-          s = n(371169),
-          l = n(173912);
+          s = n(173912),
+          l = n(617297);
         async function o(e) {
-          let { applicationId: t, analyticsContext: n, launch: i } = e,
-            r = (0, l.m)(t) ? (await (0, s.l5)(t))[0] : void 0;
-          (0, l.A)({
+          let {
+              applicationId: t,
+              channelId: n,
+              analyticsContext: i,
+              launch: r,
+            } = e,
+            a = (0, s.m)(t)
+              ? await (0, l.A)(t, { preferredChannelId: n })
+              : null;
+          (0, s.A)({
             applicationId: t,
-            channel:
-              null != r
-                ? { guildId: r.guild_id, channelId: r.channel_id }
-                : null,
-            analyticsContext: n,
-            launch: i,
+            channel: a,
+            analyticsContext: i,
+            launch: r,
           });
         }
         var d = n(366430),
@@ -131877,12 +131897,19 @@ ${a}`);
               launch: s,
               analyticsContext: l,
               preferAppChannel: u = !1,
+              channelId: _,
             } = e,
-            _ = (0, d.It)(n),
-            E = _.has(i.U.MAIN);
-          return _.has(i.U.APP_CHANNEL) && (u || !E)
-            ? (o({ applicationId: t, launch: s, analyticsContext: l }), !0)
-            : !!E &&
+            E = (0, d.It)(n),
+            A = E.has(i.U.MAIN);
+          return E.has(i.U.APP_CHANNEL) && (u || !A)
+            ? (o({
+                applicationId: t,
+                channelId: _,
+                launch: s,
+                analyticsContext: l,
+              }),
+              !0)
+            : !!A &&
                 (a.A.launchFrame({
                   applicationId: t,
                   surface: c.sd,
@@ -153139,6 +153166,24 @@ html body ${$}, html body ${$} * {
             i),
           s = (((r = {}).ACTIVE = "active"), (r.DEAD = "dead"), r);
       },
+      909338(e, t, n) {
+        "use strict";
+        n.d(t, { D: () => r, N: () => a });
+        var i = n(998218);
+        function r(e) {
+          return e?.searchParams.get("channel_id") ?? void 0;
+        }
+        function a(e) {
+          let t = i.A.toURLSafe(e),
+            n = t?.searchParams.get("referrer_id") ?? void 0;
+          return {
+            referrerId: n,
+            customId: t?.searchParams.get("custom_id") ?? void 0,
+            linkId: t?.searchParams.get("link_id") ?? void 0,
+            channelId: r(t),
+          };
+        }
+      },
       725606(e, t, n) {
         "use strict";
         n.d(t, { t: () => o, w: () => l });
@@ -154341,7 +154386,7 @@ html body ${$}, html body ${$} * {
                 (e) => {
                   if (
                     null == e.body ||
-                    "18a90dded8ac93df750c32393e5d0927a53bd655" === e.body.hash
+                    "e530f10a1ea2807b94c60767eefb0a870835f57e" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -163738,10 +163783,10 @@ html body ${$}, html body ${$} * {
                 t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("649615")),
+                  ((e = parseInt("649831")),
                   Number.isNaN(e) &&
                     (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 649615",
+                      "Trying to open a changelog for an invalid build number 649831",
                     ),
                     (e = 0)),
                   e),
@@ -197015,8 +197060,6 @@ html body ${$}, html body ${$} * {
               downloadContentType: t.content_type,
               extraButtons: eI,
               poster: ei,
-              posterPlaceholder: t.placeholder,
-              posterPlaceholderVersion: t.placeholder_version,
               autoplay: _,
               initialActive: !1,
               initialTimeSec: Y,
@@ -199866,11 +199909,11 @@ html body ${$}, html body ${$} * {
           );
         }
       },
-      892768(e, t, n) {
+      76349(e, t, n) {
         "use strict";
-        n.d(t, { kK: () => d, Yf: () => o });
+        n.d(t, { Yf: () => o, kK: () => d });
         var i = n(121401),
-          r = n(998218),
+          r = n(909338),
           a = n(403362),
           s = n(167189);
         let l = new Set([
@@ -199895,21 +199938,8 @@ html body ${$}, html body ${$} * {
               let { applicationId: r, skuId: a } = n;
               return { type: e, applicationId: r, skuId: a };
             }
-            case s.I.ACTIVITY_BOOKMARK: {
-              let i, a;
-              return {
-                type: e,
-                applicationId: t,
-                params:
-                  ((i = r.A.toURLSafe(n)),
-                  (a = i?.searchParams.get("referrer_id") ?? void 0),
-                  {
-                    referrerId: a,
-                    customId: i?.searchParams.get("custom_id") ?? void 0,
-                    linkId: i?.searchParams.get("link_id") ?? void 0,
-                  }),
-              };
-            }
+            case s.I.ACTIVITY_BOOKMARK:
+              return { type: e, applicationId: t, params: (0, r.N)(n) };
           }
         }
         s.I.APP_DIRECTORY_PROFILE, s.I.ACTIVITY_BOOKMARK, s.I.APP_OAUTH2_LINK;
@@ -223379,7 +223409,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "649615", versionHash: "18a90dded8ac93df750c32393e5d0927a53bd655" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "649831", versionHash: "e530f10a1ea2807b94c60767eefb0a870835f57e" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -228735,8 +228765,8 @@ ${f}`;
                   n.e("354044"),
                   n.e("912773"),
                   n.e("817989"),
-                  n.e("693832"),
                   n.e("437065"),
+                  n.e("693832"),
                   n.e("488990"),
                   n.e("577084"),
                   n.e("720590"),
@@ -228832,8 +228862,8 @@ ${f}`;
                   n.e("478476"),
                   n.e("971430"),
                   n.e("211185"),
-                  n.e("41332"),
                   n.e("976516"),
+                  n.e("41332"),
                   n.e("496715"),
                   n.e("400501"),
                   n.e("985794"),
@@ -251106,7 +251136,7 @@ ${t.join("\n")}`);
       },
       568034(e, t, n) {
         "use strict";
-        n.d(t, { A: () => R });
+        n.d(t, { A: () => O });
         var i = n(991690),
           r = n(73153),
           a = n(308368),
@@ -251117,52 +251147,54 @@ ${t.join("\n")}`);
           c = n(90804),
           u = n(85982),
           _ = n(587895),
-          E = n(371169),
-          A = n(378570),
-          h = n(843002),
-          f = n(734057),
-          I = n(576705),
-          p = n(977997),
-          T = n(339586),
-          m = n(173912),
-          g = n(366430),
-          S = n(165610),
-          N = n(652215),
-          C = n(818023),
-          O = n(105292);
-        async function R(e) {
+          E = n(378570),
+          A = n(843002),
+          h = n(734057),
+          f = n(977997),
+          I = n(339586),
+          p = n(173912),
+          T = n(617297),
+          m = n(366430),
+          g = n(165610),
+          S = n(652215),
+          N = n(818023),
+          C = n(105292);
+        async function O(e) {
           let {
               application: t,
               userId: n,
               activity: s,
               sessionId: l,
-              channelId: E,
+              channelId: h,
               messageId: f,
-              intent: I = C.W9.PLAY,
+              intent: O = N.W9.PLAY,
             } = e,
-            p = t.id;
+            y = t.id;
           null != l &&
-            r.h.dispatch({ type: "ACTIVITY_JOIN_LOADING", applicationId: p });
-          let R =
-              s ?? (null != l ? { application_id: p, session_id: l } : null),
-            b = null != R && (0, m.m)(p) ? await y(R, n) : void 0,
-            M = null != b ? await v(p, b) : null,
-            P = null == M ? await L(p, n, R?.session_id ?? l) : null;
-          function U() {
+            r.h.dispatch({ type: "ACTIVITY_JOIN_LOADING", applicationId: y });
+          let D =
+              s ?? (null != l ? { application_id: y, session_id: l } : null),
+            v = null != D && (0, p.m)(y) ? await L(D, n) : void 0,
+            b = (0, m.It)(_.A.getApplication(y)),
+            M = !b.has(i.U.MAIN) && b.has(i.U.APP_CHANNEL),
+            P =
+              null != v
+                ? await (0, T.A)(y, { preferredChannelId: v, fallback: M })
+                : null,
+            U = null == P ? await R(y, n, D?.session_id ?? l) : null;
+          function w() {
             return (
-              r.h.dispatch({ type: "ACTIVITY_JOIN_FAILED", applicationId: p }),
+              r.h.dispatch({ type: "ACTIVITY_JOIN_FAILED", applicationId: y }),
               !1
             );
           }
-          let w = (0, g.It)(_.A.getApplication(p));
-          if (null == M && null == P && !w.has(i.U.MAIN)) {
-            if (!w.has(i.U.APP_CHANNEL))
-              return (0, u.A)(O.intl.string(O.t["7XR9+7"])), U();
-            M = await D(p);
+          if (null == P && null == U && !b.has(i.U.MAIN)) {
+            if (!M) return (0, u.A)(C.intl.string(C.t["7XR9+7"])), w();
+            null == v && (P = await (0, T.A)(y));
           }
-          if (null != P) {
-            if (!(await (0, c.A)({ channelId: P }))) return U();
-            (0, A.iN)(P);
+          if (null != U) {
+            if (!(await (0, c.A)({ channelId: U }))) return w();
+            (0, E.iN)(U);
           }
           let G = null;
           if (null != l)
@@ -251170,88 +251202,68 @@ ${t.join("\n")}`);
               ({ secret: G } = await a.A.getJoinSecret(
                 n,
                 l,
-                p,
-                null != f ? E : (P ?? M?.channelId ?? E),
+                y,
+                null != f ? h : (U ?? P?.channelId ?? h),
                 f,
               ));
             } catch (t) {
-              let e = await (0, d.f)(new o.A(t), p);
+              let e = await (0, d.f)(new o.A(t), y);
               return (
                 (0, u.A)(
-                  e.errorCode === N.t02.UNKNOWN_SESSION
-                    ? O.intl.string(O.t["7XR9+7"])
+                  e.errorCode === S.t02.UNKNOWN_SESSION
+                    ? C.intl.string(C.t["7XR9+7"])
                     : e.message,
                 ),
-                U()
+                w()
               );
             }
           let { frameId: x, launched: k } =
-            null != P
+            null != U
               ? {
-                  frameId: (0, S.VA)(p, (0, h.e)(P)),
+                  frameId: (0, g.VA)(y, (0, A.e)(U)),
                   launched: Promise.resolve(),
                 }
-              : (0, m.A)({ applicationId: p, channel: M });
+              : (0, p.A)({ applicationId: y, channel: P });
           if (null == G) return !0;
           r.h.dispatch({
             type: "ACTIVITY_JOIN_NAVIGATION_COMPLETE",
-            applicationId: p,
+            applicationId: y,
           });
           try {
-            await k, await T.A.waitFrameSubscribed(x, N.ZE4.ACTIVITY_JOIN);
+            await k, await I.A.waitFrameSubscribed(x, S.ZE4.ACTIVITY_JOIN);
           } catch {
-            return U();
+            return w();
           }
           return (
             r.h.dispatch({
               type: "ACTIVITY_JOIN",
-              applicationId: p,
+              applicationId: y,
               parentApplicationId: null,
               frameId: x,
               secret: G,
-              intent: I,
+              intent: O,
               embedded: !0,
             }),
             !0
           );
         }
-        async function L(e, t, n) {
+        async function R(e, t, n) {
           let i =
-              p.A.getVoiceStateForSession(t, n) ?? p.A.getVoiceStateForUser(t),
+              f.A.getVoiceStateForSession(t, n) ?? f.A.getVoiceStateForUser(t),
             r = i?.channelId;
           if (null == r) return null;
-          let a = f.A.getChannel(r) ?? (await s.A.openChannel(r));
-          return a?.type === N.rbe.GUILD_VOICE && a.application_id === e
+          let a = h.A.getChannel(r) ?? (await s.A.openChannel(r));
+          return a?.type === S.rbe.GUILD_VOICE && a.application_id === e
             ? a.id
             : null;
         }
-        async function y(e, t) {
+        async function L(e, t) {
           try {
             let n = await (0, l.yb)(e, t);
             return "string" == typeof n?.channel_id ? n.channel_id : void 0;
           } catch {
             return;
           }
-        }
-        async function D(e) {
-          let t = (await (0, E.l5)(e))[0];
-          return null != t
-            ? { guildId: t.guild_id, channelId: t.channel_id }
-            : null;
-        }
-        async function v(e, t) {
-          let n = f.A.getChannel(t);
-          if (null == n) {
-            let n = (await (0, E.l5)(e)).find((e) => e.channel_id === t);
-            return null != n
-              ? { guildId: n.guild_id, channelId: n.channel_id }
-              : null;
-          }
-          return n.type === N.rbe.GUILD_APP &&
-            n.application_id === e &&
-            I.A.can(N.xBc.VIEW_CHANNEL, n)
-            ? { guildId: n.guild_id, channelId: n.id }
-            : null;
         }
       },
       457827(e, t, n) {
@@ -251310,6 +251322,37 @@ ${t.join("\n")}`);
             (0, r.pX)(o.BVt.CHANNEL(n.guildId, n.channelId)),
             { frameId: (0, l.VA)(t, c), launched: u }
           );
+        }
+      },
+      617297(e, t, n) {
+        "use strict";
+        n.d(t, { A: () => l });
+        var i = n(371169),
+          r = n(734057),
+          a = n(576705),
+          s = n(652215);
+        async function l(e) {
+          let { preferredChannelId: t, fallback: n = !0 } =
+              arguments.length > 1 && void 0 !== arguments[1]
+                ? arguments[1]
+                : {},
+            l = null != t ? r.A.getChannel(t) : null;
+          if (
+            null != l &&
+            l.type === s.rbe.GUILD_APP &&
+            l.application_id === e &&
+            a.A.can(s.xBc.VIEW_CHANNEL, l)
+          )
+            return { guildId: l.guild_id, channelId: l.id };
+          let o = null != t && null == l;
+          if (!o && !n) return null;
+          let d = await (0, i.l5)(e),
+            c =
+              (o ? d.find((e) => e.channel_id === t) : void 0) ??
+              (n ? d[0] : void 0);
+          return null != c
+            ? { guildId: c.guild_id, channelId: c.channel_id }
+            : null;
         }
       },
       25451(e, t, n) {
@@ -276795,8 +276838,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("912773"),
                 n.e("817989"),
                 n.e("454625"),
-                n.e("693832"),
                 n.e("437065"),
+                n.e("693832"),
                 n.e("488990"),
                 n.e("577084"),
                 n.e("720590"),
@@ -276900,8 +276943,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("478476"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("496715"),
                 n.e("400501"),
                 n.e("985794"),
@@ -295277,8 +295320,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("912773"),
                 n.e("817989"),
                 n.e("454625"),
-                n.e("693832"),
                 n.e("437065"),
+                n.e("693832"),
                 n.e("488990"),
                 n.e("577084"),
                 n.e("720590"),
@@ -295378,8 +295421,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("478476"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("496715"),
                 n.e("400501"),
                 n.e("985794"),
@@ -305275,8 +305318,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("773534"),
               n.e("971430"),
               n.e("211185"),
-              n.e("41332"),
               n.e("976516"),
+              n.e("41332"),
               n.e("400501"),
               n.e("985794"),
               n.e("732194"),
@@ -306004,9 +306047,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("963203"),
                 n.e("275133"),
                 n.e("228850"),
-                n.e("285802"),
+                n.e("697367"),
                 n.e("127659"),
-                n.e("65200"),
                 n.e("860003"),
                 n.e("472627"),
                 n.e("941348"),
@@ -312984,8 +313026,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("773534"),
               n.e("971430"),
               n.e("211185"),
-              n.e("41332"),
               n.e("976516"),
+              n.e("41332"),
               n.e("400501"),
               n.e("985794"),
               n.e("732194"),
@@ -313042,9 +313084,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e("368530"),
               n.e("275859"),
               n.e("527687"),
-              n.e("285802"),
+              n.e("697367"),
               n.e("127659"),
-              n.e("65200"),
               n.e("98972"),
               n.e("42834"),
               n.e("860003"),
@@ -338618,8 +338659,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1792790514738",
-                      build_number: "649615",
+                      built_at: "1792799292445",
+                      build_number: "649831",
                     },
                   },
                   retries: 1,
@@ -352024,8 +352065,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("912773"),
                 n.e("817989"),
                 n.e("454625"),
-                n.e("693832"),
                 n.e("437065"),
+                n.e("693832"),
                 n.e("488990"),
                 n.e("577084"),
                 n.e("720590"),
@@ -352132,8 +352173,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("478476"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("496715"),
                 n.e("400501"),
                 n.e("985794"),
@@ -360156,7 +360197,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             f = ed.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, rL.A)("1792790514738", !0);
+            let e = (0, rL.A)("1792799292445", !0);
             t =
               null != e
                 ? eM.intl.formatToPlainString(eM.t.wve4kg, {
@@ -360927,8 +360968,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e("818465"),
                   n.e("971430"),
                   n.e("211185"),
-                  n.e("41332"),
                   n.e("976516"),
+                  n.e("41332"),
                   n.e("400501"),
                   n.e("985794"),
                   n.e("732194"),
@@ -370041,8 +370082,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("912773"),
                 n.e("817989"),
                 n.e("454625"),
-                n.e("693832"),
                 n.e("437065"),
+                n.e("693832"),
                 n.e("488990"),
                 n.e("577084"),
                 n.e("720590"),
@@ -370146,8 +370187,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e("478476"),
                 n.e("971430"),
                 n.e("211185"),
-                n.e("41332"),
                 n.e("976516"),
+                n.e("41332"),
                 n.e("496715"),
                 n.e("400501"),
                 n.e("985794"),
@@ -406956,8 +406997,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     n.e("773534"),
                     n.e("971430"),
                     n.e("211185"),
-                    n.e("41332"),
                     n.e("976516"),
+                    n.e("41332"),
                     n.e("400501"),
                     n.e("985794"),
                     n.e("732194"),
@@ -407191,9 +407232,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                         n.e("379995"),
                         n.e("544058"),
                         n.e("295175"),
-                        n.e("285802"),
                         n.e("741111"),
-                        n.e("65200"),
+                        n.e("697367"),
                         n.e("591377"),
                         n.e("356675"),
                         n.e("722440"),
@@ -407286,8 +407326,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                         n.e("412255"),
                         n.e("63340"),
                         n.e("896804"),
-                        n.e("285802"),
-                        n.e("65200"),
+                        n.e("697367"),
                         n.e("703869"),
                         n.e("51212"),
                         n.e("584615"),
@@ -455100,8 +455139,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     n.e("354044"),
                     n.e("912773"),
                     n.e("454625"),
-                    n.e("693832"),
                     n.e("437065"),
+                    n.e("693832"),
                     n.e("488990"),
                     n.e("577084"),
                     n.e("709640"),
@@ -463952,8 +463991,8 @@ ${t}`;
                 n.e("354044"),
                 n.e("912773"),
                 n.e("454625"),
-                n.e("693832"),
                 n.e("437065"),
+                n.e("693832"),
                 n.e("488990"),
                 n.e("709640"),
                 n.e("332470"),
@@ -470941,8 +470980,8 @@ ${t}`;
                     n.e("912773"),
                     n.e("817989"),
                     n.e("454625"),
-                    n.e("693832"),
                     n.e("437065"),
+                    n.e("693832"),
                     n.e("488990"),
                     n.e("577084"),
                     n.e("720590"),
@@ -471049,8 +471088,8 @@ ${t}`;
                     n.e("478476"),
                     n.e("971430"),
                     n.e("211185"),
-                    n.e("41332"),
                     n.e("976516"),
+                    n.e("41332"),
                     n.e("496715"),
                     n.e("400501"),
                     n.e("985794"),
@@ -524204,7 +524243,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "18a90dded8ac93df750c32393e5d0927a53bd655",
+                      "e530f10a1ea2807b94c60767eefb0a870835f57e",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", K),
@@ -534583,7 +534622,7 @@ ${l.join(" +\n")}
               ).then((e) => {
                 let i = {
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    build_number: "649615",
+                    build_number: "649831",
                   },
                   u = o.default.getCurrentUser();
                 null != u &&
@@ -546511,7 +546550,7 @@ ${l.join(" +\n")}
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("649615", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("649831", 10))) || (l.client_build_number = d),
           null == (c = eu?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -647547,7 +647586,7 @@ color: purple;
                                                                                                                                                                                                               e
                                                                                                                                                                                                             ? "" +
                                                                                                                                                                                                               e +
-                                                                                                                                                                                                              ".e0961963d31a032a.css"
+                                                                                                                                                                                                              ".61c82d46707d7782.css"
                                                                                                                                                                                                             : "622936" ===
                                                                                                                                                                                                                 e
                                                                                                                                                                                                               ? "" +
@@ -651237,7 +651276,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         115308:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "07321d140f76f6a8",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         115332:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "77b3aff86a40d672",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "02c1cda2578bc5fe",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         115368:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "721aa4c333577f2d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         115436:
@@ -651255,7 +651294,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         116326:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "4555b185ca6547d9",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         116566:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "13739e5f659e53e7",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "6809d7ee21b0da88",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         116694:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "9f7ff7f62c4adb50",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         116820:
@@ -651621,7 +651660,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         14775:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "49c55fcf4fa47e1e",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         147786:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "7f51b398899961dd",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "0749524cf1e37a5a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         147864:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "b5e0eb2fb8223e8b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         148315:
@@ -652160,13 +652199,13 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         192440:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "f55606f6adf04c6f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         192461:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "978b92b17f437d39",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "b3b10b473ba3be07",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         192508:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "e98ab7439cc68318",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         192589:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "9e5eaf2098d08b9a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         192623:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "14832137bc03073a",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "dc45dae2960e8852",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         19264:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "7a78e7dc98c3ca3a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         192643:
@@ -652413,7 +652452,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         212037:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "a20338492bf96212",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         212055:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "c32b0151e5db91d4",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "b4647049dc9368f4",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         212212:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "c49dcda29dea5d71",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         21226:
@@ -652479,7 +652518,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         217229:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "fcd9c9e93da90af1",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         217839:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "429577c3cd728581",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "dd6d01b9887383e6",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         217951:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "f1e458f598198424",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         218040:
@@ -653119,7 +653158,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         263283:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6944880c64917ea0",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         263408:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "e36144e01f77b8c1",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "dcb7aa1284d8e33e",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         263815:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6b009f4e6f1be8a2",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         264048:
@@ -653259,7 +653298,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         275859:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "8da6798ccae65620",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         276056:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "e6b738dbe02bee4a",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "b6d5870ae2cc6d8b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         276108:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "62dded29fa505135",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         27612:
@@ -653382,8 +653421,6 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "83364d23c27fe610",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         28561:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "e1c94ee0d8845c99",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        285802:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "a0cdbe10581f0ee3",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         286197:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6a965d9d59f75315",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         286246:
@@ -653403,7 +653440,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         287973:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "cf68bcefbd6b3a72",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         287988:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "7a641aea7ae239a7",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "e81c81640b063a81",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         288106:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "31d8cf5bf4df96f5",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         288373:
@@ -653415,7 +653452,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         288688:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "b4698fa483bf80a7",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         288705:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "7c5ddba65b5bfaf2",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "f955bd778373cde1",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         288914:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "7fd152bac72a7f51",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         288981:
@@ -653484,7 +653521,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         294696:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "e43afe49ee746f32",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         294817:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "8a0b9b3bcf7d108a",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "30d47612c1452c87",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         294857:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "ae2af4aead23895c",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         29489:
@@ -653674,7 +653711,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         307898:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "f59822414686b577",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         30814:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "98420c2f025f9a66",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "6ede1713036b99d8",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         30824:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "f189768c095f7dfd",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         308555:
@@ -653820,7 +653857,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         319623:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "daf4df75293db25f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         319666:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "4734b353cd0964fd",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "30e7df116759cae6",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         32039:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "84337053294dc6dd",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         320428:
@@ -653971,7 +654008,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "74104e156622fc17",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         3355: "48da6f14b720ede6",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         335517:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "729a78fcf4016867",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "7ce3d2357a9d7fe3",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         335532:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6d43974f6871bdd7",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         335681:
@@ -654158,7 +654195,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         349155:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "c3bacc2d03a7c525",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         349212:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "9629815d0f69bba5",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "ca74ed3fcaea4e3b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         349288:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "b6c8c855a8285fa4",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         349504:
@@ -654584,7 +654621,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         383792:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "4f8e093beccba116",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         384100:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "431d0316e5e1a227",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "639e28d9fbebecc2",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         384123:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "2d94fd83f61ec80f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         38426:
@@ -654942,7 +654979,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         413167:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6bf8bd93676b9106",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         41332:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "95ab113b8371ad99",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "f1c5369ca2c013fe",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         41344:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "8eee42fad9e2bcf6",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         413596:
@@ -655066,7 +655103,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         423774:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "e45075d900844f6e",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         423798:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "4a80d9a79f478eae",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "b71ee021f501d375",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         424028:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "1613d10fa0a494ff",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         424199:
@@ -655078,7 +655115,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         424946:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "d16826b073c82509",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         424966:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "38114e31dab1a210",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "f94331171f9cc6ed",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         424979:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "34400609bcd882c9",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         425055:
@@ -655167,7 +655204,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431150:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "de8d35992db51e9f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431294:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "029beb56a3f34fce",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "15ccca5e9ff49707",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431649:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "df7c6c44cfb52c3b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431658:
@@ -655177,7 +655214,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431714:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "4178f409aecc22a9",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431897:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "293874f6b17c95d6",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "b06dd0b5ad05e620",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431933:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "32642c1b7fa84c5d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         431944:
@@ -655245,7 +655282,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         436946:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "308a365f3cceeb92",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         437065:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "91cedfe51ab4557f",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "7f9b9f3efd5e32bf",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         437091:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "abb5afc1630bcdaf",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         437254:
@@ -655687,7 +655724,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         472015:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "2134c1b7b09201c4",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         472165:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "944112c48de6e1d6",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "3c620d578d217e93",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         472289:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "bdaf3d5dce6af8a6",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         472627:
@@ -656371,7 +656408,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         525676:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "a2a8963e1b98151e",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         52584:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "a76fac42dd7da44e",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "a309d45af84b0dde",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         526068:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "80464c2e2daef6de",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         526129:
@@ -656861,7 +656898,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         567364:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "7872eeefca8c6f70",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         567620:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "d41875eb6032f157",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "dbc0396be2a0b849",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         567743:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "edde8abbcb6251ec",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         568035:
@@ -657085,7 +657122,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         584605:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "a09dc465ecc9db25",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         584615:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "2068b5706338e2e8",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "969ea39b26516202",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         584811:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "77cfd3c3f94d3f4e",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         584927:
@@ -657283,7 +657320,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         599666:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "58150044a19c0de6",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         599719:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "bee3338b74f7e22a",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "269258a06419fdd4",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         599854:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "21b4a7fc73e1a9cc",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         599940:
@@ -657382,7 +657419,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         607652:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "3d4cce4a600bdc7e",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         60800:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "8bd4dd76e2c95f3a",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "5e72ab2cb1477681",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         608032:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "a0fbd3c905cf18bd",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         608051:
@@ -657939,8 +657976,6 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "7d6e69a467a59bdf",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         65178:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "9477e46a6c555e06",
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        65200:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "5ab9f1c421ba6b8f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         65204:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "a758e379dac15c95",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         652111:
@@ -658515,6 +658550,8 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "20919e49789f1672",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         697354:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "d91eefb9ad53e709",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        697367:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "2a551d4bb1c07931",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         697585:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "2889c3797b9926fc",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         69772:
@@ -658876,7 +658913,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         72428:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6df5998821fdec81",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         724303:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "f2ce828d29b60c8d",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "77f6c3d1b8af549f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         724553:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "8b0d21a02e06e1f2",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         724637:
@@ -659136,7 +659173,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         745959:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "1bba1900d5a423df",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         746183:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "093c4adde55f8dcf",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "fe6d9251f9aa4e0a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         746374:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "91f521a3e6ec65c1",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         746485:
@@ -659193,7 +659230,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         751681:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "69e59511450944b2",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         751743:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "9c97fd5e49464898",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "a722bf63d6bbf1be",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         751992:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "2cdf15d28f84fd00",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         752061:
@@ -659501,7 +659538,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         776750:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "125fcc319303e790",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         776793:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "8ba2bd86a7f02350",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "057a8a6979dafe64",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         776915:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "9d9ae5ca7dfa750b",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         776995:
@@ -659691,7 +659728,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         79171:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "26a7694c923589b4",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         791803:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "593e23bf479c38f3",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "0b6b9f4c750927ac",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         791824:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "62b3d948d87709e6",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         791879:
@@ -659862,7 +659899,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         807771:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6d5c4623dee259fd",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         807936:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "fc8baa539f1f70ea",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "cf8c89a5f84879f3",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         808058:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "92f182811e40cb3f",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         808113:
@@ -660069,7 +660106,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         822070:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "aa412ea74728dfa6",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         822387:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "4225e766f834a1f4",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "bc719bcec44a5269",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         822981:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "02359e3f150bfea6",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         82318:
@@ -660319,7 +660356,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         842492:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "6e68f8fcd1e8e1d7",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         842516:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "493e4085c4baeb6d",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "89b05a2c9847fab5",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         842573:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "1eff134af3c738a0",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         842775:
@@ -661544,7 +661581,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         939831:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "d6079943c4f55679",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         939940:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "259a7ec60f635bc8",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "35cda302e8287bd0",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         940248:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "83697000b028d264",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         940258:
@@ -661562,7 +661599,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         941203:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "39eae504c5f4ae19",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         941348:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "e9079c9062c57abb",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "a72de9d670b84dad",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         942030:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "52443dae8c36a274",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         942068:
@@ -662046,7 +662083,7 @@ color: purple;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         982730:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "5d97a6b5887a835d",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         983373:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "572c9e2b3aef0aab",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "ea339030bac2205a",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         983710:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "29d4d3e3d638ecab",
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         983947:
@@ -663534,4 +663571,4 @@ color: purple;
   );
   C = T.O(C);
 })();
-//# sourceMappingURL=web.0136866e53221166.js.map
+//# sourceMappingURL=web.d17717d51ad66b68.js.map
