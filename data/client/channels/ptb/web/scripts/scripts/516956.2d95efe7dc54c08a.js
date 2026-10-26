@@ -1,8 +1,8 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["996499"],
+  ["516956"],
   {
-    622112(_, e, o) {
+    622112(_, e, r) {
       _.exports = {
         iE: "wrapper_cc5dd2",
         JW: "svg_cc5dd2",
@@ -16,7 +16,10 @@
         Zt: "highlight_cc5dd2",
       };
     },
-    570001(_, e, o) {
+    889553(_, e, r) {
+      _.exports = { x: "sliderContainer__65039" };
+    },
+    570001(_, e, r) {
       _.exports = {
         iE: "wrapper__6e9f8",
         AN: "childWrapper__6e9f8",
@@ -27,7 +30,7 @@
         Kk: "icon__6e9f8",
       };
     },
-    934966(_, e, o) {
+    934966(_, e, r) {
       _.exports = {
         lm: "notice__6e2b9",
         Fr: "isMobile__6e2b9",
@@ -51,7 +54,7 @@
         oy: "buttonMinor__6e2b9",
       };
     },
-    114640(_, e, o) {
+    114640(_, e, r) {
       _.exports = {
         cz: "hamburger__9293f",
         kL: "container__9293f",
@@ -82,7 +85,23 @@
         GY: "themedMobile__9293f",
       };
     },
-    974689(_, e, o) {
+    77232(_, e, r) {
+      _.exports = {
+        aw: "slider_d061ce",
+        r9: "disabled_d061ce",
+        Ub: "grabber_d061ce",
+        M0: "bar_d061ce",
+        pP: "barFill_d061ce",
+        u4: "track_d061ce",
+        Gy: "mark_d061ce",
+        zt: "markAbove_d061ce",
+        nj: "markValue_d061ce",
+        gf: "markDash_d061ce",
+        Jh: "defaultValue_d061ce",
+        ZF: "hasMarks_d061ce",
+      };
+    },
+    974689(_, e, r) {
       _.exports = { M: "btnHamburger__006d6", s: "btnHamburgerOpen__006d6" };
     },
   },
