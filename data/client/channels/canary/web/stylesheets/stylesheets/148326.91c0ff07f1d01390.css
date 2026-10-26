@@ -17,8 +17,15 @@
   position: relative;
   width: var(--custom-emoji-picker-constants-guild-category-icon-size);
 }
-.categoryItemGuildCategory_b9ee0c,
 .categoryItemPackCategory_b9ee0c {
+}
+.emoji.packIcon_b9ee0c {
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+}
+.categoryItemGuildCategory_b9ee0c {
 }
 .categoryItemDefaultCategory_b9ee0c {
   border-radius: 4px;
@@ -109,17 +116,20 @@
   );
 }
 .enable-forced-colors .categoryItemDefaultCategory_b9ee0c,
-.enable-forced-colors .categoryItemGuildCategory_b9ee0c {
+.enable-forced-colors .categoryItemGuildCategory_b9ee0c,
+.enable-forced-colors .categoryItemPackCategory_b9ee0c {
   border: 1px solid Canvas;
   border-radius: 4px;
   transition: none;
 }
 .enable-forced-colors .categoryItemDefaultCategory_b9ee0c .categoryIcon_b9ee0c,
-.enable-forced-colors .categoryItemGuildCategory_b9ee0c .categoryIcon_b9ee0c {
+.enable-forced-colors .categoryItemGuildCategory_b9ee0c .categoryIcon_b9ee0c,
+.enable-forced-colors .categoryItemPackCategory_b9ee0c .categoryIcon_b9ee0c {
   color: ButtonText;
 }
 .enable-forced-colors .categoryItemDefaultCategory_b9ee0c:hover,
-.enable-forced-colors .categoryItemGuildCategory_b9ee0c:hover {
+.enable-forced-colors .categoryItemGuildCategory_b9ee0c:hover,
+.enable-forced-colors .categoryItemPackCategory_b9ee0c:hover {
   background: ButtonFace;
   border-color: ButtonText;
 }
@@ -418,4 +428,4 @@
   }
 }
 
-/*# sourceMappingURL=148326.c99c775793b2c59d.css.map*/
+/*# sourceMappingURL=148326.91c0ff07f1d01390.css.map*/
