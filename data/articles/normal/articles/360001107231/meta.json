@@ -23,9 +23,14 @@
   "content_tag_ids": [],
   "label_names": [
     "verified",
+    "community",
     "answer-bot",
+    "server",
+    "friend",
     "*officialhctemplate",
-    "verified server program"
+    "discoverable",
+    "verified server program",
+    "program"
   ],
   "user_segment_ids": []
 }

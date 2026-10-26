@@ -23,7 +23,12 @@
   "content_tag_ids": [],
   "label_names": [
     "verified",
-    "partner"
+    "partner",
+    "community",
+    "answer-bot",
+    "server",
+    "discoverable",
+    "partnered"
   ],
   "user_segment_ids": []
 }
