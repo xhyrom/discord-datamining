@@ -142,18 +142,14 @@ html:not(.mana-type-consolidation) .headerText__3e32a {
   padding-bottom: 4px;
 }
 .featureCardTag__3e32a {
-  background: var(--custom-premium-colors-premium-gradient-tier-2);
-  border-radius: 10px;
-  color: #fff;
   inset-inline-start: 16px;
   position: absolute;
   top: -8px;
 }
-.tag__3e32a {
-  background-color: var(--brand-500);
-  font-size: 12px;
-  line-height: 16px;
-  padding: 0 6px;
+.tagWrapper__3e32a {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .disclaimer__3e32a {
   max-width: 480px;
@@ -168,4 +164,4 @@ html:not(.mana-type-consolidation) .headerText__3e32a {
   margin-top: var(--space-24);
 }
 
-/*# sourceMappingURL=545749.5bdc2b81051afaa6.css.map*/
+/*# sourceMappingURL=545749.04193e0f3210d5d4.css.map*/

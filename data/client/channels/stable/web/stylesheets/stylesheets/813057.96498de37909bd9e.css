@@ -10,22 +10,53 @@
   min-width: 0;
 }
 .name__3bdf8 {
+  overflow: hidden;
   text-overflow: ellipsis;
   text-transform: uppercase;
   white-space: nowrap;
 }
-.emojis__3bdf8,
-.name__3bdf8 {
-  overflow: hidden;
-}
 .emojis__3bdf8 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-12);
-  height: var(--space-32);
+  height: var(--space-40);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+.emojis__3bdf8::-webkit-scrollbar {
+  display: none;
 }
 .emojisExpanded__3bdf8 {
   height: auto;
+  overflow: visible;
+}
+.emojiRow__3bdf8 {
+  display: flex;
+  gap: var(--space-12);
+  width: -moz-max-content;
+  width: max-content;
+}
+.emojisExpanded__3bdf8 .emojiRow__3bdf8 {
+  flex-wrap: wrap;
+  width: auto;
+}
+.emojiButton__3bdf8 {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  flex: none;
+  height: var(--space-40);
+  justify-content: center;
+  padding: 0;
+  width: var(--space-40);
+}
+.emojiButton__3bdf8:focus-visible,
+.emojiButton__3bdf8:not(:disabled):hover {
+  background-color: var(--interactive-background-hover);
+}
+.emojiButton__3bdf8:disabled {
+  cursor: default;
 }
 .emoji__3bdf8 {
   flex: none;
@@ -142,4 +173,4 @@
   width: 124px;
 }
 
-/*# sourceMappingURL=813057.94f8ffd2a8fc1018.css.map*/
+/*# sourceMappingURL=813057.96498de37909bd9e.css.map*/

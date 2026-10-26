@@ -314,6 +314,11 @@
   color: currentColor;
   text-decoration: underline;
 }
+.messageList__03a26 {
+  list-style-type: disc;
+  margin: 0;
+  padding-inline-start: var(--space-16);
+}
 .positive__03a26 {
   background: var(--background-feedback-positive);
   border: 1px solid var(--inlinenotice-border-positive);
@@ -343,4 +348,4 @@
   color: var(--icon-feedback-critical);
 }
 
-/*# sourceMappingURL=6255.915b35a9f1b6c146.css.map*/
+/*# sourceMappingURL=6255.afee014bbf8b0410.css.map*/

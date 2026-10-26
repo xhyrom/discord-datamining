@@ -666,5 +666,187 @@
 .enable-forced-colors .iconBadge__9293f {
   background-color: Highlight;
 }
+.slider_d061ce {
+  height: 40px;
+  position: relative;
+  width: 100%;
+}
+.disabled_d061ce {
+  opacity: 0.6;
+}
+.disabled_d061ce .grabber_d061ce {
+  cursor: not-allowed;
+}
+.bar_d061ce {
+  background-color: var(--slider-track-background);
+  border-radius: 4px;
+  display: block;
+  height: 8px;
+  overflow: hidden;
+  position: relative;
+  top: 16px;
+}
+.barFill_d061ce {
+  background: var(--control-brand-foreground-new);
+  height: 100%;
+}
+.track_d061ce {
+  --custom-track-inset: 5px;
+  position: absolute;
+  top: 0;
+  inset-inline: var(--custom-track-inset);
+  bottom: 0;
+}
+.grabber_d061ce {
+  background-color: var(--white);
+  border: 1px solid var(--border-strong);
+  border-radius: 3px;
+  box-shadow: var(--shadow-border), var(--shadow-ledge), var(--shadow-low);
+  cursor: ew-resize;
+  height: 24px;
+  margin-inline-start: -5px;
+  margin-top: -13px;
+  top: 50%;
+  width: 10px;
+}
+.grabber_d061ce,
+.mark_d061ce {
+  inset-inline-start: 0;
+  position: absolute;
+}
+.mark_d061ce {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-inline-start: -12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  width: 24px;
+}
+.markAbove_d061ce {
+  top: -6px;
+}
+.markBelow_d061ce {
+  bottom: -12px;
+}
+.mark_d061ce:first-child .markValue_d061ce {
+  transform: translateX(calc(50% - var(--custom-track-inset)));
+}
+.mark_d061ce:last-child .markValue_d061ce {
+  transform: translateX(calc(-50% + var(--custom-track-inset)));
+}
+.markValue_d061ce {
+  font-size: 10px;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 4px;
+  min-height: 10px;
+  padding-inline-start: 1px;
+}
+.markDash_d061ce {
+  background-color: var(--slider-track-background);
+  height: 24px;
+  width: 2px;
+}
+.markDashSimple_d061ce {
+  margin-top: 10px;
+}
+.markValue_d061ce {
+  color: var(--text-muted);
+}
+.defaultValue_d061ce .markValue_d061ce {
+  color: var(--text-feedback-positive);
+}
+.slider_d061ce {
+  height: calc(24px + var(--bar-offset));
+  --grabber-size: 16px;
+  --bar-size: 4px;
+  --bar-offset: 0px;
+}
+.slider_d061ce.hasMarks_d061ce {
+  --bar-offset: 24px;
+}
+.slider_d061ce .mark_d061ce {
+  display: flex;
+  flex-direction: column;
+  height: 48px;
+  justify-content: space-between;
+  top: 0;
+}
+.slider_d061ce .markValue_d061ce {
+  color: var(--text-subtle);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.slider_d061ce .defaultValue_d061ce .markValue_d061ce {
+  color: var(--text-feedback-positive);
+}
+.slider_d061ce .markDash_d061ce {
+  border-radius: 12px;
+}
+.slider_d061ce .grabber_d061ce {
+  border: 1px solid var(--border-normal);
+  border-radius: 50%;
+  box-shadow: var(--shadow-low);
+  box-sizing: border-box;
+  height: var(--grabber-size);
+  margin-inline-start: calc(var(--grabber-size) / -2);
+  margin-top: calc(var(--grabber-size) / -2 + var(--bar-offset) / 2);
+  width: var(--grabber-size);
+}
+.high-contrast-mode .slider_d061ce .grabber_d061ce {
+  border-color: var(--border-strong);
+}
+.slider_d061ce .hasMarks_d061ce .grabber_d061ce {
+  margin-top: calc(var(--grabber-size) / -2 + 12px);
+}
+.slider_d061ce .bar_d061ce {
+  background-color: var(--slider-track-background);
+  height: var(--bar-size);
+  top: calc((24px - var(--bar-size)) / 2 + var(--bar-offset));
+}
+.slider_d061ce .hasMarks_d061ce .bar_d061ce {
+  top: 34px;
+}
+.slider_d061ce .barFill_d061ce {
+  background-color: var(--background-brand);
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+.enable-forced-colors .barFill_d061ce {
+  background: Highlight;
+}
+.enable-forced-colors .grabber_d061ce {
+  background-color: Highlight;
+  border-color: Highlight;
+}
+.enable-forced-colors .bar_d061ce {
+  background: Canvas;
+  border: 1px solid ButtonText;
+}
+.enable-forced-colors .markDash_d061ce {
+  background: CanvasText;
+}
+.enable-forced-colors .disabled_d061ce {
+  opacity: 1;
+}
+.enable-forced-colors .disabled_d061ce .barFill_d061ce {
+  background: GrayText;
+}
+.enable-forced-colors .disabled_d061ce .grabber_d061ce {
+  background-color: GrayText;
+  border-color: GrayText;
+}
+.enable-forced-colors .disabled_d061ce .bar_d061ce {
+  background: Canvas;
+  border-color: GrayText;
+}
+.sliderContainer__65039 {
+  box-sizing: border-box;
+  overflow: visible;
+  padding: 0 8px;
+  position: relative;
+  top: -4px;
+}
 
-/*# sourceMappingURL=996499.630a381945f9716f.css.map*/
+/*# sourceMappingURL=516956.5251758582ffb025.css.map*/

@@ -9,6 +9,8 @@
         UU: "name__3bdf8",
         gm: "emojis__3bdf8",
         jE: "emojisExpanded__3bdf8",
+        nI: "emojiRow__3bdf8",
+        Z8: "emojiButton__3bdf8",
         Zg: "emoji__3bdf8",
       };
     },
