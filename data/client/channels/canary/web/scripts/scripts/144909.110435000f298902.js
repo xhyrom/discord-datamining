@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["864875"],
+  ["144909"],
   {
     637219(e, _, r) {
       e.exports = { p: "list__75b62", r: "recordContainer__75b62" };
@@ -145,19 +145,6 @@
         h_: "description__3e6b4",
         c8: "heroImage__3e6b4",
         lG: "safetyTips__3e6b4",
-      };
-    },
-    219052(e, _, r) {
-      e.exports = {
-        vR: "tabs_b292bc",
-        q3: "indicator_b292bc",
-        bB: "strip_b292bc",
-        H$: "rail_b292bc",
-        ld: "items_b292bc",
-        AS: "item_b292bc",
-        PG: "contents_b292bc",
-        C3: "panels_b292bc",
-        nd: "panel_b292bc",
       };
     },
     778956(e, _, r) {
