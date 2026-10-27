@@ -1,25 +1,3 @@
-.slateContainer_ec4baf {
-  position: relative;
-}
-.slateTextArea_ec4baf {
-  box-sizing: border-box;
-  inset-inline: 0 10px;
-  min-height: var(
-    --custom-channel-textarea-editor-min-height,
-    var(--custom-channel-textarea-text-area-height)
-  );
-  padding: calc(
-      (
-          var(--custom-channel-textarea-text-area-height) -
-            var(--chat-markup-line-height)
-        ) / 2
-    )
-    0;
-  position: absolute;
-}
-.enable-forced-colors .placeholder_ec4baf {
-  color: GrayText;
-}
 .modalRoot_b824c5 {
   background-color: transparent !important;
   border: none !important;
@@ -773,4 +751,4 @@
   }
 }
 
-/*# sourceMappingURL=245420.4448bd478e383c76.css.map*/
+/*# sourceMappingURL=734818.a7e438c60fc60d57.css.map*/
