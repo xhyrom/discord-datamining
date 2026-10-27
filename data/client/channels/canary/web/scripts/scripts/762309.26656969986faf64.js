@@ -1,9 +1,9 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["598947"],
+  ["762309"],
   {
-    533550(p, s, c) {
-      p.exports = { Y: "anchor__15c30" };
+    165668(b, p, s) {
+      b.exports = { z: "bio_b40b46", w: "bioText_b40b46" };
     },
   },
 ]);

@@ -1,0 +1,138 @@
+.placeholder__84ae7 {
+  align-items: center;
+  background-color: var(--background-mod-subtle);
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+  padding: var(--space-8) var(--space-12);
+}
+.indicatorDot__3da4a {
+  border-radius: var(--radius-round);
+  display: inline-block;
+  flex: 0 0 auto;
+}
+.xs__3da4a {
+  height: var(--space-4);
+  width: var(--space-4);
+}
+.sm__3da4a {
+  height: var(--space-6);
+  width: var(--space-6);
+}
+.md__3da4a {
+  height: var(--space-8);
+  width: var(--space-8);
+}
+.lg__3da4a {
+  height: var(--space-10);
+  width: var(--space-10);
+}
+.primary__3da4a {
+  background-color: var(--badge-primary-background);
+}
+.notification__3da4a {
+  background-color: var(--badge-notification-background);
+}
+.neutral__3da4a {
+  background-color: var(--icon-strong);
+}
+.active__3da4a {
+  background-color: var(--status-positive);
+}
+.cutout-base-lower__3da4a {
+  box-shadow: 0 0 0 2px var(--background-base-lower);
+}
+.enable-forced-colors .indicatorDot__3da4a {
+  background-color: Highlight;
+  forced-color-adjust: none;
+}
+.surfaces_afabb3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-16);
+}
+.surface_afabb3 {
+  background-color: var(--background-base-lower);
+  border-radius: var(--radius-md);
+  padding: var(--space-16);
+}
+.grid_afabb3 {
+  display: grid;
+  gap: var(--space-12) var(--space-24);
+  grid-template-columns: repeat(5, auto);
+  justify-items: center;
+}
+.cell_afabb3,
+.grid_afabb3 {
+  align-items: center;
+}
+.cell_afabb3 {
+  display: inline-flex;
+  justify-content: center;
+}
+.row__02ff5 {
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: center;
+  padding: var(--space-8) 0;
+}
+.buttonHost__02ff5 {
+  position: relative;
+}
+.discoveryDot__02ff5 {
+  inset-inline-end: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+}
+.button__02ff5 {
+  --custom-emoji-packs-button-gradient-start-hsl: var(--illo-pink-40-hsl);
+  --custom-emoji-packs-button-gradient-end-hsl: var(--illo-blue-50-hsl);
+  align-items: center;
+  background-color: var(--background-mod-strong);
+  background-image: radial-gradient(
+      circle 32px at 97% 94%,
+      hsl(var(--custom-emoji-packs-button-gradient-end-hsl) / 63%) 0,
+      hsl(var(--custom-emoji-packs-button-gradient-end-hsl) / 28%) 45%,
+      hsl(var(--custom-emoji-packs-button-gradient-end-hsl) / 0%) 100%
+    ),
+    radial-gradient(
+      circle 32px at 12% 94%,
+      hsl(var(--custom-emoji-packs-button-gradient-start-hsl) / 63%) 0,
+      hsl(var(--custom-emoji-packs-button-gradient-start-hsl) / 28%) 45%,
+      hsl(var(--custom-emoji-packs-button-gradient-start-hsl) / 0%) 100%
+    );
+  border-radius: var(--radius-sm);
+  color: var(--icon-default);
+  cursor: pointer;
+  display: flex;
+  height: var(--custom-emoji-picker-constants-unicode-category-icon-size);
+  justify-content: center;
+  overflow: hidden;
+  padding: var(--custom-emoji-picker-constants-unicode-category-icon-padding);
+  transition: background-color 0.1s ease-in-out;
+  width: var(--custom-emoji-picker-constants-unicode-category-icon-size);
+}
+.theme-light .button__02ff5 {
+  --custom-emoji-packs-button-gradient-start-hsl: var(--illo-pink-30-hsl);
+  --custom-emoji-packs-button-gradient-end-hsl: var(--illo-blue-40-hsl);
+}
+.button__02ff5:hover {
+  background-color: var(--interactive-background-hover);
+}
+.enable-forced-colors .row__02ff5 {
+  border-bottom: 1px solid CanvasText;
+}
+.enable-forced-colors .button__02ff5 {
+  background-image: none;
+  border: 1px solid Canvas;
+  color: ButtonText;
+  transition: none;
+}
+.enable-forced-colors .button__02ff5:hover {
+  background: ButtonFace;
+  border-color: ButtonText;
+}
+
+/*# sourceMappingURL=938512.d187c9a26870ac1e.css.map*/
