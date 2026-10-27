@@ -420,6 +420,7 @@
 .channelAttachmentArea_b77158 {
   display: flex;
   gap: 24px;
+  isolation: isolate;
   margin: 0;
   overflow-x: auto;
   padding: 20px 10px 10px;
@@ -564,4 +565,4 @@
   border-inline-start: 1px solid var(--border-subtle);
 }
 
-/*# sourceMappingURL=331249.cebb6747a9d1a9a8.css.map*/
+/*# sourceMappingURL=331249.5458644827cb1176.css.map*/
