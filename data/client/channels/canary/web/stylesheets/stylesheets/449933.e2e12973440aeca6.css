@@ -24,10 +24,6 @@
   background: var(--control-secondary-background-hover);
   border: 1px solid var(--control-secondary-border-hover);
 }
-.sectionDimmed__61424 {
-  opacity: 0.4;
-  transition: opacity 0.2s ease;
-}
 .sectionContainer__61424 {
   align-items: center;
   background-color: var(--background-base-low);
@@ -194,4 +190,4 @@
   justify-content: center;
 }
 
-/*# sourceMappingURL=449933.5252508a03c0cb3b.css.map*/
+/*# sourceMappingURL=449933.e2e12973440aeca6.css.map*/

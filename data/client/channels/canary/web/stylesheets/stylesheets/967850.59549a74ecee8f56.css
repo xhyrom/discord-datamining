@@ -98,18 +98,17 @@
 }
 .soundButtonWrapper__9be63 {
   background: var(--background-base-lower);
-  border-radius: var(--radius-sm);
   list-style: none;
-  position: relative;
 }
-.dragging__9be63 {
-  opacity: 0.4;
+.soundButton__9be63,
+.soundButtonWrapper__9be63 {
+  border-radius: var(--radius-sm);
+  position: relative;
 }
 .soundButton__9be63 {
   align-items: center;
   background: var(--background-mod-subtle);
   border: 1px solid transparent;
-  border-radius: var(--radius-sm);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -117,30 +116,26 @@
   height: 40px;
   justify-content: center;
   overflow: hidden;
-  position: relative;
   text-align: center;
   width: 148px;
 }
-.soundButton__9be63.focused__9be63:not(.disableActiveStyles__9be63):not(
+.soundButton__9be63.focused__9be63:not(
     .soundButtonInteractive__9be63.playing__9be63
   ),
 .soundButton__9be63:active:not(:focus-within):not(
-    .disableActiveStyles__9be63
-  ):not(.soundButtonInteractive__9be63.playing__9be63),
-.soundButton__9be63:hover:not(.disableActiveStyles__9be63):not(
     .soundButtonInteractive__9be63.playing__9be63
-  ) {
+  ),
+.soundButton__9be63:hover:not(.soundButtonInteractive__9be63.playing__9be63) {
   border-color: var(--border-subtle);
 }
 .high-contrast-mode .soundButton__9be63 {
   border-color: var(--border-muted);
 }
-.animated__9be63:not(.disableActiveStyles__9be63):active:not(:focus-within) {
+.animated__9be63:active:not(:focus-within) {
   box-shadow: none;
   outline-width: 1px;
 }
-.full-motion
-  .animated__9be63:not(.disableActiveStyles__9be63):active:not(:focus-within) {
+.full-motion .animated__9be63:active:not(:focus-within) {
   transform: translateY(2px);
 }
 .addButton__9be63 {
@@ -156,28 +151,22 @@
 .addButton__9be63 > * {
   margin-inline-end: 4px;
 }
-.hoverActiveBackground__9be63.focused__9be63:not(.disableActiveStyles__9be63),
-.hoverActiveBackground__9be63:focus-within:not(.disableActiveStyles__9be63) {
+.hoverActiveBackground__9be63.focused__9be63,
+.hoverActiveBackground__9be63:focus-within {
   background: var(--background-mod-normal);
 }
-.hoverActiveBackground__9be63:hover:not(.disableActiveStyles__9be63) {
+.hoverActiveBackground__9be63:hover {
   background: var(--background-mod-strong);
 }
-.soundButton__9be63.focused__9be63:not(.disableActiveStyles__9be63)
-  .buttonOverlay__9be63,
-.soundButton__9be63:focus-within:not(.disableActiveStyles__9be63)
-  .buttonOverlay__9be63,
-.soundButton__9be63:hover:not(.disableActiveStyles__9be63)
-  .buttonOverlay__9be63 {
+.soundButton__9be63.focused__9be63 .buttonOverlay__9be63,
+.soundButton__9be63:focus-within .buttonOverlay__9be63,
+.soundButton__9be63:hover .buttonOverlay__9be63 {
   opacity: 1;
   visibility: visible;
 }
-.soundButton__9be63.focused__9be63:not(.disableActiveStyles__9be63)
-  .addButtonOverlay__9be63,
-.soundButton__9be63:focus-within:not(.disableActiveStyles__9be63)
-  .addButtonOverlay__9be63,
-.soundButton__9be63:hover:not(.disableActiveStyles__9be63)
-  .addButtonOverlay__9be63 {
+.soundButton__9be63.focused__9be63 .addButtonOverlay__9be63,
+.soundButton__9be63:focus-within .addButtonOverlay__9be63,
+.soundButton__9be63:hover .addButtonOverlay__9be63 {
   opacity: 1;
   visibility: visible;
 }
@@ -301,4 +290,4 @@
   width: 100%;
 }
 
-/*# sourceMappingURL=967850.db2b4f162fac9993.css.map*/
+/*# sourceMappingURL=967850.59549a74ecee8f56.css.map*/

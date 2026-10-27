@@ -1840,33 +1840,6 @@ strong {
   inset-inline-start: 50%;
   transform: translateX(-50%);
 }
-.container__5662e {
-  position: relative;
-  top: -10px;
-}
-.container__3f123 {
-  position: relative;
-  top: 10px;
-}
-.container_ee658d {
-  position: relative;
-}
-.personAvatar_ee658d {
-  margin-top: 20px;
-}
-.guildAvatar_ee658d {
-  margin-top: -38px;
-  margin-inline-start: 193px;
-}
-.illustration_ee658d {
-  inset-inline-start: 50px;
-  position: absolute;
-  top: 0;
-}
-.avatarSizeOverride_ee658d {
-  height: 60px !important;
-  width: 60px !important;
-}
 .icon_dbd216 {
   margin: 0 2px 4px;
   vertical-align: middle;
@@ -1874,17 +1847,8 @@ strong {
 .voiceConversationsTitle_dbd216 {
   margin-top: 32px;
 }
-.writingMessagesTitle_dbd216 {
-  margin-top: 44px;
-}
 .organizeByTopicTitle_dbd216 {
   margin-top: 40px;
-}
-.voiceChannelsTitle_dbd216 {
-  margin-top: 24px;
-}
-.channelsTitle_dbd216 {
-  margin-top: 90px;
 }
 .indicator_ffc7aa {
   display: flex;
@@ -2156,4 +2120,4 @@ strong {
   color: var(--status-warning-text);
 }
 
-/*# sourceMappingURL=657503.3ee020b4ac38dc6a.css.map*/
+/*# sourceMappingURL=311106.d1da8dd4843eb84a.css.map*/

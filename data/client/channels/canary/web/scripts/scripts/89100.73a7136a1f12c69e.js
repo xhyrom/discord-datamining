@@ -1,8 +1,8 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["880286"],
+  ["89100"],
   {
-    811559(e, _, a) {
+    811559(e, _, n) {
       e.exports = {
         M0: "bar__84522",
         iz: "commandInfo__84522",
@@ -11,10 +11,29 @@
         o1: "actions__84522",
       };
     },
-    541188(e, _, a) {
+    541188(e, _, n) {
       e.exports = { M: "bar_d90114", z: "error_d90114" };
     },
-    218782(e, _, a) {
+    558497(e, _, n) {
+      e.exports = {
+        e1: "clipContainer__841c8",
+        kL: "container__841c8",
+        eU: "replyBar__841c8",
+        _r: "threadSuggestionBar__841c8",
+        Qq: "text__841c8",
+        Fn: "replyLabel__841c8",
+        UU: "name__841c8",
+        H8: "mediaMention__841c8",
+        gS: "clipIcon__841c8",
+        NV: "clipTitle__841c8",
+        o1: "actions__841c8",
+        Z4: "mentionButton__841c8",
+        mM: "mentionIcon__841c8",
+        me: "separator__841c8",
+        NG: "createThreadButton__841c8",
+      };
+    },
+    218782(e, _, n) {
       e.exports = {
         Tz: "stickerPreviews_a4cf0b",
         dp: "stickerPreviewContainer_a4cf0b",
@@ -25,7 +44,10 @@
         ut: "closeIcon_a4cf0b",
       };
     },
-    399482(e, _, a) {
+    595347(e, _, n) {
+      e.exports = { b: "closeButton_e876a8", u: "closeIcon_e876a8" };
+    },
+    399482(e, _, n) {
       e.exports = {
         kL: "container__3f41e",
         Kd: "containerActive__3f41e",
@@ -34,14 +56,14 @@
         t0: "spin__3f41e",
       };
     },
-    771653(e, _, a) {
+    771653(e, _, n) {
       e.exports = {
         EX: "small__258ba",
         Y: "medium__258ba",
         as: "large__258ba",
       };
     },
-    160639(e, _, a) {
+    160639(e, _, n) {
       e.exports = {
         kL: "container__183e8",
         vK: "banner__183e8",
@@ -54,7 +76,7 @@
         so: "completed__183e8",
       };
     },
-    682172(e, _, a) {
+    682172(e, _, n) {
       e.exports = {
         yF: "divider__908e2",
         KJ: "isUnread__908e2",
@@ -66,7 +88,7 @@
         Qs: "content__908e2",
       };
     },
-    29621(e, _, a) {
+    29621(e, _, n) {
       e.exports = {
         e1: "clipContainer_ba21b4",
         kL: "container_ba21b4",
