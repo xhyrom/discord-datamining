@@ -1,0 +1,57 @@
+.row__02ff5 {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: var(--space-8) 0;
+}
+.button__02ff5,
+.row__02ff5 {
+  display: flex;
+  justify-content: center;
+}
+.button__02ff5 {
+  --custom-emoji-packs-button-gradient-start-hsl: var(--illo-pink-40-hsl);
+  --custom-emoji-packs-button-gradient-end-hsl: var(--illo-blue-50-hsl);
+  align-items: center;
+  background-color: var(--background-mod-strong);
+  background-image: radial-gradient(
+      circle 32px at 97% 94%,
+      hsl(var(--custom-emoji-packs-button-gradient-end-hsl) / 63%) 0,
+      hsl(var(--custom-emoji-packs-button-gradient-end-hsl) / 28%) 45%,
+      hsl(var(--custom-emoji-packs-button-gradient-end-hsl) / 0%) 100%
+    ),
+    radial-gradient(
+      circle 32px at 12% 94%,
+      hsl(var(--custom-emoji-packs-button-gradient-start-hsl) / 63%) 0,
+      hsl(var(--custom-emoji-packs-button-gradient-start-hsl) / 28%) 45%,
+      hsl(var(--custom-emoji-packs-button-gradient-start-hsl) / 0%) 100%
+    );
+  border-radius: var(--radius-sm);
+  color: var(--icon-default);
+  cursor: pointer;
+  height: var(--custom-emoji-picker-constants-unicode-category-icon-size);
+  overflow: hidden;
+  padding: var(--custom-emoji-picker-constants-unicode-category-icon-padding);
+  transition: background-color 0.1s ease-in-out;
+  width: var(--custom-emoji-picker-constants-unicode-category-icon-size);
+}
+.theme-light .button__02ff5 {
+  --custom-emoji-packs-button-gradient-start-hsl: var(--illo-pink-30-hsl);
+  --custom-emoji-packs-button-gradient-end-hsl: var(--illo-blue-40-hsl);
+}
+.button__02ff5:hover {
+  background-color: var(--interactive-background-hover);
+}
+.enable-forced-colors .row__02ff5 {
+  border-bottom: 1px solid CanvasText;
+}
+.enable-forced-colors .button__02ff5 {
+  background-image: none;
+  border: 1px solid Canvas;
+  color: ButtonText;
+  transition: none;
+}
+.enable-forced-colors .button__02ff5:hover {
+  background: ButtonFace;
+  border-color: ButtonText;
+}
+
+/*# sourceMappingURL=861973.7c784f84b3072a45.css.map*/
