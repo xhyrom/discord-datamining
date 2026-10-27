@@ -1,223 +1,191 @@
 <p>
-  <span style="font-weight: 400"
-    >With the Server Discovery feature, a server can become public and visible
-    to all. We'll go over where to access this feature for your server
-    below.</span
-  >
+  <strong>Server Discovery</strong> is how a Community Server becomes a
+  Discoverable Server, which anyone can find and join without an invite. Here's
+  how to turn it on, and where to go if you want to turn it off. Discoverable
+  Servers also have a Server Web Page that anyone can find through web search.
+  Summaries of public channels may appear on it from November 16, 2026, and
+  messages can appear starting mid-December 2026. Both are on by default, and
+  you can change which channels are included in your server's
+  <strong>Web Presence</strong> settings.
 </p>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What does this article cover?</strong></span
-  >
+  Not sure if your server is already Discoverable? Check the
+  <strong>Discovery</strong> page in Server Settings.  
 </p>
-<ul>
-  <li data-list-item-id="ea8b8a1a96edfcd64cc9d48c7dfe28927">
-    <a href="#h_01GCHW555YT4Y6Z2P1W3668133" target="_self"
-      ><span style="font-weight: 400">How to enable Server Discovery</span></a
+<div class="toc-box">
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
     >
-  </li>
-  <li data-list-item-id="e97c55dba058d658c145f181b286044e0">
-    <a href="#h_01GCHW5CGDT4A50EF1ZJKHDTSC" target="_self"
-      ><span style="font-weight: 400"
-        >How to disable the Community feature</span
-      ></a
-    >
-  </li>
-  <li data-list-item-id="e62a613493a7f59a5af8123ba3df14c86">
-    <a href="#h_01GCHW5KVAF9PW62K3C8H395KG" target="_self"
-      ><span style="font-weight: 400">Learn More!</span></a
-    >
-  </li>
-</ul>
-<h1 id="h_01GCHW555YT4Y6Z2P1W3668133">
-  <span style="font-weight: 400">How to enable Server Discovery</span>
-</h1>
-<h3 id="h_01JERG4SKE0N8RPGWAX3F90MAH">
-  <span style="color: #434343"
-    ><span data-darkreader-inline-color="">Users that have roles with </span
-    ><span data-darkreader-inline-color=""><strong>Manage Server</strong></span
-    ><span data-darkreader-inline-color=""> or </span
-    ><span data-darkreader-inline-color=""><strong>Administrator</strong></span
-    ><span data-darkreader-inline-color="">
-      permission enabled will have the ability to enable and disable Server
-      Discovery!</span
-    ></span
-  >
-</h3>
+  </p>
+  <ul>
+    <li data-list-item-id="e18ef28c08aa1817f46b9a46e704ead24">
+      <a href="#h_01GCHW555YT4Y6Z2P1W3668133">How to Enable Server Discovery</a>
+    </li>
+    <li data-list-item-id="e490222ffca4eaf43d6e32764bfa7b4d0">
+      <a href="#looking-to-turn-off-discoverability-features"
+        >Looking to turn off Discoverability features?</a
+      >
+    </li>
+  </ul>
+</div>
+<h1 id="h_01GCHW555YT4Y6Z2P1W3668133">How to Enable Server Discovery</h1>
+<div class="info-box">
+  <strong>Note:</strong> Members with the Manage Server or Administrator
+  permission can enable and disable Server Discovery.
+</div>
 <p>
-  <span style="font-weight: 400"
-    >Before you can enable Server Discovery, there are 6 requirements that must
-    be met before doing so: </span
-  >
+  Your server needs to meet these requirements before you can enable Server
+  Discovery:
 </p>
 <ul>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e5f5882c57287cb3c868b81d6c71d7776"
-  >
-    <span style="font-weight: 400"
-      >Enabling safety requirements for a safe environment.</span
-    >
+  <li data-list-item-id="e7cf203af2cd4249670dcb45b26476552">
+    Enabling safety requirements for a safe environment.
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="ee7394cddda0ebbb6c156006046d7dd84"
-  >
-    <span style="font-weight: 400"
-      >Server must have at least 1,000 members to qualify. </span
-    >
+  <li data-list-item-id="e4bd298751010a569797dfde1b93ae5d0">
+    Server must have at least 1,000 members to qualify.
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="ecb6169c3dd13b6399c630d6669d89421"
-  >
-    <span style="font-weight: 400"
-      >Servers need to be at least 8 weeks old to be in Discovery.</span
-    >
+  <li data-list-item-id="e606825fb08cb5bfa0b8d5c0dacc1a610">
+    Servers need to be at least 8 weeks old to be in Discovery.
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e69c6d8e22abc03f1394b6b3788191d5b"
-  >
-    <span style="font-weight: 400"
-      >Servers must meet certain activity requirements to be in Discovery.</span
-    >
+  <li data-list-item-id="eac3bfe79ad742e25f78fbd55c0dce0aa">
+    Servers must meet certain activity requirements to be in Discovery.
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e51ce1862b79daec58f9129d0f85d380f"
-  >
-    <span style="font-weight: 400"
-      >Your server name, description, and channel name looks clean!</span
-    >
+  <li data-list-item-id="edc8bc59c455ce42a0116795ffb8ba531">
+    Your server name, description, and channel names follow the
+    <a
+      href="https://support.discord.com/hc/en-us/articles/4409308485271-Discovery-Guidelines"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Discovery Guidelines</a
+    >.
   </li>
-  <li
-    style="font-weight: 400"
-    aria-level="1"
-    data-list-item-id="e8fbe99f9cb3a795ded60b0cbb8c1846b"
-  >
-    <span style="font-weight: 400"
-      >Enable the 2FA Requirement For Moderation Setting</span
-    >
+  <li data-list-item-id="e945de872c579602a3ba0f0f000d4f0fb">
+    Enable the <strong>2FA Requirement For Moderation</strong> setting.
   </li>
 </ul>
 <p>
-  <span style="font-weight: 400"
-    >1. To find the Server Discovery feature you'll first head into
-    <strong>Server Settings</strong>. You can do so by pressing on the name of
-    the server in the upper left or by right-clicking on the server name, which
-    opens the drop-down menu.</span
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/8769549220759"
-      alt="Screen_Shot_2022-07-13_at_11.07.09_AM.png"
-  /></span>
+  Eligibility criteria may be updated over time, and servers are expected to
+  continue meeting them to remain Discoverable.
 </p>
 <p>
-  <span style="font-weight: 400"
-    >2. Next, be sure to set your Discord server to Community by selecting
-    <strong>Enable Community</strong> and pressing on the
-    <strong>Get Started </strong>icon. Then, you will be prompted to set a few
-    safety requirements.</span
-  >
+  1. Open <strong>Server Settings</strong> by selecting your server's name in
+  the upper-left corner.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/8769588308375"
-      alt="serverdiscovery1.gif"
-      width="645"
-      height="357"
-  /></span>
+  <img
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 752/1241; width: 40.82%"
+    src="https://support.discord.com/hc/article_attachments/44429678584983"
+    alt="Server Settings Option in the Server Menu"
+    width="752"
+    height="1241"
+  />
 </p>
-<p class="wysiwyg-text-align-left">
-  <span style="font-weight: 400"
-    >3. After your server has been set to <strong>Community</strong>,  you can
-    head into the <strong>Discovery</strong> tab and select the
-    <strong>Set Up Discovery </strong>button.</span
-  >
+<h4 class="wysiwyg-text-align-center" id="h_01M5GA5Q912FE02BK3WJ02Z5HH">
+  Server Settings Option in the Server Menu
+</h4>
+<p>
+  2. If your server isn't a Community Server yet, select
+  <strong>Enable Community</strong>, then select
+  <strong>Get Started</strong> and follow the prompts to set up the required
+  safety settings. Learn more in
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Enabling Your Community Server</a
+  >.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/8769591901079"
-      alt="Screen_Shot_2022-07-13_at_9.44.01_AM.png"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/44429705583383"
+    alt="Enabling Community in Server Settings"
+    width="800"
+    height="596"
+  />
 </p>
-<p class="wysiwyg-text-align-left">
-  <span style="font-weight: 400"
-    >4. Once the server has met all the requirements,
-    <strong>Server Discovery</strong> can now be enabled by pressing the
-    <strong>Set Up Discovery</strong> button.</span
-  >
+<h4 class="wysiwyg-text-align-center" id="h_01M5GA710Q7B9DF5GFZAT9Z37S">
+  Enabling Community in Server Settings
+</h4>
+<p>
+  3. After your server has been set to <strong>Community</strong>, select
+  <strong>Access</strong>, then select the <strong>Discoverable</strong> tab to
+  see if your server meets the requirements for Server Discovery.
 </p>
-<h1 id="h_01GCHW5CGDT4A50EF1ZJKHDTSC">
-  <span style="font-weight: 400">How to disable the Community feature</span>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/8769591901079"
+    alt="Discoverable Tab under Access"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M5GA887MB9ZKM9SN93SRQBTA">
+  Discoverable Tab under Access
+</h4>
+<p>
+  4. If your server meets all Server Discovery requirements, select
+  <strong>Save</strong> to turn your server into a Discoverable Server.
+</p>
+<h1 id="looking-to-turn-off-discoverability-features">
+  Looking to turn off Discoverability features?
 </h1>
 <p>
-  <span style="font-weight: 400"
-    >1. If you would like to disable the Community feature, just head back into
-    your <strong>Server Settings</strong>.</span
-  >
-</p>
-<p>
-  <span style="font-weight: 400">2. Then, under the </span
-  ><strong>Community</strong
-  ><span style="font-weight: 400"> category, select the </span
-  ><strong>Overview</strong><span style="font-weight: 400"> tab. </span>
-</p>
-<p>
-  <span style="font-weight: 400"
-    >3. Finally, press the <strong>Disable Community</strong> button located at
-    the bottom of the page to disable this feature!</span
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/8769688842519"
-      alt="Serverdiscovery_disablecommunity.png"
-  /></span>
-</p>
-<h1 id="h_01GCHW5KVAF9PW62K3C8H395KG">
-  <span style="font-weight: 400">Learn More!</span>
-</h1>
-<p>
-  <span style="font-weight: 400"
-    >If you’d like to learn more about Server Discovery and the Community
-    feature, you can check out these articles here:</span
-  >
-</p>
-<p>
+  See the
   <a
-    href="https://support.discord.com/hc/en-us/articles/4409308485271"
+    href="https://support.discord.com/hc/en-us/articles/14078261239831-Clarifying-Server-Types#turning-off-discoverability"
     target="_blank"
     rel="noopener noreferrer"
-    >Discovery Guidelines</a
+    >Turning Off Discoverability</a
   >
+  section of Clarifying Server Types for how to turn off Discoverability and
+  what changes when you do.
 </p>
-<p>
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360023968311"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Server Discovery</a
-  >
-</p>
-<p>
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360047132851"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Enabling Community</a
-  >
-</p>
-<p> </p>
+<div class="warn-box">
+  <strong>Important:</strong> If your server is Discoverable, disabling
+  Community also turns off Discoverability automatically.
+</div>
+<div class="book-box">
+  <p><strong>Want to learn more?</strong> </p>
+  <ul>
+    <li data-list-item-id="e31105602e714802e3daa9b10d99514b3">
+      <a
+        href="https://support.discord.com/hc/en-us/articles/14078261239831-Clarifying-Server-Types"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Clarifying Server Types</a
+      >
+    </li>
+    <li data-list-item-id="eafdbaffe61251dad340cc7570d692208">
+      <a
+        href="https://support.discord.com/hc/en-us/articles/4409308485271"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Discovery Guidelines</a
+      >
+    </li>
+    <li data-list-item-id="e765b28068a0bb3189a60cd14b58ebf28">
+      <a
+        href="https://support.discord.com/hc/en-us/articles/360023968311"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Server Discovery</a
+      >
+    </li>
+    <li data-list-item-id="ea354002ce45d1e57e5538de44981488b">
+      <a
+        href="https://support.discord.com/hc/en-us/articles/360047132851"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Enabling Your Community Server</a
+      >
+    </li>
+    <li data-list-item-id="ee2b352b15dab490807d4c1196fd7af51">
+      <a
+        href="https://support.discord.com/hc/en-us/articles/4673515000983-Discord-Server-Web-Pages"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Discord Server Web Pages</a
+      >
+    </li>
+  </ul>
+</div>

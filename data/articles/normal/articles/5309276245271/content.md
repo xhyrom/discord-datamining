@@ -23,26 +23,26 @@
               >
             </p>
             <ul>
-              <li>
+              <li data-list-item-id="e53a018f270552d584bc1b1fc06e9ae12">
                 <a href="#h_01H28S36PEDZZREGK6ZMRGFMNY" target="_self"
                   >What is the Discord Admins Server?</a
                 >
               </li>
-              <li>
+              <li data-list-item-id="e61620df2ff91ba8c1847a97d26b0e0df">
                 <a
                   href="#docs-internal-guid-d3c0c919-7fff-4fea-6808-4b05e169aa28"
                   target="_self"
                   >Join the Discord Admins Server</a
                 >
               </li>
-              <li>
+              <li data-list-item-id="e11f5917dbad572dd6b894f62c37bf2b7">
                 <a
                   href="#docs-internal-guid-edb2046c-7fff-dd5d-dc6b-f9a998053600"
                   target="_self"
                   >Frequently Asked Questions</a
                 >
               </li>
-              <li>
+              <li data-list-item-id="e64aa77e11457b4fd5301230f6449df7a">
                 <a href="#h_01H28S3R8H5GN6JMDN9BSEJPX1" target="_self"
                   >How to Contact</a
                 >
@@ -68,10 +68,16 @@
             </p>
             <p>Below are the requirements your server will have to meet. </p>
             <ul>
-              <li>Have at least 1,000 members on your server</li>
-              <li>Have at least a 60% monthly member retention rate</li>
-              <li>Your server must be at least 3 months old</li>
-              <li>
+              <li data-list-item-id="efb4075662558f5fc98484edf93404f0f">
+                Have at least 1,000 members on your server
+              </li>
+              <li data-list-item-id="e80462fa801f35e3c456d865c7ca2041b">
+                Have at least a 60% monthly member retention rate
+              </li>
+              <li data-list-item-id="ef4ce934bf7ab6099b13b03ac41f8d612">
+                Your server must be at least 3 months old
+              </li>
+              <li data-list-item-id="e8be42677ff556ccfaf79d9152c715882">
                 Enable
                 <a
                   href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server"
@@ -85,7 +91,7 @@
             <p>
               If your server meets the above requirements and you have the
               <strong>Manage Server</strong> permission on that server, you will
-              be able to join the Discord Admins server. <br /><br />You, as an
+              be able to join the Discord Admins server. <br /><br />You, as an
               individual, can join as long as you have the "Manage Server"
               permission natively in Discord. If you would like other admins or
               moderators from your server to join the community, you will have
@@ -95,27 +101,36 @@
             </p>
             <p>To join the Discord Admins server… </p>
             <ul>
-              <li>Access Discord on the desktop/browser app </li>
-              <li>Go to your server’s <strong>Server Settings</strong></li>
-              <li>
+              <li data-list-item-id="ebd26c221bc73f353e95cde18020dbcde">
+                Access Discord on the desktop/browser app 
+              </li>
+              <li data-list-item-id="ef05ee50fa342d4d04e0a961cae2bc829">
+                Go to your server’s <strong>Server Settings</strong>
+              </li>
+              <li data-list-item-id="e400905b381105a7e8bcd2acaa33228b3">
                 <strong>Select</strong> <strong>Overview</strong> in the
                 Community section
               </li>
-              <li>Press on <strong>Join Discord's Admins Server</strong></li>
+              <li data-list-item-id="e13a0eea4820f9341db3ba227a00d2c61">
+                Press on <strong>Join Discord's Admins Server</strong>
+              </li>
             </ul>
             <h3 id="h_01H991B1VRW4638ASPHMWFVQ88">
-              <span style="color: #434343" data-darkreader-inline-color=""
-                >Note: The only way to join the Discord Admins Server is on the
-                desktop/browser app. This is unavailable on the mobile
-                app.</span
+              <span style="color: #434343"
+                ><span data-darkreader-inline-color=""
+                  >Note: The only way to join the Discord Admins Server is on
+                  the desktop/browser app. This is unavailable on the mobile
+                  app.</span
+                ></span
               >
             </h3>
             <p class="wysiwyg-text-align-center">
-              <span style="color: #434343" data-darkreader-inline-color=""
-                ><img
-                  src="https://support.discord.com/hc/article_attachments/15246826977687"
-                  alt="communityserver.png"
-              /></span>
+              <span style="color: #434343"
+                ><span data-darkreader-inline-color=""
+                  ><img
+                    src="https://support.discord.com/hc/article_attachments/15246826977687"
+                    alt="communityserver.png" /></span
+              ></span>
             </p>
             <h1 id="h_01H991B1VR3MPNXFSPRYRCSVKA">
               Frequently Asked Questions

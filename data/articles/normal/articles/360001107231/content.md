@@ -33,6 +33,17 @@
   Soon" store page, wishlist page, demo, or playtest—are not eligible. You
   cannot verify a server before the game it belongs to has launched.
 </p>
+<p>
+  Verified is a status a server earns on top of its server type. It doesn't
+  change whether your server is a Friend, Community, or Discoverable Server.
+  Verified servers automatically qualify as Discoverable Servers. Learn more in
+  <a
+    href="https://support.discord.com/hc/en-us/articles/14078261239831-Clarifying-Server-Types"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Clarifying Server Types.</a
+  >
+</p>
 <div class="warn-box">
   <strong>Important:</strong> Previously the Verified Server Program included
   large companies, films, and musicians. That broader program has been
@@ -70,12 +81,32 @@
   server is verified and you gain control over your game's identity on Discord.
 </p>
 <div class="book-box">
-  <strong>Want to learn more?</strong> <br />If you want to claim your game you
-  can learn more in
-  <a
-    href="https://docs.discord.com/developers/platform/claim-your-game"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">this documentation</span></a
-  ><span style="color: #434343"> about that process.</span>
+  <p>
+    <strong>Want to learn more?</strong> <br />If you want to claim your game,
+    you can learn more about that process in
+    <a
+      href="https://docs.discord.com/developers/platform/claim-your-game"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Discord's Claim Your Game documentation</a
+    >.
+  </p>
+  <ul>
+    <li data-list-item-id="e12d6346cc9525c1014b56f05cd9c14b9">
+      <a
+        href="https://support.discord.com/hc/en-us/articles/14078261239831-Clarifying-Server-Types"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Clarifying Server Types</a
+      >
+    </li>
+    <li data-list-item-id="e05c7b571500813595d6a224239e93e24">
+      <a
+        href="https://support.discord.com/hc/en-us/articles/360047236171-Partnered-vs-Verified-Servers"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Partnered vs. Verified Servers</a
+      >
+    </li>
+  </ul>
 </div>

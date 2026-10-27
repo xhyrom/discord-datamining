@@ -1,22 +1,8 @@
 <p>
-  <span style="color: #333333"
-    ><span data-darkreader-inline-color=""
-      >Discord is a communications platform that brings people together to hang
-      out online.
-    </span></span
-  ><span style="color: #2c2f33"
-    ><span data-darkreader-inline-color=""
-      >We work hard to ensure Discord users are able to have meaningful
-      conversations and spend time with their friends and communities
-      safely.</span
-    ></span
-  >
-</p>
-<p>
-  User feedback is valuable to us and helps us ensure our platform is easy to
-  use. This article describes an update to make it more clear how we categorize
-  the different types of servers, how to recognize them, and what you can expect
-  in those spaces.
+  Every Discord server is a <strong>Friend</strong>, <strong>Community</strong>,
+  or <strong>Discoverable</strong> Server, depending on how it's used and how
+  people can find and join it. This article explains each server type and how
+  badges like Partnered and Verified fit in.
 </p>
 <div class="toc-box">
   <p>
@@ -25,37 +11,67 @@
     >
   </p>
   <ul>
-    <li data-list-item-id="e97e9bfa929df81d6fb3dd3cc0f18a01a">
-      <a href="#h_01H1W0A6Y2FN2P05CD7WD96RF8" target="_self"
-        >At a Glance: Friend vs. Community Servers</a
+    <li data-list-item-id="e894399d237457b52b2477dd55c790fd9">
+      <a href="#h_01H1W0A6Y2FN2P05CD7WD96RF8"
+        >What are the types of Discord servers?</a
       >
+      <ul>
+        <li data-list-item-id="ee0b99d9256a96d1586e3e7aba1b516fc">
+          <a href="#h_01H1W0ABM3N9PXPQTDJR5WAZCD"
+            >Becoming a Community Server</a
+          >
+        </li>
+        <li data-list-item-id="e8b431a1c8fe0e9bd68e424b73fddfdee">
+          <a href="#turning-off-community">Turning Off Community</a>
+        </li>
+        <li data-list-item-id="e08ea92079cc1518ba6d869d1043b8600">
+          <a href="#becoming-a-discoverable-server"
+            >Becoming a Discoverable Server</a
+          >
+        </li>
+        <li data-list-item-id="e28bf392c80f6a885c4fb3f697034a485">
+          <a href="#turning-off-discoverability">Turning Off Discoverability</a>
+        </li>
+      </ul>
     </li>
-    <li data-list-item-id="ed16da4504c024c51d1c62489db7f015b">
-      <a href="#h_01H1W0ABM3N9PXPQTDJR5WAZCD" target="_self"
-        >Becoming a Community Server</a
-      >
+    <li data-list-item-id="ec49abb89799f1305f7034956acffd6f8">
+      <a href="#server-badges">Server Badges</a>
     </li>
-    <li data-list-item-id="ea9c5db9965bd8595072d8713a0db7014">
-      <a href="#h_01H1W0AFG0KTPNN94FVPEZK156" target="_self"
-        >Frequently Asked Questions</a
-      >
+    <li data-list-item-id="e231545e570c3739552872bc9703d19a0">
+      <a href="#h_01H1W0AFG0KTPNN94FVPEZK156">Frequently Asked Questions</a>
     </li>
   </ul>
 </div>
 <h1 id="h_01H1W0A6Y2FN2P05CD7WD96RF8">
-  At a Glance: Friend vs. Community Servers
+  What are the types of Discord servers?
 </h1>
-<p><em>What are the types of servers </em></p>
+<p>
+  Friend, Community, and Discoverable server types describe how people can find
+  and join a server:
+</p>
 <ul>
-  <li data-list-item-id="e6da225159c1c80e1f010db818731edb1">
+  <li data-list-item-id="e7b3004aee404712e24d015b15810e0bc">
     <strong>Friend Server</strong>: Friend Servers are invite-only spaces
     designed to discuss, connect, and share with your friends or smaller groups.
   </li>
-  <li data-list-item-id="e2e7ceacc697a5472ae4c1453ae0d6e06">
-    <strong>Community Server: </strong>Community Servers are invite-only spaces
+  <li data-list-item-id="e6b9fd876438cd37e038dfce6ae9ea2fc">
+    <strong>Community Server</strong>: Community Servers are invite-only spaces
     designed for people to share, connect, and learn from others all over the
     world who share common interests. Moderators in Community Servers have
     access to tools like Server Insights, Raid Protection, Rules and Onboarding.
+  </li>
+  <li data-list-item-id="ef96f00f1e33fa0b24a1e246854b77ebf">
+    <strong>Discoverable Server</strong>: Discoverable Servers are Community
+    Servers that meet extra requirements for size, safety, and activity, and
+    whose admins have chosen to list them in Server Discovery. Anyone can find
+    and join them without an invite, through Server Discovery,
+    <a
+      href="https://discord.com/servers"
+      target="_blank"
+      rel="noopener noreferrer"
+      >discord.com/servers</a
+    >, and web search. They also have their own Server Web Page, so people can
+    learn about them before joining.
   </li>
 </ul>
 <h2 id="h_01H1W0ABM3N9PXPQTDJR5WAZCD">Becoming a Community Server</h2>
@@ -67,82 +83,156 @@
     rel="noopener noreferrer"
     >Community features</a
   >
-  may opt in to become a Community Server at any time in server settings. 
+  may opt in to become a Community Server at any time in server settings.
 </p>
 <p>
   <strong
     >Becoming a Community Server does not mean that anyone can find or join your
-    server. </strong
-  >Prospective members have to be sent an invite link. To support Community
+    server.</strong
+  >
+  Prospective members have to be sent an invite link. To support Community
   Server growth, invite links for Community Servers never expire.
 </p>
+<h2 id="turning-off-community">Turning Off Community</h2>
+<div class="warn-box">
+  <strong>Important:</strong> If your server is Discoverable, disabling
+  Community also turns off Discoverability automatically.
+</div>
+<p>1. Open <strong>Server Settings</strong>.</p>
 <p>
-  Eligible servers that <em>do</em> want to grow their audience and allow anyone
-  to join can choose to become discoverable via
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360023968311-Server-Discovery"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Server Discovery</a
+  2. Under the <strong>Community</strong> category, select
+  <strong>Overview</strong>.
+</p>
+<p>3. Select <strong>Disable Community</strong> at the bottom of the page.</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/44564456359831"
+    alt="Disable Community Option in Server Settings"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M5D16DS1FQBMX8V6197A57JM">
+  <span style="color: #666666"
+    >Disable Community Option in Server Settings</span
   >
-  if they meet certain criteria.
+</h4>
+<h2 id="becoming-a-discoverable-server">Becoming a Discoverable Server</h2>
+<p>
+  Community Servers that meet our
   <a
     href="https://support.discord.com/hc/en-us/articles/360030843331-Enabling-Server-Discovery"
     target="_blank"
     rel="noopener noreferrer"
-    >Find out more</a
+    >eligibility criteria</a
   >
-  and read our
+  (including a 1,000+ member minimum, active engagement, safety checks, and
+  two-factor authentication for moderators) can choose to become a Discoverable
+  Server.
+  <strong
+    >Eligibility criteria may be updated over time, and servers are expected to
+    continue meeting them to remain Discoverable.</strong
+  >
+</p>
+<p>
+  Becoming a Discoverable Server means your server can be found and joined by
+  people who haven't received an invite, including people searching the web for
+  what your community talks about.
+</p>
+<p>
+  Verified servers automatically qualify as Discoverable Servers. Learn more in
   <a
-    href="https://support.discord.com/hc/en-us/articles/4409308485271"
+    href="https://support.discord.com/hc/en-us/articles/360001107231-Discord-Verified-Server-Program-FAQ"
     target="_blank"
     rel="noopener noreferrer"
-    >Server Discovery Guidelines</a
+    >Discord Verified Server Program FAQ</a
   >.
 </p>
+<h2 id="turning-off-discoverability">Turning Off Discoverability</h2>
 <p>
-  In order for users to know what type of server they’re in, we’ve introduced
-  badges for Community Servers.  
+  If you'd rather your server not be Discoverable, you can turn this off at any
+  time.
+</p>
+<p>1. Open <strong>Server Settings</strong>.</p>
+<p>2. Select <strong>Access</strong>.</p>
+<p>3. Turn off <strong>Discoverable</strong>.</p>
+<p>
+  Turning off Discoverability reverts your server to a Community Server. This
+  means:
+</p>
+<ul>
+  <li data-list-item-id="e754e1483561ead6e93c9f55e56b937ec">
+    Your server can no longer be found through Server Discovery or
+    discord.com/servers.
+  </li>
+  <li data-list-item-id="e8a6d671a54c2d09a7b23c718e8eb80df">
+    Your server web pages are taken down. Search engines may take some time to
+    remove it from their results.
+  </li>
+  <li data-list-item-id="efdd4cd0c04ea826fdc20f2c74cef5963">
+    Prospective members will need an invite link to join, same as any Community
+    Server.
+  </li>
+</ul>
+<p>
+  You can turn Discoverability back on at any time, as long as your server still
+  meets the eligibility criteria.
+</p>
+<div class="info-box">
+  <strong>Note:</strong> If your server is removed from Discovery for a
+  guideline violation, the server owner can request a review. Learn how in
+  <a
+    href="https://support.discord.com/hc/en-us/articles/18210965981847-Discord-Warning-System"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Warning System</a
+  >.
+</div>
+<h1 id="server-badges">Server Badges</h1>
+<p>
+  Your server's badge reflects its <strong>server type</strong>:
+  <strong>Community</strong> or <strong>Discoverable</strong>. If your server
+  also holds <strong>Partnered</strong> or <strong>Verified</strong> status,
+  that badge takes priority and displays instead, with the tooltip noting the
+  underlying server type as well.
 </p>
 <p>
-  We will display a distinct server badge if the server is a Community Server, a
-  Discoverable Community,
+  Like Server Boosting, Partnered and Verified status add recognition and perks,
+  but they don't change your server type or who can find and join it. Learn more
+  in
   <a
     href="https://support.discord.com/hc/en-us/articles/360047236171-Partnered-vs-Verified-Servers"
     target="_blank"
     rel="noopener noreferrer"
-    >Partnered Server</a
-  >, or
-  <a
-    href="https://discord.com/verification"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Verified Server</a
-  >. Hovering over the badge will provide more detailed information about the
-  server type, whether anyone can join the server, and the Boost level.
-</p>
-<p class="wysiwyg-text-align-center">
-  <span style="background-color: #ffff00"
-    ><em
-      ><span data-darkreader-inline-bgcolor=""
-        ><img
-          src="https://support.discord.com/hc/article_attachments/15027067915671"
-          width="624"
-          height="291" /></span></em
-  ></span>
+    >Partnered vs. Verified Servers</a
+  >.
 </p>
 <p>
-  Communities that previously had the “Public” tag, will now have the
-  “Discoverable Community” badge. Servers that are Partnered and Verified will
-  receive the “Verified” badge, and the tooltip will denote both statuses.
+  Each badge's tooltip shows more detail, including whether anyone can join and
+  Boost level.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/15027067915671"
+    alt="Example of a Server Badge Tooltip"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M5D16DS1G2N4081QSJZ0V4T6">
+  <span style="color: #666666">Example of a Server Badge Tooltip</span>
+</h4>
+<p>
+  Servers that have Partnered and Verified status will receive the "Verified"
+  badge, and the tooltip will denote both statuses.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/15027054348695"
-    width="624"
-    height="345"
+    alt="Verified Badge Tooltip for a Verified and Partnered Server"
   />
 </p>
+<h4 class="wysiwyg-text-align-center" id="h_01M5D16DS1N354QJPFC0XW0E38">
+  <span style="color: #666666"
+    >Verified Badge Tooltip for a Verified and Partnered Server</span
+  >
+</h4>
 <p>
   For more information on our approach to safety across server types, please
   visit our
@@ -155,18 +245,39 @@
 </p>
 <h1 id="h_01H1W0AFG0KTPNN94FVPEZK156">Frequently Asked Questions</h1>
 <p>
-  <strong>Q: What happens with badges if you’re verified and partnered?</strong>
+  <strong
+    >Q: What's the difference between a server type and a badge like Partnered
+    or Verified?</strong
+  >
 </p>
 <p>
-  A: We’ll display your Verified badge, and the tooltip will indicate that the
-  server is Verified &amp; Partnered. 
+  A: Your server type (Friend, Community, or Discoverable) describes how people
+  can find and join your server, depending on size, safety, and activity.
+  Partnered and Verified are separate statuses Discord grants to select servers
+  on top of their type, such as official game servers.
 </p>
-<p><strong>Q: Does this mean that partner badges go away?</strong></p>
-<p>A: No. Partner and Verified badges will remain unchanged.</p>
-<p><strong>Q: How will I know what type of server I am in?</strong></p>
+<p><strong>Q: How do I know if my server is Discoverable?</strong></p>
 <p>
-  A: Community, Partnered and Verified servers will have badges and tooltips
-  that display the server type.
+  A: Open Server Settings, select Access, and find the Discoverable setting. If
+  it's turned on, your server is Discoverable. If you can't find it or turn it
+  on, your server isn't Discoverable yet. Learn what's needed in
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360030843331-Enabling-Server-Discovery"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Enabling Server Discovery</a
+  >.
 </p>
-<p><strong>Q: Will Friend Servers be labeled/ badged? </strong></p>
-<p>A: We may consider adding a badge to Friend Servers in a future rollout. </p>
+<p><strong>Q: Will my server become Discoverable automatically?</strong></p>
+<p>
+  A: No. Community Servers that meet the eligibility criteria can choose to
+  become Discoverable. Verified servers automatically qualify as Discoverable
+  Servers.
+</p>
+<p>
+  <strong>Q: What happens with badges if you're verified and partnered?</strong>
+</p>
+<p>
+  A: We'll display your Verified badge, and the tooltip will indicate that the
+  server is Verified &amp; Partnered.
+</p>
