@@ -359,6 +359,9 @@
   height: 100%;
   width: auto;
 }
+.emojiPickerViewingPacks_c0e32c {
+  border-radius: var(--custom-emoji-picker-border-radius);
+}
 .header_c0e32c {
   align-items: center;
   background-color: var(--background-surface-high);
@@ -428,4 +431,4 @@
   }
 }
 
-/*# sourceMappingURL=148326.91c0ff07f1d01390.css.map*/
+/*# sourceMappingURL=148326.e59c2ffc945ec7f2.css.map*/
