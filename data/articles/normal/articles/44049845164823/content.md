@@ -100,19 +100,20 @@
     <strong>Reach new members on the web</strong>. Select
     <strong>Web Presence</strong> to go straight to these settings.
   </p>
-  <p class="wysiwyg-text-align-center">
+  <figure class="wysiwyg-image">
     <img
-      src="https://support.discord.com/hc/article_attachments/44428373565975"
-      alt="Reach new members on the web pop-up"
-      width="1653"
-      height="1017"
+      style="aspect-ratio: 2208/1568"
+      src="https://support.discord.com/hc/article_attachments/44576609755031"
+      alt="Reach new members on the web Pop-up"
+      width="2208"
+      height="1568"
     />
-  </p>
-  <h4 class="wysiwyg-text-align-center" id="h_caption_reach_new_members_popup">
+  </figure>
+  <h4 class="wysiwyg-text-align-center" id="h_what_you_can_control_here">
     <span style="color: #666666">Reach new members on the web Pop-up</span>
   </h4>
 </div>
-<h1 id="h_what_you_can_control_here">What You Can Control Here</h1>
+<h1 id="h_01M5ZK33FZERN93SZH6Z5AMRCR">What You Can Control Here</h1>
 <p>
   <strong
     >Controls for both Channel Summaries on the web and Channel Messages on the

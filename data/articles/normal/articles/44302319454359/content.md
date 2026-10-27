@@ -84,58 +84,11 @@
   Discoverable content on the web can only appear from public channels in a
   Discoverable Server. Channels taking part in Channel Summaries or Channel
   Messages are labeled, with an icon in the channel header, so you know before
-  you send a message.
+  you send a message. 
 </p>
-<p class="wysiwyg-text-align-center">
-  <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 1992/1433; width: 73.16%"
-    src="https://support.discord.com/hc/article_attachments/44428817890711"
-    alt="Icon on Discoverable Channels on Desktop "
-    width="1992"
-    height="1433"
-  />
-    <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 390/844; width: 24.31%"
-    src="https://support.discord.com/hc/article_attachments/44428840188439"
-    alt="Icon on Discoverable Channels on Mobile "
-    width="390"
-    height="844"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_caption_globe_icon_mobile">
-  <span style="color: #666666"
-    >Icon on Discoverable Channels on Desktop (Left) &amp; Mobile (Right)</span
-  >
-</h4>
 <p>
   You'll also see a pop-up near the channel header letting you know before you
   post. This pop-up reappears any time a channel newly enables this feature.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 853/566; width: 74.55%"
-    src="https://support.discord.com/hc/article_attachments/44428817892503"
-    alt="-- (5) (1).png"
-    width="853"
-    height="566"
-  />.  <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 390/843; width: 23.43%"
-    src="https://support.discord.com/hc/article_attachments/44428817892887"
-    alt="-- (5) copy (1).png"
-    width="390"
-    height="843"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_caption_banner_mobile">
-  <span style="color: #666666"
-    >Discoverable Channel Banner on Desktop (Left) &amp; Mobile (Right)</span
-  >
-</h4>
-<p>
   Your server's admins choose which channels take part in Channel Summaries and
   Channel Messages on the web, so you may see this in some channels and not
   others.
