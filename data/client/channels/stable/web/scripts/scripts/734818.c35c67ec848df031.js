@@ -1,10 +1,7 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["245420"],
+  ["734818"],
   {
-    183531(e, n, c) {
-      e.exports = { pC: "slateContainer_ec4baf", gf: "slateTextArea_ec4baf" };
-    },
     862649(e, n, c) {
       e.exports = {
         CR: "modalRoot_b824c5",

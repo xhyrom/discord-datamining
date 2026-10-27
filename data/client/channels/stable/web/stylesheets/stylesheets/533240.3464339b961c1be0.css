@@ -1,0 +1,24 @@
+.slateContainer_ec4baf {
+  position: relative;
+}
+.slateTextArea_ec4baf {
+  box-sizing: border-box;
+  inset-inline: 0 10px;
+  min-height: var(
+    --custom-channel-textarea-editor-min-height,
+    var(--custom-channel-textarea-text-area-height)
+  );
+  padding: calc(
+      (
+          var(--custom-channel-textarea-text-area-height) -
+            var(--chat-markup-line-height)
+        ) / 2
+    )
+    0;
+  position: absolute;
+}
+.enable-forced-colors .placeholder_ec4baf {
+  color: GrayText;
+}
+
+/*# sourceMappingURL=533240.3464339b961c1be0.css.map*/
