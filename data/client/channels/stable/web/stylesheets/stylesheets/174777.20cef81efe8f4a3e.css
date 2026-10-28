@@ -1,0 +1,108 @@
+.productIcon__4c629 {
+  background-color: var(--background-surface-high);
+  border: 1px solid var(--border-muted);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  height: var(--custom-product-icon-size);
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: var(--custom-product-icon-size);
+}
+.productIconSmall__4c629 {
+  border-radius: var(--radius-md);
+}
+.productIconLarge__4c629 {
+  border-radius: var(--radius-xl);
+}
+.rewardIcon__4c629 {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.videoOverlay__4c629 {
+  flex: 1;
+  justify-content: space-between;
+  padding: var(--space-16);
+}
+.rewardStatus__4c629,
+.videoOverlay__4c629 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+}
+.rewardStatus__4c629 {
+  min-width: 0;
+}
+.videoActions__4c629 {
+  pointer-events: auto;
+}
+.endScreenContent__4c629 {
+  align-items: center;
+  animation: end-screen-fade-in__4c629 0.5s;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: var(--space-16);
+  position: absolute;
+}
+.endScreenContent__4c629:before {
+  background: linear-gradient(0deg, #070709, rgba(7, 7, 9, 0.6)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), #ffc609;
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+.endScreenProduct__4c629 {
+  align-items: center;
+  gap: var(--space-20);
+  position: relative;
+  text-align: center;
+}
+.endScreenProduct__4c629,
+.endScreenProductDetails__4c629 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.endScreenProductDetails__4c629 {
+  gap: 2px;
+}
+@keyframes end-screen-fade-in__4c629 {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.balanceCounterText__98f64 {
+  color: var(--text-strong);
+}
+.full-motion .balanceCounterText__98f64 {
+  transition:
+    all 0.4s ease-out,
+    opacity 0.4s ease-in;
+}
+.balanceCounterMarginRightAlign__98f64 {
+  margin-inline-start: 2px;
+}
+.balanceCounterTextRightAlign__98f64 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: end;
+}
+.balanceCounterMarginLeftAlign__98f64 {
+  margin-inline-end: 2px;
+}
+.balanceCounterTextLeftAlign__98f64 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+/*# sourceMappingURL=174777.20cef81efe8f4a3e.css.map*/

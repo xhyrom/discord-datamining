@@ -1,0 +1,192 @@
+.row__3bdf8 {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: var(--space-8);
+  min-width: 0;
+}
+.title__3bdf8 {
+  color: var(--text-subtle);
+  min-width: 0;
+}
+.name__3bdf8 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.emojis__3bdf8 {
+  height: var(--space-40);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+.emojis__3bdf8::-webkit-scrollbar {
+  display: none;
+}
+.emojisExpanded__3bdf8 {
+  height: auto;
+  overflow: visible;
+}
+.emojiRow__3bdf8 {
+  display: flex;
+  gap: var(--space-12);
+  width: -moz-max-content;
+  width: max-content;
+}
+.emojisExpanded__3bdf8 .emojiRow__3bdf8 {
+  flex-wrap: wrap;
+  width: auto;
+}
+.emojiButton__3bdf8 {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  flex: none;
+  height: var(--space-40);
+  justify-content: center;
+  padding: 0;
+  width: var(--space-40);
+}
+.emojiButton__3bdf8:focus-visible,
+.emojiButton__3bdf8:not(:disabled):hover {
+  background-color: var(--interactive-background-hover);
+}
+.emojiButton__3bdf8:disabled {
+  cursor: default;
+}
+.emoji__3bdf8 {
+  flex: none;
+  height: var(--space-32);
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: var(--space-32);
+}
+.container__134f6 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
+}
+.background__134f6 {
+  --custom-emoji-packs-gradient-start: var(--illo-pink-40);
+  --custom-emoji-packs-gradient-end: var(--illo-blue-50);
+  background-color: var(--background-surface-high);
+  background-image: radial-gradient(
+      411% 145% at 50% 145%,
+      var(--background-surface-high) 60%,
+      transparent 100%
+    ),
+    linear-gradient(
+      100.32deg,
+      color-mix(
+          in srgb,
+          var(--custom-emoji-packs-gradient-start) 60%,
+          transparent
+        )
+        1.67%,
+      color-mix(
+          in srgb,
+          var(--custom-emoji-packs-gradient-end) 60%,
+          transparent
+        )
+        100%
+    );
+  inset: 0;
+  opacity: 0.5;
+  pointer-events: none;
+  position: absolute;
+}
+.theme-light .background__134f6 {
+  --custom-emoji-packs-gradient-start: var(--illo-pink-30);
+  --custom-emoji-packs-gradient-end: var(--illo-blue-40);
+}
+.header__134f6 {
+  flex: none;
+  padding: calc(var(--space-12) + var(--space-10)) var(--space-12)
+    var(--space-10);
+}
+.header__134f6,
+.list__134f6 {
+  position: relative;
+}
+.list__134f6 {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: var(--space-16);
+  min-height: 0;
+  overflow-y: auto;
+  padding: var(--space-4) var(--space-12) var(--space-16);
+}
+.list__134f6::-webkit-scrollbar {
+  display: none;
+}
+.no-webkit-scrollbar .list__134f6 {
+  scrollbar-width: none;
+}
+.divider__134f6 {
+  background-color: var(--border-subtle);
+  border: 0;
+  flex: none;
+  height: 1px;
+  margin: 0;
+  width: 100%;
+}
+.enable-forced-colors .background__134f6 {
+  background-image: none;
+}
+.enable-forced-colors .divider__134f6 {
+  background-color: CanvasText;
+}
+.container__52c9d {
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 101;
+}
+.background__52c9d {
+  background-color: var(--background-base-lower);
+  opacity: 0.98;
+  position: absolute;
+}
+.background__52c9d,
+.content__52c9d {
+  height: 100%;
+  width: 100%;
+}
+.content__52c9d {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+}
+.closeButton__52c9d {
+  cursor: pointer;
+  inset-inline-end: 20px;
+  position: absolute;
+  top: 20px;
+}
+.closeButtonIcon__52c9d {
+  color: var(--interactive-text-default);
+}
+.description__52c9d,
+.header__52c9d {
+  text-align: center;
+}
+.upsellImage__52c9d {
+  width: 124px;
+}
+
+/*# sourceMappingURL=813057.c7355dc453c24909.css.map*/

@@ -1,0 +1,22 @@
+.gate__6dab7 {
+  align-items: center;
+  background-color: var(--background-base-lower);
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  padding: var(--space-24);
+  width: 100%;
+}
+.content__6dab7 {
+  max-width: 420px;
+  text-align: center;
+}
+.anchor__15c30 {
+  height: 0;
+  pointer-events: none;
+  position: fixed;
+  width: 0;
+}
+
+/*# sourceMappingURL=897937.6520c599243f4608.css.map*/
