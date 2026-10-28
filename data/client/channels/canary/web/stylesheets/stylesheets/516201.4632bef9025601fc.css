@@ -1665,9 +1665,6 @@
 .addFriendInputWrapper__72ba7:focus-within {
   border-color: var(--text-link);
 }
-.addFriendInputWrapper__72ba7.error__72ba7 {
-  border-color: var(--border-feedback-critical);
-}
 .addFriendInputWrapper__72ba7.success__72ba7 {
   border-color: var(--green-360);
 }
@@ -1680,6 +1677,17 @@
   display: flex;
   padding: 2px 0;
   position: relative;
+}
+.addFriendUsernameRow__72ba7 .input__72ba7 {
+  composes: inputText;
+  background-color: unset;
+  border: none;
+  padding: 0;
+}
+.addFriendUsernameRow__72ba7 .input__72ba7:focus,
+.addFriendUsernameRow__72ba7 .input__72ba7:focus-within,
+.addFriendUsernameRow__72ba7 .input__72ba7:hover {
+  border: none;
 }
 .addFriendWumpusWrapper__72ba7 {
   align-items: flex-start;
@@ -1717,16 +1725,6 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-}
-.input__72ba7 {
-  background-color: unset;
-  border: none;
-  padding: 0;
-}
-.input__72ba7:focus,
-.input__72ba7:focus-within,
-.input__72ba7:hover {
-  border: none;
 }
 .addFriendHint__72ba7 {
   box-sizing: border-box;
@@ -1852,4 +1850,4 @@
   position: relative;
 }
 
-/*# sourceMappingURL=516201.1df2ad3badeeb4aa.css.map*/
+/*# sourceMappingURL=516201.4632bef9025601fc.css.map*/
