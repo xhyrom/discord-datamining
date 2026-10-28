@@ -1,9 +1,0 @@
-"use strict";
-(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["303825"],
-  {
-    133480(s, p, c) {
-      s.exports = { K: "focusTarget__54e4b" };
-    },
-  },
-]);
