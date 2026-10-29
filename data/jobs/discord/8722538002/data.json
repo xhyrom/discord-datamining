@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6486826002,
   "location": {
-    "name": "San Francisco Bay Area (or Remote U.S.)"
+    "name": "Remote (US)"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 8722538002,
-  "updated_at": "2026-10-21T14:41:29-04:00",
+  "updated_at": "2026-10-29T14:21:36-04:00",
   "requisition_id": "R-107381",
   "title": "Engineering Manager, Machine Learning (Safety)",
   "company_name": "Discord",
