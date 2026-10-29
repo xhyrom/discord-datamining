@@ -72,10 +72,16 @@
   justify-content: center;
 }
 .row__02ff5 {
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: var(--custom-emoji-picker-constants-category-separator-size)
+    solid var(--border-subtle);
   display: flex;
   justify-content: center;
-  padding: var(--space-8) 0;
+  margin-bottom: var(
+    --custom-emoji-picker-constants-guild-category-icon-margin-verical
+  );
+  padding-bottom: var(
+    --custom-emoji-picker-constants-guild-category-icon-margin-verical
+  );
 }
 .buttonHost__02ff5 {
   position: relative;
@@ -135,4 +141,4 @@
   border-color: ButtonText;
 }
 
-/*# sourceMappingURL=938512.d187c9a26870ac1e.css.map*/
+/*# sourceMappingURL=938512.0da9b1e9f75d37ce.css.map*/

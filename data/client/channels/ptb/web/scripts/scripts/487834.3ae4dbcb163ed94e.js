@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["444038"],
+  ["487834"],
   {
     125752(o, e, _) {
       o.exports = { w: "linkIcon_ebf183" };
@@ -24,9 +24,6 @@
         lQ: "viewConnectionsButton__86331",
         AO: "botTag__86331",
       };
-    },
-    368005(o, e, _) {
-      o.exports = { R: "moderationTag__2d9ce" };
     },
     88861(o, e, _) {
       o.exports = { m: "separator__7bf69" };

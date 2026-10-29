@@ -23,7 +23,6 @@
         kx: "obscuredTextContent__299eb",
         AV: "obscuredTextContentInner__299eb",
         fA: "obscureButtonContainer__299eb",
-        kw: "obscureHoverButton__299eb",
       };
     },
   },
