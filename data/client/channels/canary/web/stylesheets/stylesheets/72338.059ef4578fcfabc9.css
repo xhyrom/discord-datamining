@@ -1,39 +1,95 @@
-.dataAssurance__2a048 {
-  background-color: var(--background-feedback-info);
-  border: 1px solid var(--border-muted);
-  border-radius: var(--radius-md);
-  color: var(--text-feedback-info);
+.modal_ffde51 {
+  width: 408px;
 }
-.footer_bb3ce8 {
+.container_ffde51 {
+  display: flex;
+  flex-direction: column;
+  max-height: 720px;
+}
+.header_ffde51 {
+  flex-grow: 0;
+  overflow: hidden;
+  padding: 24px 16px 0;
+}
+.stepHeader_ffde51 {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.mana-type-consolidation .stepHeader_ffde51 {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  text-transform: none;
+}
+.title_ffde51 {
+  text-align: center;
+}
+.closeButton_ffde51 {
+  inset-inline-end: 12px;
+  position: absolute;
+  top: 12px;
+  z-index: 1000;
+}
+.illustration_ffde51 {
+  margin-bottom: 16px;
+}
+.consentContent_ffde51 {
+  padding-bottom: 16px;
+}
+.consentHeader_ffde51 {
+  padding: 32px 0;
+}
+.body_ffde51 {
+  padding-bottom: 16px;
+  text-align: center;
+}
+.body_ffde51 p {
+  margin: 8px 0;
+}
+.footer_ffde51 {
+  align-items: center;
+  background-color: var(--background-base-lowest);
+  flex-direction: column;
+}
+.footerButton_ffde51 {
+  align-self: stretch;
+}
+.launchIcon_ffde51 {
+  translate: 0 -1px;
+  vertical-align: middle;
+}
+.valueProps_ffde51 {
+  background-color: var(--background-base-lower);
+  border-radius: var(--radius-sm);
+  margin-top: 24px;
+}
+.valueProp_ffde51 {
   align-items: center;
   display: flex;
-  gap: var(--space-8);
-  margin-top: auto;
+  flex-direction: row;
+  padding: 12px;
+  text-align: start;
 }
-.footerWithDivider_bb3ce8 {
-  border-top: 1px solid var(--border-subtle);
-  padding-top: var(--space-16);
-}
-.buttonGroup_bb3ce8 {
+.valuePropIconContainer_ffde51 {
+  color: var(--interactive-text-default);
   display: flex;
-  gap: var(--space-8);
-  margin-inline-start: auto;
-  max-width: 100%;
+  justify-content: center;
+  margin-inline-end: 12px;
+  padding: 4px;
 }
-.buttonGroupFullWidth_bb3ce8 {
-  margin-inline-start: 0;
-  width: 100%;
+.valuePropText_ffde51 {
+  display: flex;
+  flex-direction: column;
 }
-.container__5667e {
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
+.valuePropDivider_ffde51 {
+  background-color: var(--border-subtle);
+  flex: 1;
+  height: 1px;
+  margin-inline: 56px 12px;
 }
-.heading__5667e {
-  margin-bottom: var(--space-24);
-}
-.footerSpacer__5667e {
-  margin-top: var(--space-16);
+.slideContainer_ffde51 {
+  display: flex;
+  flex-direction: column;
+  max-height: clamp(200px, calc(100vh - 80px), 720px);
 }
 .qrCodeOverlay_c28498 {
   align-items: center;
@@ -1869,5 +1925,36 @@
 .description__44153 {
   margin-bottom: var(--space-16);
 }
+.getXboxApp__03af1 {
+  align-items: center;
+  background: var(--background-mod-normal);
+  border-radius: var(--radius-sm);
+  display: flex;
+  margin-top: 24px;
+  padding: 16px;
+}
+.getXboxAppBody__03af1 {
+  text-align: start;
+}
+.getXboxAppHeading__03af1 {
+  display: flex;
+}
+.getXboxAppQR__03af1 {
+  margin-inline-start: 16px;
+}
+.xboxLogoBox__03af1 {
+  align-items: center;
+  background-color: var(--platform-xbox);
+  border-radius: var(--radius-xs);
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  margin-inline-end: 10px;
+  width: 24px;
+}
+.xboxLogoBox__03af1 img {
+  height: 20px;
+  width: 20px;
+}
 
-/*# sourceMappingURL=262546.289ab200df1b4908.css.map*/
+/*# sourceMappingURL=72338.059ef4578fcfabc9.css.map*/

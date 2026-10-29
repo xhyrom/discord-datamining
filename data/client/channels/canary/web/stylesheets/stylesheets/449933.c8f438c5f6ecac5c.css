@@ -80,6 +80,10 @@
   align-items: center;
   display: flex;
 }
+.newBadge__61424 {
+  display: flex;
+  margin-inline: var(--space-4);
+}
 .smallPaddingFooter__61424 {
   height: 20px;
 }
@@ -190,4 +194,4 @@
   justify-content: center;
 }
 
-/*# sourceMappingURL=449933.e2e12973440aeca6.css.map*/
+/*# sourceMappingURL=449933.c8f438c5f6ecac5c.css.map*/

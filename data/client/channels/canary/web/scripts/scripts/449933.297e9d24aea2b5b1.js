@@ -11,6 +11,7 @@
         bV: "sectionHeader__61424",
         Gf: "sectionTitle__61424",
         M2: "sectionHeaderContent__61424",
+        Ad: "newBadge__61424",
         a3: "smallPaddingFooter__61424",
         Lk: "lastSectionFooter__61424",
         Ns: "nitroLocked__61424",

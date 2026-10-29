@@ -1,3 +1,31 @@
+.wrapper_fab8e8 {
+  display: flex;
+  position: relative;
+}
+.masked_fab8e8 {
+  --custom-dot-cutout-radius: 5px;
+  display: flex;
+  -webkit-mask-image: radial-gradient(
+    circle at calc(100% - 3px) calc(100% - 3px),
+    transparent var(--custom-dot-cutout-radius),
+    #000 calc(var(--custom-dot-cutout-radius) + 0.5px)
+  );
+  mask-image: radial-gradient(
+    circle at calc(100% - 3px) calc(100% - 3px),
+    transparent var(--custom-dot-cutout-radius),
+    #000 calc(var(--custom-dot-cutout-radius) + 0.5px)
+  );
+}
+.dot_fab8e8 {
+  background-color: var(--blurple-50);
+  border-radius: 100%;
+  bottom: 0;
+  height: 6px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  width: 6px;
+}
 .container_b2dcc1 {
   background: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
@@ -70,71 +98,5 @@
   justify-content: space-between;
   padding: var(--space-sm) var(--space-md) var(--space-sm);
 }
-.container__9fa5a {
-  align-items: flex-start;
-  background-color: var(--background-surface-high);
-  border-radius: 16px;
-  box-shadow: var(--shadow-border), var(--shadow-high);
-  display: flex;
-  flex-direction: column;
-  min-width: 584px;
-  overflow: hidden;
-  padding: 12px;
-}
-.titleContainer__9fa5a {
-  justify-content: space-between;
-  width: 100%;
-}
-.titleContainer__9fa5a,
-.titleLeft__9fa5a {
-  align-items: center;
-  display: flex;
-}
-.titleLeftIcon__9fa5a {
-  margin-inline-end: 4px;
-}
-.titleRight__9fa5a {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-}
-.titleRightIcon__9fa5a {
-  margin-inline-start: 4px;
-}
-.activityContainer__9fa5a {
-  display: flex;
-  height: 88px;
-  margin-top: 16px;
-  position: relative;
-  width: 100%;
-}
-.activityContainer__9fa5a > :not(:first-child) {
-  margin-inline-start: 16px;
-}
-.activitySuggestion__9fa5a {
-  height: 88px;
-}
-.poster__9fa5a {
-  border-radius: 12px;
-  height: auto;
-  margin: 16px 0;
-  width: 584px;
-}
-.posterDivider__9fa5a {
-  background-color: var(--border-subtle);
-  height: 1px;
-  width: 100%;
-}
-.clickableBanner__9fa5a {
-  cursor: pointer;
-  transform: scale(1);
-}
-.full-motion .clickableBanner__9fa5a {
-  transition: transform 0.25s;
-}
-.full-motion .clickableBanner__9fa5a:focus,
-.full-motion .clickableBanner__9fa5a:hover {
-  transform: scale(1.025);
-}
 
-/*# sourceMappingURL=740705.8a6d96dd5d4ea084.css.map*/
+/*# sourceMappingURL=51382.09961740d418225e.css.map*/

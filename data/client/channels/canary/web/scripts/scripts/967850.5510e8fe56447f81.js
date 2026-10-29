@@ -2,7 +2,7 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   ["967850"],
   {
-    653131(_, e, o) {
+    653131(_, e, n) {
       _.exports = {
         xJ: "sliderContainer__14ad3",
         aw: "slider__14ad3",
@@ -23,7 +23,7 @@
         x$: "infoExpandedGuildTitle__14ad3",
       };
     },
-    948611(_, e, o) {
+    948611(_, e, n) {
       _.exports = {
         H: "soundButtonWrapper__9be63",
         aG: "soundButton__9be63",
@@ -54,6 +54,9 @@
         B3: "primaryIconTopLevel__9be63",
         ET: "unavailableTooltip__9be63",
         ld: "unavailableTooltipActions__9be63",
+        ox: "newSound__9be63",
+        wO: "newSheen__9be63",
+        li: "newSoundSheen__9be63",
       };
     },
   },
