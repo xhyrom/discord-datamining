@@ -78,6 +78,7 @@
 .upsellButtons__5997d .matchManaColors__5997d:active {
   background: var(--control-secondary-background-active);
 }
+.upsellRefreshRow__5997d,
 .upsellRowContent__5997d {
   align-items: center;
   border-radius: inherit;
@@ -125,5 +126,28 @@
 .upsellCloseIcon__5997d:active {
   color: var(--interactive-text-active);
 }
+.upsellRefresh__5997d {
+  --control-secondary-background-active: var(--opacity-24);
+  border-radius: inherit;
+  padding: var(--space-16);
+}
+.custom-user-profile-theme .upsellRefresh__5997d {
+  --control-secondary-background-default: var(--opacity-12);
+  --control-secondary-background-hover: var(--opacity-16);
+}
+.upsellRefresh__5997d .upsellHeader__5997d {
+  margin-bottom: var(--space-16);
+}
+.upsellRefresh__5997d .upsellButtonWrapper__5997d {
+  flex: 1;
+  min-width: 0;
+}
+.upsellRefreshCard__5997d {
+  background: var(--user-profile-overlay-background);
+  border: 1px solid var(--border-muted);
+}
+.lightProfileGradient__5997d:before {
+  opacity: 0.3;
+}
 
-/*# sourceMappingURL=212298.3721add28598ba12.css.map*/
+/*# sourceMappingURL=212298.ddceed58218df11b.css.map*/

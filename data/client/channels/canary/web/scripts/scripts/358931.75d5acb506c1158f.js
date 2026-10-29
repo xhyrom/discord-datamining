@@ -15,6 +15,8 @@
           before_s: "before_s_ada32f",
           before_spoiler: "before_spoiler_ada32f",
           before_u: "before_u_ada32f",
+          after_link: "after_link_ada32f",
+          before_link: "before_link_ada32f",
           syntaxOverride: "syntaxOverride_ada32f",
           before_em: "before_em_ada32f",
           after_em: "after_em_ada32f",
@@ -32,6 +34,7 @@
           codeLine: "codeLine_ada32f",
           ansiControlSequence: "ansiControlSequence_ada32f",
           before_subtext: "before_subtext_ada32f",
+          after_subtext: "after_subtext_ada32f",
           subtext: "subtext_ada32f",
         }),
       );

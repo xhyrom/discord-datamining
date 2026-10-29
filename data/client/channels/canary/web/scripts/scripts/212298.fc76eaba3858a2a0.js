@@ -12,9 +12,13 @@
         JO: "upsellButtons__5997d",
         xB: "upsellButtonWrapper__5997d",
         Js: "matchManaColors__5997d",
+        Xv: "upsellRefreshRow__5997d",
         xq: "upsellRowContent__5997d",
         A_: "upsellRowRight__5997d",
         Nk: "upsellCloseIcon__5997d",
+        Zd: "upsellRefresh__5997d",
+        HZ: "upsellRefreshCard__5997d",
+        s1: "lightProfileGradient__5997d",
       };
     },
     547522(e, _, l) {

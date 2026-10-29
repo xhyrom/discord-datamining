@@ -129,7 +129,7 @@
 }
 .addButtonContainer__4a011 {
   background: var(--background-mod-subtle);
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   overflow: hidden;
   transition: background-color 0.15s ease;
 }
@@ -159,7 +159,7 @@
   overflow: hidden;
 }
 .addButtonContent__4a011 {
-  --custom-option-add-button-padding: 16px;
+  --custom-option-add-button-padding: var(--space-16);
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -169,7 +169,7 @@
   text-align: center;
 }
 .addButtonContent__4a011.sizeSmall__4a011 {
-  --custom-option-add-button-padding: 12px;
+  --custom-option-add-button-padding: var(--space-12);
 }
 .sizeSmall__4a011 .placeholderGrid__4a011 {
   min-width: calc(
@@ -177,6 +177,14 @@
       (var(--custom-game-widget-grid-row-size) - 1) *
       var(--custom-game-widget-grid-gap)
   );
+}
+.compact__4a011 .placeholderGrid__4a011 {
+  grid-template-columns: repeat(
+    var(--custom-game-widget-grid-row-size),
+    minmax(0, 56px)
+  );
+  justify-content: center;
+  min-width: 0;
 }
 .placeholderContainer__4a011 {
   padding: var(--custom-option-add-button-padding);
@@ -200,7 +208,7 @@
 }
 .overlay__4a011 {
   flex-direction: column;
-  gap: 8px;
+  gap: var(--space-8);
   inset: 0;
   position: absolute;
 }
@@ -220,14 +228,14 @@
 .title__4a011 {
   align-items: center;
   display: flex;
-  gap: 4px;
+  gap: var(--space-4);
 }
 .icon__4a011 {
   border-radius: 2px;
 }
 .newBadgeContainer__4a011 {
-  inset-block-start: 12px;
-  inset-inline-end: 12px;
+  inset-block-start: var(--space-12);
+  inset-inline-end: var(--space-12);
   position: absolute;
 }
 .compact__4a011 .newBadgeContainer__4a011 {
@@ -244,14 +252,22 @@
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   margin-top: 0;
-  padding: calc(var(--space-12) - 1px);
+  padding: var(--space-12);
+}
+.section_eeba05.above_eeba05 .carousel_eeba05 {
+  margin-inline: -16px;
+  outline-offset: -6px;
+  width: auto;
+}
+.section_eeba05.above_eeba05 .tile_eeba05:first-child {
+  margin-inline-start: var(--space-12);
 }
 .carousel_eeba05 {
   min-width: 0;
+  outline-offset: -2px;
 }
 .carousel_eeba05:has(.carouselScroller_eeba05:focus-visible) {
   outline: 2px solid var(--border-focus);
-  outline-offset: -2px;
 }
 .section_eeba05 .carouselScroller_eeba05 {
   transition: none;
@@ -417,4 +433,4 @@
   z-index: 1;
 }
 
-/*# sourceMappingURL=166171.ffae79057b875dab.css.map*/
+/*# sourceMappingURL=166171.4f68bebfcdbe2df1.css.map*/

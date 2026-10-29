@@ -1,9 +1,9 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["6050"],
+  ["991625"],
   {
-    489387(e, t, d) {
-      d.r(
+    489387(e, t, o) {
+      o.r(
         (e.exports = {
           popover: "popover_d6f39b",
           popoverGradientWrapper: "popoverGradientWrapper_d6f39b",
@@ -35,22 +35,27 @@
         }),
       );
     },
-    907896(e, t, d) {
+    505252(e, t, o) {
       e.exports = {
-        kL: "container__251d4",
-        Xn: "fadeOut__251d4",
-        UX: "upsell__251d4",
-        R: "hidden__251d4",
+        kL: "container__52fde",
+        N4: "note__52fde",
+        oO: "popover__52fde",
+        wx: "header__52fde",
+        kQ: "user__52fde",
+        my: "avatar__52fde",
+        Kk: "icon__52fde",
+        Ir: "iconDisabled__52fde",
+        Qs: "content__52fde",
       };
     },
-    139230(e, t, d) {
+    107465(e, t, o) {
       e.exports = {
-        y_: "backForwardButtons__63abb",
-        x6: "button__63abb",
-        aX: "back__63abb",
-        sY: "forward__63abb",
-        r9: "disabled__63abb",
+        a: "instructionsPositioner__4971b",
+        G: "instructions__4971b",
       };
+    },
+    812597(e, t, o) {
+      e.exports = { V: "preview__88c5e" };
     },
   },
 ]);

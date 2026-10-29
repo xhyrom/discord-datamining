@@ -16,6 +16,8 @@
 .before_s_ada32f,
 .before_spoiler_ada32f,
 .before_u_ada32f,
+.syntaxAfter_ada32f.after_link_ada32f,
+.syntaxBefore_ada32f.before_link_ada32f,
 .syntaxOverride_ada32f {
   font-weight: var(--font-weight-normal);
 }
@@ -113,11 +115,15 @@
 .before_subtext_ada32f {
   font-weight: 700;
 }
+.after_subtext_ada32f,
 .before_subtext_ada32f,
 .subtext_ada32f {
   color: var(--text-muted);
   font-size: 13px;
   line-height: 17.875px;
+}
+.subtext_ada32f.fakeLink_ada32f {
+  color: var(--text-link);
 }
 .inlineElement__1464f {
   display: inline-block;
@@ -252,4 +258,4 @@
   margin: 0;
 }
 
-/*# sourceMappingURL=358931.78737f89d81a461d.css.map*/
+/*# sourceMappingURL=358931.6c8ba7d3eff987e7.css.map*/
