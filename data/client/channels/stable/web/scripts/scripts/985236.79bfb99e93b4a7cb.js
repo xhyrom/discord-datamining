@@ -1,8 +1,26 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["360732"],
+  ["985236"],
   {
-    161975(e, t, _) {
+    193833(e, _, r) {
+      e.exports = {
+        c6: "assetWrapper__31fc2",
+        v2: "assetWrapperMasked__31fc2",
+        cp: "stickerAsset__31fc2",
+        ex: "lottieCanvas__31fc2 stickerAsset__31fc2",
+        r3: "pngImage__31fc2 stickerAsset__31fc2",
+        Mz: "loadingIndicator__31fc2",
+        z3: "error__31fc2",
+        ik: "errorIcon__31fc2",
+        kc: "errorText__31fc2",
+        _7: "overlayWrapper__31fc2",
+        tm: "overlayStickerWrapper__31fc2",
+        av: "overlayLabelWrapper__31fc2",
+        FZ: "overlayLabel__31fc2",
+        O2: "positionedLayer__31fc2",
+      };
+    },
+    161975(e, _, r) {
       e.exports = {
         jv: "categoryList__3ad28",
         _0: "stickerCategory__3ad28",
@@ -18,7 +36,7 @@
         Q6: "invisibleShortcut__3ad28",
       };
     },
-    768857(e, t, _) {
+    768857(e, _, r) {
       e.exports = {
         p$: "emptyState__70126",
         Hz: "unifyTrialUpsell__70126",

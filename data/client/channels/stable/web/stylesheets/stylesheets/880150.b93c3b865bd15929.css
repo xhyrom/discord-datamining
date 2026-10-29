@@ -283,26 +283,5 @@
   transition: bottom 0.2s ease-in-out;
   z-index: 1;
 }
-.obscureHoverButton__299eb {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: var(--radius-sm);
-  color: var(--white);
-  cursor: pointer;
-  display: flex;
-  padding: var(--space-4);
-  transition: background-color 0.2s ease-in-out;
-}
-.obscureHoverButton__299eb:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: background-color 0.2s ease-in-out;
-}
-.obscureHoverButton__299eb:focus {
-  background-color: #000;
-  transition: background-color 0.2s ease-in-out;
-}
-.obscureHoverButton__299eb:active {
-  background-color: var(--background-mod-normal);
-  transition: background-color 0.2s ease-in-out;
-}
 
-/*# sourceMappingURL=880150.91508f3ed1e2598f.css.map*/
+/*# sourceMappingURL=880150.b93c3b865bd15929.css.map*/

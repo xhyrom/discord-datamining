@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["851061"],
+  ["246544"],
   {
     314795(e, t, r) {
       var i = r(254628),
@@ -511,6 +511,11 @@
         n = globalThis.__DISCORD_RESOLVE_WASM_URL__;
       e.exports = "function" == typeof n ? n(i) : i;
     },
+    136089(e, t, r) {
+      var i = r(172136),
+        n = globalThis.__DISCORD_RESOLVE_WASM_URL__;
+      e.exports = "function" == typeof n ? n(i) : i;
+    },
     838259(e, t, r) {
       "use strict";
       var i, n;
@@ -879,18 +884,18 @@
             O = m ? e.offsetHeight - S - e.clientHeight : 0,
             P = g ? e.offsetWidth - k - e.clientWidth : 0,
             L = i ? i.width : h(r.width) - (n ? E + k : 0) - P,
-            D = i ? i.height : h(r.height) - (n ? A + S : 0) - O,
-            I = L + E + P + k,
-            U = D + A + O + S,
+            I = i ? i.height : h(r.height) - (n ? A + S : 0) - O,
+            D = L + E + P + k,
+            U = I + A + O + S,
             C = (0, o.C)({
               devicePixelContentBoxSize: p(
                 Math.round(L * devicePixelRatio),
-                Math.round(D * devicePixelRatio),
+                Math.round(I * devicePixelRatio),
                 u,
               ),
-              borderBoxSize: p(I, U, u),
-              contentBoxSize: p(L, D, u),
-              contentRect: new s(w, b, L, D),
+              borderBoxSize: p(D, U, u),
+              contentBoxSize: p(L, I, u),
+              contentRect: new s(w, b, L, I),
             });
           return c.set(e, C), C;
         },
@@ -1188,13 +1193,13 @@
         }
         function O(e) {
           (void 0 !== e.state || -1 !== navigator.userAgent.indexOf("CriOS")) &&
-            D(E(e.state));
+            I(E(e.state));
         }
         function P() {
-          D(E(v()));
+          I(E(v()));
         }
         var L = !1;
-        function D(e) {
+        function I(e) {
           L
             ? ((L = !1), S())
             : k.confirmTransitionTo(e, "POP", V, function (t) {
@@ -1208,8 +1213,8 @@
                     (s = n - o) && ((L = !0), M(s)));
               });
         }
-        var I = E(v()),
-          U = [I.key];
+        var D = E(v()),
+          U = [D.key];
         function C(e) {
           return R + d(e);
         }
@@ -1229,7 +1234,7 @@
           W = {
             length: r.length,
             action: "POP",
-            location: I,
+            location: D,
             createHref: C,
             push: function (e, t) {
               var i = "PUSH",
@@ -1374,8 +1379,8 @@
                       ? A({ action: "POP", location: r })
                       : ((t = r),
                         (i = j.location),
-                        -1 === (n = I.lastIndexOf(d(i))) && (n = 0),
-                        -1 === (o = I.lastIndexOf(d(t))) && (o = 0),
+                        -1 === (n = D.lastIndexOf(d(i))) && (n = 0),
+                        -1 === (o = D.lastIndexOf(d(t))) && (o = 0),
                         (s = n - o) && ((k = !0), U(s)));
                   });
           }
@@ -1383,8 +1388,8 @@
         var P = T(),
           L = b(P);
         P !== L && R(L);
-        var D = y(),
-          I = [d(D)];
+        var I = y(),
+          D = [d(I)];
         function U(e) {
           t.go(e);
         }
@@ -1398,7 +1403,7 @@
           j = {
             length: t.length,
             action: "POP",
-            location: D,
+            location: I,
             createHref: function (e) {
               var t = document.querySelector("base"),
                 r = "";
@@ -1416,9 +1421,9 @@
                     n = b(h + t);
                   if (T() !== n) {
                     (S = t), (window.location.hash = n);
-                    var o = I.lastIndexOf(d(j.location)),
-                      s = I.slice(0, o + 1);
-                    s.push(t), (I = s), A({ action: r, location: i });
+                    var o = D.lastIndexOf(d(j.location)),
+                      s = D.slice(0, o + 1);
+                    s.push(t), (D = s), A({ action: r, location: i });
                   } else A();
                 }
               });
@@ -1431,8 +1436,8 @@
                   var t = d(i),
                     n = b(h + t);
                   T() !== n && ((S = t), R(n));
-                  var o = I.indexOf(d(j.location));
-                  -1 !== o && (I[o] = t), A({ action: r, location: i });
+                  var o = D.indexOf(d(j.location));
+                  -1 !== o && (D[o] = t), A({ action: r, location: i });
                 }
               });
             },
@@ -2948,8 +2953,8 @@
                                     O = i.float_array(x),
                                     P = 0,
                                     L = 0,
-                                    D = [{ in_time: 0, out_time: 0, tempo: o }],
-                                    I = 0,
+                                    I = [{ in_time: 0, out_time: 0, tempo: o }],
+                                    D = 0,
                                     U = 0,
                                     C = 1,
                                     M = 0,
@@ -2959,12 +2964,12 @@
                                     W = {
                                       mapOutputToInputTime: function (e) {
                                         for (
-                                          var t = D.length - 1;
-                                          e < D[t].out_time && t > 0;
+                                          var t = I.length - 1;
+                                          e < I[t].out_time && t > 0;
 
                                         )
                                           t--;
-                                        var r = D[t];
+                                        var r = I[t];
                                         return (
                                           r.in_time + r.tempo * (e - r.out_time)
                                         );
@@ -2984,12 +2989,12 @@
                                           (L = Math.max(0, L - e)),
                                             (P = W.mapOutputToInputTime(L));
                                           for (
-                                            var i = D.length - 1;
-                                            L <= D[i].out_time && i >= 0;
+                                            var i = I.length - 1;
+                                            L <= I[i].out_time && i >= 0;
 
                                           )
-                                            D.pop(), i--;
-                                          D.push({
+                                            I.pop(), i--;
+                                          I.push({
                                             in_time: P,
                                             out_time: L,
                                             tempo: o,
@@ -3017,10 +3022,10 @@
                                             return 0.9 / i;
                                           })(p, h)),
                                           (o = e);
-                                        var t = D[D.length - 1];
+                                        var t = I[I.length - 1];
                                         t.out_time == L
                                           ? (t.tempo = e)
-                                          : D.push({
+                                          : I.push({
                                               in_time: P,
                                               out_time: L,
                                               tempo: e,
@@ -3142,15 +3147,15 @@
                                               (O[j] = 0);
                                         }
                                         m[b] = 2 * a;
-                                        var D = m[(V = 0)],
-                                          I = m[V + 1],
+                                        var I = m[(V = 0)],
+                                          D = m[V + 1],
                                           U = S[V],
                                           C = O[V];
                                         for (g = 1; g < t.length - 1; g++) {
-                                          g >= D &&
-                                            g - D > I - g &&
-                                            ((D = m[++V]),
-                                            (I = m[V + 1]),
+                                          g >= I &&
+                                            g - I > D - g &&
+                                            ((I = m[++V]),
+                                            (D = m[V + 1]),
                                             (U = S[V]),
                                             (C = O[V]));
                                           var M = t[g] * U - r[g] * C,
@@ -3172,8 +3177,8 @@
                                       i.blit(l, 2 * f, l, 0, a - f),
                                         u.inplace(!1),
                                         u.unpack(m, b, v, y),
-                                        G(I, m, b, 0, 0, h / f),
-                                        G(I + 1, v, y, 0, 0, (h + e) / f),
+                                        G(D, m, b, 0, 0, h / f),
+                                        G(D + 1, v, y, 0, 0, (h + e) / f),
                                         i.blit(v, 0, w, 0, g),
                                         i.blit(y, 0, V, 0, g),
                                         u.repack(m, b, v, y),
@@ -3208,7 +3213,7 @@
                                       )
                                         (d[t] += o * u.m_re[t]),
                                           (d[t + h + e] += o * u.m_im[t]);
-                                      return (I += 2), (U = 2 * h + e);
+                                      return (D += 2), (U = 2 * h + e);
                                     };
                                   return (
                                     (W.process = function (e) {
@@ -4235,8 +4240,8 @@
                 O = "PLAYING",
                 P = "SEEKING",
                 L = "ERROR",
-                D = "NOT_SEEKING",
-                I = "BISECT_TO_TARGET",
+                I = "NOT_SEEKING",
+                D = "BISECT_TO_TARGET",
                 U = "BISECT_TO_KEYPOINT",
                 C = "LINEAR_TO_TARGET",
                 M = "fast";
@@ -4310,7 +4315,7 @@
                     (t._enableThreading = !!e.threading),
                     (t._enableSIMD = !!e.simd),
                     (t._state = R),
-                    (t._seekState = D),
+                    (t._seekState = I),
                     (t._detectedType = null),
                     (t._canvas = document.createElement("canvas")),
                     (t._frameSink = null),
@@ -4913,7 +4918,7 @@
                         value: function () {
                           this._log("STOPPING"),
                             (this._state = R),
-                            (this._seekState = D),
+                            (this._seekState = I),
                             (this._started = !1),
                             (this._ended = !1),
                             (this._frameEndTimestamp = 0),
@@ -5155,7 +5160,7 @@
                                 : t._codec.getKeypointOffset(e, function (e) {
                                     e > 0
                                       ? ((t._seekState = C), t._seekStream(e))
-                                      : ((t._seekState = I),
+                                      : ((t._seekState = D),
                                         t._startBisection(t._seekTargetTime)),
                                       t._fireEventAsync("seeking");
                                   });
@@ -5189,7 +5194,7 @@
                         key: "_continueSeekedPlayback",
                         value: function () {
                           var e = this;
-                          (this._seekState = D),
+                          (this._seekState = I),
                             (this._state = S),
                             (this._frameEndTimestamp =
                               this._codec.frameTimestamp),
@@ -5359,7 +5364,7 @@
                                   (this._log("close enough (right)"),
                                   (this._seekState = C),
                                   this._pingProcessing())
-                                : this._seekState == I &&
+                                : this._seekState == D &&
                                     this._codec.hasVideo &&
                                     this._codec.keyframeTimestamp <
                                       this._codec.frameTimestamp
@@ -5609,11 +5614,11 @@
                       {
                         key: "_doProcessSeeking",
                         value: function () {
-                          if (this._seekState == D)
+                          if (this._seekState == I)
                             throw Error(
                               "seeking in invalid state (not seeking?)",
                             );
-                          if (this._seekState == I)
+                          if (this._seekState == D)
                             this._doProcessBisectionSeek();
                           else if (this._seekState == U)
                             this._doProcessBisectionSeek();
@@ -11041,13 +11046,13 @@
           P++
         ) {
           var L = _[P],
-            D = L.getBoundingClientRect(),
-            I = D.height,
-            U = D.width,
-            C = D.top,
-            M = D.right,
-            F = D.bottom,
-            j = D.left;
+            I = L.getBoundingClientRect(),
+            D = I.height,
+            U = I.width,
+            C = I.top,
+            M = I.right,
+            F = I.bottom,
+            j = I.left;
           if (
             "if-needed" === n &&
             T >= 0 &&
@@ -11067,20 +11072,20 @@
             G = parseInt(B.borderBottomWidth, 10),
             X = 0,
             z = 0,
-            Y = "offsetWidth" in L ? L.offsetWidth - L.clientWidth - W - H : 0,
-            q =
+            q = "offsetWidth" in L ? L.offsetWidth - L.clientWidth - W - H : 0,
+            Y =
               "offsetHeight" in L ? L.offsetHeight - L.clientHeight - N - G : 0,
-            Q =
+            K =
               "offsetWidth" in L
                 ? 0 === L.offsetWidth
                   ? 0
                   : U / L.offsetWidth
                 : 0,
-            K =
+            Q =
               "offsetHeight" in L
                 ? 0 === L.offsetHeight
                   ? 0
-                  : I / L.offsetHeight
+                  : D / L.offsetHeight
                 : 0;
           if (p === L)
             (X =
@@ -11106,31 +11111,31 @@
               "start" === a
                 ? k - C - N
                 : "end" === a
-                  ? k - F + G + q
+                  ? k - F + G + Y
                   : "nearest" === a
-                    ? s(C, F, I, N, G + q, k, k + V, V)
-                    : k - (C + I / 2) + q / 2),
+                    ? s(C, F, D, N, G + Y, k, k + V, V)
+                    : k - (C + D / 2) + Y / 2),
               (z =
                 "start" === u
                   ? S - j - W
                   : "center" === u
-                    ? S - (j + U / 2) + Y / 2
+                    ? S - (j + U / 2) + q / 2
                     : "end" === u
-                      ? S - M + H + Y
-                      : s(j, M, U, W, H + Y, S, S + x, x));
+                      ? S - M + H + q
+                      : s(j, M, U, W, H + q, S, S + x, x));
             var Z = L.scrollLeft,
               J = L.scrollTop;
             (k +=
               J -
               (X = Math.max(
                 0,
-                Math.min(J + X / K, L.scrollHeight - I / K + q),
+                Math.min(J + X / Q, L.scrollHeight - D / Q + Y),
               ))),
               (S +=
                 Z -
                 (z = Math.max(
                   0,
-                  Math.min(Z + z / Q, L.scrollWidth - U / Q + Y),
+                  Math.min(Z + z / K, L.scrollWidth - U / K + q),
                 )));
           }
           O.push({ el: L, top: X, left: z });
@@ -12235,6 +12240,10 @@
       "use strict";
       e.exports = r.p + "fc1fef817cbb6528.wasm";
     },
+    172136(e, t, r) {
+      "use strict";
+      e.exports = r.p + "387b59180e8a0be5.wasm";
+    },
     807853(e, t, r) {
       "use strict";
       async function i(e) {
@@ -13239,6 +13248,119 @@
         return (await r.e("379098").then(r.bind(r, 623777))).default;
       }
     },
+    28640(e, t, r) {
+      "use strict";
+      let i;
+      r.d(t, {
+        w4: () => c,
+        qg: () => p,
+        IS: () => _,
+        tJ: () =>
+          function* e(t) {
+            for (let r of t)
+              switch ((yield r, r.type)) {
+                case "paragraph":
+                case "strikethrough":
+                case "underline":
+                case "italic":
+                case "bold":
+                case "quote":
+                  yield* e(r.value);
+                  break;
+                case "spoiler":
+                case "heading":
+                case "small":
+                  yield* e(r.value.content);
+                  break;
+                case "list":
+                  for (let t of r.value.items) yield* e(t.content);
+                  break;
+                case "link":
+                  r.text && (yield* e(r.text));
+              }
+          },
+        Ts: () => f,
+      });
+      var n = r(882498),
+        o = r(451076),
+        s = r(971673);
+      async function a() {
+        return i || (i = await (0, n.i)()), i;
+      }
+      async function u() {
+        var e;
+        return (e = await a()), (0, s.Ay)({ module_or_path: e });
+      }
+      let c = Object.freeze({
+          CUSTOM_EMOJI: 1,
+          COLON_EMOJI: 2,
+          UNICODE_EMOJI: 4,
+          MASKED_LINK: 8,
+          DETECTED_LINK: 16,
+          AUTO_LINK: 32,
+          CONTACT_LINK: 64,
+          USER_MENTION: 128,
+          CHANNEL_MENTION: 256,
+          ROLE_MENTION: 512,
+          GAME_MENTION: 1024,
+          COMMAND_MENTION: 2048,
+          EVERYONE_MENTION: 4096,
+          HERE_MENTION: 8192,
+          STATIC_MENTION: 16384,
+          TIMESTAMP: 32768,
+          CODE_BLOCK: 65536,
+          CODE: 131072,
+          DOUBLE_CODE: 262144,
+          BOLD: 524288,
+          ASTERISK_ITALIC: 1048576,
+          UNDERSCORE_ITALIC: 2097152,
+          UNDERLINE: 4194304,
+          STRIKETHROUGH: 8388608,
+          SPOILER: 0x1000000,
+          HEADING: 0x2000000,
+          LIST: 0x4000000,
+          QUOTE: 0x8000000,
+          MULTILINE_QUOTE: 0x10000000,
+          SMALL: 0x20000000,
+          DEV_LINKS: 0x40000000,
+          EMOJI: 7,
+          LINKS: 120,
+          MENTIONS: 32640,
+          CODE_SPANS: 393216,
+          ITALIC: 3145728,
+          QUOTES: 0x18000000,
+          ALL: 0x7fffffff,
+        }),
+        l = !1,
+        d = null;
+      function f() {
+        return l
+          ? Promise.resolve()
+          : (d ??= u().then(
+              () => {
+                l = !0;
+              },
+              (e) => {
+                throw ((d = null), e);
+              },
+            ));
+      }
+      function h() {
+        if (l) return;
+        let e = (i || (i = (0, o.J)()), i);
+        if (!e)
+          throw Error(
+            "@discord/markdown-wasm is not initialised. Await init() once before parsing, or hand already-compiled wasm to initSync().",
+          );
+        (0, s.QR)({ module: e }), (l = !0);
+      }
+      function p(e, t) {
+        return h(), (0, s.qg)(e, t);
+      }
+      function _(e, t) {
+        return h(), (0, s.IS)(e, t);
+      }
+    },
     626551(e, t, r) {
       "use strict";
       r.d(t, { $M: () => a, W$: () => i, rQ: () => c });
@@ -13596,7 +13718,7 @@
         var t = X[e];
         return t || i(18, e), t;
       }
-      r.d(t, { Qx: () => n, jM: () => Q, mq: () => K, vD: () => Z });
+      r.d(t, { Qx: () => n, jM: () => K, mq: () => Q, vD: () => Z });
       function b(e, t) {
         t && (m("Patches"), (e.u = []), (e.s = []), (e.v = t));
       }
@@ -13604,10 +13726,10 @@
         y(e), e.p.forEach(V), (e.p = null);
       }
       function y(e) {
-        e === I && (I = e.l);
+        e === D && (D = e.l);
       }
       function w(e) {
-        return (I = { p: [], l: I, h: e, m: !0, _: 0 });
+        return (D = { p: [], l: D, h: e, m: !0, _: 0 });
       }
       function V(e) {
         var t = e[W];
@@ -13711,7 +13833,7 @@
                 ? ((o = n =
                     {
                       i: +!!(i = Array.isArray(t)),
-                      A: r ? r.A : I,
+                      A: r ? r.A : D,
                       P: !1,
                       I: !1,
                       R: {},
@@ -13723,13 +13845,13 @@
                       C: !1,
                     }),
                   (s = z),
-                  i && ((o = [n]), (s = Y)),
+                  i && ((o = [n]), (s = q)),
                   (u = (a = Proxy.revocable(o, s)).revoke),
                   (n.k = c = a.proxy),
                   (n.j = u),
                   c)
                 : m("ES5").J(t, r);
-        return (r ? r.A : I).p.push(f), f;
+        return (r ? r.A : D).p.push(f), f;
       }
       function L(e, t) {
         switch (t) {
@@ -13740,8 +13862,8 @@
         }
         return h(e);
       }
-      var D,
-        I,
+      var I,
+        D,
         U = "u" > typeof Symbol && "symbol" == typeof Symbol("x"),
         C = "u" > typeof Map,
         M = "u" > typeof Set,
@@ -13751,7 +13873,7 @@
           "u" > typeof Reflect,
         j = U
           ? Symbol.for("immer-nothing")
-          : (((D = {})["immer-nothing"] = !0), D),
+          : (((I = {})["immer-nothing"] = !0), I),
         B = U ? Symbol.for("immer-draftable") : "__$immer_draftable",
         W = U ? Symbol.for("immer-state") : "__$immer_state",
         N = "" + Object.prototype.constructor,
@@ -13856,19 +13978,19 @@
             i(12);
           },
         },
-        Y = {};
+        q = {};
       s(z, function (e, t) {
-        Y[e] = function () {
+        q[e] = function () {
           return (arguments[0] = arguments[0][0]), t.apply(this, arguments);
         };
       }),
-        (Y.deleteProperty = function (e, t) {
-          return Y.set.call(this, e, t, void 0);
+        (q.deleteProperty = function (e, t) {
+          return q.set.call(this, e, t, void 0);
         }),
-        (Y.set = function (e, t, r) {
+        (q.set = function (e, t, r) {
           return z.set.call(this, e[0], t, r, e[0]);
         });
-      var q = new ((function () {
+      var Y = new ((function () {
           function e(e) {
             var t = this;
             (this.O = F),
@@ -14027,14 +14149,14 @@
             e
           );
         })())(),
-        Q = q.produce,
-        K =
-          (q.produceWithPatches.bind(q),
-          q.setAutoFreeze.bind(q),
-          q.setUseProxies.bind(q),
-          q.applyPatches.bind(q),
-          q.createDraft.bind(q)),
-        Z = q.finishDraft.bind(q);
+        K = Y.produce,
+        Q =
+          (Y.produceWithPatches.bind(Y),
+          Y.setAutoFreeze.bind(Y),
+          Y.setUseProxies.bind(Y),
+          Y.applyPatches.bind(Y),
+          Y.createDraft.bind(Y)),
+        Z = Y.finishDraft.bind(Y);
     },
     694260(e, t, r) {
       "use strict";
@@ -14054,4 +14176,4 @@
     },
   },
 ]);
-//# sourceMappingURL=851061.70d1880b101fd387.js.map
+//# sourceMappingURL=246544.f788129b09e9581b.js.map

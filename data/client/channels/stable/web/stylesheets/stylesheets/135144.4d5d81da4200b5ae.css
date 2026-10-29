@@ -239,7 +239,12 @@
   object-fit: contain;
   width: 216px;
 }
+.animatedGraphic__31e10 {
+  flex-shrink: 0;
+  width: 282px;
+}
 @container (max-width: 560px) {
+  .animatedGraphic__31e10,
   .graphic__31e10 {
     display: none;
   }
@@ -248,4 +253,4 @@
   margin-top: 8px;
 }
 
-/*# sourceMappingURL=135144.12e8b020594e092f.css.map*/
+/*# sourceMappingURL=135144.4d5d81da4200b5ae.css.map*/
