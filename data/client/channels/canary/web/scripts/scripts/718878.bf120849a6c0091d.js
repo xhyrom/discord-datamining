@@ -1,8 +1,15 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["487719"],
+  ["718878"],
   {
-    484555(e, t, _) {
+    788066(e, _, t) {
+      e.exports = {
+        MK: "menu__43313",
+        Eq: "customMenuItem__43313",
+        CO: "customNotches__43313",
+      };
+    },
+    484555(e, _, t) {
       e.exports = {
         x6: "button__67645",
         Xr: "redGlow__67645",
@@ -14,7 +21,7 @@
         In: "greenTooltipContent__67645",
       };
     },
-    358285(e, t, _) {
+    358285(e, _, t) {
       e.exports = {
         kL: "container__37e49",
         my: "avatar__37e49",
@@ -36,7 +43,7 @@
         ZQ: "plated__37e49",
       };
     },
-    516171(e, t, _) {
+    516171(e, _, t) {
       e.exports = {
         Lh: "audioButtonParent__5e764",
         UT: "buttonChevron__5e764",
@@ -46,11 +53,26 @@
         $$: "buttonChevronIcon__5e764",
       };
     },
-    577755(e, t, _) {
+    577755(e, _, t) {
       e.exports = { T: "redIcon_e0923d", o: "strikethrough_e0923d" };
     },
-    222176(e, t, _) {
+    222176(e, _, t) {
       e.exports = { U: "pttIndicator_a18ea4", z: "speaking_a18ea4" };
+    },
+    645265(e, _, t) {
+      e.exports = {
+        kL: "container__911dc",
+        ne: "controls__911dc",
+        p_: "list__911dc",
+        bV: "sectionHeader__911dc",
+        Z8: "audienceRow__911dc",
+        VU: "audienceMember__911dc",
+        e$: "audienceAvatar__911dc",
+        zj: "faded__911dc",
+        wR: "audienceName__911dc",
+        p$: "emptyState__911dc",
+        XG: "emptyStateBody__911dc",
+      };
     },
   },
 ]);
