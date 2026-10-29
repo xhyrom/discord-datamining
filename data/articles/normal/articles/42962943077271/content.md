@@ -18,14 +18,6 @@
       <a href="#h_01M1FHY620SWH1T4SKCGZB0T9Y"
         >How to Customize Your Typing Indicator</a
       >
-      <ul>
-        <li data-list-item-id="e5174b10110f13b936c3b0701bb165663">
-          <a href="#h_01M1FHY622AG14AERBF86DHPZ9">Settings</a>
-        </li>
-        <li data-list-item-id="e49d783088b20de7d53e275d5bbc5a641">
-          <a href="#h_01M1FHY628D8CFCJ92X3BYFD86">Profile</a>
-        </li>
-      </ul>
     </li>
     <li data-list-item-id="ecf8fd885e94483450fc90679520c5047">
       <a href="#h_01M1FHY62D6Z24DBDQNWHTZDB9">Nitro vs. Non-Nitro Access</a>
@@ -36,12 +28,9 @@
   </ul>
 </div>
 <div class="exp-box">
-  <span style="color: #434343"
-    ><strong>Important:</strong> This is currently an experiment in beta and
-    isn't widely available yet. Only a limited number of Nitro subscribers can
-    access it right now, and
-    <strong>it's only available on mobile</strong>.</span
-  >
+  <strong>Important:</strong> This feature is rolling out to Nitro subscribers
+  on mobile. Most eligible subscribers will have access soon, with the rest
+  gaining access in the following weeks.
 </div>
 <h1 id="h_01M1FHY61TR4ZDEHB42GJ7658R">Custom Typing Indicator: What Is It?</h1>
 <p>
@@ -95,15 +84,8 @@
   How to Customize Your Typing Indicator
 </h1>
 <div class="info-box">
-  <span style="color: #434343"
-    ><strong>Note</strong>: This feature is currently mobile only as part of the
-    experiment in beta. During this experiment, you'll be able to set up your
-    custom typing indicator from <strong>one</strong> of two places:
-    <strong>Settings</strong> or your <strong>Profile</strong>, not both. We're
-    experimenting in two places, so you'll only see one.</span
-  >
+  <strong>Note:</strong> This feature is currently mobile only.
 </div>
-<h2 id="h_01M1FHY622AG14AERBF86DHPZ9">Settings</h2>
 <p>1. Tap the <strong>You Bar</strong> and select <strong>Settings</strong>.</p>
 <p>
   2. Scroll to <strong>App</strong> <strong>Settings</strong> and tap
@@ -189,45 +171,6 @@
     >
   </h4>
 </div>
-<h2 id="h_01M1FHY628D8CFCJ92X3BYFD86">Profile</h2>
-<p>
-  1. Tap the <strong>You Bar</strong> and select <strong>Edit Profile</strong>.
-</p>
-<p>2. Tap <strong>Typing</strong> <strong>Indicator</strong>. </p>
-<p class="wysiwyg-text-align-center">
-  <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 259/539; width: 42%"
-    src="https://support.discord.com/hc/article_attachments/43188238660119"
-    alt="Navigating from Your Profile to Typing Indicator"
-    width="259"
-    height="539"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01M1FJCEYEZ0EVREARB220H785">
-  <span style="color: #666666"
-    >Navigating from Your Profile to Typing Indicator</span
-  >
-</h4>
-<p>
-  3. Select your emoji, animation, and text, then <strong>Apply</strong> to save
-  your customized typing indicator.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    class="wysiwyg-image-resized"
-    style="aspect-ratio: 258/536; width: 42%"
-    src="https://support.discord.com/hc/article_attachments/43188238662295"
-    alt="Customizing Your Typing Indicator from your Profile"
-    width="258"
-    height="536"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01M1FJDJXG6VRGTHR1ZWTANXQY">
-  <span style="color: #666666"
-    >Customizing Your Typing Indicator from your Profile</span
-  >
-</h4>
 <div class="info-box">
   <span style="color: #434343"
     ><strong>Note</strong>: If a server has the
@@ -316,9 +259,9 @@
 </p>
 <p><strong>Q: Where can I set up my custom typing indicator?</strong></p>
 <p>
-  A: As part of this experiment, you'll be able to set it up from either
-  Settings or your Profile, but you'll only see one of the two. This experiment
-  is currently mobile only.
+  A: Tap the<strong> You Bar</strong>, select <strong>Settings</strong>, then
+  scroll to <strong>App</strong> <strong>Settings</strong> and tap
+  <strong>Typing</strong> <strong>Indicator</strong>.
 </p>
 <p>
   <strong>Q: Will everyone see my custom typing indicator the same way?</strong>
@@ -337,8 +280,8 @@
 </p>
 <p><strong>Q: Is this feature available to everyone?</strong></p>
 <p>
-  A: Not yet. This is currently an experiment and only available to a limited
-  number of Nitro subscribers on mobile. 
+  A: It’s rolling out now to Nitro subscribers on mobile. If you don’t see it
+  yet, you should gain access within the next few weeks.
 </p>
 <p><strong>Q: Can I choose any word for my status?</strong></p>
 <p>
