@@ -2502,6 +2502,13 @@
   justify-content: center;
   min-height: calc(100vh - 100px);
 }
+.loadErrorContainer_dc2e0e {
+  text-align: center;
+}
+.loadErrorContainerFill_dc2e0e {
+  box-sizing: border-box;
+  flex: 1;
+}
 .container__133bf {
   background: var(--background-gradient-chat, var(--background-base-low));
   background-color: var(--background-base-lowest);
@@ -2790,4 +2797,4 @@ html .tabBadge_e6b769 {
   color: CanvasText;
 }
 
-/*# sourceMappingURL=398929.7c73fe641a58fa03.css.map*/
+/*# sourceMappingURL=398929.90050c5a136cabda.css.map*/

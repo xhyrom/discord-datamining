@@ -2,25 +2,26 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   ["135144"],
   {
-    659888(e, _, o) {
+    659888(e, _, a) {
       e.exports = {
         IG: "streamerModeEnabled_aa3ffd",
         ch: "userSettingsStreamerModeEnabled_aa3ffd",
         Ac: "streamerModeEnabledBtn_aa3ffd",
       };
     },
-    936564(e, _, o) {
+    936564(e, _, a) {
       e.exports = { k: "container__27a85" };
     },
-    534247(e, _, o) {
+    534247(e, _, a) {
       e.exports = {
         kL: "container__31e10",
         oE: "compact__31e10",
         Qs: "content__31e10",
         fA: "graphic__31e10",
+        yO: "animatedGraphic__31e10",
       };
     },
-    316632(e, _, o) {
+    316632(e, _, a) {
       e.exports = {
         ne: "upsellOuter__50e68",
         u4: "upsellInner__50e68",
@@ -30,7 +31,7 @@
         ut: "closeIcon__50e68",
       };
     },
-    647451(e, _, o) {
+    647451(e, _, a) {
       e.exports = {
         D6: "soundButtonSettingContainer__84bad",
         Zg: "emoji__84bad",
@@ -41,7 +42,7 @@
         dj: "soundText__84bad",
       };
     },
-    806050(e, _, o) {
+    806050(e, _, a) {
       e.exports = {
         Dt: "guildSelector_c582b4",
         ax: "nitroWheel_c582b4",
@@ -51,7 +52,7 @@
         nW: "pillIcon_c582b4",
       };
     },
-    804037(e, _, o) {
+    804037(e, _, a) {
       e.exports = { X: "micTestHelpLink__2958a" };
     },
   },
