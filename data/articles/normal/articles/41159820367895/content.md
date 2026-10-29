@@ -1,7 +1,8 @@
-<p>
-  Discord gift cards are an easy way to treat yourself or a friend. Redeem one
-  to add balance to your account and spend it on Nitro, Shop items, Server
-  Boosts, and more. 
+<p class="wysiwyg-indent0.8333333333333334">
+  Discord gift cards are available at select retailers, online and in stores.
+  They’re an easy way to treat yourself or a friend. Just redeem one to add
+  balance to your Discord account, then spend it on things like Nitro, the Shop,
+  and more.
 </p>
 <div class="toc-box">
   <p>
@@ -58,19 +59,19 @@
             ><strong>Discord.com/redeem</strong></a
           >
         </li>
-        <li
-          class="wysiwyg-list-bold"
-          data-list-item-id="ed8c1aa5f35ad3465118145f5b11cfff3"
-        >
-          <a href="#h_01KW2HZ7HH614C6DZS11NGQ94N"
-            ><strong>Mobile Availability</strong></a
-          >
-        </li>
       </ul>
     </li>
     <li
       class="wysiwyg-list-bold"
-      data-list-item-id="e7fb81e5e34b7b02eca70269c5a86d80b"
+      data-list-item-id="ed95a7faecf1ac5c5b723d569529c85aa"
+    >
+      <a href="#h_01KW2HZ7HH614C6DZS11NGQ94N"
+        ><strong>Mobile Availability</strong></a
+      >
+    </li>
+    <li
+      class="wysiwyg-list-bold"
+      data-list-item-id="e88ecd118c6c9a6929cc2009496d2c47c"
     >
       <a href="#h_01KW2HZ7HJ5E2857HAK6CK5HF8"
         ><strong>Frequently Asked Questions</strong></a
@@ -159,14 +160,20 @@
 </ul>
 <h1 id="h_01KW2HZ7H6HFCTW2MQ6DANCQVR">Where can I buy a Discord gift card?</h1>
 <p>
-  Discord <strong>gift cards</strong> are available at select online retailers
-  in the United States. You can find more information on where to buy
-  <a
+  You can buy Discord gift cards at select retailers depending on your country
+  or region. If you're in the US, check our website<a
+    href="https://discord.com/gift-cards#retailers"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span class="wysiwyg-underline">here</span></a
+  >. If you're in the rest of the world, head to our<a
     href="https://support.discord.com/hc/en-us/articles/41159846304279"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">here</span></a
-  >.
+  >
+    <span class="wysiwyg-underline">Help Center</span></a
+  >. 
 </p>
 <h1 id="h_01KW2HZ7H8APD19A3DPJPY7RGZ">
   What can I buy with a Discord gift card?
@@ -239,9 +246,13 @@
   <strong>desktop app</strong> via <strong>Billing</strong>.
 </p>
 <div class="warn-box">
-  <strong>Important</strong>: Make sure you're logged into the correct account
-  before redeeming. Gift card balances cannot be transferred between accounts
-  once redeemed.
+  <strong>Important</strong>:
+  <span style="color: #434343"
+    >Before redeeming, make sure you’re logged into the correct account and that
+    your account’s Country/Region setting matches the country where your gift
+    card was purchased. Gift card balances cannot be transferred between
+    accounts once redeemed.</span
+  >
 </div>
 <h2 id="h_01KW2HZ7HCFT1MHBR0XDB7GMS7"><strong>Desktop App</strong></h2>
 <p>
@@ -376,6 +387,12 @@
   Redeeming a Discord Gift Card through Mobile Web Browser
 </h4>
 <h1 id="h_01KW2HZ7HJ5E2857HAK6CK5HF8">Frequently Asked Questions</h1>
+<div class="warn-box">
+  <strong>Important</strong>: Gift cards are frequently targeted by scammers. Do
+  not purchase a Gift Card unless you’re buying it as a gift or for your own
+  use—never buy one to make a payment at someone else’s direction. For more
+  about gift card fraud, visit stopgiftcardscams.com.
+</div>
 <p>
   <span class="wysiwyg-font-size-x-large"
     ><strong>This FAQ is divided into sections:</strong></span
@@ -401,43 +418,68 @@
 <h2 id="h_01KW2HZ7HK9K4QFMKN8EZ2DFZV">Buying Gift Cards</h2>
 <p><strong>Q: Are digital and physical gift cards available?</strong> </p>
 <p>
-  A:<span style="color: #9900ff"> </span>Digital gift cards are available in the
-  US at select retailers. Physical cards are coming soon, check out our<a
+  A: Yes! Discord gift cards are available in-store and online at select
+  retailers. You can find select retailers by region in our<a
     href="https://support.discord.com/hc/en-us/articles/41159846304279"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline"> Help Center</span></a
   >
-  for the latest on where to buy.
+    <span class="wysiwyg-underline">Help Center</span></a
+  >.
 </p>
 <p><strong>Q: What countries are Discord gift cards available in?</strong></p>
 <p>
-  A: Digital gift cards are only available in the US, and we have more
-  cooking…stay tuned!
+  A: Discord gift cards are available in the United States, United Kingdom along
+  with select retailers in Canada, France, Italy, and Spain. We’re always
+  exploring new places we could bring gift cards in the future, stay tuned!
 </p>
 <p><strong>Q: Where can I buy Discord gift cards?</strong></p>
 <p>
-  A: Digital gift cards are available in the US at select retailers. Physical
-  cards are coming soon, check out our
-  <a
+  A: You can buy Discord gift cards at select retailers depending on your
+  country or region. If you're in the US, check our website<a
+    href="https://discord.com/gift-cards"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span class="wysiwyg-underline">here</span></a
+  >. If you're in the rest of the world, head to our<a
     href="https://support.discord.com/hc/en-us/articles/41159846304279"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">Help Center</span></a
   >
-  for the latest on where to buy.
+    <span class="wysiwyg-underline">Help Center</span></a
+  >.
 </p>
 <p><strong>Q: What gift card amounts are available?</strong></p>
-<p>
-  A: Discord gift cards are available in $25 and $50 options, or a choose your
-  adventure option where you can pick between $15–$150. Availability may vary by
-  retailer.
-</p>
+<p>A: Discord gift cards are available in the following options:</p>
+<ul>
+  <li data-list-item-id="e04b710009bda4d6579123a16cce748d4">
+    <strong>USD:</strong> $25, $50, and variable amounts from $15–$150
+  </li>
+  <li data-list-item-id="e97e95032c2dc3039038cca578703ac69">
+    <strong>EUR:</strong> €25, €50, and variable amounts from €15–€150
+  </li>
+  <li data-list-item-id="ef8f4e92382bf3b8128e6e0524552b31e">
+    <strong>GBP:</strong> £20, £40, and variable amounts from £10–£100
+  </li>
+  <li data-list-item-id="ecd334e0cc48736e46d65dcf44a878f66">
+    <strong>CAD:</strong> $35, $75, and variable amounts from $20–$175
+  </li>
+</ul>
+<p>Availability will vary by retailer and region.</p>
 <p><strong>Q: Can I buy a gift card for someone in another country?</strong></p>
 <p>
-  A:<span style="color: #9900ff"> </span>Gift cards can only be redeemed in the
-  country they were purchased in. To redeem, your account's Country/Region
-  setting must match the gift card's currency.
+  A: Gift cards can only be redeemed in the country they were purchased in, so
+  keep that in mind when buying for someone abroad. One exception: gift cards
+  priced in euros can be redeemed in any country that uses euros as their
+  official currency. Make sure to check which
+  <a
+    href="https://support.discord.com/hc/en-us/articles/41159820367895"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">countries</span></a
+  >
+  Discord gift cards are available in before purchasing.
 </p>
 <h2 id="h_01KW2HZ7HSWN33VW9TSF4KKJ4Z">Redeeming</h2>
 <p><strong>Q: Do I need an account to redeem my gift card?</strong></p>
@@ -451,8 +493,15 @@
 <p><strong>Q: Can I redeem a gift card from another country?</strong></p>
 <p>
   A: Gift cards can only be redeemed in the country they were purchased in. To
-  redeem, your account's Country/Region setting must match the gift card's
-  currency.
+  redeem, your account's
+  <a
+    href="https://support.discord.com/hc/en-us/articles/39799791912087-Country-Region-Setting"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Country/Region setting</span></a
+  >
+  must match the gift card's currency. Gift cards priced in euros can be
+  redeemed in any country that recognizes the euro as an official currency.
 </p>
 <p><strong>Q: Why isn't my gift card code working?</strong></p>
 <p>A: Let’s help with that! Here are some pro tips and considerations:</p>
@@ -478,17 +527,15 @@
     <strong>Balance or redemption limit reached.</strong> Your account may have
     reached its wallet balance or redemption limit.
   </li>
-  <li data-list-item-id="eb222a1f620ac88003fdd5dcb16fa7946">
+  <li data-list-item-id="e55e6587520872a2f2656d1e53a24e12a">
     <strong>Platform pro tip.</strong> Just a heads up, you can only view and
-    spend your balance on the desktop app or web browser.
+    spend your balance on the desktop app or web browser. Items purchased show
+    up wherever you use Discord.
   </li>
 </ul>
 <p>
   If none of the above apply and your code still isn't working, please contact
-  <a
-    href="https://support.discord.com/"
-    target="_blank"
-    rel="noopener noreferrer"
+  <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
     ><span class="wysiwyg-underline">Discord support</span></a
   >
   with your card details and a photo of the back of the card.
@@ -514,11 +561,31 @@
   <strong>Gift Cards</strong> under the <em>Type of Billing Issue</em> and
   complete the rest of the form based on your specific concern.
 </p>
-<h2 id="h_01KW2HZ7HXBZQ0SP81HJVG707T">Your Balance &amp; Spending</h2>
-<p><strong>Q: Where can I see my gift card balance?</strong></p>
 <p>
-  A:  You can check your balance anytime under User Settings &gt; Billing &gt;
-  Payment Methods within the desktop app or web browser.
+  <strong
+    >Q: What if the code on my physical gift card is scratched off, damaged, or
+    lost? </strong
+  >
+</p>
+<p>
+  A: You'll need to work with the retailer for any issues with your gift card
+  prior to redemption. See the
+  <a
+    href="https://discord.com/terms/gift-card-terms"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">Gift Card Terms</span></a
+  >
+  for more information.
+</p>
+<h2 id="h_01KW2HZ7HXBZQ0SP81HJVG707T">Your Balance &amp; Spending</h2>
+<p>
+  <strong>Q: Where can I see my gift card balance once I’ve redeemed?</strong>
+</p>
+<p>
+  A:  You can check your balance anytime under
+  <strong>User Settings &gt; Billing &gt; Payment Methods </strong>within the
+  desktop app or web browser.
 </p>
 <p>
   <strong>Q: Does my gift card or balance expire?</strong><br />A: Discord gift
@@ -563,11 +630,6 @@
     ><span class="wysiwyg-underline">here</span></a
   >.
 </p>
-<p><strong>Q: Can I use my gift card balance on mobile?</strong></p>
-<p>
-  A: You can view and use your gift card balance on desktop app and web browser.
-  Anything you buy will show up across all your devices.
-</p>
 <p>
   <strong
     >Q: Are there any cases where I cannot use my gift card balance?</strong
@@ -577,7 +639,7 @@
   A: Yes. Your gift card balance may be temporarily unavailable if your wallet
   has been frozen, or if you have reached your gift card balance limit. If you
   believe this is an error, please contact
-  <a href="https://dis.gd/support" target="_blank" rel="noopener noreferrer"
+  <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
     ><span class="wysiwyg-underline">Discord support</span></a
   >.
 </p>
@@ -590,15 +652,10 @@
   option to use your balance won’t show up during check-out if you can’t use a
   gift card balance to purchase that item.
 </p>
-<p><strong>Q: Where can I see my gift card balance?</strong></p>
-<p>
-  You can check your balance anytime in the desktop or web app under
-  <strong>User Settings &gt; Billing</strong>.
-</p>
 <p>
   <strong
-    >Q: Can I use my gift card balance and another payment method together in
-    one purchase?</strong
+    >Q: What if my gift card doesn't cover the total cost of my
+    purchase?</strong
   >
 </p>
 <p>
@@ -721,6 +778,19 @@
   method.
 </p>
 <h2 id="h_01KW2HZ7J3CE1YAN1NDE99QVYP">Other</h2>
+<p>
+  <strong>Q: What happened to the old Nitro gift cards sold on Amazon?</strong>
+</p>
+<p>
+  A: As of October 30, 2026, Discord Nitro gift cards are no longer available
+  for purchase on Amazon.
+</p>
+<p>
+  Keep in mind the new gift cards work a little differently from the old Amazon
+  Nitro gift cards. Instead of applying directly to a Nitro subscription, they
+  load a balance to your Discord account that you can use toward Nitro, the
+  Discord Shop, Server Boosts, and more.
+</p>
 <p><strong>Q: Who is CIMI / Weary Travelers Inc.?</strong></p>
 <p>
   CIMI is the company we work with to bring gift cards to you. Weary Travelers,
