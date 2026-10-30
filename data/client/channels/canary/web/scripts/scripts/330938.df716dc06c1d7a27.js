@@ -2,10 +2,10 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   ["330938"],
   {
-    709327(_, e, t) {
+    709327(_, e, n) {
       _.exports = { L: "loading__6ef4d" };
     },
-    323737(_, e, t) {
+    323737(_, e, n) {
       _.exports = {
         kL: "container__5b927",
         YV: "containerMinimized__5b927",
@@ -22,16 +22,20 @@
         ss: "current__5b927 jsonSection__5b927",
       };
     },
-    682356(_, e, t) {
+    682356(_, e, n) {
       _.exports = { k: "container__2baeb" };
     },
-    779016(_, e, t) {
+    779016(_, e, n) {
       _.exports = { k: "container__0bec3", Z: "gridOverlay__0bec3" };
     },
-    51123(_, e, t) {
-      _.exports = { d: "pool__0aebc", p: "iframe__0aebc" };
+    51123(_, e, n) {
+      _.exports = {
+        dz: "pool__0aebc",
+        pU: "iframe__0aebc",
+        bn: "overlayLoading__0aebc",
+      };
     },
-    268547(_, e, t) {
+    268547(_, e, n) {
       _.exports = {
         kL: "container_a7f798",
         h5: "status_a7f798",

@@ -85,5 +85,20 @@
   flex-direction: column;
   padding-bottom: 0;
 }
+.statusLine__06d62 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+  min-width: 0;
+}
+.statusLine__06d62 > * {
+  min-width: 0;
+}
+.enlargedStatusLine__06d62 {
+  align-items: flex-start;
+}
+.enlargedStatusLine__06d62 > :not(:first-child) {
+  margin-top: var(--space-8);
+}
 
-/*# sourceMappingURL=587669.2076b2e8e4565786.css.map*/
+/*# sourceMappingURL=587669.23731eb73a0781c7.css.map*/

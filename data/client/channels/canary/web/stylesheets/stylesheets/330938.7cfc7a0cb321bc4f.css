@@ -143,6 +143,12 @@
   min-width: 2px;
   width: 100%;
 }
+.overlayLoading__0aebc {
+  align-items: center;
+  background: var(--background-gradient-chat, var(--background-base-lower));
+  display: flex;
+  justify-content: center;
+}
 .container_a7f798 {
   background-color: var(--background-base-lower);
   border-radius: 3px;
@@ -203,4 +209,4 @@ html.disable-forced-colors * {
   --link-decoration: underline;
 }
 
-/*# sourceMappingURL=330938.b6b028113cefa158.css.map*/
+/*# sourceMappingURL=330938.7cfc7a0cb321bc4f.css.map*/
