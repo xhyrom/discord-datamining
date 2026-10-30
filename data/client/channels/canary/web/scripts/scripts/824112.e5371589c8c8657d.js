@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["841955"],
+  ["824112"],
   {
     386870(t, e, r) {
       "use strict";
@@ -153,20 +153,20 @@
           (this.dataCache = null),
           (this.dataList = []);
       }
-      var f = s.prototype;
-      (f.addData = function (t) {
+      var l = s.prototype;
+      (l.addData = function (t) {
         var e = new n(t);
         this.dataList.push(e), (this.dataCache = null);
       }),
-        (f.isDark = function (t, e) {
+        (l.isDark = function (t, e) {
           if (t < 0 || this.moduleCount <= t || e < 0 || this.moduleCount <= e)
             throw Error(t + "," + e);
           return this.modules[t][e];
         }),
-        (f.getModuleCount = function () {
+        (l.getModuleCount = function () {
           return this.moduleCount;
         }),
-        (f.make = function () {
+        (l.make = function () {
           if (this.typeNumber < 1) {
             var t = 1;
             for (t = 1; t < 40; t++) {
@@ -191,7 +191,7 @@
           }
           this.makeImpl(!1, this.getBestMaskPattern());
         }),
-        (f.makeImpl = function (t, e) {
+        (l.makeImpl = function (t, e) {
           (this.moduleCount = 4 * this.typeNumber + 17),
             (this.modules = Array(this.moduleCount));
           for (var r = 0; r < this.moduleCount; r++) {
@@ -214,7 +214,7 @@
               )),
             this.mapData(this.dataCache, e);
         }),
-        (f.setupPositionProbePattern = function (t, e) {
+        (l.setupPositionProbePattern = function (t, e) {
           for (var r = -1; r <= 7; r++)
             if (!(t + r <= -1) && !(this.moduleCount <= t + r))
               for (var n = -1; n <= 7; n++)
@@ -226,7 +226,7 @@
                     ? (this.modules[t + r][e + n] = !0)
                     : (this.modules[t + r][e + n] = !1));
         }),
-        (f.getBestMaskPattern = function () {
+        (l.getBestMaskPattern = function () {
           for (var t = 0, e = 0, r = 0; r < 8; r++) {
             this.makeImpl(!0, r);
             var n = i.getLostPoint(this);
@@ -234,7 +234,7 @@
           }
           return e;
         }),
-        (f.createMovieClip = function (t, e, r) {
+        (l.createMovieClip = function (t, e, r) {
           var n = t.createEmptyMovieClip(e, r);
           this.make();
           for (var o = 0; o < this.modules.length; o++)
@@ -250,13 +250,13 @@
             }
           return n;
         }),
-        (f.setupTimingPattern = function () {
+        (l.setupTimingPattern = function () {
           for (var t = 8; t < this.moduleCount - 8; t++)
             null == this.modules[t][6] && (this.modules[t][6] = t % 2 == 0);
           for (var e = 8; e < this.moduleCount - 8; e++)
             null == this.modules[6][e] && (this.modules[6][e] = e % 2 == 0);
         }),
-        (f.setupPositionAdjustPattern = function () {
+        (l.setupPositionAdjustPattern = function () {
           for (
             var t = i.getPatternPosition(this.typeNumber), e = 0;
             e < t.length;
@@ -273,7 +273,7 @@
                       : (this.modules[n + a][o + u] = !1);
             }
         }),
-        (f.setupTypeNumber = function (t) {
+        (l.setupTypeNumber = function (t) {
           for (
             var e = i.getBCHTypeNumber(this.typeNumber), r = 0;
             r < 18;
@@ -291,7 +291,7 @@
             ] = n;
           }
         }),
-        (f.setupTypeInfo = function (t, e) {
+        (l.setupTypeInfo = function (t, e) {
           for (
             var r = (this.errorCorrectLevel << 3) | e,
               n = i.getBCHTypeInfo(r),
@@ -316,7 +316,7 @@
           }
           this.modules[this.moduleCount - 8][8] = !t;
         }),
-        (f.mapData = function (t, e) {
+        (l.mapData = function (t, e) {
           for (
             var r = -1,
               n = this.moduleCount - 1,
@@ -329,10 +329,10 @@
             for (6 == u && u--; ; ) {
               for (var s = 0; s < 2; s++)
                 if (null == this.modules[n][u - s]) {
-                  var f = !1;
-                  a < t.length && (f = ((t[a] >>> o) & 1) == 1),
-                    i.getMask(e, n, u - s) && (f = !f),
-                    (this.modules[n][u - s] = f),
+                  var l = !1;
+                  a < t.length && (l = ((t[a] >>> o) & 1) == 1),
+                    i.getMask(e, n, u - s) && (l = !l),
+                    (this.modules[n][u - s] = l),
                     -1 == --o && (a++, (o = 7));
                 }
               if ((n += r) < 0 || this.moduleCount <= n) {
@@ -345,16 +345,16 @@
         (s.PAD1 = 17),
         (s.createData = function (t, e, r) {
           for (
-            var n = o.getRSBlocks(t, e), u = new a(), f = 0;
-            f < r.length;
-            f++
+            var n = o.getRSBlocks(t, e), u = new a(), l = 0;
+            l < r.length;
+            l++
           ) {
-            var l = r[f];
-            u.put(l.mode, 4),
-              u.put(l.getLength(), i.getLengthInBits(l.mode, t)),
-              l.write(u);
+            var f = r[l];
+            u.put(f.mode, 4),
+              u.put(f.getLength(), i.getLengthInBits(f.mode, t)),
+              f.write(u);
           }
-          for (var h = 0, f = 0; f < n.length; f++) h += n[f].dataCount;
+          for (var h = 0, l = 0; l < n.length; l++) h += n[l].dataCount;
           if (u.getLengthInBits() > 8 * h)
             throw Error(
               "code length overflow. (" +
@@ -386,32 +386,32 @@
               o = 0,
               a = Array(e.length),
               s = Array(e.length),
-              f = 0;
-            f < e.length;
-            f++
+              l = 0;
+            l < e.length;
+            l++
           ) {
-            var l = e[f].dataCount,
-              h = e[f].totalCount - l;
-            (n = Math.max(n, l)), (o = Math.max(o, h)), (a[f] = Array(l));
-            for (var c = 0; c < a[f].length; c++)
-              a[f][c] = 255 & t.buffer[c + r];
-            r += l;
+            var f = e[l].dataCount,
+              h = e[l].totalCount - f;
+            (n = Math.max(n, f)), (o = Math.max(o, h)), (a[l] = Array(f));
+            for (var c = 0; c < a[l].length; c++)
+              a[l][c] = 255 & t.buffer[c + r];
+            r += f;
             var g = i.getErrorCorrectPolynomial(h),
-              d = new u(a[f], g.getLength() - 1).mod(g);
-            s[f] = Array(g.getLength() - 1);
-            for (var c = 0; c < s[f].length; c++) {
-              var p = c + d.getLength() - s[f].length;
-              s[f][c] = p >= 0 ? d.get(p) : 0;
+              d = new u(a[l], g.getLength() - 1).mod(g);
+            s[l] = Array(g.getLength() - 1);
+            for (var c = 0; c < s[l].length; c++) {
+              var p = c + d.getLength() - s[l].length;
+              s[l][c] = p >= 0 ? d.get(p) : 0;
             }
           }
           for (var v = 0, c = 0; c < e.length; c++) v += e[c].totalCount;
-          for (var E = Array(v), m = 0, c = 0; c < n; c++)
-            for (var f = 0; f < e.length; f++)
-              c < a[f].length && (E[m++] = a[f][c]);
+          for (var m = Array(v), C = 0, c = 0; c < n; c++)
+            for (var l = 0; l < e.length; l++)
+              c < a[l].length && (m[C++] = a[l][c]);
           for (var c = 0; c < o; c++)
-            for (var f = 0; f < e.length; f++)
-              c < s[f].length && (E[m++] = s[f][c]);
-          return E;
+            for (var l = 0; l < e.length; l++)
+              c < s[l].length && (m[C++] = s[l][c]);
+          return m;
         }),
         (t.exports = s);
     },
@@ -590,11 +590,11 @@
             );
           for (var n = r.length / 3, a = [], i = 0; i < n; i++)
             for (
-              var u = r[3 * i + 0], s = r[3 * i + 1], f = r[3 * i + 2], l = 0;
-              l < u;
-              l++
+              var u = r[3 * i + 0], s = r[3 * i + 1], l = r[3 * i + 2], f = 0;
+              f < u;
+              f++
             )
-              a.push(new o(s, f));
+              a.push(new o(s, l));
           return a;
         }),
         (o.getRsBlockTable = function (t, e) {
@@ -808,12 +808,12 @@
               }
             for (var n = 0; n < e - 1; n++)
               for (var o = 0; o < e - 1; o++) {
-                var f = 0;
-                t.isDark(n, o) && f++,
-                  t.isDark(n + 1, o) && f++,
-                  t.isDark(n, o + 1) && f++,
-                  t.isDark(n + 1, o + 1) && f++,
-                  (0 == f || 4 == f) && (r += 3);
+                var l = 0;
+                t.isDark(n, o) && l++,
+                  t.isDark(n + 1, o) && l++,
+                  t.isDark(n, o + 1) && l++,
+                  t.isDark(n + 1, o + 1) && l++,
+                  (0 == l || 4 == l) && (r += 3);
               }
             for (var n = 0; n < e; n++)
               for (var o = 0; o < e - 6; o++)
@@ -835,9 +835,9 @@
                   !t.isDark(n + 5, o) &&
                   t.isDark(n + 6, o) &&
                   (r += 40);
-            for (var l = 0, o = 0; o < e; o++)
-              for (var n = 0; n < e; n++) t.isDark(n, o) && l++;
-            return r + 10 * (Math.abs((100 * l) / e / e - 50) / 5);
+            for (var f = 0, o = 0; o < e; o++)
+              for (var n = 0; n < e; n++) t.isDark(n, o) && f++;
+            return r + 10 * (Math.abs((100 * f) / e / e - 50) / 5);
           },
         };
       t.exports = i;
@@ -873,14 +873,14 @@
           viewBoxSize: o.default.number.isRequired,
           xmlns: o.default.string,
         },
-        f = (0, a.forwardRef)(function (t, e) {
+        l = (0, a.forwardRef)(function (t, e) {
           var r = t.bgColor,
             o = t.bgD,
             a = t.fgD,
             u = t.fgColor,
             s = t.size,
-            f = t.title,
-            l = t.viewBoxSize,
+            l = t.title,
+            f = t.viewBoxSize,
             h = (function (t, e) {
               var r = {};
               for (var n in t)
@@ -902,21 +902,21 @@
             n({}, h, {
               height: s,
               ref: e,
-              viewBox: "0 0 " + l + " " + l,
+              viewBox: "0 0 " + f + " " + f,
               width: s,
             }),
-            f ? i.default.createElement("title", null, f) : null,
+            l ? i.default.createElement("title", null, l) : null,
             i.default.createElement("path", { d: o, fill: r }),
             i.default.createElement("path", { d: a, fill: u }),
           );
         });
-      (f.displayName = "QRCodeSvg"),
-        (f.propTypes = s),
-        (f.defaultProps = {
+      (l.displayName = "QRCodeSvg"),
+        (l.propTypes = s),
+        (l.defaultProps = {
           title: void 0,
           xmlns: "http://www.w3.org/2000/svg",
         }),
-        (e.default = f);
+        (e.default = l);
     },
     218682(t, e, r) {
       "use strict";
@@ -930,13 +930,13 @@
             }
             return t;
           },
-        o = l(r(143243)),
-        a = l(r(562627)),
-        i = l(r(223108)),
+        o = f(r(143243)),
+        a = f(r(562627)),
+        i = f(r(223108)),
         u = r(582128),
-        s = l(u),
-        f = l(r(99573));
-      function l(t) {
+        s = f(u),
+        l = f(r(99573));
+      function f(t) {
         return t && t.__esModule ? t : { default: t };
       }
       var h = {
@@ -950,7 +950,7 @@
           var r = t.bgColor,
             i = t.fgColor,
             u = t.level,
-            l = t.size,
+            f = t.size,
             h = t.value,
             c = (function (t, e) {
               var r = {};
@@ -964,7 +964,7 @@
           g.addData(h), g.make();
           var d = g.modules;
           return s.default.createElement(
-            f.default,
+            l.default,
             n({}, c, {
               bgColor: r,
               bgD: d
@@ -987,7 +987,7 @@
                 })
                 .join(" "),
               ref: e,
-              size: l,
+              size: f,
               viewBoxSize: d.length,
             }),
           );
@@ -1201,50 +1201,6 @@
       };
       t.exports = e;
     },
-    849324(t, e, r) {
-      "use strict";
-      r.d(e, { w: () => n });
-      let n = Object.freeze({
-        CUSTOM_EMOJI: 1,
-        COLON_EMOJI: 2,
-        UNICODE_EMOJI: 4,
-        MASKED_LINK: 8,
-        DETECTED_LINK: 16,
-        AUTO_LINK: 32,
-        CONTACT_LINK: 64,
-        USER_MENTION: 128,
-        CHANNEL_MENTION: 256,
-        ROLE_MENTION: 512,
-        GAME_MENTION: 1024,
-        COMMAND_MENTION: 2048,
-        EVERYONE_MENTION: 4096,
-        HERE_MENTION: 8192,
-        STATIC_MENTION: 16384,
-        TIMESTAMP: 32768,
-        CODE_BLOCK: 65536,
-        CODE: 131072,
-        DOUBLE_CODE: 262144,
-        BOLD: 524288,
-        ASTERISK_ITALIC: 1048576,
-        UNDERSCORE_ITALIC: 2097152,
-        UNDERLINE: 4194304,
-        STRIKETHROUGH: 8388608,
-        SPOILER: 0x1000000,
-        HEADING: 0x2000000,
-        LIST: 0x4000000,
-        QUOTE: 0x8000000,
-        MULTILINE_QUOTE: 0x10000000,
-        SMALL: 0x20000000,
-        DEV_LINKS: 0x40000000,
-        EMOJI: 7,
-        LINKS: 120,
-        MENTIONS: 32640,
-        CODE_SPANS: 393216,
-        ITALIC: 3145728,
-        QUOTES: 0x18000000,
-        ALL: 0x7fffffff,
-      });
-    },
   },
 ]);
-//# sourceMappingURL=841955.bde846beb473167d.js.map
+//# sourceMappingURL=824112.e5371589c8c8657d.js.map

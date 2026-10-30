@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["585600"],
+  ["164633"],
   {
     498419(e) {
       !(function () {
@@ -2027,6 +2027,14 @@
       }
       r.d(t, { J: () => n });
     },
+    882498(e, t, r) {
+      "use strict";
+      r.d(t, { i: () => o });
+      let n = new URL(r(136089), r.b);
+      function o() {
+        return WebAssembly.compileStreaming(fetch(n));
+      }
+    },
     971673(e, t, r) {
       "use strict";
       let n;
@@ -3286,8 +3294,8 @@ ${t.stack}`
         toBase: (e) => A("D50", j.white, e),
       });
       let q = 216 / 24389,
-        F = 24 / 116,
-        W = 24389 / 27,
+        W = 24 / 116,
+        F = 24389 / 27,
         H = S.D50;
       var G = new N({
         id: "lab",
@@ -3302,7 +3310,7 @@ ${t.stack}`
         fromBase(e) {
           let t = e
             .map((e, t) => e / H[t])
-            .map((e) => (e > q ? Math.cbrt(e) : (W * e + 16) / 116));
+            .map((e) => (e > q ? Math.cbrt(e) : (F * e + 16) / 116));
           return [116 * t[1] - 16, 500 * (t[0] - t[1]), 200 * (t[1] - t[2])];
         },
         toBase(e) {
@@ -3312,9 +3320,9 @@ ${t.stack}`
             (t[0] = e[1] / 500 + t[1]),
             (t[2] = t[1] - e[2] / 200),
             [
-              t[0] > F ? Math.pow(t[0], 3) : (116 * t[0] - 16) / W,
-              e[0] > 8 ? Math.pow((e[0] + 16) / 116, 3) : e[0] / W,
-              t[2] > F ? Math.pow(t[2], 3) : (116 * t[2] - 16) / W,
+              t[0] > W ? Math.pow(t[0], 3) : (116 * t[0] - 16) / F,
+              e[0] > 8 ? Math.pow((e[0] + 16) / 116, 3) : e[0] / F,
+              t[2] > W ? Math.pow(t[2], 3) : (116 * t[2] - 16) / F,
             ].map((e, t) => e * H[t])
           );
         },
@@ -3737,7 +3745,7 @@ ${t.stack}`
           return (400 * y(r, e)) / (r + 27.13);
         });
       }
-      function eF(e, t, r, n, a) {
+      function eW(e, t, r, n, a) {
         let i = {};
         (i.discounting = a), (i.refWhite = e), (i.surround = n);
         let s = e.map((e) => 100 * e);
@@ -3767,7 +3775,7 @@ ${t.stack}`
         );
         return (i.aW = i.nbb * (2 * d[0] + d[1] + 0.05 * d[2])), i;
       }
-      let eW = eF(ek, (64 / Math.PI) * 0.2, 20, "average", !1);
+      let eF = eW(ek, (64 / Math.PI) * 0.2, 20, "average", !1);
       function eH(e, t) {
         var r;
         let n;
@@ -3888,10 +3896,10 @@ ${t.stack}`
         },
         base: j,
         fromBase(e) {
-          let t = eG(e, eW);
+          let t = eG(e, eF);
           return [t.J, t.M, t.h];
         },
-        toBase: (e) => eH({ J: e[0], M: e[1], h: e[2] }, eW),
+        toBase: (e) => eH({ J: e[0], M: e[1], h: e[2] }, eF),
       });
       let eJ = S.D65,
         eX = 216 / 24389,
@@ -3899,7 +3907,7 @@ ${t.stack}`
       function eZ(e) {
         return e > 8 ? Math.pow((e + 16) / 116, 3) : e / eY;
       }
-      let eQ = eF(eJ, (200 / Math.PI) * eZ(50), 100 * eZ(50), "average", !1);
+      let eQ = eW(eJ, (200 / Math.PI) * eZ(50), 100 * eZ(50), "average", !1);
       var eK = new N({
         id: "hct",
         name: "HCT",
@@ -5076,7 +5084,7 @@ ${t.stack}`
       let t$ = S.D65,
         tU = 216 / 24389,
         tq = 24389 / 27,
-        [tF, tW] = tw({ space: j, coords: t$ });
+        [tW, tF] = tw({ space: j, coords: t$ });
       var tH = new N({
           id: "luv",
           name: "Luv",
@@ -5093,14 +5101,14 @@ ${t.stack}`
               [n, o] = tw({ space: j, coords: t });
             if (!Number.isFinite(n) || !Number.isFinite(o)) return [0, 0, 0];
             let a = r <= tU ? tq * r : 116 * Math.cbrt(r) - 16;
-            return [a, 13 * a * (n - tF), 13 * a * (o - tW)];
+            return [a, 13 * a * (n - tW), 13 * a * (o - tF)];
           },
           toBase(e) {
             let [t, r, n] = e;
             if (0 === t || c(t)) return [0, 0, 0];
             (r = l(r)), (n = l(n));
-            let o = r / (13 * t) + tF,
-              a = n / (13 * t) + tW,
+            let o = r / (13 * t) + tW,
+              a = n / (13 * t) + tF,
               i = t <= 8 ? t / tq : Math.pow((t + 16) / 116, 3);
             return [
               ((9 * o) / (4 * a)) * i,
@@ -5752,4 +5760,4 @@ ${t.stack}`
     },
   },
 ]);
-//# sourceMappingURL=585600.85ec39628d89fab2.js.map
+//# sourceMappingURL=164633.307a19ede2a64ab1.js.map

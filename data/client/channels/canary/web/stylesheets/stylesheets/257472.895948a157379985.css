@@ -867,6 +867,9 @@
   flex-shrink: 0;
   justify-content: center;
 }
+.acronymCharacter__44598 {
+  background-color: var(--background-base-lower);
+}
 .stats_c8fdb8 {
   -moz-column-gap: var(--space-32);
   column-gap: var(--space-32);
@@ -1166,4 +1169,4 @@
   top: var(--space-32);
 }
 
-/*# sourceMappingURL=257472.5c3828bd26363543.css.map*/
+/*# sourceMappingURL=257472.895948a157379985.css.map*/

@@ -1,11 +1,12 @@
 .chat_f75fb0 {
-  background: var(--background-gradient-chat, var(--background-base-lowest));
   display: flex;
   flex-direction: column;
   min-height: 0;
   min-width: 0;
   overflow: hidden;
   position: relative;
+  anchor-scope: --pinot-channel-label, --pinot-member-notice;
+  background: var(--background-gradient-chat, var(--background-base-lowest));
 }
 .chat_f75fb0[data-has-border="true"] {
   border-top: 1px solid var(--app-frame-border);
@@ -361,4 +362,4 @@
   background-color: var(--background-mod-normal);
 }
 
-/*# sourceMappingURL=264141.3588135516004335.css.map*/
+/*# sourceMappingURL=264141.c15349ef8a5f7482.css.map*/

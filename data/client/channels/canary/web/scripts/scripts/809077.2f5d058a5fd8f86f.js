@@ -737,8 +737,8 @@
             (this.observer = e),
             (this.callback = t);
         },
-        k = new WeakMap(),
-        S = function (e, t) {
+        S = new WeakMap(),
+        k = function (e, t) {
           for (var r = 0; r < e.length; r += 1) if (e[r].target === t) return r;
           return -1;
         },
@@ -747,20 +747,20 @@
           return (
             (e.connect = function (e, t) {
               var r = new A(e, t);
-              k.set(e, r);
+              S.set(e, r);
             }),
             (e.observe = function (e, t, r) {
-              var i = k.get(e),
+              var i = S.get(e),
                 o = 0 === i.observationTargets.length;
-              0 > S(i.observationTargets, t) &&
+              0 > k(i.observationTargets, t) &&
                 (o && n.push(i),
                 i.observationTargets.push(new E(t, r && r.box)),
                 T(1),
                 x.schedule());
             }),
             (e.unobserve = function (e, t) {
-              var r = k.get(e),
-                i = S(r.observationTargets, t),
+              var r = S.get(e),
+                i = k(r.observationTargets, t),
                 o = 1 === r.observationTargets.length;
               i >= 0 &&
                 (o && n.splice(n.indexOf(r), 1),
@@ -769,7 +769,7 @@
             }),
             (e.disconnect = function (e) {
               var t = this,
-                r = k.get(e);
+                r = S.get(e);
               r.observationTargets.slice().forEach(function (r) {
                 return t.unobserve(e, r.target);
               }),
@@ -884,23 +884,23 @@
             R = i ? 0 : h(r.borderLeftWidth),
             E = w + v,
             A = b + y,
-            k = R + x,
-            S = V + T,
-            O = m ? e.offsetHeight - S - e.clientHeight : 0,
-            P = g ? e.offsetWidth - k - e.clientWidth : 0,
-            L = i ? i.width : h(r.width) - (n ? E + k : 0) - P,
-            D = i ? i.height : h(r.height) - (n ? A + S : 0) - O,
-            I = L + E + P + k,
-            U = D + A + O + S,
+            S = R + x,
+            k = V + T,
+            O = m ? e.offsetHeight - k - e.clientHeight : 0,
+            P = g ? e.offsetWidth - S - e.clientWidth : 0,
+            L = i ? i.width : h(r.width) - (n ? E + S : 0) - P,
+            I = i ? i.height : h(r.height) - (n ? A + k : 0) - O,
+            D = L + E + P + S,
+            U = I + A + O + k,
             C = (0, o.C)({
               devicePixelContentBoxSize: p(
                 Math.round(L * devicePixelRatio),
-                Math.round(D * devicePixelRatio),
+                Math.round(I * devicePixelRatio),
                 u,
               ),
-              borderBoxSize: p(I, U, u),
-              contentBoxSize: p(L, D, u),
-              contentRect: new s(w, b, L, D),
+              borderBoxSize: p(D, U, u),
+              contentBoxSize: p(L, I, u),
+              contentRect: new s(w, b, L, I),
             });
           return c.set(e, C), C;
         },
@@ -1008,7 +1008,7 @@
         AO: () => d,
         Fu: () => h,
         TM: () => E,
-        sC: () => k,
+        sC: () => S,
         yJ: () => f,
         zR: () => y,
       });
@@ -1190,27 +1190,27 @@
         function A() {
           return Math.random().toString(36).substr(2, T);
         }
-        var k = p();
-        function S(e) {
+        var S = p();
+        function k(e) {
           (0, i.A)(W, e),
             (W.length = r.length),
-            k.notifyListeners(W.location, W.action);
+            S.notifyListeners(W.location, W.action);
         }
         function O(e) {
           (void 0 !== e.state || -1 !== navigator.userAgent.indexOf("CriOS")) &&
-            D(E(e.state));
+            I(E(e.state));
         }
         function P() {
-          D(E(v()));
+          I(E(v()));
         }
         var L = !1;
-        function D(e) {
+        function I(e) {
           L
-            ? ((L = !1), S())
-            : k.confirmTransitionTo(e, "POP", V, function (t) {
+            ? ((L = !1), k())
+            : S.confirmTransitionTo(e, "POP", V, function (t) {
                 var r, i, n, o, s;
                 t
-                  ? S({ action: "POP", location: e })
+                  ? k({ action: "POP", location: e })
                   : ((r = e),
                     (i = W.location),
                     -1 === (n = U.indexOf(i.key)) && (n = 0),
@@ -1218,8 +1218,8 @@
                     (s = n - o) && ((L = !0), M(s)));
               });
         }
-        var I = E(v()),
-          U = [I.key];
+        var D = E(v()),
+          U = [D.key];
         function C(e) {
           return R + d(e);
         }
@@ -1239,12 +1239,12 @@
           W = {
             length: r.length,
             action: "POP",
-            location: I,
+            location: D,
             createHref: C,
             push: function (e, t) {
               var i = "PUSH",
                 o = f(e, t, A(), W.location);
-              k.confirmTransitionTo(o, i, V, function (e) {
+              S.confirmTransitionTo(o, i, V, function (e) {
                 if (e) {
                   var t = C(o),
                     s = o.key,
@@ -1255,7 +1255,7 @@
                     else {
                       var u = U.indexOf(W.location.key),
                         c = U.slice(0, u + 1);
-                      c.push(o.key), (U = c), S({ action: i, location: o });
+                      c.push(o.key), (U = c), k({ action: i, location: o });
                     }
                   else window.location.href = t;
                 }
@@ -1264,7 +1264,7 @@
             replace: function (e, t) {
               var i = "REPLACE",
                 o = f(e, t, A(), W.location);
-              k.confirmTransitionTo(o, i, V, function (e) {
+              S.confirmTransitionTo(o, i, V, function (e) {
                 if (e) {
                   var t = C(o),
                     s = o.key,
@@ -1274,7 +1274,7 @@
                       window.location.replace(t);
                     else {
                       var u = U.indexOf(W.location.key);
-                      -1 !== u && (U[u] = o.key), S({ action: i, location: o });
+                      -1 !== u && (U[u] = o.key), k({ action: i, location: o });
                     }
                   else window.location.replace(t);
                 }
@@ -1289,7 +1289,7 @@
             },
             block: function (e) {
               void 0 === e && (e = !1);
-              var t = k.setPrompt(e);
+              var t = S.setPrompt(e);
               return (
                 B || (j(1), (B = !0)),
                 function () {
@@ -1298,7 +1298,7 @@
               );
             },
             listen: function (e) {
-              var t = k.appendListener(e);
+              var t = S.appendListener(e);
               return (
                 j(1),
                 function () {
@@ -1356,8 +1356,8 @@
             (j.length = t.length),
             E.notifyListeners(j.location, j.action);
         }
-        var k = !1,
-          S = null;
+        var S = !1,
+          k = null;
         function O() {
           var e = T(),
             t = b(e);
@@ -1367,34 +1367,34 @@
               i = y(),
               n = j.location;
             if (
-              (!k &&
+              (!S &&
                 n.pathname === i.pathname &&
                 n.search === i.search &&
                 n.hash === i.hash) ||
-              S === d(i)
+              k === d(i)
             )
               return;
-            (S = null),
+            (k = null),
               (r = i),
-              k
-                ? ((k = !1), A())
+              S
+                ? ((S = !1), A())
                 : E.confirmTransitionTo(r, "POP", o, function (e) {
                     var t, i, n, o, s;
                     e
                       ? A({ action: "POP", location: r })
                       : ((t = r),
                         (i = j.location),
-                        -1 === (n = I.lastIndexOf(d(i))) && (n = 0),
-                        -1 === (o = I.lastIndexOf(d(t))) && (o = 0),
-                        (s = n - o) && ((k = !0), U(s)));
+                        -1 === (n = D.lastIndexOf(d(i))) && (n = 0),
+                        -1 === (o = D.lastIndexOf(d(t))) && (o = 0),
+                        (s = n - o) && ((S = !0), U(s)));
                   });
           }
         }
         var P = T(),
           L = b(P);
         P !== L && R(L);
-        var D = y(),
-          I = [d(D)];
+        var I = y(),
+          D = [d(I)];
         function U(e) {
           t.go(e);
         }
@@ -1408,7 +1408,7 @@
           j = {
             length: t.length,
             action: "POP",
-            location: D,
+            location: I,
             createHref: function (e) {
               var t = document.querySelector("base"),
                 r = "";
@@ -1425,10 +1425,10 @@
                   var t = d(i),
                     n = b(h + t);
                   if (T() !== n) {
-                    (S = t), (window.location.hash = n);
-                    var o = I.lastIndexOf(d(j.location)),
-                      s = I.slice(0, o + 1);
-                    s.push(t), (I = s), A({ action: r, location: i });
+                    (k = t), (window.location.hash = n);
+                    var o = D.lastIndexOf(d(j.location)),
+                      s = D.slice(0, o + 1);
+                    s.push(t), (D = s), A({ action: r, location: i });
                   } else A();
                 }
               });
@@ -1440,9 +1440,9 @@
                 if (e) {
                   var t = d(i),
                     n = b(h + t);
-                  T() !== n && ((S = t), R(n));
-                  var o = I.indexOf(d(j.location));
-                  -1 !== o && (I[o] = t), A({ action: r, location: i });
+                  T() !== n && ((k = t), R(n));
+                  var o = D.indexOf(d(j.location));
+                  -1 !== o && (D[o] = t), A({ action: r, location: i });
                 }
               });
             },
@@ -1478,7 +1478,7 @@
       function A(e, t, r) {
         return Math.min(Math.max(e, t), r);
       }
-      function k(e) {
+      function S(e) {
         void 0 === e && (e = {});
         var t = e,
           r = t.getUserConfirmation,
@@ -2948,18 +2948,18 @@
                                     R = [],
                                     E = [],
                                     A = [],
-                                    k = [];
+                                    S = [];
                                   for (_ = 0; _ < 2; _++)
                                     R.push(i.float_array(x)),
                                       E.push(i.float_array(x)),
                                       A.push(i.float_array(x)),
-                                      k.push(i.float_array(g));
-                                  var S = i.float_array(x),
+                                      S.push(i.float_array(g));
+                                  var k = i.float_array(x),
                                     O = i.float_array(x),
                                     P = 0,
                                     L = 0,
-                                    D = [{ in_time: 0, out_time: 0, tempo: o }],
-                                    I = 0,
+                                    I = [{ in_time: 0, out_time: 0, tempo: o }],
+                                    D = 0,
                                     U = 0,
                                     C = 1,
                                     M = 0,
@@ -2969,12 +2969,12 @@
                                     W = {
                                       mapOutputToInputTime: function (e) {
                                         for (
-                                          var t = D.length - 1;
-                                          e < D[t].out_time && t > 0;
+                                          var t = I.length - 1;
+                                          e < I[t].out_time && t > 0;
 
                                         )
                                           t--;
-                                        var r = D[t];
+                                        var r = I[t];
                                         return (
                                           r.in_time + r.tempo * (e - r.out_time)
                                         );
@@ -2987,19 +2987,19 @@
                                           (j = 0);
                                         for (var t = 0; t < 2; t++)
                                           for (var r = 0; r < g; r++)
-                                            k[t][r] = 0;
+                                            S[t][r] = 0;
                                         for (t = 0; t < l.length; t++) l[t] = 0;
                                         for (t = 0; t < d.length; t++) d[t] = 0;
                                         if (e) {
                                           (L = Math.max(0, L - e)),
                                             (P = W.mapOutputToInputTime(L));
                                           for (
-                                            var i = D.length - 1;
-                                            L <= D[i].out_time && i >= 0;
+                                            var i = I.length - 1;
+                                            L <= I[i].out_time && i >= 0;
 
                                           )
-                                            D.pop(), i--;
-                                          D.push({
+                                            I.pop(), i--;
+                                          I.push({
                                             in_time: P,
                                             out_time: L,
                                             tempo: o,
@@ -3027,10 +3027,10 @@
                                             return 0.9 / i;
                                           })(p, h)),
                                           (o = e);
-                                        var t = D[D.length - 1];
+                                        var t = I[I.length - 1];
                                         t.out_time == L
                                           ? (t.tempo = e)
-                                          : D.push({
+                                          : I.push({
                                               in_time: P,
                                               out_time: L,
                                               tempo: e,
@@ -3066,12 +3066,12 @@
                                       for (
                                         var u = e % 2,
                                           c = 1 - u,
-                                          l = k[c],
+                                          l = S[c],
                                           d = T[c],
                                           f = R[c],
                                           h = E[c],
                                           p = A[c],
-                                          _ = k[u],
+                                          _ = S[u],
                                           g = 1;
                                         g < _.length;
                                         g++
@@ -3143,25 +3143,25 @@
                                                 P;
                                             (v[j] = P),
                                               (y[j] = L),
-                                              (S[j] = Math.cos(L)),
+                                              (k[j] = Math.cos(L)),
                                               (O[j] = Math.sin(L));
                                           } else
                                             (v[j] = N(t, r, B)),
                                               (y[j] = 0),
-                                              (S[j] = 1),
+                                              (k[j] = 1),
                                               (O[j] = 0);
                                         }
                                         m[b] = 2 * a;
-                                        var D = m[(V = 0)],
-                                          I = m[V + 1],
-                                          U = S[V],
+                                        var I = m[(V = 0)],
+                                          D = m[V + 1],
+                                          U = k[V],
                                           C = O[V];
                                         for (g = 1; g < t.length - 1; g++) {
-                                          g >= D &&
-                                            g - D > I - g &&
-                                            ((D = m[++V]),
-                                            (I = m[V + 1]),
-                                            (U = S[V]),
+                                          g >= I &&
+                                            g - I > D - g &&
+                                            ((I = m[++V]),
+                                            (D = m[V + 1]),
+                                            (U = k[V]),
                                             (C = O[V]));
                                           var M = t[g] * U - r[g] * C,
                                             F = t[g] * C + r[g] * U;
@@ -3182,8 +3182,8 @@
                                       i.blit(l, 2 * f, l, 0, a - f),
                                         u.inplace(!1),
                                         u.unpack(m, b, v, y),
-                                        G(I, m, b, 0, 0, h / f),
-                                        G(I + 1, v, y, 0, 0, (h + e) / f),
+                                        G(D, m, b, 0, 0, h / f),
+                                        G(D + 1, v, y, 0, 0, (h + e) / f),
                                         i.blit(v, 0, w, 0, g),
                                         i.blit(y, 0, V, 0, g),
                                         u.repack(m, b, v, y),
@@ -3218,7 +3218,7 @@
                                       )
                                         (d[t] += o * u.m_re[t]),
                                           (d[t + h + e] += o * u.m_im[t]);
-                                      return (I += 2), (U = 2 * h + e);
+                                      return (D += 2), (U = 2 * h + e);
                                     };
                                   return (
                                     (W.process = function (e) {
@@ -3364,17 +3364,17 @@
                                     (s >>= 1), (a >>= 1), (u >>= 1);
                                   }
                                   for (
-                                    var R, E, A = r.m_revTgt, k = 0;
-                                    k < n;
-                                    k++
+                                    var R, E, A = r.m_revTgt, S = 0;
+                                    S < n;
+                                    S++
                                   )
-                                    A[k] > k &&
-                                      ((E = t[(R = A[k])]),
-                                      (t[R] = t[k]),
-                                      (t[k] = E),
+                                    A[S] > S &&
+                                      ((E = t[(R = A[S])]),
+                                      (t[R] = t[S]),
+                                      (t[S] = E),
                                       (E = i[R]),
-                                      (i[R] = i[k]),
-                                      (i[k] = E));
+                                      (i[R] = i[S]),
+                                      (i[S] = E));
                                 };
                                 var d = t >> 1;
                                 return (
@@ -4240,13 +4240,13 @@
                 R = "INITIAL",
                 E = "SEEKING_END",
                 A = "LOADED",
-                k = "PRELOAD",
-                S = "READY",
+                S = "PRELOAD",
+                k = "READY",
                 O = "PLAYING",
                 P = "SEEKING",
                 L = "ERROR",
-                D = "NOT_SEEKING",
-                I = "BISECT_TO_TARGET",
+                I = "NOT_SEEKING",
+                D = "BISECT_TO_TARGET",
                 U = "BISECT_TO_KEYPOINT",
                 C = "LINEAR_TO_TARGET",
                 M = "fast";
@@ -4320,7 +4320,7 @@
                     (t._enableThreading = !!e.threading),
                     (t._enableSIMD = !!e.simd),
                     (t._state = R),
-                    (t._seekState = D),
+                    (t._seekState = I),
                     (t._detectedType = null),
                     (t._canvas = document.createElement("canvas")),
                     (t._frameSink = null),
@@ -4923,7 +4923,7 @@
                         value: function () {
                           this._log("STOPPING"),
                             (this._state = R),
-                            (this._seekState = D),
+                            (this._seekState = I),
                             (this._started = !1),
                             (this._ended = !1),
                             (this._frameEndTimestamp = 0),
@@ -5165,7 +5165,7 @@
                                 : t._codec.getKeypointOffset(e, function (e) {
                                     e > 0
                                       ? ((t._seekState = C), t._seekStream(e))
-                                      : ((t._seekState = I),
+                                      : ((t._seekState = D),
                                         t._startBisection(t._seekTargetTime)),
                                       t._fireEventAsync("seeking");
                                   });
@@ -5199,8 +5199,8 @@
                         key: "_continueSeekedPlayback",
                         value: function () {
                           var e = this;
-                          (this._seekState = D),
-                            (this._state = S),
+                          (this._seekState = I),
+                            (this._state = k),
                             (this._frameEndTimestamp =
                               this._codec.frameTimestamp),
                             (this._audioEndTimestamp =
@@ -5369,7 +5369,7 @@
                                   (this._log("close enough (right)"),
                                   (this._seekState = C),
                                   this._pingProcessing())
-                                : this._seekState == I &&
+                                : this._seekState == D &&
                                     this._codec.hasVideo &&
                                     this._codec.keyframeTimestamp <
                                       this._codec.frameTimestamp
@@ -5449,8 +5449,8 @@
                           else if (this._state == E)
                             this._doProcessSeekingEnd();
                           else if (this._state == A) this._doProcessLoaded();
-                          else if (this._state == k) this._doProcessPreload();
-                          else if (this._state == S) this._doProcessReady();
+                          else if (this._state == S) this._doProcessPreload();
+                          else if (this._state == k) this._doProcessReady();
                           else if (this._state == P) this._doProcessSeeking();
                           else if (this._state == O) this._doProcessPlay();
                           else {
@@ -5553,7 +5553,7 @@
                       {
                         key: "_doProcessLoaded",
                         value: function () {
-                          (this._state = k),
+                          (this._state = S),
                             this._fireEventAsync("loadedmetadata"),
                             this._fireEventAsync("durationchange"),
                             this._codec.hasVideo &&
@@ -5574,7 +5574,7 @@
                                     ? (e._ended = !0)
                                     : e._readBytesAndWait();
                               })
-                            : ((this._state = S),
+                            : ((this._state = k),
                               this._fireEventAsync("loadeddata"),
                               this._pingProcessing());
                         },
@@ -5619,11 +5619,11 @@
                       {
                         key: "_doProcessSeeking",
                         value: function () {
-                          if (this._seekState == D)
+                          if (this._seekState == I)
                             throw Error(
                               "seeking in invalid state (not seeking?)",
                             );
-                          if (this._seekState == I)
+                          if (this._seekState == D)
                             this._doProcessBisectionSeek();
                           else if (this._seekState == U)
                             this._doProcessBisectionSeek();
@@ -6018,14 +6018,14 @@
                                       "play loop: waiting on async/timers",
                                     );
                             else {
-                              var k = u;
+                              var S = u;
                               this._log(
-                                "play loop: setting a timer for drawing " + k,
+                                "play loop: setting a timer for drawing " + S,
                               ),
                                 (this._nextFrameTimer = setTimeout(function () {
                                   (e._nextFrameTimer = null),
                                     e._pingProcessing();
-                                }, k));
+                                }, S));
                             }
                           } else
                             this._log("play loop: demuxing"),
@@ -6289,7 +6289,7 @@
                                       : this._log(
                                           ".play() while already started",
                                         ),
-                                    (this._state = S),
+                                    (this._state = k),
                                     this._isProcessing() ||
                                       this._pingProcessing())
                                   : this._loading
@@ -9223,19 +9223,19 @@
                       R = 0,
                       E = 0,
                       A = 0,
-                      k = 0,
                       S = 0,
+                      k = 0,
                       O = 0,
                       P = 0;
                     if (1 == o && 1 == s)
-                      for (y = 0, w = h, P = 0, S = 0; S < n; S += 2) {
+                      for (y = 0, w = h, P = 0, k = 0; k < n; k += 2) {
                         for (
-                          g = ((_ = (S * l) | 0) + l) | 0,
+                          g = ((_ = (k * l) | 0) + l) | 0,
                             m = (P * d) | 0,
                             b = (P * f) | 0,
-                            k = 0;
-                          k < i;
-                          k += 2
+                            S = 0;
+                          S < i;
+                          S += 2
                         )
                           (V = 0 | u[m++]),
                             (R = (((409 * (x = 0 | c[b++])) | 0) - 57088) | 0),
@@ -9265,17 +9265,17 @@
                         (y += h), (w += h), P++;
                       }
                     else
-                      for (v = 0, S = 0; S < n; S++)
+                      for (v = 0, k = 0; k < n; k++)
                         for (
                           O = 0,
-                            p = (S * l) | 0,
-                            m = ((P = S >> s) * d) | 0,
+                            p = (k * l) | 0,
+                            m = ((P = k >> s) * d) | 0,
                             b = (P * f) | 0,
-                            k = 0;
-                          k < i;
-                          k++
+                            S = 0;
+                          S < i;
+                          S++
                         )
-                          (V = 0 | u[m + (O = k >> o)]),
+                          (V = 0 | u[m + (O = S >> o)]),
                             (R =
                               (((409 * (x = 0 | c[b + O])) | 0) - 57088) | 0),
                             (E =
@@ -11038,26 +11038,26 @@
             R = w.right,
             E = w.bottom,
             A = w.left,
-            k =
+            S =
               "start" === a || "nearest" === a
                 ? T
                 : "end" === a
                   ? E
                   : T + V / 2,
-            S = "center" === u ? A + x / 2 : "end" === u ? R : A,
+            k = "center" === u ? A + x / 2 : "end" === u ? R : A,
             O = [],
             P = 0;
           P < _.length;
           P++
         ) {
           var L = _[P],
-            D = L.getBoundingClientRect(),
-            I = D.height,
-            U = D.width,
-            C = D.top,
-            M = D.right,
-            F = D.bottom,
-            j = D.left;
+            I = L.getBoundingClientRect(),
+            D = I.height,
+            U = I.width,
+            C = I.top,
+            M = I.right,
+            F = I.bottom,
+            j = I.left;
           if (
             "if-needed" === n &&
             T >= 0 &&
@@ -11080,67 +11080,67 @@
             q = "offsetWidth" in L ? L.offsetWidth - L.clientWidth - W - H : 0,
             Y =
               "offsetHeight" in L ? L.offsetHeight - L.clientHeight - N - G : 0,
-            Q =
+            K =
               "offsetWidth" in L
                 ? 0 === L.offsetWidth
                   ? 0
                   : U / L.offsetWidth
                 : 0,
-            K =
+            Q =
               "offsetHeight" in L
                 ? 0 === L.offsetHeight
                   ? 0
-                  : I / L.offsetHeight
+                  : D / L.offsetHeight
                 : 0;
           if (p === L)
             (X =
               "start" === a
-                ? k
+                ? S
                 : "end" === a
-                  ? k - b
+                  ? S - b
                   : "nearest" === a
-                    ? s(y, y + b, b, N, G, y + k, y + k + V, V)
-                    : k - b / 2),
+                    ? s(y, y + b, b, N, G, y + S, y + S + V, V)
+                    : S - b / 2),
               (z =
                 "start" === u
-                  ? S
+                  ? k
                   : "center" === u
-                    ? S - m / 2
+                    ? k - m / 2
                     : "end" === u
-                      ? S - m
-                      : s(v, v + m, m, W, H, v + S, v + S + x, x)),
+                      ? k - m
+                      : s(v, v + m, m, W, H, v + k, v + k + x, x)),
               (X = Math.max(0, X + y)),
               (z = Math.max(0, z + v));
           else {
             (X =
               "start" === a
-                ? k - C - N
+                ? S - C - N
                 : "end" === a
-                  ? k - F + G + Y
+                  ? S - F + G + Y
                   : "nearest" === a
-                    ? s(C, F, I, N, G + Y, k, k + V, V)
-                    : k - (C + I / 2) + Y / 2),
+                    ? s(C, F, D, N, G + Y, S, S + V, V)
+                    : S - (C + D / 2) + Y / 2),
               (z =
                 "start" === u
-                  ? S - j - W
+                  ? k - j - W
                   : "center" === u
-                    ? S - (j + U / 2) + q / 2
+                    ? k - (j + U / 2) + q / 2
                     : "end" === u
-                      ? S - M + H + q
-                      : s(j, M, U, W, H + q, S, S + x, x));
+                      ? k - M + H + q
+                      : s(j, M, U, W, H + q, k, k + x, x));
             var Z = L.scrollLeft,
               J = L.scrollTop;
-            (k +=
+            (S +=
               J -
               (X = Math.max(
                 0,
-                Math.min(J + X / K, L.scrollHeight - I / K + Y),
+                Math.min(J + X / Q, L.scrollHeight - D / Q + Y),
               ))),
-              (S +=
+              (k +=
                 Z -
                 (z = Math.max(
                   0,
-                  Math.min(Z + z / Q, L.scrollWidth - U / Q + q),
+                  Math.min(Z + z / K, L.scrollWidth - U / K + q),
                 )));
           }
           O.push({ el: L, top: X, left: z });
@@ -13277,13 +13277,57 @@
         return (await r.e("819825").then(r.bind(r, 765640))).default;
       }
     },
+    849324(e, t, r) {
+      "use strict";
+      r.d(t, { w: () => i });
+      let i = Object.freeze({
+        CUSTOM_EMOJI: 1,
+        COLON_EMOJI: 2,
+        UNICODE_EMOJI: 4,
+        MASKED_LINK: 8,
+        DETECTED_LINK: 16,
+        AUTO_LINK: 32,
+        CONTACT_LINK: 64,
+        USER_MENTION: 128,
+        CHANNEL_MENTION: 256,
+        ROLE_MENTION: 512,
+        GAME_MENTION: 1024,
+        COMMAND_MENTION: 2048,
+        EVERYONE_MENTION: 4096,
+        HERE_MENTION: 8192,
+        STATIC_MENTION: 16384,
+        TIMESTAMP: 32768,
+        CODE_BLOCK: 65536,
+        CODE: 131072,
+        DOUBLE_CODE: 262144,
+        BOLD: 524288,
+        ASTERISK_ITALIC: 1048576,
+        UNDERSCORE_ITALIC: 2097152,
+        UNDERLINE: 4194304,
+        STRIKETHROUGH: 8388608,
+        SPOILER: 0x1000000,
+        HEADING: 0x2000000,
+        LIST: 0x4000000,
+        QUOTE: 0x8000000,
+        MULTILINE_QUOTE: 0x10000000,
+        SMALL: 0x20000000,
+        DEV_LINKS: 0x40000000,
+        EMOJI: 7,
+        LINKS: 120,
+        MENTIONS: 32640,
+        CODE_SPANS: 393216,
+        ITALIC: 3145728,
+        QUOTES: 0x18000000,
+        ALL: 0x7fffffff,
+      });
+    },
     917310(e, t, r) {
       "use strict";
       let i;
       r.d(t, {
-        w4: () => c.w,
-        qg: () => p,
-        IS: () => _,
+        qg: () => h,
+        IS: () => p,
+        Ts: () => d,
         tJ: () =>
           function* e(t) {
             for (let r of t)
@@ -13308,7 +13352,6 @@
                   r.text && (yield* e(r.text));
               }
           },
-        Ts: () => f,
       });
       var n = r(882498),
         o = r(451076),
@@ -13320,35 +13363,35 @@
         var e;
         return (e = await a()), (0, s.Ay)({ module_or_path: e });
       }
-      var c = r(849324);
-      let l = !1,
-        d = null;
-      function f() {
-        return l
+      r(849324);
+      let c = !1,
+        l = null;
+      function d() {
+        return c
           ? Promise.resolve()
-          : (d ??= u().then(
+          : (l ??= u().then(
               () => {
-                l = !0;
+                c = !0;
               },
               (e) => {
-                throw ((d = null), e);
+                throw ((l = null), e);
               },
             ));
       }
-      function h() {
-        if (l) return;
+      function f() {
+        if (c) return;
         let e = (i || (i = (0, o.J)()), i);
         if (!e)
           throw Error(
             "@discord/markdown-wasm is not initialised. Await init() once before parsing, or hand already-compiled wasm to initSync().",
           );
-        (0, s.QR)({ module: e }), (l = !0);
+        (0, s.QR)({ module: e }), (c = !0);
+      }
+      function h(e, t) {
+        return f(), (0, s.qg)(e, t);
       }
       function p(e, t) {
-        return h(), (0, s.qg)(e, t);
-      }
-      function _(e, t) {
-        return h(), (0, s.IS)(e, t);
+        return f(), (0, s.IS)(e, t);
       }
     },
     626551(e, t, r) {
@@ -13708,7 +13751,7 @@
         var t = X[e];
         return t || i(18, e), t;
       }
-      r.d(t, { Qx: () => n, jM: () => Q, mq: () => K, vD: () => Z });
+      r.d(t, { Qx: () => n, jM: () => K, mq: () => Q, vD: () => Z });
       function b(e, t) {
         t && (m("Patches"), (e.u = []), (e.s = []), (e.v = t));
       }
@@ -13716,10 +13759,10 @@
         y(e), e.p.forEach(V), (e.p = null);
       }
       function y(e) {
-        e === I && (I = e.l);
+        e === D && (D = e.l);
       }
       function w(e) {
-        return (I = { p: [], l: I, h: e, m: !0, _: 0 });
+        return (D = { p: [], l: D, h: e, m: !0, _: 0 });
       }
       function V(e) {
         var t = e[W];
@@ -13793,7 +13836,7 @@
         var r = e[W];
         return (r ? f(r) : e)[t];
       }
-      function k(e, t) {
+      function S(e, t) {
         if (t in e)
           for (var r = Object.getPrototypeOf(e); r; ) {
             var i = Object.getOwnPropertyDescriptor(r, t);
@@ -13801,8 +13844,8 @@
             r = Object.getPrototypeOf(r);
           }
       }
-      function S(e) {
-        e.P || ((e.P = !0), e.l && S(e.l));
+      function k(e) {
+        e.P || ((e.P = !0), e.l && k(e.l));
       }
       function O(e) {
         e.o || (e.o = h(e.t));
@@ -13823,7 +13866,7 @@
                 ? ((o = n =
                     {
                       i: +!!(i = Array.isArray(t)),
-                      A: r ? r.A : I,
+                      A: r ? r.A : D,
                       P: !1,
                       I: !1,
                       R: {},
@@ -13841,7 +13884,7 @@
                   (n.j = u),
                   c)
                 : m("ES5").J(t, r);
-        return (r ? r.A : I).p.push(f), f;
+        return (r ? r.A : D).p.push(f), f;
       }
       function L(e, t) {
         switch (t) {
@@ -13852,8 +13895,8 @@
         }
         return h(e);
       }
-      var D,
-        I,
+      var I,
+        D,
         U = "u" > typeof Symbol && "symbol" == typeof Symbol("x"),
         C = "u" > typeof Map,
         M = "u" > typeof Set,
@@ -13863,7 +13906,7 @@
           "u" > typeof Reflect,
         j = U
           ? Symbol.for("immer-nothing")
-          : (((D = {})["immer-nothing"] = !0), D),
+          : (((I = {})["immer-nothing"] = !0), I),
         B = U ? Symbol.for("immer-draftable") : "__$immer_draftable",
         W = U ? Symbol.for("immer-state") : "__$immer_state",
         N = "" + Object.prototype.constructor,
@@ -13896,7 +13939,7 @@
               i,
               n = f(e);
             if (!u(n, t))
-              return (i = k(n, t))
+              return (i = S(n, t))
                 ? "value" in i
                   ? i.value
                   : null == (r = i.get)
@@ -13917,7 +13960,7 @@
             return Reflect.ownKeys(f(e));
           },
           set: function (e, t, r) {
-            var i = k(f(e), t);
+            var i = S(f(e), t);
             if (null == i ? void 0 : i.set) return i.set.call(e.k, r), !0;
             if (!e.P) {
               var n = A(f(e), t),
@@ -13928,7 +13971,7 @@
                 (void 0 !== r || u(e.t, t))
               )
                 return !0;
-              O(e), S(e);
+              O(e), k(e);
             }
             return (
               (e.o[t] === r && (void 0 !== r || t in e.o)) ||
@@ -13940,7 +13983,7 @@
           deleteProperty: function (e, t) {
             return (
               void 0 !== A(e.t, t) || t in e.t
-                ? ((e.R[t] = !1), O(e), S(e))
+                ? ((e.R[t] = !1), O(e), k(e))
                 : delete e.R[t],
               e.o && delete e.o[t],
               !0
@@ -14139,8 +14182,8 @@
             e
           );
         })())(),
-        Q = Y.produce,
-        K =
+        K = Y.produce,
+        Q =
           (Y.produceWithPatches.bind(Y),
           Y.setAutoFreeze.bind(Y),
           Y.setUseProxies.bind(Y),
@@ -14166,4 +14209,4 @@
     },
   },
 ]);
-//# sourceMappingURL=809077.605412c483a4ecb4.js.map
+//# sourceMappingURL=809077.2f5d058a5fd8f86f.js.map

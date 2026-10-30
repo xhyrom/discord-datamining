@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["744124"],
+  ["821406"],
   {
     85526(e, n) {
       "use strict";
@@ -1393,14 +1393,6 @@
         );
       }
       D.create = (e, n) => new T(e, n);
-    },
-    882498(e, n, t) {
-      "use strict";
-      t.d(n, { i: () => r });
-      let a = new URL(t(136089), t.b);
-      function r() {
-        return WebAssembly.compileStreaming(fetch(a));
-      }
     },
     281588(e, n, t) {
       "use strict";
@@ -5210,4 +5202,4 @@
     },
   },
 ]);
-//# sourceMappingURL=744124.598920b53232e19e.js.map
+//# sourceMappingURL=821406.b823344e83ad12ae.js.map

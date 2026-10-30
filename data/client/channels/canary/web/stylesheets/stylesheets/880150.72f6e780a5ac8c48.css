@@ -228,6 +228,7 @@
   color: var(--__current--spoiler-text-color);
   content: "";
   inset: 0;
+  pointer-events: none;
   position: absolute;
 }
 .enable-forced-colors .spoilerMarkdownContent__299eb pre > div:before {
@@ -284,4 +285,4 @@
   z-index: 1;
 }
 
-/*# sourceMappingURL=880150.b93c3b865bd15929.css.map*/
+/*# sourceMappingURL=880150.72f6e780a5ac8c48.css.map*/

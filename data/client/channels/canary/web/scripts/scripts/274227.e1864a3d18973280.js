@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["795854"],
+  ["274227"],
   {
     242695(a, c, e) {
       a.exports = {
@@ -25,14 +25,6 @@
         Ty: "nitroBasic_da8ac7",
         C0: "bundleMiniStaticPreview_da8ac7",
         gw: "purchaseItemImage_da8ac7",
-      };
-    },
-    557226(a, c, e) {
-      a.exports = {
-        bv: "churnDiscountBadge_b65b20",
-        Hf: "churnDiscountAcknowledgedBadge_b65b20",
-        aW: "churnDiscountBadgeIcon_b65b20",
-        jf: "churnDiscountBadgeLabel_b65b20",
       };
     },
     512376(a, c, e) {

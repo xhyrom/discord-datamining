@@ -1,22 +1,3 @@
-.churnDiscountBadge_b65b20 {
-  align-items: center;
-  border-radius: 12px;
-  display: flex;
-  margin-inline-start: auto;
-  padding: 0 6px;
-  pointer-events: all;
-  text-transform: uppercase;
-}
-.churnDiscountAcknowledgedBadge_b65b20 {
-  background-color: var(--background-mod-strong);
-}
-.churnDiscountBadgeIcon_b65b20 {
-  color: var(--icon-subtle);
-  margin-inline-end: 4px;
-}
-.churnDiscountBadgeLabel_b65b20 {
-  text-transform: uppercase;
-}
 .lockup_f14041 {
   display: grid;
   place-items: center;
@@ -157,4 +138,4 @@
   width: 64px;
 }
 
-/*# sourceMappingURL=795854.5307f426a8ab2676.css.map*/
+/*# sourceMappingURL=274227.101620ced192b742.css.map*/

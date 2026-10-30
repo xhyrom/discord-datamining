@@ -25,7 +25,7 @@
       };
     },
     224865(_, e, a) {
-      _.exports = { K: "icon__44598" };
+      _.exports = { K: "icon__44598", J: "acronymCharacter__44598" };
     },
     140645(_, e, a) {
       _.exports = { M1: "stats_c8fdb8", dJ: "stat_c8fdb8", Qq: "text_c8fdb8" };

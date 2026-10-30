@@ -41,26 +41,62 @@
   inset-inline-end: 16px;
   position: absolute;
 }
+@keyframes bodyFadeOut__5be3e {
+  0% {
+    -webkit-mask-size:
+      100% calc(100% - var(--space-16) * 1.5),
+      100% calc(var(--space-16) * 2);
+    mask-size:
+      100% calc(100% - var(--space-16) * 1.5),
+      100% calc(var(--space-16) * 2);
+  }
+  to {
+    -webkit-mask-size:
+      100% 100%,
+      100% 0;
+    mask-size:
+      100% 100%,
+      100% 0;
+  }
+}
 .body__5be3e {
+  animation: bodyFadeOut__5be3e linear both;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    #000 calc(100% - var(--space-16)),
-    transparent
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    #000 calc(100% - var(--space-16)),
-    transparent
-  );
+  -webkit-mask-image: linear-gradient(#000, #000),
+    linear-gradient(#000 50%, transparent);
+  mask-image: linear-gradient(#000, #000),
+    linear-gradient(#000 50%, transparent);
+  -webkit-mask-position: top, bottom;
+  mask-position: top, bottom;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size:
+    100% 100%,
+    100% 0;
+  mask-size:
+    100% 100%,
+    100% 0;
   padding: 4px var(--custom-user-profile-popout-body-padding-inline) 8px;
+  animation-timeline: scroll(self);
+  animation-range: max(0px, calc(100% - var(--space-32))) 100%;
 }
 .has-webkit-scrollbar .body__5be3e {
   padding-inline-end: calc(
     var(--custom-user-profile-popout-body-padding-inline) - var(--space-8)
   );
+}
+@supports not (animation-timeline: scroll()) {
+  .body__5be3e {
+    animation: none;
+    -webkit-mask-size:
+      100% calc(100% - var(--space-16) * 1.5),
+      100% calc(var(--space-16) * 2);
+    mask-size:
+      100% calc(100% - var(--space-16) * 1.5),
+      100% calc(var(--space-16) * 2);
+  }
 }
 .card__5be3e {
   padding: 12px;
@@ -87,4 +123,4 @@
   z-index: var(--custom-user-profile-toast-z-index);
 }
 
-/*# sourceMappingURL=352421.53a7850ecf997a57.css.map*/
+/*# sourceMappingURL=352421.37a3425f850e6b4b.css.map*/
