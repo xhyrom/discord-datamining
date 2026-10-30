@@ -2075,6 +2075,11 @@
   height: 32px;
   width: 32px;
 }
+.conjureAppIcon__5dec7 {
+  --custom-conjure-app-icon-tile-size: 32px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
 .info__5dec7 {
   display: flex;
   flex-direction: column;
@@ -2115,4 +2120,4 @@
   cursor: pointer;
 }
 
-/*# sourceMappingURL=26411.2be3d36a1253a6c4.css.map*/
+/*# sourceMappingURL=26411.09fcf90eeaa7b846.css.map*/

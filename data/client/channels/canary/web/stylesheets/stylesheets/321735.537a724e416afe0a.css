@@ -152,6 +152,33 @@ img.withBackground_b52e4f {
 .theme-dark .premiumTerms__15293 {
   color: var(--primary-200);
 }
+.header__08ce8 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+.gameOrganizationSelectGameSection__08ce8,
+.loader__08ce8 {
+  margin-top: var(--space-48);
+}
+.gameOrganizationLinkableGames__08ce8 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  margin-top: var(--space-12);
+}
+.gameOrganizationLinkableGame__08ce8 {
+  align-items: center;
+  background-color: var(--background-mod-muted);
+  border-radius: var(--radius-lg);
+  display: flex;
+  gap: var(--space-16);
+  padding: var(--space-12);
+}
+.gameOrganizationGameName__08ce8 {
+  flex: 1;
+}
 @value smallMobileBreakpoint: 640px;
 .container_d69818 {
   align-items: center;
@@ -228,4 +255,4 @@ img.withBackground_b52e4f {
   color: var(--text-default);
 }
 
-/*# sourceMappingURL=205035.0f91ff2699d1b7de.css.map*/
+/*# sourceMappingURL=321735.537a724e416afe0a.css.map*/

@@ -632,12 +632,21 @@
   width: 24px;
 }
 .floatingShareButtonContainer_b824c5 {
-  align-items: center;
-  display: flex;
   gap: 8px;
   inset-inline-end: 16px;
-  position: absolute;
   top: 16px;
+}
+.floatingShareButtonContainer_b824c5,
+.topStartOverlay_b824c5 {
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+.topStartOverlay_b824c5 {
+  gap: 4px;
+  inset-inline-start: 8px;
+  pointer-events: none;
+  top: var(--custom-top-start-overlay-top, 8px);
 }
 .overlayContainer_b824c5 {
   align-items: flex-start;
@@ -773,4 +782,4 @@
   }
 }
 
-/*# sourceMappingURL=245420.4448bd478e383c76.css.map*/
+/*# sourceMappingURL=245420.6b5e440ed0061655.css.map*/

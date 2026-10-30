@@ -1,11 +1,11 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["205035"],
+  ["321735"],
   {
-    468251(e, _, i) {
+    468251(e, _, a) {
       e.exports = { Hc: "formTitle__553e7", aO: "finePrint__553e7" };
     },
-    566989(e, _, i) {
+    566989(e, _, a) {
       e.exports = {
         Yi: "splash__15293",
         Gt: "gameIcon__15293",
@@ -16,10 +16,10 @@
         a_: "terms__15293",
       };
     },
-    725064(e, _, i) {
+    725064(e, _, a) {
       e.exports = { z: "error__6e36d" };
     },
-    989533(e, _, i) {
+    989533(e, _, a) {
       e.exports = {
         Gt: "gameIcon_b52e4f",
         VA: "withBackground_b52e4f",
@@ -36,7 +36,17 @@
         qD: "gameIconLoading_b52e4f gameIcon_b52e4f",
       };
     },
-    622625(e, _, i) {
+    820061(e, _, a) {
+      e.exports = {
+        wx: "header__08ce8",
+        j9: "gameOrganizationSelectGameSection__08ce8",
+        wG: "loader__08ce8",
+        Nt: "gameOrganizationLinkableGames__08ce8",
+        Ak: "gameOrganizationLinkableGame__08ce8",
+        hc: "gameOrganizationGameName__08ce8",
+      };
+    },
+    622625(e, _, a) {
       e.exports = {
         n2: "guildBadge_d69818",
         Z2: "appIcon_d69818",

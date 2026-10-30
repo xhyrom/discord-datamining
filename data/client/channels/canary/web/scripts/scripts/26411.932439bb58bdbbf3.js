@@ -57,6 +57,7 @@
         rf: "body__5dec7",
         cm: "gameWrapper__5dec7",
         n8: "gameIcon__5dec7",
+        Ps: "conjureAppIcon__5dec7",
         pq: "info__5dec7",
         _W: "underlineOnHover__5dec7",
         Ix: "channel__5dec7",

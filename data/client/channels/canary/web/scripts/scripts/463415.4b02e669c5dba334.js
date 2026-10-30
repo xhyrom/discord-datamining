@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["586277"],
+  ["463415"],
   {
     990587(e, o, c) {
       e.exports = {
@@ -377,6 +377,9 @@
         oe: "centeredContent__921c5",
       };
     },
+    59123(e, o, c) {
+      e.exports = { V: "tile_dfaa33" };
+    },
     867873(e, o, c) {
       e.exports = { J: "svg__2338f" };
     },
@@ -514,6 +517,7 @@
         pw: "ellipse__03630",
         AO: "botTag__03630",
         my: "avatar__03630",
+        Ps: "conjureAppIcon__03630",
       };
     },
     467793(e, o, c) {

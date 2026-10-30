@@ -194,6 +194,7 @@
   overflow: hidden;
 }
 .activityIcon__49508 {
+  --custom-conjure-app-icon-tile-size: 24px;
   border-radius: var(--radius-xs);
   height: 24px;
   margin-inline-end: 10px;
@@ -219,4 +220,4 @@
   width: 28px;
 }
 
-/*# sourceMappingURL=249727.9ebf9d989dac6a9f.css.map*/
+/*# sourceMappingURL=249727.09b0b023789a0981.css.map*/

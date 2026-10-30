@@ -199,6 +199,7 @@
   width: 16px;
 }
 .appIcon_edbb22 {
+  --custom-conjure-app-icon-tile-size: 20px;
   border-radius: 6px;
   height: 20px;
   width: 20px;
@@ -207,4 +208,4 @@
   border-radius: var(--radius-xs);
 }
 
-/*# sourceMappingURL=569433.3282522b8e46587d.css.map*/
+/*# sourceMappingURL=569433.92f5e595c11bb401.css.map*/
