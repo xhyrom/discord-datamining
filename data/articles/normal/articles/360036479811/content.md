@@ -5,39 +5,50 @@
   anywhere on Discord.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
   <ul>
-    <li>
+    <li data-list-item-id="ea7c6ac34981fbaa30911a7489a6184c6">
       <a href="#h_01K9AQ8Q6Y1SR0BYK2AS7KFJDF">Adding Custom Emoji</a>
       <ul>
-        <li>
+        <li data-list-item-id="e706e9502997530a7625b4149a0999157">
           <a href="#h_01K9AQ4AK84N8SSJDKPQSM8HRW">Through Server Settings</a>
         </li>
-        <li>
+        <li data-list-item-id="e45341192c428794082587bc2b9982d6a">
           <a href="#h_01K9AQ4AK81C2G0AK4QAZW0QR5">Through Emoji Picker</a>
         </li>
       </ul>
     </li>
-    <li><a href="#h_01K9AQ4AK8PBH27Q3YY2K2PQ96">Animated Custom Emojis</a></li>
-    <li><a href="#h_01K9AQ4AK8D4A1TRCBD5DKG5J2">Twitch Sub Emotes</a></li>
-    <li>
+    <li data-list-item-id="ef1accc9aa4e4c93b745ca2c44794e264">
+      <a href="#h_01K9AQ4AK8PBH27Q3YY2K2PQ96">Animated Custom Emojis</a>
+    </li>
+    <li data-list-item-id="ece37a5a469d07dec469823ffe30d7b07">
+      <a href="#h_01K9AQ4AK8D4A1TRCBD5DKG5J2">Twitch Sub Emotes</a>
+    </li>
+    <li data-list-item-id="ee4ef91098cb0b55142c54865d58d6fd6">
       <a href="#h_01K9AQ4AK8EFA3K3NZ75JH1HBJ">Frequently Asked Questions</a>
     </li>
   </ul>
+</div>
+<div class="exp-box">
+  <strong>Important:</strong> <strong>Emoji suggestions</strong> while typing
+  are currently an experiment on mobile and are not available to all users. If
+  you have this feature and want to turn it off, go to
+  <strong>Settings</strong> &gt; <strong>Chat</strong> &gt;
+  <strong>Emoji</strong> and toggle off
+  <strong>Show emoji suggestions as you type</strong>.
 </div>
 <h1 id="h_01K9AQ8Q6Y1SR0BYK2AS7KFJDF">
   <strong>Adding a Custom Emoji</strong>
 </h1>
 <div class="info-box">
-  <strong><span style="color: #434343">Note</span></strong
-  ><span style="color: #434343"
-    >: If you're not the server owner or don't have the </span
-  ><strong><span style="color: #434343">Create Expressions</span></strong
-  ><span style="color: #434343">
-    permission enabled, you won't be able to add emojis to that server.</span
+  <span style="color: #434343"
+    ><strong>Note</strong>: If you're not the server owner or don't have the
+    <strong>Create Expressions</strong> permission enabled, you won't be able to
+    add emojis to that server.</span
   >
 </div>
 <p>
@@ -67,16 +78,18 @@
     height="484"
   />
 </p>
-<h4 id="h_01K9AQ4AK8MG62FEB43E27YGQV" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K9AQ4AK8MG62FEB43E27YGQV">
   <span style="color: #666666">Navigating to Emoji Tab to Upload an Emoji</span>
 </h4>
 <p><strong>Keep in mind: </strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="e4ff857f64180b852e172e6c6de16ed37">
     Emoji names must be at least 2 characters long and can only contain
     alphanumeric characters and underscores
   </li>
-  <li>Emojis must be under 256KB in size</li>
+  <li data-list-item-id="e3d75dfb8660fb64f1535d5e9c0b5bce4">
+    Emojis must be under 256KB in size
+  </li>
 </ul>
 <div class="tip-box">
   <strong>Tip:</strong> Any user who is an active member of a server is able to
@@ -86,11 +99,10 @@
 </div>
 <h2 id="h_01K9AQ4AK81C2G0AK4QAZW0QR5">Through Emoji Picker</h2>
 <div class="exp-box">
-  <strong><span style="color: #434343">Important</span></strong
-  ><span style="color: #434343"
-    >: The Emoji Picker on Discord's desktop app and browser now includes Emoji
-    Studio, a feature that's gradually rolling out to all users. Emoji Studio is
-    not available on mobile.</span
+  <span style="color: #434343"
+    ><strong>Important</strong>: The Emoji Picker on Discord's desktop app and
+    browser now includes Emoji Studio, a feature that's gradually rolling out to
+    all users. Emoji Studio is not available on mobile.</span
   >
 </div>
 <p>
@@ -105,7 +117,7 @@
     height="729"
   />
 </p>
-<h4 id="h_01K9AQ4AK8G8YYDAR1JJV00WRT" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K9AQ4AK8G8YYDAR1JJV00WRT">
   <span style="color: #666666">Add Emoji Button in Emoji Picker</span>
 </h4>
 <p>
@@ -124,7 +136,7 @@
     height="588"
   />
 </p>
-<h4 id="h_01K9AQ4AK85VSSCBPX67MGZP2C" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K9AQ4AK85VSSCBPX67MGZP2C">
   <span style="color: #666666"
     >Example of Customizing an Emoji in Emoji Studio</span
   >
@@ -138,7 +150,7 @@
     height="557"
   />
 </p>
-<h4 id="h_01K9AQ4AK8PX52A6X1WSC72BEH" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K9AQ4AK8PX52A6X1WSC72BEH">
   <span style="color: #666666">Upload Emoji Button</span>
 </h4>
 <h1 id="h_01K9AQ4AK8PBH27Q3YY2K2PQ96">Animated Custom Emojis</h1>
@@ -159,14 +171,13 @@
     height="435"
   />
 </p>
-<h4 id="h_01K9AQ4AK80F1QKJZVPT12NWWF" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01K9AQ4AK80F1QKJZVPT12NWWF">
   <span style="color: #666666">Example of Animated Emoji in Chat</span>
 </h4>
 <div class="info-box">
-  <strong><span style="color: #434343">Note</span></strong
-  ><span style="color: #434343"
-    >: The same naming and sizing requirements listed above apply to the
-    animated custom emojis.</span
+  <span style="color: #434343"
+    ><strong>Note</strong>: The same naming and sizing requirements listed above
+    apply to the animated custom emojis.</span
   >
 </div>
 <h1 id="h_01K9AQ4AK8D4A1TRCBD5DKG5J2">Twitch Sub Emotes</h1>
@@ -176,16 +187,15 @@
   globally! 
 </p>
 <div class="warn-box">
-  <strong><span style="color: #434343">Important: </span></strong
-  ><span style="color: #434343"
-    >Although animated Twitch emotes will sync into your server, they will be
-    static-only. If you would like to add animated Twitch emotes to your server,
-    you will have to upload them manually. </span
+  <span style="color: #434343"
+    ><strong>Important: </strong>Although animated Twitch emotes will sync into
+    your server, they will be static-only. If you would like to add animated
+    Twitch emotes to your server, you will have to upload them manually. </span
   >
 </div>
 <p>For this to work, you'll need to:</p>
 <ul>
-  <li>
+  <li data-list-item-id="ec476b293b25b415cc417befb4f1a3150">
     <a
       href="https://support.discord.com/hc/en-us/articles/212112068"
       target="_blank"
@@ -193,8 +203,12 @@
       >Sync your Twitch account with Discord</a
     >
   </li>
-  <li>Make sure you're currently subscribed to their channel</li>
-  <li>Join the streamer's sub-enabled server</li>
+  <li data-list-item-id="e9658079767ef22ca42f2a436ff16492d">
+    Make sure you're currently subscribed to their channel
+  </li>
+  <li data-list-item-id="ee71dce357759afb1ced84f4587f2a39e">
+    Join the streamer's sub-enabled server
+  </li>
 </ul>
 <div class="info-box">
   <span style="color: #434343"
