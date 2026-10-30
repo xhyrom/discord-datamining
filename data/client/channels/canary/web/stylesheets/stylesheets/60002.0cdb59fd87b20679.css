@@ -22,5 +22,16 @@
 .tabular__6b453 {
   font-variant-numeric: tabular-nums;
 }
+.icon__1bb46 {
+}
+.iconWrapper__1bb46 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.name__1bb46 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-/*# sourceMappingURL=529787.d6785e5d36bb3605.css.map*/
+/*# sourceMappingURL=60002.0cdb59fd87b20679.css.map*/
