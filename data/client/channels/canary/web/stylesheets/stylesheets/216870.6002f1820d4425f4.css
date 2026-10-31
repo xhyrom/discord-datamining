@@ -57,7 +57,7 @@
   inset-inline-end: 0;
   inset-inline-start: 0;
   position: absolute;
-  top: 50%;
+  top: calc(50% + var(--custom-timeline-hitbox-offset, 0px));
   transform: translateY(-50%);
 }
 .progress__68788 {
@@ -113,9 +113,9 @@
 .playhead__68788 {
   background-color: var(--white);
   border-radius: 50%;
-  height: 12px;
+  height: var(--custom-playhead-size, 12px);
   transform: translateX(-50%);
-  width: 12px;
+  width: var(--custom-playhead-size, 12px);
 }
 .segmentContainer__68788 {
   background-color: var(
@@ -153,4 +153,4 @@
   top: 0;
 }
 
-/*# sourceMappingURL=216870.4aa3f52299ec3640.css.map*/
+/*# sourceMappingURL=216870.6002f1820d4425f4.css.map*/

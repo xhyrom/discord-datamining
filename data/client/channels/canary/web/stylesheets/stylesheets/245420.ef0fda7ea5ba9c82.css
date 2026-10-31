@@ -213,7 +213,7 @@
 }
 .videoControlsGroupMid_b824c5 {
   flex: 1;
-  gap: 8px;
+  gap: var(--custom-controls-mid-gap, 8px);
   margin-inline-start: var(--custom-controls-gap, 16px);
 }
 .videoControlsGroupEnd_b824c5 {
@@ -250,6 +250,10 @@
 .volumeControlGroup_b824c5 {
   display: flex;
 }
+.volumeControlGroupInline_b824c5 {
+  flex-shrink: var(--custom-volume-flex-shrink, 1);
+  margin-inline-end: var(--custom-volume-group-margin-end, 0);
+}
 .controlsBarItem_b824c5 {
   color: var(--interactive-text-active);
   opacity: 0.6;
@@ -285,7 +289,7 @@
   cursor: pointer;
   flex: 0 0 auto;
   height: 18px;
-  margin-inline-start: 3px;
+  margin-inline-start: var(--custom-duration-margin, 3px);
 }
 .durationTimeDisplay_b824c5,
 .durationTimeSeparator_b824c5 {
@@ -308,7 +312,9 @@
   align-items: center;
   cursor: pointer;
   display: flex;
-  margin-inline-start: 6px;
+  flex-shrink: var(--custom-volume-flex-shrink, 1);
+  margin-inline-start: var(--custom-volume-slider-margin-start, 6px);
+  padding-inline: var(--custom-volume-slider-padding-inline, 0);
 }
 .controlBarPopoutSurface_b824c5 {
   background-color: var(--background-surface-high);
@@ -782,4 +788,4 @@
   }
 }
 
-/*# sourceMappingURL=245420.6b5e440ed0061655.css.map*/
+/*# sourceMappingURL=245420.ef0fda7ea5ba9c82.css.map*/

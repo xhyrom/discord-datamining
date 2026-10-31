@@ -34,6 +34,7 @@
         Wr: "videoControlsBtn_b824c5",
         Iy: "videoControlsBtnContDisabled_b824c5",
         RD: "volumeControlGroup_b824c5",
+        u3: "volumeControlGroupInline_b824c5",
         jk: "controlsBarItem_b824c5",
         x2: "controlsBarItemActive_b824c5",
         bT: "controlBtnIconWithOverlay_b824c5",
