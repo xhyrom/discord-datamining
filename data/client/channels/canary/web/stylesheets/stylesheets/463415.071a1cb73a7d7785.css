@@ -1814,9 +1814,8 @@
   border: 1px solid var(--border-subtle);
 }
 .conjureAppIcon__03630 {
-  --custom-conjure-app-icon-tile-size: 64px;
+  --custom-conjure-app-icon-tile-size: 80px;
   border-radius: calc(var(--custom-conjure-app-icon-tile-size) / 4);
-  box-sizing: border-box;
   height: var(--custom-conjure-app-icon-tile-size);
   width: var(--custom-conjure-app-icon-tile-size);
 }
@@ -5162,4 +5161,4 @@ svg.radioIcon_c1e9c4 {
   top: 29px;
 }
 
-/*# sourceMappingURL=463415.b77836623de2473b.css.map*/
+/*# sourceMappingURL=463415.071a1cb73a7d7785.css.map*/
