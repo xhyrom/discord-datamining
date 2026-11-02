@@ -55,9 +55,9 @@
   </li>
 </ul>
 <p>
-  These filters currently can detect sensitive content in image and video-based
-  media. No automated system is perfect, and some content that you consider
-  sexually explicit or graphic in nature may not be caught by the filters.
+  These filters currently can detect sensitive content in image-based media. No
+  automated system is perfect, and some content that you consider sexually
+  explicit or graphic in nature may not be caught by the filters.
 </p>
 <p>
   You can report media that you think should have been blocked by selecting
@@ -348,9 +348,9 @@
 </ul>
 <p><strong>Q: Can teens turn off the filters completely?</strong> </p>
 <p>
-  A: No. Sensitive content is filtered by default. Images and videos flagged by
-  Discord's content filters are blurred or blocked for teens depending on where
-  they appear:
+  A: No. Sensitive content is filtered by default. Images flagged by Discord's
+  content filters are blurred or blocked for teens depending on where they
+  appear:
 </p>
 <ul>
   <li data-list-item-id="ee55f637ee6c58b8c30b18170f1f5d977">
@@ -364,8 +364,8 @@
   </li>
 </ul>
 <p>
-  These filters apply only to images and videos. They do not scan text messages,
-  voice, or calls. Viewing blurred content, or changing these settings to
+  These filters apply only to images. They do not scan text messages, voice, or
+  calls. Viewing blurred content, or changing these settings to
   "<strong>Show</strong>," requires confirming you're an adult.
 </p>
 <p>
