@@ -259,6 +259,15 @@
 .executedCommand_c19a55 .repliedMessage_c19a55 .username_c19a55 {
   margin-inline-end: 4px;
 }
+.repliedMessage_c19a55 .username_c19a55[data-username-has-gradient] {
+  min-width: 0;
+  overflow: clip;
+  overflow-clip-margin: var(--space-8);
+}
+.repliedMessage_c19a55 .username_c19a55[data-username-has-gradient]:after {
+  overflow: hidden;
+  text-overflow: inherit;
+}
 .executedCommandSeparator_c19a55 {
   flex-shrink: 0;
   margin-inline-end: 2px;
@@ -862,4 +871,4 @@
   forced-color-adjust: none;
 }
 
-/*# sourceMappingURL=738015.5eb905013e1dd7a5.css.map*/
+/*# sourceMappingURL=738015.947312a1518cf4b6.css.map*/

@@ -334,7 +334,7 @@
 .filled__4064a {
   background-color: var(--custom-checkpoint-primary);
   border-color: var(--black);
-  color: var(--black);
+  color: var(--text-overlay-dark);
 }
 .label__4064a {
   font-size: 18px;
@@ -388,4 +388,4 @@
   gap: var(--space-32);
 }
 
-/*# sourceMappingURL=691548.6a925a3bae604b0b.css.map*/
+/*# sourceMappingURL=691548.d678c1ae9230d2f0.css.map*/

@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["497662"],
+  ["645450"],
   {
     838259(e, t, r) {
       "use strict";
@@ -10557,8 +10557,8 @@
             G = parseInt(B.borderBottomWidth, 10),
             X = 0,
             z = 0,
-            q = "offsetWidth" in S ? S.offsetWidth - S.clientWidth - N - H : 0,
-            Y =
+            Y = "offsetWidth" in S ? S.offsetWidth - S.clientWidth - N - H : 0,
+            q =
               "offsetHeight" in S ? S.offsetHeight - S.clientHeight - W - G : 0,
             K =
               "offsetWidth" in S
@@ -10596,31 +10596,31 @@
               "start" === a
                 ? R - D - W
                 : "end" === a
-                  ? R - F + G + Y
+                  ? R - F + G + q
                   : "nearest" === a
-                    ? s(D, F, U, W, G + Y, R, R + V, V)
-                    : R - (D + U / 2) + Y / 2),
+                    ? s(D, F, U, W, G + q, R, R + V, V)
+                    : R - (D + U / 2) + q / 2),
               (z =
                 "start" === u
                   ? P - j - N
                   : "center" === u
-                    ? P - (j + C / 2) + q / 2
+                    ? P - (j + C / 2) + Y / 2
                     : "end" === u
-                      ? P - M + H + q
-                      : s(j, M, C, N, H + q, P, P + x, x));
+                      ? P - M + H + Y
+                      : s(j, M, C, N, H + Y, P, P + x, x));
             var Z = S.scrollLeft,
               J = S.scrollTop;
             (R +=
               J -
               (X = Math.max(
                 0,
-                Math.min(J + X / Q, S.scrollHeight - U / Q + Y),
+                Math.min(J + X / Q, S.scrollHeight - U / Q + q),
               ))),
               (P +=
                 Z -
                 (z = Math.max(
                   0,
-                  Math.min(Z + z / K, S.scrollWidth - C / K + q),
+                  Math.min(Z + z / K, S.scrollWidth - C / K + Y),
                 )));
           }
           O.push({ el: S, top: X, left: z });
@@ -12801,38 +12801,10 @@
         ALL: 0x7fffffff,
       });
     },
-    917310(e, t, r) {
+    724290(e, t, r) {
       "use strict";
       let i;
-      r.d(t, {
-        qg: () => f,
-        IS: () => p,
-        Ts: () => l,
-        tJ: () =>
-          function* e(t) {
-            for (let r of t)
-              switch ((yield r, r.type)) {
-                case "paragraph":
-                case "strikethrough":
-                case "underline":
-                case "italic":
-                case "bold":
-                case "quote":
-                  yield* e(r.value);
-                  break;
-                case "spoiler":
-                case "heading":
-                case "small":
-                  yield* e(r.value.content);
-                  break;
-                case "list":
-                  for (let t of r.value.items) yield* e(t.content);
-                  break;
-                case "link":
-                  r.text && (yield* e(r.text));
-              }
-          },
-      });
+      r.d(t, { qg: () => f, Ts: () => l, IS: () => p });
       var n = r(882498),
         o = r(451076),
         s = r(971673);
@@ -13358,7 +13330,7 @@
                       C: !1,
                     }),
                   (s = z),
-                  i && ((o = [n]), (s = q)),
+                  i && ((o = [n]), (s = Y)),
                   (u = (a = Proxy.revocable(o, s)).revoke),
                   (n.k = c = a.proxy),
                   (n.j = u),
@@ -13491,19 +13463,19 @@
             i(12);
           },
         },
-        q = {};
+        Y = {};
       s(z, function (e, t) {
-        q[e] = function () {
+        Y[e] = function () {
           return (arguments[0] = arguments[0][0]), t.apply(this, arguments);
         };
       }),
-        (q.deleteProperty = function (e, t) {
-          return q.set.call(this, e, t, void 0);
+        (Y.deleteProperty = function (e, t) {
+          return Y.set.call(this, e, t, void 0);
         }),
-        (q.set = function (e, t, r) {
+        (Y.set = function (e, t, r) {
           return z.set.call(this, e[0], t, r, e[0]);
         });
-      var Y = new ((function () {
+      var q = new ((function () {
           function e(e) {
             var t = this;
             (this.O = F),
@@ -13662,14 +13634,14 @@
             e
           );
         })())(),
-        K = Y.produce,
+        K = q.produce,
         Q =
-          (Y.produceWithPatches.bind(Y),
-          Y.setAutoFreeze.bind(Y),
-          Y.setUseProxies.bind(Y),
-          Y.applyPatches.bind(Y),
-          Y.createDraft.bind(Y)),
-        Z = Y.finishDraft.bind(Y);
+          (q.produceWithPatches.bind(q),
+          q.setAutoFreeze.bind(q),
+          q.setUseProxies.bind(q),
+          q.applyPatches.bind(q),
+          q.createDraft.bind(q)),
+        Z = q.finishDraft.bind(q);
     },
     694260(e, t, r) {
       "use strict";
@@ -13689,4 +13661,4 @@
     },
   },
 ]);
-//# sourceMappingURL=497662.dcc5abbaf8987718.js.map
+//# sourceMappingURL=645450.7c317117720d1f25.js.map

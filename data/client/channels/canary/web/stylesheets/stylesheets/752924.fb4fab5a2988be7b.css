@@ -147,30 +147,6 @@
   vertical-align: top;
   width: calc(1rem + 4px);
 }
-.badge__77c65 {
-  align-items: baseline;
-  color: var(--chat-text-muted);
-  cursor: pointer;
-  display: inline-flex;
-  gap: 2px;
-  text-indent: 0;
-  vertical-align: baseline;
-}
-.badge__77c65:focus-visible .label__77c65,
-.badge__77c65:hover .label__77c65 {
-  text-decoration: underline;
-}
-.icon__77c65 {
-  align-self: center;
-}
-.separator__77c65 {
-  color: var(--chat-text-muted);
-  margin-inline: var(--space-4);
-  text-indent: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
 .badge__6ba43 {
   color: var(--interactive-text-default);
   cursor: pointer;
@@ -186,4 +162,4 @@
   width: 1rem;
 }
 
-/*# sourceMappingURL=487834.9af77ec680d89ebb.css.map*/
+/*# sourceMappingURL=752924.fb4fab5a2988be7b.css.map*/
