@@ -1,0 +1,10 @@
+{
+  "id": "modernizing-the-video-playback-experience-at-discord",
+  "title": "Modernizing the Video Playback Experience at Discord",
+  "link": "https://discord.com/blog/modernizing-the-video-playback-experience-at-discord",
+  "guid": "https://discord.com/blog/modernizing-the-video-playback-experience-at-discord",
+  "description": "This is the story of how we assessed and refactored two video players into one, cut the player code each product maintained by up to 94%, and swapped to the new player without disruption to any users.",
+  "pubDate": "Mon, 02 Nov 2026 00:00:00 GMT",
+  "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67f4343d3897ce1dca91d04e_2024_10_DiscordBlog_Educational-2.png",
+  "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67f4343d3897ce1dca91d04e_2024_10_DiscordBlog_Educational-2.png"
+}
