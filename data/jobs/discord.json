@@ -62,66 +62,6 @@
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8917177002/ai_opt_out"
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8840756002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6539280002,
-      "location": {
-        "name": "San Francisco Bay Area"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8840756002,
-      "updated_at": "2026-10-20T20:14:41-04:00",
-      "requisition_id": "R-107434",
-      "title": "Data Scientist - Client Platform",
-      "company_name": "Discord",
-      "first_published": "2026-09-24T17:26:49-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is where millions of people hang out every day - 90% of them play games, spending over 5 billion hours across thousands of titles each month. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;\n&lt;p&gt;We’re looking for a Data Scientist to join our Client Platform Data Science team, where you’ll help make sure that Discord just works. You’ll partner with the teams that design, build, and support Discord - improving app performance, enhancing the user experience, and driving growth. Your work will span strategic analyses, experimentation, and dashboarding. Specifically, we’re looking for someone who can help us take Discord’s mobile and desktop reliability to the next level through better metrics, monitoring, and automation.&lt;/p&gt;\n&lt;p&gt;If you’re passionate about data and want to make a real impact, we’d love to hear from you!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Partner with teams throughout Discord through the full analytics lifecycle - from exploratory analyses to dashboards, reports, and A/B testing&lt;/li&gt;\n&lt;li&gt;Define KPIs and diagnostic metrics that improve the user experience, and build dashboards to make them timely and actionable&lt;/li&gt;\n&lt;li&gt;Build custom datasets to monitor novel product features and processes&lt;/li&gt;\n&lt;li&gt;Share insights with technical and non-technical audiences, and iterate based on feedback&lt;/li&gt;\n&lt;li&gt;Champion A/B testing best practices - helping teams design, analyze, and interpret experiments correctly&lt;/li&gt;\n&lt;li&gt;Collaborate with data and engineering teams to design scalable and future-proof instrumentation and self-serve tooling&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;2+ years of hands-on analytics experience turning ambiguous business problems into clear, actionable insights&lt;/li&gt;\n&lt;li&gt;Experience designing, analyzing, and interpreting A/B tests at scale&lt;/li&gt;\n&lt;li&gt;Strong SQL skills and experience building clean, performant dashboards (Tableau, Looker, or similar)&lt;/li&gt;\n&lt;li&gt;Clear communication skills, with the ability to make complex findings easy to understand&lt;/li&gt;\n&lt;li&gt;Curiosity, a collaborative attitude, and a drive to solve hard problems&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Passion for Discord or online communities&lt;/li&gt;\n&lt;li&gt;Experience with performance/reliability analytics for online services&lt;/li&gt;\n&lt;li&gt;Familiarity with social or subscription products (social graphs, LTV, funnel analysis)&lt;/li&gt;\n&lt;li&gt;Production ETL or BigQuery experience&lt;/li&gt;\n&lt;li&gt;Experience using AI in data science work&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-pay-transparency&quot;&gt;&lt;div class=&quot;pay-input&quot;&gt;&lt;div class=&quot;description&quot;&gt;&lt;p&gt;&lt;em&gt;The base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Benefits include medical, dental, and vision insurance; a 401(k) plan; life and disability insurance; paid time off; and paid parental leave. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits. Applications for this role are accepted on an ongoing basis.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;title&quot;&gt;Base Salary&lt;/div&gt;&lt;div class=&quot;pay-range&quot;&gt;&lt;span&gt;$160,000&lt;/span&gt;&lt;span class=&quot;divider&quot;&gt;&amp;mdash;&lt;/span&gt;&lt;span&gt;$200,000 USD&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4022531002,
-          "name": "Data Science & Engineering",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ],
-      "ai_disclaimer": null,
-      "include_ai_disclaimer": false,
-      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8840756002/ai_opt_out"
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8722538002",
       "data_compliance": [
         {
@@ -181,67 +121,6 @@
       "ai_disclaimer": null,
       "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8722538002/ai_opt_out"
-    },
-    {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8885940002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "education": "education_optional",
-      "internal_job_id": 6558699002,
-      "location": {
-        "name": "Remote (U.S.)"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8885940002,
-      "updated_at": "2026-10-20T19:56:15-04:00",
-      "requisition_id": "R-107460",
-      "title": "Engineering Manager, Notifications",
-      "company_name": "Discord",
-      "first_published": "2026-10-13T17:34:29-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We&#39;re looking for a technical, hands-on, and infrastructure-minded Engineering Manager to lead our Notifications team within the Growth organization. Notifications is a full-stack team owning the platform and infrastructure that powers every notification Discord sends, the orchestration layer that optimizes notifications globally across types, the in-app notifications center, and the user-facing settings and client experience. You will lead a team of full-stack engineers operating business-critical systems that fan out to hundreds of millions of users while shipping the re-engagement surfaces that bring them back.&lt;/p&gt;\n&lt;p&gt;This role reports to the Senior Engineering Manager of Growth.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead a team of full-stack engineers building and operating the notifications platform — Elixir services, Python backends, pubsub pipelines, and the Kubernetes infrastructure underneath them&lt;/li&gt;\n&lt;li&gt;Set technical direction for notifications infrastructure and ensure systems scale reliably as volume and complexity grow&lt;/li&gt;\n&lt;li&gt;Partner with Product, Design, Data Science, and Marketing to define and execute the notifications roadmap&lt;/li&gt;\n&lt;li&gt;Use experimentation and metrics to drive continuous improvement in notification engagement, retention, and long-term user trust&lt;/li&gt;\n&lt;li&gt;Build a high-performing team through hiring, coaching, and instilling engineering best practices&lt;/li&gt;\n&lt;li&gt;Partner with platform consumers across Discord to evolve the primitives other teams depend on to reach our users&lt;/li&gt;\n&lt;li&gt;Partner with engineering leadership on strategic planning and organizational improvement&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;5+ years of experience as a Software Engineer, with significant time building and operating backend or infrastructure systems at scale&lt;/li&gt;\n&lt;li&gt;2+ years of experience as an Engineering Manager&lt;/li&gt;\n&lt;li&gt;Comfort owning production systems built on technologies like Elixir, Python, pubsub/streaming pipelines, and Kubernetes, with strong intuition for reliability, throughput, and cost at scale&lt;/li&gt;\n&lt;li&gt;Experience collaborating closely with product managers, designers, data scientists, and other engineers to define and ship solutions&lt;/li&gt;\n&lt;li&gt;A track record of growing engineers and helping team members succeed&lt;/li&gt;\n&lt;li&gt;Strong ownership mindset — you stay close to the technical decisions your team makes and can discuss them in depth with anyone at Discord&lt;/li&gt;\n&lt;li&gt;Ability to drive a culture of 80/20 thinking, fast iteration, and high-quality delivery&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience leading teams that own shared platforms or primitives consumed by other engineering teams&lt;/li&gt;\n&lt;li&gt;Experience shipping push notifications or other re-engagement systems at consumer scale, including familiarity with deliverability, throttling, and policy considerations&lt;/li&gt;\n&lt;li&gt;Full-stack experience across both frontend and backend development&lt;/li&gt;\n&lt;li&gt;Strong track record of driving measurable impact through experimentation and data-driven decision making&lt;/li&gt;\n&lt;li&gt;Demonstrated success driving engagement and long-term retention through messaging or re-engagement surfaces&lt;/li&gt;\n&lt;li&gt;You understand the gaming industry&lt;/li&gt;\n&lt;li&gt;You&#39;re a Discord user and understand the core features and flow of Discord communications&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-pay-transparency&quot;&gt;&lt;div class=&quot;pay-input&quot;&gt;&lt;div class=&quot;description&quot;&gt;&lt;p&gt;&lt;em&gt;The base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Benefits include medical, dental, and vision insurance; a 401(k) plan; life and disability insurance; paid time off; and paid parental leave. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits. Applications for this role are accepted on an ongoing basis.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;title&quot;&gt;Base Salary&lt;/div&gt;&lt;div class=&quot;pay-range&quot;&gt;&lt;span&gt;$248,000&lt;/span&gt;&lt;span class=&quot;divider&quot;&gt;&amp;mdash;&lt;/span&gt;&lt;span&gt;$310,000 USD&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4074054002,
-          "name": "Product Engineering",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (US)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        }
-      ],
-      "ai_disclaimer": null,
-      "include_ai_disclaimer": false,
-      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8885940002/ai_opt_out"
     },
     {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8649856002",
@@ -669,66 +548,6 @@
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8703614002/ai_opt_out"
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8485884002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6389572002,
-      "location": {
-        "name": "San Francisco Bay Area"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8485884002,
-      "updated_at": "2026-10-20T20:11:23-04:00",
-      "requisition_id": "R-107235",
-      "title": "Senior Data Engineer",
-      "company_name": "Discord",
-      "first_published": "2026-05-14T12:00:25-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;This position is US based only.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Discord is looking for Senior Data Engineers to join our world class Data team. Data Engineers at Discord work with data science, machine learning, and engineering teams to build the foundational datasets behind our tools, analyses, and models. The data you build directly shapes how we find opportunities, measure success, and make product and business decisions. We are hiring for multiple verticals including Gaming Intelligence and GRC. If this sounds exciting to you and you’re passionate about data, impact, and working on an amazing team, read on!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you will be doing&lt;/strong&gt;:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Own the data models and pipelines for a functional area end to end, from design through implementation and adoption&lt;/li&gt;\n&lt;li&gt;Build and maintain foundational datasets that power analytics, modeling, experimentation, and the dashboards and reports teams rely on&lt;/li&gt;\n&lt;li&gt;Design data architectures for massive, complex data, balancing usability, performance, and cost&lt;/li&gt;\n&lt;li&gt;Partner with data science, ML, and engineering teams to improve the coverage, accuracy, and reliability of instrumentation&lt;/li&gt;\n&lt;li&gt;Build data quality audits at scale, with alerting and anomaly detection where needed&lt;/li&gt;\n&lt;li&gt;Find and act on opportunities to improve pipeline and dashboard performance and cost&lt;/li&gt;\n&lt;li&gt;Drive adoption of your work through documentation and enablement, and share what you learn with teammates&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4+ years of experience building and operating production data pipelines with high volumes of consumer data&lt;/li&gt;\n&lt;li&gt;Strong data modeling skills across structured and unstructured sources&lt;/li&gt;\n&lt;li&gt;Proficiency in SQL and Python, with a focus on correct, performant, maintainable code&lt;/li&gt;\n&lt;li&gt;Experience implementing and monitoring data quality checks on very large datasets (e.g. billions of rows)&lt;/li&gt;\n&lt;li&gt;A track record of owning complex projects end to end: breaking them into phases and balancing speed, usability, and risk&lt;/li&gt;\n&lt;li&gt;Clear communication and stakeholder management skills, and comfort working on problems that are ambiguous and change quickly&lt;/li&gt;\n&lt;li&gt;A collaborative approach and natural curiosity&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Passion for Discord or online communities&lt;/li&gt;\n&lt;li&gt;Experience with BigQuery, Airflow, and dbt, or similar tools&lt;/li&gt;\n&lt;li&gt;Experience with Looker, Tableau, or similar dashboarding tools&lt;/li&gt;\n&lt;li&gt;Experience designing data architecture for experimentation, creating frameworks that scale instead of one-off solutions&lt;/li&gt;\n&lt;li&gt;Experience mentoring other engineers or setting data engineering standards for a team&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-pay-transparency&quot;&gt;&lt;div class=&quot;pay-input&quot;&gt;&lt;div class=&quot;description&quot;&gt;&lt;p&gt;&lt;em&gt;The base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Benefits include medical, dental, and vision insurance; a 401(k) plan; life and disability insurance; paid time off; and paid parental leave. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits. Applications for this role are accepted on an ongoing basis.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;title&quot;&gt;Base Salary&lt;/div&gt;&lt;div class=&quot;pay-range&quot;&gt;&lt;span&gt;$196,000&lt;/span&gt;&lt;span class=&quot;divider&quot;&gt;&amp;mdash;&lt;/span&gt;&lt;span&gt;$245,000 USD&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4022531002,
-          "name": "Data Science & Engineering",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ],
-      "ai_disclaimer": null,
-      "include_ai_disclaimer": false,
-      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8485884002/ai_opt_out"
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8299493002",
       "data_compliance": [
         {
@@ -787,66 +606,6 @@
       "ai_disclaimer": null,
       "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8299493002/ai_opt_out"
-    },
-    {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8821508002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6530596002,
-      "location": {
-        "name": "San Francisco Bay Area"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8821508002,
-      "updated_at": "2026-10-20T20:20:06-04:00",
-      "requisition_id": "R-107423",
-      "title": "Senior Data Science Manager, Developer Platform",
-      "company_name": "Discord",
-      "first_published": "2026-09-25T19:12:29-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is where the world&#39;s gamers hang out, and increasingly, it&#39;s the platform game developers build on. We&#39;re seeking a Senior Data Science Manager to lead Data Science for our Developer Platform: the SDKs, identity systems, and developer tools that connect games and their players to Discord.&lt;/p&gt;\n&lt;p&gt;What makes this role distinctive is the two-sided value equation at the heart of the platform. For game developers, we build tools that help studios grow player engagement and revenue, including data products that give them deeper insight into their players and communities. For players, we use signals from those same tools to make it easier to play and hang out with friends, deepen engagement across Discord, and deliver more relevant ads.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Your team&#39;s job is to make both sides of that exchange demonstrably valuable. That means proving the platform&#39;s worth to developers with rigorous evidence, and ensuring the signals it generates create outsized, responsible value for Discord users.&lt;/p&gt;\n&lt;p&gt;If helping make Discord an even better place to hang out with your friends and communities sounds like an exciting challenge - we&#39;d love to chat with you!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Manage, mentor, and develop a mission-driven team of Data Scientists embedded across the Developer Platform&#39;s core areas: identity, signals, and developer tools.&lt;/li&gt;\n&lt;li&gt;Own the vision and roadmap for data-driven decision-making across the Developer Platform org, and shape company strategy on how the platform creates value for both developers and Discord.&lt;/li&gt;\n&lt;li&gt;Strengthen the developer side of the value equation by shaping developer-facing data products, including metric definitions, benchmarking methodologies, and insight quality.&lt;/li&gt;\n&lt;li&gt;Strengthen the Discord side of the value equation by partnering with Ads, Engagement, and Growth to identify, validate, and productize platform-derived signals, and by measuring their incremental value through experimentation.&lt;/li&gt;\n&lt;li&gt;Drive platform adoption by partnering with Product, Engineering, and Business Development to measure integration health, forecast growth, and surface insights that help the org land and deepen integrations with the world&#39;s largest game developers.&lt;/li&gt;\n&lt;li&gt;Serve as a trusted analytical partner to top game developers, designing joint studies with partner data science teams to uncover business value from the developer tech stack.&lt;/li&gt;\n&lt;li&gt;Partner with Data Engineering, Product, and Legal on data governance: ensure platform signals are documented, discoverable, and governed well across Discord.&lt;/li&gt;\n&lt;li&gt;Set clear priorities and nimble operating models, and build a team known for rigorous methods and decision-ready work. Partner with other Data leaders to shape the direction and culture of Discord&#39;s Data organization..&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;8+ years of experience in applied data science and advanced analytics, ideally including both consumer product and B2B or platform contexts.&lt;/li&gt;\n&lt;li&gt;3+ years managing and developing teams of Data Scientists, with a track record of growing ICs and raising the team&#39;s technical bar.&lt;/li&gt;\n&lt;li&gt;Strong expertise in experimentation and causal inference, including quasi-experimental methods (propensity matching, synthetic controls, diff-in-diff) for settings where randomized experiments aren&#39;t feasible.&lt;/li&gt;\n&lt;li&gt;Experience designing novel, interpretable metrics for a new or fast-evolving product area, and building the measurement systems around them.&lt;/li&gt;\n&lt;li&gt;Proficiency in SQL and at least one data programming language (Python or R).&lt;/li&gt;\n&lt;li&gt;Clear communication and influence. You can translate complex technical work into crisp narratives for executives, engineers, and external partners, and use data to shape strategy and roadmaps alongside Product and Engineering leadership.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience with gaming, game platforms, or developer-facing (B2B2C) products, especially working directly with external partners&#39; data or analytics teams.&lt;/li&gt;\n&lt;li&gt;Experience building or shaping customer-facing data products such as analytics dashboards, benchmarking tools, or measurement offerings.&lt;/li&gt;\n&lt;li&gt;Familiarity with advertising signal ecosystems (event pipelines, identity resolution, targeting and measurement, lookalike modeling) and with ML applications for signal enrichment, forecasting, or personalization.&lt;/li&gt;\n&lt;li&gt;Experience with cloud data platforms like BigQuery, very large datasets, and modern BI tools (e.g., Hex, Mode, Looker, Tableau).&lt;/li&gt;\n&lt;li&gt;Understanding of data governance, privacy, and responsible data use, particularly for signals shared across product and revenue systems.&lt;/li&gt;\n&lt;li&gt;Interest in Discord, gaming, and the communities we serve.&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-pay-transparency&quot;&gt;&lt;div class=&quot;pay-input&quot;&gt;&lt;div class=&quot;description&quot;&gt;&lt;p&gt;&lt;em&gt;The base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Benefits include medical, dental, and vision insurance; a 401(k) plan; life and disability insurance; paid time off; and paid parental leave. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits. Applications for this role are accepted on an ongoing basis.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;title&quot;&gt;Base Salary&lt;/div&gt;&lt;div class=&quot;pay-range&quot;&gt;&lt;span&gt;$304,000&lt;/span&gt;&lt;span class=&quot;divider&quot;&gt;&amp;mdash;&lt;/span&gt;&lt;span&gt;$380,000 USD&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4022531002,
-          "name": "Data Science & Engineering",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ],
-      "ai_disclaimer": null,
-      "include_ai_disclaimer": false,
-      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8821508002/ai_opt_out"
     },
     {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8659978002",
@@ -1029,66 +788,6 @@
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8856467002/ai_opt_out"
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8642085002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6451385002,
-      "location": {
-        "name": "San Francisco Bay Area"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8642085002,
-      "updated_at": "2026-10-21T14:47:30-04:00",
-      "requisition_id": "R-107348",
-      "title": "Senior Full-Stack Software Engineer, Growth ",
-      "company_name": "Discord",
-      "first_published": "2026-07-21T18:52:49-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We&#39;re looking for a Senior Software Engineer to join the Growth team at Discord. Our team owns how new users discover, understand, and get started with Discord — from the first moment someone encounters us on the web through the onboarding experience that turns them into engaged members. You&#39;ll work across the stack to build the systems that acquire and activate users at scale, whether that means improving how Discord shows up across the web or designing the in-product experiences that help new users find their footing. This is a high-impact role where you&#39;ll directly influence how Discord grows. This person will report to the Senior Engineering Manager for Growth.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Build and optimize user-facing experiences that improve how people discover, understand, and get started with Discord&lt;/li&gt;\n&lt;li&gt;Develop scalable backend systems that serve dynamic, high-performance content at scale&lt;/li&gt;\n&lt;li&gt;Work across the full stack — frontend (TypeScript, React) and backend (Python) — wherever the problem leads&lt;/li&gt;\n&lt;li&gt;Design and run A/B experiments to measure the impact of your work on user acquisition and activation&lt;/li&gt;\n&lt;li&gt;Partner with Product, Design, and Data Science to identify high-impact growth opportunities and iterate quickly&lt;/li&gt;\n&lt;li&gt;Maintain performance and reliability standards for user-facing properties&lt;/li&gt;\n&lt;li&gt;Write code that&#39;s readable, reviewable, and built with the next engineer in mind&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;At least 5 years of professional software engineering experience&lt;/li&gt;\n&lt;li&gt;Strong expertise in TypeScript and React with a track record of delivering high-performance frontend experiences&lt;/li&gt;\n&lt;li&gt;Practical experience with Python and backend frameworks such as Flask&lt;/li&gt;\n&lt;li&gt;Experience designing and running A/B tests with a focus on data-driven decision making&lt;/li&gt;\n&lt;li&gt;Comfort working across the full stack and taking ownership of projects end to end&lt;/li&gt;\n&lt;li&gt;A habit of asking why before asking how — and the judgment to know when good enough ships and when it doesn&#39;t&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Prior experience on growth-focused engineering teams working on activation, onboarding, or acquisition&lt;/li&gt;\n&lt;li&gt;Experience building SEO infrastructure, or interest in how LLMs and search engines index and surface web content&lt;/li&gt;\n&lt;li&gt;Mobile development experience&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-pay-transparency&quot;&gt;&lt;div class=&quot;pay-input&quot;&gt;&lt;div class=&quot;description&quot;&gt;&lt;p&gt;&lt;em&gt;The base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Benefits include medical, dental, and vision insurance; a 401(k) plan; life and disability insurance; paid time off; and paid parental leave. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits. Applications for this role are accepted on an ongoing basis.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;title&quot;&gt;Base Salary&lt;/div&gt;&lt;div class=&quot;pay-range&quot;&gt;&lt;span&gt;$196,000&lt;/span&gt;&lt;span class=&quot;divider&quot;&gt;&amp;mdash;&lt;/span&gt;&lt;span&gt;$245,000 USD&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4074054002,
-          "name": "Product Engineering",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ],
-      "ai_disclaimer": null,
-      "include_ai_disclaimer": false,
-      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8642085002/ai_opt_out"
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8604768002",
       "data_compliance": [
         {
@@ -1208,6 +907,66 @@
       "ai_disclaimer": null,
       "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8881544002/ai_opt_out"
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8907804002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "internal_job_id": 6568553002,
+      "location": {
+        "name": "San Francisco Bay Area"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 8907804002,
+      "updated_at": "2026-11-03T18:32:06-05:00",
+      "requisition_id": "R-107465",
+      "title": "Senior Manager, Global Indirect Tax",
+      "company_name": "Discord",
+      "first_published": "2026-11-03T18:32:06-05:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;As a senior manager, you’ll lead global indirect tax strategy and advisory for new products, evolving business models and laws, and enterprise-wide initiatives. You’ll be a trusted strategic advisor to teams across the business, making sure indirect tax requirements, risks, and opportunities are considered early and thoughtfully, not after launch. This role is about shaping decisions: translating complex sales and use tax, VAT, GST, digital services tax, and other indirect tax issues into clear, practical guidance, and owning the work from strategy through execution.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Own all technical areas of global indirect tax and serve as the lead researcher on complex issues such as taxability, sourcing, and emerging business models. Own positions end to end: research the law, form a view, document it in well-reasoned memos, and stand behind it with leadership, auditors, and external advisors.&lt;/li&gt;\n&lt;li&gt;Lead indirect tax strategy for new products, monetization models, and market entries (digital goods, virtual currency, marketplaces, advertising, subscriptions). Partner with Product, Legal, Finance, Accounting, and Engineering from early design through go-live.&lt;/li&gt;\n&lt;li&gt;Monitor legislative and regulatory changes globally, assess the impact on the business, and turn them into actionable recommendations.&lt;/li&gt;\n&lt;li&gt;Analyze the indirect tax implications of inter company transactions, new entity structures, and acquisitions. Partner with Direct Tax to recommend approaches that balance tax efficiency, risk, and operational feasibility.&lt;/li&gt;\n&lt;li&gt;Partner with Tax Operations to make sure positions are documented and implemented correctly in our tax system and review global indirect tax compliance and returns.&lt;/li&gt;\n&lt;li&gt;Lead audits and controversy, including defense strategy and supporting documentation.&lt;/li&gt;\n&lt;li&gt;Identify and lead planning and risk-reduction opportunities, including registrations, deregistrations, and voluntary disclosures.&lt;/li&gt;\n&lt;li&gt;Prepare clear, concise materials for senior leadership, including the CFO, that frame the issue, the options, the recommendation, and the risk.&lt;/li&gt;\n&lt;li&gt;Manage external advisors on scope, quality, and cost, and know when to push back on their conclusions.&lt;/li&gt;\n&lt;li&gt;Use and help build tax technology and AI tools to improve the quality and efficiency of indirect tax analysis, and build scalable processes, templates, and controls as the business grows.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;10+ years of global indirect tax experience, with a mix of Big 4 or law firm and in-house experience at a technology or digital company.&lt;/li&gt;\n&lt;li&gt;Deep technical knowledge of US sales and use tax and working knowledge of international VAT/GST, especially as they apply to digital products, SaaS, and platform business models.&lt;/li&gt;\n&lt;li&gt;A track record of owning complex issues from start to finish without needing a roadmap, and delivering polished, accurate, well-supported work products.&lt;/li&gt;\n&lt;li&gt;Exceptional written and verbal communication. You can explain a complicated tax issue to an engineer, a product manager, or a CFO in plain language and get to a decision.&lt;/li&gt;\n&lt;li&gt;Sound judgment and comfort operating in gray areas, with the confidence to make a recommendation and the humility to revisit it as facts change.&lt;/li&gt;\n&lt;li&gt;Experience working with tax engines (Vertex or similar) and translating technical positions into system logic.&lt;/li&gt;\n&lt;li&gt;JD/LLM, CPA, or equivalent preferred.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-pay-transparency&quot;&gt;&lt;div class=&quot;pay-input&quot;&gt;&lt;div class=&quot;description&quot;&gt;&lt;p&gt;&lt;em&gt;The base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Benefits include medical, dental, and vision insurance; a 401(k) plan; life and disability insurance; paid time off; and paid parental leave. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits. Applications for this role are accepted on an ongoing basis.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;title&quot;&gt;Base Salary&lt;/div&gt;&lt;div class=&quot;pay-range&quot;&gt;&lt;span&gt;$208,000&lt;/span&gt;&lt;span class=&quot;divider&quot;&gt;&amp;mdash;&lt;/span&gt;&lt;span&gt;$234,000 USD&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4074069002,
+          "name": "Accounting",
+          "child_ids": [],
+          "parent_id": 4094262002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "ai_disclaimer": null,
+      "include_ai_disclaimer": false,
+      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8907804002/ai_opt_out"
     },
     {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8769799002",
@@ -1512,66 +1271,6 @@
       "ai_disclaimer": null,
       "include_ai_disclaimer": false,
       "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8460791002/ai_opt_out"
-    },
-    {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8642087002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6451385002,
-      "location": {
-        "name": "San Francisco Bay Area"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 8642087002,
-      "updated_at": "2026-10-20T13:01:11-04:00",
-      "requisition_id": "R-107348",
-      "title": "Senior Software Engineer, Growth ",
-      "company_name": "Discord",
-      "first_published": "2026-08-04T18:13:57-04:00",
-      "language": "en",
-      "application_deadline": null,
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: &lt;strong&gt;play video games.&lt;/strong&gt; Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We&#39;re looking for a Senior Software Engineer to join the Growth team at Discord. Our team owns how new users discover, understand, and get started with Discord — from the first moment someone encounters us on the web through the onboarding experience that turns them into engaged members. You&#39;ll work across the stack to build the systems that acquire and activate users at scale, whether that means improving how Discord shows up across the web or designing the in-product experiences that help new users find their footing. This is a high-impact role where you&#39;ll directly influence how Discord grows. This person will report to the Senior Engineering Manager for Growth.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Build and optimize user-facing experiences that improve how people discover, understand, and get started with Discord&lt;/li&gt;\n&lt;li&gt;Develop scalable backend systems that serve dynamic, high-performance content at scale&lt;/li&gt;\n&lt;li&gt;Work across the full stack — frontend (TypeScript, React) and backend (Python) — wherever the problem leads&lt;/li&gt;\n&lt;li&gt;Design and run A/B experiments to measure the impact of your work on user acquisition and activation&lt;/li&gt;\n&lt;li&gt;Partner with Product, Design, and Data Science to identify high-impact growth opportunities and iterate quickly&lt;/li&gt;\n&lt;li&gt;Maintain performance and reliability standards for user-facing properties&lt;/li&gt;\n&lt;li&gt;Write code that&#39;s readable, reviewable, and built with the next engineer in mind&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;At least 5 years of professional software engineering experience&lt;/li&gt;\n&lt;li&gt;Strong expertise in TypeScript and React with a track record of delivering high-performance frontend experiences&lt;/li&gt;\n&lt;li&gt;Practical experience with Python and backend frameworks such as Flask&lt;/li&gt;\n&lt;li&gt;Experience designing and running A/B tests with a focus on data-driven decision making&lt;/li&gt;\n&lt;li&gt;Comfort working across the full stack and taking ownership of projects end to end&lt;/li&gt;\n&lt;li&gt;A habit of asking why before asking how — and the judgment to know when good enough ships and when it doesn&#39;t&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Prior experience on growth-focused engineering teams working on activation, onboarding, or acquisition&lt;/li&gt;\n&lt;li&gt;Experience building SEO infrastructure, or interest in how LLMs and search engines index and surface web content&lt;/li&gt;\n&lt;li&gt;Mobile development experience&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $196,000 to $245,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4074054002,
-          "name": "Product Engineering",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ],
-      "ai_disclaimer": null,
-      "include_ai_disclaimer": false,
-      "ai_opt_out_request_url": "http://app2.greenhouse.io/ai_opt_out_request/job_post/8642087002/ai_opt_out"
     },
     {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8817776002",
@@ -1969,7 +1668,7 @@
         }
       ],
       "id": 8802354002,
-      "updated_at": "2026-10-20T13:01:11-04:00",
+      "updated_at": "2026-11-03T18:52:48-05:00",
       "requisition_id": "R-107405",
       "title": "Staff Software Engineer, Machine Learning (Consumer Revenue)",
       "company_name": "Discord",
@@ -1987,9 +1686,9 @@
       ],
       "offices": [
         {
-          "id": 4082816002,
-          "name": "Remote (US)",
-          "location": null,
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
           "child_ids": [],
           "parent_id": null
         }
@@ -2324,6 +2023,6 @@
     }
   ],
   "meta": {
-    "total": 38
+    "total": 33
   }
 }

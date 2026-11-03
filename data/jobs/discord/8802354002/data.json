@@ -30,7 +30,7 @@
     }
   ],
   "id": 8802354002,
-  "updated_at": "2026-10-20T13:01:11-04:00",
+  "updated_at": "2026-11-03T18:52:48-05:00",
   "requisition_id": "R-107405",
   "title": "Staff Software Engineer, Machine Learning (Consumer Revenue)",
   "company_name": "Discord",
@@ -48,9 +48,9 @@
   ],
   "offices": [
     {
-      "id": 4082816002,
-      "name": "Remote (US)",
-      "location": null,
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
       "child_ids": [],
       "parent_id": null
     }
