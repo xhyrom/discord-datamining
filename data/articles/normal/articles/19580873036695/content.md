@@ -31,27 +31,28 @@
   >.
 </div>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
+    <li data-list-item-id="e31e22333121cb30ea1feb50888ca3c5a">
       <a href="#h_01J91YVQ6XX8QZ357ZEA721N3C"
         >How to Cancel Nitro Subscription on Desktop/Browser</a
       >
     </li>
-    <li>
+    <li data-list-item-id="ec68b4d962669bc6c9dd40eb36b1536e2">
       <a href="#h_01J91YVQ6X0VT05XYMDVC91Z32"
         >How to Cancel Nitro Subscription on Mobile</a
       >
     </li>
-    <li>
+    <li data-list-item-id="e345a8188236cbee097e31ddad3f30ef0">
       <a href="#h_01J91YVQ6X5A49QG2H2H7Z3B2Z"
         >How Do I Re-Subscribe After Canceling My Subscription?</a
       >
     </li>
-    <li>
+    <li data-list-item-id="e87c005d1f62689916849d0f6e274e171">
       <a href="#h_01J91YVQ6XR7VGCEA6GWA6C6TA"
         >What if I Can’t Access My Discord and Need to Cancel</a
       >
@@ -59,10 +60,12 @@
   </ul>
 </div>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >You can cancel your Nitro or Nitro Basic subscription at any time. Once
-    canceled, your subscription will end at the end of your current billing
-    period. </span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >You can cancel your Nitro or Nitro Basic subscription at any time. Once
+      canceled, your subscription will end at the end of your current billing
+      period. </span
+    ></span
   >
 </p>
 <div class="info-box">
@@ -80,147 +83,139 @@
   How to Cancel Nitro Subscription on Desktop/Browser
 </h1>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >1. Tap on the </span
-  ><strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >cogwheel
-    </span></strong
-  ><span style="color: #2e3338" data-darkreader-inline-color="">[</span
-  ><span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/26729309684631"
-      width="20"
-      height="20" /></span
-  ><span style="color: #2e3338" data-darkreader-inline-color=""
-    >] next to your Discord username to access your </span
-  ><strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >User Settings</span
-    ></strong
-  ><span style="color: #2e3338" data-darkreader-inline-color="">.</span>
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >2. Navigate to the </span
-  ><strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >Subscriptions</span
-    ></strong
-  ><span style="color: #2e3338" data-darkreader-inline-color=""> tab.</span>
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color="">3. Tap on </span
-  ><strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >Cancel
-    </span></strong
-  ><span style="color: #2e3338" data-darkreader-inline-color=""
-    >within the Nitro or Nitro Basic banner to start the process to cancel your
-    subscription. </span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color="">1. Tap on the </span
+    ><span data-darkreader-inline-color=""><strong>cogwheel </strong></span
+    ><span data-darkreader-inline-color="">[</span
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/26729309684631"
+        width="20"
+        height="20" /></span
+    ><span data-darkreader-inline-color=""
+      >] next to your Discord username to access your </span
+    ><span data-darkreader-inline-color=""><strong>User Settings</strong></span
+    ><span data-darkreader-inline-color="">.</span></span
   >
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >4. Follow the prompts to cancel your subscription. </span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color="">2. Navigate to the </span
+    ><span data-darkreader-inline-color=""><strong>Subscriptions</strong></span
+    ><span data-darkreader-inline-color=""> tab.</span></span
+  >
+</p>
+<p>
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color="">3. Tap on </span
+    ><span data-darkreader-inline-color=""><strong>Cancel </strong></span
+    ><span data-darkreader-inline-color=""
+      >within the Nitro or Nitro Basic banner to start the process to cancel
+      your subscription. </span
+    ></span
+  >
+</p>
+<p>
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >4. Follow the prompts to cancel your subscription. </span
+    ></span
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/26729267128087"
-      width="624"
-      height="475"
-  /></span>
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/26729267128087"
+        width="624"
+        height="475" /></span
+  ></span>
 </p>
 <h1 id="h_01J91YVQ6X0VT05XYMDVC91Z32">
   How to Cancel Nitro Subscription on Mobile
 </h1>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >1. Tap on your avatar in the bottom right.</span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >1. Tap on your avatar in the bottom right.</span
+    ></span
   >
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >2. Tap on the </span
-  ><strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >cogwheel
-    </span></strong
-  ><span style="color: #2e3338" data-darkreader-inline-color="">[</span
-  ><span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/26729309690903"
-      width="20"
-      height="20" /></span
-  ><span style="color: #2e3338" data-darkreader-inline-color=""
-    >] in the top right.</span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color="">2. Tap on the </span
+    ><span data-darkreader-inline-color=""><strong>cogwheel </strong></span
+    ><span data-darkreader-inline-color="">[</span
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/26729309690903"
+        width="20"
+        height="20" /></span
+    ><span data-darkreader-inline-color="">] in the top right.</span></span
   >
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >3. Scroll down to </span
-  ><strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >Billing Settings</span
-    ></strong
-  ><span style="color: #2e3338" data-darkreader-inline-color="">
-    and tap on </span
-  ><strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >Manage Nitro</span
-    ></strong
-  ><span style="color: #2e3338" data-darkreader-inline-color="">.</span>
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >4. Here, you can cancel your Nitro or Nitro Basic subscription. Follow the
-    prompts on screen until the cancellation is confirmed.</span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color="">3. Scroll down to </span
+    ><span data-darkreader-inline-color=""
+      ><strong>Billing Settings</strong></span
+    ><span data-darkreader-inline-color=""> and tap on </span
+    ><span data-darkreader-inline-color=""><strong>Manage Nitro</strong></span
+    ><span data-darkreader-inline-color="">.</span></span
   >
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Once the cancellation has been completed, your </span
-  ><strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >Manage Nitro</span
-    ></strong
-  ><span style="color: #2e3338" data-darkreader-inline-color="">
-    settings will show the date on which your subscription will expire and you
-    will lose your Nitro benefits.</span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >4. Here, you can cancel your Nitro or Nitro Basic subscription. Follow
+      the prompts on screen until the cancellation is confirmed.</span
+    ></span
   >
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Alternatively, you can also cancel your Discord subscriptions directly on
-    your mobile device settings by following these instructions for </span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >Once the cancellation has been completed, your </span
+    ><span data-darkreader-inline-color=""><strong>Manage Nitro</strong></span
+    ><span data-darkreader-inline-color="">
+      settings will show the date on which your subscription will expire and you
+      will lose your Nitro benefits.</span
+    ></span
+  >
+</p>
+<p>
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >Alternatively, you can also cancel your Discord subscriptions directly on
+      your mobile device settings by following these instructions for
+    </span></span
   ><a href="https://support.apple.com/en-ca/HT202039"
-    ><strong
-      ><span style="color: #0067e0" data-darkreader-inline-color=""
-        >Apple iOS</span
-      ></strong
+    ><span style="color: #0067e0"
+      ><span data-darkreader-inline-color=""
+        ><strong>Apple iOS</strong></span
+      ></span
     ></a
-  ><span style="color: #2e3338" data-darkreader-inline-color="">
-    subscriptions or </span
+  ><span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""> subscriptions or </span></span
   ><a
     href="https://support.google.com/googleplay/answer/7018481?hl=en&amp;co=GENIE.Platform%3DAndroid"
-    ><strong
-      ><span style="color: #0067e0" data-darkreader-inline-color=""
-        >Google Play</span
-      ></strong
+    ><span style="color: #0067e0"
+      ><span data-darkreader-inline-color=""
+        ><strong>Google Play</strong></span
+      ></span
     ></a
-  ><span style="color: #2e3338" data-darkreader-inline-color="">
-    subscriptions</span
+  ><span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""> subscriptions</span></span
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/26729267132567"
-      width="269"
-      height="528"
-  /></span>
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/26729267132567"
+        width="269"
+        height="528" /></span
+  ></span>
 </p>
 <h1 id="h_01J91YVQ6X5A49QG2H2H7Z3B2Z">
   How Do I Re-Subscribe After Canceling My Subscription?
@@ -252,14 +247,15 @@
   You’ll be able to tell it was reactivated because you’ll see the banner no
   longer has Pending Cancellation displayed.
 </p>
-<p id="h_01J91YVQ6X81F73DP3KAH67VB2" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/26729267142935"
-        width="624"
-        height="475" /></span
-  ></strong>
+<p class="wysiwyg-text-align-center" id="h_01J91YVQ6X81F73DP3KAH67VB2">
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      ><strong
+        ><img
+          src="https://support.discord.com/hc/article_attachments/26729267142935"
+          width="624"
+          height="475" /></strong></span
+  ></span>
 </p>
 <h1 id="h_01J91YVQ6XR7VGCEA6GWA6C6TA">
   What if I Can’t Access my Discord and Need to Cancel?
@@ -277,33 +273,43 @@
   your iOS subscription.
 </div>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >If you’re unable to log into your Discord account for any reason and cancel
-    your subscription (for desktop, browser, or even through an Android device),
-    you can reach out to our Billing Support team with the email address tied to
-    your Discord account and request it to be canceled through this support
-    form: </span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >If you’re unable to log into your Discord account for any reason and
+      cancel your subscription (for desktop, browser, or even through an Android
+      device), you can reach out to our Billing Support team with the email
+      address tied to your Discord account and request it to be canceled through
+      this support form:
+    </span></span
   ><a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
     >http://dis.gd/billing</a
-  ><span style="color: #2e3338" data-darkreader-inline-color="">. </span>
+  ><span style="color: #2e3338"
+    ><span data-darkreader-inline-color="">. </span></span
+  >
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >If you want to submit a refund request instead, and your purchase is within
-    our </span
+  <span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >If you want to submit a refund request instead, and your purchase is
+      within our
+    </span></span
   ><a
     href="https://support.discord.com/hc/en-us/articles/360012668071"
     target="_blank"
     rel="noopener noreferrer"
     >Refund Policy</a
-  ><span style="color: #2e3338" data-darkreader-inline-color=""
-    >, please follow the steps outlined in our </span
+  ><span style="color: #2e3338"
+    ><span data-darkreader-inline-color=""
+      >, please follow the steps outlined in our
+    </span></span
   ><a
     href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy#h_01GK7B09R0VYPAT6VJWV2JR9RR"
     target="_blank"
     rel="noopener noreferrer"
     >Refund Policy</a
-  ><span style="color: #2e3338" data-darkreader-inline-color="">.</span>
+  ><span style="color: #2e3338"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
 </p>
 <div class="book-box">
   <strong>Note: </strong>If you want to cancel your subscription, but you are
