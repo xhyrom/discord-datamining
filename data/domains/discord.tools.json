@@ -12,6 +12,7 @@
     "api-deploys",
     "experiment-readouts",
     "smite",
+    "derp-prd",
     "access-stg",
     "backstage",
     "looker",
@@ -27,6 +28,7 @@
     "access",
     "coderv2",
     "storybook",
+    "dads-stg",
     "argo-workflows-ai-stg",
     "bazel-rbe-stg",
     "mitre",
@@ -48,8 +50,8 @@
     "builds",
     "rustdocs",
     "bazel-bes-stg",
-    "hivemind",
     "memes",
+    "hivemind",
     "keysmith",
     "sirius",
     "yay",
@@ -76,5 +78,5 @@
     "dbt-docs",
     "airflow-data-prd"
   ],
-  "subdomain_count": 75
+  "subdomain_count": 77
 }
