@@ -1,0 +1,204 @@
+.wishlistButton_M2FQyv {
+  align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: var(--control-overlay-secondary-background-default);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+  transition:
+    background-color 50ms ease-in,
+    opacity 0.15s ease;
+}
+.wishlistButton_M2FQyv.disabled_M2FQyv {
+  cursor: not-allowed;
+  filter: brightness(110%);
+}
+.wishlistButton_M2FQyv:not(.disabled_M2FQyv):hover {
+  background: var(--control-overlay-secondary-background-hover);
+  transition: background-color 0.15s ease-out;
+}
+.wishlistButton_M2FQyv:not(.disabled_M2FQyv):active {
+  background: var(--control-overlay-secondary-background-active);
+  transition: background-color 0.15s ease-out;
+}
+.visuallyHidden_M2FQyv {
+  opacity: 0;
+  pointer-events: none;
+}
+.xs_M2FQyv {
+  border-radius: 6px;
+  height: 24px;
+  width: 24px;
+}
+.sm_M2FQyv {
+  height: 32px;
+  width: 32px;
+}
+.md_M2FQyv {
+  height: 40px;
+  width: 40px;
+}
+.theme-light .wishlistButton_M2FQyv.variantDefault_M2FQyv {
+  background: hsl(var(--primary-100-hsl) / 0.66);
+  border: 1px solid var(--border-subtle);
+}
+.theme-light
+  .wishlistButton_M2FQyv.variantDefault_M2FQyv:not(.disabled_M2FQyv):hover {
+  background: hsl(var(--primary-100-hsl) / 1);
+}
+.theme-light
+  .wishlistButton_M2FQyv.variantDefault_M2FQyv:not(.disabled_M2FQyv):active {
+  background: hsl(var(--primary-100-hsl) / 0.52);
+}
+.theme-dark .wishlistButton_M2FQyv.variantDefault_M2FQyv {
+  background: var(--control-overlay-secondary-background-default);
+  border: 1px solid var(--border-muted);
+}
+.theme-dark
+  .wishlistButton_M2FQyv.variantDefault_M2FQyv:not(.disabled_M2FQyv):hover {
+  background: var(--control-overlay-secondary-background-hover);
+}
+.theme-dark
+  .wishlistButton_M2FQyv.variantDefault_M2FQyv:not(.disabled_M2FQyv):active {
+  background: var(--control-overlay-secondary-background-active);
+}
+.wishlistButton_M2FQyv.variantSecondary_M2FQyv {
+  background: var(--control-secondary-background-default);
+  border: 1px solid var(--control-secondary-border-default);
+}
+.wishlistButton_M2FQyv.variantSecondary_M2FQyv:not(.disabled_M2FQyv):hover {
+  background: var(--control-secondary-background-hover);
+}
+.wishlistButton_M2FQyv.variantSecondary_M2FQyv:not(.disabled_M2FQyv):active {
+  background: var(--control-secondary-background-active);
+}
+.normalIconColor_M2FQyv {
+  fill: var(--icon-strong);
+  transition: fill 50ms ease-in;
+}
+.variantSecondaryOverlay_M2FQyv .normalIconColor_M2FQyv {
+  fill: var(--white);
+}
+.normalIconColor_M2FQyv.wishlistedOrAnimating_M2FQyv {
+  fill: #ec1060;
+  transition: fill 0.15s ease-out;
+}
+.disabled_M2FQyv .normalIconColor_M2FQyv {
+  opacity: 0.5;
+  fill: var(--icon-subtle);
+}
+.toastIcon_M2FQyv {
+  flex-shrink: 0;
+  margin-inline-end: 4px;
+}
+.iconContainer_M2FQyv,
+.toastIcon_M2FQyv {
+  align-items: center;
+  display: flex;
+}
+.iconContainer_M2FQyv {
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+}
+.iconWrapper_M2FQyv {
+  display: flex;
+}
+.animationOverlay_M2FQyv {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(0);
+  transform-origin: center;
+}
+.animationOverlay_M2FQyv path {
+  fill: var(--white);
+}
+.halloweenAnimationOverlay_M2FQyv {
+  display: none;
+  height: 64px;
+  inset-inline-start: 50%;
+  margin-top: -32px;
+  margin-inline-start: -32px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  width: 64px;
+  z-index: 1;
+}
+.full-motion .halloweenAnimationOverlay_M2FQyv {
+  display: block;
+}
+.full-motion
+  .wishlistButton_M2FQyv:active
+  .canAnimate_M2FQyv
+  .animationOverlay_M2FQyv {
+  animation: holdScale_M2FQyv 0.1s cubic-bezier(0.67, 0, 0.26, 1) forwards;
+  animation-delay: 50ms;
+}
+.full-motion .clickAnimation_M2FQyv {
+  animation: clickScale_M2FQyv 0.4s cubic-bezier(0.67, 0, 0.26, 1) forwards;
+}
+.full-motion .clickAnimation_M2FQyv path {
+  animation: clickColor_M2FQyv 0.4s cubic-bezier(0.67, 0, 0.26, 1) forwards;
+}
+.full-motion .wishlistButton_M2FQyv:focus-visible .canHover_M2FQyv,
+.full-motion .wishlistButton_M2FQyv:hover .canHover_M2FQyv {
+  animation: hoverPulse_M2FQyv 1.25s cubic-bezier(0.23, 0, 0.58, 1) infinite;
+}
+@keyframes holdScale_M2FQyv {
+  0% {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(0.25);
+  }
+}
+@keyframes clickScale_M2FQyv {
+  0% {
+    transform: scale(0);
+  }
+  62.5% {
+    transform: scale(1.35);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes clickColor_M2FQyv {
+  0%,
+  20% {
+    fill: var(--white);
+  }
+  70%,
+  to {
+    fill: #ec1060;
+  }
+}
+@keyframes hoverPulse_M2FQyv {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  80%,
+  to {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=662387.600c33990e4c134f.css.map*/

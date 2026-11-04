@@ -1,0 +1,84 @@
+.statusText_CXmngM,
+.text_CXmngM {
+  font-size: 14px;
+}
+.statusText_CXmngM {
+  color: var(--text-muted);
+}
+.userInfo_jPuNMC {
+  display: flex;
+  min-width: 0;
+}
+.avatar_jPuNMC {
+  flex-shrink: 0;
+  margin-block: 0;
+  margin-inline: 0 12px;
+}
+.text_jPuNMC {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.account_jPuNMC {
+  display: flex;
+  flex-direction: row;
+}
+.accountIdentifier_jPuNMC {
+  margin-inline-start: 8px;
+}
+.subtext_jPuNMC {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.discordTag_jPuNMC {
+  align-items: flex-end;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.botTag_jPuNMC,
+.discordTag_jPuNMC {
+  display: flex;
+}
+.username_jPuNMC {
+  color: var(--text-strong);
+  font-weight: var(--font-weight-semibold);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.discriminator_jPuNMC {
+  color: var(--text-default);
+  font-size: 14px;
+  line-height: 16px;
+  visibility: hidden;
+}
+.hovered_jPuNMC .discriminator_jPuNMC {
+  visibility: visible;
+}
+.alignUniqueUsername_jPuNMC {
+  align-items: center;
+}
+.listItemContents_4Y31So {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.friendAnniversaryRow_4Y31So {
+  padding: var(--space-8) 0;
+}
+.actions_4Y31So {
+  display: flex;
+  gap: 10px;
+}
+.anniversarySubtext_4Y31So {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+}
+.userInfoCentered_4Y31So {
+  align-items: center;
+}
+
+/*# sourceMappingURL=791370.e4ab89fce80e174f.css.map*/

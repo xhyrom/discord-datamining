@@ -1,0 +1,28 @@
+.divider_KVIPhV {
+  border-bottom: 1px solid var(--border-subtle);
+  margin: var(--space-16) 0;
+}
+.heading_KVIPhV {
+  justify-content: space-between;
+  margin-bottom: var(--space-12);
+}
+.heading_KVIPhV,
+.title_KVIPhV {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+}
+.preview_KVIPhV {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: space-between;
+}
+.emoji_KVIPhV {
+  height: var(--space-32);
+  width: var(--space-32);
+}
+.action_KVIPhV {
+  margin-top: var(--space-16);
+}
+
+/*# sourceMappingURL=66149.105eef2ebc685ed4.css.map*/

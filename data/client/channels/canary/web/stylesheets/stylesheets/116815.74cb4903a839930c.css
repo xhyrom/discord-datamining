@@ -1,0 +1,114 @@
+.wrapper_mTknAg {
+  background-color: var(--background-base-lowest);
+  margin-bottom: -16px;
+  padding-bottom: 8px;
+  width: 48px;
+}
+.list_mTknAg {
+  background: none;
+  height: 100%;
+}
+.section_mTknAg {
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.section_mTknAg:last-child {
+  margin-bottom: 0;
+}
+.builtInSeparator_mTknAg {
+  border: none;
+  border-bottom: 1px solid var(--border-subtle);
+  border-color: var(--border-subtle);
+  margin: 8px 0;
+}
+.outerWrapper_3dKq9h {
+  border-radius: 5px;
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  inset-inline: 0 var(--space-8);
+  bottom: calc(100% + 8px);
+  overflow: hidden;
+  position: absolute;
+}
+.wrapper_3dKq9h {
+  display: flex;
+  flex-direction: row;
+  height: 420px;
+  padding-bottom: 0;
+}
+.noSearchResults_3dKq9h {
+  height: 340px;
+}
+.list_3dKq9h {
+  height: 100%;
+}
+.rail_3dKq9h {
+  align-self: stretch;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.content_3dKq9h {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.categoryHeader_3dKq9h {
+  background-color: var(--background-surface-high);
+  padding: 0 8px;
+  position: sticky;
+  top: 0;
+}
+.categorySection_3dKq9h {
+  margin-bottom: 16px;
+}
+.categorySectionLast_3dKq9h {
+  margin-bottom: 0;
+}
+.itemWrapper_3dKq9h {
+  padding: 0;
+}
+@use postcss-pxtorem;
+.autocomplete_rg6La1 {
+  border-radius: 5px;
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  overflow: hidden;
+}
+.autocompleteAttached_rg6La1 {
+  bottom: calc(100% + 8px);
+  inset-inline: var(--space-8) var(--space-16);
+  position: absolute;
+}
+.autocompleteAttached_rg6La1.bottom_rg6La1 {
+  inset-inline: 0;
+  bottom: inherit;
+  top: 100%;
+}
+.autocompletePopout_rg6La1 {
+  max-width: 800px;
+  min-width: 430px;
+  pointer-events: all;
+}
+.autocompleteInner_rg6La1 {
+  padding-bottom: 0;
+}
+.autocompleteTop_rg6La1 {
+  z-index: 1001;
+}
+.scroller_rg6La1 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
+}
+.stickerAutoComplete_rg6La1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 116px);
+  grid-template-rows: repeat(auto-fill, 116px);
+  grid-gap: 8px;
+  padding: 8px 16px;
+}
+.sticker_rg6La1 {
+  margin-top: 2px;
+  margin-inline-start: 2px;
+}
+
+/*# sourceMappingURL=116815.74cb4903a839930c.css.map*/

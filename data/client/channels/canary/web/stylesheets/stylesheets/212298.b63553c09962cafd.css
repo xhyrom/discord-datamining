@@ -1,0 +1,153 @@
+.container_vCSASs {
+  align-items: flex-start;
+  background: var(--background-feedback-mod-info);
+  border: 1px solid var(--icon-feedback-info);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-12);
+}
+.text_vCSASs {
+  flex: 1;
+}
+.closeButton_vCSASs {
+  color: var(--icon-subtle);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.closeButton_vCSASs:hover {
+  color: var(--icon-default);
+}
+.upsellContainer_vJa-rc {
+  border-radius: var(--radius-sm);
+}
+.upsellContent_vJa-rc {
+  background: var(--user-profile-overlay-background);
+  border-radius: inherit;
+  position: relative;
+}
+.upsellContent_vJa-rc:after,
+.upsellContent_vJa-rc:before {
+  border: 2px solid transparent;
+  border-radius: inherit;
+  box-sizing: border-box;
+  content: "";
+  height: 100%;
+  inset-inline-start: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.upsellContent_vJa-rc:before {
+  border-color: var(--guild-boosting-purple);
+}
+.upsellCloseIconWrapper_vJa-rc {
+  display: flex;
+  justify-content: center;
+}
+.upsellDefaultContent_vJa-rc {
+  padding: 12px;
+}
+.upsellHeader_vJa-rc {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.upsellButtons_vJa-rc,
+.upsellHeader_vJa-rc {
+  display: flex;
+  flex-direction: row;
+}
+.upsellButtons_vJa-rc {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.upsellButtonWrapper_vJa-rc {
+  flex: 1;
+}
+.user-profile-modal-v2 .upsellButtonWrapper_vJa-rc {
+  flex: unset;
+}
+.upsellButtons_vJa-rc .matchManaColors_vJa-rc {
+  background: var(--control-secondary-background-default);
+}
+.upsellButtons_vJa-rc .matchManaColors_vJa-rc:hover {
+  background: var(--control-secondary-background-hover);
+}
+.upsellButtons_vJa-rc .matchManaColors_vJa-rc:active {
+  background: var(--control-secondary-background-active);
+}
+.upsellRefreshRow_vJa-rc,
+.upsellRowContent_vJa-rc {
+  align-items: center;
+  border-radius: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block: 12px;
+  padding-inline: 16px 11px;
+  position: relative;
+}
+.upsellRowContent_vJa-rc:after,
+.upsellRowContent_vJa-rc:before {
+  border: 2px solid transparent;
+  border-radius: inherit;
+  box-sizing: border-box;
+  content: "";
+  height: 100%;
+  inset-inline-start: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.upsellRowContent_vJa-rc:before {
+  border-color: var(--guild-boosting-purple);
+}
+.upsellContent_vJa-rc:after,
+.upsellRowContent_vJa-rc:after {
+  border-color: var(--guild-boosting-blue);
+  -webkit-mask: linear-gradient(0deg, #000, transparent);
+  mask: linear-gradient(0deg, #000, transparent);
+}
+.upsellRowRight_vJa-rc {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.upsellCloseIcon_vJa-rc {
+  color: var(--interactive-text-default);
+  cursor: pointer;
+}
+.upsellCloseIcon_vJa-rc:hover {
+  color: var(--interactive-text-hover);
+}
+.upsellCloseIcon_vJa-rc:active {
+  color: var(--interactive-text-active);
+}
+.upsellRefresh_vJa-rc {
+  --control-secondary-background-active: var(--opacity-24);
+  border-radius: inherit;
+  padding: var(--space-16);
+}
+.custom-user-profile-theme .upsellRefresh_vJa-rc {
+  --control-secondary-background-default: var(--opacity-12);
+  --control-secondary-background-hover: var(--opacity-16);
+}
+.upsellRefresh_vJa-rc .upsellHeader_vJa-rc {
+  margin-bottom: var(--space-16);
+}
+.upsellRefresh_vJa-rc .upsellButtonWrapper_vJa-rc {
+  flex: 1;
+  min-width: 0;
+}
+.upsellRefreshCard_vJa-rc {
+  background: var(--user-profile-overlay-background);
+  border: 1px solid var(--border-muted);
+}
+.lightProfileGradient_vJa-rc:before {
+  opacity: 0.3;
+}
+
+/*# sourceMappingURL=212298.b63553c09962cafd.css.map*/

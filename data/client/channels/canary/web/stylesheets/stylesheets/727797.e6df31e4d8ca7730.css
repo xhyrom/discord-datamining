@@ -1,0 +1,75 @@
+.verifiedRole_GifsdZ {
+  align-items: center;
+  border: 2px solid var(--border-subtle);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 20px 16px;
+  position: relative;
+}
+.verifiedRole_GifsdZ:hover {
+  border-color: var(--border-muted);
+}
+.verifiedRoleNameDescriptionContainer_GifsdZ {
+  flex: 2;
+  overflow: hidden;
+}
+.verifiedRoleDescription_GifsdZ,
+.verifiedRoleName_GifsdZ {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.verifiedRoleDescription_GifsdZ {
+  margin-top: 4px;
+}
+.verifiedRoleHasRole_GifsdZ {
+  background-color: var(--background-base-lowest);
+  border: 2px solid var(--background-base-lowest);
+  cursor: unset;
+}
+.verifiedRoleHasRole_GifsdZ:hover {
+  border-color: var(--background-base-lowest);
+}
+.roleCheckmark_GifsdZ {
+  background-color: var(--brand-500);
+  border-radius: 50%;
+  color: var(--white);
+  inset-inline-end: -8px;
+  position: absolute;
+  top: -8px;
+}
+.botAvatar_GifsdZ,
+.roleCheckmark_GifsdZ,
+.roleCheckmark_GifsdZ svg {
+  height: 20px;
+  width: 20px;
+}
+.botAvatar_GifsdZ {
+  padding: 2px;
+}
+.clickableChannelTextArea_gXT6Kp {
+  cursor: pointer;
+}
+.container_SHuBkB {
+  align-items: center;
+  background: var(--input-background-default);
+  border: 1px solid var(--input-border-default);
+  border-radius: var(--radius-sm);
+  display: flex;
+  gap: var(--space-16);
+  margin: 0 var(--space-16) var(--space-24);
+  padding: var(--space-12);
+}
+.subtitle_SHuBkB {
+  flex: 1;
+  min-width: 0;
+}
+.actions_SHuBkB {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--space-8);
+}
+
+/*# sourceMappingURL=727797.e6df31e4d8ca7730.css.map*/

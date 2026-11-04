@@ -1,0 +1,28 @@
+.richText_PeLYHs a {
+  color: var(--text-link);
+  cursor: pointer;
+  -webkit-text-decoration: var(--link-decoration);
+  text-decoration: var(--link-decoration);
+  word-break: break-word;
+}
+.richText_PeLYHs a:hover {
+  text-decoration: underline;
+}
+.richText_PeLYHs strong {
+  font-weight: var(--font-weight-bold);
+}
+.richText_PeLYHs em {
+  font-style: italic;
+}
+.multilineText_PeLYHs {
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+.field_PeLYHs {
+  min-width: 0;
+}
+.field_PeLYHs:has(:is(input, textarea):focus) {
+  flex-grow: 1;
+}
+
+/*# sourceMappingURL=244941.ad094c74da21b22b.css.map*/

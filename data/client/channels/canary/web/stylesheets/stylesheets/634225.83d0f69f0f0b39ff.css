@@ -1,0 +1,65 @@
+div.modalRoot_1FzWi5 {
+  border-radius: 12px;
+  position: relative;
+}
+div.modalHeader_1FzWi5 {
+  overflow-x: visible;
+}
+.closeBtn_1FzWi5 {
+  inset-inline-end: 12px;
+  position: absolute;
+  top: 12px;
+}
+.asset_1FzWi5 {
+  height: auto;
+  margin-bottom: 24px;
+  width: 205px;
+}
+.modalContent_1FzWi5 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 16px 24px;
+}
+.completedModalContent_1FzWi5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 24px;
+}
+.choiceContainer_1FzWi5 {
+  align-items: center;
+  background-color: var(--background-base-lower);
+  border: 1px solid var(--border-muted);
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+.full-motion .choiceContainer_1FzWi5 {
+  transition: background-color 0.2s ease-in-out;
+}
+.choiceContainer_1FzWi5:hover {
+  background-color: var(--message-background-hover);
+}
+.closeButtonContainer_1FzWi5 {
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.progressOverlay_1FzWi5 {
+  background-color: var(--background-base-lower);
+  inset: 0;
+  opacity: 0.2;
+  pointer-events: none;
+  position: absolute;
+  z-index: 10;
+}
+.modalHeader_1FzWi5 {
+  padding-bottom: 12px;
+}
+
+/*# sourceMappingURL=634225.83d0f69f0f0b39ff.css.map*/

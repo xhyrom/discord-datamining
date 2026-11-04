@@ -5,14 +5,14 @@
     o,
     t,
     n = {
-      219249(e, r, o) {
+      278100(e, r, o) {
         o(134528), o(947204);
         var t = o(501661),
           n = o(774099),
-          i = o(56833),
+          i = o(201264),
           l = o(883950),
           a = o(871186),
-          s = o(363630);
+          s = o(240745);
         let d = ["oppobrowser", "realmebrowser", "heytapbrowser"],
           u = (function (e) {
             let { maxBudgetMinute: r, maxBudgetHour: o } = e,
@@ -37,7 +37,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-4bb5851adecbbf935ea6b96babc90c08c4b96efc",
+            release: "discord_web-1b3da39cedfea67c809a72fa8ca26be5c3321fe4",
             beforeSend: function (e) {
               var r;
               let o;
@@ -121,8 +121,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.NA("buildNumber", "663962"),
-            a.NA("builtAt", String("1793805045448"));
+            a.NA("buildNumber", "664502"),
+            a.NA("builtAt", String("1793821650244"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let r in e) a.NA(r, e[r]);
           return s;
@@ -137,11 +137,14 @@
     return n[e].call(o.exports, o, o.exports, l), o.exports;
   }
   (l.m = n),
-    (l.d = (e, r) => {
-      for (var o in r)
-        l.o(r, o) &&
-          !l.o(e, o) &&
-          Object.defineProperty(e, o, { enumerable: !0, get: r[o] });
+    (l.d = (e, r, o) => {
+      var t = (r, o) => {
+        for (var t in r)
+          l.o(r, t) &&
+            !l.o(e, t) &&
+            Object.defineProperty(e, t, { enumerable: !0, [o]: r[t] });
+      };
+      t(r, "get"), t(o, "value");
     }),
     (l.g = (() => {
       if ("object" == typeof globalThis) return globalThis;
@@ -179,7 +182,6 @@
       }
       return r;
     }),
-    (l.rv = () => "1.7.11"),
     (r = { 344771: 0 }),
     (l.O.j = (e) => 0 === r[e]),
     (o = (e, o) => {
@@ -197,11 +199,10 @@
     }),
     (t = this.webpackChunkdiscord_app =
       this.webpackChunkdiscord_app || []).forEach(o.bind(null, 0)),
-    (t.push = o.bind(null, t.push.bind(t))),
-    (l.ruid = "bundler=rspack@1.7.11");
-  var a = l.O(void 0, ["533077", "324644", "948255", "64310", "556707"], () =>
-    l(219249),
+    (t.push = o.bind(null, t.push.bind(t)));
+  var a = l.O(void 0, ["533077", "324644", "948255", "112836", "619666"], () =>
+    l(278100),
   );
   a = l.O(a);
 })();
-//# sourceMappingURL=sentry.aeda50388a05e72c.js.map
+//# sourceMappingURL=sentry.9ea06d9aeac0378f.js.map

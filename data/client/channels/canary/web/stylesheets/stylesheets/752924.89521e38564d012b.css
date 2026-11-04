@@ -1,0 +1,165 @@
+.serverNickname_dLBw_i {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+.separator_dLBw_i {
+  background-color: var(--border-subtle);
+  height: 1px;
+}
+.linkIcon_tfFV0r {
+  display: inline-block;
+}
+.badge_cCA_BL {
+  align-items: center;
+  background-color: var(--background-mod-normal);
+  border-radius: 12px;
+  color: var(--interactive-text-active);
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  margin-inline-start: 0.25rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+  overflow: hidden;
+  padding-block: 2px;
+  padding-inline: 4px 8px;
+  position: relative;
+  text-indent: 0;
+  top: 1px;
+  vertical-align: top;
+}
+.badge_cCA_BL:hover {
+  color: var(--interactive-text-hover);
+}
+.badgeVerifiedIcon_cCA_BL {
+  height: 16px;
+  margin-inline-end: 4px;
+  width: 16px;
+}
+.roleName_cCA_BL {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.theme-light .badge_cCA_BL {
+  color: var(--channels-default);
+}
+.theme-light .badge_cCA_BL:hover {
+  color: var(--interactive-text-hover);
+}
+.popout_cCA_BL {
+  background-color: var(--background-surface-high);
+  border-radius: 4px;
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  overflow: hidden;
+}
+.popoutChecks_cCA_BL {
+  padding: 12px;
+}
+.popoutChecksGroup_cCA_BL:not(:last-of-type) {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+.popoutCheckGroupName_cCA_BL {
+  align-items: center;
+  display: flex;
+}
+.popoutCheckGroupPlatformIcon_cCA_BL {
+  height: 20px;
+  margin-inline-end: 8px;
+  width: 20px;
+}
+.popoutCheck_cCA_BL {
+  align-items: center;
+  display: flex;
+  margin-top: 8px;
+  margin-inline-start: 28px;
+  padding-inline-end: 20px;
+}
+.popoutCheckIcon_cCA_BL {
+  color: var(--text-feedback-positive);
+  height: 18px;
+  margin-inline-end: 8px;
+  width: 18px;
+}
+.popoutHeaderContainer_cCA_BL {
+  background-color: var(--background-base-lowest);
+  padding: 10px;
+}
+.popoutHeaderText_cCA_BL strong {
+  color: var(--text-strong);
+}
+.buttonContainer_cCA_BL {
+  padding: 8px;
+}
+.getRolesButton_cCA_BL {
+  margin-bottom: 8px;
+  width: 100%;
+}
+.viewConnectionsButton_cCA_BL {
+  width: 100%;
+}
+.botTag_cCA_BL {
+  margin-inline-start: 8px;
+  margin-top: -1px;
+}
+.messagePopoutContent_EkmWN_ {
+  max-width: calc(var(--custom-message-helpers-popout-container-width) * 1.25);
+  min-width: var(--custom-message-helpers-popout-container-width);
+  width: auto;
+}
+.popoutContainer_EkmWN_ {
+  padding: var(--custom-message-helpers-popout-padding-width);
+}
+.mainContent_EkmWN_ {
+  align-items: start;
+  display: flex;
+  flex-direction: row;
+}
+.iconContainer_EkmWN_ {
+  color: var(--text-feedback-positive);
+  margin-inline-end: var(--custom-message-helpers-popout-padding-width);
+  width: 40px;
+}
+.header_EkmWN_ {
+  margin-bottom: 4px;
+}
+.ctaButton_EkmWN_ {
+  margin: 16px auto 0;
+}
+.boosterBadge_EkmWN_ {
+  margin-inline-end: 3px;
+}
+.newMemberBadge_P4-UkH {
+  color: var(--text-feedback-positive);
+  cursor: pointer;
+  display: inline-block;
+  height: calc(1rem + 4px);
+  margin-inline-start: 0.25rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+  overflow: hidden;
+  position: relative;
+  text-indent: 0;
+  top: 1px;
+  vertical-align: top;
+  width: calc(1rem + 4px);
+}
+.badge_1jaGB6 {
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  display: inline-block;
+  height: 1rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+  overflow: hidden;
+  position: relative;
+  text-indent: 0;
+  top: 0.1875rem;
+  vertical-align: top;
+  width: 1rem;
+}
+
+/*# sourceMappingURL=752924.89521e38564d012b.css.map*/

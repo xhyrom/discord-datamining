@@ -1,0 +1,31 @@
+.keybindHint_mb9pZg {
+  align-items: center;
+  background-color: var(--background-base-lower);
+  border-radius: var(--radius-sm);
+  display: flex;
+  margin: 16px;
+  padding: 8px;
+  position: relative;
+}
+.keybindHintText_mb9pZg {
+  display: inline;
+}
+.warningIcon_mb9pZg {
+  color: var(--yellow-300);
+  margin-inline-end: 8px;
+  min-width: 20px;
+}
+.emoji_mb9pZg {
+  height: 100%;
+  width: 100%;
+}
+.closeButton_mb9pZg,
+.emoji_mb9pZg {
+  color: var(--interactive-text-default);
+}
+.closeButton_mb9pZg {
+  cursor: pointer;
+  margin-top: -16px;
+}
+
+/*# sourceMappingURL=272804.ba30e45bbaab27d0.css.map*/

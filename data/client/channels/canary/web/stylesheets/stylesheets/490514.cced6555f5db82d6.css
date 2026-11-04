@@ -1,0 +1,114 @@
+.actions__M7qrc {
+  min-width: calc(100% + var(--space-8));
+}
+.destination__M7qrc {
+  align-items: center;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  gap: var(--space-12);
+  margin: 0 calc(var(--space-8) * -1);
+  min-height: var(--space-48);
+  min-width: 0;
+  overflow: hidden;
+  padding: 0 var(--space-8);
+  text-align: start;
+  width: 100%;
+}
+.destination__M7qrc:hover {
+  background-color: var(--interactive-background-hover);
+}
+.destinationIcon__M7qrc {
+  flex: none;
+}
+.destinationText__M7qrc {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.destinationSecondary__M7qrc,
+.destinationText__M7qrc {
+  display: flex;
+  gap: calc(var(--space-4) / 2);
+  min-width: 0;
+  overflow: hidden;
+}
+.destinationSecondary__M7qrc {
+  align-items: center;
+  color: var(--text-muted);
+}
+.destinationTextLine__M7qrc {
+  min-width: 0;
+  overflow: hidden;
+}
+.destinationSecondary__M7qrc .destinationTextLine__M7qrc {
+  flex: 1;
+}
+.subtitleDestination__M7qrc {
+  align-items: center;
+  color: var(--text-strong);
+  display: inline-flex;
+  gap: var(--space-4);
+  white-space: nowrap;
+}
+.canvas_6oHqIH {
+  --custom-waveform-spacing: 4px;
+  color: var(--interactive-text-active);
+  flex: 1;
+  height: calc(24px + var(--custom-waveform-spacing) * 2);
+  margin-bottom: calc(var(--custom-waveform-spacing) * -1);
+  margin-top: calc(var(--custom-waveform-spacing) * -1);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    var(--text-default) 12%,
+    var(--text-default) 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    var(--text-default) 12%,
+    var(--text-default) 100%
+  );
+  min-width: 0;
+  width: 0;
+}
+.backupContainer_CNmkpo {
+  display: flex;
+  justify-content: center;
+}
+.canvas_CNmkpo {
+  cursor: pointer;
+  flex: 1;
+  height: 32px;
+  margin-bottom: -4px;
+  margin-top: -4px;
+  min-width: 0;
+}
+.playback_E0Lm4d {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: var(--space-16);
+  min-width: 0;
+}
+.waveform_E0Lm4d {
+  flex: 1;
+  margin-inline-start: var(--space-4);
+  min-width: 0;
+  width: 0;
+}
+.timerGroup_E0Lm4d {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+}
+.timer_E0Lm4d {
+  color: var(--text-default);
+  min-width: var(--space-32);
+}
+.audioElement_E0Lm4d {
+  display: none;
+}
+
+/*# sourceMappingURL=490514.cced6555f5db82d6.css.map*/

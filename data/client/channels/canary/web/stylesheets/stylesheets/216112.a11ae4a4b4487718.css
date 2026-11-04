@@ -1,0 +1,22 @@
+.guildIconImage_sX5_6T {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.guildIconImage_sX5_6T.acronym_sX5_6T {
+  background-color: var(--background-base-lowest);
+}
+.acronym_sX5_6T {
+  align-items: center;
+  color: var(--text-strong);
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/*# sourceMappingURL=216112.a11ae4a4b4487718.css.map*/

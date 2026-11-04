@@ -1,0 +1,42 @@
+.indicatorDot_SUIihK {
+  border-radius: var(--radius-round);
+  display: inline-block;
+  flex: 0 0 auto;
+}
+.xs_SUIihK {
+  height: var(--space-4);
+  width: var(--space-4);
+}
+.sm_SUIihK {
+  height: var(--space-6);
+  width: var(--space-6);
+}
+.md_SUIihK {
+  height: var(--space-8);
+  width: var(--space-8);
+}
+.lg_SUIihK {
+  height: var(--space-10);
+  width: var(--space-10);
+}
+.primary_SUIihK {
+  background-color: var(--badge-primary-background);
+}
+.notification_SUIihK {
+  background-color: var(--badge-notification-background);
+}
+.neutral_SUIihK {
+  background-color: var(--icon-strong);
+}
+.active_SUIihK {
+  background-color: var(--status-positive);
+}
+.cutout-base-lower_SUIihK {
+  box-shadow: 0 0 0 2px var(--background-base-lower);
+}
+.enable-forced-colors .indicatorDot_SUIihK {
+  background-color: Highlight;
+  forced-color-adjust: none;
+}
+
+/*# sourceMappingURL=585733.40d778facdee59fb.css.map*/

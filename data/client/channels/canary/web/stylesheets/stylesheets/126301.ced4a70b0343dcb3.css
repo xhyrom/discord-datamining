@@ -1,0 +1,140 @@
+.modalContainer_6t5fy- {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.editorPane_6t5fy- {
+  background: var(--background-base-low);
+  min-width: 0;
+  position: relative;
+}
+.editorContent_6t5fy-,
+.editorPane_6t5fy- {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.editorContent_6t5fy- {
+  justify-content: center;
+  padding-inline-end: var(--space-24);
+  padding-bottom: var(--space-32);
+  padding-top: var(--space-20);
+  padding-inline-start: var(--space-24);
+}
+.editorContent_6t5fy-,
+.editorMain_6t5fy- {
+  gap: var(--space-24);
+  min-height: 0;
+}
+.editorMain_6t5fy- {
+  display: flex;
+  flex-direction: column;
+  margin-block: auto;
+  width: 100%;
+}
+.displayVideo_6t5fy- {
+  border: 1px solid var(--border-normal);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  max-height: 100%;
+  max-width: 100%;
+}
+.displayScreenshot_6t5fy- {
+  cursor: zoom-in;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.clipsPlayer_6t5fy-,
+.videoSizer_6t5fy- {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 0;
+  position: relative;
+}
+.clipsPlayer_6t5fy-,
+.voiceClipPlayerOverlay_6t5fy- {
+  aspect-ratio: 16/9;
+  max-width: 100%;
+}
+.voiceClipPlayerOverlay_6t5fy- {
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  max-height: 100%;
+  overflow: hidden;
+}
+.croppedPlayer_6t5fy- {
+  aspect-ratio: auto;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.cropFrameVideo_6t5fy- {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: auto;
+}
+.full-motion .cropFrameVideo_6t5fy- {
+  transition: aspect-ratio 0.3s ease;
+}
+.hidden_wtoAZD {
+  display: none;
+}
+.background_VsbVOb {
+  filter: blur(48px);
+  height: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 0.4;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(1.2);
+  width: 100%;
+  z-index: -1;
+}
+.nameTag_Lj8I29 {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 1.1;
+  overflow: hidden;
+}
+.username_Lj8I29 {
+  display: block;
+  flex: 0 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bot_Lj8I29 {
+  display: block;
+  flex: 0 0 auto;
+  margin-inline-start: 1ch;
+}
+.info_PTA1Mz {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.info_PTA1Mz.withDisplayNameStyles_PTA1Mz {
+  overflow: visible;
+}
+.infoSpacing_PTA1Mz {
+  margin-inline-start: 5px;
+}
+.guildTag_PTA1Mz {
+  flex-shrink: 0;
+  margin-inline-start: var(--space-4);
+}
+
+/*# sourceMappingURL=126301.ced4a70b0343dcb3.css.map*/

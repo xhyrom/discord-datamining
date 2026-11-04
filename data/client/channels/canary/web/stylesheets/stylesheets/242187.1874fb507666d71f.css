@@ -1,0 +1,70 @@
+.container_M2WrKU {
+  --custom-lift-hover: 2px;
+  --custom-peek-base: 8px;
+  --custom-peek-hover: 2px;
+  --custom-expanded-total: calc(
+    var(--custom-lift-hover) + var(--custom-peek-base) +
+      var(--custom-peek-hover)
+  );
+  --custom-transition-duration: 200ms;
+}
+.container_M2WrKU:has(.hasMultipleCards_M2WrKU) {
+  padding-bottom: var(--custom-peek-base);
+}
+.cardsList_M2WrKU,
+.firstCardContainer_M2WrKU {
+  position: relative;
+}
+.hasMultipleCards_M2WrKU .firstCardContainer_M2WrKU .card_M2WrKU {
+  box-shadow: var(--shadow-low);
+  z-index: var(--custom-user-profile-middle-layer-z-index);
+}
+.full-motion .hasMultipleCards_M2WrKU .firstCardContainer_M2WrKU .card_M2WrKU {
+  transition: transform var(--custom-transition-duration) ease-in-out;
+}
+.hasMultipleCards_M2WrKU:focus-within .firstCardContainer_M2WrKU .card_M2WrKU,
+.hasMultipleCards_M2WrKU:hover .firstCardContainer_M2WrKU .card_M2WrKU {
+  transform: translateY(calc(var(--custom-lift-hover) * -1));
+}
+.backgroundCardContainer_M2WrKU {
+  box-sizing: border-box;
+  cursor: pointer;
+  height: var(--custom-peek-base);
+  overflow: hidden;
+  padding-inline: 8px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+.full-motion .backgroundCardContainer_M2WrKU {
+  --custom-transition-height-delay: var(--custom-transition-duration);
+  transition:
+    transform var(--custom-transition-duration) ease-in-out,
+    height 0s var(--custom-transition-height-delay) linear;
+}
+.cardsList_M2WrKU:focus-within .backgroundCardContainer_M2WrKU,
+.cardsList_M2WrKU:hover .backgroundCardContainer_M2WrKU {
+  --custom-transition-height-delay: 0ms;
+  height: var(--custom-expanded-total);
+  transform: translateY(calc(var(--custom-lift-hover) * -1));
+}
+.backgroundCardContainer_M2WrKU .backgroundCard_M2WrKU {
+  height: calc(var(--custom-expanded-total) * 2);
+  transform: translateY(calc(-100% + var(--custom-peek-base)));
+  z-index: var(--custom-user-profile-bottom-layer-z-index);
+}
+.full-motion .backgroundCardContainer_M2WrKU .backgroundCard_M2WrKU {
+  transition: transform var(--custom-transition-duration) ease-in-out;
+}
+.backgroundCardContainer_M2WrKU .backgroundCard_M2WrKU:focus-within,
+.backgroundCardContainer_M2WrKU .backgroundCard_M2WrKU:hover {
+  background: var(--user-profile-overlay-background-hover);
+}
+.cardsList_M2WrKU:focus-within
+  .backgroundCardContainer_M2WrKU
+  .backgroundCard_M2WrKU,
+.cardsList_M2WrKU:hover .backgroundCardContainer_M2WrKU .backgroundCard_M2WrKU {
+  transform: translateY(calc(-100% + var(--custom-expanded-total)));
+}
+
+/*# sourceMappingURL=242187.1874fb507666d71f.css.map*/

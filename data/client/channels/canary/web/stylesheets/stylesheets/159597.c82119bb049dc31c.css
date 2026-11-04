@@ -1,0 +1,53 @@
+.wrapper_jScFSg {
+  background-color: var(--background-base-lower);
+  background-position: 50% 0;
+  background-size: cover;
+  color: var(--text-default);
+  min-height: 100vh;
+  overflow: hidden;
+}
+.flexWrapper_jScFSg {
+  height: 100vh;
+}
+.image_jScFSg {
+  background-size: 100% 100%;
+  height: 154px;
+  margin-bottom: 40px;
+  width: 254px;
+}
+.text_jScFSg {
+  margin-bottom: 20px;
+  width: 440px;
+}
+.note_jScFSg {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+.note_jScFSg,
+.title_jScFSg {
+  text-align: center;
+}
+.title_jScFSg {
+  color: var(--text-strong);
+  font-size: 24px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 8px;
+  margin-bottom: 24px;
+}
+.images-light .wrapper_jScFSg {
+  background-image: url("/assets/069714e321aa543f.svg");
+}
+.images-light .image_jScFSg {
+  background-image: url("/assets/f9b5479cf5959262.svg");
+}
+.images-dark .wrapper_jScFSg {
+  background-image: url("/assets/069714e321aa543f.svg");
+}
+.images-dark .image_jScFSg {
+  background-image: url("/assets/4ced53d842c0ca67.svg");
+}
+.wrapper_jScFSg.noBackground_jScFSg {
+  background-image: none;
+}
+
+/*# sourceMappingURL=159597.c82119bb049dc31c.css.map*/

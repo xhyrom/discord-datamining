@@ -1,0 +1,327 @@
+.container_IBNVLQ {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.partnerLogotypeContainer_IBNVLQ {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  pointer-events: none;
+}
+.partnerLogotype_IBNVLQ {
+  height: 69px;
+  max-width: 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: auto;
+}
+.partnerContentContainer_IBNVLQ {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-16);
+  padding-inline: 24px;
+}
+.partnerGameTile_IBNVLQ {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  height: 42px;
+  pointer-events: none;
+  width: auto;
+}
+.partnerCopyContainer_IBNVLQ {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.partnerTitle_IBNVLQ {
+  padding-bottom: 4px;
+}
+.rightCtaSlot_IBNVLQ {
+  padding: 24px;
+}
+.helper_nRkFZM {
+  align-items: center;
+  background: var(--background-base-lowest);
+  border: 1px solid hsla(0, 0%, 100%, 0.04);
+  border-radius: 8px;
+  box-shadow: var(--shadow-low);
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+}
+.infoFilledIcon_nRkFZM {
+  color: var(--text-default);
+  margin-inline-end: 8px;
+}
+.container_885EjJ {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+.partnerLogotypeContainer_885EjJ {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  pointer-events: none;
+}
+.partnerLogotype_885EjJ {
+  height: 69px;
+  max-width: 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: auto;
+}
+.partnerContentContainer_885EjJ {
+  display: flex;
+  flex-direction: row;
+  padding-inline: 24px;
+}
+.partnerCopyContainer_885EjJ {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-inline-end: var(--space-16);
+}
+.partnerGameTile_885EjJ {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  height: 42px;
+  pointer-events: none;
+  width: auto;
+}
+.partnerTitle_885EjJ {
+  padding-bottom: 4px;
+}
+.bottomContainer_885EjJ {
+  padding: 24px;
+}
+.closeButton_zhJF5z {
+  inset-inline-end: 12px;
+  position: absolute;
+  top: 12px;
+  z-index: 100;
+}
+.modal_zhJF5z {
+  height: 524px;
+  overflow: hidden;
+}
+.refWrapper_zhJF5z {
+  height: 100%;
+}
+.modalContent_zhJF5z {
+  display: flex;
+  height: 100%;
+}
+.leftPanel_zhJF5z {
+  background: radial-gradient(
+    ellipse at top left,
+    var(--expressive-gradient-purple-end) 0,
+    transparent 70%
+  );
+  height: 100%;
+  width: 300px;
+}
+.rightPanel_zhJF5z {
+  height: 100%;
+  width: 454px;
+}
+.spinner_zhJF5z {
+  inset-inline-start: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.contentContainer_2U-Huy {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.rewardTileContainer_2U-Huy {
+  align-content: center;
+  flex: 1;
+  justify-items: center;
+}
+.rewardTileAsset_2U-Huy {
+  border: 1px solid var(--border-normal);
+  border-radius: var(--radius-lg);
+  height: 148px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: auto;
+}
+.copyContainer_2U-Huy {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.heading_2U-Huy {
+  margin-bottom: 4px;
+}
+.mainCodeInput_2U-Huy {
+  height: 48px;
+}
+.claimInstructionsCodeInputTitle_2U-Huy,
+.claimInstructionsText_2U-Huy {
+  margin-bottom: 8px;
+}
+.codeClaimInputSmallFont_2U-Huy {
+  font-size: 14px;
+}
+.contentContainer_Q7Cp1t {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.previewContainer_Q7Cp1t {
+  align-content: center;
+  flex: 1;
+  justify-items: center;
+}
+.copyContainer_Q7Cp1t {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.heading_Q7Cp1t {
+  margin-bottom: 4px;
+}
+.contentContainer_wqxR8- {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.rewardTileContainer_wqxR8- {
+  align-content: center;
+  flex: 1;
+  justify-items: center;
+}
+.rewardTile_wqxR8- {
+  height: auto;
+  width: 148px;
+}
+.copyContainer_wqxR8- {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.heading_wqxR8- {
+  margin-bottom: 4px;
+}
+.contentContainer_NUIl5Z {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.orbsContainer_NUIl5Z {
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  position: relative;
+}
+.centerOrb_NUIl5Z {
+  height: auto;
+  inset-inline-start: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  z-index: 1;
+}
+.idleOrb_NUIl5Z {
+  z-index: 2;
+}
+.hidden_NUIl5Z {
+  display: none;
+}
+.smallOrbContainer_NUIl5Z {
+  inset-inline-start: 50%;
+  position: absolute;
+  top: 50%;
+}
+.smallOrb_NUIl5Z {
+  height: auto;
+  opacity: 0.1;
+  position: absolute;
+}
+.smallOrb_NUIl5Z:first-child {
+  bottom: 0;
+  inset-inline-end: 64px;
+  width: 61px;
+}
+.smallOrb_NUIl5Z:nth-child(2) {
+  bottom: 56px;
+  inset-inline-end: 28px;
+  width: 29px;
+}
+.smallOrb_NUIl5Z:nth-child(3) {
+  bottom: 60px;
+  inset-inline-start: 21px;
+  width: 29px;
+}
+.smallOrb_NUIl5Z:nth-child(4) {
+  bottom: 0;
+  inset-inline-start: 60px;
+  width: 61px;
+}
+.copyContainer_NUIl5Z {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.heading_NUIl5Z {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+.orbsIcon_NUIl5Z {
+  height: auto;
+  width: 22px;
+}
+.modalButtons_e3bXMB {
+  display: flex;
+  gap: 8px;
+  inset-inline-end: 12px;
+  position: absolute;
+  top: 12px;
+  z-index: 100;
+}
+.modal_FmNv9Q {
+  height: 524px;
+  overflow: hidden;
+}
+.refWrapper_FmNv9Q {
+  height: 100%;
+}
+.modalContent_FmNv9Q {
+  display: flex;
+  height: 100%;
+}
+.leftPanel_FmNv9Q {
+  background: radial-gradient(
+    ellipse at top left,
+    var(--expressive-gradient-purple-end) 0,
+    transparent 70%
+  );
+  height: 100%;
+  width: 300px;
+}
+.rightPanel_FmNv9Q {
+  height: 100%;
+  width: 454px;
+}
+.spinner_FmNv9Q {
+  inset-inline-start: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=206988.c7f98c18ae7ae952.css.map*/

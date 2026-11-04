@@ -1,0 +1,45 @@
+.inset_ERB-Vv,
+.outer_ERB-Vv {
+  border-radius: 4px;
+}
+.outer_ERB-Vv {
+  background-color: var(--background-surface-high);
+}
+.padded_ERB-Vv {
+  padding: 16px;
+}
+.padded_ERB-Vv.inset_ERB-Vv {
+  padding: 12px;
+}
+.interactive_ERB-Vv {
+  cursor: pointer;
+}
+.inset_ERB-Vv {
+  background-color: var(--background-mod-subtle);
+}
+.outer_ERB-Vv.active_ERB-Vv,
+.outer_ERB-Vv.interactive_ERB-Vv:hover {
+  background-color: var(--background-surface-higher);
+}
+.noBackground_ERB-Vv {
+  background-color: unset;
+}
+.card_6bPiII {
+  text-align: center;
+}
+.header_6bPiII {
+  margin-bottom: 4px;
+}
+.buttonContainer_6bPiII {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+.buttonContainer_6bPiII > * {
+  margin-bottom: 8px;
+}
+.buttonContainer_6bPiII > :last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=715170.78c8f1eaaeb8cad8.css.map*/

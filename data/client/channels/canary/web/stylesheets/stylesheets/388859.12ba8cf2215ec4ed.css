@@ -1,0 +1,98 @@
+.copyInput_cZux1n {
+  background-color: var(--input-background-default);
+  border: 1px solid var(--input-border-default);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.2s ease-in-out;
+}
+.copyInput_cZux1n[data-disabled="true"] {
+  cursor: not-allowed;
+}
+.copyInput_cZux1n[data-disabled="true"] .inputWrapper_cZux1n {
+  opacity: 0.5;
+}
+.copyInput_cZux1n[data-disabled="true"] .input_cZux1n {
+  cursor: not-allowed;
+}
+.copyInputDefault_cZux1n,
+.copyInputError_cZux1n {
+}
+.copyInputError_cZux1n {
+  background-color: var(--background-feedback-mod-critical);
+  border-color: var(--text-feedback-critical);
+  color: var(--text-feedback-critical);
+}
+.copyInputSuccess_cZux1n {
+  background-color: var(--background-feedback-mod-positive);
+  border-color: var(--text-feedback-positive);
+  color: var(--text-feedback-positive);
+}
+.layout_cZux1n {
+  inset: 0;
+  position: absolute;
+}
+.inputWrapper_cZux1n {
+  position: relative;
+}
+.button_cZux1n {
+  border-radius: var(--radius-xs);
+  margin-block: 4px;
+  margin-inline: 0 4px;
+  padding: 2px 20px !important;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+.hiddenMessage_cZux1n,
+.input_cZux1n {
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+  overflow: hidden;
+  padding-block: 10px;
+  padding-inline: 10px 0;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.input_cZux1n {
+  border: none;
+  box-sizing: border-box;
+  cursor: text;
+  flex: 1 1 auto;
+  min-width: 0;
+  transition: color 0.15s ease;
+  width: 100%;
+}
+.inputDefault_cZux1n {
+}
+.inputError_cZux1n,
+.inputSuccess_cZux1n {
+  color: var(--text-default);
+}
+.hiddenMessage_cZux1n {
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
+.inputHidden_cZux1n {
+  visibility: hidden;
+}
+.hiddenMessage_cZux1n,
+.inputDefault_cZux1n {
+  color: var(--text-default);
+}
+.hiddenMessage_cZux1n::-moz-placeholder,
+.inputDefault_cZux1n::-moz-placeholder {
+  color: var(--input-placeholder-text-default);
+}
+.hiddenMessage_cZux1n::placeholder,
+.inputDefault_cZux1n::placeholder {
+  color: var(--input-placeholder-text-default);
+}
+
+/*# sourceMappingURL=388859.12ba8cf2215ec4ed.css.map*/

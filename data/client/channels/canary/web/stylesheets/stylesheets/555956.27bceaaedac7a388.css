@@ -1,0 +1,66 @@
+.layers_Fd0FEH {
+  overflow: hidden;
+  position: relative;
+}
+.layers_Fd0FEH > .layer_Fd0FEH {
+  display: flex;
+  flex-direction: column;
+  inset: 0;
+  overflow: hidden;
+  position: absolute;
+}
+.layers_Fd0FEH > .layer_Fd0FEH.animating_Fd0FEH {
+  pointer-events: none;
+}
+.layers_Fd0FEH > .layer_Fd0FEH.animating_Fd0FEH * {
+  pointer-events: none !important;
+}
+.bg_Fd0FEH {
+  background: var(
+    --background-gradient-app-frame,
+    var(--background-base-lowest)
+  );
+  inset: 0;
+  position: absolute;
+}
+.refresh-fast-follow-guild-bg .bg_Fd0FEH {
+  background: var(--background-gradient-app-frame, var(--app-frame-background));
+}
+.platform-win .layer_Fd0FEH {
+  padding-top: 22px;
+  top: -22px;
+}
+.platform-win .bg_Fd0FEH {
+  top: -22px;
+}
+.stop-animations * {
+  animation: none !important;
+  transition-property: none !important;
+}
+.layer_Fd0FEH {
+  background-color: var(--background-base-low);
+}
+.layer_Fd0FEH.baseLayer_Fd0FEH {
+  background-color: transparent;
+}
+.app_QbT-Jy {
+  background-color: var(--background-base-lowest);
+  display: flex;
+  flex-direction: column;
+  inset: 0;
+  position: absolute;
+}
+.app_QbT-Jy button {
+  cursor: pointer;
+}
+.layers_QbT-Jy {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  --devtools-sidebar-width: 0;
+}
+
+/*# sourceMappingURL=555956.27bceaaedac7a388.css.map*/

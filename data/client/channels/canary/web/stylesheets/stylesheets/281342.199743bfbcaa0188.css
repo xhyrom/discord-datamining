@@ -1,0 +1,157 @@
+.emojiSection_Gl3WZ2 {
+  padding: var(--custom-message-helpers-popout-padding-width);
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+.customEmojiLabel_Gl3WZ2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.emojiPopout_Gl3WZ2 {
+  max-width: calc(var(--custom-message-helpers-popout-container-width) * 1.25);
+  min-width: var(--custom-message-helpers-popout-container-width);
+  width: auto;
+}
+.emojiPopout_Gl3WZ2 .customEmojiLabel_Gl3WZ2,
+.emojiPopout_Gl3WZ2 .emojiDescription_Gl3WZ2,
+.emojiPopout_Gl3WZ2 .guildSection_Gl3WZ2 {
+  contain: inline-size;
+}
+.packEmojiPopout_Gl3WZ2 {
+  box-sizing: border-box;
+  max-width: calc(100vw - var(--space-32));
+  min-width: 0;
+  padding: var(--space-16);
+  width: 320px;
+}
+.packEmojiPopout_Gl3WZ2 .emojiSection_Gl3WZ2 {
+  padding: 0;
+}
+.emojiName_Gl3WZ2 {
+  overflow-wrap: anywhere;
+}
+.theme-dark .betaTag_Gl3WZ2 {
+  background-color: #fff;
+  color: var(--premium-tier-2-pink-for-gradients-2);
+}
+.theme-light .betaTag_Gl3WZ2 {
+  background: linear-gradient(
+    to right,
+    var(--premium-tier-2-pink-for-gradients),
+    var(--premium-tier-2-pink-for-gradients-2),
+    var(--premium-tier-2-purple-for-gradients)
+  );
+  color: var(--white);
+}
+.primaryEmoji_Gl3WZ2 {
+  margin-top: 4px;
+  min-height: var(--custom-emoji-size-jumbo-emoji);
+  min-width: var(--custom-emoji-size-jumbo-emoji);
+}
+.ctaButton_Gl3WZ2 {
+  margin: 16px auto 0;
+}
+.guildSection_Gl3WZ2 {
+  background-color: var(--background-base-lower);
+  padding: var(--custom-message-helpers-popout-padding-width);
+}
+.guildTitle_Gl3WZ2 {
+  color: var(--text-default);
+  margin-bottom: 8px;
+}
+.guildIcon_Gl3WZ2 {
+  cursor: pointer;
+}
+.guildIcon_Gl3WZ2,
+.guildIconNotClickable_Gl3WZ2 {
+  height: 100%;
+  width: 100%;
+}
+.guildBadge_Gl3WZ2 {
+  margin-inline-end: 4px;
+  min-width: 16px;
+}
+.guildName_Gl3WZ2 {
+  cursor: pointer;
+}
+.showMoreEmojis_Gl3WZ2 {
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  font-weight: var(--font-weight-semibold);
+  margin-top: 8px;
+  transition: color 0.125s;
+}
+.showMoreEmojis_Gl3WZ2:hover {
+  color: var(--interactive-text-active);
+}
+.showMoreEmojisArrow_Gl3WZ2 {
+  height: 16px;
+  inset-inline-start: 4px;
+  position: relative;
+  width: 16px;
+}
+.full-motion .showMoreEmojisArrow_Gl3WZ2 {
+  transition: transform 0.1s;
+}
+.showMoreEmojisArrow_Gl3WZ2.showMoreEmojisArrowCollapsed_Gl3WZ2 {
+  transform: rotate(-90deg);
+}
+.otherEmojisContainer_Gl3WZ2 {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.otherEmoji_Gl3WZ2 {
+  flex-basis: calc(16.66667% - 4px);
+  height: 32px;
+  margin: 4px 2px;
+  min-width: 32px;
+  width: 32px;
+}
+.truncatingText_Gl3WZ2 {
+  min-width: 0;
+}
+.dotSeparator_Gl3WZ2 {
+  background-color: var(--background-mod-muted);
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: 4px;
+  margin: 0 8px;
+  width: 4px;
+}
+.theme-light .popoutContent_Gl3WZ2,
+.theme-light .popoutLoader_Gl3WZ2 {
+  background-color: var(--background-surface-high);
+  box-shadow: var(--shadow-border), var(--shadow-high);
+}
+.joinGuildLink_Gl3WZ2 {
+  color: var(--text-link);
+  cursor: pointer;
+}
+.joinGuildLink_Gl3WZ2:focus,
+.joinGuildLink_Gl3WZ2:hover {
+  text-decoration: underline;
+}
+.inventoryCtaButton_Gl3WZ2 {
+  margin: 8px auto 0;
+}
+.ctaDescription_Gl3WZ2 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+.nitroWheel_Gl3WZ2 {
+  margin-inline-end: 8px;
+}
+.betaTag_Gl3WZ2 {
+  inset-inline-end: -8px;
+  position: absolute;
+  top: -4px;
+}
+
+/*# sourceMappingURL=281342.199743bfbcaa0188.css.map*/

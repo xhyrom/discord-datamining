@@ -1,0 +1,277 @@
+.upsell_jPuskz {
+  align-items: center;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-12);
+}
+.upsellText_jPuskz {
+  flex: 1;
+}
+.popout_i44TZ4 {
+  --custom-badge-tile-size: 48;
+  --custom-badge-grid-width: calc(
+    var(--custom-badge-tile-size) * 6 * 1px + var(--space-xs) * 5
+  );
+  background: var(--background-surface-higher);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--elevation-low);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  outline: none;
+  padding: calc(var(--space-md) - 1px);
+  width: var(--custom-badge-grid-width);
+}
+.popoutEmpty_i44TZ4 {
+  width: 300px;
+}
+.content_i44TZ4 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.contentWithUpsell_i44TZ4 {
+  gap: var(--space-8);
+}
+.header_i44TZ4 {
+  flex-direction: column;
+}
+.header_i44TZ4,
+.titleRow_i44TZ4 {
+  display: flex;
+  gap: var(--space-4);
+}
+.titleRow_i44TZ4 {
+  align-items: center;
+}
+.nitroIcon_i44TZ4 {
+  color: var(--icon-default);
+}
+.emptyState_i44TZ4 {
+  padding-block: var(--space-20);
+}
+.badgeGrid_i44TZ4 {
+  display: grid;
+  gap: var(--space-xs);
+  grid-template-columns: repeat(6, calc(var(--custom-badge-tile-size) * 1px));
+  isolation: isolate;
+  position: relative;
+}
+.gridDropBackdrop_i44TZ4 {
+  inset: 0;
+  position: absolute;
+  z-index: -2;
+}
+.dragTarget_i44TZ4 {
+  cursor: grab;
+  position: relative;
+}
+.dragTarget_i44TZ4:active {
+  cursor: grabbing;
+}
+.isPointerDragging_i44TZ4 .dragTarget_i44TZ4:before {
+  content: "";
+  inset: calc(var(--space-xs) / -2);
+  position: absolute;
+  z-index: -1;
+}
+.dragHandle_i44TZ4 {
+  align-items: center;
+  border-radius: var(--radius-sm);
+  color: var(--white);
+  display: flex;
+  inset: 0;
+  justify-content: flex-start;
+  opacity: 0;
+  padding-inline-start: var(--space-4);
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+.dragHandle_i44TZ4:focus-visible {
+  background: var(--opacity-black-72);
+  opacity: 1;
+  pointer-events: auto;
+}
+.isDragging_i44TZ4 {
+  opacity: 0.15;
+}
+.dragPreview_i44TZ4 {
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-high);
+  height: calc(var(--custom-badge-tile-size) * 1px);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  opacity: 0.85;
+  pointer-events: none;
+  position: fixed;
+  width: calc(var(--custom-badge-tile-size) * 1px);
+  will-change: transform;
+  z-index: 1000;
+}
+.dropIndicatorAfter_i44TZ4:after,
+.dropIndicatorBefore_i44TZ4:after {
+  background-color: var(--icon-strong);
+  border-radius: 4px;
+  content: "";
+  display: block;
+  inset-block: 0;
+  position: absolute;
+  width: 2px;
+}
+.dropIndicatorBefore_i44TZ4:after {
+  inset-inline-start: calc(var(--space-xs) / -2 - 1px);
+}
+.dropIndicatorAfter_i44TZ4:after {
+  inset-inline-end: calc(var(--space-xs) / -2 - 1px);
+}
+.badgeTileContainer_i44TZ4 {
+  height: calc(var(--custom-badge-tile-size) * 1px);
+  position: relative;
+  width: calc(var(--custom-badge-tile-size) * 1px);
+}
+.badgeTile_i44TZ4 {
+  align-items: center;
+  background: var(--background-mod-subtle);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.badgeTileContainer_i44TZ4.isInteracting_i44TZ4 .badgeTile_i44TZ4,
+.badgeTileContainer_i44TZ4:has(:focus-visible) .badgeTile_i44TZ4,
+.badgeTileContainer_i44TZ4:hover .badgeTile_i44TZ4 {
+  transform: scale(calc(1 + 4 / var(--custom-badge-tile-size)));
+}
+.full-motion .badgeTile_i44TZ4 {
+  transition: transform 0.1s ease;
+  will-change: transform;
+}
+.badgeTileIcon_i44TZ4 {
+  height: 28px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  pointer-events: none;
+  width: 28px;
+}
+.badgeTileIconHidden_i44TZ4 {
+  opacity: 0.3;
+}
+.overflowButton_i44TZ4 {
+  background: linear-gradient(
+      var(--background-mod-normal),
+      var(--background-mod-normal)
+    ),
+    var(--background-surface-highest);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-round);
+  box-shadow: var(--shadow-low);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 24px;
+  inset-block-start: -6px;
+  inset-inline-end: -6px;
+  opacity: 0;
+  transition: opacity 50ms ease-in;
+  width: 24px;
+}
+.hiddenIndicator_i44TZ4,
+.overflowButton_i44TZ4 {
+  align-items: center;
+  color: var(--icon-default);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.hiddenIndicator_i44TZ4 {
+  height: 20px;
+  inset-block-start: 4px;
+  inset-inline-end: 4px;
+  pointer-events: none;
+  width: 20px;
+}
+.badgeTileContainer_i44TZ4.isInteracting_i44TZ4 .overflowButton_i44TZ4,
+.badgeTileContainer_i44TZ4:hover .overflowButton_i44TZ4,
+.overflowButton_i44TZ4:focus-visible {
+  opacity: 1;
+  transition: opacity 0.15s ease-out;
+}
+.tag_J5YRE1 {
+  align-items: center;
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 20px;
+  justify-content: center;
+  position: relative;
+  width: 20px;
+}
+.rarity-common_J5YRE1 {
+  background: var(--badge-common-background);
+  border: 1px solid var(--badge-common-border);
+  color: var(--badge-common-text);
+}
+.rarity-epic_J5YRE1,
+.rarity-mythic_J5YRE1,
+.rarity-rare_J5YRE1 {
+  border: 1px solid transparent;
+}
+.rarity-epic_J5YRE1:before,
+.rarity-mythic_J5YRE1:before,
+.rarity-rare_J5YRE1:before {
+  border-radius: inherit;
+  content: "";
+  inset: -1px;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 1px;
+  pointer-events: none;
+  position: absolute;
+}
+.rarity-rare_J5YRE1:before {
+  background: linear-gradient(
+    -78deg,
+    var(--badge-rare-border-gradient-start),
+    var(--badge-rare-border-gradient-end)
+  );
+}
+.rarity-epic_J5YRE1:before {
+  background: linear-gradient(
+    -78deg,
+    var(--badge-epic-border-gradient-start),
+    var(--badge-epic-border-gradient-end)
+  );
+}
+.rarity-mythic_J5YRE1:before {
+  background: linear-gradient(
+    -78deg,
+    var(--badge-mythic-border-gradient-start),
+    var(--badge-mythic-border-gradient-end)
+  );
+}
+.rarity-rare_J5YRE1 {
+  background: var(--badge-rare-background);
+  color: var(--badge-rare-text);
+}
+.rarity-epic_J5YRE1 {
+  background: var(--badge-epic-background);
+  color: var(--badge-epic-text);
+}
+.rarity-mythic_J5YRE1 {
+  background: var(--badge-mythic-background);
+  color: var(--badge-mythic-text);
+}
+
+/*# sourceMappingURL=363189.c9394316d42b34ab.css.map*/
