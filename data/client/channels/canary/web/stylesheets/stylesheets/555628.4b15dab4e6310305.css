@@ -82,12 +82,17 @@
   }
   .fullScreenOnMobile__8a031 .container__8a031 {
     --custom-border-radius: 0;
-    --custom-modal-padding-top: calc(
-      var(--custom-app-top-bar-height) + var(--custom-modal-padding-sm)
-    );
+    --custom-modal-padding-top: var(--custom-modal-padding-sm);
     border: none;
     height: 100%;
     overflow-y: auto;
+  }
+  .platform-linux .fullScreenOnMobile__8a031 .container__8a031,
+  .platform-osx .fullScreenOnMobile__8a031 .container__8a031,
+  .platform-win .fullScreenOnMobile__8a031 .container__8a031 {
+    --custom-modal-padding-top: calc(
+      var(--custom-app-top-bar-height) + var(--custom-modal-padding-sm)
+    );
   }
 }
 @media (max-height: 550px) {
@@ -412,4 +417,4 @@
   flex-basis: 60%;
 }
 
-/*# sourceMappingURL=555628.eb33ac71a27a7069.css.map*/
+/*# sourceMappingURL=555628.4b15dab4e6310305.css.map*/
