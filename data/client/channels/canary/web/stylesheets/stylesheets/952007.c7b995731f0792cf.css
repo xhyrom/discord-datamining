@@ -1154,7 +1154,7 @@
   );
   --background-feedback-notification: var(--red-new-50);
   --background-feedback-positive: var(--green-new-80);
-  --background-feedback-warning: var(--yellow-new-80);
+  --background-feedback-warning: var(--yellow-new-55);
   --background-mod-muted: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-20-hsl) / 0.2);
@@ -4162,7 +4162,7 @@
   );
   --background-feedback-notification: var(--red-new-50);
   --background-feedback-positive: var(--green-new-80);
-  --background-feedback-warning: var(--yellow-new-80);
+  --background-feedback-warning: var(--yellow-new-55);
   --background-mod-muted: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
@@ -7154,7 +7154,7 @@
   );
   --background-feedback-notification: var(--red-new-50);
   --background-feedback-positive: var(--green-new-80);
-  --background-feedback-warning: var(--yellow-new-80);
+  --background-feedback-warning: var(--yellow-new-55);
   --background-mod-muted: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --background-mod-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
@@ -10146,7 +10146,7 @@
   );
   --background-feedback-notification: var(--red-new-50);
   --background-feedback-positive: var(--green-new-80);
-  --background-feedback-warning: var(--yellow-new-80);
+  --background-feedback-warning: var(--yellow-new-55);
   --background-mod-muted: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-20-hsl) / 0.2);
@@ -22616,4 +22616,4 @@
   --motion-spring-subtle-duration: 598ms;
 }
 
-/*# sourceMappingURL=952007.929dbf6094392451.css.map*/
+/*# sourceMappingURL=952007.c7b995731f0792cf.css.map*/
