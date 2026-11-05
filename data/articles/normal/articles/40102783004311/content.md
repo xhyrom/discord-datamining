@@ -584,52 +584,6 @@
   further.
 </p>
 <h2 id="h_01KQJNEWWHB6E6WFRAF5WTPM8E">Rust Game Shop</h2>
-<div class="mega-box">
-  <p>
-    <strong>From </strong>October 22 (11:00 AM PT)
-    <strong>through </strong>November 5 (11:00 AM PT),
-    <strong
-      >eligible Nitro subscribers can claim the exclusive Zombie Wumpus Plush
-      in-game item in the Rust Game Shop on Discord using Discord Orbs. Nitro
-      monthly and Nitro yearly subscriptions are eligible. Nitro Basic, trial
-      subscriptions, and other subscription types are not eligible for this
-      offer. Claiming with Orbs applies to self-purchases only and cannot be
-      used for gifted items purchased for other users. All users, including
-      Nitro subscribers, can also purchase the </strong
-    ><strong>Zombie Wumpus Plush</strong
-    ><strong>
-      at its regular price in the Rust Game Shop, during the offer
-      period.</strong
-    >
-  </p>
-  <p>
-    <strong
-      >For more information about Discord Orbs, including how to use and redeem
-      them, please see the</strong
-    ><a
-      href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
-      ><strong> </strong
-      ><strong
-        ><span class="wysiwyg-underline">Discord Orbs FAQ</span></strong
-      ></a
-    ><strong
-      >. For details around eligibility, terms and policy please see the</strong
-    ><a
-      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
-      ><strong> </strong
-      ><strong
-        ><span class="wysiwyg-underline"
-          >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
-        ></strong
-      ></a
-    >
-  </p>
-</div>
-<div class="info-box">
-  <strong>Note:</strong> Users who subscribe to Nitro on mobile are still
-  eligible for this offer. However, they must sign in on the Discord desktop or
-  web app to claim the Zombie Wumpus Plush item in the Rust Game Shop.
-</div>
 <p>
   <strong
     >Q: I'm having trouble linking my Rust account to receive my item. What
