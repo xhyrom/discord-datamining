@@ -1,0 +1,144 @@
+.displayNameRow_C2XpHA {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  line-height: 24px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+.displayNameRow_C2XpHA.lg_C2XpHA {
+  line-height: 30px;
+}
+.displayNameRow_C2XpHA .botTag_C2XpHA {
+  vertical-align: baseline;
+}
+.displayNameTrailing_C2XpHA {
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  height: 1lh;
+}
+.clickable_C2XpHA {
+  cursor: pointer;
+}
+.displayName_C2XpHA {
+  max-height: 3lh;
+  word-break: break-word;
+}
+.displayName_C2XpHA.noStyles_C2XpHA {
+  overflow: hidden;
+}
+.clickable_C2XpHA:focus-visible .displayName_C2XpHA.noStyles_C2XpHA,
+.clickable_C2XpHA:hover .displayName_C2XpHA.noStyles_C2XpHA {
+  text-decoration: underline;
+}
+.usernameAndPronounsRow_C2XpHA {
+  align-items: center;
+  -moz-column-gap: 9.33px;
+  column-gap: 9.33px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+.user-profile-embed .usernameAndPronounsRow_C2XpHA,
+.user-profile-popout .usernameAndPronounsRow_C2XpHA,
+.user-profile-sidebar .usernameAndPronounsRow_C2XpHA {
+  row-gap: 2px;
+}
+.user-profile-modal-v2 .usernameAndPronounsRow_C2XpHA {
+  row-gap: 4px;
+}
+.user-profile-modal .usernameAndPronounsRow_C2XpHA {
+  row-gap: 8px;
+}
+.usernameAndPronounsRow_C2XpHA.hasPronouns_C2XpHA,
+.usernameAndPronounsRow_C2XpHA.isBot_C2XpHA {
+  -moz-column-gap: 6px;
+  column-gap: 6px;
+}
+.usernameAndPronounsRow_C2XpHA.isBot_C2XpHA {
+  margin-block-start: 8px;
+}
+.userTag_C2XpHA {
+}
+.userTagClickable_C2XpHA {
+  align-items: center;
+  display: flex;
+  height: 24px;
+}
+.pronounsTooltip_C2XpHA {
+  min-width: 0;
+}
+.pronouns_C2XpHA {
+  margin-inline-end: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.userTagUsername_C2XpHA {
+  color: var(--text-strong);
+  display: inline;
+  text-overflow: unset;
+  vertical-align: top;
+  white-space: normal;
+  word-break: break-all;
+}
+.clickable_C2XpHA:focus-visible .userTagUsername_C2XpHA,
+.clickable_C2XpHA:hover .userTagUsername_C2XpHA {
+  text-decoration: underline;
+}
+.userTagDiscriminator_C2XpHA {
+  color: var(--text-strong);
+  vertical-align: top;
+}
+.dotSpacer_C2XpHA {
+  background-color: var(--text-default);
+  border-radius: var(--radius-round);
+  height: 4px;
+  margin-inline: 1px;
+  width: 4px;
+}
+.enable-forced-colors .dotSpacer_C2XpHA {
+  background-color: CanvasText;
+}
+.guildTagPill_C2XpHA.guildTagPill_C2XpHA {
+  background: var(--background-mod-subtle);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  height: 24px;
+  margin: 0 auto;
+  padding-inline: var(--space-8);
+  transition: background 50ms ease-in;
+}
+.custom-user-profile-theme.theme-light
+  .guildTagPill_C2XpHA.guildTagPill_C2XpHA {
+  background: var(--opacity-white-24);
+}
+.guildTagPill_C2XpHA.guildTagPill_C2XpHA:hover {
+  background-color: var(--background-mod-strong);
+  transition: background 0.15s ease-out;
+}
+.custom-user-profile-theme.theme-light
+  .guildTagPill_C2XpHA.guildTagPill_C2XpHA:hover {
+  background-color: var(--opacity-white-40);
+}
+.enable-forced-colors .displayName_C2XpHA {
+  color: CanvasText;
+  forced-color-adjust: none;
+}
+.enable-forced-colors .clickable_C2XpHA .displayName_C2XpHA {
+  forced-color-adjust: auto;
+}
+.enable-forced-colors .clickable_C2XpHA:focus-visible .displayName_C2XpHA,
+.enable-forced-colors .clickable_C2XpHA:hover .displayName_C2XpHA {
+  color: CanvasText;
+  forced-color-adjust: none;
+}
+
+/*# sourceMappingURL=866212.88a715ca92d49a6e.css.map*/

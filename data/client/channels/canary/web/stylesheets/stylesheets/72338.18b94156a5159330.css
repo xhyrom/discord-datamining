@@ -1,0 +1,301 @@
+.modal_N-Y7ZJ {
+  width: 408px;
+}
+.container_N-Y7ZJ {
+  display: flex;
+  flex-direction: column;
+  max-height: 720px;
+}
+.header_N-Y7ZJ {
+  flex-grow: 0;
+  overflow: hidden;
+  padding: 24px 16px 0;
+}
+.stepHeader_N-Y7ZJ {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 16px;
+  text-transform: none;
+}
+.title_N-Y7ZJ {
+  text-align: center;
+}
+.closeButton_N-Y7ZJ {
+  inset-inline-end: 12px;
+  position: absolute;
+  top: 12px;
+  z-index: 1000;
+}
+.illustration_N-Y7ZJ {
+  margin-bottom: 16px;
+}
+.consentContent_N-Y7ZJ {
+  padding-bottom: 16px;
+}
+.consentHeader_N-Y7ZJ {
+  padding: 32px 0;
+}
+.body_N-Y7ZJ {
+  padding-bottom: 16px;
+  text-align: center;
+}
+.body_N-Y7ZJ p {
+  margin: 8px 0;
+}
+.footer_N-Y7ZJ {
+  align-items: center;
+  background-color: var(--background-base-lowest);
+  flex-direction: column;
+}
+.footerButton_N-Y7ZJ {
+  align-self: stretch;
+}
+.launchIcon_N-Y7ZJ {
+  translate: 0 -1px;
+  vertical-align: middle;
+}
+.valueProps_N-Y7ZJ {
+  background-color: var(--background-base-lower);
+  border-radius: var(--radius-sm);
+  margin-top: 24px;
+}
+.valueProp_N-Y7ZJ {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  text-align: start;
+}
+.valuePropIconContainer_N-Y7ZJ {
+  color: var(--interactive-text-default);
+  display: flex;
+  justify-content: center;
+  margin-inline-end: 12px;
+  padding: 4px;
+}
+.valuePropText_N-Y7ZJ {
+  display: flex;
+  flex-direction: column;
+}
+.valuePropDivider_N-Y7ZJ {
+  background-color: var(--border-subtle);
+  flex: 1;
+  height: 1px;
+  margin-inline: 56px 12px;
+}
+.slideContainer_N-Y7ZJ {
+  display: flex;
+  flex-direction: column;
+  max-height: clamp(200px, calc(100vh - 80px), 720px);
+}
+.qrCodeOverlay_d4-PpI {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+.qrCodeOverlay_d4-PpI img {
+  image-rendering: crisp-edges;
+}
+.size-40_d4-PpI {
+  height: 40px;
+  width: 40px;
+}
+.size-60_d4-PpI {
+  height: 60px;
+  width: 60px;
+}
+.qrCodeOverlayContainer_d4-PpI {
+  display: flex;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.qrCodeContainer_d4-PpI {
+  border-radius: var(--radius-xs);
+  padding: var(--space-8);
+}
+.row_JAZXsg {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+  min-width: 100%;
+}
+.link_JAZXsg {
+  background-color: var(--background-base-low);
+  border: 1px solid var(--border-normal);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  color: var(--text-muted);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  padding-block: var(--space-8);
+  padding-inline: var(--space-16);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container_PK0nhg {
+  align-items: stretch;
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+.card_PK0nhg {
+  background-color: var(--background-base-low);
+  border: 1px solid var(--border-normal);
+  border-radius: var(--radius-lg);
+  gap: var(--space-16);
+  padding-block: var(--space-16) var(--space-24);
+  padding-inline: var(--space-24);
+}
+.card_PK0nhg,
+.header_PK0nhg {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.header_PK0nhg {
+  gap: var(--space-4);
+}
+.divider_PK0nhg {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+  width: 100%;
+}
+.divider_PK0nhg:after,
+.divider_PK0nhg:before {
+  background-color: var(--border-subtle);
+  content: "";
+  flex: 1;
+  height: 1px;
+}
+.text_iPdE83 {
+  margin-bottom: var(--space-4);
+  margin-top: var(--space-16);
+  text-align: center;
+}
+.card_7GJfGX {
+  background-color: var(--background-surface-highest);
+  border-radius: var(--radius-lg, 16px);
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+.card_7GJfGX,
+.row_7GJfGX {
+  display: flex;
+}
+.row_7GJfGX {
+  align-items: center;
+  padding: var(--space-12) var(--space-16);
+  position: relative;
+}
+.row_7GJfGX:not(:first-child):before {
+  background-color: var(--border-subtle);
+  content: "";
+  height: 1px;
+  inset-inline-end: 0;
+  inset-inline-start: calc(var(--space-16) + 40px + var(--space-12));
+  position: absolute;
+  top: 0;
+}
+.avatarWrapper_7GJfGX {
+  flex-shrink: 0;
+}
+.details_7GJfGX {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  padding-inline-end: var(--space-4);
+  padding-inline-start: var(--space-12);
+}
+.actions_7GJfGX {
+  gap: var(--space-8);
+}
+.actionButton_7GJfGX,
+.actions_7GJfGX {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+}
+.actionButton_7GJfGX {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+.acceptButton_7GJfGX {
+  background-color: var(--status-positive);
+  color: var(--white);
+}
+.declineButton_7GJfGX {
+  background-color: var(--background-surface-highest);
+  border: 1px solid var(--border-strong);
+  color: var(--interactive-text-default);
+}
+.declineButton_7GJfGX:hover {
+  color: var(--interactive-text-hover);
+}
+.actionIcon_7GJfGX {
+  height: 20px;
+  width: 20px;
+}
+.logout_0F3_JZ {
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+.backRow_0F3_JZ {
+  padding: var(--custom-modal-padding-md, 16px)
+    var(--custom-modal-padding, 24px) 0;
+}
+.container_XwrLyS {
+  background-color: var(--background-surface-higher);
+  border-radius: 8px;
+  padding: var(--space-16);
+}
+.title_XwrLyS {
+  margin-bottom: var(--space-8);
+}
+.description_XwrLyS {
+  margin-bottom: var(--space-16);
+}
+.getXboxApp_LGWSzq {
+  align-items: center;
+  background: var(--background-mod-normal);
+  border-radius: var(--radius-sm);
+  display: flex;
+  margin-top: 24px;
+  padding: 16px;
+}
+.getXboxAppBody_LGWSzq {
+  text-align: start;
+}
+.getXboxAppHeading_LGWSzq {
+  display: flex;
+}
+.getXboxAppQR_LGWSzq {
+  margin-inline-start: 16px;
+}
+.xboxLogoBox_LGWSzq {
+  align-items: center;
+  background-color: var(--platform-xbox);
+  border-radius: var(--radius-xs);
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  margin-inline-end: 10px;
+  width: 24px;
+}
+.xboxLogoBox_LGWSzq img {
+  height: 20px;
+  width: 20px;
+}
+
+/*# sourceMappingURL=72338.18b94156a5159330.css.map*/

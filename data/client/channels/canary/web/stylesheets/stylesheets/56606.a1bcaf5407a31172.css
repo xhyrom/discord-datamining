@@ -1,0 +1,108 @@
+.container_J1Adu_ {
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  color: var(--channels-default);
+  display: block;
+  padding: 1px 0;
+  transition: none;
+}
+.container_J1Adu_ .muted_J1Adu_ {
+  color: var(--text-muted);
+}
+.childContainer_J1Adu_ {
+  border-radius: inherit;
+  padding-block: 0;
+  padding-inline: var(--space-xs) 8px;
+}
+.childContainer_J1Adu_.nameplated_J1Adu_ {
+  padding-inline-end: 32px;
+  position: relative;
+}
+.muted_J1Adu_ .avatar_J1Adu_ {
+  opacity: 0.3;
+}
+.clickable_J1Adu_.container_J1Adu_:hover {
+  color: var(--interactive-text-hover);
+}
+.clickable_J1Adu_.container_J1Adu_:hover .muted_J1Adu_ {
+  color: var(--interactive-text-hover);
+}
+.clickable_J1Adu_.container_J1Adu_:hover .avatar_J1Adu_ {
+  opacity: 1;
+}
+.clickable_J1Adu_.container_J1Adu_:active,
+.highlighted_J1Adu_.container_J1Adu_,
+.selected_J1Adu_.container_J1Adu_ {
+  color: var(--interactive-text-active);
+}
+.layout_J1Adu_ {
+  align-items: center;
+  border-radius: inherit;
+  display: flex;
+  flex: 0 1 auto;
+  height: 42px;
+  max-width: 100%;
+  min-width: 0;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 1;
+}
+.wrappedLayout_J1Adu_ {
+  height: auto;
+  padding: 5px 8px;
+}
+.clickable_J1Adu_:hover .childContainer_J1Adu_ {
+  background-color: var(--interactive-background-hover);
+  cursor: pointer;
+}
+.clickable_J1Adu_:active .childContainer_J1Adu_ {
+  background-color: var(--interactive-background-active);
+}
+.selected_J1Adu_ .childContainer_J1Adu_ {
+  background-color: var(--interactive-background-selected);
+}
+.avatar_J1Adu_ {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  height: 32px;
+  justify-content: center;
+  margin-inline-end: 12px;
+  width: 32px;
+}
+.content_J1Adu_ {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.name_J1Adu_ {
+  display: flex;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+.wrappedName_J1Adu_ {
+  overflow: none;
+  white-space: normal;
+}
+.nameAndDecorators_J1Adu_ {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+.subText_J1Adu_ {
+  margin-top: -2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.subText_J1Adu_:empty {
+  display: none;
+}
+.children_J1Adu_ {
+  flex: 0 0 auto;
+  margin-inline-start: 8px;
+}
+
+/*# sourceMappingURL=56606.a1bcaf5407a31172.css.map*/

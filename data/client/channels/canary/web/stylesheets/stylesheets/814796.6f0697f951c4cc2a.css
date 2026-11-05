@@ -1,0 +1,152 @@
+.empty_Bce46W {
+  fill: var(--background-base-low);
+  padding: 16px;
+}
+.headerText_Bce46W {
+  flex: 1;
+  margin-inline-end: var(--space-xs);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.privateChannelsHeaderContainer_Bce46W {
+  align-items: center;
+  display: flex;
+  height: var(--size-24);
+  justify-content: space-between;
+  padding-inline: var(--space-md) var(--space-xs);
+  padding-bottom: var(--space-4);
+  padding-top: 0;
+}
+.privateChannelsHeaderContainer_Bce46W:hover {
+  color: var(--interactive-text-hover);
+}
+.enlarge-target-size .privateChannelsHeaderContainer_Bce46W {
+  padding-inline: var(--space-md) calc(var(--space-xs) - var(--space-4));
+}
+.privateChannelRecipientsInviteButtonIcon_Bce46W {
+  flex: unset;
+  height: 16px;
+  margin-inline: 0;
+  width: 16px;
+}
+.headerActions_Bce46W {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+}
+.enlarge-target-size .headerActions_Bce46W {
+  gap: var(--space-4);
+}
+@media (hover: hover) {
+  .moreButton_Bce46W {
+    opacity: 0;
+  }
+  .moreButton_Bce46W[aria-expanded="true"],
+  .privateChannelsHeaderContainer_Bce46W:focus-within .moreButton_Bce46W,
+  .privateChannelsHeaderContainer_Bce46W:hover .moreButton_Bce46W {
+    opacity: 1;
+  }
+}
+.privateChannelRecipientsInviteButtonIcon_Bce46W,
+.privateChannelRecipientsInviteButtonIconContainer_Bce46W {
+  height: 16px;
+  width: 16px;
+}
+.enlarge-target-size .privateChannelRecipientsInviteButtonIconContainer_Bce46W {
+  box-sizing: border-box;
+  height: 24px;
+  padding: var(--space-4);
+  width: 24px;
+}
+.scroller_Bce46W {
+  background: var(--background-gradient-high, var(--background-base-lowest));
+  margin-bottom: calc(
+    var(--custom-app-panels-height, 0) + var(--space-xs) - 16px
+  );
+  padding-bottom: 16px;
+  padding-inline-end: 8px;
+}
+.has-webkit-scrollbar .scroller_Bce46W {
+  padding-inline-end: 0;
+}
+.scroller_Bce46W::-webkit-scrollbar-track {
+  margin-bottom: 16px;
+}
+.enable-forced-colors .privateChannelsHeaderContainer_Bce46W {
+  color: CanvasText;
+  forced-color-adjust: none;
+}
+.enable-forced-colors .privateChannelRecipientsInviteButtonIcon_Bce46W {
+  border: 1px solid ButtonFace;
+}
+.enable-forced-colors .privateChannelRecipientsInviteButtonIcon_Bce46W:hover {
+  border-color: ButtonText;
+}
+.marketingBadgeTooltip_SMljHk {
+  margin-inline-start: 10px;
+  max-width: 100%;
+  position: relative;
+}
+.marketingBadgeTooltipContent_SMljHk {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.newBadge_SMljHk {
+  align-items: center;
+  display: inline-flex;
+  z-index: 1;
+}
+.marketingButtonBackgroundNew_SMljHk {
+  border-radius: inherit;
+  bottom: 0;
+  height: 100%;
+  inset-inline-end: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.marketingButtonBackgroundImage_SMljHk {
+  border-radius: inherit;
+  height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: bottom right;
+  object-position: bottom right;
+}
+.marketingButtonBackgroundImageFaded_SMljHk {
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 0,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.3) 60%,
+    rgba(0, 0, 0, 0.6) 70%,
+    #000 85%,
+    #000
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 0,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.3) 60%,
+    rgba(0, 0, 0, 0.6) 70%,
+    #000 85%,
+    #000
+  );
+}
+.countDown_-jNBYH {
+  display: flex;
+}
+.sparkleStar1_-jNBYH {
+  height: 10px;
+  margin-top: 9px;
+  margin-inline-end: 4px;
+  width: 10px;
+}
+.sparkleStar2_-jNBYH {
+  margin-inline-end: 2px;
+}
+
+/*# sourceMappingURL=814796.6f0697f951c4cc2a.css.map*/
