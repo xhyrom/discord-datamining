@@ -1,0 +1,14 @@
+.wrapper_LskjUO {
+  align-items: center;
+  display: flex;
+  margin-top: 4px;
+}
+.icon_LskjUO {
+  display: block;
+  margin-inline-end: 8px;
+}
+.errorIcon_LskjUO {
+  color: var(--icon-feedback-critical);
+}
+
+/*# sourceMappingURL=706073.b2e669f29e2a6096.css.map*/

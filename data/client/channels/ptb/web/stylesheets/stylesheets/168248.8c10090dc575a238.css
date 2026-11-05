@@ -1,0 +1,29 @@
+.editor_SHcSVi {
+  caret-color: var(--text-default);
+  text-align: start;
+  white-space: break-spaces !important;
+  word-break: break-word;
+}
+.editor_SHcSVi pre {
+  max-width: none;
+}
+.placeholder_SHcSVi {
+  color: var(--channel-text-area-placeholder);
+  inset-inline: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+.enable-forced-colors .placeholder_SHcSVi {
+  color: GrayText;
+}
+.theme-dark.custom-theme-background.custom-client-theme .placeholder_SHcSVi {
+  color: color-mix(in oklab, var(--text-default) 40%, transparent);
+}
+
+/*# sourceMappingURL=168248.8c10090dc575a238.css.map*/

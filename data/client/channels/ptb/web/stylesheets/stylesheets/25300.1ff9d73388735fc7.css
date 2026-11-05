@@ -1,0 +1,100 @@
+.inputWrapper_b-mzk1 {
+  display: flex;
+  flex-direction: column;
+}
+.input_b-mzk1 {
+  background-color: var(--input-background-default);
+  border: 1px solid var(--input-border-default);
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: var(--text-default);
+  font-size: 16px;
+  height: 44px;
+  padding: 12px 10px;
+  transition: border-color 0.2s ease-in-out;
+  width: 100%;
+}
+.input_b-mzk1::-moz-placeholder {
+  color: var(--input-placeholder-text-default);
+  -moz-user-select: none;
+  user-select: none;
+}
+.input_b-mzk1::placeholder {
+  color: var(--input-placeholder-text-default);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.input_b-mzk1:hover {
+  border-color: var(--input-border-hover);
+}
+.input_b-mzk1.focused_b-mzk1,
+.input_b-mzk1:focus {
+  border-color: var(--text-link);
+}
+.input_b-mzk1.error_b-mzk1 {
+  border-color: var(--text-feedback-critical);
+  border-width: 2px;
+  color: var(--text-feedback-critical);
+}
+.input_b-mzk1.success_b-mzk1 {
+  border-color: var(--green-360);
+}
+.input_b-mzk1.disabled_b-mzk1 {
+  border-color: var(--input-border-default);
+  cursor: not-allowed;
+  opacity: 1;
+}
+.input_b-mzk1.editable_b-mzk1 {
+  background-color: transparent;
+  border-color: transparent;
+}
+.input_b-mzk1:hover,
+.input_b-mzk1[readonly] {
+  border: 1px solid var(--input-border-default);
+}
+.input_b-mzk1:not([readOnly]).focused_b-mzk1,
+.input_b-mzk1:not([readOnly]).focused_b-mzk1:hover,
+.input_b-mzk1:not([readOnly]):focus,
+.input_b-mzk1:not([readOnly]):focus:hover {
+  border-color: var(--text-link);
+}
+.disabled_b-mzk1 {
+  cursor: not-allowed;
+  opacity: 0.5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.focused_b-mzk1 {
+  border-color: var(--brand-500);
+  opacity: 1;
+}
+.inputPrefix_b-mzk1 {
+  color: var(--text-muted);
+  font-size: 16px;
+  height: 40px;
+  line-height: normal;
+  padding-top: 10px;
+  padding-inline-start: 20px;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.theme-dark .inputPrefix_b-mzk1 {
+  opacity: 0.5;
+}
+.enable-forced-colors .input_b-mzk1 {
+  border: 1px solid ButtonText;
+}
+.enable-forced-colors .input_b-mzk1:focus {
+  border-color: Highlight;
+}
+.enable-forced-colors .input_b-mzk1.disabled_b-mzk1 {
+  background-color: Canvas;
+  border-color: GrayText;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=25300.1ff9d73388735fc7.css.map*/

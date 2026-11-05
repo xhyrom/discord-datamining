@@ -1,0 +1,104 @@
+.arrowIcon_W1lBQu {
+  height: 24px;
+  transform: rotate(270deg);
+  width: 24px;
+}
+.arrowIconExpanded_W1lBQu {
+  transform: rotate(1turn);
+}
+.rightPipIcon_W1lBQu {
+  margin-inline-start: 16px;
+}
+.leftPipIcon_W1lBQu {
+  margin-inline-end: 16px;
+}
+.participantsButton_W1lBQu {
+  inset-inline-end: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pipHeader_W1lBQu {
+  height: 12px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+.pipHeaderContent_W1lBQu {
+  align-items: center;
+  background-color: var(--black);
+  box-sizing: border-box;
+  display: flex;
+  height: 12px;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 8px;
+  position: absolute;
+}
+.full-motion .pipHeaderContent_W1lBQu {
+  transition: all 0.2s ease-in-out;
+}
+.pipHeaderContentOpen_W1lBQu {
+  background: linear-gradient(
+    var(--black) 0,
+    var(--black) 30%,
+    transparent 100%
+  );
+  cursor: pointer;
+  height: 40px;
+  padding: 8px;
+}
+.pipHeaderButtonsRight_W1lBQu {
+  display: flex;
+}
+.menuIcon_W1lBQu {
+  color: #fff;
+}
+.leaveActivityIcon_W1lBQu {
+  height: 24px;
+  margin-inline-start: 6px;
+  width: 24px;
+}
+.root_t1zeBE {
+  height: 100%;
+  width: 100%;
+}
+.root_t1zeBE.pipMode_t1zeBE {
+  transition: height 0.2s ease-in-out;
+  width: 320px;
+}
+.root_t1zeBE.pipModeShort_t1zeBE {
+  height: 180px;
+}
+.root_t1zeBE.pipModeTall_t1zeBE {
+  height: 410px;
+}
+.root_t1zeBE.hidden_t1zeBE {
+  max-height: 0;
+  transition: none;
+  width: 0;
+}
+.iframe_t1zeBE {
+  height: 100%;
+  min-height: 2px;
+  min-width: 2px;
+  width: 100%;
+}
+.iframe_t1zeBE.pipModeShort_t1zeBE {
+  height: 180px;
+}
+.iframe_t1zeBE.pipModeTall_t1zeBE {
+  height: 410px;
+}
+.pipNonInteractive_t1zeBE {
+  pointer-events: none;
+}
+.activitySensor_t1zeBE {
+  inset: 0;
+  position: absolute;
+}
+.multiPIPMode_t1zeBE {
+  margin-top: 8px;
+}
+
+/*# sourceMappingURL=625000.2f08781d1c73d14e.css.map*/

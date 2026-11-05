@@ -1,0 +1,191 @@
+.row_rAadqU {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: var(--space-8);
+  min-width: 0;
+}
+.title_rAadqU {
+  color: var(--text-subtle);
+  min-width: 0;
+}
+.name_rAadqU {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.emojis_rAadqU {
+  height: var(--space-40);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+.emojis_rAadqU::-webkit-scrollbar {
+  display: none;
+}
+.emojisExpanded_rAadqU {
+  height: auto;
+  overflow: visible;
+}
+.emojiRow_rAadqU {
+  display: flex;
+  gap: var(--space-12);
+  width: -moz-max-content;
+  width: max-content;
+}
+.emojisExpanded_rAadqU .emojiRow_rAadqU {
+  flex-wrap: wrap;
+  width: auto;
+}
+.emojiButton_rAadqU {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  flex: none;
+  height: var(--space-40);
+  justify-content: center;
+  padding: 0;
+  width: var(--space-40);
+}
+.emojiButton_rAadqU:focus-visible,
+.emojiButton_rAadqU:not(:disabled):hover {
+  background-color: var(--interactive-background-hover);
+}
+.emojiButton_rAadqU:disabled {
+  cursor: default;
+}
+.emoji_rAadqU {
+  flex: none;
+  height: var(--space-32);
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: var(--space-32);
+}
+.container_DERYpk {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
+}
+.background_DERYpk {
+  --custom-emoji-packs-gradient-start: var(--illo-pink-40);
+  --custom-emoji-packs-gradient-end: var(--illo-blue-50);
+  background-color: var(--background-surface-high);
+  background-image: radial-gradient(
+      411% 145% at 50% 145%,
+      var(--background-surface-high) 60%,
+      transparent 100%
+    ),
+    linear-gradient(
+      100.32deg,
+      color-mix(
+          in srgb,
+          var(--custom-emoji-packs-gradient-start) 60%,
+          transparent
+        )
+        1.67%,
+      color-mix(
+          in srgb,
+          var(--custom-emoji-packs-gradient-end) 60%,
+          transparent
+        )
+        100%
+    );
+  inset: 0;
+  opacity: 0.5;
+  pointer-events: none;
+  position: absolute;
+}
+.theme-light .background_DERYpk {
+  --custom-emoji-packs-gradient-start: var(--illo-pink-30);
+  --custom-emoji-packs-gradient-end: var(--illo-blue-40);
+}
+.header_DERYpk {
+  flex: none;
+  padding: calc(var(--space-12) + var(--space-10)) var(--space-12)
+    var(--space-10);
+}
+.header_DERYpk,
+.list_DERYpk {
+  position: relative;
+}
+.list_DERYpk {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: var(--space-16);
+  min-height: 0;
+  overflow-y: auto;
+  padding: var(--space-4) var(--space-12) var(--space-16);
+}
+.list_DERYpk::-webkit-scrollbar {
+  display: none;
+}
+.no-webkit-scrollbar .list_DERYpk {
+  scrollbar-width: none;
+}
+.divider_DERYpk {
+  background-color: var(--border-subtle);
+  border: 0;
+  flex: none;
+  height: 1px;
+  margin: 0;
+  width: 100%;
+}
+.enable-forced-colors .background_DERYpk {
+  background-image: none;
+}
+.enable-forced-colors .divider_DERYpk {
+  background-color: CanvasText;
+}
+.container_ZVQtq6 {
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 101;
+}
+.background_ZVQtq6 {
+  background-color: var(--background-base-lower);
+  opacity: 0.98;
+  position: absolute;
+}
+.background_ZVQtq6,
+.content_ZVQtq6 {
+  height: 100%;
+  width: 100%;
+}
+.content_ZVQtq6 {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+}
+.closeButton_ZVQtq6 {
+  cursor: pointer;
+  inset-inline-end: 20px;
+  position: absolute;
+  top: 20px;
+}
+.closeButtonIcon_ZVQtq6 {
+  color: var(--interactive-text-default);
+}
+.description_ZVQtq6,
+.header_ZVQtq6 {
+  text-align: center;
+}
+.upsellImage_ZVQtq6 {
+  width: 124px;
+}
+
+/*# sourceMappingURL=813057.41f1948088e4630c.css.map*/

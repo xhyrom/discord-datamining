@@ -1,0 +1,57 @@
+.errorNotificationContainer_WnAwLj {
+  background-color: rgba(19, 19, 24, 0.95);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-border) var(--shadow-high);
+  position: relative !important;
+}
+.errorNotificationWrapper_WnAwLj {
+  height: auto;
+  position: relative;
+  top: auto;
+  inset-inline: auto;
+  bottom: auto;
+  display: block;
+  margin-top: 24px;
+  margin-inline-start: 24px;
+  width: 300px;
+}
+.errorClickNotification_WnAwLj {
+  width: 300px;
+}
+.stackTraceCode_WnAwLj {
+  font-family: var(--font-code);
+}
+.code_WnAwLj {
+  padding: 15px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+.notificationIcon_WnAwLj {
+  fill: var(--white);
+}
+.popout_9Aa-7R {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.content_9Aa-7R {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  min-height: 0;
+  position: relative;
+  --custom-chat-input-margin-bottom: var(--space-xs);
+}
+.titleBar_9Aa-7R {
+  background: var(
+    --background-gradient-app-frame,
+    var(--background-base-lowest)
+  );
+}
+
+/*# sourceMappingURL=47268.47e1ddb8aa3ad777.css.map*/

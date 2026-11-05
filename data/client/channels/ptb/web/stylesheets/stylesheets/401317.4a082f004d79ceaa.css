@@ -1,0 +1,19 @@
+.wrapper_fGpd5- {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.theme-dark .wrapper_fGpd5- {
+  color: var(--primary-400);
+}
+.theme-dark .forceLightTheme_fGpd5- .wrapper_fGpd5-,
+.theme-light .wrapper_fGpd5- {
+  color: #99aab5;
+}
+
+/*# sourceMappingURL=401317.4a082f004d79ceaa.css.map*/

@@ -1,0 +1,12 @@
+.tile_JPP66i {
+  background-color: var(--primary-700);
+  border-radius: var(--custom-base-tile-border-radius);
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.tile_JPP66i.noBorder_JPP66i {
+  border-radius: 0;
+}
+
+/*# sourceMappingURL=613085.7d6ebb2c0e2c4634.css.map*/

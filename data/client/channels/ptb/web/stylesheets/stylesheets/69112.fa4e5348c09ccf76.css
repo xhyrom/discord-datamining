@@ -1,0 +1,51 @@
+.pictureInPicture_69M0s9 {
+  inset-inline-start: 0;
+  position: absolute;
+  top: 0;
+}
+.pictureInPicture_69M0s9.dragging_69M0s9 {
+  cursor: grabbing;
+  height: 100%;
+  pointer-events: auto;
+  width: 100%;
+}
+.pictureInPictureWindow_69M0s9 {
+  position: absolute;
+  z-index: 1000;
+}
+.borderRadius_69M0s9 {
+  border-radius: 8px;
+}
+.hidden_69M0s9 {
+  display: none;
+}
+.resizeHandle_69M0s9 {
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+.resizeHandleTopRight_69M0s9 {
+  bottom: -7px;
+  cursor: nesw-resize;
+  inset-inline-start: -7px;
+}
+.resizeHandleTopLeft_69M0s9 {
+  bottom: -7px;
+  cursor: nwse-resize;
+  inset-inline-end: -7px;
+}
+.resizeHandleBottomRight_69M0s9 {
+  cursor: nwse-resize;
+  inset-inline-start: -7px;
+  top: -7px;
+}
+.resizeHandleBottomLeft_69M0s9 {
+  cursor: nesw-resize;
+  inset-inline-end: -7px;
+  top: -7px;
+}
+.belowSidebar_69M0s9 {
+  z-index: 90 !important;
+}
+
+/*# sourceMappingURL=69112.fa4e5348c09ccf76.css.map*/

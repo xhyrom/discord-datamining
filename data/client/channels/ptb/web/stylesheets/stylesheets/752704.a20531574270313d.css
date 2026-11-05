@@ -1,0 +1,70 @@
+.container_AFi54G {
+  border-radius: inherit;
+  height: 100%;
+  inset-inline-start: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.fitInAccount_AFi54G {
+  height: calc(100% + 2px);
+  inset-inline-start: 0;
+  top: -1px;
+  width: calc(100% + 1px);
+}
+.fadeIn_AFi54G {
+  animation: fadeIn_AFi54G 0.12s ease-in forwards;
+  opacity: 0;
+}
+@keyframes fadeIn_AFi54G {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.img_AFi54G {
+  height: 100%;
+  inset-inline-end: 0;
+  -o-object-position: right;
+  object-position: right;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 0.3s ease;
+  width: auto;
+}
+.img_AFi54G,
+.img_AFi54G.hover_AFi54G {
+  opacity: 0.6;
+}
+.img_AFi54G.selected_AFi54G {
+  opacity: 0.9;
+}
+.img_AFi54G.channel_AFi54G.hover_AFi54G {
+  opacity: 0.4;
+}
+.img_AFi54G.channel_AFi54G.selected_AFi54G {
+  opacity: 0.9;
+}
+.img_AFi54G.account_AFi54G,
+.img_AFi54G.account_AFi54G.hover_AFi54G {
+  opacity: 0.4;
+}
+.img_AFi54G.preview_AFi54G {
+  opacity: 0.8;
+}
+.img_AFi54G.mini_preview_AFi54G,
+.img_AFi54G.mini_preview_AFi54G.hover_AFi54G,
+.img_AFi54G.preview_AFi54G.hover_AFi54G {
+  opacity: 1;
+}
+.videoContainer_AFi54G {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+/*# sourceMappingURL=752704.a20531574270313d.css.map*/

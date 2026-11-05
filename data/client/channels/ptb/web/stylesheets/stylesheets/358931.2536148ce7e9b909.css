@@ -1,0 +1,261 @@
+.syntaxAfter_nsjAhz,
+.syntaxBefore_nsjAhz {
+  font-weight: var(--font-weight-semibold);
+}
+.codeBlockSyntax_nsjAhz,
+.syntaxAfter_nsjAhz,
+.syntaxBefore_nsjAhz {
+  color: var(--textbox-markdown-syntax);
+}
+.codeBlockLang_nsjAhz {
+  color: var(--text-feedback-positive);
+}
+.after_s_nsjAhz,
+.after_spoiler_nsjAhz,
+.after_u_nsjAhz,
+.before_s_nsjAhz,
+.before_spoiler_nsjAhz,
+.before_u_nsjAhz,
+.syntaxAfter_nsjAhz.after_link_nsjAhz,
+.syntaxBefore_nsjAhz.before_link_nsjAhz,
+.syntaxOverride_nsjAhz {
+  font-weight: var(--font-weight-normal);
+}
+.before_em_nsjAhz {
+  margin-inline-end: -1px;
+}
+.after_em_nsjAhz {
+  margin-inline-start: 1px;
+}
+.before_s_nsjAhz,
+.before_u_nsjAhz {
+  margin-inline-end: 1px;
+}
+.after_s_nsjAhz,
+.after_u_nsjAhz {
+  margin-inline-start: 1px;
+}
+.after_u_nsjAhz,
+.before_u_nsjAhz {
+  text-decoration: underline;
+}
+.before_inlineCode_nsjAhz {
+  border-inline-end: none;
+  border-radius: 3px 0 0 3px;
+  border-end-start-radius: var(--radius-xs);
+  border-start-start-radius: var(--radius-xs);
+}
+.after_inlineCode_nsjAhz {
+  border-inline-start: none;
+  border-radius: 0 3px 3px 0;
+  border-end-end-radius: var(--radius-xs);
+  border-start-end-radius: var(--radius-xs);
+}
+.bold_nsjAhz {
+  font-weight: var(--font-weight-bold);
+}
+.italics_nsjAhz {
+  font-style: italic;
+}
+.underline_nsjAhz {
+  text-decoration: underline;
+}
+.strikethrough_nsjAhz {
+  text-decoration: line-through;
+}
+.fakeLink_nsjAhz {
+  -webkit-text-decoration: var(--link-decoration);
+  text-decoration: var(--link-decoration);
+}
+.fakeLink_nsjAhz,
+.silentPrefix_nsjAhz {
+  color: var(--text-link);
+}
+.after_inlineCode_nsjAhz,
+.before_inlineCode_nsjAhz,
+.inlineCode_nsjAhz {
+  background: var(--background-code);
+  border: 1px solid var(--border-muted);
+  box-sizing: border-box;
+  font-family: var(--font-code);
+  font-size: 85%;
+  height: auto;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  white-space: pre-wrap;
+  width: auto;
+}
+.inlineCode_nsjAhz {
+  border-inline-end: none;
+  border-inline-start: none;
+}
+.spoiler_nsjAhz {
+  padding: 0 0.2em;
+}
+.codeBlockText_nsjAhz,
+.codeLine_nsjAhz {
+  color: var(--text-default);
+  font-family: var(--font-code);
+  font-size: 85%;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+.codeLine_nsjAhz .hljs-comment,
+.codeLine_nsjAhz .hljs-quote {
+  color: var(--text-muted);
+}
+.codeLine_nsjAhz .ansiControlSequence_nsjAhz {
+  color: var(--textbox-markdown-syntax);
+  font-size: 70%;
+  padding-inline-end: 0.1em;
+  vertical-align: middle;
+}
+.before_subtext_nsjAhz {
+  font-weight: 700;
+}
+.after_subtext_nsjAhz,
+.before_subtext_nsjAhz,
+.subtext_nsjAhz {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 17.875px;
+}
+.subtext_nsjAhz.fakeLink_nsjAhz {
+  color: var(--text-link);
+}
+.inlineElement_T14dfz {
+  display: inline-block;
+}
+.inlineVoid_T14dfz {
+  cursor: default;
+}
+.inlineVoid_T14dfz .mention {
+  padding-bottom: 1px;
+}
+.applicationCommand_T14dfz {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline-start: -4px;
+  margin-bottom: -4px;
+  margin-top: -8px;
+}
+.applicationCommand_T14dfz > [data-slate-node="text"] > * {
+  display: inline-block;
+  padding-top: 8px;
+}
+.applicationCommand_T14dfz
+  > [data-slate-node="text"]:not(:first-child)
+  > :first-child {
+  margin-inline-start: 4px;
+}
+.applicationCommand_T14dfz
+  > [data-slate-node="text"]:not(:first-child)
+  > :first-child.emptyText_T14dfz {
+  margin-inline-start: 2px;
+}
+.applicationCommand_T14dfz
+  > [data-slate-node="text"]:not(:last-child)
+  > :last-child {
+  margin-inline-end: 4px;
+}
+.applicationCommand_T14dfz
+  > [data-slate-node="text"]:not(:last-child)
+  > :last-child.emptyText_T14dfz {
+  margin-inline-end: 2px;
+}
+.applicationCommand_T14dfz:after {
+  color: var(--text-muted);
+  content: attr(data-trailing-placeholder);
+  flex: 1;
+  padding-inline-start: 4px;
+  padding-top: 8px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+.applicationCommand_T14dfz > [data-slate-node="text"] > *,
+.optionPillValue_T14dfz > [data-slate-node="text"] > * {
+  min-width: 4px;
+}
+.commandName_T14dfz {
+  font-weight: var(--font-weight-semibold);
+  margin-inline-start: 4px;
+}
+.optionPill_T14dfz {
+  align-self: flex-start;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 6px;
+  max-width: calc(100% - 30px);
+  vertical-align: top;
+}
+.optionPill_T14dfz .optionPill_T14dfz {
+  margin-block: 0;
+  max-width: none;
+}
+.optionPillKey_T14dfz {
+  border-end-start-radius: 4px;
+  border-start-start-radius: 4px;
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 1px 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.optionPillValue_T14dfz {
+  display: block;
+  flex: 1;
+  padding: 1px 8px;
+  vertical-align: top;
+  white-space: pre-wrap;
+}
+.readonlyPillValue_T14dfz {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.readonlyPillValue_T14dfz ::-moz-selection {
+  background: transparent;
+}
+.readonlyPillValue_T14dfz ::selection {
+  background: transparent;
+}
+.attachmentFilename_T14dfz {
+  color: var(--brand-500);
+}
+.theme-dark .optionPill_T14dfz {
+  background-color: var(--background-mod-normal);
+  border-color: var(--background-base-lowest);
+}
+.theme-dark .optionPillKey_T14dfz {
+  background-color: var(--background-surface-high);
+}
+.theme-light .optionPill_T14dfz {
+  background-color: var(--background-base-lower);
+  border-color: var(--interactive-background-selected);
+}
+.theme-light .optionPillKey_T14dfz {
+  background-color: var(--background-base-lowest);
+}
+.selectedPill_T14dfz {
+  border-color: Highlight !important;
+}
+.erroredPill_T14dfz {
+  border-color: var(--red-400) !important;
+}
+.newLine_T14dfz {
+  display: inline-block;
+}
+.inlineFlex_T14dfz {
+  display: inline-flex;
+  margin: 0;
+}
+
+/*# sourceMappingURL=358931.2536148ce7e9b909.css.map*/

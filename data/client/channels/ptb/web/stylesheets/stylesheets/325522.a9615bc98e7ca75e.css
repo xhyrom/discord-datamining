@@ -1,0 +1,25 @@
+.rowContainer_QFvip1 {
+  margin-inline: 0;
+}
+.positionContainer_9vACiA {
+  display: flex;
+  height: var(--custom-app-launcher-height);
+  pointer-events: none;
+  width: var(--custom-app-launcher-width);
+}
+.positionLayer_9vACiA {
+  pointer-events: none;
+  z-index: 0;
+}
+.loadingContents_9vACiA {
+  align-items: center;
+  background-color: var(--background-surface-high);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+/*# sourceMappingURL=325522.a9615bc98e7ca75e.css.map*/

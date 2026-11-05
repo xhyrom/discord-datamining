@@ -1,0 +1,266 @@
+.previewContainer_uEa-A9 {
+  border: 2px solid transparent;
+  gap: var(--space-12);
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  width: 276px;
+}
+.previewBox_uEa-A9,
+.previewContainer_uEa-A9 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.previewBox_uEa-A9 {
+  align-items: center;
+  background-color: var(--background-base-lower);
+  border-radius: var(--radius-sm);
+  height: 190px;
+  width: 100%;
+}
+.previewContents_uEa-A9 {
+  height: 100%;
+  position: relative;
+  top: -10px;
+  width: 224px;
+}
+.base_lMvXrQ {
+  box-sizing: border-box;
+  color: var(--white);
+  flex: 0 0 auto;
+  height: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.baseShapeRound_lMvXrQ {
+  border-radius: var(--radius-round);
+}
+.baseShapeRoundLeft_lMvXrQ {
+  border-radius: var(--radius-xs) 0 0 var(--radius-xs);
+}
+.baseShapeRoundRight_lMvXrQ {
+  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+}
+.iconBadge_lMvXrQ,
+.numberBadge_lMvXrQ {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.iconBadge_lMvXrQ {
+  width: 16px;
+}
+.icon_lMvXrQ {
+  height: 100%;
+  padding: 2px;
+  width: 100%;
+}
+.limitedTimeText_lMvXrQ {
+  text-transform: uppercase;
+}
+.enable-forced-colors .base_lMvXrQ {
+  background-color: Highlight !important;
+  color: HighlightText;
+  forced-color-adjust: none;
+  outline: 2px solid Canvas;
+}
+.newBadge_JJ37Ii {
+  display: flex;
+  top: -4px;
+}
+.iconBadge_JJ37Ii,
+.newBadge_JJ37Ii {
+  inset-inline-end: -4px;
+  position: absolute;
+}
+.iconBadge_JJ37Ii {
+  border-radius: 50%;
+  height: 20px;
+  padding: 2px;
+  top: -6px;
+  width: 20px;
+}
+.inventory_9_Rm_e {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 408px;
+  margin: -4px;
+  padding: 4px;
+  width: 232px;
+}
+.inventoryTitle_9_Rm_e {
+  margin-bottom: 12px;
+}
+.inventoryControls_9_Rm_e {
+  display: flex;
+  gap: 12px;
+}
+.inventoryControlsButton_9_Rm_e {
+  align-items: center;
+  background-color: var(--background-base-lowest);
+  border-radius: var(--radius-xs);
+  color: var(--text-strong);
+  cursor: pointer;
+  gap: 4px;
+  height: 80px;
+  justify-content: center;
+  width: 106px;
+}
+.inventoryControlsButton_9_Rm_e,
+.list_9_Rm_e {
+  display: flex;
+  flex-direction: column;
+}
+.list_9_Rm_e {
+  gap: 12px;
+  margin-top: 12px;
+  width: 224px;
+}
+.nameplateItem_9_Rm_e {
+  cursor: pointer;
+  position: relative;
+}
+.nameplateItemOverlay_9_Rm_e {
+  border-radius: var(--radius-sm);
+  height: 100%;
+  inset-inline-start: 0;
+  position: absolute;
+  top: 0;
+  transition: box-shadow 0.15s ease-out;
+  width: 100%;
+}
+.selected_9_Rm_e {
+  box-shadow: inset 0 0 0 2px var(--brand-500);
+  opacity: 1;
+}
+.iconBadge_9_Rm_e {
+  border-radius: 50%;
+  height: 20px;
+  inset-inline-end: -4px;
+  padding: 2px;
+  position: absolute;
+  top: -6px;
+  width: 20px;
+}
+.spinner_m1SX1n {
+  align-self: center;
+  margin: 8px;
+}
+.header_m1SX1n {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.closeButton_m1SX1n {
+  margin-inline-end: -8px;
+  padding: 0;
+}
+.content_m1SX1n {
+  display: flex;
+  justify-content: space-between;
+}
+.modalFooter_m1SX1n {
+  gap: var(--space-8);
+}
+.icon_bYuL-p {
+  height: 24px;
+  margin-bottom: 4px;
+  width: 24px;
+}
+.notAllowedIcon_bYuL-p {
+  transform: rotate(90deg);
+}
+.effectGridItem_bYuL-p {
+  align-items: center;
+  background-color: var(--background-base-lowest);
+  border-radius: 4px;
+  color: var(--text-strong);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transition: box-shadow 0.15s ease-out;
+}
+.selected_bYuL-p {
+  box-shadow: 0 0 0 2px var(--brand-500);
+}
+.section_bYuL-p {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.list_bYuL-p {
+  flex: 1;
+  inset-inline-start: -12px;
+  margin-top: 2px;
+  padding-bottom: 4px;
+  width: 298px;
+}
+.shopIcon_bYuL-p {
+}
+.presetEffectBackground_bYuL-p,
+.presetEffectImg_bYuL-p {
+  border-radius: 4px;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+  position: absolute;
+  width: 100%;
+}
+.modal_J_nCoJ {
+  border-radius: var(--radius-sm);
+  width: unset;
+}
+.modalFooter_J_nCoJ {
+  gap: var(--space-8);
+}
+.modalHeader_J_nCoJ {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.modalCloseButton_J_nCoJ {
+  padding: 0;
+}
+.premiumIcon_J_nCoJ {
+  margin-inline-end: 4px;
+}
+.modalDescription_J_nCoJ {
+  margin: 0 20px 24px;
+}
+.discoverMorePerks_J_nCoJ {
+  margin-inline-start: -34px;
+}
+.modalContent_J_nCoJ {
+  display: flex;
+}
+.goToShopButton_J_nCoJ {
+  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  background-clip: padding-box;
+}
+.newBadge_J_nCoJ {
+  align-items: center;
+  margin-inline-start: 4px;
+}
+.spinner_J_nCoJ {
+  align-self: center;
+  margin: 8px;
+}
+.nitroUpsellContainer_J_nCoJ {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-inline-end: auto;
+}
+.nitroWheel_J_nCoJ {
+  margin-inline-end: 6px;
+}
+
+/*# sourceMappingURL=5257.cc568b3d803c94d2.css.map*/

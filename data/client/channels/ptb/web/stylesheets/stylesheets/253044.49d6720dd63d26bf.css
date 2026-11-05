@@ -1,0 +1,20 @@
+.listWrapper_EwKtHG {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  bottom: 0;
+}
+.listHeight_EwKtHG {
+  visibility: hidden;
+}
+.listItems_EwKtHG {
+  contain: layout;
+  position: absolute;
+}
+.scroller_EwKtHG {
+  height: 100%;
+}
+
+/*# sourceMappingURL=253044.49d6720dd63d26bf.css.map*/

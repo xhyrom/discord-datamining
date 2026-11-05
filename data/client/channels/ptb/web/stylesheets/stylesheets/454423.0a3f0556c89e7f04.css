@@ -1,0 +1,72 @@
+.container_rx8XLM {
+  background: var(--background-base-lowest);
+  border-radius: 50%;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.container_rx8XLM,
+.trophyIconContainer_rx8XLM {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.trophyIconContainer_rx8XLM {
+  flex-direction: column;
+}
+.lockContainer_rx8XLM {
+  align-items: center;
+  background: var(--background-base-lowest);
+  border-radius: 50%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  inset-inline-end: 0;
+  justify-content: center;
+  position: absolute;
+}
+.confettiIcon_rx8XLM {
+  margin-inline-start: 2px;
+  margin-bottom: 5px;
+}
+.container_GsRAr8 {
+  background-color: var(--background-mod-normal);
+  border-radius: var(--radius-sm);
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 12px;
+}
+.container_GsRAr8,
+.iconContainer_GsRAr8 {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.iconContainer_GsRAr8 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 40px;
+  justify-content: center;
+  margin-inline-end: 12px;
+  width: 40px;
+}
+.actionable_GsRAr8 {
+  cursor: pointer;
+}
+.name_GsRAr8 {
+  color: var(--text-strong);
+}
+.description_GsRAr8 {
+  color: var(--text-default);
+}
+.flair_GsRAr8 {
+  bottom: -16px;
+  inset-inline-start: calc(50% - 24px);
+  position: absolute;
+}
+
+/*# sourceMappingURL=454423.0a3f0556c89e7f04.css.map*/

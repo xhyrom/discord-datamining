@@ -1,0 +1,167 @@
+.premiumIcon_2zQQDh {
+  height: 24px;
+  margin-inline-end: 8px;
+  position: relative;
+  top: 6px;
+  width: 24px;
+}
+.platformIcon_2zQQDh {
+  display: inline-block;
+  height: 28px;
+  margin-top: -4px;
+  margin-inline-end: 10px;
+  position: relative;
+  vertical-align: middle;
+  width: 28px;
+}
+.platformIcon_2zQQDh + .platformIcon_2zQQDh {
+  margin-inline-start: -10px;
+}
+.giftIcon_2zQQDh {
+  margin-inline-end: 4px;
+  vertical-align: text-bottom;
+}
+.icon_2zQQDh {
+  display: inline-block;
+  height: 20px;
+  margin-inline-start: 10px;
+  margin-top: -3px;
+  position: relative;
+  vertical-align: middle;
+  width: 20px;
+}
+.icon_2zQQDh + .icon_2zQQDh {
+  margin-inline-start: 6px;
+}
+.iconWindows_2zQQDh {
+  -webkit-mask-image: url("/assets/20dd0e244b9a7065.svg");
+  mask-image: url("/assets/20dd0e244b9a7065.svg");
+}
+.iconApple_2zQQDh,
+.iconWindows_2zQQDh {
+  background-color: currentColor;
+}
+.iconApple_2zQQDh {
+  -webkit-mask-image: url("/assets/d11dc1928431aa27.svg");
+  mask-image: url("/assets/d11dc1928431aa27.svg");
+}
+.iconAndroid_2zQQDh {
+  -webkit-mask-image: url("/assets/f625814fc53c325e.svg");
+  mask-image: url("/assets/f625814fc53c325e.svg");
+}
+.iconAndroid_2zQQDh,
+.iconMetaQuest_2zQQDh {
+  background-color: currentColor;
+}
+.iconMetaQuest_2zQQDh {
+  margin-inline-end: 4px;
+  -webkit-mask-image: url("/assets/ac961aa8d4bb48a5.svg");
+  mask-image: url("/assets/ac961aa8d4bb48a5.svg");
+  mask-mode: alpha;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.iconUSFlag_2zQQDh {
+  background-image: url("/assets/423c2b95bd0fdafb.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  margin-inline-end: 7px;
+  margin-top: 0;
+}
+.icon_2zQQDh + .btn_2zQQDh {
+  margin-inline-start: 20px;
+}
+.textLink_2zQQDh {
+  color: currentColor;
+  padding-inline-start: 10px;
+  text-decoration: underline;
+  -webkit-app-region: no-drag;
+  font-size: 12px;
+}
+.testModeSKUSelector_2zQQDh {
+  height: 24px;
+  margin-inline-start: 16px;
+}
+.testModeNotice_2zQQDh {
+  padding-inline-end: 76px;
+}
+.testModeActions_2zQQDh {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  gap: var(--space-8);
+  inset-inline-end: var(--space-8);
+  position: absolute;
+  top: 0;
+  -webkit-app-region: no-drag;
+}
+.testModeActions_2zQQDh .testModeActionButton_2zQQDh {
+  align-items: center;
+  background-color: var(--background-mod-subtle);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  height: 28px;
+  justify-content: center;
+  position: static;
+  transition: background-color 0.1s ease;
+  width: 28px;
+}
+.testModeActions_2zQQDh .testModeActionButton_2zQQDh:active,
+.testModeActions_2zQQDh .testModeActionButton_2zQQDh:hover {
+  background-color: var(--background-mod-normal);
+}
+.premiumLogo_2zQQDh {
+  background-image: url("/assets/a3541a1173e706be.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  height: 13px;
+  margin-inline-end: 20px;
+  position: relative;
+  top: 2px;
+  width: 51px;
+}
+.premiumText_2zQQDh {
+  font-weight: var(--font-weight-medium);
+}
+.premiumAction_2zQQDh {
+  margin-inline-start: 20px;
+}
+.ellipsis_2zQQDh {
+  margin-inline-start: 7px;
+}
+.quarantineLearnMoreLink_2zQQDh {
+  margin-inline-start: 10px;
+  text-decoration: underline;
+}
+.errorCodeNoticeText_2zQQDh {
+  margin-inline-start: var(--space-8);
+}
+.errorCodeNoticeClickable_2zQQDh {
+  cursor: pointer;
+}
+.connectionDeprecationNoticeCTAButton_2zQQDh {
+  background: var(--background-mod-subtle);
+  border: none;
+  border-radius: var(--radius-sm);
+}
+.connectionDeprecationRemindLaterButton_2zQQDh {
+  border: none;
+  border-radius: var(--radius-sm);
+  text-decoration: underline;
+}
+.connectionDeprecationNoticeIcon_2zQQDh {
+  background: var(--background-mod-subtle);
+  border-radius: var(--radius-xs);
+  height: 16px;
+  padding: var(--space-4);
+  width: 16px;
+}
+
+/*# sourceMappingURL=520689.b505df18764680e8.css.map*/

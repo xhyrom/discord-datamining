@@ -1,0 +1,22 @@
+.container_dPPWEK {
+  background-color: var(--background-mod-muted);
+  border-radius: var(--radius-sm);
+  padding: var(--space-20);
+}
+.links_dPPWEK {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  list-style: none;
+}
+.link_dPPWEK {
+  align-items: center;
+  color: var(--text-link);
+  display: flex;
+  gap: var(--space-4);
+}
+.description_dPPWEK {
+  text-align: center;
+}
+
+/*# sourceMappingURL=50726.8c5321ee8d96c3d3.css.map*/

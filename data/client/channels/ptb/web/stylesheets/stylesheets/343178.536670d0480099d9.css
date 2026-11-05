@@ -1,0 +1,58 @@
+.wrapper_JJ-hgR {
+  cursor: pointer;
+  transition:
+    background-color 0.1s ease-out,
+    color 0.1s ease-out;
+}
+.childWrapper_JJ-hgR,
+.wrapper_JJ-hgR {
+  align-items: center;
+  display: flex;
+  height: var(--guildbar-avatar-size);
+  justify-content: center;
+  width: var(--guildbar-avatar-size);
+}
+.childWrapper_JJ-hgR {
+  color: var(--text-default);
+  transition:
+    scale 0.15s ease-out,
+    background-color 0.15s ease-out,
+    color 0.15s ease-out;
+}
+.childWrapperNoHoverBg_JJ-hgR {
+  background-color: var(--background-mod-subtle);
+}
+.custom-theme-background .childWrapperNoHoverBg_JJ-hgR {
+  background-color: var(--background-mod-strong);
+}
+.wrapper_JJ-hgR.selected_JJ-hgR .childWrapperHoverScale_JJ-hgR,
+.wrapper_JJ-hgR:hover .childWrapperHoverScale_JJ-hgR {
+  scale: 1.1;
+}
+.wrapper_JJ-hgR.selected_JJ-hgR .childWrapper_JJ-hgR,
+.wrapper_JJ-hgR:hover .childWrapper_JJ-hgR {
+  background-color: var(--background-brand);
+  color: var(--white);
+}
+.acronym_JJ-hgR {
+  font-weight: var(--font-weight-medium);
+  line-height: 1.2em;
+  white-space: nowrap;
+}
+.icon_JJ-hgR {
+  display: block;
+  height: var(--guildbar-avatar-size);
+  -o-object-fit: cover;
+  object-fit: cover;
+  pointer-events: none;
+  width: var(--guildbar-avatar-size);
+}
+.icon_JJ-hgR:before {
+  background-color: var(--background-mod-subtle);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=343178.536670d0480099d9.css.map*/

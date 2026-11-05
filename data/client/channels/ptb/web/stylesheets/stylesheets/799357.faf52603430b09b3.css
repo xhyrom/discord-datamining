@@ -1,0 +1,117 @@
+@keyframes pulseIcon_hfM7yP {
+  0%,
+  to {
+    transform: scale(var(--custom-channel-text-area-button-hover-scale));
+  }
+  50% {
+    transform: none;
+  }
+}
+@keyframes pulseButton_hfM7yP {
+  0%,
+  to {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes sparkle_hfM7yP {
+  0% {
+    opacity: 0;
+    transform: rotate(-50deg) scale(0);
+  }
+  20% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+  40% {
+    opacity: 0;
+    transform: rotate(50deg) scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: rotate(-50deg) scale(0);
+  }
+}
+.button_hfM7yP {
+  align-items: center;
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.button_hfM7yP:hover {
+  color: var(--interactive-text-hover);
+}
+.button_hfM7yP:active {
+  color: var(--interactive-text-active);
+}
+.button_hfM7yP.disabled_hfM7yP {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.button_hfM7yP:not(.noHover_hfM7yP) {
+  border-radius: 8px;
+  transition-duration: 0.2s;
+}
+.button_hfM7yP:not(.noHover_hfM7yP):hover {
+  background-color: var(--interactive-background-selected);
+}
+.iconMask_hfM7yP {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.buttonContent_hfM7yP {
+  position: relative;
+}
+.icon_hfM7yP {
+  height: 20px;
+  width: 20px;
+}
+.pulseIcon_hfM7yP {
+  animation: pulseIcon_hfM7yP 0.6s ease;
+}
+.pulseButton_hfM7yP .buttonWrapper_hfM7yP {
+  animation: pulseButton_hfM7yP 0.6s ease;
+}
+.buttonWrapper_hfM7yP svg {
+  display: block;
+}
+.notificationDot_hfM7yP {
+  background-color: var(--background-feedback-notification);
+  border-radius: 100%;
+  bottom: 0;
+  height: 7px;
+  inset-inline-end: 0;
+  transform: translateY(-5%);
+  width: 7px;
+}
+.notificationDot_hfM7yP,
+.sparkleContainer_hfM7yP {
+  position: absolute;
+}
+.sparkleStar_hfM7yP {
+  color: var(--platform-gold);
+  inset-inline-start: 20px;
+  top: -12px;
+}
+.sparklePlus_hfM7yP,
+.sparkleStar_hfM7yP {
+  animation: sparkle_hfM7yP 2.5s ease-in-out infinite;
+  position: relative;
+}
+.sparklePlus_hfM7yP {
+  animation-delay: 0.5s;
+  color: var(--brand-500);
+  inset-inline-start: -20px;
+  opacity: 0;
+  top: 16px;
+}
+.active_hfM7yP .buttonWrapper_hfM7yP,
+.buttonWrapper_hfM7yP:hover {
+  color: var(--interactive-text-active);
+}
+
+/*# sourceMappingURL=799357.faf52603430b09b3.css.map*/

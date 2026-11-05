@@ -1,0 +1,78 @@
+.extrasContainer_pKV59p {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  min-width: 0;
+  padding-inline: var(--space-8);
+}
+.fullFlex_pKV59p {
+  flex: 1;
+}
+.debug_pKV59p:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  bottom: 0;
+  pointer-events: none;
+  visibility: visible;
+}
+.debugUnpinned_pKV59p:after {
+  border: 2px solid var(--primary-300);
+}
+.debugPinned_pKV59p:after {
+  border: 2px solid var(--brand-600);
+}
+.pill_nFH31_ {
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  color: var(--white);
+  flex: 0 0 auto;
+  height: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  overflow: hidden;
+  padding: 0 6px;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.badge_nFH31_ {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.large_nFH31_ {
+  font-size: 14px;
+  line-height: 15px;
+}
+.round_nFH31_ {
+  border-radius: var(--custom-live-indicator-border-radius);
+}
+.roundLeft_nFH31_ {
+  border-radius: var(--custom-live-indicator-border-radius) 0 0
+    var(--custom-live-indicator-border-radius);
+}
+.roundRight_nFH31_ {
+  border-radius: 0 var(--custom-live-indicator-border-radius)
+    var(--custom-live-indicator-border-radius) 0;
+}
+.enable-forced-colors .pill_nFH31_ {
+  background-color: Highlight !important;
+  color: HighlightText;
+  forced-color-adjust: none;
+  outline: 2px solid Canvas;
+}
+.grey_wE-IXX {
+  background-color: var(--background-mod-muted);
+  color: var(--interactive-text-default);
+}
+.badgeWrapper_wE-IXX {
+  display: flex;
+  flex: 0 0 auto;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/*# sourceMappingURL=110425.3b5d0d2c8770ca55.css.map*/

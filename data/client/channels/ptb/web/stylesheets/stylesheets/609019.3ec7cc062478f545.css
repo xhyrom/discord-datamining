@@ -1,0 +1,29 @@
+.container_-wKTcX {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.text_-wKTcX {
+  font-family: var(--font-code);
+}
+.bar_-wKTcX {
+  background-color: var(--background-mod-normal);
+  border-radius: 2px;
+  flex: 1;
+  height: 2px;
+}
+.progress_-wKTcX {
+  background-color: var(--interactive-text-active);
+  border-radius: inherit;
+  height: inherit;
+  min-width: 4px;
+}
+.menuIcon_MVcifW {
+  color: var(--interactive-text-default);
+  cursor: pointer;
+}
+.menuIcon_MVcifW:hover {
+  color: var(--interactive-text-active);
+}
+
+/*# sourceMappingURL=609019.3ec7cc062478f545.css.map*/

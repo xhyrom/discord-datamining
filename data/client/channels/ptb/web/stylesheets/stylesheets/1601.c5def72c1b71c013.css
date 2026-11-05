@@ -1,0 +1,57 @@
+.devBanner_RdTe0y {
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  line-height: 24px;
+  padding: 0 4px;
+  position: relative;
+  text-align: center;
+  white-space: no-wrap;
+}
+.devBanner_RdTe0y strong {
+  font-weight: var(--font-weight-semibold);
+}
+.local_RdTe0y {
+  background-color: var(--background-feedback-mod-warning);
+}
+.local_RdTe0y,
+.staging_RdTe0y {
+  color: var(--text-default);
+}
+.staging_RdTe0y {
+  background-color: var(--background-feedback-mod-critical);
+}
+.buildOverride_RdTe0y {
+  background-color: var(--status-positive-background);
+  color: var(--white);
+}
+.icon_RdTe0y {
+  display: inline-block;
+  height: auto;
+  margin-inline-end: 4px;
+  vertical-align: middle;
+  width: 12px;
+}
+.closeButton_RdTe0y {
+  background-position: 50% 55%;
+  background-size: 10px 10px;
+  cursor: pointer;
+  height: 24px;
+  inset-inline-end: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 3px;
+  transition: opacity 0.2s;
+  width: 24px;
+  -webkit-app-region: no-drag;
+}
+.closeButton_RdTe0y:hover {
+  opacity: 1;
+}
+.closeIcon_RdTe0y {
+  height: 14px;
+  width: 14px;
+}
+
+/*# sourceMappingURL=1601.c5def72c1b71c013.css.map*/

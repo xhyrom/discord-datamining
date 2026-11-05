@@ -1,0 +1,38 @@
+.container_sYj23M {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  pointer-events: none;
+  position: relative;
+  width: 100%;
+}
+.aspect-ratio-21\/9_sYj23M {
+  aspect-ratio: 21/9;
+}
+.aspect-ratio-16\/9_sYj23M {
+  aspect-ratio: 16/9;
+}
+.aspect-ratio-6\/4_sYj23M {
+  aspect-ratio: 6/4;
+}
+.aspect-ratio-2\/1_sYj23M {
+  aspect-ratio: 2/1;
+}
+.aspect-ratio-1\/1_sYj23M {
+  aspect-ratio: 1/1;
+}
+.image_sYj23M,
+.video_sYj23M {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+}
+.lottie_sYj23M,
+.rive_sYj23M {
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=471903.d9635546fb63abe6.css.map*/

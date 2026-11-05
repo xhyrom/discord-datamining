@@ -1,0 +1,195 @@
+.formTitle_z5ZLH3 {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.checkbox_z5ZLH3 {
+  margin-bottom: 10px;
+}
+.checkbox_z5ZLH3:last-child {
+  margin-bottom: 0;
+}
+.checkboxLabel_z5ZLH3 {
+  color: var(--interactive-text-default);
+}
+.finePrint_z5ZLH3 {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+:where(.gameIcon_-BipLp) {
+  filter: saturate(var(--saturation-factor, 1));
+  -webkit-user-drag: none;
+  background-size: 100%;
+  border-radius: var(--custom-game-icon-border-radius, var(--radius-sm));
+  color: var(--text-strong);
+  height: var(--custom-game-icon-size);
+  width: var(--custom-game-icon-size);
+}
+img.withBackground_-BipLp {
+  background-clip: content-box;
+  background-color: var(--custom-game-icon-background);
+}
+.intersectionContainer_-BipLp,
+.intersectionRef_-BipLp {
+  position: absolute;
+}
+.intersectionRef_-BipLp {
+  background: transparent;
+  height: 1px;
+  inset-inline-start: 0;
+  top: 0;
+  width: 1px;
+}
+.large_-BipLp,
+.medium_-BipLp,
+.small_-BipLp {
+  flex-shrink: 0;
+}
+.xxsmall_-BipLp {
+  --custom-game-icon-size: 16px;
+  --custom-game-icon-border-radius: var(--radius-xs);
+}
+.xsmall_-BipLp {
+  --custom-game-icon-size: 24px;
+  --custom-game-icon-border-radius: var(--radius-sm);
+}
+.small_-BipLp {
+  --custom-game-icon-size: 30px;
+  --custom-game-icon-border-radius: var(--radius-sm);
+}
+.medium_-BipLp {
+  --custom-game-icon-size: 40px;
+  --custom-game-icon-border-radius: var(--radius-md);
+}
+.mediumLarge_-BipLp {
+  --custom-game-icon-size: 48px;
+  --custom-game-icon-border-radius: var(--radius-md);
+}
+.large_-BipLp {
+  --custom-game-icon-size: 60px;
+  --custom-game-icon-border-radius: var(--radius-lg);
+}
+.xlarge_-BipLp {
+  --custom-game-icon-size: 80px;
+  --custom-game-icon-border-radius: var(--radius-lg);
+}
+@keyframes placeholderPulse_-BipLp {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+.gameIconLoading_-BipLp {
+  animation: placeholderPulse_-BipLp 1.3s ease-in-out infinite;
+  background-color: var(--background-mod-normal);
+}
+.header_fVyTY7 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+.gameOrganizationSelectGameSection_fVyTY7,
+.loader_fVyTY7 {
+  margin-top: var(--space-48);
+}
+.gameOrganizationLinkableGames_fVyTY7 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  margin-top: var(--space-12);
+}
+.gameOrganizationLinkableGame_fVyTY7 {
+  align-items: center;
+  background-color: var(--background-mod-muted);
+  border-radius: var(--radius-lg);
+  display: flex;
+  gap: var(--space-16);
+  padding: var(--space-12);
+}
+.gameOrganizationGameName_fVyTY7 {
+  flex: 1;
+}
+.container__xBAiH {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.guildBadge__xBAiH {
+  flex-shrink: 0;
+  height: 25px;
+  margin-inline-end: 6px;
+  position: relative;
+  width: 25px;
+}
+.appIcon__xBAiH {
+  display: inline-block;
+}
+.appIconSize__xBAiH {
+  height: 100px;
+  width: 100px;
+}
+.appIcon__xBAiH,
+.avatar__xBAiH,
+.guildIcon__xBAiH {
+  border-radius: 16px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.title__xBAiH {
+  align-items: center;
+  color: var(--text-strong);
+  display: flex;
+  font-weight: var(--font-weight-semibold);
+  justify-content: center;
+  margin-top: 4px;
+}
+@media (min-height: 640px) {
+  .title__xBAiH {
+    margin-top: 8px;
+  }
+}
+.activityCount__xBAiH {
+  margin-top: 4px;
+}
+@media (min-height: 640px) {
+  .activityCount__xBAiH {
+    margin-top: 8px;
+  }
+}
+.directInviteSubTitle__xBAiH {
+  margin-top: 8px;
+}
+.guildContainer__xBAiH {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.appIn__xBAiH {
+  margin: 4px 0;
+}
+.inviteJoinContainer__xBAiH {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.inviterIconWrapper__xBAiH {
+  padding-inline-end: 8px;
+}
+.inviteJoinText__xBAiH {
+  color: var(--text-default);
+}
+
+/*# sourceMappingURL=668756.e4b0ce1d8c80a989.css.map*/

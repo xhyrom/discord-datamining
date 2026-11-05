@@ -1,0 +1,38 @@
+.categoryList_X9_kMu {
+  top: 65px;
+}
+.expressionPickerCategoryList_X9_kMu {
+  top: 53px;
+}
+.category_X9_kMu {
+  cursor: pointer;
+  margin-bottom: 8px;
+  position: relative;
+}
+.categoryPill_X9_kMu {
+  inset-block: 0;
+  inset-inline-start: calc(var(--space-8) * -1);
+  pointer-events: none;
+  position: absolute;
+}
+.categoryIcon_X9_kMu {
+  align-items: center;
+  border-radius: var(--radius-xs);
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  transition: background-color 0.2s ease;
+}
+.categoryIcon_X9_kMu.selected_X9_kMu {
+  background-color: var(--background-base-low);
+}
+.categoryIcon_X9_kMu:hover {
+  background-color: var(--interactive-background-hover);
+}
+.categoryIconIcon_X9_kMu {
+  color: var(--interactive-text-default);
+  height: 24px;
+  width: 24px;
+}
+
+/*# sourceMappingURL=916885.741ec7d59b9f1c90.css.map*/

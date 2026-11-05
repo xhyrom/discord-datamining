@@ -1,0 +1,50 @@
+.infoHeader_XcVISC {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.heading_XcVISC {
+  margin-bottom: 4px;
+}
+.disabledReason_XcVISC {
+  margin-top: 8px;
+  opacity: 0.7;
+}
+.learnMoreLink_XcVISC {
+  margin-top: 4px;
+}
+.sectionLabel_XcVISC {
+  flex-shrink: 0;
+  padding-bottom: 8px;
+  padding-top: 16px;
+}
+.variantGroupLabelValue_XcVISC {
+  color: var(--text-default);
+  font-weight: 600;
+  margin-inline-start: 4px;
+}
+.variantScrollArea_XcVISC {
+  flex-shrink: 0;
+  -webkit-mask-image: linear-gradient(180deg, #000 85%, transparent);
+  mask-image: linear-gradient(180deg, #000 85%, transparent);
+  max-height: 30px;
+  overflow-y: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+.variantScrollArea_XcVISC::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.no-webkit-scrollbar .variantScrollArea_XcVISC {
+  scrollbar-width: none;
+}
+.errorMessage_Lj3xcc {
+  align-items: center;
+  background-color: var(--background-mod-subtle);
+  border-radius: 4px;
+  display: flex;
+  padding: 8px;
+}
+
+/*# sourceMappingURL=334733.7440dd1235a8440b.css.map*/

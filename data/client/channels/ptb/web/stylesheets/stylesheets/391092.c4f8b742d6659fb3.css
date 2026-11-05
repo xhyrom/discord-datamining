@@ -1,0 +1,73 @@
+@keyframes arrowBounce_qHpu2N {
+  0% {
+    transform: translate3d(0, -2px, 0);
+  }
+  50% {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+.bounce_qHpu2N {
+  animation: arrowBounce_qHpu2N 2s ease-in-out infinite;
+}
+.iconWrapper_8_fPij {
+  display: inline-flex;
+  position: relative;
+}
+.toastAnchor_8_fPij {
+  bottom: 4px;
+  height: 1px;
+  inset-inline: 0;
+  position: absolute;
+  transform: translateX(4px);
+}
+.pulse_8_fPij {
+  display: inline-flex;
+}
+.full-motion .pulsing_8_fPij {
+  animation: inbox-pulse_8_fPij 0.6s ease-out;
+}
+@keyframes inbox-pulse_8_fPij {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.35);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.title_LnjVAX {
+  display: inline-flex;
+  gap: var(--space-8);
+  max-width: 50vw;
+}
+.navigationTooltip_LnjVAX,
+.title_LnjVAX {
+  align-items: center;
+  justify-content: center;
+}
+.navigationTooltip_LnjVAX {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  text-align: center;
+}
+.icon_LnjVAX {
+  height: 16px;
+  width: 16px;
+}
+.appIcon_LnjVAX {
+  --custom-conjure-app-icon-tile-size: 20px;
+  border-radius: 6px;
+  height: 20px;
+  width: 20px;
+}
+.guildIcon_LnjVAX {
+  border-radius: var(--radius-xs);
+}
+
+/*# sourceMappingURL=391092.c4f8b742d6659fb3.css.map*/

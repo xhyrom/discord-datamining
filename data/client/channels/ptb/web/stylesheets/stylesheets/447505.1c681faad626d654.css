@@ -1,0 +1,175 @@
+.container_KBZQCe {
+  flex-direction: column;
+  width: calc(var(--space-96) + 5px);
+}
+.container_KBZQCe,
+.row_KBZQCe {
+  display: flex;
+  gap: calc(var(--space-8) - 2px);
+}
+.rank_KBZQCe,
+.row_KBZQCe {
+  align-items: center;
+}
+.rank_KBZQCe {
+  background-color: var(--background-base-lower);
+  border-radius: var(--radius-round);
+  display: flex;
+  flex-shrink: 0;
+  height: calc(var(--space-16) + 2px);
+  justify-content: center;
+  width: calc(var(--space-16) + 2px);
+}
+.rankText_KBZQCe {
+  display: block;
+  transform: scale(0.64);
+}
+.avatar_KBZQCe {
+  border-radius: var(--radius-round);
+  flex-shrink: 0;
+  height: calc(var(--space-16) + 2px);
+  width: calc(var(--space-16) + 2px);
+}
+.bars_KBZQCe {
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+.barRow_KBZQCe,
+.bars_KBZQCe {
+  display: flex;
+  gap: calc(var(--space-8) - 3px);
+}
+.bar_KBZQCe {
+  background-color: var(--background-mod-subtle);
+  border-radius: var(--radius-round);
+  height: calc(var(--space-8) - 3px);
+}
+.title_unKTQ- {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.state_f1bPXf {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  justify-content: center;
+  padding: var(--space-16);
+  text-align: center;
+}
+.emptyState_f1bPXf {
+  box-sizing: border-box;
+  text-align: center;
+}
+.preview_r2yyzy {
+  box-sizing: border-box;
+  text-align: center;
+}
+.graphic_r2yyzy {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.copy_r2yyzy {
+  width: 100%;
+}
+.twoColorGradient_HG2xvK {
+  background: linear-gradient(
+    to right,
+    var(--custom-gradient-color-1),
+    var(--custom-gradient-color-2),
+    var(--custom-gradient-color-1)
+  );
+}
+.threeColorGradient_HG2xvK {
+  background: linear-gradient(
+    to right,
+    var(--custom-gradient-color-1),
+    var(--custom-gradient-color-2),
+    var(--custom-gradient-color-3),
+    var(--custom-gradient-color-1)
+  );
+}
+.usernameGradient_HG2xvK {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 100px auto;
+  -webkit-text-fill-color: transparent;
+}
+.usernameGlow_HG2xvK {
+  filter: blur(4px);
+  opacity: 0;
+  z-index: -1;
+}
+.usernameGlow_HG2xvK,
+.usernameGlowActive_HG2xvK {
+  transition: opacity 0.1s ease-in-out;
+}
+.usernameGlowActive_HG2xvK {
+  opacity: 0.7;
+}
+.emoji_HG2xvK {
+  -webkit-text-fill-color: initial;
+}
+.convenienceGlowGradient_HG2xvK {
+  position: relative;
+  z-index: 0;
+}
+.theme-light .usernameGradient_HG2xvK {
+  filter: brightness(0.85);
+}
+.convenienceGlowGradient_HG2xvK:after {
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  content: attr(data-text) / "";
+  inset: 0;
+  position: absolute;
+  -webkit-text-fill-color: transparent;
+  filter: blur(4px);
+  opacity: 0;
+  text-indent: 0;
+  transition: opacity 0.1s ease-in-out;
+  z-index: -1;
+}
+.convenienceGlowGradientActive_HG2xvK:after {
+  opacity: 0.7;
+  transition: opacity 0.1s ease-in-out;
+}
+.full-motion.app-focused:not(.hardware-acceleration-disabled)
+  .animateGradient_HG2xvK {
+  animation: gradientUsernameAnimation_HG2xvK 1.5s linear infinite;
+}
+.full-motion.app-focused:not(.hardware-acceleration-disabled)
+  .gradientDotAnimation_HG2xvK:hover {
+  animation: gradientDotAnimation_HG2xvK 2.5s linear infinite;
+}
+@keyframes gradientUsernameAnimation_HG2xvK {
+  0% {
+    background-position: 0;
+  }
+  to {
+    background-position: 100px;
+  }
+}
+@keyframes gradientDotAnimation_HG2xvK {
+  0% {
+    background-position: 0;
+  }
+  to {
+    background-position: 12px;
+  }
+}
+@keyframes gradientGlowFadeInAnimation_HG2xvK {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+/*# sourceMappingURL=447505.1c681faad626d654.css.map*/

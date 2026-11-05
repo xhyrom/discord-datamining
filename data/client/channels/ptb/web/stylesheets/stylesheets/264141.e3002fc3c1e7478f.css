@@ -1,0 +1,366 @@
+.chat_z_gUBg {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
+  anchor-scope: --pinot-channel-label, --pinot-member-notice;
+  background: var(--background-gradient-chat, var(--background-base-lowest));
+}
+.chat_z_gUBg[data-has-border="true"] {
+  border-top: 1px solid var(--app-frame-border);
+}
+[data-collapsed="true"] > .chat_z_gUBg {
+  border-inline-start: 1px solid var(--border-subtle);
+  border-start-start-radius: var(--radius-md);
+}
+.refresh-fast-follow-distinct-borders .chat_z_gUBg.threadSidebarOpen_z_gUBg {
+  border-inline-end-color: var(--app-frame-border);
+}
+.chat_z_gUBg {
+  flex: 1 1 auto;
+}
+.chat_z_gUBg .uploadArea_z_gUBg {
+  position: fixed;
+}
+.chat_z_gUBg.hasSidebar_z_gUBg {
+  border-inline-end: 1px solid var(--border-subtle);
+  border-start-end-radius: var(--radius-md);
+}
+.chat_z_gUBg.threadSidebarOpen_z_gUBg .uploadArea_z_gUBg {
+  border-radius: 0 8px 8px 0;
+  margin-inline-end: var(--chat-resize-handle-width);
+  width: auto;
+}
+.chat_z_gUBg.threadSidebarOpen_z_gUBg.threadSidebarFloating_z_gUBg
+  .uploadArea_z_gUBg {
+  border-radius: 0;
+  margin-inline-end: 0;
+}
+.typing_z_gUBg {
+  display: flex;
+}
+.form_z_gUBg {
+  flex-shrink: 0;
+  margin-top: -16px;
+  position: relative;
+}
+.form_z_gUBg,
+.formWithLoadedChatInput_z_gUBg {
+  padding-inline: var(--space-xs);
+}
+.formWithLoadedChatInput_z_gUBg:before {
+  content: "";
+  height: 0.5rem;
+  position: absolute;
+}
+.formWithLoadedChatInput_z_gUBg :before {
+  top: 0;
+  inset-inline: 0;
+}
+.formWithLoadedChatInput_z_gUBg:before {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-base-low) 100%
+  );
+}
+.custom-theme-background .formWithLoadedChatInput_z_gUBg:before {
+  content: unset;
+}
+.chatContent_z_gUBg {
+  background: var(--background-gradient-chat, var(--background-base-lower));
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  position: relative;
+}
+.cursorPointer_z_gUBg {
+  cursor: pointer;
+}
+.content_z_gUBg {
+  align-items: stretch;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  justify-content: stretch;
+  min-height: 0;
+  min-width: 0;
+  position: relative;
+}
+.content_z_gUBg.noChat_z_gUBg {
+  overflow: hidden;
+}
+.channelArea_z_gUBg {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  position: relative;
+}
+.content_z_gUBg:before {
+  box-shadow: var(--shadow-ledge);
+  content: "";
+  display: none;
+  height: 1px;
+  position: absolute;
+  top: -1px;
+  inset-inline: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.channelBottomBarArea_z_gUBg {
+  display: flex;
+  flex-direction: row;
+}
+.channelTextArea_z_gUBg {
+  background: var(
+    --background-gradient-highest,
+    var(--chat-background-default)
+  );
+  margin-bottom: var(--custom-chat-input-margin-bottom);
+}
+.refresh-fast-follow-avatars .form_z_gUBg {
+  padding-inline: min(var(--space-xs), var(--space-8));
+}
+.titleWrapper_z_gUBg {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+.editPartyIcon_z_gUBg {
+  cursor: pointer;
+  margin-inline-end: 4px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+.editPartyIcon_z_gUBg:hover {
+  opacity: 1;
+}
+.channelName_z_gUBg {
+  margin: 0 8px;
+}
+.avatar_z_gUBg {
+  margin-inline-end: var(--space-8);
+}
+.parentChannelName_z_gUBg {
+  color: var(--text-default);
+}
+.parentChannelName_z_gUBg:hover {
+  color: var(--text-strong);
+}
+.title_z_gUBg {
+  flex: 0 0 auto;
+  padding-inline-end: var(--space-8);
+  padding-top: var(--space-8);
+  position: relative;
+  z-index: 100;
+}
+.gdm_z_gUBg {
+  padding-inline-start: calc(var(--custom-message-margin-horizontal) / 2);
+}
+.followButton_z_gUBg {
+  margin-inline-end: 8px;
+  padding: 4px 8px;
+}
+.status_z_gUBg {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  margin-inline-end: 8px;
+}
+.stop-animations .title_z_gUBg {
+  -webkit-app-region: no-drag;
+}
+.theme-light.custom-client-theme .title_z_gUBg {
+  --background-gradient-lowest: var(--background-gradient-chat);
+}
+.guildBreadcrumbContainer_z_gUBg {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+}
+.guildSidebar_z_gUBg {
+  flex-shrink: 0;
+}
+.guildBreadcrumbIcon_z_gUBg {
+  margin-inline-end: var(--space-4);
+}
+.loader_z_gUBg {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.enable-forced-colors .cursorPointer_z_gUBg {
+  background-color: ButtonFace;
+  color: ButtonText;
+  forced-color-adjust: none;
+  text-decoration: underline;
+}
+.subtitleContainer_z_gUBg {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.secureFramesIcon_z_gUBg {
+  margin-inline-start: 4px;
+}
+.shaker_z_gUBg {
+  flex: 1;
+  width: 100%;
+}
+.headerApplicationContainer_z_gUBg {
+  align-items: center;
+  display: flex;
+  margin-inline-end: 8px;
+}
+.headerApplication_z_gUBg {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  max-width: 200px;
+  min-width: 0;
+  white-space: nowrap;
+}
+.headerApplicationSeparator_z_gUBg {
+  display: flex;
+  padding-inline-end: 8px;
+}
+.headerApplicationIcon_z_gUBg {
+  --custom-conjure-app-icon-tile-size: 14px;
+  border-radius: var(--radius-xs);
+  flex-shrink: 0;
+  height: 14px;
+  width: 14px;
+}
+.headerApplicationName_z_gUBg {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.appChannelApplication_z_gUBg {
+  cursor: pointer;
+}
+.conjuredAppChannelApplication_z_gUBg {
+  isolation: isolate;
+  position: relative;
+}
+.conjuredAppChannelApplication_z_gUBg:before {
+  background-color: transparent;
+  border-radius: var(--radius-sm);
+  content: "";
+  inset: calc(var(--space-4) * -1) calc(var(--space-6) * -1);
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+}
+.conjuredAppChannelApplication_z_gUBg:focus-visible:before,
+.conjuredAppChannelApplication_z_gUBg:hover:before {
+  background-color: var(--interactive-background-hover);
+}
+.linkedLobbyEducationTooltipWrapper_z_gUBg {
+  max-width: 288px;
+  pointer-events: all;
+}
+.linkedLobbyEducationTooltip_z_gUBg {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 4px;
+  text-align: center;
+}
+.linkedLobbyEducationTooltip_z_gUBg p {
+  margin: 0;
+}
+.linkedLobbyEducationTooltipCloseClickContainer_z_gUBg {
+  cursor: pointer;
+  inset-inline-end: 8px;
+  position: absolute;
+  top: 8px;
+}
+.linkedLobbyEducationTooltipCloseClickContainer_z_gUBg:hover
+  .linkedLobbyEducationTooltipCloseIcon_z_gUBg {
+  color: var(--interactive-text-active);
+}
+.linkedLobbyEducationTooltipCloseIcon_z_gUBg {
+  color: var(--icon-muted);
+  height: 24px;
+  width: 24px;
+}
+.akaPopoverContent_z_gUBg {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  max-width: 280px;
+  min-width: 180px;
+  text-align: start;
+}
+.akaPopoverHeader_z_gUBg {
+  align-items: baseline;
+  display: flex;
+  gap: var(--space-8);
+  min-width: 0;
+}
+.akaPopoverUsername_z_gUBg {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.akaPopoverLabel_z_gUBg {
+  flex-shrink: 0;
+}
+.akaPopoverDivider_z_gUBg {
+  align-self: stretch;
+  background: var(--border-subtle);
+  height: 1px;
+}
+.akaPopoverNicknames_z_gUBg {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.akaPopoverRow_z_gUBg {
+  align-items: center;
+  display: flex;
+  gap: var(--space-12);
+  justify-content: space-between;
+}
+.akaPopoverNickname_z_gUBg {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.akaPopoverGuilds_z_gUBg {
+  flex-shrink: 0;
+}
+.dmHeaderActivityStatus_z_gUBg {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  gap: 4px;
+  margin-inline-start: 8px;
+  min-width: 0;
+}
+.dmHeaderActivityStatusClickable_z_gUBg {
+  align-items: center;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  padding: 2px 4px;
+  transition: background-color 0.15s ease;
+}
+.dmHeaderActivityStatusClickable_z_gUBg:hover {
+  background-color: var(--background-mod-normal);
+}
+
+/*# sourceMappingURL=264141.e3002fc3c1e7478f.css.map*/

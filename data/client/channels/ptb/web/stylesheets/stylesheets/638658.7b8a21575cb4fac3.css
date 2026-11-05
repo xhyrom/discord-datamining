@@ -1,0 +1,32 @@
+.participantsButton_1uD6uZ {
+  background: var(--primary-630);
+  border-radius: 48px;
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  padding: 4px;
+}
+.participantsButton_1uD6uZ:hover {
+  background: var(--primary-700);
+}
+.rightCaret_1uD6uZ {
+  transform: rotate(-90deg);
+}
+.leftCaret_1uD6uZ {
+  transform: rotate(90deg);
+}
+.upCaret_1uD6uZ {
+  transform: rotate(180deg);
+}
+.downCaret_1uD6uZ {
+  transform: rotate(0deg);
+}
+.members_1uD6uZ {
+  margin-inline-end: 4px;
+}
+.iconContainer_1uD6uZ {
+  display: flex;
+}
+.iconContainer_1uD6uZ > svg {
+  color: var(--white);
+}
+
+/*# sourceMappingURL=638658.7b8a21575cb4fac3.css.map*/

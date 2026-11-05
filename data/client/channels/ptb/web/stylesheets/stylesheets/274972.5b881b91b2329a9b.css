@@ -1,0 +1,205 @@
+.friendWrapper_45OTue {
+  cursor: pointer;
+}
+.friendWrapper_45OTue.disabled_45OTue {
+  cursor: not-allowed;
+}
+.disabled_45OTue .avatar_45OTue {
+  opacity: 50%;
+}
+.disabled_45OTue .nickname_45OTue,
+.friend_45OTue {
+  color: var(--text-muted);
+}
+.friend_45OTue {
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: var(--font-weight-normal);
+  gap: 8px;
+  height: 48px;
+  overflow: hidden;
+  padding: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.friend_45OTue .avatar_45OTue {
+  flex-shrink: 0;
+  margin: 0;
+}
+.friend_45OTue .checkbox_45OTue {
+  flex: 0 0 auto;
+}
+.friend_45OTue .match_45OTue {
+  align-items: baseline;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.friend_45OTue .discordTag_45OTue {
+  color: var(--text-muted);
+}
+.friend_45OTue .subtitleLine_45OTue {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  max-width: 100%;
+  min-width: 0;
+  white-space: nowrap;
+}
+.friend_45OTue .subtitleDot_45OTue {
+  flex-shrink: 0;
+  padding-inline: 4px;
+}
+.friend_45OTue .mutualGuildStack_45OTue {
+  margin-inline-end: 4px;
+}
+.friend_45OTue .mutualGuildCount_45OTue {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.theme-dark .friendSelected_45OTue {
+  background-color: hsl(var(--primary-500-hsl) / 0.3);
+}
+.theme-light .friendSelected_45OTue {
+  background-color: hsl(var(--primary-200-hsl) / 0.3);
+}
+.full-motion .friend_45OTue {
+  transition: background-color 0.2s ease;
+}
+.enable-forced-colors .friendSelected_45OTue {
+  outline: 2px solid Highlight;
+}
+.friendSelected_45OTue {
+  background-color: var(--background-mod-subtle);
+  color: var(--text-strong);
+}
+.searchBar_Xe75gx {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.customizationContainer_Xe75gx {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: auto 1fr;
+}
+.iconSelector_Xe75gx {
+  grid-column: 1;
+  grid-row: 1/3;
+  padding-inline-end: 8px;
+}
+.channelNameLabel_Xe75gx {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  justify-content: flex-end;
+}
+.scroller_Xe75gx {
+  flex: 1 1 auto;
+  margin-top: 4px;
+  padding: 0 12px;
+}
+.scrollerInner_Xe75gx {
+  margin-inline: -8px;
+}
+.nitroUpsellBannerOverlay_Xe75gx {
+  inset-inline: 0;
+  bottom: calc(var(--space-8) + 1px);
+  height: calc(var(--space-64) + var(--space-24) + var(--space-48));
+  overflow: clip;
+  pointer-events: none;
+  position: absolute;
+}
+footer:has(> .nitroUpsellBannerOverlay_Xe75gx) {
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+.mobileToolsContainer_Xe75gx {
+  inset-inline-end: 16px;
+  position: absolute;
+  top: 16px;
+}
+.mobileToolsCloseIcon_Xe75gx > div {
+  flex: 0 0 24px;
+  height: 24px;
+  width: 24px;
+}
+.noResults_Xe75gx {
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+.noResults_Xe75gx,
+.sectionHeader_Xe75gx {
+  align-items: center;
+  display: flex;
+}
+.sectionHeader_Xe75gx {
+  color: var(--text-muted);
+  cursor: pointer;
+  gap: 4px;
+  height: 32px;
+  justify-content: flex-start;
+  padding: 0 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.spinnerRow_Xe75gx {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+}
+.spinner_Xe75gx {
+  height: 20px;
+  width: 20px;
+}
+.noSectionResults_Xe75gx {
+  padding: 8px;
+  text-align: center;
+}
+.selectExistingFormHeader_Xe75gx {
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+.confirmChannelItemContainer_Xe75gx {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+}
+.confirmChannelName_Xe75gx,
+.lastActiveTimestamp_Xe75gx {
+  margin-inline-start: 8px;
+}
+.lastActiveTimestamp_Xe75gx {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-top: 2px;
+}
+.confirmChannelItemContainer_Xe75gx:hover {
+  background-color: var(--interactive-background-hover);
+  cursor: pointer;
+}
+@media (max-width: 485px) {
+  .noResults_Xe75gx {
+    max-height: 100%;
+  }
+}
+.noResults_Xe75gx {
+  gap: 8px;
+}
+
+/*# sourceMappingURL=274972.5b881b91b2329a9b.css.map*/

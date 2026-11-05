@@ -1,0 +1,42 @@
+.premiumTrialBadge_gLFXov {
+  align-items: center;
+  border-radius: var(--radius-md);
+  color: var(--text-strong);
+  display: flex;
+  gap: 4px;
+  margin-inline-start: auto;
+  padding: 1px 6px;
+  pointer-events: all;
+  text-transform: uppercase;
+}
+.premiumOfferUnackedBadge_gLFXov {
+  background: linear-gradient(90deg, #db00a4, #5968f0);
+}
+.premiumOfferWithTimerUnacknowledgedBadge_gLFXov {
+  background-image: linear-gradient(
+    to right,
+    var(--premium-tier-2-purple-for-gradients),
+    var(--premium-tier-2-pink-for-gradients)
+  );
+}
+.premiumOfferWithTimerAcknowledgedBadge_gLFXov {
+  background-color: var(--background-mod-strong);
+}
+.premiumTrialBadgeSelected_gLFXov {
+  background-color: var(--background-base-lower);
+}
+.premiumOfferBadgeCopy_gLFXov {
+  color: var(--white);
+}
+.acknowledgedBadgeLabel_gLFXov,
+.premiumOfferBadgeCopy_gLFXov {
+  text-transform: uppercase;
+}
+.theme-light .premiumTrialBadge_gLFXov {
+  background-color: var(--background-base-lowest);
+}
+.theme-light .premiumTrialBadgeSelected_gLFXov {
+  background-color: var(--background-base-lower);
+}
+
+/*# sourceMappingURL=886807.07a120ed171fc778.css.map*/

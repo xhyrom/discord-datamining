@@ -1,0 +1,25 @@
+.anchor_n_L45- {
+  height: 0;
+  pointer-events: none;
+  position: fixed;
+  width: 0;
+}
+.fillParent_Esjtje {
+  display: block;
+  height: 100%;
+  overflow: clip;
+  width: 100%;
+}
+.hiddenIframeContainer_Esjtje {
+  opacity: 0;
+}
+.iframePlaceholder_Esjtje {
+  background-color: #000;
+}
+.loadingPlaceholder_Esjtje {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=32125.765242b267370bf5.css.map*/

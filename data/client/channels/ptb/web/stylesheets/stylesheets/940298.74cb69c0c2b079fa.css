@@ -1,0 +1,40 @@
+.frame_lzDcNJ {
+  container: guild-space-page/inline-size;
+  padding: var(--space-16);
+}
+.wide_lzDcNJ {
+  width: 1100px;
+}
+.narrow_lzDcNJ,
+.wide_lzDcNJ {
+  max-width: 100%;
+}
+.narrow_lzDcNJ {
+  width: 600px;
+}
+.card_OQEDys {
+  background: var(--background-surface-high);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-high);
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: var(--space-16);
+  width: 300px;
+}
+.card_OQEDys,
+.mainContent_OQEDys {
+  display: flex;
+  gap: var(--space-12);
+}
+.mainContent_OQEDys {
+  align-items: flex-start;
+}
+.copy_OQEDys {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+/*# sourceMappingURL=940298.74cb69c0c2b079fa.css.map*/

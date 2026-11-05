@@ -1,0 +1,36 @@
+.clickable_ri97zV {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  max-width: 100%;
+  width: -moz-max-content;
+  width: max-content;
+}
+.clickable_ri97zV:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--text-default);
+}
+.clickable_ri97zV:focus-within .text_ri97zV,
+.clickable_ri97zV:hover .text_ri97zV {
+  max-width: calc(100% - 16px);
+}
+.clickable_ri97zV:focus-within .pencilIcon_ri97zV,
+.clickable_ri97zV:hover .pencilIcon_ri97zV {
+  visibility: visible;
+}
+.text_ri97zV {
+  max-width: 100%;
+  width: -moz-max-content;
+  width: max-content;
+}
+.pencilIcon_ri97zV {
+  color: var(--text-subtle);
+  flex-shrink: 0;
+}
+.pencilIcon_ri97zV.hidden_ri97zV {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=642578.d92dc7995c167cbd.css.map*/

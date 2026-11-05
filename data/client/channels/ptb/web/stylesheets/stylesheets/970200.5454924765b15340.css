@@ -1,0 +1,112 @@
+.container_7kL2qz {
+  background-color: var(--background-surface-highest);
+  box-sizing: border-box;
+  height: 100%;
+  max-width: 240px;
+  width: 100%;
+}
+.title_7kL2qz {
+  text-transform: capitalize;
+}
+.safetyFlow_orXH-o {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+}
+.container_orXH-o {
+  aspect-ratio: 750/520;
+  background-color: var(--background-surface-higher);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  max-height: 520px;
+  max-width: 750px;
+  overflow: hidden;
+}
+.body_orXH-o,
+.header_orXH-o {
+  padding: var(--space-16);
+}
+.error_orXH-o {
+  margin-top: var(--space-8);
+}
+.background_orXH-o {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: auto;
+  position: relative;
+  width: 100vw;
+}
+.artwork_orXH-o {
+  inset-inline-start: 0;
+  position: fixed;
+  top: 0;
+}
+.artwork_orXH-o,
+.body_orXH-o {
+  height: 100%;
+  width: 100%;
+}
+.interimBody_orXH-o {
+  min-width: 320px;
+}
+.verification_H1V6iT {
+  background-color: var(--background-base-low);
+  height: 100%;
+  width: 100%;
+}
+.verification_H1V6iT .title_H1V6iT {
+  color: var(--text-default);
+}
+.verification_H1V6iT .body_H1V6iT,
+.verification_H1V6iT .footer_H1V6iT {
+  color: var(--text-muted);
+}
+.textContainer_H1V6iT {
+  text-align: center;
+}
+.container_H1V6iT {
+  width: 500px;
+}
+.container_H1V6iT.isMobile_H1V6iT {
+  width: 100%;
+}
+.footer_H1V6iT {
+  text-align: center;
+}
+.footerBullet_H1V6iT {
+  opacity: 0.3;
+}
+.logoutButton_H1V6iT {
+  position: relative;
+}
+.verificationBlock_H1V6iT {
+  border-radius: 3px;
+  cursor: pointer;
+  padding-inline: 20px;
+}
+.verificationBlock_H1V6iT .image_H1V6iT {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  height: 160px;
+  width: 180px;
+}
+.verificationBlock_H1V6iT .body_H1V6iT {
+  color: var(--text-muted);
+  text-transform: none;
+}
+.verificationBlock_H1V6iT:hover {
+  background-color: var(--background-base-lower);
+}
+.theme-light .verificationBlock_H1V6iT {
+  border: 1px solid var(--primary-300);
+}
+.theme-dark .verificationBlock_H1V6iT {
+  border: 1px solid var(--primary-700);
+}
+
+/*# sourceMappingURL=970200.5454924765b15340.css.map*/

@@ -1,0 +1,145 @@
+.row__-eZlF {
+  align-items: center;
+  display: flex;
+}
+.row__-eZlF + .row__-eZlF {
+  margin-top: 8px;
+}
+.rowGuildName__-eZlF {
+  align-items: flex-start;
+}
+.rowIcon__-eZlF {
+  flex-shrink: 0;
+  margin-inline-end: 8px;
+}
+.rowIconV2__-eZlF {
+  margin-top: 2px;
+}
+.activityIcon__-eZlF {
+  color: var(--interactive-text-default);
+  height: var(--custom-guild-tooltip-icon-size);
+  width: var(--custom-guild-tooltip-icon-size);
+}
+.stageListenerPill__-eZlF {
+  align-items: center;
+  background-color: var(--background-base-lowest);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  height: 24px;
+  margin-inline-start: 8px;
+  padding: 0 8px;
+}
+.stageListenerCount__-eZlF {
+  margin-inline-start: 4px;
+}
+.guildNameText__-eZlF {
+  word-wrap: break-word;
+  color: var(--text-default);
+  min-width: 0;
+}
+.viewAsRolesWarning__-eZlF {
+  margin: 8px 0 4px;
+}
+.notificationContext__-eZlF {
+  margin-top: var(--space-4);
+}
+.notificationContext__-eZlF + .row__-eZlF {
+  margin-top: var(--space-6);
+}
+.guildNameTextLimitedSize__-eZlF {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.muteText__-eZlF {
+  font-weight: var(--font-weight-medium);
+}
+.muteTextWithActivity__-eZlF {
+  margin-top: 8px;
+}
+.invitesDisabledTooltip__-eZlF {
+  margin-top: 2px;
+}
+.guildTooltipWrapper__-eZlF {
+  max-width: 196px;
+  word-wrap: break-word;
+  pointer-events: none;
+  text-align: start;
+}
+.favoriteIcon_850pDF {
+  display: block;
+}
+.container_oJAkDB {
+  height: 24px;
+  overflow: hidden;
+  padding: 8px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+.bar_oJAkDB {
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px var(--opacity-black-24);
+  color: var(--text-strong);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+  height: 24px;
+  justify-content: center;
+  line-height: 16px;
+  pointer-events: auto;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-app-region: no-drag;
+  transition-delay: 0s;
+  transition-property: visibility;
+}
+.bar_oJAkDB.hidden_oJAkDB {
+  pointer-events: none;
+  transition-delay: 0.2s;
+  visibility: hidden;
+}
+.active_oJAkDB:active {
+  top: 1px;
+}
+.unread_oJAkDB {
+  background-color: var(--background-surface-highest);
+  border: 1px solid var(--border-normal);
+}
+.mention_oJAkDB {
+  background-color: var(--background-feedback-notification);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-medium);
+  box-sizing: border-box;
+  color: var(--text-overlay-light);
+}
+.mention_oJAkDB:active {
+  background-color: var(--red-430);
+}
+.icon_oJAkDB,
+.text_oJAkDB {
+  display: block;
+}
+.icon_oJAkDB {
+  color: var(--icon-strong);
+  height: 12px;
+  margin-inline-start: 2px;
+  width: 12px;
+}
+.enable-forced-colors .bar_oJAkDB {
+  background-color: Highlight;
+  border: 1px solid HighlightText;
+  color: HighlightText;
+  forced-color-adjust: none;
+  outline: 2px solid Canvas;
+}
+.enable-forced-colors .mention_oJAkDB {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=538735.8628f9d563470151.css.map*/
