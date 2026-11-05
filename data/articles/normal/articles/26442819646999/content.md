@@ -1,36 +1,42 @@
-<div class="exp-box">
-  <strong>NOTE</strong>: This feature is currently experimental and available to
-  a limited number of
-  <a
-    href="https://support.discord.com/hc/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Nitro</a
-  >
-  members.
-</div>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
+<p dir="ltr">
+  Use bookmarks and reminders on Discord to save important messages and get
+  notified about them later. Learn how to bookmark a message, set a reminder,
+  and manage both on desktop, browser, and mobile.
 </p>
-<ul>
-  <li><a href="#h_01J8QPHC9HB4M49TBF34YTWE62">What are Bookmarks? </a></li>
-  <li>
-    <a href="#h_01J8QPHC9HBKFD9MQE5K7AEG9G">Bookmark a Message</a>
-    <ul>
-      <li><a href="#h_01J8QPHC9H8AG8TSQX7AT5YVSH">Desktop/Browser</a></li>
-      <li><a href="#h_01J8QPHC9HF6133DD578P5GHRW">Mobile</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01J8QPHC9H9VK8K8KCD90W0Q59">Creating a Reminder</a>
-    <ul>
-      <li><a href="#h_01J8QPHC9H5T6PVKKX3RV19WWF">Desktop/Browser</a></li>
-      <li><a href="#h_01J8QPHC9HE6BBMKXHD963K4JT">Mobile</a></li>
-    </ul>
-  </li>
-</ul>
+<div class="toc-box">
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
+  <ul>
+    <li data-list-item-id="e44416dece056cd1e38578b0a0188b82c">
+      <a href="#h_01J8QPHC9HB4M49TBF34YTWE62">What are Bookmarks? </a>
+    </li>
+    <li data-list-item-id="ec5e039d3c5732aa88f5cc76bb9d7eb18">
+      <a href="#h_01J8QPHC9HBKFD9MQE5K7AEG9G">Bookmark a Message</a>
+      <ul>
+        <li data-list-item-id="efade484480c72811cae886a02acd663e">
+          <a href="#h_01J8QPHC9H8AG8TSQX7AT5YVSH">Desktop/Browser</a>
+        </li>
+        <li data-list-item-id="e07744fa3b9ec58c37d658484e88bd2a8">
+          <a href="#h_01J8QPHC9HF6133DD578P5GHRW">Mobile</a>
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="e106a1a7b0d645a389cb9748aace37f38">
+      <a href="#h_01J8QPHC9H9VK8K8KCD90W0Q59">Creating a Reminder</a>
+      <ul>
+        <li data-list-item-id="e35bf526effb7f557c3e0576010aa988f">
+          <a href="#h_01J8QPHC9H5T6PVKKX3RV19WWF">Desktop/Browser</a>
+        </li>
+        <li data-list-item-id="e38f1e7d3f70aa0c23edbbd82e8414d11">
+          <a href="#h_01J8QPHC9HE6BBMKXHD963K4JT">Mobile</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01J8QPHC9HB4M49TBF34YTWE62">What are Bookmarks?</h1>
 <p>
   Discord's <strong>bookmarks</strong> feature is here to transform how you
@@ -38,9 +44,13 @@
   Available exclusively for Nitro users, this tool allows you to:
 </p>
 <ul>
-  <li>Easily save important messages for later reference</li>
-  <li>Organize your Discord content more efficiently</li>
-  <li>
+  <li data-list-item-id="e14a0a9caf215542f455b62b996b7f6fd">
+    Easily save important messages for later reference
+  </li>
+  <li data-list-item-id="ef7d5cf1daf4490feaaa3aa3ef2831739">
+    Organize your Discord content more efficiently
+  </li>
+  <li data-list-item-id="e869bf4a200328a025ae1f90ebdf89bb7">
     Manage your saved items in real-time, with the ability to save or unsave
     messages as needed
   </li>
@@ -50,7 +60,7 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26650080905623"
+    src="https://support.discord.com/hc/article_attachments/44787562044951"
     width="351"
     height="463"
   />
@@ -60,10 +70,6 @@
   important conversations and come back to them whenever you need.
 </p>
 <h1 id="h_01J8QPHC9HBKFD9MQE5K7AEG9G">Bookmark a Message</h1>
-<div class="exp-box">
-  <strong>NOTE</strong>: As this feature is experimental, the steps may vary
-  slightly. 
-</div>
 <p>
   Bookmarking messages allows you to bookmark important information for easy
   access later. Whether you're using Discord on desktop, browser, or mobile,
@@ -80,7 +86,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26650094057623"
+    src="https://support.discord.com/hc/article_attachments/44787553931415"
     width="624"
     height="444"
   />
@@ -91,7 +97,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26650094059159"
+    src="https://support.discord.com/hc/article_attachments/44787562045591"
     width="624"
     height="508"
   />
@@ -99,7 +105,7 @@
 <p>
   4. To view your bookmarked messages, press the <strong>Inbox </strong>icon
   [<img
-    src="https://support.discord.com/hc/article_attachments/26650080914583"
+    src="https://support.discord.com/hc/article_attachments/44787562046359"
     width="24"
     height="24"
   />] in the upper-right corner of the app and select the
@@ -107,27 +113,29 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26650094063511"
+    src="https://support.discord.com/hc/article_attachments/44787562046487"
     width="624"
     height="503"
   />
 </p>
 <div class="tip-box">
-  <strong>On desktop/browser</strong>: To convert a bookmarked message into a
-  reminder or unsave it, press the <strong>Inbox</strong> icon [<img
-    src="https://support.discord.com/hc/article_attachments/26650080914583"
-    width="24"
-    height="24"
-  />] &gt; <strong>Bookmarks</strong> tab. Then select the desired option in the
-  upper right-corner of the bookmarked message.
+  <p>
+    <strong>On desktop/browser</strong>: To convert a bookmarked message into a
+    reminder or unsave it, press the <strong>Inbox</strong> icon [<img
+      src="https://support.discord.com/hc/article_attachments/44787562046359"
+      width="24"
+      height="24"
+    />] &gt; <strong>Bookmarks</strong> tab. Then select the desired option in
+    the upper right-corner of the bookmarked message.
+  </p>
   <p class="wysiwyg-text-align-center">
-    <strong
-      ><span style="color: #434343; background-color: #d9f0e5"
+    <span style="background-color: #d9f0e5; color: #434343"
+      ><strong
         ><img
-          src="https://support.discord.com/hc/article_attachments/26650080920599"
+          src="https://support.discord.com/hc/article_attachments/44787562047511"
           width="335"
-          height="442" /></span
-    ></strong>
+          height="442" /></strong
+    ></span>
   </p>
 </div>
 <h2 id="h_01J8QPHC9HF6133DD578P5GHRW">Mobile</h2>
@@ -142,25 +150,24 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26650080922135"
+    src="https://support.discord.com/hc/article_attachments/44787553934615"
     width="254"
     height="553"
   />
-   
-  <img
-    src="https://support.discord.com/hc/article_attachments/26650094070551"
+    <img
+    src="https://support.discord.com/hc/article_attachments/44787562048407"
     width="251"
     height="542"
   />
 </p>
 <p>
   4. To view your bookmarked messages, tap <strong>Notifications</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/26650094072471"
+    src="https://support.discord.com/hc/article_attachments/44787562050455"
     width="24"
     height="24"
   />] located in the bottom hub and select the <strong>Bookmarks</strong> icon
   [<img
-    src="https://support.discord.com/hc/article_attachments/26650080929047"
+    src="https://support.discord.com/hc/article_attachments/44787562050839"
     width="24"
     height="24"
   />] in the upper-right corner of the app. This will take you to the
@@ -169,13 +176,12 @@
 <p> </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26650094073623"
+    src="https://support.discord.com/hc/article_attachments/44787553938455"
     width="235"
     height="513"
   />
-   
-  <img
-    src="https://support.discord.com/hc/article_attachments/26650094078103"
+    <img
+    src="https://support.discord.com/hc/article_attachments/44787553939095"
     width="237"
     height="513"
   />
@@ -184,20 +190,20 @@
   <p class="wysiwyg-text-align-left">
     <strong>On mobile</strong>: To convert a bookmarked message into a reminder
     or unsave it, navigate to <strong>Notifications</strong> [<img
-      src="https://support.discord.com/hc/article_attachments/26650094072471"
+      src="https://support.discord.com/hc/article_attachments/44787562050455"
       alt="58e9963c-8011-4445-b557-56ff1afc90a8"
     />]<strong> &gt; Bookmarks</strong>[<img
-      src="https://support.discord.com/hc/article_attachments/26650080932247"
+      src="https://support.discord.com/hc/article_attachments/44787562052503"
       alt="49de1917-6f59-4541-8806-06f8b448a67b"
     />]. Then tap the <strong>ellipsis</strong> [<img
-      src="https://support.discord.com/hc/article_attachments/26650080939415"
+      src="https://support.discord.com/hc/article_attachments/44787553939863"
       alt="34a82bf2-5b8f-4eb5-8f04-426488c7bb3d"
     />] in the upper-right corner of the message and select the desired
     option.  
   </p>
   <p class="wysiwyg-text-align-center">
     <img
-      src="https://support.discord.com/hc/article_attachments/26650094083607"
+      src="https://support.discord.com/hc/article_attachments/44787562053271"
       width="221"
       height="472"
     />
@@ -211,7 +217,7 @@
 <h2 id="h_01J8QPHC9H5T6PVKKX3RV19WWF">Desktop/Browser</h2>
 <p>
   1. On desktop or browser, select the <strong>Inbox </strong>icon [<img
-    src="https://support.discord.com/hc/article_attachments/26650080942487"
+    src="https://support.discord.com/hc/article_attachments/44787562053911"
     width="24"
     height="24"
   />] in the upper-right corner of the app.
@@ -219,14 +225,14 @@
 <p>
   2. Hover over the message you would like to set as a reminder and press the
   <strong>Create Reminder </strong>icon [<img
-    src="https://support.discord.com/hc/article_attachments/26650094087063"
+    src="https://support.discord.com/hc/article_attachments/44787562054295"
     width="24"
     height="24"
   />] in the upper-right corner of the message.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26650080959767"
+    src="https://support.discord.com/hc/article_attachments/44787553947927"
     width="624"
     height="503"
   />
@@ -242,14 +248,14 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26650094093463"
+    src="https://support.discord.com/hc/article_attachments/44787553948183"
     width="624"
     height="501"
   />
 </p>
 <p>
   4. To view your reminders, press the <strong>Inbox </strong>icon [<img
-    src="https://support.discord.com/hc/article_attachments/26650094098071"
+    src="https://support.discord.com/hc/article_attachments/44787562055959"
     width="24"
     height="24"
   />] in the upper-right corner of the app and select the
@@ -259,19 +265,21 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26650094099735"
+    src="https://support.discord.com/hc/article_attachments/44787553949079"
     width="325"
     height="423"
   />
 </p>
 <div class="tip-box">
-  <strong>On desktop/browser</strong>: To edit, complete, or remove the
-  reminder, right-click the message you have set as a reminder within
-  <strong>Inbox &gt; Bookmarks</strong>. From there, choose your desired
-  action. 
+  <p>
+    <strong>On desktop/browser</strong>: To edit, complete, or remove the
+    reminder, right-click the message you have set as a reminder within
+    <strong>Inbox &gt; Bookmarks</strong>. From there, choose your desired
+    action. 
+  </p>
   <p class="wysiwyg-text-align-center">
     <img
-      src="https://support.discord.com/hc/article_attachments/26650080967959"
+      src="https://support.discord.com/hc/article_attachments/44787553949463"
       width="624"
       height="499"
     />
@@ -291,13 +299,12 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26650094103319"
+    src="https://support.discord.com/hc/article_attachments/44787553952919"
     width="260"
     height="565"
   />
-   
-  <img
-    src="https://support.discord.com/hc/article_attachments/26650094105239"
+    <img
+    src="https://support.discord.com/hc/article_attachments/44787553954839"
     width="265"
     height="575"
   />
@@ -308,50 +315,51 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26650080976663"
+    src="https://support.discord.com/hc/article_attachments/44787553955607"
     width="233"
     height="506"
   />
 </p>
 <p>
   5. To view your reminders, tap <strong>Notifications</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/26650094072471"
+    src="https://support.discord.com/hc/article_attachments/44787562050455"
     width="24"
     height="24"
   />] located in the bottom hub and select the <strong>Bookmarks</strong> icon
   [<img
-    src="https://support.discord.com/hc/article_attachments/26650080932247"
+    src="https://support.discord.com/hc/article_attachments/44787562052503"
     width="24"
     height="24"
   />] in the upper-right corner of the app.  
 </p>
 <p class="wysiwyg-text-align-center">
-    <img
-    src="https://support.discord.com/hc/article_attachments/26650080979351"
+   
+  <img
+    src="https://support.discord.com/hc/article_attachments/44787562062359"
     width="238"
     height="515"
   /> 
 </p>
 <div class="tip-box">
-  <strong>On mobile:</strong> To edit or remove the reminder, tap the
-  <strong>ellipsis</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/26650080939415"
-    alt="34a82bf2-5b8f-4eb5-8f04-426488c7bb3d"
-  />] in the upper-right corner of the reminder, then select the desired option.
-  Tap the <strong>checkmark</strong> icon [<img
-    src="https://support.discord.com/hc/article_attachments/26650094109719"
-    alt="checkmark-large.png"
-  />] to mark it as complete.  
+  <p>
+    <strong>On mobile:</strong> To edit or remove the reminder, tap the
+    <strong>ellipsis</strong> [<img
+      src="https://support.discord.com/hc/article_attachments/44787553939863"
+      alt="34a82bf2-5b8f-4eb5-8f04-426488c7bb3d"
+    />] in the upper-right corner of the reminder, then select the desired
+    option. Tap the <strong>checkmark</strong> icon [<img
+      src="https://support.discord.com/hc/article_attachments/44787553956247"
+      alt="checkmark-large.png"
+    />] to mark it as complete.  
+  </p>
   <p class="wysiwyg-text-align-center">
-    <span style="color: #434343; background-color: #d9f0e5"
+    <span style="background-color: #d9f0e5; color: #434343"
       ><img
-        src="https://support.discord.com/hc/article_attachments/26650094113559"
+        src="https://support.discord.com/hc/article_attachments/44787562063511"
         width="250"
-        height="541" /></span
-    ><span style="color: #434343; background-color: #d9f0e5">   </span
-    ><span style="color: #434343; background-color: #d9f0e5"
-      ><img
-        src="https://support.discord.com/hc/article_attachments/26650094114839"
+        height="541" />
+        <img
+        src="https://support.discord.com/hc/article_attachments/44787553957655"
         width="249"
         height="542"
     /></span>
