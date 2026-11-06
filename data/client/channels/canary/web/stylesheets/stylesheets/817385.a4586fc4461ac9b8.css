@@ -31,6 +31,9 @@
   display: flex;
   justify-content: center;
   padding: 0;
+  transition:
+    color 0.15s ease-out,
+    border-color 0.15s ease-out;
 }
 .button_5QfLe8:focus-visible {
   outline: 2px solid var(--border-focus);
@@ -348,6 +351,7 @@
 }
 .buttonWithSlider_ma_sAl {
   border-inline-start: 0;
+  padding-inline-start: 1px;
 }
 .control_vDbele {
   bottom: var(--space-32);
@@ -355,6 +359,9 @@
 }
 .back_vDbele {
   inset-inline-start: var(--space-32);
+}
+.replay_vDbele {
+  inset-inline-start: calc(var(--space-32) + var(--space-48) + var(--space-10));
 }
 .next_vDbele {
   inset-inline-end: var(--space-32);
@@ -421,4 +428,4 @@
   gap: var(--space-32);
 }
 
-/*# sourceMappingURL=817385.6f11ae988faf21a7.css.map*/
+/*# sourceMappingURL=817385.a4586fc4461ac9b8.css.map*/
