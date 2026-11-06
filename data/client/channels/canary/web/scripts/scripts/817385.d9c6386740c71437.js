@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [691548],
+  [817385],
   {
     11435(e) {
       e.exports = {
@@ -30,6 +30,13 @@
         Uq: "value__LdbI1",
         Pf: "label__LdbI1",
         QK: "labelText__LdbI1",
+      };
+    },
+    738964(e) {
+      e.exports = {
+        kL: "container_ma_sAl",
+        xJ: "sliderContainer_ma_sAl",
+        Gg: "buttonWithSlider_ma_sAl",
       };
     },
     753875(e) {
@@ -111,4 +118,4 @@
     },
   },
 ]);
-//# sourceMappingURL=691548.d0cb559df15632a2.js.map
+//# sourceMappingURL=817385.d9c6386740c71437.js.map

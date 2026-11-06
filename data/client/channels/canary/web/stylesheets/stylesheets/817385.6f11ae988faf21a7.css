@@ -328,6 +328,27 @@
 .title_pF9DDa {
   color: var(--custom-checkpoint-primary);
 }
+.container_ma_sAl {
+  display: flex;
+  position: relative;
+}
+.sliderContainer_ma_sAl {
+  --background-brand: var(--custom-checkpoint-primary);
+  align-items: center;
+  border: 1px solid var(--custom-checkpoint-primary);
+  border-inline-end: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 32px;
+  inset-inline-end: 100%;
+  padding: 0 var(--space-12);
+  position: absolute;
+  top: 0;
+  width: 120px;
+}
+.buttonWithSlider_ma_sAl {
+  border-inline-start: 0;
+}
 .control_vDbele {
   bottom: var(--space-32);
   position: absolute;
@@ -400,4 +421,4 @@
   gap: var(--space-32);
 }
 
-/*# sourceMappingURL=691548.cb0031ae537a2d70.css.map*/
+/*# sourceMappingURL=817385.6f11ae988faf21a7.css.map*/
