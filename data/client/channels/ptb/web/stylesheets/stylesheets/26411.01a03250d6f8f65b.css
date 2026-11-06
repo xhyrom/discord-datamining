@@ -274,14 +274,16 @@
 }
 .container_UP1Jis {
   align-items: center;
+  color: var(--text-subtle);
   cursor: pointer;
   display: flex;
+  gap: var(--space-4);
 }
 .container_UP1Jis:hover > .textContent_UP1Jis {
   text-decoration: underline;
 }
-.iconEye_UP1Jis {
-  margin-inline-end: 4px;
+.icon_UP1Jis {
+  flex-shrink: 0;
 }
 .clipKeybindHint_OAv3mC {
   align-items: center;
@@ -464,4 +466,4 @@
   cursor: pointer;
 }
 
-/*# sourceMappingURL=26411.242bcf663c8c5163.css.map*/
+/*# sourceMappingURL=26411.01a03250d6f8f65b.css.map*/

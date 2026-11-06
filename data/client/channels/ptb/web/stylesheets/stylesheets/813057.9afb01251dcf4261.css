@@ -122,14 +122,8 @@
   flex-direction: column;
   gap: var(--space-16);
   min-height: 0;
-  overflow-y: auto;
   padding: var(--space-4) var(--space-12) var(--space-16);
-}
-.list_DERYpk::-webkit-scrollbar {
-  display: none;
-}
-.no-webkit-scrollbar .list_DERYpk {
-  scrollbar-width: none;
+  scroll-padding-top: var(--space-4);
 }
 .divider_DERYpk {
   background-color: var(--border-subtle);
@@ -188,4 +182,4 @@
   width: 124px;
 }
 
-/*# sourceMappingURL=813057.41f1948088e4630c.css.map*/
+/*# sourceMappingURL=813057.9afb01251dcf4261.css.map*/

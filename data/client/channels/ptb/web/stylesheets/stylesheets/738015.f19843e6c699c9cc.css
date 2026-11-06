@@ -331,6 +331,12 @@
   code {
   white-space: pre;
 }
+.threadMessageAccessory_2i8Bfm
+  .threadMessageAccessoryPreview_2i8Bfm
+  .threadMessageAccessoryContent_2i8Bfm
+  :is(h1, h2, h3, h4, h5, h6, li) {
+  white-space: inherit;
+}
 .repliedTextContent_2i8Bfm {
   inline-size: -moz-max-content;
   inline-size: max-content;
@@ -871,4 +877,4 @@
   forced-color-adjust: none;
 }
 
-/*# sourceMappingURL=738015.62a5e01501cc5099.css.map*/
+/*# sourceMappingURL=738015.f19843e6c699c9cc.css.map*/

@@ -53,7 +53,7 @@
       };
     },
     211550(e) {
-      e.exports = { k: "container_uTMZTY", q: "widerInbox_uTMZTY" };
+      e.exports = { k: "container_uTMZTY" };
     },
     727276(e, r, a) {
       e.exports = {
@@ -200,4 +200,4 @@
     },
   },
 ]);
-//# sourceMappingURL=599618.813eff063d37e33e.js.map
+//# sourceMappingURL=599618.cc95d2b385d78b65.js.map

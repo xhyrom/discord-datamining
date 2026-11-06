@@ -47,6 +47,11 @@
   padding-block: var(--space-lg) var(--space-xxs);
   padding-inline: var(--space-md) var(--space-xxs);
 }
+.privateChannelMembersGroup_86es0b {
+  align-items: center;
+  display: flex;
+  gap: var(--space-xxs);
+}
 @media (hover: hover) {
   .membersGroupNitroLabel_86es0b:hover {
     color: var(--interactive-text-hover);
@@ -132,4 +137,4 @@
   }
 }
 
-/*# sourceMappingURL=831130.0bbf12a00de32dbc.css.map*/
+/*# sourceMappingURL=831130.1c19a000fbdf0515.css.map*/
