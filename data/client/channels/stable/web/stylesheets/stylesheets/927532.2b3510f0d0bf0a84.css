@@ -1,0 +1,18 @@
+.container_ZOja1A {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container_bBrC4b {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  white-space: normal;
+}
+.container_bBrC4b ol,
+.container_bBrC4b ul {
+  margin-bottom: 24px;
+  margin-inline: 20px 0;
+}
+
+/*# sourceMappingURL=927532.2b3510f0d0bf0a84.css.map*/

@@ -1,0 +1,113 @@
+.closeButton_Jldl6o {
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  flex: 0 0 auto;
+  line-height: 0;
+  padding-block: 8px;
+  padding-inline: var(--space-12);
+}
+.closeButton_Jldl6o:hover {
+  color: var(--interactive-text-hover);
+}
+.closeIcon_Jldl6o {
+  height: 16px;
+  width: 16px;
+}
+.clipContainer_rE8-46 {
+  margin-top: 0;
+  overflow: hidden;
+  padding-top: 3px;
+}
+.container_rE8-46 {
+  display: flex;
+  flex-direction: column;
+}
+.replyBar_rE8-46,
+.threadSuggestionBar_rE8-46 {
+  background: var(--background-base-lower);
+  background-color: unset;
+  border-bottom: none;
+  cursor: pointer;
+}
+.theme-dark.custom-theme-background .replyBar_rE8-46,
+.theme-dark.custom-theme-background .threadSuggestionBar_rE8-46 {
+  background: var(--background-gradient-lowest, var(--background-base-lower));
+}
+.theme-light.custom-theme-background .replyBar_rE8-46,
+.theme-light.custom-theme-background .threadSuggestionBar_rE8-46 {
+  background: var(--background-gradient-lower, var(--background-base-lower));
+}
+.replyBar_rE8-46 {
+  align-items: center;
+  border-start-end-radius: 8px;
+  border-start-start-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.threadSuggestionBar_rE8-46 {
+  border-top: 1px solid var(--border-subtle);
+  box-shadow: 0 3px 0 var(--background-base-lower);
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+.text_rE8-46 {
+  margin-inline-start: var(--space-16);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.replyLabel_rE8-46 {
+  align-items: center;
+  display: inline-flex;
+  flex: 1 1 auto;
+  white-space: pre;
+}
+.name_rE8-46 {
+  font-weight: var(--font-weight-semibold);
+}
+.mediaMention_rE8-46 {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--space-4);
+}
+.clipIcon_rE8-46 {
+  flex-shrink: 0;
+}
+.clipTitle_rE8-46 {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.actions_rE8-46 {
+  flex: 0 0 auto;
+  margin-inline-end: var(--space-4);
+}
+.actions_rE8-46,
+.mentionButton_rE8-46 {
+  align-items: center;
+  display: flex;
+}
+.mentionButton_rE8-46 {
+  cursor: pointer;
+  padding: 8px 12px;
+  text-transform: none;
+}
+.mentionIcon_rE8-46 {
+  height: 16px;
+  margin-inline-end: 4px;
+  width: 16px;
+}
+.separator_rE8-46 {
+  background-color: var(--border-subtle);
+  height: 20px;
+  width: 1px;
+}
+.createThreadButton_rE8-46 {
+  margin-inline: 8px;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=841136.56b7c2b0b5fab0eb.css.map*/

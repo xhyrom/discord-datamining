@@ -1,0 +1,70 @@
+.chatWheelMouseInput_ov2c5T {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.chatWheel_ov2c5T {
+  position: relative;
+}
+.chatWheelBackground_ov2c5T {
+  height: 100%;
+  width: 100%;
+}
+.chatWheelDeadZone_ov2c5T {
+  fill: var(--background-surface-high);
+  opacity: 0;
+}
+.chatWheelDeadZone_ov2c5T:hover {
+  opacity: 0.3;
+}
+.chatWheelCenter_ov2c5T {
+  fill: var(--background-surface-high);
+  opacity: 0.6;
+}
+.innerContent_ov2c5T {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: calc(50% - 16px);
+  inset-inline: 0;
+  pointer-events: none;
+}
+.chatWheelDeadZoneIcon_ov2c5T {
+  color: var(--white);
+  cursor: pointer;
+  height: 48px;
+  position: relative;
+  width: 48px;
+  z-index: 9999;
+}
+.paginationHint_ov2c5T {
+  background-color: var(--opacity-black-28);
+  border-radius: var(--radius-sm);
+  color: var(--white);
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 8px;
+  padding: 4px;
+}
+.chatWheelBackground_ov2c5T {
+  fill: none;
+  stroke: var(--background-surface-high);
+  opacity: 0.9;
+}
+.chatWheelItem_ov2c5T {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.soundButton_JhiVh1 {
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  height: 52px;
+  width: 96px;
+}
+
+/*# sourceMappingURL=655825.f31a082315b73932.css.map*/

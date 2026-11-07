@@ -1,0 +1,33 @@
+.media_hzb1TJ {
+  border-radius: var(--radius-md);
+}
+.assetContainer_hzb1TJ {
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.playButton_hzb1TJ {
+  inset-inline-start: 50%;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease-in-out;
+  z-index: 2;
+}
+.assetContainer_hzb1TJ:focus-within .playButton_hzb1TJ,
+.assetContainer_hzb1TJ:hover .playButton_hzb1TJ {
+  opacity: 1;
+  pointer-events: auto;
+}
+.closeButton_hzb1TJ {
+  inset-inline-end: calc(var(--space-8) - 1px);
+  position: absolute;
+  top: calc(var(--space-8) - 1px);
+  z-index: 2;
+}
+
+/*# sourceMappingURL=891089.d5fcab1effc32330.css.map*/

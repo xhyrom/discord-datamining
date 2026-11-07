@@ -1,0 +1,16 @@
+.overflow__WDjet {
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lineClamp2Plus__WDjet,
+.overflow__WDjet {
+  overflow: hidden;
+  position: relative;
+}
+.lineClamp2Plus__WDjet {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+/*# sourceMappingURL=85427.0d7f1ccc3de2414a.css.map*/

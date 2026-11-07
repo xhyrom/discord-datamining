@@ -1,0 +1,28 @@
+.balanceCounterText_yIKdvW {
+  color: var(--text-strong);
+}
+.full-motion .balanceCounterText_yIKdvW {
+  transition:
+    all 0.4s ease-out,
+    opacity 0.4s ease-in;
+}
+.balanceCounterMarginRightAlign_yIKdvW {
+  margin-inline-start: 2px;
+}
+.balanceCounterTextRightAlign_yIKdvW {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: end;
+}
+.balanceCounterMarginLeftAlign_yIKdvW {
+  margin-inline-end: 2px;
+}
+.balanceCounterTextLeftAlign_yIKdvW {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+/*# sourceMappingURL=450998.46c0f071d9fbcaed.css.map*/

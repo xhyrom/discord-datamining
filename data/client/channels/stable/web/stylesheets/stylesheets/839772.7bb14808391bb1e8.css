@@ -1,0 +1,227 @@
+.text_uc7PyD {
+  display: inline-block;
+}
+.text_uc7PyD,
+.text_uc7PyD a {
+  color: currentColor;
+}
+.text_uc7PyD a {
+  text-decoration: underline;
+}
+.premiumIcon_uc7PyD {
+  height: 24px;
+  margin-inline-end: 8px;
+  position: relative;
+  top: 6px;
+  width: 24px;
+}
+.notice_UBdWBJ {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.guildIcon_UBdWBJ {
+  margin-inline-end: 8px;
+}
+.guildName_UBdWBJ {
+  color: inherit;
+}
+.guildName_UBdWBJ:hover {
+  text-decoration: underline;
+}
+.actionButton_UBdWBJ {
+  margin-inline-start: 12px;
+  top: 0;
+}
+.actionButtonInner_UBdWBJ {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+.notice_FHSxiv {
+  align-items: center;
+  background-color: var(--brand-600);
+  box-shadow: none;
+  color: var(--white);
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 0 8px;
+}
+.notice_FHSxiv.error_FHSxiv {
+  background-color: var(--background-feedback-mod-critical);
+}
+.button_FHSxiv {
+  align-items: center;
+  font-weight: var(--font-weight-semibold);
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4px 8px;
+}
+.button_FHSxiv:hover {
+  background-color: var(--brand-530);
+}
+.error_FHSxiv > .button_FHSxiv:hover {
+  background-color: var(--red-430);
+}
+.header_FHSxiv {
+  color: var(--white);
+  display: inline;
+  margin-inline-end: 16px;
+}
+.backButtonInner_QQS-rv {
+  display: flex;
+  gap: 8px;
+  padding: 2px 0;
+}
+.backButton_QQS-rv:hover {
+  background-color: var(--brand-530);
+}
+.backNotice_QQS-rv {
+  background-color: var(--brand-600);
+  border-radius: 0;
+  padding: 8px;
+}
+.closeButton_QQS-rv {
+  height: 100%;
+}
+.left_VmGrWN {
+  transform: rotate(270deg);
+}
+.right_VmGrWN {
+  transform: rotate(90deg);
+}
+.down_VmGrWN {
+  transform: rotate(180deg);
+}
+.downRight_VmGrWN {
+  transform: rotate(135deg);
+}
+.upLeft_VmGrWN {
+  transform: rotate(315deg);
+}
+.discordMemberCreatedAt_XvCt_s {
+  display: flex;
+  gap: 10px;
+}
+.discordMemberCreatedAtIconContainer_XvCt_s {
+  background-color: var(--interactive-background-hover);
+  border-radius: 50%;
+  color: var(--interactive-text-active);
+  height: 24px;
+  padding: 8px;
+  width: 24px;
+}
+.discordMemberCreatedAtIcon_XvCt_s {
+  align-self: center;
+}
+.discordMemberCreatedAtText_XvCt_s {
+  display: flex;
+  flex-direction: column;
+}
+.connectedAccounts_XvCt_s {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.connectedAccountsColumn_XvCt_s {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 8px);
+}
+.connectedAccountsColumn_XvCt_s + .connectedAccountsColumn_XvCt_s {
+  margin-inline-start: 16px;
+}
+.connectedAccountContainer_XvCt_s {
+  border: 1px solid var(--user-profile-border);
+  border-radius: var(--radius-sm);
+  margin-top: 16px;
+  padding: 8px;
+}
+.connectedAccountContainerWithMetadata_XvCt_s {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.connectedAccount_XvCt_s {
+  align-items: center;
+  display: flex;
+  flex: 0 1;
+  gap: 8px;
+}
+.connectedAccountChildren_XvCt_s {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-inline-start: 32px;
+  overflow: hidden;
+}
+.connectedAccountChildrenNoIcon_XvCt_s {
+  margin-inline-start: 0;
+}
+.connectedAccountPoweredBy_XvCt_s {
+  color: var(--text-muted);
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 8px;
+}
+.connectedAccountPoweredByText_XvCt_s {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 4px;
+  vertical-align: text-top;
+}
+.connectedAccountIcon_XvCt_s {
+  flex-shrink: 0;
+  height: 24px;
+  width: 24px;
+}
+.connectedAccountNameContainer_XvCt_s {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.connectedAccountNameContainerClickable_XvCt_s {
+  cursor: pointer;
+}
+.connectedAccountName_XvCt_s,
+.connectedAccountNameTextContainer_XvCt_s {
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+.connectedAccountNameTextContainer_XvCt_s {
+  flex: 1;
+}
+.connectedAccountNameText_XvCt_s {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+  white-space: nowrap;
+}
+.connectedAccountVerifiedIcon_XvCt_s {
+  margin-inline-start: 4px;
+}
+.connectedAccountHideIcon_XvCt_s {
+  color: var(--interactive-text-default);
+  height: 14px;
+  margin: 2px;
+  width: 14px;
+}
+.connectedAccountContainer_XvCt_s .connectedAccountOpenIcon_XvCt_s {
+  color: var(--interactive-text-default);
+  display: block;
+  height: 16px;
+  transform: rotate(45deg);
+  width: 16px;
+}
+.connectedAccountContainer_XvCt_s .connectedAccountOpenIcon_XvCt_s:hover {
+  color: var(--interactive-text-hover);
+}
+.connectedAccountContainer_XvCt_s .connectedAccountOpenIcon_XvCt_s:active {
+  color: var(--interactive-text-active);
+}
+
+/*# sourceMappingURL=839772.7bb14808391bb1e8.css.map*/

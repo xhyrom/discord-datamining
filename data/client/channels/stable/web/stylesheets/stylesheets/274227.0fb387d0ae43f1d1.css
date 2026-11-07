@@ -1,0 +1,141 @@
+.lockup_HRhm0U {
+  display: grid;
+  place-items: center;
+}
+.layer_HRhm0U {
+  grid-area: 1/1;
+}
+.layer_HRhm0U img {
+  display: block;
+}
+.container_LDGylj {
+  align-items: center;
+  display: flex;
+  gap: var(--space-12);
+  width: auto;
+}
+.container_LDGylj.clickable_LDGylj {
+  cursor: pointer;
+}
+.container_LDGylj.clickable_LDGylj:hover [data-underline-on-hover] {
+  text-decoration: underline;
+}
+.content_LDGylj {
+  flex: 1;
+  min-width: 0;
+}
+.bottomSubText_LDGylj {
+  margin-top: var(--space-12);
+}
+.header_LDGylj {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.headerIcon_LDGylj {
+  border-radius: var(--radius-xs);
+  height: 16px;
+  width: 16px;
+}
+.details_LDGylj {
+  align-self: center;
+  flex: 1;
+}
+.details_LDGylj,
+.text_LDGylj {
+  display: flex;
+  min-width: 0;
+}
+.text_LDGylj {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-4);
+  justify-content: space-between;
+}
+.capitalizedText_LDGylj {
+  text-transform: capitalize;
+}
+.targetIcon_LDGylj {
+  display: inline-block;
+  height: 16px;
+  margin-inline: 2px 1px;
+  vertical-align: text-bottom;
+  width: 16px;
+}
+.priceContainer_LDGylj {
+  align-items: flex-end;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.currentPrice_LDGylj,
+.priceContainer_LDGylj {
+  display: flex;
+  gap: var(--space-4);
+}
+.currentPrice_LDGylj {
+  align-items: center;
+}
+.strikethroughPrice_LDGylj {
+  text-decoration: line-through;
+}
+.inlineStrikethroughPrice_LDGylj {
+  text-decoration: line-through;
+}
+.inlineStrikethroughPrice_LDGylj,
+.originalPrice_LDGylj {
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+.originalPrice_LDGylj {
+  white-space: nowrap;
+}
+.iconDefaultBackground_LDGylj {
+  background: var(--background-mod-subtle);
+}
+.icon_LDGylj {
+  align-items: center;
+  align-self: flex-start;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-md);
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  overflow: clip;
+  position: relative;
+  width: 64px;
+}
+.icon_LDGylj .expressiveGradient_LDGylj,
+.icon_LDGylj .nitroCredit_LDGylj {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+}
+.icon_LDGylj .nitroCredit_LDGylj {
+  background: linear-gradient(322deg, #e978e6 6.26%, #2f3ebb 79.77%);
+}
+.icon_LDGylj .nitroCredit_LDGylj svg {
+  filter: drop-shadow(0 4px 10px var(--shadow-low-hover));
+}
+.icon_LDGylj .nitroBasic_LDGylj {
+  align-items: center;
+  background: var(--background-mod-normal);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+}
+.bundleMiniStaticPreview_LDGylj {
+  height: 100%;
+  width: 100%;
+}
+.purchaseItemImage_LDGylj {
+  height: 64px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 64px;
+}
+
+/*# sourceMappingURL=274227.0fb387d0ae43f1d1.css.map*/

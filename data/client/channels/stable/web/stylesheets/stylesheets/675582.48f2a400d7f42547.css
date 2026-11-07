@@ -1,0 +1,54 @@
+.clickable_1AI0dL {
+  border-radius: inherit;
+  cursor: pointer;
+  max-width: 100%;
+  width: -moz-max-content;
+  width: max-content;
+}
+.clickable_1AI0dL:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--text-default);
+}
+.imagePosition_1AI0dL {
+  align-items: center;
+  border-radius: var(--radius-xs);
+  display: flex;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: visible;
+  position: relative;
+}
+.aspectRatio_1AI0dL {
+  aspect-ratio: 1/1;
+}
+.aspectRatio_1AI0dL.crunchyroll_1AI0dL {
+  aspect-ratio: 2/3;
+}
+.imageContainer_1AI0dL {
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+}
+.imageContainer_1AI0dL .contentImage_1AI0dL {
+  min-width: 60px;
+}
+.smallImagePosition_1AI0dL {
+  border-radius: var(--radius-round);
+  bottom: -4px;
+  inset-inline-end: -4px;
+  position: absolute;
+}
+.smallImageContainer_1AI0dL {
+  align-items: center;
+  border-radius: inherit;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.contentImage_1AI0dL {
+  border-radius: inherit;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=675582.48f2a400d7f42547.css.map*/

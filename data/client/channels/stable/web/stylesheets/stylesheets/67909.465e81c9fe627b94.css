@@ -1,0 +1,26 @@
+.dot_oXifRZ {
+  background-color: var(--interactive-text-active);
+  border-radius: 100%;
+  position: absolute;
+  transform: translateY(-5%);
+}
+.maskPopout_oXifRZ {
+  border: 2px solid var(--background-surface-high);
+}
+.maskPrimary_oXifRZ {
+  border: 2px solid var(--background-base-low);
+}
+.maskSecondary_oXifRZ {
+  border: 2px solid var(--background-base-lower);
+}
+.maskBlack_oXifRZ {
+  border: 2px solid var(--black);
+}
+.alert_oXifRZ {
+  background-color: var(--background-feedback-notification);
+}
+.blurpleTreatment_oXifRZ {
+  background-color: var(--blurple-50);
+}
+
+/*# sourceMappingURL=67909.465e81c9fe627b94.css.map*/

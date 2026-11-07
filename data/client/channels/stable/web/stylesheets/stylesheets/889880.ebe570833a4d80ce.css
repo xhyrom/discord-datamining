@@ -1,0 +1,192 @@
+.mediaBarInteraction_s1cr3c,
+.mediaBarInteractionDragging_s1cr3c {
+  align-items: center;
+  align-self: stretch;
+  cursor: pointer;
+  display: flex;
+  flex: 1 1 auto;
+  margin: 0 7px;
+  position: relative;
+}
+.mediaBarInteraction_s1cr3c:hover .mediaBarWrapper_s1cr3c,
+.mediaBarInteractionDragging_s1cr3c:hover .mediaBarWrapper_s1cr3c {
+  box-shadow: 0 1px 1px var(--opacity-black-28);
+}
+.mediaBarInteraction_s1cr3c:hover .bubble_s1cr3c,
+.mediaBarInteractionDragging_s1cr3c:hover .bubble_s1cr3c {
+  opacity: 1;
+}
+.mediaBarInteraction_s1cr3c:hover .mediaBarGrabber_s1cr3c {
+  background-color: var(--brand-560);
+  transform: scale(1);
+}
+.mediaBarInteraction_s1cr3c:hover .mediaBarPreview_s1cr3c {
+  opacity: 0.3;
+}
+.mediaBarInteraction_s1cr3c:hover .bubble_s1cr3c {
+  opacity: 1;
+}
+.mediaBarInteractionDragging_s1cr3c .bubble_s1cr3c {
+  opacity: 1;
+}
+.mediaBarInteractionDragging_s1cr3c .mediaBarGrabber_s1cr3c {
+  background-color: var(--brand-560);
+  transform: scale(1);
+}
+.mediaBarInteractionVolume_s1cr3c {
+  align-self: center;
+  background-color: var(--opacity-black-68);
+  border-radius: 8px;
+  flex: none;
+  margin-block: 0;
+  margin-inline: 0 4px;
+  padding: 4px 8px;
+  width: 72px;
+}
+.vertical_s1cr3c {
+  align-items: center;
+  display: flex;
+  height: 54px;
+  transform: rotate(-90deg);
+  transform-origin: top;
+  width: 140px;
+}
+.horizontal_s1cr3c {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+}
+.fakeEdges_s1cr3c {
+  position: relative;
+}
+.fakeEdges_s1cr3c:after,
+.fakeEdges_s1cr3c:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 3px;
+  z-index: 1;
+}
+.fakeEdges_s1cr3c:before {
+  border-radius: 3px 0 0 3px;
+  inset-inline-start: -3px;
+}
+.fakeEdges_s1cr3c:after {
+  border-radius: 0 3px 3px 0;
+  inset-inline-end: -3px;
+}
+.buffer_s1cr3c {
+  background-color: var(--white);
+  height: 100%;
+  inset-inline-start: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+}
+.buffer_s1cr3c:after,
+.buffer_s1cr3c:before {
+  background-color: var(--white);
+}
+.mediaBarWrapper_s1cr3c {
+  background-color: hsl(var(--primary-300-hsl) / 0.3);
+  flex: 1 1 auto;
+  height: 6px;
+  position: relative;
+}
+.mediaBarWrapper_s1cr3c:after,
+.mediaBarWrapper_s1cr3c:before {
+  background-color: hsl(var(--primary-300-hsl) / 0.3);
+}
+.mediaBarWrapperVolume_s1cr3c {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  width: 72px;
+}
+.mediaBarPreview_s1cr3c,
+.mediaBarProgress_s1cr3c {
+  height: 100%;
+  inset-inline-start: 0;
+  position: absolute;
+  top: 0;
+}
+.mediaBarPreview_s1cr3c,
+.mediaBarProgress_s1cr3c {
+}
+.mediaBarPreview_s1cr3c {
+  background-color: var(--white);
+  opacity: 0;
+  z-index: 0;
+}
+.mediaBarPreview_s1cr3c:after,
+.mediaBarPreview_s1cr3c:before {
+  background-color: var(--white);
+}
+.mediaBarProgress_s1cr3c {
+  background-color: var(--brand-500);
+  z-index: 3;
+}
+.mediaBarProgress_s1cr3c:after,
+.mediaBarProgress_s1cr3c:before {
+  background-color: var(--brand-500);
+}
+.mediaBarGrabber_s1cr3c {
+  background-color: var(--brand-500);
+  border-radius: 5px;
+  cursor: grab;
+  height: 10px;
+  inset-inline-end: 0;
+  margin-top: -5px;
+  margin-inline-end: -5px;
+  position: absolute;
+  top: 50%;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  width: 10px;
+  z-index: 2;
+}
+.full-motion .mediaBarGrabber_s1cr3c {
+  transition:
+    transform 0.25s ease-in-out,
+    background-color 0.25s linear;
+}
+.bubble_s1cr3c {
+  background-color: var(--black);
+  border-radius: 3px;
+  color: var(--primary-100);
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+  height: 18px;
+  line-height: 18px;
+  opacity: 0;
+  padding: 0 8px;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  top: -28px;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease-out;
+  width: auto;
+}
+.bubble_s1cr3c:before {
+  border: 5px solid transparent;
+  border-top: 5px solid var(--black);
+  content: " ";
+  height: 0;
+  inset-inline-start: 50%;
+  margin-inline-start: -5px;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+}
+.enable-forced-colors .mediaBarGrabber_s1cr3c,
+.enable-forced-colors .mediaBarProgress_s1cr3c {
+  background-color: ButtonText !important;
+}
+.enable-forced-colors .mediaBarInteractionVolume_s1cr3c {
+  background-color: ButtonFace;
+}
+
+/*# sourceMappingURL=889880.ebe570833a4d80ce.css.map*/

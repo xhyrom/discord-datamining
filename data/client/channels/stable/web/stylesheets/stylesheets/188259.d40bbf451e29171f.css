@@ -1,0 +1,34 @@
+.svg_7RsUnm {
+  display: inline-block;
+  flex-shrink: 0;
+  forced-color-adjust: none;
+  height: 1.25em;
+  vertical-align: text-bottom;
+  width: 1.25em;
+}
+.background_7RsUnm {
+  fill: var(--background-mod-normal);
+}
+.dot_7RsUnm,
+.dotBorderColor_7RsUnm {
+}
+.dotBorderColor_7RsUnm {
+  opacity: 0.4;
+}
+.roleCircle_7RsUnm {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  forced-color-adjust: none;
+  height: 12px;
+  justify-content: center;
+  margin: 0 4px;
+  padding: 0;
+  width: 12px;
+}
+.dotBorderBase_7RsUnm {
+  fill: var(--text-strong);
+}
+
+/*# sourceMappingURL=188259.d40bbf451e29171f.css.map*/

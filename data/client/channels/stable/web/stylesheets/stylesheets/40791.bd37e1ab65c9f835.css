@@ -1,0 +1,64 @@
+.member_Iy0c7A {
+  margin-inline-start: 8px;
+  max-width: calc(var(--custom-member-list-width) - 16px);
+  position: relative;
+}
+.memberInner_Iy0c7A {
+  box-sizing: border-box;
+  height: auto;
+  padding: var(--space-xxs) 0 var(--space-xxs);
+}
+.offline_Iy0c7A {
+  opacity: 0.3;
+}
+.offline_Iy0c7A:hover {
+  opacity: 1;
+}
+.icon_Iy0c7A {
+  flex: 0 0 auto;
+  flex-shrink: 0;
+  height: 14px;
+  position: relative;
+  width: 14px;
+}
+.ownerIcon_Iy0c7A {
+  color: var(--text-feedback-warning);
+  margin-inline-start: 4px;
+}
+.lostPermission_Iy0c7A {
+  text-decoration: line-through;
+}
+.premiumIcon_Iy0c7A {
+  margin-inline-start: 3px;
+  top: 1px;
+}
+.placeholder_Iy0c7A {
+  padding: 4px 8px;
+}
+.botTag_Iy0c7A {
+  flex: 0 0 auto;
+  margin-inline-start: 4px;
+}
+.username_Iy0c7A {
+  align-items: center;
+  display: flex;
+  flex: 0 1 auto;
+  margin-inline-end: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.name_Iy0c7A {
+  flex: 1 1 auto;
+  white-space: nowrap;
+}
+span.clanTag_Iy0c7A {
+  margin-top: 1px;
+  margin-inline-start: 4px;
+  margin-bottom: 1px;
+}
+.flatBottom_Iy0c7A {
+  border-end-end-radius: 0;
+  border-end-start-radius: 0;
+}
+
+/*# sourceMappingURL=40791.bd37e1ab65c9f835.css.map*/

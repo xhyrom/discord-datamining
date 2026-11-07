@@ -1,0 +1,170 @@
+.brandRefreshBanner_NPgbd9 {
+  align-items: center;
+  background-color: var(--background-surface-high);
+  background-image: linear-gradient(
+    90deg,
+    var(--expressive-gradient-nitro-pink-start),
+    var(--expressive-gradient-nitro-pink-end)
+  );
+  border-radius: var(--radius-sm);
+  display: flex;
+  gap: var(--space-16);
+  justify-content: space-between;
+  margin: var(--space-8) var(--space-12);
+  padding: var(--space-12);
+  position: relative;
+}
+.dismissible_NPgbd9 {
+  padding-inline-end: var(--space-40);
+}
+.close_NPgbd9 {
+  inset-inline-end: var(--space-4);
+  position: absolute;
+  top: var(--space-4);
+}
+.brandRefreshCopy_NPgbd9 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-width: 0;
+}
+.brandRefreshTitle_NPgbd9 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+}
+.nitroWheel_NPgbd9 {
+  color: var(--text-strong);
+  flex-shrink: 0;
+}
+.lightBrandRefreshBanner_NPgbd9 {
+  background-image: linear-gradient(
+      0deg,
+      var(--background-surface-high),
+      transparent 1000%
+    ),
+    linear-gradient(90deg, var(--illo-pink-40), var(--illo-nitro-blue));
+}
+.upsellOuter_KxXBlr {
+  border-radius: var(--radius-sm);
+  margin: 8px 12px;
+  position: relative;
+}
+.upsellInner_KxXBlr {
+  background: linear-gradient(
+      to right,
+      hsl(var(--premium-tier-2-purple-for-gradients-hsl) / 0.1) 0,
+      hsl(var(--premium-tier-2-pink-for-gradients-hsl) / 0.1) 100%
+    )
+    border-box;
+  border-radius: calc(var(--radius-sm) - 2px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+.upsellTitle_KxXBlr {
+  display: flex;
+  gap: 4px;
+}
+.nitroWheel_KxXBlr {
+  color: var(--text-strong);
+}
+.close_KxXBlr {
+  cursor: pointer;
+  inset-inline-end: 8px;
+  position: absolute;
+  top: 8px;
+}
+.closeIcon_KxXBlr {
+  color: var(--interactive-text-default);
+}
+.soundButtonSettingContainer_VACzzt {
+  align-items: center;
+  background: var(--input-background-default);
+  border: 1px solid var(--input-border-default);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  font-weight: var(--font-weight-semibold);
+  height: 40px;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0 12px;
+  position: relative;
+  text-align: center;
+  width: 50%;
+}
+.emoji_VACzzt {
+  flex-shrink: 0;
+  margin-inline-end: 8px;
+}
+.emoji_VACzzt,
+.secondaryIcon_VACzzt {
+  height: 20px;
+  width: 20px;
+}
+.secondaryIcon_VACzzt {
+  margin: 0 4px;
+}
+.secondaryIconActive_VACzzt {
+  cursor: pointer;
+}
+.secondaryIconDisabled_VACzzt {
+  color: var(--icon-muted);
+}
+.container_VACzzt {
+  align-items: center;
+  display: flex;
+}
+.soundText_VACzzt {
+  max-width: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.guildSelector_sPmmqh {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.nitroWheel_sPmmqh {
+  height: 16px;
+  margin-inline-start: 4px;
+  width: 16px;
+}
+.container_sPmmqh {
+  margin-bottom: 16px;
+}
+.callSoundsTitle_sPmmqh {
+  margin-bottom: 8px;
+}
+.callSoundsDivider_sPmmqh {
+  margin-bottom: 24px;
+  margin-top: 4px;
+}
+.notice_sPmmqh {
+  margin-top: 8px;
+}
+.pill_sPmmqh {
+  align-items: center;
+  background: var(--background-mod-normal);
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px 8px;
+}
+.pillText_sPmmqh {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pillIcon_sPmmqh {
+  width: 16px;
+}
+.micTestHelpLink_DUVXCa {
+  margin-inline-start: 4px;
+}
+
+/*# sourceMappingURL=991119.fffa24a66520d0f9.css.map*/

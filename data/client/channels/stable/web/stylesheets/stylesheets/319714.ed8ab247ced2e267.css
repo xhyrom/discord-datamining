@@ -1,0 +1,91 @@
+.wrapper_Z0MHyc {
+  align-items: center;
+  background-color: var(--background-surface-highest);
+  border-radius: 4px;
+  box-shadow: var(--shadow-border), var(--shadow-low);
+  box-sizing: border-box;
+  display: grid;
+  grid-auto-flow: column;
+  height: 32px;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.1s ease-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.full-motion .wrapper_Z0MHyc:hover {
+  box-shadow: var(--shadow-border), var(--shadow-medium);
+}
+.button_Z0MHyc {
+  align-items: center;
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  display: flex;
+  flex: 0 0 auto;
+  height: 24px;
+  justify-content: center;
+  min-width: 24px;
+  padding: 4px;
+  position: relative;
+}
+.button_Z0MHyc:hover {
+  background-color: var(--interactive-background-hover);
+  color: var(--interactive-text-hover);
+}
+.button_Z0MHyc:active {
+  background-color: var(--interactive-background-active);
+  color: var(--interactive-text-active);
+  padding-bottom: 3px;
+  padding-top: 5px;
+}
+.button_Z0MHyc.selected_Z0MHyc {
+  background-color: var(--interactive-background-selected);
+  color: var(--interactive-text-active);
+}
+.separator_Z0MHyc {
+  background-color: var(--border-subtle);
+  flex: 0 0 auto;
+  height: 100%;
+  margin: 0 4px;
+  width: 1px;
+}
+.button_Z0MHyc.disabled_Z0MHyc,
+.button_Z0MHyc.disabled_Z0MHyc:active,
+.button_Z0MHyc.disabled_Z0MHyc:hover {
+  background-color: transparent;
+  color: var(--interactive-text-default);
+  cursor: default;
+  opacity: 0.5;
+  padding: 4px;
+}
+.button_Z0MHyc.dangerous_Z0MHyc {
+  color: var(--control-critical-secondary-text-default);
+}
+.button_Z0MHyc.dangerous_Z0MHyc:hover {
+  color: var(--control-critical-secondary-text-hover);
+}
+.button_Z0MHyc.dangerous_Z0MHyc:active {
+  color: var(--control-critical-secondary-text-active);
+}
+.enable-forced-colors .wrapper_Z0MHyc {
+  border: 1px solid CanvasText;
+  height: 36px;
+}
+.enable-forced-colors .button_Z0MHyc {
+  background-color: ButtonFace;
+  border: 1px solid ButtonFace;
+  color: ButtonText;
+  height: 26px;
+  min-width: 26px;
+}
+.enable-forced-colors .button_Z0MHyc.selected_Z0MHyc,
+.enable-forced-colors .button_Z0MHyc:active,
+.enable-forced-colors .button_Z0MHyc:hover {
+  background-color: HighlightText;
+  border-color: Highlight;
+  color: Highlight;
+}
+
+/*# sourceMappingURL=319714.ed8ab247ced2e267.css.map*/

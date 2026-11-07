@@ -1,9 +1,0 @@
-"use strict";
-(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["699403"],
-  {
-    391878(p, s, a) {
-      p.exports = { q: "layer__529b0" };
-    },
-  },
-]);

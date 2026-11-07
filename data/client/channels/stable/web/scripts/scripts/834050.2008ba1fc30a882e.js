@@ -1,0 +1,46 @@
+"use strict";
+(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
+  [834050],
+  {
+    763097(t) {
+      t.exports = {
+        Ix: "channel_zln_tS",
+        Ij: "fullWidth_zln_tS",
+        dM: "unreadPill_zln_tS",
+        SU: "muted_zln_tS",
+        bG: "interactive_zln_tS",
+        uN: "overflowTooltip_zln_tS",
+        e8: "withDisplayNameStyles_zln_tS",
+        fc: "clanTag_zln_tS",
+        Y_: "clanTagMuted_zln_tS",
+        Q2: "interactiveSelected_zln_tS",
+        nf: "link_zln_tS",
+        $J: "linkButton_zln_tS",
+        e_: "linkButtonIcon_zln_tS",
+        b: "closeButton_zln_tS",
+        by: "closeButtonForceShow_zln_tS",
+        DQ: "closeButtonPlated_zln_tS",
+        b3: "innerCloseButton_zln_tS",
+        PJ: "innerCloseButtonPlated_zln_tS",
+        Uq: "closeIconPlated_zln_tS",
+        _q: "iconsContainer_zln_tS",
+        EY: "nameplated_zln_tS",
+        R4: "callDuration_zln_tS",
+        jd: "callDurationPlated_zln_tS",
+        ht: "callDurationPlatedLight_zln_tS",
+        ut: "closeIcon_zln_tS",
+        wB: "favoriteIcon_zln_tS",
+        W$: "subtext_zln_tS",
+        tG: "mutedIcon_zln_tS",
+        XD: "activityStatusText_zln_tS",
+        G$: "decorator_zln_tS",
+        dm: "dm_zln_tS",
+        xx: "avatarWithText_zln_tS",
+        Zi: "channelNameFade_zln_tS",
+        KQ: "waveButton_zln_tS",
+        a1: "tabHoverGradient_zln_tS",
+      };
+    },
+  },
+]);
+//# sourceMappingURL=834050.2008ba1fc30a882e.js.map

@@ -1,0 +1,118 @@
+.channelName_qvPnAz {
+  margin-block: 0 8px;
+  margin-inline: 8px 0;
+}
+.username_qvPnAz {
+  padding-inline-start: 8px;
+}
+.kvContainer_qvPnAz {
+  flex-wrap: wrap;
+}
+.item_qvPnAz {
+  color: var(--text-strong);
+  margin-bottom: 20px;
+}
+.item_qvPnAz,
+.itemValue_qvPnAz {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+.itemValue_qvPnAz {
+  color: var(--text-muted);
+  display: inline-block;
+  line-height: 24px;
+  max-width: 310px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.receiverReportRow_qvPnAz {
+  color: var(--text-muted);
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+  line-height: 18px;
+  padding-inline-start: 16px;
+}
+.valueIcon_qvPnAz {
+  float: inline-start;
+  position: relative;
+  top: -1px;
+}
+.title_qvPnAz {
+  cursor: default;
+  flex: 1;
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.divider_qvPnAz,
+.graph_qvPnAz {
+  margin-top: 4px;
+}
+.videoWrapper_qvPnAz {
+  height: 180px;
+  width: 320px;
+}
+.sectionHeader_qvPnAz {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.allowSelection_qvPnAz {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+.channelItem_qvPnAz {
+  margin-inline-start: -8px;
+  margin-bottom: 8px;
+}
+.avatar_qvPnAz {
+  height: 20px !important;
+  top: -2px;
+  width: 20px !important;
+}
+.theme-dark .videoPreview_qvPnAz {
+  border: 1px solid var(--primary-700);
+}
+.theme-light .videoPreview_qvPnAz {
+  border: 1px solid var(--primary-200);
+}
+.videoPreview_qvPnAz {
+  background-color: var(--background-base-lower);
+}
+.tabBar_qvPnAz {
+  margin-bottom: 16px;
+}
+.button_xNzs0H {
+  min-height: 40px;
+  min-width: 137px;
+}
+.innerButton_xNzs0H {
+  align-items: center;
+  display: flex;
+}
+.nitroIconSubHeader_xNzs0H {
+  height: 16px;
+  margin-inline-end: 4px;
+  width: 16px;
+}
+.termsApplyAnchor_xNzs0H {
+  color: var(--text-link);
+  margin-inline-start: 2px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.termsApplyAnchor_xNzs0H:hover {
+  text-decoration: none;
+}
+.tier2Gradient_xNzs0H {
+  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  color: var(--white);
+}
+
+/*# sourceMappingURL=227955.0c2ea069d1c44d98.css.map*/

@@ -1,0 +1,17 @@
+.viewFullBio_BcddaK {
+  margin-top: 8px;
+}
+.descriptionClamp_BcddaK {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.truncated_BcddaK {
+  clip-path: inset(0 0 1px 0);
+}
+.maxBioHeight_BcddaK {
+  max-height: 55px;
+}
+
+/*# sourceMappingURL=340341.8904099b229d9112.css.map*/

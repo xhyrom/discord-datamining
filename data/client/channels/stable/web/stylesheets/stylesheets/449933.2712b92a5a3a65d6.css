@@ -1,0 +1,197 @@
+.soundAddButton_J7VcHX {
+  background: initial;
+  border: 1px dashed var(--border-subtle);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.soundAddButton_J7VcHX:hover {
+  border-color: var(--border-normal);
+  color: var(--text-default);
+}
+.soundAddButton_J7VcHX.focused_J7VcHX {
+  border-color: var(--border-strong);
+  color: var(--text-default);
+}
+.soundAddButton_J7VcHX svg {
+  margin-inline-end: 3px;
+}
+.disabled_J7VcHX {
+  pointer-events: none;
+}
+.wishlistButton_-SUGNi {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: var(--control-secondary-background-hover);
+  border: 1px solid var(--control-secondary-border-hover);
+}
+.sectionContainer_-SUGNi {
+  align-items: center;
+  background-color: var(--background-base-low);
+  display: flex;
+  height: var(
+    --custom-expression-picker-constants-expression-picker-list-section-heading-height
+  );
+  padding-block: 0;
+  padding-inline: 8px 4px;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+.sectionContainerNitroLocked_-SUGNi {
+  position: relative;
+}
+.sectionContainerNitroLockedBackground_-SUGNi {
+  background: linear-gradient(
+    90deg,
+    var(--expressive-gradient-nitro-pink-start) 0,
+    var(--expressive-gradient-nitro-pink-end) 100%
+  );
+}
+.theme-light .sectionContainerNitroLockedBackground_-SUGNi {
+  background: linear-gradient(
+    90deg,
+    color-mix(
+      in srgb,
+      var(--expressive-gradient-nitro-pink-start) 40%,
+      transparent
+    ),
+    color-mix(
+      in srgb,
+      var(--expressive-gradient-nitro-pink-end) 40%,
+      transparent
+    )
+  );
+}
+.sectionHeader_-SUGNi {
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  display: inline-block;
+}
+.sectionHeader_-SUGNi:hover {
+  color: var(--interactive-text-active);
+}
+.sectionHeader_-SUGNi:hover .sectionTitle_-SUGNi {
+  color: var(--interactive-text-active);
+}
+.sectionHeader_-SUGNi .sectionTitle_-SUGNi {
+  color: var(--interactive-text-default);
+}
+.sectionHeaderContent_-SUGNi {
+  align-items: center;
+  display: flex;
+}
+.newBadge_-SUGNi {
+  display: flex;
+  margin-inline: var(--space-4);
+}
+.smallPaddingFooter_-SUGNi {
+  height: 20px;
+}
+.lastSectionFooter_-SUGNi {
+  height: 70px;
+}
+.nitroLocked_-SUGNi.lastSectionFooter_-SUGNi,
+.nitroLocked_-SUGNi.smallPaddingFooter_-SUGNi {
+  background: linear-gradient(
+    90deg,
+    var(--expressive-gradient-nitro-pink-start) 0,
+    var(--expressive-gradient-nitro-pink-end) 100%
+  );
+}
+.theme-light .nitroLocked_-SUGNi.lastSectionFooter_-SUGNi,
+.theme-light .nitroLocked_-SUGNi.smallPaddingFooter_-SUGNi {
+  background: linear-gradient(
+    90deg,
+    color-mix(
+      in srgb,
+      var(--expressive-gradient-nitro-pink-start) 40%,
+      transparent
+    ),
+    color-mix(
+      in srgb,
+      var(--expressive-gradient-nitro-pink-end) 40%,
+      transparent
+    )
+  );
+}
+.nitroLocked_-SUGNi:not(.lastSectionFooter_-SUGNi) {
+  margin-bottom: var(--space-4);
+}
+.sectionTitle_-SUGNi {
+  margin: 0 4px;
+}
+.headerIcon_-SUGNi {
+  height: 16px;
+  width: 16px;
+}
+.soundRow_-SUGNi {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 8px;
+  padding-inline-start: 8px;
+}
+.soundRowNitroLocked_-SUGNi {
+  background: linear-gradient(
+    90deg,
+    var(--expressive-gradient-nitro-pink-start) 0,
+    var(--expressive-gradient-nitro-pink-end) 100%
+  );
+}
+.theme-light .soundRowNitroLocked_-SUGNi {
+  background: linear-gradient(
+    90deg,
+    color-mix(
+      in srgb,
+      var(--expressive-gradient-nitro-pink-start) 40%,
+      transparent
+    ),
+    color-mix(
+      in srgb,
+      var(--expressive-gradient-nitro-pink-end) 40%,
+      transparent
+    )
+  );
+}
+.settingsClickArea_-SUGNi {
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  margin-inline-start: var(--space-12);
+  transition: color 0.2s ease;
+}
+.settingsClickArea_-SUGNi:focus,
+.settingsClickArea_-SUGNi:hover {
+  color: var(--interactive-text-hover);
+}
+.settingsSoundmojiClickArea_-SUGNi {
+  padding: 0;
+}
+.settingsSoundmojiClickArea_-SUGNi:last-child {
+  padding-inline-end: 0;
+}
+.premiumSectionDivider_-SUGNi {
+  padding-top: 8px;
+}
+.settingsIcon_-SUGNi {
+  height: 24px;
+  width: 24px;
+}
+.picker_1lN7Eh {
+  background-color: var(--background-base-low);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  overflow: hidden;
+  width: 531px;
+}
+.picker_1lN7Eh.inExpressionPicker_1lN7Eh {
+  box-shadow: none;
+  height: 100%;
+  width: auto;
+}
+.fetching_1lN7Eh {
+  justify-content: center;
+}
+
+/*# sourceMappingURL=449933.2712b92a5a3a65d6.css.map*/

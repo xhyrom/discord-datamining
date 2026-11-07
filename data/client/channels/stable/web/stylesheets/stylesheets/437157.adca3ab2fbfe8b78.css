@@ -1,0 +1,148 @@
+.baseContainer_excgEP {
+  container-name: premium-marketing-page-container;
+  container-type: inline-size;
+  filter: saturate(var(--saturation-factor, 1));
+  max-width: var(--custom-premium-home-max-width);
+  overflow: visible;
+}
+.baseContainer_excgEP,
+.card_excgEP {
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+}
+.card_excgEP {
+  border-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.video_excgEP {
+  height: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+.betaBadge_excgEP {
+  margin-bottom: 12px;
+}
+.progressContainer_excgEP {
+  padding-top: var(--space-12);
+  width: 75%;
+}
+.bannerImageContainer_excgEP {
+  flex: 0 0 auto;
+  height: 250px;
+  overflow: visible;
+  position: relative;
+}
+.bannerImage_excgEP,
+.bannerImageContainer_excgEP {
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+}
+.bannerImage_excgEP {
+  height: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  transform: scaleX(-1);
+}
+.textContainer_excgEP {
+  align-items: flex-start;
+  background-color: var(--card-background-default);
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-48) var(--space-24);
+  position: relative;
+  z-index: 1;
+}
+.heading_excgEP {
+  margin-bottom: var(--space-12);
+}
+.actionButtonContainer_excgEP {
+  margin-top: var(--space-24);
+}
+.totalLifetimeRewardsContainer_excgEP {
+  align-items: center;
+  color: var(--text-muted);
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-12);
+}
+.stackedGradientOverlay_excgEP {
+  background: linear-gradient(
+    to bottom,
+    transparent 0,
+    color-mix(in srgb, var(--card-background-default) 70%, transparent) 50%,
+    var(--card-background-default) 100%
+  );
+  position: absolute;
+  top: auto;
+  inset-inline: 0;
+  bottom: 0;
+  height: 100px;
+}
+@container premium-marketing-page-container (min-width: 720px) {
+  .card_excgEP {
+    flex-direction: row;
+    height: 350px;
+  }
+  .bannerImageContainer_excgEP {
+    height: auto;
+    margin-inline-end: 0;
+    min-width: 0;
+    width: 50%;
+    z-index: 0;
+  }
+  .bannerImage_excgEP {
+    -o-object-position: center;
+    object-position: center;
+  }
+  .textContainer_excgEP {
+    background-color: transparent;
+    padding-block: var(--space-48);
+    padding-inline: var(--space-32);
+    width: 50%;
+    z-index: auto;
+  }
+  .heading_excgEP,
+  .textContainer_excgEP {
+    color: var(--white);
+  }
+  .bodyText_excgEP,
+  .totalLifetimeRewardsContainer_excgEP {
+    color: hsl(var(--white-hsl) / 0.6);
+  }
+  .bodyText_excgEP a {
+    color: var(--blue-new-27);
+  }
+  .bodyText_excgEP a:hover {
+    color: var(--blue-new-31);
+  }
+  .stackedGradientOverlay_excgEP {
+    display: none;
+  }
+}
+@container premium-marketing-page-container (min-width: 960px) {
+  .textContainer_excgEP {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-inline: var(--space-24);
+  }
+  .bannerImage_excgEP {
+    -o-object-position: calc(100% + 250px) center;
+    object-position: calc(100% + 250px) center;
+  }
+  .bannerImageContainer_excgEP {
+    margin-inline-end: 0;
+  }
+}
+
+/*# sourceMappingURL=437157.adca3ab2fbfe8b78.css.map*/

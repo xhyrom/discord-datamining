@@ -5,14 +5,14 @@
     o,
     t,
     n = {
-      219249(e, r, o) {
+      278100(e, r, o) {
         o(134528), o(947204);
         var t = o(501661),
           n = o(774099),
-          i = o(56833),
+          i = o(201264),
           l = o(883950),
           a = o(871186),
-          s = o(363630);
+          s = o(240745);
         let d = ["oppobrowser", "realmebrowser", "heytapbrowser"],
           u = (function (e) {
             let { maxBudgetMinute: r, maxBudgetHour: o } = e,
@@ -38,7 +38,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2026-11-04-164cf72e97d1e6032c69c2e71b81adc93ee086d4-discord_web",
+              "2026-11-06-7f6f109b760a6a8abddc126518351081780500c5-discord_web",
             beforeSend: function (e) {
               var r;
               let o;
@@ -122,8 +122,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.NA("buildNumber", "663810"),
-            a.NA("builtAt", String("1793780331975"));
+            a.NA("buildNumber", "667580"),
+            a.NA("builtAt", String("1793953204996"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let r in e) a.NA(r, e[r]);
           return s;
@@ -138,11 +138,14 @@
     return n[e].call(o.exports, o, o.exports, l), o.exports;
   }
   (l.m = n),
-    (l.d = (e, r) => {
-      for (var o in r)
-        l.o(r, o) &&
-          !l.o(e, o) &&
-          Object.defineProperty(e, o, { enumerable: !0, get: r[o] });
+    (l.d = (e, r, o) => {
+      var t = (r, o) => {
+        for (var t in r)
+          l.o(r, t) &&
+            !l.o(e, t) &&
+            Object.defineProperty(e, t, { enumerable: !0, [o]: r[t] });
+      };
+      t(r, "get"), t(o, "value");
     }),
     (l.g = (() => {
       if ("object" == typeof globalThis) return globalThis;
@@ -180,7 +183,6 @@
       }
       return r;
     }),
-    (l.rv = () => "1.7.11"),
     (r = { 344771: 0 }),
     (l.O.j = (e) => 0 === r[e]),
     (o = (e, o) => {
@@ -198,11 +200,10 @@
     }),
     (t = this.webpackChunkdiscord_app =
       this.webpackChunkdiscord_app || []).forEach(o.bind(null, 0)),
-    (t.push = o.bind(null, t.push.bind(t))),
-    (l.ruid = "bundler=rspack@1.7.11");
-  var a = l.O(void 0, ["533077", "324644", "948255", "64310", "556707"], () =>
-    l(219249),
+    (t.push = o.bind(null, t.push.bind(t)));
+  var a = l.O(void 0, ["533077", "324644", "948255", "112836", "619666"], () =>
+    l(278100),
   );
   a = l.O(a);
 })();
-//# sourceMappingURL=sentry.a24283b6cb1e3ce3.js.map
+//# sourceMappingURL=sentry.3f3faeb219c8d47d.js.map

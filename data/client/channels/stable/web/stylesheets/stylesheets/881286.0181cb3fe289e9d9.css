@@ -1,0 +1,191 @@
+.listeningAlong_Zar2Rk {
+  align-items: center;
+  background: var(--background-gradient-lowest, var(--background-base-low));
+  border-radius: 4px 4px 0 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+  padding: 8px;
+  width: 100%;
+}
+.party_Zar2Rk {
+  margin-inline-start: 8px;
+}
+.overflow_Zar2Rk {
+  cursor: pointer;
+}
+.icons_Zar2Rk {
+  display: flex;
+  margin-inline-start: 4px;
+}
+.avatar_Zar2Rk {
+  cursor: pointer;
+  height: 20px !important;
+  width: 20px !important;
+}
+.userList_0FfRcL {
+  border: 1px solid;
+  border-radius: 3px;
+  min-width: 250px;
+  position: relative;
+}
+.userList_0FfRcL:before {
+  border: 1px solid;
+  box-shadow: 2px 2px 4px var(--opacity-black-20);
+  content: "";
+  height: 8px;
+  inset-inline-start: 50%;
+  margin-inline-start: -8px;
+  position: absolute;
+  top: 100%;
+  transform: translate3d(4px, -4px, 0) rotate(45deg);
+  width: 8px;
+}
+.header_0FfRcL {
+  background-color: var(--background-base-lower);
+  padding: 12px;
+  text-align: center;
+  text-transform: none;
+}
+.content_0FfRcL {
+  background-color: var(--background-base-lowest);
+  max-height: 260px;
+}
+.user_0FfRcL {
+  font-size: 14px;
+  padding: 10px;
+}
+.discriminator_0FfRcL {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+.tag_0FfRcL {
+  margin-inline-start: 8px;
+}
+.avatar_0FfRcL {
+  height: 20px !important;
+  width: 20px !important;
+}
+.theme-dark .userList_0FfRcL {
+  border-color: var(--primary-700);
+}
+.theme-dark .userList_0FfRcL:before {
+  border-bottom-color: var(--primary-700);
+  border-inline-end-color: var(--primary-700);
+}
+.theme-light .userList_0FfRcL {
+  border-color: var(--primary-100);
+}
+.theme-light .userList_0FfRcL:before {
+  border-bottom-color: var(--primary-100);
+  border-inline-end-color: var(--primary-100);
+}
+.userList_0FfRcL:before {
+  background-color: var(--background-base-lowest);
+  border-color: transparent;
+}
+.username_0FfRcL {
+  color: var(--text-default);
+}
+.root_buf7nK {
+  border-start-end-radius: 8px;
+  border-start-start-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  padding: 8px;
+}
+.root_buf7nK.connected_buf7nK {
+  background-color: var(--status-positive-background);
+}
+.root_buf7nK.connected_buf7nK .icon_buf7nK {
+  color: var(--white);
+}
+.root_buf7nK.connecting_buf7nK {
+  background-color: var(--background-mod-normal);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.icon_buf7nK {
+  color: var(--interactive-text-active);
+  height: 16px;
+  margin-inline-end: 8px;
+  width: 16px;
+}
+.container_BlzJTq {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  height: 100%;
+}
+.container_BlzJTq > :last-child {
+  margin-top: auto;
+}
+.graphContainer_BlzJTq {
+  background-color: var(--background-base-lower);
+  margin-bottom: var(--space-16);
+  padding-bottom: 2px;
+}
+.userSelectText_BlzJTq {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+.statsRow_BlzJTq {
+  align-items: flex-start;
+  display: flex;
+}
+.statsText_BlzJTq {
+  display: flex;
+  flex-direction: column;
+}
+.buttons_BlzJTq {
+  display: flex;
+  gap: var(--space-8);
+}
+.buttons_BlzJTq > :first-child {
+  flex: 1;
+}
+.copyButtonWrapper_BlzJTq {
+  flex: 1;
+}
+.securedBanner_ymaupl {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-8);
+}
+.separator_ymaupl {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 0;
+}
+.copyButtonWrapper_ymaupl {
+  cursor: pointer;
+  position: relative;
+}
+.copyStateVisible_ymaupl {
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+.full-motion .copyStateVisible_ymaupl {
+  transform: scale(1);
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+}
+.copyStateHidden_ymaupl {
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 0.15s ease;
+}
+.full-motion .copyStateHidden_ymaupl {
+  transform: scale(0.95);
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+}
+
+/*# sourceMappingURL=881286.0181cb3fe289e9d9.css.map*/

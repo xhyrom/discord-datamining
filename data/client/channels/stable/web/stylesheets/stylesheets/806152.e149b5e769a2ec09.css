@@ -1,0 +1,55 @@
+.timeline_48eibG {
+  bottom: 72px;
+  inset-inline-end: var(--space-20);
+  inset-inline-start: var(--space-20);
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.timeline_48eibG,
+.timelineGradient_48eibG {
+  height: 24px;
+  position: absolute;
+}
+.timelineGradient_48eibG {
+  background: linear-gradient(
+    180deg,
+    rgba(7, 7, 9, 0),
+    rgba(7, 7, 9, 0.64) 70%,
+    rgba(7, 7, 9, 0.8)
+  );
+  bottom: 0;
+  inset-inline-end: 0;
+  inset-inline-start: 0;
+}
+.marker_48eibG {
+  bottom: 0;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.marker_48eibG .markerInner_48eibG {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  pointer-events: auto;
+}
+.marker_48eibG .emoji_48eibG {
+  height: 100%;
+  width: 100%;
+}
+.marker_48eibG .chatIcon_48eibG {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+.markerMessage_48eibG {
+  display: inline-block;
+  max-width: 140px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=806152.e149b5e769a2ec09.css.map*/

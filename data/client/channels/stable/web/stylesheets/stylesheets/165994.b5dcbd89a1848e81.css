@@ -1,0 +1,28 @@
+.container_U6yR7S {
+  background: var(--background-mod-subtle);
+  border-end-end-radius: inherit;
+  border-end-start-radius: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.custom-user-profile-theme .container_U6yR7S {
+  background: var(--user-profile-overlay-background);
+}
+.content_U6yR7S {
+  min-width: 0;
+  padding: 8px;
+}
+.viewMoreButton_U6yR7S {
+  border-end-end-radius: inherit;
+  padding: 8px;
+}
+.viewMoreButton_U6yR7S:focus-visible,
+.viewMoreButton_U6yR7S:hover {
+  background-color: var(--background-mod-subtle);
+  cursor: pointer;
+}
+.viewMoreButtonCompact_U6yR7S {
+  padding: 6px;
+}
+
+/*# sourceMappingURL=165994.b5dcbd89a1848e81.css.map*/

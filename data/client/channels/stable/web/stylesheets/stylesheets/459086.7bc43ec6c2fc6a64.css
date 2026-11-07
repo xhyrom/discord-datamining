@@ -1,0 +1,121 @@
+.buttonContainer_s8hOwn {
+  border-radius: 8px;
+  margin-top: unset;
+  transition-duration: 0.2s;
+}
+.buttonContainer_s8hOwn:hover {
+  background-color: var(--interactive-background-selected);
+}
+.button_s8hOwn {
+  align-items: center;
+  background: unset;
+  border: unset;
+  border-radius: 8px;
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  min-height: var(--space-32);
+  min-width: var(--space-32);
+  width: unset;
+}
+.button_s8hOwn:hover {
+  color: var(--interactive-text-active);
+}
+.button_s8hOwn:active {
+  color: var(--interactive-text-active);
+}
+.buttonActive_s8hOwn {
+  color: var(--interactive-text-active);
+}
+.channelAppLauncher_s8hOwn {
+  align-content: flex-end;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.hiddenAppLauncherAnchor_s8hOwn {
+  height: 0;
+  width: 0;
+}
+.entrypointAnimation_s8hOwn {
+  height: 44px;
+  width: 44px;
+}
+.entrypointAnimation_s8hOwn .buttonContainer_s8hOwn:hover {
+  background-color: transparent;
+}
+.animationGlow_s8hOwn {
+  bottom: -44px;
+  height: 132px;
+  inset-inline-start: -32px;
+  width: 108px;
+}
+.animationTrinkets_s8hOwn {
+  bottom: -24px;
+  height: 100px;
+  inset-inline-start: -24px;
+  width: 100px;
+}
+.channelAppLauncherButtonPopoutIconContainer_s8hOwn {
+  border-radius: 8px;
+  outline: 2px solid var(--brand-500);
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+.full-motion .channelAppLauncherButtonPopoutIcon_s8hOwn {
+  animation: channelAppLauncherButtonPopoutIconAnimation_s8hOwn 3s;
+  animation-delay: 10ms;
+  transform: translateY(-100%);
+}
+@keyframes channelAppLauncherButtonPopoutIconAnimation_s8hOwn {
+  0% {
+    transform: translateY(-100%);
+  }
+  6% {
+    transform: translateY(0);
+  }
+  94% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+.channelAppLauncherButtonPopoutIconShimmerContainer_s8hOwn {
+  inset-inline-end: 0;
+  position: absolute;
+  top: 0;
+}
+.channelAppLauncherButtonPopoutIconShimmer_s8hOwn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  transform: translateX(-100%);
+}
+.full-motion .channelAppLauncherButtonPopoutIconShimmer_s8hOwn {
+  animation: channelAppLauncherButtonPopoutIconShimmerAnimation_s8hOwn 3s;
+}
+@keyframes channelAppLauncherButtonPopoutIconShimmerAnimation_s8hOwn {
+  0% {
+    transform: translateX(-100%);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  22% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/*# sourceMappingURL=459086.7bc43ec6c2fc6a64.css.map*/

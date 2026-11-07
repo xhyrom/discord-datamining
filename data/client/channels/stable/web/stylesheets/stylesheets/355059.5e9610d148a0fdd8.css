@@ -1,0 +1,181 @@
+.selectableItem_ljDS1b {
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: var(--text-strong);
+  cursor: pointer;
+  height: 34px;
+  margin: 2px 0;
+  margin-inline-end: 4px;
+  padding: 8px 10px;
+}
+.selectableItem_ljDS1b.selected_ljDS1b {
+  cursor: default;
+}
+.selectableItemLabel_ljDS1b {
+  font-size: 16px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  top: 1px;
+  white-space: nowrap;
+}
+.theme-light .selectableItem_ljDS1b:focus,
+.theme-light .selectableItem_ljDS1b:hover {
+  background-color: var(--primary-200);
+}
+.theme-dark .selectableItem_ljDS1b:focus,
+.theme-dark .selectableItem_ljDS1b:hover {
+  background-color: hsl(var(--primary-700-hsl) / 0.6);
+}
+.enable-forced-colors .selectableItem_ljDS1b:focus,
+.enable-forced-colors .selectableItem_ljDS1b:hover {
+  outline: 1px solid Highlight;
+  outline-offset: -1px;
+}
+.popoutList_E0Vl-O {
+  background: var(--background-mod-normal);
+  border-radius: 5px;
+  padding: 10px 10px 0;
+}
+.popoutListEmpty_E0Vl-O {
+  box-sizing: border-box;
+  color: var(--text-strong);
+  cursor: default;
+  margin-block: 2px;
+  margin-inline: 0 4px;
+  padding: 8px 10px 0;
+}
+.divider_E0Vl-O {
+  margin: 8px 0;
+}
+.enable-forced-colors .popoutList_E0Vl-O {
+  border: 2px solid CanvasText;
+}
+.phoneFieldPopout_iiqC5t {
+  height: 240px;
+  inset-inline-start: 0;
+  position: absolute;
+  top: 40px;
+  width: 220px;
+}
+.phoneFieldPopout_iiqC5t .phoneFieldScroller_iiqC5t {
+  height: 196px;
+  padding-bottom: 10px;
+}
+.phoneFieldPopout_iiqC5t .countryItem_iiqC5t {
+  width: 100%;
+}
+.phoneFieldPopout_iiqC5t .countryName_iiqC5t {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 18px;
+  margin-inline-end: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.phoneFieldPopout_iiqC5t .countryCode_iiqC5t {
+  color: var(--text-strong);
+  font-size: 13px;
+  font-weight: var(--font-weight-semibold);
+  text-align: end;
+}
+:root {
+  --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
+  --legacy-elevation-high: 0 2px 10px 0 var(--opacity-black-8);
+  --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3);
+}
+.theme-dark {
+  --legacy-elevation-low: 0 1px 5px 0 var(--opacity-black-28);
+  --legacy-elevation-high: 0 2px 10px 0 var(--opacity-black-20);
+  --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-700-hsl) / 0.6);
+}
+.elevationLow_LyjY5_ {
+  box-shadow: var(--legacy-elevation-low);
+}
+.elevationHigh_LyjY5_ {
+  box-shadow: var(--legacy-elevation-high);
+}
+.elevationBorderLow_LyjY5_ {
+  box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+}
+.darkElevationBorderHigh_LyjY5_ {
+  box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+}
+.lightElevationLow_LyjY5_ {
+  box-shadow: var(--legacy-elevation-low);
+}
+.lightElevationHigh_LyjY5_ {
+  box-shadow: var(--legacy-elevation-high);
+}
+.lightElevationBorderLow_LyjY5_ {
+  box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+}
+.elevationBorderHigh_LyjY5_,
+.elevationBorderLow_LyjY5_,
+.elevationHigh_LyjY5_,
+.elevationLow_LyjY5_,
+.lightElevationBorderHigh_LyjY5_ {
+  box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+}
+.outerContainer_NZ34f3 {
+  position: relative;
+}
+.container_NZ34f3 {
+  overflow: hidden;
+}
+.container_NZ34f3,
+.innerContainer_NZ34f3 {
+  display: flex;
+}
+.countryCode_NZ34f3 {
+  line-height: normal;
+  padding: 9px 8px;
+  white-space: nowrap;
+}
+.separator_NZ34f3 {
+  background-color: var(--border-subtle);
+  margin: 8px 4px;
+  width: 1px;
+}
+.popout_NZ34f3 {
+  z-index: 1;
+}
+.hidden_NZ34f3 {
+  display: none;
+}
+.enable-forced-colors .countryCode_NZ34f3 {
+  background-color: ButtonFace;
+  border: 1px solid ButtonFace;
+  border-radius: 4px;
+  color: ButtonText;
+}
+.enable-forced-colors .countryCode_NZ34f3:focus,
+.enable-forced-colors .countryCode_NZ34f3:hover {
+  border-color: ButtonText;
+}
+.enable-forced-colors .countryCode_NZ34f3[aria-expanded="true"] {
+  background-color: HighlightText;
+  border-color: Highlight;
+  color: Highlight;
+}
+.input_ZFr6bW {
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+.inputField_ZFr6bW:hover {
+  border: none;
+}
+.inputWrapper_ZFr6bW {
+  flex-grow: 1;
+}
+.inputField_ZFr6bW {
+  background-color: transparent;
+  border: none;
+}
+.enable-forced-colors .input_ZFr6bW {
+  border: none;
+}
+
+/*# sourceMappingURL=355059.5e9610d148a0fdd8.css.map*/

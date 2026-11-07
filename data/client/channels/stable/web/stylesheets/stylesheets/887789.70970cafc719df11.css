@@ -1,0 +1,32 @@
+.overlay_JHO5jQ {
+  border-radius: inherit;
+  inset-inline: 0;
+  bottom: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.overlay_JHO5jQ:has(.content_JHO5jQ:empty) {
+  display: none;
+}
+.backdrop_JHO5jQ {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: inherit;
+  inset-inline: 0;
+  bottom: 0;
+  height: 100%;
+  -webkit-mask-image: linear-gradient(0deg, #000, #000 55%, transparent);
+  mask-image: linear-gradient(0deg, #000, #000 55%, transparent);
+  padding-top: 10%;
+  position: absolute;
+}
+.content_JHO5jQ {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: 0 var(--space-12) var(--space-12);
+  pointer-events: auto;
+  position: relative;
+}
+
+/*# sourceMappingURL=887789.70970cafc719df11.css.map*/

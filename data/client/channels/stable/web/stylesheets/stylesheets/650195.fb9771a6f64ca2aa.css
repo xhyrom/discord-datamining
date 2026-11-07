@@ -1,0 +1,24 @@
+.emoji_FLwVbq {
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+}
+.glyphEmoji_FLwVbq {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.icon_FLwVbq {
+  height: 100%;
+  transform-origin: 50% 50%;
+  width: 100%;
+  fill: var(--interactive-text-default);
+}
+.nitroBadge_FLwVbq {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=650195.fb9771a6f64ca2aa.css.map*/

@@ -1,0 +1,58 @@
+.note_tbp_0j {
+  margin: -4px;
+}
+.note_tbp_0j textarea {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 4px;
+}
+.note_tbp_0j textarea::-moz-placeholder {
+  color: var(--text-muted);
+}
+.note_tbp_0j textarea::placeholder {
+  color: var(--text-muted);
+}
+.note_tbp_0j textarea:hover {
+  border-color: var(--input-border-default);
+}
+.note_tbp_0j textarea:focus {
+  background: var(--user-profile-note-background-focus);
+  border-color: var(--border-strong);
+}
+.note_tbp_0j textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+.note_tbp_0j textarea:focus::placeholder {
+  color: transparent;
+}
+.note_tbp_0j textarea:focus:focus,
+.note_tbp_0j textarea:focus:focus:hover {
+  border-color: var(--border-strong);
+}
+.scroller_jxHDeR {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  padding: 16px;
+}
+.connections_jxHDeR {
+  margin-top: -16px;
+}
+.appsConnections_jxHDeR {
+  margin-top: 0;
+}
+.link_OFeXzO {
+  border-radius: inherit;
+  display: block;
+  max-width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.link_OFeXzO:hover {
+  text-decoration-color: var(--text-default);
+}
+
+/*# sourceMappingURL=399275.c9e9614f54df8d8d.css.map*/

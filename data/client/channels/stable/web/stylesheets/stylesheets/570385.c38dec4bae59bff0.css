@@ -1,0 +1,23 @@
+.applicationIcon_0JjZDp {
+  margin-inline-end: 8px;
+}
+.seasonalIcon_0JjZDp {
+  height: 120px;
+}
+.full-motion .transition_nndRlE {
+  transition: transform 0.2s ease;
+}
+.directionDown_nndRlE {
+  transform: rotate3d(0, 0, -1, 0deg);
+}
+.directionRight_nndRlE {
+  transform: rotate3d(0, 0, -1, 90deg);
+}
+.directionLeft_nndRlE {
+  transform: rotate3d(0, 0, -1, -90deg);
+}
+.directionUp_nndRlE {
+  transform: rotate3d(0, 0, -1, 180deg);
+}
+
+/*# sourceMappingURL=570385.c38dec4bae59bff0.css.map*/

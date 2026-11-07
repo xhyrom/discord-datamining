@@ -1,0 +1,29 @@
+.userListItem_p5BLox {
+  align-items: center;
+  border-radius: var(--radius-xs);
+  display: flex;
+  margin: 8px -8px;
+  padding: 4px 8px;
+}
+.userListItem_p5BLox:last-child {
+  margin-bottom: 4px;
+}
+.userListItem_p5BLox:not(.popoutDisabled_p5BLox):hover {
+  background-color: var(--background-mod-subtle);
+  cursor: pointer;
+}
+.userListItemTag_p5BLox {
+  margin-inline-start: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.avatar_p5BLox {
+  flex-shrink: 0;
+}
+.username_p5BLox {
+  font-weight: var(--font-weight-semibold);
+  min-width: 0;
+}
+
+/*# sourceMappingURL=201074.77ad364c1e0fdc4c.css.map*/

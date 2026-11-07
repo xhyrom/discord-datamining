@@ -1,0 +1,140 @@
+@keyframes placeholderPulse_86es0b {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+:root {
+  --custom-channel-members-bg: var(--background-base-lower);
+}
+.container_86es0b {
+  background: var(--background-gradient-chat, var(--custom-channel-members-bg));
+  border-inline-start: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.refresh-fast-follow-distinct-borders .container_86es0b {
+  border-inline-start-color: var(--app-frame-border);
+}
+.membersWrap_86es0b {
+  display: flex;
+  height: 100%;
+  max-height: 100%;
+  min-width: var(--custom-member-list-width);
+  position: relative;
+}
+.members_86es0b {
+  background: var(--background-gradient-chat, var(--custom-channel-members-bg));
+  flex: 0 0 auto;
+  height: auto;
+  padding: 0 0 10px;
+}
+.members_86es0b,
+.membersListNotices_86es0b {
+  width: var(--custom-member-list-width);
+}
+.member_86es0b {
+  background: var(--background-gradient-chat, var(--custom-channel-members-bg));
+}
+.membersGroup_86es0b {
+  height: auto;
+  padding-block: var(--space-lg) var(--space-xxs);
+  padding-inline: var(--space-md) var(--space-xxs);
+}
+.privateChannelMembersGroup_86es0b {
+  align-items: center;
+  display: flex;
+  gap: var(--space-xxs);
+}
+@media (hover: hover) {
+  .membersGroupNitroLabel_86es0b:hover {
+    color: var(--interactive-text-hover);
+  }
+}
+.membersGroupNitroWheel_86es0b {
+  margin-inline-end: var(--space-xxs);
+  transform: translateY(-2px);
+  vertical-align: middle;
+}
+.membersGroupHeader_86es0b {
+  display: flex;
+  flex-direction: row;
+}
+.membersGroupName_86es0b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hiddenMembers_86es0b {
+  justify-content: center;
+}
+.hiddenText_86es0b {
+  align-self: center;
+}
+.memberGroupsPlaceholder_86es0b {
+  animation: placeholderPulse_86es0b 3s ease-in-out infinite;
+  background-color: var(--background-base-low);
+  border-radius: 8px;
+  height: 12px;
+  width: 40%;
+}
+.addMembersButton_86es0b {
+  padding-top: 8px;
+  padding-inline-start: 8px;
+}
+.inviteToGroupButton_86es0b {
+  padding-block-start: 16px;
+  padding-inline: 16px 8px;
+}
+.addMembersIcon_86es0b {
+  align-items: center;
+  background-color: var(--background-mod-normal);
+  border-radius: 50%;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+.roleIcon_86es0b {
+  margin-inline-end: 4px;
+  vertical-align: top;
+}
+.fullWidth_86es0b {
+  width: 100vw;
+}
+.appIconWrapper_86es0b {
+  align-items: center;
+  background-color: var(--background-mod-normal);
+  border-radius: 16px;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+.enable-forced-colors .container_86es0b,
+.enable-forced-colors .membersWrap_86es0b {
+  border-inline-start: 2px solid CanvasText;
+}
+.enable-forced-colors .container_86es0b .membersWrap_86es0b {
+  border-inline-start: none;
+}
+@media (max-width: 485px) {
+  .membersWrap_86es0b {
+    display: flex;
+    height: 100%;
+    position: relative;
+  }
+  .members_86es0b,
+  .membersListNotices_86es0b,
+  .membersWrap_86es0b {
+    min-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=831130.1c19a000fbdf0515.css.map*/
