@@ -723,15 +723,11 @@
   width: fit-content;
 }
 .game_M5fVqw {
-  --custom-checkpoint-game-art-width: clamp(135px, 17.5vh, 180px);
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   gap: var(--space-16);
   width: calc(var(--custom-checkpoint-game-art-width) + var(--space-12));
-}
-.topGame_M5fVqw {
-  --custom-checkpoint-game-art-width: clamp(165px, 21.5vh, 220px);
 }
 .globalGame_M5fVqw {
   width: calc(
@@ -745,10 +741,22 @@
   position: relative;
 }
 .shell_M5fVqw {
-  height: calc(100% + 3px);
-  inset-block-start: -2px;
-  inset-inline-start: -2px;
-  width: calc(var(--custom-checkpoint-game-art-width) + var(--space-16));
+  --custom-checkpoint-game-shell-scale: calc(
+    var(--custom-checkpoint-game-art-width) /
+      var(--custom-checkpoint-game-full-art-width)
+  );
+  inset-block-start: calc(
+    var(--custom-checkpoint-game-shell-scale) * -1 *
+      var(--custom-checkpoint-game-full-shell-offset)
+  );
+  inset-inline-start: calc(
+    var(--custom-checkpoint-game-shell-scale) * -1 *
+      var(--custom-checkpoint-game-full-shell-offset)
+  );
+  width: calc(
+    var(--custom-checkpoint-game-shell-scale) *
+      var(--custom-checkpoint-game-full-shell-width)
+  );
 }
 .art_M5fVqw,
 .shell_M5fVqw {
@@ -1205,6 +1213,7 @@
   inset-inline-end: var(--space-32);
   position: absolute;
   top: var(--space-32);
+  z-index: 1;
 }
 
-/*# sourceMappingURL=937139.4099968937cd82d2.css.map*/
+/*# sourceMappingURL=937139.cf8088217b373b21.css.map*/

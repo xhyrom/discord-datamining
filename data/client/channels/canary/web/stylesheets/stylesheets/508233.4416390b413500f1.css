@@ -227,6 +227,71 @@
   height: 0;
   opacity: 0;
 }
+.panel_JnchWv {
+  background-color: var(--background-surface-high);
+}
+.custom-theme-background .panel_JnchWv {
+  background: unset;
+}
+.body_JnchWv {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  text-align: center;
+}
+.backdrop_JnchWv {
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+}
+.genericTint_JnchWv {
+  background: linear-gradient(
+    135deg,
+    rgba(160, 80, 220, 0.2),
+    rgba(70, 110, 240, 0.2)
+  );
+}
+.cs2Tint_JnchWv {
+  background: linear-gradient(
+    135deg,
+    rgba(215, 111, 9, 0.2),
+    rgba(234, 142, 25, 0.2)
+  );
+}
+.lolTint_JnchWv {
+  background: linear-gradient(
+    135deg,
+    rgba(169, 129, 56, 0.2),
+    hsla(43, 80%, 81%, 0.2)
+  );
+}
+.dotaTint_JnchWv {
+  background: linear-gradient(
+    135deg,
+    rgba(168, 48, 32, 0.2),
+    rgba(214, 92, 60, 0.2)
+  );
+}
+.rocketLeagueTint_JnchWv {
+  background: linear-gradient(
+    135deg,
+    rgba(24, 92, 168, 0.2),
+    rgba(56, 164, 220, 0.2)
+  );
+}
+.art_JnchWv {
+  height: 120px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 180px;
+}
+.copy_JnchWv {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
 .container_KeBYth {
   position: relative;
 }
@@ -420,4 +485,4 @@
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=895840.5bd9f2648d66e8b7.css.map*/
+/*# sourceMappingURL=508233.4416390b413500f1.css.map*/

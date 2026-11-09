@@ -191,10 +191,12 @@
   opacity: 0.4;
 }
 .image_1lwQ1X {
+  box-sizing: border-box;
   height: 100%;
   inset: 0;
   -o-object-fit: contain;
   object-fit: contain;
+  padding: var(--space-4);
   pointer-events: none;
   position: absolute;
   width: 100%;
@@ -428,4 +430,4 @@
   gap: var(--space-32);
 }
 
-/*# sourceMappingURL=817385.a4586fc4461ac9b8.css.map*/
+/*# sourceMappingURL=817385.fc533d1688ed2902.css.map*/
