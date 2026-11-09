@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8847080002](https://discord.com/jobs/8847080002)
 
-**Updated At:** Fri, 23 Oct 2026 20:58:26 GMT
+**Updated At:** Mon, 09 Nov 2026 14:48:09 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.As Group Product Manager for Data/ML, you'll drive the vision, strategy, and roadmap for Discord's Machine Learning Platform and its applications, particularly to Advertising, while also championing how the broader company uses data to make product decisions. This is a horizontal role reporting to the VP of Product, Business that touches nearly every product team at Discord, as well as core technical teams, so you'll need to be comfortable driving alignment across stakeholders whose goals are sometimes in tension.

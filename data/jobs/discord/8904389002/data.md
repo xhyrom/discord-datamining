@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8904389002](https://discord.com/jobs/8904389002)
 
-**Updated At:** Wed, 21 Oct 2026 20:02:34 GMT
+**Updated At:** Mon, 09 Nov 2026 14:48:09 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Public Policy team builds and maintains relationships with the policymakers, regulators, civil society organizations, academics, and industry partners who shape the future of online platforms. We help these stakeholders understand how Discord works and how we approach safety and privacy, and we bring their perspectives back to inform how Discord builds products and policies.

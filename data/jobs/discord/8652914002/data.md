@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8652914002](https://discord.com/jobs/8652914002)
 
-**Updated At:** Tue, 27 Oct 2026 23:03:13 GMT
+**Updated At:** Mon, 09 Nov 2026 14:48:09 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord’s mission is to give people the power to create space to find belonging in their lives. Every day, millions of people trust Discord to be a place where they can talk, spend time together, and build community. Keeping that space safe starts with teams like ours.

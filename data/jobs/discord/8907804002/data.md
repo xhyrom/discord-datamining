@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8907804002](https://discord.com/jobs/8907804002)
 
-**Updated At:** Tue, 03 Nov 2026 23:32:06 GMT
+**Updated At:** Mon, 09 Nov 2026 14:48:09 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.As a senior manager, you’ll lead global indirect tax strategy and advisory for new products, evolving business models and laws, and enterprise-wide initiatives. You’ll be a trusted strategic advisor to teams across the business, making sure indirect tax requirements, risks, and opportunities are considered early and thoughtfully, not after launch. This role is about shaping decisions: translating complex sales and use tax, VAT, GST, digital services tax, and other indirect tax issues into clear, practical guidance, and owning the work from strategy through execution.&amp;nbsp;

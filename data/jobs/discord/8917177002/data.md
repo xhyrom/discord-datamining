@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8917177002](https://discord.com/jobs/8917177002)
 
-**Updated At:** Tue, 03 Nov 2026 16:31:51 GMT
+**Updated At:** Mon, 09 Nov 2026 14:48:09 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord's Commercial &amp;amp; Marketing Legal (CoMa) team is the legal engine behind Discord's revenue and partnership business. We partner with Global Partnerships, Developer &amp;amp; Platform Solutions, Corporate Strategy, Ad Solutions, Data Science, AdTech, Marketing, and Procurement to structure and close the deals that bring games, creators, and brands to Discord's community. As Associate Commercial Counsel, you'll be a key advisor for integrating Discord's social features into games, enabling in-game commerce and digital collectibles, and building new monetization models alongside some of the biggest names in gaming and entertainment. You will also support our marketing and events teams on creative endeavors that promote Discord in the industry and to users. You'll handle a high volume of deals with real ownership, and you'll help shape how Discord approaches new partnership types at scale. This person will report to the Managing Counsel, Commercial &amp;amp; Marketing Legal.

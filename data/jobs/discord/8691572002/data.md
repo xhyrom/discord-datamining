@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8691572002](https://discord.com/jobs/8691572002)
 
-**Updated At:** Mon, 26 Oct 2026 14:55:50 GMT
+**Updated At:** Mon, 09 Nov 2026 14:48:09 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.Discord is looking for a Staff Data Engineer to join our Data Engineering team and partner with Consumer Revenue. Our mission is to make it easy for all users to discover, understand, buy, and keep Premium Products on Discord. In this role, you will set technical direction for the data systems that support Nitro, Shop, server monetization and gifting, and other consumer revenue experiences. You will build reliable data foundations that help teams understand performance, run experiments, and make better product and business decisions.

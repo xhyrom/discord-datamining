@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8910013002](https://discord.com/jobs/8910013002)
 
-**Updated At:** Wed, 04 Nov 2026 20:10:36 GMT
+**Updated At:** Mon, 09 Nov 2026 14:48:09 GMT
 
 **Job Description:**
 Discord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.We're looking for a Senior Machine Learning Engineer to join our Engagement ML team, working as part of the cross-functional Onboarding squad in Discord's Growth organization. You'll design and build 0→1 end-to-end ML solutions that help brand-new users find their place on Discord: the servers, people, and content that turn a first session into a long-term connection to the product. If this excites you, keep reading!
