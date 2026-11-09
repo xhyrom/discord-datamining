@@ -201,6 +201,7 @@
       t.exports = {
         LO: "game_M5fVqw",
         Ms: "topGame_M5fVqw",
+        Ku: "globalGame_M5fVqw",
         Tn: "visual_M5fVqw",
         vf: "shell_M5fVqw",
         Qw: "art_M5fVqw",
@@ -222,8 +223,10 @@
     842807(t) {
       t.exports = {
         kL: "container_eVi7eB",
-        wx: "header_eVi7eB",
+        TF: "globalContainer_eVi7eB",
         dJ: "stat_eVi7eB",
+        ai: "number_eVi7eB",
+        wx: "header_eVi7eB",
         gi: "globe_eVi7eB",
         h_: "description_eVi7eB",
         l7: "globalHeader_eVi7eB",
@@ -317,4 +320,4 @@
     },
   },
 ]);
-//# sourceMappingURL=937139.3f8f15596822cf13.js.map
+//# sourceMappingURL=937139.a723c6b5c4459bd1.js.map
