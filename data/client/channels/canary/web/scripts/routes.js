@@ -9953,7 +9953,7 @@
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("668860", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("668885", 10))) || (l.client_build_number = d),
           null == (c = eE?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -76032,6 +76032,12 @@ color: purple;
                 kind: "scalar",
                 T: 8,
               },
+              {
+                no: 8,
+                name: "auto_add_joined_threads_per_guild",
+                kind: "scalar",
+                T: 8,
+              },
             ]);
           }
           create(e) {
@@ -76041,6 +76047,7 @@ color: purple;
               autoAddJoinedThreads: !1,
               pruneInactiveThreadsDays: 0,
               pruneAllFavoritedThreads: !1,
+              autoAddJoinedThreadsPerGuild: !1,
             };
             return (
               globalThis.Object.defineProperty(t, b.$, {
@@ -76087,6 +76094,9 @@ color: purple;
                   break;
                 case 7:
                   r.pruneAllFavoritedThreads = e.bool();
+                  break;
+                case 8:
+                  r.autoAddJoinedThreadsPerGuild = e.bool();
                   break;
                 default:
                   let a = n.readUnknownField;
@@ -76155,7 +76165,9 @@ color: purple;
               0 !== e.pruneInactiveThreadsDays &&
                 t.tag(6, y.O0.Varint).uint32(e.pruneInactiveThreadsDays),
               !1 !== e.pruneAllFavoritedThreads &&
-                t.tag(7, y.O0.Varint).bool(e.pruneAllFavoritedThreads);
+                t.tag(7, y.O0.Varint).bool(e.pruneAllFavoritedThreads),
+              !1 !== e.autoAddJoinedThreadsPerGuild &&
+                t.tag(8, y.O0.Varint).bool(e.autoAddJoinedThreadsPerGuild);
             let i = n.writeUnknownFields;
             return (
               !1 !== i && (!0 == i ? y.f$.onWrite : i)(this.typeName, e, t), t
@@ -151286,7 +151298,7 @@ ${a}`);
           n.e(859864).then(n.t.bind(n, 122123, 19));
         let e7 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eY.A().log(
-          `[BUILD INFO] Release Channel: ${e7}, Build Number: 668860, Version Hash: 94075d44a3bcb1452bc7eab16ecd64cbd21b2a91`,
+          `[BUILD INFO] Release Channel: ${e7}, Build Number: 668885, Version Hash: 21993bd79474c41503c8eaf172c41acd86650075`,
         ),
           w.A.setTags({ appContext: H.QCW }),
           eg.A.initBasic(),
@@ -151383,7 +151395,7 @@ ${a}`);
               a =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : "668860";
+                  : "668885";
             if (__OVERLAY__) return;
             isNaN((r = parseInt(a ?? "", 10))) ||
               eB.Ay.setCrashInformation(ew.du.BuildNumber, r);
@@ -169138,7 +169150,7 @@ ${a}`);
                     className: td()(Ij.Wz, Ij.mr),
                     children: [
                       (0, v.jsx)(IH, { className: Ij.Kk }),
-                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "668860" }),
+                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "668885" }),
                       (0, v.jsx)(r, {}),
                     ],
                   })
@@ -255565,7 +255577,7 @@ html body ${z}, html body ${z} * {
                 (e) => {
                   if (
                     null == e.body ||
-                    "94075d44a3bcb1452bc7eab16ecd64cbd21b2a91" === e.body.hash
+                    "21993bd79474c41503c8eaf172c41acd86650075" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -265729,10 +265741,10 @@ html body ${z}, html body ${z} * {
                 t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("668860")),
+                  ((e = parseInt("668885")),
                   Number.isNaN(e) &&
                     (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 668860",
+                      "Trying to open a changelog for an invalid build number 668885",
                     ),
                     (e = 0)),
                   e),
@@ -338213,7 +338225,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "668860", versionHash: "94075d44a3bcb1452bc7eab16ecd64cbd21b2a91" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "668885", versionHash: "21993bd79474c41503c8eaf172c41acd86650075" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -362159,7 +362171,7 @@ ${t.join("\n")}`);
         "use strict";
         var i = n(439372),
           r = n(46653),
-          a = n(146092),
+          a = n(794412),
           s = n(117600),
           l = n(5180),
           o = n(652215);
@@ -362239,7 +362251,7 @@ ${t.join("\n")}`);
           E = 0,
           A = !1,
           f = !1,
-          h = !1,
+          h = "never",
           I = !0,
           p = 0,
           m = d.l0;
@@ -362265,8 +362277,10 @@ ${t.join("\n")}`);
                 });
             }
           let c = e?.guildVisible?.value ?? !(0, i.isEmpty)(n),
-            T = e?.autoAddJoinedThreads ?? !1,
-            g = e?.pruneInactiveThreads?.value ?? !0,
+            T = "never";
+          e?.autoAddJoinedThreads === !0 &&
+            (T = e.autoAddJoinedThreadsPerGuild ? d.Gv : d.AK);
+          let g = e?.pruneInactiveThreads?.value ?? !0,
             S = e?.pruneInactiveThreadsDays ?? 0,
             N = e?.pruneAllFavoritedThreads === !0 ? "all" : d.l0;
           return (
@@ -362305,8 +362319,8 @@ ${t.join("\n")}`);
           get favoriteGuildEnabled() {
             return f;
           }
-          get autoAddJoinedThreads() {
-            return h && f;
+          get autoAddThreadsMode() {
+            return f ? h : "never";
           }
           get pruneInactiveThreads() {
             return I && f;
@@ -362362,24 +362376,24 @@ ${t.join("\n")}`);
         let S = new g(s.h, {});
         n.d(t, {}, { A: S });
       },
-      146092(e, t, n) {
+      794412(e, t, n) {
         "use strict";
         n.d(t, {
-          od: () => ei,
-          S_: () => q,
-          nR: () => er,
-          Ye: () => es,
-          Nz: () => en,
-          fv: () => ea,
-          i_: () => Q,
-          uM: () => eu,
-          _2: () => ed,
-          w6: () => Z,
-          Ub: () => el,
-          tV: () => e_,
-          kG: () => eE,
-          u$: () => eo,
-          zN: () => ec,
+          od: () => ee,
+          S_: () => $,
+          nR: () => et,
+          Ye: () => ei,
+          Nz: () => J,
+          fv: () => en,
+          i_: () => X,
+          uM: () => eo,
+          _2: () => es,
+          w6: () => z,
+          Ub: () => er,
+          tV: () => ed,
+          kG: () => ec,
+          u$: () => ea,
+          zN: () => el,
         });
         var i = n(435558),
           r = n.n(i),
@@ -362394,79 +362408,26 @@ ${t.join("\n")}`);
           E = n(95701),
           A = n(46653),
           f = n(734057),
-          h = n(576705),
-          I = n(309010),
-          p = n(967198),
-          m = n(927813),
-          T = n(811091),
-          g = n(181079);
-        n(321073);
-        var S = n(353202),
-          N = n(826767),
-          C = n(218461),
-          O = n(349828),
-          R = n(818348);
-        function L(e) {
-          return Object.values(g.A.getFavoriteChannels())
-            .filter((t) => {
-              if (
-                t.type !== s.Ip.REFERENCE_ORIGINAL ||
-                (null != e && t.parentId !== e)
-              )
-                return !1;
-              let n = f.A.getChannel(t.id);
-              return null != n
-                ? n.isThread()
-                : null != t.channelType && E.Le.has(t.channelType);
-            })
-            .map((e) => e.id);
-        }
-        function y(e) {
-          let { days: t, categoryId: n } = e;
-          if (!Number.isSafeInteger(t) || t < 0) return [];
-          let i = Date.now() - t * m.A.Millis.DAY,
-            r = [];
-          for (let e of L(n)) {
-            let n = f.A.getChannel(e);
-            if (
-              null == n ||
-              null == n.threadMetadata ||
-              !h.A.can(R.xB.VIEW_CHANNEL, n) ||
-              C.Ay.hasUnreadOrMentions(e)
-            )
-              continue;
-            if (n.threadMetadata.archived) {
-              r.push(n);
-              continue;
-            }
-            if (0 === t) continue;
-            let a = (0, N.F)(n);
-            Number.isFinite(a) && a > 0 && a < i && r.push(n);
-          }
-          return r
-            .map((e) => {
-              let t = (0, N.F)(e);
-              return {
-                channel: e,
-                activity: Number.isFinite(t) && t > 0 ? t : 1 / 0,
-              };
-            })
-            .sort((e, t) => e.activity - t.activity)
-            .map((e) => {
-              let { channel: t } = e;
-              return t;
-            });
-        }
-        var D = n(796637),
-          b = n(93055),
-          v = n(5180),
-          P = n(635233),
-          M = n(928424),
-          U = n(858899),
-          w = n(27232),
-          G = n(792996),
-          x = n(652215);
-        function k(e) {
+          h = n(71393),
+          I = n(576705),
+          p = n(309010),
+          m = n(967198),
+          T = n(927813),
+          g = n(811091),
+          S = n(181079),
+          N = n(266599),
+          C = n(796637),
+          O = n(93055),
+          R = n(5180),
+          L = n(635233),
+          y = n(928424),
+          D = n(858899),
+          b = n(27232),
+          v = n(792996),
+          P = n(349828),
+          M = n(652215),
+          U = n(818348);
+        function w(e) {
           let t = 0;
           for (let n in e) {
             let i = e[n];
@@ -362474,17 +362435,17 @@ ${t.join("\n")}`);
           }
           return t + 1;
         }
-        function F(e) {
-          let t = p.A.getGuildId(),
-            n = I.Ay.getChannelId();
-          (0, v.ai)(t) &&
+        function G(e) {
+          let t = m.A.getGuildId(),
+            n = p.Ay.getChannelId();
+          (0, R.ai)(t) &&
             null != n &&
             e.has(n) &&
             (0, u.pX)(
-              x.BVt.CHANNEL(
+              M.BVt.CHANNEL(
                 t,
                 (function (e, t) {
-                  let n = (0, D.g)(),
+                  let n = (0, C.g)(),
                     i = n
                       .getSections()
                       .flatMap((e, t) =>
@@ -362503,7 +362464,7 @@ ${t.join("\n")}`);
               ),
             );
         }
-        function B(e) {
+        function x(e) {
           for (let t in e) {
             let n = e[t];
             if (null == n) {
@@ -362521,71 +362482,71 @@ ${t.join("\n")}`);
             if (
               (null == n.channelType &&
                 (n.channelType = l.ZQ.create({ value: i.type })),
-              !i.isPrivate() && !h.A.can(R.xB.VIEW_CHANNEL, i))
+              !i.isPrivate() && !I.A.can(U.xB.VIEW_CHANNEL, i))
             ) {
               delete e[t];
               continue;
             }
           }
         }
-        function V(e, t) {
+        function k(e, t) {
           let n = e[t];
           if (null == n || "0" === n.parentId) return;
           let i = null != n.parentId ? e[n.parentId] : null;
           (null == i || i.type !== s.Ip.CATEGORY) && (n.parentId = "0");
         }
-        function H(e) {
+        function F(e) {
           return r().filter(e, (e) => e.type !== s.Ip.CATEGORY).length;
         }
-        function j(e, t) {
-          if ((B(e), r().size(e) >= 200)) return { limit: 200, canUpsell: !1 };
-          let { favoriteLimit: n, canUpsellFavoriteLimit: i } = (0, b.o9)();
-          return t === s.Ip.CATEGORY || H(e) < n
+        function B(e, t) {
+          if ((x(e), r().size(e) >= 200)) return { limit: 200, canUpsell: !1 };
+          let { favoriteLimit: n, canUpsellFavoriteLimit: i } = (0, O.o9)();
+          return t === s.Ip.CATEGORY || F(e) < n
             ? null
             : { limit: n, canUpsell: i };
         }
-        function W(e) {
+        function V(e) {
           let { limit: t, canUpsell: n } = e;
           n
-            ? (0, M.A)(t)
+            ? (0, y.A)(t)
             : o.A.show({
-                title: G.intl.string(G.t["+XYXtZ"]),
-                body: G.intl.formatToPlainString(G.t.JaIyFi, { count: t }),
+                title: v.intl.string(v.t["+XYXtZ"]),
+                body: v.intl.formatToPlainString(v.t.JaIyFi, { count: t }),
               });
         }
-        function Y(e) {
+        function H(e) {
           e?.status === 403 &&
-            (_.wc.loadIfNecessary(!0).catch(x.tEg),
+            (_.wc.loadIfNecessary(!0).catch(M.tEg),
             o.A.show({
-              title: G.intl.string(G.t.iufib1),
-              body: G.intl.string(G.t.eAn6z2),
+              title: v.intl.string(v.t.iufib1),
+              body: v.intl.string(v.t.eAn6z2),
             }));
         }
-        function K(e) {
+        function j(e) {
           let { update: t, batched: n = !1 } = e;
           return _.wc.updateAsync(
             "favorites",
             t,
             n ? _.Sb.FREQUENT_USER_ACTION : _.Sb.INFREQUENT_USER_ACTION,
-            Y,
+            H,
           );
         }
-        function $(e, t) {
+        function W(e, t) {
           let n =
             arguments.length > 2 && void 0 !== arguments[2]
               ? arguments[2]
-              : T.default.fromTimestamp(Date.now());
+              : g.default.fromTimestamp(Date.now());
           return (
             (e[n] = s.wL.create({
               nickname: t,
               type: s.Ip.CATEGORY,
-              position: k(e),
+              position: w(e),
               parentId: "0",
             })),
             n
           );
         }
-        function X(e, t) {
+        function Y(e, t) {
           let n = t.trim().toLowerCase();
           for (let t in e) {
             let i = e[t];
@@ -362596,30 +362557,30 @@ ${t.join("\n")}`);
               return t;
           }
         }
-        async function z(e, t, n) {
+        async function K(e, t, n) {
           let { silent: i = !1 } =
               arguments.length > 3 && void 0 !== arguments[3]
                 ? arguments[3]
                 : {},
-            r = e.filter((e) => !g.A.isFavorite(e));
+            r = e.filter((e) => !S.A.isFavorite(e));
           if (0 === r.length) return;
-          let a = !g.A.favoriteGuildEnabled;
-          await K({
+          let a = !S.A.favoriteGuildEnabled;
+          await j({
             update: (e) => {
               let o = !1,
                 d = ("parentId" in t ? t.parentId : null) ?? "0";
               for (let a of r) {
-                let r = j(e.favoriteChannels, s.Ip.REFERENCE_ORIGINAL);
+                let r = B(e.favoriteChannels, s.Ip.REFERENCE_ORIGINAL);
                 if (null != r) {
-                  if ((i || W(r), !o)) return !1;
+                  if ((i || V(r), !o)) return !1;
                   break;
                 }
                 if ("categoryName" in t && !o) {
                   d =
-                    X(e.favoriteChannels, t.categoryName) ??
-                    $(e.favoriteChannels, t.categoryName);
-                  let n = j(e.favoriteChannels, s.Ip.REFERENCE_ORIGINAL);
-                  if (null != n) return i || W(n), !1;
+                    Y(e.favoriteChannels, t.categoryName) ??
+                    W(e.favoriteChannels, t.categoryName);
+                  let n = B(e.favoriteChannels, s.Ip.REFERENCE_ORIGINAL);
+                  if (null != n) return i || V(n), !1;
                 }
                 let c = f.A.getChannel(a);
                 (e.favoriteChannels[a] = s.wL.create({
@@ -362627,172 +362588,168 @@ ${t.join("\n")}`);
                   type: s.Ip.REFERENCE_ORIGINAL,
                   channelType:
                     null != c ? l.ZQ.create({ value: c.type }) : void 0,
-                  position: k(e.favoriteChannels),
+                  position: w(e.favoriteChannels),
                   parentId: d,
                 })),
-                  B(e.favoriteChannels),
-                  V(e.favoriteChannels, a),
+                  x(e.favoriteChannels),
+                  k(e.favoriteChannels, a),
                   (o = !0),
-                  (0, P.LO)(n, c?.type ?? null, H(e.favoriteChannels));
+                  (0, L.LO)(n, c?.type ?? null, F(e.favoriteChannels));
               }
               o &&
                 a &&
                 !i &&
                 ((e.guildVisible = l._t.create({ value: !0 })),
-                (0, P.uS)("auto", !0));
+                (0, L.uS)("auto", !0));
             },
           }),
             !i &&
-              r.some((e) => g.A.isFavorite(e)) &&
-              (0, U.P0)({
-                text: G.intl.string(G.t["4tSWQg"]),
-                icon: w.StarIcon,
+              r.some((e) => S.A.isFavorite(e)) &&
+              (0, D.P0)({
+                text: v.intl.string(v.t["4tSWQg"]),
+                icon: b.StarIcon,
               });
         }
-        async function q(e) {
+        async function $(e) {
           let { channelIds: t, parentId: n, source: i } = e;
-          await z(t, { parentId: n ?? null }, i);
+          await K(t, { parentId: n ?? null }, i);
         }
-        function Q(e) {
+        function X(e) {
           let { trackAnalytics: t = !0 } =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
                 : {},
-            n = g.A.getFavorite(e);
+            n = S.A.getFavorite(e);
           null != n &&
-            (F(new Set([e])),
-            K({
+            (G(new Set([e])),
+            j({
               update: (i) => {
                 if ((delete i.favoriteChannels[e], n.type === s.Ip.CATEGORY))
                   for (let t in i.favoriteChannels)
                     i.favoriteChannels[t].parentId === e &&
                       (i.favoriteChannels[t].parentId = "0");
-                B(i.favoriteChannels),
+                x(i.favoriteChannels),
                   t &&
-                    (0, P.TX)(
+                    (0, L.TX)(
                       n.type === s.Ip.CATEGORY
                         ? null
                         : (f.A.getChannel(e)?.type ?? null),
-                      H(i.favoriteChannels),
+                      F(i.favoriteChannels),
                     );
               },
             }));
         }
-        function Z(e, t) {
-          g.A.isFavorite(e) &&
-            K({
+        function z(e, t) {
+          S.A.isFavorite(e) &&
+            j({
               update: (n) => {
                 n.favoriteChannels[e].nickname = t ?? "";
               },
             });
         }
-        function J() {
-          return g.A.pruneInactiveThreads;
+        function q() {
+          return S.A.pruneInactiveThreads;
         }
-        let ee = 0,
-          et = null;
-        async function en() {
-          let e,
-            t,
-            n = A.default.getId();
-          if (!J() || (n === et && Date.now() - ee < m.A.Millis.DAY)) return;
-          let i = g.A.pruneInactiveThreadsScope,
-            r =
-              i === O.l0
-                ? ((e = O.A.toLowerCase()),
-                  (t = Object.values(g.A.getFavoriteChannels()).find(
-                    (t) =>
-                      t.type === s.Ip.CATEGORY &&
-                      t.nickname?.trim().toLowerCase() === e,
-                  )),
-                  t?.id ?? null)
-                : i;
-          if (null == r) return;
-          (ee = Date.now()), (et = n);
-          let a = {
-            days: g.A.pruneInactiveThreadsDays,
-            categoryId: "all" === r ? null : r,
-          };
-          if (
-            (await (async function (e) {
-              await S.A.loadThreadsBulk(L(e));
-            })(a.categoryId),
-            !J() || g.A.pruneInactiveThreadsScope !== i)
-          )
+        let Q = 0,
+          Z = null;
+        async function J() {
+          let e = A.default.getId();
+          if (!q() || (e === Z && Date.now() - Q < T.A.Millis.DAY)) return;
+          let t = S.A.pruneInactiveThreadsScope,
+            n = t === P.l0 ? (0, N.PG)() : null;
+          if (n?.length === 0) return;
+          (Q = Date.now()), (Z = e);
+          let i = { days: S.A.pruneInactiveThreadsDays, categoryIds: n };
+          if ((await (0, N.FT)(n), !q() || S.A.pruneInactiveThreadsScope !== t))
             return;
-          let l = I.Ay.getChannelId(),
-            o = y(a)
+          let r = p.Ay.getChannelId(),
+            a = (0, N.wm)(i)
               .map((e) => e.id)
-              .filter((e) => e !== l);
-          0 !== o.length &&
+              .filter((e) => e !== r);
+          0 !== a.length &&
             (await (async function (e, t) {
               let n = new Set(e);
-              await K({
+              await j({
                 update: (e) => {
-                  let i = y(t).filter(
+                  let i = (0, N.wm)(t).filter(
                     (t) => n.has(t.id) && null != e.favoriteChannels[t.id],
                   );
                   if (0 === i.length) return !1;
-                  for (let t of (F(new Set(i.map((e) => e.id))), i))
+                  for (let t of (G(new Set(i.map((e) => e.id))), i))
                     delete e.favoriteChannels[t.id],
-                      (0, P.TX)(t.type, H(e.favoriteChannels));
+                      (0, L.TX)(t.type, F(e.favoriteChannels));
                 },
               });
-            })(o, a));
+            })(a, i));
         }
-        async function ei(e) {
-          if (!(0, v.QN)(e)) return null;
+        async function ee(e) {
+          if (!(0, R.QN)(e)) return null;
           let t = e.trim(),
-            n = T.default.fromTimestamp(Date.now());
+            n = g.default.fromTimestamp(Date.now());
           return (
-            await K({
+            await j({
               update: (e) => {
-                let i = j(e.favoriteChannels, s.Ip.CATEGORY);
-                if (null != i) return W(i), !1;
-                $(e.favoriteChannels, t, n);
+                let i = B(e.favoriteChannels, s.Ip.CATEGORY);
+                if (null != i) return V(i), !1;
+                W(e.favoriteChannels, t, n);
               },
             }),
-            null != g.A.getFavorite(n) ? n : null
+            null != S.A.getFavorite(n) ? n : null
           );
         }
-        async function er(e) {
+        async function et(e) {
           let { channelIds: t, categoryName: n, source: i } = e;
-          await z(t, { categoryName: n }, i);
+          await K(t, { categoryName: n }, i);
         }
-        function ea(e) {
-          Q(e);
+        function en(e) {
+          X(e);
         }
-        async function es(e) {
-          if (!g.A.autoAddJoinedThreads || g.A.isFavorite(e)) return;
-          let t = f.A.getChannel(e);
-          null == t ||
-            !t.isThread() ||
-            ((t.isPrivate() || h.A.can(R.xB.VIEW_CHANNEL, t)) &&
-              (await z([e], { categoryName: O.A }, "auto_thread_join", {
-                silent: !0,
-              })));
+        async function ei(e) {
+          var t;
+          let n,
+            i = S.A.autoAddThreadsMode;
+          if ("never" === i || S.A.isFavorite(e)) return;
+          let r = f.A.getChannel(e);
+          if (
+            null == r ||
+            !r.isThread() ||
+            !(r.isPrivate() || I.A.can(U.xB.VIEW_CHANNEL, r))
+          )
+            return;
+          let a =
+            (i === P.Gv &&
+            null !=
+              (n = null != (t = r.guild_id) ? h.A.getGuild(t)?.name : null) &&
+            (0, R.QN)(n)
+              ? n.trim()
+              : null) ?? P.A;
+          await K([e], { categoryName: a }, "auto_thread_join", { silent: !0 });
         }
-        function el(e) {
-          K({
-            update: (t) => {
+        function er(e) {
+          let t = "never" !== e,
+            n = e === P.Gv;
+          j({
+            update: (i) => {
               if (
-                t.autoAddJoinedThreads === e ||
-                (e &&
+                (i.autoAddJoinedThreads === t &&
+                  i.autoAddJoinedThreadsPerGuild === n) ||
+                (e === P.AK &&
                   null ==
                     (function (e) {
-                      let t = X(e, O.A);
+                      let t = Y(e, P.A);
                       if (null != t) return t;
-                      let n = j(e, s.Ip.CATEGORY);
-                      return null != n ? void W(n) : $(e, O.A);
-                    })(t.favoriteChannels))
+                      let n = B(e, s.Ip.CATEGORY);
+                      return null != n ? void V(n) : W(e, P.A);
+                    })(i.favoriteChannels))
               )
                 return !1;
-              t.autoAddJoinedThreads = e;
+              (i.autoAddJoinedThreads = t),
+                (i.autoAddJoinedThreadsPerGuild = n);
             },
           });
         }
-        function eo(e, t, n) {
-          return K({
+        function ea(e, t, n) {
+          return j({
             update: (i) => {
               (i.pruneInactiveThreads = l._t.create({ value: e })),
                 e &&
@@ -362801,8 +362758,8 @@ ${t.join("\n")}`);
             },
           });
         }
-        function ed(e, t) {
-          K({
+        function es(e, t) {
+          j({
             update: (n) => {
               let i = null != t ? [t] : Object.keys(n.favoriteChannels),
                 r = !1;
@@ -362818,9 +362775,9 @@ ${t.join("\n")}`);
             batched: !0,
           });
         }
-        function ec(e) {
+        function el(e) {
           0 !== e.length &&
-            K({
+            j({
               update: (t) => {
                 for (let n of e) {
                   let e = n.id;
@@ -362828,19 +362785,20 @@ ${t.join("\n")}`);
                     (t.favoriteChannels[e].position = n.position),
                     void 0 !== n.parent_id &&
                       ((t.favoriteChannels[e].parentId = n.parent_id ?? "0"),
-                      V(t.favoriteChannels, e));
+                      k(t.favoriteChannels, e));
                 }
-                (0, P.P)();
+                (0, L.P)();
               },
             });
         }
-        function eu() {
-          K({
+        function eo() {
+          j({
             update: (e) => {
               (e.favoriteChannels = {}),
                 (e.guildVisible = void 0),
                 (e.muted = !1),
                 (e.autoAddJoinedThreads = !1),
+                (e.autoAddJoinedThreadsPerGuild = !1),
                 (e.pruneInactiveThreads = void 0),
                 (e.pruneInactiveThreadsDays = 0),
                 (e.pruneAllFavoritedThreads = !1);
@@ -362850,22 +362808,115 @@ ${t.join("\n")}`);
             (0, c._0)(),
             (0, _.xB)(a.M.FAVORITES_GUILD_SUGGESTIONS);
         }
-        function e_(e) {
+        function ed(e) {
           let t =
             arguments.length > 1 && void 0 !== arguments[1]
               ? arguments[1]
               : "settings_page";
-          K({
+          j({
             update: (n) => {
               if (n.guildVisible?.value === e) return !1;
-              (n.guildVisible = l._t.create({ value: e })), (0, P.uS)(t, e);
+              (n.guildVisible = l._t.create({ value: e })), (0, L.uS)(t, e);
             },
           });
         }
-        function eE(e) {
-          e_(e, "settings_page"),
-            !e && (0, v.ai)(p.A.getGuildId()) && (0, u.pX)(x.BVt.ME);
+        function ec(e) {
+          ed(e, "settings_page"),
+            !e && (0, R.ai)(m.A.getGuildId()) && (0, u.pX)(M.BVt.ME);
         }
+      },
+      266599(e, t, n) {
+        "use strict";
+        n(321073);
+        var i = n(873298),
+          r = n(353202),
+          a = n(826767),
+          s = n(95701),
+          l = n(734057),
+          o = n(71393),
+          d = n(576705),
+          c = n(218461),
+          u = n(927813),
+          _ = n(181079),
+          E = n(349828),
+          A = n(818348);
+        function f(e) {
+          return Object.values(_.A.getFavoriteChannels())
+            .filter((t) => {
+              if (
+                t.type !== i.Ip.REFERENCE_ORIGINAL ||
+                (null != e && (null == t.parentId || !e.includes(t.parentId)))
+              )
+                return !1;
+              let n = l.A.getChannel(t.id);
+              return null != n
+                ? n.isThread()
+                : null != t.channelType && s.Le.has(t.channelType);
+            })
+            .map((e) => e.id);
+        }
+        n.d(
+          t,
+          {},
+          {
+            FT: async function (e) {
+              await r.A.loadThreadsBulk(f(e));
+            },
+            PG: function () {
+              let e =
+                  arguments.length > 0 && void 0 !== arguments[0]
+                    ? arguments[0]
+                    : _.A.getFavoriteChannels(),
+                t = new Set([E.A.toLowerCase()]);
+              if (_.A.autoAddThreadsMode === E.Gv)
+                for (let e of o.A.getGuildsArray())
+                  t.add(e.name.trim().toLowerCase());
+              let n = [];
+              for (let r of Object.values(e)) {
+                if (r.type !== i.Ip.CATEGORY || null == r.nickname) continue;
+                let e = r.nickname.trim().toLowerCase();
+                t.has(e) && (n.push(r.id), t.delete(e));
+              }
+              return n;
+            },
+            wm: function (e) {
+              let { days: t, categoryIds: n } = e;
+              if (!Number.isSafeInteger(t) || t < 0) return [];
+              let i = Date.now() - t * u.A.Millis.DAY,
+                r = [];
+              for (let e of f(n)) {
+                let n = l.A.getChannel(e);
+                if (
+                  null == n ||
+                  null == n.threadMetadata ||
+                  !d.A.can(A.xB.VIEW_CHANNEL, n) ||
+                  c.Ay.hasUnreadOrMentions(e)
+                )
+                  continue;
+                if (n.threadMetadata.archived) {
+                  r.push(n);
+                  continue;
+                }
+                if (0 === t) continue;
+                let s = (0, a.F)(n);
+                Number.isFinite(s) && s > 0 && s < i && r.push(n);
+              }
+              return r
+                .map((e) => {
+                  let t = (0, a.F)(e);
+                  return {
+                    channel: e,
+                    activity: Number.isFinite(t) && t > 0 ? t : 1 / 0,
+                  };
+                })
+                .sort((e, t) => e.activity - t.activity)
+                .map((e) => {
+                  let { channel: t } = e;
+                  return t;
+                });
+            },
+          },
+        );
       },
       349828(e, t, n) {
         "use strict";
@@ -362879,7 +362930,14 @@ ${t.join("\n")}`);
         n.d(
           t,
           {},
-          { A: "Auto-Added Threads", Rq: [0, 7, 14], _z: i, l0: "auto-added" },
+          {
+            A: "Auto-Added Threads",
+            AK: "own-category",
+            Gv: "per-guild",
+            Rq: [0, 7, 14],
+            _z: i,
+            l0: "auto-added",
+          },
         );
       },
       796637(e, t, n) {
@@ -362900,34 +362958,37 @@ ${t.join("\n")}`);
           f = n(924985),
           h = n(734057),
           I = n(945886),
-          p = n(576705),
-          m = n(218461),
-          T = n(309010),
-          g = n(543465),
-          S = n(403362),
-          N = n(181079),
-          C = n(93055),
-          O = n(774452),
-          R = n(349828),
-          L = n(281405),
-          y = n(818348);
-        let D = [
+          p = n(71393),
+          m = n(576705),
+          T = n(218461),
+          g = n(309010),
+          S = n(543465),
+          N = n(403362),
+          C = n(181079),
+          O = n(266599),
+          R = n(93055),
+          L = n(774452);
+        n(349828);
+        var y = n(281405),
+          D = n(818348);
+        let b = [
           l.Ay,
-          N.A,
+          C.A,
           o.A,
+          p.A,
           d.Ay,
           u.A,
           _.A,
           f.A,
           h.A,
-          p.A,
-          m.Ay,
+          m.A,
           T.Ay,
           g.Ay,
+          S.Ay,
         ];
-        function b(e) {
+        function v(e) {
           let { limit: t, includeLoading: n } = e,
-            i = N.A.getFavoriteChannels(),
+            i = C.A.getFavoriteChannels(),
             r = [];
           for (let e in i) {
             if (r.length >= t) break;
@@ -362944,44 +363005,45 @@ ${t.join("\n")}`);
           }
           return r;
         }
-        function v(e) {
+        function P(e) {
           let { withSuggestionsNotice: t = !1 } =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
                 : {},
-            n = e ?? N.A.getFavoriteChannels(),
-            i = g.Ay.isGuildCollapsed("373"),
-            r = T.Ay.getChannelId(),
-            l = h.A.getChannel(r),
-            o = T.Ay.getVoiceChannelId(),
-            d = [],
-            E = {};
+            n = e ?? C.A.getFavoriteChannels(),
+            i = new Set((0, O.PG)(n)),
+            r = S.Ay.isGuildCollapsed("373"),
+            l = g.Ay.getChannelId(),
+            o = h.A.getChannel(l),
+            d = g.Ay.getVoiceChannelId(),
+            E = [],
+            p = {};
           for (let e in n) {
             let t = n[e],
               i = h.A.getChannel(t.id);
             if (null == i || t.type === s.Ip.CATEGORY) continue;
-            let r = (0, O.R)(n, t, i);
+            let r = (0, L.R)(n, t, i);
             if (
               null == t.parentId ||
               null == n[t.parentId] ||
               n[t.parentId].type !== s.Ip.CATEGORY
             ) {
-              d.push(r);
+              E.push(r);
               continue;
             }
             let a = t.parentId;
-            a in E || (E[a] = []), E[a].push(r);
+            a in p || (p[a] = []), p[a].push(r);
           }
-          function D(e, t) {
-            let { isCollapsed: r, isMuted: s } = t;
+          function b(e, t) {
+            let { isCollapsed: i, isMuted: s } = t;
             return a()(e)
               .map((e) => {
-                if (!e.isPrivate() && !p.A.can(y.xB.VIEW_CHANNEL, e))
+                if (!e.isPrivate() && !m.A.can(D.xB.VIEW_CHANNEL, e))
                   return null;
-                let d = null != l && (l.id === e.id || o === e.id),
-                  E = null != l && l.isThread() && l.parent_id === e.id,
+                let l = null != o && (o.id === e.id || d === e.id),
+                  E = null != o && o.isThread() && o.parent_id === e.id,
                   f =
-                    (d || E || !r
+                    (l || E || !i
                       ? u.A.getActiveJoinedRelevantThreadsForParent(
                           e.guild_id,
                           e.id,
@@ -362990,11 +363052,11 @@ ${t.join("\n")}`);
                           e.guild_id,
                           e.id,
                         )) ?? {},
-                  h = (0, c.wF)(e, f, l, o, i),
-                  T = I.A.isCollapsed(e.id),
-                  S = e.isThread()
+                  h = (0, c.wF)(e, f, o, d, r),
+                  p = I.A.isCollapsed(e.id),
+                  g = e.isThread()
                     ? _.A.isMuted(e.id)
-                    : g.Ay.isChannelMuted(e.guild_id, e.id),
+                    : S.Ay.isChannelMuted(e.guild_id, e.id),
                   N = {
                     id: e.id,
                     record: e,
@@ -363002,52 +363064,52 @@ ${t.join("\n")}`);
                     position: n[e.id].order,
                     threadIds: h,
                     threadCount: a().size(h),
-                    isCollapsed: T,
-                    isMuted: S,
+                    isCollapsed: p,
+                    isMuted: g,
                     isFirstVoiceChannel: !1,
-                    subtitle: (0, c.go)(e, T, !1),
+                    subtitle: (0, c.go)(e, p, !1),
                   };
-                return d ||
+                return l ||
                   E ||
                   !a().isEmpty(f) ||
-                  m.Ay.getMentionCount(e.id) > 0
+                  T.Ay.getMentionCount(e.id) > 0
                   ? N
-                  : (i && S) ||
-                      (r &&
-                        (S ||
+                  : (r && g) ||
+                      (i &&
+                        (g ||
                           s ||
                           (0, A.gV)(e.type) ||
-                          ((0, A.ig)(e.type) && !1 === m.Ay.hasUnread(e.id))))
+                          ((0, A.ig)(e.type) && !1 === T.Ay.hasUnread(e.id))))
                     ? null
                     : N;
               })
-              .filter(S.Vq)
+              .filter(N.Vq)
               .sortBy((e) =>
                 e.record.isGuildVocal() ? e.position + 1e4 : e.position,
               )
               .value();
           }
-          let b = null,
-            v = {
+          let v = null,
+            P = {
               isMuted: !1,
               isCollapsed: !1,
               position: 0,
-              getChannelRecords: () => d,
-              getShownChannelIds: () => d.map((e) => e.id),
-              getShownChannelAndThreadIds: () => d.map((e) => e.id),
-              isEmpty: () => 0 === d.length,
+              getChannelRecords: () => E,
+              getShownChannelIds: () => E.map((e) => e.id),
+              getShownChannelAndThreadIds: () => E.map((e) => e.id),
+              isEmpty: () => 0 === E.length,
               get channelList() {
-                return null == b && (b = D(d, this)), b;
+                return null == v && (v = b(E, this)), v;
               },
             },
-            P = (0, C.m_)(n)
+            M = (0, R.m_)(n)
               .filter((e) => null != e.id)
               .map((e) => {
                 let { id: t } = e,
-                  i = N.A.getCategoryRecord(t);
+                  i = C.A.getCategoryRecord(t);
                 if (null == i) return null;
-                let r = E[t] ?? [],
-                  a = g.Ay.isChannelMuted("373", t),
+                let r = p[t] ?? [],
+                  a = S.Ay.isChannelMuted("373", t),
                   s = f.A.isCollapsed(t),
                   l = null;
                 return {
@@ -363061,79 +363123,77 @@ ${t.join("\n")}`);
                   getShownChannelAndThreadIds: () => r.map((e) => e.id),
                   isEmpty: () => 0 === r.length,
                   get channelList() {
-                    return null == l && (l = D(r, this)), l;
+                    return null == l && (l = b(r, this)), l;
                   },
                 };
               })
               .filter((e) => null != e),
-            M = 0;
-          for (let e of [v, ...P])
-            for (let t of ((e.position = ++M), e.channelList)) t.position = ++M;
-          let U = { isEmpty: () => !0, getRows: () => [], getRow: () => null },
-            w = [];
-          t && w.push(L.r.FAVORITES_SUGGESTIONS);
-          let G = {
-            isEmpty: () => 0 === w.length,
-            getRows: () => w,
-            getRow: (e) => w[e] ?? null,
+            U = 0;
+          for (let e of [P, ...M])
+            for (let t of ((e.position = ++U), e.channelList)) t.position = ++U;
+          let w = { isEmpty: () => !0, getRows: () => [], getRow: () => null },
+            G = [];
+          t && G.push(y.r.FAVORITES_SUGGESTIONS);
+          let x = {
+            isEmpty: () => 0 === G.length,
+            getRows: () => G,
+            getRow: (e) => G[e] ?? null,
           };
           return {
             id: "373",
-            hideMutedChannels: i,
+            hideMutedChannels: r,
             favoritesSectionNumber: 1,
             recentsSectionNumber: 2,
             voiceChannelsSectionNumber: -999,
             getSections() {
               let e = [];
-              (e[0] = w.length),
+              (e[0] = G.length),
                 (e[1] = 0),
                 (e[2] = 0),
                 (e[3] = 0),
-                (e[4] = v.channelList.length);
-              for (let t = 0; t < P.length; t++)
-                e[5 + t] = Math.max(1, P[t].channelList.length);
+                (e[4] = P.channelList.length);
+              for (let t = 0; t < M.length; t++)
+                e[5 + t] = Math.max(1, M[t].channelList.length);
               return e;
             },
             isPlaceholderRow: (e, t) =>
-              !(e < 5) && 0 === t && 0 === P[e - 5].channelList.length,
-            getCategoryFromSection: (e) => (4 === e ? v : P[e - 5]),
-            getNamedCategoryFromSection: (e) => P[e - 5],
+              !(e < 5) && 0 === t && 0 === M[e - 5].channelList.length,
+            getCategoryFromSection: (e) => (4 === e ? P : M[e - 5]),
+            getNamedCategoryFromSection: (e) => M[e - 5],
             getChannelFromSectionRow(e, t) {
               let n = this.getCategoryFromSection(e);
               return null == n || null == n.channelList[t]
                 ? null
                 : { category: n, channel: n.channelList[t] };
             },
-            getGuildActionSection: () => U,
-            getChannelNoticeSection: () => G,
+            getGuildActionSection: () => w,
+            getChannelNoticeSection: () => x,
             getFirstVoiceChannel: () => null,
             getSectionRowsFromChannel(e) {
               if (null == e) return [];
               let t = [],
                 n = [],
-                i = [],
-                r = [v, ...P];
-              for (let a = 0; a < r.length; a++) {
-                let s = r[a],
-                  l = a > 0 ? P[a - 1] : null,
-                  o =
-                    null != l &&
-                    l.record.name.trim().toLowerCase() === R.A.toLowerCase(),
-                  d = a + 4;
-                for (let r = 0; r < s.channelList.length; r++) {
-                  let a = s.channelList[r];
+                r = [],
+                a = [P, ...M];
+              for (let s = 0; s < a.length; s++) {
+                let l = a[s],
+                  o = s > 0 ? M[s - 1] : null,
+                  d = null != o && i.has(o.id),
+                  c = s + 4;
+                for (let i = 0; i < l.channelList.length; i++) {
+                  let a = l.channelList[i];
                   if (a.id === e) {
-                    (o ? i : t).push({ section: d, row: r });
+                    (d ? r : t).push({ section: c, row: i });
                     continue;
                   }
-                  let l = a.threadIds.indexOf(e);
-                  l >= 0 && n.push({ section: d, row: r, threadOffset: l });
+                  let s = a.threadIds.indexOf(e);
+                  s >= 0 && n.push({ section: c, row: i, threadOffset: s });
                 }
               }
-              return [...t, ...n, ...i];
+              return [...t, ...n, ...r];
             },
             forEachShownChannel(e) {
-              for (let t of [v, ...P])
+              for (let t of [P, ...M])
                 for (let n of t.channelList)
                   for (let t of (e(n.record), n.threadIds)) {
                     let n = h.A.getChannel(t);
@@ -363141,7 +363201,7 @@ ${t.join("\n")}`);
                   }
             },
             forEachChannel(e) {
-              for (let t of [v, ...P])
+              for (let t of [P, ...M])
                 for (let n of t.getChannelRecords()) e(n);
             },
             getSlicedChannels: (e) => [[], e, []],
@@ -363158,31 +363218,31 @@ ${t.join("\n")}`);
                     ? arguments[0]
                     : {},
                 [t, n] = i.useState(() =>
-                  v(void 0, { withSuggestionsNotice: e }),
+                  P(void 0, { withSuggestionsNotice: e }),
                 ),
                 r = o.A.isConnected();
               i.useEffect(() => {
                 function t() {
-                  n(v(void 0, { withSuggestionsNotice: e }));
+                  n(P(void 0, { withSuggestionsNotice: e }));
                 }
                 t();
                 let i = a().throttle(t, 100);
                 return (
-                  D.forEach((e) => e.addChangeListener(i)),
+                  b.forEach((e) => e.addChangeListener(i)),
                   () => {
-                    i.cancel(), D.forEach((e) => e.removeChangeListener(i));
+                    i.cancel(), b.forEach((e) => e.removeChangeListener(i));
                   }
                 );
               }, [e]),
                 i.useEffect(() => {
                   if (r) {
                     let e;
-                    0 === (e = b({ limit: 200, includeLoading: !1 })).length
+                    0 === (e = v({ limit: 200, includeLoading: !1 })).length
                       ? Promise.resolve()
                       : E.A.loadThreadsBulk(e);
                   }
                 }, [r]);
-              let s = b({ limit: 1, includeLoading: !0 }).length > 0,
+              let s = v({ limit: 1, includeLoading: !0 }).length > 0,
                 l = (function (e) {
                   if (e.getSections().length > 5) return !1;
                   let t = !1;
@@ -363199,7 +363259,7 @@ ${t.join("\n")}`);
                 hasNoChannels: l,
               };
             },
-            g: v,
+            g: P,
           },
         );
       },
@@ -460288,8 +460348,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1794172769034",
-                      build_number: "668860",
+                      built_at: "1794179576147",
+                      build_number: "668885",
                     },
                   },
                   retries: 1,
@@ -482749,7 +482809,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             h = eu.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, rJ.A)("1794172769034", !0);
+            let e = (0, rJ.A)("1794179576147", !0);
             t =
               null != e
                 ? eG.intl.formatToPlainString(eG.t.wve4kg, {
@@ -651825,7 +651885,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "94075d44a3bcb1452bc7eab16ecd64cbd21b2a91",
+                      "21993bd79474c41503c8eaf172c41acd86650075",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", W),
@@ -662625,7 +662685,7 @@ ${l.join(" +\n")}
                   ).then((e) => {
                     let i = {
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        build_number: "668860",
+                        build_number: "668885",
                       },
                       u = o.default.getCurrentUser();
                     null != u &&
@@ -676196,7 +676256,7 @@ ${l.join(" +\n")}
           139915: "31d59101257d469b",
           139970: "ad5c3c568ad5dc2f",
           14020: "3d679b286d096ada",
-          140200: "5b2def2eaae9c291",
+          140200: "b1070d635aef0e3c",
           140243: "d779fa785c21d913",
           140667: "53bbc42aa4ec9ce0",
           140934: "aa78601e0288b7ce",
@@ -676231,7 +676291,7 @@ ${l.join(" +\n")}
           146070: "bc12c5a98038d126",
           146115: "b32e168ee4e44297",
           146149: "991f731f12db6856",
-          146335: "151db0d8952dec26",
+          146335: "2ca07ed2fefefb7d",
           146566: "1cbf32bd8847af5f",
           146600: "407f362e1e24d472",
           146652: "7c18a989c4310f55",
@@ -676255,7 +676315,7 @@ ${l.join(" +\n")}
           149379: "61e7c9f5da97d2c0",
           149409: "7b19b8926dbf6011",
           149450: "49f777fc54ced84e",
-          149548: "2a6c975da6306489",
+          149548: "302d1ea983936b38",
           1496: "2c0e9ebefddb7b24",
           14962: "071fb590bf2d46a3",
           149802: "685cd22f56e45822",
@@ -676329,7 +676389,7 @@ ${l.join(" +\n")}
           159617: "a6693b37c80569f9",
           15989: "554af0e5bed14183",
           159957: "dc11fa1522ab74cf",
-          160185: "c036c5d4c47e35ef",
+          160185: "d7bce96634e9e8d5",
           160425: "d266696c17da9266",
           160597: "eb554d4b77fd6bd5",
           160621: "663867884ddcc8b9",
@@ -676425,7 +676485,7 @@ ${l.join(" +\n")}
           175038: "e3623078110081f7",
           175284: "c0afc07fcd6aa135",
           175449: "135951813bbaea3f",
-          175657: "963d9ed04e83877f",
+          175657: "043471c7f97d416e",
           175938: "a0376bcbfce30722",
           176005: "f94766847ba89ece",
           176056: "9bfc90617db7a956",
@@ -676479,7 +676539,7 @@ ${l.join(" +\n")}
           184809: "46aa1372d47e8482",
           184821: "054a04b71a5358d3",
           184841: "8efb0097a88fd978",
-          18491: "2c3e39deee959ba1",
+          18491: "f155fa533781a1b5",
           185693: "75fbb280529dd5f7",
           185794: "e3b4b888c1e5ef8e",
           185825: "6822b68334769c19",
@@ -676602,7 +676662,7 @@ ${l.join(" +\n")}
           201641: "09c49491bd981264",
           201730: "ff02c6da7276a356",
           201765: "84ec151a0066622a",
-          202023: "6fe1bd7135d0e9a9",
+          202023: "3e9f3d9c76143617",
           202259: "bdbe8b79934616e4",
           202373: "832bff29e7b55025",
           20249: "19f063505327f5f0",
@@ -676625,7 +676685,7 @@ ${l.join(" +\n")}
           205152: "79cc78c6fadb8e5a",
           205307: "d540561d37874c18",
           205674: "6952fb0c1560a3f8",
-          20587: "a6305b746ec3027d",
+          20587: "80a5261ea2efb6c6",
           205896: "a7187f200894dc64",
           205941: "cb7e6efd15a2ece4",
           205965: "d728886f9e885cf0",
@@ -676681,7 +676741,7 @@ ${l.join(" +\n")}
           213906: "594c4caf675551d0",
           213924: "7ea3558f18c0585a",
           213925: "ac4cb67c9c61c539",
-          214027: "00a948b0520e6b02",
+          214027: "8c3ae630a5e3fa19",
           214048: "7f5cfa3863dac04b",
           214285: "87e4d6c1f178cef2",
           214325: "f9cd296059c1c5cc",
@@ -676724,7 +676784,7 @@ ${l.join(" +\n")}
           220408: "31f7d3a8bd7337f8",
           220411: "df2496d14f278972",
           220518: "86643d12f3abbfa9",
-          22056: "b9b2f2ebfd67d91c",
+          22056: "f167976c224cba1c",
           220626: "785a79176b53a396",
           220736: "8d1f0b4ddd22cd74",
           220803: "fb74ed8e7dc14b59",
@@ -676865,7 +676925,7 @@ ${l.join(" +\n")}
           239760: "9d9535e3b281cd13",
           24001: "6d14947b23e78c21",
           240043: "7b46dc9a4068c6bb",
-          240058: "cc661653653ba896",
+          240058: "cd8425636cc39c89",
           240318: "d7cfffa153d7e388",
           240461: "f04e0e96742dda8f",
           240511: "aacedcdf9cb2ac25",
@@ -676917,7 +676977,7 @@ ${l.join(" +\n")}
           247175: "a856e19a49469d30",
           247339: "0626b36a59ac65a9",
           247554: "99ab2e31743b2edb",
-          247700: "c727ae944f2b6f6f",
+          247700: "e4cbca31d9a1fc68",
           247731: "24ca337626e6cb15",
           247940: "8d57304314b3ecee",
           248069: "d5ffbf42f3aed504",
@@ -677031,7 +677091,7 @@ ${l.join(" +\n")}
           262754: "de38e0c54cde9fbd",
           262755: "83d706c7e53afda5",
           263025: "ede9bbfde018d02e",
-          263408: "32a5e8221d8a20d4",
+          263408: "ea94b99f396e4d85",
           263506: "2d60ed72ed4348dc",
           263765: "653f801be68b79f2",
           263783: "82b53aa9940e33ed",
@@ -677263,7 +677323,7 @@ ${l.join(" +\n")}
           29621: "a6f533a769e8c0f3",
           296434: "42e2c95d076711be",
           296443: "853c96f35d44efb2",
-          296447: "e78100b969fa0e7b",
+          296447: "989a16a0ae236688",
           29664: "62dfb146cf9da5a7",
           296748: "7c7c06e3c9114305",
           297068: "bafbd59a62ef898c",
@@ -677317,7 +677377,7 @@ ${l.join(" +\n")}
           303779: "316de8e04a1d3238",
           303807: "f7c678260f9b9bc0",
           303886: "db4585abad7157d0",
-          303956: "2e2706b2289dcdcd",
+          303956: "a0757a2bac6e9c19",
           304329: "dbd10df98208ad42",
           304372: "d8e24e6ce38cf977",
           304410: "8b591155e9518eb4",
@@ -677426,7 +677486,7 @@ ${l.join(" +\n")}
           320782: "9d649f16d34dfc68",
           320891: "83a242a60a666603",
           320898: "bab16c9765168823",
-          320914: "4a4f28356a6fe576",
+          320914: "b14bd01b2fc652b8",
           321640: "531c9aa7285d2360",
           321855: "bf48dd595df3ec8b",
           322270: "ddf07bb2cc8801fc",
@@ -677598,7 +677658,7 @@ ${l.join(" +\n")}
           350063: "b29a0e4ed24241da",
           350115: "f796281222676b4a",
           350200: "4f03feb78f59a727",
-          350268: "bc1f36435f71f454",
+          350268: "8a2ccf3205a24adb",
           350695: "4167ca919c4dc807",
           350847: "21d23c363febba02",
           350949: "9f09fa7b4b248f39",
@@ -677776,7 +677836,7 @@ ${l.join(" +\n")}
           373169: "df30fd584f9ddcaf",
           373566: "76f21e17172e7b65",
           373738: "71a91efc45d86ba7",
-          3739: "2f16f5012b1f7f3d",
+          3739: "6ff9b30e0649d255",
           374006: "de03dc4d3f6f7e7a",
           374063: "e732d9a8cba5717f",
           37408: "5dc7e553303fdcc1",
@@ -677874,7 +677934,7 @@ ${l.join(" +\n")}
           391763: "27a3efd351a1f2d2",
           391764: "e02fdeee41e908a0",
           391826: "66f5d9963779d9fe",
-          391902: "42fb6c7145178bc7",
+          391902: "a67601dd9910c6e5",
           391952: "e336faa730b3add7",
           391980: "9b7931d43f203fa3",
           392009: "e74736ee7ce77110",
@@ -678133,7 +678193,7 @@ ${l.join(" +\n")}
           430634: "4653d92a7a392cbb",
           430858: "a49b4ce13dd834cf",
           430997: "bc7a4af9a08342d1",
-          431294: "ce4193f6f257eb67",
+          431294: "bdff947d69edf7bb",
           431658: "cc0635aa688bf2db",
           431692: "ee790ed3101d08ac",
           431714: "9ac6c5f632d763bd",
@@ -678199,7 +678259,7 @@ ${l.join(" +\n")}
           440892: "46cbe1e65fbb1672",
           440963: "30f294792893a1be",
           441173: "808d0ccaf6c3f00f",
-          441477: "04963a3fff16fe65",
+          441477: "89b0eae0d0e49112",
           442072: "86616c3f6aeec902",
           442139: "f3184c8557223d26",
           442355: "3e6a6b692b27840a",
@@ -678217,7 +678277,7 @@ ${l.join(" +\n")}
           443038: "a1d4d6f5f5f54bda",
           443136: "766ced805cdeca5e",
           443159: "b85b32e5b2d67ba9",
-          443193: "1026b317a6751d3a",
+          443193: "6df9ef8cae8e692a",
           443254: "e880f7a32d928199",
           443256: "311cdfcc87f98456",
           443320: "93f84287e1398a38",
@@ -678509,7 +678569,7 @@ ${l.join(" +\n")}
           483102: "0551f0f8235c2e4b",
           483261: "c8a4f23ddf8c4cac",
           483391: "5c225ea2ec11e66d",
-          483504: "4c77ec0507914941",
+          483504: "87beb62721cdde94",
           483518: "8e4ee2e13b2370a5",
           483876: "84135f57457090f5",
           484148: "1ecac1fc2e21b83c",
@@ -678750,7 +678810,7 @@ ${l.join(" +\n")}
           515695: "e13bd16740ee75b8",
           515818: "dfebbeeb033e207e",
           515847: "8656423ce953b6fa",
-          516009: "dc9e63e9cac9e368",
+          516009: "fd7db668293d4f11",
           516020: "d8ebedc194281459",
           516054: "0ae5cef097522664",
           516244: "b929061e17f2b7a6",
@@ -678792,7 +678852,7 @@ ${l.join(" +\n")}
           52159: "498c4526d0567fa5",
           521743: "c186ec21c2820d80",
           521761: "a52d6f5c5937b51b",
-          521846: "51bea7560a0775f0",
+          521846: "d4f4f10bb4037d9e",
           521930: "9c25197ce9670e69",
           522011: "6064cd684bc7dafb",
           522261: "617e7edcd3e17452",
@@ -678928,7 +678988,7 @@ ${l.join(" +\n")}
           539620: "6a698e5082a0bf3f",
           539885: "fefb636a26c96795",
           540077: "486a419cc9f6281f",
-          540228: "3e6c182b3628378e",
+          540228: "d94a93a5568872ff",
           540561: "e675ba43b09b2e37",
           540620: "0a2296e6ac27681e",
           540715: "e6dbc4d952ae9509",
@@ -679022,7 +679082,7 @@ ${l.join(" +\n")}
           553919: "cad110f18facdfe3",
           553984: "e2fc3acce3119274",
           554088: "f30babea394f2593",
-          554103: "c3d434404ed83dca",
+          554103: "de8de4ac75819af4",
           554241: "9e78773f03dc0748",
           555138: "24393520eb554c15",
           555235: "230e8dda9e55e679",
@@ -679124,7 +679184,7 @@ ${l.join(" +\n")}
           568035: "b26597d021a6b571",
           56816: "e33079cedcbd63dc",
           568373: "f003cfa4bc3aaec7",
-          568835: "509f423af898cbac",
+          568835: "127f6298cce3948b",
           568854: "9ee95ad021495e8d",
           568881: "6836548bb556c10a",
           568886: "77842d0075ced326",
@@ -679276,7 +679336,7 @@ ${l.join(" +\n")}
           590457: "f11bf6729470ae04",
           590559: "8abc6083665e735d",
           590814: "53e98c6eae2e9ae2",
-          591163: "7b538bc6e2654b83",
+          591163: "bfe2bc445b54a69b",
           591237: "2b94ad048ad8b082",
           591377: "f4c5146815b48b94",
           592028: "de7725c894dfa458",
@@ -679811,7 +679871,7 @@ ${l.join(" +\n")}
           676429: "d396227ca9bcdb77",
           676510: "d93513b184c891d2",
           676516: "15323db8f6f3f243",
-          676928: "1a208c2ef8852f37",
+          676928: "3ba47b6d7ac8cd08",
           677199: "f851e1bd9c5b340f",
           677407: "b4f499d675d41084",
           677557: "1623aac085b177f1",
@@ -680388,7 +680448,7 @@ ${l.join(" +\n")}
           760064: "4d090900b645980d",
           760145: "ac4f158b52325fbc",
           760200: "2445194677ae3d65",
-          760245: "20b44ee52a398f59",
+          760245: "0338d6558b548a93",
           760374: "0ae55de069469aca",
           760384: "a78f3666ee3d3a20",
           760561: "8e044301e300cbb6",
@@ -680530,7 +680590,7 @@ ${l.join(" +\n")}
           778452: "4a4633776e366e57",
           778575: "d7068131907aeb9a",
           778716: "c59d1a1ec5ffb8ac",
-          778738: "77c18c148c88979b",
+          778738: "290900a1ee684939",
           778799: "d0ca37a9fc420540",
           778853: "6b9a60cf36a02ae4",
           778966: "d6543ec0c8610219",
@@ -680668,7 +680728,7 @@ ${l.join(" +\n")}
           797558: "43a932d5caff2755",
           797641: "1014adf07fd13545",
           798149: "9b481d704b25779d",
-          798161: "cc8107a90400904d",
+          798161: "dc2e1f41046a10dc",
           79819: "b82e5595d1b5ec6a",
           798236: "28b5bef3ee486e06",
           798354: "8157e58bbd630853",
@@ -680677,7 +680737,7 @@ ${l.join(" +\n")}
           798700: "e73640563d532530",
           799657: "e0076f4e1f02726a",
           799753: "f58b1301353d44b9",
-          800238: "1738a280f916ce80",
+          800238: "3e767cdae791076a",
           800311: "86ae232199b5c125",
           800534: "8447831c43c1bf7c",
           80077: "1418bc2061a609a5",
@@ -680821,7 +680881,7 @@ ${l.join(" +\n")}
           82077: "75ea68898aedb902",
           820925: "9a88048c80e9203f",
           820969: "d35990d3f9f24bc8",
-          821175: "0665bb4cd4f7658f",
+          821175: "98a78c847bd44a57",
           821198: "af829402e08d5cce",
           821717: "cf1ca2c151cd0f98",
           821790: "b51f1ffccbd962c2",
@@ -680859,7 +680919,7 @@ ${l.join(" +\n")}
           826696: "06f7fcef9cb1bd42",
           826744: "5d32c76f62d60ac5",
           826747: "58e37343d0f231e4",
-          826954: "51704f2101b89f8a",
+          826954: "b4bdb8339ee8328c",
           827037: "b5bc932c66d76c4e",
           82721: "6508ffdd3714cdc8",
           82731: "26b27337aeba252f",
@@ -680990,7 +681050,7 @@ ${l.join(" +\n")}
           845769: "49554937622e096e",
           845780: "69e80b9de2cb00b1",
           8458: "fc849e6256c83239",
-          845872: "7cdc2dce383fafc4",
+          845872: "46027dfcfa423754",
           846066: "5115e6eb9b28f0be",
           84614: "77cc325ca30a2c85",
           846201: "edf2ee10d78c7b7e",
@@ -681071,7 +681131,7 @@ ${l.join(" +\n")}
           859407: "9c2b6a5dd452c26d",
           859478: "121eb328d8d18e3d",
           859516: "c395fd03123acfd1",
-          859654: "5c6e7b0e21a39e75",
+          859654: "4611f0f2504ca84b",
           859864: "30fdbee222ee68e6",
           859991: "dabe5e72470d667e",
           860003: "1a7a109f727a66ca",
@@ -681250,7 +681310,7 @@ ${l.join(" +\n")}
           885653: "3759f0052da4ed21",
           885681: "22ab47fcb6d0f07c",
           885696: "473d501508d11287",
-          885871: "2ab632928945c838",
+          885871: "3b4ab87b9a53c70c",
           88590: "86b3272ca122b1f8",
           885986: "2fd447631f2a9db8",
           88599: "aaf5b2e76aca3179",
@@ -681348,7 +681408,7 @@ ${l.join(" +\n")}
           897753: "5419bd454c903e7f",
           897891: "b8c39b958dec61b1",
           897916: "46e70c78652ff560",
-          898003: "9b625daee7d08e5b",
+          898003: "905c9ddf56d9c4fd",
           898005: "cc7f247301e1c292",
           898038: "471169aff98d478c",
           898074: "cae6d19b795e7290",
@@ -681529,7 +681589,7 @@ ${l.join(" +\n")}
           922220: "ea69152461039a4f",
           922337: "dfa549f742f1fb56",
           922518: "35225da552648b2e",
-          922565: "f34446576550b5e4",
+          922565: "e87a55a201dc4b82",
           922606: "5fc60438aa009ef1",
           922716: "91ac8b3aa7234d55",
           922810: "55cb43cc007129db",
@@ -681611,7 +681671,7 @@ ${l.join(" +\n")}
           935205: "11e96885b982078f",
           935277: "48b264677d62c5cf",
           935412: "5d356757d21e64a9",
-          935483: "33e2eb15f44b3873",
+          935483: "bd4959b65e74bd95",
           935948: "7cdc99bc0fa4f528",
           936001: "9e47bd710c6fb7b9",
           936320: "b1b3b2ccf23742af",
@@ -681695,7 +681755,7 @@ ${l.join(" +\n")}
           947260: "7f560575b97dcb1f",
           947361: "4723eef4d36da431",
           947439: "0a1c5a968954a5d0",
-          947502: "748aacfa40162998",
+          947502: "86de6293b61dc09d",
           947625: "0e251c40a17a45c4",
           947665: "c5662f004c044188",
           947981: "af38ea997be6cd7c",
@@ -681765,7 +681825,7 @@ ${l.join(" +\n")}
           958297: "86f384cddd7e05f6",
           95835: "608a508bec050959",
           958428: "17d3c3b25ad1d740",
-          958578: "5049e59b61047b8b",
+          958578: "8940b689771f6ebe",
           958812: "68286e71db2644dc",
           958932: "8af5376974db1317",
           95910: "f9f67aee828b354c",
@@ -681864,7 +681924,7 @@ ${l.join(" +\n")}
           97210: "970ab5edf6d83aae",
           972146: "eb5a444ca0309e43",
           972166: "c86f619a18f4b963",
-          972257: "94bfdb2d6e105b57",
+          972257: "2a77781486a67b5c",
           972432: "23fd70b024a31ea5",
           972872: "dfe7f05281ab636f",
           972879: "1e2d6a986e03d72a",
@@ -681922,7 +681982,7 @@ ${l.join(" +\n")}
           982745: "52a4d0d3c26b79d3",
           982846: "262364071b15e2d4",
           983058: "3e3b3dacd88ddb35",
-          983094: "d7ade57354eb8adf",
+          983094: "1150904edde6932c",
           983373: "2cf5d4ad8eeb817b",
           983884: "317fa1e686ea8cea",
           983920: "35f98fa68150b165",
@@ -682699,4 +682759,4 @@ ${l.join(" +\n")}
   );
   N = p.O(N);
 })();
-//# sourceMappingURL=web.e7e1f6023c6b0a62.js.map
+//# sourceMappingURL=web.0e91f34b81af7e83.js.map
