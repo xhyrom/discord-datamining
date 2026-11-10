@@ -81,6 +81,9 @@
   padding: var(--space-8) var(--space-12);
   text-align: center;
 }
+.popoverRoot_81IzEA {
+  isolation: isolate;
+}
 .popover_81IzEA {
   background: var(--background-surface-high);
   border-radius: var(--radius-md);
@@ -246,4 +249,4 @@
   stroke-opacity: 1;
 }
 
-/*# sourceMappingURL=991625.1fef8eb72558b952.css.map*/
+/*# sourceMappingURL=991625.694538a6b2a474ad.css.map*/
