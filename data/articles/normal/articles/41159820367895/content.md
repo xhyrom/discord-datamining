@@ -659,10 +659,15 @@
   >
 </p>
 <p>
-  A: Your gift card balance must cover the cost of your purchase to use.
-  Otherwise, you’ll need to use another payment method on file for purchase at
-  this time. We don't currently support splitting a payment between your gift
-  card balance and another payment method, but we're working on it! 
+  A: We're gradually rolling out the option to split a payment between your gift
+  card balance and another payment method on file. If you see this option at
+  checkout, you can apply your balance and pay the remaining amount with another
+  payment method.
+</p>
+<p>
+  If you don't see the option yet, it's on the way. Until then, your gift card
+  balance needs to cover the full cost of your purchase, or you can pay the full
+  amount with another payment method.
 </p>
 <p>
   <strong
