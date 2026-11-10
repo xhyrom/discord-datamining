@@ -59,6 +59,8 @@
         qS: "badge_IqWmhA",
         IZ: "editIcon_IqWmhA",
         Do: "badgeVectorSrc_IqWmhA",
+        TW: "hasUnreadDot_IqWmhA",
+        Zm: "unreadDot_IqWmhA",
       };
     },
     592265(t) {
@@ -85,4 +87,4 @@
     },
   },
 ]);
-//# sourceMappingURL=641877.f29eb2dd977c215b.js.map
+//# sourceMappingURL=641877.378be635771f416b.js.map
