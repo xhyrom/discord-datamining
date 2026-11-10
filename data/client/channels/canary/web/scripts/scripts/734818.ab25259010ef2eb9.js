@@ -55,7 +55,6 @@
         Gl: "volumePopout_hFq1lM",
         qp: "playbackSpeedPopout_hFq1lM",
         xl: "playbackSpeedHeading_hFq1lM",
-        hA: "contentHeaderGameInfo_hFq1lM",
         iM: "accentOnHover_hFq1lM",
         BG: "transcriptOverlay_hFq1lM",
         xr: "transcriptCont_hFq1lM",
@@ -104,4 +103,4 @@
     },
   },
 ]);
-//# sourceMappingURL=734818.04b31dd344ac1ecd.js.map
+//# sourceMappingURL=734818.ab25259010ef2eb9.js.map
