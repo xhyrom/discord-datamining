@@ -134,6 +134,12 @@
     --custom-grid-line-width: 1px;
   }
 }
+.contents_qZv3Qq {
+  display: contents;
+}
+.inFullscreenFrame_qZv3Qq {
+  --custom-app-top-bar-height: 0px;
+}
 .pool_r7XZkd {
   display: contents;
 }
@@ -209,4 +215,4 @@ html.disable-forced-colors * {
   --link-decoration: underline;
 }
 
-/*# sourceMappingURL=330938.e2f6897f103c595b.css.map*/
+/*# sourceMappingURL=981237.d249f977f36e0ba2.css.map*/

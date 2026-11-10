@@ -54,7 +54,7 @@
   flex-shrink: 0;
 }
 .sm_n0gdYX {
-  padding-bottom: var(--space-12);
+  padding-bottom: calc(var(--space-12) + var(--space-16));
 }
 .sm_n0gdYX .character_n0gdYX {
   width: min(224px, 100% + 40px);
@@ -722,6 +722,10 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+.children_w5-7vi:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
 .game_M5fVqw {
   display: flex;
   flex-direction: column;
@@ -733,6 +737,9 @@
   width: calc(
     var(--custom-checkpoint-game-art-width) + var(--space-12) + var(--space-80)
   );
+}
+.globalGame_M5fVqw .details_M5fVqw {
+  padding-inline-end: var(--space-16);
 }
 .visual_M5fVqw {
   height: calc(
@@ -807,6 +814,7 @@
 }
 .globalContainer_eVi7eB {
   gap: calc(var(--space-64) + var(--space-8));
+  padding-block: var(--space-24);
 }
 @media (max-height: 800px) {
   .container_eVi7eB {
@@ -1051,6 +1059,14 @@
   display: flex;
   justify-content: center;
 }
+.noneIcon_NgozOX {
+  justify-content: flex-start;
+  width: calc(var(--space-32) - var(--space-4));
+}
+.noneIcon_NgozOX > svg {
+  flex-shrink: 0;
+  margin-inline-start: calc(var(--space-4) * -1 / 2);
+}
 .gameIcon_NgozOX {
   border-radius: var(--radius-xs);
 }
@@ -1216,4 +1232,4 @@
   z-index: 1;
 }
 
-/*# sourceMappingURL=937139.cf8088217b373b21.css.map*/
+/*# sourceMappingURL=949117.4a3cb3e59e7128f6.css.map*/

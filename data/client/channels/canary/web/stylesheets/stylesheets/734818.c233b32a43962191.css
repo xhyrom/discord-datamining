@@ -215,7 +215,11 @@
   display: flex;
   justify-content: flex-end;
   margin-inline-start: auto;
+  pointer-events: none;
   width: var(--custom-controls-end-width, 200px);
+}
+.videoControlsGroupEnd_hFq1lM > * {
+  pointer-events: auto;
 }
 .videoControlsBtnCont_hFq1lM {
   align-items: center;
@@ -879,4 +883,4 @@
   }
 }
 
-/*# sourceMappingURL=734818.f1073dba36e62b7e.css.map*/
+/*# sourceMappingURL=734818.c233b32a43962191.css.map*/
