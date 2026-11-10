@@ -88,6 +88,15 @@
         ef: "conjureCaptureHint_OAv3mC",
         MY: "conjureCaptureIcon_OAv3mC",
         us: "conjureCaptureText_OAv3mC",
+        ON: "clipsModeContainer_OAv3mC",
+        d4: "clipsModeRow_OAv3mC",
+        pS: "clipsModeRowOpen_OAv3mC",
+        UX: "clipsModeText_OAv3mC",
+        ql: "clipsModeChevron_OAv3mC",
+        zV: "clipsModeWithShortcut_OAv3mC",
+        hl: "clipsModeWithoutShortcut_OAv3mC",
+        m8: "clipsModeKeyCombo_OAv3mC",
+        YW: "clipsModeSeparator_OAv3mC",
       };
     },
     900795(e) {
@@ -95,4 +104,4 @@
     },
   },
 ]);
-//# sourceMappingURL=26411.274b7d4320e1dad0.js.map
+//# sourceMappingURL=26411.756fe2e695950d2d.js.map

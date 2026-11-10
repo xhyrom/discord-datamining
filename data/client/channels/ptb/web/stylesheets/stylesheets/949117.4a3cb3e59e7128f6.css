@@ -54,7 +54,7 @@
   flex-shrink: 0;
 }
 .sm_n0gdYX {
-  padding-bottom: var(--space-12);
+  padding-bottom: calc(var(--space-12) + var(--space-16));
 }
 .sm_n0gdYX .character_n0gdYX {
   width: min(224px, 100% + 40px);
@@ -722,21 +722,24 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+.children_w5-7vi:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
 .game_M5fVqw {
-  --custom-checkpoint-game-art-width: clamp(135px, 17.5vh, 180px);
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   gap: var(--space-16);
   width: calc(var(--custom-checkpoint-game-art-width) + var(--space-12));
 }
-.topGame_M5fVqw {
-  --custom-checkpoint-game-art-width: clamp(165px, 21.5vh, 220px);
-}
 .globalGame_M5fVqw {
   width: calc(
     var(--custom-checkpoint-game-art-width) + var(--space-12) + var(--space-80)
   );
+}
+.globalGame_M5fVqw .details_M5fVqw {
+  padding-inline-end: var(--space-16);
 }
 .visual_M5fVqw {
   height: calc(
@@ -745,10 +748,22 @@
   position: relative;
 }
 .shell_M5fVqw {
-  height: calc(100% + 3px);
-  inset-block-start: -2px;
-  inset-inline-start: -2px;
-  width: calc(var(--custom-checkpoint-game-art-width) + var(--space-16));
+  --custom-checkpoint-game-shell-scale: calc(
+    var(--custom-checkpoint-game-art-width) /
+      var(--custom-checkpoint-game-full-art-width)
+  );
+  inset-block-start: calc(
+    var(--custom-checkpoint-game-shell-scale) * -1 *
+      var(--custom-checkpoint-game-full-shell-offset)
+  );
+  inset-inline-start: calc(
+    var(--custom-checkpoint-game-shell-scale) * -1 *
+      var(--custom-checkpoint-game-full-shell-offset)
+  );
+  width: calc(
+    var(--custom-checkpoint-game-shell-scale) *
+      var(--custom-checkpoint-game-full-shell-width)
+  );
 }
 .art_M5fVqw,
 .shell_M5fVqw {
@@ -799,6 +814,7 @@
 }
 .globalContainer_eVi7eB {
   gap: calc(var(--space-64) + var(--space-8));
+  padding-block: var(--space-24);
 }
 @media (max-height: 800px) {
   .container_eVi7eB {
@@ -1043,6 +1059,14 @@
   display: flex;
   justify-content: center;
 }
+.noneIcon_NgozOX {
+  justify-content: flex-start;
+  width: calc(var(--space-32) - var(--space-4));
+}
+.noneIcon_NgozOX > svg {
+  flex-shrink: 0;
+  margin-inline-start: calc(var(--space-4) * -1 / 2);
+}
 .gameIcon_NgozOX {
   border-radius: var(--radius-xs);
 }
@@ -1205,6 +1229,7 @@
   inset-inline-end: var(--space-32);
   position: absolute;
   top: var(--space-32);
+  z-index: 1;
 }
 
-/*# sourceMappingURL=937139.4099968937cd82d2.css.map*/
+/*# sourceMappingURL=949117.4a3cb3e59e7128f6.css.map*/

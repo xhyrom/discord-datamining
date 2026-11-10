@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [937139],
+  [949117],
   {
     881245(t) {
       t.exports = {
@@ -57,6 +57,9 @@
     },
     100391(t) {
       t.exports = { D: "title_5hyplo", Q: "text_5hyplo" };
+    },
+    102189(t) {
+      t.exports = { Y: "children_w5-7vi" };
     },
     406956(t) {
       t.exports = {
@@ -200,14 +203,13 @@
     497357(t) {
       t.exports = {
         LO: "game_M5fVqw",
-        Ms: "topGame_M5fVqw",
         Ku: "globalGame_M5fVqw",
+        zH: "details_M5fVqw",
         Tn: "visual_M5fVqw",
         vf: "shell_M5fVqw",
         Qw: "art_M5fVqw",
         uj: "unknownArt_M5fVqw",
         Tm: "rank_M5fVqw",
-        zH: "details_M5fVqw",
         UU: "name_M5fVqw",
         Pf: "label_M5fVqw",
       };
@@ -272,6 +274,7 @@
         TJ: "itemName_NgozOX",
         Kk: "icon_NgozOX",
         Gc: "unknownIcon_NgozOX",
+        Wn: "noneIcon_NgozOX",
         Gt: "gameIcon_NgozOX",
       };
     },
@@ -320,4 +323,4 @@
     },
   },
 ]);
-//# sourceMappingURL=937139.a723c6b5c4459bd1.js.map
+//# sourceMappingURL=949117.4a6469257cf5fbfa.js.map

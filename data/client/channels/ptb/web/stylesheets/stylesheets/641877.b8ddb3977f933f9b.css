@@ -283,5 +283,35 @@
   -o-object-fit: contain;
   object-fit: contain;
 }
+.hasUnreadDot_IqWmhA {
+  position: relative;
+}
+.hasUnreadDot_IqWmhA:before {
+  -webkit-mask: radial-gradient(
+    circle at calc(100% - 3px) 3px,
+    transparent 5px,
+    #000 0
+  );
+  mask: radial-gradient(
+    circle at calc(100% - 3px) 3px,
+    transparent 5px,
+    #000 0
+  );
+}
+.unreadDot_IqWmhA {
+  background: var(--badge-primary-background);
+  border-radius: 50%;
+  height: var(--space-6);
+  inset-block-start: -1px;
+  inset-inline-end: -1px;
+  pointer-events: none;
+  position: absolute;
+  transition: inset-inline-end 0.15s ease-in-out;
+  width: var(--space-6);
+}
+.hasAppendedEditSlot_IqWmhA:has(:focus-visible) .unreadDot_IqWmhA,
+.hasAppendedEditSlot_IqWmhA:hover .unreadDot_IqWmhA {
+  inset-inline-end: calc(var(--space-16) * -1);
+}
 
-/*# sourceMappingURL=641877.8aabf752ec0cf6d9.css.map*/
+/*# sourceMappingURL=641877.b8ddb3977f933f9b.css.map*/

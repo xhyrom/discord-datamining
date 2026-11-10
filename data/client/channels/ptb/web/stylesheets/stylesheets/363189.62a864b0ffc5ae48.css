@@ -164,6 +164,7 @@
   opacity: 0.3;
 }
 .overflowButton_i44TZ4 {
+  align-items: center;
   background: linear-gradient(
       var(--background-mod-normal),
       var(--background-mod-normal)
@@ -173,27 +174,39 @@
   border-radius: var(--radius-round);
   box-shadow: var(--shadow-low);
   box-sizing: border-box;
+  color: var(--icon-default);
   cursor: pointer;
+  display: flex;
   height: 24px;
   inset-block-start: -6px;
   inset-inline-end: -6px;
+  justify-content: center;
   opacity: 0;
+  position: absolute;
   transition: opacity 50ms ease-in;
   width: 24px;
 }
+.unreadDot_i44TZ4 {
+  background: var(--badge-primary-background);
+  border-radius: 50%;
+  height: var(--space-6);
+  inset-block-start: var(--space-4);
+  inset-inline-end: var(--space-4);
+  width: var(--space-6);
+}
 .hiddenIndicator_i44TZ4,
-.overflowButton_i44TZ4 {
-  align-items: center;
-  color: var(--icon-default);
-  display: flex;
-  justify-content: center;
+.unreadDot_i44TZ4 {
+  pointer-events: none;
   position: absolute;
 }
 .hiddenIndicator_i44TZ4 {
+  align-items: center;
+  color: var(--icon-default);
+  display: flex;
   height: 20px;
   inset-block-start: 4px;
   inset-inline-end: 4px;
-  pointer-events: none;
+  justify-content: center;
   width: 20px;
 }
 .badgeTileContainer_i44TZ4.isInteracting_i44TZ4 .overflowButton_i44TZ4,
@@ -274,4 +287,4 @@
   color: var(--badge-mythic-text);
 }
 
-/*# sourceMappingURL=363189.c9394316d42b34ab.css.map*/
+/*# sourceMappingURL=363189.62a864b0ffc5ae48.css.map*/

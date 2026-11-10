@@ -36,8 +36,6 @@
         _r: "badgeTitle_zoUCAE",
         rI: "badgeAccessoryRows_zoUCAE",
         U3: "badgeAccessoryLine_zoUCAE",
-        Gb: "badgeBetaTag_zoUCAE",
-        LS: "badgeBetaTagIcon_zoUCAE",
         zN: "badgeAccessoryDot_zoUCAE",
         pC: "badgeAccessoryGroup_zoUCAE",
         Hq: "badgeAccessorySegment_zoUCAE",
@@ -97,7 +95,6 @@
         C9: "detailScroller_Nw13mb",
         Rm: "detailHeader_Nw13mb",
         Gw: "detailCloseButton_Nw13mb",
-        mC: "betaPill_Nw13mb",
         y2: "badgeGraphic_Nw13mb",
         Zl: "badgeGraphicAnimatedNitro_Nw13mb",
         OU: "badgeInfo_Nw13mb",
@@ -171,4 +168,4 @@
     },
   },
 ]);
-//# sourceMappingURL=512831.26d60147bc4f75fa.js.map
+//# sourceMappingURL=512831.f04b35466957df18.js.map
