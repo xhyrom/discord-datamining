@@ -637,6 +637,70 @@
   >. 
 </p>
 <h2 id="h_01KZ49EKXDR078KV47FBG58PYP">Ninja Kiwi (Bloons TD 6) Game Shop</h2>
+<div class="mega-box">
+  <p>
+    Offer: <strong>From</strong> November 9 (11:00 AM PT)
+    <strong>through</strong> November 20 (11:00 AM PT),
+    <strong
+      >eligible Nitro subscribers can spend Discord Orbs to unlock a one-time
+      discount on a single purchase of official Bloons TD 6 in-game items in the
+      Bloons TD 6 Game Shop on Discord. The discount available to you and its
+      Orbs price are shown in the Bloons TD 6 Game Shop. Each eligible user can
+      unlock the discount once during the promotion.</strong
+    >
+  </p>
+  <p>
+    <strong
+      >Once unlocked, the discount can be used on one purchase in the Bloons TD
+      6 Game Shop until</strong
+    >
+    November 23 (11:00 AM PT),
+    <strong
+      >3 days after the promotion ends. If the discount isn’t used by then, it
+      expires and the Orbs spent to unlock it will be refunded automatically,
+      subject to processing time.</strong
+    >
+  </p>
+  <p>
+    <strong
+      >Nitro monthly and Nitro yearly subscriptions are eligible. Nitro Basic,
+      trial subscriptions, and other subscription types are not eligible. The
+      discount applies to self-purchases only and cannot be gifted.</strong
+    >
+  </p>
+  <p>
+    <strong
+      >For more information about Discord Orbs, including how to use and redeem
+      them, please see the</strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong> </strong
+      ><strong
+        ><span class="wysiwyg-underline">Discord Orbs FAQ</span></strong
+      ></a
+    ><strong
+      >. For details around eligibility, terms and policy, please see
+      the</strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong> </strong
+      ><strong
+        ><span class="wysiwyg-underline"
+          >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
+        ></strong
+      ></a
+    ><strong>.</strong>
+  </p>
+  <div class="info-box">
+    <strong>Note:</strong> Users who subscribe to Nitro on mobile are eligible
+    for this offer. However, they must sign in on the Discord desktop or web app
+    to unlock or use the discount in the Bloons TD 6 Game Shop.
+  </div>
+</div>
 <p>
   <strong>Q: Which platforms can I redeem Bloons TD6 Shop items on?</strong>
 </p>
