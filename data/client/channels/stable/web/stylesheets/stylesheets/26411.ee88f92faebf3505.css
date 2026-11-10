@@ -320,6 +320,56 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.clipsModeContainer_OAv3mC {
+  container-type: inline-size;
+  margin-top: calc(var(--space-4) / 2);
+  min-width: 0;
+}
+.clipsModeRow_OAv3mC {
+  align-items: center;
+  border-radius: var(--radius-xs);
+  color: var(--text-subtle);
+  cursor: pointer;
+  display: inline-flex;
+  gap: var(--space-4);
+  max-width: 100%;
+}
+.clipsModeRow_OAv3mC:focus-visible,
+.clipsModeRow_OAv3mC:hover,
+.clipsModeRowOpen_OAv3mC {
+  color: var(--interactive-text-hover);
+}
+.clipsModeRow_OAv3mC:focus-visible .clipsModeText_OAv3mC,
+.clipsModeRow_OAv3mC:hover .clipsModeText_OAv3mC {
+  text-decoration: underline;
+}
+.clipsModeText_OAv3mC {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.clipsModeChevron_OAv3mC {
+  flex-shrink: 0;
+}
+.clipsModeWithShortcut_OAv3mC {
+  display: contents;
+}
+.clipsModeWithoutShortcut_OAv3mC {
+  display: none;
+}
+@container (max-width: 160px) {
+  .clipsModeKeyCombo_OAv3mC,
+  .clipsModeSeparator_OAv3mC,
+  .clipsModeWithShortcut_OAv3mC {
+    display: none;
+  }
+  .clipsModeWithoutShortcut_OAv3mC {
+    display: inline;
+  }
+}
 .gameName_PY60v2 {
   color: var(--text-default);
   line-height: 16px;
@@ -332,6 +382,7 @@
 .gameWrapper_PY60v2 {
   align-items: center;
   display: flex;
+  flex-grow: 1;
   min-width: 0;
 }
 .gameWrapper_PY60v2 .liveIndicator_PY60v2 {
@@ -356,6 +407,7 @@
 .info_PY60v2 {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   margin-inline-start: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -466,4 +518,4 @@
   cursor: pointer;
 }
 
-/*# sourceMappingURL=26411.01a03250d6f8f65b.css.map*/
+/*# sourceMappingURL=26411.ee88f92faebf3505.css.map*/

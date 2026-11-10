@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [330938],
+  [981237],
   {
     709327(o) {
       o.exports = { L: "loading_2kO-Fc" };
@@ -29,6 +29,9 @@
     779016(o) {
       o.exports = { k: "container_Gp5ukJ", Z: "gridOverlay_Gp5ukJ" };
     },
+    638274(o) {
+      o.exports = { P: "contents_qZv3Qq", E: "inFullscreenFrame_qZv3Qq" };
+    },
     51123(o) {
       o.exports = {
         dz: "pool_r7XZkd",
@@ -46,4 +49,4 @@
     },
   },
 ]);
-//# sourceMappingURL=330938.8469bd9e910f2886.js.map
+//# sourceMappingURL=981237.8421f9c5a385ef59.js.map

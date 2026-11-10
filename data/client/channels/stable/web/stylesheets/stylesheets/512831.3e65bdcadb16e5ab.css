@@ -296,15 +296,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.badgeBetaTag_zoUCAE {
-  align-items: center;
-  color: var(--text-subtle);
-  display: inline-flex;
-  gap: 2px;
-}
-.badgeBetaTagIcon_zoUCAE {
-  flex-shrink: 0;
-}
 .badgeAccessoryDot_zoUCAE {
   color: var(--text-subtle);
   flex-shrink: 0;
@@ -663,9 +654,6 @@
   position: absolute;
   z-index: 2;
 }
-.betaPill_Nw13mb {
-  display: inline-flex;
-}
 .badgeGraphic_Nw13mb {
   flex-shrink: 0;
   height: 120px;
@@ -877,4 +865,4 @@
   margin-top: var(--space-16);
 }
 
-/*# sourceMappingURL=512831.f9572212dda07bca.css.map*/
+/*# sourceMappingURL=512831.3e65bdcadb16e5ab.css.map*/
