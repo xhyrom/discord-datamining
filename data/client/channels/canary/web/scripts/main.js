@@ -10031,7 +10031,7 @@
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("671362", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("671387", 10))) || (l.client_build_number = d),
           null == (c = eE?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -152228,7 +152228,7 @@ ${a}`);
           n.e(859864).then(n.t.bind(n, 122123, 19));
         let e8 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eK.A().log(
-          `[BUILD INFO] Release Channel: ${e8}, Build Number: 671362, Version Hash: 46e1577aa47f5a798fb3565e73fc12ddbc25109b`,
+          `[BUILD INFO] Release Channel: ${e8}, Build Number: 671387, Version Hash: 2a3e503590ef80572cf3cd2dfd1cae5a0b58720c`,
         ),
           G.A.setTags({ appContext: j.QCW }),
           eS.A.initBasic(),
@@ -152325,7 +152325,7 @@ ${a}`);
               a =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : "671362";
+                  : "671387";
             if (__OVERLAY__) return;
             isNaN((r = parseInt(a ?? "", 10))) ||
               eV.Ay.setCrashInformation(eG.du.BuildNumber, r);
@@ -170234,7 +170234,7 @@ ${a}`);
                     className: tc()(I8.Wz, I8.mr),
                     children: [
                       (0, P.jsx)(I7, { className: I8.Kk }),
-                      tC.intl.format(tC.t.uyrfYF, { buildNumber: "671362" }),
+                      tC.intl.format(tC.t.uyrfYF, { buildNumber: "671387" }),
                       (0, P.jsx)(r, {}),
                     ],
                   })
@@ -257169,7 +257169,7 @@ html body ${z}, html body ${z} * {
                 (e) => {
                   if (
                     null == e.body ||
-                    "46e1577aa47f5a798fb3565e73fc12ddbc25109b" === e.body.hash
+                    "2a3e503590ef80572cf3cd2dfd1cae5a0b58720c" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -267342,10 +267342,10 @@ html body ${z}, html body ${z} * {
                 t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("671362")),
+                  ((e = parseInt("671387")),
                   Number.isNaN(e) &&
                     (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 671362",
+                      "Trying to open a changelog for an invalid build number 671387",
                     ),
                     (e = 0)),
                   e),
@@ -341228,7 +341228,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "671362", versionHash: "46e1577aa47f5a798fb3565e73fc12ddbc25109b" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "671387", versionHash: "2a3e503590ef80572cf3cd2dfd1cae5a0b58720c" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -467279,8 +467279,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1794385497780",
-                      build_number: "671362",
+                      built_at: "1794406262443",
+                      build_number: "671387",
                     },
                   },
                   retries: 1,
@@ -470257,6 +470257,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 reactions: I.extend({
                   value: h.z.number().int().min(0).max(2),
                 }).optional(),
+                summary_reminder: I,
+                upcoming_server_event: I,
               })
               .strip(),
           });
@@ -489853,7 +489855,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             h = eu.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, r6.A)("1794385497780", !0);
+            let e = (0, r6.A)("1794406262443", !0);
             t =
               null != e
                 ? eH.intl.formatToPlainString(eH.t.wve4kg, {
@@ -661282,7 +661284,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "46e1577aa47f5a798fb3565e73fc12ddbc25109b",
+                      "2a3e503590ef80572cf3cd2dfd1cae5a0b58720c",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", W),
@@ -672110,7 +672112,7 @@ ${l.join(" +\n")}
                   ).then((e) => {
                     let i = {
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        build_number: "671362",
+                        build_number: "671387",
                       },
                       u = o.default.getCurrentUser();
                     null != u &&
@@ -686406,7 +686408,7 @@ ${l.join(" +\n")}
           262754: "de38e0c54cde9fbd",
           262755: "83d706c7e53afda5",
           263025: "ede9bbfde018d02e",
-          263408: "f0d51149ba4a8f54",
+          263408: "c160a685b0cc4d3f",
           263506: "2d60ed72ed4348dc",
           263765: "213198be39cb65b0",
           263783: "82b53aa9940e33ed",
@@ -687526,7 +687528,7 @@ ${l.join(" +\n")}
           430634: "4653d92a7a392cbb",
           430858: "a49b4ce13dd834cf",
           430997: "bc7a4af9a08342d1",
-          431294: "86800b363f48e8a1",
+          431294: "5f95139979a616b5",
           431658: "cc0635aa688bf2db",
           431692: "ee790ed3101d08ac",
           431714: "9ac6c5f632d763bd",
@@ -688172,7 +688174,7 @@ ${l.join(" +\n")}
           518809: "e9ab67069505ba0a",
           518816: "9b2d385c3e35c3b6",
           51892: "677cc8b1ad66356c",
-          51901: "8884b1d740c7cfb5",
+          51901: "8721259cf3f59f6f",
           519046: "24d104f30642cb15",
           519125: "3821f44e2e0bc025",
           519162: "7be2638275862b19",
@@ -688198,7 +688200,7 @@ ${l.join(" +\n")}
           52159: "498c4526d0567fa5",
           521743: "c186ec21c2820d80",
           521761: "13e5e399609d15fe",
-          521846: "701765a30ce19e25",
+          521846: "eb0ffedc4f43d0a2",
           521930: "9c25197ce9670e69",
           522011: "6064cd684bc7dafb",
           522261: "617e7edcd3e17452",
@@ -690111,7 +690113,7 @@ ${l.join(" +\n")}
           797558: "43a932d5caff2755",
           797641: "1014adf07fd13545",
           798149: "9b481d704b25779d",
-          798161: "e1ef6e2e08db6582",
+          798161: "a438e8829debfaf8",
           79819: "b82e5595d1b5ec6a",
           798236: "28b5bef3ee486e06",
           798354: "de9eb65b1e566420",
@@ -690594,7 +690596,7 @@ ${l.join(" +\n")}
           866818: "2094d24c9b091a92",
           866960: "8975c831dc7e670d",
           867160: "67b0096d29931c2d",
-          867473: "43a58fd31ca88791",
+          867473: "6a29c333028bf4ed",
           867646: "4849b510af5535b3",
           867807: "5e1195a881be2aa7",
           867856: "154b41e246f00c41",
@@ -692186,4 +692188,4 @@ ${l.join(" +\n")}
   );
   N = p.O(N);
 })();
-//# sourceMappingURL=web.913475d461898a5e.js.map
+//# sourceMappingURL=web.d7e2ce40421f2d91.js.map
