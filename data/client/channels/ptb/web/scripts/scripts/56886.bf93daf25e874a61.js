@@ -1,19 +1,9 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [456968],
+  [56886],
   {
-    410681(o) {
-      o.exports = { j: "child_onI6o8" };
-    },
-    277135(o) {
-      o.exports = {
-        k3: "badgeRow_MShoFQ",
-        yU: "badgeTrigger_MShoFQ",
-        Jv: "badgeTriggerImg_MShoFQ",
-      };
-    },
-    341973(o) {
-      o.exports = {
+    341973(t) {
+      t.exports = {
         kL: "container_5cFAmt",
         G9: "progressBarContainer_5cFAmt",
         kT: "monthlyCodeCountdownLabel_5cFAmt",
@@ -40,4 +30,4 @@
     },
   },
 ]);
-//# sourceMappingURL=456968.273c830e1c492d58.js.map
+//# sourceMappingURL=56886.bf93daf25e874a61.js.map

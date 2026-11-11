@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [538735],
+  [681336],
   {
     146916(e) {
       e.exports = {
@@ -14,6 +14,9 @@
     },
     195572(e) {
       e.exports = { w: "favoriteIcon_850pDF" };
+    },
+    768942(e) {
+      e.exports = { Y: "anchor_4z_RMD" };
     },
     785332(e) {
       e.exports = {
@@ -36,4 +39,4 @@
     },
   },
 ]);
-//# sourceMappingURL=538735.5967eefb33ea2ad5.js.map
+//# sourceMappingURL=681336.19af946ddd755d72.js.map

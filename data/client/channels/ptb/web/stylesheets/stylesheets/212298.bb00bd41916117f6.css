@@ -128,7 +128,7 @@
 }
 .upsellRefresh_vJa-rc {
   --control-secondary-background-active: var(--opacity-24);
-  border-radius: inherit;
+  border-radius: calc(var(--radius-sm) - 1px);
   padding: var(--space-16);
 }
 .custom-user-profile-theme .upsellRefresh_vJa-rc {
@@ -145,9 +145,14 @@
 .upsellRefreshCard_vJa-rc {
   background: var(--user-profile-overlay-background);
   border: 1px solid var(--border-muted);
+  overflow: hidden;
+}
+.upsellRefresh_vJa-rc:before {
+  border-radius: var(--radius-sm);
+  inset: -1px;
 }
 .lightProfileGradient_vJa-rc:before {
   opacity: 0.3;
 }
 
-/*# sourceMappingURL=212298.b63553c09962cafd.css.map*/
+/*# sourceMappingURL=212298.bb00bd41916117f6.css.map*/

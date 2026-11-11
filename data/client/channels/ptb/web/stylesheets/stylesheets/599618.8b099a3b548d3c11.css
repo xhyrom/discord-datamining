@@ -142,6 +142,12 @@
 .header_iar92T > * {
   -webkit-app-region: no-drag;
 }
+.theme-dark .header_iar92T {
+  background: var(--background-gradient-lower, var(--background-base-lower));
+}
+.theme-light .header_iar92T {
+  background: var(--background-gradient-lowest, var(--background-base-lower));
+}
 .iconWrapper_iar92T {
   align-items: center;
   display: flex;
@@ -1257,4 +1263,4 @@ html .tabBadge_u88IQl {
   text-align: center;
 }
 
-/*# sourceMappingURL=599618.a6de683040fbb8f9.css.map*/
+/*# sourceMappingURL=599618.8b099a3b548d3c11.css.map*/
