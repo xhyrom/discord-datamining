@@ -7108,10 +7108,6 @@
         "use strict";
         e.exports = n.p + "cb2006dbced0e246.woff2";
       },
-      844564(e) {
-        "use strict";
-        e.exports = "/assets/c2406dfa3c6cd89c.jpg";
-      },
       906118(e) {
         "use strict";
         e.exports = "/assets/dd05fd1ea37e7747.png";
@@ -10031,7 +10027,7 @@
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("671445", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("671510", 10))) || (l.client_build_number = d),
           null == (c = eE?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -118562,6 +118558,7 @@ color: purple;
             (eP.ACTIVITY_SHELF_CLOSE = "activity_shelf_close"),
             (eP.ACTIVITY_IFRAME_MOUNT = "activity_iframe_mount"),
             (eP.ACTIVITY_IFRAME_UNMOUNT = "activity_iframe_unmount"),
+            (eP.FRAME_OPENED = "frame_opened"),
             (eP.ACTIVITY_HANDSHAKE = "activity_handshake"),
             (eP.ACTIVITY_INSTANCE_EMBED_CLICKED =
               "activity_instance_embed_clicked"),
@@ -152228,7 +152225,7 @@ ${a}`);
           n.e(859864).then(n.t.bind(n, 122123, 19));
         let e8 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eK.A().log(
-          `[BUILD INFO] Release Channel: ${e8}, Build Number: 671445, Version Hash: 90822f7247d288c4b5d6f7195e95bfaa181aebb9`,
+          `[BUILD INFO] Release Channel: ${e8}, Build Number: 671510, Version Hash: b1190eeb8883b948169ef2d9f9f23ca0387248af`,
         ),
           G.A.setTags({ appContext: j.QCW }),
           eS.A.initBasic(),
@@ -152325,7 +152322,7 @@ ${a}`);
               a =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : "671445";
+                  : "671510";
             if (__OVERLAY__) return;
             isNaN((r = parseInt(a ?? "", 10))) ||
               eV.Ay.setCrashInformation(eG.du.BuildNumber, r);
@@ -170234,7 +170231,7 @@ ${a}`);
                     className: tc()(I8.Wz, I8.mr),
                     children: [
                       (0, P.jsx)(I7, { className: I8.Kk }),
-                      tC.intl.format(tC.t.uyrfYF, { buildNumber: "671445" }),
+                      tC.intl.format(tC.t.uyrfYF, { buildNumber: "671510" }),
                       (0, P.jsx)(r, {}),
                     ],
                   })
@@ -201305,7 +201302,7 @@ ${a}`);
             return 0;
           }
           canWriteCaches(e) {
-            return (0, Mo.wR)()
+            return (0, Mo.w)()
               ? !!e || (MK.log("Not writing cache because never connected"), !1)
               : (MK.log("Not writing cache because not authenticated"), !1);
           }
@@ -202755,7 +202752,7 @@ ${a}`);
           {
             path: [j.BVt.ACTIVITY_DETAILS(":applicationId")],
             render: function (e) {
-              return (0, Mo.wR)() ||
+              return (0, Mo.w)() ||
                 ei.default.getLoginStatus() === j.aUe.LOGGING_IN ||
                 !ei.default.allowLogoutRedirect()
                 ? UJ(e)
@@ -207208,9 +207205,9 @@ ${a}`);
                 n.e(797641),
                 n.e(444861),
                 n.e(57641),
+                n.e(649232),
                 n.e(942148),
                 n.e(139283),
-                n.e(906516),
                 n.e(329995),
                 n.e(579023),
                 n.e(179582),
@@ -207230,7 +207227,7 @@ ${a}`);
                 n.e(874821),
                 n.e(815537),
                 n.e(444861),
-                n.e(906516),
+                n.e(649232),
                 n.e(213419),
               ]).then(n.bind(n, 268126)),
             webpackId: 268126,
@@ -256673,7 +256670,7 @@ html body ${z}, html body ${z} * {
                   ? arguments[2]
                   : { passProps: !0 };
               function o(o) {
-                return !(0, a.wR)() &&
+                return !(0, a.w)() &&
                   r.default.getLoginStatus() !== l.aUe.LOGGING_IN &&
                   r.default.allowLogoutRedirect()
                   ? null != t
@@ -257169,7 +257166,7 @@ html body ${z}, html body ${z} * {
                 (e) => {
                   if (
                     null == e.body ||
-                    "90822f7247d288c4b5d6f7195e95bfaa181aebb9" === e.body.hash
+                    "b1190eeb8883b948169ef2d9f9f23ca0387248af" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -267342,10 +267339,10 @@ html body ${z}, html body ${z} * {
                 t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("671445")),
+                  ((e = parseInt("671510")),
                   Number.isNaN(e) &&
                     (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 671445",
+                      "Trying to open a changelog for an invalid build number 671510",
                     ),
                     (e = 0)),
                   e),
@@ -295073,26 +295070,25 @@ html body ${z}, html body ${z} * {
               size: s,
               className: l,
               disabled: o = !1,
-              sound: d = nD,
             } = e,
             {
-              playSound: c,
-              onPointerDown: u,
-              onKeyDown: _,
-              onClickWithSound: E,
-            } = nB({ source: d, onClick: a, disabled: o });
+              playSound: d,
+              onPointerDown: c,
+              onKeyDown: u,
+              onClickWithSound: _,
+            } = nB({ source: nD, onClick: a, disabled: o });
           return (
             nx(
               "ArrowRight",
               function (e) {
-                e.repeat || c(), a();
+                e.repeat || d(), a();
               },
               o,
             ),
             (0, r.jsx)(en, {
-              onPointerDown: u,
-              onKeyDown: _,
-              onClick: E,
+              onPointerDown: c,
+              onKeyDown: u,
+              onClick: _,
               size: s,
               className: f()(nV.A4, nV.K2, l),
               "aria-disabled": o,
@@ -295211,8 +295207,9 @@ html body ${z}, html body ${z} * {
               isRouteBlocked: i,
               blockedTraitDescriptionId: s,
             } = e,
-            l = (0, h.bG)([c.A], () => c.A.isSaving);
-          async function o() {
+            l = (0, h.bG)([c.A], () => c.A.isSaving),
+            o = l || i;
+          async function u() {
             if (l) return;
             let e = (0, H.XI)(c.A.selectedCharacterTraits);
             (await (0, d.yE)(e))
@@ -295222,35 +295219,56 @@ html body ${z}, html body ${z} * {
                   variant: "critical",
                 });
           }
-          return (0, r.jsxs)(nj, {
-            size: "custom",
-            className: nV.GA,
-            "aria-label": th.intl.string(th.t["R3BPH+"]),
-            "aria-describedby": s,
-            onClick: function () {
-              n(o);
-            },
-            disabled: l || i,
-            sound:
+          function _() {
+            n(u);
+          }
+          let {
+            playSound: E,
+            onPointerDown: A,
+            onKeyDown: I,
+            onClickWithSound: p,
+          } = nB({
+            source:
               "https://cdn.discordapp.com/assets/content/1514d999969512ff06ade75018213676ebaf3698af26c0b1b7d3243ec480f920.mp3",
-            children: [
-              (0, r.jsx)(tu, {
-                variant: "mono-md/normal",
-                className: nV.Pf,
-                children: th.intl.string(th.t["R3BPH+"]),
-              }),
-              l
-                ? (0, r.jsx)(nw.y, {
-                    type: nw.t.SPINNING_CIRCLE_SIMPLE,
-                    className: nV.u1,
-                    itemClassName: nV.$N,
-                  })
-                : (0, r.jsx)(nM.ArrowSmallRightIcon, {
-                    size: "refresh_sm",
-                    color: "currentColor",
-                  }),
-            ],
+            onClick: _,
+            disabled: o,
           });
+          return (
+            nx(
+              "ArrowRight",
+              function (e) {
+                e.repeat || E(), _();
+              },
+              o,
+            ),
+            (0, r.jsxs)(en, {
+              onPointerDown: A,
+              onKeyDown: I,
+              onClick: p,
+              size: "custom",
+              className: f()(nV.A4, nV.K2, nV.GA),
+              "aria-disabled": o,
+              "aria-describedby": s,
+              "aria-label": th.intl.string(th.t["R3BPH+"]),
+              children: [
+                (0, r.jsx)(tu, {
+                  variant: "mono-md/normal",
+                  className: nV.Pf,
+                  children: th.intl.string(th.t["R3BPH+"]),
+                }),
+                l
+                  ? (0, r.jsx)(nw.y, {
+                      type: nw.t.SPINNING_CIRCLE_SIMPLE,
+                      className: nV.u1,
+                      itemClassName: nV.$N,
+                    })
+                  : (0, r.jsx)(nM.ArrowSmallRightIcon, {
+                      size: "refresh_sm",
+                      color: "currentColor",
+                    }),
+              ],
+            })
+          );
         }
         function nQ(e) {
           let {
@@ -341230,7 +341248,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "671445", versionHash: "90822f7247d288c4b5d6f7195e95bfaa181aebb9" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "671510", versionHash: "b1190eeb8883b948169ef2d9f9f23ca0387248af" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -467283,8 +467301,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1794437077573",
-                      build_number: "671445",
+                      built_at: "1794452973374",
+                      build_number: "671510",
                     },
                   },
                   retries: 1,
@@ -489859,7 +489877,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             h = eu.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, r6.A)("1794437077573", !0);
+            let e = (0, r6.A)("1794452973374", !0);
             t =
               null != e
                 ? eH.intl.formatToPlainString(eH.t.wve4kg, {
@@ -581663,7 +581681,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 ...(0, s.$)(),
               });
               try {
-                d.Ay.appFirstRenderAfterReadyPayload((0, o.wR)());
+                d.Ay.appFirstRenderAfterReadyPayload((0, o.w)());
               } catch (e) {}
               (0, a.K)();
             });
@@ -628860,10 +628878,10 @@ ${t}`;
             return M;
           }
           getToken() {
-            return (0, g.gf)();
+            return (0, g.g)();
           }
           isAuthenticated() {
-            return (0, g.wR)();
+            return (0, g.w)();
           }
           getFingerprint() {
             return U;
@@ -661324,7 +661342,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "90822f7247d288c4b5d6f7195e95bfaa181aebb9",
+                      "b1190eeb8883b948169ef2d9f9f23ca0387248af",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", W),
@@ -664385,11 +664403,8 @@ ${t}`;
           t,
           {},
           {
-            gf: r,
-            u8: function (e) {
-              return null != e && /^\/developers/.test(e) ? n(844564) : null;
-            },
-            wR: function () {
+            g: r,
+            w: function () {
               return null != r();
             },
           },
@@ -672152,7 +672167,7 @@ ${l.join(" +\n")}
                   ).then((e) => {
                     let i = {
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        build_number: "671445",
+                        build_number: "671510",
                       },
                       u = o.default.getCurrentUser();
                     null != u &&
@@ -686082,7 +686097,7 @@ ${l.join(" +\n")}
           212466: "7dd02b0fb48759ef",
           213042: "e06fa79801ec30f2",
           213217: "c0b449b332340bac",
-          213419: "dda374928f3ff15a",
+          213419: "8b600820a57a6065",
           213599: "4c993da1d78c7240",
           213653: "bc01c642ce8e674d",
           213732: "732bf34624979d1b",
@@ -686448,7 +686463,7 @@ ${l.join(" +\n")}
           262754: "de38e0c54cde9fbd",
           262755: "83d706c7e53afda5",
           263025: "ede9bbfde018d02e",
-          263408: "8b8a5df4e8fe6fe0",
+          263408: "0efefda215f13260",
           263506: "2d60ed72ed4348dc",
           263765: "213198be39cb65b0",
           263783: "82b53aa9940e33ed",
@@ -687568,7 +687583,7 @@ ${l.join(" +\n")}
           430634: "4653d92a7a392cbb",
           430858: "a49b4ce13dd834cf",
           430997: "bc7a4af9a08342d1",
-          431294: "839bd674518f4876",
+          431294: "7a354709238539f4",
           431658: "cc0635aa688bf2db",
           431692: "ee790ed3101d08ac",
           431714: "9ac6c5f632d763bd",
@@ -688240,7 +688255,7 @@ ${l.join(" +\n")}
           52159: "498c4526d0567fa5",
           521743: "c186ec21c2820d80",
           521761: "13e5e399609d15fe",
-          521846: "724db4a020727ab8",
+          521846: "fdfc59a52a763e4b",
           521930: "9c25197ce9670e69",
           522011: "6064cd684bc7dafb",
           522261: "617e7edcd3e17452",
@@ -688692,7 +688707,7 @@ ${l.join(" +\n")}
           58405: "f5c54e3433eb2da6",
           58407: "dc182d2fb9d3ba85",
           584605: "3399702fece199ca",
-          584732: "9687cc48a5ea957a",
+          584732: "0ce63b9ad45cf64e",
           584814: "456e7ec8a6f8e647",
           584836: "ff928b115d78f8c7",
           585005: "b855c534d51e9998",
@@ -689094,6 +689109,7 @@ ${l.join(" +\n")}
           648447: "d871c9931ef220f6",
           648695: "20c6d4d954de3c65",
           649070: "80d7c8fa46917ef4",
+          649232: "f43fe0038f74be3e",
           649351: "6e083a4ab65977ca",
           649408: "70aa8ea3d7e72942",
           649513: "1018da310ba03bf6",
@@ -690068,7 +690084,7 @@ ${l.join(" +\n")}
           785960: "cc6cb3f2856810ac",
           78598: "f2b39d17772b915c",
           78601: "e7b7f895ac9b93cd",
-          786142: "7fc6c4b96db26ca7",
+          786142: "f4ee462337834e02",
           78618: "715d1fb7de5f4e54",
           786448: "e065ff316e8f6579",
           786688: "445b7ce89c3f9d12",
@@ -690153,7 +690169,7 @@ ${l.join(" +\n")}
           797558: "43a932d5caff2755",
           797641: "1014adf07fd13545",
           798149: "9b481d704b25779d",
-          798161: "662a24e9dd051c06",
+          798161: "6061ae411f64cb20",
           79819: "b82e5595d1b5ec6a",
           798236: "28b5bef3ee486e06",
           798354: "de9eb65b1e566420",
@@ -690636,7 +690652,7 @@ ${l.join(" +\n")}
           866818: "2094d24c9b091a92",
           866960: "8975c831dc7e670d",
           867160: "67b0096d29931c2d",
-          867473: "ffe5ba2f2ed07ee4",
+          867473: "bfd7eb3fbd4c66c0",
           867646: "4849b510af5535b3",
           867807: "5e1195a881be2aa7",
           867856: "154b41e246f00c41",
@@ -690871,7 +690887,7 @@ ${l.join(" +\n")}
           898038: "471169aff98d478c",
           898074: "f27067cfb516e450",
           898186: "1eca52b291b6c4ff",
-          898279: "dbb21c2443dca114",
+          898279: "50ed54e1f7f4cc3a",
           898330: "77d4ea713c95b0b1",
           898358: "89e66792cc495fed",
           898477: "2437a0e1c85a2114",
@@ -690929,7 +690945,6 @@ ${l.join(" +\n")}
           905581: "5190a649220d310a",
           90567: "e2111568ef1ab10b",
           906069: "16200532deaa6979",
-          906516: "a059a43734fa8ca1",
           906723: "b12fab20e71439a1",
           906905: "f1b28e6599f23b02",
           907152: "9920364959756ef4",
@@ -692228,4 +692243,4 @@ ${l.join(" +\n")}
   );
   N = p.O(N);
 })();
-//# sourceMappingURL=web.f80222166ea0685b.js.map
+//# sourceMappingURL=web.03083ebbc99f6379.js.map
