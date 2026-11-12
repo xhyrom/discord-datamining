@@ -276,7 +276,7 @@
   margin-inline-end: var(--custom-volume-group-margin-end, 0);
 }
 .controlsBarItem_hFq1lM {
-  color: var(--white);
+  color: var(--text-overlay-light);
   opacity: 1;
 }
 .controlsBarItemActive_hFq1lM {
@@ -883,4 +883,4 @@
   }
 }
 
-/*# sourceMappingURL=734818.c233b32a43962191.css.map*/
+/*# sourceMappingURL=734818.e9eda03ff0916902.css.map*/
