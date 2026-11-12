@@ -10027,7 +10027,7 @@
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("671510", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("671549", 10))) || (l.client_build_number = d),
           null == (c = eE?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -152225,7 +152225,7 @@ ${a}`);
           n.e(859864).then(n.t.bind(n, 122123, 19));
         let e8 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eK.A().log(
-          `[BUILD INFO] Release Channel: ${e8}, Build Number: 671510, Version Hash: b1190eeb8883b948169ef2d9f9f23ca0387248af`,
+          `[BUILD INFO] Release Channel: ${e8}, Build Number: 671549, Version Hash: 87aa14906e24f0160d45feca2af3f6d012a197b5`,
         ),
           G.A.setTags({ appContext: j.QCW }),
           eS.A.initBasic(),
@@ -152322,7 +152322,7 @@ ${a}`);
               a =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : "671510";
+                  : "671549";
             if (__OVERLAY__) return;
             isNaN((r = parseInt(a ?? "", 10))) ||
               eV.Ay.setCrashInformation(eG.du.BuildNumber, r);
@@ -170231,7 +170231,7 @@ ${a}`);
                     className: tc()(I8.Wz, I8.mr),
                     children: [
                       (0, P.jsx)(I7, { className: I8.Kk }),
-                      tC.intl.format(tC.t.uyrfYF, { buildNumber: "671510" }),
+                      tC.intl.format(tC.t.uyrfYF, { buildNumber: "671549" }),
                       (0, P.jsx)(r, {}),
                     ],
                   })
@@ -257166,7 +257166,7 @@ html body ${z}, html body ${z} * {
                 (e) => {
                   if (
                     null == e.body ||
-                    "b1190eeb8883b948169ef2d9f9f23ca0387248af" === e.body.hash
+                    "87aa14906e24f0160d45feca2af3f6d012a197b5" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -267339,10 +267339,10 @@ html body ${z}, html body ${z} * {
                 t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("671510")),
+                  ((e = parseInt("671549")),
                   Number.isNaN(e) &&
                     (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 671510",
+                      "Trying to open a changelog for an invalid build number 671549",
                     ),
                     (e = 0)),
                   e),
@@ -279954,22 +279954,23 @@ html body ${z}, html body ${z} * {
         n(321073), n(134528), n(947204);
         var i = n(714414),
           r = n(152959),
-          a = n(339200);
-        let s = new Set(["line", "blockQuote"]),
-          l = {
+          a = n(677413),
+          s = n(339200);
+        let l = new Set(["line", "blockQuote"]),
+          o = {
             bold: "strong",
             italic: "em",
             underline: "u",
             strikethrough: "s",
             spoiler: "spoiler",
           },
-          o = new WeakMap(),
-          d = { blocks: [], codeBlocks: [] };
-        function c(e, t) {
+          d = new WeakMap(),
+          c = { blocks: [], codeBlocks: [] };
+        function u(e, t) {
           if (t(e)) return e;
           for (let n of e.children) {
             if ("node" !== n.type) continue;
-            let e = c(n, t);
+            let e = u(n, t);
             if (null != e) return e;
           }
           return null;
@@ -279986,83 +279987,83 @@ html body ${z}, html body ${z} * {
             p0: function (e) {
               let t = e.nativeMarkdownSyntax;
               if (null == t) return null;
-              if (!(0, r.YK)()) return d;
-              let n = o.get(e);
+              if (!(0, r.YK)()) return c;
+              let n = d.get(e);
               if (null != n && n.children === e.children && n.syntax === t)
                 return n.document;
-              let u = (function (e) {
+              let _ = (function (e) {
                   let t = [[]];
                   for (let n = 0; n < e.length; n++) {
                     let i = e[n];
-                    a.AS.isInTypes(i, s)
+                    s.AS.isInTypes(i, l)
                       ? t[t.length - 1].push({
                           index: n,
                           prefix: "blockQuote" === i.type ? "> " : "",
-                          serializedChildren: a.cv.serializeMarkdownChildren(i),
+                          serializedChildren: s.cv.serializeMarkdownChildren(i),
                         })
                       : t[t.length - 1].length > 0 && t.push([]);
                   }
                   return t.filter((e) => e.length > 0);
                 })(e.children),
-                _ = e.children
+                E = e.children
                   .map((e) => {
                     var t;
-                    return a.AS.isInTypes(e, s)
-                      ? `\x01${("blockQuote" === (t = e).type ? "> " : "") + a.cv.serializeMarkdownChildren(t).join("")}`
+                    return s.AS.isInTypes(e, l)
+                      ? `\x01${("blockQuote" === (t = e).type ? "> " : "") + s.cv.serializeMarkdownChildren(t).join("")}`
                       : "\x02";
                   })
                   .join("\n");
-              if (null != n && n.key === _ && n.syntax === t)
+              if (null != n && n.key === E && n.syntax === t)
                 return (n.children = e.children), n.document;
-              let E = (function (e, t, n) {
+              let A = (function (e, t, n) {
                 let r = { blocks: Array(t).fill(null), codeBlocks: [] },
-                  a = 0;
+                  s = 0;
                 for (let t of e)
-                  a +=
+                  s +=
                     (function (e, t, n, r) {
-                      let a,
-                        s = t.map((e) => {
+                      let s,
+                        l = t.map((e) => {
                           let { prefix: t, serializedChildren: n } = e;
                           return t + n.join("");
                         }),
-                        o = s.join("\n");
+                        d = l.join("\n");
                       try {
-                        if (((a = (0, i.IS)(o, r)), o.includes("```"))) {
-                          let e = (0, i.IS)(o + "\n```", r);
+                        if (((s = (0, i.IS)(d, r)), d.includes("```"))) {
+                          let e = (0, i.IS)(d + "\n```", r);
                           null !=
-                            c(
+                            u(
                               e,
                               (t) =>
                                 "code_block" === t.kind.type &&
                                 t.span.end === e.span.end,
-                            ) && (a = e);
+                            ) && (s = e);
                         }
                       } catch {
-                        return o.length;
+                        return d.length;
                       }
-                      let d = [],
-                        u = 0;
+                      let c = [],
+                        _ = 0;
                       for (let e = 0; e < t.length; e++) {
-                        let n = u + s[e].length;
-                        d.push({
-                          start: u,
-                          contentStart: u + t[e].prefix.length,
+                        let n = _ + l[e].length;
+                        c.push({
+                          start: _,
+                          contentStart: _ + t[e].prefix.length,
                           end: n,
                         }),
-                          (u = n + 1);
+                          (_ = n + 1);
                       }
-                      function _(e) {
-                        let t = d.findIndex((t) => {
+                      function E(e) {
+                        let t = c.findIndex((t) => {
                           let { end: n } = t;
                           return e <= n;
                         });
                         return -1 === t ? null : t;
                       }
-                      let E = new Set();
+                      let A = new Set();
                       for (let i of (function (e) {
                         let t = [];
                         return (
-                          c(e, (e) => {
+                          u(e, (e) => {
                             if ("code_block" !== e.kind.type) return !1;
                             let n = e.children.filter(
                                 (e) => "token" === e.type,
@@ -280086,21 +280087,21 @@ html body ${z}, html body ${z} * {
                           }),
                           t
                         );
-                      })(a)) {
-                        let r = _(i.openStart);
+                      })(s)) {
+                        let r = E(i.openStart);
                         if (null == r) continue;
-                        let a = _(i.closeStart);
-                        for (let e = r + 1; e < (a ?? t.length); e++) E.add(e);
+                        let a = E(i.closeStart);
+                        for (let e = r + 1; e < (a ?? t.length); e++) A.add(e);
                         e.codeBlocks.push({
                           openLine: t[r].index,
                           closeLine: null != a ? t[a].index : null,
                           lang: i.lang,
                           onOwnLine: i.onOwnLine,
                           openEnd: n + i.openEnd,
-                          closeStart: n + Math.min(i.closeStart, o.length),
+                          closeStart: n + Math.min(i.closeStart, d.length),
                         });
                       }
-                      let A = (function (e) {
+                      let f = (function (e) {
                           let t = [];
                           function n(e, n) {
                             let i = t.at(-1);
@@ -280132,7 +280133,7 @@ html body ${z}, html body ${z} * {
                                 s = r;
                               switch (a.type) {
                                 case "modifier":
-                                  s = [...r, l[a.value.kind]];
+                                  s = [...r, o[a.value.kind]];
                                   break;
                                 case "code":
                                   s = [...r, "inlineCode"];
@@ -280143,123 +280144,147 @@ html body ${z}, html body ${z} * {
                                 case "small":
                                   s = [...r, "subtext"];
                               }
-                              let o = !1,
+                              let l = !1,
                                 d = !1;
                               for (let r = 0; r < t.children.length; r++) {
-                                let l = t.children[r];
-                                if ("node" === l.type) {
-                                  e(l, s), (d = !1);
+                                let o = t.children[r];
+                                if ("node" === o.type) {
+                                  e(o, s), (d = !1);
                                   continue;
                                 }
                                 switch (
-                                  ("whitespace" !== l.kind.type && (d = !1),
-                                  l.kind.type)
+                                  ("whitespace" !== o.kind.type && (d = !1),
+                                  o.kind.type)
                                 ) {
                                   case "delimiter":
-                                    i(l, l.kind.value.side, s);
+                                    i(o, o.kind.value.side, s);
                                     break;
                                   case "code_delimiter":
-                                    i(l, 0 === r ? "open" : "close", s);
+                                    i(o, 0 === r ? "open" : "close", s);
                                     break;
                                   case "escape":
-                                    i(l, "open", []);
+                                    i(o, "open", []);
                                     break;
                                   case "code_fence":
-                                    n(l, ["codeBlockSyntax"]);
+                                    n(o, ["codeBlockSyntax"]);
                                     break;
                                   case "language":
-                                    n(l, ["codeBlockLang"]);
+                                    n(o, ["codeBlockLang"]);
                                     break;
                                   case "code_content":
                                     n(
-                                      l,
+                                      o,
                                       "code_block" === a.type
                                         ? ["codeBlockText"]
                                         : s,
                                     );
                                     break;
                                   case "small_marker":
-                                    i(l, "open", s), (d = !0);
+                                    i(o, "open", s), (d = !0);
                                     break;
                                   case "link_open":
-                                    i(l, "open", s);
+                                    i(o, "open", s);
                                     break;
                                   case "link_close":
-                                    i(l, "close", s), (o = !0);
+                                    i(o, "close", s), (l = !0);
                                     break;
                                   case "destination_open":
                                   case "destination_close":
                                   case "title":
-                                    i(l, "close", s);
+                                    i(o, "close", s);
                                     break;
                                   case "url":
-                                    o ? i(l, "close", s) : n(l, s);
+                                    l ? i(o, "close", s) : n(o, s);
                                     break;
                                   case "whitespace":
                                     d
-                                      ? i(l, "open", s)
-                                      : o
-                                        ? i(l, "close", s)
-                                        : n(l, s);
+                                      ? i(o, "open", s)
+                                      : l
+                                        ? i(o, "close", s)
+                                        : n(o, s);
                                     break;
                                   case "line_ending":
                                   case "indent":
                                   case "quote_prefix":
                                   case "list_marker":
                                   case "heading_marker":
-                                    n(l, []);
+                                    n(o, []);
                                     break;
                                   default:
-                                    n(l, s);
+                                    n(o, s);
                                 }
                               }
                             })(e, []),
                             t
                           );
-                        })(a),
-                        f = 0;
+                        })(s),
+                        h = 0;
                       for (let i = 0; i < t.length; i++) {
-                        let { contentStart: r, end: a } = d[i],
-                          s = [];
-                        for (; f < A.length && A[f].start < a; ) {
-                          let e = A[f],
+                        let { contentStart: r, end: s } = c[i],
+                          o = [];
+                        for (; h < f.length && f[h].start < s; ) {
+                          let e = f[h],
                             t = e.start + e.text.length,
                             n = Math.max(e.start, r),
-                            l = Math.min(t, a);
+                            a = Math.min(t, s);
                           if (
-                            (l > n &&
+                            (a > n &&
                               !(
-                                E.has(i) &&
+                                A.has(i) &&
                                 e.attributes.includes("codeBlockText")
                               ) &&
-                              s.push({
+                              o.push({
                                 ...e,
-                                text: e.text.slice(n - e.start, l - e.start),
+                                text: e.text.slice(n - e.start, a - e.start),
                                 start: n - r,
                               }),
-                            t > a)
+                            t > s)
                           )
                             break;
-                          f++;
+                          h++;
                         }
+                        let d =
+                          0 === t[i].index &&
+                          "" === t[i].prefix &&
+                          a.U1.test(l[i]);
                         e.blocks[t[i].index] = {
                           start: n + r,
                           serializedChildren: t[i].serializedChildren,
-                          entries: s,
+                          entries: d
+                            ? o.flatMap((e) => {
+                                let t = a.f5.length - e.start;
+                                if (t <= 0) return [e];
+                                let n = {
+                                  ...e,
+                                  text: e.text.slice(0, t),
+                                  attributes: [...e.attributes, "silentPrefix"],
+                                };
+                                return t >= e.text.length
+                                  ? [n]
+                                  : [
+                                      n,
+                                      {
+                                        ...e,
+                                        text: e.text.slice(t),
+                                        start: a.f5.length,
+                                      },
+                                    ];
+                              })
+                            : o,
                         };
                       }
-                      return o.length;
-                    })(r, t, a, n) + 1;
+                      return d.length;
+                    })(r, t, s, n) + 1;
                 return r;
-              })(u, e.children.length, t);
+              })(_, e.children.length, t);
               return (
-                o.set(e, {
+                d.set(e, {
                   children: e.children,
                   syntax: t,
-                  key: _,
-                  document: E,
+                  key: E,
+                  document: A,
                 }),
-                E
+                A
               );
             },
             tA: function (e, t) {
@@ -341248,7 +341273,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "671510", versionHash: "b1190eeb8883b948169ef2d9f9f23ca0387248af" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "671549", versionHash: "87aa14906e24f0160d45feca2af3f6d012a197b5" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -467301,8 +467326,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1794452973374",
-                      build_number: "671510",
+                      built_at: "1794478533026",
+                      build_number: "671549",
                     },
                   },
                   retries: 1,
@@ -489877,7 +489902,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             h = eu.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, r6.A)("1794452973374", !0);
+            let e = (0, r6.A)("1794478533026", !0);
             t =
               null != e
                 ? eH.intl.formatToPlainString(eH.t.wve4kg, {
@@ -661342,7 +661367,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "b1190eeb8883b948169ef2d9f9f23ca0387248af",
+                      "87aa14906e24f0160d45feca2af3f6d012a197b5",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", W),
@@ -672167,7 +672192,7 @@ ${l.join(" +\n")}
                   ).then((e) => {
                     let i = {
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        build_number: "671510",
+                        build_number: "671549",
                       },
                       u = o.default.getCurrentUser();
                     null != u &&
@@ -686463,7 +686488,7 @@ ${l.join(" +\n")}
           262754: "de38e0c54cde9fbd",
           262755: "83d706c7e53afda5",
           263025: "ede9bbfde018d02e",
-          263408: "0efefda215f13260",
+          263408: "8e94819dce69358f",
           263506: "2d60ed72ed4348dc",
           263765: "213198be39cb65b0",
           263783: "82b53aa9940e33ed",
@@ -687583,7 +687608,7 @@ ${l.join(" +\n")}
           430634: "4653d92a7a392cbb",
           430858: "a49b4ce13dd834cf",
           430997: "bc7a4af9a08342d1",
-          431294: "7a354709238539f4",
+          431294: "eb078ce12eeeddbc",
           431658: "cc0635aa688bf2db",
           431692: "ee790ed3101d08ac",
           431714: "9ac6c5f632d763bd",
@@ -687874,7 +687899,7 @@ ${l.join(" +\n")}
           470528: "dad2c2138a3e0b61",
           470591: "299e059c99371db4",
           470997: "38b22491bf093506",
-          471064: "5ea65bbc56491bc4",
+          471064: "2c817540cdb72816",
           471138: "3d85b3fa484ac165",
           471488: "e67bf836e58be0a7",
           471682: "acaa66498b719c6c",
@@ -688255,7 +688280,7 @@ ${l.join(" +\n")}
           52159: "498c4526d0567fa5",
           521743: "c186ec21c2820d80",
           521761: "13e5e399609d15fe",
-          521846: "fdfc59a52a763e4b",
+          521846: "0a7b5f9047fa7ebd",
           521930: "9c25197ce9670e69",
           522011: "6064cd684bc7dafb",
           522261: "617e7edcd3e17452",
@@ -690169,7 +690194,7 @@ ${l.join(" +\n")}
           797558: "43a932d5caff2755",
           797641: "1014adf07fd13545",
           798149: "9b481d704b25779d",
-          798161: "6061ae411f64cb20",
+          798161: "abbe325a8e9b024a",
           79819: "b82e5595d1b5ec6a",
           798236: "28b5bef3ee486e06",
           798354: "de9eb65b1e566420",
@@ -690652,7 +690677,7 @@ ${l.join(" +\n")}
           866818: "2094d24c9b091a92",
           866960: "8975c831dc7e670d",
           867160: "67b0096d29931c2d",
-          867473: "bfd7eb3fbd4c66c0",
+          867473: "eb9b50d1e713efc8",
           867646: "4849b510af5535b3",
           867807: "5e1195a881be2aa7",
           867856: "154b41e246f00c41",
@@ -692243,4 +692268,4 @@ ${l.join(" +\n")}
   );
   N = p.O(N);
 })();
-//# sourceMappingURL=web.03083ebbc99f6379.js.map
+//# sourceMappingURL=web.08d9165a6eecc8d6.js.map
