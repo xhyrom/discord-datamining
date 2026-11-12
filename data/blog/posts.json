@@ -3692,5 +3692,16 @@
     "pubDate": "Mon, 09 Nov 2026 00:00:00 GMT",
     "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6af1efa6b3b5b3674c076583_DiscordBadges2.0_Blog_01.png",
     "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6af1efa6b3b5b3674c076583_DiscordBadges2.0_Blog_01.png"
+  },
+  {
+    "id": "discord-linux-a-year-of-upgrades",
+    "body": "",
+    "title": "Discord <3 Linux: A Year of Upgrades",
+    "link": "https://discord.com/blog/discord-linux-a-year-of-upgrades",
+    "guid": "https://discord.com/blog/discord-linux-a-year-of-upgrades",
+    "description": "Discord on Linux got a glow-up: a new Rust updater, hardware encoding, Wayland screen share, Steam Deck support, and global keybinds. And we’re not done yet! ",
+    "pubDate": "Thu, 12 Nov 2026 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6af381febeb37259618feeaf_1dl0UEDWEk25ZbOOdLwzE-drqeIfyTcPGw1538-h1041-iv1.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6af381febeb37259618feeaf_1dl0UEDWEk25ZbOOdLwzE-drqeIfyTcPGw1538-h1041-iv1.png"
   }
 ]
