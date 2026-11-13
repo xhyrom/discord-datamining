@@ -187,7 +187,7 @@
   overflow: hidden;
 }
 .timeLabel_dXbb7s {
-  background-color: var(--background-surface-high);
+  background-color: var(--background-scrim-lightbox);
   border-radius: var(--radius-sm);
   box-shadow:
     inset 0 0 0 1px var(--custom-dvp-preview-border, var(--opacity-blurple-32)),
@@ -311,7 +311,7 @@
   opacity: 0;
 }
 .timelineTooltip_bktSrU {
-  background-color: var(--background-surface-high);
+  background-color: var(--background-scrim-lightbox);
   border-radius: var(--radius-sm);
   box-shadow:
     inset 0 0 0 1px var(--custom-dvp-preview-border, var(--opacity-blurple-32)),
@@ -428,4 +428,4 @@
   }
 }
 
-/*# sourceMappingURL=936090.80fd4f490a8d37f9.css.map*/
+/*# sourceMappingURL=936090.9748b62219f9aa5c.css.map*/
