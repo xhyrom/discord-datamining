@@ -1,13 +1,12 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [817385],
+  [40799],
   {
     11435(e) {
       e.exports = {
         Tp: "background_1i8KgA",
         D7: "gradient_1i8KgA",
         Ki: "video_1i8KgA",
-        R: "hidden_1i8KgA",
       };
     },
     885619(e, _, t) {
@@ -20,6 +19,9 @@
         }),
       );
     },
+    840527(e) {
+      e.exports = { q: "layer_Z2THFa" };
+    },
     740281(e) {
       e.exports = { w: "logo_W1eFn-" };
     },
@@ -31,6 +33,9 @@
         Pf: "label__LdbI1",
         QK: "labelText__LdbI1",
       };
+    },
+    190240(e) {
+      e.exports = { q: "layer_Nz_hf6", R: "hidden_Nz_hf6" };
     },
     738964(e) {
       e.exports = {
@@ -65,7 +70,11 @@
       e.exports = { t: "topPercent_hu1Kzx" };
     },
     580814(e) {
-      e.exports = { M: "menu_Cv_a5E", A: "item_Cv_a5E" };
+      e.exports = {
+        MK: "menu_Cv_a5E",
+        AS: "item_Cv_a5E",
+        dT: "itemHighlighted_Cv_a5E",
+      };
     },
     769909(e) {
       e.exports = {
@@ -103,6 +112,13 @@
         Vg: "grid_QrLb7B",
       };
     },
+    168862(e) {
+      e.exports = {
+        dw: "stage_DCI1Ie",
+        RK: "visible_DCI1Ie",
+        lW: "rive_DCI1Ie",
+      };
+    },
     639331(e) {
       e.exports = {
         Qs: "content_ZjlY6O",
@@ -119,4 +135,4 @@
     },
   },
 ]);
-//# sourceMappingURL=817385.289e58a37e478821.js.map
+//# sourceMappingURL=40799.8a36e72b2b0eab35.js.map

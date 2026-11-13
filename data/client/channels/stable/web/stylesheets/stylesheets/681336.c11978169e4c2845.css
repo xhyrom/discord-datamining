@@ -71,6 +71,15 @@
 .favoriteIcon_850pDF {
   display: block;
 }
+.anchor_4z_RMD {
+  inset-inline: 0;
+  bottom: var(--space-24);
+  height: var(--guildbar-avatar-size);
+  margin-inline: auto;
+  pointer-events: none;
+  position: absolute;
+  width: var(--guildbar-avatar-size);
+}
 .container_oJAkDB {
   height: 24px;
   overflow: hidden;
@@ -142,4 +151,4 @@
   opacity: 1;
 }
 
-/*# sourceMappingURL=538735.8628f9d563470151.css.map*/
+/*# sourceMappingURL=681336.c11978169e4c2845.css.map*/

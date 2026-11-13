@@ -1,13 +1,7 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [384613],
+  [51382],
   {
-    212e3(e) {
-      e.exports = {
-        D: "brandRefreshBanner_LCY8WT",
-        r: "lightBrandRefreshBanner_LCY8WT",
-      };
-    },
     106630(e) {
       e.exports = {
         iE: "wrapper_ncMHEz",
@@ -28,4 +22,4 @@
     },
   },
 ]);
-//# sourceMappingURL=384613.63159a756201371c.js.map
+//# sourceMappingURL=51382.db216e625067f0d8.js.map

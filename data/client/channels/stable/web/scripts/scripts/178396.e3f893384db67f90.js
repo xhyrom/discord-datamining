@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [991119],
+  [178396],
   {
     591888(e) {
       e.exports = {
@@ -10,7 +10,13 @@
         s7: "brandRefreshCopy_NPgbd9",
         rd: "brandRefreshTitle_NPgbd9",
         ax: "nitroWheel_NPgbd9",
-        rf: "lightBrandRefreshBanner_NPgbd9",
+      };
+    },
+    212e3(e) {
+      e.exports = {
+        Du: "brandRefreshBanner_LCY8WT",
+        D7: "gradient_LCY8WT",
+        B9: "lightGradient_LCY8WT",
       };
     },
     316632(e) {
@@ -49,4 +55,4 @@
     },
   },
 ]);
-//# sourceMappingURL=991119.0ed51dd147be3ff9.js.map
+//# sourceMappingURL=178396.e3f893384db67f90.js.map

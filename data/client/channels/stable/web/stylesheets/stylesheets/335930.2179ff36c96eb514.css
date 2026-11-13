@@ -1197,18 +1197,6 @@
   transform: scale(0.96);
   transition: transform 0.12s ease-out;
 }
-.stage_DCI1Ie {
-  height: 100%;
-  opacity: 0;
-}
-.visible_DCI1Ie {
-  opacity: 1;
-  transition: opacity 0.15s ease-out;
-}
-.rive_DCI1Ie {
-  height: 100%;
-  width: 100%;
-}
 .container_AJis7Y {
   background-color: var(--black);
   height: 100%;
@@ -1220,9 +1208,6 @@
   inset: 0;
   position: absolute;
 }
-.hidden_AJis7Y {
-  visibility: hidden;
-}
 .headerActions_AJis7Y {
   display: flex;
   gap: var(--space-10);
@@ -1232,4 +1217,4 @@
   z-index: 1;
 }
 
-/*# sourceMappingURL=949117.4a3cb3e59e7128f6.css.map*/
+/*# sourceMappingURL=335930.2179ff36c96eb514.css.map*/

@@ -1,11 +1,6 @@
 .brandRefreshBanner_NPgbd9 {
   align-items: center;
-  background-color: var(--background-surface-high);
-  background-image: linear-gradient(
-    90deg,
-    var(--expressive-gradient-nitro-pink-start),
-    var(--expressive-gradient-nitro-pink-end)
-  );
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   display: flex;
   gap: var(--space-16);
@@ -38,13 +33,38 @@
   color: var(--text-strong);
   flex-shrink: 0;
 }
-.lightBrandRefreshBanner_NPgbd9 {
+.brandRefreshBanner_LCY8WT {
+  align-items: center;
+  border: 1px solid var(--border-subtle);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  border-top: none;
+  display: flex;
+  gap: var(--space-16);
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md) var(--space-sm);
+}
+.gradient_LCY8WT {
+  background-color: var(--background-surface-high);
+  background-image: linear-gradient(
+    90deg,
+    var(--expressive-gradient-nitro-pink-start),
+    var(--expressive-gradient-nitro-pink-end)
+  );
+}
+.gradient_LCY8WT a {
+  color: var(--text-link);
+}
+.gradient_LCY8WT.lightGradient_LCY8WT {
   background-image: linear-gradient(
       0deg,
       var(--background-surface-high),
       transparent 1000%
     ),
-    linear-gradient(90deg, var(--illo-pink-40), var(--illo-nitro-blue));
+    linear-gradient(
+      90deg,
+      var(--expressive-gradient-nitro-pink-start),
+      var(--expressive-gradient-nitro-pink-end)
+    );
 }
 .upsellOuter_KxXBlr {
   border-radius: var(--radius-sm);
@@ -167,4 +187,4 @@
   margin-inline-start: 4px;
 }
 
-/*# sourceMappingURL=991119.fffa24a66520d0f9.css.map*/
+/*# sourceMappingURL=178396.264f146f6acb082a.css.map*/

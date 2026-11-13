@@ -2,9 +2,10 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   [991625],
   {
-    489387(e, t, o) {
-      o.r(
+    489387(e, o, t) {
+      t.r(
         (e.exports = {
+          popoverRoot: "popoverRoot_81IzEA",
           popover: "popover_81IzEA",
           popoverGradientWrapper: "popoverGradientWrapper_81IzEA",
           popoverContentWithGradient: "popoverContentWithGradient_81IzEA",
@@ -59,4 +60,4 @@
     },
   },
 ]);
-//# sourceMappingURL=991625.5c1930881499fdb0.js.map
+//# sourceMappingURL=991625.4fb163a785261c0a.js.map

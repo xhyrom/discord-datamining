@@ -26,36 +26,6 @@
   right: 0;
   width: 6px;
 }
-.brandRefreshBanner_LCY8WT {
-  align-items: center;
-  background-color: var(--background-surface-high);
-  background-image: linear-gradient(
-    90deg,
-    var(--expressive-gradient-nitro-pink-start),
-    var(--expressive-gradient-nitro-pink-end)
-  );
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: auto;
-  border: 1px solid var(--border-subtle);
-  border-radius: 0 0 var(--radius-md) var(--radius-md);
-  border-top: none;
-  display: flex;
-  gap: var(--space-16);
-  justify-content: space-between;
-  padding: var(--space-sm) var(--space-md) var(--space-sm);
-}
-.brandRefreshBanner_LCY8WT a {
-  color: var(--text-link);
-}
-.lightBrandRefreshBanner_LCY8WT {
-  background-image: linear-gradient(
-      0deg,
-      var(--background-surface-high),
-      transparent 1000%
-    ),
-    linear-gradient(90deg, var(--illo-pink-40), var(--illo-nitro-blue));
-}
 .container_KljP7l {
   background: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
@@ -129,4 +99,4 @@
   padding: var(--space-sm) var(--space-md) var(--space-sm);
 }
 
-/*# sourceMappingURL=384613.c58855b4c2ac7949.css.map*/
+/*# sourceMappingURL=51382.793e8471b5d1483e.css.map*/
