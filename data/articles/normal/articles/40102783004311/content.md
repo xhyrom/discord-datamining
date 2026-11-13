@@ -486,6 +486,21 @@
   in Game Shops may be shown in your local currency where available. Otherwise,
   prices are shown in U.S. dollars (USD).
 </p>
+<p><strong>Q: Can I redeem Orbs on Game Shop items?</strong></p>
+<p>
+  A: Sometimes. During certain promotions, eligible items — or occasionally all
+  items in a Game Shop — can be claimed with Orbs instead of cash. Which items
+  are eligible varies by promotion and by game, and some Orbs offers are
+  available only to Nitro members.
+</p>
+<p>
+  If an item can be claimed with Orbs, you’ll see the Orbs amount on the item.
+  If you don’t see one, that item is available for cash purchase only.
+</p>
+<p>
+  Orbs offers run only for the length of a promotion. When a promotion ends,
+  those items go back to cash purchase only.
+</p>
 <h2 id="h_01KQJNEWWD64M48SSGRQ8V2ZYD">Gifting</h2>
 <p>
   <strong>Q: Can I gift items to someone who doesn't play the game?</strong> 
@@ -535,6 +550,36 @@
   A: Game Shops are currently available on the Discord desktop app and browser. 
 </p>
 <h2 id="h_01KQJNEWWGZ6CB48FP9VBE2MD1">Marvel Rivals Game Shop</h2>
+<div class="mega-box">
+  <p>
+    Offer: <strong>From</strong> November 13, 10:00 AM PT
+    <strong>through </strong>November 26, 10:00 AM PT<strong
+      >, eligible users who start a Nitro Monthly or Nitro Yearly subscription
+      during this period can claim the Marvel Rivals Season 11 Luxury Battle
+      Pass for free. Each new subscriber can claim one free Luxury Battle Pass.
+      Other items are not included and remain available at their regular price.
+      Nitro Basic, trial, and other subscription types are not eligible for this
+      offer. Receiving Nitro as a gift or purchasing Nitro as a gift for another
+      user does not qualify for this offer. For details on offer eligibility,
+      terms, and policies, see the</strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
+      ><strong>
+        <span class="wysiwyg-underline"
+          >Discord Nitro Offers &amp; Promotions: Eligibility Guide.</span
+        ></strong
+      ></a
+    ><strong> </strong>
+  </p>
+  <div class="info-box">
+    Note:
+    <strong
+      >Users who subscribe to Nitro on mobile are eligible for this offer, but
+      must use the Discord desktop or web app to claim the Luxury Battle Pass in
+      the Marvel Rivals Game Shop.</strong
+    >
+  </div>
+</div>
 <p>
   <strong>Q: Which platforms can I redeem Marvel Rivals Shop items on?</strong> 
 </p>
@@ -676,9 +721,8 @@
       href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ"
       target="_blank"
       rel="noopener noreferrer"
-      ><strong> </strong
-      ><strong
-        ><span class="wysiwyg-underline">Discord Orbs FAQ</span></strong
+      ><strong>
+        <span class="wysiwyg-underline">Discord Orbs FAQ</span></strong
       ></a
     ><strong
       >. For details around eligibility, terms and policy, please see
@@ -687,9 +731,8 @@
       href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
       target="_blank"
       rel="noopener noreferrer"
-      ><strong> </strong
-      ><strong
-        ><span class="wysiwyg-underline"
+      ><strong>
+        <span class="wysiwyg-underline"
           >Discord Nitro Offers &amp; Promotions: Eligibility Guide</span
         ></strong
       ></a
@@ -813,4 +856,5 @@
     ><span class="wysiwyg-underline">Bloons TD 6 Game Shop</span></a
   >. 
 </p>
+<p> </p>
 <p> </p>
