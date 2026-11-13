@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [274227],
+  [795854],
   {
     242695(e) {
       e.exports = {
@@ -27,9 +27,17 @@
         gw: "purchaseItemImage_LDGylj",
       };
     },
+    557226(e) {
+      e.exports = {
+        bv: "churnDiscountBadge_0WdzI8",
+        Hf: "churnDiscountAcknowledgedBadge_0WdzI8",
+        aW: "churnDiscountBadgeIcon_0WdzI8",
+        jf: "churnDiscountBadgeLabel_0WdzI8",
+      };
+    },
     512376(e) {
       e.exports = { j: "lockup_HRhm0U", q: "layer_HRhm0U" };
     },
   },
 ]);
-//# sourceMappingURL=274227.5b1107de8501ba23.js.map
+//# sourceMappingURL=795854.e660eb251058d765.js.map

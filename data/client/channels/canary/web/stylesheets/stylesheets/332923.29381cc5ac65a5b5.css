@@ -59,6 +59,13 @@
 .hasTrailing_0PLWhS .input_0PLWhS {
   padding-inline-end: 0;
 }
+.hasLeadingText_0PLWhS .input_0PLWhS,
+.hasLeadingText_0PLWhS .leadingText_0PLWhS {
+  align-self: baseline;
+}
+.hasLeadingText_0PLWhS .input_0PLWhS {
+  height: calc(var(--custom-text-input-height) - 2px);
+}
 .input_0PLWhS {
   background-color: transparent;
   border: none;
@@ -1814,4 +1821,4 @@
   margin-inline-start: var(--custom-margin-margin-small);
 }
 
-/*# sourceMappingURL=332923.3aebdd0271278361.css.map*/
+/*# sourceMappingURL=332923.29381cc5ac65a5b5.css.map*/

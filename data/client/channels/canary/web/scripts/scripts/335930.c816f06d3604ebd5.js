@@ -44,7 +44,8 @@
         Om: "dot_Csz0CI",
         vk: "clickable_Csz0CI",
         hZ: "unlockedDot_Csz0CI",
-        RQ: "unlockedIcon_Csz0CI",
+        Kk: "icon_Csz0CI",
+        Xj: "activeStep_Csz0CI",
         CD: "unlockedStep_Csz0CI",
       };
     },
@@ -316,4 +317,4 @@
     },
   },
 ]);
-//# sourceMappingURL=335930.7b64696e789a9d58.js.map
+//# sourceMappingURL=335930.c816f06d3604ebd5.js.map
