@@ -1004,17 +1004,19 @@
   justify-content: center;
 }
 .details_NgozOX {
+  display: flex;
+  flex-direction: column;
   gap: var(--space-32);
   max-width: 510px;
   min-width: 0;
   text-align: start;
 }
-.details_NgozOX,
+.globalDetails_NgozOX {
+  align-self: flex-start;
+}
 .heading_NgozOX {
   display: flex;
   flex-direction: column;
-}
-.heading_NgozOX {
   gap: var(--space-4);
 }
 .display_NgozOX {
@@ -1217,4 +1219,4 @@
   z-index: 1;
 }
 
-/*# sourceMappingURL=335930.2179ff36c96eb514.css.map*/
+/*# sourceMappingURL=335930.5a8cfe69e8847584.css.map*/

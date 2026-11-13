@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [148326],
+  [357900],
   {
     242812(e) {
       e.exports = { F: "fileInput_eIknXD" };
@@ -18,22 +18,6 @@
         uK: "bodyWrapper_-sZhZn",
         Iy: "emojiPickerListWrapper_-sZhZn",
         qV: "inspector_-sZhZn",
-      };
-    },
-    342379(e) {
-      e.exports = {
-        a$: "categoryPill_ufks4w",
-        ZG: "categoryItemGuildCategory_ufks4w categoryItem_ufks4w",
-        td: "categoryItemPackCategory_ufks4w categoryItem_ufks4w",
-        Q0: "categoryItemPackCategorySelected_ufks4w",
-        ty: "packIcon_ufks4w",
-        Bj: "categoryItemDefaultCategory_ufks4w categoryItem_ufks4w",
-        Yl: "categoryIcon_ufks4w",
-        xg: "categoryItemRecentEmoji_ufks4w",
-        s6: "categoryItemDefaultCategorySelected_ufks4w",
-        ny: "guildCategorySeparator_ufks4w",
-        KB: "unicodeShortcut_ufks4w",
-        h_: "unicodeShortcutInvisible_ufks4w",
       };
     },
     683829(e) {
@@ -70,4 +54,4 @@
     },
   },
 ]);
-//# sourceMappingURL=148326.064be10ee7e86c51.js.map
+//# sourceMappingURL=357900.2be0310d231d14d3.js.map

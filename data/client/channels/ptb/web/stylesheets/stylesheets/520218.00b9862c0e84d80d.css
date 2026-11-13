@@ -1,16 +1,32 @@
-.frame_lzDcNJ {
-  container: guild-space-page/inline-size;
+.notice_opJNsq {
+  align-items: center;
+  background: var(--background-surface-high);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  display: flex;
+  gap: var(--space-12);
+  padding: var(--space-12) var(--space-16);
+}
+.icon_opJNsq {
+  color: var(--text-muted);
+  flex: 0 0 auto;
+}
+.message_opJNsq {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.frame_3wogve {
   padding: var(--space-16);
 }
-.wide_lzDcNJ {
+.wide_3wogve {
   width: 1100px;
 }
-.narrow_lzDcNJ,
-.wide_lzDcNJ {
+.narrow_3wogve,
+.wide_3wogve {
   max-width: 100%;
 }
-.narrow_lzDcNJ {
-  width: 600px;
+.narrow_3wogve {
+  width: 320px;
 }
 .card_OQEDys {
   background: var(--background-surface-high);
@@ -37,4 +53,4 @@
   min-width: 0;
 }
 
-/*# sourceMappingURL=940298.74cb69c0c2b079fa.css.map*/
+/*# sourceMappingURL=520218.00b9862c0e84d80d.css.map*/

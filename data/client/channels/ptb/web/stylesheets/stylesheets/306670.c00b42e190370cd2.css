@@ -1,0 +1,141 @@
+.subscribeButton_hpYwhZ {
+  flex-shrink: 0;
+  isolation: isolate;
+  position: relative;
+}
+.subscribeButton_hpYwhZ:before {
+  background: var(--background-brand);
+  border-radius: var(--radius-round);
+  content: "";
+  filter: blur(10px);
+  inset: 0;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+}
+.brandRefreshBanner_NPgbd9 {
+  align-items: center;
+  background: linear-gradient(
+      180deg,
+      transparent,
+      var(--background-base-lowest) 90%
+    ),
+    linear-gradient(
+      90deg in srgb,
+      color-mix(
+        in srgb,
+        var(--expressive-gradient-nitro-pink-start) 85%,
+        transparent
+      ),
+      color-mix(
+        in srgb,
+        var(--expressive-gradient-nitro-pink-end) 70%,
+        transparent
+      )
+    ),
+    var(--background-base-lowest);
+  border-bottom: 1px solid var(--border-subtle);
+  -moz-column-gap: var(--space-32);
+  column-gap: var(--space-32);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin: 0;
+  padding: var(--space-16);
+  position: relative;
+  row-gap: var(--space-4);
+}
+.light_NPgbd9 {
+  background: linear-gradient(
+      180deg,
+      transparent,
+      var(--background-surface-highest) 90%
+    ),
+    linear-gradient(
+      90deg in srgb,
+      color-mix(
+        in srgb,
+        var(--expressive-gradient-nitro-pink-start) 60%,
+        transparent
+      ),
+      color-mix(
+        in srgb,
+        var(--expressive-gradient-nitro-pink-end) 33%,
+        transparent
+      )
+    ),
+    var(--background-surface-highest);
+}
+.dismissible_NPgbd9 {
+  padding-block-start: var(--space-8);
+}
+.close_NPgbd9 {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  margin-inline-end: calc(var(--space-8) * -1);
+}
+.brandRefreshTitle_NPgbd9 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+.dismissible_NPgbd9 .brandRefreshTitle_NPgbd9 {
+  grid-column: 1;
+}
+.nitroWheel_NPgbd9 {
+  color: var(--text-strong);
+  flex-shrink: 0;
+}
+.description_NPgbd9 {
+  color: var(--text-muted);
+  grid-column: 1;
+  grid-row: 2;
+}
+.light_NPgbd9 .description_NPgbd9 {
+  color: var(--text-subtle);
+}
+.cta_NPgbd9 {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+}
+.subscribeButton_NPgbd9 {
+}
+.upsellOuter_KxXBlr {
+  border-radius: var(--radius-sm);
+  margin: 8px 12px;
+  position: relative;
+}
+.upsellInner_KxXBlr {
+  background: linear-gradient(
+      to right,
+      hsl(var(--premium-tier-2-purple-for-gradients-hsl) / 0.1) 0,
+      hsl(var(--premium-tier-2-pink-for-gradients-hsl) / 0.1) 100%
+    )
+    border-box;
+  border-radius: calc(var(--radius-sm) - 2px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+.upsellTitle_KxXBlr {
+  display: flex;
+  gap: 4px;
+}
+.nitroWheel_KxXBlr {
+  color: var(--text-strong);
+}
+.close_KxXBlr {
+  cursor: pointer;
+  inset-inline-end: 8px;
+  position: absolute;
+  top: 8px;
+}
+.closeIcon_KxXBlr {
+  color: var(--interactive-text-default);
+}
+
+/*# sourceMappingURL=306670.c00b42e190370cd2.css.map*/
