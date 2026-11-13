@@ -256,6 +256,7 @@
       t.exports = {
         z: "summary_NgozOX",
         zH: "details_NgozOX",
+        gz: "globalDetails_NgozOX",
         R_: "heading_NgozOX",
         Vy: "display_NgozOX",
         M1: "stats_NgozOX",
@@ -315,4 +316,4 @@
     },
   },
 ]);
-//# sourceMappingURL=335930.7eeff97435602c4b.js.map
+//# sourceMappingURL=335930.7b64696e789a9d58.js.map

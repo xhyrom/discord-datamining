@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [555628],
+  [776412],
   {
     592551(e, d, a) {
       a.r(
@@ -60,6 +60,9 @@
         }),
       );
     },
+    178709(e) {
+      e.exports = { D: "currentColor_XwP8-d" };
+    },
   },
 ]);
-//# sourceMappingURL=555628.e65c132333ce3e00.js.map
+//# sourceMappingURL=776412.733b094a6990787d.js.map

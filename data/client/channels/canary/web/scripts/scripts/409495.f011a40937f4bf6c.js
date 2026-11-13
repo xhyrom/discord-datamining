@@ -1,57 +1,17 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [26411],
+  [409495],
   {
-    286312(e) {
+    858779(e) {
       e.exports = {
-        Nr: "card_k0Unn4",
-        Bj: "cardInfo_k0Unn4",
-        jf: "statusRow_k0Unn4",
-        Rh: "statusLabel_k0Unn4",
-        SI: "guildSummary_k0Unn4",
-        vk: "clickable_k0Unn4",
-        hE: "trailingIcons_k0Unn4",
+        nw: "outerContainer__F9ieB",
+        yl: "modal__F9ieB",
+        jE: "modalContent__F9ieB",
+        h_: "modalContentInner__F9ieB",
       };
     },
-    939409(e) {
-      e.exports = {
-        kL: "container_UP1Jis",
-        P_: "textContent_UP1Jis",
-        Kk: "icon_UP1Jis",
-      };
-    },
-    599583(e) {
-      e.exports = {
-        E1: "chevronButton_hjEaPI",
-        j3: "chevronButtonContent_hjEaPI",
-      };
-    },
-    293686(e) {
-      e.exports = {
-        iE: "wrapper_Lh6jXA",
-        Qs: "content_Lh6jXA",
-        _M: "controlTitle_Lh6jXA",
-        E3: "toggleContainer_Lh6jXA",
-        $v: "toggleContainerOnlineRow_Lh6jXA",
-        fu: "toggleContainerText_Lh6jXA",
-        K2: "goOnlineButton_Lh6jXA",
-        yF: "divider_Lh6jXA",
-      };
-    },
-    35455(e) {
-      e.exports = {
-        iE: "wrapper_Yjv1d0",
-        Kk: "icon_Yjv1d0",
-        qS: "badge_Yjv1d0",
-      };
-    },
-    79958(e) {
-      e.exports = {
-        o1: "actions_IZv9tE",
-        IF: "panelButtonContainer_IZv9tE",
-        uD: "panelButtonShineWipeContainer_IZv9tE",
-        Z9: "panelButtonShineWipe_IZv9tE",
-      };
+    97580(e) {
+      e.exports = { v: "lockedLabel_QYKrWP" };
     },
     821095(e) {
       e.exports = {
@@ -99,9 +59,6 @@
         YW: "clipsModeSeparator_OAv3mC",
       };
     },
-    900795(e) {
-      e.exports = { Q: "text_ibfawj" };
-    },
   },
 ]);
-//# sourceMappingURL=26411.756fe2e695950d2d.js.map
+//# sourceMappingURL=409495.f011a40937f4bf6c.js.map

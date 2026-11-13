@@ -26,6 +26,51 @@
   right: 0;
   width: 6px;
 }
+.brandRefreshBanner_LCY8WT {
+  align-items: center;
+  border: 1px solid var(--border-subtle);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  border-top: none;
+  display: flex;
+  gap: var(--space-16);
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md) var(--space-sm);
+}
+.gradient_LCY8WT {
+  background-color: var(--background-surface-high);
+  background-image: linear-gradient(
+    90deg,
+    var(--expressive-gradient-nitro-pink-start),
+    var(--expressive-gradient-nitro-pink-end)
+  );
+}
+.gradient_LCY8WT a {
+  color: var(--text-link);
+}
+.gradient_LCY8WT.lightGradient_LCY8WT {
+  background-color: var(--background-base-lowest);
+  background-image: radial-gradient(
+      ellipse 100% 100% at 45% 100%,
+      color-mix(in srgb, var(--background-base-lowest) 80%, transparent),
+      transparent
+    ),
+    linear-gradient(
+      90deg in srgb,
+      color-mix(
+        in srgb,
+        var(--expressive-gradient-nitro-pink-start) 35%,
+        transparent
+      ),
+      color-mix(
+        in srgb,
+        var(--expressive-gradient-nitro-pink-end) 35%,
+        transparent
+      )
+    );
+  border-top: 1px solid var(--border-subtle);
+}
+.subscribeButton_LCY8WT {
+}
 .container_KljP7l {
   background: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
@@ -99,4 +144,4 @@
   padding: var(--space-sm) var(--space-md) var(--space-sm);
 }
 
-/*# sourceMappingURL=51382.793e8471b5d1483e.css.map*/
+/*# sourceMappingURL=384613.6a31a3ac91565293.css.map*/

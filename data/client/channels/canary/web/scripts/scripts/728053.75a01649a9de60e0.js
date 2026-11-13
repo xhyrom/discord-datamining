@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [512831],
+  [728053],
   {
     606290(e) {
       e.exports = { y: "divider_ZaYWLb" };
@@ -77,6 +77,34 @@
         JC: "accordion_K28c1O",
       };
     },
+    193579(e) {
+      e.exports = {
+        Tl: "unlock_mHDwp4",
+        U6: "pulse_mHDwp4",
+        qJ: "pulseHidden_mHDwp4",
+      };
+    },
+    589801(e) {
+      e.exports = {
+        Os: "group_3lradj",
+        as: "large_3lradj",
+        EX: "small_3lradj",
+        xH: "groupLevelUp_3lradj",
+        YC: "groupFirstUnlock_3lradj",
+        qd: "layer_3lradj",
+        R: "hidden_3lradj",
+        qG: "fadeIn_3lradj",
+        qS: "badge_3lradj",
+        rH: "oldBadgePlaying_3lradj",
+        CN: "newBadgePlaying_3lradj",
+        Qw: "art_3lradj",
+        ys: "glow_3lradj",
+        Nl: "oldGlow_3lradj",
+        Rt: "oldFillPlaying_3lradj",
+        Eq: "newFillPlaying_3lradj",
+        GS: "fill_3lradj",
+      };
+    },
     836825(e) {
       e.exports = {
         u4: "tierTimelineDescription_KpnIA4",
@@ -116,6 +144,10 @@
         c$: "legacyLabel_Nw13mb",
         cJ: "descriptionCardExtras_Nw13mb",
         Z6: "descriptionNotice_Nw13mb",
+        uT: "unlockHiding_Nw13mb",
+        CY: "unlockRevealing_Nw13mb",
+        BI: "unlockLabel_Nw13mb",
+        Dp: "unlockLabelPlaying_Nw13mb",
       };
     },
     921121(e) {
@@ -168,4 +200,4 @@
     },
   },
 ]);
-//# sourceMappingURL=512831.f04b35466957df18.js.map
+//# sourceMappingURL=728053.75a01649a9de60e0.js.map
