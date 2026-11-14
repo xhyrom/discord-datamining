@@ -10053,7 +10053,7 @@
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("672800", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("673556", 10))) || (l.client_build_number = d),
           null == (c = eE?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -152590,7 +152590,7 @@ ${a}`);
           n.e(859864).then(n.t.bind(n, 122123, 19));
         let e7 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eY.A().log(
-          `[BUILD INFO] Release Channel: ${e7}, Build Number: 672800, Version Hash: 192f6d25314632f052ac3d056a3c45e245159747`,
+          `[BUILD INFO] Release Channel: ${e7}, Build Number: 673556, Version Hash: c29ebbcbc24c00526ec34b126afe602344e7ae2c`,
         ),
           w.A.setTags({ appContext: H.QCW }),
           eg.A.initBasic(),
@@ -152687,7 +152687,7 @@ ${a}`);
               a =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : "672800";
+                  : "673556";
             if (__OVERLAY__) return;
             isNaN((r = parseInt(a ?? "", 10))) ||
               eB.Ay.setCrashInformation(ew.du.BuildNumber, r);
@@ -170786,7 +170786,7 @@ ${a}`);
                     className: td()(pp.Wz, pp.mr),
                     children: [
                       (0, v.jsx)(pI, { className: pp.Kk }),
-                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "672800" }),
+                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "673556" }),
                       (0, v.jsx)(r, {}),
                     ],
                   })
@@ -206964,7 +206964,7 @@ ${a}`);
                           (0, v.jsx)(GC.A, {
                             type: "editor",
                             iconSize: i,
-                            className: Gb.Gg,
+                            className: Gb.zT,
                           }),
                         ],
                       }),
@@ -257812,7 +257812,7 @@ html body ${z}, html body ${z} * {
                 (e) => {
                   if (
                     null == e.body ||
-                    "192f6d25314632f052ac3d056a3c45e245159747" === e.body.hash
+                    "c29ebbcbc24c00526ec34b126afe602344e7ae2c" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -268033,10 +268033,10 @@ html body ${z}, html body ${z} * {
                 t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("672800")),
+                  ((e = parseInt("673556")),
                   Number.isNaN(e) &&
                     (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 672800",
+                      "Trying to open a changelog for an invalid build number 673556",
                     ),
                     (e = 0)),
                   e),
@@ -342140,7 +342140,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "672800", versionHash: "192f6d25314632f052ac3d056a3c45e245159747" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "673556", versionHash: "c29ebbcbc24c00526ec34b126afe602344e7ae2c" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -434206,7 +434206,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             ? null
             : (0, i.jsxs)(l.B, {
                 as: "section",
-                gap: 8,
+                gap: 32,
                 fullWidth: !1,
                 className: b,
                 children: [
@@ -468773,8 +468773,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1794557937257",
-                      build_number: "672800",
+                      built_at: "1794612007631",
+                      build_number: "673556",
                     },
                   },
                   retries: 1,
@@ -491404,7 +491404,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             h = eu.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, r7.A)("1794557937257", !0);
+            let e = (0, r7.A)("1794612007631", !0);
             t =
               null != e
                 ? eH.intl.formatToPlainString(eH.t.wve4kg, {
@@ -663242,7 +663242,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "192f6d25314632f052ac3d056a3c45e245159747",
+                      "c29ebbcbc24c00526ec34b126afe602344e7ae2c",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", W),
@@ -674080,7 +674080,7 @@ ${l.join(" +\n")}
                   ).then((e) => {
                     let i = {
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        build_number: "672800",
+                        build_number: "673556",
                       },
                       u = o.default.getCurrentUser();
                     null != u &&
@@ -686138,7 +686138,7 @@ ${l.join(" +\n")}
       if (285558 === e) return "" + e + ".c27acdc581059d95.css";
       if (308378 === e) return "" + e + ".dfbea570e47191e5.css";
       if (72338 === e) return "" + e + ".18b94156a5159330.css";
-      if (226867 === e) return "" + e + ".23cd51038dd18494.css";
+      if (226867 === e) return "" + e + ".e8e787df73a59037.css";
       if (860350 === e) return "" + e + ".a3aa5b6762663e9d.css";
       if (454423 === e) return "" + e + ".0a3f0556c89e7f04.css";
       if (10071 === e) return "" + e + ".cacc4b8ab70679fd.css";
@@ -686196,7 +686196,7 @@ ${l.join(" +\n")}
       if (598059 === e) return "" + e + ".1fc7954b9c39c459.css";
       if (189908 === e) return "" + e + ".cfb33cdcd4f77851.css";
       if (884848 === e) return "" + e + ".becbefd83aa9d4ea.css";
-      if (469184 === e) return "" + e + ".b99c1ec396633093.css";
+      if (469184 === e) return "" + e + ".eed78d2c52696aa1.css";
       if (242187 === e) return "" + e + ".1874fb507666d71f.css";
       if (899003 === e) return "" + e + ".04084f0a7a2d60fa.css";
       if (811198 === e) return "" + e + ".982598e6dd8e9b30.css";
@@ -686499,7 +686499,7 @@ ${l.join(" +\n")}
           429224: "7acb5ecc92c512cd",
           431933: "52db3a72bc3206bf",
           432528: "7455e2355f14c738",
-          433665: "0dc504ed8299314c",
+          433665: "b8a255dc0fda00fa",
           434001: "5e8de6db65b31ad5",
           435751: "8467eb61399ac9b6",
           43578: "e66cf22576337826",
@@ -686752,7 +686752,7 @@ ${l.join(" +\n")}
           722765: "0c452eeb62e65ae2",
           722784: "6dd5d2b1f7cdedda",
           723180: "ce21c7a50975c2e9",
-          726184: "8748197fa5e669e0",
+          726184: "68f91e98fcf0a2d5",
           726464: "e8970e57a222ee3e",
           726542: "d5561353f7fb7505",
           728809: "ab76d5575a808a0b",
@@ -688394,7 +688394,7 @@ ${l.join(" +\n")}
           262754: "de38e0c54cde9fbd",
           262755: "83d706c7e53afda5",
           263025: "ede9bbfde018d02e",
-          263408: "04a539183b670f78",
+          263408: "6cd26b417887b51b",
           263506: "2d60ed72ed4348dc",
           263765: "213198be39cb65b0",
           263783: "82b53aa9940e33ed",
@@ -689529,7 +689529,7 @@ ${l.join(" +\n")}
           430634: "4653d92a7a392cbb",
           430858: "a49b4ce13dd834cf",
           430997: "bc7a4af9a08342d1",
-          431294: "36f31c63066da8a4",
+          431294: "294c22932adb72a8",
           431658: "cc0635aa688bf2db",
           431692: "ee790ed3101d08ac",
           431714: "9ac6c5f632d763bd",
@@ -689549,7 +689549,7 @@ ${l.join(" +\n")}
           433359: "39b2bc2f2898e5d3",
           433452: "5ed43284cf906101",
           43358: "602a678e41f43711",
-          433665: "eeff18fb1d04478e",
+          433665: "57b53e31cd089820",
           433778: "7167972a3edbc13a",
           433957: "da04de52aac15bcd",
           434001: "53a8ca8e424830d0",
@@ -690039,7 +690039,7 @@ ${l.join(" +\n")}
           498640: "b7cba5c1ad581a9c",
           498934: "a48d59a8b37591bc",
           499118: "ad0b2315dea731c5",
-          499240: "0e51bc664470d67a",
+          499240: "e99b6527abc05bfc",
           499312: "9b8764b7077787d9",
           499339: "fcf2acae1510fafc",
           499634: "1f813c7ab57e169d",
@@ -690088,7 +690088,7 @@ ${l.join(" +\n")}
           505236: "d8697a599fbda9d1",
           505264: "b560c3da08a237bb",
           505453: "c1ecafb77b5c82bb",
-          505468: "6efb827f3b175784",
+          505468: "493c3fa2ebf5000c",
           505642: "fddb96a891c0ba53",
           505764: "fea114450c946cfd",
           50592: "731034f9580eab43",
@@ -690209,7 +690209,7 @@ ${l.join(" +\n")}
           52159: "498c4526d0567fa5",
           521743: "c186ec21c2820d80",
           521761: "be1bbdd0cf092330",
-          521846: "30dcbe0a32154840",
+          521846: "2e43a792aafff9c2",
           521930: "9c25197ce9670e69",
           522011: "a16729814783ccc2",
           522261: "617e7edcd3e17452",
@@ -690462,7 +690462,7 @@ ${l.join(" +\n")}
           556025: "14ae1b9e3d94518f",
           556026: "1282cf31ff357c39",
           55604: "e391dfcff06d47b4",
-          5562: "3b9cca7a482d2c8c",
+          5562: "0ed91f31b0fe97bf",
           556385: "0dcc37b61fe08a2b",
           556436: "a0f6099311dc0073",
           556574: "52245450bb65f7ac",
@@ -691609,7 +691609,7 @@ ${l.join(" +\n")}
           725344: "1c44b4290d7ddc85",
           725851: "8245ea3e59b7473e",
           726082: "30a487e79382b044",
-          726184: "a610f96a4c4561d0",
+          726184: "08ddf73cc9157393",
           726223: "dc4ea661c20eb7a3",
           726294: "17e4e56d408345e7",
           726325: "79d3fbbbeefd3cdc",
@@ -692141,7 +692141,7 @@ ${l.join(" +\n")}
           797558: "43a932d5caff2755",
           797641: "1014adf07fd13545",
           798149: "9b481d704b25779d",
-          798161: "038f11dc9c7f8729",
+          798161: "9d1cf0a21367a43a",
           79819: "b82e5595d1b5ec6a",
           798236: "28b5bef3ee486e06",
           798354: "de9eb65b1e566420",
@@ -692629,7 +692629,7 @@ ${l.join(" +\n")}
           866805: "9d12bbbce3385dd6",
           866960: "8975c831dc7e670d",
           867160: "67b0096d29931c2d",
-          867473: "2d837963e12e6dae",
+          867473: "8271b5751224ea31",
           867646: "4849b510af5535b3",
           867807: "5e1195a881be2aa7",
           867856: "f9cca6132e63c370",
@@ -694230,4 +694230,4 @@ ${l.join(" +\n")}
   );
   N = p.O(N);
 })();
-//# sourceMappingURL=web.de87d610f53637ad.js.map
+//# sourceMappingURL=web.6bedf5fc276e9fcf.js.map
