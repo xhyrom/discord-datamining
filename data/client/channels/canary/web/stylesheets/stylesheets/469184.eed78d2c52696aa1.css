@@ -6,12 +6,12 @@
   overflow: hidden;
   position: relative;
 }
-.withGradient_hjotnx.withQuestHomeHeroContent_hjotnx:focus-within a,
+.withGradient_hjotnx.withQuestHomeHeroContent_hjotnx:has(:focus-visible) a,
 .withGradient_hjotnx.withQuestHomeHeroContent_hjotnx:hover a,
 .withOnboardingContent_hjotnx a {
   color: var(--text-strong) !important;
 }
-.withGradient_hjotnx.withQuestHomeHeroContent_hjotnx:focus-within svg,
+.withGradient_hjotnx.withQuestHomeHeroContent_hjotnx:has(:focus-visible) svg,
 .withGradient_hjotnx.withQuestHomeHeroContent_hjotnx:hover svg,
 .withOnboardingContent_hjotnx svg {
   color: var(--icon-strong) !important;
@@ -90,7 +90,7 @@
   transition: 0.125s;
   width: auto;
 }
-.withQuestHomeHeroContent_hjotnx:focus-within
+.withQuestHomeHeroContent_hjotnx:has(:focus-visible)
   .questHomeHeroBackgroundImage_hjotnx,
 .withQuestHomeHeroContent_hjotnx:hover .questHomeHeroBackgroundImage_hjotnx {
   opacity: 1;
@@ -133,4 +133,4 @@
   flex: 0 0 30%;
 }
 
-/*# sourceMappingURL=469184.b99c1ec396633093.css.map*/
+/*# sourceMappingURL=469184.eed78d2c52696aa1.css.map*/

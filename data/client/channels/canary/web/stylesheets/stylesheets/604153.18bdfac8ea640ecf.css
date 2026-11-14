@@ -87,6 +87,9 @@
   position: relative;
   z-index: 1;
 }
+.titleGroup_2dzrtJ:has(.eyebrow_2dzrtJ) {
+  margin-top: var(--space-12);
+}
 .title_2dzrtJ {
   font-family: var(--font-display-marketing-header);
   font-size: 16px;
@@ -106,4 +109,4 @@
   width: 100%;
 }
 
-/*# sourceMappingURL=604153.afda57fabd3f9dd5.css.map*/
+/*# sourceMappingURL=604153.18bdfac8ea640ecf.css.map*/

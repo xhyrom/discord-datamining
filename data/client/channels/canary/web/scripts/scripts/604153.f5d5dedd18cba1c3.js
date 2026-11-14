@@ -18,9 +18,9 @@
         fA: "graphic_2dzrtJ",
         qJ: "graphicAnimated_2dzrtJ",
         i8: "titleGroup_2dzrtJ",
+        UP: "eyebrow_2dzrtJ",
         DD: "title_2dzrtJ",
         x$: "titleNitro_2dzrtJ",
-        UP: "eyebrow_2dzrtJ",
       };
     },
     722058(t) {
@@ -33,4 +33,4 @@
     },
   },
 ]);
-//# sourceMappingURL=604153.b0604099ae87eb6a.js.map
+//# sourceMappingURL=604153.f5d5dedd18cba1c3.js.map
