@@ -22,9 +22,10 @@
         qS: "badge_hjotnx",
         q2: "shine_hjotnx",
         ys: "glow_hjotnx",
+        K5: "questHomeHeroLink_hjotnx",
         Nd: "questHomeHeroBackgroundImage_hjotnx",
       };
     },
   },
 ]);
-//# sourceMappingURL=469184.a165e8e650998830.js.map
+//# sourceMappingURL=469184.7d17588431f6ff01.js.map
