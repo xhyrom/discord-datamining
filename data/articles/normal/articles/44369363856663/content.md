@@ -111,6 +111,16 @@
     ><strong>Badge Directory</strong></a
   >.
 </p>
+<div class="info-box">
+  <span data-token-index="0"><strong>Note</strong></span
+  ><span data-token-index="1"
+    >: The Game Time, Game Variety, and Streaming badges only track activity on
+    the Discord desktop app, so games played on consoles don’t count. To track
+    progress, turn on Use data to personalize my Discord experience in </span
+  ><span data-token-index="2"
+    ><strong>User Settings &gt; Data &amp; Privacy</strong></span
+  ><span data-token-index="3">. Progress may take some time to update.</span>
+</div>
 <h2 id="h_01M5B09PE0F12R934RRW1QEGZJ">Account Age Badge</h2>
 <figure class="wysiwyg-image">
   <img
@@ -672,22 +682,52 @@
   A: No. These badges can only be unlocked and leveled up using the Discord
   desktop app.
 </p>
-<p><strong>Q: Why isn't my badge progress updating?</strong></p>
-<p dir="ltr">
-  A: Badge progress may take some time to reflect your recent activity. If your
-  progress still does not update, confirm that you are using the Discord desktop
-  app and that the
-  <strong>Use data to personalize my Discord experience</strong> setting is
-  enabled. For instructions on enabling this setting, see
-  <a href="https://support.discord.com/hc/en-us/articles/21865322754327"
-    >Data Used to Personalize Discord</a
-  >.
+<p>
+  <strong
+    >Q: Why isn't my Game Time, Game Variety, or Streaming badge progress
+    updating?</strong
+  >
 </p>
-<p dir="ltr">
+<p>
+  A: Badge progress may take some time to reflect your recent activity. Here are
+  a few other things that affect progress for these badges:
+</p>
+<ul>
+  <li data-list-item-id="e423836982883ccb2900eba9135b7575a">
+    Game Time, Game Variety, and Streaming only track activity on the Discord
+    desktop app.
+  </li>
+  <li data-list-item-id="e373da17ccb24b2fb8ebb8ff1b1989993">
+    Game Time counts play from December 8, 2025 onward. Streaming counts screen
+    sharing from January 1, 2024 onward, when at least one other person is in
+    the call.
+  </li>
+  <li data-list-item-id="eff47b0e30f58ac1c0fc59f35703a6fab">
+    Game Variety detects most games automatically, but some very small games may
+    not be recognized, and some platforms count as a single game.
+  </li>
+  <li data-list-item-id="e622bdcf33ca5261c9a5ab13589ee7246">
+    To earn progress, turn on
+    <strong
+      >User Settings &gt; Data &amp; Privacy &gt; Use data to personalize my
+      Discord experience</strong
+    >. For instructions on enabling this setting, see
+    <a
+      href="https://support.discord.com/hc/en-us/articles/21865322754327"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Data Used to Personalize Discord</a
+    >.
+  </li>
+</ul>
+<p>
   Once you earn a badge, it appears in your Badge Directory along with details
   about how it was earned. To learn how to hide or reorder the badges on your
   profile, see
-  <a href="https://support.discord.com/hc/en-us/articles/44393096706583"
+  <a
+    href="https://support.discord.com/hc/en-us/articles/44393096706583"
+    target="_blank"
+    rel="noopener noreferrer"
     >How to Manage Your Discord Profile Badges</a
   >.
 </p>

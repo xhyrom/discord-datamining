@@ -453,6 +453,44 @@
   >
   for details on how to earn each badge.
 </p>
+<p>
+  <strong
+    >Q: Why isn’t my Game Time, Game Variety, or Streaming badge progress
+    updating?</strong
+  >
+</p>
+<p>A: Here are a few things that affect progress for these badges:</p>
+<ul>
+  <li data-list-item-id="e6325c021956b15cf69961d49dc6c3f04">
+    <strong>Game Time</strong>, <strong>Game Variety</strong>, and
+    <strong>Streaming</strong> only track activity on the Discord desktop app.
+  </li>
+  <li data-list-item-id="e6eb554344e62584883a484e7ef5564fb">
+    Game Time counts play from December 8, 2025 onward. Streaming counts screen
+    sharing from January 1, 2024 onward, when at least one other person is in
+    the call.
+  </li>
+  <li data-list-item-id="e1d5b1d6e771948e0ebf9e14a59e40a36">
+    Game Variety detects most games automatically, but some very small games may
+    not be recognized, and some platforms count as a single game.
+  </li>
+  <li data-list-item-id="e31035feeb34e67a804c1c6eda154464d">
+    To earn progress, turn on
+    <strong
+      >User Settings &gt; Data &amp; Privacy &gt; Use data to personalize my
+      Discord experience</strong
+    >.
+  </li>
+</ul>
+<p>
+  For details on what counts toward each badge, visit
+  <a
+    href="https://support.discord.com/hc/en-us/articles/44369363856663"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Profile Badges: What Each Badge Means</a
+  >.
+</p>
 <p><strong>Q: Can I hide my Nitro badge?</strong></p>
 <p>
   A: No, Nitro badges are always visible. Nitro badges let others know why your
