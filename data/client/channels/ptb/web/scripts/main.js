@@ -10053,7 +10053,7 @@
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("673556", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("673764", 10))) || (l.client_build_number = d),
           null == (c = eE?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -137631,66 +137631,67 @@ ${a}`),
               icon: a,
               iconClassName: l,
               interactiveClassName: o,
-              text: c,
-              children: u,
-              locationState: A,
-              onClick: f,
-              className: h,
-              role: I,
-              "aria-posinset": p,
-              "aria-setsize": m,
-              listItemRef: T,
-              showHoverGradient: g = !1,
-              nitroHoverGradient: S = !1,
-              hoverGradientStart: N,
-              hoverGradientMiddle: C,
-              hoverGradientEnd: R,
-              ...L
+              linkClassName: c,
+              text: u,
+              children: A,
+              locationState: f,
+              onClick: h,
+              className: I,
+              role: p,
+              "aria-posinset": m,
+              "aria-setsize": T,
+              listItemRef: g,
+              showHoverGradient: S = !1,
+              nitroHoverGradient: N = !1,
+              hoverGradientStart: C,
+              hoverGradientMiddle: R,
+              hoverGradientEnd: L,
+              ...y
             } = e,
-            { width: y, ref: D } = (0, P.Ay)(),
-            b = r.useRef(null),
+            { width: D, ref: b } = (0, P.Ay)(),
             v = r.useRef(null),
-            M = (0, _.A)(T, b);
+            M = r.useRef(null),
+            U = (0, _.A)(g, v);
           return (0, i.jsx)(eE, {
-            className: s()(eM.Ix, { [eM.Ij]: E.Fr }, h),
-            onClick: f,
-            role: I,
-            focusProps: { ...ew, focusTarget: v, ringTarget: b },
-            "aria-posinset": p,
-            "aria-setsize": m,
-            ref: M,
+            className: s()(eM.Ix, { [eM.Ij]: E.Fr }, I),
+            onClick: h,
+            role: p,
+            focusProps: { ...ew, focusTarget: M, ringTarget: v },
+            "aria-posinset": m,
+            "aria-setsize": T,
+            ref: U,
             children: (0, i.jsxs)(O.H, {
               as: "div",
               selected: n,
               className: s()(o, eM.bG, eM.$J, { [eM.Q2]: n }),
               children: [
-                g &&
+                S &&
                   (0, i.jsx)(eV, {
-                    eventTargetRef: b,
-                    isNitro: S,
-                    contentWidth: y,
-                    hoverGradientStart: N,
-                    hoverGradientMiddle: C,
-                    hoverGradientEnd: R,
+                    eventTargetRef: v,
+                    isNitro: N,
+                    contentWidth: D,
+                    hoverGradientStart: C,
+                    hoverGradientMiddle: R,
+                    hoverGradientEnd: L,
                   }),
                 (0, i.jsxs)(d.N_, {
-                  to: { pathname: t, state: A },
-                  className: eM.nf,
-                  innerRef: v,
-                  ...L,
+                  to: { pathname: t, state: f },
+                  className: s()(eM.nf, c),
+                  innerRef: M,
+                  ...y,
                   children: [
                     (0, i.jsx)(B.A, {
-                      ref: g ? D : void 0,
+                      ref: S ? b : void 0,
                       muted: !1,
                       avatar: (0, i.jsx)(a, {
                         size: "refresh_sm",
                         className: s()(eM.e_, l),
                         color: "currentColor",
                       }),
-                      name: c,
+                      name: u,
                       innerClassName: eM.xx,
                     }),
-                    u,
+                    A,
                   ],
                 }),
               ],
@@ -152590,7 +152591,7 @@ ${a}`);
           n.e(859864).then(n.t.bind(n, 122123, 19));
         let e7 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eY.A().log(
-          `[BUILD INFO] Release Channel: ${e7}, Build Number: 673556, Version Hash: c29ebbcbc24c00526ec34b126afe602344e7ae2c`,
+          `[BUILD INFO] Release Channel: ${e7}, Build Number: 673764, Version Hash: 1a91563be4fe77c3fbd15a4071b3893cdbe1167b`,
         ),
           w.A.setTags({ appContext: H.QCW }),
           eg.A.initBasic(),
@@ -152687,7 +152688,7 @@ ${a}`);
               a =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : "673556";
+                  : "673764";
             if (__OVERLAY__) return;
             isNaN((r = parseInt(a ?? "", 10))) ||
               eB.Ay.setCrashInformation(ew.du.BuildNumber, r);
@@ -170206,6 +170207,7 @@ ${a}`);
                   hoverGradientMiddle: L?.middle,
                   hoverGradientEnd: L?.end,
                   className: td()({ [IQ.VU]: C || y, [IQ.jR]: C, [IQ.XO]: l }),
+                  linkClassName: l ? IQ.K5 : void 0,
                   icon: aV.QuestsIcon,
                   listItemRef: i,
                   onClick: _,
@@ -170786,7 +170788,7 @@ ${a}`);
                     className: td()(pp.Wz, pp.mr),
                     children: [
                       (0, v.jsx)(pI, { className: pp.Kk }),
-                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "673556" }),
+                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "673764" }),
                       (0, v.jsx)(r, {}),
                     ],
                   })
@@ -257812,7 +257814,7 @@ html body ${z}, html body ${z} * {
                 (e) => {
                   if (
                     null == e.body ||
-                    "c29ebbcbc24c00526ec34b126afe602344e7ae2c" === e.body.hash
+                    "1a91563be4fe77c3fbd15a4071b3893cdbe1167b" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -268033,10 +268035,10 @@ html body ${z}, html body ${z} * {
                 t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("673556")),
+                  ((e = parseInt("673764")),
                   Number.isNaN(e) &&
                     (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 673556",
+                      "Trying to open a changelog for an invalid build number 673764",
                     ),
                     (e = 0)),
                   e),
@@ -342140,7 +342142,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "673556", versionHash: "c29ebbcbc24c00526ec34b126afe602344e7ae2c" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "673764", versionHash: "1a91563be4fe77c3fbd15a4071b3893cdbe1167b" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -468773,8 +468775,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1794612007631",
-                      build_number: "673556",
+                      built_at: "1794624345304",
+                      build_number: "673764",
                     },
                   },
                   retries: 1,
@@ -491404,7 +491406,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             h = eu.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, r7.A)("1794612007631", !0);
+            let e = (0, r7.A)("1794624345304", !0);
             t =
               null != e
                 ? eH.intl.formatToPlainString(eH.t.wve4kg, {
@@ -663242,7 +663244,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "c29ebbcbc24c00526ec34b126afe602344e7ae2c",
+                      "1a91563be4fe77c3fbd15a4071b3893cdbe1167b",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", W),
@@ -674080,7 +674082,7 @@ ${l.join(" +\n")}
                   ).then((e) => {
                     let i = {
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        build_number: "673556",
+                        build_number: "673764",
                       },
                       u = o.default.getCurrentUser();
                     null != u &&
@@ -686196,7 +686198,7 @@ ${l.join(" +\n")}
       if (598059 === e) return "" + e + ".1fc7954b9c39c459.css";
       if (189908 === e) return "" + e + ".cfb33cdcd4f77851.css";
       if (884848 === e) return "" + e + ".becbefd83aa9d4ea.css";
-      if (469184 === e) return "" + e + ".eed78d2c52696aa1.css";
+      if (469184 === e) return "" + e + ".baba10bd82df7af0.css";
       if (242187 === e) return "" + e + ".1874fb507666d71f.css";
       if (899003 === e) return "" + e + ".04084f0a7a2d60fa.css";
       if (811198 === e) return "" + e + ".982598e6dd8e9b30.css";
@@ -688394,7 +688396,7 @@ ${l.join(" +\n")}
           262754: "de38e0c54cde9fbd",
           262755: "83d706c7e53afda5",
           263025: "ede9bbfde018d02e",
-          263408: "6cd26b417887b51b",
+          263408: "20be4775c8343bdf",
           263506: "2d60ed72ed4348dc",
           263765: "213198be39cb65b0",
           263783: "82b53aa9940e33ed",
@@ -688615,7 +688617,7 @@ ${l.join(" +\n")}
           294838: "7a2e84da3f4a456c",
           294857: "73d5fba3085633c7",
           29489: "64a66aaad91d62f7",
-          294923: "e5a59ac1e90f2586",
+          294923: "bb80d24599561502",
           29503: "07159fbd65e02845",
           295390: "ae402847bc9b4e03",
           29542: "bd53f41c7ab75688",
@@ -689529,7 +689531,7 @@ ${l.join(" +\n")}
           430634: "4653d92a7a392cbb",
           430858: "a49b4ce13dd834cf",
           430997: "bc7a4af9a08342d1",
-          431294: "294c22932adb72a8",
+          431294: "15a74f443a1784a9",
           431658: "cc0635aa688bf2db",
           431692: "ee790ed3101d08ac",
           431714: "9ac6c5f632d763bd",
@@ -690209,7 +690211,7 @@ ${l.join(" +\n")}
           52159: "498c4526d0567fa5",
           521743: "c186ec21c2820d80",
           521761: "be1bbdd0cf092330",
-          521846: "2e43a792aafff9c2",
+          521846: "a189b4214792b45a",
           521930: "9c25197ce9670e69",
           522011: "a16729814783ccc2",
           522261: "617e7edcd3e17452",
@@ -692141,7 +692143,7 @@ ${l.join(" +\n")}
           797558: "43a932d5caff2755",
           797641: "1014adf07fd13545",
           798149: "9b481d704b25779d",
-          798161: "9d1cf0a21367a43a",
+          798161: "0926853e6059ce1a",
           79819: "b82e5595d1b5ec6a",
           798236: "28b5bef3ee486e06",
           798354: "de9eb65b1e566420",
@@ -692629,7 +692631,7 @@ ${l.join(" +\n")}
           866805: "9d12bbbce3385dd6",
           866960: "8975c831dc7e670d",
           867160: "67b0096d29931c2d",
-          867473: "8271b5751224ea31",
+          867473: "b9f4396d799ff683",
           867646: "4849b510af5535b3",
           867807: "5e1195a881be2aa7",
           867856: "f9cca6132e63c370",
@@ -694230,4 +694232,4 @@ ${l.join(" +\n")}
   );
   N = p.O(N);
 })();
-//# sourceMappingURL=web.6bedf5fc276e9fcf.js.map
+//# sourceMappingURL=web.25de09cac6a6078d.js.map

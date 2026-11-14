@@ -76,6 +76,9 @@
   height: 100%;
   width: 100%;
 }
+.questHomeHeroLink_hjotnx {
+  isolation: isolate;
+}
 .questHomeHeroBackgroundImage_hjotnx {
   bottom: 0;
   height: 100%;
@@ -89,6 +92,7 @@
   top: 0;
   transition: 0.125s;
   width: auto;
+  z-index: -1;
 }
 .withQuestHomeHeroContent_hjotnx:has(:focus-visible)
   .questHomeHeroBackgroundImage_hjotnx,
@@ -133,4 +137,4 @@
   flex: 0 0 30%;
 }
 
-/*# sourceMappingURL=469184.eed78d2c52696aa1.css.map*/
+/*# sourceMappingURL=469184.baba10bd82df7af0.css.map*/
