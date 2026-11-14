@@ -3828,11 +3828,7 @@
   },
   "BOGO_PROMOTIONS": {
     "url": "/bogo-promotions",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "CLAIMED_OUTBOUND_PROMOTION_CODES": {
     "url": "/users/@me/outbound-promotions/codes",
