@@ -84,9 +84,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/44428373565719"
+    src="https://support.discord.com/hc/article_attachments/44930192449047"
     alt="Web Presence in Server Settings"
-    width="1440"
+    width="1263"
     height="1024"
   />
 </p>
@@ -127,20 +127,22 @@
 </p>
 <ul>
   <li data-list-item-id="e4898ae5daa184a4925d045927a123926">
-    <strong>Channel Summaries on the web:</strong> These show a small slice of
-    what's being talked about in your server, directly on your Server Web Page.
-    These automated summaries focus on active conversations from November 16,
-    2026, onwards. Admins can change which channels they draw from, curate the
-    summaries that are shown, or turn them off entirely. Usernames and avatars
-    will not be shown in summaries.
+    <strong>Channel Summaries on the web:</strong> These automated summaries
+    show a small slice of what's being talked about in your server, directly on
+    your Server Web Page. Admins can change which channels they draw from,
+    remove individual summaries, or turn them off entirely. Usernames and
+    avatars will not be shown in summaries. Summaries won't include anything
+    from before November 16, 2026, when the feature launched. If your server
+    becomes Discoverable later, Channel Summaries only include conversations
+    from the date it became Discoverable.
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/44428410255383"
-    alt="Channel Summaries channel settings"
-    width="1035"
-    height="949"
+    src="https://support.discord.com/hc/article_attachments/44930176720663"
+    alt="Channel Summaries Channel Settings"
+    width="1109"
+    height="739"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_caption_channel_summaries_settings">
@@ -152,13 +154,16 @@
     answers to questions your members sent in public channels can be found in a
     web search, in their own words. Server admins decide which channels take
     part, and server members can choose whether their own messages appear.
-    Usernames and avatars will not be shown alongside these messages.
+    Usernames and avatars will not be shown alongside these messages. Channel
+    Messages won't include anything from before mid-December 2026, when the
+    feature launches. If your server becomes Discoverable later, Channel
+    Messages will only include messages from the date it became Discoverable.
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/44428410256023"
-    alt="Channel Messages settings"
+    src="https://support.discord.com/hc/article_attachments/44930176721303"
+    alt="Channel Messages Settings"
     width="1440"
     height="1024"
   />
@@ -168,14 +173,22 @@
 </h4>
 <h2 id="h_what_makes_a_channel_eligible">What makes a channel eligible?</h2>
 <p>
-  From November 16, 2026, summaries from public channels in your Discoverable
-  Server may appear on your Server Web Page. Starting mid-December 2026,
-  messages from public channels can appear too. Private channels, like
-  role-restricted channels, are never included.
+  A server must be Discoverable to use Channel Summaries on the web or Channel
+  Messages on the web. Private and role-restricted channels are not included.
 </p>
 <p>
-  Channels taking part in Channel Summaries or Channel Messages are labeled,
-  with an icon in the channel header.
+  From November 16, 2026, summaries of conversations in public channels may
+  appear on your Server Web Page. From mid-December 2026, messages from public
+  channels may begin appearing too, though it can take a few weeks for them to
+  show up. Neither feature includes anything sent before its launch. If your
+  server becomes Discoverable after those dates, each feature only includes
+  content from the date your server became Discoverable.
+</p>
+<p>
+  Channels taking part in Channel Summaries or Channel Messages are labeled with
+  the word "Discoverable" in the channel header.You'll also see a pop-up near
+  the channel header letting you know before you post. This pop-up reappears any
+  time a channel newly enables this feature.
 </p>
 <p>
   Public channels in Discoverable Servers are included by default. You can
@@ -210,6 +223,51 @@
   >. Discord's Trust &amp; Safety team can remove summaries that violate these
   guidelines.
 </p>
+<p>
+  To remove a Channel Summary that's currently live on your Server Web Page:
+</p>
+<p>
+  1. Scroll down to <strong>Review content shown on the web </strong>and select
+  <strong>Review</strong>.
+</p>
+<p>
+  2. Hover over the summary you want to remove, then select the
+  <strong>trash icon</strong>.
+</p>
+<figure class="wysiwyg-image">
+  <img
+    style="aspect-ratio: 2880/2048"
+    src="https://support.discord.com/hc/article_attachments/44930192463895"
+    alt="Settings page: Review Content Shown on the Web in Web Presence Settings"
+    width="2880"
+    height="2048"
+  />
+</figure>
+<h4 class="wysiwyg-text-align-center" id="h_01M716HFE9PB7HJ01TGXX73RBC">
+  <span style="color: #666666"
+    >Review Content Shown on the Web in Web Presence Settings</span
+  >
+</h4>
+<p>
+  <span data-token-index="0"
+    >Removing a summary only affects your Server Web Page. Your messages and
+    channels on Discord stay the same.</span
+  >
+</p>
+<figure class="wysiwyg-image">
+  <img
+    style="aspect-ratio: 2065/1645"
+    src="https://support.discord.com/hc/article_attachments/44930192464791"
+    alt="Channel Summaries window: Trash Icon on a Channel Summary in the Review Window"
+    width="2065"
+    height="1645"
+  />
+</figure>
+<h4 class="wysiwyg-text-align-center" id="h_01M716HFE986YKY5S8DPB5ZQQE">
+  <span style="color: #666666"
+    >Trash Icon on a Channel Summary in the Review Window</span
+  >
+</h4>
 <h2 id="h_channel_messages_on_the_web">Channel Messages on the Web</h2>
 <p>
   Choose which channels are eligible to have members' messages shown on the
@@ -231,8 +289,8 @@
   When you create a public text channel in a Discoverable Server, the channel
   creation window includes a <strong>Discoverable</strong> section where you can
   choose <strong>All Content</strong>, <strong>Summaries Only</strong>,
-  <strong>Messages Only</strong>, or <strong>Off</strong>. This only changes the
-  channel you're creating. For private channels, this section shows as
+  <strong>Messages Only</strong>, or <strong>None</strong>. This only changes
+  the channel you're creating. For private channels, this section shows as
   <strong>Disabled</strong>.
 </p>
 <h1 id="h_removing_content_from_the_web">Removing Content from the Web</h1>
@@ -241,6 +299,13 @@
   <li data-list-item-id="e4c16cfc9421c391a7f10ff491f926c07">
     <strong>Delete the message.</strong> Deleting a message removes it from the
     Discord app and Discord web pages.
+  </li>
+  <li data-list-item-id="ee7f531fa5f6a2c9720157fef67f6c243">
+    <span data-token-index="0"
+      ><strong>Remove</strong> <strong>summaries</strong>.</span
+    >
+    In Web Presence &gt; Review content shown on the web, you can remove Channel
+    Summaries that are currently published on your server’s web pages.
   </li>
   <li data-list-item-id="e25fad42650e0755bbe7448c5409c1326">
     <strong>Turn off the feature.</strong> Toggling off Channel Summaries or
@@ -276,10 +341,13 @@
 </p>
 <p><strong>Q: What happens if I don't do anything?</strong></p>
 <p>
-  A: If you don't do anything, starting November 16, 2026, Channel Summaries may
-  start appearing on your Server Web Page, and Channel Messages will roll out
-  starting mid-December 2026. If you haven't published your own Server Web Page,
-  a default page goes live for you on November 16, 2026.
+  <span data-token-index="0" data-notion-highlight="default"
+    >A: If you don't do anything, starting November 16, 2026, Channel Summaries
+    may start appearing on your Server Web Page, and Channel Messages will roll
+    out starting mid-December 2026. If you haven't published your own Server Web
+    Page, a default page goes live for you on November 16, 2026. I</span
+  >f your server becomes Discoverable after November 16, each feature only
+  includes content from the date your server became Discoverable.
 </p>
 <p>
   In some regions, members' Channel Messages setting is off by default, so their
@@ -296,10 +364,24 @@
   >
 </p>
 <p>
-  A: Turning off a feature stops new content from being generated or shown going
-  forward. Content already published may remain visible until it's individually
-  removed. Deleting a message removes its visibility on the Discord app and
-  Discord web pages. While Discord has its own
+  <span data-token-index="0" data-notion-highlight="default"
+    >A: Turning off a feature stops new content from being generated or shown
+    going forward. Content already published may remain visible until it's
+    individually removed. Deleting a message removes its visibility on the
+    Discord app and </span
+  ><span data-token-index="1" data-notion-highlight="default"
+    >Discord web pages</span
+  ><span data-token-index="2" data-notion-highlight="default"
+    >. You can remove Channel Summaries that are live on your
+    <strong>Server Web Page via </strong></span
+  ><span data-token-index="3" data-notion-highlight="default"
+    ><strong>Server Settings &gt; Web Presence &gt; Review</strong></span
+  ><span data-token-index="4" data-notion-highlight="default"
+    ><strong> content on the web</strong>.</span
+  >
+</p>
+<p>
+  While Discord has its own
   <a
     href="https://support.discord.com/hc/en-us/articles/5431812448791-How-long-Discord-keeps-your-information"
     >data retention policy</a
@@ -388,7 +470,7 @@
     href="https://support.discord.com/hc/articles/44302319454359"
     target="_blank"
     rel="noopener noreferrer"
-    >Discoverable Content on Web</a
+    >Discoverable Content the on Web</a
   >
   to learn more about individual user controls.
 </p>

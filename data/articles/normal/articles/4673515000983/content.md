@@ -91,39 +91,7 @@
 <p>
   2. Under <strong>Community</strong>, select <strong>Web Presence</strong>.
 </p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/44429705468055"
-    alt="Web Presence is under Community in Server Settings."
-    width="1440"
-    height="1024"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_caption_web_presence_location">
-  <span style="color: #666666"
-    ><strong>Web Presence</strong> is under <strong>Community</strong> in Server
-    Settings.</span
-  >
-</h4>
 <p>3. Edit your server’s <strong>Landing Page</strong>.</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/44429705468823"
-    alt="Complete each requirement in the Landing Page panel, then select Publish Landing Page."
-    width="988"
-    height="669"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_caption_landing_page_panel">
-  <span style="color: #666666"
-    >Complete each requirement in the <strong>Landing Page</strong> panel, then
-    select <strong>Publish Landing Page</strong>.</span
-  >
-</h4>
-<p>
-  4. Once your page is live, select <strong>View Page</strong> to see it. You
-  can update your page content at any time after publishing.
-</p>
 <h1 id="h_what_content_should_i_add">
   What content should I add to my Server Web Page?
 </h1>
@@ -154,6 +122,31 @@
   only cover conversations from November 16, 2026, onwards. Admins can change
   which channels they draw from, curate the summaries that are shown, or turn
   them off entirely. Usernames will not be shown in summaries.
+</p>
+<p>
+  To remove a Channel Summary that's currently live on your Server Web Page:
+</p>
+<ol>
+  <li data-list-item-id="e5e18eb1fecf70a5343206f08f5c53f8a">
+    Open <strong>Server Settings</strong>.
+  </li>
+  <li data-list-item-id="eb5faa3336afabf2a549c4a76ec48cfaf">
+    Under <strong>Community</strong>, select <strong>Web Presence</strong>.
+  </li>
+  <li data-list-item-id="e452215060392fae3998829ad8a0dde31">
+    Scroll down to <strong>Review content shown on the web</strong>.
+  </li>
+  <li data-list-item-id="e54a7e9c46ac25c1e3d8412386c6aef00">
+    Select <strong>Review</strong>.
+  </li>
+  <li data-list-item-id="ef66c7611f22314338146e88d807a370a">
+    Hover over the summary you want to remove, then select the
+    <strong>trash icon</strong>.
+  </li>
+</ol>
+<p>
+  Removing a summary only affects your Server Web Page. Your messages and
+  channels on Discord stay the same.
 </p>
 <p>
   <strong>Channel Messages.</strong> From mid-December 2026, answers to

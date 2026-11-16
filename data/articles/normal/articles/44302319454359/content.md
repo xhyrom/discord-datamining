@@ -4,6 +4,15 @@
   or as summaries of a channel's conversation. This article explains what that
   means for you as a member and how you can control your own content.
 </p>
+<div class="book-box">
+  Learn more about these changes in our
+  <a
+    href="http://dis.gd/discoverable-servers-update"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discoverable Servers update</a
+  >.
+</div>
 <div class="toc-box">
   <p>
     <span class="wysiwyg-font-size-x-large"
@@ -67,14 +76,20 @@
     automated summaries only cover discussions from November 16, 2026 onward.
     Admins can change which channels they draw from, curate the summaries that
     are shown, or turn them off entirely. Usernames will not be shown in
-    summaries.
+    summaries. Summaries won't include anything from before November 16, 2026,
+    when the feature launched. If your server becomes Discoverable later,
+    Channel Summaries only include conversations from the date it became
+    Discoverable.
   </li>
   <li data-list-item-id="e2a8a8c828fdb54de48cf1898be0a17d9">
     <strong>Channel Messages on the web:</strong> From mid-December 2026,
     answers to questions your members sent in public channels can be found in a
     web search, in their own words. Server admins decide which channels take
     part, and server members can choose whether their own messages appear.
-    Usernames and avatars will not be shown alongside these messages.
+    Usernames and avatars will not be shown alongside these messages. Channel
+    Messages won't include anything from before mid-December 2026, when the
+    feature launches. If your server becomes Discoverable later, Channel
+    Messages will only include messages from the date it became Discoverable. 
   </li>
 </ul>
 <h1 id="h_how_will_i_know_if_this_applies">
@@ -82,10 +97,39 @@
 </h1>
 <p>
   Discoverable content on the web can only appear from public channels in a
-  Discoverable Server. Channels taking part in Channel Summaries or Channel
-  Messages are labeled, with an icon in the channel header, so you know before
-  you send a message. 
+  Discoverable Server.
+  <span data-token-index="0" data-notion-highlight="default"
+    >Channels taking part in Channel Summaries or Channel Messages are </span
+  ><span data-token-index="1" data-notion-highlight="default">labeled</span
+  ><span data-token-index="2" data-notion-highlight="default">
+    "Discoverable" in the channel header, so you know before you send a
+    message.</span
+  >
 </p>
+<p>
+  <img
+    class="wysiwyg-image-resized"
+    style="aspect-ratio: 1888/1134; width: 75.01%"
+    src="https://support.discord.com/hc/article_attachments/44930161057303"
+    alt="Discoverable Label and Pop-Up in the Channel Header on Desktop"
+    width="1888"
+    height="1134"
+  />
+    <img
+    class="wysiwyg-image-resized wysiwyg-image"
+    style="aspect-ratio: 780/1688; width: 20.69%"
+    src="https://support.discord.com/hc/article_attachments/44930168092823"
+    alt="Discoverable Label and Pop-Up in the Channel Header on Mobile"
+    width="780"
+    height="1688"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01M70KM30F6N0V4THGGXMN81J0">
+  <span style="color: #666666"
+    >Discoverable Label and Pop-Up in the Channel Header on Desktop (Left) and
+    Mobile (Right)</span
+  >
+</h4>
 <p>
   You'll also see a pop-up near the channel header letting you know before you
   post. This pop-up reappears any time a channel newly enables this feature.
@@ -126,10 +170,10 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/44428817895063"
-    alt="Data &amp; Privacy setting for web pages"
-    width="1278"
-    height="801"
+    src="https://support.discord.com/hc/article_attachments/44930161060119"
+    alt="Privacy &amp; Data - Desktop (2).png"
+    width="1162"
+    height="810"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_caption_data_privacy_setting">
@@ -209,6 +253,18 @@
     >Show my message content from Discoverable channels on web pages</strong
   >). This applies to messages you send from then on. Messages you sent while
   the setting was on can still appear on the web.
+</p>
+<p>
+  <strong
+    >Q: Can I stop my messages from being included in Channel Summaries?</strong
+  >
+</p>
+<p>
+  A: There's currently no dedicated Channel Summaries opt-out. Turning off
+  <strong>Data Used to Improve Discord</strong> keeps your messages out of
+  Channel Summaries, but could affect other features and analytics that use data
+  to improve your Discord experience. These changes affect content going
+  forward.
 </p>
 <p>
   <strong
