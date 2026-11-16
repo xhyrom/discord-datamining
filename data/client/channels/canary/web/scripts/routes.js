@@ -9995,7 +9995,7 @@
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("673852", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("673879", 10))) || (l.client_build_number = d),
           null == (c = eE?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -152583,7 +152583,7 @@ ${a}`);
           n.e(859864).then(n.t.bind(n, 122123, 19));
         let e7 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eY.A().log(
-          `[BUILD INFO] Release Channel: ${e7}, Build Number: 673852, Version Hash: e76753e0333dc7ee45c9283dffeef52e26942c75`,
+          `[BUILD INFO] Release Channel: ${e7}, Build Number: 673879, Version Hash: baed52c3077584fdfc040cb0a317d6a40e504bad`,
         ),
           w.A.setTags({ appContext: H.QCW }),
           eg.A.initBasic(),
@@ -152680,7 +152680,7 @@ ${a}`);
               a =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : "673852";
+                  : "673879";
             if (__OVERLAY__) return;
             isNaN((r = parseInt(a ?? "", 10))) ||
               eB.Ay.setCrashInformation(ew.du.BuildNumber, r);
@@ -170634,7 +170634,7 @@ ${a}`);
                     className: td()(pu.Wz, pu.mr),
                     children: [
                       (0, v.jsx)(pc, { className: pu.Kk }),
-                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "673852" }),
+                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "673879" }),
                       (0, v.jsx)(r, {}),
                     ],
                   })
@@ -247113,180 +247113,179 @@ html body ${z}, html body ${z} * {
       },
       236814(e, t, n) {
         "use strict";
-        n.d(t, { N8: () => c, gG: () => E, v8: () => _ });
+        n.d(t, { N8: () => d, gG: () => _, v8: () => u });
         var i,
-          r = n(145359),
-          a = n(773527),
-          s = n(350972),
-          l = n(211824),
-          o = n(792996),
-          d = n(701256),
-          c =
+          r = n(773527),
+          a = n(350972),
+          s = n(211824),
+          l = n(792996),
+          o = n(701256),
+          d =
             (((i = {})[(i.SIZE_48 = 48)] = "SIZE_48"),
             (i[(i.SIZE_60 = 60)] = "SIZE_60"),
             i);
-        function u() {
+        function c() {
           return {
-            id: s.LW.DEFAULT,
+            id: a.LW.DEFAULT,
             iconSource: "/assets/5926a37cee0904ce.webp",
-            name: o.intl.string(o.t.ANxkLy),
+            name: l.intl.string(l.t.ANxkLy),
             isPremium: !1,
           };
         }
-        function _() {
+        function u() {
           return [
-            u(),
+            c(),
             {
-              id: s.Ic.BRAND_DARK,
+              id: a.Ic.BRAND_DARK,
               iconSource: "/assets/e8396e79419904ca.webp",
-              name: o.intl.string(o.t.gZEUBl),
+              name: l.intl.string(l.t.gZEUBl),
               isPremium: !0,
             },
             {
-              id: s.Ic.MANGA,
+              id: a.Ic.MANGA,
               iconSource: "/assets/2d62663c4b493f8e.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.hGBbF8),
+              name: l.intl.string(l.t.hGBbF8),
             },
             {
-              id: s.Ic.MATTE_DARK,
+              id: a.Ic.MATTE_DARK,
               iconSource: "/assets/28f89b5f78dd6f80.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.NkshQt),
+              name: l.intl.string(l.t.NkshQt),
             },
             {
-              id: s.Ic.MATTE_LIGHT,
+              id: a.Ic.MATTE_LIGHT,
               iconSource: "/assets/96f9a2942150ba17.webp",
-              name: o.intl.string(o.t.G2W302),
+              name: l.intl.string(l.t.G2W302),
               isPremium: !0,
             },
             {
-              id: s.Ic.PASTEL,
+              id: a.Ic.PASTEL,
               iconSource: "/assets/22bb7108ad1c466f.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.mTSkLT),
+              name: l.intl.string(l.t.mTSkLT),
             },
             {
-              id: s.Ic.PIRATE,
+              id: a.Ic.PIRATE,
               iconSource: "/assets/9af4b996c897420f.webp",
               isPremium: !0,
-              name: o.intl.string(o.t["EgWTY+"]),
+              name: l.intl.string(l.t["EgWTY+"]),
             },
             {
-              id: s.Ic.CAMO,
+              id: a.Ic.CAMO,
               iconSource: "/assets/9ad8ec824f71bd05.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.RSKXOK),
+              name: l.intl.string(l.t.RSKXOK),
             },
             {
-              id: s.Ic.SUNSET,
+              id: a.Ic.SUNSET,
               iconSource: "/assets/5bf3279039efa66c.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.ixdjPB),
+              name: l.intl.string(l.t.ixdjPB),
             },
             {
-              id: s.Ic.GALAXY,
+              id: a.Ic.GALAXY,
               iconSource: "/assets/3a2d57c0bde9b218.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.cb78Ls),
+              name: l.intl.string(l.t.cb78Ls),
             },
             {
-              id: s.Ic.Y2K,
+              id: a.Ic.Y2K,
               iconSource: "/assets/181e40b5ea872cdb.webp",
               isPremium: !0,
-              name: o.intl.string(o.t["s+KoXO"]),
+              name: l.intl.string(l.t["s+KoXO"]),
             },
             {
-              id: s.Ic.CHERRY_BLOSSOM,
+              id: a.Ic.CHERRY_BLOSSOM,
               iconSource: "/assets/1e208c512641758d.webp",
               isPremium: !0,
-              name: o.intl.string(o.t["ta/5RB"]),
+              name: l.intl.string(l.t["ta/5RB"]),
             },
             {
-              id: s.Ic.BEANIE,
+              id: a.Ic.BEANIE,
               iconSource: "/assets/e14578cc054054c0.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.IoLViw),
+              name: l.intl.string(l.t.IoLViw),
             },
             {
-              id: s.Ic.GAMING,
+              id: a.Ic.GAMING,
               iconSource: "/assets/5e5cc9b058e63987.webp",
               isPremium: !0,
-              name: o.intl.string(o.t["2Tf+c4"]),
+              name: l.intl.string(l.t["2Tf+c4"]),
             },
             {
-              id: s.Ic.CIRCUIT,
+              id: a.Ic.CIRCUIT,
               iconSource: "/assets/82c7a89d15622af4.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.dUpxKb),
+              name: l.intl.string(l.t.dUpxKb),
             },
             {
-              id: s.Ic.HOLO_WAVES,
+              id: a.Ic.HOLO_WAVES,
               iconSource: "/assets/441d164362b711b1.webp",
               isPremium: !0,
-              name: o.intl.string(o.t["9mg7g1"]),
+              name: l.intl.string(l.t["9mg7g1"]),
             },
             {
-              id: s.Ic.BLUSH,
+              id: a.Ic.BLUSH,
               iconSource: "/assets/e5f2a55421a6dc7e.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.nmd90m),
+              name: l.intl.string(l.t.nmd90m),
             },
             {
-              id: s.Ic.ANGRY,
+              id: a.Ic.ANGRY,
               iconSource: "/assets/9b50f7ba00ee941f.webp",
               isPremium: !0,
-              name: o.intl.string(o.t["9PUXpM"]),
+              name: l.intl.string(l.t["9PUXpM"]),
             },
             {
-              id: s.Ic.CONTROLLER,
+              id: a.Ic.CONTROLLER,
               iconSource: "/assets/a629a2a3fe1ccbcc.webp",
               isPremium: !0,
-              name: o.intl.string(o.t["4QM2U1"]),
+              name: l.intl.string(l.t["4QM2U1"]),
             },
             {
-              id: s.Ic.BLURPLE_TWILIGHT,
+              id: a.Ic.BLURPLE_TWILIGHT,
               iconSource: "/assets/685b2900a9423534.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.Mfoe3p),
+              name: l.intl.string(l.t.Mfoe3p),
             },
             {
-              id: s.Ic.IN_RAINBOWS,
+              id: a.Ic.IN_RAINBOWS,
               iconSource: "/assets/10cd104567438715.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.yxJB9E),
+              name: l.intl.string(l.t.yxJB9E),
             },
             {
-              id: s.Ic.MIDNIGHT_PRISM,
+              id: a.Ic.MIDNIGHT_PRISM,
               iconSource: "/assets/7ebbc1790864207a.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.nshUZZ),
+              name: l.intl.string(l.t.nshUZZ),
             },
             {
-              id: s.Ic.COLOR_WAVE,
+              id: a.Ic.COLOR_WAVE,
               iconSource: "/assets/7ce5a942a5cc7cba.webp",
               isPremium: !0,
-              name: o.intl.string(o.t.MWRYqh),
+              name: l.intl.string(l.t.MWRYqh),
             },
           ];
         }
-        function E(e) {
+        function _(e) {
           let t = (
-            (0, a.z9)(e)
-              ? (0, r.FL)(l.vB.APP_ICON, "AppIconConstants") === l.S9.HIDDEN
+            (0, r.z9)(e)
+              ? (0, r.iB)()
                 ? []
                 : [
                     {
-                      id: s.aS.HEXAGON,
+                      id: a.aS.HEXAGON,
                       iconSource: "/assets/236f9310543771ae.webp",
-                      isPremium: (0, a.sD)(l.vB.APP_ICON),
-                      expiresAt: l.zv,
-                      name: o.intl.string(d.default.JC4Pii),
+                      isPremium: (0, r.sD)(s.vB.APP_ICON),
+                      expiresAt: s.zv,
+                      name: l.intl.string(o.default.JC4Pii),
                     },
                   ]
-              : _()
+              : u()
           ).find((t) => t.id === e);
-          return null != t ? t : u();
+          return null != t ? t : c();
         }
       },
       526162(e, t, n) {
@@ -257955,7 +257954,7 @@ html body ${z}, html body ${z} * {
                 (e) => {
                   if (
                     null == e.body ||
-                    "e76753e0333dc7ee45c9283dffeef52e26942c75" === e.body.hash
+                    "baed52c3077584fdfc040cb0a317d6a40e504bad" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -268180,10 +268179,10 @@ html body ${z}, html body ${z} * {
                 t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("673852")),
+                  ((e = parseInt("673879")),
                   Number.isNaN(e) &&
                     (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 673852",
+                      "Trying to open a changelog for an invalid build number 673879",
                     ),
                     (e = 0)),
                   e),
@@ -342800,7 +342799,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "673852", versionHash: "e76753e0333dc7ee45c9283dffeef52e26942c75" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "673879", versionHash: "baed52c3077584fdfc040cb0a317d6a40e504bad" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -435099,9 +435098,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       855531(e, t, n) {
         "use strict";
         var i = n(945810),
-          r = n(773527),
-          a = n(221596);
-        let s = (0, i.mj)({
+          r = n(773527);
+        let a = (0, i.mj)({
           kind: "user",
           name: "2026-09-hexagon-campaign-client",
           defaultConfig: { enabled: !1, questHomeRedirect: !1 },
@@ -435117,22 +435115,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           {
             dc: function (e) {
               if ((0, r.Aq)()) return !1;
-              let t = s.getConfig({ location: e });
+              let t = a.getConfig({ location: e });
               return t.enabled && t.questHomeRedirect;
             },
             dp: function (e) {
-              return s.useConfig({ location: e }).enabled;
-            },
-            iA: function (e) {
-              return s.getConfig({ location: e }).enabled;
+              return a.useConfig({ location: e }).enabled;
             },
             kV: function (e) {
-              let t = (0, r.Tn)(e),
-                { enabled: n } = s.useConfig(
-                  { location: a.rE.QUEST_HOME_HERO_SHELF_DESKTOP },
-                  { autoTrackExposure: t },
-                );
-              return t && n && !(0, r.Aq)();
+              return (0, r.Tn)(e) && !(0, r.Aq)();
             },
           },
         );
@@ -435150,13 +435140,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             $X: function (e, t) {
               return (0, s.YY)(e, r.default.getCurrentUser()?.premiumType, t);
             },
-            FL: function (e, t) {
-              return (0, s.U5)({
-                perk: e,
-                premiumType: r.default.getCurrentUser()?.premiumType,
-                isCampaignEnabled: (0, a.iA)(t),
-              });
-            },
             Lz: function (e, t) {
               let n = (0, a.dp)(t),
                 l = (0, i.bG)(
@@ -435167,6 +435150,17 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 perk: e,
                 premiumType: l,
                 isCampaignEnabled: n,
+              });
+            },
+            N$: function (e) {
+              let t = (0, i.bG)(
+                [r.default],
+                () => r.default.getCurrentUser()?.premiumType,
+              );
+              return (0, s.U5)({
+                perk: e,
+                premiumType: t,
+                isCampaignEnabled: !0,
               });
             },
           },
@@ -435245,19 +435239,20 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       773527(e, t, n) {
         "use strict";
         n.d(t, {
-          U5: () => C,
+          U5: () => O,
           cC: () => A,
-          Qv: () => N,
-          Jy: () => g,
-          Rd: () => O,
-          z9: () => T,
-          oB: () => p,
-          n2: () => S,
-          Tn: () => R,
-          YY: () => h,
-          sD: () => m,
+          Qv: () => C,
+          Jy: () => S,
+          Rd: () => R,
+          z9: () => g,
+          oB: () => m,
+          n2: () => N,
+          Tn: () => L,
+          iB: () => h,
+          YY: () => I,
+          sD: () => T,
           Aq: () => f,
-          VX: () => I,
+          VX: () => p,
         });
         var i,
           r = n(508425),
@@ -435283,41 +435278,48 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               : Date.now();
           return e >= _.DD;
         }
-        function h(e, t) {
+        function h() {
+          let e =
+            arguments.length > 0 && void 0 !== arguments[0]
+              ? arguments[0]
+              : Date.now();
+          return e >= _.zv;
+        }
+        function I(e, t) {
           let n =
             arguments.length > 2 && void 0 !== arguments[2]
               ? arguments[2]
               : Date.now();
           return n >= A(e, t);
         }
-        function I(e) {
+        function p(e) {
           let t =
             arguments.length > 1 && void 0 !== arguments[1]
               ? arguments[1]
               : Date.now();
           return t >= e - E && t < e;
         }
-        function p(e) {
+        function m(e) {
           return null != e && _.xG.has(e);
         }
-        function m(e) {
+        function T(e) {
           let t =
             arguments.length > 1 && void 0 !== arguments[1]
               ? arguments[1]
               : Date.now();
-          return h(e, null, t);
-        }
-        function T(e) {
-          return e === o.aS.HEXAGON;
+          return I(e, null, t);
         }
         function g(e) {
-          return e?.fontId === _.vl;
+          return e === o.aS.HEXAGON;
         }
         function S(e) {
+          return e?.fontId === _.vl;
+        }
+        function N(e) {
           let { fontId: t, effectId: n, colors: i } = e;
           return t === _.vl && n === r.z.SOLID && 0 === i.length;
         }
-        function N(e) {
+        function C(e) {
           let {
             currentDisplayNameStyles: t,
             previousDisplayNameStyles: n,
@@ -435331,31 +435333,24 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             ? null
             : s;
         }
-        function C(e) {
+        function O(e) {
           let {
             perk: t,
             premiumType: n,
             isCampaignEnabled: i,
             now: r = Date.now(),
           } = e;
-          return !i ||
-            (function () {
-              let e =
-                arguments.length > 0 && void 0 !== arguments[0]
-                  ? arguments[0]
-                  : Date.now();
-              return e >= _.zv;
-            })(r)
+          return !i || h(r)
             ? _.S9.HIDDEN
-            : h(t, n, r)
+            : I(t, n, r)
               ? _.S9.LOCKED
               : _.S9.SELECTABLE;
         }
-        function O(e, t) {
+        function R(e, t) {
           let n = (0, d.kQ)(e?.perks, _.Sp[t]);
           return null != n && n.includes(l.g$.SOURCE_HEXAGON_CAMPAIGN);
         }
-        function R(e) {
+        function L(e) {
           return (
             null != e &&
             e.id === _.U1 &&
@@ -470070,8 +470065,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1794713918443",
-                      build_number: "673852",
+                      built_at: "1794788761500",
+                      build_number: "673879",
                     },
                   },
                   retries: 1,
@@ -492706,7 +492701,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             h = eu.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, r7.A)("1794713918443", !0);
+            let e = (0, r7.A)("1794788761500", !0);
             t =
               null != e
                 ? eH.intl.formatToPlainString(eH.t.wve4kg, {
@@ -664622,7 +664617,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "e76753e0333dc7ee45c9283dffeef52e26942c75",
+                      "baed52c3077584fdfc040cb0a317d6a40e504bad",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", W),
@@ -675461,7 +675456,7 @@ ${l.join(" +\n")}
                   ).then((e) => {
                     let i = {
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        build_number: "673852",
+                        build_number: "673879",
                       },
                       u = o.default.getCurrentUser();
                     null != u &&
@@ -689777,7 +689772,7 @@ ${l.join(" +\n")}
           262754: "de38e0c54cde9fbd",
           262755: "83d706c7e53afda5",
           263025: "ede9bbfde018d02e",
-          263408: "3d2b777d0ec06165",
+          263408: "83fbaa9d06e45b2e",
           263506: "2d60ed72ed4348dc",
           263765: "213198be39cb65b0",
           263783: "82b53aa9940e33ed",
@@ -690917,7 +690912,7 @@ ${l.join(" +\n")}
           430858: "a49b4ce13dd834cf",
           430997: "bc7a4af9a08342d1",
           431136: "e8899db44c58df78",
-          431294: "1224609495e79213",
+          431294: "562784fb367079dc",
           431658: "cc0635aa688bf2db",
           431692: "ee790ed3101d08ac",
           431714: "9ac6c5f632d763bd",
@@ -691596,7 +691591,7 @@ ${l.join(" +\n")}
           52159: "498c4526d0567fa5",
           521743: "c186ec21c2820d80",
           521761: "be1bbdd0cf092330",
-          521846: "0cdd993e2dc34dcc",
+          521846: "ccfc35e207074fe0",
           521930: "9c25197ce9670e69",
           522011: "a16729814783ccc2",
           522261: "617e7edcd3e17452",
@@ -691850,7 +691845,7 @@ ${l.join(" +\n")}
           556025: "14ae1b9e3d94518f",
           556026: "1282cf31ff357c39",
           55604: "e391dfcff06d47b4",
-          5562: "0ed91f31b0fe97bf",
+          5562: "53a32e56d8297b85",
           556385: "0dcc37b61fe08a2b",
           556436: "a0f6099311dc0073",
           556574: "52245450bb65f7ac",
@@ -693196,7 +693191,7 @@ ${l.join(" +\n")}
           752737: "fc46a5167ff0f761",
           752804: "3f926a99b7a92028",
           753195: "45d950dc901c0e9b",
-          753339: "eb0961151ac98645",
+          753339: "21375308f61eeb37",
           753376: "6e9b36eeb6b73fd7",
           753387: "d9acae4a9177c032",
           75352: "0137ccd6ea45978c",
@@ -693533,7 +693528,7 @@ ${l.join(" +\n")}
           797558: "43a932d5caff2755",
           797641: "1014adf07fd13545",
           798149: "9b481d704b25779d",
-          798161: "d5e0b25d3da29240",
+          798161: "54fc8d966dfd94b0",
           79819: "b82e5595d1b5ec6a",
           798236: "28b5bef3ee486e06",
           798354: "de9eb65b1e566420",
@@ -694021,7 +694016,7 @@ ${l.join(" +\n")}
           866805: "9d12bbbce3385dd6",
           866960: "8975c831dc7e670d",
           867160: "67b0096d29931c2d",
-          867473: "c409a6c83ae4b033",
+          867473: "66f4c0b3e073a4d3",
           867646: "4849b510af5535b3",
           867807: "5e1195a881be2aa7",
           867856: "f9cca6132e63c370",
@@ -694053,7 +694048,7 @@ ${l.join(" +\n")}
           87109: "c76f75a6b38ba9ab",
           871305: "2da10be5d84a3771",
           871467: "15dcff1233709e6b",
-          871835: "5060a99c313e7e47",
+          871835: "3785ff6557b2c65b",
           872106: "7f3e29f7549cf3b2",
           87219: "cf234491bca466e6",
           872407: "a21b3ebaabca99f8",
@@ -695621,4 +695616,4 @@ ${l.join(" +\n")}
   );
   N = p.O(N);
 })();
-//# sourceMappingURL=web.3dc15d5773472016.js.map
+//# sourceMappingURL=web.885ef2de6c4e2d72.js.map
