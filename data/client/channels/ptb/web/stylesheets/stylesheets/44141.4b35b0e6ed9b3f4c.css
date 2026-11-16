@@ -214,12 +214,12 @@
 }
 .markup_ku1OHH .inlineFormat_ku1OHH li:before,
 .markup_ku1OHH.inlineFormat_ku1OHH li:before {
-  content: "•";
+  content: "\2022";
   padding-inline-end: 4px;
 }
 .markup_ku1OHH .inlineFormat_ku1OHH li li:before,
 .markup_ku1OHH.inlineFormat_ku1OHH li li:before {
-  content: "○";
+  content: "\25cb";
   font-size: 0.625rem;
   line-height: 1rem;
   padding: 0 4px 4px;
@@ -611,4 +611,4 @@
   margin-inline-start: var(--space-12);
 }
 
-/*# sourceMappingURL=44141.0a572fac8933c896.css.map*/
+/*# sourceMappingURL=44141.4b35b0e6ed9b3f4c.css.map*/
