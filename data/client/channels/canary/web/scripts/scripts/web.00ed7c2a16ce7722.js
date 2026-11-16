@@ -9995,7 +9995,7 @@
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("673879", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("673910", 10))) || (l.client_build_number = d),
           null == (c = eE?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -122406,7 +122406,6 @@ color: purple;
             eAD: nG,
             elq: t6,
             ewM: n4,
-            f34: "cdn.discordapp.com",
             f5z: nc,
             fAW: t5,
             fg2: n6,
@@ -152583,7 +152582,7 @@ ${a}`);
           n.e(859864).then(n.t.bind(n, 122123, 19));
         let e7 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eY.A().log(
-          `[BUILD INFO] Release Channel: ${e7}, Build Number: 673879, Version Hash: baed52c3077584fdfc040cb0a317d6a40e504bad`,
+          `[BUILD INFO] Release Channel: ${e7}, Build Number: 673910, Version Hash: 1148d517d95513b74609e017679232166774735e`,
         ),
           w.A.setTags({ appContext: H.QCW }),
           eg.A.initBasic(),
@@ -152680,7 +152679,7 @@ ${a}`);
               a =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : "673879";
+                  : "673910";
             if (__OVERLAY__) return;
             isNaN((r = parseInt(a ?? "", 10))) ||
               eB.Ay.setCrashInformation(ew.du.BuildNumber, r);
@@ -170634,7 +170633,7 @@ ${a}`);
                     className: td()(pu.Wz, pu.mr),
                     children: [
                       (0, v.jsx)(pc, { className: pu.Kk }),
-                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "673879" }),
+                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "673910" }),
                       (0, v.jsx)(r, {}),
                     ],
                   })
@@ -257954,7 +257953,7 @@ html body ${z}, html body ${z} * {
                 (e) => {
                   if (
                     null == e.body ||
-                    "baed52c3077584fdfc040cb0a317d6a40e504bad" === e.body.hash
+                    "1148d517d95513b74609e017679232166774735e" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -263588,19 +263587,20 @@ html body ${z}, html body ${z} * {
       797164(e, t, n) {
         "use strict";
         var i = n(306173),
-          r = n(439372);
-        class a extends r.A {
+          r = n(439372),
+          a = n(403362);
+        class s extends r.A {
           intervalID;
           _initialize() {
-            if ((0, i.xd)()) {
+            if (!(0, a.iT)() && (0, i.xd)()) {
               let e = `https:${window.GLOBAL_ENV.WEBAPP_ENDPOINT}/bad-hash-delta`;
               (0, i.kk)(e);
               return;
             }
           }
         }
-        let s = new a();
-        n.d(t, {}, { A: s });
+        let l = new s();
+        n.d(t, {}, { A: l });
       },
       297334(e, t, n) {
         "use strict";
@@ -268160,33 +268160,35 @@ html body ${z}, html body ${z} * {
       },
       556193(e, t, n) {
         "use strict";
-        n.d(t, { A: () => _ });
+        n.d(t, { A: () => E });
         var i = n(73153),
           r = n(256311),
           a = n(439372),
           s = n(773669),
-          l = n(811091),
-          o = n(883600),
-          d = n(856383),
-          c = n(212031);
-        class u extends a.A {
+          l = n(403362),
+          o = n(811091),
+          d = n(883600),
+          c = n(856383),
+          u = n(212031);
+        class _ extends a.A {
           actions = {
             POST_CONNECTION_OPEN: (e) => this.handleConnectionOpen(e),
           };
           handleConnectionOpen = async (e) => {
             try {
-              let e,
-                t = await r.A.fetchChangelogConfig(),
+              let e;
+              if ((0, l.iT)()) return;
+              let t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("673879")),
+                  ((e = parseInt("673910")),
                   Number.isNaN(e) &&
-                    (d.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 673879",
+                    (c.A.captureMessage(
+                      "Trying to open a changelog for an invalid build number 673910",
                     ),
                     (e = 0)),
                   e),
-                u = (function (e, t) {
+                _ = (function (e, t) {
                   let n = 0,
                     i = null;
                   for (var [r, { min_version: a }] of Object.entries(e))
@@ -268197,26 +268199,26 @@ html body ${z}, html body ${z} * {
                 (i.h.dispatch({
                   type: "CHANGE_LOG_SET_CONFIG",
                   config: t.body,
-                  latestChangelogId: u,
+                  latestChangelogId: _,
                 }),
-                null == u || !0 !== n[u].show_on_startup)
+                null == _ || !0 !== n[_].show_on_startup)
               )
                 return;
-              let _ = o.A.lastSeenChangelogId(),
-                E = o.A.lastSeenChangelogDate();
-              if (null != _ && 0 >= l.default.compare(u, _)) return;
-              let A = await r.A.fetchChangelog(u, s.default.locale);
-              if (null == A) return;
-              if (null == E || null == o.A.lastSeenChangelogDate())
-                return void r.A.markChangelogAsSeen(u, A.date);
-              if (o.A.isLocked()) return;
-              new Date(A.date) > new Date(E) && (0, c.j)();
+              let E = d.A.lastSeenChangelogId(),
+                A = d.A.lastSeenChangelogDate();
+              if (null != E && 0 >= o.default.compare(_, E)) return;
+              let f = await r.A.fetchChangelog(_, s.default.locale);
+              if (null == f) return;
+              if (null == A || null == d.A.lastSeenChangelogDate())
+                return void r.A.markChangelogAsSeen(_, f.date);
+              if (d.A.isLocked()) return;
+              new Date(f.date) > new Date(A) && (0, u.j)();
             } finally {
               i.h.dispatch({ type: "CHANGE_LOG_RESOLVED" });
             }
           };
         }
-        let _ = new u();
+        let E = new _();
       },
       883600(e, t, n) {
         "use strict";
@@ -342799,7 +342801,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "673879", versionHash: "baed52c3077584fdfc040cb0a317d6a40e504bad" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "673910", versionHash: "1148d517d95513b74609e017679232166774735e" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -470065,8 +470067,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1794788761500",
-                      build_number: "673879",
+                      built_at: "1794805655515",
+                      build_number: "673910",
                     },
                   },
                   retries: 1,
@@ -492701,7 +492703,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             h = eu.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, r7.A)("1794788761500", !0);
+            let e = (0, r7.A)("1794805655515", !0);
             t =
               null != e
                 ? eH.intl.formatToPlainString(eH.t.wve4kg, {
@@ -603676,7 +603678,7 @@ ${t}`;
       },
       494633(e, t, n) {
         "use strict";
-        n.d(t, { N: () => O, A: () => y });
+        n.d(t, { N: () => C, A: () => L });
         var i = n(477900),
           r = n(582128),
           a = n(503698),
@@ -603692,22 +603694,22 @@ ${t}`;
           f = n(693875),
           h = n(946274),
           I = n(253932),
-          p = n(486020),
-          m = n(652215);
-        function T(e, t) {
+          p = n(486020);
+        function m(e, t) {
           let { animated: n = !1 } =
               arguments.length > 2 && void 0 !== arguments[2]
                 ? arguments[2]
                 : {},
-            i = window.GLOBAL_ENV.CDN_HOST ?? m.f34,
-            r = `https://${i}/widget-assets/${e}/${t}`,
-            a = p.QB ? "webp" : n ? "gif" : "png";
-          return `${r}?format=${a}&animated=${n}`;
+            { CDN_HOST: i, API_ENDPOINT: r } = window.GLOBAL_ENV,
+            a = null != i ? `https://${i}` : location.protocol + r,
+            s = `${a}/widget-assets/${e}/${t}`,
+            l = p.QB ? "webp" : n ? "gif" : "png";
+          return `${s}?format=${l}&animated=${n}`;
         }
-        var g = n(458499),
-          S = n(792996),
-          N = n(842730);
-        function C(e, t, n) {
+        var T = n(458499),
+          g = n(792996),
+          S = n(842730);
+        function N(e, t, n) {
           let i = I.kt.useSetting(),
             [a, s] = r.useState(!1),
             l = r.useCallback(() => s(!0), []),
@@ -603717,7 +603719,7 @@ ${t}`;
             !d ||
               null == t ||
               "localDataUri" in t ||
-              (new Image().src = T(e, t.fileId, { animated: !0 }));
+              (new Image().src = m(e, t.fileId, { animated: !0 }));
           }, [d, e, t]),
           null == t)
             ? {
@@ -603736,7 +603738,7 @@ ${t}`;
                   isHovering: a,
                 }
               : {
-                  src: T(e, t.fileId, {
+                  src: m(e, t.fileId, {
                     animated: n && t.isAnimated && (i || a),
                   }),
                   showGifTag: d,
@@ -603745,57 +603747,57 @@ ${t}`;
                   onMouseLeave: o,
                 };
         }
-        function O(e) {
+        function C(e) {
           let { className: t, userId: n, image: r, canAnimate: a = !0 } = e,
             {
               src: l,
               showGifTag: o,
               onMouseMove: d,
               onMouseLeave: c,
-            } = C(n, r, a);
+            } = N(n, r, a);
           return "localDataUri" in r
             ? (0, i.jsx)("div", {
                 className: t,
                 children: (0, i.jsx)("img", {
-                  className: N.Sl,
+                  className: S.Sl,
                   alt: "",
                   src: l,
                 }),
               })
             : (0, i.jsxs)("div", {
-                className: s()(N.ZS, t),
+                className: s()(S.ZS, t),
                 onMouseMove: d,
                 onMouseLeave: c,
                 children: [
                   (0, i.jsx)("img", {
-                    className: N.Sl,
+                    className: S.Sl,
                     alt: "",
                     src: l,
                     width: r.width,
                     height: r.height,
                   }),
-                  o ? (0, i.jsx)(f.A, { className: N.pH }) : null,
+                  o ? (0, i.jsx)(f.A, { className: S.pH }) : null,
                 ],
               });
         }
-        function R(e) {
+        function O(e) {
           let { canEdit: t, isHovering: n } = e;
           return (0, i.jsx)("div", {
-            className: N.qf,
+            className: S.qf,
             children: t
               ? (0, i.jsx)(l.m, {
-                  text: S.intl.string(S.t["MsUY/S"]),
+                  text: g.intl.string(g.t["MsUY/S"]),
                   forceOpen: n,
                   ariaHidden: !0,
                   children: (0, i.jsx)(o.ImagePlusIcon, {
-                    className: N.Dm,
+                    className: S.Dm,
                     size: "md",
                   }),
                 })
               : null,
           });
         }
-        function L(e) {
+        function R(e) {
           let {
               className: t,
               userId: n,
@@ -603805,76 +603807,76 @@ ${t}`;
               canAnimate: I = !0,
               cropAndUpload: p,
               editVariant: m,
-              lastEdit: T,
+              lastEdit: C,
             } = e,
             {
-              src: O,
+              src: R,
               showGifTag: L,
               onMouseMove: y,
               onMouseLeave: D,
               isHovering: b,
-            } = C(n, a, I),
-            v = o ?? O,
+            } = N(n, a, I),
+            v = o ?? R,
             P = r.useRef(null),
             M = l ?? P,
             U = r.useRef(null);
           function w() {
             M.current?.activateUploadDialogue();
           }
-          let G = null != T && null != v && null == o;
+          let G = null != C && null != v && null == o;
           return (0, i.jsx)(d.vN, {
             within: !0,
             children: (0, i.jsxs)("div", {
-              className: s()(N.kL, t),
+              className: s()(S.kL, t),
               onMouseMove: y,
               onMouseLeave: D,
               children: [
                 null != v
-                  ? (0, i.jsx)("img", { alt: "", src: v, className: N.Sl })
-                  : (0, i.jsx)(R, {
+                  ? (0, i.jsx)("img", { alt: "", src: v, className: S.Sl })
+                  : (0, i.jsx)(O, {
                       canEdit: !0,
                       isHovering: "tooltip" === m && b,
                     }),
                 null != o
                   ? (0, i.jsx)("div", {
-                      className: N.ob,
+                      className: S.ob,
                       children: (0, i.jsx)(c.y, {
                         type: c.t.SPINNING_CIRCLE_SIMPLE,
                       }),
                     })
                   : L
-                    ? (0, i.jsx)(f.A, { className: N.pH })
+                    ? (0, i.jsx)(f.A, { className: S.pH })
                     : null,
                 "overlay" === m && null != v && null == o
                   ? (0, i.jsx)("div", {
-                      className: N.HU,
+                      className: S.HU,
                       "aria-hidden": !0,
                       children: (0, i.jsx)(u.PencilIcon, {
                         size: "md",
                         color: _.A.colors.WHITE,
-                        className: N._1,
+                        className: S._1,
                       }),
                     })
                   : null,
                 (0, i.jsx)(h.Ay, {
                   ref: M,
                   tabIndex: G ? -1 : 0,
-                  className: G ? N.YZ : void 0,
+                  className: G ? S.YZ : void 0,
                   "aria-hidden": G,
                   onChange: p,
                   multiple: !1,
-                  "aria-label": S.intl.string(S.t["MsUY/S"]),
+                  "aria-label": g.intl.string(g.t["MsUY/S"]),
                   title: "",
                 }),
-                G && null != T
+                G && null != C
                   ? (0, i.jsx)(E.Y, {
                       targetElementRef: U,
                       position: "bottom",
                       disablePointerEvents: !1,
                       renderPopout: (e) => {
                         let { closePopout: t } = e;
-                        return (0, i.jsx)(g.A, {
-                          lastEdit: T,
+                        return (0, i.jsx)(T.A, {
+                          lastEdit: C,
                           cropAndUpload: p,
                           onChangeImage: w,
                           onClose: t,
@@ -603884,9 +603886,9 @@ ${t}`;
                         (0, i.jsx)(A.D, {
                           ...e,
                           innerRef: U,
-                          className: N.Eq,
+                          className: S.Eq,
                           "aria-haspopup": "menu",
-                          "aria-label": S.intl.string(S.t.RWkUzH),
+                          "aria-label": g.intl.string(g.t.RWkUzH),
                         }),
                     })
                   : null,
@@ -603894,7 +603896,7 @@ ${t}`;
             }),
           });
         }
-        function y(e) {
+        function L(e) {
           let {
             className: t,
             canEdit: n,
@@ -603908,7 +603910,7 @@ ${t}`;
             lastEdit: u,
           } = e;
           return n
-            ? (0, i.jsx)(L, {
+            ? (0, i.jsx)(R, {
                 className: t,
                 userId: r,
                 image: a,
@@ -603922,9 +603924,9 @@ ${t}`;
             : null == a
               ? (0, i.jsx)("div", {
                   className: t,
-                  children: (0, i.jsx)(R, { canEdit: !1, isHovering: !1 }),
+                  children: (0, i.jsx)(O, { canEdit: !1, isHovering: !1 }),
                 })
-              : (0, i.jsx)(O, {
+              : (0, i.jsx)(C, {
                   className: t,
                   userId: r,
                   image: a,
@@ -664617,7 +664619,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "baed52c3077584fdfc040cb0a317d6a40e504bad",
+                      "1148d517d95513b74609e017679232166774735e",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", W),
@@ -675456,7 +675458,7 @@ ${l.join(" +\n")}
                   ).then((e) => {
                     let i = {
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        build_number: "673879",
+                        build_number: "673910",
                       },
                       u = o.default.getCurrentUser();
                     null != u &&
@@ -688727,7 +688729,7 @@ ${l.join(" +\n")}
           114823: "0cf9adc2d574106d",
           11487: "ae9faf962052b698",
           115112: "8a5a7b18d1f6d821",
-          115368: "2a1b756b3936b2ae",
+          115368: "7d0ce7011caa0cad",
           115422: "40aed4a5a70481cd",
           115436: "2988d6e79507374e",
           115472: "3e08e6408ca98cc6",
@@ -689772,7 +689774,7 @@ ${l.join(" +\n")}
           262754: "de38e0c54cde9fbd",
           262755: "83d706c7e53afda5",
           263025: "ede9bbfde018d02e",
-          263408: "83fbaa9d06e45b2e",
+          263408: "72d0f74af27c57a9",
           263506: "2d60ed72ed4348dc",
           263765: "213198be39cb65b0",
           263783: "82b53aa9940e33ed",
@@ -690912,7 +690914,7 @@ ${l.join(" +\n")}
           430858: "a49b4ce13dd834cf",
           430997: "bc7a4af9a08342d1",
           431136: "e8899db44c58df78",
-          431294: "562784fb367079dc",
+          431294: "6badaf0bdfb1899f",
           431658: "cc0635aa688bf2db",
           431692: "ee790ed3101d08ac",
           431714: "9ac6c5f632d763bd",
@@ -691395,7 +691397,7 @@ ${l.join(" +\n")}
           495504: "39fd5e8bc473855c",
           495567: "e8c473149accd5b1",
           49571: "ad8db04d08635822",
-          495748: "dff59fb24bfebd36",
+          495748: "c1388171f0d152c6",
           495786: "b5a54903990e761b",
           495861: "205c64c7009b8bdc",
           496051: "41bfad6cb0173843",
@@ -691591,7 +691593,7 @@ ${l.join(" +\n")}
           52159: "498c4526d0567fa5",
           521743: "c186ec21c2820d80",
           521761: "be1bbdd0cf092330",
-          521846: "ccfc35e207074fe0",
+          521846: "9e8a84f86c7406ad",
           521930: "9c25197ce9670e69",
           522011: "a16729814783ccc2",
           522261: "617e7edcd3e17452",
@@ -693528,7 +693530,7 @@ ${l.join(" +\n")}
           797558: "43a932d5caff2755",
           797641: "1014adf07fd13545",
           798149: "9b481d704b25779d",
-          798161: "54fc8d966dfd94b0",
+          798161: "83dcf82e9ee3fbba",
           79819: "b82e5595d1b5ec6a",
           798236: "28b5bef3ee486e06",
           798354: "de9eb65b1e566420",
@@ -693568,7 +693570,7 @@ ${l.join(" +\n")}
           804622: "a4ced7396a7b17a1",
           804633: "7970fadb6d138a75",
           804714: "f321b47eade28e83",
-          80477: "b25a4fed141c5f04",
+          80477: "f54608e1c5a6734d",
           804805: "823e0945ccb2f2ac",
           804870: "b6601716e06a4d7f",
           804951: "592042034b91eb93",
@@ -694016,7 +694018,7 @@ ${l.join(" +\n")}
           866805: "9d12bbbce3385dd6",
           866960: "8975c831dc7e670d",
           867160: "67b0096d29931c2d",
-          867473: "66f4c0b3e073a4d3",
+          867473: "3585c73d520e7d17",
           867646: "4849b510af5535b3",
           867807: "5e1195a881be2aa7",
           867856: "f9cca6132e63c370",
@@ -695616,4 +695618,4 @@ ${l.join(" +\n")}
   );
   N = p.O(N);
 })();
-//# sourceMappingURL=web.885ef2de6c4e2d72.js.map
+//# sourceMappingURL=web.00ed7c2a16ce7722.js.map
