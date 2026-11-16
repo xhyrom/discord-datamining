@@ -16,20 +16,18 @@
     "access-stg",
     "backstage",
     "looker",
-    "design",
     "keysmith-stg",
+    "design",
     "ai-usage",
     "teleport",
     "safety-dispatch-stg",
     "smite-stg",
     "llmproxy",
     "dagster-readonly-prd",
-    "argo-workflows-ai-prd",
     "access",
     "coderv2",
     "storybook",
     "dads-stg",
-    "argo-workflows-ai-stg",
     "bazel-rbe-stg",
     "mitre",
     "xray-serving-2",
@@ -78,5 +76,5 @@
     "dbt-docs",
     "airflow-data-prd"
   ],
-  "subdomain_count": 77
+  "subdomain_count": 75
 }
