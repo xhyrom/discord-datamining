@@ -187,6 +187,7 @@
 }
 .statRow_bcgTHb .guildAcronymIcon_bcgTHb {
   background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #000;
   box-sizing: border-box;
   display: grid;
   height: 16px;
@@ -1201,4 +1202,4 @@
   z-index: 1;
 }
 
-/*# sourceMappingURL=684068.0f01ac5d0e87ab48.css.map*/
+/*# sourceMappingURL=684068.cb8fff841c224937.css.map*/

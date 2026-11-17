@@ -115,6 +115,9 @@
   -o-object-fit: cover;
   object-fit: cover;
 }
+.mainImage_z264eY {
+  display: none;
+}
 .image_z264eY:before {
   border: 1px solid var(--border-subtle);
   border-radius: inherit;
@@ -186,6 +189,12 @@
 }
 .floating_z264eY:is(:hover, :focus-within) .image_z264eY:after {
   opacity: 1;
+}
+.floating_z264eY:is(:hover, :focus-within) .mainImage_z264eY {
+  display: block;
+}
+.floating_z264eY:is(:hover, :focus-within) .logoImage_z264eY {
+  display: none;
 }
 .floating_z264eY:is(:hover, :focus-within) .sideCopy_z264eY {
   opacity: 0;
@@ -496,4 +505,4 @@
   }
 }
 
-/*# sourceMappingURL=795186.7742ba70261a58a6.css.map*/
+/*# sourceMappingURL=795186.bf85594ccdaa4020.css.map*/

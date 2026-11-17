@@ -51,14 +51,16 @@
         $_: "media_z264eY",
         Sl: "image_z264eY",
         HU: "imageFill_z264eY",
+        py: "mainImage_z264eY",
         Rv: "sideCopy_z264eY",
         Pb: "gameRow_z264eY",
         Gt: "gameIcon_z264eY",
         rf: "body_z264eY",
         zH: "details_z264eY",
         E1: "ctaReveal_z264eY",
+        Nj: "logoImage_z264eY",
       };
     },
   },
 ]);
-//# sourceMappingURL=795186.a9c80e5ee82257d1.js.map
+//# sourceMappingURL=795186.2f4cb85a4787419d.js.map
