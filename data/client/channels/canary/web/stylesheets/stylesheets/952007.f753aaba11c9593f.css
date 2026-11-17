@@ -1581,6 +1581,11 @@
   --expressive-gradient-tenure-badge-silver-start: hsl(
     var(--neutral-12-hsl) / 0.3
   );
+  --global-banner-nitro-end: var(--illo-blue-70);
+  --global-banner-nitro-icon: var(--neutral-1);
+  --global-banner-nitro-middle: var(--blurple-75);
+  --global-banner-nitro-start: var(--pink-75);
+  --global-banner-nitro-text: var(--neutral-1);
   --gradient-progress-pill-background: var(--neutral-46);
   --guild-profile-banner-background-default: var(--neutral-73);
   --hexagon-campaign-promo-gradient-1: hsl(
@@ -2863,6 +2868,12 @@
       hsl(var(--neutral-12-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --global-banner-nitro-icon: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --gradient-progress-pill-background: color-mix(
       in oklab,
@@ -4571,6 +4582,11 @@
   --expressive-gradient-tenure-badge-silver-start: hsl(
     var(--neutral-12-hsl) / 0.3
   );
+  --global-banner-nitro-end: var(--illo-blue-30);
+  --global-banner-nitro-icon: var(--neutral-100);
+  --global-banner-nitro-middle: var(--blurple-25);
+  --global-banner-nitro-start: var(--pink-20);
+  --global-banner-nitro-text: var(--neutral-100);
   --gradient-progress-pill-background: var(--neutral-18);
   --guild-profile-banner-background-default: var(--neutral-40);
   --hexagon-campaign-promo-gradient-1: hsl(
@@ -5855,6 +5871,12 @@
       hsl(var(--neutral-12-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --global-banner-nitro-icon: color-mix(
+      in oklab,
+      var(--neutral-100) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --gradient-progress-pill-background: color-mix(
       in oklab,
@@ -7563,6 +7585,11 @@
   --expressive-gradient-tenure-badge-silver-start: hsl(
     var(--neutral-12-hsl) / 0.3
   );
+  --global-banner-nitro-end: var(--illo-blue-70);
+  --global-banner-nitro-icon: var(--neutral-1);
+  --global-banner-nitro-middle: var(--blurple-75);
+  --global-banner-nitro-start: var(--pink-75);
+  --global-banner-nitro-text: var(--neutral-1);
   --gradient-progress-pill-background: var(--neutral-66);
   --guild-profile-banner-background-default: var(--neutral-100);
   --hexagon-campaign-promo-gradient-1: hsl(
@@ -8847,6 +8874,12 @@
       hsl(var(--neutral-12-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --global-banner-nitro-icon: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --gradient-progress-pill-background: color-mix(
       in oklab,
@@ -10573,6 +10606,11 @@
   --expressive-gradient-tenure-badge-silver-start: hsl(
     var(--neutral-12-hsl) / 0.3
   );
+  --global-banner-nitro-end: var(--illo-blue-70);
+  --global-banner-nitro-icon: var(--neutral-1);
+  --global-banner-nitro-middle: var(--blurple-75);
+  --global-banner-nitro-start: var(--pink-75);
+  --global-banner-nitro-text: var(--neutral-1);
   --gradient-progress-pill-background: var(--neutral-56);
   --guild-profile-banner-background-default: var(--neutral-92);
   --hexagon-campaign-promo-gradient-1: hsl(
@@ -11859,6 +11897,12 @@
       hsl(var(--neutral-12-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --global-banner-nitro-icon: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --gradient-progress-pill-background: color-mix(
       in oklab,
@@ -22616,4 +22660,4 @@
   --motion-spring-subtle-duration: 598ms;
 }
 
-/*# sourceMappingURL=952007.c7b995731f0792cf.css.map*/
+/*# sourceMappingURL=952007.f753aaba11c9593f.css.map*/

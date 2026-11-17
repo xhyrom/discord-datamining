@@ -726,6 +726,34 @@
   outline: 2px solid var(--border-focus);
   outline-offset: 2px;
 }
+.box_uKOSSr {
+  color: var(--custom-checkpoint-primary);
+  position: relative;
+}
+.layer_uKOSSr {
+  height: 100%;
+  inset: 0;
+  overflow: visible;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+}
+.outline_uKOSSr {
+  fill: currentColor;
+  fill-rule: nonzero;
+}
+.corner_uKOSSr,
+.stripes_uKOSSr {
+  fill: none;
+  stroke: currentColor;
+}
+.corner_uKOSSr {
+  stroke-width: 2;
+}
+.stripes_uKOSSr {
+  stroke-width: 1;
+  opacity: 0.8;
+}
 .game_M5fVqw {
   display: flex;
   flex-direction: column;
@@ -742,42 +770,21 @@
   padding-inline-end: var(--space-16);
 }
 .visual_M5fVqw {
-  height: calc(
-    var(--custom-checkpoint-game-art-width) * 4 / 3 + var(--space-12)
-  );
+  height: calc(var(--custom-checkpoint-game-art-height) + var(--space-12));
   position: relative;
 }
-.shell_M5fVqw {
-  --custom-checkpoint-game-shell-scale: calc(
-    var(--custom-checkpoint-game-art-width) /
-      var(--custom-checkpoint-game-full-art-width)
-  );
-  inset-block-start: calc(
-    var(--custom-checkpoint-game-shell-scale) * -1 *
-      var(--custom-checkpoint-game-full-shell-offset)
-  );
-  inset-inline-start: calc(
-    var(--custom-checkpoint-game-shell-scale) * -1 *
-      var(--custom-checkpoint-game-full-shell-offset)
-  );
-  width: calc(
-    var(--custom-checkpoint-game-shell-scale) *
-      var(--custom-checkpoint-game-full-shell-width)
-  );
-}
-.art_M5fVqw,
-.shell_M5fVqw {
-  position: absolute;
+.artBox_M5fVqw {
+  height: var(--custom-checkpoint-game-art-height);
+  width: var(--custom-checkpoint-game-art-width);
 }
 .art_M5fVqw {
-  aspect-ratio: 3/4;
-  border: 2px solid var(--custom-checkpoint-primary);
-  box-sizing: border-box;
-  inset-block-start: 0;
-  inset-inline-start: 0;
+  height: calc(100% + 2px);
+  inset-block-start: -1px;
+  inset-inline-start: -1px;
   -o-object-fit: cover;
   object-fit: cover;
-  width: var(--custom-checkpoint-game-art-width);
+  position: absolute;
+  width: calc(100% + 2px);
 }
 .unknownArt_M5fVqw {
   align-items: center;
@@ -785,9 +792,18 @@
   display: flex;
   justify-content: center;
 }
-.rank_M5fVqw {
-  inset-block-start: 0;
-  inset-inline-start: 0;
+.artBox_M5fVqw .rank_M5fVqw {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--space-16) + 1px),
+    calc(100% - var(--space-12)) 100%,
+    0 100%
+  );
+  inset-block-start: -1px;
+  inset-inline-start: -1px;
+  padding-block: calc(var(--space-6) + 1px) var(--space-6);
+  padding-inline: calc(var(--space-12) + 1px) var(--space-12);
   position: absolute;
 }
 .details_M5fVqw {
@@ -1243,4 +1259,4 @@
   z-index: 1;
 }
 
-/*# sourceMappingURL=335930.25a8dc0137286687.css.map*/
+/*# sourceMappingURL=112477.0588420f1473fb0c.css.map*/

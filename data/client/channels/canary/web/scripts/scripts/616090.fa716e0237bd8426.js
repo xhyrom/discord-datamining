@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [40799],
+  [616090],
   {
     11435(e) {
       e.exports = {
@@ -76,6 +76,9 @@
         dT: "itemHighlighted_Cv_a5E",
       };
     },
+    937383(e) {
+      e.exports = { n: "panel_MPtYTU" };
+    },
     769909(e) {
       e.exports = {
         vR: "tabs_AdrBHW",
@@ -93,6 +96,9 @@
     829870(e) {
       e.exports = { z: "details_h8p9mQ", D: "title_h8p9mQ" };
     },
+    541170(e) {
+      e.exports = { V: "grid_zklQ39" };
+    },
     559265(e) {
       e.exports = {
         uK: "option_1lwQ1X",
@@ -109,7 +115,7 @@
       e.exports = {
         Nz: "picker_QrLb7B",
         fF: "options_QrLb7B",
-        Vg: "grid_QrLb7B",
+        zH: "details_QrLb7B",
       };
     },
     168862(e) {
@@ -131,8 +137,12 @@
       e.exports = { n: "screen_SE-HpE" };
     },
     195464(e) {
-      e.exports = { n: "screen_pF9DDa", D: "title_pF9DDa" };
+      e.exports = {
+        nj: "screen_pF9DDa",
+        DD: "title_pF9DDa",
+        ho: "traitPicker_pF9DDa",
+      };
     },
   },
 ]);
-//# sourceMappingURL=40799.8a36e72b2b0eab35.js.map
+//# sourceMappingURL=616090.fa716e0237bd8426.js.map

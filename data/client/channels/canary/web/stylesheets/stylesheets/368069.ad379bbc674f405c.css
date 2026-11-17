@@ -27,6 +27,8 @@
   flex-shrink: 0;
   height: 56px;
   justify-content: center;
+  -o-object-fit: cover;
+  object-fit: cover;
   width: 56px;
 }
 .orbWalletPrimaryCardCloseButton_OqyRup {
@@ -36,6 +38,9 @@
   --control-icon-only-background-hover: transparent;
   --control-icon-only-border-hover: transparent;
   --control-icon-only-icon-hover: var(--control-icon-only-icon-default);
+}
+.orbWalletPrimaryCardGraphicFailed_OqyRup {
+  visibility: hidden;
 }
 .orbWalletNitroUpsellCard_OqyRup {
   background: radial-gradient(
@@ -84,17 +89,22 @@
     ),
     var(--background-mod-muted);
 }
-.placeholderChallengesCard_ZusIBo {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: var(--space-16);
+.orbWalletCampaignNitroUpsellCard_OqyRup {
+  isolation: isolate;
+  overflow: hidden;
 }
-.underlined_ZusIBo {
-  display: block;
-  text-decoration: underline;
-}
-.cursorPointer_ZusIBo {
-  cursor: pointer;
+.orbWalletCampaignNitroGlow_OqyRup {
+  border-start-end-radius: var(--radius-round);
+  border-start-start-radius: var(--radius-round);
+  filter: blur(calc(var(--space-48) + 2px));
+  height: 72px;
+  inset-inline-start: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: -1px;
+  transform: translateX(-50%);
+  width: 406px;
+  z-index: -1;
 }
 
-/*# sourceMappingURL=285558.c27acdc581059d95.css.map*/
+/*# sourceMappingURL=368069.ad379bbc674f405c.css.map*/

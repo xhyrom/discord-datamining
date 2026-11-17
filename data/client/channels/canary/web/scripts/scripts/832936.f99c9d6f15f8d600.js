@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [359015],
+  [832936],
   {
     85526(e, n) {
       "use strict";
@@ -1896,7 +1896,7 @@
       }
       D.create = (e, n) => new T(e, n);
     },
-    516029(e, n, t) {
+    621902(e, n, t) {
       "use strict";
       var a = t(477900);
       function r(e, n) {
@@ -1973,7 +1973,7 @@
           }
           case "empty":
             return (0, a.jsx)(u, { ...t });
-          case "small":
+          case "subtext":
             return (0, a.jsx)(u, {
               node: e,
               ...t,
@@ -5800,4 +5800,4 @@
     },
   },
 ]);
-//# sourceMappingURL=359015.1f69fcf71ece574c.js.map
+//# sourceMappingURL=832936.f99c9d6f15f8d600.js.map

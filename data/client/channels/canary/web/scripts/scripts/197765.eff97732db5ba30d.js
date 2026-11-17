@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [184782],
+  [197765],
   {
     838259(e, t, r) {
       "use strict";
@@ -755,12 +755,12 @@
               t.go(e);
             }
             var D = 0;
-            function M(e) {
+            function F(e) {
               1 === (D += e) && 1 === e
                 ? window.addEventListener(v, O)
                 : 0 === D && window.removeEventListener(v, O);
             }
-            var F = !1,
+            var M = !1,
               j = {
                 length: t.length,
                 action: "POP",
@@ -815,18 +815,18 @@
                   void 0 === e && (e = !1);
                   var t = k.setPrompt(e);
                   return (
-                    F || (M(1), (F = !0)),
+                    M || (F(1), (M = !0)),
                     function () {
-                      return F && ((F = !1), M(-1)), t();
+                      return M && ((M = !1), F(-1)), t();
                     }
                   );
                 },
                 listen: function (e) {
                   var t = k.appendListener(e);
                   return (
-                    M(1),
+                    F(1),
                     function () {
-                      M(-1), t();
+                      F(-1), t();
                     }
                   );
                 },
@@ -971,7 +971,7 @@
                         (i = N.location),
                         -1 === (n = C.indexOf(i.key)) && (n = 0),
                         -1 === (o = C.indexOf(r.key)) && (o = 0),
-                        (s = n - o) && ((S = !0), M(s)));
+                        (s = n - o) && ((S = !0), F(s)));
                   });
             }
             var U = k(b()),
@@ -979,15 +979,15 @@
             function D(e) {
               return E + l(e);
             }
-            function M(e) {
+            function F(e) {
               r.go(e);
             }
-            var F = 0;
+            var M = 0;
             function j(e) {
-              1 === (F += e) && 1 === e
+              1 === (M += e) && 1 === e
                 ? (window.addEventListener(g, O),
                   o && window.addEventListener(_, I))
-                : 0 === F &&
+                : 0 === M &&
                   (window.removeEventListener(g, O),
                   o && window.removeEventListener(_, I));
             }
@@ -1037,12 +1037,12 @@
                     }
                   });
                 },
-                go: M,
+                go: F,
                 goBack: function () {
-                  M(-1);
+                  F(-1);
                 },
                 goForward: function () {
-                  M(1);
+                  F(1);
                 },
                 block: function (e) {
                   void 0 === e && (e = !1);
@@ -2475,8 +2475,8 @@
                                     U = 0,
                                     C = 0,
                                     D = 1,
-                                    M = 0,
                                     F = 0,
+                                    M = 0,
                                     j = 0,
                                     B = 0,
                                     N = {
@@ -2493,7 +2493,7 @@
                                         );
                                       },
                                       flush: function (e) {
-                                        (M = 0),
+                                        (F = 0),
                                           (T = [0, 0]),
                                           (C = 0),
                                           (B = 0),
@@ -2527,7 +2527,7 @@
                                           e >= 1
                                             ? (f = Math.round(h / e))
                                             : (h = Math.round(f * e)),
-                                          (F = (1 / e - f / h) * h),
+                                          (M = (1 / e - f / h) * h),
                                           (D = (function (e, t) {
                                             for (
                                               var r = (e.length / t) | 0,
@@ -2676,9 +2676,9 @@
                                             (U = _[V + 1]),
                                             (C = P[V]),
                                             (D = O[V]));
-                                          var M = t[g] * C - r[g] * D,
-                                            F = t[g] * D + r[g] * C;
-                                          (t[g] = M), (r[g] = F);
+                                          var F = t[g] * C - r[g] * D,
+                                            M = t[g] * D + r[g] * C;
+                                          (t[g] = F), (r[g] = M);
                                         }
                                       } else
                                         for (var j = 0; j < b; j++) {
@@ -2687,8 +2687,8 @@
                                         }
                                     },
                                     X = function () {
-                                      var e = 0 | (M += 2 * F);
-                                      M -= e;
+                                      var e = 0 | (F += 2 * M);
+                                      F -= e;
                                       for (var t = 0; t < a; t++)
                                         (u.m_re[t] = p[t] * d[t]),
                                           (u.m_im[t] = p[t] * d[h + t]);
@@ -2768,7 +2768,7 @@
                                             Math.max(0, j + r - (a - h)) /
                                               (2 * h),
                                           ),
-                                        b = B + f * _ + Math.floor(M + F * _);
+                                        b = B + f * _ + Math.floor(F + M * _);
                                       B > b && (b = B);
                                       var v = i.float_array(b);
                                       i.blit(l, 0, v, 0, B);
@@ -3762,8 +3762,8 @@
                 U = "BISECT_TO_TARGET",
                 C = "BISECT_TO_KEYPOINT",
                 D = "LINEAR_TO_TARGET",
-                M = "fast";
-              function F() {
+                F = "fast";
+              function M() {
                 var e = document.createElement("ogvjs");
                 return (
                   Object.setPrototypeOf
@@ -3777,7 +3777,7 @@
                 void 0 === (0, l.default)(performance.now)
                   ? Date.now
                   : performance.now.bind(performance)),
-                (F.prototype = Object.create(HTMLElement.prototype, {}));
+                (M.prototype = Object.create(HTMLElement.prototype, {}));
               var j = (function (e) {
                 (0, u.default)(i, e);
                 var t,
@@ -4783,7 +4783,7 @@
                                     : t._readBytesAndWait();
                               });
                             if (
-                              this._seekMode === M &&
+                              this._seekMode === F &&
                               this._codec.keyframeTimestamp ==
                                 this._codec.frameTimestamp
                             )
@@ -5909,7 +5909,7 @@
                       {
                         key: "fastSeek",
                         value: function (e) {
-                          this._seek(+e, M);
+                          this._seek(+e, F);
                         },
                       },
                     ],
@@ -5927,7 +5927,7 @@
                   ),
                   i
                 );
-              })(F);
+              })(M);
               (0, _.default)(j, T),
                 (j.instanceCount = 0),
                 (j.styleManager = new (function () {
@@ -10601,8 +10601,8 @@
             U = L.height,
             C = L.width,
             D = L.top,
-            M = L.right,
-            F = L.bottom,
+            F = L.right,
+            M = L.bottom,
             j = L.left;
           if (
             "if-needed" === n &&
@@ -10611,9 +10611,9 @@
             k <= b &&
             E <= _ &&
             T >= D &&
-            k <= F &&
+            k <= M &&
             A >= j &&
-            E <= M
+            E <= F
           )
             break;
           var B = getComputedStyle(S),
@@ -10662,9 +10662,9 @@
               "start" === a
                 ? R - D - W
                 : "end" === a
-                  ? R - F + G + Y
+                  ? R - M + G + Y
                   : "nearest" === a
-                    ? s(D, F, U, W, G + Y, R, R + V, V)
+                    ? s(D, M, U, W, G + Y, R, R + V, V)
                     : R - (D + U / 2) + Y / 2),
               (z =
                 "start" === u
@@ -10672,8 +10672,8 @@
                   : "center" === u
                     ? P - (j + C / 2) + q / 2
                     : "end" === u
-                      ? P - M + H + q
-                      : s(j, M, C, N, H + q, P, P + x, x));
+                      ? P - F + H + q
+                      : s(j, F, C, N, H + q, P, P + x, x));
             var Z = S.scrollLeft,
               J = S.scrollTop;
             (R +=
@@ -10760,1063 +10760,1063 @@
         },
       );
     },
-    74570(e, t, r) {
+    583283(e, t, r) {
       "use strict";
       e.exports = r.p + "3d87e0acfdf050a9.scm";
     },
-    423497(e, t, r) {
+    345368(e, t, r) {
       "use strict";
       e.exports = r.p + "a57d829a5323de30.scm";
     },
-    752711(e, t, r) {
+    205778(e, t, r) {
       "use strict";
       e.exports = r.p + "d617404a9721adaa.wasm";
     },
-    529159(e, t, r) {
+    837424(e, t, r) {
       "use strict";
       e.exports = r.p + "2d3b24aac48706d0.scm";
     },
-    683713(e, t, r) {
+    169708(e, t, r) {
       "use strict";
       e.exports = r.p + "5493a714075a72c6.wasm";
     },
-    464195(e, t, r) {
+    530112(e, t, r) {
       "use strict";
       e.exports = r.p + "33f9142284a10095.scm";
     },
-    420505(e, t, r) {
+    239368(e, t, r) {
       "use strict";
       e.exports = r.p + "8260f720df5e3e06.wasm";
     },
-    38961(e, t, r) {
+    273848(e, t, r) {
       "use strict";
       e.exports = r.p + "5d60c65a42dd8b61.scm";
     },
-    25440(e, t, r) {
+    78033(e, t, r) {
       "use strict";
       e.exports = r.p + "4f098f595413c750.scm";
     },
-    874651(e, t, r) {
+    19582(e, t, r) {
       "use strict";
       e.exports = r.p + "598b355cd5c61ada.wasm";
     },
-    268787(e, t, r) {
+    431238(e, t, r) {
       "use strict";
       e.exports = r.p + "64eba10de56bb765.scm";
     },
-    517259(e, t, r) {
+    420254(e, t, r) {
       "use strict";
       e.exports = r.p + "0be701db53325b4e.wasm";
     },
-    641030(e, t, r) {
+    869773(e, t, r) {
       "use strict";
       e.exports = r.p + "93e51b74e13d1db3.scm";
     },
-    816915(e, t, r) {
+    309702(e, t, r) {
       "use strict";
       e.exports = r.p + "db8bd23fc1c2625c.wasm";
     },
-    506298(e, t, r) {
+    899159(e, t, r) {
       "use strict";
       e.exports = r.p + "74fe2c2f5a3c7981.scm";
     },
-    495639(e, t, r) {
+    661194(e, t, r) {
       "use strict";
       e.exports = r.p + "faf2d1d701ca26a4.wasm";
     },
-    484246(e, t, r) {
+    131451(e, t, r) {
       "use strict";
       e.exports = r.p + "108c8dd67e955e3b.scm";
     },
-    157227(e, t, r) {
+    596446(e, t, r) {
       "use strict";
       e.exports = r.p + "abf348b278af23fb.wasm";
     },
-    19983(e, t, r) {
+    309166(e, t, r) {
       "use strict";
       e.exports = r.p + "07e417d738722d4c.scm";
     },
-    604203(e, t, r) {
+    537518(e, t, r) {
       "use strict";
       e.exports = r.p + "8c53a35e60332680.wasm";
     },
-    83777(e, t, r) {
+    193708(e, t, r) {
       "use strict";
       e.exports = r.p + "9fa7b99795cad999.scm";
     },
-    974271(e, t, r) {
+    846970(e, t, r) {
       "use strict";
       e.exports = r.p + "f5ddb267044c6931.wasm";
     },
-    399088(e, t, r) {
+    448201(e, t, r) {
       "use strict";
       e.exports = r.p + "3ade61e47a975b88.scm";
     },
-    680873(e, t, r) {
+    374680(e, t, r) {
       "use strict";
       e.exports = r.p + "ceb6f797636a2e63.scm";
     },
-    987559(e, t, r) {
+    164366(e, t, r) {
       "use strict";
       e.exports = r.p + "7a1bfe86553551a2.scm";
     },
-    368203(e, t, r) {
+    315854(e, t, r) {
       "use strict";
       e.exports = r.p + "70e934b7d091f7ac.wasm";
     },
-    386869(e, t, r) {
+    699848(e, t, r) {
       "use strict";
       e.exports = r.p + "93e9ab38b759fa94.scm";
     },
-    372679(e, t, r) {
+    25314(e, t, r) {
       "use strict";
       e.exports = r.p + "6abd2df7d1f071e0.wasm";
     },
-    68974(e, t, r) {
+    852459(e, t, r) {
       "use strict";
       e.exports = r.p + "89a7618d9c5a0636.scm";
     },
-    695615(e, t, r) {
+    45458(e, t, r) {
       "use strict";
       e.exports = r.p + "9f40a4e483656d8e.wasm";
     },
-    896930(e, t, r) {
+    617739(e, t, r) {
       "use strict";
       e.exports = r.p + "04576dbdb98ad02f.scm";
     },
-    790127(e, t, r) {
+    486242(e, t, r) {
       "use strict";
       e.exports = r.p + "da7d7d6c7def34f0.wasm";
     },
-    837849(e, t, r) {
+    422888(e, t, r) {
       "use strict";
       e.exports = r.p + "be3f7e92e07ca1fd.scm";
     },
-    882600(e, t, r) {
+    775617(e, t, r) {
       "use strict";
       e.exports = r.p + "2666b65494736dbc.scm";
     },
-    617811(e, t, r) {
+    120406(e, t, r) {
       "use strict";
       e.exports = r.p + "799be48d2386aed3.wasm";
     },
-    624049(e, t, r) {
+    106874(e, t, r) {
       "use strict";
       e.exports = r.p + "9d568a1f15e8cf74.scm";
     },
-    278013(e, t, r) {
+    294288(e, t, r) {
       "use strict";
       e.exports = r.p + "d08bc0bdf5882cbb.wasm";
     },
-    398175(e, t, r) {
+    823350(e, t, r) {
       "use strict";
       e.exports = r.p + "982ab3c69af96dda.scm";
     },
-    162866(e, t, r) {
+    825347(e, t, r) {
       "use strict";
       e.exports = r.p + "bd9bde68cb2a04f0.scm";
     },
-    807171(e, t, r) {
+    824742(e, t, r) {
       "use strict";
       e.exports = r.p + "be32378ca5aa9001.wasm";
     },
-    576577(e, t, r) {
+    195520(e, t, r) {
       "use strict";
       e.exports = r.p + "7555218a1309ad93.scm";
     },
-    722803(e, t, r) {
+    911350(e, t, r) {
       "use strict";
       e.exports = r.p + "06e27614a1e70bce.wasm";
     },
-    934482(e, t, r) {
+    765251(e, t, r) {
       "use strict";
       e.exports = r.p + "0b59c2275238d17c.scm";
     },
-    708127(e, t, r) {
+    815442(e, t, r) {
       "use strict";
       e.exports = r.p + "0c9a67f1d13189e9.wasm";
     },
-    838601(e, t, r) {
+    777146(e, t, r) {
       "use strict";
       e.exports = r.p + "ffc648b27cbf1caf.scm";
     },
-    199045(e, t, r) {
+    446400(e, t, r) {
       "use strict";
       e.exports = r.p + "0c2cf4025eb430f2.wasm";
     },
-    803862(e, t, r) {
+    381801(e, t, r) {
       "use strict";
       e.exports = r.p + "6edd364cd748a297.scm";
     },
-    533543(e, t, r) {
+    979982(e, t, r) {
       "use strict";
       e.exports = r.p + "c7ac1c7e64386ef2.wasm";
     },
-    302311(e, t, r) {
+    419280(e, t, r) {
       "use strict";
       e.exports = r.p + "6e4f9b9f5280286f.scm";
     },
-    206381(e, t, r) {
+    864684(e, t, r) {
       "use strict";
       e.exports = r.p + "5b5a0771de70c994.wasm";
     },
-    646634(e, t, r) {
+    5845(e, t, r) {
       "use strict";
       e.exports = r.p + "a781b7662011d5f8.scm";
     },
-    479743(e, t, r) {
+    569542(e, t, r) {
       "use strict";
       e.exports = r.p + "a7ae27d6022446ae.wasm";
     },
-    538961(e, t, r) {
+    397768(e, t, r) {
       "use strict";
       e.exports = r.p + "b79558c9fe3061d8.scm";
     },
-    218368(e, t, r) {
+    466273(e, t, r) {
       "use strict";
       e.exports = r.p + "11028097ed495199.scm";
     },
-    509291(e, t, r) {
+    221646(e, t, r) {
       "use strict";
       e.exports = r.p + "9bd4a797e174717e.wasm";
     },
-    183069(e, t, r) {
+    213484(e, t, r) {
       "use strict";
       e.exports = r.p + "d4bfa95eadea7b95.scm";
     },
-    810067(e, t, r) {
+    927174(e, t, r) {
       "use strict";
       e.exports = r.p + "395bc20ec051f76a.wasm";
     },
-    740199(e, t, r) {
+    757872(e, t, r) {
       "use strict";
       e.exports = r.p + "0490603e9d0d01cd.scm";
     },
-    849114(e, t, r) {
+    924777(e, t, r) {
       "use strict";
       e.exports = r.p + "30e0c6c9ec034936.scm";
     },
-    279145(e, t, r) {
+    859724(e, t, r) {
       "use strict";
       e.exports = r.p + "437b321becdb7f7a.wasm";
     },
-    468090(e, t, r) {
+    679075(e, t, r) {
       "use strict";
       e.exports = r.p + "38b49511c25620a4.scm";
     },
-    143407(e, t, r) {
+    800206(e, t, r) {
       "use strict";
       e.exports = r.p + "c6e91b47ab586842.scm";
     },
-    267993(e, t, r) {
+    531880(e, t, r) {
       "use strict";
       e.exports = r.p + "68db595d8460bf97.scm";
     },
-    497319(e, t, r) {
+    502034(e, t, r) {
       "use strict";
       e.exports = r.p + "7dafb92ca6e3ec6b.wasm";
     },
-    505959(e, t, r) {
+    94620(e, t, r) {
       "use strict";
       e.exports = r.p + "764d203016a287be.scm";
     },
-    155189(e, t, r) {
+    707704(e, t, r) {
       "use strict";
       e.exports = r.p + "63f5ace618a1849b.wasm";
     },
-    673458(e, t, r) {
+    517353(e, t, r) {
       "use strict";
       e.exports = r.p + "b62210ce632b9c7b.scm";
     },
-    927195(e, t, r) {
+    913614(e, t, r) {
       "use strict";
       e.exports = r.p + "d46e056967ea88c7.wasm";
     },
-    439922(e, t, r) {
+    45221(e, t, r) {
       "use strict";
       e.exports = r.p + "a90228e085a54917.scm";
     },
-    214631(e, t, r) {
+    220924(e, t, r) {
       "use strict";
       e.exports = r.p + "83241319c2f5ea44.scm";
     },
-    654433(e, t, r) {
+    8258(e, t, r) {
       "use strict";
       e.exports = r.p + "14ec376fdb114a1a.scm";
     },
-    440327(e, t, r) {
+    876270(e, t, r) {
       "use strict";
       e.exports = r.p + "c5a069d4906465eb.wasm";
     },
-    470222(e, t, r) {
+    252935(e, t, r) {
       "use strict";
       e.exports = r.p + "bed44ef8a588de5e.scm";
     },
-    335291(e, t, r) {
+    955642(e, t, r) {
       "use strict";
       e.exports = r.p + "d59ec0d928765c62.scm";
     },
-    585477(e, t, r) {
+    918788(e, t, r) {
       "use strict";
       e.exports = r.p + "71d5da341ff42d98.scm";
     },
-    163083(e, t, r) {
+    303398(e, t, r) {
       "use strict";
       e.exports = r.p + "f038570bdb7af8e9.wasm";
     },
-    589900(e, t, r) {
+    867719(e, t, r) {
       "use strict";
       e.exports = r.p + "bfd02fa6ec3b90f5.scm";
     },
-    253451(e, t, r) {
+    751006(e, t, r) {
       "use strict";
       e.exports = r.p + "a95d1640af0ddcec.wasm";
     },
-    795354(e, t, r) {
+    873701(e, t, r) {
       "use strict";
       e.exports = r.p + "ca7b1a42047fd4a7.scm";
     },
-    248035(e, t, r) {
+    976198(e, t, r) {
       "use strict";
       e.exports = r.p + "15c8ec64f2ae513e.wasm";
     },
-    549015(e, t, r) {
+    1690(e, t, r) {
       "use strict";
       e.exports = r.p + "26f3233db8fd35cc.scm";
     },
-    288867(e, t, r) {
+    423326(e, t, r) {
       "use strict";
       e.exports = r.p + "7cdf35cc40bd63c2.wasm";
     },
-    149366(e, t, r) {
+    380917(e, t, r) {
       "use strict";
       e.exports = r.p + "d1d5683e682403ee.scm";
     },
-    635011(e, t, r) {
+    673676(e, t, r) {
       "use strict";
       e.exports = r.p + "9659a56d1febda1f.scm";
     },
-    728679(e, t, r) {
+    369814(e, t, r) {
       "use strict";
       e.exports = r.p + "6bb16753a126b209.wasm";
     },
-    746302(e, t, r) {
+    459075(e, t, r) {
       "use strict";
       e.exports = r.p + "49df8c4579e595cf.scm";
     },
-    799147(e, t, r) {
+    788014(e, t, r) {
       "use strict";
       e.exports = r.p + "378d2e61a0746a96.scm";
     },
-    903957(e, t, r) {
+    492104(e, t, r) {
       "use strict";
       e.exports = r.p + "d5a5dd5a59b729c1.scm";
     },
-    246311(e, t, r) {
+    241154(e, t, r) {
       "use strict";
       e.exports = r.p + "bb3ac68fa100d5c7.wasm";
     },
-    693809(e, t, r) {
+    996048(e, t, r) {
       "use strict";
       e.exports = r.p + "e2e4ffe9446b9430.scm";
     },
-    42547(e, t, r) {
+    809078(e, t, r) {
       "use strict";
       e.exports = r.p + "8233178e2772b0b2.wasm";
     },
-    676499(e, t, r) {
+    652520(e, t, r) {
       "use strict";
       e.exports = r.p + "b95a3d59c6e54c5a.scm";
     },
-    614533(e, t, r) {
+    639344(e, t, r) {
       "use strict";
       e.exports = r.p + "7ae5f9c324bbd8df.wasm";
     },
-    396369(e, t, r) {
+    382066(e, t, r) {
       "use strict";
       e.exports = r.p + "c1a7d06de3d1ae83.scm";
     },
-    436928(e, t, r) {
+    156775(e, t, r) {
       "use strict";
       e.exports = r.p + "b5bfaaa4cb03e124.scm";
     },
-    320645(e, t, r) {
+    920844(e, t, r) {
       "use strict";
       e.exports = r.p + "2335f8474959e079.wasm";
     },
-    325895(e, t, r) {
+    516958(e, t, r) {
       "use strict";
       e.exports = r.p + "4c2fad6f8a84d5f2.scm";
     },
-    749367(e, t, r) {
+    437906(e, t, r) {
       "use strict";
       e.exports = r.p + "904fd0ea84eebf55.wasm";
     },
-    493704(e, t, r) {
+    41609(e, t, r) {
       "use strict";
       e.exports = r.p + "872d0bfaaff74572.scm";
     },
-    867083(e, t, r) {
+    558414(e, t, r) {
       "use strict";
       e.exports = r.p + "a8fd53282d0dd6c1.wasm";
     },
-    112680(e, t, r) {
+    324043(e, t, r) {
       "use strict";
       e.exports = r.p + "2b31faaf5a622150.scm";
     },
-    227355(e, t, r) {
+    450310(e, t, r) {
       "use strict";
       e.exports = r.p + "cc541fde42e3ce86.wasm";
     },
-    447687(e, t, r) {
+    7336(e, t, r) {
       "use strict";
       e.exports = r.p + "1d975cf88cd6d438.scm";
     },
-    21498(e, t, r) {
+    311233(e, t, r) {
       "use strict";
       e.exports = r.p + "f78c17604b26eefb.scm";
     },
-    280855(e, t, r) {
+    937423(e, t, r) {
       "use strict";
       e.exports = r.p + "5002d3c2fa5919d9.scm";
     },
-    921081(e, t, r) {
+    810692(e, t, r) {
       "use strict";
       e.exports = r.p + "d6b89e5231d97f5a.wasm";
     },
-    788654(e, t, r) {
+    717757(e, t, r) {
       "use strict";
       e.exports = r.p + "1d57cb39bf3f26f1.scm";
     },
-    370043(e, t, r) {
+    832574(e, t, r) {
       "use strict";
       e.exports = r.p + "57fb6c3a61cd37dd.wasm";
     },
-    227021(e, t, r) {
+    453534(e, t, r) {
       "use strict";
       e.exports = r.p + "9a8a39530b75f971.scm";
     },
-    326493(e, t, r) {
+    170336(e, t, r) {
       "use strict";
       e.exports = r.p + "577d73522f17d851.wasm";
     },
-    597474(e, t, r) {
+    686761(e, t, r) {
       "use strict";
       e.exports = r.p + "9d7a1d34922edf76.scm";
     },
-    768691(e, t, r) {
+    658318(e, t, r) {
       "use strict";
       e.exports = r.p + "e3d7d085f023429c.wasm";
     },
-    275463(e, t, r) {
+    215750(e, t, r) {
       "use strict";
       e.exports = r.p + "7fe23f9203b51756.scm";
     },
-    918075(e, t, r) {
+    396150(e, t, r) {
       "use strict";
       e.exports = r.p + "17d9fb955684e54c.wasm";
     },
-    617477(e, t, r) {
+    614310(e, t, r) {
       "use strict";
       e.exports = r.p + "0d418e559e607820.scm";
     },
-    117789(e, t, r) {
+    951280(e, t, r) {
       "use strict";
       e.exports = r.p + "bdb130d897717272.wasm";
     },
-    535600(e, t, r) {
+    894783(e, t, r) {
       "use strict";
       e.exports = r.p + "0f6cf3430264982a.scm";
     },
-    36651(e, t, r) {
+    173530(e, t, r) {
       "use strict";
       e.exports = r.p + "77d5b4e9a629191d.wasm";
     },
-    486380(e, t, r) {
+    6361(e, t, r) {
       "use strict";
       e.exports = r.p + "67b407c2a35b083c.scm";
     },
-    349773(e, t, r) {
+    298408(e, t, r) {
       "use strict";
       e.exports = r.p + "916bab3e06f5d5ba.scm";
     },
-    729179(e, t, r) {
+    673278(e, t, r) {
       "use strict";
       e.exports = r.p + "b4673c9c89418881.scm";
     },
-    317035(e, t, r) {
+    772750(e, t, r) {
       "use strict";
       e.exports = r.p + "72a6ca901c9c4591.wasm";
     },
-    106165(e, t, r) {
+    840494(e, t, r) {
       "use strict";
-      e.exports = r.p + "5693f1a81168aef4.scm";
+      e.exports = r.p + "68c3eb950dcf165a.scm";
     },
-    915276(e, t, r) {
+    894555(e, t, r) {
       "use strict";
-      e.exports = r.p + "33e83790d5f96c7c.scm";
+      e.exports = r.p + "3d801259b9a61d70.scm";
     },
-    460722(e, t, r) {
+    966437(e, t, r) {
       "use strict";
-      e.exports = r.p + "a735562399d11010.scm";
+      e.exports = r.p + "e79699056cd1115f.scm";
     },
-    983597(e, t, r) {
+    919108(e, t, r) {
       "use strict";
-      e.exports = r.p + "0d972285fed61c3a.wasm";
+      e.exports = r.p + "11b24f67a9d6689c.wasm";
     },
-    50549(e, t, r) {
+    208970(e, t, r) {
       "use strict";
       e.exports = r.p + "7cc0acd33f903a55.scm";
     },
-    637279(e, t, r) {
+    533887(e, t, r) {
       "use strict";
       e.exports = r.p + "fe3cea4ec886ffda.scm";
     },
-    376249(e, t, r) {
+    980228(e, t, r) {
       "use strict";
       e.exports = r.p + "0649ea5400fabaf9.wasm";
     },
-    596697(e, t, r) {
+    715524(e, t, r) {
       "use strict";
       e.exports = r.p + "4ba2f997145549c8.scm";
     },
-    641448(e, t, r) {
+    869221(e, t, r) {
       "use strict";
       e.exports = r.p + "8f7666f15b118b59.scm";
     },
-    27967(e, t, r) {
+    843178(e, t, r) {
       "use strict";
       e.exports = r.p + "4fe2bf339f9bcf80.wasm";
     },
-    815669(e, t, r) {
+    264682(e, t, r) {
       "use strict";
       e.exports = r.p + "f43f7dedfee334eb.scm";
     },
-    170473(e, t, r) {
+    694132(e, t, r) {
       "use strict";
       e.exports = r.p + "2ee8111376e6effe.wasm";
     },
-    941560(e, t, r) {
+    199169(e, t, r) {
       "use strict";
       e.exports = r.p + "55072d0bf912d0a2.scm";
     },
-    523435(e, t, r) {
+    35502(e, t, r) {
       "use strict";
       e.exports = r.p + "6000a48ad9b7b73a.wasm";
     },
-    355226(e, t, r) {
+    659031(e, t, r) {
       "use strict";
       e.exports = r.p + "0d0a5d0e2c94fe47.scm";
     },
-    681595(e, t, r) {
+    814150(e, t, r) {
       "use strict";
       e.exports = r.p + "76f51e4120a63fe4.wasm";
     },
-    918273(e, t, r) {
+    575876(e, t, r) {
       "use strict";
       e.exports = r.p + "58c9a8aed17cb1f1.scm";
     },
-    168688(e, t, r) {
+    633253(e, t, r) {
       "use strict";
       e.exports = r.p + "e0b7a2d0c737a42b.scm";
     },
-    242870(e, t, r) {
+    829603(e, t, r) {
       "use strict";
       e.exports = r.p + "0af059d1dd61fef3.scm";
     },
-    954983(e, t, r) {
+    32378(e, t, r) {
       "use strict";
       e.exports = r.p + "8af7eb58f684abcb.wasm";
     },
-    673146(e, t, r) {
+    583641(e, t, r) {
       "use strict";
       e.exports = r.p + "1291257665f1e395.scm";
     },
-    348463(e, t, r) {
+    392040(e, t, r) {
       "use strict";
       e.exports = r.p + "be08ad58feef479c.scm";
     },
-    471129(e, t, r) {
+    996734(e, t, r) {
       "use strict";
       e.exports = r.p + "0298ed9734c0f49b.scm";
     },
-    506979(e, t, r) {
+    104462(e, t, r) {
       "use strict";
       e.exports = r.p + "37629793d54595aa.wasm";
     },
-    583458(e, t, r) {
+    4447(e, t, r) {
       "use strict";
       e.exports = r.p + "a52dbc97f447c6f8.scm";
     },
-    23793(e, t, r) {
+    96492(e, t, r) {
       "use strict";
       e.exports = r.p + "91d438d370df2fb9.scm";
     },
-    507783(e, t, r) {
+    339666(e, t, r) {
       "use strict";
       e.exports = r.p + "4e875a19cd1d5f9a.wasm";
     },
-    425033(e, t, r) {
+    12498(e, t, r) {
       "use strict";
       e.exports = r.p + "3e482b73ce2f1d69.scm";
     },
-    206808(e, t, r) {
+    436487(e, t, r) {
       "use strict";
       e.exports = r.p + "d90643289be970b6.scm";
     },
-    832205(e, t, r) {
+    520216(e, t, r) {
       "use strict";
       e.exports = r.p + "e8e8836f09ead3b7.wasm";
     },
-    697414(e, t, r) {
+    565407(e, t, r) {
       "use strict";
       e.exports = r.p + "c74b8f4de42fb2da.scm";
     },
-    853651(e, t, r) {
+    774898(e, t, r) {
       "use strict";
       e.exports = r.p + "e394548d74912d61.scm";
     },
-    727263(e, t, r) {
+    582570(e, t, r) {
       "use strict";
       e.exports = r.p + "7035bb3a0c2b8d54.wasm";
     },
-    574513(e, t, r) {
+    797810(e, t, r) {
       "use strict";
       e.exports = r.p + "4edda157d72b3808.scm";
     },
-    554645(e, t, r) {
+    119312(e, t, r) {
       "use strict";
       e.exports = r.p + "1969a3392e618b26.wasm";
     },
-    790297(e, t, r) {
+    637602(e, t, r) {
       "use strict";
       e.exports = r.p + "7aaa4791a7108ef1.scm";
     },
-    680525(e, t, r) {
+    114460(e, t, r) {
       "use strict";
       e.exports = r.p + "f515f5466b3799e7.wasm";
     },
-    79255(e, t, r) {
+    46428(e, t, r) {
       "use strict";
       e.exports = r.p + "e9591638fc2a87af.scm";
     },
-    758737(e, t, r) {
+    88728(e, t, r) {
       "use strict";
       e.exports = r.p + "e78f39b14c762f4e.wasm";
     },
-    636478(e, t, r) {
+    86713(e, t, r) {
       "use strict";
       e.exports = r.p + "5bac5070b554561d.scm";
     },
-    374651(e, t, r) {
+    969198(e, t, r) {
       "use strict";
       e.exports = r.p + "52db42441d27d4a4.wasm";
     },
-    793426(e, t, r) {
+    150559(e, t, r) {
       "use strict";
       e.exports = r.p + "31a797c4177b7453.scm";
     },
-    217415(e, t, r) {
+    431602(e, t, r) {
       "use strict";
       e.exports = r.p + "2dc3595467f9ed1b.scm";
     },
-    49195(e, t, r) {
+    390606(e, t, r) {
       "use strict";
       e.exports = r.p + "0898dcd3788b188b.wasm";
     },
-    228312(e, t, r) {
+    831261(e, t, r) {
       "use strict";
       e.exports = r.p + "77cca439b48681fd.scm";
     },
-    955167(e, t, r) {
+    635306(e, t, r) {
       "use strict";
       e.exports = r.p + "a4bc55505fc9536f.scm";
     },
-    446011(e, t, r) {
+    342318(e, t, r) {
       "use strict";
       e.exports = r.p + "7de9e00e06cf8797.wasm";
     },
-    308819(e, t, r) {
+    870244(e, t, r) {
       "use strict";
       e.exports = r.p + "5862f376888a8350.scm";
     },
-    458552(e, t, r) {
+    335171(e, t, r) {
       "use strict";
       e.exports = r.p + "e145a14fcbb9a393.scm";
     },
-    627977(e, t, r) {
+    76852(e, t, r) {
       "use strict";
       e.exports = r.p + "08c1e3004d980a55.wasm";
     },
-    531378(e, t, r) {
+    2189(e, t, r) {
       "use strict";
       e.exports = r.p + "28047f781bb88e3a.scm";
     },
-    943271(e, t, r) {
+    860228(e, t, r) {
       "use strict";
       e.exports = r.p + "bf7803ec51ec3253.scm";
     },
-    373025(e, t, r) {
+    538618(e, t, r) {
       "use strict";
       e.exports = r.p + "d6864494d8ed8678.scm";
     },
-    718555(e, t, r) {
+    78150(e, t, r) {
       "use strict";
       e.exports = r.p + "4ea891f9226208e1.wasm";
     },
-    349345(e, t, r) {
+    270435(e, t, r) {
       "use strict";
       e.exports = r.p + "d819ef4b6df05088.scm";
     },
-    673251(e, t, r) {
+    488486(e, t, r) {
       "use strict";
       e.exports = r.p + "3ee26a92ffe4084e.wasm";
     },
-    558944(e, t, r) {
+    512371(e, t, r) {
       "use strict";
       e.exports = r.p + "ff4875e34b10af15.scm";
     },
-    975787(e, t, r) {
+    422278(e, t, r) {
       "use strict";
       e.exports = r.p + "b46742dbee67e756.wasm";
     },
-    751086(e, t, r) {
+    749861(e, t, r) {
       "use strict";
       e.exports = r.p + "a7fe368b1af4bff9.scm";
     },
-    511451(e, t, r) {
+    960956(e, t, r) {
       "use strict";
       e.exports = r.p + "9113833583a1967a.scm";
     },
-    42795(e, t, r) {
+    969110(e, t, r) {
       "use strict";
       e.exports = r.p + "7cb3d6186d2f3829.wasm";
     },
-    717632(e, t, r) {
+    963889(e, t, r) {
       "use strict";
       e.exports = r.p + "ab244c7915a4882a.scm";
     },
-    797847(e, t, r) {
+    169350(e, t, r) {
       "use strict";
       e.exports = r.p + "1a395c1d440d9bb5.scm";
     },
-    424683(e, t, r) {
+    747150(e, t, r) {
       "use strict";
       e.exports = r.p + "40e543a27ba17f75.wasm";
     },
-    122159(e, t, r) {
+    145896(e, t, r) {
       "use strict";
       e.exports = r.p + "1d745fe76aec1178.scm";
     },
-    928245(e, t, r) {
+    742876(e, t, r) {
       "use strict";
       e.exports = r.p + "ed86889d600477cb.wasm";
     },
-    856804(e, t, r) {
+    432503(e, t, r) {
       "use strict";
       e.exports = r.p + "5abb4709a74efb87.scm";
     },
-    332483(e, t, r) {
+    389910(e, t, r) {
       "use strict";
       e.exports = r.p + "ce91156b16f04d00.wasm";
     },
-    66769(e, t, r) {
+    668558(e, t, r) {
       "use strict";
       e.exports = r.p + "17a02aa0e9d4b682.scm";
     },
-    375974(e, t, r) {
+    786053(e, t, r) {
       "use strict";
       e.exports = r.p + "f11ea8e873f2ad7a.scm";
     },
-    217681(e, t, r) {
+    551744(e, t, r) {
       "use strict";
       e.exports = r.p + "534b88d8e16028e3.wasm";
     },
-    801169(e, t, r) {
+    945742(e, t, r) {
       "use strict";
       e.exports = r.p + "20d59b30c0bcd07b.scm";
     },
-    584849(e, t, r) {
+    610720(e, t, r) {
       "use strict";
       e.exports = r.p + "4833ddba4e3c2e41.wasm";
     },
-    584182(e, t, r) {
+    520807(e, t, r) {
       "use strict";
       e.exports = r.p + "880f37d7d46a1210.scm";
     },
-    28747(e, t, r) {
+    952342(e, t, r) {
       "use strict";
       e.exports = r.p + "a509605565cd4809.wasm";
     },
-    584079(e, t, r) {
+    536636(e, t, r) {
       "use strict";
       e.exports = r.p + "5f17f56e87bc030f.scm";
     },
-    474082(e, t, r) {
+    831389(e, t, r) {
       "use strict";
       e.exports = r.p + "ffc798ce19d71d0a.scm";
     },
-    657581(e, t, r) {
+    313e3(e, t, r) {
       "use strict";
       e.exports = r.p + "ab4ac798e39bc361.wasm";
     },
-    410812(e, t, r) {
+    519143(e, t, r) {
       "use strict";
       e.exports = r.p + "150079cffc11c19f.scm";
     },
-    916957(e, t, r) {
+    111706(e, t, r) {
       "use strict";
       e.exports = r.p + "6926cd0c58ac1bf3.scm";
     },
-    858827(e, t, r) {
+    105700(e, t, r) {
       "use strict";
       e.exports = r.p + "3477e34e77ae4659.scm";
     },
-    91555(e, t, r) {
+    77470(e, t, r) {
       "use strict";
       e.exports = r.p + "108f8fe5b2d7ba7b.wasm";
     },
-    705530(e, t, r) {
+    223705(e, t, r) {
       "use strict";
       e.exports = r.p + "ba3ff33752bdeb90.scm";
     },
-    221871(e, t, r) {
+    752104(e, t, r) {
       "use strict";
       e.exports = r.p + "25c677b3c2f23d03.scm";
     },
-    537487(e, t, r) {
+    63694(e, t, r) {
       "use strict";
       e.exports = r.p + "f3d546d9757678c1.wasm";
     },
-    177951(e, t, r) {
+    771056(e, t, r) {
       "use strict";
       e.exports = r.p + "0e68dac0c0691a0c.scm";
     },
-    458994(e, t, r) {
+    937961(e, t, r) {
       "use strict";
       e.exports = r.p + "b46002b17c746471.scm";
     },
-    120876(e, t, r) {
+    40039(e, t, r) {
       "use strict";
       e.exports = r.p + "023e042f81f1d190.scm";
     },
-    660629(e, t, r) {
+    593876(e, t, r) {
       "use strict";
       e.exports = r.p + "631590b9281edd13.wasm";
     },
-    951865(e, t, r) {
+    816644(e, t, r) {
       "use strict";
       e.exports = r.p + "4bd633ad81400c98.scm";
     },
-    235912(e, t, r) {
+    970341(e, t, r) {
       "use strict";
       e.exports = r.p + "7bbbd663402a67c4.scm";
     },
-    948318(e, t, r) {
+    906979(e, t, r) {
       "use strict";
       e.exports = r.p + "1bd9a135dae6ed53.scm";
     },
-    208159(e, t, r) {
+    545810(e, t, r) {
       "use strict";
       e.exports = r.p + "bea314831a08c1ad.wasm";
     },
-    370749(e, t, r) {
+    247812(e, t, r) {
       "use strict";
       e.exports = r.p + "9d2904ef6dd5e9fe.scm";
     },
-    493131(e, t, r) {
+    506126(e, t, r) {
       "use strict";
       e.exports = r.p + "332b0e874b86247c.wasm";
     },
-    508783(e, t, r) {
+    752756(e, t, r) {
       "use strict";
       e.exports = r.p + "3da6afe347130d3e.scm";
     },
-    691970(e, t, r) {
+    754773(e, t, r) {
       "use strict";
       e.exports = r.p + "ceb6f797636a2e63.scm";
     },
-    572892(e, t, r) {
+    529395(e, t, r) {
       "use strict";
       e.exports = r.p + "ae8158b5143b2105.scm";
     },
-    870561(e, t, r) {
+    673600(e, t, r) {
       "use strict";
       e.exports = r.p + "c6441c8ee959613a.wasm";
     },
-    443837(e, t, r) {
+    200856(e, t, r) {
       "use strict";
       e.exports = r.p + "4ed39dc06943c3e2.scm";
     },
-    890314(e, t, r) {
+    248671(e, t, r) {
       "use strict";
       e.exports = r.p + "48aa74bea3fcda40.scm";
     },
-    695231(e, t, r) {
+    330442(e, t, r) {
       "use strict";
       e.exports = r.p + "27cb89098c8d5aef.wasm";
     },
-    723496(e, t, r) {
+    236127(e, t, r) {
       "use strict";
       e.exports = r.p + "6a47e50cddd6b30f.scm";
     },
-    275643(e, t, r) {
+    935722(e, t, r) {
       "use strict";
       e.exports = r.p + "7ba428bf85f7b5c6.wasm";
     },
-    690585(e, t, r) {
+    632976(e, t, r) {
       "use strict";
       e.exports = r.p + "180b17205c422875.scm";
     },
-    908862(e, t, r) {
+    910279(e, t, r) {
       "use strict";
       e.exports = r.p + "27f2b7e9f1c3c033.scm";
     },
-    109675(e, t, r) {
+    974478(e, t, r) {
       "use strict";
       e.exports = r.p + "e7880f9ee99e8b17.wasm";
     },
-    680015(e, t, r) {
+    337792(e, t, r) {
       "use strict";
       e.exports = r.p + "71e40836c4f58bd2.scm";
     },
-    300284(e, t, r) {
+    558423(e, t, r) {
       "use strict";
       e.exports = r.p + "27f2b7e9f1c3c033.scm";
     },
-    236097(e, t, r) {
+    592340(e, t, r) {
       "use strict";
       e.exports = r.p + "2a0f0d40e3e6b5f5.wasm";
     },
-    645072(e, t, r) {
+    488449(e, t, r) {
       "use strict";
       e.exports = r.p + "268bf37036a7000e.scm";
     },
-    397129(e, t, r) {
+    294960(e, t, r) {
       "use strict";
       e.exports = r.p + "672084259765f452.scm";
     },
-    33259(e, t, r) {
+    500302(e, t, r) {
       "use strict";
       e.exports = r.p + "a927d3108788ff77.wasm";
     },
-    668272(e, t, r) {
+    188137(e, t, r) {
       "use strict";
       e.exports = r.p + "1f8dd043494ee1f1.scm";
     },
-    82827(e, t, r) {
+    770766(e, t, r) {
       "use strict";
       e.exports = r.p + "4a85db0adc3763c8.wasm";
     },
-    826778(e, t, r) {
+    150705(e, t, r) {
       "use strict";
       e.exports = r.p + "89689369445eca3b.scm";
     },
-    598615(e, t, r) {
+    326414(e, t, r) {
       "use strict";
       e.exports = r.p + "e9adc32678a73c70.wasm";
     },
-    103694(e, t, r) {
+    834055(e, t, r) {
       "use strict";
       e.exports = r.p + "cbaed2f8abecb5b8.scm";
     },
-    968763(e, t, r) {
+    891514(e, t, r) {
       "use strict";
       e.exports = r.p + "7692b169a722ff31.scm";
     },
-    415555(e, t, r) {
+    210022(e, t, r) {
       "use strict";
       e.exports = r.p + "1b7e0f257a5ea496.wasm";
     },
-    804341(e, t, r) {
+    205499(e, t, r) {
       "use strict";
       e.exports = r.p + "f81d26c65b6725c8.scm";
     },
-    128215(e, t, r) {
+    829350(e, t, r) {
       "use strict";
       e.exports = r.p + "6e18f7a201cbaf97.scm";
     },
-    624035(e, t, r) {
+    190630(e, t, r) {
       "use strict";
       e.exports = r.p + "2751f826ec9ebbef.wasm";
     },
-    690106(e, t, r) {
+    849976(e, t, r) {
       "use strict";
       e.exports = r.p + "d838a86863f4f0dd.scm";
     },
-    365423(e, t, r) {
+    643190(e, t, r) {
       "use strict";
       e.exports = r.p + "4f098f595413c750.scm";
     },
-    190339(e, t, r) {
+    324854(e, t, r) {
       "use strict";
       e.exports = r.p + "4c0f09fc8f81ff7f.wasm";
     },
-    212677(e, t, r) {
+    224870(e, t, r) {
       "use strict";
       e.exports = r.p + "5e8f3bb7f8d4c68c.scm";
     },
-    339997(e, t, r) {
+    385676(e, t, r) {
       "use strict";
       e.exports = r.p + "7559dad320aed82d.wasm";
     },
-    568251(e, t, r) {
+    434418(e, t, r) {
       "use strict";
       e.exports = r.p + "338c675ef087c754.scm";
     },
-    98127(e, t, r) {
+    528274(e, t, r) {
       "use strict";
       e.exports = r.p + "6d6c0c9662c02445.wasm";
     },
-    38563(e, t, r) {
+    794384(e, t, r) {
       "use strict";
       e.exports = r.p + "d1978ec42eed74f6.scm";
     },
-    802153(e, t, r) {
+    192088(e, t, r) {
       "use strict";
       e.exports = r.p + "fd49a79b78478dc4.wasm";
     },
-    446787(e, t, r) {
+    795440(e, t, r) {
       "use strict";
       e.exports = r.p + "de82efe956afcfd0.scm";
     },
-    829541(e, t, r) {
+    791064(e, t, r) {
       "use strict";
       e.exports = r.p + "764b4de9bc9cc7c4.wasm";
     },
-    67308(e, t, r) {
+    576169(e, t, r) {
       "use strict";
       e.exports = r.p + "07316eddff5889b3.scm";
     },
-    711821(e, t, r) {
+    769208(e, t, r) {
       "use strict";
       e.exports = r.p + "b5d39ce99749cca1.scm";
     },
-    82515(e, t, r) {
+    839822(e, t, r) {
       "use strict";
       e.exports = r.p + "11be26819e947a7e.wasm";
     },
-    913547(e, t, r) {
+    493366(e, t, r) {
       "use strict";
       e.exports = r.p + "ff32678d88643c9a.scm";
     },
-    31115(e, t, r) {
+    375446(e, t, r) {
       "use strict";
       e.exports = r.p + "f28149bb435e1459.wasm";
     },
-    103810(e, t, r) {
+    242655(e, t, r) {
       "use strict";
-      e.exports = r.p + "203e6d70756e8b12.wasm";
+      e.exports = r.p + "1fe2dbba51cddf4b.wasm";
     },
-    201490(e, t, r) {
+    158881(e, t, r) {
       "use strict";
-      e.exports = r.p + "4124126694c38814.wasm";
+      e.exports = r.p + "191563f32b0d4a0b.wasm";
     },
-    445181(e, t, r) {
+    775702(e, t, r) {
       "use strict";
-      e.exports = r.p + "d5cfd8b705724294.wasm";
+      e.exports = r.p + "e933c74869ad2e0d.wasm";
     },
-    195152(e, t, r) {
+    530152(e, t, r) {
       "use strict";
       r.d(t, {
         gT: () => i,
@@ -11868,687 +11868,687 @@
       let c = new TextEncoder(),
         d = new TextDecoder();
     },
-    652845(e, t, r) {
+    254864(e, t, r) {
       "use strict";
       let i = {
         ada: {
           languageId: "ada",
           languageExport: "tree_sitter_ada",
-          wasm: new URL(r(752711), r.b),
-          highlights: new URL(r(74570), r.b),
-          locals: new URL(r(423497), r.b),
+          wasm: new URL(r(205778), r.b),
+          highlights: new URL(r(583283), r.b),
+          locals: new URL(r(345368), r.b),
         },
         agda: {
           languageId: "agda",
           languageExport: "tree_sitter_agda",
-          wasm: new URL(r(683713), r.b),
-          highlights: new URL(r(529159), r.b),
+          wasm: new URL(r(169708), r.b),
+          highlights: new URL(r(837424), r.b),
         },
         asciidoc: {
           languageId: "asciidoc",
           languageExport: "tree_sitter_asciidoc",
-          wasm: new URL(r(420505), r.b),
-          highlights: new URL(r(464195), r.b),
+          wasm: new URL(r(239368), r.b),
+          highlights: new URL(r(530112), r.b),
         },
         asm: {
           languageId: "asm",
           languageExport: "tree_sitter_asm",
-          wasm: new URL(r(874651), r.b),
-          highlights: new URL(r(38961), r.b),
-          injections: new URL(r(25440), r.b),
+          wasm: new URL(r(19582), r.b),
+          highlights: new URL(r(273848), r.b),
+          injections: new URL(r(78033), r.b),
         },
         awk: {
           languageId: "awk",
           languageExport: "tree_sitter_awk",
-          wasm: new URL(r(517259), r.b),
-          highlights: new URL(r(268787), r.b),
+          wasm: new URL(r(420254), r.b),
+          highlights: new URL(r(431238), r.b),
         },
         bash: {
           languageId: "bash",
           languageExport: "tree_sitter_bash",
-          wasm: new URL(r(816915), r.b),
-          highlights: new URL(r(641030), r.b),
+          wasm: new URL(r(309702), r.b),
+          highlights: new URL(r(869773), r.b),
         },
         batch: {
           languageId: "batch",
           languageExport: "tree_sitter_batch",
-          wasm: new URL(r(495639), r.b),
-          highlights: new URL(r(506298), r.b),
+          wasm: new URL(r(661194), r.b),
+          highlights: new URL(r(899159), r.b),
         },
         c: {
           languageId: "c",
           languageExport: "tree_sitter_c",
-          wasm: new URL(r(604203), r.b),
-          highlights: new URL(r(19983), r.b),
+          wasm: new URL(r(537518), r.b),
+          highlights: new URL(r(309166), r.b),
         },
         "c-sharp": {
           languageId: "c-sharp",
           languageExport: "tree_sitter_c_sharp",
-          wasm: new URL(r(157227), r.b),
-          highlights: new URL(r(484246), r.b),
+          wasm: new URL(r(596446), r.b),
+          highlights: new URL(r(131451), r.b),
         },
         caddy: {
           languageId: "caddy",
           languageExport: "tree_sitter_caddy",
-          wasm: new URL(r(974271), r.b),
-          highlights: new URL(r(83777), r.b),
+          wasm: new URL(r(846970), r.b),
+          highlights: new URL(r(193708), r.b),
         },
         capnp: {
           languageId: "capnp",
           languageExport: "tree_sitter_capnp",
-          wasm: new URL(r(368203), r.b),
-          highlights: new URL(r(399088), r.b),
-          injections: new URL(r(680873), r.b),
-          locals: new URL(r(987559), r.b),
+          wasm: new URL(r(315854), r.b),
+          highlights: new URL(r(448201), r.b),
+          injections: new URL(r(374680), r.b),
+          locals: new URL(r(164366), r.b),
         },
         cedar: {
           languageId: "cedar",
           languageExport: "tree_sitter_cedar",
-          wasm: new URL(r(372679), r.b),
-          highlights: new URL(r(386869), r.b),
+          wasm: new URL(r(25314), r.b),
+          highlights: new URL(r(699848), r.b),
         },
         cedarschema: {
           languageId: "cedarschema",
           languageExport: "tree_sitter_cedarschema",
-          wasm: new URL(r(695615), r.b),
-          highlights: new URL(r(68974), r.b),
+          wasm: new URL(r(45458), r.b),
+          highlights: new URL(r(852459), r.b),
         },
         clojure: {
           languageId: "clojure",
           languageExport: "tree_sitter_clojure",
-          wasm: new URL(r(790127), r.b),
-          highlights: new URL(r(896930), r.b),
+          wasm: new URL(r(486242), r.b),
+          highlights: new URL(r(617739), r.b),
         },
         cmake: {
           languageId: "cmake",
           languageExport: "tree_sitter_cmake",
-          wasm: new URL(r(617811), r.b),
-          highlights: new URL(r(837849), r.b),
-          injections: new URL(r(882600), r.b),
+          wasm: new URL(r(120406), r.b),
+          highlights: new URL(r(422888), r.b),
+          injections: new URL(r(775617), r.b),
         },
         commonlisp: {
           languageId: "commonlisp",
           languageExport: "tree_sitter_commonlisp",
-          wasm: new URL(r(278013), r.b),
-          highlights: new URL(r(624049), r.b),
+          wasm: new URL(r(294288), r.b),
+          highlights: new URL(r(106874), r.b),
         },
         cpp: {
           languageId: "cpp",
           languageExport: "tree_sitter_cpp",
-          wasm: new URL(r(807171), r.b),
-          highlights: new URL(r(398175), r.b),
-          injections: new URL(r(162866), r.b),
+          wasm: new URL(r(824742), r.b),
+          highlights: new URL(r(823350), r.b),
+          injections: new URL(r(825347), r.b),
         },
         css: {
           languageId: "css",
           languageExport: "tree_sitter_css",
-          wasm: new URL(r(722803), r.b),
-          highlights: new URL(r(576577), r.b),
+          wasm: new URL(r(911350), r.b),
+          highlights: new URL(r(195520), r.b),
         },
         d: {
           languageId: "d",
           languageExport: "tree_sitter_d",
-          wasm: new URL(r(708127), r.b),
-          highlights: new URL(r(934482), r.b),
+          wasm: new URL(r(815442), r.b),
+          highlights: new URL(r(765251), r.b),
         },
         dart: {
           languageId: "dart",
           languageExport: "tree_sitter_dart",
-          wasm: new URL(r(199045), r.b),
-          highlights: new URL(r(838601), r.b),
+          wasm: new URL(r(446400), r.b),
+          highlights: new URL(r(777146), r.b),
         },
         devicetree: {
           languageId: "devicetree",
           languageExport: "tree_sitter_devicetree",
-          wasm: new URL(r(533543), r.b),
-          highlights: new URL(r(803862), r.b),
+          wasm: new URL(r(979982), r.b),
+          highlights: new URL(r(381801), r.b),
         },
         diff: {
           languageId: "diff",
           languageExport: "tree_sitter_diff",
-          wasm: new URL(r(206381), r.b),
-          highlights: new URL(r(302311), r.b),
+          wasm: new URL(r(864684), r.b),
+          highlights: new URL(r(419280), r.b),
         },
         dockerfile: {
           languageId: "dockerfile",
           languageExport: "tree_sitter_dockerfile",
-          wasm: new URL(r(479743), r.b),
-          highlights: new URL(r(646634), r.b),
+          wasm: new URL(r(569542), r.b),
+          highlights: new URL(r(5845), r.b),
         },
         dot: {
           languageId: "dot",
           languageExport: "tree_sitter_dot",
-          wasm: new URL(r(509291), r.b),
-          highlights: new URL(r(538961), r.b),
-          injections: new URL(r(218368), r.b),
+          wasm: new URL(r(221646), r.b),
+          highlights: new URL(r(397768), r.b),
+          injections: new URL(r(466273), r.b),
         },
         elisp: {
           languageId: "elisp",
           languageExport: "tree_sitter_elisp",
-          wasm: new URL(r(810067), r.b),
-          highlights: new URL(r(183069), r.b),
+          wasm: new URL(r(927174), r.b),
+          highlights: new URL(r(213484), r.b),
         },
         elixir: {
           languageId: "elixir",
           languageExport: "tree_sitter_elixir",
-          wasm: new URL(r(279145), r.b),
-          highlights: new URL(r(740199), r.b),
-          injections: new URL(r(849114), r.b),
+          wasm: new URL(r(859724), r.b),
+          highlights: new URL(r(757872), r.b),
+          injections: new URL(r(924777), r.b),
         },
         elm: {
           languageId: "elm",
           languageExport: "tree_sitter_elm",
-          wasm: new URL(r(497319), r.b),
-          highlights: new URL(r(468090), r.b),
-          injections: new URL(r(143407), r.b),
-          locals: new URL(r(267993), r.b),
+          wasm: new URL(r(502034), r.b),
+          highlights: new URL(r(679075), r.b),
+          injections: new URL(r(800206), r.b),
+          locals: new URL(r(531880), r.b),
         },
         erlang: {
           languageId: "erlang",
           languageExport: "tree_sitter_erlang",
-          wasm: new URL(r(155189), r.b),
-          highlights: new URL(r(505959), r.b),
+          wasm: new URL(r(707704), r.b),
+          highlights: new URL(r(94620), r.b),
         },
         fish: {
           languageId: "fish",
           languageExport: "tree_sitter_fish",
-          wasm: new URL(r(927195), r.b),
-          highlights: new URL(r(673458), r.b),
+          wasm: new URL(r(913614), r.b),
+          highlights: new URL(r(517353), r.b),
         },
         fsharp: {
           languageId: "fsharp",
           languageExport: "tree_sitter_fsharp",
-          wasm: new URL(r(440327), r.b),
-          highlights: new URL(r(439922), r.b),
-          injections: new URL(r(214631), r.b),
-          locals: new URL(r(654433), r.b),
+          wasm: new URL(r(876270), r.b),
+          highlights: new URL(r(45221), r.b),
+          injections: new URL(r(220924), r.b),
+          locals: new URL(r(8258), r.b),
         },
         gleam: {
           languageId: "gleam",
           languageExport: "tree_sitter_gleam",
-          wasm: new URL(r(163083), r.b),
-          highlights: new URL(r(470222), r.b),
-          injections: new URL(r(335291), r.b),
-          locals: new URL(r(585477), r.b),
+          wasm: new URL(r(303398), r.b),
+          highlights: new URL(r(252935), r.b),
+          injections: new URL(r(955642), r.b),
+          locals: new URL(r(918788), r.b),
         },
         glsl: {
           languageId: "glsl",
           languageExport: "tree_sitter_glsl",
-          wasm: new URL(r(253451), r.b),
-          highlights: new URL(r(589900), r.b),
+          wasm: new URL(r(751006), r.b),
+          highlights: new URL(r(867719), r.b),
         },
         go: {
           languageId: "go",
           languageExport: "tree_sitter_go",
-          wasm: new URL(r(248035), r.b),
-          highlights: new URL(r(795354), r.b),
+          wasm: new URL(r(976198), r.b),
+          highlights: new URL(r(873701), r.b),
         },
         graphql: {
           languageId: "graphql",
           languageExport: "tree_sitter_graphql",
-          wasm: new URL(r(288867), r.b),
-          highlights: new URL(r(549015), r.b),
+          wasm: new URL(r(423326), r.b),
+          highlights: new URL(r(1690), r.b),
         },
         groovy: {
           languageId: "groovy",
           languageExport: "tree_sitter_groovy",
-          wasm: new URL(r(728679), r.b),
-          highlights: new URL(r(149366), r.b),
-          injections: new URL(r(635011), r.b),
+          wasm: new URL(r(369814), r.b),
+          highlights: new URL(r(380917), r.b),
+          injections: new URL(r(673676), r.b),
         },
         haskell: {
           languageId: "haskell",
           languageExport: "tree_sitter_haskell",
-          wasm: new URL(r(246311), r.b),
-          highlights: new URL(r(746302), r.b),
-          injections: new URL(r(799147), r.b),
-          locals: new URL(r(903957), r.b),
+          wasm: new URL(r(241154), r.b),
+          highlights: new URL(r(459075), r.b),
+          injections: new URL(r(788014), r.b),
+          locals: new URL(r(492104), r.b),
         },
         hcl: {
           languageId: "hcl",
           languageExport: "tree_sitter_hcl",
-          wasm: new URL(r(42547), r.b),
-          highlights: new URL(r(693809), r.b),
+          wasm: new URL(r(809078), r.b),
+          highlights: new URL(r(996048), r.b),
         },
         hlsl: {
           languageId: "hlsl",
           languageExport: "tree_sitter_hlsl",
-          wasm: new URL(r(614533), r.b),
-          highlights: new URL(r(676499), r.b),
+          wasm: new URL(r(639344), r.b),
+          highlights: new URL(r(652520), r.b),
         },
         html: {
           languageId: "html",
           languageExport: "tree_sitter_html",
-          wasm: new URL(r(320645), r.b),
-          highlights: new URL(r(396369), r.b),
-          injections: new URL(r(436928), r.b),
+          wasm: new URL(r(920844), r.b),
+          highlights: new URL(r(382066), r.b),
+          injections: new URL(r(156775), r.b),
         },
         idris: {
           languageId: "idris",
           languageExport: "tree_sitter_idris",
-          wasm: new URL(r(749367), r.b),
-          highlights: new URL(r(325895), r.b),
+          wasm: new URL(r(437906), r.b),
+          highlights: new URL(r(516958), r.b),
         },
         ini: {
           languageId: "ini",
           languageExport: "tree_sitter_ini",
-          wasm: new URL(r(867083), r.b),
-          highlights: new URL(r(493704), r.b),
+          wasm: new URL(r(558414), r.b),
+          highlights: new URL(r(41609), r.b),
         },
         java: {
           languageId: "java",
           languageExport: "tree_sitter_java",
-          wasm: new URL(r(227355), r.b),
-          highlights: new URL(r(112680), r.b),
+          wasm: new URL(r(450310), r.b),
+          highlights: new URL(r(324043), r.b),
         },
         javascript: {
           languageId: "javascript",
           languageExport: "tree_sitter_javascript",
-          wasm: new URL(r(921081), r.b),
-          highlights: new URL(r(447687), r.b),
-          injections: new URL(r(21498), r.b),
-          locals: new URL(r(280855), r.b),
+          wasm: new URL(r(810692), r.b),
+          highlights: new URL(r(7336), r.b),
+          injections: new URL(r(311233), r.b),
+          locals: new URL(r(937423), r.b),
         },
         jinja2: {
           languageId: "jinja2",
           languageExport: "tree_sitter_jinja2",
-          wasm: new URL(r(370043), r.b),
-          highlights: new URL(r(788654), r.b),
+          wasm: new URL(r(832574), r.b),
+          highlights: new URL(r(717757), r.b),
         },
         jq: {
           languageId: "jq",
           languageExport: "tree_sitter_jq",
-          wasm: new URL(r(326493), r.b),
-          highlights: new URL(r(227021), r.b),
+          wasm: new URL(r(170336), r.b),
+          highlights: new URL(r(453534), r.b),
         },
         json: {
           languageId: "json",
           languageExport: "tree_sitter_json",
-          wasm: new URL(r(768691), r.b),
-          highlights: new URL(r(597474), r.b),
+          wasm: new URL(r(658318), r.b),
+          highlights: new URL(r(686761), r.b),
         },
         julia: {
           languageId: "julia",
           languageExport: "tree_sitter_julia",
-          wasm: new URL(r(918075), r.b),
-          highlights: new URL(r(275463), r.b),
+          wasm: new URL(r(396150), r.b),
+          highlights: new URL(r(215750), r.b),
         },
         kotlin: {
           languageId: "kotlin",
           languageExport: "tree_sitter_kotlin",
-          wasm: new URL(r(117789), r.b),
-          highlights: new URL(r(617477), r.b),
+          wasm: new URL(r(951280), r.b),
+          highlights: new URL(r(614310), r.b),
         },
         lean: {
           languageId: "lean",
           languageExport: "tree_sitter_lean",
-          wasm: new URL(r(36651), r.b),
-          highlights: new URL(r(535600), r.b),
+          wasm: new URL(r(173530), r.b),
+          highlights: new URL(r(894783), r.b),
         },
         lua: {
           languageId: "lua",
           languageExport: "tree_sitter_lua",
-          wasm: new URL(r(317035), r.b),
-          highlights: new URL(r(486380), r.b),
-          injections: new URL(r(349773), r.b),
-          locals: new URL(r(729179), r.b),
+          wasm: new URL(r(772750), r.b),
+          highlights: new URL(r(6361), r.b),
+          injections: new URL(r(298408), r.b),
+          locals: new URL(r(673278), r.b),
         },
         luau: {
           languageId: "luau",
           languageExport: "tree_sitter_luau",
-          wasm: new URL(r(983597), r.b),
-          highlights: new URL(r(106165), r.b),
-          injections: new URL(r(915276), r.b),
-          locals: new URL(r(460722), r.b),
+          wasm: new URL(r(919108), r.b),
+          highlights: new URL(r(840494), r.b),
+          injections: new URL(r(894555), r.b),
+          locals: new URL(r(966437), r.b),
         },
         markdown: {
           languageId: "markdown",
           languageExport: "tree_sitter_markdown",
-          wasm: new URL(r(376249), r.b),
-          highlights: new URL(r(50549), r.b),
-          injections: new URL(r(637279), r.b),
+          wasm: new URL(r(980228), r.b),
+          highlights: new URL(r(208970), r.b),
+          injections: new URL(r(533887), r.b),
         },
         markdown_inline: {
           languageId: "markdown_inline",
           languageExport: "tree_sitter_markdown_inline",
-          wasm: new URL(r(27967), r.b),
-          highlights: new URL(r(596697), r.b),
-          injections: new URL(r(641448), r.b),
+          wasm: new URL(r(843178), r.b),
+          highlights: new URL(r(715524), r.b),
+          injections: new URL(r(869221), r.b),
         },
         matlab: {
           languageId: "matlab",
           languageExport: "tree_sitter_matlab",
-          wasm: new URL(r(170473), r.b),
-          highlights: new URL(r(815669), r.b),
+          wasm: new URL(r(694132), r.b),
+          highlights: new URL(r(264682), r.b),
         },
         meson: {
           languageId: "meson",
           languageExport: "tree_sitter_meson",
-          wasm: new URL(r(523435), r.b),
-          highlights: new URL(r(941560), r.b),
+          wasm: new URL(r(35502), r.b),
+          highlights: new URL(r(199169), r.b),
         },
         ninja: {
           languageId: "ninja",
           languageExport: "tree_sitter_ninja",
-          wasm: new URL(r(681595), r.b),
-          highlights: new URL(r(355226), r.b),
+          wasm: new URL(r(814150), r.b),
+          highlights: new URL(r(659031), r.b),
         },
         nix: {
           languageId: "nix",
           languageExport: "tree_sitter_nix",
-          wasm: new URL(r(954983), r.b),
-          highlights: new URL(r(918273), r.b),
-          injections: new URL(r(168688), r.b),
-          locals: new URL(r(242870), r.b),
+          wasm: new URL(r(32378), r.b),
+          highlights: new URL(r(575876), r.b),
+          injections: new URL(r(633253), r.b),
+          locals: new URL(r(829603), r.b),
         },
         objc: {
           languageId: "objc",
           languageExport: "tree_sitter_objc",
-          wasm: new URL(r(506979), r.b),
-          highlights: new URL(r(673146), r.b),
-          injections: new URL(r(348463), r.b),
-          locals: new URL(r(471129), r.b),
+          wasm: new URL(r(104462), r.b),
+          highlights: new URL(r(583641), r.b),
+          injections: new URL(r(392040), r.b),
+          locals: new URL(r(996734), r.b),
         },
         ocaml: {
           languageId: "ocaml",
           languageExport: "tree_sitter_ocaml",
-          wasm: new URL(r(507783), r.b),
-          highlights: new URL(r(583458), r.b),
-          locals: new URL(r(23793), r.b),
+          wasm: new URL(r(339666), r.b),
+          highlights: new URL(r(4447), r.b),
+          locals: new URL(r(96492), r.b),
         },
         perl: {
           languageId: "perl",
           languageExport: "tree_sitter_perl",
-          wasm: new URL(r(832205), r.b),
-          highlights: new URL(r(425033), r.b),
-          injections: new URL(r(206808), r.b),
+          wasm: new URL(r(520216), r.b),
+          highlights: new URL(r(12498), r.b),
+          injections: new URL(r(436487), r.b),
         },
         php: {
           languageId: "php",
           languageExport: "tree_sitter_php",
-          wasm: new URL(r(727263), r.b),
-          highlights: new URL(r(697414), r.b),
-          injections: new URL(r(853651), r.b),
+          wasm: new URL(r(582570), r.b),
+          highlights: new URL(r(565407), r.b),
+          injections: new URL(r(774898), r.b),
         },
         postscript: {
           languageId: "postscript",
           languageExport: "tree_sitter_postscript",
-          wasm: new URL(r(554645), r.b),
-          highlights: new URL(r(574513), r.b),
+          wasm: new URL(r(119312), r.b),
+          highlights: new URL(r(797810), r.b),
         },
         powershell: {
           languageId: "powershell",
           languageExport: "tree_sitter_powershell",
-          wasm: new URL(r(680525), r.b),
-          highlights: new URL(r(790297), r.b),
+          wasm: new URL(r(114460), r.b),
+          highlights: new URL(r(637602), r.b),
         },
         prolog: {
           languageId: "prolog",
           languageExport: "tree_sitter_prolog",
-          wasm: new URL(r(758737), r.b),
-          highlights: new URL(r(79255), r.b),
+          wasm: new URL(r(88728), r.b),
+          highlights: new URL(r(46428), r.b),
         },
         python: {
           languageId: "python",
           languageExport: "tree_sitter_python",
-          wasm: new URL(r(374651), r.b),
-          highlights: new URL(r(636478), r.b),
+          wasm: new URL(r(969198), r.b),
+          highlights: new URL(r(86713), r.b),
         },
         query: {
           languageId: "query",
           languageExport: "tree_sitter_query",
-          wasm: new URL(r(49195), r.b),
-          highlights: new URL(r(793426), r.b),
-          injections: new URL(r(217415), r.b),
+          wasm: new URL(r(390606), r.b),
+          highlights: new URL(r(150559), r.b),
+          injections: new URL(r(431602), r.b),
         },
         r: {
           languageId: "r",
           languageExport: "tree_sitter_r",
-          wasm: new URL(r(446011), r.b),
-          highlights: new URL(r(228312), r.b),
-          locals: new URL(r(955167), r.b),
+          wasm: new URL(r(342318), r.b),
+          highlights: new URL(r(831261), r.b),
+          locals: new URL(r(635306), r.b),
         },
         rego: {
           languageId: "rego",
           languageExport: "tree_sitter_rego",
-          wasm: new URL(r(627977), r.b),
-          highlights: new URL(r(308819), r.b),
-          locals: new URL(r(458552), r.b),
+          wasm: new URL(r(76852), r.b),
+          highlights: new URL(r(870244), r.b),
+          locals: new URL(r(335171), r.b),
         },
         rescript: {
           languageId: "rescript",
           languageExport: "tree_sitter_rescript",
-          wasm: new URL(r(718555), r.b),
-          highlights: new URL(r(531378), r.b),
-          injections: new URL(r(943271), r.b),
-          locals: new URL(r(373025), r.b),
+          wasm: new URL(r(78150), r.b),
+          highlights: new URL(r(2189), r.b),
+          injections: new URL(r(860228), r.b),
+          locals: new URL(r(538618), r.b),
         },
         ron: {
           languageId: "ron",
           languageExport: "tree_sitter_ron",
-          wasm: new URL(r(673251), r.b),
-          highlights: new URL(r(349345), r.b),
+          wasm: new URL(r(488486), r.b),
+          highlights: new URL(r(270435), r.b),
         },
         ruby: {
           languageId: "ruby",
           languageExport: "tree_sitter_ruby",
-          wasm: new URL(r(975787), r.b),
-          highlights: new URL(r(558944), r.b),
+          wasm: new URL(r(422278), r.b),
+          highlights: new URL(r(512371), r.b),
         },
         rust: {
           languageId: "rust",
           languageExport: "tree_sitter_rust_orchard",
-          wasm: new URL(r(42795), r.b),
-          highlights: new URL(r(751086), r.b),
-          injections: new URL(r(511451), r.b),
+          wasm: new URL(r(969110), r.b),
+          highlights: new URL(r(749861), r.b),
+          injections: new URL(r(960956), r.b),
         },
         scala: {
           languageId: "scala",
           languageExport: "tree_sitter_scala",
-          wasm: new URL(r(424683), r.b),
-          highlights: new URL(r(717632), r.b),
-          locals: new URL(r(797847), r.b),
+          wasm: new URL(r(747150), r.b),
+          highlights: new URL(r(963889), r.b),
+          locals: new URL(r(169350), r.b),
         },
         scheme: {
           languageId: "scheme",
           languageExport: "tree_sitter_scheme",
-          wasm: new URL(r(928245), r.b),
-          highlights: new URL(r(122159), r.b),
+          wasm: new URL(r(742876), r.b),
+          highlights: new URL(r(145896), r.b),
         },
         scss: {
           languageId: "scss",
           languageExport: "tree_sitter_scss",
-          wasm: new URL(r(332483), r.b),
-          highlights: new URL(r(856804), r.b),
+          wasm: new URL(r(389910), r.b),
+          highlights: new URL(r(432503), r.b),
         },
         solidity: {
           languageId: "solidity",
           languageExport: "tree_sitter_solidity",
-          wasm: new URL(r(217681), r.b),
-          highlights: new URL(r(66769), r.b),
-          locals: new URL(r(375974), r.b),
+          wasm: new URL(r(551744), r.b),
+          highlights: new URL(r(668558), r.b),
+          locals: new URL(r(786053), r.b),
         },
         sparql: {
           languageId: "sparql",
           languageExport: "tree_sitter_sparql",
-          wasm: new URL(r(584849), r.b),
-          highlights: new URL(r(801169), r.b),
+          wasm: new URL(r(610720), r.b),
+          highlights: new URL(r(945742), r.b),
         },
         sql: {
           languageId: "sql",
           languageExport: "tree_sitter_sql",
-          wasm: new URL(r(28747), r.b),
-          highlights: new URL(r(584182), r.b),
+          wasm: new URL(r(952342), r.b),
+          highlights: new URL(r(520807), r.b),
         },
         "ssh-config": {
           languageId: "ssh-config",
           languageExport: "tree_sitter_ssh_config",
-          wasm: new URL(r(657581), r.b),
-          highlights: new URL(r(584079), r.b),
-          injections: new URL(r(474082), r.b),
+          wasm: new URL(r(313e3), r.b),
+          highlights: new URL(r(536636), r.b),
+          injections: new URL(r(831389), r.b),
         },
         starlark: {
           languageId: "starlark",
           languageExport: "tree_sitter_starlark",
-          wasm: new URL(r(91555), r.b),
-          highlights: new URL(r(410812), r.b),
-          injections: new URL(r(916957), r.b),
-          locals: new URL(r(858827), r.b),
+          wasm: new URL(r(77470), r.b),
+          highlights: new URL(r(519143), r.b),
+          injections: new URL(r(111706), r.b),
+          locals: new URL(r(105700), r.b),
         },
         styx: {
           languageId: "styx",
           languageExport: "tree_sitter_styx",
-          wasm: new URL(r(537487), r.b),
-          highlights: new URL(r(705530), r.b),
-          injections: new URL(r(221871), r.b),
+          wasm: new URL(r(63694), r.b),
+          highlights: new URL(r(223705), r.b),
+          injections: new URL(r(752104), r.b),
         },
         svelte: {
           languageId: "svelte",
           languageExport: "tree_sitter_svelte",
-          wasm: new URL(r(660629), r.b),
-          highlights: new URL(r(177951), r.b),
-          injections: new URL(r(458994), r.b),
-          locals: new URL(r(120876), r.b),
+          wasm: new URL(r(593876), r.b),
+          highlights: new URL(r(771056), r.b),
+          injections: new URL(r(937961), r.b),
+          locals: new URL(r(40039), r.b),
         },
         swift: {
           languageId: "swift",
           languageExport: "tree_sitter_swift",
-          wasm: new URL(r(208159), r.b),
-          highlights: new URL(r(951865), r.b),
-          injections: new URL(r(235912), r.b),
-          locals: new URL(r(948318), r.b),
+          wasm: new URL(r(545810), r.b),
+          highlights: new URL(r(816644), r.b),
+          injections: new URL(r(970341), r.b),
+          locals: new URL(r(906979), r.b),
         },
         textproto: {
           languageId: "textproto",
           languageExport: "tree_sitter_textproto",
-          wasm: new URL(r(493131), r.b),
-          highlights: new URL(r(370749), r.b),
+          wasm: new URL(r(506126), r.b),
+          highlights: new URL(r(247812), r.b),
         },
         thrift: {
           languageId: "thrift",
           languageExport: "tree_sitter_thrift",
-          wasm: new URL(r(870561), r.b),
-          highlights: new URL(r(508783), r.b),
-          injections: new URL(r(691970), r.b),
-          locals: new URL(r(572892), r.b),
+          wasm: new URL(r(673600), r.b),
+          highlights: new URL(r(752756), r.b),
+          injections: new URL(r(754773), r.b),
+          locals: new URL(r(529395), r.b),
         },
         tlaplus: {
           languageId: "tlaplus",
           languageExport: "tree_sitter_tlaplus",
-          wasm: new URL(r(695231), r.b),
-          highlights: new URL(r(443837), r.b),
-          locals: new URL(r(890314), r.b),
+          wasm: new URL(r(330442), r.b),
+          highlights: new URL(r(200856), r.b),
+          locals: new URL(r(248671), r.b),
         },
         toml: {
           languageId: "toml",
           languageExport: "tree_sitter_toml",
-          wasm: new URL(r(275643), r.b),
-          highlights: new URL(r(723496), r.b),
+          wasm: new URL(r(935722), r.b),
+          highlights: new URL(r(236127), r.b),
         },
         tsx: {
           languageId: "tsx",
           languageExport: "tree_sitter_tsx",
-          wasm: new URL(r(109675), r.b),
-          highlights: new URL(r(690585), r.b),
-          locals: new URL(r(908862), r.b),
+          wasm: new URL(r(974478), r.b),
+          highlights: new URL(r(632976), r.b),
+          locals: new URL(r(910279), r.b),
         },
         typescript: {
           languageId: "typescript",
           languageExport: "tree_sitter_typescript",
-          wasm: new URL(r(236097), r.b),
-          highlights: new URL(r(680015), r.b),
-          locals: new URL(r(300284), r.b),
+          wasm: new URL(r(592340), r.b),
+          highlights: new URL(r(337792), r.b),
+          locals: new URL(r(558423), r.b),
         },
         typst: {
           languageId: "typst",
           languageExport: "tree_sitter_typst",
-          wasm: new URL(r(33259), r.b),
-          highlights: new URL(r(645072), r.b),
-          injections: new URL(r(397129), r.b),
+          wasm: new URL(r(500302), r.b),
+          highlights: new URL(r(488449), r.b),
+          injections: new URL(r(294960), r.b),
         },
         verilog: {
           languageId: "verilog",
           languageExport: "tree_sitter_verilog",
-          wasm: new URL(r(82827), r.b),
-          highlights: new URL(r(668272), r.b),
+          wasm: new URL(r(770766), r.b),
+          highlights: new URL(r(188137), r.b),
         },
         vhdl: {
           languageId: "vhdl",
           languageExport: "tree_sitter_vhdl",
-          wasm: new URL(r(598615), r.b),
-          highlights: new URL(r(826778), r.b),
+          wasm: new URL(r(326414), r.b),
+          highlights: new URL(r(150705), r.b),
         },
         vim: {
           languageId: "vim",
           languageExport: "tree_sitter_vim",
-          wasm: new URL(r(415555), r.b),
-          highlights: new URL(r(103694), r.b),
-          injections: new URL(r(968763), r.b),
+          wasm: new URL(r(210022), r.b),
+          highlights: new URL(r(834055), r.b),
+          injections: new URL(r(891514), r.b),
         },
         vue: {
           languageId: "vue",
           languageExport: "tree_sitter_vue",
-          wasm: new URL(r(624035), r.b),
-          highlights: new URL(r(804341), r.b),
-          injections: new URL(r(128215), r.b),
+          wasm: new URL(r(190630), r.b),
+          highlights: new URL(r(205499), r.b),
+          injections: new URL(r(829350), r.b),
         },
         wit: {
           languageId: "wit",
           languageExport: "tree_sitter_wit",
-          wasm: new URL(r(190339), r.b),
-          highlights: new URL(r(690106), r.b),
-          injections: new URL(r(365423), r.b),
+          wasm: new URL(r(324854), r.b),
+          highlights: new URL(r(849976), r.b),
+          injections: new URL(r(643190), r.b),
         },
         x86asm: {
           languageId: "x86asm",
           languageExport: "tree_sitter_x86asm",
-          wasm: new URL(r(339997), r.b),
-          highlights: new URL(r(212677), r.b),
+          wasm: new URL(r(385676), r.b),
+          highlights: new URL(r(224870), r.b),
         },
         xml: {
           languageId: "xml",
           languageExport: "tree_sitter_xml",
-          wasm: new URL(r(98127), r.b),
-          highlights: new URL(r(568251), r.b),
+          wasm: new URL(r(528274), r.b),
+          highlights: new URL(r(434418), r.b),
         },
         yaml: {
           languageId: "yaml",
           languageExport: "tree_sitter_yaml",
-          wasm: new URL(r(802153), r.b),
-          highlights: new URL(r(38563), r.b),
+          wasm: new URL(r(192088), r.b),
+          highlights: new URL(r(794384), r.b),
         },
         yuri: {
           languageId: "yuri",
           languageExport: "tree_sitter_yuri",
-          wasm: new URL(r(829541), r.b),
-          highlights: new URL(r(446787), r.b),
+          wasm: new URL(r(791064), r.b),
+          highlights: new URL(r(795440), r.b),
         },
         zig: {
           languageId: "zig",
           languageExport: "tree_sitter_zig",
-          wasm: new URL(r(82515), r.b),
-          highlights: new URL(r(67308), r.b),
-          injections: new URL(r(711821), r.b),
+          wasm: new URL(r(839822), r.b),
+          highlights: new URL(r(576169), r.b),
+          injections: new URL(r(769208), r.b),
         },
         zsh: {
           languageId: "zsh",
           languageExport: "tree_sitter_zsh",
-          wasm: new URL(r(31115), r.b),
-          highlights: new URL(r(913547), r.b),
+          wasm: new URL(r(375446), r.b),
+          highlights: new URL(r(493366), r.b),
         },
       };
       r.d(t, {}, { p: i });
     },
-    126919(e, t, r) {
+    725020(e, t, r) {
       "use strict";
-      r(195152);
-      var i = r(652845),
-        n = r(267647);
+      r(530152);
+      var i = r(254864),
+        n = r(220956);
       r.d(t, { A: () => n.A, pb: () => i.p });
     },
-    267647(e, t, r) {
+    220956(e, t, r) {
       "use strict";
-      var i = r(195152);
+      var i = r(530152);
       class n {
         host;
         abi;
@@ -12716,6 +12716,7 @@
                       missing_injections: [],
                       out_of_fuel_languages: [],
                       fuel_used: 0,
+                      parse_fuel_used: 0,
                     }
                   : JSON.parse(e),
             );
@@ -12724,6 +12725,7 @@
             missingInjections: r.missing_injections,
             outOfFuelLanguages: r.out_of_fuel_languages,
             fuelUsed: r.fuel_used,
+            parseFuelUsed: r.parse_fuel_used,
           };
         }
         highlightToHtml(e = {}) {
@@ -12764,6 +12766,7 @@
                       missing_injections: [],
                       out_of_fuel_languages: [],
                       fuel_used: 0,
+                      parse_fuel_used: 0,
                     }
                   : JSON.parse(e),
             );
@@ -12772,6 +12775,7 @@
               missingInjections: e.missing_injections,
               outOfFuelLanguages: e.out_of_fuel_languages,
               fuelUsed: e.fuel_used,
+              parseFuelUsed: e.parse_fuel_used,
             };
           } finally {
             a && n._free(a);
@@ -12819,11 +12823,11 @@
         {
           A: async function () {
             let e = await (async function () {
-                return (await r.e(819825).then(r.bind(r, 765640))).default;
+                return (await r.e(621772).then(r.bind(r, 553799))).default;
               })(),
               [t, o] = await Promise.all([
-                (0, i.LM)(new URL(r(103810), r.b)),
-                (0, i.LM)(new URL(r(201490), r.b)),
+                (0, i.LM)(new URL(r(242655), r.b)),
+                (0, i.LM)(new URL(r(158881), r.b)),
               ]),
               s = await e({ wasmBinary: t }),
               a = await s.loadWebAssemblyModule(o, { loadAsync: !0 });
@@ -12832,7 +12836,7 @@
         },
       );
     },
-    87391(e, t, r) {
+    593034(e, t, r) {
       "use strict";
       let i = Object.freeze({
         CUSTOM_EMOJI: 1,
@@ -12864,7 +12868,7 @@
         LIST: 0x4000000,
         QUOTE: 0x8000000,
         MULTILINE_QUOTE: 0x10000000,
-        SMALL: 0x20000000,
+        SUBTEXT: 0x20000000,
         DEV_LINKS: 0x40000000,
         EMOJI: 7,
         LINKS: 120,
@@ -12876,7 +12880,7 @@
       });
       r.d(t, {}, { w: i });
     },
-    714414(e, t, r) {
+    359787(e, t, r) {
       "use strict";
       let i;
       r.d(t, {
@@ -12895,7 +12899,7 @@
                   break;
                 case "spoiler":
                 case "heading":
-                case "small":
+                case "subtext":
                   yield* e(r.value.content);
                   break;
                 case "list":
@@ -12908,10 +12912,10 @@
         qg: () => l,
         IS: () => h,
       });
-      var n = r(124499),
-        o = r(553731),
-        s = r(712982);
-      r(87391);
+      var n = r(378448),
+        o = r(975370),
+        s = r(905779);
+      r(593034);
       let a = !1,
         u = null;
       function c() {
@@ -13270,7 +13274,7 @@
         return D && e instanceof Map;
       }
       function l(e) {
-        return M && e instanceof Set;
+        return F && e instanceof Set;
       }
       function h(e) {
         return e.o || e.t;
@@ -13469,8 +13473,8 @@
         U,
         C = "u" > typeof Symbol && "symbol" == typeof Symbol("x"),
         D = "u" > typeof Map,
-        M = "u" > typeof Set,
-        F =
+        F = "u" > typeof Set,
+        M =
           "u" > typeof Proxy &&
           void 0 !== Proxy.revocable &&
           "u" > typeof Reflect,
@@ -13596,7 +13600,7 @@
       var Y = new ((function () {
           function e(e) {
             var t = this;
-            (this.O = F),
+            (this.O = M),
               (this.D = !0),
               (this.produce = function (e, r, n) {
                 if ("function" == typeof e && "function" != typeof r) {
@@ -13730,7 +13734,7 @@
               this.D = e;
             }),
             (t.setUseProxies = function (e) {
-              e && !F && i(20), (this.O = e);
+              e && !M && i(20), (this.O = e);
             }),
             (t.applyPatches = function (e, t) {
               for (r = t.length - 1; r >= 0; r--) {
@@ -13785,4 +13789,4 @@
     },
   },
 ]);
-//# sourceMappingURL=184782.5d5ce3c335610c0d.js.map
+//# sourceMappingURL=197765.eff97732db5ba30d.js.map

@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [932923],
+  [813199],
   {
     498419(t) {
       !(function () {
@@ -1883,7 +1883,7 @@
       }
       n.d(e, { A: () => i });
     },
-    553731(t, e, n) {
+    975370(t, e, n) {
       "use strict";
       n.d(
         e,
@@ -1895,9 +1895,9 @@
         },
       );
     },
-    124499(t, e, n) {
+    378448(t, e, n) {
       "use strict";
-      let i = new URL(n(445181), n.b);
+      let i = new URL(n(775702), n.b);
       n.d(
         e,
         {},
@@ -1908,7 +1908,7 @@
         },
       );
     },
-    712982(t, e, n) {
+    905779(t, e, n) {
       "use strict";
       let i;
       function r() {
@@ -2068,7 +2068,7 @@
                 : console.warn(
                     "using deprecated parameters for the initialization function; pass a single object instead",
                   )),
-              void 0 === t && (t = new URL(n(445181), n.b));
+              void 0 === t && (t = new URL(n(775702), n.b));
             let e = r();
             ("string" == typeof t ||
               ("function" == typeof Request && t instanceof Request) ||
@@ -2387,4 +2387,4 @@
     },
   },
 ]);
-//# sourceMappingURL=932923.034db2180bbbf164.js.map
+//# sourceMappingURL=813199.6c7d005671718992.js.map

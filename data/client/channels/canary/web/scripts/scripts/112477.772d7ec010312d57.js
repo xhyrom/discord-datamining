@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [335930],
+  [112477],
   {
     881245(t) {
       t.exports = {
@@ -199,12 +199,21 @@
         Ku: "globalGame_M5fVqw",
         zH: "details_M5fVqw",
         Tn: "visual_M5fVqw",
-        vf: "shell_M5fVqw",
+        LG: "artBox_M5fVqw",
         Qw: "art_M5fVqw",
         uj: "unknownArt_M5fVqw",
         Tm: "rank_M5fVqw",
         UU: "name_M5fVqw",
         Pf: "label_M5fVqw",
+      };
+    },
+    331144(t) {
+      t.exports = {
+        aP: "box_uKOSSr",
+        qd: "layer_uKOSSr",
+        rj: "outline_uKOSSr",
+        WO: "corner_uKOSSr",
+        RY: "stripes_uKOSSr",
       };
     },
     9767(t) {
@@ -317,4 +326,4 @@
     },
   },
 ]);
-//# sourceMappingURL=335930.c816f06d3604ebd5.js.map
+//# sourceMappingURL=112477.772d7ec010312d57.js.map
