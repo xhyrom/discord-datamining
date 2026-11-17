@@ -105,9 +105,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
   justify-content: center;
-  max-width: calc(100vw - var(--space-32));
   padding-bottom: var(--space-16);
   padding-top: var(--space-16);
   width: 340px;
@@ -314,20 +312,5 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.orbChallengesCardContainer_hSuDqh:empty {
-  border-bottom: 0;
-}
-.placeholderChallengesCard_ZusIBo {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: var(--space-16);
-}
-.underlined_ZusIBo {
-  display: block;
-  text-decoration: underline;
-}
-.cursorPointer_ZusIBo {
-  cursor: pointer;
-}
 
-/*# sourceMappingURL=871784.05f6cd47cbf35091.css.map*/
+/*# sourceMappingURL=40271.ed78a874002399c2.css.map*/

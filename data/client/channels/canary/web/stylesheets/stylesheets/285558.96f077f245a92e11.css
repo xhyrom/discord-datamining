@@ -27,8 +27,6 @@
   flex-shrink: 0;
   height: 56px;
   justify-content: center;
-  -o-object-fit: cover;
-  object-fit: cover;
   width: 56px;
 }
 .orbWalletPrimaryCardCloseButton_OqyRup {
@@ -38,9 +36,6 @@
   --control-icon-only-background-hover: transparent;
   --control-icon-only-border-hover: transparent;
   --control-icon-only-icon-hover: var(--control-icon-only-icon-default);
-}
-.orbWalletPrimaryCardGraphicFailed_OqyRup {
-  visibility: hidden;
 }
 .orbWalletNitroUpsellCard_OqyRup {
   background: radial-gradient(
@@ -89,11 +84,19 @@
     ),
     var(--background-mod-muted);
 }
-.orbWalletCampaignNitroUpsellCard_OqyRup {
+.orbWalletBlackFridayCardWrapper_OqyRup {
+  background: var(--background-mod-muted);
+  border-radius: var(--radius-lg);
   isolation: isolate;
+  margin-top: var(--space-16);
   overflow: hidden;
+  position: relative;
 }
-.orbWalletCampaignNitroGlow_OqyRup {
+.orbWalletBlackFridayCard_OqyRup {
+  background: transparent;
+  margin-top: 0;
+}
+.orbWalletBlackFridayGlow_OqyRup {
   border-start-end-radius: var(--radius-round);
   border-start-start-radius: var(--radius-round);
   filter: blur(calc(var(--space-48) + 2px));
@@ -106,5 +109,17 @@
   width: 406px;
   z-index: -1;
 }
+.placeholderChallengesCard_ZusIBo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-16);
+}
+.underlined_ZusIBo {
+  display: block;
+  text-decoration: underline;
+}
+.cursorPointer_ZusIBo {
+  cursor: pointer;
+}
 
-/*# sourceMappingURL=368069.ad379bbc674f405c.css.map*/
+/*# sourceMappingURL=285558.96f077f245a92e11.css.map*/

@@ -1,12 +1,34 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [504129],
+  [878504],
   {
+    906769(r) {
+      r.exports = {
+        G3: "progressCircle_iEwb4a",
+        n1: "circle_iEwb4a",
+        cj: "circleBackgroundAlt_iEwb4a",
+        rh: "circleBackground_iEwb4a",
+        iv: "circleProgress_iEwb4a",
+        Bd: "circleOverlay_iEwb4a",
+      };
+    },
     627745(r) {
       r.exports = { L: "progressContainer_iWUGXv", k: "downloadIcon_iWUGXv" };
     },
     499344(r, e, o) {
       r.exports = { q: "badge_AVLZ8k " + o(260727).lE };
+    },
+    759223(r) {
+      r.exports = {
+        iE: "wrapper_nL08_v",
+        aC: "target_nL08_v",
+        NQ: "dragOver_nL08_v",
+        dw: "centerTarget_nL08_v",
+        OP: "autoPointerEvents_nL08_v",
+        Ro: "folderEndWrapper_nL08_v",
+        a7: "wrapperOver_nL08_v",
+        aO: "folderTarget_nL08_v",
+      };
     },
     167579(r) {
       r.exports = {
@@ -36,6 +58,12 @@
         Lg: "isHovering_RTMSuZ",
       };
     },
+    183588(r) {
+      r.exports = {
+        o: "circleIconButton_1czW-w",
+        _: "geoRestrictedBadge_1czW-w",
+      };
+    },
     937067(r) {
       r.exports = {
         rN: "blobContainer_IaPwK5",
@@ -58,4 +86,4 @@
     },
   },
 ]);
-//# sourceMappingURL=504129.88eae0beb4ed6aea.js.map
+//# sourceMappingURL=878504.4c99af367a5c2369.js.map

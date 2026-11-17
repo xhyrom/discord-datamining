@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [871784],
+  [40271],
   {
     137484(e) {
       e.exports = {
@@ -50,9 +50,6 @@
         F4: "orbBalanceCounterText_hSuDqh",
       };
     },
-    123576(e) {
-      e.exports = { dW: "underlined_ZusIBo", or: "cursorPointer_ZusIBo" };
-    },
   },
 ]);
-//# sourceMappingURL=871784.150fb85afa61804b.js.map
+//# sourceMappingURL=40271.3708a6ad6ac759e0.js.map

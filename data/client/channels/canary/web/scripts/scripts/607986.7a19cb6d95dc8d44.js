@@ -1,23 +1,7 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [681336],
+  [607986],
   {
-    146916(e) {
-      e.exports = {
-        kL: "container_oJAkDB",
-        M0: "bar_oJAkDB",
-        R: "hidden_oJAkDB",
-        gy: "unread_oJAkDB active_oJAkDB",
-        lE: "mention_oJAkDB active_oJAkDB",
-        Qq: "text_oJAkDB",
-      };
-    },
-    195572(e) {
-      e.exports = { w: "favoriteIcon_850pDF" };
-    },
-    768942(e) {
-      e.exports = { Y: "anchor_4z_RMD" };
-    },
     785332(e) {
       e.exports = {
         nM: "row__-eZlF",
@@ -37,6 +21,26 @@
         A_: "guildTooltipWrapper__-eZlF",
       };
     },
+    93776(e) {
+      e.exports = {
+        oZ: "circleIconButton_g8YUxD",
+        wH: "selected_g8YUxD",
+        sF: "circleIcon_g8YUxD",
+      };
+    },
+    728309(e) {
+      e.exports = { p: "listItemWrapper_tQErD4", w: "selected_tQErD4" };
+    },
+    260727(e) {
+      e.exports = {
+        Aw: "listItem_rwEpIL",
+        yk: "unavailableBadge_rwEpIL",
+        bG: "iconBadge_rwEpIL",
+        gB: "isCurrentUserConnected_rwEpIL",
+        lE: "conjureIconBadge_rwEpIL",
+        Uq: "tutorialContainer_rwEpIL",
+      };
+    },
   },
 ]);
-//# sourceMappingURL=681336.19af946ddd755d72.js.map
+//# sourceMappingURL=607986.7a19cb6d95dc8d44.js.map
