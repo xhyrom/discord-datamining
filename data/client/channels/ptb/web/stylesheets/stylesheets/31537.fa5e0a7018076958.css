@@ -1,0 +1,10 @@
+.introButton_5W92_n {
+  background-color: var(--custom-checkpoint-primary);
+  background-image: linear-gradient(-45deg, #000, rgba(0, 0, 0, 0.5) 50%, #000);
+  border-radius: 100%;
+}
+.introButton_5W92_n:hover {
+  background-color: var(--custom-checkpoint-primary) !important;
+}
+
+/*# sourceMappingURL=31537.fa5e0a7018076958.css.map*/
