@@ -155,22 +155,22 @@
   The <strong>Game Time</strong> badge reflects the total time you've spent
   playing games that Discord can detect. Time across all detected games counts
   toward the same total, and the badge evolves as that total grows.
-  Unfortunately, games you play on consoles, like Xbox or PlayStation, don't
-  count toward the Game Time badge, since only the Discord desktop app can
-  detect games. Game Time includes time played on or after December 8, 2025.
-  Badge progress may take some time to reflect your recent activity.
 </p>
-<p>
-  To count progress toward these badges, turn on
-  <strong>Use data to personalize my Discord experience</strong>. Check
+<div class="info-box">
+  <strong>Note:</strong> The Game Time badge only tracks games detected by the
+  Discord desktop app, starting December 8, 2025. Games you play on consoles,
+  like Xbox or PlayStation, don't count. To earn progress, turn on
+  <strong
+    >User Settings &gt; Data &amp; Privacy &gt; Use data to personalize my
+    Discord experience</strong
+  >. Check our
   <a
-    href="https://support.discord.com/hc/en-us/articles/21865322754327"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><strong>Data Used to Personalize Discord</strong></a
+    href="https://support.discord.com/hc/en-us/articles/21865322754327-Data-Used-to-Personalize-Discord"
+    >FAQ</a
   >
-  for details on how to enable this setting.
-</p>
+  for details on how to enable this setting. Badge progress may take some time
+  to reflect your recent activity.
+</div>
 <h2 id="h_01M5B09PE1KGVRVQCD136FN6YB">Game Variety Badge</h2>
 <figure class="wysiwyg-image">
   <img
@@ -194,12 +194,21 @@
   example, playing different experiences in Roblox or Fortnite counts as one
   game.
 </p>
-<p>
-  Games you play on consoles, like Xbox or PlayStation, don't count toward the
-  Game Variety badge. This badge only tracks games detected by the Discord
-  desktop app. Badge progress may take some time to reflect your recent
-  activity.
-</p>
+<div class="info-box">
+  <strong>Note:</strong> The Game Variety badge only tracks games detected by
+  the Discord desktop app. Games you play on consoles, like Xbox or PlayStation,
+  don't count. To earn progress, turn on
+  <strong
+    >User Settings &gt; Data &amp; Privacy &gt; Use data to personalize my
+    Discord experience</strong
+  >. Check our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/21865322754327-Data-Used-to-Personalize-Discord"
+    >FAQ</a
+  >
+  for details on how to enable this setting. Badge progress may take some time
+  to reflect your recent activity.
+</div>
 <p>
   To count progress toward these badges, turn on
   <strong>Use data to personalize my Discord experience</strong>. Check
@@ -391,11 +400,20 @@
   your screen with others. Time counts whenever you're sharing your screen with
   at least one other person in the call.
 </p>
-<p>
-  This badge only tracks streaming done on the Discord desktop app. The
-  Streaming badge includes screen sharing on or after January 1, 2024. Badge
-  progress may take some time to reflect your recent activity.
-</p>
+<div class="info-box">
+  <strong>Note:</strong> The Streaming badge only tracks screen sharing on the
+  Discord desktop app, starting January 1, 2024. To earn progress, turn on
+  <strong
+    >User Settings &gt; Data &amp; Privacy &gt; Use data to personalize my
+    Discord experience</strong
+  >. Check our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/21865322754327-Data-Used-to-Personalize-Discord"
+    >FAQ</a
+  >
+  for details on how to enable this setting. Badge progress may take some time
+  to reflect your recent activity.
+</div>
 <p>
   To count progress toward these badges, turn on
   <strong>Use data to personalize my Discord experience</strong>. Check

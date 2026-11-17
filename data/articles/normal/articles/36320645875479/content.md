@@ -3,9 +3,24 @@
   purchase a plan to share Nitro with 5 of their friends.
 </p>
 <div class="toc-box">
-  <p><strong>What this article covers:</strong></p>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
   <ul>
     <li data-list-item-id="edbe8e10b96acef9798a2da7cea5ebf1a">
+      <a href="#[ANCHOR]">Nitro Squad Beta Is Ending</a>
+      <ul>
+        <li data-list-item-id="e74ae539bea544c9a394f3d4395c72ee9">
+          <a href="#h_01M6S2D1PQ8Y8SGYPGR4KX71H8">What Happens to Your Plan</a>
+        </li>
+        <li data-list-item-id="e36aca55fe7388cf5c32f8027a76a4882">
+          <a href="#h_01M6S2D1PQHJZPFMEQ8050W71G">How to Get 40% Off Nitro</a>
+        </li>
+      </ul>
+    </li>
+    <li data-list-item-id="edd9484f77d87137084ec4d001b373949">
       <a href="#h_01KGGQH2B3FY3G1QVJ5G6PFJ7W">What is Nitro Squad?</a>
       <ul>
         <li data-list-item-id="e0d34182ef04870f63a2b5a4a047fa182">
@@ -24,11 +39,6 @@
           >
         </li>
       </ul>
-    </li>
-    <li data-list-item-id="e46408ccf0c947dbdc9cabeccfea205e5">
-      <a href="#h_01KGGQZD0AR6ZD4PP3ZAJXTA6T"
-        >How do I create a Nitro Squad plan?</a
-      >
     </li>
     <li data-list-item-id="edc7d2fe56d347c97bb35e4dcfbef4b90">
       <a href="#h_01KGGR780BQ0N52009X90TAC39"
@@ -49,13 +59,77 @@
       </ul>
     </li>
     <li data-list-item-id="e1676b4cb7a8d189967d726826396e403">
-      <a href="#h_01KGGREGBBC4H11W3NP3SVDGE7">Frequently Asked Questions</a>
+      <a href="#[EXISTING%20ANCHOR]">Frequently Asked Questions</a>
     </li>
   </ul>
 </div>
 <div class="warn-box">
-  <strong>Important</strong>: Nitro Squad is currently in Beta and only
-  available to desktop users in Australia and France.
+  <strong>Important</strong>: The Nitro Squad Beta, available to desktop users
+  in Australia and France, is ending. Each plan’s December 2026 renewal will be
+  its last.
+</div>
+<h1 id="[ANCHOR]">Nitro Squad Beta Is Ending</h1>
+<p>
+  We're bringing the Nitro Squad Beta to a close. If you're on a Nitro Squad
+  plan, read on to learn what happens next.
+</p>
+<h2 id="h_01M6S2D1PQ8Y8SGYPGR4KX71H8">What Happens to Your Plan</h2>
+<p>
+  You can keep using Nitro Squad for now. Your plan will renew for the final
+  time in December 2026, and your perks will continue through the end of that
+  billing period.
+</p>
+<ul>
+  <li data-list-item-id="eb882faad5ed2b9e6b0310684cc876b3c">
+    <strong>Plan owners:</strong> If you haven’t canceled your plan, it will
+    automatically end at the conclusion of your December billing cycle.
+  </li>
+  <li data-list-item-id="e32e87e293fc6efed4d259cc4e86be5e8">
+    <strong>Plan members:</strong> Your Nitro access ends when the plan does.
+  </li>
+  <li data-list-item-id="e206404bee255ac9449e0499e14853678">
+    <strong>After your plan ends:</strong> You’ll have 7 days to start a new
+    Nitro subscription before your <strong>Nitro Badge</strong> progress resets,
+    and 3 days before any applied <strong>Server Boosts</strong> are removed.
+  </li>
+</ul>
+<p>
+  You can cancel your plan as a plan owner, or leave it as a plan member,
+  anytime from the <strong>Subscriptions</strong> tab in your
+  <strong>User Settings</strong>.
+</p>
+<h2 id="h_01M6S2D1PQHJZPFMEQ8050W71G">How to Get 40% Off Nitro</h2>
+<p>
+  As a thank-you for being part of the Beta, everyone on a Nitro Squad plan can
+  get <strong>40% off one month of Nitro</strong> in the Discord desktop app:
+</p>
+<p>
+  <strong
+    >The offer is available until January 31, 2027 at 11:59 PM PST.</strong
+  >
+</p>
+<ul>
+  <li data-list-item-id="e8791b4f336d813f2c0bda3bc97b1041a">
+    <strong>Plan owners:</strong> You’ll see the offer when you cancel your
+    plan, and in the <strong>Subscriptions</strong> tab in your
+    <strong>User Settings</strong> before your plan ends. You can also claim it
+    when you sign up for Nitro after your plan ends.
+  </li>
+  <li data-list-item-id="e1043f71b192eca287ceadaa1853a3226">
+    <strong>Plan members:</strong> Once you’ve left your Nitro Squad or the plan
+    ends, you’ll see the offer anywhere Nitro appears in the app, including the
+    <strong>Nitro</strong> tab in your <strong>Direct Messages</strong> list.
+  </li>
+</ul>
+<div class="info-box">
+  <strong>Note:</strong> The 40% off Nitro offer is only available in the
+  desktop app.
+  <a
+    href="https://support.discord.com/hc/en-us/articles/42344057369623-Discord-Nitro-Offers-Promotions-Eligibility-Guide"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Terms apply</a
+  >.
 </div>
 <h1 id="h_01KGGQH2B3FY3G1QVJ5G6PFJ7W">What is Nitro Squad?</h1>
 <p>
@@ -87,8 +161,8 @@
   Who is eligible for the Nitro Squad Beta?
 </h1>
 <p>
-  To purchase or be added to a Nitro Squad plan, plan owners and members must
-  meet the following conditions:
+  To be added to a Nitro Squad plan, plan owners and members must meet the
+  following conditions:
 </p>
 <ul>
   <li data-list-item-id="e90e3507d9c435c3340faee6b50530f56">
@@ -112,97 +186,20 @@
 </ul>
 <h2 id="h_01KGGQT8FHS9E52JE4NRA59N3X">Additional Eligibility Guidelines</h2>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>If you have a separate Server Boost subscription</strong></span
-  >
+  <strong>If you have a separate Server Boost subscription:</strong> You can’t
+  join a Nitro Squad while your Server Boost subscription is active. To join,
+  you’ll need to cancel your Server Boost subscription first.
 </p>
-<ul>
-  <li data-list-item-id="e04eb8a7778c3c54483120c0b2cd66b4f">
-    You <strong>can create</strong> a Nitro Squad.
-  </li>
-  <li data-list-item-id="ef08460d61d8577ffe0b5a985a067bdde">
-    You <strong>can’t join</strong> a Nitro Squad while your Server Boost
-    subscription is active.<br />To join, you’ll need to cancel your Server
-    Boost subscription first.
-  </li>
-</ul>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>If you have Nitro Credits</strong></span
-  >
+  <strong>If you have Nitro Credits:</strong> Active Nitro Credits: You can’t
+  join a Nitro Squad until your active Nitro Credits are fully used. Inactive
+  Nitro Credits: You can join a Nitro Squad. Your Nitro Credits will be saved
+  and will be used after you leave the Nitro Squad.
 </p>
-<p><strong>Active Nitro Credits</strong></p>
-<ul>
-  <li data-list-item-id="e7753dbc57da8c030735c627e0d9d3ae6">
-    You <strong>can’t join</strong> a Nitro Squad until your active Nitro
-    Credits are fully used.
-  </li>
-</ul>
-<p><strong>Inactive Nitro Credits</strong></p>
-<ul>
-  <li data-list-item-id="e8fd4b648784873e09f168fddadd41c22">
-    You <strong>can join</strong> a Nitro Squad.
-  </li>
-  <li data-list-item-id="e703d4a92d73b2be12094f415ba319488">
-    Your Nitro Credits will be saved and will be used after you leave the Nitro
-    Squad.
-  </li>
-</ul>
-<div class="info-box">
+<p>
   Both Nitro plan owners and members cannot purchase Nitro Credits in the Shop
   while on a group plan.
-</div>
-<h1 id="h_01KGGQZD0AR6ZD4PP3ZAJXTA6T">How do I create a Nitro Squad plan?</h1>
-<p>
-  1. Press on the <strong>Discord icon</strong> in the upper left corner of the
-  Discord app, then navigate to the <strong>Nitro</strong> tab.
 </p>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 2582/1154"
-    src="https://support.discord.com/hc/article_attachments/38344519968023"
-    alt="After selecting the Discord icon in the upper left corner, the Nitro tab is located under the Friends tab."
-    width="2582"
-    height="1154"
-  />
-</figure>
-<p>
-  2. Press <strong>Subscribe</strong> at the top, or locate the Nitro Squad card
-  farther down the page
-</p>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 800/356"
-    src="https://support.discord.com/hc/article_attachments/38344542523799"
-    alt="A GIF of pressing the Subscribe button on the Nitro page and finding the Nitro Squad subscription option for non-subscribers."
-    width="800"
-    height="356"
-  />
-</figure>
-<p>
-  If you’re an existing Nitro subscriber, you can upgrade to a Nitro Squad plan
-  by locating <strong>Switch Plans</strong> in
-  <strong>Subscription Settings</strong> under <strong>User Settings</strong>.
-</p>
-<figure class="wysiwyg-image">
-  <img
-    style="aspect-ratio: 2126/1370"
-    src="https://support.discord.com/hc/article_attachments/38344519969303"
-    alt="In the Subscriptions Settings page under User Settings, the Switch Plans button allows you to change your Nitro subscription."
-    width="2126"
-    height="1370"
-  />
-</figure>
-<p>3. Follow sign up steps.</p>
-<div class="tip-box">
-  <strong>Tip</strong>: If you're the plan owner and you’re upgrading from an
-  existing Nitro subscription, you'll receive proration for your remaining
-  subscription time.
-</div>
-<div class="info-box">
-  <strong>Note</strong>: If you’re on a free Nitro trial, you’ll need to wait
-  until it ends before upgrading to a Nitro Squad plan as a plan owner.
-</div>
 <h1 id="h_01KGGR780BQ0N52009X90TAC39">How do I join a Nitro Squad plan?</h1>
 <p>
   1. You will receive an invite to join a Nitro Squad in your direct message
@@ -286,18 +283,20 @@
 </ul>
 <p><strong>Other:</strong> </p>
 <ul>
-  <li data-list-item-id="ef60145d70ea82fd73048e456662f273b">
+  <li data-list-item-id="e14df87f44c846df9690dc1d24f270cfd">
     You can cancel your Nitro Squad subscription at any time
   </li>
-  <li data-list-item-id="ef7704c49fffad7e3f30666072fb2c58f">
+  <li data-list-item-id="e2963c6353a9bb71bc42d794bf66890ea">
     If you want to downgrade to another Nitro plan, you must first cancel your
-    Nitro Squad subscription. If you cancel your Nitro Squad subscription, you
-    must resubscribe to Nitro or a Nitro Squad to maintain your current Nitro
-    Badge level. 
+    Nitro Squad subscription.
   </li>
-  <li data-list-item-id="e513bb4dfa4c78e9ae9ea5509e18e1a1f">
-    You will receive proration credit when upgrading your existing Nitro, Basic,
-    or Classic individual plan to Nitro Squad if applicable
+  <li data-list-item-id="ed69d4c3f701caac7fd9560a68021d7d8">
+    When you cancel your Nitro Squad subscription, you’ll see an offer for 40%
+    off one month of Nitro in the desktop app.
+  </li>
+  <li data-list-item-id="ea227b86b4e787513bb90580549e05b90">
+    If you cancel your Nitro Squad subscription, you’ll have 7 days after your
+    plan ends to subscribe to Nitro and maintain your current Nitro Badge level.
   </li>
 </ul>
 <h2 id="h_01KGGRCA753V87ZGQWQ7X6EB6J">As a Plan Member</h2>
@@ -339,7 +338,11 @@
   </li>
   <li data-list-item-id="eae00034f031fb1b907a4c160e3801856">
     Your 12 month window must finish before joining another group plan,
-    including the one you just left
+    including the one you just left 
+  </li>
+  <li data-list-item-id="edd6371e34e5613b073a9f77d77ef66ed">
+    After you leave, you can get 40% off one month of Nitro when you sign up for
+    Nitro in the desktop app
   </li>
 </ul>
 <div class="warn-box">
@@ -348,23 +351,54 @@
   leave the plan and the plan owner must cancel their Nitro Squad plan, then
   subscribe to an individual plan.
 </div>
-<h1 id="h_01KGGREGBBC4H11W3NP3SVDGE7">Frequently Asked Questions</h1>
+<h1 id="[EXISTING ANCHOR]">Frequently Asked Questions</h1>
+<p><strong>Q: When will my Nitro Squad plan end?</strong></p>
+<p>
+  A: Your December 2026 renewal will be your last. Your plan ends at the
+  conclusion of that billing period, and you’ll keep your Nitro Squad perks
+  until then. Since billing dates vary, your exact end date depends on when your
+  plan renews in December. You can check your billing date in the
+  <strong>Subscriptions</strong> tab in your <strong>User Settings</strong>.
+</p>
+<p><strong>Q: Do I need to cancel my plan?</strong></p>
+<p>
+  A: No. If you’re a plan owner and haven’t canceled your plan, it will
+  automatically end at the conclusion of your December billing cycle. If you’re
+  a plan member, your Nitro access ends when the plan does.
+</p>
+<p>
+  <strong
+    >Q: What happens to my Nitro Badge and Server Boosts when my plan
+    ends?</strong
+  >
+</p>
+<p>
+  A: You’ll have 7 days after your plan ends to start a new Nitro subscription
+  before your Nitro Badge progress resets, and 3 days before any applied Server
+  Boosts are removed.
+</p>
+<p><strong>Q: How do I get the 40% off Nitro offer?</strong></p>
+<p>
+  A: Everyone on a Nitro Squad plan can get 40% off one month of Nitro in the
+  desktop app. Plan owners will see the offer when they cancel, again in the
+  Subscriptions tab in their User Settings before their plan ends, and can still
+  claim it when they sign up for Nitro after the plan ends. Plan members will
+  see the offer anywhere Nitro appears in the app, including the Nitro tab in
+  their Direct Messages list, once they’ve left their Nitro Squad or the plan
+  ends. The offer is available until January 31, 2027 at 11:59 PM PST.
+</p>
 <p><strong>Q: How does badge progression work?</strong></p>
 <p>
-  A: Each member gets their own badge streak, starting when they create or join
-  the plan:
+  Each member gets their own badge streak, starting when they create or join the
+  plan:
 </p>
 <ul>
-  <li data-list-item-id="e62d15281110788e1717a893d125763e1">
-    <strong>Nitro Badge</strong>: 7-day grace period when entering and exiting
+  <li data-list-item-id="e87d94bc588f1259a2d3854976d0de33b">
+    <strong>Nitro Badge:</strong> 7-day grace period when entering and exiting
     the plan to maintain streaks
   </li>
-  <li data-list-item-id="e0e2cb785928d0641b9ed3eae146d8096">
-    <strong>Server Boost Badge</strong>: 3-day grace period
-  </li>
-  <li data-list-item-id="ea1b3e9d9f271fd827f67cf17cb7647ad">
-    Plan owners who upgrade and members who join an existing plan keep their
-    streak if they already have a Nitro subscription.
+  <li data-list-item-id="edc0bdd1d454106d26fe73e7b97e1e810">
+    <strong>Server Boost Badge:</strong> 3-day grace period
   </li>
 </ul>
 <p><strong>Q: Who can purchase additional Server Boosts?</strong></p>
@@ -372,7 +406,7 @@
   A: Plan members cannot purchase additional Boosts. Plan owners can purchase
   additional Boosts at the discounted rate.
 </p>
-<p><strong>Q: What happens if I'm removed from a plan unexpectedly?</strong></p>
+<p><strong>Q: What happens if I’m removed from a plan unexpectedly?</strong></p>
 <p>
   A: We’ll send you an email to let you know. Your access to Nitro perks ends
   immediately, except for your Nitro Badge which follows a 7-day grace period.
@@ -394,18 +428,18 @@
 </p>
 <p>
   A: You will immediately forfeit any remaining time on your individual
-  subscription with no proration or refund. Make sure you're ready to switch
+  subscription with no proration or refund. Make sure you’re ready to switch
   before accepting an invitation.
 </p>
-<p><strong>Q: What happens if the plan owner's account is banned?</strong></p>
+<p><strong>Q: What happens if the plan owner’s account is banned?</strong></p>
 <p>A: It depends on the type of ban:</p>
 <ul>
-  <li data-list-item-id="e473487d6c94464b95b522ce83762970c">
-    <strong>Limited Access or Temporary bans</strong>: No impact on the plan or
+  <li data-list-item-id="e782b6987e888383f26aa969e39f99cf9">
+    <strong>Limited Access or Temporary bans:</strong> No impact on the plan or
     members
   </li>
-  <li data-list-item-id="e6cfa75bae9dab7d4f1809fa12471d9ed">
-    <strong>Permanent ban</strong>: No change until the next renewal date, then
+  <li data-list-item-id="eb4174ed917215345dfe08dea6e3eb3a0">
+    <strong>Permanent ban:</strong> No change until the next renewal date, then
     the plan auto-cancels. All members will receive email notification when the
     subscription is cancelled
   </li>
@@ -413,12 +447,12 @@
 <p><strong>Q: What happens if my account as a member is banned?</strong></p>
 <p>A: It also depends on the type of ban:</p>
 <ul>
-  <li data-list-item-id="e14955f4f4c0b863febb078833c70ac1b">
-    <strong>Limited Access or Temporary ban</strong>: No impact on your
+  <li data-list-item-id="e857ce90e026823ece7ce2e378ad9594b">
+    <strong>Limited Access or Temporary ban:</strong> No impact on your
     membership
   </li>
-  <li data-list-item-id="e8606ff48de9f256d422eb4119e4fb3e7">
-    <strong>Permanent ban</strong>: You are automatically removed from the group
+  <li data-list-item-id="e6cef8278eb0a5ed8dd3f53e88491d721">
+    <strong>Permanent ban:</strong> You are automatically removed from the group
     immediately and the plan owner will receive an email notification
   </li>
 </ul>
@@ -440,22 +474,20 @@
 </p>
 <p>
   A: Only if you are the plan owner. Plan members cannot have additional Server
-  Boost subscriptions while on a Nitro Squad plan. 
+  Boost subscriptions while on a Nitro Squad plan.
 </p>
 <p>
   <strong
-    >Q: What if I'm locked out of my account and can't leave/end a plan?</strong
+    >Q: What if I’m locked out of my account and can’t leave/end a plan?</strong
   >
 </p>
 <p>
   A: Please reach out to our Support team through our support form
-  <a href="https://dis.gd/support" target="_blank" rel="noopener noreferrer"
-    >here</a
-  >.
+  <a href="https://dis.gd/support">here</a>.
 </p>
 <p>
   <strong
-    >Q: I'm a current subscriber with an existing offer. Can I still join Nitro
+    >Q: I’m a current subscriber with an existing offer. Can I still join Nitro
     Squad?</strong
   >
 </p>
@@ -463,16 +495,37 @@
   A: Yes, you can have an existing subscription from one of our Nitro promotions
   and still be eligible for Nitro Squad.
 </p>
-<p>
-  <strong>Q: Will my billing date change if I upgrade to Nitro Squad?</strong>
-</p>
-<p>
-  A: Yes, your billing date will be adjusted based on when you create or join
-  the Nitro Squad plan.
-</p>
 <p><strong>Q: I can’t find the plan invite - where is it?</strong></p>
 <p>
   A: Your Nitro Squad invite can be found in your direct message from the person
   who manages the plan. If you can’t find it, it might be because you’ve never
   DM’d the person before. Check Message Requests tab under Direct Messages
 </p>
+<p>
+  Thanks again for being part of the Nitro Squad Beta. Testing ideas like Nitro
+  Squad with you helps us explore new ways to make Discord better, even when an
+  idea doesn’t stick around.
+</p>
+<div class="book-box">
+  <strong>Want to learn more?</strong> <br />To cancel or manage your
+  subscription, see
+  <a
+    href="https://support.discord.com/hc/en-us/articles/19580873036695"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How to Cancel your Nitro Subscription</a
+  >. To learn about Nitro perks, see
+  <a
+    href="https://support.discord.com/hc/articles/115000435108"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Nitro</a
+  >.
+</div>
+<div class="form-box">
+  <strong>Contact Us:</strong> Have questions about your Nitro Squad plan? Reach
+  out to our Support team through our
+  <a href="https://dis.gd/support" target="_blank" rel="noopener noreferrer"
+    >support form</a
+  >.
+</div>
