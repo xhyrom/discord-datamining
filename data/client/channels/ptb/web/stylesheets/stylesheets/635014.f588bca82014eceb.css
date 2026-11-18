@@ -1,0 +1,106 @@
+.oneByOneGrid_idVBIj {
+  display: inline-block;
+  max-height: 350px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.oneByOneGridSingle_idVBIj {
+  border-radius: 8px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.oneByOneGridMosaic_idVBIj {
+  display: flex;
+  max-height: 280px;
+  width: 100%;
+}
+.oneByTwoGrid_idVBIj {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  max-height: 280px;
+}
+.oneByTwoLayoutThreeGrid_idVBIj {
+  max-height: 350px;
+}
+.oneByTwoGridItem_idVBIj {
+  flex: 1;
+  min-width: 0;
+}
+.oneByTwoGrid_idVBIj .itemContentContainer_idVBIj,
+.oneByTwoGrid_idVBIj .lazyImg_idVBIj {
+  height: 100%;
+}
+.oneByTwoSoloItem_idVBIj {
+  flex: 2;
+  min-width: 0;
+}
+.oneByTwoDuoItem_idVBIj {
+  flex: 1;
+  min-width: 0;
+}
+.twoByOneGrid_idVBIj {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 100%;
+}
+.twoByOneGridItem_idVBIj {
+  flex: 1;
+  min-height: 0;
+}
+.threeByThreeGrid_idVBIj {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 4px;
+}
+.threeByThreeGrid_idVBIj .lazyImg_idVBIj,
+.threeByThreeGrid_idVBIj .lazyImgContainer_idVBIj {
+  aspect-ratio: 1/1;
+}
+.twoByTwoGrid_idVBIj {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-gap: 4px;
+  max-height: 350px;
+}
+.oneByOneGrid_idVBIj + .threeByThreeGrid_idVBIj,
+.oneByTwoGrid_idVBIj + .threeByThreeGrid_idVBIj {
+  margin-top: 4px;
+}
+.visualMediaItemContainer_idVBIj {
+  border-radius: 8px;
+  height: 100%;
+  max-width: 550px;
+  overflow: hidden;
+  width: 100%;
+}
+.visualMediaItemContainer_idVBIj.isInAppComponentsV2_idVBIj {
+  max-width: 600px;
+}
+.visualMediaItemContainer_idVBIj.isClipEmbed_idVBIj {
+  max-width: 660px;
+}
+.nonVisualMediaItemContainer_idVBIj {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.nonVisualMediaItem_idVBIj {
+  max-width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.nonVisualMediaItem_idVBIj + .nonVisualMediaItem_idVBIj,
+.nonVisualMediaItemContainer_idVBIj {
+  margin-top: 8px;
+}
+.itemContentContainer_idVBIj {
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=635014.f588bca82014eceb.css.map*/
