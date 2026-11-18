@@ -146,9 +146,15 @@
   position: relative;
 }
 .heroImage_Ls3EVK {
+  height: 100%;
   inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top right;
+  object-position: top right;
   opacity: 0.2;
   position: absolute;
+  width: 100%;
 }
 .heroImageSkeleton_Ls3EVK {
   background: var(--background-mod-subtle);
@@ -156,4 +162,4 @@
   position: absolute;
 }
 
-/*# sourceMappingURL=977306.dc6c2af7529a4290.css.map*/
+/*# sourceMappingURL=977306.fc7bfdfcdb4b7386.css.map*/
