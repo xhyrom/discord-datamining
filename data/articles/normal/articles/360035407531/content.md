@@ -4,35 +4,45 @@
   >
 </p>
 <ul>
-  <li><a href="#h_01J7XTC8Q6SW90XDWF1XATHXDB">What is Custom Status?</a></li>
-  <li>
+  <li data-list-item-id="eba93fa66c152b51de76a3c9c2129ba05">
+    <a href="#h_01J7XTC8Q6SW90XDWF1XATHXDB">What is Custom Status?</a>
+  </li>
+  <li data-list-item-id="ebb3e2b6b008359851f30fff373b955ef">
     <a href="#h_01J7XVFDVZNMAQ10B0K5SJFYN9">Setting a Custom Status</a>
     <ul>
-      <li><a href="#h_01J7XTE8GQX8Q0M2YMP0DMF596">Desktop/Browser</a></li>
-      <li><a href="#h_01J7XTMQVECS5VQJNQ5XS1DW9K">Mobile</a></li>
+      <li data-list-item-id="eee0343a2643b1ab13a3a77792b7054e1">
+        <a href="#h_01J7XTE8GQX8Q0M2YMP0DMF596">Desktop/Browser</a>
+      </li>
+      <li data-list-item-id="e691e41dda4802a7a3f15d2574099e616">
+        <a href="#h_01J7XTMQVECS5VQJNQ5XS1DW9K">Mobile</a>
+      </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="eae01d7894873c0fbad0c87d4275fef76">
     <a href="#h_01J7XVH0E2H42XQ04NG5FFJ22Y"
       >Editing or Clearing a Custom Status</a
     >
     <ul>
-      <li><a href="#h_01J7XTSMP2Y99M6692SBZKCCT7">Desktop/Browser</a></li>
-      <li><a href="#h_01J7XTXXKQERWK3GA1BSE8Q77B">Mobile</a></li>
+      <li data-list-item-id="e6138e079d4e8f1060cdd596c8ff9dc7b">
+        <a href="#h_01J7XTSMP2Y99M6692SBZKCCT7">Desktop/Browser</a>
+      </li>
+      <li data-list-item-id="ed4106bec2c17230e6a619036d8625c2b">
+        <a href="#h_01J7XTXXKQERWK3GA1BSE8Q77B">Mobile</a>
+      </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="e89171c4bba59f7f039e9bcc55435b42c">
     <a href="#h_01J7XV0KGNDTWV80EC18KSS7RF"
       >Reacting and Replying to a Custom Status</a
     >
     <ul>
-      <li>
+      <li data-list-item-id="e7fcd98b45852adad73349623132e5216">
         <a href="#h_01J7XV20VH3M2HSDRWA1N6BK43">Reacting on Desktop/Browser</a>
       </li>
-      <li>
+      <li data-list-item-id="e736d6d243b5dbcba10be7fda53835730">
         <a href="#h_01J7XV70Q9AZZ0B5MHZ1SH0523">Replying on Desktop/Browser</a>
       </li>
-      <li>
+      <li data-list-item-id="efe1abd3ed262b0c2528cfd53b0a15889">
         <a href="#h_01J7XV9XR4HRAMSQE3E7X5AJVW"
           >Reacting or Replying on Mobile</a
         >
@@ -77,7 +87,7 @@
 <p class="wysiwyg-text-align-center">
   <strong
     ><img
-      src="https://support.discord.com/hc/article_attachments/26405229061527"
+      src="https://support.discord.com/hc/article_attachments/45110091012631"
       width="600"
       height="508"
   /></strong>
@@ -88,9 +98,9 @@
   <strong>Clear After </strong>pull-down menu and
   <strong>Status </strong>pull-down menu. 
 </p>
-<p id="h_01J7XTAX2T8D5D2VWZB2CSG8MC" class="wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center" id="h_01J7XTAX2T8D5D2VWZB2CSG8MC">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251030167"
+    src="https://support.discord.com/hc/article_attachments/45110091014807"
     width="456"
     height="504"
   />
@@ -108,11 +118,11 @@
   1. On the mobile app, long-press your <strong>profile</strong> icon in the
   lower-right corner of the app to view your <strong>profile</strong> menu in
   <strong>Account</strong>. You can also tap your <strong>profile</strong> icon
-  <strong>&gt;</strong> <strong>Add Status. </strong>
+  <strong>&gt;</strong> <strong>Add Status.</strong>
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251032599"
+    src="https://support.discord.com/hc/article_attachments/45110134514583"
     width="285"
     height="590"
   />
@@ -131,12 +141,12 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251034647"
+    src="https://support.discord.com/hc/article_attachments/45110134528151"
     width="284"
     height="592"
   />
     <img
-    src="https://support.discord.com/hc/article_attachments/26405251039895"
+    src="https://support.discord.com/hc/article_attachments/45110134529815"
     width="285"
     height="592"
   />
@@ -148,7 +158,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251047703"
+    src="https://support.discord.com/hc/article_attachments/45110134531863"
     width="302"
     height="628"
   />
@@ -162,25 +172,25 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251050263"
+    src="https://support.discord.com/hc/article_attachments/45110091017111"
     width="245"
     height="53"
   />
 </p>
 <p>2. Follow these steps: </p>
 <ul>
-  <li>
+  <li data-list-item-id="e3c1ca76ac04c3ca189cdd6bdf50fc852">
     <strong>To clear your custom status</strong>, press the
     <strong>trash</strong> icon [<img
-      src="https://support.discord.com/hc/article_attachments/26405229104535"
+      src="https://support.discord.com/hc/article_attachments/45110134534167"
       width="24"
       height="24"
     />] to remove it. 
   </li>
-  <li>
+  <li data-list-item-id="ec67a757d90f9098fe05ed8a5ce12b010">
     <strong>To edit your custom status</strong>, press the
     <strong>pencil</strong> icon [<img
-      src="https://support.discord.com/hc/article_attachments/26405229107479"
+      src="https://support.discord.com/hc/article_attachments/45110134535319"
       width="24"
       height="24"
     />] to make changes. 
@@ -188,22 +198,23 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405229111831"
+    src="https://support.discord.com/hc/article_attachments/45110134536855"
     width="274"
     height="552"
   />. 
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251064343"
+    src="https://support.discord.com/hc/article_attachments/45110134538263"
     width="273"
     height="550"
-  />   
+  />
+    
 </p>
-<h4 id="h_01J7XTTHET5PXJQ0Q24527MSWX" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01J7XTTHET5PXJQ0Q24527MSWX">
   <span style="color: #666666"
     >Left: Trash icon - Used to clear custom status</span
   >
 </h4>
-<h4 id="h_01J7XTTHETJC9MZRC8NYXF0Y7A" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01J7XTTHETJC9MZRC8NYXF0Y7A">
   <span style="color: #666666"
     >Right: Pencil icon - Used to edit custom status</span
   >
@@ -215,8 +226,8 @@
     <strong>friends list</strong> within
     <strong>direct messages</strong> (<strong>DMs</strong>) and
     <strong>group chats</strong>. However, activity statuses will still show
-    when viewing a user’s <strong>full</strong> <strong>profile</strong>.<br
-  /></span>
+    when viewing a user’s <strong>full</strong> <strong>profile</strong>.</span
+  ><br /> 
 </div>
 <h2 id="h_01J7XTXXKQERWK3GA1BSE8Q77B">Mobile</h2>
 <p>
@@ -227,44 +238,44 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251090839"
+    src="https://support.discord.com/hc/article_attachments/45110134538903"
     width="453"
     height="67"
   />
 </p>
 <p>2. Follow these steps: </p>
 <ul>
-  <li>
+  <li data-list-item-id="e2121581c3801dacf2c8e2a72c0e532a1">
     <strong>To clear your custom status</strong>, tap the
     <strong>x </strong>icon [<img
-      src="https://support.discord.com/hc/article_attachments/26405229121559"
+      src="https://support.discord.com/hc/article_attachments/45110091023639"
       width="24"
       height="24"
     />] to the right of your custom status to remove it. 
   </li>
 </ul>
 <ul>
-  <li>
+  <li data-list-item-id="e0d19510b402d56ed3c451a767fbbfbbe">
     <strong>To edit your custom status</strong>, tap your current
     <strong>custom status</strong> to make changes. 
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405229126935"
+    src="https://support.discord.com/hc/article_attachments/45110134539671"
     width="294"
     height="609"
-  /> 
-  <img
-    src="https://support.discord.com/hc/article_attachments/26405229131031"
+  />
+   <img
+    src="https://support.discord.com/hc/article_attachments/45110091031319"
     width="293"
     height="606"
   />
 </p>
-<h4 id="h_01J7XTZK6FD0SVZB4SBWRJCZQE" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01J7XTZK6FD0SVZB4SBWRJCZQE">
   <span style="color: #666666">Left: X icon - Clear custom status</span>
 </h4>
-<h4 id="h_01J7XTZK6FZRWSQG6K9V6WX3NV" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01J7XTZK6FZRWSQG6K9V6WX3NV">
   <span style="color: #666666"
     >Right: Current custom status - Edit custom status</span
   >
@@ -283,14 +294,14 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251112855"
+    src="https://support.discord.com/hc/article_attachments/45110091032215"
     width="559"
     height="530"
   />
 </p>
 <p>
   2. You’ll notice a <strong>Send</strong> <strong>Reaction</strong> icon [<img
-    src="https://support.discord.com/hc/article_attachments/26405229141655"
+    src="https://support.discord.com/hc/article_attachments/45110134542359"
     width="24"
     height="24"
   />] above their custom status. Press this icon to choose and send a
@@ -298,11 +309,12 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405229144471"
+    src="https://support.discord.com/hc/article_attachments/45110134542999"
     width="253"
     height="475"
-  />  <img
-    src="https://support.discord.com/hc/article_attachments/26405251136279"
+  />
+   <img
+    src="https://support.discord.com/hc/article_attachments/45110091035031"
     width="434"
     height="473"
   />
@@ -314,11 +326,12 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405229161239"
+    src="https://support.discord.com/hc/article_attachments/45110091036567"
     width="215"
     height="408"
-  />  <img
-    src="https://support.discord.com/hc/article_attachments/26405229165335"
+  />
+   <img
+    src="https://support.discord.com/hc/article_attachments/45110091037207"
     width="464"
     height="408"
   />
@@ -330,14 +343,14 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251167127"
+    src="https://support.discord.com/hc/article_attachments/45110091037463"
     width="569"
     height="540"
   />
 </p>
 <p>
   2. You’ll notice a <strong>Reply to Status </strong>icon [<img
-    src="https://support.discord.com/hc/article_attachments/26405229176471"
+    src="https://support.discord.com/hc/article_attachments/45110091038487"
     width="25"
     height="24"
   />] above their custom status. Press this icon to send a
@@ -345,12 +358,12 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405229189015"
+    src="https://support.discord.com/hc/article_attachments/45110091039383"
     width="256"
     height="485"
   />
     <img
-    src="https://support.discord.com/hc/article_attachments/26405229192471"
+    src="https://support.discord.com/hc/article_attachments/45110134552599"
     width="269"
     height="485"
   />
@@ -362,12 +375,12 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251186583"
+    src="https://support.discord.com/hc/article_attachments/45110091041559"
     width="217"
     height="408"
   />
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251190167"
+    src="https://support.discord.com/hc/article_attachments/45110134554263"
     width="460"
     height="408"
   />
@@ -382,10 +395,12 @@
   to the <strong>Respond to Status</strong> page where you can: 
 </p>
 <ul>
-  <li>Send a reaction by selecting an emoji </li>
-  <li>
+  <li data-list-item-id="e696cfdf3cebfe5c8686771c071b69f49">
+    Send a reaction by selecting an emoji 
+  </li>
+  <li data-list-item-id="ea25daa6113b79770eda8b8efac3ab6cd">
     Reply with a message and tap the <strong>send </strong>icon [<img
-      src="https://support.discord.com/hc/article_attachments/26405251192983"
+      src="https://support.discord.com/hc/article_attachments/45110134555415"
       width="24"
       height="24"
     />] 
@@ -393,11 +408,12 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405229203991"
+    src="https://support.discord.com/hc/article_attachments/45110134556823"
     width="252"
     height="522"
-  />  <img
-    src="https://support.discord.com/hc/article_attachments/26405251205143"
+  />
+   <img
+    src="https://support.discord.com/hc/article_attachments/45110091059479"
     width="252"
     height="524"
   />
@@ -409,19 +425,20 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251212567"
+    src="https://support.discord.com/hc/article_attachments/45110134557847"
     width="240"
     height="501"
-  />  <img
-    src="https://support.discord.com/hc/article_attachments/26405229230103"
+  />
+   <img
+    src="https://support.discord.com/hc/article_attachments/45110091061271"
     width="241"
     height="503"
   />
 </p>
-<h4 id="h_01J7XVBQV10KTVRBQCRNYGC7DR" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01J7XVBQV10KTVRBQCRNYGC7DR">
   <span style="color: #666666">Left: Reaction sent</span>
 </h4>
-<h4 id="h_01J7XVBQV1M8EH55H6C4H38H32" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01J7XVBQV1M8EH55H6C4H38H32">
   <span style="color: #666666">Right: Reply sent</span>
 </h4>
 <p>
@@ -430,19 +447,19 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26405229235607"
+    src="https://support.discord.com/hc/article_attachments/45110134558615"
     width="249"
     height="516"
   />. 
   <img
-    src="https://support.discord.com/hc/article_attachments/26405251229463"
+    src="https://support.discord.com/hc/article_attachments/45110091064087"
     width="247"
     height="512"
   />
 </p>
-<h4 id="h_01J7XVD49VJ41PB48Y2QAQKAPF" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01J7XVD49VJ41PB48Y2QAQKAPF">
   <span style="color: #666666">Left: Delivered reaction within DM</span>
 </h4>
-<h4 id="h_01J7XVD49VB5Q86M9DFKEEW3V8" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01J7XVD49VB5Q86M9DFKEEW3V8">
   <span style="color: #666666">Right: Delivered reply within DM</span>
 </h4>
