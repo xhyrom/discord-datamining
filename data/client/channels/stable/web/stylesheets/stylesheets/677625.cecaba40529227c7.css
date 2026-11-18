@@ -1,0 +1,93 @@
+.favoriteIcon_850pDF {
+  display: block;
+}
+.anchor_4z_RMD {
+  inset-inline: 0;
+  bottom: var(--space-24);
+  height: var(--guildbar-avatar-size);
+  margin-inline: auto;
+  pointer-events: none;
+  position: absolute;
+  width: var(--guildbar-avatar-size);
+}
+.container_oJAkDB {
+  height: 24px;
+  overflow: hidden;
+  padding: 8px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+.bar_oJAkDB {
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px var(--opacity-black-24);
+  color: var(--text-strong);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+  height: 24px;
+  justify-content: center;
+  line-height: 16px;
+  pointer-events: auto;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-app-region: no-drag;
+  transition-delay: 0s;
+  transition-property: visibility;
+}
+.bar_oJAkDB.hidden_oJAkDB {
+  pointer-events: none;
+  transition-delay: 0.2s;
+  visibility: hidden;
+}
+.active_oJAkDB:active {
+  top: 1px;
+}
+.unread_oJAkDB {
+  background-color: var(--background-surface-highest);
+  border: 1px solid var(--border-normal);
+}
+.mention_oJAkDB {
+  background-color: var(--background-feedback-notification);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-medium);
+  box-sizing: border-box;
+  color: var(--text-overlay-light);
+}
+.mention_oJAkDB:active {
+  background-color: var(--red-430);
+}
+.icon_oJAkDB,
+.text_oJAkDB {
+  display: block;
+}
+.icon_oJAkDB {
+  color: var(--icon-strong);
+  height: 12px;
+  margin-inline-start: 2px;
+  width: 12px;
+}
+.enable-forced-colors .bar_oJAkDB {
+  background-color: Highlight;
+  border: 1px solid HighlightText;
+  color: HighlightText;
+  forced-color-adjust: none;
+  outline: 2px solid Canvas;
+}
+.enable-forced-colors .mention_oJAkDB {
+  opacity: 1;
+}
+.container_pfDcF- {
+  position: relative;
+}
+.circularImage_pfDcF- {
+  border-radius: 50%;
+}
+.dots_pfDcF- {
+  margin-top: 0.2px;
+}
+
+/*# sourceMappingURL=677625.cecaba40529227c7.css.map*/
