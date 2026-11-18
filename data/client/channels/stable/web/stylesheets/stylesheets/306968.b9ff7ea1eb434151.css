@@ -1,0 +1,144 @@
+.inline_BwHv05 {
+  opacity: 1;
+}
+.full-motion .inline_BwHv05 {
+  transition: all 0.1s ease;
+}
+.inline_BwHv05.hiddenMosaicItem_BwHv05 {
+  visibility: hidden;
+}
+.full-motion .obscured_BwHv05 {
+  transition: all 0.1s ease;
+}
+.obscured_BwHv05.hiddenMosaicItem_BwHv05 {
+  pointer-events: none;
+}
+.obscured_BwHv05.hiddenMosaicItem_BwHv05.hiddenSpoiler_BwHv05 {
+  filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
+}
+.obscured_BwHv05.hiddenMosaicItem_BwHv05.hiddenExplicit_BwHv05 {
+  filter: blur(var(--__obscured-background-blur-radius))
+    brightness(var(--__obscured-background-brightness));
+}
+.obscureVideoSpacing_BwHv05 {
+  bottom: 36px;
+  transition: bottom 0.1s ease-in-out;
+}
+.mosaicItemContent_BwHv05 {
+  flex: auto;
+}
+.removeMosaicItemButton_BwHv05 {
+  align-self: flex-start;
+  cursor: pointer;
+  flex: 0 0 auto;
+  opacity: 0;
+  padding: 2px;
+}
+.spoilerRemoveMosaicItemButton_BwHv05 {
+  inset-inline-end: -20px;
+  position: absolute;
+  top: -2px;
+}
+.mosaicItem_BwHv05 {
+  align-items: start;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  max-width: 100%;
+}
+.mosaicItemNoJustify_BwHv05 {
+  justify-self: auto !important;
+}
+.mosaicItemFullWidth_BwHv05 {
+  align-items: center;
+  width: 100%;
+}
+.mosaicItemMediaMosaic_BwHv05 {
+  border-radius: 2px;
+  max-height: inherit;
+  position: relative;
+}
+.hideOverflow_BwHv05 {
+  overflow: hidden;
+}
+.removeMosaicItemButton_BwHv05:focus-within,
+.removeMosaicItemButton_BwHv05:hover {
+  color: var(--interactive-text-hover);
+}
+.nonMediaMosaicItem_BwHv05 {
+  inset-inline-end: -8px;
+  outline: 1px solid var(--background-base-lower);
+  top: -8px;
+}
+.removeMosaicItemHoverButton_BwHv05:hover,
+.keyboard-mode .removeMosaicItemHoverButton_BwHv05:focus {
+  background-color: var(
+    --control-critical-primary-background-default
+  ) !important;
+  color: var(--control-critical-primary-text-default) !important;
+}
+.removeMosaicItemHoverButton_BwHv05:active {
+  background-color: var(--control-critical-primary-background-active);
+  color: var(--white);
+}
+.downloadHoverButtonIcon_BwHv05 {
+  height: 20px;
+  width: 20px;
+}
+.enable-forced-colors .removeMosaicItemButton_BwHv05 {
+  background-color: ButtonFace;
+  border: 1px solid ButtonFace;
+  color: ButtonText;
+  opacity: 1;
+}
+.enable-forced-colors .removeMosaicItemButton_BwHv05:focus,
+.enable-forced-colors .removeMosaicItemButton_BwHv05:hover {
+  border-color: ButtonText;
+}
+.hoverButtonGroup_n2rO26:hover,
+.keyboard-mode .hoverButtonGroup_n2rO26:focus-within,
+:hover + .hoverButtonGroup_n2rO26 {
+  opacity: 1;
+}
+.hoverButton_n2rO26 {
+  color: var(--interactive-text-default);
+  cursor: pointer;
+  display: flex;
+  padding: 6px;
+}
+.hoverButton_n2rO26.selected_n2rO26,
+.hoverButton_n2rO26:hover,
+.keyboard-mode .hoverButton_n2rO26:focus {
+  background-color: var(--interactive-background-hover);
+  color: var(--interactive-text-hover);
+}
+.hoverButton_n2rO26:active {
+  background-color: var(--interactive-background-active);
+  color: var(--interactive-text-active);
+}
+.hoverButtonGroup_n2rO26 {
+  background-color: var(--background-base-low);
+  border-radius: 5px;
+  display: flex;
+  inset-inline-end: 4px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 4px;
+  z-index: 2;
+}
+.nonMediaMosaicItem_n2rO26 {
+  inset-inline-end: -8px;
+  outline: 1px solid var(--background-base-lower);
+  top: -8px;
+}
+.sizer_n2rO26 {
+  height: 0;
+  inset-inline-start: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=306968.b9ff7ea1eb434151.css.map*/
