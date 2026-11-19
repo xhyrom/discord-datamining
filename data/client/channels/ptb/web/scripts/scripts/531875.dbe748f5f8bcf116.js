@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [248345],
+  [531875],
   {
     838259(e, t, r) {
       "use strict";
@@ -11308,9 +11308,11 @@
       let c = new TextEncoder(),
         d = new TextDecoder();
     },
-    254864(e, t, r) {
+    350036(e, t, r) {
       "use strict";
-      let i = {
+      r.d(t, { pb: () => n, A: () => o });
+      var i = r(530152);
+      let n = {
         ada: {
           languageId: "ada",
           languageExport: "tree_sitter_ada",
@@ -11977,19 +11979,19 @@
           highlights: new URL(r(493366), r.b),
         },
       };
-      r.d(t, {}, { p: i });
-    },
-    725020(e, t, r) {
-      "use strict";
-      r(530152);
-      var i = r(254864),
-        n = r(220956);
-      r.d(t, { A: () => n.A, pb: () => i.p });
-    },
-    220956(e, t, r) {
-      "use strict";
-      var i = r(530152);
-      class n {
+      async function o() {
+        let e = await (async function () {
+            return (await r.e(621772).then(r.bind(r, 553799))).default;
+          })(),
+          [t, n] = await Promise.all([
+            (0, i.LM)(new URL(r(242655), r.b)),
+            (0, i.LM)(new URL(r(158881), r.b)),
+          ]),
+          o = await e({ wasmBinary: t }),
+          a = await o.loadWebAssemblyModule(n, { loadAsync: !0 });
+        return new s(o, a);
+      }
+      class s {
         host;
         abi;
         constructor(e, t) {
@@ -12001,13 +12003,13 @@
               "grammar-registration-failed",
               "loadGrammar: languageId is required (must match the name referenced by injection queries)",
             );
-          let [t, r, n, s] = await Promise.all([
+          let [t, r, n, o] = await Promise.all([
               (0, i.LM)(e.wasm),
               (0, i.WY)(e.highlights),
               void 0 === e.injections ? "" : (0, i.WY)(e.injections),
               void 0 === e.locals ? "" : (0, i.WY)(e.locals),
             ]),
-            a = (function (e, t) {
+            s = (function (e, t) {
               if (void 0 !== t) {
                 let r = e[t];
                 if ("function" != typeof r)
@@ -12036,7 +12038,7 @@
               await this.host.loadWebAssemblyModule(t, { loadAsync: !0 }),
               e.languageExport,
             )();
-          if (!a)
+          if (!s)
             throw new i.gT(
               "grammar-registration-failed",
               "grammar tree_sitter_* export returned null",
@@ -12044,11 +12046,11 @@
           let [u, c] = (0, i.BW)(this.host, e.languageId),
             [d, l] = (0, i.BW)(this.host, r),
             [h, f] = (0, i.BW)(this.host, n),
-            [p, m] = (0, i.BW)(this.host, s),
+            [p, m] = (0, i.BW)(this.host, o),
             g = 0;
           try {
             g = this.abi.arborium_rt_register_grammar(
-              a,
+              s,
               u,
               c,
               d,
@@ -12069,10 +12071,10 @@
               "grammar-registration-failed",
               "arborium_rt_register_grammar returned 0 (query compile failure, bad language ptr, or empty name?)",
             );
-          return new o(this, g, a, e.languageId);
+          return new a(this, g, s, e.languageId);
         }
       }
-      class o {
+      class a {
         runtime;
         id;
         languagePtr;
@@ -12092,7 +12094,7 @@
               "session-creation-failed",
               `arborium_rt_create_session(${this.id}) returned 0`,
             );
-          return new s(this, e);
+          return new u(this, e);
         }
         unregister() {
           this.#e ||
@@ -12107,7 +12109,7 @@
             );
         }
       }
-      class s {
+      class u {
         grammar;
         id;
         #r = !1;
@@ -12257,24 +12259,6 @@
           }
         }
       }
-      r.d(
-        t,
-        {},
-        {
-          A: async function () {
-            let e = await (async function () {
-                return (await r.e(621772).then(r.bind(r, 553799))).default;
-              })(),
-              [t, o] = await Promise.all([
-                (0, i.LM)(new URL(r(242655), r.b)),
-                (0, i.LM)(new URL(r(158881), r.b)),
-              ]),
-              s = await e({ wasmBinary: t }),
-              a = await s.loadWebAssemblyModule(o, { loadAsync: !0 });
-            return new n(s, a);
-          },
-        },
-      );
     },
     593034(e, t, r) {
       "use strict";
@@ -13229,4 +13213,4 @@
     },
   },
 ]);
-//# sourceMappingURL=248345.8eb1cca1aeb3b440.js.map
+//# sourceMappingURL=531875.dbe748f5f8bcf116.js.map

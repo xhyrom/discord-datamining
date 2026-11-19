@@ -1,0 +1,19 @@
+.nowrap_omevcu {
+  white-space: nowrap;
+}
+.icon__RYHZ5 {
+  height: 1em;
+  margin-bottom: 0.2rem;
+  margin-inline-end: var(--space-4);
+  vertical-align: middle;
+  width: 1em;
+}
+.name__RYHZ5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.channelWithIcon__RYHZ5 .iconMentionText__RYHZ5 {
+  gap: 0 !important;
+}
+
+/*# sourceMappingURL=86729.23ee59d5c72d34f9.css.map*/
