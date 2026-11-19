@@ -30,6 +30,7 @@
           xboxGradient: "xboxGradient_iPIbS8",
           youtubeGradient: "youtubeGradient_iPIbS8",
           macaronGradient: "macaronGradient_iPIbS8",
+          voicemodGradient: "voicemodGradient_iPIbS8",
           overlayTextBox: "overlayTextBox_iPIbS8",
           backgroundVideoContainer: "backgroundVideoContainer_iPIbS8",
           backgroundVideo: "backgroundVideo_iPIbS8",
@@ -39,4 +40,4 @@
     },
   },
 ]);
-//# sourceMappingURL=447272.cc20228b2e70a716.js.map
+//# sourceMappingURL=447272.117b41a0efa7cb27.js.map

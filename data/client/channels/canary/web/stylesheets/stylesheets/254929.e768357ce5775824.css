@@ -177,9 +177,6 @@
 .stickerNodeHidden_5z8c5P {
   visibility: hidden;
 }
-.stickerUnsendable_5z8c5P {
-  filter: grayscale(100%);
-}
 .stickerLocked_5z8c5P {
   filter: brightness(0.4);
 }
@@ -358,47 +355,6 @@
 }
 .wrapper_oQjLgZ {
   flex: 1;
-}
-.upsellWrapper_K-9txm {
-  align-items: center;
-  background: var(--background-base-lower);
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  inset-inline: 0;
-  justify-content: center;
-  opacity: 0.98;
-  padding: 0 20px;
-  text-align: center;
-  z-index: 2;
-}
-.upsellWrapper_K-9txm.unifyTrialUpsell_K-9txm {
-  justify-content: flex-end;
-  opacity: 1;
-  padding: 0;
-}
-.upsellImage_K-9txm {
-  height: 80px;
-  margin-bottom: 16px;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.upsellTitle_K-9txm {
-  margin-bottom: 8px;
-}
-.upsellDescription_K-9txm {
-  margin-bottom: 44px;
-  max-width: 400px;
-}
-.upsellClose_K-9txm {
-  color: var(--interactive-text-default);
-  cursor: pointer;
-  inset-inline-end: 20px;
-  position: absolute;
-  top: 20px;
 }
 .wrapper_WSRqCO {
   display: grid;
@@ -616,4 +572,4 @@
   gap: var(--space-4);
 }
 
-/*# sourceMappingURL=678906.0b9c99b5bec1c76c.css.map*/
+/*# sourceMappingURL=254929.e768357ce5775824.css.map*/

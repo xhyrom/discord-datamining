@@ -223,7 +223,6 @@
         LW: "topRimPill_HMJaME",
         as: "subscribeButtonWide_HMJaME",
         eg: "countdownTextInSetting_HMJaME",
-        kz: "upsellClose_HMJaME",
         Tn: "upsellImage_HMJaME",
       };
     },
@@ -232,4 +231,4 @@
     },
   },
 ]);
-//# sourceMappingURL=436803.fec6f4863dedb81a.js.map
+//# sourceMappingURL=436803.8fb29995473cfcda.js.map

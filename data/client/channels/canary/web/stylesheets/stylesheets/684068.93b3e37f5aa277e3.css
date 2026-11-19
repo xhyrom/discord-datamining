@@ -184,14 +184,20 @@
   flex-shrink: 0;
 }
 .statRow_bcgTHb .statIcon_bcgTHb {
-  box-sizing: border-box;
   height: 16px;
   width: 16px;
+  -webkit-user-drag: none;
+}
+.statRow_bcgTHb .guildAcronymIcon_bcgTHb,
+.statRow_bcgTHb .statIcon_bcgTHb {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .statRow_bcgTHb .guildAcronymIcon_bcgTHb {
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid #000;
-  box-sizing: border-box;
   display: grid;
   height: 16px;
   place-items: center;
@@ -1205,4 +1211,4 @@
   z-index: 1;
 }
 
-/*# sourceMappingURL=684068.e1233027a58cc174.css.map*/
+/*# sourceMappingURL=684068.93b3e37f5aa277e3.css.map*/

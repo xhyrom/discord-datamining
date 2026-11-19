@@ -196,6 +196,13 @@
     var(--background-base-lower) 100%
   );
 }
+.voicemodGradient_iPIbS8:before {
+  background: linear-gradient(
+    180deg,
+    #2a0a51 0,
+    var(--background-base-lower) 100%
+  );
+}
 .overlayTextBox_iPIbS8 {
   inset-inline-start: var(--space-12);
   z-index: 1;
@@ -288,4 +295,4 @@
   }
 }
 
-/*# sourceMappingURL=447272.f236d5a26e432c9d.css.map*/
+/*# sourceMappingURL=447272.04397871d1897451.css.map*/

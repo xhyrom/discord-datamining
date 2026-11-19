@@ -1291,13 +1291,6 @@
   justify-content: flex-end;
   width: 100%;
 }
-.upsellClose_HMJaME {
-  color: var(--interactive-text-default);
-  cursor: pointer;
-  inset-inline-end: 20px;
-  position: absolute;
-  top: 20px;
-}
 .upsellImage_HMJaME {
   height: 60px;
   margin-bottom: 16px;
@@ -1551,4 +1544,4 @@
   color: var(--text-strong);
 }
 
-/*# sourceMappingURL=436803.250b090de62f9b39.css.map*/
+/*# sourceMappingURL=436803.465ed4a4b0651ac7.css.map*/

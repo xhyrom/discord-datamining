@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [678906],
+  [254929],
   {
     818625(e) {
       e.exports = {
@@ -78,7 +78,6 @@
         SI: "stickerNode_5z8c5P",
         ot: "stickerNodeDimmed_5z8c5P",
         Q$: "stickerNodeHidden_5z8c5P",
-        No: "stickerUnsendable_5z8c5P",
         UK: "stickerLocked_5z8c5P",
         MC: "lockIconContainer_5z8c5P",
         hz: "lockIcon_5z8c5P",
@@ -87,16 +86,6 @@
     909802(e) {
       e.exports = { i: "wrapper_oQjLgZ" };
     },
-    420136(e) {
-      e.exports = {
-        VL: "upsellWrapper_K-9txm",
-        Hz: "unifyTrialUpsell_K-9txm",
-        Tn: "upsellImage_K-9txm",
-        ex: "upsellTitle_K-9txm",
-        GR: "upsellDescription_K-9txm",
-        kz: "upsellClose_K-9txm",
-      };
-    },
   },
 ]);
-//# sourceMappingURL=678906.46edda4a7419dd6f.js.map
+//# sourceMappingURL=254929.7cd5919208cd6b76.js.map
