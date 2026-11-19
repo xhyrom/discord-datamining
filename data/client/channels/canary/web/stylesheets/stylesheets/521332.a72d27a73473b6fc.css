@@ -62,5 +62,25 @@
   flex-direction: column;
   gap: 20px;
 }
+.channelOptionWrapper_mC2Xza {
+  align-items: center;
+  display: flex;
+}
+.icon_mC2Xza {
+  height: 24px;
+  margin-inline-end: 8px;
+  width: 24px;
+}
+.icon_mC2Xza,
+.inputPrefix_mC2Xza {
+  color: var(--interactive-text-default);
+}
+.inputPrefix_mC2Xza {
+  height: 20px;
+  inset-inline-start: 8px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}
 
-/*# sourceMappingURL=474750.186cac670759514d.css.map*/
+/*# sourceMappingURL=521332.a72d27a73473b6fc.css.map*/
