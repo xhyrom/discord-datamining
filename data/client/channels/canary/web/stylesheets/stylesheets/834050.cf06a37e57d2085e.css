@@ -205,6 +205,9 @@
   height: unset;
   padding: 1px 0;
 }
+.enable-forced-colors .tabBackgroundImage_zln_tS {
+  display: none;
+}
 .enable-forced-colors .unreadPill_zln_tS {
   background-color: Highlight;
   height: 10px;
@@ -281,15 +284,54 @@
   );
 }
 .tabHoverGradient_zln_tS {
+  inset-inline-start: 0;
+  overflow: hidden;
+  top: 0;
+}
+.tabBackgroundImage_zln_tS,
+.tabHoverGradient_zln_tS {
   border-radius: var(--radius-sm);
   bottom: 0;
   inset-inline-end: 0;
-  inset-inline-start: 0;
-  overflow: hidden;
   pointer-events: none;
   position: absolute;
-  top: 0;
   z-index: 0;
 }
+.tabBackgroundImage_zln_tS {
+  height: 100%;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 35%,
+    68%,
+    var(--background-surface-higher) 85%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 35%,
+    68%,
+    var(--background-surface-higher) 85%
+  );
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: bottom right;
+  object-position: bottom right;
+}
+.tabBackgroundImage_zln_tS:dir(rtl) {
+  -webkit-mask-image: linear-gradient(
+    to left,
+    transparent 35%,
+    68%,
+    var(--background-surface-higher) 85%
+  );
+  mask-image: linear-gradient(
+    to left,
+    transparent 35%,
+    68%,
+    var(--background-surface-higher) 85%
+  );
+  -o-object-position: bottom left;
+  object-position: bottom left;
+}
 
-/*# sourceMappingURL=834050.4638a21ea8c86c45.css.map*/
+/*# sourceMappingURL=834050.cf06a37e57d2085e.css.map*/

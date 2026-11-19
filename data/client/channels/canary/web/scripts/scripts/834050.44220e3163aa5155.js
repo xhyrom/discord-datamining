@@ -36,6 +36,7 @@
         G$: "decorator_zln_tS",
         dm: "dm_zln_tS",
         xx: "avatarWithText_zln_tS",
+        hS: "tabBackgroundImage_zln_tS",
         Zi: "channelNameFade_zln_tS",
         KQ: "waveButton_zln_tS",
         a1: "tabHoverGradient_zln_tS",
@@ -43,4 +44,4 @@
     },
   },
 ]);
-//# sourceMappingURL=834050.2008ba1fc30a882e.js.map
+//# sourceMappingURL=834050.44220e3163aa5155.js.map
