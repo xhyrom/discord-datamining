@@ -2542,7 +2542,31 @@
         "use strict";
         n.r(t);
         let { createLoader: i } = n(95498),
-          r = i({ "en-US": () => n.e(60985).then(n.bind(n, 334816)) }, "en-US"),
+          r = i(
+            {
+              da: () => n.e(689170).then(n.t.bind(n, 575337, 19)),
+              de: () => n.e(167430).then(n.t.bind(n, 475941, 19)),
+              el: () => n.e(29316).then(n.t.bind(n, 583919, 19)),
+              "es-419": () => n.e(938370).then(n.t.bind(n, 975833, 19)),
+              "es-ES": () => n.e(657296).then(n.t.bind(n, 917587, 19)),
+              fr: () => n.e(92515).then(n.t.bind(n, 779694, 19)),
+              it: () => n.e(897624).then(n.t.bind(n, 829067, 19)),
+              ja: () => n.e(167668).then(n.t.bind(n, 537951, 19)),
+              ko: () => n.e(779557).then(n.t.bind(n, 387396, 19)),
+              nl: () => n.e(519933).then(n.t.bind(n, 707212, 19)),
+              pl: () => n.e(961643).then(n.t.bind(n, 724902, 19)),
+              "pt-BR": () => n.e(407928).then(n.t.bind(n, 195371, 19)),
+              ru: () => n.e(942424).then(n.t.bind(n, 699787, 19)),
+              "sv-SE": () => n.e(650613).then(n.t.bind(n, 871124, 19)),
+              th: () => n.e(862579).then(n.t.bind(n, 956286, 19)),
+              tr: () => n.e(285489).then(n.t.bind(n, 13512, 19)),
+              vi: () => n.e(626952).then(n.t.bind(n, 674363, 19)),
+              "zh-CN": () => n.e(770513).then(n.t.bind(n, 930024, 19)),
+              "zh-TW": () => n.e(590673).then(n.t.bind(n, 337640, 19)),
+              "en-US": () => n.e(60985).then(n.bind(n, 334816)),
+            },
+            "en-US",
+          ),
           { makeMessagesProxy: a } = n(95498),
           s = a(r);
         n.d(t, {}, { default: s, messagesLoader: r });
@@ -2896,7 +2920,39 @@
         n.r(t);
         let { createLoader: i } = n(95498),
           r = i(
-            { "en-US": () => n.e(740427).then(n.bind(n, 380166)) },
+            {
+              bg: () => n.e(558984).then(n.t.bind(n, 852475, 19)),
+              cs: () => n.e(359519).then(n.t.bind(n, 826722, 19)),
+              da: () => n.e(228200).then(n.t.bind(n, 817307, 19)),
+              de: () => n.e(824348).then(n.t.bind(n, 482583, 19)),
+              el: () => n.e(476738).then(n.t.bind(n, 524121, 19)),
+              "en-GB": () => n.e(777810).then(n.t.bind(n, 391849, 19)),
+              "es-419": () => n.e(704316).then(n.t.bind(n, 596215, 19)),
+              "es-ES": () => n.e(295362).then(n.t.bind(n, 348889, 19)),
+              fi: () => n.e(181234).then(n.t.bind(n, 689737, 19)),
+              fr: () => n.e(529721).then(n.t.bind(n, 505376, 19)),
+              hi: () => n.e(223540).then(n.t.bind(n, 368479, 19)),
+              hr: () => n.e(753999).then(n.t.bind(n, 682898, 19)),
+              hu: () => n.e(657048).then(n.t.bind(n, 39563, 19)),
+              it: () => n.e(627910).then(n.t.bind(n, 524773, 19)),
+              ja: () => n.e(519838).then(n.t.bind(n, 327341, 19)),
+              ko: () => n.e(987355).then(n.t.bind(n, 858070, 19)),
+              lt: () => n.e(619229).then(n.t.bind(n, 628460, 19)),
+              nl: () => n.e(236519).then(n.t.bind(n, 695706, 19)),
+              no: () => n.e(873732).then(n.t.bind(n, 978095, 19)),
+              pl: () => n.e(337713).then(n.t.bind(n, 485832, 19)),
+              "pt-BR": () => n.e(476050).then(n.t.bind(n, 169129, 19)),
+              ro: () => n.e(313136).then(n.t.bind(n, 687091, 19)),
+              ru: () => n.e(583346).then(n.t.bind(n, 333705, 19)),
+              "sv-SE": () => n.e(386203).then(n.t.bind(n, 31446, 19)),
+              th: () => n.e(131481).then(n.t.bind(n, 233984, 19)),
+              tr: () => n.e(430827).then(n.t.bind(n, 752294, 19)),
+              uk: () => n.e(400917).then(n.t.bind(n, 94599, 19)),
+              vi: () => n.e(796738).then(n.t.bind(n, 394649, 19)),
+              "zh-CN": () => n.e(232711).then(n.t.bind(n, 931002, 19)),
+              "zh-TW": () => n.e(220587).then(n.t.bind(n, 136486, 19)),
+              "en-US": () => n.e(740427).then(n.bind(n, 380166)),
+            },
             "en-US",
           ),
           { makeMessagesProxy: a } = n(95498),
@@ -10048,7 +10104,7 @@
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("678811", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("678941", 10))) || (l.client_build_number = d),
           null == (c = eE?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -52564,7 +52620,7 @@ color: purple;
         function _(e) {
           switch (e) {
             case o.Ku.NATIVE:
-              return n(31595).A;
+              return n(322947).A;
             case o.Ku.WEBRTC:
               return n(510098).A;
             case o.Ku.DUMMY:
@@ -52649,9 +52705,9 @@ color: purple;
           },
         );
       },
-      31595(e, t, n) {
+      322947(e, t, n) {
         "use strict";
-        n.d(t, { A: () => ei }),
+        n.d(t, { A: () => er }),
           n(393431),
           n(532706),
           n(42231),
@@ -52737,16 +52793,30 @@ color: purple;
             };
           });
         }
-        var b =
+        function b(e) {
+          return (function (e) {
+            if (null == e || "object" != typeof e)
+              return { changes: {}, memberIds: null };
+            if ("changes" in e && "memberIds" in e) {
+              let { changes: t, memberIds: n } = e;
+              return {
+                changes: null != t && "object" == typeof t ? t : {},
+                memberIds: Array.isArray(n) ? n.map(String) : null,
+              };
+            }
+            return { changes: e, memberIds: null };
+          })(e);
+        }
+        var v =
             (((i = {})[(i.DISABLED = -1)] = "DISABLED"),
             (i[(i.NORMAL = 0)] = "NORMAL"),
             (i[(i.LOW_BIRTATE = 1)] = "LOW_BIRTATE"),
             (i[(i.AGGRESSIVE = 2)] = "AGGRESSIVE"),
             (i[(i.VERY_AGGRESSIVE = 3)] = "VERY_AGGRESSIVE"),
             i),
-          v = n(823598),
-          P = n(752163);
-        function M(e) {
+          P = n(823598),
+          M = n(752163);
+        function U(e) {
           let t =
             (e?.headerBytes ?? 0) +
             (e?.payloadBytes ?? 0) +
@@ -52764,7 +52834,7 @@ color: purple;
             t
           );
         }
-        function U(e) {
+        function w(e) {
           let t = e?.packets ?? 0;
           return (
             (e?.fec?.packets ?? 0) +
@@ -52773,7 +52843,7 @@ color: purple;
             t
           );
         }
-        function w(e) {
+        function G(e) {
           let t = {};
           for (let i in e)
             if (Array.isArray(e[i])) t[i] = e[i].map((e) => 1e3 * e);
@@ -52791,16 +52861,16 @@ color: purple;
             }
           return t;
         }
-        function G(e, t) {
+        function x(e, t) {
           let n = e.substreams.find((e) => !e.isRTX && !e.isFlexFEC);
           if (null == n) return;
-          let i = e.substreams.reduce((e, t) => e + M(t.rtpStats), 0),
-            r = e.substreams.reduce((e, t) => e + U(t.rtpStats), 0);
+          let i = e.substreams.reduce((e, t) => e + U(t.rtpStats), 0),
+            r = e.substreams.reduce((e, t) => e + w(t.rtpStats), 0);
           return {
             type: "video",
             ssrc: n.ssrc,
-            sinkWant: (0, P.D)(t, n.ssrc, !0),
-            sinkWantAsInt: (0, P.q)(t, n.ssrc),
+            sinkWant: (0, M.D)(t, n.ssrc, !0),
+            sinkWantAsInt: (0, M.q)(t, n.ssrc),
             codec: { id: e.codecPayloadType, name: e.codecName },
             keyFrameInterval: e.keyFrameInterval,
             bytesSent: i,
@@ -52863,16 +52933,16 @@ color: purple;
             reconFramesFailed: n.encoderQualityStats?.reconFramesFailed,
           };
         }
-        function x(e, t, n, i) {
-          let r = M(e.rtpStats),
-            a = U(e.rtpStats);
+        function k(e, t, n, i) {
+          let r = U(e.rtpStats),
+            a = w(e.rtpStats);
           return {
             type: "video",
             ssrc: e.ssrc,
-            sinkWant: (0, P.D)(t, e.ssrc, !0),
-            sinkWantAsInt: (0, P.q)(t, e.ssrc),
-            sinkWantLocal: (0, P.D)(n, e.ssrc, !0),
-            sinkWantLocalAsInt: (0, P.q)(n, e.ssrc),
+            sinkWant: (0, M.D)(t, e.ssrc, !0),
+            sinkWantAsInt: (0, M.q)(t, e.ssrc),
+            sinkWantLocal: (0, M.D)(n, e.ssrc, !0),
+            sinkWantLocalAsInt: (0, M.q)(n, e.ssrc),
             codec: { id: e.codecPayloadType, name: e.codecName },
             bytesReceived: r,
             packetsReceived: a,
@@ -52923,7 +52993,7 @@ color: purple;
             minResolutionWidth: e.minResolutionWidth,
             minResolutionHeight: e.minResolutionHeight,
             ...(null != i
-              ? w({
+              ? G({
                   videoJitterBuffer: i.videoJitterBuffer,
                   videoJitterDelay: i.videoJitterDelay,
                   videoJitterTarget: i.videoJitterTarget,
@@ -52931,8 +53001,8 @@ color: purple;
               : {}),
           };
         }
-        let k = { [O.TB.VOICE_ACTIVITY]: 1, [O.TB.PUSH_TO_TALK]: 2 };
-        var F =
+        let F = { [O.TB.VOICE_ACTIVITY]: 1, [O.TB.PUSH_TO_TALK]: 2 };
+        var B =
             (((r = {}).VOICE_SOUND_STOP_LOOP = "voice_sound_stop_loop"),
             (r.VOICE_RELATIVE_SOUNDS = "voice_relative_sounds"),
             (r.VOICE_LEGACY_SUBSYSTEM = "voice_legacy_subsystem"),
@@ -52990,7 +53060,7 @@ color: purple;
             (r.UDP_ENDPOINT_UPDATE = "udp_endpoint_update"),
             (r.ACTIVITY_CAPTURE = "activity_capture"),
             r),
-          B =
+          V =
             (((a = {})[(a.Started = 0)] = "Started"),
             (a[(a.Ended = 1)] = "Ended"),
             (a[(a.Error = 2)] = "Error"),
@@ -53004,12 +53074,12 @@ color: purple;
             (a[(a.RecordingActive = 10)] = "RecordingActive"),
             (a[(a.RecordingInactive = 11)] = "RecordingInactive"),
             a);
-        let V = 0;
-        function H(e) {
+        let H = 0;
+        function j(e) {
           return null != e && 0 !== e ? e + 1 : 0;
         }
-        class j extends N.A {
-          mediaEngineConnectionId = `Native-${V++}`;
+        class W extends N.A {
+          mediaEngineConnectionId = `Native-${H++}`;
           goLiveSourceIdentifier;
           selfVideo = !1;
           codecs = [];
@@ -53020,13 +53090,13 @@ color: purple;
           lastOverrideEncoderDenylist = "";
           lastCaptureOverrides = "";
           overrideCodecResetAt = 0;
-          desktopDegradationPreference = (0, v.lE)().DegradationPreference
+          desktopDegradationPreference = (0, P.lE)().DegradationPreference
             .MAINTAIN_FRAMERATE;
           sourceDesktopDegradationPreference =
-            (0, v.lE)().DegradationPreference
+            (0, P.lE)().DegradationPreference
               .MAINTAIN_FRAMERATE_AND_RESOLUTION ??
-            (0, v.lE)().DegradationPreference.DISABLED;
-          videoDegradationPreference = (0, v.lE)().DegradationPreference
+            (0, P.lE)().DegradationPreference.DISABLED;
+          videoDegradationPreference = (0, P.lE)().DegradationPreference
             .BALANCED;
           localPans = {};
           remoteAudioSSRCs = {};
@@ -53073,12 +53143,12 @@ color: purple;
               this.logger.enableNativeLogger(!0);
           }
           static create(e, t, n, i) {
-            let r = new j(e, t, i);
+            let r = new W(e, t, i);
             return r.initialize(n), r;
           }
           static createReplay(e, t) {
-            let n = new j(e, "0", !0),
-              i = (0, v.lE)();
+            let n = new W(e, "0", !0),
+              i = (0, P.lE)();
             n.initializeStreamParameters([
               {
                 type: O.mI.VIDEO,
@@ -53157,7 +53227,7 @@ color: purple;
                 ...this.videoStreamParameters,
               ]),
               (e.context = this.context);
-            let n = (0, v.lE)(),
+            let n = (0, P.lE)(),
               i = (i, r) => {
                 if (this.destroyed) return;
                 if (null != i && "" !== i) {
@@ -53454,8 +53524,8 @@ color: purple;
                               l.push({
                                 type: "audio",
                                 ssrc: e.ssrc,
-                                sinkWant: (0, P.D)(n, e.ssrc, !1),
-                                sinkWantAsInt: (0, P.q)(n, e.ssrc),
+                                sinkWant: (0, M.D)(n, e.ssrc, !1),
+                                sinkWantAsInt: (0, M.q)(n, e.ssrc),
                                 codec: {
                                   id: e.codecPayloadType,
                                   name: e.codecName,
@@ -53502,12 +53572,12 @@ color: purple;
                             null != i)
                           )
                             i.forEach((e) => {
-                              let t = G(e, n);
+                              let t = x(e, n);
                               null != t &&
                                 ((a = (a ?? 0) + t.bytesSent), l.push(t));
                             });
                           else if (null != t) {
-                            let e = G(t, n);
+                            let e = x(t, n);
                             null != e &&
                               ((a = (a ?? 0) + e.bytesSent), l.push(e));
                           }
@@ -53529,8 +53599,8 @@ color: purple;
                                 o[t].push({
                                   type: "audio",
                                   ssrc: a.ssrc,
-                                  sinkWant: (0, P.D)(n, a.ssrc, !1),
-                                  sinkWantAsInt: (0, P.q)(n, a.ssrc),
+                                  sinkWant: (0, M.D)(n, a.ssrc, !1),
+                                  sinkWantAsInt: (0, M.q)(n, a.ssrc),
                                   codec: {
                                     id: a.codecPayloadType,
                                     name: a.codecName,
@@ -53584,7 +53654,7 @@ color: purple;
                                   voiceQuality: a.voiceQuality,
                                   voiceQualityMos: a.voiceQuality?.mosMean,
                                   ...(null != d
-                                    ? w({
+                                    ? G({
                                         audioJitterBuffer: d.audioJitterBuffer,
                                         audioJitterBufferSamples:
                                           d.audioJitterBufferSamples,
@@ -53606,16 +53676,16 @@ color: purple;
                               null != l)
                             )
                               l.forEach((e) => {
-                                let a = x(e, n, i, d);
+                                let a = k(e, n, i, d);
                                 if (null != a) {
-                                  let n = M(e.rtpStats);
+                                  let n = U(e.rtpStats);
                                   (r = (r ?? 0) + n), o[t].push(a);
                                 }
                               });
                             else if (null != s) {
-                              let e = x(s, n, i, d);
+                              let e = k(s, n, i, d);
                               if (null != e) {
-                                let n = M(s.rtpStats);
+                                let n = U(s.rtpStats);
                                 (r = (r ?? 0) + n), o[t].push(e);
                               }
                             }
@@ -53682,7 +53752,7 @@ color: purple;
                     ? this.conn.getFilteredStats(O.yt.ALL, t)
                     : null != this.conn.getStats
                       ? this.conn.getStats(t)
-                      : (0, v.lE)().getStats(t);
+                      : (0, P.lE)().getStats(t);
                 }),
                 1e3,
               );
@@ -53712,7 +53782,7 @@ color: purple;
                   ssrc: t,
                   videoSsrc: i,
                   videoSsrcs: n,
-                  rtxSsrc: H(i),
+                  rtxSsrc: j(i),
                   mute: this.getLocalMute(e),
                   volume: this.getLocalVolume(e),
                 };
@@ -53875,44 +53945,44 @@ color: purple;
           }
           setEchoCancellation(e) {
             (this.echoCancellation = e),
-              (0, v.lE)().setTransportOptions({
+              (0, P.lE)().setTransportOptions({
                 echoCancellation: this.echoCancellation,
               });
           }
           setNoiseSuppression(e) {
             (this.noiseSuppression = e),
-              (0, v.lE)().setTransportOptions({
+              (0, P.lE)().setTransportOptions({
                 noiseSuppression: this.noiseSuppression,
               });
           }
           setAutomaticGainControl(e) {
             (this.automaticGainControl = e),
-              (0, v.lE)().setTransportOptions({
+              (0, P.lE)().setTransportOptions({
                 automaticGainControl: this.automaticGainControl.enabled,
                 automaticGainControlConfig: this.automaticGainControl,
               });
           }
           setNoiseCancellation(e) {
             (this.noiseCancellation = e),
-              (0, v.lE)().setTransportOptions({
+              (0, P.lE)().setTransportOptions({
                 noiseCancellation: this.noiseCancellation,
               });
           }
           setNoiseCancellationDuringProcessing(e) {
             (this.noiseCancellationDuringProcessing = e),
-              (0, v.lE)().setTransportOptions({
+              (0, P.lE)().setTransportOptions({
                 noiseCancellationDuringProcessing:
                   this.noiseCancellationDuringProcessing,
               });
           }
           setSkipNoiseCancellationIfMuted(e) {
-            (0, v.lE)().setTransportOptions({
+            (0, P.lE)().setTransportOptions({
               skipNoiseCancellationIfMuted: e,
             });
           }
           setEchoReferenceMode(e) {
             (this.echoReferenceMode = e),
-              (0, v.lE)().setTransportOptions({
+              (0, P.lE)().setTransportOptions({
                 echoReferenceMode: this.echoReferenceMode,
               });
           }
@@ -53943,12 +54013,12 @@ color: purple;
                 throw Error(`Unknown Input Mode: ${e}`);
             }
             this.conn.setTransportOptions({
-              inputMode: k[this.inputMode],
+              inputMode: F[this.inputMode],
               inputModeOptions: this.createInputModeOptions(),
             });
           }
           setSilenceThreshold(e) {
-            (0, v.lE)().setNoInputThreshold(e);
+            (0, P.lE)().setNoInputThreshold(e);
           }
           setForceAudioInput(e) {
             let t =
@@ -54009,7 +54079,7 @@ color: purple;
               });
           }
           setAvx512EntropyHistogram(e) {
-            (0, v.lE)().setAvx512EntropyHistogram?.(e);
+            (0, P.lE)().setAvx512EntropyHistogram?.(e);
           }
           setAudioLatencyMeasurement(e) {
             this.conn.setTransportOptions({ audioLatencyMeasurement: e });
@@ -54224,7 +54294,7 @@ color: purple;
                   null,
                   this.audioSSRC,
                   this.videoStreamParameters[l].ssrc,
-                  H(this.videoStreamParameters[l].ssrc),
+                  j(this.videoStreamParameters[l].ssrc),
                   this.videoStreamParameters,
                 ),
                 this.conn.setTransportOptions(
@@ -54328,7 +54398,7 @@ color: purple;
                 ssrc: this.remoteAudioSSRCs[e],
                 videoSsrc: t,
                 videoSsrcs: this.remoteVideoSSRCs[e],
-                rtxSsrc: H(t),
+                rtxSsrc: j(t),
                 mute: this.getLocalMute(e),
                 volume: this.getLocalVolume(e),
               };
@@ -54340,8 +54410,8 @@ color: purple;
                 return {
                   vadThreshold: this.vadThreshold,
                   vadAutoThreshold: this.vadAutoThreshold
-                    ? b.VERY_AGGRESSIVE
-                    : b.DISABLED,
+                    ? v.VERY_AGGRESSIVE
+                    : v.DISABLED,
                   vadUseKrisp: this.vadUseKrisp,
                   vadLeading: this.vadLeading,
                   vadTrailing: this.vadTrailing,
@@ -54374,7 +54444,7 @@ color: purple;
                     "level-asymmetry-allowed": "1",
                     "packetization-mode": "1",
                     "profile-level-id":
-                      "android" === (0, v.lE)().platform ? "42e01f" : "4d0033",
+                      "android" === (0, P.lE)().platform ? "42e01f" : "4d0033",
                   };
           }
           getCodecOptions(e, t, n) {
@@ -54423,7 +54493,7 @@ color: purple;
                 (n.params["hardware-h264"] = this.useElectronVideo ? "1" : "0"),
                 this.experimentFlags.has(O.fd.USE_LIBOPENH264_DECODER))
               ) {
-                let e = (0, v.XH)();
+                let e = (0, P.XH)();
                 null != e &&
                   ((n.params.libopenh264 = "1"),
                   (n.params["libopenh264-path"] = e));
@@ -54450,7 +54520,7 @@ color: purple;
           getConnectionTransportOptions() {
             let e = {
               selfMute: this.selfMute,
-              inputMode: k[this.inputMode],
+              inputMode: F[this.inputMode],
               inputModeOptions: this.createInputModeOptions(),
               minimumJitterBufferLevel: this.minimumJitterBufferLevel,
               postponeDecodeLevel: this.postponeDecodeLevel,
@@ -54468,7 +54538,7 @@ color: purple;
               reconnectInterval: this.reconnectInterval,
             };
             return (
-              (0, v.$b)(F.VIDEO_EFFECTS) &&
+              (0, P.$b)(B.VIDEO_EFFECTS) &&
                 this.context === O.x.STREAM &&
                 (e.enableVideoEffects = !0),
               this.context === O.x.STREAM &&
@@ -54582,7 +54652,7 @@ color: purple;
                     });
                   })
                 : t > 0
-                  ? ((r[0].active = !0), (r[0].ssrc = t), (r[0].rtxSsrc = H(t)))
+                  ? ((r[0].active = !0), (r[0].ssrc = t), (r[0].rtxSsrc = j(t)))
                   : (r[0].active = !1)
               : t > 0 &&
                 (void 0 !== this.remoteVideoSSRCs[e]
@@ -54599,7 +54669,7 @@ color: purple;
                 null != n && "" !== n ? n : null,
                 e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e],
                 t,
-                H(t),
+                j(t),
                 this.videoStreamParameters,
               );
           };
@@ -54691,7 +54761,7 @@ color: purple;
                           ? a.noiseCancellerFrames - s.noiseCancellerFrames
                           : 0
                         : e;
-                  if (!(0, v.$b)(F.KRISP_NATIVE_ERROR)) {
+                  if (!(0, P.$b)(B.KRISP_NATIVE_ERROR)) {
                     if (
                       this.noiseCancellation &&
                       t > 50 &&
@@ -54775,11 +54845,13 @@ color: purple;
           }
           prepareMLSCommitTransition(e, t, n) {
             (this.lastPreparedTransitionId = e),
-              this.conn.prepareMLSCommitTransition?.(e, t, n);
+              this.conn.prepareMLSCommitTransition?.(e, t, (e, t, i) =>
+                n(e, t, b(i)),
+              );
           }
           processMLSWelcome(e, t, n) {
             (this.lastPreparedTransitionId = e),
-              this.conn.processMLSWelcome?.(e, t, n);
+              this.conn.processMLSWelcome?.(e, t, (e, t, i) => n(e, t, b(i)));
           }
           presentDesktopSourcePicker(e) {
             this.conn.presentDesktopSourcePicker?.(e);
@@ -54791,7 +54863,7 @@ color: purple;
             this.conn.mergeUsers(e), this.emit(u.y.UsersMerged, e);
           }
         }
-        function W(e, t) {
+        function Y(e, t) {
           let n = !1,
             i = t.map((t, i) => {
               let {
@@ -54845,24 +54917,24 @@ color: purple;
             i
           );
         }
-        function Y() {
-          return new Promise((e) => {
-            (0, v.lE)().getInputDevices((t) => e(W(O.oh.AUDIO_INPUT, t)));
-          });
-        }
         function K() {
           return new Promise((e) => {
-            (0, v.lE)().getOutputDevices((t) => e(W(O.oh.AUDIO_OUTPUT, t)));
+            (0, P.lE)().getInputDevices((t) => e(Y(O.oh.AUDIO_INPUT, t)));
+          });
+        }
+        function $() {
+          return new Promise((e) => {
+            (0, P.lE)().getOutputDevices((t) => e(Y(O.oh.AUDIO_OUTPUT, t)));
           });
         }
         n(667532);
-        var $ = n(477900),
-          X = n(582128),
-          z = n(503698),
-          q = n.n(z),
-          Q = n(229209);
-        let J = new c.Vy("DirectVideo");
-        function Z(e) {
+        var X = n(477900),
+          z = n(582128),
+          q = n(503698),
+          Q = n.n(q),
+          J = n(229209);
+        let Z = new c.Vy("DirectVideo");
+        function ee(e) {
           return (function (e, t) {
             let {
                 streamId: n,
@@ -54874,10 +54946,10 @@ color: purple;
                 className: o,
                 ...d
               } = e,
-              c = X.useRef(null),
-              u = X.useRef(null),
-              _ = X.useRef({ width: 0, height: 0 }),
-              E = X.useRef({
+              c = z.useRef(null),
+              u = z.useRef(null),
+              _ = z.useRef({ width: 0, height: 0 }),
+              E = z.useRef({
                 streamId: n,
                 paused: i,
                 onReady: r,
@@ -54885,7 +54957,7 @@ color: purple;
                 onContainerResized: t,
               });
             return (
-              X.useLayoutEffect(() => {
+              z.useLayoutEffect(() => {
                 let { current: e } = c,
                   t = new (
                     e?.ownerDocument?.defaultView ?? window
@@ -54922,16 +54994,16 @@ color: purple;
                       }
                     }),
                     n.addEventListener("canplaythrough", function () {
-                      J.info(
+                      Z.info(
                         `handleReady for ${E.current.streamId}, have onReady callback = ${null != E.current.onReady}`,
                       ),
                         E.current.onReady?.();
                     }),
-                    J.info(
+                    Z.info(
                       `create video element for ${E.current.streamId}, readyState=${n.readyState}`,
                     ),
                     n.readyState > 3 &&
-                      J.error(
+                      Z.error(
                         `video element for ${E.current.streamId} was ready before attached`,
                       ),
                     e.appendChild(n),
@@ -54940,20 +55012,20 @@ color: purple;
                     (u.current = n);
                 }
               }, [s]),
-              X.useLayoutEffect(() => (l?.(u.current), () => l?.(null)), [l]),
-              X.useEffect(() => {
+              z.useLayoutEffect(() => (l?.(u.current), () => l?.(null)), [l]),
+              z.useEffect(() => {
                 (E.current.streamId = n),
                   (E.current.paused = i),
                   (E.current.onReady = r),
                   (E.current.onResize = a);
               }),
-              X.useEffect(() => {
+              z.useEffect(() => {
                 let e = u.current;
                 if (null != e)
                   if (i) null != e.srcObject && (e.srcObject = null);
                   else {
-                    J.info(`attaching srcObject for ${n}`);
-                    let t = (0, Q.nz)(n);
+                    Z.info(`attaching srcObject for ${n}`);
+                    let t = (0, J.nz)(n);
                     return (
                       (e.srcObject = t.stream),
                       () => {
@@ -54962,34 +55034,34 @@ color: purple;
                     );
                   }
               }, [i, n]),
-              (0, $.jsx)("div", {
-                className: q()("media-engine-video", o),
+              (0, X.jsx)("div", {
+                className: Q()("media-engine-video", o),
                 ref: c,
                 ...d,
               })
             );
-          })(e, Z.onContainerResized);
+          })(e, ee.onContainerResized);
         }
-        function ee(e) {
+        function et(e) {
           let { disabled: t, deviceId: n, width: i, height: r } = e;
           return t
-            ? (0, $.jsx)("div", {
+            ? (0, X.jsx)("div", {
                 className: "media-engine-video",
                 style: { width: i, height: r },
               })
-            : (0, $.jsx)(Z, { streamId: n, style: { width: i, height: r } });
+            : (0, X.jsx)(ee, { streamId: n, style: { width: i, height: r } });
         }
-        J.enableNativeLogger(!0),
-          (Z.onContainerResized = (e, t, n) => {}),
-          (ee.defaultProps = { disabled: !1, width: 320, height: 180 });
-        var et = n(264572).hp;
-        function en(e) {
+        Z.enableNativeLogger(!0),
+          (ee.onContainerResized = (e, t, n) => {}),
+          (et.defaultProps = { disabled: !1, width: 320, height: 180 });
+        var en = n(264572).hp;
+        function ei(e) {
           if (null != e)
             return Math.round((6e3 * Math.min(100, Math.max(10, e))) / 100);
         }
-        class ei extends d.A {
-          Video = Z;
-          Camera = ee;
+        class er extends d.A {
+          Video = ee;
+          Camera = et;
           audioInputDeviceId = O.qe;
           audioOutputDeviceId = O.qe;
           videoInputDeviceId = O.qe;
@@ -55011,7 +55083,7 @@ color: purple;
             var e;
             let t;
             super(), this.logger.enableNativeLogger(!0);
-            let n = (0, v.lE)();
+            let n = (0, P.lE)();
             n.setDeviceChangeCallback(this.handleDeviceChange),
               n.setVolumeChangeCallback(this.handleVolumeChange),
               n.setOnVoiceCallback(this.handleVoiceActivity),
@@ -55047,8 +55119,8 @@ color: purple;
               ),
               this.on("removeListener", this.handleRemoveListener),
               this.on("newListener", this.handleNewListener),
-              null != (0, v.lE)().getAudioSubsystem &&
-                (0, v.lE)().getAudioSubsystem((e, t) => {
+              null != (0, P.lE)().getAudioSubsystem &&
+                (0, P.lE)().getAudioSubsystem((e, t) => {
                   (this.audioSubsystem = e), (this.audioLayer = t);
                 }),
               null != n.pingVoiceThread && this.watchdogTick(),
@@ -55064,7 +55136,7 @@ color: purple;
               e.on(_.b.Destroy, () => (t = !0)),
               setTimeout(async function n() {
                 if (t) return;
-                let i = (0, v.lE)(),
+                let i = (0, P.lE)(),
                   r = await new Promise((e) => {
                     i.pollQueueMetrics?.((t) => {
                       e(t);
@@ -55082,7 +55154,7 @@ color: purple;
           }
           interact() {}
           static supported() {
-            return (0, v.$j)();
+            return (0, P.$j)();
           }
           supported() {
             return !0;
@@ -55090,99 +55162,99 @@ color: purple;
           supports(e) {
             switch (e) {
               case O.O5.LEGACY_AUDIO_SUBSYSTEM:
-                return (0, v.$b)(F.VOICE_LEGACY_SUBSYSTEM);
+                return (0, P.$b)(B.VOICE_LEGACY_SUBSYSTEM);
               case O.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM:
-                return (0, v.$b)(F.VOICE_EXPERIMENTAL_SUBSYSTEM);
+                return (0, P.$b)(B.VOICE_EXPERIMENTAL_SUBSYSTEM);
               case O.O5.AUTOMATIC_AUDIO_SUBSYSTEM:
-                return (0, v.$b)(F.VOICE_AUTOMATIC_SUBSYSTEM);
+                return (0, P.$b)(B.VOICE_AUTOMATIC_SUBSYSTEM);
               case O.O5.AUDIO_SUBSYSTEM_DEFERRED_SWITCH:
-                return (0, v.$b)(F.VOICE_SUBSYSTEM_DEFERRED_SWITCH);
+                return (0, P.$b)(B.VOICE_SUBSYSTEM_DEFERRED_SWITCH);
               case O.O5.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING:
-                return (0, v.$b)(F.VOICE_BYPASS_SYSTEM_AUDIO_INPUT_PROCESSING);
+                return (0, P.$b)(B.VOICE_BYPASS_SYSTEM_AUDIO_INPUT_PROCESSING);
               case O.O5.DEBUG_LOGGING:
-                return (0, v.$b)(F.DEBUG_LOGGING);
+                return (0, P.$b)(B.DEBUG_LOGGING);
               case O.O5.SOUNDSHARE:
-                return (0, v.$b)(F.SOUNDSHARE);
+                return (0, P.$b)(B.SOUNDSHARE);
               case O.O5.SCREEN_SOUNDSHARE:
-                return (0, v.$b)(F.SCREEN_SOUNDSHARE);
+                return (0, P.$b)(B.SCREEN_SOUNDSHARE);
               case O.O5.ELEVATED_HOOK:
-                return (0, v.$b)(F.ELEVATED_HOOK);
+                return (0, P.$b)(B.ELEVATED_HOOK);
               case O.O5.LOOPBACK:
-                return (0, v.$b)(F.LOOPBACK);
+                return (0, P.$b)(B.LOOPBACK);
               case O.O5.WUMPUS_VIDEO:
-                return (0, v.$b)(F.WUMPUS_VIDEO);
+                return (0, P.$b)(B.WUMPUS_VIDEO);
               case O.O5.HYBRID_VIDEO:
-                return (0, v.$b)(F.HYBRID_VIDEO);
+                return (0, P.$b)(B.HYBRID_VIDEO);
               case O.O5.ATTENUATION:
               case O.O5.VIDEO_HOOK:
                 return l()?.os?.family != null && /^win/i.test(l().os.family);
               case O.O5.EXPERIMENTAL_SOUNDSHARE:
-                return (0, v.$b)(F.SOUNDSHARE_LOOPBACK);
+                return (0, P.$b)(B.SOUNDSHARE_LOOPBACK);
               case O.O5.REMOTE_LOCUS_NETWORK_CONTROL:
-                return (0, v.$b)(F.REMOTE_LOCUS_NETWORK_CONTROL);
+                return (0, P.$b)(B.REMOTE_LOCUS_NETWORK_CONTROL);
               case O.O5.SCREEN_PREVIEWS:
-                return (0, v.$b)(F.SCREEN_PREVIEWS);
+                return (0, P.$b)(B.SCREEN_PREVIEWS);
               case O.O5.CLIPS:
-                return (0, v.$b)(F.CLIPS);
+                return (0, P.$b)(B.CLIPS);
               case O.O5.CLIPS_RECORDING_READY_EVENTS:
-                return (0, v.$b)(F.CLIPS_RECORDING_READY_EVENTS);
+                return (0, P.$b)(B.CLIPS_RECORDING_READY_EVENTS);
               case O.O5.UNIFIED_CAPTURE_BROKER:
-                return (0, v.$b)(F.UNIFIED_CAPTURE_BROKER);
+                return (0, P.$b)(B.UNIFIED_CAPTURE_BROKER);
               case O.O5.CONJURE_SNAPSHOT:
-                return (0, v.$b)(F.CONJURE_SNAPSHOT);
+                return (0, P.$b)(B.CONJURE_SNAPSHOT);
               case O.O5.WINDOW_PREVIEWS:
-                return (0, v.$b)(F.WINDOW_PREVIEWS);
+                return (0, P.$b)(B.WINDOW_PREVIEWS);
               case O.O5.AUDIO_DEBUG_STATE:
-                return (0, v.$b)(F.AUDIO_DEBUG_STATE);
+                return (0, P.$b)(B.AUDIO_DEBUG_STATE);
               case O.O5.CONNECTION_REPLAY:
-                return (0, v.$b)(F.CONNECTION_REPLAY);
+                return (0, P.$b)(B.CONNECTION_REPLAY);
               case O.O5.SIMULCAST:
-                return (0, v.$b)(F.SIMULCAST) && (0, v.$b)(F.SIMULCAST_BUGFIX);
+                return (0, P.$b)(B.SIMULCAST) && (0, P.$b)(B.SIMULCAST_BUGFIX);
               case O.O5.RTC_REGION_RANKING:
-                return (0, v.$b)(F.RTC_REGION_RANKING);
+                return (0, P.$b)(B.RTC_REGION_RANKING);
               case O.O5.ELECTRON_VIDEO:
-                return (0, v.$b)(F.ELECTRON_VIDEO);
+                return (0, P.$b)(B.ELECTRON_VIDEO);
               case O.O5.MEDIAPIPE:
-                return (0, v.$b)(F.MEDIAPIPE);
+                return (0, P.$b)(B.MEDIAPIPE);
               case O.O5.VIDEO_BACKGROUND_FILTER:
                 return (
-                  ((0, o.xl)() && (0, v.$b)(F.MEDIAPIPE)) ||
-                  (0, v.$b)(F.VIDEO_BACKGROUND_FILTER)
+                  ((0, o.xl)() && (0, P.$b)(B.MEDIAPIPE)) ||
+                  (0, P.$b)(B.VIDEO_BACKGROUND_FILTER)
                 );
               case O.O5.FIXED_KEYFRAME_INTERVAL:
-                return (0, v.$b)(F.FIXED_KEYFRAME_INTERVAL);
+                return (0, P.$b)(B.FIXED_KEYFRAME_INTERVAL);
               case O.O5.FIRST_FRAME_CALLBACK:
-                return (0, v.$b)(F.FIRST_FRAME_CALLBACK);
+                return (0, P.$b)(B.FIRST_FRAME_CALLBACK);
               case O.O5.REMOTE_USER_MULTI_STREAM:
-                return (0, v.$b)(F.REMOTE_USER_MULTI_STREAM);
+                return (0, P.$b)(B.REMOTE_USER_MULTI_STREAM);
               case O.O5.IMAGE_QUALITY_MEASUREMENT:
-                return (0, v.$b)(F.IMAGE_QUALITY_MEASUREMENT);
+                return (0, P.$b)(B.IMAGE_QUALITY_MEASUREMENT);
               case O.O5.GO_LIVE_HARDWARE:
-                return (0, v.$b)(F.GO_LIVE_HARDWARE);
+                return (0, P.$b)(B.GO_LIVE_HARDWARE);
               case O.O5.SCREEN_CAPTURE_KIT:
-                return (0, v.$b)(F.SCREEN_CAPTURE_KIT);
+                return (0, P.$b)(B.SCREEN_CAPTURE_KIT);
               case O.O5.NATIVE_SCREENSHARE_PICKER:
-                return (0, v.$b)(F.NATIVE_SCREENSHARE_PICKER);
+                return (0, P.$b)(B.NATIVE_SCREENSHARE_PICKER);
               case O.O5.DAVE_PAIRWISE_FINGERPRINT:
-                return (0, v.$b)(F.DAVE_PAIRWISE_FINGERPRINT);
+                return (0, P.$b)(B.DAVE_PAIRWISE_FINGERPRINT);
               case O.O5.OFFLOAD_ADM_CONTROLS:
-                return (0, v.$b)(F.OFFLOAD_ADM_CONTROLS);
+                return (0, P.$b)(B.OFFLOAD_ADM_CONTROLS);
               case O.O5.VAAPI:
-                return (0, v.$b)(F.VAAPI);
+                return (0, P.$b)(B.VAAPI);
               case O.O5.GAMESCOPE_CAPTURE:
-                return (0, v.$b)(F.GAMESCOPE_CAPTURE);
+                return (0, P.$b)(B.GAMESCOPE_CAPTURE);
               case O.O5.ASYNC_VIDEO_INPUT_DEVICE_INIT:
-                return (0, v.$b)(F.ASYNC_VIDEO_INPUT_DEVICE_INIT);
+                return (0, P.$b)(B.ASYNC_VIDEO_INPUT_DEVICE_INIT);
               case O.O5.PORT_AWARE_LATENCY_TESTING:
-                return (0, v.$b)(F.PORT_AWARE_LATENCY_TESTING);
+                return (0, P.$b)(B.PORT_AWARE_LATENCY_TESTING);
               case O.O5.SPATIAL_AUDIO:
-                return (0, v.$b)(F.SPATIAL_AUDIO);
+                return (0, P.$b)(B.SPATIAL_AUDIO);
               case O.O5.KRISP_NATIVE_ERROR:
-                return (0, v.$b)(F.KRISP_NATIVE_ERROR);
+                return (0, P.$b)(B.KRISP_NATIVE_ERROR);
               case O.O5.UDP_ENDPOINT_UPDATE:
-                return (0, v.$b)(F.UDP_ENDPOINT_UPDATE);
+                return (0, P.$b)(B.UDP_ENDPOINT_UPDATE);
               case O.O5.ACTIVITY_CAPTURE:
-                return (0, v.$b)(F.ACTIVITY_CAPTURE);
+                return (0, P.$b)(B.ACTIVITY_CAPTURE);
               case O.O5.DIAGNOSTICS:
               case O.O5.NATIVE_PING:
               case O.O5.AUTOMATIC_VAD:
@@ -55208,8 +55280,8 @@ color: purple;
             }
           }
           connect(e, t, n) {
-            (0, v.$b)(F.EXPERIMENT_CONFIG) || (n.experiments = void 0);
-            let i = j.create(
+            (0, P.$b)(B.EXPERIMENT_CONFIG) || (n.experiments = void 0);
+            let i = W.create(
               e,
               t,
               n,
@@ -55219,8 +55291,8 @@ color: purple;
               i.on(u.y.Destroy, (e) => {
                 this.connections.delete(e),
                   this.connectionsEmpty() &&
-                    ((0, v.i0)(O.E6.NORMAL),
-                    (0, v.lE)().setNativeThreadsPriority?.(0));
+                    ((0, P.i0)(O.E6.NORMAL),
+                    (0, P.lE)().setNativeThreadsPriority?.(0));
               }),
               i.on(u.y.Connected, () => {
                 i.setVideoBroadcast(this.shouldConnectionBroadcastVideo(i));
@@ -55229,9 +55301,9 @@ color: purple;
                 this.emit(_.b.Silence, e);
               }),
               this.connections.add(i),
-              (0, v.i0)(n.processPriority ?? O.E6.HIGH),
+              (0, P.i0)(n.processPriority ?? O.E6.HIGH),
               null != n.threadPriorityConfiguration &&
-                (0, v.lE)().setNativeThreadsPriority?.(
+                (0, P.lE)().setNativeThreadsPriority?.(
                   n.threadPriorityConfiguration,
                 ),
               this.emit(_.b.Connection, i),
@@ -55253,19 +55325,19 @@ color: purple;
             return Promise.resolve();
           }
           setAudioMixerOptions(e) {
-            (0, v.$b)(F.SPATIAL_AUDIO) &&
-              (0, v.lE)().setTransportOptions({ audioMixerOptions: e });
+            (0, P.$b)(B.SPATIAL_AUDIO) &&
+              (0, P.lE)().setTransportOptions({ audioMixerOptions: e });
           }
           getSpatialAudioHrtfFiles() {
-            return (0, v.$b)(F.SPATIAL_AUDIO)
-              ? ((0, v.lE)().getSpatialAudioHrtfFiles?.() ?? {
+            return (0, P.$b)(B.SPATIAL_AUDIO)
+              ? ((0, P.lE)().getSpatialAudioHrtfFiles?.() ?? {
                   directory: null,
                   files: [],
                 })
               : { directory: null, files: [] };
           }
           getSpatialAudioVersion() {
-            return (0, v.lE)().getSpatialAudioVersion?.() ?? 0;
+            return (0, P.lE)().getSpatialAudioVersion?.() ?? 0;
           }
           getSpatialAudioStats() {
             let e =
@@ -55273,8 +55345,8 @@ color: purple;
               void 0 === arguments[0] ||
               arguments[0];
             return new Promise((t) => {
-              let n = (0, v.lE)();
-              (0, v.$b)(F.SPATIAL_AUDIO) && null != n.getSpatialAudioStats
+              let n = (0, P.lE)();
+              (0, P.$b)(B.SPATIAL_AUDIO) && null != n.getSpatialAudioStats
                 ? n.getSpatialAudioStats((e) => {
                     try {
                       t(JSON.parse(e));
@@ -55286,66 +55358,66 @@ color: purple;
             });
           }
           setAudioInputBypassSystemProcessing(e) {
-            (0, v.lE)().setTransportOptions({ bypassSystemProcessing: e });
+            (0, P.lE)().setTransportOptions({ bypassSystemProcessing: e });
           }
           setAudioOutputBufferDurationMs(e) {
-            (0, v.lE)().setTransportOptions({
+            (0, P.lE)().setTransportOptions({
               windowsOutputBufferDurationMs: e,
             });
           }
           setInputVolume(e) {
-            (0, v.lE)().setInputVolume((e ?? 100) / 100);
+            (0, P.lE)().setInputVolume((e ?? 100) / 100);
           }
           setOutputVolume(e) {
-            (0, v.lE)().setOutputVolume((e ?? 100) / 100);
+            (0, P.lE)().setOutputVolume((e ?? 100) / 100);
           }
           getAudioInputDevices() {
-            return Y();
+            return K();
           }
           getNoiseCancellationStats() {
             return new Promise((e) => {
-              let t = (0, v.lE)();
+              let t = (0, P.lE)();
               null == t.getNoiseCancellationStats
                 ? e(null)
                 : t.getNoiseCancellationStats((t) => e(JSON.parse(t)));
             });
           }
           setNoiseCancellationEnableStats(e) {
-            (0, v.lE)().setNoiseCancellationEnableStats?.(e);
+            (0, P.lE)().setNoiseCancellationEnableStats?.(e);
           }
           setAudioInputDevice(e) {
             let t = this.audioInputDeviceId;
             (this.audioInputDeviceId = e),
-              (0, v.$b)(F.SET_AUDIO_DEVICE_BY_ID)
-                ? (0, v.lE)().setInputDevice(e)
+              (0, P.$b)(B.SET_AUDIO_DEVICE_BY_ID)
+                ? (0, P.lE)().setInputDevice(e)
                 : this.setAudioInputDeviceByIndex(e),
               this.emit(_.b.SelectedDeviceChange, O.oh.AUDIO_INPUT, t, e);
           }
           async setAudioInputDeviceByIndex(e) {
-            let t = await Y(),
+            let t = await K(),
               n = t.find((t) => t.id === e) ?? t[0];
-            null != n && (0, v.lE)().setInputDevice(n.index);
+            null != n && (0, P.lE)().setInputDevice(n.index);
           }
           getAudioOutputDevices() {
-            return K();
+            return $();
           }
           setAudioOutputDevice(e) {
             let t = this.audioOutputDeviceId;
             (this.audioOutputDeviceId = e),
-              (0, v.$b)(F.SET_AUDIO_DEVICE_BY_ID)
-                ? (0, v.lE)().setOutputDevice(e)
+              (0, P.$b)(B.SET_AUDIO_DEVICE_BY_ID)
+                ? (0, P.lE)().setOutputDevice(e)
                 : this.setAudioOutputDeviceByIndex(e),
               this.emit(_.b.SelectedDeviceChange, O.oh.AUDIO_OUTPUT, t, e);
           }
           async setAudioOutputDeviceByIndex(e) {
-            let t = await K(),
+            let t = await $(),
               n = t.find((t) => t.id === e) ?? t[0];
-            null != n && (0, v.lE)().setOutputDevice(n.index);
+            null != n && (0, P.lE)().setOutputDevice(n.index);
           }
           getVideoInputDevices() {
             return new Promise((e) => {
-              (0, v.lE)().getVideoInputDevices((t) =>
-                e(W(O.oh.VIDEO_INPUT, t)),
+              (0, P.lE)().getVideoInputDevices((t) =>
+                e(Y(O.oh.VIDEO_INPUT, t)),
               );
             });
           }
@@ -55355,7 +55427,7 @@ color: purple;
             if (n !== this.videoInputDeviceId) {
               if (
                 ((this.videoInputDeviceId = n),
-                (0, v.$b)(F.SET_VIDEO_DEVICE_BY_ID))
+                (0, P.$b)(B.SET_VIDEO_DEVICE_BY_ID))
               ) {
                 let e =
                   null != t
@@ -55363,8 +55435,8 @@ color: purple;
                       ? t.originalId
                       : t.id
                     : O.qe;
-                (0, v.lE)().setVideoInputDevice(e);
-              } else (0, v.lE)().setVideoInputDevice(null != t ? t.index : -1);
+                (0, P.lE)().setVideoInputDevice(e);
+              } else (0, P.lE)().setVideoInputDevice(null != t ? t.index : -1);
               this.connections.forEach((e) =>
                 e.setVideoBroadcast(this.shouldConnectionBroadcastVideo(e)),
               );
@@ -55374,11 +55446,11 @@ color: purple;
             return this.videoInputDeviceId;
           }
           setAsyncVideoInputDeviceInit(e) {
-            (0, v.lE)().setAsyncVideoInputDeviceInitSetting?.(e),
-              (0, v.lE)().setAsyncVideoInputDeviceInit?.(e);
+            (0, P.lE)().setAsyncVideoInputDeviceInitSetting?.(e),
+              (0, P.lE)().setAsyncVideoInputDeviceInit?.(e);
           }
           getCodecCapabilities(e) {
-            (0, v.lE)().getCodecCapabilities(e);
+            (0, P.lE)().getCodecCapabilities(e);
           }
           setGoLiveSource(e, t) {
             null == e
@@ -55397,7 +55469,7 @@ color: purple;
                 }, t);
           }
           setClipsSource(e) {
-            let t = (0, v.lE)();
+            let t = (0, P.lE)();
             if (
               null == t.setClipsSource ||
               null == t.setOnClipsRecordingEvent ||
@@ -55437,7 +55509,7 @@ color: purple;
                 frameRate: n,
                 width: i <= 480 ? (i / 3) * 4 : (i / 9) * 16,
                 height: i,
-                bitrateKbps: en(e.bitratePercent),
+                bitrateKbps: ei(e.bitratePercent),
                 videoEncoderExperiments: e.videoEncoderExperiments,
                 minCaptureWidth: E,
                 minCaptureHeight: A,
@@ -55446,7 +55518,7 @@ color: purple;
             t.setClipsSource({ id: h, soundshareId: null != a ? a : 0 });
           }
           startSnapshotCapture(e, t) {
-            let n = (0, v.lE)();
+            let n = (0, P.lE)();
             null != n.startSnapshotCapture &&
               null != n.signalSnapshotProcessed &&
               n.startSnapshotCapture(
@@ -55474,10 +55546,10 @@ color: purple;
               );
           }
           stopSnapshotCapture() {
-            (0, v.lE)().stopSnapshotCapture?.();
+            (0, P.lE)().stopSnapshotCapture?.();
           }
           setSnapshotSource(e) {
-            let t = (0, v.lE)();
+            let t = (0, P.lE)();
             if (null == t.setSnapshotSource) return;
             if (null == e) return void t.setSnapshotSource({ id: "" });
             let {
@@ -55500,14 +55572,14 @@ color: purple;
             });
           }
           getSnapshotStats() {
-            let e = (0, v.lE)();
+            let e = (0, P.lE)();
             return e.getSnapshotStats?.() ?? Promise.resolve(null);
           }
           setClipsQualitySettings(e, t, n, i) {
-            let r = (0, v.lE)();
+            let r = (0, P.lE)();
             if (null == r.applyClipsQualitySettings) return !1;
             r.applyClipsQualitySettings(e, t, n);
-            let a = en(i);
+            let a = ei(i);
             return (
               null != a &&
                 null != r.applyClipsSettings &&
@@ -55525,12 +55597,12 @@ color: purple;
             return Promise.reject(Error("NO_STREAM"));
           }
           getScreenPreviews(e, t, n) {
-            let i = (0, v.lE)();
+            let i = (0, P.lE)();
             return (
               null != i.setPreviewsUseWgc && i.setPreviewsUseWgc(n),
               new Promise((n) => {
-                null != (0, v.lE)().getScreenPreviews
-                  ? (0, v.lE)().getScreenPreviews(e, t, (e) => {
+                null != (0, P.lE)().getScreenPreviews
+                  ? (0, P.lE)().getScreenPreviews(e, t, (e) => {
                       n(e.map((e, t) => ({ ...e, name: "Screen " + (t + 1) })));
                     })
                   : n([]);
@@ -55539,22 +55611,22 @@ color: purple;
           }
           setClipsModulePath(e) {
             this.registerClipsRecordingEventHandler(),
-              (0, v.lE)().setClipsModulePath?.(e);
+              (0, P.lE)().setClipsModulePath?.(e);
           }
           setClipsDataPath(e) {
-            (0, v.lE)().setClipsDataPath?.(e);
+            (0, P.lE)().setClipsDataPath?.(e);
           }
           setClipsSentryConfig(e, t, n) {
-            (0, v.lE)().setClipsSentryConfig?.(e, t, n);
+            (0, P.lE)().setClipsSentryConfig?.(e, t, n);
           }
           watchDeviceHardwareMutedChange(e) {
-            (0, v.lE)().setDeviceHardwareMutedChangeCallback?.(
+            (0, P.lE)().setDeviceHardwareMutedChangeCallback?.(
               e,
               this.handleDeviceHardwareMutedChange,
             );
           }
           hasClipsV3Support() {
-            let e = (0, v.lE)();
+            let e = (0, P.lE)();
             return (
               null != e.setClipsModulePath &&
               null != e.setClipsRecordingEnabled &&
@@ -55562,7 +55634,7 @@ color: purple;
             );
           }
           registerClipsRecordingEventHandler() {
-            let e = (0, v.lE)();
+            let e = (0, P.lE)();
             null == e.setOnClipsRecordingEvent ||
               this.clipsRecordingEventHandlerRegistered ||
               ((this.clipsRecordingEventHandlerRegistered = !0),
@@ -55573,11 +55645,11 @@ color: purple;
                   applicationName: r,
                 } = this.clipsRecordingEventContext;
                 this.logger.info(
-                  `Clips recording event: ${B[e]} received for stream ${n} and sound ${i}.`,
+                  `Clips recording event: ${V[e]} received for stream ${n} and sound ${i}.`,
                 ),
-                  e === B.GoLiveEnded
+                  e === V.GoLiveEnded
                     ? this.emit(_.b.ClipsRecordingRestartNeeded)
-                    : e === B.Error
+                    : e === V.Error
                       ? this.emit(
                           _.b.ClipsInitFailure,
                           null != t && "" !== t
@@ -55585,41 +55657,41 @@ color: purple;
                             : "Failed to set clips source in media engine",
                           r,
                         )
-                      : e === B.IdleShutdown
+                      : e === V.IdleShutdown
                         ? this.emit(_.b.ClipsBridgeIdleShutdown)
-                        : e === B.RecordingHealthy
+                        : e === V.RecordingHealthy
                           ? this.emit(_.b.ClipsRecordingHealthy)
-                          : e === B.RecordingActive
+                          : e === V.RecordingActive
                             ? this.emit(_.b.ClipsRecordingReadyChanged, !0)
-                            : e === B.RecordingInactive
+                            : e === V.RecordingInactive
                               ? this.emit(_.b.ClipsRecordingReadyChanged, !1)
-                              : (e === B.Ended || e === B.StoppedByGoLive) &&
+                              : (e === V.Ended || e === V.StoppedByGoLive) &&
                                 this.emit(_.b.ClipsRecordingEnded, n, i);
               }));
           }
           setClipsUIActive(e) {
-            (0, v.lE)().setClipsUIActive?.(e);
+            (0, P.lE)().setClipsUIActive?.(e);
           }
           setClipsV3MLEnabled(e) {
-            (0, v.lE)().setClipsV3MLEnabled?.(e);
+            (0, P.lE)().setClipsV3MLEnabled?.(e);
           }
           setClipsAudioModelOverride(e) {
-            (0, v.lE)().setClipsAudioModelOverride?.(e);
+            (0, P.lE)().setClipsAudioModelOverride?.(e);
           }
           setClipsRecordingEnabled(e) {
-            (0, v.lE)().setClipsRecordingEnabled?.(e);
+            (0, P.lE)().setClipsRecordingEnabled?.(e);
           }
           setClipsCaptureOverrides(e) {
-            (0, v.lE)().applyClipsSettings?.({ captureOverrides: e });
+            (0, P.lE)().applyClipsSettings?.({ captureOverrides: e });
           }
           setClipBufferLength(e) {
-            (0, v.lE)().setClipBufferLength?.(e);
+            (0, P.lE)().setClipBufferLength?.(e);
           }
           getSystemSteadyClockNowMs() {
-            return (0, v.lE)().getSystemSteadyClockNowMs?.() ?? null;
+            return (0, P.lE)().getSystemSteadyClockNowMs?.() ?? null;
           }
           saveClipEx(e) {
-            let t = (0, v.lE)();
+            let t = (0, P.lE)();
             return new Promise((n, i) => {
               function r(e, t, i, r) {
                 let a;
@@ -55686,7 +55758,7 @@ color: purple;
                       a,
                       o,
                     )
-                  : (0, v.$b)(F.CLIPS_THUMBNAIL)
+                  : (0, P.$b)(B.CLIPS_THUMBNAIL)
                     ? t.saveClipForUser?.(E, s, l, f, a, o)
                     : t.saveClipForUser?.(E, s, l, f, a)
                 : null != t.saveClipWithTime
@@ -55701,13 +55773,13 @@ color: purple;
                       a,
                       o,
                     )
-                  : (0, v.$b)(F.CLIPS_THUMBNAIL)
+                  : (0, P.$b)(B.CLIPS_THUMBNAIL)
                     ? t.saveClip?.(s, l, f, a, o)
                     : t.saveClip?.(s, l, f, a);
             });
           }
           updateClipMetadata(e, t) {
-            let n = (0, v.lE)();
+            let n = (0, P.lE)();
             return null == n.updateClipMetadata
               ? Promise.reject("unsupported")
               : new Promise((i, r) => {
@@ -55715,7 +55787,7 @@ color: purple;
                 });
           }
           saveScreenshot(e, t, n, i, r) {
-            let a = (0, v.lE)();
+            let a = (0, P.lE)();
             return null == a.saveScreenshot
               ? Promise.reject("unsupported")
               : new Promise((s, l) => {
@@ -55726,18 +55798,18 @@ color: purple;
                     n,
                     r ?? 0,
                     (e) => {
-                      s(et.from(e));
+                      s(en.from(e));
                     },
                     l,
                   );
                 });
           }
           setClipsPerfMonitoring(e, t, n) {
-            let i = (0, v.lE)().setClipsPerfMonitoring;
+            let i = (0, P.lE)().setClipsPerfMonitoring;
             return null == i ? Promise.reject("unsupported") : i(e, t, n);
           }
           exportClipToFile(e, t, n) {
-            let i = (0, v.lE)().exportClipToFile;
+            let i = (0, P.lE)().exportClipToFile;
             return null == i
               ? Promise.reject("unsupported")
               : new Promise((r, a) => {
@@ -55757,12 +55829,12 @@ color: purple;
                 });
           }
           getWindowPreviews(e, t, n) {
-            let i = (0, v.lE)();
+            let i = (0, P.lE)();
             return (
               null != i.setPreviewsUseWgc && i.setPreviewsUseWgc(n),
               new Promise((n) => {
-                null != (0, v.lE)().getWindowPreviews
-                  ? (0, v.lE)().getWindowPreviews(e, t, (e) => {
+                null != (0, P.lE)().getWindowPreviews
+                  ? (0, P.lE)().getWindowPreviews(e, t, (e) => {
                       n(e);
                     })
                   : n([]);
@@ -55770,29 +55842,29 @@ color: purple;
             );
           }
           async getSingleWindowPreview(e, t, n, i) {
-            let r = (0, v.lE)();
+            let r = (0, P.lE)();
             if (
               (null != r.setPreviewsUseWgc && r.setPreviewsUseWgc(i),
-              null != (0, v.lE)().getSingleWindowPreview)
+              null != (0, P.lE)().getSingleWindowPreview)
             ) {
-              let i = await (0, v.lE)().getSingleWindowPreview(e, t, n);
+              let i = await (0, P.lE)().getSingleWindowPreview(e, t, n);
               return i.length > 0 ? i[0] : null;
             }
             return null;
           }
           setAudioSubsystem(e) {
-            null != (0, v.lE)().setAudioSubsystem &&
-              (0, v.lE)().setAudioSubsystem(e);
+            null != (0, P.lE)().setAudioSubsystem &&
+              (0, P.lE)().setAudioSubsystem(e);
           }
           setOffloadAdmControls(e) {
-            let t = (0, v.lE)();
+            let t = (0, P.lE)();
             null != t.setOffloadAdmControls && t.setOffloadAdmControls(e);
           }
           updateFieldTrial(e, t) {
-            (0, v.lE)().updateFieldTrial?.(e, t);
+            (0, P.lE)().updateFieldTrial?.(e, t);
           }
           queueAudioSubsystem(e) {
-            let t = (0, v.lE)();
+            let t = (0, P.lE)();
             null != t.queueAudioSubsystem
               ? t.queueAudioSubsystem(e)
               : this.setAudioSubsystem(e);
@@ -55806,15 +55878,15 @@ color: purple;
           getDebugLogging() {
             return (
               !!this.supports(O.O5.DEBUG_LOGGING) &&
-              (0, v.lE)().getDebugLogging()
+              (0, P.lE)().getDebugLogging()
             );
           }
           setDebugLogging(e) {
-            this.supports(O.O5.DEBUG_LOGGING) && (0, v.lE)().setDebugLogging(e);
+            this.supports(O.O5.DEBUG_LOGGING) && (0, P.lE)().setDebugLogging(e);
           }
           setLoopback(e, t) {
-            null != (0, v.lE)().setLoopback &&
-              (0, v.lE)().setLoopback(e, {
+            null != (0, P.lE)().setLoopback &&
+              (0, P.lE)().setLoopback(e, {
                 echoCancellation: t.echoCancellation,
                 noiseSuppression: t.noiseSuppression,
                 automaticGainControl: t.automaticGainControlConfig?.enabled,
@@ -55823,11 +55895,11 @@ color: purple;
                 noiseCancellationDuringProcessing:
                   t.noiseCancellationDuringProcessing,
               }),
-              null != (0, v.lE)().setEmitVADLevel2
-                ? (0, v.lE)().setEmitVADLevel2(
+              null != (0, P.lE)().setEmitVADLevel2
+                ? (0, P.lE)().setEmitVADLevel2(
                     e || this.listenerCount(_.b.VoiceActivity) > 0,
                   )
-                : (0, v.lE)().setEmitVADLevel(
+                : (0, P.lE)().setEmitVADLevel(
                     e || this.listenerCount(_.b.VoiceActivity) > 0,
                     e,
                     {
@@ -55848,7 +55920,7 @@ color: purple;
             return null != this.codecSurvey
               ? Promise.resolve(this.codecSurvey)
               : new Promise((e, t) => {
-                  let n = (0, v.lE)();
+                  let n = (0, P.lE)();
                   null != n.getCodecSurvey
                     ? n.getCodecSurvey((t) => {
                         (this.codecSurvey = t), e(t);
@@ -55858,7 +55930,7 @@ color: purple;
           }
           writeAudioDebugState() {
             return new Promise((e, t) => {
-              let { writeAudioDebugState: n } = (0, v.lE)();
+              let { writeAudioDebugState: n } = (0, P.lE)();
               null != n
                 ? (n(), e())
                 : t(Error("Audio debug state is not supported."));
@@ -55867,53 +55939,53 @@ color: purple;
           startAecDump() {}
           stopAecDump() {}
           setAecDump(e) {
-            (0, v.lE)().setAecDump?.(e);
+            (0, P.lE)().setAecDump?.(e);
           }
           startRecordingRawSamples(e) {
-            (0, v.lE)().startRecordingRawSamples?.(e);
+            (0, P.lE)().startRecordingRawSamples?.(e);
           }
           stopRecordingRawSamples() {
-            (0, v.lE)().stopRecordingRawSamples?.();
+            (0, P.lE)().stopRecordingRawSamples?.();
           }
           processBatchAudioFiles(e, t, n, i) {
-            (0, v.lE)().processBatchAudioFiles?.(e, t, n, i);
+            (0, P.lE)().processBatchAudioFiles?.(e, t, n, i);
           }
           cancelBatchAudioProcessing() {
-            (0, v.lE)().cancelBatchAudioProcessing?.();
+            (0, P.lE)().cancelBatchAudioProcessing?.();
           }
           rankRtcRegions(e) {
             return new Promise((t, n) => {
-              let { rankRtcRegions: i } = (0, v.lE)();
+              let { rankRtcRegions: i } = (0, P.lE)();
               null != i
                 ? i(e, (e) => t(e))
                 : n(Error("RTC region latency test is not supported."));
             });
           }
           createReplayConnection(e, t) {
-            let n = j.createReplay(e, t);
+            let n = W.createReplay(e, t);
             return null == n
               ? null
               : (n.on(u.y.Destroy, (e) => {
                   this.connections.delete(e),
-                    this.connectionsEmpty() && (0, v.i0)(O.E6.NORMAL);
+                    this.connectionsEmpty() && (0, P.i0)(O.E6.NORMAL);
                 }),
                 this.connections.add(n),
-                (0, v.i0)(O.E6.HIGH),
+                (0, P.i0)(O.E6.HIGH),
                 this.emit(_.b.Connection, n),
                 n);
           }
           setOnVideoContainerResized(e) {
-            Z.onContainerResized = e;
+            ee.onContainerResized = e;
           }
           setMaxSyncDelayOverride(e) {
-            let { setMaxSyncDelayOverride: t } = (0, v.lE)();
+            let { setMaxSyncDelayOverride: t } = (0, P.lE)();
             null != t && t(e);
           }
           applyMediaFilterSettings(e) {
             let {
               applyMediaFilterSettings: t,
               applyMediaFilterSettingsWithCallback: n,
-            } = (0, v.lE)();
+            } = (0, P.lE)();
             return null != n
               ? new Promise((t, i) => {
                   n(e, t);
@@ -55922,7 +55994,7 @@ color: purple;
           }
           startLocalAudioRecording(e) {
             return new Promise((t, n) => {
-              let { startLocalAudioRecording: i } = (0, v.lE)();
+              let { startLocalAudioRecording: i } = (0, P.lE)();
               null != i
                 ? i(e, (e) => {
                     e
@@ -55933,28 +56005,28 @@ color: purple;
             });
           }
           stopLocalAudioRecording(e) {
-            (0, v.lE)().stopLocalAudioRecording?.((t, n) => {
+            (0, P.lE)().stopLocalAudioRecording?.((t, n) => {
               e(t, n);
             }),
               this.listenerCount(_.b.VoiceActivity) > 0 &&
-                null != (0, v.lE)().setEmitVADLevel2 &&
-                (0, v.lE)().setEmitVADLevel2(!0);
+                null != (0, P.lE)().setEmitVADLevel2 &&
+                (0, P.lE)().setEmitVADLevel2(!0);
           }
           setHasFullbandPerformance(e) {
-            (0, v.lE)().setHasFullbandPerformance?.(e);
+            (0, P.lE)().setHasFullbandPerformance?.(e);
           }
           setNcModels(e) {
-            (0, v.lE)().setNcModels?.(e);
+            (0, P.lE)().setNcModels?.(e);
           }
           getSupportedSecureFramesProtocolVersion() {
-            return (0, v.lE)().SupportedSecureFramesProtocolVersion ?? 0;
+            return (0, P.lE)().SupportedSecureFramesProtocolVersion ?? 0;
           }
           getSupportedBandwidthEstimationExperiments(e) {
-            (0, v.lE)().getSupportedBandwidthEstimationExperiments?.(e);
+            (0, P.lE)().getSupportedBandwidthEstimationExperiments?.(e);
           }
           getMLSSigningKey(e, t) {
             return new Promise((n, i) => {
-              let r = (0, v.lE)();
+              let r = (0, P.lE)();
               null != r.getMLSSigningKey
                 ? r.getMLSSigningKey(e, t, (e, t) =>
                     n({ key: e, signature: t }),
@@ -55964,7 +56036,7 @@ color: purple;
           }
           generateDavePairwiseFingerprint(e, t, n, i, r) {
             return new Promise((a, s) => {
-              let l = (0, v.lE)();
+              let l = (0, P.lE)();
               null == l.generateDavePairwiseFingerprint
                 ? s(Error("NOT_IMPLEMENTED"))
                 : l.generateDavePairwiseFingerprint(
@@ -55986,49 +56058,49 @@ color: purple;
             });
           }
           setSidechainCompression(e) {
-            (0, v.lE)().setSidechainCompression?.(e);
+            (0, P.lE)().setSidechainCompression?.(e);
           }
           setSidechainCompressionStrength(e) {
             var t;
             let n = 100 - e,
               i = (t = O.d_) + ((0.8 - t) * n) / 100;
-            (0, v.lE)().applySidechainCompressionSettings?.({
+            (0, P.lE)().applySidechainCompressionSettings?.({
               threshold: -40 + (15 * n) / 100,
               ratio: i,
             });
           }
           setVoiceSampleRateCap(e) {
-            (0, v.lE)().setVoiceSampleRateCap?.(e);
+            (0, P.lE)().setVoiceSampleRateCap?.(e);
           }
           setVoiceChannelCountCap(e) {
-            (0, v.lE)().setVoiceChannelCountCap?.(e);
+            (0, P.lE)().setVoiceChannelCountCap?.(e);
           }
           setNativeDesktopVideoSourcePickerActive(e) {
-            (0, v.lE)().setNativeDesktopVideoSourcePickerActive?.(e);
+            (0, P.lE)().setNativeDesktopVideoSourcePickerActive?.(e);
           }
           presentNativeScreenSharePicker(e) {
-            (0, v.lE)().presentNativeScreenSharePicker?.(e ?? "");
+            (0, P.lE)().presentNativeScreenSharePicker?.(e ?? "");
           }
           releaseNativeDesktopVideoSourcePickerStream() {
-            (0, v.lE)().releaseNativeDesktopVideoSourcePickerStream?.();
+            (0, P.lE)().releaseNativeDesktopVideoSourcePickerStream?.();
           }
           async getSystemMicrophoneMode() {
-            return (await (0, v.lE)().getSystemMicrophoneMode?.()) ?? "";
+            return (await (0, P.lE)().getSystemMicrophoneMode?.()) ?? "";
           }
           showSystemCaptureConfigurationUI(e) {
-            (0, v.lE)().showSystemCaptureConfigurationUI?.(e);
+            (0, P.lE)().showSystemCaptureConfigurationUI?.(e);
           }
           fetchAsyncResources(e) {
             return Promise.resolve();
           }
           async getDeviceOSVolume(e) {
-            return await (0, v.lE)().getDeviceOSVolume?.(e);
+            return await (0, P.lE)().getDeviceOSVolume?.(e);
           }
           async getDeviceOSMuted(e) {
-            return await (0, v.lE)().getDeviceOSMuted?.(e);
+            return await (0, P.lE)().getDeviceOSMuted?.(e);
           }
           getDeviceAudioEffects(e) {
-            let t = (0, v.lE)();
+            let t = (0, P.lE)();
             return null != t.getDeviceAudioEffects
               ? t.getDeviceAudioEffects(e)
               : Promise.reject(
@@ -56053,9 +56125,9 @@ color: purple;
               e.deviceChangeGeneration++,
                 e.emit(
                   _.b.DeviceChange,
-                  W(O.oh.AUDIO_INPUT, t),
-                  W(O.oh.AUDIO_OUTPUT, n),
-                  W(O.oh.VIDEO_INPUT, i),
+                  Y(O.oh.AUDIO_INPUT, t),
+                  Y(O.oh.AUDIO_OUTPUT, n),
+                  Y(O.oh.VIDEO_INPUT, i),
                 );
             };
           })();
@@ -56082,9 +56154,9 @@ color: purple;
           handleNewListener = (e) => {
             switch (e) {
               case _.b.VoiceActivity:
-                null != (0, v.lE)().setEmitVADLevel2
-                  ? (0, v.lE)().setEmitVADLevel2(!0)
-                  : (0, v.lE)().setEmitVADLevel(!0, !1, {});
+                null != (0, P.lE)().setEmitVADLevel2
+                  ? (0, P.lE)().setEmitVADLevel2(!0)
+                  : (0, P.lE)().setEmitVADLevel(!0, !1, {});
                 break;
               case _.b.DeviceChange:
                 this.emitCurrentDevices(this.deviceChangeGeneration);
@@ -56101,11 +56173,11 @@ color: purple;
           }
           handleRemoveListener = (e) => {
             e === _.b.VoiceActivity &&
-              (null != (0, v.lE)().setEmitVADLevel2
-                ? (0, v.lE)().setEmitVADLevel2(
+              (null != (0, P.lE)().setEmitVADLevel2
+                ? (0, P.lE)().setEmitVADLevel2(
                     this.listenerCount(_.b.VoiceActivity) > 0,
                   )
-                : (0, v.lE)().setEmitVADLevel(
+                : (0, P.lE)().setEmitVADLevel(
                     this.listenerCount(_.b.VoiceActivity) > 0,
                     !1,
                     {},
@@ -56155,7 +56227,7 @@ color: purple;
           };
           watchdogTick() {
             let e = !1;
-            (0, v.lE)().pingVoiceThread(() => {
+            (0, P.lE)().pingVoiceThread(() => {
               (e = !0), (this.consecutiveWatchdogFailures = 0);
             }),
               setTimeout(() => {
@@ -56297,7 +56369,7 @@ color: purple;
       510098(e, t, n) {
         "use strict";
         let i;
-        n.d(t, { A: () => ti });
+        n.d(t, { A: () => tr });
         var r,
           a,
           s,
@@ -58577,7 +58649,10 @@ color: purple;
               "PROTOCOL_VERSION_CHANGED"),
             u),
           eB = n(264572).hp;
-        class eV extends p.A {
+        function eV(e) {
+          return null != e ? Array.from(e, String) : null;
+        }
+        class eH extends p.A {
           logger;
           dave;
           transientKeys;
@@ -58694,20 +58769,23 @@ color: purple;
                 this.mlsSession.GetProtocolVersion(),
               ),
               i.ignored ||
-                n(
-                  r,
-                  this.mlsSession.GetProtocolVersion(),
-                  i.rosterUpdate ?? {},
-                );
+                n(r, this.mlsSession.GetProtocolVersion(), {
+                  changes: i.rosterUpdate ?? {},
+                  memberIds: eV(i.memberIds),
+                });
           }
           processMLSWelcome(e, t, n) {
-            let i = this.mlsSession.ProcessWelcome(t);
+            let i = this.mlsSession.ProcessWelcome(t),
+              r = null != i;
             null != i &&
               this.prepareSecureFramesRatchets(
                 e,
                 this.mlsSession.GetProtocolVersion(),
               ),
-              n(null != i, this.mlsSession.GetProtocolVersion(), i ?? {});
+              n(r, this.mlsSession.GetProtocolVersion(), {
+                changes: i?.rosterUpdate ?? {},
+                memberIds: eV(i?.memberIds),
+              });
           }
           setupEncryptionWorker() {
             let e = new Worker(
@@ -58808,31 +58886,31 @@ color: purple;
               (this.lastSecureFramesStateUpdate = e));
           }
         }
-        let eH = new T.Vy("LibDaveManager"),
-          ej = null,
+        let ej = new T.Vy("LibDaveManager"),
           eW = null,
           eY = null,
-          eK = {
+          eK = null,
+          e$ = {
             onRuntimeInitialized: () => {
-              eH.info("DAVE loaded");
+              ej.info("DAVE loaded");
             },
           };
-        function e$() {
+        function eX() {
           return ("Firefox" !== A().name || !(ec.It < 142)) && ec.PF && ec.zU;
         }
-        function eX() {
-          if (null == eW) throw Error("DAVE module not loaded");
-          return null == eY && (eY = new eW.TransientKeys()), eY;
+        function ez() {
+          if (null == eY) throw Error("DAVE module not loaded");
+          return null == eK && (eK = new eY.TransientKeys()), eK;
         }
-        function ez(e) {
+        function eq(e) {
           return null != e && e > 0 ? e : 720;
         }
-        let eq = A().name?.toLowerCase().includes("firefox");
-        function eQ(e, t) {
+        let eQ = A().name?.toLowerCase().includes("firefox");
+        function eJ(e, t) {
           e.sender.replaceTrack(t),
             (e.direction = null != t ? "sendrecv" : "recvonly");
         }
-        class eJ extends e_ {
+        class eZ extends e_ {
           pc;
           sdp = null;
           negotiating = !1;
@@ -58873,13 +58951,13 @@ color: purple;
               (this.logger = new T.Vy(`UnifiedConnection(${e.context})`));
             let t = e.dave;
             null == t ||
-              e$() ||
+              eX() ||
               (this.logger.warn(
                 "DAVE is initialized but encoded transforms are not supported",
               ),
               (t = null)),
               null != t &&
-                ((this.daveSessionManager = new eV(
+                ((this.daveSessionManager = new eH(
                   t,
                   e.transientKeys,
                   this.userId,
@@ -58997,7 +59075,7 @@ color: purple;
             if (
               null != e &&
               !t &&
-              (eQ(this.audioTransceiver, e.getAudioTracks()[0]),
+              (eJ(this.audioTransceiver, e.getAudioTracks()[0]),
               this.videoSupported)
             ) {
               let t = e.getVideoTracks()[0],
@@ -59008,7 +59086,7 @@ color: purple;
                   D.fd.WEB_STREAMING_MOTION_CONTENT_HINT,
                 ) &&
                 (t.contentHint = "motion"),
-                eQ(this.videoTransceiver, t),
+                eJ(this.videoTransceiver, t),
                 n &&
                   null != t &&
                   (t !== this.streamVideoTrack &&
@@ -59068,7 +59146,7 @@ color: purple;
             if (
               this.videoSupported &&
               void 0 !== n &&
-              (!eq || void 0 === a.videoSSRC)
+              (!eQ || void 0 === a.videoSSRC)
             ) {
               let t = null != n && n.length > 0 ? n[0] : 0;
               if (t > 0) {
@@ -59351,7 +59429,7 @@ color: purple;
                 expectedHeight:
                   ((n = this.streamVideoTrack.getSettings().height),
                   (i = this.requestedVideoScale),
-                  Math.min(360, ez(n) / Math.max(1, i ?? 1))),
+                  Math.min(360, eq(n) / Math.max(1, i ?? 1))),
                 framesPerSecond: s,
                 encodeMsPerFrame: a,
               });
@@ -59404,7 +59482,7 @@ color: purple;
                   e ?? 1,
                   Math.max(
                     1,
-                    ez(this.streamVideoTrack.getSettings().height) / 360,
+                    eq(this.streamVideoTrack.getSettings().height) / 360,
                   ),
                 )
               : e;
@@ -59855,10 +59933,10 @@ color: purple;
             }
           };
         }
-        function eZ(e) {
+        function e0(e) {
           return e.split("-")[0];
         }
-        class e0 extends e_ {
+        class e1 extends e_ {
           pc;
           fpc;
           codecs = [];
@@ -59876,8 +59954,8 @@ color: purple;
                 null != this.input.stream ? em.SENDRECV : em.SENDONLY),
               (this.fpc = t);
             let n = new eP(this.voiceBitrate);
-            n.on("addtrack", (e, t) => this.createOutput(eZ(e), t)),
-              n.on("removetrack", (e, t) => this.destroyOutput(eZ(e), t)),
+            n.on("addtrack", (e, t) => this.createOutput(e0(e), t)),
+              n.on("removetrack", (e, t) => this.destroyOutput(e0(e), t)),
               n.once("connected", () => {
                 this.input.reset(),
                   this.setConnectionState(D.$I.CONNECTED),
@@ -60003,14 +60081,14 @@ color: purple;
           }
           setVideoEncoderParameters(e) {}
         }
-        let e1 = n.p + "worklet.8d84a64a97f8451a.js",
-          e2 = {
+        let e2 = n.p + "worklet.8d84a64a97f8451a.js",
+          e3 = {
             voiceActivityDetection: !0,
             offerToReceiveAudio: !0,
             offerToReceiveVideo: !1,
             iceRestart: !1,
           };
-        class e3 extends R.EventEmitter {
+        class e6 extends R.EventEmitter {
           userId;
           sinkId;
           input;
@@ -60073,7 +60151,7 @@ color: purple;
               (n.destroy(), delete this.outputs[e]);
           }
           async handshake() {
-            let e = await this.pc1.createOffer(e2);
+            let e = await this.pc1.createOffer(e3);
             await this.pc1.setLocalDescription(
               (function (e) {
                 let t = e.sdp.split("\n");
@@ -60106,7 +60184,7 @@ color: purple;
             });
           };
         }
-        class e6 extends R.EventEmitter {
+        class e5 extends R.EventEmitter {
           id;
           stream;
           pool;
@@ -60121,7 +60199,7 @@ color: purple;
               video: { ...e, frameRate: 30 },
             };
             if (navigator.mediaDevices?.getDisplayMedia != null)
-              return new e6(await navigator.mediaDevices.getDisplayMedia(i), n);
+              return new e5(await navigator.mediaDevices.getDisplayMedia(i), n);
             throw Error("UNKNOWN");
           }
           constructor(e, t) {
@@ -60157,10 +60235,10 @@ color: purple;
             );
           }
         }
-        class e5 {
+        class e8 {
           pool = {};
           async acquire(e, t) {
-            let n = await e6.get(e, t, this);
+            let n = await e5.get(e, t, this);
             return (this.pool[n.id] = n), n;
           }
           get(e) {
@@ -60173,11 +60251,11 @@ color: purple;
             this.pool[e.id] = e;
           }
         }
-        var e8 = n(935399),
+        var e7 = n(935399),
           e4 = n(503698),
-          e7 = n.n(e4),
-          e9 = n(51906);
-        function te(e) {
+          e9 = n.n(e4),
+          te = n(51906);
+        function tt(e) {
           let {
               streamId: t,
               paused: n = !1,
@@ -60205,7 +60283,7 @@ color: purple;
               () => (
                 n
                   ? (o.current?.pause(), (0, O.gm)(t))
-                  : (0, e9.yO)(o.current?.play()),
+                  : (0, te.yO)(o.current?.play()),
                 () => {
                   n && (0, O.NM)(t);
                 }
@@ -60239,7 +60317,7 @@ color: purple;
               [n],
             );
           return (0, _.jsx)("video", {
-            className: e7()("media-engine-video", s),
+            className: e9()("media-engine-video", s),
             ref: o,
             autoPlay: !0,
             onPause: E,
@@ -60248,7 +60326,7 @@ color: purple;
             ...l,
           });
         }
-        function tt(e) {
+        function tn(e) {
           let {
               deviceId: t = D.qe,
               width: n = 320,
@@ -60269,7 +60347,7 @@ color: purple;
               ),
               [o, a],
             ),
-            (0, e8.l0)(() => {
+            (0, e7.l0)(() => {
               o.destroy();
             }),
             f.useEffect(() => {
@@ -60286,14 +60364,14 @@ color: purple;
                   className: "media-engine-video",
                   style: { width: n, height: i },
                 })
-              : (0, _.jsx)(te, { streamId: s, style: { width: n, height: i } })
+              : (0, _.jsx)(tt, { streamId: s, style: { width: n, height: i } })
           );
         }
-        let tn = new T.Vy("MediaEngineWebRTC");
-        class ti extends p.A {
-          Video = te;
+        let ti = new T.Vy("MediaEngineWebRTC");
+        class tr extends p.A {
+          Video = tt;
           Camera = (e) =>
-            (0, _.jsx)(tt, { ...e, onDeviceChange: this.handleDeviceChange });
+            (0, _.jsx)(tn, { ...e, onDeviceChange: this.handleDeviceChange });
           _audioContext = null;
           outputVolume = 100;
           sourceId = D.dx;
@@ -60304,7 +60382,7 @@ color: purple;
           interacted = !1;
           loopback = null;
           voiceActivityInput = null;
-          desktopInputPool = new e5();
+          desktopInputPool = new e8();
           enablePromise = null;
           dave = null;
           maxSupportedProtocolVersion = null;
@@ -60337,7 +60415,7 @@ color: purple;
               null != window.AudioContext &&
               null != window.RTCPeerConnection
                 ? (n(528416), !0)
-                : (tn.info("WebRTC is not supported on", A().name, A().version),
+                : (ti.info("WebRTC is not supported on", A().name, A().version),
                   !1))
             );
           }
@@ -60414,14 +60492,14 @@ color: purple;
                   audioContext: this.getAudioContext(),
                   streamParameters: u,
                   dave: this.dave,
-                  transientKeys: null != this.dave ? eX() : null,
+                  transientKeys: null != this.dave ? ez() : null,
                   experiments: _,
                 }),
                 (r = `${null != A().name && "" !== A().name ? A().name : "unknown"} ${null != A().version && "" !== A().version ? A().version : "unknown"}`),
                 (a = new T.Vy(`Connection(${i.context})`)),
                 ec.PF
-                  ? (a.info(`Using Unified Plan (${r})`), new eJ(i))
-                  : (a.info(`Using Plan B (${r})`), new e0(i)));
+                  ? (a.info(`Using Unified Plan (${r})`), new eZ(i))
+                  : (a.info(`Using Plan B (${r})`), new e1(i)));
             return (
               (E.streamUserId = c),
               E.setOutputVolume(this.outputVolume),
@@ -60429,8 +60507,8 @@ color: purple;
               E.once(S.y.Destroy, (e) => {
                 this.connections.delete(e),
                   0 === this.connections.size &&
-                    null != eY &&
-                    (eY.delete(), (eY = null));
+                    null != eK &&
+                    (eK.delete(), (eK = null));
               }),
               E.on(S.y.Silence, (e) => this.emit(N.b.Silence, e)),
               E.on(S.y.DesktopSourceEnd, this.handleDesktopSourceEnd),
@@ -60467,7 +60545,7 @@ color: purple;
           }
           async _enable() {
             if (this.enabled) return;
-            await this.getAudioContext().audioWorklet.addModule(e1);
+            await this.getAudioContext().audioWorklet.addModule(e2);
             let e = new j(this.getAudioContext());
             e.on("permission", this.handleAudioPermission);
             try {
@@ -60634,7 +60712,7 @@ color: purple;
           setLoopback(e, t) {
             e && null == this.loopback
               ? (this.enable(),
-                (this.loopback = new e3(
+                (this.loopback = new e6(
                   this.getAudioContext(),
                   this.sourceId,
                   this.sinkId,
@@ -60730,7 +60808,7 @@ color: purple;
               this.maxSupportedProtocolVersion = 0;
               return;
             }
-            if (!e$())
+            if (!eX())
               throw (
                 ((this.maxSupportedProtocolVersion = 0),
                 Error("Encoded transforms are not supported on this platform."))
@@ -60741,9 +60819,9 @@ color: purple;
                 Error("WebAssembly is not supported on this platform."))
               );
             try {
-              let e = await (null != ej
-                ? ej
-                : (ej = (async function () {
+              let e = await (null != eW
+                ? eW
+                : (eW = (async function () {
                     let e;
                     try {
                       e = await Promise.all([
@@ -60754,29 +60832,29 @@ color: purple;
                         n.e(483083),
                       ]).then(n.bind(n, 882566));
                     } catch (e) {
-                      throw (eH.error("Failed to load DAVE module", e), e);
+                      throw (ej.error("Failed to load DAVE module", e), e);
                     }
                     try {
-                      let t = await e.DaveModuleFactory(eK);
+                      let t = await e.DaveModuleFactory(e$);
                       return (
-                        eH.info("Successfully initialized DAVE"), (eW = t), t
+                        ej.info("Successfully initialized DAVE"), (eY = t), t
                       );
                     } catch (e) {
-                      throw (eH.error("Failed to initialize DAVE", e), e);
+                      throw (ej.error("Failed to initialize DAVE", e), e);
                     }
                   })()));
               (this.dave = e),
-                eX(),
+                ez(),
                 (this.maxSupportedProtocolVersion =
                   e.MaxSupportedProtocolVersion()),
-                tn.info(
+                ti.info(
                   "Successfully initialized DAVE, version:",
                   this.maxSupportedProtocolVersion,
                 );
             } catch (e) {
               throw (
                 ((this.maxSupportedProtocolVersion = 0),
-                tn.error("Failed to initialize DAVE", e),
+                ti.error("Failed to initialize DAVE", e),
                 e)
               );
             }
@@ -61595,7 +61673,7 @@ color: purple;
                 name: "unit_id_in_experiment",
                 kind: "message",
                 oneof: "filter",
-                T: () => e7,
+                T: () => e4,
               },
               {
                 no: 20,
@@ -61879,7 +61957,7 @@ color: purple;
                 case 19:
                   r.filter = {
                     oneofKind: "unitIdInExperiment",
-                    unitIdInExperiment: e7.internalBinaryRead(
+                    unitIdInExperiment: e4.internalBinaryRead(
                       e,
                       e.uint32(),
                       n,
@@ -62152,7 +62230,7 @@ color: purple;
                   n,
                 ).join(),
               "unitIdInExperiment" === e.filter.oneofKind &&
-                e7
+                e4
                   .internalBinaryWrite(
                     e.filter.unitIdInExperiment,
                     t.tag(19, C.O0.LengthDelimited).fork(),
@@ -64837,7 +64915,7 @@ color: purple;
           }
         }
         let e8 = new e5();
-        class e4 extends L.G {
+        class e7 extends L.G {
           constructor() {
             super(
               "discord_protos.discord_experimentation.v1.UnitIdInExperiment",
@@ -64915,7 +64993,7 @@ color: purple;
             );
           }
         }
-        let e7 = new e4();
+        let e4 = new e7();
         class e9 extends L.G {
           constructor() {
             super(
@@ -76411,8 +76489,8 @@ color: purple;
             );
           }
         }
-        let e4 = new e8();
-        class e7 extends v.G {
+        let e7 = new e8();
+        class e4 extends v.G {
           constructor() {
             super("discord_protos.discord_users.v1.ClientThemeSettings", [
               {
@@ -76425,7 +76503,7 @@ color: purple;
                 no: 4,
                 name: "custom_user_theme_settings",
                 kind: "message",
-                T: () => e4,
+                T: () => e7,
               },
             ]);
           }
@@ -76455,7 +76533,7 @@ color: purple;
                   );
                   break;
                 case 4:
-                  r.customUserThemeSettings = e4.internalBinaryRead(
+                  r.customUserThemeSettings = e7.internalBinaryRead(
                     e,
                     e.uint32(),
                     n,
@@ -76483,7 +76561,7 @@ color: purple;
                 n,
               ).join(),
               e.customUserThemeSettings &&
-                e4
+                e7
                   .internalBinaryWrite(
                     e.customUserThemeSettings,
                     t.tag(4, y.O0.LengthDelimited).fork(),
@@ -76496,7 +76574,7 @@ color: purple;
             );
           }
         }
-        let e9 = new e7();
+        let e9 = new e4();
         class te extends v.G {
           constructor() {
             super("discord_protos.discord_users.v1.GuildFolders", [
@@ -91916,7 +91994,7 @@ color: purple;
                 name: "increased_file_upload_size",
                 kind: "message",
                 oneof: "kind",
-                T: () => e7,
+                T: () => e4,
               },
               {
                 no: 3,
@@ -91974,7 +92052,7 @@ color: purple;
                 case 2:
                   r.kind = {
                     oneofKind: "increasedFileUploadSize",
-                    increasedFileUploadSize: e7.internalBinaryRead(
+                    increasedFileUploadSize: e4.internalBinaryRead(
                       e,
                       e.uint32(),
                       n,
@@ -92046,7 +92124,7 @@ color: purple;
               t.join();
             }
             "increasedFileUploadSize" === e.kind.oneofKind &&
-              e7
+              e4
                 .internalBinaryWrite(
                   e.kind.increasedFileUploadSize,
                   t.tag(2, S.O0.LengthDelimited).fork(),
@@ -92092,7 +92170,7 @@ color: purple;
           }
         }
         let e8 = new e5();
-        class e4 extends O.G {
+        class e7 extends O.G {
           constructor() {
             super("discord_protos.users.v1.PerkConfigIncreasedFileUploadSize", [
               { no: 1, name: "max_size", kind: "scalar", T: 4 },
@@ -92136,7 +92214,7 @@ color: purple;
             );
           }
         }
-        let e7 = new e4();
+        let e4 = new e7();
         class e9 extends O.G {
           constructor() {
             super("discord_protos.users.v1.PerkConfigIncreasedGuildLimit", [
@@ -116049,8 +116127,8 @@ color: purple;
           e6,
           e5,
           e8,
-          e4,
           e7,
+          e4,
           e9,
           te,
           tt,
@@ -116582,7 +116660,7 @@ color: purple;
             (S.RELAY_ENABLED = "RELAY_ENABLED"),
             (S.CONFERENCE = "CONFERENCE"),
             S);
-        let t4 = Object.freeze({
+        let t7 = Object.freeze({
           SUPPRESS_JOIN_NOTIFICATIONS: 1,
           SUPPRESS_PREMIUM_SUBSCRIPTIONS: 2,
           SUPPRESS_GUILD_REMINDER_NOTIFICATIONS: 4,
@@ -116595,7 +116673,7 @@ color: purple;
           SUPPRESS_GUILD_SPACE_WHITEBOARD_NOTIFICATIONS: 2048,
           SUPPRESS_GUILD_SPACE_MUSIC_NOTIFICATIONS: 4096,
         });
-        var t7 =
+        var t4 =
             (((N = {}).DISCONNECTED = "DISCONNECTED"),
             (N.AWAITING_ENDPOINT = "AWAITING_ENDPOINT"),
             (N.AUTHENTICATING = "AUTHENTICATING"),
@@ -119958,14 +120036,14 @@ color: purple;
             GAME_INVITE_FRAGMENT: "/_discord/join?secret=",
           }),
           n8 = new Set(["facebook", "contacts"]),
-          n4 = new Set([
+          n7 = new Set([
             "spotify",
             "xbox",
             "playstation",
             "playstation-stg",
             "crunchyroll",
           ]),
-          n7 = Object.freeze({
+          n4 = Object.freeze({
             DESKTOP: `${location.protocol}${window.GLOBAL_ENV.API_ENDPOINT}/download`,
             IOS: "https://itunes.apple.com/app/discord/id985746746",
             ANDROID:
@@ -123504,26 +123582,26 @@ color: purple;
             (e8.TRANSITION = "transition"),
             e8),
           iJ =
-            (((e4 = {}).QUEUED = "queued"),
-            (e4.PLANNING = "planning"),
-            (e4.ALLOCATING_DISK = "allocating_disk"),
-            (e4.PATCHING = "patching"),
-            (e4.FINALIZING = "finalizing"),
-            (e4.PAUSING = "pausing"),
-            (e4.VERIFYING = "verifying"),
-            (e4.REPAIRING = "repairing"),
-            (e4.POST_INSTALL_SCRIPTS = "running_install_scripts"),
-            (e4.UNINSTALLING = "uninstalling"),
-            e4),
-          iZ =
-            (((e7 = {}).INSTALL_REQUIRED = "install_required"),
-            (e7.INSTALLING = "installing"),
-            (e7.UP_TO_DATE = "up_to_date"),
-            (e7.UPDATE_REQUIRED = "update_required"),
-            (e7.UPDATING = "updating"),
+            (((e7 = {}).QUEUED = "queued"),
+            (e7.PLANNING = "planning"),
+            (e7.ALLOCATING_DISK = "allocating_disk"),
+            (e7.PATCHING = "patching"),
+            (e7.FINALIZING = "finalizing"),
+            (e7.PAUSING = "pausing"),
+            (e7.VERIFYING = "verifying"),
             (e7.REPAIRING = "repairing"),
+            (e7.POST_INSTALL_SCRIPTS = "running_install_scripts"),
             (e7.UNINSTALLING = "uninstalling"),
             e7),
+          iZ =
+            (((e4 = {}).INSTALL_REQUIRED = "install_required"),
+            (e4.INSTALLING = "installing"),
+            (e4.UP_TO_DATE = "up_to_date"),
+            (e4.UPDATE_REQUIRED = "update_required"),
+            (e4.UPDATING = "updating"),
+            (e4.REPAIRING = "repairing"),
+            (e4.UNINSTALLING = "uninstalling"),
+            e4),
           i0 =
             (((e9 = {}).PLAY = "play"),
             (e9.INSTALL = "install"),
@@ -123564,14 +123642,14 @@ color: purple;
             (ta.MACOS = "macos"),
             (ta.LINUX = "linux"),
             ta),
-          i4 =
+          i7 =
             (((ts = {}).EMPTY_MESSAGE = "EMPTY_MESSAGE"),
             (ts.MESSAGE_TOO_LONG = "MESSAGE_TOO_LONG"),
             (ts.RATE_LIMITED = "RATE_LIMITED"),
             (ts.SHOUTING_CANCELLED = "SHOUTING_CANCELLED"),
             (ts.SLOWMODE_COOLDOWN = "SLOWMODE_COOLDOWN"),
             ts),
-          i7 =
+          i4 =
             (((tl = {})[(tl.IMG = 1)] = "IMG"),
             (tl[(tl.YOUTUBE_VIDEO = 2)] = "YOUTUBE_VIDEO"),
             (tl[(tl.VIDEO = 3)] = "VIDEO"),
@@ -123816,7 +123894,7 @@ color: purple;
             $8o: ng,
             $OG: { page: "Direct", object: "Web URL" },
             AKn: /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i,
-            AMi: n7,
+            AMi: n4,
             AO_: iy,
             Ahp: "DEVICE_VOIP_TOKEN",
             Ajs: rI,
@@ -123878,7 +123956,7 @@ color: purple;
             Rsh: ny,
             Rv1: rp,
             S3d: nn,
-            S7L: t7,
+            S7L: t4,
             SO9: iC,
             T2E: /^ANSWER_/,
             TBI: t2,
@@ -123899,7 +123977,7 @@ color: purple;
             WA1: nv,
             WTw: iZ,
             X7G: nx,
-            X8x: i4,
+            X8x: i7,
             XL8: id,
             XYD: ra,
             XlH: tH,
@@ -123933,7 +124011,7 @@ color: purple;
             eA$: nN,
             eAD: nG,
             elq: t6,
-            ewM: n4,
+            ewM: n7,
             f5z: nc,
             fAW: t5,
             fg2: n6,
@@ -123944,7 +124022,7 @@ color: purple;
             gG4: iK,
             gGk: iv,
             gT8: "first_run_date_key",
-            geh: i7,
+            geh: i4,
             gfo: ig,
             gfq: n0,
             gh6: nS,
@@ -123983,7 +124061,7 @@ color: purple;
             nhx: im,
             o$q: ir,
             o1q: ik,
-            ogj: t4,
+            ogj: t7,
             orn: nb,
             p_A: tz,
             p_j: iF,
@@ -139288,10 +139366,10 @@ ${a}`),
           function e8() {
             b.A.preload(er.ME, t.id);
           }
-          function e4(e) {
+          function e7(e) {
             e.stopPropagation();
           }
-          function e7(e) {
+          function e4(e) {
             e.target === e.currentTarget && eu.current?.click();
           }
           function e9(e) {
@@ -139633,7 +139711,7 @@ ${a}`),
                   (0, i.jsxs)(O.H, {
                     className: s()(eP.bG, { [eP.Q2]: a || el }),
                     as: "div",
-                    onClick: e7,
+                    onClick: e4,
                     muted: eX,
                     selected: a,
                     children: [
@@ -139778,7 +139856,7 @@ ${a}`),
                                   ? es.intl.string(es.t["26C4oi"])
                                   : es.intl.string(es.t.jsvgc3),
                                 onClick: eb ? te : e5,
-                                onMouseDown: e4,
+                                onMouseDown: e7,
                                 nameplate: T,
                                 visibleElementRef: eJ,
                               }),
@@ -154137,7 +154215,7 @@ ${a}`);
           n.e(859864).then(n.t.bind(n, 122123, 19));
         let e8 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eY.A().log(
-          `[BUILD INFO] Release Channel: ${e8}, Build Number: 678811, Version Hash: 9ec60d3faa6aa9c8cf59a9f6ca7906f18a4c6385`,
+          `[BUILD INFO] Release Channel: ${e8}, Build Number: 678941, Version Hash: 17c41702dc3cea93f4048f7a87289b8e894a9073`,
         ),
           w.A.setTags({ appContext: H.QCW }),
           eT.A.initBasic(),
@@ -154234,7 +154312,7 @@ ${a}`);
               a =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : "678811";
+                  : "678941";
             if (__OVERLAY__) return;
             isNaN((r = parseInt(a ?? "", 10))) ||
               eB.Ay.setCrashInformation(ew.du.BuildNumber, r);
@@ -154354,9 +154432,9 @@ ${a}`);
         try {
           (0, eK.v)();
         } catch {}
-        var e4 = n(379800),
-          e7 = n(284009),
-          e9 = n.n(e7),
+        var e7 = n(379800),
+          e4 = n(284009),
+          e9 = n.n(e4),
           te = n(353680),
           tt = n(481613),
           tn = n.n(tt),
@@ -154790,8 +154868,8 @@ ${a}`);
             t
           );
         }
-        var t4 = n(836753),
-          t7 = n(196492),
+        var t7 = n(836753),
+          t4 = n(196492),
           t9 = n(189213),
           ne = n(858899),
           nt = n(293432),
@@ -155556,8 +155634,8 @@ ${a}`);
             };
           })();
         var n8 = n(892491),
-          n4 = n(36149),
-          n7 = n(899847),
+          n7 = n(36149),
+          n4 = n(899847),
           n9 = n(662502),
           ie = n(260509),
           it = n(967198),
@@ -155634,7 +155712,7 @@ ${a}`);
               {
                 modalKey: is.Uy,
                 onCloseRequest: () => (0, ia.A)(t),
-                backdropStyle: (0, n4.lU)(t) ? n8.F.LIGHTBOX : void 0,
+                backdropStyle: (0, n7.lU)(t) ? n8.F.LIGHTBOX : void 0,
               },
             );
           }
@@ -155642,7 +155720,7 @@ ${a}`);
             let { source: t } = e;
             n9.A.showSuccessToast(il.OB.EXISTING_USER_AGE_GATE_SUCCESS),
               (0, tY.Oo)(is.Uy),
-              t === is.w_.FAMILY_CENTER && n7.Ay.initialPageLoad();
+              t === is.w_.FAMILY_CENTER && n4.Ay.initialPageLoad();
           }
           handleAgeGateFailure(e) {
             let { underageMessage: t } = e;
@@ -156064,8 +156142,8 @@ ${a}`);
             } catch (e) {}
           };
         }
-        var i4 = n(289873),
-          i7 = n(138399),
+        var i7 = n(289873),
+          i4 = n(138399),
           i9 = n(183994),
           re = n(268218),
           rt = n(335180);
@@ -157425,8 +157503,8 @@ ${a}`);
         }
         var r5 = n(845311),
           r8 = n(605117),
-          r4 = n(960498);
-        function r7(e) {
+          r7 = n(960498);
+        function r4(e) {
           let { hidden: t } = e,
             n = !(0, r8.c)(),
             i = (0, e_.bG)([r1], () => r1.getOnlineFriendCount()),
@@ -157479,7 +157557,7 @@ ${a}`);
                   "aria-label": A,
                   "aria-pressed": n,
                   onClick: _,
-                  className: td()(r4.j, { [r4.R]: t }),
+                  className: td()(r7.j, { [r7.R]: t }),
                   children: [
                     (0, v.jsx)(r5.A, { hasOnlineFriends: i > 0 }),
                     (0, v.jsx)(rB.E, {
@@ -157507,7 +157585,7 @@ ${a}`);
         function r9() {
           let e = (0, e_.bG)([rj.Ay], () => rj.Ay.isFriendsSidebarAvailable()),
             t = (0, e_.bG)([rv.A], () => rv.A.isTabBarVisible());
-          return e || t ? (0, v.jsx)(r7, { hidden: !e }) : null;
+          return e || t ? (0, v.jsx)(r4, { hidden: !e }) : null;
         }
         var ae = n(76268),
           at = n(646514),
@@ -157903,8 +157981,8 @@ ${a}`);
           a6 = n(114129),
           a5 = n(745136),
           a8 = n(7689),
-          a4 = n(675704),
-          a7 = n(793322),
+          a7 = n(675704),
+          a4 = n(793322),
           a9 = n(319705);
         function se() {
           return (0, v.jsx)("div", {
@@ -157912,8 +157990,8 @@ ${a}`);
             children: (0, v.jsx)(ai.A, {
               icon: a8.MagnifyingGlassIcon,
               tooltip: tN.intl.string(tN.t["5h0QOP"]),
-              tooltipKeyboardShortcut: a4.R.binds["0"],
-              onClick: () => (0, a7.WU)("TOP_BAR_SEARCH"),
+              tooltipKeyboardShortcut: a7.R.binds["0"],
+              onClick: () => (0, a4.WU)("TOP_BAR_SEARCH"),
             }),
           });
         }
@@ -159486,8 +159564,8 @@ ${a}`);
           s6 = n(601193),
           s5 = n(631001),
           s8 = n(726845),
-          s4 = n(285395),
-          s7 = n(185951);
+          s7 = n(285395),
+          s4 = n(185951);
         let s9 = (0, V.mj)({
           name: "2026-10-remove-quests-from-discovery",
           kind: "user",
@@ -159552,7 +159630,7 @@ ${a}`);
                 })(t),
               [t],
             ),
-            r = eh.useMemo(() => (0, s4.t)(t), [t]),
+            r = eh.useMemo(() => (0, s7.t)(t), [t]),
             a = n === t,
             s = eh.useCallback(() => {
               switch (t) {
@@ -159611,7 +159689,7 @@ ${a}`);
         }
         let lo = function () {
           let e = s9.useConfig({ location: "GlobalDiscoverySidebar" }).enabled,
-            t = (0, s7.f)("GlobalDiscoverySidebar"),
+            t = (0, s4.f)("GlobalDiscoverySidebar"),
             n = ln.iy.filter(
               (n) =>
                 (n !== ln.GlobalDiscoveryTab.QUESTS || !e) &&
@@ -159880,13 +159958,13 @@ ${a}`);
         var l6 = n(362280),
           l5 = n(920050),
           l8 = n(713271),
-          l4 = n(474090),
-          l7 = n(612413),
+          l7 = n(474090),
+          l4 = n(612413),
           l9 = (((A = {}).NITRO = "nitro"), (A.NON_NITRO = "non_nitro"), A);
         function oe(e) {
-          return (0, l4.YE)(e, l2.PremiumTypes.TIER_2)
+          return (0, l7.YE)(e, l2.PremiumTypes.TIER_2)
             ? "nitro"
-            : (0, l4.ki)(e)
+            : (0, l7.ki)(e)
               ? null
               : "non_nitro";
         }
@@ -160548,15 +160626,15 @@ ${a}`);
           o6 = n(624458),
           o5 = n(513461),
           o8 = n(709977),
-          o4 = n(212455),
-          o7 = n(967641),
+          o7 = n(212455),
+          o4 = n(967641),
           o9 = n(934966);
         let de = function () {
           let e = (0, e_.bG)([it.A], () => it.A.getGuildId(), []),
             t = (0, e_.bG)([eJ.A], () => eJ.A.getGuild(e), [e]),
             i = (0, e_.bG)(
-              [o4.A],
-              () => (null != e ? o4.A.getRequest(e) : null),
+              [o7.A],
+              () => (null != e ? o7.A.getRequest(e) : null),
               [e],
             ),
             r = (0, tx.zy)(),
@@ -160570,7 +160648,7 @@ ${a}`);
             l = null,
             o = null,
             d = null,
-            c = [o7.lm, o9.lm];
+            c = [o4.lm, o9.lm];
           switch (s) {
             case o5.B5.SUBMITTED:
               (l = tN.intl.string(tN.t["5iLvSx"])),
@@ -160599,7 +160677,7 @@ ${a}`);
                       return (n) => (0, v.jsx)(e, { guildId: t.id, ...n });
                     });
                 }),
-                c.push(o7.z3);
+                c.push(o4.z3);
               break;
             default:
               (l = tN.intl.string(tN.t.G5YKXP)),
@@ -160612,7 +160690,7 @@ ${a}`);
             className: td()(...c),
             children: [
               (0, v.jsx)(rB.E, {
-                className: o7.wx,
+                className: o4.wx,
                 variant: "body-sm/normal",
                 children: l,
               }),
@@ -160731,7 +160809,7 @@ ${a}`);
             j.default.track(H.HAw.PARENTAL_CONSENT_WARNING_BANNER_TAPPED, {
               days_remaining: t,
             }),
-              n7.Ay.selectTab(d_.u9.REQUESTS),
+              n4.Ay.selectTab(d_.u9.REQUESTS),
               (0, oo.openUserSettings)(os.X.FAMILY_CENTER_PANEL);
           }, [t]);
           return (0, v.jsx)(lb.$T, {
@@ -160978,7 +161056,7 @@ ${a}`);
           });
         }
         var dH = n(67480),
-          dj = n(31595),
+          dj = n(322947),
           dW = n(340975),
           dY = n(200093),
           dK = n(145643),
@@ -161012,8 +161090,8 @@ ${a}`);
         var d6 = n(733110),
           d5 = n(577517),
           d8 = n(748209),
-          d4 = n(869968),
-          d7 = n(191115);
+          d7 = n(869968),
+          d4 = n(191115);
         let d9 = !1;
         class ce extends e_.Ay.Store {
           initialize() {
@@ -161029,7 +161107,7 @@ ${a}`);
           BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: function (e) {
             let { subscription: t } = e;
             if (null != t) {
-              let e = d7.A.createFromServer(t);
+              let e = d4.A.createFromServer(t);
               if (null == (0, lJ.EL)(e) || e.metadata?.ended_at == null) return;
               let n = oN()(e.metadata.ended_at);
               oN()().isBetween(
@@ -161927,7 +162005,7 @@ ${a}`);
               let { currentUser: t } = e,
                 n = cU.A.paymentSources ?? {};
               return (
-                d4.A.getIsTargeted() &&
+                d7.A.getIsTargeted() &&
                 !(0, lJ.TW)(t) &&
                 0 !== Object.keys(n).length
               );
@@ -161959,8 +162037,8 @@ ${a}`);
                 !c1(H.kqX.YOUTUBE_3P_NAGBAR) &&
                 ((t = "NoticeStore.YOUTUBE_3P_NAGBAR"),
                 null != oe(n) &&
-                  !!(0, l7.Tp)({ location: t }) &&
-                  l7.zA.getConfig({ location: t }).enabled)
+                  !!(0, l4.Tp)({ location: t }) &&
+                  l4.zA.getConfig({ location: t }).enabled)
               );
             },
           },
@@ -162070,10 +162148,10 @@ ${a}`);
             null != dW.Ay.getConfig() &&
               (0, dW.s2)(cz?.type !== H.kqX.GLOBAL_BANNER_PREVIEW);
         }
-        function c4() {
+        function c7() {
           return cv.A.enabled || delete cK[H.kqX.STREAMER_MODE], c8();
         }
-        class c7 extends e_.Ay.Store {
+        class c4 extends e_.Ay.Store {
           static displayName = "NoticeStore";
           initialize() {
             this.syncWith(
@@ -162110,7 +162188,7 @@ ${a}`);
                 d6.A,
                 cE.A,
                 nm.A,
-                d4.A,
+                d7.A,
                 cA.A,
                 cC,
                 cw.A,
@@ -162167,7 +162245,7 @@ ${a}`);
             return c1(e);
           }
         }
-        let c9 = new c7(x.h, {
+        let c9 = new c4(x.h, {
           CURRENT_USER_UPDATE: c8,
           MEDIA_ENGINE_SET_AUDIO_ENABLED: c8,
           CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: c8,
@@ -162220,8 +162298,8 @@ ${a}`);
               c8()
             );
           },
-          STREAMER_MODE_UPDATE: c4,
-          RUNNING_STREAMER_TOOLS_CHANGE: c4,
+          STREAMER_MODE_UPDATE: c7,
+          RUNNING_STREAMER_TOOLS_CHANGE: c7,
           DISPATCH_APPLICATION_ERROR: function () {
             return delete cK[H.kqX.DISPATCH_ERROR], c8();
           },
@@ -163183,8 +163261,8 @@ ${a}`);
                               progress: y,
                               total: D,
                             }),
-                        (0, v.jsx)(i4.y, {
-                          type: i4.y.Type.PULSING_ELLIPSIS,
+                        (0, v.jsx)(i7.y, {
+                          type: i7.y.Type.PULSING_ELLIPSIS,
                           className: o_.gO,
                         }),
                       ],
@@ -163713,8 +163791,8 @@ ${a}`);
           u6 = n(492684),
           u5 = n(212245),
           u8 = n(908289),
-          u4 = n(672979),
-          u7 = n(440594);
+          u7 = n(672979),
+          u4 = n(440594);
         function u9(e, t) {
           if (null != e && e.type === uv.$.CUSTOM_STATUS)
             return null != e.state ? e.state.trim() : null;
@@ -163725,7 +163803,7 @@ ${a}`);
           if (null == e || null == e.name) return null;
           if ((0, uz.A)(e))
             return null != e.details && "" !== e.details ? e.details : e.name;
-          if ((0, u$.A)(e)) return (0, u7.A)(e.name);
+          if ((0, u$.A)(e)) return (0, u4.A)(e.name);
           var n = e.type,
             i = e.name;
           switch (n) {
@@ -164371,7 +164449,7 @@ ${a}`);
                         null != c ? _b(c) : null,
                         (function () {
                           let { timestamps: e } = t;
-                          return null == e || !(0, u4.A)(t) || (0, uX.A)(t)
+                          return null == e || !(0, u7.A)(t) || (0, uX.A)(t)
                             ? null
                             : _b(
                                 (0, uK.A)(t)
@@ -165118,8 +165196,8 @@ ${a}`);
           _6 = n(689168),
           _5 = n(659096),
           _8 = n(144914),
-          _4 = n(35083);
-        let _7 = lF.A.get(H.fg2.XBOX).name;
+          _7 = n(35083);
+        let _4 = lF.A.get(H.fg2.XBOX).name;
         var _9 = n(100663),
           Ee = n(297413),
           Et = n(942813);
@@ -165426,7 +165504,7 @@ ${a}`);
                         action: () =>
                           (0, oo.openUserSettings)(os.X.CONNECTIONS_CATEGORY),
                         label: tN.intl.formatToPlainString(tN.t.XWSHTb, {
-                          platform: _7,
+                          platform: _4,
                         }),
                       });
                 })(e),
@@ -165596,7 +165674,7 @@ ${a}`);
                       return (0, v.jsx)(al.Dr, {
                         id: `play-${n.session_id}`,
                         action: function () {
-                          (0, _4.playApplication)(i.id, r, {
+                          (0, _7.playApplication)(i.id, r, {
                             analyticsParams: {
                               location: { ...a, object: H.ZSU.LIST_ITEM },
                             },
@@ -166605,12 +166683,12 @@ ${a}`);
                       n.e(632607),
                       n.e(229030),
                       n.e(700201),
+                      n.e(96961),
                       n.e(161309),
                       n.e(694529),
                       n.e(303807),
                       n.e(143330),
                       n.e(995210),
-                      n.e(96961),
                       n.e(114751),
                       n.e(852694),
                       n.e(979605),
@@ -166752,7 +166830,7 @@ ${a}`);
           if (!t)
             return (0, v.jsx)("div", {
               className: Eh.aM,
-              children: (0, v.jsx)(i4.y, {}),
+              children: (0, v.jsx)(i7.y, {}),
             });
           let f = e.map((e) => {
               let { party: t } = e;
@@ -167182,8 +167260,8 @@ ${a}`);
           E6 = n(414711),
           E5 = n(397244),
           E8 = n(714114),
-          E4 = n(342312),
-          E7 = n(806744);
+          E7 = n(342312),
+          E4 = n(806744);
         let E9 = function (e) {
           let {
               hovered: t,
@@ -167196,7 +167274,7 @@ ${a}`);
             { voiceChannel: l } = (0, E8.Ay)({ userId: a?.id });
           return s
             ? (0, v.jsx)("div", {
-                className: E7.Q,
+                className: E4.Q,
                 children: tN.intl.string(tN.t.tFY5Zb),
               })
             : (0, E5.A)({
@@ -167205,8 +167283,8 @@ ${a}`);
                   applicationStream: i,
                   voiceChannel: l,
                 })
-              ? (0, v.jsx)(E4.A, {
-                  textClassName: E7.q,
+              ? (0, v.jsx)(E7.A, {
+                  textClassName: E4.q,
                   activities: n,
                   applicationStream: i,
                   voiceChannel: l,
@@ -167214,7 +167292,7 @@ ${a}`);
                   user: a,
                   textSize: "sm",
                 })
-              : (0, v.jsx)("div", { className: E7.Q, children: (0, ar.MU)(r) });
+              : (0, v.jsx)("div", { className: E4.Q, children: (0, ar.MU)(r) });
         };
         var Ae = n(723690),
           At = n(620301);
@@ -168856,7 +168934,7 @@ ${a}`);
         function A2() {
           return (0, v.jsx)("div", {
             className: AZ.Lq,
-            children: (0, v.jsx)(i4.y, {}),
+            children: (0, v.jsx)(i7.y, {}),
           });
         }
         function A3(e) {
@@ -168867,7 +168945,7 @@ ${a}`);
         var A6 = n(379197),
           A5 = n(488430),
           A8 = n(62617);
-        function A4(e) {
+        function A7(e) {
           let {
               alt: t,
               ariaLabel: n,
@@ -168895,7 +168973,7 @@ ${a}`);
             role: r ?? "img",
           });
         }
-        var A7 = n(3026),
+        var A4 = n(3026),
           A9 = n(683063),
           fe = n(657044),
           ft = n(849516),
@@ -169837,8 +169915,8 @@ ${a}`);
           f6 = n(734066),
           f5 = n(424739),
           f8 = n(262560),
-          f4 = n(396583),
-          f7 = n(526162),
+          f7 = n(396583),
+          f4 = n(526162),
           f9 = n(47671),
           he = n(859034),
           ht = n(855531),
@@ -170224,25 +170302,25 @@ ${a}`);
             children: t,
           });
         }
-        var h4 = n(418135),
-          h7 = n(107198),
+        var h7 = n(418135),
+          h4 = n(107198),
           h9 = n(438705);
         function Ie(e) {
           let { targetElementRef: t, dismissPopover: i, children: r } = e,
             a = (0, hf.Y)({ location: "nitro_tab_popover" }),
             { analyticsLocations: s } = (0, rH.Ay)(),
-            l = (0, h4.A)(),
+            l = (0, h7.A)(),
             o = (0, e_.bG)([dI.A], () => dI.A.getPremiumTypeSubscription()),
             d = null != o && (0, lJ.Nc)(o);
           if (a && null == l) return r;
           let c = a
-              ? tN.intl.string(h7.default.luFmt7)
-              : tN.intl.format(h7.default["c+NBSl"], {
+              ? tN.intl.string(h4.default.luFmt7)
+              : tN.intl.format(h4.default["c+NBSl"], {
                   premiumGroupProductName: (0, hR.DP)(),
                 }),
             u = a
-              ? tN.intl.format(h7.default.QnXCe6, { pricePerPerson: l })
-              : tN.intl.format(h7.default.MuUV5u, {
+              ? tN.intl.format(h4.default.QnXCe6, { pricePerPerson: l })
+              : tN.intl.format(h4.default.MuUV5u, {
                   premiumGroupProductName: (0, hR.DP)(),
                   totalSeats: 6,
                 }),
@@ -170260,10 +170338,10 @@ ${a}`);
               actions: [
                 {
                   text: a
-                    ? tN.intl.format(h7.default.LwdrNi, {
+                    ? tN.intl.format(h4.default.LwdrNi, {
                         premiumGroupProductName: (0, hR.DP)(),
                       })
-                    : tN.intl.string(h7.default["IO+nlU"]),
+                    : tN.intl.string(h4.default["IO+nlU"]),
                   variant: a ? "expressive" : "primary",
                   onClick: function () {
                     i(rE.i.TAKE_ACTION),
@@ -170299,8 +170377,8 @@ ${a}`);
           return (0, v.jsx)(A9.u, {
             targetElementRef: t,
             asset: (0, v.jsx)("img", { src: It, alt: "" }),
-            title: tN.intl.string(h7.default.aFBQ3d),
-            body: tN.intl.string(h7.default.HXu14O),
+            title: tN.intl.string(h4.default.aFBQ3d),
+            body: tN.intl.string(h4.default.HXu14O),
             padding: "lg",
             caretConfig: { align: "center", position: "left" },
             position: "right",
@@ -170862,11 +170940,11 @@ ${a}`);
             X = (function (e) {
               let t = (0, ht.dp)(e),
                 [n, i] = eh.useState(() => Date.now());
-              (0, f4.A)(() => i(Date.now()), t ? ha : null);
+              (0, f7.A)(() => i(Date.now()), t ? ha : null);
               let r = (0, e_.bG)([ek.default], () =>
                   ek.default.getCurrentUser(),
                 ),
-                a = (0, e_.bG)([f7.A], () => f7.A.getCurrentDesktopIcon()),
+                a = (0, e_.bG)([f4.A], () => f4.A.getCurrentDesktopIcon()),
                 s = (0, e_.bG)([f9.A], () =>
                   (0, he.v)()
                     ? (0, hi.U0)().length > 0
@@ -171247,7 +171325,7 @@ ${a}`);
             hoverGradientMiddle: eK?.middle,
             hoverGradientEnd: eK?.end,
             backgroundImageSrc: h,
-            text: (0, v.jsx)(A7.A, {
+            text: (0, v.jsx)(A4.A, {
               children: y
                 ? tN.intl.string(tN.t["4gwVVn"])
                 : tN.intl.string(tN.t.Ipxkog),
@@ -171691,8 +171769,8 @@ ${a}`);
           );
         }
         var I8 = n(398025),
-          I4 = n(363839);
-        let I7 = {
+          I7 = n(363839);
+        let I4 = {
             "--custom-shine-dimensions": "240px",
             "--custom-shine-rotated-dimensions-delta": `${50}px`,
           },
@@ -171795,20 +171873,20 @@ ${a}`);
               ),
               y = eh.useMemo(() => l && null != L, [l, L]),
               D = (0, v.jsx)("div", {
-                className: I4.iE,
+                className: I7.iE,
                 onMouseEnter: I,
                 onMouseLeave: p,
                 onFocus: I,
                 onBlur: p,
                 ref: N,
-                style: I7,
+                style: I4,
                 children: (0, v.jsxs)(fn.z9, {
                   showHoverGradient: y,
                   hoverGradientStart: L?.start,
                   hoverGradientMiddle: L?.middle,
                   hoverGradientEnd: L?.end,
-                  className: td()({ [I4.VU]: C || y, [I4.jR]: C, [I4.XO]: l }),
-                  linkClassName: l ? I4.K5 : void 0,
+                  className: td()({ [I7.VU]: C || y, [I7.jR]: C, [I7.XO]: l }),
+                  linkClassName: l ? I7.K5 : void 0,
                   icon: aV.QuestsIcon,
                   listItemRef: i,
                   onClick: _,
@@ -171822,7 +171900,7 @@ ${a}`);
                         children: [
                           o &&
                             (0, v.jsx)("div", {
-                              className: I4.qS,
+                              className: I7.qS,
                               children: (0, v.jsx)(u0.E, {
                                 type: { text: tN.intl.string(tN.t.y2b7CA) },
                                 variant: "expressive",
@@ -171831,7 +171909,7 @@ ${a}`);
                           c?.questHomeEntrypoint?.image != null &&
                             (0, v.jsx)("img", {
                               src: c?.questHomeEntrypoint?.image,
-                              className: I4.Nd,
+                              className: I7.Nd,
                               alt: "",
                             }),
                         ],
@@ -171840,7 +171918,7 @@ ${a}`);
                       (0, v.jsxs)(v.Fragment, {
                         children: [
                           (0, v.jsx)(IY.animated.div, {
-                            className: I4.q2,
+                            className: I7.q2,
                             style: {
                               transform: f.to(
                                 (e) =>
@@ -171849,7 +171927,7 @@ ${a}`);
                             },
                           }),
                           (0, v.jsx)(IY.animated.div, {
-                            className: I4.ys,
+                            className: I7.ys,
                             style: {
                               opacity: (0, I8.a)(
                                 E.to({ range: [0, 1], output: [0, 0.5] }),
@@ -171857,7 +171935,7 @@ ${a}`);
                             },
                           }),
                           (0, v.jsx)("div", {
-                            className: I4.qS,
+                            className: I7.qS,
                             children: (0, v.jsx)(u0.E, {
                               type: "new",
                               variant: "primary",
@@ -171986,7 +172064,7 @@ ${a}`);
                     title: tN.intl.string(tN.t.Thb5MO),
                     body: tN.intl.string(tN.t.kGvgwS),
                     position: "left",
-                    asset: (0, v.jsx)(A4, {
+                    asset: (0, v.jsx)(A7, {
                       size: 32,
                       alt: tN.intl.string(tN.t["4LohBA"]),
                     }),
@@ -172073,7 +172151,7 @@ ${a}`);
           });
         }
         function pA() {
-          return (0, a7.WU)("DM_SEARCH");
+          return (0, a4.WU)("DM_SEARCH");
         }
         function pf(e) {
           switch (e) {
@@ -172136,7 +172214,7 @@ ${a}`);
                       onClick: pA,
                       text: tN.intl.format(tN.t.fH9FBy, {
                         tooltipHook: (e, t) =>
-                          (0, v.jsx)(A7.A, { children: e }, t),
+                          (0, v.jsx)(A4.A, { children: e }, t),
                       }),
                     }),
                   }),
@@ -172389,7 +172467,7 @@ ${a}`);
                     className: td()(py.Wz, py.mr),
                     children: [
                       (0, v.jsx)(pL, { className: py.Kk }),
-                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "678811" }),
+                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "678941" }),
                       (0, v.jsx)(r, {}),
                     ],
                   })
@@ -172679,8 +172757,8 @@ ${a}`);
           p6 = n(923566),
           p5 = n(171251),
           p8 = n(826685),
-          p4 = n(876474),
-          p7 = n(190443),
+          p7 = n(876474),
+          p4 = n(190443),
           p9 = n(688976);
         let me = +iu.A.Millis.MINUTE,
           mt = rF.M.AUTOCLIPPING_EARLY_ACCESS_FREE_USER_POST_SESSION_OPT_OUT,
@@ -172690,7 +172768,7 @@ ${a}`);
               artSrc:
                 "https://cdn.discordapp.com/assets/content/80fc2b3760f9db15c9c033967e13f8e4615367a56aa4d633afeef8ae075190ba.png",
             },
-            [p4.m]: {
+            [p7.m]: {
               tintClassName: p9.BE,
               artSrc:
                 "https://cdn.discordapp.com/assets/content/24bf28f16c2e8fc4eab6177f759a182be8d9e2a9a3938eaa2272abcc31aa043f.png",
@@ -172700,7 +172778,7 @@ ${a}`);
               artSrc:
                 "https://cdn.discordapp.com/assets/content/66aaa16b03e41ca9c83251842d484fdfd3c6f63ea2f4fb2d8fb21f7e0e3a323b.png",
             },
-            [p7.e]: {
+            [p4.e]: {
               tintClassName: p9.bf,
               artSrc:
                 "https://cdn.discordapp.com/assets/content/95dc0d95a5e9952a1167a30ff74a807d48c7c996da7872ebd3a16483009bcfd1.png",
@@ -173736,8 +173814,8 @@ ${a}`);
         };
         var m5 = n(315710),
           m8 = n(143129),
-          m4 = n(452027),
-          m7 = n(532676),
+          m7 = n(452027),
+          m4 = n(532676),
           m9 = n(432017),
           ge = n(456971),
           gt = n(797394),
@@ -174004,8 +174082,8 @@ ${a}`);
           g6 = n(442353),
           g5 = n(970636),
           g8 = n(186111),
-          g4 = n(917592),
-          g7 = n(377802),
+          g7 = n(917592),
+          g4 = n(377802),
           g9 = n(707592),
           Te = n(132860),
           Tt = n(993838),
@@ -174013,7 +174091,7 @@ ${a}`);
         function Ti(e) {
           let { tooltipText: t, onClick: n } = e,
             { parentAnalyticsLocation: i } = (0, rH.Ay)(),
-            { events: r, Component: a } = (0, g7.O)();
+            { events: r, Component: a } = (0, g4.O)();
           return (0, v.jsx)(mY.A, {
             tooltipText: t,
             onClick: () => {
@@ -174439,7 +174517,7 @@ ${a}`);
                   buttonStop: tN.intl.string(tN.t.Yp3SbJ),
                   location: { section: H.JJy.NOISE_CANCELLATION_POPOUT },
                 }),
-                (0, v.jsx)(m4.D, {
+                (0, v.jsx)(m7.D, {
                   label: tN.intl.string(tN.t.k6h1F4),
                   children: (0, v.jsxs)(lK.A, {
                     justify: lK.A.Justify.BETWEEN,
@@ -174469,7 +174547,7 @@ ${a}`);
             n = t ? tN.intl.string(tN.t.ScHlfl) : tN.intl.string(tN.t.zqxfrf);
           return (0, v.jsx)(mY.A, {
             tooltipText: n,
-            icon: t ? m7.MusicSlashIcon : m9.MusicIcon,
+            icon: t ? m4.MusicSlashIcon : m9.MusicIcon,
             onClick: () => {
               (0, gA.XJ)(e, gA.OP.STAGE_MUSIC, t), (0, gX.k)(!t);
             },
@@ -174811,7 +174889,7 @@ ${a}`);
             u = null != s ? `${a} / ${s}` : a,
             _ = H.BVt.CHANNEL(t.guild_id ?? H.ME, t.id),
             E = (0, ga.KN)("ConnectionStatus"),
-            { connectionStatus: A, connectionStatusText: f } = g4.A.getStatus(
+            { connectionStatus: A, connectionStatusText: f } = g7.A.getStatus(
               o,
               c,
             );
@@ -175402,8 +175480,8 @@ ${a}`);
           T6 = n(437614),
           T5 = n(13981),
           T8 = n(44724),
-          T4 = n(343476);
-        let T7 = 30 * iu.A.Millis.SECOND;
+          T7 = n(343476);
+        let T4 = 30 * iu.A.Millis.SECOND;
         function T9(e) {
           let {
               shouldShow: t,
@@ -175419,10 +175497,10 @@ ${a}`);
             } = e,
             { gameRecord: u } = (0, p$.Ay)(n),
             _ = (0, v.jsxs)("div", {
-              className: T4.Pb,
+              className: T7.Pb,
               children: [
                 (0, v.jsx)(_l.A, {
-                  className: T4.Gt,
+                  className: T7.Gt,
                   game: u,
                   size: _l.M.XXSMALL,
                 }),
@@ -175435,34 +175513,34 @@ ${a}`);
               ],
             });
           return (0, v.jsx)("div", {
-            className: td()(T4.NI, { [T4.hS]: !t }),
+            className: td()(T7.NI, { [T7.hS]: !t }),
             children: (0, v.jsx)("div", {
-              className: T4.DU,
+              className: T7.DU,
               children: (0, v.jsx)(p1, {
                 shouldShow: t,
-                duration: T7,
+                duration: T4,
                 controlsPlacement: "overlay",
                 onDismiss: d,
                 onHidden: c,
                 dismissAriaLabel: l,
-                wrapperClassName: T4.nd,
+                wrapperClassName: T7.nd,
                 renderHeader: function () {
                   return (0, v.jsx)("div", {
-                    className: T4.ah,
+                    className: T7.ah,
                     children: (0, v.jsxs)("div", {
-                      className: T4.$_,
+                      className: T7.$_,
                       children: [
                         (0, v.jsxs)("div", {
-                          className: T4.Sl,
+                          className: T7.Sl,
                           children: [
                             (0, v.jsx)("img", {
-                              className: td()(T4.HU, { [T4.py]: null != r }),
+                              className: td()(T7.HU, { [T7.py]: null != r }),
                               src: i,
                               alt: "",
                             }),
                             null != r
                               ? (0, v.jsx)("img", {
-                                  className: td()(T4.HU, T4.Nj),
+                                  className: td()(T7.HU, T7.Nj),
                                   src: r,
                                   alt: "",
                                 })
@@ -175470,7 +175548,7 @@ ${a}`);
                           ],
                         }),
                         (0, v.jsxs)("div", {
-                          className: T4.Rv,
+                          className: T7.Rv,
                           children: [
                             _,
                             (0, v.jsx)(rB.E, {
@@ -175487,10 +175565,10 @@ ${a}`);
                 },
                 renderBody: function () {
                   return (0, v.jsxs)("div", {
-                    className: T4.rf,
+                    className: T7.rf,
                     children: [
                       (0, v.jsxs)("div", {
-                        className: T4.zH,
+                        className: T7.zH,
                         "aria-hidden": !0,
                         children: [
                           _,
@@ -175502,7 +175580,7 @@ ${a}`);
                         ],
                       }),
                       (0, v.jsx)("div", {
-                        className: T4.E1,
+                        className: T7.E1,
                         children: (0, v.jsx)(ts.$, {
                           variant: "primary",
                           size: "sm",
@@ -175755,7 +175833,7 @@ ${a}`);
         function Sd() {
           return (0, v.jsx)("div", {
             className: Si.wG,
-            children: (0, v.jsx)(i4.y, {}),
+            children: (0, v.jsx)(i7.y, {}),
           });
         }
         n(999900);
@@ -182411,7 +182489,7 @@ ${a}`);
           return (eh.useEffect(() => {
             null != t &&
               null != n &&
-              i7.A.jumpToMessage({
+              i4.A.jumpToMessage({
                 channelId: t,
                 messageId: n,
                 flash: !0,
@@ -182578,7 +182656,7 @@ ${a}`);
               `${e}px`,
             );
         }
-        function S4(e) {
+        function S7(e) {
           let {
               hasNotice: t,
               sidebarTheme: n,
@@ -182723,7 +182801,7 @@ ${a}`);
               }),
           });
         }
-        function S7() {
+        function S4() {
           let e,
             t = (0, e_.bG)([c9], () => c9.hasNotice()),
             n = (0, eN.NC)(),
@@ -182792,7 +182870,7 @@ ${a}`);
                       className: Si.Qs,
                       children: [
                         (0, v.jsx)(rh, {}),
-                        (0, v.jsx)(S4, {
+                        (0, v.jsx)(S7, {
                           isSidebarOpen: a,
                           hasNotice: t,
                           sidebarTheme: n,
@@ -184195,7 +184273,7 @@ ${a}`);
                     (0, sO.zV)(H.HAw.GUILD_VIEWED, s),
                       (0, Nv.A)({ guildId: l }),
                       (0, aK.ai)(l) &&
-                        ((e = l4.Ay.isPremiumExactly(
+                        ((e = l7.Ay.isPremiumExactly(
                           ek.default.getCurrentUser(),
                           l2.PremiumTypes.TIER_2,
                         )),
@@ -184227,12 +184305,12 @@ ${a}`);
           N6 = n(390435),
           N5 = n(361158),
           N8 = n(913420);
-        let N4 = (0, re.Fe)({
+        let N7 = (0, re.Fe)({
             createPromise: () => Promise.resolve().then(n.bind(n, 944771)),
             webpackId: 944771,
             name: "ComponentPlayground",
           }),
-          N7 = (0, re.Fe)({
+          N4 = (0, re.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e(150183),
@@ -185023,12 +185101,12 @@ ${a}`);
                 n.e(606053),
                 n.e(229030),
                 n.e(700201),
+                n.e(96961),
                 n.e(161309),
                 n.e(694529),
                 n.e(303807),
                 n.e(143330),
                 n.e(995210),
-                n.e(96961),
                 n.e(114751),
                 n.e(852694),
                 n.e(979605),
@@ -185042,9 +185120,9 @@ ${a}`);
             name: "GuildSettings",
           }),
           Ce = {
-            [H.zgK.CHANNEL_SETTINGS]: () => (0, v.jsx)(N7, {}),
+            [H.zgK.CHANNEL_SETTINGS]: () => (0, v.jsx)(N4, {}),
             [H.zgK.GUILD_SETTINGS]: () => (0, v.jsx)(N9, {}),
-            [H.zgK.COMPONENT_PLAYGROUND]: () => (0, v.jsx)(N4, {}),
+            [H.zgK.COMPONENT_PLAYGROUND]: () => (0, v.jsx)(N7, {}),
           },
           Ct = "SHOWN",
           Cn = "HIDDEN",
@@ -185316,7 +185394,7 @@ ${a}`);
               children: [
                 (0, v.jsx)(Cl, {
                   className: Co.Z,
-                  children: (0, v.jsx)(S7, {}),
+                  children: (0, v.jsx)(S4, {}),
                 }),
                 (0, v.jsx)(NT, {}),
                 (0, v.jsx)(N1, {}),
@@ -186055,8 +186133,8 @@ ${a}`);
           }
         }
         let C8 = new C5();
-        var C4 = n(311043),
-          C7 = n(292702);
+        var C7 = n(311043),
+          C4 = n(292702);
         let C9 = {};
         function Oe(e) {
           let { gameId: t } = e;
@@ -186064,9 +186142,9 @@ ${a}`);
             if (null != C9[e]) return;
             let t =
                 NX.A.getDetectableGame(e) ??
-                C4.A.getGame(pC.default.cast(e)) ??
+                C7.A.getGame(pC.default.cast(e)) ??
                 nA.A.getApplication(e),
-              n = (null != t ? C7.A.isLaunchable(t) : C7.A.isGameLaunchable(e))
+              n = (null != t ? C4.A.isLaunchable(t) : C4.A.isGameLaunchable(e))
                 .then((t) => {
                   t !== _Z.A.launchableGames[e] &&
                     x.h.dispatch({
@@ -186760,8 +186838,8 @@ ${a}`);
             });
           };
         }
-        let O4 = new O8();
-        var O7 = n(64585),
+        let O7 = new O8();
+        var O4 = n(64585),
           O9 = n(139033);
         class Re extends nc.A {
           _initialize() {
@@ -190176,8 +190254,8 @@ ${a}`);
           R6 = n(397962),
           R5 = n(991690),
           R8 = n(931093),
-          R4 = n(294630),
-          R7 = n(179771),
+          R7 = n(294630),
+          R4 = n(179771),
           R9 =
             (((N = {})[(N.DURABLE_PRIMARY = 1)] = "DURABLE_PRIMARY"),
             (N[(N.DURABLE = 2)] = "DURABLE"),
@@ -190288,7 +190366,7 @@ ${a}`);
             from: "@discordapp/common/shared-constants/EntitlementTypes",
           },
           OAuth2Scopes: {
-            values: R7.F,
+            values: R4.F,
             from: "@discordapp/common/shared-constants/OAuth2Scopes",
           },
           EmbeddedActivityOrientationLockState: {
@@ -191220,7 +191298,7 @@ ${a}`);
                 unique: e.boolean().optional(),
                 target_type: e
                   .number()
-                  .valid(...R4.n.USER_CREATABLE)
+                  .valid(...R7.n.USER_CREATABLE)
                   .allow(null)
                   .optional(),
                 target_user_id: Lm(e).meta({ className: "UserId" }),
@@ -192178,7 +192256,7 @@ ${a}`);
         function LW(e) {
           let t = e.authorization.scopes;
           return (
-            !t.has(R7.F.RPC) && !t.has(So.W_) && t.has(R7.F.SDK_SOCIAL_LAYER)
+            !t.has(R4.F.RPC) && !t.has(So.W_) && t.has(R4.F.SDK_SOCIAL_LAYER)
           );
         }
         function LY(e) {
@@ -192217,8 +192295,8 @@ ${a}`);
         let L6 = [...L2.g, LZ.A, LJ.A, LQ.A];
         var L5 = n(493490),
           L8 = n(17742),
-          L4 = n(681971),
-          L7 = n(207228);
+          L7 = n(681971),
+          L4 = n(207228);
         function L9(e) {
           if ((0, L8.fX)(e.applicationId)) return "ready";
           let { state: t } = (0, Lq.Cp)(e.applicationId, "screen_capture");
@@ -192228,9 +192306,9 @@ ${a}`);
               ? "permission_required"
               : "denied" === t
                 ? "permission_denied"
-                : (0, L7.y8)()
-                  ? L3(e.applicationId) && (0, L7.aG)()
-                    ? (0, L4._)()
+                : (0, L4.y8)()
+                  ? L3(e.applicationId) && (0, L4.aG)()
+                    ? (0, L7._)()
                       ? "ready"
                       : "game_not_focused"
                     : "no_game"
@@ -192364,7 +192442,7 @@ ${a}`);
           },
           y_ = {
             [H.e$_.SET_CERTIFIED_DEVICES]: {
-              scope: { [So.sm.ANY]: [R7.F.RPC, So.hj] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, So.hj] },
               validation: (e) =>
                 yd(e)
                   .required()
@@ -192444,11 +192522,11 @@ ${a}`);
             [H.e$_.GET_CHANNEL]: LG(H.e$_.GET_CHANNEL, {
               scope: {
                 [So.sm.ANY]: [
-                  R7.F.RPC,
-                  R7.F.GUILDS,
-                  R7.F.GUILDS_CHANNELS_READ,
-                  R7.F.BOT,
-                  R7.F.SDK_SOCIAL_LAYER,
+                  R4.F.RPC,
+                  R4.F.GUILDS,
+                  R4.F.GUILDS_CHANNELS_READ,
+                  R4.F.BOT,
+                  R4.F.SDK_SOCIAL_LAYER,
                 ],
               },
               validateAccess(e) {
@@ -192502,7 +192580,7 @@ ${a}`);
                   );
                 if (r.isPrivate()) {
                   let e = n.authorization.scopes;
-                  if (!e.has(R7.F.RPC) && !e.has(R7.F.DM_CHANNELS_READ))
+                  if (!e.has(R4.F.RPC) && !e.has(R4.F.DM_CHANNELS_READ))
                     throw new RV.A(
                       { errorCode: H.Lw6.INVALID_PERMISSIONS },
                       "Invalid scope",
@@ -192518,7 +192596,7 @@ ${a}`);
             }),
             [H.e$_.GET_CHANNELS]: LG(H.e$_.GET_CHANNELS, {
               scope: {
-                [So.sm.ANY]: [R7.F.RPC, R7.F.BOT, R7.F.SDK_SOCIAL_LAYER],
+                [So.sm.ANY]: [R4.F.RPC, R4.F.BOT, R4.F.SDK_SOCIAL_LAYER],
               },
               validateAccess(e) {
                 let {
@@ -192584,9 +192662,9 @@ ${a}`);
             [H.e$_.GET_CHANNEL_PERMISSIONS]: LG(H.e$_.GET_CHANNEL_PERMISSIONS, {
               scope: {
                 [So.sm.ANY]: [
-                  R7.F.GUILDS_MEMBERS_READ,
-                  R7.F.GUILDS_CHANNELS_READ,
-                  R7.F.BOT,
+                  R4.F.GUILDS_MEMBERS_READ,
+                  R4.F.GUILDS_CHANNELS_READ,
+                  R4.F.BOT,
                 ],
               },
               validateAccess(e) {
@@ -192617,7 +192695,7 @@ ${a}`);
               },
             }),
             [H.e$_.SELECT_VOICE_CHANNEL]: LG(H.e$_.SELECT_VOICE_CHANNEL, {
-              scope: { [So.sm.ANY]: [R7.F.RPC, So.W_, R7.F.SDK_SOCIAL_LAYER] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, So.W_, R4.F.SDK_SOCIAL_LAYER] },
               handler(e) {
                 let {
                   server: t,
@@ -192667,7 +192745,7 @@ ${a}`);
                     );
                   return tq.default.selectVoiceChannel(t.id), null;
                 }
-                let o = n.authorization.scopes.has(R7.F.RPC)
+                let o = n.authorization.scopes.has(R4.F.RPC)
                     ? null
                     : (0, RH.Ay)(n),
                   d =
@@ -192775,7 +192853,7 @@ ${a}`);
             [H.e$_.GET_SELECTED_VOICE_CHANNEL]: LG(
               H.e$_.GET_SELECTED_VOICE_CHANNEL,
               {
-                scope: { [So.sm.ANY]: [R7.F.RPC, R7.F.RPC_VOICE_READ] },
+                scope: { [So.sm.ANY]: [R4.F.RPC, R4.F.RPC_VOICE_READ] },
                 handler(e) {
                   let { socket: t } = e,
                     n = nT.Ay.getVoiceChannelId(),
@@ -192790,7 +192868,7 @@ ${a}`);
               },
             ),
             [H.e$_.SELECT_TEXT_CHANNEL]: LG(H.e$_.SELECT_TEXT_CHANNEL, {
-              scope: R7.F.RPC,
+              scope: R4.F.RPC,
               handler(e) {
                 let {
                   server: t,
@@ -192847,7 +192925,7 @@ ${a}`);
               },
             }),
             [H.e$_.CREATE_CHANNEL_INVITE]: LG(H.e$_.CREATE_CHANNEL_INVITE, {
-              scope: R7.F.RPC,
+              scope: R4.F.RPC,
               handler(e) {
                 let {
                   args: { channel_id: t, ...n },
@@ -193067,7 +193145,7 @@ ${a}`);
           },
           yR = {
             [H.e$_.GET_GUILD]: LG(H.e$_.GET_GUILD, {
-              scope: { [So.sm.ANY]: [R7.F.RPC, R7.F.BOT] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, R4.F.BOT] },
               validateAccess(e) {
                 let {
                   args: { guild_id: t },
@@ -193107,7 +193185,7 @@ ${a}`);
               },
             }),
             [H.e$_.GET_GUILDS]: LG(H.e$_.GET_GUILDS, {
-              scope: R7.F.RPC,
+              scope: R4.F.RPC,
               handler: () => ({
                 guilds: eJ.A.getGuildsArray().map((e) => ({
                   id: e.id,
@@ -193117,7 +193195,7 @@ ${a}`);
               }),
             }),
             [H.e$_.GET_ROLES]: LG(H.e$_.GET_ROLES, {
-              scope: R7.F.BOT,
+              scope: R4.F.BOT,
               validateAccess(e) {
                 let {
                   args: { guild_id: t },
@@ -193140,7 +193218,7 @@ ${a}`);
             [H.e$_.GET_CURRENT_USER_GUILD_MEMBER]: LG(
               H.e$_.GET_CURRENT_USER_GUILD_MEMBER,
               {
-                scope: { [So.sm.ANY]: [R7.F.GUILDS_MEMBERS_READ, R7.F.BOT] },
+                scope: { [So.sm.ANY]: [R4.F.GUILDS_MEMBERS_READ, R4.F.BOT] },
                 validateAccess(e) {
                   let {
                     args: { guild_id: t },
@@ -193164,7 +193242,7 @@ ${a}`);
               },
             ),
             [H.e$_.GET_GUILD_MEMBER]: LG(H.e$_.GET_GUILD_MEMBER, {
-              scope: R7.F.BOT,
+              scope: R4.F.BOT,
               validateAccess(e) {
                 let {
                   args: { guild_id: t },
@@ -193286,8 +193364,8 @@ ${a}`);
           [cF.e$.INVITE_USER_EMBEDDED]: LG(cF.e$.INVITE_USER_EMBEDDED, {
             scope: {
               [So.sm.ANY]: [
-                R7.F.DM_CHANNELS_MESSAGES_WRITE,
-                R7.F.ACTIVITIES_INVITES_WRITE,
+                R4.F.DM_CHANNELS_MESSAGES_WRITE,
+                R4.F.ACTIVITIES_INVITES_WRITE,
               ],
             },
             async handler(e) {
@@ -193901,7 +193979,7 @@ ${a}`);
             [H.e$_.GET_QUEST_ENROLLMENT_STATUS]: LG(
               H.e$_.GET_QUEST_ENROLLMENT_STATUS,
               {
-                scope: R7.F.IDENTIFY,
+                scope: R4.F.IDENTIFY,
                 handler(e) {
                   let {
                     socket: t,
@@ -193925,7 +194003,7 @@ ${a}`);
               },
             ),
             [H.e$_.QUEST_START_TIMER]: LG(H.e$_.QUEST_START_TIMER, {
-              scope: R7.F.IDENTIFY,
+              scope: R4.F.IDENTIFY,
               handler(e) {
                 let {
                   socket: t,
@@ -193960,7 +194038,7 @@ ${a}`);
               },
             }),
             [H.e$_.GET_QUEST]: LG(H.e$_.GET_QUEST, {
-              scope: R7.F.IDENTIFY,
+              scope: R4.F.IDENTIFY,
               handler(e) {
                 let { socket: t } = e;
                 (0, R2.lG)(t.transport);
@@ -193982,7 +194060,7 @@ ${a}`);
           },
           y6 = {
             [H.e$_.GET_RELATIONSHIPS]: LG(H.e$_.GET_RELATIONSHIPS, {
-              scope: { [So.sm.ANY]: [R7.F.RELATIONSHIPS_READ] },
+              scope: { [So.sm.ANY]: [R4.F.RELATIONSHIPS_READ] },
               handler(e) {
                 if (
                   Nk.zy(
@@ -194008,14 +194086,14 @@ ${a}`);
           };
         var y5 = n(182892),
           y8 = n(366430);
-        let y4 = ["1402418171662569542"],
-          y7 = [So.z4.IPC, So.z4.WEBSOCKET, So.z4.POST_MESSAGE],
+        let y7 = ["1402418171662569542"],
+          y4 = [So.z4.IPC, So.z4.WEBSOCKET, So.z4.POST_MESSAGE],
           y9 = {
             [H.e$_.SET_ACTIVITY]: LG(H.e$_.SET_ACTIVITY, {
               scope: {
                 [So.sm.ANY]: [
-                  R7.F.RPC,
-                  R7.F.RPC_ACTIVITIES_WRITE,
+                  R4.F.RPC,
+                  R4.F.RPC_ACTIVITIES_WRITE,
                   So.hj,
                   So.W_,
                 ],
@@ -194027,11 +194105,11 @@ ${a}`);
                     isSocketConnected: r,
                   } = e,
                   a =
-                    !t.authorization.scopes.has(R7.F.RPC) &&
-                    !t.authorization.scopes.has(R7.F.RPC_ACTIVITIES_WRITE) &&
+                    !t.authorization.scopes.has(R4.F.RPC) &&
+                    !t.authorization.scopes.has(R4.F.RPC_ACTIVITIES_WRITE) &&
                     !t.authorization.scopes.has(So.hj),
                   s = null;
-                if ((a && (s = (0, Rj.$b)(t)), !y7.includes(t.transport)))
+                if ((a && (s = (0, Rj.$b)(t)), !y4.includes(t.transport)))
                   throw new RV.A(
                     { errorCode: H.Lw6.INVALID_COMMAND },
                     `command not available from "${t.transport}" transport`,
@@ -194084,7 +194162,7 @@ ${a}`);
                   if (
                     null != m &&
                     iU().intersection(e, [m.id]).length > 0 &&
-                    (null == l || !y4.includes(l))
+                    (null == l || !y7.includes(l))
                   )
                     throw new RV.A(
                       { errorCode: H.Lw6.INVALID_ACTIVITY_SECRET },
@@ -194233,7 +194311,7 @@ ${a}`);
           Di = n(693806);
         let Dr = {
           [cF.e$.GET_SOUNDBOARD_SOUNDS]: {
-            scope: { [So.sm.ANY]: [R7.F.RPC, So.hj] },
+            scope: { [So.sm.ANY]: [R4.F.RPC, So.hj] },
             async handler() {
               await (0, Dt.E7)();
               let e = Tf.A.getSounds(),
@@ -194244,7 +194322,7 @@ ${a}`);
             },
           },
           [cF.e$.PLAY_SOUNDBOARD_SOUND]: {
-            scope: { [So.sm.ALL]: [R7.F.RPC, R7.F.RPC_VOICE_WRITE] },
+            scope: { [So.sm.ALL]: [R4.F.RPC, R4.F.RPC_VOICE_WRITE] },
             validation: (e) =>
               yd(e)
                 .required()
@@ -194607,7 +194685,7 @@ ${a}`);
             [H.e$_.USER_SETTINGS_GET_LOCALE]: LG(
               H.e$_.USER_SETTINGS_GET_LOCALE,
               {
-                scope: R7.F.IDENTIFY,
+                scope: R4.F.IDENTIFY,
                 handler: () => ({ locale: Cw.default.locale }),
               },
             ),
@@ -194792,7 +194870,7 @@ ${a}`);
         }
         let DF = {
           [H.ZE4.GUILD_STATUS]: {
-            scope: R7.F.RPC,
+            scope: R4.F.RPC,
             validation: (e) =>
               yd(e).required().keys({ guild_id: e.string().required() }),
             handler(e) {
@@ -194825,9 +194903,9 @@ ${a}`);
           [H.ZE4.VOICE_STATE_CREATE]: {
             scope: {
               [So.sm.ANY]: [
-                R7.F.RPC,
-                R7.F.RPC_VOICE_READ,
-                R7.F.SDK_SOCIAL_LAYER,
+                R4.F.RPC,
+                R4.F.RPC_VOICE_READ,
+                R4.F.SDK_SOCIAL_LAYER,
               ],
             },
             validation: (e) =>
@@ -194866,9 +194944,9 @@ ${a}`);
           [H.ZE4.VOICE_STATE_DELETE]: {
             scope: {
               [So.sm.ANY]: [
-                R7.F.RPC,
-                R7.F.RPC_VOICE_READ,
-                R7.F.SDK_SOCIAL_LAYER,
+                R4.F.RPC,
+                R4.F.RPC_VOICE_READ,
+                R4.F.SDK_SOCIAL_LAYER,
               ],
             },
             validation: (e) =>
@@ -194906,9 +194984,9 @@ ${a}`);
           [H.ZE4.VOICE_STATE_UPDATE]: Lx(H.ZE4.VOICE_STATE_UPDATE, {
             scope: {
               [So.sm.ANY]: [
-                R7.F.RPC,
-                R7.F.RPC_VOICE_READ,
-                R7.F.SDK_SOCIAL_LAYER,
+                R4.F.RPC,
+                R4.F.RPC_VOICE_READ,
+                R4.F.SDK_SOCIAL_LAYER,
               ],
             },
             handler(e) {
@@ -194941,9 +195019,9 @@ ${a}`);
           [H.ZE4.VOICE_CONNECTION_STATUS]: {
             scope: {
               [So.sm.ANY]: [
-                R7.F.RPC,
-                R7.F.RPC_VOICE_READ,
-                R7.F.SDK_SOCIAL_LAYER,
+                R4.F.RPC,
+                R4.F.RPC_VOICE_READ,
+                R4.F.SDK_SOCIAL_LAYER,
               ],
             },
             handler(e) {
@@ -194977,26 +195055,26 @@ ${a}`);
             },
           },
           [H.ZE4.MESSAGE_CREATE]: {
-            scope: R7.F.RPC,
+            scope: R4.F.RPC,
             validation: DM,
             handler: DU,
           },
           [H.ZE4.MESSAGE_UPDATE]: {
-            scope: R7.F.RPC,
+            scope: R4.F.RPC,
             validation: DM,
             handler: DU,
           },
           [H.ZE4.MESSAGE_DELETE]: {
-            scope: R7.F.RPC,
+            scope: R4.F.RPC,
             validation: DM,
             handler: DU,
           },
           [H.ZE4.SPEAKING_START]: Lx(H.ZE4.SPEAKING_START, {
-            scope: { [So.sm.ANY]: [R7.F.RPC, R7.F.RPC_VOICE_READ, So.hj] },
+            scope: { [So.sm.ANY]: [R4.F.RPC, R4.F.RPC_VOICE_READ, So.hj] },
             handler: Dw,
           }),
           [H.ZE4.SPEAKING_STOP]: Lx(H.ZE4.SPEAKING_STOP, {
-            scope: { [So.sm.ANY]: [R7.F.RPC, R7.F.RPC_VOICE_READ, So.hj] },
+            scope: { [So.sm.ANY]: [R4.F.RPC, R4.F.RPC_VOICE_READ, So.hj] },
             handler: Dw,
           }),
           [H.ZE4.VOICE_SESSION_PARTICIPANTS_UPDATE]: {
@@ -195032,30 +195110,30 @@ ${a}`);
             validation: Dx,
             handler: Dk,
           },
-          [H.ZE4.GUILD_CREATE]: { scope: R7.F.RPC, handler() {} },
-          [H.ZE4.CHANNEL_CREATE]: { scope: R7.F.RPC, handler() {} },
+          [H.ZE4.GUILD_CREATE]: { scope: R4.F.RPC, handler() {} },
+          [H.ZE4.CHANNEL_CREATE]: { scope: R4.F.RPC, handler() {} },
           [H.ZE4.GAME_JOIN]: {
-            scope: { [So.sm.ANY]: [R7.F.RPC, So.hj] },
+            scope: { [So.sm.ANY]: [R4.F.RPC, So.hj] },
             handler() {},
           },
           [H.ZE4.GAME_SPECTATE]: {
-            scope: { [So.sm.ANY]: [R7.F.RPC, So.hj] },
+            scope: { [So.sm.ANY]: [R4.F.RPC, So.hj] },
             handler() {},
           },
           [H.ZE4.ACTIVITY_JOIN]: Lx(H.ZE4.ACTIVITY_JOIN, {
-            scope: { [So.sm.ANY]: [R7.F.RPC, So.VH, So.hj, So.W_] },
+            scope: { [So.sm.ANY]: [R4.F.RPC, So.VH, So.hj, So.W_] },
             handler() {},
           }),
           [H.ZE4.ACTIVITY_JOIN_REQUEST]: {
-            scope: { [So.sm.ANY]: [R7.F.RPC, So.hj] },
+            scope: { [So.sm.ANY]: [R4.F.RPC, So.hj] },
             handler() {},
           },
           [H.ZE4.ACTIVITY_SPECTATE]: {
-            scope: { [So.sm.ANY]: [R7.F.RPC, So.VH, So.hj] },
+            scope: { [So.sm.ANY]: [R4.F.RPC, So.VH, So.hj] },
             handler() {},
           },
           [H.ZE4.ACTIVITY_INVITE]: {
-            scope: { [So.sm.ANY]: [R7.F.RPC, So.hj] },
+            scope: { [So.sm.ANY]: [R4.F.RPC, So.hj] },
             handler() {},
           },
           [H.ZE4.ACTIVITY_PIP_MODE_UPDATE]: { scope: void 0, handler() {} },
@@ -195094,15 +195172,15 @@ ${a}`);
             handler() {},
           },
           [H.ZE4.VOICE_CHANNEL_SELECT]: {
-            scope: { [So.sm.ANY]: [R7.F.RPC, R7.F.SDK_SOCIAL_LAYER] },
+            scope: { [So.sm.ANY]: [R4.F.RPC, R4.F.SDK_SOCIAL_LAYER] },
             handler() {},
           },
           [H.ZE4.NOTIFICATION_CREATE]: {
-            scope: { [So.sm.ALL]: [R7.F.RPC, R7.F.RPC_NOTIFICATIONS_READ] },
+            scope: { [So.sm.ALL]: [R4.F.RPC, R4.F.RPC_NOTIFICATIONS_READ] },
             handler() {},
           },
           [H.ZE4.RELATIONSHIP_UPDATE]: Lx(H.ZE4.RELATIONSHIP_UPDATE, {
-            scope: R7.F.RELATIONSHIPS_READ,
+            scope: R4.F.RELATIONSHIPS_READ,
             handler(e) {
               let { socket: t } = e;
               if (
@@ -195118,7 +195196,7 @@ ${a}`);
             },
           }),
           [H.ZE4.CURRENT_USER_UPDATE]: Lx(H.ZE4.CURRENT_USER_UPDATE, {
-            scope: { [So.sm.ANY]: [So.hj, R7.F.IDENTIFY] },
+            scope: { [So.sm.ANY]: [So.hj, R4.F.IDENTIFY] },
             handler: () => (e) => {
               let { prevState: t, dispatch: n } = e,
                 i = { currentUser: ek.default.getCurrentUser() };
@@ -195133,7 +195211,7 @@ ${a}`);
           [H.ZE4.CURRENT_GUILD_MEMBER_UPDATE]: Lx(
             H.ZE4.CURRENT_GUILD_MEMBER_UPDATE,
             {
-              scope: { [So.sm.ALL]: [R7.F.IDENTIFY, R7.F.GUILDS_MEMBERS_READ] },
+              scope: { [So.sm.ALL]: [R4.F.IDENTIFY, R4.F.GUILDS_MEMBERS_READ] },
               handler(e) {
                 let {
                   args: { guild_id: t },
@@ -195160,7 +195238,7 @@ ${a}`);
             handler() {},
           },
           [H.ZE4.SCREENSHARE_STATE_UPDATE]: {
-            scope: { [So.sm.ALL]: [So.hj, R7.F.RPC_SCREENSHARE_READ] },
+            scope: { [So.sm.ALL]: [So.hj, R4.F.RPC_SCREENSHARE_READ] },
             handler: () => (e) => {
               let { prevState: t, dispatch: n } = e,
                 i = c_.A.getStreamerActiveStreamMetadata(),
@@ -195186,7 +195264,7 @@ ${a}`);
             },
           },
           [H.ZE4.VIDEO_STATE_UPDATE]: {
-            scope: { [So.sm.ALL]: [So.hj, R7.F.RPC_VIDEO_READ] },
+            scope: { [So.sm.ALL]: [So.hj, R4.F.RPC_VIDEO_READ] },
             handler: () => (e) => {
               let { prevState: t, dispatch: n } = e,
                 i = { active: ex.Ay.isVideoEnabled() };
@@ -195311,7 +195389,7 @@ ${a}`);
             [H.ZE4.QUEST_ENROLLMENT_STATUS_UPDATE]: Lx(
               H.ZE4.QUEST_ENROLLMENT_STATUS_UPDATE,
               {
-                scope: R7.F.IDENTIFY,
+                scope: R4.F.IDENTIFY,
                 handler(e) {
                   let {
                       args: { quest_id: t },
@@ -195351,7 +195429,7 @@ ${a}`);
           (O = Dq.Au),
           {
             [H.ZE4.VOICE_SETTINGS_UPDATE]: {
-              scope: { [So.sm.ANY]: [R7.F.RPC, R7.F.RPC_VOICE_READ] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, R4.F.RPC_VOICE_READ] },
               handler: () => (e) => {
                 let { prevState: t, dispatch: n } = e,
                   i = C();
@@ -195420,7 +195498,7 @@ ${a}`);
         }
         let D5 = {
             [H.e$_.SEND_ACTIVITY_JOIN_INVITE]: {
-              scope: { [So.sm.ANY]: [R7.F.RPC, So.hj] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, So.hj] },
               handler(e) {
                 let {
                     socket: t,
@@ -195436,7 +195514,7 @@ ${a}`);
               },
             },
             [H.e$_.CLOSE_ACTIVITY_JOIN_REQUEST]: {
-              scope: { [So.sm.ANY]: [R7.F.RPC, So.hj] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, So.hj] },
               handler(e) {
                 let {
                     args: { user_id: t },
@@ -195456,7 +195534,7 @@ ${a}`);
               },
             },
             [H.e$_.ACTIVITY_INVITE_USER]: {
-              scope: { [So.sm.ANY]: [R7.F.RPC, So.hj] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, So.hj] },
               validation: (e) =>
                 yd(e)
                   .required()
@@ -195481,7 +195559,7 @@ ${a}`);
               },
             },
             [H.e$_.ACCEPT_ACTIVITY_INVITE]: {
-              scope: { [So.sm.ANY]: [R7.F.RPC, So.hj] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, So.hj] },
               validation: (e) =>
                 yd(e)
                   .required()
@@ -195535,7 +195613,7 @@ ${a}`);
               },
             },
             [H.e$_.OPEN_INVITE_DIALOG]: LG(H.e$_.OPEN_INVITE_DIALOG, {
-              scope: { [So.sm.ANY]: [R7.F.RPC, So.hj, So.VH] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, So.hj, So.VH] },
               handler(e) {
                 let { socket: t } = e,
                   i = t.application;
@@ -195592,7 +195670,7 @@ ${a}`);
               },
             }),
             [H.e$_.INITIATE_IMAGE_UPLOAD]: LG(H.e$_.INITIATE_IMAGE_UPLOAD, {
-              scope: { [So.sm.ANY]: [R7.F.RPC, So.hj, So.VH] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, So.hj, So.VH] },
               handler(e) {
                 let { socket: t } = e,
                   n = t.application.id;
@@ -195805,7 +195883,7 @@ ${a}`);
             }),
           },
           D8 = 10 * iu.A.Millis.SECOND,
-          D4 = {
+          D7 = {
             [H.e$_.VALIDATE_APPLICATION]: {
               scope: So.hj,
               handler(e) {
@@ -195913,7 +195991,7 @@ ${a}`);
               },
             },
           };
-        var D7 = n(611599),
+        var D4 = n(611599),
           D9 = n(229209),
           be = n(782425),
           bt = n(201327),
@@ -195926,7 +196004,7 @@ ${a}`);
           return "contain" === e || "cover" === e ? e : null;
         }
         let bo = new Map(),
-          bd = new D7.Vy("ApplicationStreamingViewCoordinator"),
+          bd = new D4.Vy("ApplicationStreamingViewCoordinator"),
           bc = {
             application_streaming: [c_.A, RL.A, ba.A],
             camera: [ng.A, nw.A, ex.Ay, ba.A],
@@ -197265,7 +197343,7 @@ ${a}`);
                         { errorCode: H.Lw6.INVALID_COMMAND },
                         "No application.",
                       );
-                    let r = R7.F.IDENTIFY,
+                    let r = R4.F.IDENTIFY,
                       a = () =>
                         bL(
                           {
@@ -197735,7 +197813,7 @@ ${a}`);
                   );
                 let t =
                   Nz.A.getMessage(d, o) ??
-                  (await i7.A.fetchMessage({ channelId: d, messageId: o }));
+                  (await i4.A.fetchMessage({ channelId: d, messageId: o }));
                 if (null == t || t.id !== o)
                   throw new RV.A(
                     { errorCode: H.Lw6.INVALID_PAYLOAD },
@@ -198480,7 +198558,7 @@ ${a}`);
                 }
                 return null == i
                   ? null
-                  : (await _c.I.fetchMany([i]), C4.A.getGame(i) ?? null);
+                  : (await _c.I.fetchMany([i]), C7.A.getGame(i) ?? null);
               })({ gameId: n, applicationId: i });
               if (null == a || (0, bk.TC)(a)) return { opened: !1 };
               let s = (0, DT.LV)(r);
@@ -198884,7 +198962,7 @@ ${a}`);
               link_type: t,
             });
         }
-        let b4 = {
+        let b7 = {
           [H.e$_.INVITE_BROWSER]: {
             scope: So.LQ,
             async handler(e) {
@@ -199255,7 +199333,7 @@ ${a}`);
             },
           },
         };
-        var b7 = n(455426);
+        var b4 = n(455426);
         let b9 = { [So.sm.ANY]: [So.W_, So.VH] },
           ve = {
             [H.e$_.CAPTURE_SCREEN]: LG(H.e$_.CAPTURE_SCREEN, {
@@ -199272,7 +199350,7 @@ ${a}`);
                 )
                   return { status: r };
                 let a = nA.A.getApplication(i.applicationId);
-                return (0, b7.k)({
+                return (0, b4.k)({
                   frameId: i.id,
                   applicationId: i.applicationId,
                   appName: a?.name ?? i.applicationId,
@@ -199993,7 +200071,7 @@ ${a}`);
           },
           vL = {
             [H.e$_.TOGGLE_VIDEO]: {
-              scope: { [So.sm.ALL]: [R7.F.RPC, R7.F.RPC_VIDEO_WRITE] },
+              scope: { [So.sm.ALL]: [R4.F.RPC, R4.F.RPC_VIDEO_WRITE] },
               handler() {
                 let e = ex.Ay.isVideoEnabled();
                 null != (0, Di.A)() &&
@@ -200006,7 +200084,7 @@ ${a}`);
               },
             },
             [H.e$_.TOGGLE_SCREENSHARE]: {
-              scope: { [So.sm.ALL]: [R7.F.RPC, R7.F.RPC_SCREENSHARE_WRITE] },
+              scope: { [So.sm.ALL]: [R4.F.RPC, R4.F.RPC_SCREENSHARE_WRITE] },
               validation: (e) =>
                 yd(e)
                   .optional()
@@ -200125,7 +200203,7 @@ ${a}`);
               },
             },
             [H.e$_.PUSH_TO_TALK]: {
-              scope: { [So.sm.ALL]: [R7.F.RPC, R7.F.RPC_VOICE_WRITE] },
+              scope: { [So.sm.ALL]: [R4.F.RPC, R4.F.RPC_VOICE_WRITE] },
               validation: (e) => yd(e).required().keys({ active: e.boolean() }),
               handler(e) {
                 let {
@@ -200138,7 +200216,7 @@ ${a}`);
           },
           vb = {
             [H.e$_.SET_USER_VOICE_SETTINGS]: {
-              scope: { [So.sm.ANY]: [R7.F.RPC, R7.F.RPC_VOICE_WRITE] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, R4.F.RPC_VOICE_WRITE] },
               validation: (e) =>
                 yd(e)
                   .required()
@@ -200178,11 +200256,11 @@ ${a}`);
               },
             },
             [H.e$_.GET_VOICE_SETTINGS]: {
-              scope: { [So.sm.ANY]: [R7.F.RPC, R7.F.RPC_VOICE_READ] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, R4.F.RPC_VOICE_READ] },
               handler: () => (0, Dq.l6)(),
             },
             [H.e$_.SET_VOICE_SETTINGS]: {
-              scope: { [So.sm.ANY]: [R7.F.RPC, R7.F.RPC_VOICE_WRITE] },
+              scope: { [So.sm.ANY]: [R4.F.RPC, R4.F.RPC_VOICE_WRITE] },
               validation: (e) =>
                 yd(e)
                   .required()
@@ -200660,10 +200738,10 @@ ${a}`);
                   function r() {
                     if (null != t && null != n) {
                       if (null != o$.Ay.getMember(t, n)) {
-                        (i = !1), e.authorization.scopes.add(R7.F.BOT);
+                        (i = !1), e.authorization.scopes.add(R4.F.BOT);
                         return;
                       }
-                      e.authorization.scopes.delete(R7.F.BOT),
+                      e.authorization.scopes.delete(R4.F.BOT),
                         i || ((i = !0), tz.A.requestMembersById(t, n));
                     }
                   }
@@ -200820,7 +200898,7 @@ ${a}`);
           vq = {
             ...DL,
             ...D5,
-            ...D4,
+            ...D7,
             ...bA,
             ...bv,
             ...bU,
@@ -200832,7 +200910,7 @@ ${a}`);
             ...bY.A,
             ...ve,
             ...bX,
-            ...b4,
+            ...b7,
             ...vt,
             ...DD,
             ...Dv,
@@ -201591,8 +201669,8 @@ ${a}`);
         var v6 = n(102597),
           v5 = n(904054),
           v8 = n(205693),
-          v4 = n(602674),
-          v7 = n(76788),
+          v7 = n(602674),
+          v4 = n(76788),
           v9 = n(738011),
           Pe = n(536184);
         let Pt = new Map(),
@@ -201674,7 +201752,7 @@ ${a}`);
                               let t = Pt.get(e);
                               if (null != t) return t;
                               let n = await (await fetch(e)).arrayBuffer(),
-                                i = (0, v4.v)(),
+                                i = (0, v7.v)(),
                                 r = await i?.decodeAudioData(n);
                               return null != r && Pt.set(e, r), r;
                             })(n);
@@ -201712,7 +201790,7 @@ ${a}`);
                             (s.src = i),
                               (s.volume = (0, v5.A)(r)),
                               s.addEventListener(
-                                s instanceof v7.A.OGVPlayer
+                                s instanceof v4.A.OGVPlayer
                                   ? "loadedmetadata"
                                   : "canplaythrough",
                                 () => {
@@ -202073,8 +202151,8 @@ ${a}`);
           P6 = n(446868),
           P5 = n(15e3),
           P8 = n(639719),
-          P4 = n(53516),
-          P7 = n(87404);
+          P7 = n(53516),
+          P4 = n(87404);
         let P9 = {
           init() {
             x.h.subscribe("CONNECTION_OPEN", this.handleRequiredAction),
@@ -202118,15 +202196,15 @@ ${a}`);
                         let { closeLayer: t } = e;
                         return (0, v.jsx)(P3.A, { onClose: t });
                       },
-                      { layerKey: P7._s, Layer: PU.Ay },
+                      { layerKey: P4._s, Layer: PU.Ay },
                     )
                   : (0, N5.B8)(() => (0, v.jsx)(P5.A, {}), {
-                      layerKey: P7._s,
+                      layerKey: P4._s,
                       Layer: PU.Ay,
                     })
                 : t === H.a3B.AGREEMENTS
                   ? (0, tY.qf)((e) => (0, v.jsx)(P8.default, { ...e }), {
-                      modalKey: P7.i$,
+                      modalKey: P4.i$,
                       onCloseRequest: cF.FX,
                       dismissable: !1,
                     })
@@ -202136,23 +202214,23 @@ ${a}`);
                           let { closeLayer: t } = e;
                           return (0, v.jsx)(P3.A, { onClose: t });
                         },
-                        { layerKey: P7._s, Layer: PU.Ay },
+                        { layerKey: P4._s, Layer: PU.Ay },
                       )
                     : null == t &&
-                      ((0, N5.dF)(P7._s),
-                      (0, tY.kB)(P7.i$) && (0, tY.Oo)(P7.i$)));
+                      ((0, N5.dF)(P4._s),
+                      (0, tY.kB)(P4.i$) && (0, tY.Oo)(P4.i$)));
           },
           handleAuthenticationStoreChanged() {
             null == en.default.getId() &&
-              ((0, N5.dF)(P7._s),
-              (0, tY.Oo)(P7.i$),
-              (0, tY.Oo)(P7.Pr),
-              (0, tY.Oo)(P7.H1),
-              (0, tY.Oo)(P4.V));
+              ((0, N5.dF)(P4._s),
+              (0, tY.Oo)(P4.i$),
+              (0, tY.Oo)(P4.Pr),
+              (0, tY.Oo)(P4.H1),
+              (0, tY.Oo)(P7.V));
           },
           handleCurrentUserUpdate(e) {
             let { user: t } = e;
-            t.verified && (0, tY.Oo)(P7.H1);
+            t.verified && (0, tY.Oo)(P4.H1);
           },
         };
         var Me = n(803805),
@@ -203210,7 +203288,7 @@ ${a}`);
               t.mfa_level !== e.mfaLevel)
           );
         }
-        let M4 = new (class {
+        let M7 = new (class {
           synced = null;
           async getAsync(e) {
             let t = performance.now(),
@@ -203524,7 +203602,7 @@ ${a}`);
             );
           }
         })();
-        var M7 = n(537975),
+        var M4 = n(537975),
           M9 = n(9865),
           Ue = n(7864);
         let Ut = new eY.A("Guilds"),
@@ -203568,7 +203646,7 @@ ${a}`);
                           )
                         : M9.hd(n.id, n.roles);
                   this.put(
-                    M7.Me(M7.kI(n, e), M9.cH(r), o$.Ay.getSelfMember(n.id)),
+                    M4.Me(M4.kI(n, e), M9.cH(r), o$.Ay.getSelfMember(n.id)),
                     t,
                   );
                 }
@@ -203585,9 +203663,9 @@ ${a}`);
             }
             handleGuildUpdate(e, t) {
               let n = eJ.A.getGuild(e.guild.id),
-                i = M7.Y1(e.guild, n);
+                i = M4.Y1(e.guild, n);
               this.put(
-                M7.Me(
+                M4.Me(
                   i,
                   M9.cH(M9.hd(e.guild.id, e.guild.roles)),
                   o$.Ay.getSelfMember(e.guild.id),
@@ -203603,7 +203681,7 @@ ${a}`);
                 i = eQ.A.getUnsafeMutableRoles(e.guildId);
               null != n &&
                 this.put(
-                  M7.Me(
+                  M4.Me(
                     n,
                     M9.cH({ ...i, [e.role.id]: M9.Wj(e.guildId, e.role) }),
                     o$.Ay.getSelfMember(e.guildId),
@@ -203619,7 +203697,7 @@ ${a}`);
                 let r = o$.Ay.getSelfMember(e.guildId);
                 null != r &&
                   (r = { ...r, roles: r.roles.filter((t) => t !== e.roleId) }),
-                  this.put(M7.Me(n, M9.cH(i), r), t);
+                  this.put(M4.Me(n, M9.cH(i), r), t);
               }
             }
             handleGuildMemberAdd(e, t) {
@@ -203627,7 +203705,7 @@ ${a}`);
                 let n = eJ.A.getGuild(e.guildId);
                 null != n &&
                   this.put(
-                    M7.Me(
+                    M4.Me(
                       (0, ie.kn)(n, e.joinedAt),
                       M9.cH(eQ.A.getUnsafeMutableRoles(n.id)),
                       o$.Ay.getSelfMember(n.id),
@@ -203641,7 +203719,7 @@ ${a}`);
               let n = eJ.A.getGuild(e.guildId);
               null != n &&
                 this.put(
-                  M7.Me(n, M9.cH(eQ.A.getUnsafeMutableRoles(n.id)), {
+                  M4.Me(n, M9.cH(eQ.A.getUnsafeMutableRoles(n.id)), {
                     roles: e.roles,
                     userId: e.user.id,
                   }),
@@ -203654,8 +203732,8 @@ ${a}`);
                 i = eJ.A.getGuild(e.id);
               if (null == e.properties && null == i) return;
               let r = M9.j_(e.id, e.roles, eQ.A.getUnsafeMutableRoles(e.id)),
-                a = M7.Me(
-                  M7.Wj(e, i),
+                a = M4.Me(
+                  M4.Wj(e, i),
                   M9.cH(r),
                   null != n ? { userId: n.user.id, roles: n.roles } : null,
                 );
@@ -204163,7 +204241,7 @@ ${a}`);
                               ? M$.A.timeAsync(
                                   "\uD83D\uDCBE",
                                   "cache: basic_channels",
-                                  () => M4.getAsync(e),
+                                  () => M7.getAsync(e),
                                 )
                               : Promise.resolve({
                                   all: [],
@@ -204751,13 +204829,13 @@ ${a}`);
             y);
         iu.A.Millis.MINUTE, iu.A.Millis.MINUTE;
         let U8 = new (U6())({ max: 10 });
-        function U4(e) {
+        function U7(e) {
           let t = U8.get(e);
           if (null != t) return t;
           let n = new (U6())({ max: 5 });
           return U8.set(e, n), n;
         }
-        function U7(e, t) {
+        function U4(e, t) {
           return U8.peek(e)?.peek(t) ?? null;
         }
         function U9() {
@@ -204769,16 +204847,16 @@ ${a}`);
             this.waitFor(iY.A, ek.default);
           }
           getAnswer(e, t) {
-            return U7(e, t)?.smartSearchResult ?? null;
+            return U4(e, t)?.smartSearchResult ?? null;
           }
           getStatus(e, t) {
             return this.getAnswer(e, t)?.status ?? null;
           }
           hasAnswer(e, t) {
-            return null != U7(e, t);
+            return null != U4(e, t);
           }
           getResultFeedback(e, t) {
-            return U7(e, t)?.hasPositiveFeedback ?? null;
+            return U4(e, t)?.hasPositiveFeedback ?? null;
           }
         }
         function wt(e) {
@@ -204788,7 +204866,7 @@ ${a}`);
           SMART_SEARCH_FETCH_START: function (e) {
             let { smartSearchQuery: t } = e,
               { requestKey: n, guildId: i, queryText: r, channelIds: a } = t;
-            U4(i).set(n, {
+            U7(i).set(n, {
               smartSearchResult: {
                 status: U5.LOADING,
                 queryText: r,
@@ -204807,7 +204885,7 @@ ${a}`);
                 citations: r,
               } = e,
               { requestKey: a, guildId: s, queryText: l, channelIds: o } = t;
-            U4(s).set(a, {
+            U7(s).set(a, {
               smartSearchResult: {
                 status: n,
                 queryText: l,
@@ -204821,7 +204899,7 @@ ${a}`);
           SMART_SEARCH_FETCH_FAILURE: function (e) {
             let { smartSearchQuery: t, status: n } = e,
               { requestKey: i, guildId: r, queryText: a, channelIds: s } = t;
-            U4(r).set(i, {
+            U7(r).set(i, {
               smartSearchResult: {
                 status: n,
                 queryText: a,
@@ -204835,7 +204913,7 @@ ${a}`);
           SMART_SEARCH_SET_RESULT_FEEDBACK: function (e) {
             let { smartSearchQuery: t, hasPositiveFeedback: n } = e,
               { requestKey: i, guildId: r } = t,
-              a = U7(r, i);
+              a = U4(r, i);
             if (null == a || a.hasPositiveFeedback === n) return !1;
             a.hasPositiveFeedback = n;
           },
@@ -206142,17 +206220,17 @@ ${a}`);
               Oc.init(),
               CS.init(),
               Mx.init(),
-              t7.A.initialize(),
+              t4.A.initialize(),
               PM.init(),
               MU.A.init(),
               P9.init(),
               Ps.initialize(),
               Pd.initialize(),
               M_.init(),
-              t4.A.initialize(),
+              t7.A.initialize(),
               Pr.initialize(),
-              O7.A.initialize(),
-              O4.initialize(),
+              O4.A.initialize(),
+              O7.initialize(),
               Rt.initialize(),
               CO.initialize(),
               CD.initialize(),
@@ -206187,13 +206265,13 @@ ${a}`);
               n5.terminate(),
               Rk.terminate(),
               Ru.terminate(),
-              t7.A.terminate(),
-              Ow.A.terminate(),
               t4.A.terminate(),
+              Ow.A.terminate(),
+              t7.A.terminate(),
               RF.A.terminate(),
               Pr.terminate(),
-              O7.A.terminate(),
-              O4.terminate(),
+              O4.A.terminate(),
+              O7.terminate(),
               Rt.terminate(),
               CO.terminate(),
               CD.terminate(),
@@ -206357,8 +206435,8 @@ ${a}`);
           w6 = n(638421),
           w5 = n(564508),
           w8 = n(697138),
-          w4 = n(989395),
-          w7 = n(628284),
+          w7 = n(989395),
+          w4 = n(628284),
           w9 = n(285796),
           Ge = n(750506),
           Gt = n(686757),
@@ -206396,7 +206474,7 @@ ${a}`);
                           variant: "footnote/normal",
                           children: [
                             o
-                              ? (0, v.jsx)(w7.CircleCheckIcon, {
+                              ? (0, v.jsx)(w4.CircleCheckIcon, {
                                   size: "md",
                                   color: "currentColor",
                                   className: Gn.sG,
@@ -208257,6 +208335,7 @@ ${a}`);
               n.e(249858),
               n.e(355663),
               n.e(693173),
+              n.e(987408),
               n.e(469709),
               n.e(666326),
               n.e(284050),
@@ -208267,7 +208346,6 @@ ${a}`);
               n.e(528),
               n.e(143883),
               n.e(823879),
-              n.e(987408),
               n.e(870272),
               n.e(34486),
               n.e(22330),
@@ -208485,7 +208563,7 @@ ${a}`);
             _ = n
               ? (0, v.jsx)("div", {
                   className: td()(GM.pU, { [GM.bn]: i }),
-                  children: (0, v.jsx)(i4.y, {}),
+                  children: (0, v.jsx)(i7.y, {}),
                 })
               : (0, v.jsx)(GC.oI, {
                   allowPopups: (0, GN.b)(a),
@@ -208551,7 +208629,7 @@ ${a}`);
               (u = c
                 ? (0, v.jsx)("div", {
                     className: GM.pU,
-                    children: (0, v.jsx)(i4.y, {}),
+                    children: (0, v.jsx)(i7.y, {}),
                   })
                 : (0, v.jsx)(GC.oI, {
                     allowPopups: (0, GN.b)(l),
@@ -209221,8 +209299,8 @@ ${a}`);
           );
         };
         var G8 = n(386406);
-        let G4 = !0,
-          G7 = !0;
+        let G7 = !0,
+          G4 = !0;
         function G9() {
           let e,
             t = ng.A.getChannelId();
@@ -209241,10 +209319,10 @@ ${a}`);
               null != i.requestToSpeakTimestamp;
           }
           return (
-            G4 !== e &&
-            ((G7 = e),
-            (G4 = e),
-            x.h.dispatch({ type: "SET_VAD_PERMISSION", hasPermission: G4 }),
+            G7 !== e &&
+            ((G4 = e),
+            (G7 = e),
+            x.h.dispatch({ type: "SET_VAD_PERMISSION", hasPermission: G7 }),
             !0)
           );
         }
@@ -209254,10 +209332,10 @@ ${a}`);
             this.waitFor(en.default, nm.A, ex.Ay, nU.A, ng.A, nw.A);
           }
           shouldShowWarning() {
-            return !G7;
+            return !G4;
           }
           canUseVoiceActivity() {
-            return G4;
+            return G7;
           }
         }
         let xt = new xe(x.h, {
@@ -209278,10 +209356,10 @@ ${a}`);
             });
           },
           AUDIO_TOGGLE_SELF_MUTE: function () {
-            G7 = G4;
+            G4 = G7;
           },
           PERMISSION_CLEAR_VAD_WARNING: function () {
-            G7 = !0;
+            G4 = !0;
           },
         });
         function xn(e) {
@@ -209533,7 +209611,7 @@ ${a}`);
         }
         function xg(e) {
           let { isCoachmark: t, markAsDismissed: n } = e,
-            i = (0, e_.bG)([f7.A], () => f7.A.isUpsellPreview);
+            i = (0, e_.bG)([f4.A], () => f4.A.isUpsellPreview);
           return (0, v.jsxs)("div", {
             className: xI.N3,
             children: [
@@ -209567,9 +209645,9 @@ ${a}`);
             { analyticsLocations: r } = (0, rH.Ay)(nu.A.APP_ICON_EDITOR),
             a = (0, e_.bG)([ek.default], () => ek.default.getCurrentUser()),
             { isUpsellPreview: s, shouldEditorAnimate: l } = (0, e_.cf)(
-              [f7.A, ef.Ay],
+              [f4.A, ef.Ay],
               () => ({
-                isUpsellPreview: f7.A.isUpsellPreview,
+                isUpsellPreview: f4.A.isUpsellPreview,
                 shouldEditorAnimate: t && !ef.Ay.useReducedMotion,
               }),
             ),
@@ -209968,7 +210046,7 @@ ${a}`);
                                         children: (0, v.jsx)(G_.l, {
                                           children: (0, v.jsx)(PU.ks, {
                                             children: (0, v.jsx)(
-                                              w4.A.Provider,
+                                              w7.A.Provider,
                                               {
                                                 value: lQ.A,
                                                 children: (0, v.jsxs)(Gu.p, {
@@ -210469,12 +210547,12 @@ ${a}`);
             webpackId: 146088,
             name: "BrowserHandoff",
           }),
-          x4 = (0, re.Fe)({
+          x7 = (0, re.Fe)({
             createPromise: () => n.e(574272).then(n.bind(n, 569710)),
             webpackId: 569710,
             name: "MobileWebHandoffFallback",
           }),
-          x7 = (0, re.Fe)({
+          x4 = (0, re.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e(82731),
@@ -211466,7 +211544,7 @@ ${a}`);
                       (0, v.jsx)(rs.A, { path: H.BVt.HANDOFF, component: x8 }),
                       (0, v.jsx)(rs.A, {
                         path: H.BVt.MOBILE_WEB_HANDOFF,
-                        component: x4,
+                        component: x7,
                       }),
                       (0, v.jsx)(rs.A, {
                         path: H.BVt.CONNECTION_LINK(":type"),
@@ -211756,7 +211834,7 @@ ${a}`);
               (this.active = !1),
               (this.application = null),
               (this.sound = !0),
-              (this.logger = new D7.Vy("StreamDirector"));
+              (this.logger = new D4.Vy("StreamDirector"));
           }
           onStreamBegin(e, t, n) {
             let i,
@@ -212581,8 +212659,8 @@ ${a}`);
                 : k0.call(this, e, t);
             })),
           (0, eF.HZ)() && (hE.A.addChangeListener(k2), k2());
-        let k8 = (0, e4.createRoot)(k5),
-          k4 = {
+        let k8 = (0, e7.createRoot)(k5),
+          k7 = {
             "/oauth2/authorize": function (e) {
               let t = e?.get("client_id"),
                 n = e?.get("scope")?.split(" "),
@@ -212615,7 +212693,7 @@ ${a}`);
               return null != t && (b5({ token: t }), !0);
             },
           };
-        function k7(e) {
+        function k4(e) {
           let t = (0, v.jsx)(G6.e, {
             children: (0, v.jsx)(kY, { children: (0, v.jsx)(e, {}) }),
           });
@@ -212643,8 +212721,8 @@ ${a}`);
             eB.Ay.initializeWERHandler();
         }
         if (((0, kj.M)(window), __OVERLAY__))
-          k7(() => (0, v.jsx)(te.W, { children: (0, v.jsx)(x7, {}) }));
-        else if (null != window.require && null == window.DiscordNative) k7(tw);
+          k4(() => (0, v.jsx)(te.W, { children: (0, v.jsx)(x4, {}) }));
+        else if (null != window.require && null == window.DiscordNative) k4(tw);
         else {
           if (
             (document.addEventListener("scroll", (e) => e.preventDefault()),
@@ -212661,7 +212739,7 @@ ${a}`);
               }),
               eB.Ay.on("MAIN_WINDOW_PATH", function (e, t, n) {
                 let i = null != n ? new URLSearchParams(n) : null;
-                k4[t]?.(i) || (0, oa.pX)(t);
+                k7[t]?.(i) || (0, oa.pX)(t);
               }),
               eB.Ay.on("MAIN_WINDOW_HIDDEN", () => {
                 (0, kH.R)(window);
@@ -212745,7 +212823,7 @@ ${a}`);
                 kz = !0;
               }
             })(),
-            k7(() => (0, v.jsx)(te.W, { children: (0, v.jsx)(kc, {}) }));
+            k4(() => (0, v.jsx)(te.W, { children: (0, v.jsx)(kc, {}) }));
         }
       },
       329563(e, t, n) {
@@ -214112,7 +214190,6 @@ ${a}`);
                     n.e(142867).then(n.bind(n, 752222)),
                     n.e(114751).then(n.bind(n, 213570)),
                     n.e(312018).then(n.bind(n, 825065)),
-                    n.e(602639).then(n.bind(n, 108690)),
                     Promise.resolve().then(n.bind(n, 687782)),
                     Promise.resolve().then(n.bind(n, 135294)),
                     n.e(213653).then(n.bind(n, 242868)),
@@ -220750,8 +220827,8 @@ ${a}`);
         });
         var e5 = n(111162),
           e8 = n(927813);
-        function e4() {}
-        var e7 =
+        function e7() {}
+        var e4 =
           (((l = {})[(l.AUTHENTICATION_FAILED = 4004)] =
             "AUTHENTICATION_FAILED"),
           (l[(l.INVALID_SESSION = 4006)] = "INVALID_SESSION"),
@@ -221302,10 +221379,10 @@ ${a}`);
             let t = this.webSocket;
             (this.webSocket = null),
               null != t &&
-                ((t.onopen = e4),
-                (t.onmessage = e4),
-                (t.onerror = e4),
-                (t.onclose = e4),
+                ((t.onopen = e7),
+                (t.onmessage = e7),
+                (t.onerror = e7),
+                (t.onclose = e7),
                 e?.(t)),
               this.backoff.cancel();
           }
@@ -224090,8 +224167,8 @@ ${a}`);
         var t6 = n(753070),
           t5 = n(396574),
           t8 = n(792996);
-        let t4 = /^https/.test("https:") ? "wss:" : "ws:",
-          t7 = null;
+        let t7 = /^https/.test("https:") ? "wss:" : "ws:",
+          t4 = null;
         function t9() {
           return new T.A(1e3, 1e4);
         }
@@ -224427,10 +224504,10 @@ ${a}`);
             if ((this.recordEvent({ c: 6, e: null != e }), null == e))
               (this._endpoint = null), (this.hostname = null);
             else {
-              e = `${t4}//${e}`;
+              e = `${t7}//${e}`;
               let { hostname: t, port: n } = e$.A.toURLSafe(e) ?? {},
                 i = null != n ? parseInt(n) : 0 / 0;
-              null != t && (80 === i || 443 === i) && (e = `${t4}//${t}`),
+              null != t && (80 === i || 443 === i) && (e = `${t7}//${t}`),
                 (this._endpoint = e + "/"),
                 (this.hostname = t);
             }
@@ -224970,9 +225047,9 @@ ${a}`);
             let r = "Force Close" !== i;
             if (r) {
               let e =
-                n === e7.REPEATED_MLS_INVALID_MESSAGES ||
-                n === e7.DAVE_DOWNGRADE_REFUSED ||
-                n === e7.DAVE_INVALID_MESSAGE
+                n === e4.REPEATED_MLS_INVALID_MESSAGES ||
+                n === e4.DAVE_DOWNGRADE_REFUSED ||
+                n === e4.DAVE_INVALID_MESSAGE
                   ? this._scheduleMLSFailureReconnect()
                   : this._scheduleReconnect();
               this.logger.warn(
@@ -225546,7 +225623,7 @@ ${a}`);
               this._connection?.clearAllSpeaking();
           }
           async _setAvx512EntropyHistogramIfSupported(e) {
-            (await (t7 ??= (async function () {
+            (await (t4 ??= (async function () {
               let e = await (0, eD.w)();
               return e?.cpu_features?.includes(eb.Avx512icl) === !0;
             })())) &&
@@ -226651,6 +226728,9 @@ ${a}`);
                       },
                     ));
           }
+          _getSecureFramesGroupMembers(e) {
+            return e.memberIds?.map(ne) ?? this._secureFramesRosterMap.keys();
+          }
           _handleSecureFramesRosterChange(e, t) {
             let n = [],
               i = 0,
@@ -226825,12 +226905,12 @@ ${a}`);
                   }),
                   r
                     ? (this._handleMLSSuccess(),
-                      this._handleSecureFramesRosterChange(s, e),
+                      this._handleSecureFramesRosterChange(s.changes, e),
                       this._daveRecipientTracker.mlsMessageProcessed(
                         e,
                         !0,
                         a,
-                        this._secureFramesRosterMap.keys(),
+                        this._getSecureFramesGroupMembers(s),
                       ),
                       this._maybeSendSecureFramesTransitionReady(e),
                       this._daveJoinTimer.joinSucceeded(e, 0 === e),
@@ -226865,12 +226945,12 @@ ${a}`);
                   }),
                   r
                     ? (this._handleMLSSuccess(),
-                      this._handleSecureFramesRosterChange(s, e),
+                      this._handleSecureFramesRosterChange(s.changes, e),
                       this._daveRecipientTracker.mlsMessageProcessed(
                         e,
                         !0,
                         a,
-                        this._secureFramesRosterMap.keys(),
+                        this._getSecureFramesGroupMembers(s),
                       ),
                       this._maybeSendSecureFramesTransitionReady(e),
                       this._daveJoinTimer.joinSucceeded(e, 0 === e),
@@ -240761,7 +240841,7 @@ html body ${z}, html body ${z} * {
           };
         }
         let e8 = 1 / 64;
-        function e4(e) {
+        function e7(e) {
           for (let [t, n] of l) if (n.iframe === e) return t;
           return null;
         }
@@ -240795,15 +240875,15 @@ html body ${z}, html body ${z} * {
             KQ: $,
             oe: function (e, t) {
               let n = e3(),
-                i = e4(e);
+                i = e7(e);
               return null == n || null == i ? null : n.capture(i, t);
             },
             r8: function (e) {
-              let t = e4(e);
+              let t = e7(e);
               return null != t && j === t;
             },
             t8: function (e) {
-              return null != e4(e);
+              return null != e7(e);
             },
             xW: function (e, t, n, r, d) {
               let c = e3();
@@ -261123,7 +261203,7 @@ html body ${z}, html body ${z} * {
                 (e) => {
                   if (
                     null == e.body ||
-                    "9ec60d3faa6aa9c8cf59a9f6ca7906f18a4c6385" === e.body.hash
+                    "17c41702dc3cea93f4048f7a87289b8e894a9073" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -272278,10 +272358,10 @@ html body ${z}, html body ${z} * {
               let t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("678811")),
+                  ((e = parseInt("678941")),
                   Number.isNaN(e) &&
                     (c.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 678811",
+                      "Trying to open a changelog for an invalid build number 678941",
                     ),
                     (e = 0)),
                   e),
@@ -280553,8 +280633,8 @@ html body ${z}, html body ${z} * {
             ],
           });
         }
-        var e4 = n(709372),
-          e7 = n(984680);
+        var e7 = n(709372),
+          e4 = n(984680);
         let e9 = r.memo(function (e) {
           var t;
           let { channelId: n } = e,
@@ -280562,7 +280642,7 @@ html body ${z}, html body ${z} * {
           r.useEffect(() => {
             a.current?.focus();
           }, []);
-          let l = (0, e4.om)(n),
+          let l = (0, e7.om)(n),
             o = l?.phase === "recording",
             d = l?.phase === "recorded";
           r.useEffect(() => {
@@ -280646,7 +280726,7 @@ html body ${z}, html body ${z} * {
             L = g ? I : A,
             D = g && null == L;
           return (0, i.jsxs)("div", {
-            className: e7.M0,
+            className: e4.M0,
             role: "group",
             "aria-label": y.intl.string(y.t.lwy6aX),
             children: [
@@ -280657,7 +280737,7 @@ html body ${z}, html body ${z} * {
                     animateWaveformEntrance: g,
                   })
                 : (0, i.jsxs)("div", {
-                    className: e7.Fg,
+                    className: e4.Fg,
                     children: [
                       o
                         ? (0, i.jsx)(J.m, {
@@ -280676,22 +280756,22 @@ html body ${z}, html body ${z} * {
                         : null,
                       (0, i.jsx)(eq, {
                         channelId: n,
-                        className: e7.ou,
+                        className: e4.ou,
                         recording: o,
                         reducedMotion: u,
                         collapsing: D,
                         onCollapseComplete: T,
                       }),
                       (0, i.jsxs)("div", {
-                        className: e7.RE,
+                        className: e4.RE,
                         children: [
                           (0, i.jsx)("div", {
-                            className: s()(e7.Zz, { [e7.Py]: !o }),
+                            className: s()(e4.Zz, { [e4.Py]: !o }),
                             "aria-hidden": !0,
                           }),
                           (0, i.jsx)(eV.E, {
                             variant: "body-sm/normal",
-                            className: s()(e7.O1, { [e7.w2]: _ }),
+                            className: s()(e4.O1, { [e4.w2]: _ }),
                             tabularNumbers: !0,
                             children: (0, eY.rB)(O),
                           }),
@@ -280699,7 +280779,7 @@ html body ${z}, html body ${z} * {
                       }),
                     ],
                   }),
-              (0, i.jsx)("div", { className: e7.yF, "aria-hidden": !0 }),
+              (0, i.jsx)("div", { className: e4.yF, "aria-hidden": !0 }),
               (0, i.jsx)(J.m, {
                 text: y.intl.string(y.t.oyYWHE),
                 children: (0, i.jsx)("div", {
@@ -280720,8 +280800,8 @@ html body ${z}, html body ${z} * {
                   onKeyDown: C,
                   children: (0, i.jsx)(eW.A, {
                     ref: a,
-                    className: e7.jo,
-                    childClassName: s()(e7.Jp, { [e7.Tq]: !R }),
+                    className: e4.jo,
+                    childClassName: s()(e4.Jp, { [e4.Tq]: !R }),
                     onClick: R ? N : void 0,
                     disabled: !R,
                     noHover: !R,
@@ -280730,7 +280810,7 @@ html body ${z}, html body ${z} * {
                     children: (0, i.jsx)(ej.SendMessageIcon, {
                       size: "xs",
                       color: "currentColor",
-                      className: e7.AO,
+                      className: e4.AO,
                     }),
                   }),
                 }),
@@ -281286,7 +281366,7 @@ html body ${z}, html body ${z} * {
             }),
           });
         }
-        function t4(e) {
+        function t7(e) {
           let { bars: t } = e,
             n = t.stacked.map((e, t) => (0, i.jsx)("div", { children: e }, t)),
             a = t.floating.map((e, t) =>
@@ -281303,7 +281383,7 @@ html body ${z}, html body ${z} * {
                 ],
               });
         }
-        var t7 = n(12764),
+        var t4 = n(12764),
           t9 = n(102077),
           ne = n(246049),
           nt = n(135261),
@@ -281887,7 +281967,7 @@ html body ${z}, html body ${z} * {
             {
               submitting: e6,
               submit: e8,
-              handleSubmit: e7,
+              handleSubmit: e4,
             } = nc(H, y, eg, eC, L.id),
             {
               autocompleteRef: tt,
@@ -282112,10 +282192,10 @@ html body ${z}, html body ${z} * {
               selectedAutocompleteInputError: tR,
             }),
             tj = 0 === a.trim().length,
-            tY = null != (0, e4.om)(L.id);
+            tY = null != (0, e7.om)(L.id);
           r.useEffect(
             () => () => {
-              let e = (0, e4.Mk)(L.id);
+              let e = (0, e7.Mk)(L.id);
               e?.phase === "recording"
                 ? (0, e$.yx)(L.id)
                 : e?.phase === "requesting" && (0, e$.eT)(L.id);
@@ -282140,11 +282220,11 @@ html body ${z}, html body ${z} * {
             t3 =
               null != w
                 ? w()
-                : (0, i.jsx)(t7.A, {
+                : (0, i.jsx)(t4.A, {
                     type: y,
                     disabled: eH,
                     channel: L,
-                    handleSubmit: e7,
+                    handleSubmit: e4,
                     isEmpty: tj,
                     showAllButtons: !ew && !eU,
                     expressionButtonsHidden: eU,
@@ -282199,7 +282279,7 @@ html body ${z}, html body ${z} * {
                       [e5.z3]: null != b,
                     }),
                     children: [
-                      tQ || t0 ? null : (0, i.jsx)(t4, { bars: tV }),
+                      tQ || t0 ? null : (0, i.jsx)(t7, { bars: tV }),
                       (0, i.jsxs)("div", {
                         ref: eN,
                         onScroll: tf,
@@ -293517,6 +293597,9 @@ html body ${z}, html body ${z} * {
           t,
           {},
           {
+            BS: function () {
+              return a.h.dispatch({ type: "CHECKPOINT_RESET_PROGRESS" });
+            },
             IB: function (e, t) {
               return a.h.dispatch({
                 type: "CHECKPOINT_SELECT_CHARACTER_TRAIT",
@@ -293527,6 +293610,19 @@ html body ${z}, html body ${z} * {
             K8: function () {
               a.h.dispatch({ type: "CHECKPOINT_TOGGLE_MUTE" }),
                 (0, A.d3)(E.A.isMuted);
+            },
+            Z0: async function () {
+              try {
+                return (
+                  await r.Bo.del({
+                    url: f.Rsh.CHECKPOINT_RESET,
+                    rejectWithError: !0,
+                  }),
+                  !0
+                );
+              } catch {
+                return !1;
+              }
             },
             fr: async function (e, t) {
               let n = await s.A.getOrEnsurePrivateChannel(t),
@@ -293596,21 +293692,6 @@ html body ${z}, html body ${z} * {
                 return (
                   a.h.dispatch({ type: "CHECKPOINT_FETCH_FAILED" }), E.T.ERROR
                 );
-              }
-            },
-            sm: async function () {
-              a.h.dispatch({ type: "CHECKPOINT_RESET_START" });
-              try {
-                return (
-                  await r.Bo.del({
-                    url: f.Rsh.CHECKPOINT_RESET,
-                    rejectWithError: !0,
-                  }),
-                  a.h.dispatch({ type: "CHECKPOINT_RESET_SUCCESS" }),
-                  !0
-                );
-              } catch {
-                return a.h.dispatch({ type: "CHECKPOINT_RESET_FAILED" }), !1;
               }
             },
             yE: async function (e) {
@@ -295502,6 +295583,12 @@ html body ${z}, html body ${z} * {
             n
           );
         }
+        function C(e) {
+          let t = e.components[0];
+          return null == t || t.type !== s.I5.CHECKPOINT_CARD
+            ? null
+            : t.checkpointData;
+        }
         n.d(
           t,
           {},
@@ -295680,12 +295767,7 @@ html body ${z}, html body ${z} * {
                 topGame: e.topGame,
               };
             },
-            _S: function (e) {
-              let t = e.components[0];
-              return null == t || t.type !== s.I5.CHECKPOINT_CARD
-                ? null
-                : t.checkpointData;
-            },
+            _S: C,
             b5: function (e) {
               switch (e.version) {
                 case A.wk.V2025:
@@ -295698,6 +295780,10 @@ html body ${z}, html body ${z} * {
             },
             dC: function (e) {
               return N(e, S);
+            },
+            lw: function (e) {
+              let t = C(e);
+              return t?.version === A.wk.V2026 ? (t.character ?? null) : null;
             },
             q6: function (e) {
               var t, n;
@@ -296287,8 +296373,8 @@ html body ${z}, html body ${z} * {
           CHECKPOINT_COMPLETE_FAILED: function () {
             C = !1;
           },
-          CHECKPOINT_RESET_SUCCESS: function () {
-            (m = null), (N = null), (h.progress = null);
+          CHECKPOINT_RESET_PROGRESS: function () {
+            (h.progress = null), (N = null);
           },
           CHECKPOINT_SELECT_CHARACTER_TRAIT: function (e) {
             (N = { ...(N ?? m ?? f), [e.trait]: e.optionId }),
@@ -299007,12 +299093,12 @@ html body ${z}, html body ${z} * {
             ],
           });
         }
-        function e4(e) {
+        function e7(e) {
           let { animatedSrc: t, staticSrc: n, className: i } = e,
             a = (0, p.bG)([H.Ay], () => H.Ay.useReducedMotion);
           return (0, r.jsx)("img", { src: a ? n : t, alt: "", className: i });
         }
-        var e7 = n(740281),
+        var e4 = n(740281),
           e9 = n(766089),
           te = n(767988);
         let tt = { animatedSrc: e9.A, staticSrc: te.A };
@@ -299035,10 +299121,10 @@ html body ${z}, html body ${z} * {
               },
               [t],
             );
-          return (0, r.jsx)(e4, {
+          return (0, r.jsx)(e7, {
             animatedSrc: n,
             staticSrc: i,
-            className: e7.w,
+            className: e4.w,
           });
         }
         var ti = n(756408);
@@ -299701,7 +299787,7 @@ html body ${z}, html body ${z} * {
             }),
           });
         }
-        function t4() {
+        function t7() {
           return (0, r.jsx)(tX, {
             children: (0, r.jsx)(tW, {
               title: tE.intl.string(t_.default.zsYYN1),
@@ -299709,7 +299795,7 @@ html body ${z}, html body ${z} * {
             }),
           });
         }
-        function t7(e) {
+        function t4(e) {
           let { lastColorwayIdByOutfitId: t, disabled: n } = e,
             {
               traitOptions: i,
@@ -299762,7 +299848,7 @@ html body ${z}, html body ${z} * {
           } = e;
           switch (t) {
             case C.v7.OUTFIT:
-              return (0, r.jsx)(t7, {
+              return (0, r.jsx)(t4, {
                 lastColorwayIdByOutfitId: n,
                 disabled: i,
               });
@@ -299805,7 +299891,7 @@ html body ${z}, html body ${z} * {
             tabIndex: s ? 0 : void 0,
             className: t6.n,
             children: s
-              ? (0, r.jsx)(t4, {})
+              ? (0, r.jsx)(t7, {})
               : (0, r.jsx)(ne, {
                   customizationOption: n,
                   lastColorwayIdByOutfitId: a,
@@ -300720,7 +300806,7 @@ html body ${z}, html body ${z} * {
             })
           );
         }
-        function n4(e) {
+        function n7(e) {
           let {
               activeRoute: t,
               blockedTrait: n,
@@ -300792,18 +300878,18 @@ html body ${z}, html body ${z} * {
               });
           }
         }
-        function n7(e) {
+        function n4(e) {
           return (0, r.jsx)(el, {
             visible: !e.isCharacterExiting,
             enter: j.I7,
             exit: j.T5,
             keepMounted: !0,
-            children: (0, r.jsx)(n4, { ...e }),
+            children: (0, r.jsx)(n7, { ...e }),
           });
         }
         function n9(e) {
           let { className: t } = e;
-          return (0, r.jsx)(e4, {
+          return (0, r.jsx)(e7, {
             animatedSrc:
               "https://cdn.discordapp.com/assets/content/02e9ae4cdbec0b2adef22c9a5659f5c7340e399cc8932e8af6d41e62a37644ae.png",
             staticSrc:
@@ -301645,8 +301731,8 @@ void main() {
           );
         }
         var i8 = n(826820);
-        let i4 = [];
-        function i7(e) {
+        let i7 = [];
+        function i4(e) {
           let { emojiStats: t } = e,
             n = Math.round(t?.numEmojisSent ?? 0),
             i = (0, z.bD)(t?.numEmojisSentPercentile);
@@ -301702,7 +301788,7 @@ void main() {
             t = (0, p.bG)([u.A], () => (0, z.y7)(u.A.stats)),
             n = (0, p.bG)([u.A], () => u.A.globalStats?.emojis),
             i = !t && null != n,
-            a = (i ? n.emojis : e?.emojis) ?? i4,
+            a = (i ? n.emojis : e?.emojis) ?? i7,
             [s, l] = A.useState(0),
             o = a[s],
             d = Z(tT);
@@ -301719,7 +301805,7 @@ void main() {
                   children: [
                     i
                       ? (0, r.jsx)(i9, { numEmojisSent: n.numEmojisSent })
-                      : (0, r.jsx)(i7, { emojiStats: e }),
+                      : (0, r.jsx)(i4, { emojiStats: e }),
                     (0, r.jsx)("div", {
                       className: i8.gm,
                       children: a.map((e, t) =>
@@ -302210,7 +302296,7 @@ void main() {
             children: (0, r.jsxs)("div", {
               className: rS.kL,
               children: [
-                (0, r.jsx)(e4, {
+                (0, r.jsx)(e7, {
                   animatedSrc:
                     "https://cdn.discordapp.com/assets/content/e3289e9a0a7faf4db23c3fefa390126fc64a09120fdb701f9dea833dddf671ef.png",
                   staticSrc:
@@ -302626,7 +302712,7 @@ void main() {
             children: (0, r.jsxs)("div", {
               className: r2.kL,
               children: [
-                (0, r.jsx)(e4, {
+                (0, r.jsx)(e7, {
                   animatedSrc:
                     "https://cdn.discordapp.com/assets/content/d2d8036bb6a32967893421f9956b9e8ed30abde474f68c1a34e824205549c5a1.png",
                   staticSrc:
@@ -302644,13 +302730,13 @@ void main() {
           });
         }
         var r8 = n(682163),
-          r4 = n(224865);
-        let r7 = r8.iu[r8.Ay.Sizes.XLARGE];
+          r7 = n(224865);
+        let r4 = r8.iu[r8.Ay.Sizes.XLARGE];
         function r9(e) {
           let { guild: t, size: n } = e;
           return null == t.icon && n < 48
             ? (0, r.jsx)("div", {
-                className: h()(r4.K, r4.J),
+                className: h()(r7.K, r7.J),
                 style: { width: n, height: n },
                 "aria-hidden": !0,
                 children: (0, r.jsx)(ta.E, {
@@ -302662,8 +302748,8 @@ void main() {
                 guild: t,
                 size: r8.Ay.Sizes.XLARGE,
                 iconSize: n,
-                textScale: n / r7,
-                className: r4.K,
+                textScale: n / r4,
+                className: r7.K,
                 style: { width: n, height: n, borderRadius: 0 },
                 "aria-hidden": !0,
               });
@@ -303219,7 +303305,7 @@ void main() {
             a = !t && null != i;
           return (0, r.jsxs)(ii, {
             children: [
-              (0, r.jsx)(e4, {
+              (0, r.jsx)(e7, {
                 animatedSrc:
                   "https://cdn.discordapp.com/assets/content/04746dc04eab575d0168935af2b1b3f97e2e00439f84bd0f0474276e0c5a81dc.png",
                 staticSrc:
@@ -303779,7 +303865,7 @@ void main() {
                         onPreviousStep: eE,
                       }),
                     }),
-                    (0, r.jsx)(n7, {
+                    (0, r.jsx)(n4, {
                       activeRoute: s,
                       blockedTrait: eo,
                       blockedTraitDescriptionId: ec,
@@ -304017,12 +304103,13 @@ void main() {
             "aria-pressed": u,
             "aria-disabled": _,
             "aria-describedby": E,
-            children: A,
-            onClick: f,
-            onPointerDown: h,
-            onKeyDown: I,
-            size: p,
-            className: m,
+            "aria-busy": A,
+            children: f,
+            onClick: h,
+            onPointerDown: I,
+            onKeyDown: p,
+            size: m,
+            className: g,
           } = e;
           return (0, i.jsx)("button", {
             ref: t,
@@ -304032,15 +304119,16 @@ void main() {
             onBlur: o,
             onContextMenu: d,
             type: "button",
-            className: a()(s.button, "custom" !== p && s[p], m),
-            onClick: f,
-            onPointerDown: h,
-            onKeyDown: I,
+            className: a()(s.button, "custom" !== m && s[m], g),
+            onClick: h,
+            onPointerDown: I,
+            onKeyDown: p,
             "aria-label": c,
             "aria-pressed": u,
             "aria-disabled": _,
             "aria-describedby": E,
-            children: A,
+            "aria-busy": A,
+            children: f,
           });
         }
         n.d(
@@ -347458,7 +347546,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "678811", versionHash: "9ec60d3faa6aa9c8cf59a9f6ca7906f18a4c6385" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "678941", versionHash: "17c41702dc3cea93f4048f7a87289b8e894a9073" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -356641,8 +356729,8 @@ ${h}`;
           e6 = n(423814),
           e5 = n(77528),
           e8 = n(783420),
-          e4 = n(448645);
-        let e7 = {
+          e7 = n(448645);
+        let e4 = {
           object: ek.ZSU.BUTTON_CTA,
           section: ek.JJy.SUPER_REACTION_PICKER,
         };
@@ -356659,14 +356747,14 @@ ${h}`;
                 ? es.intl.formatToPlainString(es.t.bkQ4bH, {
                     percent: l.discount.amount,
                   })
-                : (0, e4.FY)({
+                : (0, e7.FY)({
                     intervalType: o?.interval,
                     intervalCount: o?.intervalCount,
                   })
               : es.intl.string(es.t.sEAnVH);
           return (0, s.jsx)(e8.A, {
             subscriptionTier: c,
-            premiumModalAnalyticsLocation: e7,
+            premiumModalAnalyticsLocation: e4,
             onSubscribeModalClose: (e) => {
               e && i();
             },
@@ -357200,13 +357288,13 @@ ${h}`;
           t6 = n(717421),
           t5 = n(343032),
           t8 = n(683063),
-          t4 = n(748798);
-        let t7 = { tension: 750, mass: 2.5, friction: 70 };
+          t7 = n(748798);
+        let t4 = { tension: 750, mass: 2.5, friction: 70 };
         function t9(e) {
           let { checked: t, onClick: n, buttonRef: i } = e,
             r = (0, E.bG)([ta.Ay], () => ta.Ay.useReducedMotion),
             a = W.default.getCurrentUser(),
-            o = null != a && !(0, e4.TW)(a),
+            o = null != a && !(0, e7.TW)(a),
             c = o ? [] : [A.M.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP],
             [u, _] = (0, O.kn)(c),
             [f, h] = l.useState(!1),
@@ -357240,20 +357328,20 @@ ${h}`;
                 p({
                   from: { rotate: t ? "360deg" : "0deg" },
                   to: { rotate: t ? "0deg" : "360deg" },
-                  config: t7,
+                  config: t4,
                 }),
                   n?.(),
                   h(!1);
               },
               focusProps: { enabled: !1 },
-              className: d()(t4.Pf, { [t4.wM]: t }),
+              className: d()(t7.Pf, { [t7.wM]: t }),
               children: (0, s.jsx)(m, {
                 style: r ? void 0 : I,
                 size: "custom",
                 width: 20,
                 height: 20,
                 color: t ? "white" : "currentColor",
-                className: t4.Kk,
+                className: t7.Kk,
               }),
             }),
           });
@@ -358012,8 +358100,8 @@ ${h}`;
               ],
             });
           });
-        var n4 = n(537911);
-        function n7(e) {
+        var n7 = n(537911);
+        function n4(e) {
           let t,
             {
               emoji: n,
@@ -358041,12 +358129,12 @@ ${h}`;
           return (0, s.jsx)(ee.vN, {
             children: (0, s.jsx)("button", {
               ...g,
-              className: d()(n4._X, {
-                [n4.lG]: r,
-                [n4.Lh]: a,
-                [n4.Bx]: l,
+              className: d()(n7._X, {
+                [n7.lG]: r,
+                [n7.Lh]: a,
+                [n7.Bx]: l,
                 [I ?? ""]: l,
-                [n4.TV]: c,
+                [n7.TV]: c,
               }),
               "data-type": er.g.EMOJI,
               "data-id": n.id,
@@ -358114,7 +358202,7 @@ ${h}`;
           let { ref: B, tabIndex: V, onFocus: H, ...j } = I(k, a) ?? {},
             W =
               D !== `${k}:${a}`
-                ? (0, s.jsx)(n7, {
+                ? (0, s.jsx)(n4, {
                     ref: B,
                     emoji: w,
                     isFavorite: M.isFavoriteEmojiWithoutFetchingLatest(w),
@@ -358301,12 +358389,12 @@ ${h}`;
                       children: (0, s.jsx)("button", {
                         "aria-label": u,
                         ref: p,
-                        className: d()(n4._X, {
-                          [n4.lG]: B,
-                          [n4.Lh]: V,
-                          [n4.Bx]: N && !f,
+                        className: d()(n7._X, {
+                          [n7.lG]: B,
+                          [n7.Lh]: V,
+                          [n7.Bx]: N && !f,
                           [m ?? ""]: N,
-                          [n4.TV]: x === t,
+                          [n7.TV]: x === t,
                         }),
                         onFocus: T ?? C,
                         onMouseOver: C,
@@ -358336,7 +358424,7 @@ ${h}`;
                         )));
                   },
                   icon: (0, s.jsx)("img", {
-                    className: n4.Kk,
+                    className: n7.Kk,
                     src: u,
                     alt: "",
                   }),
@@ -358381,7 +358469,7 @@ ${h}`;
           function j(e) {
             return (0, s.jsx)("ul", {
               ...u(A),
-              className: d()(n4.ND, { [n4.HO]: B, [n4.X$]: V }),
+              className: d()(n7.ND, { [n7.HO]: B, [n7.X$]: V }),
               ref: F,
               children: e.map(H),
             });
@@ -358403,30 +358491,30 @@ ${h}`;
           return 0 === Y.length
             ? j(t)
             : (0, s.jsxs)("div", {
-                className: n4.Ng,
+                className: n7.Ng,
                 children: [
                   (0, s.jsx)("div", {
-                    className: d()(n4.V6, { [n4.$3]: 0 === W.length }),
+                    className: d()(n7.V6, { [n7.$3]: 0 === W.length }),
                     children: j(W),
                   }),
                   (0, s.jsxs)("div", {
-                    className: n4.bc,
+                    className: n7.bc,
                     children: [
                       (0, s.jsx)("div", {
-                        className: d()(n4.eE, {
-                          [n4.eM]: 1 === Y.length,
-                          [n4.Wk]: W.length > 0,
+                        className: d()(n7.eE, {
+                          [n7.eM]: 1 === Y.length,
+                          [n7.Wk]: W.length > 0,
                         }),
                         children: j(Y),
                       }),
                       (0, s.jsxs)("div", {
-                        className: d()(n4.lD, {
-                          [n4.EI]: B,
-                          [n4.qU]: V,
-                          [n4.Wk]: W.length > 0,
+                        className: d()(n7.lD, {
+                          [n7.EI]: B,
+                          [n7.qU]: V,
+                          [n7.Wk]: W.length > 0,
                         }),
                         children: [
-                          (0, s.jsx)(nq.A, { foreground: n4.rI }),
+                          (0, s.jsx)(nq.A, { foreground: n7.rI }),
                           (0, s.jsx)(z.E, {
                             variant: "body-xs/semibold",
                             color: "text-overlay-light",
@@ -358948,7 +359036,7 @@ ${h}`;
                   : (0, s.jsx)(nW.d, {
                       showUpsell: et,
                       text:
-                        ((t = (0, e4.Dd)(ed.PremiumTypes.TIER_2)),
+                        ((t = (0, e7.Dd)(ed.PremiumTypes.TIER_2)),
                         es.intl.format(es.t.gMVjeS, {
                           nitroTierName: t,
                           onClick: () => {
@@ -358957,7 +359045,7 @@ ${h}`;
                         })),
                       button:
                         ((n = (0, nV.qD)()),
-                        (0, e4.LE)(n, ed.pe.TIER_2) ??
+                        (0, e7.LE)(n, ed.pe.TIER_2) ??
                           es.intl.string(es.t.BmJkbd)),
                       buttonAnalyticsObject: {
                         section: ek.JJy.EMOJI_PICKER_FLOATING_UPSELL,
@@ -359016,19 +359104,19 @@ ${h}`;
               (l.useEffect(() => {
                 o || (0, iI.hP)();
               }, [o]),
-              null == a || !(0, e4.PK)(a.status) || i)
+              null == a || !(0, e7.PK)(a.status) || i)
             )
               return null;
             let d =
                 a.status === ek.Dmq.PAST_DUE
-                  ? (0, e4.ji)(a).expiresDate
+                  ? (0, e7.ji)(a).expiresDate
                   : ef()(a.currentPeriodStart).add(30),
               c = `${a.id}:${d.toISOString()}`;
             if (iC === c) return null;
             let u =
-              e4.Ay.getPremiumType(a.planId) === ed.PremiumTypes.TIER_0
+              e7.Ay.getPremiumType(a.planId) === ed.PremiumTypes.TIER_0
                 ? ip.k0.PREMIUM_TIER_0
-                : e4.Ay.getPremiumType(a.planId) === ed.PremiumTypes.TIER_1
+                : e7.Ay.getPremiumType(a.planId) === ed.PremiumTypes.TIER_1
                   ? ip.k0.PREMIUM_TIER_1
                   : ip.k0.PREMIUM_TIER_2;
             return (0, s.jsxs)(z.E, {
@@ -359047,7 +359135,7 @@ ${h}`;
                     (0, s.jsx)(z.E, {
                       variant: "body-xs/normal",
                       children: es.intl.format(es.t.bTMjiO, {
-                        planName: e4.Ay.getTierDisplayNameByPlanId(a.planId),
+                        planName: e7.Ay.getTierDisplayNameByPlanId(a.planId),
                         endsAt: d.toDate(),
                       }),
                     }),
@@ -359203,8 +359291,8 @@ ${h}`;
                 page: e6,
                 section: e5,
                 object: e8,
-                openPopoutType: e4,
-                popoutLocation: e7,
+                openPopoutType: e7,
+                popoutLocation: e4,
               } = F,
               tt = l.useMemo(
                 () => ({ ...e3, section: e5 ?? ek.JJy.EMOJI_PICKER_POPOUT }),
@@ -359808,16 +359896,16 @@ ${h}`;
               l.useEffect(
                 () => (
                   eK.default.track(ek.HAw.OPEN_POPOUT, {
-                    type: e4 ?? "Emoji Picker",
+                    type: e7 ?? "Emoji Picker",
                     guild_id: ex,
-                    location: e7,
+                    location: e4,
                     ...(0, N.dI)(c),
                   }),
                   () => {
                     iP.cancel(), iM.cancel();
                   }
                 ),
-                [e4, ex, e7, c],
+                [e7, ex, e4, c],
               ),
               (0, g.Ay)(
                 () => (
@@ -369802,7 +369890,7 @@ ${t.join("\n")}`);
         var e6 = n(240864),
           e5 = n(89366),
           e8 = n(202639);
-        let e4 = (0, l.throttle)(
+        let e7 = (0, l.throttle)(
           function (e) {
             let {
                 listRef: t,
@@ -369826,7 +369914,7 @@ ${t.join("\n")}`);
           300,
           { leading: !1, trailing: !0 },
         );
-        var e7 = n(307301),
+        var e4 = n(307301),
           e9 = n(371680),
           te = n(683522);
         let tt = (0, $.xI)(
@@ -369884,7 +369972,7 @@ ${t.join("\n")}`);
                     })
                   : (0, i.jsx)("div", {
                       className: te.P,
-                      children: (0, i.jsx)(e7.PlusSmallIcon, {
+                      children: (0, i.jsx)(e4.PlusSmallIcon, {
                         size: "md",
                         color: "currentColor",
                         className: te.K,
@@ -370015,7 +370103,7 @@ ${t.join("\n")}`);
                           !C && (0, i.jsx)("div", { className: tc.fw }),
                           (0, i.jsx)("div", {
                             className: tc.P0,
-                            children: (0, i.jsx)(e7.PlusSmallIcon, {
+                            children: (0, i.jsx)(e4.PlusSmallIcon, {
                               size: "md",
                               color: "currentColor",
                               className: tc.Kk,
@@ -370682,7 +370770,7 @@ ${t.join("\n")}`);
                 ),
                 f = r.useCallback(
                   (e) => {
-                    e4({
+                    e7({
                       listRef: n,
                       searchQuery: a,
                       nitroLockedSectionStates: A,
@@ -371346,8 +371434,8 @@ ${t.join("\n")}`);
         };
         var t5 = n(964404),
           t8 = n(712687),
-          t4 = n(188567),
-          t7 = n(49999),
+          t7 = n(188567),
+          t4 = n(49999),
           t9 = n(732139),
           ne = n(307731),
           nt = n(818625);
@@ -371529,7 +371617,7 @@ ${t.join("\n")}`);
                     (0, H.v8)();
                   let n = (0, c.BF)(e)?.activeElement;
                   (null == n || "BODY" === n.tagName) &&
-                    t4._.dispatchToLastSubscribed(eA.jej.TEXTAREA_FOCUS);
+                    t7._.dispatchToLastSubscribed(eA.jej.TEXTAREA_FOCUS);
                 },
                 [B, ea, er, ei],
               ),
@@ -371544,12 +371632,12 @@ ${t.join("\n")}`);
                 Q.addEventListener("mousedown", eE),
                 Q.addEventListener("contextmenu", eE),
                 J.subscribe(eA.jej.POPOUT_CLOSE, eI),
-                t4._.subscribe(eA.jej.CLOSE_GIF_PICKER, e),
+                t7._.subscribe(eA.jej.CLOSE_GIF_PICKER, e),
                 () => {
                   Q.removeEventListener("mousedown", eE),
                     Q.removeEventListener("contextmenu", eE),
                     J.unsubscribe(eA.jej.POPOUT_CLOSE, eI),
-                    t4._.unsubscribe(eA.jej.CLOSE_GIF_PICKER, e);
+                    t7._.unsubscribe(eA.jej.CLOSE_GIF_PICKER, e);
                 }
               );
             }, [z, eI, eE, Q, J]),
@@ -371561,7 +371649,7 @@ ${t.join("\n")}`);
             }, [z]),
               r.useEffect(
                 () => () => {
-                  eg && em(t7.i.TAKE_ACTION);
+                  eg && em(t4.i.TAKE_ACTION);
                 },
                 [eg, em],
               ),
@@ -393193,10 +393281,10 @@ ${t.join("\n")}`);
         function e8() {
           j.update();
         }
-        function e4() {
+        function e7() {
           return j.update(), !1;
         }
-        function e7() {
+        function e4() {
           return H.update(), !1;
         }
         function e9(e) {
@@ -393218,8 +393306,8 @@ ${t.join("\n")}`);
               N.A,
               A.A,
             ),
-              this.syncWith([p.Ay], e4),
-              this.syncWith([S.A], e7);
+              this.syncWith([p.Ay], e7),
+              this.syncWith([S.A], e4);
           }
           getSocket() {
             return V;
@@ -395802,7 +395890,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         class e5 extends e6.G {
           constructor() {
             super("discord_protos.qos_token.v1.QosToken", [
-              { no: 1, name: "client_provided", kind: "message", T: () => e7 },
+              { no: 1, name: "client_provided", kind: "message", T: () => e4 },
               { no: 2, name: "derived", kind: "message", T: () => te },
             ]);
           }
@@ -395824,7 +395912,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               let [t, i] = e.tag();
               switch (t) {
                 case 1:
-                  r.clientProvided = e7.internalBinaryRead(
+                  r.clientProvided = e4.internalBinaryRead(
                     e,
                     e.uint32(),
                     n,
@@ -395854,7 +395942,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           }
           internalBinaryWrite(e, t, n) {
             e.clientProvided &&
-              e7
+              e4
                 .internalBinaryWrite(
                   e.clientProvided,
                   t.tag(1, e1.O0.LengthDelimited).fork(),
@@ -395876,7 +395964,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           }
         }
         let e8 = new e5();
-        class e4 extends e6.G {
+        class e7 extends e6.G {
           constructor() {
             super("discord_protos.qos_token.v1.ClientProvidedQosData", [
               { no: 1, name: "is_active", kind: "scalar", T: 8 },
@@ -395920,7 +396008,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             );
           }
         }
-        let e7 = new e4();
+        let e4 = new e7();
         class e9 extends e6.G {
           constructor() {
             super("discord_protos.qos_token.v1.DerivedQosData", [
@@ -396672,7 +396760,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               a = (function (e, t) {
                 let n;
                 var i = ti.A.getForUser(e);
-                let r = e7.create({ isActive: t });
+                let r = e4.create({ isActive: t });
                 if (null != i)
                   try {
                     n = (0, tn.ii)(te, i);
@@ -409858,7 +409946,6 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           let o = {
             ...n,
             guildId: e,
-            nick: n.nick ?? r.username,
             avatar: n.avatar ?? void 0,
             avatarDecoration:
               null != n.avatarDecoration ? { ...n.avatarDecoration } : void 0,
@@ -425143,12 +425230,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e(606053),
                 n.e(229030),
                 n.e(700201),
+                n.e(96961),
                 n.e(161309),
                 n.e(694529),
                 n.e(303807),
                 n.e(143330),
                 n.e(995210),
-                n.e(96961),
                 n.e(114751),
                 n.e(421778),
                 n.e(979605),
@@ -432726,7 +432813,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           } else
             e.style.removeProperty("top"), e.style.removeProperty("bottom");
         }
-        function e4(e) {
+        function e7(e) {
           let {
               discoverButtonRef: t,
               scrollerRef: n,
@@ -432812,7 +432899,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             ],
           });
         }
-        var e7 = n(633965),
+        var e4 = n(633965),
           e9 = n(857071),
           te = n(851109),
           tt = n(72314),
@@ -433497,8 +433584,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           t6 = n(272613),
           t5 = n(398884),
           t8 = n(772366),
-          t4 = n(728321),
-          t7 = n(260509),
+          t7 = n(728321),
+          t4 = n(260509),
           t9 = n(531053),
           ne = n(819638),
           nt = n(260727);
@@ -433527,7 +433614,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           let { disableTooltip: t, lastTargetNode: n } = e,
             a = (0, _.yK)([tr.A], () => tr.A.getGuildsArray()),
             s = (0, _.bG)([eH.default], () => eH.default.getCurrentUser()),
-            l = r.useMemo(() => a.some((e) => (0, t7.bM)(e, s)), [a, s]),
+            l = r.useMemo(() => a.some((e) => (0, t4.bM)(e, s)), [a, s]),
             o = (0, y.re)((e) => (0, y.fD)(e, ne.fc)),
             { analyticsLocations: d } = (0, O.Ay)(),
             c = a.length >= 100 && !(0, t5.Om)(s);
@@ -433555,7 +433642,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           };
           return (0, i.jsx)("div", {
             className: nt.Uq,
-            children: (0, i.jsxs)(t4.A, {
+            children: (0, i.jsxs)(t7.A, {
               tutorialId: l ? "create-more-servers" : "create-first-server",
               inlineSpecs: nn,
               position: "right",
@@ -433808,7 +433895,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return (0, i.jsx)("div", {
             className: nB.Uq,
             "data-guilds-bar-home": !0,
-            children: (0, i.jsx)(t4.A, {
+            children: (0, i.jsx)(t7.A, {
               inlineSpecs: nV,
               tutorialId: "friends-list",
               position: "right",
@@ -433957,8 +434044,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           );
         }
         var n8 = n(36412),
-          n4 = n(283001),
-          n7 = n(354583);
+          n7 = n(283001),
+          n4 = n(354583);
         let n9 = r.memo(function (e) {
           let t,
             a,
@@ -433985,7 +434072,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               (o = !1),
               (d = !1),
               (c = (0, _.bG)([tR.A], () => tR.A.getChannelId())),
-              (E = null != (u = (0, n7.A)()?.guild_id) && a.includes(u)),
+              (E = null != (u = (0, n4.A)()?.guild_id) && a.includes(u)),
               (A = (0, _.bG)([eT.A], () => null != c && eT.A.hasVideo(c), [c])),
               (f = (0, _.bG)([ep.A], () => ep.A.getCurrentUserActiveStream())),
               s &&
@@ -434040,7 +434127,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               },
               [p, m, g, D, v],
             );
-          return (0, i.jsx)(n4.A, {
+          return (0, i.jsx)(n7.A, {
             ...I,
             folderNode: h,
             expanded: C,
@@ -435287,12 +435374,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               n.e(632607),
               n.e(229030),
               n.e(700201),
+              n.e(96961),
               n.e(161309),
               n.e(694529),
               n.e(303807),
               n.e(143330),
               n.e(995210),
-              n.e(96961),
               n.e(114751),
               n.e(852694),
               n.e(979605),
@@ -435463,7 +435550,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   onMouseDown: J,
                   onContextMenu: ee,
                   onKeyDown: et,
-                  icon: (0, t7.Iv)(d, 2 * el, j && u, !0),
+                  icon: (0, t4.Iv)(d, 2 * el, j && u, !0),
                   selected: _ || j,
                   ...B,
                   "aria-setsize": y,
@@ -435489,7 +435576,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                       onMouseDown: J,
                       onContextMenu: ee,
                       onKeyDown: et,
-                      icon: (0, t7.Iv)(d, 2 * el, j && u, !0),
+                      icon: (0, t4.Iv)(d, 2 * el, j && u, !0),
                       selected: _ || j,
                       ...B,
                       "aria-setsize": y,
@@ -435762,7 +435849,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             ? null
             : (0, i.jsx)(i3, {
                 onActivate: t,
-                children: (0, i.jsx)(n4.A, {
+                children: (0, i.jsx)(n7.A, {
                   folderNode: c,
                   expanded: n,
                   selected: u,
@@ -435819,7 +435906,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               });
         }
         var i8 = n(987566);
-        let i4 = (0, el.Fe)({
+        let i7 = (0, el.Fe)({
             createPromise: () =>
               Promise.all([
                 n.e(185830),
@@ -435868,7 +435955,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             webpackId: 489555,
             name: "NotificationsInboxButton",
           }),
-          i7 = (0, ts.uF)() ? 4 : 12 * !(0, ts.cX)();
+          i4 = (0, ts.uF)() ? 4 : 12 * !(0, ts.cX)();
         function i9(e, t, n) {
           let i = e + t,
             r = 2 + t;
@@ -435877,7 +435964,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             iconTotalSize: i,
             badgeVisibleBuffer: i - 16,
             separatorSize: r,
-            heightBeforeGuilds: i7 + r + n * i,
+            heightBeforeGuilds: i4 + r + n * i,
             bottomInset: 16,
           };
         }
@@ -435903,7 +435990,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               (this.setIsScrolledToBottom = n),
               (this.onScroll = i),
               (this.sizes = r),
-              (0, e7.u9)(this.getVisibleGuildIds);
+              (0, e4.u9)(this.getVisibleGuildIds);
           }
           setResizeObserver = () => {
             let e = this.scrollerRef.current?.getScrollerNode();
@@ -436029,7 +436116,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             children: [
               (0, i.jsx)(nj, {}),
               s ? null : l,
-              c === te.RK.SERVER_RAIL_TOP && (0, i.jsx)(i4, {}),
+              c === te.RK.SERVER_RAIL_TOP && (0, i.jsx)(i7, {}),
               s ? (0, i.jsx)(eZ, {}) : null,
               s ? l : null,
               !t && (0, i.jsx)(tq, {}),
@@ -436316,14 +436403,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                               (0, i.jsx)(nY, { fullWidth: !0 }),
                               (0, i.jsx)("div", {
                                 className: i8.JU,
-                                children: (0, i.jsx)(i4, {}),
+                                children: (0, i.jsx)(i7, {}),
                               }),
                             ],
                           }),
                       ],
                     }),
                     eo && !D
-                      ? (0, i.jsx)(e4, {
+                      ? (0, i.jsx)(e7, {
                           discoverButtonRef: el,
                           scrollerRef: er.scrollerRef,
                           onClick: ed,
@@ -437483,7 +437570,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       },
       753190(e, t, n) {
         "use strict";
-        n.d(t, { YW: () => e7, NE: () => t_, Ay: () => tu, Jz: () => tc }),
+        n.d(t, { YW: () => e4, NE: () => t_, Ay: () => tu, Jz: () => tc }),
           n(321073);
         var i = n(477900),
           r = n(582128),
@@ -438096,8 +438183,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         var e6 = n(650583),
           e5 = n(872330);
         let e8 = (0, K.Ld)(),
-          e4 = "PrivateChannelRecipientsInvite",
-          e7 = {
+          e7 = "PrivateChannelRecipientsInvite",
+          e4 = {
             ADD_FRIENDS_TO_DM: "Add Friends to DM",
             NEW_GROUP_DM: "New Group DM",
             MEMBER_LIST: "Member List",
@@ -438223,9 +438310,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               i = "";
             return (
               null != e
-                ? ((n = t ?? e7.ADD_FRIENDS_TO_DM),
+                ? ((n = t ?? e4.ADD_FRIENDS_TO_DM),
                   (i = e.isDM() ? "DM" : "Group DM"))
-                : ((n = e7.NEW_GROUP_DM), (i = "Friends List")),
+                : ((n = e4.NEW_GROUP_DM), (i = "Friends List")),
               { entryPointType: n, entryPointSource: i }
             );
           }
@@ -438531,7 +438618,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   className: e5.qu,
                   children: (0, i.jsx)(eI, {
                     ref: this.nitroUpsellBannerRef,
-                    location: e4,
+                    location: e7,
                     memberCount: this.getTotalSelectedMemberCount(),
                     recipientLimit: (0, z.A)({ useNitroCapExperiment: !0 }),
                   }),
@@ -438888,7 +438975,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               return (0, i.jsx)(ed, {
                 transitionState: e,
                 onClose: t,
-                location: e4,
+                location: e7,
                 nitroAudience: n,
               });
             let r = (0, z.A)({ useNitroCapExperiment: !0 });
@@ -439327,7 +439414,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               [t],
             ),
             d = (0, en.qH)(),
-            { enabled: c } = X.A.useConfig({ location: e4 }),
+            { enabled: c } = X.A.useConfig({ location: e7 }),
             u = (function (e) {
               let { location: t } = e,
                 { inviteMaxAgeSeconds: n } = eS.useConfig({ location: t });
@@ -439427,7 +439514,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                       {
                         targetElementRef: u,
                         channelId: t.id,
-                        location: e4,
+                        location: e7,
                         onAddToGroup: E,
                       },
                       t.id,
@@ -448307,45 +448394,46 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           f = n(687966),
           h = n(554830),
           I = n(866665),
-          p = n(565645),
-          m = n(142617),
-          g = n(819648),
-          T = n(772210),
-          S = n(994641),
-          N = n(33293),
-          C = n(498137),
-          O = n(192339),
-          R = n(834109),
-          L = n(486020),
-          y = n(48763),
-          D = n(792996),
-          b = n(350363),
-          v = n(852717),
-          P = n(241802);
-        let M = {
+          p = n(289873),
+          m = n(565645),
+          g = n(142617),
+          T = n(819648),
+          S = n(772210),
+          N = n(994641),
+          C = n(33293),
+          O = n(498137),
+          R = n(192339),
+          L = n(834109),
+          y = n(486020),
+          D = n(48763),
+          b = n(792996),
+          v = n(350363),
+          P = n(852717),
+          M = n(241802);
+        let U = {
           "--custom-checkpoint-card-logo-size": "44px",
           "--custom-checkpoint-card-footer-height": "28px",
           "--custom-checkpoint-card-wordmark-width": "44px",
         };
-        function U(e) {
+        function w(e) {
           let { src: t } = e;
           return (0, i.jsx)("img", {
             src: t,
             alt: "",
-            className: P.Gl,
+            className: M.Gl,
             draggable: !1,
           });
         }
-        function w() {
+        function G() {
           return (0, i.jsx)(o.UnknownGameIcon, {
             color: l.A.colors.ICON_OVERLAY_DARK,
             size: "xs",
           });
         }
-        function G(e) {
+        function x(e) {
           let { character: t } = e;
           return (0, i.jsx)("div", {
-            className: P.Ij,
+            className: M.Ij,
             children: (0, i.jsx)(d.E, {
               variant: "footnote/normal",
               color: "text-overlay-dark",
@@ -448353,10 +448441,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }),
           });
         }
-        function x(e) {
+        function k(e) {
           let { icon: t, stat: n } = e;
           return (0, i.jsxs)("li", {
-            className: P.N8,
+            className: M.N8,
             children: [
               t,
               (0, i.jsx)(d.E, {
@@ -448370,7 +448458,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             ],
           });
         }
-        function k(e) {
+        function F(e) {
           let { stats: t } = e,
             {
               topGuild: n,
@@ -448381,7 +448469,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             d = r.useMemo(
               () =>
                 null != n
-                  ? L.Ay.getGuildIconURL({
+                  ? y.Ay.getGuildIconURL({
                       id: n.guildId,
                       icon: n.guildIcon,
                       size: 16,
@@ -448392,7 +448480,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             c = r.useMemo(
               () =>
                 o?.applicationImageId != null
-                  ? L.Ay.getApplicationIconURL({
+                  ? y.Ay.getApplicationIconURL({
                       id: o.applicationId,
                       icon: o.applicationImageId,
                       size: 16,
@@ -448403,21 +448491,21 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             h = r.useMemo(
               () =>
                 null != d
-                  ? (0, i.jsx)(U, { src: d })
-                  : (0, i.jsx)(G, { character: a }),
+                  ? (0, i.jsx)(w, { src: d })
+                  : (0, i.jsx)(x, { character: a }),
               [d, a],
             );
           return (0, i.jsxs)("ul", {
-            className: P.M1,
+            className: M.M1,
             children: [
-              (0, i.jsx)(x, {
+              (0, i.jsx)(k, {
                 icon: (0, i.jsx)(u.MicrophoneIcon, {
                   color: l.A.colors.ICON_OVERLAY_DARK,
                   size: "xs",
                 }),
                 stat: t.voice,
               }),
-              (0, i.jsx)(x, {
+              (0, i.jsx)(k, {
                 icon: (0, i.jsx)(_.ChatIcon, {
                   color: l.A.colors.ICON_OVERLAY_DARK,
                   size: "xs",
@@ -448425,16 +448513,16 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 stat: t.messages,
               }),
               null != t.topGuildName
-                ? (0, i.jsx)(x, { icon: h, stat: t.topGuildName })
+                ? (0, i.jsx)(k, { icon: h, stat: t.topGuildName })
                 : null,
-              (0, i.jsx)(x, {
+              (0, i.jsx)(k, {
                 icon: (0, i.jsx)(E.ServerIcon, {
                   color: l.A.colors.ICON_OVERLAY_DARK,
                   size: "xs",
                 }),
                 stat: t.topGuildDaysInteracted,
               }),
-              (0, i.jsx)(x, {
+              (0, i.jsx)(k, {
                 icon: (0, i.jsx)(A.ReactionIcon, {
                   color: l.A.colors.ICON_OVERLAY_DARK,
                   size: "xs",
@@ -448442,17 +448530,17 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 stat: t.reactions,
               }),
               null != t.topEmojiName && null != s
-                ? (0, i.jsx)(x, {
-                    icon: (0, i.jsx)(p.A, {
+                ? (0, i.jsx)(k, {
+                    icon: (0, i.jsx)(m.A, {
                       emojiId: s.emojiId,
                       emojiName: s.emojiName,
                       alt: "",
-                      className: P.Gl,
+                      className: M.Gl,
                     }),
                     stat: t.topEmojiName,
                   })
                 : null,
-              (0, i.jsx)(x, {
+              (0, i.jsx)(k, {
                 icon: (0, i.jsx)(f.GameControllerIcon, {
                   color: l.A.colors.ICON_OVERLAY_DARK,
                   size: "xs",
@@ -448460,28 +448548,28 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 stat: t.daysPlayed,
               }),
               null != t.topGameName
-                ? (0, i.jsx)(x, {
+                ? (0, i.jsx)(k, {
                     icon:
-                      null != c ? (0, i.jsx)(U, { src: c }) : (0, i.jsx)(w, {}),
+                      null != c ? (0, i.jsx)(w, { src: c }) : (0, i.jsx)(G, {}),
                     stat: t.topGameName,
                   })
                 : null,
             ],
           });
         }
-        function F() {
+        function B() {
           return (0, i.jsx)("div", {
-            className: P.qr,
+            className: M.qr,
             "aria-hidden": !0,
             children: (0, i.jsx)(d.E, {
               variant: "display-xs",
               color: "text-overlay-dark",
-              className: P.K8,
-              children: D.intl.string(b.default["CdU/PF"]),
+              className: M.K8,
+              children: b.intl.string(v.default["CdU/PF"]),
             }),
           });
         }
-        function B() {
+        function V() {
           return (0, i.jsx)(h.ArrowLargeRightIcon, {
             color: l.A.colors.ICON_OVERLAY_DARK,
             size: "custom",
@@ -448489,23 +448577,40 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             height: 14,
           });
         }
-        function V(e) {
-          let { onClick: t } = e;
+        function H(e) {
+          let { onClick: t } = e,
+            [n, a] = r.useState(!1);
           return null == t
             ? (0, i.jsx)("div", {
-                className: P.lI,
+                className: M.lI,
                 "aria-hidden": !0,
-                children: (0, i.jsx)(B, {}),
+                children: (0, i.jsx)(V, {}),
               })
             : (0, i.jsx)(I.m, {
-                text: D.intl.string(v.default.UjtEWE),
+                text: b.intl.string(P.default.UjtEWE),
                 ariaHidden: !0,
-                children: (0, i.jsx)(S.f, {
+                children: (0, i.jsx)(N.f, {
                   size: "custom",
-                  className: P.lI,
-                  onClick: t,
-                  "aria-label": D.intl.string(v.default.UjtEWE),
-                  children: (0, i.jsx)(B, {}),
+                  className: M.lI,
+                  onClick: async () => {
+                    if (!n) {
+                      a(!0);
+                      try {
+                        await t();
+                      } finally {
+                        a(!1);
+                      }
+                    }
+                  },
+                  "aria-label": b.intl.string(P.default.UjtEWE),
+                  "aria-busy": n,
+                  children: n
+                    ? (0, i.jsx)(p.y, {
+                        type: p.t.SPINNING_CIRCLE_SIMPLE,
+                        className: M.KV,
+                        itemClassName: M.bZ,
+                      })
+                    : (0, i.jsx)(V, {}),
                 }),
               });
         }
@@ -448516,36 +448621,36 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             A: function (e) {
               let { checkpointData: t, onCtaClick: n } = e,
                 { character: a, stats: l, cardColorPalette: o } = t,
-                d = (0, T.A)(a, 224),
+                d = (0, S.A)(a, 224),
                 u = null != a && null != l,
-                _ = (0, m.FX)("Checkpoint2026CardDisplayComponent"),
-                E = r.useMemo(() => (null != l ? (0, g.R8)(l) : null), [l]);
-              return (0, i.jsxs)(C.A, {
+                _ = (0, g.FX)("Checkpoint2026CardDisplayComponent"),
+                E = r.useMemo(() => (null != l ? (0, T.R8)(l) : null), [l]);
+              return (0, i.jsxs)(O.A, {
                 cardColorPalette: o,
-                size: y.W.SM,
-                className: s()(P.Nr, { [P.Q9]: u, [P.WY]: _ }),
-                style: M,
+                size: D.W.SM,
+                className: s()(M.Nr, { [M.Q9]: u, [M.WY]: _ }),
+                style: U,
                 isLoading: "loading" === d.status,
                 inert: "loading" === d.status,
                 children: [
                   (0, i.jsx)(c.A, {
-                    children: D.intl.string(v.default.Og2R9d),
+                    children: b.intl.string(P.default.Og2R9d),
                   }),
-                  (0, i.jsx)(O.A, {}),
-                  (0, i.jsx)(R.A, {
+                  (0, i.jsx)(R.A, {}),
+                  (0, i.jsx)(L.A, {
                     variant: null != a ? "full" : "short",
-                    className: P.Ss,
+                    className: M.Ss,
                   }),
                   null != a
-                    ? (0, i.jsx)(N.A, {
+                    ? (0, i.jsx)(C.A, {
                         character: a,
                         images: d,
-                        className: P.AM,
+                        className: M.AM,
                       })
                     : null,
-                  null != E ? (0, i.jsx)(k, { stats: E }) : null,
-                  (0, i.jsx)(F, {}),
-                  _ ? (0, i.jsx)(V, { onClick: n }) : null,
+                  null != E ? (0, i.jsx)(F, { stats: E }) : null,
+                  (0, i.jsx)(B, {}),
+                  _ ? (0, i.jsx)(H, { onClick: n }) : null,
                 ],
               });
             },
@@ -472428,8 +472533,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           e6 = n(775602),
           e5 = n(73153),
           e8 = n(713021),
-          e4 = n(527388),
-          e7 = n(20504),
+          e7 = n(527388),
+          e4 = n(20504),
           e9 = n(188567),
           te = n(927813),
           tt = n(824744),
@@ -472650,7 +472755,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     playbackRate: S,
                   }),
                 })
-              : (0, r.jsx)(e4.A, {
+              : (0, r.jsx)(e7.A, {
                   ref: g,
                   className: tr.Zn,
                   controls: !1,
@@ -472722,7 +472827,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   children: el,
                 }),
               }),
-              (0, r.jsx)(e7.A, {
+              (0, r.jsx)(e4.A, {
                 className: tr.bk,
                 iconClassName: tr._j,
                 iconColor: "currentColor",
@@ -476341,8 +476446,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1795159082095",
-                      build_number: "678811",
+                      built_at: "1795216126587",
+                      build_number: "678941",
                     },
                   },
                   retries: 1,
@@ -483158,7 +483263,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }),
           });
         }
-        function e4(e) {
+        function e7(e) {
           let { clientId: t, platformType: n, platformName: a } = e,
             s = (0, f.bG)([U.A], () => U.A.getApplication(t), [t]),
             l = (0, f.bG)([$.default, z.default], () =>
@@ -483271,7 +483376,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             })
           );
         }
-        function e7(e) {
+        function e4(e) {
           let {
               platformType: t,
               platformName: n,
@@ -483725,7 +483830,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 body: (0, i.jsx)(e9, {}),
               };
             case "CONNECT_ACCOUNT":
-              (t = (0, i.jsx)(e4, {
+              (t = (0, i.jsx)(e7, {
                 clientId: A,
                 platformType: eE,
                 platformName: tu,
@@ -483773,7 +483878,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 children: [
                   null != ex &&
                     eF &&
-                    (0, i.jsx)(e7, {
+                    (0, i.jsx)(e4, {
                       platformType: ex.type,
                       platformName: tu,
                       connectedAccount: ex,
@@ -491331,9 +491436,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     n.e(484861),
                     n.e(824922),
                     n.e(576484),
+                    n.e(461582),
                     n.e(116694),
                     n.e(651428),
-                    n.e(461582),
                     n.e(979760),
                     n.e(881104),
                     n.e(141140),
@@ -496154,10 +496259,17 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         let e2 = [
           e1("open", e0.default.yLZjcu),
           {
-            id: "reset",
-            label: e0.default["2DL3aX"],
+            id: "reset-progress",
+            label: e0.default.HYMZmZ,
+            action: () => {
+              (0, eX.BS)(), eZ(eV.intl.string(eV.t.i4jeWR), "success");
+            },
+          },
+          {
+            id: "reset-character",
+            label: e0.default.Q9JHSs,
             action: async () => {
-              (await (0, eX.sm)())
+              (await (0, eX.Z0)())
                 ? eZ(eV.intl.string(eV.t.i4jeWR), "success")
                 : eZ(eV.intl.string(eV.t.fEptJP), "failure");
             },
@@ -496167,7 +496279,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           e1("open-zero-stats", e0.default.BYW9oX, eq.ZERO_STATS),
         ];
         e1("open-unavailable", e0.default["58TARv"], eq.UNAVAILABLE);
-        let e3 = ["reset"];
+        let e3 = ["reset-progress", "reset-character"];
         var e6 = n(852717),
           e5 = n(641214);
         function e8() {
@@ -496177,7 +496289,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             itemClassName: e5.$N,
           });
         }
-        function e4(e) {
+        function e7(e) {
           let { onClose: t } = e,
             n = (0, eU.hF)("CheckpointUserStatusMenuItem"),
             r = (function (e) {
@@ -496228,7 +496340,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 : void 0,
           });
         }
-        var e7 = n(176781),
+        var e4 = n(176781),
           e9 = n(780964),
           te = n(766075),
           tt = n(734066),
@@ -496417,7 +496529,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                           text: eV.intl.string(tU.default["55C2MH"]),
                           children: (0, i.jsx)(to.K, {
                             onClick: () => t(),
-                            icon: e7.ClipsIcon,
+                            icon: e4.ClipsIcon,
                             size: "sm",
                             variant: "icon-only",
                             "aria-label": eV.intl.string(tU.default["55C2MH"]),
@@ -496564,7 +496676,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return a
             ? (0, i.jsx)(eW, {
                 action: "PRESS_CLIPS",
-                icon: e7.ClipsIcon,
+                icon: e4.ClipsIcon,
                 label: eV.intl.string(eV.t.z2jK6X),
                 trailing: l > 0 ? (0, i.jsx)(eN.hV, { count: l }) : null,
                 onClick: () => o(),
@@ -496693,10 +496805,10 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             },
           };
         var t8 = n(570484);
-        let t4 = r.lazy(() =>
+        let t7 = r.lazy(() =>
           Promise.all([n.e(969274), n.e(924832)]).then(n.bind(n, 748579)),
         );
-        function t7() {
+        function t4() {
           let e = (0, c.bG)([tz.Ay], () => tz.Ay.useReducedMotion),
             t = (0, tq.A)((e) => e.shouldRenderTenureLevelUp),
             n = (function () {
@@ -496750,7 +496862,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 }),
                 (0, i.jsx)(r.Suspense, {
                   fallback: null,
-                  children: (0, i.jsx)(t4, { levelUpData: t }),
+                  children: (0, i.jsx)(t7, { levelUpData: t }),
                 }),
               ],
             }),
@@ -497046,8 +497158,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           n6 = n(46653),
           n5 = n(90165),
           n8 = n(403362),
-          n4 = n(49999),
-          n7 = n(518477);
+          n7 = n(49999),
+          n4 = n(518477);
         function n9(e) {
           let { targetElementRef: t, onClose: a } = e,
             [s, l] = r.useState(!1),
@@ -497432,7 +497544,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 onRequestClose: () =>
                   _(
                     d.map((e) => e.id),
-                    n4.i.USER_DISMISS,
+                    n7.i.USER_DISMISS,
                   ),
                 actions: [
                   {
@@ -497442,7 +497554,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                       l(!0),
                         (0, nr.openUserProfileModal)({
                           userId: o,
-                          tabSection: n7.RP.WIDGETS,
+                          tabSection: n4.RP.WIDGETS,
                         })
                           .then(() => {
                             let e = d.map((e) => e.id);
@@ -497475,7 +497587,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                             ),
                               _(
                                 d.map((e) => e.id),
-                                n4.i.TAKE_ACTION,
+                                n7.i.TAKE_ACTION,
                               ),
                               a();
                           })
@@ -497609,7 +497721,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               userId: t.id,
               guildId: void 0,
             });
-          (0, ne.A)(h, f, n7.R7.ACCOUNT_POPOUT);
+          (0, ne.A)(h, f, n4.R7.ACCOUNT_POPOUT);
           let { ref: g } = (0, eR.Ay)(),
             { isHoveringOrFocusing: T, isHovering: S } = (0, tS.A)(g);
           r.useEffect(() => {
@@ -498028,7 +498140,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                                     (0, i.jsx)(n_.A.Overlay, {
                                       className: eH.g0,
                                       children: (0, i.jsx)(eY, {
-                                        children: (0, i.jsx)(e4, {
+                                        children: (0, i.jsx)(e7, {
                                           onClose: n,
                                         }),
                                       }),
@@ -498053,7 +498165,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                                                 })
                                               : null,
                                           onClick: () => {
-                                            null != Z && et(n4.i.TAKE_ACTION),
+                                            null != Z && et(n7.i.TAKE_ACTION),
                                               z();
                                           },
                                           ref: k,
@@ -498241,7 +498353,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                         ],
                       }),
                       (0, i.jsx)(n9, { targetElementRef: k, onClose: n }),
-                      (0, i.jsx)(t7, {}),
+                      (0, i.jsx)(t4, {}),
                     ],
                   }),
                 ],
@@ -498319,9 +498431,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return (0, i.jsx)(iB, {
             ...t,
             onPrimaryAction: () => {
-              r(n4.i.TAKE_ACTION), (0, eM.openBadgeDirectoryModal)();
+              r(n7.i.TAKE_ACTION), (0, eM.openBadgeDirectoryModal)();
             },
-            onRequestClose: () => r(n4.i.USER_DISMISS),
+            onRequestClose: () => r(n7.i.USER_DISMISS),
             targetElementRef: n,
           });
         }
@@ -498353,11 +498465,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     action: {
                       text: eV.intl.string(eV.t.RzWDqY),
                       onClick: function () {
-                        n(n4.i.TAKE_ACTION), r();
+                        n(n7.i.TAKE_ACTION), r();
                       },
                     },
                     onRequestClose: function () {
-                      n(n4.i.USER_DISMISS);
+                      n(n7.i.USER_DISMISS);
                     },
                   })
                 : null,
@@ -498381,7 +498493,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             d = (0, iK.L)(t2.PremiumTypes.TIER_2),
             u = (0, i$.X)("DisplayNameStylesFlywheelCoachmark"),
             _ = (0, r.useCallback)(() => {
-              t(n4.i.TAKE_ACTION);
+              t(n7.i.TAKE_ACTION);
               let e = eL.default.getCurrentUser();
               u && null != e
                 ? (0, nr.openUserProfileModal)({
@@ -498403,7 +498515,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   );
             }, [t, s, u]),
             E = (0, r.useCallback)(() => {
-              t(n4.i.USER_DISMISS);
+              t(n7.i.USER_DISMISS);
             }, [t]);
           (0, r.useEffect)(() => {
             o && l.current?.paused
@@ -498452,7 +498564,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           i6 = n(73153);
         let i5 = { lastSeenInfos: {} },
           i8 = i5;
-        class i4 extends c.Ay.PersistedStore {
+        class i7 extends c.Ay.PersistedStore {
           static displayName = "GuildTagChangedCoachmarkStore";
           static persistKey = "GuildTagChangedCoachmarkStore";
           initialize(e) {
@@ -498465,7 +498577,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             return i8.lastSeenInfos[e] ?? null;
           }
         }
-        let i7 = new i4(i6.h, {
+        let i4 = new i7(i6.h, {
           GUILD_TAG_CHANGED_COACHMARK_SEEN: function (e) {
             let { guildId: t, lastSeenInfo: n } = e;
             i8.lastSeenInfos[t] = n;
@@ -498491,7 +498603,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             isAdopting: r,
             onAdoptTag: a,
             onEditProfile: s,
-          } = (0, i9.A)(t?.id ?? null, () => n(n4.i.TAKE_ACTION));
+          } = (0, i9.A)(t?.id ?? null, () => n(n7.i.TAKE_ACTION));
           if (null == t || !(0, i3.q0)(t))
             return (
               re.error(
@@ -498531,7 +498643,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 body: eV.intl.string(eV.t.DrAXIr),
                 actions: l,
                 size: "md",
-                onRequestClose: () => n(n4.i.USER_DISMISS),
+                onRequestClose: () => n(n7.i.USER_DISMISS),
               }),
             ],
           });
@@ -498545,7 +498657,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             isAdopting: r,
             onAdoptTag: a,
             onEditProfile: s,
-          } = (0, i9.A)(t?.id ?? null, () => n(n4.i.TAKE_ACTION));
+          } = (0, i9.A)(t?.id ?? null, () => n(n7.i.TAKE_ACTION));
           if (null == t || !(0, i3.q0)(t))
             return (
               re.error(
@@ -498585,7 +498697,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 body: eV.intl.string(eV.t.DrAXIr),
                 actions: l,
                 size: "md",
-                onRequestClose: () => n(n4.i.USER_DISMISS),
+                onRequestClose: () => n(n7.i.USER_DISMISS),
               }),
             ],
           });
@@ -498628,12 +498740,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             l = t2.sp.indexOf(t),
             o = (0, ra.I)(t2.sp[l > 0 ? l - 1 : l]).ambient,
             d = (0, r.useCallback)(() => {
-              n(n4.i.TAKE_ACTION),
+              n(n7.i.TAKE_ACTION),
                 tq.A.setState({ shouldRenderTenureLevelUp: !0 }),
                 iU._.dispatch(ee.jej.SHOW_ACCOUNT_PROFILE_POPOUT, {});
             }, [n]),
             c = (0, r.useCallback)(() => {
-              n(n4.i.USER_DISMISS);
+              n(n7.i.USER_DISMISS);
             }, [n]),
             u = t2.VD[t],
             _ = eV.intl.formatToPlainString(eV.t.ewkaVR, {
@@ -498670,7 +498782,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             n = (0, tq.A)((e) => e.isOpen),
             [r, a] = (0, tY.kn)(
               n ? [] : [u.M.ORB_WALLET_PROFILE_INTRODUCTION_COACHMARK],
-              { groupName: n4.m.ACCOUNT_NAME_ZONE, bypassAutoDismiss: !0 },
+              { groupName: n7.m.ACCOUNT_NAME_ZONE, bypassAutoDismiss: !0 },
             );
           return r === u.M.ORB_WALLET_PROFILE_INTRODUCTION_COACHMARK
             ? (0, i.jsx)(nq.A, {
@@ -498682,12 +498794,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 caretConfig: { align: "start" },
                 title: eV.intl.string(eV.t["Q+dH5r"]),
                 body: eV.intl.string(eV.t.YKJw4W),
-                onRequestClose: () => a(n4.i.USER_DISMISS),
+                onRequestClose: () => a(n7.i.USER_DISMISS),
                 actions: [
                   {
                     text: eV.intl.string(eV.t.dcOuei),
                     onClick: function () {
-                      a(n4.i.TAKE_ACTION),
+                      a(n7.i.TAKE_ACTION),
                         tq.A.setState({ shouldScrollToOrbsMenuItem: !0 }),
                         nv.Ay.setUserOpenedWalletViaProfileDCF(!0),
                         iU._.dispatch(ee.jej.SHOW_ACCOUNT_PROFILE_POPOUT, {});
@@ -498744,8 +498856,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 { shouldShow: n = !0 } = t,
                 i = e?.primaryGuild,
                 r = i?.identityGuildId ?? null,
-                a = (0, c.bG)([i7], () =>
-                  null === r ? null : i7.getGuildLastSeenInfo(r),
+                a = (0, c.bG)([i4], () =>
+                  null === r ? null : i4.getGuildLastSeenInfo(r),
                 ),
                 s = (0, c.bG)([i2.A], () => i2.A.getGuild(r)?.profile?.tag),
                 l = null != s && i?.identityGuildId === r && i?.tag === null,
@@ -498775,7 +498887,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 : (0, i.jsxs)(i.Fragment, {
                     children: [
                       (0, i.jsx)(rs, {
-                        groupName: n4.m.ACCOUNT_NAME_ZONE,
+                        groupName: n7.m.ACCOUNT_NAME_ZONE,
                         targetElementRef: e.targetElementRef,
                       }),
                       e.isOrbchievementsEnabled &&
@@ -498784,7 +498896,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                         }),
                       (0, i.jsx)(iW.Ay, {
                         contentTypes: e.additionalDCs ?? [],
-                        groupName: n4.m.ACCOUNT_NAME_ZONE,
+                        groupName: n7.m.ACCOUNT_NAME_ZONE,
                         children: (t) => {
                           let { visibleContent: n, markAsDismissed: r } = t;
                           switch (n) {
@@ -499195,7 +499307,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   }
                   e === ee.fg2.XBOX ? rH.t([rW], t) : rB.t([rW], e, t);
                 })(e),
-                  t(n4.i.TAKE_ACTION);
+                  t(n7.i.TAKE_ACTION);
               }
               return [
                 {
@@ -499213,7 +499325,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               ];
             }, [t]),
             s = r.useCallback(() => {
-              t(n4.i.USER_DISMISS);
+              t(n7.i.USER_DISMISS);
             }, [t]);
           return (0, i.jsx)(nq.A, {
             targetElementRef: n,
@@ -499252,12 +499364,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     e9.X.NOTIFICATION_HOLIDAY_SOUNDPACK,
                     { analyticsLocations: r },
                   ),
-                    t(n4.i.TAKE_ACTION);
+                    t(n7.i.TAKE_ACTION);
                 },
               },
             ],
             gradientColor: "purple",
-            onRequestClose: () => t(n4.i.USER_DISMISS),
+            onRequestClose: () => t(n7.i.USER_DISMISS),
           });
         }
         var rX = n(88001),
@@ -499293,11 +499405,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             s = nS.KP.useSetting(),
             l = a && s !== rJ.KP.FRIENDS_AND_ALL_GUILDS,
             o = r.useCallback(() => {
-              t(n4.i.TAKE_ACTION),
+              t(n7.i.TAKE_ACTION),
                 (0, te.openUserSettings)(e9.X.PROFILE_PRIVACY_CATEGORY);
             }, [t]),
             d = r.useCallback(() => {
-              t(n4.i.USER_DISMISS);
+              t(n7.i.USER_DISMISS);
             }, [t]),
             c = l
               ? s === rJ.KP.FRIENDS_ONLY
@@ -499361,7 +499473,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             h = eo.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, r1.A)("1795159082095", !0);
+            let e = (0, r1.A)("1795216126587", !0);
             t =
               null != e
                 ? eV.intl.formatToPlainString(eV.t.wve4kg, {
@@ -499400,7 +499512,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 }),
                 (0, i.jsx)(iW.Ay, {
                   contentTypes: o,
-                  groupName: n4.m.ACCOUNT_NAME_ZONE,
+                  groupName: n7.m.ACCOUNT_NAME_ZONE,
                   children: (e) => {
                     let { visibleContent: t, markAsDismissed: n } = e;
                     return t === u.M.TINY_BRONCO && null != L.hm
@@ -499437,8 +499549,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         let r6 = iG.Ay.getEnableHardwareAcceleration() ? E.Js : E.eu,
           r5 = 2.5 * tA.A.Millis.SECOND,
           r8 = 2 * tA.A.Millis.MINUTE,
-          r4 = 5 * tA.A.Millis.SECOND;
-        function r7(e) {
+          r7 = 5 * tA.A.Millis.SECOND;
+        function r4(e) {
           let {
               ref: t,
               speaking: n,
@@ -500705,7 +500817,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   badgeDirectoryNuxPopoverVariant: t,
                   additionalDCs: r.avatar,
                   isOrbchievementsEnabled: a,
-                  children: (0, i.jsx)(r7, {
+                  children: (0, i.jsx)(r4, {
                     ...this.props,
                     ref: this.avatarWithPopoutRef,
                     handleMouseLeave: this.handleMouseLeave,
@@ -500857,7 +500969,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             t &&
               n &&
               (s(!0),
-              i.current.start(r4, () => {
+              i.current.start(r7, () => {
                 s(!1);
               }));
           }, [t, n]);
@@ -501556,8 +501668,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
         }
         var e5 = n(976860),
           e8 = n(95701),
-          e4 = n(46653),
-          e7 = n(734057),
+          e7 = n(46653),
+          e4 = n(734057),
           e9 = n(184989),
           te = n(71393),
           tt = n(576705),
@@ -501887,7 +501999,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 ? null
                 : (0, r.jsx)(t9, { applicationId: b.id }),
             et = w
-              ? (0, r.jsx)(t7, {
+              ? (0, r.jsx)(t4, {
                   gameName: X,
                   runningGameId: _?.id,
                   isGameServerHostingInShopEnabled: P,
@@ -502055,7 +502167,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             tooltipText: Q.intl.string(Q.t.sbdnpw),
           });
         }
-        function t4(e) {
+        function t7(e) {
           let {
               tooltipText: t,
               onClick: n,
@@ -502108,7 +502220,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             ],
           });
         }
-        function t7(e) {
+        function t4(e) {
           let {
               gameName: t,
               runningGameId: n,
@@ -502119,7 +502231,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               let { location: t } = e;
               return tB.useConfig({ location: t }).enabled;
             })({ location: "activity-panel" });
-          return (0, r.jsx)(t4, {
+          return (0, r.jsx)(t7, {
             tooltipText: Q.intl.formatToPlainString(tj.default.oZ4ZFn, {
               gameName: t,
             }),
@@ -503177,7 +503289,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             i = a.useRef(null),
             s = a.useRef(null),
             o = a.useRef(null),
-            d = (0, E.bG)([e4.default], () => e4.default.getId()),
+            d = (0, E.bG)([e7.default], () => e7.default.getId()),
             c = (0, E.bG)([ew.Ay, ts.A], () => (0, ez.A)(ew.Ay, ts.A)),
             { enabled: f } = eU.useConfig({
               location: "ActivityPanelGameCard",
@@ -503202,11 +503314,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               let i = e - n.endedAt;
               return { previouslyRunningGame: n, isWithinThreshold: i < eV };
             })(),
-            p = (0, E.bG)([tr.Ay, e7.A], () =>
-              e7.A.getChannel(tr.Ay.getVoiceChannelId()),
+            p = (0, E.bG)([tr.Ay, e4.A], () =>
+              e4.A.getChannel(tr.Ay.getVoiceChannelId()),
             ),
             m = (0, E.bG)([y.Ay], () => y.Ay.getConnectedActivityChannelId()),
-            g = (0, E.bG)([e7.A], () => e7.A.getChannel(m)),
+            g = (0, E.bG)([e4.A], () => e4.A.getChannel(m)),
             T = (0, E.bG)([te.A], () => te.A.getGuild(g?.guild_id)),
             [S, N] = (0, E.yK)([e0.A], () => [
               e0.A.getCurrentUserActiveStream(),
@@ -511681,9 +511793,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 n.e(287239),
                 n.e(841959),
                 n.e(355663),
+                n.e(987408),
                 n.e(936001),
                 n.e(528),
-                n.e(987408),
                 n.e(22330),
                 n.e(833068),
                 n.e(385903),
@@ -517872,7 +517984,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           Jm: () => P,
           TP: () => eZ,
           o2: () => e9,
-          tU: () => e7,
+          tU: () => e4,
           Vk: () => b,
           WN: () => k,
           pe: () => w,
@@ -517885,7 +517997,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           OO: () => ej,
           Bu: () => ee,
           uP: () => e8,
-          Kq: () => e4,
+          Kq: () => e7,
           WT: () => z,
           hd: () => J,
           gD: () => F,
@@ -518615,11 +518727,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           (((f = {}).HIGH_STREAMING_QUALITY = "high_streaming_quality"),
           (f.MID_STREAMING_QUALITY = "mid_streaming_quality"),
           f);
-        let e4 = Object.freeze({
+        let e7 = Object.freeze({
           high_streaming_quality: 2,
           mid_streaming_quality: 1,
         });
-        var e7 =
+        var e4 =
             (((h = {})[(h.UserSettings = 0)] = "UserSettings"),
             (h[(h.ApplicationStoreHome = 1)] = "ApplicationStoreHome"),
             h),
@@ -540395,13 +540507,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           do: () => ey,
           In: () => eH,
           C5: () => e$,
-          UH: () => e7,
+          UH: () => e4,
           H6: () => eX,
           O9: () => ej,
           YW: () => ew,
           S5: () => eL,
           Nb: () => e2,
-          t9: () => e4,
+          t9: () => e7,
           XD: () => e3,
           $P: () => e6,
           UX: () => eB,
@@ -540765,7 +540877,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             h =
               ((t = (function () {
                 let e = (0, I.bG)([g.A], () => g.A.getQuestHomeHero()),
-                  { isShelfEnabled: t } = e4(e),
+                  { isShelfEnabled: t } = e7(e),
                   n = (0, I.bG)(
                     [D.default],
                     () => D.default.getCurrentUser()?.id ?? null,
@@ -541438,7 +541550,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             Date.now() - new Date(e.userStatus?.enrolledAt).getTime() > t
           );
         }
-        function e4(e) {
+        function e7(e) {
           let t = (0, I.bG)([k.A], () => k.A.quests),
             n = e?.questIds,
             i = (0, N.kV)(e);
@@ -541453,7 +541565,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               : { shelfQuests: e, isShelfEnabled: !0 };
           }, [t, n, i]);
         }
-        function e7(e) {
+        function e4(e) {
           let t = R.H1.useSetting(),
             n = e.userStatus?.enrolledAt != null;
           return s.useCallback(() => {
@@ -550152,12 +550264,12 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                     n.e(632607),
                     n.e(229030),
                     n.e(700201),
+                    n.e(96961),
                     n.e(161309),
                     n.e(694529),
                     n.e(303807),
                     n.e(143330),
                     n.e(995210),
-                    n.e(96961),
                     n.e(114751),
                     n.e(852694),
                     n.e(979605),
@@ -552405,37 +552517,31 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
       207560(e, t, n) {
         "use strict";
         var i = n(855986),
-          r = n(362645),
-          a = n(454409);
+          r = n(454409);
         n.d(
           t,
           {},
           {
             SJ: function () {
-              return (0, i.bG)([a.A], () => a.A.hasTeenDefaults());
+              return (0, i.bG)([r.A], () => r.A.hasTeenDefaults());
             },
             To: function (e) {
-              return a.A.isSettingTeenByDefault(e);
+              return r.A.isSettingTeenByDefault(e);
             },
             aX: function (e) {
-              return (0, i.bG)([a.A], () => a.A.isFeatureAgeGated(e));
+              return (0, i.bG)([r.A], () => r.A.isFeatureAgeGated(e));
             },
             d6: function (e) {
-              return a.A.isFeatureAgeGated(e);
+              return r.A.isFeatureAgeGated(e);
             },
             fk: function () {
-              return (0, i.bG)([a.A], () => a.A.hasAgeGatedFeatures());
-            },
-            lF: function () {
-              return (0, i.bG)([a.A], () =>
-                a.A.isMediaTakedownRegulation(r.s.TIDA),
-              );
+              return (0, i.bG)([r.A], () => r.A.hasAgeGatedFeatures());
             },
             u0: function () {
-              return a.A.hasAgeGatedFeatures();
+              return r.A.hasAgeGatedFeatures();
             },
             yv: function (e) {
-              return (0, i.bG)([a.A], () => a.A.isSettingTeenByDefault(e));
+              return (0, i.bG)([r.A], () => r.A.isSettingTeenByDefault(e));
             },
           },
         );
@@ -574843,8 +574949,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           e6 = n(695366),
           e5 = n(834730),
           e8 = n(789645),
-          e4 = n(565645),
-          e7 = n(775602),
+          e7 = n(565645),
+          e4 = n(775602),
           e9 = n(826673),
           te = n(371680),
           tt = n(532624),
@@ -574860,7 +574966,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               () => null != t && h.A.isFavoriteSound(t.soundId),
             ),
             l = (0, E.bG)([eI.A], () => eI.A.getGuild(t?.guildId)),
-            o = (0, E.bG)([e7.Ay], () => e7.Ay.useReducedMotion, []),
+            o = (0, E.bG)([e4.Ay], () => e4.Ay.useReducedMotion, []),
             d = (0, E.bG)([tn.A], () => tn.A.isFocused()),
             c = (0, E.bG)([tt.Ay], () =>
               tt.Ay.getKeybindForAction(eO.hCu.SOUNDBOARD_HOLD),
@@ -574869,7 +574975,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             return (0, i.jsx)(te.A, {
               graphicPrimary:
                 null != t.emojiId || null != t.emojiName
-                  ? (0, i.jsx)(e4.A, {
+                  ? (0, i.jsx)(e7.A, {
                       emojiId: t.emojiId,
                       emojiName: t.emojiName,
                       className: ta.Zg,
@@ -575619,14 +575725,14 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             e8 = r.useCallback(() => {
               null != h.A.getSoundById("3") && e1();
             }, [e1]),
-            e4 = r.useCallback(() => {
+            e7 = r.useCallback(() => {
               let e = (0, B.Dd)(eD.PremiumTypes.TIER_2);
               return ej.intl.format(ej.t["tw/SSq"], {
                 nitroTierName: e,
                 onClick: e8,
               });
             }, [e8]),
-            e7 = r.useCallback((e) => (e5(e, t) ? 65 : 32), [t, e5]),
+            e4 = r.useCallback((e) => (e5(e, t) ? 65 : 32), [t, e5]),
             e9 = r.useCallback(
               (e) => {
                 let t = e === eW.length - 1;
@@ -575746,9 +575852,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   inExpressionPicker: O,
                   newSoundCountByGuildId: ex ? eo : void 0,
                   isNewSound: q,
-                  getSectionHeaderHeight: e7,
+                  getSectionHeaderHeight: e4,
                 }),
-              [$, T, eK, t, O, ex, eo, q, e7],
+              [$, T, eK, t, O, ex, eo, q, e4],
             ),
             tc = r.useCallback(() => {
               let e = (0, J.qD)();
@@ -575770,7 +575876,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                 e$
                   ? (0, i.jsx)(ee.d, {
                       showUpsell: eV,
-                      text: e4(),
+                      text: e7(),
                       button: tc(),
                       buttonAnalyticsObject: {
                         section: eO.JJy.SOUND_PICKER_FLOATING_UPSELL,
@@ -575783,7 +575889,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                       }),
                     })
                   : null,
-              [e4, tc, e$, eV],
+              [e7, tc, e$, eV],
             ),
             tE = r.useCallback(
               (e) =>
@@ -575850,7 +575956,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   renderCategoryList: td,
                   renderHeaderAccessories: to,
                   rowHeight: 48,
-                  sectionHeaderHeight: e7,
+                  sectionHeaderHeight: e4,
                   sectionFooterHeight: e9,
                   itemNodeWidth: 150,
                   gridNavigatorId: K,
@@ -604305,13 +604411,13 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
               })
             : eC;
         }
-        var e4 = n(996988);
-        let e7 = {
-          [e4.d.POPOUT]: 12,
-          [e4.d.MODAL]: 26,
-          [e4.d.SIDEBAR]: 12,
-          [e4.d.VIDEO_TILE_BACKGROUND]: 12,
-          [e4.d.EMBED]: 12,
+        var e7 = n(996988);
+        let e4 = {
+          [e7.d.POPOUT]: 12,
+          [e7.d.MODAL]: 26,
+          [e7.d.SIDEBAR]: 12,
+          [e7.d.VIDEO_TILE_BACKGROUND]: 12,
+          [e7.d.EMBED]: 12,
         };
         function e9(e) {
           let t,
@@ -604364,9 +604470,9 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
           return (
             (t = b
               ? [D.slice(0, 6)]
-              : i === e4.d.MODAL_V2
+              : i === e7.d.MODAL_V2
                 ? [D]
-                : (0, s.chunk)(D, e7[i])),
+                : (0, s.chunk)(D, e4[i])),
             (0, r.jsx)(r.Fragment, {
               children: t.map((e, t) =>
                 (0, r.jsx)(
@@ -614879,7 +614985,7 @@ ${t}`;
             (e) => e?.value ?? !1,
             (e) => l._t.create({ value: e }),
           );
-        let e4 = (0, _.c$)(
+        let e7 = (0, _.c$)(
           "appearance",
           "timestampHourCycle",
           (e) => e ?? s.PZ.AUTO,
@@ -614898,7 +615004,7 @@ ${t}`;
             (e) => e ?? s.kW.SWIPE_RIGHT_TO_LEFT_UNSET,
             (e) => e,
           );
-        let e7 = (0, _.c$)(
+        let e4 = (0, _.c$)(
             "userContent",
             "lastReceivedChangelogId",
             (e) => e ?? "0",
@@ -614971,7 +615077,7 @@ ${t}`;
             NF: e6,
             NO: P,
             NR: L,
-            PZ: e4,
+            PZ: e7,
             Pf: X,
             Pw: eK,
             Q$: eb,
@@ -615034,7 +615140,7 @@ ${t}`;
             on: eg,
             oz: y,
             pE: eX,
-            pK: e7,
+            pK: e4,
             pR: W,
             qN: e8,
             rs: eM,
@@ -619453,6 +619559,7 @@ ${t}`;
                         n.e(287239),
                         n.e(841959),
                         n.e(904727),
+                        n.e(987408),
                         n.e(666326),
                         n.e(574252),
                         n.e(78),
@@ -619460,7 +619567,6 @@ ${t}`;
                         n.e(697354),
                         n.e(143883),
                         n.e(823879),
-                        n.e(987408),
                         n.e(870272),
                         n.e(22330),
                         n.e(761902),
@@ -619476,13 +619582,13 @@ ${t}`;
                         n.e(84846),
                         n.e(218126),
                         n.e(979783),
+                        n.e(461582),
                         n.e(627001),
                         n.e(785888),
                         n.e(165836),
                         n.e(116694),
                         n.e(669779),
                         n.e(651428),
-                        n.e(461582),
                         n.e(486381),
                         n.e(979760),
                         n.e(641906),
@@ -623320,8 +623426,8 @@ ${t}`;
               timelineIndicatorConfig: e6,
               scrubPreviewVttUrl: e5,
               scrubPreviewImageUrl: e8,
-              loadingSpinnerPosition: e4 = "top-left",
-              crossOrigin: e7 = "anonymous",
+              loadingSpinnerPosition: e7 = "top-left",
+              crossOrigin: e4 = "anonymous",
               withVideoHalo: e9 = !1,
               objectFit: te = "contain",
               minWidth: tt = 240,
@@ -623367,10 +623473,10 @@ ${t}`;
             [t0, t1] = r.useState(ep),
             [t2, t3] = r.useState(!1),
             [t6, t5] = r.useState(!1),
-            [t8, t4] = r.useState(!1),
-            t7 = eX && t6 && !t2,
+            [t8, t7] = r.useState(!1),
+            t4 = eX && t6 && !t2,
             t9 = eX && t8 && !t2,
-            ne = e3 || t7,
+            ne = e3 || t4,
             nt = (function () {
               let [e, t] = r.useState(
                 () => window.matchMedia?.(H)?.matches ?? !1,
@@ -623601,7 +623707,7 @@ ${t}`;
               initialTimeSec: er,
               onError: nO,
               onHlsInstance: eM,
-              crossOrigin: e7,
+              crossOrigin: e4,
             }),
             { isReady: ny } = (0, R.A)({
               videoRef: nT,
@@ -623687,7 +623793,7 @@ ${t}`;
           let n6 = t2 ? n1 >= 1 : ne,
             n5 = t2 ? n1 >= 2 : eW || nB,
             n8 = nY || (t2 && n1 >= 3),
-            n4 = (0, T.A)((e) => {
+            n7 = (0, T.A)((e) => {
               let t = e.contentRect.width;
               if (!(t <= 0)) {
                 if (t2) {
@@ -623695,11 +623801,11 @@ ${t}`;
                   null != e && (0, N._U)(e) && nZ(t);
                   return;
                 }
-                (nF.current = t), t5(t < 400), eX && t4(t < 240), nq();
+                (nF.current = t), t5(t < 400), eX && t7(t < 240), nq();
               }
             }),
-            n7 = e$ || eY || eX || t2;
-          (0, g.g)(n_, n4, [], { enabled: n7, fireOnMount: n7 });
+            n4 = e$ || eY || eX || t2;
+          (0, g.g)(n_, n7, [], { enabled: n4, fireOnMount: n4 });
           let n9 = nW.timelineVerticalPaddingPx;
           (0, m.u5)(() => {
             nf.current && (nf.current = !1);
@@ -624155,7 +624261,7 @@ ${t}`;
                 return nO(u.SB.STALLED);
               },
               onClick: iL,
-              crossOrigin: e7 ?? void 0,
+              crossOrigin: e4 ?? void 0,
               src: nR || nD ? null : (tl ?? null),
               onSourceError: function () {
                 return nO(u.SB.SOURCE_ERROR);
@@ -624309,7 +624415,7 @@ ${t}`;
                         tA === u.Q6.PLAYING &&
                         null != tl &&
                         (0, i.jsx)("span", {
-                          className: s()(z.S, { [z.F]: "center" === e4 }),
+                          className: s()(z.S, { [z.F]: "center" === e7 }),
                           "data-testid":
                             "discord-web-video-player-loading-spinner",
                           children: (0, i.jsx)(f.y, {
@@ -625194,8 +625300,8 @@ ${t}`;
             );
           let e6 = k.intl.string(0 === eS ? k.t.YqAjXy : k.t.w4m945),
             { icon: e5, label: e8 } = V[t],
-            e4 = k.intl.string(e8),
-            e7 = (0, i.jsx)(W, {
+            e7 = k.intl.string(e8),
+            e4 = (0, i.jsx)(W, {
               iconComponent: X,
               visible: a,
               onClick: eq,
@@ -625258,8 +625364,8 @@ ${t}`;
                   (0, i.jsx)(W, {
                     iconComponent: e5,
                     visible: a,
-                    ariaLabel: e4,
-                    tooltipLabel: e4,
+                    ariaLabel: e7,
+                    tooltipLabel: e7,
                     shortcut: c.TJ.PLAYBACK,
                     onClick: $,
                     ref: eF,
@@ -625309,7 +625415,7 @@ ${t}`;
                         className: F.RD,
                         "data-testid":
                           "discord-web-video-player-volume-control",
-                        children: e7,
+                        children: e4,
                       })
                     : eo
                       ? (0, i.jsx)(E.Y, {
@@ -625350,7 +625456,7 @@ ${t}`;
                               className: F.RD,
                               "data-testid":
                                 "discord-web-video-player-volume-control",
-                              children: e7,
+                              children: e4,
                             }),
                         })
                       : (0, i.jsxs)("div", {
@@ -625362,7 +625468,7 @@ ${t}`;
                           "data-testid":
                             "discord-web-video-player-volume-control",
                           children: [
-                            e7,
+                            e4,
                             (0, i.jsx)(l.animated.div, {
                               className: F.MQ,
                               "data-testid":
@@ -652577,7 +652683,7 @@ ${t}`;
             videoDeviceId: e$.dx,
             qos: !1,
             qosMigrated: !1,
-            videoHook: e7.supports(e$.O5.VIDEO_HOOK),
+            videoHook: e4.supports(e$.O5.VIDEO_HOOK),
             experimentalSoundshare2: null,
             useSystemScreensharePicker: null,
             h265Enabled: !0,
@@ -652615,19 +652721,19 @@ ${t}`;
               bypassSystemInputProcessing: !0,
             },
           },
-          e4 = {
+          e7 = {
             modeOptions: { vadUseKrisp: !1 },
             noiseCancellation: !1,
             noiseSuppression: !0,
           },
-          e7 = (0, D.hB)((0, D.WI)());
+          e4 = (0, D.hB)((0, D.WI)());
         function e9(e) {
           return ef.k.getConfig({ location: e }).videoEnabled;
         }
         ez.enableNativeLogger(!0);
         let te = {},
           tt = new Set([e$.x.DEFAULT]),
-          tn = e7.supports(e$.O5.AUTO_ENABLE),
+          tn = e4.supports(e$.O5.AUTO_ENABLE),
           ti = !1,
           tr = e$.x.STREAM,
           ta = 0,
@@ -652705,7 +652811,7 @@ ${t}`;
           if (e === e$.x.STREAM)
             return { ...t, modeOptions: { ...t.modeOptions, vadLeading: 0 } };
           let n = e8[t.activeInputProfile ?? eK.m.CUSTOM],
-            i = nv() ? t0 : e4,
+            i = nv() ? t0 : e7,
             r = {
               ...(t.modeOptions ?? {}),
               ...(n.modeOptions ?? {}),
@@ -652722,7 +652828,7 @@ ${t}`;
         function t6(e) {
           let t = t3(e.context),
             n = t.mode;
-          e.context === e$.x.DEFAULT && (0, ec.N)(e7, !1, !1),
+          e.context === e$.x.DEFAULT && (0, ec.N)(e4, !1, !1),
             e.setInputMode(n, {
               vadThreshold: t.modeOptions.threshold,
               vadAutoThreshold: t.modeOptions.autoThreshold,
@@ -652766,7 +652872,7 @@ ${t}`;
             e.setSkipNoiseCancellationIfMuted(t && n), w.A.updateNativeMute();
           }
         }
-        function t4() {
+        function t7() {
           let e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
@@ -652784,13 +652890,13 @@ ${t}`;
                 : null != n.desktopSource.sourcePid &&
                   t3().videoHook &&
                   U.c1(n.desktopSource.sourcePid),
-              e7.setGoLiveSource(null, tr)),
+              e4.setGoLiveSource(null, tr)),
             n?.cameraSource != null &&
               (n.cameraSource.videoDeviceGuid !==
                 t?.cameraSource?.videoDeviceGuid ||
                 n.cameraSource.audioDeviceGuid !==
                   t?.cameraSource?.audioDeviceGuid) &&
-              e7.setGoLiveSource(null, tr),
+              e4.setGoLiveSource(null, tr),
             tI || e)
           ) {
             let t = t3().videoDeviceId;
@@ -652798,7 +652904,7 @@ ${t}`;
               ? (t = tp)
               : (tm = t),
               (tp = (tI = e) ? ng(tu, t) : e$.qe),
-              e7.setVideoInputDevice(tp);
+              e4.setVideoInputDevice(tp);
           }
           if (((a = t), null != t)) {
             let e = {
@@ -652824,7 +652930,7 @@ ${t}`;
                 { minCaptureWidth: d, minCaptureHeight: c } = eE.getConfig({
                   location: "updateVideo",
                 });
-              e7.setGoLiveSource(
+              e4.setGoLiveSource(
                 {
                   desktopDescription: {
                     id: t.desktopSource.id,
@@ -652856,7 +652962,7 @@ ${t}`;
               );
             }
             null != t.cameraSource &&
-              e7.setGoLiveSource(
+              e4.setGoLiveSource(
                 {
                   cameraDescription: {
                     videoDeviceGuid: t.cameraSource.videoDeviceGuid,
@@ -652871,7 +652977,7 @@ ${t}`;
               );
           }
         }
-        function t7(e) {
+        function t4(e) {
           switch (e) {
             case e$.CO.KRISP_CPU_OVERUSE:
               return F.B6.KrispCpuOveruse;
@@ -652920,7 +653026,7 @@ ${t}`;
             (ez.warn(`Voice processing error: ${e}`),
             (0, F.QW)({
               type: F.iy.NOISE_CANCELLER_ERROR,
-              underlyingError: t7(e),
+              underlyingError: t4(e),
               voiceProcessingErrorDetails: t,
             }),
             eL.default.track(ey.HAw.VOICE_PROCESSING, {
@@ -653008,7 +653114,7 @@ ${t}`;
                 echoCancellationEnabled: n,
               },
             );
-          e7.setVoiceSampleRateCap(a), e7.setVoiceChannelCountCap(s);
+          e4.setVoiceSampleRateCap(a), e4.setVoiceChannelCountCap(s);
         }
         function ns(e) {
           let t = t3(),
@@ -653042,19 +653148,19 @@ ${t}`;
         function no() {
           return (
             (0, p.cX)() &&
-            e7.supports(e$.O5.SCREEN_CAPTURE_KIT) &&
+            e4.supports(e$.O5.SCREEN_CAPTURE_KIT) &&
             L().satisfies(M.A?.os.release, ea.e)
           );
         }
         function nd() {
           return (
             (0, p.uF)() &&
-            e7.supports(e$.O5.AUTOMATIC_AUDIO_SUBSYSTEM) &&
-            e7.supports(e$.O5.AUDIO_SUBSYSTEM_DEFERRED_SWITCH)
+            e4.supports(e$.O5.AUTOMATIC_AUDIO_SUBSYSTEM) &&
+            e4.supports(e$.O5.AUDIO_SUBSYSTEM_DEFERRED_SWITCH)
           );
         }
         function nc() {
-          return e7.supports(e$.O5.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING);
+          return e4.supports(e$.O5.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING);
         }
         function nu(e) {
           let t =
@@ -653071,24 +653177,24 @@ ${t}`;
         function n_() {
           let e = t3();
           nN(e.inputDeviceId),
-            e7.setAudioOutputDevice(e.outputDeviceId),
-            t4(),
-            e7.setInputVolume(e.inputVolume),
+            e4.setAudioOutputDevice(e.outputDeviceId),
+            t7(),
+            e4.setInputVolume(e.inputVolume),
             nE(),
-            e7.setAecDump(e.aecDumpEnabled),
-            e7.setSidechainCompression(e.sidechainCompression),
-            e7.setSidechainCompressionStrength(e.sidechainCompressionStrength),
-            e7.setAudioInputBypassSystemProcessing(
+            e4.setAecDump(e.aecDumpEnabled),
+            e4.setSidechainCompression(e.sidechainCompression),
+            e4.setSidechainCompressionStrength(e.sidechainCompressionStrength),
+            e4.setAudioInputBypassSystemProcessing(
               e.bypassSystemInputProcessing,
             ),
             (0, p.j9)() && m.Ay?.setOpenH264Enabled?.(e.openH264Enabled);
         }
         function nE() {
-          e7.setOutputVolume(t3().outputVolume);
+          e4.setOutputVolume(t3().outputVolume);
         }
         function nA() {
           tn ||
-            e7
+            e4
               .enable()
               .then(() =>
                 P.h.dispatch({
@@ -653234,7 +653340,7 @@ ${t}`;
                       succeeded: !1,
                     });
                 }
-              })(t.guid, e, e7);
+              })(t.guid, e, e4);
             } catch (e) {
               ez.warn("Unable to query audio effects", e);
             }
@@ -653244,12 +653350,12 @@ ${t}`;
             return null != e.guid && "" !== e.guid ? e.guid : e.name;
         }
         function nN(e) {
-          e7.setAudioInputDevice(e),
+          e4.setAudioInputDevice(e),
             nT(e),
             (function (e) {
               if (!(0, p.uF)() && !(0, p.cX)() && !(0, p.j9)()) return;
               let t = nS(td[e]);
-              null != t && e7.watchDeviceHardwareMutedChange?.(t);
+              null != t && e4.watchDeviceHardwareMutedChange?.(t);
             })(e);
         }
         function nC(e) {
@@ -653270,7 +653376,7 @@ ${t}`;
               null == (0, eP.tM)(i, e) &&
                 (t.muted ? (s[e] = !0) : delete s[e],
                 t.volume !== r ? (l[e] = t.volume) : delete l[e],
-                e7.eachConnection((n) => {
+                e4.eachConnection((n) => {
                   n.setLocalVolume(e, t.volume), n.setLocalMute(e, t.muted);
                 }, i));
             if (e)
@@ -653278,7 +653384,7 @@ ${t}`;
                 null == a[e] &&
                   (delete s[e],
                   delete l[e],
-                  e7.eachConnection((t) => {
+                  e4.eachConnection((t) => {
                     t.setLocalVolume(e, r), t.setLocalMute(e, !1);
                   }, i));
             nu({ localMutes: s, localVolumes: l }, i);
@@ -653339,8 +653445,8 @@ ${t}`;
         }
         function nD(e) {
           let t = t3(),
-            n = e7.getAudioSubsystem(),
-            r = e7.getAudioLayer(),
+            n = e4.getAudioSubsystem(),
+            r = e4.getAudioLayer(),
             a = ng(td, t.inputDeviceId),
             s = td[a]?.name,
             l = (0, eR.A)(t.noiseCancellation, i.getSystemMicrophoneMode());
@@ -653365,7 +653471,7 @@ ${t}`;
             r = eF.A.hasNoiseSuppression(n) || e.noiseSuppression,
             a = nn(eF.A.hasAutomaticGainControl(n) || e.automaticGainControl),
             s = e.noiseCancellation;
-          e7.setLoopback(t, {
+          e4.setLoopback(t, {
             echoCancellation: i,
             echoCancellationPreEcho: !t,
             noiseSuppression: r,
@@ -653380,10 +653486,10 @@ ${t}`;
         function nP(e) {
           e === e$.rB.AUTOMATIC
             ? (nu({ automaticAudioSubsystem: !0 }), nM())
-            : (nu({ automaticAudioSubsystem: !1 }), e7.setAudioSubsystem(e));
+            : (nu({ automaticAudioSubsystem: !1 }), e4.setAudioSubsystem(e));
         }
         function nM() {
-          e7.queueAudioSubsystem(e$.rB.EXPERIMENTAL);
+          e4.queueAudioSubsystem(e$.rB.EXPERIMENTAL);
         }
         function nU(e) {
           let { section: t } = e;
@@ -653393,12 +653499,12 @@ ${t}`;
           static displayName = "MediaEngineStore";
           initialize() {
             let e;
-            (l ??= new el(e7, this)),
+            (l ??= new el(e4, this)),
               t_.start(e1, () => {
                 ez.error("Device enumeration timed out"),
                   eL.default.track(ey.HAw.DEVICE_ENUMERATION_TIMEOUT, {});
               }),
-              e7.on(D.bg.Connection, (e) => {
+              e4.on(D.bg.Connection, (e) => {
                 let t;
                 nb(), t6(e), t8(e), ns(e);
                 let n = t3();
@@ -653543,7 +653649,7 @@ ${t}`;
                   tY?.startsWith("Qualcomm") &&
                   eg("MediaEngineStore").enabled &&
                   e.setExperimentFlag(e$.fd.WMF_GPU_ENCODE, !0),
-                e7.setHasFullbandPerformance(
+                e4.setHasFullbandPerformance(
                   null === (t = (0, k.A)()) || t >= 31,
                 ),
                 e.setRemoteAudioHistory(1e3),
@@ -653626,10 +653732,10 @@ ${t}`;
                   e.setBitRate(ek.A.bitrate),
                   e.applyVideoQualityMode(ej.A.mode),
                   (0, p.uF)() &&
-                    e7.supports(e$.O5.ASYNC_VIDEO_INPUT_DEVICE_INIT) &&
-                    e7.setAsyncVideoInputDeviceInit(!0);
+                    e4.supports(e$.O5.ASYNC_VIDEO_INPUT_DEVICE_INIT) &&
+                    e4.setAsyncVideoInputDeviceInit(!0);
               }),
-              e7.on(D.bg.DeviceChange, (e, t, n) => {
+              e4.on(D.bg.DeviceChange, (e, t, n) => {
                 t_.stop(),
                   P.h.dispatch({
                     type: "MEDIA_ENGINE_DEVICES",
@@ -653638,14 +653744,14 @@ ${t}`;
                     videoDevices: n,
                   });
               }),
-              e7.on(D.bg.VolumeChange, (e, t) => {
+              e4.on(D.bg.VolumeChange, (e, t) => {
                 P.h.dispatch({
                   type: "AUDIO_VOLUME_CHANGE",
                   inputVolume: e,
                   outputVolume: t,
                 });
               }),
-              e7.on(D.bg.DesktopSourceEnd, (e, t) => {
+              e4.on(D.bg.DesktopSourceEnd, (e, t) => {
                 P.h.dispatch({
                   type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE",
                   settings: null,
@@ -653653,7 +653759,7 @@ ${t}`;
                   errorCode: t,
                 });
               }),
-              e7.on(D.bg.AudioPermission, (e) => {
+              e4.on(D.bg.AudioPermission, (e) => {
                 (tB = !0),
                   P.h.dispatch({
                     type: "MEDIA_ENGINE_PERMISSION",
@@ -653661,14 +653767,14 @@ ${t}`;
                     granted: e,
                   });
               }),
-              e7.on(D.bg.VideoPermission, (e) => {
+              e4.on(D.bg.VideoPermission, (e) => {
                 P.h.dispatch({
                   type: "MEDIA_ENGINE_PERMISSION",
                   kind: "video",
                   granted: e,
                 });
               }),
-              e7.on(D.bg.WatchdogTimeout, async () => {
+              e4.on(D.bg.WatchdogTimeout, async () => {
                 let e;
                 if ("canary" === window.GLOBAL_ENV.RELEASE_CHANNEL)
                   try {
@@ -653705,7 +653811,7 @@ ${t}`;
                   ),
                   M.A.app.relaunch());
               }),
-              e7.on(D.bg.VideoInputInitialized, (e) => {
+              e4.on(D.bg.VideoInputInitialized, (e) => {
                 eL.default.track(ey.HAw.VIDEO_INPUT_INITIALIZED, {
                   device_name: e.description.name,
                   time_to_first_frame_ms: e.initializationTimerExpired
@@ -653717,7 +653823,7 @@ ${t}`;
                   rtc_connection_id: eV.A.getRTCConnectionId(),
                 });
               }),
-              e7.on(D.bg.AudioInputInitialized, (e) => {
+              e4.on(D.bg.AudioInputInitialized, (e) => {
                 eL.default.track(ey.HAw.AUDIO_INPUT_INITIALIZED, {
                   device_name: e.description.name,
                   time_to_initialized_ms: Math.round(
@@ -653726,10 +653832,10 @@ ${t}`;
                   rtc_connection_id: eV.A.getRTCConnectionId(),
                 });
               }),
-              e7.on(D.bg.ClipsRecordingRestartNeeded, () => {
+              e4.on(D.bg.ClipsRecordingRestartNeeded, () => {
                 P.h.dispatch({ type: "CLIPS_RESTART" });
               }),
-              e7.on(D.bg.ClipsInitFailure, (e, t) => {
+              e4.on(D.bg.ClipsInitFailure, (e, t) => {
                 let n = ta < 3;
                 (ta += 1),
                   P.h.dispatch({
@@ -653743,52 +653849,52 @@ ${t}`;
                         `Clips init failure budget exhausted (${ta} consecutive unhealthy attempts); skipping auto-restart. A settings flip / game change / app restart will retry.`,
                       );
               }),
-              e7.on(D.bg.ClipsRecordingHealthy, () => {
+              e4.on(D.bg.ClipsRecordingHealthy, () => {
                 0 !== ta &&
                   (ez.info(
                     `Clips bridge reported healthy; resetting restart budget (was ${ta}).`,
                   ),
                   (ta = 0));
               }),
-              e7.on(D.bg.ClipsRecordingReadyChanged, (e) => {
+              e4.on(D.bg.ClipsRecordingReadyChanged, (e) => {
                 ts !== e &&
                   (ez.info(`Clips recorder ready changed: ${e}`), (ts = e));
               }),
-              e7.on(D.bg.ClipsBridgeIdleShutdown, () => {
+              e4.on(D.bg.ClipsBridgeIdleShutdown, () => {
                 ez.info("Clips bridge idle shutdown");
               }),
-              e7.on(D.bg.ClipsRecordingEnded, (e, t) => {
+              e4.on(D.bg.ClipsRecordingEnded, (e, t) => {
                 s?.desktopSource?.id === e &&
                   (null != t && a?.desktopSource?.soundshareId !== t && U.c1(t),
                   (s = null));
               }),
-              e7.on(D.bg.NativeScreenSharePickerUpdate, (e, t) => {
+              e4.on(D.bg.NativeScreenSharePickerUpdate, (e, t) => {
                 P.h.dispatch({
                   type: "NATIVE_SCREEN_SHARE_PICKER_UPDATE",
                   existing: e,
                   content: t,
                 });
               }),
-              e7.on(D.bg.NativeScreenSharePickerCancel, (e) => {
+              e4.on(D.bg.NativeScreenSharePickerCancel, (e) => {
                 P.h.dispatch({
                   type: "NATIVE_SCREEN_SHARE_PICKER_CANCEL",
                   existing: e,
                 });
               }),
-              e7.on(D.bg.NativeScreenSharePickerError, (e) => {
+              e4.on(D.bg.NativeScreenSharePickerError, (e) => {
                 P.h.dispatch({
                   type: "NATIVE_SCREEN_SHARE_PICKER_ERROR",
                   error: e,
                 });
               }),
-              e7.on(D.bg.AudioDeviceModuleError, (e, t, n) => {
+              e4.on(D.bg.AudioDeviceModuleError, (e, t, n) => {
                 eL.default.track(ey.HAw.AUDIO_DEVICE_MODULE_ERROR, {
                   audio_device_module: e,
                   code: t,
                   device_name: n,
                 });
               }),
-              e7.on(D.bg.VideoCodecError, (e) => {
+              e4.on(D.bg.VideoCodecError, (e) => {
                 let t =
                     "encode" === e.mode
                       ? F.iy.VIDEO_ENCODE_ERROR
@@ -653800,7 +653906,7 @@ ${t}`;
                     : { type: t, ...n, videoDecoder: e.implName },
                 );
               }),
-              e7.on(D.bg.ConnectionStats, (e) => {
+              e4.on(D.bg.ConnectionStats, (e) => {
                 P.h.dispatch({
                   type: "MEDIA_ENGINE_CONNECTION_STATS",
                   connectionStats: e.map((e) => {
@@ -653814,13 +653920,13 @@ ${t}`;
                   }),
                 });
               }),
-              e7.on(D.bg.VoiceProcessingError, ne),
-              e7.on(D.bg.VideoFilterError, nt),
-              e7.on(D.bg.VoiceQueueMetrics, (e) => {
+              e4.on(D.bg.VoiceProcessingError, ne),
+              e4.on(D.bg.VideoFilterError, nt),
+              e4.on(D.bg.VoiceQueueMetrics, (e) => {
                 let t = nG(e);
                 null !== t && eL.default.track(ey.HAw.VOICE_QUEUE_METRICS, t);
               }),
-              e7.setOnVideoContainerResized((e, t, n) => {
+              e4.setOnVideoContainerResized((e, t, n) => {
                 P.h.dispatch({
                   type: "VIDEO_SIZE_UPDATE",
                   streamId: e,
@@ -653829,14 +653935,14 @@ ${t}`;
               }),
               (async function () {
                 if (
-                  !e7.supports(e$.O5.VAAPI) ||
+                  !e4.supports(e$.O5.VAAPI) ||
                   window.DiscordNative?.processUtils?.getSystemInfo == null
                 )
                   return;
                 let e = await window.DiscordNative.processUtils.getSystemInfo();
                 (e.electronGPUInfo?.gpuDevice ?? []).some(
                   (e) => 4098 === e.vendorId,
-                ) && ((tJ = !0), (tQ = e7.supports(e$.O5.GAMESCOPE_CAPTURE)));
+                ) && ((tJ = !0), (tQ = e4.supports(e$.O5.GAMESCOPE_CAPTURE)));
               })(),
               l.reset(),
               (0, eb.w)().then((e) => {
@@ -653848,15 +653954,15 @@ ${t}`;
                   tX = t.length > 0 && t.every((e) => "10de" === e.vendor_id);
                 }
               }),
-              e7.on(D.bg.DeviceHardwareMutedChange, (e, t) => {
+              e4.on(D.bg.DeviceHardwareMutedChange, (e, t) => {
                 P.h.dispatch({
                   type: "AUDIO_INPUT_DEVICE_HARDWARE_MUTED_CHANGED",
                   deviceGuid: e,
                   hardwareMuted: t,
                 });
               }),
-              e7.on(D.bg.SystemMicrophoneModeChange, (e) => {
-                (A = e), e7.eachConnection(ns), i.emitChange();
+              e4.on(D.bg.SystemMicrophoneModeChange, (e) => {
+                (A = e), e4.eachConnection(ns), i.emitChange();
               }),
               null != (e = b.w.get("audio")) &&
                 (b.w.set(eq, { [e$.x.DEFAULT]: e }), b.w.remove("audio")),
@@ -653877,7 +653983,7 @@ ${t}`;
                     ((e.vadThrehsoldMigrated = !0),
                     e.modeOptions?.threshold === -40 &&
                       (e.modeOptions.threshold = -60)),
-                  e7.supports(e$.O5.SIDECHAIN_COMPRESSION) &&
+                  e4.supports(e$.O5.SIDECHAIN_COMPRESSION) &&
                     e.sidechainCompressionSettingVersion < 1 &&
                     ((e.sidechainCompressionSettingVersion = 1),
                     (e.sidechainCompression = !0)),
@@ -653923,7 +654029,7 @@ ${t}`;
                       }
                       (0, F.QW)({
                         type: F.iy.NOISE_CANCELLER_ERROR,
-                        underlyingError: t7(e),
+                        underlyingError: t4(e),
                       }),
                         eL.default.track(ey.HAw.VOICE_PROCESSING, {
                           noise_canceller_error: e,
@@ -653932,7 +654038,7 @@ ${t}`;
                       ty = !1;
                     }
                   })())
-                : (0, p.HZ)() && e7.supports(e$.O5.NOISE_CANCELLATION)
+                : (0, p.HZ)() && e4.supports(e$.O5.NOISE_CANCELLATION)
                   ? ((tD = !0), i.emitChange())
                   : (0, p.HZ)() && nu({ noiseCancellation: !1 }),
               (0, p.j9)() &&
@@ -653997,7 +654103,7 @@ ${t}`;
               (0, p.uF)() &&
                 p.isPlatformEmbedded &&
                 null === to &&
-                e7
+                e4
                   .getCodecSurvey()
                   .then((e) => {
                     try {
@@ -654020,9 +654126,9 @@ ${t}`;
                     });
                   }),
               (tW = {
-                [e$.O5.VIDEO]: e7.supports(e$.O5.VIDEO),
-                [e$.O5.DESKTOP_CAPTURE]: e7.supports(e$.O5.DESKTOP_CAPTURE),
-                [e$.O5.HYBRID_VIDEO]: e7.supports(e$.O5.HYBRID_VIDEO),
+                [e$.O5.VIDEO]: e4.supports(e$.O5.VIDEO),
+                [e$.O5.DESKTOP_CAPTURE]: e4.supports(e$.O5.DESKTOP_CAPTURE),
+                [e$.O5.HYBRID_VIDEO]: e4.supports(e$.O5.HYBRID_VIDEO),
               }),
               this.waitFor(
                 V.A,
@@ -654042,20 +654148,20 @@ ${t}`;
           supports(e) {
             return (
               (e !== e$.O5.VIDEO || !!e9("MediaEngineStore.supports")) &&
-              e7.supports(e)
+              e4.supports(e)
             );
           }
           supportsInApp(e) {
             return (
               (e !== e$.O5.VIDEO || !!e9("MediaEngineStore.supportsInApp")) &&
-              (tW[e] || e7.supports(e))
+              (tW[e] || e4.supports(e))
             );
           }
           isSupported() {
-            return e7.supported();
+            return e4.supported();
           }
           isNoiseSuppressionSupported() {
-            return e7.supports(e$.O5.NOISE_SUPPRESSION);
+            return e4.supports(e$.O5.NOISE_SUPPRESSION);
           }
           isNoiseCancellationSupported() {
             return nv();
@@ -654064,38 +654170,38 @@ ${t}`;
             return tU;
           }
           isAutomaticGainControlSupported() {
-            return e7.supports(e$.O5.AUTOMATIC_GAIN_CONTROL);
+            return e4.supports(e$.O5.AUTOMATIC_GAIN_CONTROL);
           }
           shouldOfferManualSubsystemSelection() {
             return (
               !nc() &&
-              (e7.supports(e$.O5.LEGACY_AUDIO_SUBSYSTEM) ||
-                e7.supports(e$.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM))
+              (e4.supports(e$.O5.LEGACY_AUDIO_SUBSYSTEM) ||
+                e4.supports(e$.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM))
             );
           }
           showBypassSystemInputProcessing() {
             return (
-              e7.supports(e$.O5.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING) &&
-              "experimental" === e7.getAudioSubsystem()
+              e4.supports(e$.O5.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING) &&
+              "experimental" === e4.getAudioSubsystem()
             );
           }
           isAdvancedVoiceActivitySupported() {
             return nv();
           }
           isAecDumpSupported() {
-            return e7.supports(e$.O5.AEC_DUMP);
+            return e4.supports(e$.O5.AEC_DUMP);
           }
           getAecDump() {
             return t3().aecDumpEnabled;
           }
           getMediaEngine() {
-            return e7;
+            return e4;
           }
           getVideoComponent() {
-            return e7.Video;
+            return e4.Video;
           }
           getCameraComponent() {
-            return e7.Camera;
+            return e4.Camera;
           }
           getKrispSuppressionLevel() {
             return _ ?? 100;
@@ -654204,7 +654310,7 @@ ${t}`;
             return e !== ex.default.getId() && (t3(t).localMutes[e] || !1);
           }
           supportsDisableLocalVideo() {
-            return e7.supports(e$.O5.DISABLE_VIDEO);
+            return e4.supports(e$.O5.DISABLE_VIDEO);
           }
           isLocalVideoDisabled(e) {
             let t =
@@ -654328,7 +654434,7 @@ ${t}`;
           }
           getSidechainCompression() {
             return (
-              e7.supports(e$.O5.SIDECHAIN_COMPRESSION) &&
+              e4.supports(e$.O5.SIDECHAIN_COMPRESSION) &&
               t3().sidechainCompression
             );
           }
@@ -654376,7 +654482,7 @@ ${t}`;
             return t3().silenceWarning;
           }
           getDebugLogging() {
-            return e7.getDebugLogging();
+            return e4.getDebugLogging();
           }
           getQoS() {
             return t3().qos;
@@ -654393,10 +654499,10 @@ ${t}`;
           getAudioSubsystem() {
             return nd() && t3().automaticAudioSubsystem
               ? e$.rB.AUTOMATIC
-              : e7.getAudioSubsystem();
+              : e4.getAudioSubsystem();
           }
           getMLSSigningKey(e, t) {
-            return e7.getMLSSigningKey(e, t);
+            return e4.getMLSSigningKey(e, t);
           }
           getActiveInputProfile() {
             return t3().activeInputProfile;
@@ -654458,7 +654564,7 @@ ${t}`;
               : this.getModeOptions(e).vadLeading;
           }
           setCanHavePriority(e, t) {
-            e7.eachConnection((n) => n.setCanHavePriority(e, t));
+            e4.eachConnection((n) => n.setCanHavePriority(e, t));
           }
           isInteractionRequired() {
             return ti;
@@ -654467,7 +654573,7 @@ ${t}`;
             return t3().videoHook;
           }
           supportsVideoHook() {
-            return e7.supports(e$.O5.VIDEO_HOOK);
+            return e4.supports(e$.O5.VIDEO_HOOK);
           }
           getExperimentalSoundshare() {
             let e = t3().experimentalSoundshare2;
@@ -654478,14 +654584,14 @@ ${t}`;
           }
           supportsExperimentalSoundshare() {
             return (
-              e7.supports(e$.O5.EXPERIMENTAL_SOUNDSHARE) &&
+              e4.supports(e$.O5.EXPERIMENTAL_SOUNDSHARE) &&
               L().satisfies(M.A?.os.release, ea.$x)
             );
           }
           supportsHookSoundshare() {
             return (
               (0, p.uF)() &&
-              e7.supports(e$.O5.SOUNDSHARE) &&
+              e4.supports(e$.O5.SOUNDSHARE) &&
               L().satisfies(M.A?.os.release, ea.ws)
             );
           }
@@ -654496,7 +654602,7 @@ ${t}`;
             return e && (t ?? n);
           }
           supportsSystemScreensharePicker() {
-            return e7.supports(e$.O5.NATIVE_SCREENSHARE_PICKER);
+            return e4.supports(e$.O5.NATIVE_SCREENSHARE_PICKER);
           }
           getUseVaapiEncoder() {
             return tJ;
@@ -654549,13 +654655,13 @@ ${t}`;
           }
           supportsScreenSoundshare() {
             return (0, p.cX)()
-              ? e7.supports(e$.O5.SOUNDSHARE) &&
+              ? e4.supports(e$.O5.SOUNDSHARE) &&
                   L().satisfies(M.A?.os.release, ea.P$) &&
                   no()
               : (0, p.uF)()
-                ? e7.supports(e$.O5.SCREEN_SOUNDSHARE) &&
+                ? e4.supports(e$.O5.SCREEN_SOUNDSHARE) &&
                   this.getExperimentalSoundshare()
-                : !!(0, p.j9)() && e7.supports(e$.O5.SCREEN_SOUNDSHARE);
+                : !!(0, p.j9)() && e4.supports(e$.O5.SCREEN_SOUNDSHARE);
           }
           getSystemMicrophoneMode() {
             if ((0, p.uF)()) {
@@ -654583,18 +654689,18 @@ ${t}`;
           }
           fetchAsyncResources() {
             let e = { fetchDave: (0, p.HZ)() };
-            return e7.fetchAsyncResources(e);
+            return e4.fetchAsyncResources(e);
           }
           startDavePreload() {
             !tG &&
               ((tG = !0),
               (0, p.HZ)() &&
-                e7.fetchAsyncResources({ fetchDave: !0 }).catch((e) => {
+                e4.fetchAsyncResources({ fetchDave: !0 }).catch((e) => {
                   ez.warn("DAVE preload failed:", e), ew.A.captureException(e);
                 }));
           }
           getSupportedSecureFramesProtocolVersion() {
-            return e7.getSupportedSecureFramesProtocolVersion();
+            return e4.getSupportedSecureFramesProtocolVersion();
           }
           hasClipsSource() {
             return null != s;
@@ -654603,7 +654709,7 @@ ${t}`;
             return ts;
           }
           isClipsRecordingReadySignalSupported() {
-            return e7.supports(e$.O5.CLIPS_RECORDING_READY_EVENTS);
+            return e4.supports(e$.O5.CLIPS_RECORDING_READY_EVENTS);
           }
           getGpuBrand() {
             return tY;
@@ -654663,7 +654769,7 @@ ${t}`;
               currentVoiceChannelId: i,
               video: r,
             } = e;
-            if ((i !== n && t4(r, null), null != t || null == n)) {
+            if ((i !== n && t7(r, null), null != t || null == n)) {
               tL = !1;
               return;
             }
@@ -654671,7 +654777,7 @@ ${t}`;
             tL = !0;
             let a = t3();
             (a.mute || a.deaf) &&
-              (nu({ deaf: !1, mute: !1 }), e7.eachConnection(t8));
+              (nu({ deaf: !1, mute: !1 }), e4.eachConnection(t8));
           },
           VOICE_STATE_UPDATES: function (e) {
             let { voiceStates: t } = e;
@@ -654679,20 +654785,20 @@ ${t}`;
               if (r === t.sessionId) {
                 (tE = t.mute || t.suppress),
                   (th = t.deaf),
-                  e7.eachConnection(t8);
+                  e4.eachConnection(t8);
                 let e =
                     null != t.guildId &&
                     null != t.channelId &&
                     null != tM &&
                     tM !== t.channelId,
                   n = !tL && null == t.channelId;
-                return t4(!e && !n && tI), (tM = t.channelId), !0;
+                return t7(!e && !n && tI), (tM = t.channelId), !0;
               }
               return (
                 __OVERLAY__ ||
                   t.userId !== ex.default.getId() ||
                   null != eV.A.getChannelId() ||
-                  t4(!1, null),
+                  t7(!1, null),
                 e
               );
             }, !1);
@@ -654705,12 +654811,12 @@ ${t}`;
                 (nc()
                   ? nP(e$.rB.AUTOMATIC)
                   : t.automaticAudioSubsystem && nM()),
-              e7.supports(e$.O5.OFFLOAD_ADM_CONTROLS) &&
-                e7.setOffloadAdmControls(!0),
+              e4.supports(e$.O5.OFFLOAD_ADM_CONTROLS) &&
+                e4.setOffloadAdmControls(!0),
               (0, p.un)() &&
                 en.getConfig({ location: "handleConnectionOpen" }).enabled &&
-                e7.updateFieldTrial("WebRTC-Audio-iOS-Holding", "Enabled"),
-              (0, p.un)() && (e7.setNcModels?.(eo), i.emitChange()),
+                e4.updateFieldTrial("WebRTC-Audio-iOS-Holding", "Enabled"),
+              (0, p.un)() && (e4.setNcModels?.(eo), i.emitChange()),
               nT(t.inputDeviceId),
               (0, p.uF)())
             ) {
@@ -654718,7 +654824,7 @@ ${t}`;
                 let { location: t } = e;
                 return eS.getConfig({ location: t });
               })({ location: "handleConnectionOpen" });
-              null != e && e7.setAudioOutputBufferDurationMs(e);
+              null != e && e4.setAudioOutputBufferDurationMs(e);
             }
             nO(), nE();
           },
@@ -654749,7 +654855,7 @@ ${t}`;
                   l.reset();
                 break;
               case ey.S7L.RTC_CONNECTED:
-                t4();
+                t7();
                 break;
               case ey.S7L.DISCONNECTED:
                 (t0 = {}),
@@ -654763,7 +654869,7 @@ ${t}`;
                         "If you are auto-disabled, then you are also disabled.",
                       ),
                         delete t[n],
-                        e7.eachConnection(
+                        e4.eachConnection(
                           (e) => e.setLocalVideoDisabled(n, !1),
                           e,
                         );
@@ -654776,7 +654882,7 @@ ${t}`;
           },
           AUDIO_SET_TEMPORARY_SELF_MUTE: function (e) {
             let { mute: t } = e;
-            (tA = t), e7.eachConnection(t8);
+            (tA = t), e4.eachConnection(t8);
           },
           AUDIO_TOGGLE_SELF_MUTE: function (e) {
             let { context: t, playSoundEffect: n } = e,
@@ -654786,15 +654892,15 @@ ${t}`;
             (i = !r && !i) || (r = !1),
               n || (tg = !0),
               nu({ mute: i, deaf: r }, t),
-              e7.eachConnection(t8);
+              e4.eachConnection(t8);
           },
           AUDIO_SET_SELF_MUTE: function (e) {
             let { context: t, mute: n, playSoundEffect: i } = e;
-            nu({ mute: n }, t), i || (tg = !0), e7.eachConnection(t8);
+            nu({ mute: n }, t), i || (tg = !0), e4.eachConnection(t8);
           },
           AUDIO_TOGGLE_SELF_DEAF: function (e) {
             let { context: t } = e;
-            nu({ deaf: !t3(t).deaf }, t), e7.eachConnection(t8);
+            nu({ deaf: !t3(t).deaf }, t), e4.eachConnection(t8);
           },
           AUDIO_TOGGLE_LOCAL_MUTE: function (e) {
             let { context: t, userId: n } = e;
@@ -654802,7 +654908,7 @@ ${t}`;
             let { localMutes: i } = t3(t);
             i[n] ? delete i[n] : (i[n] = !0),
               nu({ localMutes: i }, t),
-              e7.eachConnection((e) => e.setLocalMute(n, i[n] || !1), t);
+              e4.eachConnection((e) => e.setLocalMute(n, i[n] || !1), t);
           },
           AUDIO_SET_LOCAL_VIDEO_DISABLED: function (e) {
             let {
@@ -654869,7 +654975,7 @@ ${t}`;
             _ && !s && tV.delete(n),
               s ? (l[n] = !0) : delete l[n],
               nu({ disabledLocalVideos: l }, t, r),
-              e7.eachConnection(
+              e4.eachConnection(
                 (e) => e.setLocalVideoDisabled(n, l[n] ?? !1),
                 t,
               );
@@ -654881,27 +654987,27 @@ ${t}`;
               { localVolumes: a } = t3(t);
             i === (r ? 18 : 100) ? delete a[n] : (a[n] = i),
               nu({ localVolumes: a }, t),
-              e7.eachConnection((e) => e.setLocalVolume(n, i), t);
+              e4.eachConnection((e) => e.setLocalVolume(n, i), t);
           },
           AUDIO_SET_LOCAL_PAN: function (e) {
             let { context: t, userId: n, left: i, right: r } = e,
               { localPans: a } = t3(t);
             (a[n] = { left: i, right: r }),
               nu({ localPans: a }, t),
-              e7.eachConnection((e) => e.setLocalPan(n, i, r), t);
+              e4.eachConnection((e) => e.setLocalPan(n, i, r), t);
           },
           AUDIO_SET_MODE: function (e) {
             let { context: t, mode: n, options: i } = e;
             nu({ mode: n, modeOptions: { ...i, updatedAt: Date.now() } }, t),
-              e7.eachConnection(t6);
+              e4.eachConnection(t6);
           },
           AUDIO_SET_INPUT_VOLUME: function (e) {
             let { volume: t } = e;
-            nu({ inputVolume: t5(t) }), e7.setInputVolume(t);
+            nu({ inputVolume: t5(t) }), e4.setInputVolume(t);
           },
           AUDIO_SET_OUTPUT_VOLUME: function (e) {
             let { volume: t } = e;
-            nu({ outputVolume: t }), e7.setOutputVolume(t);
+            nu({ outputVolume: t }), e4.setOutputVolume(t);
           },
           AUDIO_SET_INPUT_DEVICE: function (e) {
             let { id: t } = e;
@@ -654909,7 +655015,7 @@ ${t}`;
               (tl = performance.now()),
               nu({ inputDeviceId: t }),
               nN(t),
-              e7.eachConnection(ns),
+              e4.eachConnection(ns),
               (o = void 0),
               (d = void 0),
               (c = void 0),
@@ -654919,17 +655025,17 @@ ${t}`;
           AUDIO_SET_OUTPUT_DEVICE: function (e) {
             let { id: t } = e;
             nu({ outputDeviceId: (t = ng(tc, t)) }),
-              e7.setAudioOutputDevice(t),
-              e7.eachConnection(ns);
+              e4.setAudioOutputDevice(t),
+              e4.eachConnection(ns);
           },
           AUDIO_SET_ACTIVE_INPUT_PROFILE: function (e) {
             let { inputProfile: t } = e;
             nu({ activeInputProfile: t });
             let n = t3();
-            e7.eachConnection((e) => {
+            e4.eachConnection((e) => {
               t6(e), ns(e);
             }),
-              e7.setAudioInputBypassSystemProcessing(
+              e4.setAudioInputBypassSystemProcessing(
                 n.bypassSystemInputProcessing,
               ),
               nb();
@@ -654938,18 +655044,18 @@ ${t}`;
             let t = nu({ echoCancellation: e.enabled }),
               n =
                 eF.A.hasEchoCancellation(t.inputDeviceId) || t.echoCancellation;
-            e7.eachConnection((e) => e.setEchoCancellation(n)),
+            e4.eachConnection((e) => e.setEchoCancellation(n)),
               nb(),
               nD(e.location);
           },
           AUDIO_SET_SIDECHAIN_COMPRESSION: function (e) {
             let t;
             (t = nu({ sidechainCompression: e.enabled })),
-              e7.setSidechainCompression(t.sidechainCompression);
+              e4.setSidechainCompression(t.sidechainCompression);
           },
           AUDIO_SET_SIDECHAIN_COMPRESSION_STRENGTH: function (e) {
             let t = nu({ sidechainCompressionStrength: e.strength });
-            e7.setSidechainCompressionStrength(t.sidechainCompressionStrength);
+            e4.setSidechainCompressionStrength(t.sidechainCompressionStrength);
           },
           AUDIO_SET_LOOPBACK: function (e) {
             let { enabled: t, loopbackReason: n } = e;
@@ -654959,19 +655065,19 @@ ${t}`;
             let t = nu({ noiseSuppression: e.enabled }),
               n =
                 eF.A.hasNoiseSuppression(t.inputDeviceId) || t.noiseSuppression;
-            e7.eachConnection((e) => e.setNoiseSuppression(n)),
+            e4.eachConnection((e) => e.setNoiseSuppression(n)),
               nb(),
               nD(e.location);
           },
           AUDIO_SET_AUTOMATIC_GAIN_CONTROL: function (e) {
             let t = nu({ automaticGainControl: e.enabled });
-            e7.eachConnection((e) => ni(e, t.automaticGainControl)),
+            e4.eachConnection((e) => ni(e, t.automaticGainControl)),
               nb(),
               nD(e.location);
           },
           AUDIO_SET_NOISE_CANCELLATION: function (e) {
             let t = nu({ noiseCancellation: e.enabled });
-            e7.eachConnection((e) => nr(e, t.noiseCancellation)),
+            e4.eachConnection((e) => nr(e, t.noiseCancellation)),
               nb(),
               nD(e.location);
           },
@@ -654982,7 +655088,7 @@ ${t}`;
             nu({ silenceWarning: e.enabled });
           },
           AUDIO_SET_DEBUG_LOGGING: function (e) {
-            e7.setDebugLogging(e.enabled);
+            e4.setDebugLogging(e.enabled);
           },
           AUDIO_SET_KRISP_SUPPRESSION_LEVEL: function (e) {
             let { level: t } = e;
@@ -654991,7 +655097,7 @@ ${t}`;
           AUDIO_SET_NOISE_CANCELLATION_ENABLE_STATS: function (e) {
             (0, p.HZ)() ||
               ((tP = e.enabled),
-              e7.setNoiseCancellationEnableStats?.(e.enabled));
+              e4.setNoiseCancellationEnableStats?.(e.enabled));
           },
           MEDIA_ENGINE_SET_VIDEO_HOOK: function (e) {
             nu({ videoHook: e.enabled });
@@ -655014,7 +655120,7 @@ ${t}`;
                 attenuateWhileSpeakingSelf: n,
                 attenuateWhileSpeakingOthers: i,
               });
-            e7.eachConnection((e) =>
+            e4.eachConnection((e) =>
               e.setAttenuation(
                 r.attenuation,
                 r.attenuateWhileSpeakingSelf,
@@ -655024,7 +655130,7 @@ ${t}`;
           },
           AUDIO_SET_QOS: function (e) {
             let { enabled: t } = e;
-            nu({ qos: t }), e7.eachConnection((e) => e.setQoS(t));
+            nu({ qos: t }), e4.eachConnection((e) => e.setQoS(t));
           },
           MEDIA_ENGINE_DEVICES: function (e) {
             let t = td;
@@ -655036,7 +655142,7 @@ ${t}`;
               !N().isEqual(td, t))
             ) {
               let e = t3();
-              nN(ng(td, e.inputDeviceId)), e7.eachConnection(ns);
+              nN(ng(td, e.inputDeviceId)), e4.eachConnection(ns);
             }
             !(function (e) {
               let t = tc;
@@ -655049,11 +655155,11 @@ ${t}`;
               ) {
                 let e = t3(),
                   n = ng(tc, e.outputDeviceId);
-                e7.setAudioOutputDevice(n), e7.eachConnection(ns);
+                e4.setAudioOutputDevice(n), e4.eachConnection(ns);
                 let i = nC(t),
                   r = nC(tc);
                 i !== r &&
-                  e7.eachConnection((e) => {
+                  e4.eachConnection((e) => {
                     e.context === e$.x.STREAM &&
                       e.setSoundshareDiscardRearChannels(r);
                   });
@@ -655075,7 +655181,7 @@ ${t}`;
                   "" === tp &&
                   n[tp]?.name === "Default" &&
                   !n[tp]?.disabled;
-              t4(e || t || i);
+              t7(e || t || i);
             }
           },
           AUDIO_VOLUME_CHANGE: function (e) {
@@ -655111,28 +655217,28 @@ ${t}`;
           AUDIO_SET_BYPASS_SYSTEM_INPUT_PROCESSING: function (e) {
             let t = e.bypassEnabled;
             nu({ bypassSystemInputProcessing: t }),
-              e7.setAudioInputBypassSystemProcessing(t),
+              e4.setAudioInputBypassSystemProcessing(t),
               na(),
               nD(e.location);
           },
           MEDIA_ENGINE_SET_AUDIO_ENABLED: function (e) {
             (tn = e.enabled),
               e.unmute && nu({ mute: !1, deaf: !1 }),
-              e7.eachConnection(t8);
+              e4.eachConnection(t8);
           },
           MEDIA_ENGINE_SET_VIDEO_ENABLED: function (e) {
             let { enabled: t } = e;
-            eC.A.requestPermission(eW.iL.CAMERA), t4(t);
+            eC.A.requestPermission(eW.iL.CAMERA), t7(t);
           },
           MEDIA_ENGINE_PERMISSION: function (e) {
             let { kind: t, granted: n } = e;
             if (!n)
               switch (t) {
                 case "audio":
-                  (tn = !1), e7.eachConnection(t8);
+                  (tn = !1), e4.eachConnection(t8);
                   break;
                 case "video":
-                  t4(!1);
+                  t7(!1);
               }
           },
           MEDIA_ENGINE_SET_GO_LIVE_SOURCE: function (e) {
@@ -655149,8 +655255,8 @@ ${t}`;
                 !o &&
                 ({ soundshareId: e, soundshareSession: n } = nR(d, r)),
                 s !== tr &&
-                  (null != a && e7.setGoLiveSource(null, tr), (tr = s)),
-                t4(s === e$.x.STREAM && tI, {
+                  (null != a && e4.setGoLiveSource(null, tr), (tr = s)),
+                t7(s === e$.x.STREAM && tI, {
                   desktopSource: {
                     id: i,
                     sourcePid: d,
@@ -655168,7 +655274,7 @@ ${t}`;
                 } = t.cameraSettings,
                 a = e === e$.x.STREAM && tI,
                 s = t.qualityOptions ?? { resolution: 720, frameRate: 30 };
-              t4(a, {
+              t7(a, {
                 cameraSource: {
                   videoDeviceGuid: n,
                   audioDeviceGuid: i,
@@ -655176,22 +655282,22 @@ ${t}`;
                 },
                 quality: { resolution: s.resolution, frameRate: s.frameRate },
               });
-            } else t4(tI, null);
+            } else t7(tI, null);
           },
           MEDIA_ENGINE_SET_VIDEO_DEVICE: function (e) {
             let { id: t } = e;
-            nu({ videoDeviceId: (t = ng(tu, t)) }), t4();
+            nu({ videoDeviceId: (t = ng(tu, t)) }), t7();
           },
           MEDIA_ENGINE_INTERACTION_REQUIRED: function (e) {
             return (
               ti !== e.required &&
-              ((ti = e.required), e.required || e7.interact(), !0)
+              ((ti = e.required), e.required || e4.interact(), !0)
             );
           },
           USER_SETTINGS_MODAL_INIT: nU,
           USER_SETTINGS_MODAL_SET_SECTION: nU,
           CERTIFIED_DEVICES_SET: function () {
-            return e7.eachConnection(ns), !1;
+            return e4.eachConnection(ns), !1;
           },
           RPC_APP_CONNECTED: function (e) {
             let { application: t } = e;
@@ -655215,43 +655321,43 @@ ${t}`;
           APP_STATE_UPDATE: function (e) {
             let { state: t } = e,
               n = H.A.isEnabled();
-            if (t === ey.g6G.BACKGROUND && tI && !n) (tN = !0), t4(!1);
+            if (t === ey.g6G.BACKGROUND && tI && !n) (tN = !0), t7(!1);
             else {
               if (t !== ey.g6G.ACTIVE || !tN) return !1;
-              (tN = !1), t4(!0);
+              (tN = !1), t7(!0);
             }
             return !0;
           },
           SET_CHANNEL_BITRATE: function (e) {
-            e7.eachConnection((t) => t.setBitRate(e.bitrate));
+            e4.eachConnection((t) => t.setBitRate(e.bitrate));
           },
           SET_VAD_PERMISSION: function (e) {
             let { hasPermission: t } = e,
               n = !t;
             if (n === tf) return !1;
-            (tf = n), e7.eachConnection(t8);
+            (tf = n), e4.eachConnection(t8);
           },
           SET_NATIVE_PERMISSION: function (e) {
             let { state: t, permissionType: n } = e,
               i = t === eW.hL.ACCEPTED;
             switch (n) {
               case eW.iL.AUDIO:
-                (tB = !0), e7.eachConnection(t8);
+                (tB = !0), e4.eachConnection(t8);
                 break;
               case eW.iL.CAMERA:
-                !i && tI && t4(!1);
+                !i && tI && t7(!1);
                 break;
               default:
                 return !1;
             }
           },
           SET_CHANNEL_VIDEO_QUALITY_MODE: function (e) {
-            e7.eachConnection((t) => t.applyVideoQualityMode(e.mode));
+            e4.eachConnection((t) => t.applyVideoQualityMode(e.mode));
           },
           MEDIA_ENGINE_SET_AEC_DUMP: function (e) {
             let { enabled: t } = e,
               n = nu({ aecDumpEnabled: t });
-            e7.setAecDump(n.aecDumpEnabled);
+            e4.setAecDump(n.aecDumpEnabled);
           },
           MEDIA_ENGINE_SET_OPENH264_ENABLED: function (e) {
             let { enabled: t } = e;
@@ -655270,14 +655376,14 @@ ${t}`;
           CHANNEL_DELETE: function () {
             if ((!tI && null == a) || null != eV.A.getRTCConnectionId())
               return !1;
-            t4(!1, null);
+            t7(!1, null);
           },
           MEDIA_ENGINE_NOISE_CANCELLATION_ERROR: function (e) {
             if (e.code === e$.CO.KRISP_CPU_OVERUSE) {
               (t0.noiseCancellation = !1), (t0.noiseSuppression = !0);
               let e = t3();
               return (
-                e7.eachConnection((t) => nr(t, e.noiseCancellation)),
+                e4.eachConnection((t) => nr(t, e.noiseCancellation)),
                 nb(),
                 nD(),
                 !0
@@ -655289,7 +655395,7 @@ ${t}`;
             return (
               e.code === e$.CO.KRISP_VAD_CPU_OVERUSE &&
               ((t0.modeOptions = { vadUseKrisp: !1 }),
-              e7.eachConnection((e) => t6(e)),
+              e4.eachConnection((e) => t6(e)),
               !0)
             );
           },
@@ -655298,7 +655404,7 @@ ${t}`;
           },
           MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: function (e) {
             let { settings: t } = e;
-            e7.applyMediaFilterSettings(t).finally(() => {
+            e4.applyMediaFilterSettings(t).finally(() => {
               (tw = !1), i.emitChange();
             });
           },
@@ -655323,7 +655429,7 @@ ${t}`;
             if (null == M.A || (s?.desktopSource.id === t && s.quality === r))
               return !1;
             null != s &&
-              (e7.setClipsSource(null),
+              (e4.setClipsSource(null),
               (0, p.uF)() &&
                 (null != s.desktopSource.soundshareId
                   ? U.c1(s.desktopSource.soundshareId)
@@ -655347,7 +655453,7 @@ ${t}`;
               { minCaptureWidth: _, minCaptureHeight: E } = eE.getConfig({
                 location: "handleClipsInit",
               });
-            e7.setClipsSource({
+            e4.setClipsSource({
               desktopDescription: {
                 id: s.desktopSource.id,
                 soundshareId: s.desktopSource.soundshareId,
@@ -655378,7 +655484,7 @@ ${t}`;
           },
           CLIPS_SETTINGS_UPDATE: function (e) {
             let { settings: t } = e;
-            !1 === t.clipsEnabled && ((s = null), e7.setClipsSource(null));
+            !1 === t.clipsEnabled && ((s = null), e4.setClipsSource(null));
           },
           MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: function (e) {
             tz = e.enabled;
@@ -658964,7 +659070,7 @@ ${t}`;
       218461(e, t, n) {
         "use strict";
         let i;
-        n.d(t, { Cr: () => eM, Ay: () => e4, Wm: () => ey }),
+        n.d(t, { Cr: () => eM, Ay: () => e7, Wm: () => ey }),
           n(321073),
           n(938796);
         var r = n(435558),
@@ -661430,7 +661536,7 @@ ${t}`;
               );
             },
           }),
-          e4 = e8;
+          e7 = e8;
       },
       994500(e, t, n) {
         "use strict";
@@ -674474,7 +674580,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "9ec60d3faa6aa9c8cf59a9f6ca7906f18a4c6385",
+                      "17c41702dc3cea93f4048f7a87289b8e894a9073",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", W),
@@ -685302,7 +685408,7 @@ ${l.join(" +\n")}
                   ).then((e) => {
                     let i = {
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        build_number: "678811",
+                        build_number: "678941",
                       },
                       u = o.default.getCurrentUser();
                     null != u &&
@@ -696963,7 +697069,7 @@ ${l.join(" +\n")}
       if (544242 === e) return "" + e + ".af422f33f1485fa3.css";
       if (616090 === e) return "" + e + ".b55f70445ad69815.css";
       if (796662 === e) return "" + e + ".9a2e1c9232eca71f.css";
-      if (801781 === e) return "" + e + ".096430b389d8cc67.css";
+      if (801781 === e) return "" + e + ".6d81b4f7d4c1d0d3.css";
       if (816348 === e) return "" + e + ".7da8c5a3afdb5e99.css";
       if (165291 === e) return "" + e + ".5bf3151f0a3eeb9c.css";
       if (109383 === e) return "" + e + ".31ec68497b2a68df.css";
@@ -698201,7 +698307,7 @@ ${l.join(" +\n")}
           100148: "0ac79cb4e84c0149",
           101465: "45be3c7867312fda",
           101801: "72176b440023c617",
-          101829: "d8b5b393d9be0124",
+          101829: "87e25e6a755c065a",
           101851: "d12e86375d3bd262",
           101953: "ab7853d99c33359d",
           102139: "f88cd33c77c630f7",
@@ -698225,7 +698331,7 @@ ${l.join(" +\n")}
           104736: "109656e1ded456c7",
           104851: "494ae23ee489ec1a",
           104975: "b9e4b175bc7318aa",
-          105064: "2995824d47b91a62",
+          105064: "57f511fef9b342d0",
           105242: "adc954f49f412e92",
           105459: "094c152efba00607",
           105475: "a3e7224ee2354b7e",
@@ -698233,13 +698339,13 @@ ${l.join(" +\n")}
           105659: "54f650b45893df8b",
           105668: "e90fd8ddda800088",
           105673: "63e7dd918280de07",
-          105895: "b5b140db6d80a967",
+          105895: "da78f30b2020fed1",
           105996: "7b9def242816dbd1",
           1060: "4a91ef27e81ec287",
           106088: "31f7481f3b9bb382",
           106103: "95e14585e6c25914",
           10622: "9f3e5cbfa0c4c14c",
-          106371: "2446803d446bd794",
+          106371: "542e64027f24e1ec",
           106413: "b46f4ebbeaddf24f",
           106787: "2907b09084ba3ba5",
           106880: "78450d3ed9b70d7c",
@@ -698265,7 +698371,7 @@ ${l.join(" +\n")}
           109302: "6f009380d3551388",
           109323: "3cc24440a38b6457",
           109475: "27abebdf7e34b852",
-          109644: "b6ef88eaf627f0b8",
+          109644: "ef705e90ca3948a7",
           109684: "70364793ae8c30bb",
           109865: "9226bca8387ccad4",
           110070: "23900001fb90168b",
@@ -698285,7 +698391,7 @@ ${l.join(" +\n")}
           112260: "10f474d0167befac",
           112591: "ccd3dd429a6b60d3",
           11301: "ec2897e7753948fa",
-          113127: "0d100176ab7c3e6c",
+          113127: "5c59202b97c44a93",
           113210: "ae210b1fdf22c372",
           113336: "b619e29d0c7f653e",
           113379: "0e6dc3026c5dd78b",
@@ -698294,10 +698400,10 @@ ${l.join(" +\n")}
           113492: "27c79226508c0cf0",
           113586: "c8d032f4e187bfc5",
           113945: "d71e40a3076f5265",
-          114152: "d7b367a4472f720b",
-          114199: "7e9520cfa4c35413",
+          114152: "d9f649d8a0b7b0a7",
+          114199: "cdd80caff3265bbc",
           114217: "43aeace48ef28981",
-          114308: "5fa533b98b7f31df",
+          114308: "24faf01e73855771",
           114386: "b7385306a47103dc",
           114501: "f822de256ea773dd",
           114629: "6cad073af0a4332c",
@@ -698316,12 +698422,12 @@ ${l.join(" +\n")}
           115472: "3e08e6408ca98cc6",
           115645: "ba880f35b7452705",
           115754: "b9a0a8f9d5034e4c",
-          115904: "8df6390df4ba34fd",
-          116053: "4258adda7a87f514",
+          115904: "333f616bec301c26",
+          116053: "ef3944fec7dde17b",
           116262: "ffd5b14726faa42e",
           11631: "4fcc6563bafdd48f",
           11647: "964a285a39a7c7f0",
-          116536: "daed1374374933a4",
+          116536: "f23a7619e7bf6136",
           116694: "9cf5a901ae61eaac",
           117264: "b2227bbf0f70f5e2",
           117288: "99ff70315f5bb629",
@@ -698340,7 +698446,7 @@ ${l.join(" +\n")}
           118558: "8acc54f7429dafd4",
           118822: "8146b92da29b2cfa",
           118917: "3eca372675831f21",
-          119346: "e59848c338dae8d4",
+          119346: "319cd127b0984246",
           119571: "5283d78c481ae112",
           119659: "0ff7bd62e87969ef",
           119898: "6a53e0f6fa3cdfee",
@@ -698360,7 +698466,7 @@ ${l.join(" +\n")}
           121570: "1df94674a08d6dee",
           121938: "bb9cee7f66a09ff8",
           122018: "9fbbfc77f88f4ea8",
-          122172: "a1bb1a196b48742b",
+          122172: "0f892646fc6a4a9c",
           122218: "e5faa26d45ecbf19",
           122266: "dfbc1fb1c2d9c6f0",
           122326: "0de72c068e695cdc",
@@ -698394,6 +698500,7 @@ ${l.join(" +\n")}
           125252: "f29b9181fee352d9",
           12532: "dbd2e2dcd1a257ae",
           125405: "7494d19a7b73271f",
+          125545: "98458d77f62e8201",
           125729: "f07e8fc32e4ce7b8",
           125964: "7998dbce2b735c8c",
           12613: "e396a1850c33e462",
@@ -698407,7 +698514,7 @@ ${l.join(" +\n")}
           127480: "642c5d01c1f1d191",
           12762: "0c62fcff99686819",
           127659: "def535ad5973f838",
-          12768: "a9835db0e3bed30b",
+          12768: "8b73cd1b1306db64",
           127962: "19c9d5d6f59eac02",
           128076: "24c5e62560f3a0d5",
           128354: "1720768594b0d3d6",
@@ -698427,7 +698534,7 @@ ${l.join(" +\n")}
           129621: "ae424850235b4b3b",
           129964: "9b6b4bb614973a0c",
           130041: "8b634df57fea6bea",
-          130235: "9a121e51ff152c10",
+          130235: "5a7d8ae2df16cd6e",
           130662: "a51f4c3ba1e4fb84",
           130674: "767765fedf6d0c46",
           130706: "80bf94aa18595801",
@@ -698436,6 +698543,7 @@ ${l.join(" +\n")}
           13107: "96a68eda29ff6f0f",
           131125: "1af5df2bb5bef724",
           131162: "e535189cd4f408d2",
+          131481: "8e23118cc7c50d4b",
           131687: "81d2543358e28a0d",
           131829: "c96635b71a0adc22",
           131838: "c9dc1e57626379d0",
@@ -698443,7 +698551,7 @@ ${l.join(" +\n")}
           132191: "d1bf7e92173285cc",
           132435: "c0575e8b2bdd5a52",
           132737: "40e33282c1d78b7c",
-          13280: "62c47cf32ed2592a",
+          13280: "ec42e1fc15f916f3",
           132864: "00e8d322971cef45",
           133179: "2d96ab621964ec70",
           133216: "c7e66323fbe3e5ae",
@@ -698459,7 +698567,7 @@ ${l.join(" +\n")}
           134972: "49e2ca663dcd0291",
           135016: "8fd1c29fd8b01e83",
           135023: "eb0d81de2e1263e7",
-          135465: "4ddf34bfaba9ec20",
+          135465: "528175ef4b7caa72",
           135610: "467330b7b8bc82c0",
           135621: "3c533cd0df644970",
           13566: "cec35ce2d8055ea0",
@@ -698477,7 +698585,8 @@ ${l.join(" +\n")}
           137803: "82c01c102e388cbd",
           137836: "f5ecb959b419fe44",
           137937: "fb7fe2a00c749c46",
-          138236: "aac0ef26c12488bd",
+          138236: "7b7f7480e85735d6",
+          138386: "97d0d2fd78569b29",
           138545: "1b801bd2fbd402bd",
           138728: "352c24d0008cdd8c",
           138733: "302795d3aeb14aa4",
@@ -698501,7 +698610,7 @@ ${l.join(" +\n")}
           141585: "5e6af8fb2343c149",
           141734: "3feb9185369bb9a2",
           141737: "be9547e432b38c03",
-          142465: "6be184a791a8ab9f",
+          142465: "e28e7b40f25c09ca",
           142867: "bef51a17a4549cd7",
           143075: "b4c676d37f5c7b71",
           143172: "eb852d55fb41a6bb",
@@ -698515,7 +698624,7 @@ ${l.join(" +\n")}
           143883: "bacf729907767ae3",
           144141: "f02548c43b1fa689",
           144179: "7b982060dddb65e4",
-          144411: "19d8b169d5b88f21",
+          144411: "cfce8dd15ccf4f2c",
           144472: "8793458d2492c6a2",
           144791: "5517c5dec3a8b1aa",
           144885: "fb9e62aacc4d7f35",
@@ -698527,7 +698636,7 @@ ${l.join(" +\n")}
           145361: "330646efe78aa78c",
           145570: "c876b1856fc1e8a2",
           14567: "8515409fd1d3dd4d",
-          145721: "4be84a38c9b24e86",
+          145721: "c897fdaab7464ddd",
           146070: "d5b9693a358a1549",
           146115: "b32e168ee4e44297",
           146149: "991f731f12db6856",
@@ -698543,12 +698652,12 @@ ${l.join(" +\n")}
           147626: "6bef66f1893fe235",
           147662: "af6ead43fbf3e18d",
           14775: "30f4628b3cd4ded2",
-          148042: "be856fd6b4afa752",
-          148053: "5b68f5736e4ea279",
+          148042: "d210a6118a795464",
+          148053: "88c0bd5cb1f35d93",
           148426: "54f2b5174d9e08bb",
           148622: "8f457df9d2290225",
           148942: "fc23b51cb1179ef5",
-          149037: "3902330660bcfebe",
+          149037: "c866cace5dfa14e6",
           149120: "29bf4b582aef80c4",
           149249: "313f7d75cb7fcad6",
           149379: "61e7c9f5da97d2c0",
@@ -698558,7 +698667,7 @@ ${l.join(" +\n")}
           1496: "2c0e9ebefddb7b24",
           149802: "b38317d2e01dede6",
           150009: "1b71d27490c9a1f4",
-          150179: "ac404fd35eb99a0f",
+          150179: "c59141f498c04831",
           150183: "05c6bbb711a91d85",
           150200: "71b9d10100a5f1ee",
           15044: "5d328e1f62a40520",
@@ -698604,7 +698713,7 @@ ${l.join(" +\n")}
           156383: "3c0ac9ff5f8ee2aa",
           156422: "3c2769321baeb1bb",
           156546: "13e8d4dc50d529ac",
-          156700: "91e91bb1d565b207",
+          156700: "cf4ae6e09f5241fb",
           156764: "efdcd0ca2cb28694",
           156850: "1ba114ac6fdec385",
           156912: "301ded9598a7ab07",
@@ -698621,7 +698730,7 @@ ${l.join(" +\n")}
           158541: "2d0027f6ec4e289c",
           15865: "b04e16b8bd2b8d77",
           158994: "3e08e6e3d45f4b7a",
-          159124: "95cf354050ecf516",
+          159124: "0559ea5127eb7980",
           159127: "d6c3bf94690d7ac0",
           159244: "47e31923548cd048",
           159424: "0b802d01d6ab821e",
@@ -698646,11 +698755,11 @@ ${l.join(" +\n")}
           163069: "94a3f0f218f3e8ae",
           163235: "3820abd08273c4e1",
           16369: "2c945af1cb05af9b",
-          164401: "68fb48e44f418656",
+          164401: "b787410fdc8744e3",
           164474: "78fe921f1f35e7a2",
           164501: "b28cac833db2201e",
           164668: "76dbab5255fd8ac3",
-          164763: "d42e3db3975d98d6",
+          164763: "e0c41a5365fb21ea",
           165027: "3d04fd6e487aaeda",
           165211: "f10799f65ce5379c",
           165275: "590ed2d213cab927",
@@ -698660,7 +698769,7 @@ ${l.join(" +\n")}
           165456: "c75d9c148d1d021f",
           165595: "c5bf5a52dcbb2efa",
           165836: "13d9cdc8d45a2ce1",
-          165987: "e2f69b80d3a6a4a2",
+          165987: "ec053dd01e479877",
           16607: "e9358b10ff02e5fc",
           166182: "84e46044ad935c67",
           166298: "80d0a2fe3c50435f",
@@ -698676,7 +698785,9 @@ ${l.join(" +\n")}
           167321: "8768dc35c1df8a67",
           167394: "e74b8a1554f97d3b",
           167410: "aeca0cf407d69055",
+          167430: "2372b8e723426b37",
           167610: "74997ba2746a3093",
+          167668: "4449d9d843fa211e",
           168031: "38b8c88f52bd5527",
           168768: "b3040dcc28040e83",
           168871: "5abf7185d4fd6d9b",
@@ -698711,7 +698822,7 @@ ${l.join(" +\n")}
           172876: "dd32d0099e8855a3",
           172883: "5365e7fafe629587",
           172970: "98fcd374471adfe2",
-          173073: "e5ba27cc823a6a65",
+          173073: "810855475dc41533",
           173547: "e46960d1f50cace3",
           173550: "6ed7cbc6ef8b640f",
           173764: "363c3441f2da84c6",
@@ -698744,7 +698855,7 @@ ${l.join(" +\n")}
           177547: "4c4a00c7dbe677e9",
           177574: "4fed5084de1f3652",
           177641: "152f2c6408326ab5",
-          177954: "baa98a4ee5548388",
+          177954: "cce19eebb1233079",
           178034: "9d2f6ffeff6a4c57",
           178048: "b4c56e73ca738025",
           17814: "88d092b91757bdb2",
@@ -698752,7 +698863,7 @@ ${l.join(" +\n")}
           178205: "296b56e3913a0291",
           178255: "53f9b2a8a1db9d04",
           17833: "d342c5f14baa441b",
-          178828: "48440086185e4281",
+          178828: "d0f28907f9b5ab67",
           179028: "2a85889d82d3c0e4",
           179049: "cfc6bd24538eb1ba",
           1795: "3157222c633d7028",
@@ -698762,19 +698873,20 @@ ${l.join(" +\n")}
           179908: "4846a37bc2e8e4d8",
           180021: "96f411d143db96de",
           180307: "8e44ba017158a497",
-          180499: "5225db2e3f78ceb2",
+          180499: "07d11248a4635861",
           180833: "62d0b78df7d5d1ee",
           180909: "6865a094872f5bba",
-          18098: "10455f8ac59c79d6",
+          18098: "9df7ba72812f631c",
           181162: "206f4ef10b66c9b3",
           181166: "24f570310d3f2724",
+          181234: "cb7a932213495391",
           18181: "133ac9eca4efa0c8",
           18190: "67228173c61dac71",
           182045: "8dcb29150b3b0e9d",
           182141: "8e7aeea86dfd9826",
           182190: "8f81b4ee245885fd",
           18234: "ec95405a3586b312",
-          182408: "bd36605121fff54e",
+          182408: "287df263b9d3ed2e",
           182737: "77db7bc3cba1ca9a",
           182757: "570f956145bb1dd9",
           183715: "49307b04228e62a2",
@@ -698796,20 +698908,20 @@ ${l.join(" +\n")}
           185825: "6822b68334769c19",
           185830: "4adadee9a3a92dca",
           185928: "744fab58a3889b52",
-          185990: "cb9a7cc620d4429c",
+          185990: "8c4baadb9d685514",
           186056: "add1c2b301442a8a",
           186212: "e2266f770cc04065",
           18630: "2f6a488bb7b1229f",
           186528: "7b422b84cd15e2c5",
           186546: "2dd828d737c7ec34",
-          186608: "43bbbcd0a2d25f10",
-          18666: "4fd7f9d2f1932308",
+          186608: "23ad5a33649c697d",
+          18666: "42facbaed21e28d6",
           186735: "ce0868eaffe85e9d",
           186756: "9c4a357eba96ad1a",
           186810: "a15bef82b323d035",
           18700: "d1e5641c2c2624c4",
           187127: "70db63504a56a28e",
-          187265: "06d75b587903ad2d",
+          187265: "7b1df613f32b88c5",
           187356: "2c28a8cba96e2a97",
           187371: "68fb9038c9bbd3bd",
           187388: "7e2a82d093e38910",
@@ -698859,15 +698971,16 @@ ${l.join(" +\n")}
           193457: "7f7e5513eefc3b78",
           193605: "b941ad9c52513660",
           193768: "7eb03628367dbc1d",
-          193816: "727e517fed37fe1e",
+          193816: "50bc7a3b0255d586",
           193829: "34430e32c80ebe9a",
           193845: "c3f1564ff3bc911b",
           19385: "d9a76f3b59535694",
           193934: "88a8efa721f5c9d1",
-          193955: "6dddd325f9b85c89",
+          193955: "153cd2252af55e82",
           194022: "bbb6bb9ba7274042",
           194343: "2e37f3b36e6e40b8",
           194399: "d562271f2c80e9e5",
+          194845: "9351cbef288a0ce2",
           194933: "c6fca70a97777b8d",
           195033: "7be2f8af198086ea",
           195242: "c7436589c43c2d54",
@@ -698889,7 +699002,7 @@ ${l.join(" +\n")}
           197826: "57411fed092ef198",
           198101: "3f5a98bbd1f3a551",
           198329: "810262533cb6eb47",
-          198348: "efced361b604f61b",
+          198348: "770373677d8fa9c2",
           198532: "5cf1cb1fba8389bd",
           198599: "d7de52e3156af925",
           198608: "9b27d02af2f2ca1b",
@@ -698916,10 +699029,10 @@ ${l.join(" +\n")}
           201730: "ff02c6da7276a356",
           201765: "84ec151a0066622a",
           202023: "cc8861b749254f41",
-          202259: "d9320a5621d7e2ab",
+          202259: "fa346056eb5ec78d",
           202373: "832bff29e7b55025",
           20249: "19f063505327f5f0",
-          202602: "cb06fbc56fffbffc",
+          202602: "6394e5afaae55b7e",
           202622: "aa8d77ffd94e8fe5",
           202669: "cf68d5c8ca0d0893",
           202976: "c6f652db3d5b62c5",
@@ -698931,10 +699044,10 @@ ${l.join(" +\n")}
           203930: "54226f68b1cc1571",
           203959: "a71617d8888a4cea",
           204264: "a8e15fa400524b98",
-          204309: "dbee876872a682ca",
+          204309: "92e3f7c9d20e9e2c",
           204591: "2886f53d82f2f087",
           204676: "9fbcb57756d6cae1",
-          204682: "0c547fff1b9b065f",
+          204682: "6ad5d53e96b5b5a2",
           204895: "f860cd18438b57d9",
           204990: "1bc484cd7700111d",
           205152: "ffff40eb52b9dab1",
@@ -698946,6 +699059,7 @@ ${l.join(" +\n")}
           206027: "35208650c28bfd8e",
           206130: "6e6b290b3221bd0d",
           206270: "286080ac6dc3818a",
+          206277: "94db2a52322304c9",
           206817: "ded7681140d2ce03",
           207309: "2f356a9a5b6bbebb",
           207828: "fec6daba4a10b5cb",
@@ -699038,8 +699152,9 @@ ${l.join(" +\n")}
           220408: "31f7d3a8bd7337f8",
           220518: "86643d12f3abbfa9",
           22056: "f167976c224cba1c",
+          220587: "99fcf8c13c4db6e4",
           220626: "785a79176b53a396",
-          220736: "d867616a12eb5d8f",
+          220736: "100a5fe019ef3b64",
           220803: "fb74ed8e7dc14b59",
           220813: "cf6841236b599214",
           220946: "1c2554938a8e8733",
@@ -699059,27 +699174,30 @@ ${l.join(" +\n")}
           223210: "6410111e27216d4c",
           223219: "6b4a4df6fb903f0f",
           22330: "9686afe38084a0e6",
+          223540: "3618c6c14f204e72",
           223685: "a47208b8a23f813b",
           223862: "ff7ffc50d5a4549e",
           223976: "3d96f0b823b56b76",
           224048: "29bc60d132d5949a",
           224102: "8742cdeaaa0cb960",
           224155: "c2cebc57d66f3426",
-          224236: "5a4c478fc5491367",
+          224236: "c3022da0b578c7a1",
           22427: "b5656e21be58d08b",
           225021: "355670a1b1c70e35",
           225078: "824ef17ff32415fc",
-          225094: "302410f9c808b8e6",
+          225094: "89734278baf114dc",
           225139: "babe2623d493b2f6",
           225271: "db8f6ed8c580213a",
           225560: "1919521c323f3250",
           225575: "0d0075662f298224",
           225612: "7c5af200b14d28c9",
           225806: "a114d650d2efbab0",
-          225850: "4a5589ff75d6d7db",
+          225850: "cf426988cc56ad75",
           225961: "fea48f3a53c8dc30",
           225988: "6712d4c011bad7cd",
           225990: "0ddad4bcee691b28",
+          226020: "7d520d235b67f18d",
+          226119: "860df2a02faa55b0",
           226383: "a2869fbfaec31f1d",
           226561: "45c01342d2089832",
           226589: "cd48ea02ab12163a",
@@ -699092,8 +699210,9 @@ ${l.join(" +\n")}
           228011: "5de20f764ef64522",
           228090: "fae0c6ad62716138",
           228196: "0b3db9ccca0d942b",
+          228200: "3a9dcb8114846996",
           228205: "09e5819e48c16699",
-          228270: "75c369eb284b8c2a",
+          228270: "5ad4d8ac0b5615b2",
           228304: "b512773afea2667e",
           228368: "4cdc5fc4f173e1eb",
           22865: "2e2ed93d21607005",
@@ -699127,8 +699246,9 @@ ${l.join(" +\n")}
           232272: "5fb6029411cdb1c3",
           232517: "60977aafff1b85a2",
           232551: "0440c73662794693",
+          232711: "fb2967e2692edc12",
           232731: "04773f40cb145120",
-          232874: "ebe356752bdb687a",
+          232874: "6b9130201b3fac6c",
           2329: "622a72732b01e76e",
           233049: "cb26ab355737d6f6",
           233250: "ea8bb1b35b95b051",
@@ -699156,10 +699276,12 @@ ${l.join(" +\n")}
           235812: "2fb2e165c8ecce03",
           235996: "50a5b8d3dab42355",
           236085: "3533dc79916bd746",
-          236336: "719b05e737034876",
+          236336: "9006939c20777383",
+          236519: "c6eb345a7612c02c",
           236789: "8cbc134debc59751",
           236946: "b12b3d50d193e6d5",
           236999: "481670b846cded06",
+          237252: "4d69df7ec66a75e8",
           23728: "c9dc4412625f1042",
           237715: "c2a3eaecff7bf505",
           237834: "9fb989cf9387238d",
@@ -699171,18 +699293,18 @@ ${l.join(" +\n")}
           238742: "9479653d347d2218",
           238864: "9c0f9d5938f09f6e",
           239367: "a95dfa071acc8906",
-          239475: "c893c9805a00092b",
+          239475: "87aaa42bcfc4de0d",
           239476: "73df20147d3ce577",
           239483: "b97c46fe65a318b8",
           239568: "0d417d97e2e5417c",
           239572: "7ad95c550462231c",
           239592: "f06929af1ffc3c19",
           239734: "fe720d962dda4da8",
-          239760: "569484ffd1f8a108",
+          239760: "f1cd7abc683d91cf",
           24001: "6d14947b23e78c21",
           240043: "7b46dc9a4068c6bb",
           240058: "567b62d978dd3550",
-          240318: "acac1947fb1de9a5",
+          240318: "71858297be52d47a",
           240461: "f04e0e96742dda8f",
           240511: "aacedcdf9cb2ac25",
           240862: "55a0807c54dcc033",
@@ -699192,7 +699314,7 @@ ${l.join(" +\n")}
           241351: "d3fb914ffac17f94",
           241411: "b7f46b4334fde5ba",
           241697: "67457574298ebee6",
-          241721: "b58a2551be1903b0",
+          241721: "1749213c789f9b08",
           241797: "1fd8d47692cab137",
           241947: "83fd6dd3372c3679",
           241989: "ec370bb76dd6a7c7",
@@ -699200,6 +699322,7 @@ ${l.join(" +\n")}
           242382: "98593cd0b1f2fc1a",
           242517: "a4c93fe541025e72",
           2428: "db7b942470477c83",
+          242803: "701ed21cbbb41f72",
           242943: "5faeea38cc714892",
           242967: "2b8e95275ef80687",
           243486: "ebd005d7b857057d",
@@ -699207,11 +699330,11 @@ ${l.join(" +\n")}
           243859: "bfad4f4ee4837b2a",
           244002: "219afe0a55f71467",
           244069: "f1e07729d3d379ee",
-          244354: "38efe48297b05044",
+          244354: "5d7963ead51972a5",
           244592: "6447843de6d05dd3",
           244605: "900442e17dbca5c9",
           244645: "8394302005a0001e",
-          244739: "8ed82ac12456c4ad",
+          244739: "29852468c006a315",
           244854: "e2d37d9450bbc77b",
           245127: "97df4feffff8c3ea",
           245164: "c0fab636eb09aeed",
@@ -699237,7 +699360,7 @@ ${l.join(" +\n")}
           247339: "0626b36a59ac65a9",
           247554: "99ab2e31743b2edb",
           247700: "de6c7b9cd5694888",
-          247731: "de35ff368e34dfb0",
+          247731: "af2fb8d346bcdda9",
           247798: "d813cd0cf326a414",
           247940: "8d57304314b3ecee",
           248069: "d5ffbf42f3aed504",
@@ -699271,7 +699394,7 @@ ${l.join(" +\n")}
           252175: "c7a0275963a36e2f",
           252229: "39d568e4337920df",
           252498: "986667530bbe7bf5",
-          252722: "3dab03139625505f",
+          252722: "5c4389f9216cf939",
           252793: "0ba27a24d87cb84b",
           252852: "5e32e9db1a08dd62",
           252964: "5dcce707ac25f62e",
@@ -699285,7 +699408,7 @@ ${l.join(" +\n")}
           253576: "838d8348003c2bc1",
           253729: "ed2de84c5982cb5a",
           253752: "efbb5d494e72d870",
-          254072: "b53fc4501b8b461e",
+          254072: "b72e3806780837d3",
           254103: "bd4da079913564d1",
           254303: "23467f2456e356f8",
           254482: "46cc8053d88d551b",
@@ -699319,7 +699442,7 @@ ${l.join(" +\n")}
           257182: "cdb726e96b348768",
           257200: "b7fc511e12698398",
           25777: "6515604a7ec64c17",
-          257784: "93875bdc384880b4",
+          257784: "e08510a1e8b2011d",
           257806: "2b8c8a3e1e88e5a8",
           257968: "ea640c85e3d3a98b",
           257980: "76a4d8f40a0b0889",
@@ -699327,6 +699450,7 @@ ${l.join(" +\n")}
           258118: "2fad1e28430ca5d2",
           25828: "a00d7d7b345f0f75",
           25829: "8ded554653f1b98c",
+          258306: "2e4cac7e4e07fff6",
           25839: "a3db31181f0460da",
           258398: "461ec45b55902ab3",
           258469: "0d243bbec9db05a5",
@@ -699347,18 +699471,19 @@ ${l.join(" +\n")}
           260218: "b9dcf2128ea2d3ae",
           260500: "0eb4b8fe8b5c96dd",
           260634: "b9a0ea93b4a45b31",
-          260707: "b1ed6e015cb35ab4",
+          260707: "3a7d037c3aa7ef20",
           260835: "f262c67c1129046e",
           261442: "0c2d95b33c881cd1",
           261903: "a997d2770a65e4ee",
           26224: "c3b13dc1da0f9fed",
-          262341: "646bea88e8ee2207",
+          262341: "e73caebeca274997",
           262428: "ad81275b72e180fe",
           262720: "2ea043d69ccb3c4f",
           262754: "de38e0c54cde9fbd",
           262755: "83d706c7e53afda5",
+          26294: "9c8200e255f58ea5",
           263025: "ede9bbfde018d02e",
-          263408: "241b6d8ee333a28b",
+          263408: "80e18fe8d3df5682",
           263506: "2d60ed72ed4348dc",
           263765: "213198be39cb65b0",
           263783: "82b53aa9940e33ed",
@@ -699370,12 +699495,13 @@ ${l.join(" +\n")}
           264905: "42d6cccbf25cab0d",
           26500: "15c37feda7643b1f",
           265391: "7a8ccf1ce7f7eb7a",
-          265394: "1751c97e59a3b2d9",
+          265394: "d6a57ca7cd90285c",
           265480: "f8b75c8efc8d6782",
-          265669: "efd22fa6819822f8",
+          265669: "4c9f253211b5d3ed",
+          265783: "c6d0cd88578ddf2e",
           265865: "d41b9232554fd438",
           265898: "85c3658210fc254f",
-          265926: "519793ca104a17c2",
+          265926: "cd56eb628993e1bb",
           266061: "94addc600b92e355",
           266281: "bc76136c266a174a",
           266361: "de6bed8b57dad843",
@@ -699388,7 +699514,7 @@ ${l.join(" +\n")}
           268152: "a4e68b3b92c9529a",
           268582: "39541320e93a34bb",
           268921: "5fd58bf50cdaa493",
-          26915: "fc798425e29ad83d",
+          26915: "7b7088d89e0e0fbe",
           269171: "6bd91b11e02bd715",
           269178: "59e161d541cd4780",
           269337: "59432c76a8dabb37",
@@ -699413,7 +699539,7 @@ ${l.join(" +\n")}
           271565: "fa02386ee6045825",
           271694: "50037570dd6a0771",
           27185: "3cfee9d5239475e5",
-          272019: "630f0ebc9f0cec7d",
+          272019: "9719a012eb3fc1fc",
           272265: "e6561f903ef3be33",
           272332: "5d135de2e178a669",
           272484: "76249da54deafef5",
@@ -699421,6 +699547,7 @@ ${l.join(" +\n")}
           272788: "b953739a1b9a529a",
           272872: "e58114319626b05e",
           272875: "8da35ae12c595fe8",
+          272884: "b2afad4ab34327b2",
           272887: "e3252e8f54547267",
           273058: "af1f0f185a386492",
           273084: "c5f04f41398eeb1c",
@@ -699429,7 +699556,7 @@ ${l.join(" +\n")}
           27355: "c59fba8593e93a67",
           273654: "3fe6385ff8837ec1",
           274215: "c093e869fcf43260",
-          274383: "86a2b8f660f2388f",
+          274383: "5e7de42aa8480faf",
           274385: "063981779a0b9390",
           274408: "0bf4d3da91a7d1b3",
           274501: "f472f0df6e121c07",
@@ -699437,6 +699564,7 @@ ${l.join(" +\n")}
           275008: "14a737e29ff26f7f",
           275179: "a0fd6bd2f1e0b9b2",
           275289: "13ae613cf1198a75",
+          275378: "bf10e7bea3dc4e5e",
           275555: "1657b21c48b6b761",
           275859: "c0f23f61b5b22e49",
           276026: "e40dbf602a92d9b9",
@@ -699459,7 +699587,7 @@ ${l.join(" +\n")}
           277641: "ee943cef5f2a1c50",
           27773: "ea285d78b19c819d",
           277749: "9930c6fbb7a44ddf",
-          277883: "d00ef31dc935e100",
+          277883: "de20a551d8c85f38",
           278078: "8e03e27ca2067b5b",
           278124: "c4a299aaec3b71d5",
           278463: "9e89e8fa03cb71ab",
@@ -699469,7 +699597,7 @@ ${l.join(" +\n")}
           278708: "fcc870cb426e0625",
           278897: "7e31a690368f1c06",
           279004: "c46605695083fdaf",
-          279343: "285414dbafcbadc7",
+          279343: "590a5585d3d1d10e",
           279385: "82a2e8573a81d38d",
           279473: "aed7b794546746a1",
           279626: "8f0c4c5b968c5389",
@@ -699506,8 +699634,8 @@ ${l.join(" +\n")}
           283131: "c352e3cd8ce3fd47",
           283166: "f37e1ce2e01883b1",
           283205: "181b5bbf7d4171fd",
-          283226: "d4c6d18548c12600",
-          283403: "fb5fe58eef4d1e90",
+          283226: "12dd907bcd770bc0",
+          283403: "aa938f950f0b2cbb",
           283523: "d5602588c6c759a7",
           283543: "8bf5492a06c25fa5",
           283767: "26ac11fc1feaaa9f",
@@ -699526,8 +699654,9 @@ ${l.join(" +\n")}
           284996: "661e4a0ee551489b",
           28501: "22e267ad29f7ed37",
           285350: "ae87c1c95db224a4",
+          285489: "a7416ca67e66c36a",
           28561: "6cae3402a1913504",
-          285745: "8c4a5c98a59371e8",
+          285745: "995319feb4b2f188",
           285985: "d1d359bda8bca4b8",
           286035: "9260d95dc6f75188",
           286197: "9515e76a546269c9",
@@ -699554,6 +699683,7 @@ ${l.join(" +\n")}
           289872: "1309b25052741219",
           290638: "9f86053878eeff13",
           290652: "ae2cc7d010b8c369",
+          29115: "6ad4ab2d8fb1890c",
           291220: "593f779795b3e89e",
           291365: "34a45d2d445f8a7c",
           291516: "68916572b22e2bf7",
@@ -699571,6 +699701,7 @@ ${l.join(" +\n")}
           292951: "48c66e9c1b6f6b63",
           293007: "ae14b405209218aa",
           293018: "bc2789b2a3612501",
+          29316: "7a708f2828c7e1b7",
           293285: "6eef96f693d951bd",
           293292: "2fe9c455709cfedd",
           293340: "455341c02bc5364b",
@@ -699582,7 +699713,8 @@ ${l.join(" +\n")}
           294653: "4f98e2abf04ea9a0",
           294838: "7a2e84da3f4a456c",
           294857: "73d5fba3085633c7",
-          29503: "07159fbd65e02845",
+          29503: "5cdc15f1928e15ea",
+          295362: "f98d8cf655d28ed4",
           295390: "ae402847bc9b4e03",
           29542: "b186823fb3d4ae98",
           295570: "338ffa74dae2c0e3",
@@ -699599,13 +699731,13 @@ ${l.join(" +\n")}
           297564: "0b20b4b3e5e6644f",
           297717: "ca7486c0c144fefa",
           297846: "e4c4b551376283e9",
-          297924: "a65179e534d6e8c0",
+          297924: "451c233109fae20e",
           297951: "b6005c6a8da7cc15",
           298107: "ce09f56bd28d472b",
           298183: "d9a0f19737ddce7f",
           298199: "d9b169941e5bc791",
           298644: "45950a378f11b38c",
-          298647: "0fbab2e42f42aa0d",
+          298647: "6237586fcb5e920f",
           298656: "f207059a91827673",
           298748: "a0f9ab40f94d4a53",
           29884: "a5d01da7885de02a",
@@ -699618,6 +699750,7 @@ ${l.join(" +\n")}
           299854: "7b3bdcdff82215d3",
           299895: "75c8f6ce56cd5412",
           299979: "6437c1295f7ee022",
+          300193: "a10d65ce3f69be8a",
           300379: "384984fc2942a8d0",
           300499: "d3a187adca079b2b",
           300619: "b999d89c13130729",
@@ -699627,7 +699760,7 @@ ${l.join(" +\n")}
           300867: "db82b11ab74a0acc",
           30101: "7f701fef7f700122",
           301089: "f38166a5ad8d5580",
-          301555: "651093eec515c93a",
+          301555: "781eb1d9735d8fcc",
           301911: "c30b23bab1166ada",
           301969: "a67b610e6553e670",
           302008: "2024c70b56a6acd2",
@@ -699653,7 +699786,7 @@ ${l.join(" +\n")}
           304329: "5e9deb32936286b3",
           304350: "566963378abbb99c",
           304372: "d8e24e6ce38cf977",
-          30441: "e940c8e032f54075",
+          30441: "7e1a62465d2c8e92",
           304410: "8b591155e9518eb4",
           304419: "6c5d2e32976d88af",
           304659: "33ff8507a941b7f1",
@@ -699664,7 +699797,7 @@ ${l.join(" +\n")}
           305784: "aab5b6d75f0ad808",
           305834: "ea39482abca9ae43",
           30612: "141630214ba000b1",
-          306265: "726adbd248b47246",
+          306265: "b9c8b751eed6f063",
           306270: "8b6bfba359cc749b",
           306410: "4c78f00282570841",
           306490: "0e7a73a0e92ee9b4",
@@ -699672,7 +699805,7 @@ ${l.join(" +\n")}
           307059: "0889bb6e9f20836d",
           307133: "a42cdb86736ebeff",
           307278: "5d000253fa56be11",
-          307307: "9a0321a215ba673d",
+          307307: "981840aea0257b49",
           307521: "0b81a08929ae61ee",
           307564: "b10e16320b16278b",
           307639: "818e8966b87cc95b",
@@ -699681,13 +699814,13 @@ ${l.join(" +\n")}
           307898: "ee11a47982a827bc",
           307949: "39e048d9bcefa64e",
           308555: "6f3af9978c88f3d5",
-          308821: "144acd26791b2a1f",
+          308821: "a38105cd6f262a3c",
           309004: "46f08f87fc61c511",
           309291: "c5a07be73764f6af",
           309702: "cdbaa1dcdcde4b31",
-          309871: "a7844cba2f840671",
+          309871: "a614ed4fc3b7a40b",
           31e4: "ff6b61ab7de1acd6",
-          310099: "dd9e93b2dc744c42",
+          310099: "e3f08f5a4b078026",
           310486: "eae190c75fc21993",
           310489: "50b9b28fb1a40f6f",
           310537: "b6203d8eed3f9393",
@@ -699707,6 +699840,7 @@ ${l.join(" +\n")}
           312478: "2502f0410e21bbab",
           313052: "6cefed62f8fe563f",
           3131: "f411616b3fcd9177",
+          313136: "6ec40100b75a7785",
           313237: "29117bbb2a4bd539",
           31331: "953d473c9ef91981",
           313458: "4e1b8069cefe2faf",
@@ -699736,11 +699870,11 @@ ${l.join(" +\n")}
           316758: "30143cf64b42bde7",
           317080: "b3b47c8f78ecd160",
           317110: "3a905cb7fb2f6e67",
-          317146: "21f318f92fed3d3c",
+          317146: "14164dff96fb23d5",
           317225: "c607e23abdc49350",
           317269: "57db385ea3c66aef",
           317530: "4bab053a87564532",
-          317613: "2edd0c41f77db235",
+          317613: "e8bb5d04fcbc8cd1",
           317699: "a8dfb64ebcb89184",
           317731: "b9cb3b322954d39a",
           31779: "a98abb0bf0e1c5a0",
@@ -699779,7 +699913,7 @@ ${l.join(" +\n")}
           324240: "a433c92048cfa770",
           32431: "76c3d3183ef2149c",
           324469: "07b5abc4ac541f7e",
-          324489: "19012e125cd54de7",
+          324489: "19309384b58e0b96",
           324622: "e2cb585ef50562d0",
           324633: "7231bba1f9ee9092",
           324761: "66b55f51cf6b793b",
@@ -699793,10 +699927,11 @@ ${l.join(" +\n")}
           326362: "275c22b827f2e454",
           326484: "2376cc07d109ef1a",
           32661: "68e2aef6eedd3fc6",
-          327062: "d4c82e78c7a3f444",
+          327062: "ee22560f0b98983e",
           327112: "c7692d277a97d90d",
           327116: "eef70015e6abad5d",
           327280: "9ba128402f3c849b",
+          327398: "b1f1f4f6fd9ccec0",
           327715: "a57e8b7d88ba2b4e",
           327736: "d264a23d2267fcbd",
           327744: "88a12dde56b4d00b",
@@ -699816,8 +699951,8 @@ ${l.join(" +\n")}
           329739: "3ce9a6f3f61980e0",
           329815: "67a69d45f49aaad8",
           329995: "3202141cd078e097",
-          330254: "1b1d59f66ef23442",
-          330276: "09c2578190c4f3a4",
+          330254: "29f3f9309b551d80",
+          330276: "2bcd0ba83dc4496b",
           330724: "175b26f77df7ce76",
           330727: "10cfdeef113377d0",
           330809: "d530143f99da3b8e",
@@ -699836,7 +699971,7 @@ ${l.join(" +\n")}
           33197: "48491d05b8670b64",
           332009: "dda12626f506fd4d",
           332335: "1b72f09417b2ceca",
-          332362: "29ee9d0a61a88029",
+          332362: "78d6d295bd6e4352",
           332405: "bb00234c14ed0f9e",
           332447: "d98faba192fc7e37",
           332470: "b67bae942280711b",
@@ -699847,13 +699982,13 @@ ${l.join(" +\n")}
           334119: "a2727340cd9ed037",
           334391: "de86c56739c8c069",
           334624: "f3c6b7191fdc9a9f",
-          334627: "23ead277af9fda95",
+          334627: "d5e9fd0cf741bb67",
           334893: "3ef716086fe4009a",
           334920: "d1604146ff48ac33",
           335088: "1ce932f1d60f52bf",
           335394: "2c0da89d41d7aa68",
           335395: "ab360e95e9ab840d",
-          335440: "9e1a308b2895ad4a",
+          335440: "11de48b8db3b1e70",
           335510: "1c37b34e3c3ee201",
           335532: "be5ff51cf5ac85a2",
           335553: "4252bdca375ff9af",
@@ -699870,6 +700005,7 @@ ${l.join(" +\n")}
           337388: "52bc3e6a5af82fd7",
           337396: "e0e9c0c177f953a1",
           337415: "03bffbefdc54f5c2",
+          337713: "8fa96c68143783b0",
           337931: "df45e7f550e5b714",
           338217: "03cac9d734383650",
           338516: "7bd7a3f3bc2f1881",
@@ -699879,7 +700015,7 @@ ${l.join(" +\n")}
           338695: "af5a7b4c09315a54",
           338709: "7575f2ab184e8bf5",
           338921: "cf43e6cf234614bb",
-          338993: "0209e3cd2c13446f",
+          338993: "cedb4ff999659cbe",
           339013: "4350274e179d22fd",
           339384: "3b3279d604f6021b",
           339712: "4c0954b5b9312873",
@@ -699891,6 +700027,7 @@ ${l.join(" +\n")}
           340353: "b053beecee915a0e",
           340729: "baa317a6eeb42341",
           340792: "38263eedebeb9f1c",
+          341499: "df22c5a81636c4cb",
           341645: "a81c80fab8696849",
           341701: "f3fe80f4e0d9a796",
           341705: "b589f3fba692c7f4",
@@ -699902,7 +700039,7 @@ ${l.join(" +\n")}
           34249: "b16293683f17c678",
           342545: "0787475e174d156a",
           342551: "9770add549e4ba69",
-          342667: "33c9c73249d00570",
+          342667: "c4086e9a3349eacc",
           343116: "92ad01dd3f9ae2a3",
           343194: "f723313d6656024a",
           343233: "fc9b8e4a746831a7",
@@ -699922,7 +700059,7 @@ ${l.join(" +\n")}
           346102: "fbf858244382cab7",
           346313: "28e8fd70c7493619",
           346391: "a299b92e0da9d001",
-          346748: "65df01c06364d0e0",
+          346748: "b45288f6349b3f10",
           346791: "9999049363e58e72",
           346829: "d5649434d7cc6021",
           346928: "a62fc3ab34ae3297",
@@ -699954,17 +700091,17 @@ ${l.join(" +\n")}
           350847: "21d23c363febba02",
           350949: "9f09fa7b4b248f39",
           351072: "43efb1495c43f8e0",
-          351308: "e70c599b27c828d2",
+          351308: "41162579d6042b5e",
           351357: "22cc70bb808f88d0",
           35136: "233fb5191927eff7",
           351640: "31f4f953ef0d537b",
-          351871: "efe5a5c7c594b928",
+          351871: "2fd3155ffbff2271",
           351904: "8fcb409921fa0f07",
           351954: "621d3083bc1fc0a2",
           352049: "2ab72a972a5ea611",
           352063: "d3fffe3a82b112e7",
           352351: "f377a8a1dbe4c9c1",
-          352416: "9e1a1a71d1208fe0",
+          352416: "1c647654789c14da",
           352435: "f7b33922c9610c7a",
           352497: "6123d349a117d602",
           352784: "3f09be1920007493",
@@ -699972,7 +700109,7 @@ ${l.join(" +\n")}
           353600: "0c3aef6e68556d39",
           353604: "5b5cb18e371a1bc9",
           353750: "68a7ba23feee9a80",
-          353951: "01c23a37dd5d38e4",
+          353951: "a451f4e9d8784d2c",
           35403: "e03bbfd7ff84e00b",
           354036: "2445b985b29d04cd",
           354154: "8be12df79c84de45",
@@ -699994,7 +700131,7 @@ ${l.join(" +\n")}
           355978: "d4f8457acb3292a9",
           356150: "87e4e5aa9203dfee",
           356199: "b8a6e5af8053ee7b",
-          356278: "3f9698c960f85243",
+          356278: "455cb91ce273846b",
           356296: "17b1062ff1ccf4c9",
           356306: "786ddf73e0bcf1ed",
           356522: "90c5774a86ea5b38",
@@ -700021,11 +700158,12 @@ ${l.join(" +\n")}
           358773: "0996a556db1abfd5",
           358810: "d38d8e4f0b80a0ec",
           35886: "8a527c965c3367eb",
-          359099: "809a5aca084382e1",
+          359099: "b3b15c9837c9a599",
           359189: "398195aa4c0c6b0a",
           359244: "91b857c18ac25201",
           359258: "2e6f121149378e4e",
           359379: "f275a96694d6ef62",
+          359519: "2f2fda7ff798c6ad",
           359555: "c90fa7b535d0e106",
           359729: "2aaf9de2e91b970d",
           35993: "d780b57463419f66",
@@ -700040,7 +700178,7 @@ ${l.join(" +\n")}
           360777: "5513d34a30d11ae7",
           360781: "be1a9741b143641b",
           360797: "f424f7c9abdc95a7",
-          361028: "06c65b24c3a3eff2",
+          361028: "53c07ab725f48696",
           361233: "8d9db935e25bf483",
           361242: "b303487a4792ac35",
           361283: "49f3aef34778d3fe",
@@ -700053,7 +700191,7 @@ ${l.join(" +\n")}
           362420: "e75db9505f25891e",
           362422: "6a6eb9ec5e4e8513",
           362507: "bd46d5b53db8f689",
-          362628: "f36e5e045d93961d",
+          362628: "9e07f755a1b267ed",
           363007: "75b3385c5b67da4b",
           363071: "29f2a1cec5c15674",
           363094: "1f36b78b3511cbbf",
@@ -700075,9 +700213,10 @@ ${l.join(" +\n")}
           364920: "8a1d62bae48cb879",
           364956: "2b37d85ee601a105",
           365011: "789cdf71ca8ea5f6",
-          36504: "e15d9ec613b68eae",
+          36504: "9524459602f5a527",
           365074: "0d5712f096bd6172",
           36509: "eba79c26bd1d699f",
+          36513: "a103ca1437366ae7",
           365166: "9d27ed25c57b7e1a",
           365283: "c4cb58d8f3d3894b",
           365489: "9877f1ed19730db7",
@@ -700103,7 +700242,7 @@ ${l.join(" +\n")}
           368585: "a0de35470768d6be",
           368684: "c7462e4ccb4cfb17",
           368769: "cd772c14677137ae",
-          369113: "b858f73a5b59342a",
+          369113: "70b077d7332e8c62",
           369230: "29b21494b4a6bcd3",
           36947: "dd476ff1959306ee",
           369501: "9329220d4bdc3583",
@@ -700139,10 +700278,10 @@ ${l.join(" +\n")}
           374006: "738992eb5182516d",
           374063: "e0c6d869c7d36193",
           37408: "5dc7e553303fdcc1",
-          374313: "d709ccbfa1c1bb37",
+          374313: "f96b448373bd118f",
           37442: "52dc76cc8b41b585",
           374916: "5fee3e9fc5f97424",
-          374979: "2eaaa3d67e95d3d6",
+          374979: "8ed8e51be8f7401d",
           375234: "55c79837dd5d046f",
           375428: "235f893f9671ae08",
           375637: "85c8d70302d02a65",
@@ -700155,6 +700294,7 @@ ${l.join(" +\n")}
           376926: "a3ff3cb6fded3d17",
           377160: "43490d3c6a512b95",
           377278: "8cdf6657f7e021ed",
+          377428: "862ba91b2d3ac198",
           377617: "5b70087b5d23a4b0",
           377620: "912410aacab31b58",
           377663: "9a7d0ea582310809",
@@ -700171,7 +700311,7 @@ ${l.join(" +\n")}
           378424: "3f917cac1e28337a",
           378575: "56f3b3d0e078096c",
           379041: "c3550ac61c3ca791",
-          379054: "48b2cb6a7749e595",
+          379054: "4cbc4e31081c2bc3",
           379187: "d23415061795e06b",
           379285: "716423b245d5d818",
           379304: "bc3ce139db620454",
@@ -700180,7 +700320,7 @@ ${l.join(" +\n")}
           379995: "7f8e1156ab51d0cd",
           380469: "3345848e89779122",
           381025: "4031c93ec3408db2",
-          381198: "4191e9a8d345a485",
+          381198: "15da9edf99022fa7",
           381214: "0882b5a6ccc8e375",
           381605: "84295641aafe1407",
           381726: "3203c947d95fab2a",
@@ -700198,14 +700338,15 @@ ${l.join(" +\n")}
           383233: "e39cf07c25f514c0",
           383792: "e2443225e4b2e0d2",
           383843: "1e1071f084199efe",
+          384451: "e16184a42cd2c7b0",
           384498: "82f11cca8135331c",
           384540: "3014b606c8f0f062",
-          384683: "05c5f8d234cae5e2",
+          384683: "87252ea5b856bed4",
           384794: "4fffe990b0bee752",
           384811: "34ccff5969d26c3f",
           384820: "ff7c4c4e5cfcd1c4",
           384951: "7788af8c71a71012",
-          385493: "d39f6d8bb7bfecfa",
+          385493: "fcc2494d86d90e2c",
           385504: "fcc1f219a9c40ebf",
           385511: "184e3ed34d830e8e",
           385540: "2758f45e286125a2",
@@ -700214,6 +700355,7 @@ ${l.join(" +\n")}
           385903: "ec01c75d2f7eddf4",
           3861: "89a9e977983fc12b",
           386135: "3ce67925136df463",
+          386203: "6b4d3bd4474098c9",
           386329: "b4afa747ef5bdde6",
           386437: "35e566df2eb77a09",
           386454: "2205c2f331b00324",
@@ -700222,26 +700364,28 @@ ${l.join(" +\n")}
           386830: "0f76cb15e3cf400c",
           386861: "cce509dd6b324aa0",
           387141: "ebb95eedb4f0ffc9",
-          387168: "4b18edbd91471e2f",
+          387168: "71f880eeb0f879f9",
           387567: "fc559cbb55c16a3a",
           387933: "698890330839a6c6",
           388545: "daece00f8e77360d",
           389051: "ef51248e76ef4265",
           38956: "2f8c2b0c863f9dda",
           389560: "ccf07807e40c1f96",
+          390085: "2b680d2898edeaa6",
           390108: "3d10457fff753275",
           390213: "3c9379d40707abdc",
           39038: "8947ac8975a4bb57",
           390718: "1979b2f95efc3b99",
           390797: "b7a6f74c72f3ce69",
           391497: "b7f65cf59d1567f7",
+          391520: "fe0061691811263d",
           391697: "004001b6a2421622",
           391763: "27a3efd351a1f2d2",
           391764: "e02fdeee41e908a0",
           391826: "66f5d9963779d9fe",
           391902: "ca226499ad3f4c02",
           391952: "e79003ed31999f0b",
-          391980: "9b7931d43f203fa3",
+          391980: "27207487f68aa5d6",
           392009: "e74736ee7ce77110",
           392034: "062cb0903ef3aaec",
           39213: "777a1454c8952467",
@@ -700275,7 +700419,7 @@ ${l.join(" +\n")}
           395267: "a6ebadff516a66b9",
           395919: "3138e939f6da4b01",
           395939: "1528715bfdfb32f0",
-          396037: "12b4d23a9b29aac3",
+          396037: "70e38a9033793acf",
           396182: "9dedfaa9ed10ccf2",
           396325: "3c7eea392ea788c2",
           396477: "b32e2bbd54da233c",
@@ -700298,7 +700442,7 @@ ${l.join(" +\n")}
           398622: "d67eda7569a80d70",
           398693: "a0f46d357a774966",
           398793: "74512f2cde0e6412",
-          398970: "64fb81841636ed3d",
+          398970: "7b1a70c7e20b7193",
           399183: "d3c28d13ba4104f0",
           399316: "e4023074ab31bac9",
           399341: "ceb11d2f522a2902",
@@ -700312,6 +700456,7 @@ ${l.join(" +\n")}
           400501: "c71f4f5f24298f5d",
           400780: "667da1fc6fd612c3",
           400833: "1fd5f63fbc049aff",
+          400917: "0d2e9772a19b5999",
           401e3: "7afd7ee1d8150013",
           401071: "5ed607b950319177",
           401143: "3cd0931ab754b278",
@@ -700333,6 +700478,7 @@ ${l.join(" +\n")}
           402746: "779efd35a639b7c4",
           402771: "ce49af41a8ad1df1",
           40291: "6b0ac02b5b8ed94d",
+          402948: "0eb156192cdd70e3",
           403086: "ad9048e0b4aac410",
           403210: "585dc8873abfd739",
           403370: "ff3fc27409c27fc1",
@@ -700365,11 +700511,12 @@ ${l.join(" +\n")}
           40730: "e48444eefa55384a",
           407327: "4fe470099bb268f0",
           407846: "6955265f9ddbedc5",
+          407928: "2fab11ae51e8f4f4",
           40811: "2c3f1b68ed43e9bf",
           408112: "782d53bf8bc3f9c3",
           408362: "d9f805e6326dd0bc",
           408388: "0ac89af202ee101e",
-          408499: "854f5e0634d1eab5",
+          408499: "1bb43b634d3b5a51",
           408505: "52f35fe5391c4ec9",
           408863: "2cc05b243c2a280d",
           408891: "04d28f46b6140656",
@@ -700391,10 +700538,10 @@ ${l.join(" +\n")}
           410951: "13daeea087d31d2e",
           410958: "2346468e7c34e101",
           411353: "d2d33b5f17857521",
-          411386: "4d15814a86f559b4",
+          411386: "5ce00b2a12022159",
           412062: "6b4b3858fa4672aa",
           412123: "8f7dee4c5964806e",
-          412217: "fcb118de02c3f0c4",
+          412217: "86fbe1b9e5a3e309",
           412255: "1869c9b852e6c1bc",
           412272: "261494f69f6d44ae",
           412278: "4252ce66b576dae0",
@@ -700408,7 +700555,7 @@ ${l.join(" +\n")}
           41350: "dc6c228e1849ccd2",
           413634: "aa089ba9c33302b5",
           413911: "792cca27fa9de594",
-          413976: "5f2ea52a0d532604",
+          413976: "fe9826578ca97c4a",
           414109: "4bfd23164cab8801",
           414260: "bff5cfac18af982a",
           414591: "26509086ddcf1023",
@@ -700459,7 +700606,7 @@ ${l.join(" +\n")}
           42215: "61b3126570c38766",
           422305: "d2439db974a6b876",
           42243: "baa730954ed98482",
-          422487: "c2579231a62af4fc",
+          422487: "e49921942433f3f3",
           422750: "a3be3cd52aa6afb6",
           422891: "710545dd273afe2a",
           422963: "049736b3ad3339ad",
@@ -700481,7 +700628,7 @@ ${l.join(" +\n")}
           425592: "341fc22462486496",
           425894: "1a42e10afe1fc4f2",
           425906: "e8f632589ed3ac30",
-          42611: "cb28e2a4c59f76d1",
+          42611: "8127830630e1be98",
           426126: "e0408e18d2401fe5",
           426209: "49f9ac3d65907e59",
           426226: "aa8d7aa18f058e53",
@@ -700498,13 +700645,14 @@ ${l.join(" +\n")}
           42834: "4d795811fbaaab27",
           428367: "ce98034bb305528b",
           428429: "95cbc39b08cc3527",
+          428542: "ce5e6db9f1a60263",
           428712: "739295ca2d261009",
           428830: "af1f0c9c80d39c58",
           4289: "05f88e98148a1ac5",
           428967: "d9d217f7f0fc94ae",
           429143: "72869430fd7b6124",
           429232: "906e62ba7f57aa07",
-          429420: "d9d5884338fb34db",
+          429420: "0b113af7653d2bf5",
           429599: "1253a798fb96fc50",
           429624: "8c7ba8cf7c679c2a",
           429647: "52ebb1e7093eabaf",
@@ -700513,11 +700661,12 @@ ${l.join(" +\n")}
           430314: "e53b5da3579eabe0",
           430500: "767b08d56ae099fa",
           430634: "4653d92a7a392cbb",
+          430827: "c3d0b82d0d29111f",
           430858: "a49b4ce13dd834cf",
           430997: "bc7a4af9a08342d1",
           431136: "a21c09804f904896",
-          431294: "c751e494d1482e54",
-          431658: "cc0635aa688bf2db",
+          431294: "f6cb640aa7726fda",
+          431658: "a4808b2187debb89",
           431692: "ee790ed3101d08ac",
           431714: "9ac6c5f632d763bd",
           431763: "3f95557771e5d061",
@@ -700538,19 +700687,19 @@ ${l.join(" +\n")}
           433778: "7167972a3edbc13a",
           433957: "da04de52aac15bcd",
           434264: "ad93f2be1a71d16c",
-          434538: "e307863ac3f28550",
+          434538: "9f662896363cb8b5",
           434593: "26aa271137ffee43",
           434691: "7afc983db2b79761",
           434786: "21c19b382402d370",
           434849: "1844bcba3f5307b1",
-          434929: "4f153841bc832c73",
+          434929: "1f182afaa6f13e28",
           435002: "2fc0eee6b023d290",
           435066: "b44c7ac5f6b47a0e",
           435432: "ac67c6c0cb15b16b",
           435560: "32e68023a7c7986d",
           435751: "86628c0db07193d8",
           43578: "d77d93cd33469d93",
-          435911: "ab52dd24f947f29e",
+          435911: "155e3762430309f5",
           436423: "8f884ab701c446ae",
           436499: "5433c04db5d77a26",
           436508: "acc21e83ac7dd077",
@@ -700605,12 +700754,12 @@ ${l.join(" +\n")}
           443159: "b85b32e5b2d67ba9",
           443193: "69247dbabfc0a11f",
           443256: "725f68aae1609fa6",
-          443320: "70e9fa4af1a7c113",
+          443320: "91bcff0dd2e88333",
           443483: "acf47e0387bc9564",
-          443500: "c67c5d7c165f7921",
+          443500: "b42527af9cd89f31",
           443906: "8dffe558f8abcc99",
           443921: "f6b317a78a0a17f4",
-          44393: "860d6cdf215ce073",
+          44393: "e4817c3391f97aa5",
           444038: "9f31d35302742742",
           444113: "f673ffe30396808c",
           444344: "1e134db51ce2e652",
@@ -700622,7 +700771,7 @@ ${l.join(" +\n")}
           445124: "124bac342b34f4ca",
           445146: "704aea1c75edcb64",
           445147: "5ab7b2901e58d367",
-          445216: "c4496e38dc9f004e",
+          445216: "458aa33408a76003",
           445254: "4399b941235c0cc4",
           445421: "dff9defdd16df87b",
           445450: "df6dbaa62f4bb6b6",
@@ -700640,7 +700789,7 @@ ${l.join(" +\n")}
           447580: "59ae7bf083340941",
           44761: "eade5006663b2c68",
           447864: "60686cd581ea2082",
-          448037: "03d14c1ac427b67a",
+          448037: "8c7fccdef78b6f69",
           44843: "9edbe54ee12bbfe4",
           448536: "d7921591cdf58260",
           448577: "3af162ee106971a8",
@@ -700658,11 +700807,11 @@ ${l.join(" +\n")}
           450309: "6e4d35d1211b83bd",
           450530: "d510a0e563374dbf",
           450541: "428f88bdaa664147",
-          450676: "bc61e99ab6b9f3ea",
+          450676: "893b14bf32459340",
           45072: "eb92b0f1e06172c7",
-          45102: "11fd072fd32f25cb",
+          45102: "337cfa09d9ffcfbb",
           451088: "c0564301386a9062",
-          451125: "ce3ce881efb2f171",
+          451125: "f56f0527a0a9bdab",
           451143: "4accc971f3af62ae",
           451162: "b6a485e3fd34980d",
           451449: "4448909f3be3ac7b",
@@ -700682,19 +700831,19 @@ ${l.join(" +\n")}
           452921: "691a962b6e189a06",
           452981: "ee2e36924b61a644",
           453460: "1c667f27c8372916",
-          453676: "6e77231b8de1659a",
-          45375: "028aa7a6cbe2a7a2",
+          453676: "a6f33788ba6b6722",
+          45375: "5c8fed2df185c73d",
           454048: "d9316ceb8b5b2dc1",
           454085: "935cf1121e9353fa",
           454187: "aafe930d236b78a9",
           454450: "92b55a02b1358bca",
           454625: "db98608cea4edd1d",
-          454626: "62b565f871265599",
+          454626: "552edf8eaff4a6dd",
           454731: "3d2d616dd3e5d655",
-          45501: "eea2fe1ea9056593",
+          45501: "ee5cdec658a9dfeb",
           455069: "7c7c69a07ca26f7c",
           455524: "5a4f5721c1920839",
-          455529: "c0f98249c9f088ab",
+          455529: "41786cadeb165e03",
           455569: "1f5fd67cfa7005d0",
           45565: "b0f351bf44d46686",
           455924: "c344dbd98b035460",
@@ -700713,6 +700862,7 @@ ${l.join(" +\n")}
           457732: "7fb67700c76c7153",
           457742: "a321f1822bf9819f",
           457760: "4a065264b3301016",
+          457835: "a34a4e21efb378f7",
           458098: "5d4e9e43d084b7d0",
           458161: "fbfdc5e6ec51bc03",
           458273: "5f2f6b3b265523d8",
@@ -700736,27 +700886,28 @@ ${l.join(" +\n")}
           46071: "5f0d38d6f7edc542",
           460773: "0b2be5a1dc614702",
           460937: "f73884077335b987",
-          46099: "1bf7a4c499337957",
+          46099: "0ce6365ec70c8428",
           461353: "c69890decc45315d",
           461478: "8dc3665b618ba80b",
-          461582: "504ec69e3b3aea0a",
+          461582: "fea24b106dcf5689",
           461731: "b19e89e0edd6ec80",
-          461986: "299502f0f0a6605c",
+          461986: "8e1dd279231b9faa",
           462010: "db8e7680150a3120",
           462016: "23f72bd3ef82a7ef",
           462155: "3ef016b9dc0620c5",
           46233: "0689fa860ca24b17",
-          462354: "918e5619fbf6876b",
+          462354: "134de6d87b486f31",
           462427: "765d9ddbc3d3e286",
           462500: "af45687df16dbd9c",
           462865: "e86a28cc0200d338",
           462984: "fb63d25eb7a82ffc",
           463095: "6852b1d9ba0bf2cb",
           463143: "4fff8742c09284a0",
-          463174: "41e6c5837e5eb6ee",
-          463180: "e0402324a0337df0",
+          463174: "6de69f6dc1304cf8",
+          463180: "641638a5e5c7dac1",
           463276: "b9ac1e43f089f268",
           463317: "a18d51dd407777eb",
+          463820: "72ea49f3a525c2f2",
           463983: "2368405ff3b8d155",
           464242: "4d6e4cce03a0a508",
           464447: "d1ec21b89d6f6dea",
@@ -700770,7 +700921,7 @@ ${l.join(" +\n")}
           465773: "4446c2d5ad7272db",
           465794: "cac26cb97c1040fe",
           465937: "045657e4316af3c3",
-          466035: "448dbaff5565bdce",
+          466035: "c908acf9d94f57ac",
           466100: "7fc26f5cdc98a3b1",
           466147: "a8b3562a888d0b7f",
           466210: "75ba0158d1120484",
@@ -700782,16 +700933,16 @@ ${l.join(" +\n")}
           466913: "12c0eb2d6325a4c6",
           467490: "1674f4ea97af09ce",
           467506: "478944a4506eecf1",
-          467677: "05dcf6aa6b2840ba",
+          467677: "9d359962f63f2329",
           467696: "3da1ae3d17c431a0",
           468083: "e9d83db11f7de520",
           468136: "178dea35ba290383",
           468274: "db6bafc5a905254e",
-          468370: "af0d7016589321d8",
+          468370: "ee43de8cf576a26f",
           468468: "2150b2020f6d4a2c",
           468544: "a53f0e3d2290995e",
           468555: "c5201cbd7a0fc294",
-          468630: "9046253412b88e2d",
+          468630: "1a168fcc953f5476",
           46874: "f73ffcffd1b52b6b",
           469430: "af0425c0ae0d2a49",
           469647: "0234918984897947",
@@ -700823,9 +700974,9 @@ ${l.join(" +\n")}
           472627: "a627e4bebef31360",
           472789: "45983cbf4456707b",
           472919: "b4bef9315c610f72",
-          47313: "868190a029acbb6f",
+          47313: "7775067ce1e39e8f",
           473217: "6507788c4ecb240a",
-          473298: "bd13d6ec938d1e53",
+          473298: "4cad6d740508e32e",
           473384: "c48b236a5b73ac77",
           473544: "ca820fd291d9e695",
           473782: "075be1d3587dfeef",
@@ -700839,15 +700990,18 @@ ${l.join(" +\n")}
           475006: "d4c2226bde5b1451",
           475053: "8ff5d3ecdea6a39d",
           475071: "c503f3c0491eb948",
+          475239: "ac639a1e8252d6ac",
           475289: "b2540dff28a01ce2",
           475561: "a7ab2a7abd066689",
-          47566: "4ce0cc817b2d4738",
+          47566: "bac6d9ebe3fced23",
           475775: "c180af0a61b2836c",
           47581: "2943c433d179120c",
           475913: "4c2fa76b7a9620eb",
+          476050: "401a7b2eb54d885c",
           476375: "0602513a6b14217e",
+          476738: "55f69c30bff0eec5",
           476887: "beb1de923723dfd5",
-          477095: "67b5f7934205a3a2",
+          477095: "04c72f03347d15de",
           477168: "62567a5766d03b3c",
           47732: "8f5f21b1bcd3b830",
           477413: "ea2664012d37f425",
@@ -700862,7 +701016,7 @@ ${l.join(" +\n")}
           478837: "29273ecb0057312b",
           478963: "4f56aca3f76fce69",
           47897: "1446d67b5ef1ef4c",
-          478972: "7dc130c6bffbb665",
+          478972: "3c4015fd1ff84277",
           479061: "e3df75dbe6ceee12",
           479611: "277891926eeb3937",
           479854: "f2beb08711e0578c",
@@ -700886,7 +701040,7 @@ ${l.join(" +\n")}
           482205: "8394ee633266d006",
           482334: "4839fa6ac73220ca",
           482360: "8d89015b3212aba3",
-          482364: "d65477880b01bf9b",
+          482364: "2a47b60a00127a2d",
           482511: "334293be04b66a05",
           482652: "f280356705410a3b",
           482702: "28b79f5c82a16ccf",
@@ -700895,11 +701049,11 @@ ${l.join(" +\n")}
           482911: "4f7830b339df3024",
           48303: "9e7ad48d9f8787b5",
           483077: "0442bc58011dccb1",
-          483083: "2936514e62425360",
+          483083: "e847880a8e7b5e0b",
           483102: "0551f0f8235c2e4b",
           483178: "992835981e9fcbbb",
           483261: "c8a4f23ddf8c4cac",
-          483391: "5c225ea2ec11e66d",
+          483391: "360e6cdcfb140a1f",
           483504: "87beb62721cdde94",
           483518: "5e13100faa0b9ee1",
           483876: "84135f57457090f5",
@@ -700916,8 +701070,8 @@ ${l.join(" +\n")}
           485311: "b901fc7360c92fe5",
           485335: "b00dba8b9a851ca1",
           485754: "db1c9aab533e3bc5",
-          485840: "90d04279fe72f9f4",
-          485933: "f73f79ed248dd1a9",
+          485840: "5572b4211f08ebc1",
+          485933: "46cd81ce84a0e68b",
           486032: "9b3de98866e1f7c9",
           486137: "b94e3fe7cc0b0696",
           486155: "2cc6939b7e228c1d",
@@ -700972,11 +701126,11 @@ ${l.join(" +\n")}
           491894: "73633ab2147fbe3f",
           492098: "9013f7ab3db1571b",
           492104: "117b44bc55ba88a8",
-          492339: "3b828c684f46397f",
+          492339: "dca4bfd95b8517df",
           492568: "a5ea96a0b06818c2",
           492599: "db001dfb36e1b896",
           492618: "dfa6876054d2ac29",
-          492753: "cdc1388441af7b93",
+          492753: "1a0ca2a95769fa7a",
           492758: "54c154a63ce107d8",
           49282: "8c9db54576cb5000",
           492936: "cf518209f87aa983",
@@ -700989,13 +701143,13 @@ ${l.join(" +\n")}
           49444: "51e76d798a7bbbff",
           494483: "8f0ac1e679dd11e9",
           494544: "9389d6cfd995dacb",
-          494576: "9501a3f3c0ae5b19",
+          494576: "f43458964a9e8d7b",
           494657: "7df674b4ec0b947f",
           494678: "5ffb00cfe0490b13",
           49470: "03bc308259c15192",
           49474: "fe52679e03875d9a",
           494768: "abd83513bd56377e",
-          495504: "c00b994e6764643b",
+          495504: "3f45ad0fe00abc56",
           495567: "e8c473149accd5b1",
           49571: "ad8db04d08635822",
           495748: "c1388171f0d152c6",
@@ -701023,8 +701177,8 @@ ${l.join(" +\n")}
           499118: "ad0b2315dea731c5",
           499240: "d99c5d688756fd28",
           499312: "9b8764b7077787d9",
-          499517: "cd0c0d0d3127c9d0",
-          499634: "ba8d5cfe94328a7f",
+          499517: "1149a03e849899c3",
+          499634: "dfbe5e3a25f9037f",
           49964: "235e932234e7d509",
           499709: "198662bf8f8acd9b",
           49979: "b5ff8c5e3574841d",
@@ -701039,7 +701193,7 @@ ${l.join(" +\n")}
           500706: "69b9e76bd3e78027",
           500956: "a1140732c4cf7c89",
           50097: "80a20ac92ea9e69f",
-          501440: "b40971e3cd45c62c",
+          501440: "1cfd95c86b0e79d7",
           501569: "6a860cb9d7114be9",
           50186: "39add146ea4c8929",
           501888: "838bbd40ee61c8c5",
@@ -701047,12 +701201,13 @@ ${l.join(" +\n")}
           502018: "206750828f32293b",
           502111: "9e467ea1815db192",
           502185: "1687644a22e54802",
-          50228: "bfd158060585adb2",
+          50228: "84155d5c97dfc051",
           502357: "a585b335562b062a",
-          502459: "437e6a8dc516cd8b",
-          502717: "a750197a4549e575",
+          502459: "ad197ac5805b7c88",
+          502717: "b1f0e2b64cc3f02f",
           502930: "f2b30575defe956a",
           503177: "28c86af5d99b4ee1",
+          503231: "95587da79c2c718d",
           503371: "2883ad04476eb87a",
           503376: "ecdc2699efe5235f",
           50342: "163f6a82df8853c9",
@@ -701077,7 +701232,7 @@ ${l.join(" +\n")}
           50592: "731034f9580eab43",
           506045: "77e27a76234cfbcc",
           506220: "2ed7539d7b082a29",
-          506272: "d740181fa433cb1c",
+          506272: "bab3a49fe5ee90c9",
           506285: "85c40be638da6197",
           506620: "b498f8a699cc8ab1",
           506627: "645c7de6f9bb61cb",
@@ -701097,6 +701252,7 @@ ${l.join(" +\n")}
           50884: "bb655b4fe43e423c",
           508912: "cd37a2dc22c75419",
           509032: "8a73e6cc9a57b4a1",
+          509127: "d78f5801f0afb6ba",
           509595: "6867e08344f70a6c",
           509793: "17a68ed8c51eeb06",
           509815: "0e866e4805672059",
@@ -701112,10 +701268,11 @@ ${l.join(" +\n")}
           51080: "e0f32cc1c4549c49",
           510933: "2941cee7e2d6b59e",
           511074: "47b3f31f40a0bf3f",
+          511243: "ad663f32672c6a6f",
           511527: "0f70e52fb9322850",
           511546: "29671e5bb14ac13d",
           51183: "41c3ea405814e68a",
-          511906: "1ec56d140c13646c",
+          511906: "500c0c7b535915c0",
           51194: "6b02e9a9e9ad1c64",
           512162: "529d568e87300205",
           512312: "1f9d4373f0e336c7",
@@ -701128,7 +701285,7 @@ ${l.join(" +\n")}
           513843: "297f3af2e1aedb01",
           514076: "8e6831fe409d16a6",
           514124: "c8a5f013d02be871",
-          514248: "08b1e0300c9b95e0",
+          514248: "bf0ea6089d70f347",
           514360: "50c3b4592cd0c322",
           514567: "fa7abc7cb621dde2",
           514588: "2d64533cd6afe820",
@@ -701151,6 +701308,7 @@ ${l.join(" +\n")}
           516244: "11e41456b7293e54",
           516303: "5d75615bb65a2cfd",
           516380: "64675c763474cf09",
+          5168: "1a8a51dd099a6d73",
           517087: "07f3c260a1c0facc",
           517469: "47970581a3a6175a",
           517888: "080967e7317acf89",
@@ -701172,7 +701330,9 @@ ${l.join(" +\n")}
           519448: "f1fde2db32a70984",
           51967: "9457667d0eac45b3",
           519714: "668ab64fb3b01f0a",
+          519838: "78bbcbec1e74dd17",
           519884: "f3602babaf34fe39",
+          519933: "3f7d9161b886e67f",
           520342: "6a6ae388e53eca3c",
           520491: "1c9280c9e016bd4a",
           520517: "ff95612fce49e400",
@@ -701180,6 +701340,7 @@ ${l.join(" +\n")}
           520791: "9fa9f0dd984af394",
           520795: "e4d0fdf48f3f3cb5",
           521151: "565ddfa04af9ab65",
+          521240: "14ad08a261faeaf2",
           521258: "ad7c98b0dcae9f34",
           521291: "bf567d700bc31e34",
           521305: "15a47decd61269f7",
@@ -701188,12 +701349,12 @@ ${l.join(" +\n")}
           521574: "397f08afd858a852",
           52159: "498c4526d0567fa5",
           521743: "c186ec21c2820d80",
-          521761: "be1bbdd0cf092330",
-          521846: "c115326d93505a26",
+          521761: "16de928dad7d3fce",
+          521846: "d41abb56a7e7406d",
           521930: "9c25197ce9670e69",
           522011: "a16729814783ccc2",
           522261: "617e7edcd3e17452",
-          52237: "b0ea3233e9e24870",
+          52237: "02e2e5d0230afc48",
           522493: "735aacf39f681c56",
           522517: "9fb052bb9a0957b3",
           522665: "0cb1798f400b884f",
@@ -701212,6 +701373,7 @@ ${l.join(" +\n")}
           524651: "3b15300eebfc6a34",
           524715: "4f123ff7b992f8db",
           524821: "7c219006900d3071",
+          525089: "35a1cdd5bbf7c02d",
           52513: "f9df57712bba1673",
           525189: "246f54107c205c7a",
           52532: "526f96ccf7be1d2b",
@@ -701222,8 +701384,8 @@ ${l.join(" +\n")}
           525745: "c3a5f1497d26a2da",
           525755: "92632fe4922e3d0b",
           525792: "186104f0fed43c37",
-          52584: "50bf8fb4c855ffb3",
-          525918: "3684243efea3b9a7",
+          52584: "c1120049c968dcca",
+          525918: "8918eff2b01795ac",
           525989: "32a227c451cff011",
           525997: "44e244b548c1fad1",
           52603: "af3be1668ab9b0b0",
@@ -701245,14 +701407,15 @@ ${l.join(" +\n")}
           528104: "dd33af60a37a32f7",
           528384: "13d0e6ebdd618203",
           528387: "b61ac5910530065f",
-          528666: "bc480c8e5d1c153c",
+          528666: "53d05a44f8b6c5fc",
           528916: "847e28f18d2e0cf0",
           528966: "36b652fd6142afa7",
           529384: "7bfa68e6bdf4a891",
           529422: "2e0b918ebacd3bf8",
           529488: "84854f373004fa43",
-          529532: "41e50472241ebf86",
+          529532: "67af164f82951d77",
           529570: "9f0890e3e59f4098",
+          529721: "75982ff447817985",
           529907: "573ff4b2728c93a0",
           530009: "4e819ea72803104a",
           530166: "8720e4928e862705",
@@ -701284,10 +701447,11 @@ ${l.join(" +\n")}
           534266: "f06f1e46dc04c694",
           534309: "0f1639c95d77c9cf",
           534327: "ecd212c7fb670e31",
+          534386: "e2502500c05ec319",
           534526: "54762282830993a9",
           534707: "18ce1f8a9d5ebb14",
-          534777: "059e01a82a219e60",
-          534786: "354b279728b6c55d",
+          534777: "8bb60d3208757f67",
+          534786: "3225cfdb6c25ca47",
           535087: "d2282a08f935dfd8",
           535236: "b52da5388b4181d5",
           535243: "9eb95bcc5d945e27",
@@ -701313,6 +701477,7 @@ ${l.join(" +\n")}
           537668: "bf290f02c356e30a",
           537917: "7a812b43ac456d31",
           537927: "0dfa1105cb47a9d8",
+          537999: "7fc504f54a4ac6a9",
           538288: "28669e159fe5c186",
           538371: "ba97febd23c6dc58",
           538513: "dc75db660bd726a9",
@@ -701336,7 +701501,7 @@ ${l.join(" +\n")}
           541656: "4491059aa8c995cf",
           541773: "68ac940c5722b8a2",
           54191: "3f5f8f7a8d619dae",
-          541983: "2b447aac637a6ea2",
+          541983: "e98ecc5af4f5a6b6",
           542048: "b3273d871ae1ccd8",
           542129: "5e0e2dceefbb128f",
           542369: "fa11c3a376394ea4",
@@ -701368,7 +701533,7 @@ ${l.join(" +\n")}
           546188: "ada9ddab05e276bd",
           546481: "106348376c73e8ef",
           546601: "3de77c09a67ef9b2",
-          546711: "3e1f25a985ccd85b",
+          546711: "4fd2d9bff0fb66c1",
           546742: "e6f6364a8acc6cbd",
           546826: "835b99026ff61a0b",
           546957: "522bd5bf4f319c92",
@@ -701397,12 +701562,12 @@ ${l.join(" +\n")}
           550267: "f95464878c9a82b9",
           550437: "fec93fdf12d1dc1f",
           550841: "64e0001bf34e208e",
-          551278: "11cfd19297e0120e",
+          551278: "6bac3e2802740998",
           55140: "a530078a0a8bad8e",
           551409: "5e38fff7ed962736",
           551430: "2a5b0ed5c156f7e0",
           551701: "ea3fe581393756c8",
-          551756: "4cb15eb8d542524d",
+          551756: "b10368ba65448532",
           552172: "69fe69b54af922bc",
           552256: "52847a7c8e81f67a",
           55266: "ee16a2bdb3a805f1",
@@ -701415,11 +701580,12 @@ ${l.join(" +\n")}
           553464: "825c87be371da780",
           55348: "6cc2624cf61adb6f",
           553485: "2b515d6dc53e8636",
-          553529: "c8831cc5fd86ab21",
+          553529: "2680fbf2848e4bd6",
           553574: "614ca255a5af96aa",
           553584: "3a41ed7167ca771f",
           553683: "f313a8064f2b3286",
           553725: "0f63ce0f20c442d5",
+          553805: "6e0ec0840453de49",
           553919: "fbed0ac9cb31d9e6",
           553984: "e2fc3acce3119274",
           554088: "f30babea394f2593",
@@ -701441,7 +701607,7 @@ ${l.join(" +\n")}
           5562: "d8b6ebd71ac62b5f",
           556385: "0dcc37b61fe08a2b",
           556436: "a0f6099311dc0073",
-          556574: "52245450bb65f7ac",
+          556574: "31ca45c2dbe9dc0d",
           556591: "9d6c8f81ea600b02",
           556868: "9ce12243995239ba",
           556967: "b3dadc03641ccb1b",
@@ -701452,6 +701618,8 @@ ${l.join(" +\n")}
           557830: "a6c64de4e7b079b5",
           557940: "f99a0c42b7d1f961",
           558114: "3db13433846c09ba",
+          55830: "f59a747e845518d7",
+          558984: "dea074246b855fdf",
           559082: "5fa8b892feda017f",
           559302: "c8ee2182afdf1eb2",
           55938: "5415995801b9c04a",
@@ -701465,7 +701633,7 @@ ${l.join(" +\n")}
           560165: "bc804e05a7ab5388",
           56021: "090fe56f9b1cc503",
           560528: "9896f85e00470e33",
-          560589: "1e32db40400cbd61",
+          560589: "ca058df8c0d7c901",
           56061: "a1a106637a1cf09f",
           560614: "12e0a88af6e8ea4a",
           560636: "75c10c68d26ed391",
@@ -701474,16 +701642,16 @@ ${l.join(" +\n")}
           561065: "dcf2d507023db0f7",
           561216: "08a07695f8bb2aee",
           561250: "3a2dcc5d5758267f",
-          56126: "ba290524cbc2fe22",
+          56126: "b36836da4c7df63d",
           561294: "3b70f44bffbec918",
           561622: "28853e3ae9025ee5",
           562037: "fb20bac68c5715bc",
           562041: "ac879dd19e46b7ad",
           562075: "d70ccdb5970c561c",
           562168: "a6ab3d3d6f0a9a84",
-          562210: "d56f42e960e6d749",
+          562210: "96e1e1c014ba3ca6",
           562345: "42e0d6ef79483c4a",
-          562544: "67aae4c6982ff3dd",
+          562544: "1096a5e10d011529",
           562772: "741a06df57656dca",
           562837: "d5f24740661369b7",
           562848: "fbf3a40a750be0bb",
@@ -701501,15 +701669,15 @@ ${l.join(" +\n")}
           564906: "506e3c9719eb8142",
           564966: "581504b4e1b4fb5a",
           56498: "f08347ccd10e5e8f",
-          565050: "f0a3522ca7224937",
+          565050: "0ac48e65e3e94bf3",
           565065: "8c35d034bc7c83f6",
           565154: "5c4094bbbab7a261",
           56522: "f61ecd952cdd68ee",
-          565544: "95ae51ceabee75d4",
+          565422: "f423169fe8c37da2",
+          565544: "e47775987aa6ee20",
           565617: "479abc9ff57878c5",
           565621: "f6b6b9e3cfa32391",
           565726: "e9cf8bd36b34e1e1",
-          565848: "8c90ce05bb66c502",
           565981: "f309e63ae8508e06",
           5660: "903bb2a250a0fc35",
           566139: "cd3c5e126fcda7a9",
@@ -701520,7 +701688,7 @@ ${l.join(" +\n")}
           566594: "ad435ff44afd4222",
           566653: "e41a76cff2ba54a5",
           56675: "813c9389cd85918e",
-          566812: "47ce03ff07972eed",
+          566812: "add531cc80fc95cd",
           567057: "b9f620093e932105",
           567099: "83f11d4b30ab815b",
           567195: "8a0dff4a8fb83636",
@@ -701580,7 +701748,7 @@ ${l.join(" +\n")}
           574850: "964de0d9fcc7a320",
           575062: "58fd414e585953fd",
           575165: "ba7778f563481299",
-          575342: "ae0c54394ff47258",
+          575342: "cea98dc8bd977924",
           575802: "3d562adfd85aea21",
           575987: "708b62418735ed7a",
           57603: "9bca201ff9b15ec9",
@@ -701588,7 +701756,7 @@ ${l.join(" +\n")}
           576415: "a843983dd75cf94e",
           576432: "67fb71819ab7498e",
           576484: "7d75c6fab3ffef05",
-          576623: "1fa3b6ef1ba21a57",
+          576623: "f94f309a20475e67",
           576665: "5ebc28e40d76b682",
           576787: "ef713da35a8018bf",
           576897: "f219518d593ea061",
@@ -701632,6 +701800,7 @@ ${l.join(" +\n")}
           582601: "36a3abd7f037c2a5",
           582766: "9961ae5a59c08715",
           58315: "74fb98081a420c4d",
+          583346: "6c226ce83502ae2f",
           583374: "f9304e74f1f79fd2",
           583518: "9e8a10c7271d77be",
           583724: "756b65c9ccb4bcd1",
@@ -701677,7 +701846,7 @@ ${l.join(" +\n")}
           588646: "abfa0ac41e33ac6b",
           588860: "d669a1420658c755",
           588871: "7b85eb0b34884902",
-          588931: "9cc4f4aaf2a2cfaf",
+          588931: "eb7d00f64d04561a",
           588940: "356dae3bca43519a",
           589154: "bb43c8db5bfb4014",
           589699: "562118d2fc0c8436",
@@ -701686,9 +701855,10 @@ ${l.join(" +\n")}
           590365: "341ba4aef5bc37c7",
           590406: "b04d69eeba28b61b",
           590448: "2439ae94b30bb69e",
-          590457: "f040aa90808b7260",
+          590457: "7563e124a1ccafc4",
           590559: "8abc6083665e735d",
-          590814: "53e98c6eae2e9ae2",
+          590673: "31e4ae6332c0e046",
+          590814: "7683ff50aea6be12",
           591163: "2bf42d7b1454b40a",
           591237: "2b94ad048ad8b082",
           591377: "f4c5146815b48b94",
@@ -701717,7 +701887,7 @@ ${l.join(" +\n")}
           595429: "402489176f35dcc8",
           595653: "3bdcc2eba6a213e5",
           595706: "5439858e1de96486",
-          595767: "1d36626fac78ffd2",
+          595767: "baf497459a85a953",
           595897: "0fa4af5c570499c6",
           595944: "587540c0d227556c",
           595948: "2de8fc053d0b7569",
@@ -701728,14 +701898,15 @@ ${l.join(" +\n")}
           596942: "c412ce13d23f2199",
           597645: "1d6cc7b725476384",
           598020: "82a2068de79ef269",
-          598157: "86bb47f1dc0258a4",
+          598157: "cd9ab2b0b6b6ad51",
           598421: "879666d0011ecda7",
-          598469: "301621bc1a6d5392",
+          598469: "0aa8b4dc09b21c90",
           598474: "9190f4685c88bc1a",
           598564: "9ca9ee0aaac83012",
           598761: "b04e53c7a8da9593",
-          598889: "97bf8132edd78af4",
+          598889: "7c568ccccea01d3a",
           598981: "b087a957b6e387bc",
+          599133: "3df7ef547cad4c2c",
           599135: "eb8851622ac60b2a",
           599141: "b0dd505ad52cd3eb",
           599334: "f17817e3930d9874",
@@ -701753,7 +701924,7 @@ ${l.join(" +\n")}
           600386: "8450a53dece00015",
           600601: "655a826578ac3f8b",
           600607: "9cedda54014e8375",
-          60069: "f7bd226c1937fe12",
+          60069: "0784f60354cb418f",
           600828: "07857be01d7069e1",
           60086: "338a759a2e84239f",
           601031: "cf36a7249bd90964",
@@ -701765,7 +701936,6 @@ ${l.join(" +\n")}
           601901: "34b37dc75b11c3a0",
           601991: "b85d19d6c67fc339",
           602536: "0fb55293b564578f",
-          602639: "a4a86b8d747e7f5a",
           60268: "9bb5ca62e9bfc8d3",
           602938: "c062044d5c544ff7",
           603091: "41b71e29aab750d5",
@@ -701775,6 +701945,7 @@ ${l.join(" +\n")}
           603808: "bdaa39f37322df45",
           603977: "8464059e649bff0e",
           603998: "671d18f7c822cea0",
+          604004: "5a3449d2952f3ec7",
           604202: "84f1bc084b555468",
           604458: "a03cd45c427160c7",
           604513: "99ffb9683cdc1518",
@@ -701785,7 +701956,7 @@ ${l.join(" +\n")}
           605573: "7e00a3da6e0ae30f",
           605732: "b0cbfda409664b12",
           605739: "e6e3923d46870290",
-          605833: "f1c71e52a0989071",
+          605833: "2e3f18da20744b31",
           605905: "aabb7f99df7c4c7c",
           606053: "5a43a3e8e5636fdf",
           606302: "519d3edc057e333f",
@@ -701795,13 +701966,13 @@ ${l.join(" +\n")}
           607468: "d9b08416efaa9077",
           607652: "168e10535f129f11",
           607990: "49a188ab62bef324",
-          60800: "ad99034aa6a18a56",
+          60800: "353b1b03e7fef8be",
           608032: "ce2afe3f46a00bc1",
           608464: "b1c598c00601cb65",
           608476: "e3490e63af174bb8",
           608511: "1a7627918cb6fc65",
           608557: "a131233abd009092",
-          608574: "222964fc57443233",
+          608574: "df293fef6896f0b9",
           60870: "c09a83d13f274159",
           608939: "770a479e9440580a",
           609372: "bd1550af0571568e",
@@ -701816,13 +701987,13 @@ ${l.join(" +\n")}
           611373: "263ba294fa895e75",
           611685: "9779e3003e2352a5",
           611713: "a90183318961dbfc",
-          611877: "7e85b6b48d5eb04e",
+          611877: "51614049a136e7c7",
           611899: "f592fb4abd88bae4",
           611990: "4bb966b34bf2ef02",
-          612272: "45c2414b15685d7d",
+          612272: "d7c38651032a05bd",
           612287: "64055c61724fc07a",
           612347: "9bdab4bf98f642c3",
-          612414: "fe9e0ac823c5bbc4",
+          612414: "8a1f572ea8115e61",
           612502: "2de8a10b2b962bdf",
           612512: "69352f3dc3afe3d4",
           612598: "18c93b11b28ec556",
@@ -701849,19 +702020,21 @@ ${l.join(" +\n")}
           615569: "a415a4724c3d09a6",
           615613: "8d5cbebab99d5101",
           615643: "60f3b434fa9049b0",
+          615705: "1b81aa946e79b94c",
           615907: "79768535189fac9f",
           615946: "8f0c7228636c361d",
           617009: "d83bf525bb124800",
           617171: "1bd0e02a6a362b5c",
-          61740: "5b9bdd545f3da3dd",
+          61740: "a7ec70156792d584",
           617616: "89397e1dc4224ae8",
           617823: "8470284182934689",
-          61784: "b5a05847ad917264",
+          61784: "9d7025873b7ae0c1",
           618145: "b78eb0088e439706",
           61849: "e9b977ee4af367cb",
           618706: "281b8ba69feff00c",
           618745: "169cbe542c86dd3d",
-          618788: "bb5f8f8d606920ab",
+          618788: "ab6cef680d0b4144",
+          619229: "3de82253ef482212",
           61924: "a7c094cf19cb3518",
           619304: "f7af4e8c63764de2",
           619699: "c2df521252d7aa55",
@@ -701877,6 +702050,7 @@ ${l.join(" +\n")}
           620999: "5571bdd14db900bd",
           621019: "f967b8dbc3730fab",
           621158: "edf1333927a6b12b",
+          621346: "530ada1713219ca8",
           621511: "8fc7cdf416c458fc",
           621573: "69c643862fec979f",
           621624: "82977d6cc2b336ba",
@@ -701899,30 +702073,34 @@ ${l.join(" +\n")}
           623997: "ff0e2ef1a73eb643",
           624198: "defa9b2f8f43a16d",
           62433: "7fe6fe571c3b1d6e",
+          624493: "1f14f33b0c086590",
           624643: "6b6048e9f5807192",
           624649: "fbd4ce4e40ea99b9",
           625265: "3a33251af7ff67d8",
           625281: "129eff293506514e",
           625460: "e851067b41d7d63d",
-          62613: "09ef3fcb822a8e89",
-          626475: "a505169a66120422",
+          62613: "bf7166002c14bd79",
+          626475: "c8f87f099a86b4a7",
           626501: "4f0db64c88279a4a",
           626565: "cd8133398b1f8610",
           626750: "ced2e779b04dc744",
+          626952: "31af8494a6645f9b",
           626985: "bb24ea5b605b13ce",
           627001: "aff7dc365953ab58",
           627213: "9b2e8370982487a6",
+          62734: "82b65e2067a45f8f",
           627495: "d85a0f0420364139",
+          627910: "e84f4f7f577605a4",
           628265: "30e114b251b3365a",
           628290: "4a4a77e394ab0e92",
           628400: "219113b147e493ab",
           628439: "317b99205f815746",
           62849: "4d06ad0ea32e728e",
-          628673: "e3024a9a937f92a7",
+          628673: "a760bcb6532657ba",
           628752: "c9c6e140e6de4486",
           628855: "4da6eb13cfeb22f7",
           628906: "832ba98eeadff4e2",
-          629039: "e297f12042f7f323",
+          629039: "52b711a987667d80",
           629512: "7e116eb5be6456e3",
           629573: "ac310799115c7257",
           629636: "0f78022577ea5881",
@@ -701932,7 +702110,7 @@ ${l.join(" +\n")}
           630393: "9fe87f747ccee0a2",
           630582: "b5f7a0e7d96b00e2",
           630724: "5693e689de8bba68",
-          630971: "b708dc8722789c8a",
+          630971: "9ca0c9a407ed06ac",
           631175: "fdad0ad583336e05",
           631262: "4508b20ec0e642b9",
           631358: "abf3775d48a58937",
@@ -701941,16 +702119,17 @@ ${l.join(" +\n")}
           63171: "09e6ee730cfa1ce4",
           631761: "dd964c933f120b63",
           631768: "0d92a53839a0eb7d",
-          63207: "33ce52be00cb7577",
+          63207: "c818ae24107fac5e",
           632103: "857ef899a34ebdcf",
-          632357: "1eb1d2890744322e",
+          632357: "11623a805b04b65c",
           632467: "2378d4e60f53286e",
           632576: "1988fc3db864a733",
           632607: "4cd21afdff6a3e08",
           632756: "e3f418b0a3353fab",
           632783: "da03f1812a8b92c9",
           632930: "1f7af6eba7ac16d7",
-          633075: "8977e4742e036557",
+          633075: "17b359cd1041edae",
+          633233: "770c1795d2fa2dcc",
           63340: "519df51e3a2a20ff",
           633428: "a5f8d30478e2f82a",
           633432: "298f23717ceec29b",
@@ -701960,12 +702139,13 @@ ${l.join(" +\n")}
           634508: "6d644cac3679c0a2",
           634786: "ec692e54fa3940e4",
           634941: "eb4133b8a7e56505",
+          635226: "c105c319e6f8984a",
           635270: "a3e72a1a6cfd14f2",
           635864: "486b1e15f384a660",
           635958: "d7f7760369fccd67",
           636002: "f1ab8a7ffc23a8ee",
           636066: "b07903c5c3c86c45",
-          636348: "a237f8cfe1a3e735",
+          636348: "ab7fe7242a1a03f4",
           636373: "90436ab771de8624",
           636550: "62a8d17eb54feb46",
           636652: "02e236ef976b82f2",
@@ -701991,12 +702171,12 @@ ${l.join(" +\n")}
           640317: "042749a0b7eabc9c",
           640380: "5f55c8b96a70b1ea",
           64042: "153b2c1cd727b1c6",
-          640507: "f06e7992da028261",
+          640507: "2eaa4f0a1a620632",
           640975: "c0442f86f5d2bcc9",
           641202: "bd66103ee32ccf7e",
           641297: "b7a5f8ebb6f86428",
           641374: "b94d5050968c9656",
-          641815: "5572b40695b73c4c",
+          641815: "85692d9788bc5976",
           641906: "e5ab1cde140a83b9",
           64201: "04369ec3eb920161",
           642066: "7e491254a43fcaa0",
@@ -702006,7 +702186,7 @@ ${l.join(" +\n")}
           642945: "3836d8a02ab2b9a5",
           643104: "4509079694938370",
           643167: "c543cba34cb8934a",
-          643241: "6ecc25eb18b2bc41",
+          643241: "5948931ee38d1fbb",
           643363: "a3b99985f28f2330",
           643493: "0549d9bdeae2d780",
           64353: "55862442c17584f1",
@@ -702038,7 +702218,7 @@ ${l.join(" +\n")}
           648197: "5125ebeda439d647",
           648241: "a18724c2c474b893",
           648344: "11cc6830e810a505",
-          648447: "d871c9931ef220f6",
+          648447: "2fbd1a65bb2d8883",
           649070: "80d7c8fa46917ef4",
           649232: "f43fe0038f74be3e",
           649351: "6e083a4ab65977ca",
@@ -702052,12 +702232,13 @@ ${l.join(" +\n")}
           650100: "5185924a759ac8e8",
           650340: "a4a30dea37b3a501",
           650494: "268145c662af5752",
-          650777: "3582f33e543df677",
+          650613: "1f7136b6603212fe",
+          650777: "76a7d088d3c91cd4",
           651218: "0b8300ad790038eb",
           65124: "39bd9ae395fe4eca",
           651428: "bfc92d783b985624",
           651585: "fab78c6e2194e3a1",
-          651592: "77d13095dc1441bb",
+          651592: "633206847b486f26",
           652014: "2a99bc74a9cb759d",
           652103: "24257d22bc6eefcf",
           652111: "e34f2df5c4ba4065",
@@ -702080,7 +702261,7 @@ ${l.join(" +\n")}
           654658: "5b6429a0f1672b0c",
           654886: "6a88be7de1080993",
           654893: "e4fa4fe31d4fa031",
-          655034: "d102538f861b1663",
+          655034: "0e2e15f18ebb8aa2",
           655205: "51c245132b5d8208",
           655212: "69985783806e32a5",
           655221: "c191c10c0b6781a5",
@@ -702088,19 +702269,21 @@ ${l.join(" +\n")}
           655251: "5b246e7b92103160",
           655327: "81074b3a681e31ab",
           655552: "97bdb7d93626dfe8",
-          655560: "6a9453bd323f39f9",
+          655560: "a13156b37ea09dd8",
           655602: "2e654c923d89a2ee",
           655708: "9e0fb85ca8d63305",
           655981: "186e91d40e9e6f01",
           656234: "c9ee5602276bbf72",
           656588: "52d5b4dbd4ff527a",
           65694: "735e992bf49d13fd",
+          657048: "95b9eb53697ba85c",
           657266: "11bd33b01e4a2b3b",
           657285: "cd6b6bd5d71f96e8",
+          657296: "18715dcd819daafc",
           657475: "2fdd2e6501fa62c3",
           657480: "2f34a756c1b42cb6",
           65757: "ac623124a6191b48",
-          657631: "436550b3ef5b0ef2",
+          657631: "da7483debe4c48e9",
           657682: "9d02effe4a297f50",
           658188: "24ab65c793951e4e",
           658216: "06e31c807bcf15cc",
@@ -702109,9 +702292,9 @@ ${l.join(" +\n")}
           658777: "24d233797dee3567",
           659089: "2a6ab023fae520f6",
           659139: "cbb7215a5bc2d470",
-          65919: "339c5df0e3687e7a",
-          659191: "be857b2810fd7822",
-          659307: "cc1579b6d84ba920",
+          65919: "1d216356aca70806",
+          659191: "6e35ca0bb416478c",
+          659307: "9793dc08293c0b8f",
           659337: "2c6950c95635899c",
           65953: "4dece824836f1d8f",
           659624: "6f2e3d32a4c2cc8b",
@@ -702128,17 +702311,17 @@ ${l.join(" +\n")}
           661342: "f45dcc3e55edddbe",
           661405: "9677e62c73675584",
           661453: "59f6e919ce97f13a",
-          661727: "4877902970951455",
+          661727: "e139e01ac0fe511f",
           661841: "7385a75a3f559c5b",
           662355: "1e675cbc3ea276e0",
           662368: "4c3a2cb282e82aea",
           662681: "ed3f771e677d0700",
-          662746: "4dd2fb93b0abb984",
+          662746: "9210eb7fc406ee40",
           662828: "e4868e10c6dba71e",
           662829: "dc64879ca39e6fc0",
-          663122: "26adc1ed8ab85962",
+          663122: "38828ef57481b36b",
           663248: "f1ec30e4b1d978d9",
-          663607: "8579ae453dd7c0b1",
+          663607: "c9177823e8cbe6ba",
           663733: "f488aad6e1e26ab3",
           663780: "5b4b9f8278d4e453",
           663893: "36006deab1d15f26",
@@ -702161,17 +702344,17 @@ ${l.join(" +\n")}
           666326: "a8b3b8ba237e50dc",
           666601: "e5c719906bfded7e",
           666708: "ea866b790cf48ca9",
-          666892: "81c585d412f659bc",
+          666892: "00d6dd096a281fae",
           666898: "060eb026a20b573f",
           666939: "e7bedb588292d24a",
           666942: "a52a289c7aab4e36",
           667092: "4f6837fbcf04b209",
           667133: "fb3f9ceb41584887",
-          667189: "4bf52cc903f0c854",
+          667189: "fbfff55798c02556",
           667335: "0a3a8f2739ec701c",
           667422: "c41e31c0c2c20682",
           66748: "20dcafa6d5099998",
-          667585: "7b36eafb9cc8e461",
+          667585: "ac5a141561780090",
           668271: "00a8a65954762fc6",
           668393: "d3e52401941f5e1e",
           668466: "cb4c098a2793b9a4",
@@ -702209,7 +702392,7 @@ ${l.join(" +\n")}
           673130: "1b2a2ab78528df1f",
           673380: "018d676516a62cfe",
           673730: "8e49f86e901a4743",
-          673963: "4563d5ab051c4e12",
+          673963: "3af3fbdbc301669b",
           674149: "1dc7762e02371130",
           674450: "7144ebe3edc2306f",
           674680: "a2472bb14841debe",
@@ -702220,7 +702403,7 @@ ${l.join(" +\n")}
           675506: "116359cb15a8ee2e",
           675710: "83e14e88dff78db5",
           675933: "e2ffdb2a440cbf42",
-          675941: "601a16bfc6562d6f",
+          675941: "650a45acf06e172b",
           676081: "dbfccadfd64d778f",
           676129: "b1c775da19ebdc2a",
           676156: "e787a25bbc61388a",
@@ -702276,7 +702459,7 @@ ${l.join(" +\n")}
           682735: "b92619c63cf57cfb",
           682758: "e99e11a36dc7b67c",
           682791: "a97aea52352e927a",
-          683: "d01524e771ef32fd",
+          683: "99a492f1b57f51b2",
           683023: "35b68645c5bb607c",
           683077: "0f679b0e625e1086",
           683084: "63eb8b879f991a18",
@@ -702294,14 +702477,14 @@ ${l.join(" +\n")}
           685308: "279d5587037cad42",
           68532: "622e626d781e1c5b",
           685432: "8a0b8609f99b3cf1",
-          685798: "1894dcee6cda343d",
+          685798: "ef7a5c78b9e861e4",
           685915: "4b127b30fb39d72f",
           686326: "c9fa81387affb558",
           686367: "6422a120b4b1b12f",
           686662: "16416279f2ae26d0",
           686765: "52f0ce6b53c86a07",
           686774: "d134ca76e694f1b0",
-          686849: "8b3e4bfe9063dabe",
+          686849: "f106cd72b8d4bc48",
           687634: "98e40c5a70be8c54",
           687834: "dcd951d1ef80e000",
           688799: "54d22c0d2e3c894d",
@@ -702310,6 +702493,7 @@ ${l.join(" +\n")}
           689064: "9801548ec93856e5",
           689101: "eb1b469f22ade164",
           689160: "47d859240b50b626",
+          689170: "d7007148cc7f49ca",
           689337: "09ca078b7ecf229c",
           689393: "531fdb1b3c35331f",
           689588: "08f0fab8eee8ce08",
@@ -702324,6 +702508,7 @@ ${l.join(" +\n")}
           690611: "e6411616bd4a7e07",
           69089: "9366bedf4bfe0d00",
           690901: "43c41c38e9459034",
+          691083: "8be23408e7590e45",
           691126: "9a9e6bc42c253130",
           691346: "2709a0a907326af9",
           691671: "266442fe58fe8eb9",
@@ -702360,7 +702545,7 @@ ${l.join(" +\n")}
           695765: "837b84b6ad303e3d",
           695881: "2344f862d21f764c",
           695934: "cebcd35d69615aa7",
-          6960: "74a26f35b7e7f278",
+          6960: "7f31c0b1ae6f0c25",
           696071: "1114de16ec83bc75",
           696123: "4dbfbaf944cef970",
           69658: "39b47339f3871903",
@@ -702399,16 +702584,16 @@ ${l.join(" +\n")}
           700811: "751c2f337f438e91",
           700903: "d9f46db39ddfbf46",
           701218: "05f4727a2cfe25c7",
-          701337: "3ce17df8f875595a",
+          701337: "ab27c2483714b70e",
           701384: "89e6a8842da5f1e1",
           701442: "772567dc3686b9f7",
           701485: "de3a6b68e7f73fa0",
           701714: "1f28557ba491d6f9",
           701906: "03a0a4db654eda92",
           702008: "7afb9f1d654b55c6",
-          702154: "91940f7f888a7b4b",
+          702154: "7cc5285cd9aae9f0",
           702333: "07ab62c96b091ff1",
-          70242: "980580ab08a8b75d",
+          70242: "f37b3e8a5db063f7",
           702464: "a60207f524240197",
           702846: "69e8ac4e3aafa96b",
           702894: "6e5654d6688eb01f",
@@ -702423,6 +702608,7 @@ ${l.join(" +\n")}
           703869: "5d5aa26737463d0d",
           703883: "78daf0e81489424c",
           704127: "ec14ee8ed75051c3",
+          704316: "0680fff6c5b47610",
           704336: "7b73e7afc348ae77",
           704374: "8738f36b81455a9f",
           704434: "a76bbae9c0790507",
@@ -702435,11 +702621,11 @@ ${l.join(" +\n")}
           70511: "557baffba93f8e7c",
           705127: "13bc08a17c8ca2a2",
           70515: "733502a1b0cc89ed",
-          705180: "583e9f5741c0dc5a",
+          705180: "49a9e1d9e6322651",
           705308: "c0446ca148a1cc1a",
           705554: "d26e5c2574b36f96",
           705871: "02fbe5e2be7eaa78",
-          705888: "7822eb3f2d2c1250",
+          705888: "fd5f665842660b21",
           70602: "d065f7f6415db96c",
           706209: "e81ff08ac4c1cbe8",
           706322: "448a69eab9dcfc69",
@@ -702461,6 +702647,7 @@ ${l.join(" +\n")}
           708536: "04ddd3bd97996d1d",
           708621: "ad450d14911c1f57",
           708692: "b41cf6b6a8c17dda",
+          708715: "29d9cfd70757ab16",
           708737: "4909286715378eaa",
           708757: "7cbd76766f5146c2",
           708914: "b7855474b26ae945",
@@ -702473,7 +702660,7 @@ ${l.join(" +\n")}
           709998: "f27e8a8fe7db6af6",
           710014: "1576fd6d387d2050",
           710075: "b0d51b9f180b9fe0",
-          710330: "1e858bb72d90479b",
+          710330: "5982a73ab45e1133",
           710379: "d8365ff98ee87e9d",
           710569: "3b2c5703aa1941ac",
           710727: "aed76361ef0ef614",
@@ -702489,7 +702676,7 @@ ${l.join(" +\n")}
           712390: "2f14426ec5bd5cbc",
           712419: "bb6fa5f481516195",
           712645: "c2bcf52a19120705",
-          712748: "da3e36349f3b9d01",
+          712748: "2e30c48a8fb71629",
           713085: "f59341ea18cfd8be",
           713245: "459ad28047fed2ce",
           713567: "64ab1a69488a2b12",
@@ -702533,16 +702720,17 @@ ${l.join(" +\n")}
           717983: "251ba9f538940ca4",
           71818: "ab19bd349b6ae60a",
           718573: "b97b025bc6285f7a",
+          718781: "025b4408343f047c",
           718818: "58f987841e2b99b6",
           718955: "f050dbc3330acef4",
-          719202: "4244de767e5607fd",
+          719202: "589bac53f2b252e2",
           719287: "e238e358f9565fbf",
           719307: "69e632770a233651",
           719428: "500931e2f3b6cba9",
           719466: "93af0fe697e813bf",
           719534: "615605a8a60a4654",
           719549: "9f0fd7511040571c",
-          719641: "81b187e397b897d3",
+          719641: "6d35f8ef1d4a4e5b",
           719750: "dc58a9abc5329cd8",
           719759: "d8bba84a839a9213",
           720045: "4edc9e9f2642a40e",
@@ -702550,9 +702738,10 @@ ${l.join(" +\n")}
           720072: "602b93de056c5bf4",
           720161: "1d0a9b4c04775167",
           720268: "e9df99d609ec0102",
-          720481: "3ae7be20e119368e",
+          720481: "016d9508ad2f9ad6",
           720590: "85d1b1d32f30fe16",
           720969: "3da8960f1b0dc7f8",
+          721154: "1f08fb87bd3ce34e",
           721192: "3f72642b48d8ca18",
           72127: "0c63298875a43741",
           721278: "3743a05c72001740",
@@ -702572,14 +702761,14 @@ ${l.join(" +\n")}
           723212: "dffed9ce6be2e2fb",
           723794: "a3c238743a81b3c5",
           72387: "bd0dbbbe7e504982",
-          723882: "63cd91c7f2c87a07",
+          723882: "29118554c588eeac",
           724303: "7a96a0670933eb54",
           724637: "52846a2140ef8e8f",
-          725021: "3eb40eecc061a40e",
-          725098: "552bc9f208288af0",
+          725021: "502769350771b385",
+          725098: "d4d9ce2e3cd730ad",
           725241: "0833e54d39b79cfd",
           725246: "c0207ffc91851f6c",
-          725312: "8d46427b08f4f30c",
+          725312: "78a0dcd9b1cc6a47",
           725344: "1c44b4290d7ddc85",
           725851: "8245ea3e59b7473e",
           726082: "30a487e79382b044",
@@ -702599,7 +702788,7 @@ ${l.join(" +\n")}
           727661: "a6479bd1727ef3fe",
           727779: "1b0a1a576418b3e4",
           727847: "3b9ce6c457cb7561",
-          728112: "3c7eb4d2182d99bd",
+          728112: "c2869876eab3d05a",
           728136: "79cd0aef8ef5e60c",
           728515: "fabe817f620ac680",
           728553: "2e5cb757e223fe94",
@@ -702626,13 +702815,13 @@ ${l.join(" +\n")}
           731225: "53d467ee163c9db5",
           731336: "2217a5d76795e103",
           731751: "429f97d8ceec6846",
-          731862: "6c3883b8cd62453b",
-          73204: "8f89a6e2853d18d3",
+          731862: "592febcadf7aabb4",
+          73204: "0b312d546236f6c6",
           732100: "e78f5eac8f786988",
           732211: "d285246693be120b",
           732226: "3c20616c18348e85",
           732272: "5408b77d2d28b246",
-          732315: "e541c07c2649ff75",
+          732315: "975ecf332610216e",
           732404: "d5a36f5ce5be83e2",
           732828: "5ff51efd5664a66b",
           732981: "451d333a15ee51a3",
@@ -702644,20 +702833,20 @@ ${l.join(" +\n")}
           733352: "0926e6fb6e985777",
           733416: "34887b8261135221",
           733724: "b1425cfe01adc850",
-          733743: "457c875d733bb543",
+          733743: "266c0d8c646d0bc1",
           733771: "5cb73de9e2f8c959",
           734027: "15beb1ef0205b279",
           734097: "c30c5a7cda9ed54f",
           734187: "859e484f238efa53",
           734188: "c1caf339c1560377",
           734502: "15f2e58507a988da",
-          734536: "a68fa8f8d170efcb",
+          734536: "98d47470f0e0c458",
           734556: "30b36ea1478819e4",
           73500: "3d8a112b2bed5cda",
           735354: "4be7dcc4b5499923",
           735601: "57137aeb5f46010c",
           735611: "bf8021bb4b4ccad9",
-          735979: "14cf8b927d5105a5",
+          735979: "8e67507a3b999b39",
           736159: "e184f417c3516500",
           736621: "a6580fb326b206ce",
           736637: "c9e187ea19ce0288",
@@ -702695,11 +702884,11 @@ ${l.join(" +\n")}
           741452: "ad293d564d60dda3",
           741657: "fd47341f15a9e029",
           741678: "2bb8574da22b9a35",
-          742384: "0a641ba4ca3cb94b",
+          742384: "405211fec07ccfd5",
           742445: "9cd278ff8849349b",
           742608: "8d5e0228ea38eb85",
           743076: "a6f5e1e873b6071b",
-          743487: "4e39b09686404ba1",
+          743487: "7b049eb1ac2280d2",
           743562: "1b398d3879f0108b",
           743846: "bb76201c066129ef",
           743924: "07fd285522d5928d",
@@ -702717,7 +702906,7 @@ ${l.join(" +\n")}
           745457: "48cf072f4e30e3f0",
           745493: "c838528147a0b6a5",
           745528: "8643a6fa7a056dc1",
-          745531: "969f0559e2519093",
+          745531: "ffa37f6550a56c94",
           745868: "d9e8f48222c34768",
           745959: "3d15754372276f6e",
           746006: "9dc3b75d97059ab7",
@@ -702727,19 +702916,19 @@ ${l.join(" +\n")}
           746623: "da40f78027b1b628",
           746627: "bc20bfbd150b1d84",
           746818: "0cc067694752317c",
-          746879: "35f36c05875c378c",
+          746879: "4d862ae889965470",
           747166: "3b6bde00f6503b06",
           747265: "bdb5144cf7558090",
           747394: "0ca01c93cc19e370",
           747716: "7a53f9bf55e422ba",
-          747888: "36131e50a0461567",
+          747888: "c5119a351382844b",
           747923: "71731020c55e8625",
           747948: "ffe668e3db37ad97",
           748231: "cfa436dc8b461278",
           748370: "33b055d008911d72",
           748483: "67c698e3a256aaeb",
           748582: "c00b0f85a48f801b",
-          748584: "261dd5e7e044d773",
+          748584: "9e6ebda8afda246d",
           748614: "98dea080d75526a8",
           748621: "a6055611ee4d9e97",
           748714: "cb6dbd18ed5b1bf3",
@@ -702757,8 +702946,10 @@ ${l.join(" +\n")}
           750033: "8c73aae6d2cbb6b0",
           750096: "02017b99037ec61c",
           750228: "cb3309c62ed296e6",
+          750242: "52682f4e0c970388",
           750261: "2bca8b2325411b62",
           75047: "257f9b25280bf79a",
+          750491: "ba5acaffc29fdd9b",
           750568: "d06e5f341462b8a7",
           751153: "9c1f9735a207297b",
           751186: "da8f2df92f436eca",
@@ -702767,6 +702958,7 @@ ${l.join(" +\n")}
           751240: "b59d24ea1c875007",
           751543: "7903415dc7a9f4fb",
           751607: "2475d917d49b7670",
+          751874: "8f5e9f2321a91280",
           751992: "311591622a25398c",
           752106: "b0ed27bd10a71e5e",
           752252: "9ee52e28fd41c4a2",
@@ -702782,18 +702974,20 @@ ${l.join(" +\n")}
           753339: "b1744497c6d3dbb2",
           753376: "7267568aba0fc9dd",
           753387: "d9acae4a9177c032",
-          75352: "0137ccd6ea45978c",
+          75352: "9d5cf7f45b1231d3",
           753626: "5d21363ad6da37a7",
+          753999: "27d8c7964636bf72",
           754243: "9194878b0e61e41d",
-          754324: "1fcf266a076d958a",
+          754324: "e1121fc3fb292c73",
           754366: "44b8f7d2134d8939",
           754427: "bd83c982c855212c",
-          754576: "b47d97fc9d2a4a76",
+          754576: "ff76f656f5ea92c1",
           754596: "2ebec777623072bc",
           754616: "f9ab9056ec7e75a2",
           754624: "903c5d70db721111",
           754849: "b7ccf0000542ad86",
           755209: "d801eba028754565",
+          755410: "b5c1443d6eacc7c3",
           755631: "85944670e4faada5",
           755781: "5c876c3d909e2b8d",
           755936: "d2d77361372d9c25",
@@ -702820,7 +703014,7 @@ ${l.join(" +\n")}
           759743: "e91c70a5222eee95",
           760059: "05f53e25f1b3bcb7",
           760064: "6b6304f1f87aa4f9",
-          760145: "33a07bfd15fbbfc3",
+          760145: "5a335a8430507b4f",
           760200: "fd04ebd43cae1b56",
           760245: "ff03fc87e76133ec",
           760374: "0ae55de069469aca",
@@ -702840,11 +703034,11 @@ ${l.join(" +\n")}
           761902: "de08ee0709f129ee",
           761935: "ca5e05e25c6d6103",
           762165: "25fa39f1abb45dea",
-          762199: "df966c72b6e8821c",
+          762199: "65643321461a2a5a",
           762252: "4ce09d163251907e",
           762297: "66fe5484d8a7ac99",
           762359: "9c4ef2520fcd5927",
-          762493: "722172f193827fff",
+          762493: "aae4ab2d66d05737",
           762529: "aa92eaebecd99db7",
           762780: "c3dd8bc20fbdfb40",
           762807: "951dc44f9177fb47",
@@ -702903,12 +703097,13 @@ ${l.join(" +\n")}
           770182: "51b9f2d03004bbe7",
           770248: "df9af8ec5178f642",
           770444: "db7ee6276ee9cb4e",
+          770513: "d7c7f1018bf89624",
           770553: "c97fb36f3a551f5d",
           770646: "4fdd21866d8eeaca",
           770670: "7368189bd3e0ab37",
           770720: "07845565d44f0cc1",
           770750: "ce3cd5a1ca4310b3",
-          770769: "698fba6fe767f593",
+          770769: "1f62494d2351b29f",
           770904: "a21d2d1430bd4d0b",
           770940: "0bddab57c370ccf5",
           770961: "4519c8f60917fb6b",
@@ -702936,7 +703131,7 @@ ${l.join(" +\n")}
           774542: "f7ddd12908ea1bcd",
           774550: "438cf4a4050aa712",
           77473: "49f3f807c2b5cf1f",
-          774751: "03123e202e4f5dc9",
+          774751: "d2e7919e2d3704cf",
           774836: "17632469f78dbf01",
           775148: "fc2ffd570cdd1bae",
           775239: "467397920ad511da",
@@ -702960,9 +703155,10 @@ ${l.join(" +\n")}
           777193: "fd7c0544ba896160",
           777235: "c944ab030e9ee339",
           777489: "381a03922134881d",
+          777810: "e787e05da796aeb6",
           777848: "c8eb753f53083ee6",
           77785: "844f2534979089c7",
-          777867: "e3394b7f2d5b01a9",
+          777867: "5f774c4f45be66b6",
           777927: "ba45b94e3232bfeb",
           778055: "77b6e3eec956ffa6",
           778144: "46ab72d9cb048d8a",
@@ -702976,9 +703172,11 @@ ${l.join(" +\n")}
           77908: "896c4090adb0e736",
           779149: "1af112386f6a4eea",
           779253: "8b97cc7e53d17c6d",
+          779557: "ca4b77b6e3068b39",
           779899: "8c6e4dcbcd3a1fd9",
           78: "0f490c0bf343641f",
           780262: "a82a9cf27175bade",
+          780283: "414b284637620f23",
           780291: "2cb7a886ae49996e",
           780382: "17469a52e471d07e",
           780407: "c8c3d2a01db2dcdb",
@@ -703002,7 +703200,7 @@ ${l.join(" +\n")}
           783092: "6807264e0b055c00",
           783324: "4a742a133dff4b4e",
           783378: "19d1c51ec6961ba4",
-          783439: "bacb852c26973018",
+          783439: "3dbc67d5832bd1ee",
           783441: "9abc3ae0353912d4",
           783696: "2ca68d38accd7e88",
           783988: "e8b1eeb09b751947",
@@ -703026,6 +703224,7 @@ ${l.join(" +\n")}
           786142: "2c265dc1fd64ed7d",
           78618: "715d1fb7de5f4e54",
           786448: "e065ff316e8f6579",
+          786552: "b89f9df604c53cb0",
           786688: "c0c7128a3ec41c92",
           78669: "5177e892ab8792ca",
           786720: "f9cd5d22a2162d30",
@@ -703043,7 +703242,7 @@ ${l.join(" +\n")}
           787680: "1fd52d3bc1f40441",
           787684: "8f05c3644c855c87",
           787762: "feaad17eee251af4",
-          787819: "3d9224a75c9abd66",
+          787819: "ec8c996e56dcdba1",
           787847: "e41878ed9086b544",
           78785: "9903468008072129",
           788064: "28228a662f063ed1",
@@ -703054,6 +703253,7 @@ ${l.join(" +\n")}
           788976: "efcba0bf98290459",
           7890: "c5f35f7d61f3f736",
           789346: "fa0c52df347e3658",
+          789362: "d816a8e2502ed40e",
           789428: "0bfabb9fd7cd59c3",
           789573: "2906691d8c3bcd3b",
           789616: "2662918463fec681",
@@ -703073,20 +703273,21 @@ ${l.join(" +\n")}
           791803: "f736be443f199761",
           791824: "f6c86bb652637c61",
           791879: "bcf7a8336acbbdd4",
-          792112: "3a802766904992a0",
+          792112: "13455025060ffc4c",
           79216: "9857b6f6422a88fd",
           79219: "8ead76bfe00be176",
+          792201: "dc3201e5d875d1f1",
           792256: "8b6e8456c3281ae6",
-          79234: "bdae2baf273af4d5",
+          79234: "9bedbf658fbc95d8",
           792461: "9cf4c852c9727cd1",
-          792629: "9ca48aa531a4b382",
+          792629: "fe8726bc55e9d872",
           7931: "b721feb705164789",
           793415: "e2a5f32d62196260",
           793588: "0fb085d4df3506ff",
           79362: "a347df05cc64e55f",
           793772: "91104377c13d2cc6",
           794058: "1d4442059739df54",
-          794525: "00b7c94bbc498b4b",
+          794525: "f57558a8a7da2d15",
           794704: "a65390956ad8489f",
           795038: "1a45dbd2af14b66a",
           795093: "f0f85c66498a85de",
@@ -703099,17 +703300,18 @@ ${l.join(" +\n")}
           796512: "cf68d7982a72f9e4",
           796531: "b3dae50d620ee729",
           796668: "2eb7fd6df14961e5",
+          796738: "faeaa4aefc75d53a",
           796867: "4a58b719615dc8e9",
           797072: "571419cb92b0da5a",
           797142: "dcf565b5927445ef",
           797199: "1f4886e745459a8c",
-          797428: "04dc683a0249a745",
+          797428: "574f2764541d95e4",
           797544: "6abe1a574f2f355a",
           797557: "a3b4ac9280678d90",
           797558: "22322313ab7c958a",
           797641: "1014adf07fd13545",
-          798149: "9b481d704b25779d",
-          798161: "b4c20e39da4e730a",
+          798149: "1e7b80c6cf06db94",
+          798161: "b77cb116d93e3d6b",
           79819: "b82e5595d1b5ec6a",
           798236: "28b5bef3ee486e06",
           798354: "92b244837d1b92be",
@@ -703157,7 +703359,7 @@ ${l.join(" +\n")}
           805834: "cbb19605f799af17",
           806221: "560f512f0455510d",
           806391: "d044aeddb07a8dc0",
-          8065: "da7a41f1afc4d33a",
+          8065: "921f0e10abc21150",
           806571: "b4c788e92bf07b15",
           806878: "b137ded23af0bc4b",
           806979: "19446e893430107c",
@@ -703179,12 +703381,12 @@ ${l.join(" +\n")}
           809014: "6d003bbe64e0dacc",
           809041: "ac3744aafe0bd309",
           809132: "d32497fabbd4c2d2",
-          809202: "47a97907165d0b6b",
+          809202: "1010ae7f4cbaea14",
           809428: "e7fb183d554ee540",
           809471: "caa053ec8326ebac",
           809548: "eef52b57168355cf",
           809577: "88aad3629efdc22f",
-          809803: "13b5ba92c2e5cfa5",
+          809803: "14c40f23246c4177",
           809915: "f814dcdbb549b1d4",
           809940: "b5014e4f0d707750",
           810034: "3bb23b32e6fd81b9",
@@ -703209,13 +703411,14 @@ ${l.join(" +\n")}
           812768: "041588e3956cfe30",
           812846: "f81b1fc18c49b045",
           812911: "6a1ae528993678ee",
-          812922: "b155541625c38d16",
+          812922: "e7121082cbd350bd",
           812935: "c58eb0a9b0382ab5",
           813036: "a543d99f5b3b3c1d",
           813447: "1de6532b02ea2687",
           813524: "968c1e002225f1e1",
           813583: "83fae39a085180d0",
-          813834: "19e1510c538fa8f1",
+          813832: "4695976ef7fdba08",
+          813834: "4fe99c92039e5bf2",
           813949: "b8e6ddb53468b1be",
           81398: "a3a1359e4552db08",
           814211: "ab0d9b8e045d3a02",
@@ -703229,7 +703432,7 @@ ${l.join(" +\n")}
           815554: "e26e1eb3c56cbce4",
           8159: "cad613879fb7b66d",
           816011: "651d62cf0e7c11e6",
-          816194: "510e6e53ad860edf",
+          816194: "b37db0fa42ce2343",
           816197: "67064ac4b0a63144",
           816442: "0d99b6bdc9caedf0",
           816761: "b0baeb417a25c61d",
@@ -703238,7 +703441,7 @@ ${l.join(" +\n")}
           817201: "d51245cf36074dd2",
           817219: "b41eaae147e45e23",
           817259: "708731bfd1cb7dd0",
-          817392: "77191e1b2f391572",
+          817392: "37cd5dbcc0d8ca15",
           817468: "100bd8ae2cdc8f0b",
           817637: "df1df7d89aaa681c",
           817670: "5dbc0e98584560a1",
@@ -703255,14 +703458,14 @@ ${l.join(" +\n")}
           819470: "a2eb06b66c7ab40d",
           819782: "d0822420896d1a3d",
           819842: "7bfd25a82b8529b6",
-          819885: "0a51bb99be4263a9",
+          819885: "5b9c42a91b5d1df5",
           819947: "b4c57378ad65fd46",
           820346: "cd35a4f0f99b82e4",
           820418: "122ccf28d5762749",
           820667: "bfe7b8bd91d6be47",
           820683: "cd366663c7bd6a0e",
           82077: "75ea68898aedb902",
-          820925: "9a88048c80e9203f",
+          820925: "9324fcc0998b84a2",
           820969: "496f6a0a120802ae",
           821175: "0015c7ce4d5fc5f4",
           821790: "b51f1ffccbd962c2",
@@ -703274,20 +703477,21 @@ ${l.join(" +\n")}
           82318: "5a28c40597b6c08f",
           823300: "a85a928aec97f6ef",
           823427: "869d0b3d3d6225d0",
-          823740: "bb037b72bc949e4f",
+          823740: "0e91e6ed3ca844c4",
           82384: "3cfacc506770821c",
           823879: "57e4c16a69309e86",
           824092: "1c2852913401a19e",
+          824348: "413151a19aa9e668",
           824395: "b59b786742f3fa4b",
-          824787: "4ca397f5f379e297",
+          824787: "fde2e8997623074f",
           824922: "9c90d6f3aabcf794",
           824992: "1a59bcbcdb714255",
-          825166: "7839e33f78c0f45a",
-          825177: "06394604a1b60c8e",
+          825166: "ea9a375b50538e98",
+          825177: "f052f123aab7ae96",
           825280: "9847a44903ee029b",
           825455: "8cf0383abcb98987",
           825486: "44219cfefd8901bb",
-          825577: "334286eed9e31f09",
+          825577: "826e0292e029abd1",
           825650: "9a1751426b0cab31",
           825903: "bec29d8c15d44fc8",
           826123: "418b4d405457a249",
@@ -703329,7 +703533,8 @@ ${l.join(" +\n")}
           830993: "93acc109127cab38",
           831145: "2a0f4f9707d920fd",
           831445: "f98448f6be98275f",
-          831463: "aafc05af88896558",
+          831463: "8a652c4f15e326ce",
+          831629: "c8b17fe9c1a379e2",
           831753: "172636db85746d75",
           831815: "11803f7c007c5011",
           831939: "e7894690ad47e911",
@@ -703364,14 +703569,14 @@ ${l.join(" +\n")}
           836178: "075b424c82c69a10",
           836306: "c2adda2c2c609dbf",
           836438: "a6df2cf562b96e48",
-          836469: "99622f34ff4fccc2",
+          836469: "e8b615237874fcd1",
           836483: "877e8e661940352f",
           836552: "960cf0a174cbd76e",
-          8366: "670d9a9d2e0581a5",
+          8366: "6f01aa50715f886a",
           836612: "bff8ade849ae28ff",
           836681: "f89e8acb3d5ff0cf",
           836863: "7892891230302ad4",
-          836958: "4d0dfa2664535f1f",
+          836958: "4ef294e65d3e8a60",
           837026: "50f962363f6badc4",
           837316: "a23d75a11a0a9707",
           837340: "a27912a87c105209",
@@ -703379,7 +703584,7 @@ ${l.join(" +\n")}
           837687: "7e4be8c3721e8021",
           837712: "80ba43b44aac09b1",
           837733: "7da778d94d1036f3",
-          837805: "863ead0d2e078fcd",
+          837805: "4089c5f46181f30b",
           838056: "7ffd2b3eacb24530",
           838090: "4bc7dcb82a7f8d8b",
           838336: "99c3ccad37be1754",
@@ -703409,7 +703614,7 @@ ${l.join(" +\n")}
           8422: "cdb47c3fe954b582",
           842207: "8351602ac2a238ef",
           842213: "b200bb69a4501cf2",
-          842230: "3b44ee0c96100ce7",
+          842230: "72965a0eaddc548b",
           842429: "95a9b141e00f73af",
           842486: "5756e9eead38aeeb",
           842492: "5b3c5f7a1092ec92",
@@ -703439,7 +703644,7 @@ ${l.join(" +\n")}
           845769: "49554937622e096e",
           845780: "69e80b9de2cb00b1",
           8458: "fc849e6256c83239",
-          845832: "7fbeea9df1ebc58c",
+          845832: "545a5fd0165ea782",
           845872: "3777cfd4093ab03f",
           846066: "5115e6eb9b28f0be",
           84614: "77cc325ca30a2c85",
@@ -703457,19 +703662,21 @@ ${l.join(" +\n")}
           847773: "f13813dd75c73341",
           847799: "959bd5df07091d4b",
           847809: "acd667d6166ee50f",
-          84800: "15cef734dcceb30d",
+          84800: "5e91eb3dfead550e",
           848064: "90582662710c0403",
           84846: "9086c2fb7f158db0",
-          848552: "6cc61b99e8528269",
+          848552: "e95312565b91b258",
           848625: "60cc3cc928e3c8a1",
           848896: "384afbf886462a90",
           849113: "4f5a657b07239a01",
           849246: "876e34adf97fc130",
           849442: "e0daaf1fc5c4120d",
+          849446: "420c700806c4fff1",
           849472: "a1d7cacd507303a7",
+          849751: "b3c40019e6d492cc",
           84992: "24c926dbc8050c9e",
           850140: "446ce32cd83080a7",
-          850145: "544f0d3b0bec592f",
+          850145: "3893ef1ab6580f83",
           850298: "7d14de56b28d7a5d",
           850424: "8b0ef9b41d903ddc",
           850572: "550ba61aabbf035e",
@@ -703482,7 +703689,7 @@ ${l.join(" +\n")}
           851200: "d4fc1d20054a4cf1",
           851224: "d663dabc935b0c4f",
           851243: "bb99fe0deae05e59",
-          851250: "912bde033c3f986d",
+          851250: "d08129ab4c233a57",
           851503: "d5cdefde9347a7e4",
           851515: "aa6475e4957a0bd1",
           852116: "26154b1bd685c2ff",
@@ -703497,8 +703704,9 @@ ${l.join(" +\n")}
           85319: "46b4d028f78f90c1",
           853934: "85a903ae11b38104",
           854622: "a2700211975578cc",
+          854811: "8f20eb6d5d886cae",
           854945: "c839cfaf1d8e3f6e",
-          855040: "afd8745fbc7bb66b",
+          855040: "52eadeb0fc641a4e",
           855043: "e3d4e12136f3647c",
           855150: "37f6c8e2e8be6ce9",
           855625: "cce732878fbc1441",
@@ -703527,7 +703735,7 @@ ${l.join(" +\n")}
           858620: "2bd56deff33a7473",
           858657: "8eea949c96e32331",
           858838: "32c4cc7c28efd911",
-          859407: "44e20c53d59a3ab4",
+          859407: "4d2b44eaea4ae759",
           859478: "121eb328d8d18e3d",
           859516: "c395fd03123acfd1",
           859654: "444823f259c2593e",
@@ -703549,6 +703757,7 @@ ${l.join(" +\n")}
           862281: "c83e76cc62fbbd46",
           862294: "6c25b2d4fd2c19ba",
           862543: "ba87920d0abef16e",
+          862579: "b03f4eee519aa45f",
           862681: "95061d567b3ce6f7",
           862767: "aa0ca9440553bd30",
           862782: "246c30e633a034eb",
@@ -703564,7 +703773,7 @@ ${l.join(" +\n")}
           864137: "c4272f6c40017e45",
           864316: "8c6ca10a77ffe679",
           864353: "26055bbaefc2d41d",
-          864487: "36e4c4e987cfe43c",
+          864487: "d90e3bd4ab74b658",
           864565: "9f221d8f7fd2a130",
           864581: "689886a363ebc4a8",
           86467: "ce77219b1bde2c33",
@@ -703589,7 +703798,7 @@ ${l.join(" +\n")}
           866805: "21272568b51d5505",
           866960: "8975c831dc7e670d",
           867160: "67b0096d29931c2d",
-          867646: "4849b510af5535b3",
+          867646: "00174e3c80a899a9",
           867807: "5e1195a881be2aa7",
           867856: "f9cca6132e63c370",
           867861: "6ed3799c7c5142d8",
@@ -703604,12 +703813,13 @@ ${l.join(" +\n")}
           86851: "12de74648533dc16",
           868577: "772fee537372b4a2",
           868637: "f7aceecc40e20d14",
+          86868: "e92875ad81ddd256",
           86933: "3fa5205f9a2371d1",
           869418: "a6d0e932a53e00ce",
           869421: "04e2dfb0f6a98b14",
-          869424: "0f887f79fae47eca",
+          869424: "965fcbe9e3a92e44",
           869626: "996b4a3967e650a4",
-          86972: "fcc561b9409c771b",
+          86972: "76d1a6bc89c324df",
           870052: "32b03584bdc22919",
           870272: "237c1feb95179030",
           870395: "09ad31a3b13a32b6",
@@ -703622,7 +703832,7 @@ ${l.join(" +\n")}
           871305: "2da10be5d84a3771",
           871467: "15dcff1233709e6b",
           871835: "39a89cdc754f1098",
-          872106: "3d229a8a40157462",
+          872106: "a645e456bf05a975",
           87219: "bd33ee8764f79945",
           872407: "a21b3ebaabca99f8",
           872427: "06f65966a1edd49d",
@@ -703636,10 +703846,11 @@ ${l.join(" +\n")}
           873572: "a6eca41b375cf0ec",
           873692: "503ed05d3b4767df",
           873702: "417e8e40932888aa",
+          873732: "fe70c4bdd64a0b54",
           873761: "30046f0065f2a0ed",
           873786: "9def978cbb110ba7",
           873904: "67dc24b56b5abff0",
-          874085: "2f06c24418ca1e95",
+          874085: "c0d56a5bbabb0deb",
           874123: "0c12a836293d488b",
           874182: "bae97969a64ecf98",
           874342: "2474e0140d6889d8",
@@ -703658,11 +703869,11 @@ ${l.join(" +\n")}
           875842: "6c3cb7a5878475b3",
           87591: "83aa902576035e46",
           876121: "ca7fbff13fbb7bba",
-          87632: "8739bb6ab0c2558f",
+          87632: "058b20dca614e397",
           876364: "8a117b5f3da8b23f",
           876401: "de4fee8703daa4a5",
           87641: "ba589842fff2433e",
-          876505: "43012d4204e593db",
+          876505: "b59c0127c52fd916",
           876587: "6e384d6f070bc041",
           876733: "d16dfc475e15823b",
           876892: "f7c239ab178b2740",
@@ -703685,7 +703896,7 @@ ${l.join(" +\n")}
           880861: "41856b7bdcf52999",
           881063: "f06473a0178191d6",
           881104: "e22b1aa2dc848afe",
-          881133: "2015ff69ea809c12",
+          881133: "16d28025ceb41cad",
           881349: "08b02269ddff072b",
           881572: "bc61f898c99152a4",
           88160: "1ac264abd1c89552",
@@ -703699,7 +703910,7 @@ ${l.join(" +\n")}
           883164: "aa129e7f96841a1c",
           88321: "c3e398b2ea54d443",
           88342: "46a4ba6757d6af7e",
-          883797: "808d311f7896865f",
+          883797: "642b4ab3e229c022",
           883850: "6cab86b909c3003e",
           883952: "ae4e1f5eb2812158",
           884063: "be22cec20128d6a3",
@@ -703753,6 +703964,7 @@ ${l.join(" +\n")}
           889973: "38f85906bf424548",
           890027: "8b652774957c7cc0",
           890152: "585294df041f8dcb",
+          890188: "e2294063d73a4135",
           890451: "53dda75b45dea3b7",
           890480: "d30ab86ff84daf4f",
           890603: "2c2317d3c92971b3",
@@ -703761,16 +703973,16 @@ ${l.join(" +\n")}
           891559: "d1218532f5b8850f",
           891585: "cbd87f78e3e32bb2",
           891603: "af2aba2bf9e147e8",
-          891765: "0625b4d8d25e1973",
+          891765: "958ab5d6e1ab0987",
           891844: "e878ad6f40f3f7c1",
-          891846: "8f373c5713fad26d",
+          891846: "d38e8f33781df62b",
           891863: "be4a969d2caf591f",
-          892081: "ba900fa2f49b9fac",
+          892081: "d29a04ce32d318af",
           892210: "86b7aab4323ff763",
           892530: "ae646a19903e0d80",
           892702: "8e5dae2711533d31",
           892705: "6a595a8193ac6d60",
-          892807: "faba2568d4035fa2",
+          892807: "d134bfce14f51d2b",
           892877: "b4a78d92f7cb71ee",
           892937: "e801eb469df16e92",
           893019: "0546a91e50430061",
@@ -703780,7 +703992,7 @@ ${l.join(" +\n")}
           893513: "655145c4ddc0fae2",
           893538: "2ddfff76c1e0644c",
           893767: "c274f68204647b19",
-          89382: "afd1b12981fe6323",
+          89382: "9e06f44d1c444d46",
           893917: "70451883adfd0b0f",
           893928: "3503646e11004abb",
           894147: "38d4a06979c8d7bf",
@@ -703790,9 +704002,9 @@ ${l.join(" +\n")}
           895099: "39349553163f70b2",
           89514: "a8f76bb3766cc3e4",
           895359: "5d905a784389d385",
-          895489: "e53e0b62a5648a39",
+          895489: "d5375c81faf6ec62",
           895790: "ff46beb5d9b22552",
-          895813: "ccc7b4f435f5a134",
+          895813: "4c197632bc71a8da",
           895851: "9cf96fa6a4624cbd",
           895909: "5f2a3ddabea715a7",
           896137: "648eaeafe7302bb8",
@@ -703803,7 +704015,7 @@ ${l.join(" +\n")}
           896496: "81c46f8bfa2d3e97",
           896719: "62f51be66a5f89f4",
           896804: "8c40bf6059e5e0c4",
-          896841: "638cdccae5825373",
+          896841: "6715dbf32e092a09",
           896897: "b115b0d9af3c8bb4",
           896970: "19b9875b663e0ebb",
           897073: "d381f5f455f357d1",
@@ -703812,7 +704024,8 @@ ${l.join(" +\n")}
           897473: "99994df4d53d3e2e",
           897536: "0f13693e765f6000",
           897607: "10119df6e663e1c4",
-          897637: "a5ef3a8ce4dee959",
+          897624: "f940cdc30c1528ad",
+          897637: "2bc0f4a24f3dbdd2",
           897753: "ac506efe5feaeb2f",
           897891: "d7e05461a9695bd3",
           897896: "38f46cdfe525fb80",
@@ -703820,7 +704033,7 @@ ${l.join(" +\n")}
           898003: "828eec14905707f4",
           898005: "b07d05f4c201eeae",
           898038: "ae06490072c24032",
-          898074: "5ef1f6e6b679dd77",
+          898074: "cee3cd5c2d857a63",
           898186: "1eca52b291b6c4ff",
           898279: "50ed54e1f7f4cc3a",
           898330: "77d4ea713c95b0b1",
@@ -703860,7 +704073,7 @@ ${l.join(" +\n")}
           902789: "43a01b0b2ac008eb",
           902851: "535e62223579885f",
           902939: "07e33a45a78a0680",
-          903081: "fe32c5b63360c6a7",
+          903081: "3af56ea6dafb027c",
           903166: "0a76f7790df3e968",
           903522: "85ad631507daa43c",
           90363: "4f3accc578cfca97",
@@ -703881,7 +704094,7 @@ ${l.join(" +\n")}
           905506: "88398ce4e5d16d9a",
           905560: "40469c2e3fb30fdd",
           905581: "5190a649220d310a",
-          90567: "bd7893e46f910bee",
+          90567: "9ab2b36f48f45ac3",
           906069: "16200532deaa6979",
           90648: "5cdca36eebfe6f72",
           906723: "b12fab20e71439a1",
@@ -703905,16 +704118,16 @@ ${l.join(" +\n")}
           90988: "f382d9329e5e8c9b",
           909915: "c156ca7d02fe7eeb",
           91003: "45c3728694f25528",
-          910047: "f7c31570ba4db7bc",
+          910047: "6244f873f67c86f3",
           910052: "56200690299cbb34",
           910117: "1d87e7c809e00063",
           910169: "98fba514dd0955f2",
-          910240: "393fb7b426a28fac",
+          910240: "2c654327b37e953d",
           910349: "1b91c5241d3fb8da",
           910471: "1c56fc459f5ae8b6",
           910644: "ce41edfff1d3661d",
-          91077: "712a43dda6495fd9",
-          910925: "80f97751e0738994",
+          91077: "3cdeb67d91506196",
+          910925: "cf51dacc1980c18f",
           910997: "b71c55f7c6c3693b",
           911025: "9f9c632bbd9d60e3",
           911064: "b71748a30d26b8b8",
@@ -703930,7 +704143,7 @@ ${l.join(" +\n")}
           912465: "acb31546b7d8195a",
           912601: "2df3d38ad8436a68",
           912618: "0293e0393a84cc48",
-          912658: "699208d567787372",
+          912658: "44bede6182ff0fdb",
           91274: "8cf40ed7b8380c4e",
           912773: "69eb6e3b8271477a",
           912826: "0fe411f3388e9c61",
@@ -703939,7 +704152,7 @@ ${l.join(" +\n")}
           913367: "8a5d148102c8fec8",
           913389: "7f2bcbc16edfbff3",
           913491: "0e9fc0ed6c41f3fa",
-          913569: "036a8885a2e7eaa7",
+          913569: "c0464287cdde639f",
           913823: "c9a55cf2a0c57c1e",
           914052: "510399907acdcb21",
           914248: "1fef0d70b4545ebf",
@@ -703961,7 +704174,7 @@ ${l.join(" +\n")}
           916519: "29d5a55d4355e494",
           916692: "76b53627e0d477f5",
           916758: "1238308a70e0631a",
-          916782: "593bd108f682b354",
+          916782: "f40fe3405199feb1",
           916953: "30f97fe1bb101e5a",
           917108: "34e0ccccf0375104",
           917290: "e0907fb06033ecee",
@@ -703986,7 +704199,7 @@ ${l.join(" +\n")}
           919973: "126c2772b7869542",
           920034: "066fbf13a9c11fe8",
           920223: "8d7aab0459192b55",
-          920243: "6cd2a089cf999521",
+          920243: "4911a459ee71e208",
           9205: "2a59f7228c8492c3",
           92064: "7ee4698ec323d29c",
           920749: "4af00793a4b7932f",
@@ -704012,7 +704225,7 @@ ${l.join(" +\n")}
           92403: "07a6182b8db14e33",
           924072: "c600637111648343",
           924103: "7d8d8f0dab02b7a2",
-          924118: "f6a3caa14d6b8a21",
+          924118: "979ebda4a30699c4",
           924310: "cdffe4545bdbdbfe",
           924399: "ecad5f97b3e91df9",
           924475: "82ba406dd0a22a88",
@@ -704025,17 +704238,18 @@ ${l.join(" +\n")}
           924861: "3dcfd9072bf55d74",
           924862: "5fe0855b73037fb8",
           924927: "9877ead8636aa074",
-          925047: "ca0a2c2e9568dae6",
-          925248: "a7b5e9c59ed29bd6",
+          925047: "453768c79b1c3500",
+          92515: "237f6b215b58882c",
+          925248: "150ae249899947cd",
           925253: "ee8dba4a9a4323a8",
           925258: "7071b61dbc898cb6",
           92571: "7eadc507d1e97dd8",
-          925935: "5b1a55db5687c557",
+          925935: "697641c16c5144f6",
           926132: "9e86e48b29e0a1fa",
           92623: "17a884ed9a5f5504",
           926510: "035e5bb2ae9fae82",
           926620: "e2bf522b09a6f642",
-          926724: "bf228bafbda7c4d0",
+          926724: "773492a9ac615a12",
           927138: "6d60882b3c1730da",
           927211: "8f0e164af64256c7",
           927278: "abca44413d538f46",
@@ -704043,9 +704257,9 @@ ${l.join(" +\n")}
           927682: "74d30a9684b626ae",
           927792: "b7cb96fd42022850",
           927808: "1352db3cdf85edf7",
-          928035: "04a4b3cb9a4228b9",
+          928035: "2d28430cb91999b6",
           928229: "84780fe132824664",
-          928350: "1515c4452f08b6f1",
+          928350: "319c094852c62880",
           928662: "87d569fbd37f6690",
           92868: "8898bb0714ebb665",
           92879: "094662dad082f7af",
@@ -704058,34 +704272,35 @@ ${l.join(" +\n")}
           930087: "00e97d9364579878",
           930139: "7c1a22407ce14029",
           930206: "d3d16c479793072b",
-          930464: "1ef7fee63225bfad",
+          930464: "48dc5c7f7eef50bc",
           930476: "0d82062979632176",
-          930529: "d7887df6a02e0308",
+          930529: "d9b4ecef565c55b3",
           930758: "e19e2e126871ace9",
           931010: "012c7597494bcece",
           931419: "3bd5e6c039b83ba4",
           931510: "42655a7c18e1a3f7",
           931607: "3a773e93843376d8",
           931736: "9db5f2255eefef40",
-          931902: "45a755662ce0fe5e",
+          931902: "4551cda57962c0bc",
           932011: "68d3e8e7a9a7af19",
           932186: "87e6370610500f36",
           932253: "cd1fbce13f278d79",
           932437: "7ec84306f6394c08",
           932606: "6564b90087f084c5",
-          932645: "bc756d000399df9b",
+          932645: "0e85947ac7a7e34f",
           93286: "8138573cf45a1c5d",
           932886: "f1abe4fb073ace9a",
           933268: "3f6ad58fce22b99b",
           933646: "c72309afa5847d47",
           933947: "b23a38fb9fecae1b",
           934377: "98f5a62de5ffcf2a",
-          934465: "ae4b0fc875a6c16c",
+          934465: "a91d9723eaae5005",
           934487: "8381324a9f617637",
           93458: "2ccc7fc272beb50f",
           934629: "152488980e8fcc07",
           934647: "15e45be1136208be",
           935091: "f6770d60e20ce3b9",
+          935113: "32c124914aca8d77",
           935205: "11e96885b982078f",
           935277: "48b264677d62c5cf",
           935412: "5d356757d21e64a9",
@@ -704102,11 +704317,13 @@ ${l.join(" +\n")}
           936875: "60c31c656a95091e",
           936897: "14e62c5c071d1cf5",
           937101: "c7765dab97b98802",
+          937212: "d9ca9fcbc709e871",
           937241: "0ea913ca9b221696",
           937672: "54c2590187e834e6",
-          938062: "21b9ce6dd6a75fcf",
+          938062: "b379b0ae2ae1157d",
           938149: "38d1b5b905c0f156",
           938336: "b13ed1e114e5f9cf",
+          938370: "7e993ca829ed66ad",
           938380: "b8c96dd1b21b0845",
           938579: "edae5a7b60868f4f",
           938652: "6ca5aea04eb7769c",
@@ -704119,7 +704336,7 @@ ${l.join(" +\n")}
           93925: "1171c5df3e388b41",
           939373: "6c4bff2e42f45c8e",
           939447: "ff1c65b53987b4ad",
-          93975: "e0b07108a890bcc2",
+          93975: "7f42dff547801746",
           939940: "01d99d7854630798",
           940033: "185124b9281ec70b",
           940067: "381ab3ace04e4f61",
@@ -704143,6 +704360,7 @@ ${l.join(" +\n")}
           942148: "e4e5a5f636eba0d6",
           942186: "5b424270fd3f2cf2",
           942374: "cc4de3db657af41b",
+          942424: "ba9723af31211465",
           942716: "68b39025d2ffe63b",
           942724: "fe3dce5ffdec5523",
           943139: "81b02a40ae6ed652",
@@ -704163,7 +704381,7 @@ ${l.join(" +\n")}
           944984: "8b15f3e0f014da7f",
           945338: "b19079cf062df9ff",
           945413: "a25bc5158264c2a4",
-          945610: "64560ed7fdc39503",
+          945610: "40b8c075918793ea",
           945651: "dc95a9f64905bd24",
           945699: "7fb7fe545d68b1aa",
           94575: "10092d6daff6fbea",
@@ -704188,7 +704406,7 @@ ${l.join(" +\n")}
           948705: "1ed88d51da558365",
           948804: "089b4009534f17f5",
           949013: "788e170ce4bd2c18",
-          94905: "39bb954aced43bec",
+          94905: "fcb68ef9baa9545f",
           949239: "c7e5dc72699a60bc",
           94938: "bdf9c95ffb85abf1",
           949946: "74c4e50978616ed1",
@@ -704202,12 +704420,12 @@ ${l.join(" +\n")}
           951811: "d994426463f88f10",
           952323: "e221c2bbc1ca58a7",
           952349: "0bd97edb9925ac0b",
-          952442: "c0ea91dbbec46eff",
+          952442: "9da50b61db3eafe3",
           952548: "8d375375f498e323",
           952577: "81ccc979297899e0",
           952582: "476179d7ae07f802",
           952831: "49a3b0c33877f333",
-          953071: "d57413eb7800794d",
+          953071: "6c83702c3b35a726",
           953237: "5cc0784e50f5a106",
           953327: "8fbd08878d475a6e",
           953358: "b4969cdfa9c0b845",
@@ -704222,7 +704440,7 @@ ${l.join(" +\n")}
           955128: "dad250b9cb3d9079",
           955257: "28b16d3eeaff1e53",
           955288: "8e0d4ddeda594faf",
-          955319: "06dbc1f489577638",
+          955319: "699c01d77cdfea09",
           955378: "13120037ec3c6312",
           955424: "937f994822ff1979",
           955498: "9934efbcba2a8a58",
@@ -704235,7 +704453,7 @@ ${l.join(" +\n")}
           956641: "fe1e2cc319e0289b",
           956796: "4a3842ad673d3954",
           956814: "c6eba81e978ec5a2",
-          956891: "634d42ce88c6b45e",
+          956891: "913455a0ff75dbd4",
           957065: "0c7c9b36b9cb286a",
           957289: "beaba4baf05ddeba",
           957425: "4ef397a68e0b064f",
@@ -704250,7 +704468,7 @@ ${l.join(" +\n")}
           958812: "68286e71db2644dc",
           958932: "8af5376974db1317",
           95910: "f9f67aee828b354c",
-          959125: "e6c3ae69171b8079",
+          959125: "e739d0f44fe594dd",
           959134: "79a066e53ae8d0b4",
           959275: "6b4565136c5e825f",
           959311: "2348c9c2067294ac",
@@ -704261,15 +704479,16 @@ ${l.join(" +\n")}
           960235: "e34c9eb9a5d23036",
           960286: "56fec83789d849ab",
           960579: "983b4144227262ed",
-          960658: "564e3fb6ce20629f",
+          960658: "948de349dc012d98",
           96075: "c722213906e0c468",
           960816: "5f8bd9b504d3d0c3",
           961051: "61b20f17addecb96",
           961096: "e2bd644be72e2c58",
+          961643: "6ac864560da98513",
           96166: "b6f93cdea084471b",
           961733: "70dc946e13207c1b",
           96179: "62f9373a82b1f46a",
-          961891: "3349971713e9b2df",
+          961891: "5a3adf2ed2ae04cf",
           96200: "ada75af468e2fae0",
           962684: "9f54c4c5a765c2fb",
           962751: "5e38da0b36aa4961",
@@ -704283,7 +704502,7 @@ ${l.join(" +\n")}
           963401: "6cd06666e3f4353c",
           96341: "de5d3a8fcca2ac10",
           963584: "83f09756a6014dd2",
-          963643: "e7e35ba597d323a3",
+          963643: "58145aa5709c9926",
           963832: "a481b42513038dec",
           964051: "7bd2df982503c8de",
           964103: "4520cec00a87c1a6",
@@ -704294,7 +704513,7 @@ ${l.join(" +\n")}
           964602: "3f6e5106e29247d2",
           964610: "0914f5dda22b2d63",
           964747: "78f879d7896e387d",
-          964898: "ebaf6c2acd1720c2",
+          964898: "58752e6630ff9f6e",
           964963: "401a498b5d0d0242",
           965061: "296d27d75536fa74",
           965152: "950f8cd20d721a76",
@@ -704316,10 +704535,10 @@ ${l.join(" +\n")}
           967154: "84a7d51cdb8f9c27",
           967168: "9329f37e8c081d98",
           967288: "56c6578e724bfa75",
-          967332: "effb3497137be890",
+          967332: "e7968d6dbb8d435e",
           967354: "b84ed5c5b485eac5",
           967601: "bf25857e5e37a182",
-          967703: "99c11d3008324050",
+          967703: "e285b648222dbadd",
           967874: "33dca2bb2c6ea3d5",
           967884: "40ecb6de22259c61",
           968201: "e88d5e340a345395",
@@ -704331,7 +704550,7 @@ ${l.join(" +\n")}
           969388: "6180f9ed0faa1b61",
           969543: "cab6a850b48448e8",
           969595: "1a1635ee3b4f42cd",
-          96961: "def54370c1bc5f71",
+          96961: "4e8494fc73ece7e9",
           969791: "86d7bdeecba3dca0",
           969842: "bc0c28c7582b27ef",
           970062: "267acc268c6243e0",
@@ -704343,14 +704562,14 @@ ${l.join(" +\n")}
           971508: "db4a1dbfb6bc72c9",
           971694: "05eee3313d0f1361",
           97186: "c7d3dcd78e583470",
-          971876: "fe9c9da012990443",
+          971876: "cccde5c1b523342f",
           971905: "ad31d31cdadde427",
           97191: "4fd8ef1b1440f68e",
           97210: "970ab5edf6d83aae",
           972166: "c86f619a18f4b963",
           972257: "2a77781486a67b5c",
           972399: "963747f07286b68e",
-          972872: "4f0612d27c06fc0d",
+          972872: "067dc3aaf3baee8f",
           972879: "1e2d6a986e03d72a",
           972907: "3e3f8f0ae10ab4aa",
           97319: "49c345210aa9e225",
@@ -704373,7 +704592,7 @@ ${l.join(" +\n")}
           976389: "483493da9babc946",
           976516: "3b8af9801ee9aacf",
           976606: "54186d4bccf1bec2",
-          976640: "702809a088b01f32",
+          976640: "643ae7b03d006bd9",
           976759: "5e811facfadfd135",
           976899: "6b02106234482c3b",
           977025: "854c0348d468bb47",
@@ -704385,8 +704604,8 @@ ${l.join(" +\n")}
           978167: "b15888c141a80fbd",
           978814: "21e50d19ea935da9",
           979067: "73f9af5af2437d34",
-          97929: "15ee46d6f438aa97",
-          979493: "4aa68f09fba14af7",
+          97929: "3c70e023b0d9089d",
+          979493: "02a331c945a4b01f",
           979554: "648d8e9b6b4f2abf",
           979585: "c309c93572f8b54d",
           979605: "916d0bef82cfb632",
@@ -704410,17 +704629,17 @@ ${l.join(" +\n")}
           983058: "3e3b3dacd88ddb35",
           983094: "a4e5a4b5af6c091c",
           983177: "19fa3334b5d7cb9a",
-          983373: "1c3b4e842ecdd7ea",
+          983373: "e733d13857346822",
           983884: "317fa1e686ea8cea",
           983920: "35f98fa68150b165",
           983947: "0bf69973722eeeff",
-          98401: "f8fae5bdc941a781",
+          98401: "361d33ed5da35db6",
           984546: "c7e1a1bf7d0d1632",
           984955: "fd919628e2e90045",
           98507: "4a015225b9ff9560",
           985396: "ca12ed4f917cf128",
           985488: "088517c38197a538",
-          985784: "73e523d59a1f1d6c",
+          985784: "a6047e3524a5dd89",
           985794: "74bb0170bd5848a8",
           985951: "9a8ac31ad20d858a",
           986042: "3ef69affc62b3224",
@@ -704430,9 +704649,11 @@ ${l.join(" +\n")}
           986629: "1adf61c8a300aeeb",
           986872: "5177e2985c459d92",
           987058: "f810f0692e5bb04d",
-          987408: "a3a7fed290183eb0",
+          987355: "2597000ee379acde",
+          987408: "9a309bb224c167e2",
           987478: "249471fa88e32bb6",
           987949: "8d5fb5c199377617",
+          988040: "25ab5d24f73d43db",
           988077: "be952b356c57617c",
           988141: "a7fbb30767014831",
           988295: "f32c49ac7aefbd65",
@@ -704468,7 +704689,7 @@ ${l.join(" +\n")}
           992085: "3a31e22c4609e859",
           992475: "2ca0e7e529fd9b96",
           992478: "403bbc45678c9354",
-          992971: "667698ca2167055f",
+          992971: "fb62701ba1310f5b",
           993103: "d65c4148a71425e4",
           99318: "e62277ef4bac906d",
           993265: "42953224145bcec3",
@@ -704480,12 +704701,13 @@ ${l.join(" +\n")}
           993720: "e2e6f51fd948e33d",
           993734: "94a96e7ca24e7c2d",
           993901: "8aae6005b814b102",
-          993983: "be585c5fb07b1a3d",
+          993983: "c39ec33349a1a1b7",
           99401: "7a02a95a23b81445",
           994131: "1cf096037f44fe75",
           99414: "d76ea37ee02e5e1b",
+          99436: "bc50ccf35a43a174",
           994483: "0803e41d06ba4933",
-          994575: "97a67957dba0a806",
+          994575: "9685b3434c8adb44",
           994629: "4c910cb9546919aa",
           994768: "e24ed0bf26c57519",
           995068: "73d7d255fa5b5b20",
@@ -704505,7 +704727,7 @@ ${l.join(" +\n")}
           996036: "7d2d7bd2fc585a0d",
           996091: "f26330615eb44fc0",
           996218: "0b6cfc01248d34b1",
-          99623: "df29c74a5fe7b592",
+          99623: "96a40db716ee3edf",
           996382: "e5b09882b915bf6b",
           99643: "03b396e5d58605e0",
           996506: "0da9663ff71bed73",
@@ -705189,4 +705411,4 @@ ${l.join(" +\n")}
   );
   N = p.O(N);
 })();
-//# sourceMappingURL=web.22d937a0bca68fe0.js.map
+//# sourceMappingURL=web.5fa84eb575ce388d.js.map

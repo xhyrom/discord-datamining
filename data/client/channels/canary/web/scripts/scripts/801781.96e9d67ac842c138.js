@@ -287,8 +287,10 @@
         qr: "footer_bcgTHb",
         K8: "footerTitle_bcgTHb",
         lI: "ctaButton_bcgTHb",
+        KV: "ctaSpinner_bcgTHb",
+        bZ: "ctaSpinnerItem_bcgTHb",
       };
     },
   },
 ]);
-//# sourceMappingURL=801781.2f0fcba85430e327.js.map
+//# sourceMappingURL=801781.96e9d67ac842c138.js.map

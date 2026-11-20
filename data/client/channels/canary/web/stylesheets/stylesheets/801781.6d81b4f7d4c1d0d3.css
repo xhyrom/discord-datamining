@@ -200,6 +200,13 @@
   box-shadow: none;
   transform: translate(2px, 2px);
 }
+.ctaSpinner_bcgTHb {
+  height: 16px;
+  width: 16px;
+}
+.ctaSpinnerItem_bcgTHb {
+  stroke: var(--icon-overlay-dark);
+}
 .description_Hb929y {
   line-height: 1.2;
 }
@@ -1178,4 +1185,4 @@
   z-index: 1;
 }
 
-/*# sourceMappingURL=801781.096430b389d8cc67.css.map*/
+/*# sourceMappingURL=801781.6d81b4f7d4c1d0d3.css.map*/
