@@ -712,15 +712,12 @@
   width: 100%;
 }
 .inactivePlayButton_hFq1lM {
-  background-color: var(--background-brand);
+  background-color: var(--black);
   border-radius: var(--radius-round);
-  box-shadow:
-    inset 0 0 0 1px var(--opacity-white-16),
-    0 var(--space-4) var(--space-16) var(--opacity-blurple-32);
   color: var(--white);
   left: 50%;
-  opacity: 1;
-  padding: var(--space-16);
+  opacity: 0.6;
+  padding: var(--space-12);
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -729,6 +726,14 @@
   transition: opacity 0.25s;
 }
 .videoCont_hFq1lM:hover .inactivePlayButton_hFq1lM {
+  opacity: 0.8;
+}
+.videoCont_hFq1lM:active .inactivePlayButton_hFq1lM {
+  transform: translate(-50%, calc(-50% + 1px));
+}
+.enable-forced-colors .videoCont_hFq1lM .inactivePlayButton_hFq1lM {
+  background-color: ButtonFace;
+  color: ButtonText;
   opacity: 1;
 }
 .inactivePlayButtonIcon_hFq1lM {
@@ -883,4 +888,4 @@
   }
 }
 
-/*# sourceMappingURL=734818.e9eda03ff0916902.css.map*/
+/*# sourceMappingURL=734818.cf51f3040b58d2f4.css.map*/
