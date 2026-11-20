@@ -1,0 +1,112 @@
+.scale_eIg3cI {
+  display: flex;
+  gap: var(--space-8);
+}
+.option_eIg3cI {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.endpoints_eIg3cI {
+  display: flex;
+  gap: var(--space-16);
+  justify-content: space-between;
+  margin-top: var(--space-12);
+}
+.endpoints_eIg3cI > :first-child,
+.endpoints_eIg3cI > :last-child {
+  max-width: 45%;
+}
+.endpoints_eIg3cI > :last-child {
+  text-align: end;
+}
+.card_RcUYeB {
+  background: var(--background-surface-high);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  bottom: var(--space-24);
+  box-shadow: var(--shadow-border), var(--shadow-high);
+  box-sizing: border-box;
+  color: var(--text-default);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-primary);
+  inset-inline-end: var(--space-24);
+  pointer-events: auto;
+  position: fixed;
+  width: 376px;
+}
+.content_RcUYeB {
+  overflow-wrap: anywhere;
+}
+.header_RcUYeB {
+  color: var(--text-subtle);
+}
+.headerIcon_RcUYeB {
+  transform: translateY(-2px);
+}
+.title_RcUYeB {
+  flex: 1;
+}
+.close_RcUYeB {
+  margin: calc(var(--space-4) * -1);
+}
+.close_RcUYeB button {
+  color: var(--icon-strong);
+}
+.thanks_RcUYeB {
+  padding-block: var(--space-8);
+  text-align: center;
+}
+.successIcon_RcUYeB {
+  background: var(--background-feedback-positive);
+  border-radius: var(--radius-round);
+  color: var(--text-feedback-positive);
+  display: grid;
+  height: var(--space-48);
+  place-items: center;
+  width: var(--space-48);
+}
+.footer_RcUYeB {
+  border-top: 1px solid var(--border-subtle);
+}
+@media (max-width: 420px) {
+  .card_RcUYeB {
+    bottom: var(--space-16);
+    inset-inline-end: var(--space-16);
+    width: calc(100vw - var(--space-16) * 2);
+  }
+}
+[data-popout-root],
+html {
+  --brand-05a: hsla(var(--brand-500-hsl) / 0.05);
+  --brand-10a: hsla(var(--brand-500-hsl) / 0.1);
+  --brand-15a: hsla(var(--brand-500-hsl) / 0.15);
+  --brand-20a: hsla(var(--brand-500-hsl) / 0.2);
+  --brand-25a: hsla(var(--brand-500-hsl) / 0.25);
+  --brand-30a: hsla(var(--brand-500-hsl) / 0.3);
+  --brand-35a: hsla(var(--brand-500-hsl) / 0.35);
+  --brand-40a: hsla(var(--brand-500-hsl) / 0.4);
+  --brand-45a: hsla(var(--brand-500-hsl) / 0.45);
+  --brand-50a: hsla(var(--brand-500-hsl) / 0.5);
+  --brand-55a: hsla(var(--brand-500-hsl) / 0.55);
+  --brand-60a: hsla(var(--brand-500-hsl) / 0.6);
+  --brand-65a: hsla(var(--brand-500-hsl) / 0.65);
+  --brand-70a: hsla(var(--brand-500-hsl) / 0.7);
+  --brand-75a: hsla(var(--brand-500-hsl) / 0.75);
+  --brand-80a: hsla(var(--brand-500-hsl) / 0.8);
+  --brand-85a: hsla(var(--brand-500-hsl) / 0.85);
+  --brand-90a: hsla(var(--brand-500-hsl) / 0.9);
+  --brand-95a: hsla(var(--brand-500-hsl) / 0.95);
+}
+[data-popout-root].low-saturation,
+html.low-saturation {
+  --control-brand-foreground: var(--interactive-text-default);
+}
+html.disable-forced-colors * {
+  forced-color-adjust: none;
+}
+.decorate-links {
+  --link-decoration: underline;
+}
+
+/*# sourceMappingURL=489870.b4bb76ac63a3de62.css.map*/

@@ -1,0 +1,95 @@
+.container_6FIOtX {
+  align-items: center;
+  background: var(--background-surface-higher);
+  box-sizing: border-box;
+  justify-content: center;
+  padding: var(--space-16);
+  width: 254px;
+}
+.container_6FIOtX,
+.contentContainer_6FIOtX {
+  display: flex;
+  flex-direction: column;
+}
+.contentContainer_6FIOtX {
+  gap: var(--space-8);
+}
+.assetContainer_6FIOtX {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  height: 53px;
+  justify-content: center;
+  padding-top: var(--space-16);
+}
+.orbAsset_6FIOtX {
+  height: 53px;
+}
+.linkContainer_6FIOtX {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--space-16);
+}
+.linkPreText_6FIOtX {
+  color: var(--text-default);
+}
+.learnMoreLink_6FIOtX {
+  font-style: normal;
+}
+.balanceText_6FIOtX {
+  color: var(--text-default);
+}
+.rewardsContainer_6FIOtX {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  padding-bottom: var(--space-12);
+}
+.deprecatedNitroOrbsLine_6FIOtX {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.balanceContainer_6FIOtX {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.videoBackground_6FIOtX,
+.videoContainer_6FIOtX {
+  border-radius: inherit;
+}
+.videoBackground_6FIOtX {
+  border: 1px solid var(--border-subtle);
+  height: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+.content_6FIOtX {
+  position: relative;
+  z-index: 1;
+}
+.lottieIconColors_69Onuk :not(defs *)[fill][fill-opacity] {
+  fill: var(--__lottieIconColor, var(--interactive-text-default));
+}
+.lottieIconColors_69Onuk :not(defs *)[stroke][stroke-opacity] {
+  stroke: var(--__lottieIconColor, var(--interactive-text-default));
+}
+.lottieIcon_69Onuk svg {
+  transform: none !important;
+}
+.enable-forced-colors .lottieIcon_69Onuk :not(defs *)[fill][fill-opacity] {
+  fill: currentColor;
+}
+.enable-forced-colors .lottieIcon_69Onuk :not(defs *)[stroke][stroke-opacity] {
+  stroke: currentColor;
+}
+
+/*# sourceMappingURL=853564.4d4db28086ee10aa.css.map*/

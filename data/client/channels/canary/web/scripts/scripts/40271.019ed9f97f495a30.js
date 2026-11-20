@@ -26,6 +26,7 @@
         SZ: "orbWalletHeader_hSuDqh",
         ZX: "orbWalletHeaderContent_hSuDqh",
         SY: "orbWalletHeaderTagInlineText_hSuDqh",
+        tt: "orbWalletHeaderTagInfoIcon_hSuDqh",
         s: "assetContainer_hSuDqh",
         Cb: "orbAsset_hSuDqh",
         w9: "cusorPointer_hSuDqh",
@@ -52,4 +53,4 @@
     },
   },
 ]);
-//# sourceMappingURL=40271.3708a6ad6ac759e0.js.map
+//# sourceMappingURL=40271.019ed9f97f495a30.js.map

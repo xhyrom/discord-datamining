@@ -1,23 +1,9 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [883511],
+  [462722],
   {
-    323627(t) {
-      t.exports = {
-        e7: "mirror_arQWk8",
-        Ki: "video_arQWk8",
-        $_: "media_arQWk8",
-      };
-    },
-    211269(t) {
-      t.exports = {
-        iq: "rightTrayIcon_ScIiLS",
-        F8: "participantName_ScIiLS",
-        _v: "videoControls_ScIiLS",
-      };
-    },
-    2753(t, e, a) {
-      a.r(
+    2753(t, a, e) {
+      e.r(
         (t.exports = {
           container: "container_XFjmsP",
           content: "content_XFjmsP",
@@ -42,16 +28,6 @@
         EU: "addCta_6DCDRW",
       };
     },
-    226471(t) {
-      t.exports = {
-        Qs: "content_WcvB1t",
-        FY: "streamHidden_WcvB1t",
-        FP: "streamHiddenEmptyState_WcvB1t",
-      };
-    },
-    138302(t) {
-      t.exports = { s: "badgeUpgrade_H2sld1" };
-    },
   },
 ]);
-//# sourceMappingURL=883511.d3677460818c89f2.js.map
+//# sourceMappingURL=462722.4e770788b897b56a.js.map

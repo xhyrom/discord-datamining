@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [505866],
+  [545666],
   {
     133480(o) {
       o.exports = { K: "focusTarget_EEwkB0" };
@@ -43,18 +43,22 @@
     123276(o) {
       o.exports = { uW: "section_AaklCn", rf: "body_AaklCn" };
     },
-    730201(o) {
-      o.exports = { q: "footer_gBge6h", I: "popoutInner_gBge6h" };
-    },
-    506425(o) {
+    175213(o) {
       o.exports = {
-        kL: "container_83l3AO",
-        DD: "title_83l3AO",
-        VA: "subtitle_83l3AO",
-        oL: "methodSelectSlot_83l3AO",
-        WJ: "leftCtaSlot_83l3AO",
+        y1: "backgroundArt_3tF3Yo",
+        N4: "backgroundGradient_3tF3Yo",
+        ap: "heroContent_3tF3Yo",
+        Tf: "heroCoverArt_3tF3Yo",
+        w$: "heroCoverArtImg_3tF3Yo",
+        lu: "heroDetails_3tF3Yo",
+        $: "titleRow_3tF3Yo",
+        IU: "wavingWumpus_3tF3Yo",
+        b3: "surpriseCover_3tF3Yo",
+        Qc: "gameRankPill_3tF3Yo",
+        _M: "coverArtContainer_3tF3Yo",
+        xe: "coverArt_3tF3Yo",
       };
     },
   },
 ]);
-//# sourceMappingURL=505866.4f768aa1358091c2.js.map
+//# sourceMappingURL=545666.e86eb16890fbf16a.js.map

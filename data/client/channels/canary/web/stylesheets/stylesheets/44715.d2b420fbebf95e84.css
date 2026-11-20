@@ -187,37 +187,5 @@
 .statusText_YaYM9o {
   padding-inline-start: 0.5rem;
 }
-[data-popout-root],
-html {
-  --brand-05a: hsla(var(--brand-500-hsl) / 0.05);
-  --brand-10a: hsla(var(--brand-500-hsl) / 0.1);
-  --brand-15a: hsla(var(--brand-500-hsl) / 0.15);
-  --brand-20a: hsla(var(--brand-500-hsl) / 0.2);
-  --brand-25a: hsla(var(--brand-500-hsl) / 0.25);
-  --brand-30a: hsla(var(--brand-500-hsl) / 0.3);
-  --brand-35a: hsla(var(--brand-500-hsl) / 0.35);
-  --brand-40a: hsla(var(--brand-500-hsl) / 0.4);
-  --brand-45a: hsla(var(--brand-500-hsl) / 0.45);
-  --brand-50a: hsla(var(--brand-500-hsl) / 0.5);
-  --brand-55a: hsla(var(--brand-500-hsl) / 0.55);
-  --brand-60a: hsla(var(--brand-500-hsl) / 0.6);
-  --brand-65a: hsla(var(--brand-500-hsl) / 0.65);
-  --brand-70a: hsla(var(--brand-500-hsl) / 0.7);
-  --brand-75a: hsla(var(--brand-500-hsl) / 0.75);
-  --brand-80a: hsla(var(--brand-500-hsl) / 0.8);
-  --brand-85a: hsla(var(--brand-500-hsl) / 0.85);
-  --brand-90a: hsla(var(--brand-500-hsl) / 0.9);
-  --brand-95a: hsla(var(--brand-500-hsl) / 0.95);
-}
-[data-popout-root].low-saturation,
-html.low-saturation {
-  --control-brand-foreground: var(--interactive-text-default);
-}
-html.disable-forced-colors * {
-  forced-color-adjust: none;
-}
-.decorate-links {
-  --link-decoration: underline;
-}
 
-/*# sourceMappingURL=981237.5979eee0421fa559.css.map*/
+/*# sourceMappingURL=44715.d2b420fbebf95e84.css.map*/

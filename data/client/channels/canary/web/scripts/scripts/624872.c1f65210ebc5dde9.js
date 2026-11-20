@@ -22,8 +22,11 @@
         Qs: "content_qIIk0K",
         wx: "header_qIIk0K",
         h_: "description_qIIk0K",
+        kR: "cards_qIIk0K",
         Mh: "valueProps_qIIk0K",
         SO: "disabledActions_qIIk0K",
+        Nr: "card_qIIk0K",
+        JH: "changeKeybindButton_qIIk0K",
       };
     },
     90163(o) {
@@ -35,4 +38,4 @@
     },
   },
 ]);
-//# sourceMappingURL=624872.c247fb561d4881ff.js.map
+//# sourceMappingURL=624872.c1f65210ebc5dde9.js.map

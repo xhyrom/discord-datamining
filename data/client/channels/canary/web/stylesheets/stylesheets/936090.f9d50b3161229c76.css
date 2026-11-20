@@ -250,6 +250,7 @@
 }
 .interactionEnabled_bktSrU {
   cursor: pointer;
+  touch-action: pan-y;
 }
 .interactionEnabled_bktSrU:before {
   content: "";
@@ -420,4 +421,4 @@
   }
 }
 
-/*# sourceMappingURL=936090.cbca69708b0ff84f.css.map*/
+/*# sourceMappingURL=936090.f9d50b3161229c76.css.map*/
