@@ -122,18 +122,18 @@
   padding-block: var(--space-12);
   padding-inline: var(--space-16) var(--space-24);
 }
-.characterAndStats_bcgTHb.checkpointEnabled_bcgTHb .stats_bcgTHb {
+.characterAndStats_bcgTHb.hasCTA_bcgTHb .stats_bcgTHb {
   gap: var(--space-12);
   padding-block: var(--space-12) calc(var(--space-12) + var(--space-40));
   padding-inline: var(--space-16);
 }
 @container (width < 300px) {
   .characterAndStats_bcgTHb .stats_bcgTHb,
-  .characterAndStats_bcgTHb.checkpointEnabled_bcgTHb .stats_bcgTHb {
+  .characterAndStats_bcgTHb.hasCTA_bcgTHb .stats_bcgTHb {
     gap: var(--space-8);
   }
 }
-.card_bcgTHb:not(.checkpointEnabled_bcgTHb) .characterColumn_bcgTHb {
+.card_bcgTHb:not(.hasCTA_bcgTHb) .characterColumn_bcgTHb {
   padding-bottom: var(--space-12);
 }
 .statRow_bcgTHb {
@@ -1185,4 +1185,4 @@
   z-index: 1;
 }
 
-/*# sourceMappingURL=801781.6d81b4f7d4c1d0d3.css.map*/
+/*# sourceMappingURL=801781.9ee9c0128b25b64e.css.map*/

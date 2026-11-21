@@ -279,7 +279,7 @@
         Q9: "characterAndStats_bcgTHb",
         Ss: "wordmark_bcgTHb",
         M1: "stats_bcgTHb",
-        WY: "checkpointEnabled_bcgTHb",
+        jI: "hasCTA_bcgTHb",
         AM: "characterColumn_bcgTHb",
         N8: "statRow_bcgTHb",
         Gl: "statIcon_bcgTHb",
@@ -293,4 +293,4 @@
     },
   },
 ]);
-//# sourceMappingURL=801781.96e9d67ac842c138.js.map
+//# sourceMappingURL=801781.1c3eb1de3de5525b.js.map
