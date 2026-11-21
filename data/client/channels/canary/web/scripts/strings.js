@@ -10104,7 +10104,7 @@
           (o = window.GLOBAL_ENV.RELEASE_CHANNEL) &&
             (null == l.release_channel || "" === l.release_channel) &&
             (l.release_channel = o.split("-")[0]),
-          isNaN((d = parseInt("678941", 10))) || (l.client_build_number = d),
+          isNaN((d = parseInt("678980", 10))) || (l.client_build_number = d),
           null == (c = eE?.app.getBuildNumber()) ||
             isNaN(c) ||
             (l.native_build_number = c),
@@ -154215,7 +154215,7 @@ ${a}`);
           n.e(859864).then(n.t.bind(n, 122123, 19));
         let e8 = window.GLOBAL_ENV.RELEASE_CHANNEL;
         new eY.A().log(
-          `[BUILD INFO] Release Channel: ${e8}, Build Number: 678941, Version Hash: 17c41702dc3cea93f4048f7a87289b8e894a9073`,
+          `[BUILD INFO] Release Channel: ${e8}, Build Number: 678980, Version Hash: 06f3dd4980fa86c94b880669629c0c179f79cadf`,
         ),
           w.A.setTags({ appContext: H.QCW }),
           eT.A.initBasic(),
@@ -154312,7 +154312,7 @@ ${a}`);
               a =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : "678941";
+                  : "678980";
             if (__OVERLAY__) return;
             isNaN((r = parseInt(a ?? "", 10))) ||
               eB.Ay.setCrashInformation(ew.du.BuildNumber, r);
@@ -156202,7 +156202,7 @@ ${a}`);
               n.e(690901),
               n.e(10622),
               n.e(569468),
-              n.e(565621),
+              n.e(350681),
               n.e(501888),
               n.e(507127),
               n.e(384820),
@@ -157274,7 +157274,7 @@ ${a}`);
                 n.e(16369),
                 n.e(300857),
                 n.e(864905),
-                n.e(400833),
+                n.e(849436),
                 n.e(525745),
                 n.e(334893),
               ]).then(n.bind(n, 185572)),
@@ -158957,7 +158957,7 @@ ${a}`);
                 n.e(576415),
                 n.e(983947),
                 n.e(944727),
-                n.e(565621),
+                n.e(350681),
                 n.e(774542),
                 n.e(705871),
                 n.e(527462),
@@ -172467,7 +172467,7 @@ ${a}`);
                     className: td()(py.Wz, py.mr),
                     children: [
                       (0, v.jsx)(pL, { className: py.Kk }),
-                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "678941" }),
+                      tN.intl.format(tN.t.uyrfYF, { buildNumber: "678980" }),
                       (0, v.jsx)(r, {}),
                     ],
                   })
@@ -177468,7 +177468,7 @@ ${a}`);
                 n.e(16369),
                 n.e(300857),
                 n.e(864905),
-                n.e(400833),
+                n.e(849436),
                 n.e(203379),
               ]).then(n.bind(n, 703465)),
             webpackId: 703465,
@@ -208085,8 +208085,8 @@ ${a}`);
               n.e(576415),
               n.e(983947),
               n.e(944727),
+              n.e(350681),
               n.e(88321),
-              n.e(565621),
               n.e(774542),
               n.e(911802),
               n.e(499118),
@@ -261203,7 +261203,7 @@ html body ${z}, html body ${z} * {
                 (e) => {
                   if (
                     null == e.body ||
-                    "17c41702dc3cea93f4048f7a87289b8e894a9073" === e.body.hash
+                    "06f3dd4980fa86c94b880669629c0c179f79cadf" === e.body.hash
                   )
                     return this._handleUpdateNotAvailable();
                   if (e.body.required || (0, l.kK)())
@@ -272358,10 +272358,10 @@ html body ${z}, html body ${z} * {
               let t = await r.A.fetchChangelogConfig(),
                 n = t.body,
                 a =
-                  ((e = parseInt("678941")),
+                  ((e = parseInt("678980")),
                   Number.isNaN(e) &&
                     (c.A.captureMessage(
-                      "Trying to open a changelog for an invalid build number 678941",
+                      "Trying to open a changelog for an invalid build number 678980",
                     ),
                     (e = 0)),
                   e),
@@ -318984,7 +318984,7 @@ void main() {
                       n.e(466147),
                       n.e(501962),
                       n.e(17736),
-                      n.e(565621),
+                      n.e(350681),
                       n.e(280559),
                       n.e(156132),
                       n.e(974049),
@@ -319025,7 +319025,7 @@ void main() {
               let { default: t } = await Promise.all([
                 n.e(114386),
                 n.e(885653),
-                n.e(565621),
+                n.e(350681),
                 n.e(704457),
                 n.e(108528),
               ]).then(n.bind(n, 729331));
@@ -347546,7 +347546,7 @@ ${R}`;
     })()}
 
     Metadata:
-    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "678941", versionHash: "17c41702dc3cea93f4048f7a87289b8e894a9073" }, void 0, 2)}
+    ${JSON.stringify({ logsUploaded: new Date().toISOString(), releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL, buildNumber: "678980", versionHash: "06f3dd4980fa86c94b880669629c0c179f79cadf" }, void 0, 2)}
 
     ChannelStore:
     ${JSON.stringify(f.A.getDebugInfo(), void 0, 2)}
@@ -413202,11 +413202,11 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             lN: function (e) {
               let t,
                 n,
-                i,
                 a,
                 d,
                 u,
-                A =
+                A,
+                h =
                   ((t = f(e)),
                   (n = (0, r.bG)(
                     [s.A, o.default],
@@ -413227,39 +413227,45 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   )),
                   t && n),
                 {
-                  canAccessBulkRole: h,
-                  canAccessBulkKick: I,
-                  canAccessBulkTimeout: p,
-                } = ((i = c.A.useConfig({
+                  canAccessBulkRole: I,
+                  canAccessBulkKick: p,
+                  canAccessBulkTimeout: m,
+                } = ((a = c.A.useConfig({
                   guildId: e,
                   location: "Members page bulk actions",
                 }).enabled),
-                (a = f(e)),
-                (d = (0, r.cf)(
+                (d = f(e)),
+                (u = (0, r.cf)(
                   [s.A, l.A, o.default],
                   () => {
                     let t = E(e, [s.A, o.default])?.guild;
                     return {
                       role: l.A.can(_.xBc.MANAGE_ROLES, t),
-                      kick: l.A.can(_.xBc.KICK_MEMBERS, t),
-                      timeout: l.A.can(_.xBc.MODERATE_MEMBERS, t),
+                      kick: l.A.can(
+                        i.kg(_.xBc.MANAGE_GUILD, _.xBc.KICK_MEMBERS),
+                        t,
+                      ),
+                      timeout: l.A.can(
+                        i.kg(_.xBc.MANAGE_GUILD, _.xBc.MODERATE_MEMBERS),
+                        t,
+                      ),
                     };
                   },
                   [e],
                 )),
                 {
-                  canAccessBulkRole: (u = i && a) && d.role,
-                  canAccessBulkKick: u && d.kick,
-                  canAccessBulkTimeout: u && d.timeout,
+                  canAccessBulkRole: (A = a && d) && u.role,
+                  canAccessBulkKick: A && u.kick,
+                  canAccessBulkTimeout: A && u.timeout,
                 }),
-                m = h || I || p;
+                g = I || p || m;
               return {
-                canAccessBulkActions: A || m,
-                canAccessBulkBan: A,
-                canAccessBulkRole: h,
-                canAccessBulkKick: I,
-                canAccessBulkTimeout: p,
-                canSelectAnyMember: m,
+                canAccessBulkActions: h || g,
+                canAccessBulkBan: h,
+                canAccessBulkRole: I,
+                canAccessBulkKick: p,
+                canAccessBulkTimeout: m,
+                canSelectAnyMember: g,
               };
             },
           },
@@ -476446,8 +476452,8 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   body: {
                     metrics: e,
                     client_info: {
-                      built_at: "1795216126587",
-                      build_number: "678941",
+                      built_at: "1795249639253",
+                      build_number: "678980",
                     },
                   },
                   retries: 1,
@@ -499473,7 +499479,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
             }, [s]),
             h = eo.A.coachmarkDismissibleContent;
           if (null != a) {
-            let e = (0, r1.A)("1795216126587", !0);
+            let e = (0, r1.A)("1795249639253", !0);
             t =
               null != e
                 ? eV.intl.formatToPlainString(eV.t.wve4kg, {
@@ -500487,7 +500493,7 @@ ${n}${t[r]}: ${t[r + 1].micros / 1e3}`),
                   n.e(576415),
                   n.e(983947),
                   n.e(944727),
-                  n.e(565621),
+                  n.e(350681),
                   n.e(774542),
                   n.e(705871),
                   n.e(527462),
@@ -619384,8 +619390,8 @@ ${t}`;
                         n.e(576415),
                         n.e(983947),
                         n.e(944727),
+                        n.e(350681),
                         n.e(88321),
-                        n.e(565621),
                         n.e(774542),
                         n.e(911802),
                         n.e(499118),
@@ -634499,20 +634505,22 @@ ${t}`;
           let {
             guild_id: t,
             icon_url: n,
-            online: i,
-            members: r,
-            description: a,
-            partnered: s,
-            ...l
+            banner_url: i,
+            online: r,
+            members: a,
+            description: s,
+            partnered: l,
+            ...o
           } = e;
           return {
-            ...l,
+            ...o,
             guildId: t,
             iconUrl: n,
-            description: "string" == typeof a ? a : null,
-            partnered: !0 === s,
-            online: Number(i),
-            members: Number(r),
+            bannerUrl: "string" == typeof i ? i : null,
+            description: "string" == typeof s ? s : null,
+            partnered: !0 === l,
+            online: Number(r),
+            members: Number(a),
           };
         }
         function E(e) {
@@ -674580,7 +674588,7 @@ ${t}`;
                     let n = new URLSearchParams();
                     n.append(
                       "build_id",
-                      "17c41702dc3cea93f4048f7a87289b8e894a9073",
+                      "06f3dd4980fa86c94b880669629c0c179f79cadf",
                     ),
                       n.append("rpc", String(t)),
                       n.append("rpc_auth_token", W),
@@ -685408,7 +685416,7 @@ ${l.join(" +\n")}
                   ).then((e) => {
                     let i = {
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        build_number: "678941",
+                        build_number: "678980",
                       },
                       u = o.default.getCurrentUser();
                     null != u &&
@@ -698363,7 +698371,7 @@ ${l.join(" +\n")}
           107521: "b16195306f26ce5c",
           107955: "7b693055b22155ea",
           108043: "412e39f3baaf1b7d",
-          108528: "5bf32b5da382bdd2",
+          108528: "d513b75351281a65",
           108634: "d81c9c6860d71735",
           10866: "77d892249cabac15",
           108770: "1a36b8aa9400c946",
@@ -699037,7 +699045,7 @@ ${l.join(" +\n")}
           202669: "cf68d5c8ca0d0893",
           202976: "c6f652db3d5b62c5",
           203112: "c099fca2fdb08d41",
-          203379: "5fa83cd495eee4af",
+          203379: "03c93792b64dd57f",
           203589: "4ccf864b28fbce07",
           203597: "7699b0fc584be4d1",
           203654: "b345fcd9920067ad",
@@ -699356,7 +699364,7 @@ ${l.join(" +\n")}
           246969: "cdaf2abf576a15ba",
           24697: "a06e19be29976e7c",
           247175: "a856e19a49469d30",
-          247290: "c9f371650ebd14dd",
+          247290: "97ab81efdc1d86fc",
           247339: "0626b36a59ac65a9",
           247554: "99ab2e31743b2edb",
           247700: "de6c7b9cd5694888",
@@ -699483,7 +699491,7 @@ ${l.join(" +\n")}
           262755: "83d706c7e53afda5",
           26294: "9c8200e255f58ea5",
           263025: "ede9bbfde018d02e",
-          263408: "80e18fe8d3df5682",
+          263408: "9a1c2f2fd91bc2b5",
           263506: "2d60ed72ed4348dc",
           263765: "213198be39cb65b0",
           263783: "82b53aa9940e33ed",
@@ -699983,7 +699991,7 @@ ${l.join(" +\n")}
           334391: "de86c56739c8c069",
           334624: "f3c6b7191fdc9a9f",
           334627: "d5e9fd0cf741bb67",
-          334893: "3ef716086fe4009a",
+          334893: "ac3db3e61eb95a18",
           334920: "d1604146ff48ac33",
           335088: "1ce932f1d60f52bf",
           335394: "2c0da89d41d7aa68",
@@ -700087,6 +700095,7 @@ ${l.join(" +\n")}
           350115: "f796281222676b4a",
           350200: "4f03feb78f59a727",
           350268: "5c1388ca9671b510",
+          350681: "82dc18bf853a2d1b",
           350695: "4167ca919c4dc807",
           350847: "21d23c363febba02",
           350949: "9f09fa7b4b248f39",
@@ -700230,7 +700239,7 @@ ${l.join(" +\n")}
           366592: "0be2c09ee36dd4fe",
           366996: "b4f073e14069213a",
           367017: "654b18fc7d41569a",
-          367488: "9920403eef6e973e",
+          367488: "591bdeaac8662d67",
           367554: "6db34c39dfc082fc",
           367675: "fc324041a61ea1c8",
           367690: "dc151e587ce2d566",
@@ -700359,7 +700368,7 @@ ${l.join(" +\n")}
           386329: "b4afa747ef5bdde6",
           386437: "35e566df2eb77a09",
           386454: "2205c2f331b00324",
-          386594: "6f67c97a9c5c1299",
+          386594: "d2008d8fd356c2e6",
           386780: "96093976d2eb04ee",
           386830: "0f76cb15e3cf400c",
           386861: "cce509dd6b324aa0",
@@ -700455,7 +700464,6 @@ ${l.join(" +\n")}
           400500: "3448808022ec468d",
           400501: "c71f4f5f24298f5d",
           400780: "667da1fc6fd612c3",
-          400833: "1fd5f63fbc049aff",
           400917: "0d2e9772a19b5999",
           401e3: "7afd7ee1d8150013",
           401071: "5ed607b950319177",
@@ -700470,7 +700478,7 @@ ${l.join(" +\n")}
           401590: "a4a5bf14a97ca70a",
           401827: "f9f070d6d0dd49b7",
           401980: "c376fb983f091b01",
-          401997: "e150f9a40adc30b6",
+          401997: "816ccebf02464f36",
           402026: "ac109aa3804b6d54",
           402076: "bbc562afbe18acf5",
           402241: "34bd58d455b841a2",
@@ -700665,7 +700673,7 @@ ${l.join(" +\n")}
           430858: "a49b4ce13dd834cf",
           430997: "bc7a4af9a08342d1",
           431136: "a21c09804f904896",
-          431294: "f6cb640aa7726fda",
+          431294: "0c5d3d593b071dbf",
           431658: "a4808b2187debb89",
           431692: "ee790ed3101d08ac",
           431714: "9ac6c5f632d763bd",
@@ -701177,7 +701185,7 @@ ${l.join(" +\n")}
           499118: "ad0b2315dea731c5",
           499240: "d99c5d688756fd28",
           499312: "9b8764b7077787d9",
-          499517: "1149a03e849899c3",
+          499517: "7ace547aafc114cb",
           499634: "dfbe5e3a25f9037f",
           49964: "235e932234e7d509",
           499709: "198662bf8f8acd9b",
@@ -701189,7 +701197,7 @@ ${l.join(" +\n")}
           500295: "2100ec1be276b1c1",
           500602: "251be1520d7cd57b",
           500619: "2df393f2a2734dd7",
-          500622: "21ef51f34d56d42d",
+          500622: "60d7757b164fb703",
           500706: "69b9e76bd3e78027",
           500956: "a1140732c4cf7c89",
           50097: "80a20ac92ea9e69f",
@@ -701350,7 +701358,7 @@ ${l.join(" +\n")}
           52159: "498c4526d0567fa5",
           521743: "c186ec21c2820d80",
           521761: "16de928dad7d3fce",
-          521846: "d41abb56a7e7406d",
+          521846: "f07c3d35ee84939e",
           521930: "9c25197ce9670e69",
           522011: "a16729814783ccc2",
           522261: "617e7edcd3e17452",
@@ -701676,7 +701684,6 @@ ${l.join(" +\n")}
           565422: "f423169fe8c37da2",
           565544: "e47775987aa6ee20",
           565617: "479abc9ff57878c5",
-          565621: "f6b6b9e3cfa32391",
           565726: "e9cf8bd36b34e1e1",
           565981: "f309e63ae8508e06",
           5660: "903bb2a250a0fc35",
@@ -702177,7 +702184,7 @@ ${l.join(" +\n")}
           641297: "b7a5f8ebb6f86428",
           641374: "b94d5050968c9656",
           641815: "85692d9788bc5976",
-          641906: "e5ab1cde140a83b9",
+          641906: "7e1fabe4f2ed6c42",
           64201: "04369ec3eb920161",
           642066: "7e491254a43fcaa0",
           642138: "bf4b498765a8dcb7",
@@ -702539,7 +702546,7 @@ ${l.join(" +\n")}
           695170: "1272fef30300ee1c",
           695205: "9e2773c94f4f4ca7",
           695206: "6fff93e818e496c4",
-          695221: "ceb73656db6e6af4",
+          695221: "2b4092dc05ed9131",
           695358: "d799927234a29c6e",
           695501: "dbcc99d56f1170f2",
           695765: "837b84b6ad303e3d",
@@ -702971,7 +702978,7 @@ ${l.join(" +\n")}
           752737: "fc46a5167ff0f761",
           752804: "3f926a99b7a92028",
           753195: "45d950dc901c0e9b",
-          753339: "b1744497c6d3dbb2",
+          753339: "6a4a515d051446c3",
           753376: "7267568aba0fc9dd",
           753387: "d9acae4a9177c032",
           75352: "9d5cf7f45b1231d3",
@@ -703311,7 +703318,7 @@ ${l.join(" +\n")}
           797558: "22322313ab7c958a",
           797641: "1014adf07fd13545",
           798149: "1e7b80c6cf06db94",
-          798161: "b77cb116d93e3d6b",
+          798161: "8238a023858be283",
           79819: "b82e5595d1b5ec6a",
           798236: "28b5bef3ee486e06",
           798354: "92b244837d1b92be",
@@ -703670,6 +703677,7 @@ ${l.join(" +\n")}
           848896: "384afbf886462a90",
           849113: "4f5a657b07239a01",
           849246: "876e34adf97fc130",
+          849436: "ed8b7247a25a7c01",
           849442: "e0daaf1fc5c4120d",
           849446: "420c700806c4fff1",
           849472: "a1d7cacd507303a7",
@@ -704595,7 +704603,7 @@ ${l.join(" +\n")}
           976640: "643ae7b03d006bd9",
           976759: "5e811facfadfd135",
           976899: "6b02106234482c3b",
-          977025: "854c0348d468bb47",
+          977025: "d84c700d2eeb4b4a",
           977260: "3db6136a353a0b4a",
           977547: "8d0b234e3a443693",
           97785: "3a29ef83344d29fd",
@@ -705411,4 +705419,4 @@ ${l.join(" +\n")}
   );
   N = p.O(N);
 })();
-//# sourceMappingURL=web.5fa84eb575ce388d.js.map
+//# sourceMappingURL=web.6d4ca42b7c0e0ce5.js.map
