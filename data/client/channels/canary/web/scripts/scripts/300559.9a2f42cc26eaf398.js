@@ -33,13 +33,13 @@
         CP: "macRtl_3zSH5d",
         ZY: "trailing_3zSH5d",
         R4: "leading_3zSH5d",
+        MY: "leadingGrow_3zSH5d",
         bN: "systemBar_3zSH5d",
         WU: "show_3zSH5d",
         Zu: "fixed_3zSH5d",
         dS: "disablePointerEvents_3zSH5d",
         kU: "winButtons_3zSH5d",
         DD: "title_3zSH5d",
-        MY: "leadingGrow_3zSH5d",
         Fx: "winButtonsWithDivider_3zSH5d",
         R6: "winButton_3zSH5d",
         T0: "winButtonMinMax_3zSH5d",
@@ -48,4 +48,4 @@
     },
   },
 ]);
-//# sourceMappingURL=300559.3e36194e2f33d255.js.map
+//# sourceMappingURL=300559.9a2f42cc26eaf398.js.map
