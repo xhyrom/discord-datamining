@@ -279,7 +279,7 @@
         Q9: "characterAndStats_bcgTHb",
         Ss: "wordmark_bcgTHb",
         M1: "stats_bcgTHb",
-        WY: "checkpointEnabled_bcgTHb",
+        jI: "hasCTA_bcgTHb",
         AM: "characterColumn_bcgTHb",
         N8: "statRow_bcgTHb",
         Gl: "statIcon_bcgTHb",
@@ -287,8 +287,10 @@
         qr: "footer_bcgTHb",
         K8: "footerTitle_bcgTHb",
         lI: "ctaButton_bcgTHb",
+        KV: "ctaSpinner_bcgTHb",
+        bZ: "ctaSpinnerItem_bcgTHb",
       };
     },
   },
 ]);
-//# sourceMappingURL=801781.2f0fcba85430e327.js.map
+//# sourceMappingURL=801781.1c3eb1de3de5525b.js.map
