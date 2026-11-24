@@ -24,11 +24,15 @@
     820061(i) {
       i.exports = {
         wx: "header_fVyTY7",
-        j9: "gameOrganizationSelectGameSection_fVyTY7",
         wG: "loader_fVyTY7",
+        ov: "unlinkedContent_fVyTY7",
         Nt: "gameOrganizationLinkableGames_fVyTY7",
         Ak: "gameOrganizationLinkableGame_fVyTY7",
         hc: "gameOrganizationGameName_fVyTY7",
+        BP: "benefitCards_fVyTY7",
+        kU: "benefitCard_fVyTY7",
+        in: "benefitIllustration_fVyTY7",
+        DQ: "benefitText_fVyTY7",
       };
     },
     622625(i) {
@@ -49,4 +53,4 @@
     },
   },
 ]);
-//# sourceMappingURL=668756.e87256bb15ded5da.js.map
+//# sourceMappingURL=668756.af3564b284982b99.js.map
