@@ -1321,7 +1321,6 @@
 }
 .selectionCircle_IhyaN_ {
   border-radius: 8px;
-  box-shadow: inset 0 0 0 4px var(--brand-500);
   cursor: default;
   height: calc(100% + 4px);
   inset-inline-start: -2px;
@@ -1334,6 +1333,9 @@
   inset-inline-end: -6px;
   position: absolute;
   top: -6px;
+}
+.selectionCircleBorder_IhyaN_ {
+  box-shadow: inset 0 0 0 4px var(--brand-500);
 }
 .checkmark_IhyaN_ {
   color: var(--brand-500);
@@ -1543,5 +1545,9 @@
 .titleText_QF5mJe {
   color: var(--text-strong);
 }
+.trialRefreshHeader_QF5mJe {
+  flex-wrap: wrap;
+  gap: var(--space-16);
+}
 
-/*# sourceMappingURL=436803.465ed4a4b0651ac7.css.map*/
+/*# sourceMappingURL=436803.ce2fe77e433efa24.css.map*/

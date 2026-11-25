@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [254929],
+  [796937],
   {
     818625(e) {
       e.exports = {
@@ -22,6 +22,29 @@
         z: "soundboardContainer_58b0l2",
         BG: "soundboardHeader_58b0l2",
         sd: "soundmojiLabelContainer_58b0l2",
+      };
+    },
+    223705(e) {
+      e.exports = {
+        T8: "positionLayer_dyDYQj",
+        sj: "positionLayerDefaultAlignLeft_dyDYQj",
+        Jg: "positionLayerDefaultAlignRight_dyDYQj",
+        V6: "positionContainer_dyDYQj",
+        zw: "positionContainerAlignLeft_dyDYQj",
+        jP: "drawerSizingWrapper_dyDYQj",
+        FG: "contentWrapper_dyDYQj",
+        D0: "positionContainerOnlyEmoji_dyDYQj",
+        $D: "contentWrapperEmojiPacks_dyDYQj",
+        iT: "resizeHandleTarget_dyDYQj",
+        Di: "resizeHandle_dyDYQj",
+        C$: "nav_dyDYQj",
+        CT: "navList_dyDYQj",
+        Mf: "tab_dyDYQj",
+        yR: "tabActive_dyDYQj",
+        Gn: "tabLabel_dyDYQj",
+        sd: "soundmojiLabelContainer_dyDYQj",
+        z: "soundboardContainer_dyDYQj",
+        BG: "soundboardHeader_dyDYQj",
       };
     },
     513902(e) {
@@ -88,4 +111,4 @@
     },
   },
 ]);
-//# sourceMappingURL=254929.7cd5919208cd6b76.js.map
+//# sourceMappingURL=796937.0c1af390fa5615f9.js.map
