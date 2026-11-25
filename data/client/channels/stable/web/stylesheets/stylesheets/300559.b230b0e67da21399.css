@@ -125,6 +125,12 @@
       (var(--custom-guild-list-width) + var(--space-md))
   );
 }
+.platform-osx.refresh-title-bar-large .bar_3zSH5d {
+  padding-inline-start: calc(
+    100 / var(--custom-zoom, 100) *
+      (var(--custom-guild-list-width) + var(--space-md) + 5px)
+  );
+}
 .platform-osx .bar_3zSH5d.macRtl_3zSH5d {
   padding-inline-end: calc(
     100 / var(--custom-zoom, 100) *
@@ -249,4 +255,4 @@
   width: 100%;
 }
 
-/*# sourceMappingURL=300559.7f76f64306972669.css.map*/
+/*# sourceMappingURL=300559.b230b0e67da21399.css.map*/

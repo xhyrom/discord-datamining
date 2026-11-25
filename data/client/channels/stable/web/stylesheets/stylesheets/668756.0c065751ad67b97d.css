@@ -96,8 +96,8 @@ img.withBackground_-BipLp {
   gap: var(--space-8);
   margin-bottom: var(--space-4);
 }
-.gameOrganizationSelectGameSection_fVyTY7,
-.loader_fVyTY7 {
+.loader_fVyTY7,
+.unlinkedContent_fVyTY7 {
   margin-top: var(--space-48);
 }
 .gameOrganizationLinkableGames_fVyTY7 {
@@ -116,6 +116,29 @@ img.withBackground_-BipLp {
 }
 .gameOrganizationGameName_fVyTY7 {
   flex: 1;
+}
+.benefitCards_fVyTY7 {
+  list-style: none;
+  margin: var(--space-12) 0 0;
+}
+.benefitCard_fVyTY7 {
+  background-color: var(--background-mod-muted);
+  border-radius: var(--radius-md);
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 209px;
+  flex-direction: column;
+  gap: var(--space-16);
+  min-height: 220px;
+  overflow: hidden;
+  padding: var(--space-16);
+}
+.benefitCard_fVyTY7,
+.benefitIllustration_fVyTY7 {
+  max-width: 100%;
+}
+.benefitText_fVyTY7 {
+  overflow-wrap: anywhere;
 }
 .container__xBAiH {
   align-items: center;
@@ -192,4 +215,4 @@ img.withBackground_-BipLp {
   color: var(--text-default);
 }
 
-/*# sourceMappingURL=668756.e4b0ce1d8c80a989.css.map*/
+/*# sourceMappingURL=668756.0c065751ad67b97d.css.map*/
