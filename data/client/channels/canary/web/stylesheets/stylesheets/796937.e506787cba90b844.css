@@ -571,5 +571,252 @@
   flex-direction: row;
   gap: var(--space-4);
 }
+.positionLayer_dyDYQj {
+  pointer-events: none;
+  z-index: 0;
+}
+.positionLayerDefaultAlignLeft_dyDYQj {
+  inset-inline-end: var(--space-16);
+}
+.positionLayerDefaultAlignRight_dyDYQj {
+  inset-inline-start: var(--space-16);
+}
+.positionContainer_dyDYQj {
+  animation: expression-picker-fade-in_dyDYQj 0.1s ease-out backwards;
+  pointer-events: none;
+  transform-origin: bottom right;
+  width: 100%;
+}
+.full-motion .positionContainer_dyDYQj {
+  animation: expression-picker-enter_dyDYQj 0.1s ease-out backwards;
+}
+.positionContainerAlignLeft_dyDYQj {
+  transform-origin: bottom left;
+}
+@keyframes expression-picker-fade-in_dyDYQj {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes expression-picker-enter_dyDYQj {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.drawerSizingWrapper_dyDYQj {
+  height: 100%;
+  max-width: 100%;
+  pointer-events: all;
+  position: absolute;
+  width: 544px;
+  z-index: 1;
+}
+.contentWrapper_dyDYQj {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  grid-row-gap: var(--space-12);
+  background-color: var(--background-surface-high);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-high);
+  height: 100%;
+  overflow: hidden;
+  padding-top: var(--space-16);
+  position: relative;
+  z-index: 1;
+}
+.contentWrapper_dyDYQj:after {
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px var(--border-subtle);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+.positionContainerOnlyEmoji_dyDYQj .contentWrapper_dyDYQj {
+  grid-template-rows: minmax(0, 1fr);
+}
+.contentWrapper_dyDYQj.contentWrapperEmojiPacks_dyDYQj {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  padding-top: 0;
+}
+.resizeHandleTarget_dyDYQj {
+  cursor: ns-resize;
+  height: var(--space-16);
+  inset-block-start: 0;
+  inset-inline: 0;
+  position: absolute;
+  z-index: 3;
+}
+.resizeHandleTarget_dyDYQj:before {
+  border: 1px solid var(--border-normal);
+  border-bottom: none;
+  border-start-end-radius: var(--radius-lg);
+  border-start-start-radius: var(--radius-lg);
+  box-sizing: border-box;
+  content: "";
+  height: calc(var(--radius-lg) + var(--space-32) + var(--space-4));
+  inset-block-start: 0;
+  inset-inline: 0;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    currentColor calc(100% - var(--space-32)),
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    currentColor calc(100% - var(--space-32)),
+    transparent
+  );
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.full-motion .resizeHandleTarget_dyDYQj:before {
+  transition:
+    opacity 0.15s ease-out,
+    border-color 0.15s ease-out;
+}
+.resizeHandleTarget_dyDYQj:hover:before {
+  opacity: 1;
+}
+.resizeHandleTarget_dyDYQj:active:before {
+  border-color: var(--border-strong);
+  opacity: 1;
+}
+.resizeHandle_dyDYQj {
+  background-color: var(--background-mod-strong);
+  border-radius: var(--radius-round);
+  height: 2px;
+  position: absolute;
+  top: calc(var(--space-8) + 1px);
+  inset-inline: 0;
+  margin-inline: auto;
+  pointer-events: none;
+  transform: translateY(-50%);
+  width: var(--space-48);
+}
+.full-motion .resizeHandle_dyDYQj {
+  transition:
+    height 0.15s ease-out,
+    background-color 0.15s ease-out;
+}
+.resizeHandleTarget_dyDYQj:hover .resizeHandle_dyDYQj {
+  background-color: var(--icon-subtle);
+  height: var(--space-4);
+}
+.resizeHandleTarget_dyDYQj:active .resizeHandle_dyDYQj {
+  background-color: var(--icon-strong);
+  height: var(--space-4);
+}
+.nav_dyDYQj {
+  align-items: center;
+  display: flex;
+  padding: 0 var(--space-16);
+}
+.navList_dyDYQj {
+  display: flex;
+  gap: var(--space-12);
+}
+.tab_dyDYQj {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  flex: 0 0 auto;
+  height: var(--space-32);
+  justify-content: center;
+  padding: 0 var(--space-12);
+}
+.full-motion .tab_dyDYQj {
+  transition:
+    background-color 0.1s ease-in-out,
+    color 0.1s ease-in-out,
+    padding-inline 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.high-contrast-mode .tab_dyDYQj {
+  border-color: var(--border-subtle);
+}
+.tab_dyDYQj:hover {
+  background-color: var(--background-mod-normal);
+  color: var(--interactive-text-hover);
+}
+.tab_dyDYQj:active {
+  background-color: var(--background-mod-strong);
+  color: var(--interactive-text-active);
+}
+.navList_dyDYQj:not(:hover, :has(:focus-visible))
+  .tab_dyDYQj:not(.tabActive_dyDYQj) {
+  padding-inline: var(--space-8);
+}
+.navList_dyDYQj:not(:hover, :has(:focus-visible))
+  .tab_dyDYQj:not(.tabActive_dyDYQj):first-child {
+  padding-inline-start: 0;
+}
+.navList_dyDYQj:is(:hover, :has(:focus-visible))
+  .tab_dyDYQj:not(.tabActive_dyDYQj, :hover) {
+  background-color: var(--background-mod-muted);
+}
+.tabActive_dyDYQj {
+  background-color: var(--background-mod-muted);
+  border-color: var(--border-muted);
+  color: var(--text-default);
+}
+.tabActive_dyDYQj:active,
+.tabActive_dyDYQj:hover {
+  background-color: var(--background-mod-strong);
+  color: var(--interactive-text-active);
+}
+.high-contrast-mode .tabActive_dyDYQj {
+  border-color: var(--border-normal);
+}
+.tabLabel_dyDYQj {
+  white-space: nowrap;
+}
+.soundmojiLabelContainer_dyDYQj {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+}
+.soundboardContainer_dyDYQj {
+  position: relative;
+}
+.soundboardHeader_dyDYQj {
+  align-items: center;
+  background-color: var(--background-surface-high);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: none;
+  display: flex;
+  padding: var(--custom-gif-picker-gutter-size);
+}
+.enable-forced-colors .resizeHandle_dyDYQj {
+  background-color: ButtonText;
+}
+.enable-forced-colors .contentWrapper_dyDYQj {
+  border: 3px solid CanvasText;
+}
+.enable-forced-colors .tab_dyDYQj {
+  border: 1px solid ButtonFace;
+}
+.enable-forced-colors .tab_dyDYQj:hover {
+  border-color: ButtonText;
+}
+.enable-forced-colors .tabActive_dyDYQj {
+  border-color: Highlight;
+}
 
-/*# sourceMappingURL=254929.e768357ce5775824.css.map*/
+/*# sourceMappingURL=796937.e506787cba90b844.css.map*/
