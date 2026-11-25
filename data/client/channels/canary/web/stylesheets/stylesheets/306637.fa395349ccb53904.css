@@ -1,0 +1,23 @@
+.popout_AGjW_H {
+  background-color: var(--background-surface-high);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-high);
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 280px;
+}
+.popout_AGjW_H,
+.section_AGjW_H {
+  display: flex;
+  flex-direction: column;
+}
+.section_AGjW_H {
+  gap: var(--space-8);
+  padding: var(--space-12);
+}
+.section_AGjW_H + .section_AGjW_H {
+  border-top: 1px solid var(--border-muted);
+}
+
+/*# sourceMappingURL=306637.fa395349ccb53904.css.map*/
