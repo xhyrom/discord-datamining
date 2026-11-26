@@ -1,0 +1,17 @@
+.clipThumbContainer_HCfNho {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.clipThumb_HCfNho {
+  background-color: var(--background-mod-subtle);
+  border-radius: var(--radius-sm);
+  height: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+/*# sourceMappingURL=684439.af66e216a0aaffda.css.map*/

@@ -163,5 +163,14 @@
   padding: var(--space-4);
   width: 16px;
 }
+.bannerRow_2zQQDh {
+  --custom-global-banner-start-start-radius: var(--radius-md);
+  grid-area: notice;
+  position: relative;
+  z-index: 101;
+}
+.bannerRow_2zQQDh:empty {
+  display: none;
+}
 
-/*# sourceMappingURL=520689.b505df18764680e8.css.map*/
+/*# sourceMappingURL=520689.f21ef37de6a9ac38.css.map*/

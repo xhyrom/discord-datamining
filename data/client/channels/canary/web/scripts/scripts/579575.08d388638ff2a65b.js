@@ -1,6 +1,6 @@
 "use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [770096],
+  [579575],
   {
     688976(n) {
       n.exports = {
@@ -14,6 +14,34 @@
         bf: "rocketLeagueTint_JnchWv",
         Qw: "art_JnchWv",
         C: "copy_JnchWv",
+      };
+    },
+    874566(n) {
+      n.exports = { g: "clipsEnabledIndicator_U6LhXD" };
+    },
+    899189(n) {
+      n.exports = {
+        jw: "chip_T5oZpC",
+        Pf: "label_T5oZpC",
+        ai: "chevron_T5oZpC",
+      };
+    },
+    49247(n) {
+      n.exports = {
+        Qs: "content_b0p2td",
+        Qq: "text_b0p2td",
+        p4: "countdownBar_b0p2td",
+      };
+    },
+    442420(n) {
+      n.exports = {
+        $j: "quickBar_y2dW7E",
+        DD: "title_y2dW7E",
+        o1: "actions_y2dW7E",
+        e1: "clipContainer_y2dW7E",
+        WK: "clipThumbnailWrapper_y2dW7E",
+        $v: "autoClipIcon_y2dW7E",
+        N7: "stackCountIndicator_y2dW7E",
       };
     },
     62714(n) {
@@ -48,6 +76,9 @@
         zx: "thumbnailExiting_KeBYth",
       };
     },
+    100853(n) {
+      n.exports = { p4: "countdownBar_0YKZJi", q3: "indicator_0YKZJi" };
+    },
     650493(n) {
       n.exports = {
         iE: "wrapper_dfLAdA",
@@ -62,4 +93,4 @@
     },
   },
 ]);
-//# sourceMappingURL=770096.078e346090395e63.js.map
+//# sourceMappingURL=579575.08d388638ff2a65b.js.map

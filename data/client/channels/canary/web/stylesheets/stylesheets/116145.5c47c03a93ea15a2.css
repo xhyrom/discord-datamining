@@ -1,29 +1,24 @@
-.previewContainer_uEa-A9 {
-  border: 2px solid transparent;
-  gap: var(--space-12);
-  height: -moz-fit-content;
-  height: fit-content;
-  position: relative;
-  width: 276px;
-}
-.previewBox_uEa-A9,
-.previewContainer_uEa-A9 {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.previewBox_uEa-A9 {
-  align-items: center;
-  background-color: var(--background-base-lower);
+.stage_JNbpHB {
+  border: 1px dashed var(--border-subtle);
   border-radius: var(--radius-sm);
-  height: 190px;
-  width: 100%;
-}
-.previewContents_uEa-A9 {
-  height: 100%;
+  max-width: 100%;
+  min-height: 48px;
+  min-width: 48px;
+  overflow: hidden;
+  padding: var(--space-4);
   position: relative;
-  top: -10px;
-  width: 224px;
+  resize: both;
+}
+.checkerboard_JNbpHB {
+  background: repeating-conic-gradient(
+      var(--background-mod-strong) 0 25%,
+      var(--background-base-lower) 0 50%
+    )
+    0 0 / var(--space-16) var(--space-16);
+}
+.boxEdge_JNbpHB {
+  outline: 1px dashed var(--border-strong);
+  outline-offset: 1px;
 }
 .base_lMvXrQ {
   box-sizing: border-box;
@@ -82,6 +77,68 @@
   padding: 2px;
   top: -6px;
   width: 20px;
+}
+.icon_hxzEt- {
+  height: 24px;
+  margin-bottom: 4px;
+  width: 24px;
+}
+.shopIcon_hxzEt- {
+}
+.presetDecorationImg_hxzEt- {
+  height: 64px;
+  width: 64px;
+}
+.decorationGridItem_hxzEt- {
+  align-items: center;
+  background-color: var(--background-base-lowest);
+  border-radius: 4px;
+  color: var(--text-strong);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transition: box-shadow 0.15s ease-out;
+}
+.selected_hxzEt- {
+  box-shadow: inset 0 0 0 2px var(--brand-500);
+  opacity: 1;
+}
+.list_hxzEt- {
+  inset-inline-start: -12px;
+  max-height: 420px;
+  padding-bottom: 16px;
+}
+.headings_hxzEt- {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.spinner_UlS6S9 {
+  align-self: center;
+  margin: 8px;
+}
+.modal_UlS6S9 {
+  border-radius: var(--radius-sm);
+}
+.modalHeader_UlS6S9 {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.modalCloseButton_UlS6S9 {
+  margin-inline-end: -8px;
+  padding: 0;
+}
+.modalContent_UlS6S9 {
+  display: flex;
+}
+.modalPreview_UlS6S9 {
+  margin-top: 24px;
+}
+.modalFooter_UlS6S9 {
+  gap: var(--space-8);
 }
 .inventory_9_Rm_e {
   display: flex;
@@ -263,4 +320,4 @@
   margin-inline-end: 6px;
 }
 
-/*# sourceMappingURL=5257.cc568b3d803c94d2.css.map*/
+/*# sourceMappingURL=116145.5c47c03a93ea15a2.css.map*/

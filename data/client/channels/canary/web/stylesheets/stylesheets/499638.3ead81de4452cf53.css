@@ -1,0 +1,25 @@
+.pro_xW8MJW {
+  text-transform: none;
+}
+.tip_xW8MJW {
+  line-height: 16px;
+  opacity: 1;
+}
+.block_xW8MJW .pro_xW8MJW,
+.block_xW8MJW .tip_xW8MJW,
+.tip_xW8MJW {
+  font-size: 14px;
+}
+.inline_xW8MJW .pro_xW8MJW,
+.inline_xW8MJW .tip_xW8MJW {
+  display: inline;
+  font-size: 12px;
+}
+.inline_xW8MJW .pro_xW8MJW {
+  margin-inline-end: 3px;
+}
+.enable-forced-colors .tip_xW8MJW {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=499638.3ead81de4452cf53.css.map*/

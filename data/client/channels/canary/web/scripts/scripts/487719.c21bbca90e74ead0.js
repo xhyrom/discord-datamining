@@ -22,6 +22,7 @@
         oM: "nameTag_g6VwXp",
         $n: "accountPopoutButton_g6VwXp",
         dI: "accountPopout_g6VwXp",
+        UU: "clipDragging_g6VwXp",
         eW: "panelTitleContainer_g6VwXp",
         XP: "panelSubtextContainer_g6VwXp",
         e8: "withDisplayNameStyles_g6VwXp",
@@ -54,4 +55,4 @@
     },
   },
 ]);
-//# sourceMappingURL=487719.657a95a34505ad7e.js.map
+//# sourceMappingURL=487719.c21bbca90e74ead0.js.map
