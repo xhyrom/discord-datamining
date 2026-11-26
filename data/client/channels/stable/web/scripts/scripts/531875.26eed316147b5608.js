@@ -11016,7 +11016,7 @@
       "use strict";
       e.exports = r.p + "108f8fe5b2d7ba7b.wasm";
     },
-    223705(e, t, r) {
+    446086(e, t, r) {
       "use strict";
       e.exports = r.p + "ba3ff33752bdeb90.scm";
     },
@@ -11841,7 +11841,7 @@
           languageId: "styx",
           languageExport: "tree_sitter_styx",
           wasm: new URL(r(63694), r.b),
-          highlights: new URL(r(223705), r.b),
+          highlights: new URL(r(446086), r.b),
           injections: new URL(r(752104), r.b),
         },
         svelte: {
@@ -13213,4 +13213,4 @@
     },
   },
 ]);
-//# sourceMappingURL=531875.dbe748f5f8bcf116.js.map
+//# sourceMappingURL=531875.26eed316147b5608.js.map

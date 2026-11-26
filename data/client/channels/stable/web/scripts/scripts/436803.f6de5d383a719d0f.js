@@ -78,6 +78,7 @@
         r0: "defaultThemeSelection_IhyaN_",
         BO: "selectionCircle_IhyaN_",
         AU: "checkmarkCircle_IhyaN_",
+        rm: "selectionCircleBorder_IhyaN_",
         AI: "checkmark_IhyaN_",
         g3: "redCircle_IhyaN_",
         RK: "lockedBadgeContainer_IhyaN_",
@@ -103,6 +104,7 @@
         _7: "sparkles_QF5mJe",
         W$: "subtext_QF5mJe",
         Qw: "titleText_QF5mJe",
+        Jd: "trialRefreshHeader_QF5mJe",
       };
     },
     114640(e) {
@@ -231,4 +233,4 @@
     },
   },
 ]);
-//# sourceMappingURL=436803.8fb29995473cfcda.js.map
+//# sourceMappingURL=436803.f6de5d383a719d0f.js.map
