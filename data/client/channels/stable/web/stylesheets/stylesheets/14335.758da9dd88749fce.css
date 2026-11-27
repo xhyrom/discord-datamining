@@ -12,6 +12,22 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.popoutItem_J5LrJv:has(.thumbnail_J5LrJv[draggable="true"]) {
+  overflow: visible;
+}
+.thumbnail_J5LrJv {
+  border-radius: inherit;
+  height: 100%;
+}
+.thumbnail_J5LrJv[draggable="true"] .bottomRow_J5LrJv,
+.thumbnail_J5LrJv[draggable="true"] .topRow_J5LrJv,
+.thumbnail_J5LrJv[draggable="true"] > div {
+  pointer-events: none;
+}
+.thumbnail_J5LrJv[draggable="true"] [role="button"],
+.thumbnail_J5LrJv[draggable="true"] button {
+  pointer-events: auto;
+}
 .newBadge_J5LrJv {
   display: flex;
   inset-inline-start: var(--space-8);
@@ -54,6 +70,10 @@
   inset-inline-end: 100%;
   position: absolute;
   width: var(--space-24);
+}
+.dragging_p-On7- {
+  opacity: 0;
+  pointer-events: none;
 }
 .header_p-On7- {
   gap: var(--space-12);
@@ -138,4 +158,4 @@
   margin-top: var(--space-4);
 }
 
-/*# sourceMappingURL=14335.1a28facf5e022b54.css.map*/
+/*# sourceMappingURL=14335.758da9dd88749fce.css.map*/

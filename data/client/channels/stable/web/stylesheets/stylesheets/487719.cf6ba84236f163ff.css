@@ -235,6 +235,10 @@ span.button_Y-8oZW.enabled_Y-8oZW.redGlow_Y-8oZW:hover {
 .accountPopout_g6VwXp {
   margin-inline-start: -8px;
 }
+.clipDragging_g6VwXp {
+  opacity: 0;
+  pointer-events: none;
+}
 .nameTag_g6VwXp {
   flex-grow: 1;
   margin-inline-end: 4px;
@@ -339,4 +343,4 @@ span.button_Y-8oZW.enabled_Y-8oZW.redGlow_Y-8oZW:hover {
   color: currentColor;
 }
 
-/*# sourceMappingURL=487719.0b692f6f47fcbec5.css.map*/
+/*# sourceMappingURL=487719.cf6ba84236f163ff.css.map*/

@@ -1,0 +1,202 @@
+.valueProp_o9pNcU,
+.valueProps_o9pNcU {
+  display: flex;
+  gap: var(--space-16);
+}
+.valueProp_o9pNcU {
+  background: var(--background-mod-muted);
+  border-radius: var(--radius-lg);
+  color: var(--icon-default);
+  flex: 1 1 0;
+  flex-direction: column;
+  min-width: 0;
+  padding: var(--space-16);
+  text-align: start;
+}
+.valuePropText_o9pNcU {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.container_qIIk0K {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+.content_qIIk0K {
+  margin: auto;
+  padding-bottom: 40px;
+}
+.header_qIIk0K {
+  margin-top: var(--space-20);
+}
+.description_qIIk0K {
+  margin-top: var(--space-12);
+}
+.keybindHintKeys_qIIk0K {
+  display: inline-block;
+}
+.keybindShortcut_qIIk0K {
+  height: 20px;
+}
+.cards_qIIk0K {
+  display: grid;
+  gap: var(--space-16);
+  grid-template-columns: repeat(3, 190px);
+}
+.cards_qIIk0K,
+.valueProps_qIIk0K {
+  margin-top: var(--space-32);
+}
+.valueProps_qIIk0K {
+  width: min(833px, 100%);
+}
+.disabledActions_qIIk0K {
+  margin-top: var(--space-32);
+}
+.card_qIIk0K {
+  align-items: center;
+  background-color: var(--background-mod-muted);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  justify-content: center;
+  padding: var(--space-20);
+}
+.changeKeybindButton_qIIk0K {
+  margin-top: var(--space-10);
+}
+.source_U7nd7E[draggable="true"] {
+  border-radius: var(--radius-sm);
+  cursor: grab;
+  transition: opacity 0.15s ease;
+}
+.source_U7nd7E[draggable="true"] > div {
+  cursor: inherit;
+}
+.source_U7nd7E[draggable="true"]:focus-within,
+.source_U7nd7E[draggable="true"]:hover {
+  border-color: var(--border-subtle);
+  filter: var(--shadow-medium-filter);
+  outline: var(--custom-clip-drag-outline, 1px solid var(--border-subtle));
+  outline-offset: -1px;
+}
+.source_U7nd7E[draggable="true"][data-clip-dragging="true"] {
+  cursor: grabbing;
+  opacity: 0.5;
+}
+.source_U7nd7E[draggable="true"][data-clip-dragging="true"]
+  [data-clip-actions] {
+  visibility: hidden;
+}
+.source_U7nd7E[draggable="true"]:focus-within .handle_U7nd7E,
+.source_U7nd7E[draggable="true"]:focus-within .hoverOverlay_U7nd7E,
+.source_U7nd7E[draggable="true"]:hover .handle_U7nd7E,
+.source_U7nd7E[draggable="true"]:hover .hoverOverlay_U7nd7E {
+  opacity: 1;
+  visibility: visible;
+}
+.hoverOverlay_U7nd7E {
+  background: var(--opacity-black-20);
+  border-radius: var(--radius-sm);
+  inset: 0;
+  z-index: 1;
+}
+.handle_U7nd7E,
+.hoverOverlay_U7nd7E {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  visibility: hidden;
+}
+.handle_U7nd7E {
+  background: linear-gradient(135deg, var(--opacity-black-40), transparent 75%);
+  border-start-start-radius: var(--radius-sm);
+  color: var(--icon-overlay-light);
+  direction: ltr;
+  height: var(--space-40);
+  inset-inline-start: 0;
+  top: 0;
+  width: var(--space-48);
+  z-index: 2;
+}
+.handleIcon_U7nd7E {
+  inset-inline-start: var(--space-4);
+  position: absolute;
+  top: var(--space-6);
+}
+.full-motion .handle_U7nd7E,
+.full-motion .hoverOverlay_U7nd7E {
+  transition:
+    opacity 0.15s ease,
+    visibility 0.15s;
+}
+.preview_U7nd7E {
+  direction: ltr;
+  inset-inline-start: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  will-change: transform;
+  z-index: 2001;
+}
+.previewVisual_U7nd7E {
+  border-radius: var(--radius-sm);
+  transform-origin: inherit;
+}
+.previewVisual_U7nd7E .hoverOverlay_U7nd7E {
+  display: none;
+}
+.previewVisual_U7nd7E .handle_U7nd7E {
+  opacity: 1;
+  visibility: visible;
+}
+.previewVisual_U7nd7E .source_U7nd7E {
+  border-color: var(--border-subtle);
+  filter: var(--shadow-medium-filter);
+  outline: var(--custom-clip-drag-outline, 1px solid var(--border-subtle));
+  outline-offset: -1px;
+}
+.full-motion .previewVisual_U7nd7E {
+  animation: clipPickup_U7nd7E 0.18s cubic-bezier(0.2, 0, 0, 1) both;
+}
+.full-motion .previewEnding_U7nd7E .previewVisual_U7nd7E {
+  animation: clipDrop_U7nd7E 0.12s ease-out both;
+}
+.reducedMotion_U7nd7E .previewVisual_U7nd7E {
+  animation: none;
+}
+.nativeImage_U7nd7E {
+  inset-inline-start: -1px;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: -1px;
+}
+@keyframes clipPickup_U7nd7E {
+  0% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(var(--space-8) * -1));
+  }
+}
+@keyframes clipDrop_U7nd7E {
+  0% {
+    opacity: 1;
+    transform: translateY(calc(var(--space-8) * -1));
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=925044.76a499446230a29c.css.map*/
