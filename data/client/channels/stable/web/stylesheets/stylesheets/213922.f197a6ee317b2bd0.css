@@ -1,0 +1,458 @@
+.text_5Hv024 {
+  color: var(--opacity-white-80);
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  line-height: 12px;
+}
+.textLeft_5Hv024,
+.textRight_5Hv024 {
+}
+.bar_5Hv024 {
+  background-color: hsl(var(--primary-500-hsl) / 0.16);
+  border-radius: 2px;
+  height: 4px;
+}
+.barInMultiLine_5Hv024 {
+  margin-bottom: 4px;
+}
+.barInner_5Hv024 {
+  background-color: var(--white);
+  border-radius: 2px;
+  height: 100%;
+  min-width: 4px;
+}
+.themed_5Hv024 .textLeft_5Hv024,
+.themed_5Hv024 .textRight_5Hv024 {
+  color: var(--text-default);
+}
+.themed_5Hv024 .barInner_5Hv024 {
+  background-color: var(--text-default);
+}
+.singleLineContainer_5Hv024 {
+  align-items: center;
+  display: flex;
+}
+.barInSingleLine_5Hv024 {
+  flex: 1;
+  margin-inline: 4px;
+}
+.textLeftInSingleLine_5Hv024 {
+  min-width: 32px;
+  text-align: end;
+}
+.link_-kuxsn {
+  cursor: pointer;
+}
+.link_-kuxsn:hover {
+  text-decoration: underline;
+}
+.flexRow_-kuxsn {
+  display: flex;
+  gap: var(--space-8);
+}
+.flexColumn_-kuxsn {
+  display: flex;
+  flex-direction: column;
+}
+.headerContainer_-kuxsn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-xs);
+  min-width: 0;
+  width: 100%;
+}
+.detailsContainer_-kuxsn {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+.bodyTextSize_-kuxsn {
+  font-size: 12px;
+  line-height: 16px;
+}
+.ellipsisRow_-kuxsn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bodyLinkMuted_-kuxsn {
+  color: var(--text-muted);
+}
+.image_-kuxsn {
+  border-radius: var(--radius-sm);
+  height: 32px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 32px;
+}
+.timeBar_-kuxsn {
+  margin-top: var(--space-8);
+}
+.activityClickable_-kuxsn {
+  cursor: pointer;
+}
+.activityClickable_-kuxsn .title_-kuxsn {
+  text-decoration: none;
+}
+.activityClickable_-kuxsn:hover .title_-kuxsn {
+  text-decoration: underline;
+}
+.activityImageClickable_-kuxsn {
+  cursor: pointer;
+}
+.ellipsis_ZbIvmP {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.headerContainer_ZbIvmP {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  min-width: 0;
+  width: 100%;
+}
+.headerText_ZbIvmP {
+  align-items: center;
+  display: flex;
+  font-weight: var(--font-weight-semibold);
+  gap: 4px;
+  overflow: hidden;
+  text-transform: none;
+}
+.headerText_ZbIvmP + div {
+  margin-inline-start: 8px;
+}
+.headerTextNormal_ZbIvmP {
+}
+.headerTextEmptyBody_ZbIvmP {
+}
+.headerPlatformIcon_ZbIvmP {
+  flex-shrink: 0;
+  height: 12px;
+  width: 12px;
+}
+.body_ZbIvmP {
+  display: flex;
+}
+.bodyAlignCenter_ZbIvmP,
+.bodyNormal_ZbIvmP {
+  align-items: center;
+}
+.openGameProfile_ZbIvmP {
+  cursor: pointer;
+}
+.openGameProfile_ZbIvmP:hover {
+  text-decoration: underline;
+}
+.assets_ZbIvmP {
+  align-self: flex-start;
+  position: relative;
+}
+.assetsUserActivityHover_ZbIvmP {
+  height: 32px;
+  width: 32px;
+}
+.assetsLargeMaskStreamPreview_ZbIvmP,
+.assetsLargeMaskVoiceChannel_ZbIvmP {
+  -webkit-mask: url("/assets/f86a4d3ee1fc9ef0.svg");
+  mask: url("/assets/f86a4d3ee1fc9ef0.svg");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.assetsLargeMaskActivityFeed_ZbIvmP {
+  -webkit-mask: url("/assets/892bf2036797f905.svg");
+  mask: url("/assets/892bf2036797f905.svg");
+}
+.assetsLargeImage_ZbIvmP {
+  -webkit-user-drag: none;
+  border-radius: 8px;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.assetsLargeImageSpotify_ZbIvmP {
+  border-radius: 0;
+}
+.activityVoiceChannelUserHover_ZbIvmP .assetsLargeImageSpotify_ZbIvmP {
+  border-radius: 8px;
+}
+.assetsLargeImageStreamPreview_ZbIvmP,
+.assetsLargeImageStreamPreviewXbox_ZbIvmP {
+  height: 60px;
+  width: 60px;
+}
+.assetsLargeImageStreamPreview_ZbIvmP,
+.assetsLargeImageStreamPreviewXbox_ZbIvmP {
+}
+.activityVoiceChannelUserHover_ZbIvmP .assetsLargeImageStreamPreview_ZbIvmP {
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+}
+.assetsLargeImageActivityFeed_ZbIvmP,
+.assetsLargeImageActivityFeedXbox_ZbIvmP {
+  height: 90px;
+  width: 90px;
+}
+.assetsLargeImageActivityFeed_ZbIvmP,
+.assetsLargeImageActivityFeedXbox_ZbIvmP {
+}
+.assetsLargeImageVoiceChannel_ZbIvmP {
+  height: 64px;
+  width: 64px;
+}
+.activityVoiceChannelUserHover_ZbIvmP .assetsLargeImageVoiceChannel_ZbIvmP {
+  border-radius: var(--radius-sm);
+  height: 32px;
+  width: 32px;
+}
+.assetsLargeImageVoiceChannelXbox_ZbIvmP {
+}
+.assetsLargeImageActivityFeedTwitch_ZbIvmP {
+  border-radius: var(--radius-sm);
+  height: 260px;
+  -webkit-mask: linear-gradient(0deg, transparent 10%, #000 80%);
+  mask: linear-gradient(0deg, transparent 10%, #000 80%);
+  width: 100%;
+}
+.assetsSmallImage_ZbIvmP {
+  -webkit-user-drag: none;
+  border-radius: 50%;
+  bottom: -4px;
+  inset-inline-end: -4px;
+  position: absolute;
+}
+.assetsSmallImageStreamPreview_ZbIvmP,
+.assetsSmallImageVoiceChannel_ZbIvmP {
+  height: 20px;
+  width: 20px;
+}
+.assetsSmallImageStreamPreview_ZbIvmP,
+.assetsSmallImageVoiceChannel_ZbIvmP {
+}
+.activityVoiceChannelUserHover_ZbIvmP .assetsSmallImageStreamPreview_ZbIvmP,
+.activityVoiceChannelUserHover_ZbIvmP .assetsSmallImageVoiceChannel_ZbIvmP {
+  bottom: -2px;
+  height: 10px;
+  inset-inline-end: -2px;
+  width: 10px;
+}
+.assetsSmallImageActivityFeed_ZbIvmP {
+  height: 30px;
+  width: 30px;
+}
+.assetsSmallImageActivityFeedWithoutLargeImage_ZbIvmP,
+.assetsSmallImageStreamPreviewWithoutLargeImage_ZbIvmP,
+.assetsSmallImageVoiceChannelWithoutLargeImage_ZbIvmP {
+  height: 40px;
+  width: 40px;
+}
+.activityVoiceChannelUserHover_ZbIvmP
+  .assetsSmallImageStreamPreviewWithoutLargeImage_ZbIvmP,
+.activityVoiceChannelUserHover_ZbIvmP
+  .assetsSmallImageVoiceChannelWithoutLargeImage_ZbIvmP {
+  border-radius: var(--radius-sm);
+  height: 32px;
+  width: 32px;
+}
+.assetsSmallImageActivityFeedWithoutLargeImage_ZbIvmP,
+.assetsSmallImageStreamPreviewWithoutLargeImage_ZbIvmP,
+.assetsSmallImageVoiceChannelWithoutLargeImage_ZbIvmP {
+}
+.gameIcon_ZbIvmP {
+  flex: 0 0 auto;
+}
+.activityVoiceChannelUserHover_ZbIvmP .gameIcon_ZbIvmP {
+  border-radius: var(--radius-sm);
+  height: 32px;
+  width: 32px;
+}
+.screenshareIcon_ZbIvmP {
+  background-image: url("/assets/aa013155f3c2ecb0.svg");
+  height: 40px;
+  width: 40px;
+}
+.content_ZbIvmP {
+  overflow: hidden;
+}
+.contentImagesStreamPreview_ZbIvmP,
+.contentImagesVoiceChannel_ZbIvmP {
+  margin-inline-start: 10px;
+}
+.contentImagesStreamPreview_ZbIvmP,
+.contentImagesVoiceChannel_ZbIvmP {
+}
+.contentImagesActivityFeed_ZbIvmP {
+  margin-inline-start: 10px;
+}
+.contentNoImagesStreamPreview_ZbIvmP,
+.contentNoImagesVoiceChannel_ZbIvmP {
+}
+.contentNoImagesActivityFeed_ZbIvmP {
+  margin-bottom: -4px;
+}
+.contentGameImageStreamPreview_ZbIvmP,
+.contentGameImageVoiceChannel_ZbIvmP {
+  margin-bottom: -1px;
+  margin-inline-start: 10px;
+}
+.contentGameImageStreamPreview_ZbIvmP,
+.contentGameImageVoiceChannel_ZbIvmP {
+}
+.textRow_ZbIvmP {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+}
+.clickableDetails_ZbIvmP,
+.details_ZbIvmP,
+.playTime_ZbIvmP,
+.state_ZbIvmP,
+.timestamp_ZbIvmP {
+}
+.clickableDetails_ZbIvmP {
+  cursor: pointer;
+}
+.clickableDetails_ZbIvmP:hover {
+  text-decoration: underline;
+}
+.nameNormal_ZbIvmP {
+}
+.detailsWrap_ZbIvmP {
+}
+.guildIcon_ZbIvmP {
+  border-radius: var(--radius-xs);
+}
+.guildDetails_ZbIvmP {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+.voiceChannelInfo_ZbIvmP {
+  align-items: center;
+  display: flex;
+  gap: 2px;
+}
+.nameWrap_ZbIvmP {
+}
+.activityActivityFeed_ZbIvmP .name_ZbIvmP {
+  display: none;
+}
+.activityActivityFeed_ZbIvmP .details_ZbIvmP {
+  font-weight: var(--font-weight-semibold);
+}
+.timeBarActivityFeed_ZbIvmP {
+  margin-top: 10px;
+}
+.timeBarVoiceChannel_ZbIvmP {
+  margin-top: 4px;
+}
+.activityNameUserActivityHover_ZbIvmP {
+}
+.activityName_ZbIvmP,
+.nameNormal_ZbIvmP,
+.nameWrap_ZbIvmP {
+  color: var(--white);
+}
+.bodyLink_ZbIvmP {
+}
+.bodyLink_ZbIvmP:hover {
+  text-decoration: underline;
+}
+.twitchImageContainer_ZbIvmP {
+  background: var(--primary-800);
+  border-radius: var(--radius-sm);
+  position: relative;
+}
+.twitchImageOverlay_ZbIvmP {
+  inset-inline: 0;
+  bottom: 0;
+  padding: 16px;
+  position: absolute;
+}
+.twitchBackgroundImage_ZbIvmP {
+  display: inline-block;
+  min-height: 260px;
+}
+.streamUsername_ZbIvmP {
+  color: var(--primary-200);
+}
+.streamName_ZbIvmP {
+  color: var(--primary-300);
+}
+.streamGame_ZbIvmP,
+.streamName_ZbIvmP {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  margin-top: 8px;
+}
+.streamGame_ZbIvmP {
+  color: var(--primary-400);
+  text-transform: none;
+}
+.activityVoiceChannel_ZbIvmP .headerText_ZbIvmP {
+  color: var(--interactive-text-default);
+}
+.activityVoiceChannel_ZbIvmP .activityName_ZbIvmP,
+.activityVoiceChannel_ZbIvmP .name_ZbIvmP,
+.activityVoiceChannel_ZbIvmP .nameNormal_ZbIvmP,
+.activityVoiceChannel_ZbIvmP .nameWrap_ZbIvmP {
+  color: var(--text-strong);
+}
+.activityVoiceChannel_ZbIvmP .content_ZbIvmP,
+.activityVoiceChannel_ZbIvmP .details_ZbIvmP,
+.activityVoiceChannel_ZbIvmP .playTime_ZbIvmP,
+.activityVoiceChannel_ZbIvmP .state_ZbIvmP,
+.activityVoiceChannel_ZbIvmP .timestamp_ZbIvmP {
+  color: var(--text-default);
+}
+.activityVoiceChannelUserHover_ZbIvmP .activityName_ZbIvmP,
+.activityVoiceChannelUserHover_ZbIvmP .name_ZbIvmP,
+.activityVoiceChannelUserHover_ZbIvmP .nameNormal_ZbIvmP,
+.activityVoiceChannelUserHover_ZbIvmP .nameWrap_ZbIvmP {
+  color: var(--text-strong);
+}
+.activityVoiceChannelUserHover_ZbIvmP .content_ZbIvmP,
+.activityVoiceChannelUserHover_ZbIvmP .details_ZbIvmP,
+.activityVoiceChannelUserHover_ZbIvmP .playTime_ZbIvmP,
+.activityVoiceChannelUserHover_ZbIvmP .state_ZbIvmP,
+.activityVoiceChannelUserHover_ZbIvmP .timestamp_ZbIvmP {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.platformIcon_ZbIvmP {
+  display: none;
+}
+.icon_ZbIvmP {
+  color: var(--text-default);
+  display: block;
+  flex: 0 0 auto;
+  height: 16px;
+  margin-inline-end: 4px;
+  width: 16px;
+}
+.wrap_ZbIvmP {
+  flex-wrap: wrap;
+}
+.activityDetails_ZbIvmP {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.activityActivityFeed_ZbIvmP .content_ZbIvmP,
+.activityActivityFeed_ZbIvmP .details_ZbIvmP {
+  color: var(--text-default);
+}
+.activityStreamPreview_ZbIvmP .activityName_ZbIvmP,
+.activityStreamPreview_ZbIvmP .content_ZbIvmP,
+.activityStreamPreview_ZbIvmP .details_ZbIvmP,
+.activityStreamPreview_ZbIvmP .name_ZbIvmP,
+.activityStreamPreview_ZbIvmP .nameNormal_ZbIvmP {
+  color: var(--text-strong);
+}
+
+/*# sourceMappingURL=213922.f197a6ee317b2bd0.css.map*/

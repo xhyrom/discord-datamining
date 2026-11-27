@@ -1,0 +1,117 @@
+.popoutContainer_f4FLXc {
+  background-color: var(--background-surface-high);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-high);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 200px;
+}
+.streamPreviewWrapper_f4FLXc {
+  align-items: center;
+  aspect-ratio: 16/9;
+  background-color: var(--background-mod-normal);
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.streamPreview_f4FLXc {
+  height: 100%;
+  width: 100%;
+}
+.streamPreviewHover_f4FLXc {
+  align-items: center;
+  background-color: var(--background-scrim);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+}
+.streamPreviewWrapper_f4FLXc:focus-visible .streamPreviewHover_f4FLXc,
+.streamPreviewWrapper_f4FLXc:hover .streamPreviewHover_f4FLXc {
+  opacity: 1;
+}
+.streamPreviewLiveIndicator_f4FLXc {
+  inset-inline-end: var(--space-4);
+  position: absolute;
+  top: var(--space-4);
+  z-index: 1;
+}
+.popoutHeader_f4FLXc {
+  align-items: center;
+  background-color: var(--background-mod-muted);
+  display: flex;
+  gap: var(--space-8);
+  justify-content: space-between;
+  padding: var(--space-8) var(--space-12);
+}
+.crossGuildHeader_f4FLXc {
+  padding: var(--space-12);
+}
+.guildIcon_f4FLXc {
+  flex-shrink: 0;
+}
+.guildDetails_f4FLXc {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+.voiceIcon_f4FLXc {
+  color: var(--icon-voice-connected);
+  flex-shrink: 0;
+}
+.channelName_f4FLXc {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: var(--space-4);
+  min-width: 0;
+  overflow: hidden;
+}
+.crossGuildChannelName_f4FLXc {
+  flex: none;
+  gap: calc(var(--space-4) / 2);
+}
+.channelNameText_f4FLXc {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.popoutContent_f4FLXc {
+  border-top: 1px solid var(--border-muted);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  padding: var(--space-12);
+}
+.avatarOverflow_f4FLXc {
+  background-color: var(--background-mod-strong);
+}
+.voiceChannelBadge_M2o0HZ {
+  color: var(--text-status-online);
+  cursor: pointer;
+  display: inline-block;
+  height: calc(1rem + 4px);
+  margin-inline-start: 0.25rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+  overflow: hidden;
+  position: relative;
+  text-indent: 0;
+  top: 1px;
+  vertical-align: top;
+  width: calc(1rem + 4px);
+}
+.voiceChannelBadgeWrapper_M2o0HZ {
+  display: inline;
+}
+
+/*# sourceMappingURL=990185.2fc05349f9c8fe3a.css.map*/

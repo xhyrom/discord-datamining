@@ -1,0 +1,216 @@
+.layerRoot_dOn5N3 {
+  min-height: 600px;
+  position: relative;
+  width: 100%;
+}
+.container_dOn5N3 {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+  padding: 32px;
+}
+.notice_Q02kKo {
+  background: var(--custom-notice-background);
+  border-inline-start: 1px solid var(--app-frame-border);
+  border-radius: 8px 0 0;
+  border-top: 1px solid var(--app-frame-border);
+  box-shadow: none;
+  color: var(--custom-notice-text);
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  line-height: 36px;
+  padding-inline: 4px 28px;
+  position: relative;
+  text-align: center;
+  z-index: 101;
+}
+.notice_Q02kKo strong {
+  font-weight: var(--font-weight-semibold);
+}
+.notice_Q02kKo.isMobile_Q02kKo {
+  line-height: 30px;
+  padding: 10px 20px;
+}
+.notice_Q02kKo .button_Q02kKo {
+  border-color: var(--custom-notice-text) !important;
+  color: var(--custom-notice-text) !important;
+}
+.notice_Q02kKo .button_Q02kKo:hover {
+  background-color: var(--background-mod-subtle);
+  color: var(--custom-notice-button-hover);
+}
+.notice_Q02kKo .closeIcon_Q02kKo path {
+  fill: var(--custom-notice-text);
+}
+@supports not (
+  (grid-template-columns: subgrid) and (white-space-collapse: collapse)
+) {
+  .notice_Q02kKo {
+    border-start-start-radius: 0;
+  }
+}
+@supports (grid-template-columns: subgrid) and (white-space-collapse: collapse) {
+  .notice_Q02kKo {
+    grid-area: notice;
+  }
+}
+.colorDefault_Q02kKo {
+  --custom-notice-background: var(--status-positive-background);
+  --custom-notice-text: var(--status-positive-text);
+  --custom-notice-button-hover: var(--status-positive-background);
+}
+.colorNeutral_Q02kKo {
+  --custom-notice-background: var(--background-surface-high);
+  --custom-notice-text: var(--text-strong);
+  --custom-notice-button-hover: var(--control-secondary-background-hover);
+}
+.colorPremium_Q02kKo {
+  --custom-notice-text: var(--white);
+}
+.colorPremiumTier0_Q02kKo {
+  --custom-notice-background: linear-gradient(
+    to left,
+    var(--premium-tier-0-purple),
+    var(--premium-tier-0-blue)
+  );
+  --custom-notice-button-hover: var(--brand-500);
+}
+.colorPremiumTier1_Q02kKo {
+  --custom-notice-background: linear-gradient(
+    270deg,
+    var(--premium-tier-1-blue-for-gradients) 0%,
+    var(--premium-tier-1-dark-blue-for-gradients) 100%
+  );
+  --custom-notice-button-hover: var(--brand-500);
+}
+.colorPremiumTier2_Q02kKo {
+  --custom-notice-background: linear-gradient(
+    90deg,
+    var(--premium-tier-2-purple-for-gradients) 0%,
+    var(--premium-tier-2-purple-for-gradients-2) 50.24%,
+    var(--premium-tier-2-pink-for-gradients) 100%
+  );
+  --custom-notice-button-hover: var(--premium-tier-2-pink);
+}
+.colorInfo_Q02kKo {
+  --custom-notice-background: var(--notice-background-info);
+  --custom-notice-text: var(--notice-text-info);
+  --custom-notice-button-hover: var(--notice-text-info);
+}
+.colorSuccess_Q02kKo {
+  --custom-notice-background: var(--status-positive-background);
+  --custom-notice-text: var(--status-positive-text);
+  --custom-notice-button-hover: var(--text-feedback-positive);
+}
+.colorWarning_Q02kKo {
+  --custom-notice-background: var(--notice-background-warning);
+  --custom-notice-text: var(--notice-text-warning);
+  --custom-notice-button-hover: var(--notice-text-warning);
+}
+.colorWarning_Q02kKo .button_Q02kKo {
+  border-color: var(--status-warning-text) !important;
+  color: var(--status-warning-text);
+}
+.colorDanger_Q02kKo {
+  --custom-notice-background: var(--notice-background-critical);
+  --custom-notice-text: var(--notice-text-critical);
+  --custom-notice-button-hover: var(--notice-text-critical);
+}
+.colorDefault_Q02kKo,
+.colorSuccess_Q02kKo {
+  --custom-notice-background: var(--notice-background-positive);
+  --custom-notice-text: var(--notice-text-positive);
+  --custom-notice-button-hover: var(--notice-text-positive);
+}
+.colorStreamerMode_Q02kKo {
+  --custom-notice-background: var(--platform-twitch);
+  --custom-notice-text: var(--white);
+  --custom-notice-button-hover: var(--platform-twitch);
+}
+.colorSpotify_Q02kKo {
+  --custom-notice-background: var(--platform-spotify);
+  --custom-notice-text: var(--white);
+  --custom-notice-button-hover: var(--platform-spotify);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.colorSpotify_Q02kKo .platformIcon_Q02kKo {
+  height: 24px;
+  margin-top: 0;
+  width: 24px;
+}
+.colorSpotify_Q02kKo .button_Q02kKo {
+  margin-inline-start: 20px;
+  top: 0;
+}
+.colorBrand_Q02kKo {
+  --custom-notice-background: var(--brand-500);
+  --custom-notice-text: var(--white);
+  --custom-notice-button-hover: var(--brand-500);
+}
+.colorCustom_Q02kKo {
+  --custom-notice-button-hover: #222;
+}
+.closeButton_Q02kKo {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 36px;
+  inset-inline-end: 0;
+  position: absolute;
+  top: 0;
+  width: 36px;
+  -webkit-app-region: no-drag;
+}
+.closeIcon_Q02kKo path {
+  fill: var(--white);
+}
+.button_Q02kKo {
+  border: 1px solid;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: var(--white);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  height: 24px;
+  line-height: 22px;
+  margin-inline-start: 10px;
+  padding: 0 10px;
+  position: relative;
+  top: 6px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+  vertical-align: top;
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  border-color: var(--white);
+}
+.button_Q02kKo.buttonMinor_Q02kKo {
+  border: none;
+  text-decoration: underline;
+}
+.button_Q02kKo:hover {
+  background-color: var(--white);
+  border-color: var(--white);
+}
+.enable-forced-colors .notice_Q02kKo {
+  border-bottom: 2px solid CanvasText;
+}
+.enable-forced-colors .closeButton_Q02kKo {
+  background-color: ButtonFace;
+  color: ButtonText;
+  opacity: 1;
+}
+.enable-forced-colors .closeButton_Q02kKo:focus,
+.enable-forced-colors .closeButton_Q02kKo:hover {
+  outline: 1px solid ButtonText;
+}
+
+/*# sourceMappingURL=470109.33e6f08d807e725b.css.map*/
