@@ -5,6 +5,7 @@
     48127(p) {
       p.exports = {
         SW: "popout_p-On7-",
+        cB: "dragging_p-On7-",
         wx: "header_p-On7-",
         $: "titleRow_p-On7-",
         P: "keybind_p-On7-",
@@ -24,11 +25,12 @@
       p.exports = {
         Z1: "popoutItem_J5LrJv",
         Lw: "overlay_J5LrJv",
-        Ad: "newBadge_J5LrJv",
+        xn: "thumbnail_J5LrJv",
         E_: "bottomRow_J5LrJv",
         mY: "topRow_J5LrJv",
+        Ad: "newBadge_J5LrJv",
       };
     },
   },
 ]);
-//# sourceMappingURL=14335.8f50c7e3cc239ed9.js.map
+//# sourceMappingURL=14335.159cdf7b2942c28b.js.map
