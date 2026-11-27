@@ -1,0 +1,56 @@
+.watchStreamRow_NzHADT {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.buttonsWrapper_nwnlPG {
+  flex: 0 1 auto;
+  margin-top: 12px;
+}
+.buttonsWrapper_nwnlPG:empty {
+  margin: 0;
+}
+.horizontal_nwnlPG > :not(:first-child) {
+  margin-inline-start: 8px;
+}
+.vertical_nwnlPG > :not(:first-child) {
+  margin-top: 8px;
+}
+.actionsStreamPreview_k1RHDu {
+  margin-top: 10px;
+}
+.actionsProfile_k1RHDu,
+.actionsProfileV2_k1RHDu {
+  flex: 1 1 auto;
+  margin-inline-start: 20px;
+  margin-top: 0;
+}
+.actionsSimplifiedProfile_k1RHDu {
+  flex: 1 1 auto;
+  margin-inline-start: 10px;
+  margin-top: 0;
+}
+.actionsActivityFeed_k1RHDu {
+  margin-top: 8px;
+}
+.errorImage_k1RHDu {
+  height: 135px;
+}
+.cannotLaunchImage_k1RHDu {
+}
+.actionsWrapper_k1RHDu {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.actionsWrapper_k1RHDu .actionsProfile_k1RHDu,
+.actionsWrapper_k1RHDu .actionsProfileV2_k1RHDu,
+.actionsWrapper_k1RHDu .actionsSimplifiedProfile_k1RHDu {
+  margin-inline-start: 0;
+  margin-top: 12px;
+}
+
+/*# sourceMappingURL=501095.8f395e2442d87728.css.map*/
