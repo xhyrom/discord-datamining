@@ -2584,6 +2584,7 @@
       "GET",
       "HEAD",
       "OPTIONS",
+      "PATCH",
       "POST"
     ]
   },
