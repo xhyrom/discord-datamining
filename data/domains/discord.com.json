@@ -34,8 +34,8 @@
     "prod-wf2",
     "o21.ptr6759",
     "bounces.m",
-    "o15.ptr9908",
     "o17.ptr8588",
+    "o15.ptr9908",
     "zendesk3",
     "zendesk4",
     "eeu-rtc-sfu-finder",
@@ -50,6 +50,7 @@
     "l",
     "mtls",
     "crawl-35-237-4-214.ptr",
+    "checkout-stg",
     "snam-rtc-sfu-finder",
     "o19.ptr4192",
     "o14.ptr6344",
@@ -84,5 +85,5 @@
     "o13.ptr7216",
     "snowsgiving-tale-2022-zh-cn"
   ],
-  "subdomain_count": 83
+  "subdomain_count": 84
 }
