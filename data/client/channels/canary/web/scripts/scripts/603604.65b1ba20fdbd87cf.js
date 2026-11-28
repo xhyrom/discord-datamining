@@ -1,8 +1,8 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  [698610],
+  [603604],
   {
     410075() {},
-    724707(e, t) {
+    533309(e, t) {
       "use strict";
       var r, n;
       (t.Bu = t.FormatJsNodeType = void 0),
@@ -51,7 +51,7 @@
         (n[(n.Tag = 8)] = "Tag"),
         (t.Bu = Object.freeze({ type: 7 }));
     },
-    499179(e, t) {
+    573313(e, t) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.dataFormatterCache = void 0),
@@ -118,7 +118,7 @@
           }
         })());
     },
-    333519(e, t) {
+    130125(e, t) {
       "use strict";
       (t.DEFAULT_FORMAT_CONFIG = void 0),
         (t.resolveFormatConfigOptions = function (e, t) {
@@ -164,7 +164,7 @@
           },
         });
     },
-    495581(e, t, r) {
+    19751(e, t, r) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.makeDataFormatters = function (e, t, r = !1) {
@@ -221,17 +221,17 @@
             getPluralRules: (t) => i.dataFormatterCache.getPluralRules(e, o(t)),
           };
         });
-      let n = r(333519),
-        i = r(499179);
+      let n = r(130125),
+        i = r(573313);
     },
-    133275(e, t, r) {
+    524641(e, t, r) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.FormatBuilder = void 0),
         (t.bindFormatValuesWithBuilder = a),
         (t.bindFormatValues = s);
       let n = r(968534),
-        i = r(724707);
+        i = r(533309);
       t.FormatBuilder = class {
         constructor(e) {
           this.context = e;
@@ -442,13 +442,13 @@
         );
       }
     },
-    245564(e, t, r) {
+    558690(e, t, r) {
       "use strict";
       var n, i;
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.astFormatter = t.RichTextNodeType = void 0),
         (t.formatToAst = l);
-      let o = r(133275);
+      let o = r(524641);
       ((i = n || (t.RichTextNodeType = n = {})).Text = "text"),
         (i.Strong = "strong"),
         (i.Emphasis = "em"),
@@ -493,7 +493,7 @@
       }
       t.astFormatter = { format: l, builder: s };
     },
-    335532(e, t, r) {
+    218154(e, t, r) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.stringFormatter =
@@ -504,7 +504,7 @@
           t.RichTextNodeType =
           t.astFormatter =
             void 0);
-      var n = r(245564);
+      var n = r(558690);
       Object.defineProperty(t, "astFormatter", {
         enumerable: !0,
         get: function () {
@@ -517,14 +517,14 @@
             return n.RichTextNodeType;
           },
         });
-      var i = r(34239);
+      var i = r(411433);
       Object.defineProperty(t, "markdownFormatter", {
         enumerable: !0,
         get: function () {
           return i.markdownFormatter;
         },
       });
-      var o = r(660175);
+      var o = r(974713);
       Object.defineProperty(t, "reactFormatter", {
         enumerable: !0,
         get: function () {
@@ -543,7 +543,7 @@
             return o.DEFAULT_REACT_RICH_TEXT_ELEMENTS;
           },
         });
-      var a = r(138259);
+      var a = r(349041);
       Object.defineProperty(t, "stringFormatter", {
         enumerable: !0,
         get: function () {
@@ -551,12 +551,12 @@
         },
       });
     },
-    34239(e, t, r) {
+    411433(e, t, r) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.markdownFormatter = void 0),
         (t.formatToMarkdownString = a);
-      let n = r(138259),
+      let n = r(349041),
         i = {
           $b: (e) => "**" + e.join("") + "**",
           $i: (e) => "*" + e.join("") + "*",
@@ -578,14 +578,14 @@
       }
       t.markdownFormatter = { format: a, builder: o };
     },
-    660175(e, t, r) {
+    974713(e, t, r) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.reactFormatter = t.DEFAULT_REACT_RICH_TEXT_ELEMENTS = void 0),
         (t.formatReact = a),
         (t.makeReactFormatter = s);
       let n = r(582128),
-        i = r(133275),
+        i = r(524641),
         o = n.createElement;
       function a(e, t, r) {
         return "string" == typeof e ? e : this.bindFormatValues(r, e, t);
@@ -626,12 +626,12 @@
       }),
         (t.reactFormatter = s(t.DEFAULT_REACT_RICH_TEXT_ELEMENTS));
     },
-    138259(e, t, r) {
+    349041(e, t, r) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.stringFormatter = t.StringBuilder = void 0),
         (t.formatToPlainString = o);
-      let n = r(133275);
+      let n = r(524641);
       class i extends n.FormatBuilder {
         constructor() {
           super(...arguments), (this.result = "");
@@ -654,7 +654,7 @@
       }
       (t.StringBuilder = i), (t.stringFormatter = { format: o, builder: i });
     },
-    256784(e, t, r) {
+    133334(e, t, r) {
       "use strict";
       let n;
       Object.defineProperty(t, "__esModule", { value: !0 }),
@@ -684,7 +684,7 @@
           ),
         a = !((new Uint32Array((n = new Uint8Array(4)).buffer)[0] = 1) & n[0]);
     },
-    95498(e, t, r) {
+    989324(e, t, r) {
       "use strict";
       var n =
           (this && this.__createBinding) ||
@@ -731,21 +731,21 @@
           t.dataFormatterCache =
           t.makeDataFormatters =
             void 0);
-      var o = r(495581);
+      var o = r(19751);
       Object.defineProperty(t, "makeDataFormatters", {
         enumerable: !0,
         get: function () {
           return o.makeDataFormatters;
         },
       });
-      var a = r(499179);
+      var a = r(573313);
       Object.defineProperty(t, "dataFormatterCache", {
         enumerable: !0,
         get: function () {
           return a.dataFormatterCache;
         },
       });
-      var s = r(133275);
+      var s = r(524641);
       Object.defineProperty(t, "FormatBuilder", {
         enumerable: !0,
         get: function () {
@@ -758,15 +758,15 @@
             return s.bindFormatValues;
           },
         }),
-        i(r(335532), t);
-      var l = r(256784);
+        i(r(218154), t);
+      var l = r(133334);
       Object.defineProperty(t, "runtimeHashMessageKey", {
         enumerable: !0,
         get: function () {
           return l.runtimeHashMessageKey;
         },
       });
-      var u = r(461217);
+      var u = r(303755);
       Object.defineProperty(t, "IntlManager", {
         enumerable: !0,
         get: function () {
@@ -779,14 +779,14 @@
             return u.DEFAULT_LOCALE;
           },
         });
-      var c = r(251277);
+      var c = r(471863);
       Object.defineProperty(t, "InternalIntlMessage", {
         enumerable: !0,
         get: function () {
           return c.InternalIntlMessage;
         },
       });
-      var f = r(965413);
+      var f = r(765539);
       Object.defineProperty(t, "createLoader", {
         enumerable: !0,
         get: function () {
@@ -811,7 +811,7 @@
             return f.MessageLoader;
           },
         });
-      var d = r(146750);
+      var d = r(371688);
       Object.defineProperty(t, "chainMessagesObjects", {
         enumerable: !0,
         get: function () {
@@ -825,13 +825,13 @@
           },
         });
     },
-    461217(e, t, r) {
+    303755(e, t, r) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.IntlManager = t.DEFAULT_LOCALE = void 0);
-      let n = r(333519),
-        i = r(133275),
-        o = r(495581);
+      let n = r(130125),
+        i = r(524641),
+        o = r(19751);
       (t.DEFAULT_LOCALE = "en-US"),
         (t.IntlManager = class {
           constructor({
@@ -898,7 +898,7 @@
           }
         });
     },
-    965413(e, t, r) {
+    765539(e, t, r) {
       "use strict";
       var n =
         (this && this.__awaiter) ||
@@ -948,7 +948,7 @@
           let r = new o(e, t);
           return a.push(r), r;
         });
-      let i = r(251277);
+      let i = r(471863);
       class o {
         constructor(e, t) {
           (this.messages = {}),
@@ -1093,11 +1093,11 @@
       t.MessageLoader = o;
       let a = [];
     },
-    251277(e, t, r) {
+    471863(e, t, r) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.InternalIntlMessage = void 0);
-      let n = r(724707);
+      let n = r(533309);
       t.InternalIntlMessage = class {
         constructor(e, t) {
           (this.locale = t),
@@ -1191,7 +1191,7 @@
         }
       };
     },
-    146750(e, t) {
+    371688(e, t) {
       "use strict";
       function r(e) {
         return "IntlMessagesProxy" === e[Symbol.toStringTag];
@@ -74715,4 +74715,4 @@
     },
   },
 ]);
-//# sourceMappingURL=698610.174da93ccb01bd4a.js.map
+//# sourceMappingURL=603604.65b1ba20fdbd87cf.js.map
